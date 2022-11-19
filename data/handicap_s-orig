@@ -229,8 +229,8 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022)
 #: priority: #A
-#: last_checked: 2022-11-17 vvv
-#: check_frequency: 3d vvv
+#: last_checked: 2022-11-19 vvv
+#: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-11-16 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -251,7 +251,7 @@ Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork; 10350,13376 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-10
+#: last_checked: 2022-11-19
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -271,7 +271,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr)
 #: note: bei rbb noch bis 05.08.2022
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-19
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-02
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -294,7 +294,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
 #: last_checked: 2022-10-28
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-04-01
+#: next_check: 2022-11-22
 # REMOVED --- #: valid: 20200821-20211031
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
@@ -397,7 +397,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-11-16 (daf) vvv
+#: last_checked: 2022-11-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="12"
@@ -1028,7 +1028,7 @@ Am Zwirngraben: Tische auf der Straße, Fußgänger	q4 10339,13052 10185,12982
 #: note ^^^
 Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8722,12268 8637,12258 8592,12252 8538,12245
-Pariser Platz: Fußgänger	q2 8637,12258 8643,12208 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
+Pariser Platz: Fußgänger	q2 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555
 #: XXX_prog BS (Bordstein zum Blücherplatz hin, aber ansonsten wohl q3 beibehalten)
 #: note: früher "q3"
@@ -2571,7 +2571,11 @@ Max-Pallenberg-Pfad: Bordstein	q2 15460,1764 15465,1953
 (Gertrud-Dorka-Weg - Lieselotte-Berger-Str.): Bordstein, schmal	q2 17796,-97 17777,-68
 Straße 618: schmale Straße	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
-#: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der Südseite?
+#: next_check_id: ROSENTHALER-2022
+# REMOVED --- #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der Südseite?
+#: XXX evtl. wird hier die Zufahrt für Radfahrer verbessert
+#: last_checked: 2022-11-19
+#: check_frequency: 14d
 Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 # 
 #: note: Grünanlagenschild gilt nicht für diesen Weg vvv

@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-11-03 vvv
+#: last_checked: 2022-11-19 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -1510,7 +1510,7 @@ Heinrich-Heine-Str.	H 11250,11715 11174,11554 11094,11377 11039,11254 10937,1103
 Ebertstr.	H 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 Pariser Platz	N 8804,12280 8722,12268
 Pariser Platz	NN 8722,12268 8637,12258 8592,12252
-Pariser Platz	NN 8637,12258 8643,12208 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
+Pariser Platz	NN 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
 #: oldname: -20000616: Platz vor dem Brandenburger Tor
 Platz des 18. M‰rz	NN 8592,12252 8538,12245
 Simsonweg	NN 8354,12416 8391,12389 8546,12279
@@ -1737,18 +1737,18 @@ Minna-Cauer-Str.	HH 7880,13315 7879,13438 7890,13515 7930,13578 8019,13650
 Heidestr. (Moabit)	NN 8098,13419 8092,13467
 Heidestr. (Moabit)	N 8092,13467 8059,13551 8048,13578 8019,13650
 Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
-#: note: blaues Straﬂenschild vvv
+# REMOVED (nicht mehr) --- #: note: blaues Straﬂenschild vvv
 Otto-Weidt-Platz	NN 7923,14142 7850,14100
 #: osm.highway: service
 #: note: Einfahrt verboten, Anlieger frei
 Otto-Weidt-Platz	N 7850,14100 7778,14059
-#: note ^^^
+# REMOVED (nicht mehr) --- #: note ^^^
 Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: next_check_id: EUROPACITY-2015
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2022-11-01 (daf)
+#: last_checked: 2022-11-19
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1761,7 +1761,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straﬂe heiﬂen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraﬂe) --- #: XXX wird es Einschr‰nkungen f¸r den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: last_checked: 2022-09-30
+#: last_checked: 2022-11-19
 #: check_frequency: 60d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porsch¸tz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1770,7 +1770,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird sp‰ter vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraﬂe, aber der Platz ist breit genug...
-#: last_checked: 2022-09-30
+#: last_checked: 2022-11-19
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030

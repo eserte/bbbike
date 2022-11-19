@@ -18215,7 +18215,7 @@ EOF
 	3 9456,11513 9444,11616 9432,11702
 	3 8119,12414 8055,12186 8049,12140
 	3 8049,12140 8055,12186 8119,12414
-	3 8630,12310 8637,12258 8643,12208
+	3 8630,12310 8637,12258 8641,12227 8643,12208
 	3 6841,11114 6880,11110 7004,11168 7115,11220
 	3 6742,11099 6873,11011 7002,11034
 	3 8232,11414 8226,11458 8172,11679
@@ -18225,7 +18225,7 @@ EOF
 	3 7698,10147 7579,10183 7526,9969
 	3 8327,12174 8344,12221 8391,12389
 	3 7002,11034 6873,11011 6742,11099
-	3 8643,12208 8637,12258 8630,12310
+	3 8643,12208 8641,12227 8637,12258 8630,12310
 	3 7744,10372 7633,10394 7444,10479
 	3 9581,11523 9569,11631 9559,11715
 	3 9331,11497 9268,11590 9234,11683
@@ -20894,7 +20894,7 @@ EOF
 	2::temp 8501,11815 8244,11878
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
-	2::temp 8643,12208 8637,12258 8630,12310 8673,12315 8714,12319 8717,12302 8722,12268 8728,12220 8643,12208
+	2::temp 8643,12208 8641,12227 8637,12258 8630,12310 8673,12315 8714,12319 8717,12302 8722,12268 8728,12220 8705,12217 8643,12208
 	2::temp 8546,12279 8391,12389 8354,12416
 	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 	2::temp 7832,12036 7823,12120 7816,12150 7822,12201 7875,12363
@@ -26605,7 +26605,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 8522,12187 8538,12245 8600,12165
-	2::temp 8344,12221 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8637,12258 8630,12310 8673,12315 8714,12319 8717,12302 8722,12268 8804,12280
+	2::temp 8344,12221 8538,12245 8592,12252 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8637,12258 8630,12310 8673,12315 8714,12319 8717,12302 8722,12268 8804,12280
 	2::temp 8522,12239 8538,12245 8546,12279
 EOF
      },
@@ -28567,7 +28567,7 @@ Unter den Linden	2::temp 9141,12320 9028,12307 8804,12280
 Ebertstr.	2::temp 8577,11896 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 Pariser Platz	2::temp 8804,12280 8722,12268
 Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252
-Pariser Platz	2::temp 8637,12258 8643,12208 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
+Pariser Platz	2::temp 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
 Platz des 18. März	2::temp 8592,12252 8538,12245
 Simsonweg	2::temp 8354,12416 8391,12389 8546,12279
 Dorotheenstr. (Mitte)	2::temp 8540,12420 8775,12457
@@ -31055,7 +31055,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-11-12
+#: last_checked: 2022-11-19
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -33824,7 +33824,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-07-24
+#: last_checked: 2022-10-31 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -34452,7 +34452,7 @@ EOF
 #: source_id: viz2021:13.377132,52.512991,31.12.2021,06:00
 #: source_id: viz2021:13.351095,52.514567,31.12.2021,06:00
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258 8722,12268
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258 8722,12268
 EOF
      },
      { from  => undef, # 
@@ -34945,7 +34945,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-11-08 vvv
+#: last_checked: 2022-11-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-03 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -36310,7 +36310,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-17
+#: last_checked: 2022-11-19
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36532,7 +36532,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-17
+#: last_checked: 2022-11-19
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36584,8 +36584,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: URBANTECHREPUBLIC-2022
+#: osm_watch: way id="8039689" version="16"
 #: XXX Wie lange bleibt das Gelände gesperrt? vvv
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-11-18 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 	2::temp 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
@@ -36637,7 +36638,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-11-03 vvv
+#: last_checked: 2022-11-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-01 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -37211,7 +37212,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: TEGELERBRUECKE-2021
 #: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
-#: osm_watch: note 3442821 2
+# REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
+#: osm_watch: node id="10202117536" version="1"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: next_check: 2023-12-01
 	2::temp -784,16658 -719,16608

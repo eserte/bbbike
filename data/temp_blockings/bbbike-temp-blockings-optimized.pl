@@ -4663,7 +4663,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-11-12
+#: last_checked: 2022-11-19
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5215,7 +5215,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-07-24
+#: last_checked: 2022-10-31 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -5651,7 +5651,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-11-08 vvv
+#: last_checked: 2022-11-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-03 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -6275,7 +6275,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-17
+#: last_checked: 2022-11-19
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6419,7 +6419,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        {
          'data' => '#: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-17
+#: last_checked: 2022-11-19
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6467,8 +6467,9 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        },
        {
          'data' => '#: next_check_id: URBANTECHREPUBLIC-2022
+#: osm_watch: way id="8039689" version="16"
 #: XXX Wie lange bleibt das Gelände gesperrt? vvv
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-11-18 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 	2::temp 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
@@ -6521,7 +6522,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-11-03 vvv
+#: last_checked: 2022-11-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-01 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -7016,7 +7017,8 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
        {
          'data' => '#: next_check_id: TEGELERBRUECKE-2021
 #: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
-#: osm_watch: note 3442821 2
+# REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
+#: osm_watch: node id="10202117536" version="1"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: next_check: 2023-12-01
 	2::temp -784,16658 -719,16608

@@ -1817,24 +1817,17 @@ X	Vf 19363,3730 19162,3935 18930,3703
 X	Vf 23182,11534 23225,11649 23269,11767
 X	Vf 24362,11954 24491,11972 24563,11980
 # 
-#: next_check_id: FRIEDRICH-2020
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10174 vvv
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1202275.php (Charlottenstraﬂe wird zur Fahrradstraﬂe)
-#: confirmed_by: srt vvv
-#: last_checked: 2022-10-14 vvv
-#: check_frequency: 90d vvv
+# REMOVED (bleibt dauerhaft) --- #: next_check_id: FRIEDRICH-2020 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10174 vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1202275.php (Charlottenstraﬂe wird zur Fahrradstraﬂe) --- #: confirmed_by: srt vvv --- #: last_checked: 2022-10-14 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 # REMOVED --- #: valid: !20200821-20211031 vvv
 X	Vf 9569,11631 9559,11715 9547,11819
 X	Vf 9559,11715 9547,11819 9536,11922
 X	Vf 9547,11819 9536,11922 9523,12019
 X	Vf 9536,11922 9523,12019 9509,12117
+X	Vf 9509,12117 9496,12215 9489,12263
 # REMOVED --- #: valid ^^^
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: confirmed_by ^^^
-#: by ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: confirmed_by ^^^ --- #: by ^^^
 # 
 X	Vf -3216,15155 -3241,15118 -3258,15100
 #NH!!! X	Vf -4544,15940 -4254,15813 -4155,15763
@@ -2019,3 +2012,5 @@ X	Vf 7007,333 7014,203 6982,88
 X	Kz -1538,11126
 #: by: mapillary
 X	Vf 30545,81716 30844,81624 30918,81601
+#: note: implizit, Bordsteinkante
+X	Vf 11209,12430 11240,12368 11273,12301
