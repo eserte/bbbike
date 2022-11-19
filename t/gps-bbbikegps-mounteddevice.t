@@ -18,8 +18,7 @@ GetOptions("debug" => \my $debug)
     or die "usage: $0 [--debug]\n";
 
 SKIP: {
-    skip "no udisksctl available", 1
-	if !-x "/usr/bin/udisksctl";
+    { my $err; skip $err, 1 if !udisksctl_usable(\$err) }
     my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status();
     cmp_ok keys(%$disks), ">", 0, 'disks detected by udisksctl';
     my $first_disk = (keys(%$disks))[0];
@@ -39,8 +38,7 @@ SKIP: {
 }
 
 SKIP: {
-    skip "no udisksctl available", 1
-	if !-x "/usr/bin/udisksctl";
+    { my $err; skip $err, 1 if !udisksctl_usable(\$err) }
     my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2();
     cmp_ok keys(%$disks), ">", 0, 'disks detected by udisksctl';
     my $first_disk = (keys(%$disks))[0];
@@ -92,8 +90,7 @@ SKIP: {
 }
 
 SKIP: {
-    skip "no udisksctl available", 1
-	if !-x "/usr/bin/udisksctl";
+    { my $err; skip $err, 1 if !udisksctl_usable(\$err) }
     my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_dump();
     is ref $disks, ref {}, 'it has to be a hash, but it may be empty --- not everything has a label';
     if (keys %$disks) {
@@ -132,6 +129,55 @@ SKIP: {
     my $diskutil_info = GPS::BBBikeGPS::MountedDevice::_diskutil_info($first_disk);
     is ref $diskutil_info, 'HASH', 'output of diskutil info';
     is $diskutil_info->{DeviceIdentifier}, $first_disk;
+}
+
+{
+    my $udisksctl_usable;
+
+    sub udisksctl_usable {
+	my($errref) = @_;
+	if (defined $udisksctl_usable) {
+	    if (!$udisksctl_usable) {
+		$$errref = 'udisksctl unusable (cached information)' if $errref;
+	    }
+	    return $udisksctl_usable;
+	}
+
+    CHECKS: {
+	    my $udisksctl_path = '/usr/bin/udisksctl';
+
+	    if (!-x $udisksctl_path) {
+		$$errref = "no $udisksctl_path available" if $errref;
+		$udisksctl_usable = 0;
+		last CHECKS;
+	    }
+
+	    my $udisksctl_output;
+	    open my $fh, '-|', $udisksctl_path, 'status';
+	    {
+		local $/;
+		$udisksctl_output = <$fh>;
+	    }
+	    close $fh;
+	    if ($? != 0) {
+		my $exitcode = $? >> 8;
+		$$errref = "cannot run 'udisksctl status' successfully (exit code $exitcode)" if $errref;
+		$udisksctl_usable = 0;
+		last CHECKS;
+	    }
+
+	    my(@udisksctl_lines) = split /\n/, $udisksctl_output;
+	    if (@udisksctl_lines == 2 && $udisksctl_lines[0] =~ /^MODEL/ && $udisksctl_lines[1] =~ /^-+/) {
+		$$errref = "'udisksctl status' works, but no devices are returned" if $errref;
+		$udisksctl_usable = 0;
+		last CHECKS;
+	    }
+
+	    $udisksctl_usable = 1;
+	}
+
+	$udisksctl_usable;
+    }
 }
 
 sub _sample_udiskctl_status_output {
