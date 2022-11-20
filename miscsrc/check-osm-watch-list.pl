@@ -346,6 +346,7 @@ sub show_diff {
 		my($changeset) = $this_version->findvalue('./@changeset');
 		if ($changeset) {
 		    warn "Changeset URL: $osm_url/changeset/$changeset\n";
+		    warn "OSMCha URL:    https://osmcha.org/changesets/$changeset/\n";
 		}
 		warn "="x70, "\n";
 	    }
