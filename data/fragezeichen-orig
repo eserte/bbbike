@@ -170,7 +170,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: source_id: viz2021:13.178114,52.421439,11.03.2022,09:00 (Leitungsarbeiten bis 13.5.2022) (mittlerweile bis 3.6.2022) (inaktiv)
 #: osm_watch: way id="4323788" version="24"
 #: osm_watch: way id="23109081" version="20"
-#: osm_watch: way id="41108858" version="13"
+#: osm_watch: way id="41108858" version="15"
 #: last_checked: 2022-06-12
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-11-23
@@ -722,7 +722,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
 #: osm_watch: way id="151571084" version="20"
 #: osm_watch: way id="169753564" version="21"
-#: last_checked: 2022-10-15
+#: last_checked: 2022-11-20
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
@@ -3287,7 +3287,7 @@ Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13
 # REMOVED (fertig) --- Bautzener Brache: Radwegführung und Brücke 5 in Planung	?::projected 8206,9262 8254,9278 8255,9357 8260,9560 8227,9579
 # REMOVED (fertig) --- Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8255,9357 8186,9380
 #: also_indoor: search Yorckbrücke_5
-#: osm_watch: way id="268088020" version="11"
+#: osm_watch: way id="268088020" version="12"
 #: last_checked: 2022-10-13
 #: check_frequency: 120d
 #: next_check: 2023-03-31
@@ -4683,7 +4683,7 @@ Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13
 #: source_id: viz2021:13.349475,52.542176,17.06.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.349475,52.542176,20.06.2022,10:00 (bis 14.7.2022) (inaktiv)
 #: source_id: viz2021:13.346694,52.544122,09.08.2022,07:30 (Fahrbahnsanierung bis 6.9.2022) (bis 23.9.2022) (bis 30.9.2022) (bis 28.10.2022)
-#: osm_watch: way id="222005890" version="20"
+#: osm_watch: way id="222005890" version="22"
 #: last_checked: 2022-11-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-10-28
@@ -4957,7 +4957,7 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022)
 #: priority: #D
-#: last_checked: 2022-10-15
+#: last_checked: 2022-11-17 (mapillary)
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
@@ -5030,7 +5030,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 #: check_frequency: 120d vvv
 #: last_checked: 2022-10-06
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-20
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
 #: last_checked: 2022-11-07
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
@@ -5301,7 +5301,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 1416
 # 
 #: XXX prüfen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
-#: osm_watch: way id="130002114" version="5"
+#: osm_watch: way id="130002114" version="6"
 #: last_checked: 2022-10-24
 #: check_frequency: 120d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
@@ -5330,9 +5330,9 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="16"
 #: also_indoor: traffic
-#: last_checked: 2022-10-22
+#: last_checked: 2022-11-20 (traffic)
 #: check_frequency: 30d
-# REMOVED (outdoor) --- #: check_frequency: 60d
+# REMOVED (this was for outdoor checks) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477625.php
@@ -5710,7 +5710,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-20
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6463,7 +6463,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2022-10-15
+#: last_checked: 2022-11-20
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -6482,7 +6482,7 @@ Prinzenstr.: Radspuren zwischen Moritzplatz und Ritterstr.	?::projected 10776,10
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1253431.php (restliche Abschnitte zwischen Pariser Kommune und Andreasstr., zunächst Richtung Westen, 12.10.2022 - Ende November 2022; außerdem wird es für Radfahrer eine "signalisierte Querungsmöglichkeit" in Höhe Koppenstr. geben)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/karl-marx-allee-radweg-wird-breiter_a360314
 # REMOVED (fertig) --- #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-20
 #: check_frequency: 120d
 #: next_check: 2022-11-30
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
@@ -6623,7 +6623,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 #: next_check_id: GRUENBERGER-2022
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
-#: last_checked: 2022-11-15
+#: last_checked: 2022-11-20
 #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
@@ -6688,10 +6688,13 @@ Chamissoplatz: Fußgängerbereich geplant	?::projected 9526,9104 9596,9092
 #: by: https://www.berliner-zeitung.de/mensch-metropole/planungspanne-schon-wieder-wurde-eine-strassenbahnstrecke-vergessen-li.250623 (Bauzeit weiterhin Dezember 2022 bis 2025)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1122_barrierefrei.pdf (Busumleitung ab 2022-11-21)
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/busse-fahren-umleitungsstrecke_a363470 (für Fußgänger noch bis zum 2.12.2022 offen; Treppenanlage+Aufzüge am südlichen Eingang des Bahnhofs)
+#: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
+#: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
+#: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 #: priority: #A
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
@@ -6937,7 +6940,7 @@ Almazeile: Einzieung von Straßenland geplant	? -1616,18112 -1660,18114
 Thorwaldsenstr.: Sanierung und Verbreiterung der Radwege zwischen Canovastr. und Bergstr. beide Seiten	?::projected 6343,6297 6494,6128 6629,5946 6696,5854
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9084
-#: last_checked: 2022-09-14 (mapillary)
+#: last_checked: 2022-11-02 (mapillary)
 #: check_frequency: 90d
 Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens?) geplant	? 15923,12853 15950,12886 15985,12920
 # 
@@ -7096,6 +7099,7 @@ Alexanderplatz: Umwege wegen einer Tunnelbaustelle	?::inwork 11005,12855 11102,1
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1262075.php (möglichst zeitnah zur Wiedereröffnung der Friedrichstr. für den Kfz-Verkehr)
 #: by: https://berliner-abendblatt.de/2022/11/17/jarrasch-charlottenstrasse-wird-naechste-woche-fahrradstrasse/
 #: by: https://taz.de/Umbau-der-Charlottenstrasse/!5890486/
+#: by: https://berliner-abendblatt.de/2022/11/20/anradeln-neue-fahrradstrasse-in-der-charlottenstrasse/ (Einweihung 21. November 2022, 9 Uhr)
 #: source_id: bvg2021:n6#BVG311315_0 (Umleitung ab 7.11.2022)
 #: last_checked: 2022-11-19
 #: next_check: 2022-11-22
@@ -7143,13 +7147,13 @@ Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	?::
 #: also_indoor: traffic (H,B)
 # REMOVED (entfernt) --- #: osm_watch: node id="8709493528" version="3"
 # REMOVED (entfernt) --- #: osm_watch: node id="8709493529" version="3"
-#: osm_watch: way id="940405708" version="3"
+#: osm_watch: way id="940405708" version="4"
 #: osm_watch: note 2648361 19
 #: last_checked: 2022-11-15 (twitter)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 #: note: früherer Eintrag in gesperrt_car: Krumme Str.: Poller	3 * 3983,11289 *
-Krummer Str.: kommt hier wieder ein Poller hin?	? 3986,11347 3983,11289 3981,11232
+Krumme Str.: kommt hier wieder ein Poller hin?	? 3986,11347 3983,11289 3981,11232
 # 
 #: ignore ^^^
 # 

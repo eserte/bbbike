@@ -6659,7 +6659,7 @@ Triftstr.	q3::inwork 7356,15350 7464,15409
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-11-15
+#: last_checked: 2022-11-20
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -6753,7 +6753,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        },
        {
          'data' => '#: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-10-28
+#: last_checked: 2022-11-20
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,
