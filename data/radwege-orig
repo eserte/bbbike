@@ -321,7 +321,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-11-18
+#: last_checked: 2022-11-21
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -1152,7 +1152,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-11-18 vvv
+#: last_checked: 2022-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1955,6 +1955,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 #: XXX wann wird die alte Radspur wieder hergestellt? laut viz Einbahnstraßenregelung für Autos bis Ende März 2019, laut fritz bis 25.03.2019
 #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig)
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/mathilde-rathenau-bruecke-ueber-die-a-100-uebergeben_a202954
+#: by: https://www.bahninfo-forum.de/read.php?9,442687,750179#msg-750179 (Rückverschwenkung der S-Bahn)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
@@ -2629,7 +2630,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-11-18 vvv
+#: last_checked: 2022-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3495,9 +3496,7 @@ Verbundsteinpflaster	RW1; 16146,6755 16058,6629 15954,6481 15904,6410 15853,6339
 	RW1; 16428,7144 16507,7254
 # 
 Verbundsteinpflaster	RW1;RW1 15723,6151 15768,6214
-	RW1;RW1 2668,8372 2678,8571 2680,8608 2685,8819 2706,9108
-	RW;RW1 2706,9108 2708,9144
-	RW1;RW1 2708,9144 2728,9409 2730,9634
+	RW1;RW1 2668,8372 2678,8571 2680,8608 2685,8819 2706,9108 2708,9144 2728,9409 2730,9634
 	RW1;RW1 2388,8852 2449,8902 2568,9010 2674,9111 2708,9144 2829,9259 2947,9367 2998,9408 3127,9522 3220,9598 3340,9700 3427,9771
 	RW1;RW2 2322,8857 2337,9178
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 2361,9664

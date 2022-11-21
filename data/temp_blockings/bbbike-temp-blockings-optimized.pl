@@ -2421,6 +2421,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
+#: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
 # REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
@@ -5757,36 +5758,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
-#: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022) (mittlerweile bis 2.8.2022) (mittlerweile bis 30.11.2022)
-#: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
-#: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
-#: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
-#: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
-#: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
-#: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-10-24 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-11-30 vvv
-	q4::inwork; 15560,7400 15693,7512
-#: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
-	q3::inwork; 15693,7512 15560,7400
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
-',
-         'dont_check_date' => 1,
-         'from' => 1649574000,
-         'id' => 3536,
-         'source_id' => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
-         'text' => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 02.08.2022 17:00, evtl. auch länger, bis Ende November 2022',
-         'type' => 'handicap',
-         'until' => 1669824000
-       },
+       undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
 #: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
@@ -6159,7 +6131,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        undef,
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
-#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022)
+#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -6169,9 +6141,9 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'from' => 1660582743,
          'id' => 3605,
          'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
-         'text' => 'Hüttenweg: Anbindung Clayallee gesperrt',
+         'text' => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 26.1.2023',
          'type' => 'handicap',
-         'until' => 1669392000
+         'until' => 1674748800
        },
        undef,
        undef,
@@ -6300,14 +6272,17 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022)
 #: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
+#: last_checked: 2022-11-21
 #: next_check: 2022-12-14
-Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
+Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
+Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
+Trojanstr.: Einbahnstraße	q4::inwork; 16290,7160 16353,7226
 ',
          'from' => 1662564323,
          'id' => 3620,
          'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
-         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten, außerdem Einbahnstraßenregelung in der Scheiblerstr., voraussichtlich bis Ende November 2022',
+         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/Südosten, außerdem Einbahnstraßenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis Ende November 2022',
          'type' => 'handicap',
          'until' => 1669651200
        },
@@ -6331,17 +6306,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LS/221-E/22/151
-	2::inwork 29983,69156 30282,68716 30583,68268 30651,67633 31485,65740 31877,65202 32155,64848 32184,64705
-',
-         'from' => 1662876000,
-         'id' => 3624,
-         'source_id' => 'LS/221-E/22/114',
-         'text' => 'Joachimsthal - Friedrichswalde: Bauabeiten, Straße gesperrt, 12.09.2022 bis 21.11.2022',
-         'type' => 'gesperrt',
-         'until' => 1669024800
-       },
+       undef,
        {
          'data' => '	2::inwork 7431,34989 7346,32257
 ',
@@ -6987,23 +6952,10 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'type' => 'handicap',
          'until' => 1691445599
        },
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/11/16/sanierungsarbeiten-an-der-freiheit/
-#: by: https://viz.berlin.de/2022/11/freiheit/
-#: by: https://viz.berlin.de/wp-content/uploads/Freiheit.png (keine Sonderregelung für Radfahrer erkennbar)
-#: by: https://www.berliner-woche.de/spandau/c-verkehr/freiheit-ist-gesperrt_a364235
-#: source_id: viz2021:13.213784,52.531767,18.11.2022,09:00 (hier: bis 21.11.2022 Ende des Tages) (bis 9:00)
-	q4::inwork -1258,13552 -2410,13746 -2576,13777
-',
-         'from' => 1668672000,
-         'id' => 3684,
-         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1265548.php',
-         'text' => 'Freiheit: Bauarbeiten, Fahrbahn zwischen Pichelswerderstr. und der Klärwerkstr. gesperrt, von 18.11.2022 9 Uhr bis 21.11.2022 morgens',
-         'type' => 'handicap',
-         'until' => 1669017600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/vollsperrung-im-gruenstreifen_a364052
 	2::inwork 7019,655 7032,533 7231,236
 ',
          'from' => 1668466800,
@@ -7039,6 +6991,44 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Belziger Str.: Bauarbeiten zwischen Gothaer Str. und Eisenacher Str., evtl. sind auch Radfahrer betroffen, vom 17.11.2022 12:41 bis 09.12.2022 23:59 ',
          'type' => 'handicap',
          'until' => 1670626740
+       },
+       {
+         'data' => '#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/ende-2022-wird-die-buckower-chaussee-gesperrt_a316425 (ab Herbst 2022 für vier Jahre)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (IV. Quartal 2022 bis 2026)
+#: by: https://bieterportal.noncd.db.de/evergabe.bieter/eva/supplierportal/portal/subproject/277ce8e7-649d-414b-b64e-463fcf45ed05/details (Auftragsdauer: 28.02.2022 - 31.12.2025)
+#: by: https://twitter.com/VIZ_Berlin/status/1462760545208131584
+#: by: https://www.deutschebahn.com/pr-berlin-de/aktuell/presseinformationen/Meilenstein-beim-Ausbau-der-Dresdner-Bahn-Erster-von-neun-Bahnuebergaengen-beseitigt-6959472 (Ende 2021 für den Autoverkehr gesperrt, ab Ende 2022 auch für den Rad/Fuß/Busverkehr)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/unterfuehrung-an-der-dresdner-bahn-trasse-fertig-sperrung-der-buckower-chaussee-steht-bevor_a329177
+#: by: https://www.berliner-woche.de/marienfelde/c-bauen/in-wenigen-wochen-wird-die-buckower-chaussee-fuer-den-autoverkehr-gesperrt_a329360 (bis Ende 2025)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (für Radfahrer bis Dez 2022 passierbar, danach Überführung mit Aufzügen, Sperrung bis 2025)
+#: by: https://viz.berlin.de/2022/01/sperrung-bahnuebergang-buckower-chaussee/
+#: by: https://viz.berlin.de/wp-content/uploads/Buckower-Chaussee.png
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/lange-wege-zur-bushaltestelle_a350831
+#: by: https://www.berliner-zeitung.de/mensch-metropole/planungspanne-schon-wieder-wurde-eine-strassenbahnstrecke-vergessen-li.250623 (Bauzeit weiterhin Dezember 2022 bis 2025)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1122_barrierefrei.pdf (Busumleitung ab 2022-11-21)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/busse-fahren-umleitungsstrecke_a363470 (für Fußgänger noch bis zum 2.12.2022 offen; Treppenanlage+Aufzüge am südlichen Eingang des Bahnhofs)
+#: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
+#: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
+#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
+#: source_id: bvg2021:x11#BVG312077_0
+#: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
+#: also_indoor: traffic (G,B(nur eine Richtung))
+#: also_indoor: search Buckower_Chaussee
+#: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
+#: priority: #A
+#: last_checked: 2022-10-31 (daf)
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2022-11-21
+# REMOVED --- #: next_check: 2023-01-04
+	2::inwork 9069,506 9158,551 9178,556
+',
+         'from' => undef,
+         'id' => 3689,
+         'text' => 'Buckower Chaussee: der Bahnübergang wird demnächst wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1767221999
        }
      
 );
