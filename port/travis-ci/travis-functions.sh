@@ -59,6 +59,12 @@ init_apt() {
     # Remove also additional mongodb-org repo.
     (cd /etc/apt/sources.list.d && sudo rm -f mongodb.list mongodb-org-4.0.list google-chrome.list cassandra.list github_git-lfs.list couchdb.list pgdg.list)
 
+    # Needed since about 2022-11-20
+    if [ "$CODENAME" = "jessie" ]
+    then
+       echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
+    fi
+
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
 	if [ "$USE_BBBIKE_PPA" = "1" ]
