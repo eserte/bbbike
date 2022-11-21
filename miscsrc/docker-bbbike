@@ -388,6 +388,12 @@ EOF
 RUN echo 'Acquire::Retries "3";' > /etc/apt/apt.conf.d/80-retries
 EOF
 
+    if ($opt{distver} eq 'jessie') {
+	$dockerfile .= <<EOF;
+RUN echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
+EOF
+    }
+
     # basic packages
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
