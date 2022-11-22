@@ -370,17 +370,17 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://berliner-abendblatt.de/2022/11/07/friedrichstrasse-ab-22-november-rollt-wieder-der-autoverkehr/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/freie-fahrt-auf-der-friedrichstrasse_a363323
 #: by: https://viz.berlin.de/2022/11/verkehrsvorschau-221122/ (offen für Kfz-Verkehr, bis Ende 2022 Umwidmung in eine dauerhafte Fußgängerzone)
+#: by: https://berliner-abendblatt.de/2022/11/22/ab-mitternacht-wieder-autos-in-der-friedrichstrasse-erlaubt/
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
 #: last_checked: 2022-11-17 (mapillary)
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-11-22
-#: valid: !20200821-20221122
+#: next_check: 2022-12-31
+# REMOVED --- #: valid: !20200821-20221122
 Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
-#: valid: 20200821-20221122
-Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
+# REMOVED --- #: valid: 20200821-20221122 --- Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 Friedrichstr. (Mitte, Kreuzberg)	H 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662 9303,12718 9298,12765 9286,12886 9279,12953 9269,13060 9262,13111 9254,13171 9246,13235 9225,13389 9212,13471
 #: street_width ^^^
@@ -2603,7 +2603,7 @@ Katharina-Boll-Dornberger-Str.	NN 18943,3508 18848,3600 18836,3611
 Wilhelm-Hoff-Str.	N 18828,3196 18892,3256 18953,3318
 Wilhelm-Hoff-Str.	NN 18953,3318 19033,3397 19057,3422 19061,3426 19107,3472 19125,3491
 (Wilhelm-Hoff-Str. - James-Franck-Str.)	NN 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
-Alexander-von-Humboldt-Weg	NN 19015,3129 18892,3256 18825,3325 18689,3465
+Alexander-von-Humboldt-Weg	NN 19015,3129 18892,3256 18818,3332 18689,3465
 Johann-Hittorf-Str.	N 18946,3077 18802,2993 18757,2966 18716,2966 18601,2971
 Karl-Ziegler-Str.	N 18946,3077 18828,3196 18766,3260 18624,3402
 Zum Trudelturm	N 19021,2946 19101,3028
@@ -13907,7 +13907,10 @@ Annemarie-Renger-Str.	NH 8207,12606 8206,12734 8206,12757
 # REMOVED (laut osm "komplett abgetragen") --- (Umfahrung an der Schweizer Botschaft)	N 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 Monbijoubrücke	NN 9654,12882 9683,12913 9707,12974
 Monbijoustr.	N 9707,12974 9714,12995 9736,13061 9771,13182
-Ziegelstr. (Mitte)	N 9269,13060 9401,13072 9559,13087 9636,13076 9736,13061
+#: note: privat
+#: osm.highway: service
+Forum an der Museumsinsel	N 9650,13074 9682,13167 9633,13192 9602,13081
+Ziegelstr. (Mitte)	N 9269,13060 9401,13072 9559,13087 9602,13081 9650,13074 9736,13061
 Johannisstr.	N 9254,13171 9385,13174 9588,13174
 John-Schehr-Str.	N 13026,14234 12954,14287 12881,14342 12832,14378 12730,14458 12573,14581 12512,14626 12422,14692
 Geraer Str.	N 5414,1304 5435,1390 5467,1409 5661,1499 5854,1585 5908,1612 6010,1657 6132,1709 6170,1707 6258,1697 6377,1671 6486,1680 6526,1688

@@ -21,12 +21,12 @@
 #: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-guertelstrasse-ist-gesperrt_a363620
 #: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., 8.11.2022-2.12.2022)
-#: last_checked: 2022-11-14 vvv
+#: last_checked: 2022-11-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-02 vvv
 #: valid: -20221202 vvv
 #: note: Stau gesehen: 2022-11-08 (Di) gegen 14:25
-#: note: keinen Stau gesehen: 2022-11-11 (Fr) gegen 13:00, 2022-11-14 (Mo) gegen 12:30
+#: note: keinen Stau gesehen: 2022-11-11 (Fr) gegen 13:00, 2022-11-14 (Mo) gegen 12:30, 2022-11-22 (Di) gegen 13:00
 Jessnerstr.	Jam; 14849,11539 14946,11697 14986,11760 15077,11910
 #: note: Stau gesehen: 2022-11-08 (Di) gegen 14:25, 2022-11-11 (Fr) gegen 13:00
 #: note: kaum Stau gesehen: 2022-11-14 (Mo) gegen 12:30
@@ -146,13 +146,13 @@ Friedrichstr.	Jam; 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351
 #: next_check_id: FRIEDRICH-2020
 #: last_checked: 2022-09-23 vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2022-04-01 vvv
+#: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: !20200821-20220401 vvv
-#: valid: -20200821 vvv
+# REMOVED --- #: valid: -20200821 vvv
 Friedrichstr.	Jam; 9418,11804 9432,11702 9444,11616
 Friedrichstr.	Jam; 9444,11616 9432,11702 9418,11804
-#: valid ^^^
-# REMOVED --- #: next_check ^^^
+# REMOVED --- #: valid ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

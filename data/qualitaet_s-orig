@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-11-21
+#: last_checked: 2022-11-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1774,7 +1774,7 @@ Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587
 Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
-#: osm_watch: way id="34428911" version="13" vvv
+#: osm_watch: way id="34428911" version="14" vvv
 #: XXX wird hier asphaltiert? vvv
 #: last_checked: 2022-09-30 (mapillary) vvv
 #: next_check: 2023-10-01 vvv
@@ -4389,7 +4389,7 @@ Katharina-Boll-Dornberger-Str.: Asphalt	Q0 19269,3183 19167,3287 19086,3370 1909
 Katharina-Boll-Dornberger-Str.: Asphalt	Q0 18998,3454 18987,3442 19033,3397 19073,3357 19086,3370
 Katharina-Boll-Dornberger-Str.: Verbundsteinpflaster	Q1+ 18943,3508 18848,3600 18836,3611
 Alexander-von-Humboldt-Weg: Gehwegplatten	Q1 19015,3129 18892,3256
-Alexander-von-Humboldt-Weg: Verbundsteinpflaster	Q1+ 18892,3256 18825,3325 18689,3465
+Alexander-von-Humboldt-Weg: Verbundsteinpflaster	Q1+ 18892,3256 18818,3332 18689,3465
 Brook-Taylor-Str.: Gehwegplatten	Q1 19146,2975 19101,3028 19015,3129
 Johann-Hittorf-Str.: Asphalt	Q0 18946,3077 18802,2993 18757,2966 18716,2966 18601,2971
 Karl-Ziegler-Str.: Asphalt	Q0 18946,3077 18828,3196 18766,3260 18624,3402
@@ -12509,7 +12509,7 @@ Einödshoferweg: Asphalt	Q0 9519,4537 9494,4658
 Zietenstr. (Lankwitz) [Stichstraße]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6246,2318
 #: next_check_id: EINHEITSDENKMAL-2022
 #: XXX: provisorischer Asphalt, später vermutlich Kleinpflastersteine
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-22
 #: next_check: 2023-10-01
 Schloßplatz: Asphalt	Q0 10174,12284 10102,12384
 Schloßplatz: Kleinpflastersteine	Q1- 10102,12384 10175,12435
@@ -12881,6 +12881,7 @@ Blücherstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4018,699 4069,734 41
 (Otto-Krüger-Zeile - Wattstr.): Beton	Q0 17484,7087 17571,7157 17641,7151
 (Berliner Str. - Kissingenstr.): Betonpflaster	Q1+ 10852,17801 10896,17846 10944,17863
 (Blitzenroder Ring - Packereigraben): Asphalt/Verbundsteinpflaster	Q1 5808,22387 5796,22401 5796,22412
+Forum an der Museumsinsel: Kopfsteinpflaster	Q2 9650,13074 9682,13167 9633,13192 9602,13081
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14528,7 +14529,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: corrected_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
-#: osm_watch: way id="13863115" version="18"
+#: osm_watch: way id="13863115" version="19"
 #: last_checked: 2022-07-10
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
@@ -31686,4 +31687,5 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3046,22292
 Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 4034,21900
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 4098,21809
 Einmündungsbereich asphaltiert	Q0 16290,7160
+Kreuzungsbereich asphaltiert	Q0 10869,11949
 #: ignore ^^^

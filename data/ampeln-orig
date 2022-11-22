@@ -43,12 +43,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 #: valid: -20230627
 B179/Fichtestr.	X::inwork 26138,-12596
 # 
-#: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert) (bis 28.9.2022) (nicht verlängert)
-#: source_id: viz2021:13.183144,52.423471,27.10.2022,10:00 (bis 23.11.2022)
-#: note: laut rbb bis 28.10.2022
-#: next_check: 2022-11-23
-#: valid: -20221123
-Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
+# REMOVED --- #: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert) (bis 28.9.2022) (nicht verlängert) --- #: source_id: viz2021:13.183144,52.423471,27.10.2022,10:00 (bis 23.11.2022) --- #: note: laut rbb bis 28.10.2022 --- #: next_check: 2022-11-23 --- #: valid: -20221123 --- Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 # 
 #: next_check_id: HAEMMERLING-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022)
@@ -69,7 +64,7 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-22
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -2397,7 +2392,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: note: vorhandene Ampel ist dauerhaft abgeschaltet
 #: last_checked: 2022-09-23
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-04-01
+#: next_check: 2022-11-22
 # REMOVED --- #: valid: !20200821-20211031
 	X0 9418,11804
 # 

@@ -26330,6 +26330,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
 #: priority: #A
 #: next_check: 2022-11-24
 	2::temp -2218,5133 -927,6888
@@ -34255,16 +34256,18 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-14 vvv
+#: last_checked: 2022-11-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
+Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
 Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
 Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
+Müggelstr.	q4::inwork 14901,11808 14836,11842
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -36304,7 +36307,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-22
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36528,8 +36531,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,B)
+#: XXX Durchfahrt kann offen sein (gesehen 2022-11-22)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-22
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36942,11 +36946,12 @@ EOF
 #: by: https://fahrinfo.vbb.de/him-uploads/1659119978201_bvg_22_BM_tram_treskowallee_aushang_din_a3_220718.pdf
 #: by: https://viz.berlin.de/2022/08/oberschoeneweide-gleisarbeiten/ (Radverkehr kann in der Edisonstraße passieren)
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
+#: by: https://nitter.net/StefanB94551270/status/1595076736168992768
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee noch immer gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2022-11-12 vvv
+#: last_checked: 2022-11-22 (twitter) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-20 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37261,6 +37266,16 @@ EOF
 #: next_check: 2022-11-21
 # REMOVED --- #: next_check: 2023-01-04
 	2::inwork 9069,506 9158,551 9178,556
+EOF
+     },
+     { from  => 1669010400, # 2022-11-21 07:00
+       until => 1670515200, # 2022-12-08 17:00
+       text  => 'Jean-Jaures-Str.: Bauarbeiten, Fahrbahn zwischen Hermsdorfer Str. und Waidmannsluster Damm gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.11.2022 07:00 bis 08.12.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.32306,52.603568,22.11.2022,07:00',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1594927404748709889#m (Erwähnung des Radverkehrs)
+	q4::inwork 4812,21737 4655,21939 4613,21997 4598,22066 4584,22107 4556,22148 4456,22278
 EOF
      },
     );

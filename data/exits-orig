@@ -265,15 +265,19 @@
 #: note ^^^
 # 
 #: next_check_id: BAHNHOFSTR-2020
+#: by: https://sbahn.berlin/aktuelles/artikel/fahrplanwechsel-das-hat-sich-geaendert/ (neuer Bahnsteig wird zum 11.12.2022 teilweise in Betrieb genommen)
 #: XXX bauzeitlicher Zugang vvv
+#: priority: #C vvv
 #: last_checked: 2022-10-31 (daf) vvv
-#: next_check: 2023-07-31 vvv
+# REMOVED --- #: next_check: 2023-07-31 vvv
+#: next_check: 2022-12-11 vvv
 #: note: ebenerdig vvv
 	X 10310,-2136 10307,-2086 10175,-2068
 	X 10303,-1954 10307,-2086 10175,-2068
 #: note ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: priority ^^^
 #: XXX ^^^
 # 
 #: note: Treppe

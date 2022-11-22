@@ -3945,6 +3945,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
 #: priority: #A
 #: next_check: 2022-11-24
 	2::temp -2218,5133 -927,6888
@@ -5311,16 +5312,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-14 vvv
+#: last_checked: 2022-11-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
+Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
 Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
 Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
+Müggelstr.	q4::inwork 14901,11808 14836,11842
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5412,17 +5415,7 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: MESSELSTR-2022
-#: also_indoor: traffic (H)
-	q4::inwork 2403,6962 2304,7059 2139,7239
-',
-         'from' => 1641841766,
-         'id' => 3499,
-         'text' => 'Messelstr.: zwischen Pücklerstr. und Heydenstr. Bauarbeiten, Sperrung der Fahrbahn, bis 21.11.2022 ',
-         'type' => 'handicap',
-         'until' => 1669071600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
@@ -6247,7 +6240,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-22
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6383,8 +6376,9 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        },
        {
          'data' => '#: also_indoor: traffic (ex-G,B)
+#: XXX Durchfahrt kann offen sein (gesehen 2022-11-22)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-22
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6752,11 +6746,12 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: by: https://fahrinfo.vbb.de/him-uploads/1659119978201_bvg_22_BM_tram_treskowallee_aushang_din_a3_220718.pdf
 #: by: https://viz.berlin.de/2022/08/oberschoeneweide-gleisarbeiten/ (Radverkehr kann in der Edisonstraße passieren)
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
+#: by: https://nitter.net/StefanB94551270/status/1595076736168992768
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee noch immer gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2022-11-12 vvv
+#: last_checked: 2022-11-22 (twitter) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-20 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
@@ -6906,16 +6901,7 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'type' => 'gesperrt',
          'until' => 1669384800
        },
-       {
-         'data' => '	2::inwork 31494,49225 31482,49109 31482,49046
-',
-         'from' => 1667804400,
-         'id' => 3680,
-         'source_id' => 'LS/73-H/22/009',
-         'text' => 'Eberswalde, Altenhofer Str.: Sperrung an der Brücke über den Finowkanal, evtl. sind auch Radfahrer betroffen, 08.11.2022 08:00 Uhr bis 22.11.2022 15:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1669125600
-       },
+       undef,
        {
          'data' => '#: last_checked: 2022-11-11
 	2::inwork 15468,14430 15425,14360
@@ -7029,6 +7015,17 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Buckower Chaussee: der Bahnübergang wird demnächst wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
          'type' => 'gesperrt',
          'until' => 1767221999
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1594927404748709889#m (Erwähnung des Radverkehrs)
+	q4::inwork 4812,21737 4655,21939 4613,21997 4598,22066 4584,22107 4556,22148 4456,22278
+',
+         'from' => 1669010400,
+         'id' => 3690,
+         'source_id' => 'viz2021:13.32306,52.603568,22.11.2022,07:00',
+         'text' => 'Jean-Jaures-Str.: Bauarbeiten, Fahrbahn zwischen Hermsdorfer Str. und Waidmannsluster Damm gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.11.2022 07:00 bis 08.12.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1670515200
        }
      
 );
