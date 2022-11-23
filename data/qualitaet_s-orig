@@ -12509,7 +12509,7 @@ Einödshoferweg: Asphalt	Q0 9519,4537 9494,4658
 Zietenstr. (Lankwitz) [Stichstraße]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6246,2318
 #: next_check_id: EINHEITSDENKMAL-2022
 #: XXX: provisorischer Asphalt, später vermutlich Kleinpflastersteine
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-23
 #: next_check: 2023-10-01
 Schloßplatz: Asphalt	Q0 10174,12284 10102,12384
 Schloßplatz: Kleinpflastersteine	Q1- 10102,12384 10175,12435
@@ -28576,8 +28576,11 @@ Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,
 Weisbachstr.: Asphalt	Q1+ 13548,13290 13598,13180
 #: note: allerdings kann man bordsteinlos auf den wenig frequentierten Gehweg ausweichen
 Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13702,13634 13711,13615 13769,13487 13811,13390 13825,13359 13869,13260 13924,13135 13943,13129
+#: confirmed_by: srt
 Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13976,13309 13869,13260
+#: confirmed_by: srt
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13825,13359
+#: confirmed_by: srt
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13918,13438 13811,13390
 #: confirmed_by: srt
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
@@ -31688,4 +31691,7 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 4034,21900
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 4098,21809
 Einmündungsbereich asphaltiert	Q0 16290,7160
 Kreuzungsbereich asphaltiert	Q0 10869,11949
+Einmündungsbereich asphaltiert	Q0 13976,13309
+Einmündungsbereich asphaltiert	Q0 13934,13403
+Einmündungsbereich asphaltiert	Q0 13918,13438
 #: ignore ^^^
