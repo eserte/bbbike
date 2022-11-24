@@ -5638,8 +5638,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022)
-#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022)
+         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022)
+#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022)
 #: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39 (inaktiv)
 #: note: laut rbb nur bis 20.4.2022
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
@@ -5647,7 +5647,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: priority: #B
 #: last_checked: 2022-11-19 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-12-03 vvv
+#: next_check: 2022-12-21 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
@@ -5659,9 +5659,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 ',
          'from' => undef,
          'id' => 3523,
-         'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Anfang Dezember 2022',
+         'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis 21. Dezember 2022',
          'type' => 'handicap',
-         'until' => 1670083200
+         'until' => 1671638400
        },
        {
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
@@ -5760,7 +5760,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="4"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-24
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -6023,7 +6023,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-11-13 vvv
+#: last_checked: 2022-11-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -6240,7 +6240,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-24
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6257,14 +6257,15 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1263481.php (Kreuzung wird komplett gesperrt; Verkehrsumstellung ab 11.11.2022, Bauarbeiten ab 14.11.2022; Dauer zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/10/koepenicker-landstrasse-hier-geht-nichts-mehr/
 #: by: https://viz.berlin.de/2022/11/koepenicker-landstr/ (Freigabe der Kreuzung geplant: 14.11.2022 plus zwei Wochen)
+#: by: https://berliner-abendblatt.de/2022/11/24/koepenicker-landstrasse-noch-bis-zum-12-dezember-2022-gesperrt/
 #: note: laut rbb nur bis 11.11.2022
 #: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
-#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022)
-#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
-#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022)
+#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
+#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
 #: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
 #: last_checked: 2022-11-21
 #: next_check: 2022-12-14
@@ -6276,9 +6277,9 @@ Trojanstr.: Einbahnstraße	q4::inwork; 16290,7160 16353,7226
          'from' => 1662564323,
          'id' => 3620,
          'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
-         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/Südosten, außerdem Einbahnstraßenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis Ende November 2022',
+         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/Südosten, außerdem Einbahnstraßenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis Mitte Dezember 2022',
          'type' => 'handicap',
-         'until' => 1669651200
+         'until' => 1670860800
        },
        undef,
        undef,
@@ -6597,16 +6598,16 @@ Triftstr.	q3::inwork 7356,15350 7464,15409
          'until' => undef
        },
        {
-         'data' => '#: note: rbb-Meldung
+         'data' => '#: note: rbb-Meldung (verlängert)
 #: also_indoor: traffic (B,H)
 # REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
 	q4::inwork 6273,2609 6065,2443
 ',
          'from' => 1665772021,
          'id' => 3652,
-         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 25.11.2022 ',
+         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 08.12.2022 ',
          'type' => 'handicap',
-         'until' => 1669417200
+         'until' => 1670518800
        },
        undef,
        {
@@ -6712,7 +6713,9 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'until' => undef
        },
        {
-         'data' => '#: add_fragezeichen: Bis wann geht die Sperrung?
+         'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
+#: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
+#: add_fragezeichen: Bis wann geht die Sperrung?
 #: last_checked: 2022-11-20
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6865,7 +6868,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-11-18
+#: last_checked: 2022-11-24
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -7012,6 +7015,7 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
+#: osm_watch: way id="1116309150" version="1"
 #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 #: priority: #A
 #: last_checked: 2022-10-31 (daf)

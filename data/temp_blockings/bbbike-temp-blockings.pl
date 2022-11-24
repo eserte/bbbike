@@ -17454,7 +17454,7 @@ EOF
        until => $isodate2epoch->("2021-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12, start => "2022-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten
-       #recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
+       recurrence_prewarn_days => 7, # Ausmaß der Sperrungen 2022/2023 noch unklar
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17463,6 +17463,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72
 #: by: https://viz.berlin.de/2020/12/welcome21/
+#: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -25445,7 +25446,7 @@ EOF
        until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2022-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine
-       recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
+       recurrence_prewarn_days => 7, # XXX Ausmaß der Sperrungen 2022/2023 unklar
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -34938,12 +34939,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2022-12-03 17:00:00"), # undef, # XXX
-       text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Anfang Dezember 2022',
+       until => $isodate2epoch->("2022-12-21 17:00:00"), # undef, # XXX
+       text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis 21. Dezember 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022)
-#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022)
+#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022)
+#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022)
 #: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39 (inaktiv)
 #: note: laut rbb nur bis 20.4.2022
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
@@ -34951,7 +34952,7 @@ EOF
 #: priority: #B
 #: last_checked: 2022-11-19 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-12-03 vvv
+#: next_check: 2022-12-21 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
@@ -35131,8 +35132,7 @@ EOF
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -35148,7 +35148,7 @@ EOF
 #: osm_watch: way id="975241319" version="4"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-24
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35866,7 +35866,7 @@ EOF
        data  => <<EOF,
 #: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-11-13 vvv
+#: last_checked: 2022-11-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -36307,7 +36307,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-24
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36322,8 +36322,8 @@ EOF
 EOF
      },
      { from  => 1662564323, # 2022-09-07 17:25
-       until => $isodate2epoch->("2022-11-28 17:00:00"), # 1667257199, # 2022-10-31 23:59
-       text  => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/Südosten, außerdem Einbahnstraßenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis Ende November 2022', # was: 23.11.2022
+       until => $isodate2epoch->("2022-12-12 17:00:00"), # 1667257199, # 2022-10-31 23:59
+       text  => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/Südosten, außerdem Einbahnstraßenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis Mitte Dezember 2022', # was: 23.11.2022
        type  => 'handicap',
        source_id => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
        data  => <<EOF,
@@ -36332,14 +36332,15 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1263481.php (Kreuzung wird komplett gesperrt; Verkehrsumstellung ab 11.11.2022, Bauarbeiten ab 14.11.2022; Dauer zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/10/koepenicker-landstrasse-hier-geht-nichts-mehr/
 #: by: https://viz.berlin.de/2022/11/koepenicker-landstr/ (Freigabe der Kreuzung geplant: 14.11.2022 plus zwei Wochen)
+#: by: https://berliner-abendblatt.de/2022/11/24/koepenicker-landstrasse-noch-bis-zum-12-dezember-2022-gesperrt/
 #: note: laut rbb nur bis 11.11.2022
 #: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
-#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022)
-#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
-#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022)
+#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
+#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
 #: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
 #: last_checked: 2022-11-21
 #: next_check: 2022-12-14
@@ -36764,11 +36765,11 @@ Triftstr.	q3::inwork 7356,15350 7464,15409
 EOF
      },
      { from  => 1665772021, # 2022-10-14 20:27
-       until => 1669417200, # 2022-11-26 00:00
-       text  => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 25.11.2022 ',
+       until => $isodate2epoch->("2022-12-08 18:00:00"), # 1669417200, # 2022-11-26 00:00
+       text  => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 08.12.2022 ',
        type  => 'handicap',
        data  => <<EOF,
-#: note: rbb-Meldung
+#: note: rbb-Meldung (verlängert)
 #: also_indoor: traffic (B,H)
 # REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
 	q4::inwork 6273,2609 6065,2443
@@ -36904,6 +36905,8 @@ EOF
        text  => 'Lausitzer Platz: Sperrung der westlichen Fahrbahn an der Skalitzer Str.',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
+#: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
 #: last_checked: 2022-11-20
 	q3::inwork 12328,10442 12274,10612
@@ -37084,7 +37087,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-11-18
+#: last_checked: 2022-11-24
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37260,6 +37263,7 @@ EOF
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
+#: osm_watch: way id="1116309150" version="1"
 #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 #: priority: #A
 #: last_checked: 2022-10-31 (daf)

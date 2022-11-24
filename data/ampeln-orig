@@ -28,7 +28,7 @@ Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-11-21
+#: last_checked: 2022-11-24
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -64,7 +64,7 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-24
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -1536,7 +1536,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="1"
-#: last_checked: 2022-10-02 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2022-11-24 (manchmal ausgeschaltet (abends? selten?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -1679,7 +1679,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # 
 #: XXX: seit mindestens Ende Juli 2022 ausgeschaltet
 #: add_fragezeichen: Bleibt die Ampel Mariannenstr./Reichenberger Str. dauerhaft ausgeschaltet?
-#: last_checked: 2022-10-24
+#: last_checked: 2022-11-24
 	X0 11616,10288
 # 
 #: XXX_prog: zusammenhängende Ampelanlage vvv
@@ -2485,13 +2485,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-24
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2022-11-21
+#: last_checked: 2022-11-24
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746

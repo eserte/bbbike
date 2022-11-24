@@ -321,7 +321,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-11-21
+#: last_checked: 2022-11-24
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -485,7 +485,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2022-10-28 vvv
+#: last_checked: 2022-11-24 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1152,7 +1152,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-11-21 vvv
+#: last_checked: 2022-11-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3483,6 +3483,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022)
+#: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten)
 #: note: laut rbb bis 15.11.2022
 #: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
 #: last_checked: 2022-11-12 vvv
@@ -4626,7 +4627,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: source_id: 2147342739
-#: last_checked: 2022-07-30 vvv
+#: last_checked: 2022-11-02 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -5736,7 +5737,7 @@ Gehwegplatten	RW1; 620,12144 610,12100
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
-#: osm_watch: way id="153370345" version="13"
+#: osm_watch: way id="153370345" version="14"
 #: osm_watch: way id="153373877" version="18"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
@@ -5749,7 +5750,7 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="23"
+#: osm_watch: way id="153370344" version="29"
 #: osm_watch: way id="153373879" version="17"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
@@ -6630,15 +6631,16 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2022-11-01 vvv
-#: check_frequency: 60d
+#: last_checked: 2022-11-24 vvv
+#: check_frequency: 60d vvv
 temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
 	RW4; 12639,8344 12689,8289 12714,8249
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-24
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
@@ -6673,11 +6675,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-24
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-24
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7424,7 +7426,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen)
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-10-02
+#: last_checked: 2022-11-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
