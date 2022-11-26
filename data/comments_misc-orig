@@ -351,6 +351,17 @@ Kreisverkehr	Roundabout 27754,-8708
 #: ignore ^^^
 #
 ######################################################################
+# overtaking:motorcar:conditional=no @ singletrack (Radfahrer dürfen nicht überholt werden)
+# 
+# Nur permanente Schilder aufnehmen!
+# XXX: Kategoriekürzel notwendig!
+# XXX: sollte gerendert werden, zumindest in der Perl/Tk-Anwendungen, unter Verwendung des Zeichens 277.1
+# 
+#: ignore vvv
+Brandenburgische Str.: Radfahrer dürfen nicht überholt werden	CS; 3852,10236 3896,10042 3927,9935
+#: ignore ^^^
+# 
+######################################################################
 # busroute
 #
 # Hier sind alle Busrouten enthalten, die sich nicht auf
@@ -1205,7 +1216,7 @@ Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 # REMOVED (mittlerweile existieren Staßenschilder) --- #: XXX sind die Straßen mittlerweile ausgeschildert? vvv --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648 --- Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 # 
-#: osm_watch: way id="406201948" version="15"
+#: osm_watch: way id="406201948" version="16"
 #: osm_watch: way id="25367620" version="25"
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
@@ -1755,8 +1766,13 @@ Am Werksgarten: nicht ausgeschildert	CP2; 22805,5179 22803,5241
 Schilder VoltAir-Parkhaus und Zugang Dircksenstraße 04	CP2; 11240,12368 11344,12410
 # 
 #: XXX Wird hier noch ausgeschildert?
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-26
 Forum an der Museumsinsel: nicht ausgeschildert	CS 9650,13074 9682,13167 9633,13192 9602,13081
+# 
+#: by: mapillary (kein Scherz)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5832
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/fnLHXQriPYaXCg11dvvhibO6O8AmZFFbDGfEsncu/GcavYgrs/69-Anlagen/04/B0316SB.pdf (hier wird auch "Weg" erwähnt)
+ausgeschilder als "Weg"	CP2; 21640,-582 21403,-859
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

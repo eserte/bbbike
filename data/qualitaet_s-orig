@@ -177,7 +177,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2022-11-20
+#: last_checked: 2022-11-26
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -337,7 +337,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2022-11-13 vvv
+#: last_checked: 2022-11-25 (daf) vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-26
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2346,7 +2346,7 @@ Uferpromenade: meist fester Waldweg, einige sandige Stellen	Q2- -8422,2155 -8340
 Rosmarinstr.: gutes Kopfsteinpflaster	Q1 9369,12253 9489,12263
 Weimarische Str.: Kopfsteinpflaster	Q2 5053,8355 5050,8140 5048,8012 5049,7966
 (Gleditschstr. - Elßholzstr.): kleinteiliges Kopfsteinpflaster	Q1 7122,9517 7158,9509 7209,9507
-Reuchlinstr.: mäßiges Kopfsteinpflaster	Q2 4985,13470 4964,13319 4926,13207
+Reuchlinstr.: mäßiges Kopfsteinpflaster	Q2 4985,13470 4959,13347 4926,13207
 Türkenstr.: Kopfsteinpflaster	Q2 6440,16327 6629,16538
 Am Luchgraben: Asphalt	Q0 17073,21329 16678,22149 16594,22188
 Rhumeweg: Kopfsteinpflaster	Q2 -1536,3314 -1453,3166 -1403,3047 -1339,2889 -1297,2846
@@ -5171,7 +5171,9 @@ Straße zum Müggelhort: Asphalt	Q0 28729,3084 28715,3198 28751,3243 28853,3279 28
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bezirk-warnt-mit-verkehrsschild-vor-schaeden-auf-dem-europaradweg-r1_a325556 (die Schäden sind anscheinend größer geworden: Q0- -> Q1+)
 #: by: https://media04.berliner-woche.de/article/2021/10/18/7/378737_XXL.jpg?1635504364
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1255224.php (Instandsetzung)
-#: XXX Ist die Fahrbahn östlich der Bus-Endhaltestelle nach den Bauarbeiten besser geworden?
+#: add_fragezeichen: Ist die Fahrbahn östlich der Bus-Endhaltestelle nach den Bauarbeiten besser geworden?
+#: osm_watch: way id="631278828" version="1"
+#: osm_watch: way id="22946308" version="19"
 #: next_check: 2022-11-25
 Müggelschlößchenweg: Asphalt, einige Wurzelhebungen	Q1+ 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
 Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23453,4181 23435,4179
@@ -15356,7 +15358,7 @@ Heidekampweg: Asphalt	Q0 15696,6507 15672,6663 15697,6688
 #: by: ^^^
 # 
 #: by: Kristine:
-Erasmusstr.: Asphalt	Q0 5202,13266 4964,13319
+Erasmusstr.: Asphalt	Q0 5202,13266 4959,13347
 # 
 #: by: Susanna (Vinesumar...): vvv
 #: confirmed_by: srt (und damit Peter Panik widersprochen: er hat für die gesamte Strecke "schlechtes Kopfsteinpflaster" eingetragen)
@@ -16217,6 +16219,9 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10326 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10391 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10489 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10504 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10621 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10624 (Anfrage)
 #: also_indoor: search Lemkestraße vvv
 #: last_checked: 2022-11-05 (mapillary) vvv
 #: check_frequency: 90d vvv
@@ -31695,4 +31700,5 @@ Kreuzungsbereich asphaltiert	Q0 10869,11949
 Einmündungsbereich asphaltiert	Q0 13976,13309
 Einmündungsbereich asphaltiert	Q0 13934,13403
 Einmündungsbereich asphaltiert	Q0 13918,13438
+Einmündungsbereich mit Kopfsteinpflaster	Q2 4959,13347
 #: ignore ^^^

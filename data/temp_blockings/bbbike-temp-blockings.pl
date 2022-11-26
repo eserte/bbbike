@@ -31057,9 +31057,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-11-19
+#: last_checked: 2022-11-26
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34253,6 +34254,7 @@ EOF
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10632 (Erwähnung von Radfahrstreifen, allerdings nur geplant)
 #: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
@@ -34579,7 +34581,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-26
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -34774,10 +34776,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-10-29 vvv
+#: last_checked: 2022-11-26 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="30"
+#: osm_watch: way id="4395450" version="31"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="14"
 	2::inwork 6631,12707 6694,12627
@@ -35182,19 +35184,20 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2022-11-26 17:00:00"), # undef, # XXX
-       text  => 'Zähringerstr.: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
+       until => undef, # $isodate2epoch->("2022-11-26 17:00:00"), # undef, # XXX
+       text  => 'Zähringerstr.: Einbahnstraßenregelung', # früher: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
        type  => 'handicap',
        data  => <<EOF,
 #: osm_watch: way id="874517258" version="9"
-#: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022)
-#: last_checked: 2022-09-30
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2022-11-26
+# REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
+#: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
+#: last_checked: 2022-11-26
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
-	q4::inwork 4126,9932 3927,9935
+# REMOVED ---	q4::inwork 4126,9932 3927,9935
+	q4::inwork; 4126,9932 3927,9935
 EOF
      },
      { from  => undef, # 
@@ -35477,7 +35480,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="791796343" version="4"
-#: last_checked: 2022-10-17 (daf)
+#: last_checked: 2022-11-26
 #: check_frequency: 30d
 	q4::inwork 4961,12940 4932,12968
 EOF
@@ -36283,7 +36286,7 @@ EOF
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-des-bauhaus-archivs-hat-begonnen_a359183
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
-#: osm_watch: way id="481651814" version="4"
+#: osm_watch: way id="481651814" version="6"
 #: last_checked: 2022-09-30
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -36508,7 +36511,7 @@ EOF
 	2::bomb 4455,13567 4605,13525 4985,13470 5116,13457 5100,13822 5089,14010 5220,14043
 	2::bomb 5231,13843 5100,13822 4972,13804 4963,13969
 	2::bomb 4186,13710 4265,13742 4223,13949
-	2::bomb 4972,13804 4985,13470 4964,13319
+	2::bomb 4972,13804 4985,13470 4959,13347
 EOF
      },
      { from  => undef, # 
@@ -36531,13 +36534,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Rosa-Luxemburg-Str.: Bauarbeiten nördlich der Memhardstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Rosa-Luxemburg-Str.: Fahrbahn nördlich der Memhardstr. gesperrt, Ende der Sperrung unbekannt', # --- mittlerweile keine Bauarbeiten mehr zu sehen, früherer Eintrag: Bauarbeiten nördlich der Memhardstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,B)
 #: XXX Durchfahrt kann offen sein (gesehen 2022-11-22)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-22
+#: add_fragezeichen: Wann ist die Sperrung beendet?
+#: last_checked: 2022-11-26
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36643,7 +36646,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-11-19 vvv
+#: last_checked: 2022-11-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-01 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -36910,7 +36913,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-11-20
+#: last_checked: 2022-11-26
 	q3::inwork 12328,10442 12274,10612
 EOF
      },
@@ -37221,6 +37224,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TEGELERBRUECKE-2021
 #: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
 #: osm_watch: node id="10202117536" version="1"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
@@ -37283,6 +37287,28 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1594927404748709889#m (Erwähnung des Radverkehrs)
 	q4::inwork 4812,21737 4655,21939 4613,21997 4598,22066 4584,22107 4556,22148 4456,22278
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2023-04-30 18:00:00"),
+       text  => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2023',
+       type  => 'handicap',
+       source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
+       data  => <<EOF,
+#: last_checked: 2022-11-26
+#: next_check: 2023-04-30
+	q4::inwork; 5172,8880 5165,8784
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Augsburger Str.: Hochbauarbeiten an der Joachimsthaler Str., Einbahnstraße, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2022-11-26
+#: check_frequency: 90d
+	q4::inwork; 5497,10719 5471,10719
 EOF
      },
     );

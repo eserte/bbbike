@@ -1677,10 +1677,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6124,12694
 	X 6227,13938
 # 
-#: XXX: seit mindestens Ende Juli 2022 ausgeschaltet
-#: add_fragezeichen: Bleibt die Ampel Mariannenstr./Reichenberger Str. dauerhaft ausgeschaltet?
-#: last_checked: 2022-11-24
-	X0 11616,10288
+# REMOVED (am 26.11.2022 eingeschaltet gesehen) --- #: XXX: seit mindestens Ende Juli 2022 ausgeschaltet --- #: add_fragezeichen: Bleibt die Ampel Mariannenstr./Reichenberger Str. dauerhaft ausgeschaltet? --- #: last_checked: 2022-11-24
+	X 11616,10288
 # 
 #: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 22383,4470
@@ -3589,7 +3587,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: BERLINERBAHNHOF-2020
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
 #: last_checked: 2022-10-28 (mapillary) vvv
 #: check_frequency: 60d vvv
