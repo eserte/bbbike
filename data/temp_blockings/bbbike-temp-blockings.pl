@@ -32313,7 +32313,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (alter Übergang existiert zur Hälfte --- bleibt es so?) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer Übergang mehr) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: last_checked: 2021-09-05 (krickstadt) --- #: check_frequency: 30d --- #: next_check: 2021-10-31
-	2::inwork 18836,3611 18848,3600 18943,3508
+	2::inwork 18836,3611 18848,3600 18851,3598 18943,3508
 EOF
      },
      { from  => $isodate2epoch->("2021-03-08 05:00:00"), # 1609650000, # 2021-01-03 06:00
@@ -33663,9 +33663,9 @@ EOF
        data  => <<EOF,
 # REMOVED (laut osm beendet) --- #: next_check_id: STERNDAMM-2020 --- #: last_checked: 2021-10-10 --- #: check_frequency: 60d --- #: next_check: 2021-10-31
 	q3::inwork 18766,3260 18828,3196 18946,3077
-	3 18892,3256 18828,3196 18822,3188
-	3 18892,3256 18828,3196 18946,3077
-	3 18822,3188 18828,3196 18892,3256
+	3 18892,3256 18836,3203 18828,3196 18822,3188
+	3 18892,3256 18836,3203 18828,3196 18946,3077
+	3 18822,3188 18828,3196 18836,3203 18892,3256
 EOF
      },
      { from  => 1628719200, # 2021-08-12 00:00
@@ -36347,7 +36347,7 @@ EOF
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
 #: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
-#: last_checked: 2022-11-21
+#: last_checked: 2022-11-27
 #: next_check: 2022-12-14
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16428,7144
@@ -37309,6 +37309,17 @@ EOF
 #: last_checked: 2022-11-26
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Betriebsbahnhof Schöneweide: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Ist der Weg wieder geöffnet?
+#: last_checked: 2022-11-27
+#: check_frequency: 90d
+	2::inwork 18107,5011 17822,5409
 EOF
      },
     );

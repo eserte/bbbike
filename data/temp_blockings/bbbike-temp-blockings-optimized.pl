@@ -6252,7 +6252,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022)
 #: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
-#: last_checked: 2022-11-21
+#: last_checked: 2022-11-27
 #: next_check: 2022-12-14
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16428,7144
@@ -7030,6 +7030,18 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'id' => 3692,
          'text' => 'Augsburger Str.: Hochbauarbeiten an der Joachimsthaler Str., Einbahnstraße, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist der Weg wieder geöffnet?
+#: last_checked: 2022-11-27
+#: check_frequency: 90d
+	2::inwork 18107,5011 17822,5409
+',
+         'from' => undef,
+         'id' => 3693,
+         'text' => 'Am Betriebsbahnhof Schöneweide: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      
