@@ -3,6 +3,10 @@
 #: line_color.busroute_N: #7f00e5
 #: line_width.busroute_N: 1,1,1,1,1,1
 #: line_dash.busroute_N: 2,4
+#: category_image.otb0: ../misc/verkehrszeichen/Zeichen_277.1.svg:12x12=1:12000,xxx
+#: line_color.otb0: #80d080
+#: line_dash.otb0: 4,4
+#: line_do_offset.otb0: 1
 #
 # z.B.: path finding helper (maybe candidates for comments_path):
 #       * "ausgeschildert als"
@@ -356,11 +360,9 @@ Kreisverkehr	Roundabout 27754,-8708
 # overtaking:motorcar:conditional=no @ singletrack (Radfahrer dürfen nicht überholt werden)
 # 
 # Nur permanente Schilder aufnehmen!
-# XXX: Kategoriekürzel notwendig!
-# XXX: sollte gerendert werden, zumindest in der Perl/Tk-Anwendungen, unter Verwendung des Zeichens 277.1
 # 
 #: ignore vvv
-Brandenburgische Str.: Radfahrer dürfen nicht überholt werden	CS; 3852,10236 3896,10042 3927,9935
+Brandenburgische Str.: Radfahrer dürfen nicht überholt werden	otb0; 3852,10236 3896,10042 3927,9935
 #: ignore ^^^
 # 
 ######################################################################
