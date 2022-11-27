@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Doit::Git; # Convention: all commands here should be prefixed with 'git_
 
 use strict;
 use warnings;
-our $VERSION = '0.027';
+our $VERSION = '0.028';
 
 use Doit::Log;
 use Doit::Util qw(in_directory);
@@ -23,7 +23,7 @@ use Doit::Util qw(in_directory);
 sub _pipe_open (@);
 
 sub new { bless {}, shift }
-sub functions { qw(git_repo_update git_short_status git_root git_get_commit_hash git_get_commit_files git_get_changed_files git_is_shallow git_current_branch git_config) }
+sub functions { qw(git_repo_update git_short_status git_root git_get_commit_hash git_get_commit_files git_get_changed_files git_is_shallow git_current_branch git_config git_get_default_branch) }
 
 sub git_repo_update {
     my($self, %opts) = @_;
@@ -437,6 +437,58 @@ sub git_config {
 	}
     } $directory;
 }
+
+sub git_get_default_branch {
+    my($self, %opts) = @_;
+    my $directory = delete $opts{directory};
+    my $origin    = delete $opts{origin} || 'origin';
+    my $method    = delete $opts{method};
+    error "Unhandled options: " . join(' ', %opts) if %opts;
+
+    my @methods = (
+	ref $method eq 'ARRAY' ? @$method :
+	defined $method        ? $method  :
+	                         ()
+    );
+    if (!@methods) { @methods = 'remote' }
+
+    my @error_msgs;
+    my $res;
+
+    in_directory {
+    TRY_METHODS: while (@methods) {
+	    my $method = shift @methods;
+	    if ($method eq 'remote') {
+		# from https://stackoverflow.com/questions/28666357/git-how-to-get-default-branch#comment126528129_50056710
+		chomp(my $info_res = $self->info_qx({quiet=>1}, qw(env LC_ALL=C git remote show), $origin));
+		if ($info_res =~ /^\s*HEAD branch:\s+(.*)/m) {
+		    $res = $1;
+		    last TRY_METHODS;
+		} else {
+		    push @error_msgs, "method $method: Can't get default branch; git-remote output is:\n$res";
+		}
+	    } elsif ($method eq 'symbolic-ref') {
+		my $parent_ref = 'refs/remotes/' . $origin;
+		chomp(my $info_res = eval { $self->info_qx({quiet=>1}, qw(git symbolic-ref), "$parent_ref/HEAD") });
+		if (defined $info_res && $info_res ne '') {
+		    $res = substr($info_res, length($parent_ref)+1);
+		    last TRY_METHODS;
+		} else {
+		    push @error_msgs, "method $method: Can't get default branch ($@)";
+		}
+	    } else {
+		error "Unhandled git_get_default_branch method '$method'";
+	    }
+	}
+    } $directory;
+
+    if (@error_msgs) {
+	error join("\n", @error_msgs);
+    }
+
+    $res;
+}
+
 
 # From https://stackoverflow.com/a/4495524/2332415
 sub _is_dir_empty {
