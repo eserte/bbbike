@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2020,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -54,8 +54,15 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
 	die "Failed to fetch '$changeset_url': " . $changeset_resp->as_string . "\n";
     }
     my $changeset_dom = XML::LibXML->load_xml(string => $changeset_resp->decoded_content);
-    my $changeset_comment = $changeset_dom->findvalue('/osm/changeset/tag[@k="comment"]/@v');
+    my($changeset_elem) = $changeset_dom->findnodes('/osm/changeset');
+    my $changeset_user = $changeset_elem->getAttribute('user');
+    my $changeset_closed_at = $changeset_elem->getAttribute('closed_at');
+    my $changeset_comment = $changeset_elem->findvalue('./tag[@k="comment"]/@v');
     print "="x70,"\n";
+    print "id $changeset_id\n";
+    print "Author: $changeset_user\n";
+    print "Date:   $changeset_closed_at\n";
+    print "\n";
     print Text::Wrap::wrap("    ", "    ", $changeset_comment) . "\n\n";
 
     # diff
