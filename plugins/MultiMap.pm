@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.85;
+$VERSION = 1.86;
 
 use vars qw(%images);
 
@@ -180,8 +180,8 @@ sub register {
 	$main::info_plugins{__PACKAGE__ . "_LSB"} =
 	    { name => "LS Brandenburg Verkehrsmengen",
 	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_bbviewer(@_, layers => [520], subpage => 'strassennetz') },
-		  callback_3_std => sub { showmap_url_bbviewer(@_, layers => [520], subpage => 'strassennetz') },
+	       ? (callback => sub { showmap_bbviewer(@_) },
+		  callback_3_std => sub { showmap_url_bbviewer(@_) },
 		 )
 	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
 	      ),
@@ -1607,18 +1607,15 @@ sub showmap_viz {
 
 sub showmap_url_bbviewer {
     my(%args) = @_;
-    my $bglayer = $args{bglayer} // 1;
-    my $layers  = $args{layers};
-    my $subpage = $args{subpage};
-    my $rooturl = "https://bb-viewer.geobasis-bb.de/" . ($subpage ? "$subpage/" : "");
+    # XXX rooturl is hardcoded for "Verkehrsstärke"
+    my $rooturl = 'https://viewer.brandenburg.de/strassennetz/?layerIDs=10021,2062,22,10,11,7,8,5,6,9001,9000&visibility=true,true,true,true,true,true,true,true,true,true,true&transparency=0,0,0,0,0,0,0,0,0,0,0&';
     require Geo::Proj4;
     my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25833
 	or die Geo::Proj4->error;
     my($x,$y) = $proj4->forward($args{py}, $args{px});
     my $scale = 7 - log(($args{mapscale_scale})/12000)/log(2);
     $scale = 15 if $scale > 15;
-    my $layers_param = $layers ? "&" . join("&", map { "layers=$_" } @$layers) : "";
-    sprintf "$rooturl?projection=EPSG:25833&center=%d,%d&zoom=%d&bglayer=%d" . $layers_param, $x, $y, $scale, $bglayer;
+    sprintf "${rooturl}center=%d,%d&zoomlevel=%d", $x, $y, $scale;
 }
 
 sub showmap_bbviewer {
