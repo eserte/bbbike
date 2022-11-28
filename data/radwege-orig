@@ -245,7 +245,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 #: osm_watch: way id="305483806" version="10"
 #: osm_watch: way id="25042039" version="32"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2022-10-28
+#: last_checked: 2022-11-27 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2026-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -875,7 +875,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-28
 #: check_frequency: 60d
 	RW2; 14994,12121 15117,12106 15361,12071
 # 
@@ -2121,6 +2121,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 	RW6;RW6 12731,10547 12822,10487 12897,10439 13032,10355 13151,10276 13271,10193
 asphaltiert	RW1; 13795,9941 13860,9861 14089,9610
 	RW1;RW1 15144,10905 15205,11080 15245,11162 15251,11175 15322,11335
+	RW1; 15322,11335 15356,11338
 	RW6;RW6 3117,11852 2953,11830 2728,11805 2547,11788
 	RW6;RW6 4312,11354 4216,11351 4101,11347 3986,11347 3877,11347 3749,11344
 	RW6;RW6 3981,11232 3983,11289 3986,11347 3988,11502
@@ -3477,6 +3478,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/salvador-allende-bruecke-ist-nach-fuenf-jahren-bauzeit-fertiggestellt_a362966
 #: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-wird-freigegeben/
 #: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-nach-fuenf-jahren-wieder-eroeffnet/
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/im-umfeld-der-salvador-allende-bruecke-wird-noch-weiter-gebaut_a364193 (bis Anfang Dezember 2022)
 # REMOVED --- #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017 --- #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate --- #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten --- #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
 #: osm_watch: way id="333893474" version="27"
 #: osm_watch: way id="10275151" version="50"
@@ -3491,7 +3493,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
 #: last_checked: 2022-11-12 vvv
 # REMOVED --- #: check_frequency: 120d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2022-12-10 vvv
 # REMOVED --- #: priority: #A vvv
 	RW8; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 # REMOVED --- #: priority ^^^
@@ -8028,5 +8030,5 @@ Verbundsteinpflaster, OK	RW2; 3490,16083 3518,16102 3546,16143 3587,16219 3585,1
 # 
 	RW6;RW6 -8313,13167 -8264,13197 -8049,13332
 # 
-	RW7;RW7 9475,12365 9489,12263 9496,12215 9509,12117 9523,12019 9536,11922
+	RW7;RW7 9475,12365 9489,12263 9496,12215 9509,12117 9523,12019 9536,11922 9547,11819 9559,11715 9569,11631
 # 

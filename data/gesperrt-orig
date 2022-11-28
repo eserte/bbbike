@@ -3477,7 +3477,7 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2022-11-22
+#: last_checked: 2022-11-28
 #: check_frequency: 14d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3488,7 +3488,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gendarmenmarkt
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
-#: last_checked: 2022-11-23 vvv
+#: last_checked: 2022-11-27 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus möglich vvv
@@ -3806,7 +3806,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
 #: next_check_id: TEGELERBRUECKE-2021
-#: osm_watch: way id="930770437" version="3"
+#: osm_watch: way id="930770437" version="4"
 #: last_checked: 2022-10-08
 #: check_frequency: 180d
 #: next_check: 2023-12-01
@@ -3921,8 +3921,8 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: XXX Gesperrt wegen Bauarbeiten an den neuen Baufeldern nördlich der Straßenbahntrasse. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
 #: XXX Mittlerweile ist der Weg bis zum Bahnübergang offen; Schild an der Hermann-Dorner-Allee fehlt
 #: add_fragezeichen: Ist der Straßenbahnübergang mittlerweile offen?
-#: osm_watch: way id="229647788" version="8"
-#: osm_watch: way id="850453338" version="7"
+#: osm_watch: way id="229647788" version="9"
+#: osm_watch: way id="850453338" version="8"
 #: last_checked: 2022-11-27
 #: check_frequency: 30d
 Alexander-von-Humboldt-Weg: Straßenbahnübergang gesperrt	2::inwork 18818,3332 18829,3321
@@ -4032,7 +4032,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-06
+#: last_checked: 2022-11-27 (mapillary)
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # 

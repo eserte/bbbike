@@ -26332,6 +26332,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
 #: priority: #A
 #: next_check: 2022-11-30
 	2::temp -2218,5133 -927,6888
@@ -32388,11 +32389,13 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8371 (Bebauungsplan 7-89 VE)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-gebaeude-ensemble-an-der-passauer-strasse_a365087 (Bauarbeiten noch zwei Jahre (ab Mitte November 2022))
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="7"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2022-10-28
-#: check_frequency: 90d
+#: check_frequency: 120d
+#: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
 EOF
      },
@@ -34260,7 +34263,7 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-22 vvv
+#: last_checked: 2022-11-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -36423,9 +36426,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-10-28
-#: next_check: 2022-12-10
-	q4::inwork 8389,11378 8481,11447 8479,11493
+#: last_checked: 2022-11-27 (mapillary)
+#: next_check: 2022-12-31
+	q4::inwork 8389,11378 8481,11447
+# REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 EOF
      },
      { from  => undef, # 
@@ -36616,10 +36620,10 @@ EOF
 #: note: laut rbb
 #: also_indoor: traffic (H,B,G) vvv
 #: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022 vvv
-#: last_checked: 2022-11-14 vvv
+#: last_checked: 2022-11-28 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-06 vvv
-einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
+# REMOVED (hier mittlerweile wieder offen) --- einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
 #: next_check ^^^
@@ -36702,7 +36706,7 @@ EOF
        data  => <<EOF,
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (B) vvv
+#: also_indoor: traffic (B,H) vvv
 #: last_checked: 2022-10-28 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
@@ -37229,7 +37233,7 @@ EOF
 #: osm_watch: node id="10202117536" version="1"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: next_check: 2023-12-01
-	2::temp -784,16658 -719,16608
+	2 -784,16658 -719,16608
 EOF
      },
      { from  => 1668598860, # 2022-11-16 12:41

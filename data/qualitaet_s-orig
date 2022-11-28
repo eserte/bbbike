@@ -4098,7 +4098,7 @@ Weidenweg: Kopfsteinpflaster	Q2; 13828,12658 13863,12677
 Weidenweg: asphaltiert	Q0; 13863,12677 13828,12658
 Weidenweg: Asphalt	Q0 13863,12677 13911,12692 14058,12709
 Roedeliusplatz: Kopfsteinpflaster	Q2 16158,12191 16248,12177
-Freiastr.: Kopfsteinpflaster	Q2 16826,12408 16694,12422
+Freiastr.: Kopfsteinpflaster	Q2 16831,12419 16696,12437
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 16865,13000 17048,13000 17113,13025 17170,13070 17227,13075 17257,13117 17219,13430 17201,13510 17201,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 17219,13430 17300,13459
 Herzbergstr.: betoniert/Verbundsteinpflaster	Q0- 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
@@ -4250,7 +4250,7 @@ Rosenfelder Ring: Kopfsteinpflaster	Q2+ 17460,11961 17384,11976
 Rosenfelder Ring: Beton	Q1+ 18014,11837 18006,11968 18004,12010 17978,12084 17961,12096 17916,12103 17833,12097 17511,12019 17480,12003 17460,11961
 Rosenfelder Ring: Beton	Q0- 17477,11893 17540,11878 17775,11858 18014,11837
 Rhinstr. [Wohngebiet]: Asphalt	Q0 18215,12123 18174,12116 18165,12091 18160,11938
-Rhinstr. [Wohngebiet]: Beton	Q0- 18160,11938 18140,11932 18139,11833
+Rhinstr. [Wohngebiet]: Beton	Q0- 18160,11938 18140,11932 18139,11833 18014,11837
 #: note: aus der S-Bahn gesehen:
 Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
 Fontanestr.: betoniert	Q0 7209,19928 7223,19826 7324,19795 7522,19804
@@ -8669,7 +8669,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="10"
-#: last_checked: 2022-11-14
+#: last_checked: 2022-11-28
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -17832,7 +17832,8 @@ Höltermannsteig: Gehwegpflasterung	Q0- 13999,2727 13951,2801 13948,2910 13954,30
 #: by: ^^^
 # 
 #: by: Christian (cm-germany):
-Dankwartstr.: Asphalt	Q0 17184,12286 17210,12486
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Dankwartstr.: Asphalt mit einigen Rissen	Q1+ 17184,12286 17210,12486
 # 
 #: by: waskowski:
 Wichernstr. (Spandau): Asphalt	Q0 -3477,18012 -3469,18005 -3439,17974 -3288,17831 -3226,17772 -3204,17749 -3093,17647 -3060,17617 -2934,17594
@@ -19379,7 +19380,7 @@ Albert-Hößler-Str.: mit Teer verbundene Betonplatten	Q1 16097,11669 16083,11733 
 #: confirmed_by ^^^
 #: confirmed_by: srt:
 #: note: (Kommentar vom Autor) Ausweichmöglichkeit auf breitem Fußweg
-Wotanstr. (Lichtenberg): Kopfsteinpflaster	Q2 16720,12614 16694,12422 16685,12358 16657,12165
+Wotanstr. (Lichtenberg): Kopfsteinpflaster	Q2 16720,12614 16696,12437 16685,12358 16657,12165
 #: by: ^^^
 # 
 #: by: C. Appel:
@@ -30530,10 +30531,11 @@ Gotlindestr.: Beton mit Schäden	Q1- 16284,12616 16409,12612
 Gotlindestr.: Beton mit Schäden	Q1 16409,12612 16432,12612 16470,12612 16576,12612 16720,12614 16859,12613
 #: corrected_by ^^^
 #: confirmed_by: srt
-Dietlindestr.: Asphalt	Q0 17056,12304 17087,12501
+Dietlindestr.: Asphalt	Q0 17056,12304 17088,12506
 #: corrected_by: srt (Q0 -> )
-Dietlindestr.: Asphalt mit leichten Schäden	Q1+ 17087,12501 17088,12617
-Ortliebstr.: Asphalt	Q0 17087,12501 17210,12486 17215,12485 17249,12478
+Dietlindestr.: Asphalt mit leichten Schäden	Q1+ 17088,12506 17088,12617
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Ortliebstr.: Asphalt/Beton mit einigen Rissen	Q1+ 17088,12506 17210,12486 17215,12485 17249,12478
 #: corrected_by: srt (früher Kopfsteinpflaster, jetzt neu gemacht)
 Kriemhildstr.: Asphalt	Q0 17300,12173 17314,12265
 #: confirmed_by: srt
