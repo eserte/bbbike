@@ -3707,9 +3707,9 @@ Buckower Chaussee	N 8533,525 8742,475 8972,498 9002,471
 #: priority: #A
 #: next_check: 2025-01-04 vvv
 #: valid: !20220124-20250104
-Buckower Chaussee	H 9002,471 9069,506 9158,551 9178,556 9250,576 9858,744
+Buckower Chaussee	H 9002,471 9069,506 9123,533 9158,551 9178,556 9250,576 9858,744
 #: valid: 20220124-20250104
-Buckower Chaussee	NH 9002,471 9069,506 9158,551 9178,556 9250,576 9858,744
+Buckower Chaussee	NH 9002,471 9069,506 9123,533 9158,551 9178,556 9250,576 9858,744
 #: next_check ^^^
 Buckower Chaussee	H 9858,744 10047,813 10187,872 10276,906 10324,925 10427,968
 # 
@@ -13342,7 +13342,7 @@ Lessingstr. (Lichtenrade)	N 10735,137 10613,108 10512,83 10425,67 10300,42 10156
 Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: osm.highway: service
-(Parkplatz S-Bhf. Buckower Chaussee)	N 9178,556 9218,458 9249,434 9296,335 9271,323
+(Parkplatz S-Bhf. Buckower Chaussee)	N 9218,458 9249,434 9296,335 9271,323
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -13352,9 +13352,18 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: check_frequency: 180d
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
 # 
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: XXX bauzeitliche Umleitung, vermutlich bis 2025 vvv
+#: next_check: 2022-12-01 vvv
+(Buckower Chaussee - Fußgängerbrücke)	NN 9123,533 9195,405
+(Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9195,405 9212,411 9228,417 9233,418
+(Fußgängerbrücke - Buckower Chaussee)	NN 9233,418 9218,458 9178,556
+#: next_check ^^^
+#: XXX ^^^
+# 
 #: osm.highway: service
 (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
-(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9218,458
+(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9233,418
 (unter der S-Bahn)	NN 9699,-600 9562,-619 9520,-641
 Miethepfad	N 9520,-641 9561,-748 9598,-846
 Poleigrund	N 9156,-883 9340,-829 9561,-748

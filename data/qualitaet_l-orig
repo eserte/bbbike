@@ -2075,12 +2075,13 @@ Heinestr. (Zepernick): schlechtes Kopfsteinpflaster	Q3 17433,26929 17659,27135 1
 Max-Lenk-Str.: schlechtes Kopfsteinpflaster	Q3 17659,27135 17834,27001
 (Max-Lenk-Str. - S-Röntgental): Verbundsteinpflaster	Q1+ 17659,27135 17611,27180
 Bahnhofstr. (Röntgental): Asphalt	Q0 18409,26374 18407,26422 18401,26538 18400,26554 18289,26724 18221,26816 18128,26917 18014,27029 17939,27084 17759,27229 17709,27269
-Bahnhofstr. (Röntgental): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 17709,27269 17409,27495
+Bahnhofstr. (Röntgental): Asphalt	Q0 17709,27269 17636,27324
+Bahnhofstr. (Röntgental): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 17636,27324 17409,27495
 Buchenallee (Röntgental): Feldweg	Q2 17099,27097 17340,27408
-Buchenallee (Röntgental): Asphalt	Q0 17340,27408 17409,27495 17689,27853 17896,28134
+Buchenallee (Röntgental): Asphalt	Q0 17340,27408 17409,27495 17491,27600 17689,27853 17896,28134
 #: by: mapillary
 Buchenallee (Röntgental): Asphalt	Q0 17896,28134 18451,29241
-Schönerlinder Str.: Fahrbahn asphaltiert, Verbundsteinpflasterradwege	Q0 17325,27831 17689,27853 18053,27875 18247,27861 18337,27854 18410,27890 18797,27977 18888,27976 18899,27976 19187,27987
+Schönerlinder Str.: Fahrbahn asphaltiert, Verbundsteinpflasterradwege	Q0 17325,27831 17689,27853 18053,27875 18210,27864 18247,27861 18337,27854 18410,27890 18797,27977 18888,27976 18899,27976 19187,27987
 Asphalt, teilweise mit Wurzelschäden	Q1- 18943,28375 19057,28472 19125,28553 19226,28625 19282,28646 19309,28685
 Asphalt	Q0 19309,28685 19402,28726 19709,28856 19775,28815
 Oderstr. (Zepernick): Verbundsteinpflaster	Q0 19775,28815 19815,28835 19931,28894 20069,28950 20203,29005
@@ -7108,6 +7109,8 @@ Heideweg: Asphalt	Q1 -9720,-2317 -9500,-2389 -9478,-2379
 Blumenweg: Asphalt	Q0 -9445,-2389 -9343,-2087
 Großbeerenstr. - An der Sandscholle: Mosaikpflaster	Q1- -9114,-2650 -9092,-2599
 Grünstr.: Asphalt	Q0 -9210,-2994 -9155,-2804 -9142,-2756 -9137,-2738 -9114,-2650
+#: XXX laut osm surface=asphalt
+#: add_fragezeichen: Ist unter der Bahnbrücke asphaltiert?
 Paul-Neumann-Str.: Kopfsteinpflaster	Q2 -9735,-1845 -9734,-1896
 Paul-Neumann-Str.: Asphalt	Q1 -9734,-1896 -9698,-1987 -9660,-2082 -9653,-2100
 Paul-Neumann-Str.: Kopfsteinpflaster	Q2 -9626,-2096 -9478,-2379
@@ -8600,6 +8603,8 @@ Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 
 #: by: ^^^
 # 
 #: by: mapillary vvv
+Platanenallee (Röntgental): Asphalt	Q0 17733,27410 17491,27600
+Ahornallee (Röntgental): Kopfsteinpflaster	Q2 17636,27324 17733,27410 17824,27491 17928,27591 18039,27692 18210,27846 18210,27864
 Fasanenallee (Bergfelde): Asphalt	Q0 4524,29262 4577,29230 5454,29538
 Milmersdorf - Groß-Kölpin: Asphalt	Q0 25170,79059 25328,79323 25405,79450 25677,79683 26066,79874 26204,79740 26383,79698 26706,79349 26747,79263 26841,79198 27045,79221 27134,79304 27303,79393 27413,79376 27500,79397 27527,79395 27594,79390 27650,79400 27749,79431 27918,79409
 Groß-Kölpin - Friedenfelde: schlechtes Kopfsteinpflaster, teilweise mit schmaler Bankette	Q3 27918,79409 27936,79407 28101,79373 28205,79446 28435,79477 28478,79498

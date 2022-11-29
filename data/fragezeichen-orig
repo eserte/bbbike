@@ -113,7 +113,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -2828,7 +2828,9 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/radverkehr-radverkehrsnetz.68/page-3#post-16835 (Markierungsarbeiten + Grünbeschichtung)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7889 (Einwohnerfrage)
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html
+#: by: https://berliner-abendblatt.de/2022/11/29/bauarbeiten-in-der-hermannstrasse-wird-es-eng/
 #: source_id: 2147347020 (Fernwärmearbeiten bis 30.6.2021 --- hat das was mit der Radspur zu tun?)
+#: source_id: viz2021:13.425334,52.48011,30.11.2022,18:00 (Leitungsarbeiten zwischen Boddinstr. und Flughafenstr., bis 5.12.2022)
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="860638046" version="9"
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="544599538" version="16"
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="860638027" version="10"
@@ -5482,7 +5484,9 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/pop-up-radweg-wird-dauerhaft_a359507
 #: by: https://berliner-abendblatt.de/2022/11/07/frankfurter-allee-parkplaetze-weichen-radweg/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1269610.php (Bauarbeiten an der Proskauer Str. für den Radfahrstreifen)
+#: by: https://berliner-abendblatt.de/2022/11/29/vollsperrung-in-der-proskauer-strasse/
 #: source_id: viz2021:13.464455,52.514771,01.11.2022,07:00 (bis 21.12.2022)
+#: source_id: viz2021:13.460225,52.51532,29.11.2022,07:00 (Proskauer Str., bis 2.12.2022)
 #: XXX geschützten Radstreifen, ein Haltestellenkap
 #: last_checked: 2022-11-27
 #: check_frequency: 30d
@@ -7143,6 +7147,9 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: XXX laut osm highway=pedestrian
 Marienpark: ist hier eine Fußgängerzone?	? 8070,3563 8178,3591 8167,3641
 # 
+#: XXX laut osm
+Gutenbergstr. (Potsdam): gibt es hier eine Radspur?	?; -12529,-789 -12677,-823 -12823,-857 -12886,-869
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -8113,7 +8120,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraße in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, wäre aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2022-11-25
+#: last_checked: 2022-11-29
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 

@@ -321,7 +321,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-11-27
+#: last_checked: 2022-11-29
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -1152,7 +1152,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-11-27 vvv
+#: last_checked: 2022-11-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2351,7 +2351,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und Sa 9-18 Uhr	RW1; 9858
 	RW1; 9858,744 9250,576
 Radweg nur aufgemalt	RW1; 9250,576 9858,744
 	RW1;RW4 9250,576 9178,556
-	RW1;RW4 9178,556 9158,551 9069,506
+	RW1;RW4 9178,556 9158,551 9123,533 9069,506
 	RW1; 9069,506 9002,471 8906,392 8736,337
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8736,337 8906,392 9002,471 9069,506
 	RW1; 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583

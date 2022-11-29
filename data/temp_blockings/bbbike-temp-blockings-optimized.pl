@@ -3871,16 +3871,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
 #: priority: #A
-#: next_check: 2022-11-30
+#: next_check: 2022-12-07
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
 ',
-         'from' => 1669590000,
+         'from' => 1670194800,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2022 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 6. Dezember 2022 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1669713300
+         'until' => 1670318100
        },
        undef,
        {
@@ -4591,7 +4591,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-11-26
+#: last_checked: 2022-11-29
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4666,12 +4666,12 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -4701,9 +4701,9 @@ Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
          'from' => 1622356200,
          'id' => 3261,
          'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Anfang Dezember 2022',
+         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Januar 2023',
          'type' => 'handicap',
-         'until' => 1669910400
+         'until' => 1675180800
        },
        undef,
        undef,
@@ -6904,23 +6904,26 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
 #: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
 #: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 #: osm_watch: way id="1116309150" version="1"
+#: XXX Bei Sperrung einen gesperrt-orig-Eintrag erstellen sowie alle by-Direktiven dorthin verlegen
 #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 #: priority: #A
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-11-21
+#: next_check: 2022-12-01
 # REMOVED --- #: next_check: 2023-01-04
-	2::inwork 9069,506 9158,551 9178,556
+	2::inwork 9123,533 9158,551 9178,556
 ',
          'from' => undef,
          'id' => 3689,
-         'text' => 'Buckower Chaussee: der Bahnübergang wird demnächst wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
+         'text' => 'Buckower Chaussee: der Bahnübergang wird demnächst (voraussichtlich ab 1.12.2022) wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
          'type' => 'gesperrt',
          'until' => 1767221999
        },
@@ -6970,6 +6973,38 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Am Betriebsbahnhof Schöneweide: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
+	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
+',
+         'from' => 1669762800,
+         'id' => 3694,
+         'source_id' => 'https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/',
+         'text' => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024',
+         'type' => 'gesperrt',
+         'until' => 1719784799
+       },
+       {
+         'data' => '	2::xmas 13558,10704 13531,10673 13326,10765
+	2::xmas 13527,10660 13531,10673
+',
+         'from' => 1669158000,
+         'id' => 3695,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachten-an-der-spree.de/',
+         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 24.11. - 23.12.2022',
+         'type' => 'gesperrt',
+         'until' => 1672160400
        }
      
 );

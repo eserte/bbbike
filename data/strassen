@@ -3196,7 +3196,7 @@ Nahmitzer Damm	H 7790,672 7937,583 8075,499 8250,392 8382,347 8470,329 8584,320 
 Nahmitzer Damm	NH 8736,337 8906,392 9002,471
 Friedenfelser Str.	H 7668,471 7688,544 7729,691 7757,834 7759,906 7753,994
 Buckower Chaussee	N 8533,525 8742,475 8972,498 9002,471
-Buckower Chaussee	NH 9002,471 9069,506 9158,551 9178,556 9250,576 9858,744
+Buckower Chaussee	NH 9002,471 9069,506 9123,533 9158,551 9178,556 9250,576 9858,744
 Buckower Chaussee	H 9858,744 10047,813 10187,872 10276,906 10324,925 10427,968
 Heinitzweg	N 10276,906 10232,1015 10232,1025 10248,1055 10325,1083
 Heinitzweg	NN 10325,1083 10379,1097
@@ -11672,11 +11672,14 @@ Lessingstr. (Lichtenrade)	N 10735,137 10613,108 10512,83 10425,67 10300,42 10156
 Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: osm.highway: service
-(Parkplatz S-Bhf. Buckower Chaussee)	N 9178,556 9218,458 9249,434 9296,335 9271,323
+(Parkplatz S-Bhf. Buckower Chaussee)	N 9218,458 9249,434 9296,335 9271,323
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
+(Buckower Chaussee - Fußgängerbrücke)	NN 9123,533 9195,405
+(Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9195,405 9212,411 9228,417 9233,418
+(Fußgängerbrücke - Buckower Chaussee)	NN 9233,418 9218,458 9178,556
 #: osm.highway: service
 (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
-(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9218,458
+(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9233,418
 (unter der S-Bahn)	NN 9699,-600 9562,-619 9520,-641
 Miethepfad	N 9520,-641 9561,-748 9598,-846
 Poleigrund	N 9156,-883 9340,-829 9561,-748

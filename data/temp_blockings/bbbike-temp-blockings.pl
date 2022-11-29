@@ -21145,7 +21145,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113563',
        data  => <<EOF,
-	q4::inwork 9178,556 9158,551 9069,506
+	q4::inwork 9178,556 9158,551 9123,533 9069,506
 EOF
      },
      { from  => 1344282201, # 2012-08-06 21:43
@@ -26306,9 +26306,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-11-29 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2022 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2022-12-05 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-12-06 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 6. Dezember 2022 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26334,7 +26334,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
 #: priority: #A
-#: next_check: 2022-11-30
+#: next_check: 2022-12-07
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
@@ -31061,7 +31061,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-11-26
+#: last_checked: 2022-11-29
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31444,7 +31444,7 @@ EOF
 # REMOVED --- #: XXX prüfen, ob die Sperrung tatsächlich erfolgt vvv
 # REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 # REMOVED --- #: next_check: 2020-07-01 vvv
-	2::inwork 9507,-85 9473,-92 9271,323 9253,370 9218,458 9178,556
+	2::inwork 9507,-85 9473,-92 9271,323 9253,370 9233,418 9218,458 9178,556
 	2::inwork 9271,323 9296,335 9249,434 9218,458
 EOF
      },
@@ -31552,8 +31552,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2022-12-01 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Anfang Dezember 2022',
+       until => $isodate2epoch->("2023-01-31 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Januar 2023',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31564,12 +31564,12 @@ EOF
 # REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -37247,7 +37247,7 @@ EOF
      },
      { from  => undef, # 
        until => 1767221999, # 2025-12-31 23:59
-       text  => 'Buckower Chaussee: der Bahnübergang wird demnächst wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
+       text  => 'Buckower Chaussee: der Bahnübergang wird demnächst (voraussichtlich ab 1.12.2022) wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -37268,19 +37268,22 @@ EOF
 #: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
 #: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 #: osm_watch: way id="1116309150" version="1"
+#: XXX Bei Sperrung einen gesperrt-orig-Eintrag erstellen sowie alle by-Direktiven dorthin verlegen
 #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 #: priority: #A
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-11-21
+#: next_check: 2022-12-01
 # REMOVED --- #: next_check: 2023-01-04
-	2::inwork 9069,506 9158,551 9178,556
+	2::inwork 9123,533 9158,551 9178,556
 EOF
      },
      { from  => 1669010400, # 2022-11-21 07:00
@@ -37324,6 +37327,28 @@ EOF
 #: last_checked: 2022-11-27
 #: check_frequency: 90d
 	2::inwork 18107,5011 17822,5409
+EOF
+     },
+     { from  => 1669762800, # 2022-11-30 00:00
+       until => 1719784799, # 2024-06-30 23:59
+       text  => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/', # Ende der Bauarbeiten voraussichtlich im I. oder II Quartal 2024
+       data  => <<EOF,
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
+	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
+EOF
+     },
+     { from  => 1669158000, # 2022-11-23 00:00
+       until => $isodate2epoch->("2022-12-27 18:00:00"), # ein paar Tage für den Abbau einplanen
+       periodic => 1,
+       recurrences => [['yearly', days => 20, months => 11]],
+       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 24.11. - 23.12.2022',
+       type  => 'gesperrt',
+       source_id => 'https://www.weihnachten-an-der-spree.de/',
+       data  => <<EOF,
+	2::xmas 13558,10704 13531,10673 13326,10765
+	2::xmas 13527,10660 13531,10673
 EOF
      },
     );
