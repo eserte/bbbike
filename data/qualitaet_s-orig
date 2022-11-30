@@ -565,7 +565,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/brunnenviertel-ev-will-baumfaellungen-stoppen_a336818
 #: by: https://www.infravelo.de/projekt/3d740cd762db0422f5e5e06d18bc752a/ (2. Quartal 2023 - 4. Quartal 2024)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2022-11-15
+#: last_checked: 2022-11-30
 #: check_frequency: 150d
 #: next_check: 2024-12-31
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -579,7 +579,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="27"
 #: osm_watch: way id="184077626" version="16"
 #: osm_watch: way id="49180827" version="20"
-#: last_checked: 2022-10-19
+#: last_checked: 2022-11-30
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1725,7 +1725,7 @@ Kopenhagener Str.: Kopfsteinpflaster	Q2- 10097,15856 10365,15902
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10571,15933 10722,15921 10964,15896
 Ystader Str.: Kopfsteinpflaster	Q2 10365,15902 10355,15946
 #: by: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/asphalt01.shtml
-Esplanade: asphaltiert	Q0 10971,16907 10886,16893
+Esplanade: asphaltiert	Q0 10971,16907 10936,16892 10886,16893
 Esplanade: Kleinsteinpflaster	Q2+ 10886,16893 10655,16904
 Glinkastr.: Asphalt	Q0+ 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
@@ -9627,9 +9627,7 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 (Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
 Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11750,16116 11680,16151 11618,16183
-Kuglerstr.: Asphalt	Q0- 12030,15968 11961,16002
-Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11961,16002 11899,16037
-Kuglerstr.: Asphalt	Q0- 11899,16037 11852,16061
+Kuglerstr.: Asphalt	Q0 12030,15968 11961,16002 11899,16037 11852,16061
 Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11852,16061 11750,16116
 (Schönhauser Str. - Rosenthaler Str.): Asphalt	Q0 11858,21541 11889,21543
 (Nisbléstr. - Schönhauser Str.): Asphalt	Q0 11838,21580 11858,21541
@@ -18523,8 +18521,8 @@ Imhoffweg: guter Asphalt	Q0 8953,-1089 8909,-918
 Cambridger Str.: mäßiger Asphalt	Q1 5866,17419 5778,17436 5691,17404 5556,17254
 # 
 #: by: Astrid Friedrich:
-#: confirmed_by: srt (zumindest das Kopfsteinpflaster)
-Glücksburger Str.: schlechtes Kopfsteinpflaster	Q3 9498,16480 9603,16468
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Glücksburger Str.: Kopfsteinpflaster	Q2 9498,16480 9603,16468
 # 
 #: by: Stefan Schirra:
 Propst-Süßmilch-Weg: Verbundsteinpflaster	Q1 856,3188 813,3202 797,3216 727,3231 649,3221
@@ -31566,6 +31564,7 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 25200,9939
 Einmündungsbereich betoniert	Q0- 22855,3902
 #: XXX_prog: allerdings ist zur Eulerstr. hin ein paar Meter gepflastert
 Kreuzungsbereich asphaltiert	Q0 9498,16480
+Kreuzungsbereich asphaltiert	Q0 9475,16307
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7389,8837
 Kreuzungsbereich asphaltiert	Q0 7086,8579
 Kreuzungsbereich asphaltiert	Q0 5959,6976
@@ -31703,4 +31702,5 @@ Einmündungsbereich asphaltiert	Q0 13976,13309
 Einmündungsbereich asphaltiert	Q0 13934,13403
 Einmündungsbereich asphaltiert	Q0 13918,13438
 Einmündungsbereich mit Kopfsteinpflaster	Q2 4959,13347
+Einmündungsbereich asphaltiert	Q0 9603,16468
 #: ignore ^^^

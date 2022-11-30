@@ -1437,7 +1437,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="20"
-#: last_checked: 2022-11-23
+#: last_checked: 2022-11-30
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1451,7 +1451,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="35"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-11-23
+#: last_checked: 2022-11-30
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -4138,7 +4138,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-11-02 vvv
+#: last_checked: 2022-11-30 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-12-31 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -6831,10 +6831,9 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2022-11-15 vvv
+#: last_checked: 2022-11-30 vvv
 #: check_frequency: 60d vvv
-	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
-	RW3; 11548,16079 11542,16070 11531,16053
+	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
 	RW3; 11506,16015 11492,15993 11477,15969 11445,15920 11387,15827 11367,15793 11353,15770
 asphaltiertes Straßenbahnkap	RW1; 11353,15770 11344,15755 11328,15730
@@ -7293,7 +7292,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-11-15
+#: last_checked: 2022-11-30
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7316,7 +7315,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022) (bis 30.10.2022) (inaktiv)
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2022-11-15 vvv
+#: last_checked: 2022-11-30 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-31 vvv
 #: osm_watch: way id="335479077" version="17"
@@ -8031,4 +8030,6 @@ Verbundsteinpflaster, OK	RW2; 3490,16083 3518,16102 3546,16143 3587,16219 3585,1
 	RW6;RW6 -8313,13167 -8264,13197 -8049,13332
 # 
 	RW7;RW7 9475,12365 9489,12263 9496,12215 9509,12117 9523,12019 9536,11922 9547,11819 9559,11715 9569,11631
+# 
+Gehwegplatten	RW2; 10936,16892 10971,16907
 # 

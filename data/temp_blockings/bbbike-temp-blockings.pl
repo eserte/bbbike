@@ -29642,20 +29642,21 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
-       until => undef, # $isodate2epoch->("2021-09-14 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 30.11.2022, eventuell noch länger',
+       until => $isodate2epoch->("2023-04-03 18:00:00"),
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 03.04.2023, eventuell noch länger',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
-#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022)
+#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
+#: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-11-15 (Fahrbahn wird wiederhergestellt)
-#: check_frequency: 30d
-#: next_check: 2022-11-30
+#: last_checked: 2022-11-30
+#: check_frequency: 90d
+#: next_check: 2023-04-03
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 EOF
@@ -35298,8 +35299,8 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 30.11.2022',
+       until => $isodate2epoch->("2022-12-16 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 16.12.2022',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
@@ -36636,27 +36637,40 @@ EOF
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
        until => $isodate2epoch->("2023-01-30 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
 #       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
-       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis Ende Januar 2023',
+       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis Ende Januar 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ORANIENBURGERTORTRAM-2022
-#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022)
+#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
 #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
+#: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen)
+#: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: by: https://nitter.net/tramathon/status/1583012911013761024
 #: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
+#: by: https://nitter.net/VIZ_Berlin/status/1597901017756368898#m
+#: by: https://nitter.net/pic/orig/media%2FFizhNZlXkAArDsW.png
+#: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-11-26 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-01 vvv
+#: next_check: 2023-01-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
 Friedrichstr.	q4::inwork 9212,13471 9225,13389
+Oranienburger Str.	q4::inwork 9225,13389 9293,13366
+Chausseestr.	q4::inwork; 9212,13471 9207,13493
+Chausseestr.	q2::inwork; 9207,13493 9094,13641
+#: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich
+Linienstr.	q4::inwork 9225,13389 9312,13388
+# ungünstiges Routing ---	3 9246,13235 9225,13389 9312,13388
+# ungünstiges Routing ---	3 9312,13388 9225,13389 9246,13235
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -36809,7 +36823,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-11-20
+#: last_checked: 2022-11-30
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969

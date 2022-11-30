@@ -1833,7 +1833,7 @@ Schönfließer Str. (Prenzlauer Berg)	N 10593,16037 10603,16158 10606,16319 10613,
 Stavangerstr.	N 10620,16497 10632,16644 10635,16706 10638,16770 10798,16769 10845,16770 10883,16824 10886,16893
 Björnsonstr. (Prenzlauer Berg)	N 10197,16528 10209,16674
 (Kolonie Bornholm 1 und 2)	NN 10209,16674 10190,16930
-Esplanade	N 10971,16907 10886,16893 10655,16904 10569,16910 10490,16914 10229,16927 10190,16930 10013,16972
+Esplanade	N 10971,16907 10936,16892 10886,16893 10655,16904 10569,16910 10490,16914 10229,16927 10190,16930 10013,16972
 Finnländische Str.	N 9975,16425 10225,16436
 Czarnikauer Str.	N 10225,16436 10449,16415 10613,16403
 Driesener Str.	N 10458,16509 10449,16415 10438,16340 10421,16175 10405,16017
@@ -12723,8 +12723,8 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_05_0237_0304_online.pdf (Verkauf eines Flurstücks)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Einziehung von Straßenland)
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
-#: osm_watch: way id="156346093" version="6"
-#: osm_watch: way id="23106203" version="13"
+#: osm_watch: way id="156346093" version="7"
+#: osm_watch: way id="23106203" version="14"
 #: last_checked: 2022-09-24 (mapillary)
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
@@ -18669,7 +18669,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
 #: by: https://weddingweiser.de/hines-plant-kaufland-abzureissen/
 #: by: https://architektur-urbanistik.berlin/index.php?threads/brunnenstrasse-105.1103/#post-16459
 #: XXX Falls das Einkaufszentrum abgerissen wird: bleibt die Zufahrtsstraße? Bleibt die Zugangsmöglichkeit vom Bärbel-Bohley-Ring?
-#: last_checked: 2022-08-21
+#: last_checked: 2022-11-30
 #: check_frequency: 360d
 #: osm.highway: service
 (Zufahrtsstraße am Einkaufszentrum)	N 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790

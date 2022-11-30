@@ -211,8 +211,8 @@ Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 # 
 #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022
 #: osm_watch: way id="184632250" version="3"
-#: last_checked: 2022-10-19
-#: next_check: 2022-12-16
+#: last_checked: 2022-11-30
+#: next_check: 2022-12-31
 Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 # 
 #: next_check_id: ROSENTHALER-2022
@@ -615,16 +615,20 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 # 
 ### Wilmersdorf ###
 # 
-#: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) vvv
-#: last_checked: 2022-11-26 vvv
-#: next_check: 2022-11-30 vvv
-#: valid: -20221130 vvv
+#: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv
+#: also_indoor: traffic (B,G,H) vvv
+#: last_checked: 2022-11-30 (research) vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2022-11-30 vvv
+# REMOVED --- #: valid: -20221130 vvv
 Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874
 Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870
 Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703
-#: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 #: source_id ^^^
 # 
 # REMOVED (laut kartaview größtenteils fertiggestellt) --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: last_checked: 2022-02-27 --- #: check_frequency: 90d --- Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
