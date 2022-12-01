@@ -321,7 +321,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-11-29
+#: last_checked: 2022-12-01
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -1152,7 +1152,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-11-29 vvv
+#: last_checked: 2022-12-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1953,15 +1953,16 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 # 
 #: next_check_id: KIEFHOLZ-2015
-#: XXX wann wird die alte Radspur wieder hergestellt? laut viz Einbahnstraßenregelung für Autos bis Ende März 2019, laut fritz bis 25.03.2019
+#: XXX wann wird die alte Radspur wieder hergestellt?
 #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig)
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/mathilde-rathenau-bruecke-ueber-die-a-100-uebergeben_a202954
 #: by: https://www.bahninfo-forum.de/read.php?9,442687,750179#msg-750179 (Rückverschwenkung der S-Bahn)
-# REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
-# REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-11-27
+#: source_id: viz2021:13.458778,52.485562,28.11.2022,06:00 (bis 16.12.2022)
+#: also_indoor: traffic (H[unvollständig],G,B)
+#: last_checked: 2022-12-01
 #: check_frequency: 60d
+#: next_check: 2022-12-16
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
 	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 14976,8053 15053,7966
@@ -2650,7 +2651,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-11-27 vvv
+#: last_checked: 2022-12-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4476,14 +4477,14 @@ breiter asphaltierter Gehweg für Radfahrer frei	RW1; 17966,17768 18011,17712 181
 # 
 #: note: Berliner Str. (Pankow) Richtung Norden
 	RW3; 10927,17022 10917,17088 10908,17142 10904,17288
-Verbundsteinpflaster	RW1; 10904,17288 10899,17331 10892,17396 10885,17469 10883,17491 10858,17721 10852,17801 10849,17848
+Verbundsteinpflaster	RW1; 10904,17288 10899,17331 10892,17396 10885,17469 10883,17491 10858,17721 10853,17802 10849,17848
 Gehwegplatten	RW1; 10849,17848 10830,17985 10815,18074 10755,18231 10739,18262
 	RW3; 10739,18262 10718,18304
 	RW4; 10718,18304 10680,18380
 # 
 	RW1; 10892,17396 10899,17331 10904,17288
 	RW2; 10885,17469 10892,17396
-	RW1; 10849,17848 10852,17801 10858,17721 10883,17491 10885,17469
+	RW1; 10849,17848 10858,17721 10883,17491 10885,17469
 # REMOVED (wieder hergestellt) --- #: XXX wird die Radspur wieder hergestellt? Evtl. mit dem Ende der Bauarbeiten ? -> dann RW3; oder RW4; --- #: source_id: IM_021420 --- #: source_id: IM_022480 --- #: source_id: IM_023568 --- #: last_checked: 2014-05-21 --- #: next_check: 2015-02-27
 	RW3; 10908,17142 10917,17088 10927,17022
 teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
@@ -7541,9 +7542,9 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (südliche Fahrbahn wird erst 2021 fertiggestellt (Stand Mai 2020))
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
-#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021) (mittlerweile 1. Quartal 2020 - 4. Quartal 2022)
-#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022)
-#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021) (mittlerweile gelöscht) (und wieder da, nun bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021) (mittlerweile 1. Quartal 2020 - 4. Quartal 2022) (bis 4. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021) (mittlerweile gelöscht) (und wieder da, nun bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024)
 #: by: https://www.tagesspiegel.de/berlin/sanierung-der-bvg-hochbahn-sperrung-auf-u1-und-u3-in-berlin-kreuzberg-wird-ab-freitag-ausgeweitet/27039930.html (Verstetigung ab 12.4.2021)
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung erst 2023)
@@ -7572,7 +7573,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: osm_watch: way id="335487059" version="24"
 #: last_checked: 2022-11-26 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-01-01 vvv
+#: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 10363,10303 10605,10312

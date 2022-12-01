@@ -31583,7 +31583,7 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2022-12-01 vvv
+#: next_check: 2023-01-31 vvv
 	q4::inwork; 3643,4232 3523,4139
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
@@ -34264,14 +34264,15 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-28 vvv
+#: last_checked: 2022-12-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
-Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
-Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
+Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924 15077,11910
+#: note: und eigentlich kann auch schon die Fahrbahn genutzt werden, deshalb q3 -> q2
+Scharnweberstr.: Gehweg für Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
@@ -34280,9 +34281,9 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
 #: check_frequency ^^^
 #: last_checked ^^^
 #	q3::inwork 14965,11924 15077,11910
-#	q3::inwork; 15077,11910 15133,11902 15256,11884
+#	q3::inwork; 15077,11910 15133,11902 15174,11896 15256,11884
 #	q3::inwork 14965,11924 14888,11934 14836,11842
-# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15174,11896 15133,11902 15077,11910
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -36291,7 +36292,7 @@ EOF
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2022-09-30
+#: last_checked: 2022-12-01 (daf)
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
@@ -37110,7 +37111,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-01
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37363,6 +37364,15 @@ EOF
        data  => <<EOF,
 	2::xmas 13558,10704 13531,10673 13326,10765
 	2::xmas 13527,10660 13531,10673
+EOF
+     },
+     { from  => 1669788000, # 2022-11-30 07:00
+       until => 1670601600, # 2022-12-09 17:00
+       text  => 'Wittelsbacherstr.: Bauarbeiten zwischen Konstanzer Str. und Brandenburgische Str., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.12.2022 07:00 bis 09.12.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.31077,52.49511,01.12.2022,07:00',
+       data  => <<EOF,
+	q4::inwork 4099,9820 3949,9842
 EOF
      },
     );

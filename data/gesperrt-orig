@@ -800,9 +800,9 @@ Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 # 
-Berliner Str. (Straßenbahntrasse)	3nocross::ignrte 10858,17721 10852,17801 10849,17848
+Berliner Str. (Straßenbahntrasse)	3nocross::ignrte 10858,17721 10853,17802 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10849,17848
-Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10852,17801 10858,17721
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10853,17802 10858,17721
 # 
 #: note: Straßenbahntrasse vvv
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
@@ -3980,7 +3980,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-11-27
+#: last_checked: 2022-12-01
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 

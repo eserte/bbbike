@@ -2548,7 +2548,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4685,7 +4685,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2022-12-01 vvv
+#: next_check: 2023-01-31 vvv
 	q4::inwork; 3643,4232 3523,4139
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
@@ -5242,14 +5242,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-28 vvv
+#: last_checked: 2022-12-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
-Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
-Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
+Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924 15077,11910
+#: note: und eigentlich kann auch schon die Fahrbahn genutzt werden, deshalb q3 -> q2
+Scharnweberstr.: Gehweg für Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
@@ -5258,9 +5259,9 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
 #: check_frequency ^^^
 #: last_checked ^^^
 #	q3::inwork 14965,11924 15077,11910
-#	q3::inwork; 15077,11910 15133,11902 15256,11884
+#	q3::inwork; 15077,11910 15133,11902 15174,11896 15256,11884
 #	q3::inwork 14965,11924 14888,11934 14836,11842
-# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15174,11896 15133,11902 15077,11910
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
          'from' => 1663020000,
@@ -6125,7 +6126,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2022-09-30
+#: last_checked: 2022-12-01 (daf)
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
@@ -6784,7 +6785,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-01
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -7019,6 +7020,16 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 24.11. - 23.12.2022',
          'type' => 'gesperrt',
          'until' => 1672160400
+       },
+       {
+         'data' => '	q4::inwork 4099,9820 3949,9842
+',
+         'from' => 1669788000,
+         'id' => 3696,
+         'source_id' => 'viz2021:13.31077,52.49511,01.12.2022,07:00',
+         'text' => 'Wittelsbacherstr.: Bauarbeiten zwischen Konstanzer Str. und Brandenburgische Str., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.12.2022 07:00 bis 09.12.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1670601600
        }
      
 );
