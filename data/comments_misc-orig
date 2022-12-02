@@ -1626,11 +1626,9 @@ ausgeschildert "Sokratesweg 3/29"	CP2; 18520,9585 18610,9569
 ausgeschildert "Sokratesweg 31/57"	CP2; 18514,9552 18604,9535
 ausgeschildert "Sokratesweg 59/85"	CP2; 18505,9500 18596,9485
 # 
-#: next_check_id: AFRIKANISCHESVIERTEL-2020
-#: XXX wird umbenannt, neuer Name: "Manga-Bell-Platz"
-#: last_checked: 2022-10-03
-#: check_frequency: 90d
-ausgeschildert "Nachtigalplatz"	CP2; 5581,16708 5639,16768
+# REMOVED --- #: next_check_id: AFRIKANISCHESVIERTEL-2020 --- #: XXX wird umbenannt, neuer Name: "Manga-Bell-Platz" --- #: last_checked: 2022-10-03 --- #: check_frequency: 90d
+#: historical_note: früher: ausgeschildert "Nachtigalplatz"
+ausgeschildert "Manga-Bell-Platz"	CP2; 5581,16708 5639,16768
 # 
 ausgeschildert "Danziger Str. 101-109"	CP2; 12123,14643 12174,14739
 # 
@@ -1770,7 +1768,7 @@ Am Werksgarten: nicht ausgeschildert	CP2; 22805,5179 22803,5241
 Schilder VoltAir-Parkhaus und Zugang Dircksenstraße 04	CP2; 11240,12368 11344,12410
 # 
 #: XXX Wird hier noch ausgeschildert?
-#: last_checked: 2022-11-26
+#: last_checked: 2022-12-02
 Forum an der Museumsinsel: nicht ausgeschildert	CS 9650,13074 9682,13167 9633,13192 9602,13081
 # 
 #: by: mapillary (kein Scherz)

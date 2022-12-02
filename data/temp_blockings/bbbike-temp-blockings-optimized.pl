@@ -5684,9 +5684,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic (G,H,B)
+         'data' => '#: also_indoor: traffic (ex-G,ex-H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
-#: next_check: 2022-12-01
+#: next_check: 2022-12-14
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 ',
@@ -6123,7 +6123,9 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7331.html (Richtfest 1. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/09/27/neubau-des-bauhaus-archivs-richtfest-erst-fuer-2023-geplant/
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-des-bauhaus-archivs-hat-begonnen_a359183
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf (Einziehung)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
+#: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2022-12-01 (daf)
@@ -6153,7 +6155,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-02
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6290,20 +6292,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
          'type' => 'handicap',
          'until' => 1672527600
        },
-       {
-         'data' => '#: also_indoor: traffic (ex-G,B)
-#: XXX Durchfahrt kann offen sein (gesehen 2022-11-22)
-#: add_fragezeichen: Wann ist die Sperrung beendet?
-#: last_checked: 2022-11-26
-#: check_frequency: 7d
-	q3::inwork 10755,13152 10846,13362
-',
-         'from' => undef,
-         'id' => 3636,
-         'text' => 'Rosa-Luxemburg-Str.: Fahrbahn nördlich der Memhardstr. gesperrt, Ende der Sperrung unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '	q4 11196,4325 11153,4306 11141,4214 11111,4055 11104,3981 11103,3960
@@ -6388,7 +6377,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
        {
          'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
-#: source_id: bvg2021:142#BVG311081_0
+# REMOVED --- #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen)
@@ -6723,7 +6712,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1055654058" version="1"
-#: last_checked: 2022-11-06 (architektur-urbanistik)
+#: last_checked: 2022-11-27 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2023-12-31
 	q3::inwork 6447,9661 6348,9541
@@ -6796,21 +6785,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1589488063423594497#m
-#: by: https://nitter.cz/pic/orig/media%2FFg770dYWYAMkP2w.jpg
-Gehweg für Radfahrer frei	q2::inwork; 18939,9417 18977,9322
-	q4::inwork; 18977,9322 18939,9417
-hier ist der Gehweg für Radfahrer schon immer frei	q2::inwork; 18977,9322 19048,9146
-Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
-',
-         'from' => 1667710800,
-         'id' => 3677,
-         'source_id' => 'viz2021:13.52942,52.488069,07.11.2022,06:00',
-         'text' => 'Waldowallee: Fahrbahn wegen Sanierungsarbeiten zwischen Köpenicker Allee und Marksburgstr. gesperrt, teilweise ist der Gehweg für Radfahrer frei, vom 07.11.2022 06:00 bis 02.12.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1669996800
-       },
+       undef,
        undef,
        undef,
        {

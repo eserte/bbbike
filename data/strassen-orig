@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-11-27 (mapillary) vvv
+#: last_checked: 2022-12-02 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -378,7 +378,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
-#: last_checked: 2022-11-23
+#: last_checked: 2022-12-02
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-12-31
@@ -4281,8 +4281,6 @@ Adam-von-Trott-Str.	N 3854,15670 3852,15533 3860,15485 3857,15226 4148,15220
 Thaters Privatweg	N 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Riedemannweg	N 4248,15647 4389,15336
 Buchholzweg	N 4535,15530 4466,15350 4389,15336
-#: next_check_id: AFRIKANISCHESVIERTEL-2020
-#: XXX wird umbenannt, neuer Name: "Cornelius-Fredericks-Str."
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8954 (andere Schreibweise: Cornelius-Fredericks-Str.)
 #: by: http://www.abendblatt-berlin.de/2018/12/04/verwechslungsgefahr-im-afrikanischen-viertel/
@@ -4295,13 +4293,9 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1265051.php (Umbenennung am 2.12.2022)
 #: by: https://berliner-abendblatt.de/2022/11/16/jetzt-wirklich-strassen-im-afrikanischen-viertel-werden-umbenannt/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_47_3201_3352_online.pdf (endgültige Umbenennung)
-#: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
-#: also_indoor: search Cornelius-Fredericks-Straße
-#: osm_watch: way id="247340732" version="21"
-#: last_checked: 2022-08-27 (mapillary)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-12-02
-Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
+# REMOVED --- #: next_check_id: AFRIKANISCHESVIERTEL-2020 --- #: XXX wird umbenannt, neuer Name: "Cornelius-Fredericks-Str." --- #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder? --- #: also_indoor: search Cornelius-Fredericks-Straße --- #: osm_watch: way id="247340732" version="21" --- #: last_checked: 2022-08-27 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2022-12-02
+#: oldname: -20221202: Lüderitzstr.
+Cornelius-Fredericks-Str.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
 Transvaalstr.	H 5446,15489 5722,15795 5907,16000 5981,16091 6104,16223 6211,16343 6304,16447
@@ -8470,6 +8464,9 @@ An der Bastion	N -7985,6017 -7945,6060 -7932,6101 -7944,6133 -7974,6189
 Grüner Wall	N -7932,6101 -7834,6109
 (Am ehem. Flugplatz Gatow)	N -7999,6258 -7916,6250 -7824,6208 -7652,6130 -7561,6227
 (Golfklub Gatow)	N -7561,6227 -7374,6416
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf ("Kohleweg" (Text) und "Am Kohleweg" (Karte) werden erwähnt)
+#: alias: Kohleweg
+#: alias: Am Kohleweg
 (Am Golfplatz)	N -7561,6227 -6977,5851
 Am Ritterholz	N -7045,5745 -7321,5920 -7428,6061 -7458,6084 -7488,6083 -7520,6052
 Mascha-Kaléko-Weg	N -6319,5606 -6342,5548
@@ -15913,8 +15910,6 @@ Togostr.	N 5531,16734 5315,16936
 (Otawistr. - Dauerkolonie Togo)	NN 6003,16521 5965,16555 5801,16700
 #: note: Beleuchtung existiert
 (Usambarastr. - Dauerkolonie Togo)	NN 5684,16815 5710,16792 5807,16709
-#: next_check_id: AFRIKANISCHESVIERTEL-2020
-#: XXX wird umbenannt, neuer Name: "Manga-Bell-Platz"
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-mitte-neue-strassennamen-fuers-afrikanische-viertel-gefunden/21163352.html
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8959 ("Manga-Bell-Platz")
@@ -15926,17 +15921,15 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1265051.php (Umbenennung am 2.12.2022)
 #: by: https://berliner-abendblatt.de/2022/11/16/jetzt-wirklich-strassen-im-afrikanischen-viertel-werden-umbenannt/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_47_3201_3352_online.pdf (endgültige Umbenennung)
-#: osm_watch: way id="333607502" version="11"
-#: also_indoor: search Manga-Bell-Platz
-#: last_checked: 2022-11-08
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-12-02
-Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
+# REMOVED --- #: next_check_id: AFRIKANISCHESVIERTEL-2020 --- #: osm_watch: way id="333607502" version="11" --- #: also_indoor: search Manga-Bell-Platz --- #: last_checked: 2022-11-08 --- #: check_frequency: 90d --- #: next_check: 2022-12-02
+#: oldname: -20221202: Nachtigalplatz
+Manga-Bell-Platz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Umbenennung, Widerspruchsfrist bis 2018-12-23)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
+#: by: https://berliner-abendblatt.de/2022/12/02/strasse-und-platz-in-berlin-nach-freiheitskaempfern-benannt/ (mit Bild)
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="19"
 #: also_indoor: search Maji-Maji-Allee

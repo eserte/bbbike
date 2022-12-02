@@ -35181,9 +35181,9 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
        data  => <<EOF,
-#: also_indoor: traffic (G,H,B)
+#: also_indoor: traffic (ex-G,ex-H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
-#: next_check: 2022-12-01
+#: next_check: 2022-12-14
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 EOF
@@ -36289,7 +36289,9 @@ EOF
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7331.html (Richtfest 1. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/09/27/neubau-des-bauhaus-archivs-richtfest-erst-fuer-2023-geplant/
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-des-bauhaus-archivs-hat-begonnen_a359183
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf (Einziehung)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
+#: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2022-12-01 (daf)
@@ -36317,7 +36319,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-02
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36539,15 +36541,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1669998249, # undef, # XXX
        text  => 'Rosa-Luxemburg-Str.: Fahrbahn nördlich der Memhardstr. gesperrt, Ende der Sperrung unbekannt', # --- mittlerweile keine Bauarbeiten mehr zu sehen, früherer Eintrag: Bauarbeiten nördlich der Memhardstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (ex-G,B)
-#: XXX Durchfahrt kann offen sein (gesehen 2022-11-22)
-#: add_fragezeichen: Wann ist die Sperrung beendet?
-#: last_checked: 2022-11-26
-#: check_frequency: 7d
+# REMOVED --- #: also_indoor: traffic (ex-G,B) --- #: XXX Durchfahrt kann offen sein (gesehen 2022-11-22) --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: last_checked: 2022-11-26 --- #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
      },
@@ -36643,7 +36641,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
-#: source_id: bvg2021:142#BVG311081_0
+# REMOVED --- #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen)
@@ -37046,7 +37044,7 @@ EOF
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1055654058" version="1"
-#: last_checked: 2022-11-06 (architektur-urbanistik)
+#: last_checked: 2022-11-27 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2023-12-31
 	q3::inwork 6447,9661 6348,9541
