@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2016,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,6 +13,9 @@
 #
 
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use Getopt::Long;
 
 sub usage (;$) {
@@ -52,16 +55,16 @@ while(<$fh>) {
     $sortkey =~ tr/הצüִײÜביט/aouaouaee/;
     if ($check) {
 	if ($seen{$sortkey}++) {
-	    die "Duplicate: $_\n";
+	    die "ERROR: Duplicate: $_\n";
 	}
 	if (@F < 2) {
-	    die "Too less fields: " . scalar(@F) . " in '$_'\n";
+	    die "ERROR: Too less fields: " . scalar(@F) . " in '$_'\n";
 	}
 	if (@F > 4) {
-	    die "Too many fields: " . scalar(@F) . " in '$_'\n";
+	    die "ERROR: Too many fields: " . scalar(@F) . " in '$_'\n";
 	}
 	if (do { no warnings; $F[2] !~ m{^(|\d{5})$} }) {
-	    die "Not a ZIP: '$F[2]' in '$_'\n";
+	    die "ERROR: Not a ZIP: '$F[2]' in '$_'\n";
 	}
     }
     push @data, [$sortkey, $_];
@@ -70,7 +73,20 @@ while(<$fh>) {
 if ($check) {
     for my $i (1 .. $#data) {
 	if ($data[$i-1]->[0] gt $data[$i]->[0]) {
-	    die "File $file is not sorted (line $i): '$data[$i-1]->[1]' gt '$data[$i]->[1]'\n";
+	    my $make = eval { require BBBikeBuildUtil; BBBikeBuildUtil::get_pmake() } || 'make';
+	    die <<EOF;
+ERROR: File $file is not sorted (line $i):
+
+    '$data[$i-1]->[1]'
+         gt
+    '$data[$i]->[1]'
+
+If this script was called through the standard bbbike/data Makefile, then
+the problem could be fixed by calling
+
+    $make sort-coords.data
+
+EOF
 	}
     }
     exit 0;
