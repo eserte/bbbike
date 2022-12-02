@@ -35,9 +35,9 @@ for my $dd (@{ $d->{data}->{allDisruptions}->{disruptions} }) {
     my $from = "$dd->{gueltigVonDatum} $dd->{gueltigVonZeit}";
     my $sourceid = "bvg2021:" . lc($dd->{linie}) . "#" . $dd->{meldungsId};
     my $text =
+	"$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "") . "\n" .
 	($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n" .
 	"$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}\n" .
-	"$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "") . "\n" .
 	highlight_words($dd->{textIntAuswirkung}) . "\n";
     $text .= "SEV: $dd->{sev}\n" if $dd->{sev} ne "";
     push @records, {from=>$from, text=>$text};
