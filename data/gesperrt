@@ -2374,8 +2374,11 @@ Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7822,12937 7
 Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7822,12937 7776,12945 7623,12764
 Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7623,12764 7776,12945 7595,12980
 Mittelstreifen	3nocross::ignrte 21137,11294 21134,11331 21133,11348 21130,11384 21124,11462
+Elsterwerdaer Pl. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21073,11350
 Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21133,11348
+Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21073,11350 21134,11331 21133,11348
 Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21110,11326
+Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21073,11350
 Lauinger Str. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21171,11336 21133,11348 21134,11331
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Straßenbahntrasse	3nocross::ignrte 15662,16649 15735,16698 15776,16721

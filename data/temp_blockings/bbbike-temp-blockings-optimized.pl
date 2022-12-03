@@ -4318,7 +4318,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: also_indoor: search Blumberger-Damm-Br¸cke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-10-01 (osm)
+#: last_checked: 2022-12-03
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -5242,7 +5242,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraﬂe Hˆhe Ede-und-Unku-Weg und Weichselstraﬂe nˆrdlich Traveplatz
-#: last_checked: 2022-12-01 vvv
+#: last_checked: 2022-12-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -5250,7 +5250,7 @@ Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
 Weichselstr./Scharnweberstr.: Gehweg f¸r Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924 15077,11910
 #: note: und eigentlich kann auch schon die Fahrbahn genutzt werden, deshalb q3 -> q2
-Scharnweberstr.: Gehweg f¸r Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15256,11884
+Scharnweberstr.: Gehweg f¸r Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
 #: note: wegen der verl‰ngerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg f¸r Radfahrer frei, allerdings an der Travestr. kein ‹bergang zur Fahrbahn mˆglich	q4::inwork; 14888,11934 14836,11842
@@ -5259,9 +5259,9 @@ M¸ggelstr.	q4::inwork 14901,11808 14836,11842
 #: check_frequency ^^^
 #: last_checked ^^^
 #	q3::inwork 14965,11924 15077,11910
-#	q3::inwork; 15077,11910 15133,11902 15174,11896 15256,11884
+#	q3::inwork; 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
 #	q3::inwork 14965,11924 14888,11934 14836,11842
-# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15174,11896 15133,11902 15077,11910
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15217,11890 15174,11896 15133,11902 15077,11910
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
          'from' => 1663020000,
@@ -6318,7 +6318,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        },
        {
          'data' => '#: by: https://nowkoelln.de/#wann
-#: XXX Gibt es eine (regelm‰ﬂige?) Winterpause?
+#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023
 #: next_check: 2022-12-04
 	q4::temp:clock 12412,9610 12250,9691
 ',

@@ -1363,7 +1363,7 @@ EOF
        text  => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 23.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4 17479,10452 17511,10577 17527,10640 17569,10801 17621,10994
+	q4 17479,10452 17503,10544 17511,10577 17527,10640 17569,10801 17621,10994
 	q4 17479,10452 17427,10259
 EOF
      },
@@ -29402,7 +29402,7 @@ EOF
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-10-01 (osm)
+#: last_checked: 2022-12-03
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34264,7 +34264,7 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-12-01 vvv
+#: last_checked: 2022-12-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -34272,7 +34272,7 @@ Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
 Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924 15077,11910
 #: note: und eigentlich kann auch schon die Fahrbahn genutzt werden, deshalb q3 -> q2
-Scharnweberstr.: Gehweg für Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15256,11884
+Scharnweberstr.: Gehweg für Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
@@ -34281,9 +34281,9 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
 #: check_frequency ^^^
 #: last_checked ^^^
 #	q3::inwork 14965,11924 15077,11910
-#	q3::inwork; 15077,11910 15133,11902 15174,11896 15256,11884
+#	q3::inwork; 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
 #	q3::inwork 14965,11924 14888,11934 14836,11842
-# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15174,11896 15133,11902 15077,11910
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15217,11890 15174,11896 15133,11902 15077,11910
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -36578,14 +36578,14 @@ EOF
 	q4; 9021,3878 9073,3892 9117,3898
 EOF
      },
-     { from  => undef, #
+     { from  => undef, # $isodate2epoch->("2023-04-01 00:00:00"),
        until => undef, #
        text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: by: https://nowkoelln.de/#wann
-#: XXX Gibt es eine (regelmäßige?) Winterpause?
+#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023
 #: next_check: 2022-12-04
 	q4::temp:clock 12412,9610 12250,9691
 EOF

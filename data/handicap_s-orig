@@ -780,7 +780,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraﬂenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-11-28
+#: last_checked: 2022-12-03
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -852,7 +852,7 @@ Eisenacher Str.: Radfahrer teilen sich mit Fuﬂg‰ngern den B¸rgersteig	q1-::inwor
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-10-05
+#: last_checked: 2022-12-03
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-12-31
 #: next_check: 2023-11-15
@@ -1575,7 +1575,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13457,12505 13476,12461 13448,12340
 #: XXX_prog BS (Bordstein am Wendehammer, ansonsten q1)
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger, Bordstein	q3 17276,10617 17277,10633
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger, Rampe	q2 17277,10633 17298,10633
-(Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17298,10633 17249,10651
+(Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger, Radfahren erlaubt	q1 17298,10633 17249,10651
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17249,10702 17244,10737 17261,10827 17257,10875
 (Tr‰nkegraben - Eggersdorfer Str./Rummelsburger Str.): Fuﬂg‰nger	q1 17261,10827 17226,10865
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1553,6741 1338,6708 1154,6672 956,6631 902,6642 878,6651 818,6616 775,6615 698,6592 663,6575 546,6583 369,6594 340,6598 218,6571
@@ -4318,6 +4318,17 @@ Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 (Blitzenroder Ring - Packereigraben): einige Fuﬂg‰nger	q2 5808,22387 5796,22401 5796,22412
 #: note: am ˆstlichen Ende ein expliziter Fuﬂg‰nger-Schild
 Johannisthaler Park: Gr¸nanlage, Fuﬂg‰nger	q4 17760,4867 17659,4849 17580,4761
+#: note: Gr¸nanlagen-Schild ohne weitere Zusatzschilder (am westlichen Ende)
+(M‰rkische Allee - Biesdorfer Promenade): Fuﬂg‰nger, schmal	q2 19743,13210 19757,13191 19830,13170
+(M‰rkische Allee - Biesdorfer Promenade): Fuﬂg‰nger	q1 19830,13170 19842,13144 19873,13129
+(Tr‰nkegraben - Volkradstr.): Fuﬂg‰nger, Radfahren erlaubt	q2+ 17298,10633 17329,10620 17363,10587 17422,10571
+(Tr‰nkegraben - Volkradstr.): Parkplatzverkehr	q2+ 17422,10571 17503,10544
+#: note: eigentlich keine Freigabe f¸r Radfahrer
+Elsterwerdaer Platz: Liefer- und Busverkehr	q1 21074,11465 21073,11350 21134,11331
+#: note: keine Ausschilderung bzgl. des Radverkehrs
+Elsterwerdaer Platz: einige Fuﬂg‰nger	q0- 20818,11293 20829,11275 20839,11300 21055,11284 21084,11319 21110,11326 21134,11331
+#: note: von der Lieferstraﬂe aus als "Fuﬂg‰ngerzone, Lieferverkehr frei" ausgeschildert, keine Ausschilderung von der anderen Seite
+Elsterwerdaer Platz: einige Fuﬂg‰nger	q0- 21084,11319 21082,11333 21073,11350
 # 
 ######################### User Contributions #################################
 # 

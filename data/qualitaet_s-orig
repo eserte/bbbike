@@ -4803,7 +4803,7 @@ Brückenstr. (Rahnsdorf): Asphalt	Q0 29609,4049 29568,4098 29524,4208
 (entlang des Tränkegrabens): Beton	Q0- 17078,10038 17138,10109 17156,10164 17157,10173 17143,10186 17144,10297 17163,10374
 (entlang des Tränkegrabens): Beton/Asphalt	Q0 17163,10374 17239,10632 17249,10651 17255,10662
 (entlang des Tränkegrabens): Beton	Q0- 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
-(Baikalstr. - Tränkegraben): asphaltiert	Q0 17276,10617 17277,10633 17298,10633 17249,10651
+(Baikalstr. - Tränkegraben): Asphalt	Q0 17276,10617 17277,10633 17298,10633
 Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
 Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17839,10883 17856,10879
 Am Lindenplatz: Verbundsteinpflaster	Q1 17839,10883 17856,10961
@@ -9850,7 +9850,9 @@ Frankfurter Allee [Wohngebiet]: Beton	Q0- 15330,11946 15405,11983 15504,11969 15
 Frankfurter Allee [Wohngebiet]/Schulze-Boysen-Str.: Beton	Q0- 15602,11956 15592,11881 15710,11857 15738,11851 15836,11840
 Frankfurter Allee [Wohngebiet]: Beton	Q0- 15836,11840 15856,11835 15871,11832 15930,11843 15941,11855 15952,11905 16128,11881 16190,11872 16214,11935
 Elsterwerdaer Platz: Gehwegplatten	Q0 20818,11293 20829,11275 20839,11300 21055,11284 21084,11319 21110,11326 21134,11331
-Haltoner Str.: Verbundsteinpflaster	Q1+ 20968,11203 21010,11223 21055,11284
+Elsterwerdaer Platz: Asphalt	Q0 21074,11465 21073,11350 21134,11331
+Elsterwerdaer Platz: Gehwegplatten	Q0 21073,11350 21082,11333 21084,11319
+Haltoner Str.: Verbundsteinpflaster	Q1+ 20985,11186 21010,11223 21055,11284
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Gehwegplatten	Q1+ 17261,10827 17226,10865
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Asphalt	Q0 17244,10737 17221,10840 17226,10865
 Reinickendorfer Str.: Beton	Q0 8091,14895 8037,14958 8015,15047 7998,15068
@@ -10948,7 +10950,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-11-11
+#: last_checked: 2022-12-03
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -11551,7 +11553,7 @@ Holteistr.: Asphalt mit Schäden	Q0- 14639,11512 14575,11407
 #: note ^^^
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5128,12149 5106,12129 5141,11816
 Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6128,10319 6020,10351
-Moldaustr.: Beton	Q0- 17856,10508 17837,10425
+Moldaustr.: Beton	Q1+ 17856,10508 17837,10425
 Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0- 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Uferweg - Sömmeringstr.): wassergebundene Decke	Q1 3572,12866 3574,12916 3716,12925
 Bruno-Taut-Ring [Stichstraße]: Beton mit Schäden	Q1- 13632,3875 13601,3895 13573,3885
@@ -12547,8 +12549,10 @@ Marktplatz Griechische Allee: glatte Pflasterung	Q0- 18025,6700 18029,6674
 (Gotlindestr. - entlang des Wohngebiets Lindenhof): unbefestigter Weg	Q2 17357,12566 17461,12521
 (Klara-Weyl-Str. - Landschaftspark Herzberge): wassergebundene Decke	Q1 17418,12797 17422,12811 17400,12842
 (Klara-Weyl-Str. - Landschaftspark Herzberge): Verbundsteinpflaster	Q1+ 17400,12842 17363,12856 17347,12845 17299,12851
-#: note: extrapoliert
 Märkische Allee [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19653,13253 19706,13102 19821,12986 19933,12984
+Märkische Allee [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19653,13253 19743,13210 19804,13185
+(Märkische Allee - Biesdorfer Promenade): teilweise schadhafter Asphalt	Q2 19743,13210 19757,13191 19830,13170
+(Märkische Allee - Biesdorfer Promenade): Verbundsteinpflaster	Q1 19830,13170 19842,13144 19873,13129
 (Allee der Kosmonauten - Wohngebiet): Asphalt	Q0 19628,13517 19649,13481
 (Lichtenrader Damm - Mellener Str.): Verbundsteinpflaster	Q1 10903,-1768 10771,-1782
 Wünsdorfer Str.: Beton	Q0- 9697,-997 9798,-1288 9860,-1475
@@ -12881,6 +12885,8 @@ Blücherstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4018,699 4069,734 41
 (Berliner Str. - Kissingenstr.): Betonpflaster	Q1+ 10853,17802 10896,17846 10944,17863
 (Blitzenroder Ring - Packereigraben): Asphalt/Verbundsteinpflaster	Q1 5808,22387 5796,22401 5796,22412
 Forum an der Museumsinsel: Kopfsteinpflaster	Q2 9650,13074 9682,13167 9633,13192 9602,13081
+(Tränkegraben - Volkradstr.): Asphalt	Q0 17249,10651 17298,10633 17329,10620 17363,10587 17422,10571
+(Tränkegraben - Volkradstr.): Verbundsteinpflaster	Q1+ 17422,10571 17503,10544
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -20563,7 +20569,8 @@ Rue Hyacinthe Vincent: Kleinsteinpflaster	Q1- 3375,16558 3347,16534 3292,16553
 Sachsenwaldstr.: guter Asphalt	Q0 5834,6142 5984,6233 6104,6258 6198,6270 6305,6287 6323,6270
 # 
 #: by: J.F. (jofmoher):
-Moldaustr.: guter Beton	Q0- 17511,10577 17702,10525 17823,10495 17828,10514 17856,10508 17950,10481 17915,10350
+#: corrected_by: srt (guter Beton, Q0- -> ...)
+Moldaustr.: Beton	Q1+ 17511,10577 17702,10525 17823,10495 17828,10514 17856,10508 17950,10481 17915,10350
 # 
 #: by: Matthias Kaller: vvv
 #: corrected_by: Nicole Weber (gutes Kopfsteinpflaster -> Verbundsteinpflaster, plausibler in dieser Gegend)
@@ -24704,9 +24711,9 @@ Aurorafalterweg: Asphalt	Q0 21132,10923 21182,10920 21284,10956 21402,11009
 Apfelwicklerstr.: Asphalt	Q0 21475,10590 21456,10631 21434,10678 21428,10691
 Dukatenfalterweg: Asphalt	Q0 21896,10892 21765,10834 21649,10777
 Feuerfalterstr.: Asphalt	Q0 21578,10977 21540,11070 21513,11137
-Minsker Str.: Asphalt	Q0 20828,11480 20820,11333 20818,11293 20817,11257 20834,11150
+Minsker Str.: Asphalt	Q0 20828,11480 20820,11333 20818,11293 20817,11257 20835,11144
 #: confirmed_by: srt
-Haltoner Str.: Asphalt	Q0 20536,11022 20602,11050 20659,11076 20719,11101 20834,11150 20968,11203
+Haltoner Str.: Asphalt	Q0 20536,11022 20602,11050 20659,11076 20719,11101 20835,11144 20940,11186 20985,11186
 Wettersternweg: Asphalt	Q0 20719,11101 20708,11145 20710,11234
 Stachelbartweg: Asphalt	Q0 20713,10982 20659,11076 20645,11127 20646,11237
 Rauhkopfweg: Asphalt	Q0 20602,11050 20582,11120 20580,11169 20581,11240
@@ -31702,4 +31709,5 @@ Einmündungsbereich asphaltiert	Q0 13934,13403
 Einmündungsbereich asphaltiert	Q0 13918,13438
 Einmündungsbereich mit Kopfsteinpflaster	Q2 4959,13347
 Einmündungsbereich asphaltiert	Q0 9603,16468
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 20137,13016
 #: ignore ^^^
