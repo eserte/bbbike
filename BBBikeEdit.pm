@@ -1968,7 +1968,16 @@ sub click_info {
     # auto-generated).
     my(undef, @tags) = main::find_below_rx($o->canvas, [qr{^temp_sperre(?:_s)?$}]);
     if (!@tags) {
-	(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [qr{^(show|pp)$}]);
+	my @ignored_layers = qw(show pp);
+	push @ignored_layers, grep {
+	    $o->str_file->{$_} =~ m{(
+				      \bbbbike/misc/gps_data/
+				    | \bbbbike/tmp/streets-accurate.*\.bbd$
+				    | \bbbbike/tmp/fit\.bbd$
+				    | ^/tmp/.*\.trk-gpsspeed\.bbd$
+				    )}x;
+	} keys %{ $o->str_file };
+	(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [@ignored_layers]);
     }
 
     if (@tags) {
