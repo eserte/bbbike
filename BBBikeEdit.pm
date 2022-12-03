@@ -2351,10 +2351,10 @@ sub start_editor {
     my($file, $line) = @_;
     require BBBikeUtil;
     my @try = ((defined $main::texteditor && $main::texteditor !~ m{^\s*$} ? $main::texteditor : ()),
-	       "gnuclient",
-	       "emacsclient",
-	       "emacsclient-snapshot",
-	       "vi",
+	       "emacsclient",          # https://www.emacswiki.org/emacs/GnuClient: as of emacs 22.1, emacsclient supports everything gnuclient used to do
+	       "gnuclient",            # part of XEmacs
+	       "emacsclient-snapshot", # https://www.emacswiki.org/emacs/EmacsSnapshotAndDebian
+	       "vi",                   # used within an xterm
 	      );
     for my $try (@try) {
 	if ($try =~ m{gnuclient} && BBBikeUtil::is_in_path($try)) {
