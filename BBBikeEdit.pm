@@ -2369,12 +2369,14 @@ sub start_editor {
 		main::status_message("Error while starting $try", "die");
 	    }
 	    return;
-	} elsif ($try eq 'vi' && BBBikeUtil::is_in_path($try) && BBBikeUtil::is_in_path("xterm")) {
-	    system("xterm", "-e", "vi", "+".$line, $file);
-	    if ($?/256 != 0) {
-		main::status_message("Error while starting $try in an xterm", "die");
+	} elsif ($try eq 'vi') {
+	    if (BBBikeUtil::is_in_path($try) && BBBikeUtil::is_in_path("xterm")) {
+		system("xterm", "-e", "vi", "+".$line, $file);
+		if ($?/256 != 0) {
+		    main::status_message("Error while starting $try in an xterm", "die");
+		}
+		return;
 	    }
-	    return;
 	} elsif (BBBikeUtil::is_in_path($try)) {
 	    system($try, "+".$line, $file);
 	    if ($?/256 != 0) {
