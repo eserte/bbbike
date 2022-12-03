@@ -27,10 +27,7 @@ BEGIN {
 
 plan 'no_plan';
 
-my @script = bbbike_root . '/miscsrc/gpx2gpx';
-if ($^O eq 'MSWin32') { # suffix-less script, needs to be run explicitly with perl interpreter XXX maybe add a .bat wrapper?
-    unshift @script, $^X;
-}
+my @script = ($^X, bbbike_root . '/miscsrc/gpx2gpx');
 
 my $src_gpx = <<'EOF';
 <?xml version="1.0" encoding="UTF-8"?>
