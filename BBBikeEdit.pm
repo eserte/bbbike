@@ -1960,7 +1960,17 @@ sub create {
 # Return information about clicked line as a LinePartInfo struct
 sub click_info {
     my $o = shift;
-    my(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [qr{^(show|pp)$}]);
+
+    # XXX temp blockings always have precedence, even if below other
+    # items. Main use case is a temp blockings item with a
+    # fragezeichen/XXX item above, but editing must always be done in
+    # the temp blockings item (the fragezeichen/XXX item is just
+    # auto-generated).
+    my(undef, @tags) = main::find_below_rx($o->canvas, [qr{^temp_sperre(?:_s)?$}]);
+    if (!@tags) {
+	(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [qr{^(show|pp)$}]);
+    }
+
     if (@tags) {
 	my $abk = $tags[0];
 	my $pos = $tags[3];
