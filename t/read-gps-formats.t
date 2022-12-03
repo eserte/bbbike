@@ -34,7 +34,6 @@ my $miscdir = "$FindBin::RealBin/../misc";
 my $gpsmandir = "$miscdir/gps_data";
 my $datadir = "$FindBin::RealBin/../data";
 my $mapserverdir = "$FindBin::RealBin/../mapserver/brb/data";
-my $isdir = "$FindBin::RealBin/../projects/infrasystem/data/transfer";
 
 GetOptions("v!" => \$v,
 	   "store!" => \$store,
@@ -56,7 +55,7 @@ my @strassen_formats  = (
 			 ["$gpsmandir/19.wpt", "GPSman waypoints and group"],
 			 ["$gpsmandir/20040114.trk", "GPSman track"],
 			 ["$gpsmandir/20040123.wpt", "GPSman waypoints"],
-			 ["$isdir/IS_strassen.MID", "MapInfo"],
+			 # XXX missing: .mif files (MapInfo)
 			 ["$mapserverdir/strassen.shp", "ESRI"],
 			 ["$datadir/strassen", "bbd"],
 			 ["$miscdir/e00/germany/hsline.e00", "e00"],

@@ -6190,9 +6190,6 @@ sub define_item_attribs {
     foreach my $type (@comments_types) {
 	$str_file{"comm-$type"} = "comments_$type";
     }
-    if ($devel_host) {
-	$str_file{"is"} = "$FindBin::RealBin/projects/infrasystem/data/landstrassen-corrected";
-    }
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
@@ -19448,7 +19445,7 @@ sub set_coords_str {
     } elsif ($tags[0] =~ /^[sSlL]$/ ||
 	     $add_net{fz} && $tags[0] eq 'fz' ||
 	     ($net_type eq 's-car' && $tags[0] eq 'sBAB')
-	     # XXX weitere Ausnahmen für $add_net{is} etc. definieren
+	     # XXX evtl. weitere Ausnahmen definieren
 	    ) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);
 	make_net() if !$net;

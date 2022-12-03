@@ -1819,14 +1819,6 @@ sub add_search_net_menu_entries {
 		       -variable => \$add_net{custom},
 		       -command => \&change_net_type,
 		      );
-    # XXX check whether this is significant in any way, and if not:
-    # delete! Also change_net_type has to be amended, maybe.
-    if ($devel_host) {
-	$nsbm->checkbutton(-label => M"Add IS data",
-			   -variable => \$add_net{is},
-			   -command => \&change_net_type,
-			  );
-    }
     $nsbm->command(-label => M"Layer für Custom auswählen",
 		   -command => sub {
 		       select_layers_for_net_dialog();
