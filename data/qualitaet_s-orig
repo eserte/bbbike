@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: last_checked: 2022-11-13 (mapillary)
+#: last_checked: 2022-12-04
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
@@ -121,7 +121,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="18"
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-04
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -363,7 +363,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="24"
-#: last_checked: 2022-10-31
+#: last_checked: 2022-12-04
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -31201,7 +31201,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 21828,-1015
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 13245,7742
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12682,9089
 Kreuzungsbereich asphaltiert	Q0 12590,8977
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 12740,8862
+#: historical_note: früher: Kreuzungsbereich mit Kopfsteinpflaster, Q2
+Kreuzungsbereich asphaltiert	Q0 12740,8862
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12836,8980
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 11769,8515
 Kreuzungsbereich asphaltiert	Q0 10103,10989

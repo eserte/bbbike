@@ -34855,7 +34855,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-11-18 vvv
+#: last_checked: 2022-12-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -34980,9 +34980,9 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-11-18 vvv
+#: last_checked: 2022-12-04 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-12-03 vvv
+# REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="423009430" version="17" ---	q4::inwork; 13368,7300 13476,7330
@@ -34990,7 +34990,7 @@ EOF
 #: osm_watch: way id="173067346" version="23"
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -35049,16 +35049,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein (z.B. abends)',
+       text  => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein (z.B. abends oder am Wochenende)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
 #: note: Durchfahrt möglich, gesehen: 2022-03-23 (Mi) mittags, 2022-05-04 (Mi) mittags, 2022-07-06 (Mi) mittags, 2022-08-05 (Fr) vormittags, 2022-11-07 mittags
-#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40)
+#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40), 2022-12-04 (So) nachmittags (15:00)
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-11-07
+#: last_checked: 2022-12-04
 	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 EOF
      },
@@ -35156,7 +35156,7 @@ EOF
 #: osm_watch: way id="975241319" version="4"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-04
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35875,7 +35875,7 @@ EOF
        data  => <<EOF,
 #: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-11-24 vvv
+#: last_checked: 2022-12-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -36578,7 +36578,7 @@ EOF
 	q4; 9021,3878 9073,3892 9117,3898
 EOF
      },
-     { from  => undef, # $isodate2epoch->("2023-04-01 00:00:00"),
+     { from  => $isodate2epoch->("2023-04-01 00:00:00"),
        until => undef, #
        text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
        type  => 'gesperrt',
@@ -36586,7 +36586,7 @@ EOF
        data  => <<EOF,
 #: by: https://nowkoelln.de/#wann
 #: XXX Die Flohmarktsaison 2023 startet am 03. April 2023
-#: next_check: 2022-12-04
+#: next_check: 2023-04-01
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -37179,6 +37179,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: INDENALBOINGARTEN-2022
+#: osm_watch: way id="1119211815" version="1"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2022-11-13
 #: check_frequency: 45d
