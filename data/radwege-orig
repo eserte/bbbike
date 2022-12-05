@@ -2293,7 +2293,8 @@ Radweg teilweise nur aufgemalt	RW1;RW1 6935,13645 6810,13694
 #: note: alter Radweg soll nicht mehr verwendet werden
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 6730,14021 6818,14102 6992,14251 7123,14367
 Busspur ist immer gültig	RW5; 7123,14367 7180,14419
-	RW3; 7180,14419 7123,14367 6992,14251 6818,14102 6730,14021
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 7180,14419 7123,14367
+	RW3; 7123,14367 6992,14251 6818,14102 6730,14021
 	RW3;RW3 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021
 	RW3;RW4 7104,14403 7123,14367
 	RW3;RW3 4186,13710 4265,13742 4421,13793 4583,13845
@@ -7777,8 +7778,8 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023)
-#: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022)
-#: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022)
+#: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022)
+#: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023)
 #: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
@@ -7963,7 +7964,7 @@ Bushaltestelle	RW3; 8787,6660 8739,6701
 # 
 Tempo 10	RW6;RW6 9423,5227 9478,5041 9482,5012 9507,4838 9486,4748 9494,4658
 # 
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 19171,8280 19333,8165
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 19171,8280 19333,8165 19407,8143
 # REMOVED (wie am besten darstellen?) ---	RW9;RW0 19171,8280 18949,8437 18787,8540
 # 
 Verbundsteinpflaster	RW1; 6961,836 6966,880

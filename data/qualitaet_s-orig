@@ -276,7 +276,7 @@ Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-11-25
+#: last_checked: 2022-12-05
 #: check_frequency: 45d
 #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Sch‰den	Q1 18037,9195 18092,9141 18134,9080
@@ -1771,7 +1771,7 @@ Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 1620
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
 Schˆnholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
-#: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="14" vvv
 #: XXX wird hier asphaltiert? vvv
@@ -11439,7 +11439,8 @@ Am Wuhlebogen [zur Kaulsdorfer Str.]: Asphalt	Q0 21632,8105 21688,8115
 Am Wuhlebogen: Asphalt	Q0 21680,7943 21632,8105 21573,8169 21400,8322
 Am Wuhlebogen: unbefestigter Zugang	Q2 21400,8322 21396,8326
 Stolzenfelsstr.: Gehwegplatten	Q0- 19468,8168 19446,8152 19407,8143
-Stolzenfelsstr.: unbefestigter Weg	Q2+; 19407,8143 19333,8165
+#: historical_note: fr¸her: unbefestigter Weg, Q2+;
+Stolzenfelsstr.: Verbundsteinpflaster	Q1+; 19407,8143 19333,8165
 Stolzenfelsstr.: Verbundsteinpflaster	Q1+; 19333,8165 19171,8280
 Stolzenfelsstr.: Mosaikpflaster, teilweise uneben	Q2+; 19171,8280 18949,8437
 #: corrected_by: mapillary (Mosaikpflaster, teilweise uneben, Q2+; -> ..., neu gemacht)
@@ -12771,7 +12772,7 @@ Gubener Str.: Asphalt	Q0; 13467,11778 13568,11560
 In den Alboing‰rten: Betonpflaster	Q0- 7971,6087 7936,6089 7739,6099 7646,6031
 #: next_check_id: INDENALBOINGARTEN-2022
 #: XXX Bauarbeiten; wird hier sp‰ter auch Betonpflaster liegen?
-#: osm_watch: way id="962201820" version="10"
+# REMOVED (siehe temp-blockings-Eintrag) --- #: osm_watch: way id="1119211815" version="1"
 #: last_checked: 2022-11-13
 #: check_frequency: 60d
 In den Alboing‰rten: unbefestigte Baustraﬂe	Q2 7646,6031 7638,5967
