@@ -1306,7 +1306,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: osm_watch: way id="111283481" version="15"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
-#: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022)
+#: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022) (bis 13.1.2023)
 #: last_checked: 2022-11-11
 #: check_frequency: 360d
 #: next_check: 2023-06-30
@@ -2289,6 +2289,8 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/isek-lebendiges-zentrum-baumschulenstrasse-koepenicker-landstrasse_bericht.pdf (Erwähnung einer neuen Führung des R1, evtl. hier?)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (Umbauarbeiten ab Herbst 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511
+#: by: https://www.deutsches-architekturforum.de/thread/11217-umgang-mit-berliner-bau-denkm%C3%A4lern/?postID=731233#post731233 (Erwähnung des Wasserwegs)
+#: by: https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger (Baustart für Wasserweg + Stichweg zum Eierhäuschen, voraussichtlich bis zum zweiten Quartal 2023)
 #: osm_watch: way id="207761374" version="9"
 #: osm_watch: way id="306147854" version="6"
 #: last_checked: 2022-11-27
@@ -2296,17 +2298,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: next_check: 2023-06-30
 Wasserweg: wird hier asphaltiert werden?	?::projected 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860
 # 
-#: by: https://www.infravelo.de/projekt/bulgarische-strasse/ (2. Quartal 2023 - 3. Quartal 2023)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1262785.php (Freigabe als Fahrradstraße Mitte November 2022)
-#: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrradstrasse-fuer-den-r1-entsteht_a363200
-#: by: https://nitter.cz/VIZ_Berlin/status/1592429094901518336#m (noch im November 2022)
-#: osm_watch: way id="33231802" version="21"
-#: XXX Halteverbote bis 30.11.2022
-#: last_checked: 2022-12-01
-#: check_frequency: 7d
-# REMOVED (Termin wurde nicht gehalten) --- #: next_check: 2022-11-30
-Bulgarische Str.: Fahrradstraße entsteht	?::inwork 15591,8848 15680,8914 15778,8990
-# 
+# REMOVED (Schilder hängen) --- #: by: https://www.infravelo.de/projekt/bulgarische-strasse/ (2. Quartal 2023 - 3. Quartal 2023) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1262785.php (Freigabe als Fahrradstraße Mitte November 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrradstrasse-fuer-den-r1-entsteht_a363200 --- #: by: https://nitter.cz/VIZ_Berlin/status/1592429094901518336#m (noch im November 2022) --- #: osm_watch: way id="33231802" version="21" --- #: XXX Halteverbote bis 30.11.2022 --- #: last_checked: 2022-12-01 --- #: check_frequency: 7d --- # REMOVED (Termin wurde nicht gehalten) --- #: next_check: 2022-11-30 --- Bulgarische Str.: Fahrradstraße entsteht	?::inwork 15591,8848 15680,8914 15778,8990
 # REMOVED (done) --- #: next_check_id: RATHAUSWEDDING-2017 --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.312877.php --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5598.html --- #: XXX Fertigstellung der Platzgestaltung für Ende 2016 vorgesehen --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007 --- #: XXX Vorschlag für eine Platzbenennung: Elise-und-Otto-Hampel-Platz --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7807 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8202 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8284 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8306 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/258_2017_ds_255_und_732_benennnung_elise_und_otto_hampel_platz.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Umbenennung) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8798 --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.720802.php --- #: XXX laut osm ist die Umbenennung passiert (changeset von 2018-07-26) --- #: osm_watch: way id="23175110" version="7" --- #: last_checked: 2018-06-08 --- #: check_frequency: 30d --- Rathaus Wedding: Umbenennung zu Elise-und-Otto-Hampel-Weg	? 7012,15571 7129,15686 7115,15702 7129,15717
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/180_2438-iv-togostrasse-zur-fahrradstrasse-machen_sb.pdf vvv
@@ -2815,7 +2807,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html
 #: by: https://berliner-abendblatt.de/2022/11/29/bauarbeiten-in-der-hermannstrasse-wird-es-eng/
 #: source_id: 2147347020 (Fernwärmearbeiten bis 30.6.2021 --- hat das was mit der Radspur zu tun?)
-#: source_id: viz2021:13.425334,52.48011,30.11.2022,18:00 (Leitungsarbeiten zwischen Boddinstr. und Flughafenstr., bis 5.12.2022) (inaktiv)
+#: source_id: viz2021:13.425334,52.48011,30.11.2022,18:00 (Leitungsarbeiten zwischen Boddinstr. und Flughafenstr., bis 5.12.2022) (inaktiv) (wieder aktiv, bis 9.12.2022, evtl. auch bis 13.12.2022)
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="860638046" version="9"
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="544599538" version="16"
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="860638027" version="10"
@@ -4214,7 +4206,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED --- #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da) --- #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite --- #: last_checked: 2020-03-05 --- #: check_frequency: 7d --- # REMOVED --- #: next_check; 2020-02-14 --- Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
 # 
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/sicherer-weg-zur-sternwarte_a246928
-#: last_checked: 2022-12-01
+#: last_checked: 2022-12-06
 #: check_frequency: 90d
 Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Ampel	?::projected 15399,9101 15452,9079 15451,9129
 # 
@@ -6487,7 +6479,7 @@ Prinzenstr.: Radspuren zwischen Moritzplatz und Ritterstr.	?::projected 10776,10
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1253431.php (restliche Abschnitte zwischen Pariser Kommune und Andreasstr., zunächst Richtung Westen, 12.10.2022 - Ende November 2022; außerdem wird es für Radfahrer eine "signalisierte Querungsmöglichkeit" in Höhe Koppenstr. geben)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/karl-marx-allee-radweg-wird-breiter_a360314
 # REMOVED (fertig) --- #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2022-11-30
+#: last_checked: 2022-12-06
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 14d
 #: next_check: 2023-09-30
@@ -6635,7 +6627,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 #: next_check_id: GRUENBERGER-2022
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
-#: last_checked: 2022-11-30
+#: last_checked: 2022-12-06
 #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
@@ -6758,7 +6750,7 @@ Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthof
 Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 18922,2238 18928,2319 18928,2327
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022)
-#: last_checked: 2022-12-04
+#: last_checked: 2022-12-06
 #: next_check: 2022-12-31
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 13860,9861
 # 
@@ -7077,7 +7069,7 @@ Wexstr.: geschützte Radverkehrsanlage wird erstellt	?::projected; 5357,8013 5472
 #: by: https://www.bahninfo-forum.de/read.php?9,708604 (mindestens bis 11. Dezember 2022)
 #: XXX Wege wurden in BBBike angepasst, ggfs. kann man nach den Bauarbeiten wieder zurück zum alten Punkt 11064,12910 verschieben.
 #: source_id: bvg2021:m4#BVG306493_0
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-06
 #: next_check: 2022-12-11
 Alexanderplatz: Umwege wegen einer Tunnelbaustelle	?::inwork 11005,12855 11102,12845 11086,12900 11139,13008
 # 
@@ -7089,9 +7081,11 @@ Alexanderplatz: Umwege wegen einer Tunnelbaustelle	?::inwork 11005,12855 11102,1
 #: by: https://www.infravelo.de/projekt/stralauer-platz/ (4. Quartal 2022 - 3. Quartal 2023)
 #: XXX südliche Fahrbahn noch 2022, nördliche 2023
 #: XXX laut https://www.openstreetmap.org/note/3432004 beginnen die Bauarbeiten voraussichtlich 12/2022 mit der Südseite
-#: last_checked: 2022-11-23
+#: osm_watch: way id="31985151" version="30"
+#: osm_watch: way id="317878311" version="13"
+#: last_checked: 2022-12-06
 #: check_frequency: 30d
-#: next_check: 2022-12-31
+# REMOVED --- #: next_check: 2022-12-31
 Stralauer Platz: geschützte Radspuren	?::projected 12180,11657 12497,11459
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210824_protokoll_mobrat.pdf (Asphaltierung außer im Bereich des Sparrplatzes; zwischen Müllerstr. und Sparrplatz noch 2021)
@@ -8978,6 +8972,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/neubau-des-marzahner-knotens-beginnt-in-kuerze_a361283 (Bauarbeiten beginnen im Dezember 2022)
 #: by: https://berliner-abendblatt.de/2022/12/04/staugefahr-bauarbeiten-in-der-landsberger-allee/
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1271691.php (Abriss- und Neubauarbeiten ab Januar 2023)
+#: by: https://berliner-abendblatt.de/2022/12/06/baustelle-nur-eine-fahrspur-auf-der-landsberger-allee/
 #: source_id: viz2021:13.537085,52.534461,28.11.2022,06:00 (Leitungsarbeiten bis 28.1.2023)
 #: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022)
 #: XXX ampelgesicherte Kreuzungen werden entstehen, direkt am Knoten sowie bei der Zufahrt Frank-Schweitzer-Str.
@@ -9154,6 +9149,7 @@ Regionalbahnhof Köpenick	?::projected 22530,6100
 #: by: https://www.stadtentwicklung.berlin.de/planen/fnp/de/buergerbeteiligung/0222.shtml
 #: by: https://www.stadtentwicklung.berlin.de/planen/fnp/pix/buergerbeteiligung/download/0222/0222.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8486 (Mitteilung zur Kenntnisnahme)
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1272234.php (zur FNP-Änderung)
 #: XXX überwiegend Fuß- und Radwege sowie verkehrsberuhigte Bereiche geplant
 #: last_checked: 2022-10-15
 #: next_check: 2024-05-01

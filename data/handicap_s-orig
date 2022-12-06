@@ -228,12 +228,12 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: also_indoor: traffic (B) vvv
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
-#: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022)
+#: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022)
 #: priority: #A
-#: last_checked: 2022-12-02 vvv
+#: last_checked: 2022-12-06 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-12-06 vvv
+#: next_check: 2022-12-20 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
@@ -623,8 +623,8 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 ### Wilmersdorf ###
 # 
 #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv
-#: also_indoor: traffic (B,G,H) vvv
-#: last_checked: 2022-11-30 (research) vvv
+#: also_indoor: traffic (B,G,ex-H) vvv
+#: last_checked: 2022-12-06 (research) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-11-30 vvv
 # REMOVED --- #: valid: -20221130 vvv
@@ -2612,7 +2612,7 @@ Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2
 #: next_check_id: ROSENTHALER-2022
 # REMOVED --- #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der Südseite?
 #: XXX evtl. wird hier die Zufahrt für Radfahrer verbessert
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-06
 #: check_frequency: 14d
 Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 # 
