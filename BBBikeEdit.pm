@@ -1977,7 +1977,9 @@ sub click_info {
 				    | ^/tmp/.*\.trk-gpsspeed\.bbd$
 				    )}x;
 	} keys %{ $o->str_file };
-	(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [@ignored_layers]);
+	my $ignored_layers_rx = '^(' . join('|', map { quotemeta } @ignored_layers) . ')$';
+	$ignored_layers_rx = qr{$ignored_layers_rx};
+	(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [$ignored_layers_rx]);
     }
 
     if (@tags) {
