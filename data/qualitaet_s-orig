@@ -1357,7 +1357,7 @@ Köpenicker Allee: Asphalt mit Rissen	Q1+; 19206,9243 19267,9201 19392,9116 19500
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
-Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15879,12131 15871,12060 15863,11992
+Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
 Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
 Sandinostr.: Asphalt	Q0 15799,14674 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
@@ -3168,7 +3168,8 @@ Sachtlebenstr.: mäßige Radwege, Fahrbahn asphaltiert	Q0 255,152 264,227 286,452 
 #: by: ^^^
 (Parkweg Möllendorffstr. - Rathausstr.): Asphalt	Q0 15420,12178 15520,12160 15628,12246
 (Vorfahrt am Rathaus Lichtenberg): Asphalt	Q0 15480,12306 15531,12300 15576,12315
-Bleckmannweg: kleinteiliges Kopfsteinpflaster	Q1 15658,12231 15756,12212
+Bleckmannweg: kleinteiliges Kopfsteinpflaster	Q1- 15658,12231 15756,12212
+Bleckmannweg: Verbundsteinpflaster	Q1+ 15756,12212 15886,12190
 Hoenerweg: kleinteiliges Kopfsteinpflaster	Q1 15668,12304 15790,12289 15896,12273
 (Verlängerte Borkheider Str.): Verbundsteinpflaster	Q1 21555,17546 21571,17587 21619,17691
 (Verlängerte Borkheider Str.): Beton	Q1+ 21619,17691 21663,17795
@@ -12880,7 +12881,7 @@ Blücherstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4018,699 4069,734 41
 #: by: mapillary
 (Zufahrt Bhf. Ahrensfelde): Verbundsteinpflaster	Q1 21199,18643 21137,18520
 (Zufahrt Bhf. Ahrensfelde): Beton	Q1 21309,18626 21285,18637 21224,18519 21251,18508
-(Weg im Altenhofer Dreieck): Asphalt	Q0 15500,14416 15514,14398 15545,14328 15580,14307 15624,14330 15696,14321 15709,14332 15699,14350
+(Weg im Altenhofer Dreieck): Asphalt	Q0 15500,14416 15514,14398 15545,14328 15580,14307 15624,14330 15696,14321 15709,14332 15699,14350 15675,14360
 (Weg im Altenhofer Dreieck - Landsberger Allee): Kleinsteinpflaster	Q1- 15580,14307 15588,14279
 (Otto-Krüger-Zeile - Wattstr.): Beton	Q0 17484,7087 17571,7157 17641,7151
 (Berliner Str. - Kissingenstr.): Betonpflaster	Q1+ 10853,17802 10896,17846 10944,17863
@@ -12888,6 +12889,7 @@ Blücherstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4018,699 4069,734 41
 Forum an der Museumsinsel: Kopfsteinpflaster	Q2 9650,13074 9682,13167 9633,13192 9602,13081
 (Tränkegraben - Volkradstr.): Asphalt	Q0 17249,10651 17298,10633 17329,10620 17363,10587 17422,10571
 (Tränkegraben - Volkradstr.): Verbundsteinpflaster	Q1+ 17422,10571 17503,10544
+Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Pfad	Q2+ 15796,14310 15791,14320 15699,14350
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -18934,9 +18936,9 @@ Haßlingerweg: Asphalt	Q0 7644,17054 7894,17073 7926,17050
 # 
 #: by: (x)qusor: vvv
 #: confirmed_by: srt
-(Michelangelostr. - Straße 106): mäßiger Beton	Q1 13854,15129 13867,15111 14314,14841
+(Michelangelostr. - Straße 106): mäßiger Beton	Q1- 13854,15129 13867,15111 14314,14841
 #: corrected_by: srt (Feldweg, Q2 -> ...)
-(Michelangelostr. - Straße 106): mäßiger Beton	Q1 14314,14841 14599,14679
+(Michelangelostr. - Straße 106): mäßiger Beton	Q1- 14314,14841 14599,14679
 #: by: ^^^
 # 
 #: by: Annika Weidler:
@@ -21082,9 +21084,9 @@ Artuswall: Asphalt	Q0 946,24934 949,24882 968,24815 1007,24754 1046,24711 1114,2
 #: by: ^^^
 # 
 #: by: Sal-Gerd Beyer: vvv
-Schieritzstr.: guter Asphalt	Q0 12642,15668 12821,15565
-#: corrected_by: srt (Q0 -> Q1, "Schäden")
-Schieritzstr.: Asphalt mit Schäden	Q1 12821,15565 12962,15480
+Schieritzstr.: Asphalt	Q0 12642,15668 12821,15565
+#: corrected_by: srt (Q0 -> Q1, "Schäden"), srt (... -> ..., ausgebessert?)
+Schieritzstr.: Asphalt	Q0 12821,15565 12962,15480
 #: by: ^^^
 # 
 #: by: Jochen (tomaschik):
@@ -30973,7 +30975,6 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
-Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Weg	Q2 15796,14310 15791,14320 15699,14350
 (Rampe Bitterfelder Brücke): Asphalt	Q0 20409,16486 20389,16502 20343,16516 20328,16546
 (Rampe Bitterfelder Brücke): Asphalt	Q0 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539 20276,16519 20296,16512 20342,16499
 (Rampe Bitterfelder Brücke - Märkische Allee): Asphalt	Q0 20267,16539 20242,16543

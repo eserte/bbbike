@@ -876,7 +876,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 2022-12-21)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-12-03
+#: last_checked: 2022-12-07
 #: check_frequency: 60d
 #: next_check: 2022-12-21
 	RW2; 14994,12121 15117,12106 15361,12071
@@ -2721,14 +2721,14 @@ Grünbeschichtung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,1244
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-11-23
+#: last_checked: 2022-12-07
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen
 # REMOVED XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-11-23
+#: last_checked: 2022-12-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2742,7 +2742,7 @@ neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 #: by: Cord Unruh
 	RW6;RW6 15458,11306 15484,11292 15567,11247 15578,11241 15620,11210
 	RW4;RW4 15904,12340 15896,12273
-	RW4;RW3 15896,12273 15879,12131
+	RW4;RW3 15896,12273 15886,12190 15879,12131
 	RW3; 15879,12131 15871,12060
 	RW4; 15863,11992 15871,12060 15879,12131
 #: by: René (rkarlo): vvv
@@ -5742,6 +5742,9 @@ asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 130
 	RW6;RW6 16073,12883 16074,12778
 #: by: osm
 	RW6;RW6 16146,12881 16148,12772 16200,12771 16197,12880
+	RW6;RW6 16376,12874 16377,12791
+	RW6;RW6 16384,12874 16385,12825 16431,12825 16484,12825 16484,12871
+	RW6;RW6 16430,12848 16431,12825 16428,12741
 # REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
 # REMOVED ---	RW0; 15261,10738 15004,10791 14904,10812
 #: by: anonymous
@@ -6070,7 +6073,7 @@ Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
 	RW4; 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187 13692,15231
 	RW3; 13692,15231 13560,15318
 	RW4; 13560,15318 13186,15518
-zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer, zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
 	RW3; 13078,15586 13186,15518
 #: by: Grönwoldt:
 #: confirmed_by: srt
@@ -7796,7 +7799,7 @@ wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 
 #: osm_watch: way id="28680188" version="20"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
-#: osm_watch: way id="30958674" version="19"
+#: osm_watch: way id="30958674" version="20"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
 #: osm_watch: way id="4526218" version="23"
 #: note: keine Benutzungspflicht

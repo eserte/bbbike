@@ -4392,7 +4392,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002668',
        data  => <<EOF,
-	q4; 15904,12340 15896,12273 15879,12131 15871,12060 15863,11992
+	q4; 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
 EOF
      },
      { from  => 1146175200, # 2006-04-28 00:00
@@ -5368,7 +5368,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-	1::inwork 15904,12340 15896,12273 15879,12131 15871,12060 15863,11992
+	1::inwork 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -34266,7 +34266,7 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-12-03 vvv
+#: last_checked: 2022-12-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-23 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -36622,10 +36622,10 @@ EOF
        data  => <<EOF,
 #: note: laut rbb
 #: also_indoor: traffic (H,B,G) vvv
-#: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022 vvv
-#: last_checked: 2022-11-28 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2022-12-06 vvv
+#: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022, mittlerweile bis 31.12.2022 vvv
+#: last_checked: 2022-12-07 vvv
+#: check_frequency: 10d vvv
+#: next_check: 2022-12-31 vvv
 # REMOVED (hier mittlerweile wieder offen) --- einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
@@ -37172,10 +37172,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Mittelstr./Altenhofer Str. - Landsberger Allee: Verbindung wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Mittelstr./Altenhofer Str. - Landsberger Allee: Verbindung wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Stand 7. Dezember 2022: noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2022-11-11
+#: last_checked: 2022-12-07
 	2::inwork 15468,14430 15425,14360
 EOF
      },
@@ -37290,6 +37290,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
+#: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025

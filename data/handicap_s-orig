@@ -750,8 +750,8 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022) (bis 31.10.2023)
-#: osm_watch: way id="137623800" version="26"
-#: osm_watch: way id="625667165" version="16"
+#: osm_watch: way id="137623800" version="27"
+#: osm_watch: way id="625667165" version="17"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2022-11-24
@@ -949,27 +949,27 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2022-11-23
+#: last_checked: 2022-12-07
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
-#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
+#: XXX laut Schild der Wasserbetriebe bis Dezember 2022 (kann vermutlich nicht gehalten werden)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
 #: osm_watch: way id="885619857" version="14"
 #: osm_watch: way id="885619858" version="9"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-11-12 (osm) vvv
+#: last_checked: 2022-12-07 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-12-31 vvv
+# REMOVED --- #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork 12556,15518 12605,15491 12621,15482
 # REMOVED --- #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1777,6 +1777,7 @@ Viktoriapark: starkes Gefälle, Fußgänger	q3; 9007,9264 8970,9323
 Viktoriapark: Fußgänger	q1+ 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
 (Alt-Biesdorf - Schloss Biesdorf): Steigung, Fußgänger	q3; 20764,11675 20825,11732
 (Schloss Biesdorf - Alt-Biesdorf): Fußgänger	q2; 20825,11732 20764,11675
+#: note: Grünanlagen-Schild, keine Zusatzschilder
 (Parkweg Möllendorffstr. - Rathausstr.): Fußgänger	q2 15420,12178 15520,12160 15628,12246
 Bleckmannweg: Fußgänger, eng	q1 15658,12231 15756,12212
 Hoenerweg: Fußgänger, eng	q1 15668,12304 15790,12289 15896,12273
@@ -2729,6 +2730,7 @@ am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
 (Magistratsweg - Maulbeerallee): Fußgänger (Schule)	q1 -6051,12673 -5830,12712 -5613,12750 -5594,12832
 Henrionweg: eng	q3 11154,21760 11145,21698
+#: note: Grünanlagen-Schild (ohne Radfahrer-Zusatzschild) nur am östlichen Ende
 (Weg zum Hohenschönhauser Tor): Fußgänger	q1 15367,14512 15225,14545
 (Hohenschönhauser Tor): Fußgänger (Einkaufszentrum)	q4 15225,14545 15066,14579
 (Anlieferung Hohenschönhauser Tor): Lieferverkehr, Fußgänger	q1 15120,14481 15225,14545 15174,14638
@@ -5213,8 +5215,7 @@ Reihersteg: enge Straße	q1 22471,-591 22462,-671 22458,-742 22451,-927 22442,-10
 #: by: AB (1 3 5 8 1):
 Grässeweg: enge Straße	q1 -5510,13326 -5295,13415 -5217,13446
 # 
-#: by: Sal-Gerd Beyer:
-Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12962,15480
+# REMOVED (normale Breite) --- #: by: Sal-Gerd Beyer: --- Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12962,15480
 # 
 #: by: Max Janke 
 Siedlungsring (Karow): schlecht überaschaubar	q1 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
