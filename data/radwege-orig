@@ -321,7 +321,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-12-04
+#: last_checked: 2022-12-08
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -862,7 +862,8 @@ provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
 #: note: hier nicht eindeutig: Radspur per Gelbmarkierung existiert ebenfalls, ist aber teilweise durch gelbe Kreuze ungültig gemacht?
 	RW2; 14709,12156 14621,12168
-	RW4; 14621,12168 14523,12183 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
+	RW4; 14621,12168 14523,12183 14488,12188
+Leitboys und sehr niedrige Barriere	RW4; 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
 	RW2; 14208,12235 14020,12261
 asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: Frankfurter Allee Richtung Osten bis Möllendorffstr.
@@ -874,7 +875,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 	RW3; 14926,12129 14994,12121
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
-#: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 2022-12-21)
+#: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2022-12-07
 #: check_frequency: 60d
@@ -1154,7 +1155,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-12-06 vvv
+#: last_checked: 2022-12-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1962,7 +1963,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 #: source_id: 2147342958
 #: source_id: viz2021:13.458778,52.485562,28.11.2022,06:00 (bis 16.12.2022)
 #: also_indoor: traffic (H[unvollständig],G,B)
-#: last_checked: 2022-12-04
+#: last_checked: 2022-12-08
 #: check_frequency: 60d
 #: next_check: 2022-12-16
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
@@ -2654,7 +2655,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-12-06 vvv
+#: last_checked: 2022-12-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5629,7 +5630,7 @@ gemeinsamer Geh- und Radweg, asphaltiert und breit	RW2; 18280,11266 18327,11105 
 	RW4; 18280,11266 18263,11393 18216,11656
 	RW6;RW6 11057,12715 11055,12717 11030,12741 11007,12773
 	RW6;RW6 10074,13103 10016,13306
-# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10317,13248 9986,13412
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10321,13259 9986,13412
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10016,13306 9986,13412 9961,13502
 Tempo 10	RW6;RW6 9961,13502 9946,13550 9900,13653
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 9946,13550 9980,13559 9947,13674
@@ -5637,7 +5638,7 @@ Tempo 10	RW6;RW6 9961,13502 9946,13550 9900,13653
 Tempo 10	RW6;RW6 10049,13528 9993,13682
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10199,13446 10142,13556 10082,13686
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10026,13521 10199,13446
-Tempo 10	RW6;RW6 10199,13446 10350,13376
+Tempo 10	RW6;RW6 10199,13446 10341,13376
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10263,13594 10142,13556 10049,13528 10026,13521 9961,13502 9898,13484 9651,13406 9415,13315
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 9898,13484 9853,13511
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10699,13173 10757,13401 10767,13443 10797,13575
@@ -5651,7 +5652,7 @@ Tempo 10	RW6;RW6 10199,13446 10350,13376
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10596,13398 10390,13493 10311,13537 10286,13548
 # REMOVED (nun 30er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 10308,13575 10406,13543 10535,13509 10633,13474
 Tempo 10er	RW6;RW6 10535,13509 10597,13647
-# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10350,13376 10353,13384 10390,13493 10406,13543 10445,13675 10459,13760
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10341,13376 10353,13384 10390,13493 10406,13543 10445,13675 10459,13760
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10313,13493 10311,13537 10308,13575 10307,13600 10301,13701
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10931,13419 10828,13464
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10307,13600 10263,13594

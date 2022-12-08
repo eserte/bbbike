@@ -3167,7 +3167,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        {
          'data' => '#: tempex: before(3rd_advent,sa) - +1d
-	2::xmas 9986,13412 10317,13248
+	2::xmas 9986,13412 10321,13259
 ',
          'from' => 1670540400,
          'id' => 2516,
@@ -3190,7 +3190,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        {
          'data' => '#: tempex: before(4th_advent,sa) - +1d
-	2::xmas 9986,13412 10317,13248
+	2::xmas 9986,13412 10321,13259
 ',
          'from' => 1671145200,
          'id' => 2517,
@@ -4511,7 +4511,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-11-29
+#: last_checked: 2022-12-08
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5156,10 +5156,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10632 (Erwähnung von Radfahrstreifen, allerdings nur geplant)
-#: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022) (bis 23.12.2022)
+#: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022) (bis 23.12.2022) (bis 9.12.2022, Ersatz existiert)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
+#: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022)
+#: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
 #: last_checked: 2022-12-07 vvv
 #: check_frequency: 30d vvv
@@ -5740,7 +5742,7 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
 #: osm_watch: way id="4531799" version="13"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-29 (daf)
+#: last_checked: 2022-12-07 (daf)
 #: check_frequency: 90d
 	q4::inwork; 4434,11227 4415,11050
 ',
@@ -6434,16 +6436,16 @@ Triftstr.	q3::inwork 7356,15350 7464,15409
          'until' => undef
        },
        {
-         'data' => '#: note: rbb-Meldung (verlängert)
+         'data' => '#: note: rbb-Meldung (verlängert) (nochmal verlängert)
 #: also_indoor: traffic (B,H)
 # REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
 	q4::inwork 6273,2609 6065,2443
 ',
          'from' => 1665772021,
          'id' => 3652,
-         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 08.12.2022 ',
+         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 20.01.2023',
          'type' => 'handicap',
-         'until' => 1670518800
+         'until' => 1674234000
        },
        undef,
        {
@@ -6928,9 +6930,17 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: next_check_id: SPREEPARK-2022
-#: add_fragezeichen: Haben die Bauarbeiten schon angefangen?
-#: next_check: 2022-12-06
-	2::inwork 15680,8914 15873,8884 15981,8872
+#: note: Zusätzlich in gesperrt-orig eingetragen
+#: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
+#: last_checked: 2022-12-08 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2023-06-30 vvv
+	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
+	2::inwork 16086,8860 16084,8833
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1670264861,
          'id' => 3699,

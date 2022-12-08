@@ -133,7 +133,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-11-02 (mapillary)
+#: last_checked: 2022-12-08
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -234,12 +234,12 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: last_checked: 2022-12-06 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-20 vvv
-Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
+Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
-# REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
-# REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, offizielle Umleitung über Gormannstr.	q4::inwork; 10350,13376 10324,13459
+# REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10341,13376
+# REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, offizielle Umleitung über Gormannstr.	q4::inwork; 10341,13376 10324,13459
 # REMOVED (hier nicht mehr) --- Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10263,13594 10302,13525 10324,13459
-# REMOVED (hier nicht mehr?) --- #: note: anscheinend nur noch in einer Richtung gesperrt? --- Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork; 10350,13376 10324,13459
+# REMOVED (hier nicht mehr?) --- #: note: anscheinend nur noch in einer Richtung gesperrt? --- Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork; 10341,13376 10324,13459
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Steinstr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q4::inwork 10302,13525 10318,13528
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
@@ -355,7 +355,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 # REMOVED (Passage wieder möglich) --- #: last_checked: 2016-04-19 --- Michaelkirchplatz: direkte Durchfahrt am Engeldamm gesperrt, Umweg erforderlich	q2::inwork 11542,11342 11473,11180
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # REMOVED (weitgehend fertig) --- #: next_check_id: MELCHIOR-2015 --- #: last_checked: 2016-10-14 --- #: check_frequency: 14d --- Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
-# REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
+# REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10341,13376 10199,13446
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # REMOVED --- #: XXX Baustraßenbelag wird zurzeit entfernt --- #: last_checked: 2016-09-21 --- #: check_frequency: 7d --- zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # REMOVED --- #: last_checked: 2016-03-31 --- #: check_frequency: 60d --- Alex-Wedding-Str.: temporäre Einbahnstraßenregelung	q4::inwork; 11085,13239 11146,13328
@@ -1468,7 +1468,7 @@ Spreepromenade am DomAquarée: Fußgänger, Cafés, Radfahren verboten	q4 10300,1258
 St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10344,12641 10352,12627
-# REMOVED --- #: XXX_prog: sollte BS werden (1x an der Gormannstr.) --- zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
+# REMOVED --- #: XXX_prog: sollte BS werden (1x an der Gormannstr.) --- zur Gormannstr.: Bordstein	q3 10341,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erwähnt
 #: note: früher "q2"
 Am Zeughaus: Fußgängerzone	q3 9919,12613 9953,12533 9984,12426
@@ -2615,7 +2615,7 @@ Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2
 #: XXX evtl. wird hier die Zufahrt für Radfahrer verbessert
 #: last_checked: 2022-12-06
 #: check_frequency: 14d
-Gormannstr.: Bordstein	q2 10350,13376 10353,13384
+Gormannstr.: Bordstein	q2 10341,13376 10358,13381
 # 
 #: note: Grünanlagenschild gilt nicht für diesen Weg vvv
 (Popitzweg - Halemweg): Fußgänger	q2 1884,14412 2126,14392 2254,14387

@@ -14,7 +14,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
-Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
+Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -1168,7 +1168,7 @@ Max-Pallenberg-Pfad: Bordstein	q2 15460,1764 15465,1953
 (Gertrud-Dorka-Weg - Lieselotte-Berger-Str.): Bordstein, schmal	q2 17796,-97 17777,-68
 Straße 618: schmale Straße	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
-Gormannstr.: Bordstein	q2 10350,13376 10353,13384
+Gormannstr.: Bordstein	q2 10341,13376 10358,13381
 (Popitzweg - Halemweg): Fußgänger	q2 1884,14412 2126,14392 2254,14387
 (Popitzweg - Halemweg): Fußgänger, Bordstein	q3 2254,14387 2371,14392
 (Haeftenzeile - Weg über der U-Bahn): Fußgänger	q1 2135,14475 2126,14392
@@ -3298,7 +3298,7 @@ Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 6419,5
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6387,5057 6395,5154
 Paul-Lincke-Ufer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12116,9825 11946,9913 11735,10022 11512,10105
 Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11500,9116 11509,9392
-Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10310,13227
+Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10313,13227
 Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13179,7613 13173,7567 13117,7471 13029,7353
 Björnsonstr: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
 Ibsenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10295,16667 10209,16674

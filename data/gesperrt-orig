@@ -1800,7 +1800,7 @@ Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
 Jahnstr.	1s:q4 11500,9116 11509,9392
 #: note: nur Einfahrt verboten, unechte Einbahnstraße
 Waldweg	1s 25496,2429 25116,2529
-Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
+Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10313,13227
 Kirchhofstr.	1s:q3 13179,7613 13173,7567 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -3482,6 +3482,18 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SPREEPARK-2022
+#: last_checked: 2022-12-08 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2023-06-30 vvv
+#: valid: -20230630 vvv
+Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
+Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: last_checked: 2022-12-04
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
@@ -3617,6 +3629,7 @@ Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 1333
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1266882.php
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1262919.php
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplan-xvii-9-1a.pdf (unklar, ob der Weg erhalten bleibt)
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/bebauungsplan-fuer-grundschule_a365015
 #: osm_watch: way id="1086484458" version="1"
 #: osm_watch: way id="36780316" version="10"
 #: last_checked: 2022-12-05
@@ -3625,7 +3638,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-27
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -3980,7 +3993,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-12-01
+#: last_checked: 2022-12-08
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4386,7 +4399,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 (Modernisierung des Stichwegs)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/eierhaeuschen-oeffnet-zur-kommenden-saison_a358490
 #: priority: #C
-#: last_checked: 2022-11-27
+#: last_checked: 2022-12-08
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
@@ -4637,7 +4650,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-11-18
+#: last_checked: 2022-12-04
 #: check_frequency: 90d
 #: next_check: 2023-06-23
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

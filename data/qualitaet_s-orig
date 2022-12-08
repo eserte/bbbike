@@ -363,7 +363,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="24"
-#: last_checked: 2022-12-04
+#: last_checked: 2022-12-08
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -1053,7 +1053,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-12-06
+#: last_checked: 2022-12-08
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1592,7 +1592,7 @@ Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,961
 Prager Platz: Verbundsteinpflasterradweg	Q1 5648,9642 5630,9656 5598,9654 5578,9629
 #: historical_note: früher teilweise Kopfsteinpflaster
 #: note: mit gepflasterten Parkstreifen, sowie Pflasterungen an/vor den Kreuzungen/Einmündungen
-Roedeliusplatz: Asphalt	Q0 16159,12293 16227,12281 16276,12273
+Roedeliusplatz: Asphalt	Q0 16166,12292 16227,12281 16276,12273
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17471,12243 17441,12247 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7122,9517 7002,9526
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
@@ -3116,7 +3116,7 @@ Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
 Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier der Asphalt wieder komplett hergestellt?
-#: last_checked: 2022-11-27
+#: last_checked: 2022-12-08
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1- 16201,8860 16358,8841 16388,8821
@@ -3366,7 +3366,7 @@ Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12592,12472 12632,12630
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 Griechische Allee: Asphalt	Q0 18119,6693 18076,6693 18025,6700 17962,6674 18029,6674 18079,6678 18159,6642 18273,6606 18429,6582 18494,6588
 Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,6679 18119,6693
-Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16159,12293
+Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16166,12292
 Straße 18: Beton/Asphalt	Q0 16429,13146 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
 Straße 77: Verbundsteinpflaster	Q1+ 15408,12394 15320,12375
@@ -7071,6 +7071,7 @@ Zeisgendorfer Weg: Verbundsteinpflaster	Q1 -1440,23163 -1557,23193 -1660,23225 -
 Osterwicker Steig: Verbundsteinpflaster	Q1 -1637,22949 -1557,23193
 Mattenbuder Pfad: neues Verbundsteinpflaster	Q1+ -1506,22923 -1637,22949 -1755,22975 -1870,22999 -1980,23033
 #: XXX wird die Fahrbahn neu gemacht? siehe Finanzplan Berlin 2019-2023, S. 273 im pdf
+#: osm_watch: way id="231263429" version="8"
 #: last_checked: 2022-06-12
 #: check_frequency: 180d
 Mattenbuder Pfad: Beton	Q1- -1980,23033 -2040,23061 -2113,23111 -2249,23230 -2306,23259
@@ -10582,6 +10583,7 @@ Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16
 (Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20389,16209 20372,16173
 Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512
 #: source_id: viz2021:13.54537,52.542117,17.10.2022,10:12 (Fahrbahninstandsetzung bis 9.12.2022)
+#: osm_watch: way id="8014720" version="31"
 #: XXX Nach der Instandsetzung bessere Qualität, vielleicht asphaltiert?
 #: next_check: 2022-12-09
 Marzahner Promenade: Beton	Q0- 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
@@ -12251,7 +12253,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier der Asphalt noch verbessert?
-#: last_checked: 2022-11-27
+#: last_checked: 2022-12-08
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): alter Asphalt	Q1 16084,8833 16086,8860
@@ -12629,7 +12631,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7207 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="24202434" version="24"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2022-11-27
+#: last_checked: 2022-12-08
 #: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
@@ -17566,7 +17568,7 @@ Charlottenstr.: Asphalt	Q0 5936,2977 6044,3110 6129,3203 6218,3302 6426,3425 652
 #: by: ^^^
 # 
 #: by: Sandra (sspp):
-Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12293
+Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16166,12292
 # 
 #: by: Sebastian Scheller: vvv
 #: corrected_by: srt (Q1 -> Q2+)
@@ -20987,7 +20989,7 @@ Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9519,1650
 # 
 #: by: Daniela (glasband):
 #: corrected_by: srt (Q3 -> Q2-, "schlechtes" entfernt -> Q2, neu gemacht?)
-Glaschkestr.: Kopfsteinpflaster	Q2 16159,12293 16144,12388 16147,12434
+Glaschkestr.: Kopfsteinpflaster	Q2 16166,12292 16144,12388 16147,12434
 # 
 #: by: Ulrich Siegmann:
 #: corrected_by: srt (Asphalt -> Beton)
@@ -31699,7 +31701,7 @@ Kreuzungsbereich asphaltiert	Q0 4682,6625
 Einmündungsbereich asphaltiert	Q0 16359,12207
 Kreuzungsbereich betoniert	Q1 16259,12419
 #: note: Kopfsteinpflasterstreifen am Roedeliusplatz
-Kreuzungsbereich asphaltiert	Q0 16159,12293
+Kreuzungsbereich asphaltiert	Q0 16166,12292
 Einmündungsbereich asphaltiert mit Kopfsteinpflasterstreifen	Q1+ 16227,12281
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3043,22407
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3046,22292
