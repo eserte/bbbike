@@ -21,12 +21,12 @@
 #: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-guertelstrasse-ist-gesperrt_a363620
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/12/BVG_PLUSNAVI_1222_barrierefrei.pdf (Straßenbahn fährt bis 11.12.2022 nicht)
-#: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., hier nur bis 2.12.2022) (bis 9.12.2022)
-#: note: laut rbb ist die Gürtelstr. ab 9.12.2022 mittags wieder offen
+#: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., hier nur bis 2.12.2022) (bis 9.12.2022) (inaktiv)
+#: note: laut rbb ist die Gürtelstr. ab 9.12.2022 mittags wieder offen; trotz schrittweiser Öffnung noch immer Staus in der Jessnerstr. (laut trafficmaps)
 #: also_indoor: traffic vvv
 #: last_checked: 2022-12-07 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-09 vvv
+#: next_check: 2022-12-10 vvv
 #: valid: -20221222 vvv
 #: note: Stau gesehen: 2022-11-08 (Di) gegen 14:25, 2022-12-01 (Do) gegen 14:00 (im Bereich Traveplatz wegen parkenden Lieferautos, auch Richtung Süden)
 #: note: keinen Stau gesehen: 2022-11-11 (Fr) gegen 13:00, 2022-11-14 (Mo) gegen 12:30, 2022-11-22 (Di) gegen 13:00, 2022-12-03 (Sa) gegen 14:00, 2022-12-07 (Mi) gegen 12:30
@@ -116,7 +116,9 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 #: source_id: 2147343056 (bis 30.06.2021) vvv
 #: source_id: viz2021:13.385078,52.515417,10.10.2018,13:25 (bis 27.2.2023) (inaktiv) vvv
 #: note: Die Einspurigkeit wurde aufgehoben, trotzdem gibt es weiterhin Stau/stockenden Verkehr. Vielleicht erst dann weniger, wenn die Französische Str. wieder offen ist?
-#: last_checked: 2022-10-14 vvv
+#: note: Stau Richtung Westen: am 2022-12-09 (Fr) gegen 17:00 etwa 100m vor der Ampel
+#: note: Stau Richtung Osten: am 2022-12-09 (Fr) gegen 17:00 kein Stau
+#: last_checked: 2022-12-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv

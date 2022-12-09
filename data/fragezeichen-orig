@@ -1501,8 +1501,8 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8903 (Antrag generell zur Fahrradinfrastruktur in Karlshorst-West)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9371 (Antrag zur Asphaltierung)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/asphaltierung-der-strasse-angeregt_a358655 (BVV-Beschluss)
-#: osm_watch: way id="51872061" version="39"
-#: osm_watch: way id="31525575" version="27"
+#: osm_watch: way id="51872061" version="40"
+#: osm_watch: way id="31525575" version="28"
 #: last_checked: 2022-12-05
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
@@ -1898,7 +1898,7 @@ Marienpark: Straﬂe geplant	?::projected 8181,3668 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (voraussichtlich IV. Quartal 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erw‰hnung)
-#: osm_watch: way id="110450333" version="15"
+#: osm_watch: way id="110450333" version="16"
 #: source_id: 2147343384
 #: last_checked: 2022-12-08
 #: check_frequency: 60d
@@ -2808,6 +2808,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://berliner-abendblatt.de/2022/11/29/bauarbeiten-in-der-hermannstrasse-wird-es-eng/
 #: source_id: 2147347020 (Fernw‰rmearbeiten bis 30.6.2021 --- hat das was mit der Radspur zu tun?)
 #: source_id: viz2021:13.425334,52.48011,30.11.2022,18:00 (Leitungsarbeiten zwischen Boddinstr. und Flughafenstr., bis 5.12.2022) (inaktiv) (wieder aktiv, bis 9.12.2022, evtl. auch bis 13.12.2022)
+#: source_id: viz2021:13.425391,52.479754,10.12.2022,07:00 (Leitungsarbeiten zwischen Mahlower Str. und Selchowe Str., bis 13.12.2022)
 # REMOVED (s¸dlicher Abschnitt) --- #: osm_watch: way id="860638046" version="9"
 # REMOVED (s¸dlicher Abschnitt) --- #: osm_watch: way id="544599538" version="16"
 # REMOVED (s¸dlicher Abschnitt) --- #: osm_watch: way id="860638027" version="10"
@@ -3795,7 +3796,8 @@ Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
-#: last_checked: 2022-11-19
+#: note: Richtung Osten bis etwa Universit‰tsstr. weitgehend markiert, meist separate Radspur, teilweise mit kombinierter Bushaltestelle, noch keine Schilder
+#: last_checked: 2022-12-09
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-09-30
 Unter den Linden: tempor‰re Umgestaltung, eine besondere Fahrspur f¸r Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
@@ -3994,7 +3996,7 @@ Ungarnstr.: Fahrradstraﬂe soll entstehen	?::projected 6843,16346 7056,16587 7106
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groﬂ-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (‹bergabe der Verkehrsfl‰chen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-Kˆnig-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2022-11-22 vvv
+#: last_checked: 2022-12-09 vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="13"
 #: osm_watch: way id="339201177" version="13"
@@ -4954,7 +4956,7 @@ Sewanstr. ˆstlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022)
 #: priority: #D
-#: last_checked: 2022-11-17 (mapillary)
+#: last_checked: 2022-12-07 (mapillary)
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
@@ -4962,7 +4964,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-09
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -6277,7 +6279,7 @@ Mauerweg: Untertunnelung der Dresdener Bahn	?::inwork 10460,-3199 10687,-3270
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile f¸r beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-09
 #: check_frequency: 90d
 Franzˆsische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -6462,7 +6464,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erw‰hnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-09
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -6700,7 +6702,7 @@ Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 2188
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10854 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
 #: XXX wird es ƒnderungen f¸r den Radverkehr geben?
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-09
 #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
 # 
@@ -7070,6 +7072,7 @@ Prinzregentenstr./Berliner Str.: Mittelstreifen wird verbreitert und f¸r den Kfz
 Wexstr.: gesch¸tzte Radverkehrsanlage wird erstellt	?::projected; 5357,8013 5472,8012 5522,8011 5570,8011 5631,8011
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,708604 (mindestens bis 11. Dezember 2022)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1222_barrierefrei.pdf (bis 14.1.2023?)
 #: XXX Wege wurden in BBBike angepasst, ggfs. kann man nach den Bauarbeiten wieder zur¸ck zum alten Punkt 11064,12910 verschieben.
 #: source_id: bvg2021:m4#BVG306493_0
 #: last_checked: 2022-12-06
@@ -8211,7 +8214,7 @@ Waldstr.: w‰hrend der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: XXX sowie die Privatstraﬂen:
 #: XXX * Am M¸hlanger (PLZ=12349)
 #: XXX * Knyphausenweg (PLZ=12349)
-#: osm_watch: way id="28319563" version="16"
+#: osm_watch: way id="28319563" version="17"
 #: osm_watch: way id="946008570" version="3"
 #: osm_watch: way id="946008571" version="5"
 #: osm_watch: way id="946008573" version="4"
@@ -8261,7 +8264,7 @@ Bebauungsplan 8-9bba (Mohriner Allee 111): mˆglicherweise entsteht hier eine neu
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_32_2133_2188_online.pdf (Straﬂenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_39_2621_2728_online.pdf (Berichtigung: Mohriner Allee 111 -> Waﬂmannsdorfer Chaussee 111)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Grundst¸cksnummerierungen)
-#: XXX Krabbentaucherweg fehlt bei Berlin.coords.data, PLZ laut DPAG-Mitteilungsblatt 12347
+#: XXX Krabbentaucherweg fehlt bei Berlin.coords.data, PLZ laut DPAG-Mitteilungsblatt 12355 (in erster Fassung 12347)
 #: XXX Qualit‰t: Verbundsteinpflaster; vermutlich Sackgasse
 #: last_checked: 2022-06-04
 #: check_frequency: 90d
@@ -8579,13 +8582,14 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/artikel.969933.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_36_2353_2408_online.pdf (Straﬂenbenennungen, mit Lageskizze)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10592 (Anfrage)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_50_3473_3552_online.pdf (Grundst¸cksnummerierungen)
 #: XXX bleiben die bestehenden Straﬂen w‰hrend der Bauzeit passierbar?
-#: XXX neue Straﬂen (fehlen alle in Berlin.coords.data):
-#: XXX Eva-Strittmatter-Str.
-#: XXX Elfriede-Br¸ning-Str.
-#: XXX Gut Hellersdorf
-#: XXX Sarah-Kirsch-Str.
-#: XXX Ingeborg-Feustel-Str. (Privatstraﬂe)
+#: XXX neue Straﬂen (fehlen alle in Berlin.coords.data) (PLZ aus DPAG-Mitteilungsblatt):
+#: XXX Eva-Strittmatter-Str. (PLZ 12629)
+#: XXX Elfriede-Br¸ning-Str. (PLZ 12629)
+#: XXX Gut Hellersdorf (PLZ 12629)
+#: XXX Sarah-Kirsch-Str. (PLZ 12629)
+#: XXX Ingeborg-Feustel-Str. (Privatstraﬂe) (PLZ 12629)
 #: check_frequency: 150d vvv
 #: next_check: 2023-12-31 vvv
 #: last_checked: 2022-08-09 (mapillary) vvv
@@ -8931,10 +8935,10 @@ Arnimstr.: hier soll eine Gr¸nfl‰che entstehen	?::projected 18472,16844 18267,17
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/mvX2BlAwOaXYYKr6aXb1ezWovW3xSItFQ4lIavXI/hrqvHtMs/81-Anlagen/01/DRS0167VB.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7186 (Antrag: Planstraﬂe nach Helga Hahnemann benennen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_44_2977_3032_online.pdf (Straﬂenbenennungen)
-#: XXX Planstraﬂen A bis C, auﬂerdem ein Uferweg mit Anschluss an die Spreestr., auﬂerdem scheint die Gr¸nanlage etwas vergrˆﬂert zu werden; neue Straﬂennamen fehlen in Berlin.coords.data
-#: XXX Planstraﬂe A -> Kupferkamp
-#: XXX Planstraﬂe B -> Am Werkstor
-#: XXX Planstraﬂe C -> Helga-Hahnemann-Str.
+#: XXX Planstraﬂen A bis C, auﬂerdem ein Uferweg mit Anschluss an die Spreestr., auﬂerdem scheint die Gr¸nanlage etwas vergrˆﬂert zu werden; neue Straﬂennamen fehlen in Berlin.coords.data, PLZ aus DPAG-Mitteilungsblatt
+#: XXX Planstraﬂe A -> Kupferkamp (PLZ: 12439)
+#: XXX Planstraﬂe B -> Am Werkstor (PLZ: 12439)
+#: XXX Planstraﬂe C -> Helga-Hahnemann-Str. (PLZ: 12439)
 #: last_checked: 2022-09-25 vvv
 #: check_frequency: 720d vvv
 #: next_check: 2025-03-15 vvv
@@ -8978,7 +8982,7 @@ Heinersdorf, Alte G‰rtnerei: neue Straﬂenverbindung, Verlegung des Durchgangverk
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1271691.php (Abriss- und Neubauarbeiten ab Januar 2023)
 #: by: https://berliner-abendblatt.de/2022/12/06/baustelle-nur-eine-fahrspur-auf-der-landsberger-allee/
 #: source_id: viz2021:13.537085,52.534461,28.11.2022,06:00 (Leitungsarbeiten bis 28.1.2023)
-#: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022)
+#: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022) (inaktiv)
 #: XXX ampelgesicherte Kreuzungen werden entstehen, direkt am Knoten sowie bei der Zufahrt Frank-Schweitzer-Str.
 #: next_check: 2023-01-28
 Knoten Marzahn: Neubau geplant	?::projected 19467,15045 19633,15098
@@ -10169,6 +10173,9 @@ Interessentenweg (Groﬂ Glienicke): Qualit‰t?	? -9670,7190 -9726,7239 -9798,7341
 #: XXX fehlt in Potsdam.coords.data
 Am Anger (Groﬂ Glienicke): Qualit‰t?	? -9668,6423 -9803,6453 -9839,6497 -9843,6554
 Waldweg (Groﬂ Glienicke): Qualit‰t?	? -10261,6466 -10127,6469
+#: by: https://gross-glienicke.de/historisches-dorfzentrum-neuer-oeffentlicher-platz-vor-der-kirche/
+#: XXX laut DPAG-Mitteilungsblatt PLZ=14476, fehlt in Potsdam.coords.data
+Wilhelm-Stintzing-Platz (Groﬂ Glienicke): neuer Platz, wo genau?	? -9593,6646 -9602,6680 -9620,6698
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
 #: XXX fr¸her "Schwarzer Weg" (vermutlich hier gelegen)
