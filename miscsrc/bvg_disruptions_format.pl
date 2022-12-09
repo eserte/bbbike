@@ -78,6 +78,7 @@ sub highlight_words {
 	       |   Feuerwehreinsatz(es)?
 	       |   Polizeieinsatz(es)?
 	       |   Demonstration
+	       |   mehreren[ ]Demonstrationen
 	       |   Kundgebung
 	       |   Veranstaltung
 	       |   Sportveranstaltung
