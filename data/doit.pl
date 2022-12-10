@@ -41,6 +41,7 @@ my @grepstrassen_valid = (@grepstrassen, '-valid', $valid_date, '-preserveglobal
 my @replacestrassen    = ($perl, "$miscsrcdir/replacestrassen");
 my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
 my @check_double       = ($perl, "$miscsrcdir/check_double");
+my @check_connected    = ($perl, "$miscsrcdir/check_connected");
 
 my @orig_files = bsd_glob("$datadir/*-orig");
 
@@ -212,6 +213,18 @@ sub action_check_handicap_directed {
 		   (map { ('-against', $_) } @against),
 		  );
 	$d->touch($dest);
+    }
+}
+
+sub action_check_connected {
+    my $d = shift;
+    for my $file (qw(ubahn sbahn rbahn)) {
+	my $dest = ".check_" . $file . "_connected";
+	my $src = "$file-orig"; # check against the -orig file, because this one has possible "ignore_disconnected" directives still in the file; in the final file these are stripped
+	if (_need_rebuild $dest, $src) {
+	    $d->system(@check_connected, $src);
+	    $d->touch($dest);
+	}
     }
 }
 
@@ -462,6 +475,7 @@ sub action_all {
     action_check_gesperrt_double($d);
     action_handicap_directed($d);
     action_check_handicap_directed($d);
+    action_check_connected($d);
     action_survey_today($d);
     action_fragezeichen_nextcheck_home_home_org($d);
 }
