@@ -1,0 +1,117 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
+
+use Getopt::Long;
+
+use Strassen::Core;
+use Strassen::Check;
+use Strassen::StrassenNetz;
+
+sub usage {
+    die "usage: $0 [--debug] bbdfile\n";
+}
+
+my $debug;
+sub debug {
+    return if !$debug;
+    warn "DEBUG: $_[0]\n";
+}
+
+GetOptions("debug" => \$debug)
+    or usage;
+my $f = shift
+    or usage;
+
+my $global_dir = Strassen->get_global_directives($f);
+my %ignore_disconnected = map { ($_,1) } @{ $global_dir->{ignore_disconnected} || [] };
+
+my $s = Strassen->new_stream($f);
+my %name2data;
+$s->read_stream
+    (sub {
+	 my($r) = @_;
+	 if ($r->[Strassen::CAT] =~ m{^R0($|:)}) { # XXX configurable? more?
+	     debug("ignore category $r->[Strassen::CAT]");
+	     return;
+	 }
+	 my @names = split /,/, $r->[Strassen::NAME];
+	 for my $name (@names) {
+	     if ($ignore_disconnected{$name}) {
+		 debug("ignore name '$name' (because of ignore_disconnected directive)");
+		 next;
+	     }
+	     push @{ $name2data{$name} }, Strassen::arr2line2([$name, $r->[Strassen::COORDS], $r->[Strassen::CAT]])."\n";
+	 }
+     });
+
+my $errors = 0;
+for my $name (sort keys %name2data) {
+    my $sub_s = Strassen->new_from_data(@{ $name2data{$name} });
+    my $net = StrassenNetz->new($sub_s);
+    $net->make_net;
+    my $islands = Strassen::Check::get_islands($net, debug => 0);
+    if (@$islands != 1) {
+	print STDERR "ERROR: Disconnected entry '$name'\n";
+	my $i = 0;
+	for my $island (sort { scalar(keys %$b) <=> scalar(keys %$a) } @$islands) {
+	    if ($i == 0 && $debug) {
+		print STDERR "       Largest \"continent\":\n";
+		print STDERR "       " . join(" ", sort keys %$island) . "\n";
+	    } else {
+		if ($i == 1) {
+		    print STDERR "       \"Islands\":\n";
+		}
+		print STDERR "       " . join(" ", sort keys %$island) . "\n";
+	    }
+	    $i++;
+	}
+	if ($debug) {
+	    print STDERR "       BBD output\n";
+	    print STDERR $sub_s->as_string;
+	}
+	print STDERR "=" x70, "\n";
+	$errors++;
+    }
+}
+
+if ($errors) {
+    warn "Found $errors error(s)\n";
+    exit 1;
+}
+
+=head1 NAME
+
+check_connected - make sure everything's connected
+
+=head1 SYNOPSIS
+
+    check_connected [--debug] bbdfile
+
+=head1 DESCRIPTION
+
+Make sure that same-named features in the given I<bbdfile> are
+connected. If there are features with multiple "islands", then these
+are printed, and the script exits with a non-zero exit code.
+
+It is expected that feature names are comma-separated lists such as
+C<RE1,RE2,RE3>.
+
+This check script is most useful for checking I<ubahn>, I<sbahn> and
+especially I<rbahn>.
+
+Exceptions can be marked using the global directive
+C<ignore_disconnected>, for example:
+
+    #: ignore_disconnected: RB24 Nord
+
+Multiple C<ignore_disconnected> directives are possible.
+
+=head1 SEE ALSO
+
+L<Strassen::Check>.
+
+=cut
