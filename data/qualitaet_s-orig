@@ -1053,7 +1053,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-12-08
+#: last_checked: 2022-12-10
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1824,7 +1824,7 @@ Fröbelstr.: guter Asphalt	Q0 11776,15060 11873,15010 11964,14962 12095,14888
 #: confirmed_by: srt
 Ella-Kay-Str.: guter Asphalt	Q0 12095,14888 12060,14827 12050,14808 11998,14709
 #: confirmed_by: srt
-Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12095,14888
+Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12195,15083 12095,14888
 #: by ^^^^^^^^^^^^^^^
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12371,14615 12224,14707 12213,14742 12183,14757 12060,14827
 Landecker Str.: Kopfsteinpflaster	Q2 3137,8538 2966,8586
@@ -12892,6 +12892,7 @@ Forum an der Museumsinsel: Kopfsteinpflaster	Q2 9650,13074 9682,13167 9633,13192
 (Tränkegraben - Volkradstr.): Asphalt	Q0 17249,10651 17298,10633 17329,10620 17363,10587 17422,10571
 (Tränkegraben - Volkradstr.): Verbundsteinpflaster	Q1+ 17422,10571 17503,10544
 Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Pfad	Q2+ 15796,14310 15791,14320 15699,14350
+(Diesterwegstr. - Ella-Kay-Str.): Asphalt	Q0 12056,15159 12195,15083
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15166,6 +15167,7 @@ Kleinaustr: glattes Pflaster	Q1- 1399,3055 1453,3085
 #: by: ^^^
 # 
 #: by: Daniel Siebert:
+#: confirmed_by: srt
 Matternstr.: mäßiges Kopfsteinpflaster	Q2 13788,13002 13579,12904
 #: by: Claudia Radtke:
 Elßholzstr.: mäßiges Kopfsteinpflaster	Q2 7202,9329 7209,9507 7216,9657 7223,9815
@@ -15843,7 +15845,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
-#: last_checked: 2022-10-11
+#: last_checked: 2022-12-10
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -28588,8 +28590,8 @@ Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,
 #: corrected_by: srt (was Kopfsteinpflaster, Q2)
 (Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12012,13599 12038,13685
 # REMOVED --- (Zufahrt Landsberger Allee): Gehwegplatten Q0 13445,13376 13419,13435
-#: corrected_by: srt (Q1 -> Q1+)
-Weisbachstr.: Asphalt	Q1+ 13548,13290 13598,13180
+#: corrected_by: srt (Q1 -> Q1+ -> Q0-)
+Weisbachstr.: Asphalt	Q0- 13548,13290 13598,13180
 #: note: allerdings kann man bordsteinlos auf den wenig frequentierten Gehweg ausweichen
 Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13702,13634 13711,13615 13769,13487 13811,13390 13825,13359 13869,13260 13924,13135 13943,13129
 #: confirmed_by: srt
@@ -31715,4 +31717,5 @@ Einmündungsbereich asphaltiert	Q0 13918,13438
 Einmündungsbereich mit Kopfsteinpflaster	Q2 4959,13347
 Einmündungsbereich asphaltiert	Q0 9603,16468
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 20137,13016
+Einmündungsbereich mit Kopfsteinpflaster	Q2 13598,13180
 #: ignore ^^^

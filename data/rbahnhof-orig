@@ -33,7 +33,10 @@ Jacobsdorf (Mark)	R 75478,-6977
 Pillgram	R 78352,-6456
 Frankfurt (O)-Rosengarten	R 83465,-6250
 Frankfurt (Oder)	R 88456,-6331
-# REMOVED (seit 2020-10-31 kein Regionalverkehr mehr) --- #: alias: Berlin-Schönefeld Flughafen --- #: alias: Flughafen Berlin-Schönefeld --- #: oldname: -20201025: Berlin-Schönefeld --- Flughafen BER - Terminal 5	RC 18055,-1466
+# REMOVED (alte Aliase nicht mehr gebraucht) --- #: alias: Berlin-Schönefeld Flughafen --- #: alias: Flughafen Berlin-Schönefeld
+#: note: zwischen 2020-10-31 und 2022-12-10 kein Regionalverkehr
+#: oldname: -20201025: Berlin-Schönefeld
+Flughafen BER - Terminal 5	RC 18055,-1466
 Berlin-Hohenschönhausen	RB 17607,18021
 Berlin-Karow	RB 14608,23364
 Bernau	RC 22841,30263
@@ -96,11 +99,11 @@ Golzow (b Eberswalde)	R 38220,57021
 Alt Hüttendorf	R 35208,61807
 Joachimsthal Kaiserbahnhof	R 33227,62510
 Joachimsthal	R 32819,64323
-Friedrichswalde (b Eberswalde)	R 29531,69814
-Ringenwalde (b Templin)	R 29767,72721
-Götschendorf	R 26811,76231
-Milmersdorf	R 24914,77407
-Templin-Ahrensdorf	R 20733,78780
+Friedrichswalde (b Eberswalde)	R0 29531,69814
+Ringenwalde (b Templin)	R0 29767,72721
+Götschendorf	R0 26811,76231
+Milmersdorf	R0 24914,77407
+Templin-Ahrensdorf	R0 20733,78780
 Paulinenaue	R -36880,29162
 Friesack (Mark)	R -45666,38482
 Neustadt (Dosse)	R -55182,48568

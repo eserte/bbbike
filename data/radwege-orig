@@ -1441,9 +1441,9 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="20"
-#: last_checked: 2022-11-30
+#: last_checked: 2022-12-10
 #: check_frequency: 120d
-#: next_check: 2022-12-31
+# REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
@@ -1455,9 +1455,9 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="35"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-11-30
+#: last_checked: 2022-12-10
 #: check_frequency: 120d
-#: next_check: 2022-12-31
+# REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
 	RW1; 13383,13349 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9111,10090 8790,10157
@@ -3356,12 +3356,20 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13300,17726 13245,17
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12955,17795 12908,17807 12856,17825
 	RW1; 12908,17807 12955,17795 13031,17775 13125,17758 13245,17737 13300,17726
 Radweg verendet im Sand	RW1; 13904,17325 14060,17221
-	RW1;RW1 14522,16260 14552,16171 14576,16069 14595,15980 14597,15970
-	RW2;RW1 14597,15970 14609,15921 14653,15738
-teilweise schlecht asphaltierter Radweg	RW1;RW2 14653,15738 14686,15608
-teilweise schlecht asphaltierter Radweg	RW1;RW1 14686,15608 14828,15050 14843,15007
-teilweise schlecht asphaltierter Radweg	RW1;RW2 14843,15007 14959,14752
-asphaltiert	RW2;RW2 14959,14752 15066,14579
+# 
+#: note: Indira-Gandhi-Str., Weißenseer Weg Richtung Süden
+	RW1; 14522,16260 14552,16171 14576,16069 14595,15980 14597,15970
+	RW2; 14597,15970 14609,15921 14653,15738
+#: note: bei den Bauarbeiten im November 2022 wurden einige der schlechtesten Stellen ausgebessert, aber der Gesamteindruck ist noch immer schlecht
+teilweise schlecht asphaltierter Radweg	RW1; 14653,15738 14686,15608 14828,15050 14843,15007 14959,14752
+asphaltiert	RW2; 14959,14752 15066,14579
+#: note: Weißenseer Weg, Indira-Gandhi-Str. Richtung Norden
+asphaltiert	RW2; 15066,14579 14959,14752
+teilweise schlecht asphaltierter Radweg	RW2; 14959,14752 14843,15007
+teilweise schlecht asphaltierter Radweg	RW1; 14843,15007 14828,15050 14686,15608
+teilweise schlecht asphaltierter Radweg	RW2; 14686,15608 14653,15738
+	RW1; 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260
+# 
 teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15588,14279 15850,14308
 neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412
 neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15588,14279 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14343,13882
@@ -7302,7 +7310,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-11-30
+#: last_checked: 2022-12-10
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7325,7 +7333,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022) (bis 30.10.2022) (inaktiv)
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2022-11-30 vvv
+#: last_checked: 2022-12-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-03-03 vvv
 #: osm_watch: way id="335479077" version="17"
