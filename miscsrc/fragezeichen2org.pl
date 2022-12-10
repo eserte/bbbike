@@ -343,8 +343,11 @@ for my $file (@files) {
 	     if ($dir->{also_indoor}) {
 		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
 		     if      ($also_indoor_dir =~ m{^traffic\b}) {
-			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))};
+			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))}; # $extra contains map specifiers
 			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic", $extra];
+			 if ($extra && $extra =~ /\bB\b/) { # not handled by mc.bbbike.org, so create an extra link (unfortunately it's not possible to automatically turn on traffic layer)
+			     push @extra_url_defs, ['Bing', sprintf('http://www.bing.com/maps/?cp=%s~%s&lvl=%s', $py, $px, 17)];
+			 }
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
 			 if ($search_term) {
