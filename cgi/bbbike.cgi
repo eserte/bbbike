@@ -3785,8 +3785,8 @@ sub search_coord {
 		    }
 		}
 		{
-		    my $strobj_3    = $strobj->grepstreets(sub { $_->[Strassen::CAT] eq '3' });
-		    my $strobj_non3 = $strobj->grepstreets(sub { $_->[Strassen::CAT] ne '3' });
+		    my $strobj_3    = $strobj->grepstreets(sub { $_->[Strassen::CAT] =~ /^3($|:)/ });
+		    my $strobj_non3 = $strobj->grepstreets(sub { $_->[Strassen::CAT] !~ /^3($|:)/ });
 		    my $tb_net = $tb->{net} = StrassenNetz->new($strobj_non3);
 		    $tb_net->make_net_cat(-onewayhack => 1);
 		    $tb_net->make_sperre($strobj_3, Type => ['wegfuehrung']);

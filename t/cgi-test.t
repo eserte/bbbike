@@ -79,8 +79,6 @@ $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 }
 
 {
-    local $TODO = "known bug";
-
     # cat=3 in bbbike-temp-blockings, but not affecting
     my $resp = bbbike_cgi_search +{
 				    startc => '18287,7815', # Hegemeisterweg (north)
