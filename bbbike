@@ -11413,7 +11413,7 @@ sub check_path_in_blockings_net {
 	    if (defined $pos) {
 		my $r = $current_temp_blockings_ms->get($pos);
 		my $cat = $r->[Strassen::CAT];
-		if ($cat ne '3') {
+		if ($cat !~ /^3($|:)/) {
 		    _add_to_temp_blockings_on_route($r);
 		    next PATH_SEGMENT;
 		}
