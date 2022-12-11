@@ -18,6 +18,7 @@ use warnings;
 use File::Temp;
 use LWP::UserAgent;
 use Text::Wrap;
+use Time::Piece;
 use XML::LibXML;
 
 binmode STDOUT, ':utf8';
@@ -40,6 +41,8 @@ if (!$resp->is_success) {
     die "Failed to fetch '$history_url': " . $resp->as_string . "\n";
 }
 
+my $today = localtime->strftime('%F');
+
 my $dom = XML::LibXML->load_xml(string => $resp->decoded_content);
 my @nodes = $dom->findnodes('/osm/*');
 for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
@@ -61,7 +64,27 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
     print "="x70,"\n";
     print "id $changeset_id\n";
     print "Author: $changeset_user\n";
-    print "Date:   $changeset_closed_at\n";
+
+    print "Date:   $changeset_closed_at";
+    if ($changeset_closed_at =~ /^(\d{4}-\d{2}-\d{2})/) {
+	my $isodate = $1;
+	if ($isodate eq $today) {
+	    print " (today)";
+	} else {
+	    my $date = Time::Piece->strptime($isodate, '%Y-%m-%d');
+	    if ($date) {
+		my $days = int((time - $date->epoch) / 86400);
+		if ($days < 365) {
+		    print " (about $days day" . ($days != 1 ? 's' : '') . " ago)";
+		} else {
+		    my $years = int($days/365);
+		    print " (about $years year" . ($years != 1 ? 's' : '') . " ago)";
+		}
+	    }
+	}
+    }
+    print "\n";
+	
     print "\n";
     print Text::Wrap::wrap("    ", "    ", $changeset_comment) . "\n\n";
 
