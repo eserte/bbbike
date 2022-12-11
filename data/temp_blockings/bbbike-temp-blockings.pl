@@ -28290,7 +28290,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-11-23
+#: last_checked: 2022-12-11
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28449,7 +28449,7 @@ EOF
        data  => <<EOF,
 # REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
 # REMOVED (fertig) --- #: last_checked: 2018-11-16 --- #: check_frequency: 7d
-	q4::inwork 12066,9558 12047,9429 12074,9217
+	q4::inwork 12066,9558 12054,9429 12074,9217
 EOF
      },
      { from  => undef, # 
@@ -30686,7 +30686,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-09
+#: last_checked: 2022-12-11
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -34734,7 +34734,7 @@ EOF
      },
      { from  => 1644076653, # 2022-02-05 16:57
        until => $isodate2epoch->("2022-12-21 17:00:00"), # 1666821600, # 2022-10-27 00:00
-       text  => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis 26.10.2022',
+       text  => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Dezember 2022',
        type  => 'handicap',
        source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
        data  => <<EOF,
@@ -36324,7 +36324,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-09
+#: last_checked: 2022-12-11
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36455,12 +36455,15 @@ EOF
        text  => 'Tauroggener Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=721317#post721317
+# REMOVED (alte URL) --- #: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=721317#post721317
+#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=721317#post721317
 #: by: https://bautagebuch.twentyseven-berlin.de/ (kein Inhalt, nur ein Login)
+#: by: https://fiducia-gruppe.de/investment/ (Fertigstellung: Sommer 2024)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: also_indoor: traffic (none)
 #: last_checked: 2022-09-17
 #: check_frequency: 90d
+#: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
 EOF
      },
@@ -36647,7 +36650,7 @@ EOF
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:142#BVG311081_0
-#: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
+#: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen)
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
@@ -36827,7 +36830,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-12-10
+#: last_checked: 2022-12-11
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969

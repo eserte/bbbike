@@ -278,9 +278,7 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 # REMOVED (vorfristig beendet) --- #: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00 (bis 9.12.2022) --- #: XXX Wie lange bleibt die Radspur hier erhalten? --- #: last_checked: 2022-10-15 --- #: check_frequency: 45d --- #: next_check: 2022-12-09 --- #provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
 der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
-# REMOVED (nein) --- #: source_id: viz2021:13.428978,52.499277,26.08.2022,07:00 (bis 11.10.2022) --- #: XXX bleibt es bei der Radspur? --- #: last_checked: 2022-10-08 --- #: next_check: 2022-10-11 --- geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440 --- provisorische Radspur	RW3; 11949,10414 12092,10428 12212,10440
-#: last_checked: 2022-11-26
-#: next_check: 2022-12-09
+# REMOVED (nein) --- #: source_id: viz2021:13.428978,52.499277,26.08.2022,07:00 (bis 11.10.2022) --- #: XXX bleibt es bei der Radspur? --- #: last_checked: 2022-10-08 --- #: next_check: 2022-10-11 --- geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440 --- provisorische Radspur	RW3; 11949,10414 12092,10428 12212,10440 --- #: last_checked: 2022-11-26 --- #: next_check: 2022-12-09
 	RW1; 11949,10414 12092,10428 12212,10440
 	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
@@ -307,22 +305,17 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 3m breit, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 13206,10651 13305,10789 13332,10832
 # 
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
-#: next_check_id: STRALAUER-2019
-#: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-12-04 (Ausschilderung fehlt noch) vvv
-#: check_frequency: 14d vvv
-# REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
-	RW1; 13596,10722 13633,10705
-	RW3; 13633,10705 13678,10685 13779,10642 13850,10612
-	RW1; 13850,10612 13919,10583
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (neues Schild) --- #: next_check_id: STRALAUER-2019 --- #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt --- #: last_checked: 2022-12-04 (Ausschilderung fehlt noch) vvv --- #: check_frequency: 14d vvv --- # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
+asphaltiert	RW2; 13596,10722 13633,10705
+	RW4; 13633,10705 13678,10685 13779,10642 13850,10612
+asphaltiert	RW2; 13850,10612 13919,10583
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-12-08
+#: last_checked: 2022-12-11
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -486,7 +479,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2022-12-09 vvv
+#: last_checked: 2022-12-11 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -506,7 +499,9 @@ mäßiger Verbundsteinpflasterradweg	RW1; 10839,10907 10794,10927
 #: XXX ^^^
 # 
 altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
-altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
+altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682
+Poller	RW3;RW3 10776,10682 10837,10815
+altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10837,10815 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256
 	RW2;RW1 10580,10256 10605,10312
 altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9807 10361,9755

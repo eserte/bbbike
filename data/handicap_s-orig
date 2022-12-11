@@ -204,7 +204,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-11
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
@@ -393,8 +393,8 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-12-09 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2022-12-11 vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="12"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -584,7 +584,7 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
 #: osm_watch: way id="30195541" version="28"
-#: last_checked: 2022-11-27 (mapillary)
+#: last_checked: 2022-12-10 (bahninfo-forum)
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
 #: note: zurzeit wird man Richtung Westen auf die südliche Fahrbahn geleitet
