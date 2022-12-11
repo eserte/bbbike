@@ -52,7 +52,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 168 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 174 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -66,6 +66,30 @@ my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
 $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
+
+{
+    # cat=3 in bbbike-temp-blockings, affecting
+    my $resp = bbbike_cgi_search +{
+				    startc => '18165,7371', # Treskowallee (south)
+				    zielc  => '18287,7815', # Hegemeisterweg (north)
+				  }, 'route with affecting temp blocking';
+    my $content = $resp->decoded_content;
+    like_html $content, qr{Ereignisse, die die Route betreffen k.*nnen}, 'found temp blocking';
+    like_html $content, qr{Hegemeisterweg/Treskowallee}, 'correct temp blocking found';
+}
+
+{
+    local $TODO = "known bug";
+
+    # cat=3 in bbbike-temp-blockings, but not affecting
+    my $resp = bbbike_cgi_search +{
+				    startc => '18287,7815', # Hegemeisterweg (north)
+				    zielc  => '18165,7371', # Treskowallee (south)
+				  }, 'route without affecting temp blocking';
+    my $content = $resp->decoded_content;
+    unlike_html $content, qr{Ereignisse, die die Route betreffen k.*nnen}, 'temp blocking not found';
+    unlike_html $content, qr{Hegemeisterweg/Treskowallee}, 'temp blocking not found';
+}
 
 SKIP: {
     skip "Need IPC::Run for this test", $ipc_run_tests
