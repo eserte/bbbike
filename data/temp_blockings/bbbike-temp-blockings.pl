@@ -26334,6 +26334,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
 #: priority: #A
 #: next_check: 2022-12-14
 	2::temp -2218,5133 -927,6888
@@ -34539,9 +34540,10 @@ EOF
        text  => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Abschnitt der Fahrbahn kann gesperrt sein (Stand Mitte November 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (ex-B)
+#: also_indoor: traffic (B,G)
 #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
+#: XXX evtl. mittlerweile bis fast Britzer Damm ausgeweitet?
 #: last_checked: 2022-11-13
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-14
@@ -36664,7 +36666,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-12-07 (mapillary) vvv
+#: last_checked: 2022-12-12 (bahninfo-forum) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471

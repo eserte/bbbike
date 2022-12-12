@@ -485,11 +485,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: check_frequency: 90d
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
 # 
-#: source_id: viz2021:13.52358,52.480928,28.11.2022,06:30 (bis 09.12.2022, hier nur Kfz-Verkehr) (bis 12.12.2022)
-#: last_checked: 2022-12-05
-#: next_check: 2022-12-12
-#: valid: -20221212
-Wandlitzstr.: Fahrbahn zwischen Wildensteiner Str. und Heiligenberger Str. gesperrt	q4::inwork 18627,8475 18557,8525
+# REMOVED --- #: source_id: viz2021:13.52358,52.480928,28.11.2022,06:30 (bis 09.12.2022, hier nur Kfz-Verkehr) (bis 12.12.2022) --- #: last_checked: 2022-12-05 --- #: next_check: 2022-12-12 --- #: valid: -20221212 --- Wandlitzstr.: Fahrbahn zwischen Wildensteiner Str. und Heiligenberger Str. gesperrt	q4::inwork 18627,8475 18557,8525
 # 
 # REMOVED (wohl nicht mehr) --- #: next_check_id: WANDLITZ-2021 --- #: last_checked: 2022-10-16 vvv --- Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q2::inwork 18627,8475 18557,8525 --- Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q3::inwork 18557,8525 18494,8569 --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468

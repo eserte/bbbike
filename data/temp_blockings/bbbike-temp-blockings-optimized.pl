@@ -2369,30 +2369,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
-#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
-	2::xmas 22111,4562 22162,4546 22214,4548
-',
-         'from' => 1670504400,
-         'id' => 2003,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              12,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 09.12.2022 bis zum 11.12.2022',
-         'type' => 'gesperrt',
-         'until' => 1670799599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3165,29 +3142,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(3rd_advent,sa) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1670540400,
-         'id' => 2516,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (10.12.2022 - 11.12.2022)',
-         'type' => 'gesperrt',
-         'until' => 1670799599
-       },
+       undef,
        {
          'data' => '#: tempex: before(4th_advent,sa) - +1d
 	2::xmas 9986,13412 10321,13259
@@ -3766,6 +3721,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
 #: priority: #A
 #: next_check: 2022-12-14
 	2::temp -2218,5133 -927,6888
@@ -5228,9 +5184,10 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
          'until' => 1672527600
        },
        {
-         'data' => '#: also_indoor: traffic (ex-B)
+         'data' => '#: also_indoor: traffic (B,G)
 #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
+#: XXX evtl. mittlerweile bis fast Britzer Damm ausgeweitet?
 #: last_checked: 2022-11-13
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-14
@@ -6285,7 +6242,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-12-07 (mapillary) vvv
+#: last_checked: 2022-12-12 (bahninfo-forum) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471

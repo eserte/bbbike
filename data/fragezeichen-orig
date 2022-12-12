@@ -76,7 +76,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-12-11
+#: last_checked: 2022-12-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -8611,11 +8611,17 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 #: check_frequency: 150d vvv
 #: next_check: 2023-12-31 vvv
 #: last_checked: 2022-08-09 (mapillary) vvv
+#: osm_watch: way id="198375762" version="6"
 Bebauungsplan 10-45: Stadtplatz geplant (geplanter Straﬂenname Gut Hellersdorf)	?::projected 23265,15054 23283,15061 23339,15079 23348,15042 23432,15065
+#: osm_watch: way id="1098688706" version="2"
 Bebauungsplan 10-45: Planstraﬂe C geplant (geplanter Straﬂenname Sarah-Kirsch-Str.)	?::projected 23432,15065 23566,15077 23692,15088
+#: osm_watch: way id="1098688708" version="2"
 Bebauungsplan 10-45: Rad/Gehweg geplant (geplanter Straﬂenname Elfriede-Br¸ning-Str.)	?::projected 23432,15065 23404,15223 23399,15252
+#: osm_watch: way id="1098688709" version="2"
 Bebauungsplan 10-45: verkehrsberuhigter Bereich geplant (geplanter Straﬂenname Eva-Strittmatter-Str.)	?::projected 23404,15223 23538,15247
+#: osm_watch: way id="1121018163" version="1"
 Bebauungsplan 10-45: Rad/Gehweg geplant (hier vielleicht auch Eva-Strittmatter-Str.?)	?::projected 23538,15247 23663,15270
+#: osm_watch: way id="1121018164" version="1"
 Bebauungsplan 10-45: Privatstraﬂe geplant (geplanter Straﬂenname Ingeborg-Feustel-Str.)	?::projected 23538,15247 23566,15077
 #: last_checked ^^^
 #: last_checked: 2022-10-05
@@ -9177,6 +9183,7 @@ Regionalbahnhof Kˆpenick	?::projected 22530,6100
 #: by: https://www.stadtentwicklung.berlin.de/planen/fnp/pix/buergerbeteiligung/download/0222/0222.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8486 (Mitteilung zur Kenntnisnahme)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1272234.php (zur FNP-ƒnderung)
+#: by: https://www.berliner-woche.de/tempelhof/c-bauen/flaechennutzungsplan-fuer-bereich-an-der-roeblingstrasse-geaendert_a366566
 #: XXX ¸berwiegend Fuﬂ- und Radwege sowie verkehrsberuhigte Bereiche geplant
 #: last_checked: 2022-10-15
 #: next_check: 2024-05-01
@@ -10195,9 +10202,6 @@ Interessentenweg (Groﬂ Glienicke): Qualit‰t?	? -9670,7190 -9726,7239 -9798,7341
 #: XXX fehlt in Potsdam.coords.data
 Am Anger (Groﬂ Glienicke): Qualit‰t?	? -9668,6423 -9803,6453 -9839,6497 -9843,6554
 Waldweg (Groﬂ Glienicke): Qualit‰t?	? -10261,6466 -10127,6469
-#: by: https://gross-glienicke.de/historisches-dorfzentrum-neuer-oeffentlicher-platz-vor-der-kirche/
-#: XXX laut DPAG-Mitteilungsblatt PLZ=14476, fehlt in Potsdam.coords.data
-Wilhelm-Stintzing-Platz (Groﬂ Glienicke): neuer Platz, wo genau?	? -9593,6646 -9602,6680 -9620,6698
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
 #: XXX fr¸her "Schwarzer Weg" (vermutlich hier gelegen)
