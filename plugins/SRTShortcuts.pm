@@ -3685,8 +3685,11 @@ sub todays_gps_tracks {
 
     my @files;
     my $current_gpx = "$ENV{HOME}/trash/Current.gpx";
-    if (-e $current_gpx && -M $current_gpx < 1) {
-	push @files, $current_gpx;
+    if (-e $current_gpx) {
+	my $age_in_days = (time - (stat($current_gpx))[9]) / 86400;
+	if ($age_in_days  < 1) {
+	    push @files, $current_gpx;
+	}
     }
     push @files, glob("$gpsdatadir/$yyyy$mm$dd.{trk,wpt}");
     push @files, glob("$gpsdatadir/*/$yyyy$mm$dd.{trk,wpt}");
