@@ -11718,15 +11718,16 @@ Pepitapromenade	NN -2856,17489 -2873,17369 -2878,17324
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf (Widerspruch wurde zurückgenommen)
 #: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung sollte ursprünglich zum 15. November 2021 wirksam werden
-#: XXX bei osm bereits geändert
+#: XXX bei osm bereits geändert, dann wieder reverted, im Dezember 2022 nochmals geändert
 # REMOVED --- #: also_indoor: search Erna-Koschwitz-Weg
 #: add_fragezeichen: Hängen bereits neue Straßenschilder für den "Erna-Koschwitz-Weg"?
 #: osm_watch: way id="130775086" version="15"
-#: osm_watch: way id="22981785" version="46"
+#: osm_watch: way id="22981785" version="47"
 #: last_checked: 2022-10-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-11-15
-Elkartweg	N -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
+#: oldname: -202212: Elkartweg
+Erna-Koschwitz-Weg	N -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
 Mittenwalder Weg	N -2091,17603 -2089,17573 -2255,17563
 (Mittenwalder Weg - Garmischer Weg)	NN -2255,17563 -2252,17515
 Garmischer Weg	N -2026,17592 -1978,17531
@@ -15250,7 +15251,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-12-05
+#: last_checked: 2022-12-13
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15637,7 +15638,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-12-05
+#: last_checked: 2022-12-13
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

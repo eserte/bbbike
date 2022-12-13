@@ -276,9 +276,10 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-12-05
-#: check_frequency: 45d
-#: next_check: 2022-12-16
+#: last_checked: 2022-12-13
+#: check_frequency: 7d
+# REMOVED --- #: check_frequency: 45d
+# REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
 #: confirmed_by: Sabine Plagens & srt vvv
@@ -2273,15 +2274,12 @@ Paul-Löbe-Allee: Asphalt	Q0 7851,12590 7945,12592 8122,12603
 Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13650,8320 13575,8378 13469,8462
 Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 # 
-#: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2022-11-19 vvv
-#: check_frequency: 90d vvv
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
+#: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
+#: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
+#: last_checked: 2022-11-19
+#: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876 11380,11863 11507,11860
-#: check_frequency ^^^
-#: last_checked ^^^
-#: by ^^^
-#: XXX ^^^
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/8011-metropol-park-ehem-zentralverwaltung-der-aok/?postID=676345#post676345 (zur Hälfte asphaltiert) vvv
 #: confirmed_by: srt vvv
@@ -3709,8 +3707,10 @@ Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,1446
 #: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/
 #: by: https://www.youtube.com/watch?v=B50vFn-hZOg
 #: by: https://www.berliner-woche.de/spandau/c-bauen/wenn-ein-platz-schon-reformationsplatz-heisst_a345908 (Erwähnung der Umbauarbeiten am "Marktplatz")
+#: by: https://www.berliner-woche.de/spandau/c-bauen/neugestaltung-des-marktplatzes-in-der-spandauer-altstadt-erneut-verschoben_a366173 (Baustart nach 2023)
 #: last_checked: 2022-04-23
-#: check_frequency: 240d
+# REMOVED --- #: check_frequency: 240d
+#: next_check: 2024-03-01
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 #: by: mapillary
 Moritzstr.: kleinteiliges Kopfsteinpflaster	Q1 -3350,14446 -3275,14407
