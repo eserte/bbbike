@@ -3512,10 +3512,10 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gendarmenmarkt
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
-#: last_checked: 2022-11-27 (mapillary) vvv
+#: last_checked: 2022-12-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
-#: note: nur Durchgang zum Konzerthaus möglich vvv
+#: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: note ^^^
@@ -3705,7 +3705,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-12-11
+#: last_checked: 2022-12-14
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3718,7 +3718,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
-#: last_checked: 2022-12-11
+#: last_checked: 2022-12-14
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -3908,7 +3908,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-12-04 (daf) vvv
+#: last_checked: 2022-12-13 (bahninfo-forum) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
@@ -4058,9 +4058,11 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-27 (mapillary)
-#: check_frequency: 60d
-Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
+#: last_checked: 2022-12-13 (mapillary)
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
+#: check_frequency: 14d
+Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
@@ -4089,7 +4091,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-12-09
+#: last_checked: 2022-12-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
@@ -4154,7 +4156,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2022-12-09
+#: last_checked: 2022-12-14
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 

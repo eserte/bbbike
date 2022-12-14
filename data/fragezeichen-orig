@@ -75,6 +75,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022)
+#: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
 #: last_checked: 2022-12-12
 #: check_frequency: 90d
@@ -217,7 +218,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf ("noch nicht terminiert")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf (nur noch als "Projektidee")
-#: last_checked: 2022-11-19
+#: last_checked: 2022-12-14
 #: check_frequency: 180d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -2605,6 +2606,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8720 (Markierung wurde erneuert --- vom Zebrastreifen oder was anderes?)
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/verkehrsclub-vcd-stellt-vorschlaege-zur-verkehrsberuhigung-der-heinsestrasse-vor_a362777
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1274611.php (Machbarkeitsstudie Heinsestraße)
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/passantenbefragung-in-der-heinsestrasse_a366746
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
 #: osm_watch: way id="665666065" version="11"
@@ -2811,7 +2813,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://berliner-abendblatt.de/2022/11/29/bauarbeiten-in-der-hermannstrasse-wird-es-eng/
 #: source_id: 2147347020 (Fernwärmearbeiten bis 30.6.2021 --- hat das was mit der Radspur zu tun?)
 #: source_id: viz2021:13.425334,52.48011,30.11.2022,18:00 (Leitungsarbeiten zwischen Boddinstr. und Flughafenstr., bis 5.12.2022) (inaktiv) (wieder aktiv, bis 9.12.2022, evtl. auch bis 13.12.2022) (inaktiv)
-#: source_id: viz2021:13.425391,52.479754,10.12.2022,07:00 (Leitungsarbeiten zwischen Mahlower Str. und Selchower Str., bis 13.12.2022) (bis 14.12.2022)
+#: source_id: viz2021:13.425391,52.479754,10.12.2022,07:00 (Leitungsarbeiten zwischen Mahlower Str. und Selchower Str., bis 13.12.2022) (bis 14.12.2022) (inaktiv)
 #: source_id: viz2021:13.425668,52.479251,10.12.2022,07:00 (inaktiv)
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="860638046" version="9"
 # REMOVED (südlicher Abschnitt) --- #: osm_watch: way id="544599538" version="16"
@@ -4982,7 +4984,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2022-12-09
+#: last_checked: 2022-12-14
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -5443,7 +5445,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/bauarbeiten-auf-dem-geh-und-dem-radweg_a362891
 #: by: https://www.infravelo.de/projekt/c146500e4f50d17a4916c3e38cf376c4/ (4. Quartal 2022 - 4. Quartal 2022)
 #: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022) (bis 16.11.2022) (inaktiv)
-#: source_id: viz2021:13.470029,52.540596,16.11.2022,09:00 (bis 14.12.2022)
+#: source_id: viz2021:13.470029,52.540596,16.11.2022,09:00 (bis 14.12.2022) (inaktiv)
 #: source_id: viz2021:13.466459,52.550159,25.11.2022,09:00 (bis 28.03.2023, Arbeiten an Wasserleitungen zwischen Bizetstr. und Meyerbeerstr.)
 #: last_checked: 2022-12-10
 # REMOVED --- #: check_frequency: 60d
@@ -6725,8 +6727,9 @@ Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 2188
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10854 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
 #: XXX wird es Änderungen für den Radverkehr geben?
-#: last_checked: 2022-12-09
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-14
+#: check_frequency: 180d
+# REMOVED (keine Anzeichen für Bauarbeiten) --- #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
 # 
 # REMOVED (Asphaltierung realisiert) --- #: next_check_id: ROEDELIUSPLATZ-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1120771.php (1. September 2021 - Mitte 2023) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bauarbeiten-rund-um-den-roedeliusplatz-dauern-bis-mitte-2023_a328430 --- #: XXX Bauarbeiten in Gange, Fahrbahn komplett gesperrt --- #: last_checked: 2022-09-22 (osm note) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- Roedeliusplatz: Asphaltierung	?::inwork 16159,12293 16227,12280 16276,12273
@@ -8101,6 +8104,7 @@ Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,47
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2019final.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/riesen-wohngebiet-in-potsdam-in-planung-li.99156 (Baubeginn 2021, erste Wohnungen 2024 fertig, komplett bis 2038 fertig)
 #: by: https://tram96.de/aktuelles/aktuelle-informationen (Straßenbahnverlängerung: Bauphase ab 2025)
+#: by: https://www.krampnitz.de/
 #: XXX Bebauungsplan Nr. 141-1
 #: osm_watch: way id="34036043" version="25"
 #: osm_watch: way id="126600479" version="10"
@@ -8718,6 +8722,7 @@ Weiterführung der Peter-Huchel-Str.: Qualität?	? -13257,1337 -13272,1304 -13424,
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/berlin-feiert-richtfest-fuer-das-neue-wohnviertel-am-saatwinkler-damm_a340583
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_43_2917_2976_online.pdf (Straßenbenennungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_44_2977_3032_online.pdf (Berichtigung, nur der Buchstabe in der Aufzählung war falsch)
+#: by: https://www.buwog.de/wohnbauprojekte/berlin-halske-sonnengaerten (neuer Name des Projekts?) (geplante Fertigstellung des ersten Bauabschnitts 2023)
 #: osm_watch: way id="125758273" version="12"
 # REMOVED (realisiert) --- wird hier die Kleingartenanlage aufgehoben?
 #: XXX Bebauungsplan 5-107 in Spandau

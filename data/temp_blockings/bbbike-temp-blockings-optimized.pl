@@ -3926,18 +3926,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://aera.berlin/
-#: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
+# REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
-#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei)
+#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023)
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
-#: next_check: 2023-01-31
+#: next_check: 2023-03-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
 	q3::inwork 3828,12697 3981,12709 4071,12720 4124,12721
 ',
          'from' => 1644676199,
          'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, voraussichtlich bis Ende Januar 2023',
+         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, voraussichtlich bis Ende März 2023',
          'type' => 'handicap',
          'until' => 1675180800
        },
@@ -4393,7 +4393,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-11
+#: last_checked: 2022-12-14
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -5820,16 +5820,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1726351200
        },
        undef,
-       {
-         'data' => '	2::inwork 23910,-54100 23623,-54115
-',
-         'from' => 1659243600,
-         'id' => 3593,
-         'source_id' => '226101195',
-         'text' => 'Drahnsdorf: Sanierungsarbeiten an der Brücke Vordermühle, evtl. auch für Radfahrer gesperrt, 01.08.2022 07:00 Uhr bis 31.12.2022 15:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1672495200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
@@ -6011,7 +6002,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-11
+#: last_checked: 2022-12-14
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6229,7 +6220,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED --- #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023)
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
@@ -6507,13 +6498,13 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: by: https://viz.berlin.de/2022/08/oberschoeneweide-gleisarbeiten/ (Radverkehr kann in der Edisonstraße passieren)
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
 #: by: https://nitter.net/StefanB94551270/status/1595076736168992768
-#: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022)
+#: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
 #: last_checked: 2022-12-13 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-12-20 vvv
+#: next_check: 2023-01-04 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
 #	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
 Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
@@ -6838,6 +6829,8 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'data' => '#: next_check_id: HINDENBURGDAMM-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1599696176164458496#m (erst ab 15.12.2022)
 #: by: https://nitter.net/pic/orig/media%2FFi-jSc_XoAA7nGg.jpg
+#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
+#: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
 	1::inwork 4515,4760 4517,4853
 ',
          'from' => 1670972400,
