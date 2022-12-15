@@ -315,8 +315,9 @@ asphaltiert	RW2; 13850,10612 13919,10583
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-12-12
-#: next_check: 2022-12-16
+#: last_checked: 2022-12-15
+#: check_frequency: 14d
+#: next_check: 2022-12-27
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
@@ -1151,7 +1152,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-12-08 vvv
+#: last_checked: 2022-12-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1833,7 +1834,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
-#: osm_watch: way id="82654055" version="13"
+#: osm_watch: way id="82654055" version="14"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: check_frequency: 60d vvv
@@ -1952,18 +1953,8 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 # 
-#: next_check_id: KIEFHOLZ-2015
-#: XXX wann wird die alte Radspur wieder hergestellt?
-#: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig)
-#: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/mathilde-rathenau-bruecke-ueber-die-a-100-uebergeben_a202954
-#: by: https://www.bahninfo-forum.de/read.php?9,442687,750179#msg-750179 (Rückverschwenkung der S-Bahn)
-#: source_id: 2147342958
-#: source_id: viz2021:13.458778,52.485562,28.11.2022,06:00 (bis 16.12.2022) (inaktiv)
-#: also_indoor: traffic (H[unvollständig],G,B)
-#: last_checked: 2022-12-08
-#: check_frequency: 60d
-#: next_check: 2022-12-16
-ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
+# REMOVED --- #: next_check_id: KIEFHOLZ-2015 --- #: XXX wann wird die alte Radspur wieder hergestellt? --- #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/mathilde-rathenau-bruecke-ueber-die-a-100-uebergeben_a202954 --- #: by: https://www.bahninfo-forum.de/read.php?9,442687,750179#msg-750179 (Rückverschwenkung der S-Bahn) --- #: source_id: 2147342958 --- #: source_id: viz2021:13.458778,52.485562,28.11.2022,06:00 (bis 16.12.2022) (inaktiv) -- #: also_indoor: traffic (H[unvollständig],G,B) --- #: last_checked: 2022-12-08 --- #: check_frequency: 60d --- #: next_check: 2022-12-16 --- ab der provisorischen Brücke als Gehwegradweg geführt
+	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
 	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 14976,8053 15053,7966
 	RW4;RW3 15053,7966 15221,7778
@@ -2652,7 +2643,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-12-08 vvv
+#: last_checked: 2022-12-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5769,8 +5760,8 @@ Gehwegplatten	RW1; 620,12144 610,12100
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
-#: osm_watch: way id="153370345" version="14"
-#: osm_watch: way id="153373877" version="18"
+#: osm_watch: way id="153370345" version="15"
+#: osm_watch: way id="153373877" version="19"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -5782,8 +5773,8 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="29"
-#: osm_watch: way id="153373879" version="17"
+#: osm_watch: way id="153370344" version="30"
+#: osm_watch: way id="153373879" version="18"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -7581,8 +7572,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="25"
-#: osm_watch: way id="335487059" version="24"
+#: osm_watch: way id="169738742" version="26"
+#: osm_watch: way id="335487059" version="25"
 #: last_checked: 2022-11-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
@@ -7802,10 +7793,10 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: osm_watch: way id="111048866" version="14"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
-#: osm_watch: way id="28680188" version="20"
+#: osm_watch: way id="28680188" version="22"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
-#: osm_watch: way id="30958674" version="20"
+#: osm_watch: way id="30958674" version="21"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
 #: osm_watch: way id="4526218" version="23"
 #: note: keine Benutzungspflicht

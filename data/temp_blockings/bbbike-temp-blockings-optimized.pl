@@ -5317,12 +5317,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-11-26 (osm) vvv
+#: last_checked: 2022-12-15 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="31"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="14"
+#: osm_watch: way id="505363417" version="15"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5404,16 +5404,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und f‰lschlicherweise nur f¸r Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022)
-#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022)
+         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und f‰lschlicherweise nur f¸r Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022) (inaktiv)
+#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022) (inaktiv)
 #: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39 (inaktiv)
-#: note: laut rbb nur bis 20.4.2022
+#: note: auch beim rbb mittlerweile (15.12.2022) vorfristig inaktiv
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
 #: last_checked: 2022-11-19 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-12-21 vvv
+#: next_check: 2022-12-16 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
@@ -5434,14 +5434,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straﬂe und Zeitzer Straﬂe beendet? Wann wird die Einbahnstraﬂenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-12-04 vvv
+#: last_checked: 2022-12-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G[unvollst‰ndig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="423009430" version="17" ---	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
-#: osm_watch: way id="173067346" version="23"
+#: osm_watch: way id="173067346" version="24"
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^
 # REMOVED --- #: next_check ^^^
@@ -5523,7 +5523,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
 #: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbez¸ge ab 2022 mˆglich)
 #: osm_watch: way id="734271970" version="5"
-#: osm_watch: way id="975241319" version="4"
+#: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
 #: last_checked: 2022-12-04
@@ -5789,10 +5789,10 @@ Maxim-Gorki-Str. (Kˆnigs Wusterhausen): Einbahnstraﬂenregelung wegen des SEVs	1s
        undef,
        undef,
        {
-         'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
+         'data' => '#: XXX Baustellenbereich ist neu asphaltiert, baldige Freigabe wahrscheinlich
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-12-04 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2022-12-15 vvv
+#: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
@@ -5925,9 +5925,9 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'from' => 1661230800,
          'id' => 3610,
          'source_id' => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
-         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 15.12.2022',
+         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 04.01.2023',
          'type' => 'handicap',
-         'until' => 1671120000
+         'until' => 1672848000
        },
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
@@ -6020,17 +6020,18 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: by: https://berliner-abendblatt.de/2022/11/10/koepenicker-landstrasse-hier-geht-nichts-mehr/
 #: by: https://viz.berlin.de/2022/11/koepenicker-landstr/ (Freigabe der Kreuzung geplant: 14.11.2022 plus zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/24/koepenicker-landstrasse-noch-bis-zum-12-dezember-2022-gesperrt/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1275431.php (bis 23.12.2022)
 #: note: laut rbb nur bis 11.11.2022
 #: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
-#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022)
-#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022)
-#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022)
+#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023)
+#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023)
+#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023)
 #: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am n‰chsten Tag)
 #: last_checked: 2022-11-27
-#: next_check: 2022-12-16
+#: next_check: 2022-12-23
 Kˆpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
 Kˆpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16428,7144
 Schreiblerstr.: Einbahnstraﬂe	q4::inwork; 16494,6948 16375,7070
@@ -6039,9 +6040,9 @@ Trojanstr.: Einbahnstraﬂe	q4::inwork; 16290,7160 16353,7226
          'from' => 1662564323,
          'id' => 3620,
          'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
-         'text' => 'Kˆpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/S¸dosten, auﬂerdem Einbahnstraﬂenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis Mitte Dezember 2022',
+         'text' => 'Kˆpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten/S¸dosten, auﬂerdem Einbahnstraﬂenregelung in der Scheiblerstr. und Trojanstr., voraussichtlich bis 23. Dezember 2022',
          'type' => 'handicap',
-         'until' => 1671206400
+         'until' => 1671811200
        },
        undef,
        undef,
@@ -6086,6 +6087,7 @@ Mellener Str./Lˆptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: by: https://bautagebuch.twentyseven-berlin.de/ (kein Inhalt, nur ein Login)
 #: by: https://fiducia-gruppe.de/investment/ (Fertigstellung: Sommer 2024)
 #: add_fragezeichen: Besteht die Einbahnstraﬂenregelung noch immer?
+#: osm_watch: way id="1094113747" version="1"
 #: also_indoor: traffic (none)
 #: last_checked: 2022-09-17
 #: check_frequency: 90d
@@ -6604,20 +6606,21 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1688130000
        },
        {
-         'data' => '#: last_checked: 2022-11-18
-#: note: wobei es so aussieht, dass man nun von Westen her legal auf dem aufgemalten Radweg fahren kann
-	q4::inwork 13891,7961 13946,7918
+         'data' => '#: last_checked: 2022-12-15 vvv
+	q4::inwork; 13946,7918 13891,7961
+	q3::inwork; 13891,7961 13946,7918
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3674,
-         'text' => 'Weserstr.: Fahrbahn vor der Ederstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Weserstr.: Fahrbahn vor der Ederstr. gesperrt, Engstellen auf dem B¸rgersteig, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nˆrdlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-12-01
+#: last_checked: 2022-12-15
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6830,6 +6833,8 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 #: by: https://nitter.net/VIZ_Berlin/status/1599696176164458496#m (erst ab 15.12.2022)
 #: by: https://nitter.net/pic/orig/media%2FFi-jSc_XoAA7nGg.jpg
 #: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
+#: source_id: bvg2021:m85#BVG312983_0
+#: source_id: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaﬂnahme bis 2025 (laut rbb)
 	1::inwork 4515,4760 4517,4853
 ',
