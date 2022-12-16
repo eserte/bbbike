@@ -5558,7 +5558,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
-#: last_checked: 2022-11-26
+#: last_checked: 2022-12-15 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
@@ -5580,7 +5580,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -5592,9 +5592,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'from' => 1651953282,
          'id' => 3548,
          'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
-         'text' => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 16.12.2022',
+         'text' => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
          'type' => 'gesperrt',
-         'until' => 1671210000
+         'until' => 1675184400
        },
        undef,
        {
@@ -5836,21 +5836,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1672502400
        },
        undef,
-       {
-         'data' => '#: next_check_id: WALLENSTEIN-2022
-#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags, 2022-10-26 (Mi) gegen 12:30, 2022-11-05 (Sa) gegen 10:15, 2022-11-12 (Sa) gegen 12:40, 2022-12-13 (Di) gegen 13:10
-#: note: tatsächlich Bauarbeiten beobachtet: 2022-11-25 (Fr) gegen 12:35 (Baufahrzeug in Aktion), 2022-12-05 (Mo) gegen 13:45 (Baufahrzeug in Aktion, abschnittsweise konnte die Fahrbahn trotzdem genutzt werden)
-Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
-Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
-Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
-',
-         'from' => 1659546069,
-         'id' => 3597,
-         'source_id' => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
-         'text' => 'Wallensteinstr.: Bauarbeiten zwischen Ilsestr. und Sangeallee, Fahrbahn gesperrt, außerhalb der Arbeitszeiten unter Umständen offen, bis 16.12.2022',
-         'type' => 'handicap',
-         'until' => 1671231600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5861,15 +5847,19 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
 #: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1275763.php (in den kommenden Wochen (ab Mitte Dezember 2022))
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fahrradbuegel-auf-strassen_a366953
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2022-11-13 vvv
+#: check_frequency: 60d vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
 Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
 Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #Kopischstr.	q3::inwork 9477,9113 9459,9019
 #Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: also_indoor ^^^
@@ -6021,6 +6011,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: by: https://viz.berlin.de/2022/11/koepenicker-landstr/ (Freigabe der Kreuzung geplant: 14.11.2022 plus zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/24/koepenicker-landstrasse-noch-bis-zum-12-dezember-2022-gesperrt/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1275431.php (bis 23.12.2022)
+#: by: https://berliner-abendblatt.de/2022/12/16/koepenicker-landstrasse-vollsperrung-bis-zum-23-dezember/
 #: note: laut rbb nur bis 11.11.2022
 #: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
@@ -6125,7 +6116,8 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        undef,
        undef,
        {
-         'data' => '	q4::inwork 3737,10322 3739,10495 3770,10508
+         'data' => '	q4::inwork 3737,10322 3739,10495
+# REMOVED (hier nicht) ---	q4::inwork 3739,10495 3770,10508
 ',
          'from' => 1664164800,
          'id' => 3635,

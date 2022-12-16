@@ -274,7 +274,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
-#: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
+# REMOVED --- #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
 #: last_checked: 2022-12-13
 #: check_frequency: 7d
@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-12-10
+#: last_checked: 2022-12-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -5171,11 +5171,18 @@ Straße zum Müggelhort: Asphalt	Q0 28729,3084 28715,3198 28751,3243 28853,3279 28
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bezirk-warnt-mit-verkehrsschild-vor-schaeden-auf-dem-europaradweg-r1_a325556 (die Schäden sind anscheinend größer geworden: Q0- -> Q1+)
 #: by: https://media04.berliner-woche.de/article/2021/10/18/7/378737_XXL.jpg?1635504364
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1255224.php (Instandsetzung)
-#: add_fragezeichen: Ist die Fahrbahn östlich der Bus-Endhaltestelle nach den Bauarbeiten besser geworden?
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1275851.php (Bauarbeiten abgeschlossen)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/fahrbahn-des-r1-wieder-eben_a366980
+# REMOVED --- #: add_fragezeichen: Ist die Fahrbahn östlich der Bus-Endhaltestelle nach den Bauarbeiten besser geworden?
 #: osm_watch: way id="631278828" version="1"
 #: osm_watch: way id="22946308" version="19"
-#: next_check: 2022-11-25
-Müggelschlößchenweg: Asphalt, einige Wurzelhebungen	Q1+ 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
+#: XXX Ist der Asphalt tatsächlich besser geworden? Was ist mit dem Abschnitt westlich der Bus-Endhaltestelle? vvv
+#: next_check: 2022-11-25 vvv
+#: corrected_by: Pressemitteilung (Asphalt, einige Wurzelhebungen -> Q1+, ...)
+Müggelschlößchenweg: Asphalt	Q0 25385,4414 25132,4385 24181,4270
+Müggelschlößchenweg: Asphalt, einige Wurzelhebungen	Q1+ 24181,4270 24135,4264 23879,4233 23753,4218
+#: next_check ^^^
+#: XXX ^^^
 Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23453,4181 23435,4179
 Strandschloßweg: Asphalt	Q0 23368,3894 23439,3892 23467,3891 23749,3883
 Strandschloßweg: Beton	Q0 23749,3883 23925,3886

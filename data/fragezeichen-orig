@@ -77,7 +77,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022)
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-12-12
+#: last_checked: 2022-12-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -1555,7 +1555,7 @@ Dovestr.: Radstreifen geplant	?::projected 4749,12689 4648,12559
 #: osm_watch: way id="26071048" version="16"
 #: osm_watch: way id="26474540" version="15"
 #: source_id: 2147341856 (bis Ende Februar 2020)
-#: last_checked: 2022-11-26
+#: last_checked: 2022-12-15 (mapillary)
 #: check_frequency: 90d
 # REMOVED (hier vermutlich nicht) --- Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648
 Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)	?::projected 4057,9648 3980,9761 3951,9836 3949,9842
@@ -3345,9 +3345,10 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 #: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/umbau-der-chemnitzer-strasse-beginnt-erst-2022_a302727
 #: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/wohnungsbauprojekt-bremst-erneut-umgestaltung-der-chemnitzer-strasse-aus_a333944 (Baubeginn erst 2024, Bauzeit 1 bis 1 1/2 Jahre)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10548 (Antrag)
+#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/umbau-der-chemnitzer-strasse-erst-ab-2028_a359300 (Baubeginn 2028)
 #: XXX ggfs. im Zusammenhang mit dem Bebauungsplan 10-86
 #: last_checked: 2022-01-10 (mapillary)
-#: next_check: 2024-04-01
+#: next_check: 2028-06-01
 Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,11261
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20161104 vvv
@@ -6209,6 +6210,7 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/grosser-bedarf-durch-bebauung-des-ehemaligen-gueterbahnhofs-koepenick_a353843
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1271094.php
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1275391.php
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/gremium-waehlte-vier-planungsteams-aus-entscheidung-im-mai_a366944
 #: last_checked: 2022-04-02
 #: check_frequency: 360d
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22796,6118 22777,6151
@@ -6695,6 +6697,8 @@ Revaler Str.: geschützte Radfahrstreifen geplant	?::projected 13588,11490 13711,
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/bergmannkiez/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php (Durchfahrsperren, Baubeginn ab 20. Juni 2022)
 #: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1275763.php (in den kommenden Wochen (ab Mitte Dezember 2022))
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fahrradbuegel-auf-strassen_a366953
 #: XXX weitere Einbahnstraßenregelungen im Kiez geplant, sowie Fußgängerbereiche nördlich/südlich des Chamissoplatzes
 # REMOVED --- #: XXX evtl. wird es weitere Zebrastreifen auf der Bergmannstraße geben --- #: note: laut rbb bis 16.7.2021 --- #: source_id: 2147347307 (Fahrbahnsanierung bis 29.6.2021) --- #: last_checked: 2021-07-18 --- #: next_check: 2021-07-21
 # REMOVED (hier passiert vermutlich nichts mehr) --- Bergmannstr.: Einrichtung eines geschützten Zweiwegeradwegs (Südseite), Einbahnstraßenregelung für Kfz-Verkehr (offen Richtung Westen)	?::projected 9505,9306 9632,9280 9689,9266 9753,9252
@@ -7488,6 +7492,7 @@ Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11094,-2975 -11172,-2996
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_03_0125_0212_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenlandwidmung: Ankerweg, An der Dahme)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_51_3553_3620_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="39356755" version="14"
 # REMOVED (detailliertere Fragezeichen existieren) --- Bebauungsplan 9-34: Planstraßen, _Uferweg_, Brücke und private Wasserfläche werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
 # REMOVED --- #: osm_watch: way id="630987121" version="6" --- #: XXX Planstraße 1 --- Ankerweg: Wann beginnen die Bauarbeiten? Qualität?	?::projected 22118,2559 22159,2585 22197,2612

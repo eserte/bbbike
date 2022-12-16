@@ -35203,7 +35203,7 @@ EOF
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
-#: last_checked: 2022-11-26
+#: last_checked: 2022-12-15 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
@@ -35306,13 +35306,13 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2022-12-16 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 16.12.2022',
+       until => $isodate2epoch->("2023-01-31 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -35972,7 +35972,7 @@ EOF
 EOF
      },
      { from  => 1659546069, # 2022-08-03 19:01
-       until => 1671231600, # 2022-12-17 00:00
+       until => 1671222245, # 1671231600, # 2022-12-17 00:00
        text  => 'Wallensteinstr.: Bauarbeiten zwischen Ilsestr. und Sangeallee, Fahrbahn gesperrt, außerhalb der Arbeitszeiten unter Umständen offen, bis 16.12.2022',
        type  => 'handicap',
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
@@ -36104,15 +36104,19 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
 #: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1275763.php (in den kommenden Wochen (ab Mitte Dezember 2022))
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fahrradbuegel-auf-strassen_a366953
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2022-11-13 vvv
+#: check_frequency: 60d vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
 Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
 Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #Kopischstr.	q3::inwork 9477,9113 9459,9019
 #Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: also_indoor ^^^
@@ -36352,6 +36356,7 @@ EOF
 #: by: https://viz.berlin.de/2022/11/koepenicker-landstr/ (Freigabe der Kreuzung geplant: 14.11.2022 plus zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/24/koepenicker-landstrasse-noch-bis-zum-12-dezember-2022-gesperrt/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1275431.php (bis 23.12.2022)
+#: by: https://berliner-abendblatt.de/2022/12/16/koepenicker-landstrasse-vollsperrung-bis-zum-23-dezember/
 #: note: laut rbb nur bis 11.11.2022
 #: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
@@ -36548,7 +36553,8 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.30605,52.50146,26.09.2022,06:00', # am nächsten Tag bereits entfernt
        data  => <<EOF,
-	q4::inwork 3737,10322 3739,10495 3770,10508
+	q4::inwork 3737,10322 3739,10495
+# REMOVED (hier nicht) ---	q4::inwork 3739,10495 3770,10508
 EOF
      },
      { from  => undef, # 
