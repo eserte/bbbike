@@ -422,12 +422,12 @@ Rudower Chaussee -> Magnusstr.: Magnusstr./Rudower Chaussee	3::igndisp 19242,287
 Magnusstr. -> Rudower Chaussee: Magnusstr./Rudower Chaussee	3::igndisp 19268,2784 19206,2848 19111,2777
 Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12207 14427,12199
 Mainzer Str./Frankfurter Allee	3nocross::ignrte 14381,12207 14427,12199 14488,12188
-Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12188 14523,12183 14621,12168
+Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12188 14523,12183 14582,12174 14621,12168
 Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,11992 14523,12183 14488,12188
-Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14621,12168 14523,12183 14468,11992
-Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14621,12168 14709,12156
+Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14582,12174 14523,12183 14468,11992
+Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14582,12174 14621,12168 14709,12156
 Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14709,12156 14621,12168 14589,11975
-Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14523,12183
+Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14582,12174
 Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14709,12156 14854,12137 14926,12129 14994,12121
 Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14926,12129 14854,12137 14836,12045
 Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14709,12156
@@ -2314,5 +2314,6 @@ Charlottenstr.	1 9496,12215 9489,12263 9475,12365
 Charlottenstr.	1 9496,12215 9509,12117
 Charlottenstr.	1 9547,11819 9536,11922 9523,12019 9509,12117
 Charlottenstr.	1 9547,11819 9559,11715 9569,11631
-Triftstr.	1 7356,15350 7464,15409
+Triftstr.	1 7270,15307 7356,15350 7417,15383
+Triftstr.	1 7270,15307 7248,15296 7085,15226
 Anlieferung Hohenschönhausener Tor - Konrad-Wolf-Str.	3 15225,14545 15174,14638 15066,14579

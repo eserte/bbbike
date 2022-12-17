@@ -31064,7 +31064,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-12-10
+#: last_checked: 2022-12-17
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32288,7 +32288,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-10-27 vvv
+#: last_checked: 2022-12-17 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -34445,14 +34445,17 @@ EOF
 	q4 16038,9837 16002,9787
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-17 05:00:00"),
-       until => $isodate2epoch->("2021-12-19 23:00:00"),
-       text  => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Badenallee gesperrt (Weihnachten in Westend), vom 18.12.2021 05:00 bis 19.12.2021 23:00 ',
+     { from  => $isodate2epoch->("2022-12-16 05:00:00"),
+       until => $isodate2epoch->("2022-12-18 23:00:00"),
+       text  => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 17.12.2022 05:00 bis 18.12.2022 23:00 ',
+       periodic => 1,
+       recurrences => [['yearly', days => 15, months => 12]],
        type  => 'gesperrt',
        source_id => 'viz2021:13.259828,52.514849,18.12.2021,05:00',
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
-	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607
+#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
      { from  => 1640408400, # 2021-12-25 06:00
@@ -34952,7 +34955,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2022-12-21 17:00:00"), # undef, # XXX
+       until => 1671290096, # $isodate2epoch->("2022-12-21 17:00:00"), # undef, # XXX
        text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis 21. Dezember 2022',
        type  => 'handicap',
        data  => <<EOF,
@@ -34960,20 +34963,13 @@ EOF
 #: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022) (bis 21.12.2022) (inaktiv)
 #: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39 (inaktiv)
 #: note: auch beim rbb mittlerweile (15.12.2022) vorfristig inaktiv
-#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
-#: also_indoor: traffic (G(falsch?),B(teilweise))
-#: priority: #B
-#: last_checked: 2022-11-19 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-12-16 vvv
+# REMOVED --- #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? --- #: also_indoor: traffic (G(falsch?),B(teilweise)) --- #: priority: #B --- #: last_checked: 2022-11-19 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-12-16 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
 #: note: zumindest am 2022-05-01 konnte man hier ohne Einschränkungen fahren, aber vielleicht werden die Absperrungen während der Arbeitszeiten geschlossen
 	q2::inwork 7259,14870 7409,14954
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -36329,7 +36325,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-14
+#: last_checked: 2022-12-17
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36780,27 +36776,20 @@ EOF
 EOF
      },
      { from  => 1665871200, # 2022-10-16 00:00
-       until => undef, # XXX
+       until => 1671289468, # undef, # XXX
        text  => 'Triftstr.: Fahrbahnausbesserungsarbeiten, Abschnitte der Fahrbahn zwischen Tegeler Str. und Müllerstr. gesperrt, ab 17.10.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
        data  => <<EOF,
-#: next_check_id: TRIFTGERICHT-2022
-#: XXX Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (B) vvv
-#: last_checked: 2022-11-08 vvv
-#: check_frequency: 30d vvv
+# REMOVED --- #: next_check_id: TRIFTGERICHT-2022 --- #: XXX Bis wann gehen die Bauarbeiten? vvv --- #: also_indoor: traffic (B) vvv --- #: last_checked: 2022-11-08 vvv --- #: check_frequency: 30d vvv
 # REMOVED (hier nicht) --- Genter Str.	q3::inwork 7138,15437 7270,15307
 Triftstr.	q3::inwork 7085,15226 7248,15296 7270,15307
 # REMOVED (hier nicht mehr) --- Triftstr.	q3::inwork 7270,15307 7356,15350
-Triftstr.	q3::inwork 7356,15350 7464,15409
+Triftstr.	q3::inwork 7356,15350 7417,15383 7464,15409
 # REMOVED (hier nicht mehr) --- Gerichtstr.	q3::inwork 7464,15409 7627,15412
 # REMOVED (hier nicht) --- Gerichtstr.	q3::inwork 7627,15412 7723,15417
 # REMOVED (hier nicht) --- Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => 1665772021, # 2022-10-14 20:27
@@ -36839,7 +36828,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-12-11
+#: last_checked: 2022-12-17
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969

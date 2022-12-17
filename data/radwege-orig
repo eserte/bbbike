@@ -243,7 +243,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="10"
-#: osm_watch: way id="25042039" version="32"
+#: osm_watch: way id="25042039" version="33"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2022-11-27 (mapillary)
 #: check_frequency: 180d
@@ -844,7 +844,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-12-14 vvv
+#: last_checked: 2022-12-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -857,10 +857,10 @@ provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15117,12106
 asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
-#: note: hier nicht eindeutig: Radspur per Gelbmarkierung existiert ebenfalls, ist aber teilweise durch gelbe Kreuze ungültig gemacht?
-	RW2; 14709,12156 14621,12168
-	RW4; 14621,12168 14523,12183 14488,12188
-Leitboys und sehr niedrige Barriere	RW4; 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
+# REMOVED --- #: note: hier nicht eindeutig: Radspur per Gelbmarkierung existiert ebenfalls, ist aber teilweise durch gelbe Kreuze ungültig gemacht?
+Verbundsteinpflaster	RW2; 14709,12156 14621,12168
+asphaltiert, Haltestellenkap	RW2; 14621,12168 14582,12174
+Leitboys und sehr niedrige Barriere	RW4; 14582,12174 14523,12183 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
 	RW2; 14208,12235 14020,12261
 asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: Frankfurter Allee Richtung Osten bis Möllendorffstr.
@@ -868,7 +868,7 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt vvv
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188
 	RW2; 14488,12188 14523,12183
-teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
+teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,12156 14854,12137 14926,12129
 	RW3; 14926,12129 14994,12121
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
@@ -882,7 +882,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
 asphaltiert	RW2; 13785,12292 13543,12326
 	RW10; 13543,12326 13448,12340
-asphaltiert	RW2; 13448,12340 13163,12382 12929,12421
+asphaltiert, relativ breit	RW2; 13448,12340 13163,12382 12929,12421
 ein Fahrstreifen, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 12929,12421 12878,12430 12848,12434
 asphaltiert	RW2; 12848,12434 12816,12439 12603,12470 12592,12472
 neu asphaltiert, ca. 3m breit	RW2; 12592,12472 12352,12509
@@ -2069,6 +2069,7 @@ Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 
 	RW3; 5866,10492 5808,10396
 	RW1; 5808,10396 5764,10322
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
+#: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: also_indoor: traffic (B(minor))
@@ -2486,7 +2487,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-12-02
+#: last_checked: 2022-12-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2593,8 +2594,8 @@ Radspur zwischen Fahrspuren	RW4; 11221,12250 11300,12241 11347,12223
 benutzungspflichtige Radspur fängt einige Meter nach der Kreuzung an	RW0; 10738,12364 10804,12291
 	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3;RW3 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547
-	RW3;RW0 11893,13547 11842,13576
-	RW4;RW0 11842,13576 11785,13625
+	RW3; 11893,13547 11842,13576
+	RW3; 11824,13592 11785,13625
 # 
 # REMOVED --- #: next_check_id: POPUPRADWEGE-2020 --- #: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019446.php (Verstetigung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/aus-temporaer-wird-dauerhaft_a293917 --- #: by: https://twitter.com/VIZ_Berlin/status/1329434716882268162 --- #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/ (früherer Eintrag) --- #: by: https://www.infravelo.de/projekt/lichtenberger-strasse-4/ (bis 3. Quartal 2021) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021) --- #: source_id: 2147346610 --- #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021) --- #: XXX Benutzungspflicht prüfen vvv --- #: last_checked: 2021-08-12 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-08-17 vvv --- # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464 --- #: osm_watch: way id="284761029" version="18"
 # REMOVED --- #: osm_watch: way id="4616518" version="30"
@@ -2842,7 +2843,7 @@ Busspur gilt 6-24 Uhr	RW5; 11706,13635 11652,13564 11561,13451 11539,13425 11486
 #: by: Christian Bewernitz
 #: confirmed_by: srt
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12161,13711 12038,13685 11907,13655 11868,13646 11823,13635 11785,13625
-	RW3; 11785,13625 11762,13619 11706,13635
+	RW3;RW3 11785,13625 11762,13619 11706,13635
 	RW4; 11276,13408 11308,13389
 	RW2; 11308,13389 11399,13333 11451,13301
 #: note: daneben ist noch eine Busspur
@@ -8038,4 +8039,6 @@ Verbundsteinpflaster, OK	RW2; 3490,16083 3518,16102 3546,16143 3587,16219 3585,1
 Gehwegplatten	RW2; 10936,16892 10971,16907
 # 
 	RW7;RW7 15591,8848 15680,8914 15778,8990
+# 
+	RW7;RW7 7270,15307 7356,15350 7417,15383
 # 

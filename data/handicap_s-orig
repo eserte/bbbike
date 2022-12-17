@@ -189,7 +189,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-10-19
+#: last_checked: 2022-12-17
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -204,16 +204,12 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2022-12-13 (mapillary)
+#: last_checked: 2022-12-16 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 # 
-#: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022
-#: osm_watch: way id="184632250" version="3"
-#: last_checked: 2022-11-30
-#: next_check: 2022-12-31
-Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
+# REMOVED (keine Einbahnstraße, sondern nur noch eine Gegenverkehrsregelung (wobei das Schild auf der westlichen Seite fehlt) --- #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022 --- #: osm_watch: way id="184632250" version="3" --- #: last_checked: 2022-11-30 --- #: next_check: 2022-12-31 --- Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 # 
 #: next_check_id: ROSENTHALER-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m
@@ -231,7 +227,7 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022)
 #: priority: #A
-#: last_checked: 2022-12-06 vvv
+#: last_checked: 2022-12-13 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-20 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
@@ -273,7 +269,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr) (bis 30.4.2023)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
 #: note: bei rbb noch bis 31.12.2022
-#: last_checked: 2022-11-19
+#: last_checked: 2022-12-17
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -393,7 +389,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-12-13 (mapillary) vvv
+#: last_checked: 2022-12-17 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="12"
@@ -571,7 +567,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 #: check_frequency: 90d vvv
 #: last_checked: 2022-10-20 (bahninfo-forum) vvv
 #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="140336721" version="26"
+#: osm_watch: way id="140336721" version="27"
 #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
 # REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag)
@@ -579,7 +575,7 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="30195541" version="28"
+#: osm_watch: way id="30195541" version="29"
 #: last_checked: 2022-12-10 (bahninfo-forum)
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
@@ -714,7 +710,7 @@ Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14310,7022 14276,702
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
-#: osm_watch: way id="640465875" version="11"
+#: osm_watch: way id="640465875" version="12"
 #: last_checked: 2022-12-04
 #: check_frequency: 120d
 #: next_check: 2024-06-01

@@ -755,7 +755,7 @@ Am Ostbahnhof	N 12204,11748 12310,11682 12543,11521
 (zur Neuen Mälzerei)	N 12520,12938 12590,13018
 Friedenstr. (Friedrichshain)	H 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045 12382,13097
 Friedenstr. (Friedrichshain)	N 12382,13097 12325,13148 12236,13229 12163,13295
-Friedenstr. (Friedrichshain)	H 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547 11842,13576 11785,13625
+Friedenstr. (Friedrichshain)	H 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547 11842,13576 11824,13592 11785,13625
 (Volkspark Friedrichshain)	NN 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320
 (Volkspark Friedrichshain)	NN 12476,13273 12445,13320 12420,13370 12483,13418 12450,13542 12366,13615 12344,13627
 (Volkspark Friedrichshain, von/zur Hans-Otto-Str.)	NN 12344,13627 12353,13653 12372,13755
@@ -1754,9 +1754,9 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2022-11-25 (daf)
+#: last_checked: 2022-12-17
 #: check_frequency: 30d
-#: next_check: 2022-12-31
+# REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
 (Golda-Meir-Steg - südliches Otto-Weidt-Platz)	NN 7861,14133 7850,14100
 Golda-Meir-Steg	NN 7861,14133 7899,14157 7962,14198 7973,14195
@@ -1767,8 +1767,8 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: last_checked: 2022-11-19
-#: check_frequency: 60d
+#: last_checked: 2022-12-17
+#: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg)	NN 7802,14250 7830,14268
@@ -1776,7 +1776,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: last_checked: 2022-11-19
+#: last_checked: 2022-12-17
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -2201,7 +2201,7 @@ Jerusalemer Str.	N 9936,11469 9945,11371
 Frankfurter Allee	HH 13785,12292 13885,12279 14020,12261 14208,12235
 Frankfurter Allee	HH 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
 Frankfurter Allee	HH 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188
-Frankfurter Allee	HH 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071 15670,12022 15717,12015 15863,11992 16066,11960 16127,11950 16214,11935 16317,11920 16368,11912 16413,11906 16512,11894 16737,11866 16803,11859 16962,11833 17028,11821 17121,11806 17151,11801 17251,11789
+Frankfurter Allee	HH 14488,12188 14523,12183 14582,12174 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071 15670,12022 15717,12015 15863,11992 16066,11960 16127,11950 16214,11935 16317,11920 16368,11912 16413,11906 16512,11894 16737,11866 16803,11859 16962,11833 17028,11821 17121,11806 17151,11801 17251,11789
 #: alias: Alte Frankfurter Allee vvv
 Frankfurter Allee [Nebenfahrbahn]	N 16865,11931 16837,11920 16764,11919 16702,11920 16535,11920
 Frankfurter Allee [Nebenfahrbahn]	NN 16535,11920 16512,11894
@@ -2340,7 +2340,7 @@ Reinickendorfer Str.	HH 7998,15068 8007,15087 8001,15205 8002,15340 8024,15401 8
 Seestr. (Wedding, Charlottenburg-Nord, Moabit)	HH 7681,16769 7606,16746 7447,16613 7417,16587 7393,16566 7292,16480 7232,16429 7051,16264 6965,16190 6781,16026 6661,15921 6555,15827 6422,15708 6239,15553 5895,15229 5753,15096 5700,15043 5618,14981 5598,14965 5517,14901 5440,14840 5311,14786 5255,14757 5043,14671
 Seestr. (Wedding, Charlottenburg-Nord, Moabit)	HH 5440,14840 5331,14735 5293,14699 5264,14671 5051,14606
 Triftstr. (Wedding)	NN 6652,15073 6675,15080
-Triftstr. (Wedding)	N 6675,15080 6743,15102 6886,15156 7085,15226 7248,15296 7270,15307 7356,15350 7464,15409
+Triftstr. (Wedding)	N 6675,15080 6743,15102 6886,15156 7085,15226 7248,15296 7270,15307 7356,15350 7417,15383 7464,15409
 Triftstr. (Wedding)	N 6743,15102 6715,15152
 Luxemburger Str.	H 7277,15586 7138,15437 6996,15319 6833,15215 6715,15152 6626,15104
 Sellerstr.	HH 8057,14876 7960,14794 7733,14570 7711,14548 7609,14447 7566,14404
@@ -18580,7 +18580,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="8"
-#: last_checked: 2022-10-03
+#: last_checked: 2022-12-17
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
