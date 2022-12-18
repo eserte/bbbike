@@ -501,8 +501,8 @@ mäßiger Verbundsteinpflasterradweg	RW1; 10839,10907 10794,10927
 # 
 altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
 altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682
-Poller	RW3;RW3 10776,10682 10837,10815
-altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10837,10815 10856,10856
+Poller	RW3;RW3 10776,10682 10834,10806
+altes Verbundsteinpflaster	RW1;RW1 10834,10806 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256
 	RW2;RW1 10580,10256 10605,10312
 altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9807 10361,9755
@@ -2453,7 +2453,7 @@ asphaltiert	RW1;RW1 11632,8302 11767,8330 11898,8362
 Busspur ist immer gültig	RW5; 9873,10285 9593,10238
 Busspur ist immer gültig	RW5; 9593,10238 9492,10226 9404,10250
 Busspur gilt Mo-Fr 7-9 Uhr und 14-17 Uhr	RW5; 9795,10512 9858,10350
-	RW3; 9858,10350 9795,10512
+	RW3; 9873,10285 9858,10350 9795,10512
 	RW3;RW3 9795,10512 9770,10590 9777,10719 9797,10771 9807,10788 9829,10830
 	RW3;RW4 9829,10830 9834,10840 9935,11067 9973,11150
 	RW3;RW3 9973,11150 10020,11262
@@ -2502,7 +2502,7 @@ bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 
 	RW4; 12061,11406 12021,11349
 	RW4;RW3 12061,11406 12092,11475
 	RW3; 12092,11475 12143,11574
-Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
@@ -2551,7 +2551,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2022-11-23
+#: last_checked: 2022-12-18
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -6165,7 +6165,7 @@ Asphalt mit leichten Schäden	RW1; 4430,5324 4437,5335 4527,5475 4558,5525 4671,5
 Asphalt mit einigen Schäden	RW1; 4671,5697 4558,5525 4527,5475 4437,5335 4430,5324
 	RW3;RW3 4520,5793 4406,5850 4312,5889 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
 	RW6;RW6 4305,12377 4358,12365 4520,12358
-	RW3;RW3 9858,10350 9873,10285
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 9858,10350 9873,10285
 	RW1; 17383,16197 17425,16165
 	RW7;RW7 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
 	RW6;RW6 20586,18822 20694,18857
@@ -7575,7 +7575,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="26"
 #: osm_watch: way id="335487059" version="25"
-#: last_checked: 2022-11-26 vvv
+#: last_checked: 2022-12-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

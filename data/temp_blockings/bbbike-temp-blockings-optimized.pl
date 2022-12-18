@@ -5358,9 +5358,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        {
-         'data' => '#: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45, sowie 2022-03-27 (So) gegen 13:45, sowie 2022-07-27 (Mi) gegen 17:30
+         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15
 #: osm_watch: node id="575826622" version="3" vvv
-#: last_checked: 2022-07-27 vvv
+#: last_checked: 2022-12-18 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -6342,7 +6342,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-12-17
+#: last_checked: 2022-12-18
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -6428,7 +6428,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-11-26
+#: last_checked: 2022-12-18
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,

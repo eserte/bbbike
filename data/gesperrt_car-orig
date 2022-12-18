@@ -70,7 +70,7 @@ Fasanenstr.	1 5219,9808 5203,9840 5194,9985
 Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
 Hagelberger - Yorck	3nocross 8595,9495 8679,9544 8777,9601
 Hagelberger - Mehringdamm	3nocross 9334,9670 9283,9487 9248,9350
-Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038
+# REMOVED (Rechts abbiegen-Schild wurde abgebaut) --- Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038
 # Potsdam vvv
 Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
@@ -86,7 +86,6 @@ UdL/Universitätsstr.	3nocross 9475,12365 9613,12381 9664,12387
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
 Horn - Yorck	3nocross 8777,9601 9002,9731 9047,9750
 Mehringdamm - Baruther	3nocross 9444,9919 9387,9804 9334,9670
-Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9226,8967 9227,8890
 Hobrechtstr.	1 12012,9092 11998,8872
 Lützowplatz	1 7002,11034 6873,11011
 Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12825,17870 12736,17998 12462,17814
@@ -860,7 +859,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="15"
-#: last_checked: 2022-11-13
+#: last_checked: 2022-12-18
 #: check_frequency: 60d
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
