@@ -19,6 +19,7 @@ use lib "$FindBin::RealBin/..";
 
 use Getopt::Long;
 use JSON::XS qw(decode_json);
+use List::Util qw(any first);
 use YAML::XS qw(LoadFile);
 use Term::ANSIColor qw(colored);
 
@@ -58,9 +59,20 @@ my $outfh;
 if ($use_pager) {
     require POSIX;
     my @next_days = map { POSIX::strftime('%F', localtime(time + 86400*$_)) } (0..$highlight_days-1); # XXX incorrect on DST switches!
-    my $rx = '^(' . join('|', map { quotemeta } @next_days) . ')$';
-    open $outfh, '|-', 'less', '+/'.$rx
-	or die $!;
+    my $rx = '^(' . join('|', map { quotemeta } @next_days) . ')';
+    my $qr = qr/$rx/;
+    if (!any { $_->{from} =~ $qr } @records) {
+	# none of next_days are available --- fallback to a previous date
+	my $previous_date_record = first { ($_->{from} cmp $next_days[0]) <= 0 } reverse @records;
+	if ($previous_date_record) {
+	    $rx = '^' . quotemeta($previous_date_record->{from});
+	} else {
+	    undef $rx;
+	}
+    }
+    my @pager_cmd = ('less', (defined $rx ? '+/'.$rx : ()));
+    open $outfh, '|-', @pager_cmd
+	or die "Failed to run '@pager_cmd': $!";
 } else {
     $outfh = \*STDOUT;
 }
