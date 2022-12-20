@@ -17454,7 +17454,7 @@ EOF
        until => $isodate2epoch->("2021-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12, start => "2022-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten
-       recurrence_prewarn_days => 7, # Ausmaß der Sperrungen 2022/2023 noch unklar
+       recurrence_prewarn_days => 3, # Ausmaß der Sperrungen 2022/2023 noch unklar
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -29400,11 +29400,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="35"
+#: osm_watch: way id="8655276" version="36"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-12-03
+#: last_checked: 2022-12-19 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -30683,12 +30683,12 @@ EOF
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-12-14
 #: check_frequency: 30d
-#: next_check: 2022-12-31
+#: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
 EOF
      },
@@ -34265,12 +34265,12 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00 (inaktiv)
-#: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022)
-#: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00
+#: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022) (bis 31.01.2023)
+#: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00 (mittlerweile bis 31.1.2023)
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-12-10 vvv
+#: last_checked: 2022-12-20 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-23 vvv
+#: next_check: 2023-01-31 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
@@ -34612,23 +34612,23 @@ EOF
 EOF
      },
      { from  => 1614492000, # 2021-02-28 07:00
-       until => $isodate2epoch->("2022-12-22 07:00:00"), # 1672502400, # 2022-12-31 17:00
-       text  => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 22. Dezember 2022',
+       until => $isodate2epoch->("2023-03-31 07:00:00"), # 1672502400, # 2022-12-31 17:00
+       text  => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 31. März 2023',
        type  => 'handicap',
        source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00', # mittlerweile nur bis 31.1.2022, aber siehe unten (inaktiv)
        data  => <<EOF,
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
 #: source_id: bvg2021:188#BVG296003_0
-#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
-#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
+#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
+#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
 #: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
 #: last_checked: 2022-09-04 vvv
 #: check_frequency: 150d vvv
-#: next_check: 2022-12-22 vvv
+#: next_check: 2023-03-31 vvv
 	q3::inwork 3011,3303 2778,3132
 # REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
@@ -34641,7 +34641,7 @@ EOF
 # 
 #: note: bei rbb bis 31.10.2022
 #: last_checked: 2022-09-04 vvv
-#: next_check: 2022-12-22 vvv
+#: next_check: 2023-03-31 vvv
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
@@ -34650,7 +34650,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked ^^^
 # 
 #: last_checked: 2022-09-04
-#: next_check: 2022-12-22
+#: next_check: 2023-03-31
 östlich Drakestr.	q4::inwork 3558,3688 3507,3654
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
@@ -34712,10 +34712,10 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-11-12 (osm)
+#: last_checked: 2022-12-18 (osm)
 #: check_frequency: 45d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4993234" version="17"
+#: osm_watch: way id="4993234" version="18"
 	2::inwork 5714,12290 5796,12372 5940,12564
 # REMOVED (laut osm hier fertiggestellt) --- #: osm_watch: way id="4410535" version="26" --- 2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 EOF
@@ -34740,11 +34740,12 @@ EOF
        until => $isodate2epoch->("2022-12-21 17:00:00"), # 1666821600, # 2022-10-27 00:00
        text  => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Dezember 2022',
        type  => 'handicap',
-       source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
+       source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30', # zunächst bis 21.12.2022, mittlerweile bis 31.1.2023
        data  => <<EOF,
 #: also_indoor: traffic (B[unvollständig])
 #: last_checked: 2022-10-15
-#: next_check: 2022-12-21
+#: check_frequency: 90d
+#: next_check: 2023-01-31
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 EOF
      },
@@ -34773,7 +34774,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1238153.php
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/information-zu-bauarbeiten_a355817
 #: source_id: 226500387 (bis 31.12.2022)
-#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022)
+#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
 #: last_checked: 2022-09-09 (kartaview)
 #: next_check: 2022-10-01
@@ -34852,8 +34853,8 @@ EOF
 EOF
      },
      { from  => 1645336800, # 2022-02-20 07:00
-       until => 1672502400, # 2022-12-31 17:00
-       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
+       until => $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
+       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.01.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.452362,52.470898,21.02.2022,07:00', # bis 31.12.2022
        data  => <<EOF,
@@ -34865,7 +34866,7 @@ EOF
 #: osm_watch: way id="1047544510" version="1"
 #: last_checked: 2022-12-04 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2023-01-31 vvv
 	q4::inwork 13797,7267 13762,7321
 	2::inwork 13797,7267 13693,7228 13575,7200
 #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs
@@ -35945,13 +35946,15 @@ EOF
 EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
-       until => $isodate2epoch->("2022-12-31 17:00:00"), # 1667232000, # 2022-10-31 17:00
-       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.12.2022 17:00',
+       until => $isodate2epoch->("2023-01-27 17:00:00"), # 1667232000, # 2022-10-31 17:00
+       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 27.01.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
+       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00', # bis 31.12.2022, mittlerweile bis 27.1.2023
        data  => <<EOF,
 #: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
+#: note: bei rbb sogar bis 28.2.2023
+#: next_check: 2023-01-27
 # REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
 	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
 EOF
@@ -36325,8 +36328,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-17
-# REMOVED --- #: check_frequency: 14d
+#: last_checked: 2022-12-20
+#: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
      },
@@ -37327,7 +37330,7 @@ EOF
        until => $isodate2epoch->("2023-04-30 18:00:00"),
        text  => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
+# REMOVED (vermutlich andere Baumaßnahme) --- source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
        data  => <<EOF,
 #: last_checked: 2022-11-26
 #: next_check: 2023-04-30
@@ -37452,6 +37455,20 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
+EOF
+     },
+     { from  => undef, # 
+       until => 1672635600, # 2023-01-02 06:00
+       text  => 'Landsberger Allee - Frank-Schweitzer-Str.: wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: KNOTENMARZAHN-2022
+#: by: https://viz.berlin.de/2022/12/marzahner-knoten/
+#: by: https://viz.berlin.de/wp-content/uploads/Landsberger-1.jpg
+#: by: https://nitter.it/VIZ_Berlin/status/1604706843762167809#m
+#: also_indoor: traffic (B,G,H)
+	2::inwork 19205,14980 19244,14980 19400,15027
+	2::inwork 19214,14966 19244,14980
 EOF
      },
     );

@@ -844,7 +844,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-12-17 vvv
+#: last_checked: 2022-12-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -872,11 +872,11 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 	RW3; 14926,12129 14994,12121
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
-#: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022)
+#: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-12-07
+#: last_checked: 2022-12-20
 #: check_frequency: 60d
-#: next_check: 2022-12-21
+# REMOVED --- #: next_check: 2022-12-21
 	RW2; 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -1841,7 +1841,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2022-11-10 vvv
+#: last_checked: 2022-12-20 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10574,12131 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
@@ -1849,7 +1849,7 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
-#: last_checked: 2022-11-03
+#: last_checked: 2022-12-20
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3489,13 +3489,13 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
-#: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022)
+#: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022)
 #: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv)
 #: note: laut rbb bis 15.11.2022
 #: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
 #: last_checked: 2022-11-12 vvv
 # REMOVED --- #: check_frequency: 120d vvv
-#: next_check: 2022-12-10 vvv
+#: next_check: 2022-12-23 vvv
 # REMOVED --- #: priority: #A vvv
 	RW8; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 # REMOVED --- #: priority ^^^
@@ -3672,7 +3672,7 @@ Verbundsteinpflaster	RW1; 23046,3905 23036,3929 22971,4077 22965,4124
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
 #: last_checked: 2022-11-12
 #: check_frequency: 180d
-#: next_check: 2022-12-31
+#: next_check: 2023-07-15
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
 Gehweg für Radfahrer frei	RW1; 21569,5730 21522,5771
 	RW3; 21522,5771 21470,5809 21365,5832
@@ -6123,9 +6123,9 @@ asphaltiert	RW1; 9660,17736 9721,17806
 #: last_checked: 2022-11-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="23"
+#: osm_watch: way id="162965650" version="24"
 	RW3; 8776,16268 8921,16578
-#: osm_watch: way id="761539110" version="9"
+#: osm_watch: way id="761539110" version="10"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -7568,7 +7568,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.402789,52.498471,28.09.2021,07:00 (bis 12.10.2021) (inaktiv)
 #: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023)
 #: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
-#: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022)
+#: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023)
 #: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022) (inaktiv)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
@@ -7781,9 +7781,9 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023)
-#: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022)
+#: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023)
-#: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022)
+#: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-10-23 vvv
@@ -7791,15 +7791,15 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
-#: osm_watch: way id="111048866" version="14"
+#: osm_watch: way id="111048866" version="15"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
-#: osm_watch: way id="28680188" version="22"
+#: osm_watch: way id="28680188" version="23"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
-#: osm_watch: way id="30958674" version="21"
+#: osm_watch: way id="30958674" version="22"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
-#: osm_watch: way id="4526218" version="23"
+#: osm_watch: way id="4526218" version="24"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
@@ -7812,7 +7812,7 @@ provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 917
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
-#: osm_watch: way id="4357826" version="19"
+#: osm_watch: way id="4357826" version="20"
 #: XXX laut fahrrat/2016-07-28 "Ausführung im Jahr 2017 geplant."
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf ("Entwurfsplanung liegt vor" + "Schwierigkeiten")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf

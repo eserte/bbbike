@@ -3143,55 +3143,11 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(4th_advent,sa) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1671145200,
-         'id' => 2517,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (17.12.2022 - 18.12.2022)',
-         'type' => 'gesperrt',
-         'until' => 1671404399
-       },
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 4th_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1671267600,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2022, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1671379200
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3235,32 +3191,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
-#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
-#: source_id: 2147345257
-# note: früher Alt-Rudow zwischen Köpenicker Str. und Krokusstr.:	2::xmas 16849,1437 16805,1488 16610,1715
-	2::xmas 16610,1715 16767,1831
-',
-         'from' => 1671188400,
-         'id' => 2529,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'IM_020883',
-         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 17.12.2022 und 18.12.2022',
-         'type' => 'gesperrt',
-         'until' => 1671393600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3697,42 +3628,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
-#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
-#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
-#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
-#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: note: Termine im Herbst 2022: 9./15./23./29.11, 6./13./20.12.
-#: source_id: 2147341022
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2022-12-14
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
-	2::temp -1934,6804 -1854,6898
-',
-         'from' => 1671404400,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. Dezember 2022 zwischen 09:15 und 10:15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1671527700
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4166,11 +4062,11 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="35"
+#: osm_watch: way id="8655276" version="36"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-12-03
+#: last_checked: 2022-12-19 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -4390,12 +4286,12 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-12-14
 #: check_frequency: 30d
-#: next_check: 2022-12-31
+#: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
 ',
          'from' => undef,
@@ -5093,12 +4989,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00 (inaktiv)
-#: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022)
-#: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00
+#: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022) (bis 31.01.2023)
+#: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00 (mittlerweile bis 31.1.2023)
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-12-10 vvv
+#: last_checked: 2022-12-20 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-23 vvv
+#: next_check: 2023-01-31 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
@@ -5165,28 +5061,7 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
-#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
-	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1671163200,
-         'id' => 3489,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'viz2021:13.259828,52.514849,18.12.2021,05:00',
-         'text' => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 17.12.2022 05:00 bis 18.12.2022 23:00 ',
-         'type' => 'gesperrt',
-         'until' => 1671400800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5254,15 +5129,15 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
          'data' => '#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
 #: source_id: bvg2021:188#BVG296003_0
-#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
-#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
+#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
+#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
 #: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
 #: last_checked: 2022-09-04 vvv
 #: check_frequency: 150d vvv
-#: next_check: 2022-12-22 vvv
+#: next_check: 2023-03-31 vvv
 	q3::inwork 3011,3303 2778,3132
 # REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
@@ -5275,7 +5150,7 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
 # 
 #: note: bei rbb bis 31.10.2022
 #: last_checked: 2022-09-04 vvv
-#: next_check: 2022-12-22 vvv
+#: next_check: 2023-03-31 vvv
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
@@ -5284,7 +5159,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked ^^^
 # 
 #: last_checked: 2022-09-04
-#: next_check: 2022-12-22
+#: next_check: 2023-03-31
 östlich Drakestr.	q4::inwork 3558,3688 3507,3654
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
@@ -5293,9 +5168,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1614492000,
          'id' => 3502,
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
-         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 22. Dezember 2022',
+         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 31. März 2023',
          'type' => 'handicap',
-         'until' => 1671688800
+         'until' => 1680238800
        },
        undef,
        undef,
@@ -5305,10 +5180,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-11-12 (osm)
+#: last_checked: 2022-12-18 (osm)
 #: check_frequency: 45d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4993234" version="17"
+#: osm_watch: way id="4993234" version="18"
 	2::inwork 5714,12290 5796,12372 5940,12564
 # REMOVED (laut osm hier fertiggestellt) --- #: osm_watch: way id="4410535" version="26" --- 2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 ',
@@ -5323,7 +5198,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: also_indoor: traffic (B[unvollständig])
 #: last_checked: 2022-10-15
-#: next_check: 2022-12-21
+#: check_frequency: 90d
+#: next_check: 2023-01-31
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 ',
          'from' => 1644076653,
@@ -5386,7 +5262,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="1047544510" version="1"
 #: last_checked: 2022-12-04 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2023-01-31 vvv
 	q4::inwork 13797,7267 13762,7321
 	2::inwork 13797,7267 13693,7228 13575,7200
 #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs
@@ -5398,9 +5274,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1645336800,
          'id' => 3517,
          'source_id' => 'viz2021:13.452362,52.470898,21.02.2022,07:00',
-         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.01.2023 17:00',
          'type' => 'handicap',
-         'until' => 1672502400
+         'until' => 1675180800
        },
        undef,
        undef,
@@ -5821,15 +5697,17 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
+#: note: bei rbb sogar bis 28.2.2023
+#: next_check: 2023-01-27
 # REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
 	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
 ',
          'from' => 1658811600,
          'id' => 3595,
          'source_id' => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
-         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.12.2022 17:00',
+         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 27.01.2023 17:00',
          'type' => 'handicap',
-         'until' => 1672502400
+         'until' => 1674835200
        },
        undef,
        undef,
@@ -5988,8 +5866,8 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-17
-# REMOVED --- #: check_frequency: 14d
+#: last_checked: 2022-12-20
+#: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
          'from' => undef,
@@ -6720,7 +6598,6 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 ',
          'from' => undef,
          'id' => 3691,
-         'source_id' => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
          'text' => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2023',
          'type' => 'handicap',
          'until' => 1682870400
@@ -6853,6 +6730,21 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Streustr.: Abschnitt der Fahrbahn zwischen Börnestr. und Behaimstr. wegen Hochbauarbeiten gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: KNOTENMARZAHN-2022
+#: by: https://viz.berlin.de/2022/12/marzahner-knoten/
+#: by: https://viz.berlin.de/wp-content/uploads/Landsberger-1.jpg
+#: by: https://nitter.it/VIZ_Berlin/status/1604706843762167809#m
+#: also_indoor: traffic (B,G,H)
+	2::inwork 19205,14980 19244,14980 19400,15027
+	2::inwork 19214,14966 19244,14980
+',
+         'from' => undef,
+         'id' => 3702,
+         'text' => 'Landsberger Allee - Frank-Schweitzer-Str.: wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1672635600
        }
      
 );

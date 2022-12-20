@@ -225,11 +225,11 @@ Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
-#: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022)
+#: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023)
 #: priority: #A
-#: last_checked: 2022-12-13 (mapillary) vvv
+#: last_checked: 2022-12-20 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-12-20 vvv
+#: next_check: 2023-03-15 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10341,13376
@@ -248,7 +248,7 @@ Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig,
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-14
+#: last_checked: 2022-12-20
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -298,7 +298,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-12-14
+#: last_checked: 2022-12-20
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -468,10 +468,10 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 ### Karlshorst ###
 # 
-#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (bis 14.12.2022) (bis 31.12.2022)
+#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023)
 #: last_checked: 2022-11-25
-#: next_check: 2022-12-31
-#: valid: -20221231
+#: next_check: 2023-01-31
+#: valid: -20230131
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 #: next_check_id: WANDLITZ-2021
@@ -580,6 +580,7 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
 #: note: zurzeit wird man Richtung Westen auf die südliche Fahrbahn geleitet
+#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023)
 #: last_checked: 2022-11-26
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: check_frequency ^^^
@@ -927,7 +928,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2022-12-07
+#: last_checked: 2022-12-20
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -2588,12 +2589,7 @@ Max-Pallenberg-Pfad: Bordstein	q2 15460,1764 15465,1953
 (Gertrud-Dorka-Weg - Lieselotte-Berger-Str.): Bordstein, schmal	q2 17796,-97 17777,-68
 Straße 618: schmale Straße	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
-#: next_check_id: ROSENTHALER-2022
-# REMOVED --- #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der Südseite?
-#: XXX evtl. wird hier die Zufahrt für Radfahrer verbessert
-#: last_checked: 2022-12-06
-#: check_frequency: 14d
-Gormannstr.: Bordstein	q2 10341,13376 10358,13381
+# REMOVED (eigentlich bereits gut befahrbar) --- #: next_check_id: ROSENTHALER-2022 --- # REMOVED --- #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der Südseite? --- #: XXX evtl. wird hier die Zufahrt für Radfahrer verbessert --- #: last_checked: 2022-12-20 --- #: check_frequency: 14d --- Gormannstr.: Bordstein	q2 10341,13376 10358,13381
 # 
 #: note: Grünanlagenschild gilt nicht für diesen Weg vvv
 (Popitzweg - Halemweg): Fußgänger	q2 1884,14412 2126,14392 2254,14387
