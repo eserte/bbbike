@@ -275,10 +275,9 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 # REMOVED --- #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
-#: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-12-13
-#: check_frequency: 7d
-# REMOVED --- #: check_frequency: 45d
+#: XXX Wird hier neu asphaltiert werden?
+#: last_checked: 2022-12-21
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -505,15 +504,18 @@ Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 1
 #: note: alter brüchiger Asphaltstreifen existiert auch hier, aber wegen diagonal parkender Autos nicht benutzbar
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
+#: next_check_id: ODER-2022
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radweg wird Gehweg)
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
+#: by: https://www.infravelo.de/projekt/oderstrasse/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
 #: last_checked: 2022-10-02
 #: check_frequency: 180d
+#: next_check: 2024-06-30
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
 Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12054,9429 12074,9217
@@ -1610,7 +1612,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4680 (Planung ab 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erwähnung der Hufelandstraße)
-#: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (in API verschwunden, Web ist noch da)
 #: osm_watch: way id="4615063" version="31"
 #: last_checked: 2022-11-17
 #: check_frequency: 210d
@@ -30553,7 +30555,10 @@ Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17301,1
 #: corrected_by: srt (changed wording: Ausbesserungen -> Schäden, one part with Q1-) vvv
 Gotlindestr.: Beton mit Schäden	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616
 Gotlindestr.: Beton mit Schäden	Q1- 16284,12616 16409,12612
-Gotlindestr.: Beton mit Schäden	Q1 16409,12612 16432,12612 16470,12612 16576,12612 16720,12614 16859,12613
+Gotlindestr.: Beton mit Schäden	Q1 16409,12612 16432,12612 16470,12612 16576,12612
+#: corrected_by: srt (Beton mit Schäden, Q1 -> ..., neu gemacht)
+Gotlindestr.: Asphalt	Q0- 16576,12612 16720,12614
+Gotlindestr.: Beton mit Schäden	Q1 16720,12614 16859,12613
 #: corrected_by ^^^
 #: confirmed_by: srt
 Dietlindestr.: Asphalt	Q0 17056,12304 17088,12506

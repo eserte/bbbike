@@ -874,7 +874,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-12-20
+#: last_checked: 2022-12-21
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-21
 	RW2; 14994,12121 15117,12106 15361,12071
@@ -5175,8 +5175,8 @@ Verbundsteinpflaster	RW1;RW1 7753,994 7740,1041 7630,1297 7539,1529 7451,1818 74
 	RW6;RW6 -7931,-2146 -7878,-2164 -7831,-2230 -7780,-2279 -7720,-2300
 	RW6;RW6 13886,13668 13858,13719 13824,13771
 Busspur ist immer gültig	RW5; 2613,20416 2515,20399 2453,20384
-asphaltiert	RW1; 16977,11769 17020,11748
-asphaltiert	RW1;RW1 17020,11748 17169,11677
+asphaltiert, wenig Platz zu parkenden Autos	RW1; 16977,11769 17020,11748 17169,11677
+asphaltiert	RW1; 17169,11677 17020,11748
 #: by: Andreas Mühlhausen:
 #: confirmed_by: srt
 	RW6;RW6 1054,3107 1065,3081 1262,2975
