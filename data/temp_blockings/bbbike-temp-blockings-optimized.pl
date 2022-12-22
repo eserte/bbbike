@@ -4289,7 +4289,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-14
+#: last_checked: 2022-12-20 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
@@ -5097,18 +5097,20 @@ Pariser Platz	2::temp 8592,12252 8637,12258 8722,12268 8804,12280
        },
        {
          'data' => '#: also_indoor: traffic (B,G)
-#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
+# REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: XXX evtl. mittlerweile bis fast Britzer Damm ausgeweitet?
-#: last_checked: 2022-11-13
-# REMOVED --- #: check_frequency: 14d
+#: last_checked: 2022-12-22
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
-	q3::inwork 13027,6168 13227,6209
+Jahnstr.	q3::inwork 12833,6127 13027,6168 13227,6209
+Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
+Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 ',
          'from' => undef,
          'id' => 3496,
-         'text' => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Abschnitt der Fahrbahn kann gesperrt sein (Stand Mitte November 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
+         'text' => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Dezember 2022)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5264,7 +5266,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-12-04 vvv
+#: last_checked: 2022-12-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-01-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5402,7 +5404,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-04
+#: last_checked: 2022-12-22
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5664,25 +5666,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX Baustellenbereich ist neu asphaltiert, baldige Freigabe wahrscheinlich
-#: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-12-15 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2022-11-01 vvv
-	q3::inwork; 13102,8343 12995,8213 12960,8246
-	q3::inwork 12995,8213 13060,8148
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 3589,
-         'text' => 'Innstr., Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Sonnenallee; außerdem Anbindung Richtung Südosten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: BADFREIENWALDE-2022
@@ -5788,6 +5772,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'data' => '#: note: Einbahnstraße etwa 70m lang
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
+#: also_indoor: traffic (none)
 #: last_checked: 2022-11-08
 #: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
@@ -6448,7 +6433,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1688130000
        },
        {
-         'data' => '#: last_checked: 2022-12-15 vvv
+         'data' => '#: last_checked: 2022-12-22 vvv
 	q4::inwork; 13946,7918 13891,7961
 	q3::inwork; 13891,7961 13946,7918
 #: last_checked ^^^

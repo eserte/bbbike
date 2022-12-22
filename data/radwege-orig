@@ -315,7 +315,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-12-15
+#: last_checked: 2022-12-22
 #: check_frequency: 14d
 #: next_check: 2022-12-27
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
@@ -553,8 +553,6 @@ teilweise sehr eng, mäßiges Verbundsteinpflaster, Wurzeln	RW1;RW1 -3746,2849 -36
 	RW2;RW2 -3113,1692 -3184,1643 -3262,1588 -3353,1526 -3464,1452 -3567,1385 -3729,1297 -3890,1249 -4003,1234
 Verbundsteinpflaster	RW1; -4003,1234 -4497,1165 -4583,1185 -4803,1240
 	RW1; -4803,1240 -4583,1185 -4497,1165 -4003,1234
-	RW1; 161,3062 255,3085 452,3133 534,3149
-	RW1; -3011,1761 -2912,1829 -2671,1988 -2621,2022 -2550,2068 -2280,2177 -2074,2258 -2023,2279 -1959,2305 -1646,2434 -1626,2441 -1340,2554 -1249,2590 -1085,2653 -984,2692 -870,2737 -739,2793 -726,2799 -563,2862 -512,2883 -391,2914 -267,2945 -151,2975 -49,3003 50,3031 161,3062
 # 
 #: note: B1 Richtung Potsdam
 Gehwegplatten	RW1; 3048,4305 2941,4245 2815,4162 2723,4093 2599,4018 2308,3862
@@ -567,7 +565,13 @@ Gehwegplatten mit Bord	RW1; 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2
 	RW1; -1249,2590 -1340,2554 -1626,2441 -1646,2434 -1959,2305 -2023,2279 -2074,2258 -2280,2177 -2550,2068 -2621,2022 -2671,1988 -2912,1829 -3011,1761
 # 
 #: note: B1 Richtung Berlin-Mitte
-	RW1; 534,3149 669,3119 820,3081 945,3061 1022,3095 1054,3107 1125,3139 1228,3210 1338,3300 1415,3362 1552,3460 1847,3620 2230,3823
+	RW1; -3011,1761 -2912,1829 -2671,1988 -2621,2022 -2550,2068 -2280,2177 -2074,2258 -2023,2279 -1959,2305 -1646,2434 -1626,2441 -1340,2554 -1249,2590
+#: by: https://nitter.it/VIZ_Berlin/status/1605883539341328386?cursor=LBkWgIC87fm6oMksJQQRAAA%3D#r
+#: by: https://www.infravelo.de/projekt/potsdamer-chaussee-3/
+#: by: https://nitter.it/fahrrad_berlin/status/1605880872116396033#m
+#: historical_note: früher (bis Dezember 2022) RW1
+	RW4; -1249,2590 -1085,2653 -984,2692 -870,2737 -739,2793 -726,2799 -563,2862 -512,2883 -391,2914
+	RW1; -391,2914 -267,2945 -151,2975 -49,3003 50,3031 161,3062 255,3085 452,3133 534,3149 669,3119 820,3081 945,3061 1022,3095 1054,3107 1125,3139 1228,3210 1338,3300 1415,3362 1552,3460 1847,3620 2230,3823
 	RW2; 2230,3823 2308,3862
 	RW1; 2308,3862 2599,4018 2723,4093
 	RW10; 2723,4093 2823,4152 2950,4232
@@ -1152,7 +1156,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-12-15 vvv
+#: last_checked: 2022-12-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2644,7 +2648,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-12-15 vvv
+#: last_checked: 2022-12-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4584,7 +4588,7 @@ Grünbeschichtung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2022-11-18 vvv
+#: last_checked: 2022-12-22 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: 20140224-20230630 vvv
@@ -6655,7 +6659,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2022-11-24 vvv
+#: last_checked: 2022-12-22 vvv
 #: check_frequency: 60d vvv
 temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
@@ -6664,9 +6668,10 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-22
 #: check_frequency: 60d
-	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12714,8249 12753,8187
+	RW4; 12753,8187 12788,8101 12823,8028
 Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
 Grünbeschichtung	RW3; 12916,7775 12972,7602 12987,7560 13015,7471 13018,7441 13029,7353
 Grünbeschichtung	RW4; 13029,7353 13030,7346 13034,7319 13043,7234 13051,7157
@@ -6699,11 +6704,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-22
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-22
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7799,7 +7804,7 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 #: osm_watch: way id="30958674" version="22"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
-#: osm_watch: way id="4526218" version="24"
+#: osm_watch: way id="4526218" version="25"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^

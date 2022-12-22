@@ -121,7 +121,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2022-12-04
+#: last_checked: 2022-12-22
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -861,7 +861,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-11-24
+#: last_checked: 2022-12-22
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1061,7 +1061,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-12-17
+#: last_checked: 2022-12-22
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12215,7 +12215,8 @@ Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Wohnquartier Bautzener Straﬂe): Asphalt	Q0 8206,9262 8254,9278 8255,9357 8260,9560 8227,9579
 #: by: mapillary
 (Straﬂe 50 - Straﬂe 50): Asphalt und Verbundsteinpflaster	Q1+ 15305,22017 15325,22070 15353,22105
-Saalestr.: Asphalt mit einigen Sch‰den	Q0- 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
+Saalestr.: Asphalt mit einigen Sch‰den	Q1+ 14015,7631 13980,7548
+Saalestr.: Asphalt mit einigen Sch‰den	Q0- 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
 Hawaiiweg: Asphalt	Q0 -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 Trinidadweg: Asphalt	Q0 -2663,18634 -2660,18717 -2659,18778
 Galapagosweg: Asphalt	Q0 -2563,18629 -2559,18713 -2558,18771
@@ -12528,7 +12529,8 @@ Einˆdshoferweg: Asphalt	Q0 9519,4537 9494,4658
 Zietenstr. (Lankwitz) [Stichstraﬂe]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6246,2318
 #: next_check_id: EINHEITSDENKMAL-2022
 #: XXX: provisorischer Asphalt, sp‰ter vermutlich Kleinpflastersteine
-#: last_checked: 2022-12-14
+#: last_checked: 2022-12-22 (daf, Pflasterarbeiten)
+#: check_frequency: 30d
 #: next_check: 2023-10-01
 Schloﬂplatz: Asphalt	Q0 10174,12284 10102,12384
 Schloﬂplatz: Kleinpflastersteine	Q1- 10102,12384 10175,12435
