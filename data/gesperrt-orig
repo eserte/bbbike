@@ -2351,8 +2351,8 @@ tragen (36 Stufen)	0:45 18687,4649
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: next_check: 2022-12-01 vvv
-tragen oder Aufzug	0:35 9195,405
-tragen oder Aufzug	0:35 9228,417
+tragen (2x15 Stufen) oder Aufzug	0:35 9209,417
+tragen (3x12 Stufen) oder Aufzug	0:35 9249,421
 #: next_check ^^^
 # 
 tragen (28 Stufen)	0:30 6138,12877
@@ -3527,9 +3527,11 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: last_checked ^^^
 # 
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="1"
 #: last_checked: 2022-11-26 (Baustraße existiert noch)
-#: check_frequency: 60d
+#: check_frequency: 180d
+#: next_check: 2028-12-23
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wexstra%C3%9Fe-27-bruchsaler-stra%C3%9Fe.1254/#post-19647
@@ -3626,7 +3628,7 @@ Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,37
 #: osm_watch: way id="24189226" version="23"
 #: XXX Qualität nach den Bauarbeiten?
 #: XXX wird es auch Bauarbeiten am Flutgraben geben?
-#: last_checked: 2022-12-09 (osm)
+#: last_checked: 2022-12-23
 #: check_frequency: 60d
 #: next_check: 2023-06-01
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
@@ -3700,18 +3702,6 @@ Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s:q3 23608,1210 23520,1194
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
-# 
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931
-#: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html
-#: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
-#: by: https://www.gm013.la/work/fmp
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
-#: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-12-20
-#: check_frequency: 30d
-#: next_check: 2023-07-01
-(Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 # 
 # REMOVED (Absperrgitter mittlerweile üblicherweise verschoben) --- #: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23, 2022-09-30, 2022-10-29) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-09-30 --- Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
 # 
@@ -3925,16 +3915,51 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: confirmed_by: srt (am S-Bhf.)
 #: osm_watch: way id="24557771" version="8" vvv
 #: XXX bis wann sind die Wege gesperrt? vvv
-#: last_checked: 2022-10-31 (daf) vvv
-#: check_frequency: 180d vvv
+#: last_checked: 2022-12-23 vvv
+#: check_frequency: 360d vvv
 # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92
-Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9233,418
-# REMOVED (hier wird die bauzeitliche Umleitung für Fußgänger/Radfahrer sein) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9233,418 9218,458 9178,556
-Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
+Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9178,556
+# REMOVED (hier wird die bauzeitliche Umleitung für Fußgänger/Radfahrer sein) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9178,556 9218,458 9178,556
+# REMOVED --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: osm_watch ^^^
+# 
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/ende-2022-wird-die-buckower-chaussee-gesperrt_a316425 (ab Herbst 2022 für vier Jahre)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (IV. Quartal 2022 bis 2026)
+#: by: https://bieterportal.noncd.db.de/evergabe.bieter/eva/supplierportal/portal/subproject/277ce8e7-649d-414b-b64e-463fcf45ed05/details (Auftragsdauer: 28.02.2022 - 31.12.2025)
+#: by: https://twitter.com/VIZ_Berlin/status/1462760545208131584
+#: by: https://www.deutschebahn.com/pr-berlin-de/aktuell/presseinformationen/Meilenstein-beim-Ausbau-der-Dresdner-Bahn-Erster-von-neun-Bahnuebergaengen-beseitigt-6959472 (Ende 2021 für den Autoverkehr gesperrt, ab Ende 2022 auch für den Rad/Fuß/Busverkehr)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/unterfuehrung-an-der-dresdner-bahn-trasse-fertig-sperrung-der-buckower-chaussee-steht-bevor_a329177
+#: by: https://www.berliner-woche.de/marienfelde/c-bauen/in-wenigen-wochen-wird-die-buckower-chaussee-fuer-den-autoverkehr-gesperrt_a329360 (bis Ende 2025)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (für Radfahrer bis Dez 2022 passierbar, danach Überführung mit Aufzügen, Sperrung bis 2025)
+#: by: https://viz.berlin.de/2022/01/sperrung-bahnuebergang-buckower-chaussee/
+#: by: https://viz.berlin.de/wp-content/uploads/Buckower-Chaussee.png
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/lange-wege-zur-bushaltestelle_a350831
+#: by: https://www.berliner-zeitung.de/mensch-metropole/planungspanne-schon-wieder-wurde-eine-strassenbahnstrecke-vergessen-li.250623 (Bauzeit weiterhin Dezember 2022 bis 2025)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1122_barrierefrei.pdf (Busumleitung ab 2022-11-21)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/busse-fahren-umleitungsstrecke_a363470 (für Fußgänger noch bis zum 2.12.2022 offen; Treppenanlage+Aufzüge am südlichen Eingang des Bahnhofs)
+#: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
+#: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
+#: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
+#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
+#: source_id: bvg2021:x11#BVG312077_0
+#: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
+#: note: Eintrag existiert auch in temp blockings
+#: also_indoor: traffic (G,B(nur eine Richtung))
+#: also_indoor: search Buckower_Chaussee
+# REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
+#: osm_watch: way id="4713304" version="41"
+#: priority: #A
+#: last_checked: 2022-12-23
+#: check_frequency: 360d
+#: next_check: 2025-12-31
+Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
@@ -4339,7 +4364,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: osm_watch: way id="47935842" version="16"
 #: osm_watch: way id="681299267" version="4"
 #: priority: #A vvv
-#: last_checked: 2022-12-17 (osm) vvv
+#: last_checked: 2022-12-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv

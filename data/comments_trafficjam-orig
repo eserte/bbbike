@@ -79,7 +79,7 @@ Berliner Allee: Gleisbauarbeiten	Jam; 14619,16551 14610,16522 14556,16391 14499,
 #: also_indoor ^^^
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2022-11-24 vvv
+#: last_checked: 2022-12-23 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-09-01 vvv
 Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
@@ -128,15 +128,15 @@ Leipziger Str. (Richtung Osten)	Jam; 9268,11590 9444,11616 9569,11631
 Friedrichstr.	Jam; 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351
 # 
 #: next_check_id: FRIEDRICH-2020
-#: last_checked: 2022-11-23 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
+#: last_checked: 2022-12-23 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: !20200821-20220401 vvv
 # REMOVED --- #: valid: -20200821 vvv
 Friedrichstr.	Jam; 9418,11804 9432,11702 9444,11616
 Friedrichstr.	Jam; 9444,11616 9432,11702 9418,11804
 # REMOVED --- #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

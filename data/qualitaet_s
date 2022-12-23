@@ -5,6 +5,8 @@
 Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
+(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9200,562
+(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9123,533
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2023,15683 -1978,15684 -1923,15684 -1849,15683 -1833,15689 -1700,15762
@@ -1494,7 +1496,6 @@ Manitiusstr.: Asphalt	Q0 12374,9542 12523,9465
 Nansenstr.: Kopfsteinpflaster	Q2 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
 Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
-(Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11998,8872 12012,9092
 Hobrechtstr.: Kleinsteinpflaster	Q1 12012,9092 12005,9211
@@ -10019,8 +10020,7 @@ Fingerstrauchweg: unbefestigte Straße	Q2 10785,23740 10839,23640
 Heckenrosenweg: unbefestigte Straße	Q2 10842,23773 10974,23534
 Feuerdornweg: unbefestigte Straße	Q2 11008,23572 10887,23796
 Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
-(Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9178,556 9218,458 9249,434 9296,335 9271,323
-(Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9233,418 9218,458
+(Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9178,556
 Zachenberger Str.: Verbundsteinpflaster	Q1 19889,9400 19824,9405 19780,9409
 Am S-Bhf. Bellevue: Gehwegplatten	Q1 6694,12627 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
@@ -11110,6 +11110,9 @@ Forum an der Museumsinsel: Kopfsteinpflaster	Q2 9650,13074 9682,13167 9633,13192
 (Tränkegraben - Volkradstr.): Verbundsteinpflaster	Q1 17422,10571 17503,10544
 Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Pfad	Q2 15796,14310 15791,14320 15699,14350
 (Diesterwegstr. - Ella-Kay-Str.): Asphalt	Q0 12056,15159 12195,15083
+Malteserstr.: Verbundsteinpflaster	Q1 7829,882 7867,831
+Marienfelder Allee: Verbundsteinpflaster	Q1 7857,802 7867,831
+Marienfelder Allee: Verbundsteinpflaster	Q1 7774,647 7790,672
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

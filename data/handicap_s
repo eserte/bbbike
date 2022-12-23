@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10207,-2173 10200,-2176 10182,-2183 10161,-2146 10096,-2137
@@ -52,7 +53,9 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4::inwork 12556,15518 12605,15491 12621,15482
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
-(Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgänger	q3 9195,405 9212,411 9228,417 9233,418
+(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
+(Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
+(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9123,533 9160,460 9200,450
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
@@ -1093,7 +1096,7 @@ Lorcher Str.: eng, Fußgänger	q2 4273,7002 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Fußgänger	q1 4160,7043 4068,7040
 Crellestr.: Fußgänger, Straßencafés	q2 7484,9066 7524,9093 7570,9124
 (S-Bhf. Südkreuz - IKEA): Fußgänger	q1 7921,7288 7920,7224 7924,7185
-Königstuhlweg: Gehweg, für Radfahrer nicht freigegeben, Bordsteine	q2 10087,2365 10214,2348 10334,2321
+Königstuhlweg: Gehweg, für Radfahrer nicht freigegeben, Bordsteine	q3 10087,2365 10214,2348 10334,2321
 Hörsingsteig: Fußgänger	q1 14082,2289 14099,2197 14086,2148
 Hörsingsteig: Fußgänger, Bordsteine	q2 14086,2148 14165,2106 14369,2016
 Hörsingsteig: Fußgänger	q1 14369,2016 14444,2090 14515,2212

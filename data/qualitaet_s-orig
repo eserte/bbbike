@@ -31,6 +31,16 @@ Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13779,10642 13850,10612 13919,10583
 # 
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: last_checked: 2022-12-23 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2025-12-31 vvv
+(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9200,562
+(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9123,533
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: temporary ^^^
 ######################################################################
 # 
@@ -363,7 +373,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="25"
-#: last_checked: 2022-12-08
+#: last_checked: 2022-12-23
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -861,7 +871,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-23
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -2067,7 +2077,7 @@ Nansenstr.: Kopfsteinpflaster	Q2- 12412,9610 12374,9542 12333,9470 12270,9362 12
 #: note: teilweise mit Asphaltflicken
 Reuterplatz: Kopfsteinpflaster	Q2- 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
-(Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
+# REMOVED (wird umgestaltet) --- (Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 # REMOVED (eigentlich keine großen Qualitätseinbußen) --- Husemannstr.: mäßiger Asphalt	Q1+ 11265,14756 11285,14958
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11998,8872 12012,9092
@@ -11662,8 +11672,8 @@ Heckenrosenweg: unbefestigte Straße	Q2 10842,23773 10974,23534
 Feuerdornweg: unbefestigte Straße	Q2 11008,23572 10887,23796
 Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
 # REMOVED (Fahrbahn ist OK) --- Gallwitzallee: schadhafter Radweg sowie Asphalt auf Fahrbahn mit Schäden	Q1 6844,1813 6799,1922 6759,2137
-(Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9178,556 9218,458 9249,434 9296,335 9271,323
-(Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9233,418 9218,458
+# REMOVED --- (Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9200,562 9218,458 9249,434 9296,335 9271,323
+(Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9178,556
 Zachenberger Str.: Verbundsteinpflaster	Q1+ 19889,9400 19824,9405 19780,9409
 Am S-Bhf. Bellevue: Gehwegplatten	Q1 6694,12627 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
@@ -12909,6 +12919,9 @@ Forum an der Museumsinsel: Kopfsteinpflaster	Q2 9650,13074 9682,13167 9633,13192
 (Tränkegraben - Volkradstr.): Verbundsteinpflaster	Q1+ 17422,10571 17503,10544
 Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Pfad	Q2+ 15796,14310 15791,14320 15699,14350
 (Diesterwegstr. - Ella-Kay-Str.): Asphalt	Q0 12056,15159 12195,15083
+Malteserstr.: Verbundsteinpflaster	Q1 7829,882 7867,831
+Marienfelder Allee: Verbundsteinpflaster	Q1 7857,802 7867,831
+Marienfelder Allee: Verbundsteinpflaster	Q1 7774,647 7790,672
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -31742,4 +31755,5 @@ Einmündungsbereich asphaltiert	Q0 9603,16468
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 20137,13016
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13598,13180
 Aufpflasterung im Kreuzungsbereich	Q1- 9800,14306
+Einmündungsbereich mit Kopfsteinpflaster	Q2 9006,4196
 #: ignore ^^^

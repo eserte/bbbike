@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-12-14 vvv
+#: last_checked: 2022-12-23 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -378,10 +378,9 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
-#: last_checked: 2022-12-07 (mapillary)
-# REMOVED --- #: check_frequency: 14d
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-23
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-12-31
 # REMOVED --- #: valid: !20200821-20221122
 Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # REMOVED --- #: valid: 20200821-20221122 --- Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
@@ -3690,7 +3689,7 @@ Waltroper Platz	N 4056,1353 4082,1370 4109,1389
 Lindenstr. (Lichterfelde)	N 3895,1219 3999,1185 4146,1128 4207,1113 4271,1081 4355,1043
 # 
 #: carriageway_width: 33m (16m+medial strip=4 m+13m, Höhe Motzener Str.)
-Nahmitzer Damm	H 7790,672 7937,583 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
+Nahmitzer Damm	H 7790,672 7847,638 7937,583 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: priority: #A
 #: next_check: 2025-01-04 vvv
@@ -3709,9 +3708,9 @@ Buckower Chaussee	N 8533,525 8742,475 8972,498 9002,471
 #: priority: #A
 #: next_check: 2025-01-04 vvv
 #: valid: !20220124-20250104
-Buckower Chaussee	H 9002,471 9069,506 9123,533 9158,551 9178,556 9250,576 9858,744
+Buckower Chaussee	H 9002,471 9069,506 9123,533 9164,552 9178,556 9200,562 9250,576 9858,744
 #: valid: 20220124-20250104
-Buckower Chaussee	NH 9002,471 9069,506 9123,533 9158,551 9178,556 9250,576 9858,744
+Buckower Chaussee	NH 9002,471 9069,506 9123,533 9164,552 9178,556 9200,562 9250,576 9858,744
 #: next_check ^^^
 Buckower Chaussee	H 9858,744 10047,813 10187,872 10276,906 10324,925 10427,968
 # 
@@ -13345,29 +13344,35 @@ An der Apostelkirche	N 7275,10418 7298,10430 7322,10495 7312,10505 7281,10510 72
 Lessingstr. (Lichtenrade)	N 10735,137 10613,108 10512,83 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
-#: osm.highway: service
-(Parkplatz S-Bhf. Buckower Chaussee)	N 9218,458 9249,434 9296,335 9271,323
+# REMOVED (Bauarbeiten, evtl. sieht das danach alles anders aus) --- #: osm.highway: service --- (Parkplatz S-Bhf. Buckower Chaussee)	N 9218,458 9249,434 9296,335 9271,323
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
-#: last_checked: 2022-10-31 (daf)
-#: check_frequency: 180d
+#: last_checked: 2022-12-23
+#: check_frequency: 360d
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: XXX bauzeitliche Umleitung, vermutlich bis 2025 vvv
-#: next_check: 2022-12-01 vvv
-(Buckower Chaussee - Fußgängerbrücke)	NN 9123,533 9195,405
-(Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9195,405 9212,411 9228,417 9233,418
-(Fußgängerbrücke - Buckower Chaussee)	NN 9233,418 9218,458 9178,556
+#: last_checked: 2022-12-23 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2025-12-31 vvv
+#: note: hier auch parallel eine Servicestraße, die zumindest Richtung Süden legal befahren werden kann
+#: osm_watch: way id="1121227933" version="1"
+(Buckower Chaussee - Fußgängerbrücke)	NN 9123,533 9160,460
+(Buckower Chaussee - Fußgängerbrücke)	NN 9160,460 9200,450
+(Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
+(Fußgängerbrücke - Buckower Chaussee)	NN 9254,413 9239,461 9200,562
+#: last_checked ^^^
+#: check_frequency ^^^
 #: next_check ^^^
 #: XXX ^^^
 # 
 #: osm.highway: service
 (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
-(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9233,418
+(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9178,556
 (unter der S-Bahn)	NN 9699,-600 9562,-619 9520,-641
 Miethepfad	N 9520,-641 9561,-748 9598,-846
 Poleigrund	N 9156,-883 9340,-829 9561,-748

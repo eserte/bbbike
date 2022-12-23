@@ -21144,7 +21144,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113563',
        data  => <<EOF,
-	q4::inwork 9178,556 9158,551 9123,533 9069,506
+	q4::inwork 9178,556 9164,552 9123,533 9069,506
 EOF
      },
      { from  => 1344282201, # 2012-08-06 21:43
@@ -30684,7 +30684,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-20 (mapillary)
+#: last_checked: 2022-12-23
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
@@ -31445,8 +31445,9 @@ EOF
 # REMOVED --- #: XXX prüfen, ob die Sperrung tatsächlich erfolgt vvv
 # REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 # REMOVED --- #: next_check: 2020-07-01 vvv
-	2::inwork 9507,-85 9473,-92 9271,323 9253,370 9233,418 9218,458 9178,556
-	2::inwork 9271,323 9296,335 9249,434 9218,458
+	2::inwork 9178,556 9253,370 9271,323 9473,-92 9507,-85
+# REMOVED ---	2::inwork 9507,-85 9473,-92 9271,323 9253,370 9178,556 9218,458 9178,556
+# REMOVED ---	2::inwork 9271,323 9296,335 9249,434 9218,458
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-29 00:00:00") }, # 1 Tag Vorlauf
@@ -34456,14 +34457,15 @@ EOF
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-29 00:00:00"), # 1640408400, # 2021-12-25 06:00
+     { from  => $isodate2epoch->("2022-12-25 00:00:00"), # 1640408400, # 2021-12-25 06:00
        until => $isodate2epoch->("2023-01-02 23:59:59"), # 1641164400, # 2022-01-03 00:00
-       text  => 'Silvesterfeier am Brandenburger Tor: vermutlich Sperrung des Pariser Platzes um den Jahreswechsel 2022/2023 herum',
+       text  => 'Silvesterfeier am Brandenburger Tor: Sperrung des Pariser Platzes zum Jahreswechsel 2022/2023, Aufbauarbeiten beginnen am 26.12.2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
 #: by: https://viz.berlin.de/2021/12/feiertage/
 #: by: https://viz.berlin.de/2022/12/verkehr-an-den-feiertagen-und-zum-jahreswechsel/
+#: by: https://viz.berlin.de/2022/12/verkehrsvorschau_24-261222/ (Aufbauarbeiten ab dem 26.12.2022)
 # REMOVED --- #: source_id: viz2021:13.369855,52.515768,26.12.2021,06:00
 # REMOVED --- #: source_id: viz2021:13.37737,52.51457,26.12.2021,06:00
 # REMOVED --- #: source_id: viz2021:13.351326,52.514425,26.12.2021,06:00
@@ -35158,7 +35160,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-23
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -36325,7 +36327,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-20
+#: last_checked: 2022-12-23
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -37269,41 +37271,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/ende-2022-wird-die-buckower-chaussee-gesperrt_a316425 (ab Herbst 2022 für vier Jahre)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (IV. Quartal 2022 bis 2026)
-#: by: https://bieterportal.noncd.db.de/evergabe.bieter/eva/supplierportal/portal/subproject/277ce8e7-649d-414b-b64e-463fcf45ed05/details (Auftragsdauer: 28.02.2022 - 31.12.2025)
-#: by: https://twitter.com/VIZ_Berlin/status/1462760545208131584
-#: by: https://www.deutschebahn.com/pr-berlin-de/aktuell/presseinformationen/Meilenstein-beim-Ausbau-der-Dresdner-Bahn-Erster-von-neun-Bahnuebergaengen-beseitigt-6959472 (Ende 2021 für den Autoverkehr gesperrt, ab Ende 2022 auch für den Rad/Fuß/Busverkehr)
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/unterfuehrung-an-der-dresdner-bahn-trasse-fertig-sperrung-der-buckower-chaussee-steht-bevor_a329177
-#: by: https://www.berliner-woche.de/marienfelde/c-bauen/in-wenigen-wochen-wird-die-buckower-chaussee-fuer-den-autoverkehr-gesperrt_a329360 (bis Ende 2025)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (für Radfahrer bis Dez 2022 passierbar, danach Überführung mit Aufzügen, Sperrung bis 2025)
-#: by: https://viz.berlin.de/2022/01/sperrung-bahnuebergang-buckower-chaussee/
-#: by: https://viz.berlin.de/wp-content/uploads/Buckower-Chaussee.png
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/lange-wege-zur-bushaltestelle_a350831
-#: by: https://www.berliner-zeitung.de/mensch-metropole/planungspanne-schon-wieder-wurde-eine-strassenbahnstrecke-vergessen-li.250623 (Bauzeit weiterhin Dezember 2022 bis 2025)
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1122_barrierefrei.pdf (Busumleitung ab 2022-11-21)
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/busse-fahren-umleitungsstrecke_a363470 (für Fußgänger noch bis zum 2.12.2022 offen; Treppenanlage+Aufzüge am südlichen Eingang des Bahnhofs)
-#: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
-#: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
-#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
-#: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
-#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
-#: source_id: bvg2021:x11#BVG312077_0
-#: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
-#: also_indoor: traffic (G,B(nur eine Richtung))
-#: also_indoor: search Buckower_Chaussee
-# REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
-#: osm_watch: way id="4713304" version="41"
-#: XXX Bei Sperrung einen gesperrt-orig-Eintrag erstellen sowie alle by-Direktiven dorthin verlegen
-#: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
-#: priority: #A
-#: last_checked: 2022-10-31 (daf)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-12-01
-# REMOVED --- #: next_check: 2023-01-04
-	2::inwork 9123,533 9158,551 9178,556
+#: note: existiert auch in gesperrt-orig
+# REMOVED --- #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
+	2::inwork 9123,533 9164,552 9178,556
 EOF
      },
      { from  => 1669010400, # 2022-11-21 07:00

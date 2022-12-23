@@ -876,7 +876,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 	RW3; 14926,12129 14994,12121
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
-#: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022)
+#: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2022-12-21
 #: check_frequency: 60d
@@ -2348,14 +2348,15 @@ neues Verbundsteinpflaster	RW1; 10427,968 10324,925 10276,906
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und Sa 9-18 Uhr	RW1; 9858,744 10047,813 10187,872 10276,906 10324,925
 	RW1; 9858,744 9250,576
 Radweg nur aufgemalt	RW1; 9250,576 9858,744
-	RW1;RW4 9250,576 9178,556
-	RW1;RW4 9178,556 9158,551 9123,533 9069,506
+	RW1;RW4 9250,576 9200,562 9178,556
+	RW1;RW4 9178,556 9164,552 9123,533 9069,506
 	RW1; 9069,506 9002,471 8906,392 8736,337
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8736,337 8906,392 9002,471 9069,506
-	RW1; 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583 7847,638
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7937,583 8075,499
 	RW1; 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
-	RW1;RW2 7937,583 7790,672
+	RW2; 7847,638 7937,583
+	RW2;RW2 7847,638 7790,672
 	RW4;RW4 7031,12320 7051,12426
 	RW1;RW1 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
 	RW1;RW1 8161,16752 8082,16483 8093,16438
@@ -3493,7 +3494,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
-#: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022)
+#: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv)
 #: note: laut rbb bis 15.11.2022
 #: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
@@ -6438,7 +6439,6 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 824,2210 809,2309 790,2
 	RW6;RW6 882,396 910,278
 	RW1;RW1 1283,4260 1385,4138 1442,4065
 altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 1442,4065 1451,4026 1462,3906 1474,3688 1485,3630 1504,3555 1552,3460
-Tempo 10	RW6;RW6 9033,8029 9130,8029 9240,8028
 	RW1;RW1 10148,1023 10162,1054 10228,1194 10329,1231
 	RW6;RW6 10659,1370 10737,1397 10816,1411
 	RW6;RW6 10737,1397 10795,1251
@@ -6474,11 +6474,12 @@ Verbundsteinpflaster	RW1;RW2 19875,18182 20136,18291 20160,18301
 asphaltiert	RW1;RW9 7437,12368 7215,12295 7031,12320
 	RW3;RW4 10285,12306 10199,12251 10174,12284 10109,12238 10091,12232
 	RW3;RW3 10091,12232 10029,12208 9972,12184 9939,12174 9898,12161
-Tempo 10	RW6;RW6 9115,7645 9040,7648 8994,7639 8956,7598
-Tempo 10	RW6;RW6 9040,7648 9035,7810 9033,8029 9032,8254
-Tempo 10	RW6;RW6 8959,7824 9035,7810 9130,7810 9240,7811
-Tempo 10	RW6;RW6 9097,7469 9145,7522 9120,7600 9115,7645 9132,7661 9130,7810 9130,8029 9128,8251
-Tempo 10	RW6;RW6 9132,7661 9242,7658
+# REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9033,8029 9130,8029 9240,8028
+# REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9115,7645 9040,7648 8994,7639 8956,7598
+# REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9040,7648 9035,7810 9033,8029 9032,8254
+# REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 8959,7824 9035,7810 9130,7810 9240,7811
+# REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9097,7469 9145,7522 9120,7600 9115,7645 9132,7661 9130,7810 9130,8029 9128,8251
+# REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9132,7661 9242,7658
 die letzten Meter sind benutzungspflichtig	RW3; 8601,8724 8594,8777
 	RW6;RW6 7716,8370 7716,8356 7715,8308
 	RW1;RW1 3711,13210 3645,13206 3556,13200
@@ -6659,19 +6660,23 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2022-12-22 vvv
+#: last_checked: 2022-12-23 vvv
 #: check_frequency: 60d vvv
 temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
 	RW4; 12639,8344 12689,8289 12714,8249
 #: check_frequency ^^^
 #: last_checked ^^^
-#: XXX Grünbeschichtung?
-#: priority: #D
-#: last_checked: 2022-12-22
-#: check_frequency: 60d
+#: XXX Grünbeschichtung? vvv
+#: priority: #D vvv
+#: last_checked: 2022-12-23 vvv
+#: check_frequency: 60d vvv
 Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+#: XXX ^^^
 Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
 Grünbeschichtung	RW3; 12916,7775 12972,7602 12987,7560 13015,7471 13018,7441 13029,7353
 Grünbeschichtung	RW4; 13029,7353 13030,7346 13034,7319 13043,7234 13051,7157
@@ -6704,11 +6709,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-23
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-23
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7791,7 +7796,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2022-10-23 vvv
+#: last_checked: 2022-12-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -7890,7 +7895,7 @@ baulich getrennt	RW4; 10804,12461 10831,12371 10830,12279
 # 
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings) vvv
-#: last_checked: 2022-10-31 (daf) vvv
+#: last_checked: 2022-12-23 vvv
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-03-31 vvv
 # REMOVED --- #: next_check: 2024-01-01
