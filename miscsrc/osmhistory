@@ -14,14 +14,24 @@
 
 use strict;
 use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/..";
 
 use File::Temp;
+use Getopt::Long;
 use LWP::UserAgent;
 use Text::Wrap;
 use Time::Piece;
 use XML::LibXML;
 
-binmode STDOUT, ':utf8';
+use BBBikeUtil qw(is_in_path);
+
+my $use_pager = -t STDOUT && is_in_path('less');
+
+GetOptions(
+	   'pager!' => \$use_pager,
+	  )
+    or die "usage: $0 [--no-pager]\n";
 
 my $api_root_url = "https://www.openstreetmap.org/api/0.6";
 
@@ -42,6 +52,13 @@ if (!$resp->is_success) {
 }
 
 my $today = localtime->strftime('%F');
+
+if ($use_pager) {
+    my @pager_cmd = ('less', '-S');
+    open STDOUT, '|-', @pager_cmd
+	or die "Failed to run '@pager_cmd': $!";
+}
+binmode STDOUT, ':utf8';
 
 my $dom = XML::LibXML->load_xml(string => $resp->decoded_content);
 my @nodes = $dom->findnodes('/osm/*');
@@ -107,6 +124,8 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
     print "\n";
 }
 
+close STDOUT; # required for pager operation
+
 __END__
 
 =head1 NAME
@@ -115,6 +134,6 @@ osmhistory - format OSM element history like "git log -p"
 
 =head1 SYNOPSIS
 
-    osmhistory way/123456
+    osmhistory [--no-pager] way/123456
 
 =cut
