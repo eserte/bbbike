@@ -381,22 +381,43 @@ for my $file (@files) {
 		 }
 	     }
 	     for ($dir->{source_id}) {
-		 my $viz_seen;
+		 my @viz_source_ids;
 		 for my $source_id (@{ $dir->{source_id} }) {
 		     if      ($source_id =~ m{^bvg2021:(\S+)}) {
 			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/$1"];
-		     } elsif ($source_id =~ m{^viz2021:} && !$viz_seen++) {
-			 if ($proj4_epsg2078) {
-			     # NOTE: taken from MultiMap.pm
-			     my($x,$y) = $proj4_epsg2078->forward($py, $px);
-			     $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
-			     my $scale = 11; # XXX hardcoded for now
-			     my $viz_url = sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin3_2_6_3/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
-			     push @extra_url_defs, ['VIZ', $viz_url];
-			 } else {
-			     if (!state $warned_proj4++) {
-				 warn "No proj4 handling available, cannot create VIZ links (warn only once)...\n";
-			     }
+		     } elsif ($source_id =~ m{^viz2021:}) {
+			 if ($source_id =~ m{^viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
+			     ($px,$py) = ($1,$2);
+			 }
+			 my $inactive;
+			 if ($source_id =~ m{\b(inactive|inaktiv)\)?\s*$}) {
+			     $inactive = 1;
+			 }
+			 push @viz_source_ids, {
+						source_id => $source_id,
+						px => $px,
+						py => $py,
+						inactive => $inactive,
+					       };
+		     }
+		 }
+		 if (@viz_source_ids) {
+		     @viz_source_ids = sort {
+			 if    ($a->{inactive}) { return +1 }
+			 elsif ($b->{inactive}) { return -1 }
+			 else                   { return 0 }
+		     } @viz_source_ids;
+		     my($source_id, $px, $py, $inactive) = @{$viz_source_ids[0]}{qw(source_id px py inactive)};
+		     if ($proj4_epsg2078) {
+			 # NOTE: taken from MultiMap.pm
+			 my($x,$y) = $proj4_epsg2078->forward($py, $px);
+			 $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
+			 my $scale = 11; # XXX hardcoded for now
+			 my $viz_url = sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin3_2_6_3/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
+			 push @extra_url_defs, ['VIZ', $viz_url, ($inactive ? "(inactive)" : ())];
+		     } else {
+			 if (!state $warned_proj4++) {
+			     warn "No proj4 handling available, cannot create VIZ links (warn only once)...\n";
 			 }
 		     }
 		 }
