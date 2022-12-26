@@ -860,7 +860,7 @@ Potsdamer Str. (Schˆneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 #: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird mˆglich sein, eingezogener Bereich bis zur Schellingstr.)
 #: XXX wird die Straﬂe zur Fuﬂg‰ngerzone?
-#: osm_watch: way id="4597334" version="25"
+#: osm_watch: way id="4597334" version="26"
 #: last_checked: 2022-11-27 (mapillary)
 #: next_check: 2022-12-31
 Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
@@ -3033,8 +3033,9 @@ Backbergstr.	N 12836,4649 12819,4780 12898,4974 13018,5071
 Fulhamer Allee	H 12731,4841 12819,4780 12916,4757 13001,4724 13056,4678 13266,4503
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7902 (Umbenennung beabsichtigt)
 #: XXX neuer Straﬂenname: Ingrid-Rabe-Str. (fehlt in Berlin.coords.data)
-#: last_checked: 2022-10-02
-#: check_frequency: 90d
+#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 30d
 Straﬂe 229 (Mariendorf)	N 11196,4325 11125,4331 11073,4342
 (Am Britzer Garten - Straﬂe 229/Koppelweg)	NN 11130,3838 11103,3960 11104,3981 11111,4055 11141,4214 11153,4306
 (Am Britzer Garten - Koppelweg)	NN 11153,4306 11196,4325
@@ -9818,17 +9819,20 @@ Nadrauer Str.	N 17215,26263 17367,26349
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6192
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6262 (Vorlage zur Kenntnisnahme)
 #: XXX Straﬂe soll in "Ilse-Krause-Str." umbenannt werden
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+# REMOVED --- #: next_check: 2022-12-31
 Straﬂe 5 (Buch)	N 17542,26302 17493,26391 17448,26469 17414,26524
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6191
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6260 (Vorlage zur Kenntnisnahme)
 #: XXX Straﬂe soll in "Rosa-Coutelle-Str." umbenannt werden
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+# REMOVED --- #: next_check: 2022-12-31
 Straﬂe 6 (Buch)	N 17493,26391 17714,26509
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6193
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6263 (Vorlage zur Kenntnisnahme)
 #: XXX Straﬂe soll in "Rose-Scheuer-Karpin-Str." umbenannt werden
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+# REMOVED --- #: next_check: 2022-12-31
 Straﬂe 7 (Buch)	N 17448,26469 17668,26607
 (Straﬂe 7 - Zepernicker Str.)	N 17668,26607 17714,26509 17764,26410
 (Radweg Berlin-Usedom)	NN 17668,26607 17661,26617 17938,26787 17964,26823
@@ -18843,7 +18847,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="17"
-#: last_checked: 2022-10-29
+#: last_checked: 2022-12-26
 #: check_frequency: 120d
 (Zufahrt Parkpl‰tze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446

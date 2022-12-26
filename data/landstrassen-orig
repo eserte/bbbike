@@ -2417,7 +2417,9 @@ Alter Markt	NN -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
 Steubenplatz	NN -12749,-1668 -12719,-1542
 # REMOVED --- #: XXX zukünftige Brauerstr. - wann wird die Straße ausgeschildert, wird sie ausgebaut? --- #: XXX außerdem wird hier irgendwo der "Versailler Platz" entstehen --- #: XXX PLZ=14467 --- #: by: http://www.potsdam.de/cms/dokumente/29389519_2027173/10818367/Amtsb_01_14.pdf --- #: by: http://www.potsdam.de/cms/dokumente/10100646_480745/b8156544/Anl_2-BP-San-P13.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._4_2016_onlineausgabe.pdf (straßenrechtliche Widmung) --- #: by: http://www.dafmap.de/d/berlin.html?id=3274&mt=0&zoom=15 (Geplanter Projektabschluss: 2017-06-30) --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_01_2019_4_final.pdf (Benennung) --- #: osm_watch: way id="293231696" version="10" brb --- #: last_checked: 2019-12-07
 Brauerstr.	N -12583,-1552 -12540,-1521
-(Brauerstr. - Uferweg)	NN -12540,-1521 -12485,-1482
+Brauerstr.	NN -12540,-1521 -12521,-1502
+(Brauerstr. - Uferweg)	NN -12521,-1502 -12486,-1490
+Versailler Platz	NN -12521,-1502 -12474,-1559
 #: note: frühere Adresse "Im Staudenhof" (laut DPAG-Mitteilungsblatt 3/2013)
 Am Alten Markt [Wohngebiet]	NN -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
 Erika-Wolf-Str.	N -12628,-1423 -12685,-1449 -12812,-1490
@@ -2429,9 +2431,9 @@ Inselbrücke	NN -12256,-1456 -12260,-1503
 Freundschaftsinsel	NN -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
 #: by: https://www.pnn.de/potsdam/alte-fahrt-in-potsdam-gibt-es-bald-ein-adolf-miethe-ufer/23922230.html
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2019final.pdf
-Adolf-Miethe-Ufer	NN -12596,-1701 -12474,-1559 -12485,-1482 -12265,-1434
+Adolf-Miethe-Ufer	NN -12596,-1701 -12474,-1559 -12468,-1518 -12486,-1490 -12265,-1434
 (An der Alten Fahrt)	NN -12265,-1434 -12114,-1409 -12110,-1379
-(An der Alten Fahrt - Joliot-Curie-Str.)	NN -12485,-1482 -12489,-1465 -12500,-1437
+(An der Alten Fahrt - Joliot-Curie-Str.)	NN -12486,-1490 -12493,-1465 -12500,-1437
 Schlaatzstr.	N -11694,-2245 -11579,-2333 -11487,-2373
 Bergholzer Str.	N -11579,-2333 -11635,-2414 -11679,-2408
 #: note: allerdings nur wenig Verkehr zu den Kleingärten

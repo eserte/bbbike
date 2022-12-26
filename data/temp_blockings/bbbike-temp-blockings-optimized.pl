@@ -14,6 +14,7 @@ push @temp_blocking,
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089
+#: note: 2022 ist die Farbahn auch gesperrt
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
          'from' => 1668898800,
@@ -1795,7 +1796,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-10-28
+#: last_checked: 2022-12-26
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -3793,6 +3794,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
+#: add_fragezeichen: Ist die Takustraße weiterhin voll gesperrt?
 #: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="8"
 #: last_checked: 2022-12-08 (osm)
@@ -3898,7 +3900,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-23
+#: last_checked: 2022-12-26
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
@@ -4775,7 +4777,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-12-15 (osm) vvv
+#: note: Kann außerhalb der Arbeitszeiten offen sein vvv
+#: last_checked: 2022-12-26 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="31"
@@ -4785,6 +4788,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: note ^^^
 #: XXX ^^^
 ',
          'from' => 1643583600,
@@ -5273,35 +5277,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: FIDICIN-2022
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10154 (Herbst 2021)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
-#: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1275763.php (in den kommenden Wochen (ab Mitte Dezember 2022))
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fahrradbuegel-auf-strassen_a366953
-#: also_indoor: traffic vvv
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-11-13 vvv
-#: check_frequency: 60d vvv
-#Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
-#Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
-Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
-Kloedenstr.	q3::inwork 9654,8991 9669,9080
-#Kopischstr.	q3::inwork 9477,9113 9459,9019
-#Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 3602,
-         'text' => 'Fidicinstr./Kloedenstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -5425,7 +5401,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-23
+#: last_checked: 2022-12-26
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -5708,7 +5684,7 @@ Linienstr.	q4::inwork 9225,13389 9312,13388
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2022-10-28 (mapillary) vvv
+#: last_checked: 2022-12-23 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -5846,7 +5822,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-12-18
+#: last_checked: 2022-12-25
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,
@@ -5955,7 +5931,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
 #: note: Soll noch 2022 fertig werden.
-#: also_indoor: traffic (B[Gallwitz-AmGemeindepark])
+#: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G)
 #: next_check: 2022-11-01
 	q4::inwork 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 ',
@@ -6027,20 +6003,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: INDENALBOINGARTEN-2022
-#: osm_watch: way id="1119211815" version="1"
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-13
-#: check_frequency: 45d
-	2::inwork 7646,6031 7638,5967
-',
-         'from' => undef,
-         'id' => 3682,
-         'text' => 'In den Alboingärten: Zufahrt zur Eythstr. komplett gesperrt, auch für Radfahrer und Fußgänger, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)

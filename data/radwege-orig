@@ -1554,7 +1554,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: next_check_id: GRENZALLEE-2014 vvv
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1021149.php (Verkehrsumstellung auf der Grenzallee, evtl. am 25.11.2020; außerdem wird die Bergiusstr. für den Kfz-Verkehr gesperrt (und später sowieso verlegt))
 #: source_id: 2147343690
-#: source_id: LMS-BR_r_LMS-BR_6571
+#: source_id: LMS-BR_r_LMS-BR_6571 (inaktiv)
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
@@ -2492,7 +2492,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-12-17
+#: last_checked: 2022-12-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2511,7 +2511,7 @@ Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12143,115
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-12-06 vvv
+#: last_checked: 2022-12-26 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -6005,7 +6005,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 	RW4; 9141,12320 9131,12438
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-12-09 vvv
+#: last_checked: 2022-12-26 vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
@@ -7583,8 +7583,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="26"
-#: osm_watch: way id="335487059" version="25"
+#: osm_watch: way id="169738742" version="27"
+#: osm_watch: way id="335487059" version="26"
 #: last_checked: 2022-12-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
@@ -7642,7 +7642,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8290
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-sieht-kiez-um-karl-august-platz-bedroht_a352244 (Umbau der Kantstraße geplant)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/radweg-an-der-kantstrasse-in-berlin-aus-pop-up-wird-was-festes-8891569.html (Umbau zwischen Wilmersdorfer und Joachimsthaler ab Anfang 2023)
-#: last_checked: 2022-12-15 (mapillary) vvv
+#: last_checked: 2022-12-26 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten

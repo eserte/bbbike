@@ -2096,7 +2096,8 @@ Kastanienallee (Potsdam): Kopfsteinpflaster, Tram auf Fahrbahn	Q2 -14919,-1817 -
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24617,71459 -24473,71486 -24169,71616
 dt. Alleenstraße: Asphalt	Q0 -25115,64316 -24943,64698 -24810,64752 -24704,64900 -24436,65301 -22719,66901 -22477,67056 -21523,67550 -21068,67751 -20615,67938 -20598,67945 -20469,68007 -20059,68234
 An der Alten Fahrt: Kleinsteinpflaster	Q1 -12669,-1768 -12596,-1701 -12474,-1559
-An der Alten Fahrt: Parkweg	Q1 -12474,-1559 -12485,-1482 -12265,-1434 -12114,-1409 -12110,-1379
+An der Alten Fahrt: Parkweg	Q1 -12474,-1559 -12468,-1518 -12486,-1490
+An der Alten Fahrt: Parkweg	Q1 -12521,-1502 -12486,-1490 -12265,-1434 -12114,-1409 -12110,-1379
 Burgstr.: Kopfsteinpflaster	Q2 -12110,-1379 -12062,-1378
 Burgstr.: Beton	Q1 -12500,-1437 -12422,-1416 -12300,-1381 -12281,-1378 -12265,-1434
 Burgstr.: Beton	Q1 -12526,-1356 -12446,-1334 -12403,-1323
@@ -2105,6 +2106,9 @@ Joliot-Curie-Str.: Asphalt	Q0 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-143
 Am Kanal, Nebenstraße.: Asphalt	Q0 -12542,-1305 -12657,-1338
 Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12628,-1423
 Alter Markt: Verbundsteinpflaster	Q0 -12628,-1423 -12614,-1487 -12583,-1552
+Brauerstr.: Verbundsteinpflaster	Q0 -12583,-1552 -12540,-1521
+Brauerstr.: Asphalt	Q0 -12540,-1521 -12521,-1502
+Versailler Platz: Asphalt	Q0 -12521,-1502 -12474,-1559
 Humboldtstr.: Asphalt	Q0 -12653,-1723 -12646,-1702 -12643,-1694 -12627,-1618
 Humboldtstr.: Verbundsteinpflaster	Q0 -12627,-1618 -12624,-1598 -12583,-1552
 Ebräerstr.: Kopfsteinpflaster, evtl. OK	Q2 -12981,-1222 -12862,-1240
@@ -3853,8 +3857,8 @@ Buchenweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17433,24229 17451,24226 17
 Ulmenweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17430,24274 17471,24287 17560,24179
 Ohmstr.: Verbundsteinpflaster	Q1 18039,24940 18127,25162
 Bodenseestr.: Asphalt	Q0 18003,25349 18133,25321
-An der Alten Fahrt - Joliot-Curie-Str.: Parkweg	Q1 -12485,-1482 -12489,-1465
-An der Alten Fahrt - Joliot-Curie-Str.: Asphalt	Q1 -12489,-1465 -12500,-1437
+An der Alten Fahrt - Joliot-Curie-Str.: Parkweg	Q1 -12486,-1490 -12493,-1465
+An der Alten Fahrt - Joliot-Curie-Str.: Asphalt	Q1 -12493,-1465 -12500,-1437
 Fontanestr.: Asphalt	Q0 32080,6100 32178,5997 32252,5917 32365,5789 32560,5574 32725,5392
 Körnerstr.: Verbundsteinpflaster	Q1 32365,5789 32475,5797 32583,5779
 Maienhöhe: unbefestigte Straße	Q2 32574,5696 32617,5683

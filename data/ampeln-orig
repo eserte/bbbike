@@ -236,7 +236,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # REMOVED (vermutlich nun funktionslos) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 --- #: check_frequency: 30d --- #: next_check: 2021-07-30 --- #: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer --- Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
 # 
 #: next_check_id: KASTANIENALLEE-2021
-#: last_checked: 2022-11-15 vvv
+#: last_checked: 2022-12-23 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-10-29 vvv
 Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen auf den linken Bürgersteig wechseln	X::inwork 9073,20606
@@ -2410,9 +2410,9 @@ S-Bahn und Regionalbahn	B 21562,12088
 # 
 #: next_check_id: FRIEDRICH-2020
 # REMOVED --- #: note: vorhandene Ampel ist dauerhaft abgeschaltet
-#: last_checked: 2022-11-23
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-23
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-12-31
 # REMOVED --- #: valid: !20200821-20211031
 	X 9418,11804
 # 
@@ -3179,7 +3179,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-12-23 vvv
+#: last_checked: 2022-12-26 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3610,7 +3610,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
-#: last_checked: 2022-10-28 (mapillary) vvv
+#: last_checked: 2022-12-23 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
