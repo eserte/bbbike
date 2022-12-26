@@ -65,6 +65,10 @@ init_apt() {
        echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
     fi
 
+    # make apt-get install somewhat less verbose. See
+    # https://askubuntu.com/a/668859/207243
+    echo 'Dpkg::Use-Pty "0";' | sudo tee /etc/apt/apt.conf.d/50dpkg-pty
+
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
 	if [ "$USE_BBBIKE_PPA" = "1" ]
