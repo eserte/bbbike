@@ -856,6 +856,11 @@ Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6237,9772
 Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6237,9772 6209,9772 6096,9772
 Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6237,9772
 #: note ^^^
+# 
+Hohenstaufenstr./Motzstr.	3nocross 5905,9795 5941,9787 5988,9776
+#: XXX_prog: hier eigentlich keine Einbahnstraße, fungiert nur als "Routing-Helper"
+Motzstr.	1::igndisp 5941,9787 5995,9810
+# 
 #: note: Mittelstreifen vvv
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
 Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
@@ -1301,7 +1306,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-12-25
+#: last_checked: 2022-12-27
 #: check_frequency: 90d
 #: next_check: 2023-01-11
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3893,8 +3898,8 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-12-13 (bahninfo-forum) vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2022-12-26 (bahninfo-forum) vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
 # REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
@@ -4110,7 +4115,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-12-20
+#: last_checked: 2022-12-27
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515

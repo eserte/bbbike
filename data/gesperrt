@@ -537,6 +537,9 @@ Spittelmarkt (Mittelstreifen)	3nocross::ignrte 10213,11728 10240,11740 10299,117
 Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6237,9772
 Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6237,9772 6209,9772 6096,9772
 Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6237,9772
+Hohenstaufenstr./Motzstr.	3nocross::ignrte 5905,9795 5941,9787 5988,9776
+Motzstr. -> Hohenstaufenstr.: Hohenstaufenstr./Motzstr.	3::igndisp 5995,9810 5941,9787 5988,9776
+Motzstr.	1::igndisp 5941,9787 5995,9810
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
 Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
 Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883

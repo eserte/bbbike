@@ -293,7 +293,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-12-26 vvv
+#: last_checked: 2022-12-27 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -313,11 +313,11 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-12-20
+#: last_checked: 2022-12-27
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2022-12-14
+#: last_checked: 2022-12-27
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -404,7 +404,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-12-26 vvv
+#: last_checked: 2022-12-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="13"
@@ -630,22 +630,7 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 # 
 ### Wilmersdorf ###
 # 
-#: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv
-#: also_indoor: traffic (B,G,ex-H) vvv
-#: last_checked: 2022-12-06 (research) vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2022-11-30 vvv
-# REMOVED --- #: valid: -20221130 vvv
-Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874
-Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870
-Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: source_id ^^^
-# 
+# REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^
 # REMOVED (laut kartaview größtenteils fertiggestellt) --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: last_checked: 2022-02-27 --- #: check_frequency: 90d --- Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
 # 
 #: next_check_id: PARISER-2021
@@ -657,15 +642,15 @@ Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-12-02 (webcam)
+#: last_checked: 2022-12-27 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: last_checked: 2022-12-02 (webcam)
-#: check_frequency: 30d
+#: last_checked: 2022-12-27 (webcam)
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 # 
@@ -3965,7 +3950,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
-#: last_checked: 2022-12-22 (daf)
+#: last_checked: 2022-12-27
 #: check_frequency: 60d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)

@@ -11947,7 +11947,7 @@ EOF
        data  => <<EOF,
 	2::temp 8358,11477 8301,11469 8261,11463 8226,11458 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 8553,11630 8548,11571 8542,11502 8479,11493 8374,11479
-	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351 9141,12320 9164,12172 9064,12156
+	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351 9303,12343 9141,12320 9164,12172 9064,12156
 	2::temp 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8737,12098 8743,12099 8861,12125 9054,12154
 	3 6972,10665 6818,10725 6740,10755 6607,10801
 	3 8901,12008 8861,12125 8804,12280
@@ -19556,6 +19556,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8213 (Antrag)
 #: by: https://berliner-abendblatt.de/2022/11/10/was-wird-aus-den-neukoellner-maientagen-schausteller-schlagen-alarm/
 #: by: https://berliner-abendblatt.de/2022/11/13/neukoellner-maientage-standort-tempelhof-grundsaetzlich-moeglich/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8413 (Anfrage)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -36435,13 +36436,14 @@ EOF
      },
      { from  => 1663329224, # 2022-09-16 13:53
        until => undef, # 1670626800, # 2022-12-10 00:00
-       text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Dezember 2022',
+       text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # früher: 'voraussichtlich bis Dezember 2022'
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-11-27 (mapillary)
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-27
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 EOF
@@ -36929,7 +36931,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-12-25
+#: last_checked: 2022-12-27
 	q3::inwork 12328,10442 12274,10612
 EOF
      },
@@ -37017,20 +37019,11 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1672175983, # undef, # XXX
        text  => 'Keithstr.: Abschnitt der Fahrbahn wegen einer Hochbaustelle gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kudamm-%C3%B6stlich-der-fasanenstr-tauentzienstr-kleinere-projekte/?postID=725395#post725395 (bis 2024-10-31, hier nur Gegenverkehrsregelung)
-#: by: https://www.deutsches-architekturforum.de/thread/13327-neubau-dgb-zentrale-sch%C3%B6neberg-in-bau/?pageNo=3 (bis Ende 2022, hier nur der östliche Gehweg frei)
-#: note: Kurioserweise gibt es am nördlichen Ende ein "Einfahrt verboten, Radfahrer frei"-Schild
-#: also_indoor: traffic (G)
-#: osm_watch: way id="684019405" version="4"
-#: osm_watch: way id="1092848628" version="1"
-#: add_fragezeichen: Gibt es die Sperrung der Fahrbahn noch immer?
-#: last_checked: 2022-11-07 (daf)
-#: check_frequency: 30d
-#: next_check: 2022-12-31
+# REMOVED (mittlerweile Einbahnstraße, offen Richtung Norden, Radfahrer frei) --- #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kudamm-%C3%B6stlich-der-fasanenstr-tauentzienstr-kleinere-projekte/?postID=725395#post725395 (bis 2024-10-31, hier nur Gegenverkehrsregelung) --- #: by: https://www.deutsches-architekturforum.de/thread/13327-neubau-dgb-zentrale-sch%C3%B6neberg-in-bau/?pageNo=3 (bis Ende 2022, hier nur der östliche Gehweg frei) --- #: note: Kurioserweise gibt es am nördlichen Ende ein "Einfahrt verboten, Radfahrer frei"-Schild --- #: also_indoor: traffic (G) --- #: osm_watch: way id="684019405" version="4" --- #: osm_watch: way id="1092848628" version="1" --- #: add_fragezeichen: Gibt es die Sperrung der Fahrbahn noch immer? --- #: last_checked: 2022-11-07 (daf) --- #: check_frequency: 30d --- #: next_check: 2022-12-31
 	q3::inwork 6468,10550 6471,10851
 EOF
      },
@@ -37178,12 +37171,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1672047507, # undef, # XXX
-       text  => 'In den Alboingärten: Zufahrt zur Eythstr. komplett gesperrt, auch für Radfahrer und Fußgänger, Ende der Bauarbeiten unbekannt',
+       until => undef, # XXX
+       text  => 'In den Alboingärten: Zufahrt zur Eythstr. kann wegen Bauarbeiten gesperrt sein, evtl. nur außerhalb der Arbeitszeiten offen',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: INDENALBOINGARTEN-2022
-# REMOVED (laut osm wieder offen) --- #: osm_watch: way id="1119211815" version="2" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2022-11-13 --- #: check_frequency: 45d
+#: note: Durchfahrt war möglich am 2022-12-27 gegen 21:00
+#: osm_watch: way id="1119211815" version="2"
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2022-12-27
+#: check_frequency: 45d
 	2::inwork 7646,6031 7638,5967
 EOF
      },

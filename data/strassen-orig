@@ -375,6 +375,9 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://berliner-abendblatt.de/2022/11/23/friedrichstrasse-aktionsbuendnis-demonstriert-fuer-einen-neustart/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/aktionsbuendnis-fordert-echten-neuanfang-fuer-die-friedrichstrasse_a364814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11547 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11600 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11621 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11636 (Teileinziehung am Checkpoint Charlie?)
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
@@ -803,7 +806,7 @@ Pallasstr.	H 7518,9791 7223,9815 7126,9825 7049,9833
 Hohenstaufenstr.	H 7049,9833 6920,9838 6753,9814 6632,9792 6492,9782 6237,9772
 Hohenstaufenstr.	H 6237,9772 6209,9773 6096,9772
 Hohenstaufenstr.	H 6096,9772 6209,9772 6237,9772
-Hohenstaufenstr.	H 6096,9772 5988,9776 5905,9795
+Hohenstaufenstr.	H 6096,9772 5988,9776 5941,9787 5905,9795
 Hauptstr. (Schöneberg, Friedenau)	HH 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960 7201,8870 7105,8788 7009,8705 6989,8687 6912,8617 6765,8480 6687,8385 6608,8277 6560,8219 6460,8093
 #: note: die letzten Meter Richtung Süden sind als "Innsbrucker Platz" ausgeschildert
 Hauptstr. (Schöneberg, Friedenau)	HH 6460,8093 6409,8026
@@ -861,8 +864,9 @@ Potsdamer Str. (Schöneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
 #: XXX wird die Straße zur Fußgängerzone?
 #: osm_watch: way id="4597334" version="26"
-#: last_checked: 2022-11-27 (mapillary)
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-27
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-12-31
 Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
 Kulmer Str.	N 7771,9479 7829,9723
 Kulmer Str.	HH 7829,9723 7848,9814 7866,9902
@@ -931,6 +935,8 @@ Stülerstr.	H 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: carriageway_width: 13m
 Motzstr.	N 6971,10346 6729,10212 6626,10155 6609,10147 6499,10086 6427,10044 6275,9962
 Motzstr.	N 6149,9897 5995,9810
+#: osm.highway: service
+Motzstr.	N 5995,9810 5941,9787
 Motzstr.	N 5900,9737 5831,9730 5648,9642
 #: note: "Begegnungszone", max. Geschwindigkeit 20km/h
 Maaßenstr.	N 7033,10328 7055,10220 7080,10098
@@ -1483,7 +1489,7 @@ Heiligegeistgasse	NN 10285,12744 10309,12700 10344,12641 10352,12627
 Karl-Liebknecht-Str.	HH 10243,12546 10300,12587 10352,12627 10431,12709 10515,12780 10525,12789 10695,12933 10733,12967 10776,13005 10863,13095 10923,13156 10976,13229 11012,13278 11070,13357
 Karl-Liebknecht-Str.	HH 11070,13357 11081,13372 11107,13410 11135,13452 11160,13492
 Karl-Liebknecht-Str.	HH 11160,13492 11131,13455 11080,13373 11070,13357
-Unter den Linden	HH 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351 9141,12320 9028,12307 8804,12280
+Unter den Linden	HH 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351 9303,12343 9141,12320 9028,12307 8804,12280
 Hinter der Katholischen Kirche	N 9812,12150 9808,12182 9798,12267
 #: note: Privatgelände, auf der westlichen Seite ein Fahrrad/Einfahrt verboten-Schild, auf der östlichen Seite nicht
 (entlang der Hedwigskathedrale)	NN 9808,12182 9775,12178 9771,12190 9747,12205
@@ -9916,11 +9922,11 @@ David-Friedländer-Weg	N 20727,18726 20901,18793 21038,18851 21036,18888 21028,18
 (David-Friedländer-Weg - Barnimer Dörferweg)	N 21036,18888 21065,18895
 (David-Friedländer-Weg - Barnimer Dörferweg)	NN 21065,18895 21084,18899
 Christian-Dohm-Weg	N 20760,18812 20894,18861 21028,18915
-Henriette-Herz-Allee	N 20907,18740 20901,18793 20894,18861 20889,18935
+Henriette-Herz-Allee	N 20910,18719 20901,18793 20894,18861 20889,18935
 Am Gehrensee	N 21165,18715 21137,18782
 #: note: in diesem Abschnitt für Autos nur provisorisch hergestellt
 Am Gehrensee	N 21123,18813 21137,18782
-Karl-Philipp-Moritz-Weg	N 20965,18743 21123,18813
+Karl-Philipp-Moritz-Weg	N 20910,18719 21123,18813
 Falkenberger Chaussee	H 19154,18498 18969,18448 18922,18436 18811,18404 18737,18380 18657,18358 18601,18342 18530,18327 18196,18254 18078,18224 17932,18133 17843,18078 17744,18016 17721,18001 17675,17971
 Falkenberger Chaussee	H 17675,17971 17577,17910 17482,17844
 Falkenberger Chaussee	H 17482,17844 17579,17908 17675,17971
@@ -15985,6 +15991,7 @@ Juchaczweg	N 14126,3225 14180,3334
 #: osm.highway: service vvv
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/bebauungsplan.1084785.php
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/xiv-132-1_pl.pdf
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8363 (Vorlage zur Beschlussfassung)
 #: XXX Bebauungsplan XIV-132-1: ggfs. wird dieser Abschnitt öffentlich befahrbar werden, inklusive Verlegung der Schranke?
 #: osm_watch: way id="721901188" version="1"
 #: osm_watch: way id="138144497" version="7"

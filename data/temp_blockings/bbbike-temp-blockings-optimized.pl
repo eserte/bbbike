@@ -3105,34 +3105,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html
-#: tempex: before(first_advent, monday)-YYYY1226 vvv
-#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
-	q4::xmas 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822
-	q4::xmas 11102,12845 11134,12793
-#: tempex ^^^
-',
-         'from' => 1668898800,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2022 bis 26. Dezember 2022',
-         'type' => 'handicap',
-         'until' => 1672095599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5471,14 +5444,15 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-11-27 (mapillary)
-#: next_check: 2022-12-31
+#: last_checked: 2022-12-27
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 ',
          'from' => 1663329224,
          'id' => 3626,
-         'text' => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Dezember 2022',
+         'text' => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5822,7 +5796,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-12-25
+#: last_checked: 2022-12-27
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,
@@ -5888,25 +5862,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kudamm-%C3%B6stlich-der-fasanenstr-tauentzienstr-kleinere-projekte/?postID=725395#post725395 (bis 2024-10-31, hier nur Gegenverkehrsregelung)
-#: by: https://www.deutsches-architekturforum.de/thread/13327-neubau-dgb-zentrale-sch%C3%B6neberg-in-bau/?pageNo=3 (bis Ende 2022, hier nur der östliche Gehweg frei)
-#: note: Kurioserweise gibt es am nördlichen Ende ein "Einfahrt verboten, Radfahrer frei"-Schild
-#: also_indoor: traffic (G)
-#: osm_watch: way id="684019405" version="4"
-#: osm_watch: way id="1092848628" version="1"
-#: add_fragezeichen: Gibt es die Sperrung der Fahrbahn noch immer?
-#: last_checked: 2022-11-07 (daf)
-#: check_frequency: 30d
-#: next_check: 2022-12-31
-	q3::inwork 6468,10550 6471,10851
-',
-         'from' => undef,
-         'id' => 3668,
-         'text' => 'Keithstr.: Abschnitt der Fahrbahn wegen einer Hochbaustelle gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=717652#post717652 (Projektabschluss: 2024-12-31)
 #: by: https://www.rockstonere.com/de/aktuelles/news-details/berlin-rockstone-real-estate-und-gbr-kotek-semel-planen-mit-barbarossadreieck-gemischt-genutztes-gebaeudeensemble-in-schoeneberg/
@@ -6003,7 +5959,21 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: INDENALBOINGARTEN-2022
+#: note: Durchfahrt war möglich am 2022-12-27 gegen 21:00
+#: osm_watch: way id="1119211815" version="2"
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2022-12-27
+#: check_frequency: 45d
+	2::inwork 7646,6031 7638,5967
+',
+         'from' => undef,
+         'id' => 3682,
+         'text' => 'In den Alboingärten: Zufahrt zur Eythstr. kann wegen Bauarbeiten gesperrt sein, evtl. nur außerhalb der Arbeitszeiten offen',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
@@ -6108,27 +6078,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'gesperrt',
          'until' => 1719784799
        },
-       {
-         'data' => '	2::xmas 13558,10704 13531,10673 13326,10765
-	2::xmas 13527,10660 13531,10673
-',
-         'from' => 1669158000,
-         'id' => 3695,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachten-an-der-spree.de/',
-         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 24.11. - 23.12.2022',
-         'type' => 'gesperrt',
-         'until' => 1672160400
-       },
+       undef,
        undef,
        {
          'data' => '#: by: rbb
