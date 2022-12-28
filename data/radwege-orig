@@ -315,9 +315,9 @@ asphaltiert	RW2; 13850,10612 13919,10583
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-28
 #: check_frequency: 14d
-#: next_check: 2022-12-27
+# REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
@@ -1156,7 +1156,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-12-22 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1939,7 +1939,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-12-13 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2085,7 +2085,7 @@ Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
-#: also_indoor: traffic (B(minor))
+#: also_indoor: traffic (B[minor])
 #: last_checked: 2022-09-30
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
@@ -2501,7 +2501,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-12-26
+#: last_checked: 2022-12-28
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2658,7 +2658,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-12-22 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3496,8 +3496,8 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-nach-fuenf-jahren-wieder-eroeffnet/
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/im-umfeld-der-salvador-allende-bruecke-wird-noch-weiter-gebaut_a364193 (bis Anfang Dezember 2022)
 # REMOVED --- #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017 --- #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate --- #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten --- #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
-#: osm_watch: way id="333893474" version="27"
-#: osm_watch: way id="10275151" version="50"
+#: osm_watch: way id="333893474" version="28"
+#: osm_watch: way id="10275151" version="51"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
@@ -7376,7 +7376,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="30"
-#: last_checked: 2022-12-13 vvv
+#: last_checked: 2022-12-28 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
@@ -7651,7 +7651,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8290
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-sieht-kiez-um-karl-august-platz-bedroht_a352244 (Umbau der Kantstraße geplant)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/radweg-an-der-kantstrasse-in-berlin-aus-pop-up-wird-was-festes-8891569.html (Umbau zwischen Wilmersdorfer und Joachimsthaler ab Anfang 2023)
-#: last_checked: 2022-12-26 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten

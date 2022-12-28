@@ -6823,10 +6823,10 @@ Lehndorffstr.	N 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.	N 18407,8592 18322,8470 18221,8328 18215,8316 18266,8160 18276,8136 18333,8059 18412,7985
 #: note: die Kreuzung Edisonstr./Wilhelminenhofstr. (17991,6431) hieß bis 1936 "Königsplatz" und wird auch heute selten so genannt. Siehe auch https://mein.berlin.de/mapideas/2018-00904/ und https://de.wikipedia.org/wiki/Liste_der_Stra%C3%9Fen_und_Pl%C3%A4tze_in_Berlin-Obersch%C3%B6neweide
 Edisonstr.	H 18010,7133 17934,7029 17919,6978 17919,6968 17962,6674 17991,6431 17948,6248 17930,6175
-Obrikatstr. (Niederschöneweide)	N 17483,6024 17681,6212 17847,6089
+Obrikatstr.	N 17483,6024 17681,6212 17847,6089
+Obrikatstr.	NN 17847,6089 17900,6072
 (Schnellerstr. - Obrikatstr.)	NN 17628,5865 17678,5916
 (Schnellerstr. - Obrikatstr.)	N 17678,5916 17847,6089
-(Obrikatstr. - Brückenstr.)	NN 17847,6089 17900,6072
 Brückenstr. (Niederschöneweide)	H 17930,6175 17900,6072 17728,5756
 An der Wuhlheide	H 18010,7133 18225,7004 18404,6946 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19957,5941 20054,5915 20173,5892 20352,5877 20428,5841 20536,5789 20760,5743 20880,5736 21002,5755 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
 An der Wuhlheide	H 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727 21594,5691 21600,5683
@@ -11727,6 +11727,7 @@ Pepitapromenade	NN -2856,17489 -2873,17369 -2878,17324
 #: by: https://www.berliner-woche.de/hakenfelde/c-leute/erna-koschwitz-eine-laube-und-der-elkartweg_a327986 (Einsprüche)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf (Widerspruch wurde zurückgenommen)
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11569 (Anfrage)
 #: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung sollte ursprünglich zum 15. November 2021 wirksam werden
 #: XXX bei osm bereits geändert, dann wieder reverted, im Dezember 2022 nochmals geändert
 # REMOVED --- #: also_indoor: search Erna-Koschwitz-Weg
@@ -18596,7 +18597,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="8"
-#: last_checked: 2022-12-17
+#: last_checked: 2022-12-28
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
@@ -18854,7 +18855,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="17"
-#: last_checked: 2022-12-26
+#: last_checked: 2022-12-28
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446
@@ -20155,7 +20156,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: 2147346962 (hier: Einschränkungen an der Gegenfahrbahn, bis 31.1.2025)
-#: last_checked: 2022-09-30
+#: last_checked: 2022-12-28
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

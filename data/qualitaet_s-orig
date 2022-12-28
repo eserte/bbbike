@@ -522,6 +522,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
 #: by: https://www.infravelo.de/projekt/oderstrasse/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Antrag zur Eschersheimer Str., Erwähnung der Oderstr.)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
 #: last_checked: 2022-10-02
 #: check_frequency: 180d
@@ -1182,7 +1183,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025) (mittlerweile: 1. Quartal 2025 - 4. Quartal 2026)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="32"
+#: osm_watch: way id="4810830" version="33"
 #: last_checked: 2022-12-26
 #: check_frequency: 720d
 #: next_check: 2026-12-31
@@ -5194,8 +5195,8 @@ Straße zum Müggelhort: Asphalt	Q0 28729,3084 28715,3198 28751,3243 28853,3279 28
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1275851.php (Bauarbeiten abgeschlossen)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/fahrbahn-des-r1-wieder-eben_a366980
 # REMOVED --- #: add_fragezeichen: Ist die Fahrbahn östlich der Bus-Endhaltestelle nach den Bauarbeiten besser geworden?
-#: osm_watch: way id="631278828" version="1"
-#: osm_watch: way id="22946308" version="19"
+#: osm_watch: way id="631278828" version="2"
+#: osm_watch: way id="22946308" version="20"
 #: XXX Ist der Asphalt tatsächlich besser geworden? Was ist mit dem Abschnitt westlich der Bus-Endhaltestelle? vvv
 #: next_check: 2022-11-25 vvv
 #: corrected_by: Pressemitteilung (Asphalt, einige Wurzelhebungen -> Q1+, ...)

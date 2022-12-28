@@ -14,7 +14,7 @@
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X::inwork 9269,13060
 #: XXX hier noch nicht eingeschaltet
-#: last_checked: 2022-12-16 (mapillary)
+#: last_checked: 2022-12-27 (mapillary)
 #: check_frequency: 30d
 Friedrichstr./Tucholskystr.	X::inwork 9559,13087
 #: valid ^^^
@@ -39,7 +39,7 @@ Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-28
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -73,11 +73,11 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 # 
 # REMOVED --- #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022) --- #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022) (bis 18.11.2022) --- #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt) --- #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022) --- #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung) --- #: last_checked: 2022-11-07 --- #: next_check: 2022-11-18 --- #: valid: -20221118 --- Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
-#: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
+#: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-12-20
+#: last_checked: 2022-12-27 (mapillary)
 #: check_frequency: 30d
-#: next_check: 2022-12-31
+#: next_check: 2023-12-31
 Fischerinsel	F::inwork 10578,11969
 # 
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -93,7 +93,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2022-12-22 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -112,7 +112,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-12-13
+#: last_checked: 2022-12-28
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -2510,7 +2510,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-28
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3179,7 +3179,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-12-27 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3609,6 +3609,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: BERLINERBAHNHOF-2020
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
 #: last_checked: 2022-12-23 (mapillary) vvv
 #: check_frequency: 60d vvv

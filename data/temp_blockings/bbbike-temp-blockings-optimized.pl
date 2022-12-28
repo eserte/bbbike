@@ -1796,7 +1796,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-12-26
+#: last_checked: 2022-12-28
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -3873,7 +3873,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-26
+#: last_checked: 2022-12-28
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
@@ -4160,7 +4160,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-12-17 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -4222,7 +4222,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="26"
-#: last_checked: 2022-12-05
+#: last_checked: 2022-12-28
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -4230,7 +4230,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Anfang Dezember 2022: südlicher Abschnitt ist bis auf die Deckschicht asphaltiert, aber noch nicht freigegeben)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende Dezember 2022: südlicher Abschnitt ist bis auf die Deckschicht asphaltiert, aber noch nicht freigegeben)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4750,8 +4750,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: note: Kann außerhalb der Arbeitszeiten offen sein vvv
-#: last_checked: 2022-12-26 vvv
+#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26 und 2022-12-28 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="31"
@@ -5396,6 +5396,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://berliner-abendblatt.de/2022/12/16/koepenicker-landstrasse-vollsperrung-bis-zum-23-dezember/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1277610.php (bis 13.01.2023)
 #: by: https://berliner-abendblatt.de/2022/12/21/vollsperrung-koepenicker-landstrasse-ende-der-bauarbeiten-wieder-verschoben/
+#: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/havariebaustelle-wird-spaeter-fertig_a367922
 #: note: laut rbb nur bis 11.11.2022
 #: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
@@ -5836,7 +5837,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2022-12-13 vvv
+#: last_checked: 2022-12-28 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
@@ -5857,7 +5858,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 ',
          'from' => undef,
          'id' => 3666,
-         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte Dezember 2022: eine Baustellenampel existiert)',
+         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Ende Dezember 2022: eine Baustellenampel mit einem engen Übergang existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
