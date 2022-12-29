@@ -920,6 +920,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023)
 #: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.7.2023) (am nächsten Tag wieder entfernt)
+#: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt)
 #: last_checked: 2022-11-12 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-07-15 vvv
@@ -3899,6 +3900,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2986916781559149 (provisorische Treppe wurde geöffnet)
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024)
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
 #: last_checked: 2022-12-26 (bahninfo-forum) vvv
 #: check_frequency: 60d vvv
@@ -4249,6 +4251,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/der-abriss-der-wuhletalbruecke-hat-begonnen_a338111
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024)
+#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt)
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2022-10-30
 #: check_frequency: 360d
@@ -4663,14 +4666,15 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: by: https://viz.berlin.de/wp-content/uploads/22-0598-A-100-Grenzallee-16.-BA-gesamt-2022-04-28-1.pdf
 #: source_id: 2147346461 (bis 31.12.2021)
 #: source_id: 2147346643 (bis 31.12.2021)
-#: source_id: viz2021:13.456584,52.465328,25.11.2020,08:00 (bis 31.12.2022)
+#: source_id: viz2021:13.456584,52.465328,25.11.2020,08:00 (bis 31.12.2022) (30.6.2023)
+#: source_id: viz2021:13.4581,52.46415,29.12.2022,09:40 (bis 30.6.2023) (später am Tag wieder entfernt)
 # REMOVED (wurde für was anderes recyclet) --- #: osm_watch: way id="194653032" version="26"
 #: osm_watch: way id="846595294" version="8"
 #: osm_watch: way id="38725490" version="17"
 #: also_indoor: traffic (G,B)
 #: last_checked: 2022-11-18 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2023-06-30 vvv
 Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
 Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609
 #: next_check ^^^
@@ -4684,7 +4688,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: also_indoor: traffic (G,B)
 #: last_checked: 2022-12-04
 #: check_frequency: 90d
-#: next_check: 2023-06-23
+#: next_check: 2023-06-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 

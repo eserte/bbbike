@@ -30112,7 +30112,7 @@ EOF
 #: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
 #: add_fragezeichen: Ist die Takustraße weiterhin voll gesperrt?
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G)
 #: osm_watch: way id="749226300" version="8"
 #: last_checked: 2022-12-08 (osm)
 # REMOVED --- #: check_frequency: 180d
@@ -33791,12 +33791,15 @@ EOF
 EOF
      },
      { from  => 1630476021, # 2021-09-01 08:00
-       until => 1672527599, # 2022-12-31 23:59
-       text  => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, bis Ende 2022',
+       until => $isodate2epoch->("2023-02-15 18:00:00"), # 1672527599, # 2022-12-31 23:59
+       text  => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, bis Mitte Februar 2023', # ursprünglich: Ende 2022
        type  => 'handicap',
        source_id => 'https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/',
        data  => <<EOF,
 #: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
+#: also_indoor: traffic (G,H[falsch?],B)
+#: osm_watch: way id="4441630" version="27"
+#: next_check: 2023-02-14
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
 EOF
      },
@@ -34531,10 +34534,10 @@ EOF
 EOF
      },
      { from  => 1640905200, # 2021-12-31 00:00
-       until => 1672527600, # 2023-01-01 00:00
-       text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, vom 01.01.2022 bis 31.12.2022 ',
+       until => $isodate2epoch->("2023-12-31 18:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, vom 01.01.2022 bis 31.12.2023',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.306069,52.502061,01.01.2022,06:00', # mittlerweile inaktiv
+       source_id => 'viz2021:13.306069,52.502061,01.01.2022,06:00', # mittlerweile inaktiv, mittlerweile bis 31.12.2023
        data  => <<EOF,
 #: note: vermutlich nur im Bereich Sybelstr. 14
 	2::inwork 3726,10757 3731,10640 3764,10580 3883,10585
@@ -34863,11 +34866,12 @@ EOF
        until => $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
        text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.01.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.452362,52.470898,21.02.2022,07:00', # bis 31.12.2022
+       source_id => 'viz2021:13.452362,52.470898,21.02.2022,07:00', # bis 31.12.2022, mittlerweile bis 31.1.2023
        data  => <<EOF,
 #: next_check_id: NIEMETZ-2022
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
+#: source_id: viz2021:13.452161,52.471082,21.02.2022,07:00 (bis 31.1.2023)
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
@@ -35190,7 +35194,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
        data  => <<EOF,
-#: also_indoor: traffic (ex-G,ex-H,B)
+#: also_indoor: traffic (ex-G,H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
 #: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022)
 #: next_check: 2022-12-31
@@ -36283,6 +36287,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
        data  => <<EOF,
+#: source_id: viz2021:13.32149,52.49982,29.12.2022,09:28 (bis 25.2.2023) (später am Tag wieder entfernt)
 #: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
 	q3::inwork; 4838,10597 4819,10355
 EOF
@@ -36665,7 +36670,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-12-12 (bahninfo-forum) vvv
+#: last_checked: 2022-12-28 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
