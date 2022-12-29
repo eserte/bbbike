@@ -2,6 +2,9 @@
 #: line_arrow: last
 #: category_color.WC: #800080
 #: line_width.WC: 4
+#: category_color.WCbroken: #800080
+#: line_width.WCbroken: 4
+#: line_dash.WCbroken: 2,4
 #:
 # Erster Punkt: Position der Webcam
 # Zweiter Punkt: Blickrichtung
@@ -155,13 +158,15 @@ https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg	WC 10749,12785 10477,127
 # 
 https://quartier-heidestrasse.contempo-webcam.de/	WC 7799,13944 7751,14023
 https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php	WC 7641,14286 7642,14177
-https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WC 7712,14009 7621,14076
-#: note: früher 7582,14169 7540,14240
+#: historical_note: früher 7712,14009 7621,14076
+https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WC 7691,14248 7661,14200
+#: historical_note: früher 7582,14169 7540,14240
 https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WC 7642,14326 7567,14373
-https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WC 7760,13961 7833,13913
+#: historical_note: früher 7760,13961 7833,13913
+https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WC 7682,13984 7647,14041
 # 
 # REMOVED ("Objekt nicht gefunden") --- https://myb-berlin.webcam-profi.de/	WC 7988,13667 7940,13839
-https://future-living-berlin.com/webcam/	WC 19022,3567 18922,3608
+# REMOVED (404) --- https://future-living-berlin.com/webcam/	WC 19022,3567 18922,3608
 https://cam.webcam-profi.de/bilder/fay/spandau/image.jpg	WC -3647,13878 -3490,13938
 # REMOVED (404) --- http://baustelle.strabag.com/de/germany/?Webcam[selected_webcam]=129	WC 10009,11336 10008,11412
 # REMOVED (page exists, but no webcam) --- http://the-westlight.de/de/gebaeude.html	WC 6115,10956 6198,11003
@@ -174,11 +179,11 @@ https://www.finanzen.de/webcam	WC 13440,10498 13368,10637
 # REMOVED --- http://www.johthal.de/instar-video.html	WC 17694,5312 17645,5366
 # REMOVED --- http://www.johthal.de/instar-video2.html	WC 17691,5318 17657,5273
 # 
-#: note: "Leider ist unsere webcam defekt." (19.2.2022)
-https://www.surf-und-segelschule-mueggelsee.de/webcam/webcam.php	WC 29111,4449 28990,4440
+#: note: "Leider ist unsere webcam defekt." (19.2.2022; still broken: 29.12.2022)
+https://www.surf-und-segelschule-mueggelsee.de/webcam/webcam.php	WCbroken 29111,4449 28990,4440
 # 
-#: note: broken since Sep 2021 (last checked: 19.2.2022; still broken: 11.11.2022)
-https://camera.deckchair.com/park-inn-berlin-alexanderplatz	WC 10913,13028 10805,12853
+#: note: broken since Sep 2021 (last checked: 19.2.2022; still broken: 11.11.2022; certificate expired on 2022-12-19)
+https://camera.deckchair.com/park-inn-berlin-alexanderplatz	WCbroken 10913,13028 10805,12853
 # 
 https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
 # 
