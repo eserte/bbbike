@@ -1464,6 +1464,8 @@ Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 # 
 Breite Str.: Straßenbahnhaltestelle	3nocross 10680,18380 10710,18393 10784,18426
 # 
+Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2745,7 +2747,7 @@ Drängelgitter	BNP:3::trailer=10 10969,10015
 Drängelgitter	BNP:3::trailer=10 10879,10037
 langes Drängelgitter	BNP:10::trailer=20 20284,12064
 Drängelgitter	BNP:3::trailer=10 21911,6938
-Tor, verwinkelt	BNP:3::trailer=10 17571,12557
+# REMOVED (mittlerweile ist das große Tor dauerhaft (?) offen) --- Tor, verwinkelt	BNP:3::trailer=10 17571,12557
 #: note: ggfs. über Bordsteine auf den Gehwegbereich tragen
 Schranke	BNP:5::trailer=15 22221,10985
 Drängelgitter	BNP:3::trailer=10 11892,12760
@@ -3509,7 +3511,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2022-12-28
+#: last_checked: 2022-12-31
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3976,8 +3978,9 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 #: XXX Gesperrt wegen Bauarbeiten an den neuen Baufeldern nördlich der Straßenbahntrasse. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
 #: XXX Mittlerweile ist der Weg bis zum Bahnübergang offen; Schild an der Hermann-Dorner-Allee fehlt
 #: add_fragezeichen: Ist der Straßenbahnübergang mittlerweile offen?
-#: osm_watch: way id="229647788" version="10"
-#: osm_watch: way id="850453338" version="8"
+# REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
+# REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
+#: osm_watch: way id="1117716285" version="1"
 #: last_checked: 2022-12-04 (daf)
 #: check_frequency: 30d
 Alexander-von-Humboldt-Weg: Straßenbahnübergang gesperrt	2::inwork 18818,3332 18829,3321
@@ -4210,9 +4213,9 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
 #: XXX wann sind die Bauarbeiten beendet?
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
-#: osm_watch: way id="5096644" version="20"
+#: osm_watch: way id="5096644" version="21"
 #: priority: #C
-#: last_checked: 2022-12-22
+#: last_checked: 2022-12-30
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4551,7 +4554,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2022-12-17 vvv
+#: last_checked: 2022-12-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4840,7 +4843,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: also_indoor: traffic
 #: last_checked: 2022-10-31 (daf) vvv
 #: check_frequency: 360d vvv
-#: next_check: 2023-01-01 vvv
+#: next_check: 2023-01-31 vvv
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
 tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393
 tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384

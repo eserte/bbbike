@@ -535,8 +535,7 @@ Hans-Rosenthal-Sportanlage	Pl 743,9772
 Wally-Wittmann-Sportanlage	Pl 863,10363
 Sportplatz Maik‰ferpfad	Pl 748,9981
 # 
-#: next_check_id: CORONA-2020 vvv
-#: check_frequency: 30d vvv
+# REMOVED --- #: next_check_id: CORONA-2020 --- #: check_frequency: 30d vvv
 # REMOVED --- #: by: https://www.tagesspiegel.de/berlin/tempelhof-schon-am-20-juli-berlin-schliesst-vier-von-sechs-impfzentren-vorzeitig/27403082.html --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX wird Ende August 2021 geschlossen --- #: next_check: 2021-08-31 --- #: next_check: 2021-09-30 --- #: osm_watch: node id="8207134188" version="5" --- Impfzentrum Arena	Pl 13899,10214
 # REMOVED --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/01/berlin-moderna-impfstoff-kalayci-mertens-stiko.html --- #: by: https://www.tagesspiegel.de/berlin/tempelhof-schon-am-20-juli-berlin-schliesst-vier-von-sechs-impfzentren-vorzeitig/27403082.html --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1111202.php (Schlieﬂung am 31.8.2021) --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- # REMOVED (kein Schlieﬂtermin mehr) --- #: XXX wird Ende August 2021 geschlossen --- #: next_check: 2021-08-31 --- #: next_check: 2021-09-30 --- #: osm_watch: node id="8207083844" version="4" --- #: valid: 20210114- --- Impfzentrum Erika-Heﬂ-Eisstadion	Pl 8015,14650
 # REMOVED (letzter Impftag: 28.2.2022) --- #: by: https://www.tagesspiegel.de/berlin/tempelhof-schon-am-20-juli-berlin-schliesst-vier-von-sechs-impfzentren-vorzeitig/27403082.html --- #: by: https://berliner-abendblatt.de/2021/11/08/charlottenburg-impfzentrum-zieht-ins-icc/ (sp‰testens zum 21.1.2022) --- #: by: https://service.berlin.de/standort/330088/ --- #: by: https://www.berlin.de/aktuelles/7324718-958090-fuenf-berliner-impfstellen-schliessen-im.html (schlieﬂt am 28.2.2022) --- #: osm_watch: node id="8207070481" version="6" --- # REMOVED (kein Endetermin mehr) --- #: XXX mˆglicherweise nur bis zum 30. September 2021 offen --- #: last_checked: 2022-02-24 (research) --- #: next_check: 2022-02-28 --- #: valid: 20210118- --- Impfzentrum Messe (Masurenallee)	Pl 1865,11082
@@ -547,15 +546,7 @@ Sportplatz Maik‰ferpfad	Pl 748,9981
 # REMOVED (am 28.9.2021 geschlossen) --- #: append_comment: Potsdam --- #: by: https://www.maz-online.de/Lokales/Potsdam/Impfzentrum-in-der-Metropolishalle-in-Potsdam-schliesst-zum-31.-Juli --- #: by: https://www.potsdam.de/impfen-der-landeshauptstadt-potsdam (doch nicht geschlossen) --- #: XXX siehe auch add_str_potsdam-Eintrag, der nach der Impfkampagne ebenfalls entfernt werden kann --- #: osm_watch: node id="8244360159" version="5" brb --- # REMOVED --- #: next_check: 2021-07-31 --- Impfzentrum Metropolis-Halle	Pl -8846,-2629
 # REMOVED (letzter Tag am 13.2.2022) --- #: by: https://berliner-abendblatt.de/2021/11/15/116891/ (noch im November 2021) --- #: by: https://www.berlin.de/aktuelles/berlin/7088443-958092-neues-impfzentrum-soll-auf-trabrennbahn-.html (noch im November (2021)) --- #: by: https://www.rbb24.de/politik/thema/corona/beitraege/2021/11/berlin-corona-viele-helfer-an-impfzentren-nach-aufruf-mueller.html (voraussichtlich ab Anfang Dezember (2021)) --- #: by: https://berliner-abendblatt.de/2021/11/26/berlin-nimmt-weitere-impfstellen-in-betrieb/ (ab 3.12.2021) --- #: by: https://service.berlin.de/standort/330655/ --- #: by: https://berliner-abendblatt.de/2022/02/11/zahl-der-impfzentren-in-berlin-wird-reduziert/ --- #: by: https://www.berlin.de/aktuelles/7310183-958090-zahl-der-impfzentren-in-berlin-wird-redu.html --- #: XXX auch die Zugangswege entfernen --- #: last_checked: 2022-02-10 (research) --- #: next_check: 2022-02-13 --- #: valid: -20220213 --- Impfzentrum Trabrennbahn Karlshorst	Pl 18662,7914
 # REMOVED (seit 2022-02-24 geschlossen) --- #: by: https://berliner-abendblatt.de/2021/11/26/berlin-nimmt-weitere-impfstellen-in-betrieb/ (ab 29.11.2021) --- #: by: https://service.berlin.de/standort/330652/ --- #: last_checked: 2022-01-22 (research) --- Impfzentrum Freizeitforum Marzahn	Pl 20732,15868
-#: by: https://berliner-abendblatt.de/2021/11/26/berlin-nimmt-weitere-impfstellen-in-betrieb/ (ab 26.11.2021)
-#: by: https://service.berlin.de/standort/330547/ (schlieﬂt zum 31.12.2022)
-#: by: https://berliner-abendblatt.de/2022/05/19/impfzentren-tegel-und-icc-schliessen/ (bleibt noch offen)
-#: last_checked: 2022-12-23 (research)
-#: check_frequency: 14d
-#: next_check: 2022-12-30
-Impfzentrum Ringcenter I	Pl 15117,12106
-#: check_frequency ^^^
-#: next_check_id ^^^
+# REMOVED (schlieﬂt zum Jahresende 2022) --- #: by: https://berliner-abendblatt.de/2021/11/26/berlin-nimmt-weitere-impfstellen-in-betrieb/ (ab 26.11.2021) --- #: by: https://service.berlin.de/standort/330547/ (schlieﬂt zum 31.12.2022) --- #: by: https://berliner-abendblatt.de/2022/05/19/impfzentren-tegel-und-icc-schliessen/ (bleibt noch offen) --- #: last_checked: 2022-12-23 (research) --- #: check_frequency: 14d --- #: next_check: 2022-12-30 --- Impfzentrum Ringcenter I	Pl 15117,12106 --- #: check_frequency ^^^
 # 
 #: section Eing‰nge vvv
 # Hier werden nur Eing‰nge f¸r Fl‰chen aufgenommen, die f¸r Radfahrer gesperrt sind.

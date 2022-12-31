@@ -3742,7 +3742,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
 #: add_fragezeichen: Ist die Takustraße weiterhin voll gesperrt?
-#: also_indoor: traffic (ex-G)
+#: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="8"
 #: last_checked: 2022-12-08 (osm)
 # REMOVED --- #: check_frequency: 180d
@@ -3898,7 +3898,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-12-17
+#: last_checked: 2022-12-31
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3970,6 +3970,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
 #: by: https://www.openstreetmap.org/note/3032478 (nicht mehr gesperrt!)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/18-12-00003_anwohnerinformation-ueber-trink-und-abwasserauswechslung.pdf (bis Juni 2023)
 # REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
@@ -4525,7 +4526,51 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SCHARNWEBERTRAM-2022
+# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366 --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
+# REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-12-18 vvv --- #: check_frequency: 2d vvv
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240157.php (unklare Ortsangaben, 1.9.2022 - 17.12.2022)
+#: by: https://berliner-abendblatt.de/2022/09/10/bauarbeiten-strassenbahnlinie-m13-wird-verkuerzt/ (bis 9.12.2022)
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10632 (Erwähnung von Radfahrstreifen, allerdings nur geplant)
+#: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022) (bis 23.12.2022) (bis 9.12.2022, Ersatz existiert) (inaktiv)
+#: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00 (inaktiv)
+#: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00 (inaktiv)
+#: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00 (inaktiv)
+#: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022) (bis 31.01.2023)
+#: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00 (mittlerweile bis 31.1.2023)
+#: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
+#: last_checked: 2022-12-31 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2023-01-31 vvv
+Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
+Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
+#: note: mittlerweile ist das Schild abhanden gekommen
+Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924 15077,11910
+#: note: und eigentlich kann auch schon die Fahrbahn genutzt werden, deshalb q3 -> q2
+Scharnweberstr.: Gehweg für Radfahrer frei	q2::inwork 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
+Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
+#: note: wegen der verlängerten Gehwegstrecke q4 statt q3
+Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
+Müggelstr.	q4::inwork 14901,11808 14836,11842
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#	q3::inwork 14965,11924 15077,11910
+#	q3::inwork; 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
+#	q3::inwork 14965,11924 14888,11934 14836,11842
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15217,11890 15174,11896 15133,11902 15077,11910
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1663020000,
+         'id' => 3479,
+         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, abschnittsweise Gehweg für Radfahrer frei, voraussichtlich bis 31.01.2023',
+         'type' => 'handicap',
+         'until' => 1675184400
+       },
        undef,
        undef,
        undef,
@@ -4819,6 +4864,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20221231 (Erwähnung der Kanner Str.)
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
@@ -4927,19 +4973,21 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic (ex-G,H,B)
+         'data' => '#: also_indoor: traffic (ex-G,ex-H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
-#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022)
-#: next_check: 2022-12-31
+#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022) (inaktiv)
+#: last_checked: 2022-12-31 (indoor)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-12-31
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 ',
          'from' => 1650305075,
          'id' => 3539,
          'source_id' => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
-         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis Ende Dezember 2022',
+         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1672502400
+         'until' => undef
        },
        {
          'data' => '#: osm_watch: way id="874517258" version="9"
@@ -5146,6 +5194,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'data' => '#: next_check_id: SCHOEN-2022
 #: also_indoor: traffic (H[unvollständig],G[unvollständig],B)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-12-10 vvv
@@ -5638,7 +5687,7 @@ Linienstr.	q4::inwork 9225,13389 9312,13388
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2022-12-23 (mapillary) vvv
+#: last_checked: 2022-12-30 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -5736,8 +5785,8 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        },
        {
          'data' => '#: by: mapillary
-#: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2022-10-16
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
+#: last_checked: 2022-12-30 (mapillary)
 	2::inwork 20996,16429 20923,16435 20898,16420
 ',
          'from' => undef,
@@ -6137,7 +6186,9 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 #: by: https://viz.berlin.de/2022/12/marzahner-knoten/
 #: by: https://viz.berlin.de/wp-content/uploads/Landsberger-1.jpg
 #: by: https://nitter.it/VIZ_Berlin/status/1604706843762167809#m
+#: osm_watch: way id="4696062" version="26"
 #: also_indoor: traffic (B,G,H)
+#: next_check: 2023-01-02
 	2::inwork 19205,14980 19244,14980 19400,15027
 	2::inwork 19214,14966 19244,14980
 ',
@@ -6146,6 +6197,18 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Landsberger Allee - Frank-Schweitzer-Str.: wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => 1672635600
+       },
+       {
+         'data' => '#: next_check_id: SCHOTT-2022
+#: XXX vermutlich Arbeiten der Wasserbetriebe
+#: last_checked: 2022-12-31
+	q4::inwork; 16255,12224 16276,12273
+',
+         'from' => undef,
+         'id' => 3703,
+         'text' => 'Schottstr.: Bauarbeiten, EInbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

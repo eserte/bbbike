@@ -243,7 +243,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="10"
-#: osm_watch: way id="25042039" version="33"
+#: osm_watch: way id="25042039" version="34"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2022-12-27
 #: check_frequency: 180d
@@ -878,7 +878,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-12-21
+#: last_checked: 2022-12-31
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-21
 	RW2; 14994,12121 15117,12106 15361,12071
@@ -1440,7 +1440,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="21"
+#: osm_watch: way id="203884042" version="22"
 #: last_checked: 2022-12-10
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
@@ -1453,7 +1453,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="36"
+#: osm_watch: way id="4615746" version="37"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2022-12-10
 #: check_frequency: 120d
@@ -2725,14 +2725,14 @@ Grünbeschichtung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,1244
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-12-07
+#: last_checked: 2022-12-31
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen
 # REMOVED XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-12-07
+#: last_checked: 2022-12-31
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -3496,8 +3496,8 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-nach-fuenf-jahren-wieder-eroeffnet/
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/im-umfeld-der-salvador-allende-bruecke-wird-noch-weiter-gebaut_a364193 (bis Anfang Dezember 2022)
 # REMOVED --- #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017 --- #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate --- #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten --- #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
-#: osm_watch: way id="333893474" version="28"
-#: osm_watch: way id="10275151" version="51"
+#: osm_watch: way id="333893474" version="29"
+#: osm_watch: way id="10275151" version="52"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
@@ -3505,13 +3505,13 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv)
-#: note: laut rbb bis 15.11.2022
+#: note: laut osm ist auch der Radweg auf der östlichen Brückenhälfte offen, keine Angaben zur Benutzungspflicht
 #: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
 #: last_checked: 2022-11-12 vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: next_check: 2022-12-23 vvv
 # REMOVED --- #: priority: #A vvv
-	RW8; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
+	RW; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 # REMOVED --- #: priority ^^^
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -4511,7 +4511,8 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 	RW1; 10620,16497 10699,16492 10778,16485
 	RW2; 10778,16485 11019,16465
 # 
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung) vvv
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Sanierung des Radwegs? vvv
 #: last_checked: 2022-08-21 (mapillary) vvv
 #: check_frequency: 270d vvv
@@ -4523,7 +4524,6 @@ Verbundsteinpflasterradweg	RW1;RW1 19398,9833 19459,9842 19536,9853 19669,9876
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-#: by ^^^
 # 
 angedeuteter Radweg	RW1; 22603,12359 22388,12190 22304,12157 22129,12155 21995,12153 21970,12153 21935,12153 21819,12154
 	RW1; 22304,12157 22388,12190
@@ -4648,9 +4648,10 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
 #: last_checked: 2022-11-02 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
 nur die ersten 30m mit Radweg, mäßiger Beton	RW0; 16837,17440 16785,17524
@@ -5755,7 +5756,7 @@ asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 130
 #: by: osm
 	RW6;RW6 16146,12881 16148,12772 16200,12771 16197,12880
 	RW6;RW6 16376,12874 16377,12791
-	RW6;RW6 16384,12874 16385,12825 16431,12825 16484,12825 16484,12871
+	RW6;RW6 16384,12874 16385,12825 16431,12825 16484,12825
 	RW6;RW6 16430,12848 16431,12825 16428,12741
 # REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
 # REMOVED ---	RW0; 15261,10738 15004,10791 14904,10812
@@ -6330,6 +6331,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Asphaltierung des Radwegs vvv
 #: last_checked: 2022-11-11 vvv
 #: check_frequency: 120d vvv
@@ -7142,7 +7144,7 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW6;RW6 21680,7943 21632,8105 21573,8169 21400,8322
 	RW3;RW3 11473,11180 11349,11227
 	RW3;RW3 11349,11227 11249,11268
-	RW3;RW4 11249,11268 11158,11324 11094,11377
+	RW3;RW4 11249,11268 11217,11288 11158,11324 11094,11377
 	RW3; 11094,11377 11052,11414
 #: note: könnte auch als überlange Aufstellspur durchgehen
 	RW3; 11052,11414 11094,11377
@@ -7375,7 +7377,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="30"
+#: osm_watch: way id="26708088" version="31"
 #: last_checked: 2022-12-28 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
@@ -7589,6 +7591,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023)
 #: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022) (inaktiv)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/220824_mobilitaetswenderat_final.pdf (Fertigstellung Mitte 2023)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
