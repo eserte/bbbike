@@ -2096,7 +2096,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3757,7 +3757,19 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+	q4::temp::play 11175,9882 11197,9894 11411,9810
+',
+         'from' => 1680213600,
+         'id' => 3145,
+         'recurring' => 1,
+         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+         'type' => 'handicap',
+         'until' => 1696089600
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -3957,7 +3969,20 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
+#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
+	q4::temp::play 10670,14116 10716,14195 10739,14228
+',
+         'from' => 1687989600,
+         'id' => 3253,
+         'recurring' => 1,
+         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
+         'type' => 'handicap',
+         'until' => 1698685200
+       },
        undef,
        undef,
        undef,
@@ -4315,17 +4340,104 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10412 (allgemein zu temporären Spiel- und Nachbarschaftsstraßen)
+# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
+	q4::temp::play 14798,12502 15005,12443
+',
+         'from' => 1685484000,
+         'id' => 3367,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1693497600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
+	q4::temp::play 13273,12902 13371,12694
+',
+         'from' => 1682805600,
+         'id' => 3368,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'text' => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1696089600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED --- #: XXX Spielstraße wurde möglicherweise verstetigt; genaue Geltungszeiten? --- #: last_checked: 2021-05-12 --- #: next_check: 2022-05-12
+	q4::temp::play 14468,11203 14531,11142
+',
+         'from' => 1682805600,
+         'id' => 3369,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'text' => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1696091400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-14
+	q4::temp::play 11258,10682 11334,10527
+',
+         'from' => 1682805600,
+         'id' => 3370,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'text' => 'Dresdener Str.: zwischen Erkelenzdamm und NKZ freitags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1696089600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
+	q4::temp::play 12286,9739 12398,9938
+',
+         'from' => 1685484000,
+         'id' => 3371,
+         'recurring' => 1,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1696089600
+       },
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
+#: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
+	q4::temp::play 11917,9663 12074,9689
+',
+         'from' => 1684101600,
+         'id' => 3376,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
+         'type' => 'handicap',
+         'until' => 1694793600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
+#: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
+	q4::temp::play 13038,8394 12856,8344
+',
+         'from' => 1684101600,
+         'id' => 3377,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
+         'type' => 'handicap',
+         'until' => 1694793600
+       },
        undef,
        undef,
        undef,
@@ -5053,7 +5165,20 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'type' => 'handicap',
          'until' => 1706716800
        },
-       undef,
+       {
+         'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
+#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
+#: last_checked: 2022-08-23
+#: next_check: 2023-05-12
+	q4::temp::play 12822,10487 12897,10439
+',
+         'from' => 1683842400,
+         'id' => 3551,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 26.08. bis Ende September',
+         'type' => 'handicap',
+         'until' => 1696091400
+       },
        undef,
        undef,
        {
@@ -5157,7 +5282,19 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
          'type' => 'gesperrt',
          'until' => 1704042000
        },
-       undef,
+       {
+         'data' => '#: url: http://www.wuhlheide.de/programm
+#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03
+#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023
+	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
+',
+         'from' => 1685570400,
+         'id' => 3569,
+         'source_id' => 'https://www.wuhlheide.de/programm',
+         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis September',
+         'type' => 'gesperrt',
+         'until' => 1696089600
+       },
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -5529,17 +5666,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 3737,10322 3739,10495
-# REMOVED (hier nicht) ---	q4::inwork 3739,10495 3770,10508
-',
-         'from' => 1664164800,
-         'id' => 3635,
-         'source_id' => 'viz2021:13.30605,52.50146,26.09.2022,06:00',
-         'text' => 'Waitzstr.: Bauarbeiten, Fahrbahn gesperrt, möglicherweise sind auch Radfahrer betroffen, bis 31.12.2022 20:00',
-         'type' => 'handicap',
-         'until' => 1672527600
-       },
+       undef,
        undef,
        undef,
        {

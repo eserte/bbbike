@@ -35254,7 +35254,7 @@ EOF
 	q4::inwork; 11893,17397 12324,17213
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-02 00:00:00") }, # 1 Tag Vorlauf
+     { from  => undef, # do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-02 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-07-06 18:00:00") }, # nur temporäre Schilder, möglicherweise nicht mehr nach den Sommerferien 2022 verlängert
        text  => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15 und 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 03.05. bis 06.07.',
        type  => 'handicap',

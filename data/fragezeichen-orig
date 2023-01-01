@@ -339,7 +339,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
-#: osm_watch: way id="336565341" version="12" vvv
+#: osm_watch: way id="336565341" version="14" vvv
 #: last_checked: 2022-12-31 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -1631,7 +1631,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: 2147343976 (bis Mitte Januar 2020; Leitungsarbeiten)
 #: XXX laut fritz bis 17.01.2020
-#: osm_watch: way id="93221335" version="19"
+#: osm_watch: way id="93221335" version="20"
 #: last_checked: 2022-12-31
 #: check_frequency: 180d
 #: next_check: 2024-09-30
@@ -2376,10 +2376,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: XXX Qualität? culdesac-Eintrag zu culdesac_pseudo machen
 #: osm_watch: way id="719023971" version="9"
 (Blütenweißweg - Harnischweg): wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben?	?::projected 21427,5347 21399,5336 21363,5336
-#: last_checked: 2022-11-12
-#: check_frequency: 120d
-#: osm_watch: way id="721602418" version="4"
-(Uferweg - Eiselenweg): wird hier die Radroute neu geführt? Weg ist asphaltiert	?::inwork 21518,5389 21483,5374
+# REMOVED (laut osm offen) --- #: last_checked: 2022-11-12 --- #: check_frequency: 120d --- #: osm_watch: way id="721602418" version="4" --- (Uferweg - Eiselenweg): wird hier die Radroute neu geführt? Weg ist asphaltiert	?::inwork 21518,5389 21483,5374
 # REMOVED (-> strassen-orig) --- #: XXX Planstraße 1+2 -> Carl-Spindler-Str. --- #: XXX laut Amtsblatt auch Privatstraße? --- Carl-Spindler-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität: Asphalt. Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21483,5374 21514,5310 21547,5245 21408,5178 21345,5157
 # REMOVED (-> strassen-orig) --- #: XXX laut Amtsblatt auch Privatstraße? --- #: XXX laut osm komplett asphaltiert --- #: XXX Planstraße 3 -> Adolf-Heyden-Str. --- Adolf-Heyden-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität (am südöstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21444,5112 21476,5048 21494,5011
 # REMOVED (-> strassen-orig) --- #: XXX Privatstraße 1 -> Blütenweißweg --- Blütenweißweg: genaue Lage? Straßenname? Qualität? wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben	?::projected 21483,5374 21427,5347
@@ -3900,7 +3897,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: XXX laut Aushang Bauarbeiten in der zweiten Jahreshälfte 2021
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2022-11-08
+#: last_checked: 2023-01-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-03-01
 Wriezener Park: Umbauarbeiten geplant, evtl. werden Wege zwischenzeitlich gesperrt sein	?::projected 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
@@ -4062,7 +4059,7 @@ Ungarnstr.: Fahrradstraße soll entstehen	?::projected 6843,16346 7056,16587 7106
 #: osm_watch: way id="202156991" version="13"
 #: osm_watch: way id="339201177" version="13"
 Bodestr.: in Zukunft nur für Rad- und Fußverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
-#: osm_watch: way id="23121445" version="22"
+#: osm_watch: way id="23121445" version="23"
 Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,12635
 # REMOVED --- #: next_check ^^^
 #: last_checked ^^^
@@ -6495,7 +6492,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5850
 #: XXX bislang gibt es ein LKW-Durchfahrverbot
 #: priority: #D
-#: osm_watch: way id="8150996" version="10"
+#: osm_watch: way id="8150996" version="11"
 #: osm_watch: way id="4687336" version="19"
 #: last_checked: 2022-11-08
 #: check_frequency: 120d
@@ -6903,8 +6900,8 @@ Neuhof - Wünsdorf: Radwegbau	?::inwork 16360,-29489 16379,-29446 16407,-29400 16
 # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="846548652" version="2" --- (nicht mehr relevant) #: osm_watch: way id="871408060" version="1"
 # REMOVED --- #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
 # REMOVED --- #: XXX wird auch auf der Paradiesstr. zwischen B96a und Johannes-Tobei-Str. auf der westlichen Seite ein Radweg entstehen, möglicherweise ein Zweirichtungsradweg?
-#: osm_watch: way id="153260674" version="13"
-#: osm_watch: way id="153260675" version="14"
+#: osm_watch: way id="153260674" version="14"
+#: osm_watch: way id="153260675" version="15"
 #: osm_watch: way id="153260676" version="11"
 #: last_checked: 2022-09-24 (mapillary)
 #: check_frequency: 90d

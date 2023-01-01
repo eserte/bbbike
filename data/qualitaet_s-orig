@@ -2526,12 +2526,11 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
 #: XXX Maßnahme Kö.13
-#: XXX mittlerweile gibt's hier Bauarbeiten
-#: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
-#: osm_watch: way id="152046369" version="12"
-#: last_checked: 2022-11-12
+#: XXX siehe auch gesperrt-orig-Eintrag (mit osm_watch ...)
+#: last_checked: 2022-12-30 (osm)
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
+(Uferweg - Carl-Spindler-Str.): Asphalt	Q0 21518,5389 21483,5374
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Asphalt	Q0 21761,4979 21778,4916 21834,4889 21848,4882
@@ -5250,10 +5249,9 @@ Weg G: unbefestigte Straße	Q2 28003,747 28126,641
 Weg H: unbefestigte Straße	Q2 27961,699 28083,592
 Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q1+ 27273,-106 26700,-344
 # 
-#: XXX zurzeit Bauarbeiten, vielleicht wird die Fahrbahnoberfläche neu gemacht?
-#: last_checked: 2022-10-16
-#: check_frequency: 90d
-Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
+# REMOVED (laut osm) --- #: XXX zurzeit Bauarbeiten, vielleicht wird die Fahrbahnoberfläche neu gemacht? --- #: last_checked: 2022-10-16 --- #: check_frequency: 90d
+#: historical_note: früher Kopfsteinpflaster, Q2
+Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22087,5404 22018,5452
 # 
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
@@ -10616,7 +10614,7 @@ Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16
 (Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20389,16209 20372,16173
 Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512
 #: source_id: viz2021:13.54537,52.542117,17.10.2022,10:12 (Fahrbahninstandsetzung bis 9.12.2022) (inaktiv)
-#: osm_watch: way id="8014720" version="31"
+#: osm_watch: way id="8014720" version="32"
 #: XXX Nach der Instandsetzung bessere Qualität, vielleicht asphaltiert?
 #: last_checked: 2022-12-30 (mapillary)
 # REMOVED --- #: next_check: 2022-12-09

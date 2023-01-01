@@ -4149,18 +4149,14 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: last_checked: 2022-11-12 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="729324149" version="9"
-#: osm_watch: way id="162120178" version="13"
-# REMOVED --- #: osm_watch: node id="6751063701" version="5"
+# REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023970" version="11"
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
-#: osm_watch: way id="719023969" version="12"
-#: last_checked: 2022-10-16
-Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
+# REMOVED (laut osm offen) --- #: osm_watch: way id="719023969" version="13" --- #: last_checked: 2022-10-16 --- Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So)
-#: osm_watch: way id="944115137" version="7"
+#: osm_watch: way id="944115137" version="8"
 #: last_checked: 2022-10-16
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 #: osm_watch: way id="719023971" version="9"
@@ -4170,6 +4166,11 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: XXX laut osm gesperrt; wird der Weg noch hergerichtet oder zurückgebaut?
+#: osm_watch: way id="152046369" version="13"
+#: last_checked: 2022-12-30
+#: check_frequency: 60d
+(Eiselenweg - Uferweg)	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
 # 
 # REMOVED (hier mittlerweile offen, siehe mapillary) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21413,5180 21345,5157
 # 
@@ -4634,7 +4635,8 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2022-10-04
+#: osm_watch: way id="276821479" version="5"
+#: last_checked: 2022-12-28 (mapillary)
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
