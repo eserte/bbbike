@@ -3506,19 +3506,20 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv)
 #: note: laut osm ist auch der Radweg auf der östlichen Brückenhälfte offen, keine Angaben zur Benutzungspflicht
-#: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
-#: last_checked: 2022-11-12 vvv
+#: XXX Benutzungspflicht des neuen Radwegs nach Abschluss der Bauarbeiten?
+#: last_checked: 2023-01-01 (mapillary) vvv
 # REMOVED --- #: check_frequency: 120d vvv
-#: next_check: 2022-12-23 vvv
+# REMOVED --- #: next_check: 2022-12-23 vvv
 # REMOVED --- #: priority: #A vvv
-	RW; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
+#: note: im Bereich der Bushaltestelle ist das Asphaltband unterbrochen
+neu asphaltiert, relativ breit	RW1; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 # REMOVED --- #: priority ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
 #: confirmed_by: srt
-neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23443,4942 23447,4906 23451,4877
+neu asphaltiert, relativ breit	RW1; 23404,5325 23420,5159 23433,5037 23443,4942 23447,4906 23451,4877
 # 
 #: note: Baumschulenstr. Richtung Südwesten
 Verbundsteinpflaster	RW1; 16507,7254 16428,7144 16375,7070
@@ -5772,7 +5773,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2022-11-26 vvv
+#: last_checked: 2023-01-01 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -7243,7 +7244,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20710,14454
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2022-12-27
+#: last_checked: 2023-01-01 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322

@@ -209,8 +209,11 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: BEBELPLATZXMAS-2022
 #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert
-#: next_check: 2023-01-02
-#: valid: 20221111-20230102
+#: last_checked: 2023-01-02 (webcam)
+#: check_frequency: 1d
+# REMOVED --- #: next_check: 2023-01-02
+# REMOVED --- #: valid: 20221111-20230102
+#: valid: 20221111-20230107
 Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 # 
 #: next_check_id: TACHELES-2020

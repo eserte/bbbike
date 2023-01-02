@@ -5512,7 +5512,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2022-12-01 (daf)
+#: last_checked: 2023-01-01 (mapillary)
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
@@ -6250,6 +6250,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'data' => '#: next_check_id: HINDENBURGDAMM-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1599696176164458496#m (erst ab 15.12.2022)
 #: by: https://nitter.net/pic/orig/media%2FFi-jSc_XoAA7nGg.jpg
+#: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
 #: source_id: bvg2021:m85#BVG312983_0
 #: source_id: bvg2021:m85#BVG312988_0
@@ -6310,12 +6311,14 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: next_check_id: KNOTENMARZAHN-2022
-#: by: https://viz.berlin.de/2022/12/marzahner-knoten/
+#: by: https://viz.berlin.de/2022/12/marzahner-knoten/ (zunächst bis 2.1.2023, mittlerweile bis "Anfang 2023")
 #: by: https://viz.berlin.de/wp-content/uploads/Landsberger-1.jpg
 #: by: https://nitter.it/VIZ_Berlin/status/1604706843762167809#m
 #: osm_watch: way id="4696062" version="26"
 #: also_indoor: traffic (B,G,H)
-#: next_check: 2023-01-02
+#: last_checked: 2023-01-02 (traffic)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2023-01-02
 	2::inwork 19205,14980 19244,14980 19400,15027
 	2::inwork 19214,14966 19244,14980
 ',
@@ -6323,7 +6326,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'id' => 3702,
          'text' => 'Landsberger Allee - Frank-Schweitzer-Str.: wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
-         'until' => 1672635600
+         'until' => 1677690000
        },
        {
          'data' => '#: next_check_id: SCHOTT-2022

@@ -3511,7 +3511,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-02
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3549,13 +3549,19 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 
 # 
 #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
-#: next_check: 2023-01-02 vvv
-#: valid: 20221111-20230102 vvv
+#: XXX Wie lange dauern die Abbauarbeiten?
+#: last_checked: 2023-01-02 (webcam) vvv
+#: check_frequency: 1d vvv
+# REMOVED --- #: next_check: 2023-01-02 vvv
+# REMOVED --- #: valid: 20221111-20230102 vvv
+#: valid: 20221111-20230107 vvv
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
 #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: osm_watch: node id="1736425250" version="4"
@@ -4307,7 +4313,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag)
-#: last_checked: 2022-10-02 (krickstadt)
+#: last_checked: 2023-01-01 (krickstadt)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4329,7 +4335,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: last_checked: 2022-11-27 vvv
+#: last_checked: 2023-01-01 (krickstadt) vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="1085382250" version="2"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
@@ -4345,7 +4351,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="14"
-#: last_checked: 2022-11-27
+#: last_checked: 2023-01-02 (krickstadt)
 #: next_check: 2023-03-31
 #: valid: -20230331
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
