@@ -4725,25 +4725,7 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
-#: by: https://viz.berlin.de/2021/12/feiertage/
-#: by: https://viz.berlin.de/2022/12/verkehr-an-den-feiertagen-und-zum-jahreswechsel/
-#: by: https://viz.berlin.de/2022/12/verkehrsvorschau_24-261222/ (Aufbauarbeiten ab dem 26.12.2022)
-# REMOVED --- #: source_id: viz2021:13.369855,52.515768,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.37737,52.51457,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.351326,52.514425,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.36968,52.51571,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.377132,52.512991,31.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.351095,52.514567,31.12.2021,06:00
-Pariser Platz	2::temp 8592,12252 8637,12258 8722,12268 8804,12280
-',
-         'from' => 1671922800,
-         'id' => 3490,
-         'text' => 'Silvesterfeier am Brandenburger Tor: Sperrung des Pariser Platzes zum Jahreswechsel 2022/2023, Aufbauarbeiten beginnen am 26.12.2022',
-         'type' => 'gesperrt',
-         'until' => 1672700399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4813,8 +4795,9 @@ Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
 #: source_id: bvg2021:188#BVG296003_0
 #: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
-#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
+#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
+#: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -4866,7 +4849,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2022-12-18 (osm)
 #: check_frequency: 45d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4993234" version="18"
+#: osm_watch: way id="4993234" version="19"
 	2::inwork 5714,12290 5796,12372 5940,12564
 # REMOVED (laut osm hier fertiggestellt) --- #: osm_watch: way id="4410535" version="26" --- 2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 ',
@@ -4888,9 +4871,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2022-12-28 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="31"
+#: osm_watch: way id="4395450" version="32"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="15"
+#: osm_watch: way id="505363417" version="16"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5087,19 +5070,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: also_indoor: traffic (ex-G,ex-H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
-#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022) (inaktiv)
-#: last_checked: 2022-12-31 (indoor)
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2022-12-31
+#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022) (inaktiv) (bis 30.4.2023)
+#: last_checked: 2023-01-03 (vmz)
+# REMOVED --- #: check_frequency: 7d
+#: next_check: 2023-04-30
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 ',
          'from' => 1650305075,
          'id' => 3539,
          'source_id' => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
-         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), Ende der Bauarbeiten unbekannt',
+         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis Ende April 2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1682866800
        },
        {
          'data' => '#: osm_watch: way id="874517258" version="9"
@@ -5461,9 +5444,9 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
          'from' => 1661230800,
          'id' => 3610,
          'source_id' => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
-         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 04.01.2023',
+         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 19.01.2023',
          'type' => 'handicap',
-         'until' => 1672848000
+         'until' => 1674144000
        },
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
@@ -5510,7 +5493,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf (Einziehung)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
-#: osm_watch: way id="147686211" version="9"
+#: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2023-01-01 (mapillary)
 #: check_frequency: 120d
@@ -5866,7 +5849,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-12-18
+#: last_checked: 2023-01-03
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -5922,18 +5905,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: AdB/21-11-00135 (inaktiv)
-#: osm_watch: way id="175828136" version="8"
-#: add_fragezeichen: Wann ist die Brücke wieder offen?
-#: last_checked: 2022-11-05 (mapillary, Asphaltierungsarbeiten)
-	2::inwork 5752,30817 5787,30867
-',
-         'from' => undef,
-         'id' => 3659,
-         'text' => 'Schönfließ - Summt: Brücke über die A10 wird neu gebaut, Ende der Bauarbeiten unbekannt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -6161,8 +6133,9 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'data' => '#: next_check_id: TEGELERBRUECKE-2021
 #: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
+#: by: https://nitter.net/txtnso/status/1609517082110201857
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
-#: osm_watch: node id="10202117536" version="1"
+#: osm_watch: node id="10202117536" version="4"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: next_check: 2023-12-01
 	2 -784,16658 -719,16608

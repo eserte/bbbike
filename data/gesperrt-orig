@@ -185,7 +185,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
-#: osm_watch: way id="4490214" version="18"
+#: osm_watch: way id="4490214" version="19"
 #: last_checked: 2022-10-08
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
@@ -3494,7 +3494,7 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: ERNSTTHAELMANNPARK-2022
-#: last_checked: 2022-12-20
+#: last_checked: 2023-01-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-12-19
 (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
@@ -3550,11 +3550,11 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 
 #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
 #: XXX Wie lange dauern die Abbauarbeiten?
-#: last_checked: 2023-01-02 (webcam) vvv
+#: last_checked: 2023-01-03 (webcam) vvv
 #: check_frequency: 1d vvv
 # REMOVED --- #: next_check: 2023-01-02 vvv
 # REMOVED --- #: valid: 20221111-20230102 vvv
-#: valid: 20221111-20230107 vvv
+#: valid: 20221111-20230108 vvv
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
@@ -3582,8 +3582,8 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10581 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10638 (Anfrage)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
-#: osm_watch: way id="27944267" version="14"
-#: last_checked: 2022-11-06
+#: osm_watch: way id="27944267" version="15"
+#: last_checked: 2023-01-02 (osm)
 #: check_frequency: 120d
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # 
@@ -3744,17 +3744,17 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2022-12-28 vvv
+#: last_checked: 2023-01-02 (osm) vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-#: osm_watch: way id="1061057020" version="3"
+#: osm_watch: way id="1061057020" version="4"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
-#: osm_watch: way id="1084269868" version="2"
+#: osm_watch: way id="1084269868" version="3"
 Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
-#: osm_watch: way id="1084269869" version="3"
+#: osm_watch: way id="1084269869" version="4"
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
@@ -3841,8 +3841,8 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
 #: next_check_id: TEGELERBRUECKE-2021
-#: osm_watch: way id="930770437" version="4"
-#: last_checked: 2022-10-08
+#: osm_watch: way id="930890136" version="19"
+#: last_checked: 2022-12-27 (daf)
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -224,16095 -265,16111
@@ -3964,7 +3964,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
-#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
+#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023)
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: note: Eintrag existiert auch in temp blockings
@@ -4719,6 +4719,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: next_check_id: S21-2018
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
+#: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="25"
 #: also_indoor: traffic
 #: last_checked: 2022-12-28
@@ -4761,35 +4762,9 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 # REMOVED (offen) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden") --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen) --- #: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/ --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/humboldtbruecke-wird-saniert_a216268 (bis zum Sommer (2019) wieder passierbar) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-weiter-gesperrt_a219670 (Verzögerungen; Öffnung erst 2020?) --- #: by: https://www.morgenpost.de/bezirke/reinickendorf/article226296951/Bruecke-an-der-Muehle-in-Tegel-bleibt-gesperrt.html (Öffnung Frühjahr 2020?) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7684 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-bleibt-weiter-gesperrt_a251584 (Sperrung mindestens bis Sommer 2020) --- #: by: https://leute.tagesspiegel.de/reinickendorf/macher/2020/07/15/131974/die-gesperrte-bruecke-zur-humboldt-insel/ (Neubau bis Dezember 2020) --- #: by: https://abendblatt-berlin.de/2020/12/08/berlin-tegel-baustart-fuer-fussgaengerbruecke-an-der-muehle/ (Baubeginn Ende November 2020, Fertigstellung "hoffentlich" im Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-bauen/endlich-bauarbeiten_a295949 (voraussichtlich bis Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaenger-koennen-die-muehlenbruecke-wieder-passieren_a332261 --- # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11" --- #: osm_watch: way id="23099023" version="13" --- #: osm_watch: way id="23099024" version="8" --- #: osm_watch: way id="103531998" version="9" --- #: last_checked: 2021-11-13 (osm) --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2021-03-15 --- # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 --- Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
-# 
-#: next_check_id: TACHELES-2020
-#: note: Baugelände
-#: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
-#: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
-#: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
-#: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10161 (Benennung von Privatplätzen)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_41_5037_5124_online.pdf (Benennung von zwei privaten Stadtplätzen)
-#: by: https://www.architektur-urbanistik.berlin/index.php?attachments/1617229675566-png.6106/ (schematische Karte mit Johannisplatz und Aaron-Bernstein-Platz)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_29_2481_2536_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berliner-woche.de/mitte/c-bauen/neues-stadtquartier-soll-bis-mitte-2023-fertig-sein_a324308
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7042 (angeblich wurde die Straße niemals benannt --- aber die GoogleMaps-Bilder von 2008/2009 zeigen ein Straßenschild)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11118 (Antrag)
-#: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel? --- die Helga-Hahnemann-Str. wird es in Zukunft wohl nicht mehr geben
-#: XXX außerdem: im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data; wo genau befinden sie sich?):
-#: XXX Johannisplatz (PLZ=10117 laut LOR)
-#: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR)
-# REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
-#: osm_watch: way id="940764588" version="7"
-#: osm_watch: way id="940764584" version="4"
-#: last_checked: 2022-12-11 (osm)
-#: check_frequency: 120d
-#: next_check: 2023-06-30
-Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
-# 
+# REMOVED --- #: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel? --- die Helga-Hahnemann-Str. wird es in Zukunft wohl nicht mehr geben --- #: historical_note: alter Berlin.coords.data-Eintrag: Helga-Hahnemann-Str.|Mitte|10117|9415,13315 --- # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7" --- #: osm_watch: way id="940764584" version="4" --- Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # REMOVED (fast alles offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16 --- #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung) --- #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen --- #: last_checked: 2018-12-28 vvv --- #: check_frequency: 14d vvv --- #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet) --- Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9796,12284 9877,12293 --- #: XXX heißt dieser Abschnitt noch so oder Bebelplatz? --- #: osm_watch: way id="28251222" version="15" --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9796,12284 9780,12401 --- #: osm_watch: way id="474362271" version="2" --- Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9877,12293 --- # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395 --- #: check_frequency ^^^ --- #: last_checked: ^^^
 # REMOVED (fertig) --- #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier früher eröffnet? --- #: last_checked: 2016-09-30 --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9798,12267
-# 
 # REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: XXX Eröffnung 2020 geplant --- #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16 --- #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin) --- # REMOVED (keine neuen Bilder mehr) --- #: by: https://cam01.berlinerschloss-webcam.de/ (Webcam) --- #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html --- #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020) --- #: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teileröffnung Ende 2020?) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-wird-nicht-wie-geplant-im-september-eroeffnet_a266869 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020) --- #: by: https://abendblatt-berlin.de/2020/08/30/humboldt-forum-soll-mitte-dezember-eroeffnen/ (Mitte Dezmber 2020) --- #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020) --- #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben) --- #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut) --- #: last_checked: 2022-10-29 --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
@@ -4831,7 +4806,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2022-12-10 vvv
+#: last_checked: 2023-01-03 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
