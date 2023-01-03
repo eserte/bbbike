@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016-2022 Slaven Rezic
+;; Copyright (C) 1997-2014,2016-2023 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -25,6 +25,12 @@
 (defface bbbike-button
   '((t (:underline t)))
   "Face for buttons without changing foreground color")
+(defface bbbike-button-strike
+  '((t (:underline t :strike-through t)))
+  "Face for sort-of inactive buttons without changing foreground color")
+;; for this button face the mouseover background color needs to be adapted
+(copy-face 'bbbike-button-strike 'bbbike-button-strike-hover)
+(set-face-attribute 'bbbike-button-strike-hover nil :background "#b4eeb4")
 
 (defvar bbbike-font-lock-keywords
   '(("\\( +\\)\t" (1 bbbike-font-lock-trailing-whitespace-face)) ;; trailing whitespace after names. works only partially, but at least it disturbs the fontification
@@ -681,6 +687,13 @@
   'face 'bbbike-button
   'help-echo "Click button to show source_id element (VMZ/VIZ)")
 
+(define-button-type 'bbbike-inactive-sourceid-viz-button
+  'action 'bbbike-sourceid-viz-button
+  'follow-link t
+  'face 'bbbike-button-strike
+  'mouse-face 'bbbike-button-strike-hover
+  'help-echo "Click button to show inactive source_id element (VMZ/VIZ)")
+
 (defun bbbike-osm-button (button)
   (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
 
@@ -747,9 +760,10 @@
 	  (while (search-forward-regexp bbbike-sourceid-in-pl-regexp nil t)
 	    (let* ((begin-pos (match-beginning 1))
 		   (end-pos (match-end 1))
-		   (source-id (buffer-substring begin-pos end-pos)))
+		   (source-id (buffer-substring begin-pos end-pos))
+	           (button-type (if (bbbike--is-source-id-inactive) 'bbbike-inactive-sourceid-viz-button 'bbbike-sourceid-viz-button)))
 	      (make-button begin-pos end-pos
-			   :type 'bbbike-sourceid-viz-button
+			   :type button-type
 			   :sourceid source-id
 			   ))))
 	))
@@ -760,9 +774,10 @@
     (while (search-forward-regexp bbbike-sourceid-in-bbd-regexp nil t)
       (let* ((begin-pos (match-beginning 1))
 	     (end-pos (match-end 1))
-	     (source-id (buffer-substring begin-pos end-pos)))
+	     (source-id (buffer-substring begin-pos end-pos))
+	     (button-type (if (bbbike--is-source-id-inactive) 'bbbike-inactive-sourceid-viz-button 'bbbike-sourceid-viz-button)))
 	(make-button begin-pos end-pos
-		     :type 'bbbike-sourceid-viz-button
+		     :type button-type
 		     :sourceid source-id
 		     ))))
 
@@ -794,6 +809,11 @@
 		   :bbbikepos (bbbike--bbd-find-next-coordinate "traffic")
 		   )))
   )
+
+(defun bbbike--is-source-id-inactive ()
+  (if (save-excursion (search-forward-regexp "\\(inactive\\|inaktiv\\))?$" (save-excursion (end-of-line) (point)) t))
+      t
+    nil))
 
 ;; convert bbbike "standard" coordinates to WGS84 coordinates using external commands
 ;; usage:
