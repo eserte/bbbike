@@ -811,7 +811,7 @@
   )
 
 (defun bbbike--is-source-id-inactive ()
-  (if (save-excursion (search-forward-regexp "\\(inactive\\|inaktiv\\))?$" (save-excursion (end-of-line) (point)) t))
+  (if (save-excursion (search-forward-regexp "\\(inactive\\|inaktiv\\))? *\\(vvv+\\)?$" (save-excursion (end-of-line) (point)) t))
       t
     nil))
 
