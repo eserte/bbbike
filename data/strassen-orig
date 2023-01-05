@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-12-28 (mapillary) vvv
+#: last_checked: 2023-01-05 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -381,7 +381,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
-#: last_checked: 2022-12-28 (mapillary)
+#: last_checked: 2023-01-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 # REMOVED --- #: valid: !20200821-20221122
@@ -1489,7 +1489,7 @@ Heiligegeistgasse	NN 10285,12744 10309,12700 10344,12641 10352,12627
 Karl-Liebknecht-Str.	HH 10243,12546 10300,12587 10352,12627 10431,12709 10515,12780 10525,12789 10695,12933 10733,12967 10776,13005 10863,13095 10923,13156 10976,13229 11012,13278 11070,13357
 Karl-Liebknecht-Str.	HH 11070,13357 11081,13372 11107,13410 11135,13452 11160,13492
 Karl-Liebknecht-Str.	HH 11160,13492 11131,13455 11080,13373 11070,13357
-Unter den Linden	HH 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351 9303,12343 9141,12320 9028,12307 8804,12280
+Unter den Linden	HH 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351 9303,12343 9141,12320 9028,12307 8804,12280
 Hinter der Katholischen Kirche	N 9812,12150 9808,12182 9798,12267
 #: note: Privatgelände, auf der westlichen Seite ein Fahrrad/Einfahrt verboten-Schild, auf der östlichen Seite nicht
 (entlang der Hedwigskathedrale)	NN 9808,12182 9775,12178 9771,12190 9747,12205
@@ -1510,14 +1510,26 @@ Fischerinsel [Wohngebiet]	N 10578,11969 10657,12026 10683,11995 10713,12014
 (Fischerinsel - Grünstraßenbrücke)	NN 10474,11843 10515,11785
 Neue Roßstr.	NH 10672,11870 10687,11853 10722,11816 10815,11662
 Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377 11158,11324 11217,11288 11249,11268
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
+#: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
+#: last_checked: 2023-01-05
+#: check_frequency: 180d
+#: next_check: 2024-12-31
+Annenstr. [Wohngebiet] (Mitte)	N 11192,11429 11259,11391 11217,11288
 #: note: keine Straßenschilder, Postadressen möglicherweise Heinrich-Heine-Str.
 (Wohngebiet)	N 11052,11414 11131,11579 11166,11664
 (Wohngebiet)	N 11166,11664 11080,11712 11017,11658
-Schmidstr.	N 11415,11392 11236,11508
-(Schmidstr. - Heinrich-Heine-Str.)	NN 11236,11508 11174,11554
+Schmidstr.	N 11233,11510 11415,11392
+Schmidstr.	N 11415,11392 11480,11526
+#: osm.highway: service
+#: note: nur für Lieferverkehr frei
+Schmidstr.	N 11480,11526 11281,11612
+(Schmidstr. - Heinrich-Heine-Str.)	NN 11233,11510 11174,11554
 Heinrich-Heine-Platz	NH 11349,11227 11249,11268
 Heinrich-Heine-Platz	N 11249,11268 11241,11247 11337,11197
 Heinrich-Heine-Str.	H 11250,11715 11174,11554 11094,11377 11039,11254 10937,11033
+Heinrich-Heine-Str. [Wohngebiet]	N 11281,11612 11233,11510 11192,11429
 Ebertstr.	H 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 Pariser Platz	N 8804,12280 8722,12268
 Pariser Platz	NN 8722,12268 8637,12258 8592,12252
@@ -18604,7 +18616,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="8"
-#: last_checked: 2022-12-28
+#: last_checked: 2023-01-05
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976

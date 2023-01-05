@@ -2009,7 +2009,7 @@ Stubenrauchstr.: Bahntrasse	3nocross 16547,2680 16573,2715 16635,2796
 Neukˆllner Str.: Mittelstreifen	3nocross 16135,2135 16028,2261 15980,2318
 Rudower Chaussee: Straﬂenbahntrasse	3 19498,3054 19475,3074 19426,3024
 Sterndamm: Straﬂenbahntrasse	3nocross 17601,5090 17542,4772 17516,4657
-Sterndamm: Straﬂenbahntrasse	3nocross 17648,5338 17601,5090 17542,4772
+# REMOVED (‹berfahrt existiert, mindestens seit 2008, vielleicht schon immer?) --- Sterndamm: Straﬂenbahntrasse	3nocross 17648,5338 17601,5090 17542,4772
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21863,11289 21954,11269 22242,11269 22326,11266
 # REMOVED (es existiert ein offizieller Radweg auf der linken Seite) --- Konrad-Wolf-Str./Groﬂe-Leege-Str.: wegen Absperrgitter nicht ¸berquerbar	3nocross 16961,16042 16917,16001 16819,15912
 # REMOVED (Wendemˆglichkeit existiert) --- Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2944,15880
@@ -3523,7 +3523,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2022-12-14 vvv
+#: last_checked: 2023-01-05 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. mˆglich vvv
@@ -3550,8 +3550,8 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraﬂe auch f¸r Radfahrer	1s:q4:inwork 
 #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
 #: XXX Wie lange dauern die Abbauarbeiten?
-#: last_checked: 2023-01-04 (webcam) vvv
-#: check_frequency: 1d vvv
+#: last_checked: 2023-01-05 vvv
+#: check_frequency: 2d vvv
 # REMOVED --- #: next_check: 2023-01-02 vvv
 # REMOVED --- #: valid: 20221111-20230102 vvv
 #: valid: 20221111-20230108 vvv
@@ -4128,7 +4128,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX Die Kreuzung Gustav-Bˆﬂ-Str./J¸denstr. wird eine neue Ampel bekommen
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-12-27
+#: last_checked: 2023-01-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-11-30
 Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10673,12434 10772,12515
@@ -4194,7 +4194,7 @@ Bl¸tenweiﬂweg: durch Bauz‰une abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2022-12-20
+#: last_checked: 2023-01-05
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -4222,7 +4222,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe --- mittlerweile manchmal tats‰chlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="21"
 #: priority: #C
-#: last_checked: 2022-12-30
+#: last_checked: 2023-01-05
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4334,6 +4334,7 @@ Wuhletalbr¸cke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699
 #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
+#: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Pr‰sentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
 #: last_checked: 2023-01-01 (krickstadt) vvv
 #: check_frequency: 120d vvv
@@ -4350,6 +4351,7 @@ Wuhletalbr¸cke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED (nein) --- #: XXX ¸berpr¸fen, ob der Gehweg legal f¸r Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: fr¸her: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
+#: next_check_id: SCHOENEWEIDE-2018
 #: osm_watch: way id="40451054" version="14"
 #: last_checked: 2023-01-02 (krickstadt)
 #: next_check: 2023-03-31
@@ -4374,7 +4376,7 @@ Zufahrt Zentrum Schˆneweide: Fahrbahn und B¸rgersteig gesperrt	2:inwork 17728,57
 #: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen", trotzdem in der Anfangszeit h‰ufiger nachpr¸fen
 #: XXX in der Glinkastr. Einbahnstraﬂe offen f¸r Radfahrer
 #: also_indoor: traffic (G,H,B(teilweise))
-#: source_id: 2147343289 (bis 30.6.2021)
+#: source_id: 2147343289 (bis 30.6.2021) (inaktiv)
 #: source_id: 2147343291 (Einbahnstraﬂe in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023)
 #: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023) (inaktiv)
@@ -4384,7 +4386,7 @@ Zufahrt Zentrum Schˆneweide: Fahrbahn und B¸rgersteig gesperrt	2:inwork 17728,57
 #: osm_watch: way id="47935842" version="16"
 #: osm_watch: way id="681299267" version="4"
 #: priority: #A vvv
-#: last_checked: 2022-12-23 vvv
+#: last_checked: 2023-01-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv
@@ -4400,6 +4402,10 @@ Mauerstr..: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9076,12054
 #: source_id: viz2021:13.38472,52.51468,29.09.2022,18:05 (inaktiv)
 #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
+#: XXX Hier ˆfters nachschauen...
+#: note: Einbahnstraﬂenregelung auf 35m L‰nge, deshalb q3
+#: check_frequency: 21d
+Glinkastr.: Einbahnstraﬂenregelung wegen Bauarbeiten, auch f¸r Radfahrer	1s:q3:inwork 9183,12076 9195,11972
 #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4413,12 +4419,12 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2022-12-09
+#: last_checked: 2023-01-05
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraﬂenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollst‰ndig aktiv
-#: last_checked: 2022-12-02
+#: last_checked: 2023-01-05
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4778,7 +4784,7 @@ Wikingerufer: wegen Besch‰digungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraﬂenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-12-28 vvv
+#: last_checked: 2023-01-05 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

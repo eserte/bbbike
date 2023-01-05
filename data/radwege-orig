@@ -848,7 +848,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-12-27 vvv
+#: last_checked: 2023-01-05 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -1804,9 +1804,31 @@ Busspur ist immer gültig	RW5; 5258,11285 5459,11135
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 4922,11600 4900,11626 4838,11697
 # 
 #: note: Unter den Linden, Schloßplatz, Karl-Liebknecht-Str. Richtung Osten
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1123035.php (Oktober 2021 - Sommer 2022)
+#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/strassen-und-kfz-verkehr/projekte-in-planung/boulevard-unter-den-linden/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794
+#: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
+#: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
+#: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
+#: by: https://nitter.cz/VIZ_Berlin/status/1592130421860757505#m (in den kommenden Wochen die letzten Arbeiten; 3,25m breiter Radfahrstreifen)
+#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
+#: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
+#: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
+#: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
+#: last_checked: 2023-01-05 vvv
+#: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
-Busspur ist immer gültig	RW5; 9028,12307 9141,12320 9303,12343 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420
-Radspur	RW3; 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546
+Busspur ist immer gültig	RW5; 9028,12307 9141,12320
+	RW3; 9141,12320 9303,12343 9358,12351
+Bushaltestelle	RW5; 9358,12351 9429,12359
+	RW3; 9429,12359 9475,12365 9613,12381
+Busspur ist immer gültig	RW5; 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410
+	RW3; 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438
+Bushaltestelle	RW5; 10063,12438 10152,12491
+	RW3; 10152,12491 10176,12506 10243,12546
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Busspur ist immer gültig	RW5; 10243,12546 10300,12587 10352,12627 10431,12709 10515,12780 10525,12789 10695,12933 10733,12967 10776,13005 10863,13095
 Busspur ist immer gültig	RW5; 10923,13156 10976,13229 11012,13278 11070,13357 11081,13372 11107,13410
 Fahrradschleuse	RW3; 11107,13410 11135,13452 11160,13492
@@ -1817,13 +1839,14 @@ Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 	RW3; 10525,12789 10515,12780 10431,12709
 Busspur ist immer gültig	RW5; 10431,12709 10352,12627 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
-Busspur ist immer gültig	RW5; 10176,12506 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2022-12-27 vvv
+#: last_checked: 2023-01-05 vvv
 #: check_frequency: 14d vvv
+	RW3; 10176,12506 10152,12491
+Bushaltestelle	RW5; 10152,12491 10063,12438
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
-Radspur	RW3; 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351
+Radspur	RW3; 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351
 Bushaltestelle	RW5; 9358,12351 9303,12343
 Radspur	RW3; 9303,12343 9141,12320 9028,12307 8804,12280
 #: check_frequency ^^^
@@ -1854,7 +1877,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2022-12-20 vvv
+#: last_checked: 2023-01-05 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10574,12131 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
@@ -1862,7 +1885,7 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
-#: last_checked: 2022-12-20
+#: last_checked: 2023-01-05
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1875,7 +1898,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-12-14
+#: last_checked: 2023-01-05
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -2501,7 +2524,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-12-28
+#: last_checked: 2023-01-05
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -3496,12 +3519,12 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-nach-fuenf-jahren-wieder-eroeffnet/
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/im-umfeld-der-salvador-allende-bruecke-wird-noch-weiter-gebaut_a364193 (bis Anfang Dezember 2022)
 # REMOVED --- #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017 --- #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate --- #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten --- #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
-#: osm_watch: way id="333893474" version="31"
-#: osm_watch: way id="10275151" version="53"
-#: source_id: LMS-BR_r_LMS-BR_6442
-#: source_id: 2147343694
-#: source_id: 2147345165 (bis Ende 2021)
-#: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
+#: osm_watch: way id="333893474" version="32"
+#: osm_watch: way id="10275151" version="54"
+#: source_id: LMS-BR_r_LMS-BR_6442 (möglicherweise inaktiv)
+#: source_id: 2147343694 (möglicherweise inaktiv)
+#: source_id: 2147345165 (bis Ende 2021) (inaktiv)
+#: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020) (inaktiv)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv)
@@ -6016,7 +6039,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 	RW4; 9141,12320 9131,12438
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-12-27 vvv
+#: last_checked: 2023-01-05 vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
@@ -7890,7 +7913,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-12-14 vvv
+#: last_checked: 2023-01-05 vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461
