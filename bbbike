@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2022 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2023 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -15127,7 +15127,7 @@ EOF
 		my $osm_id;
 		for (@tags) {
 		    if (my($_type,$_id) = $_ =~ m{^osm-(node|way|relation)-(\d+)$}) {
-			push @tags, "http://www.openstreetmap.org/browse/$_type/$_id";
+			push @tags, "https://www.openstreetmap.org/$_type/$_id";
 			($osm_type, $osm_id) = ($_type, $_id);
 		    } elsif ($_ =~ m{\bversion=(\d+)}) {
 			$osm_version = $1;
