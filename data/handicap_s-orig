@@ -599,7 +599,7 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
 #: note: zurzeit wird man Richtung Westen auf die südliche Fahrbahn geleitet
-#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023)
+#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023)
 #: last_checked: 2022-11-26
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: check_frequency ^^^
@@ -770,7 +770,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-06
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -2046,8 +2046,9 @@ Elli-Voigt-Str.: vier Bodenwellen	q1- 15833,13596 15831,13760
 Elli-Voigt-Str.: zwei Bodenwellen	q1- 15792,13764 15794,13975
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 15896,14548 15899,14598
-Verdener Gasse: enge Straße	q1 15878,14761 15946,14702
-Verdener Gasse: Bordsteine	q3 15946,14702 15968,14684
+Verdener Gasse: enge Straße	q0- 15878,14761 15946,14702
+#: XXX_prog: BS an beiden Enden, sonst q1
+Verdener Gasse: einige Fußgänger, Bordsteine	q3 15946,14702 15968,14684
 #: note: außerdem zu kurz für eine höhere Geschwindigkeit
 (Waisenstr. - Littenstr.): Fußgänger	q3 11049,12386 11084,12395
 Karl-Vesper-Str.: enge Straße	q1 14184,13670 14205,13755 14263,13739
@@ -2079,7 +2080,7 @@ Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q3 6878,5946 6895,5873
 Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 (Plauener Str. - Küllstedter Str.): Fußgänger	q2 17352,14827 17363,14760
 #: XXX_prog: für Anhänger q2
-Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
+Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14967,15885 14994,15861 15313,15858 15395,15852 15441,15850
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14433,15908 14451,15873 14383,15848 14349,15825 14365,15778
 #: XXX_prog: BS an der Lindenallee, ansonsten q1
 Gounodstr.: Fußgänger, flacher Bordstein	q2 14239,15810 14251,15828 14366,15877
@@ -4071,8 +4072,12 @@ Niemannstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14254,1137
 Helmerdingstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14468,11203 14442,11101
 #: XXX_prog mit Anhänger aber ggfs. q2
 Matkowskystr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14531,11142 14513,11075
+# 
+#: note: am nördlichen Ende ein Grünanlagenschild ohne Zusatzschilder
 Orankestrand: Fußgänger, Radfahren offiziell verboten	q3 15479,16060 15592,16069 15664,16115 15731,16208
-Zum Orankestrand: schmal	q2 15435,16063 15479,16060
+#: note: am südlichen Ende Grünanlagenschild mit einem expliziten "Radfahren verboten"
+Zum Orankestrand: schmal, Fußgänger, Radfahren offiziell verboten	q3 15435,16063 15479,16060
+# 
 (Zechliner Str. - Neustrelitzer Str.): Gehweg	q3- 16281,14604 16323,14672
 (Neustrelitzer Str., Gehweg): Gehweg	q3- 16323,14672 16356,14725
 #: note: gemeinsamer Rad- und Gehweg
@@ -4152,7 +4157,7 @@ Johannes-Zoschke-Str.: einige Fußgänger	q1 19037,9636 19042,9708
 Brodenbacher Weg: einige Fußgänger	q2 15278,17152 15308,17166
 #: note: Grünanlage, Zusatzschild existiert, aber nicht erkennbar vvv
 Orankesee, südliches Ufer: Fußgänger	q2 15856,15924 15815,15939 15758,15932 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
-(Orankestr. - Orankesee): Fußgänger	q2 15598,15793 15604,15824 15587,15852
+(Orankestr. - Orankesee): Fußgänger	q2 15599,15786 15604,15824 15587,15852
 (Oranksee - Hansastr.): einige Fußgänger	q1- 15479,16060 15358,16151 15320,16163 15270,16205
 #: note ^^^
 Hansastr.: einige Fußgänger	q3 15236,16241 15254,16243

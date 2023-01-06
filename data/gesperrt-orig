@@ -1210,7 +1210,7 @@ Alt-Moabit - Invalidenstr.	1no 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
 #: next_check_id: PARKAUE-2022
 #: XXX wiederherstellen! (1no -> 1s:q4)
-#: last_checked: 2022-11-11
+#: last_checked: 2023-01-06
 #: next_check: 2023-10-31
 Parkaue	1no 15406,12444 15408,12394 15370,12264
 # 
@@ -3511,7 +3511,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-01-02
+#: last_checked: 2023-01-06
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4449,6 +4449,8 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (Ende 2022 fertig?)
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 (Modernisierung des Stichwegs)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/eierhaeuschen-oeffnet-zur-kommenden-saison_a358490
+#: osm_watch: way id="171586571" version="3"
+#: osm_watch: way id="485693846" version="1"
 #: priority: #C
 #: last_checked: 2022-12-08
 #: check_frequency: 30d

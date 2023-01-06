@@ -946,9 +946,10 @@ Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,135
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
 Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
 Sandinostr.: Asphalt	Q0 15799,14674 15706,14752
-Orankeweg: asphaltiert	Q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
-Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15996,15620 15877,15673 15801,15706 15665,15765
-Orankestrand: guter Parkweg	Q1 15866,16393 15782,16277 15731,16208 15664,16115 15592,16069 15479,16060
+Orankeweg: asphaltiert	Q0 14967,15885 14994,15861 15313,15858 15395,15852 15441,15850
+Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15996,15620 15876,15670 15799,15701 15659,15759
+Orankestrand: unbefestigter Weg, etwas Schotter	Q2 15866,16393 15813,16319 15782,16277 15731,16208
+Orankestrand: unbefestigter Weg	Q1 15731,16208 15664,16115 15592,16069 15479,16060
 Degnerstr.: Asphalt	Q0 16806,16496 16849,16551 17014,16724
 Genslerstr.: schadhafter Beton	Q1 16898,15453 16868,15337
 Genslerstr.: schadhafter Beton	Q1; 16868,15337 16858,15300
@@ -1210,7 +1211,7 @@ Gerkrathstr.: Kopfsteinpflaster	Q2 -3290,2420 -3280,2507 -3228,2622 -3260,2675 -
 Lübarser Weg: Kopfsteinpflaster	Q2 8413,24365 8427,24391
 Lübarser Weg: Asphalt	Q0 8427,24391 8473,24515 8534,24625 8565,24679 8604,24747 8606,24751 8609,24757 8649,24826 8682,24883
 Dolomitenstr.: Kopfsteinpflaster	Q2 10573,17566 10466,17464 10298,17299
-(Orankestr. - Orankesee): Parkweg	Q2 15598,15793 15604,15824 15587,15852
+(Orankestr. - Orankesee): Parkweg	Q2 15599,15786 15604,15824 15587,15852
 Peter-Vischer-Str.: Asphalt	Q0 6168,6467 6324,6480 6458,6492 6538,6499 6694,6512 6820,6522
 Riemenschneiderweg: Asphalt	Q0 6820,6522 6798,6755 6791,6821 6770,7027
 Riemenschneiderweg: Beton, einige Hebungen	Q1 6770,7027 6762,7109
@@ -3309,6 +3310,7 @@ Vulkanstr. [Wohngebiet]: Asphalt	Q0 15871,14106 15758,14088
 Landsberger Allee - Große-Leege-Str.: Verbundsteinpflaster	Q1 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Asphalt	Q0 15902,14498 15896,14548 15899,14598
 Verdener Gasse: Asphalt	Q0 15878,14761 15946,14702
+Verdener Gasse: alte Gehwegplatten, unbefestigter Weg	Q1 15946,14702 15968,14684
 Berkenbrücker Steig: schlechtes Kopfsteinpflaster	Q3 15647,14693 15544,14714
 Berkenbrücker Steig: unebenes kleinteiliges Kopfsteinpflaster	Q2 15544,14714 15383,14759
 (Landsberger Allee - Anton-Saefkow-Platz): Gehwegplatten	Q1 14871,14087 14903,14003
@@ -3474,7 +3476,7 @@ Waldowstr.: Asphalt	Q0 16080,15830 16297,15737 16469,15659 16497,15636
 Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2 15894,16096 15869,16078
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
-Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
+Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
 (Elfriedestr. - Klarastr.): Beton	Q0 16211,16131 16293,16109
@@ -3487,7 +3489,7 @@ Marie-Luise-Str.: unebenes Kleinkopfsteinpflaster	Q2 15968,16133 15976,16220 159
 Augustastr. (Alt-Hohenschönhausen): Asphalt	Q0 15927,16344 15894,16189 15894,16096
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15927,16344 15918,16383
 Bertastr. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 15894,16189 15840,16246 15782,16277
-Orankestr.: sehr guter Asphalt	Q0 15665,15765 15598,15793 15453,15848
+Orankestr.: sehr guter Asphalt	Q0 15659,15759 15599,15786 15441,15850
 Hansastr. [Wohngebiet]: Beton	Q0 15381,15873 15341,15912 15220,16019 15130,16098
 Else-Jahn-Str.: Beton	Q0 15120,16349 14807,16396 14769,16414
 Otto-Brahm-Str.: Asphalt	Q0 14321,15636 14282,15746 14365,15778 14400,15787 14440,15682
@@ -3513,7 +3515,7 @@ Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
 Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11905,15878 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
-Chamierstr.: Asphalt	Q0 15840,15806 15801,15706
+Chamierstr.: Asphalt	Q0 15840,15806 15799,15701
 (Amalienstr. - Uferweg): wassergebundene Decke	Q1 14124,16552 14142,16559 14159,16593
 (Blechenstr. - Uferweg): Asphalt	Q0 14014,16722 14179,16641
 (Große Seestr. - Uferweg): Asphalt	Q0 14184,16889 14189,16793 14232,16716
@@ -12443,7 +12445,7 @@ Beuthstr.: Asphalt	Q0 10784,20275 10650,20205 10534,20144 10435,20098 10309,2003
 Beuthstr.: Asphalt	Q0 10309,20032 10134,19981
 Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14936,15857 14769,15867 14695,15911 14609,15921
-Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15598,15793
+Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15599,15786
 Adolf-Martens-Str.: Asphalt	Q0 2723,4093 2797,3974
 Adolf-Martens-Str.: Asphalt mit leichten Schäden	Q0 2797,3974 3033,4113
 Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5199,13247 5351,13238
@@ -15490,7 +15492,7 @@ Bohnsacker Steig: Verbundsteinpflaster	Q1 -2245,22954 -2284,22847
 Wolfgang-Steinitz-Str.: guter Asphalt	Q0 31967,2966 31948,2962 31861,2898 31772,2830 31647,2729
 Gottfried-Leibniz-Str.: Asphalt	Q0 19324,2939 19374,2887 19440,2817
 Pfarrer-Goosmann-Str.: Asphalt	Q0 19242,3366 19491,3597
-Gropiusstr. (Alt-Hohenschönhausen): guter Asphalt	Q0 15877,15673 15825,15547
+Gropiusstr. (Alt-Hohenschönhausen): Asphalt, einige Unebenheiten	Q0 15876,15670 15825,15547
 Urbanstr. (Zehlendorf): guter Beton	Q0 515,1507 550,1358
 Halbe-Hufen-Weg: schlechter fester Sandweg	Q3 15471,23746 15559,23689 15647,23633
 Teikeweg: Asphalt	Q0 9412,4537 9519,4537 9677,4518

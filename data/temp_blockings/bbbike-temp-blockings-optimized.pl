@@ -3997,8 +3997,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.openstreetmap.org/note/3032478 (nicht mehr gesperrt!)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/18-12-00003_anwohnerinformation-ueber-trink-und-abwasserauswechslung.pdf (bis Juni 2023)
 # REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
-#: source_id: 2147347233 (bis 23.12.2021)
+#: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021) (inaktiv)
+#: source_id: 2147347233 (bis 23.12.2021) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
@@ -4655,7 +4655,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022) (bis 31.01.2023)
 #: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00 (mittlerweile bis 31.1.2023)
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-12-31 vvv
+#: last_checked: 2023-01-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-31 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -6000,7 +6000,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1055654058" version="1"
-#: last_checked: 2022-11-27 (architektur-urbanistik)
+#: last_checked: 2023-01-04 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2023-12-31
 	q3::inwork 6447,9661 6348,9541
@@ -6078,16 +6078,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2022-12-07
-	2::inwork 15468,14430 15425,14360
-',
-         'from' => undef,
-         'id' => 3681,
-         'text' => 'Mittelstr./Altenhofer Str. - Landsberger Allee: Verbindung wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Stand 7. Dezember 2022: noch immer gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: INDENALBOINGARTEN-2022
 #: note: Durchfahrt war möglich am 2022-12-27 gegen 21:00
@@ -6210,16 +6201,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        undef,
        undef,
-       {
-         'data' => '#: by: rbb
-	q4::inwork 4315,8478 4457,8484 4457,8372 4473,8351
-',
-         'from' => 1670266907,
-         'id' => 3697,
-         'text' => 'Wallenbergstr.: Bauarbeiten zwischen Mecklenburgische Str. und Barbrücke, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 06.01.2023',
-         'type' => 'handicap',
-         'until' => 1673046000
-       },
+       undef,
        {
          'data' => '#: next_check_id: HINDENBURGDAMM-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1599696176164458496#m (erst ab 15.12.2022)
@@ -6312,6 +6294,30 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'id' => 3703,
          'text' => 'Schottstr.: Bauarbeiten, EInbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: priority: #C
+#: last_checked: 2023-01-05
+	2::inwork 10352,12627 10344,12641 10309,12700
+',
+         'from' => undef,
+         'id' => 3704,
+         'text' => 'Heiligengeistgasse: Sperrung nach dem Platzen des Aquadoms, Dauer der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist die Verlängerte Neukladower Allee weiterhin gesperrt?
+#: XXX Nach den Bauarbeiten wahrscheinlich besserer Asphalt -> in qualitaet_s eintragen!
+#: next_check: 2023-05-31
+	2::inwork -6319,5606 -6246,5562 -6125,5447
+',
+         'from' => 1673074800,
+         'id' => 3705,
+         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1281512.php',
+         'text' => 'Verlängerte Neukladower Allee: Sperrung wegen Bauarbeiten, voraussichtlich bis Mai 2023',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

@@ -525,6 +525,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
 #: by: https://www.infravelo.de/projekt/oderstrasse/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Antrag zur Eschersheimer Str., Erwähnung der Oderstr.)
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
 #: last_checked: 2022-10-02
 #: check_frequency: 180d
@@ -1388,11 +1389,11 @@ Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
 Sandinostr.: Asphalt	Q0 15799,14674 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
 #: confirmed_by: srt
-Orankeweg: asphaltiert	Q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
+Orankeweg: asphaltiert	Q0 14967,15885 14994,15861 15313,15858 15395,15852 15441,15850
 #: corrected_by: srt (Q3 -> Q3+)
-Orankestr.: schlechtes Kopfsteinpflaster	Q3+ 16331,15486 15996,15620 15877,15673 15801,15706 15665,15765
-#: note: teilweise guckt etwas Schotter hervor
-Orankestrand: guter Parkweg	Q1- 15866,16393 15782,16277 15731,16208 15664,16115 15592,16069 15479,16060
+Orankestr.: schlechtes Kopfsteinpflaster	Q3+ 16331,15486 15996,15620 15876,15670 15799,15701 15659,15759
+Orankestrand: unbefestigter Weg, etwas Schotter	Q2+ 15866,16393 15813,16319 15782,16277 15731,16208
+Orankestrand: unbefestigter Weg	Q1- 15731,16208 15664,16115 15592,16069 15479,16060
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht durchgängig asphaltiert? Wie werden sich die Verschwenkungen auswirken? --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html --- #: next_check: 2011-10-01 --- #: last_checked: 2010-10-05 (noch in Bau)
 Degnerstr.: Asphalt	Q0 16806,16496 16849,16551 17014,16724
 Genslerstr.: schadhafter Beton	Q1- 16898,15453 16868,15337
@@ -1733,7 +1734,7 @@ Lübarser Weg: Asphalt	Q0 8427,24391 8473,24515 8534,24625 8565,24679 8604,24747 
 #: confirmed_by: srt
 Dolomitenstr.: Kopfsteinpflaster	Q2 10573,17566 10466,17464 10298,17299
 #: confirmed_by: srt (Q1 -> Q2+)
-(Orankestr. - Orankesee): Parkweg	Q2+ 15598,15793 15604,15824 15587,15852
+(Orankestr. - Orankesee): Parkweg	Q2+ 15599,15786 15604,15824 15587,15852
 Peter-Vischer-Str.: Asphalt	Q0 6168,6467 6324,6480 6458,6492 6538,6499 6694,6512 6820,6522
 # REMOVED (ja) --- #: add_fragezeichen: ist die Qualität des Asphalts nach den Bauarbeiten besser geworden? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Bauarbeiten) --- #: next_check: 2013-11-22
 Riemenschneiderweg: Asphalt	Q0+ 6820,6522 6798,6755 6791,6821 6770,7027
@@ -4326,6 +4327,7 @@ Vulkanstr. [Wohngebiet]: Asphalt	Q0 15871,14106 15758,14088
 Landsberger Allee - Große-Leege-Str.: Verbundsteinpflaster	Q1+ 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Asphalt	Q0 15902,14498 15896,14548 15899,14598
 Verdener Gasse: Asphalt	Q0- 15878,14761 15946,14702
+Verdener Gasse: alte Gehwegplatten, unbefestigter Weg	Q1- 15946,14702 15968,14684
 Berkenbrücker Steig: schlechtes Kopfsteinpflaster	Q3 15647,14693 15544,14714
 Berkenbrücker Steig: unebenes kleinteiliges Kopfsteinpflaster	Q2 15544,14714 15383,14759
 (Landsberger Allee - Anton-Saefkow-Platz): Gehwegplatten	Q1 14871,14087 14903,14003
@@ -4498,7 +4500,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: last_checked: 2022-09-11 (mapillary)
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
-Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
+Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
@@ -4520,7 +4522,7 @@ Marie-Luise-Str.: unebenes Kleinkopfsteinpflaster	Q2 15968,16133 15976,16220 159
 Augustastr. (Alt-Hohenschönhausen): Asphalt	Q0 15927,16344 15894,16189 15894,16096
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15927,16344 15918,16383
 Bertastr. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2+ 15894,16189 15840,16246 15782,16277
-Orankestr.: sehr guter Asphalt	Q0 15665,15765 15598,15793 15453,15848
+Orankestr.: sehr guter Asphalt	Q0 15659,15759 15599,15786 15441,15850
 Hansastr. [Wohngebiet]: Beton	Q0- 15381,15873 15341,15912 15220,16019 15130,16098
 Else-Jahn-Str.: Beton	Q0- 15120,16349 14807,16396 14769,16414
 Otto-Brahm-Str.: Asphalt	Q0- 14321,15636 14282,15746 14365,15778 14400,15787 14440,15682
@@ -4548,7 +4550,7 @@ Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
 Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11905,15878 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
-Chamierstr.: Asphalt	Q0- 15840,15806 15801,15706
+Chamierstr.: Asphalt	Q0- 15840,15806 15799,15701
 (Amalienstr. - Uferweg): wassergebundene Decke	Q1 14124,16552 14142,16559 14159,16593
 (Blechenstr. - Uferweg): Asphalt	Q0 14014,16722 14179,16641
 (Große Seestr. - Uferweg): Asphalt	Q0 14184,16889 14189,16793 14232,16716
@@ -10986,7 +10988,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-06
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -15890,11 +15892,11 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
-#: last_checked: 2022-12-10
+#: last_checked: 2023-01-06
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
-Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15598,15793
+Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15599,15786
 #: by: ^^^
 # 
 #: by: W. Schwarz: vvv
@@ -24547,7 +24549,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="6"
-#: last_checked: 2022-09-11 (mapillary)
+#: last_checked: 2023-01-06
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
@@ -25047,7 +25049,8 @@ Gottfried-Leibniz-Str.: Asphalt	Q0+ 19324,2939 19374,2887 19440,2817
 Pfarrer-Goosmann-Str.: Asphalt	Q0 19242,3366 19491,3597
 # 
 #: by: nicolas (huedepohl):
-Gropiusstr. (Alt-Hohenschönhausen): guter Asphalt	Q0 15877,15673 15825,15547
+#: corrected_by: srt (guter Asphalt, Q0 -> ...)
+Gropiusstr. (Alt-Hohenschönhausen): Asphalt, einige Unebenheiten	Q0- 15876,15670 15825,15547
 # 
 #: by: Elina Juskevica:
 #: corrected_by: srt (guter Asphalt -> guter Beton)
@@ -31773,4 +31776,5 @@ Aufpflasterung im Kreuzungsbereich	Q1- 9800,14306
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9006,4196
 Kreuzungsbereich asphaltiert	Q0 12531,10676
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11726,11265
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 15876,15670
 #: ignore ^^^
