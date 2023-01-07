@@ -629,7 +629,7 @@
   (let ((bbbike-rootdir (bbbike-rootdir))
 	(bbbike-datadir (bbbike-datadir))
 	(fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd")))
-    (grep (concat "2>/dev/null egrep -ins "
+    (grep (concat "2>/dev/null egrep -a -ins "
 		  (if (file-exists-p fragezeichen-lowprio) (concat fragezeichen-lowprio " "))
 		  bbbike-datadir "/*-orig "
 		  bbbike-datadir "/*.coords.data "
