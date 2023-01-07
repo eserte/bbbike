@@ -16122,7 +16122,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014062',
        data  => <<EOF,
-	q4::inwork 8923,15850 9123,15963
+	q4::inwork 8917,15851 8953,15871 9123,15963
 EOF
      },
      { from  => 1252014436, # 2009-09-04 00:00 1252015200
@@ -17231,7 +17231,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-11-12 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
-       until => $isodate2epoch->("2022-01-02 23:59:59"), # 1 Tag (mindestens) für den Abbau
+       until => $isodate2epoch->("2022-01-06 23:59:59"), # mehrere Tage für den Abbau
        periodic => 1,
        prewarn_days => 10,
        recurrences => [['yearly', days => 20, months => 11, start => "2023-01-01T00:00:00"]], # Weihnachtsmarkt 2020 auf dem Gendarmenmarkt fällt aus - wegen Corona
@@ -24734,13 +24734,22 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1444844659, # undef, # XXX
-       text  => 'Döberitzer Verbindung: wegen Bauarbeiten gesperrt',
+       until => undef, # 1444844659, # undef, # XXX
+       text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt',
        type  => 'gesperrt',
-       source_id => 'wosch',
+#       source_id => 'wosch',
        data  => <<EOF,
 # REMOVED (offen) --- #: confirmed_by: srt --- #: last_checked: 2015-08-16 --- #: check_frequency: 45d
-	2::inwork 7306,13418 7402,13475 7422,13487 7451,13504 7630,13584
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtbad-tiergarten-sanierung-und-neues-au%C3%9Fenbecken.704/
+#: by: https://www.berlinerbaeder.de/baeder/stadtbad-tiergarten/
+#: by: https://www.berlinerbaeder.de/aktuelles/detail/einblicke-in-die-sanierung-des-stadtbades-tiergarten/ (Fertigstellung Mitte 2023)
+#: osm_watch: way id="462738551" version="15"
+#: osm_watch: way id="848019125" version="3"
+#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: last_checked: 2023-01-07
+#: next_check: 2023-06-30
+	2::inwork 7306,13418 7402,13475
+# REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 EOF
      },
      { from  => 1429736139, # 2015-04-22 22:55
@@ -31066,7 +31075,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-07
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -36231,7 +36240,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-08
+#: last_checked: 2023-01-07
 #: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
 EOF
@@ -36664,11 +36673,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
+#: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023)
-#: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -36679,7 +36688,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-01-03 (bahninfo-forum) vvv
+#: last_checked: 2023-01-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -36838,7 +36847,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-03
+#: last_checked: 2023-01-07
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -37443,11 +37452,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Schottstr.: Bauarbeiten, EInbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
+       text  => 'Schottstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOTT-2022
 #: XXX vermutlich Arbeiten der Wasserbetriebe
+#: also_indoor: traffic (B)
 #: last_checked: 2022-12-31
 	q4::inwork; 16255,12224 16276,12273
 EOF
@@ -37472,6 +37482,26 @@ EOF
 #: XXX Nach den Bauarbeiten wahrscheinlich besserer Asphalt -> in qualitaet_s eintragen!
 #: next_check: 2023-05-31
 	2::inwork -6319,5606 -6246,5562 -6125,5447
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'zum Poststadion: Tore, Weg kann gesperrt sein (vielleicht nachts?)',
+       recurring => 1,
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Ella-Kay-Str.: Fahrbahn und Bürgersteig im nördlichen Abschnitt gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
+#: also_indoor: traffic (none)
+#: last_checked: 2023-01-07
+	2::inwork 12173,15040 12095,14888
 EOF
      },
     );

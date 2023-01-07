@@ -18,11 +18,11 @@ Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
-#: osm_watch: way id="524560332" version="5"
+#: osm_watch: way id="524560332" version="6"
 #: last_checked: 2023-01-04 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
-#: osm_watch: way id="680579631" version="3"
+#: osm_watch: way id="680579631" version="4"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -411,13 +411,15 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 # REMOVED (realisiert) --- #: next_check_id: MARIANNEN-2016 --- #: XXX wird hier vielleicht auch asphaltiert werden? --- #: XXX Baumaßnahme 2.22 (Realisierung nach 2011) --- #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext) --- #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf --- #: source_id: INKO_2147340291_COPY_1 --- #: source_id: 2147340291 --- #: source_id: 2147342376 --- #: last_checked: 2018-04-17 --- #: next_check: 2018-04-30
 Mariannenstr: Asphalt	Q0 11512,10105 11616,10288 11671,10402
-Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
-Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
-Böttgerstr.: Asphalt	Q0 8923,15850 8867,15868
+Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8942,15884 8933,15872
+Hochstr.: Kopfsteinpflaster	Q2 8942,15884 8953,15871
+Hochstr.: Gehwegpflasterung	Q0- 8933,15872 8917,15851
+Böttgerstr.: Asphalt	Q0 9123,15963 8953,15871 8917,15851
+Böttgerstr.: Asphalt	Q0 8917,15851 8867,15868
 Böttgerstr.: Kopfsteinpflaster	Q2 8867,15868 8720,15914 8655,15979 8578,16057
-Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8899,15147
+Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8735,15295 8899,15147
 Hussitenstr.: Kopfsteinpflaster	Q2 8899,15147 9034,14910 9108,14777
-Grenzstr.: Kopfsteinpflaster	Q2 8742,15298 8654,15201
+Grenzstr.: Kopfsteinpflaster	Q2 8735,15295 8654,15201
 Grenzstr.: asphaltiert	Q0 8654,15201 8614,15156
 Grenzstr.: Kopfsteinpflaster	Q2 8614,15156 8570,15107
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
@@ -481,7 +483,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (2023)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2022-11-08 vvv
+#: last_checked: 2023-01-07 vvv
 #: next_check: 2023-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -948,7 +950,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="19"
-#: last_checked: 2022-12-23 (mapillary)
+#: last_checked: 2023-01-07 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1077,7 +1079,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-01-03
+#: last_checked: 2023-01-07
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1851,7 +1853,7 @@ Fröbelstr.: guter Asphalt	Q0 11776,15060 11873,15010 11964,14962 12095,14888
 #: confirmed_by: srt
 Ella-Kay-Str.: guter Asphalt	Q0 12095,14888 12060,14827 12050,14808 11998,14709
 #: confirmed_by: srt
-Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12195,15083 12095,14888
+Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12195,15083 12173,15040 12095,14888
 #: by ^^^^^^^^^^^^^^^
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12371,14615 12224,14707 12213,14742 12183,14757 12060,14827
 Landecker Str.: Kopfsteinpflaster	Q2 3137,8538 2966,8586
@@ -3001,7 +3003,7 @@ Eschengraben: Kopfsteinpflaster	Q2 11351,16744 11274,16743 11008,16729
 #: note: es gab widersprüchliche Angaben: mäßiger Beton Q1 (by anonymous) und guter Asphalt Q0 (by openbc...), die verkehrsberuhigte Zone hat sich wahrscheinlich erledigt
 Tiroler Str.: schlechter Asphalt	Q1- 10862,17087 10654,17091 10497,17095 10226,17098 10114,17098
 #: note: laut ADFC-Karte/neu schlecht geeignet: vvv
-Weg am Humboldthain: Asphalt	Q0 8742,15298 8757,15328
+Weg am Humboldthain: Asphalt	Q0 8735,15295 8757,15328
 Weg am Humboldthain: Parkweg	Q1 8757,15328 8735,15478 8831,15644 8934,15740
 #: note ^^
 #: note: es gab einen unklaren anonymen Beitrag: Asphalt Q0, aber bezog sich das auf den Klinkeplatz oder die Kaiserstr.?:
@@ -3571,7 +3573,7 @@ Storkower Str. - Einsteinstr.: Asphalt	Q0 13148,14850 13185,14912 13163,14924 13
 Einsteinstr.: Asphalt/Beton mit Schäden	Q1- 13185,14912 13235,14888 13507,14822 13537,14835
 Einsteinstr.: Asphalt	Q0 13537,14835 13598,14936
 Preußstr.: Asphalt	Q0 12325,15328 12367,15396
-(Küselstr. - Prenzlauer Allee, Lidl-Parkplatz): Verbundsteinpflaster	Q1+ 12058,15621 11963,15681
+(Küselstr. - Prenzlauer Allee, Lidl-Parkplatz): Verbundsteinpflaster	Q1+ 12058,15621 11962,15681
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9955,12300 9959,12281 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
@@ -4547,7 +4549,7 @@ Johannes-Itten-Str.: Asphalt	Q0- 12797,16983 12850,16911 12813,16884
 Lewaldstr.: Kopfsteinpflaster	Q2 11401,16265 11470,16394
 Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
 (Prenzlauer Allee - Ostseestr.): Asphalt	Q1 12154,15902 12198,15999 12254,16097
-Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11905,15878 11961,16002
+Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11903,15874 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
 Chamierstr.: Asphalt	Q0- 15840,15806 15799,15701
@@ -12939,6 +12941,7 @@ Jenaer Str.: Gehwegpflasterung	Q0- 5795,9483 5790,9460
 Schmidstr.: Beton	Q0- 11415,11392 11480,11526 11281,11612
 Heinrich-Heine-Str. [Wohngebiet]: Beton	Q0- 11281,11612 11233,11510 11192,11429
 Annenstr. [Wohngebiet]: Beton mit einigen Schäden	Q1+ 11192,11429 11259,11391 11217,11288
+Ella-Kay-Str. [Wohngebietsstraße]: Beton	Q0- 12173,15040 12214,15018 12136,14868 12095,14888
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19058,7 +19061,8 @@ Hakenfelder Str.: Asphalt	Q0 -2959,17507 -3085,17504 -3216,17492 -3385,17513 -34
 #: by: ^^^
 # 
 #: by: Meike Hempel:
-Zelterstr.: guter Asphalt	Q0 11967,15700 11852,15765 11777,15808
+#: confirmed_by: srt
+Zelterstr.: guter Asphalt	Q0 11964,15689 11852,15765 11779,15813
 # 
 #: by: Andreas Hirschbrich:
 #: corrected_by: srt (Q1 -> Q1+)
@@ -31777,4 +31781,6 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 9006,4196
 Kreuzungsbereich asphaltiert	Q0 12531,10676
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11726,11265
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 15876,15670
+Einmündungsbereich mit Kopfsteinpflaster	Q2 6917,13917
+Einmündungsbereich asphaltiert	Q0 6746,13826
 #: ignore ^^^

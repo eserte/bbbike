@@ -186,7 +186,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2022-12-30 (mapillary)
+#: last_checked: 2023-01-07
 #: check_frequency: 150d
 #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -207,14 +207,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: next_check_id: BEBELPLATZXMAS-2022
-#: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert
-#: last_checked: 2023-01-05
-#: check_frequency: 2d
-# REMOVED --- #: next_check: 2023-01-02
-# REMOVED --- #: valid: 20221111-20230102
-#: valid: 20221111-20230108
-Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
+# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 # 
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
@@ -242,7 +235,7 @@ Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023)
 #: priority: #A
-#: last_checked: 2023-01-03 (mapillary) vvv
+#: last_checked: 2023-01-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-03-15 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
@@ -1862,7 +1855,7 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 # REMOVED --- #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv --- #: XXX später mit Fahrbahn, dann wahrscheinlich gar kein handicap mehr --- #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013 --- #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg --- #: osm_watch: way id="4610599" version="14"--- #: last_checked: 2014-06-06 vvv --- Friedrichsbrücke: Engstellen wegen Bauarbeiten, Stufen	q4::inwork 10054,12699 10086,12725 --- Friedrichsbrücke: Engstellen wegen Bauarbeiten	q3::inwork 10086,12725 10166,12777 --- #: last_checked ^^^ --- #: next_check_id ^^^
 (Hornbach-Parkplatz): Parkplatzverkehr	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
-(Lidl-Parkplatz): Parkplatzverkehr	q1 11963,15681 12058,15621
+(Lidl-Parkplatz): Parkplatzverkehr	q1 11962,15681 12058,15621
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
 #: note: früher "q2"
@@ -4330,6 +4323,7 @@ Elsterwerdaer Platz: Liefer- und Busverkehr	q1 21074,11465 21073,11350 21134,113
 Elsterwerdaer Platz: einige Fußgänger	q0- 20818,11293 20829,11275 20839,11300 21055,11284 21084,11319 21110,11326 21134,11331
 #: note: von der Lieferstraße aus als "Fußgängerzone, Lieferverkehr frei" ausgeschildert, keine Ausschilderung von der anderen Seite
 Elsterwerdaer Platz: einige Fußgänger	q0- 21084,11319 21082,11333 21073,11350
+Hochstr.: Fußgänger, Bordsteine	q3 8933,15872 8917,15851
 # 
 ######################### User Contributions #################################
 # 
@@ -4841,7 +4835,9 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 Eosanderstr.: Fußgänger	q1 3344,12611 3271,12609
 #: XXX_prog BS am südlichen Ende (ansonsten bleibt's bei q2)
 Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
-(Müllerstr. - Gerichtstr.): Fußgänger	q2 7607,15282 7723,15417
+#: note: Grünanlagenschild mit "Radfahren verboten"-Zusatzschild am nordöstlichen Ende
+#: note: früher q2
+(Müllerstr. - Gerichtstr.): Fußgänger	q3 7607,15282 7723,15417
 (südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980

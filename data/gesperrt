@@ -1933,11 +1933,11 @@ Mittelstreifen mit Straßenbahn	3nocross::ignrte 12075,16144 12061,16091 12030,15
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
 Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12061,16091
 Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11995,15827 12030,15968 11961,16002
-Straßenbahntrasse	3nocross::ignrte 11941,15586 11963,15681 11967,15700 11995,15827
-Küselstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12058,15621 11963,15681 11941,15586
-Prenzlauer Allee -> Küselstr.: Straßenbahntrasse	3::igndisp 11967,15700 11963,15681 12058,15621
-Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 11995,15827
-Prenzlauer Allee -> Zelterstr.: Straßenbahntrasse	3::igndisp 11963,15681 11967,15700 11852,15765
+Straßenbahntrasse	3nocross::ignrte 11941,15586 11962,15681 11964,15689 11995,15827
+Küselstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12058,15621 11962,15681 11941,15586
+Prenzlauer Allee -> Küselstr.: Straßenbahntrasse	3::igndisp 11964,15689 11962,15681 12058,15621
+Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11852,15765 11964,15689 11995,15827
+Prenzlauer Allee -> Zelterstr.: Straßenbahntrasse	3::igndisp 11962,15681 11964,15689 11852,15765
 Straßenbahntrasse	3nocross::ignrte 11435,14023 11465,14122 11471,14143
 Prenzlauer Allee -> Raabestr.: Straßenbahntrasse	3::igndisp 11471,14143 11465,14122 11657,14018
 Raabestr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11657,14018 11465,14122 11435,14023
@@ -3272,9 +3272,6 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8011 5520,8132 5573,8197
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19

@@ -12,7 +12,6 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
-Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
@@ -622,7 +621,7 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 (Hornbach-Parkplatz): Parkplatzverkehr	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
-(Lidl-Parkplatz): Parkplatzverkehr	q1 11963,15681 12058,15621
+(Lidl-Parkplatz): Parkplatzverkehr	q1 11962,15681 12058,15621
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q4 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
@@ -2384,6 +2383,7 @@ Johannisthaler Park: Grünanlage, Fußgänger	q4 17760,4867 17659,4849 17580,4761
 Elsterwerdaer Platz: Liefer- und Busverkehr	q1 21074,11465 21073,11350 21134,11331
 Elsterwerdaer Platz: einige Fußgänger	q0 20818,11293 20829,11275 20839,11300 21055,11284 21084,11319 21110,11326 21134,11331
 Elsterwerdaer Platz: einige Fußgänger	q0 21084,11319 21082,11333 21073,11350
+Hochstr.: Fußgänger, Bordsteine	q3 8933,15872 8917,15851
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2648,7 +2648,7 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Bonhoefferufer - Tegeler Weg): Fußgänger	q2 3154,12936 3164,13067
 Eosanderstr.: Fußgänger	q1 3344,12611 3271,12609
 Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
-(Müllerstr. - Gerichtstr.): Fußgänger	q2 7607,15282 7723,15417
+(Müllerstr. - Gerichtstr.): Fußgänger	q3 7607,15282 7723,15417
 (südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980

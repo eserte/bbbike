@@ -2986,7 +2986,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (offen) --- #: confirmed_by: srt --- #: last_checked: 2015-08-16 --- #: check_frequency: 45d
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtbad-tiergarten-sanierung-und-neues-au%C3%9Fenbecken.704/
+#: by: https://www.berlinerbaeder.de/baeder/stadtbad-tiergarten/
+#: by: https://www.berlinerbaeder.de/aktuelles/detail/einblicke-in-die-sanierung-des-stadtbades-tiergarten/ (Fertigstellung Mitte 2023)
+#: osm_watch: way id="462738551" version="15"
+#: osm_watch: way id="848019125" version="3"
+#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: last_checked: 2023-01-07
+#: next_check: 2023-06-30
+	2::inwork 7306,13418 7402,13475
+# REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
+',
+         'from' => undef,
+         'id' => 2700,
+         'text' => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -3910,7 +3928,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-07
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5425,7 +5443,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-08
+#: last_checked: 2023-01-07
 #: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
 ',
@@ -5715,11 +5733,11 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        {
          'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
+#: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023)
-#: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -5730,7 +5748,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-01-03 (bahninfo-forum) vvv
+#: last_checked: 2023-01-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -5850,7 +5868,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-03
+#: last_checked: 2023-01-07
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -6287,12 +6305,13 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: next_check_id: SCHOTT-2022
 #: XXX vermutlich Arbeiten der Wasserbetriebe
+#: also_indoor: traffic (B)
 #: last_checked: 2022-12-31
 	q4::inwork; 16255,12224 16276,12273
 ',
          'from' => undef,
          'id' => 3703,
-         'text' => 'Schottstr.: Bauarbeiten, EInbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
+         'text' => 'Schottstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6317,6 +6336,28 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'id' => 3705,
          'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1281512.php',
          'text' => 'Verlängerte Neukladower Allee: Sperrung wegen Bauarbeiten, voraussichtlich bis Mai 2023',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
+',
+         'from' => undef,
+         'id' => 3706,
+         'recurring' => 1,
+         'text' => 'zum Poststadion: Tore, Weg kann gesperrt sein (vielleicht nachts?)',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
+#: also_indoor: traffic (none)
+#: last_checked: 2023-01-07
+	2::inwork 12173,15040 12095,14888
+',
+         'from' => undef,
+         'id' => 3707,
+         'text' => 'Ella-Kay-Str.: Fahrbahn und Bürgersteig im nördlichen Abschnitt gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        }

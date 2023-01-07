@@ -1171,7 +1171,7 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17
 	RW1;RW1 11251,13667 11329,13785 11378,13891 11435,14023 11465,14122 11471,14143 11498,14234 11572,14452 11633,14631 11655,14697 11682,14777
 	RW2;RW1 11682,14777 11709,14856
 	RW1;RW2 11709,14856 11740,14950 11776,15060
-	RW1;RW1 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11909,15477 11916,15500 11941,15586 11963,15681 11967,15700 11995,15827
+	RW1;RW1 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11909,15477 11916,15500 11941,15586 11962,15681 11964,15689 11995,15827
 	RW1;RW1 11995,15827 12030,15968 12061,16091
 	RW2;RW1 12061,16091 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8059,13551 8048,13578 8019,13650
@@ -1441,7 +1441,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="22"
-#: last_checked: 2023-01-03
+#: last_checked: 2023-01-07
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1454,8 +1454,8 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="37"
-#: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2023-01-03
+#: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
+#: last_checked: 2023-01-07
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2312,7 +2312,8 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 6573,13149 6500,13164 6390,
 Radweg teilweise nur aufgemalt	RW1;RW1 6935,13645 6810,13694
 	RW0;RW0 6810,13694 6760,13714
 	RW1;RW1 6760,13714 6686,13746 6493,13822
-	RW0;RW1 6493,13822 6365,13879 6227,13938
+teilweise noch Reste des früher aufgemalten Radwegs sichtbar	RW0; 6493,13822 6365,13879 6227,13938
+	RW1; 6227,13938 6365,13879 6493,13822
 	RW0;RW4 6227,13938 6212,13944 6165,13962
 	RW0;RW1 6165,13962 6093,13990
 	RW1;RW1 6093,13990 6006,14024 5943,14049
@@ -2346,7 +2347,7 @@ vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 	RW1; 7675,17427 7902,17166
 	RW2; 7675,17430 7602,17399
 	RW1; 7602,17399 7675,17427
-	RW1;RW1 8742,15298 8899,15147
+	RW1;RW1 8735,15295 8899,15147
 Verbundsteinpflaster	RW1; 8093,16438 8166,16454 8307,16434 8436,16415 8486,16425
 	RW1; 8486,16425 8436,16415 8307,16434 8166,16454 8093,16438
 alte Gehwegplatten, teilweise mit Bord	RW1;RW1 10067,1939 9984,1860 9964,1839 9821,1692 9771,1641 9695,1563
@@ -3013,8 +3014,10 @@ Gehwegplatten	RW1; 5109,17507 5121,17559 5138,17630 5144,17659 5159,17726 5172,1
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 5172,17789 5159,17726 5144,17659 5138,17630 5121,17559
 Gehwegplatten	RW1; 5121,17559 5109,17507
 	RW3; 5184,17855 5200,17938 5217,18030
-	RW1;RW1 7277,15586 7138,15437 6996,15319 6833,15215 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
-	RW1;RW1 6334,14756 6288,14661
+	RW1; 7277,15586 7138,15437 6996,15319 6833,15215 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
+Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
+	RW1; 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437 7277,15586
+asphaltiert	RW1;RW1 6334,14756 6288,14661
 	RW1; 4228,19024 4144,18896
 	RW1; 4144,18896 4070,18695 4009,18322 3970,18126 3930,17923
 neu asphaltiert	RW2; 3165,19136 3045,19032 2994,18979 2874,18876 2821,18831
@@ -4125,11 +4128,13 @@ Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW1;RW4 6288,14661 6281,14630
 #: by: https://berliner-abendblatt.de/2022/02/09/putlitzbruecke-soll-sicherer-werden/ (Erneuerung der Radwege 2022 geplant)
 #: XXX Was ändert sich bei der Sanierung der Radwege?
-#: last_checked: 2022-04-09
-#: next_check: 2022-12-31
+#: last_checked: 2023-01-07
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2022-12-31
 	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14184 6228,14077
-	RW2;RW2 6228,14077 6226,13951
-	RW2;RW1 6226,13951 6227,13938
+	RW2; 6228,14077 6226,13951 6227,13938
+	RW3; 6227,13938 6226,13951
+Gehwegplatten	RW2; 6226,13951 6228,14077
 # REMOVED --- aufgemalter Radweg auf Gehweg	RW1; 5248,13434 5368,13406
 # REMOVED --- #: XXX wann wird das Provisorium aufgehoben? --- #: osm_watch: way id="25199403" version="11" --- #: osm_watch: way id="4410310" version="15" --- #: source_id: 2147343310 (bis Mitte Mai 2019) --- #: last_checked: 2019-04-29 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2019-05-09
 	RW3; 5248,13434 5368,13406
@@ -4178,7 +4183,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2023-01-03 vvv
+#: last_checked: 2023-01-07 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-03-03 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -4674,7 +4679,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2022-11-02 (mapillary) vvv
+#: last_checked: 2023-01-07 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -5406,17 +5411,18 @@ Verbundsteinpflasterradweg	RW1;RW1 17488,15766 17624,15767 17651,15766 17940,157
 	RW1;RW1 17940,15771 18173,15778 18576,15788 18623,15587 18422,15583 18177,15579 18173,15778
 #: confirmed_by ^^^
 #: by ^^^
-	RW3;RW3 8742,15298 8683,15354 8607,15426
+	RW3;RW3 8735,15295 8679,15347 8596,15427
 	RW1;RW1 18934,2703 18941,2609 18929,2454
 #: by: Ralf Czaska vvv
 #: confirmed_by: srt (und Benutzungspflicht hinzugefügt) (mittlerweile fehlt das Schild, also nur noch RW3)
 die ersten 50 Meter sind Busspur, danach folgt die Radspur	RW3; 13078,15586 12903,15695
 die letzten 50 Meter sind benutzungspflichtig	RW3; 12903,15695 13078,15586
 	RW3;RW3 12903,15695 12721,15807
-	RW4; 8923,15850 8886,15799 8607,15426
-	RW3; 8607,15426 8456,15235
-nur 50cm breit	RW3; 8456,15235 8607,15426 8886,15799
-	RW4; 8886,15799 8923,15850
+	RW4; 8917,15851 8886,15799 8596,15427
+	RW3; 8557,15373 8456,15235
+nur 50cm breit	RW3; 8456,15235 8557,15373
+nur 50cm breit	RW3; 8596,15427 8886,15799
+	RW4; 8886,15799 8917,15851
 #: by: ^^^
 	RW6;RW6 5443,14028 5417,13817 5390,13616 5384,13555
 #: by: Igor Smikalla:
@@ -6115,8 +6121,8 @@ Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer, zwischen Abbi
 #: by: Grönwoldt:
 #: confirmed_by: srt
 	RW6;RW6 7171,22942 7059,23127 6988,23244 6967,23278
-Radwegschild steht etwa 60 Meter weiter	RW4; 9123,15963 8923,15850
-	RW4; 8923,15850 9123,15963
+Radwegschild steht etwa 60 Meter weiter	RW4; 9123,15963 8953,15871 8917,15851
+	RW4; 8917,15851 8953,15871 9123,15963
 #: by: Edeltraud Perschon:
 #: confirmed_by: srt
 	RW6;RW6 7297,-519 7384,-387 7536,-139
@@ -6350,7 +6356,7 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
 #: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022) (wurde ersetzt)
-#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau")
+#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau") (4. Quartal 2022 - 2. Quartal 2023)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Bauarbeiten beginnen Mitte 2022)
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
@@ -6358,8 +6364,8 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Asphaltierung des Radwegs vvv
 #: last_checked: 2022-11-11 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2023-09-30 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2023-06-30 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16981,17855 17159,17631
 #: check_frequency ^^^
 #: next_check ^^^
@@ -6881,7 +6887,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2022-11-30 vvv
+#: last_checked: 2023-01-07 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7342,7 +7348,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2023-01-03
+#: last_checked: 2023-01-07
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7365,7 +7371,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022) (bis 30.10.2022) (inaktiv)
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2023-01-03 vvv
+#: last_checked: 2023-01-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-03-03 vvv
 #: osm_watch: way id="335479077" version="18"

@@ -2131,7 +2131,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocros
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross 11709,14856 11682,14777 11655,14697
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12075,16144 12061,16091 12030,15968 11995,15827
-Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11963,15681 11967,15700 11995,15827
+Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11962,15681 11964,15689 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11435,14023 11465,14122 11471,14143
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11154,14985 11285,14958 11325,14949 11339,14946
@@ -3494,7 +3494,7 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: ERNSTTHAELMANNPARK-2022
-#: last_checked: 2023-01-03
+#: last_checked: 2023-01-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-12-19
 (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
@@ -3547,21 +3547,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5522,8011 5520,8132 5573,8197
 # 
-#: next_check_id: BEBELPLATZXMAS-2022
-#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
-#: XXX Wie lange dauern die Abbauarbeiten?
-#: last_checked: 2023-01-05 vvv
-#: check_frequency: 2d vvv
-# REMOVED --- #: next_check: 2023-01-02 vvv
-# REMOVED --- #: valid: 20221111-20230102 vvv
-#: valid: 20221111-20230108 vvv
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
-#: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022) --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392 --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: osm_watch: node id="1736425250" version="4"
@@ -4730,7 +4716,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="25"
 #: also_indoor: traffic
-#: last_checked: 2022-12-28
+#: last_checked: 2023-01-07
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230
