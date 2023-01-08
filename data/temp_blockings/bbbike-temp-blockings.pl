@@ -35779,7 +35779,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
 #: next_check_id: SCHOEN-2022
-#: also_indoor: traffic (H[unvollständig],G[unvollständig],B)
+#: also_indoor: traffic (H[unvollständig],ex-G[unvollständig],B)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
@@ -37415,6 +37415,8 @@ EOF
        text  => 'Lehderstr.: Einbahnstraßenregelung zwischen Börnestr. und Behaimstr., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic (none)
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: last_checked: 2022-12-10
 	q4::inwork; 13086,15907 13214,15830
 EOF

@@ -5331,7 +5331,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: next_check_id: SCHOEN-2022
-#: also_indoor: traffic (H[unvollständig],G[unvollständig],B)
+#: also_indoor: traffic (H[unvollständig],ex-G[unvollständig],B)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
@@ -6260,7 +6260,9 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1688162399
        },
        {
-         'data' => '#: last_checked: 2022-12-10
+         'data' => '#: also_indoor: traffic (none)
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: last_checked: 2022-12-10
 	q4::inwork; 13086,15907 13214,15830
 ',
          'from' => undef,
