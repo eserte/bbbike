@@ -1079,7 +1079,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-01-07
+#: last_checked: 2023-01-09
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1634,7 +1634,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erwähnung der Hufelandstraße)
 #: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (in API verschwunden, Web ist noch da) (und wieder da)
-#: osm_watch: way id="4615063" version="31"
+#: osm_watch: way id="4615063" version="33"
 #: last_checked: 2022-11-17
 #: check_frequency: 210d
 #: next_check: 2023-06-30
@@ -7483,8 +7483,8 @@ Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 #: by: https://www.infravelo.de/projekt/muehlenstrasse-1/ (bis 2. Quartal 2022)
 #: XXX Wird das Kopfsteinpflaster auch hier durch Asphalt ersetzt? Und bedeutet das, dass die Route durch den Gemeindepark nicht realisiert wird?
 #: last_checked: 2022-10-15
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-10-26
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2023-02-24
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
 Boraweg: Kleinsteinpflaster	Q2+ 6658,2907 6710,2909 6763,2879
 (Ursulastr. - Dillgesstr.): Kleinsteinpflaster/Mosaikpflaster	Q2+ 6443,2915 6455,2924 6492,2947
@@ -31783,4 +31783,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 11726,11265
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 15876,15670
 Einmündungsbereich mit Kopfsteinpflaster	Q2 6917,13917
 Einmündungsbereich asphaltiert	Q0 6746,13826
+Einmündungsbereich asphaltiert	Q0 12676,14393
+Einmündungsbereich asphaltiert	Q0 12832,14378
+Einmündungsbereich asphaltiert	Q0 12881,14342
+Einmündungsbereich asphaltiert	Q0 12954,14287
 #: ignore ^^^
