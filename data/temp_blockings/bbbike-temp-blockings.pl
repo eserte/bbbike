@@ -35502,7 +35502,7 @@ EOF
 #: osm_watch: way id="4531799" version="13"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-07 (daf)
+#: last_checked: 2023-01-09 (daf)
 #: check_frequency: 90d
 	q4::inwork; 4434,11227 4415,11050
 EOF
@@ -35995,17 +35995,20 @@ EOF
      },
      { from  => 1659546069, # 2022-08-03 19:01
        until => undef, # 1671222245, # 1671231600, # 2022-12-17 00:00
-       text  => 'Ilsestr.: Fahrbahn an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt', # früher: 'Wallensteinstr.: Bauarbeiten zwischen Ilsestr. und Sangeallee, Fahrbahn gesperrt, außerhalb der Arbeitszeiten unter Umständen offen, bis 16.12.2022',
+       text  => 'Wallensteinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Ilsestr. und Sangeallee; außerdem ist die Ilsestr. an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
        data  => <<EOF,
 #: next_check_id: WALLENSTEIN-2022
 # REMOVED --- #: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags, 2022-10-26 (Mi) gegen 12:30, 2022-11-05 (Sa) gegen 10:15, 2022-11-12 (Sa) gegen 12:40, 2022-12-13 (Di) gegen 13:10 --- #: note: tatsächlich Bauarbeiten beobachtet: 2022-11-25 (Fr) gegen 12:35 (Baufahrzeug in Aktion), 2022-12-05 (Mo) gegen 13:45 (Baufahrzeug in Aktion, abschnittsweise konnte die Fahrbahn trotzdem genutzt werden)
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
-#: XXX Wie lange dauert noch die Sperrung in der Ilsestr. an?
-#: last_checked: 2022-12-21
+#: XXX Wie lange dauern noch die Bauarbeiten?
+#: also_indoor: traffic (G[ungenau],B[ungenau])
+#: last_checked: 2023-01-10
+#: check_frequency: 14d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
+Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
 EOF
      },
      { from  => 1660168800, # 2022-08-11 00:00
@@ -36385,11 +36388,11 @@ EOF
 #: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
 #: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (schon am nächsten Tag inaktiv)
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023)
-#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
-#: last_checked: 2022-11-27
+#: last_checked: 2023-01-10
 #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16428,7144
@@ -36981,7 +36984,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Ende Dezember 2022: eine Baustellenampel mit einem engen Übergang existiert)',
+       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Anfang Januar 2023: eine Baustellenampel mit einem engen Übergang existiert)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: TRESKOWALLEE-2022
@@ -37000,7 +37003,7 @@ EOF
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2022-12-28 vvv
+#: last_checked: 2023-01-10 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37399,7 +37402,7 @@ EOF
 #: next_check_id: SPREEPARK-2022
 #: note: Zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2022-12-08 vvv
+#: last_checked: 2023-01-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
@@ -37436,7 +37439,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2023-03-01 18:00:00"), # 1672635600, # 2023-01-02 06:00
+       until => 1673372768, # (mittlerweile bei traffic entfernt) --- $isodate2epoch->("2023-03-01 18:00:00"), # 1672635600, # 2023-01-02 06:00
        text  => 'Landsberger Allee - Frank-Schweitzer-Str.: wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -37446,8 +37449,7 @@ EOF
 #: by: https://nitter.it/VIZ_Berlin/status/1604706843762167809#m
 #: osm_watch: way id="4696062" version="26"
 #: also_indoor: traffic (B,G,H)
-#: last_checked: 2023-01-04 (traffic)
-#: check_frequency: 7d
+# REMOVED --- #: last_checked: 2023-01-04 (traffic) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2023-01-02
 	2::inwork 19205,14980 19244,14980 19400,15027
 	2::inwork 19214,14966 19244,14980

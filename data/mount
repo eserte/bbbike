@@ -333,7 +333,6 @@ Steigung 4.1% (Herzfelder Steig)	St; 31500,4539 31461,4417
 Steigung 4.1% (Fontanestr. (Grunewald))	St; 1043,8550 1074,8470
 Steigung 4.1% (Böttgerstr.)	St; 8655,15979 8720,15914
 Steigung 4.1% (Binswangersteig)	St; 21968,-15 21933,152
-Steigung 4.1% (Badstr.)	St; 9053,16029 9123,15963
 Steigung 4.1% (Angerburger Allee)	St; -1931,11437 -1885,11392
 Steigung 4.0% (Zum Heckeshorn)	St; -6025,1999 -6021,2068
 Steigung 4.0% (Windmühlenweg)	St; 7004,22881 6950,23023
@@ -673,6 +672,7 @@ Steigung 2.9% (Eickstedt - Wallmow)	St; 53742,102795 53777,102984
 Steigung 2.9% (Drakestr. (Lichterfelde))	St; 3142,4173 3048,4305
 Steigung 2.9% (Burggrafenstr. (Mahlsdorf, Kaulsdorf))	St; 24553,12885 24606,12856
 Steigung 2.9% (Bautzener Str.)	St; 8183,9260 8182,9240
+Steigung 2.9% (Badstr.)	St; 9053,16029 9123,15963
 Steigung 2.9% (Atzpodienstr.)	St; 16413,11906 16456,12191
 Steigung 2.9% (Arndtstr. (Kreuzberg))	St; 9487,9209 9546,9198
 Steigung 2.9% (Amselweg (Bohnsdorf))	St; 22303,67 22169,14
@@ -1137,6 +1137,7 @@ Steigung 2.2% (Kranzallee)	St; -691,10954 -760,10921
 Steigung 2.2% (Kranzallee)	St; -640,10997 -691,10954
 Steigung 2.2% (Kamenzer Damm)	St; 7852,3183 8036,3253
 Steigung 2.2% (Kalkbergeweg)	St; 31673,4641 31734,4624
+Steigung 2.2% (Hochstr. (Gesundbrunnen))	St; 8942,15884 8953,15871
 Steigung 2.2% (Hermsdorfer Damm)	St; 2537,22139 2533,22253
 Steigung 2.2% (Heiligendammer Str.)	St; 3314,7269 3189,7249
 Steigung 2.2% (Heidebrinker Str.)	St; 9259,16236 9205,16137
@@ -1222,6 +1223,7 @@ Steigung 2.1% (Kaiserdamm)	St; 2371,11475 2282,11463
 Steigung 2.1% (Hornbacher Weg)	St; 27428,1026 27497,981
 Steigung 2.1% (Horber Str.)	St; 4820,22606 4898,22459
 Steigung 2.1% (Hohefeldstr.)	St; 3216,24135 3127,24253
+Steigung 2.1% (Hochstr. (Gesundbrunnen))	St; 9053,16029 8942,15884
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6124,1884 -6122,1834
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6122,1834 -6104,1764
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6104,1764 -6084,1715
@@ -2388,11 +2390,15 @@ Steigung 1.2% (Carl-Herz-Ufer)	St; 10627,9912 10602,9957
 Steigung 1.2% (Carl-Herz-Ufer)	St; 10602,9957 10500,10081
 Steigung 1.2% (Bötzowstr.)	St; 12280,13880 12361,13985
 Steigung 1.2% (Buriger Weg)	St; 30192,4487 30132,4281
+Steigung 1.2% (Brunnenstr.)	St; 9242,15843 9255,15816
+Steigung 1.2% (Brunnenstr.)	St; 9183,15909 9242,15843
+Steigung 1.2% (Brunnenstr.)	St; 9123,15963 9183,15909
 Steigung 1.2% (Brixplatz)	St; 269,12462 329,12503
 Steigung 1.2% (Brixplatz)	St; 179,12434 269,12462
 Steigung 1.2% (Boelckestr.)	St; 8660,8454 8616,8605
 Steigung 1.2% (Blockdammweg)	St; 17990,8963 18070,9022
-Steigung 1.2% (Blockdammweg)	St; 17972,8968 17990,8963
+Steigung 1.2% (Blockdammweg)	St; 17979,8967 17990,8963
+Steigung 1.2% (Blockdammweg)	St; 17972,8968 17979,8967
 Steigung 1.2% (Bizetstr.)	St; 13867,15915 14056,15985
 Steigung 1.2% (Bernhard-Lichtenberg-Str. (Prenzlauer Berg))	St; 12494,14532 12676,14393
 Steigung 1.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9410,14410 9472,14478
@@ -2725,8 +2731,6 @@ Steigung 1.0% (Hubertusallee)	St; 2295,8678 2320,8722
 Steigung 1.0% (Hohensteinallee)	St; -220,10893 -233,10989
 Steigung 1.0% (Hohenfriedbergstr.)	St; 7790,8913 7790,9126
 Steigung 1.0% (Hohefeldstr.)	St; 3127,24253 3022,24393
-Steigung 1.0% (Hochstr. (Gesundbrunnen))	St; 9053,16029 8942,15884
-Steigung 1.0% (Hochstr. (Gesundbrunnen))	St; 8942,15884 8953,15871
 Steigung 1.0% (Herulerweg)	St; -4395,10876 -4496,10920
 Steigung 1.0% (Herrfurthstr. (Steglitz))	St; 4724,5782 4558,5863
 Steigung 1.0% (Hermann-Blankenstein-Str.)	St; 13945,13564 14052,13389
@@ -2775,7 +2779,6 @@ Steigung 1.0% (Cimbernstr. (Altglienicke))	St; 20196,1325 20318,1281
 Steigung 1.0% (Bötzowstr.)	St; 12676,14393 12730,14458
 Steigung 1.0% (Bötzowstr.)	St; 12189,13750 12280,13880
 Steigung 1.0% (Bötzowstr.)	St; 12161,13711 12189,13750
-Steigung 1.0% (Böttgerstr.)	St; 8953,15871 9123,15963
 Steigung 1.0% (Burgfrauenstr.)	St; 2779,24628 2690,24751
 Steigung 1.0% (Briesener Weg)	St; 24875,13333 24967,13438
 Steigung 1.0% (Borussenstr.)	St; -4134,1984 -3965,2240
