@@ -1305,11 +1305,11 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
-#: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023)
+#: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-12-27
-#: check_frequency: 90d
-#: next_check: 2023-01-11
+#: last_checked: 2023-01-11
+#: check_frequency: 60d
+#: next_check: 2023-04-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
@@ -3597,7 +3597,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
 # REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2"
 #: osm_watch: way id="1110732558" version="10"
-#: osm_watch: way id="325319592" version="12"
+#: osm_watch: way id="325319592" version="13"
 #: priority: #A
 #: last_checked: 2022-06-15
 # REMOVED --- #: check_frequency: 60d
@@ -3647,8 +3647,8 @@ Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 1333
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1262919.php
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplan-xvii-9-1a.pdf (unklar, ob der Weg erhalten bleibt)
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/bebauungsplan-fuer-grundschule_a365015
-#: osm_watch: way id="1086484458" version="1"
-#: osm_watch: way id="36780316" version="10"
+#: osm_watch: way id="1086484458" version="2"
+#: osm_watch: way id="36780316" version="11"
 #: last_checked: 2022-12-28
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -4116,6 +4116,8 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-am-molkenmarkt-und-grunerstrasse_a352250
 #: by: https://viz.berlin.de/2023/01/molkenmarkt/ (Umstellung, neue Grunerstraße wird teilweise eröffnet)
 #: by: https://berliner-abendblatt.de/2023/01/10/molkenmarkt-am-wochenende-komplett-gesperrt/ (endgültiger Abschluss der Bauarbeiten: Juni 2024)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1282686.php
+#: by: https://www.berlin.de/sen/uvk/_assets/presse/verkehr/230111_pm-molkenmarkt-neue-verkehrsfuehrung2.jpg
 #: XXX bis wann geht die Sperrung?
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: osm_watch: way id="729492933" version="3"
@@ -4215,7 +4217,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="21"
 #: priority: #C
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-11
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4643,7 +4645,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
 #: osm_watch: way id="276821479" version="5"
-#: last_checked: 2022-12-28 (mapillary)
+#: last_checked: 2023-01-11
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
