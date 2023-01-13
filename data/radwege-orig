@@ -315,7 +315,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2023-01-10
+#: last_checked: 2023-01-12
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
@@ -879,7 +879,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.471776,52.513945,09.01.2023,06:00 (Leitungsarbeiten zwischen Weichselstr. und Jessnerstr., bis 27.1.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-01-06
+#: last_checked: 2023-01-12
 #: check_frequency: 60d
 #: next_check: 2023-01-27
 	RW2; 14994,12121 15117,12106 15361,12071
@@ -1320,7 +1320,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
-#: osm_watch: way id="357558840" version="17"
+#: osm_watch: way id="357558840" version="18"
 #: last_checked: 2022-12-27
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
@@ -1872,7 +1872,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
-#: osm_watch: way id="82654055" version="14"
+#: osm_watch: way id="82654055" version="15"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: check_frequency: 60d vvv
@@ -1964,7 +1964,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-01-10 vvv
+#: last_checked: 2023-01-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2714,6 +2714,7 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter 
 #: note ^^^
 Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 14089,9610 13973,9465
 	RW6;RW6 15142,9931 15210,10080
+	RW6;RW6 14879,9961 14921,10047
 relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15256,11884
 	RW2; 15361,12071 15300,11965 15256,11884
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: 20190125-
@@ -7025,6 +7026,7 @@ asphaltiert, sehr breit (3m)	RW1; 25010,4807 24936,4838 24798,4895 24681,4943 24
 	RW3;RW3 6118,14289 6052,14304 5685,14215 5474,14168 5321,14088 5306,14061
 	RW4;RW4 5306,14061 5279,14047 5220,14043
 	RW6;RW6 14993,10188 15044,10297
+	RW6;RW6 14977,10348 14920,10225
 #: note: Konrad-Wolf-Str. Richtung Südwesten ##########
 	RW4; 16961,16042 16941,16021 16842,15932 16819,15912
 	RW3; 16819,15912 16741,15845
@@ -7415,7 +7417,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="32"
+#: osm_watch: way id="26708088" version="33"
 #: last_checked: 2022-12-28 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
@@ -7425,7 +7427,7 @@ provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="11"
+#: osm_watch: way id="671329664" version="12"
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17962,6674
 	RW0; 17991,6431 17962,6674
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17962,6674 17919,6968
