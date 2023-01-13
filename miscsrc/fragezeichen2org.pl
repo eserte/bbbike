@@ -318,26 +318,27 @@ for my $file (@files) {
 	     };
 	     my($southmost_px,$southmost_py) = $Karte::Polar::obj->standard2map(split /,/, $coord_southmost);
 
-	     # OSM URL
-	     {
-		 my @layers;
-		 if ($subject =~ /zebrastreifen/i) {
-		     push @layers, 'C'; # OpenCycleMap has the best zebra rendering
-		 } elsif ($subject =~ /(radspur|radweg|radverkehrsanlage|busspur)/i) {
-		     push @layers, 'Y'; # CyclOSM
-		 }
-		 push @layers, 'N'; # always turn notes on
-		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
-	     }
-
 	     # fresh Mapillary URL
 	     {
 		 my $date_from = $begincheck_date;
 		 push @extra_url_defs, ['Mapillary', 'https://www.mapillary.com/app/?lat='.$py.'&lng='.$px.'&z=15' . ($date_from ? '&dateFrom='.$date_from : '')];
 	     }
 
-	     # BBBike Leaflet URL
-	     push @extra_url_defs, ['BBBike-Leaflet', 'http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
+	     if ($dir->{osm_watch}) {
+		 for my $osm_watch (@{ $dir->{osm_watch} }) {
+		     if ($osm_watch =~ m{^(\S+)\s+id="(\d+)"}) {
+			 my($type, $id) = ($1, $2);
+			 my $url = "https://www.openstreetmap.org/$type/$id";
+			 push @extra_url_defs, ["OSM-Watch", $url];
+		     } elsif ($osm_watch =~ m{^note\s+(\d+)}) {
+			 my($id) = ($1);
+			 my $url = "https://www.openstreetmap.org/note/$id";
+			 push @extra_url_defs, ["OSM-Note", $url];
+		     } else {
+			 warn "Cannot parse osm_watch directive '$osm_watch'\n";
+		     }
+		 }
+	     }
 
 	     # URLs from also_indoor directives
 	     if ($dir->{also_indoor}) {
@@ -422,6 +423,22 @@ for my $file (@files) {
 		     }
 		 }
 	     }
+
+	     # OSM URL
+	     {
+		 my @layers;
+		 if ($subject =~ /zebrastreifen/i) {
+		     push @layers, 'C'; # OpenCycleMap has the best zebra rendering
+		 } elsif ($subject =~ /(radspur|radweg|radverkehrsanlage|busspur)/i) {
+		     push @layers, 'Y'; # CyclOSM
+		 }
+		 push @layers, 'N'; # always turn notes on
+		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
+	     }
+
+	     # BBBike Leaflet URL
+	     push @extra_url_defs, ['BBBike-Leaflet', 'http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
+
 
 	     # Getting priority
 	     my $prio;
@@ -510,19 +527,6 @@ for my $file (@files) {
 		 ;
 	     if ($dir->{osm_watch}) {
 		 $headline .= " (+osm_watch)";
-		 for my $osm_watch (@{ $dir->{osm_watch} }) {
-		     if ($osm_watch =~ m{^(\S+)\s+id="(\d+)"}) {
-			 my($type, $id) = ($1, $2);
-			 my $url = "https://www.openstreetmap.org/$type/$id";
-			 push @extra_url_defs, ["OSM-Watch", $url];
-		     } elsif ($osm_watch =~ m{^note\s+(\d+)}) {
-			 my($id) = ($1);
-			 my $url = "https://www.openstreetmap.org/note/$id";
-			 push @extra_url_defs, ["OSM-Note", $url];
-		     } else {
-			 warn "Cannot parse osm_watch directive '$osm_watch'\n";
-		     }
-		 }
 	     }
 	     if ($dir->{add_fragezeichen} || ($file =~ m{fragezeichen} && !$dir->{ignore})) {
 		 $headline .= " (+public)";
