@@ -2222,7 +2222,7 @@ Akeleiweg: Asphalt	Q0 17631,3200 17603,3240
 Akeleiweg: Asphalt	Q0 17603,3240 17377,3571
 # REMOVED (vollständig asphaltiert) --- Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
 # REMOVED (ja) --- #: next_check_id: WINCKELMANN-2021 --- #: XXX werden die Betonplatten durch Asphalt ersetzt? --- #: priority: #C --- #: next_check: 2021-07-05
-Winckelmannstr.: Kopfsteinpflaster sowie asphaltierter Gleisbereich	Q2+; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
+Winckelmannstr.: Kopfsteinpflaster sowie asphaltierter Gleisbereich	Q2+; 17428,4503 17476,4337 17507,4216 17503,4148 17498,4078 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
 Am Orankesee: Asphalt	Q0- 15856,15924 15815,15939 15758,15932
 Am Orankesee: Parkweg	Q1- 15758,15932 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
@@ -3784,7 +3784,7 @@ Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 Nernstweg: Verbundsteinpflaster	Q1 14650,7500 14659,7505 14789,7630 14784,7716 14792,7793 14766,7903 14777,7921
 Bergaustr.: Beton mit einigen Hebungen	Q1+ 15355,7893 15468,7761 15693,7512
-Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
+Platanenweg: Asphalt	Q0 15969,7738 15840,7876 15717,8011 15787,8073
 (Platanenweg - Willi-Sänger-Str.): wassergebundene Decke	Q1 15787,8073 15808,8099 15843,8125
 (Am Plänterwald - Erwin-Bennewitz-Weg): Verbundsteinpflaster	Q1 15499,8496 15488,8508 15473,8531
 Erwin-Bennewitz-Weg: Asphalt	Q0 15473,8531 15378,8668
@@ -4378,13 +4378,13 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: note: neu gemacht
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1+ 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
-(Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16136,7886 16534,8182
+(Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16144,7882 16534,8182
 Lakegrund: Beton	Q0- 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
 Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
 Schöntaler Weg: Asphalt	Q0 16089,7041 15988,7129
-Marientaler Str.: schlechtes Kopfsteinpflaster	Q3 16273,6609 16351,6678 16416,6741
-Hohenbirker Weg: Beton	Q0 16195,6506 16280,6601
+Marientaler Str.: schlechtes Kopfsteinpflaster	Q3 16276,6611 16351,6678 16423,6746
+Hohenbirker Weg: Beton	Q0 16195,6506 16283,6604
 Heidemühler Weg: sehr guter Beton	Q0 16304,6374 16195,6506
 Heidemühler Weg: Beton	Q0 16195,6506 16147,6545
 Dornbrunner Str.: Asphalt	Q0 16147,6545 16043,6414 15954,6297
@@ -12673,7 +12673,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7207 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="24202434" version="24"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2023-01-10
+#: last_checked: 2023-01-14
 #: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
@@ -12944,6 +12944,7 @@ Schmidstr.: Beton	Q0- 11415,11392 11480,11526 11281,11612
 Heinrich-Heine-Str. [Wohngebiet]: Beton	Q0- 11281,11612 11233,11510 11192,11429
 Annenstr. [Wohngebiet]: Beton mit einigen Schäden	Q1+ 11192,11429 11259,11391 11217,11288
 Ella-Kay-Str. [Wohngebietsstraße]: Beton	Q0- 12173,15040 12214,15018 12136,14868 12095,14888
+(an den Rathenauhallen): wechselnd Asphalt, Beton und Verbundsteinpflaster, teilweise schadhaft	Q1- 18191,6363 18122,6148
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15442,7 +15443,7 @@ Schulstr. (Staaken): Asphalt	Q0 -7828,13468 -7971,13467 -8043,13464 -8111,13458 
 # 
 #: by: Michael Ebert: vvv
 #: confirmed_by: srt
-Eichbuschallee: guter Asphalt	Q0 16136,7886 15968,7739 15920,7697 15763,7569 15693,7512
+Eichbuschallee: guter Asphalt	Q0 16144,7882 15969,7738 15920,7697 15763,7569 15693,7512
 #: corrected_by: srt (guter Asphalt -> ...)
 Eichbuschallee: Beton	Q0- 15693,7512 15560,7400
 #: by: ^^^
@@ -17490,7 +17491,7 @@ Woermannkehre: Asphalt	Q0 13601,6259 13732,6314
 # 
 #: by: peter (pr@...):
 #: confirmed_by: srt (aber mittlerweile von Q1 auf Q2+ degradiert)
-Behringstr.: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2+ 16262,6913 16416,6741 16474,6675
+Behringstr.: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2+ 16262,6913 16423,6746 16481,6686
 # 
 #: by: Stephan Schmauder: vvv
 #: confirmed_by: srt
@@ -23147,7 +23148,7 @@ Lahmertstr.: Asphalt	Q0 22328,2084 22236,2029 22220,2018 22130,1961
 # 
 #: by: ebay jarius:
 #: confirmed_by: srt
-Gondeker Str.: Asphalt	Q0 16333,6544 16474,6675
+Gondeker Str.: Asphalt	Q0 16346,6534 16481,6686
 # 
 #: by: Lino Schüpfer:
 #: corrected_by: srt & Katharina Pöggel (gutes Kopfsteinpflaster -> Asphalt, Q0)
@@ -31792,4 +31793,5 @@ Einmündungsbereich asphaltiert	Q0 12954,14287
 Einmündungsbereich asphaltiert	Q0 14844,10088
 Kreuzungsbereich asphaltiert	Q0 15148,10111
 Kreuzungsbereich asphaltiert	Q0 15090,10140
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 17747,7322 17747,7322
 #: ignore ^^^

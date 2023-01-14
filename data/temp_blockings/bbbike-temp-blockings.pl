@@ -31778,8 +31778,8 @@ EOF
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00
 	q4::temp 16507,7254 16428,7144
-	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
-	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
+	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
+	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
 	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 	q4::temp 15778,8990 15680,8914 15591,8848
 	q4::temp; 15591,8848 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
@@ -36397,7 +36397,7 @@ EOF
 #: last_checked: 2023-01-10
 #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
-Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16428,7144
+Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16377,7200 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
 Trojanstr.: Einbahnstraße	q4::inwork; 16290,7160 16353,7226
 EOF
@@ -37522,6 +37522,29 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2023-01-12 (daf)
 	q4::inwork 5350,12906 5341,12875 5376,12781
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: EDISON-2022
+#: last_checked: 2023-01-14
+	q4::inwork; 17962,6674 17991,6431
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Pietschkerstr.: Einbahnstraßenregelung',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: SCHOENEWEIDE-2018
+#: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
+#: also_indoor: traffic (none)
+#: last_checked: 2023-01-14
+#: check_frequency: 120d
+	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
      },
     );

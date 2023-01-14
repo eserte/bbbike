@@ -5063,6 +5063,31 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: EDISON-2022
+#: last_checked: 2023-01-14
+	q4::inwork; 17962,6674 17991,6431
+',
+         'from' => undef,
+         'id' => 3709,
+         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: SCHOENEWEIDE-2018
+#: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
+#: also_indoor: traffic (none)
+#: last_checked: 2023-01-14
+#: check_frequency: 120d
+	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
+',
+         'from' => undef,
+         'id' => 3710,
+         'text' => 'Pietschkerstr.: Einbahnstraßenregelung',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

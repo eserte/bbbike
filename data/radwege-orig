@@ -1157,7 +1157,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-01-10 vvv
+#: last_checked: 2023-01-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1964,7 +1964,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-01-13 vvv
+#: last_checked: 2023-01-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2684,7 +2684,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2023-01-10 vvv
+#: last_checked: 2023-01-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3134,13 +3134,11 @@ Radweg größtenteils nur aufgemalt	RW1;RW1 9732,15581 9646,15737 9623,15777 9494,
 	RW2; 15166,8489 15303,8343 15357,8286 15557,8077
 	RW1; 15557,8077 15920,7697
 asphaltiert, einige Wurzelhebungen	RW2; 15920,7697 16195,7398 16259,7328
-asphaltiert, akzeptable Qualität	RW2; 16259,7328 16353,7226
-#: note: fängt einige Meter nach der Trojanstr. an
-	RW4; 16353,7226 16428,7144
-#: note: reicht nicht ganz bis zur Trojanstr.
-	RW4; 16428,7144 16353,7226
+asphaltiert, akzeptable Qualität	RW2; 16259,7328 16353,7226 16377,7200
+	RW4; 16377,7200 16428,7144
+	RW4; 16428,7144 16377,7200
 #: note: kein Unterstreifen gegen parkende Autos, aber der Radweg ist relativ breit
-neu asphaltiert	RW2; 16353,7226 16259,7328
+neu asphaltiert	RW2; 16377,7200 16353,7226 16259,7328
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 16259,7328 16195,7398 15920,7697
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW1; 15920,7697 15557,8077
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 15557,8077 15357,8286 15303,8343 15166,8489
@@ -3154,7 +3152,7 @@ asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 15557,8077 15
 etwas älterer Asphalt	RW2;RW2 16677,6892 16720,6845
 neu asphaltiert	RW2;RW2 16720,6845 16747,6813 16805,6747
 	RW2;RW2 16805,6747 16838,6708
-	RW1;RW1 16507,7254 16406,7430 16136,7886 16003,8119 15869,8355 15714,8633 15591,8848
+	RW1;RW1 16507,7254 16406,7430 16144,7882 16003,8119 15869,8355 15714,8633 15591,8848
 holpriges und teilweise enges Verbundsteinpflaster, teilweise zugewachsen, Q2+	RW1;RW1 7368,14573 7314,14599 7167,14666 6940,14750 6847,14735 6572,14639 6288,14661
 vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
 #: note: hier ist kein Radweg mehr
@@ -4228,8 +4226,8 @@ Verbundsteinpflaster	RW2;RW1 10618,15076 10881,15047
 	RW2; 10709,13629 10741,13685
 	RW3; 10741,13685 10709,13629
 Verbundsteinpflaster	RW1; 15693,7512 15560,7400
-nur in Ansätzen existierender alter enger, asphaltierter Radweg	RW0; 15920,7697 15968,7739 16136,7886
-teilweise vorhandener alter enger, asphaltierter Radweg ist abgesperrt	RW0; 16136,7886 15968,7739 15920,7697
+nur in Ansätzen existierender alter enger, asphaltierter Radweg	RW0; 15920,7697 15969,7738 16144,7882
+teilweise vorhandener alter enger, asphaltierter Radweg ist abgesperrt	RW0; 16144,7882 15969,7738 15920,7697
 	RW4; 8663,14960 8656,14947 8660,14929 8671,14919 8692,14923 8701,14932 8700,14956 8685,14966 8663,14960
 # REMOVED --- #: by: Julius Uhlmann: --- #: XXX: tatsächlich? nachgefragt! --- wahrscheinlich der Brückenabschnitt gemeint? ---	RW4?;RW4? 10534,20144 10478,20345
 #: by: Eva (philostrata):
@@ -7418,14 +7416,14 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2022-12-28 vvv
+#: last_checked: 2023-01-14 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 	RW0; 17919,6968 17962,6674
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
-provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
+# REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
 #: osm_watch: way id="671329664" version="12"
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17962,6674
