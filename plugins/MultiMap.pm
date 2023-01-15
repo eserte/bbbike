@@ -1230,7 +1230,7 @@ sub showmap_url_bing_street {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1",
+    sprintf "http://www.bing.com/maps/?cp=%s~%s&lvl=%.1f&trfc=1",
 	$py, $px, $scale;
 }
 
