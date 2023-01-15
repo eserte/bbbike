@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.86;
+$VERSION = 1.87;
 
 use vars qw(%images);
 
@@ -1230,7 +1230,7 @@ sub showmap_url_bing_street {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.bing.com/maps/?cp=%s~%s&lvl=%s",
+    sprintf "http://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1",
 	$py, $px, $scale;
 }
 
