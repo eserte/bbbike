@@ -213,7 +213,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: last_checked: 2022-12-21
 #: check_frequency: 60d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
-Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18254,6679 18339,6660 18494,6588
+Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18029,6674 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
@@ -918,10 +918,10 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: by: https://berliner-abendblatt.de/2022/03/25/138713/
 #: by: https://unternehmen.bvg.de/pressemitteilung/gleise-glaetten/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
+#: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.7.2023) (am nächsten Tag wieder entfernt -> inaktiv)
+#: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023)
-#: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.7.2023) (am nächsten Tag wieder entfernt)
-#: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt)
-#: last_checked: 2022-11-12 vvv
+#: last_checked: 2023-01-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-07-15 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -1067,7 +1067,6 @@ B2: Schwedt - Angermünde	1::igndisp 49907,67684 50386,68158
 Trusetaler Str.	1s:q3 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
 Blumberger Damm	1s:q4 21733,15755 21719,15666
 Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
-Kaulsdorfer Str.	1 22539,6258 22325,6385
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
 Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
 Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
@@ -1465,6 +1464,8 @@ Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 Breite Str.: Straßenbahnhaltestelle	3nocross 10680,18380 10710,18393 10784,18426
 # 
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
+# 
+Oberspreestr. [Nebenfahrbahn]	1s:q3 19965,5101 19957,5083 19940,5090
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1960,7 +1961,7 @@ Alt-Kaulsdorf: Mittelstreifen	3nocross 22937,11265 22996,11264 23113,11262
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Marienfelder Chaussee: Mittelstreifen	3nocross 11012,1210 11157,1269 11216,1293
 Marienfelder Chaussee: Mittelstreifen	3nocross 11865,1564 11765,1522 11483,1401
-Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22675,6498
+Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22534,6249 22645,6431 22675,6498
 Kissingenstr.: Mittelstreifen	3nocross 11023,17878 11047,17883 11113,17895
 #: note: ^^^
 Landsberger Allee: Mittelstreifen	3nocross 15850,14308 15925,14316 16010,14326
@@ -3512,7 +3513,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-01-13
+#: last_checked: 2023-01-15
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3649,13 +3650,13 @@ Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 1333
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/bebauungsplan-fuer-grundschule_a365015
 #: osm_watch: way id="1086484458" version="2"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-15
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-01-08
+#: last_checked: 2023-01-15 (mapillary)
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -3735,15 +3736,15 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: last_checked: 2023-01-13 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-#: osm_watch: way id="1061057020" version="4"
+#: osm_watch: way id="1061057020" version="5"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
-#: osm_watch: way id="1084269868" version="3"
+#: osm_watch: way id="1084269868" version="4"
 Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
-#: osm_watch: way id="1084269869" version="4"
+#: osm_watch: way id="1084269869" version="5"
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
@@ -3775,7 +3776,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-15
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3811,7 +3812,8 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 ("voraussichtlich ab 2019 neu gebaut")
 #: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum)
-#: osm_watch: way id="298416172" version="8"
+# REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9"
+#: osm_watch: way id="43205335" version="3"
 #: XXX wird abgerissen und neu gebaut
 #: last_checked: 2022-08-27 (mapillary) vvv
 #: check_frequency: 180d vvv
@@ -4111,9 +4113,9 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/sen/uvk/_assets/presse/verkehr/230111_pm-molkenmarkt-neue-verkehrsfuehrung2.jpg
 #: by: https://berliner-abendblatt.de/2023/01/14/bauarbeiten-in-berlin-strassensperrungen-am-wochenende/
 #: by: https://berliner-abendblatt.de/2023/01/14/vollsperrung-am-molkenmarkt-freie-fahrt-ab-sonntagabend/
-#: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023)
-#: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023)
-#: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023)
+#: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
+#: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
+#: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: XXX bis wann geht die Sperrung?
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: osm_watch: way id="729492933" version="3"
@@ -4144,17 +4146,20 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2022-11-12 vvv
+#: last_checked: 2023-01-15 vvv
 #: check_frequency: 60d vvv
+#: osm_watch: way id="719023970" version="11"
+Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
-#: osm_watch: way id="719023970" version="11"
-Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
-# REMOVED (laut osm offen) --- #: osm_watch: way id="719023969" version="13" --- #: last_checked: 2022-10-16 --- Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
+#: note: laut osm offen, stimmt aber nicht
+#: osm_watch: way id="719023969" version="13"
+#: last_checked: 2023-01-15
+Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So)
 #: osm_watch: way id="944115137" version="8"
-#: last_checked: 2022-10-16
+#: last_checked: 2023-01-15
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 #: osm_watch: way id="719023971" version="9"
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
@@ -4195,9 +4200,9 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
 #: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
 #: by: https://molkenmarkt.berlin.de/webcam/ (Webcam)
-#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023) (bis 30.6.2023) (bis 15.1.2023)
+#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023) (bis 30.6.2023) (bis 15.1.2023) (inaktiv)
+#: source_id: viz2021:13.409109,52.516928,14.01.2023,06:00 (bis 15.01.2023) (inaktiv)
 #: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022) (bis 30.06.2023)
-#: source_id: viz2021:13.409109,52.516928,14.01.2023,06:00 (bis 15.01.2023)
 #: source_id: viz2021:13.409118,52.51693,15.01.2023,18:00 (bis 30.06.2023)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
@@ -4252,9 +4257,9 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://berliner-abendblatt.de/2022/02/21/moltkebruecke/ (bis Mitte 2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1181845.php
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/der-abriss-der-wuhletalbruecke-hat-begonnen_a338111
+#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024)
-#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt)
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2022-10-30
 #: check_frequency: 360d
@@ -4371,8 +4376,8 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: also_indoor: traffic (G,H,B(teilweise))
 #: source_id: 2147343289 (bis 30.6.2021) (inaktiv)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
-#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023)
 #: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023) (inaktiv)
+#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023)
 #: note: laut rbb ebenfalls bis 30.9.2022
 #: osm_watch: way id="43233756" version="22"
 #: osm_watch: way id="681299268" version="2"
@@ -4384,15 +4389,15 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
-#: source_id: 2147343292
+#: source_id: 2147343292 (möglicherweise inaktiv)
 #: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
 Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 # REMOVED (hier nicht mehr) --- #: source_id: 2147343293 --- #: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (inaktiv) --- #: source_id: viz2021:13.38639,52.5137,29.09.2022,18:06 (inaktiv) --- #: note: Meldung wurde auch bei rbb entfernt --- #: next_check: 2022-10-10 --- Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
 #: XXX laut googlemaps bis 30. Oktober 2018
 #: XXX laut VIZ hier Komplettsperrung, auch für Fußgänger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen
-#: source_id: 2147343290
-#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
+#: source_id: 2147343290 (möglicherweise inaktiv)
 #: source_id: viz2021:13.38472,52.51468,29.09.2022,18:05 (inaktiv)
+#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
 #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 #: XXX Hier öfters nachschauen...
@@ -4676,13 +4681,12 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: by: https://berliner-abendblatt.de/2022/05/09/dreieck-neukoelln-keine-zufahrt-zur-grenzallee/ (ab 2022-05-11 für rund drei Monate; ändert sich für Radfahrer etwas?)
 #: by: https://viz.berlin.de/2022/05/as-grenzallee/ (ab 18.05.2022 für drei Monate)
 #: by: https://viz.berlin.de/wp-content/uploads/22-0598-A-100-Grenzallee-16.-BA-gesamt-2022-04-28-1.pdf
-#: source_id: 2147346461 (bis 31.12.2021)
-#: source_id: 2147346643 (bis 31.12.2021)
+#: source_id: 2147346461 (bis 31.12.2021) (inaktiv)
+#: source_id: 2147346643 (bis 31.12.2021) (inaktiv)
+#: source_id: viz2021:13.4581,52.46415,29.12.2022,09:40 (bis 30.6.2023) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.456584,52.465328,25.11.2020,08:00 (bis 31.12.2022) (30.6.2023)
-#: source_id: viz2021:13.4581,52.46415,29.12.2022,09:40 (bis 30.6.2023) (später am Tag wieder entfernt)
 # REMOVED (wurde für was anderes recyclet) --- #: osm_watch: way id="194653032" version="26"
-#: osm_watch: way id="846595294" version="8"
-#: osm_watch: way id="38725490" version="17"
+#: osm_watch: way id="1131855532" version="1"
 #: also_indoor: traffic (G,B)
 #: last_checked: 2022-11-18 vvv
 #: check_frequency: 90d vvv

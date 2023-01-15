@@ -1726,11 +1726,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtbad-tiergarten-sanierung-und-neues-au%C3%9Fenbecken.704/
 #: by: https://www.berlinerbaeder.de/baeder/stadtbad-tiergarten/
 #: by: https://www.berlinerbaeder.de/aktuelles/detail/einblicke-in-die-sanierung-des-stadtbades-tiergarten/ (Fertigstellung Mitte 2023)
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: osm_watch: way id="462738551" version="15"
 #: osm_watch: way id="848019125" version="3"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-01-07
-#: next_check: 2023-06-30
+#: next_check: 2023-08-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 ',
@@ -2250,7 +2251,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: last_checked: 2022-12-21
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
-#: last_checked: 2022-12-05
+#: last_checked: 2023-01-15
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2663,7 +2664,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-01-09
+#: last_checked: 2023-01-14
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4137,7 +4138,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (G[ungenau],B[ungenau])
-#: last_checked: 2023-01-13
+#: last_checked: 2023-01-15
 #: check_frequency: 14d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -5066,7 +5067,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: next_check_id: EDISON-2022
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-15
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,

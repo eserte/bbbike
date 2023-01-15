@@ -601,7 +601,7 @@ Bus 164	busroute_N 20166,3344 20113,3408 20089,3438 20066,3466 20012,3532
 Bus 164	busroute_N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
 Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22023,5160 21974,5208 21954,5229
 Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22192,6659 22186,6672 22075,6967
-Bus X69	busroute_N 22325,6385 22539,6258
+Bus X69	busroute_N 22325,6385 22534,6249
 Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24135,4264 24181,4270
 Bus 190	busroute_N 21019,7340 21050,7341 21153,7393 21341,7487 21475,7500
 Bus 190	busroute_N 21175,9989 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21017,10423 21281,10428
@@ -1696,7 +1696,11 @@ Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
 # 
 Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
 # 
-# REMOVED --- #: next_check_id: WASSERSTADTSPINDLERSFELD-2019 --- #: last_checked: 2022-11-12 --- #: check_frequency: 60d --- Eiselenweg - Uferweg: Einfahrt zum Uferweg ist etwas versteckt, vor dem Neubaugebiet links abbiegen	CP; 21364,5430 21442,5414 21476,5434
+#: next_check_id: WASSERSTADTSPINDLERSFELD-2019
+#: last_checked: 2023-01-15
+#: check_frequency: 60d
+Carl-Spindler-Str. - Uferweg: in Höhe Blütenweißweg zwischen den Neubauten links abbiegen	CP; 21474,5388 21483,5374 21518,5389
+# REMOVED --- Eiselenweg - Uferweg: Einfahrt zum Uferweg ist etwas versteckt, vor dem Neubaugebiet links abbiegen	CP; 21364,5430 21442,5414 21476,5434
 # 
 Büxensteinallee: diagonal über die Straßenbahngleise, erst dahinter ist ausgeschildert	CP2; 22162,1067 22228,1071
 # 

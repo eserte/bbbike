@@ -84,8 +84,8 @@ Pestalozzistr.: Fuﬂg‰ngerzone	q3 3738,11231 3770,11231 3813,11230
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11317,10485 11344,10507
 (Zufahrt am NKZ): Fuﬂg‰nger, un¸bersichtlich	q3 11344,10507 11392,10520 11411,10515
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
-Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q3 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822 10923,12779
-Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11102,12845
+Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q3 11139,13008 11064,12910 11005,12855 10970,12822 10923,12779
+Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
@@ -2383,6 +2383,10 @@ Elsterwerdaer Platz: Liefer- und Busverkehr	q1 21074,11465 21073,11350 21134,113
 Elsterwerdaer Platz: einige Fuﬂg‰nger	q0 20818,11293 20829,11275 20839,11300 21055,11284 21084,11319 21110,11326 21134,11331
 Elsterwerdaer Platz: einige Fuﬂg‰nger	q0 21084,11319 21082,11333 21073,11350
 Hochstr.: Fuﬂg‰nger, Bordsteine	q3 8933,15872 8917,15851
+(Verl‰ngerte Kˆpenicker Str./Straﬂe E - Waldweg an der S-Bahn): eng, Bordstein	q3 21219,7111 21213,7103
+(Verl‰ngerte Kˆpenicker Str./Straﬂe E - Waldweg an der S-Bahn): eng	q2 21213,7103 21219,7034 21216,6980 21194,6891
+(Moosstr. - Hartriegelstr.): gemeinsamer Geh- und Radweg, Bordstein an der Hartriegelstr.	q2 18945,5082 18823,5076 18713,5042
+(Griechischer Park Hˆhe Parsevalstr.): Gr¸nanlage, einige Fuﬂg‰nger	q3 18159,6642 18162,6668 18158,6689
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2889,7 +2893,7 @@ Bleichertstr.: enge Straﬂe	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 
 Redwitzgang: enge Straﬂe	q1 17266,4720 17225,4568
 Hellersdorfer Promenade: Fuﬂg‰ngerzone	q1 24131,15109 24112,15236 24094,15360 24076,15481
 Muschelkalkweg: enge Straﬂe	q0 10722,1222 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
-Groﬂstr.: enge Straﬂe	q0 18574,6401 18483,6460 18457,6490 18429,6582
+Groﬂstr.: enge Straﬂe	q0 18574,6401 18491,6464 18462,6495 18429,6582
 Rothariweg: enge Straﬂe	q0 8292,6331 8290,6191 8291,6048
 K¸selstr.: enge Straﬂe	q1 12292,15464 12221,15514 12158,15556 12094,15598 12058,15621
 Zillertalstr.: enge Straﬂe	q0 10807,17193 10498,17192 10228,17191 10198,17196
@@ -3278,6 +3282,7 @@ Lilli-Henoch-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp;
 Sinsheimer Weg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 13774,8849 13687,8734
 Hannaweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 20938,14066 20923,13953
 Feldrain: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25684,13172 25632,13214 25609,13232 25607,13459
+Oberspreestr. [Nebenfahrbahn]: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 19965,5101 19957,5083 19940,5090
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

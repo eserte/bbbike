@@ -235,7 +235,7 @@ Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023)
 #: priority: #A
-#: last_checked: 2023-01-07 vvv
+#: last_checked: 2023-01-13 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-03-15 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf B¸rgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
@@ -677,6 +677,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # 
 #: next_check_id: GRENZALLEE-2014
+#: osm_watch: way id="38725490" version="18"
 #: last_checked: 2023-01-04 vvv
 #: check_frequency: 90d vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q1 14150,6609 14137,6658 14179,6714 14179,6743
@@ -1078,8 +1079,8 @@ Pestalozzistr.: Fuﬂg‰ngerzone	q3 3738,11231 3770,11231 3813,11230
 # 
 #: XXX_prog BS (1x oder 2x?)
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
-Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q3 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822 10923,12779
-Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11102,12845
+Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q3 11139,13008 11064,12910 11005,12855 10970,12822 10923,12779
+Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 # REMOVED (beide Eintr‰ge entfernt --- zurzeit wenig Fuﬂg‰ngerverkehr) --- #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?) --- #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam) --- #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten) --- #: (gelˆscht) osm_watch: relation id="8743849" version="2" --- #: last_checked: 2021-05-01 (webcam) --- #: check_frequency: 7d --- #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595 --- Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
@@ -3157,7 +3158,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="10"
-#: last_checked: 2023-01-14 vvv
+#: last_checked: 2023-01-15 vvv
 #: check_frequency: 120d vvv
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -4324,6 +4325,14 @@ Elsterwerdaer Platz: einige Fuﬂg‰nger	q0- 20818,11293 20829,11275 20839,11300 21
 #: note: von der Lieferstraﬂe aus als "Fuﬂg‰ngerzone, Lieferverkehr frei" ausgeschildert, keine Ausschilderung von der anderen Seite
 Elsterwerdaer Platz: einige Fuﬂg‰nger	q0- 21084,11319 21082,11333 21073,11350
 Hochstr.: Fuﬂg‰nger, Bordsteine	q3 8933,15872 8917,15851
+#: XXX_prog BS (ansonsten q2)
+(Verl‰ngerte Kˆpenicker Str./Straﬂe E - Waldweg an der S-Bahn): eng, Bordstein	q3 21219,7111 21213,7103
+(Verl‰ngerte Kˆpenicker Str./Straﬂe E - Waldweg an der S-Bahn): eng	q2 21213,7103 21219,7034 21216,6980 21194,6891
+#: XXX_prog BS (ansonsten q1)
+(Moosstr. - Hartriegelstr.): gemeinsamer Geh- und Radweg, Bordstein an der Hartriegelstr.	q2 18945,5082 18823,5076 18713,5042
+#: note: Bordsteine sind zwar abgeflacht, aber Autos kˆnnen eng parken
+#: note: nicht eindeutige Ausschilderung: an der Nordseite mit Gr¸nanlagen-Schild (+ Radfahren verboten), an der S¸dseite fehlt so ein Schild
+(Griechischer Park Hˆhe Parsevalstr.): Gr¸nanlage, einige Fuﬂg‰nger	q3 18159,6642 18162,6668 18158,6689
 # 
 ######################### User Contributions #################################
 # 
@@ -4531,7 +4540,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jˆrn Busch:
 #: corrected_by: srt (q2 -> q1)
-#: by: https://www.infravelo.de/projekt/nordgraben/ (1. Quartal 2022 - 4. Quartal 2022; Asphaltierung & Verbreiterung auf 4m) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile von "in Planung" auf "Vorgesehen" zur¸ckgestuft) (4. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 4. Quartal 2023)
+#: by: https://www.infravelo.de/projekt/nordgraben/ (1. Quartal 2022 - 4. Quartal 2022; Asphaltierung & Verbreiterung auf 4m) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile von "in Planung" auf "Vorgesehen" zur¸ckgestuft) (4. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 4. Quartal 2023) (wieder "in Planung")
 #: XXX Weg wird asphaltiert
 #: last_checked: 2022-05-10 (kartaview, am westlichen Ende)
 # REMOVED --- #: check_frequency: 120d
@@ -5437,7 +5446,7 @@ Hellersdorfer Promenade: Fuﬂg‰ngerzone	q1 24131,15109 24112,15236 24094,15360 24
 Muschelkalkweg: enge Straﬂe	q0- 10722,1222 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
 #: by: Thomas Schimpfke:
 #: corrected_by: srt (q3 -> q0-)
-Groﬂstr.: enge Straﬂe	q0- 18574,6401 18483,6460 18457,6490 18429,6582
+Groﬂstr.: enge Straﬂe	q0- 18574,6401 18491,6464 18462,6495 18429,6582
 #: by: Freioun:
 #: corrected_by: srt (q1 -> q0-)
 Rothariweg: enge Straﬂe	q0- 8292,6331 8290,6191 8291,6048

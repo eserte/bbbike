@@ -654,12 +654,13 @@ Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	
 Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3876,18348 3909,18342 4009,18322
 Hüttenweg: Kleinsteinpflaster	Q1 1573,5152 1964,5070
 #: note: und in der kälteren Jahreszeit kann es an einigen Stellen leicht matschig sein
-Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2- 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
-Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
+Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2- 20872,7268 20892,7236 20867,7165 20870,7122 21194,6891 21412,6735 21576,6644
+Wuhlheide: fester Waldweg	Q2 20870,7122 20682,7262 20653,7289
 Wuhlheide: Waldweg	Q2 21365,5832 21406,5864
 Wuhlheide: unebener Asphalt	Q1- 21406,5864 21561,5955
 Wuhlheide: Waldweg	Q2+ 21561,5955 21653,6037 21737,6068
 Wuhlheide: Waldweg, Feinschotter	Q1- 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
+(Verlängerte Köpenicker Str./Straße E - Waldweg an der S-Bahn): Waldweg	Q2 21219,7111 21213,7103 21219,7034 21216,6980 21194,6891
 (An der Alten Försterei - Rudolf-Rühl-Allee): Asphalt	Q0 21406,5864 21374,5886 21243,6046
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19045,6959 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2+ 19463,7117 19223,7189
@@ -1048,7 +1049,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: last_checked: 2022-12-17
-#: check_frequency: 30d
+#: check_frequency: 60d
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
 #: historical_note: früher Kopfsteinpflaster, Q2
@@ -1318,7 +1319,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2022-10-16 vvv
+#: last_checked: 2023-01-15 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="7"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2532,7 +2533,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
 #: XXX Maßnahme Kö.13
 #: XXX siehe auch gesperrt-orig-Eintrag (mit osm_watch ...)
-#: last_checked: 2022-12-30 (osm)
+#: last_checked: 2023-01-15
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg - Carl-Spindler-Str.): Asphalt	Q0 21518,5389 21483,5374
@@ -3391,7 +3392,7 @@ Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12592,12472 12632,12630
 #: by: http://www.reinickendorf.de/index_7745_de.html
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 Griechische Allee: Asphalt	Q0 18119,6693 18076,6693 18025,6700 17962,6674 18029,6674 18079,6678 18159,6642 18273,6606 18429,6582 18494,6588
-Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,6679 18119,6693
+Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,6679 18158,6689 18119,6693
 Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16166,12292
 Straße 18: Beton/Asphalt	Q0 16429,13146 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
@@ -3910,7 +3911,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="21"
 #: osm_watch: way id="1090076934" version="4"
 #: osm_watch: way id="1090076933" version="4"
-#: last_checked: 2022-11-05
+#: last_checked: 2023-01-15
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -5442,7 +5443,7 @@ Schmale Str.: überwiegend schlechtes Kopfsteinpflaster, kurzes Stück am Anfang a
 Rombiner Weg: Asphalt	Q0 21712,6800 21833,6810
 Verlängerte Mozartstr.: unbefestigter Weg	Q2 21920,6835 21848,6923 21815,6947
 Verlängerte Hämmerlingstr.: Beton	Q0 21729,6989 21683,6946 21582,6842 21541,6800
-(Waldweg an der S-Bahn - Verlängerte Hämmerlingstr.): Waldweg	Q2 21409,6731 21459,6744 21541,6800
+(Waldweg an der S-Bahn - Verlängerte Hämmerlingstr.): Waldweg	Q2 21412,6735 21459,6744 21541,6800
 Verlängerte Köpenicker Str.: Asphalt	Q0 21012,7328 21219,7111 21291,7048 21345,7000 21359,6983
 (Waldweg entlang des Innovationsparks): Waldweg, Wurzeln und sandige Stellen	Q3+ 21029,7591 21455,7598 21498,7628 21540,7630
 Dankratweg: Asphalt	Q0 20857,9542 20683,9553 20595,9558
@@ -8880,6 +8881,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: check_frequency: 120d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
+(Moosstr. - Hartriegelstr.): Beton	Q1- 18945,5082 18823,5076 18713,5042
 (Bersarinplatz - Thaerstr.): unbefestigter Weg	Q2 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz): Gehwegplatten	Q0 13761,12690 13695,12643
 #: note: neu asphaltiert
@@ -9431,7 +9433,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: by: https://mein.berlin.de/projekte/sanierung-grunflache-auerdreieck/?initialSlide=6 (vermutlich bleiben die Stufen am nördlichen Ende)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2023-01-08 vvv
+#: last_checked: 2023-01-15 (mapillary) vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -10402,7 +10404,7 @@ Am Filmlager: Verbundsteinpflaster	Q1+ 22742,5177 22805,5179 22813,5178 22816,51
 Am Filmlager: Verbundsteinpflaster	Q1+ 22816,5148 22863,5150
 Werlseestr. - Am Goldmannpark: Asphalt	Q0 26199,5643 26239,5659
 #: osm_watch: way id="1085678795" version="4"
-#: osm_watch: way id="384630167" version="5"
+#: osm_watch: way id="384630167" version="6"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
 #: last_checked: 2022-10-05
 #: check_frequency: 180d
@@ -12425,7 +12427,7 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q1+;Q0- 488,22275 455,22285 355,22344
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
 # REMOVED --- #: osm_watch: way id="567597386" version="8"
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1217133.php (Bauarbeiten im Einmündungsbereich Fürstenwalder Allee/Mausohrweg bis zum 18. August 2022)
-#: osm_watch: way id="567597383" version="13"
+#: osm_watch: way id="567597383" version="14"
 #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv
 #: last_checked: 2022-05-11 vvv
 #: check_frequency: 120d vvv
@@ -12945,6 +12947,7 @@ Heinrich-Heine-Str. [Wohngebiet]: Beton	Q0- 11281,11612 11233,11510 11192,11429
 Annenstr. [Wohngebiet]: Beton mit einigen Schäden	Q1+ 11192,11429 11259,11391 11217,11288
 Ella-Kay-Str. [Wohngebietsstraße]: Beton	Q0- 12173,15040 12214,15018 12136,14868 12095,14888
 (an den Rathenauhallen): wechselnd Asphalt, Beton und Verbundsteinpflaster, teilweise schadhaft	Q1- 18191,6363 18122,6148
+(Griechischer Park Höhe Parsevalstr.): Asphalt	Q0 18159,6642 18162,6668 18158,6689
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17037,13 +17040,13 @@ Holsteinische Str. (Steglitz): etwas glatteres Kopfsteinpflaster	Q2+ 5596,6590 5
 # 
 #: by: Wolfgang Thurner: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster Q3 -> mäßiges-schlechtes Kopfsteinpflaster Q2- -> ...; Wolfgang Thurner hat 18km/h eingetragen, und rein optisch sah es wie Q2 aus)
-Goethestr. (Oberschöneweide): unebenes Kleinsteinpflaster	Q2- 18029,6674 18035,6621 18057,6575 18092,6523 18219,6447 18429,6407 18483,6460
+Goethestr. (Oberschöneweide): unebenes Kleinsteinpflaster	Q2- 18029,6674 18035,6621 18057,6575 18092,6523 18219,6447 18429,6407 18491,6464
 #: confirmed_by: srt
-Schillerpromenade (Oberschöneweide): Asphalt	Q0 18191,6363 18219,6447 18244,6518 18273,6606
+Schillerpromenade (Oberschöneweide): Asphalt	Q0 18191,6363 18219,6447 18246,6525 18273,6606
 #: by: ^^^
 # 
 #: by: Matthias Grähn:
-Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18114,6549 18244,6518 18457,6490
+Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18127,6556 18246,6525 18462,6495
 # 
 #: by: Christian Conrad:
 #: confirmed_by: srt (added "+")
@@ -17992,7 +17995,7 @@ Langkofelweg: Asphalt	Q0- 7023,3570 6845,3403
 #: by: rainer (0deon): vvv
 #: note: laut ADFC-Karte ebenfalls mäßig geeignet
 #: corrected_by: srt (schlechter Asphalt -> Kopfsteinpflaster)
-Hartriegelstr.: Kopfsteinpflaster	Q2 18695,5076 18724,5022
+Hartriegelstr.: Kopfsteinpflaster	Q2 18695,5076 18713,5042 18724,5022
 #: corrected_by: srt (schlechter Asphalt, Q2 -> Beton, Q0-)
 Hartriegelstr.: Beton, einige leichte Hebungen	Q0- 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900 19500,4919 19579,4931 19755,4962
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
@@ -23017,9 +23020,12 @@ Anton-von-Werner-Str.: guter Beton	Q0 22030,10467 22125,10451
 Anton-von-Werner-Str.: Kleinsteinpflaster	Q2+ 22125,10451 22257,10428
 #: by: ^^^
 # 
-#: by: Thomas Schimpfke:
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> mäßiges Kleinsteinpflaster)
-Großstr.: mäßiges, welliges Kleinsteinpflaster	Q2 18574,6401 18483,6460 18457,6490 18429,6582
+#: by: Thomas Schimpfke: vvv
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> mäßiges Kleinsteinpflaster) vvv
+Großstr.: mäßiges, welliges Kleinsteinpflaster	Q2- 18574,6401 18491,6464 18462,6495
+Großstr.: mäßiges, welliges Kleinsteinpflaster	Q2 18462,6495 18429,6582
+#: corrected_by ^^^
+#: by ^^^
 # 
 #: by: Gunther (seigert): vvv
 #: confirmed_by: srt
@@ -29940,7 +29946,7 @@ Scharnweberstr. (Friedrichshagen): Kopfsteinpflaster	Q2- 25743,5311 25745,5345 2
 Ewaldstr.: Beton	Q0 21297,651 21164,476
 #: confirmed_by: srt
 Ewaldstr.: Asphalt	Q0 21164,476 21077,387 20991,299 20903,210 20719,140 20684,105 20685,59 20685,52 20688,-10 20673,-31 20590,-120 20519,-198 20505,-217 20476,-279 20348,-380 20300,-416 20161,-487 20127,-502
-Parsevalstr.: Kopfsteinpflaster	Q2 18068,6495 18092,6523 18114,6549 18159,6642
+Parsevalstr.: Kopfsteinpflaster	Q2 18068,6495 18092,6523 18127,6556 18159,6642
 #: by: ^^^
 # 
 #: by: Petra-Maria Grell [AM]
@@ -31616,7 +31622,7 @@ Einmündungsbereich asphaltiert	Q0 6886,15156
 Kreuzungsbereich asphaltiert	Q0 6649,15427
 Kreuzungsbereich asphaltiert	Q0 6628,15411
 Einmündungsbereich betoniert	Q0 22279,4220
-Kreuzungsbereich asphaltiert	Q0 18244,6518
+Kreuzungsbereich asphaltiert	Q0 18246,6525
 Kreuzungsbereich asphaltiert	Q0 18219,6447
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 19876,984
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 19933,3641
@@ -31794,4 +31800,6 @@ Einmündungsbereich asphaltiert	Q0 14844,10088
 Kreuzungsbereich asphaltiert	Q0 15148,10111
 Kreuzungsbereich asphaltiert	Q0 15090,10140
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 17747,7322 17747,7322
+Einmündungsbereich asphaltiert	Q0 18429,6582
+Einmündungsbereich asphaltiert	Q0 18159,6642
 #: ignore ^^^

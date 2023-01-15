@@ -132,7 +132,7 @@ Dorotheenstr. (Straßenbahn)	1s 9454,12558 9330,12538
 Georgenstr.	1 9441,12670 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
-Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18254,6679 18339,6660 18494,6588
+Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18029,6674 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
@@ -671,7 +671,6 @@ B2: Schwedt - Angermünde	1::igndisp 49907,67684 50386,68158
 Trusetaler Str.	1s 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
 Blumberger Damm	1s 21733,15755 21719,15666
 Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
-Kaulsdorfer Str.	1 22539,6258 22325,6385
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
 Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
 Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
@@ -941,6 +940,7 @@ Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 Straßenbahnhaltestelle	3nocross::ignrte 10680,18380 10710,18393 10784,18426
 Eintrachtstr. -> Breite Str.: Straßenbahnhaltestelle	3::igndisp 10650,18544 10710,18393 10784,18426
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
+Oberspreestr. [Nebenfahrbahn]	1s 19965,5101 19957,5083 19940,5090
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1492,8 +1492,8 @@ Mittelstreifen	3nocross::ignrte 11012,1210 11157,1269 11216,1293
 Marienfelder Chaussee -> Muschelkalkweg: Mittelstreifen	3::igndisp 11012,1210 11157,1269 11120,1384
 Muschelkalkweg -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 11120,1384 11157,1269 11216,1293
 Mittelstreifen	3nocross::ignrte 11865,1564 11765,1522 11483,1401
-Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22675,6498
-Mahlsdorfer Str. -> Hoernlestr.: Straßenbahntrasse	3::igndisp 22539,6258 22645,6431 22509,6519
+Straßenbahntrasse	3nocross::ignrte 22534,6249 22645,6431 22675,6498
+Mahlsdorfer Str. -> Hoernlestr.: Straßenbahntrasse	3::igndisp 22534,6249 22645,6431 22509,6519
 Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6431 22675,6498
 Mittelstreifen	3nocross::ignrte 11023,17878 11047,17883 11113,17895
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11047,17883 11113,17895
@@ -2705,7 +2705,7 @@ tragen (Treppe)	0:30:-45 -633,12739
 tragen (Treppe, 4x5 Stufen)	0:30:-124 -7401,198
 tragen (Treppe, 56 Stufen)	0:50:-64 -6933,14317
 tragen (Treppe, 56 Stufen)	0:50:2 -6934,14291
-tragen (Treppe, 32 Stufen)	0:30:-232 20682,7262
+tragen (Treppe, 32 Stufen)	0:30:-233 20682,7262
 tragen (Treppe, ca. 6 Stufen)	0:15:-222 15488,8508
 tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605
@@ -3326,6 +3326,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 94
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
+Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 (Eiselenweg - Uferweg)	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
