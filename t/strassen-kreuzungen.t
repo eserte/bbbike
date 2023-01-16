@@ -281,7 +281,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Molkenmarkt
-	my %situation = situation_at_point_inorder($kr, qw(10723,12346 10738,12364 10831,12371));
+	my %situation = situation_at_point_inorder($kr, qw(10697,12303 10746,12364 10831,12371));
 	is($situation{action}, 'half-right', q{Need some indication that it's not Stralauer Str. to the right, but the Platz});
     }
 
