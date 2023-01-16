@@ -1080,7 +1080,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-01-09
+#: last_checked: 2023-01-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1805,7 +1805,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="14" vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2022-09-30 (mapillary) vvv
+#: last_checked: 2023-01-15 (mapillary) vvv
 #: next_check: 2023-10-01 vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
@@ -3161,7 +3161,7 @@ Luisenhain: glattes Pflaster	Q0 22196,4847 22153,4840 22074,4664 22057,4618 2204
 #: confirmed_by: srt (östlicher Abschnitt)
 Melonensteig: asphaltiert	Q0 -7908,14955 -7808,14939 -7715,14924 -7624,14910
 Viersener Str.: Beton	Q0 -5257,14668 -5228,14750 -5199,14835
-Klosterstr.: Kopfsteinpflaster	Q2- 10946,12241 10945,12150
+Klosterstr.: Kopfsteinpflaster	Q2- 10951,12249 10945,12150
 Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
@@ -6255,7 +6255,7 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="6"
-#: last_checked: 2022-08-27 (mapillary)
+#: last_checked: 2023-01-15 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
@@ -9088,7 +9088,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2022-10-16 (mapillary)
+#: last_checked: 2023-01-15 (mapillary)
 #: check_frequency: 120d
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
@@ -29477,10 +29477,10 @@ Heidereutergasse: Asphalt	Q0 10427,12873 10390,12842
 #: confirmed_by: srt
 Bauhofstr.: Asphalt mit Löchern	Q1 9815,12705 9673,12661
 Panoramastr.: Asphalt	Q0 10801,12901 10739,12844
-Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10584,12507 10626,12455 10665,12413 10723,12346
-Poststr.: Kopfsteinpflaster	Q2 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10659,12259
+Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10584,12507 10626,12455 10665,12413 10714,12355
+Poststr.: Kopfsteinpflaster	Q2 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10662,12255
 Nikolaikirchplatz: Kopfsteinpflaster	Q2 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
-Eiergasse: Gehwegplatten	Q0 10671,12356 10700,12315
+Eiergasse: Gehwegplatten	Q0 10671,12356 10703,12313
 Am Nußbaum: Verbundsteine	Q1 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Verbundsteine	Q1 10597,12405 10536,12355
 Jägerstr. (Mitte): Asphalt	Q0 9656,12031 9913,12068 9961,12094 10003,12113

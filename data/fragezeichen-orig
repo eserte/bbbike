@@ -288,7 +288,7 @@ Müllerstr.: Radspuren geplant	?::projected 7745,15160 7811,15096 7911,15008
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2022-11-15
+#: last_checked: 2023-01-15 (mapillary)
 #: check_frequency: 120d
 #: osm_watch: way id="82449630" version="23"
 #: osm_watch: way id="32426064" version="16"
@@ -1941,7 +1941,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5441
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/mobilitaetsgesetz-soll-bei-sanierung-der-strasse-vor-schoenholz-beruecksichtigt-werden_a275842
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-okt-2019.pdf
-#: last_checked: 2022-08-27 (mapillary) vvv
+#: last_checked: 2023-01-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8406,19081 8482,18986 8634,18787
@@ -2620,6 +2620,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1274611.php (Machbarkeitsstudie Heinsestraße)
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/passantenbefragung-in-der-heinsestrasse_a366746
 #: by: https://berliner-abendblatt.de/2023/01/15/umbau-der-heinsestrasse-buergerbeteiligung-startet/
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1283925.php
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
 #: osm_watch: way id="665666065" version="11"
@@ -2680,8 +2681,8 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: priority: #D
 #: last_checked: 2022-11-24 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
 #: check_frequency: 60d vvv
-Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
-Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 12318,8645 12330,8636
+Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
+Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 12330,8636
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3439,7 +3440,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 # 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11326
 #: XXX Bebauungsplan VIII-320
-#: last_checked: 2022-10-08
+#: last_checked: 2023-01-15 (mapillary)
 #: next_check: 2023-09-01
 Seegefelder Weg: Verbreiterung der Straße + Anlange von Radspuren geplant	?::projected -7365,15306 -7513,15368 -7736,15460 -7840,15503 -7961,15552 -8066,15595 -8198,15648
 # 
@@ -4497,6 +4498,7 @@ Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9
 #: by: https://az-lichtenrade.de/bauprojekte/umbau-der-bahnhofstrasse/planungsstand/
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/erlaeuterung-umbau-bahnhofstrasse-09-2022.pdf
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnhofstrasse-veraendert-in-den-naechsten-drei-jahren-ihr-gesicht_a357335 (nördlicher Abschnitt des 1. Bauabschnitts voraussichtlich bis Mai 2023 fertig)
+#: by: https://berliner-abendblatt.de/2023/01/16/bahnhofstrasse-lichtenrade-umbau-laeuft-nach-plan/
 #: last_checked: 2022-10-24
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2023-05-31
@@ -4771,7 +4773,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (noch nicht terminiert)
-#: last_checked: 2022-09-30 (mapillary)
+#: last_checked: 2023-01-15 (mapillary)
 #: check_frequency: 180d
 Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907 8430,15901 8271,15734 8176,15635 8156,15614 8049,15470
 # 
@@ -5039,7 +5041,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2023-01-03 (mapillary)
+#: last_checked: 2023-01-16
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -6278,7 +6280,7 @@ Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (wenn, dann ab 2021, oder ist die Straße vor Schönholz gemeint?)
 #: source_id: 2147346942 (Kanalarbeiten, bis 4.1.2022) (inaktiv)
 #: source_id: viz2021:13.374359,52.586234,09.03.2021,07:00 (Kanalarbeiten, bis 4.1.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (trotz anhaltender Bauarbeiten <- inaktiv)
-#: last_checked: 2022-12-23 (mapillary)
+#: last_checked: 2023-01-15 (mapillary)
 #: check_frequency: 120d
 Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,20096 8224,19977 8234,19936
 # 
@@ -6548,7 +6550,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: http://www.infravelo.de/projekt/prinzenstrasse/ (3. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2022) (4. Quartal 2022 - 2. Quartal 2023) (Status: in Bau) (4. Quartal 2022 - 4. Quartal 2022) (mittlerweile: "abgeschlossen")
 #: by: https://nitter.cz/BA_Xhain/status/1587337869118607362#m (01.11.20222 - 15.12.2022)
 #: XXX Wird es hier noch Radwegschilder geben?
-#: last_checked: 2022-12-18
+#: last_checked: 2022-12-28 (mapillary)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2023-06-30
 # REMOVED --- #: next_check: 2022-12-15
@@ -7086,17 +7088,7 @@ Grenzallee: Fußgängerampel in Bau	?::inwork 14050,6754 14040,6726 14030,6698
 # REMOVED --- #: next_check: 2022-12-30
 Humboldthafen: Verlängerung der Uferpromenade	?::inwork 8119,13396 8118,13222 8160,13171 8159,13032
 # 
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9523
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236733.php
-#: by: https://berliner-abendblatt.de/2022/08/19/neuer-platz-in-lichtenberg-nach-ukrainischer-stadt-odessa-benannt/
-#: by: https://www.berliner-woche.de/karlshorst/c-bauen/platz-wird-nach-odessa-benannt_a355427
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_41_2765_2832_online.pdf (Benennung; Odesaplatz explizit mit einem "s")
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1280782.php (feierliche Benennung am 16.1.2023)
-#: by: https://berliner-abendblatt.de/2023/01/05/feierliche-benennung-lichtenberg-bekommt-odesaplatz/
-#: last_checked: 2023-01-15 (Straßenschild vorbereitet)
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-01-16
-Odessa-Platz oder Odesaplatz: geplante Benennung	?::projected 18778,8663 18737,8686
+# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9523 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236733.php --- #: by: https://berliner-abendblatt.de/2022/08/19/neuer-platz-in-lichtenberg-nach-ukrainischer-stadt-odessa-benannt/ --- #: by: https://www.berliner-woche.de/karlshorst/c-bauen/platz-wird-nach-odessa-benannt_a355427 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_41_2765_2832_online.pdf (Benennung; Odesaplatz explizit mit einem "s") --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1280782.php (feierliche Benennung am 16.1.2023) --- #: by: https://berliner-abendblatt.de/2023/01/05/feierliche-benennung-lichtenberg-bekommt-odesaplatz/ --- #: last_checked: 2023-01-15 (Straßenschild vorbereitet) --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2023-01-16 --- Odessa-Platz oder Odesaplatz: geplante Benennung	?::projected 18778,8663 18737,8686
 # 
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 für etwa ein Jahr) --- #: by: https://viz.berlin.de/2022/08/treskowallee/ --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/fahrbahn-ein-jahr-lang-gesperrt_a355424 --- #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv) --- #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) --- #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr.; an der Waldowallee Richtung Norden sieht es per Markierung so aus, als ob die Radfahrer vom Gehweg kommen würden, obwohl es keine radfahrer-bezogene Schilder an der vorherigen Kreuzung gab --- #: note: laut rbb gilt die Umleitung für Radfahrer ab Schönower Straße --- aber so eine Straße existiert hier nicht?! --- #: priority: #B --- #: last_checked: 2022-09-18 (teilweise ist der Gehweg für Radfahrer frei) --- #: next_check: 2022-09-23 --- Treskowallee: geplante Bauarbeiten --- wird es Verbote für Radfahrer geben?	?::inwork 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 # 
@@ -7250,7 +7242,7 @@ Wendenschloßstr./Dregerhoffstr.: Fußgängerampel geplant	?::projected 22870,2695 
 #: XXX im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data):
 #: XXX Johannisplatz (PLZ=10117 laut LOR)
 #: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR)
-#: last_checked: 2022-12-11 (osm) vvv
+#: last_checked: 2023-01-15 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-06-30 vvv
 #: osm_watch: way id="941599318" version="5"
@@ -9147,6 +9139,8 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: by: https://berliner-abendblatt.de/2022/12/19/marzahner-knoten-jetzt-kommt-es-zu-verkehrsbeeintraechtigungen/
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/baustart-am-marzahner-verkehrsknoten_a367454
 #: by: https://viz.berlin.de/2023/01/marzahner-knoten/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1283873.php (Gesamtmaßnahme bis 2029)
+#: by: https://berliner-abendblatt.de/2023/01/16/jetzt-gehts-los-umbau-des-verkehrsknotens-marzahn-beginnt/
 #: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022) (inaktiv)
 #: source_id: viz2021:13.539533,52.539819,19.12.2022,07:00 (bis 6.1.2023) (bis 31.12.2026) (bis 6.1.2023) (inaktiv)
 #: source_id: viz2021:13.537085,52.534461,28.11.2022,06:00 (Leitungsarbeiten bis 28.1.2023)

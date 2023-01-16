@@ -17,7 +17,7 @@
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-16
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -59,6 +59,12 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (weitgehend fertig) --- #: next_check_id: HAASE-2019 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019)) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-02 --- Haasestr.: Bauarbeiten, mögliche Behinderungen	q3::inwork 14328,11320 14286,11186
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # REMOVED (fertig) --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G) --- #: last_checked: 2020-08-11 --- #: check_frequency: 14d --- Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
+#
+#: last_checked: 2023-01-16
+#: next_check: 2023-02-10
+#: valid: -20230210
+Seumestr.: Bauarbeiten vor der Kreuzung Wühlischstr., Sperrung der Fahrbahn, Bordsteine	q3::inwork 14254,11377 14305,11514
+# 
 # REMOVED (beendet) --- #: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein? (-> nein) --- #: last_checked: 2020-08-02 --- #: check_frequency: 7d --- # REMOVED --- #: valid: -20200724 --- Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 # REMOVED (keine Einschränkungen mehr) --- #: next_check_id: STRALAUER-2019 --- #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv) --- #: also_indoor: traffic (G) --- #: last_checked: 2020-07-08 --- #: next_check: 2020-07-11 --- #: valid: 20190319-20200717 --- Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
@@ -207,12 +213,23 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: next_check_id: MOLKENMARKT-2021
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279
+# 
+#: next_check_id: MOLKENMARKT-2021
+#: XXX nach Fertigstellung des Molkenmarkts entfernen
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+Grunerstr.: Gehweg	q4 10900,12546 10969,12608 11057,12715
+# 
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 # 
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-01-12 (mapillary)
+#: last_checked: 2023-01-15 (daf)
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
@@ -257,21 +274,14 @@ Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig,
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-20
+#: last_checked: 2023-01-16
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: last_checked: 2022-10-29 --- Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
-# 
-#: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-10-03 vvv
-#: next_check: 2024-06-01 vvv
-(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
-#: next_check ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2022-10-03 vvv --- #: next_check: 2024-06-01 vvv --- (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10803,12283 10830,12279 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # REMOVED (hier gibt's nur noch Fußwege) --- #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022) --- # REMOVED --- #: osm_watch: way id="822127127" version="3" --- #: osm_watch: way id="736448990" version="9" --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-01-01 --- Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 # 
@@ -313,11 +323,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: last_checked: 2023-01-05
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
-#: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2022-12-27
-#: check_frequency: 60d
-(Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
-# 
+# REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-03-30 --- #: check_frequency: 10d --- Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10129,12200 10207,12055
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
@@ -1555,7 +1561,7 @@ Kleine Andreasstr.: Gehweg	q4+ 12211,12128 12279,12113
 #: note: keine Grünanlage, keine Beschilderung
 Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 #: XXX_prog BS Bordstein zur Parochialstr., die andere Seite ist abgesenkt (ansonsten q1 oder sogar besser)
-(Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
+(Molkenmarkt - Parochialstr.): Bordstein	q2 10746,12364 10831,12371
 #: note: von Süden aus explizit für Radfahrer verboten, von Norden aus fehlt so ein Schild
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10662,11863 10672,11870
@@ -4888,11 +4894,11 @@ Südpark): Fußgänger	q2 -3989,12223 -3993,12166 -3931,12056 -3786,11913
 #: XXX_prog BS Bordstein zur KLS, aber ca. 10-20 Meter südwestlich ist eine Bordsteinabsenkung
 (Rosenstr. - Karl-Liebknecht-Str.): Fußgänger	q2 10476,12829 10525,12789
 Panoramastr.: Fußgänger	q2 10801,12901 10739,12844
-Spandauer Str. [Gehweg]: Touristen	q4 10584,12507 10626,12455 10665,12413 10723,12346
-Poststr.: Touristen	q3 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10659,12259
+Spandauer Str. [Gehweg]: Touristen	q4 10584,12507 10626,12455 10665,12413 10714,12355
+Poststr.: Touristen	q3 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10662,12255
 Nikolaikirchplatz: Touristen	q3 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
 Propststr.: Touristen	q3 10492,12289 10553,12333 10611,12378 10639,12394 10665,12413
-Eiergasse: Touristen	q3 10671,12356 10700,12315
+Eiergasse: Touristen	q3 10671,12356 10703,12313
 Am Nußbaum: Touristen	q3 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Touristen	q3 10597,12405 10536,12355
 # REMOVED --- Kleine Gertraudenstr.: Fußgänger	q1 10332,11929 10364,11896 10391,11898

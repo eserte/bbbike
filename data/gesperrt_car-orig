@@ -181,7 +181,7 @@ Gustav-Freytag-Str. (Grunewald)	1 834,8273 815,8283 748,8456 765,8481
 Schumannstr.	1 8701,13058 8957,13134
 Albrechtstr. (Mitte)	1 8957,13134 8997,13037 9042,12931 9102,12790
 Charitéstr.	1 8693,12951 8676,12976 8632,13037
-Spandauer Str. (Mitte)	3nocross 10738,12364 10673,12434 10644,12469 10601,12521
+Spandauer Str. (Mitte)	3nocross 10710,12377 10685,12422 10644,12469 10601,12521
 Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759
 Paulstr.	3nocross 7051,12426 7077,12575 7085,12610
@@ -419,7 +419,7 @@ Rosenthaler Weg: Straßenbahntrasse	3nocross 11279,22316 11383,22369 11484,22406 
 Delbrückstr.	1 12743,6645 12470,6586
 Emser Str.	1 13051,7157 12872,7134
 Stuthirtenweg: Gitter	3 * 13542,1268 *
-Grunerstr.: Mittelstreifen	3nocross 10738,12364 10804,12461 10887,12570 10954,12635
+# REMOVED --- Grunerstr.: Mittelstreifen	3nocross 10697,12303 10746,12364 10804,12461 10838,12496 10848,12558 10954,12635
 Bayernring	1 8616,8605 8454,8574 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13424,1290 -13422,1383 -13420,1478 -13418,1576 -13418,1668
 Ruhlebener Str.: Mittelstreifen	3nocross -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2725,13287
@@ -1677,4 +1677,26 @@ Krumme Str.: Poller	3 * 3983,11289 *
 Kaulsdorfer Str.	1 22534,6249 22325,6385
 # 
 Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,6431
+# 
+#: next_check_id: MOLKENMARKT-2021
+#: by: https://viz.berlin.de/2021/08/umbau-molkenmarkt/ (Umstellung ab 1.9.2021)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120689.php (Fertigstellung: Mitte 2024)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
+#: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
+#: by: https://molkenmarkt.berlin.de/webcam/ (Webcam)
+#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023) (bis 30.6.2023) (bis 15.1.2023) (inaktiv)
+#: source_id: viz2021:13.409109,52.516928,14.01.2023,06:00 (bis 15.01.2023) (inaktiv)
+#: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022) (bis 30.06.2023)
+#: source_id: viz2021:13.409118,52.51693,15.01.2023,18:00 (bis 30.06.2023)
+#: note: laut rbb nur bis 31.08.2022
+# REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
+#: last_checked: 2022-12-20 vvv
+#: next_check: 2024-06-01 vvv
+Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303
+# REMOVED --- (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285
+#: next_check ^^^
+#: last_checked ^^^
+# 
+Gustav-Böß-Str./Grunerstr./Jüdenstr.	3nocross 10685,12422 10783,12502 10848,12558
+Grunerstr./Klosterstr.	3nocross 10848,12558 10872,12579 10953,12638
 # 

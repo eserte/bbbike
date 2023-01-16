@@ -2613,7 +2613,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-10 (mapillary)
+#: last_checked: 2023-01-16
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
@@ -3721,7 +3721,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2023-01-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
-#: also_indoor: traffic (G[unvollständig],B) vvv
+#: also_indoor: traffic (ex-G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="423009430" version="17" ---	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
@@ -4008,7 +4008,7 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
        {
          'data' => '#: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
-#: last_checked: 2023-01-03 (mapillary)
+#: last_checked: 2023-01-16
 #: check_frequency: 60d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -4280,7 +4280,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-16
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -4523,7 +4523,7 @@ Linienstr.	q4::inwork 9225,13389 9312,13388
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2022-12-30 (mapillary) vvv
+#: last_checked: 2023-01-15 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -4774,10 +4774,12 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1688130000
        },
        {
-         'data' => '#: last_checked: 2023-01-04 vvv
+         'data' => '#: also_indoor: traffic (G,B) vvv
+#: last_checked: 2023-01-04 vvv
 	q4::inwork; 13946,7918 13891,7961
 	q3::inwork; 13891,7961 13946,7918
 #: last_checked ^^^
+#: also_indoor ^^^
 ',
          'from' => undef,
          'id' => 3674,
@@ -5008,7 +5010,8 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => undef
        },
        {
-         'data' => '#: priority: #C
+         'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
+#: priority: #C
 #: last_checked: 2023-01-05
 	2::inwork 10352,12627 10344,12641 10309,12700
 ',

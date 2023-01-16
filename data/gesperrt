@@ -524,9 +524,9 @@ Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
 Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10887,12570 10804,12461
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10868,12572 10953,12638 11055,12717 11105,12764
-Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10868,12572 10804,12461
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10872,12579
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 10872,12579 10953,12638 11013,12684 11055,12717 11105,12764
+Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 11013,12684 10953,12638 10872,12579
 Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
 Badstr. (Richtungsfahrbahn)	1::igndisp 8659,16327 8543,16364 8516,16393 8486,16425
 Badstr. (Richtungsfahrbahn)	1::igndisp 8486,16425 8518,16394 8544,16365 8659,16327
@@ -700,7 +700,6 @@ Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
-Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10868,12572
 Grumbkowstr.	1 11555,20051 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
 (Weg)	2 14432,20188 14650,19956
@@ -2044,16 +2043,16 @@ Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13457,8069 13459,807
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13457,8069
 Mittelstreifen	3nocross::ignrte 13011,8416 13038,8394 13102,8343
-unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10675,12280 10659,12259 10625,12206 10574,12131
-Mühlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3::igndisp 10625,12206 10659,12259 10629,12293
-Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10629,12293 10659,12259 10675,12280
+unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10662,12255 10646,12234 10625,12206 10574,12131
+Mühlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3::igndisp 10646,12234 10662,12255 10629,12293
+Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10629,12293 10662,12255 10697,12303
 Mühlendamm -> Rolandufer: unbequemes Passieren des Mittelstreifens	3::igndisp 10574,12131 10625,12206 10583,12206
-Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10583,12206 10625,12206 10659,12259
-unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10675,12280 10700,12315 10723,12346 10738,12364
-Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10675,12280 10700,12315 10671,12356
-Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10700,12315 10723,12346
-Mühlendamm -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10700,12315 10723,12346 10665,12413
-Spandauer Str. (Mitte) [Gehweg] -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10723,12346 10738,12364
+Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10583,12206 10625,12206 10646,12234
+unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10703,12313 10714,12355 10710,12377
+Molkenmarkt [Spandauer Str. -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
+Eiergasse -> Mühlendamm]: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10714,12355
+Molkenmarkt [Spandauer Str. -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10714,12355 10665,12413
+Spandauer Str. (Mitte) [Gehweg] -> Mühlendamm]: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10714,12355 10710,12377
 unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5341,10756 5475,10808
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5341,10756 5313,10420
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5313,10420 5341,10756 5215,10711
@@ -3324,15 +3323,16 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
-Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
+Grunerstr.	1::inwork 10848,12558 10838,12496 10807,12451 10746,12364 10697,12303
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 (Eiselenweg - Uferweg)	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
-(Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
-Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
-(Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
+(Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
+Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
+Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
+Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10969,12608 10954,12635
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516

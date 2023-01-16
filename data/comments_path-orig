@@ -136,7 +136,7 @@ Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14280,12223 1
 #: XXX_prog: RL:ja, GPS:nein
 #: XXX_prog: eigentlich nicht notwendig, da als RW8/RW9 bereits gekennzeichnet. Allerdings wird das im CGI noch gar nicht visualisiert. Vielleicht in der der stilisierten Straßenführung auf der *rechten* (falschen) Seite unterbringen?
 Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8322,11715 8456,11763 8489,11782 8571,11846
-# REMOVED (diese Angaben sind nach temp-blockings gewandert) --- #: XXX_indoor: hmm, folgende zwei Datensätze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben. --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10772,12515 10803,12470 10805,12468 10831,12371 --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10831,12371 10805,12468 10803,12470 10772,12515
+# REMOVED (diese Angaben sind nach temp-blockings gewandert) --- #: XXX_indoor: hmm, folgende zwei Datensätze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben. --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10783,12502 10803,12470 10805,12468 10831,12371 --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10831,12371 10805,12468 10803,12470 10783,12502
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat für comments_misc)
 #: note: und nicht der Asphaltstraße
 dem Schotterweg folgen	CP; 24210,37562 24186,37723 24208,37830
@@ -707,13 +707,7 @@ Martin-Hoffmann-Str. - An den Treptowers: zum Linksabbiegen die linke Fußgängera
 # 
 Ernst-Ruska-Ufer - Albert-Einstein-Str.: unbequemes Überqueren des Ernst-Ruska-Ufers, ggfs. bereits an der Ampel Wegedornstr. auf die linke Seite wechseln	PI; 18929,2454 19091,2443 19094,2495
 # 
-#: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-11-15 vvv
-#: next_check: 2024-06-01 vvv
-Jüdenstr.: zum Überqueren der Grunerstr. Fußgängerampel rechts benutzen	CP; 10831,12371 10804,12461 10772,12515
-Grunerstr. - Jüdenstr.: zum Überqueren der Grunerstr. Fußgängerampel benutzen	CP; 10738,12364 10804,12461 10772,12515
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED (keine Ampel mehr, keine Überquerungsmöglichkeit) --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2022-11-15 vvv --- #: next_check: 2024-06-01 vvv --- Jüdenstr.: zum Überqueren der Grunerstr. Fußgängerampel rechts benutzen	CP; 10831,12371 10807,12451 10783,12502 --- Grunerstr. - Jüdenstr.: zum Überqueren der Grunerstr. Fußgängerampel benutzen	CP; 10697,12303 10746,12364 10807,12451 10783,12502 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 Kattunsteig: rechts halten, evtl. durch parkende Autos hindurch, dann den relativ engen Waldpfad nehmen	CP2; 19765,4876 19710,4760
 # 

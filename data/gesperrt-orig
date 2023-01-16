@@ -224,7 +224,7 @@ Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
-# REMOVED --- Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
+# REMOVED --- Molkenmarkt - zur Stralauer Str.	1 10772,12288 10736,12285
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
@@ -833,12 +833,14 @@ Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 #: note ^^^
 #: note: Mittelstreifen mit teilweise dichter Beparkung, sehr breite Straße, Straßentunnel vvv
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10887,12570 10804,12461
-# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10738,12364
-# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10804,12461
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10868,12572 10953,12638 11055,12717 11105,12764
-Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10868,12572 10804,12461
-# REMOVED --- Grunerstr. (Mittelstreifen)	3nocross::ignrte 10804,12461 10738,12364
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10872,12579
+# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10807,12451 10746,12364 10697,12303
+# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10697,12303 10746,12364 10807,12451
+# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10807,12451 10834,12501 10848,12558
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 10872,12579 10953,12638 11013,12684 11055,12717 11105,12764
+Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 11013,12684 10953,12638 10872,12579
+# REMOVED --- Grunerstr. (Mittelstreifen)	3nocross::ignrte 10848,12558 10834,12501 10807,12451
+# REMOVED --- Grunerstr. (Mittelstreifen)	3nocross::ignrte 10807,12451 10746,12364 10697,12303
 Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
 #: note ^^^
 #: note: Gitter auf Mittelstreifen vvv
@@ -1099,7 +1101,7 @@ Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
-Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10868,12572
+# REMOVED --- Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10848,12558
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
 Grumbkowstr.	1 11555,20051 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
@@ -2160,8 +2162,8 @@ Sonnenallee: Mittelstreifen	3nocross 12152,9015 12078,9055 12012,9092
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12670,8679 12736,8629 12765,8605
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Sonnenallee: Mittelstreifen	3nocross 13011,8416 13038,8394 13102,8343
-Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
-Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
+Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10662,12255 10646,12234 10625,12206 10574,12131
+Molkenmarkt: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10703,12313 10714,12355 10710,12377
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7024,15810
@@ -3718,7 +3720,7 @@ Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
 #: by: https://berliner-abendblatt.de/2022/12/16/umbau-der-st-hedwigs-kathedrale-im-zeitplan-aber-teurer/
-#: last_checked: 2022-12-14
+#: last_checked: 2023-01-16 (daf)
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4084,7 +4086,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
-# REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
+# REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10969,12608 10954,12635
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php (bis Herbst 2021) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung --- #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1097688.php --- #: also_indoor: traffic (G,H) vvv --- #: source_id: 2147345254 (bis 18.06.2021) vvv --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- #: priority: #A vvv --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901 --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
@@ -4099,8 +4101,9 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 # REMOVED (war vermutlich nur kurzzeitig) --- #: last_checked: 2022-06-17 --- #: check_frequency: 14d --- Gleisdreieckpark: Nord-Süd-Verbindung wegen S21-Vorbereitungsarbeiten gesperrt	2::inwork 8276,10079 8264,10192
 # REMOVED (beendet, etwas besser) --- #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität des Wegs danach besser sein? --- #: last_checked: 2019-12-29 --- #: check_frequency: 21d --- (Stresemannstr. - Wilhelmstr.): Bauarbeiten, komplett gesperrt	2::inwork 9215,10607 9368,10641
-# REMOVED --- #: last_checked: 2021-07-26 --- #: check_frequency: 60d --- Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10804,12461 10804,12461
+# REMOVED --- #: last_checked: 2021-07-26 --- #: check_frequency: 60d --- Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10807,12451 10807,12451
 # 
+#: next_check_id: MOLKENMARKT-2021
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9747
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: by: https://viz.berlin.de/2022/07/sperrung-tunnel-grunerstrasse/ (Inbetriebnahme der neuen Verkehrsführung Richtung Südwesten im Spätherbst 2022)
@@ -4113,18 +4116,18 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/sen/uvk/_assets/presse/verkehr/230111_pm-molkenmarkt-neue-verkehrsfuehrung2.jpg
 #: by: https://berliner-abendblatt.de/2023/01/14/bauarbeiten-in-berlin-strassensperrungen-am-wochenende/
 #: by: https://berliner-abendblatt.de/2023/01/14/vollsperrung-am-molkenmarkt-freie-fahrt-ab-sonntagabend/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/grunerstasse-fuehrt-jetzt-am-roten-rathaus-vorbei_a369410
 #: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
-#: XXX bis wann geht die Sperrung?
-#: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
+#: XXX Straßenzug wird entfernt
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
 #: priority: #A
-#: last_checked: 2023-01-05
-#: check_frequency: 30d
-#: next_check: 2023-01-16
-Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+# REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
+Grunerstr.	1::inwork 10848,12558 10838,12496 10807,12451 10746,12364 10697,12303
 # 
 # REMOVED (wieder temp blockings) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann --- #: last_checked: 2020-03-10 --- DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php --- #: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern --- #: XXX laut osm fertiggestellt --- auch prüfen, ob das hier tatsächlich der übriggebliebene Weg ist --- #: last_checked: 2019-11-17 --- #: next_check: 2019-12-13 --- (Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
@@ -4176,6 +4179,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # 
 # REMOVED (hier mittlerweile offen, siehe mapillary) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21413,5180 21345,5157
 # 
+#: next_check_id: MOLKENMARKT-2021
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: https://www.tagesspiegel.de/berlin/molkenmarkt-umbau-der-berliner-mitte-beginnt/23858326.html
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
@@ -4190,28 +4194,25 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-16
 #: check_frequency: 90d
-(Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
+(Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: by: https://viz.berlin.de/2021/08/umbau-molkenmarkt/ (Umstellung ab 1.9.2021)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120689.php (Fertigstellung: Mitte 2024)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
-#: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
-#: by: https://molkenmarkt.berlin.de/webcam/ (Webcam)
-#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023) (bis 30.6.2023) (bis 15.1.2023) (inaktiv)
-#: source_id: viz2021:13.409109,52.516928,14.01.2023,06:00 (bis 15.01.2023) (inaktiv)
-#: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022) (bis 30.06.2023)
-#: source_id: viz2021:13.409118,52.51693,15.01.2023,18:00 (bis 30.06.2023)
-#: note: laut rbb nur bis 31.08.2022
-# REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2022-12-20 vvv
-#: next_check: 2024-06-01 vvv
-Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
-(Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
-#: next_check ^^^
-#: last_checked ^^^
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
+# 
+#: next_check_id: MOLKENMARKT-2021
+#: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
+# 
+#: next_check_id: MOLKENMARKT-2021
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10969,12608 10954,12635
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 

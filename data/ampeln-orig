@@ -118,7 +118,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) vvv
-#: last_checked: 2022-09-30 (mapillary) vvv
+#: last_checked: 2023-01-15 (mapillary) vvv
 #: next_check: 2023-03-31 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
@@ -128,11 +128,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: last_checked ^^^
 #: source_id ^^^
 # 
-#: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-01-05
-#: next_check: 2024-06-01
-Grunerstr./Jüdenstr.	X::inwork 10804,12461
-# 
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2023-01-05 --- #: next_check: 2024-06-01 --- Grunerstr./Jüdenstr.	X::inwork 10807,12451
 # REMOVED --- #: next_check_id: BERLINERALLEE-2021 --- #: next_check_id: BERLINERALLEE-2022 --- #: XXX evtl. bis zum Ende der jetzigen Bauphase, oder bis zum Ende der Gesamtbaumaßname? --- #: last_checked: 2022-06-10 --- #: next_check: 2022-07-25 --- #: valid: -20220725 --- Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # REMOVED --- #: next_check_id: GAERTNER-2021 --- #: last_checked: 2021-09-02 --- # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775 --- Grünberger Str.	F::inwork 14272,11775
 # REMOVED --- #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00 --- #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt --- #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv --- #: last_checked: 2021-08-09 vvv --- #: valid: -20210903 vvv --- Hauffstr.: Gegenverkehrsregelung	X::inwork 15458,11306 --- Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork 15477,11338 --- #: valid ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
@@ -603,7 +599,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9358,12351
 	X 10213,11728
 	X 10512,12039
-	X 10738,12364
+	X 10685,12422
+	X 10697,12303
 	X 11347,12223
 #: note: eventuell im gleichen Zyklus wie die benachbarte Ampel?
 	F 11388,12202
@@ -1041,7 +1038,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4485,10307
 	X 4478,10218
 	X 9581,12588
-	X 10946,12241
+	X 10951,12249
 #: off: night (seen 2018-02-01 00:20, 2022-06-30 23:15)
 	X 12295,12197
 #: off: night (seen 2015-01-29 00:45, 2018-02-01 00:20, 2022-04-29 23:55, 2022-06-30 23:15)
@@ -3666,6 +3663,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: mapillary
 #: note: Anforderungsampel
 	F 31967,3238
+#: next_check_id: MOLKENMARKT-2021
+#: XXX zurzeit erstreckt sich die Ampelanlage bis zur Einmündung der alten Grunerstr.; nach den Bauarbeiten bleibt vermutlich nur eine Fußgängerampel
+#: note: gilt nicht für Radfahrer Richtung Südwesten
+#: last_checked: 2023-01-16
+#: check_frequency: 90d
+	X 10872,12579
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554

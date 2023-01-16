@@ -5480,7 +5480,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-	1::inwork 11329,12497 11209,12430 11092,12375 11084,12395 11059,12450 10954,12635
+	1::inwork 11329,12497 11209,12430 11092,12375 11084,12395 11059,12450 10969,12608 10954,12635
 	1::inwork 10954,12635 11057,12715 11105,12764 11134,12793
 EOF
      },
@@ -6603,7 +6603,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003844',
        data  => <<EOF,
-	2::temp 10738,12364 10673,12434 10644,12469 10601,12521 10431,12709
+	2::temp 10710,12377 10685,12422 10644,12469 10601,12521 10431,12709
 EOF
      },
      { from  => 1161542089, # 2006-10-22 20:34
@@ -21509,8 +21509,8 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
 #: XXX_prog: tempex-Ausdruck?
-	2::temp::igndisp 10804,12461
-# REMOVED --- 10804,12461
+	2::temp::igndisp 10807,12451
+# REMOVED --- 10807,12451
 EOF
      },
      { from  => 1351638000, # 2012-10-31 00:00
@@ -22814,7 +22814,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020674',
        data  => <<EOF,
-	q4::inwork; 10738,12364 10804,12291
+	q4::inwork; 10697,12303 10772,12288
 EOF
      },
      { from  => 1384124400, # 2013-11-11 00:00
@@ -24982,7 +24982,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.341629.php',
        data  => <<EOF,
 #: note: außerdem noch Bauarbeiten zwischen Kloster- und Littenstr., aber hier wird nicht voll gesperrt werden
-	q4::inwork 10738,12364 10804,12291 10830,12279
+	q4::inwork 10697,12303 10772,12288 10830,12279
 EOF
      },
      { from  => $isodate2epoch->("2015-05-26 07:00:00"),
@@ -26133,7 +26133,7 @@ EOF
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
 # REMOVED --- #: last_checked: 2018-06-07 vvv
 # REMOVED --- #: check_frequency: 1d vvv
-	q4::inwork 10954,12635 11059,12450
+	q4::inwork 10954,12635 10969,12608 11059,12450
 	q4::inwork 11059,12450 11084,12395 11092,12375
 	q4::inwork 11139,12243 11092,12375
 	2::inwork 11032,12439 11059,12450
@@ -26412,7 +26412,7 @@ EOF
 	2::temp 9919,12613 9953,12533 9846,12516
 	2::temp 9953,12533 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
 	2::temp 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587
-	2::temp 10704,12595 10601,12521 10644,12469 10673,12434 10772,12515 10704,12595
+	2::temp 10704,12595 10601,12521 10644,12469 10685,12422 10783,12502 10704,12595
 	2::temp 10094,12635 10176,12506
 	3 9877,12293 9873,12315 9858,12410 9780,12401
 	3 10431,12709 10601,12521 10584,12507
@@ -28755,7 +28755,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/tag-der-deutschen-einheit-viele-sperrungen-in-mitte-und-tiergarten?redirect=https%3A%2F%2Fviz.berlin.de%2Fhome%3Fp_p_id%3D101_INSTANCE_ZQE04eyJSiIC%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D2',
        data  => <<EOF,
-	2::temp 10243,12546 10300,12587 10352,12627 10431,12709 10601,12521 10644,12469 10673,12434 10738,12364
+	2::temp 10243,12546 10300,12587 10352,12627 10431,12709 10601,12521 10644,12469 10685,12422 10710,12377
 	2::temp 10308,12859 10360,12793 10387,12760 10431,12709 10515,12780 10525,12789 10695,12933
 	2::temp 10176,12506 10243,12546
 	2::temp 10094,12635 10176,12506
@@ -29311,7 +29311,7 @@ EOF
 #: XXX Wann können Radfahrer wieder durchkommen?
 #: source_id: 2147343931 (bis Ende Mai 2019)
 #: last_checked: 2019-05-28
-	2::inwork 10772,12515 10673,12434
+	2::inwork 10783,12502 10685,12422
 EOF
      },
      { from  => undef, # 
@@ -30569,7 +30569,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: XXX bis wann geht die Sperrung? --- #: osm_watch: way id="729492933" version="2" --- #: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun) --- #: check_frequency: 30d
-	2::inwork 10673,12434 10772,12515
+	2::inwork 10685,12422 10783,12502
 EOF
      },
      { from  => undef,
@@ -30696,7 +30696,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-10 (mapillary)
+#: last_checked: 2023-01-16
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11209,12430
@@ -33796,8 +33796,8 @@ EOF
        source_id => 'viz2021:13.409118,52.51693,01.09.2021,06:00',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
-	2::inwork 10804,12291 10738,12364
-	2::inwork 10675,12280 10736,12285 10772,12288
+	2::inwork 10772,12288 10697,12303
+# REMOVED ---	2::inwork 10736,12285 10772,12288
 EOF
      },
      { from  => 1630476021, # 2021-09-01 08:00
@@ -35009,7 +35009,7 @@ EOF
 #: last_checked: 2023-01-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
-#: also_indoor: traffic (G[unvollständig],B) vvv
+#: also_indoor: traffic (ex-G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="423009430" version="17" ---	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
@@ -35617,7 +35617,7 @@ EOF
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
-#: last_checked: 2023-01-03 (mapillary)
+#: last_checked: 2023-01-16
 #: check_frequency: 60d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -36351,7 +36351,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-16
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36760,7 +36760,7 @@ EOF
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2022-12-30 (mapillary) vvv
+#: last_checked: 2023-01-15 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -37122,10 +37122,12 @@ EOF
        text  => 'Weserstr.: Fahrbahn vor der Ederstr. gesperrt, Engstellen auf dem Bürgersteig, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic (G,B) vvv
 #: last_checked: 2023-01-04 vvv
 	q4::inwork; 13946,7918 13891,7961
 	q3::inwork; 13891,7961 13946,7918
 #: last_checked ^^^
+#: also_indoor ^^^
 EOF
      },
      { from  => undef, # 
@@ -37477,6 +37479,7 @@ EOF
        text  => 'Heiligengeistgasse: Sperrung nach dem Platzen des Aquadoms, Dauer der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: priority: #C
 #: last_checked: 2023-01-05
 	2::inwork 10352,12627 10344,12641 10309,12700
