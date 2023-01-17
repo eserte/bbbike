@@ -2616,7 +2616,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: last_checked: 2023-01-16
 #: check_frequency: 30d
 #: next_check: 2023-05-31
-	q4::inwork; 11329,12497 11209,12430
+	q4::inwork; 11329,12497 11202,12426
 ',
          'from' => undef,
          'id' => 3189,
@@ -3500,9 +3500,8 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
          'data' => '#: also_indoor: traffic (B,G)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: XXX evtl. mittlerweile bis fast Britzer Damm ausgeweitet?
-#: last_checked: 2022-12-22
-#: check_frequency: 14d
+#: last_checked: 2023-01-17 (Asphaltierungsarbeiten)
+#: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
 Jahnstr.	q3::inwork 12833,6127 13027,6168 13227,6209
@@ -3511,7 +3510,7 @@ Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 ',
          'from' => undef,
          'id' => 3496,
-         'text' => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Dezember 2022)',
+         'text' => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2022)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3718,8 +3717,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2023-01-04 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2023-01-17 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (ex-G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
@@ -3810,7 +3809,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-23
+#: last_checked: 2023-01-17
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -4119,17 +4118,16 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
-#: note: bei rbb sogar bis 28.2.2023
-#: next_check: 2023-01-27
+#: next_check: 2023-02-28
 # REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
 	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
 ',
          'from' => 1658811600,
          'id' => 3595,
          'source_id' => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
-         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 27.01.2023 17:00',
+         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 28.02.2023 17:00',
          'type' => 'handicap',
-         'until' => 1674835200
+         'until' => 1677600000
        },
        undef,
        {
@@ -4208,8 +4206,8 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        },
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: osm_watch: way id="1096678426" version="3"
-#: last_checked: 2022-11-11
+#: osm_watch: way id="1096678426" version="4"
+#: last_checked: 2023-01-16 (osm)
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 ',
@@ -4317,7 +4315,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-12-27
+#: last_checked: 2023-01-16 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -4455,7 +4453,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-01-07 vvv
+#: last_checked: 2023-01-16 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-31 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -4790,7 +4788,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-01-04
+#: last_checked: 2023-01-17
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -5092,6 +5090,16 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Pietschkerstr.: Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 20113,3408 20166,3344
+',
+         'from' => 1673984980,
+         'id' => 3711,
+         'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1615325171530846214#m',
+         'text' => 'Anna-Seghers-Str.: Bauarbeiten nördlich der Radickestr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte April 2023',
+         'type' => 'handicap',
+         'until' => 1681595999
        }
      
 );

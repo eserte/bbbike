@@ -493,7 +493,7 @@ Rückerstr.: Asphalt	Q0 10597,13647 10535,13509
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,14316 11418,14290 11498,14234
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11498,14234 11713,14118 11946,13993
 Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13470,12990
-Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15104,12216
+Pettenkoferstr Str.: Asphalt	Q0 15110,12107 15104,12216
 Pettenkoferstr Str.: Asphalt, einige Aufpflasterungen	Q0 15104,12216 15058,12329 15046,12355 15005,12443 14996,12462 14935,12596 14858,12765 14836,12826
 Gryphiusstr.: Kopfsteinpflaster	Q2 14369,11287 14395,11356 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14626,11869 14675,11964
@@ -1112,7 +1112,7 @@ Am Volkspark: Parkweg	Q1 5611,8252 5438,8402 5433,8407
 Am Volkspark: mäßiges Kopfsteinpflaster mit großen Ritzen	Q2 5730,8207 5651,8218
 Am Volkspark: Kopfsteinpflaster	Q2 5611,8252 5651,8218
 Am Volkspark: Parkweg	Q1 5730,8207 5925,8219
-Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11240,12368 11209,12430 11156,12581 11057,12715
+Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11240,12368 11202,12426 11138,12604 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080 7252,6058 7227,6058
 Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18037,8420 18072,8470 18151,8589 18272,8764
@@ -1672,9 +1672,9 @@ Paul-Löbe-Allee: Asphalt	Q0 7851,12590 7945,12592 8122,12603
 (Tiergarten, entlang des Sees): Parkweg	Q1 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
 Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13650,8320 13575,8378 13469,8462
 Werrastr.: Asphalt mit einigen Schäden	Q1 13697,8279 13650,8320
-Rungestr.: Kopfsteinpflaster	Q2 11197,11882 11291,11876 11380,11863 11507,11860
-Am Köllnischen Park: Asphalt	Q0; 11197,11882 11155,11750
-Am Köllnischen Park: Kopfsteinpflaster	Q2; 11155,11750 11197,11882
+Rungestr.: Kopfsteinpflaster	Q2 11185,11883 11291,11876 11380,11863 11507,11860
+Am Köllnischen Park: Asphalt	Q0; 11185,11883 11155,11750
+Am Köllnischen Park: Kopfsteinpflaster	Q2; 11155,11750 11185,11883
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11718,7103 11700,7197
 (Netzestr. - Kirchhofweg): wassergebundene Decke	Q1 11700,7197 11687,7284
@@ -1704,12 +1704,12 @@ Fürstenwalder Str.: Kopfsteinpflaster, OK	Q1 12242,12594 12243,12604
 Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
 Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton mit Schäden	Q1 11596,12668 11287,12814
-Jacobystr.: Beton mit Schäden	Q1 11287,12814 11207,12706
-Parochialstr.: Asphalt	Q0 10957,12401 11040,12415
+Jacobystr.: Beton mit Schäden	Q1 11287,12814 11211,12711
+Parochialstr.: Asphalt	Q0 10957,12401 11040,12420
 Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0 10831,12371 10957,12401
-Waisenstr.: Asphalt	Q1 11017,12487 11032,12439
-Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11032,12439 11040,12415 11049,12386 11094,12243
-(Waisenstr. - Littenstr.): schlechtes Kopfsteinpflaster	Q3 11032,12439 11059,12450
+Waisenstr.: Asphalt	Q1 11017,12487 11033,12439
+Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11033,12439 11040,12420 11053,12387 11094,12243
+(Waisenstr. - Littenstr.): schlechtes Kopfsteinpflaster	Q3 11033,12439 11065,12452
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7524,9093 7555,8978
 (Crellestr. - Julius-Leber-Brücke): Holzbohlen	Q1 7555,8978 7509,8929
@@ -3318,7 +3318,7 @@ Berkenbrücker Steig: schlechtes Kopfsteinpflaster	Q3 15647,14693 15544,14714
 Berkenbrücker Steig: unebenes kleinteiliges Kopfsteinpflaster	Q2 15544,14714 15383,14759
 (Landsberger Allee - Anton-Saefkow-Platz): Gehwegplatten	Q1 14871,14087 14903,14003
 Sandinostr.: Asphalt	Q0 15706,14752 15580,14880
-(Waisenstr. - Littenstr.): Gehwegplatten	Q1 11049,12386 11084,12395
+(Waisenstr. - Littenstr.): Gehwegplatten	Q1 11053,12387 11084,12395
 Max-Brunnow-Str.: Beton	Q0 14089,13509 14170,13496 14186,13465 14169,13415 14186,13393 14318,13352
 Max-Brunnow-Str.: Beton	Q0 14307,13318 14318,13352 14345,13443
 Max-Brunnow-Str.: Beton	Q0 14328,13449 14345,13443 14474,13402

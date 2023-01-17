@@ -529,7 +529,7 @@ Sa, 14.11.1998
 10020,11262   Lindenstr/Kochstr                  S->N   70  14:58:01
 10512,12039   Gertraudenstr/Fischerinsel         SW->NO 70  15:01:41  15:02:01
 # REMOVED (Komplettumbau) --- 10710,12377   Molkenmarkt                        SW->NO 70  15:03:35  15:03:55
-11134,12793   Grunerstr/Alexanderstr             SW->NO     15:06:57  15:06:07
+11141,12806   Grunerstr/Alexanderstr             SW->NO     15:06:57  15:06:07
 11226,12945   Grunerstr/Karl-Marx-Allee          S->N       15:08:02  15:06:55
 11226,12945   Grunerstr/Karl-Marx-Allee          S->W       15:08:08
 10923,13156   Alexanderplatz/Karl-Liebknecht-Str O->SW      15:09:04
@@ -561,7 +561,7 @@ Sa, 14.11.1998
 14208,12235   Frankfurter A/Niederbarnims (Rad)  W->O                 19:09:32
 14709,12156   Frankfurter Allee/Jungstr (Rad)    W->O       19:11:44  19:11:08
 14709,12156   Frankfurter Allee/Jungstr (Auto)   W->O       19:11:46  19:11:12
-15117,12106   Frankfurter Allee/Jessnerstr (Rad) W->O       19:13:03
+15110,12107   Frankfurter Allee/Jessnerstr (Rad) W->O       19:13:03
 15863,11992   Frankfurter Allee/Schulze-Boysen   W->O       19:15:01
 16214,11935   Frankfurter Allee/Alfredstr.       W->O       19:17:08  19:16:32
 
@@ -1628,13 +1628,13 @@ Do, 18.02.2010
 #WPT: 104	18-FEB-10 15:56:52	52.51325	13.477	buoy_white_red
 15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 15:56:52
 #WPT: 105	18-FEB-10 15:57:54	52.5134722222222	13.4765833333333	buoy_white_red
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 15:57:54
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W                 15:57:54
 #WPT: 106	18-FEB-10 15:58:27	52.5135833333333	13.4766666666667	buoy_white_green
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       15:58:27
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W       15:58:27
 #WPT: 107	18-FEB-10 15:59:34	52.51375	13.4756666666667	buoy_white_red
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 15:59:34
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W                 15:59:34
 #WPT: 108	18-FEB-10 16:00:07	52.51375	13.4756666666667	buoy_white_green
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       16:00:07
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W       16:00:07
 #WPT: 109	18-FEB-10 16:27:44	52.5137777777778	13.4747777777778	buoy_white_red
 15361,12071   Frankfurter Allee/Möllendorffstr.  W->O                 16:27:44
 #WPT: 110	18-FEB-10 16:28:45	52.5136666666667	13.4751111111111	buoy_white_green
@@ -2097,13 +2097,13 @@ Do, 25.02.2010
 #WPT: 303	25-FEB-10 15:55:20	52.5133055555556	13.4769722222222	buoy_white_red
 15361,12071   Frankfurter Allee/Möllendorffstr.  S->N                 15:55:20
 #WPT: 304	25-FEB-10 16:19:34	52.5138611111111	13.4759444444444	buoy_white_red
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 16:19:34
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W                 16:19:34
 #WPT: 305	25-FEB-10 16:20:07	52.5136666666667	13.4748333333333	buoy_white_green
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       16:20:07
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W       16:20:07
 #WPT: 306	25-FEB-10 16:23:26	52.5135277777778	13.4745555555556	buoy_white_green
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W       16:23:26
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W       16:23:26
 #WPT: 307	25-FEB-10 16:24:34	52.5137222222222	13.4736388888889	buoy_white_red
-15117,12106   Frankfurter Allee/Pettenkoferstr.  O->W                 16:24:34
+15110,12107   Frankfurter Allee/Pettenkoferstr.  O->W                 16:24:34
 #WPT: 308	25-FEB-10 16:25:11	52.5135277777778	13.4731666666667	buoy_white_red
 15077,11910   Scharnweberstr./Jessnerstr.        N->S                 16:25:11
 #WPT: 309	25-FEB-10 16:26:02	52.5128888888889	13.4729444444444	buoy_white_green

@@ -59,8 +59,8 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (weitgehend fertig) --- #: next_check_id: HAASE-2019 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019)) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-02 --- Haasestr.: Bauarbeiten, mögliche Behinderungen	q3::inwork 14328,11320 14286,11186
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # REMOVED (fertig) --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G) --- #: last_checked: 2020-08-11 --- #: check_frequency: 14d --- Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
-#
-#: last_checked: 2023-01-16
+# 
+#: last_checked: 2023-01-17
 #: next_check: 2023-02-10
 #: valid: -20230210
 Seumestr.: Bauarbeiten vor der Kreuzung Wühlischstr., Sperrung der Fahrbahn, Bordsteine	q3::inwork 14254,11377 14305,11514
@@ -222,7 +222,7 @@ Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
 #: last_checked: 2023-01-16
 #: check_frequency: 90d
-Grunerstr.: Gehweg	q4 10900,12546 10969,12608 11057,12715
+Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 # 
@@ -252,7 +252,7 @@ Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023)
 #: priority: #A
-#: last_checked: 2023-01-13 (mapillary) vvv
+#: last_checked: 2023-01-16 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-03-15 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
@@ -277,7 +277,7 @@ Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig,
 #: last_checked: 2023-01-16
 #: check_frequency: 90d
 #: next_check: 2025-06-30
-Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
+Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: last_checked: 2022-10-29 --- Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
@@ -348,7 +348,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: source_id: 2147340953 --- #: XXX laut VMZ mittlerweile entfernt, bei rbbtext bis Ende Mai 2017 --- #: last_checked: 2017-04-28 --- #: next_check: 2017-05-19 --- Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # REMOVED (kaum noch Einschränkungen) --- #: source_id: 2147342720 (bis Ende Oktober 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-11 vvv --- #: next_check: 2019-11-22 vvv --- #: valid: -20191122 vvv --- Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243 --- Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
-# REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
+# REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11053,12387 11094,12243
 # REMOVED (offen) --- #: next_check_id: ZIEGELSTR-2016 --- #: XXX Ende der Bauarbeiten? laut osm mittlerweile offen (war aber ein falscher StreetComplete-Edit und wurde wieder rückgängig gemacht) --- #: XXX möglicherweise mittlerweile offen, siehe daf --- #: way id="507023458" version="1" --- #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16 --- #: osm_watch: way id="507023458" version="15" --- #: also_indoor: traffic (H,B) --- #: last_checked: 2022-09-11 (daf) --- #: check_frequency: 45d --- #: next_check: 2022-09-11 --- Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9650,13074 9602,13081
 # REMOVED (beendet) --- #: XXX Ende der Bauarbeiten? --- #: also_indoor: traffic (G) --- #: last_checked: 2019-08-23 vvv --- #: check_frequency: 14d vvv --- Ziegelstr.: Bauarbeiten an der Kreuzung Tucholskystr., einige Meter Fahrbahn sind gesperrt	q2::inwork 9401,13072 9559,13087 --- #: source_id: 2147344619 (voraussichtlich bis Mitte September 2019) --- #: note: laut fritz bis 2019-09-06 --- Tucholskystr.: Bauarbeiten an der Kreuzung Ziegelstr., Einbahnstraße, offen Richtung Norden	q3::inwork; 9559,13087 9538,12993 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-10-27 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
@@ -1086,7 +1086,7 @@ Pestalozzistr.: Fußgängerzone	q3 3738,11231 3770,11231 3813,11230
 #: XXX_prog BS (1x oder 2x?)
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q3 11139,13008 11064,12910 11005,12855 10970,12822 10923,12779
-Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
+Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11141,12806 11064,12910
 # REMOVED (beide Einträge entfernt --- zurzeit wenig Fußgängerverkehr) --- #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?) --- #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam) --- #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten) --- #: (gelöscht) osm_watch: relation id="8743849" version="2" --- #: last_checked: 2021-05-01 (webcam) --- #: check_frequency: 7d --- #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595 --- Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
@@ -2050,7 +2050,7 @@ Verdener Gasse: enge Straße	q0- 15878,14761 15946,14702
 #: XXX_prog: BS an beiden Enden, sonst q1
 Verdener Gasse: einige Fußgänger, Bordsteine	q3 15946,14702 15968,14684
 #: note: außerdem zu kurz für eine höhere Geschwindigkeit
-(Waisenstr. - Littenstr.): Fußgänger	q3 11049,12386 11084,12395
+(Waisenstr. - Littenstr.): Fußgänger	q3 11053,12387 11084,12395
 Karl-Vesper-Str.: enge Straße	q1 14184,13670 14205,13755 14263,13739
 #: XXX_prog: BS (am südlichen Ende) (ansonsten wohl q1)
 (Karl-Vesper-Str. - Landsberger Allee): Fußgänger, Bordstein	q2 14205,13755 14218,13834
@@ -3955,7 +3955,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-16 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)

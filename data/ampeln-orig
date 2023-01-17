@@ -10,12 +10,13 @@
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: next_check: 2023-01-30 vvv
 #: valid: -20230130 vvv
-#: last_checked: 2022-12-28 (mapillary)
+#: XXX schon seit mehreren Tagen anscheinend ausgeschaltet
+#: last_checked: 2023-01-16 (mapillary)
 #: check_frequency: 30d
-Friedrichstr./Ziegelstr.	X::inwork 9269,13060
+Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
 #: last_checked: 2023-01-12 (mapillary)
 #: check_frequency: 30d
-Friedrichstr./Tucholskystr.	X::inwork 9559,13087
+Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
 #: next_check ^^^
 # 
@@ -38,7 +39,7 @@ Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-17
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -91,7 +92,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-01-17 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -610,7 +611,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 10515,12780
 	X 10601,12521
 #: related vvv
-	X 11134,12793
+	X 11141,12806
 	F 11105,12764
 #: related ^^^
 #: note: gilt nicht für rechtsabbiegende Radfahrer aus der Alexanderstr. in die Karl-Marx-Allee
@@ -844,7 +845,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: night (seen 2015-06-25, 2022-04-29 23:40)
 	F 10689,10491
 	F 7631,9770
-	X 15117,12106
+	X 15110,12107
 	X 14208,12235
 	X 12382,13097
 	X 12126,13088
@@ -2772,7 +2773,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 10846,17121
 #: XXX_prog Richtung Norden für Radfahrer nicht sehr relevant, nur Fußgängerampel
 #: note: Anforderungsampel (Fußgänger)
-Parkhausausfahrt auf der westlichen Seite	X 11252,12644
+Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: Message-ID: <f7gpgb$22l$1@mobile.in-berlin.de>
 	F 1442,12480
 	F 1669,12413
@@ -3170,7 +3171,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-01-05 vvv
+#: last_checked: 2023-01-16 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3192,7 +3193,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-11-19
+#: last_checked: 2023-01-15 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8732,14098
@@ -3348,12 +3349,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-12-22
+#: last_checked: 2023-01-17
 #: check_frequency: 90d
 #: next_check: 2023-06-30 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2023-01-04
+#: last_checked: 2023-01-17
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3668,7 +3669,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: gilt nicht für Radfahrer Richtung Südwesten
 #: last_checked: 2023-01-16
 #: check_frequency: 90d
-	X 10872,12579
+	X 10873,12577
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554

@@ -5480,8 +5480,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-	1::inwork 11329,12497 11209,12430 11092,12375 11084,12395 11059,12450 10969,12608 10954,12635
-	1::inwork 10954,12635 11057,12715 11105,12764 11134,12793
+	1::inwork 11329,12497 11202,12426 11088,12382 11084,12395 11065,12452 10973,12612 10951,12637
+	1::inwork 10951,12637 11057,12715 11105,12764 11141,12806
 EOF
      },
      { from  => 1154786970, # 2006-08-05 16:09
@@ -9942,7 +9942,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006622',
        data  => <<EOF,
-	1::inwork 11134,12793 11207,12706 11252,12644 11329,12497
+	1::inwork 11141,12806 11211,12711 11256,12647 11329,12497
 EOF
      },
      { from  => 1189893600, # 2007-09-16 00:00
@@ -16894,7 +16894,7 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 16.10.2009, 19.00 Uhr bis 19.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 11267,13012 11226,12945 11134,12793
+	2::inwork 11267,13012 11226,12945 11141,12806
 	3 11139,13008 11226,12945 11289,12908
 EOF
      },
@@ -16903,7 +16903,7 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 23.10.2009, 19.00 Uhr bis 26.10.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 11267,13012 11226,12945 11134,12793
+	2::inwork 11267,13012 11226,12945 11141,12806
 	3 11139,13008 11226,12945 11289,12908
 EOF
      },
@@ -16912,7 +16912,7 @@ EOF
        text  => 'Sperrungen an der Kreuzung Karl-Marx-Allee/Otto-Braun-Straße einschließlich Grunerstraße bis Alexanderstraße, 30.10.2009, 19.00 Uhr bis 2.11.2009, 05.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 11267,13012 11226,12945 11134,12793
+	2::inwork 11267,13012 11226,12945 11141,12806
 	3 11139,13008 11226,12945 11289,12908
 EOF
      },
@@ -17226,8 +17226,8 @@ EOF
        text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. ist gesperrt; Dircksenstr. ist Einbahnstraße), bis Ende Dezember 2017',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 11329,12497 11209,12430
-	1::xmas 11209,12430 11240,12368 11273,12301
+	2::xmas 11329,12497 11202,12426
+	1::xmas 11202,12426 11240,12368 11273,12301
 EOF
      },
      { from  => $isodate2epoch->("2021-11-12 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
@@ -24530,7 +24530,7 @@ EOF
 # REMOVED --- #: XXX "für mehrere Monate" vvv --- #: XXX evtl. bis 30. April 2015 --- #: last_checked: 2015-04-26 vvv --- #: next_check: 2015-04-30 vvv
 # REMOVED (keine Einschränkungen mehr) --- : XXX: besteht die Einschränkung noch? Siehe auch IM_025311 (bis 15.07.)
 	3 15300,11965 15361,12071 15420,12178
-	3 15117,12106 15361,12071 15420,12178
+	3 15110,12107 15361,12071 15420,12178
 EOF
      },
      { from  => 1423980000, # 2015-02-15 07:00
@@ -25420,7 +25420,7 @@ EOF
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 #: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
 	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
-	q4::xmas 11064,12910 11134,12793
+	q4::xmas 11064,12910 11141,12806
 #: tempex ^^^
 EOF
      },
@@ -26133,12 +26133,12 @@ EOF
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
 # REMOVED --- #: last_checked: 2018-06-07 vvv
 # REMOVED --- #: check_frequency: 1d vvv
-	q4::inwork 10954,12635 10969,12608 11059,12450
-	q4::inwork 11059,12450 11084,12395 11092,12375
-	q4::inwork 11139,12243 11092,12375
-	2::inwork 11032,12439 11059,12450
-	2::inwork 11049,12386 11084,12395
-# REMOVED (eh' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
+	q4::inwork 10951,12637 10973,12612 11065,12452
+	q4::inwork 11065,12452 11084,12395 11088,12382
+	q4::inwork 11139,12243 11088,12382
+	2::inwork 11033,12439 11065,12452
+	2::inwork 11053,12387 11084,12395
+# REMOVED (eh' nur teilweise) --- q2::inwork; 11088,12382 11202,12426
 # REMOVED --- #: check_frequency ^^^
 # REMOVED --- #: last_checked ^^^
 #: XXX ^^^
@@ -30699,7 +30699,7 @@ EOF
 #: last_checked: 2023-01-16
 #: check_frequency: 30d
 #: next_check: 2023-05-31
-	q4::inwork; 11329,12497 11209,12430
+	q4::inwork; 11329,12497 11202,12426
 EOF
      },
      { from  => 1574189084, # 2019-11-19 19:44
@@ -33386,7 +33386,7 @@ EOF
 	3 14888,11934 14926,12129 14854,12137
 	3 15003,12241 14926,12129 14994,12121
 	3 14994,12064 14994,12121 14926,12129
-	3 15117,12106 14994,12121 14994,12064
+	3 15110,12107 14994,12121 14994,12064
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -34556,15 +34556,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Dezember 2022)',
+       text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2022)',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: XXX evtl. mittlerweile bis fast Britzer Damm ausgeweitet?
-#: last_checked: 2022-12-22
-#: check_frequency: 14d
+#: last_checked: 2023-01-17 (Asphaltierungsarbeiten)
+#: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
 Jahnstr.	q3::inwork 12833,6127 13027,6168 13227,6209
@@ -35006,8 +35005,8 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2023-01-04 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2023-01-17 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (ex-G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
@@ -35182,7 +35181,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-12-23
+#: last_checked: 2023-01-17
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35968,15 +35967,14 @@ EOF
 EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
-       until => $isodate2epoch->("2023-01-27 17:00:00"), # 1667232000, # 2022-10-31 17:00
-       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 27.01.2023 17:00',
+       until => $isodate2epoch->("2023-02-28 17:00:00"), # 1667232000, # 2022-10-31 17:00
+       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 28.02.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00', # bis 31.12.2022, mittlerweile bis 27.1.2023
+       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00', # bis 31.12.2022, mittlerweile bis 27.1.2023, bis 28.2.2023
        data  => <<EOF,
 #: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
-#: note: bei rbb sogar bis 28.2.2023
-#: next_check: 2023-01-27
+#: next_check: 2023-02-28
 # REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
 	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
 EOF
@@ -36267,8 +36265,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: osm_watch: way id="1096678426" version="3"
-#: last_checked: 2022-11-11
+#: osm_watch: way id="1096678426" version="4"
+#: last_checked: 2023-01-16 (osm)
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 EOF
@@ -36471,7 +36469,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-12-27
+#: last_checked: 2023-01-16 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -36696,7 +36694,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-01-07 vvv
+#: last_checked: 2023-01-16 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-31 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -37137,7 +37135,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-01-04
+#: last_checked: 2023-01-17
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37549,6 +37547,15 @@ EOF
 #: last_checked: 2023-01-14
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
+EOF
+     },
+     { from  => 1673984980, # 2023-01-17 20:49
+       until => 1681595999, # 2023-04-15 23:59
+       text  => 'Anna-Seghers-Str.: Bauarbeiten nördlich der Radickestr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte April 2023',
+       type  => 'handicap',
+       source_id => 'https://nitter.cz/VIZ_Berlin/status/1615325171530846214#m',
+       data  => <<EOF,
+	q4::inwork 20113,3408 20166,3344
 EOF
      },
     );
