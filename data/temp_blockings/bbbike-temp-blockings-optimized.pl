@@ -4195,6 +4195,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
 #: note: Linienverkehr ist frei, nur auf dem östliche Abschnitt existiert ein einbahniger Abschnitt, ggfs. kann man als Radfahrer doch passieren
 #: by: https://nitter.cz/VIZ_Berlin/status/1562303691562041344#m
 #: by: https://nitter.cz/pic/media%2FFa19ZroWYAAUS6d.jpg%3Fname%3Dorig
+#: source_id: viz2021:13.377266,52.517839,19.01.2023,12:00 (nur noch für Kfz-Verkehr)
 	q3::inwork 8775,12457 8540,12420
 ',
          'from' => 1661230800,
@@ -4202,7 +4203,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
          'source_id' => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
          'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 19.01.2023',
          'type' => 'handicap',
-         'until' => 1674144000
+         'until' => 1674126000
        },
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
@@ -4278,7 +4279,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-16
+#: last_checked: 2023-01-18
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -4648,7 +4649,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-12-27
+#: last_checked: 2023-01-18
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,
@@ -5010,7 +5011,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: priority: #C
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-18
 	2::inwork 10352,12627 10344,12641 10309,12700
 ',
          'from' => undef,
