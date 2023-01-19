@@ -1221,7 +1221,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 geschützter Radstreifen, Grünbeschichtung	RW4; 11347,12223 11388,12202 11513,12138
 geschützter Radstreifen, Grünbeschichtung	RW4; 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, Grünbeschichtung	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
-Radspuren zwischen Fahrspuren	RW4; 11388,12202 11347,12223
+Fahrradschleuse mit Leitboys, gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11344,12410 11340,12443 11329,12497 11256,12647 11211,12711
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11211,12711 11141,12806
 asphaltierter Radweg	RW1; 11141,12806 11211,12711
@@ -1686,7 +1686,7 @@ breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 1136
 neues Verbundsteinpflaster	RW1; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378
 neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtbar	RW1; 12712,2378 12703,2454 12694,2517 12694,2544 12694,2570 12693,2746 12695,2789 12701,2955 12687,3319 12684,3406 12673,3619 12673,3627 12663,3762 12655,3882 12637,4014 12564,4308
 	RW3; 13651,11731 13696,11920 13745,12118
-Radspur zwischen Fahrspuren	RW3; 13745,12118 13785,12292
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
 	RW1; 17427,10259 17605,10199 17882,10128 17905,10122 17938,10054 17958,10012
 	RW3; 17958,10012 17997,9929
@@ -1866,7 +1866,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
-#: osm_watch: way id="82654055" version="16"
+#: osm_watch: way id="82654055" version="17"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: check_frequency: 90d vvv
@@ -2637,7 +2637,7 @@ Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11343,121
 provisorischer Radweg auf Bürgersteig	RW2; 10951,12249 10830,12279
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
-Radspur zwischen Fahrspuren	RW4; 11221,12250 11300,12241 11347,12223
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11221,12250 11300,12241 11347,12223
 # REMOVED ---	RW4; 10736,12285 10772,12288
 	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3;RW3 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547
@@ -2660,7 +2660,7 @@ Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12112,12861 12064,1
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 Radspur hinter den parkenden Autos	RW4; 12006,12464 11920,12266
 Radspur hinter den parkenden Autos	RW4; 11920,12266 11872,12185 11809,12078
-	RW4; 11809,12078 11764,12001
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11809,12078 11764,12001
 #: note: Lichtenberger Str., Richtung Norden
 	RW4; 11764,12001 11809,12078 11872,12185
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
@@ -6800,7 +6800,8 @@ im Bereich der Straßenbahnhaltestelle	RW1; 15626,13541 15653,13542 15724,13544
 	RW3;RW3 8311,19458 8304,19475 8268,19558 8244,19624 8232,19695 8227,19725 8231,19806
 	RW3;RW4 8231,19806 8242,19869 8234,19936
 	RW3; 8234,19936 8224,19977 8196,20096
-	RW3;RW3 9164,12172 9141,12320
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 9164,12172 9141,12320
+Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 9141,12320 9164,12172
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3750&options=4
 Tempo 10	RW6;RW6 16043,3374 16221,3248
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=5328&options=4
@@ -8113,4 +8114,6 @@ Gehwegplatten	RW2; 10936,16892 10971,16907
 	RW7;RW7 15591,8848 15680,8914 15778,8990
 # 
 	RW7;RW7 7270,15307 7356,15350 7417,15383
+# 
+verlängerte Suggestivstreifen am Anfang und Ende des Straßenabschnitts	RW0; 9183,12076 9195,11972
 # 

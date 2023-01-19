@@ -36250,7 +36250,7 @@ EOF
        until => $isodate2epoch->("2023-01-19 12:00:00"), # 1667232000, # 2022-10-31 17:00
        text  => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 19.01.2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
+       source_id => 'viz2021:13.378615,52.517943,24.08.2022,07:00', # inaktiv
        data  => <<EOF,
 #: note: laut Verkehrsmeldung "Fußverkehr eingeschränkt"
 #: note: Linienverkehr ist frei, nur auf dem östliche Abschnitt existiert ein einbahniger Abschnitt, ggfs. kann man als Radfahrer doch passieren
@@ -36350,7 +36350,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-18
+#: last_checked: 2023-01-19
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -37557,6 +37557,32 @@ EOF
        source_id => 'https://nitter.cz/VIZ_Berlin/status/1615325171530846214#m',
        data  => <<EOF,
 	q4::inwork 20113,3408 20166,3344
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Albertstr.: Fahrbahn vor der Einmündung Ebersstr. gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
+#: also_indoor: traffic (G,B)
+#: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres"
+#: last_checked: 2023-01-19
+#: check_frequency: 7d
+	q3::inwork 7166,8487 7086,8579
+EOF
+     },
+     { from  => 1674378000, # 2023-01-22 10:00
+       until => 1704060060, # 2023-12-31 23:01
+       text  => 'Trebbiner Straße (Mahlow): Bahnübergang gesperrt, 23.01.2023 10:00 Uhr bis 31.12.2023',
+       type  => 'gesperrt',
+       source_id => '207202932',
+       data  => <<EOF,
+#: osm_watch: way id="5086382" version="21"
+#: XXX Etwas nördlich wird eine Unterführung entstehen. Eine Unterführung für Radfahrer/Fußgänger existiert evtl. bereits.
+#: XXX ggfs. nach gesperrt-orig übertragen
+#: next_check: 2023-01-23
+	2::inwork 11065,-5338 11077,-5335 11119,-5326
 EOF
      },
     );

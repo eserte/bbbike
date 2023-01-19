@@ -4190,21 +4190,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: note: laut Verkehrsmeldung "Fußverkehr eingeschränkt"
-#: note: Linienverkehr ist frei, nur auf dem östliche Abschnitt existiert ein einbahniger Abschnitt, ggfs. kann man als Radfahrer doch passieren
-#: by: https://nitter.cz/VIZ_Berlin/status/1562303691562041344#m
-#: by: https://nitter.cz/pic/media%2FFa19ZroWYAAUS6d.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.377266,52.517839,19.01.2023,12:00 (nur noch für Kfz-Verkehr)
-	q3::inwork 8775,12457 8540,12420
-',
-         'from' => 1661230800,
-         'id' => 3610,
-         'source_id' => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
-         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 19.01.2023',
-         'type' => 'handicap',
-         'until' => 1674126000
-       },
+       undef,
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
 #: osm_watch: way id="1096678426" version="4"
@@ -4279,7 +4265,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-18
+#: last_checked: 2023-01-19
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -5101,6 +5087,34 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Anna-Seghers-Str.: Bauarbeiten nördlich der Radickestr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte April 2023',
          'type' => 'handicap',
          'until' => 1681595999
+       },
+       {
+         'data' => '#: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
+#: also_indoor: traffic (G,B)
+#: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres"
+#: last_checked: 2023-01-19
+#: check_frequency: 7d
+	q3::inwork 7166,8487 7086,8579
+',
+         'from' => undef,
+         'id' => 3712,
+         'text' => 'Albertstr.: Fahrbahn vor der Einmündung Ebersstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: osm_watch: way id="5086382" version="21"
+#: XXX Etwas nördlich wird eine Unterführung entstehen. Eine Unterführung für Radfahrer/Fußgänger existiert evtl. bereits.
+#: XXX ggfs. nach gesperrt-orig übertragen
+#: next_check: 2023-01-23
+	2::inwork 11065,-5338 11077,-5335 11119,-5326
+',
+         'from' => 1674378000,
+         'id' => 3713,
+         'source_id' => '207202932',
+         'text' => 'Trebbiner Straße (Mahlow): Bahnübergang gesperrt, 23.01.2023 10:00 Uhr bis 31.12.2023',
+         'type' => 'gesperrt',
+         'until' => 1704060060
        }
      
 );
