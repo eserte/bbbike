@@ -28,9 +28,11 @@ use XML::LibXML;
 use BBBikeUtil qw(is_in_path);
 
 my $use_pager = -t STDOUT && is_in_path('less');
+my $do_blame;
 
 GetOptions(
 	   'pager!' => \$use_pager,
+	   'blame'  => \$do_blame,
 	  )
     or die "usage: $0 [--no-pager]\n";
 
@@ -63,60 +65,74 @@ binmode STDOUT, ':utf8';
 
 my $dom = XML::LibXML->load_xml(string => $resp->decoded_content);
 my @nodes = $dom->findnodes('/osm/*');
-for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
-    my $newer_node = $nodes[$node_i];
-    my $older_node = $nodes[$node_i-1];
-
-    # changeset comment
-    my $changeset_id = $newer_node->findvalue('./@changeset');
-    my $changeset = get_changeset($changeset_id);
-    print "="x70,"\n";
-    print "id $changeset->{id}\n";
-    print "Author: $changeset->{user}\n";
-
-    print "Date:   $changeset->{closed_at}";
-    if ($changeset->{closed_at} =~ /^(\d{4}-\d{2}-\d{2})/) {
-	my $isodate = $1;
-	if ($isodate eq $today) {
-	    print " (today)";
-	} else {
-	    my $date = Time::Piece->strptime($isodate, '%Y-%m-%d');
-	    if ($date) {
-		my $days = int((time - $date->epoch) / 86400);
-		if ($days < 365) {
-		    print " (about $days day" . ($days != 1 ? 's' : '') . " ago)";
-		} else {
-		    my $years = int($days/365);
-		    print " (about $years year" . ($years != 1 ? 's' : '') . " ago)";
-		}
-	    }
-	}
-    }
-    print "\n";
-	
-    print "\n";
-    print Text::Wrap::wrap("    ", "    ", $changeset->{comment}) . "\n\n";
-
-    # diff
-    my $newer = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
-    $newer->print($newer_node->toString . "\n");
-    my $new_version = $newer_node->findvalue('./@version');
-
-    my $older;
-    my $old_version;
-    if ($node_i > 0) {
-	$older = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
-	$older->print($older_node->toString . "\n");
-	$old_version = $nodes[$node_i-1]->findvalue('./@version');
-    } else {
-	$older = "/dev/null";
-	$old_version = "0";
-    }
-    system('diff', "--label=$old_version", "--label=$new_version", '-u', $older, $newer);
-    print "\n";
+if ($do_blame) {
+    blame(\@nodes);
+} else {
+    history_log(\@nodes);
 }
 
 close STDOUT; # required for pager operation
+
+sub history_log {
+    my $nodes = shift;
+
+    for(my $node_i=$#$nodes; $node_i>=0; $node_i--) {
+	my $newer_node = $nodes->[$node_i];
+	my $older_node = $nodes->[$node_i-1];
+
+	# changeset comment
+	my $changeset_id = $newer_node->findvalue('./@changeset');
+	my $changeset = get_changeset($changeset_id);
+	print "="x70,"\n";
+	print "id $changeset->{id}\n";
+	print "Author: $changeset->{user}\n";
+
+	print "Date:   $changeset->{closed_at}";
+	if ($changeset->{closed_at} =~ /^(\d{4}-\d{2}-\d{2})/) {
+	    my $isodate = $1;
+	    if ($isodate eq $today) {
+		print " (today)";
+	    } else {
+		my $date = Time::Piece->strptime($isodate, '%Y-%m-%d');
+		if ($date) {
+		    my $days = int((time - $date->epoch) / 86400);
+		    if ($days < 365) {
+			print " (about $days day" . ($days != 1 ? 's' : '') . " ago)";
+		    } else {
+			my $years = int($days/365);
+			print " (about $years year" . ($years != 1 ? 's' : '') . " ago)";
+		    }
+		}
+	    }
+	}
+	print "\n";
+
+	print "\n";
+	print Text::Wrap::wrap("    ", "    ", $changeset->{comment}) . "\n\n";
+
+	# diff
+	my $newer = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
+	$newer->print($newer_node->toString . "\n");
+	my $new_version = $newer_node->findvalue('./@version');
+
+	my $older;
+	my $old_version;
+	if ($node_i > 0) {
+	    $older = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
+	    $older->print($older_node->toString . "\n");
+	    $old_version = $nodes[$node_i-1]->findvalue('./@version');
+	} else {
+	    $older = "/dev/null";
+	    $old_version = "0";
+	}
+	system('diff', "--label=$old_version", "--label=$new_version", '-u', $older, $newer);
+	print "\n";
+    }
+}
+
+sub blame {
+    die "NYI";
+}
 
 sub get_changeset {
     my($changeset_id) = @_;
