@@ -155,12 +155,6 @@ sub register {
 	  callback_3_std => sub { showmap_url_bing_street(@_) },
 	  ($images{Bing} ? (icon => $images{Bing}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . "_DAF"} =
-	{ name => "Deutsches Architektur-Forum",
-	  callback => sub { showmap_daf(@_) },
-	  callback_3_std => sub { showmap_url_daf(@_) },
-	  ($images{DAF} ? (icon => $images{DAF}) : ()),
-	};
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . "_FIS_Broker_1_5000"} =
 	    { name => "FIS-Broker (1:5000)",
@@ -256,6 +250,13 @@ sub register {
 	      callback_3_std => sub {showmap_url_hierbautberlin(@_) },
 	      ($images{HierBautBerlin} ? (icon => $images{HierBautBerlin}) : ()),
 	      order => 7500,
+	    };
+	$main::info_plugins{__PACKAGE__ . "_DAF"} =
+	    { name => "Deutsches Architektur-Forum",
+	      callback => sub { showmap_daf_berlin(@_) },
+	      callback_3_std => sub { showmap_url_daf_berlin(@_) },
+	      ($images{DAF} ? (icon => $images{DAF}) : ()),
+	      order => 7501,
 	    };
     }
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
@@ -1243,7 +1244,7 @@ sub showmap_bing_street {
 ######################################################################
 # DAF (Deutsches Architektur-Forum)
 
-sub showmap_url_daf {
+sub showmap_url_daf_berlin {
     my(%args) = @_;
     my $px = $args{px};
     my $py = $args{py};
@@ -1251,9 +1252,9 @@ sub showmap_url_daf {
     sprintf "http://www.dafmap.de/d/berlin.html?center=%s+%s&zoom=%d", $py, $px, $scale;
 }
 
-sub showmap_daf {
+sub showmap_daf_berlin {
     my(%args) = @_;
-    my $url = showmap_url_daf(%args);
+    my $url = showmap_url_daf_berlin(%args);
     start_browser($url);
 }
 
