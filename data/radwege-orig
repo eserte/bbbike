@@ -2642,7 +2642,7 @@ Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11221,122
 	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3;RW3 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547
 	RW3; 11893,13547 11842,13576
-	RW3; 11824,13592 11785,13625
+	RW4;RW4 11819,13593 11785,13625
 # 
 # REMOVED --- #: next_check_id: POPUPRADWEGE-2020 --- #: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019446.php (Verstetigung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/aus-temporaer-wird-dauerhaft_a293917 --- #: by: https://twitter.com/VIZ_Berlin/status/1329434716882268162 --- #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/ (früherer Eintrag) --- #: by: https://www.infravelo.de/projekt/lichtenberger-strasse-4/ (bis 3. Quartal 2021) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021) --- #: source_id: 2147346610 --- #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021) --- #: XXX Benutzungspflicht prüfen vvv --- #: last_checked: 2021-08-12 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-08-17 vvv --- # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464 --- #: osm_watch: way id="284761029" version="18"
 # REMOVED --- #: osm_watch: way id="4616518" version="30"
@@ -2891,7 +2891,7 @@ Busspur gilt 6-24 Uhr	RW5; 11706,13635 11652,13564 11561,13451 11539,13425 11486
 #: by: Christian Bewernitz
 #: confirmed_by: srt
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12161,13711 12038,13685 11907,13655 11868,13646 11823,13635 11785,13625
-	RW3;RW3 11785,13625 11762,13619 11706,13635
+	RW4;RW4 11785,13625 11762,13619 11706,13635
 	RW4; 11276,13408 11308,13389
 	RW2; 11308,13389 11399,13333 11451,13301
 #: note: daneben ist noch eine Busspur
@@ -2956,7 +2956,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="11"
 #: osm_watch: way id="420112509" version="12"
 #: osm_watch: way id="966685279" version="6"
-#: last_checked: 2023-01-09 vvv
+#: last_checked: 2023-01-20 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4198,7 +4198,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2023-01-07 vvv
+#: last_checked: 2023-01-20 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-03-03 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -4210,7 +4210,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: XXX ^^^
 #: note: Greifswalder Str. stadteinwärts
 Grünbeschichtung	RW3; 12317,14535 12266,14460 12228,14404 12188,14350 12177,14335 12172,14328 12077,14186 12017,14098 11991,14060 11952,14002 11946,13993 11820,13804
-die letzten 20 Meter sind benutzungspflichtig, Grünbeschichtung	RW3; 11820,13804 11706,13635
+die letzten 100 Meter sind benutzungspflichtig, Grünbeschichtung	RW3; 11820,13804 11706,13635
 # 
 	RW6;RW6 6793,18763 6829,18887 6855,18978
 	RW6;RW6 6753,18909 6770,18980 6736,18991 6715,18918

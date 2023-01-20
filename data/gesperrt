@@ -2049,10 +2049,10 @@ Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 1062
 Mühlendamm -> Rolandufer: unbequemes Passieren des Mittelstreifens	3::igndisp 10574,12131 10625,12206 10583,12206
 Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10583,12206 10625,12206 10646,12234
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10703,12313 10714,12355 10710,12377
-Molkenmarkt [Spandauer Str. -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
-Eiergasse -> Mühlendamm]: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10714,12355
-Molkenmarkt [Spandauer Str. -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10714,12355 10665,12413
-Spandauer Str. (Mitte) [Gehweg] -> Mühlendamm]: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10714,12355 10710,12377
+Spandauer Str. -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
+Eiergasse -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10714,12355
+Spandauer Str. -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10714,12355 10665,12413
+Spandauer Str. (Mitte) [Gehweg] -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10714,12355 10710,12377
 unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5341,10756 5475,10808
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5341,10756 5313,10420
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5313,10420 5341,10756 5215,10711

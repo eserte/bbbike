@@ -4537,18 +4537,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: rbb-Meldung (verlängert) (nochmal verlängert)
-#: also_indoor: traffic (B,H)
-# REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
-	q4::inwork 6273,2609 6065,2443
-',
-         'from' => 1665772021,
-         'id' => 3652,
-         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 20.01.2023',
-         'type' => 'handicap',
-         'until' => 1674234000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GRUENBERGER-2022
@@ -4560,7 +4549,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-07
+#: last_checked: 2023-01-20
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -5032,7 +5021,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-07
+#: last_checked: 2023-01-20
 	2::inwork 12173,15040 12095,14888
 ',
          'from' => undef,
@@ -5090,7 +5079,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (G,B,W)
 #: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres"
 #: last_checked: 2023-01-19
 #: check_frequency: 7d
@@ -5115,6 +5104,31 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Trebbiner Straße (Mahlow): Bahnübergang gesperrt, 23.01.2023 10:00 Uhr bis 31.12.2023',
          'type' => 'gesperrt',
          'until' => 1704060060
+       },
+       {
+         'data' => '#: next_check_id: ERNSTTHAELMANNPARK-2022
+#: last_checked: 2023-01-20
+#: next_check: 2023-02-01
+#: XXX später nach gesperrt-orig überführen bzw. ganz aus strassen-orig entfernen
+	2::inwork 12103,15218 12208,15108
+',
+         'from' => 1675033200,
+         'id' => 3714,
+         'text' => 'Schule am Planetarium: Weg wird dauerhaft gesperrt, voraussichtlich ab 1.2.2023',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: SPREEPARK-2022
+#: by: https://nitter.it/pic/orig/media%2FFm6x5zkWAAEchha.jpg
+	2::inwork 16436,8687 16388,8821
+',
+         'from' => 1674342000,
+         'id' => 3715,
+         'source_id' => 'https://nitter.cz/GBinfraVelo/status/1616426002728509441#m',
+         'text' => 'Kiehnwerderallee: Sperrung zwischen Dammweg und Stichweg zum Eierhäuschen, voraussichtlich vom 23.1.2023 bis 31.1.2023',
+         'type' => 'gesperrt',
+         'until' => 1675206000
        }
      
 );

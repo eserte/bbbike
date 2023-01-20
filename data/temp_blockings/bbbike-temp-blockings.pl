@@ -36854,7 +36854,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-07
+#: last_checked: 2023-01-20
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -37512,7 +37512,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-07
+#: last_checked: 2023-01-20
 	2::inwork 12173,15040 12095,14888
 EOF
      },
@@ -37565,7 +37565,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (G,B,W)
 #: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres"
 #: last_checked: 2023-01-19
 #: check_frequency: 7d
@@ -37583,6 +37583,29 @@ EOF
 #: XXX ggfs. nach gesperrt-orig übertragen
 #: next_check: 2023-01-23
 	2::inwork 11065,-5338 11077,-5335 11119,-5326
+EOF
+     },
+     { from  => 1675033200, # 2023-01-30 00:00
+       until => undef, # XXX
+       text  => 'Schule am Planetarium: Weg wird dauerhaft gesperrt, voraussichtlich ab 1.2.2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: ERNSTTHAELMANNPARK-2022
+#: last_checked: 2023-01-20
+#: next_check: 2023-02-01
+#: XXX später nach gesperrt-orig überführen bzw. ganz aus strassen-orig entfernen
+	2::inwork 12103,15218 12208,15108
+EOF
+     },
+     { from  => 1674342000, # 2023-01-22 00:00
+       until => 1675206000, # 2023-02-01 00:00
+       text  => 'Kiehnwerderallee: Sperrung zwischen Dammweg und Stichweg zum Eierhäuschen, voraussichtlich vom 23.1.2023 bis 31.1.2023',
+       type  => 'gesperrt',
+       source_id => 'https://nitter.cz/GBinfraVelo/status/1616426002728509441#m',
+       data  => <<EOF,
+#: next_check_id: SPREEPARK-2022
+#: by: https://nitter.it/pic/orig/media%2FFm6x5zkWAAEchha.jpg
+	2::inwork 16436,8687 16388,8821
 EOF
      },
     );

@@ -495,6 +495,7 @@ Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg m
 Am Kupfergraben: Asphalt	Q0 9654,12882 9754,12775 9815,12705 9870,12657
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9553,12768
 Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
+Marchlewskistr.: Kopfsteinpflaster	Q2 12972,12361 12997,12361 13019,12316
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
 Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 #: by: Roland Maier vvv
@@ -1080,7 +1081,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-01-16
+#: last_checked: 2023-01-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3572,8 +3573,8 @@ Zur Innung: Asphalt	Q0 14086,13090 14132,13234
 (Zur Waage - Zur Innung): teilweise Kopfsteinpflaster	Q1- 14067,13050 14086,13090
 #: note: früher teilweise mit Asphaltschäden, jetzt eigentlich OK
 Storkower Str. - Einsteinstr.: Asphalt	Q0 13148,14850 13185,14912 13163,14924 13143,14935 13107,14873
-Einsteinstr.: Asphalt/Beton mit Schäden	Q1- 13185,14912 13235,14888 13507,14822 13537,14835
-Einsteinstr.: Asphalt	Q0 13537,14835 13598,14936
+Einsteinstr.: Asphalt/Beton mit Schäden	Q1 13185,14912 13235,14888 13507,14822
+Einsteinstr.: Asphalt	Q0 13507,14822 13537,14835 13598,14936
 Preußstr.: Asphalt	Q0 12325,15328 12367,15396
 (Küselstr. - Prenzlauer Allee, Lidl-Parkplatz): Verbundsteinpflaster	Q1+ 12058,15621 11962,15681
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
@@ -31148,7 +31149,7 @@ Kreuzungsbereich asphaltiert	Q0 14181,11434
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14254,11377
 Einmündungsbereich mit Kopfsteinpflaster	Q2 10207,12055
 Kreuzungsbereich asphaltiert	Q0 11065,12452
-Kreuzungsbereich asphaltiert	Q0 13406,11896
+Einmündungsbereich asphaltiert	Q0 13406,11896
 Kreuzungsbereich asphaltiert	Q0 14535,11327
 #: note: gilt nur in N-S/S-N-Richtung, in O-W/W-O-Richtung kann man auf den Betonplatten fahren
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 16890,12135
@@ -31807,4 +31808,5 @@ Einmündungsbereich asphaltiert	Q0 18159,6642
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 13392,7648
 Einmündungsbereich asphaltiert	Q0 12805,6248
 Kreuzungsbereich asphaltiert	Q0 6735,9103
+Kreuzungsbereich asphaltiert	Q0 13019,12316
 #: ignore ^^^
