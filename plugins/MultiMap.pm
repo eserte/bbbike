@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.87;
+$VERSION = 1.88;
 
 use vars qw(%images);
 
@@ -154,6 +154,12 @@ sub register {
 	  callback => sub { showmap_bing_street(@_) },
 	  callback_3_std => sub { showmap_url_bing_street(@_) },
 	  ($images{Bing} ? (icon => $images{Bing}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_Waze"} =
+	{ name => "Waze",
+	  callback => sub { showmap_waze(@_) },
+	  callback_3_std => sub { showmap_url_waze(@_) },
+	  ($images{Waze} ? (icon => $images{Waze}) : ()),
 	};
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . "_FIS_Broker_1_5000"} =
@@ -461,6 +467,27 @@ R0lGODlhEAAQAIQPAP+mFf+sJP+xMv+3Qf+8UP/Hbf/Ne//Tiv/Ymf/ep//jtv/pxf/u0//0
 /yH5BAEKABAALAAAAAAQABAAAAVaICCOZGme5UAMaLk8S0u+MRAQ6/kySPP8PwVhBmwccIXX
 IzFSJgKlwg8hUkJNiYdDpHg0UIefyPAblgK+r4ihNZAIbAdLFED8HIuF78GYkwQGCnkLRzKG
 hyMhADs=
+EOF
+    }
+
+    if (!defined $images{Waze}) {
+	# Created with:
+	#   wget 'https://www.waze.com/livemap/assets/wazer-b704da66a0980396d93be87ea64c4e2b.svg'
+	#   convert -resize 16x16 wazer-b704da66a0980396d93be87ea64c4e2b.svg png:- | base64
+	$images{Waze} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+cwAADdcAAA3XAUIom3gAAAAHdElNRQfnARQULy+HbGZ6AAABEklEQVQY0y3BTyhDcQAH8O97vzfl
+1WPtwEEu/qwczZKji+IkFynpHXByINGkSHJxI+WwdnCh1pODJLUNBwdZnDis1bKVzMrzk83M3ntf
+F5+PQgC/KetVeGp4qhNQCMjd/GioyX1J3JnDCsjK8rokSfJ+/JwgD+a/+S89kVNhJ2caUcp4wHMh
+3Huk4snfA0SnJeqRDQylNeTbBTDWZ0Cb86HN1VDVAXR1+KAMuBCqinIDgIetMpz9U3y6wn872QoE
+bqxc/M00ku8IWSTJ6lX0TNI2E4jNFimLDkmysrZZF8eFw4/VvZ9+AS+zjSVdoXOxmEVgoeXrMRU8
+aYYGbSSeBVDasTFoACB5HdRXarWI3n1J8g/njYW7wvgGUAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAy
+My0wMS0yMFQyMDo0Nzo0NyswMTowMHwAIGoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDEtMjBU
+MjA6NDc6NDcrMDE6MDANXZjWAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAA
+AABJRU5ErkJggg==
 EOF
     }
 
@@ -1238,6 +1265,22 @@ sub showmap_url_bing_street {
 sub showmap_bing_street {
     my(%args) = @_;
     my $url = showmap_url_bing_street(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Waze
+
+sub showmap_url_waze {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    sprintf 'https://www.waze.com/en/live-map/directions?to=ll.%s%2C%s', $py, $px;
+}
+
+sub showmap_waze {
+    my(%args) = @_;
+    my $url = showmap_url_waze(%args);
     start_browser($url);
 }
 
