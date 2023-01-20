@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -346,8 +346,11 @@ for my $file (@files) {
 		     if      ($also_indoor_dir =~ m{^traffic\b}) {
 			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))}; # $extra contains map specifiers
 			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic", $extra];
-			 if ($extra && $extra =~ /\bB\b/) { # not handled by mc.bbbike.org, so create an extra link (unfortunately it's not possible to automatically turn on traffic layer)
+			 if ($extra && $extra =~ /\bB\b/) { # not handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['Bing', sprintf('http://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, 17)];
+			 }
+			 if ($extra && $extra =~ /\bW\b/) { # construction information not available as tiles and thus handled by mc.bbbike.org, so create an extra link
+			     push @extra_url_defs, ['Waze', sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%2C%s', $py, $px)];
 			 }
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
