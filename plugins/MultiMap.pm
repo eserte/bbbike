@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.88;
+$VERSION = 1.89;
 
 use vars qw(%images);
 
@@ -195,6 +195,15 @@ sub register {
 	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
 	      ),
 	      ($images{VIZ} ? (icon => $images{VIZ}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . '_BerlinRadverkehr'} =
+	    { name => 'Radverkehrsnetz Berlin',
+	      (module_exists('Geo::Proj4')
+	       ? (callback => sub { showmap_gdi_berlin(layers => 'radverkehrsnetz', @_) },
+		  callback_3_std => sub { showmap_url_gdi_berlin(layers => 'radverkehrsnetz', @_) })
+	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
+	      ),
+	      ($images{Berlin} ? (icon => $images{Berlin}) : ()),
 	    };
     }
     $main::info_plugins{__PACKAGE__ . "_BKG"} =
@@ -752,6 +761,35 @@ bGo2aLG2bm1rD+7o7OruYQA5xsbTsze7r0S3f8LESQxA2yZPmTpt+oyZs2bPmTtvPlhggfjC
 RYuXOC5dtnzFSpDAqtVr1q5b77Bh46bNW7YCAKJlS6V7R7bEAAAAJXRFWHRkYXRlOmNyZWF0
 ZQAyMDEzLTAyLTE5VDIxOjQyOjUxKzAxOjAws5ftwQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAx
 Mi0wOC0xNFQxNjoyODo1MCswMjowMOv6tcMAAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{Berlin}) {
+	# Created with:
+	#   wget https://gdi.berlin.de/viewer/_shared/resources/img/favicon.ico
+	#   convert -resize 16x16 favicon.ico png:- | base64
+	$images{Berlin} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACH1BMVEUBAQEODg4PDQ0PGRgR
+JiMRJCERJCIRJCIRJCEQIB4PEhIODAwODw8PDw8NDQ0NDQ3d29zz/PvnsrnfaXnhdIPhd4Xhd4Xh
+d4Xkjprs3N7v+fft6+vy8vLe3t4ODg7t6en////yf4nlAAHnBRfkAAPkAAHlAQnnABrsIT37xMz/
+///u7u4ODg7s6OnwgpHhABLlEy/wfYzyipjtWm7kBiThABTmJTr88vTt7Ozt6erxgpDhAA3mFjL+
+8fPtWW3jABfkBiP4wMjt6+vxgZDhAA3mFjL98fP//v7xfIziABHkByP4w8nt6+zxgZDhAA3mFTH8
+5Of++fr5yM7oJT/iABPoLkX99/ju7e3xgZDiABDlCSflDSrlDivkBSHjABzmEi/6zNLu7u7lCSfl
+DSrlDivlDCnjARzkAyDygpH////u7e3mFTH85Of+9vf96u3wbH7jABnjARr4wcnt6+vmFjL98fP9
+6u3mFDDiABHxiJbt6erxgpD+8vP5w8rlCSfiABTyjpvt6ers6OnwgpHhABLlEy/wfYzxiJbweYnm
+IDviABfjCiL50dft6+vt6enyf4nlAAHnBRfkAAPkAAHlAQTnABbqDCv5nanu7u7d29zz/Pvnsrnf
+aXnhdIPhd4Xhd4Xhd4XjhpPqyc7v+fft7Ozy8vLe3t4ODg4PDQ0PGRgRJiMRJCERJCIRJCIRJCEQ
+IR8PFhUODAwODg4PDw8NDQ1k3tIxAAAAAWJLR0Qgs2s9gAAAAAd0SU1FB+YIChICB+D0eaUAAAEA
+SURBVBjTY2BgZGJmYWVj5+Dk4ubh5WNg4BcQFBIWERUTl5CUkpaR5WeQk1dQVFJWUVVT19DUUtCW
+Y9DRVdDTNzA0MjYxNTNXsNBhkLNUsLK2sVVQsLN3cFRwkgMJOLu4urkreHh6eSv4gAV8/fwDAoOC
+Q0LDFMLBAhGRUdExsXHxCQoKiVCBpOSU1LT0jEyFLKiW7JzcvPyCwiKFYqihJaUKCmXlFZUKVWCB
+amubGgWF2rr6BoVGoMOaFJpbWtvaOzq7unsUeoEO61PonzBx0uQpU6dNV1CYIcfAP3PW7Dlz581f
+sHDR4iVLl/EzMCxfsXLV6jVr163fsHHT5i0MABrnSmdAqo40AAAAJXRFWHRkYXRlOmNyZWF0ZQAy
+MDIzLTAxLTIwVDIxOjAzOjUyKzAxOjAwhjYFLgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOC0x
+MFQxODowMjowNyswMjowMHHB1SsAAAAASUVORK5CYII=
 EOF
     }
 
@@ -1643,6 +1681,37 @@ sub showmap_url_viz {
 sub showmap_viz {
     my(%args) = @_;
     my $url = showmap_url_viz(%args);
+    start_browser($url);
+}
+
+######################################################################
+# gdi.berlin.de (z.B. Radverkehrsnetz Berlin)
+
+sub showmap_url_gdi_berlin {
+    my(%args) = @_;
+
+    my $layerids = {
+        radverkehrsnetz => 'k_alkis_land:1,webatlas_wms_grau,radverkehrsnetz:0,radverkehrsnetz:2,radverkehrsnetz:1',
+    }->{$args{layers}};
+    if (!$layerids) {
+	main::status_message('error', 'no layers found or invalid layers');
+	return;
+    }
+    my $number_layerids = scalar split /,/, $layerids;
+    my $visibility = join ',', ("true") x $number_layerids;
+    my $transparency = join ',', ("0") x $number_layerids;
+
+    require Geo::Proj4;
+    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
+	or die Geo::Proj4->error;
+    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    my $scale = 5; # XXX hardcoded for now
+    sprintf 'https://gdi.berlin.de/viewer/radverkehrsnetz/?Map/layerIds=%s&visibility=%s&transparency=%s&Map/center=[%s,%s]&Map/zoomLevel=%d', $layerids, $visibility, $transparency, $x, $y, $scale;
+}
+
+sub showmap_gdi_berlin {
+    my(%args) = @_;
+    my $url = showmap_url_gdi_berlin(%args);
     start_browser($url);
 }
 
