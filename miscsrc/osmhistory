@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2020,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2020,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,6 +19,7 @@ use lib "$FindBin::RealBin/..";
 
 use File::Temp;
 use Getopt::Long;
+use Hash::Util qw(lock_keys);
 use LWP::UserAgent;
 use Text::Wrap;
 use Time::Piece;
@@ -68,22 +69,13 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
 
     # changeset comment
     my $changeset_id = $newer_node->findvalue('./@changeset');
-    my $changeset_url = "$api_root_url/changeset/$changeset_id";
-    my $changeset_resp = $ua->get($changeset_url);
-    if (!$changeset_resp->is_success) {
-	die "Failed to fetch '$changeset_url': " . $changeset_resp->as_string . "\n";
-    }
-    my $changeset_dom = XML::LibXML->load_xml(string => $changeset_resp->decoded_content);
-    my($changeset_elem) = $changeset_dom->findnodes('/osm/changeset');
-    my $changeset_user = $changeset_elem->getAttribute('user');
-    my $changeset_closed_at = $changeset_elem->getAttribute('closed_at');
-    my $changeset_comment = $changeset_elem->findvalue('./tag[@k="comment"]/@v');
+    my $changeset = get_changeset($changeset_id);
     print "="x70,"\n";
-    print "id $changeset_id\n";
-    print "Author: $changeset_user\n";
+    print "id $changeset->{id}\n";
+    print "Author: $changeset->{user}\n";
 
-    print "Date:   $changeset_closed_at";
-    if ($changeset_closed_at =~ /^(\d{4}-\d{2}-\d{2})/) {
+    print "Date:   $changeset->{closed_at}";
+    if ($changeset->{closed_at} =~ /^(\d{4}-\d{2}-\d{2})/) {
 	my $isodate = $1;
 	if ($isodate eq $today) {
 	    print " (today)";
@@ -103,7 +95,7 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
     print "\n";
 	
     print "\n";
-    print Text::Wrap::wrap("    ", "    ", $changeset_comment) . "\n\n";
+    print Text::Wrap::wrap("    ", "    ", $changeset->{comment}) . "\n\n";
 
     # diff
     my $newer = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
@@ -125,6 +117,27 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
 }
 
 close STDOUT; # required for pager operation
+
+sub get_changeset {
+    my($changeset_id) = @_;
+
+    my %changeset;
+
+    $changeset{id} = $changeset_id;
+    $changeset{url} = "$api_root_url/changeset/$changeset_id";
+    my $changeset_resp = $ua->get($changeset{url});
+    if (!$changeset_resp->is_success) {
+	die "Failed to fetch '$changeset{url}': " . $changeset_resp->dump . "\n";
+    }
+    my $changeset_dom = XML::LibXML->load_xml(string => $changeset_resp->decoded_content);
+    my($changeset_elem) = $changeset_dom->findnodes('/osm/changeset');
+    $changeset{user}      = $changeset_elem->getAttribute('user');
+    $changeset{closed_at} = $changeset_elem->getAttribute('closed_at');
+    $changeset{comment}   = $changeset_elem->findvalue('./tag[@k="comment"]/@v');
+
+    lock_keys %changeset;
+    \%changeset;
+}
 
 __END__
 
