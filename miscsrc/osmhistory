@@ -131,7 +131,62 @@ sub history_log {
 }
 
 sub blame {
-    die "NYI";
+    my $nodes = shift;
+
+    my %open_kv;
+    my %closed_kv;
+    my $last_changeset_id = $nodes->[-1]->getAttribute('changeset');
+    for my $tag_node ($nodes->[-1]->findnodes('./tag')) {
+	my $k = $tag_node->getAttribute('k');
+	my $v = $tag_node->getAttribute('v');
+	$open_kv{$k} = { v => $v, changeset_id => $last_changeset_id };
+    }
+
+    for(my $node_i=$#$nodes; $node_i>=0; $node_i--) {
+	my $changeset_id = $nodes->[$node_i]->getAttribute('changeset');
+	my %unchanged_kv;
+	for my $tag_node ($nodes->[$node_i]->findnodes('./tag')) {
+	    my $k = $tag_node->getAttribute('k');
+	    next if $closed_kv{$k};
+	    if (exists $open_kv{$k}) {
+		my $v = $tag_node->getAttribute('v');
+		if ($v ne $open_kv{$k}->{v}) {
+		    $closed_kv{$k} = delete $open_kv{$k};
+		} else {
+		    $unchanged_kv{$k} = 1;
+		}
+	    }
+	}
+	for my $k (keys %open_kv) {
+	    if ($unchanged_kv{$k}) {
+		$open_kv{$k}->{changeset_id} = $changeset_id;
+	    } elsif ($node_i == 0) {
+		$closed_kv{$k} = delete $open_kv{$k};
+		$closed_kv{$k}->{changeset_id} = $changeset_id;
+	    } else {
+		$closed_kv{$k} = delete $open_kv{$k};
+	    }
+	}
+	last if !%open_kv;
+    }
+
+    for my $k (sort {
+	my $cmp = $closed_kv{$b}->{changeset_id} <=> $closed_kv{$a}->{changeset_id};
+	if ($cmp == 0) {
+	    $a cmp $b;
+	} else {
+	    $cmp;
+	}
+    } keys %closed_kv) {
+	my $v = $closed_kv{$k}->{v};
+	my $changeset_id = $closed_kv{$k}->{changeset_id};
+	if (!defined $changeset_id) {
+	    warn "Unexpected: No changeset id for '$k'";
+	}
+	my $changeset_info = get_cached_changeset($changeset_id);
+	printf "%s: %s\n", $k, $v;
+	printf "  %s %s %s\n", $changeset_info->{user}, $changeset_info->{closed_at}, $changeset_info->{comment};
+    }
 }
 
 sub get_changeset {
@@ -153,6 +208,17 @@ sub get_changeset {
 
     lock_keys %changeset;
     \%changeset;
+}
+
+{
+    my %cached_changeset;
+    sub get_cached_changeset {
+	my($changeset_id) = @_;
+	if (!exists $cached_changeset{$changeset_id}) {
+	    $cached_changeset{$changeset_id} = get_changeset($changeset_id);
+	}
+	$cached_changeset{$changeset_id};
+    }
 }
 
 __END__
