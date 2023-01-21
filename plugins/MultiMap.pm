@@ -1240,7 +1240,7 @@ sub showmap_url_bikemapnet {
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     $scale = 17 if $scale > 17;
-    sprintf "https://www.bikemap.net/en/search/?zoom=%d&center=%s%2C%s",
+    sprintf "https://www.bikemap.net/en/search/?zoom=%d&center=%s%%2C%s",
 	$scale, $py, $px;
 
 }
@@ -1313,7 +1313,7 @@ sub showmap_url_waze {
     my(%args) = @_;
     my $px = $args{px};
     my $py = $args{py};
-    sprintf 'https://www.waze.com/en/live-map/directions?to=ll.%s%2C%s', $py, $px;
+    sprintf 'https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px;
 }
 
 sub showmap_waze {
