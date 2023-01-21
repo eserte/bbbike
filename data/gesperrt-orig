@@ -97,8 +97,19 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19205,14980 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
-Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19214,14966 19156,14953 19013,14905
+#: next_check_id: KNOTENMARZAHN-2022
+#: XXX früher Einbahnstraßen
+#: last_checked: 2023-01-21 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 vvv
+Knoten Märkische/Landsberger Allee	1no 19013,14905 19175,14968 19196,14976
+Knoten Märkische/Landsberger Allee	2::inwork 19200,14963 19156,14953 19013,14905
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+Knoten Märkische/Landsberger Allee	1 19196,14976 19205,14980 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19214,14966 19200,14963
 Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
 Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
@@ -1212,7 +1223,8 @@ Alt-Moabit - Invalidenstr.	1no 7415,13060 7422,13012
 #: next_check_id: PARKAUE-2022
 #: XXX wiederherstellen! (1no -> 1s:q4)
 #: last_checked: 2023-01-06
-#: next_check: 2023-10-31
+# REMOVED --- #: next_check: 2023-10-31
+#: next_check: 2023-01-21
 Parkaue	1no 15406,12444 15408,12394 15370,12264
 # 
 Stahlheimer Str.	1 11727,16358 11698,16311
@@ -1468,6 +1480,8 @@ Breite Str.: Straßenbahnhaltestelle	3nocross 10680,18380 10710,18393 10784,18426
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
 # 
 Oberspreestr. [Nebenfahrbahn]	1s:q3 19965,5101 19957,5083 19940,5090
+# 
+(Allee der Kosmonauten - Poelchaustr.)	1 20194,14435 20309,14431 20367,14429
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3516,7 +3530,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-21
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3866,7 +3880,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="5"
-#: last_checked: 2022-12-03
+#: last_checked: 2023-01-21
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -4872,11 +4886,13 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
 # 
-#: last_checked: 2022-11-19
+#: by: https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html (webcam)
+#: last_checked: 2023-01-21 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
-#: last_checked: 2022-11-19
+#: by: https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html (webcam)
+#: last_checked: 2023-01-21 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 
@@ -4980,7 +4996,7 @@ Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,1370
 Landsberger Allee: Straßenbahntrasse	3nocross 13151,13367 13241,13415 13330,13468
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
-Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434
+Landsberger Allee	3nocross 19852,15201 19987,15280 20135,15364 20260,15434
 Landsberger Allee	3nocross 16852,14412 16632,14390 16590,14386
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
 Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3760,9052 3816,9052 3831,9052

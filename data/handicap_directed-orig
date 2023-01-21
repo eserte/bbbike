@@ -415,3 +415,14 @@ Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13501,2413 13640,2229 13827,228
 # 
 Pietschkerstr. - Groß-Berliner Damm: Umweg über Ampel Greifstr.	DH:len=50:tl 17729,5091 17763,5104 17726,5166
 # 
+#: next_check_id: KNOTENMARZAHN-2022
+#: note: Mindestwartezeit an den Ampeln etwa eine Minute
+#: last_checked: 2023-01-21 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 vvv
+Landsberger Allee	DH:t=50 18553,14678 18831,14823 19013,14905
+Landsberger Allee	DH:t=50 19175,14968 19196,14976 19200,14963
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 

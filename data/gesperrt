@@ -60,8 +60,9 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19205,14980 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
-Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19214,14966 19156,14953 19013,14905
+Knoten Märkische/Landsberger Allee	2::inwork 19200,14963 19156,14953 19013,14905
+Knoten Märkische/Landsberger Allee	1 19196,14976 19205,14980 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19214,14966 19200,14963
 Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
 Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
@@ -940,6 +941,7 @@ Straßenbahnhaltestelle	3nocross::ignrte 10680,18380 10710,18393 10784,18426
 Eintrachtstr. -> Breite Str.: Straßenbahnhaltestelle	3::igndisp 10650,18544 10710,18393 10784,18426
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
 Oberspreestr. [Nebenfahrbahn]	1s 19965,5101 19957,5083 19940,5090
+(Allee der Kosmonauten - Poelchaustr.)	1 20194,14435 20309,14431 20367,14429
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1434,6 +1436,8 @@ Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3
 Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20980,15013 21018,14991 21025,15005
 Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21099,15158 21025,15005 21095,15003
 Schragenfeldstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21095,15003 21025,15005 21018,14991
+Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 21025,15005 21099,15158 21064,15174
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21064,15174 21099,15158 21163,15289
 Mittelstreifen	3nocross::ignrte 7410,4373 7450,4397 7482,4416
 Straßenbahntrasse	3nocross::ignrte 20262,14255 20249,14143 20235,14017 20207,13778
 Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20235,14017 20249,14143 20172,14141
@@ -3482,9 +3486,9 @@ An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13279,13323 1
 Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21709,15808
 Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21709,15808
-Landsberger Allee	3nocross::ignrte 19852,15201 19987,15280 20260,15434
+Landsberger Allee	3nocross::ignrte 19852,15201 19987,15280 20135,15364 20260,15434
 Landsberger Allee -> Parkpl. Le Prom: Landsberger Allee	3::igndisp 19852,15201 19987,15280 19953,15286
-Parkpl. Le Prom -> Landsberger Allee: Landsberger Allee	3::igndisp 19953,15286 19987,15280 20260,15434
+Parkpl. Le Prom -> Landsberger Allee: Landsberger Allee	3::igndisp 19953,15286 19987,15280 20135,15364
 Landsberger Allee	3nocross::ignrte 16852,14412 16632,14390 16590,14386
 Landsberger Allee -> Genslerstr.: Landsberger Allee	3::igndisp 16590,14386 16632,14390 16644,14401
 Landsberger Allee -> Am Wasserwerk: Landsberger Allee	3::igndisp 16852,14412 16632,14390 16634,14373

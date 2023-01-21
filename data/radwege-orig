@@ -32,7 +32,7 @@
 # * "Radweg nur aufgemalt"
 # * "Verbundsteinpflaster" statt "Verbundsteinpflasterradweg"
 # * "Gehwegplatten" statt "Gehwegpflasterung" (gemeinst sind die typischen Berliner Rautenplatten)
-# * "Fahrradschleuse" statt "Radspur zwischen Fahrspuren"
+# * "Fahrradschleuse" statt "Radspur zwischen Fahrspuren", implizite Annahme "keine gesonderte Rechtsabbiegespur für Radfahrer"
 # 
 #
 #: temporary vvv
@@ -871,7 +871,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.471776,52.513945,09.01.2023,06:00 (Leitungsarbeiten zwischen Weichselstr. und Jessnerstr., bis 27.1.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-01-12
+#: last_checked: 2023-01-21
 #: check_frequency: 60d
 #: next_check: 2023-01-27
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1429,11 +1429,11 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9848 (Einwohnerfrage, Wegfall von Parkplätzen)
-#: by. https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/petersburger-strasse/
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/petersburger-strasse/
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="22"
+#: osm_watch: way id="203884042" version="23"
 #: last_checked: 2023-01-07
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
@@ -1686,7 +1686,7 @@ breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 1136
 neues Verbundsteinpflaster	RW1; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378
 neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtbar	RW1; 12712,2378 12703,2454 12694,2517 12694,2544 12694,2570 12693,2746 12695,2789 12701,2955 12687,3319 12684,3406 12673,3619 12673,3627 12663,3762 12655,3882 12637,4014 12564,4308
 	RW3; 13651,11731 13696,11920 13745,12118
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 13745,12118 13785,12292
+Fahrradschleuse	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
 	RW1; 17427,10259 17605,10199 17882,10128 17905,10122 17938,10054 17958,10012
 	RW3; 17958,10012 17997,9929
@@ -2327,7 +2327,7 @@ teilweise noch Reste des früher aufgemalten Radwegs sichtbar	RW0; 6493,13822 636
 #: note: alter Radweg soll nicht mehr verwendet werden
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 6730,14021 6818,14102 6992,14251 7123,14367
 Busspur ist immer gültig	RW5; 7123,14367 7180,14419
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 7180,14419 7123,14367
+Fahrradschleuse	RW3; 7180,14419 7123,14367
 	RW3; 7123,14367 6992,14251 6818,14102 6730,14021
 	RW3;RW3 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021
 	RW3;RW4 7104,14403 7123,14367
@@ -2545,7 +2545,7 @@ bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 
 	RW4; 12061,11406 12021,11349
 	RW4;RW3 12061,11406 12092,11475
 	RW3; 12092,11475 12143,11574
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12143,11574 12180,11657
+Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
@@ -2599,7 +2599,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
 	RW3; 12645,11673 12660,11705 12676,11739 12728,11850 12758,11915
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12758,11915 12822,12067
+Fahrradschleuse	RW3; 12758,11915 12822,12067
 	RW4; 12822,12067 12833,12154 12854,12287
 	RW3; 12854,12287 12862,12332
 an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12878,12430 12891,12549
@@ -2628,7 +2628,7 @@ Zeichen 237 steht zwischen den Einmündungen Taborstr. und Heckmannufer	RW4; 1336
 	RW6;RW6 11034,12038 10869,11949 10687,11853
 	RW4; 11347,12223 11343,12182 11325,12021
 	RW4; 11325,12021 11343,12182
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11343,12182 11347,12223
+Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW3; 11347,12223 11300,12241
 	RW4; 11300,12241 11221,12250 11139,12243 11094,12243 10951,12249
 #: next_check_id: MOLKENMARKT-2021
@@ -2637,7 +2637,7 @@ Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11343,121
 provisorischer Radweg auf Bürgersteig	RW2; 10951,12249 10830,12279
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11221,12250 11300,12241 11347,12223
+Fahrradschleuse	RW4; 11221,12250 11300,12241 11347,12223
 # REMOVED ---	RW4; 10736,12285 10772,12288
 	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3;RW3 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547
@@ -2660,7 +2660,7 @@ Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12112,12861 12064,1
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 Radspur hinter den parkenden Autos	RW4; 12006,12464 11920,12266
 Radspur hinter den parkenden Autos	RW4; 11920,12266 11872,12185 11809,12078
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW4; 11809,12078 11764,12001
+Fahrradschleuse	RW4; 11809,12078 11764,12001
 #: note: Lichtenberger Str., Richtung Norden
 	RW4; 11764,12001 11809,12078 11872,12185
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
@@ -2691,6 +2691,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
+#: source_id: bvg2021:m43#BVG315176_0
 #: last_checked: 2023-01-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
@@ -3422,12 +3423,23 @@ neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
 asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
-	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18798,14808 19013,14905
-Gehweg für Radfahrer frei	RW1; 19013,14905 18798,14808 18553,14678 18410,14614 18365,14607 18183,14573
+	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
+#: next_check_id: KNOTENMARZAHN-2022
+#: last_checked: 2023-01-21 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 vvv
+#: XXX früher RW2;
+	RW0; 19013,14905 19156,14953 19200,14963
+#: XXX: temporärer Zweirichtungsradweg
+	RW8; 18831,14823 19013,14905 19175,14968 19196,14976
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+Gehweg für Radfahrer frei	RW1; 19013,14905 18831,14823 18553,14678 18410,14614 18365,14607 18183,14573
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
 neu asphaltiert, aber etwas wellig	RW2; 17254,14451 17055,14432 16852,14412
-	RW2; 19013,14905 19156,14953 19214,14966 19350,14997
+	RW2; 19200,14963 19214,14966 19350,14997
 	RW1; 16512,11894 16413,11906 16368,11912
 	RW4; 16962,11833 17028,11821 17121,11806
 Busspur gilt immer	RW5; 16368,11912 16413,11906 16512,11894 16737,11866 16803,11859 16962,11833
@@ -3714,7 +3726,7 @@ die letzten 40 Meter am Alboinplatz noch mit Radweg auf dem Bürgersteig	RW0;RW0 
 #: by: Wolfhard Schleese:
 #: confirmed_by: srt
 Radweg nur aufgemalt	RW1;RW1 6304,16447 6360,16511 6489,16658 6572,16718 6630,16820 6702,16900 6806,17014
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 8559,12912 8503,12895
+Fahrradschleuse	RW3; 8559,12912 8503,12895
 	RW4;RW4 8503,12895 8424,12853 8309,12758
 	RW4;RW4 8309,12758 8252,12757 8206,12757
 # REMOVED (existieren nicht mehr) ---	RW4;RW4 8206,12757 8120,12756
@@ -4060,7 +4072,9 @@ neues Verbundsteinpflaster	RW2; 15254,2926 15301,3038
 	RW2;RW1 23080,15700 23137,15978
 	RW2;RW2 23137,15978 23162,16095
 	RW2;RW3 20260,15434 20532,15564 20580,15586 20733,15657
-	RW3;RW3 20260,15434 19987,15280 19852,15201
+	RW3; 20260,15434 20135,15364
+Fahrradschleuse	RW3; 20135,15364 20260,15434
+	RW3;RW3 20135,15364 19987,15280 19852,15201
 	RW2;RW3 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 	RW1;RW2 21239,15633 21398,15671 21475,15705
 	RW2;RW2 21475,15705 21584,15753 21709,15808
@@ -4153,7 +4167,7 @@ Gehwegplatten	RW2; 6226,13951 6228,14077
 # REMOVED --- aufgemalter Radweg auf Gehweg	RW1; 5248,13434 5368,13406
 # REMOVED --- #: XXX wann wird das Provisorium aufgehoben? --- #: osm_watch: way id="25199403" version="11" --- #: osm_watch: way id="4410310" version="15" --- #: source_id: 2147343310 (bis Mitte Mai 2019) --- #: last_checked: 2019-04-29 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2019-05-09
 	RW3; 5248,13434 5368,13406
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 5368,13406 5248,13434
+Fahrradschleuse	RW3; 5368,13406 5248,13434
 #: by: Lothar Kahl (und ein weiterer bln.verkehr-Artikel) vvv
 vorhandener Radweg ist abgesperrt	RW0;RW0 5328,13019 5351,13238 5368,13406
 #: by: ^^^
@@ -5311,7 +5325,7 @@ Gehweg für Radfahrer frei	RW1; 19664,15366 19644,15320 19619,15262 19604,15227
 #: confirmed_by. srt
 Gehweg für Radfahrer frei, eng	RW1; 19604,15227 19502,15089 19364,15045
 #: by: ^^^
-Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19205,14980 19175,14968 19013,14905
+Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19205,14980 19196,14976 19175,14968 19013,14905
 #: by: Detlef Hüttemann
 	RW6;RW6 -6659,14142 -6765,14120 -6915,14090
 	RW1; 18929,2454 18656,2465 18496,2471
@@ -6131,7 +6145,7 @@ Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
 	RW4; 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187 13692,15231
 	RW3; 13692,15231 13560,15318
 	RW4; 13560,15318 13186,15518
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer, zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
+Fahrradschleuse, zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
 	RW3; 13078,15586 13186,15518
 #: by: Grönwoldt:
 #: confirmed_by: srt
@@ -6225,7 +6239,7 @@ Asphalt mit leichten Schäden	RW1; 4430,5324 4437,5335 4527,5475 4558,5525 4671,5
 Asphalt mit einigen Schäden	RW1; 4671,5697 4558,5525 4527,5475 4437,5335 4430,5324
 	RW3;RW3 4520,5793 4406,5850 4312,5889 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
 	RW6;RW6 4305,12377 4358,12365 4520,12358
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 9858,10350 9873,10285
+Fahrradschleuse	RW3; 9858,10350 9873,10285
 	RW1; 17383,16197 17425,16165
 	RW7;RW7 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
 	RW6;RW6 20586,18822 20694,18857
@@ -6727,7 +6741,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: priority: #D vvv
 #: last_checked: 2023-01-17 vvv
 #: check_frequency: 60d vvv
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12714,8249 12753,8187
+Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6800,8 +6814,8 @@ im Bereich der Straßenbahnhaltestelle	RW1; 15626,13541 15653,13542 15724,13544
 	RW3;RW3 8311,19458 8304,19475 8268,19558 8244,19624 8232,19695 8227,19725 8231,19806
 	RW3;RW4 8231,19806 8242,19869 8234,19936
 	RW3; 8234,19936 8224,19977 8196,20096
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 9164,12172 9141,12320
-Fahrradschleuse, keine gesonderte Rechtsabbiegespur für Radfahrer	RW3; 9141,12320 9164,12172
+Fahrradschleuse	RW3; 9164,12172 9141,12320
+Fahrradschleuse	RW3; 9141,12320 9164,12172
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3750&options=4
 Tempo 10	RW6;RW6 16043,3374 16221,3248
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=5328&options=4
@@ -7278,6 +7292,8 @@ Verbundsteinpflaster	RW2; 23017,12177 23100,12269
 	RW6;RW6 -4108,17776 -3953,17941
 	RW6;RW6 -3655,18177 -3847,17978 -3914,17913 -3953,17941 -4002,17993 -4038,18030 -3898,18187
 Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20710,14454
+#: note: im Bereich der Bushaltestelle wird der Radweg hinter dem Wartehäuschen geführt, in diesem Bereich formal Benutzungspflicht (aber praktisch nicht möglich, wenn man bis dahin auf der Fahrbahn fuhr)
+Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 20710,14454 20755,14479
 	RW6;RW6 19650,9413 19669,9418 19692,9416 19743,9412 19780,9409 19824,9405
 	RW6;RW6 19692,9416 19688,9365 19680,9291 19679,9214 19728,9214

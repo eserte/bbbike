@@ -6,6 +6,18 @@
 # Temporäre Ampeln
 # 
 #: temporary vvv
+#
+#: next_check_id: KNOTENMARZAHN-2022
+#: last_checked: 2023-01-21 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 vvv
+#: note: Anforderungsampel
+	F::inwork 18831,14823
+#: note: Anforderungsampel
+	F::inwork 19196,14976
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: next_check: 2023-01-30 vvv

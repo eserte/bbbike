@@ -1366,7 +1366,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036247069542/247069542/00279027/27-Anlagen/02/DS0254_VzK_BenennungeinerStrassenachFreiaEisne.pdf (erst 2023, nach Umwidmung in eine öffentliche Straße)
 #: XXX Vorschlag: Freia-Eisner-Straße; mittlerweile tatsächlich als "Planstraße C" offiziell ausgeschildert
 #: note: "Privatgelände"
-#: osm_watch: way id="491906864" version="13"
+#: osm_watch: way id="491906864" version="14"
 #: priority: #C
 #: last_checked: 2023-01-19 (mapillary)
 #: check_frequency: 60d
@@ -1801,6 +1801,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
+#: osm_watch: way id="977556359" version="8"
 #: last_checked: 2022-12-17
 #: check_frequency: 90d
 #: osm.highway: service
@@ -2281,8 +2282,8 @@ Archibaldweg	N 15674,10851 15820,10916 15870,10938 15886,10947 15945,10984 16034
 Münsterlandstr.	N 16160,11154 16273,11113 16381,11080 16492,11042 16575,11013 16702,10972 16792,10945
 Münsterlandplatz	N 16719,11021 16590,11059
 Wönnichstr.	N 16597,10651 16702,10972 16719,11021 16785,11212 16856,11438 16887,11545 16915,11634 16977,11769
-Landsberger Allee	HH 12382,13097 12585,13118 12711,13150 12786,13185 12878,13229 12979,13280 13073,13329 13151,13367 13241,13415 13330,13468 13543,13568 13635,13605 13702,13634 13854,13701 13906,13722 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15588,14279 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18410,14614 18553,14678 18798,14808 19013,14905 19156,14953 19214,14966 19350,14997 19408,15007 19614,15061 19744,15128 19852,15201 19987,15280 20260,15434 20532,15564 20580,15586 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808 21951,15918 22109,15990 22131,16000 22495,16165 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
-Landsberger Allee	HH 19852,15201 19694,15141 19565,15106 19502,15089 19364,15045 19205,14980 19175,14968 19013,14905
+Landsberger Allee	HH 12382,13097 12585,13118 12711,13150 12786,13185 12878,13229 12979,13280 13073,13329 13151,13367 13241,13415 13330,13468 13543,13568 13635,13605 13702,13634 13854,13701 13906,13722 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15588,14279 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823 19013,14905 19156,14953 19200,14963 19214,14966 19350,14997 19408,15007 19614,15061 19744,15128 19852,15201 19987,15280 20135,15364 20260,15434 20532,15564 20580,15586 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808 21951,15918 22109,15990 22131,16000 22495,16165 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
+Landsberger Allee	HH 19852,15201 19694,15141 19565,15106 19502,15089 19364,15045 19205,14980 19196,14976 19175,14968 19013,14905
 Landsberger Allee [Wohngebiet]	N 20776,15851 20770,15832 20803,15812 20789,15736
 Landsberger Allee [Wohngebiet]	N 22092,16029 22112,16137
 Landsberger Allee [zur Nebenfahrbahn]	N 22109,15990 22092,16029
@@ -2293,6 +2294,11 @@ Landsberger Allee [Nebenfahrbahn]	N 16669,14438 16845,14461
 (Georg-Knorr-Str. - Landsberger Allee)	N 19169,15015 19150,15009 19133,15004
 (Georg-Knorr-Str. - Landsberger Allee)	NN 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19175,14926 19180,14915 19255,14911
+#: next_check_id: KNOTENMARZAHN-2022
+#: last_checked: 2023-01-21
+#: check_frequency: 120d
+#: next_check: 2026-12-31
+(Knoten Marzahn, Fußgängerüberweg)	NN 19196,14976 19200,14963
 (Landsberger Allee - Frank-Schweitzer-Str.)	NN 19156,14953 19160,14935 19171,14938
 Kniprodestr.	H 12640,13814 12701,13873 12766,13942 12856,14042 12901,14093 12972,14173 12992,14196 13026,14234 13057,14267 13107,14318 13183,14400 13240,14460 13294,14515 13364,14591 13398,14628 13439,14673 13636,14900 13647,14912 13744,15018 13823,15111
 Anton-Saefkow-Str.	N 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523 13088,14469 13183,14400
@@ -6427,6 +6433,7 @@ Allee der Kosmonauten [Wohngebiet]	N 20249,14143 20172,14141 20111,14140 20096,1
 Allee der Kosmonauten [Wohngebiet]	N 20112,13781 20207,13778
 Allee der Kosmonauten [Wohngebiet]	N 19736,13523 19737,13485
 Allee der Kosmonauten [Wohngebiet]	N 19649,13481 19737,13485 19811,13487 19812,13442 19815,13317 19817,13259
+Allee der Kosmonauten [Wohngebiet]	N 21064,15174 21099,15158
 #: osm.highway: service
 Allee der Kosmonauten [Wohngebiet]	N 17690,13365 17648,13359 17592,13296 17592,13153
 Allee der Kosmonauten [Wohngebietsweg]	NN 19859,13765 20038,13771 20075,13758 20114,13762
@@ -6434,6 +6441,7 @@ Allee der Kosmonauten [Wohngebietsweg]	NN 19859,13765 20038,13771 20075,13758 20
 (Allee der Kosmonauten, Verbindungsweg)	NN 19815,13317 19835,13317
 Märkische Allee - Allee der Kosmonauten	H 19509,13378 19586,13405 19634,13461 19628,13517
 Poelchaustr.	H 20318,14402 20194,14435 20051,14441 19817,14459 19687,14469 19593,14472 19524,14474 19395,14477
+(Allee der Kosmonauten - Poelchaustr.)	N 20367,14429 20309,14431 20194,14435
 (Allee der Kosmonauten - Wohngebiet)	NN 19628,13517 19649,13481
 (Allee der Kosmonauten - Unterführung)	NN 19807,13529 19809,13605 19819,13606
 (Allee der Kosmonauten - Langhoffstr.)	NN 19856,13794 19847,14019 19843,14064
@@ -9858,19 +9866,22 @@ Nadrauer Str.	N 17215,26263 17367,26349
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6192
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6262 (Vorlage zur Kenntnisnahme)
 #: XXX Straße soll in "Ilse-Krause-Str." umbenannt werden
-#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+#: osm_watch: way id="14116958" version="9"
+#: last_checked: 2023-01-21 (indoor, noch kein Amtsblatt-Eintrag)
 # REMOVED --- #: next_check: 2022-12-31
 Straße 5 (Buch)	N 17542,26302 17493,26391 17448,26469 17414,26524
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6191
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6260 (Vorlage zur Kenntnisnahme)
 #: XXX Straße soll in "Rosa-Coutelle-Str." umbenannt werden
-#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+#: osm_watch: way id="14117217" version="8"
+#: last_checked: 2023-01-21 (indoor, noch kein Amtsblatt-Eintrag)
 # REMOVED --- #: next_check: 2022-12-31
 Straße 6 (Buch)	N 17493,26391 17714,26509
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6193
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6263 (Vorlage zur Kenntnisnahme)
 #: XXX Straße soll in "Rose-Scheuer-Karpin-Str." umbenannt werden
-#: last_checked: 2022-12-23 (indoor, noch kein Amtsblatt-Eintrag)
+#: osm_watch: way id="14117181" version="15"
+#: last_checked: 2023-01-21 (indoor, noch kein Amtsblatt-Eintrag)
 # REMOVED --- #: next_check: 2022-12-31
 Straße 7 (Buch)	N 17448,26469 17668,26607
 (Straße 7 - Zepernicker Str.)	N 17668,26607 17714,26509 17764,26410
