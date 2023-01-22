@@ -34876,8 +34876,8 @@ EOF
 EOF
      },
      { from  => 1645336800, # 2022-02-20 07:00
-       until => $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
-       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.01.2023 17:00',
+       until => undef, dont_check_date => 1, # $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
+       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens 31.01.2023 17:00, vermutlich noch länger',
        type  => 'handicap',
        source_id => 'viz2021:13.452362,52.470898,21.02.2022,07:00', # bis 31.12.2022, mittlerweile bis 31.1.2023
        data  => <<EOF,
@@ -34888,14 +34888,14 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-01-04 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-01-31 vvv
+#: last_checked: 2023-01-22 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2023-01-31 vvv
 	q4::inwork 13797,7267 13762,7321
 	2::inwork 13797,7267 13693,7228 13575,7200
 #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs
 	q4::inwork; 13484,7140 13575,7200 13627,7047
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -35081,11 +35081,11 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
 #: note: Durchfahrt möglich, gesehen: 2022-03-23 (Mi) mittags, 2022-05-04 (Mi) mittags, 2022-07-06 (Mi) mittags, 2022-08-05 (Fr) vormittags, 2022-11-07 mittags
-#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40), 2022-12-04 (So) nachmittags (15:00), 2023-01-04 Mi (18:00)
+#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40), 2022-12-04 (So) nachmittags (15:00), 2023-01-04 Mi (18:00), 2023-01-22 (So) mittags (gegen 12:30) (vermutlich)
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2023-01-04
+#: last_checked: 2023-01-22
 	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 EOF
      },
@@ -36856,7 +36856,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-20
+#: last_checked: 2023-01-22
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -37124,7 +37124,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,B) vvv
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-01-22 vvv
 	q4::inwork; 13946,7918 13891,7961
 	q3::inwork; 13891,7961 13946,7918
 #: last_checked ^^^
@@ -37138,7 +37138,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-01-17
+#: last_checked: 2023-01-22
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF

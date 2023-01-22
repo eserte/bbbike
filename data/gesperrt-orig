@@ -103,7 +103,8 @@ Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	1no 19013,14905 19175,14968 19196,14976
-Knoten Märkische/Landsberger Allee	2::inwork 19200,14963 19156,14953 19013,14905
+# REMOVED (es gibt einen Zugang zur Treppe) --- Knoten Märkische/Landsberger Allee	2::inwork 19200,14963 19156,14953
+Knoten Märkische/Landsberger Allee	2::inwork 19156,14953 19013,14905
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -934,6 +935,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.7.2023) (am nächsten Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023)
+#: source_id: viz2021:13.567832,52.454403,23.01.2023,08:00 (bis 30.1.2023)
 #: last_checked: 2023-01-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-07-15 vvv
@@ -3530,7 +3532,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-01-21
+#: last_checked: 2023-01-22
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4046,7 +4048,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-22
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 

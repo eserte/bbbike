@@ -8,11 +8,13 @@
 #: temporary vvv
 #
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-01-21 vvv
+#: last_checked: 2023-01-22 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
+#: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 18831,14823
+#: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 19196,14976
 #: next_check ^^^
@@ -104,7 +106,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-01-17 vvv
+#: last_checked: 2023-01-22 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -3379,7 +3381,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2022-12-04
+#: last_checked: 2023-01-22
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
