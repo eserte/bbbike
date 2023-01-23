@@ -2887,7 +2887,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-10-02
+#: last_checked: 2023-01-23
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -3284,7 +3284,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 #: also_indoor: traffic (G,H[falsch?],B)
-#: osm_watch: way id="4441630" version="27"
+#: osm_watch: way id="4441630" version="28" brb
 #: next_check: 2023-02-14
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
 ',
@@ -3411,9 +3411,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: bvg2021:m13#BVG313614_0
 #: source_id: bvg2021:m13#BVG315165_0
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
+#: XXX Aufnahme des Straßenbahnbetriebs für den 28.1.2023 geplant -- wie sieht die Führung für die übrigen Verkehrsteilnehmer aus?
 #: last_checked: 2023-01-21 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-01-31 vvv
+#: next_check: 2023-01-28 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
@@ -3499,7 +3500,7 @@ Müggelstr.	q4::inwork 14901,11808 14836,11842
          'until' => 1704042000
        },
        {
-         'data' => '#: also_indoor: traffic (B,G)
+         'data' => '#: also_indoor: traffic (B,G,W)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: last_checked: 2023-01-17 (Asphaltierungsarbeiten)
@@ -4010,6 +4011,8 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
        {
          'data' => '#: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
+#: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
 #: last_checked: 2023-01-16
 #: check_frequency: 60d
 #: next_check: 2023-12-31
@@ -4197,7 +4200,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
 #: osm_watch: way id="1096678426" version="4"
-#: last_checked: 2023-01-16 (osm)
+#: last_checked: 2023-01-22 (mapillary)
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 ',
@@ -4251,24 +4254,11 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (none)
-#: source_id: viz2021:13.32575,52.50557,01.11.2022,07:00 (bis 31.3.2023) (inaktiv)
-#: note: auch bei rbb erwähnt
-# REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
-	q4::inwork 5084,10890 5072,10701
-',
-         'from' => 1661922000,
-         'id' => 3617,
-         'source_id' => 'viz2021:13.32575,52.50557,01.09.2022,07:00',
-         'text' => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.09.2022 07:00 bis 31.03.2023 23:59 ',
-         'type' => 'handicap',
-         'until' => 1680299940
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-19
+#: last_checked: 2023-01-23
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -4430,7 +4420,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:142#BVG311081_0
-#: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
+# REMOVED --- #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
@@ -5136,6 +5126,27 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'text' => 'Kiehnwerderallee: Sperrung zwischen Dammweg und Stichweg zum Eierhäuschen, voraussichtlich vom 23.1.2023 bis 31.1.2023',
          'type' => 'gesperrt',
          'until' => 1675206000
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1617379096828252160#m
+	q4::inwork; 5356,11512 5456,11742
+',
+         'from' => 1674363600,
+         'id' => 3716,
+         'source_id' => 'viz2021:13.329681,52.51005,23.01.2023,06:00',
+         'text' => 'Fasanenstr.: Bauarbeiten zwischen Hertzallee und Müller-Breslau-Str., Radfahrer Richtung Norden sind betroffen, vom 23.01.2023 06:00 bis 27.01.2023 18:00',
+         'type' => 'handicap',
+         'until' => 1674838800
+       },
+       {
+         'data' => '	q4::inwork; 17608,15010 17562,14992 17231,14979
+',
+         'from' => 1674460800,
+         'id' => 3717,
+         'source_id' => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
+         'text' => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 10.03.2023 17:00 ',
+         'type' => 'handicap',
+         'until' => 1678464000
        }
      
 );

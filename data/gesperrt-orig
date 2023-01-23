@@ -1173,6 +1173,10 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,1125
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
+#: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
+#: last_checked: 2023-01-09
+#: check_frequency: 90d
 Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
@@ -4182,7 +4186,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: osm_watch: way id="944115137" version="9"
 #: last_checked: 2023-01-15
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
-#: osm_watch: way id="719023971" version="9"
+#: osm_watch: way id="719023971" version="10"
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
@@ -4469,7 +4473,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: osm_watch: way id="171586571" version="3"
 #: osm_watch: way id="485693846" version="1"
 #: priority: #C
-#: last_checked: 2023-01-13
+#: last_checked: 2023-01-22 (daf)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687

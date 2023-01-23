@@ -480,7 +480,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-01-18 vvv
+#: last_checked: 2023-01-23 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1866,7 +1866,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
-#: osm_watch: way id="82654055" version="17"
+#: osm_watch: way id="82654055" version="18"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: check_frequency: 90d vvv
@@ -2146,7 +2146,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="15"
-#: last_checked: 2022-10-15
+#: last_checked: 2023-01-23
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -4708,7 +4708,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2023-01-07 (mapillary) vvv
+#: last_checked: 2023-01-21 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -7533,7 +7533,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen)
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-11-24
+#: last_checked: 2023-01-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
