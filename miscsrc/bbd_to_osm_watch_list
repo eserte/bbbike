@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,11 +25,11 @@ EOF
 
 use Getopt::Long;
 
-my $filter_for_region = ''; # empty string means: Berlin
+my $filter_for_region; # undef/not set: no filter; empty string: filter for Berlin
 my $with_notes = 1;
 GetOptions
     (
-     "filter-region=s" => \$filter_for_region,
+     "filter-region:s" => \$filter_for_region,
      "without-notes" => sub { $with_notes = 0 },
     )
     or usage;
@@ -75,7 +75,7 @@ for my $infile (@infiles) {
 			 push @errors, "Expected version assignment, but got '$version_assign' in file $infile line $.";
 		     }
 		     $region = '' if !defined $region;
-		     if ($filter_for_region eq $region) {
+		     if (!defined $filter_for_region || $filter_for_region eq $region) {
 			 my $key = "$elemtype-$id_assign";
 			 if (exists $id_seen{$key}) {
 			     # consistency check

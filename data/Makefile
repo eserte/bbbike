@@ -242,8 +242,7 @@ fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextche
 
 fragezeichen-outdoor:		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 
-osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list \
-			${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
+osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list
 
 doit:	berlin_ortsteile berlin inaccessible_landstrassen inaccessible_strassen
 	${PERL} doit.pl
@@ -1290,12 +1289,6 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 ${PERSISTENTTMPDIR}/osm_watch_list:		*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
 	${MISCSRCDIR}/bbd_to_osm_watch_list *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
-	mv $@~ $@
-	-@$(READONLY) $@
-
-${PERSISTENTTMPDIR}/osm_watch_list_brandenburg:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/bbd_to_osm_watch_list -filter-region brb *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
