@@ -1720,8 +1720,12 @@ sub showmap_gdi_berlin {
 
 sub showmap_url_bbviewer {
     my(%args) = @_;
-    # XXX rooturl is hardcoded for "Verkehrsstärke"
-    my $rooturl = 'https://viewer.brandenburg.de/strassennetz/?layerIDs=10021,2062,22,10,11,7,8,5,6,9001,9000&visibility=true,true,true,true,true,true,true,true,true,true,true&transparency=0,0,0,0,0,0,0,0,0,0,0&';
+    # XXX layerids is hardcoded for "Verkehrsstärke"
+    my $layerids = '10021,2062,22,10,11,7,8,5,6';
+    my $number_layerids = scalar split /,/, $layerids;
+    my $visibility = join ',', ("true") x $number_layerids;
+    my $transparency = join ',', ("0") x $number_layerids;
+    my $rooturl = "https://viewer.brandenburg.de/strassennetz/?layerIDs=$layerids&visibility=$visibility&transparency=$transparency&";
     require Geo::Proj4;
     my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25833
 	or die Geo::Proj4->error;
