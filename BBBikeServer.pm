@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2007,2019,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2007,2019,2021,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use strict;
 use vars qw($name $args $VERBOSE $VERSION);
 use Safe;
 
-$VERSION = '1.21';
+$VERSION = '1.22';
 
 #$VERBOSE = 1 if !defined $VERBOSE;
 
@@ -87,9 +87,10 @@ sub running {
     if ($use_inet) {
 	# wie testen? XXX
     } else {
-	if (!-S unix_filename() || !-w unix_filename()) {
+	my $unix_filename = unix_filename();
+	if (!-S $unix_filename || !-w $unix_filename) {
 	    if ($VERBOSE) {
-		print STDERR "Socket/pipe does not exist or is not writable\n";
+		print STDERR "Socket/pipe '$unix_filename' does not exist or is not writable\n";
 	    }
 	    return undef;
 	}
