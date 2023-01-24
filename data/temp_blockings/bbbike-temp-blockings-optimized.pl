@@ -2545,17 +2545,17 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        {
          'data' => '#: next_check_id: MARIENFELDERALLEEBAHN-2021
-#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022) (bis 31.3.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024) (bis 22.2.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-03-31
+#: next_check: 2023-02-23
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -2564,9 +2564,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'from' => undef,
          'id' => 3151,
          'source_id' => '2147344558',
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende März 2023',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Februar 2023, vielleicht sogar bis 2024',
          'type' => 'gesperrt',
-         'until' => 1680274800
+         'until' => 1704124800
        },
        undef,
        undef,
@@ -3348,8 +3348,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: last_checked: 2022-11-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
-	2::temp 9546,9198 9617,9185 9674,9179
-	2::temp 9617,9185 9596,9092
+	2::temp 9553,9196 9566,9194 9614,9186 9674,9179
+	2::temp 9614,9186 9600,9091
 #: tempex ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3412,7 +3412,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: bvg2021:m13#BVG315165_0
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
 #: XXX Aufnahme des Straßenbahnbetriebs für den 28.1.2023 geplant -- wie sieht die Führung für die übrigen Verkehrsteilnehmer aus?
-#: last_checked: 2023-01-21 vvv
+#: last_checked: 2023-01-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-28 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -4142,7 +4142,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (G[ungenau],B[ungenau])
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-24
 #: check_frequency: 14d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -4967,7 +4967,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'data' => '#: next_check_id: SCHOTT-2022
 #: XXX vermutlich Arbeiten der Wasserbetriebe
 #: also_indoor: traffic (B)
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-24
 	q4::inwork; 16255,12224 16276,12273
 ',
          'from' => undef,
@@ -5074,20 +5074,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'handicap',
          'until' => 1681595999
        },
-       {
-         'data' => '#: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
-#: also_indoor: traffic (G,B,W)
-#: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres"
-#: last_checked: 2023-01-19
-#: check_frequency: 7d
-	q3::inwork 7166,8487 7086,8579
-',
-         'from' => undef,
-         'id' => 3712,
-         'text' => 'Albertstr.: Fahrbahn vor der Einmündung Ebersstr. gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: osm_watch: way id="5086382" version="21"
 #: XXX Etwas nördlich wird eine Unterführung entstehen. Eine Unterführung für Radfahrer/Fußgänger existiert evtl. bereits.

@@ -61,7 +61,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 # REMOVED (fertig) --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G) --- #: last_checked: 2020-08-11 --- #: check_frequency: 14d --- Seumestr.: Bauarbeiten an der Kreuzung Gr¸nberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
 #: note: Auﬂerhalb der Arbeitszeiten kann eine Fahrgasse f¸r Radfahrer existieren.
-#: last_checked: 2023-01-22
+#: last_checked: 2023-01-24
 #: next_check: 2023-02-10
 #: valid: -20230210
 Seumestr.: Bauarbeiten vor der Kreuzung W¸hlischstr., Sperrung der Fahrbahn, Bordsteine	q3::inwork 14254,11377 14305,11514
@@ -488,7 +488,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 ### Karlshorst ###
 # 
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023)
-#: last_checked: 2022-12-21
+#: last_checked: 2023-01-24
 #: next_check: 2023-01-31
 #: valid: -20230131
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
@@ -771,7 +771,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraﬂenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2023-01-21
+#: last_checked: 2023-01-24
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraﬂenregelung	q4+::inwork; 15535,12420 15457,12449
@@ -1687,7 +1687,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://berliner-abendblatt.de/2022/05/05/bahnhof-lichtenberg-enhaltestelle-der-strassenbahn-wird-verlegt/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2022-11-28
+#: last_checked: 2023-01-24
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -1787,7 +1787,9 @@ Viktoriapark: Fuﬂg‰nger	q1+ 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 91
 #: note: Gr¸nanlagen-Schild, keine Zusatzschilder
 (Parkweg Mˆllendorffstr. - Rathausstr.): Fuﬂg‰nger	q2 15420,12178 15520,12160 15628,12246
 Bleckmannweg: Fuﬂg‰nger, eng	q1 15658,12231 15756,12212
-Hoenerweg: Fuﬂg‰nger, eng	q1 15668,12304 15790,12289 15896,12273
+#: XXX_prog BS am westlichen Ende (ansonsten q1)
+Hoenerweg: Bordstein, einige Fuﬂg‰nger, eng	q2 15668,12304 15790,12289
+Hoenerweg: einige Fuﬂg‰nger, eng	q1 15790,12289 15896,12273
 S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20120,16258 20110,16230 20125,16255 20116,16228 20133,16256
 S-Bhf. Raoul-Wallenberg-Str. - M‰rkische Allee: einige Fuﬂg‰nger	q2 20133,16256 20120,16297
 # REMOVED (beide Bordsteine sind abgesenkt) --- #: XXX wo genau sind die Bordsteine, auf beiden Seiten?
@@ -3059,8 +3061,8 @@ Regatta-Ufer: Fuﬂg‰nger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,
 Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fuﬂg‰nger	q2 16058,6629 16138,6548
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fuﬂg‰nger, Aufpflasterungen	q2+ 17852,6589 17826,6495
-#: XXX_prog BS nach Osten hin, ansonsten entfernen
-Straﬂe 77: Bordstein	q1 15320,12375 15408,12394
+#: XXX_prog BS nach beiden Seiten hin (wobei man am westlichen Ende am Wendehammer eine Absenkung h‰tte), ansonsten q1
+Straﬂe 77: einige Fuﬂg‰nger, Bordsteine	q2 15320,12375 15408,12394
 Wuhlebr¸cken: Fuﬂg‰nger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
 (oberer Wuhlewanderweg - unterer Wuhlewanderweg): Rampe, einige Fuﬂg‰nger	q2 22873,14498 22849,14449 22847,14488 22840,14494
 Bootshausweg: einige Fuﬂg‰nger	q1+ -1017,16184 -960,16396 -972,16553 -1016,16585 -1033,16621 -1067,16635

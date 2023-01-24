@@ -30220,23 +30220,23 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2023-03-31 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende März 2023',
+       until => $isodate2epoch->("2024-01-01 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Februar 2023, vielleicht sogar bis 2024',
        type  => 'gesperrt',
-       source_id => '2147344558', # bis 2020-09-10
+       source_id => '2147344558', # bis 2020-09-10 # inaktiv
        data  => <<EOF,
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
-#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022) (bis 31.3.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024) (bis 22.2.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-03-31
+#: next_check: 2023-02-23
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -31148,9 +31148,9 @@ S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp::play 11290,1
 S6o - Waldemarstr. zwischen Leuschnerdamm und Adalbertstr.	q4::temp::play 11328,10957 11552,10863
 S7 - Wassertorstr. zwischen Prinzenstr. und Lobeckstr.	q4::temp::play 10685,10483 10484,10567
 S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp::play 9570,10566 9556,10666 9554,10695 9539,10820
-S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp::play 9487,9209 9546,9198 9617,9185 9674,9179
-S9 - Chamissoplatz	q4::temp::play 9546,9198 9526,9104
-S9 - Chamissoplatz	q4::temp::play 9596,9092 9617,9185
+S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp::play 9487,9209 9553,9196 9566,9194 9614,9186 9674,9179
+S9 - Chamissoplatz	q4::temp::play 9553,9196 9540,9102
+S9 - Chamissoplatz	q4::temp::play 9600,9091 9614,9186
 S10 - Böckhstr. zwischen Grimmstr. und Graefestr.	q4::temp::play 11175,9882 11197,9894 11411,9810
 #: note: sowohl Lachmannstr. und Boppstr. waren am 2020-07-26 offen
 S11 - Lachmannstr. zwischen Kottbusser Damm und Schönleinstr.; Boppstr. zw. Kottbusser Damm und Schönleinstr.; Schönleinstr. 7a-13	q4::temp::play 11745,9541 11594,9604 11541,9576 11560,9524 11785,9437
@@ -34067,8 +34067,8 @@ EOF
 #: last_checked: 2022-11-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
-	2::temp 9546,9198 9617,9185 9674,9179
-	2::temp 9617,9185 9596,9092
+	2::temp 9553,9196 9566,9194 9614,9186 9674,9179
+	2::temp 9614,9186 9600,9091
 #: tempex ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -34286,7 +34286,7 @@ EOF
 #: source_id: bvg2021:m13#BVG315165_0
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
 #: XXX Aufnahme des Straßenbahnbetriebs für den 28.1.2023 geplant -- wie sieht die Führung für die übrigen Verkehrsteilnehmer aus?
-#: last_checked: 2023-01-21 vvv
+#: last_checked: 2023-01-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-28 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -36006,7 +36006,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (G[ungenau],B[ungenau])
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-24
 #: check_frequency: 14d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -37474,7 +37474,7 @@ EOF
 #: next_check_id: SCHOTT-2022
 #: XXX vermutlich Arbeiten der Wasserbetriebe
 #: also_indoor: traffic (B)
-#: last_checked: 2022-12-31
+#: last_checked: 2023-01-24
 	q4::inwork; 16255,12224 16276,12273
 EOF
      },
@@ -37569,15 +37569,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1674586792, # undef, # XXX
        text  => 'Albertstr.: Fahrbahn vor der Einmündung Ebersstr. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
-#: also_indoor: traffic (G,B,W)
-#: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres"
-#: last_checked: 2023-01-19
-#: check_frequency: 7d
+#: also_indoor: traffic (G,ex-B,W)
+#: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres", mittlerweile entfernt
+# REMOVED --- #: last_checked: 2023-01-19 --- #: check_frequency: 7d
 	q3::inwork 7166,8487 7086,8579
 EOF
      },

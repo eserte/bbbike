@@ -113,15 +113,15 @@ Jüterboger Str.	N 9799,8962 9951,8965 10266,8946
 Golßener Str.	N 10209,8661 10269,8770 10291,8810
 Golßener Str.	N 10269,8770 10268,8810 10266,8946
 Heimstr.	N 9951,8965 9958,9050 9966,9151 9973,9232
-Willibald-Alexis-Str.	N 9477,9113 9526,9104 9596,9092 9669,9080 9797,9063 9958,9050
+Willibald-Alexis-Str.	N 9477,9113 9540,9102 9589,9093 9600,9091 9669,9080 9797,9063 9958,9050
 Schenkendorfstr.	N 9674,9179 9689,9266
 Am Tempelhofer Berg	N 9295,9047 9298,9112 9304,9241 9309,9347
 Kopischstr.	N 9459,9019 9477,9113
-Arndtstr. (Kreuzberg)	N 9487,9209 9546,9198 9617,9185 9674,9179 9795,9162 9966,9151
+Arndtstr. (Kreuzberg)	N 9487,9209 9553,9196 9566,9194 9614,9186 9674,9179 9795,9162 9966,9151
 Kloedenstr.	N 9654,8991 9669,9080
 Fidicinstr.	N 9224,9053 9295,9047 9459,9019 9654,8991 9799,8962
-Chamissoplatz	N 9526,9104 9546,9198
-Chamissoplatz	N 9596,9092 9617,9185
+Chamissoplatz	N 9540,9102 9553,9196
+Chamissoplatz	N 9600,9091 9614,9186
 Züllichauer Str.	N 10268,8810 10291,8810 10481,8814 10675,8940
 Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10661,8914 10675,8940 10748,9054 10709,9192 10705,9234 10713,9260
 #: note: ehemaliger Flughafen Tempelhof vvv
@@ -378,12 +378,13 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11600 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11621 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11636 (Teileinziehung am Checkpoint Charlie?)
-#: source_id: 2147346249
+#: by: https://berliner-abendblatt.de/2023/01/24/abschnitt-der-friedrichstrasse-ab-montag-wieder-autofrei/ (ab 30.1.2023 autofrei?)
+#: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
 #: last_checked: 2023-01-18
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-12-31
+#: next_check: 2023-01-30
 # REMOVED --- #: valid: !20200821-20221122
 Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # REMOVED --- #: valid: 20200821-20221122 --- Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
@@ -15331,7 +15332,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-24
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15718,7 +15719,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-24
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

@@ -1442,14 +1442,14 @@ Jüterboger Str.	2:Anlieger 10266,8946 9951,8965 9799,8962
 Schwiebusser Str.	2:Anlieger 9801,8889 9417,8890 9227,8890
 Fidicinstr.	2:Anlieger 9799,8962 9654,8991 9459,9019 9295,9047 9224,9053
 Fidicinstr.	1 9224,9053 9295,9047 9459,9019 9654,8991
-Willibald-Alexis-Str.	2:Anlieger 9958,9050 9797,9063 9669,9080 9596,9092 9526,9104 9477,9113
-Arndtstr.	2:Anlieger 9966,9151 9795,9162 9674,9179 9617,9185 9546,9198 9487,9209
+Willibald-Alexis-Str.	2:Anlieger 9958,9050 9797,9063 9669,9080 9600,9091 9589,9093 9540,9102 9477,9113
+Arndtstr.	2:Anlieger 9966,9151 9795,9162 9674,9179 9614,9186 9566,9194 9553,9196 9487,9209
 Heimstr.	2:Anlieger 9951,8965 9958,9050 9966,9151 9973,9232
 Heimstr.	1 9973,9232 9966,9151 9958,9050 9951,8965
 Kopischstr.	2:Anlieger 9459,9019 9477,9113
 Kloedenstr.	2:Anlieger 9654,8991 9669,9080
-Chamissoplatz	2:Anlieger 9596,9092 9617,9185
-Chamissoplatz	2:Anlieger 9526,9104 9546,9198
+Chamissoplatz	2:Anlieger 9600,9091 9614,9186
+Chamissoplatz	2:Anlieger 9540,9102 9553,9196
 Am Tempelhofer Berg	2:Anlieger 9295,9047 9298,9112 9304,9241 9309,9347
 Schleiermacherstr.	1:Anlieger 10032,9456 10004,9268
 #: note: außerdem Einbahnstraße Richtung Osten
@@ -1703,4 +1703,19 @@ Grunerstr./Klosterstr.	3nocross 10849,12557 10873,12577 10950,12640
 # 
 #: note: für Radfahrer entweder rechts über Gehweg umfahrbar, abgesenkte Bordsteine, oder links an der Barriere vorbei, knapp einen Meter Breite
 Allee der Kosmonauten - Poelchaustr.: Barriere	3 * 20309,14431 *
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1096055.php (ab 21.6.2021, voraussichtlich vier Wochen Bauzeit)
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/radweg-im-bergmannkiez_a313770
+#: by: https://abendblatt-berlin.de/2021/06/20/kreuzberg-ein-neuer-radweg-fuer-den-bergmannkiez/
+#: by: https://twitter.com/VIZ_Berlin/status/1407347055304052749
+#: by: https://twitter.com/VIZ_Berlin/status/1413476296613449736
+#: by: https://api.fixmyberlin.de/api/projects/12
+#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/bergmannkiez/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php (Durchfahrsperren, Baubeginn ab 20. Juni 2022)
+#: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1275763.php (in den kommenden Wochen (ab Mitte Dezember 2022))
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fahrradbuegel-auf-strassen_a366953
+#: by: osm
+Chamissoplatz: Poller	3 * 9566,9194 *
+Chamissoplatz: Poller	3 * 9589,9093 *
 # 

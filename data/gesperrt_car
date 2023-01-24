@@ -2148,14 +2148,14 @@ Jüterboger Str.	2:Anlieger 10266,8946 9951,8965 9799,8962
 Schwiebusser Str.	2:Anlieger 9801,8889 9417,8890 9227,8890
 Fidicinstr.	2:Anlieger 9799,8962 9654,8991 9459,9019 9295,9047 9224,9053
 Fidicinstr.	1 9224,9053 9295,9047 9459,9019 9654,8991
-Willibald-Alexis-Str.	2:Anlieger 9958,9050 9797,9063 9669,9080 9596,9092 9526,9104 9477,9113
-Arndtstr.	2:Anlieger 9966,9151 9795,9162 9674,9179 9617,9185 9546,9198 9487,9209
+Willibald-Alexis-Str.	2:Anlieger 9958,9050 9797,9063 9669,9080 9600,9091 9589,9093 9540,9102 9477,9113
+Arndtstr.	2:Anlieger 9966,9151 9795,9162 9674,9179 9614,9186 9566,9194 9553,9196 9487,9209
 Heimstr.	2:Anlieger 9951,8965 9958,9050 9966,9151 9973,9232
 Heimstr.	1 9973,9232 9966,9151 9958,9050 9951,8965
 Kopischstr.	2:Anlieger 9459,9019 9477,9113
 Kloedenstr.	2:Anlieger 9654,8991 9669,9080
-Chamissoplatz	2:Anlieger 9596,9092 9617,9185
-Chamissoplatz	2:Anlieger 9526,9104 9546,9198
+Chamissoplatz	2:Anlieger 9600,9091 9614,9186
+Chamissoplatz	2:Anlieger 9540,9102 9553,9196
 Am Tempelhofer Berg	2:Anlieger 9295,9047 9298,9112 9304,9241 9309,9347
 Schleiermacherstr.	1:Anlieger 10032,9456 10004,9268
 Marheinekeplatz	2:Anlieger 9759,9307 9892,9286
@@ -2328,3 +2328,7 @@ Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,1
 Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10950,12640 10873,12577 10951,12637
 Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10950,12640 10873,12577 10900,12546
 Klosterstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10900,12546 10873,12577 10849,12557
+Chamissoplatz: Poller	3 9553,9196 9566,9194 9614,9186
+Chamissoplatz: Poller	3 9614,9186 9566,9194 9553,9196
+Chamissoplatz: Poller	3 9540,9102 9589,9093 9600,9091
+Chamissoplatz: Poller	3 9600,9091 9589,9093 9540,9102

@@ -222,7 +222,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535 --- #: XXX laut osm wieder Einbahnstraße --- #: osm_watch: way id="30043322" version="17" --- #: last_checked: 2020-12-12 --- #: check_frequency: 60d --- #: next_check: 2020-12-13 --- #: priority: #A --- #: valid: 20201214-
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
-#: last_checked: 2022-12-21
+#: last_checked: 2023-01-24
 #: check_frequency: 60d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -1226,12 +1226,9 @@ Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,1
 Alt-Moabit - Invalidenstr.	1no 7415,13060 7422,13012
 # 
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
-#: next_check_id: PARKAUE-2022
-#: XXX wiederherstellen! (1no -> 1s:q4)
-#: last_checked: 2023-01-06
-# REMOVED --- #: next_check: 2023-10-31
-#: next_check: 2023-01-21
-Parkaue	1no 15406,12444 15408,12394 15370,12264
+# 
+# REMOVED --- #: next_check_id: PARKAUE-2022 --- #: XXX wiederherstellen! (1no -> 1s:q4) --- #: last_checked: 2023-01-06 --- # REMOVED --- #: next_check: 2023-10-31 --- #: next_check: 2023-01-21
+Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 # 
 Stahlheimer Str.	1 11727,16358 11698,16311
 # REMOVED --- #: next_check_id: AMZIRKUS-2014 --- #: XXX bleibt die Einbahnstraßenrichtung permanent? Oder nur während der Arbeiten am Schiffbauerdamm? --- #: last_checked: 2015-05-12 --- 
@@ -3536,7 +3533,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-01-22
+#: last_checked: 2023-01-24
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3849,7 +3846,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: osm_watch: way id="4045220" version="49"
 #: osm_watch: way id="938037386" version="3"
 #: osm_watch: way id="868103791" version="3"
-#: last_checked: 2022-11-25
+#: last_checked: 2023-01-24
 #: check_frequency: 60d
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
@@ -3886,7 +3883,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="5"
-#: last_checked: 2023-01-21
+#: last_checked: 2023-01-24
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
