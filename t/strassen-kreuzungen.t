@@ -287,7 +287,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Nostitz/Arndtstr.
-	my %situation = situation_at_point_inorder($kr, qw(9505,9306 9487,9209 9546,9198));
+	my %situation = situation_at_point_inorder($kr, qw(9505,9306 9487,9209 9553,9196));
 	is($situation{action}, 'left', q{Der Strassenname aendert sich, es sind 90 Grad --- sollte "links" ausgeben});
     }
 }
