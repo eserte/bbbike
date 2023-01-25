@@ -2664,7 +2664,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-25
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5075,20 +5075,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1681595999
        },
        undef,
-       {
-         'data' => '#: osm_watch: way id="5086382" version="21"
-#: XXX Etwas nördlich wird eine Unterführung entstehen. Eine Unterführung für Radfahrer/Fußgänger existiert evtl. bereits.
-#: XXX ggfs. nach gesperrt-orig übertragen
-#: next_check: 2023-01-23
-	2::inwork 11065,-5338 11077,-5335 11119,-5326
-',
-         'from' => 1674378000,
-         'id' => 3713,
-         'source_id' => '207202932',
-         'text' => 'Trebbiner Straße (Mahlow): Bahnübergang gesperrt, 23.01.2023 10:00 Uhr bis 31.12.2023',
-         'type' => 'gesperrt',
-         'until' => 1704060060
-       },
+       undef,
        {
          'data' => '#: next_check_id: ERNSTTHAELMANNPARK-2022
 #: last_checked: 2023-01-20

@@ -31074,7 +31074,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-01-14
+#: last_checked: 2023-01-25
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -37581,15 +37581,12 @@ EOF
 EOF
      },
      { from  => 1674378000, # 2023-01-22 10:00
-       until => 1704060060, # 2023-12-31 23:01
+       until => 1674687863, # 1704060060, # 2023-12-31 23:01
        text  => 'Trebbiner Straße (Mahlow): Bahnübergang gesperrt, 23.01.2023 10:00 Uhr bis 31.12.2023',
        type  => 'gesperrt',
        source_id => '207202932',
        data  => <<EOF,
-#: osm_watch: way id="5086382" version="21"
-#: XXX Etwas nördlich wird eine Unterführung entstehen. Eine Unterführung für Radfahrer/Fußgänger existiert evtl. bereits.
-#: XXX ggfs. nach gesperrt-orig übertragen
-#: next_check: 2023-01-23
+# REMOVED (-> gesperrt-orig) --- #: osm_watch: way id="5086382" version="21" --- #: XXX Etwas nördlich wird eine Unterführung entstehen. Eine Unterführung für Radfahrer/Fußgänger existiert evtl. bereits. --- #: XXX ggfs. nach gesperrt-orig übertragen --- #: next_check: 2023-01-23
 	2::inwork 11065,-5338 11077,-5335 11119,-5326
 EOF
      },
