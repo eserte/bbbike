@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017,2018,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -130,6 +130,7 @@ my $minimize;
 my $sorted;
 my $version_less;
 my @ignore_modules;
+my @ignore_module_rxs;
 GetOptions(
 	   'action=s' => \$action,
 	   'encoding=s' => \$encoding,
@@ -137,6 +138,7 @@ GetOptions(
 	   'sorted' => \$sorted,
 	   'version-less' => \$version_less,
 	   'ignore|ignore-modules=s@' => \@ignore_modules,
+	   'ignore-module-rx=s@' => \@ignore_module_rxs,
 	   'help|?' => sub {
 	       require Pod::Usage;
 	       Pod::Usage::pod2usage(1);
@@ -157,6 +159,11 @@ my @contents = @{ $converter->get_module_defs || [] };
 if (@ignore_modules) {
     my %ignore_modules = map {($_,1)} @ignore_modules;
     @contents = grep { !$ignore_modules{$_->[0]} } @contents;
+}
+if (@ignore_module_rxs) {
+    my $rx = '(?:' . join('|', map { $_ } @ignore_module_rxs) . ')';
+    $rx = qr{$rx};
+    @contents = grep { $_->[0] !~ $rx } @contents;
 }
 if ($sorted) {
     @contents = sort { $a->[0] cmp $b->[0] } @contents;
@@ -199,7 +206,7 @@ parse_bundle.pl - parse a CPAN Bundle file and output contained modules
 
 =head1 SYNOPSIS
 
-    parse_bundle.pl [--encoding ...] [--minimize] [--sorted] [--ignore ...] [--action list|prereq_pm|dump] /path/to/Bundle.pm
+    parse_bundle.pl [--encoding ...] [--minimize] [--sorted] [--ignore ...] [--ignore-module-rx ...] [--action list|prereq_pm|dump] /path/to/Bundle.pm
 
 =head1 DESCRIPTION
 
@@ -250,7 +257,23 @@ Sort the list of modules.
 
 Ignore the specified module (may be specified multiple times).
 
+=item C<--ignore-modules-rx I<rx>>
+
+Use the specified regular expression to ignore modules. May be
+specified multiple times. Note that the regular expressions are not
+automatically "anchored". See L</EXAMPLES> for example usage.
+
 =back
+
+=head2 EXAMPLES
+
+It often happens that timezone related modules are removed, so it
+might be a good idea to exclude these:
+
+    parse_bundle.pl --minimize --sorted \
+        --ignore-module-rx '^Date::Manip::TZ::' \
+        --ignore-module-rx '^DateTime::TimeZone::(Africa|America|Asia|Australia|Europe)::' \
+        ~/.cpan/Bundle/Snapshot.pm
 
 =head1 AUTHOR
 
