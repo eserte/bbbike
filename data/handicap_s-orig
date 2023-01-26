@@ -646,14 +646,14 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2023-01-13 (webcam)
+#: last_checked: 2023-01-26 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: last_checked: 2023-01-13 (webcam)
+#: last_checked: 2023-01-26 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -857,19 +857,19 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023)
-#: also_indoor: traffic (ex-H,B,ex-G)
-#: last_checked: 2023-01-19
+#: also_indoor: traffic (ex-H,B,ex-G,W)
+#: last_checked: 2023-01-26
 #: check_frequency: 90d
 #: next_check: 2023-04-14
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
-#: last_checked: 2023-01-19 vvv
+#: last_checked: 2023-01-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-Gleditschstr.: Hochbauarbeiten, Fahrbahn und östlicher Bürgersteig gesperrt	q3::inwork; 7122,9517 7126,9825
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
+Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4359,6 +4359,8 @@ Hochstr.: Fußgänger, Bordsteine	q3 8933,15872 8917,15851
 #: note: Bordsteine sind zwar abgeflacht, aber Autos können eng parken
 #: note: nicht eindeutige Ausschilderung: an der Nordseite mit Grünanlagen-Schild (+ Radfahren verboten), an der Südseite fehlt so ein Schild
 (Griechischer Park Höhe Parsevalstr.): Grünanlage, einige Fußgänger	q3 18159,6642 18162,6668 18158,6689
+Schönegarten: einige Fußgänger	q1 7416,10492 7432,10546 7337,10587 7330,10590
+Kurfürstenstr. - Pohlstr.: einige Fußgänger	q1 7432,10546 7450,10625
 # 
 ######################### User Contributions #################################
 # 

@@ -36475,7 +36475,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-01-16 (mapillary)
+#: last_checked: 2023-01-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -36517,7 +36517,7 @@ EOF
 # REMOVED (hier nicht mehr, aber vielleicht Bauarbeiten etwas weiter nördlich?) --- #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? --- #: also_indoor: traffic (none) --- #: last_checked: 2022-09-17 ---	q4::inwork; 6753,9814 6747,9912 6741,10017
 #: note: laut Bauschild der Wasserbetriebe bis Mai 2023
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-29 vvv
+#: last_checked: 2023-01-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-31 vvv
 Eisenacher Str.	q3::inwork 6739,10120 6741,10017 6747,9912
@@ -36700,7 +36700,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-01-16 (mapillary) vvv
+#: last_checked: 2023-01-25 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-31 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -36964,7 +36964,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-01-18
+#: last_checked: 2023-01-26
 	q3::inwork 12328,10442 12274,10612
 EOF
      },
@@ -37630,6 +37630,16 @@ EOF
        source_id => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
        data  => <<EOF,
 	q4::inwork; 17608,15010 17562,14992 17231,14979
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Kurfürstenstr. - Pohlstr.: Durchgang nachts zwischen 22:00 und 7:00 geschlossen',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: note: Ausschilderung: Privatgrundstück/Parken im Hof verboten (nur Südseite)/Durchgang zur Pohlstraße (bzw. Kurfürstenstraße) gestattet/22:00-07:00 Uhr geschlossen
+	2::night 7416,10492 7432,10546 7337,10587
 EOF
      },
     );

@@ -389,6 +389,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://berliner-abendblatt.de/2023/01/25/kritik-an-autofreier-friedrichstrasse/
 #: by: https://berliner-abendblatt.de/2023/01/25/ab-montag-friedrichstrasse-soll-wieder-autofrei-werden/
 #: by: https://viz.berlin.de/2023/01/friedrichstrasse-wird-fussgaengerzone/
+#: by: https://berliner-abendblatt.de/2023/01/26/jarasch-hofft-auf-konzeptverfahren-fuer-friedrichstrasse/
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
@@ -875,7 +876,7 @@ Potsdamer Str. (Schöneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
 #: XXX wird die Straße zur Fußgängerzone?
 #: osm_watch: way id="4597334" version="26"
-#: last_checked: 2023-01-16 (mapillary)
+#: last_checked: 2023-01-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
@@ -13408,7 +13409,8 @@ Gleiwitzer Str.	N 21175,9989 20947,9999 20703,10004
 Genthiner Str.	N 7461,11051 7415,10883 7393,10809 7354,10671 7330,10590 7315,10537
 #: note: Privatstraße
 #: osm.highway: service
-Schönegarten	N 7416,10492 7432,10546 7330,10590
+Schönegarten	N 7416,10492 7432,10546 7337,10587 7330,10590
+(Kurfüstenstr. - Pohlstr.)	NN 7432,10546 7450,10625
 Else-Lasker-Schüler-Str.	N 7033,10396 7227,10489 7281,10510
 Else-Lasker-Schüler-Str.	NN 7281,10510 7315,10537
 Kurmärkische Str.	N 7429,10366 7422,10368 7337,10396 7275,10418
@@ -18317,7 +18319,7 @@ Hewaldstr.	N 6377,8460 6385,8274
 Nymphenburger Str.	N 6163,8398 6246,8222
 Mettestr.	N 5910,8170 6009,8101
 Kuppenheimer Str.	NN 5820,8117 5824,8035
-(Parkplatz Möbel Hübner)	NN 7478,10612 7354,10671
+(Parkplatz Möbel Hübner)	NN 7478,10612 7450,10625 7354,10671
 Magdeburger Platz	NN 7393,10809 7414,10804
 Magdeburger Platz	N 7414,10804 7517,10775
 (Herkulesufer - Von-der-Heydtstr.)	NN 7135,11171 7115,11220

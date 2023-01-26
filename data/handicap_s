@@ -45,8 +45,8 @@ Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1::inwork; 2
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig	q1::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
-Gleditschstr.: Hochbauarbeiten, Fahrbahn und östlicher Bürgersteig gesperrt	q3::inwork; 7122,9517 7126,9825
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
+Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
@@ -2392,6 +2392,8 @@ Hochstr.: Fußgänger, Bordsteine	q3 8933,15872 8917,15851
 (Verlängerte Köpenicker Str./Straße E - Waldweg an der S-Bahn): eng	q2 21213,7103 21219,7034 21216,6980 21194,6891
 (Moosstr. - Hartriegelstr.): gemeinsamer Geh- und Radweg, Bordstein an der Hartriegelstr.	q2 18945,5082 18823,5076 18713,5042
 (Griechischer Park Höhe Parsevalstr.): Grünanlage, einige Fußgänger	q3 18159,6642 18162,6668 18158,6689
+Schönegarten: einige Fußgänger	q1 7416,10492 7432,10546 7337,10587 7330,10590
+Kurfürstenstr. - Pohlstr.: einige Fußgänger	q1 7432,10546 7450,10625
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
