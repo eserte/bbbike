@@ -2613,7 +2613,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-16
+#: last_checked: 2023-01-24 (architektur-urbanistik)
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -4142,7 +4142,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (G[ungenau],B[ungenau])
-#: last_checked: 2023-01-24
+#: last_checked: 2023-01-27
 #: check_frequency: 14d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -4530,7 +4530,19 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: rbb-Meldung (verlängert) (nochmal verlängert)
+#: source_id: viz2021:13.339313,52.429351,27.01.2023,09:48 (bis 2.2.2023)
+#: also_indoor: traffic (B,H)
+# REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
+	q4::inwork 6273,2609 6065,2443
+',
+         'from' => 1665772021,
+         'id' => 3652,
+         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 02.02.2023',
+         'type' => 'handicap',
+         'until' => 1675357200
+       },
        undef,
        {
          'data' => '#: next_check_id: GRUENBERGER-2022
@@ -4657,7 +4669,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-01-13 vvv
+#: last_checked: 2023-01-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
@@ -4678,7 +4690,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 ',
          'from' => undef,
          'id' => 3666,
-         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Januar 2023: enger Übergang existiert)',
+         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Ende Januar 2023: enger Übergang existiert, oder man benutzt die Fahrbahnverbindung zum Überqueren)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5039,8 +5051,9 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: next_check_id: EDISON-2022
+#: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-24 (twitter)
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -5101,17 +5114,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'gesperrt',
          'until' => 1675206000
        },
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1617379096828252160#m
-	q4::inwork; 5356,11512 5456,11742
-',
-         'from' => 1674363600,
-         'id' => 3716,
-         'source_id' => 'viz2021:13.329681,52.51005,23.01.2023,06:00',
-         'text' => 'Fasanenstr.: Bauarbeiten zwischen Hertzallee und Müller-Breslau-Str., Radfahrer Richtung Norden sind betroffen, vom 23.01.2023 06:00 bis 27.01.2023 18:00',
-         'type' => 'handicap',
-         'until' => 1674838800
-       },
+       undef,
        {
          'data' => '	q4::inwork; 17608,15010 17562,14992 17231,14979
 ',

@@ -869,11 +869,11 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15110,12107 15361,12071
 #: source_id: viz2021:13.463342,52.514846,28.11.2022,07:00 (Markierungsarbeiten zweischen Mainzer Str. und Gürtelstr., bis 21.12.2022) (bis 23.12.2022) (inaktiv)
-#: source_id: viz2021:13.471776,52.513945,09.01.2023,06:00 (Leitungsarbeiten zwischen Weichselstr. und Jessnerstr., bis 27.1.2023)
+#: source_id: viz2021:13.471776,52.513945,09.01.2023,06:00 (Leitungsarbeiten zwischen Weichselstr. und Jessnerstr., bis 27.1.2023) (bis 7.2.2023)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-01-24
 #: check_frequency: 60d
-#: next_check: 2023-01-27
+#: next_check: 2023-02-07
 	RW2; 14994,12121 15110,12107 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -1967,7 +1967,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-01-15 vvv
+#: last_checked: 2023-01-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -5617,7 +5617,7 @@ Verbundsteinpflaster	RW1;RW1 16227,22963 16271,23030 16304,23077 16315,23094 163
 	RW3;RW3 -3080,15091 -3043,15207 -3034,15217 -2992,15271
 	RW3;RW4? -2992,15271 -2968,15333
 	RW4?;RW3 -2968,15333 -2949,15385
-	RW3;RW3 -2949,15385 -2908,15498 -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3042,16609 -3033,16757 -3031,16807 -3029,16823 -3023,16925 -3018,16974 -3017,16984 -3009,17090
+	RW3;RW3 -2949,15385 -2908,15498 -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3042,16609 -3034,16719 -3033,16757 -3031,16807 -3029,16823 -3023,16925 -3018,16974 -3017,16984 -3009,17090
 #: by: Mareike Biggam:
 	RW6;RW6 -2046,2070 -2208,2010
 #: by: anonymous vvv
@@ -7869,9 +7869,9 @@ Leitboys	RW4; 9254,6542 9249,6642
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
-#: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022) (inaktiv)
+#: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023)
 #: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023) (bis 31.1.2023)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv

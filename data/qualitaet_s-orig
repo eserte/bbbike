@@ -169,9 +169,11 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/naturschutzbund-kritisiert-routenfuehrung-der-geplanten-radschnellverbindungen-durch-gruenanlagen_a288190 (naher Hans-Baluschek-Park erwähnt)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
+#: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023)
 #: osm_watch: way id="102486250" version="19"
 #: last_checked: 2022-12-27
 #: check_frequency: 120d
+#: next_check: 2023-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
@@ -2201,7 +2203,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9520 (Anfrage)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/ekgf3qoJIrr9337BpG4iMbZ0LD6NRaRRMlLcP8ms/jaFrvTVW/25-Anlagen/02/schriftlBeantwortungmdlAnfrageDS0398-IXErneue.pdf
 #: XXX möglicherweise Änderung des Wegbelags
-#: last_checked: 2022-09-29
+#: last_checked: 2023-01-27
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -13118,7 +13120,7 @@ Rosenthaler Grenzweg: fester Sandweg, schlechte Qualität	Q3+ 10380,20720 10501,2
 Uhlandstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23468,8546 23439,8499 23378,8416 23318,8333 23293,8292
 Am Kurzen Weg: Asphalt	Q0 -7185,14574 -7172,14459 -7180,14351
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
-Am Maselakepark: Asphalt	Q0 -2955,16418 -2939,16495 -2666,16447 -2638,16609 -2602,16809
+Am Maselakepark: Asphalt	Q0 -2955,16418 -2939,16495 -2666,16447 -2638,16609 -2629,16653 -2602,16809
 #: note: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
 #: corrected_by: srt
 Bamihlstr.: Asphalt	Q0- -2602,16809 -2585,16900 -2563,17004
@@ -23928,7 +23930,11 @@ Lehndorffstr.: glatter Asphalt	Q0-; 18322,8470 18221,8328
 Lehndorffstr.: Asphalt mit Unebenheiten	Q1+; 18221,8328 18322,8470
 #: confirmed_by ^^^
 #: corrected_by: srt (glatter/ausgebesserter Asphalt -> ...)
-Lehndorffstr.: Asphalt mit leichten Unebenheiten	Q0- 18221,8328 18215,8316 18266,8160 18276,8136 18333,8059
+Lehndorffstr.: Asphalt mit leichten Unebenheiten	Q0- 18221,8328 18215,8316 18266,8160
+#: corrected_by: srt (glatter/ausgebesserter Asphalt -> ...) vvv
+Lehndorffstr.: Asphalt mit einigen Schäden	Q1+; 18266,8160 18276,8136 18333,8059
+Lehndorffstr.: Asphalt mit einigen Schäden	Q1; 18333,8059 18276,8136 18266,8160
+#: corrected_by ^^^
 #: corrected_by: srt (Q0- -> ...)
 Lehndorffstr.: Asphalt	Q0 18333,8059 18412,7985
 #: confirmed_by: anonymous, srt

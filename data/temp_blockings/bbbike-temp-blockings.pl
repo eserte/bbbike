@@ -30696,7 +30696,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-16
+#: last_checked: 2023-01-24 (architektur-urbanistik)
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -36006,7 +36006,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (G[ungenau],B[ungenau])
-#: last_checked: 2023-01-24
+#: last_checked: 2023-01-27
 #: check_frequency: 14d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -36824,11 +36824,12 @@ Triftstr.	q3::inwork 7356,15350 7417,15383 7464,15409
 EOF
      },
      { from  => 1665772021, # 2022-10-14 20:27
-       until => $isodate2epoch->("2023-01-20 18:00:00"), # 1669417200, # 2022-11-26 00:00
-       text  => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 20.01.2023',
+       until => $isodate2epoch->("2023-02-02 18:00:00"), # 1669417200, # 2022-11-26 00:00
+       text  => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 02.02.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: note: rbb-Meldung (verlängert) (nochmal verlängert)
+#: source_id: viz2021:13.339313,52.429351,27.01.2023,09:48 (bis 2.2.2023)
 #: also_indoor: traffic (B,H)
 # REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
 	q4::inwork 6273,2609 6065,2443
@@ -36993,7 +36994,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Januar 2023: enger Übergang existiert)',
+       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Ende Januar 2023: enger Übergang existiert, oder man benutzt die Fahrbahnverbindung zum Überqueren)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: TRESKOWALLEE-2022
@@ -37012,7 +37013,7 @@ EOF
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-01-13 vvv
+#: last_checked: 2023-01-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37540,8 +37541,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: EDISON-2022
+#: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-01-15
+#: last_checked: 2023-01-24 (twitter)
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
