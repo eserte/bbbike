@@ -626,6 +626,9 @@
 	(bbbike-grep-with-args search-key search-val))))
 
 (defun bbbike-grep-with-args (search-key search-val)
+  (bbbike-grep-with-search-term (concat "^#:[ ]*" search-key ":?[ ]*" search-val)))
+
+(defun bbbike-grep-with-search-term (search-term)
   (let ((bbbike-rootdir (bbbike-rootdir))
 	(bbbike-datadir (bbbike-datadir))
 	(fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd")))
@@ -636,7 +639,7 @@
 		  bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl "
 		  bbbike-rootdir "/t/cgi-mechanize.t "
 		  bbbike-rootdir "/t/old_comments.t "
-		  "-e '^#:[ ]*" search-key ":?[ ]*" search-val "'"))))
+		  "-e '" search-term "'"))))
 
 (defun bbbike-grep-button (button)
   (bbbike-grep))
@@ -646,6 +649,13 @@
   'follow-link t
   'face 'bbbike-button
   'help-echo "Click button to grep for the same next_check_id")
+
+(defun bbbike-grep-selection ()
+  (interactive)
+  (let ((sel (bbbike--get-x-selection)))
+    (if sel
+	(bbbike-grep-with-search-term sel) ;; XXX may fail with meta characters
+      (error "No X selection"))))
 
 (defun bbbike-view-url-button (button)
   (let ((url (button-get button :url)))
