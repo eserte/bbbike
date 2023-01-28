@@ -1835,7 +1835,7 @@ Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 Busspur ist immer g¸ltig	RW5; 10431,12709 10352,12627 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-01-16 (mapillary) vvv
+#: last_checked: 2023-01-26 (mapillary) vvv
 #: check_frequency: 14d vvv
 	RW3; 10176,12506 10152,12491
 Bushaltestelle	RW5; 10152,12491 10063,12438
@@ -2594,7 +2594,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-01-11
+#: last_checked: 2023-01-28
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -6193,6 +6193,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 	RW3; 8952,16666 8921,16578
 	RW3; 8921,16578 8776,16268
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11693 (Antrag)
 #: XXX wird aus der Radspur eine Busspur? vvv
 #: last_checked: 2022-11-15 vvv
 #: check_frequency: 60d vvv
@@ -7584,6 +7585,12 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 asphaltiertes Straﬂenbahnkap	RW1;RW1 14461,11738 14416,11815
 asphaltiertes Straﬂenbahnkap	RW1; 13991,11992 14055,11964
 asphaltiertes Straﬂenbahnkap	RW1; 14161,11930 14097,11949
+#: note: im Anschluss Richtung Scharnweberstr. noch ein paar Meter Radweg
+asphaltiertes Straﬂenbahnkap	RW1; 14836,11842 14888,11934
+asphaltiertes Straﬂenbahnkap	RW1; 14888,11934 14836,11842
+asphaltiertes Straﬂenbahnkap	RW1; 15133,11902 15174,11896 15217,11890
+	RW3; 15217,11890 15256,11884
+asphaltiertes Straﬂenbahnkap	RW1; 15174,11896 15133,11902 15077,11910
 	RW4; 14097,11949 14055,11964
 #: by: mapillary
 	RW6;RW6 4471,19124 4519,19040 4934,19075
@@ -7718,6 +7725,9 @@ gesch¸tzter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-sieht-kiez-um-karl-august-platz-bedroht_a352244 (Umbau der Kantstraﬂe geplant)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/radweg-an-der-kantstrasse-in-berlin-aus-pop-up-wird-was-festes-8891569.html (Umbau zwischen Wilmersdorfer und Joachimsthaler ab Anfang 2023)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radweg-auf-der-kantstrasse-behindert-feuerwehr_a370589
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8513
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8524
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8489
 #: last_checked: 2022-12-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
@@ -7920,6 +7930,7 @@ provisorischer Radweg auf dem B¸rgersteig	RW1; 9206,5193 9196,5272 9188,5333 917
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erw‰hnung)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8683 (Antrag)
 #: XXX laut rbbtext Bauarbeiten bis 2021-03-20
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)

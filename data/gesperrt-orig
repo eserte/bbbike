@@ -1214,6 +1214,7 @@ Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
 Am Tierpark [Wohngebiet]	1 18552,10220 18538,10189 18484,10326
 (Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
+#: note: vermutlich nur die letzten Meter vor der Mühlenstr. echte Einbahnstraße
 Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708 21731,13789
 Flankenschanze	1 -3507,15341 -3534,15219
@@ -3533,7 +3534,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-01-27
+#: last_checked: 2023-01-28
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3589,6 +3590,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10578 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10581 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10638 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10811 (Anfrage; der Name "Entenbrücke" wird hier erwähnt)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: osm_watch: way id="27944267" version="15"
 #: last_checked: 2023-01-02 (osm)
@@ -3808,7 +3810,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2022-12-18
+#: last_checked: 2023-01-28
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4030,6 +4032,7 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8677 (Antrag zum Radweg in der Unterführung)
 #: XXX hier wird eine neue Unterführung gebaut vvv
 #: last_checked: 2022-11-20 (bahninfo-forum) vvv
 #: next_check: 2023-07-31 vvv
@@ -4666,14 +4669,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: check_frequency: 90d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
-#: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: osm_watch: way id="276821479" version="5"
-#: XXX möglicherweise mittlerweile offen
-#: last_checked: 2023-01-11
-#: check_frequency: 90d
-#: next_check: 2023-01-22
-Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
-# 
+# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16 --- #: osm_watch: way id="276821479" version="5" --- #: XXX möglicherweise mittlerweile offen --- #: last_checked: 2023-01-11 --- #: check_frequency: 90d --- #: next_check: 2023-01-22 --- Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # REMOVED --- #: osm_watch: way id="193373934" version="11" --- #: osm_watch: node id="5454372526" version="1" --- #: last_checked: 2018-03-18 --- Frauenauer Str.: Straße fertig, aber Zufahrt von der Zwieseler Str. noch gesperrt	2::inwork 19663,9757 19858,9784
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_44_4909_5120_online.pdf (Widmung von Straßenland) --- #: osm_watch: way id="290255259" version="6" --- #: osm_watch: node id="5454372525" version="1" --- #: last_checked: 2018-03-18 --- Kirchdorfer Str.: Straße fertig, aber Verbindung zur Teisnacher Str. noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680

@@ -1083,7 +1083,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-01-25
+#: last_checked: 2023-01-28
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1641,7 +1641,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: osm_watch: way id="4615063" version="35"
 #: last_checked: 2022-11-17
 #: check_frequency: 210d
-#: next_check: 2023-06-30
+#: next_check: 2024-06-30
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178
 Limonenstr.: Kleinsteinpflaster	Q1- 3357,5178 3328,5218
@@ -12681,6 +12681,9 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1212256.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/00_entwurf-b-plan-9-7.pdf (Dammweg wird zum Fußgänger/Radfahrerbereich)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7207 (Vorlage zur Kenntnisnahme)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7401 (Vorlage zur Beschlussfassung)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/o1gHOIz9inLpfChJtoFmL7XSumjcPeHmlGeJUQT9/uvnpvxsi/99-Anlagen/02/DRS0408VB.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7372 (Antrag)
 #: osm_watch: way id="24202434" version="25"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
 #: last_checked: 2023-01-14
@@ -12957,6 +12960,7 @@ Annenstr. [Wohngebiet]: Beton mit einigen Schäden	Q1+ 11192,11429 11259,11391 11
 Ella-Kay-Str. [Wohngebietsstraße]: Beton	Q0- 12173,15040 12214,15018 12136,14868 12095,14888
 (an den Rathenauhallen): wechselnd Asphalt, Beton und Verbundsteinpflaster, teilweise schadhaft	Q1- 18191,6363 18122,6148
 (Griechischer Park Höhe Parsevalstr.): Asphalt	Q0 18159,6642 18162,6668 18158,6689
+Rummelsburger Platz: Asphalt mit einigen Schäden, kurzer Kopfsteinpflasterabschnitt	Q1 12766,11223 12664,11310
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17534,8 +17538,16 @@ Semliner Str.: Beton	Q0 22196,6957 22240,7122
 Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1- 22240,7122 22272,7242 22303,7361
 #: by ^^^
 # 
-#: by: Susanne Zöller:
-Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -6717,12678 -7048,12790 -7141,12821 -7237,12848 -7195,13216 -7183,13324
+#: by: Susanne Zöller: vvv
+Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -6717,12678 -7048,12790 -7141,12821 -7237,12848 -7231,12890 -7219,12993
+#: corrected_by: mapillary (Asphalt, Q0 -> ...)
+Gärtnereiring: Kopfsteinpflaster	Q2 -7219,12993 -7195,13216
+Gärtnereiring: Asphalt	Q0 -7195,13216 -7183,13324
+#: by ^^^
+# 
+#: by: mapillary:
+Gärtnereiring: Kopfsteinpflaster	Q2 -7231,12890 -7345,12930
+# 
 # 
 #: by: Thilo Czerwonka:
 Hennensteig: Kopfsteinpflaster	Q2 15860,156 15760,253 15654,440 15606,529

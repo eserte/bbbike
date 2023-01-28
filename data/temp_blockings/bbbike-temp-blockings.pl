@@ -16345,7 +16345,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-12-28
+#: last_checked: 2023-01-28
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -31074,7 +31074,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-01-25
+#: last_checked: 2023-01-28
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34263,7 +34263,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-09-13 00:00:00"), # 1637599882, # 2021-11-22 17:51
-       until => $isodate2epoch->("2023-01-31 18:00:00"), # 1640036291, # undef, # 1638831600, # 2021-12-07 00:00
+       until => 1674900363, # $isodate2epoch->("2023-01-31 18:00:00"), # 1640036291, # undef, # 1638831600, # 2021-12-07 00:00
        text  => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, abschnittsweise Gehweg für Radfahrer frei, voraussichtlich bis 31.01.2023',
        type  => 'handicap',
        data  => <<EOF,
@@ -34282,13 +34282,9 @@ EOF
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022) (bis 31.01.2023)
 #: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00 (mittlerweile bis 31.1.2023)
-#: source_id: bvg2021:m13#BVG313614_0
+# REMOVED --- #: source_id: bvg2021:m13#BVG313614_0
 #: source_id: bvg2021:m13#BVG315165_0
-#: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: XXX Aufnahme des Straßenbahnbetriebs für den 28.1.2023 geplant -- wie sieht die Führung für die übrigen Verkehrsteilnehmer aus?
-#: last_checked: 2023-01-24 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2023-01-28 vvv
+# REMOVED --- #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz --- #: XXX Aufnahme des Straßenbahnbetriebs für den 28.1.2023 geplant -- wie sieht die Führung für die übrigen Verkehrsteilnehmer aus? --- #: last_checked: 2023-01-24 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2023-01-28 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr. (Traveplatz)	q4::inwork; 14836,11842 14802,11784 14798,11777
 #: note: mittlerweile ist das Schild abhanden gekommen
@@ -34299,9 +34295,7 @@ Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
 Müggelstr.	q4::inwork 14901,11808 14836,11842
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #	q3::inwork 14965,11924 15077,11910
 #	q3::inwork; 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
 #	q3::inwork 14965,11924 14888,11934 14836,11842
@@ -36700,7 +36694,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-01-25 (mapillary) vvv
+#: last_checked: 2023-01-27 (bahninfo-forum) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-01-31 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -36860,7 +36854,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-22
+#: last_checked: 2023-01-28
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -37576,6 +37570,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.35542,52.48264,25.11.2022,13:51 (Albertstraße (Schöneberg) in beiden Richtungen zwischen Ebersstraße und Albertstraße 3: wegen Baustelle gesperrt, vom 25.11.2022 13:51 bis 02.12.2022 23:59) (vorfristig inaktiv)
+#: by: https://abload.de/image.php?img=2021vs20220hdkr.jpg (tatsächlich keine Bauarbeiten mehr)
 #: also_indoor: traffic (G,ex-B,W)
 #: note: bei rbb bis 16.12.2022 verlängert, mittlerweile bis 2.1.2023, mittlerweile "bis auf weiteres", mittlerweile entfernt
 # REMOVED --- #: last_checked: 2023-01-19 --- #: check_frequency: 7d
