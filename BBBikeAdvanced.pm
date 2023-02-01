@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1353,7 +1353,7 @@ sub _find_coords {
 	if (
 	    $s =~ m{https://dev.virtualearth.net/REST/v1/Locations/([-+]?[0-9\.]+),([-+]?[0-9\.]+)} ||
 	    $s =~ m{https://dev.virtualearth.net/REST/V1/Imagery/Copyright/de-DE/RoadOnDemand/\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)} ||
-	    $s =~ m{https://www.bing.com/maps.*cp=([-+]?[0-9\.]+)~([-+]?[0-9\.]+)}
+	    $s =~ m{https://www.bing.com/maps.*cp=([-+]?[0-9\.]+)(?:~|%7E)([-+]?[0-9\.]+)}
 	   ) {
 	    my($y,$x) = ($1,$2);
 	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
