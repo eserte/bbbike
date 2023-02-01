@@ -40,7 +40,7 @@ my $json = `cat /tmp/bvg_checker_disruption_reports.json`;
 my $d = decode_json $json;
 
 my @records;
-for my $dd (@{ $d->{data}->{allDisruptions}->{disruptions} }) {
+for my $dd (@{ $d->{data}->{allDisruptions} }) {
     next if $dd->{"__typename"} eq "Elevator";
     my $from = "$dd->{gueltigVonDatum} $dd->{gueltigVonZeit}";
     my $sourceid = "bvg2021:" . lc($dd->{linie}) . "#" . $dd->{meldungsId};

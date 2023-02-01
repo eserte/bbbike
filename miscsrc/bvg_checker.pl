@@ -121,7 +121,7 @@ sub find_active_sourceids_bvg2022 {
     my $disruption_reports_query_url = 'https://www.bvg.de/disruption-reports/q';
     # query as issued on https://www.bvg.de/de/verbindungen/stoerungsmeldungen
     my $query = <<'EOF';
-{"variables":{},"query":"{\n  allDisruptions {\n    disruptions {\n      meldungsId\n      linie\n      verkehrsmittel\n      __typename\n      ... on Elevator {\n        datum\n        gueltigVonDatum\n        gueltigVonZeit\n        gueltigBisDatum\n        gueltigBisZeit\n        bahnhof\n        bahnhofHafasId\n        meldungsTextDE\n        meldungsTextEN\n        __typename\n      }\n      ... on Traffic {\n        datum\n        gueltigVonDatum\n        gueltigVonZeit\n        gueltigBisDatum\n        gueltigBisZeit\n        richtungName\n        richtungHafasId\n        beginnAbschnittName\n        beginnAbschnittHafasId\n        endeAbschnittName\n        endeAbschnittHafasId\n        textIntUrsache\n        sev\n        textIntAuswirkung\n        umfahrung\n        textWAPSMSUrsache\n        textWAPSMSAuswirkung\n        prioritaet\n        __typename\n      }\n    }\n    __typename\n  }\n}\n"}
+{"variables":{},"query":"{\n  allDisruptions {\n    meldungsId\n    linie\n    verkehrsmittel\n    __typename\n    ... on Elevator {\n      datum\n      gueltigVonDatum\n      gueltigVonZeit\n      gueltigBisDatum\n      gueltigBisZeit\n      bahnhof\n      bahnhofHafasId\n      meldungsTextDE\n      meldungsTextEN\n      __typename\n    }\n    ... on Traffic {\n      datum\n      gueltigVonDatum\n      gueltigVonZeit\n      gueltigBisDatum\n      gueltigBisZeit\n      richtungName\n      richtungHafasId\n      beginnAbschnittName\n      beginnAbschnittHafasId\n      endeAbschnittName\n      endeAbschnittHafasId\n      textIntUrsache\n      sev\n      textIntAuswirkung\n      umfahrung\n      textWAPSMSUrsache\n      textWAPSMSAuswirkung\n      prioritaet\n      __typename\n    }\n  }\n}\n"}
 EOF
 
     require LWP::UserAgent;
@@ -141,7 +141,7 @@ EOF
     }
     my $data = JSON::XS::decode_json($json);
     my %links;
-    for my $disruption (@{ $data->{data}->{allDisruptions}->{disruptions} }) {
+    for my $disruption (@{ $data->{data}->{allDisruptions} }) {
 	my $linie = $disruption->{linie};
 	my $meldungsId = $disruption->{meldungsId};
 	my $source_id = lc($linie).'#'.$meldungsId;
