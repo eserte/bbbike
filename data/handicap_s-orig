@@ -10,6 +10,17 @@
 # 
 ### Friedrichshain ###
 # 
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate)
+#: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
+#: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
+#: source_id: bvg2021:m43#BVG315520_0
+#: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen)
+#: note: offizielle Wegführung über den linken Gehweg
+#: XXX Trotz Baustellenplan muss man sich das genauer anschauen, insbesondere die Wegführung Richtung Norden
+#: next_check: 2023-01-30
+#: valid: -20230517
+Untere Kynaststr.: vor der Einmündung auf den linken Gehweg ausweichen	q3::inwork; 14828,10561 14832,10512 14815,10516 14805,10518
+# 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931
 #: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html
@@ -59,13 +70,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (weitgehend fertig) --- #: next_check_id: HAASE-2019 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019)) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-02 --- Haasestr.: Bauarbeiten, mögliche Behinderungen	q3::inwork 14328,11320 14286,11186
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # REMOVED (fertig) --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G) --- #: last_checked: 2020-08-11 --- #: check_frequency: 14d --- Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
-# 
-#: note: Außerhalb der Arbeitszeiten kann eine Fahrgasse für Radfahrer existieren.
-#: last_checked: 2023-01-28
-#: next_check: 2023-02-10
-#: valid: -20230210
-Seumestr.: Bauarbeiten vor der Kreuzung Wühlischstr., Sperrung der Fahrbahn, Bordsteine	q3::inwork 14254,11377 14305,11514
-# 
+# REMOVED (vorfristig fertig) --- #: note: Außerhalb der Arbeitszeiten kann eine Fahrgasse für Radfahrer existieren. --- #: last_checked: 2023-01-28 --- #: next_check: 2023-02-10 --- #: valid: -20230210 --- Seumestr.: Bauarbeiten vor der Kreuzung Wühlischstr., Sperrung der Fahrbahn, Bordsteine	q3::inwork 14254,11377 14305,11514
 # REMOVED (beendet) --- #: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein? (-> nein) --- #: last_checked: 2020-08-02 --- #: check_frequency: 7d --- # REMOVED --- #: valid: -20200724 --- Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 # REMOVED (keine Einschränkungen mehr) --- #: next_check_id: STRALAUER-2019 --- #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv) --- #: also_indoor: traffic (G) --- #: last_checked: 2020-07-08 --- #: next_check: 2020-07-11 --- #: valid: 20190319-20200717 --- Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
@@ -227,14 +232,6 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 # 
-#: next_check_id: TACHELES-2020
-#: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
-#: also_indoor: traffic
-#: last_checked: 2023-01-15 (daf)
-#: check_frequency: 30d
-#: next_check: 2023-06-30
-Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
-# 
 # REMOVED (keine Einbahnstraße, sondern nur noch eine Gegenverkehrsregelung (wobei das Schild auf der westlichen Seite fehlt) --- #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022 --- #: osm_watch: way id="184632250" version="3" --- #: last_checked: 2022-11-30 --- #: next_check: 2022-12-31 --- Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 # 
 #: next_check_id: ROSENTHALER-2022
@@ -310,8 +307,6 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
-# 
-# REMOVED --- #: next_check_id: FRIEDRICH-2020 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541 --- #: last_checked: 2022-11-17 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2022-11-22 --- # REMOVED --- #: valid: 20200821-20211031 --- Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 # REMOVED (Radfahrer frei) --- #: priority: #A --- #: source_id: 2147345515 (bis 30.4.2021) --- #: XXX bei rbbtext bis 20.10.2020 --- #: last_checked: 2020-10-02 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2021-04-30 --- # REMOVED --- #: valid: -20200918 --- Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork 10459,13760 10445,13675
 # REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX siehe auch strassen-orig-Eintrag --- #: last_checked: 2020-11-07 --- #: check_frequency: 60d --- #: next_check: 2021-03-01 --- #: valid: -20210301 --- (Umfahrung Kieler Str.): Fußgänger, Kurven	q2::inwork 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
@@ -487,10 +482,10 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 ### Karlshorst ###
 # 
-#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023)
+#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023)
 #: last_checked: 2023-01-24
-#: next_check: 2023-01-31
-#: valid: -20230131
+#: next_check: 2023-07-31
+#: valid: -20230731
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 #: next_check_id: WANDLITZ-2021
@@ -959,8 +954,8 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022 (kann vermutlich nicht gehalten werden)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="15"
-#: osm_watch: way id="885619858" version="10"
+#: osm_watch: way id="885619857" version="16"
+#: osm_watch: way id="885619858" version="11"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
@@ -4363,6 +4358,12 @@ Hochstr.: Fußgänger, Bordsteine	q3 8933,15872 8917,15851
 (Griechischer Park Höhe Parsevalstr.): Grünanlage, einige Fußgänger	q3 18159,6642 18162,6668 18158,6689
 Schönegarten: einige Fußgänger	q1 7416,10492 7432,10546 7337,10587 7330,10590
 Kurfürstenstr. - Pohlstr.: einige Fußgänger	q1 7432,10546 7450,10625
+# 
+#: next_check_id: FRIEDRICH-2020
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
+#: by: https://www.bahninfo-forum.de/read.php?9,757005,757414#msg-757414
+# REMOVED --- #: last_checked: 2022-11-17 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2022-11-22 --- # REMOVED --- #: valid: 20200821-20211031 ---
+Friedrichstr.: Fußgängerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 ######################### User Contributions #################################
 # 

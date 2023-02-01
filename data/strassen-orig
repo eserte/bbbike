@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-01-18 vvv
+#: last_checked: 2023-01-31 (mapillary) vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -393,14 +393,14 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.bahninfo-forum.de/read.php?9,757005,757005#msg-757005 (Radfahren bleibt erstmal in Schrittgeschwindigkeit gestattet)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_04_0361_0452_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11668 (Anfrage)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/harsche-kritik-am-alleingang-der-senatorin_a370655
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/senatorin-fuehrt-fussgaengerzone-auf-friedrichstrasse-im-alleingang-ein_a371027
+#: by: https://berliner-abendblatt.de/2023/01/30/anrainer-der-friedrichstrasse-widersprueche-und-klagen/
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
-#: priority: #A
-#: last_checked: 2023-01-18
-#: check_frequency: 30d
-#: next_check: 2023-01-30
+# REMOVED --- #: priority: #A --- #: last_checked: 2023-01-18 --- #: check_frequency: 30d --- #: next_check: 2023-01-30
 # REMOVED --- #: valid: !20200821-20221122
-Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
+Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # REMOVED --- #: valid: 20200821-20221122 --- Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 Friedrichstr. (Mitte, Kreuzberg)	H 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662 9303,12718 9298,12765 9286,12886 9279,12953 9269,13060 9262,13111 9254,13171 9246,13235 9225,13389 9212,13471
@@ -878,7 +878,7 @@ Potsdamer Str. (Schöneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 #: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
 #: XXX wird die Straße zur Fußgängerzone?
-#: osm_watch: way id="4597334" version="26"
+#: osm_watch: way id="4597334" version="27"
 #: last_checked: 2023-01-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31

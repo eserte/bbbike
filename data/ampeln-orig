@@ -17,7 +17,7 @@
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-01-22 (mapillary) vvv
+#: last_checked: 2023-01-29 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
@@ -31,13 +31,13 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: last_checked ^^^
 # 
 #: next_check_id: ORANIENBURGERTORTRAM-2022
-#: next_check: 2023-01-30 vvv
-#: valid: -20230130 vvv
+#: next_check: 2023-03-02 vvv
+#: valid: -20230302 vvv
 #: XXX schon seit mehreren Tagen anscheinend ausgeschaltet
-#: last_checked: 2023-01-25 (mapillary)
+#: last_checked: 2023-01-31 (mapillary)
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-01-12 (mapillary)
+#: last_checked: 2023-01-26 (mapillary)
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -78,26 +78,12 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 B179/Fichtestr.	X::inwork 26138,-12596
 # 
 # REMOVED --- #: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert) (bis 28.9.2022) (nicht verlängert) --- #: source_id: viz2021:13.183144,52.423471,27.10.2022,10:00 (bis 23.11.2022) --- #: note: laut rbb bis 28.10.2022 --- #: next_check: 2022-11-23 --- #: valid: -20221123 --- Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
-# 
-#: next_check_id: HAEMMERLING-2022
-#: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022)
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023)
-#: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
-#: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
-#: last_checked: 2023-01-15 vvv
-#: next_check: 2023-01-31 vvv
-#: valid: -20230131 vvv
-Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317
-Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
+# REMOVED (vermutlich wegen der Sperrung nicht mehr) --- #: next_check_id: HAEMMERLING-2022 --- #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022) --- #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) --- #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m --- #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig --- #: last_checked: 2023-01-15 vvv --- #: next_check: 2023-01-31 vvv --- #: valid: -20230131 vvv --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317 --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022) --- #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022) (bis 18.11.2022) --- #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt) --- #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022) --- #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung) --- #: last_checked: 2022-11-07 --- #: next_check: 2022-11-18 --- #: valid: -20221118 --- Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2023-01-23
+#: last_checked: 2023-01-31 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -210,7 +196,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2023-01-05
+#: last_checked: 2023-01-31 (mapillary)
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -2423,12 +2409,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
-# REMOVED --- #: note: vorhandene Ampel ist dauerhaft abgeschaltet
-#: last_checked: 2023-01-18
+#: note: vorhandene Ampel ist vermutlich dauerhaft abgeschaltet
+#: last_checked: 2023-01-31 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 # REMOVED --- #: valid: !20200821-20211031
-	X 9418,11804
+	X0 9418,11804
 # 
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
 #: by: Andreas Mühlhausen: vvv

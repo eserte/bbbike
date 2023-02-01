@@ -74,7 +74,11 @@ Kopenhagener Str.: Fahrbahn asphaltiert, Radweg mit Verbundsteinpflaster	Q0 7481
 Hauptstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7634,19793 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219 7900,20378 7979,20528 8055,20708 8081,20785 8092,20817 8107,20859 8158,21022
 # REMOVED --- #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/schwerlaster-sorgen-fuer-laerm-und-erschuetterungen_a306048 (Asphaltierung noch 2021) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1102115.php (Bauende voraussichtlich Mitte September 2021) --- #: by: https://www.berliner-woche.de/rosenthal/c-bauen/die-fahrbahn-wird-erneuert_a318102 --- #: source_id: viz2021:13.37551,52.597215,16.07.2021,06:00 (Fahrbahnsanierung bis 23.8.2021) --- #: XXX ist die Fahrbahn mittlerweile asphaltiert? --- #: next_check: 2021-08-23
 Hauptstr. (Rosenthal, Wilhelmsruh): Fahrbahn asphaltiert, Radweg mit Verbundsteinpflaster	Q0 8277,21257 8158,21022
-Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
+Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863
+#: historical_note: früher schlechtes Kopfsteinpflaster (12 km/h), Q3
+#: by: mapillary
+Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: Asphalt	Q0 8568,21863 8556,21918 8400,22010 8430,22110
+Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 (Asphaltierung??) --- #: XXX: wurden Bahnhofstr. und Hauptstr. in Blankenfelde mittlerweile asphaltiert? Oder ist nur der östliche Abschnitt gemeint? vvv --- #: osm_watch: way id="444587490" version="1"
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 # REMOVED --- #: osm_watch: way id="30768385" version="11"

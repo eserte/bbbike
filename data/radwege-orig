@@ -766,7 +766,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Wedding
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2022-11-08 vvv
+#: last_checked: 2023-01-30 (mapillary) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -2273,10 +2273,11 @@ die letzten 60 Meter sind benutzungspflichtig, Grünbeschichtung	RW3; 11736,15727
 #: note: Wichertstr. Richtung Osten
 Grünbeschichtung	RW4; 11941,15586 11736,15727
 Grünbeschichtung	RW3; 11736,15727 11567,15842 11445,15920 11307,15995 11214,16043 10982,16121
+Grünbeschichtung bzw. grüner Asphalt, Radspur teilweise hinter den parkenden Autos	RW4; 11941,15586 12245,15380 12325,15328 12417,15272 12704,15105
 # 
 #: by: Jens-Michael Schau (nördliche Fahrbahn)
 #: confirmed_by: srt (RW3!)
-	RW3;RW3 11941,15586 12245,15380 12325,15328 12417,15272 12704,15105
+	RW3; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
 #: by: Jens-Michael Schau vvv
 #: confirmed_by: srt (RW3!)
 	RW3;RW3 12704,15105 12807,15045 13107,14873 13148,14850
@@ -4708,7 +4709,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2023-01-21 (mapillary) vvv
+#: last_checked: 2023-01-28 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -7881,8 +7882,8 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022) (inaktiv)
+#: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023)
-#: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023) (bis 31.1.2023)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-12-23 vvv

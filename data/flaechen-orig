@@ -691,7 +691,7 @@ Gipsdreieck	F:P 10134,13474 10135,13506 10159,13523 10142,13556 10049,13528 1002
 #: osm_watch: way id="380356153" version="10"
 #: XXX neuer Name: Susanne-und-Kurt-Crohn-Platz
 #: add_fragezeichen: Hängen bereits Schilder für den Susanne-und-Kurt-Crohn-Platz?
-#: last_checked: 2023-01-07
+#: last_checked: 2023-01-28 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-11-23
 	F:P 11447,16507 11535,16498 11542,16384 11470,16394 11448,16398 11447,16507
@@ -1095,11 +1095,11 @@ Kolonie Eigenheim an der Rothenbachstr.	F:Orchard 12455,18276 12113,18451 12089,
 #: by: https://stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2102/nachricht7039.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/campus-wei%C3%9Fensee-wei%C3%9Fensee-kunsthochschule-berlin.928/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6440 (Ersatzfläche an der Hansastraße 173)
-#: osm_watch: way id="59378805" version="14"
+#: osm_watch: way id="59378805" version="15"
 #: last_checked: 2021-07-31
 #: check_frequency: 720d
 #: next_check: 2025-01-01
-KGA Hamburg	F:Orchard 12668,17224 12736,17122 12632,17037 12562,17135
+KGA Hamburg	F:Orchard 12668,17224 12736,17122 12632,17037 12562,17135 12668,17224
 	F:Industrial 12348,17320 12151,17409 12104,17309 11893,17397 12010,16774 12230,16915 12267,16946 12299,17098 12348,17320
 Pasedagplatz	F:P 14136,17170 14167,17215 14151,17234 14127,17237 14099,17195 14136,17170
 Joe-May-Platz	F:P 14266,17227 14282,17186 14343,17228 14266,17227
@@ -1374,6 +1374,7 @@ Jugendplatz	F:P 1184,14515 1235,14609 1244,14558 1262,14510 1184,14515
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8342
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8583 (Benennung nach Ursula Mamlok vorgeschlagen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_03_0297_0360_online.pdf (Benennung zum 1.2.2023)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1290474.php
 #: oldname: -20230201: <namenslos>
 Ursula-Mamlok-Park	F:P 7118,9870 7092,10025 7187,9999 7173,9935 7121,9850 7118,9870
 	F:P 10211,2845 10196,2771 10255,2756 10266,2804 10293,2818 10295,2833 10212,2851 10211,2845
@@ -1834,17 +1835,17 @@ Park	F:P 13160,3534 13625,3242 13623,3310 13646,3328 13682,3285 13700,3204 13662
 Wald am Hegemeisterweg	F:Forest 18119,7996 18287,7815 18325,7778 18406,7760 18256,7520 18049,7621 17953,7471 18103,7271 18010,7133 17527,7812 17771,7880 17762,7931 17859,8045 18042,8040 18119,7996
 Anneliese und Georg-Groscurth-Platz	F:P 1638,12250 1607,12154 1579,12161 1608,12257
 Kienhorstpark	F:P 6435,18839 6415,19083 5850,19092 5837,18957 5391,18932 5390,18883 5555,18867 5549,18813 5550,18775 5635,18776 5637,18817 5825,18835 5830,18779 5869,18779 5843,18936 6064,18971 6125,18966 6360,18861 6435,18839
-Bahnhofspark	F:P 6435,18839 6483,18890 6521,18852 6544,18929 6668,18921 6687,19021 6476,19081 6415,19083
-KGA Bornholm I	F:Orchard 10197,16528 10209,16674 10200,16850 9945,16865 9921,16770 9943,16550
+Bahnhofspark	F:P 6435,18839 6483,18890 6521,18852 6544,18929 6668,18921 6687,19021 6476,19081 6415,19083 6435,18839
+KGA Bornholm I	F:Orchard 10197,16528 10209,16674 10200,16850 9945,16865 9921,16770 9943,16550 10197,16528
 #: XXX Teile der KGA sollen bebaut werden
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-umwelt/pankower-bezirksverordnete-geben-pruefauftrag-fuer-idee-der-kleingaertner_a262150
-#: osm_watch: way id="25841750" version="10"
-#: last_checked: 2022-08-29 (mapillary)
+#: osm_watch: way id="25841750" version="11"
+#: last_checked: 2023-01-28 (mapillary)
 #: check_frequency: 180d
-KGA Bornholm II	F:Orchard 10209,16674 10474,16655 10490,16914 10229,16927 10190,16930
-KGA Sandwüste	F:Orchard 10200,16850 10190,16930 10013,16972 9970,16970 9945,16865
-Friedhof Pankow II	F:Cemetery 9871,17596 9781,17531 9856,17429 9943,17493
-Hirschgartendreieck	F:Forest 23942,5338 24487,5550 24582,5318 24699,5341 24739,4920 24681,4943 24070,5272
+KGA Bornholm II	F:Orchard 10209,16674 10474,16655 10490,16914 10229,16927 10190,16930 10209,16674
+KGA Sandwüste	F:Orchard 10200,16850 10190,16930 10013,16972 9970,16970 9945,16865 10200,16850
+Friedhof Pankow II	F:Cemetery 9871,17596 9781,17531 9856,17429 9943,17493 9871,17596
+Hirschgartendreieck	F:Forest 23942,5338 24487,5550 24582,5318 24699,5341 24739,4920 24681,4943 24070,5272 23942,5338
 	F:P 5632,760 5735,807 5862,815 5962,829 6065,830 6160,830 6258,842 6357,832 6401,837 6443,1019 6498,1004 6459,817 6356,814 6258,824 6162,812 5964,812 5863,797 5744,790 5641,742
 Tennisplätze	F:Sport 5670,778 5735,807 5823,812 5804,968 5628,860
 KGA Südpark	F:Orchard 5628,860 5804,968 5821,1049 5721,1070 5683,1032 5573,953
