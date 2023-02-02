@@ -1,0 +1,207 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2023 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use warnings;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+
+use Encode qw(decode);
+use File::Glob qw(bsd_glob);
+use Getopt::Long;
+use I18N::Langinfo qw(langinfo CODESET);
+
+use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
+use Strassen::Core;
+
+our $VERSION = '0.01';
+
+my $bbbike_datadir = bbbike_root . '/data';
+my $bbbike_aux_datadir = defined bbbike_aux_dir ? bbbike_aux_dir . '/bbd' : undef;
+
+my $codeset = langinfo(CODESET());
+$codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
+binmode STDOUT, ":encoding($codeset)";
+binmode STDERR, ":encoding($codeset)";
+$_ = decode($codeset, $_) for @ARGV;
+
+# XXX should be configurable, by using both filesets and files
+my @search_files = (
+		    bsd_glob("$bbbike_datadir/*-orig"),
+		    bsd_glob("$bbbike_datadir/*.coords.data"),
+		    "$bbbike_datadir/temp_blockings/bbbike-temp-blockings.pl",
+		    (defined $bbbike_aux_datadir ? 
+		     ("$bbbike_aux_datadir/fragezeichen_lowprio.bbd",
+		      "$bbbike_aux_datadir/mudways.bbd") : ()
+		    ),
+		   );
+
+my $searchterm_type = 'fixed';
+my $case_insens     = 1;
+
+my $with_line_number;
+
+my $debug;
+sub debug ($) { warn "$_[0]\n" if $debug }
+
+Getopt::Long::Configure('noignore_case', 'noauto_abbrev', 'auto_version', 'auto_help');
+GetOptions(
+	   'rx|regex|regexp'       => sub { $searchterm_type = 'rx' },
+	   'fixed'                 => sub { $searchterm_type = 'fixed' },
+	   'case|case-sensitive|I' => sub { $case_insens = 0 },
+	   'n|line-number'         => \$with_line_number,
+	   'add-file=s'            => sub { push @search_files, $_[1] },
+	   'debug'                 => \$debug,
+	  )
+    or die "usage?";
+
+# XXX allow multiple search terms? do or/and searches?
+my $searchterm = shift
+    or die "usage? searchterm missing";
+
+if ($searchterm_type eq 'fixed') {
+    $searchterm = quotemeta($searchterm);
+}
+my $search_rx = $case_insens ? qr{$searchterm}i : qr{$searchterm};
+
+debug "search $searchterm (case " . ($case_insens ? "in" : "") . "sensitive) ($searchterm_type)...";
+my $errors = 0;
+my $hits = 0;
+my $file_hits = 0;
+for my $file (@search_files) {
+    debug "  $file...";
+    # XXX getting the global directives should be skipped for non-bbd files (coords.data, temp blockings, maybe added files)
+    my $dir = Strassen->get_global_directives($file); # XXX can this throw an exception?
+    my $encoding = $dir->{encoding}->[0] || 'iso-8859-1';
+    my $local_hits = 0;
+    open my $fh, $file
+	or do {
+	    warn "ERROR: Can't open $file ($!), skipping...\n";
+	    $errors++;
+	    next;
+	};
+    binmode $fh, ":encoding($encoding)";
+    while(<$fh>) {
+	if ($_ =~ $search_rx) {
+	    chomp;
+	    print "$file:";
+	    if ($with_line_number) {
+		print "$.:";
+	    }
+	    print $_;
+	    print "\n";
+	    $local_hits++;
+	}
+    }
+
+    if ($local_hits) {
+	$file_hits++;
+	$hits += $local_hits;
+    }
+}
+
+if ($debug) {
+    debug "\nStatistics:";
+    debug "  Hits:      $hits";
+    debug "  File hits: $file_hits";
+}
+
+if ($errors) {
+    exit 2;
+} elsif (!$hits) {
+    exit 1;
+} else {
+    exit 0;
+}
+
+__END__
+
+=head1 NAME
+
+bbbike-grep - specialized grep for bbbike data
+
+=head1 SYNOPSIS
+
+    bbbike-grep [--rx|--fixed] [--case-sensitive] [-n] [--add-file file] [--debug] searchterm
+
+=head1 DESCRIPTION
+
+A commandline tool for searching in BBBike data files. It's modelled
+after traditional L<grep(1)>, but with some differences:
+
+=over
+
+=item * By default it searches in BBBike data files, in the same
+repository as C<bbbike-grep> itself. It's possible to add further
+files for search (see L</--add-file>), but (currently) it's not
+possible to search completely different files.
+
+=item * It knows about the encoding of BBBike data files, and
+automatically switches between C<iso-8859-1>, C<utf-8>, or whatever is
+specified. It also knows the encoding of the current terminal, and
+handles input parameters and output correctly.
+
+=item * Regexps (like traditional grep) or fixed strings (like fgrep)
+may be used. The default is "fixed", unlike grep.
+
+=item * By default the search is done in a case insenitive way (unlike
+grep).
+
+=back
+
+=head2 OPTIONS
+
+=over
+
+=item C<--rx> (aliases: C<--regex>, C<--regexp>)
+
+Specify that search term should be treated as a Perl regular
+expression, similar like C<grep -P>.
+
+=item C<--fixed>
+
+Specify that search term should be treated as a fixed string, similar
+like L<fgrep(1)>. This is the default.
+
+=item C<--case-sensitive> (aliases: C<--case>, C<-I>)
+
+Specify that the search term should be used in a case sensitive way.
+By default it is case insensitive. Note that this differs from
+traditional L<grep(1)>.
+
+=item C<-n> (alias: C<--line-number>)
+
+Output also line number of search hits after the filename. Useful for
+editors and IDEs, e.g. for emacs' grep-mode.
+
+=item C<--add-file I<filename>>
+
+Specify another file to search, additional to the standard set of
+files.
+
+=item C<--debug>
+
+Enable debug mode.
+
+=back
+
+=head1 EXAMPLES
+
+    bbbike-grep "brandenburger tor"
+
+=head1 SEE ALSO
+
+L<grep(1)>, L<fgrep(1)>, L<Strassen::Core>.
+
+=cut
