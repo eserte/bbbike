@@ -28,7 +28,7 @@ use Strassen::Core;
 our $VERSION = '0.01';
 
 my $bbbike_datadir = bbbike_root . '/data';
-my $bbbike_aux_datadir = defined bbbike_aux_dir ? bbbike_aux_dir . '/bbd' : undef;
+my $bbbike_aux_datadir = defined bbbike_aux_dir() ? bbbike_aux_dir() . '/bbd' : undef;
 
 my $codeset = langinfo(CODESET());
 $codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
