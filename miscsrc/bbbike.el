@@ -626,20 +626,15 @@
 	(bbbike-grep-with-args search-key search-val))))
 
 (defun bbbike-grep-with-args (search-key search-val)
-  (bbbike-grep-with-search-term (concat "^#:[ ]*" search-key ":?[ ]*" search-val)))
+  (bbbike-grep-with-search-term (concat "^#:[ ]*" search-key ":?[ ]*" search-val) t))
 
-(defun bbbike-grep-with-search-term (search-term)
-  (let ((bbbike-rootdir (bbbike-rootdir))
-	(bbbike-datadir (bbbike-datadir))
-	(fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd")))
-    (grep (concat "2>/dev/null egrep -a -ins "
-		  (if (file-exists-p fragezeichen-lowprio) (concat fragezeichen-lowprio " "))
-		  bbbike-datadir "/*-orig "
-		  bbbike-datadir "/*.coords.data "
-		  bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl "
-		  bbbike-rootdir "/t/cgi-mechanize.t "
-		  bbbike-rootdir "/t/old_comments.t "
-		  "-e '" search-term "'"))))
+(defun bbbike-grep-with-search-term (search-term &optional is-regexp)
+  (let ((bbbike-rootdir (bbbike-rootdir)))
+    (grep (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
+		  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
+		  " --add-file " bbbike-rootdir "/t/old_comments.t"
+		  (if is-regexp " --rx" "")
+		  " '" search-term "'"))))
 
 (defun bbbike-grep-button (button)
   (bbbike-grep))
@@ -654,7 +649,7 @@
   (interactive)
   (let ((sel (bbbike--get-x-selection)))
     (if sel
-	(bbbike-grep-with-search-term sel) ;; XXX may fail with meta characters
+	(bbbike-grep-with-search-term sel nil) ;; XXX may fail with some meta characters like single quote
       (error "No X selection"))))
 
 (defun bbbike-view-url-button (button)
