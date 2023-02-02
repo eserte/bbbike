@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2016,2018,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2016,2018,2020,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.40;
+$VERSION = 1.41;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -27,7 +27,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first sum ceil ms2kmh clone bbbike_root
+@EXPORT_OK = qw(min max first sum ceil ms2kmh clone bbbike_root bbbike_aux_dir
 		s2hms s2hm_or_s save_pwd save_pwd2 uri_with_query);
 
 use constant STAT_MODTIME => 9;
@@ -270,6 +270,25 @@ sub nil { $_[0] }
 	    $BBBIKE_ROOT = Cwd::realpath(File::Basename::dirname(__FILE__));
 	}
 	$BBBIKE_ROOT;
+    }
+}
+
+{
+    my $BBBIKE_AUX_DIR;
+    sub bbbike_aux_dir { # return undef if there's no bbbike-aux
+	if (!defined $BBBIKE_AUX_DIR) {
+	TRY: {
+		for my $candidate (bbbike_root . '/../bbbike-aux',
+				   "$ENV{HOME}/src/bbbike-aux",
+				  ) {
+		    if (-d $candidate) {
+			$BBBIKE_AUX_DIR = $candidate;
+			last TRY;
+		    }
+		}
+	    }
+	}
+	$BBBIKE_AUX_DIR;
     }
 }
 

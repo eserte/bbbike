@@ -35,6 +35,13 @@ my $bbbike_root = bbbike_root();
 ok(-d $bbbike_root, 'Got a bbbike root directory');
 is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for bbbike root (t is subdirectory)");
 
+my $bbbike_aux_dir = BBBikeUtil::bbbike_aux_dir();
+if (defined $bbbike_aux_dir) {
+    ok(-d $bbbike_aux_dir, 'Got a bbbike-aux directory, and it exists');
+} else {
+    is $bbbike_aux_dir, undef, 'no bbbike-aux directory available';
+}
+
 {
     is(BBBikeUtil::s2hms(0),     "0:00:00", "s2hms checks");
     is(BBBikeUtil::s2hms(1),     "0:00:01");
