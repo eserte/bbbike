@@ -7,15 +7,16 @@
 
 use strict;
 use FindBin;
-use lib $FindBin::RealBin;
+use lib $FindBin::RealBin, "$FindBin::RealBin/..";
 use Test::More;
 use File::Basename qw(basename);
 
+use BBBikeUtil qw(bbbike_aux_dir);
 use BBBikeTest qw(check_devel_cover_testing);
 
 check_devel_cover_testing;
 
-my $bbbike_aux_t = "$FindBin::RealBin/../../bbbike-aux/t";
+my $bbbike_aux_t = bbbike_aux_dir . '/t';
 if (!-d $bbbike_aux_t) {
     plan skip_all => "$bbbike_aux_t does not exist, nothing to test here";
     exit 0;
