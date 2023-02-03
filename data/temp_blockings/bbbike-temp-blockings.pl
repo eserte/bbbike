@@ -34728,8 +34728,8 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-12-18 (osm)
-#: check_frequency: 45d
+#: last_checked: 2023-02-03 (daf)
+#: check_frequency: 30d
 #: next_check: 2024-02-12
 #: osm_watch: way id="4993234" version="19"
 	2::inwork 5714,12290 5796,12372 5940,12564

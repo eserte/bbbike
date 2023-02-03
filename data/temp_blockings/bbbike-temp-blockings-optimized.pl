@@ -3556,8 +3556,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-12-18 (osm)
-#: check_frequency: 45d
+#: last_checked: 2023-02-03 (daf)
+#: check_frequency: 30d
 #: next_check: 2024-02-12
 #: osm_watch: way id="4993234" version="19"
 	2::inwork 5714,12290 5796,12372 5940,12564
@@ -4488,19 +4488,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: rbb-Meldung (verlängert) (nochmal verlängert)
-#: source_id: viz2021:13.339313,52.429351,27.01.2023,09:48 (bis 2.2.2023)
-#: also_indoor: traffic (B,H)
-# REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
-	q4::inwork 6273,2609 6065,2443
-',
-         'from' => 1665772021,
-         'id' => 3652,
-         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 02.02.2023',
-         'type' => 'handicap',
-         'until' => 1675357200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GRUENBERGER-2022

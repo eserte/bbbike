@@ -3539,10 +3539,11 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11389 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11399 (Antrag)
 #: XXX genauer Abschnitt?
-#: last_checked: 2022-09-16
-#: check_frequency: 210d
+#: last_checked: 2023-02-03 (daf)
+#: check_frequency: 30d
 #: next_check: 2023-09-30
-Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::projected 6182,12900 6123,12887 6045,12830 6001,12699 5953,12592 5940,12564 5796,12372 5714,12290
+# REMOVED (hier realisiert) --- Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::inwork 6182,12900 6123,12887 6045,12830 6001,12699 5953,12592
+Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::inwork 5953,12592 5940,12564 5796,12372 5714,12290
 # 
 #: next_check_id: L33-2022
 #: XXX danach werden hier Radwege existieren
@@ -6789,7 +6790,7 @@ Revaler Str.: geschützte Radfahrstreifen geplant	?::projected 13588,11490 13711,
 #: osm_watch: way id="441659160" version="21"
 #: osm_watch: way id="441659161" version="15"
 #: last_checked: 2022-11-06
-#: check_frequency: 90d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 21889,16817 21925,16981
 # 
@@ -6978,6 +6979,7 @@ Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Ramp
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bauauftrag-fuer-neubau-der-marggraffbruecke-vergeben_a354221 (ab November 2022 bis Ende 2026, Behelfsbrücke für Fußgänger, was ist mit Radfahrern?)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-111022/
 #: by: https://nitter.cz/pic/orig/media%2FFesoaS-WQAARkPI.jpg
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1291111.php (Baumfällungen)
 #: source_id: viz2021:13.494841,52.466736,11.10.2022,07:00 (bis 2022-11-25) (bis 2023-01-31) (inaktiv)
 #: last_checked: 2023-01-10
 #: check_frequency: 90d
@@ -7241,6 +7243,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 Marienpark: ist hier eine Fußgängerzone?	? 8070,3563 8178,3591 8167,3641
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_05_0453_0508_online.pdf (Einziehung von Straßenland)
 #: XXX ist dieser Abschnitt weiterhin befahrbar?
 #: osm_watch: way id="26190195" version="17"
 #: priority: #C
@@ -9134,6 +9137,7 @@ S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 #: by: https://www.berliner-woche.de/wartenberg/c-verkehr/strassenname-erinnert-an-anger_a303876
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_37_2409_2520_online.pdf (Einziehung von Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_05_0453_0508_online.pdf (teileingezogen von Straßenland)
 #: XXX fehlt bei Berlin.coords.data (laut LOR PLZ=13059)
 #: XXX geplante neue Privatstraße
 #: last_checked: 2022-12-29 (mapillary)

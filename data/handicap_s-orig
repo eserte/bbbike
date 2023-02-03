@@ -234,26 +234,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
 # REMOVED (keine Einbahnstraße, sondern nur noch eine Gegenverkehrsregelung (wobei das Schild auf der westlichen Seite fehlt) --- #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022 --- #: osm_watch: way id="184632250" version="3" --- #: last_checked: 2022-11-30 --- #: next_check: 2022-12-31 --- Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 # 
-#: next_check_id: ROSENTHALER-2022
-#: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m
-#: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig
-#: by: https://berliner-abendblatt.de/2022/07/07/strassenbahn-bauarbeiten-einschraenkungen-ab-ende-juli/ (Gleisbauarbeiten im Anschluss? 11.7.2022-21.8.2022)
-#: by: https://viz.berlin.de/2022/07/verkehrsvorschau-11072022/
-#: by: https://nitter.it/VIZ_Berlin/status/1546388826465001472#m
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/bvg-erneuert-tramgleise_a351479 (hier: "Der Autoverkehr bleibt bis zum 28. August eingeschränkt")
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559
-#: by: https://viz.berlin.de/2022/12/verkehrsvorschau-061222/
-#: add_fragezeichen: Sind die Bauarbeiten in der Rosenthaler Straße und Gipsstraße beendet? vvv
-#: also_indoor: traffic (B) vvv
-#: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
-#: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
-#: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv)
-#: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023)
-#: priority: #A
-#: last_checked: 2023-01-24 (mapillary) vvv
-#: check_frequency: 14d vvv
-#: next_check: 2023-03-15 vvv
-Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
+# REMOVED --- #: next_check_id: ROSENTHALER-2022 --- #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m --- #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig --- #: by: https://berliner-abendblatt.de/2022/07/07/strassenbahn-bauarbeiten-einschraenkungen-ab-ende-juli/ (Gleisbauarbeiten im Anschluss? 11.7.2022-21.8.2022) --- #: by: https://viz.berlin.de/2022/07/verkehrsvorschau-11072022/ --- #: by: https://nitter.it/VIZ_Berlin/status/1546388826465001472#m --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvg-erneuert-tramgleise_a351479 (hier: "Der Autoverkehr bleibt bis zum 28. August eingeschränkt") --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559 --- #: by: https://viz.berlin.de/2022/12/verkehrsvorschau-061222/ --- #: add_fragezeichen: Sind die Bauarbeiten in der Rosenthaler Straße und Gipsstraße beendet? vvv --- #: also_indoor: traffic (B) vvv --- #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv --- #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023) --- #: priority: #A --- #: last_checked: 2023-01-24 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-03-15 vvv --- Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10341,13376
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, offizielle Umleitung über Gormannstr.	q4::inwork; 10341,13376 10324,13459
@@ -262,12 +243,7 @@ Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig,
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Steinstr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q4::inwork 10302,13525 10318,13528
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
@@ -299,8 +275,8 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
 #: last_checked: 2023-01-05 vvv
-Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
-Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
+#: osm_watch: way id="24242892" version="39"
+Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,12438
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
