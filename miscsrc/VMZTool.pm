@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -38,6 +38,7 @@ BEGIN {
     lib->import($bbbike_root);
 }
 
+use BBBikeUtil qw(bbbike_aux_dir);
 use Karte::Polar;
 use Karte::Standard;
 
@@ -918,7 +919,7 @@ my($vmz_2020_file);
 my($vmz_2021_file);
 my $need_to_use_old_store;
 if ($do_test) {
-    my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
+    my $samples_dir = bbbike_aux_dir . '/samples';
     if ($do_aspurls) {
 	$file       = "$samples_dir/Meldungsliste.jsp?back=true";
 	$mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true";
