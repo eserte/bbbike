@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,18 +43,11 @@ use your qw(%MultiMap::images $BBBikeLazy::mode
 	    $Tk::Config::xlib
 	  );
 
-my $bbbike_rootdir;
-if (-e "$FindBin::RealBin/bbbike") {
-    $bbbike_rootdir = $FindBin::RealBin;
-} else {
-    $bbbike_rootdir = "$ENV{HOME}/src/bbbike";
-}
-my $bbbike_auxdir;
-if (-d "$bbbike_rootdir/../bbbike-aux") {
-    $bbbike_auxdir = "$bbbike_rootdir/../bbbike-aux";
-} else {
-    $bbbike_auxdir = "$ENV{HOME}/src/bbbike-aux";
-}
+use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
+
+my $bbbike_rootdir = bbbike_root;
+my $bbbike_auxdir  = bbbike_aux_dir;
+
 my $streets_track                    = "$bbbike_rootdir/tmp/streets.bbd";
 my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd";
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
