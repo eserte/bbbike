@@ -748,8 +748,8 @@
   ;; recognize "#: by" directives which look like a URL in normal bbd files, additionally "#: also_indoor url" directives
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(by\\|url\\|also_indoor:?[ ]+url\\):?[ ]*\\(http[^ \n]+\\)" nil t)
-      (make-button (match-beginning 2) (match-end 2) :type 'bbbike-url-button)))
+    (while (search-forward-regexp "^#:[ ]*\\(?:by\\|url\\|also_indoor:?[ ]+\\(?:url\\|webcam\\)\\):?[ ]*\\(http[^ \n]+\\)" nil t)
+      (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button)))
 
   (if (string-match "/bbbike-temp-blockings" buffer-file-name)
       (progn
