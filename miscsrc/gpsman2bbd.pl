@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2013,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -232,6 +232,7 @@ EOF
 	my $vehicle; # remember vehicle across chunks
 	my $event;   # dito
 	my %brand;   # vehicle -> brand
+	my $with;    # remember with persons across chunks
 
     GPSMAN_CHUNK:
 	for my $gps (@{ $gps_multi->Chunks }) {
@@ -277,6 +278,10 @@ EOF
 		if ($gps->TrackAttrs->{"srt:event"}) {
 		    $event = $gps->TrackAttrs->{"srt:event"};
 		}
+
+		if (exists $gps->TrackAttrs->{"srt:with"}) {
+		    $with = $gps->TrackAttrs->{"srt:with"}; # may also be the empty string, which would reset a previously set srt:with
+		}
 	    } else {
 	        $curr_s = $p;
 	    }
@@ -293,6 +298,9 @@ EOF
 			}
 			if ($event) {
 			    $name .= "/$event";
+			}
+			if (defined $with && $with ne '') {
+			    $name .= "/$with";
 			}
 			$name .= ")";
 		    }
