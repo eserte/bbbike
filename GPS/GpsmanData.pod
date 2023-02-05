@@ -87,6 +87,26 @@ activity.
 
 The person carrying the GPS device.
 
+=item * C<srt:with>
+
+A comma-separated list of persons which were part of the track
+activity. It's allowed to add a (non-significant) space after the
+comma.
+
+If C<srt:with=> is specified (that is, with an empty value), then this
+means that the track activity was done alone.
+
+If the C<srt:with> attribute is missing, then there are two possible
+meanings:
+
+=over
+
+=item If there is no C<srt:with> attribute defined in the same file before, then the list of persons is undefined/unknown.
+
+=item If there was a C<srt:with> attribute defined in the same file before, then its value is inherited into the new track.
+
+=back
+
 =item * C<srt:altimeter>
 
 May be set to C<broken> or C<partially_broken>, if the GPS device's altimeter was broken.
