@@ -239,7 +239,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.preussischer-kulturbesitz.de/news-detail/article/2020/11/18/kulturforum-bauarbeiten-fuer-museum-des-20-jahrhunderts-der-nationalgalerie-beginnen.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/museum-der-moderne-kulturforum.123/page-3#post-14361 (bis 2026?)
-#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
+# REMOVED (broken) --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="10"
@@ -1914,7 +1914,7 @@ Lieferstraße	RW10; 11013,12684 10950,12640
 asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
-#: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
+#: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
 #: last_checked: 2023-01-16
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10951,12637

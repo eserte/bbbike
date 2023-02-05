@@ -3121,15 +3121,15 @@ Uferweg in Bau	?::inwork 7797,14317 7769,14364
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_38_4713_4844_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_55_6227_6354_online.pdf (Grundstücksnummerierungen)
-#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php (Webcam)
-#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
+#: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php
+#: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php
 # REMOVED --- #: XXX fehlt in Berlin.coords.data, PLZ=10557
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straße; Qualität? wird das hier auch die Lisa-Fittko-Str. werden, oder eine andere Straße?	?::projected 7569,14217 7652,14257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_57_5513_5592_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_09_0533_0596_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
-#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
+#: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: XXX fehlt in Berlin.coords.data, möglicherweise auch PLZ=10557 (Fehler in DPAG-MTB 09/2020?) (in DPAG-MTB 03/2022 ist es richtig)
 Clara-Mleinek-Str. (Ziffer 3; platzähnlich): Geplante Straße; Qualität?	?::projected 7500,14333 7566,14404
 #: check_frequency ^^^
@@ -4714,8 +4714,8 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
-#: by: https://portal1944.webcam-profi.de/ (Webcam)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (noch nicht terminiert)
+#: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: last_checked: 2022-11-26
 #: check_frequency: 120d
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
@@ -6017,7 +6017,6 @@ Sophie-Farber-Str.: neue Straße geplant	?::projected -8873,-2887 -9155,-2804
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/vi_46_1_2020-07-10_b-plan-vi-46-1_reinplan.pdf
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/postscheckareal-buerger-beteiligen_a282070
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/stadtnatur-soll-erhalten-bleiben-kreuzberg-buendnis-kritisiert-bauplaene-fuer-postscheckareal_a293809
-#: by: https://portal1467.webcam-profi.de/ (Webcam)
 #: by: https://abendblatt-berlin.de/2021/03/22/105716/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/startschuss-fuer-neues-stadtquartier-am-halleschen-ufer_a305721
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9915
@@ -6028,6 +6027,7 @@ Sophie-Farber-Str.: neue Straße geplant	?::projected -8873,-2887 -9155,-2804
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_33_2189_2232_online.pdf (Grundstücksnummerierungen)
 #: by: https://berliner-abendblatt.de/2022/09/02/wohnungsbau-am-halleschen-ufer-jetzt-gehts-los/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neues-quartier-am-alten-postscheckamt_a357371
+#: also_indoor: webcam https://portal1467.webcam-profi.de/
 #: last_checked: 2023-01-23
 #: check_frequency: 360d
 Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
@@ -7259,8 +7259,8 @@ Wendenschloßstr./Dregerhoffstr.: Fußgängerampel geplant	?::projected 22870,2695 
 #: next_check_id: TACHELES-2020
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
-#: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
-#: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
+# REMOVED (404 für gesamte Domain) --- #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
+# REMOVED --- #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10161 (Benennung von Privatplätzen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_41_5037_5124_online.pdf (Benennung von zwei privaten Stadtplätzen)
 #: by: https://www.architektur-urbanistik.berlin/index.php?attachments/1617229675566-png.6106/ (schematische Karte mit Johannisplatz und Aaron-Bernstein-Platz)
@@ -7957,10 +7957,10 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9087 (Festsetzung 11-47ba)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1142172.php (Baugenehmigungen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1155121.php (Baugenehmigungen)
-#: by: https://portal1961.webcam-profi.de/ (Webcam)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-werden-in-den-naechsten-jahren-weitere-grosse-bauvorhaben-realisiert_a345263 (Erwähnung)
 #: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data
 #: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
+#: also_indoor: webcam https://portal1961.webcam-profi.de/
 #: osm_watch: way id="428279379" version="14" vvv
 #: last_checked: 2023-01-27 vvv
 #: check_frequency: 60d vvv
@@ -7981,16 +7981,16 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: last_checked ^^^
 #: osm_watch ^^^
 # 
-#: XXX Bebauungsplan 11-94 VE
+#: XXX Bebauungsplan 11-94 VE (Ferdinands Garden)
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Straßenneubau, ohne Termin)
 #: by: http://www.deal-magazin.com/news/3/107874/Lakeward-startet-Neubauprojekt-Ferdinands-Garden-in-Berlin (ist das erwähnte Neubaugebiet hier?)
-#: by: https://portal1917.webcam-profi.de/ (Webcam)
 #: by: https://nitter.cz/VIZ_Berlin/status/1610159019406016513#m (evtl. im Zusammenhang mit den Bauarbeiten?)
 #: by: https://nitter.net/pic/orig/media%2FFldqbjBXgAEBF0s.png
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
+#: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="5"
 #: last_checked: 2022-08-17 (mapillary)
 #: check_frequency: 180d
@@ -8762,7 +8762,7 @@ Clara-Müller-Jahnke-Str.: Straße geplant, genaue Lage? Qualität?	?::projected 31
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11567 (Entwurf zu 5-121 (Anlage fehlt))
 #: osm_watch: way id="24045975" version="13"
 #: osm_watch: way id="385190757" version="6"
-#: last_checked: 2022-12-29 (webcam)
+#: last_checked: 2022-12-29 (daf)
 # REMOVED (switched to indoor research check frequency) --- #: check_frequency: 180d
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-03-01
@@ -8887,7 +8887,7 @@ Weiterführung der Peter-Huchel-Str.: Qualität?	? -13257,1337 -13272,1304 -13424,
 # 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.831484.php
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-107_reinplan.pdf
-#: by: https://baucam159.it-wms.com/ (webcam)
+# REMOVED (currently disabled) --- #: by: https://baucam159.it-wms.com/ (webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-kleinere-projekte-spandau-reinickendorf/?postID=679789#post679789
 #: by: https://www.buwog.de/de/projekt/seed (mittlerweile 404, wurde vermutlich umbenannt)
 #: by: https://www.buwog.de/de/projekt/saatwinklerdamm
@@ -8966,7 +8966,6 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10251
 #: by: https://www.berliner-woche.de/mitte/c-bauen/an-der-spree-wird-ein-abschnitt-saniert_a293881
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10689
-#: by: https://portal1768.webcam-profi.de/ (Webcam) (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 403)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10907 (provisorischer Uferweg zwischen Michael- und Schillingbrücke, Bau Herbst 2021 - 2022)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11160 (Bebauungsplanentwurf I-32aa (Holzufer))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036570366892/570366892/00528691/91-Anlagen/02/VzK_0226_VI_Anlage_42-2022-Anlage-B-Plan-I-32a.pdf
@@ -8976,6 +8975,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.luisenstadt-mitte.de/projekte/spreeuferweg-0 (kein Datum)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1285795.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/faellungen-fuer-spreeuferweg_a370037
+#: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401)
 #: last_checked: 2023-01-20 (architektur-urbanistik)
 #: check_frequency: 90d
 Uferweg geplant (erst einmal als Provisorium)	?::projected 11981,11578 11821,11733 11676,11839 11375,11994

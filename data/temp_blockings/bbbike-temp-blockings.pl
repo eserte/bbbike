@@ -31833,7 +31833,7 @@ EOF
        data  => <<EOF,
 # REMOVED (beendet) --- #: next_check_id: SIGISMUND-2020
 # REMOVED (beendet) --- #: next_check_id: MUSEUMDERMODERNE-2021
-#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
+# REMOVED (broken) --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 # REMOVED (für Radfahrer mittlerweile sogar explizit frei) --- #: XXX wann sind die Bauarbeiten fertig? vvv
 # REMOVED --- #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
 # REMOVED --- #: last_checked: 2021-04-19 vvv
@@ -34608,7 +34608,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
-#: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
+# REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: last_checked: 2022-11-26
 #: check_frequency: 120d
 #: next_check: 2023-12-31
@@ -36322,13 +36322,13 @@ EOF
        text  => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.youtube.com/watch?v=swATp4lDNFs (Webcam)
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7331.html (Richtfest 1. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/09/27/neubau-des-bauhaus-archivs-richtfest-erst-fuer-2023-geplant/
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-des-bauhaus-archivs-hat-begonnen_a359183
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf (Einziehung)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
+#: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2023-01-01 (mapillary)

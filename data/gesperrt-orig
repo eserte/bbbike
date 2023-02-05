@@ -4062,7 +4062,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 # 
 #: by: wosch
 #: confirmed_by: srt
-#: by: https://portal1548.webcam-profi.de/ (webcam)
+#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401)
 #: last_checked: 2023-02-05
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -4072,14 +4072,14 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 # 
 #: next_check_id: EUROPACITY-2015
 # REMOVED (keine Direktansicht) --- #: by: https://quartier-heidestrasse.contempo-webcam.de/ (Webcam, keine Direktansicht)
-#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Grundstücksnummerierungen)
-#: by: https://portal1915.webcam-profi.de/ (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_35_2301_2352_online.pdf (Straßenlandwidmung des schon eröffneten Abschnitts)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
+#: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
+#: also_indoor: webcam https://portal1915.webcam-profi.de/
 #: last_checked: 2022-12-17
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
@@ -4217,12 +4217,14 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
+#: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: last_checked: 2023-01-19 (mapillary)
 #: check_frequency: 90d
 Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
+#: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: last_checked: 2023-01-16
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
@@ -4900,12 +4902,12 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
 # 
-#: by: https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html (webcam)
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: last_checked: 2023-01-21 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
-#: by: https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html (webcam)
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: last_checked: 2023-01-21 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
