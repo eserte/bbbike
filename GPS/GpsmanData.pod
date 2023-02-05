@@ -1,0 +1,114 @@
+=head1 NAME
+
+GPS::GpsmanData - handle gpsman track, route and waypoint files
+
+=head1 SYNOPSIS
+
+    use GPS::GpsmanData;
+    my $gpsmandata = GPS::GpsmanData->new;
+    $gpsmandata->Type(GPS::GpsmanData::TYPE_TRACK); # or TYPE_WAYPOINT or TYPE_ROUTE
+    my @wpts;
+    my $wpt = GPS::Gpsman::Waypoint->new;
+    $wpt->Ident("trkptname01");
+    $wpt->Comment("comment");
+    $wpt->Latitude(52.5);
+    $wpt->Longitude(13.5);
+    push @wpts, $wpt;
+    $gpsmandata->Track(\@wpts);
+    $gpsmandata->write("test-gpsman.trk");
+
+=head1 DESCRIPTION
+
+Parse and generate gpsman data files.
+
+=head2 EXTENSIONS
+
+The C<GPS::GpsmanData::*> modules can make use of a number of
+privately defined track attributes (these are used on the C<!T> line
+as tab-separated key-value pairs). All these attributes begin with the
+prefix C<srt:>. The available attributes are:
+
+=over
+
+=item * C<srt:device>
+
+The GPS device which originally created the track. Value may be
+something like C<Garmin etrex VISTA> or C<GoPro Max>.
+
+=item * C<srt:vehicle>
+
+The vehicle which was used to record the track. Some common values are:
+
+=over
+
+=item bike
+
+=item pedes
+
+=item train
+
+=item bus
+
+=item car
+
+=item tram
+
+=item u-bahn
+
+=item s-bahn
+
+=item ferry
+
+=item ship
+
+=item plane
+
+=back
+
+=item * C<srt:brand>
+
+More closely specify the vehicle. This may be a line number for public
+transport, or a bicycle or car brand.
+
+=item * C<srt:comment>
+
+Free-text comment about the track activity.
+
+=item * C<srt:tag>
+
+Tags (space separated) about the track activity.
+
+=item * C<srt:event>
+
+May be filled with the name of an event if it applies to the track
+activity.
+
+=item * C<srt:person>
+
+The person carrying the GPS device.
+
+=item * C<srt:altimeter>
+
+May be set to C<broken> or C<partially_broken>, if the GPS device's altimeter was broken.
+
+=item * C<srt:frequency>
+
+May be set to the (approximate) frequency for sampling track points.
+Usually something like C<200m> or C<9.9km>, can also be something
+descriptive like C<high>.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2023 Slaven Rezic. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=head1 SEE ALSO
+
+L<gpsman(1)>.
