@@ -584,8 +584,11 @@ Link to a traffic map at the coordinate of the item.
 
 =item C<url> I<url>
 
-Link to a specific URL (however, in some cases it might be preferable
-to use the C<by> directive instead).
+Link to a specific URL.
+
+=item C<webcam> I<url>
+
+Link to a specific URL, which is expected to show webcam imagery.
 
 =back
 
