@@ -53,6 +53,11 @@ find sub {
 			} else {
 			    $attrs{$k}->{$vehicle}->{$v}++;
 			}
+		    } elsif ($k eq 'srt:with') {
+			my @items = split /,\s*/, $v;
+			for my $item (@items) {
+			    $attrs{$k}->{$item}++;
+			}
 		    } else {
 			$attrs{$k}->{$v}++;
 		    }
