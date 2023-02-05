@@ -37598,6 +37598,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ERNSTTHAELMANNPARK-2022
+#: priority: #A
 #: last_checked: 2023-01-20
 #: next_check: 2023-02-01
 #: XXX später nach gesperrt-orig überführen bzw. ganz aus strassen-orig entfernen

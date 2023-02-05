@@ -15,11 +15,11 @@
 #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
 #: source_id: bvg2021:m43#BVG315520_0
 #: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen)
-#: note: offizielle Wegführung über den linken Gehweg
-#: XXX Trotz Baustellenplan muss man sich das genauer anschauen, insbesondere die Wegführung Richtung Norden
-#: next_check: 2023-01-30
+#: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs
+#: last_checked: 2023-02-05
+#: next_check: 2023-05-17
 #: valid: -20230517
-Untere Kynaststr.: vor der Einmündung auf den linken Gehweg ausweichen	q3::inwork; 14828,10561 14832,10512 14815,10516 14805,10518
+Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q3::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931
@@ -157,7 +157,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-12-08
+#: last_checked: 2023-02-05
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
