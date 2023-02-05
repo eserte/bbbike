@@ -367,9 +367,9 @@ for my $file (@files) {
 			 } else {
 			     warn "WARN: 'also_indoor: search' without search term\n";
 			 }
-		     } elsif ($also_indoor_dir =~ m{^(url)\s+(https?://\S+)}) {
-			 my $type = uc $1;
-			 my $url = $2;
+		     } elsif ($also_indoor_dir =~ m{^(url|webcam)\s+(https?://\S+)}) {
+			 my($type, $url) = ($1, $2);
+			 $type = $type =~ /webcam/ ? 'Webcam' : uc $type;
 			 push @extra_url_defs, [$type, $url];
 		     } else {
 			 warn "WARN: unsupported 'also_indoor' directive '$also_indoor_dir'\n";
@@ -377,9 +377,10 @@ for my $file (@files) {
 		 }
 	     }
 	     # Further URLs which work as good as also_indoor directives
+	     # (however, using "#: also_indoor webcam ..." is preferred)
 	     if ($dir->{by}) {
 		 for my $by (@{ $dir->{by} }) {
-		     if ($by =~ m{(https?://\S+).*\bWebcam\b}) {
+		     if ($by =~ m{(https?://\S+).*\bWebcam\b}i) {
 			 push @extra_url_defs, ['Webcam', $1];
 		     }
 		 }
