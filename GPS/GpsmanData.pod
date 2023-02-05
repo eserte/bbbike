@@ -65,6 +65,9 @@ The vehicle which was used to record the track. Some common values are:
 
 =back
 
+See the source code of L<GPS::GpsmanData::VehicleInfo> for a more
+comprehensive list.
+
 =item * C<srt:brand>
 
 More closely specify the vehicle. This may be a line number for public
