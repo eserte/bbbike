@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2020,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -30,6 +30,31 @@ find sub {
 	open my $fh, $File::Find::name
 	    or die "Can't open $File::Find::name: $!";
 	my $vehicle;
+
+	# Only count one appearance of a key-value pair per file.
+	#
+	# Sometimes this is probably better (e.g. if there are
+	# multiple srt:with values, where persons enter or leave the
+	# ride), sometimes it is not clear if it's worse (e.g. if
+	# doing a OEPNV trip to some destination, then wander a bit,
+	# and finally travel back with the same OEPNV line --- should
+	# it be counted once or twice?)
+	my %this_file_attrs;
+	my $add = sub {
+	    my($k, $v, $v2) = @_;
+	    if (defined $v2) {
+		if (!$this_file_attrs{$k}->{$v}->{$v2}) {
+		    $attrs{$k}->{$v}->{$v2}++;
+		    $this_file_attrs{$k}->{$v}->{$v2} = 1;
+		}
+	    } else {
+		if (!$this_file_attrs{$k}->{$v}) {
+		    $attrs{$k}->{$v}++;
+		    $this_file_attrs{$k}->{$v} = 1;
+		}
+	    }
+	};
+
 	while(<$fh>) {
 	    chomp;
 	    if (/^!T:/) {
@@ -51,15 +76,15 @@ find sub {
 			if (!$vehicle) {
 			    warn "Found '$k' '$v' without 'srt:vehicle' in file '$File::Find::name', ignoring.\n";
 			} else {
-			    $attrs{$k}->{$vehicle}->{$v}++;
+			    $add->($k, $vehicle, $v);
 			}
 		    } elsif ($k eq 'srt:with') {
 			my @items = split /,\s*/, $v;
 			for my $item (@items) {
-			    $attrs{$k}->{$item}++;
+			    $add->($k, $item);
 			}
 		    } else {
-			$attrs{$k}->{$v}++;
+			$add->($k, $v);
 		    }
 		}
 	    }
