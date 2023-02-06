@@ -649,7 +649,11 @@
   (interactive)
   (let ((sel (bbbike--get-x-selection)))
     (if sel
-	(bbbike-grep-with-search-term sel nil) ;; XXX may fail with some meta characters like single quote
+	(progn
+	  (if (string-match "^\\(?:UNCHANGED\\|CHANGED\\|NEW\\|REMOVED\\)\t[^\t]+\t\\([^\t]+\\)" sel) ; try to match diffnewvmz selection
+	      (setq sel (substring sel (match-beginning 1) (match-end 1))))
+	  (bbbike-grep-with-search-term sel nil) ;; XXX may fail with some meta characters like single quote
+	  )
       (error "No X selection"))))
 
 (defun bbbike-view-url-button (button)
