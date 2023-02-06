@@ -2664,7 +2664,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-01-28
+#: last_checked: 2023-02-06
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3952,7 +3952,7 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="791796343" version="4"
-#: last_checked: 2022-11-26
+#: last_checked: 2023-02-06 (daf)
 #: check_frequency: 30d
 	q4::inwork 4961,12940 4932,12968
 ',
@@ -4146,7 +4146,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-07
+#: last_checked: 2023-02-06 (daf)
 #: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
 ',
@@ -4500,7 +4500,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-01-28
+#: last_checked: 2023-02-06
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -5073,7 +5073,8 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 22766,1226 22821,1086
+         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
+	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 ',
          'from' => 1676156400,
