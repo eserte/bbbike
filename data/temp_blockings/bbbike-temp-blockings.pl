@@ -32494,8 +32494,8 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
-#: osm_watch: way id="26322046" version="25"
-#: osm_watch: way id="165832806" version="28"
+#: osm_watch: way id="26322046" version="26"
+#: osm_watch: way id="165832806" version="30"
 #: last_checked: 2023-01-13
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
@@ -34928,19 +34928,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2023-05-31 18:00:00"), # undef, # XXX
+       until => 1675720521, # (laut osm note + osm-Changeset 132164154 sind die Bauarbeiten beendet) --- $isodate2epoch->("2023-05-31 18:00:00"), # undef, # XXX
        text  => 'Markelstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, möglicherweise bis Mai 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
 # REMOVED (superseded) --- #: osm_watch: note 3030340 4
-#: osm_watch: way id="4531667" version="8"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-11-13
-#: check_frequency: 90d
-#: next_check: 2023-05-31
+# REMOVED --- #: osm_watch: way id="4531667" version="8" --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G,B) --- #: last_checked: 2022-11-13 --- #: check_frequency: 90d --- #: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
 EOF
      },
@@ -37655,6 +37650,31 @@ EOF
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
+EOF
+     },
+     { from  => 1675576800, # 2023-02-05 07:00
+       until => 1682694000, # 2023-04-28 17:00
+       text  => 'Barbarossastr.: Bauarbeiten zwischen Heilbronner Str. und Treuchtlinger Str., evtl. sind auch Radfahrer betroffen, vom 06.02.2023 07:00 bis 28.04.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.339017,52.492299,06.02.2023,07:00',
+       data  => <<EOF,
+#: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/schoeneberg-barbarossastrasse-monatelang-gesperrt-id204159
+#: by: https://nitter.cz/VIZ_Berlin/status/1622905331079692289#m
+#: by: https://nitter.it/pic/orig/media%2FFoW3syLXsAAK_Ur.jpg
+#: note: laut VIZ nur der Kfz-Verkehr betroffen
+Barbarossastr. (laut Baustellenplan hier nur vor der Kreuzung gesperrt)	q3::inwork 6123,9544 6030,9542
+Barbarossastr.	q4::inwork 6030,9542 5950,9537
+Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542 6049,9401
+EOF
+     },
+     { from  => 1675749600, # 2023-02-07 07:00
+       until => 1677600000, # 2023-02-28 17:00
+       text  => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Henny-Porten-Str., evtl. sind auch Radfahrer betroffen, vom 08.02.2023 07:00 bis 28.02.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.600257,52.54031,08.02.2023,07:00',
+       data  => <<EOF,
+#: note: laut VIZ nur der Kfz-Verkehr betroffen
+	q4::inwork 23698,15049 23692,15088 23686,15128 23663,15270 23643,15392
 EOF
      },
     );
