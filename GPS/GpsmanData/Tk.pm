@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2013,2015,2016,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013,2015,2016,2018,2019,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.25';
+$VERSION = '1.26';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -587,11 +587,14 @@ sub _track_attributes_editor {
     my $fill_brands = sub {
 	my($vehicle) = @_;
 	if ($brands_be) {
+	    my @choices;
 	    if ($self->cget(-vehiclestobrands) && $vehicle && exists $self->cget(-vehiclestobrands)->{$vehicle}) {
-		$brands_be->configure(-choices => $self->cget(-vehiclestobrands)->{$vehicle});
-	    } else {
-		$brands_be->configure(-choices => []);
+		@choices = @{ $self->cget(-vehiclestobrands)->{$vehicle} || [] };
+		if (defined $track_attrs_ref->{'srt:brand'} && !grep { $track_attrs_ref->{'srt:brand'} eq $_ } @choices) {
+		    unshift @choices, $track_attrs_ref->{'srt:brand'};
+		}
 	    }
+	    $brands_be->configure(-choices => \@choices);
 	}
     };
     Tk::grid($t->Label(-text => "Vehicle"),
