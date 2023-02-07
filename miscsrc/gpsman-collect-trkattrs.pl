@@ -14,11 +14,12 @@
 
 use strict;
 use warnings;
+use FindBin;
 use File::Find qw(find);
 use Getopt::Long;
 use YAML;
 
-my $gps_data_dir = "$ENV{HOME}/src/bbbike/misc/gps_data";
+my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $out_file;
 
 GetOptions(
