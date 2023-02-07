@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016,2017,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2017,2019,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.08';
+$VERSION = '1.09';
 
 use FindBin;
 
@@ -156,13 +156,29 @@ sub gps_data_viewer {
 		       });
     }
 
+    my $user_trkattrs;
     my $vehicles_to_brands;
-    if (-r "$gps_data_dir/vehicles_brands.yml" && eval { require BBBikeYAML; 1 }) {
-	$vehicles_to_brands = BBBikeYAML::LoadFile("$gps_data_dir/vehicles_brands.yml");
-    }
     my $gps_devices;
-    if (-r "$gps_data_dir/gps_devices.yml" && eval { require BBBikeYAML; 1 }) {
-	$gps_devices = BBBikeYAML::LoadFile("$gps_data_dir/gps_devices.yml");
+    if (-r "$gps_data_dir/trkattrs.yml" && eval { require BBBikeYAML; 1 }) {
+	$user_trkattrs = BBBikeYAML::LoadFile("$gps_data_dir/trkattrs.yml");
+	{
+	    my $items = $user_trkattrs->{'srt:brand'} || {};
+	    for my $vehicle (keys %$items) {
+		my @brands = sort { $items->{$vehicle}->{$b} <=> $items->{$vehicle}->{$a} } keys %{ $items->{$vehicle} };
+		$vehicles_to_brands->{$vehicle} = \@brands;
+	    }
+	}
+	{
+	    my $items = $user_trkattrs->{'srt:device'} || {};
+	    $gps_devices = [ sort { $items->{$b} <=> $items->{$a} } keys %$items ];
+	}
+    } else {
+	if (-r "$gps_data_dir/vehicles_brands.yml" && eval { require BBBikeYAML; 1 }) {
+	    $vehicles_to_brands = BBBikeYAML::LoadFile("$gps_data_dir/vehicles_brands.yml");
+	}
+	if (-r "$gps_data_dir/gps_devices.yml" && eval { require BBBikeYAML; 1 }) {
+	    $gps_devices = BBBikeYAML::LoadFile("$gps_data_dir/gps_devices.yml");
+	}
     }
 
     $gps_view = $t->GpsmanData(-command => sub {
