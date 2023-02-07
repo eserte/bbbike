@@ -19,9 +19,13 @@ use Getopt::Long;
 use YAML;
 
 my $gps_data_dir = "$ENV{HOME}/src/bbbike/misc/gps_data";
+my $out_file;
 
-GetOptions("gps-data-dir=s" => \$gps_data_dir)
-    or die "usage?";
+GetOptions(
+	   "gps-data-dir=s" => \$gps_data_dir,
+	   "o=s" => \$out_file,
+	  )
+    or die "usage: $0 [--gps-data-dir ...] [-o file]\n";
 
 my %attrs;
 
@@ -92,6 +96,19 @@ find sub {
     }
 }, $gps_data_dir;
 
-print YAML::Dump(\%attrs);
+if (defined $out_file) {
+    require File::Temp;
+    require File::Basename;
+    my $tmp = File::Temp->new("trkstats-XXXXXXXX", DIR => File::Basename::dirname($out_file), SUFFIX => '.yml');
+    binmode $tmp, ':utf8';
+    $tmp->print(YAML::Dump(\%attrs));
+    $tmp->close
+	or die $!;
+    rename "$tmp", $out_file
+	or die "Error while renaming temporary file to $out_file: $!";
+} else {
+    binmode ':utf8';
+    print YAML::Dump(\%attrs);
+}
 
 __END__
