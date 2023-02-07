@@ -32,7 +32,7 @@ my %attrs;
 
 find sub {
     if ($File::Find::name =~ /\.trk$/) {
-	open my $fh, $File::Find::name
+	open my $fh, $_
 	    or die "Can't open $File::Find::name: $!";
 	my $vehicle;
 
