@@ -15,9 +15,12 @@
 use strict;
 use warnings;
 use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use File::Find qw(find);
 use Getopt::Long;
-use YAML;
+
+use BBBikeYAML;
 
 my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $out_file;
@@ -101,15 +104,13 @@ if (defined $out_file) {
     require File::Temp;
     require File::Basename;
     my $tmp = File::Temp->new("trkstats-XXXXXXXX", DIR => File::Basename::dirname($out_file), SUFFIX => '.yml');
-    binmode $tmp, ':utf8';
-    $tmp->print(YAML::Dump(\%attrs));
+    $tmp->print(BBBikeYAML::Dump(\%attrs));
     $tmp->close
 	or die $!;
     rename "$tmp", $out_file
 	or die "Error while renaming temporary file to $out_file: $!";
 } else {
-    binmode ':utf8';
-    print YAML::Dump(\%attrs);
+    print BBBikeYAML::Dump(\%attrs);
 }
 
 __END__
