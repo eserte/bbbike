@@ -37641,13 +37641,15 @@ EOF
 	2::night 7416,10492 7432,10546 7337,10587
 EOF
      },
-     { from  => 1676156400, # 2023-02-12 00:00
-       until => 1679093999, # 2023-03-17 23:59
-       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, geplant vom 13. Februar 2023 bis 17. März 2023',
+     { from  => 1675896728, # 1676156400, # 2023-02-12 00:00
+       until => $isodate2epoch->("2023-03-31 17:00:00"), # 1679093999, # 2023-03-17 23:59
+       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Ende März 2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023)
+#: also_indoor: traffic (G,H,B,W)
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 EOF
@@ -37675,6 +37677,17 @@ EOF
        data  => <<EOF,
 #: note: laut VIZ nur der Kfz-Verkehr betroffen
 	q4::inwork 23698,15049 23692,15088 23686,15128 23663,15270 23643,15392
+EOF
+     },
+     { from  => 1676185200, # 2023-02-12 08:00
+       until => 1680267600, # 2023-03-31 15:00
+       text  => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 31.03.2023 15:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/223-P/22/226',
+       data  => <<EOF,
+#: XXX Radwegbau
+#: next_check: 2023-03-31
+	2::inwork -13732,20201 -13174,19943 -12456,19410 -12161,19075
 EOF
      },
     );

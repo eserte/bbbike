@@ -5057,15 +5057,17 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023)
+#: also_indoor: traffic (G,H,B,W)
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 ',
-         'from' => 1676156400,
+         'from' => 1675896728,
          'id' => 3719,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
-         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, geplant vom 13. Februar 2023 bis 17. März 2023',
+         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Ende März 2023',
          'type' => 'handicap',
-         'until' => 1679093999
+         'until' => 1680274800
        },
        {
          'data' => '#: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/schoeneberg-barbarossastrasse-monatelang-gesperrt-id204159
@@ -5093,6 +5095,18 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
          'text' => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Henny-Porten-Str., evtl. sind auch Radfahrer betroffen, vom 08.02.2023 07:00 bis 28.02.2023 17:00',
          'type' => 'handicap',
          'until' => 1677600000
+       },
+       {
+         'data' => '#: XXX Radwegbau
+#: next_check: 2023-03-31
+	2::inwork -13732,20201 -13174,19943 -12456,19410 -12161,19075
+',
+         'from' => 1676185200,
+         'id' => 3722,
+         'source_id' => 'LS/223-P/22/226',
+         'text' => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 31.03.2023 15:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1680267600
        }
      
 );

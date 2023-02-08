@@ -333,7 +333,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="182782708" version="14"
 #: osm_watch: way id="168307255" version="13"
 #: osm_watch: way id="4687243" version="31"
-#: last_checked: 2023-01-25
+#: last_checked: 2023-02-07 (mapillary)
 #: check_frequency: 360d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
 # 
@@ -4080,7 +4080,7 @@ Ungarnstr.: Fahrradstraße soll entstehen	?::projected 6843,16346 7056,16587 7106
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groß-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (Übergabe der Verkehrsflächen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-König-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2023-02-01 (mapillary) vvv
+#: last_checked: 2023-02-07 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="14"
 #: osm_watch: way id="339201177" version="14"
@@ -4339,6 +4339,7 @@ Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,1110
 #: by: https://www.infravelo.de/projekt/karl-marx-platz/ (1. Quartal 2023 - 2. Quartal 2023) (Führung des Radverkehrs über die nördliche Fahrbahn; gesägtes Großsteinpflaster) (1. Quartal 2024 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8126 (Antrag)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/berliner-wasserbehoerde-lehnt-bisherige-planungen-fuer-den-karl-marx-platz-ab_a362951 (Ende 2024)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1292757.php (Kiezblock Rixdorf)
 #: source_id: LMS-BR_r_LMS-BR_237903_LMS-BR_72 (inaktiv)
 #: last_checked: 2023-01-17
 # REMOVED --- #: check_frequency: 90d
@@ -5546,6 +5547,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: https://viz.berlin.de/2022/11/verkehrsvorschau-071122/ (Richtung Süden zuerst, eine Woche nach dem 7.11.2022)
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/bauarbeiten-auf-dem-geh-und-dem-radweg_a362891
 #: by: https://www.infravelo.de/projekt/c146500e4f50d17a4916c3e38cf376c4/ (4. Quartal 2022 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/indira-gandhi-strasse/ (infravelo-URL umbenannt; status: "Abgeschlossen")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (Erwähnung der (bereits erfolgten) punktuellen Sanierung)
 #: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022) (bis 16.11.2022) (inaktiv)
 #: source_id: viz2021:13.470029,52.540596,16.11.2022,09:00 (bis 14.12.2022) (inaktiv)
@@ -8266,6 +8268,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fubic-lichterfelde.409/
 #: by: https://www.deutsches-architekturforum.de/thread/11060-steglitz-zehlendorf-kleinere-projekte/?postID=722562#post722562
 #: by: https://www.berliner-woche.de/dahlem/c-bauen/bauarbeiten-auf-campus-gelaende-laufen-auf-hochtouren_a371462 (Fertigstellung 2024)
+#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/neuer-campus-in-dahlem-diese-strasse-sucht-einen-namen-id204498
 #: last_checked: 2021-11-06
 #: check_frequency: 720d
 #: next_check: 2024-12-31
