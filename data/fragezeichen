@@ -853,6 +853,7 @@ Beiersdorf - Beerbaum: Qualität?	? 35980,34322 35977,34619 36085,34994 36096,353
 Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74428 -14966,74667 -13662,75159
 Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenfalls unbefestigt?	? 32156,6405 32056,6607 31993,6776 31952,6917 31951,7060
 Technologiepark KW - Funkerberg: Qualität der Verbindung?	? 24452,-10414 24518,-10498 24950,-10965 25233,-11257 25366,-11396 25528,-11392
+Takustr.: wurde nach den Bauarbeiten die alte Einbahnstraßenregelung wieder hergestellt?	? 3079,5411 3179,5267 3226,5227 3273,5214
 # added from strassen
 Erna-Koschwitz-Weg (Hängen bereits neue Straßenschilder für den "Erna-Koschwitz-Weg"?)	? -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
 # added from landstrassen
@@ -989,6 +990,8 @@ Taubenbogen (Potsdam-Golm): noch nicht ausgeschildert (Sind die Straßen mittlerw
 Grasmückenring (Potsdam-Golm): noch nicht ausgeschildert (Sind die Straßen mittlerweile ausgeschildert?)	? -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
 Elsternstr. (Potsdam-Golm): noch nicht ausgeschildert (Sind die Straßen mittlerweile ausgeschildert?)	? -18135,397 -18140,452 -18131,476 -18145,499 -18146,544
 Brigitte-Reimann-Str.: noch nicht ausgeschildert (Ist die Brigitte-Reimann-Str. ausgeschildert?)	? 23368,15469 23363,15517 23388,15637
+Eidechsenweg: nicht ausgeschildert (Ist der Eidechsenweg bereits ausgeschildert?)	? -7720,13839 -7893,13781
+ausgeschildert "Zu den Häusern Metropolitan Park" (Ist der Eidechsenweg bereits ausgeschildert?)	? -7720,13839 -7893,13781
 # added from comments_route
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -26785,5851 -26783,5891 -26689,6111 -26525,6519 -26170,6459 -25898,6447 -25719,6581 -25537,6616 -25318,6593 -25213,6477
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -18701,4578 -19392,4605 -19316,4365
@@ -1003,7 +1006,6 @@ Jörsstr.: Asphaltierung vermutlich bereits durchgeführt (Wurde die Asphaltierung
 Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben (Wurde die Einbahnstraßenregelung für Radfahrer aufgehoben?)	? 5317,2345 5159,2176
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen Prenzlau und Güstow einen straßenbegleitenden Radweg? Wenn ja: auf welcher Seite und ist der Radweg asphaltiert?)	? 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 # added from bbbike-temp-blockings-optimized
-Takustr.: wegen Bauarbeiten ist eine Durchfahrt nicht möglich (auch nicht für Fußgänger) (Ist die Takustraße weiterhin voll gesperrt?)	? 3079,5411 3179,5267
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Hochbaustelle, Fahrtrichtung auch für Radfahrer gesperrt (Bis wann gilt die Sperrung für Radfahrer?)	? 5192,10241 5196,10398
 Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2022) Jahnstr. (Sind die Bauarbeiten bereits beendet?)	? 12833,6127 13027,6168 13227,6209
 Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt (Stand Oktober 2022: Weg ist weitehin gesperrt) (Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?)	? 983,15136 971,15193

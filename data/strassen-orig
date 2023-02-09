@@ -11972,7 +11972,7 @@ Allée du Stade	N 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,158
 (Uferweg am Hohenzollernkanal)	N 1737,15789 1349,15797
 (Uferweg am Hohenzollernkanal)	NN 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
 #: next_check_id: TEGELERBRUECKE-2021
-#: osm_watch: way id="930770437" version="4"
+#: osm_watch: way id="930770437" version="5"
 #: last_checked: 2022-10-08
 #: check_frequency: 180d
 #: next_check: 2023-12-01
@@ -13887,7 +13887,7 @@ August-Lindemann-Str.	N 14360,12792 14376,12849 14411,12951 14419,12978 14433,13
 #: note: Tor war offen am 2013-01-02 gegen 19:15, ebenso 2021-11-11 gegen 12:40
 #: note: am südlichen Ende kann man durch ein Tor zur Eldenaer Str. gelangen, allerdings ist nicht klar, ob das Tor manchmal (nachts?) zu ist; außerdem muss man Bordsteine und Kopfsteinpflaster überwinden, nicht besonders attraktiv
 (Weg im Blankensteinpark)	NN 14355,13109 14289,12876 14268,12799
-Erich-Nehlhans-Str.	N 13998,13272 14089,13247 14132,13234 14231,13204
+Erich-Nehlhans-Str.	N 13998,13272 14089,13247 14132,13234 14200,13213 14231,13204
 Richard-Ermisch-Str.	N 14252,13263 14231,13204 14211,13150 14180,13064 14166,13024 14130,12926 14096,12827
 #: note: Privatstraße
 Edith-Stein-Str.	N 14089,13247 14035,13104
@@ -13895,7 +13895,8 @@ Viehtrift	N 14130,12926 14029,12954 14015,12958 13886,12995
 Am Viehhof	N 14015,12958 13979,12861
 Zur Waage	N 14029,12954 14067,13050
 Zur Börse	N 14166,13024 14067,13050 13926,13090
-Zur Marktflagge	N 14180,13064 14086,13090 14035,13104 13943,13129
+Zur Marktflagge	N 14180,13064 14152,13072 14086,13090 14035,13104 13943,13129
+Zur Marktflagge [Wohngebietsstraße]	N 14152,13072 14200,13213
 Zur Innung	N 14086,13090 14132,13234
 (Zur Waage - Zur Innung)	NN 14067,13050 14086,13090
 #: note: Planstr. BS 13:
@@ -18936,7 +18937,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: XXX wie sieht die Zukunft dieser Straße aus? (Widmung als Grünanlage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
-#: osm_watch: way id="26590565" version="17"
+#: osm_watch: way id="26590565" version="18"
 #: last_checked: 2022-12-28
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
