@@ -24,6 +24,8 @@ use Image::ExifTool ();
 
 use GPS::GpsmanData;
 
+our $VERSION = '0.02';
+
 sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
@@ -37,6 +39,7 @@ my $vehicle;
 my $brand;
 my $max_time_gap = 30;
 my $silent;
+Getopt::Long::Configure('auto_version', 'auto_help');
 GetOptions(
 	   'out-file|o=s' => \$outfile,
 	   'vehicle=s'    => \$vehicle,
@@ -225,7 +228,7 @@ exif2gpsman - extract coordinates from image files and create a GPSMan file out 
 
 =head1 SYNOPSIS
 
-    exif2gpsman [-o outfile.trk] [--vehicle ...] [--brand ...] [--max-time-gap seconds] image1 image2 ...
+    exif2gpsman [-o outfile.trk] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--silent] image1 image2 ...
 
 =head1 DESCRIPTION
 
