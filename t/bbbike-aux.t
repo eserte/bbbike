@@ -16,9 +16,9 @@ use BBBikeTest qw(check_devel_cover_testing);
 
 check_devel_cover_testing;
 
-my $bbbike_aux_t = bbbike_aux_dir . '/t';
-if (!-d $bbbike_aux_t) {
-    plan skip_all => "$bbbike_aux_t does not exist, nothing to test here";
+my $bbbike_aux_t;
+if (!defined bbbike_aux_dir || do { $bbbike_aux_t = bbbike_aux_dir . '/t'; !-d $bbbike_aux_t }) {
+    plan skip_all => ".../bbbike-aux/t does not exist, nothing to test here";
     exit 0;
 }
 
