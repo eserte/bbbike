@@ -13,6 +13,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279
 Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -315,7 +316,7 @@ Rosa-Luxemburg-Str.: Fußgänger, Bordsteine	q3 10695,12933 10685,12966
 Lehniner Platz/Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
 Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 (Kolonie Bornholm 1 und 2): Fußgänger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3 10209,16674 10190,16930
-(zum Rolandufer): Gehweg	q2 11347,12223 11278,12185
+(zum Rolandufer): Gehweg, niedriger Bordstein	q3 11347,12223 11278,12185
 Rolandufer: Gehweg, viele Fußgänger	q3 10821,12153 10660,12176 10591,12203 10583,12206
 Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe	q4 10583,12206 10492,12289 10417,12378 10416,12394
 Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
@@ -3281,7 +3282,7 @@ Am Groen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22146,10
 Klompenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22101,10985 22146,10995 22172,10996
 Fabeckstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 2717,5578 2678,5621 2669,5677
 Enckestr. - Friedrichstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9666,10848 9537,10837
-(Straße vor dem Berliner Ensemble): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9160,12932 9212,12969
+(Straße vor dem Berliner Ensemble): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9153,12928 9212,12969
 Grüne Aue: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Am Heidehof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -1410,2726 -1571,2669 -1612,2785
 Lilli-Henoch-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12357,15020 12388,14926

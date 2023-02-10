@@ -28299,7 +28299,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-01-05
+#: last_checked: 2023-02-10
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28921,7 +28921,7 @@ EOF
 # REMOVED (beendet) --- #: XXX wann werden die Bauarbeiten beendet? vvv --- #: note: laut fritz bis 31.03.2020 --- #: osm_watch: way id="705182550" version="1" --- #: osm_watch: way id="705182551" version="1"--- #: also_indoor: traffic (G,H) vvv --- #: last_checked: 2020-08-13 vvv --- #: check_frequency: 21d vvv --- #: source_id: 2147344480 (mittlerweile ausgelaufen)
 	q3::inwork 9102,12790 9193,12875
 	q4+::inwork 9193,12875 9239,12923
-# REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
+# REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9153,12928 9193,12875
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 EOF
      },
@@ -36345,7 +36345,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-23
+#: last_checked: 2023-02-10
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -37475,7 +37475,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
 #: priority: #C
-#: last_checked: 2023-01-18
+#: last_checked: 2023-02-10
 	2::inwork 10352,12627 10344,12641 10309,12700
 EOF
      },
@@ -37512,14 +37512,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1676056532, # bei osm entfernt, MarkCompletedHighwayConstruction -- undef, # XXX
        text  => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=733154#post733154',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (B)
-#: last_checked: 2023-01-12 (daf)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G,ex-B) --- #: last_checked: 2023-01-12 (daf)
 	q4::inwork 5350,12906 5341,12875 5376,12781
 EOF
      },

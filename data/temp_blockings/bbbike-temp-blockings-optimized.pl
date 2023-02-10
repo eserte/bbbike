@@ -2208,7 +2208,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-01-05
+#: last_checked: 2023-02-10
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4184,7 +4184,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-23
+#: last_checked: 2023-02-10
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -4904,7 +4904,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
 #: priority: #C
-#: last_checked: 2023-01-18
+#: last_checked: 2023-02-10
 	2::inwork 10352,12627 10344,12641 10309,12700
 ',
          'from' => undef,
@@ -4948,19 +4948,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (B)
-#: last_checked: 2023-01-12 (daf)
-	q4::inwork 5350,12906 5341,12875 5376,12781
-',
-         'from' => undef,
-         'id' => 3708,
-         'source_id' => 'https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=733154#post733154',
-         'text' => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m

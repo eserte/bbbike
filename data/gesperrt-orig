@@ -1380,7 +1380,7 @@ Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 (Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
 Enckestr. - Friedrichstr.	1s:q3 9666,10848 9537,10837
 (Mittelallee, Virchow-Klinikum)	1 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
-(Straße vor dem Berliner Ensemble)	1s:q3 9160,12932 9212,12969
+(Straße vor dem Berliner Ensemble)	1s:q3 9153,12928 9212,12969
 Jürgen-Schumann-Allee	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 Jürgen-Schumann-Allee	2 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der nördlichen Seite	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19927,-2756 19904,-2683 19663,-2419 19542,-2356 19330,-2340 19236,-2298 19131,-2145 18866,-1674 18936,-1581
@@ -3812,7 +3812,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2023-01-28
+#: last_checked: 2023-02-10
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4103,7 +4103,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-28
+#: last_checked: 2023-02-10
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
@@ -4148,7 +4148,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-01-18
+#: last_checked: 2023-02-10
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4218,13 +4218,13 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-01-16
+#: last_checked: 2023-02-10
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-01-19 (mapillary)
+#: last_checked: 2023-02-10
 #: check_frequency: 90d
 Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
 # 
@@ -4420,7 +4420,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: osm_watch: way id="47935842" version="16"
 #: osm_watch: way id="681299267" version="4"
 #: priority: #A vvv
-#: last_checked: 2023-01-31 (mapillary) vvv
+#: last_checked: 2023-02-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv
@@ -4455,12 +4455,12 @@ Jägerstr.: etwa 40m Fahrbahn an der Glinkastr. gesperrt	2s:q2:inwork  9195,11972
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2023-01-31 (mapillary)
+#: last_checked: 2023-02-10
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollständig aktiv
-#: last_checked: 2023-01-05
+#: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollständig aktiv; am 2023-02-10 war das Einbahnstraßenschild verschwunden, das Einfahrt-verboten-Schild aber noch da
+#: last_checked: 2023-02-10
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4796,7 +4796,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="4"
-#: last_checked: 2023-01-12 (daf)
+#: last_checked: 2023-01-15 (osm)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
@@ -4818,12 +4818,12 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="9"
-#: last_checked: 2023-01-26 (mapillary) vvv
-# REMOVED (fertig?) --- #: check_frequency: 60d vvv
+#: last_checked: 2023-02-10 vvv
+#: check_frequency: 45d vvv
 #: also_indoor: traffic (ex-G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
@@ -4909,12 +4909,12 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-01-21 (webcam)
+#: last_checked: 2023-02-08
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-01-21 (webcam)
+#: last_checked: 2023-02-08
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 
