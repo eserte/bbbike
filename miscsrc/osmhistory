@@ -34,7 +34,7 @@ GetOptions(
 	   'pager!' => \$use_pager,
 	   'blame'  => \$do_blame,
 	  )
-    or die "usage: $0 [--no-pager]\n";
+    or die "usage: $0 [--no-pager] osmobject/id\n";
 
 my $api_root_url = "https://www.openstreetmap.org/api/0.6";
 
