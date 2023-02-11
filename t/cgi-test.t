@@ -8,15 +8,18 @@
 use strict;
 
 BEGIN {
-    if (!eval q{
-	use HTML::Form;
-	use LWP::UserAgent;
-	use Test::More;
-	use URI::Escape qw(uri_escape);
-	1;
-    }) {
-	print "1..0 # skip no HTML::Form, LWP::UserAgent, URI::Escape, and/or Test::More modules\n";
-	exit;
+    for my $moddef (
+		    ['HTML::Form'],
+		    ['LWP::UserAgent'],
+		    ['Test::More'],
+		    ['URI::Escape', qw(uri_escape)],
+		   ) {
+	my($mod, @imports) = @$moddef;
+	my $use_code = "use $mod" . (@imports ? ' qw(' . join(' ', @imports) . ')' : '') . '; 1';
+	if (!eval $use_code) {
+	    print "1..0 # skip no $mod module ($@)\n";
+	    exit;
+	}
     }
 }
 
