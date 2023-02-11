@@ -923,8 +923,8 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 } elsif ($subcmd eq 'ci' || $subcmd eq 'test' || $subcmd eq 'travis-ci') {
     my %opt = (
 	       jobs    => 1,
-	       dist    => 'ubuntu',
-	       distver => 'trusty',
+	       dist    => 'debian',
+	       distver => 'jessie',
 	       src     => 'github',
 	       branch  => undef,
 	       env     => {},
