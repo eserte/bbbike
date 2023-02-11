@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,9 +17,10 @@ use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 
 use Doit;
 use Doit::Log;
-use Doit::Util qw(in_directory);
+use Doit::Util qw(in_directory copy_stat);
 
 use Cwd qw(realpath);
+use File::Basename qw(basename dirname);
 use File::Glob qw(bsd_glob);
 use File::Temp qw(tempdir);
 use Getopt::Long;
@@ -87,7 +88,7 @@ sub _dockerfile_frag_src ($) {
     }
     if ($optref->{src} eq 'github') {
 	$dockerfile .= <<EOF;
-RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
+RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args /bbbike
 EOF
     } elsif ($optref->{src} eq 'local') {
 	$dockerfile .= <<EOF;
@@ -99,9 +100,20 @@ EOF
     $dockerfile;
 }
 
-sub _add_invalidate_cmd ($) {
-    my $dockerfile_ref = shift;
-    $$dockerfile_ref .= <<"EOF";
+sub _dockerfile_apt_auth ($) {
+    my $optref = shift;
+    my $dockerfile = '';
+
+    if ($optref->{distver} eq 'jessie') {
+	$dockerfile .= <<EOF;
+RUN echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
+EOF
+    }
+    $dockerfile;
+}
+
+sub _dockerfile_invalidate_cache () {
+    <<"EOF";
 # Just a hack to make sure that the following lines
 # are executed at least once a day
 RUN echo @{[ POSIX::strftime("%F", localtime) ]}
@@ -148,7 +160,17 @@ sub gui {
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 EOF
-    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    $dockerfile .= _dockerfile_invalidate_cache if $opt{'invalidate-apt'};
+
+    my $username;
+    if ($^O ne 'MSWin32') {
+	my $uid = $<;
+	$username = (getpwuid($uid))[0];
+	$dockerfile .= <<"EOF";
+RUN adduser --disabled-password --force-badname -u $uid --gecos '' $username
+EOF
+    }
+
     if ($opt{src} =~ m{^(github|local)$}) {
 	my @packages = qw(perl-tk);
 	if ($opt{'feature-pdf'}) {
@@ -164,17 +186,25 @@ EOF
 RUN apt-get update && apt-get install -qqy @packages
 EOF
 	if ($opt{src} eq 'github') {
+	    $dockerfile .= <<'EOF';
+RUN mkdir bbbike
+EOF
+	    if (defined $username) {
+		$dockerfile .= <<"EOF";
+RUN chown $username bbbike
+EOF
+	    }
 	    $docker_cmd = "git clone --depth=1 https://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}";
 	} elsif ($opt{src} eq 'local') {
 	    $docker_cmd = "/bbbike/bbbike $opt{'bbbike-args'}";
 	}
     } elsif ($opt{src} =~ m{\.deb$}) {
-	require File::Basename;
-	my $base_src = File::Basename::basename($opt{src});
+	my $base_src = basename $opt{src};
 	$dockerfile .= <<EOF;
-COPY $base_src /tmp
-COPY install-deb /tmp
+COPY $base_src /tmp/
+COPY install-deb /tmp/
 WORKDIR /tmp
+RUN apt-get update
 RUN sh install-deb $add_apt_args ./$base_src
 EOF
 	$docker_cmd = "bbbike $opt{'bbbike-args'}";
@@ -182,12 +212,8 @@ EOF
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
     }
 
-    my $username;
-    if ($^O ne 'MSWin32') {
-	my $uid = $<;
-	$username = (getpwuid($uid))[0];
+    if (defined $username) {
 	$dockerfile .= <<"EOF";
-RUN adduser --disabled-password --force-badname -u $uid --gecos '' $username
 USER $username
 EOF
     }
@@ -241,8 +267,14 @@ EOF
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
 
     if ($opt{src} =~ m{\.deb$}) {
-	$doit->copy($opt{src}, $docker_context_dir);
-	$doit->copy("$FindBin::RealBin/../port/debian/helper/install-deb", $docker_context_dir);
+	for my $copy_def (
+			  [$opt{src}, $docker_context_dir],
+			  ["$FindBin::RealBin/../port/debian/helper/install-deb", $docker_context_dir],
+			 ) {
+	    my($src,$dest) = @$copy_def;
+	    $doit->copy($src, $dest);
+	    copy_stat($src, "$dest/" . basename($src));
+	}
     }
 
     my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
@@ -388,14 +420,10 @@ EOF
 RUN echo 'Acquire::Retries "3";' > /etc/apt/apt.conf.d/80-retries
 EOF
 
-    if ($opt{distver} eq 'jessie') {
-	$dockerfile .= <<EOF;
-RUN echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
-EOF
-    }
+    $dockerfile .= _dockerfile_apt_auth(\%opt);
 
     # basic packages
-    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    $dockerfile .= _dockerfile_invalidate_cache if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
 RUN apt-get update -qq && apt-get install -qqy git cpanminus libssl-dev wget
 EOF
@@ -621,12 +649,10 @@ sub build_deb {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
-    require File::Basename;
-
     my($distfile, $distvname);
     if ($opt{distfile}) {
 	$distfile = $opt{distfile};
-	($distvname = File::Basename::basename($distfile)) =~ s{.tar.gz$}{};
+	($distvname = basename($distfile)) =~ s{.tar.gz$}{};
     } else {
 	require BBBikeBuildUtil;
 	my $bsdmake = BBBikeBuildUtil::get_pmake(fallback => 0);
@@ -643,7 +669,7 @@ sub build_deb {
     if (!-s $distfile) {
 	error "Expected distfile $distfile is missing";
     }
-    my $distbasefile = File::Basename::basename($distfile);
+    my $distbasefile = basename $distfile;
 
     # Look into tarball for Debian version
     my $dist_tempdir = tempdir("bbbike_deb_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
@@ -667,7 +693,7 @@ sub build_deb {
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 EOF
-    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    $dockerfile .= _dockerfile_invalidate_cache if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
 RUN apt-get update && apt-get install -qqy dpkg-dev lintian rsync debhelper
 RUN mkdir /bbbike
@@ -698,6 +724,8 @@ sub cgi {
     my $pwd = save_pwd2;
     chdir bbbike_root or die "Can't chdir: $!";
 
+    my $docker_port = 5000;
+
     my $use_bbbike_ppa;
     if (defined $opt{'use-bbbike-ppa'}) {
 	$use_bbbike_ppa = $opt{'use-bbbike-ppa'};
@@ -708,17 +736,16 @@ sub cgi {
 
     # Prepare docker environment
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
-    require File::Basename;
     require ExtUtils::Manifest;
     ExtUtils::Manifest::manicopy(ExtUtils::Manifest::maniread(), $docker_context_dir, "cp");
     # Additional files needed not listed in MANIFEST
     for my $f ("cgi/GNUmakefile", "cgi/Makefile", "miscsrc/b2gmake") {
-	$doit->copy("$FindBin::RealBin/../$f", "$docker_context_dir/" . File::Basename::dirname($f));
+	$doit->copy("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
     }
     if ($opt{mapserver}) {
 	# XXX Actually it would be easier to copy everything in the repository, not just the files mentioned in MANIFEST
 	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", "data/BASE", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
-	    my($src, $dest) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . File::Basename::dirname($f));
+	    my($src, $dest) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
 	    next if -d $src; # ignore directories in miscsrc
 	    $doit->copy($src, $dest);
 	}
@@ -731,8 +758,9 @@ sub cgi {
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 EOF
-    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
-    my $docker_port = 5000;
+    $dockerfile .= _dockerfile_invalidate_cache if $opt{'invalidate-apt'};
+    $dockerfile .= _dockerfile_apt_auth(\%opt);
+
     my $fonts_dejavu_package = (
 				(
 				 ($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(trusty|precise|xenial)$}) ||
