@@ -68,7 +68,7 @@ WWW_HOST?=		localhost
 BBBIKE_CGI_RELURL?=	/bbbike/cgi
 BBBIKE_HTML_RELURL?=	/bbbike/html
 MAPSERVER_RELURL?=	/bbbike/mapserver/brb
-MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\S+)/i and print $$1'
+MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\d+\.\d+)/i and print $$1'
 BBBIKE_RELURL?=         $(BBBIKE_CGI_RELURL)/bbbike.cgi
 BBBIKE_URL?=		http://$(WWW_HOST)$(BBBIKE_RELURL)
 MAPSERVER_URL?=		http://$(WWW_HOST)$(MAPSERVER_RELURL)
@@ -117,7 +117,7 @@ MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
 MAPSERVER_PROG_RELURL?=	/cgi/mapserv.cgi				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
-MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\S+)/i and print $$1'
+MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\d+\.\d+)/i and print $$1'
 MAPSERVER_DRIVER!=	perl -e '`shp2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : print "GD"'
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
