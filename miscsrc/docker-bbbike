@@ -458,8 +458,6 @@ ENV $key "$val"
 EOF
     }
 
-    $dockerfile .= _dockerfile_frag_src(\%opt);
-
     # Emulate .travis.yml
     $dockerfile .= <<EOF;
 ENV TRAVIS_BUILD_DIR /bbbike
@@ -486,6 +484,11 @@ RUN /bin/bash --login -e -c "wrapper install_old_perl_dependencies"
 RUN /bin/bash --login -e -c "wrapper install_webserver_dependencies"
 RUN /bin/bash --login -e -c "wrapper install_selenium"
 RUN /bin/bash --login -e -c "wrapper install_perl_dependencies"
+EOF
+
+    $dockerfile .= _dockerfile_frag_src(\%opt);
+
+    $dockerfile .= <<EOF;
 RUN /bin/bash --login -e -c "wrapper init_cgi_config"
 RUN /bin/bash --login -e -c "wrapper fix_cgis"
 RUN /bin/bash --login -e -c "wrapper init_webserver_config"
