@@ -36,6 +36,7 @@ use Karte::Polar;
 use Karte::Standard;
 use Strassen::Util ();
 use StrassenNextCheck;
+use VectorUtil qw(get_polygon_center);
 
 use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
 
@@ -310,13 +311,14 @@ for my $file (@files) {
 		  grep { $_ ne '*' }
 		  @{ $r->[Strassen::COORDS] }
 		 )[0];
+	     my $coord_middle = ($r->[Strassen::CAT] =~ /^F:/ && @{ $r->[Strassen::COORDS] } >= 3
+				 ? join ',', get_polygon_center(map { split /,/ } @{ $r->[Strassen::COORDS] })
+				 : $r->[Strassen::COORDS][$#{$r->[Strassen::COORDS]}/2]
+				);
 
 	     # WGS84 coordinates
-	     my($px,$py) = do {
-		 my $middle = $r->[Strassen::COORDS][$#{$r->[Strassen::COORDS]}/2];
-		 $Karte::Polar::obj->standard2map(split /,/, $middle);
-	     };
-	     my($southmost_px,$southmost_py) = $Karte::Polar::obj->standard2map(split /,/, $coord_southmost);
+	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $coord_middle));
+	     my($southmost_px,$southmost_py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $coord_southmost));
 
 	     # fresh Mapillary URL
 	     {
@@ -437,7 +439,7 @@ for my $file (@files) {
 		     push @layers, 'Y'; # CyclOSM
 		 }
 		 push @layers, 'N'; # always turn notes on
-		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
+		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/?mlat='.$py.'&mlon='.$px.'#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
 	     }
 
 	     # BBBike Leaflet URL
