@@ -237,11 +237,11 @@ Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 112
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10989,16197 11253,16118
 Straßenbahn	3nocross::ignrte 11860,15309 11877,15366 11891,15413
 Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11877,15366 11632,15530
-Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11937,15349
+Prenzlauer Allee -> Diesterwegstr.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11937,15349
 Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11632,15530 11877,15366 11891,15413
-Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11632,15530 11877,15366 11937,15349
-Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11937,15349 11877,15366 11860,15309
-Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11937,15349 11877,15366 11632,15530
+Ahlbecker Str. -> Diesterwegstr.: Straßenbahn	3::igndisp 11632,15530 11877,15366 11937,15349
+Diesterwegstr. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11937,15349 11877,15366 11860,15309
+Diesterwegstr. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11937,15349 11877,15366 11632,15530
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12512,14626
 John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12512,14626 12422,14692 12403,14663
@@ -561,13 +561,15 @@ Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13508,15912 13623,1595
 Berliner Allee -> Mahlerstr.: Straßenbahntrasse	3::igndisp 13737,15994 13623,15954 13665,15840
 Mahlerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13665,15840 13623,15954 13508,15912
 Mahlerstr. -> Tassostr.: Straßenbahntrasse	3::igndisp 13665,15840 13623,15954 13614,15984
-Straßenbahntrasse	3nocross::ignrte 17919,6978 17919,6968 17962,6674
+Straßenbahntrasse	3nocross::ignrte 17919,6978 17919,6968 17945,6788 17962,6674
 Helmholtzstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 17845,6986 17919,6968 17919,6978
 Helmholtzstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17845,6986 17919,6968 18041,6924
 Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17919,6978 17919,6968 18041,6924
-Edisonstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 17962,6674 17919,6968 17845,6986
+Edisonstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 17945,6788 17919,6968 17845,6986
 Zeppelinstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 18041,6924 17919,6968 17845,6986
-Zeppelinstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 18041,6924 17919,6968 17962,6674
+Zeppelinstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 18041,6924 17919,6968 17945,6788
+Edisonstr. -> Roedernstr.: Straßenbahntrasse	3::igndisp 17919,6968 17945,6788 17981,6793
+Roedernstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 17981,6793 17945,6788 17962,6674
 Mittelstreifen	3nocross::ignrte 4918,8872 5022,8879 5172,8880 5182,8880 5195,8880 5266,8903
 Fechnerstr. -> Berliner Str.: Mittelstreifen	3::igndisp 4958,8981 5022,8879 5172,8880
 Berliner Str. -> Fechnerstr.: Mittelstreifen	3::igndisp 4918,8872 5022,8879 4958,8981

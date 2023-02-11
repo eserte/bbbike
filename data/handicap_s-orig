@@ -16,7 +16,7 @@
 #: source_id: bvg2021:m43#BVG315520_0
 #: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen)
 #: note: laut Baustellenplan Wegf¸hrung ¸ber den linken Gehweg, in der Realit‰t gibt es keine Freigabe des Gehwegs
-#: last_checked: 2023-02-05
+#: last_checked: 2023-02-11
 #: next_check: 2023-05-17
 #: valid: -20230517
 Untere Kynaststr.: Einbahnstraﬂenregelung, ggfs. vor der Einm¸ndung auf den linken Gehweg ausweichen	q3::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
@@ -157,7 +157,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2023-02-05
+#: last_checked: 2023-02-10 (mapillary)
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -563,7 +563,7 @@ Wandlitzstr.: in Hˆhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 #: check_frequency: 90d vvv
 #: last_checked: 2022-10-20 (bahninfo-forum) vvv
 #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="140336721" version="27"
+#: osm_watch: way id="140336721" version="28"
 #: note: fr¸her "teilweise verwinkelte Wegf¸hrung des Radwegs - q1-::inwork;"
 # REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag)
@@ -571,7 +571,7 @@ Turmstr.: Bauarbeiten, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="30195541" version="29"
+#: osm_watch: way id="30195541" version="30"
 #: last_checked: 2023-01-27 (bahninfo-forum)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstellen, Umweg ¸ber den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
@@ -1881,8 +1881,8 @@ Wildensteiner Str.: enge Straﬂe	q0- 18627,8475 18528,8331
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
 # REMOVED --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbr¸cke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fuﬂg‰nger	q2 9225,13389 9312,13388
-#: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl h‰ufiger der Fall ist (gesehen: 2013-03-09, 2016-10-30, 2022-06-18)
-Fontanestr.: zwei Schwellen, kˆnnen evtl. umfahren werden	q1 18240,6845 18254,6679
+#: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl regelm‰ﬂig der Fall ist (gesehen: 2013-03-09, 2016-10-30, 2022-06-18, 2023-02-11)
+Fontanestr.: zwei Schwellen, kˆnnen zumeist nicht umfahren werden	q1 18240,6845 18254,6679
 #: note: normalerweise wohl keine Umfahrungsmˆglichkeit
 Plˆnzeile: zwei Schwellen	q2 18574,6401 18676,6333
 #: note: wenn keine Autos illegalerweise an diesen Stellen parken
@@ -4350,6 +4350,9 @@ Kurf¸rstenstr. - Pohlstr.: einige Fuﬂg‰nger	q1 7432,10546 7450,10625
 # REMOVED --- #: last_checked: 2022-11-17 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2022-11-22 --- # REMOVED --- #: valid: 20200821-20211031 ---
 Friedrichstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
+#: XXX_prog BS an beiden Enden (ansonsten q3)
+(Roedernstr. - Edisonstr.): Gehweg, Bordsteine	q4 17981,6793 17945,6788
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -5462,7 +5465,7 @@ Hellersdorfer Promenade: Fuﬂg‰ngerzone	q1 24131,15109 24112,15236 24094,15360 24
 Muschelkalkweg: enge Straﬂe	q0- 10722,1222 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
 #: by: Thomas Schimpfke:
 #: corrected_by: srt (q3 -> q0-)
-Groﬂstr.: enge Straﬂe	q0- 18574,6401 18491,6464 18462,6495 18429,6582
+Groﬂstr.: enge Straﬂe	q0- 18574,6401 18487,6469 18462,6495 18429,6582
 #: by: Freioun:
 #: corrected_by: srt (q1 -> q0-)
 Rothariweg: enge Straﬂe	q0- 8292,6331 8290,6191 8291,6048

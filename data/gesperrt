@@ -1457,6 +1457,9 @@ Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7250,4401 7310,4308 7
 Straßenbahn	3nocross::ignrte 18010,7133 17934,7029 17919,6978
 Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18010,7133
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
+Straßenbahn	3nocross::ignrte 17919,6968 17945,6788 17962,6674
+Edisonstr. -> Roedernstr.: Straßenbahn	3::igndisp 17919,6968 17945,6788 17981,6793
+Roedernstr. -> Edisonstr.: Straßenbahn	3::igndisp 17981,6793 17945,6788 17962,6674
 Mittelstreifen	3nocross::ignrte -5036,15625 -5153,15658 -5370,15721 -5470,15750
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5036,15625 -5153,15658 -5192,15517
 Falkenseer Chaussee -> Haardtweg: Mittelstreifen	3::igndisp -5370,15721 -5153,15658 -5145,15693

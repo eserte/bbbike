@@ -135,8 +135,8 @@ Blaubeerweg -> Rosenthaler Weg: Umweg wegen Straßenbahngleisen	DH:len=40 10910,2
 # 
 Zeppelinstr. -> Helmholtzstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17845,6986
 Helmholtzstr. -> Zeppelinstr.: Fußgängerampel	DH:len=20:tl 17845,6986 17919,6968 18041,6924
-Edisonstr. -> Helmholtzstr.: Fußgängerampel	DH:len=20:tl 17962,6674 17919,6968 17845,6986
-Zeppelinstr. -> Edisonstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17962,6674
+Edisonstr. -> Helmholtzstr.: Fußgängerampel	DH:len=20:tl 17962,6674 17945,6788 17919,6968 17845,6986
+Zeppelinstr. -> Edisonstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17945,6788 17962,6674
 # 
 # REMOVED (Ampel existiert) --- #: next_check_id: HOLZMARKT-2017 --- #: XXX hier wird noch eine zusätzliche Ampel entstehen --- #: last_checked: 2018-10-18 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2018-09-14 vvv --- Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138 --- Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
