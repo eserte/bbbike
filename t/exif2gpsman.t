@@ -103,6 +103,9 @@ SKIP: {
     $exifTool->SetNewValue('GPSDateTime',     '2020:02:29 00:01:23');
     $exifTool->WriteInfo("$test_video");
 
+    # XXX Actually, for better testing it would be good to add another
+    # XXX GPS record, but how to do this?
+
     my $output_file = File::Temp->new(TEMPLATE => "exif2gpsman.t.XXXXXXXX", SUFFIX => '.trk', TMPDIR => 1);
     my @cmd = ($^X, "$FindBin::RealBin/../miscsrc/exif2gpsman", "-vehicle", "pedes", "$test_video", "-o", "$output_file");
     system @cmd;
