@@ -377,6 +377,15 @@ sub ci {
 	$image .= "-" . $opt{'image-variant'};
     }
 
+    if (defined $opt{'cover-dir'}) {
+	if ($opt{'with-data-build'}) {
+	    error "--cover-dir conflicts with --with-data-build option";
+	}
+	if (!-d $opt{'cover-dir'}) {
+	    $doit->make_path($opt{'cover-dir'});
+	}
+    }
+
     ## Build the Dockerfile
     my $dockerfile = <<EOF;
 FROM $image
@@ -545,9 +554,19 @@ RUN apt-get install -qqy \\
 EOF
     }
 
+    # Dependencies for test coverage
+    if (defined $opt{'cover-dir'}) {
+	$dockerfile .= <<EOF
+RUN apt-get install -qqy \\
+    libdevel-cover-perl
+EOF
+    }
+
     # Start all services and finally run the test suite
     $dockerfile .= qq{CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper start_selenium && wrapper init_data && perl Makefile.PL && make distcheck && };
-    if (!$opt{'with-data-build'}) {
+    if (defined $opt{'cover-dir'}) {
+	$dockerfile .= qq{make ext coverage && used_config};
+    } elsif (!$opt{'with-data-build'}) {
 	$dockerfile .= qq{HARNESS_TIMER=1 make test HARNESS_OPTIONS=j$opt{jobs} && used_config};
     } else {
 	# ... except in with-data-build mode; actual test will run later (see below)
@@ -589,8 +608,13 @@ EOF
 
 	my @errors;
 	if (!$opt{'with-data-build'}) {
+	    my @docker_cmd = (qw(docker run --rm --name), $tag);
+	    if (defined $opt{'cover-dir'}) {
+		push @docker_cmd, '-v', $opt{'cover-dir'}.':/bbbike/cover_db';
+	    }
+	    push @docker_cmd, $tag;
 	    eval {
-		$doit->system(qw(docker run --rm --name), $tag, $tag);
+		$doit->system(@docker_cmd);
 	    };
 	    if ($@) {
 		push @errors, "docker run failed: $@";
@@ -962,6 +986,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'invalidate-apt' => 0,
 	       'perl-ver' => undef,
 	       'image-variant' => undef,
+	       'cover-dir' => undef,
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
@@ -976,6 +1001,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'invalidate-apt!',
 	       'perl-ver=s',
 	       'image-variant=s',
+	       'cover-dir=s',
 	      )
 	or usage_ci;
     _check_distver $opt{distver};
@@ -1117,6 +1143,13 @@ source directory into the docker container:
 A crontab entry may look like this:
 
     48 0 * * *      mkdir -p $HOME/log/docker-bbbike-debian-jessie && cd $HOME/cvrsnica/src/bbbike && ./miscsrc/docker-bbbike test --dist debian --distver jessie --src local --env BBBIKE_TEST_SKIP_MAPSERVER=0 > $HOME/log/docker-bbbike-debian-jessie/$(date +\%FT\%T.log) 2>&1
+
+Coverage testing may be activated using the C<--cover-dir> option
+which needs to be set to a directory which contains the coverage
+files, including F<coverage.html>:
+
+    ./miscsrc/docker-bbbike ci --cover-dir /tmp/bbbike-cover_db
+    firefox /tmp/bbbike-cover_db/coverage.html
 
 =head2 DEB PACKAGE BUILD
 
