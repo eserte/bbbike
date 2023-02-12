@@ -189,6 +189,38 @@ if ($^O eq 'freebsd') {
     }
 }
 
+######################################################################
+# Test coverage
+{
+    my @ignore = (
+	# - /tmp/osm2bbd.t- -> temporary copy of an already covered module copied here
+	'/tmp/osm2bbd.t-.*',
+	# imported CPAN modules (see also "Bundled distributions" above)
+	'lib/BikePower.pm',
+	'lib/Tk/ContextHelp.pm',
+	'lib/Tk/FlatCheckbox.pm',
+	'lib/Tk/FlatRadiobutton.pm',
+	'lib/Tk/FreeDesktop/Wm.pm',
+	'lib/Tk/Getopt.pm',
+	'lib/Tk/PathEntry.pm',
+	'lib/enum.pm',
+	'lib/your.pm',
+        # imported private src/perl modules
+	'lib/Http.pm',
+	'lib/Met/Wind.pm',
+	'lib/Msg.pm',
+	'lib/Tk/CanvasBalloon.pm',
+	'lib/Tk/CanvasUtil.pm',
+	'lib/Tk/Placement.pm',
+    );
+    my $std_devel_cover_options = join(',', map { "+ignore,$_" } @ignore);
+    $bbbike_makefile_admin .= <<"EOF";
+# Test coverage
+STD_DEVEL_COVER_OPTIONS=$std_devel_cover_options
+
+EOF
+}
+
 $bbbike_makefile_admin .= <<'EOF'
 ######################################################################
 # DEPLOYMENTS
@@ -659,7 +691,7 @@ test-with-protocol: permission
 coverage: coverage-nonext coverage-ext coverage-result
 
 coverage-nonext:
-	env BBBIKE_TEST_NO_NETWORK=1 BBBIKE_TEST_NO_CGI_TESTS=1 PERL5OPT=-MDevel::Cover ${PERL} -MTest::Harness -e 'runtests(@ARGV)' t/*.t ESRI/t/*.t
+	env BBBIKE_TEST_NO_NETWORK=1 BBBIKE_TEST_NO_CGI_TESTS=1 PERL5OPT=-MDevel::Cover DEVEL_COVER_OPTIONS=${STD_DEVEL_COVER_OPTIONS} ${PERL} -MTest::Harness -e 'runtests(@ARGV)' t/*.t ESRI/t/*.t
 
 coverage-ext:
 	-env PERL5OPT=-MDevel::Cover DEVEL_COVER_OPTIONS=+ignore,'\bext/.*/t/' ${PERL} -Ilib -MTest::Harness -e 'runtests(@ARGV)' ext/*/t/*.t
