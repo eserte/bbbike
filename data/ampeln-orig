@@ -34,10 +34,10 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: next_check: 2023-03-02 vvv
 #: valid: -20230302 vvv
 #: XXX schon seit mehreren Tagen anscheinend ausgeschaltet
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-12
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-01-26 (mapillary)
+#: last_checked: 2023-02-12
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -235,7 +235,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (vermutlich nun funktionslos) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 --- #: check_frequency: 30d --- #: next_check: 2021-07-30 --- #: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer --- Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
 # 
 #: next_check_id: KASTANIENALLEE-2021
-#: last_checked: 2023-02-04 (mapillary) vvv
+#: last_checked: 2023-02-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-10-29 vvv
 Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen auf den linken Bürgersteig wechseln	X::inwork 9073,20606
@@ -2772,6 +2772,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 #: off: night? (seen Fri 2022-08-12 23:50)
 	X 14109,13449
 #: XXX_prog Radfahrer Richtung Heinz-Galinski-Str. müssen auch die Fußgängerampel benutzen; insgesamt drei Ampeln, unabhängig voneinander geschaltet
+#: XXX_prog Richtung Osten für Radfahrer auf dem Radweg nicht relevant (keine Haltelinie)
 #: note: Anforderungsampel
 	F 8144,16754
 	F 4122,11694
@@ -3203,7 +3204,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2023-01-15 (mapillary)
+#: last_checked: 2023-02-11 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8732,14098
@@ -3537,7 +3538,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: CHAUSSEE-2020
 #: osm_watch: node id="26748289" version="9"
-#: last_checked: 2023-01-22 (mapillary)
+#: last_checked: 2023-02-12
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8336,14586
@@ -3550,7 +3551,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2022-12-17
+#: last_checked: 2023-02-12
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 

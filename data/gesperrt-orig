@@ -3681,7 +3681,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-01-15 (mapillary)
+#: last_checked: 2023-02-12
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -3791,7 +3791,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="19"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2022-12-17
+#: last_checked: 2023-02-12
 #: check_frequency: 90d
 #: next_check: 2026-03-01
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -3899,7 +3899,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
 #: osm_watch: note 2832326 4
-#: last_checked: 2022-12-17
+#: last_checked: 2023-02-12
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -4087,7 +4087,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2022-12-17
+#: last_checked: 2023-02-12 (webcam)
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
@@ -4256,7 +4256,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-01-26 (mapillary)
+#: last_checked: 2023-02-12
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4763,7 +4763,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="26"
 #: also_indoor: traffic
-#: last_checked: 2023-02-06 (osm)
+#: last_checked: 2023-02-12
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230
@@ -4834,6 +4834,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: by: https://www.welt.de/print/die_welt/debatte/article206334255/Platz-der-Republik-Ganz-grosser-Kaese.html (Baubeginn 2022?)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Erwähnung; bis 2030)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/loewenbruecke/ ("Voraussichtliche Bauzeit: noch in Planung")
+#: by: https://www.bz-berlin.de/berlin/mitte/berlin-bekommt-seine-loewenbruecke-wieder (Bauarbeiten voraussichtlich ab Sommer 2024)
 #: XXX: existiert nicht mehr, die Brücke wird aber wieder aufgebaut; einer der vier Löwen wurde entfernt
 #: also_indoor: search Löwenbrücke Tiergarten
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"

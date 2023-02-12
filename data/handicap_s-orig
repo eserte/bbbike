@@ -28,7 +28,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-12
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -198,7 +198,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2023-01-07
+#: last_checked: 2023-02-12
 #: check_frequency: 150d
 #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -213,7 +213,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-12-17
+#: last_checked: 2023-02-12
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -268,7 +268,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
 #: note: bei rbb noch bis 31.12.2022
-#: last_checked: 2023-01-22 (mapillary)
+#: last_checked: 2023-02-12
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -809,7 +809,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4+::inwork; 155
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10804 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1293657.php (Baumfällungen)
 #: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023)
-#: last_checked: 2023-02-05 (mapillary) vvv
+#: last_checked: 2023-02-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-11-12 vvv
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119

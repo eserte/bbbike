@@ -592,7 +592,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (bis Oktober 2023)
 #: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-02-05 (mapillary)
+#: last_checked: 2023-02-12
 #: check_frequency: 150d
 #: next_check: 2024-12-31
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -606,7 +606,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="30"
 #: osm_watch: way id="184077626" version="18"
 #: osm_watch: way id="49180827" version="23"
-#: last_checked: 2023-02-06 (mapillary)
+#: last_checked: 2023-02-12
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -7721,16 +7721,17 @@ Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0- 23941,15458 23960,15340 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10384 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10385 (Anfrage)
 #: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2023-02-11 (mapillary) (noch Bauarbeiten) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-08-31 vvv
-(Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
-(Zerbster Str. - Louis-Lewin-Str.): wassergebundene Decke	Q1 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
 (Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+(Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
+(Zerbster Str. - Louis-Lewin-Str.): wassergebundene Decke	Q1 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
+# 
 (Gohliser Str. - Wuhle-Hönow-Weg): wassergebundene Decke	Q1 25504,15352 25541,15406 25540,15429
 Eilenburger Str.: Asphalt	Q0 25743,15118 25752,15219 25578,15238
 Oschatzer Ring: Asphalt mit leichten Schäden	Q0- 24651,15239 24634,15314 24639,15372 24648,15465 24779,15448
@@ -9444,7 +9445,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: by: https://mein.berlin.de/projekte/sanierung-grunflache-auerdreieck/?initialSlide=6 (vermutlich bleiben die Stufen am nördlichen Ende)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2023-01-15 (mapillary) vvv
+#: last_checked: 2023-02-12 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -11708,6 +11709,8 @@ Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
 Zachenberger Str.: Verbundsteinpflaster	Q1+ 19889,9400 19824,9405 19780,9409
 Am S-Bhf. Bellevue: Gehwegplatten	Q1 6694,12627 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
+#: note: im Wendehammer
+Gerichtstr.: Kleinsteinpflaster	Q1 7765,15417 7723,15417
 Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 (Götelstr. - Tharsanderweg): wassergebundene Decke	Q1 -3416,12165 -3524,11980
 (Uferweg - Bocksfeldstr.): wassergebundene Decke	Q1 -3928,11526 -3909,11596 -3872,11619

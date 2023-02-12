@@ -29656,7 +29656,7 @@ EOF
        until => $isodate2epoch->("2023-04-03 18:00:00"),
        text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 03.04.2023, eventuell noch länger',
        type  => 'handicap',
-       source_id => '2147344253', # bis Juni 2021 (!)
+       source_id => '2147344253', # bis Juni 2021 (!) (inaktiv)
        data  => <<EOF,
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
@@ -29665,7 +29665,7 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-11-30
+#: last_checked: 2023-02-12
 #: check_frequency: 90d
 #: next_check: 2023-04-03
 	q3::inwork  8986,16092 9178,16317
@@ -32293,7 +32293,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-12-28 vvv
+#: last_checked: 2023-02-12 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -36347,7 +36347,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-12
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36754,7 +36754,7 @@ EOF
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-02-04 (mapillary) vvv
+#: last_checked: 2023-02-11 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -36837,7 +36837,7 @@ EOF
      },
      { from  => 1665896400, # 2022-10-16 07:00
        until => 1676390400, # 2023-02-14 17:00
-       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Kadiner Str. und Warschauer Str., offen Richtung Osten, auch Radfahrer sind betroffen, vom 17.10.2022 07:00 bis 14.02.2023 17:00',
+       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Kadiner Str. und Warschauer Str., offen Richtung Osten, auch Radfahrer sind betroffen, Ende der Bauarbeiten unbekannt', # was: vom 17.10.2022 07:00 bis 14.02.2023 17:00
        type  => 'handicap',
        source_id => 'viz2021:13.451202,52.512713,17.10.2022,07:00',
        data  => <<EOF,
@@ -36850,9 +36850,9 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-02-09
+#: last_checked: 2023-02-12
 #: check_frequency: 30d
-#: next_check: 2023-02-14
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
 # REMOVED (hier nicht) ---	q4::inwork; 13515,11969 13352,12003
 EOF
@@ -36902,7 +36902,7 @@ EOF
        data  => <<EOF,
 #: by: mapillary
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2022-12-30 (mapillary)
+#: last_checked: 2023-02-11 (mapillary)
 	2::inwork 20996,16429 20923,16435 20898,16420
 EOF
      },
