@@ -2475,7 +2475,8 @@ Gartenufer: Parkweg, bei Regen Pfützen	Q1- 5845,11615 6067,11479 6200,11417
 Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): wassergebundene Decke	Q1+ 5550,12238 5573,12242
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
-(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1- 5643,12253 5714,12290 5796,12372 5940,12564
+#: historical_note: früher (bis Frühjahr 2023): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1-
+(südliches Spreeufer): Asphalt	Q0 5643,12253 5714,12290 5796,12372 5940,12564
 #: historical_note: früher (bis Herbst 2022): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt, Q1- vvv
 (südliches Spreeufer): Kleinsteinpflaster	Q1 5940,12564 5953,12592
 #: note: kurzer Abschnitt mit wassergebundener Decke
@@ -8011,7 +8012,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
-#: osm_watch: way id="723757589" version="9"
+#: osm_watch: way id="723757589" version="13"
 #: last_checked: 2022-08-07 (mapillary) vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
@@ -29092,6 +29093,7 @@ Hannah-Karminski-Str.: Asphalt	Q0 5233,12109 5258,12128 5317,12242 5360,12331
 #: confirmed_by: srt
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=734501#post734501 (Erneuerung der Straße)
 #: XXX verschwindet das Kopfsteinpflaster nach der Erneuerung der Straße?
+#: osm_watch: way id="35433912" version="10"
 #: last_checked: 2023-02-03 (daf)
 Schleswiger Ufer: Kopfsteinpflaster	Q2 5714,12266 5800,12361 5858,12425
 Schleswiger Ufer: Kopfsteinpflaster	Q1 5858,12425 5886,12467 5944,12548

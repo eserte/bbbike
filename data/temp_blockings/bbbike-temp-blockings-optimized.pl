@@ -3537,24 +3537,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SPREEUFER-2022
-#: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
-#: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2023-02-03 (daf)
-#: check_frequency: 30d
-#: next_check: 2024-02-12
-#: osm_watch: way id="4993234" version="19"
-	2::inwork 5714,12290 5796,12372 5940,12564
-# REMOVED (laut osm hier fertiggestellt) --- #: osm_watch: way id="4410535" version="26" --- 2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
-',
-         'from' => 1643583600,
-         'id' => 3507,
-         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
-         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Hansabrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Ende Oktober 2022: Wegarbeiten zwischen Flotowstr. und Hansabrücke)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4127,8 +4110,8 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        undef,
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: osm_watch: way id="1096678426" version="4"
-#: last_checked: 2023-01-22 (mapillary)
+#: osm_watch: way id="1096678426" version="5"
+#: last_checked: 2023-02-11 (mapillary)
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 ',
@@ -4427,7 +4410,7 @@ Linienstr.	q4::inwork 9225,13389 9312,13388
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-02-11 (mapillary) vvv
+#: last_checked: 2023-02-12 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -4543,7 +4526,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-01-26
+#: last_checked: 2023-02-13
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,

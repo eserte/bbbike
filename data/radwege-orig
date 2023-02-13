@@ -313,7 +313,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-02-05 vvv
+#: last_checked: 2023-02-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -7883,6 +7883,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/arbeiten-fuer-radweg-beginnen_a369521 (bis III. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2023/01/17/mariendorf-baustart-fuer-radfahrstreifen/
 #: by: https://viz.berlin.de/2023/01/mariendorfer-damm-radverkehrsanlagen/
+#: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/bauarbeiten-auf-dem-mariendorfer-damm-wird-es-eng-id205831
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
@@ -7890,6 +7891,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.386008,52.444282,22.11.2022,07:00 (Kanalarbeiten bis 23.12.2022) (inaktiv)
 #: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023)
+#: source_id: viz2021:13.385832,52.445579,14.02.2023,08:00 (bis 15.3.2023)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-12-23 vvv
@@ -7905,7 +7907,7 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 #: osm_watch: way id="30958674" version="22"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
-#: osm_watch: way id="4526218" version="25"
+#: osm_watch: way id="4526218" version="26"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
