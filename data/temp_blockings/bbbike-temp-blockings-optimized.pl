@@ -5067,6 +5067,31 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
          'text' => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 31.03.2023 15:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1680267600
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1625010630397956097#m
+#: by: https://nitter.cz/pic/orig/media%2FFomcps9XsAANAJP.jpg
+#: by: https://nitter.it/pic/orig/media%2FFomcpwwX0AE3OaJ.jpg
+	q4::inwork 8443,10780 8476,10884
+',
+         'from' => 1676181600,
+         'id' => 3723,
+         'source_id' => 'viz2021:13.374958,52.503091,13.02.2023,07:00',
+         'text' => 'Köthener Str.: Fahrbahn vor der Kreuzung Hallesches Ufer/Reichpietschufer gesperrt, vom 13.02.2023 07:00 bis 20.10.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1697814000
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1624987981189730306#m
+#: by: https://nitter.net/pic/orig/media%2FFomZwc_XwAATWOo.jpg
+	q2::inwork; 17418,16014 17330,16009 17178,16029
+',
+         'from' => 1676178000,
+         'id' => 3724,
+         'source_id' => 'viz2021:13.507331,52.548617,13.02.2023,06:00',
+         'text' => 'Hauptstr.: Verengung Richtung Suermondtstr. hinter Wartenberger Str., ggfs. Umleitung benutzen, vom 13.02.2023 06:00 bis 13.03.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1678723200
        }
      
 );

@@ -37680,4 +37680,27 @@ EOF
 	2::inwork -13732,20201 -13174,19943 -12456,19410 -12161,19075
 EOF
      },
+     { from  => 1676181600, # 2023-02-12 07:00
+       until => 1697814000, # 2023-10-20 17:00
+       text  => 'Köthener Str.: Fahrbahn vor der Kreuzung Hallesches Ufer/Reichpietschufer gesperrt, vom 13.02.2023 07:00 bis 20.10.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.374958,52.503091,13.02.2023,07:00',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1625010630397956097#m
+#: by: https://nitter.cz/pic/orig/media%2FFomcps9XsAANAJP.jpg
+#: by: https://nitter.it/pic/orig/media%2FFomcpwwX0AE3OaJ.jpg
+	q4::inwork 8443,10780 8476,10884
+EOF
+     },
+     { from  => 1676178000, # 2023-02-12 06:00
+       until => 1678723200, # 2023-03-13 17:00
+       text  => 'Hauptstr.: Verengung Richtung Suermondtstr. hinter Wartenberger Str., ggfs. Umleitung benutzen, vom 13.02.2023 06:00 bis 13.03.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.507331,52.548617,13.02.2023,06:00',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1624987981189730306#m
+#: by: https://nitter.net/pic/orig/media%2FFomZwc_XwAATWOo.jpg
+	q2::inwork; 17418,16014 17330,16009 17178,16029
+EOF
+     },
     );
