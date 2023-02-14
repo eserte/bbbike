@@ -4159,11 +4159,8 @@ EOF
 	      -sticky => "ew",
 	     );
 
-warn "XXX 13";
     $pe->idletasks; # to fill the variable
-warn "XXX 14";
     $pe->xview(1);#XXX does not work???
-warn "XXX 15";
 }
 
 sub temp_blockings_editor_preserve_data {
