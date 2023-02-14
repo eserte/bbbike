@@ -135,7 +135,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-01-17
+#: last_checked: 2023-02-14
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -380,7 +380,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="26"
-#: last_checked: 2022-12-23
+#: last_checked: 2023-02-14
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -535,6 +535,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://www.infravelo.de/projekt/oderstrasse/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Antrag zur Eschersheimer Str., Erwähnung der Oderstr.)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
+#: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
 #: last_checked: 2022-10-02
 #: check_frequency: 180d
@@ -886,7 +887,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2023-01-17
+#: last_checked: 2023-02-14
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1055,6 +1056,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 #: next_check_id: LYNAR-2022
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
+#: osm_watch: way id="717490209" version="18"
 #: last_checked: 2022-12-17
 #: check_frequency: 60d
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -1831,6 +1833,9 @@ Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
 Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5806,8350 5761,8339 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: Parkweg	Q1 5469,8524 5405,8549 5331,8581
+#: next_check_id: VOLKSPARKWILMERSDORF-2023
+#: XXX wird die Qualität nach den Bauarbeiten besser sein?
+#: next_check: 2023-04-15
 Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308 5687,8280 5700,8241 5730,8207
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8052
 (Volksparksteg - Volkspark Wilmersdorf): Parkweg	Q2 5401,8528 5405,8549
@@ -2269,9 +2274,9 @@ Rütlistr.: Betonpflaster	Q0- 12592,9249 12621,9297
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13270,9518 13298,9491
 Wildenbruchplatz: mäßiges Kopfsteinpflaster	Q2- 13138,8762 13227,8692 13314,8624
-Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
+Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13173,8623 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13011,8416
-Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
+Kleine Innstr.: Asphalt	Q0 13173,8623 13262,8554
 Erlanger Str.: Kopfsteinpflaster	Q2- 12293,8494 12166,8557
 Tellstr.: Kopfsteinpflaster	Q2 12323,8917 12406,9076
 Jansastr.: Kopfsteinpflaster	Q2 12429,8856 12524,9012
@@ -31853,4 +31858,6 @@ Kreuzungsbereich asphaltiert	Q0 13019,12316
 Kreuzungsbereich asphaltiert	Q0 18735,9421
 Einmündungsbereich asphaltiert	Q0 18859,6198
 Kreuzungsbereich asphaltiert	Q0 18767,6268
+Einmündungsbereich mit Kopfsteinpflaster	Q2 13173,8623
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 13124,8562
 #: ignore ^^^

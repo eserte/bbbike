@@ -27839,6 +27839,7 @@ EOF
 # REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023)
+#: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023)
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
 #: next_check: 2023-04-14
@@ -29076,6 +29077,7 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343519 (bis 31.12.2021)
 #: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023)
+#: source_id: viz2021:13.46842,52.61467,29.08.2022,13:10 (bis 31.08.2023)
 #: also_indoor: traffic (G,H,B)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
@@ -30687,6 +30689,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
+#: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2023-01-24 (architektur-urbanistik)
@@ -32104,9 +32107,10 @@ EOF
 #: next_check_id: MAINZER-2021
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
+#: source_id: viz2021:13.42885,52.47792,01.04.2021,10:17 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-01-23
+#: last_checked: 2023-02-14
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -33328,7 +33332,7 @@ EOF
 EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
-       until => $isodate2epoch->("2023-04-28 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       until => $isodate2epoch->("2023-04-29 17:00:00"), # 1640991600, # 2022-01-01 00:00
        text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 28.04.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00', # mittlerweile bis 28.4.2023, inaktiv
@@ -33338,8 +33342,9 @@ EOF
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1256599.php (ab 24.10.2022: Metzer Platz - Weißenburger Str.)
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
+#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023)
+#: source_id: viz2021:13.19772,52.52281,24.10.2022,12:12 (bis 29.04.2023)
 #: source_id: bvg2021:m36#BVG279266_0
-#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
 # REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
 # REMOVED ---	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
@@ -33795,8 +33800,8 @@ EOF
 EOF
      },
      { from  => 1630476021, # 2021-09-01 08:00
-       until => $isodate2epoch->("2023-02-15 18:00:00"), # 1672527599, # 2022-12-31 23:59
-       text  => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, bis Mitte Februar 2023', # ursprünglich: Ende 2022
+       until => $isodate2epoch->("2023-02-28 18:00:00"), # 1672527599, # 2022-12-31 23:59
+       text  => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Februar 2023', # ursprünglich: Ende 2022
        type  => 'handicap',
        source_id => 'https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/',
        data  => <<EOF,
@@ -33804,8 +33809,9 @@ EOF
 #: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
 #: also_indoor: traffic (G,H[falsch?],B)
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-10 (osm)
-#: next_check: 2023-02-14
+#: last_checked: 2023-02-14 (research)
+#: check_frequency: 3d
+#: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
 EOF
      },
@@ -34635,6 +34641,7 @@ EOF
 #: source_id: bvg2021:188#BVG296003_0
 #: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023)
 #: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023)
+#: source_id: viz2021:13.29541,52.43779,21.12.2022,14:37 (bis 31.03.2023)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -34870,6 +34877,7 @@ EOF
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: source_id: viz2021:13.452161,52.471082,21.02.2022,07:00 (bis 31.1.2023) (inaktiv)
+#: source_id: viz2021:13.452161,52.471082,02.02.2023,12:12 (bis 02.06.2023)
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
@@ -35163,7 +35171,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="4"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-11 (osm)
+#: last_checked: 2023-02-14
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35318,6 +35326,7 @@ EOF
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023)
+#: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -35359,6 +35368,7 @@ EOF
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024)
+#: source_id: viz2021:13.493,52.63648,26.10.2022,11:11 (bis 31.01.2024)
 #: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
 EOF
@@ -36425,6 +36435,7 @@ EOF
 #: next_check_id: BAHNHOF-2022
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023)
+#: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: next_check: 2023-03-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
@@ -36676,6 +36687,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023)
+#: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -36765,6 +36777,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
 #: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
+#: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023)
 	q4::inwork; 12010,16774 12230,16915 12267,16946
 EOF
      },
@@ -36830,8 +36843,8 @@ EOF
 EOF
      },
      { from  => 1665896400, # 2022-10-16 07:00
-       until => 1676390400, # 2023-02-14 17:00
-       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Kadiner Str. und Warschauer Str., offen Richtung Osten, auch Radfahrer sind betroffen, Ende der Bauarbeiten unbekannt', # was: vom 17.10.2022 07:00 bis 14.02.2023 17:00
+       until => $isodate2epoch->("2023-04-27 17:00:00"), # 1676390400, # 2023-02-14 17:00
+       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Kadiner Str. und Warschauer Str., offen Richtung Osten, auch Radfahrer sind betroffen, bis 27.04.2023', # was: vom 17.10.2022 07:00 bis 14.02.2023 17:00
        type  => 'handicap',
        source_id => 'viz2021:13.451202,52.512713,17.10.2022,07:00',
        data  => <<EOF,
@@ -36840,13 +36853,14 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1580448626056519680#m (... bis 14.02.2023)
 #: XXX Bleibt es bei der Einbahnstraßenregelung auch für Radfahrer?
 # REMOVED (nein) --- #: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
+#: source_id: viz2021:13.4528,52.512439,17.10.2022,07:00 (bis 27.04.2023)
 #: source_id: bvg2021:240#BVG310117_0
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
 #: last_checked: 2023-02-12
 #: check_frequency: 30d
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-02-14
+#: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
 # REMOVED (hier nicht) ---	q4::inwork; 13515,11969 13352,12003
 EOF
@@ -37126,7 +37140,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-01-22
+#: last_checked: 2023-02-14
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37213,6 +37227,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
+#: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023)
 	q4::inwork; 2112,26066 2207,26090 2293,26111 2402,26121
 EOF
      },
@@ -37383,6 +37398,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFi-jSc_XoAA7nGg.jpg
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
+#: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023)
 #: source_id: bvg2021:m85#BVG312983_0
 #: source_id: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
@@ -37633,6 +37649,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023)
+#: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023)
 #: also_indoor: traffic (G,H,B,W)
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -37683,6 +37700,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1625010630397956097#m
 #: by: https://nitter.cz/pic/orig/media%2FFomcps9XsAANAJP.jpg
 #: by: https://nitter.it/pic/orig/media%2FFomcpwwX0AE3OaJ.jpg
+#: source_id: viz2021:13.375018,52.503189,13.02.2023,07:00 (bis 20.10.2023)
 	q4::inwork 8443,10780 8476,10884
 EOF
      },
@@ -37694,7 +37712,18 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1624987981189730306#m
 #: by: https://nitter.net/pic/orig/media%2FFomZwc_XwAATWOo.jpg
+#: source_id: viz2021:13.50837,52.5486,13.02.2023,06:00 (bis 13.03.2023)
 	q2::inwork; 17418,16014 17330,16009 17178,16029
+EOF
+     },
+     { from  => 1676329200, # 2023-02-14 00:00
+       until => 1681595999, # 2023-04-15 23:59
+       text  => 'Volkspark Wilmersdorf: Wege werden saniert, mögliche Sperrungen, vom 15. Februar 2023 bis voraussichtlich Mitte April 2023',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
+       data  => <<EOF,
+#: next_check_id: VOLKSPARKWILMERSDORF-2023
+	2::inwork 5651,8218 5730,8207 5700,8241 5687,8280 5699,8308
 EOF
      },
     );
