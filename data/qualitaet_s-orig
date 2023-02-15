@@ -4509,7 +4509,8 @@ Schleizer Str.: Asphalt	Q0 17231,14979 17562,14992 17608,15010
 Lichtenauer Str.: Beton	Q1 16835,15188 17062,15184
 Lichtenauer Str.: Verbundsteinpflaster	Q1 17062,15184 17221,15181
 Lindenweg (Alt-Hohenschönhausen): Asphalt	Q0- 16251,15629 16297,15737 16360,15889
-Waldowstr.: brüchiger Asphalt	Q1 15856,15924 16080,15830
+#: historical_note: früher: brüchiger Asphalt, Q1, neu gemacht
+Waldowstr.: Asphalt	Q0 15856,15924 16080,15830
 Waldowstr.: Asphalt	Q0- 16080,15830 16297,15737 16469,15659 16497,15636
 Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2+ 15894,16096 15869,16078
@@ -12978,6 +12979,9 @@ Ella-Kay-Str. [Wohngebietsstraße]: Beton	Q0- 12173,15040 12214,15018 12136,14868
 (Griechischer Park Höhe Parsevalstr.): Asphalt	Q0 18159,6642 18162,6668 18158,6689
 Rummelsburger Platz: Asphalt mit einigen Schäden, kurzer Kopfsteinpflasterabschnitt	Q1 12766,11223 12664,11310
 Zur Marktflagge [Wohngebietsstraße]: Verbundsteinpflaster	Q1+ 14152,13072 14200,13213
+(Buschallee - Falkenberger Str.): Beton	Q0- 15134,16499 15131,16618
+(Buschallee - Falkenberger Str.): Asphalt	Q0 15131,16618 15144,16701
+(Buschallee - Falkenberger Str.): Asphalt/Beton	Q0 15144,16701 15139,16747
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -31860,4 +31864,9 @@ Einmündungsbereich asphaltiert	Q0 18859,6198
 Kreuzungsbereich asphaltiert	Q0 18767,6268
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13173,8623
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13124,8562
+Einmündungsbereich asphaltiert	Q0 15659,15759
+Einmündungsbereich asphaltiert	Q0- 13572,15804
+Einmündungsbereich asphaltiert	Q0 15891,16041
+Kreuzungsbereich asphaltiert	Q0 15894,16096
+Einmündungsbereich asphaltiert	Q0 15894,16189
 #: ignore ^^^

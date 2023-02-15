@@ -3656,8 +3656,8 @@ Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,37
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
-#: osm_watch: way id="358602468" version="7"
-#: osm_watch: way id="24189226" version="23"
+#: osm_watch: way id="358602468" version="8"
+#: osm_watch: way id="24189226" version="24"
 #: XXX Qualität nach den Bauarbeiten?
 #: XXX wird es auch Bauarbeiten am Flutgraben geben?
 #: last_checked: 2023-02-14
@@ -3982,7 +3982,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023)
-#: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025)
+#: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: note: Eintrag existiert auch in temp blockings
@@ -4445,7 +4445,7 @@ Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 #: XXX Hier öfters nachschauen...
-#: source_id: viz2021:13.38622,52.51458,29.09.2022,18:07 (bis 27.02.2023)
+#: source_id: viz2021:13.38622,52.51458,29.09.2022,18:07 (bis 27.02.2023) (inaktiv)
 #: check_frequency: 21d vvv
 #: note: Einbahnstraßenregelung auf 35m Länge, deshalb q3
 Glinkastr.: Einbahnstraßenregelung wegen Bauarbeiten, auch für Radfahrer	1s:q3:inwork 9183,12076 9195,11972
@@ -4743,8 +4743,8 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
+#: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
-#: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
 #: last_checked: 2023-01-04
@@ -4769,8 +4769,8 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: next_check_id: S21-2018
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791 (möglicherweise inaktiv)
+#: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="26"
 #: also_indoor: traffic
 #: last_checked: 2023-02-12

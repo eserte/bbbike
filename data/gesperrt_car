@@ -498,8 +498,12 @@ Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,72
 Köpenicker Landstr. -> Lakegrund: Mittelstreifen	3::igndisp 15920,7697 16195,7398 16368,7425
 Lakegrund -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16368,7425 16195,7398 16259,7328
 Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15142,16499
+Buschallee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14809,16525 15134,16499 15131,16618
 Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15142,16499 15134,16499 15120,16349
+Falkenberger Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15131,16618 15134,16499 15142,16499
+Falkenberger Str. -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15131,16618 15134,16499 15120,16349
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
+Sulzfelder Str. -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 15131,16618
 Mittelstreifen	3nocross::ignrte 24801,11261 24893,11252 25138,11215
 Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25138,11215 24893,11252 24903,11186
 Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24903,11186 24893,11252 24801,11261
@@ -2336,3 +2340,6 @@ Chamissoplatz: Poller	3 9553,9196 9566,9194 9614,9186
 Chamissoplatz: Poller	3 9614,9186 9566,9194 9553,9196
 Chamissoplatz: Poller	3 9540,9102 9589,9093 9600,9091
 Chamissoplatz: Poller	3 9600,9091 9589,9093 9540,9102
+Straßenbahntrasse	3nocross::ignrte 15843,16400 15866,16393 15918,16383
+Suermondtstr. -> Orankestrand: Straßenbahntrasse	3::igndisp 15918,16383 15866,16393 15813,16319
+Orankestrand -> Suermondtstr.: Straßenbahntrasse	3::igndisp 15813,16319 15866,16393 15843,16400
