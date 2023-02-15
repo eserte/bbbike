@@ -162,6 +162,7 @@ sub yml_to_bbd {
 	$id++;
 	my $d = $rec->{data}; # XXX no support for $rec->{file} --- is this intentional?
 	next if not $d;
+	my $d_is_multiline = $d =~ /\n.*\n/;
 	next if $filter_recurring    && !($rec->{permanent} || $rec->{recurring});
 	next if $filter_nonrecurring &&  ($rec->{permanent} || $rec->{recurring});
 	if (!$done_header) {
@@ -170,15 +171,18 @@ sub yml_to_bbd {
 	}
 	print "# \n";
 	print "#: id: $id vvv\n";
+	my @source_ids;
 	if ($rec->{source_id}) {
-	    my @source_ids = ref $rec->{source_id} eq 'ARRAY' ? @{ $rec->{source_id} } : $rec->{source_id};
-	    for my $source_id (@source_ids) {
-		print "#: by: $source_id\n";
+	    for my $source_id (ref $rec->{source_id} eq 'ARRAY' ? @{ $rec->{source_id} } : $rec->{source_id}) {
+		if ($source_id =~ m{^https?}) {
+		    print "#: by: $source_id\n";
+		} else {
+		    push @source_ids, $source_id;
+		}
 	    }
-	    my @real_source_ids = _filter_real_source_ids(@source_ids);
-	    for my $source_id (@real_source_ids) {
-		print "#: source_id: $source_id\n";
-	    }
+	}
+	for my $source_id (@source_ids) {
+	    print "#: source_id: $source_id" . ($d_is_multiline ? " vvv" : "") . "\n";
 	}
 	my $t = $rec->{text};
 	$t =~ s{[\n\t]}{ }g;
@@ -186,6 +190,11 @@ sub yml_to_bbd {
 	    $t . (substr($1,0,1) eq "\t" ? "" : " ") . $1 # separate with space only if there's a non-empty name in the bbd line
 	}gme;
 	print $d;
+	if ($d_is_multiline) {
+	    for (0 .. $#source_ids) {
+		print "#: source_id ^^^\n";
+	    }
+	}
 	print "#: id ^^^\n";
     }
 }
@@ -329,17 +338,6 @@ sub check_data_islands {
     }
 
     die "$possible_errors error(s) found" if $possible_errors;
-}
-
-sub _filter_real_source_ids {
-    my(@source_ids) = @_;
-    my @ret_source_ids;
-    for my $source_id (@source_ids) {
-	next if $source_id =~ m{^https?://};
-	(my $ret_source_id = $source_id) =~ s{\s+.*}{};
-	push @ret_source_ids, $ret_source_id;
-    }
-    @ret_source_ids;
 }
 
 sub _add_bbbike_inc {
