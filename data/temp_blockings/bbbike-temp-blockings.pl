@@ -30692,7 +30692,7 @@ EOF
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-24 (architektur-urbanistik)
+#: last_checked: 2023-02-16 (daf)
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -33807,9 +33807,9 @@ EOF
        data  => <<EOF,
 #: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 #: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
-#: also_indoor: traffic (G,H[falsch?],B)
+#: also_indoor: traffic (G,ex-H[falsch?],B)
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-14 (research)
+#: last_checked: 2023-02-16 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -34057,6 +34057,7 @@ EOF
 	2::inwork 32854,37244 31663,37734
 EOF
      },
+
      { from  => undef, # 
        until => undef, # XXX
        text  => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung der Arndtstr. und des östlichen Teil des Chamissoplatzes, samstags von 6 bis 19 Uhr',
@@ -34066,7 +34067,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-11-13 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9553,9196 9566,9194 9614,9186 9674,9179
@@ -34554,15 +34555,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2022)',
+       until => 1676574342, # undef, # XXX
+       text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2023)',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (ex-B,G,W)
+# REMOVED --- #: also_indoor: traffic (ex-B,G,W)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2023-01-17 (Asphaltierungsarbeiten)
-#: check_frequency: 7d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
 Jahnstr.	q3::inwork 12833,6127 13027,6168 13227,6209
@@ -35063,17 +35062,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1676574611, # -> gesperrt-orig # undef, # XXX
        text  => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein (z.B. abends oder am Wochenende)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
 #: note: Durchfahrt möglich, gesehen: 2022-03-23 (Mi) mittags, 2022-05-04 (Mi) mittags, 2022-07-06 (Mi) mittags, 2022-08-05 (Fr) vormittags, 2022-11-07 mittags
-#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40), 2022-12-04 (So) nachmittags (15:00), 2023-01-04 Mi (18:00), 2023-01-22 (So) mittags (gegen 12:30) (vermutlich)
-#: XXX Bleibt es bei der möglichen Durchfahrt?
-#: osm_watch: node id="1511805342" version="4"
-#: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2023-01-22
+#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40), 2022-12-04 (So) nachmittags (15:00), 2023-01-04 Mi (18:00), 2023-01-22 (So) mittags (gegen 12:30) (vermutlich), 2023-02-16 (Do) 19:15
+# REMOVED --- #: XXX Bleibt es bei der möglichen Durchfahrt? --- #: last_checked: 2023-01-22
 	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 EOF
      },
@@ -36351,7 +36347,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-12
+#: last_checked: 2023-02-16
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF

@@ -19,7 +19,7 @@ Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="6"
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="4"
@@ -537,7 +537,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2022-10-02
+#: last_checked: 2023-02-16
 #: check_frequency: 180d
 #: next_check: 2024-06-30
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
@@ -1089,7 +1089,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12580,12 +12580,8 @@ Havemannstr. [Wohngebietsstraße]: Beton	Q1+ 22058,18066 21893,18148 21838,18149
 (Barnimer Dörferweg - Gehrensee): Asphalt	Q0 21035,19005 21040,19007 21015,19070
 Einödshoferweg: Asphalt	Q0 9519,4537 9494,4658
 Zietenstr. (Lankwitz) [Stichstraße]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6246,2318
-#: next_check_id: EINHEITSDENKMAL-2022
-#: XXX: provisorischer Asphalt, später vermutlich Kleinpflastersteine
-#: last_checked: 2023-01-18 (Pflasterarbeiten)
-#: check_frequency: 30d
-#: next_check: 2023-10-01
-Schloßplatz: Asphalt	Q0 10174,12284 10102,12384
+# REMOVED --- #: next_check_id: EINHEITSDENKMAL-2022 --- #: XXX: provisorischer Asphalt, später vermutlich Kleinpflastersteine --- #: last_checked: 2023-01-18 (Pflasterarbeiten) --- #: check_frequency: 30d --- #: next_check: 2023-10-01
+Schloßplatz: Kleinpflastersteine	Q1- 10174,12284 10102,12384
 Schloßplatz: Kleinpflastersteine	Q1- 10102,12384 10175,12435
 Schloßplatz: Kleinpflastersteine	Q1- 10102,12384 10063,12438
 (Uferweg am Humboldtforum): Kleinpflastersteine	Q1- 10357,12356 10336,12404 10271,12503 10243,12546

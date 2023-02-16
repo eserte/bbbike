@@ -1537,7 +1537,7 @@ Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
-#: last_checked: 2023-01-05
+#: last_checked: 2023-02-15 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Annenstr. [Wohngebiet] (Mitte)	N 11192,11429 11259,11391 11217,11288
@@ -2527,14 +2527,14 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
-#: last_checked: 2022-12-04
+#: last_checked: 2023-02-16
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 # REMOVED --- (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
 (provisorische Umfahrung)	NN 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: 20140224-20230630
@@ -2697,7 +2697,7 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2022-12-22 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: 20140224-20230630
@@ -14069,7 +14069,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (Verschwenkung realisiert) --- #: XXX Verschwenkung der Bergiusstr. --- #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle --- #: XXX wahrscheinlich ist auch die alte Ampel abgeschaltet? --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html --- #: prio: #A --- #: next_check: 2013-08-23
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 # REMOVED --- #: last_checked: 2021-03-30 --- #: check_frequency: 90d --- #: next_check: 2021-12-31 --- #: next_check: 2021-04-02 --- (Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt
@@ -17372,14 +17372,9 @@ Emmichstr.	N 7285,2377 7370,2400 7424,2400 7559,2385 7648,2356
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8510 (Anfrage)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_50_3473_3552_online.pdf (Wirksamkeit der Umbenennung am 17. Februar 2023)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1292075.php (Benennungsfeier)
-#: XXX geplante Umbenennung in Maria-Rimkus-Weg; im DPAG-Mitteilungsblatt 03/2022 ist die Umbenennung aufgelistet; im DPAG-Mitteilungsblatt 09/2022 wurde wieder zurückbenannt
-#: also_indoor: search Maria-Rimkus-Weg
-#: osm_watch: way id="4792052" version="13"
-#: priority: #B
-#: last_checked: 2022-09-04
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-02-17
-Maerckerweg	N 7559,2385 7602,2522
+# REMOVED --- #: XXX geplante Umbenennung in Maria-Rimkus-Weg; im DPAG-Mitteilungsblatt 03/2022 ist die Umbenennung aufgelistet; im DPAG-Mitteilungsblatt 09/2022 wurde wieder zurückbenannt --- #: also_indoor: search Maria-Rimkus-Weg --- #: osm_watch: way id="4792052" version="13" --- #: priority: #B --- #: last_checked: 2022-09-04 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2023-02-17
+#: oldname: -20230217: Maerckerweg
+Maria-Rimkus-Weg	N 7559,2385 7602,2522
 #: note: relativ stark befahren, evtl. NH? (Aber keine Vorfahrtstraße)
 Eiswaldtstr.	N 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 Beselerstr.	N 7034,2586 6965,2418

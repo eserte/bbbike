@@ -3518,6 +3518,13 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
+#: osm_watch: node id="1511805342" version="4"
+#: osm_watch: node id="9448539551" version="1"
+#: last_checked: 2023-02-16
+#: check_frequency: 60d
+Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
+# 
 #: next_check_id: ERNSTTHAELMANNPARK-2022
 #: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist.
 #: last_checked: 2023-02-09
@@ -4057,7 +4064,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-02-05
+#: last_checked: 2023-02-16
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4151,7 +4158,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-15 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4260,7 +4267,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-02-12
+#: last_checked: 2023-02-15 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4732,7 +4739,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: osm_watch: way id="831444833" version="12"
 #: osm_watch: way id="831444834" version="12"
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-11-18 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
@@ -4747,7 +4754,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-01-04
+#: last_checked: 2023-02-16
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
@@ -4829,13 +4836,12 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="9"
-#: last_checked: 2023-02-10 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2023-02-10
+#: check_frequency: 45d
+#: next_check: 2023-03-31
 #: also_indoor: traffic (ex-G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: by: http://www.carsten-schatz.de/fileadmin/linksfraktion/ka/2015/S17-16825.pdf (kleine Anfrage)

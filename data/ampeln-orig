@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: ADELESCHREIBERKRIEGER-2014
+#: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm
+#: next_check: 2023-03-31
+#: valid: -20230331
+Gegenverkehrsregelung	X::inwork 8737,12757
+# 
 #: by: https://viz.berlin.de/2023/01/verkehrsvorschau-240123/ (Bedarfsampeln für Fußgänger, bis 2024)
 #: by: https://berliner-abendblatt.de/2023/01/24/bauarbeiten-staugefahr-in-der-guertelstrasse/
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
@@ -38,7 +44,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: last_checked: 2023-02-12
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-02-12
+#: last_checked: 2023-02-15 (mapillary)
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -85,7 +91,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-16
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -2514,7 +2520,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-01-04
+#: last_checked: 2023-02-16
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3334,7 +3340,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20230630 vvv
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-02-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3352,10 +3358,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
 #: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr.
-#: last_checked: 2023-01-04
+#: last_checked: 2023-02-16
 	F::inwork 14139,6786
 #: note: Anforderungsampel
-#: last_checked: 2023-01-04
+#: last_checked: 2023-02-16
 	F::inwork 13979,6700
 #: next_check ^^^
 #: valid ^^^
@@ -3381,14 +3387,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-01-22
+#: last_checked: 2023-02-16
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="5"
-#: last_checked: 2023-01-04
+#: last_checked: 2023-02-16
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
@@ -4085,6 +4091,11 @@ geschlossen bei Bedarf	Zbr 27649,-11766
 	B 13280,-18317
 	B 13295,-18620
 	B 13412,-20513
+#: by: https://www.eba.bund.de/SharedDocs/Anhoerungsverfahren/DE/Brandenburg/2023/0131_Anhoerung_ABS_Berlin_Dresden_Bahnuebergangsersatzmassnahme_Thomas_Muentzer_Strasse.html
+#: XXX Bahnübergang wird durch eine Über/Unterführung ersetzt
+#: osm_watch: node id="31353169" version="10"
+#: osm_watch: node id="385984279" version="10"
+#: next_check: 2025-02-15
 	B 13528,-21855
 	B 16379,-29446
 # REMOVED ---	B 16827,-30948
