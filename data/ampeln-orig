@@ -9,6 +9,7 @@
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm
+#: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023)
 #: next_check: 2023-03-31
 #: valid: -20230331
 Gegenverkehrsregelung	X::inwork 8737,12757
@@ -70,7 +71,7 @@ Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45
 #: note: Anforderungsampel
-#: last_checked: 2023-02-14
+#: last_checked: 2023-02-17
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -109,7 +110,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-02-14 vvv
+#: last_checked: 2023-02-17 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -136,7 +137,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) vvv
-#: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) vvv
+#: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: last_checked: 2023-01-15 (mapillary) vvv
 #: next_check: 2023-03-31 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
