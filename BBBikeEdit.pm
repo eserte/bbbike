@@ -3981,6 +3981,7 @@ sub temp_blockings_editor {
 		      or main::status_message("Can't open $pl_file: $!", "die");
 		  @old_contents = <PL_FILE>;
 		  close PL_FILE;
+		  my $old_line_number = scalar @old_contents;
 
 		  my $blocking_type2 = $blocking_type;
 		  if ($blocking_type =~ /^handicap/) {
@@ -4095,7 +4096,9 @@ EOF
 		  # Im Anschluss...
 		  if ($edit_after) {
 		      if (fork == 0) {
-			  exec("emacsclient", "-n", $pl_file);
+			  exec("emacsclient",
+			       ($old_line_number ? "+$old_line_number" : ()),
+			       "-n", $pl_file);
 			  CORE::exit(1);
 		      }
 		  }
