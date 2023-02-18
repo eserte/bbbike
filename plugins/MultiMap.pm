@@ -20,11 +20,13 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.89;
+$VERSION = 1.90;
 
 use vars qw(%images);
 
 my $map_compare_use_bbbike_org = 1;
+
+$main::devel_host = $main::devel_host if 0; # cease -w
 
 sub register {
     _create_images();
@@ -272,6 +274,13 @@ sub register {
 	      callback_3_std => sub { showmap_url_daf_berlin(@_) },
 	      ($images{DAF} ? (icon => $images{DAF}) : ()),
 	      order => 7501,
+	    };
+    }
+    if ($is_berlin && $main::devel_host) {
+	$main::info_plugins{__PACKAGE__ . "_AllTrafficMaps"} =
+	    { name => "All Traffic Maps",
+	      callback => sub { show_all_traffic_maps(@_) },
+	      order => 8999,
 	    };
     }
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
@@ -1146,7 +1155,6 @@ sub show_bvgstadtplan_menu {
 	 -command => sub { showmap_bvgstadtplan(%args, variant => 'bvg-stadtplan-10') },
 	);
     if ($main::devel_host) {
-	$main::devel_host = $main::devel_host if 0; # cease -w
 	$link_menu->command
 	    (-label => "BVG on bbbikeleaflet",
 	     -command => sub { showmap_bvgstadtplan(%args, variant => 'bbbikeleaflet') },
@@ -1739,6 +1747,22 @@ sub showmap_bbviewer {
     my(%args) = @_;
     my $url = showmap_url_bbviewer(%args);
     start_browser($url);
+}
+
+######################################################################
+
+sub show_all_traffic_maps {
+    my(%args) = @_;
+    my $bbbike_aux_dir = BBBikeUtil::bbbike_aux_dir();
+    if (!$bbbike_aux_dir) {
+	main::status_message("bbbike-aux directory is not available", "die");
+    }
+    my $all_traffic_maps_script = "$bbbike_aux_dir/misc/all-traffic-maps.pl";
+    if (!-e $all_traffic_maps_script) {
+	main::status_message("The script '$all_traffic_maps_script' does not exist", "die");
+    }
+    system "$all_traffic_maps_script --lon $args{px} --lat $args{py} &";
+    main::status_message("all-traffic-maps.pl was started in the background, please be patient", "info");
 }
 
 ######################################################################
