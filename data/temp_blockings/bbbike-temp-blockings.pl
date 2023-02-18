@@ -33808,8 +33808,9 @@ EOF
 #: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 #: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
 #: also_indoor: traffic (G,ex-H[falsch?],B)
+#: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-16 (research)
+#: last_checked: 2023-02-18 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -37121,7 +37122,7 @@ EOF
        text  => 'Weserstr.: Fahrbahn vor der Ederstr. gesperrt, Engstellen auf dem Bürgersteig, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,B) vvv
+#: also_indoor: traffic (G,B[zuviel],W) vvv
 #: last_checked: 2023-01-22 vvv
 	q4::inwork; 13946,7918 13891,7961
 	q3::inwork; 13891,7961 13946,7918

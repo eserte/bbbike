@@ -3273,8 +3273,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 #: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
 #: also_indoor: traffic (G,ex-H[falsch?],B)
+#: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-16 (research)
+#: last_checked: 2023-02-18 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -4623,7 +4624,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1688130000
        },
        {
-         'data' => '#: also_indoor: traffic (G,B) vvv
+         'data' => '#: also_indoor: traffic (G,B[zuviel],W) vvv
 #: last_checked: 2023-01-22 vvv
 	q4::inwork; 13946,7918 13891,7961
 	q3::inwork; 13891,7961 13946,7918
