@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -3936,10 +3936,12 @@ sub temp_blockings_editor {
 	     my $btxt = $real_txt->get("1.0", "end");
 	     $btxt =~ s/^(?:NEW|CHANGED|UNCHANGED|REMOVED)(,\s+\((coords|text)\))?\s*//;
 	     $btxt =~ s/[;,]\s+(?:eine\s+)?umleitung\s+ist\s+(?:ausgeschildert|eingerichtet)//i;
-	     $btxt =~ s/[;,]\s+umleitung\s+ausgeschildert//i;
+	     $btxt =~ s/[;,]\s+umleitung\s+(ausgeschildert|ausgewiesen)//i;
 	     $btxt =~ s/[;,]\s+umleitung//i;
 	     $btxt =~ s/[;,]\s+hohe\s+staugefahr//i;
+	     $btxt =~ s/(?<!^)(s)tra(ss|ß)e(?!\s+\d)/$1tr./gi; # straße -> str., except at beginning (Straße des 17. Juni) or for Nummernstraßen (Straße 42)
 	     $btxt =~ s/\s*\(\d{1,2}:\d{2}\)\s*$//; # seen in vmz records
+	     $btxt =~ s/\s*\z//;
 	     $real_txt->delete("1.0","end");
 	     $real_txt->insert("end", $btxt);
 	 });
