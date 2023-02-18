@@ -3730,7 +3730,7 @@ sub temp_blockings_editor {
 	    );
     my $txt;
     Tk::grid($txt = $t->Scrolled("Text", -scrollbars => "e",
-				 -width => 40, -height => 3,
+				 -width => 50, -height => 5,
 				),
 	     -sticky => "ew",
 	     -columnspan => 2);
