@@ -3698,10 +3698,7 @@ sub temp_blockings_editor {
 	require "$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings";
     }; warn $@ if $@;
 
-    my $initialdir = $BBBike::check_bbbike_temp_blockings::temp_blockings_dir . "/";
     my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl;
-    my $file = $initialdir;
-    my $as_data; # default set below with "invoke"
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";
     my $edit_after = 0;
@@ -3709,21 +3706,6 @@ sub temp_blockings_editor {
     my $auto_cross_road_blockings = 0;
     my $is_in_work = 1;
     my $meta_data_handling = "append";
-    my $pe;
-    my $as_data_cb;
-    Tk::grid($t->Label(-text => M("bbd-Datei").":"),
-	     $pe = $t->PathEntry(-textvariable => \$file),
-	     $as_data_cb = $t->Checkbutton(-text => "as data",
-					   -variable => \$as_data,
-					   -command => sub {
-					       $pe->configure(-state => $as_data ? "disabled" : "normal"),
-					   },
-					  ),
-	     -sticky => "w",
-	    );
-    $pe->focus;
-    $pe->icursor("end");
-    $as_data_cb->invoke; # default to "as data"
 
     Tk::grid($t->Label(-text => M("Beschreibung").":"),
 	     -sticky => "w",
@@ -3949,22 +3931,6 @@ sub temp_blockings_editor {
     Tk::grid($t->Button
 	     (-text => "Ok",
 	      -command => sub {
-		  if (!$as_data) {
-		      if (!defined $file || $file =~ /^\s*$/) {
-			  $t->messageBox(-message => "Dateiname fehlt oder `as data' wählen");
-			  return;
-		      }
-		      if (-d $file) {
-			  $t->messageBox(-message => "Bitte neue bbd-Datei auswählen oder `as data' wählen");
-			  return;
-		      }
-		      if (-e $file) {
-			  my $ans = $t->messageBox(-type => "YesNo", -icon => "question", -message => "Soll die existierende Datei `$file' überschrieben werden?");
-			  if ($ans !~ /yes/i) {
-			      return;
-			  }
-		      }
-		  }
 		  my $blocking_text = $get_text->();
 		  $blocking_text =~ s/\'/\\\'/g; # mask for perl sq string
 		  if ($blocking_text eq '') {
@@ -3991,12 +3957,13 @@ sub temp_blockings_editor {
 		      $start_time -= $prewarn_days * 86400;
 		  }
 
-		  if ($as_data) {
-		      require File::Temp;
-		      (my($fh), $file) = File::Temp::tempfile(SUFFIX => ".bbd",
-							      UNLINK => 1);
-		  }
-
+		  # XXX It would be better to work without a temporary
+		  # file here, but save_user_dels and
+		  # save_user_deletions in StrassenNetzHeavy.pm
+		  # operate only on files.
+		  require File::Temp;
+		  my($fh, $file) = File::Temp::tempfile(SUFFIX => ".bbd",
+							UNLINK => 1);
 		  main::save_user_dels($file,
 				       -type => $blocking_type,
 				       ($is_in_work ? (-addinfo => "inwork") : (-addinfo => "temp")),
@@ -4006,14 +3973,6 @@ sub temp_blockings_editor {
 		      if ($add_userdels) {
 			  $add_userdels->append($file);
 		      }
-		  }
-
-		  my $rel_file = $file;
-		  if (index($rel_file, $initialdir) != 0) {
-		      $rel_file = File::Spec->abs2rel($rel_file); # XXX base needed?
-		  } else {
-
-		      $rel_file = File::Basename::basename($rel_file); # XXX handle deeper hiearchies?
 		  }
 
 		  File::Copy::copy($pl_file, "$pl_file~");
@@ -4047,23 +4006,17 @@ EOF
 		  if ($meta_data_handling eq 'replace_preserve_data') {
 		      $pl_entry .= "###PRESERVE DATA\n";
 		  } else {
-		      if ($as_data) {
-			  my $s = Strassen->new($file);
-			  if ($s->count == 0) {
-			      if ($meta_data_handling eq '' ||
-				  $meta_data_handling eq 'show') {
-				  # don't warn if it's only written to STDERR or Tk widget
-			      } else {
-				  $t->messageBox(-message => "Keine Blockierungen ausgewählt");
-				  return;
-			      }
+		      my $s = Strassen->new($file);
+		      if ($s->count == 0) {
+			  if ($meta_data_handling eq '' ||
+			      $meta_data_handling eq 'show') {
+			      # don't warn if it's only written to STDERR or Tk widget
+			  } else {
+			      $t->messageBox(-message => "Keine Blockierungen ausgewählt");
+			      return;
 			  }
-			  $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
-		      } else {
-			  $pl_entry .= <<EOF;
-       file  => '$rel_file',
-EOF
 		      }
+		      $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
 		  }
 		  $pl_entry .= <<EOF;
      },
@@ -4145,12 +4098,6 @@ EOF
 			  exec("emacsclient", "-n", $pl_file);
 			  CORE::exit(1);
 		      }
-		      if (!$as_data) {
-			  if (fork == 0) {
-			      exec("emacsclient", "-n", $file);
-			      CORE::exit(1);
-			  }
-		      }
 		  }
 	      }),
 	     $t->Button
@@ -4160,9 +4107,6 @@ EOF
 	       }),
 	      -sticky => "ew",
 	     );
-
-    $pe->idletasks; # to fill the variable
-    $pe->xview(1);#XXX does not work???
 }
 
 sub temp_blockings_editor_preserve_data {
