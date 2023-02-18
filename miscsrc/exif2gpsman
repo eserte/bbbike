@@ -30,7 +30,7 @@ sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--silent] imagefiles ...
+usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--silent] [--debug] imagefiles ...
 EOF
 }
 
@@ -39,6 +39,10 @@ my $vehicle;
 my $brand;
 my $max_time_gap = 30;
 my $silent;
+
+my $debug;
+sub debug ($) { warn "DEBUG: $_[0]\n" if $debug }
+
 Getopt::Long::Configure('auto_version', 'auto_help');
 GetOptions(
 	   'out-file|o=s' => \$outfile,
@@ -46,6 +50,7 @@ GetOptions(
 	   'brand=s'      => \$brand,
 	   'max-time-gap=i'   => \$max_time_gap,
 	   's|silent'     => \$silent,
+	   'debug'        => \$debug,
 	  )
     or die usage;
 my @image_files = @ARGV;
@@ -77,6 +82,10 @@ IMAGE: for my $image_file (@image_files) {
     if ($image_file =~ m{\.(?:mp4|360|mov|qt)$}) {
 	$exiftool->Options(ExtractEmbedded => 1);
 	$exiftool->Options(Duplicates => 1);
+	debug "Detected $image_file as video";
+	if ($Image::ExifTool::VERSION < 12) {
+	    warn "WARN: Image::ExifTool $Image::ExifTool::VERSION might be too old for properly handling video files!\n";
+	}
     } else {
 	# normal JPEGs may have thumbnails with gps information attached, this would cause duplicate coordinates and other problems
 	$exiftool->Options(ExtractEmbedded => 0);
