@@ -3447,7 +3447,7 @@ sub show_diffs_since_last_deployment {
     IPC::Run::run(
 		  ['git', 'show', "$tag:data/temp_blockings/bbbike-temp-blockings.pl"], '|',
 		  [@temp_blockings_tasks_cmd, 'pl_to_yml', '/dev/stdin', '/dev/stdout'], '|',
-		  [@temp_blockings_tasks_cmd, 'yml_to_bbd', '/dev/stdin'], '|',
+		  [@temp_blockings_tasks_cmd, 'yml_to_bbd', '--basedir', "$main::datadir/temp_blockings", '/dev/stdin'], '|',
 		  ['sh', '-c', "diff -u - $bbbike_temp_blockings_bbd || true"], '|', # XXX ugly hack, because diff would exit with a non-zero status, making the whole IPC::Run::run looking like a failure
 		  [@cvsdiffbbd_cmd, '--add-fixed-label=bbbike-temp-blockings: ', '--diff-file=-'],
 		  '>>', $tmpfile

@@ -267,7 +267,7 @@ Same as above, but prepend the bbd basename to every record:
 
 Create bbd file with difference for temp_blockings changes:
 
-    git show deployment/bbbikede/current:data/temp_blockings/bbbike-temp-blockings.pl | ./miscsrc/temp_blockings_tasks pl_to_yml /dev/stdin /dev/stdout | ./miscsrc/temp_blockings_tasks yml_to_bbd /dev/stdin | diff -u - tmp/bbbike-temp-blockings.bbd | ./miscsrc/cvsdiffbbd --add-fixed-label="bbbike-temp-blockings: " --diff-file=- >| /tmp/diff-temp-blockings.bbd
+    git show deployment/bbbikede/current:data/temp_blockings/bbbike-temp-blockings.pl | ./miscsrc/temp_blockings_tasks pl_to_yml /dev/stdin /dev/stdout | ./miscsrc/temp_blockings_tasks yml_to_bbd --basedir data/temp_blockings /dev/stdin | diff -u - tmp/bbbike-temp-blockings.bbd | ./miscsrc/cvsdiffbbd --add-fixed-label="bbbike-temp-blockings: " --diff-file=- >| /tmp/diff-temp-blockings.bbd
 
 Old outdated example with CVS repository:
 

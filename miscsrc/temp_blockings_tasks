@@ -96,26 +96,27 @@ if (check_task 'pl_to_yml') {
 	exit 1;
     }
 
-} elsif (check_task 'yml_to_bbd') {
+} elsif (check_task('yml_to_bbd') || check_task('yml_to_recurring_bbd') || check_task('yml_to_nonrecurring_bbd')) {
+    require Getopt::Long;
+    my $basedir;
+    if (!Getopt::Long::GetOptions("basedir=s" => \$basedir)) {
+	die "usage: $0 $task [--basedir=...] bbbike_temp_blockings.yml\n";
+    }
     my $infile = shift
 	or usage "yml file is missing";
     @ARGV and usage "Extra args";
 
-    yml_to_bbd($infile);
+    my @options;
+    if ($basedir) {
+	push @options, basedir => $basedir;
+    }
+    if ($task eq 'yml_to_recurring_bbd') {
+	push @options, filter => 'recurring';
+    } elsif ($task eq 'yml_to_nonrecurring_bbd') {
+	push @options, filter => 'nonrecurring';
+    }
 
-} elsif (check_task 'yml_to_recurring_bbd') {
-    my $infile = shift
-	or usage "yml file is missing";
-    @ARGV and usage "Extra args";
-
-    yml_to_bbd($infile, filter => 'recurring');
-
-} elsif (check_task 'yml_to_nonrecurring_bbd') {
-    my $infile = shift
-	or usage "yml file is missing";
-    @ARGV and usage "Extra args";
-
-    yml_to_bbd($infile, filter => 'nonrecurring');
+    yml_to_bbd($infile, @options);
 
 } elsif (check_task 'check_recurrences') {
     require Getopt::Long;
@@ -151,6 +152,7 @@ sub yml_to_bbd {
     my($infile, %args) = @_;
     my $filter_recurring    = $args{'filter'} && $args{'filter'} eq 'recurring';
     my $filter_nonrecurring = $args{'filter'} && $args{'filter'} eq 'nonrecurring';
+    my $basedir             = $args{'basedir'} || do { require File::Basename; File::Basename::dirname($infile) };
 
     _add_bbbike_inc();
     require BBBikeYAML;
@@ -165,8 +167,7 @@ sub yml_to_bbd {
 	    my $f = $rec->{file};
 	    if ($f) {
 		require File::Spec;
-		require File::Basename;
-		my $abs_f = File::Spec->rel2abs($f, File::Basename::dirname($infile));
+		my $abs_f = File::Spec->rel2abs($f, $basedir);
 		open my $fh, $abs_f or die "Can't open file '$abs_f': $!";
 		local $/;
 		$d = <$fh>;
