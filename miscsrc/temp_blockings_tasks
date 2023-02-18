@@ -160,7 +160,18 @@ sub yml_to_bbd {
     my $id = -1;
     for my $rec (@$x) {
 	$id++;
-	my $d = $rec->{data}; # XXX no support for $rec->{file} --- is this intentional?
+	my $d = $rec->{data};
+	if (!$d) {
+	    my $f = $rec->{file};
+	    if ($f) {
+		require File::Spec;
+		require File::Basename;
+		my $abs_f = File::Spec->rel2abs($f, File::Basename::dirname($infile));
+		open my $fh, $abs_f or die "Can't open file '$abs_f': $!";
+		local $/;
+		$d = <$fh>;
+	    }
+	}
 	next if not $d;
 	my $d_is_multiline = $d =~ /\n.*\n/;
 	next if $filter_recurring    && !($rec->{permanent} || $rec->{recurring});
