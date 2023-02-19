@@ -4,12 +4,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2020,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
+#
+
+# Fetch the list of DWD stations reporting soil data (Bodenfeuchte),
+# create a bbd file and store it to
+#
+#    ~/src/bbbike/tmp/dwd-soil-stations.bbd
 #
 
 use lib "$ENV{HOME}/src/bbbike/lib";
