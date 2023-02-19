@@ -1155,7 +1155,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-02-17 vvv
+#: last_checked: 2023-02-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1510,7 +1510,7 @@ Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938 6230,13596
 Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6230,13532 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
-	RW1;RW2 21954,5229 22054,5360
+	RW1;RW2 21954,5229 21974,5255 22054,5360
 	RW2;RW1 22054,5360 22087,5404
 	RW2; 22087,5404 22116,5442
 	RW1; 22116,5442 22184,5545 22236,5633
@@ -2702,7 +2702,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-02-17 vvv
+#: last_checked: 2023-02-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -2959,7 +2959,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
-#: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
@@ -3610,8 +3610,8 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 
 	RW1;RW0 12972,7602 12918,7600 12787,7546 12685,7497
 	RW1;RW1 16975,1262 16908,1217
 #: note: nur an der Stubenrauchstr. ein paar Meter neues Verbundsteinpflaster
-meist altes Verbundsteinpflaster	RW1;RW9 16786,2989 17284,2636 17541,2454
-altes Verbundsteinpflaster	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
+meist altes Verbundsteinpflaster	RW1;RW9 16786,2989 17284,2636 17531,2460
+altes Verbundsteinpflaster	RW1;RW0 17531,2460 17772,2331 17928,2248 18101,2164 18111,2135
 Verbundsteinpflaster	RW2;RW2 15585,4139 15594,4152
 Asphalt	RW2;RW2 15594,4152 15618,4189 15640,4222
 Verbundsteinpflaster	RW2;RW2 15640,4222 15669,4266 15720,4341
@@ -3944,7 +3944,7 @@ unebenes Verbundsteinpflaster, kurvig	RW1; 2823,5672 2909,5674 2970,5676 3054,56
 mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5790 2137,5798 2106,5808 2030,5833 1909,5872 1746,5922
 	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
 alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
-Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
+Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15011,7593 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
 #: note: nicht explizit freigegeben, nur durch Fahrbahnmarkierung
 asphaltierter Gehweg für Radfahrer frei, einige deutliche Wurzelhebungen	RW1; 15221,7778 15553,7408 15560,7400
 asphaltierter Gehweg für Radfahrer frei, einige Wurzelhebungen	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
@@ -4516,7 +4516,7 @@ Verbundsteinpflaster	RW1; 22724,6608 22675,6498 22645,6431
 #: note: Busspur ist nicht für Radfahrer freigegeben, aber der Radweg ist auch nicht benutzungspflichtig 
 schmaler Unterstreifen gegen parkende Autos, Beton	RW1; 22645,6431 22534,6249
 Gehweg für Radfahrer frei	RW1; 22467,6135 22603,6141 22777,6151 22857,6155
-	RW1;RW1 21974,5208 22023,5160 22101,5064 22128,5003
+	RW1;RW1 21974,5208 22023,5160 22033,5148 22078,5093 22101,5064 22128,5003
 Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
 	RW1; 27189,5169 27097,5108 26971,5025 26620,4936
 	RW2;RW2 21332,4655 21390,4637
@@ -5393,7 +5393,10 @@ gemeinsamer Geh- und Radweg	RW2;RW2 23435,4179 23422,4094 23368,3894
 	RW3; 21324,3691 21363,3699
 sehr enger Verbundsteinpflasterradweg, kein Abstand zu parkenden Autos	RW1; 21363,3699 21392,3732 21414,3757 21489,3841 21496,3849 21579,3944 21679,4059 21829,4212
 # REMOVED (nein) --- #: XXX haben die Bauarbeiten etwas mit dem Radweg (Verbreiterung? Radspuren) zu tun? --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/glienicker-strasse-bleibt-dicht_a175130 (Bauarbeiten der Wasserbetriebe) --- #: source_id: 2147342854 --- #: priority: #C --- #: last_checked: 2018-08-12 --- #: next_check: 2018-08-17
-	RW1; 21829,4212 21679,4059 21579,3944 21496,3849 21489,3841
+Verbundsteinpflaster	RW1; 21829,4212 21679,4059
+#: note: wegen eines Geländers zum Gehweg auch keine Ausweichmöglichkeit nach rechts
+Verbundsteinpflaster, kein Abstand zu parkenden Autos	RW1; 21679,4059 21579,3944
+Verbundsteinpflaster	RW1; 21579,3944 21496,3849 21489,3841
 neu asphaltiert	RW1; 21489,3841 21414,3757 21392,3732
 Verbundsteinpflaster	RW1; 21392,3732 21363,3699 21324,3691
 	RW1;RW0 21799,4319 21829,4212
@@ -6830,8 +6833,7 @@ im Bereich der Straßenbahnhaltestelle	RW1; 15626,13541 15653,13542 15724,13544
 	RW3; 8234,19936 8224,19977 8196,20096
 Fahrradschleuse	RW3; 9164,12172 9141,12320
 Fahrradschleuse	RW3; 9141,12320 9164,12172
-#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3750&options=4
-Tempo 10	RW6;RW6 16043,3374 16221,3248
+# REMOVED (wieder aufgehoben?) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3750&options=4 (von 2012) --- Tempo 10	RW6;RW6 16048,3378 16221,3248
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=5328&options=4
 #: confirmed_by: srt
 	RW6;RW6 -3006,15534 -3134,15578 -3179,15574
@@ -7679,8 +7681,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="27"
-#: osm_watch: way id="335487059" version="26"
+#: osm_watch: way id="169738742" version="28"
+#: osm_watch: way id="335487059" version="27"
 #: last_checked: 2023-02-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
@@ -7694,7 +7696,8 @@ provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
 #: last_checked ^^^
 #: XXX ^^^
 Tempo 10	RW6;RW6 15691,5239 15656,5271
-Tempo 10	RW6;RW6 15731,5369 15656,5271 15539,5088 15498,5040 15402,4956
+Tempo 10	RW6;RW6 15731,5369 15656,5271 15539,5088
+	RW6;RW6 15539,5088 15498,5040 15402,4956
 Tempo 10	RW6;RW6 15539,5088 15577,5064
 # 
 # REMOVED --- #: next_check_id: POPUPRADWEGE-2020 --- #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021) --- #: by: https://twitter.com/SenUVKBerlin/status/1384420835855900672 --- #: by: https://twitter.com/VIZ_Berlin/status/1384862739504500739 (Markierungsarbeiten ab 26.4.2021) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021) --- #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187 --- #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320 --- #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021) (mittlerweile: 1. Quartal 2022 - 2. Quartal 2022) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022) --- #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/ --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191261.php (Verstetigung bis Ende April 2022) --- #: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/ --- #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-dauerhaft_a340844 --- #: last_checked: 2022-05-10 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-04-30 vvv --- # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105 --- #: osm_watch: way id="30184955" version="27"

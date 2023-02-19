@@ -546,6 +546,12 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # 
 ### Köpenick ###
 # 
+#: next_check_id: HAEMMERLING-2022
+#: last_checked: 2023-02-19
+#: next_check: 2023-05-25
+#: valid: -20230525
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
+# 
 # REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # REMOVED (vermutlich (hoffentlich) ist der neue Geh/Radweg breit genug) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: last_checked: 2020-06-14 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-12-31 vvv --- Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159 --- Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -2169,7 +2175,13 @@ Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Königsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
 (Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5552
 (Dämeritzstr. - Dämeritzsee): Radfahren verboten	q4 32512,2621 32558,2562
-(Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22023,5160 22056,5314 22054,5360
+(Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22023,5160 22035,5217 22056,5314 22054,5360
+(Am Generalshof - Uferweg): einige Fußgänger	q1 22140,5392 22197,5328 22209,5305
+(Uferweg): einige Fußgänger	q1 22230,5309 22209,5305 22133,5283 22095,5239 22059,5172 22085,5111
+(Uferweg): einige Fußgänger	q1; 22078,5093 22085,5111
+#: XXX_prog BS (ansonsten q1)
+(Uferweg): einige Fußgänger, Bordstein	q3; 22085,5111 22078,5093
+(Lindenstr. - Uferweg): einige Fußgänger	q1 21974,5255 22035,5217 22059,5172
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
 Waldpromenade: eng	q2 23579,8037 23473,8114
 Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21208,5291
@@ -4224,7 +4236,7 @@ Max-und Herta-Naujocks-Weg: einige Fußgänger	q1 16163,18780 16325,18796 16216,19
 #: XXX_prog BS (2x, ansonsten q2)
 Haydnstr. - Märkische Allee: Bordsteine, einige Fußgänger	q3 19995,11795 19979,11774
 #: note: ... und viel Gegenverkehr
-Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,3602 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
+Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15737,3609 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
 (Tornower Weg - Wilhelmsruher Damm): einige Fußgänger	q1- 6519,21002 6565,21004
 (Uferweg): Fußgänger, nicht sehr breit	q2- 21901,5117 21822,5153 21754,5221 21730,5267 21672,5407 21660,5424 21655,5432 21629,5470
 #: by: mapillary

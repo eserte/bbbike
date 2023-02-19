@@ -2267,9 +2267,15 @@ Mittelstreifen	3nocross::ignrte -2280,2177 -2074,2258 -2023,2279
 Wiesenschlag -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -2036,2150 -2074,2258 -2280,2177
 Mittelstreifen	3nocross::ignrte -2023,2279 -1959,2305 -1646,2434
 Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1959,2305 -1849,2043
-Straßenbahntrasse	3nocross::ignrte 22116,5442 22087,5404 22054,5360 21954,5229
+Straßenbahntrasse	3nocross::ignrte 22116,5442 22087,5404 22054,5360 21974,5255 21954,5229
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22006,5460 22087,5404 22116,5442
-Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22056,5314 22054,5360 21954,5229
+Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22056,5314 22054,5360 21974,5255
+Bhf.str. -> Lindenstr.: Straßenbahntrasse	3::igndisp 22087,5404 22054,5360 22056,5314
+Uferweg -> Bhf.str.: Straßenbahntrasse	3::igndisp 22035,5217 21974,5255 21954,5229
+Bhf.str. -> Uferweg: Straßenbahntrasse	3::igndisp 22054,5360 21974,5255 22035,5217
+Straßenbahnhaltestelle	3nocross::ignrte 21974,5208 22023,5160 22033,5148 22078,5093
+Bhf.str. -> Lindenstr.: Straßenbahnhaltestelle	3::igndisp 22035,5217 22023,5160 22033,5148
+Lindenstr. -> Bhf.str.: Straßenbahnhaltestelle	3::igndisp 21974,5208 22023,5160 22035,5217
 Lärmschutzwand	3nocross::ignrte 18496,2471 18656,2465 18929,2454
 North-Willys-Str. -> Ernst-Ruska-Ufer: Lärmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
 Ernst-Ruska-Ufer -> North-Willys-Str.: Lärmschutzwand	3::igndisp 18496,2471 18656,2465 18644,2582
@@ -3267,12 +3273,13 @@ Schranke	BNP:0:0:trailer=3 3218,8223
 Halbschranke	BNP:0:-2:trailer=1 28519,337
 Tor	BNP:10:-180 1432,1953
 Tor	BNP:10:-196 1473,1740
-Drängelgitter	BNP:2:-126:trailer=7 -4234,11408
 Schranke	BNP:5:-188:trailer=15 23221,15226
 Schranke	BNP:3:-207:trailer=10 -1486,16789
 Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
+Drängelgitter	BNP:3:-23:trailer=10 22085,5111
+Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821

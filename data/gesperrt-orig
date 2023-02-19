@@ -620,6 +620,7 @@ Storkower - Einsteinstr.	1 13107,14873 13143,14935 13163,14924 13185,14912 13148
 #: by: Norbert Rupsch: vvv
 #: confirmed_by: srt
 Adlershofer Str.	1 21633,4355 21585,4459
+#: confirmed_by: srt
 Adlershofer Str.	1 21633,4355 21649,4111 21655,4091 21679,4059
 #: by: ^^^
 Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690 4597,20778
@@ -2259,7 +2260,9 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
-Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21954,5229
+Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21974,5255 21954,5229
+#: note: ein "Stützpunkt" für die Abbiegebeschränkung enthalten
+Lindenstr.: Straßenbahnhaltestelle	3nocross 21974,5208 22023,5160 22033,5148 22078,5093
 # REMOVED (separate Straße nun) --- Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21129,4217 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
@@ -2697,7 +2700,7 @@ tragen (Treppe, 56 Stufen)	0:50 -6934,14291
 #: note ^^^
 #: note: mit Führungsrampe für Fahrräder
 tragen (Treppe, 32 Stufen)	0:30 20682,7262
-#: note: Kinderwagenrampe existiert; außerdem noch ein Bordstein zur Straße "Am Plänterwald"
+#: note: Kinderwagenrampe sowie eine "wilde" Rampe existieren; außerdem noch ein Bordstein zur Straße "Am Plänterwald"
 tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
 tragen (Treppe, 50 Stufen)	0:50 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18 8709,12605
@@ -3504,7 +3507,7 @@ Schranke	BNP:0::trailer=3 3218,8223
 Halbschranke	BNP:0::trailer=1 28519,337
 Tor	BNP:10 1432,1953
 Tor	BNP:10 1473,1740
-Drängelgitter	BNP:2::trailer=7 -4234,11408
+# REMOVED --- #: by: https://www.openstreetmap.org/note/3369538 (Drängelgitter wieder entfernt) --- Drängelgitter	BNP:2::trailer=7 -4234,11408
 #: note: manchmal offen, manchmal geschlossen; falls zu, dann vielleicht besser den Bürgersteig benutzen
 Schranke	BNP:5::trailer=15 23221,15226
 Schranke	BNP:3::trailer=10 -1486,16789
@@ -3512,11 +3515,17 @@ Schranke	BNP:1::trailer=3 14967,4641
 #: note: evtl. kann die Schranke über den Gehwegbereich umfahren werden
 Schranke	BNP:3::trailer=10 8702,13362
 Drängelgitter	BNP:3::trailer=10 5746,22582
+Drängelgitter	BNP:3::trailer=10 22085,5111
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: osm_watch: way id="770592585" version="5"
+#: last_checked: 2023-02-19
+#: check_frequency: 120d
+Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 # 
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
 #: osm_watch: node id="1511805342" version="4"
@@ -3534,7 +3543,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
 # 
 #: next_check_id: SPREEPARK-2022
-#: last_checked: 2023-01-10 vvv
+#: last_checked: 2023-02-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: -20230630 vvv
@@ -3545,7 +3554,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-02-07
+#: last_checked: 2023-02-19
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3689,7 +3698,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-02-12
+#: last_checked: 2023-02-19
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -4064,14 +4073,14 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-02-17
+#: last_checked: 2023-02-19
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-02-17
+#: last_checked: 2023-02-19
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4079,7 +4088,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401)
-#: last_checked: 2023-02-17
+#: last_checked: 2023-02-19
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
@@ -4360,7 +4369,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag)
-#: last_checked: 2023-01-01 (krickstadt)
+#: last_checked: 2023-02-12 (krickstadt)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4383,7 +4392,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: last_checked: 2023-02-08 (krickstadt) vvv
+#: last_checked: 2023-02-12 (krickstadt) vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="1085382250" version="2"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
@@ -4401,7 +4410,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: next_check_id: SCHOENEWEIDE-2018
 #: osm_watch: way id="40451054" version="16"
 #: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv)
-#: last_checked: 2023-01-31 (osm)
+#: last_checked: 2023-02-12 (krickstadt)
 #: next_check: 2023-03-31
 #: valid: -20230331
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701

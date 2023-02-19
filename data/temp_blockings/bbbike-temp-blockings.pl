@@ -28399,7 +28399,7 @@ EOF
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: last_checked: 2022-12-21
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
-#: last_checked: 2023-01-15
+#: last_checked: 2023-02-19
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -29721,7 +29721,7 @@ EOF
 # REMOVED (beendet, laut mapillary) --- #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020? --- #: XXX hier fehlt noch die letzte Asphaltdeckschicht --- #: also_indoor: traffic --- #: osm_watch: way id="156066225" version="19" --- #: last_checked: 2020-11-15 vvv --- #: check_frequency: 45d vvv --- #: next_check: 2021-01-13 vvv
 	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
 	q2::inwork 19055,2037 19164,2001
-	q2::inwork 19164,2001 19194,2157
+	q2::inwork 19164,2001 19198,2163
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -31070,7 +31070,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-18
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -35316,7 +35316,7 @@ EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
        until => $isodate2epoch->("2023-05-25 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt (aber vielleicht ist Schieben möglich?), bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
@@ -35328,13 +35328,18 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?)
+#: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B+G[nur Am Bahndamm],H[nur Schubert]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: next_check: 2023-01-31 vvv
-Am Bahndamm	2::inwork 21984,6317 22238,6195
+#: last_checked: 2023-02-19 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2023-05-25 vvv
+# REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
 #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: add_fragezeichen ^^^
 #: also_indoor ^^^
 EOF
@@ -35999,7 +36004,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-19
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -37721,6 +37726,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
 	2::inwork 5651,8218 5730,8207 5700,8241 5687,8280 5699,8308
+EOF
+     },
+     { from  => 1676361600, # 2023-02-14 09:00
+       until => 1686841200, # 2023-06-15 17:00
+       text  => 'Semmelweisstr.: Bauarbeiten zwischen Pfarrwörde und Am Bruchland, Fahrbahn kann gesperrt sein, außerdem Einbahnstraßenregelung in der Pfarrwöhrde, vom 15.02.2023 09:00 bis 15.06.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023)
+#: source_id: bvg2021:160#BVG316004_0 (kein Ende-Datum)
+Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
+Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 EOF
      },
     );

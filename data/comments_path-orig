@@ -452,7 +452,7 @@ Berliner Allee - Streustr.: bereits an der Rossinistr. die Straßenseite wechseln
 Weg entlang der Bahnstrecke: Pfad ist schwierig zu finden	CP2; 17425,9605 17438,9619
 Am Sandberg: Straße nicht ausgeschildert	CP2; 20144,8355 20149,8318
 # REMOVED (mittlerweile schon) --- Am Wriezener Karree: nicht ausgeschildert	CP2; 12959,11631 12728,11850
-Bahnhofstr. - Park: bereits an der Ampel Friedrichshagener Str. auf die linke Straßenseite wechseln	PI; 22116,5442 22087,5404 22054,5360 22056,5314
+# REMOVED (besser: via Generalshof oder Uferweg) --- Bahnhofstr. - Park: bereits an der Ampel Friedrichshagener Str. auf die linke Straßenseite wechseln	PI; 22116,5442 22087,5404 22054,5360 22056,5314
 Clayallee - Biesalskistr.: bereits an der Ampel Schützallee auf die linke Straßenseite wechseln	PI; 1139,3876 1159,3915 1130,3930
 # REMOVED (Kommentar nicht wirklich notwendig) --- #: by: christian (...chrisb...): --- Schäferstege - Parkanlage: schräg links über Spielplatz	CP2; 13366,20897 13332,20898
 #: note: Radweg Richtung Süden ist tiefer gelegen als die Fahrbahn
@@ -551,7 +551,7 @@ Mergenthalerring: links halten	CP2; 14469,8455 14422,8407
 Karl-Marx-Allee - Berolinastr.: links am Kino International vorbei	PI; 11635,12745 11645,12774 11622,12850
 Jüdenstr. - Falkenseer Platz: auf den linken Gehweg bis zum Falkenseer Platz fahren	CP; -3239,14641 -3209,14662 -3255,14685
 Am Juliusturm - Jüdenstr.: bereits an der Ampel Hoher Steinweg auf den linken Gehweg wechseln	PI; -3150,14631 -3209,14662 -3239,14641
-Bahnhofstr. - Am Maria-Jankowski-Park: bereits an der Ampel Bahnhofstr./Lindenstr. auf den linken Gehweg wechseln	PI; 21954,5229 22054,5360 22087,5404 22006,5460
+Bahnhofstr. - Am Maria-Jankowski-Park: bereits an der Ampel Bahnhofstr./Lindenstr. auf den linken Gehweg wechseln	PI; 21954,5229 21974,5255 22054,5360 22087,5404 22006,5460
 Ausgeschildert als "Pieskower Weg"	CP; 13123,15244 13094,15196 13131,15175
 Apollofalterallee - Lindenschwärmerweg: spätestens an der Rapsweißlingstr. auf die Fahrbahn wechseln, an der Einmündung Lindenschwärmerweg fehlt eine Bordsteinabsenkung am Radweg	PI; 21249,11042 21308,11075 21294,11097
 Am Stadtpark: linken Gehweg benutzen, um Bordstein zu vermeiden	CP2; 15357,12813 15395,12762
@@ -621,7 +621,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2023-02-11 vvv
+#: last_checked: 2023-02-19 vvv
 #: note: früher: ausgeschildert "zur Salzmannstraße Huronseestraße"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: note: früher: ausgeschildert "zur Sewanstraße"

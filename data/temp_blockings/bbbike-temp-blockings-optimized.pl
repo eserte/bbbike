@@ -2252,7 +2252,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: last_checked: 2022-12-21
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
-#: last_checked: 2023-01-15
+#: last_checked: 2023-02-19
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2650,7 +2650,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-18
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3757,20 +3757,25 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?)
+#: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B+G[nur Am Bahndamm],H[nur Schubert]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: next_check: 2023-01-31 vvv
-Am Bahndamm	2::inwork 21984,6317 22238,6195
+#: last_checked: 2023-02-19 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2023-05-25 vvv
+# REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
 #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: add_fragezeichen ^^^
 #: also_indoor ^^^
 ',
          'from' => 1651953282,
          'id' => 3548,
          'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
-         'text' => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt (aber vielleicht ist Schieben möglich?), bis zum 25.5.2023',
+         'text' => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, bis zum 25.5.2023',
          'type' => 'gesperrt',
          'until' => 1685030400
        },
@@ -4032,7 +4037,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-19
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -5065,6 +5070,18 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
          'text' => 'Volkspark Wilmersdorf: Wege werden saniert, mögliche Sperrungen, vom 15. Februar 2023 bis voraussichtlich Mitte April 2023',
          'type' => 'gesperrt',
          'until' => 1681595999
+       },
+       {
+         'data' => '#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023)
+#: source_id: bvg2021:160#BVG316004_0 (kein Ende-Datum)
+Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
+Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
+',
+         'from' => 1676361600,
+         'id' => 3726,
+         'text' => 'Semmelweisstr.: Bauarbeiten zwischen Pfarrwörde und Am Bruchland, Fahrbahn kann gesperrt sein, außerdem Einbahnstraßenregelung in der Pfarrwöhrde, vom 15.02.2023 09:00 bis 15.06.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1686841200
        }
      
 );

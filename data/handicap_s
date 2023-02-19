@@ -28,6 +28,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
@@ -840,7 +841,12 @@ Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Königsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
 (Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5552
 (Dämeritzstr. - Dämeritzsee): Radfahren verboten	q4 32512,2621 32558,2562
-(Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22023,5160 22056,5314 22054,5360
+(Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22023,5160 22035,5217 22056,5314 22054,5360
+(Am Generalshof - Uferweg): einige Fußgänger	q1 22140,5392 22197,5328 22209,5305
+(Uferweg): einige Fußgänger	q1 22230,5309 22209,5305 22133,5283 22095,5239 22059,5172 22085,5111
+(Uferweg): einige Fußgänger	q1; 22078,5093 22085,5111
+(Uferweg): einige Fußgänger, Bordstein	q3; 22085,5111 22078,5093
+(Lindenstr. - Uferweg): einige Fußgänger	q1 21974,5255 22035,5217 22059,5172
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
 Waldpromenade: eng	q2 23579,8037 23473,8114
 Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21208,5291
@@ -2313,7 +2319,7 @@ Max-und Herta-Naujocks-Weg: einige Fußgänger	q1 16163,18780 16325,18796 16216,19
 (Einkaufszentrum Lagunenweg): Fußgänger	q2 31762,3202 31650,3218
 (Mausohrweg - R1): Bordsteine, Fußgänger	q3 33296,2894 33267,2810 33255,2762
 Haydnstr. - Märkische Allee: Bordsteine, einige Fußgänger	q3 19995,11795 19979,11774
-Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,3602 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
+Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15737,3609 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
 (Tornower Weg - Wilhelmsruher Damm): einige Fußgänger	q1 6519,21002 6565,21004
 (Uferweg): Fußgänger, nicht sehr breit	q2 21901,5117 21822,5153 21754,5221 21730,5267 21672,5407 21660,5424 21655,5432 21629,5470
 (Straße 603 - Reckeweg): einige Fußgänger	q1 -6831,15260 -6891,15228
