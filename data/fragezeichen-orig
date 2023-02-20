@@ -172,13 +172,13 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (Leitungsarbeiten bis 30.5.2022) (mittlerweile bis 12.7.2022) (bis 28.9.2022) (inaktiv)
 #: source_id: viz2021:13.178114,52.421439,11.03.2022,09:00 (Leitungsarbeiten bis 13.5.2022) (mittlerweile bis 3.6.2022) (inaktiv)
 #: source_id: viz2021:13.17964,52.42183,07.02.2023,07:00 (bis 21.02.2023) (inaktiv)
-#: source_id: viz2021:13.179975,52.421904,07.02.2023,07:00 (Leitungsarbeiten bis 21.2.2023)
+#: source_id: viz2021:13.179975,52.421904,07.02.2023,07:00 (Leitungsarbeiten bis 21.2.2023) (bis 02.05.2023)
 #: osm_watch: way id="4323788" version="25"
 #: osm_watch: way id="23109081" version="20"
 #: osm_watch: way id="41108858" version="18"
 #: last_checked: 2023-01-05 (bahninfo-forum)
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-11-23
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2023-05-02
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
@@ -1183,6 +1183,12 @@ Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::proj
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1092646.php (Areal wird bis Ende 2027 entwickelt, keine Erwähnung des Uferwegs)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-peter-behrens-turm-obersch%C3%B6neweide.924/page-2#post-19962
 #: by: https://be-u.berlin/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1295733.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1293528.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/1-b-plan_9-59_darstellung_planungsziele_und_staedtebauliches_konzept.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/5-b-plan_9-59_masterplan.pdf
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bebauungsplan-zur-ostendstrasse_a373001
+#: XXX Bebauungsplan 9-59
 #: last_checked: 2023-02-11
 #: check_frequency: 720d
 #: next_check: 2026-12-31
@@ -1768,8 +1774,10 @@ Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 Jörsstr.: Asphaltierung vermutlich bereits durchgeführt	? -1478,18407 -1358,18400
 # 
 #: by: https://api.fixmyberlin.de/api/projects/133
+#: by: https://nitter.cz/VIZ_Berlin/status/1627537279190179843#m
+#: by: https://nitter.net/pic/orig/media%2FFpK3zm7XEAQwh9R.jpg (keine Änderung bislang)
 #: source_id: viz2021:13.176418,52.539708,25.08.2022,10:00 (Leitungsarbeiten bis 31.10.2022) (inaktiv)
-#: last_checked: 2022-10-08
+#: last_checked: 2023-02-20 (indoor check)
 #: check_frequency: 120d
 Seegefelder Str.: Umbau/Sanierung des Radwegs	?::projected -5257,14668 -5097,14599 -5013,14565 -4924,14535 -4724,14482
 # 
@@ -3690,6 +3698,7 @@ Heidelberger Str.: Straßenlandeinziehung im Bereich des Schmollerplatzes geplant
 #: by: http://www.infravelo.de/projekt/steglitzer-damm-1/ (1. Quartal 2023 - 2. Quartal 2023)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1295970.php (Baubeginn 6.3.2023, Richtung Osten bis April 2023, Richtung Westen bis Ende Mai 2023)
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/steglitzer-damm-baustart-fuer-radfahrstreifen-id206910
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296251.php
 #: source_id: viz2021:13.356585,52.448708,20.02.2023,07:00 (Fahrbahnsanierung, bis 31.03.2023)
 #: last_checked: 2022-10-15
 # REMOVED --- #: check_frequency: 150d
@@ -4814,6 +4823,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (2022)
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/radfahrstreifen-fuer-chausseestrasse-und-muellerstrasse-id205060
 #: by: https://www.infravelo.de/projekt/lueckenschluss-chausseestrasse/ (1. Quartal 2023 - 2. Quartal 2023)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/lueckenschluss-bei-radwegen_a372374
 #: XXX Tunnelsanierung beginnt am 2020-11-02 und dauert bis Mitte Juli 2021; während der Bauarbeiten wird der Radverkehr Richtung Norden über den Gehweg geführt
 #: last_checked: 2023-02-11 (mapillary)
 #: check_frequency: 60d
@@ -5069,7 +5079,7 @@ Paulsborner Str./Nestorstr.: Zebrastreifen geplant	?::projected 3315,9720 3340,9
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022)
 #: note: der bereits realisierte Zebrastreifen hat eine andere Standortbezeichnung: "Sewanstraße/Mellenseestraße"
 #: priority: #D
-#: last_checked: 2022-11-25
+#: last_checked: 2023-02-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-31
 Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der schon realisierte Zebrastreifen weiter südöstlich gemeint?)	?::projected 17778,10123 17905,10122 17795,10177
@@ -5537,14 +5547,14 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: next_check: 2024-06-30
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: osm_watch: way id="621721786" version="3"
-#: last_checked: 2022-12-03
+#: last_checked: 2023-02-20
 #: check_frequency: 120d
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18081,10312 18085,10244 18113,10208
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18113,10208 18130,10201 18132,10183
 #: last_checked: 2023-01-21
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
-#: last_checked: 2022-12-29 (mapillary)
+#: last_checked: 2023-02-19 (mapillary)
 #: check_frequency: 90d
 Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 17003,19035 16736,19193 16646,19221 16216,19183 16104,19165 16074,19162 16011,19158 15642,19179
 # REMOVED (fertig) --- #: by: https://api.fixmyberlin.de/api/projects/329 (mittlerweile: "execution", construction_completed 2021-12-31) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2020/pressemitteilung.976038.php (Bauarbeiten östliche Seite: 24.8.2020-Ende Oktober 2020; westliche Seite 2021; "asphaltierter Radfahrstreifen") --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/fahrradstreifen-wird-erneuert_a283621 --- #: by: http://www.infravelo.de/projekt/rhinstrasse-ostseite/ (bis 4. Quartal 2020) (alter Eintrag) --- #: by: http://www.infravelo.de/projekt/rhinstrasse-ostseite-2/ (bis 4. Quartal 2020) --- #: by: http://www.infravelo.de/projekt/rhinstrasse-westseite/ (1. Quartal 2021 - 4. Quartal 2021) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, voraussichtlich bis Herbst 2021) --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995 --- #: source_id: 2147346260 (bis 18.12.2020) (inaktiv) --- #: source_id: 2147347002 (bis 9.4.2021; hat die Baustelle was mit den geplanten Arbeiten zu tun?) --- #: source_id: 2147347183 (bis 2.8.2021; Radwegsanierung) --- #: source_id: viz2021:13.510848,52.543955,12.05.2021,06:00 (bis 8.9.2021; Radwegsanierung) --- #: last_checked: 2021-08-02 (mapillary) --- #: check_frequency: 130d --- #: next_check: 2021-09-08 --- Rhinstr.: Verbreiterung des Radwegs, vielleicht auch Asphaltierung?	?::inwork; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
@@ -5641,7 +5651,7 @@ Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht 
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="12"
-#: last_checked: 2022-11-25
+#: last_checked: 2023-02-20
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17255,11077 17322,11296
 #: XXX wird hier eine offizielle Führung von der Kreuzung Malchower Str./Wartenberger Str. realisiert? (dann könnte man den handicap-Eintrag (Bordsteinkante) entschärfen)
@@ -5686,7 +5696,7 @@ Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9582 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9776 (Beschlussempfehlung)
-#: last_checked: 2023-01-27
+#: last_checked: 2023-02-20
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -5694,7 +5704,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (temporär für 3 Monate)
-#: last_checked: 2023-02-19
+#: last_checked: 2023-02-20
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6114,10 +6124,13 @@ Hawaiiweg: Verbindung zum Uferweg wird hergestellt, Verbundsteinpflaster?	?::inw
 #: XXX neue private Erschließungsstraßen, fehlen in Berlin.coords.data vvv
 #: last_checked: 2022-07-31 vvv
 #: check_frequency: 270d vvv
+#: next_check: 2023-02-19 vvv
 #: osm_watch: way id="654334295" version="2"
 Jamaikaweg: existiert diese Straße bereits? Genaue Lage, Qualität?	? -2628,18796 -2630,18850
+#: by: https://www.deutsches-architekturforum.de/thread/11058-spandau-kleinere-projekte/?postID=735658#post735658 (existiert bereits, sieht nach Verbundsteinpflaster aus)
 #: osm_watch: way id="725035691" version="2"
 Bahamasbogen: existiert diese Straße bereits? Genaue Lage, Qualität?	? -2769,18853 -2630,18850 -2504,18841 -2506,18790
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -7314,10 +7327,10 @@ Aaron-Bernstein-Platz: in Bau, vermutlich nur für Fußgänger	?::inwork 9385,13246
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_02_0141_0296_online.pdf
 #: XXX fehlt in Berlin.coords.data, PLZ=?
 #: XXX noch keine Straßenschilder
-#: last_checked: 2023-01-21
+#: last_checked: 2023-02-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-02-13
-Zur Märkischen Aue: Straßenbenennung	? 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619 17856,10560 17864,10537
+Zur Märkischen Aue: Straßenbenennung	? 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619 17856,10560 17864,10537
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9433
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/verordneten-sprechen-sich-mehrheitlich-fuer-das-vorhaben-im-kaskelkiez-aus_a359450
@@ -7325,7 +7338,7 @@ Zur Märkischen Aue: Straßenbenennung	? 17848,11204 17893,11146 17905,11122 17924
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9433&date=20221126 (Teileinziehung der Stadthausstraße?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_03_0297_0360_online.pdf
 #: osm_watch: way id="198595363" version="11"
-#: last_checked: 2023-01-27
+#: last_checked: 2023-02-20
 #: check_frequency: 30d
 Stadthausstraße: Abschnitt unter der Unterführung wird für den Kfz-Verkehr eingezogen	? 15649,10922 15674,10851
 # 
@@ -8360,7 +8373,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraße in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, wäre aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2023-02-19
+#: last_checked: 2023-02-20
 #: check_frequency: 120d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -9590,6 +9603,13 @@ Bebauungsplan 6-40 VE: wird hier der Park verkleinert?	? -2064,2244 -1997,2095 -
 #: last_checked: 2023-02-10
 #: check_frequency: 90d
 Grünanlage neben dem Berghain: wann wird es hier eine benutzbare Grünfläche geben?	? 13015,11806 12971,11763 12998,11730 13037,11769 13015,11806
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1295739.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1286641.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/1_entwurf-vorhabenbezogener-b-plan-9-68-ve.pdf
+#: XXX Privatstraße Nord und Süd, beide in O-W-Richtung, zentrale Grünanlage in N-S-Richtung
+#: next_check: 2025-06-15
+Bebauungsplan 9-68 VE: Straßen geplant	? 20560,518 20722,562 20796,520 20841,354 20634,307 20599,423 20560,518
 # 
 #: ignore ^^^
 #: section ^^^

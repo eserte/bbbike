@@ -33807,10 +33807,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 #: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
-#: also_indoor: traffic (G,ex-H[falsch?],B)
+#: also_indoor: traffic (G,ex-H[falsch?],B,W)
 #: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-18 (research)
+#: last_checked: 2023-02-20 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -35325,11 +35325,11 @@ EOF
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
-#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
+#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?)
 #: note: Unterführung passierbar: 2023-02-19 mittags
-#: also_indoor: traffic (B+G[nur Am Bahndamm],H[nur Schubert]) vvv
+#: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
 #: last_checked: 2023-02-19 vvv
 #: check_frequency: 90d vvv
@@ -36700,7 +36700,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-02-10 (mapillary) vvv
+#: last_checked: 2023-02-19 (bahninfo-forum) vvv
 #: next_check: 2023-03-02 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446

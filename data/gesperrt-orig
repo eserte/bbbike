@@ -748,7 +748,8 @@ Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14321,15636
 Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
-(Prenzlauer Allee - Ostseestr.)	1 12254,16097 12198,15999 12154,15902
+# REMOVED (hier nicht) --- (Prenzlauer Allee - Ostseestr.)	1 12254,16097 12198,15999
+(Prenzlauer Allee - Ostseestr.)	1 12198,15999 12154,15902
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
@@ -2729,7 +2730,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-01-01
 #: last_checked: 2022-08-27 (mapillary)
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
 #: next_check: 2023-06-30
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
@@ -3554,7 +3555,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-02-19
+#: last_checked: 2023-02-20
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3858,7 +3859,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: osm_watch: way id="43205335" version="3"
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023)
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2022-08-27 (mapillary)
+#: last_checked: 2022-10-16 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
@@ -3905,7 +3906,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
-#: last_checked: 2023-01-27
+#: last_checked: 2023-02-20
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3997,7 +3998,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
-#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023)
+#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023)
 #: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025

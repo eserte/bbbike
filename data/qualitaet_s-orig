@@ -4854,10 +4854,10 @@ Brückenstr. (Rahnsdorf): Asphalt	Q0 29609,4049 29568,4098 29524,4208
 (entlang des Tränkegrabens): Beton/Asphalt	Q0 17163,10374 17239,10632 17249,10651 17255,10662
 (entlang des Tränkegrabens): Beton	Q0- 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 (Baikalstr. - Tränkegraben): Asphalt	Q0 17276,10617 17277,10633 17298,10633
-Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
-Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17839,10883 17856,10879
-Am Lindenplatz: Verbundsteinpflaster	Q1 17839,10883 17856,10961
-(Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): Beton	Q1 17914,10861 17856,10879
+Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17714,10766 17751,10904
+Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17843,10882 17856,10879
+Am Lindenplatz: Verbundsteinpflaster	Q1 17843,10882 17856,10961
+(Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): Beton	Q1 17915,10866 17856,10879
 Bahrendorfer Str.: Beton	Q0- 21696,7674 21719,7526 21736,7489 21765,7462 21865,7397 21956,7428
 Außenweg: unbefestigte Straße, etwas holprig, Schotter	Q2+ -7783,8524 -7457,8282 -7431,8255
 Außenweg: Asphalt	Q0 -7431,8255 -7425,8153 -7460,7826 -7418,7842
@@ -10478,9 +10478,9 @@ westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinp
 (Erieseering - am Tränkegraben): Parkweg	Q1- 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0- 17848,11204 17893,11146
 (Zachertstr. - am Tränkegraben): unbefestigt mit Pflasterreihen	Q2+ 17893,11146 17905,11122
-(Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
+(Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
-Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17689,11025 17676,11055
+Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17693,11035 17680,11058
 (am Tränkegraben - Moldaustr.): Gehwegplatten	Q1 17870,10619 17856,10560 17864,10537 17856,10508
 (Blumenweg): Schotter	Q2+ 22274,9622 22280,9629 22595,9978 22604,9988
 (Buschallee): Asphalt	Q0 22473,9530 22482,9550 22525,9665 22720,9921 22729,9932
@@ -17170,7 +17170,8 @@ Buchfinkweg: gute Betonstraße	Q0 14407,3356 14579,3251 14622,3211 14675,3117 147
 Im Mühlenfelde: Asphalt	Q0 1255,2923 1320,2731 1324,2603
 # 
 #: by: Peter Thom:
-Schwarzmeerstr.: Beton	Q1 17569,10801 17708,10768 17821,10741 17874,10729
+#: confirmed_by: srt
+Schwarzmeerstr.: Beton	Q1 17569,10801 17714,10766 17873,10726
 # 
 #: by: Alexander Quickert: vvv
 #: confirmed_by: srt
@@ -31231,7 +31232,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 16874,11188
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 16492,11042
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 16381,11080
 Kreuzungsbereich asphaltiert	Q0 16702,10972
-Kreuzungsbereich asphaltiert	Q0 16334,10958
+Einmündungsbereich asphaltiert	Q0 16719,11021
+Einmündungsbereich asphaltiert	Q0 16334,10958
 Einmündungsbereich asphaltiert	Q0 16374,10946
 Kreuzungsbereich asphaltiert	Q0 16452,10922
 Kreuzungsbereich asphaltiert	Q0 16192,10907
@@ -31277,7 +31279,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2+ -1422,3785
 Kreuzungsbereich asphaltiert	Q0 9250,14658
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9108,14777
 Kreuzungsbereich asphaltiert	Q0 16856,11438
-Kreuzungsbereich asphaltiert	Q0 16948,11409
+Einmündungsbereich asphaltiert	Q0 16948,11409
 Einmündungsbereich asphaltiert	Q0 17322,11296
 Einmündungsbereich asphaltiert	Q0 17500,11252
 Kreuzungsbereich asphaltiert	Q0 17587,11238

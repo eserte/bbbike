@@ -632,7 +632,7 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-02-08 (webcam)
+#: last_checked: 2023-02-19 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -640,7 +640,7 @@ Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-02-08 (webcam)
+#: last_checked: 2023-02-19 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -2930,7 +2930,7 @@ Preuﬂensiedlung: einige Fuﬂg‰nger	q1 20971,1046 20957,1043 20850,963
 Erieseering: Bordstein	q3 18141,10173 18132,10183
 (Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18042,10392 18039,10398 18026,10490 18034,10567
 #: note: am nˆrdlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am s¸dlichen Ende fehlt so ein Schild
-(Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
+(Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619
 (am Tr‰nkegraben - Moldaustr.): einige Fuﬂg‰nger	q1 17870,10619 17856,10560 17864,10537 17856,10508
 #: XXX_prog: BS s¸dliches Ende
 entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
@@ -4371,6 +4371,9 @@ Friedrichstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804
 (Roedernstr. - Edisonstr.): Gehweg, Bordsteine	q4 17981,6793 17945,6788
 # 
 (Buschallee - Falkenberger Str.): gemeinsamer Geh- und Radweg	q1 15131,16618 15144,16701
+# 
+#: XXX_prog BS an der Schwarzmeerstr. (ansonsten q1)
+(Kolonie M‰rkische Aue - Schwarzmeerstr./Am Lindenplatz): einige Fuﬂg‰nger, Bordstein	q2 17915,10866 17856,10879
 # 
 ######################### User Contributions #################################
 # 

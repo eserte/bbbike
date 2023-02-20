@@ -471,7 +471,7 @@ Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14321,15636
 Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
-(Prenzlauer Allee - Ostseestr.)	1 12254,16097 12198,15999 12154,15902
+(Prenzlauer Allee - Ostseestr.)	1 12198,15999 12154,15902
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
@@ -2216,6 +2216,7 @@ Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2
 Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18946,3077 19021,2946 19101,3028
 Mittelstreifen	3nocross::ignrte 12216,16120 12254,16097 12347,16039
 Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12254,16097 12216,16120
+Ostseestr. -> Prenzlauer Allee: Mittelstreifen	3::igndisp 12347,16039 12254,16097 12198,15999
 Mittelstreifen	3nocross::ignrte 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell -> Altheider Str.: Mittelstreifen	3::igndisp 19735,3643 19812,3561 19871,3600
 Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 19857,3514
