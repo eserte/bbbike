@@ -3555,7 +3555,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-02-20
+#: last_checked: 2023-02-21
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3728,8 +3728,8 @@ Maxim-Gorki-Str. (Kˆnigs Wusterhausen): Einbahnstraﬂenregelung wegen des SEVs	1s
 # 
 #: next_check_id: TRAMTURM-2021
 #: XXX alten Eintrag hier wiederherstellen!
-#: last_checked: 2022-11-26
-#: check_frequency: 180d
+#: last_checked: 2023-02-19 (bahninfo-forum)
+#: check_frequency: 90d
 #: next_check: 2023-07-07
 Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur f¸r Tram	2::inwork 7422,13012 7415,13060
 # 
@@ -4268,7 +4268,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe --- mittlerweile manchmal tats‰chlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="21"
 #: priority: #C
-#: last_checked: 2023-02-14
+#: last_checked: 2023-02-21
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
@@ -4293,7 +4293,7 @@ Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: next_check_id: DRESDNERBAHN-2021
 #: XXX laut Baustellenschild Erneuerung der E‹ Attilastr. bis 2023
 #: osm_watch: way id="588431071" version="6"
-#: osm_watch: way id="696227207" version="3"
+#: osm_watch: way id="696227207" version="4"
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaﬂnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023)
 #: add_fragezeichen: Bis wann genau geht die Sperrung?

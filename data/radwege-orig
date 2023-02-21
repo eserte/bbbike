@@ -877,9 +877,9 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-02-15
+#: last_checked: 2023-02-21
 #: check_frequency: 60d
-#: next_check: 2023-02-24
+# REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -887,7 +887,7 @@ asphaltiert	RW2; 13785,12292 13543,12326
 	RW10; 13543,12326 13448,12340
 asphaltiert, relativ breit	RW2; 13448,12340 13163,12382 12929,12421
 ein Fahrstreifen, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 12929,12421 12878,12430 12848,12434
-asphaltiert	RW2; 12848,12434 12816,12439 12603,12470 12592,12472
+neu asphaltiert, ca. 3m breit	RW2; 12848,12434 12816,12439 12603,12470 12592,12472
 neu asphaltiert, ca. 3m breit	RW2; 12592,12472 12352,12509
 asphaltiert	RW2; 12352,12509 12134,12540 12114,12546
 #: note: Karl-Marx-Allee Richtung Osten ab Strausberger Platz
@@ -2558,7 +2558,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-02-10 vvv
+#: last_checked: 2023-02-21 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -2603,7 +2603,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-21
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -7681,7 +7681,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="28"
+#: osm_watch: way id="169738742" version="29"
 #: osm_watch: way id="335487059" version="27"
 #: last_checked: 2023-02-16 vvv
 #: check_frequency: 60d vvv
@@ -7745,6 +7745,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8513
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8524
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8489
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/strasse-wird-zwischen-joachimsthaler-und-wilmersdorfer-neu-aufgeteilt_a372767
 #: last_checked: 2022-12-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
@@ -8011,7 +8012,7 @@ baulich getrennt	RW4; 10807,12451 10831,12371
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
 #: last_checked: 2022-12-23 vvv
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-03-31 vvv
+#: next_check: 2023-05-31 vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorische Radspur	RW4; 8490,2084 8560,2181 8579,2265
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8579,2265 8560,2181 8490,2084

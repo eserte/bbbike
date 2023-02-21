@@ -2915,7 +2915,7 @@ EOF
        text  => 'B 96; (Neuhof-Wünsdorf); Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung 28.10.2005-01.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16407,-29400 16379,-29446
+	2 16412,-29541 16427,-29645
 EOF
      },
      { from  => 1126389600, # 2005-09-11 00:00
@@ -3442,7 +3442,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 07.01.2006-09.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16360,-29489 16379,-29446
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1134082800, # 2005-12-09 00:00
@@ -3450,7 +3450,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 10.12.2005-12.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16360,-29489 16379,-29446
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1136847600, # 2006-01-10 00:00
@@ -3458,7 +3458,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 11.01.2006-11.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16360,-29489 16379,-29446
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1135033200, # 2005-12-20 00:00
@@ -3466,7 +3466,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 21.12.2005-22.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16360,-29489 16379,-29446
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1078095600, # 2004-03-01 00:00
@@ -3737,8 +3737,8 @@ EOF
        text  => 'B 096 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 04.03.2006-05.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16407,-29400 16379,-29446
-	2 16360,-29489 16379,-29446
+	2 16412,-29541 16427,-29645
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1144015200, # 2006-04-03 00:00
@@ -4002,8 +4002,8 @@ EOF
        text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 03.05.2006-03.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16407,-29400 16379,-29446
-	2 16360,-29489 16379,-29446
+	2 16412,-29541 16427,-29645
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1146693600, # 2006-05-04 00:00
@@ -4011,8 +4011,8 @@ EOF
        text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 05.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16407,-29400 16379,-29446
-	2 16360,-29489 16379,-29446
+	2 16412,-29541 16427,-29645
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1144262992, # 1144965600 2006-04-14 00:00
@@ -4020,8 +4020,8 @@ EOF
        text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 15.04.2006-15.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16407,-29400 16379,-29446
-	2 16360,-29489 16379,-29446
+	2 16412,-29541 16427,-29645
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1142895600, # 2006-03-21 00:00
@@ -4121,8 +4121,8 @@ EOF
        text  => '<leer>', # intentionally not empty string, because the check_bbbike_temp_blockings script does not like it
        type  => 'gesperrt',
        data  => <<EOF,
-	2 16407,-29400 16379,-29446
-	2 16360,-29489 16379,-29446
+	2 16412,-29541 16427,-29645
+# REMOVED (Straße existiert nicht mehr) ---	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1144015200, # 2006-04-03 00:00
@@ -5839,7 +5839,7 @@ EOF
        text  => 'B 096 Bahnübergang Neuhof Gleisbauarbeiten Vollsperrung 07.09.2006-08.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 16407,-29400 16379,-29446 16360,-29489
+	2::inwork 16412,-29541 16427,-29645 16477,-29734
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -6073,7 +6073,7 @@ EOF
        text  => 'B 096 Baruth-Wünsdorf Bahnübergang in deer OD Neuhof Straßenbauarbeiten Vollsperrung 21.12.2006-21.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 16407,-29400 16379,-29446 16360,-29489
+	2::inwork 16412,-29541 16427,-29645 16477,-29734
 EOF
      },
      { from  => 1160414834, # 2006-10-09 19:27
@@ -10428,7 +10428,7 @@ EOF
        text  => 'B 096 Baruth-Wünsdorf Brücke über das Mühlenfließ in der OD Neuhof Brückenbauarbeiten Vollsperrung 24.10.2007-28.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 16407,-29400 16434,-29189
+	2::inwork 16412,-29541 16430,-29439 16441,-29333 16451,-29194
 EOF
      },
      { from  => 1194562800, # 2007-11-09 00:00
@@ -14495,7 +14495,7 @@ EOF
        text  => 'B 096 Baruth - Wünsdorf OL Neuhof, Bahnübergang Reperaturarb. am Bahnübergang halbseitig gesperrt; Einbahnstraße 12.06.2009-15.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 16360,-29489 16379,-29446
+# REMOVED (Straße existiert nicht mehr) ---	q4::inwork 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1243807200, # 2009-06-01 00:00
@@ -16345,7 +16345,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-01-28
+#: last_checked: 2023-02-21
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -30215,23 +30215,22 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-01-01 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Februar 2023, vielleicht sogar bis 2024',
+       until => $isodate2epoch->("2024-12-31 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Mai 2023, vielleicht sogar bis 2024',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10 # inaktiv
        data  => <<EOF,
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024) (bis 22.2.2023)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-02-23
+#: next_check: 2023-05-31
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -34998,7 +34997,7 @@ EOF
 #: last_checked: 2023-02-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
-#: also_indoor: traffic (G,B) vvv
+#: also_indoor: traffic (G,B,W) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="423009430" version="17" ---	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
@@ -36310,6 +36309,7 @@ EOF
        source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
        data  => <<EOF,
 #: source_id: viz2021:13.32149,52.49982,29.12.2022,09:28 (bis 25.2.2023) (später am Tag wieder entfernt)
+#: also_indoor: traffic (H,G,B,W)
 #: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
 	q3::inwork; 4838,10597 4819,10355
 EOF
@@ -36353,7 +36353,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-16
+#: last_checked: 2023-02-21
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36515,7 +36515,7 @@ EOF
        data  => <<EOF,
 # REMOVED (hier nicht mehr, aber vielleicht Bauarbeiten etwas weiter nördlich?) --- #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? --- #: also_indoor: traffic (none) --- #: last_checked: 2022-09-17 ---	q4::inwork; 6753,9814 6747,9912 6741,10017
 #: note: laut Bauschild der Wasserbetriebe bis Mai 2023
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (B,G,W)
 #: last_checked: 2023-01-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-31 vvv
@@ -37333,6 +37333,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
+#: also_indoor: traffic (W)
 #: last_checked: 2022-11-26
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
@@ -37476,7 +37477,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHOTT-2022
 #: XXX vermutlich Arbeiten der Wasserbetriebe
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B)
 #: last_checked: 2023-01-24
 	q4::inwork; 16255,12224 16276,12273
 EOF
@@ -37737,6 +37738,17 @@ EOF
 #: source_id: bvg2021:160#BVG316004_0 (kein Ende-Datum)
 Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
 Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
+EOF
+     },
+     { from  => 1677452400, # 2023-02-27 00:00
+       until => 1735685999, # 2024-12-31 23:59
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg ist gesperrt, von Februar 2023 bis voraussichtlich Dezember 2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
+#: osm_watch: way id="46907541" version="10"
+	2::inwork 4053,2300 4209,2641 4247,2652
+	2::inwork 4209,2641 4220,2664
 EOF
      },
     );

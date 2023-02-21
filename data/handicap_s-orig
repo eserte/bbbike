@@ -10,6 +10,16 @@
 # 
 ### Friedrichshain ###
 # 
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023)
+#: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023)
+#: source_id: bvg2021:16#BVG316317_0
+#: note: siehe auch https://www.openstreetmap.org/note/3474648
+#: XXX evtl. ist auch die Travestr. betroffen
+#: last_checked: 2023-02-21
+#: next_check: 2023-04-24
+#: valid: -20230424
+Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
+# 
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate)
 #: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
 #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
@@ -580,7 +590,7 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
 #: osm_watch: way id="30195541" version="30"
-#: last_checked: 2023-01-27 (bahninfo-forum)
+#: last_checked: 2023-02-21 (bahninfo-forum)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
@@ -1760,7 +1770,8 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="14"
 #: last_checked: 2022-06-12 (mapillary)
-#: check_frequency: 360d
+# REMOVED (wegen Wegsperrung keine regelmäßigen Überprüfungen notwendig) --- #: check_frequency: 360d
+#: next_check: 2024-12-31
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
