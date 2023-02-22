@@ -509,7 +509,7 @@ Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,1
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Berliner Str. (Straßenbahntrasse)	3nocross::ignrte 10858,17721 10853,17802 10849,17848
-Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10849,17848
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10853,17788 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10853,17802 10858,17721
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11070,13357 11080,13373 11131,13455 11160,13492
@@ -1955,8 +1955,6 @@ Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11154,14985 11285,14958 11325,14949 11339,14946
 Danziger Str. -> Husemannstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11325,14949 11285,14958 11265,14756
 Husemannstr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11265,14756 11285,14958 11154,14985
-Danziger Str. -> Dunckerstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11285,14958 11325,14949 11450,15173
-Dunckerstr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11450,15173 11325,14949 11339,14946
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12123,14643 12025,14695
 Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12123,14643 12174,14739
 Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12174,14739 12123,14643 12317,14535

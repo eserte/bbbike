@@ -3274,7 +3274,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (G,ex-H[falsch?],B,W)
 #: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-20 (research)
+#: last_checked: 2023-02-22 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -4414,17 +4414,31 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
-	q4::inwork; 12010,16774 12230,16915 12267,16946
+	q2::inwork; 12010,16774 12230,16915
+#: note: hier u.U. Umwege erforderlich
+	q4::inwork; 12230,16915 12267,16946
 ',
          'from' => 1665385200,
          'id' => 3648,
          'source_id' => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 30.03.2023 17:00',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, vom 11.10.2022 09:00 bis 30.03.2023 17:00',
          'type' => 'handicap',
          'until' => 1680188400
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
+#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
+#: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023)
+	q4::inwork; 4920,9000 4920,9029 4957,9437
+',
+         'from' => 1677042000,
+         'id' => 3650,
+         'source_id' => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
+         'text' => 'Uhlandstr.: Sperrung zwischen Güntzelstr. und Fechnerstr., evtl. sind auch Radfahrer betroffen, vom 23.02.2023 06:00 bis 24.02.2023 13:00',
+         'type' => 'handicap',
+         'until' => 1677240000
+       },
        undef,
        undef,
        undef,
@@ -4439,7 +4453,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-02-12
+#: last_checked: 2023-02-22
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -5086,6 +5100,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
+#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: osm_watch: way id="46907541" version="10"
 	2::inwork 4053,2300 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664

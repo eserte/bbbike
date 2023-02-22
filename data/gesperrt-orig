@@ -816,7 +816,7 @@ Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 # 
 Berliner Str. (Straﬂenbahntrasse)	3nocross::ignrte 10858,17721 10853,17802 10849,17848
-Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10849,17848
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10853,17788 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10853,17802 10858,17721
 # 
 #: note: Straﬂenbahntrasse vvv
@@ -2244,7 +2244,7 @@ Heylstr.: breiter Mittelstreifen, enge Querungsmˆglichkeit nur f¸r Fuﬂg‰nger, Bo
 Groﬂe-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15968,14684 16033,14756
 Kˆpenicker Landstraﬂe: Mittelstreifen mit Bordsteienen	3nocross 16259,7328 16195,7398 15920,7697
 Max-Born-Str.: Straﬂenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
-#: note: etwa 50m weiter westlich existiert eine ‹berfahrt
+#: note: etwa 30m weiter westlich existiert eine ‹berfahrt
 Ostseestr.: Mittelstreifen	3nocross 12216,16120 12254,16097 12347,16039
 # REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
@@ -4044,9 +4044,9 @@ Alexander-von-Humboldt-Weg: Straﬂenbahn¸bergang gesperrt	2::inwork 18818,3332 18
 #: XXX laut osm ist die Schule 2023-02 fertig
 #: osm_watch: way id="860287005" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-01-09
-#: check_frequency: 120d
-#: next_check: 2023-02-28
+#: last_checked: 2023-02-22
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straﬂe existiert nicht mehr	2::inwork 13430,13733 13519,13785
 # 
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: XXX Wie wird die Qualit‰t der Straﬂe sein?--- #: osm_watch: way id="567597390" version="5" --- #: last_checked: 2021-05-09 --- #: check_frequency: 120d --- Abendseglersteig: noch in Bau	2::inwork 33167,2940 33139,2835 33267,2810 33383,2792

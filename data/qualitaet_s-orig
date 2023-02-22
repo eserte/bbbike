@@ -1089,7 +1089,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-02-21
+#: last_checked: 2023-02-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -4569,7 +4569,7 @@ Wilhelm-Wagenfeld-Str.: Verbundsteinpflaster	Q0- 12789,16977 12797,16983 12810,1
 Johannes-Itten-Str.: Asphalt	Q0- 12797,16983 12850,16911 12813,16884
 Lewaldstr.: Kopfsteinpflaster	Q2 11401,16265 11470,16394
 Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
-(Prenzlauer Allee - Ostseestr.): Asphalt	Q1 12154,15902 12198,15999 12254,16097
+(Prenzlauer Allee - Ostseestr.): Asphalt	Q1+ 12154,15902 12198,15999 12254,16097
 Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11903,15874 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
@@ -14392,7 +14392,7 @@ Homburger Str.: Asphalt	Q0 3971,7533 4066,7514 4162,7510 4330,7507 4400,7508 459
 #: confirmed_by: srt
 Claudiusstr.: Asphalt	Q0 6361,12617 6400,12662
 #: corrected_by: srt (added "einige Aufpflasterungen")
-Claudiusstr.: Asphalt, einige Aufplasterungen	Q0- 6400,12662 6347,12901
+Claudiusstr.: Asphalt, einige Aufpflasterungen	Q0- 6400,12662 6347,12901
 #: by ^^^
 # 
 #: by: Gerald Grelka
@@ -19199,9 +19199,9 @@ Friesacker Str.: Asphalt	Q0 25684,11518 25486,11579 25239,11657
 Pestalozzistr. (Pankow): Asphalt	Q0 10532,18601 10409,18551 10342,18528 10126,18444 10075,18472
 # 
 #: by: Alex Glaser: vvv
-#: corrected_by: srt (Q0 -> Q1+)
 #: note: anonymous meint "mäßiger Asphalt, Q2":
-Georg-Blank-Str.: Asphalt (mit Schäden)	Q1+ 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971
+#: corrected_by: srt (Q0 -> Asphalt (mit Schäden) Q1+) (und dann wieder zurück zu Q0)
+Georg-Blank-Str.: Asphalt	Q0 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971
 #: corrected_by: srt (Asphalt (mit Schäden) -> ...)
 Georg-Blank-Str.: Kopfsteinpflaster	Q2 12248,15971 12198,15999
 #: by ^^^
@@ -20276,10 +20276,10 @@ Kösliner Str.: guter Asphalt	Q0 8048,15829 8066,15610
 Mommsenstr. (Lichterfelde): Kopfsteinpflaster	Q2 3583,4011 3361,3860
 # 
 #: by: Niels de Vos: vvv
-#: corrected_by: srt (mäßiges Kopfsteinpflaster -> Asphalt)
-Sodtkestr.: Asphalt	Q0- 12221,15514 12298,15658
-#: confirmed_by: srt
-Sodtkestr.: mäßiges Kopfsteinpflaster	Q2 12298,15658 12382,15802 12423,15875
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> Beton)
+Sodtkestr.: Beton	Q0- 12221,15514 12298,15658
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Sodtkestr.: Kleinsteinpflaster	Q2+ 12298,15658 12382,15802 12423,15875
 #: by: ^^^
 # 
 #: by: Hahn (alex):
@@ -21403,8 +21403,8 @@ Romanshorner Weg: asphaltiert	Q0 6597,18473 6608,18547
 #: by: Reyk Bederke:
 Wegerichstr.: guter Beton	Q0 16678,2330 16666,2437 16663,2450 16538,2543
 #: by: Holger Nitz:
-#: corrected_by: srt (added "einige Aufplasterungen")
-Marie-Vögtlin-Weg: Asphalt, einige Aufplasterungen	Q0- 3560,2467 3551,2212
+#: corrected_by: srt (added "einige Aufpflasterungen")
+Marie-Vögtlin-Weg: Asphalt, einige Aufpflasterungen	Q0- 3560,2467 3551,2212
 #: by: Barbara Praetorius:
 Bruno-Walter-Str.: Asphalt	Q0 5510,2883 5604,2832 5794,3039 5853,3050
 #: by: Sabine (myps...):
@@ -31894,4 +31894,11 @@ Einmündungsbereich asphaltiert	Q0 19164,1708
 Kreuzungsbereich asphaltiert	Q0 19204,1809
 Einmündungsbereich asphaltiert	Q0 15510,3778
 Einmündungsbereich mit glattem Kopfsteinpflaster	Q1 15695,4051
+Kreuzungsbereich asphaltiert	Q0 12298,15658
+Einmündungsbereich mit Kleinsteinpflaster	Q2+ 12382,15802
+#: note: wobei es nach Westen hin hinter dem Einmündungsbereich eine Aufpflasterung gibt
+Einmündungsbereich asphaltiert	Q0 12423,15875
+Einmündungsbereich asphaltiert	Q1+ 12198,15999
+Einmündungsbereich asphaltiert	Q0 11296,17799
+Einmündungsbereich mit Kopfsteinpflaster	Q2 11217,17783
 #: ignore ^^^
