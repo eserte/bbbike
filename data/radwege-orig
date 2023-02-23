@@ -877,7 +877,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-02-21
+#: last_checked: 2023-02-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1218,11 +1218,11 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024)
 #: osm_watch: way id="8590249" version="19"
 #: last_checked: 2022-07-27
-#: check_frequency: 300d
-#: next_check: 2023-12-31
+#: check_frequency: 540d
+#: next_check: 2024-12-31
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 # REMOVED (es gibt nun wieder eine provisorische Radspur) --- #: by: https://www.deutsches-architekturforum.de/thread/14397-jaho-berlin-mitte-in-planung/?postID=723414#post723414 --- #: by: https://www.art-invest.de/projekt/jaho-berlin/ (Fertigstellung: 2025) --- #: source_id: viz2021:13.418119,52.51549,23.08.2022,05:00 (bis 23.10.2022) --- #: XXX Einschränkung wegen Hochbauarbeiten (JaHo) --- #: XXX früher: geschützter Radstreifen, Grünbeschichtung, RW4; --- #: last_checked: 2022-09-20 --- #: check_frequency: 60d --- #: next_check: 2025-01-01
@@ -1654,10 +1654,10 @@ Verbundsteinpflaster	RW1; 5166,13087 5328,13019
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzallee wird der bestehende Zweirichtungsradweg saniert und ausgebaut) (teilweise ist das schon passiert)
-#: source_id: 2147344664 (bis Ende Oktober 2019)
+#: source_id: 2147344664 (bis Ende Oktober 2019) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeiten bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,20.12.2022,12:03 (bis 30.06.2023) (inaktiv)
-#: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023)
+#: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="20"
 #: osm_watch: way id="458915639" version="4"
 #: last_checked: 2022-10-15
@@ -4724,7 +4724,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2023-01-28 (mapillary) vvv
+#: last_checked: 2023-02-23 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -6412,7 +6412,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Asphaltierung des Radwegs vvv
-#: last_checked: 2022-11-11 vvv
+#: last_checked: 2023-02-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16981,17855 17159,17631

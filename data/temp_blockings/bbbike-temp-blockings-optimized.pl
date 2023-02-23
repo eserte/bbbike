@@ -3755,6 +3755,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
+#: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?)
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
@@ -4094,7 +4095,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
 #: osm_watch: way id="1096678426" version="5"
-#: last_checked: 2023-02-11 (mapillary)
+#: last_checked: 2023-02-23
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 ',
@@ -4430,6 +4431,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
 #: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
 #: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023)
+#: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023)
 	q4::inwork; 4920,9000 4920,9029 4957,9437
 ',
          'from' => 1677042000,
@@ -4764,8 +4766,9 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (W)
-#: last_checked: 2022-11-26
-#: check_frequency: 90d
+#: last_checked: 2023-02-23 (indoor)
+#: check_frequency: 3d
+# REMOVED --- #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
          'from' => undef,
@@ -5101,7 +5104,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
-#: osm_watch: way id="46907541" version="10"
+#: osm_watch: way id="46907541" version="11"
 	2::inwork 4053,2300 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
 ',
@@ -5110,6 +5113,22 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg ist gesperrt, von Februar 2023 bis voraussichtlich Dezember 2024',
          'type' => 'gesperrt',
          'until' => 1735685999
+       },
+       {
+         'data' => '#: next_check_id: KUESTRINER-2023
+#: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
+#: also_indoor: traffic (none) vvv
+#: last_checked: 2023-02-23 vvv
+Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16354,15323 16218,15386
+Küstriner Str.	q4::inwork 16354,15323 16314,15223
+#: last_checked ^^^
+#: also_indoor ^^^
+',
+         'from' => undef,
+         'id' => 3728,
+         'text' => 'Küstriner Str./Wriezener Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
