@@ -504,19 +504,21 @@ EOF
 				    'str', "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
 		 ],
 		],
-		layer_checkbutton([$do_compound->('Unique matches')],
-				  'str', "$bbbike_rootdir/tmp/unique-matches.bbd",
-				  above => $str_layer_level,
-				 ),
-		[Cascade => $do_compound->('Unique matches since year...'), -menuitems =>
+		[Cascade => $do_compound->('Unique matches...'), -menuitems =>
 		 [
-		  map {
-		      my $year = $_;
-		      layer_checkbutton("Unique matches since $year", 'str',
-					"$bbbike_rootdir/tmp/unique-matches-since$year.bbd",
-					above => $str_layer_level,
-				       );
-		  } @acc_cat_split_streets_years,
+		  layer_checkbutton('Unique matches since beginning',
+				    'str', "$bbbike_rootdir/tmp/unique-matches.bbd",
+				    above => $str_layer_level,
+				   ),
+		  (
+		   map {
+		       my $year = $_;
+		       layer_checkbutton("Unique matches since $year", 'str',
+					 "$bbbike_rootdir/tmp/unique-matches-since$year.bbd",
+					 above => $str_layer_level,
+					);
+		   } @acc_cat_split_streets_years,
+		  ),
 		 ],
 		],
 		do {
