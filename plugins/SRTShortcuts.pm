@@ -452,6 +452,13 @@ EOF
 				  'str', "$bbbike_auxdir/bbd/mudways.bbd",
 				  above => $str_layer_level,
 				 ),
+		layer_checkbutton([$do_compound->('current mudways')],
+				  'str', "/tmp/mudways_prognosis.bbd",
+				  above => $str_layer_level,
+				  preparecallback => sub {
+				      prepare_mudways_prognosis();
+				  },
+				 ),
 		layer_checkbutton([$do_compound->('geocoded images', $images{camera})],
 				  'str', "$ENV{HOME}/.bbbike/geocoded_images.bbd",
 				  above => $str_layer_level,
@@ -941,6 +948,30 @@ EOF
     }
 }
 
+sub prepare_mudways_prognosis {
+    if (!defined $bbbike_auxdir) {
+	main::status_message("Works only with bbbike-aux directory", "die");
+    }
+    my $dwd_soil = `$bbbike_auxdir/misc/dwd-soil-update.pl -q`;
+    print STDERR $dwd_soil;
+
+    my $dwd_station = 'Dahlem';
+    my $bf10;
+    for my $line (split /\n/, $dwd_soil) {
+	if ($line =~ m{^\Q$dwd_station\E.*\s+(\d+)$}) {
+	    $bf10 = $1;
+	    last;
+	}
+    }
+    if (!defined $bf10) {
+	main::status_message("Cannot get soil data for DWD station '$dwd_station', please see stderr for more information", "die");
+    }
+
+    system("$bbbike_auxdir/misc/mudways-enrich.pl"); die $? if $? != 0;
+    system("$bbbike_auxdir/misc/mudways-enriched-to-handicap.pl --bf10=$bf10 > /tmp/mudways_prognosis.bbd~"); die $? if $? != 0;
+    rename "/tmp/mudways_prognosis.bbd~", "/tmp/mudways_prognosis.bbd" or die "Error while renaming: $!";
+}
+
 sub add_keybindings {
     # same like in Merkaartor
     $main::top->bind("<Control-D>" => sub {
@@ -1166,6 +1197,7 @@ sub layer_checkbutton {
     my($label, $type, $file, %args) = @_;
     my $oncallback  = delete $args{oncallback};
     my $offcallback = delete $args{offcallback};
+    my $preparecallback = delete $args{preparecallback};
     my $below = delete $args{below};
     my $above = delete $args{above};
     # XXX This does not seem to work, $main::edit_normal_mode value
@@ -1187,6 +1219,10 @@ sub layer_checkbutton {
 	     } elsif ($below_above_args{above}) {
 		 $above = $below_above_args{above};
 	     }
+	 }
+
+	 if ($preparecallback && !$layer_for_type_file{$key}) {
+	     $preparecallback->();
 	 }
 
 	 my($layer, $active) = toggle_new_layer($type, $real_file, below => $below, above => $above, %args);
