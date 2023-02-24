@@ -3756,6 +3756,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?)
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
@@ -5129,6 +5130,29 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'text' => 'Küstriner Str./Wriezener Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1628999413598408708#m
+#: by: https://nitter.it/pic/orig/media%2FFpp930OXEAEr-JC.jpg
+	q4::inwork; 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228
+',
+         'from' => 1677135600,
+         'id' => 3729,
+         'source_id' => 'viz2021:13.573445,52.40384,24.02.2023,08:00',
+         'text' => 'Waltersdorfer Str. : Bauarbeiten zwischen Schulzendorfer Str. und Dahmestr., Sperrung Richtung Süden, auch Radfahrer sind betroffen, vom 24.02.2023 08:00 bis 24.05.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1684940400
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1628937762803191809#m
+#: by: https://nitter.net/pic/orig/media%2FFpqX264XwAAWCXt.jpg
+	q4::temp; 8804,12280 9028,12307 9141,12320
+',
+         'from' => 1677136447,
+         'id' => 3730,
+         'text' => 'Unter den Linden: zwischen Wilhelmstr. und Glinkastr. in Richtung Osten gesperrt., evtl. sind auch Radfahrer betroffen, bis zum 26.02.2023',
+         'type' => 'handicap',
+         'until' => 1677452399
        }
      
 );
