@@ -28300,7 +28300,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-24
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -32401,7 +32401,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-gebaeude-ensemble-an-der-passauer-strasse_a365087 (Bauarbeiten noch zwei Jahre (ab Mitte November 2022))
-#: also_indoor: traffic (H,G)
+#: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2022-10-28
@@ -33809,7 +33809,7 @@ EOF
 #: also_indoor: traffic (G,ex-H[falsch?],B,W)
 #: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-22 (research)
+#: last_checked: 2023-02-24 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -36165,13 +36165,13 @@ EOF
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2023-03-03 17:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 3.3.2023',
+       until => $isodate2epoch->("2023-04-13 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 13.4.2023',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
-#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023)
+#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -36305,10 +36305,10 @@ EOF
 EOF
      },
      { from  => 1658970000, # 2022-07-28 03:00
-       until => $isodate2epoch->("2023-02-25 17:00:00"), # 1666969200, # 2022-10-28 17:00
-       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 25.02.2023',
+       until => $isodate2epoch->("2023-05-31 17:00:00"), # 1666969200, # 2022-10-28 17:00
+       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 31.05.2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
+       source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00', # bis 31.5.2023
        data  => <<EOF,
 #: source_id: viz2021:13.32149,52.49982,29.12.2022,09:28 (bis 25.2.2023) (später am Tag wieder entfernt)
 #: also_indoor: traffic (H,G,B,W)
@@ -36355,7 +36355,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-21
+#: last_checked: 2023-02-24
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36806,7 +36806,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
 #: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
-#: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023)
+#: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023)
 	q4::inwork; 4920,9000 4920,9029 4957,9437
 EOF
@@ -36971,7 +36971,8 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-02-13
+#: last_checked: 2023-02-24
+#: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
      },
@@ -37497,7 +37498,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
 #: priority: #C
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-24
 	2::inwork 10352,12627 10344,12641 10309,12700
 EOF
      },
@@ -37715,10 +37716,10 @@ EOF
 EOF
      },
      { from  => 1676178000, # 2023-02-12 06:00
-       until => 1678723200, # 2023-03-13 17:00
+       until => 1677266292, # 1678723200, # 2023-03-13 17:00
        text  => 'Hauptstr.: Verengung Richtung Suermondtstr. hinter Wartenberger Str., ggfs. Umleitung benutzen, vom 13.02.2023 06:00 bis 13.03.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.507331,52.548617,13.02.2023,06:00',
+       source_id => 'viz2021:13.507331,52.548617,13.02.2023,06:00', # vorfristig entfernt, inaktiv
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1624987981189730306#m
 #: by: https://nitter.net/pic/orig/media%2FFomZwc_XwAATWOo.jpg
@@ -37776,12 +37777,13 @@ EOF
      },
      { from  => 1677135600, # 2023-02-23 08:00
        until => 1684940400, # 2023-05-24 17:00
-       text  => 'Waltersdorfer Str. : Bauarbeiten zwischen Schulzendorfer Str. und Dahmestr., Sperrung Richtung Süden, auch Radfahrer sind betroffen, vom 24.02.2023 08:00 bis 24.05.2023 17:00',
+       text  => 'Waltersdorfer Str. : Bauarbeiten zwischen Schulzendorfer Str. und Dahmestr., Sperrung Richtung Süden, auch Radfahrer sind voraussichtlich betroffen, vom 24.02.2023 08:00 bis 24.05.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.573445,52.40384,24.02.2023,08:00',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1628999413598408708#m
 #: by: https://nitter.it/pic/orig/media%2FFpp930OXEAEr-JC.jpg
+#: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/waltersdorfer-strasse-vollsperrung-id208350
 	q4::inwork; 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228
 EOF
      },
@@ -37792,6 +37794,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1628937762803191809#m
 #: by: https://nitter.net/pic/orig/media%2FFpqX264XwAAWCXt.jpg
+#: source_id: viz2021:13.38085,52.51637,24.02.2023,03:00 (bis 26.02.2023)
 	q4::temp; 8804,12280 9028,12307 9141,12320
 EOF
      },
