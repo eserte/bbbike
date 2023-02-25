@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014,2016,2017,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016,2017,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.13';
+$VERSION = '1.14';
 
 use Scalar::Util qw(openhandle);
 
@@ -292,6 +292,16 @@ sub load_gpx {
 				    $wpt->unixtime_to_DateTime($epoch, $trkseg);
 				} elsif ($trkpt_child->name eq 'srt:accuracy') {
 				    $accuracy = $trkpt_child->children_text || 0;
+				} elsif (!defined $accuracy && $trkpt_child->name eq 'hdop') {
+				    my $hdop_value = $trkpt_child->children_text+0;
+				    # XXX The used values here need to be evaluated!
+				    if ($hdop_value >= 50) {
+					$accuracy = 2;
+				    } elsif ($hdop_value >= 10) {
+					$accuracy = 1;
+				    } else {
+					$accuracy = 0;
+				    }
 				}
 			    }
 			    if (!defined $accuracy) {
