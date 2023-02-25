@@ -967,9 +967,7 @@ Ella-Trebe-Str. -> Rahel-Hirsch-Str.: Mittelstreifen	3::igndisp 7939,13026 7946,
 Rahel-Hirsch-Str. -> Ella-Trebe-Str.: Mittelstreifen	3::igndisp 7930,12912 7946,12932 7939,13026
 verboten	3nocross::ignrte -12666,-1311 -12549,-1277 -12552,-1233
 Am Kanal -> Am Kanal: verboten	3::igndisp -12364,-1224 -12549,-1277 -12666,-1311
-Am Kanal -> Joliot-Curie-Str.: verboten	3::igndisp -12364,-1224 -12549,-1277 -12542,-1305
 Französische Str. -> Am Kanal: verboten	3::igndisp -12552,-1233 -12549,-1277 -12364,-1224
-Französische Str. -> Joliot-Curie-Str.: verboten	3::igndisp -12552,-1233 -12549,-1277 -12542,-1305
 Joliot-Curie-Str. -> Am Kanal: verboten	3::igndisp -12542,-1305 -12549,-1277 -12666,-1311
 Mittelstr. (Potsdam)	1 -12884,-769 -12697,-729
 Emma-Herwegh-Str.	1 7795,13168 7595,12980
@@ -2317,6 +2315,8 @@ Jägerstr./Gutenbergstr. (Potsdam)	3 -13058,-740 -13025,-901 -12886,-869
 Jägerstr./Gutenbergstr. (Potsdam)	3 -12886,-869 -13025,-901 -13058,-740
 Jägerstr./Gutenbergstr. (Potsdam)	3 -13158,-930 -13025,-901 -12886,-869
 Jägerstr./Gutenbergstr. (Potsdam)	3 -12886,-869 -13025,-901 -13158,-930
+Charlottenstr. (Potsdam): Durchfahrt für den "normalen" Kfz-Verkehr verboten	2 -12359,-1096 -12285,-1174
+Joliot-Curie-Str. (Potsdam)	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Schmidstr.: nur Lieferverkehr	2 11480,11526 11281,11612
 Krumme Str.: Poller	3 3981,11232 3983,11289 3986,11347
 Krumme Str.: Poller	3 3986,11347 3983,11289 3981,11232
@@ -2348,3 +2348,4 @@ Siegfriedstr.: Durchfahrt zur Hermannstr. nur für BVG+Radfahrer	3 12122,6886 123
 Siegfriedstr.: Durchfahrt zur Hermannstr. nur für BVG+Radfahrer	3 12122,6886 12342,6936 12479,6969
 Michael-Bohnen-Ring: Poller	3 15453,6434 15453,6784 15350,6781
 Lange Str.	1 11993,11978 12238,11931
+Hinter dem Gießhaus - Unter den Linden	3 9846,12516 9858,12410 9934,12420

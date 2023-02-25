@@ -177,8 +177,8 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="4323788" version="25"
 #: osm_watch: way id="23109081" version="20"
 #: osm_watch: way id="41108858" version="18"
-#: last_checked: 2023-01-05 (bahninfo-forum)
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2023-02-25
+#: check_frequency: 90d
 #: next_check: 2023-05-02
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
@@ -535,7 +535,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095 (südlich der Binzstraße: Bauarbeiten beginnen 2021; nördlich der Binzstraße: konkrete Planungen nicht vor 2022)
 #: by: http://www.infravelo.de/projekt/neumannstrasse/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 4. Quartal 2021 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (2. Quartal 2024 - 2. Quartal 2025)
 #: osm_watch: way id="35573588" version="25"
-#: osm_watch: way id="4632077" version="30"
+#: osm_watch: way id="4632077" version="31"
 #: last_checked: 2023-02-22
 #: check_frequency: 180d
 #: next_check: 2025-06-30
@@ -1190,6 +1190,7 @@ Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::proj
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/1-b-plan_9-59_darstellung_planungsziele_und_staedtebauliches_konzept.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/5-b-plan_9-59_masterplan.pdf
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bebauungsplan-zur-ostendstrasse_a373001
+#: by: https://www.bz-berlin.de/berlin/treptow-koepenick/abriss-fur-das-1-milliarde-euro-quartier-am-spreeufer-startet
 #: XXX Bebauungsplan 9-59
 #: last_checked: 2023-02-11
 #: check_frequency: 720d
@@ -2130,7 +2131,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-25
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -3708,6 +3709,7 @@ Heidelberger Str.: Straßenlandeinziehung im Bereich des Schmollerplatzes geplant
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/steglitzer-damm-baustart-fuer-radfahrstreifen-id206910
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296251.php
 #: by: https://www.stadtrand-nachrichten.de/radfahrstreifen-steglitzer-damm/
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/neuer-geschuetzter-radfahrstreifen_a373166
 #: source_id: viz2021:13.356585,52.448708,20.02.2023,07:00 (Fahrbahnsanierung, bis 31.03.2023)
 #: last_checked: 2022-10-15
 # REMOVED --- #: check_frequency: 150d
@@ -3802,7 +3804,7 @@ Friedrich-Karl-Str.: Busspur geplant	?; 8968,5554 9161,5535
 # REMOVED (fertig) --- #: last_checked: 2022-11-05 --- #: check_frequency: 30d --- Stolzenfelsstr.: Bauarbeiten am für Radfahrer freigegeben Gehweg, möglicherweise wird hier auch Verbundsteinpflaster verlegt	?::inwork 19333,8165 19407,8143 19447,8175
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Einziehung von Straßenland)
-#: osm_watch: way id="542223826" version="8"
+#: osm_watch: way id="542223826" version="9"
 #: last_checked: 2023-02-22
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-04-28
@@ -3842,7 +3844,7 @@ Majakowskiring/Ossietzkystr.: vielleicht entsteht etwa hier ein modaler Filter	?
 #: osm_watch: way id="1133396210" version="1"
 #: also_indoor: search Wilmersdorfer_Straße Fußgängerzone
 #: XXX Was wird mit der Schillerstraße? Auf dem Plan im Amtsblatt sieht es so aus, als ob die Durchfahrt weiterhin möglich ist.
-#: last_checked: 2023-01-27 (Amtsblatt)
+#: last_checked: 2023-02-25 (indoor research)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,11462 3689,11637
@@ -4709,8 +4711,8 @@ Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6129 (Antrag, ebenso für die Grabbeallee)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6156 (Antrag, weitere Straßen werden erwähnt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6156&date=20221002 (Planung für "bauliche Radverkehrsanlagen")
-#: osm_watch: way id="450221287" version="10"
-#: osm_watch: way id="297138724" version="10"
+#: osm_watch: way id="450221287" version="11"
+#: osm_watch: way id="297138724" version="11"
 #: osm_watch: way id="4764689" version="31"
 #: XXX außerdem Fahrradstraßen in den angrenzenden Nebenstraßen + Waldstr.
 #: last_checked: 2022-11-15
@@ -5172,7 +5174,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 #: XXX angeordnet, aber noch keine Mittelzusage, weitere Mittelzusagen evtl. im Sommer 2022 vvv
 #: priority: #D
 #: check_frequency: 120d vvv
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-25
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 #: last_checked: 2023-02-19
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
@@ -5333,6 +5335,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://nitter.cz/VIZ_Berlin/status/1580500555771715586#m (Erwähnung der Fahrradstraße, außerdem wird saniert)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1291991.php
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/komponistenviertel-als-kiezblock-nun-sind-die-anwohner-gefragt-id204194
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/kiezblock-im-komponistenviertel_a372290
 #: last_checked: 2023-02-15
 #: check_frequency: 60d
 #: next_check: 2023-12-31
@@ -5615,7 +5618,7 @@ Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8525 (Erwähnung einer Verbesserung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
-#: osm_watch: way id="4689026" version="41"
+#: osm_watch: way id="4689026" version="42"
 #: last_checked: 2022-11-28
 #: check_frequency: 180d
 #: next_check: 2023-12-31
@@ -6179,7 +6182,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: https://luisenblock.berlin.de/
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2203/nachricht7271.html
 #: by: https://luisenblock.berlin.de/2022/08/16/verfahrenspause/
-#: last_checked: 2023-02-10
+#: last_checked: 2023-02-25
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -6902,8 +6905,8 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: by: https://bscw.bund.de/pub/bscw.cgi/d213131648/05_07_Lageplan_ADF_A100.pdf
 #: by: https://bscw.bund.de/pub/bscw.cgi/d213131670/05_10_Lageplan_Messedamm.pdf
 #: by: https://bscw.bund.de/pub/bscw.cgi/d213131676/05_11_Lageplan_Messedamm.pdf
-#: by: https://www.berliner-woche.de/westend/c-verkehr/planunterlagen-fuer-umbau-des-autobahndreiecks-funkturm-liegen-oeffentlich-aus_a370028
-#: next_check: 2023-03-01 vvv
+#: by: https://www.berliner-woche.de/westend/c-verkehr/planunterlagen-fuer-umbau-des-autobahndreiecks-funkturm-liegen-oeffentlich-aus_a370028 (Umbau ab 2024)
+#: next_check: 2024-03-01 vvv
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348 1723,10289 1725,10242 1742,10220
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1723,10289 1847,10323 1882,10356 1870,10406 1833,10427 1793,10424 1692,10348
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1870,10406 1939,10446
@@ -8303,7 +8306,7 @@ ehemaliger Kiesumschlagplatz am Napoleonkai: Renaturierung des Geländes, geplant
 #: by: https://berliner-abendblatt.de/2022/02/11/westkreuzpark-linke/
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/plaene-fuer-westkreuzpark-gescheitert_a336131
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8358 (Anfrage)
-#: last_checked: 2022-09-16
+#: last_checked: 2023-02-25
 #: check_frequency: 720d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -9057,7 +9060,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1285795.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/faellungen-fuer-spreeuferweg_a370037
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: last_checked: 2023-02-24 (webcam)
+#: last_checked: 2023-02-25
 #: check_frequency: 90d
 Uferweg geplant (erst einmal als Provisorium)	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 

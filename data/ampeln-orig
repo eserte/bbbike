@@ -10,6 +10,7 @@
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm
 #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023)
+#: last_checked: 2023-02-25
 #: next_check: 2023-03-31
 #: valid: -20230331
 Gegenverkehrsregelung	X::inwork 8737,12757
@@ -42,7 +43,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: next_check: 2023-03-02 vvv
 #: valid: -20230302 vvv
 #: XXX schon seit mehreren Tagen anscheinend ausgeschaltet
-#: last_checked: 2023-02-12
+#: last_checked: 2023-02-25
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
 #: last_checked: 2023-02-15 (mapillary)
@@ -3193,7 +3194,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-02-24 vvv
+#: last_checked: 2023-02-25 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3629,8 +3630,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
-#: XXX die provisorische Ampelanlage wird in eine permanente umgebaut vvv
-#: last_checked: 2022-12-30 (mapillary) vvv
+#: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
+#: last_checked: 2023-02-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

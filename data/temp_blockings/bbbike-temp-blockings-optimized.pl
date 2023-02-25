@@ -531,7 +531,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-02-21
+#: last_checked: 2023-02-25
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -1942,7 +1942,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: tempex: sunset-T07
+         'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
+#: tempex: sunset-T07
 	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
 ',
          'from' => undef,
@@ -2598,7 +2599,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-16 (daf)
+#: last_checked: 2023-02-25
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -2649,7 +2650,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-02-18
+#: last_checked: 2023-02-25
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3487,7 +3488,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
 #: last_checked: 2022-09-04 vvv
-#: check_frequency: 180d vvv
+# REMOVED --- #: check_frequency: 180d vvv
 #: next_check: 2023-03-31 vvv
 	q3::inwork 3011,3303 2778,3132
 # REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
@@ -3496,7 +3497,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (hier nicht mehr) ---	q4::inwork 2632,2969 2594,3009
 # REMOVED ---	q4::inwork; 3507,3654 3375,3559 3228,3455 3184,3427
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: note: bei rbb bis 31.10.2022
@@ -3535,8 +3536,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26 und 2022-12-28 vvv
-#: last_checked: 2023-01-21 (osm) vvv
+#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa) vvv
+#: last_checked: 2023-02-25 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="33"
@@ -3749,6 +3750,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
+#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023)
@@ -3905,7 +3907,8 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
        undef,
        undef,
        {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
+         'data' => '#: next_check_id: FISCHERINSEL-2023
+#: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
@@ -5131,6 +5134,58 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'text' => 'Unter den Linden: zwischen Wilhelmstr. und Glinkastr. in Richtung Osten gesperrt., evtl. sind auch Radfahrer betroffen, bis zum 26.02.2023',
          'type' => 'handicap',
          'until' => 1677452399
+       },
+       {
+         'data' => '#: last_checked: 2023-02-25
+#: check_frequency: 14d
+	2::inwork 14810,10832 14738,10892
+',
+         'from' => undef,
+         'id' => 3731,
+         'text' => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: FISCHERINSEL-2023
+#: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424
+#: XXX prüfen!
+#: priority: #B
+	2::inwork 10680,11875 10776,11942 10824,11992 10869,11949
+',
+         'from' => 1677359677,
+         'id' => 3732,
+         'text' => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen möglich, bis Mitte April 2023',
+         'type' => 'gesperrt',
+         'until' => 1681595999
+       },
+       {
+         'data' => '#: next_check_id: SEIDELSTRASSENBRUECKE-2022
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
+#: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt?
+#: begin_check: 2023-03-16
+#: next_check: 2023-03-16
+	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929
+',
+         'from' => 1678993200,
+         'id' => 3733,
+         'text' => 'Seidelstr.: voraussichtlich Sperrung im Bereich der U-Bahnbrücke, von 17.03.2023 20:00 bis 20.03.2023 04:00',
+         'type' => 'gesperrt',
+         'until' => 1679281200
+       },
+       {
+         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
+#: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof? Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
+#: begin_check: 2023-03-20
+#: next_check: 2023-03-20
+	2::inwork 22431,6068 22467,6135
+',
+         'from' => 1679292000,
+         'id' => 3734,
+         'text' => 'Bahnhofstr.: voraussichtlich Sperrung im Bereich der Bahnbrücke, von 21.03.2023 07:00 bis 25.03.2023 04:30',
+         'type' => 'gesperrt',
+         'until' => 1679715000
        }
      
 );
