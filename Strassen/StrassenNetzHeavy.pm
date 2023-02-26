@@ -271,12 +271,12 @@ sub make_net_cat {
 
 # Create a special cycle path/street category net
 # Categories created are:
-#    H    => H, B or HH without cycle path and bus lane
-#    H_RW => same with cycle path
-#    H_BL => same with bus lane
-#    N    => NH, N or NN without cycle path and bus lane
-#    N_RW => same with cycle path
-#    N_BL => same with bus lane
+#    H     => H, B or HH without cycle path and bus lane
+#    H_RW  => same with cycle path
+#    H_Bus => same with bus lane
+#    N     => NH, N or NN without cycle path and bus lane
+#    N_RW  => same with cycle path
+#    N_Bus => same with bus lane
 # %args: may be UseCache => $boolean
 # Note: former versions of this function had a "$type" argument in
 #       between, which is not needed and is now removed.
