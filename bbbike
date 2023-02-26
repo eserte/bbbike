@@ -5577,7 +5577,14 @@ speicherplatzsparender.",
     if (@ARGV) {
 	require Getopt::Long;
 	Getopt::Long::config('nopass_through');
-	Getopt::Long::GetOptions() or die;
+	if (!Getopt::Long::GetOptions()) {
+	    if ($opt) {
+		print $opt->usage;
+		exit 1;
+	    } else {
+		die "usage: bbbike [options]\n(Please refer to bbbike documentation for possible options)\n";
+	    }
+	}
     }
 }
 
