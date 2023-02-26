@@ -2431,6 +2431,58 @@ sub penalty_menu {
     ######################################################################
 
     {
+	my $penalty_mandatorycyclepaths = 0;
+	my $penalty_mandatorycyclepaths_koeff = 2;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für benutzungspflichtige Hochbordradwege",
+	     -variable => \$penalty_mandatorycyclepaths,
+	     -command => sub {
+		 if ($penalty_mandatorycyclepaths) {
+		     require Storable;
+		     my $src_s = Strassen->new_stream('radwege_exact');
+		     main::status_message("Can't get radwege_exact", 'die') if !$src_s;
+		     my $s = Strassen->new;
+		     $src_s->read_stream
+			 (
+			  sub {
+			      my($r) = @_;
+			      if ($r->[Strassen::CAT()] =~ m{^RW2\b}) {
+				  my $new_r = Storable::dclone($r);
+				  $new_r->[Strassen::CAT()] = 'RW2;';
+				  $s->push($new_r);
+			      }
+			  }
+			 );
+		     my $net = StrassenNetz->new($s);
+		     $net->make_net_cat(-obeydir => 1, -usecache => 0); # no caching, because source is generated on-the-fly
+
+		     $penalty_subs{'mandatorycyclepaths'} = sub {
+			 my($p, $next_node, $last_node) = @_;
+			 if ($net->{Net}{$last_node}{$next_node}) {
+			     $p *= $penalty_mandatorycyclepaths_koeff;
+			 }
+			 $p;
+		     };
+		 } else {
+		     delete $penalty_subs{'mandatorycyclepaths'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$penalty_mandatorycyclepaths_koeff,
+				     -value => $koeff);
+	    }
+	}
+	$pen_m->separator;
+    }
+
+    ######################################################################
+
+    {
 	my $penalty_on_current_route = 0;
 	my $penalty_on_current_route_koeff = 2;
 	$pen_m->checkbutton
