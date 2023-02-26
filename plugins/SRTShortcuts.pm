@@ -406,11 +406,15 @@ EOF
 				Width => 20),
 	      [Cascade => $do_compound->('Add layer', $main::newlayer_photo), -menuitems =>
 	       [
-		layer_checkbutton([$do_compound->('hm96.bbd (Höhenpunkte)')],
-				  'p', "$bbbike_auxdir/data/senat_b/hm96.bbd",
-				  oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
-				  offcallback => sub { $main::top->bind("<F12>"=> '') },
-				 ),
+		(defined $bbbike_auxdir ?
+		 (
+		  layer_checkbutton([$do_compound->('hm96.bbd (Höhenpunkte)')],
+				    'p', "$bbbike_auxdir/data/senat_b/hm96.bbd",
+				    oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
+				    offcallback => sub { $main::top->bind("<F12>"=> '') },
+				   )
+		 ) : ()
+		),
 		layer_checkbutton([$do_compound->('Zebrastreifen', main::load_photo($mf, "misc/verkehrszeichen/Zeichen_350.svg", -w => 16, -h => 16, -persistent => 1))],
 				  'p', "$main::datadir/zebrastreifen",
 				  above => $str_layer_level,
@@ -447,17 +451,21 @@ EOF
 		layer_checkbutton([$do_compound->('brunnels', $images{bridge})],
 				  'str', "$main::datadir/brunnels",
 				  maybe_orig_file => 1),
-		layer_checkbutton([$do_compound->('mudways')],
-				  'str', "$bbbike_auxdir/bbd/mudways.bbd",
-				  above => $str_layer_level,
-				 ),
-		layer_checkbutton([$do_compound->('current mudways')],
-				  'str', "/tmp/mudways_prognosis.bbd",
-				  above => $str_layer_level,
-				  preparecallback => sub {
-				      prepare_mudways_prognosis();
-				  },
-				 ),
+		(defined $bbbike_auxdir ?
+		 (
+		  layer_checkbutton([$do_compound->('mudways')],
+				    'str', "$bbbike_auxdir/bbd/mudways.bbd",
+				    above => $str_layer_level,
+				   ),
+		  layer_checkbutton([$do_compound->('current mudways')],
+				    'str', "/tmp/mudways_prognosis.bbd",
+				    above => $str_layer_level,
+				    preparecallback => sub {
+					prepare_mudways_prognosis();
+				    },
+				   ),
+		 ) : ()
+		),
 		layer_checkbutton([$do_compound->('geocoded images', $images{camera})],
 				  'str', "$ENV{HOME}/.bbbike/geocoded_images.bbd",
 				  above => $str_layer_level,
@@ -590,8 +598,12 @@ EOF
 		     below => '*landuse*',
 		 }
 		],
-		layer_checkbutton([$do_compound->('Neue Sehenswürdigkeiten')],
-				  'str', "$bbbike_auxdir/images/sehenswuerdigkeit_img/bw/test.bbd"),
+		(defined $bbbike_auxdir ?
+		 (
+		  layer_checkbutton([$do_compound->('Neue Sehenswürdigkeiten')],
+				    'str', "$bbbike_auxdir/images/sehenswuerdigkeit_img/bw/test.bbd"),
+		 ) : ()
+		),
 		layer_checkbutton([$do_compound->('Exits (ÖPNV)')],
 				  'str', "$main::datadir/exits",
 				  maybe_orig_file => 1),
@@ -622,30 +634,34 @@ EOF
 # 		  ],
 		 ]
 		],
-		[Cascade => $do_compound->("VMZ-Detailnetz", $images{VIZ}), -menuitems =>
-		 [	
-		  layer_checkbutton('strassen', 'str',
-				    "$bbbike_auxdir/vmz/bbd/strassen",
-				    below => $str_layer_level,
-				   ),
-		  layer_checkbutton('gesperrt', 'sperre',
-				    "$bbbike_auxdir/vmz/bbd/gesperrt",
-				    above => $str_layer_level,
-				   ),
-		  layer_checkbutton('qualitaet', 'str',
-				    "$bbbike_auxdir/vmz/bbd/qualitaet_s",
-				    above => $str_layer_level,
-				   ),
-		  layer_checkbutton('radwege', 'str',
-				    "$bbbike_auxdir/vmz/bbd/radwege",
-				    above => $str_layer_level,
-				   ),
-		  layer_checkbutton('ampeln', 'str', # yes, str, otherwise symbol is not plotted
-				    "$bbbike_auxdir/vmz/bbd/ampeln",
-				    above => $str_layer_level,
-				   ),
-		 ],
-		],
+		($bbbike_auxdir ?
+		 (
+		  [Cascade => $do_compound->("VMZ-Detailnetz", $images{VIZ}), -menuitems =>
+		   [	
+		    layer_checkbutton('strassen', 'str',
+				      "$bbbike_auxdir/vmz/bbd/strassen",
+				      below => $str_layer_level,
+				     ),
+		    layer_checkbutton('gesperrt', 'sperre',
+				      "$bbbike_auxdir/vmz/bbd/gesperrt",
+				      above => $str_layer_level,
+				     ),
+		    layer_checkbutton('qualitaet', 'str',
+				      "$bbbike_auxdir/vmz/bbd/qualitaet_s",
+				      above => $str_layer_level,
+				     ),
+		    layer_checkbutton('radwege', 'str',
+				      "$bbbike_auxdir/vmz/bbd/radwege",
+				      above => $str_layer_level,
+				     ),
+		    layer_checkbutton('ampeln', 'str', # yes, str, otherwise symbol is not plotted
+				      "$bbbike_auxdir/vmz/bbd/ampeln",
+				      above => $str_layer_level,
+				     ),
+		   ],
+		  ],
+		 ) : ()
+		),
 		[Button => $do_compound->("All layers for editing"),
 		 -command => sub { enable_all_layers_for_editing() },
 		],
