@@ -154,6 +154,8 @@ my %versioned_file_to_cat;
 					 |:len=\d+ # additional length
 					 |:h=q[0-9][-+]?,\d+ # handicap-like penalty for specified length
 					 |:tl(?:=\d+)? # trafficlights
+					 |:kerb_up
+					 |:kerb_down
 					 )+$/x
 				    }],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
