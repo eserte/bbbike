@@ -1,0 +1,35 @@
+stages:
+  - build-test
+
+runit:
+  stage: build-test
+  script:
+    - export TRAVIS=true
+    - export USE_SYSTEM_PERL=1
+    - export USE_MODPERL=1
+    - printf "deb http://deb.debian.org/debian buster main contrib non-free\ndeb http://deb.debian.org/debian buster-updates main contrib non-free\n" > /etc/apt/sources.list.d/nonfree.list
+    - apt-get update && apt-get install -y git sudo cpanminus
+    - git clone --depth=1 https://github.com/eserte/bbbike.git -b master
+    - cd bbbike
+    - export TRAVIS_BUILD_DIR=$(realpath .)
+    - . port/travis-ci/travis-functions.sh
+    - init_travis
+    - wrapper init_env_vars
+    - wrapper init_perl
+    - wrapper init_apt
+    - wrapper install_non_perl_dependencies
+    - wrapper install_perl_testonly_dependencies
+    - wrapper install_old_perl_dependencies
+    - wrapper install_webserver_dependencies
+    - wrapper install_selenium
+    - wrapper install_perl_dependencies
+    - wrapper init_cgi_config
+    - wrapper fix_cgis
+    - wrapper init_webserver_config
+    - wrapper start_webserver
+    - wrapper start_xserver
+    - wrapper init_webserver_environment
+    - wrapper start_selenium
+    - wrapper init_data
+    - perl Makefile.PL && make test HARNESS_OPTIONS=j8 HARNESS_TIMER=1
+    - make distcheck
