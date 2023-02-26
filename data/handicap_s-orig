@@ -2856,7 +2856,7 @@ Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
 (Straßenbahnwendeschleife Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
-(Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
+(Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8961,6490 8929,6363 8930,6295
 #: note: allerdings ist der Radweganteil sehr schmal
 (Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
 #: note: von Norden her existiert ein "Radfahren verboten"-Hinweis, von Süden her aber nicht
@@ -4386,6 +4386,8 @@ Friedrichstr.: Fußgängerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804
 # 
 #: XXX_prog BS an der Schwarzmeerstr. (ansonsten q1)
 (Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): einige Fußgänger, Bordstein	q2 17915,10866 17856,10879
+# 
+Bosepark: gemeinsamer Geh- und Radweg	q1 8862,6467 8823,6458
 # 
 ######################### User Contributions #################################
 # 

@@ -2824,24 +2824,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
-#: also_indoor: traffic
-#: XXX von Norden her außerdem: Verboten für Fahrzeuge aller Art außer Anlieger
-#: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
-#: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-10-09 (architektur-urbanistik)
-#: check_frequency: 90d
-#: next_check: 2022-12-28
-	q3::inwork; 5192,10241 5196,10398
-',
-         'from' => undef,
-         'id' => 3281,
-         'text' => 'Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Hochbaustelle, Fahrtrichtung auch für Radfahrer gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2938,7 +2921,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-10-28
+#: last_checked: 2023-02-26
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -3275,7 +3258,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (G,ex-H[falsch?],B,W)
 #: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-24 (research)
+#: last_checked: 2023-02-26 (research)
 #: check_frequency: 3d
 #: next_check: 2023-02-28
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
@@ -3979,6 +3962,8 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: last_checked: 2023-01-28 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-11-07 vvv
+#: osm_watch: way id="1043813287" version="2"
+#: osm_watch: way id="1043813288" version="2"
 	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924
 	q3::inwork 13974,16924 13870,16837
@@ -4386,17 +4371,7 @@ Linienstr.	q4::inwork 9225,13389 9312,13388
          'type' => 'gesperrt',
          'until' => 1679093999
        },
-       {
-         'data' => '#: also_indoor: traffic (B)
-#: last_checked: 2022-10-08
-	q4::inwork; -3635,12572 -3444,12573 -3259,12580
-',
-         'from' => undef,
-         'id' => 3646,
-         'text' => 'Betckestr.: Einbahnstraßenregelung, offen Richtung Westen',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
@@ -4512,7 +4487,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-02-24
+#: last_checked: 2023-02-26
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -4549,7 +4524,9 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: by: https://viz.berlin.de/2022/08/oberschoeneweide-gleisarbeiten/ (Radverkehr kann in der Edisonstraße passieren)
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
 #: by: https://nitter.net/StefanB94551270/status/1595076736168992768
+#: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
+#: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
@@ -4671,10 +4648,10 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        undef,
        {
          'data' => '#: next_check_id: INDENALBOINGARTEN-2022
-#: note: Durchfahrt war möglich am 2022-12-27 gegen 21:00
+#: note: Durchfahrt war möglich am 2022-12-27 gegen 21:00, am 2023-02-26 (So) gegen 12:10
 #: osm_watch: way id="1119211815" version="3"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2022-12-27
+#: last_checked: 2023-02-26
 #: check_frequency: 45d
 	2::inwork 7646,6031 7638,5967
 ',
@@ -4758,9 +4735,8 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-02-23 (indoor)
-#: check_frequency: 3d
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2023-02-26
+#: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
          'from' => undef,
@@ -4879,8 +4855,10 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
+#: by: https://berliner-abendblatt.de/kiez-news/mitte/geplatzes-aquarium-mehr-als-500-bruchstuecke-wurden-entfernt-id208661 (Heiligegeistgasse bis Mitte März 2023 freigeräumt)
 #: priority: #C
 #: last_checked: 2023-02-24
+#: next_check: 2023-03-15
 	2::inwork 10352,12627 10344,12641 10309,12700
 ',
          'from' => undef,
@@ -5186,6 +5164,25 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'text' => 'Bahnhofstr.: voraussichtlich Sperrung im Bereich der Bahnbrücke, von 21.03.2023 07:00 bis 25.03.2023 04:30',
          'type' => 'gesperrt',
          'until' => 1679715000
+       },
+       {
+         'data' => '#: next_check_id: SCHOENBURG-2023
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
+#: also_indoor: traffic (G) vvv
+#: last_checked: 2023-02-26 vvv
+#: check_frequency: 60d vvv
+	q4::inwork 9029,6360 8995,6473 8961,6490
+	q2::inwork 8961,6490 8949,6644
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3735,
+         'text' => 'Schönburgstr.: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

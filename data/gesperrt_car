@@ -442,12 +442,12 @@ Ziegelstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9401,13072 9
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9293,13366 9415,13315
 Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9225,13389 9293,13366 9312,13388
 Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9312,13388 9293,13366 9415,13315
-Durchfahrt für Autofahrer per Poller gesperrt	3nocross::ignrte 5966,6747 5896,6785 5811,6833
+Durchfahrt für Autofahrer per Poller gesperrt	3nocross::ignrte 5966,6747 5928,6768 5896,6785 5811,6833
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
-Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5966,6747 5896,6785 5783,6635
+Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5928,6768 5896,6785 5783,6635
 Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5783,6635 5896,6785 5811,6833
 Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5783,6635 5896,6785 5957,6889
-Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5966,6747
+Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5928,6768
 Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5783,6635
 Putlitzstr.	1 6212,13944 6204,14220
 Bornitzstr.	1 15643,12875 15563,12870
@@ -2349,3 +2349,8 @@ Siegfriedstr.: Durchfahrt zur Hermannstr. nur für BVG+Radfahrer	3 12122,6886 123
 Michael-Bohnen-Ring: Poller	3 15453,6434 15453,6784 15350,6781
 Lange Str.	1 11993,11978 12238,11931
 Hinter dem Gießhaus - Unter den Linden	3 9846,12516 9858,12410 9934,12420
+Thorwaldsenstr. - Lenbachstr.	3 6168,6467 6071,6559 5883,6519
+Thorwaldsenstr. - Knausstr.	3 6168,6467 6071,6559 6083,6451
+Mittelstreifen	3nocross::ignrte 8683,6326 8699,6468 8707,6537
+Manteuffelstr. -> Manteuffelstr. (Tempelhof) [63-64d]: Mittelstreifen	3::igndisp 8707,6537 8699,6468 8823,6458
+Manteuffelstr. (Tempelhof) [63-64d] -> Manteuffelstr.: Mittelstreifen	3::igndisp 8823,6458 8699,6468 8683,6326
