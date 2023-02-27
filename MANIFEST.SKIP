@@ -32,6 +32,7 @@ patch\.gz$
 (^|/)MYMETA\.yml$
 (^|/)MYMETA\.json$
 \.travis\.yml$
+\.gitlab-ci\.yml$
 ^appveyor\.yml$
 ^\.github/
 ^\.coveralls.yml$
