@@ -733,12 +733,12 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
-#: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024) (mittlerweile 1. Quartal 2023 - 1. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024) (mittlerweile 1. Quartal 2023 - 1. Quartal 2024) (3. Quartal 2023 - 4. Quartal 2024)
 #: osm_watch: way id="4480580" version="18"
 #: osm_watch: way id="4436949" version="17"
 #: last_checked: 2022-09-16
-#: check_frequency: 300d
-#: next_check: 2024-03-31
+#: check_frequency: 360d
+#: next_check: 2024-12-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3340,10888
@@ -1089,7 +1089,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-02-26
+#: last_checked: 2023-02-27
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2734,7 +2734,7 @@ Parkstr.: leicht welliger Asphalt	Q0 9905,18329 10075,18472 10205,18575 10359,18
 #: corrected_by: srt (war "schlechtes Kopfsteinpflaster")
 #: corrected_by: mapillary (Asphalt mit Straßenschäden, Q2+ -> ..., neu gemacht?)
 Eintrachtstr.: Asphalt	Q0 10710,18393 10650,18544
-Hiddenseer Str.: Asphalt mit leichten Schäden	Q0- 11651,15273 11828,15210
+Hiddenseer Str.: neuer Asphalt, aber wellig	Q0- 11651,15273 11828,15210
 Stubbenkammerstr.: Asphalt mit leichten Schäden	Q0- 11631,15192 11801,15132
 (Chausseestr. - Schulzendorfer Str.): Parkweg	Q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
 (Pankeweg zwischen Pankstr. und Wiesenstr.): Kopfsteinpflaster	Q2 8176,15635 8150,15700 8164,15840
@@ -31905,4 +31905,5 @@ Einmündungsbereich asphaltiert	Q0 12423,15875
 Einmündungsbereich asphaltiert	Q1+ 12198,15999
 Einmündungsbereich asphaltiert	Q0 11296,17799
 Einmündungsbereich mit Kopfsteinpflaster	Q2 11217,17783
+Kreuzungsbereich asphaltiert	Q0 12466,16198
 #: ignore ^^^

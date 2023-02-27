@@ -1178,7 +1178,7 @@ Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
 #: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
-#: last_checked: 2023-01-28 (mapillary)
+#: last_checked: 2023-02-27
 #: check_frequency: 90d
 Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
@@ -4044,7 +4044,7 @@ Alexander-von-Humboldt-Weg: Straßenbahnübergang gesperrt	2::inwork 18818,3332 18
 #: XXX laut osm ist die Schule 2023-02 fertig
 #: osm_watch: way id="860287005" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-02-22
+#: last_checked: 2023-02-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4437,7 +4437,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: source_id: 2147343289 (bis 30.6.2021) (inaktiv)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023) (inaktiv) (wieder aktiv, bis 27.02.2023) (inaktiv)
-#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023)
+#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023) (bis 28.2.2023)
 #: note: laut rbb ebenfalls bis 30.9.2022
 #: osm_watch: way id="43233756" version="22"
 #: osm_watch: way id="681299268" version="2"
@@ -4446,11 +4446,11 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: priority: #A vvv
 #: last_checked: 2023-02-10 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-02-27 vvv
-#: valid: -20230227 vvv
+#: next_check: 2023-02-28 vvv
+#: valid: -20230228 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
 #: source_id: 2147343292 (möglicherweise inaktiv)
-#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
+#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (bis 28.2.2023)
 Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 # REMOVED (hier nicht mehr) --- #: source_id: 2147343293 --- #: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (inaktiv) --- #: source_id: viz2021:13.38639,52.5137,29.09.2022,18:06 (inaktiv) --- #: note: Meldung wurde auch bei rbb entfernt --- #: next_check: 2022-10-10 --- Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
 #: XXX laut googlemaps bis 30. Oktober 2018
@@ -4458,7 +4458,7 @@ Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 #: source_id: 2147343290 (möglicherweise inaktiv)
 #: source_id: viz2021:13.38472,52.51468,29.09.2022,18:05 (inaktiv)
 #: source_id: viz2021:13.38459,52.51508,29.09.2022,18:05 (bis 27.02.2023) (inaktiv)
-#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
+#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (bis 28.2.2023)
 #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 #: XXX Hier öfters nachschauen...

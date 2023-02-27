@@ -35285,7 +35285,7 @@ EOF
        source_id => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
        data  => <<EOF,
 #: next_check_id: BERLINERALLEE-2022
-#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022) (bis 4.7.2022)
+#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022) (bis 4.7.2022) (inaktiv)
 #: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
@@ -35782,7 +35782,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-28 (mapillary) vvv
+#: last_checked: 2023-02-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-11-07 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -36863,7 +36863,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-02-22
+#: last_checked: 2023-02-27
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37014,6 +37014,7 @@ EOF
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
 #: by: https://nitter.net/StefanB94551270/status/1595076736168992768
 #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
+#: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
@@ -37682,10 +37683,10 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
 EOF
      },
      { from  => 1675749600, # 2023-02-07 07:00
-       until => 1677600000, # 2023-02-28 17:00
-       text  => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Henny-Porten-Str., evtl. sind auch Radfahrer betroffen, vom 08.02.2023 07:00 bis 28.02.2023 17:00',
+       until => $isodate2epoch->("2023-04-10 17:00:00"), # 1677600000, # 2023-02-28 17:00
+       text  => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Henny-Porten-Str., evtl. sind auch Radfahrer betroffen, vom 08.02.2023 07:00 bis 10.04.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.600257,52.54031,08.02.2023,07:00',
+       source_id => 'viz2021:13.600257,52.54031,08.02.2023,07:00', # bis 28.2.2023; bis 10.4.2023
        data  => <<EOF,
 #: note: laut VIZ nur der Kfz-Verkehr betroffen
 	q4::inwork 23698,15049 23692,15088 23686,15128 23663,15270 23643,15392
@@ -37853,7 +37854,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (G) vvv
+#: also_indoor: traffic (G[falsch]) vvv
 #: last_checked: 2023-02-26 vvv
 #: check_frequency: 60d vvv
 	q4::inwork 9029,6360 8995,6473 8961,6490
@@ -37862,6 +37863,25 @@ EOF
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Charlottenburger Str.: Bauarbeiten an der Roelckestr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: last_checked: 2023-02-27
+	q3::inwork 13286,16267 13033,16387
+EOF
+     },
+     { from  => 1677391200, # 2023-02-26 07:00
+       until => 1679400000, # 2023-03-21 13:00
+       text  => 'Wielandstr.: Kraneinsatz zwischen Kurfürstendamm und Olivaer Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2023 07:00 bis 21.03.2023 13:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.31502,52.50085,27.02.2023,07:00',
+       data  => <<EOF,
+	q4::inwork 4371,10465 4360,10320
 EOF
      },
     );

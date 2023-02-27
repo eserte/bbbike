@@ -97,11 +97,12 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: valid: -20230525
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
 # 
-#: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023)
+#: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
 #: last_checked: 2023-02-16
 #: check_frequency: 30d
-#: next_check: 2023-12-31
+# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2023-02-28
 Fischerinsel	F::inwork 10578,11969
 # 
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -195,9 +196,9 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (keine Baustellenampel mehr) --- #: next_check_id: TRESKOWALLEE-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8851 (2. Halbjahr 2022) --- #: by: https://www.bahninfo-forum.de/read.php?9,721782,727530#msg-727530 (Gleisarbeiten 01.08-10.12.2022) --- #: by: https://www.bahninfo-forum.de/read.php?9,727655,737635#msg-737635 (Baubeginn 1.8.2022, Inbetriebnahme zum Jahresende 2022) --- #: XXX Ampel wird wohl permanent gemacht --- #: last_checked: 2023-01-10 ---	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
-#: next_check: 2023-02-27 vvv
+#: next_check: 2023-02-28 vvv
 #: check_frequency: 90d vvv
-#: valid: -20230227 vvv
+#: valid: -20230228 vvv
 # REMOVED (abgebaut) --- #: last_checked: 2022-09-30 --- #: osm_watch: node id="6380038401" version="1"---	X::inwork 9195,11972
 #: note: Ampel befindet sich westlich der Kreuzung
 #: last_checked: 2022-12-27

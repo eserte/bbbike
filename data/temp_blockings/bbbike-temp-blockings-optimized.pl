@@ -3959,7 +3959,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-01-28 (mapillary) vvv
+#: last_checked: 2023-02-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-11-07 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -4421,7 +4421,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-02-22
+#: last_checked: 2023-02-27
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -4525,6 +4525,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
 #: by: https://nitter.net/StefanB94551270/status/1595076736168992768
 #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
+#: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
@@ -5005,9 +5006,9 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
          'from' => 1675749600,
          'id' => 3721,
          'source_id' => 'viz2021:13.600257,52.54031,08.02.2023,07:00',
-         'text' => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Henny-Porten-Str., evtl. sind auch Radfahrer betroffen, vom 08.02.2023 07:00 bis 28.02.2023 17:00',
+         'text' => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Henny-Porten-Str., evtl. sind auch Radfahrer betroffen, vom 08.02.2023 07:00 bis 10.04.2023 17:00',
          'type' => 'handicap',
-         'until' => 1677600000
+         'until' => 1681138800
        },
        {
          'data' => '#: XXX Radwegbau
@@ -5101,18 +5102,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'type' => 'handicap',
          'until' => 1684940400
        },
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1628937762803191809#m
-#: by: https://nitter.net/pic/orig/media%2FFpqX264XwAAWCXt.jpg
-#: source_id: viz2021:13.38085,52.51637,24.02.2023,03:00 (bis 26.02.2023)
-	q4::temp; 8804,12280 9028,12307 9141,12320
-',
-         'from' => 1677136447,
-         'id' => 3730,
-         'text' => 'Unter den Linden: zwischen Wilhelmstr. und Glinkastr. in Richtung Osten gesperrt., evtl. sind auch Radfahrer betroffen, bis zum 26.02.2023',
-         'type' => 'handicap',
-         'until' => 1677452399
-       },
+       undef,
        {
          'data' => '#: last_checked: 2023-02-25
 #: check_frequency: 14d
@@ -5168,7 +5158,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        {
          'data' => '#: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (G) vvv
+#: also_indoor: traffic (G[falsch]) vvv
 #: last_checked: 2023-02-26 vvv
 #: check_frequency: 60d vvv
 	q4::inwork 9029,6360 8995,6473 8961,6490
@@ -5183,6 +5173,27 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'text' => 'Schönburgstr.: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: last_checked: 2023-02-27
+	q3::inwork 13286,16267 13033,16387
+',
+         'from' => undef,
+         'id' => 3736,
+         'text' => 'Charlottenburger Str.: Bauarbeiten an der Roelckestr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 4371,10465 4360,10320
+',
+         'from' => 1677391200,
+         'id' => 3737,
+         'source_id' => 'viz2021:13.31502,52.50085,27.02.2023,07:00',
+         'text' => 'Wielandstr.: Kraneinsatz zwischen Kurfürstendamm und Olivaer Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2023 07:00 bis 21.03.2023 13:00',
+         'type' => 'handicap',
+         'until' => 1679400000
        }
      
 );

@@ -50,14 +50,14 @@
 #: source_id: viz2021:13.467574,52.553893,04.07.2022,07:00 (bis 25.7.2022) (inaktiv)
 #: source_id: viz2021:13.470292,52.553666,04.07.2022,07:00 (bis 25.7.2022, nur Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.45907,52.55011,26.10.2022,08:31 (bis 28.02.2023) (inaktiv)
-#: source_id: viz2021:13.465999,52.55224,25.07.2022,10:00 (Kanalarbeiten zwischen Lindenstr. und Rennbahnstr. bis 14.10.2022) (bis 25.10.2022) (bis 28.2.2023)
-#: source_id: viz2021:13.4604,52.550369,26.09.2022,07:00 (zwischen Pistoriusstr. und Lindenstr. bis 25.10.2022) (bis 28.2.2023)
+#: source_id: viz2021:13.465999,52.55224,25.07.2022,10:00 (Kanalarbeiten zwischen Lindenstr. und Rennbahnstr. bis 14.10.2022) (bis 25.10.2022) (bis 28.2.2023) (bis 28.4.2023)
+#: source_id: viz2021:13.4604,52.550369,26.09.2022,07:00 (zwischen Pistoriusstr. und Lindenstr. bis 25.10.2022) (bis 28.2.2023) (bis 28.4.2023)
 #: XXX Einzelne Straßenanbindungen werden abgesperrt (Wegenerstr., Rennbahnstr.), außerdem wird direktes Linksabbiegen an einigen Stellen nicht möglich sein. Wie wird sich das auf Radfahrer auswirken?
 #: also_indoor: traffic vvv
-#: last_checked: 2023-02-15 vvv
+#: last_checked: 2023-02-27 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-02-28 vvv
-#: valid: -20230228 vvv
+#: next_check: 2023-04-28 vvv
+#: valid: -20230428 vvv
 # REMOVED (gesamter Bereich) --- Berliner Allee und Rennbahnstr.: Gleisarbeiten	? 14346,16241 14499,16341 14556,16391 14610,16522 14619,16551 14624,16659 14622,16674 14608,16772 14558,16907 14528,16910 14341,17030
 Berliner Allee: Sperrung einer Fahrbahn	Jam; 14056,16120 14248,16202 14346,16241 14499,16341 14556,16391 14610,16522 14619,16551
 Berliner Allee: Sperrung einer Fahrbahn	Jam; 14619,16551 14610,16522 14556,16391 14499,16341 14346,16241 14248,16202 14056,16120
@@ -85,7 +85,7 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 #: note: Stau Richtung Osten: am 2022-12-09 (Fr) gegen 17:00 kein Stau, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr
 #: last_checked: 2023-02-10 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-02-27 vvv
+#: next_check: 2023-02-28 vvv
 #: valid: -20230227 vvv
 Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172
 Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125
