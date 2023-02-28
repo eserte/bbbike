@@ -2946,7 +2946,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-28
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -2954,7 +2954,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Februar 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende Februar 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3252,24 +3252,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
-#: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
-#: also_indoor: traffic (G,ex-H[falsch?],B,W)
-#: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
-#: osm_watch: way id="4441630" version="29" brb
-#: last_checked: 2023-02-26 (research)
-#: check_frequency: 3d
-#: next_check: 2023-02-28
-	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
-',
-         'from' => 1630476021,
-         'id' => 3438,
-         'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/',
-         'text' => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Februar 2023',
-         'type' => 'handicap',
-         'until' => 1677603600
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: su,holiday,(mo-sa T20:00-sunrise)
@@ -4008,16 +3991,16 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
-#: next_check: 2023-02-28
+#: next_check: 2023-03-31
 # REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
 	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
 ',
          'from' => 1658811600,
          'id' => 3595,
          'source_id' => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
-         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 28.02.2023 17:00',
+         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.03.2023 17:00',
          'type' => 'handicap',
-         'until' => 1677600000
+         'until' => 1680274800
        },
        undef,
        {
@@ -4026,7 +4009,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-02-19
+#: last_checked: 2023-02-28
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -4053,7 +4036,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
 	q4::inwork 1514,5163 1573,5152
-	q2::inwork 1573,5152 1964,5070
+# REMOVED (hier keine Einschränkung, siehe mapillary) ---	q2::inwork 1573,5152 1964,5070
 ',
          'from' => 1660582743,
          'id' => 3605,
@@ -4531,7 +4514,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-02-11 vvv
+#: last_checked: 2023-02-28 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
@@ -4908,7 +4891,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-28
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -5104,7 +5087,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-02-25
+         'data' => '#: last_checked: 2023-02-28
 #: check_frequency: 14d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -5194,6 +5177,19 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'text' => 'Wielandstr.: Kraneinsatz zwischen Kurfürstendamm und Olivaer Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2023 07:00 bis 21.03.2023 13:00',
          'type' => 'handicap',
          'until' => 1679400000
+       },
+       {
+         'data' => '#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
+#: XXX Evtl. ist der Asphalt nach den Bauarbeiten besser?
+#: last_checked: 2023-02-28
+#: next_check: 2023-04-14
+	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
+',
+         'from' => 1677610008,
+         'id' => 3738,
+         'text' => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte April 2023',
+         'type' => 'handicap',
+         'until' => 1681595999
        }
      
 );

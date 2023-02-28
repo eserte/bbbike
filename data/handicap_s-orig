@@ -231,10 +231,13 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: next_check_id: MOLKENMARKT-2021
+#: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023)
 #: last_checked: 2023-02-24 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2023-09-30 vvv
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

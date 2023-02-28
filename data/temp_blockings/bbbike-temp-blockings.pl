@@ -32477,7 +32477,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Februar 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende Februar 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32486,7 +32486,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-28
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -35969,14 +35969,14 @@ EOF
 EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
-       until => $isodate2epoch->("2023-02-28 17:00:00"), # 1667232000, # 2022-10-31 17:00
-       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 28.02.2023 17:00',
+       until => $isodate2epoch->("2023-03-31 17:00:00"), # 1667232000, # 2022-10-31 17:00
+       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.03.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00', # bis 31.12.2022, mittlerweile bis 27.1.2023, bis 28.2.2023
+       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00', # bis 31.12.2022; mittlerweile bis 27.1.2023; bis 28.2.2023; bis 31.3.2023
        data  => <<EOF,
 #: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
-#: next_check: 2023-02-28
+#: next_check: 2023-03-31
 # REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
 	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
 EOF
@@ -36003,7 +36003,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-02-19
+#: last_checked: 2023-02-28
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -36174,7 +36174,7 @@ EOF
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
 	q4::inwork 1514,5163 1573,5152
-	q2::inwork 1573,5152 1964,5070
+# REMOVED (hier keine Einschränkung, siehe mapillary) ---	q2::inwork 1573,5152 1964,5070
 EOF
      },
      { from  => 1661112782, # 2022-08-21 22:13
@@ -37020,7 +37020,7 @@ EOF
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-02-11 vvv
+#: last_checked: 2023-02-28 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37553,7 +37553,7 @@ EOF
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-02-11
+#: last_checked: 2023-02-28
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
@@ -37804,7 +37804,7 @@ EOF
        text  => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-02-25
+#: last_checked: 2023-02-28
 #: check_frequency: 14d
 	2::inwork 14810,10832 14738,10892
 EOF
@@ -37882,6 +37882,18 @@ EOF
        source_id => 'viz2021:13.31502,52.50085,27.02.2023,07:00',
        data  => <<EOF,
 	q4::inwork 4371,10465 4360,10320
+EOF
+     },
+     { from  => 1677610008, # 2023-02-28 19:46
+       until => 1681595999, # 2023-04-15 23:59
+       text  => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte April 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
+#: XXX Evtl. ist der Asphalt nach den Bauarbeiten besser?
+#: last_checked: 2023-02-28
+#: next_check: 2023-04-14
+	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
 EOF
      },
     );
