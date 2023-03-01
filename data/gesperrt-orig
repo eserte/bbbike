@@ -1327,7 +1327,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich f¸r Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in K¸rze")
-#: last_checked: 2023-02-26
+#: last_checked: 2023-03-01
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3761,7 +3761,7 @@ Barnimer Dˆrferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
 #: by: https://berliner-abendblatt.de/2022/12/16/umbau-der-st-hedwigs-kathedrale-im-zeitplan-aber-teurer/
-#: last_checked: 2023-01-31 (mapillary)
+#: last_checked: 2023-03-01
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4427,53 +4427,31 @@ Zufahrt Zentrum Schˆneweide: Fahrbahn und B¸rgersteig gesperrt	2:inwork 17728,57
 # REMOVED (notice by Ulfert) --- #: next_check_id: BENJAMINFRANKLIN-2018 --- #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt") --- #: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html --- #: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/ --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in K¸rze, f¸r voraussichtlich ein Jahr) --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767 --- #: by: https://www.facebook.com/ChariteUniversitaetsmedizinBerlin/photos/a.359588317914082/373973493142231/?type=3 --- #: by: http://www.lbv.brandenburg.de/3372.htm --- #: by: http://www.lbv.brandenburg.de/dateien/luftfahrt/hslp_berlin_charite_PDK_mit_Siegel.pdf --- #: by: https://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-muss-laenger-an-seiner-voruebergehenden-unterkunft-am-flughafen-schoenefeld-bleiben/ (1. Quartal 2020) --- #: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/03/98168/klinikum-benjamin-franklin-der-neue-hubschrauberlandeplatz-wird-erst-anfang-2020-in-betrieb-gehen/ (1. Quartal 2020) --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrspolitisch-wichtige-themen-in-der-ersten-bvv-sitzung-im-neuen-jahr_a247462 (Freigabe voraussichtlich Ende Januar 2020) --- #: also_indoor: search Paul-Schwarz-Promenade --- #: also_indoor: search Benjamin-Franklin Hubschrauber --- #: osm_watch: way id="633600854" version="1" --- #: priority: #A --- #: last_checked: 2019-10-21 --- #: next_check: 2020-01-31 --- #: valid: -20200331 --- Paul-Schwarz-Promenade: Sperrung in Hˆhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # REMOVED (offen) --- #: XXX wann ist hier wieder offen? --- #: last_checked: 2020-04-16 --- #: check_frequency: 10d --- Dresdener Str. (Abk¸rzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
-#: next_check_id: FRANZOESISCHE-2018 vvv
+#: next_check_id: FRANZOESISCHE-2018
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-mittwoch-10-10-18-
 #: by: https://twitter.com/VIZ_Berlin/status/1049983541243781120
 #: XXX rund um das Ministeriums f¸r Ern‰hrung, Landwirtschaft und Verbraucherschutz
 #: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen", trotzdem in der Anfangszeit h‰ufiger nachpr¸fen
 #: XXX in der Glinkastr. Einbahnstraﬂe offen f¸r Radfahrer
-#: also_indoor: traffic (G,H,B(teilweise))
-#: source_id: 2147343289 (bis 30.6.2021) (inaktiv)
-#: source_id: 2147343291 (Einbahnstraﬂe in der Glinkastr.) (mittlerweile inaktiv)
-#: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023) (inaktiv) (wieder aktiv, bis 27.02.2023) (inaktiv)
-#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023) (bis 28.2.2023) (inaktiv)
-#: note: laut rbb ebenfalls bis 30.9.2022
-#: osm_watch: way id="43233756" version="22"
-#: osm_watch: way id="681299268" version="2"
-#: osm_watch: way id="47935842" version="16"
-#: osm_watch: way id="681299267" version="4"
-#: priority: #A vvv
-#: last_checked: 2023-02-10 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-02-28 vvv
-#: valid: -20230228 vvv
-Franzˆsische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch f¸r Fuﬂg‰nger	2:inwork 9076,12054 9183,12076
-#: source_id: 2147343292 (mˆglicherweise inaktiv)
-#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (bis 28.2.2023) (inaktiv)
-Mauerstr..: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9076,12054
+# REMOVED --- #: also_indoor: traffic (G,H,B(teilweise)) --- #: source_id: 2147343289 (bis 30.6.2021) (inaktiv) --- #: source_id: 2147343291 (Einbahnstraﬂe in der Glinkastr.) (mittlerweile inaktiv) --- #: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023) (inaktiv) (wieder aktiv, bis 27.02.2023) (inaktiv) --- #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023) (bis 28.2.2023) (inaktiv) --- #: note: laut rbb ebenfalls bis 30.9.2022 --- #: osm_watch: way id="43233756" version="22" --- #: osm_watch: way id="681299268" version="2" --- #: osm_watch: way id="47935842" version="16" --- #: osm_watch: way id="681299267" version="4"
+#: priority: #B vvv
+#: last_checked: 2023-03-01 vvv
+# REMOVED --- #: check_frequency: 30d vvv --- #: next_check: 2023-02-28 vvv
+# REMOVED --- #: valid: -20230228 vvv --- Franzˆsische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch f¸r Fuﬂg‰nger	2:inwork 9076,12054 9183,12076
+# REMOVED --- #: source_id: 2147343292 (mˆglicherweise inaktiv) --- #: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (bis 28.2.2023) (inaktiv) --- Mauerstr..: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9076,12054
 # REMOVED (hier nicht mehr) --- #: source_id: 2147343293 --- #: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (inaktiv) --- #: source_id: viz2021:13.38639,52.5137,29.09.2022,18:06 (inaktiv) --- #: note: Meldung wurde auch bei rbb entfernt --- #: next_check: 2022-10-10 --- J‰gerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9195,11972 9108,11961
-#: XXX laut googlemaps bis 30. Oktober 2018
-#: XXX laut VIZ hier Komplettsperrung, auch f¸r Fuﬂg‰nger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen
-#: source_id: 2147343290 (mˆglicherweise inaktiv)
-#: source_id: viz2021:13.38472,52.51468,29.09.2022,18:05 (inaktiv)
-#: source_id: viz2021:13.38459,52.51508,29.09.2022,18:05 (bis 27.02.2023) (inaktiv)
-#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (bis 28.2.2023) (inaktiv)
-#: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
-Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
+# REMOVED (offen) --- #: XXX laut googlemaps bis 30. Oktober 2018 --- #: XXX laut VIZ hier Komplettsperrung, auch f¸r Fuﬂg‰nger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen --- #: source_id: 2147343290 (mˆglicherweise inaktiv) --- #: source_id: viz2021:13.38472,52.51468,29.09.2022,18:05 (inaktiv) --- #: source_id: viz2021:13.38459,52.51508,29.09.2022,18:05 (bis 27.02.2023) (inaktiv) --- #: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (bis 28.2.2023) (inaktiv) --- #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239 --- Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 #: XXX Hier ˆfters nachschauen...
 #: source_id: viz2021:13.38622,52.51458,29.09.2022,18:07 (bis 27.02.2023) (inaktiv)
-#: check_frequency: 21d vvv
+#: check_frequency: 7d vvv
 #: note: Einbahnstraﬂenregelung auf 35m L‰nge, deshalb q3
 Glinkastr.: Einbahnstraﬂenregelung wegen Bauarbeiten, auch f¸r Radfahrer	1s:q3:inwork 9183,12076 9195,11972
 J‰gerstr.: etwa 40m Fahrbahn an der Glinkastr. gesperrt	2s:q2:inwork  9195,11972 9393,12000
 #: check_frequency ^^^
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
-#: next_check_id ^^^
 # 
 #: next_check_id: TAUBEN-2019
 #: by: mapillary
@@ -4481,12 +4459,12 @@ J‰gerstr.: etwa 40m Fahrbahn an der Glinkastr. gesperrt	2s:q2:inwork  9195,11972
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2023-02-10
+#: last_checked: 2023-03-01
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraﬂenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollst‰ndig aktiv; am 2023-02-10 war das Einbahnstraﬂenschild verschwunden, das Einfahrt-verboten-Schild aber noch da
-#: last_checked: 2023-02-10
+#: last_checked: 2023-03-01
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022

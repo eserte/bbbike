@@ -77,26 +77,7 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: FRANZOESISCHE-2018 vvv
-#: source_id: 2147343056 (bis 30.06.2021) (inaktiv) vvv
-#: source_id: viz2021:13.385078,52.515417,10.10.2018,13:25 (bis 27.2.2023) (inaktiv) vvv
-#: note: Die Einspurigkeit wurde aufgehoben, trotzdem gibt es weiterhin Stau/stockenden Verkehr. Vielleicht erst dann weniger, wenn die Französische Str. wieder offen ist?
-#: note: Stau Richtung Westen: am 2022-12-09 (Fr) gegen 17:00 etwa 100m vor der Ampel, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr
-#: note: Stau Richtung Osten: am 2022-12-09 (Fr) gegen 17:00 kein Stau, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr
-#: last_checked: 2023-02-10 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2023-02-28 vvv
-#: valid: -20230227 vvv
-Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172
-Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: next_check_id ^^^
-# 
+# REMOVED --- #: next_check_id: FRANZOESISCHE-2018 vvv --- #: source_id: 2147343056 (bis 30.06.2021) (inaktiv) vvv --- #: source_id: viz2021:13.385078,52.515417,10.10.2018,13:25 (bis 27.2.2023) (inaktiv) vvv --- #: note: Die Einspurigkeit wurde aufgehoben, trotzdem gibt es weiterhin Stau/stockenden Verkehr. Vielleicht erst dann weniger, wenn die Französische Str. wieder offen ist? --- #: note: Stau Richtung Westen: am 2022-12-09 (Fr) gegen 17:00 etwa 100m vor der Ampel, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr --- #: note: Stau Richtung Osten: am 2022-12-09 (Fr) gegen 17:00 kein Stau, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr --- #: last_checked: 2023-02-10 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-02-28 vvv --- # REMOVED --- #: valid: -20230227 vvv --- Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172 --- Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check_id ^^^
 # REMOVED (hat sich mittlerweile etwas entschärft) --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12502-tempelhof-treptower-park-baumschulenweg/#con-14537 (Dauer des SEVs) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kein-zugverkehr-richtung-tempelhof-und-treptow_a278500 --- #: XXX Stau möglicherweise verschärft durch den SEV für die Ringbahn --- #: last_checked: 2020-06-25 vvv --- #: next_check: 2020-07-27 vvv --- Saalestr.	Jam; 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (vermutlich nur am 14.4.2022 wegen der Sperrung der A100 schlimm gewesen) --- #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/17776-neubau-der-bruecke-niemetzstrasse-errichtung-einer-laermschutzwand/#con-24180 --- #: by: https://nitter.net/VIZ_Berlin/status/1514525684873502723 --- #: also_indoor: traffic --- #: next_check: 2022-04-19 vvv --- #: valid: -20220419 vvv --- Saalestr.: Staugefahr (SEV, Baustellenampel an der Niemetzstr.)	Jam; 13051,7157 13161,7173 13325,7210 13495,7249 13648,7284 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.: Staugefahr (SEV, Baustellenampel an der Niemetzstr.)	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 13648,7284 13495,7249 13325,7210 13161,7173 13051,7157 --- #: valid ^^^ --- #: next_check ^^^
 # 

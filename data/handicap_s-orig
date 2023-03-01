@@ -39,7 +39,7 @@ Untere Kynaststr.: Einbahnstraﬂenregelung, ggfs. vor der Einm¸ndung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschlieﬂungsstraﬂe nicht mehr durchg‰ngig sein; evtl. wird man die Fl‰che als Gr¸nfl‰che kennzeichnen kˆnnen
-#: last_checked: 2023-02-24
+#: last_checked: 2023-03-01
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Geb‰ude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -265,7 +265,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-16
+#: last_checked: 2023-03-01
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11185,11883 11160,12071
@@ -321,7 +321,7 @@ Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-07 (mapillary)
+#: last_checked: 2023-03-01
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -1062,7 +1062,7 @@ Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q4+ 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4857,10909 4930,10903
 #: XXX_prog BS Bordstein zur Friedrichstr., ansonsten q3 oder trotzdem q4 (wegen der vielen Touristen)
-Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
+Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9459,11371 9474,11360
 #: XXX_prog BS Bordstein zur Friedrichstr., ansonsten bleibt es bei q3
 #: note: fr¸her "q3"
 Georgenstr.: Fuﬂg‰ngerzone, Bordstein	q4+ 9441,12670 9313,12662
@@ -3988,15 +3988,18 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
-#: XXX auﬂerdem pr¸fen: ist der gesamte Bereich nun eine Fuﬂg‰ngerzone?
-#: last_checked: 2023-02-14 (mapillary)
+#: XXX auﬂerdem pr¸fen: Wird diese Verbindung auch zur Fuﬂg‰ngerzone gehˆren?
+#: last_checked: 2023-03-01
 #: check_frequency: 45d
 #: next_check: 2023-10-01
 # REMOVED (fr¸her: Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384)
 Schloﬂplatz: Fuﬂg‰nger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
-(Lustgarten - Schloss): Fuﬂg‰nger	q2 10152,12491 10175,12435
-(Uferweg am Humboldtforum): Fuﬂg‰nger	q2 10357,12356 10336,12404 10271,12503 10243,12546
-Schloﬂplatz: einige Fuﬂg‰nger	q2 10271,12503 10175,12435 10102,12384 10063,12438
+Schloﬂplatz: einige Fuﬂg‰nger	q2 10102,12384 10063,12438
+#: note: Fuﬂg‰ngerzone, das Zusatzschild bittet zum Absteigen, allerdings sind die Wege hier weitl‰ufig und die Fuﬂg‰ngerfrequenz nicht sehr hoch vvv
+(Lustgarten - Schloss): Fuﬂg‰ngerzone	q4+ 10152,12491 10175,12435
+(Uferweg am Humboldtforum): Fuﬂg‰ngerzone	q4+ 10357,12356 10336,12404 10271,12503 10243,12546
+Schloﬂplatz: Fuﬂg‰ngerzone	q4+ 10271,12503 10175,12435 10102,12384
+#: note ^^^
 (Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 16899,10020 16912,10054
