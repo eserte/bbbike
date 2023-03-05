@@ -197,7 +197,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
-#: osm_watch: way id="4490214" version="19"
+#: osm_watch: way id="4490214" version="20"
 #: last_checked: 2022-10-08
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
@@ -1845,7 +1845,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erw‰hnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
-#: osm_watch: way id="24852084" version="14"
+#: osm_watch: way id="24852084" version="15"
 #: last_checked: 2022-10-22 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
@@ -3555,7 +3555,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-02-25
+#: last_checked: 2023-03-05
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3612,10 +3612,13 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10581 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10638 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10811 (Anfrage; der Name "Entenbr¸cke" wird hier erw‰hnt)
+#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/die-fussgaengerbruecke-am-stadion-wuhletal-soll-abgerissen-und-durch-eine-neue-ersetzt-werden_a370367 (neue Br¸cke innerhalb drei Jahren (Stand M‰rz 2023))
 #: XXX: Wird mˆglicherweise zur¸ckgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
-#: osm_watch: way id="27944267" version="16"
+#: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
+#: osm_watch: way id="27944267" version="17"
 #: last_checked: 2023-02-05 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 360d
+#: next_check: 2026-03-01
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # 
 #: next_check_id: FAHLENBERGBRUECKE-2022
@@ -4898,7 +4901,7 @@ tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384
 #: XXX Kaiserstr. -> Anna-Fl¸gge-Straﬂe (PLZ: 14467)
 #: XXX Schlossstraﬂe (ˆstlicher Verlauf) -> Anna-Zielenziger-Straﬂe (PLZ: 14467)
 #: XXX Schwertfegerstraﬂe (ˆstlicher Verlauf) -> Erika-Wolf-Straﬂe (bereits eingetragen)
-#: osm_watch: way id="534669300" version="10" brb
+#: osm_watch: way id="534669300" version="11" brb
 #: last_checked: 2022-12-26
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
