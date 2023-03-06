@@ -2189,10 +2189,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: by: https://www.eichwalde.de/wp-content/uploads/2022/05/Boten_02_2022.pdf (bis Ende 2022 oder 2023)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/deutsche-bahn-legt-zeitplan-fuer-baustelle-am-bahnhof-zeuthen-vor-PLTNQXWDNV37DD7HLPDMVTFL6I.html (bis Mai 2023)
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-fussgaengertunnel-am-bahnhof-im-rohbau-fertig-freigabe-mai-2023-geplant-ITXXXXQB35TUQUAUQ5F7PVVHKE.html
 #: osm_watch: way id="36936021" version="7" brb
 #: last_checked: 2022-03-12 (mapillary)
-#: check_frequency: 360d
-#: next_check: 2023-12-31
+# REMOVED --- #: check_frequency: 360d
+#: next_check: 2023-05-31
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 ',
          'from' => 1533756141,
@@ -5068,7 +5069,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'data' => '#: next_check_id: KUESTRINER-2023
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-02-23 vvv
+#: last_checked: 2023-03-05 (mapillary) vvv
 Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16354,15323 16218,15386
 Küstriner Str.	q4::inwork 16354,15323 16314,15223
 #: last_checked ^^^
@@ -5095,7 +5096,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-02-28
+         'data' => '#: last_checked: 2023-03-05
 #: check_frequency: 14d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -5134,9 +5135,12 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1301619.php
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze
+#: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/umbau-des-s-bahnhofs-koepenick-bahnhofstrasse-wird-voll-gesperrt-id210569
 #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof? Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
-#: begin_check: 2023-03-20
-#: next_check: 2023-03-20
+#: begin_check: 2023-03-19
+#: next_check: 2023-03-19
 	2::inwork 22431,6068 22467,6135
 ',
          'from' => 1679292000,
@@ -5166,7 +5170,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: last_checked: 2023-02-27
+#: last_checked: 2023-03-05 (mapillary)
 	q3::inwork 13286,16267 13033,16387
 ',
          'from' => undef,
