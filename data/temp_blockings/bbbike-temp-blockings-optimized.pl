@@ -2601,7 +2601,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-25
+#: last_checked: 2023-03-07
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -2652,7 +2652,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-02-25
+#: last_checked: 2023-03-06
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3946,7 +3946,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-27 vvv
+#: last_checked: 2023-03-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-11-07 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -4130,8 +4130,8 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-01
-#: check_frequency: 14d
+#: last_checked: 2023-03-07
+#: check_frequency: 7d
 	q4::inwork 12081,12236 12059,12172
 ',
          'from' => undef,
@@ -4312,12 +4312,12 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
-Friedrichstr.	q4::inwork 9212,13471 9225,13389
-Oranienburger Str.	q4::inwork 9225,13389 9293,13366
-Chausseestr.	q4::inwork; 9212,13471 9207,13493
+Friedrichstr.	q4::inwork; 9212,13471 9225,13389
+Friedrichstr. (vor der Oranienburger Str.)	q2::inwork 9225,13389 9246,13235
+Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
+# REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
-#: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich
-Linienstr.	q4::inwork 9225,13389 9312,13388
+# REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
 # ungünstiges Routing ---	3 9246,13235 9225,13389 9312,13388
 # ungünstiges Routing ---	3 9312,13388 9225,13389 9246,13235
 #: next_check ^^^
@@ -4945,9 +4945,9 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'from' => 1674460800,
          'id' => 3717,
          'source_id' => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
-         'text' => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 10.03.2023 17:00 ',
+         'text' => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 15.03.2023 17:00 ',
          'type' => 'handicap',
-         'until' => 1678464000
+         'until' => 1678896000
        },
        {
          'data' => '#: note: Ausschilderung: Privatgrundstück/Parken im Hof verboten (nur Südseite)/Durchgang zur Pohlstraße (bzw. Kurfürstenstraße) gestattet/22:00-07:00 Uhr geschlossen
@@ -5096,7 +5096,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-03-05
+         'data' => '#: last_checked: 2023-03-07
 #: check_frequency: 14d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -5201,6 +5201,16 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'text' => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte April 2023',
          'type' => 'handicap',
          'until' => 1681595999
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
+	2::inwork 16558,25688 16583,25667 16593,25640
+',
+         'from' => 1678575600,
+         'id' => 3739,
+         'text' => 'Schlosspark Buch: Eingang Alt-Buch wegen Bauarbeiten am Kirchturm gesperrt, vom 13.03.2023 bis voraussichtlich Ende Dezember 2023',
+         'type' => 'gesperrt',
+         'until' => 1704063599
        }
      
 );

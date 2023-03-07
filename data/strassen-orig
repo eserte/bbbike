@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-03-01 vvv
+#: last_checked: 2023-03-07 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -1660,7 +1660,7 @@ Weydemeyerstr.	N 12112,12861 12054,12903 11987,12946 11957,12876 11925,12807 119
 Weydemeyerstr.	N 11716,12803 11809,12760 11933,12701 11969,12681 12039,12675 12064,12673
 (Weydemeyerstr.)	NN 11900,12756 11892,12760 11831,12789 11825,12792
 (Weydemeyerstr.)	NN 11843,12828 11825,12792 11809,12760
-Gontardstr.	N 10733,12967 10801,12901 10923,12779
+Gontardstr.	N 10733,12967 10801,12901 10923,12779 11013,12684
 Otto-Braun-Str.	HH 11226,12945 11267,13012 11320,13095 11369,13174 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 Mollstr.	HH 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11399,13333 11451,13301 11526,13252 11560,13232 11681,13161 11723,13139
 Mollstr.	HH 11723,13139 11739,13131 11840,13085 11896,13075
@@ -1796,7 +1796,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2023-02-12
+#: last_checked: 2023-03-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1809,7 +1809,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: last_checked: 2023-02-12
+#: last_checked: 2023-03-07
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1819,7 +1819,7 @@ George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
 #: osm_watch: way id="977556359" version="9"
-#: last_checked: 2023-01-22 (daf)
+#: last_checked: 2023-03-07
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -12977,7 +12977,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-02-25
+#: last_checked: 2023-03-07
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371

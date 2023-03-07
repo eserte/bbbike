@@ -30694,7 +30694,7 @@ EOF
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-25
+#: last_checked: 2023-03-07
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -31072,7 +31072,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-02-25
+#: last_checked: 2023-03-06
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -35786,7 +35786,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-27 vvv
+#: last_checked: 2023-03-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-11-07 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -36357,8 +36357,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-01
-#: check_frequency: 14d
+#: last_checked: 2023-03-07
+#: check_frequency: 7d
 	q4::inwork 12081,12236 12059,12172
 EOF
      },
@@ -36709,12 +36709,12 @@ EOF
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
-Friedrichstr.	q4::inwork 9212,13471 9225,13389
-Oranienburger Str.	q4::inwork 9225,13389 9293,13366
-Chausseestr.	q4::inwork; 9212,13471 9207,13493
+Friedrichstr.	q4::inwork; 9212,13471 9225,13389
+Friedrichstr. (vor der Oranienburger Str.)	q2::inwork 9225,13389 9246,13235
+Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
+# REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
-#: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich
-Linienstr.	q4::inwork 9225,13389 9312,13388
+# REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
 # ungünstiges Routing ---	3 9246,13235 9225,13389 9312,13388
 # ungünstiges Routing ---	3 9312,13388 9225,13389 9246,13235
 #: next_check ^^^
@@ -37644,8 +37644,8 @@ EOF
 EOF
      },
      { from  => 1674460800, # 2023-01-23 09:00
-       until => 1678464000, # 2023-03-10 17:00
-       text  => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 10.03.2023 17:00 ',
+       until => $isodate2epoch->("2023-03-15 17:00:00"), # 1678464000, # 2023-03-10 17:00
+       text  => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 15.03.2023 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
        data  => <<EOF,
@@ -37813,7 +37813,7 @@ EOF
        text  => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-03-05
+#: last_checked: 2023-03-07
 #: check_frequency: 14d
 	2::inwork 14810,10832 14738,10892
 EOF
@@ -37905,6 +37905,15 @@ EOF
 #: last_checked: 2023-02-28
 #: next_check: 2023-04-14
 	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
+EOF
+     },
+     { from  => 1678575600, # 2023-03-12 00:00
+       until => 1704063599, # 2023-12-31 23:59
+       text  => 'Schlosspark Buch: Eingang Alt-Buch wegen Bauarbeiten am Kirchturm gesperrt, vom 13.03.2023 bis voraussichtlich Ende Dezember 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
+	2::inwork 16558,25688 16583,25667 16593,25640
 EOF
      },
     );
