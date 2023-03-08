@@ -288,12 +288,13 @@ sub try_cache {
 
 	if (eval {
 	    require Digest::MD5;
+	    require Encode;
 	    require File::Basename;
 	    1;
 	}) {
 	    # Prevent long filenames (very short on cygwin/MSWin32,
 	    # still short (< 256) on Unix systems)
-	    $filename = File::Basename::dirname($filename). "/bbbike_" . Digest::MD5::md5_hex(File::Basename::basename($filename)) . ".cache";
+	    $filename = File::Basename::dirname($filename). "/bbbike_" . Digest::MD5::md5_hex(Encode::encode_utf8(File::Basename::basename($filename))) . ".cache";
 	}
 
 	warn "Try $rw_text cache type $cache_type $rw_text_2 $filename ...\n"

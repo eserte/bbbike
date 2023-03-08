@@ -50,10 +50,7 @@ touch_until_newer $testsource1, $cache_file;
 is Strassen::Util::get_from_cache('cache1', $testsource1), undef, 'cache was invalidated';
 
 is Strassen::Util::get_from_cache('bärlin', $testsource1), undef, 'cache file name may contain characters in the latin1 range';
-TODO: {
-    todo_skip "crashes because of md5 not handling characters > 255", 1;
-    is Strassen::Util::get_from_cache('Wrocław', $testsource1), undef, 'cache file name may contain characters outside the latin1 range';
-}
+is Strassen::Util::get_from_cache('Wrocław', $testsource1), undef, 'cache file name may contain characters outside the latin1 range';
 
 sub touch ($) {
     my $file = shift;
