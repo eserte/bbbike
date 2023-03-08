@@ -758,7 +758,7 @@ EOF
        text  => 'L 30; (Tasdorfer Str.); OL Vogelsdorf, zw. Heinestr. u. Seestr. Kanalarbeiten Vollsperrung 26.08.2004-08.10.2004 ',
        type  => 'handicap',
       data  => <<EOF,
-	q4 35338,12538 35676,11706
+	q4 35338,12538 35401,12332 35676,11706
 EOF
      },
      { from  => 1093297474, # 2004-08-23 23:44
@@ -2093,7 +2093,7 @@ EOF
        text  => 'K 6422; (Schöneicher Allee); Brücke A 10 zw. B 1 und Fredersdorf Brückenabbruch Vollsperrung 02.06.2005-16.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 33128,11823 32617,11557
+	2 33019,11741 32617,11557
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
@@ -2402,7 +2402,7 @@ EOF
        text  => 'B 158; (Freienwalder Chaussee); OD Blumberg, zw. Kietz u. Elisenauer Ch. Deckenerneuerung Vollsperrung 28.07.2005-02.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 24709,22522 24951,22681
+	q4 24709,22522 24754,22552 24951,22681
 EOF
      },
      { from  => 1130018400, # 2005-10-23 00:00
@@ -4088,7 +4088,7 @@ EOF
        text  => 'K 6422 Ernst-Thälmann-Str. OL Fredersdorf, Kno.. Bollensdorfer Allee u. Kno. Fließstr. Errichtung Lichtsignalanlage Vollsperrung 28.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34161,13153 33657,12479
+	q4::inwork 34161,13153 33752,12593 33657,12479
 EOF
      },
      { from  => 1143410400, # 2006-03-27 00:00
@@ -6751,7 +6751,7 @@ EOF
        text  => 'K 6728 zw. Abzw. Raßmannsdorf und Görzig Straßenneubau Vollsperrung 06.11.2006-15.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 65591,-17536 65909,-18312 65936,-18973 66290,-19612
+	2::inwork 65524,-17464 65856,-18246 65871,-18916 66267,-19659
 EOF
      },
      { from  => 1162681200, # 2006-11-05 00:00
@@ -11758,7 +11758,7 @@ EOF
        source_id => 'IM_009124',
        data  => <<EOF,
 # REMOVED (wrong?) ---	2::inwork 58237,11268 58056,11318
-	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
+	2::inwork 33470,10823 32957,10948 32867,10950 32680,10954 31871,10926 30678,10923
 EOF
      },
      { from  => 1215030350, # 
@@ -12955,7 +12955,7 @@ EOF
        text  => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-15.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 34161,13153 34140,13341 34183,13746 34276,14308
+	2::inwork 34161,13153 34140,13341 34183,13746 34254,14311
 EOF
      },
      { from  => 1222552800, # 2008-09-28 00:00
@@ -13877,7 +13877,7 @@ EOF
        text  => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 28531,24375 28308,24301 28246,24272 27715,23859 27608,23776 27254,23502 26968,23160 26915,23116 26764,23083 25878,22894 25838,22885 25712,22856 25435,22733 25283,22666 24951,22681 24709,22522
+	2::inwork 28531,24375 28308,24301 28246,24272 27715,23859 27608,23776 27254,23502 26968,23160 26915,23116 26764,23083 25878,22894 25838,22885 25712,22856 25435,22733 25283,22666 24951,22681 24754,22552 24709,22522
 EOF
      },
      { from  => 1239919200, # 2009-04-17 00:00
@@ -15366,7 +15366,7 @@ EOF
        text  => 'K 6722 Bornow - Groß Rietz zw. Birkholz und Groß Rietz Straßenneubau Vollsperrung 29.07.2009-30.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 65774,-20483 65659,-21355 65445,-21565 65314,-22074 65076,-22519
+	2::inwork 65714,-20534 65742,-20718 65597,-21310 65382,-21588 65280,-22092 65076,-22519
 EOF
      },
      { from  => 1249336800, # 2009-08-04 00:00
@@ -24635,7 +24635,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/721-F/15/031',
        data  => <<EOF,
-	2::inwork 34707,13880 34383,14138 34276,14308 33589,15778 33016,17059
+	2::inwork 34707,13880 34640,13952 34353,14138 34254,14311 33589,15778 33016,17059
 EOF
      },
      { from  => $isodate2epoch->("2015-05-08 18:00:00"), # 1 Tag Vorlauf # 1426870800, # 2015-03-20 18:00
@@ -31072,7 +31072,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-06
+#: last_checked: 2023-03-08
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -37913,6 +37913,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
+#: by: https://berliner-abendblatt.de/kiez-news/pankow/schlosspark-buch-kein-eingang-wegen-bauarbeiten-id210739
 	2::inwork 16558,25688 16583,25667 16593,25640
 EOF
      },
