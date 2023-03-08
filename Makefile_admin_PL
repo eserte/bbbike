@@ -696,6 +696,10 @@ coverage-nonext:
 coverage-ext:
 	-env PERL5OPT=-MDevel::Cover DEVEL_COVER_OPTIONS=+ignore,'\bext/.*/t/' ${PERL} -Ilib -MTest::Harness -e 'runtests(@ARGV)' ext/*/t/*.t
 
+coverage-singlefile:
+	@if [ "${COVERFILE}" = "" ]; then echo "Please define COVERFILE"; false; fi
+	env BBBIKE_TEST_NO_NETWORK=1 BBBIKE_TEST_NO_CGI_TESTS=1 PERL5OPT=-MDevel::Cover DEVEL_COVER_OPTIONS=${STD_DEVEL_COVER_OPTIONS} ${PERL} -MTest::Harness -e 'runtests(@ARGV)' "${COVERFILE}"
+
 coverage-result:
 	${PERL} -S cover
 	-rm -f MYMETA.json.lock
