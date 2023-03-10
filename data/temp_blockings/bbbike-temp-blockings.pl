@@ -31072,7 +31072,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-08
+#: last_checked: 2023-03-09
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32869,8 +32869,8 @@ EOF
 EOF
      },
      { from  => 1618696800, # 2021-04-18 00:00
-       until => $isodate2epoch->("2022-12-23 16:00:00"), # 1661192906, # 1662069600, # 2022-09-02 00:00
-       text  => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 23.12.2022',
+       until => $isodate2epoch->("2023-04-30 16:00:00"), # 1661192906, # 1662069600, # 2022-09-02 00:00
+       text  => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 30.04.2023',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/032',
        data  => <<EOF,
@@ -33357,14 +33357,17 @@ EOF
 	q4::inwork; 16958,11778 16815,11729 16786,11668
 EOF
      },
-     { from  => 1624744800, # 2021-06-27 00:00
-       until => 1630533600, # 2021-09-02 00:00
-       text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. gesperrt, vom 28.06.2021 bis voraussichtlich 01.09.2021',
+     { from  => undef, # 1624744800, # 2021-06-27 00:00
+       until => undef, # 1630533600, # 2021-09-02 00:00
+       text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt', # was: 'vom 28.06.2021 bis voraussichtlich 01.09.2021'
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1100562.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/hasselwerder-park-mit-neuen-wegen_a314970
+#: XXX neue Sperrung, bis wann?
+#: add_fragezeichen: Ist der Weg im Hasselwerderpark noch immer gesperrt?
 #: next_check_id: HASSELWERDERPARK-2021
+#: last_checked: 2023-03-08 (mapillary)
 	2::inwork 18506,5596 18560,5539 18634,5484 18695,5453
 EOF
      },
@@ -35310,8 +35313,8 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2023-05-25 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
+       until => $isodate2epoch->("2023-03-21 00:00:00"), # $isodate2epoch->("2023-05-25 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
@@ -35331,7 +35334,8 @@ EOF
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
 #: last_checked: 2023-03-05 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-05-25 vvv
+#: next_check: 2023-03-21 vvv
+# REMOVED --- #: next_check: 2023-05-25 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
@@ -37235,11 +37239,12 @@ EOF
 EOF
      },
      { from  => 1668540097, # 2022-11-15 20:21
-       until => 1691445599, # 2023-08-07 23:59
-       text  => 'Schönfließer Str.: Einbahnstraßenregelung zwischen Senheimer Str. und Gollanczstr., offen Richtung Westen, bis 7. August 2023',
+       until => $isodate2epoch->("2023-09-08 17:00:00"), # 1691445599, # 2023-08-07 23:59
+       text  => 'Schönfließer Str.: Einbahnstraßenregelung zwischen Senheimer Str. und Gollanczstr., offen Richtung Westen, bis 08.09.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
        data  => <<EOF,
+#: next_check_id: SCHOENFLIESSER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
@@ -37431,7 +37436,7 @@ EOF
 #: next_check_id: SPREEPARK-2022
 #: note: Zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-01-10 vvv
+#: last_checked: 2023-02-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
@@ -37836,7 +37841,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
-#: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt?
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/die-seidelstrassenbruecke-wird-ab-17-maerz-abgerissen_a374135
+#: add_fragezeichen: Tatsächlich auch für Radfahrer und Fußgänger gesperrt?
 #: begin_check: 2023-03-16
 #: next_check: 2023-03-16
 	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929
@@ -37844,7 +37850,7 @@ EOF
      },
      { from  => 1679292000, # 2023-03-20 07:00
        until => 1679715000, # 2023-03-25 04:30
-       text  => 'Bahnhofstr.: voraussichtlich Sperrung im Bereich der Bahnbrücke, von 21.03.2023 07:00 bis 25.03.2023 04:30',
+       text  => 'Bahnhofstr.: voraussichtlich Sperrung im Bereich der Bahnbrücke, eventuell können Radfahrer durch den Bahnhof Köpenick schieben, vom 21.03.2023 07:00 bis 25.03.2023 04:30',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -37852,10 +37858,16 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1301619.php
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/umbau-des-s-bahnhofs-koepenick-bahnhofstrasse-wird-voll-gesperrt-id210569
-#: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof? Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
-#: begin_check: 2023-03-19
-#: next_check: 2023-03-19
-	2::inwork 22431,6068 22467,6135
+#: by: https://viz.berlin.de/2023/03/bahnhofs-koepenick/ (vom 21. bis 24. März 2023 voll gesperrt)
+#: by: https://nitter.cz/VIZ_Berlin/status/1633742841686941697#m (Vorarbeiten)
+#: by: https://nitter.net/pic/orig/media%2FFqxhyiCXgAERnYq.jpg (Vorarbeiten)
+#: by: https://viz.berlin.de/wp-content/uploads/ULP_3_Radverkehr-1.pdf
+#: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023)
+#: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
+#: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
+#: begin_check: 2023-03-21
+#: next_check: 2023-03-21
+	q4::inwork 22431,6068 22467,6135
 EOF
      },
      { from  => undef, # 
@@ -37915,6 +37927,26 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/schlosspark-buch-kein-eingang-wegen-bauarbeiten-id210739
 	2::inwork 16558,25688 16583,25667 16593,25640
+EOF
+     },
+     { from  => 1678348800, # 2023-03-09 09:00
+       until => 1680299999, # 2023-03-31 23:59
+       text  => 'Heidekampweg: zwischen Sonnenallee und Schraderstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis Bis Ende März 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
+#: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
+#: next_check: 2023-03-31
+	q4::inwork 15725,6235 15740,6261 15715,6394
+EOF
+     },
+     { from  => 1678481148, # 2023-03-10 21:45
+       until => 1689458399, # 2023-07-15 23:59
+       text  => 'Hubertusstr.: Bauarbeiten zwischen Kaiserstr. und Pausiner Str., evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
+	q4::inwork -3845,16921 -3975,16905 -4099,16925 -4152,16942 -4259,16974 -4318,16979
 EOF
      },
     );

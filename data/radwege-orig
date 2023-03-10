@@ -2986,9 +2986,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,15:00 (inaktiv)
-#: osm_watch: way id="420112505" version="11"
-#: osm_watch: way id="420112509" version="12"
-#: osm_watch: way id="966685279" version="6"
+#: osm_watch: way id="420112505" version="12"
+#: osm_watch: way id="420112509" version="13"
+#: osm_watch: way id="966685279" version="7"
 #: last_checked: 2023-03-06 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
@@ -3582,27 +3582,16 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-nach-fuenf-jahren-wieder-eroeffnet/
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/im-umfeld-der-salvador-allende-bruecke-wird-noch-weiter-gebaut_a364193 (bis Anfang Dezember 2022)
 # REMOVED --- #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017 --- #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate --- #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten --- #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
-#: osm_watch: way id="333893474" version="33"
-#: osm_watch: way id="10275151" version="55"
-#: source_id: LMS-BR_r_LMS-BR_6442 (möglicherweise inaktiv)
-#: source_id: 2147343694 (möglicherweise inaktiv)
-#: source_id: 2147345165 (bis Ende 2021) (inaktiv)
-#: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020) (inaktiv)
-#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
-#: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022) (inaktiv)
-#: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv)
-#: note: laut osm ist auch der Radweg auf der östlichen Brückenhälfte offen, keine Angaben zur Benutzungspflicht
-#: XXX Benutzungspflicht des neuen Radwegs nach Abschluss der Bauarbeiten?
-#: last_checked: 2023-01-01 (mapillary) vvv
+# REMOVED --- #: osm_watch: way id="333893474" version="33" --- #: osm_watch: way id="10275151" version="55" --- #: source_id: LMS-BR_r_LMS-BR_6442 (möglicherweise inaktiv) --- #: source_id: 2147343694 (möglicherweise inaktiv) --- #: source_id: 2147345165 (bis Ende 2021) (inaktiv) --- #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020) (inaktiv) --- #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv) --- #: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022) (bis 23.12.2022) (inaktiv) --- #: source_id: viz2021:13.593458,52.449757,24.11.2022,22:00 (Rückbauarbeiten) (inaktiv) --- #: note: laut osm ist auch der Radweg auf der östlichen Brückenhälfte offen, keine Angaben zur Benutzungspflicht --- #: XXX Benutzungspflicht des neuen Radwegs nach Abschluss der Bauarbeiten? --- #: last_checked: 2023-01-01 (mapillary) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-12-23 vvv
 # REMOVED --- #: priority: #A vvv
 #: note: im Bereich der Bushaltestelle ist das Asphaltband unterbrochen
-neu asphaltiert, relativ breit	RW1; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
+neu asphaltiert, relativ breit	RW2; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 # REMOVED --- #: priority ^^^
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
 #: confirmed_by: srt
 neu asphaltiert, relativ breit	RW1; 23404,5325 23420,5159 23433,5037 23443,4942 23447,4906 23451,4877
@@ -7450,7 +7439,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2023-02-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-28 vvv
-#: osm_watch: way id="335479077" version="18"
+#: osm_watch: way id="335479077" version="19"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"
@@ -7930,8 +7919,8 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385402,52.447779,08.11.2022,07:00 (Kanalarbeiten bis 6.12.2022) (bis 3.1.2023) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.38587,52.44557,14.02.2023,08:00 (bis 15.03.2023) (inaktiv)
 #: source_id: viz2021:13.38515,52.44928,27.01.2023,11:11 (bis 06.03.2023) (inaktiv)
+#: source_id: viz2021:13.385832,52.445579,14.02.2023,08:00 (bis 15.3.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023)
-#: source_id: viz2021:13.385832,52.445579,14.02.2023,08:00 (bis 15.3.2023)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-12-23 vvv
