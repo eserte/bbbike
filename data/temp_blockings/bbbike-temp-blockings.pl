@@ -31072,7 +31072,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-09
+#: last_checked: 2023-03-11
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32105,7 +32105,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-02-14
+#: last_checked: 2023-03-11
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -33147,7 +33147,7 @@ EOF
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/degewo-wohnungsbauprojekt-in-der-dessauerstrasse-soll-noch-in-diesem-jahr-starten_a211105 (Fertigstellung Dezember 2021 (Stand Mai 2019))
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="48490204" version="5"
 # REMOVED (fertig) --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: last_checked: 2022-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-12-17
-	2::inwork 6511,2284 6459,2364
+	2::inwork 6511,2284 6454,2366
 EOF
      },
      { from  => $isodate2epoch->("2022-09-12 00:00:00"), # undef, # 
@@ -33851,7 +33851,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-10-31 (daf)
+#: last_checked: 2023-03-11
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -34879,7 +34879,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-01-22 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-02 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -34993,7 +34993,7 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2023-02-17 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G,B,W) vvv
@@ -35449,7 +35449,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1678541864, # undef, # XXX
        text  => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Dessauerstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -35460,7 +35460,7 @@ EOF
 # REMOVED --- #: next_check: 2022-10-10 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork 6273,2609 6293,2583
 # REMOVED (hier nicht mehr) --- Seydlitzstr.	q4::inwork 6293,2583 6349,2510
-Seydlitzstr.	q3::inwork 6349,2510 6459,2364
+Seydlitzstr.	q3::inwork 6349,2510 6454,2366
 # REMOVED (hier nicht mehr) --- Frobenstr.	q3::inwork 6349,2510 6529,2642
 # REMOVED --- #: next_check ^^^
 #: last_checked ^^^
@@ -37096,7 +37096,7 @@ EOF
 EOF
      },
      { from  => 1667170800, # 2022-10-31 00:00
-       until => undef, # XXX
+       until => 1678541944, # undef, # XXX
        text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, ab 1.11.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
@@ -37105,8 +37105,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
 #: note: Soll noch 2022 fertig werden.
-#: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G)
-#: next_check: 2022-11-01
+# REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 	q4::inwork 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 EOF
      },
@@ -37145,7 +37144,7 @@ EOF
        data  => <<EOF,
 # REMOVED (als die Bauarbeiten noch in der Weserstr. waren) --- #: also_indoor: traffic (G,B[zuviel],W) vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-03-02 vvv
+#: last_checked: 2023-03-11 vvv
 # REMOVED --- Weserstr. Richtung Westen	q4::inwork; 13946,7918 13891,7961
 # REMOVED --- Weserstr. Richtung Osten	q3::inwork; 13891,7961 13946,7918
 Ederstr.	q3::inwork 13946,7918 13919,7707
@@ -37436,7 +37435,7 @@ EOF
 #: next_check_id: SPREEPARK-2022
 #: note: Zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-02-19 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
@@ -37872,16 +37871,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Schönburgstr.: Bauarbeiten, Fahrbahn gesperrt',
+       text  => 'Schönburgstr. und Blumenthalstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (G[falsch]) vvv
-#: last_checked: 2023-02-26 vvv
+#: also_indoor: traffic (ex-G[falsch]) vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 60d vvv
 	q4::inwork 9029,6360 8995,6473 8961,6490
 	q2::inwork 8961,6490 8949,6644
+Blumenthalstr.	q4::inwork 8944,6293 8971,6154
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -37935,6 +37935,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
+#: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bauarbeiten-staugefahr-in-baumschulenweg-id211581
 #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
 #: next_check: 2023-03-31
 	q4::inwork 15725,6235 15740,6261 15715,6394
@@ -37947,6 +37948,16 @@ EOF
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
 	q4::inwork -3845,16921 -3975,16905 -4099,16925 -4152,16942 -4259,16974 -4318,16979
+EOF
+     },
+     { from  => 1678546107, # 2023-03-11 15:48
+       until => 1704063600, # 2024-01-01 00:00
+       text  => 'Bellingstr.: zwischen Seydlitzstr. und Gallwitzallee Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 31.12.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (none)
+#: note: Ende durch Halteverbotsschilder festgestellt
+	q4::inwork 6567,2194 6746,2232
 EOF
      },
     );

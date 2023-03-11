@@ -131,7 +131,7 @@ Gehwegplatten, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2023-02-26 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -157,7 +157,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2022-10-23 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -1161,7 +1161,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-03-06 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1496,7 +1496,8 @@ die letzten 70 Meter werden zunächst auf dem Gehweg, dann hinter der Rechtsabbie
 teilweise schlechte Qualität (eng, uneben)	RW1; 12507,5228 12214,5554
 	RW1; 12507,5228 12626,5057 12652,5006
 neues Verbundsteinpflaster	RW2; 12652,5006 12626,5057 12507,5228
-	RW1;RW1 12652,5006 12731,4841
+	RW1; 12652,5006 12731,4841
+Verbundsteinpflaster	RW1; 12731,4841 12652,5006
 	RW1;RW2 12731,4841 12819,4780 12916,4757
 	RW1;RW1 12916,4757 13001,4724 13056,4678 13266,4503 13305,4504
 Verbundsteinpflasterradweg, in beide Richtungen befahrbar	RW1; 13305,4504 13394,4500
@@ -1677,9 +1678,9 @@ Verbundsteinpflaster	RW1; 5166,13087 5328,13019
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="21"
 #: osm_watch: way id="458915639" version="5"
-#: last_checked: 2022-10-15
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-02-24
+#: last_checked: 2023-03-11
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2023-02-24
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
 neu asphaltiert, allerdings bilden sich schon die ersten Wellen	RW1;RW9 6718,2443 6711,2496 6679,2701
@@ -2722,7 +2723,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-03-06 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-31 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3981,7 +3982,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2022-11-12 vvv
+#: last_checked: 2022-11-20 (mapillary) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -4025,7 +4026,8 @@ Verbundsteinpflaster mit Schäden	RW1; 12718,5845 12789,5612 12794,5596 12798,558
 	RW1;RW1 12883,5257 12885,5205 12731,4841
 	RW1; 12731,4841 12547,4391
 neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
-	RW1; 12507,5228 12582,5232 12727,5244 12773,5248 12883,5257
+Verbundsteinpflaster	RW1; 12507,5228 12582,5232 12727,5244
+Radweg nur aufgemalt, Mosaikpflaster	RW1; 12727,5244 12773,5248 12883,5257
 Verbundsteinpflaster	RW1; 12883,5257 12773,5248
 Radweg nur aufgemalt	RW1; 12773,5248 12727,5244 12582,5232
 Verbundsteinpflaster	RW2; 12582,5232 12507,5228
@@ -4672,7 +4674,7 @@ Verbundsteinpflaster	RW1; 11054,-740 11077,-714 11125,-613 11176,-489 11207,-413
 	RW1;RW0 3983,2454 3805,2196
 	RW1;RW4 3805,2196 3746,2108 3716,2063 3640,1959 3584,1877 3526,1792
 	RW1;RW1 3526,1792 3432,1667
-altes, holpriges Verbundsteinpflaster	RW1;RW1 8347,3382 8199,3338 8076,3272 8036,3253 7852,3183
+altes, holpriges Verbundsteinpflaster, Bord gegen Gehweg	RW1;RW1 8347,3382 8199,3338 8076,3272 8036,3253 7852,3183
 altes, holpriges Verbundsteinpflaster	RW1;RW1 7852,3183 7776,3163 7720,3148
 alte Gehwegplatten	RW1;RW1 7720,3148 7535,3101 7487,3089
 die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
@@ -7392,7 +7394,11 @@ Tempo 10	RW6;RW6 20110,8355 20144,8355
 	RW;RW 346,4833 374,4779 418,4696 519,4547 666,4339 696,4299
 	RW1;RW1 696,4299 719,4268 754,4220 806,4130 861,3996 886,3902 891,3828 923,3585
 	RW;RW1 923,3585 971,3534
+# 
+	RW6;RW6 8074,3635 8046,3626
 	RW6;RW6 8346,3633 8178,3591 8070,3563
+	RW6;RW6 8178,3591 8167,3641
+# 
 Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
 	RW6;RW6 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 	RW3;RW3 10228,-2136 10194,-2138 10096,-2137
@@ -7565,7 +7571,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen)
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2023-02-14
+#: last_checked: 2023-03-11
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
@@ -7923,7 +7929,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2022-12-23 vvv
+#: last_checked: 2023-03-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: -20211007 vvv

@@ -177,7 +177,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2023-02-16
+#: last_checked: 2023-03-11
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -3059,6 +3059,7 @@ Unterbaumstr.: Bordsteine	q2 8488,12920 8502,12935
 Hohenseeweg: nur f¸r Fuﬂg‰nger erlaubt, Bordstein	q4 23152,11065 22972,11066
 #: XXX_prog BS an beiden Seiten, sonst q1 oder so
 Totilastr.: Bordsteine, Fuﬂg‰nger	q4 8574,5580 8600,5580
+#: note: am ˆstlichen Ende ein Gr¸nanlagenschild ohne Zusatzschilder, am westlichen Ende kein Schild
 #: XXX_prog BS an der Gersdorfstr., ansonsten q1
 Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fuﬂg‰nger	q2 8255,4791 8192,4710
 (Brentanostr. - Breitenbachplatz): einige Fuﬂg‰nger	q1 4058,6602 4034,6642
@@ -3066,7 +3067,7 @@ Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fuﬂg‰nger	q2 8255,4791 8192,4710
 #: XXX_prog BS nur am Wendehammer, ansonsten q1
 Geitnerweg: Bordstein, einige Fuﬂg‰nger	q2 5420,511 5448,455
 #: note: rechtliche Lage unklar
-Seydlitzstr.: einige Fuﬂg‰nger	q1 6511,2284 6459,2364
+Seydlitzstr.: einige Fuﬂg‰nger	q1 6511,2284 6454,2366
 Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2142,10027 2131,10014 2128,9999
 Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2224,10083 2245,10092
 #: note: fr¸her "q1"
@@ -5596,7 +5597,8 @@ Stavenhagener Str.: enge Straﬂe	q1 13632,5126 13534,5111 13444,5097 13359,5086
 #: by: Jˆrg Krieger:
 Glambecker Weg: enge Straﬂe	q1 2577,24048 2482,23985 2430,24155 2385,24298 2362,24370
 #: by: Sven Schmidt:
-Thaliaweg: enge Straﬂe	q1 6638,3138 6482,3004
+#: corrected_by: srt/policy (q1 -> q0-)
+Thaliaweg: enge Straﬂe	q0- 6638,3138 6482,3004
 #: by: Gid Huth:
 Marmaraweg: Fuﬂg‰nger	q1 10368,4279 10371,4337
 #: by: anonymous
