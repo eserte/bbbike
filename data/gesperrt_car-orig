@@ -346,7 +346,10 @@ Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7393,16566 7292,16480 7232,16429
 Bismarckstr.: Mittelstreifen	3nocross 3689,11637 3843,11659 3897,11666
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5883,6519 6071,6559
-Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6545,15116 6537,15156 6562,15177
+#: note: und vermutlich auch für Taxen frei, denn dort gibt es einen Taxistand, allerdings ist nicht entsprechend ausgeschildert
+Augustenburger Platz: nur für Radfahrer und Anlieger frei	2:Anlieger 6561,15041 6545,15116 6537,15156 6562,15177
+Föhrer Str.: Mittelstreifen	3nocross 6561,15041 6528,15000 6504,14969
+Föhrer Str.: Mittelstreifen	3nocross 6504,14969 6445,14893 6334,14756
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
 #: by: Wolfhard Schleese
 (Kastanienallee - Friedrich-Engels-Str.)	1 8789,20763 8692,20698 8717,20584

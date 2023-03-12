@@ -709,7 +709,8 @@ Lynarstr.: Kopfsteinpflaster	Q2; 7409,14954 7259,14870
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
 Lynarstr.: Asphalt	Q0 7461,14986 7624,15083 7694,15125
 Lynarstr.: Asphalt	Q0 7694,15125 7745,15160
-Kiautschoustr.: Kopfsteinpflaster	Q2 7182,14986 7007,14911 6853,14854 6837,14848
+Kiautschoustr.: Kopfsteinpflaster	Q2 7182,14986 7007,14911 6880,14861
+Kiautschoustr.: Gehwegplatten	Q0 6880,14861 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7000,14832 7007,14911 6945,15045 6886,15156
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
 Emser Str.: Kopfsteinpflaster	Q2 12648,7080 12767,7110 12806,7120
@@ -756,7 +757,7 @@ Kolonnenweg: mäßiger Asphalt	Q1 9959,16510 9955,16578
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
 Gleimtunnel: asphaltierte Streifen, innen Kopfsteinpflaster	Q0 10130,15653 10004,15636
 Gleimstr: Asphalt	Q0 10004,15636 9907,15618 9732,15581
-Nordufer: Asphalt	Q0 5618,14981 5627,14963 5873,14847 5972,14820
+Nordufer: Asphalt	Q0 5605,14988 5627,14963 5873,14847 5972,14820
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7450,13432 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
 Stolzenfelsstr.: Verbundsteinpflaster	Q0 18718,8583 18787,8540
 Dorfstr.: Beton	Q0 22483,11261 22516,11418 22506,11445
@@ -878,7 +879,7 @@ Welserstr.: Verbundsteinpflaster	Q1 6265,10359 6276,10401
 Bayreuther Str.: Verbundsteinpflaster	Q1 6276,10401 6302,10462
 Motzstr.: Verbundsteinpflaster	Q1 5995,9810 5941,9787
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 8033,14241 7973,14195
-(Uferweg Plötzensee): Parkweg	Q1 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
+(Uferweg Plötzensee): Parkweg	Q1 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 Kruppstr.: Kopfsteinpflaster	Q2 7331,14132 6917,13917 6890,13900 6817,13862 6746,13826
 Fritz-König-Weg: Asphalt	Q0 17050,7687 17301,7754 17527,7812
 Weg 7: unbefestigter Weg	Q2 17050,7687 16902,7652
@@ -3557,7 +3558,7 @@ Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18198,13816
 Spinozastr.: Asphalt	Q0 3926,6409 3930,6481 3974,6511 4050,6506
 (Hoeppnerstr. - Hessenring): Verbundsteinpflaster	Q1 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso): wassergebundene Decke	Q1 8553,7795 8554,7746 8573,7710 8549,7622
-Sauerbruchweg: Asphalt	Q0 8487,13351 8630,13172
+Sauerbruchweg: Asphalt	Q0 8490,13354 8632,13155
 (Verlängerung der Scharnhorststr.): Asphalt	Q0 7938,14423 7927,14438 7877,14504
 (Boyenstr. - Promenade am Schiffahrtskanal): Asphalt	Q0 7877,14504 7804,14445
 Vereinsweg (Charlottenburg): Kleinkopfsteinpflaster	Q1 2828,11731 2855,11752 2907,11755 2934,11747
@@ -10652,14 +10653,29 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 Königstuhlweg: Beton	Q0 10145,2622 10087,2365
 Glärnischweg: schlechtes Kopfsteinpflaster	Q3 10087,2365 10043,2351 9934,2307
 Riedingerstr.: Asphalt	Q0 10511,-1985 10508,-2006 10453,-2133
-(Virchow-Klinikum, Einfahrt Seestr.): Asphalt	Q0 5895,15229 5944,15172
+(Virchow-Klinikum, Einfahrt Seestr.): Asphalt	Q0 5889,15231 5944,15172
 (Mittelallee, Virchow-Klinikum): Asphalt/Beton	Q0 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
 (Weststr., Virchow-Klinikum): Asphalt	Q0 5944,15172 5998,15112 6007,15053
 (Weststr., Virchow-Klinikum): glattes Verbundsteinpflaster	Q0 6007,15053 6012,15024
-(Weststr., Virchow-Klinikum): Asphalt	Q0 6012,15024 6025,14924
-(Ost-West-Str., Virchow-Klinikum): Asphalt	Q0 5998,15112 6056,15162 6170,15263 6265,15349 6348,15423
-(Südstr., Virchow-Klinikum): Beton	Q0 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6025,14924
-(Oststr., Virchow-Klinikum): Asphalt	Q0 6414,14981 6400,15080 6395,15109 6380,15210
+(Weststr., Virchow-Klinikum): Asphalt	Q0 6012,15024 6030,14924
+(Ost-West-Str., Virchow-Klinikum): Asphalt	Q0 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
+(Südstr., Virchow-Klinikum): Asphalt	Q0 6414,14981 6305,14964
+(Südstr., Virchow-Klinikum): Beton	Q0 6305,14964 6231,14952 6159,14921 6104,14937
+(Südstr., Virchow-Klinikum): Asphalt/Beton	Q0 6104,14937 6030,14924
+(Oststr., Virchow-Klinikum): Asphalt/Beton	Q0 6414,14981 6400,15080 6395,15109
+(Oststr., Virchow-Klinikum): Asphalt	Q0 6395,15109 6380,15210 6320,15283
+(Oststr., Virchow-Klinikum): Beton	Q0 6320,15283 6309,15320
+(Oststr., Virchow-Klinikum): Asphalt	Q0 6309,15320 6293,15330
+(Oststr., Virchow-Klinikum): Asphalt	Q0 6504,14969 6470,14990 6414,14981
+(Südring, Virchow-Klinikum): Asphalt	Q0 6158,14851 6078,14864 6073,14892
+(Südring, Virchow-Klinikum): Beton	Q0 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum): Beton	Q0 6231,14952 6252,14812
+(Virchow-Klinikum, Einfahrt Nordufer/Südring): Asphalt mit Schäden	Q1 6210,14808 6213,14777
+(Südring - Weststr., Virchow-Klinikum): Gehwegplatten	Q0 6073,14892 6035,14913 6030,14924
+(Nordstr., Virchow-Klinikum): Beton	Q0 6056,15162 6254,15191 6380,15210
+(Nordring, Virchow-Klinikum): Beton	Q0 6265,15349 6275,15335 6293,15330
+(Nordring, Virchow-Klinikum): Beton	Q0 6275,15335 6262,15323 6272,15249 6249,15237
+(Nordring, Virchow-Klinikum): Asphalt/Beton	Q0 6249,15237 6254,15191
 (Lutterbacher Str. - Dahlemer Weg): Gehwegplatten	Q0 2151,3126 2166,3138 2193,3142
 (Fischtalpark): wassergebundene Decke	Q1 719,4268 574,4150
 (Fischtalpark): Kleinsteinpflaster	Q2 574,4150 533,4102
@@ -10871,7 +10887,8 @@ An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q0 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q0; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676
-Schillingstr.: Asphalt mit Querrissen	Q0 11635,12745 11596,12668 11562,12597 11497,12463
+Schillingstr.: Asphalt mit Querrissen	Q1 11635,12745 11596,12668 11562,12597
+Schillingstr.: Asphalt mit Querrissen	Q0 11562,12597 11497,12463
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, Wurzeln	Q2 -1040,7550 -1248,7704
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, teilweise mit unebenen Asphalt befestigt	Q2 -1248,7704 -1852,8155
 Hegauer Weg, Rampe: unbefestigt	Q2 -35,2470 -22,2484
@@ -11079,7 +11096,7 @@ Kletterrosenweg: Verbundsteinpflaster	Q1 21382,149 21344,300
 Alte Potsdamer Str.: Kleinsteinpflaster	Q1 8389,11378 8375,11368
 Straßenbahnwendeschleife Langenbeckstr.: Asphalti mit Rissen und Schäden	Q1 12925,13373 13081,13457
 (Dolgenseestr., Erschließungsweg): Beton, Betonpflaster	Q0 17288,9952 17412,9911
-Singerstr.: Asphalt mit Querrissen	Q0 11635,12398 11613,12408 11497,12463
+Singerstr.: Asphalt mit Querrissen	Q1 11635,12398 11613,12408 11497,12463
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): glatt gepflastert	Q1 8099,13391 8106,13393 8111,13358 8119,13396 8174,13397
 Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q2 25218,2691 25159,2622 25116,2529

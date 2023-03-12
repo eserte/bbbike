@@ -42,11 +42,11 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: next_check: 2023-03-13 vvv
 #: valid: -20230313 vvv
-#: XXX schon seit mehreren Tagen anscheinend ausgeschaltet
-#: last_checked: 2023-02-25
+#: XXX schon seit mehreren Tagen ausgeschaltet
+#: last_checked: 2023-03-12
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-03-07
+#: last_checked: 2023-03-12
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -1466,7 +1466,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer (Beusselstr. -> Seestr.)
 #: XXX_prog: Richtung Norden zwei Ampeln, Zeitverlust, da gegeneinander geschaltet
 	X 5051,14606
-	X 5700,15043
+	X 5687,15057
 	X 13078,15586
 	X 13307,15758
 	X 14499,16341
@@ -1635,8 +1635,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12628,8711
 	X 5231,13843
 	X 5220,14043
-	X 5753,15096
-	X 5895,15229
+	X 5736,15098
+	X 5889,15231
 #: note: Anforderung für Radfahrer (Kontaktschleife) aus Richtung Petersallee
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1749-2016-bav-zu-ds-2687-iv-fahrradweg_krzg_afrikanische_str-petersallee-sb.pdf (Anforderung)
 	X 5581,16708
@@ -2047,7 +2047,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2022-12-17
+#: last_checked: 2023-03-12
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -2323,7 +2323,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off ^^^
 #: note ^^^
 	X 10849,17848
-	F 5618,14981
+	F 5605,14988
 	F 17810,5736
 #: note: Anforderung für linksabbiegende Radfahrer aus der Treskowallee in den Gregoroviusweg
 	X 18740,9907
@@ -3202,7 +3202,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2023-03-07
+#: last_checked: 2023-03-12
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8732,14098
@@ -3536,7 +3536,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: CHAUSSEE-2020
 #: osm_watch: node id="26748289" version="9"
-#: last_checked: 2023-02-12
+#: last_checked: 2023-03-12
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8336,14586
@@ -3549,7 +3549,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-02-12
+#: last_checked: 2023-03-12
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 

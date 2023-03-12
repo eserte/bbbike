@@ -39,7 +39,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-03-01
+#: last_checked: 2023-03-12
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -282,7 +282,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
 #: note: bei rbb noch bis 31.12.2022
-#: last_checked: 2023-02-12
+#: last_checked: 2023-03-12
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -1458,7 +1458,7 @@ Goerdelersteg: enge wendelförmige Rampen	q3 3656,14150 3634,14187 3625,14230 360
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 # REMOVED (by Monika W-J: "gut ausgebauter Radweg seit Sommer 2011") --- Goerdelerdamm: enger Zweirichtungsradweg	q1 3595,14267 3707,14303 4676,14534
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
-Radweg eng und bewachsen	q1 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
+Radweg eng und bewachsen	q1 5051,14606 5264,14671 5293,14699 5331,14735 5437,14844
 zum Tunnel S-Bhf. Grunewald: Fußgänger	q1 693,9129 731,9103
 Tunnel S-Bhf. Grunewald: Fußgänger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
 enge Kurven	q2 33526,2771 33419,2765 33406,2738
@@ -1913,7 +1913,8 @@ Fontanestr.: zwei Schwellen, können zumeist nicht umfahren werden	q1 18240,6845 
 Plönzeile: zwei Schwellen	q2 18574,6401 18676,6333
 #: note: wenn keine Autos illegalerweise an diesen Stellen parken
 Triniusstr.: zwei Schwellen, können umfahren werden	q1+ 18417,6775 18339,6660
-Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
+#: XXX_prog BS am Wendehammer (theoretisch gibt's eine niveaufreie Überfahrt, aber da stehen Restauranttische, auch in der kalten Jahreszeit) (ansonsten q3)
+Kiautschoustr.: Fußgänger, Bordsteine	q4 6837,14848 6880,14861
 # REMOVED (kein Zugang mehr zum Radweg) --- (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordsteine	q4 13493,11217 13514,11208
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger	q4 13454,11119 13483,11143 13498,11136 13524,11204 13514,11208
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordstein	q4 13514,11208 13503,11179 13479,11147
@@ -2421,7 +2422,7 @@ Hilchenbacher Weg: Fußgänger, eng	q2 2413,18655 2416,18598
 Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
 #: XXX_prog: BS
 Straße 455: Bordstein	q2 4916,17201 4931,17174
-(Uferweg Plötzensee): Fußgänger	q1- 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
+(Uferweg Plötzensee): Fußgänger	q1- 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 #: XXX_prog -> Steigung nach comments_mount?
 (Brücke über den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
 Kleingartenstr.: enge Straße	q1 24118,4404 24075,4417 24022,4442 23978,4484
@@ -3860,14 +3861,26 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Brusebergstr. - Gotthardstr.): einige Fußgänger	q1 6045,18305 6046,18290 6040,18289 6031,18151 6065,18004 6049,17839 6056,17798
 (Provinzstr. - Verlängerte Koloniestr.): Fußgänger, eng	q2 8628,18441 8823,18252 8918,18159
 (Koloniestr. - Pankeweg): einige Fußgänger	q2 8973,17756 9024,17780 9050,17794 9110,17784
-(Virchow-Klinikum, Eingang Augustenburger Platz): Radfahren verboten, schieben	q4 6545,15116 6431,15098
-#: note: 20km/h-Zone vvv
-(Mittelallee, Virchow-Klinikum): Krankenhausgelände	q2 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
-(Weststr., Virchow-Klinikum): Krankenhausgelände	q2 5944,15172 5998,15112 6007,15053 6012,15024 6025,14924
-(Ost-West-Str., Virchow-Klinikum): Krankenhausgelände	q2 5998,15112 6056,15162 6170,15263 6265,15349 6348,15423
-(Südstr., Virchow-Klinikum): Krankenhausgelände	q2 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6025,14924
-(Oststr., Virchow-Klinikum): Krankenhausgelände	q2 6414,14981 6400,15080 6395,15109 6380,15210
+# 
+#: note: Virchow-Klinikum vvv
+(Virchow-Klinikum, Eingang Augustenburger Platz): Radfahren verboten, schieben	q3 6545,15116 6524,15113
+(Virchow-Klinikum, Eingang Augustenburger Platz): Radfahren verboten, schieben	q4 6524,15113 6443,15100
+(Virchow-Klinikum, Eingang Augustenburger Platz): Radfahren verboten, schieben	q3 6443,15100 6431,15098
+(Mittelallee, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
+(Weststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5944,15172 5998,15112 6007,15053 6012,15024 6030,14924
+(Ost-West-Str., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6030,14924
+(Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6400,15080 6395,15109 6380,15210
+(Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6470,14990 6504,14969
+(Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6158,14851 6078,14864 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6231,14952 6252,14812
+(Virchow-Klinikum, Einfahrt Nordufer/Südring): Krankenhausgelände, 20km/h-Zone	q2+ 6210,14808 6213,14777
+(Südring - Weststr., Virchow-Klinikum): einige Fußgänger	q2 6073,14892 6035,14913 6030,14924
+(Nordstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6056,15162 6254,15191 6380,15210
+(Nordring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6265,15349 6275,15335 6293,15330
+(Nordring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6275,15335 6262,15323 6272,15249 6249,15237 6254,15191
 #: note ^^^
+# 
 Dresdener Str.: Fußgänger	q3 11021,11287 11000,11327
 (Lutterbacher Str. - Dahlemer Weg): einige Fußgänger, Umlaufgitter am Bahnübergang	q3 2151,3126 2166,3138 2193,3142
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang

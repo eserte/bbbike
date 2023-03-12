@@ -69,8 +69,8 @@ Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,1
 Knoten Märkische/Landsberger Allee	1 19502,15089 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
-Seestr.	1 5043,14671 5255,14757 5311,14786 5440,14840
-Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5051,14606
+Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
+Seestr.	1 5437,14844 5331,14735 5293,14699 5264,14671 5051,14606
 Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
 Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16337 2853,16293 2809,16143
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
@@ -478,8 +478,8 @@ Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944
 Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15413,11690 15489,11735 15639,11653
-Sauerbruchweg	1s 8487,13351 8630,13172
-Virchowweg	1s 8603,13076 8550,13150
+Sauerbruchweg	1s 8490,13354 8632,13155
+Virchowweg	1s 8595,13085 8550,13150
 Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
 Hempelsteig	1 -787,13147 -724,13120 -525,13034 -472,12961
 Kaulsdorfer Str.	1 22075,6967 22049,7085
@@ -861,6 +861,7 @@ Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 (Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
 Enckestr. - Friedrichstr.	1s 9666,10848 9537,10837
 (Mittelallee, Virchow-Klinikum)	1 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
+(Nordstr., Virchow-Klinikum)	1 6380,15210 6254,15191 6056,15162
 (Straße vor dem Berliner Ensemble)	1s 9153,12928 9212,12969
 Jürgen-Schumann-Allee	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 Jürgen-Schumann-Allee	2 19282,-3928 19464,-3780 19479,-3690
@@ -911,8 +912,8 @@ Röblingstr.	1 7615,5938 7598,5926
 Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 (S-Bhf. Raoul-Wallenberg-Str. - Raoul-Wallenberg-Str.)	1::igndisp 20212,16252 20116,16228
 Mittelstreifen	3nocross::ignrte 6239,15553 6348,15423 6375,15391
-Amrumer Str. -> Ost-West-Str., Virchow-Klinikum: Mittelstreifen	3::igndisp 6375,15391 6348,15423 6265,15349
-Ost-West-Str., Virchow-Klinikum -> Amrumer Str.: Mittelstreifen	3::igndisp 6265,15349 6348,15423 6239,15553
+Amrumer Str. -> Ost-West-Str., Virchow-Klinikum: Mittelstreifen	3::igndisp 6375,15391 6348,15423 6331,15408
+Ost-West-Str., Virchow-Klinikum -> Amrumer Str.: Mittelstreifen	3::igndisp 6331,15408 6348,15423 6239,15553
 Sinsheimer Weg	1s 13774,8849 13687,8734
 Stolzenfelsstr.	1 19447,8175 19407,8143
 Hannaweg	1s 20938,14066 20923,13953
@@ -944,6 +945,8 @@ Eintrachtstr. -> Breite Str.: Straßenbahnhaltestelle	3::igndisp 10650,18544 1071
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
 Oberspreestr. [Nebenfahrbahn]	1s 19965,5101 19957,5083 19940,5090
 (Allee der Kosmonauten - Poelchaustr.)	1 20194,14435 20309,14431 20367,14429
+Südring, Virchow-Klinikum	1 6305,14964 6319,14821 6252,14812
+Südring, Virchow-Klinikum	1 6252,14812 6231,14952
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2918,7 +2921,7 @@ Schwingtor	BNP:3:-252:trailer=10 14146,12921
 Schwingtor	BNP:5:-2:trailer=10 17490,13133
 Schwingtor	BNP:5:-94:trailer=10 17684,13133
 Schwingtor	BNP:5:-86:trailer=10 935,4814
-Schranke	BNP:3:-36:trailer=10 8623,13049
+Schranke	BNP:3:-37:trailer=10 8623,13049
 Drängelgitter	BNP:3:-216:trailer=10 18788,27989
 Schranke	BNP:3:-236:trailer=10 -2160,17921
 Schranke	BNP:3:29:trailer=10 -2278,17805
@@ -3279,6 +3282,9 @@ Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
 Drängelgitter	BNP:3:-23:trailer=10 22085,5111
+Uferweg am Teltowkanal	2::inwork 4053,2300 4209,2641 4247,2652
+Uferweg am Teltowkanal	2::inwork 4209,2641 4220,2664
+Virchow-Klinikum, Südstraße: Bauarbeiten, Straße komplett gesperrt, auch für Fußgänger	2::inwork 6231,14952 6159,14921 6104,14937
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
@@ -3324,7 +3330,7 @@ Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesper
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
-Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
+Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
 Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9178,556

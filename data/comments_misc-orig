@@ -95,10 +95,10 @@ Sesselmannweg: Kette	CS 3264,9261 3332,9181
 Apeldorner Weg: kein Straßenname ausgeschildert; Weg verläuft westl. direkt an der BAB (104)	CS 3822,8718 3858,8786 3952,8980
 #: XXX_prog: BS - should be superseded by a superiour BNP-like implementation
 (Wallenbergstr. - Rudolstätter Str.): Bordsteine	CP; * 3992,8487 4139,8485
-Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8377,13463 8371,13399 8434,13310 8550,13150 8603,13076 8623,13049 8632,13037
-Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8630,13172 8632,13133 8603,13076
-Bonhoefferweg: Gelände der Charité	CS 8538,13388 8487,13351 8434,13310
-Sauerbruchweg: Gelände der Charité	CS 8487,13351 8630,13172
+Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8377,13463 8371,13399 8434,13310 8550,13150 8595,13085 8623,13049 8632,13037
+Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8632,13155 8634,13125 8595,13085
+Bonhoefferweg: Gelände der Charité	CS 8538,13388 8490,13354 8434,13310
+Sauerbruchweg: Gelände der Charité	CS 8490,13354 8632,13155
 (Luisenstr. - Hufelandweg): Gelände der Charité	CS 8665,13353 8582,13355
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
 (Guerickestr. - Einsteinufer): Privatstraße	CS 4593,12322 4618,12340 4658,12450
@@ -677,7 +677,7 @@ Tordurchfahrt	CS 9341,6163 9367,6160
 # REMOVED (-> cul-de-sac) --- An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
 #: XXX_indoor: sollte das nach handicap_s wandern bzw. durch die Bordstein-Implementation behandelt werden?
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
-Uferweg am Plötzensee	CS 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
+Uferweg am Plötzensee	CS 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 # REMOVED (komischer Kommentar) --- (Wintgensstr. - General-Pape-Str.): eine mögliche Route über das ehem. Werksgelände	CS 7950,7840 8140,7845 8140,7906 8207,7909
 (Im Schäferfeld - Wetzlarer Str.): am Baggersee entlang	CS -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
 #: by: Tom Urig
@@ -1608,7 +1608,7 @@ beide Geh/Radwege hinter der Einmündung Neukirchstr. können Richtung Am Feuchten
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2023-03-07
+#: last_checked: 2023-03-12
 #: check_frequency: 45d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 
@@ -1768,7 +1768,7 @@ Am Werksgarten: nicht ausgeschildert	CP2; 22805,5179 22803,5241
 Schilder VoltAir-Parkhaus und Zugang Dircksenstraße 04	CP2; 11240,12368 11344,12410
 # 
 #: XXX Wird hier noch ausgeschildert?
-#: last_checked: 2023-03-07
+#: last_checked: 2023-03-12
 Forum an der Museumsinsel: nicht ausgeschildert	CS 9650,13074 9682,13167 9633,13192 9602,13081
 # 
 #: by: mapillary (kein Scherz)

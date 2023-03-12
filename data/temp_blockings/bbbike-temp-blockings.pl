@@ -8348,7 +8348,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005513',
        data  => <<EOF,
-	1::inwork 6334,14756 5972,14820 5848,14977 5753,15096
+	1::inwork 6334,14756 6213,14777 5972,14820 5848,14977 5736,15098
 EOF
      },
      { from  => 1179648093, # 2007-05-20 10:01
@@ -30312,14 +30312,18 @@ EOF
 	q4::inwork 6743,9678 6649,9703
 EOF
      },
-     { from  => undef, # 
-       until => 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt',
+     { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
+       until => $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: next_check_id: WRIEZENERPARK-2019 --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
-	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
-	2::inwork 13172,11651 13202,11666
+#: next_check_id: WRIEZENERPARK-2019
+#: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
+#: last_checked: 2023-03-12
+#: next_check: 2023-09-01
+	2::inwork 13172,11651 13239,11567 13261,11572
+# REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
+# REMOVED ---	2::inwork 13172,11651 13202,11666
 EOF
      },
      { from  => $isodate2epoch->("2021-01-07 17:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
@@ -31165,23 +31169,19 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1678632867, # undef, # XXX
        text  => 'Virchow-Klinikum: Durchfahrt wegen Corona-Beschränkungen nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2020
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
-#: XXX während der Corona-Krise vvv
-#: last_checked: 2022-11-08 vvv
-#: check_frequency: 120d vvv
-	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
-	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
+# REMOVED (kein Wachschutz mehr) --- #: XXX während der Corona-Krise vvv --- #: last_checked: 2022-11-08 vvv --- #: check_frequency: 120d vvv
+	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6443,15100 6524,15113 6545,15116
+	2::temp 6104,14937 6030,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
 	2::temp 5998,15112 5944,15172
 	2::temp 6431,15098 6429,15115 6395,15109 6380,15210
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => 1590346682, # REMOVED -> Radfahrer nicht betroffen --- 1590271200, # 2020-05-24 00:00
@@ -32286,23 +32286,19 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1678632465, # undef, # XXX
        text  => 'Charité-Gelände: Durchfahrt wegen Corona-Beschränkungen nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: CORONA-2020
-#: XXX während der Corona-Krise vvv
-#: last_checked: 2023-02-12 vvv
-#: check_frequency: 120d vvv
-	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
+# REMOVED (kein Wachschutz mehr) --- #: XXX während der Corona-Krise vvv --- #: last_checked: 2023-02-12 vvv --- #: check_frequency: 120d vvv
+	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8490,13354
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
-	2::temp 8665,13353 8582,13355 8618,13306 8630,13172 8487,13351 8434,13310
-	2::temp 8630,13172 8632,13133 8603,13076 8623,13049
-	2::temp 8603,13076 8550,13150 8434,13310 8371,13399
+	2::temp 8665,13353 8582,13355 8618,13306 8632,13155 8490,13354 8434,13310
+	2::temp 8632,13155 8634,13125 8595,13085 8623,13049
+	2::temp 8595,13085 8550,13150 8434,13310 8371,13399
 	2::temp 8538,13388 8582,13355 8595,13375 8587,13436
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => 1607814000, # 2020-12-13 00:00
@@ -36361,8 +36357,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-07
-#: check_frequency: 7d
+#: last_checked: 2023-03-12
+#: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 EOF
      },
@@ -36708,7 +36704,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-02-19 (bahninfo-forum) vvv
+#: last_checked: 2023-03-12 vvv
 #: next_check: 2023-03-13 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -36871,7 +36867,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-02-27
+#: last_checked: 2023-03-12
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37767,9 +37763,12 @@ EOF
        text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg ist gesperrt, von Februar 2023 bis voraussichtlich Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: TELTOWKANALUFERWEG-2023
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
+#: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch: way id="46907541" version="11"
+#: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4053,2300 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
 EOF
@@ -37931,11 +37930,12 @@ EOF
      },
      { from  => 1678348800, # 2023-03-09 09:00
        until => 1680299999, # 2023-03-31 23:59
-       text  => 'Heidekampweg: zwischen Sonnenallee und Schraderstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis Bis Ende März 2023',
+       text  => 'Heidekampweg: zwischen Sonnenallee und Schraderstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende März 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bauarbeiten-staugefahr-in-baumschulenweg-id211581
+#: source_id: viz2021:13.480741,52.461219,13.03.2023,09:00 (bis 31.03.2023)
 #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
 #: next_check: 2023-03-31
 	q4::inwork 15725,6235 15740,6261 15715,6394
@@ -37947,6 +37947,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
+#: source_id: viz2021:13.192978,52.560193,13.03.2023,07:00 (bis 14.07.2023)
 	q4::inwork -3845,16921 -3975,16905 -4099,16925 -4152,16942 -4259,16974 -4318,16979
 EOF
      },
@@ -37958,6 +37959,26 @@ EOF
 #: also_indoor: traffic (none)
 #: note: Ende durch Halteverbotsschilder festgestellt
 	q4::inwork 6567,2194 6746,2232
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Virchow-Klinikum, Eingang Oststraße: nur Mo-Fr offen, im Winter zwischen 05:00 und 17:00 Uhr, im Sommer bis 20:00 Uhr',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: tempex: summer T17:00-T05:00, winter T20:00-T05:00, sa, su, holiday vvv
+	2::temp 6470,14990 6504,14969
+#: tempex ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Virchow-Klinikum, Eingang Ost-West-Straße: vermutlich nur Mo-Fr tagsüber offen',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	2::temp 6331,15408 6348,15423
 EOF
      },
     );
