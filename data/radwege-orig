@@ -1842,7 +1842,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-03-13 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1867,7 +1867,7 @@ Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 Busspur ist immer gültig	RW5; 10431,12709 10352,12627 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-03-13 vvv
 #: check_frequency: 14d vvv
 	RW3; 10176,12506 10152,12491
 Bushaltestelle	RW5; 10152,12491 10063,12438
@@ -2582,7 +2582,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-02-25 vvv
+#: last_checked: 2023-03-13 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -2878,7 +2878,7 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 	RW4;RW3 8005,11627 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517
 	RW4;RW4 7356,11517 7293,11519 7171,11510
 	RW4; 7171,11510 6987,11487 6915,11492
-Radspur zwischen Fahrspuren	RW4; 6915,11492 6825,11486
+Fahrradschleuse	RW4; 6915,11492 6825,11486
 	RW3; 6825,11486 6915,11492 6987,11487 7171,11510
 	RW6;RW6 8553,11638 8481,11638 8387,11637
 	RW6;RW6 8490,11562 8481,11638 8456,11763
@@ -5314,6 +5314,7 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 7279,16057 7294,16068 7474,16086
 #: note: Richard-Wagner-Str. Richtung Süden
 Grünbeschichtung, relativ breit	RW3; 3761,12298 3767,12217 3778,12104 3786,12014 3801,11858
+#: note: Radweg hört noch einige Meter vor der Bismarckstr. auf
 	RW4; 3801,11858 3837,11760 3843,11659
 #: note: Richard-Wagner-Str. Richtung Norden
 Grünbeschichtung, relativ breit	RW3; 3843,11659 3837,11760 3801,11858
@@ -5868,15 +5869,15 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2023-01-01 (mapillary) vvv
+#: last_checked: 2023-03-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
 #: osm_watch: way id="153370345" version="16"
 #: osm_watch: way id="153373877" version="23"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
-#: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
-Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
+#: note: die Rechtsabbieger werden an der Ampel vorbei geführt
+Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
 # 
 #: note: Stülerstr./Budapester Str. Richtung Tiergarten
 # REMOVED --- #: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
@@ -6111,7 +6112,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 	RW4; 9141,12320 9131,12438
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-03-13 vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
@@ -7772,7 +7773,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8524
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8489
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/strasse-wird-zwischen-joachimsthaler-und-wilmersdorfer-neu-aufgeteilt_a372767
-#: last_checked: 2023-02-26 vvv
+#: last_checked: 2023-03-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten

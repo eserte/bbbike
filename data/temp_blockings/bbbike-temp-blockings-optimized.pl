@@ -2615,7 +2615,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-07
+#: last_checked: 2023-03-12
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -3420,7 +3420,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2022-11-26
+#: last_checked: 2023-03-13
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -4110,7 +4110,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-13
 #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -4148,7 +4148,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-01-26
+#: last_checked: 2023-03-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -4288,7 +4288,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-03-12 vvv
-#: next_check: 2023-03-13 vvv
+#: next_check: 2023-03-28 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -4305,9 +4305,9 @@ Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 ',
          'from' => 1667499233,
          'id' => 3643,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 13.3.2023',
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 28.3.2023',
          'type' => 'handicap',
-         'until' => 1678723200
+         'until' => 1680015600
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
@@ -4343,9 +4343,11 @@ Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-02-12 (mapillary) vvv
+#: last_checked: 2023-03-13 (indoor) vvv
+#: check_frequency: 7d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -4816,8 +4818,9 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/geplatzes-aquarium-mehr-als-500-bruchstuecke-wurden-entfernt-id208661 (Heiligegeistgasse bis Mitte März 2023 freigeräumt)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: priority: #C
-#: last_checked: 2023-02-24
-#: next_check: 2023-03-15
+#: last_checked: 2023-03-13
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10352,12627 10344,12641 10309,12700
 ',
          'from' => undef,
@@ -5182,6 +5185,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/schlosspark-buch-kein-eingang-wegen-bauarbeiten-id210739
+#: by: https://www.berliner-woche.de/buch/c-bauen/schlosspark-buch-eingang-alt-buch-gesperrt_a375113
 	2::inwork 16558,25688 16583,25667 16593,25640
 ',
          'from' => 1678575600,
@@ -5193,25 +5197,31 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        {
          'data' => '#: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bauarbeiten-staugefahr-in-baumschulenweg-id211581
+#: by: https://nitter.cz/VIZ_Berlin/status/1635178881606103040#m
+#: by: https://nitter.net/pic/orig/media%2FFq3V4joXgAEsbE1.jpg
 #: source_id: viz2021:13.480741,52.461219,13.03.2023,09:00 (bis 31.03.2023)
-#: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
+# REMOVED (zu kurz) --- #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
 #: next_check: 2023-03-31
-	q4::inwork 15725,6235 15740,6261 15715,6394
+	q4::inwork 15725,6235 15740,6261
+# REMOVED (hier nicht) ---	q4::inwork 15740,6261 15715,6394
 ',
          'from' => 1678348800,
          'id' => 3740,
-         'text' => 'Heidekampweg: zwischen Sonnenallee und Schraderstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende März 2023',
+         'text' => 'Heidekampweg: Fahrbahn an der Sonnenallee gesperrt, bis Ende März 2023',
          'type' => 'handicap',
          'until' => 1680299999
        },
        {
          'data' => '#: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
+#: by: https://nitter.cz/VIZ_Berlin/status/1635151200550281217#m
+#: by: https://nitter.net/pic/orig/media%2FFq3YpLQX0AsPZPF.jpg (keine gesonderte Regelung für Radfahrer erkennbar)
 #: source_id: viz2021:13.192978,52.560193,13.03.2023,07:00 (bis 14.07.2023)
-	q4::inwork -3845,16921 -3975,16905 -4099,16925 -4152,16942 -4259,16974 -4318,16979
+	q4::inwork -3845,16921 -3975,16905 -4099,16925 -4152,16942 -4259,16974
+# REMOVED (hier nicht) ---	q4::inwork -4259,16974 -4318,16979
 ',
          'from' => 1678481148,
          'id' => 3741,
-         'text' => 'Hubertusstr.: Bauarbeiten zwischen Kaiserstr. und Pausiner Str., evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2023',
+         'text' => 'Hubertusstr.: Bauarbeiten zwischen Kaiserstr. und Pausiner Str., Fahrbahn ist gesperrt, bis Mitte Juli 2023',
          'type' => 'handicap',
          'until' => 1689458399
        },
@@ -5247,6 +5257,26 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'text' => 'Virchow-Klinikum, Eingang Ost-West-Straße: vermutlich nur Mo-Fr tagsüber offen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: note: Endedatum anhand Halteverbotsschilder
+	q4::inwork; 4032,12167 4101,12356
+',
+         'from' => 1678738906,
+         'id' => 3745,
+         'text' => 'Warburgzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 31.7.2023',
+         'type' => 'handicap',
+         'until' => 1690815600
+       },
+       {
+         'data' => '#: note: by rbb
+	q4::inwork 5895,9083 5879,9237
+',
+         'from' => 1678741421,
+         'id' => 3746,
+         'text' => 'Bamberger Str.: zwischen Berliner Str. und Stübbenstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 31.03.2023',
+         'type' => 'handicap',
+         'until' => 1680300000
        }
      
 );

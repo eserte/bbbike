@@ -7,6 +7,15 @@
 # 
 #: temporary vvv
 # 
+#: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
+#: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
+#: note: Länge der Gegenverkehrstrecke ist ca. 80m
+#: last_checked: 2023-03-13
+#: check_frequency: 90d
+#: next_check: 2023-12-31
+#: valid: -20231231
+Bellevuestr.: Gegenverkehrsregelung	X::inwork 8326,11613
+# 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm
 #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023)
@@ -40,8 +49,8 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: last_checked ^^^
 # 
 #: next_check_id: ORANIENBURGERTORTRAM-2022
-#: next_check: 2023-03-13 vvv
-#: valid: -20230313 vvv
+#: next_check: 2023-03-28 vvv
+#: valid: -20230328 vvv
 #: XXX schon seit mehreren Tagen ausgeschaltet
 #: last_checked: 2023-03-12
 #: check_frequency: 30d
@@ -3180,7 +3189,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-03-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3656,7 +3665,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="14"
 #: note: Anforderungsampel
-#: last_checked: 2023-02-12 (krickstadt)
+#: last_checked: 2023-03-08 (krickstadt)
 #: check_frequency: 120d
 	F::inwork 17747,5452
 # 
