@@ -1840,7 +1840,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+# REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
+	2::temp 5542,11075 5652,11004 5613,10963 5488,10978
+# REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
+	2::temp 5652,11004 5716,10978
+# REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
+Joachimsthaler Str.	1::temp 5488,10978 5542,11075
+# REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5565,11147
+# REMOVED (diesmal nicht) ---	3 5565,11147 5542,11075 5600,11114
+',
+         'from' => 1678791600,
+         'id' => 2769,
+         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 15. März 2023, 12:00 Uhr bis zum 17. März 2023, 12:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1679050800
+       },
        undef,
        undef,
        undef,
@@ -1940,7 +1956,44 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.)
+#: source_id: 2147341022
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
+#: priority: #A
+#: next_check: 2023-03-15
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::temp -1934,6804 -1854,6898
+',
+         'from' => 1678748400,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. März 2023 zwischen 09:15 und 10:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1678871700
+       },
        undef,
        {
          'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
@@ -1984,8 +2037,47 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+	2::temp 8044,12989 8110,13042 8111,13029 8116,12938 8041,12866 8025,12879
+	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8252,12757 8206,12757 8120,12756 8030,12824
+# REMOVED ---	2::temp 8030,12824 8114,12839
+	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
+	2::temp 8116,12938 8115,12912 8114,12839 8120,12756 8122,12603 8119,12414
+	2::temp 8464,12919 8498,12870
+	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593
+	2::temp 8111,13029 8132,13034 8137,13024 8044,12989 7966,12913
+	2::temp 8050,12893
+# REMOFED ---	2::temp 8168,12848 8204,12816 8206,12757
+	2::temp 8206,12757 8206,12734 8207,12606
+	2::temp 8207,12606 8306,12609 8309,12758
+	2::temp 8030,12857 8021,12832 7930,12912
+	2::temp 8207,12606 8122,12603 7945,12592 7875,12363
+	2::temp 8369,12609 8373,12416
+	2::temp 7945,12592 7851,12590 7741,12586 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8445,12755 8415,12749 8309,12758 8304,12938
+',
+         'from' => 1678860000,
+         'id' => 2872,
+         'source_id' => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+         'text' => 'Straßen rund um das Bundeskanzleramt: wegen eines Staatsbesuchs Sperrungen möglich, am 16. März 2023 von 07:00 Uhr bis 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1678978800
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neuer Staatsbesuch)
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
+	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
+	2::temp 6694,12627 7031,12320
+	3 7183,12372 7122,12384 7051,12426 6859,12567 6808,12604
+	3 6808,12604 6859,12567 7051,12426 7122,12384 7183,12372
+',
+         'from' => 1678870800,
+         'id' => 2873,
+         'source_id' => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+         'text' => 'Straßen am Schloss Bellevue (inklusive Großer Stern): wegen eines Staatsbesuchs Sperrungen möglich, 16. März 2023 von 10:00 bis 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1678993200
+       },
        undef,
        undef,
        undef,
@@ -3731,7 +3823,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-03-05 vvv
+#: last_checked: 2023-03-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-21 vvv
 # REMOVED --- #: next_check: 2023-05-25 vvv
@@ -3993,7 +4085,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-14
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -4276,7 +4368,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -4588,7 +4680,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-14
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -4914,9 +5006,9 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'from' => 1674460800,
          'id' => 3717,
          'source_id' => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
-         'text' => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 15.03.2023 17:00 ',
+         'text' => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 07.04.2023 17:00 ',
          'type' => 'handicap',
-         'until' => 1678896000
+         'until' => 1680879600
        },
        {
          'data' => '#: note: Ausschilderung: Privatgrundstück/Parken im Hof verboten (nur Südseite)/Durchgang zur Pohlstraße (bzw. Kurfürstenstraße) gestattet/22:00-07:00 Uhr geschlossen
@@ -5172,7 +5264,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        {
          'data' => '#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
 #: XXX Evtl. ist der Asphalt nach den Bauarbeiten besser?
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-14
 #: next_check: 2023-04-14
 	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
 ',
@@ -5200,8 +5292,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
 #: by: https://nitter.cz/VIZ_Berlin/status/1635178881606103040#m
 #: by: https://nitter.net/pic/orig/media%2FFq3V4joXgAEsbE1.jpg
 #: source_id: viz2021:13.480741,52.461219,13.03.2023,09:00 (bis 31.03.2023)
-# REMOVED (zu kurz) --- #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
-#: next_check: 2023-03-31
+# REMOVED (zu kurz) --- #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)? --- #: next_check: 2023-03-31
 	q4::inwork 15725,6235 15740,6261
 # REMOVED (hier nicht) ---	q4::inwork 15740,6261 15715,6394
 ',
@@ -5277,6 +5368,28 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'text' => 'Bamberger Str.: zwischen Berliner Str. und Stübbenstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 31.03.2023',
          'type' => 'handicap',
          'until' => 1680300000
+       },
+       {
+         'data' => '#: last_checked: 2023-03-12 (mapillary)
+	2::inwork 13078,21754 13031,21538
+',
+         'from' => 1678819239,
+         'id' => 3747,
+         'text' => 'Pankeweg: möglicherweise im Bereich zukünftige Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
+         'type' => 'gesperrt',
+         'until' => 1688162400
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/03/staatsbesuch/
+#: note: Staatsbesuch am Mahnmal "Gleis 17"
+	2::temp 731,8867 920,8895 870,8939 884,8954 901,8969 936,8933 1037,8884
+	2::temp 918,8795 920,8895 936,8933 1141,9078
+',
+         'from' => 1678849200,
+         'id' => 3748,
+         'text' => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 16. März 2023, von 04:00 Uhr bis 14:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1678971600
        }
      
 );

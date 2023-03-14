@@ -258,7 +258,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="207757723" version="6"
-#: last_checked: 2023-01-13
+#: last_checked: 2023-03-14
 #: check_frequency: 60d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -3544,7 +3544,7 @@ Uferweg am Teltowkanal	2::inwork 4209,2641 4220,2664
 Virchow-Klinikum, Südstraße: Bauarbeiten, Straße komplett gesperrt, auch für Fußgänger	2::inwork 6231,14952 6159,14921 6104,14937
 # 
 #: osm_watch: way id="770592585" version="5"
-#: last_checked: 2023-02-19
+#: last_checked: 2023-03-12 (mapillary)
 #: check_frequency: 120d
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 # 
@@ -3674,7 +3674,7 @@ Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
 #: osm_watch: way id="26322024" version="22"
 #: priority: #C
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-14
 #: check_frequency: 60d
 (Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 # 
@@ -3683,6 +3683,7 @@ Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php
 #: XXX was ist mit der Erweiterung im nördlichen Bereich? entfällt die dortige Fahrbahn dauerhaft?
+#: osm_watch: way id="20554168" version="20"
 #: last_checked: 2022-10-16
 #: check_frequency: 150d
 #: next_check: 2023-06-30
@@ -3882,7 +3883,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: osm_watch: way id="43205335" version="3"
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023)
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2022-10-16 (mapillary)
+#: last_checked: 2023-03-12 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
@@ -3938,7 +3939,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: CORONA-2020 --- #: XXX während der Corona-Krise
-#: osm_watch: note 2832326 6
+#: osm_watch: note 2832326 8
 #: last_checked: 2023-03-12
 # REMOVED --- #: check_frequency: 90d
 Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
@@ -4096,14 +4097,14 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-03-11
+#: last_checked: 2023-03-14
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-03-06
+#: last_checked: 2023-03-14
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4314,7 +4315,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 # 
 #: next_check_id: DRESDNERBAHN-2021
 #: XXX laut Baustellenschild Erneuerung der EÜ Attilastr. bis 2023
-#: osm_watch: way id="588431071" version="6"
+#: osm_watch: way id="588431071" version="7"
 #: osm_watch: way id="696227207" version="4"
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023)

@@ -25521,16 +25521,20 @@ EOF
 	3 5488,10978 5475,10808 5471,10719
 EOF
      },
-     { from  => 1455447600, # 2016-02-14 12:00
-       until => 1455642000, # 2016-02-16 18:00
-       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, von 15.02.2016 12:00 Uhr bis 16.02.2016 18:00 Uhr',
+     { from  => $isodate2epoch->("2023-03-14 12:00:00"), # 1455447600, # 2016-02-14 12:00
+       until => $isodate2epoch->("2023-03-17 12:00:00"), # 1455642000, # 2016-02-16 18:00
+       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 15. März 2023, 12:00 Uhr bis zum 17. März 2023, 12:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 5459,11135 5542,11075 5652,11004 5613,10963 5488,10978 5475,10808
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+# REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
+	2::temp 5542,11075 5652,11004 5613,10963 5488,10978
+# REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
 	2::temp 5652,11004 5716,10978
-	2::temp 5373,10981 5488,10978 5542,11075
-	3 5600,11114 5542,11075 5565,11147
-	3 5565,11147 5542,11075 5600,11114
+# REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
+Joachimsthaler Str.	1::temp 5488,10978 5542,11075
+# REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5565,11147
+# REMOVED (diesmal nicht) ---	3 5565,11147 5542,11075 5600,11114
 EOF
      },
      { from  => undef, # 
@@ -26318,9 +26322,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-12-20 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. Dezember 2022 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-03-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-03-15 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. März 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26332,7 +26336,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
 #: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
 #: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: note: Termine im Herbst 2022: 9./15./23./29.11, 6./13./20.12.
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.)
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
@@ -26347,7 +26351,9 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2022-12-14
+#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
+#: priority: #A
+#: next_check: 2023-03-15
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
@@ -26702,12 +26708,13 @@ EOF
 # REMOVED ---	2::inwork 14352,10874 14469,10841 14567,10814
 EOF
      },
-     { from  => 1499148000, # 2017-07-04 08:00
-       until => 1499259600, # 2017-07-05 15:00
-       text  => 'Straßen rund um das Bundeskanzleramt: wegen eines Staatsbesuchs Sperrungen möglich, 5. Juli 2017 von 8 Uhr bis 15 Uhr',
+     { from  => $isodate2epoch->("2023-03-15 07:00:00"), # 1499148000, # 2017-07-04 08:00
+       until => $isodate2epoch->("2023-03-16 16:00:00"), # 1499259600, # 2017-07-05 15:00
+       text  => 'Straßen rund um das Bundeskanzleramt: wegen eines Staatsbesuchs Sperrungen möglich, am 16. März 2023 von 07:00 Uhr bis 16:00 Uhr',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
 	2::temp 8044,12989 8110,13042 8111,13029 8116,12938 8041,12866 8025,12879
 	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8252,12757 8206,12757 8120,12756 8030,12824
 # REMOVED ---	2::temp 8030,12824 8114,12839
@@ -26726,12 +26733,13 @@ EOF
 	2::temp 7945,12592 7851,12590 7741,12586 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8445,12755 8415,12749 8309,12758 8304,12938
 EOF
      },
-     { from  => 1499148000, # 2017-07-04 08:00
-       until => 1499288400, # 2017-07-05 23:00
-       text  => 'Straßen am Schloss Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, 5. Juli 2017 von 08:00 bis 23:00',
+     { from  => $isodate2epoch->("2023-03-15 10:00:00"), # 1499148000, # 2017-07-04 08:00
+       until => $isodate2epoch->("2023-03-16 20:00:00"), # 11499288400, # 2017-07-05 23:00
+       text  => 'Straßen am Schloss Bellevue (inklusive Großer Stern): wegen eines Staatsbesuchs Sperrungen möglich, 16. März 2023 von 10:00 bis 20:00 Uhr',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neuer Staatsbesuch)
 	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
 	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
 	2::temp 6694,12627 7031,12320
@@ -35328,7 +35336,7 @@ EOF
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-03-05 vvv
+#: last_checked: 2023-03-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-21 vvv
 # REMOVED --- #: next_check: 2023-05-25 vvv
@@ -36007,7 +36015,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-14
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -36377,6 +36385,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
        data  => <<EOF,
+#: next_check_id: BAUMSCHULEN-2023
 #: by: https://berliner-abendblatt.de/2022/09/07/koepenicker-landstrasse-vollsperrung-wegen-wasserrohrbruch/
 #: by: https://berliner-abendblatt.de/2022/09/10/koepenicker-landstrasse-gesperrt-buslinien-unterbrochen/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1263481.php (Kreuzung wird komplett gesperrt; Verkehrsumstellung ab 11.11.2022, Bauarbeiten ab 14.11.2022; Dauer zwei Wochen)
@@ -36694,7 +36703,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -37158,7 +37167,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-14
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37277,7 +37286,7 @@ EOF
      },
      { from  => 1668624940, # 2022-11-16 19:55
        until => 1668690000, # 2022-11-17 14:00
-       text  => 'Havelchaussee und Kronprinzesinnenweg: Sperrung der Straßen wegen einer "forstlichen Maßnahme zur Seuchenabwehr", am 17.11.2022 von 8 bis 14 Uhr',
+       text  => 'Havelchaussee und Kronprinzessinenweg: Sperrung der Straßen wegen einer "forstlichen Maßnahme zur Seuchenabwehr", am 17.11.2022 von 8 bis 14 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/11/verkehrsvorschau-171122/',
        data  => <<EOF,
@@ -37648,8 +37657,8 @@ EOF
 EOF
      },
      { from  => 1674460800, # 2023-01-23 09:00
-       until => $isodate2epoch->("2023-03-15 17:00:00"), # 1678464000, # 2023-03-10 17:00
-       text  => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 15.03.2023 17:00 ',
+       until => $isodate2epoch->("2023-04-07 17:00:00"), # 1678464000, # 2023-03-10 17:00
+       text  => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 07.04.2023 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
        data  => <<EOF,
@@ -37917,7 +37926,7 @@ EOF
        data  => <<EOF,
 #: XXX Halteverbotsschilder gelten bis zum 14.4.2023
 #: XXX Evtl. ist der Asphalt nach den Bauarbeiten besser?
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-14
 #: next_check: 2023-04-14
 	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
 EOF
@@ -37943,8 +37952,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1635178881606103040#m
 #: by: https://nitter.net/pic/orig/media%2FFq3V4joXgAEsbE1.jpg
 #: source_id: viz2021:13.480741,52.461219,13.03.2023,09:00 (bis 31.03.2023)
-# REMOVED (zu kurz) --- #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)?
-#: next_check: 2023-03-31
+# REMOVED (zu kurz) --- #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)? --- #: next_check: 2023-03-31
 	q4::inwork 15725,6235 15740,6261
 # REMOVED (hier nicht) ---	q4::inwork 15740,6261 15715,6394
 EOF
@@ -38008,6 +38016,26 @@ EOF
        data  => <<EOF,
 #: note: by rbb
 	q4::inwork 5895,9083 5879,9237
+EOF
+     },
+     { from  => 1678819239, # 2023-03-14 19:40
+       until => 1688162400, # 2023-07-01 00:00
+       text  => 'Pankeweg: möglicherweise im Bereich zukünftige Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2023-03-12 (mapillary)
+	2::inwork 13078,21754 13031,21538
+EOF
+     },
+     { from  => 1678849200, # 2023-03-15 04:00
+       until => 1678971600, # 2023-03-16 14:00
+       text  => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 16. März 2023, von 04:00 Uhr bis 14:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/
+#: note: Staatsbesuch am Mahnmal "Gleis 17"
+	2::temp 731,8867 920,8895 870,8939 884,8954 901,8969 936,8933 1037,8884
+	2::temp 918,8795 920,8895 936,8933 1141,9078
 EOF
      },
     );
