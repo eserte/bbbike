@@ -1842,12 +1842,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+#: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
+#: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
 # REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
 	2::temp 5542,11075 5652,11004 5613,10963 5488,10978
 # REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
 	2::temp 5652,11004 5716,10978
 # REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
-Joachimsthaler Str.	1::temp 5488,10978 5542,11075
+Joachimsthaler Str.	2::temp 5488,10978 5542,11075
 # REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5565,11147
 # REMOVED (diesmal nicht) ---	3 5565,11147 5542,11075 5600,11114
 ',
@@ -1983,16 +1985,16 @@ Joachimsthaler Str.	1::temp 5488,10978 5542,11075
 #: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
 #: priority: #A
-#: next_check: 2023-03-15
+#: next_check: 2023-03-22
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
 ',
-         'from' => 1678748400,
+         'from' => 1679353200,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. März 2023 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. März 2023 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1678871700
+         'until' => 1679476500
        },
        undef,
        {
@@ -3754,7 +3756,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="4"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-14
+#: last_checked: 2023-03-15
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -4680,7 +4682,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-15
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -4908,6 +4910,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/geplatzes-aquarium-mehr-als-500-bruchstuecke-wurden-entfernt-id208661 (Heiligegeistgasse bis Mitte März 2023 freigeräumt)
+#: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: priority: #C
 #: last_checked: 2023-03-13
@@ -5390,6 +5393,16 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'text' => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 16. März 2023, von 04:00 Uhr bis 14:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1678971600
+       },
+       {
+         'data' => '	q4::inwork 3041,10732 3012,10812
+',
+         'from' => 1678805940,
+         'id' => 3749,
+         'source_id' => 'viz2021:13.2955,52.50343,15.03.2023,15:59',
+         'text' => 'Holtzendorffstr.: zwischen Rönnestr. und Friedbergstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.03.2023 15:59 bis 07.04.2023 07:00',
+         'type' => 'handicap',
+         'until' => 1680843600
        }
      
 );

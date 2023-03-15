@@ -4111,10 +4111,14 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 # 
 #: by: wosch
 #: confirmed_by: srt
-#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401)
-#: last_checked: 2023-03-11
-#: check_frequency: 60d
+#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
+#: last_checked: 2023-03-15 vvv
+#: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
+(Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED (offener Bauzaun heute, nur noch wenige Bauarbeiten) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-04-19 --- #: check_frequency: 30d --- Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994

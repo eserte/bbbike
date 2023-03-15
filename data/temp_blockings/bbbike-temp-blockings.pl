@@ -25527,12 +25527,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+#: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
+#: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
 # REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
 	2::temp 5542,11075 5652,11004 5613,10963 5488,10978
 # REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
 	2::temp 5652,11004 5716,10978
 # REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
-Joachimsthaler Str.	1::temp 5488,10978 5542,11075
+Joachimsthaler Str.	2::temp 5488,10978 5542,11075
 # REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5565,11147
 # REMOVED (diesmal nicht) ---	3 5565,11147 5542,11075 5600,11114
 EOF
@@ -26322,9 +26324,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-03-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-03-15 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. März 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-03-21 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-03-22 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. März 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26353,7 +26355,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
 #: priority: #A
-#: next_check: 2023-03-15
+#: next_check: 2023-03-22
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
@@ -35170,7 +35172,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="4"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-14
+#: last_checked: 2023-03-15
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -37167,7 +37169,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-15
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37517,6 +37519,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/geplatzes-aquarium-mehr-als-500-bruchstuecke-wurden-entfernt-id208661 (Heiligegeistgasse bis Mitte März 2023 freigeräumt)
+#: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: priority: #C
 #: last_checked: 2023-03-13
@@ -38036,6 +38039,15 @@ EOF
 #: note: Staatsbesuch am Mahnmal "Gleis 17"
 	2::temp 731,8867 920,8895 870,8939 884,8954 901,8969 936,8933 1037,8884
 	2::temp 918,8795 920,8895 936,8933 1141,9078
+EOF
+     },
+     { from  => 1678805940, # 2023-03-14 15:59
+       until => 1680843600, # 2023-04-07 07:00
+       text  => 'Holtzendorffstr.: zwischen Rönnestr. und Friedbergstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.03.2023 15:59 bis 07.04.2023 07:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.2955,52.50343,15.03.2023,15:59',
+       data  => <<EOF,
+	q4::inwork 3041,10732 3012,10812
 EOF
      },
     );

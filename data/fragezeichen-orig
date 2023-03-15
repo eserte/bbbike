@@ -77,7 +77,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-03-11
+#: last_checked: 2023-03-15
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -904,7 +904,7 @@ Gr¸nauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativf¸hrungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-15
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1949,7 +1949,7 @@ Marienpark: Straﬂe geplant	?::projected 8163,3660 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erw‰hnung)
 #: osm_watch: way id="110450333" version="17"
 #: source_id: 2147343384 (mˆglicherweise inaktiv)
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-15
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung S¸dwesten vielleicht ein B¸rgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2021,6 +2021,7 @@ Friederikestr.: entsteht hier ein Radstreifen (geplante Fertigstellung: 2019)?	?
 #: by: https://www.bz-berlin.de/berlin/reinickendorf/fahrradspur-roedernallee
 #: XXX geplante Fertigstellung war 2019
 #: source_id: 2147344459 (bis Ende August 2019, Leitungsbau, inaktiv)
+#: source_id: viz2021:13.341407,52.586168,02.02.2023,07:00 (Leitungsarbeiten, bis 21.04.2023)
 #: last_checked: 2023-02-12 (mapillary)
 #: check_frequency: 90d
 Roedernallee: Sanierung des Radweges	?::projected 6392,19142 6267,19388 6238,19450 6190,19551 6141,19649 5983,19974 5914,20112 5868,20198 5847,20243 5833,20273 5801,20339
@@ -2670,6 +2671,8 @@ Dahlemer Weg: wird hier eine Fuﬂg‰ngerampel realisiert?	?::projected 1763,1288 1
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1283925.php
 #: by: https://www.berliner-woche.de/hermsdorf/c-bauen/online-versammlung-zur-heinsestrasse_a369686
 #: by: https://www.berliner-woche.de/hermsdorf/c-bauen/die-angeregte-verkehrsberuhigung-der-heinsestrasse-ruft-zuspruch-und-viel-skepsis-hervor_a371306
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1304314.php
+#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/hermsdorf-die-zukunft-der-heinsestrasse-id212365
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
 #: osm_watch: way id="665666065" version="11"
@@ -2748,7 +2751,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv)
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaﬂname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (inaktiv) (bis 6.10.2024) (bis 31.10.2023)
-#: last_checked: 2023-03-11
+#: last_checked: 2023-03-15
 #: check_frequency: 180d
 #: next_check: 2023-10-31
 # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
@@ -2924,7 +2927,7 @@ Hermannstr.: Planung eines Radfahrstreifens, ¸ber l‰ngere Abschnitte als PBL	?::
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (2. Bauabschnitt (Fuldastr. - Innstr.): Fr¸hjahr 2023 bis Anfang 2024)
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraﬂe; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX auﬂerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
-#: last_checked: 2023-03-11
+#: last_checked: 2023-03-15
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Weserstr.: Planung einer Fahrradstraﬂe; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -4350,8 +4353,11 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED --- #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraﬂenregelung ist aber noch da) --- #: XXX Einbahnstraﬂe ist ausgeschildert, aber kaum Einschr‰nkungen in der Fahrbahnbreite --- #: last_checked: 2020-03-05 --- #: check_frequency: 7d --- # REMOVED --- #: next_check; 2020-02-14 --- Kommandantenstr.: ist hier wieder eine Einbahnstraﬂe?	? 10437,11352 10593,11120
 # 
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/sicherer-weg-zur-sternwarte_a246928
+#: by: https://viz.berlin.de/2023/03/verkehrsvorschau-160323/ (bis Ende April 2023)
+#: source_id: viz2021:13.475217,52.488111,16.03.2023,08:00 (Ampelneubau, bis 20.03.2023, im Anschluss weitere Arbeiten)
 #: last_checked: 2023-03-11
 #: check_frequency: 90d
+#: next_check: 2023-04-30
 Alt-Treptow, vor der Sternwarte: Planung einer ‹berquerungshilfe, evtl. eine Ampel	?::projected 15399,9101 15452,9079 15451,9129
 # 
 # REMOVED (bei den Bauarbeiten ist fast nichts passiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1068245.php (Markierungsarbeiten, bis voraussichtlich Mai 2021) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/bauarbeiten-in-der-neuen-krugallee_a305364 (bis Mai 2021) --- #: by: https://viz.berlin.de/2021/04/verkehrsvorschau_060421/ (bis Ende Mai 2021) --- #: by: https://viz.berlin.de/2021/03/neue-krugallee/ --- #: note: laut rbb bis 11.6.2021 --- #: source_id: 2147347048 (bis 16.7.2021) --- #: source_id: viz2021:13.479484,52.484479,30.04.2021,08:00 (bis 16.7.2021) --- #: last_checked: 2021-07-04 --- #: check_frequency: 30d --- #: next_check: 2021-07-16 --- Alt-Treptow: Umgestaltung der Kreuzung Bulgarische Allee/Neue Krugallee	?::inwork; 15591,8848 15534,8943 15452,9079
@@ -5200,7 +5206,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 #: last_checked: 2023-02-26
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
-#: last_checked: 2023-03-11
+#: last_checked: 2023-03-15
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 #: last_checked: 2023-01-09
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
@@ -6954,7 +6960,7 @@ Umbau des Dreiecks Funkturm: werden Straﬂen im Bereich der Nordkurve/des Rasthof
 Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 18922,2238 18928,2319 18928,2327
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022)
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-15
 #: check_frequency: 120d
 # REMOVED (wurde 2022 nicht realisiert) --- #: next_check: 2022-12-31
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 13860,9861
@@ -9791,7 +9797,7 @@ Wickenhagenweg: Einziehung, ‰ndert sich hier etwas?	? -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6336
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/VBQIZ07zSqRn0PJiuzww66shTLHEpcb57SIcpe1l/bHSRBehV/65-Anlagen/04/B0818SB.pdf
 #: XXX hier ist (noch?) nichts
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-15
 #: check_frequency: 90d
 Heidelberger Str./Elsenstr.: wird hier ein Dr‰ngelgitter/eine Schranke entstehen?	? 13611,9069 13664,9073 13645,9128
 # 
