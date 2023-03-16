@@ -32725,19 +32725,21 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt',
+       text  => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe im Herbst 2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe im Herbst 2023)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
 #: last_checked: 2022-10-31 (daf)
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2023-10-01
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
      },
@@ -35796,7 +35798,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-06 vvv
+#: last_checked: 2023-03-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-11-07 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -36367,7 +36369,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-16
 #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36755,6 +36757,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
 #: by: https://www.berliner-woche.de/westend/c-bauen/bvg-baut-neue-bruecke_a362501
+#: by: https://berliner-abendblatt.de/berlin-news/u2-faehrt-ab-freitag-wieder-bis-ruhleben-id212852
 #: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
 # REMOVED --- #: XXX Bis wann bleibt die Sperrung? --- #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
@@ -37033,6 +37036,7 @@ EOF
 #: by: https://nitter.net/StefanB94551270/status/1595076736168992768
 #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
 #: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
+#: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023)
 #: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023)
@@ -37463,7 +37467,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-01-09
+#: last_checked: 2023-03-16
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 EOF
@@ -37475,7 +37479,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=719774#post719774 (Geplanter Projektabschluss: 2023-12-31)
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
-#: last_checked: 2023-01-09
+#: last_checked: 2023-03-16
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -37522,7 +37526,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: priority: #C
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-16
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10352,12627 10344,12641 10309,12700
@@ -37556,7 +37560,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-02-09
+#: last_checked: 2023-03-16
 	2::inwork 12173,15040 12095,14888
 EOF
      },
@@ -37850,15 +37854,16 @@ EOF
      },
      { from  => 1678993200, # 2023-03-16 20:00
        until => 1679281200, # 2023-03-20 04:00
-       text  => 'Seidelstr.: voraussichtlich Sperrung im Bereich der U-Bahnbrücke, von 17.03.2023 20:00 bis 20.03.2023 04:00',
+       text  => 'Seidelstr.: Sperrung im Bereich der U-Bahnbrücke, auch für Fußgänger und Radfahrer, von 17.03.2023 20:00 bis 20.03.2023 04:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/die-seidelstrassenbruecke-wird-ab-17-maerz-abgerissen_a374135
-#: add_fragezeichen: Tatsächlich auch für Radfahrer und Fußgänger gesperrt?
-#: begin_check: 2023-03-16
-#: next_check: 2023-03-16
+#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/u6-in-tegel-arbeiten-an-bruecke-ueber-seidelstrasse-starten-id212679 (auch für Radfahrer+Fußgänger)
+#: by: https://nitter.net/VIZ_Berlin/status/1636346966010470403#m
+#: by: https://nitter.net/pic/orig/media%2FFrV443CXwAMqn6l.jpg
+# REMOVED --- #: add_fragezeichen: Tatsächlich auch für Radfahrer und Fußgänger gesperrt? --- #: begin_check: 2023-03-16 --- #: next_check: 2023-03-16
 	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929
 EOF
      },
@@ -37876,6 +37881,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1633742841686941697#m (Vorarbeiten)
 #: by: https://nitter.net/pic/orig/media%2FFqxhyiCXgAERnYq.jpg (Vorarbeiten)
 #: by: https://viz.berlin.de/wp-content/uploads/ULP_3_Radverkehr-1.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1304897.php
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023)
 #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?

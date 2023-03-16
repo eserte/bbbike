@@ -881,7 +881,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-16
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1842,7 +1842,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-03-13 vvv
+#: last_checked: 2023-03-16 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1867,7 +1867,7 @@ Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 Busspur ist immer gültig	RW5; 10431,12709 10352,12627 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-03-13 vvv
+#: last_checked: 2023-03-16 vvv
 #: check_frequency: 14d vvv
 	RW3; 10176,12506 10152,12491
 Bushaltestelle	RW5; 10152,12491 10063,12438
@@ -6232,8 +6232,9 @@ asphaltiert	RW1; 9660,17736 9721,17806
 	RW3; 8921,16578 8776,16268
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11693 (Antrag)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
 #: XXX wird aus der Radspur eine Busspur? vvv
-#: last_checked: 2023-02-12 vvv
+#: last_checked: 2023-03-06 (Anfrage) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
 #: osm_watch: way id="162965650" version="24"

@@ -15,7 +15,7 @@
 #: source_id: bvg2021:16#BVG316317_0
 #: note: siehe auch https://www.openstreetmap.org/note/3474648
 #: XXX evtl. ist auch die Travestr. betroffen
-#: last_checked: 2023-02-23
+#: last_checked: 2023-03-16
 #: next_check: 2023-04-24
 #: valid: -20230424
 Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -39,7 +39,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-16
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -221,11 +221,11 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="21"
+#: osm_watch: way id="549316654" version="23"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2023-02-12
+#: last_checked: 2023-03-15 (osm)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -266,7 +266,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-16
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -401,7 +401,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-03-13 vvv
+#: last_checked: 2023-03-16 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="13"
@@ -647,7 +647,7 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-03-08 (webcam)
+#: last_checked: 2023-03-15 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -655,7 +655,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-03-08 (webcam)
+#: last_checked: 2023-03-15 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -774,7 +774,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-16
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4+::inwork; 15535,12420 15457,12449
@@ -945,7 +945,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 ### Prenzlauer Berg ###
 # 
 #: osm_watch: way id="1047231711" version="2"
-#: last_checked: 2023-01-20
+#: last_checked: 2023-03-16
 #: check_frequency: 60d
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
@@ -969,7 +969,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2023-02-22 vvv
+#: last_checked: 2023-03-16 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -3673,6 +3673,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10410
 #: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/ (Neugestaltung Rathausvorplatz: Erwähnung der Radwegführung)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/bvg-will-bis-ende-oktober-arbeiten-am-u-bahnhof-rathaus-spandau-abschliessen_a325550
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/die-bvg-benoetigt-fast-zwei-jahre-fuer-den-einbau-des-neuen-aufzugs-am-u-bahnhof-altstadt-spandau_a375155 (vielleicht hängt es von den Aufzugarbeiten ab? Arbeiten bis Ende 2024)
 #: last_checked: 2022-06-26 (mapillary) vvv
 #: check_frequency: 150d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
@@ -4006,7 +4007,7 @@ Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,28
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
 #: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören?
-#: last_checked: 2023-03-01
+#: last_checked: 2023-03-16
 #: check_frequency: 45d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
