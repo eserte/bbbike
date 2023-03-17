@@ -759,7 +759,7 @@ Fuﬂg‰ngerbr¸cke Storkower Str.: Fuﬂg‰nger	q4 14481,13143 14524,13271 14530,13269
 Lemgoer Str.: Fuﬂg‰nger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
-(Allmersweg - Groﬂ-Berliner Damm): Fuﬂg‰nger, Bordsteine	q3 17789,5189 17726,5166
+(Allmersweg - Groﬂ-Berliner Damm): Fuﬂg‰nger, Bordstein	q3 17789,5189 17726,5166
 Sportfliegerstr.: vier Bodenschwellen, nicht umfahrbar	q2 18157,4742 18341,4543
 Karl-Otto-Reinsch-Str.: Fuﬂg‰nger	q1 19598,3212 19524,3286
 Brook-Taylor-Str.: Fuﬂg‰ngerzone	q1 19146,2975 19101,3028 19015,3129
@@ -2416,6 +2416,10 @@ Friedrichstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804
 (Buschallee - Falkenberger Str.): gemeinsamer Geh- und Radweg	q1 15131,16618 15144,16701
 (Kolonie M‰rkische Aue - Schwarzmeerstr./Am Lindenplatz): einige Fuﬂg‰nger, Bordstein	q2 17915,10866 17856,10879
 Bosepark: gemeinsamer Geh- und Radweg	q1 8862,6467 8823,6458
+(Weg entlang der Straﬂenbahnstrecke): Gr¸nanlage, einige Fuﬂg‰nger	q1 18836,3203 18834,3315 18833,3388 18835,3562 18851,3598
+(Straﬂenbahnstrecke - Konrad-Zuse-Str.): Gr¸nanlage, einige Fuﬂg‰nger	q1 18833,3388 18857,3418
+(Sterndamm - Waiblinger Weg): Gehweg	q3 17700,5232 17743,5260
+Waiblinger Weg: Gehweg, Bordstein	q3 17743,5260 17771,5278
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3407,6 +3411,7 @@ Falkenberger Chaussee, linker Geh/Radweg	q3::igndisp; 18521,18347 18601,18342
 Mollstr., linker Gehweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 11736,13126 11723,13139
 Hindenburgdamm, linker Gehweg	q3::igndisp; 4596,3738 4617,3706
 Greifswalder Str., linker Gehweg	q3::igndisp; 12584,14928 12563,14860
+Greifswalder Str.: linker Gehweg bis zur Naugarder Str., ggfs. absteigen	q3::igndisp; 12704,15105 12712,15176
 Buschkrugallee, linker Radweg	q1::igndisp; 14111,4181 14119,4153
 Michelangelostr., linker Gehweg	q3::igndisp; 13854,15129 13758,15009 13647,14912
 Adlergestell, linker Gehweg	q2::igndisp; 19345,4077 19472,3922

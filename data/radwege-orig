@@ -1999,7 +1999,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-03-14 vvv
+#: last_checked: 2023-03-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3987,7 +3987,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 # REMOVED --- #: source_id: bvg2021:62#BVG276479_0
 #: priority: #D vvv
 #: last_checked: 2022-11-20 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
 	RW3; 22701,3643 22714,3558 22734,3433
@@ -4063,10 +4063,10 @@ Radspur hinter den parkenden Autos	RW4; 6657,3367 6780,3497 6915,3642 6954,3703 
 Bushaltestelle mit Radspur	RW3; 6996,3762 6954,3703
 Radspur hinter den parkenden Autos	RW4; 6954,3703 6915,3642 6780,3497
 	RW3; 7012,3743 6996,3762
-Gehweg für Radfahrer frei	RW1; 21968,-15 21800,-109 21534,-262 21463,-280
+Gehweg für Radfahrer frei	RW1; 21968,-15 21800,-109 21534,-262 21466,-281
 Gehweg für Radfahrer frei	RW1; 21355,-309 21235,-354
 Gehweg für Radfahrer frei	RW1; 21235,-354 21355,-309
-Gehweg für Radfahrer frei	RW1; 21463,-280 21534,-262 21800,-109 21968,-15
+Gehweg für Radfahrer frei	RW1; 21466,-281 21534,-262 21800,-109 21968,-15
 Gehweg für Radfahrer frei	RW1; 21157,-413 21235,-354
 Gehweg für Radfahrer frei	RW1; 22145,208 22073,59 21977,-8 21968,-15
 Gehweg für Radfahrer frei	RW1; 22145,208 22166,312 22162,452
@@ -5792,10 +5792,10 @@ Verbundsteinpflaster	RW2; 12403,14663 12371,14615 12317,14535
 Grünbeschichtung	RW4; 11226,12945 11139,13008
 Fahrradschleuse	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
-asphaltiert	RW2; 17648,5338 17705,5223 17726,5166 17763,5104
+asphaltiert	RW2; 17648,5338 17700,5232 17705,5223 17726,5166 17763,5104
 asphaltiert	RW1; 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 asphaltiert	RW1; 18042,4667 17951,4785 17879,4910 17775,5083
-asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17648,5338
+asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,5338
 #: by: bahninfo-forum
 #: confirmed_by: srt
 #: by: https://twitter.com/VIZ_Berlin/status/1453634816461713410/photo/1
@@ -5934,6 +5934,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 15715,13157 15515,13134
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/baustart-in-der-pichelsdorfer-strasse_a314457 (Bauarbeiten ab 30.6.2021 zwischen Wilhelmstr. und Metzer Platz)
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/in-der-urlaubszeit-muss-mit-staus-gerechnet-werden_a315900 (Erwähnung)
 #: XXX bei den Bauarbeiten in der Pichelsdorfer Str. wird hier anscheinend eine Radspur entstehen
+#: osm_watch: way id="538512669" version="10"
 #: last_checked: 2019-07-29 (mapillary)
 #: next_check: 2022-10-21
 # REMOVED --- #: next_check: 2023-04-28
@@ -6125,11 +6126,8 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 21645,200 21669,99
 	RW6;RW6 21608,85 21596,132 21582,185
 # REMOVED (keine Schilder) ---	RW6;RW6 21515,67 21503,114 21487,173
-#: XXX jetzt Hochbauarbeiten, Gehweg und Radweg teilweise nicht mehr vorhanden
-#: osm_watch: way id="995894451" version="2"
-#: last_checked: 2022-06-01 (osm)
-#: check_frequency: 120d
-früher asphaltierter Radweg	RW0; 19894,-835 20078,-1029
+# REMOVED --- #: XXX jetzt Hochbauarbeiten, Gehweg und Radweg teilweise nicht mehr vorhanden --- #: osm_watch: way id="995894451" version="2" --- #: last_checked: 2023-03-17 --- #: check_frequency: 120d
+asphaltiert	RW1; 19894,-835 20078,-1029
 asphaltiert, teilweise mit Wurzelschäden	RW1; 20078,-1029 20388,-1373 20394,-1397
 asphaltiert	RW1; 20394,-1397 20416,-1721
 # 
@@ -7485,7 +7483,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2023-02-28 vvv
+#: last_checked: 2023-03-17 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
@@ -7933,6 +7931,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38515,52.44928,27.01.2023,11:11 (bis 06.03.2023) (inaktiv)
 #: source_id: viz2021:13.385832,52.445579,14.02.2023,08:00 (bis 15.3.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023)
+#: source_id: viz2021:13.385342,52.44754,17.03.2023,06:00 (bis 31.05.2023)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-03-11 vvv

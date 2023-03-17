@@ -29813,7 +29813,7 @@ EOF
        data  => <<EOF,
 # REMOVED (von Westen her offiziell befahrbar, von Osten her ist der Radweg nicht mehr abgesperrt) --- #: next_check_id: WAGNERREGENYALLEE-2019 --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: osm_watch: way id="206889085" version="13" --- #: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2019-11-01
-	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
+	2::inwork 18296,4850 18487,4638 18596,4517 19130,3969 19162,3935
 EOF
      },
      { from  => undef, # 
@@ -35429,6 +35429,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: mapillary
+#: osm_watch: way id="80883496" version="15"
 #: last_checked: 2022-06-04 (mapillary)
 #: check_frequency: 180d
 	2::inwork 17236,-602 17076,-644 16997,-663
@@ -36019,7 +36020,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-17
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -36758,7 +36759,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
 #: by: https://www.berliner-woche.de/westend/c-bauen/bvg-baut-neue-bruecke_a362501
 #: by: https://berliner-abendblatt.de/berlin-news/u2-faehrt-ab-freitag-wieder-bis-ruhleben-id212852
-#: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
+# REMOVED --- #: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
 # REMOVED --- #: XXX Bis wann bleibt die Sperrung? --- #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
 EOF
@@ -37019,7 +37020,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Ende Februar 2023: enger Übergang existiert, oder man benutzt die Fahrbahnverbindung zum Überqueren)',
+       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte März 2023: enger Übergang existiert)',
+       # was: ", oder man benutzt die Fahrbahnverbindung zum Überqueren"
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: TRESKOWALLEE-2022
@@ -37043,7 +37045,7 @@ EOF
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-02-28 vvv
+#: last_checked: 2023-03-17 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37372,13 +37374,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1679059355, # undef, # XXX
        text  => 'Am Betriebsbahnhof Schöneweide: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Ist der Weg wieder geöffnet?
-#: last_checked: 2022-11-27
-#: check_frequency: 90d
+# REMOVED (keine Bauarbeiten mehr gesehen) --- #: add_fragezeichen: Ist der Weg wieder geöffnet? --- #: last_checked: 2022-11-27 --- #: check_frequency: 90d
 	2::inwork 18107,5011 17822,5409
 EOF
      },
@@ -37582,7 +37582,7 @@ EOF
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-17
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
@@ -37836,8 +37836,8 @@ EOF
        text  => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-03-07
-#: check_frequency: 14d
+#: last_checked: 2023-03-17
+#: check_frequency: 21d
 	2::inwork 14810,10832 14738,10892
 EOF
      },
@@ -37864,6 +37864,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1636346966010470403#m
 #: by: https://nitter.net/pic/orig/media%2FFrV443CXwAMqn6l.jpg
 # REMOVED --- #: add_fragezeichen: Tatsächlich auch für Radfahrer und Fußgänger gesperrt? --- #: begin_check: 2023-03-16 --- #: next_check: 2023-03-16
+#: source_id: viz2021:13.3065,52.568067,17.03.2023,20:00 (bis 20.03.2023)
 	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929
 EOF
      },
@@ -38054,6 +38055,25 @@ EOF
        source_id => 'viz2021:13.2955,52.50343,15.03.2023,15:59',
        data  => <<EOF,
 	q4::inwork 3041,10732 3012,10812
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
+#: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/richtfest-am-neuen-quartier-wohnen-am-campus-der-howoge-gefeiert_a326705 (Fertigstellung November 2022 geplant)
+#: XXX Gesperrt wegen Bauarbeiten an den neuen Baufeldern nördlich der Straßenbahntrasse. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
+#: XXX Mittlerweile ist der Weg bis zum Bahnübergang offen; Schild an der Hermann-Dorner-Allee fehlt
+#: add_fragezeichen: Ist der Straßenbahnübergang mittlerweile offen?
+# REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
+# REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
+#: osm_watch: way id="1117716285" version="1"
+#: last_checked: 2023-03-17
+#: check_frequency: 30d
+	2::inwork 18818,3332 18834,3315
 EOF
      },
     );

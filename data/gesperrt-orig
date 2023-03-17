@@ -946,6 +946,7 @@ Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse): Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
+#: osm_watch: way id="25216398" version="34"
 #: check_frequency: 30d
 Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699 21605,5687
 # REMOVED (offen) --- Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21581,5670 21507,5620
@@ -1243,7 +1244,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="12"
-#: last_checked: 2022-10-05
+#: last_checked: 2023-03-17
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1694,7 +1695,7 @@ Bernau, Bahnhofstr.	1 22850,30562 22892,30426
 Elisenau - Börnicke: Privatgelände?	2 24311,26512 24412,26796
 # REMOVED --- Weg nach Altlandsberg: Privatstraße, gesperrt	2 28159,19037 28227,18962 28547,18590 28627,18536 28697,18498
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
-Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
+Vorfahrt Flughafen Schönefeld	1 18419,-1418 18429,-1443 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
 Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
 Mittelstr. B179	1 18368,-1337 18419,-1418
 Mittelstr. B179	1 18293,-1472 18279,-1438 18368,-1337
@@ -2275,9 +2276,10 @@ Lindenstr.: Straßenbahnhaltestelle	3nocross 21974,5208 22023,5160 22033,5148 220
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16525,17253 16578,17285 16837,17440
-Groß-Berliner Damm: Mittelstreifen	3nocross 18930,3703 18884,3752 18856,3783 18826,3816
-Groß-Berliner Damm: Mittelstreifen	3nocross 18826,3816 18779,3866 18739,3909
+Groß-Berliner Damm: Straßenbahntrasse	3nocross 18930,3703 18884,3752 18856,3783 18826,3816
+Groß-Berliner Damm: Straßenbahntrasse	3nocross 18826,3816 18779,3866 18739,3909
 Groß-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
+Sterndamm/Groß-Berliner Damm: Straßenbahntrasse	3nocross 17648,5338 17700,5232 17705,5223 17726,5166 17763,5104
 # REMOVED (-> gesperrt_car-orig) --- #: next_check_id: GROSSBERLINERDAMM-2020 --- #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20200831/ --- #: source_id: viz2021:13.511217,52.449474,28.01.2021,07:00 (Gleisbauarbeiten) --- #: confirmed_by: srt --- #: XXX hier wird ein Fußgängerübergang erstellt --- #: last_checked: 2021-10-02 --- #: next_check: 2021-10-31 --- Groß-Berliner Damm: Straßenbahntrasse	3nocross 17879,4910 17951,4785 18042,4667
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6230,13532 6230,13596
 Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross 13476,11174 13493,11217 13541,11355
@@ -2391,10 +2393,14 @@ tragen (36 Stufen)	0:45 18687,4649
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: next_check: 2022-12-01 vvv
+#: last_checked: 2022-12-23 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2025-12-31 vvv
 tragen (2x15 Stufen) oder Aufzug	0:35 9209,417
 tragen (3x12 Stufen) oder Aufzug	0:35 9249,421
 #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 tragen (28 Stufen)	0:30 6138,12877
 Schranke	BNP:3::trailer=10 20480,5445
@@ -3461,12 +3467,11 @@ Barriere	BNP:5 4708,21235
 offenes Tor	BNP:3 12592,9249
 #: by: mapillary
 Drängelgitter	BNP:3::trailer=10 1035,14996
-#: next_check_id: BUSINESSPARKBERLIN-2020
-#: osm_watch: node id="8176571994" version="1"
-#: add_fragezeichen: existiert die Schranke noch?
-#: last_checked: 2022-06-11 (mapillary)
-#: check_frequency: 180d
-Schranke, umständlich zu umfahren	BNP:5::trailer=15 19608,-1953
+# 
+# REMOVED (Schranke existiert noch, ist aber kürzer (seit 2022 10 rot-weiße Felder, 2020 noch 16 Felder), so dass man gut vorbeikommt) --- #: next_check_id: BUSINESSPARKBERLIN-2020 --- #: osm_watch: node id="8176571994" version="1" --- #: add_fragezeichen: existiert die Schranke noch? --- #: last_checked: 2023-03-17 --- #: check_frequency: 180d
+#: historical_note: Schranke, umständlich zu umfahren, BNP:5::trailer=15
+Schranke	BNP:0::trailer=3 19608,-1953
+# 
 Schranke	BNP:2::trailer=5 19617,6208
 Schranke	BNP:5::trailer=15 22855,4348
 Drängelgitter	BNP:3::trailer=10 32295,6272
@@ -3529,6 +3534,14 @@ Drängelgitter	BNP:3::trailer=10 22085,5111
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung)
+#: last_checked: 2023-03-17 vvv
+Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315
+Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598
+(Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418
+#: last_checked ^^^
+# 
 #: next_check_id: TELTOWKANALUFERWEG-2023
 #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
 #: next_check: 2023-08-01 vvv
@@ -3575,7 +3588,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-17
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3674,7 +3687,7 @@ Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
 #: osm_watch: way id="26322024" version="22"
 #: priority: #C
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-17
 #: check_frequency: 60d
 (Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 # 
@@ -3717,7 +3730,7 @@ Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 1333
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/bebauungsplan-fuer-grundschule_a365015
 #: osm_watch: way id="1086484458" version="2"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2023-02-11
+#: last_checked: 2023-03-17
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -3843,7 +3856,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2023-02-11
+#: last_checked: 2023-03-17
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3967,7 +3980,7 @@ Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fahrstuhl-in-johannisthal-erst-ab-2024-nutzbar_a368423
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2023-03-08 (krickstadt) vvv
+#: last_checked: 2023-03-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-07-01 vvv
 Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
@@ -4035,19 +4048,6 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: check_frequency: 360d
 #: next_check: 2025-12-31
 Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
-# 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
-#: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
-#: by: https://www.berliner-woche.de/adlershof/c-bauen/richtfest-am-neuen-quartier-wohnen-am-campus-der-howoge-gefeiert_a326705 (Fertigstellung November 2022 geplant)
-#: XXX Gesperrt wegen Bauarbeiten an den neuen Baufeldern nördlich der Straßenbahntrasse. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
-#: XXX Mittlerweile ist der Weg bis zum Bahnübergang offen; Schild an der Hermann-Dorner-Allee fehlt
-#: add_fragezeichen: Ist der Straßenbahnübergang mittlerweile offen?
-# REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
-# REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
-#: osm_watch: way id="1117716285" version="1"
-#: last_checked: 2023-01-14
-#: check_frequency: 30d
-Alexander-von-Humboldt-Weg: Straßenbahnübergang gesperrt	2::inwork 18818,3332 18829,3321
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
 # 
@@ -4150,8 +4150,8 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-02-25
-#: check_frequency: 60d
+#: last_checked: 2023-03-15 (architektur-urbanistik)
+#: check_frequency: 45d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
@@ -4221,30 +4221,30 @@ Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: check_frequency: 60d vvv
+#: osm_watch: way id="719023971" version="10"
+#: last_checked: 2023-03-17
+Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: osm_watch: way id="719023970" version="11"
-#: last_checked: 2023-03-08 (mapillary)
+#: last_checked: 2023-03-17
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: note: laut osm offen, stimmt aber nicht
 #: osm_watch: way id="719023969" version="14"
-#: last_checked: 2023-01-15
+#: last_checked: 2023-03-17
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
-#: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So)
+#: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr)
 #: osm_watch: way id="944115137" version="9"
-#: last_checked: 2023-01-15
+#: last_checked: 2023-03-17
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
-#: osm_watch: way id="719023971" version="10"
-#: last_checked: 2023-03-08 (mapillary)
-Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
 #: check_frequency ^^^
 #: XXX ^^^
 #: XXX Wird der Weg noch hergerichtet oder endgültig zurückgebaut?
 #: osm_watch: way id="152046369" version="13"
-#: last_checked: 2023-01-15
+#: last_checked: 2023-03-17
 #: check_frequency: 60d
 (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
 # 
@@ -4422,7 +4422,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: last_checked: 2023-03-08 (krickstadt) vvv
+#: last_checked: 2023-03-17 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="1085382250" version="3"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
@@ -4486,6 +4486,7 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="496270260" version="7" brb
 # REMOVED (wurde gelöscht) --- #: osm_watch: node id="3453536641" version="5" brb
 # REMOVED (siehe osm_watch in fragezeichen) --- #: osm_watch: way id="733725947" version="7" brb
+#: osm_watch: way id="8050280" version="13"
 #: last_checked: 2022-05-08
 #: check_frequency: 120d
 Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -12754,-2154
@@ -4685,7 +4686,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 # REMOVED (möglicherweise offen) --- IGA 2017-Gelände: Wege gesperrt	2 22783,14034 22987,13989
 # REMOVED (wieder offen) --- IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
 # REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
-# REMOVED --- #: XXX Rübertragen ist zur Not möglich vvv --- #: by:  --- #: last_checked: 2016-08-20 vvv --- #: check_frequency: 120d vvv --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18899,3248 18892,3256 18829,3321 18818,3332 18689,3465 --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
+# REMOVED --- #: XXX Rübertragen ist zur Not möglich vvv --- #: by:  --- #: last_checked: 2016-08-20 vvv --- #: check_frequency: 120d vvv --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18899,3248 18892,3256 18834,3315 18818,3332 18689,3465 --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 # REMOVED (by osm) --- #: osm_watch: way id="257072322" version="8" --- #: osm_watch: way id="412992929" version="3" --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # REMOVED --- #: next_check_id: EUROPACITY-2015 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straßenlandwidmung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Straßenlandwidmung, Verkehrsfreigabe voraussichtlich Mitte November 2019)
@@ -4797,7 +4798,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindes
 # 
 #: next_check_id: BER-20XX
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
-#: last_checked: 2022-04-16 (mapillary)
+#: last_checked: 2023-03-17
 # REMOVED --- #: next_check: 2020-10-31
 #: check_frequency: 180d
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb
@@ -4913,7 +4914,7 @@ tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643126#post643126
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_15_2019_final.pdf (Straßenneubenennungen)
 #: XXX Kaiserstr. -> Anna-Flügge-Straße (PLZ: 14467)
-#: XXX Schlossstraße (östlicher Verlauf) -> Anna-Zielenziger-Straße (PLZ: 14467)
+#: XXX Schlossstraße (östlicher Verlauf) -> Anna-Zielenziger-Straße (PLZ: 14467) (siehe auch handicap_l-Eintrag)
 #: XXX Schwertfegerstraße (östlicher Verlauf) -> Erika-Wolf-Straße (bereits eingetragen)
 #: osm_watch: way id="534669300" version="11" brb
 #: last_checked: 2022-12-26

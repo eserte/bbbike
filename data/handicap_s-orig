@@ -23,12 +23,17 @@ Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate)
 #: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
 #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
+#: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m
 #: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv)
 #: source_id: bvg2021:m43#BVG315520_0
-#: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen)
+#: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv)
+#: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023)
+#: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023)
 #: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs
+#: XXX Baustellenführung wurd geändert
 #: last_checked: 2023-03-06
-#: next_check: 2023-05-17
+#: next_check: 2023-03-18
+# REMOVED --- #: next_check: 2023-05-17
 #: valid: -20230517
 Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q3::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
@@ -292,7 +297,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-03-15 (architektur-urbanistik) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="39"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -489,7 +494,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: next_check_id: WANDLITZ-2021
 #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können
 #: also_indoor: traffic
-#: last_checked: 2023-01-10
+#: last_checked: 2023-03-17
 #: check_frequency: 90d
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
 # 
@@ -2092,7 +2097,8 @@ Fußgängerbrücke Storkower Str.: Fußgänger	q4+ 14481,13143 14524,13271 14530,1326
 Lemgoer Str.: Fußgänger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
-(Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17726,5166
+#: XXX_prog: BS am Wendehammer (ansonsten q3)
+(Allmersweg - Groß-Berliner Damm): Fußgänger, Bordstein	q3- 17789,5189 17726,5166
 #: XXX_prog: für Anhänger q3
 Sportfliegerstr.: vier Bodenschwellen, nicht umfahrbar	q2 18157,4742 18341,4543
 Karl-Otto-Reinsch-Str.: Fußgänger	q1 19598,3212 19524,3286
@@ -4412,6 +4418,13 @@ Friedrichstr.: Fußgängerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804
 (Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): einige Fußgänger, Bordstein	q2 17915,10866 17856,10879
 # 
 Bosepark: gemeinsamer Geh- und Radweg	q1 8862,6467 8823,6458
+# 
+(Weg entlang der Straßenbahnstrecke): Grünanlage, einige Fußgänger	q1 18836,3203 18834,3315 18833,3388 18835,3562 18851,3598
+(Straßenbahnstrecke - Konrad-Zuse-Str.): Grünanlage, einige Fußgänger	q1 18833,3388 18857,3418
+# 
+(Sterndamm - Waiblinger Weg): Gehweg	q3 17700,5232 17743,5260
+#: XXX_prog BS am Sackgassenende (ansonsten q3)
+Waiblinger Weg: Gehweg, Bordstein	q3- 17743,5260 17771,5278
 # 
 ######################### User Contributions #################################
 # 

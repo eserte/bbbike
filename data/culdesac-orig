@@ -1050,7 +1050,7 @@ südwestliches Sackgassenende	culdesac -12671,1879
 	culdesac -11751,390
 südliches Sackgassenende	culdesac 12493,21212
 	culdesac_pseudo 17789,5189
-	culdesac 17771,5278
+	culdesac_pseudo 17771,5278
 Toreinfahrt TÜV	culdesac 18370,4511
 # REMOVED ---	culdesac 18228,4796
 	culdesac_pseudo 6493,4105
@@ -1554,7 +1554,7 @@ südwestliches Sackgassenende	culdesac_pseudo 16282,14640
 	culdesac_pseudo 19356,-253
 	culdesac_pseudo 19895,-300
 	culdesac_pseudo 21253,-1493
-	culdesac 21642,-1497
+	culdesac 21648,-1491
 	culdesac_pseudo 21586,-1167
 	culdesac 23418,566
 	culdesac_pseudo 13224,15049
@@ -1563,8 +1563,8 @@ Sackgassenende an der Hausnummer 46A	culdesac 15402,4956
 westliches Sackgassenende	culdesac_pseudo 20861,12192
 östliches Sackgassenende	culdesac 21152,12185
 	culdesac -7990,19888
-Sackgassenende an der Autobahn	culdesac 21563,-1725
-Sackgassenende an der Autobahn	culdesac 21596,-1727
+Sackgassenende an der Autobahn	culdesac 21563,-1728
+Sackgassenende an der Autobahn	culdesac 21593,-1728
 	culdesac 8568,21431
 	culdesac -6431,5815
 	culdesac_pseudo -4849,11934
@@ -1625,6 +1625,9 @@ Sackgassenende im nördlichen Abschnitt	culdesac 12415,21757
 #: note: es folgt eine Treppe mit 10 Stufen zum Anita-Berber-Park
 	culdesac_pseudo 11888,7455
 	culdesac_pseudo 7264,1350
+#: note: Der dahinter folgende Pfad entlang der Autobahn sieht privat aus.
+	culdesac 21604,-1350
+	culdesac 21275,-1176
 # 
 ######################################################################
 # culdesac entries which should remain invisible

@@ -1109,7 +1109,7 @@ Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22850,30562 22892,30426
 Elisenau - Börnicke: Privatgelände?	2 24311,26512 24412,26796
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
-Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
+Vorfahrt Flughafen Schönefeld	1 18419,-1418 18429,-1443 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
 Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
 Mittelstr. B179	1 18368,-1337 18419,-1418
 Mittelstr. B179	1 18293,-1472 18279,-1438 18368,-1337
@@ -2286,15 +2286,20 @@ Straßenbahntrasse	3nocross::ignrte 14843,15007 14828,15050 14686,15608
 Straßenbahntrasse	3nocross::ignrte 16460,17214 16525,17253 16578,17285 16837,17440
 Hansastr. -> Neuzeller Weg: Straßenbahntrasse	3::igndisp 16837,17440 16578,17285 16658,17142
 Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285 16525,17253
-Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
-Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
-Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
-Mittelstreifen	3nocross::ignrte 18826,3816 18779,3866 18739,3909
-Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18702,3790 18779,3866 18739,3909
-Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,3816 18779,3866 18702,3790
+Straßenbahntrasse	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
+Landschaftspark Johannisthal -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 18592,3743 18884,3752 18856,3783
+Landschaftspark Johannisthal -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 18833,3781 18856,3783 18826,3816
+Straßenbahntrasse	3nocross::ignrte 18826,3816 18779,3866 18739,3909
+Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 18702,3790 18779,3866 18739,3909
+Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Straßenbahntrasse	3::igndisp 18826,3816 18779,3866 18702,3790
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
+Straßenbahntrasse	3nocross::ignrte 17648,5338 17700,5232 17705,5223 17726,5166 17763,5104
+Sterndamm -> Waiblinger Weg: Straßenbahntrasse	3::igndisp 17648,5338 17700,5232 17743,5260
+Waiblinger Weg -> Sterndamm: Straßenbahntrasse	3::igndisp 17743,5260 17700,5232 17705,5223
+Allmersweg -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 17789,5189 17726,5166 17763,5104
+Groß-Berliner Damm -> Allmersweg: Straßenbahntrasse	3::igndisp 17705,5223 17726,5166 17789,5189
 Mittelstreifen	3nocross::ignrte 6228,13324 6230,13532 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6230,13532 6104,13530
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
@@ -3242,7 +3247,7 @@ Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
-Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
+Schranke	BNP:0:-113:trailer=3 19608,-1953
 Schranke	BNP:2:-157:trailer=5 19617,6208
 Schranke	BNP:5:-109:trailer=15 22855,4348
 Drängelgitter	BNP:3:-193:trailer=10 32295,6272
@@ -3266,7 +3271,7 @@ Drängelgitter	BNP:3:-147:trailer=10 20560,23
 Drängelgitter	BNP:3:-106:trailer=10 20675,56
 Drängelgitter	BNP:2:-19:trailer=3 -3838,-47018
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-236:trailer=15 18848,3600
-zwei Drängelgitter (Z-Anordnung)	BNP:5:-225:trailer=15 18818,3332
+zwei Drängelgitter (Z-Anordnung)	BNP:5:-223:trailer=15 18818,3332
 weites Drängelgitter	BNP:2:75:trailer=7 12614,6301
 Tor	BNP:0:-134 40394,30863
 Tor	BNP:0:-113 40688,30996
@@ -3282,6 +3287,9 @@ Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
 Drängelgitter	BNP:3:-23:trailer=10 22085,5111
+Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315
+Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598
+(Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418
 Uferweg am Teltowkanal	2::inwork 4053,2300 4209,2641 4247,2652
 Uferweg am Teltowkanal	2::inwork 4209,2641 4220,2664
 Virchow-Klinikum, Südstraße: Bauarbeiten, Straße komplett gesperrt, auch für Fußgänger	2::inwork 6231,14952 6159,14921 6104,14937
@@ -3335,7 +3343,6 @@ Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inw
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9178,556
 Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
-Alexander-von-Humboldt-Weg: Straßenbahnübergang gesperrt	2::inwork 18818,3332 18829,3321
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
@@ -3348,10 +3355,10 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
+Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
-Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
@@ -3950,6 +3957,7 @@ Falkenberger Chaussee, linker Geh/Radweg	1::igndisp 18601,18342 18521,18347
 Mollstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 11723,13139 11736,13126
 Hindenburgdamm, linker Gehweg	1::igndisp 4617,3706 4596,3738
 Greifswalder Str., linker Gehweg	1::igndisp 12563,14860 12584,14928
+Greifswalder Str.: linker Gehweg bis zur Naugarder Str., ggfs. absteigen	1::igndisp 12712,15176 12704,15105
 Buschkrugallee, linker Radweg	1::igndisp 14119,4153 14111,4181
 Michelangelostr., linker Gehweg	1::igndisp 13647,14912 13758,15009 13854,15129
 Adlergestell, linker Gehweg	1::igndisp 19472,3922 19345,4077

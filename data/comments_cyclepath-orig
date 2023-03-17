@@ -791,8 +791,12 @@ Gehweg für Radfahrer frei	RW1; 18533,-687 18555,-588 18561,-566 18595,-440
 	RW2;RW2 18533,-687 18523,-735 18496,-784 18475,-800 18423,-843
 #: note: Radwegschilder fehlen teilweise (z.B. an der Einmündung zum Businesspark Kienberg)
 Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
-schlechte Gehwegplatten, teilweise sogar unbefestigt	RW2;RW2 19618,-1021 19529,-1061 19414,-1098 18892,-1273
-Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18892,-1273 18777,-1298 18666,-1325 18419,-1418
+schlechte Gehwegplatten, teilweise sogar unbefestigt	RW2; 19618,-1021 19529,-1061 19414,-1098 18892,-1273
+schlechte Gehwegplatten, gemeinsamer Geh- und Radweg	RW2; 18892,-1273 19414,-1098 19529,-1061
+Asphalt, gemeinsamer Geh- und Radweg	RW2; 19529,-1061 19618,-1021
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18892,-1273 18777,-1298 18666,-1325
+#: note: hier gibt es zusätzlich auf der südlichen Seite einen Zweirichtungsrad/gehweg, der vor der Autobahnanschlussstelle aufhört
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18666,-1325 18419,-1418
 mäßiger Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18419,-1418 18293,-1472
 	RW6;RW6 -13338,188 -13321,264 -13356,274 -13311,462
 	RW6;RW6 70199,73577 70030,73628 70022,73654 69979,73651 69900,73679

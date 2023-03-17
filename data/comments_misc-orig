@@ -979,7 +979,7 @@ Ausgeschildert zum Heckerdamm 181-213 und zur Siedlung Juliusruh	CP2; 3765,14746
 (Goerdelerdamm - Nonnendamm): Richtung Schleuse Charlottenburg	CP2; 2149,13775 2247,13805
 Ausgeschildert als Wohlrabedamm 24-30	CP2; 1216,13978 1252,14007
 Am Igelgrund: Privatstraße	CS 9068,20446 9126,20515
-Sterndamm: Richtung Groß-Berliner Damm	CP2; 17648,5338 17705,5223
+Sterndamm: Richtung Groß-Berliner Damm	CP2; 17648,5338 17700,5232
 Vergissmeinnichtweg: nur für Berechtigte	CS 21582,185 21596,132 21608,85
 Heidelbeerweg: nur für Berechtigte	CS 21669,99 21645,200
 (Schmiedegasse - Pappelallee): Privatstraße	CS -13581,-10 -13558,88
@@ -1373,7 +1373,7 @@ Eigene Scholle: nicht ausgeschildert	CS 8912,21308 8825,21246 8729,21185
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_06_0673_0824_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2023-03-17 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- An der Dahme: nicht ausgeschildert	CS 22270,2549 22358,2460
 # REMOVED --- Gaffelsteig: nicht ausgeschildert	CS 22287,2431 22221,2520
@@ -1384,7 +1384,7 @@ Ankerweg: nicht ausgeschildert	CP2; 22159,2585 22197,2612
 #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SIEGFRIEDHIRSCHMANNPARK-2019 --- #: XXX wobei: es existieren knapp über dem Boden angebrachte Tafeln mit dem Straßennamen; aber werden vielleicht auch offizielle Berliner Straßenschilder aufgestellt? --- #: last_checked: 2019-04-05 --- #: check_frequency: 14d --- Siegfried-Hirschmann-Park: nicht ausgeschildert	CS 14676,11572 14714,11549 14745,11487 14684,11456
-# REMOVED (Schild existiert) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: by: mapillary --- #: last_checked: 2019-09-07 --- #: check_frequency: 270d --- Buschwindröschenweg: nicht ausgeschildert	CP2; 21409,-109 21382,-31
+# REMOVED (Schild existiert) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: by: mapillary --- #: last_checked: 2019-09-07 --- #: check_frequency: 270d --- Buschwindröschenweg: nicht ausgeschildert	CP2; 21402,-116 21382,-31
 # 
 Rheingoldstr.: durch den Rheinsteinpark	CS 19073,8828 19145,8659
 Straße 12: nicht ausgeschildert	CP2; 13882,6674 13881,6634
@@ -1508,7 +1508,7 @@ ausgeschildert nach Bernau	CP; 32543,18082 32537,18066 32519,18076
 ausgeschildert Sophie-Charlotte-Platz	CP; 3064,11657 3144,11659 3159,11562
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2023-03-08 (mapillary) vvv
+#: last_checked: 2023-03-17 vvv
 #: check_frequency: 180d vvv
 #: note: hier ist das Schild wohl verloren gegangen?
 Henriette-Lustig-Str.: nicht ausgeschildert	CS 21476,5048 21611,5119
@@ -1703,7 +1703,7 @@ Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
 Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2023-01-15
+#: last_checked: 2023-03-17
 #: check_frequency: 60d
 Carl-Spindler-Str. - Uferweg: in Höhe Blütenweißweg zwischen den Neubauten links abbiegen	CP; 21474,5388 21483,5374 21518,5389
 # REMOVED --- Eiselenweg - Uferweg: Einfahrt zum Uferweg ist etwas versteckt, vor dem Neubaugebiet links abbiegen	CP; 21364,5430 21442,5414 21476,5434
@@ -1791,4 +1791,6 @@ Molkenmarkt: rund um den Molkenmarkt fehlen Straßenschilder	CS 10662,12255 10697
 # 
 ausgeschildert "Zu den Häusern Zur Marktflagge 33-59"	CP2; 14152,13072 14200,13213
 Zur Marktflagge: nicht ausgeschildert	CP2; 14200,13213 14152,13072
+# 
+Boveristr.: nicht ausgeschildert	CS 19053,2890 19069,2904 19146,2975
 # 

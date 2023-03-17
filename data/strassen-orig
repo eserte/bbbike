@@ -2640,7 +2640,7 @@ Benno-König-Str.	N 18374,4307 18434,4363 18596,4517 18674,4585
 Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 19162,3935
 # REMOVED --- #: next_check_id: WAGNERREGENYALLEE-2019 --- #: XXX Name ist noch nicht im Amtsblatt bestätigt worden; fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch --- #: last_checked: 2020-07-31
 #: note: Privatstraße
-Wagner-Régeny-Allee	N 19162,3935 19130,3969 18596,4517 18296,4850
+Wagner-Régeny-Allee	N 19162,3935 19130,3969 18596,4517 18487,4638 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 (Gleislinse - Hans-Schmidt-Str.)	NN 19242,4077 19219,4023
 # REMOVED --- #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch --- #: last_checked: 2020-07-31 --- #: check_frequency: 120d --- #: next_check: 2019-11-19
@@ -2666,12 +2666,16 @@ Katharina-Boll-Dornberger-Str.	NN 18943,3508 18851,3598 18848,3600 18836,3611
 Wilhelm-Hoff-Str.	N 18828,3196 18836,3203 18892,3256 18953,3318
 Wilhelm-Hoff-Str.	NN 18953,3318 19033,3397 19057,3422 19061,3426 19107,3472 19125,3491
 (Wilhelm-Hoff-Str. - James-Franck-Str.)	NN 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
-Alexander-von-Humboldt-Weg	NN 19015,3129 18899,3248 18892,3256 18829,3321 18818,3332 18689,3465
+Alexander-von-Humboldt-Weg	NN 19015,3129 18899,3248 18892,3256 18834,3315 18818,3332 18689,3465
+(Weg entlang der Straßenbahnstrecke)	NN 18836,3203 18834,3315 18833,3388 18835,3562 18851,3598
+(Straßenbahnstrecke - Konrad-Zuse-Str.)	NN 18833,3388 18857,3418
 Johann-Hittorf-Str.	N 18946,3077 18802,2993 18757,2966 18716,2966 18601,2971
 Karl-Ziegler-Str.	N 18946,3077 18828,3196 18766,3260 18624,3402
 Zum Trudelturm	N 19021,2946 19101,3028
 Kroneckerstr.	N 19146,2975 19216,3052
-Boveristr.	N 19053,2890 19146,2975
+#: note: außerdem Poller
+Boveristr.	NN 19053,2890 19069,2904
+Boveristr.	N 19069,2904 19146,2975
 Ludwig-Boltzmann-Str.	N 18736,2764 18779,2773 18944,2816 19064,2867
 Friedrich-Wöhler-Str.	N 18736,2764 18628,2750
 Schwarzschildstr.	NN 18766,2525 18759,2592
@@ -3371,7 +3375,7 @@ Bruno-Taut-Str.	H 21858,811 21902,877 21977,988 22034,1006 22092,999
 Richterstr. (Bohnsdorf, Grünau)	H 22007,711 22062,773 22120,886 22100,941 22092,977 22092,999 22162,1067
 Kirchsteig	N 22007,711 21925,612
 Buntzelstr.	H 22062,773 22110,702 22162,452 22166,312 22145,208
-Buntzelstr.	NH 22145,208 22073,59 21977,-8 21968,-15 21800,-109 21534,-262 21463,-280 21355,-309 21235,-354 21157,-413 21120,-444
+Buntzelstr.	NH 22145,208 22073,59 21977,-8 21968,-15 21800,-109 21534,-262 21466,-281 21456,-285 21355,-309 21235,-354 21157,-413 21120,-444
 Dorfplatz	NH 21120,-444 21074,-475
 Dorfplatz	NH 21074,-475 20999,-489 20827,-537 20783,-528
 Dorfplatz	NH 21074,-475 20986,-529 20920,-556 20827,-537
@@ -6006,7 +6010,7 @@ Radenzer Str.	N 15996,6144 16012,6177 16068,6216 16105,6193 16220,6277 16304,635
 Hallberger Zeile	N 15954,6297 16068,6216
 Südostallee	H 15768,6214 15871,6187 15996,6144 16049,6121 16122,6084 16169,6064 16510,5917 16868,5938 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17482,5464 17601,5374 17648,5338
 Sterndamm	H 17886,5587 17747,5452 17736,5441 17695,5394 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
-Sterndamm	H 17648,5338 17705,5223
+Sterndamm	H 17648,5338 17700,5232 17705,5223
 # REMOVED (nun als Gehweg dauerhaft markiert) --- #: next_check_id: STERNDAMM-2020 --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: XXX provisorische Verbindung, asphaltiert --- #: last_checked: 2021-10-02 --- #: check_frequency: 30d --- #: next_check: 2021-10-31
 Sterndamm [Gehweg zur Nebenfahrbahn]	NN 17648,5338 17697,5347
 Sterndamm [Nebenfahrbahn]	N 17697,5347 17762,5408
@@ -6019,7 +6023,9 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: note: Beleuchtung existiert
 (KGA An der Südostallee)	NN 17056,6133 17070,6115 17384,5746 17480,5666 17578,5566 17592,5552
 Ecksteinweg	N 17830,5324 17791,5371 17775,5392 17762,5408 17736,5441
-Waiblinger Weg	N 17830,5324 17803,5303 17771,5278
+(Sterndamm - Waiblinger Weg)	NN 17700,5232 17743,5260
+Waiblinger Weg	NN 17743,5260 17771,5278
+Waiblinger Weg	N 17771,5278 17803,5303 17830,5324
 Hagedornstr.	N 17803,5303 17853,5235 17903,5168 18029,5009 18117,4895 18207,4780
 Greifstr.	N 17903,5168 17854,5131 17775,5083
 Allmersweg	N 17853,5235 17789,5189
@@ -6050,9 +6056,11 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="5"
-#: last_checked: 2023-01-14
+#: last_checked: 2023-03-17
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
+# 
+(am ehemaligen Bahnbetriebswerk Schöneweide)	NN 18601,4732 18487,4638
 # 
 Sportfliegerstr.	N 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-Blériot-Str.	N 18341,4543 18239,4453
@@ -12090,24 +12098,25 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20783,-528 20781,-580 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
 #: osm_watch: way id="27564863" version="20"
-#: last_checked: 2021-12-17
+#: last_checked: 2023-03-17
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20813,-941 20779,-1195 20775,-1224 20799,-1272 20807,-1305
 Kleine Lindenstr.	N 20814,-935 21306,-975 21387,-1033 21459,-1086 21528,-1134
 (Kleine Lindenstr. - Schirmpilzstr.)	NN 21528,-1134 21570,-1219
 Schirmpilzstr.	N 21570,-1219 21493,-1434 21447,-1556 21409,-1717
 Champignonstr.	N 21291,-1114 21387,-1033 21406,-1012
-Kleine Spechtstr.	N 21303,-1345 21390,-1396 21493,-1434 21526,-1452 21574,-1474
-Perlpilzstr.	N 21253,-1493 21303,-1345 21356,-1245 21459,-1086
-Fliegenpilzstr.	N 21528,-1134 21390,-1396 21306,-1714
-Boviststr.	N 21512,-1722 21544,-1563 21574,-1474
+Kleine Spechtstr.	N 21301,-1347 21392,-1388 21493,-1434 21527,-1449 21573,-1468
+Perlpilzstr.	N 21253,-1493 21301,-1347 21356,-1245 21459,-1086
+Perlpilzstr. [Stichstraße]	N 21356,-1245 21318,-1220 21275,-1176
+Fliegenpilzstr.	N 21528,-1134 21392,-1388 21306,-1714
+Boviststr.	N 21510,-1724 21544,-1563 21573,-1468 21602,-1381 21604,-1350
 Kleine Waldstr.	N 21205,-1763 21214,-1710 21222,-1654
-Kleine Waldstr.	N 21214,-1710 21306,-1714 21409,-1717 21512,-1722 21563,-1725
-Waldstr. (Bohnsdorf)	N 21596,-1727 21646,-1724 21655,-1723 21758,-1707 21868,-1674 22003,-1625 22257,-1533 22362,-1509 22685,-1421 22985,-1319 23042,-1297 23170,-1249 23426,-1127
-(Kleine Waldstr. - Waldstr.)	NN 21512,-1722 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21655,-1723
-Parchauer Weg	N 21646,-1724 21676,-1508
-Prieborner Str.	N 21758,-1707 21752,-1619 21760,-1521 21774,-1416 21788,-1303 21794,-1260 21828,-1015 21868,-611
-Spechtstr. (Bohnsdorf)	N 22027,-1548 21887,-1528 21760,-1521 21676,-1508 21642,-1497
+Kleine Waldstr.	N 21214,-1710 21306,-1714 21409,-1717 21510,-1724 21563,-1728
+Waldstr. (Bohnsdorf)	N 21593,-1728 21646,-1725 21657,-1726 21758,-1707 21868,-1674 22003,-1625 22257,-1533 22362,-1509 22685,-1421 22985,-1319 23042,-1297 23170,-1249 23426,-1127
+(Kleine Waldstr. - Waldstr.)	NN 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
+Parchauer Weg	N 21646,-1725 21676,-1500
+Prieborner Str.	N 21758,-1707 21752,-1619 21758,-1516 21774,-1416 21788,-1303 21794,-1260 21828,-1015 21868,-611
+Spechtstr. (Bohnsdorf)	N 22027,-1548 21887,-1528 21758,-1516 21676,-1500 21648,-1491
 (Weg am Waldrain)	NN 23523,-937 23512,-854 23512,-766 23490,-715 23421,-686 23293,-657
 (Waldweg - Parchwitzer Str.)	NN 23512,-854 23499,-856
 (Waldweg - Wiesenstr.)	NN 23512,-766 23502,-770
@@ -15367,7 +15376,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-17
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15754,7 +15763,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-17
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16713,15 +16722,15 @@ Paradiesstr.	N 21355,-309 21371,-374 21367,-420 21360,-455 21350,-549 21335,-653
 Quaritzer Str.	N 21360,-455 21291,-446 21259,-467 21252,-500
 Quaritzer Str.	NN 21252,-500 21245,-533
 Polkwitzer Str.	N 21367,-420 21463,-434 21618,-456
-Sausenberger Str.	N 21358,-834 21423,-732 21437,-662 21451,-561 21458,-488 21463,-434 21468,-338 21463,-280
-Hüttendorfer Weg	N 21463,-280 21409,-109
+Sausenberger Str.	N 21358,-834 21423,-732 21437,-662 21451,-561 21458,-488 21463,-434 21468,-338 21456,-285
+Hüttendorfer Weg	N 21466,-281 21402,-116
 #: XXX im Zuge des Bebauungsplans XV-37 c wird hier wahrscheinlich eine neue Straße entstehen
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140211.0935.394295.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-37c.html
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="5"
-#: last_checked: 2022-09-24 (mapillary)
+#: last_checked: 2023-03-17
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -17021,11 +17030,11 @@ Nahariyastr. [zur Kita]	N 11746,-1442 11619,-1459
 Skarbinastr.	N 12046,-1678 11997,-1407 11948,-1368 11739,-1384
 Borsigstr.	N 9508,13578 9376,13765 9316,13870
 Friedrich-Wilhelm-Str. (Tempelhof)	N 8266,5911 8385,5907 8629,5866 8801,5844 8996,5823 9176,5803 9378,5773 9668,5733
-Newtonstr.	N 19324,2939 19216,3052 19175,3095 19076,3193 18953,3318 18851,3423
+Newtonstr.	N 19324,2939 19216,3052 19175,3095 19076,3193 18953,3318 18857,3418
 #: note: mit Mittelstreifen
 #: note: Privatstraße (by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2014)
 #: note: Straßenname ab 2014-05-26
-Konrad-Zuse-Str.	N 19029,3595 18943,3508 18851,3423
+Konrad-Zuse-Str.	N 19029,3595 18943,3508 18857,3418
 Rosenbecker Str.	N 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814
 Hoppenrader Weg	NN -4757,14303 -4612,14267
 Prisdorfer Str.	N -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
@@ -19477,8 +19486,8 @@ Leuenberger Str.	N 16905,15924 17125,15908 17247,15899
 Leuenberger Str.	N 17125,15908 17122,15866 17115,15769
 Heckelberger Ring	N 17238,15764 17245,15856 17247,15899 17251,15965 17350,15958 17396,15913 17400,15892 17390,15855 17378,15760
 Heckelberger Ring	N 17122,15866 17245,15856
-Bohnsdorfer Kirchsteig	N 21135,-274 21322,-176 21364,-168 21409,-109 21465,-15 21515,67
-Theodor-Körner-Str.	N 21409,-109 21769,-30
+Bohnsdorfer Kirchsteig	N 21135,-274 21322,-176 21364,-168 21402,-116 21465,-15 21515,67
+Theodor-Körner-Str.	N 21402,-116 21769,-30
 Wilhelmine-Duncker-Str.	N 21487,173 21464,279 21440,300
 Kletterrosenweg	N 21382,149 21344,300
 (Grünzug am Falkenberg - Kletterrosenweg)	NN 21317,326 21344,300
@@ -19494,7 +19503,7 @@ Rosenrotweg [1,3,5,7,9]	N 21589,131 21503,114
 #: note: Privatstraße
 Weidenkätzchenweg	N 21421,158 21435,99 21450,38 21465,-15
 #: note: Privatstraße
-Buschwindröschenweg	N 21354,142 21367,84 21379,33 21393,-29 21382,-31 21409,-109
+Buschwindröschenweg	N 21354,142 21367,84 21379,33 21393,-29 21383,-34 21402,-116
 Johannes-Tobei-Str.	N 21250,118 21354,142 21382,149 21421,158 21487,173 21520,170 21582,185 21618,193 21645,200 21712,215
 (Verlängerung Johannes-Tobei-Str.)	N 21250,118 21135,83 20984,-81
 Höhensteig	N 21712,215 21799,234 21844,238
@@ -19643,6 +19652,8 @@ Chaukenstr.	N 20252,901 20207,789 20171,698
 Chaukenstr. [21-37]	N 20207,789 20270,760
 Chaukenstr. [21-37]	N 20255,722 20270,760 20278,780
 Lugierring	N 20207,789 20142,824
+Lugierring	NN 20142,824 20116,836
+Lugierring	NN 20100,801 20116,836 20162,929
 Mittelweg (Altglienicke)	N 20171,698 20136,608 20082,463 20035,348
 #: XXX_osm: bei osm als Lehmusstr. gekennzeichnet, wahrscheinlich falsch
 Mittelweg (Altglienicke)	N 20098,359 20082,463
@@ -20275,6 +20286,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: last_checked: 2023-02-05 (mapillary)
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
+#: osm_watch: way id="1138047106" version="4"
 #: last_checked: 2023-02-05 (mapillary)
 #: check_frequency: 30d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21666,5705 21632,5670 21605,5687

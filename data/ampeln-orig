@@ -37,7 +37,7 @@ Gegenverkehrsregelung	X::inwork 8737,12757
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung
-#: last_checked: 2023-03-02
+#: last_checked: 2023-03-17
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -93,7 +93,7 @@ Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2023-01-14
+#: last_checked: 2023-03-17
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
@@ -141,7 +141,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2023-02-11
+#: last_checked: 2023-03-17
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -284,9 +284,9 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
 #: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel
 #: osm_watch: node id="1646650915" version="4"
-#: last_checked: 2022-04-16 (mapillary)
+#: last_checked: 2023-03-17
 #: check_frequency: 120d
-	X::inwork 18768,-1350
+	X::inwork 18767,-1343
 # 
 #: temporary ^^^
 # 
@@ -3669,13 +3669,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-02-12 (krickstadt)
+#: last_checked: 2023-03-17
 #: check_frequency: 120d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="14"
 #: note: Anforderungsampel
-#: last_checked: 2023-03-08 (krickstadt)
+#: last_checked: 2023-03-17
 #: check_frequency: 120d
 	F::inwork 17747,5452
 # 
