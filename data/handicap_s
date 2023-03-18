@@ -14,6 +14,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Elisabeth-Abegg-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 7930,12912 7858,12830 7789,12764
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279
 Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
@@ -31,8 +32,12 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
 Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
-Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
+Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,13381
+Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
+Alt-Moabit: Bauarbeiten, teilweise gemeinsamer Geh- und Radweg	q2::inwork; 7346,13022 7422,13012
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
@@ -2516,7 +2521,6 @@ Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6108,5253
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8076,4606 8192,4710
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20321,16043 20330,16040
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q2 6843,7293 6847,7314 7089,7398 7097,7419 7220,7445
-Herschelstr.: enge Wohnstraße	q1 3200,13277 3239,13461 3262,13547 3280,13625
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 Konradinstr.: enge Straße	q0 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
 (Livländische Str. - Schoelerpark): Fußgänger, für Radfahrer freigegeben	q1 5170,8449 5212,8602
@@ -2556,7 +2560,6 @@ Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 Waldstr.: enge Straße	q0 9717,20501 9724,20291 9723,20269
-Kamminer Str.: unübersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 (Bad Kissingen): Fußgänger	q2 3596,7566 3609,7842
 (Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng	q3 3358,8190 3584,8136 3756,8101 3779,8105
 Claire-Waldoff-Weg: Fußgänger	q2 3584,8136 3571,8085 3538,7515
@@ -2915,8 +2918,8 @@ Im Lesachtal: enge Straße	q0 10617,2226 10559,2252 10549,2257
 Im Lesachtal: enge Straße	q0 10549,2257 10526,2282
 Im Lesachtal: enge Straße	q0 10526,2282 10504,2321
 Rotdornstr.: enge Straße	q1 5139,7216 5141,7158 5121,7132 5081,7112
-Im Eichengrund: Fußgänger	q1 976,15195 919,15365 902,15362 877,15474
-Im Eichengrund: Fußgänger, Bordstein	q2 919,15365 1009,15400
+Im Eichengrund: Fußweg	q3 976,15195 919,15365 902,15362 877,15474
+Im Eichengrund: Fußweg, Bordstein	q3 919,15365 1009,15400
 Hedwigstr. (Alt-Hohenschönhausen): enge Straße	q1 16616,16046 16505,16096 16520,16200
 Kasinoweg: enge Straße	q0 2624,24710 2444,24950 2364,24886 2340,24872
 Knappenpfad: enge Straße	q0 2471,24709 2410,24837 2364,24886

@@ -63,7 +63,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: last_checked: 2023-03-12
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-18
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -171,7 +171,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2022-11-15
+#: last_checked: 2023-03-18
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -1595,7 +1595,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11369,13174
 #: note: Kontaktschleife für Radfahrer aus der Heinz-Galinski-Str.
 	X 8093,16438
-	X 5376,18773
+	X 5364,18775
 #: XXX_prog nicht relevant für Radfahrer Richtung Westen
 #: note: Anforderungsampel
 	F 14203,2859
@@ -1956,6 +1956,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3028,15696
 	X 4102,18298
 	X 4009,18322
+#: note: Radfahrer Richtung Südwesten haben zwei Ampeln und müssen bei der zweiten immer warten
 	X 4704,17101
 	X 5324,18560
 	X 5225,18070
@@ -2048,6 +2049,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -2343,14446
 	X -834,15053
 	X -990,13502
+#: off: night (laut osm, siehe https://www.openstreetmap.org/note/2867081)
 	X 1465,14963
 	X 1133,14387
 	X 4542,13244
@@ -4472,7 +4474,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
-#: last_checked: 2023-01-09 (mapillary)
+#: last_checked: 2023-03-17
 #: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^
