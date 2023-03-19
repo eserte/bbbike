@@ -224,3 +224,33 @@ sub sqr { $_[0] * $_[0] }
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::MPS - parse and convert Microsoft MapPoint files
+
+=head1 SYNOPSIS
+
+    use GPS::MPS;
+    my $mps = GPS::MPS->new;
+    open my $fh, $mps_file or die $!;
+    print $mps->convert_to_gpsman($fh);
+
+=head1 DESCRIPTION
+
+Parses Microsoft MapPoint files (see also
+L<https://en.wikipedia.org/wiki/Microsoft_MapPoint>) and converts them
+to GPSMan track files.
+
+This module is used by L<GPS::GpsmanData::Any> and L<any2gpsman>,
+which provide a somewhat friendlier interface.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::Any>, L<any2gpsman>.
+
+=cut
