@@ -2652,7 +2652,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-18
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -3593,7 +3593,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-03-11 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-02 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -3701,7 +3701,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="4"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-15
+#: last_checked: 2023-03-19
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -4370,7 +4370,7 @@ Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-03-13 (indoor) vvv
+#: last_checked: 2023-03-19 (indoor) vvv
 #: check_frequency: 7d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
@@ -4770,7 +4770,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'data' => '#: next_check_id: SPREEPARK-2022
 #: note: Zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-03-11 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
@@ -5344,6 +5344,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
 #: by: https://nitter.net/polizeiberlin/status/1636851536969048067#m
 #: by: https://nitter.net/pic/orig/media%2FFrc-E15WAAALkU0.jpg
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/nach-fund-von-kriegsbombe-vorbereitungen-zur-entschaerfung-id213179
+#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/weltkriegsbombe-wird-in-berlin-zehlendorf-entschaerft-id213259
 Radolfzeller Weg	2::bomb -38,2438 -4,2413 23,2356
 Idsteiner Str.	2::bomb -409,2510 -326,2177 -285,2015 -227,1805
 Hegauer Weg	2::bomb -326,2177 -172,2274 -84,2376 -38,2438 -26,2460 -35,2470
@@ -5385,6 +5386,18 @@ Rombsweg	2::bomb 444,2008 484,1879
          'id' => 3751,
          'text' => 'Berlepschstr. und Umgebung: Bombenfund, Entschärfung am 20.3.2023, Sperrkreis gilt voraussichtlich zwischen 8 und 18 Uhr',
          'until' => 1679331600
+       },
+       {
+         'data' => '#: note: vielleicht nur tagsüber an Werktagen offen?
+#: note: Sperrung gesehen: 2023-03-19 (So) gegen 12:45
+	2::temp 12582,8651 12434,8776
+',
+         'from' => undef,
+         'id' => 3752,
+         'recurring' => 1,
+         'text' => 'Idealpassage: Durchfahrt kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

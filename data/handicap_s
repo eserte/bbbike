@@ -4,7 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
-Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q3::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
+Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
@@ -42,12 +42,12 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
-Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
+Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14310,7022 14276,7021 14246,7042 14236,7058 14196,7086
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
 Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 15535,12420 15457,12449
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
-Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig	q1::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
+Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
@@ -179,7 +179,6 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
-Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 Am Landwehrkanal: Parkweg, Fußgänger	q3 12739,9576 12796,9548 12919,9584 12981,9672
@@ -3365,6 +3364,7 @@ Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
+Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert: gesperrt, ggfs. schieben	q4:inwork::igndisp 13333,9929 13418,9944 13579,10146
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922

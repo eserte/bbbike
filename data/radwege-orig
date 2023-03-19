@@ -314,7 +314,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-03-14 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -773,7 +773,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 # 
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Wedding
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
-#: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
+#: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
 #: last_checked: 2023-03-18 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
@@ -785,8 +785,10 @@ teilweise unebene Gehwegplatten	RW2; 2867,18736 2947,18570 3008,18464 3047,18398
 Busspur ist immer gültig, hohe Busfrequenz	RW5; 3047,18398 3213,18115
 Gehwegplatten	RW2; 3213,18115 3319,18043
 Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3319,18043 3429,17987 3570,17938
-asphaltiert	RW2; 3570,17938 3628,17935
-Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
+#: XXX früher: asphaltiert	RW2; 3570,17938 3628,17935
+	RW8; 3570,17938 3628,17935
+#: XXX früher: Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
+	RW8; 3628,17935 3706,17931 3833,17929 3930,17923
 Verbundsteinpflaster	RW2; 3930,17923 4016,17918
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1583,7 +1585,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2023-02-16 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795

@@ -3580,7 +3580,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
 # 
 #: next_check_id: SPREEPARK-2022
-#: last_checked: 2023-03-11 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: -20230630 vvv
@@ -3591,7 +3591,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-19
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3700,12 +3700,14 @@ Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php
 #: XXX was ist mit der Erweiterung im nördlichen Bereich? entfällt die dortige Fahrbahn dauerhaft?
 #: osm_watch: way id="20554168" version="20"
+#: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2022-10-16
 #: check_frequency: 150d
 #: next_check: 2023-06-30
 # früher: Marktplatz Adlershof	1 20290,3756 20336,3783
 Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,3756
 # 
+#: next_check_id: SCHLESISCHERBUSCH-2023
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/begonnene-bauarbeiten-enden-im-sommer-2023-im-schlesischen-busch_a357557 (bis Sommer 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1570686227954954240#m
 #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg
@@ -3713,14 +3715,19 @@ Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,37
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
+#: XXX Qualität nach den Bauarbeiten? vvv
+#: last_checked: 2023-03-19 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2023-06-01 vvv
 #: osm_watch: way id="358602468" version="8"
 #: osm_watch: way id="24189226" version="24"
-#: XXX Qualität nach den Bauarbeiten?
-#: XXX wird es auch Bauarbeiten am Flutgraben geben?
-#: last_checked: 2023-02-14
-#: check_frequency: 60d
-#: next_check: 2023-06-01
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
+#: valid: -20230601
+Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:q4:inwork	13333,9929 13418,9944 13579,10146
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240151.php
@@ -3739,7 +3746,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-02-19
+#: last_checked: 2023-03-19
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -4763,7 +4770,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-02-16
+#: last_checked: 2023-03-19
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

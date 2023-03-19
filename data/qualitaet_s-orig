@@ -8,10 +8,10 @@
 #: temporary vvv
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: last_checked: 2023-02-16
+#: last_checked: 2023-03-19
 #: check_frequency: 90d
 #: next_check: 2023-06-30
-Neukˆllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
+Neukˆllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14246,7042 14236,7058 14196,7086
 # 
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man f‰hrt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: w‰hrend der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung ¸ber gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
@@ -135,7 +135,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-03-15
+#: last_checked: 2023-03-19
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -381,7 +381,7 @@ Lohm¸hlenbr¸cke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaﬂnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="26"
-#: last_checked: 2023-02-14
+#: last_checked: 2023-03-19
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -2172,7 +2172,7 @@ Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18365,14607 18410,1
 Landsberger Allee: Beton-Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2022-11-06
+#: last_checked: 2023-03-18 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -9474,7 +9474,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: by: https://mein.berlin.de/projekte/sanierung-grunflache-auerdreieck/?initialSlide=6 (vermutlich bleiben die Stufen am nˆrdlichen Ende)
 #: XXX mˆglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollst‰ndige Fertigstellung erst 2022 vvv
-#: last_checked: 2023-02-19 vvv
+#: last_checked: 2023-03-19 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur M¸hsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur M¸hsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur M¸hsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12743,7 +12743,7 @@ Puschkinallee [Nebenstraﬂe]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Cjtg8DovYfZefovMR2tp8tprw4hE0Vl5XoJKOqnR/REjNBehL/65-Anlagen/04/B0312ZB1.pdf
 #: osm_watch: way id="24202434" version="25"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straﬂe nur f¸r Anlieger/Radfahrer frei sein?
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-19
 #: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
@@ -21846,6 +21846,7 @@ An der Priesterkoppel: guter Beton	Q0- 8726,21171 8796,21107 8830,21077
 An der Priesterkoppel: Asphalt	Q0 8830,21077 8860,21051 8886,21014
 #: corrected_by: srt (m‰ﬂiger Asphalt -> ...)
 #: XXX wird der restliche Abschnitt auch asphaltiert?
+#: osm_watch: way id="912888080" version="6"
 #: last_checked: 2022-10-22
 #: check_frequency: 150d
 An der Priesterkoppel: Schotterstraﬂe	Q2 8886,21014 8920,20920

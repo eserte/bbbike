@@ -2155,6 +2155,7 @@ Maybachufer	N 11543,10015 11669,9987 11880,9874 12053,9793 12085,9778 12250,9691
 Lohmühlenbrücke	N 12837,9353 12868,9359 12897,9365
 (Maybachufer - Weigandufer)	NN 12845,9304 12862,9273 12909,9085 12902,9066
 Weichselstr. (Neukölln)	N 12845,9304 12755,9188 12682,9089 12590,8977 12478,8829 12434,8776 12392,8724 12330,8636
+#: alias: Ideal-Passage
 Idealpassage	NN 12434,8776 12582,8651
 Hobrechtstr.	N 11998,8872 12012,9092 12005,9211 11954,9415 11934,9538 11917,9663 11897,9754 11880,9874
 Sanderstr.	N 11710,9628 11917,9663 12074,9689
@@ -2532,14 +2533,14 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
-#: last_checked: 2023-02-16
+#: last_checked: 2023-03-19
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 # REMOVED --- (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
-(provisorische Umfahrung)	NN 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
+(provisorische Umfahrung)	NN 14310,7022 14276,7021 14246,7042 14236,7058 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2023-02-16 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: 20140224-20230630
@@ -4896,7 +4897,7 @@ Rübländerstr.	N 14321,23378 14382,23574
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3988&date=20151213
 #: XXX Planstraße D --- bleibt dieser Weg erhalten?
 #: osm_watch: way id="224122378" version="16"
-#: last_checked: 2022-06-06 (mapillary)
+#: last_checked: 2023-03-18 (mapillary)
 #: check_frequency: 360d
 (S-Bahndamm - Hobrechtsfelder Chaussee)	NN 15469,24813 15339,24861 14434,25388
 (Bucher Teiche - Schönerlinder Chaussee)	NN 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -14088,7 +14089,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (Verschwenkung realisiert) --- #: XXX Verschwenkung der Bergiusstr. --- #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle --- #: XXX wahrscheinlich ist auch die alte Ampel abgeschaltet? --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html --- #: prio: #A --- #: next_check: 2013-08-23
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 # REMOVED --- #: last_checked: 2021-03-30 --- #: check_frequency: 90d --- #: next_check: 2021-12-31 --- #: next_check: 2021-04-02 --- (Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
-#: last_checked: 2023-02-16 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt

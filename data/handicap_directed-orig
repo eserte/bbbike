@@ -332,7 +332,7 @@ Behrenstr. - Ebertstr.: zum Linksabbiegen die linke Fußgängerampel benutzen	DH:t
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-10-29 vvv
 Kastanienallee: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 9027,20603 9073,20606 9162,20613
-Kastanienallee: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 9175,20613 9227,20617 9296,20622
+Kastanienallee: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 9175,20613 9227,20617 9296,20622
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -435,4 +435,15 @@ Manteuffelstr./zum Bosepark: Bordstein auf dem Mittelstreifen	DH:kerb_up 8707,65
 # 
 Weg im Business Park Berlin - Alexander-Meißner-Str.: Mittelstreifen, nächste Überquerungsmöglichkeit etwas weiter nördlich	DH:len=50  20770,-1315 20394,-1397 20416,-1721
 Alexander-Meißner-Str. - Weg im Business Park Berlin: Mittelstreifen, etwa 25m früher auf den linken Gehweg wechseln	DH:h=q3,25 20388,-1373 20394,-1397 20770,-1315
+# 
+#: next_check_id: SEIDELSTRASSENBRUECKE-2022
+#: note: Existenz eines Zweirichtungsradwegs am 18.3.2023 bestätigt; März 2024 wird als Ende der Bauarbeiten angegeben, aber wird es vorher noch zu einer Umstellung der Verkehrsführung kommen (Süd- statt Nordseite)?
+#: last_checked: 2023-03-18 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2024-03-15 vvv
+Seidelstr..: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 3429,17987 3570,17938 3628,17935
+Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 3833,17929 3930,17923 4016,17918
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
