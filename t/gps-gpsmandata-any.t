@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 96;
+plan tests => 97;
 
 use GPS::GpsmanData::Any;
 
@@ -75,6 +75,9 @@ EOF
     {
 	my $gps = GPS::GpsmanData::Any->load($tmpfile);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my $gps2 = GPS::GpsmanData::Any->load($tmpfile, debug => 0);
+	eq_or_diff $gps2, $gps, 'using debug option should not change anything';
 
 	is scalar($gps->flat_track), 2, 'Found two waypoints in first track';
 	my $wpt = ($gps->flat_track)[0];

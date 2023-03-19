@@ -24,8 +24,10 @@ use GPS::GpsmanData;
 sub load {
     my($class, $file, %args) = @_;
 
+    my $debug = delete $args{debug}; # some implementations support a debug option
+
     if ($file =~ /\.mps$/i) {
-	$class->load_mps($file, %args);
+	$class->load_mps($file, debug => $debug, %args);
     } elsif ($file =~ /\.gpx(?:\.gz)?$/i) {
 	$class->load_gpx($file, %args);
     } elsif ($file =~ m{\.xml(?:\.gz)?$} && eval {
@@ -41,8 +43,15 @@ sub load {
 sub load_mps {
     my($class, $file, %args) = @_;
 
+    my $debug = delete $args{debug};
+
     require File::Temp;
     require GPS::MPS;
+
+    if ($debug) {
+	no warnings 'once';
+	$GPS::MPS::DEBUG = 1;
+    }
     
     my $mps = GPS::MPS->new;
     open MPSFH, $file or die "Can't open $file: $!";
