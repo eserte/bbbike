@@ -571,17 +571,27 @@ sub _edit_preparations {
 
 # common stuff for _split_track and _edit_track_attributes
 sub _track_attributes_editor {
-    my($self, $t, $line_content, $track_name_ref, $track_attrs_ref) = @_;
+    my($self, $t, $line_content, $track_name_ref, $track_attrs_ref, %opts) = @_;
+    my $readonly = delete $opts{'-readonly'};
+    die "Unhandled options: " . join(' ', %opts) if %opts;
+
+    my %common_e_opts;
+    my %common_be_opts;
+    if ($readonly) {
+	$common_e_opts{'-state'} = 'readonly';
+	$common_be_opts{'-state'} = 'disabled';
+    }
 
     Tk::grid($t->Label(-text => "Line"),
 	     $t->Label(-text => $line_content));
     Tk::grid($t->Label(-text => "Name"),
-	     $t->Entry(-textvariable => $track_name_ref));
+	     $t->Entry(-textvariable => $track_name_ref, %common_e_opts));
     my $brands_be;
     if ($self->cget(-vehiclestobrands)) {
 	$brands_be = $t->BrowseEntry(-textvariable => \$track_attrs_ref->{'srt:brand'},
 				     -autolimitheight => 1,
 				     -autolistwidth => 1,
+				     %common_be_opts,
 				    );
     }
     my $fill_brands = sub {
@@ -607,19 +617,20 @@ sub _track_attributes_editor {
 			      ? (-browsecmd => sub { my(undef, $new_value) = @_; $fill_brands->($new_value) })
 			      : ()
 			     ),
+			     %common_be_opts,
 			    ));
     $fill_brands->($track_attrs_ref->{'srt:vehicle'});
     Tk::grid($t->Label(-text => "Brand"),
-	     ($brands_be ? $brands_be : $t->Entry(-textvariable => \$track_attrs_ref->{'srt:brand'})),
+	     ($brands_be ? $brands_be : $t->Entry(-textvariable => \$track_attrs_ref->{'srt:brand'}, %common_e_opts)),
 	    );
     Tk::grid($t->Label(-text => "Comment"),
-	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:comment'}));
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:comment'}, %common_e_opts));
     Tk::grid($t->Label(-text => "Event"),
-	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:event'}));
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:event'}, %common_e_opts));
     Tk::grid($t->Label(-text => "Tag(s)"),
-	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:tag'}));
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:tag'}, %common_e_opts));
     Tk::grid($t->Label(-text => "Frequency"),
-	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:frequency'}));
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:frequency'}, %common_e_opts));
     if ($self->cget(-gpsdevices)) {
 	my @choices = @{ $self->cget(-gpsdevices) || [] };
 	if ($track_attrs_ref->{'srt:device'} && !grep { $track_attrs_ref->{'srt:device'} eq $_ } @choices) {
@@ -631,11 +642,16 @@ sub _track_attributes_editor {
 				 -autolistwidth => 1,
 				 -listheight => 4, # hmmm, -autolimitheight does not work? or do i misunderstand this option?
 				 -choices => \@choices,
+				 %common_be_opts,
 				));
     }
     my $weiter;
-    Tk::grid($t->Button(-text => 'Ok', -command => sub { $weiter = +1 }),
-	     $t->Button(-text => 'Cancel', -command => sub { $weiter = -1 }));
+    if ($readonly) {
+	Tk::grid($t->Button(-text => 'Close',  -command => sub { $weiter = -1 }));
+    } else {
+	Tk::grid($t->Button(-text => 'Ok',     -command => sub { $weiter = +1 }),
+		 $t->Button(-text => 'Cancel', -command => sub { $weiter = -1 }));
+    }
     $t->waitVariable(\$weiter);
     $weiter;
 }
