@@ -26,10 +26,14 @@ sub load {
 
     my $debug = delete $args{debug}; # some implementations support a debug option
 
-    if ($file =~ /\.mps$/i) {
-	$class->load_mps($file, debug => $debug, %args);
-    } elsif ($file =~ /\.gpx(?:\.gz)?$/i) {
+    if ($file =~ /\.gpx(?:\.gz)?$/i) {
 	$class->load_gpx($file, %args);
+    } elsif ($file =~ /\.fit$/i) {
+	require GPS::GpsmanData::FIT;
+	delete $args{-editable}; # no support
+	GPS::GpsmanData::FIT->load($file, %args);
+    } elsif ($file =~ /\.mps$/i) {
+	$class->load_mps($file, debug => $debug, %args);
     } elsif ($file =~ m{\.xml(?:\.gz)?$} && eval {
 	require GPS::GpsmanData::SportsTracker;
 	GPS::GpsmanData::SportsTracker->match($file);
