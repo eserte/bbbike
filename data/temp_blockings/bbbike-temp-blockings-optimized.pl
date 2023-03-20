@@ -2273,7 +2273,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
-#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022)
+#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.7.2023)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -2652,7 +2652,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-18
+#: last_checked: 2023-03-20
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -4188,7 +4188,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-20
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -5086,7 +5086,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-03-17
+         'data' => '#: last_checked: 2023-03-20
 #: check_frequency: 21d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -5108,23 +5108,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
          'type' => 'gesperrt',
          'until' => 1681595999
        },
-       {
-         'data' => '#: next_check_id: SEIDELSTRASSENBRUECKE-2022
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/die-seidelstrassenbruecke-wird-ab-17-maerz-abgerissen_a374135
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/u6-in-tegel-arbeiten-an-bruecke-ueber-seidelstrasse-starten-id212679 (auch für Radfahrer+Fußgänger)
-#: by: https://nitter.net/VIZ_Berlin/status/1636346966010470403#m
-#: by: https://nitter.net/pic/orig/media%2FFrV443CXwAMqn6l.jpg
-# REMOVED --- #: add_fragezeichen: Tatsächlich auch für Radfahrer und Fußgänger gesperrt? --- #: begin_check: 2023-03-16 --- #: next_check: 2023-03-16
-#: source_id: viz2021:13.3065,52.568067,17.03.2023,20:00 (bis 20.03.2023)
-	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929
-',
-         'from' => 1678993200,
-         'id' => 3733,
-         'text' => 'Seidelstr.: Sperrung im Bereich der U-Bahnbrücke, auch für Fußgänger und Radfahrer, von 17.03.2023 20:00 bis 20.03.2023 04:00',
-         'type' => 'gesperrt',
-         'until' => 1679281200
-       },
+       undef,
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
@@ -5136,7 +5120,9 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
 #: by: https://nitter.net/pic/orig/media%2FFqxhyiCXgAERnYq.jpg (Vorarbeiten)
 #: by: https://viz.berlin.de/wp-content/uploads/ULP_3_Radverkehr-1.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1304897.php
-#: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023)
+#: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
+#: source_id: bvg2021:x69#BVG317810_0
+#: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023)
 #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: begin_check: 2023-03-21
@@ -5145,7 +5131,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
 ',
          'from' => 1679292000,
          'id' => 3734,
-         'text' => 'Bahnhofstr.: voraussichtlich Sperrung im Bereich der Bahnbrücke, eventuell können Radfahrer durch den Bahnhof Köpenick schieben, vom 21.03.2023 07:00 bis 25.03.2023 04:30',
+         'text' => 'Bahnhofstr.: Sperrung im Bereich der Bahnbrücke, eventuell können Radfahrer durch den Bahnhof Köpenick schieben, vom 21.03.2023 07:00 bis 25.03.2023 04:30',
          'type' => 'gesperrt',
          'until' => 1679715000
        },
@@ -5339,54 +5325,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1636791099103559680#m (voraussichtlich Bombenentschärfung am 2023-03-20, 500m-Radius um den Fundort in der Berlepschstr.)
-#: by: https://nitter.net/polizeiberlin/status/1636851536969048067#m
-#: by: https://nitter.net/pic/orig/media%2FFrc-E15WAAALkU0.jpg
-#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/nach-fund-von-kriegsbombe-vorbereitungen-zur-entschaerfung-id213179
-#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/weltkriegsbombe-wird-in-berlin-zehlendorf-entschaerft-id213259
-Radolfzeller Weg	2::bomb -38,2438 -4,2413 23,2356
-Idsteiner Str.	2::bomb -409,2510 -326,2177 -285,2015 -227,1805
-Hegauer Weg	2::bomb -326,2177 -172,2274 -84,2376 -38,2438 -26,2460 -35,2470
-Hegauer Weg	2::bomb -35,2470 -22,2484
-(Königsweg - Berlepschstr.)	2::bomb -197,2634 -174,2616 -74,2529 -22,2484 57,2404
-(Königsweg - Berlepschstr.)	2::bomb 57,2404 115,2340 120,2334 169,2264
-Machnower Str. (Zehlendorf)	2::bomb 604,2494 561,2395 457,2251 324,2034 243,1820 242,1816 198,1689
-Bismarckstr. (Zehlendorf)	2::bomb 146,2073 177,2031 243,1820
-Rotherstieg	2::bomb 244,2165 163,2091
-Grenzpfad	2::bomb 446,2297 271,2129
-Camphausenstr.	2::bomb 169,2264 244,2165 271,2129 324,2034 345,1977 379,1846
-Dallwitzstr.	2::bomb 96,2225 163,2091 146,2073 93,2014 80,1998 18,1928
-Thürstr.	2::bomb 93,2014 23,2185
-Berlepschstr.	2::bomb 604,2494 421,2401 290,2328 169,2264 96,2225 23,2185 -38,2152 -134,2098 -226,2048 -285,2015 -343,1983
-Schrockstr.	2::bomb 565,1903 524,2031 495,2133 457,2251 446,2297 421,2401
-Am Weißen Steg	2::bomb 290,2328 329,2246
-Radtkestr.	2::bomb 29,1877 18,1928 -38,2152
-Albertinenstr.	2::bomb 29,1877 107,1592
-Biesestr.	2::bomb 495,2133 556,2126 585,2129 662,1930
-Schädestr.	2::bomb 585,2129 668,2143
-Kunzendorfstr.	2::bomb 602,2248 578,2189 585,2129
-Karolinenstr. (Zehlendorf)	2::bomb 345,1977 444,2008 524,2031
-Beuckestr.	2::bomb 344,2679 249,2653 84,2618 45,2592
-Beuckestr.	2::bomb 84,2618 45,2644
-Neue Str. (Zehlendorf)	2::bomb 226,2752 249,2653 272,2548
-Düppelstr. (Zehlendorf)	2::bomb 37,2562 45,2592 45,2644 39,2669 21,2728 12,2752
-Hohentwielsteig	2::bomb -273,2521 -247,2411 -172,2274
-Anhaltinerstr.	2::bomb -155,2658 37,2562 186,2532 272,2548 638,2637
-Königsweg	2::bomb -298,2577 -197,2634 -155,2658 -81,2699 12,2752
-Seibtweg	2::bomb -168,1821 -117,1836 -73,1847 -44,1856 29,1877
-Loebellstr.	2::bomb -226,2048 -168,1821
-Kösterstr.	2::bomb -134,2098 -73,1847
-Ernst-Lemmer-Ring	2::bomb -44,1856 7,1617
-Gertraudstr.	2::bomb 80,1998 181,1703
-Gimplesteig	2::bomb 243,1820 266,1815 379,1846 484,1879 530,1893 565,1903
-Rombsweg	2::bomb 444,2008 484,1879
-',
-         'from' => 1679158800,
-         'id' => 3751,
-         'text' => 'Berlepschstr. und Umgebung: Bombenfund, Entschärfung am 20.3.2023, Sperrkreis gilt voraussichtlich zwischen 8 und 18 Uhr',
-         'until' => 1679331600
-       },
+       undef,
        {
          'data' => '#: note: vielleicht nur tagsüber an Werktagen offen?
 #: note: Sperrung gesehen: 2023-03-19 (So) gegen 12:45
