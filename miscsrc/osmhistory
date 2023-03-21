@@ -85,6 +85,7 @@ sub history_log {
 	my $changeset = get_changeset($changeset_id);
 	print "="x70,"\n";
 	print "id $changeset->{id}\n";
+	print "OSMCha-URL: https://osmcha.org/changesets/$changeset->{id}\n";
 	print "Author: $changeset->{user}\n";
 
 	print "Date:   $changeset->{closed_at}";
