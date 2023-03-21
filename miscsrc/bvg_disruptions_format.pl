@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,9 +19,10 @@ use lib "$FindBin::RealBin/..";
 
 use Getopt::Long;
 use JSON::XS qw(decode_json);
-use List::Util qw(any first);
+use List::Util qw(any first uniqstr);
 use YAML::XS qw(LoadFile);
 use Term::ANSIColor qw(colored);
+use Tie::IxHash;
 
 use BBBikeUtil qw(bbbike_root is_in_path);
 
@@ -39,17 +40,55 @@ my $sourceids_current = LoadFile(bbbike_root . "/tmp/sourceid-current.yml");
 my $json = `cat /tmp/bvg_checker_disruption_reports.json`;
 my $d = decode_json $json;
 
-my @records;
+my $qr = qr{(U-Bahn U?\d+|(?:Bus|Tram) [MX]?\d+)};
+
+my %combinedRecords;
 for my $dd (@{ $d->{data}->{allDisruptions} }) {
     next if $dd->{"__typename"} eq "Elevator";
     my $from = "$dd->{gueltigVonDatum} $dd->{gueltigVonZeit}";
     my $sourceid = "bvg2021:" . lc($dd->{linie}) . "#" . $dd->{meldungsId};
+    my $date_row = "$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "");
+    my $title_row = "$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}";
+    my $text_without_line = $dd->{textIntAuswirkung};
+    my $line;
+    if ($text_without_line =~ m{^$qr}) {
+	$line = $1;
+	$text_without_line =~ s{^$qr:\s+}{};
+    }
+    my $key = "$date_row\$title_row\$text_without_line";
+    push @{ $combinedRecords{$key} }, {
+        from              => $from,
+	sourceid          => $sourceid,
+        date_row          => $date_row,
+        title_row         => $title_row,
+	line              => $line,
+        text_without_line => $text_without_line,
+	sev               => $dd->{sev},
+    }
+}
+
+my @records;
+for my $record (values %combinedRecords) {
+    my $from      = $record->[0]->{from};
+    my $date_row  = $record->[0]->{date_row};
+    my $title_row = $record->[0]->{title_row};
+    my $formatted_sourceids = '';; # already contains "\n" if non-empty
+    for my $sourceid (map { $_->{sourceid} } @$record) {
+	$formatted_sourceids .= ($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n";
+    } 
+    my $lines_combined = combine($record, 'line');
+    my $sev_combined = combine($record, 'sev');
+    my $text_without_line = $record->[0]->{text_without_line};
+
     my $text =
-	"$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "") . "\n" .
-	($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n" .
-	"$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}\n" .
-	highlight_words($dd->{textIntAuswirkung}) . "\n";
-    $text .= "SEV: $dd->{sev}\n" if $dd->{sev} ne "";
+	$date_row . "\n" .
+	$formatted_sourceids . 
+	$title_row . "\n";
+    $text .= $lines_combined . "\n" if defined $lines_combined;
+    $text .=
+	highlight_words($text_without_line) . "\n";
+    $text .= "SEV: $sev_combined\n" if defined $sev_combined;
+
     push @records, {from=>$from, text=>$text};
 }
 
@@ -109,6 +148,13 @@ sub wrap_friendly_coloring {
     }
 }
 
+sub combine {
+    my($arrref, $field) = @_;
+    my $combined = join(', ', uniqstr map { $_->{$field} } grep { defined $_->{$field} && $_->{$field} ne '' } @$arrref);
+    $combined = undef if !length $combined;
+    $combined;
+}
+
 __END__
 
 =head1 NAME
@@ -123,9 +169,9 @@ bvg_disruptions_format.pl - format BVG StE<ouml>rungsmeldungen
 =head1 DESCRIPTION
 
 Format BVG disruption messages showing only relevant information
-(from/until dates, description), sorted by date, and also providing
-C<source_id> directives, possibly colored to indicate usage in the
-bbbike data.
+(from/until dates, description), combining same messages, sorted by
+date, and also providing C<source_id> directives, possibly colored to
+indicate usage in the bbbike data.
 
 Requires a previous run of C<bvg_checker.pl --debug> to fetch the JSON
 file with the BVG disruption messages.

@@ -115,8 +115,8 @@ for my $f (@files) {
 	    if $f =~ m{/exif2gpsman$} && !eval { require DateTime::Format::ISO8601; 1 };
 	skip "$f works only if ~/src/Doit exists", 1
 	    if $f =~ m{/copy-doit.pl$} && !-d "$ENV{HOME}/src/Doit";
-	myskip "$f works only with newer List::Util (>= 1.33, impl of 'any')", 1
-	    if $f =~ m{/bvg_disruptions_format.pl$} && !eval q{ use List::Util 1.33; 1 };
+	myskip "$f works only with newer List::Util (>= 1.45, impl of 'uniqstr', and >= 1.33, impl of 'any')", 1
+	    if $f =~ m{/bvg_disruptions_format.pl$} && !eval q{ use List::Util 1.45; 1 };
 
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {
