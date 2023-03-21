@@ -1966,6 +1966,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
+#: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023)
 #: priority: #A
 #: next_check: 2023-03-22
 	2::temp -2218,5133 -927,6888
@@ -2292,7 +2293,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: last_checked: 2022-12-21
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
-#: last_checked: 2023-02-19
+#: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3760,7 +3761,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023)
+#: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -3770,13 +3771,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-03-12 (mapillary) vvv
+#: last_checked: 2023-03-21 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-03-21 vvv
+#: next_check: 2023-03-25 vvv
 # REMOVED --- #: next_check: 2023-05-25 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
-Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
+# REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3786,9 +3787,9 @@ Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
          'from' => 1651953282,
          'id' => 3548,
          'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
-         'text' => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen',
+         'text' => 'Schubertstr.: wegen Bauarbeiten gesperrt, voraussichtlich bis 25.5.2023',
          'type' => 'gesperrt',
-         'until' => 1679353200
+         'until' => 1685030400
        },
        undef,
        {
@@ -4033,7 +4034,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-21
 #: check_frequency: 21d
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -4529,7 +4530,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-03-17 vvv
+#: last_checked: 2023-03-21 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
@@ -4835,6 +4836,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/geplatzes-aquarium-mehr-als-500-bruchstuecke-wurden-entfernt-id208661 (Heiligegeistgasse bis Mitte März 2023 freigeräumt)
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
+#: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
 #: priority: #C
 #: last_checked: 2023-03-16
 #: check_frequency: 14d
@@ -5086,7 +5088,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-03-20
+         'data' => '#: last_checked: 2023-03-21
 #: check_frequency: 21d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -5123,15 +5125,14 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023)
-#: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
+#: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
-#: begin_check: 2023-03-21
-#: next_check: 2023-03-21
+#: REMOVED --- #: begin_check: 2023-03-21 --- #: next_check: 2023-03-21
 	q4::inwork 22431,6068 22467,6135
 ',
          'from' => 1679292000,
          'id' => 3734,
-         'text' => 'Bahnhofstr.: Sperrung im Bereich der Bahnbrücke, eventuell können Radfahrer durch den Bahnhof Köpenick schieben, vom 21.03.2023 07:00 bis 25.03.2023 04:30',
+         'text' => 'Bahnhofstr.: Sperrung im Bereich der Bahnbrücke, Radfahrer können durch den Bahnhof Köpenick schieben, vom 21.03.2023 07:00 bis 25.03.2023 04:30',
          'type' => 'gesperrt',
          'until' => 1679715000
        },
@@ -5166,20 +5167,11 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'type' => 'handicap',
          'until' => undef
        },
+       undef,
        {
-         'data' => '	q4::inwork 4371,10465 4360,10320
-',
-         'from' => 1677391200,
-         'id' => 3737,
-         'source_id' => 'viz2021:13.31502,52.50085,27.02.2023,07:00',
-         'text' => 'Wielandstr.: Kraneinsatz zwischen Kurfürstendamm und Olivaer Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2023 07:00 bis 21.03.2023 13:00',
-         'type' => 'handicap',
-         'until' => 1679400000
-       },
-       {
-         'data' => '#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
-#: XXX Evtl. ist der Asphalt nach den Bauarbeiten besser?
-#: last_checked: 2023-03-14
+         'data' => '#: next_check_id: OSKAR-2023
+#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
+#: last_checked: 2023-03-21
 #: next_check: 2023-04-14
 	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
 ',
@@ -5309,14 +5301,13 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/richtfest-am-neuen-quartier-wohnen-am-campus-der-howoge-gefeiert_a326705 (Fertigstellung November 2022 geplant)
-#: XXX Gesperrt wegen Bauarbeiten an den neuen Baufeldern nördlich der Straßenbahntrasse. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
-#: XXX Mittlerweile ist der Weg bis zum Bahnübergang offen; Schild an der Hermann-Dorner-Allee fehlt
+#: XXX laut osm mittlerweile offen, wegen der Bauarbeiten im angrenzenden Umfeld den Eintrag noch aktiv lassen
 #: add_fragezeichen: Ist der Straßenbahnübergang mittlerweile offen?
 # REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
 # REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
-#: osm_watch: way id="1117716285" version="1"
+#: osm_watch: way id="1117716285" version="2"
 #: last_checked: 2023-03-17
-#: check_frequency: 30d
+#: check_frequency: 14d
 	2::inwork 18818,3332 18834,3315
 ',
          'from' => undef,

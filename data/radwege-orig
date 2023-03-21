@@ -882,6 +882,8 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.471776,52.513945,09.01.2023,06:00 (Leitungsarbeiten zwischen Weichselstr. und Jessnerstr., bis 27.1.2023) (bis 7.2.2023) (inaktiv)
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
+#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023)
+#: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-03-16
 #: check_frequency: 60d
@@ -2001,7 +2003,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-03-17 vvv
+#: last_checked: 2023-03-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3777,7 +3779,7 @@ Verbundsteinpflaster	RW1; 23046,3905 23036,3929 22971,4077 22965,4124
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
-#: last_checked: 2023-02-05 (mapillary)
+#: last_checked: 2023-03-21
 #: check_frequency: 180d
 #: next_check: 2023-07-15
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
@@ -6489,7 +6491,11 @@ Tempo 10	RW6;RW6 21666,12577 21674,12565 21671,12532 21655,12521
 # REMOVED (hier nicht) --- Tempo 10	RW6;RW6 21589,12217 21602,12208 21598,12185 21581,12182
 #: note ^^^
 Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
-die letzten Meter sind benutzungspflichtig	RW1; 22365,6149 22467,6135
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
+#: last_checked: 2023-03-21
+#: check_frequency: 120d
+	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
 	RW6;RW6 21473,10369 21546,10352
 	RW6;RW6 21542,10398 21549,10377 21546,10352 21548,10329

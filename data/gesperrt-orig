@@ -940,7 +940,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023)
 #: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.07.2023)
-#: last_checked: 2023-02-05 (mapillary) vvv
+#: last_checked: 2023-03-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-07-15 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -3538,8 +3538,11 @@ Drängelgitter	BNP:3::trailer=10 22085,5111
 #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung)
 #: last_checked: 2023-03-17 vvv
+#: osm_watch: way id="1155774800" version="1"
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315
+#: osm_watch: way id="1155774804" version="1"
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598
+#: osm_watch: way id="1155774792" version="1"
 (Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418
 #: last_checked ^^^
 # 
@@ -3740,7 +3743,7 @@ Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:q4
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/bebauungsplan-fuer-grundschule_a365015
 #: osm_watch: way id="1086484458" version="2"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-21
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -3866,7 +3869,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-21
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4895,25 +4898,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: next_check: 2023-12-31
 Trebbiner Straße (Mahlow): Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11065,-5338 11077,-5335 11119,-5326
 # 
-# REMOVED (laut osm #: next_check_id: BERLINERMAHLOW-2021
-#: by: osm
-#: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391
-#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe am 16. März 2023)
-#: note: laut osm Sperrung bis 01/2023
-#: osm_watch: way id="663005792" version="11" brb
-#: also_indoor: traffic
-#: last_checked: 2023-03-16 (osm, offen!) vvv
-# REMOVED --- #: check_frequency: 360d vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2023-01-31 vvv
-Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
-tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393
-tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (laut osm zurückgebaut) --- #: next_check_id: BERLINERMAHLOW-2021 --- #: by: osm --- #: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391 --- #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/ --- #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe am 16. März 2023) --- #: note: laut osm Sperrung bis 01/2023 --- #: osm_watch: way id="663005792" version="11" brb --- #: also_indoor: traffic --- #: last_checked: 2023-03-16 (osm, offen!) vvv --- # REMOVED --- #: check_frequency: 360d vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2023-01-31 vvv --- Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470 --- tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393 --- tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (andere Straßenführung) --- #: XXX wann wird die Straße fertig werden? wie wird die genaue Wegführung sein? wird hier auch gepflastert sein? --- #: last_checked: 2019-05-25 --- #: check_frequency: 180d --- Neue Plantage: hier noch Baustelle	2:inwork -13116,-1525 -13017,-1426
 # 
 #: by: osm
