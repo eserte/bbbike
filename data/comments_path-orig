@@ -135,7 +135,7 @@ hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 1015
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14280,12223 14274,12190
 #: XXX_prog: RL:ja, GPS:nein
 #: XXX_prog: eigentlich nicht notwendig, da als RW8/RW9 bereits gekennzeichnet. Allerdings wird das im CGI noch gar nicht visualisiert. Vielleicht in der der stilisierten Straßenführung auf der *rechten* (falschen) Seite unterbringen?
-Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8322,11715 8456,11763 8489,11782 8571,11846
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8221,11690 8322,11715 8456,11763 8489,11782 8571,11846
 # REMOVED (diese Angaben sind nach temp-blockings gewandert) --- #: XXX_indoor: hmm, folgende zwei Datensätze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben. --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10783,12502 10803,12470 10805,12468 10831,12371 --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10831,12371 10805,12468 10803,12470 10783,12502
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat für comments_misc)
 #: note: und nicht der Asphaltstraße
@@ -195,7 +195,7 @@ als "Neue Dorfstr." ausgeschildert	CS; 52483,75441 52181,75778
 als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
 # REMOVED (anscheinend gibt es hier eine direkte Überquerungsmöglichkeit für Fußgänger/Radfahrer) --- #: by: Susan Richter: vvv --- Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördlich der Kreuzung	PI; 10737,132 10753,83 10913,96 --- Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	CP; 10913,96 10753,83 10782,-24 --- #: by: ^^^
 Richtung Bellevuestr. und Kemperplatz	CS; 8548,11571 8490,11562 8442,11555
-Ausgeschildert als Kemperplatz	CP2; 8203,11686 8209,11671
+Ausgeschildert als Kemperplatz	CP2; 8221,11690 8226,11672
 Richtung Linkstr.	CS; 8573,11404 8554,11386 8474,11350
 Einfahrt gegenüber Waldcafe	CP2; 30038,5338 29450,5435
 Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4971,6345 4985,6370

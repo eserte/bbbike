@@ -609,7 +609,7 @@ Lüdenscheider Weg -> Goldbeckweg: Mittelstreifen	3::igndisp -1037,15482 -1389,15
 Goldbeckweg -> Daumstr.: Mittelstreifen	3::igndisp -1532,15225 -1389,15285 -1485,15463
 Germersheimer Weg	1 -4489,15014 -4507,15068 -4499,15152 -4497,15176 -4495,15198 -4466,15460
 Zweibrücker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
-Mittelstreifen	3nocross::ignrte 8226,11458 8261,11463 8301,11469 8358,11477 8374,11479 8479,11493 8542,11502
+Mittelstreifen	3nocross::ignrte 8217,11455 8261,11463 8301,11469 8358,11477 8374,11479 8479,11493 8542,11502
 Potsdamer Str. -> Ludwig-Beck-Str.: Mittelstreifen	3::igndisp 8358,11477 8301,11469 8309,11390
 Ludwig-Beck-Str. -> Potsdamer Str.: Mittelstreifen	3::igndisp 8309,11390 8301,11469 8261,11463
 Potsdamer Str. -> Varian-Fry-Str.: Mittelstreifen	3::igndisp 8479,11493 8374,11479 8389,11378
@@ -1084,7 +1084,7 @@ Jägerstr. -> Brandenburger Str.: Fußgängerzone	3::igndisp -13025,-901 -12999,-10
 Jägerstr. -> Jägerstr.: Fußgängerzone	3::igndisp -13025,-901 -12999,-1000 -12973,-1106
 Jägerstr. -> Brandenburger Str.: Fußgängerzone	3::igndisp -12973,-1106 -12999,-1000 -13173,-1039
 Jägerstr. -> Jägerstr.: Fußgängerzone	3::igndisp -12973,-1106 -12999,-1000 -13025,-901
-Eichhornstr. - Potsdamer: abbiegen verboten	3 8232,11414 8226,11458 8145,11438
+Eichhornstr. - Potsdamer: abbiegen verboten	3 8232,11414 8217,11455 8145,11438
 Mittelstreifen	3nocross::ignrte 11543,10015 11623,9841 11673,9720
 Kottbusser Damm -> Schinkestr.: Mittelstreifen	3::igndisp 11543,10015 11623,9841 11734,9856
 Schinkestr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11734,9856 11623,9841 11673,9720

@@ -1018,7 +1018,7 @@ Tiergarten: Parkweg	Q1 8005,11627 8014,11753 8016,11770 8020,11937 8022,12016
 Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8049,12140
 Tiergarten: Mosaikpflaster	Q1 8049,12140 8055,12186
 Tiergarten: Asphalt	Q0 8214,12205 8215,12156
-Tiergarten: Parkweg	Q1 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
+Tiergarten: Parkweg	Q1 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
 Tiergarten: Parkweg	Q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742 6540,11754
 Tiergarten: Parkweg	Q1 7775,12114 7772,12040
 Tiergarten: Asphalt	Q0 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
@@ -1093,7 +1093,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-03-14
+#: last_checked: 2023-03-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1339,7 +1339,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-#: osm_watch: way id="25216398" version="34"
+#: osm_watch: way id="25216398" version="35"
 Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21846,5856 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1403,7 +1403,7 @@ Köpenicker Allee: Asphalt mit Rissen	Q1+; 19206,9243 19267,9201 19392,9116 19500
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
-Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
+Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
 Sandinostr.: Asphalt	Q0 15799,14674 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
@@ -3419,7 +3419,7 @@ Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12592,12472 12632,12630
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 Griechische Allee: Asphalt	Q0 18119,6693 18076,6693 18025,6700 17962,6674 18029,6674 18079,6678 18159,6642 18273,6606 18429,6582 18494,6588
 Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,6679 18158,6689 18119,6693
-Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16166,12292
+Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16065,12315 16166,12292
 Straße 18: Beton/Asphalt	Q0 16429,13146 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
 Straße 77: Verbundsteinpflaster	Q1+ 15408,12394 15320,12375
@@ -10671,7 +10671,7 @@ Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16
 Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512
 #: by: https://nitter.cz/VIZ_Berlin/status/1617486809470013442#m (Ende Februar 2023?)
 #: source_id: viz2021:13.54537,52.542117,17.10.2022,10:12 (Fahrbahninstandsetzung bis 9.12.2022) (inaktiv)
-#: osm_watch: way id="8014720" version="32"
+#: osm_watch: way id="8014720" version="33"
 #: XXX Nach der Instandsetzung bessere Qualität, vielleicht asphaltiert?
 #: last_checked: 2022-12-30 (mapillary)
 #: next_check: 2023-02-28
@@ -11042,7 +11042,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -13042,6 +13042,8 @@ Leinestr. [Stichstraße]: Beton	Q1+ 11878,7501 11888,7455
 Waiblinger Weg: Gehwegplatten	Q0- 17743,5260 17771,5278
 Tschaikowskistr. [Stichstraße]: Beton	Q1+ 9620,18935 9642,18870
 Wiebestr.: Gehwegplatten	Q0- 4527,13244 4495,13107
+(am Stasi-Museum): gepflastert	Q2+ 15889,12212 16036,12195 16059,12241
+(am Stasi-Museum): Beton	Q1+ 16059,12241 16065,12315
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17993,9 +17995,10 @@ Erich-Kuttner-Str.: Asphalt mit einigen Schäden	Q1+ 14590,13560 14551,13571 1443
 #: by: Regine Bast:
 #: corrected_by: srt (Beton, Q0 -> ...)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1306690.php
 #: add_fragezeichen: Wird die Fahrbahn nach den Bauarbeiten besser sein?
 #: last_checked: 2023-03-11 (letzte Deckschicht fehlt)
-# REMOVED --- #: next_check: 2022-12-31
+#: next_check: 2023-07-31
 Eiswaldtstr.: Asphalt, stellenweise etwas uneben	Q0- 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 # 
 #: by: Heiko Schmitz:
@@ -22736,7 +22739,7 @@ Harriesstr.: Kleinsteinpflaster	Q2+ 525,15435 659,15469 768,15486
 Rapsstr.: Asphalt	Q0 755,15123 702,15274 693,15335 665,15414 659,15469
 #: corrected_by: srt (Radweg ist Verbundsteinpflaster)
 #: next_check_id: WILHELMVONSIEMENSPARK-2019
-#: by: http://www.infravelo.de/projekt/wilhelm-von-siemens-park/ (Sanierung des Verbundsteinpflasters, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Start 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/wilhelm-von-siemens-park/ (Sanierung des Verbundsteinpflasters, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Start 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2022) (4. Quartal 2019 - 4. Quartal 2019, falsch?)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1146290.php (Bauarbeiten im Park ab 15.11.2021 für insgesamt 1 1/2 Jahre, Sanierung einiger Wege, möglicherweise auch hier)
 #: XXX Radweg wird asphaltiert
 #: last_checked: 2023-03-18
@@ -23105,8 +23108,10 @@ Müngersdorfer Str.: guter Asphalt	Q0 20386,145 20351,287 20326,374
 #: note: es existiert ein paralleler Verbundsteinpflasterweg, vermutlich nur für Fußgänger
 #: last_checked: 2022-09-24 (mapillary)
 #: check_frequency: 180d
+#: osm_watch: way id="152708910" version="5"
 Müngersdorfer Str.: mäßiges Kopfsteinpflaster	Q2 20386,145 20430,-17
 #: confirmed_by: srt
+#: osm_watch: way id="751726576" version="4"
 Müngersdorfer Str.: teils guter, teils mäßiger Asphalt	Q1+ 20430,-17 20479,-196 20505,-217
 #: by: ^^^
 # 

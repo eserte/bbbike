@@ -155,7 +155,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://api.fixmyberlin.de/api/projects/387 (zwischen Arnulfstraße und Tankredstraße stadtauswärts; execution; construction_completed_date: 2020-12-31)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
-#: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021) (mittlerweile gelöscht)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
 #: last_checked: 2023-03-11 vvv
 #: check_frequency: 90d vvv
@@ -233,9 +233,9 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: last_checked ^^^
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463
-	RW2; 8261,11463 8226,11458
+	RW2; 8261,11463 8217,11455
 # REMOVED --- #: note: früher "für Radfahrer freigegebene Busspur gilt 7-20 Uhr", mittlerweile ist die Freigabe durchgestrichen
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8096,11393 8083,11381
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8096,11393 8083,11381
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.preussischer-kulturbesitz.de/news-detail/article/2020/11/18/kulturforum-bauarbeiten-fuer-museum-des-20-jahrhunderts-der-nationalgalerie-beginnen.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/museum-der-moderne-kulturforum.123/page-3#post-14361 (bis 2026?)
@@ -252,8 +252,8 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8031,11249 8000,11137
 	RW1; 8000,11137 7980,11070
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7980,11070 8000,11137 8031,11249 8065,11349 8083,11381 8096,11393 8145,11438
-	RW2; 8145,11438 8226,11458
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8261,11463 8301,11469 8358,11477 8374,11479 8479,11493
+	RW2; 8145,11438 8217,11455
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8261,11463 8301,11469 8358,11477 8374,11479 8479,11493
 	RW1; 8479,11493 8542,11502
 	RW2; 8443,10780 8390,10835 8378,10858
 hier wurde wahrscheinlich das Radwegschild vergessen	RW1; 8378,10858 8342,10916
@@ -883,7 +883,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023)
-#: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023)
+#: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-03-16
 #: check_frequency: 60d
@@ -1393,9 +1393,9 @@ Verbundsteinpflaster	RW1; 6213,6423 6168,6467
 #: historical_note: früher mit Benutzungspflicht
 Verbundsteinpflaster	RW1; 6168,6467 6071,6559
 	RW2; 8430,10710 8371,10769 8358,10782 8328,10831
-	RW1;RW9 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686
-	RW1; 8203,11686 8172,11679
-hier steht ein Radwegschild, wird aber nicht wiederholt, aber die Fahrbahnmarkierungen für Radfahrer zeigen keine Verschwenkung an	RW8; 8172,11679 8203,11686
+	RW1;RW9 8571,11846 8489,11782 8456,11763 8322,11715 8221,11690
+	RW1; 8221,11690 8172,11679
+hier steht ein Radwegschild, wird aber nicht wiederholt, aber die Fahrbahnmarkierungen für Radfahrer zeigen keine Verschwenkung an	RW8; 8172,11679 8221,11690
 	RW2; 18946,13472 19181,13485
 Verbundsteinpflaster	RW1; 19181,13485 18946,13472
 stellenweise Grünbeschichtung	RW4; 18946,13472 18875,13467
@@ -1468,7 +1468,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="23"
-#: last_checked: 2023-02-27
+#: last_checked: 2023-03-22
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1482,7 +1482,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="37"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2023-02-22
+#: last_checked: 2023-03-22
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2803,14 +2803,14 @@ asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-02-27
+#: last_checked: 2023-03-22
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen
 # REMOVED XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-03-08
+#: last_checked: 2023-03-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2824,7 +2824,7 @@ neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 #: by: Cord Unruh
 	RW6;RW6 15458,11306 15484,11292 15567,11247 15578,11241 15620,11210
 	RW4;RW4 15904,12340 15896,12273
-	RW4;RW3 15896,12273 15886,12190 15879,12131
+	RW4;RW3 15896,12273 15889,12212 15886,12190 15879,12131
 	RW3; 15879,12131 15871,12060
 	RW4; 15863,11992 15871,12060 15879,12131
 #: by: René (rkarlo): vvv
@@ -2876,7 +2876,7 @@ Radweg nur aufgemalt	RW1; 7487,10643 7517,10775 7534,10850
 Gehwegplatten mit Schäden	RW1;RW1 7689,10514 7478,10612
 	RW6;RW6 7160,11225 7103,11247 6851,11346
 	RW1;RW1 8740,11524 8596,11508 8542,11502
-	RW1;RW2 8172,11679 8226,11458
+	RW1;RW2 8172,11679 8217,11455
 	RW3; 8005,11627 8094,11657
 die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 8094,11657 8172,11679
 	RW2; 8172,11679 8094,11657

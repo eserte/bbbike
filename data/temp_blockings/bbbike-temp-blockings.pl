@@ -3686,7 +3686,7 @@ EOF
        text  => 'Bellevuestraße, Presseball, Straße in beide Richtungen gesperrt, Dauer: 13.01.2006 19:00 Uhr bis 15.01.2006 06:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 8442,11555 8326,11613 8209,11671 8203,11686
+	q4 8442,11555 8328,11617 8226,11672 8221,11690
 EOF
      },
      { from  => 1137548634, # 2006-01-18 02:43
@@ -4393,7 +4393,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002668',
        data  => <<EOF,
-	q4; 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
+	q4; 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 EOF
      },
      { from  => 1146175200, # 2006-04-28 00:00
@@ -4853,7 +4853,7 @@ EOF
 	2::temp 8354,12416 8391,12389 8546,12279
 	2::temp 7373,11594 7362,11561 7356,11517
 	2::temp 6809,11979 6984,11859 7058,11809
-	2::temp 8203,11686 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
+	2::temp 8221,11690 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
 	2::temp 8119,12414 8055,12186
 	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8052,12033 8057,12065 8034,12093
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -5369,7 +5369,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-	1::inwork 15904,12340 15896,12273 15886,12190 15879,12131 15871,12060 15863,11992
+	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -10041,7 +10041,7 @@ EOF
        source_id => 'IM_006666',
        data  => <<EOF,
 	2::temp 8374,11479 8479,11493 8542,11502
-	2::temp 8226,11458 8261,11463 8301,11469 8358,11477
+	2::temp 8217,11455 8261,11463 8301,11469 8358,11477
 EOF
      },
      { from  => 1189842239, # 2007-09-15 09:43
@@ -11945,7 +11945,7 @@ EOF
        text  => 'CSD am 28.6.2008',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8358,11477 8301,11469 8261,11463 8226,11458 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
+	2::temp 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 8553,11630 8548,11571 8542,11502 8479,11493 8374,11479
 	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351 9303,12343 9141,12320 9164,12172 9064,12156
 	2::temp 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8737,12098 8743,12099 8861,12125 9054,12154
@@ -11974,7 +11974,7 @@ EOF
 	3 6512,11608 6679,11602 6809,11570 6869,11567
 	3 7429,10366 7413,10244 7384,10127
 	3 6719,10347 6753,10446 6743,10615 6725,10641
-	3 8172,11679 8226,11458 8232,11414
+	3 8172,11679 8217,11455 8232,11414
 	3 7444,10479 7633,10394 7744,10372
 	3 9028,12307 9141,12320 9131,12438
 	3 7744,10372 7633,10394 7444,10479
@@ -11996,7 +11996,7 @@ EOF
 	3 7698,10147 7579,10183 7526,9969
 	3 7384,10127 7413,10244 7429,10366
 	3 7003,10513 7033,10396 7227,10489 7281,10510
-	3 8232,11414 8226,11458 8172,11679
+	3 8232,11414 8217,11455 8172,11679
 	3 9369,12253 9358,12351 9343,12464
 	3 9846,12516 9858,12410 9873,12315 9877,12293
 	3 8205,10979 8104,11037 7980,11070 7747,11075
@@ -18204,7 +18204,7 @@ EOF
 #: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
 #: by: https://csd-berlin.de/demo-route-finale-2022/
 #: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
-	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8226,11458 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
+	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
 	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
 	3 8573,11404 8542,11502 8548,11571
@@ -18220,7 +18220,7 @@ EOF
 	3 8630,12310 8637,12258 8641,12227 8643,12208
 	3 6841,11114 6880,11110 7004,11168 7115,11220
 	3 6742,11099 6873,11011 7002,11034
-	3 8232,11414 8226,11458 8172,11679
+	3 8232,11414 8217,11455 8172,11679
 	3 8548,11571 8542,11502 8442,11555
 	3 8548,11571 8542,11502 8573,11404
 	3 7444,10479 7633,10394 7744,10372
@@ -18281,7 +18281,7 @@ EOF
 	3 9992,11682 10000,11691 9997,11713
 	3 6869,11567 6809,11570 6679,11602
 	3 6550,11954 6642,12010 6164,11947
-	3 8172,11679 8226,11458 8232,11414
+	3 8172,11679 8217,11455 8232,11414
 	3 9692,11732 9701,11656 9702,11647
 	3 9432,11702 9444,11616 9456,11513
 	3 7227,10489 7033,10396 6937,10407
@@ -21421,7 +21421,7 @@ EOF
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 #: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
+	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
 	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
 	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
@@ -21753,16 +21753,17 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2022-04-21 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-04-24 23:59:59"),
+     { from  => $isodate2epoch->("2023-04-20 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-04-23 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.4.2022 bis 24.4.2022',
+       recurrences => [['yearly', days => 20, months => 4]],
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.04.2023 bis 23.04.2023',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
 #: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
+#: by: https://www.winzerfest-koepenick.de/?date=20230322
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -24745,10 +24746,10 @@ EOF
 #: by: https://www.berlinerbaeder.de/aktuelles/detail/einblicke-in-die-sanierung-des-stadtbades-tiergarten/ (Fertigstellung Mitte 2023)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
-#: osm_watch: way id="462738551" version="15"
+#: osm_watch: way id="462738551" version="16"
 #: osm_watch: way id="848019125" version="3"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-01-07
+#: last_checked: 2023-03-21 (osm)
 #: next_check: 2023-08-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
@@ -26176,10 +26177,10 @@ EOF
 	2::temp 8600,12165 8538,12245 8592,12252
 	2::temp 8119,12414 8055,12186
 	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 8209,11671 8203,11686 8210,11775
-	3 8210,11775 8203,11686 8209,11671
-	3 8226,11458 8172,11679 8026,11764
-	3 8026,11764 8172,11679 8226,11458
+	3 8226,11672 8221,11690 8210,11775
+	3 8210,11775 8221,11690 8226,11672
+	3 8217,11455 8172,11679 8026,11764
+	3 8026,11764 8172,11679 8217,11455
 	3 7429,12070 7383,12095 7031,12320
 	3 7031,12320 7383,12095 7429,12070
 	3 7822,12201 7816,12150 7823,12120
@@ -26190,7 +26191,7 @@ EOF
 	3 8327,12174 8344,12221 8391,12389
 	3 6692,11365 6851,11346 7103,11247
 	3 7103,11247 6851,11346 6692,11365
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 7004,11168 6880,11110
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8221,11690 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 7004,11168 6880,11110
 	1::temp 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 6744,11936 6809,11979 6828,12031 6884,12006
 	3 8014,11753 8005,11627 7943,11431
@@ -26324,9 +26325,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-03-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-03-22 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. März 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-04-04 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-04-05 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. April 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26356,7 +26357,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023)
 #: priority: #A
-#: next_check: 2023-03-22
+#: next_check: 2023-04-05
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
@@ -36892,7 +36893,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-03-18
+#: last_checked: 2023-03-22
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37118,18 +37119,23 @@ EOF
 	q3::inwork 6447,9661 6348,9541
 EOF
      },
-     { from  => 1667170800, # 2022-10-31 00:00
-       until => 1678541944, # undef, # XXX
-       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, ab 1.11.2022',
+     { from  => $isodate2epoch->("2023-04-10 00:00:00"), # 1667170800, # 2022-10-31 00:00
+       until => $isodate2epoch->("2023-05-02 23:59:59"), # 1678541944, # undef, # XXX
+       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Gallwitzallee bis Beselerstr., vom 11.04.2023 bis 02.05.2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
        data  => <<EOF,
 #: next_check_id: EISWALDT-2022
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
-#: note: Soll noch 2022 fertig werden.
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1306690.php (Fortsetzung)
+#: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
+#: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
+#: next_check: 2023-05-02
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
-	q4::inwork 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
+westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
+# REMOVED (hier später) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
+# REMOVED (hier später) --- östlicher Abschnitt ab Am Gemeindepark	q4::inwork 7172,2343 7285,2377
 EOF
      },
      { from  => undef, # 
@@ -37510,15 +37516,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1679504598, # undef, # XXX
        text  => 'Schottstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: SCHOTT-2022
-#: XXX vermutlich Arbeiten der Wasserbetriebe
-#: also_indoor: traffic (ex-B)
-#: last_checked: 2023-03-02
-#: check_frequency: 21d
+# REMOVED (beendet) --- #: next_check_id: SCHOTT-2022 --- #: XXX vermutlich Arbeiten der Wasserbetriebe --- #: also_indoor: traffic (ex-B) --- #: last_checked: 2023-03-02 --- #: check_frequency: 21d
 	q4::inwork; 16255,12224 16276,12273
 EOF
      },
@@ -37533,6 +37535,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
+#: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: priority: #C
 #: last_checked: 2023-03-16
 #: check_frequency: 14d
@@ -37573,13 +37576,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1676056532, # bei osm entfernt, MarkCompletedHighwayConstruction -- undef, # XXX
+       until => undef, # 1676056532, # bei osm entfernt, MarkCompletedHighwayConstruction -- undef, # XXX
        text  => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=733154#post733154',
        data  => <<EOF,
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G,ex-B) --- #: last_checked: 2023-01-12 (daf)
-	q4::inwork 5350,12906 5341,12875 5376,12781
+# REMOVED --- nördlicher Abschnitt	q4::inwork 5350,12906 5341,12875 5376,12781
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G[falsch])
+#: osm_watch: way id="169659243" version="21"
+#: last_checked: 2023-03-19 (osm)
+mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 EOF
      },
      { from  => undef, # 
@@ -38140,6 +38147,31 @@ EOF
 #: note: vielleicht nur tagsüber an Werktagen offen?
 #: note: Sperrung gesehen: 2023-03-19 (So) gegen 12:45
 	2::temp 12582,8651 12434,8776
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2023-03-22 vvv
+Roedeliusplatz	q3::inwork 16248,12177 16158,12191
+Magdalenenstr., nördlicher Abschnitt	q3::inwork 16158,12191 16166,12292
+Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1679507421, # 2023-03-22 18:50
+       until => 1682114399, # 2023-04-21 23:59
+       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnernerung, von 11. bis 21. April 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
+	q4::inwork 16563,7012 16615,7062 16507,7254
 EOF
      },
     );

@@ -1309,7 +1309,33 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
+#: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
+#: by: https://www.winzerfest-koepenick.de/?date=20230322
+# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
+	2::temp 22138,4642 22111,4562 22093,4499
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+	2::temp 22111,4562 22162,4546 22214,4548
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1681992000,
+         'id' => 2419,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.04.2023 bis 23.04.2023',
+         'type' => 'gesperrt',
+         'until' => 1682287199
+       },
        undef,
        undef,
        undef,
@@ -1728,10 +1754,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlinerbaeder.de/aktuelles/detail/einblicke-in-die-sanierung-des-stadtbades-tiergarten/ (Fertigstellung Mitte 2023)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
-#: osm_watch: way id="462738551" version="15"
+#: osm_watch: way id="462738551" version="16"
 #: osm_watch: way id="848019125" version="3"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-01-07
+#: last_checked: 2023-03-21 (osm)
 #: next_check: 2023-08-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
@@ -1968,16 +1994,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023)
 #: priority: #A
-#: next_check: 2023-03-22
+#: next_check: 2023-04-05
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
 ',
-         'from' => 1679353200,
+         'from' => 1680559200,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. März 2023 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. April 2023 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1679476500
+         'until' => 1680682500
        },
        undef,
        {
@@ -4418,7 +4444,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-03-18
+#: last_checked: 2023-03-22
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -4576,7 +4602,26 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: EISWALDT-2022
+#: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1306690.php (Fortsetzung)
+#: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
+#: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
+#: next_check: 2023-05-02
+# REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
+westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
+# REMOVED (hier später) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
+# REMOVED (hier später) --- östlicher Abschnitt ab Am Gemeindepark	q4::inwork 7172,2343 7285,2377
+',
+         'from' => 1681077600,
+         'id' => 3670,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
+         'text' => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Gallwitzallee bis Beselerstr., vom 11.04.2023 bis 02.05.2023',
+         'type' => 'handicap',
+         'until' => 1683064799
+       },
        undef,
        {
          'data' => '	2::inwork 40032,-65726 40133,-65833 40166,-66024 40300,-66128 40499,-66148 41566,-66838
@@ -4816,20 +4861,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: SCHOTT-2022
-#: XXX vermutlich Arbeiten der Wasserbetriebe
-#: also_indoor: traffic (ex-B)
-#: last_checked: 2023-03-02
-#: check_frequency: 21d
-	q4::inwork; 16255,12224 16276,12273
-',
-         'from' => undef,
-         'id' => 3703,
-         'text' => 'Schottstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Roedeliusplatz und Fanningerstr., offen Richtung Süden',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
 #: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
@@ -4837,6 +4869,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
+#: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: priority: #C
 #: last_checked: 2023-03-16
 #: check_frequency: 14d
@@ -4884,7 +4917,21 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- nördlicher Abschnitt	q4::inwork 5350,12906 5341,12875 5376,12781
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G[falsch])
+#: osm_watch: way id="169659243" version="21"
+#: last_checked: 2023-03-19 (osm)
+mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
+',
+         'from' => undef,
+         'id' => 3708,
+         'source_id' => 'https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=733154#post733154',
+         'text' => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
@@ -5328,6 +5375,33 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'text' => 'Idealpassage: Durchfahrt kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2023-03-22 vvv
+Roedeliusplatz	q3::inwork 16248,12177 16158,12191
+Magdalenenstr., nördlicher Abschnitt	q3::inwork 16158,12191 16166,12292
+Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3753,
+         'text' => 'Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
+	q4::inwork 16563,7012 16615,7062 16507,7254
+',
+         'from' => 1679507421,
+         'id' => 3754,
+         'text' => 'Rodelbergweg und Neue Krugallee: Fahrbahnernerung, von 11. bis 21. April 2023',
+         'type' => 'handicap',
+         'until' => 1682114399
        }
      
 );

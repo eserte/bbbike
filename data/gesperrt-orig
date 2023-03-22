@@ -947,7 +947,7 @@ Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse): Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
-#: osm_watch: way id="25216398" version="34"
+#: osm_watch: way id="25216398" version="35"
 #: check_frequency: 30d
 Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699 21605,5687
 # REMOVED (offen) --- Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21581,5670 21507,5620
@@ -3723,8 +3723,9 @@ Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,37
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-01 vvv
 #: osm_watch: way id="358602468" version="9"
-#: osm_watch: way id="24189226" version="24"
+#: osm_watch: way id="24189226" version="25"
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
+#: osm_watch: way id="72183569" version="10"
 #: valid: -20230601
 Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:q4:inwork	13333,9929 13418,9944 13579,10146
 #: next_check ^^^
