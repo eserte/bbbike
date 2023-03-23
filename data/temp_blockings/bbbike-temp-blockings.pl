@@ -28315,7 +28315,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-02-24
+#: last_checked: 2023-03-23
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36374,7 +36374,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-18
+#: last_checked: 2023-03-23
 #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36824,18 +36824,19 @@ EOF
 	q4::inwork 2641,12458 2658,12312
 EOF
      },
-     { from  => $isodate2epoch->("2023-02-22 06:00:00"), # 1665291600, # 2022-10-09 07:00
-       until => $isodate2epoch->("2023-02-24 13:00:00"), # 1665770400, # 2022-10-14 20:00
-       text  => 'Uhlandstr.: Sperrung zwischen Güntzelstr. und Fechnerstr., evtl. sind auch Radfahrer betroffen, vom 23.02.2023 06:00 bis 24.02.2023 13:00', # was 'vom 10.10.2022 07:00 bis 14.10.2022 20:00',
+     { from  => $isodate2epoch->("2023-03-22 10:00:00"), # 1665291600, # 2022-10-09 07:00
+       until => $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
+       text  => 'Uhlandstr.: laut Verkehrsmeldung Sperrung für Radfahrer zwischen Güntzelstr. und Fechnerstr., vom 23.03.2023 10:00 bis 17.04.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.322705,52.4884,10.10.2022,07:00', # inaktiv
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
 #: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
 #: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
-#: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023)
-#: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023)
-	q4::inwork; 4920,9000 4920,9029 4957,9437
+#: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
+#: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
+#: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023)
+	q4::inwork 4920,9000 4920,9029 4957,9437
 EOF
      },
      { from  => 1665871200, # 2022-10-16 00:00
