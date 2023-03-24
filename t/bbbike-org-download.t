@@ -100,8 +100,8 @@ for my $url (@urls) {
 	    }
 	    my $stderr = join("", <$errfh>);
 	    if (!@listing) {
-		if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') eq 'precise') {
-		    diag "Known failure on precise (openssl problem), skip rest of tests";
+		if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') =~ m{^(precise|trusty)$}) {
+		    diag "Known failure on precise+trusty (openssl problem), skip rest of tests";
 		    exit 0;
 		} else {
 		    diag "Command failed: $stderr";
