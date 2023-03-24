@@ -1846,7 +1846,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-03-16 vvv
+#: last_checked: 2023-03-23 (mapillary) vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1870,11 +1870,11 @@ Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 	RW3; 10525,12789 10515,12780 10431,12709
 Busspur ist immer gültig	RW5; 10431,12709 10352,12627 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
-#: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-03-16 vvv
-#: check_frequency: 14d vvv
 	RW3; 10176,12506 10152,12491
-Bushaltestelle	RW5; 10152,12491 10063,12438
+Busspur ist immer gültig	RW5; 10152,12491 10063,12438
+#: XXX noch nicht ausgeschildert vvv
+#: last_checked: 2023-03-23 (mapillary) vvv
+#: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
 Radspur	RW3; 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351
@@ -4610,7 +4610,7 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Sanierung des Radwegs? vvv
-#: last_checked: 2022-08-21 (mapillary) vvv
+#: last_checked: 2023-03-24 vvv
 #: check_frequency: 270d vvv
 Radweg antik und unbenutzbar	RW1;RW1 18843,9952 18881,9865
 Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816

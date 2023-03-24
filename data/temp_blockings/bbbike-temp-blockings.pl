@@ -389,7 +389,7 @@ EOF
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5, start => "2022-05-02T00:00:00"]],
+       recurrences => [['yearly', days => 1, months => 5, start => "2023-05-02T00:00:00"]],
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -398,6 +398,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1170557.php (2022 vermutlich nicht)
 #: by: https://berliner-abendblatt.de/2022/01/26/myfest-findet-nicht-statt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Anfrage)
+#: by: https://berliner-abendblatt.de/berlin-news/revolutionaere-demo-am-1-mai-von-neukoelln-nach-kreuzberg-id214482 (findet 2023 auch nicht statt)
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -21627,7 +21628,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Fähren F21 und F23: fahren nur ab 5. April bis zum 2. November, fahren nicht am Montag',
+       text  => 'Fähren F21 und F23: fahren nur ab 1. April bis zum 5. November, fahren nicht am Montag',
        recurring => 1,
        accept_multi_feature_distance => 5500,
        type  => 'gesperrt',
@@ -21644,7 +21645,7 @@ EOF
      { from  => undef,
        until => 1566712261, # Fähre außer Betrieb --- undef,
        recurring => 1,
-       text  => 'Karniner Fähre: fährt nur von Anfang Mai bis Ende September',
+       text  => 'Karniner Fähre: fährt nur von Ende April/Anfang Mai bis Ende September/Anfang Oktober',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
@@ -28384,7 +28385,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2023-08-21 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten, bis August 2023; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis August 2023; außerdem Einbahnstraßenregelung in der Andernacher Str.',
        type  => 'handicap',
        # alt: source_id => '2147342174',
        data  => <<EOF,
@@ -28412,7 +28413,7 @@ EOF
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2022-12-21
+#: last_checked: 2023-03-24
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -35174,9 +35175,9 @@ EOF
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: osm_watch: way id="734271970" version="5"
 #: osm_watch: way id="975241319" version="5"
-#: osm_watch: way id="970452276" version="4"
+#: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-19
+#: last_checked: 2023-03-22 (osm)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -36832,6 +36833,8 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
 #: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
+#: by: https://nitter.cz/VIZ_Berlin/status/1639176473285394432#m
+#: by: https://nitter.net/pic/orig/media%2FFr6HpwIWcAAZJMb.jpg
 #: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
 #: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
@@ -37885,8 +37888,8 @@ EOF
 EOF
      },
      { from  => 1679292000, # 2023-03-20 07:00
-       until => 1679715000, # 2023-03-25 04:30
-       text  => 'Bahnhofstr.: Sperrung im Bereich der Bahnbrücke, Radfahrer können durch den Bahnhof Köpenick schieben, vom 21.03.2023 07:00 bis 25.03.2023 04:30',
+       until => $isodate2epoch->("2023-08-28 18:00:00"), # 1679715000, # 2023-03-25 04:30
+       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Radfahrer Richtung Norden sollen durch den Bahnhof Köpenick schieben, bis zum 28.08.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -37899,13 +37902,17 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFqxhyiCXgAERnYq.jpg (Vorarbeiten)
 #: by: https://viz.berlin.de/wp-content/uploads/ULP_3_Radverkehr-1.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1304897.php
+#: by: https://nitter.cz/VIZ_Berlin/status/1639218010979278848#m
+#: by: https://nitter.net/pic/orig/media%2FFr-rz3SXgAIyH7I.jpg
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: source_id: bvg2021:x69#BVG317810_0
-#: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023)
+#: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
+#: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023)
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
-#: REMOVED --- #: begin_check: 2023-03-21 --- #: next_check: 2023-03-21
-	q4::inwork 22431,6068 22467,6135
+#: note: eigentlich q4-, wegen des zusätzlichen Umwegs
+#: next_check: 2023-03-25
+	q4::inwork; 22431,6068 22467,6135
 EOF
      },
      { from  => undef, # 

@@ -576,10 +576,11 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 ### Köpenick ###
 # 
 #: next_check_id: HAEMMERLING-2022
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023)
 #: last_checked: 2023-03-21
-#: next_check: 2023-03-25
-# REMOVED --- #: next_check: 2023-05-25
-#: valid: 20230326-20230525
+# REMOVED --- #: next_check: 2023-03-25
+#: next_check: 2023-05-25
+#: valid: 20230325-20230525
 Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
 # 
 # REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
@@ -966,6 +967,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 #: by: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/moltkebruecke-in-lichterfelde-ist-nur-noch-geschichte
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1306410.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/neubau-der-moltkebruecke-s1-unterbrochen-id213531
+#: by: https://nitter.cz/VIZ_Berlin/status/1639304567061102592#m
 #: XXX Neubau der Brücke, laut osm bis 2024
 #: osm_watch: way id="13860352" version="24"
 #: osm_watch: way id="1056377427" version="2"
