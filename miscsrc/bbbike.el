@@ -636,7 +636,7 @@
     (grep (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
 		  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
 		  " --add-file " bbbike-rootdir "/t/old_comments.t"
-		  (if is-regexp " --rx" "")
+		  (if is-regexp " --rx" " --")
 		  " '" search-term "'"))))
 
 (defun bbbike-grep-button (button)
