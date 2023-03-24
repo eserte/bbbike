@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.90;
+$VERSION = 1.91;
 
 use vars qw(%images);
 
@@ -932,6 +932,21 @@ sub showmap_openrailwaymap {
     start_browser($url);
 }
 
+sub showmap_url_openaerialmap {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 17 if $scale > 17;
+    "https://map.openaerialmap.org/#/$px,$py,$scale";
+}
+
+sub showmap_openaerialmap {
+    my(%args) = @_;
+    my $url = showmap_url_openaerialmap(%args);
+    start_browser($url);
+}
+
 sub show_openstreetmap_menu {
     my(%args) = @_;
     my $lang = $Msg::lang || 'de';
@@ -978,6 +993,10 @@ sub show_openstreetmap_menu {
 	(-label => 'OpenRailwayMap',
 	 -command => sub { showmap_openrailwaymap(%args) },
 	 );
+    $link_menu->command
+	(-label => 'OpenAerialMap',
+	 -command => sub { showmap_openaerialmap(%args) },
+	);
     $link_menu->separator;
     $link_menu->command
 	(-label => 'iD Editor',
