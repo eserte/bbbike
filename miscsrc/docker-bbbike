@@ -104,9 +104,22 @@ sub _dockerfile_apt_auth ($) {
     my $optref = shift;
     my $dockerfile = '';
 
-    if ($optref->{distver} eq 'jessie') {
+    if ($optref->{distver} =~ m{^(wheezy|jessie$)}) {
 	$dockerfile .= <<EOF;
 RUN echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
+EOF
+    }
+    $dockerfile;
+}
+
+sub _dockerfile_fix_sources_list ($) {
+    my $optref = shift;
+    my $dockerfile = '';
+
+    if ($optref->{distver} =~ m{^(wheezy|jessie)$}) {
+	$dockerfile .= <<EOF;
+RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                   >  /etc/apt/sources.list
+RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian-security/ $optref->{distver}/updates main' >> /etc/apt/sources.list
 EOF
     }
     $dockerfile;
@@ -397,10 +410,13 @@ RUN echo "DEBIAN_FRONTEND=noninteractive" >> /etc/environment
 
 EOF
 
+    $dockerfile .= _dockerfile_fix_sources_list(\%opt);
+
     # repository for agrep
     if ($opt{dist} eq 'debian') {
+	my $debhost = $opt{distver} =~ m{^(wheezy|jessie)$} ? 'archive.debian.org' : 'ftp.debian.org';
 	$dockerfile .= <<EOF;
-RUN echo "deb http://ftp.debian.org/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
+RUN echo "deb http://$debhost/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
 EOF
     } elsif ($opt{dist} eq 'ubuntu') {
 	if ($opt{distver} =~ m{^(precise|trusty)$}) {
