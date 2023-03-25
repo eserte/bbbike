@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2016,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2016,2020,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -224,6 +224,8 @@ sub BBBikeHeavy::is_obsolete_plugin {
 sub BBBikeHeavy::layer_editor {
     require Tk::LayerEditorToplevel;
     Tk::LayerEditorToplevel->VERSION(0.11);
+    require Tk::LayerEditorCore;
+    Tk::LayerEditorCore->VERSION(0.15);
     # XXX max. 1 layereditor öffnen bzw. Änderungen per Hooks an andere
     # editoren propagieren
     my @elem;
@@ -499,6 +501,33 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 	);
     $bbl->add(@elem);
     $bbl->expand_to_visible if $bbl->can('expand_to_visible');
+
+    # Popup menu
+    my $bbl_menu = $top->Menu(-tearoff => 0);
+    $bbl_menu->add('command',
+		   -label => 'Show list',
+		   -command => sub {
+		       my $data = $bbl_menu->{current_item_data};
+		       if ($data) {
+			   my($type, $subtype) = @{$data}{qw(Type Subtype)};
+			   if (defined $type && defined $subtype) {
+			       choose_ort($type, $subtype);
+			       return;
+			   }
+		       }
+		       require Data::Dumper;
+		       $bbl->messageBox(-message => "Cannot show list for current item.\nInternal data: " . Data::Dumper::Dumper($data),
+					-icon => 'error');
+		   },
+		  );
+    my $bbl_canvas = $bbl->get_canvas;
+    $bbl_canvas->Tk::bind('<Button-3>' => sub {
+			      my($idx) = $bbl->get_item_index;
+			      if (defined $idx) {
+				  $bbl_menu->{current_item_data} = $bbl->{Items}[$idx]{Data};
+				  $bbl_menu->Popup(-popover => 'cursor', -popanchor => 'nw');
+			      }
+			  });
 
     # Hooks
     my $bblpath = $bbl->PathName;
