@@ -126,6 +126,7 @@ sub highlight_words {
     return undef if !defined $text;
     $text =~ s{\b(
 		   Verkehrsunfall(es|s)?
+	       |   Verkehrsbehinderung
 	       |   Feuerwehreinsatz(es)?
 	       |   Polizeieinsatz(es)?
 	       |   Demonstration
