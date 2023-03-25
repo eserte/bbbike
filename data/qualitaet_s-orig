@@ -355,7 +355,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2022-11-25 (daf) vvv
+#: last_checked: 2023-03-25 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -12101,8 +12101,8 @@ Klingsorstr.: schadhafter Asphalt	Q1+ 4834,4102 4932,4152 5063,4266 5090,4291 51
 Klingsorstr.: schadhafter Asphalt	Q1+ 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
 #: historical_note: früher schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5535,5068 5583,5179
-(Görlitzer Park, zur Forster Str.): Asphalt	Q1 12670,10160 12592,10112
-(Görlitzer Park, zur Forster Str.): wassergebundene Decke	Q1- 12592,10112 12564,10121 12556,10116 12507,10130
+(Görlitzer Park, zur Forster Str.): wassergebundene Decke	Q1- 12670,10160 12592,10112 12564,10121
+(Görlitzer Park, zur Forster Str.): gepflastert/Asphalt	Q2 12564,10121 12556,10116 12507,10130
 (Neuer Mauerweg): Asphalt	Q0 7512,19480 7572,19490 7679,19421 7704,19366 7763,19318 7824,19269 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 (Neuer Mauerweg): Asphalt	Q0 7572,19490 7540,19550
 (Vereinssteg - Mauerweg): wassergebundene Decke	Q1 8321,18954 8313,18940
@@ -12170,7 +12170,7 @@ Im Lindenhof: Asphalt	Q0 17467,12659 17455,12687 17426,12699 17412,12660 17436,1
 Im Lindenhof: Kleinsteinpflaster	Q2+ 17530,12620 17571,12557
 (Im Lindenhof - Am Städtischen Zentralfriedhof): unbefestigter Weg	Q2 17571,12557 17585,12539
 # 
-Heilbronner Str.: Gehwegplatten	Q0- 6163,9340 6131,9241
+Heilbronner Str.: Gehwegplatten	Q0- 6140,9338 6144,9295 6131,9241
 Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1-; 5280,5714 5276,5622 5274,5557
 Kitzingstr.: Beton	Q1+ 8752,2931 8572,2960 8455,2977
 Kitzingstr.: Asphalt	Q0- 8455,2977 8327,2987
@@ -16145,9 +16145,9 @@ Geibelstr. (Lichtenrade): sehr schlechtes und welliges Kopfsteinpflaster	Q3 9968
 #: confirmed_by: srt
 Rosenheimer Str.: Asphalt	Q0 6851,9365 6717,9339 6446,9328 6358,9335 6239,9344
 #: corrected_by: srt (was Asphalt, Q0)
-Rosenheimer Str.: Verbundsteinpflaster	Q0- 6239,9344 6163,9340
+Rosenheimer Str.: Verbundsteinpflaster	Q0- 6239,9344 6140,9338
 #: confirmed_by: srt
-Rosenheimer Str.: Asphalt	Q0 6163,9340 6062,9335
+Rosenheimer Str.: Asphalt	Q0 6140,9338 6062,9335
 #: by: ^^^
 # 
 #: by: Jana Eberhart: vvv
@@ -16750,7 +16750,8 @@ Neanderstr.: sehr schlechtes und welliges Kopfsteinpflaster	Q3 9808,-339 9812,-4
 Bredowstr.: mäßiges Kopfsteinpflaster	Q2 6011,13330 6008,13529 6005,13734 6006,14024
 # 
 #: by: Handan (aktas):
-Heilbronner Str.: Asphalt	Q0 6163,9340 6123,9544 6101,9720
+#: confirmed_by: srt
+Heilbronner Str.: Asphalt	Q0 6140,9338 6123,9544 6101,9720
 # 
 #: by: Ritter:
 Wigandstaler Str.: Asphalt	Q0 13037,16957 12923,17133 12780,17318

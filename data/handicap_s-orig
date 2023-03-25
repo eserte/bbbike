@@ -47,7 +47,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-03-23
+#: last_checked: 2023-03-25
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -280,7 +280,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-23
+#: last_checked: 2023-03-25
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -899,7 +899,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023)
 #: also_indoor: traffic (ex-H,B,ex-G,W)
-#: last_checked: 2023-01-26
+#: last_checked: 2023-03-25
 #: check_frequency: 90d
 #: next_check: 2023-04-14
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
@@ -907,7 +907,7 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2023-03-01 (daf) vvv
+#: last_checked: 2023-03-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
@@ -1446,7 +1446,7 @@ Volkspark Wilmersdorf: einige Fußgänger	q1- 5761,8339 5699,8308 5687,8280 5700,8
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17206,18332
 (Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
 #: note: jeweils zwei Serpentinen pro Seite, großer Zeitverlust
-Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
+Bernburger Treppe: Rampen	q4+ 8536,11063 8525,11063 8526,11080 8515,11065 8519,11084 8484,11097 8478,11080 8479,11099 8470,11082 8454,11086
 (Buckower Ring - Cecilienstr.): Fußgänger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
@@ -3163,6 +3163,7 @@ Karl-Lade-Str.: Fußgänger	q1 14821,13674 14987,13621
 #: note: offiziell nur für Fußgänger
 Karl-Lade-Str.: Fußgänger	q2 14987,13621 15040,13602
 #: XXX_prog BS zu beiden Seiten, ansonsten q1 oder q2 wegen Fußgänger
+#: note: mittlerweile wurden auf der östlichen Seite mit etwas Asphalt provisorische Auffahrten gemacht
 Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 (Fanny-Zobel-Str. - Uferweg): Fußgänger, eng	q2 14049,10164 14116,10149
 #: XXX_prog BS an der Privatstraße 10 (östliche Seite), anonsten Eintrag entfernen
@@ -3217,6 +3218,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11417,12243 11388,12202
+(Jannowitzbrücke - Schillingstr.): einige Fußgänger	q2+ 11347,12223 11417,12243
 #: XXX_prog BS an der Schillingstr., ansonsten q1
 #: note: früher "q2", rechtliche Lage unklar
 (Schillingstr. - Neue Blumenstr.): Bordstein, einige Fußgänger	q3 11596,12668 11712,12614
@@ -3789,7 +3791,7 @@ Siegfried-Hirschmann-Park: einige Fußgänger	q4+ 14779,11505 14745,11487
 Siegfried-Hirschmann-Park: einige Fußgänger	q2 14745,11487 14684,11456
 #: XXX_prog BS am südlichen Ende, ansonsten entfernen
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
-Heilbronner Str.: einige Fußgänger	q1- 6163,9340 6131,9241
+Heilbronner Str.: einige Fußgänger	q1- 6140,9338 6144,9295 6131,9241
 #: XXX_prog BS, ansonsten entfernen
 Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
 #: XXX_prog BS, ansonsten entfernen

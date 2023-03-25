@@ -228,7 +228,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2023-02-26 vvv
+#: last_checked: 2023-03-25 vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: last_checked ^^^
@@ -7845,9 +7845,10 @@ die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW7; 11089,97
 	RW7; 11023,9597 11004,9554
 	RW7;RW7 11004,9554 10905,9472 10749,9342
 	RW7; 11004,9554 11055,9539
-#: note: früher Schutzstreifen, Markierung wurde entfernt
+#: historical_note: früher Schutzstreifen, Markierung wurde entfernt
 	RW7; 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885
-außerdem Teil einer Fahrradstraße	RW3; 11164,9885 11136,9851 11089,9751
+#: historical_note: früher Schutzstreifen, Markierung wurde entfernt
+	RW7; 11164,9885 11136,9851 11089,9751
 #: note: hier keine Fahrradstraße
 	RW4; 11055,9539 11075,9576
 außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342

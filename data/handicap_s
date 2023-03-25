@@ -31,6 +31,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
@@ -310,7 +311,7 @@ Volkspark Wilmersdorf: einige Fußgänger	q1 5761,8339 5699,8308 5687,8280 5700,82
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17206,18332
 (Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
-Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
+Bernburger Treppe: Rampen	q4 8536,11063 8525,11063 8526,11080 8515,11065 8519,11084 8484,11097 8478,11080 8479,11099 8470,11082 8454,11086
 (Buckower Ring - Cecilienstr.): Fußgänger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
@@ -1559,6 +1560,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0 11472,12406 11485,12391 11417,12243 11388,12202
+(Jannowitzbrücke - Schillingstr.): einige Fußgänger	q2 11347,12223 11417,12243
 (Schillingstr. - Neue Blumenstr.): Bordstein, einige Fußgänger	q3 11596,12668 11712,12614
 (Wutzkyallee - Zwickauer Damm): einige Fußgänger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474
 (Zwickauer Damm - Rudower Fließ): einige Fußgänger, Bordstein	q2 15688,1506 15776,1456
@@ -1976,7 +1978,7 @@ Siegfried-Hirschmann-Park: einige Fußgänger	q2 14830,11551 14808,11520 14779,115
 Siegfried-Hirschmann-Park: einige Fußgänger	q4 14779,11505 14745,11487
 Siegfried-Hirschmann-Park: einige Fußgänger	q2 14745,11487 14684,11456
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
-Heilbronner Str.: einige Fußgänger	q1 6163,9340 6131,9241
+Heilbronner Str.: einige Fußgänger	q1 6140,9338 6144,9295 6131,9241
 Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
 Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
 (Weg im Anita-Berber-Park): einige Fußgänger	q1 11677,7351 12158,7449

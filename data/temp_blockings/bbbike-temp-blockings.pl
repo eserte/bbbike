@@ -32,11 +32,12 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2019-06-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-06-10 23:59:59"),
+     { from  => $isodate2epoch->("2023-05-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-05-29 23:59:59"),
+       prewarn_days => 2,
        periodic => 1,
        recurrences => [['easter', 47, start => "2022-10-25T00:00:00"]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019, Sperrungen fangen schon einen Tag vorher an',
+       text  => 'Straßenfest rund um den Blücherplatz, 26.05.2023 bis 29.05.2023, Sperrungen fangen schon einen Tag vorher an',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -64,12 +65,12 @@ my $isodate2epoch = sub {
 	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
 EOF
      },
-     { from  => $isodate2epoch->("2019-06-08 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-06-09 23:59:59"),
+     { from  => $isodate2epoch->("2023-05-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-05-28 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49, start => "2022-10-25T00:00:00"]], # Pfingstsonntag
        source_id => 'https://www.karneval.berlin/', # früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite
-       text  => 'Karneval der Kulturen, 09.06.2019',
+       text  => 'Karneval der Kulturen, 28.05.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
@@ -6289,11 +6290,11 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2023-05-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2022 und 8.5.2022)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (13.5.2023 und 14.5.2023)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
@@ -8187,12 +8188,12 @@ EOF
 	2::temp 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2022-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2023-05-05 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2023-05-07 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
-       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (7. und 8. Mai 2022)',
+       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (6. und 7. Mai 2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html?date=20210410 (Termin noch nicht bekannt)
@@ -8295,7 +8296,7 @@ EOF
      { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 5, start => "2021-05-13T00:00:00"]],
+       recurrences => [['yearly', days => 7, months => 5, start => "2023-05-13T00:00:00"]],
        text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
        source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
@@ -8305,6 +8306,7 @@ EOF
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
 #: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
 #: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
@@ -9537,8 +9539,8 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-04 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-05 22:00:00"),
-       periodic => 1, # erster Termin im Sommer
-       recurrences => [['yearly', days => 3, months => 5, start => "2022-06-01T00:00:00"]], # meistens im Juni, kann aber auch erst im Juli stattfinden
+#       periodic => 1, # erster Termin im Sommer
+# "longer takes place"       recurrences => [['yearly', days => 3, months => 5, start => "2022-06-01T00:00:00"]], # meistens im Juni, kann aber auch erst im Juli stattfinden
        text  => 'Open Air Gallery am 5. Mai 2019 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -14134,11 +14136,11 @@ EOF
 	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2023-05-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2021-10-25T00:00:00"]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (7. und 8. Mai 2022)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
@@ -17235,8 +17237,8 @@ EOF
        until => $isodate2epoch->("2022-01-06 23:59:59"), # mehrere Tage für den Abbau
        periodic => 1,
        prewarn_days => 10,
+       postwarn_days => 7,
        recurrences => [['yearly', days => 20, months => 11, start => "2023-01-01T00:00:00"]], # Weihnachtsmarkt 2020 auf dem Gendarmenmarkt fällt aus - wegen Corona
-       dont_check_date => 1,
        source_id => 'https://www.weihnachtsmarkt-berlin.de/',
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 22.11.2021 bis 31.12.2021, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
@@ -18144,7 +18146,7 @@ EOF
      { from  => $isodate2epoch->("2022-05-19 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-22 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 5, start => "2020-06-08T00:00:00"]], # kann auch erst im September stattfinden
+       recurrences => [['yearly', days => 15, months => 5, start => "2023-06-08T00:00:00"]], # kann auch erst im September stattfinden
        source_id => 'http://www.erkner.de/271.html?date=20190415',
        text  => 'Erkner: Heimatfest, 20.5.2022 bis 22.5.2022',
        type  => 'gesperrt',
@@ -18152,6 +18154,7 @@ EOF
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
+#: by: https://www.erkner.de/erkner-kompakt/heimatfest/?date=20230325 (findet 2023 wie 2022 nur im Rathauspark statt, also vermutlich keine Sperrung der Straße)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -19519,8 +19522,8 @@ EOF
      },
      { from  => $isodate2epoch->("2018-06-30 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2018-07-01 22:00:00"),
-       periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 1, months => 7, start => "2022-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
+#       periodic => 1, # zweiter Termin im Sommer
+# "longer takes place"       recurrences => [['yearly', days => 1, months => 7, start => "2022-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
 # zweiter Termin wird 2019 ausfallen
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahn-wird-unterbrochen_a253327 (wird 2020 wieder nicht stattfinden)
 #: by: https://stadtteilausschuss-kreuzberg.de/opair.htm ("Keine OpenAirGallery 2021")
@@ -19536,6 +19539,7 @@ EOF
        until => $isodate2epoch->("2022-05-23 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
+       recurrence_prewarn_days => 14, # weder Ort noch Termin bekannt
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
@@ -21870,11 +21874,11 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2022-05-13 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2022-05-14 23:59:59"), # 1367704799, # 2013-05-04 23:59
+     { from  => $isodate2epoch->("2023-05-13 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
+       until => $isodate2epoch->("2023-05-14 23:59:59"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5, start => "2021-10-25T00:00:00"]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 14. Mai 2022',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 13. Mai 2023',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
        data  => <<EOF,
@@ -21934,9 +21938,9 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-05-01 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2022 bis 01.05.2022)', # früher: Lichtenrader Maientanz
+     { from  => $isodate2epoch->("2023-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-05-01 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2023 bis 01.05.2023)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
        type  => 'handicap',
@@ -21946,6 +21950,7 @@ EOF
 #: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -22038,11 +22043,11 @@ EOF
 	2::temp 3976,11869 3801,11858
 EOF
      },
-     { from  => $isodate2epoch->("2022-06-16 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2022-06-20 05:00:00"), #
+     { from  => $isodate2epoch->("2023-05-05 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2023-05-08 05:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 17.06.2022 bis 20.06.2022 früh',
+       recurrences => [['yearly', days => 6, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 06.05.2023 und 07.05.2023',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
@@ -23370,11 +23375,11 @@ EOF
 	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2022-04-30 00:00:00"),
-       until => $isodate2epoch->("2022-05-01 20:00:00"),
+     { from  => $isodate2epoch->("2023-04-30 00:00:00"),
+       until => $isodate2epoch->("2023-05-01 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
-       text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2022', # wenn größer: "Straße des 17. Juni und Ebertstraße"
+       text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2023', # wenn größer: "Straße des 17. Juni und Ebertstraße"
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
@@ -30332,8 +30337,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-03-12
-#: next_check: 2023-09-01
+#: XXX Sperrung möglicherweise doch nur bis Ende März 2023?
+#: last_checked: 2023-03-25
+#: next_check: 2023-04-01
+# REMOVED --- #: next_check: 2023-09-01
 	2::inwork 13172,11651 13239,11567 13261,11572
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
@@ -31063,7 +31070,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-03-04 00:00:00"), # 1587614400, # 2020-04-23 06:00
-       until => $isodate2epoch->("2022-08-27 19:00:00"), # 1588449600, # 2020-05-02 22:00
+       until => undef, # $isodate2epoch->("2022-08-27 19:00:00"), # 1588449600, # 2020-05-02 22:00
        text  => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts, 6 bis 19 Uhr',
        type  => 'handicap',
        recurring => 1,
@@ -31071,8 +31078,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten)
-#: XXX ist die Sperrung nur im Sommer 2022 oder dauerhaft?
-#: next_check: 2022-08-27
+#: XXX ist die Ausweitung des Marktes dauerhaft?
+#: last_checked: 2023-03-25
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2022-08-27
 # REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
 	q4::temp 7118,9870 7080,10098
 EOF
@@ -31089,7 +31098,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-18
+#: last_checked: 2023-03-25
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34070,22 +34079,17 @@ EOF
 
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung der Arndtstr. und des östlichen Teil des Chamissoplatzes, samstags von 6 bis 19 Uhr',
+       text  => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung des östlichen Teil des Chamissoplatzes, samstags von 6 bis 19 Uhr',
        type  => 'gesperrt',
        source_id => 'https://oekomarkt-chamissoplatz.de/',
        data  => <<EOF,
-#: next_check_id: CORONA-2020
+# REMOVED --- #: next_check_id: CORONA-2020 --- #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv --- #: last_checked: 2023-03-25 vvv --- #: check_frequency: 90d vvv
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
-#: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2023-02-16 vvv
-#: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
-	2::temp 9553,9196 9566,9194 9614,9186 9674,9179
+# REMOVED (anscheinend nicht mehr hier ?) Arndtstr.	2::temp 9553,9196 9566,9194 9614,9186 9674,9179
 	2::temp 9614,9186 9600,9091
 #: tempex ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => 1633989600, # 2021-10-12 00:00
@@ -35399,7 +35403,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2022-08-23
+#: last_checked: 2023-03-25
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -35414,11 +35418,11 @@ EOF
 	q4::inwork 4512,5199 4477,5250 4430,5324
 EOF
      },
-     { from  => 1652421600, # 2022-05-13 08:00
-       until => 1652562000, # 2022-05-14 23:00
+     { from  => $isodate2epoch->("2023-05-05 00:00:00"), # 1652421600, # 2022-05-13 08:00
+       until => $isodate2epoch->("2023-05-06 20:00:00"), # 1652562000, # 2022-05-14 23:00
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 5]],
-       text  => 'Schnellerstr./Spreestr.: Straßenfest, Fahrbahnen gesperrt, am 14.5.2022 von 08:00 bis 23:00 Uhr',
+       recurrences => [['yearly', days => 6, months => 5]],
+       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 6.5.2023 von 13:00 bis 19:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1525328801823133698#m',
        data  => <<EOF,
@@ -36375,7 +36379,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-23
+#: last_checked: 2023-03-25
 #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36533,17 +36537,18 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Eisenacher Str./Winterfeldtstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, möglicherweise bis Mai 2023',
+       text  => 'Winterfeldtstr.: Bauarbeiten im Kreuzungsbereich Eisenacher Str., Fahrbahn gesperrt, möglicherweise bis Mai 2023',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (hier nicht mehr, aber vielleicht Bauarbeiten etwas weiter nördlich?) --- #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? --- #: also_indoor: traffic (none) --- #: last_checked: 2022-09-17 ---	q4::inwork; 6753,9814 6747,9912 6741,10017
 #: note: laut Bauschild der Wasserbetriebe bis Mai 2023
 #: also_indoor: traffic (B,G,W)
-#: last_checked: 2023-01-26 vvv
+#: last_checked: 2023-03-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-31 vvv
-Eisenacher Str.	q3::inwork 6739,10120 6741,10017 6747,9912
-Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
+# REMOVED (hier nicht mehr) --- Eisenacher Str.	q3::inwork 6739,10120 6741,10017 6747,9912
+Winterfeldtstr., westlicher Abschnitt	q3::inwork 6630,9990 6741,10017
+# REMOVED (hier nicht mehr) --- Winterfeldtstr., östlicher Abschnitt	q3::inwork 6741,10017 6903,10056
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -37717,7 +37722,7 @@ EOF
      },
      { from  => 1675576800, # 2023-02-05 07:00
        until => 1682694000, # 2023-04-28 17:00
-       text  => 'Barbarossastr.: Bauarbeiten zwischen Heilbronner Str. und Treuchtlinger Str., evtl. sind auch Radfahrer betroffen, vom 06.02.2023 07:00 bis 28.04.2023 17:00',
+       text  => 'Barbarossastr.: Bauarbeiten zwischen Heilbronner Str. und Treuchtlinger Str., evtl. Beeinträchtigungen für Radfahrer, vom 06.02.2023 07:00 bis 28.04.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.339017,52.492299,06.02.2023,07:00',
        data  => <<EOF,
@@ -37905,7 +37910,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1639218010979278848#m
 #: by: https://nitter.net/pic/orig/media%2FFr-rz3SXgAIyH7I.jpg
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
-#: source_id: bvg2021:x69#BVG317810_0
+#: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023)
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
@@ -38180,6 +38185,21 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
 	q4::inwork 16563,7012 16615,7062 16507,7254
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Leuthener Str./Leberstr.: Bauarbeiten, Fahrbahn der Leuthener Str. gesperrt (Bordsteine!), EInbahnstraßenregelung in der Leberstr., Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (none) vvv
+#: source_id: bvg2021:106#BVG312090_0 vvv
+#: source_id: bvg2021:106#BVG312086_0 vvv
+Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
+Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
+#: source_id ^^^
+#: source_id ^^^
+#: also_indoor ^^^
 EOF
      },
     );
