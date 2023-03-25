@@ -534,6 +534,12 @@ echoextmodperl:
 # verwendet Xfvb oder Xnest
 # XXX testen, ob man überhaupt einen X-Server hat
 #	alternative: Xnest -ac -geometry 640x400 :121 &
+#
+#
+# To selectively build and install modules, use something like this:
+#
+#    make extmod copyextmod EXTMODPERL=Tk-LayerEditor EXTMODCPAN=
+#
 extmod:
 	Xvfb -fp /usr/X11R6/lib/X11/fonts/misc -ac :121 & \
 	_XVFB_PID=$$!; \
