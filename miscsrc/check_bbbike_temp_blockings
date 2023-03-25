@@ -217,7 +217,9 @@ EOF
 		    $suggestion_text = <<EOF;
 Please set
        dont_check_date => 1,
-to ignore this failure
+or
+       prewarn_days => ..., postwarn_days => ...,
+to ignore this failure.
 
 EOF
 		}
