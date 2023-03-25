@@ -7,9 +7,6 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: srezic@cpan.org
-# WWW:  http://www.rezic.de/
-#
 
 package Tk::LayerEditorCore;
 
@@ -72,7 +69,7 @@ sub Tk::DragDrop::StartDrag
 }
 }
 
-$VERSION = '0.14';
+$VERSION = '0.15';
 
 sub CommonPopulate {
     my($w, $args) = @_;
@@ -264,7 +261,7 @@ sub Motion {
     my($wx, $wy) = @_;
     my $c = $top->Subwidget('canvas');
     my($cx, $cy) = ($c->canvasx($wx), $c->canvasy($wy));
-    my $inx = get_item($top, $c, $cy);
+    my $inx = $top->get_item_index($cy);
     return unless defined $inx;
     my $y_ref = $top->{ItemsY};
     my $line_pos;
@@ -313,7 +310,7 @@ sub Drop {
     #XXX warn "@_";
     my($x, $y) = $Tk::VERSION >= 804 ? ($_[3], $_[4]) : ($_[1], $_[2]);
     my $c = $top->Subwidget('canvas');
-    my $inx = get_item($top, $c, $c->canvasy($y));
+    my $inx = $top->get_item_index($c->canvasy($y));
     $inx = $top->{After};
     $c->delete('bar');
     $top->reorder($top->{'DragItem'},$inx);
@@ -326,8 +323,19 @@ sub Done {
     $c->delete('bar');
 }
 
-sub get_item {
-    my($top, $c, $y) = @_;
+# Return the real canvas widget within the scroll container
+sub get_canvas {
+    my $w = shift;
+    $w->Subwidget('canvas')->Subwidget('scrolled');
+}
+
+sub get_item_index {
+    my($top, $y) = @_;
+    if (!defined $y) {
+	my $c = $top->get_canvas;
+	my $e = $c->XEvent;
+	$y = $c->canvasy($e->y);
+    }
     for(my $i=0; $i < @{$top->{ItemsY}}; $i++) {
 	if ($top->{ItemsY}[$i] > $y) {
 	    return ($i>1 ? $i-1 : 0);
@@ -338,9 +346,8 @@ sub get_item {
 
 sub toggle_visibility {
     my $w = shift;
-    my $c = $w->Subwidget('canvas')->Subwidget('canvas');
-    my $e = $c->XEvent;
-    my($idx) = get_item($w, $c, $c->canvasy($e->y));
+    my $c = $w->get_canvas;
+    my($idx) = $w->get_item_index;
     return if !defined $idx;
     if ($w->{Items}[$idx]{'Visible'}) {
 	$c->raise("layeroff-$idx", "layeron-$idx")

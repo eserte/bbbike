@@ -7,9 +7,6 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: srezic@cpan.org
-# WWW:  http://www.rezic.de/
-#
 
 package Tk::LayerEditor;
 use Tk::LayerEditorCore;
