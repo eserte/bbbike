@@ -31,7 +31,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
-Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245 22033,6144
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
@@ -601,7 +601,7 @@ Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
 (Jungfernheide - Kurt-Schumacher-Damm): einige Fußgänger	q1 2926,15381 3105,15487
 (Teltowkanalpromenade am Nordufer): Fußgänger, Radfahren offiziell nicht erlaubt	q2 3698,1450 3601,1296 3476,1169 3348,1078 3092,875
 Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
-(Wohnanlage Friedastr.): Fußgänger, Bordsteine	q3 16887,11545 16759,11582
+(Wohnanlage Friedastr.): Fußgänger	q3 16887,11545 16753,11559
 (Eitelstr. - Bahnhof Lichtenberg): Fußgänger	q3 16727,11611 16766,11603
 Bennigsenstr.: enge Straße	q0 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fußgänger, Park	q2 5809,7712 5636,7709
@@ -667,6 +667,7 @@ Falkstr.: Fußgänger	q1 12179,7979 12186,7952 12195,7916 12216,7838 12220,7822
 Carl-Herz-Ufer: gemeinsamer Fuß- und Radweg	q0 10066,10071 10168,10085
 Am Landwehrkanal: gemeinsamer Fuß- und Radweg	q2 10069,10151 10158,10117 10168,10085
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23225,11649 23032,11729
+Münsterberger Weg: Grünanlage, einige Fußgänger	q2 23032,11729 22886,11776
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 22886,11776 22701,11843
 Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterführung Wuhletal: Fußgänger	q2 21970,12153 21972,12038 21936,12022
@@ -1026,7 +1027,7 @@ Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
 Straße 455: Bordstein	q2 4916,17201 4931,17174
 (Uferweg Plötzensee): Fußgänger	q1 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 (Brücke über den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
-Kleingartenstr.: enge Straße	q1 24118,4404 24075,4417 24022,4442 23978,4484
+Kleingartenstr.: enge Straße	q1 24118,4404 24072,4423 24022,4442 23978,4484
 Gladiolenstr.: enge Straße	q1 23536,4543 23541,4439
 (Steffenshagener Str. - Lidl-Parkplatz): Fußgänger	q1 22991,11133 22982,11157
 Hamsterstr.: eng, Fußgänger, Bordstein	q4 23928,11620 23917,11600
@@ -2426,6 +2427,7 @@ Bosepark: gemeinsamer Geh- und Radweg	q1 8862,6467 8823,6458
 (Straßenbahnstrecke - Konrad-Zuse-Str.): Grünanlage, einige Fußgänger	q1 18833,3388 18857,3418
 (Sterndamm - Waiblinger Weg): Gehweg	q3 17700,5232 17743,5260
 Waiblinger Weg: Gehweg, Bordstein	q3 17743,5260 17771,5278
+(Dahlienstr. - Müggelschlößchenweg): Bordstein (Bushaltestelle) oder Umweg	q3 24098,4310 24103,4260
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3080,7 +3082,7 @@ Münchener Str. (Lichtenrade): enge Straße	q1 11384,-1983 11380,-2100 11388,-2202
 Lachtaubenweg: enge Straße	q1 -1827,20216 -1823,20298 -1838,20471
 Elstergasse: enge Straße, rechts und links versetzt parkende Autos	q1 -1596,20184 -1827,20216 -1971,20231
 Wesenberger Ring: enge Straße	q1 13163,3582 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
-Schmale Gasse: enge Straße	q1 23883,4328 24055,4348 24075,4417
+Schmale Gasse: enge Straße	q1 23881,4335 24053,4357 24072,4423
 Albrechtshofer Weg: enge Straße	q0 -7517,15858 -7642,15840 -7751,15847 -7865,15867 -7975,15904 -8039,15930
 Faucherweg: enge Straße	q1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Dualastr.: enge Straße	q1 6019,15841 5848,15685
@@ -3224,7 +3226,6 @@ Archibaldweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 1567
 Nöldnerplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15870,10938 15903,10906
 Dorotheenstr. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9454,12558 9330,12538
 Quickborner Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 8016,21499 8078,21415 8162,21302
-Kirchstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q0::igndisp; 22314,4604 22284,4653
 Kietzer Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
 Triftstr. (Buchholz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12023,23039 12185,23021
 Joachimstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10082,13686 10142,13556 10199,13446

@@ -262,8 +262,6 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: check_frequency: 60d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
-#: note: nur für "Linienverkehr" (Straßenbahnen) offiziell frei
-Kirchstr.	1s:q0 22314,4604 22284,4653
 Kietzer Str.	1s:q3 22372,4496 22383,4470
 # REMOVED (hier keine Einbahnstraße, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18585,10024
 Ontarioseestr.	1 18585,10024 18408,10041
@@ -3535,6 +3533,18 @@ Drängelgitter	BNP:3::trailer=10 22085,5111
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_05_0453_0508_online.pdf (Einziehung von Straßenland)
+#: by: https://www.wuhletal.de/wp-content/uploads/2022/04/GS_Taetigkeitsbericht_WTgGmbH_2021_.pdf (Erwähnung der Kleinstwohnanlage)
+#: note: nördlicher Abschnitt soll eingezogen werden
+#: XXX angrenzend Hochbauarbeiten für "Kleinstwohnanlage für das betreute Einzelwohnen für psychisch kranke Erwachsene, Wateweg 36/38"
+#: XXX wird dieser Abschnitt in Zukunft befahrbar bleiben?
+#: osm_watch: way id="26190195" version="17"
+#: priority: #C
+#: last_checked: 2023-03-26
+#: check_frequency: 180d
+Wateweg: Bauarbeiten, Weg komplett gesperrt	2::inwork 21131,8739 21124,8792
+# 
 #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung)
 #: last_checked: 2023-03-17 vvv
@@ -3563,7 +3573,7 @@ Uferweg am Teltowkanal	2::inwork 4209,2641 4220,2664
 Virchow-Klinikum, Südstraße: Bauarbeiten, Straße komplett gesperrt, auch für Fußgänger	2::inwork 6231,14952 6159,14921 6104,14937
 # 
 #: osm_watch: way id="770592585" version="5"
-#: last_checked: 2023-03-12 (mapillary)
+#: last_checked: 2023-03-26
 #: check_frequency: 120d
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 # 
@@ -3594,7 +3604,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-03-24
+#: last_checked: 2023-03-26
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3750,13 +3760,13 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-03-19
+#: last_checked: 2023-03-26
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
-#: last_checked: 2022-07-03
+#: last_checked: 2023-03-26
 #: check_frequency: 180d
-Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
+Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: source_id: 226110967 (hier: bis 27.6.2023)
@@ -3857,7 +3867,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: by: https://www.berliner-woche.de/mitte/c-bauen/abschluss-des-stauraumprogramms-wasserbetriebe-bauen-an-der-chausseestrasse_a357698 (Abschluss des Projekts bis 2026)
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
-#: osm_watch: way id="129104626" version="19"
+#: osm_watch: way id="129104626" version="20"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
 #: last_checked: 2023-03-12
@@ -4147,8 +4157,8 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-03-12
-#: check_frequency: 60d
+#: last_checked: 2023-03-26 (daf, es wird asphaltiert)
+#: check_frequency: 30d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703

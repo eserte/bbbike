@@ -157,7 +157,6 @@ Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
-Kirchstr.	1s 22314,4604 22284,4653
 Kietzer Str.	1s 22372,4496 22383,4470
 Ontarioseestr.	1 18585,10024 18408,10041
 Degnerstr. (außer Tram)	1 16448,15593 16469,15659
@@ -3287,6 +3286,7 @@ Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
 Drängelgitter	BNP:3:-23:trailer=10 22085,5111
+Wateweg: Bauarbeiten, Weg komplett gesperrt	2::inwork 21131,8739 21124,8792
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598
 (Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418
@@ -3310,7 +3310,7 @@ Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 1333
 Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:inwork 13333,9929 13418,9944 13579,10146
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
-Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
+Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864
 Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060

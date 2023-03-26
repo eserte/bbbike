@@ -108,11 +108,37 @@ B179/Fichtestr.	X::inwork 26138,-12596
 # REMOVED (vermutlich wegen der Sperrung nicht mehr) --- #: next_check_id: HAEMMERLING-2022 --- #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022) --- #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) --- #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m --- #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig --- #: last_checked: 2023-01-15 vvv --- #: next_check: 2023-01-31 vvv --- #: valid: -20230131 vvv --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317 --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022) --- #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022) (bis 18.11.2022) --- #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt) --- #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022) --- #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung) --- #: last_checked: 2022-11-07 --- #: next_check: 2022-11-18 --- #: valid: -20221118 --- Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
+#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: next_check_id: HAEMMERLING-2022
-#: last_checked: 2023-03-21
+#: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
+#: last_checked: 2023-03-26
 #: next_check: 2023-05-25
 #: valid: -20230525
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
+#: note: Fußgängerampel befindet sich etwas westlich der Einmündung
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
+#: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+Gehsener Str./Hoernlestr.	F::inwork 22395,6821
+#: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
+#: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
+#: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
+#: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^

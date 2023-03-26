@@ -602,7 +602,7 @@ Bus 164	busroute_N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,
 Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22078,5093 22033,5148 22023,5160 21974,5208 21954,5229
 Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22192,6659 22186,6672 22075,6967
 Bus X69	busroute_N 22325,6385 22534,6249
-Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24135,4264 24181,4270
+Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24103,4260 24135,4264 24181,4270
 Bus 190	busroute_N 21019,7340 21050,7341 21153,7393 21341,7487 21475,7500
 Bus 190	busroute_N 21175,9989 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21017,10423 21281,10428
 Bus 190	busroute_N 21019,7340 21050,7341 21153,7393 21341,7487 21475,7500
@@ -1566,7 +1566,7 @@ Schillerhof: Hausdurchfahrt	CP2; 6928,17154 7069,17204
 # 
 #: next_check_id: MUENSTERBERGERWEG-2019
 #: XXX werden hier noch Straßenschilder aufgestellt?
-#: last_checked: 2022-09-10 (mapillary)
+#: last_checked: 2023-03-26
 #: check_frequency: 120d
 Münsterberger Weg: nicht ausgeschildert	CS 24172,11320 24029,11363
 # 
@@ -1582,7 +1582,7 @@ Weg an der Südpanke: Hausdurchfahrt gegenüber der Liesenstr.	CP2; 8323,14599 830
 # 
 ausgeschildert Hauptstr. 2D-2B	CP2; 7617,19748 7578,19753
 # 
-Mirower Str. - Mittelheide: vor den Recycling-Containern in den Waldweg abbiegen	CP; 24387,7751 24387,7708 24365,7657
+Mirower Str. - Mittelheide: vor den Recycling-Containern in den Waldweg abbiegen	CP; 24387,7751 24387,7708 24356,7644
 # 
 ausgeschildert "Egsdorfer Berg"	CP2; 23596,-29215 23640,-29209
 # 
@@ -1695,10 +1695,7 @@ ausgeschildert "Zugang Stralauer Allee 6"	CP2; 13835,10577 13805,10528
 # 
 Am Pankepark: nicht ausgeschildert	CS 8152,14130 8238,14181 8282,14116 8207,14067 8184,14052
 # 
-#: add_fragezeichen: Wird der Kleine Parkweg noch ausgeschildert?
-#: last_checked: 2023-01-28 (mapillary)
-#: check_frequency: 60d
-Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
+# REMOVED (ja) --- #: add_fragezeichen: Wird der Kleine Parkweg noch ausgeschildert? --- #: last_checked: 2023-03-26 --- #: check_frequency: 60d --- Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
 # 
 Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
 # 

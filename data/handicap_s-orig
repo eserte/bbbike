@@ -577,11 +577,11 @@ Wandlitzstr.: in Hˆhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # 
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023)
-#: last_checked: 2023-03-21
+#: last_checked: 2023-03-26
 # REMOVED --- #: next_check: 2023-03-25
 #: next_check: 2023-05-25
 #: valid: 20230325-20230525
-H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, Gehweg	q4::inwork 21984,6317 22000,6245 22033,6144
+H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245 22033,6144
 # 
 # REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis M‰rz 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte M‰rz 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verl‰ngerung bis 9. M‰rz 2020) --- #: source_id: 2147344732 (bis 06. M‰rz 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
@@ -721,7 +721,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # 
 #: next_check_id: GRENZALLEE-2014
 #: osm_watch: way id="38725490" version="20"
-#: last_checked: 2023-01-04 vvv
+#: last_checked: 2023-03-19 vvv
 #: check_frequency: 90d vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q3 14179,6743 14139,6786
@@ -1893,8 +1893,9 @@ Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
 (Jungfernheide - Kurt-Schumacher-Damm): einige Fuﬂg‰nger	q1 2926,15381 3105,15487
 (Teltowkanalpromenade am Nordufer): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 3698,1450 3601,1296 3476,1169 3348,1078 3092,875
 Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
+#: note: Radfahrer sollen absteigen
+(Wohnanlage Friedastr.): Fuﬂg‰nger	q3 16887,11545 16753,11559
 # ----------------- Bordstein-Check bis hier ----------------------------------
-(Wohnanlage Friedastr.): Fuﬂg‰nger, Bordsteine	q3 16887,11545 16759,11582
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
 Bennigsenstr.: enge Straﬂe	q0- 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
@@ -1989,7 +1990,8 @@ Carl-Herz-Ufer: gemeinsamer Fuﬂ- und Radweg	q0- 10066,10071 10168,10085
 #: note: Schild steht zumindest am westlichen Ende
 Am Landwehrkanal: gemeinsamer Fuﬂ- und Radweg	q2 10069,10151 10158,10117 10168,10085
 M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23225,11649 23032,11729
-# REMOVED --- M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23032,11729 22999,11725 22886,11776
+#: note: nur ein Gr¸nanlagenschild ohne Zusatzschild zur Radfahrerbenutzung, vom Charakter her ‰hnlich wie die beiden anderen Abschnitte
+M¸nsterberger Weg: Gr¸nanlage, einige Fuﬂg‰nger	q2+ 23032,11729 22886,11776
 M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 22886,11776 22701,11843
 # REMOVED --- #: XXX_prog BS an der Gielsdorfer Str. ansonten q2 --- M¸nsterberger Weg: Pfad, Bordstein	q3 24029,11363 24172,11320
 # REMOVED (-> nun als Treppe gekennzeichnet) --- Dorfstr. - Wuhletal: steile Rampe oder 16 Stufen	q4 22112,11936 22104,11925
@@ -2469,7 +2471,7 @@ Straﬂe 455: Bordstein	q2 4916,17201 4931,17174
 (Uferweg Plˆtzensee): Fuﬂg‰nger	q1- 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 #: XXX_prog -> Steigung nach comments_mount?
 (Br¸cke ¸ber den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
-Kleingartenstr.: enge Straﬂe	q1 24118,4404 24075,4417 24022,4442 23978,4484
+Kleingartenstr.: enge Straﬂe	q1 24118,4404 24072,4423 24022,4442 23978,4484
 Gladiolenstr.: enge Straﬂe	q1 23536,4543 23541,4439
 (Steffenshagener Str. - Lidl-Parkplatz): Fuﬂg‰nger	q1 22991,11133 22982,11157
 #: XXX_prog BS, ansonsten q3
@@ -4464,6 +4466,9 @@ Bosepark: gemeinsamer Geh- und Radweg	q1 8862,6467 8823,6458
 #: XXX_prog BS am Sackgassenende (ansonsten q3)
 Waiblinger Weg: Gehweg, Bordstein	q3- 17743,5260 17771,5278
 # 
+#: XXX_prog BS (ansonsten entfernen)
+(Dahlienstr. - M¸ggelschlˆﬂchenweg): Bordstein (Bushaltestelle) oder Umweg	q3 24098,4310 24103,4260
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -5135,9 +5140,9 @@ Altenburger Str.: Fuﬂg‰nger, Bordstein	q2 6651,1063 6631,968
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fuﬂg‰nger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
-#: osm_watch: way id="114381362" version="12"
-#: osm_watch: way id="1100622078" version="5"
-#: osm_watch: way id="1100622082" version="5"
+#: osm_watch: way id="114381362" version="13"
+#: osm_watch: way id="1100622078" version="6"
+#: osm_watch: way id="1100622082" version="6"
 #: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
@@ -5983,7 +5988,7 @@ Elstergasse: enge Straﬂe, rechts und links versetzt parkende Autos	q1 -1596,2018
 #: by: Manfred Br¸hl
 Wesenberger Ring: enge Straﬂe	q1 13163,3582 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 #: by: PS (peter.sch...):
-Schmale Gasse: enge Straﬂe	q1 23883,4328 24055,4348 24075,4417
+Schmale Gasse: enge Straﬂe	q1 23881,4335 24053,4357 24072,4423
 #: by: Thomas (theo...)
 #: corrected_by: srt (nicht besonders eng)
 Albrechtshofer Weg: enge Straﬂe	q0- -7517,15858 -7642,15840 -7751,15847 -7865,15867 -7975,15904 -8039,15930

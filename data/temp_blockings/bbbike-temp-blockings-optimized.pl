@@ -5364,7 +5364,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="13"
+#: osm_watch: way id="114381366" version="15"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2022-10-24
 #: check_frequency: 180d
@@ -5730,14 +5730,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?)
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26)
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-03-21 vvv
+#: last_checked: 2023-03-26 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-03-25 vvv
-# REMOVED --- #: next_check: 2023-05-25 vvv
+#: next_check: 2023-05-25 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
@@ -6898,7 +6897,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'data' => '# REMOVED --- nördlicher Abschnitt	q4::inwork 5350,12906 5341,12875 5376,12781
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G[falsch])
-#: osm_watch: way id="169659243" version="21"
+#: osm_watch: way id="169659243" version="22"
 #: last_checked: 2023-03-19 (osm)
 mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 ',
@@ -7112,13 +7111,13 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-03-21
+         'data' => '#: last_checked: 2023-03-26
 #: check_frequency: 21d
 	2::inwork 14810,10832 14738,10892
 ',
          'from' => undef,
          'id' => 3731,
-         'text' => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. gesperrt',
+         'text' => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7155,7 +7154,10 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
-#: next_check: 2023-03-25
+#: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht
+#: last_checked: 2023-03-26
+#: check_frequency: 120d
+#: next_check: 2023-08-28
 	q4::inwork; 22431,6068 22467,6135
 ',
          'from' => 1679292000,
