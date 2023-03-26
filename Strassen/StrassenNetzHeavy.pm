@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2017 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2017,2023 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -181,11 +181,10 @@ sub make_net_cat {
     my $multiple    = $args{-multiple} || 0;
     my $onewayhack  = $args{-onewayhack} || 0;
     my $cacheable   = defined $args{-usecache} ? $args{-usecache} : $Strassen::Util::cacheable;
-    my $args2filename = join("_", $obey_dir, $do_net2name, $multiple);
+    my $args2filename = join("_", $obey_dir, $do_net2name, $multiple, $onewayhack);
 
     my $cachefile;
     if ($cacheable) {
-	#XXXmy @src = $self->sourcefiles;
 	my @src = $self->dependent_files;
 	if (!@src || grep { !defined $_ } @src) {
 	    warn "Not cacheable..." if $VERBOSE;
@@ -202,6 +201,7 @@ sub make_net_cat {
 	    }
 	}
     }
+
     $self->{Net} = {};
     $self->{Net2Name} = {};
     my $net      = $self->{Net};
@@ -224,36 +224,27 @@ sub make_net_cat {
 	    }
 	}
 	my $strassen_pos = $strassen->pos;
-	my $i;
-	for($i = 0; $i < $#kreuzungen; $i++) {
+	for my $i (0 .. $#kreuzungen-1) {
 	    if ($cat_hin ne "") {
 		if ($multiple) {
 		    push @{$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $cat_hin;
+		    push @{$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $strassen_pos
+			if $do_net2name;
 		} else {
 		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $cat_hin;
+		    $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen_pos
+			if $do_net2name;
 		}
 	    }
 	    if (!$obey_dir && $cat_rueck ne "") {
 		if ($multiple) {
 		    push @{$net->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $cat_rueck;
+		    push @{$net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $strassen_pos
+			if $do_net2name;
 		} else {
 		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $cat_rueck;
-		}
-	    }
-	    if ($do_net2name) {
-		if ($cat_hin ne "") {
-		    if ($multiple) {
-			push @{$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $strassen_pos;
-		    } else {
-			$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen_pos;
-		    }
-		}
-		if (!$obey_dir && $cat_rueck ne "") {
-		    if ($multiple) {
-			push @{$net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $strassen_pos;
-		    } else {
-			$net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $strassen_pos;
-		    }
+		    $net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $strassen_pos
+			if $do_net2name;
 		}
 	    }
 	}
