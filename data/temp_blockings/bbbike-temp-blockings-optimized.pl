@@ -6258,11 +6258,11 @@ Winterfeldtstr., westlicher Abschnitt	q3::inwork 6630,9990 6741,10017
        },
        {
          'data' => '#: by: https://nowkoelln.de/#wann
-#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023
-#: next_check: 2023-04-01
+#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
+#: next_check: 2023-12-15
 	q4::temp:clock 12412,9610 12250,9691
 ',
-         'from' => 1680300000,
+         'from' => 1679785200,
          'id' => 3640,
          'recurring' => 1,
          'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',

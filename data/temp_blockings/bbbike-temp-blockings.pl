@@ -36656,15 +36656,15 @@ EOF
 	q4; 9021,3878 9073,3892 9117,3898
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-01 00:00:00"),
+     { from  => $isodate2epoch->("2023-03-26 00:00:00"),
        until => undef, #
        text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: by: https://nowkoelln.de/#wann
-#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023
-#: next_check: 2023-04-01
+#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
+#: next_check: 2023-12-15
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
