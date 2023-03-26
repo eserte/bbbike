@@ -48,8 +48,12 @@ plan tests => 80 + $have_nowarnings;
 
 print "# Tests may fail if data changes\n";
 
-if (!GetOptions(get_std_opts(qw(xxx)))) {
-    die "usage: $0 [-xxx]";
+my $use_cache = 1;
+if (!GetOptions(get_std_opts(qw(xxx)),
+		'no-cache' => sub { $use_cache = 0 },
+		'verbose|v' => sub { $Strassen::VERBOSE = $StrassenNetz::VERBOSE = 1 },
+	       )) {
+    die "usage: $0 [-xxx] [-no-cache] [-verbose|-v]\n";
 }
 
 my $s		  = Strassen::Lazy->new("strassen");
@@ -82,7 +86,7 @@ if ($do_xxx) {
 	pass("-- Winckelmannstr.: einseitige Qualitätsangabe --");
 
 	my $net = StrassenNetz->new($qs);
-	$net->make_net_cat(-obeydir => 1, -net2name => 1);
+	$net->make_net_cat(-usecache => $use_cache, -obeydir => 1, -net2name => 1);
 	my $route = dclone $route;
 	is($net->get_point_comment($route, 0, undef), 0, "Without multiple");
 	$route = [ reverse @$route ];
@@ -93,7 +97,7 @@ if ($do_xxx) {
 	pass("-- Winckelmannstr.: einseitige Qualitätsangabe (dito) --");
 
 	my $net = StrassenNetz->new($qs);
-	$net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
+	$net->make_net_cat(-usecache => $use_cache, -obeydir => 1, -net2name => 1, -multiple => 1);
 	my $route = dclone $route;
 	is(scalar $net->get_point_comment($route, 0, undef), 0, "With multiple");
 	$route = [ reverse @$route ];
@@ -103,7 +107,7 @@ if ($do_xxx) {
 
 {
     my $net = StrassenNetz->new($comments_path);
-    $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
+    $net->make_net_cat(-usecache => $use_cache, -obeydir => 1, -net2name => 1, -multiple => 1);
 
     {
 	pass("-- CP;-Kommentar Buchholzer/Schönhauser Allee --");
@@ -178,7 +182,7 @@ if ($do_xxx) {
 
 {
     my $net = StrassenNetz->new($comments_scenic);
-    $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
+    $net->make_net_cat(-usecache => $use_cache, -obeydir => 1, -net2name => 1, -multiple => 1);
 
     {
 	pass("-- CS-Kommentar (beide Richtungen) Naturlehrpfad --");
@@ -372,7 +376,7 @@ EOF
     my $s_3    = $s->grepstreets(sub { $_->[Strassen::CAT] eq '3' });
     my $s_non3 = $s->grepstreets(sub { $_->[Strassen::CAT] ne '3' });
     my $net = StrassenNetz->new($s_non3);
-    $net->make_net_cat(-onewayhack => 1);
+    $net->make_net_cat(-usecache => $use_cache, -onewayhack => 1);
     $net->make_sperre($s_3, Type => ['wegfuehrung']);
     is scalar keys %{$net->{Net}}, 2, 'Only the "blocked" records in Net';
     is scalar keys %{$net->{Wegfuehrung}}, 3, 'The "wegfuehrung" records'
@@ -398,7 +402,7 @@ EOF
 something	XYZ $k1 $k2
 EOF
     my $add_net1 = StrassenNetz->new($add_s1);
-    $add_net1->make_net_cat(-onewayhack => 1);
+    $add_net1->make_net_cat(-usecache => $use_cache, -onewayhack => 1);
 
     # Create net with completely new record
     my $new_k1  = '1234567,987654';
@@ -408,7 +412,7 @@ EOF
 something new	$new_cat $new_k1 $new_k2
 EOF
     my $add_net2 = StrassenNetz->new($add_s2);
-    $add_net2->make_net_cat(-onewayhack => 1);
+    $add_net2->make_net_cat(-usecache => $use_cache, -onewayhack => 1);
 
     $s_net->push_stack($add_net1);
     is $s_net->{Net}{$k1}{$k2}, 'XYZ', 'Stacked value (overwriting old)'
@@ -475,7 +479,7 @@ XXX:
     my @expected_cycleroutes = ('R1', 'Spreeradweg', 'Berliner Mauerweg');
 
     my $net = StrassenNetz->new($comments_route);
-    $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
+    $net->make_net_cat(-usecache => $use_cache, -obeydir => 1, -net2name => 1, -multiple => 1);
     my @cycleroutes = $net->get_point_comment($route, 0, undef, AsIndex => 0);
     is_deeply \@cycleroutes, \@expected_cycleroutes, 'expected cycleroutes'
 	or diag <<"EOF";
