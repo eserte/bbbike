@@ -577,7 +577,9 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # 
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023)
+#: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2023-03-26
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-03-25
 #: next_check: 2023-05-25
 #: valid: 20230325-20230525
@@ -968,6 +970,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1306410.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/neubau-der-moltkebruecke-s1-unterbrochen-id213531
 #: by: https://nitter.cz/VIZ_Berlin/status/1639304567061102592#m
+#: by: https://www.stadtrand-nachrichten.de/moltkebruecke/
 #: XXX Neubau der Brücke, laut osm bis 2024
 #: osm_watch: way id="13860352" version="24"
 #: osm_watch: way id="1056377427" version="2"

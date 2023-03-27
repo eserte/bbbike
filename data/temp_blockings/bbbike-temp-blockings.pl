@@ -32497,7 +32497,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende Februar 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende März 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32506,7 +32506,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-02-28
+#: last_checked: 2023-03-27
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -37470,7 +37470,7 @@ EOF
 #: next_check_id: SPREEPARK-2022
 #: note: Zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-03-19 vvv
+#: last_checked: 2023-03-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
@@ -37967,7 +37967,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: OSKAR-2023
 #: XXX Halteverbotsschilder gelten bis zum 14.4.2023
-#: last_checked: 2023-03-21
+#: last_checked: 2023-03-27
 #: next_check: 2023-04-14
 	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
 EOF
@@ -38180,9 +38180,9 @@ Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
 #: add_fragezeichen ^^^
 EOF
      },
-     { from  => 1679507421, # 2023-03-22 18:50
+     { from  => $isodate2epoch->("2023-04-10 00:00:00"),
        until => 1682114399, # 2023-04-21 23:59
-       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnernerung, von 11. bis 21. April 2023',
+       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. bis 21. April 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
@@ -38202,6 +38202,18 @@ Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 #: source_id ^^^
 #: source_id ^^^
 #: also_indoor ^^^
+EOF
+     },
+     { from  => 1679936842, # 2023-03-27 19:07
+       until => 1688162400, # 2023-07-01 00:00
+       text  => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX möglicherweise Asphaltierung?
+#: last_checked: 2023-03-27
+#: check_frequency: 45d
+#: check_frequency: 2023-06-30
+	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
 EOF
      },
     );
