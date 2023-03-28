@@ -176,7 +176,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="20"
-#: last_checked: 2023-02-26
+#: last_checked: 2023-03-19 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
@@ -1093,7 +1093,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-03-26
+#: last_checked: 2023-03-28
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1870,6 +1870,7 @@ Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10
 (Stresemannstr. - Wilhelmstr.): Parkweg	Q1- 9215,10607 9368,10641
 (Stresemannstr. - Wilhelmstr.): Asphalt	Q0 9245,10565 9375,10616
 #: by Olaf Schulz vvv
+#: confirmed_by: srt
 Fröbelstr.: guter Asphalt	Q0 11776,15060 11873,15010 11964,14962 12095,14888
 #: confirmed_by: srt
 Ella-Kay-Str.: guter Asphalt	Q0 12095,14888 12060,14827 12050,14808 11998,14709
@@ -13052,6 +13053,10 @@ Wiebestr.: Gehwegplatten	Q0- 4527,13244 4495,13107
 (am Stasi-Museum): Beton	Q1+ 16059,12241 16065,12315
 (Wohnanlage Friedastr.): Kleinsteinpflaster	Q1 16887,11545 16753,11559
 (Dahlienstr. - Müggelschlößchenweg): Waldweg	Q2 24098,4310 24103,4260
+Krabbentaucherweg: Verbundsteinpflaster	Q1+ 16498,-92 16531,-104 16553,-158 16527,-169
+Spreegasse: glatt gepflastert	Q1 10373,12776 10305,12717
+Heiligegeistgasse: Gehwegplatten	Q0 10359,12634 10351,12646 10305,12717 10290,12742 10287,12747
+St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0- 10216,12706 10287,12747 10360,12793
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16410,7 +16415,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 # REMOVED --- #: next_check: 2021-07-30
 #: osm_watch: way id="593503609" version="7"
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
-#: osm_watch: way id="24204822" version="27"
+#: osm_watch: way id="24204822" version="28"
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -28973,9 +28978,12 @@ Heinz-Bartsch-Str.: Kopfsteinpflaster	Q2 13156,13978 13224,14025
 #: corrected_by: srt (Q1 -> Q0-)
 Heinz-Bartsch-Str.: Asphalt	Q0- 13037,13897 13156,13978
 #: confirmed_by: srt
-Ernst-Fürstenberg-Str.: Kopfsteinpflaster	Q2 13217,13884 13156,13978 13091,14075 13049,14141
-Ernst-Fürstenberg-Str.: Verbundsteine	Q0 13049,14141 12992,14196
+Ernst-Fürstenberg-Str.: Kopfsteinpflaster	Q2 13217,13884 13156,13978 13091,14075 13081,14090 13049,14141
+#: corrected_by: srt (Q0 -> Q0-)
+Ernst-Fürstenberg-Str.: Verbundsteine	Q0- 13049,14141 12992,14196
+#: confirmed_by: srt
 Rudi-Arndt-Str.: Kopfsteinpflaster	Q2 13166,13707 13359,13832
+#: confirmed_by: srt
 Rudi-Arndt-Str.: Asphalt	Q0 13359,13832 13449,13892
 (Hinter dem Velodrom): Beton	Q0 13585,14117 13854,13701
 #: corrected_by: srt (Beton -> Verbundsteinpflaster);
@@ -31298,6 +31306,7 @@ Kreuzungsbereich asphaltiert	Q0 17248,11317
 Kreuzungsbereich asphaltiert	Q0 17155,11348
 Kreuzungsbereich asphaltiert	Q0 11295,16199
 Kreuzungsbereich asphaltiert	Q0 11404,16140
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11358,16067
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13724,8090
 #: note: wobei Q3 eigentlich nur für die N-S-Richtung gilt, in der Mitte der Kreuzung und damit für die O-W-Richtung ist es eher Q2
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 21321,9672

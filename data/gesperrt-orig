@@ -1905,7 +1905,7 @@ Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 804
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
 Spittelmarkt: unbequemes Überqueren	3nocross 10238,11741 10299,11786 10314,11804
 #: XXX_prog ggfs. routing_helper- oder handicap_directed-Lösungen implementieren
-Karl-Liebknecht-Str.: unbequemes Überqueren	3nocross 10243,12546 10300,12587 10352,12627 10431,12709
+Karl-Liebknecht-Str.: unbequemes Überqueren	3nocross 10243,12546 10300,12587 10359,12634 10431,12709
 Am Seegraben: Mittelstreifen	3nocross 19894,-835 19996,-740 20205,-548
 Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2037,11122 2102,11307 2095,11440
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
@@ -2309,7 +2309,6 @@ Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
 Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3693,13769 -3716,13724
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr.: Mittelstreifen	3nocross -4008,12916 -3967,12976 -3923,13060
-Spandauer Str.: Straßenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 #: XXX_prog hack für das bekannte 3nocross-Problem
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
@@ -2771,6 +2770,9 @@ tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
 tragen	0:30 -45,12243
 tragen (Treppe, 14 Stufen)	0:25 -1667,16828
 tragen (Treppe, 31 Stufen)	0:30 17983,8960
+#: note: zwar überspannt die Schranke nicht die gesamte Fahrbahn, aber die Lücke mit Poller kann zugeparkt sein
+Schranke	BNP:3::trailer=10 13081,14090
+tragen (Treppe, 5 Stufen)	0:10 10290,12742
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -3539,7 +3541,7 @@ Drängelgitter	BNP:3::trailer=10 22085,5111
 #: note: nördlicher Abschnitt soll eingezogen werden
 #: XXX angrenzend Hochbauarbeiten für "Kleinstwohnanlage für das betreute Einzelwohnen für psychisch kranke Erwachsene, Wateweg 36/38"
 #: XXX wird dieser Abschnitt in Zukunft befahrbar bleiben?
-#: osm_watch: way id="26190195" version="17"
+#: osm_watch: way id="26190195" version="18"
 #: priority: #C
 #: last_checked: 2023-03-26
 #: check_frequency: 180d
@@ -3547,7 +3549,7 @@ Wateweg: Bauarbeiten, Weg komplett gesperrt	2::inwork 21131,8739 21124,8792
 # 
 #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung)
-#: last_checked: 2023-03-17 vvv
+#: last_checked: 2023-03-26 (mapillary) vvv
 #: osm_watch: way id="1155774800" version="1"
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315
 #: osm_watch: way id="1155774804" version="2"
@@ -4219,7 +4221,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-28
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4289,13 +4291,13 @@ Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-28
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-28
 #: check_frequency: 90d
 Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
 # 

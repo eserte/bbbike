@@ -1782,7 +1782,7 @@ Straße 106: nicht ausgeschildert	CP2; 14580,14636 14599,14679
 Liselotte-Herrmann-Str.: Hausdurchfahrt	CP2; 12701,13873 12537,13987
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-28
 #: check_frequency: 90d
 Molkenmarkt: rund um den Molkenmarkt fehlen Straßenschilder	CS 10662,12255 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422 10644,12469
 # 
@@ -1792,4 +1792,14 @@ Zur Marktflagge: nicht ausgeschildert	CP2; 14200,13213 14152,13072
 Boveristr.: nicht ausgeschildert	CS 19053,2890 19069,2904 19146,2975
 # 
 Neue Schönholzer Str.: zur Weiterfahrt in die Schönholzer Str. Radweg und Radfahrampel auf der linken Seite benutzen	CP; 10141,18030 10089,18180 10054,18210
+# 
+#: add_fragezeichen: Wann wird der Krabbentaucherweg ausgeschildert?
+#: last_checked: 2023-03-26 (mapillary)
+#: check_frequency: 90d
+Krabbentaucherweg: nicht ausgeschildert	CS 16498,-92 16531,-104 16553,-158 16527,-169
+# 
+Spreegasse: nicht ausgeschildert	CS 10373,12776 10305,12717 10244,12664
+Heiligegeistgasse: nicht ausgeschildert	CS 10359,12634 10351,12646 10305,12717 10290,12742 10287,12747
+St. Wolfgang-Str.: nicht ausgeschildert	CP2; 10287,12747 10360,12793
+St. Wolfgang-Str.: nicht ausgeschildert	CP2; 10287,12747 10216,12706
 # 

@@ -2318,7 +2318,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://www.berlin.de/special/shopping/flohmaerkte/1998249-1724959-grosser-antikmarkt-am-ostbahnhof.html
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
-#: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
+#: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
+#: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
 #: last_checked: 2023-02-25
 #: check_frequency: 120d
@@ -4358,7 +4359,48 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2022/04/halbmarathon/
+#: by: https://twitter.com/ellirhc11/status/1509924822444298250
+#: by: https://viz.berlin.de/2023/03/halbmarathon/
+#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
+	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
+	2::temp 8540,12420 8775,12457
+	2::temp 8309,12758 8306,12609 8207,12606
+	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+	2::temp 8306,12609
+	3 8554,12593 8540,12420 8775,12457
+	3 8399,12610 8400,12417 8391,12389
+# REMOVED ---	3 8369,12609 8373,12416 8391,12389
+	3 8775,12457 8540,12420 8554,12593
+	3 8327,12174 8344,12221 8391,12389
+	3 7429,12070 7383,12095 7031,12320
+# REMOVED ---	3 8391,12389 8373,12416 8369,12609
+	3 8391,12389 8344,12221 8327,12174
+	3 8391,12389 8400,12417 8399,12610
+	3 7654,12464 7627,12380 7603,12353
+	3 7603,12353 7627,12380 7654,12464
+	3 8592,12252 8538,12245 8522,12187
+	3 8592,12252 8538,12245 8522,12239
+	3 7822,12201 7816,12150 7823,12120
+	3 7822,12201 7875,12363 7945,12592
+	3 8522,12187 8538,12245 8522,12239
+	3 8522,12187 8538,12245 8592,12252
+	3 7945,12592 7875,12363 7822,12201
+	3 7945,12592 8122,12603 8120,12756
+	3 7031,12320 7383,12095 7429,12070
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12239 8538,12245 8592,12252
+	3 8120,12756 8122,12603 7945,12592
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1680148800,
+         'id' => 3085,
+         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.3.2023 bis 3.4.2023 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1680494400
+       },
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
@@ -6135,7 +6177,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-25
+#: last_checked: 2023-03-28
 #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6305,7 +6347,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -6317,12 +6359,12 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-03-18 vvv
-#: next_check: 2023-03-28 vvv
+#: next_check: 2023-04-24 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
 Friedrichstr.	q4::inwork; 9212,13471 9225,13389
-Friedrichstr. (vor der Oranienburger Str.)	q2::inwork 9225,13389 9246,13235
+Friedrichstr. (vor der Oranienburger Str.)	q3::inwork 9225,13389 9246,13235
 Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
@@ -6334,9 +6376,9 @@ Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 ',
          'from' => 1667499233,
          'id' => 3643,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 28.3.2023',
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 24.4.2023',
          'type' => 'handicap',
-         'until' => 1680015600
+         'until' => 1682348400
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
@@ -6688,6 +6730,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/vollsperrung-im-gruenstreifen_a364052
+#: note: wurde am 2023-03-19 bestätigt (mapillary)
 	2::inwork 7019,655 7032,533 7231,236
 ',
          'from' => 1668466800,
@@ -6847,10 +6890,10 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: priority: #C
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-28
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
-	2::inwork 10352,12627 10344,12641 10309,12700
+	2::inwork 10359,12634 10351,12646 10305,12717
 ',
          'from' => undef,
          'id' => 3704,
@@ -6884,7 +6927,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-28
 	2::inwork 12173,15040 12095,14888
 ',
          'from' => undef,

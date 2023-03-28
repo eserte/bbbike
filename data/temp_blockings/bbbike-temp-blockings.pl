@@ -16346,7 +16346,8 @@ EOF
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://www.berlin.de/special/shopping/flohmaerkte/1998249-1724959-grosser-antikmarkt-am-ostbahnhof.html
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
-#: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
+#: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
+#: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
 #: last_checked: 2023-02-25
 #: check_frequency: 120d
@@ -28777,8 +28778,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/tag-der-deutschen-einheit-viele-sperrungen-in-mitte-und-tiergarten?redirect=https%3A%2F%2Fviz.berlin.de%2Fhome%3Fp_p_id%3D101_INSTANCE_ZQE04eyJSiIC%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D2',
        data  => <<EOF,
-	2::temp 10243,12546 10300,12587 10352,12627 10431,12709 10601,12521 10644,12469 10685,12422 10710,12377
-	2::temp 10308,12859 10360,12793 10387,12760 10431,12709 10515,12780 10525,12789 10695,12933
+	2::temp 10243,12546 10300,12587 10359,12634 10431,12709 10601,12521 10644,12469 10685,12422 10710,12377
+	2::temp 10308,12859 10360,12793 10373,12776 10431,12709 10515,12780 10525,12789 10695,12933
 	2::temp 10176,12506 10243,12546
 	2::temp 10094,12635 10176,12506
 	3 10363,12535 10300,12587 10291,12600
@@ -29383,13 +29384,15 @@ EOF
 	q4::inwork; 9936,14085 10002,14092
 EOF
      },
-     { from  => 1648843431, # 1554400800, # 2019-04-04 20:00
-       until => $isodate2epoch->("2022-04-04 06:00:00"),
-       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, bis 4.4.2022 6 Uhr',
+     { from  => $isodate2epoch->("2023-03-30 06:00:00"), # 1 Tag Vorlauf # 1648843431, # 1554400800, # 2019-04-04 20:00
+       until => $isodate2epoch->("2023-04-03 06:00:00"),
+       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.3.2023 bis 3.4.2023 6 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2022/04/halbmarathon/
 #: by: https://twitter.com/ellirhc11/status/1509924822444298250
+#: by: https://viz.berlin.de/2023/03/halbmarathon/
+#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -30506,7 +30509,7 @@ EOF
 #: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00
 #: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
-	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
+	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
 	2::temp 9737,12238 9702,12307 9664,12387
@@ -36378,7 +36381,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-25
+#: last_checked: 2023-03-28
 #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36707,8 +36710,8 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 EOF
      },
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
-       until => $isodate2epoch->("2023-03-28 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
-       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 28.3.2023',
+       until => $isodate2epoch->("2023-04-24 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
+       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 24.4.2023',
 # was: voraussichtlich bis Ende Januar 2023
 # was:      text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
        type  => 'handicap',
@@ -36720,7 +36723,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -36732,12 +36735,12 @@ EOF
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-03-18 vvv
-#: next_check: 2023-03-28 vvv
+#: next_check: 2023-04-24 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
 Friedrichstr.	q4::inwork; 9212,13471 9225,13389
-Friedrichstr. (vor der Oranienburger Str.)	q2::inwork 9225,13389 9246,13235
+Friedrichstr. (vor der Oranienburger Str.)	q3::inwork 9225,13389 9246,13235
 Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
@@ -37310,6 +37313,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/vollsperrung-im-gruenstreifen_a364052
+#: note: wurde am 2023-03-19 bestätigt (mapillary)
 	2::inwork 7019,655 7032,533 7231,236
 EOF
      },
@@ -37545,10 +37549,10 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: priority: #C
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-28
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
-	2::inwork 10352,12627 10344,12641 10309,12700
+	2::inwork 10359,12634 10351,12646 10305,12717
 EOF
      },
      { from  => 1673074800, # 2023-01-07 08:00
@@ -37579,7 +37583,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-28
 	2::inwork 12173,15040 12095,14888
 EOF
      },

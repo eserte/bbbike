@@ -47,7 +47,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-03-25
+#: last_checked: 2023-03-28
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -247,7 +247,7 @@ Elisabeth-Abegg-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 7930,12912 7858,
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023)
-#: last_checked: 2023-03-13 vvv
+#: last_checked: 2023-03-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
@@ -327,7 +327,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
-#: last_checked: 2023-03-13
+#: last_checked: 2023-03-28
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -632,11 +632,11 @@ Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,1
 #: last_checked: 2023-03-18
 Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
 #: last_checked ^^^
-#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023)
-#: osm_watch: way id="61816617" version="28"
+#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023)
+#: osm_watch: way id="61816617" version="29"
 #: last_checked: 2023-03-18
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
-#: osm_watch: way id="4407756" version="32"
+#: osm_watch: way id="4407756" version="33"
 #: last_checked: 2023-03-18
 Alt-Moabit: Bauarbeiten, teilweise gemeinsamer Geh- und Radweg	q2::inwork; 7346,13022 7422,13012
 #: check_frequency ^^^
@@ -1524,10 +1524,10 @@ Ruhlsdorfer Str.: Bordstein, Fußgänger	q4+ 9350,10176 9368,10211
 #: note: Radwegführung existiert
 Naunynstr.: Fußgänger	q1 11366,10793 11329,10787
 # REMOVED (Fahrbahn darf jetzt benutzt werden) --- Hermannplatz: oft Fußgänger auf dem Radweg	q1 11831,8989 11909,9155
-Spreepromenade am DomAquarée: Fußgänger, Cafés, Radfahren verboten	q4 10300,12587 10291,12600 10249,12658 10219,12701 10166,12777
-St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
-Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
-Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10344,12641 10352,12627
+Spreepromenade am DomAquarée: Fußgänger, Cafés, Radfahren verboten	q4 10300,12587 10291,12600 10244,12664 10216,12706 10166,12777
+St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10216,12706 10287,12747 10360,12793
+Spreegasse: Fußgänger, Cafés	q3 10244,12664 10305,12717 10373,12776
+Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10287,12747 10290,12742 10305,12717 10351,12646 10359,12634
 # REMOVED --- #: XXX_prog: sollte BS werden (1x an der Gormannstr.) --- zur Gormannstr.: Bordstein	q3 10341,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erwähnt
 #: note: früher "q2"
@@ -4883,8 +4883,9 @@ Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 #: note: beim Überqueren des Mittelstreifens müssen insgesamt vier Bordsteine überquert werden
 (Anton-Saefkow-Str. - John-Schehr-Str.): Bordsteine, parkende Autos	q4 13031,14390 13022,14378 13016,14370
 (Anton-Saefkow-Str. - John-Schehr-Str.): einige Fußgänger, Parkplatz	q1 13016,14370 12954,14287
+#: XXX_prog: BS (am Wendehammer, ansonsten q3)
 #: note: früher "q1"
-Ernst-Fürstenberg-Str.: Fußgänger, schmal	q3 13049,14141 12992,14196
+Ernst-Fürstenberg-Str.: Fußgänger, schmale Hausdurchfahrt, Bordstein	q3- 13049,14141 12992,14196
 # REMOVED (hier nicht) --- An der Brauerei: Fußgänger	q1 13288,13300 13279,13323
 # REMOVED (hier gibt's eine Servicestraße) --- #: XXX q1 aber gleichzeitig N --- ist hier eine Service-Straße? Ist Fußgänger+q1 vielleicht falsch? --- An der Brauerei: Fußgänger	q1 13279,13323 13375,13367
 #: note: teilweise Servicestraßen-Charakter, nur die letzten Meter zur Landsberger Allee reiner Fußweg

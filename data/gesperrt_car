@@ -1518,9 +1518,11 @@ Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12324,17213 11893
 Voigtstr. - Pettenkoferstr.	1 14858,12765 14832,12755
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
-Straßenbahntrasse	3nocross::ignrte 10387,12760 10360,12793 10308,12859
-Spandauer Str. -> St. Wolfgang-Str.: Straßenbahntrasse	3::igndisp 10387,12760 10360,12793 10285,12744
-St. Wolfgang-Str. -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10285,12744 10360,12793 10308,12859
+Straßenbahntrasse	3nocross::ignrte 10308,12859 10360,12793 10373,12776 10431,12709
+Spandauer Str. -> St. Wolfgang-Str.: Straßenbahntrasse	3::igndisp 10373,12776 10360,12793 10287,12747
+St. Wolfgang-Str. -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10287,12747 10360,12793 10308,12859
+Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10373,12776 10305,12717
+Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10305,12717 10373,12776 10360,12793
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16512,11894 16541,12071 16556,12180
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16556,12180 16541,12071 16512,11894
 Grünspechtweg: Schranke	3 6988,23244 7059,23127 7171,22942
