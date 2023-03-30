@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-01-04
+#: last_checked: 2023-03-30
 #: check_frequency: 90d
 #: next_check: 2023-07-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -222,7 +222,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535 --- #: XXX laut osm wieder Einbahnstraße --- #: osm_watch: way id="30043322" version="17" --- #: last_checked: 2020-12-12 --- #: check_frequency: 60d --- #: next_check: 2020-12-13 --- #: priority: #A --- #: valid: 20201214-
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
-#: last_checked: 2023-01-24
+#: last_checked: 2023-03-26 (mapillary)
 #: check_frequency: 90d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -1327,7 +1327,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2023-03-23
+#: last_checked: 2023-03-30
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3606,7 +3606,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-03-27
+#: last_checked: 2023-03-30
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3731,15 +3731,17 @@ Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,37
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-03-19 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2023-03-30 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2023-06-01 vvv
 #: osm_watch: way id="358602468" version="9"
 #: osm_watch: way id="24189226" version="25"
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
 #: osm_watch: way id="72183569" version="10"
-#: valid: -20230601
-Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:q4:inwork	13333,9929 13418,9944 13579,10146
+#: valid: -20230601 vvv
+Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:q4:inwork 13333,9929 13418,9944
+Am Flutgraben: Bauarbeiten, Weg ist gesperrt	2::inwork 13418,9944 13579,10146
+#: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3894,7 +3896,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2023-03-07
+#: last_checked: 2023-03-30
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4107,7 +4109,7 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: XXX hier wird eine neue Unterführung gebaut vvv
 #: last_checked: 2022-11-20 (bahninfo-forum) vvv
 #: next_check: 2023-07-31 vvv
-#: osm_watch: way id="152434836" version="21"
+#: osm_watch: way id="152434836" version="22"
 #: osm_watch: way id="30084962" version="29"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
@@ -4130,7 +4132,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-03-27
+#: last_checked: 2023-03-30
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4138,7 +4140,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
-#: last_checked: 2023-03-15 vvv
+#: last_checked: 2023-03-30 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4460,15 +4462,15 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
 #: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023)
+#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023)
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="16"
 #: last_checked: 2023-03-08 (krickstadt)
-#: next_check: 2023-03-31
-#: valid: -20230331
+#: next_check: 2023-09-01
+#: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
 # 
 # REMOVED (laut osm komplett abgetragen) --- #: next_check_id: SPREEBOGENPARK-2018 --- #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt --- #: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar? --- #: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein --- #: note: Bebauungsplan II - 200ib --- #: source_id: 2147343514 --- #: osm_watch: way id="537967314" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 60d --- #: priority: #B --- Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
@@ -4870,7 +4872,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="158025179" version="9"
 #: last_checked: 2023-03-18
 #: check_frequency: 45d
-#: next_check: 2023-03-31
+#: next_check: 2023-04-13
 #: also_indoor: traffic (ex-G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804

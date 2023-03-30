@@ -27,9 +27,10 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm
 #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023)
+#: source_id: viz2021:13.37994,52.52093,17.02.2023,12:00 (zusätzlicher Eintrag, bis 13.04.2023)
 #: last_checked: 2023-02-25
-#: next_check: 2023-03-31
-#: valid: -20230331
+#: next_check: 2023-04-13
+#: valid: -20230413
 Gegenverkehrsregelung	X::inwork 8737,12757
 # 
 #: by: https://viz.berlin.de/2023/01/verkehrsvorschau-240123/ (Bedarfsampeln für Fußgänger, bis 2024)
@@ -89,7 +90,7 @@ Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45
 #: note: Anforderungsampel
-#: last_checked: 2023-03-27
+#: last_checked: 2023-03-30
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -142,6 +143,12 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
+#: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023)
+#: next_check: 2023-05-19
+#: valid: -20230519
+	F::inwork 11913,13077
 # 
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
@@ -174,10 +181,11 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork 16601,10650
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) vvv
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) vvv
+#: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023)
 #: last_checked: 2023-01-15 (mapillary) vvv
-#: next_check: 2023-03-31 vvv
+#: next_check: 2023-05-31 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
@@ -287,7 +295,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2023-02-21
+#: last_checked: 2023-03-30
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -1364,7 +1372,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX bis wann wird es diesen Bahnübergang geben?
 #: last_checked: 2021-10-03
 #: next_check: 2023-07-31
-	B 10200,-2176
+	B 10215,-2210
 # 
 	X 12938,1348
 	X 12911,1815
@@ -3249,7 +3257,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-27 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8732,14098
@@ -3583,7 +3591,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: CHAUSSEE-2020
 #: osm_watch: node id="26748289" version="9"
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-27 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 	X::inwork 8336,14586
@@ -3596,7 +3604,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-27 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
@@ -3633,7 +3641,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: last_checked: 2023-03-04 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 120d
 	X::inwork 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.

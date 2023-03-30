@@ -9,7 +9,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10207,-2173 10200,-2176 10182,-2183 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10225,-2207 10215,-2210 10209,-2211 10161,-2146 10096,-2137
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
@@ -62,6 +62,7 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9123,533 9160,460 9200,450
+Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8568,21863 8473,21633 8460,21602
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
@@ -3367,7 +3368,7 @@ Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
-Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert: gesperrt, ggfs. schieben	q4:inwork::igndisp 13333,9929 13418,9944 13579,10146
+Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert: gesperrt, ggfs. schieben	q4:inwork::igndisp 13333,9929 13418,9944
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922

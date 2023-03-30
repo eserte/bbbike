@@ -3448,6 +3448,12 @@ Teichmummelring	N 22246,2272 22418,2390 22454,2342 22271,2214
 Ankerweg	N 22118,2559 22159,2585 22197,2612
 Am Ruderverein	N 22153,2482 22221,2520 22270,2549
 An der Dahme	N 22197,2612 22270,2549 22358,2460
+#: next_check_id: NORD52-2019
+#: XXX Wird dieser Abschnitt einen Straßennamen bekommen?
+#: osm_watch: way id="488104821" version="8"
+#: osm_watch: way id="520100569" version="6"
+#: last_checked: 2023-03-17
+#: check_frequency: 120d
 (An der Dahme - Teichmummelring)	NN 22358,2460 22418,2390
 Gaffelsteig	N 22287,2431 22221,2520 22159,2585
 Relingstr.	N 22195,2390 22287,2431 22358,2460
@@ -4632,7 +4638,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="13"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 10
-#: last_checked: 2023-02-14 (baustellen-doku)
+#: last_checked: 2023-03-27 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7264,19717 7273,19682
@@ -6060,7 +6066,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="5"
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-26 (mapillary)
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -10891,13 +10897,13 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2131 1045
 #: by: https://pbs.twimg.com/media/EYzBdB6XgAEfb0h?format=jpg&name=large
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnuebergang-in-der-lichtenrader-bahnhofstrasse-ist-seit-25-mai-geschlossen_a271258
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (evtl. mittlerweile etwas verlegt?)
-#: osm_watch: way id="855309801" version="2"
+#: osm_watch: way id="855309801" version="4"
 # REMOVED --- #: osm_watch: way id="810461577" version="5"
-#: osm_watch: way id="997120420" version="3"
+#: osm_watch: way id="997120420" version="4"
 #: XXX bis wann wird es diesen Weg geben?
 #: last_checked: 2022-10-24
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10207,-2173 10200,-2176 10182,-2183 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10215,-2170 10225,-2207 10215,-2210 10209,-2211 10161,-2146 10096,-2137
 # 
 Zescher Str.	N 10513,-2397 10509,-2131
 Haeselerstr. (Lichtenrade)	N 10404,-2404 10513,-2397 10563,-2432
@@ -16091,7 +16097,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="16"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2023-02-05 (research)
+#: last_checked: 2023-03-27 (mapillary)
 #: check_frequency: 90d
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -16741,7 +16747,7 @@ Hüttendorfer Weg	N 21466,-281 21402,-116
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="5"
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-26 (mapillary)
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -17628,7 +17634,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/die-naechsten-schritte-zur-festsetzung-von-bebauungsplaenen-stehen-an_a293341 (Erwähnung)
 #: osm_watch: way id="59573616" version="2"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2022-11-08 (mapillary)
+#: last_checked: 2023-03-29 (mapillary)
 #: check_frequency: 180d
 (Rhönstr. - Harzburger Str.)	NN 13598,21360 13709,21334
 Eifelstr.	N 13580,21286 13351,21239 13280,21225

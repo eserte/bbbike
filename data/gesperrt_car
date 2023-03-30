@@ -2365,3 +2365,6 @@ Mittelstreifen	3nocross::ignrte 8683,6326 8699,6468 8707,6537
 Manteuffelstr. -> Manteuffelstr. (Tempelhof) [63-64d]: Mittelstreifen	3::igndisp 8707,6537 8699,6468 8823,6458
 Manteuffelstr. (Tempelhof) [63-64d] -> Manteuffelstr.: Mittelstreifen	3::igndisp 8823,6458 8699,6468 8683,6326
 Im Marienpark: für Fahrzeuge verboten	2 8167,3641 8178,3591 8070,3563
+Straßenbahntrasse	3nocross::ignrte 15066,14579 15120,14481 15168,14395
+Weißenseer Weg -> Anlieferung Hohenschönhauser Tor: Straßenbahntrasse	3::igndisp 15066,14579 15120,14481 15225,14545
+Anlieferung Hohenschönhauser Tor -> Weißenseer Weg: Straßenbahntrasse	3::igndisp 15225,14545 15120,14481 15168,14395

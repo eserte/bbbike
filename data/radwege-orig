@@ -314,7 +314,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-03-27 vvv
+#: last_checked: 2023-03-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -882,10 +882,10 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.471776,52.513945,09.01.2023,06:00 (Leitungsarbeiten zwischen Weichselstr. und Jessnerstr., bis 27.1.2023) (bis 7.2.2023) (inaktiv)
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
-#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
+#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1165,7 +1165,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-03-27 vvv
+#: last_checked: 2023-03-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1787,7 +1787,9 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 7709,8777 7795,8765
 Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
 # 
+#: note: Detmolder Str.
 #: by: http://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024)
+#: XXX Sanierung der Radwege vvv
 #: last_checked: 2023-02-26 vvv
 #: next_check: 2024-12-31 vvv
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
@@ -1796,6 +1798,12 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 	RW1;RW1 4873,8007 4793,8005
 #: next_check ^^^
 #: last_checked ^^^
+#: XXX ^^^
+# 
+#: note: Wexstr.
+#: by: https://nitter.cz/SenUMVKBerlin/status/1641004554111049729#m
+#: note: einzelner Poller, durchgängig niedrige Protektionselemente
+geschützter Radstreifen	RW4; 5357,8013 5472,8012 5522,8011 5570,8011 5631,8011
 # 
 # REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
 Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
@@ -1882,7 +1890,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-03-23 (mapillary) vvv
+#: last_checked: 2023-03-28 (mapillary) vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -2580,7 +2588,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: XXX war: RW3;RW3
 #: last_checked: 2023-02-25
 #: check_frequency: 45d
-#: next_check: 2023-03-31
+#: next_check: 2023-04-13
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
 bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 gekennzeichnet	RW3; 10906,10874 10887,10922
@@ -2642,7 +2650,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-02-21
+#: last_checked: 2023-03-30
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673

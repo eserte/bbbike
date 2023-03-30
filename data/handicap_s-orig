@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: 
-#: last_checked: 2023-03-22
+#: last_checked: 2023-03-29
 #: also_indoor: traffic (B)
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
@@ -20,7 +20,7 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: source_id: bvg2021:16#BVG316317_0
 #: note: siehe auch https://www.openstreetmap.org/note/3474648
 #: XXX evtl. ist auch die Travestr. betroffen
-#: last_checked: 2023-03-22
+#: last_checked: 2023-03-29
 #: next_check: 2023-04-24
 #: valid: -20230424
 Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -47,7 +47,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-03-28
+#: last_checked: 2023-03-30
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -63,7 +63,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-03-30 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -171,7 +171,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: source_id: 2147345858
 #: last_checked: 2022-07-24
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10207,-2173 10200,-2176 10182,-2183 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10225,-2207 10215,-2210 10209,-2211 10161,-2146 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -297,7 +297,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
 #: note: bei rbb noch bis 31.12.2022
-#: last_checked: 2023-03-12
+#: last_checked: 2023-03-27 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -632,7 +632,7 @@ Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,1
 #: last_checked: 2023-03-18
 Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
 #: last_checked ^^^
-#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023)
+#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv)
 #: osm_watch: way id="61816617" version="29"
 #: last_checked: 2023-03-18
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
@@ -1094,6 +1094,18 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 ### Mahlsdorf ###
 # 
 # REMOVED (offizieller linksseitiger Rad/Gehweg) --- #: next_check_id: PILGRAMER-2019 --- #: XXX wann sind die Bauarbeiten beendet? --- #: next_check: 2021-01-05 --- #: valid: -20210105 --- Pilgramer Str.: Einbahnstraßenregelung, ggfs. auf linken Gehweg ausweichen	q3::inwork; 25138,11215 25139,11104 25143,10961
+# 
+### Rosenthal ###
+# 
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1289889.php (31. Januar 2023 bis 8. Mai 2023)
+#: by: https://berliner-abendblatt.de/2023/01/31/bauarbeiten-in-rosenthal-in-der-hauptstrasse-wird-es-eng/
+#: by: https://www.berliner-woche.de/rosenthal/c-verkehr/arbeiten-an-der-abwasserleitung_a371543
+#: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben)
+#: osm_watch: way id="22966091" version="36"
+#: last_checked: 2023-03-27 (mapillary)
+#: next_check: 2023-05-07
+#: valid: -20230508
+Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8568,21863 8473,21633 8460,21602
 # 
 #: temporary ^^^
 ######################################################################
@@ -4056,7 +4068,7 @@ Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,28
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
 #: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören?
-#: last_checked: 2023-03-16
+#: last_checked: 2023-03-28 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
