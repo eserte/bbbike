@@ -1801,7 +1801,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2023-03-12
+#: last_checked: 2023-04-01
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1814,7 +1814,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: last_checked: 2023-03-07
+#: last_checked: 2023-04-01
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1824,7 +1824,7 @@ George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
 #: osm_watch: way id="977556359" version="9"
-#: last_checked: 2023-03-12
+#: last_checked: 2023-04-01
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -1875,6 +1875,7 @@ Lichtburgring	N 9933,15815 10016,15823
 Bärbel-Bohley-Ring	N 9933,15815 9917,15813 9744,15793 9747,15847 9910,15876 9997,15884
 Bärbel-Bohley-Ring	N 9910,15876 9917,15813
 (Bärbel-Bohley-Ring - Ramlerstr.)	NN 9744,15793 9644,15780
+(Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring)	NN 10064,15920 9996,15901 9997,15884
 Ystader Str.	N 10418,15704 10391,15800 10365,15902 10355,15946
 Sonnenburger Str.	N 10575,15968 10571,15933 10554,15725 10542,15609
 (S-Bahn-Brücke)	NN 10575,15968 10592,15968 10593,16037
@@ -1903,7 +1904,7 @@ Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,1
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10367,14946 10377,14909 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10130,15653 10105,15752 10081,15853
-Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10081,15853 10062,15927
+Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10081,15853 10064,15920 10062,15927
 Schwedter Steg	NN 10062,15927 10005,16150
 (Gleimstr. - Mauerpark)	NN 10170,15659 10228,15488
 Am Falkplatz	N 10418,15704 10456,15561
@@ -4633,6 +4634,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20210321/ (provisorische Verlegung des Mauerwegs, neu asphaltiert)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5193&date=2021-08-24 (Aufstellung eines Bebauungsplans?)
 #: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20230214/
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5195&date=20230401
 #: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
 #: XXX: Bebauungsplan 3-15b
 #: osm_watch: way id="31428032" version="13"
@@ -5539,7 +5541,7 @@ Götelstr.	N -3301,12864 -3275,12769 -3259,12580 -3260,12557 -3263,12511 -3269,12
 (Götelstr. - Tharsanderweg)	NN -3416,12165 -3524,11980
 # REMOVED --- #: by: Stefan Klinkusch: "gesperrt"
 #: source_id: INKO_118000
-#: osm_watch: way id="25115001" version="10"
+#: osm_watch: way id="25115001" version="11"
 (Heerstr. - Tiefwerder)	N -3069,11487 -3075,11510 -3186,11557
 (Treppe an der Freybrücke)	NN -3181,11496 -3177,11507 -3173,11520
 (Heerstr. - Tiefwerder)	NN -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3070,11712 -3087,11728 -3179,11763
@@ -12401,6 +12403,7 @@ Am Oder-Spree-Kanal	N 30588,-3000 30546,-3072
 Am Oder-Spree-Kanal	N 30646,-2732 30629,-2817
 Zu den Gosener Bergen	N 30728,-2326 30646,-2732
 Schmöckwitzwerdersteg	NN 30546,-3072 30534,-3105
+(Fuß- und Radverkehrsbrücke Schmöckwitzwerder)	NN 30473,-3290 30525,-3190 30582,-3025 30588,-3000
 (Wiesenweg)	N -1409,16106 -1334,16260 -1321,16543 -1333,16577 -1351,16587
 # REMOVED (existiert nicht) --- (Wiesenweg)	N -1351,16587 -1370,16648 -1343,16732
 (Rohrbruchwiesen)	NN -1321,16543 -1159,16563 -1096,16597 -1073,16610
@@ -16084,7 +16087,7 @@ Manga-Bell-Platz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,1
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="22"
 #: also_indoor: search Maji-Maji-Allee
-#: last_checked: 2023-02-05 (research)
+#: last_checked: 2023-04-01
 #: check_frequency: 90d
 Petersallee	N 5426,16539 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020

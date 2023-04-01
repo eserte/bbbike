@@ -47,7 +47,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-03-30
+#: last_checked: 2023-04-01
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
@@ -212,7 +212,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="1"
-#: last_checked: 2022-12-30 (mapillary)
+#: last_checked: 2023-04-01
 #: check_frequency: 150d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
@@ -233,7 +233,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2023-03-15 (osm)
+#: last_checked: 2023-04-01
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -280,7 +280,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-25
+#: last_checked: 2023-04-01
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -306,12 +306,12 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-03-15 (architektur-urbanistik) vvv
+#: last_checked: 2023-04-01 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="39"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
-Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,12438
+Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -415,7 +415,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-03-20 vvv
+#: last_checked: 2023-04-01 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="13"
@@ -632,13 +632,8 @@ Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,1
 #: last_checked: 2023-03-18
 Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
 #: last_checked ^^^
-#: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv)
-#: osm_watch: way id="61816617" version="29"
-#: last_checked: 2023-03-18
-Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
-#: osm_watch: way id="4407756" version="33"
-#: last_checked: 2023-03-18
-Alt-Moabit: Bauarbeiten, teilweise gemeinsamer Geh- und Radweg	q2::inwork; 7346,13022 7422,13012
+# REMOVED --- #: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv) --- #: osm_watch: way id="61816617" version="29" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
+# REMOVED --- #: osm_watch: way id="4407756" version="33" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, teilweise gemeinsamer Geh- und Radweg	q2::inwork; 7346,13022 7422,13012
 #: check_frequency ^^^
 #: next_check ^^^
 # 
@@ -4483,6 +4478,8 @@ Waiblinger Weg: Gehweg, Bordstein	q3- 17743,5260 17771,5278
 # 
 #: XXX_prog BS (ansonsten entfernen)
 (Dahlienstr. - Müggelschlößchenweg): Bordstein (Bushaltestelle) oder Umweg	q3 24098,4310 24103,4260
+# 
+(Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): einige Fußgänger	q2 10064,15920 9996,15901 9997,15884
 # 
 ######################### User Contributions #################################
 # 

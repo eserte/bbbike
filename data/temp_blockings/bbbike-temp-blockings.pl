@@ -19564,6 +19564,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/11/13/neukoellner-maientage-standort-tempelhof-grundsaetzlich-moeglich/
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8413 (Anfrage)
 #: by: https://berliner-abendblatt.de/2023/01/04/neuer-standort-fuer-maientage-bezirk-prueft-angebot/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8480 (Anfrage)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -21777,17 +21778,19 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2022-07-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-07-17 23:59:59"),
+     { from  => $isodate2epoch->("2023-07-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7, start => "2020-10-25T00:00:00"]],
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2022 bis 17.07.2022)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (13.07.2023 bis 16.07.2023)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
 #: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
 #: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
+#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
 # REMOVED (was) : tempex: 20160714-20160717
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
@@ -28324,7 +28327,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-03-23
+#: last_checked: 2023-04-01
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29396,8 +29399,11 @@ EOF
 #: by: https://twitter.com/ellirhc11/status/1509924822444298250
 #: by: https://viz.berlin.de/2023/03/halbmarathon/
 #: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
+#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023)
-#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023)
+#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -30726,7 +30732,7 @@ EOF
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-20
+#: last_checked: 2023-03-31
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -31106,7 +31112,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-25
+#: last_checked: 2023-03-31
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -36270,16 +36276,13 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1680349802, # undef, # XXX
        text  => 'Ostender Str.: Einbahnstraßenregelung an der Müllerstr., gesperrt Richtung Nordosten, Ende der Hochbauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Einbahnstraße etwa 70m lang
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-02-06 (daf)
-#: check_frequency: 45d
+# REMOVED --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: also_indoor: traffic (none) --- #: last_checked: 2023-04-01 --- #: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
 EOF
      },
@@ -36370,27 +36373,26 @@ EOF
 EOF
      },
      { from  => 1661922000, # 2022-08-31 07:00
-       until => 1674509733, # 1680299940, # 2023-03-31 23:59
-       text  => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.09.2022 07:00 bis 31.03.2023 23:59 ',
+       until => $isodate2epoch->("2023-08-31 18:00:00"), # 1674509733, # 1680299940, # 2023-03-31 23:59
+       text  => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende August 2023',
        type  => 'handicap',
        source_id => 'viz2021:13.32575,52.50557,01.09.2022,07:00', # inaktiv
        data  => <<EOF,
 #: also_indoor: traffic (none)
 #: source_id: viz2021:13.32575,52.50557,01.11.2022,07:00 (bis 31.3.2023) (inaktiv)
+#: source_id: viz2021:13.32531,52.50287,01.04.2023,07:00 (bis 31.08.2023)
 #: note: auch bei rbb erwähnt
 # REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
-	q4::inwork 5084,10890 5072,10701
+# REMOVED ---	q4::inwork 5084,10890 5072,10701
+	q4::inwork; 5090,11007 5084,10890
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => $isodate2epoch->("2023-03-31 20:00:00"), # undef, # XXX
        text  => 'Krautstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-03-28
-#: check_frequency: 10d
+# REMOVED (Asphaltierung fertig) --- #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet? --- #: also_indoor: traffic (none) --- #: last_checked: 2023-03-28 --- #: check_frequency: 10d
 	q4::inwork 12081,12236 12059,12172
 EOF
      },
@@ -36913,7 +36915,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-03-22
+#: last_checked: 2023-04-01
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37722,14 +37724,14 @@ EOF
 EOF
      },
      { from  => 1675896728, # 1676156400, # 2023-02-12 00:00
-       until => $isodate2epoch->("2023-03-31 17:00:00"), # 1679093999, # 2023-03-17 23:59
-       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Ende März 2023',
+       until => $isodate2epoch->("2023-04-14 17:00:00"), # 1679093999, # 2023-03-17 23:59
+       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Mitte April 2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023)
 #: also_indoor: traffic (G,H,B,W)
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -37761,13 +37763,13 @@ EOF
 EOF
      },
      { from  => 1676185200, # 2023-02-12 08:00
-       until => 1680267600, # 2023-03-31 15:00
-       text  => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 31.03.2023 15:00 Uhr',
+       until => $isodate2epoch->("2023-04-06 15:00:00"), # 1680267600, # 2023-03-31 15:00
+       text  => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 06.04.2023 15:00 Uhr',
        type  => 'gesperrt',
        source_id => 'LS/223-P/22/226',
        data  => <<EOF,
 #: XXX Radwegbau
-#: next_check: 2023-03-31
+#: next_check: 2023-04-06
 	2::inwork -13732,20201 -13174,19943 -12456,19410 -12161,19075
 EOF
      },
@@ -38214,11 +38216,14 @@ EOF
        text  => 'Leuthener Str./Leberstr.: Bauarbeiten, Fahrbahn der Leuthener Str. gesperrt (Bordsteine!), EInbahnstraßenregelung in der Leberstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 #: source_id: bvg2021:106#BVG312086_0 vvv
+#: last_checked: 2023-03-29 (architektur-urbanistik) vvv
 Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
+#: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: also_indoor ^^^
@@ -38234,6 +38239,24 @@ EOF
 #: check_frequency: 45d
 #: check_frequency: 2023-06-30
 	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
+EOF
+     },
+     { from  => 1680386400, # 2023-04-02 00:00
+       until => 1682891999, # 2023-04-30 23:59
+       text  => 'Luisenhain: Bauarbeiten, Sperrung, vom 3. April 2023 bis voraussichtlich Ende April 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1310601.php (unpräzises Endedatum: "Mitte/Ende April")
+	2::inwork 22153,4840 22196,4847
+EOF
+     },
+     { from  => 1680148800, # 2023-03-30 06:00
+       until => 1682719140, # 2023-04-28 23:59
+       text  => 'Crailsheimer Str.: Bauarbeiten, zwischen Steglitzer Damm und Schünemannweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2023 06:00 bis 28.04.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.354875,52.448856,31.03.2023,06:00',
+       data  => <<EOF,
+	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
 EOF
      },
     );

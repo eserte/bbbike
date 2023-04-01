@@ -2621,7 +2621,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3126,7 +3126,34 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'type' => 'gesperrt',
          'until' => 1682287199
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
+#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
+#: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
+#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
+# REMOVED (was) : tempex: 20160714-20160717
+	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'from' => 1689112800,
+         'id' => 2420,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              7,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (13.07.2023 bis 16.07.2023)',
+         'type' => 'gesperrt',
+         'until' => 1689544799
+       },
        undef,
        undef,
        undef,
@@ -4202,7 +4229,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-03-23
+#: last_checked: 2023-04-01
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4367,8 +4394,11 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://twitter.com/ellirhc11/status/1509924822444298250
 #: by: https://viz.berlin.de/2023/03/halbmarathon/
 #: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
+#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023)
-#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023)
+#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -4651,7 +4681,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-20
+#: last_checked: 2023-03-31
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -4719,7 +4749,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-25
+#: last_checked: 2023-03-31
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -6094,21 +6124,7 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Einbahnstraße etwa 70m lang
-#: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-02-06 (daf)
-#: check_frequency: 45d
-	q3::inwork; 6919,15666 7024,15810
-',
-         'from' => undef,
-         'id' => 3609,
-         'text' => 'Ostender Str.: Einbahnstraßenregelung an der Müllerstr., gesperrt Richtung Nordosten, Ende der Hochbauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
@@ -6168,20 +6184,23 @@ Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
        {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-03-28
-#: check_frequency: 10d
-	q4::inwork 12081,12236 12059,12172
+         'data' => '#: also_indoor: traffic (none)
+#: source_id: viz2021:13.32575,52.50557,01.11.2022,07:00 (bis 31.3.2023) (inaktiv)
+#: source_id: viz2021:13.32531,52.50287,01.04.2023,07:00 (bis 31.08.2023)
+#: note: auch bei rbb erwähnt
+# REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
+# REMOVED ---	q4::inwork 5084,10890 5072,10701
+	q4::inwork; 5090,11007 5084,10890
 ',
-         'from' => undef,
-         'id' => 3618,
-         'text' => 'Krautstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'from' => 1661922000,
+         'id' => 3617,
+         'source_id' => 'viz2021:13.32575,52.50557,01.09.2022,07:00',
+         'text' => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende August 2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1693497600
        },
+       undef,
        undef,
        undef,
        undef,
@@ -6458,7 +6477,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-03-22
+#: last_checked: 2023-04-01
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -7017,7 +7036,7 @@ mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
        {
          'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023)
 #: also_indoor: traffic (G,H,B,W)
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -7025,9 +7044,9 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
          'from' => 1675896728,
          'id' => 3719,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
-         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Ende März 2023',
+         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Mitte April 2023',
          'type' => 'handicap',
-         'until' => 1680274800
+         'until' => 1681484400
        },
        {
          'data' => '#: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/schoeneberg-barbarossastrasse-monatelang-gesperrt-id204159
@@ -7058,15 +7077,15 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
        },
        {
          'data' => '#: XXX Radwegbau
-#: next_check: 2023-03-31
+#: next_check: 2023-04-06
 	2::inwork -13732,20201 -13174,19943 -12456,19410 -12161,19075
 ',
          'from' => 1676185200,
          'id' => 3722,
          'source_id' => 'LS/223-P/22/226',
-         'text' => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 31.03.2023 15:00 Uhr',
+         'text' => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 06.04.2023 15:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1680267600
+         'until' => 1680786000
        },
        {
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1625010630397956097#m
@@ -7342,16 +7361,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'type' => 'handicap',
          'until' => 1690815600
        },
-       {
-         'data' => '#: note: by rbb
-	q4::inwork 5895,9083 5879,9237
-',
-         'from' => 1678741421,
-         'id' => 3746,
-         'text' => 'Bamberger Str.: zwischen Berliner Str. und Stübbenstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 31.03.2023',
-         'type' => 'handicap',
-         'until' => 1680300000
-       },
+       undef,
        {
          'data' => '#: last_checked: 2023-03-12 (mapillary)
 	2::inwork 13078,21754 13031,21538
@@ -7433,11 +7443,14 @@ Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
          'until' => 1682114399
        },
        {
-         'data' => '#: also_indoor: traffic (none) vvv
+         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
+#: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 #: source_id: bvg2021:106#BVG312086_0 vvv
+#: last_checked: 2023-03-29 (architektur-urbanistik) vvv
 Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
+#: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: also_indoor ^^^
@@ -7460,6 +7473,26 @@ Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
          'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023',
          'type' => 'handicap',
          'until' => 1688162400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1310601.php (unpräzises Endedatum: "Mitte/Ende April")
+	2::inwork 22153,4840 22196,4847
+',
+         'from' => 1680386400,
+         'id' => 3757,
+         'text' => 'Luisenhain: Bauarbeiten, Sperrung, vom 3. April 2023 bis voraussichtlich Ende April 2023',
+         'type' => 'gesperrt',
+         'until' => 1682891999
+       },
+       {
+         'data' => '	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
+',
+         'from' => 1680148800,
+         'id' => 3758,
+         'source_id' => 'viz2021:13.354875,52.448856,31.03.2023,06:00',
+         'text' => 'Crailsheimer Str.: Bauarbeiten, zwischen Steglitzer Damm und Schünemannweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2023 06:00 bis 28.04.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1682719140
        }
      
 );

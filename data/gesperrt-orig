@@ -1242,7 +1242,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 #: note: implizite Fahrtrichtung, allerdings suggerieren die Verkehrsschilder (Spielstraßenschild), dass die Fahrbahnen in beide Richtungen befahren werden können
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
-#: osm_watch: way id="151237878" version="12"
+#: osm_watch: way id="151237878" version="13"
 #: last_checked: 2023-03-17
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
@@ -3535,6 +3535,20 @@ Drängelgitter	BNP:3::trailer=10 22085,5111
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: MAUERPARK-2022
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1270894.php
+#: by: https://gruen-berlin.de/pressemitteilung/mauerpark-start-der-behutsamen-sanierung-und-weiterentwicklung (Bauarbeiten im nördlichen Teil bis Ende 2024)
+#: by: https://gruen-berlin.de/fileadmin/user_upload/Downloads/mauerpark/gruenberlin_projekte_parks_mauerpark_plangrafik_c_gruenberlin_springbrandideas.png
+#: by: https://berliner-abendblatt.de/2022/12/01/mauerpark-soll-saniert-und-weiterentwickelt-werden/
+#: XXX Wie wird das Wegenetz nach den Bauarbeiten aussehen?
+#: last_checked: 2023-04-01
+#: check_frequency: 120d
+#: next_check: 2023-12-31
+Mauerpark: Bauarbeiten im 1. Bauabschnitt, Wege sind vermutlich bis Ende 2024 komplett gesperrt	2::inwork 10081,15853 10046,15844 10061,15775 10045,15754 10079,15661 10091,15630
+# 
+#: last_checked: 2023-04-01
+Caroline-von-Humboldt-Weg: Kraneinsatz, Fahrbahn und Bürgersteig komplett gesperrt	2::inwork 9961,12094 10050,11942
+# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_05_0453_0508_online.pdf (Einziehung von Straßenland)
 #: by: https://www.wuhletal.de/wp-content/uploads/2022/04/GS_Taetigkeitsbericht_WTgGmbH_2021_.pdf (Erwähnung der Kleinstwohnanlage)
@@ -3618,7 +3632,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2023-03-07 vvv
+#: last_checked: 2023-04-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -3664,6 +3678,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10638 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10811 (Anfrage; der Name "Entenbrücke" wird hier erwähnt)
 #: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/die-fussgaengerbruecke-am-stadion-wuhletal-soll-abgerissen-und-durch-eine-neue-ersetzt-werden_a370367 (neue Brücke innerhalb drei Jahren (Stand März 2023))
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10843 (Antrag)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="17"
@@ -3764,7 +3779,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-03-26
+#: last_checked: 2023-04-01
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -3826,7 +3841,7 @@ Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
 #: by: https://berliner-abendblatt.de/2022/12/16/umbau-der-st-hedwigs-kathedrale-im-zeitplan-aber-teurer/
-#: last_checked: 2023-03-16
+#: last_checked: 2023-04-01
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -3981,7 +3996,8 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 # REMOVED --- #: next_check_id: CORONA-2020 --- #: XXX während der Corona-Krise
 # REMOVED (closed) --- #: osm_watch: note 2832326 10
-#: last_checked: 2023-03-12
+#: note: Tor verschlossen: 2023-03-12 (So), 2023-04-01 (Sa) gegen 12:00
+#: last_checked: 2023-04-01
 # REMOVED --- #: check_frequency: 90d
 Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -4190,7 +4206,8 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/01/19/154834/sanierung-des-hochbahnviadukts-bauarbeiten-ab-2023-geplant/ (Sanierung 2023 - Mitte 2024)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/drei-bauphasen-am-gleisdreieck_a354176
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
-#: osm_watch: way id="223707973" version="10"
+# REMOVED --- #: osm_watch: way id="223707973" version="11"
+#: osm_watch: way id="848716360" version="2"
 #: last_checked: 2023-01-19
 #: check_frequency: 120d
 #: priority: #A
@@ -4450,6 +4467,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338
 #: last_checked: 2023-03-17 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="1085382250" version="3"
@@ -4654,7 +4672,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-03-12 vvv
+#: last_checked: 2023-04-01 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4814,7 +4832,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="26"
 #: also_indoor: traffic
-#: last_checked: 2023-02-25
+#: last_checked: 2023-04-01
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230
@@ -4870,7 +4888,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="9"
-#: last_checked: 2023-03-18
+#: last_checked: 2023-04-01
 #: check_frequency: 45d
 #: next_check: 2023-04-13
 #: also_indoor: traffic (ex-G)
