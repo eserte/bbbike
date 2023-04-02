@@ -269,9 +269,12 @@ install_webserver_dependencies() {
 	else
 	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2-mpm-prefork
 	fi
-	# XXX trying to workaround frequent internal server errors
-	#sudo a2dismod cgid && sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod cgi
-	sudo a2dismod mpm_event && sudo a2enmod mpm_prefork
+	if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
+	then
+	    ## XXX trying to workaround frequent internal server errors
+	    #sudo a2dismod cgid && sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod cgi
+	    sudo a2dismod mpm_event && sudo a2enmod mpm_prefork
+	fi
 	# Installation of modperl will trigger a restart, so no separate one needed
 	if [ "$USE_SYSTEM_PERL" = "1" ]
 	then
