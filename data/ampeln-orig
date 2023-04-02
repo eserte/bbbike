@@ -431,8 +431,9 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: related ^^^
 #: related antidromic vvv
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:30) vvv
-#: note: mittlerweile auch am Wochenende ausgeschaltet (gesehen 2022-12-18, So gegen 12:00) vvv
+#: note: mittlerweile auch am Wochenende ausgeschaltet (gesehen 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00) vvv
 	X 11089,9751
+#: note: vermutlich am Wochenende ausgeschaltet (gesehen 2023-04-02 (So) gegen 14:00)
 	X 11141,9732
 #: note ^^^
 #: note ^^^
@@ -775,8 +776,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3754,4755
 #: related ^^^
 #: note: Anforderung für linksabbiegende Radfahrer (Schloßstr. -> Hindenburgdamm)
-	X 4512,5199
-	F 4153,5001
+	X 4516,5194
+	F 4160,4988
 	X 3048,4305
 	X 2308,3862
 	X 2596,4907
@@ -1045,6 +1046,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1457,10168
 	X 4342,9301
 #: XXX_prog für rechtsabbiegende Radfahrer in der Relation Westfälische Str. - Brandenburgische Str. nicht relevant 
+#: XXX_prog für geradeausfahrende Radfahrer Richtung Nordwesten nicht relevant (keine Haltelinie)
 	X 4246,9406
 	X 4057,9648
 	X 4011,9474
@@ -3124,7 +3126,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 21165,18715
 #: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:30)
 	X 7825,4672
+#: note: sonntags immer ausgeschaltet? (gesehen So 2023-04-02 gegen 13:00)
 	F 2629,7771
+#: note: Anforderungsampel
+#: note: sonntags immer ausgeschaltet? (gesehen So 2023-04-02 gegen 13:00)
 	F 2524,7900
 	X 16119,15302
 #: note: Anforderungsampel

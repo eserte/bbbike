@@ -27215,13 +27215,13 @@ EOF
 	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5810,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
 	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
 	2::bomb 5570,7939 5570,8011 5522,8011
-	2::bomb 5913,8415 5917,8351 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
+	2::bomb 5913,8415 5917,8351 5918,8221 5730,8207 5700,8241 5687,8280 5699,8308
 	2::bomb 6333,7708 6352,7523
 	2::bomb 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
 	2::bomb 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5810,7684
 	2::bomb 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
 	2::bomb 5660,8366 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
-	2::bomb 5820,8117 5910,8170 6009,8101
+	2::bomb 5820,8117 5909,8184 6009,8101
 	2::bomb 6409,8026 6373,8083 6341,8174 6313,8254
 	2::bomb 6271,7733 6332,7721 6410,7722
 	2::bomb 6289,7472 6272,7645
@@ -27231,7 +27231,7 @@ EOF
 	2::bomb 5928,8052 5824,8035
 	2::bomb 5651,8218 5730,8207
 	2::bomb 5806,7796 5807,7771
-	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5925,8219 5910,8170 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
+	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
 	2::bomb 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5660,8366
 	2::bomb 6388,7999 6443,7971 6480,7992 6409,8026
 	2::bomb 6437,7968 6489,7908
@@ -30824,7 +30824,7 @@ EOF
 #: source_id: 2147345498
 #: source_id: LMS-BR_r_LMS-BR_198404_LMS-BR_72
 	q4::inwork 4515,4966 4514,5082
-# REMOVED (hier nicht) ---	q4::inwork 4514,5082 4513,5139 4512,5199
+# REMOVED (hier nicht) ---	q4::inwork 4514,5082 4522,5141 4516,5194
 EOF
      },
      { from  => undef, # $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
@@ -32197,7 +32197,7 @@ Friedrichstr. (Mitte): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::
 Karl-Marx-Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 13236,6489 13200,6550 13141,6651 13121,6689 13117,6716 13085,6925 13072,7013 13068,7043 13058,7112 13051,7157 13043,7234 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471 12987,7560 12972,7602 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823,8028 12788,8101 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955 11831,8989
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2415,9765 2445,9838 2473,9861 2532,9911 2590,9949 2694,10002 2702,10006 2770,10024 2828,10040 2974,10081 3111,10116 3189,10141 3289,10174 3374,10201 3489,10240 3562,10264 3618,10283 3737,10322 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4496,10504 4672,10552 4838,10597 5069,10662 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2445,9838 2369,9779
-Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5370,6486 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754 4946,5725 4900,5648 4861,5581 4832,5522 4767,5389 4745,5344 4741,5309 4677,5274 4593,5235 4512,5199 4432,5160 4343,5112
+Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5370,6486 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754 4946,5725 4900,5648 4861,5581 4832,5522 4767,5389 4745,5344 4741,5309 4677,5274 4593,5235 4516,5194 4436,5150 4347,5103
 Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5782,10884 5907,10821 5942,10803 6025,10746 6133,10679 6171,10657
 Wilmersdorfer Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 3813,10435 3870,10510 3883,10585 3881,10699 3869,10760 3847,10865 3835,10915 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
 # REMOVED --- #: next_check ^^^ --- #: next_check_id ^^^
@@ -34627,7 +34627,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MESSELSTR-2022
 #: also_indoor: traffic (H)
-	q4::inwork 2403,6962 2304,7059 2139,7239
+	q4::inwork 2397,6960 2304,7059 2139,7239
 EOF
      },
      { from  => undef, # 
@@ -35233,19 +35233,20 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2022-11-26 17:00:00"), # undef, # XXX
-       text  => 'Zähringerstr.: Einbahnstraßenregelung', # früher: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
+       text  => 'Ravensberger Str.: Einbahnstraßenregelung', # was: 'Zähringerstr.: Einbahnstraßenregelung', # früher: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
        type  => 'handicap',
        data  => <<EOF,
 #: osm_watch: way id="874517258" version="9"
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
-#: last_checked: 2022-12-15 (mapillary)
-#: check_frequency: 30d
+#: last_checked: 2023-04-02
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
 # REMOVED ---	q4::inwork 4126,9932 3927,9935
-	q4::inwork; 4126,9932 3927,9935
+# REMOVED (hier nicht mehr) --- Zähringerstr.	q4::inwork; 4126,9932 3927,9935
+Ravensberger Str.	q4::inwork; 3711,9855 3927,9935
 EOF
      },
      { from  => undef, # 
@@ -35417,7 +35418,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-03-25
+#: last_checked: 2023-04-02
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -35429,7 +35430,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: also_indoor: traffic (B,G) --- #: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet? --- #: last_checked: 2022-09-04 --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-08-31
-	q4::inwork 4512,5199 4477,5250 4430,5324
+	q4::inwork 4516,5194 4477,5250 4430,5324
 EOF
      },
      { from  => $isodate2epoch->("2023-05-05 00:00:00"), # 1652421600, # 2022-05-13 08:00
@@ -36844,7 +36845,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-03-22 10:00:00"), # 1665291600, # 2022-10-09 07:00
-       until => $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
+       until => 1680442770, # entfernt, da kein Verbot erkennbar, zumindest am südlichen Ende --- $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
        text  => 'Uhlandstr.: laut Verkehrsmeldung Sperrung für Radfahrer zwischen Güntzelstr. und Fechnerstr., vom 23.03.2023 10:00 bis 17.04.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.322705,52.4884,10.10.2022,07:00', # inaktiv
@@ -37020,7 +37021,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-03-01
+#: last_checked: 2023-04-02
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37389,13 +37390,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2023-04-30 18:00:00"),
-       text  => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2023',
+       until => $isodate2epoch->("2024-04-30 18:00:00"),
+       text  => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2024',
        type  => 'handicap',
 # REMOVED (vermutlich andere Baumaßnahme) --- source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
        data  => <<EOF,
-#: last_checked: 2022-11-26
-#: next_check: 2023-04-30
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2024
+#: last_checked: 2023-04-02
+#: check_frequency: 120d
+#: next_check: 2024-04-30
 	q4::inwork; 5172,8880 5165,8784
 EOF
      },
@@ -38220,7 +38223,7 @@ EOF
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 #: source_id: bvg2021:106#BVG312086_0 vvv
-#: last_checked: 2023-03-29 (architektur-urbanistik) vvv
+#: last_checked: 2023-04-02 vvv
 Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 #: last_checked ^^^

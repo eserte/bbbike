@@ -64,9 +64,9 @@ Steigung 8.1% ((zum Drachenberg))	St; -141,10389 -104,10422
 Steigung 8.1% ((zum Drachenberg))	St; -14,10541 -9,10626
 Steigung 8.1% ((zum Drachenberg))	St; -114,10649 -129,10585
 Steigung 8.1% ((zum Drachenberg))	St; -104,10422 -66,10437
+Steigung 8.0% (Schmidt-Ott-Str.)	St; 4408,5622 4313,5682
 Steigung 8.0% (Kreutzwaldstr.)	St; -8200,5700 -8252,5613
 Steigung 8.0% (Grohsteig)	St; 21400,16117 21416,16027
-Steigung 7.9% (Schmidt-Ott-Str.)	St; 4404,5613 4309,5675
 Steigung 7.9% ((Kirchsteig - Grünzug am Falkenberg))	St; 21905,510 21904,481
 Steigung 7.9% ((Kirchsteig - Grünzug am Falkenberg))	St; 21876,554 21905,510
 Steigung 7.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -935,9846 -865,9920
@@ -170,7 +170,6 @@ Steigung 5.5% (Am Leitbruch)	St; 4062,22069 4130,21961
 Steigung 5.5% (Am Birkenhügel)	St; -7505,454 -7556,559
 Steigung 5.5% (Alt-Kladow)	St; -6947,4861 -7038,4885
 Steigung 5.4% (Spreetalallee)	St; 667,13236 715,13126
-Steigung 5.4% (Schmidt-Ott-Str.)	St; 4558,5525 4404,5613
 Steigung 5.4% (Reinholdstr.)	St; 13014,6833 12953,6820
 Steigung 5.4% (Pilgramer Str.)	St; 25150,10562 25149,10695
 Steigung 5.4% (Hasensprung (Grunewald))	St; 1394,8965 1374,8992
@@ -187,6 +186,7 @@ Steigung 5.4% ((Ahrensfelder Berge, zum Gipfel))	St; 22396,16846 22375,16836
 Steigung 5.3% (Tietzenweg)	St; 3501,4435 3557,4355
 Steigung 5.3% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -943,9826 -935,9846
 Steigung 5.3% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -923,9757 -943,9826
+Steigung 5.3% (Schmidt-Ott-Str.)	St; 4558,5525 4408,5622
 Steigung 5.3% (Pforzheimer Str.)	St; 5143,22934 5210,22865
 Steigung 5.3% (Nach der Höhe)	St; 4254,22174 4308,22058
 Steigung 5.3% (Liepnitzsee)	St; 15912,37451 15994,37322
@@ -627,8 +627,6 @@ Steigung 3.0% (Hampsteadstr.)	St; 1033,2788 1130,2838
 Steigung 3.0% (Haeselerstr. (Westend))	St; 2047,11873 1779,11835
 Steigung 3.0% (Groß Köriser Str. (Pätz))	St; 28530,-19736 28500,-20078
 Steigung 3.0% (Germanenstr. (Altglienicke))	St; 20340,1401 20365,1394
-Steigung 3.0% (Fontanestr. (Grunewald))	St; 972,8626 941,8680
-Steigung 3.0% (Fontanestr. (Grunewald))	St; 941,8680 930,8746
 Steigung 3.0% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10688,13963 10606,14005
 Steigung 3.0% (Drakestr. (Lichterfelde))	St; 3185,4109 3214,4066
 Steigung 3.0% (Brodauer Str.)	St; 22469,11627 22554,11681
@@ -666,6 +664,8 @@ Steigung 2.9% (Hohenschönhauser Weg (Friedrichsfelde))	St; 18420,11864 18411,121
 Steigung 2.9% (Hochstr. (Gesundbrunnen))	St; 8557,15373 8596,15427
 Steigung 2.9% (Hochstr. (Gesundbrunnen))	St; 8456,15235 8557,15373
 Steigung 2.9% (Haynauer Str.)	St; 8053,3131 8036,3253
+Steigung 2.9% (Fontanestr. (Grunewald))	St; 972,8626 945,8659
+Steigung 2.9% (Fontanestr. (Grunewald))	St; 945,8659 930,8746
 Steigung 2.9% (Feldlerchenweg)	St; 7109,22919 7000,23095
 Steigung 2.9% (Eickstedt - Wallmow)	St; 53742,102795 53777,102984
 Steigung 2.9% (Drakestr. (Lichterfelde))	St; 3142,4173 3048,4305
@@ -1124,6 +1124,7 @@ Steigung 2.2% (Marzahner Chaussee)	St; 18635,12224 18654,12255
 Steigung 2.2% (Marienburger Str.)	St; 11821,14317 11572,14452
 Steigung 2.2% (Marchbrücke)	St; 4973,12256 4993,12291
 Steigung 2.2% (Levetzowstr.)	St; 5871,12595 5905,12573
+Steigung 2.2% (Lepsiusstr.)	St; 4520,5793 4408,5622
 Steigung 2.2% (Lauterberger Str.)	St; 12177,5746 12168,5855
 Steigung 2.2% (Landsberger Allee)	St; 12711,13150 12786,13185
 Steigung 2.2% (Landsberger Allee)	St; 12585,13118 12711,13150
@@ -1209,7 +1210,6 @@ Steigung 2.1% (Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. 
 Steigung 2.1% (Möllendorffstr.)	St; 15361,12071 15420,12178
 Steigung 2.1% (Mozartstr. (Biesdorf))	St; 20173,11971 20176,12071
 Steigung 2.1% (Leydenallee)	St; 4942,5312 5046,5244
-Steigung 2.1% (Lepsiusstr.)	St; 4520,5793 4404,5613
 Steigung 2.1% (Köpenicker Str. (Biesdorf, Köpenick))	St; 21124,11462 21108,11628
 Steigung 2.1% (Köpenicker Landstr.)	St; 16747,6813 16720,6845
 Steigung 2.1% (Königstr. (Wannsee))	St; -9412,546 -8357,726
@@ -1248,6 +1248,7 @@ Steigung 2.1% (Brauhausberg (Potsdam))	St; -12840,-2799 -12643,-2673
 Steigung 2.1% (Boddinstr.)	St; 12168,8313 12104,8299
 Steigung 2.1% (Blissestr.)	St; 4789,7859 4793,8005
 Steigung 2.1% (Bismarckallee)	St; 1920,9009 2098,9173
+Steigung 2.1% (Bismarckallee)	St; 1767,8853 1663,8747
 Steigung 2.1% (Biberpelzstr.)	St; 31514,2755 31565,2762
 Steigung 2.1% (Biberpelzstr.)	St; 31495,2753 31514,2755
 Steigung 2.1% (Beusselstr.)	St; 5231,13843 5220,14043
@@ -1351,7 +1352,6 @@ Steigung 2.0% (Burgfrauenstr.)	St; 3022,24393 2969,24382
 Steigung 2.0% (Burgfrauenstr.)	St; 2969,24382 2951,24389
 Steigung 2.0% (Burgfrauenstr.)	St; 2951,24389 2849,24530
 Steigung 2.0% (Bredtschneiderstr.)	St; 1975,11291 1861,11284
-Steigung 2.0% (Bismarckallee)	St; 1767,8853 1659,8744
 Steigung 2.0% (Biberpelzstr.)	St; 31565,2762 31647,2729
 Steigung 2.0% (Beckerstr.)	St; 6303,6736 6155,6722
 Steigung 2.0% (Artemisstr.)	St; 4280,22383 4371,22234
@@ -1986,7 +1986,6 @@ Steigung 1.4% (Wannseebadweg)	St; -4650,3902 -4586,3753
 Steigung 1.4% (Vergissmeinnichtweg)	St; 21608,85 21596,132
 Steigung 1.4% (Vergissmeinnichtweg)	St; 21596,132 21582,185
 Steigung 1.4% (Trakehner Allee)	St; -157,11943 -278,11843
-Steigung 1.4% (Teplitzer Str.)	St; 2126,8426 2121,8351
 Steigung 1.4% (Temmeweg)	St; -7882,4377 -7946,4419
 Steigung 1.4% (Temmeweg)	St; -7848,4384 -7882,4377
 Steigung 1.4% (Temmeweg)	St; -7730,4535 -7848,4384
@@ -2064,7 +2063,6 @@ Steigung 1.4% (Hüttenweg (Grunewald, Dahlem))	St; 736,6217 869,6085
 Steigung 1.4% (Hüttendorfer Weg)	St; 21466,-281 21402,-116
 Steigung 1.4% (Hünefeldzeile)	St; 7364,4704 7324,4582
 Steigung 1.4% (Hugo-Vogel-Str.)	St; -6216,1192 -6244,1315
-Steigung 1.4% (Hubertusallee)	St; 2190,8528 2126,8426
 Steigung 1.4% (Horber Str.)	St; 4771,22696 4820,22606
 Steigung 1.4% (Holsteinische Str. (Steglitz, Friedenau))	St; 5596,6590 5783,6635
 Steigung 1.4% (Holsteinische Str. (Steglitz, Friedenau))	St; 5575,6585 5596,6590
@@ -2193,7 +2191,6 @@ Steigung 1.3% (Ludwig-Pick-Str.)	St; 13552,12435 13548,12535
 Steigung 1.3% (Liselotte-Herrmann-Str.)	St; 12281,14164 12423,14066
 Steigung 1.3% (Lindenstr. (Hessenwinkel))	St; 32512,2621 32643,2695
 Steigung 1.3% (Lichtburgring)	St; 9965,15731 10041,15742
-Steigung 1.3% (Lepsiusstr.)	St; 4404,5613 4338,5513
 Steigung 1.3% (Lentzeallee)	St; 3449,6863 3290,6903
 Steigung 1.3% (Köpenicker Str. (Biesdorf, Köpenick))	St; 21019,7340 21012,7328
 Steigung 1.3% (Köpenicker Str. (Biesdorf, Köpenick))	St; 21012,7328 20958,7289
@@ -2334,6 +2331,7 @@ Steigung 1.2% (Methfesselstr.)	St; 9063,8935 9111,9036
 Steigung 1.2% (Lyckallee)	St; -233,10989 -333,10976
 Steigung 1.2% (Lindenstr. (Wannsee))	St; -6368,1809 -6467,1785
 Steigung 1.2% (Lerchenweg (Mariendorf))	St; 9360,4996 9382,4826
+Steigung 1.2% (Lepsiusstr.)	St; 4408,5622 4338,5513
 Steigung 1.2% (Kösener Str.)	St; 2587,7769 2608,7798
 Steigung 1.2% (Kösener Str.)	St; 2565,7637 2587,7769
 Steigung 1.2% (Käthe-Niederkirchner-Str.)	St; 12148,13961 12280,13880

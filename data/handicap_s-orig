@@ -678,7 +678,7 @@ Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-03-25 (webcam)
+#: last_checked: 2023-04-02 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -686,7 +686,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-03-25 (webcam)
+#: last_checked: 2023-04-02 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -896,7 +896,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023)
 #: also_indoor: traffic (ex-H,B,ex-G,W)
-#: last_checked: 2023-03-25
+#: last_checked: 2023-04-02
 #: check_frequency: 90d
 #: next_check: 2023-04-14
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
@@ -904,7 +904,7 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2023-03-25 vvv
+#: last_checked: 2023-04-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
@@ -1425,7 +1425,7 @@ Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17972,8968 17979,896
 Markgrafenstr.: Gehweg	q3 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9523,12019 9656,12031
-Am Volkspark: Parkweg	q1 5730,8207 5925,8219
+Am Volkspark: Parkweg	q1 5730,8207 5918,8221
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340
 #: note: hier Lieferanteneinfahrt
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
@@ -3410,7 +3410,7 @@ Knobelsdorffstr.: einige Moabiter Kissen	q0- 3117,11852 2953,11830 2728,11805 25
 #: XXX_prog: für Anhänger größere Behinderung (q1?)
 Wegenerstr.: ein Moabiter Kissen	q0- 4495,9184 4619,9200
 #: XXX_prog: für Anhänger größere Behinderung (q1?)
-Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
+Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4713,8997
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15307,10701
 #: XXX_prog BS Bordstein am Wendehammer, ansonsten vielleicht q1 für Fußgänger
@@ -4480,6 +4480,9 @@ Waiblinger Weg: Gehweg, Bordstein	q3- 17743,5260 17771,5278
 (Dahlienstr. - Müggelschlößchenweg): Bordstein (Bushaltestelle) oder Umweg	q3 24098,4310 24103,4260
 # 
 (Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): einige Fußgänger	q2 10064,15920 9996,15901 9997,15884
+# 
+#: XXX_prog BS (vermutlich an beiden Seiten, ansonsten q3)
+Hubertusallee: Fußgänger, Bordsteine	q4 2107,8407 2126,8426
 # 
 ######################### User Contributions #################################
 # 

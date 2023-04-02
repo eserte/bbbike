@@ -5777,16 +5777,17 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
-#: last_checked: 2022-12-15 (mapillary)
-#: check_frequency: 30d
+#: last_checked: 2023-04-02
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
 # REMOVED ---	q4::inwork 4126,9932 3927,9935
-	q4::inwork; 4126,9932 3927,9935
+# REMOVED (hier nicht mehr) --- Zähringerstr.	q4::inwork; 4126,9932 3927,9935
+Ravensberger Str.	q4::inwork; 3711,9855 3927,9935
 ',
          'from' => undef,
          'id' => 3540,
-         'text' => 'Zähringerstr.: Einbahnstraßenregelung',
+         'text' => 'Ravensberger Str.: Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5856,7 +5857,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-03-25
+#: last_checked: 2023-04-02
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -6445,24 +6446,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'until' => 1685718000
        },
        undef,
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
-#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
-#: by: https://nitter.cz/VIZ_Berlin/status/1639176473285394432#m
-#: by: https://nitter.net/pic/orig/media%2FFr6HpwIWcAAZJMb.jpg
-#: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
-#: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
-#: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
-#: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023)
-	q4::inwork 4920,9000 4920,9029 4957,9437
-',
-         'from' => 1679475600,
-         'id' => 3650,
-         'source_id' => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
-         'text' => 'Uhlandstr.: laut Verkehrsmeldung Sperrung für Radfahrer zwischen Güntzelstr. und Fechnerstr., vom 23.03.2023 10:00 bis 17.04.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1681729200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6543,7 +6527,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-03-01
+#: last_checked: 2023-04-02
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6791,15 +6775,17 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        },
        undef,
        {
-         'data' => '#: last_checked: 2022-11-26
-#: next_check: 2023-04-30
+         'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis April 2024
+#: last_checked: 2023-04-02
+#: check_frequency: 120d
+#: next_check: 2024-04-30
 	q4::inwork; 5172,8880 5165,8784
 ',
          'from' => undef,
          'id' => 3691,
-         'text' => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2023',
+         'text' => 'Mehlitzstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraße, offen Richtung Norden, vermutlich bis April 2024',
          'type' => 'handicap',
-         'until' => 1682870400
+         'until' => 1714492800
        },
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
@@ -7447,7 +7433,7 @@ Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 #: source_id: bvg2021:106#BVG312086_0 vvv
-#: last_checked: 2023-03-29 (architektur-urbanistik) vvv
+#: last_checked: 2023-04-02 vvv
 Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 #: last_checked ^^^

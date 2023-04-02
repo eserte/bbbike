@@ -363,7 +363,9 @@ Kreisverkehr	Roundabout 27754,-8708
 # 
 #: ignore vvv
 Brandenburgische Str.: Radfahrer dürfen nicht überholt werden	otb0; 3852,10236 3896,10042 3927,9935
-#: by: mapillary:
+#: note: Schild steht etwa 50m hinter der Kreuzung, ungefähr am Beginn der Tunnelrampe
+Brandenburgische Str.: Radfahrer dürfen nicht überholt werden	otb0; 3927,9935 3907,10043 3880,10154 3852,10236
+#: note: Schild steht etwa 30m hinter dem ersten Punkt, ungefähr am Beginn der Tunnelrampe
 Lewishamstr.: Radfahrer dürfen nicht überholt werden	otb0; 3697,10658 3738,10574 3770,10508 3813,10435
 #: ignore ^^^
 # 
@@ -530,7 +532,7 @@ Bus 101	busroute_N 85,1322 150,1251 155,1228 194,1055 214,969 230,899 247,822 25
 Bus 118	busroute_N 669,3119 630,2998 600,2922 758,2870
 Bus 118	busroute_N 971,3534 923,3585 891,3828 886,3902 861,3996 806,4130 754,4220 719,4268 696,4299 666,4339 519,4547 418,4696 374,4779 346,4833
 Bus 285	busroute_N 922,4910 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5290 1139,5308 1212,5353
-Bus M19, Bus 186	busroute_N 1074,8470 1043,8550 972,8626 941,8680 930,8746 918,8795 920,8895 936,8933 901,8969 884,8954 870,8939 920,8895
+Bus M19, Bus 186	busroute_N 1074,8470 1043,8550 972,8626 945,8659 930,8746 918,8795 920,8895 936,8933 901,8969 884,8954 870,8939 920,8895
 Bus 349	busroute_N 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012 1457,10168
 Bus 284, Bus 380	busroute_N 5317,2345 5406,2110 5376,2097 5393,2053 5431,1956 5452,1940 5396,1774 5335,1616 5299,1524 5273,1456 5223,1318 5201,1227 5178,1123 5162,1110 5162,1110 5162,1098 5187,1059 5204,1057 5204,1057
 Bus 284, Bus 380	busroute_N 5204,1057 5204,1057 5212,1074 5190,1114 5178,1123
@@ -828,7 +830,7 @@ Bordsteine beim Überqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,175
 #: XXX Realisierung einer Querung geplant
 #: note: Der osm_watch-Way enthält zurzeit wheelchair=limited
 #: osm_watch: way id="523802314" version="2"
-#: last_checked: 2023-01-19
+#: last_checked: 2023-04-02
 #: check_frequency: 120d
 Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6917,9274 7001,9291
 Quastenhornweg: Privatstraße	CS -7595,4374 -7557,4340 -7473,4306 -7413,4304
@@ -942,11 +944,11 @@ Mierendorffplatz: Wochenmarkt Mi+Sa, 8.00-13.00, zwar auf der Fahrbahn, aber der
 Fehrbelliner Platz: Wochenmarkt Di+Do, 11.00-16.00, sowie Kunst- und Trödelmarkt Sa+So 10.00-16.00, nur auf der Parkplatzfläche	CS 4339,9224
 Kolberger Platz: Wochenmarkt Mi+Sa, 08.00-14.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 2786,7721 2751,7811 2862,7803
 Str. des 17. Juni: Kunst- und Trödelmarkt, Sa+So, 10.00-17.00, Radweg wird freigehalten	CS; 5758,11895 5565,11871 5478,11860
-Boxhagener Platz: Wochenmarkt Sa 09.00-15.30, Trödelmarkt So 10.00-18.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 14127,11811 14272,11775 14247,11681 14102,11715 14127,11811
+# REMOVED (-> temp_blockings) --- Boxhagener Platz: Wochenmarkt Sa 09.00-15.30, Trödelmarkt So 10.00-18.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 14127,11811 14272,11775 14247,11681 14102,11715 14127,11811
 Schönleinstr.: Wochenmarkt Di+Sa, 11.00-19.00, betroffen ist wohl nur der abgesperrte und in BBBike sowieso nicht eingezeichnete Abschnitt	CS 11560,9524
-Chamissoplatz: Öko-Markt, Sa, 09.00-15.00, wahrscheinlich nur Halteverbote	CS 9600,9091 9614,9186
+# REMOVED (-> temp_blockings) --- Chamissoplatz: Öko-Markt, Sa, 09.00-15.00, wahrscheinlich nur Halteverbote	CS 9600,9091 9614,9186
 Bergmannstr.: Trödelmarkt Sa, 10.00-16.00, nur die Fahrbahn ist betroffen	CS 9973,9232 9880,9233 9793,9241
-Skalitzer Str.: Trödelmarkt, Sa+So, 08.00-16.00, Gehweg ist betroffen	CS; 12731,10547 12545,10496
+# REMOVED (gibt's wohl nicht mehr) --- Skalitzer Str.: Trödelmarkt, Sa+So, 08.00-16.00, Gehweg ist betroffen	CS; 12731,10547 12545,10496
 # REMOVED (möglicherweise durch die neue offizielle Radwegführung nicht mehr relevant?) --- Schillingstr.: Wochenmarkt, Di,Do,Fr, 09.00-17.00, Gehweg ist betroffen, man kann eigentlich immer irgendwie vorbeifahren	CS 11472,12406 11472,12406 11485,12391
 Ackerstr.: Wochenmarkt, Do, 11.00-18.00, anscheinend nur Halteverbot	CS; 9048,14681 9197,14562
 Jagowstr.: Wochenmarkt, Mi+Sa, 08.00-13.00, anscheinend nur Halteverbot	CS; 5601,12756 5543,12664
@@ -1804,4 +1806,6 @@ St. Wolfgang-Str.: nicht ausgeschildert	CP2; 10287,12747 10360,12793
 St. Wolfgang-Str.: nicht ausgeschildert	CP2; 10287,12747 10216,12706
 # 
 Kaulsdorfer Str.: unklare Ausschilderung, nördliches Straßenschild "Jänschwalder Straße", südliches Straßenschild "Kaulsdorfer Straße"	CP2; 25418,14538 25356,14491
+# 
+Markelstr.: nicht ausgeschildert	CP2; 4528,6700 4583,6682
 # 
