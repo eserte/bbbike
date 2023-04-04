@@ -3946,6 +3946,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023)
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023)
+#: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023)
 #: priority: #A
 #: next_check: 2023-04-05
 	2::temp -2218,5133 -927,6888
@@ -3954,9 +3955,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1680559200,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. April 2023 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. April 2023 zwischen 09:15 und 12:00 Uhr (länger als sonst!)',
          'type' => 'gesperrt',
-         'until' => 1680682500
+         'until' => 1680688800
        },
        undef,
        {
@@ -4450,7 +4451,27 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023)
+#: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
+#: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
+#: also_indoor: traffic (ex-H,B,ex-G)
+#: osm_watch: way id="1006570991" version="1"
+#: last_checked: 2023-02-12
+#: check_frequency: 90d
+#: next_check: 2023-04-26
+	q3::inwork  8986,16092 9178,16317
+# REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
+',
+         'from' => 1558648800,
+         'id' => 3108,
+         'source_id' => '2147344253',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 26.04.2023, eventuell noch länger',
+         'type' => 'handicap',
+         'until' => 1682524800
+       },
        {
          'data' => '#: note: ggfs. beim Pförtner anmelden
 	2 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
@@ -5902,7 +5923,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-03-01
+#: last_checked: 2023-04-04
 #: check_frequency: 60d
 #: next_check: 2023-04-15
 # REMOVED --- #: next_check: 2023-12-31
@@ -5965,21 +5986,20 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: also_indoor: traffic (H[unvollständig],ex-G[unvollständig],B)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
-# REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1311341.php (ab 5. April 2023 Straßenbau; Verkehrsfreigabe Ende Mai 2023)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2023-03-16 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2022-11-07 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2023-05-31 vvv
 #: osm_watch: way id="1043813287" version="2"
 #: osm_watch: way id="1043813288" version="2"
 	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924
 	q3::inwork 13974,16924 13870,16837
 	q3::inwork 13996,16959 14136,17170
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
-# REMOVED --- #: XXX ^^^
 ',
          'from' => 1656799200,
          'id' => 3579,
@@ -6381,7 +6401,25 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'until' => 1685718000
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
+#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
+#: by: https://nitter.cz/VIZ_Berlin/status/1639176473285394432#m
+#: by: https://nitter.net/pic/orig/media%2FFr6HpwIWcAAZJMb.jpg
+#: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
+#: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
+#: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
+#: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023) (bis 21.04.2023)
+#: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023)
+	q4::inwork 4920,9000 4920,9029 4957,9437
+',
+         'from' => 1680580800,
+         'id' => 3650,
+         'source_id' => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
+         'text' => 'Uhlandstr.: Sperrung der Fahrbahn zwischen Güntzelstr. und Fechnerstr., vom 05.04.2023 06:00 bis 06.04.2023 20:00',
+         'type' => 'handicap',
+         'until' => 1680804000
+       },
        undef,
        undef,
        undef,
@@ -7110,12 +7148,13 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        {
          'data' => '#: next_check_id: FISCHERINSEL-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424
-# REMOVED (hier nicht, siehe anderen Eintrag) --- #: XXX prüfen! --- #: priority: #B
+#: priority: #B
+#: next_check: 2023-04-15
 	2::inwork 10680,11875 10776,11942 10824,11992 10869,11949
 ',
          'from' => 1677359677,
          'id' => 3732,
-         'text' => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen möglich, bis Mitte April 2023',
+         'text' => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen, voraussichtlich bis Mitte April 2023',
          'type' => 'gesperrt',
          'until' => 1681595999
        },
@@ -7174,7 +7213,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        },
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: last_checked: 2023-03-05 (mapillary)
+#: last_checked: 2023-04-04
 	q3::inwork 13286,16267 13033,16387
 ',
          'from' => undef,
@@ -7367,18 +7406,18 @@ Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
-#: source_id: bvg2021:106#BVG312086_0 vvv
+# REMOVED --- #: source_id: bvg2021:106#BVG312086_0 vvv
 #: last_checked: 2023-04-02 vvv
 Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 #: last_checked ^^^
-#: source_id ^^^
+# REMOVED --- #: source_id ^^^
 #: source_id ^^^
 #: also_indoor ^^^
 ',
          'from' => undef,
          'id' => 3755,
-         'text' => 'Leuthener Str./Leberstr.: Bauarbeiten, Fahrbahn der Leuthener Str. gesperrt (Bordsteine!), EInbahnstraßenregelung in der Leberstr., Ende der Bauarbeiten unbekannt',
+         'text' => 'Leuthener Str./Leberstr.: Bauarbeiten, Fahrbahn der Leuthener Str. gesperrt (Bordsteine!), Einbahnstraßenregelung in der Leberstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },

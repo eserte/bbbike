@@ -1090,7 +1090,14 @@ Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15459,2
 	RW1; 16135,2135 16254,1999 16315,1904 16400,1770 16450,1691 16459,1680 16643,1460 16698,1392 16815,1278 16839,1262
 neues Verbundsteinpflaster	RW1; 16839,1262 16815,1278
 Gehwegplatten, teilweise mit Schäden und Hebungen	RW1; 16815,1278 16698,1392 16643,1460 16459,1680 16450,1691 16400,1770 16315,1904 16254,1999 16135,2135
-Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 16135,2135 16028,2261 15980,2318 15804,2512 15736,2593 15613,2739 15599,2752 15572,2785 15459,2921 15301,3038 15176,3136 14994,3245
+Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 16135,2135 16028,2261 15980,2318 15804,2512 15736,2593 15613,2739 15599,2752 15572,2785
+#: by: https://nitter.cz/VIZ_Berlin/status/1643191201942626304#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMzSkVhSlhvQUVSMEdRLmpwZw==
+#: source_id: viz2021:13.477441,52.430079,04.04.2023,08:00 (bis 28.04.2023)
+#: XXX Instandsetzung des Radwegs
+#: next_check: 2023-04-28
+Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15572,2785 15459,2921 15301,3038
+Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15176,3136 14994,3245
 Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786 14347,3836 14290,3908 14119,4153
 	RW2; 13316,6320 13307,6359 13294,6386 13261,6456 13236,6489 13248,6452 13275,6382 13289,6355 13316,6320
 	RW2;RW1 13316,6320 13355,6235
@@ -1867,7 +1874,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-04-01 vvv
+#: last_checked: 2023-04-04 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1894,7 +1901,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-04-01 vvv
+#: last_checked: 2023-04-04 vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -2654,7 +2661,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-03-30
+#: last_checked: 2023-04-04
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -2824,14 +2831,14 @@ asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-03-22
+#: last_checked: 2023-04-04
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen
 # REMOVED XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-03-22
+#: last_checked: 2023-04-04
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -6300,6 +6307,12 @@ Busspur ist immer gültig	RW5; 7482,4416 7597,4499
 	RW3?; 5610,5227 5583,5179
 	RW3; 5583,5179 5527,5217
 	RW3; 5527,5217 5583,5179
+#: by: https://nitter.cz/SenUMVKBerlin/status/1643146642860699649#m vvv
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMyaEtCdlh3QUVKaGlrLmpwZw== vvv
+	RW4; 5527,5217 5416,5289
+	RW3?; 5416,5289 5527,5217
+#: by ^^^
+#: by ^^^
 Asphalt mit leichten Schäden	RW1; 4430,5324 4437,5335 4527,5475 4558,5525 4671,5697
 Asphalt mit einigen Schäden	RW1; 4671,5697 4558,5525 4527,5475 4437,5335 4430,5324
 	RW3;RW3 4520,5793 4406,5850 4312,5889 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
