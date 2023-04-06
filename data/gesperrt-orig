@@ -1327,7 +1327,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2023-04-02
+#: last_checked: 2023-04-06
 #: check_frequency: 60d
 #: next_check: 2023-04-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3535,6 +3535,21 @@ Drängelgitter	BNP:3::trailer=10 22085,5111
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX Bauarbeiten am Kanzlerpark
+#: last_checked: 2023-04-06 vvv
+#: check_frequency: 180d vvv
+#: XXX laut osm gesperrt vvv
+#: osm_watch: way id="256450718" version="7"
+(Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7789,12764 7649,12764
+#: osm_watch: way id="1081702032" version="3"
+(Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7588,12734 7819,12729
+#: osm_watch: way id="33913621" version="11"
+(Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
+#: XXX ^^^
+# 
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: MAUERPARK-2022
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1270894.php
 #: by: https://gruen-berlin.de/pressemitteilung/mauerpark-start-der-behutsamen-sanierung-und-weiterentwicklung (Bauarbeiten im nördlichen Teil bis Ende 2024)
@@ -3646,7 +3661,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="2"
-#: last_checked: 2023-03-18 (Baustraße existiert noch)
+#: last_checked: 2023-04-06 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4240,7 +4255,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-06
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4310,20 +4325,20 @@ Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-06
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-06
 #: check_frequency: 90d
 Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-03-07
+#: last_checked: 2023-04-06
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -4349,7 +4364,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-03-18
+#: last_checked: 2023-04-06
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4444,6 +4459,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1302846.php
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bahnhof-schoeneweide-vorplatz-soll-schoener-werden-id211216
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.phphttps://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php
 #: last_checked: 2023-03-08 (krickstadt)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-20
@@ -4467,7 +4484,6 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338
 #: last_checked: 2023-03-17 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="1085382250" version="3"
@@ -4833,7 +4849,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="27"
 #: also_indoor: traffic
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-06
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230
@@ -5144,9 +5160,9 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
 #: osm_watch: way id="257432926" version="9"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2023-02-25
+#: last_checked: 2023-04-06
 #: check_frequency: 150d
-Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
+Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731
 Ingeborg-Drewitz-Allee	1 7362,12731 7343,12758
 # 

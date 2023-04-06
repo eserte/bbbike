@@ -34641,7 +34641,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-03-13
+#: last_checked: 2023-04-06
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -34754,14 +34754,27 @@ EOF
 EOF
      },
      { from  => 1643583600, # 2022-01-31 00:00
-       until => 1676321850, # laut osm offen --- undef, # XXX
-       text  => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Hansabrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Ende Oktober 2022: Wegarbeiten zwischen Flotowstr. und Hansabrücke)',
+       until => undef, # 1676321850, # laut osm offen --- undef, # XXX
+       text  => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang April 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
        data  => <<EOF,
-# REMOVED --- #: next_check_id: SPREEUFER-2022 --- #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? --- #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt? --- #: last_checked: 2023-02-03 (daf) --- #: check_frequency: 30d --- #: next_check: 2024-02-12 --- #: osm_watch: way id="4993234" version="20"
+#: next_check_id: SPREEUFER-2022
+#: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
+#: add_fragezeichen: Ist der Uferweg noch immer wegen Bauarbeiten gesperrt? vvv
+#: last_checked: 2023-04-06 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2024-02-12 vvv
+#: osm_watch: way id="4993234" version="20"
 	2::inwork 5714,12290 5796,12372 5940,12564
-# REMOVED (laut osm hier fertiggestellt) --- #: osm_watch: way id="4410535" version="26" --- 2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
+#: XXX laut osm hier fertiggestellt, aber es sind weiterhin Bauarbeiten und Sperrungen möglich
+#: osm_watch: way id="4410535" version="26"
+	2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1643670000, # 2022-02-01 00:00
@@ -34835,7 +34848,7 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa) vvv
-#: last_checked: 2023-04-04 (osm) vvv
+#: last_checked: 2023-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="34"
@@ -35421,7 +35434,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-04-02
+#: last_checked: 2023-04-06
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -35541,8 +35554,8 @@ EOF
 #: osm_watch: way id="4531799" version="14"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-09 (daf)
-#: check_frequency: 90d
+#: last_checked: 2023-04-06
+#: check_frequency: 30d
 	q4::inwork; 4434,11227 4415,11050
 EOF
      },
@@ -36370,13 +36383,13 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2023-01-01 (mapillary)
+#: last_checked: 2023-04-06
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
      },
      { from  => 1661922000, # 2022-08-31 07:00
-       until => $isodate2epoch->("2023-08-31 18:00:00"), # 1674509733, # 1680299940, # 2023-03-31 23:59
+       until => 1680800410, # nichts zu sehen --- $isodate2epoch->("2023-08-31 18:00:00"), # 1674509733, # 1680299940, # 2023-03-31 23:59
        text  => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende August 2023',
        type  => 'handicap',
        source_id => 'viz2021:13.32575,52.50557,01.09.2022,07:00', # inaktiv
@@ -36748,7 +36761,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-03-18 vvv
+#: last_checked: 2023-04-06 vvv
 #: next_check: 2023-04-24 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -36862,7 +36875,7 @@ EOF
 #: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
 #: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023) (bis 21.04.2023) (inaktiv)
-#: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023)
+#: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023)
 	q4::inwork 4920,9000 4920,9029 4957,9437
 EOF
@@ -37027,7 +37040,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-02
+#: last_checked: 2023-04-06
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37160,6 +37173,8 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1306690.php (Fortsetzung)
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/strassenbau-geht-weiter_a376430
+#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/bauarbeiten-gehen-weiter-erneute-vollsperrung-in-lankwitz-id216990
 #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
 #: next_check: 2023-05-02
@@ -37571,7 +37586,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: priority: #C
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10359,12634 10351,12646 10305,12717
@@ -38218,6 +38233,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
+#: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/fahrbahn-wird-neu-gemacht_a376622
 	q4::inwork 16563,7012 16615,7062 16507,7254
 EOF
      },
@@ -38268,6 +38284,20 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.353735,52.447456,31.03.2023,06:00 (bis 28.04.2023, nur eine Richtung gesperrt, und nur Kfz-Verkehr)
 	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schleswiger Ufer: Bauarbeiten, Fahrbahn gesperrt, außerdem Zufahrt zum Uferweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: 2023-04-06: Fahrbahn ist weitgehend fertig, aber Bauarbeiten z.B. im Kreuzungsbereich Flotowstr.
+#: add_fragezeichen: Wann sind die Bauarbeiten hier fertig? vvv
+#: last_checked: 2023-04-06 vvv
+	q3::inwork 5858,12425 5800,12361 5714,12266
+Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
     );
