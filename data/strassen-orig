@@ -4747,13 +4747,13 @@ Friesenstr. (Niederschönhausen)	NN 8765,19288 8834,19253 8944,19197 9458,18859
 (Schönholzer Heide, parallel zur Friesenstr.)	NN 8791,19249 8830,19239
 (Schönholzer Heide, parallel zur Friesenstr.)	NN 8933,19179 9022,19135 9159,19010 9446,18855 9458,18859
 (Pankeweg)	NN 11907,19749 11995,19759 12154,20325 12216,20344 12235,20380 12266,20467 12310,20523 12363,20582 12386,20636 12505,20702 12578,20749
-(Pankeweg)	NN 12553,20757 12753,20884 12807,20944 12880,21134
+(Pankeweg)	NN 12553,20757 12753,20884 12807,20944 12867,21098
 #: XXX Wird der Pankeweg nach den Bauarbeiten hier wieder begradigt?
 #: osm_watch: way id="1046951300" version="2"
 #: osm_watch: way id="1046951302" version="1"
-#: last_checked: 2022-09-09 (mapillary)
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 120d
-(Pankeweg)	NN 12880,21134 12854,21147 12914,21229
+(Pankeweg)	NN 12867,21098 12847,21116 12844,21143 12914,21229
 (Pankeweg)	NN 12914,21229 13031,21538 13078,21754 13141,22018 13206,22290 13110,22313
 #: oldname: -2014: Am Graben (KGA Gravenstein)
 #: ignore_oldname_file: yes
@@ -17640,7 +17640,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/die-naechsten-schritte-zur-festsetzung-von-bebauungsplaenen-stehen-an_a293341 (Erwähnung)
 #: osm_watch: way id="59573616" version="2"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2023-03-29 (mapillary)
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 180d
 (Rhönstr. - Harzburger Str.)	NN 13598,21360 13709,21334
 Eifelstr.	N 13580,21286 13351,21239 13280,21225
@@ -18827,7 +18827,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
 #: by: https://weddingweiser.de/hines-plant-kaufland-abzureissen/
 #: by: https://architektur-urbanistik.berlin/index.php?threads/brunnenstrasse-105.1103/#post-16459
 #: XXX Falls das Einkaufszentrum abgerissen wird: bleibt die Zufahrtsstraße? Bleibt die Zugangsmöglichkeit vom Bärbel-Bohley-Ring?
-#: last_checked: 2022-11-30
+#: last_checked: 2023-04-09
 #: check_frequency: 360d
 #: osm.highway: service
 (Zufahrtsstraße am Einkaufszentrum)	N 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790

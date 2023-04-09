@@ -5313,7 +5313,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-03-11
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -5616,7 +5616,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-04-05 vvv
+#: last_checked: 2023-04-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-02 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5647,7 +5647,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2023-04-05 vvv
+#: last_checked: 2023-04-07 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G,B,W) vvv
@@ -6379,7 +6379,7 @@ Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-03-27 (mapillary) vvv
+#: last_checked: 2023-04-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
@@ -6426,7 +6426,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-09
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -6964,17 +6964,7 @@ mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Einbahnstraßenabschnitt etwa 190m lang, im östlichen Bereich
-	q4::inwork; 17608,15010 17562,14992 17231,14979
-',
-         'from' => 1674460800,
-         'id' => 3717,
-         'source_id' => 'viz2021:13.508757,52.539432,24.01.2023,09:00',
-         'text' => 'Schleizer Str.: Richtung Genslerstr. zwischen Ferdinand-Schulze-Str.und Arendsweg Bauarbeiten, Fahrtrichtung gesperrt (auch für Radfahrer), vom 24.01.2023 09:00 bis 07.04.2023 17:00 ',
-         'type' => 'handicap',
-         'until' => 1680879600
-       },
+       undef,
        {
          'data' => '#: note: Ausschilderung: Privatgrundstück/Parken im Hof verboten (nur Südseite)/Durchgang zur Pohlstraße (bzw. Kurfürstenstraße) gestattet/22:00-07:00 Uhr geschlossen
 	2::night 7416,10492 7432,10546 7337,10587
@@ -7118,8 +7108,8 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-03-26
-#: check_frequency: 21d
+         'data' => '#: last_checked: 2023-04-07
+#: check_frequency: 10d
 	2::inwork 14810,10832 14738,10892
 ',
          'from' => undef,
@@ -7306,26 +7296,17 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-03-12 (mapillary)
+         'data' => '#: last_checked: 2023-04-02 (mapillary)
 	2::inwork 13078,21754 13031,21538
 ',
          'from' => 1678819239,
          'id' => 3747,
-         'text' => 'Pankeweg: möglicherweise im Bereich zukünftige Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
+         'text' => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
          'type' => 'gesperrt',
          'until' => 1688162400
        },
        undef,
-       {
-         'data' => '	q4::inwork 3041,10732 3012,10812
-',
-         'from' => 1678805940,
-         'id' => 3749,
-         'source_id' => 'viz2021:13.2955,52.50343,15.03.2023,15:59',
-         'text' => 'Holtzendorffstr.: zwischen Rönnestr. und Friedbergstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.03.2023 15:59 bis 07.04.2023 07:00',
-         'type' => 'handicap',
-         'until' => 1680843600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278

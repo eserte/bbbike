@@ -146,7 +146,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
 #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023)
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-09
 #: next_check: 2023-05-19
 #: valid: -20230519
 	F::inwork 11913,13077
@@ -162,7 +162,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-04-05 vvv
+#: last_checked: 2023-04-07 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -3438,14 +3438,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-03-11
+#: last_checked: 2023-04-05
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="5"
-#: last_checked: 2023-02-16
+#: last_checked: 2023-04-05
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
@@ -3905,6 +3905,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 50863,68629
+	X 52036,69172
 	X 32957,10948
 	X 33470,10823
 	X 34678,10536
@@ -4441,6 +4443,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	X 22690,30909
 	X 39873,102249
 	X 39715,101866
+	X 39344,101920
 	X 39682,101543
 	X 39962,101085
 # REMOVED (nach der Laga abgebaut) --- F 39804,101160

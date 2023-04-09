@@ -490,7 +490,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (2023)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2023-04-01 vvv
+#: last_checked: 2023-04-02 (mapillary) vvv
 #: next_check: 2023-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -595,7 +595,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-02-12
+#: last_checked: 2023-04-09
 #: check_frequency: 150d
 #: next_check: 2024-12-31
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -1094,7 +1094,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-04-06
+#: last_checked: 2023-04-09
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1428,7 +1428,7 @@ Pankeweg: feiner Schotter	Q1 14869,24387 14625,24215 14356,23862 14265,23759 139
 Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: Asphalt mit einigen Unebenheiten	Q1+ 13206,22290 13141,22018
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1- 13141,22018 13078,21754
-Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12914,21229 12854,21147 12880,21134 12807,20944 12753,20884 12553,20757
+Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13291,22422
 Pankeweg: Feinschotter	Q1 13291,22422 13290,22399 13388,22386 13404,22384
 Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13136,22397 13117,22337 13110,22313
@@ -8287,7 +8287,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2023-01-19 vvv
+#: last_checked: 2023-04-07 vvv
 #: check_frequency: 100d vvv
 #: osm_watch: way id="531908445" version="10"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -9143,7 +9143,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2023-03-12 (mapillary)
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 120d
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860

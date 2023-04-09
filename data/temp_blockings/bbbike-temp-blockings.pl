@@ -3045,7 +3045,7 @@ EOF
        text  => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 39715,101866 39574,101863 39451,101893 39322,101924
+	q4 39715,101866 39574,101863 39451,101893 39344,101920
 EOF
      },
      { from  => 1128376800, # 2005-10-04 00:00
@@ -3435,8 +3435,8 @@ EOF
        text  => 'B 2 (Angermünde-OU Pinnow) OD Dobberzin grundh. Straßenbau Vollsperrung 02.11.2005-14.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 52044,69176 52738,69563
-	q4 52044,69176 51725,68999 51517,68884 50863,68629
+	q4 52036,69172 52390,69369 52530,69447 52574,69472 52738,69563
+	q4 52036,69172 51962,69131 51725,68999 51511,68880 50958,68666 50863,68629
 EOF
      },
      { from  => 1136502000, # 2006-01-06 00:00
@@ -4073,7 +4073,7 @@ EOF
        text  => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 39322,101924 39451,101893 39574,101863
+	q4::inwork 39344,101920 39451,101893 39574,101863
 	q4::inwork 39715,101866 39574,101863
 EOF
      },
@@ -14227,7 +14227,7 @@ EOF
        text  => 'K 7312 Passow - Fredersdorf zw. Passow u. Briest, Höhe Briester Weg Bau eines Durchlasses Vollsperrung 11.05.2009-15.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 55392,83218 55808,83296 55901,83313
+	2::inwork 55392,83218 55808,83296 55823,83299 55901,83313
 EOF
      },
      { from  => 1241906400, # 2009-05-10 00:00
@@ -33888,7 +33888,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-03-11
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -34925,7 +34925,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-04-05 vvv
+#: last_checked: 2023-04-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-02 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -35039,7 +35039,7 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2023-04-05 vvv
+#: last_checked: 2023-04-07 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G,B,W) vvv
@@ -36823,7 +36823,7 @@ EOF
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-03-27 (mapillary) vvv
+#: last_checked: 2023-04-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
@@ -36935,7 +36935,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-09
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37905,8 +37905,8 @@ EOF
        text  => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-03-26
-#: check_frequency: 21d
+#: last_checked: 2023-04-07
+#: check_frequency: 10d
 	2::inwork 14810,10832 14738,10892
 EOF
      },
@@ -38108,10 +38108,10 @@ EOF
      },
      { from  => 1678819239, # 2023-03-14 19:40
        until => 1688162400, # 2023-07-01 00:00
-       text  => 'Pankeweg: möglicherweise im Bereich zukünftige Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
+       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-03-12 (mapillary)
+#: last_checked: 2023-04-02 (mapillary)
 	2::inwork 13078,21754 13031,21538
 EOF
      },

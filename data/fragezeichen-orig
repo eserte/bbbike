@@ -740,7 +740,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
 #: osm_watch: way id="151571084" version="25"
 #: osm_watch: way id="169753564" version="26"
-#: last_checked: 2023-01-23
+#: last_checked: 2023-04-07
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
@@ -3416,7 +3416,7 @@ Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13
 #: priority: #A
 #: also_indoor: search Yorckbrücke_5
 #: osm_watch: way id="268088020" version="14"
-#: last_checked: 2023-04-02
+#: last_checked: 2023-04-07
 #: check_frequency: 90d
 #: next_check: 2023-07-01
 Yorckstraßenbrücke 5 und Anbindung: in Planung, voraussichtliche Fertigstellung: Sommer 2023	?::projected 8227,9579 8255,9698 8256,9778 8233,9863
@@ -4849,7 +4849,7 @@ Hermann-Hesse-Str.: geschützte Radfahrstreifen geplant	?::projected 9870,19360 9
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf
 #: XXX hat das irgendwelche Konsequenzen?
-#: last_checked: 2023-01-22
+#: last_checked: 2023-04-07
 #: check_frequency: 90d
 Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # 
@@ -4962,7 +4962,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (noch nicht terminiert)
-#: last_checked: 2023-02-12
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 180d
 Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907 8430,15901 8271,15734 8176,15635 8156,15614 8049,15470
 # 
@@ -5264,7 +5264,7 @@ Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2023-02-12
+#: last_checked: 2023-04-09
 #: check_frequency: 120d
 Swinemünder Str./Ramlerstr.: Zebrastreifen geplant	?::projected 9606,15753 9646,15737 9694,15718
 # 
@@ -5651,7 +5651,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2023-03-27 (mapillary)
+#: last_checked: 2023-04-02 (mapillary)
 #: check_frequency: 60d
 Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Radrouten) angepasst?	? 7504,19459 7446,19522 7435,19547 7273,19682 7236,19689
 # 
@@ -6000,7 +6000,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5913
 #: by: https://www.berliner-woche.de/karow/c-verkehr/der-ueberweg-soll-kommen_a331769
-#: last_checked: 2023-03-18 (mapillary)
+#: last_checked: 2023-04-03 (mapillary)
 #: check_frequency 90d
 #: priority: #D
 Blankenburger Chaussee Höhe Beuthener Str./Straße 43: wird hier ein Zebrastreifen realisiert?	? 15057,22288 15094,22290 15134,22293
@@ -6398,9 +6398,8 @@ B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,5167
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42751
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42752
 #: source_id: LS/221-E/22/017 (inaktiv)
-#: last_checked: 2019-05-10
-# REMOVED --- #: check_frequency: 360d
-#: next_check: 2022-05-31
+#: last_checked: 2023-04-07
+#: check_frequency: 360d
 B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50386,68158 50632,68484 50863,68629
 # 
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123 --- #: source_id: LS/723-P/20/210--- #: source_id: LS/723-P/21/238 --- #: next_check: 2022-04-30
@@ -6426,7 +6425,8 @@ B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 4987
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht	?::inwork 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 # 
 #: source_id: LS/221-E/22/071 (bis 30.11.2022) (inaktiv) (bis 28.2.2023) (inaktiv) (bis 30.6.2023)
-#: last_checked: 2022-08-18
+#: last_checked: 2023-04-07 (nichts passiert!)
+#: check_frequency: 180d
 #: next_check: 2023-06-30
 L25 (Schmölln - Güstow): hier entsteht ein Radweg	?::inwork 55977,100103 56030,100076 56188,99924 56268,99856 56856,99683 57042,99574 57512,99290 57634,99199
 # 
@@ -6485,7 +6485,7 @@ Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected
 #: osm_watch: way id="119201840" version="23"
 #: osm_watch: way id="190701274" version="11"
 #: osm_watch: way id="949605667" version="2"
-#: last_checked: 2023-03-18
+#: last_checked: 2023-04-07
 #: check_frequency: 360d
 #: next_check: 2023-10-01
 Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751 10495,17658 10573,17566 10647,17501 10670,17458 10690,17420 10706,17391 10758,17288 10807,17193 10846,17121 10862,17087 10927,17022
@@ -6599,7 +6599,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-fahrstreifen-bis-ende-2022_a345665 (geänderte Verkehrsführung in der Karl-Marx-Str. wegen der Bauarbeiten an der Eisenbahnbrücke, bis Ende 2022)
 #: XXX laut Plänen wird es Richtung Norden eine Fahrradschleuse und Richtung Süden eine Radspur geben; vermutlich wird die Straße während der Bauarbeiten komplett gesperrt
 #: XXX laut Ausschilderung an der Sonnenallee Sperrung ab 21.2.2022 4:30 Uhr
-#: last_checked: 2023-03-19
+#: last_checked: 2023-04-07
 #: check_frequency: 90d
 #: next_check: 2023-06-02
 Niemetzstr.: EÜ wird erneuert, Fahrbahn wird abgesenkt	?::projected 13797,7267 13762,7321
@@ -6789,12 +6789,12 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1253431.php (restliche Abschnitte zwischen Pariser Kommune und Andreasstr., zunächst Richtung Westen, 12.10.2022 - Ende November 2022; außerdem wird es für Radfahrer eine "signalisierte Querungsmöglichkeit" in Höhe Koppenstr. geben)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/karl-marx-allee-radweg-wird-breiter_a360314
 # REMOVED (fertig) --- #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2023-04-02
+#: last_checked: 2023-04-09
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
-#: last_checked: 2023-04-02
+#: last_checked: 2023-04-09
 #: XXX nach Fertigstellung Eintrag in handicap_directed apassen/entfernen
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
 # 
@@ -6947,7 +6947,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 #: next_check_id: GRUENBERGER-2022
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-09
 #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
@@ -7312,6 +7312,7 @@ Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. G
 # REMOVED (handicap_s-orig-Eintrag existiert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf --- #: XXX vermutlich sollte man hier sowieso einen handicap-Eintrag erstellen --- #: next_check: 2022-09-01 --- Herkulesufer: Widmung als Grünanlage geplant	? 7595,11086 7575,11076 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 # 
 #: next_check_id: GRENZALLEE-2014
+#: XXX eine weitere Ampel wird an der Einmündung Autobahnausfahrt/Bergiusstr. entstehen
 #: last_checked: 2023-04-05
 #: check_frequency: 90d
 Grenzallee: Fußgängerampel in Bau	?::inwork 14050,6754 14040,6726 14030,6698
@@ -9540,8 +9541,9 @@ Treffurter Str.: Bebauungsplanverfahren wird gestartet	?::projected 18067,14700 
 #: by: https://www.deutsches-architekturforum.de/thread/8424-europacity-allgemeines/?postID=679790#post679790
 #: XXX wird es auch eine Anbindung zur Perleberger Brücke geben?
 #: XXX wird es auch Brücken über die Bahnanlagen in O-W-Richtung geben?
-#: last_checked: 2023-02-27 (daf)
-#: next_check: 2024-04-15
+#: last_checked: 2023-04-07
+#: check_frequency: 360d
+#: next_check: 2024-12-31
 Döberitzer Grünzug: hier soll ein Park mit Wegen entstehen	?::projected 7802,13596 7564,13961 7347,14287
 # 
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/der-s-bahnhof-zehlendorf-bekommt-einen-neuen-bahnhofszugang_a299000
@@ -10063,10 +10065,7 @@ BER - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke	? 19858,-6330
 # REMOVED --- Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20883,-6592 20870,-6654 20797,-6729 20522,-6989 20385,-7297 20255,-7591
 #: XXX laut osm asphalt, allerdings mit unterschiedlicher smoothness (good - bad - intermediate)
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
-Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52361,72080 53566,69842 54031,69280
-Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet	? 53312,76587 53555,77037 53868,77304 54146,77628 54332,77932
-Schönermark - Biesenbrow: Qualität (höchstwahrscheinlich asphaltiert)?	? 54542,78720 54366,78714 54283,78677 54146,78628 54113,78631 53982,78634 53872,78613 53765,78628 53692,78714 53647,78765
-Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
+Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52372,72018 52810,70961 52988,70653 53129,70522 53344,70175 53482,69816 53953,69208
 Passow, Mittelstr.: Qualität im westlichen Abschnitt? Hier auch Beton?	? 56975,82627 57185,82724
 #: XXX zumindest an der Bundesstraße Feldwege
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
@@ -10566,8 +10565,8 @@ Aken - Mennewitz: hinter der Abbiegung nach Micheln fängt der Asphalt, durchgäng
 #: XXX zumindest in Höhe der ehem. Bahnübergänge schlechtes Kopfsteinpflaster
 Hintersee - Ahlbeck: Qualität?	? 66135,136956 66005,137087 65889,137419 65809,137545 65797,137678 65701,137799 65666,138036 65599,138296 65357,138798 65158,138985 65161,139048 64864,139559 64220,140595 64147,140739 63881,141088 63850,141191 63843,141267 63825,141282 63767,141332 63780,141553 63741,141644 63294,142022 62897,142175 62583,142213 62200,142145 61593,141874 61512,141859 61297,141889 61245,141840 61213,141745 61083,141649 60993,141629 60885,141524
 Ueckermünde: Qualität? Radwege?	? 53773,148858 53226,148833 52892,148819 52724,148719 52574,148662 52427,148565 52087,148346 52032,148357
+#: XXX möglicherweise nur ein unbefestigter Weg
 Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 51732,69987 51638,69908 51609,69882 51666,69734 51778,69645 51899,69659 51992,69642 52009,69595 51968,69471 51832,69426 51724,69435 51690,69289 51704,69094 51748,69034 51704,69005
-Dobberzin - Kerkow: Qualität?	? 52044,69176 51964,69327 52131,69576 52182,69797 52059,69849 51942,69871 51732,69987
 Gerlachstr.: Qualität? Existieren hier (abschnittsweise?) Radwege?	? -7597,-4439 -7471,-4299 -7400,-4224 -7346,-4167
 Loddin: Qualität (wahrscheinlich Verbundsteinpflaster oder Kopfsteinpflaster)	? 47917,180585 47868,180623
 #: XXX: beide Enden sehen gut aus:
@@ -10651,7 +10650,6 @@ Wolfshagen - Ottenhage: Qualität?	? 25017,115256 25026,115200 25050,115094 25010
 Fürstenwerder - Bülowssiege: Qualität?	? 21007,109931 21062,109937 21165,109966 21220,109964 21445,110097 21615,110199 21693,110291 21855,110445 21977,110489 22078,110654 22289,110757 22351,110760 22638,110897 22803,110995 23087,111261
 L25 - Hildebrandshagen: Qualität?	? 23242,109707 23226,110446 23385,110586 23413,110757 23274,110878 23274,110963 23087,111261 23087,111306 23153,111439 23077,111655 23118,111699 23134,111848 22992,112273 22836,112384 22674,112533
 Hildebrandshagen - Wolfshagen: Qualität?	? 22674,112533 22785,112612 22909,112768 22972,112939 22766,114059 22849,114201 22836,114325 22934,114693 23096,114947 24289,115273 24587,115502
-Klockow: Weg nach Carmzow ausgeschildert? Qualität (vermutlich unbefestigt)?	? 49523,111095 49629,111050
 Am Gehölz (Potsdam): Qualität?	? -7758,-2457 -8024,-2468 -8140,-2475
 Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7803,-2689 -7484,-2745 -7369,-2751
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
