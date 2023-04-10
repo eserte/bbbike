@@ -462,9 +462,11 @@ Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,281
 Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728
 Grünz - Radewitz: Qualität?	? 58791,99029 58824,99187 59496,99728 59670,99855
 Hohenreinkendorf: Qualität?	? 71648,92361 71767,92617 71794,92835 71812,93044 71834,93124 71805,93237
-Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689
-Kummerow - Kunow: Qualität? Laut osm grade3	? 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931
+Kummerow - Kunow/Neue Mühle: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689
+Kummerow - Kunow/Neue Mühle: Qualität? Laut osm grade3	? 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931
 Kummerow - Kunow: Qualität? Laut osm Beton oder Betonplattenweg	? 65732,81931 65968,82128 66459,82296 66731,82468
+Kummerow - Neue Mühle: neuer Radweg wird gebaut, wassergebundene Decke	? 65732,81931 65887,81767 66328,81405 66941,81068 67560,80738 68062,80395
+Neue Mühle - Blumenhagen: Asphaltierung geplant	? 68062,80395 68221,80439 68377,80425 68720,80494 69285,80378 69349,80357
 Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 62597,84046 61889,84194 61598,84224 61349,84292
 Prädikow - Ihlow: Qualität? Für Autos gesperrt?	? 51867,25572 53381,24795 55410,24766
 Kastanienweg (Prädikow): Qualität?	? 51257,25175 51562,25039 51776,25017
@@ -751,7 +753,8 @@ Auf der Drift (Kleinmachnow): Qualität im nördlichen Abschnitt?	? -1416,-84 -144
 Auf der Breite (Kleinmachnow): Qualität im nördlichen Abschnitt?	? -1309,-59 -1334,66
 Wilhelm-Külz-Weg (Kleinmachnow): Qualität im östlichen Abschnitt?	? -632,-172 -547,-231
 Erlenweg (Kleinmachnow): Qualität?	? -133,-371 -193,-298 -217,-250 -144,-156
-Erlenweg (Kleinmachnow): Qualität?	? -37,83 15,209 12,326 11,549 12,640 -27,702
+Erlenweg (Kleinmachnow): Qualität?	? -37,83 15,209 12,326 11,549
+Medonweg (Kleinmachnow): Qualität?	? -87,637 -203,498 -286,309 -340,191 -348,136 -311,99
 Heinersdorfer Weg (Teltow): Qualität des östlichen Abschnitts? nur für Radfahrer/Fußgänger frei?	? 2578,-871 2637,-933 2807,-987
 An den Koppeln (Teltow): Qualität?	? 2807,-987 2855,-1022 2940,-1031 3004,-1036 3118,-1063
 Osdorfer Str. (Teltow): Qualität im östlichen Abschnitt?	? 3623,-384 3843,-401
@@ -851,7 +854,6 @@ Beiersdorf - Beerbaum: Qualität?	? 35980,34322 35977,34619 36085,34994 36096,353
 Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74428 -14966,74667 -13662,75159
 Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenfalls unbefestigt?	? 32156,6405 32056,6607 31993,6776 31952,6917 31951,7060
 Technologiepark KW - Funkerberg: Qualität der Verbindung?	? 24452,-10414 24518,-10498 24950,-10965 25233,-11257 25366,-11396 25528,-11392
-Takustr.: wurde nach den Bauarbeiten die alte Einbahnstraßenregelung wieder hergestellt?	? 3079,5411 3179,5267 3226,5227 3273,5214
 # added from strassen
 Erna-Koschwitz-Weg (Hängen bereits neue Straßenschilder für den "Erna-Koschwitz-Weg"?)	? -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
 # added from landstrassen
@@ -994,8 +996,5 @@ L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen P
 Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Anfang März 2022: Durchfahrt ist gesperrt) (Ist der Weg mittlerweile wieder offen?)	? 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt (Ist der Weg im Hasselwerderpark noch immer gesperrt?)	? 18506,5596 18560,5539 18634,5484 18695,5453
 Pascalstr.: Fahrbahn zwischen Heisenbergstr. und Schlesingerstr. wegen Hochbauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet?)	? 4961,12940 4932,12968
-Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, einige Abschnitte des Mauerwegs können gesperrt sein, bis Herbst 2023 Mauerweg Marienfelde - Lichterfelde (Wo genau sind die gesperrten Abschnitte des Mauerwegs?)	? 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363
-Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, einige Abschnitte des Mauerwegs können gesperrt sein, bis Herbst 2023 Mauerweg Marienfelde - Lichterfelde (Wo genau sind die gesperrten Abschnitte des Mauerwegs?)	? 5441,-150 4842,-547 4596,-707 4406,-910
-Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, einige Abschnitte des Mauerwegs können gesperrt sein, bis Herbst 2023 Mauerweg Lichtenrade - Marienfelde (Wo genau sind die gesperrten Abschnitte des Mauerwegs?)	? 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568
 Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?)	? 20996,16429 20923,16435 20898,16420
 Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein (Ist der Straßenbahnübergang mittlerweile offen?)	? 18818,3332 18834,3315

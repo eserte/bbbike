@@ -2373,3 +2373,6 @@ Weißenseer Weg -> Anlieferung Hohenschönhauser Tor: Straßenbahntrasse	3::igndisp
 Anlieferung Hohenschönhauser Tor -> Weißenseer Weg: Straßenbahntrasse	3::igndisp 15225,14545 15120,14481 15168,14395
 Schwedt - Angermünde	1 50831,68659 50958,68666
 Görlsdorf - Peetzig	2:Anlieger 45683,72646 45651,72706 45595,72753 45557,72838 45503,72909 45468,73067 45425,73282 45273,73431 45178,73581 45098,73740 45178,73830 45193,73919 45141,74055 44912,74243 44857,74294 44571,74470 44344,74590 44297,74757 44356,74890 44412,74962 44403,75026
+Mittelstreifen	3nocross::ignrte 2732,4741 2745,4729 2762,4713
+Habelschwerdter Allee -> Schwendenerstr.: Mittelstreifen	3::igndisp 2732,4741 2745,4729 2816,4789
+Schwendenerstr. -> Habelschwerdter Allee: Mittelstreifen	3::igndisp 2816,4789 2745,4729 2762,4713

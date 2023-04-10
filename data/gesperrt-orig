@@ -373,7 +373,8 @@ Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
-# REMOVED (hier nicht (mehr?)) --- Takustr.	1 3321,5212 3209,5214 3079,5411 2958,5598
+Takustr.	1 3273,5214 3226,5227 3179,5267 3079,5411
+# REMOVED (hier wohl nicht (mehr?)) --- Takustr.	1 3079,5411 2958,5598
 Takustr.	1 2958,5598 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
@@ -1296,7 +1297,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="16"
-#: last_checked: 2022-10-02
+#: last_checked: 2023-04-10
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -1493,6 +1494,8 @@ Oberspreestr. [Nebenfahrbahn]	1s:q3 19965,5101 19957,5083 19940,5090
 # 
 Südring, Virchow-Klinikum	1 6305,14964 6319,14821 6252,14812
 Südring, Virchow-Klinikum	1 6252,14812 6231,14952
+# 
+Am Feuchten Winkel	1 12020,19333 11937,19175
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3590,6 +3593,7 @@ Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2
 #: next_check_id: TELTOWKANALUFERWEG-2023
 #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
 #: by: Karsten S.: wieder (temporär?) frei
+#: last_checked: 2023-04-10 vvv
 #: next_check: 2023-08-01 vvv
 #: valid: -20230317 vvv
 # REMOVED --- #: valid: -20241231 vvv
@@ -3597,6 +3601,7 @@ Uferweg am Teltowkanal	2::inwork 4053,2300 4209,2641 4247,2652
 Uferweg am Teltowkanal	2::inwork 4209,2641 4220,2664
 #: valid ^^^
 #: next_check ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: VIRCHOW-2023
 #: last_checked: 2023-03-12
@@ -3694,12 +3699,13 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10811 (Anfrage; der Name "Entenbrücke" wird hier erwähnt)
 #: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/die-fussgaengerbruecke-am-stadion-wuhletal-soll-abgerissen-und-durch-eine-neue-ersetzt-werden_a370367 (neue Brücke innerhalb drei Jahren (Stand März 2023))
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10843 (Antrag)
+#: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/senatsverwaltung-will-ersatzbau-im-jahre-2025-in-betrieb-nehmen_a377225 (Inbetriebnahme 2025)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="17"
 #: last_checked: 2023-02-05 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2026-03-01
+#: next_check: 2025-12-31
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # 
 #: next_check_id: FAHLENBERGBRUECKE-2022
@@ -3761,11 +3767,11 @@ Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,37
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-03-30 vvv
+#: last_checked: 2023-04-09 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-06-01 vvv
-#: osm_watch: way id="358602468" version="9"
-#: osm_watch: way id="24189226" version="25"
+#: osm_watch: way id="358602468" version="10"
+#: osm_watch: way id="24189226" version="26"
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
 #: osm_watch: way id="72183569" version="10"
 #: valid: -20230601 vvv
@@ -3872,9 +3878,9 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2023-03-27 vvv
+#: last_checked: 2023-04-10 (osm) vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-#: osm_watch: way id="1061057020" version="6"
+#: osm_watch: way id="1061057020" version="7"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
@@ -4343,7 +4349,7 @@ Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,123
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-03-07
+#: last_checked: 2023-04-05 (daf)
 #: check_frequency: 90d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,12637
 # 
@@ -4973,8 +4979,8 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
-#: osm_watch: way id="765539341" version="7" brb
-#: last_checked: 2022-12-26
+#: osm_watch: way id="765539341" version="8" brb
+#: last_checked: 2023-04-10 (osm)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
