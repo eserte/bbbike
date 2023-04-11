@@ -423,6 +423,10 @@ Denotes that the information in the next block or line was provided by
 URL providing more information, a Message-Id of a mail or posting, a
 date, or a combination of all. <code>according_to:</code> is an alias for
 <code>by:</code>.
+<dt class="POD_ITEM"><a name="by_nocache_URL_"><code>by[nocache]</code>: <i>URL</i>&gt;</a>
+<dd>
+Like the <u>by</u> directive, but the value must be an URL, and it is
+marked as non-cacheable (for whatever reasons), but still linkable.
 <dt class="POD_ITEM"><a name="corrected_by_source_"><code>corrected_by: <i>source</i> <i>previous -&gt; current</i> </code></a>
 <dd>
 Used after a <code>by</code> directive for a correction. It is advisable to put
@@ -602,8 +606,10 @@ Link to a search engine with the given search term.
 Link to a traffic map at the coordinate of the item.
 <dt class="POD_ITEM"><a name="url_url"><code>url</code> <i>url</i></a>
 <dd>
-Link to a specific URL (however, in some cases it might be preferable
-to use the <code>by</code> directive instead).
+Link to a specific URL.
+<dt class="POD_ITEM"><a name="webcam_url"><code>webcam</code> <i>url</i></a>
+<dd>
+Link to a specific URL, which is expected to show webcam imagery.
 </dl>
 <p class="POD_TEXT">
 Currently the script <code>miscsrc/fragezeichen2org.pl</code> may handle

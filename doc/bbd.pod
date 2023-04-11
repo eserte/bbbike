@@ -387,6 +387,11 @@ URL providing more information, a Message-Id of a mail or posting, a
 date, or a combination of all. C<according_to:> is an alias for
 C<by:>.
 
+=item C<by[nocache]>: I<URL>>
+
+Like the L</by> directive, but the value must be an URL, and it is
+marked as non-cacheable (for whatever reasons), but still linkable.
+
 =item C<corrected_by: I<source> I<< previous -> current >> >
 
 Used after a C<by> directive for a correction. It is advisable to put
