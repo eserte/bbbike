@@ -380,9 +380,14 @@ for my $file (@files) {
 	     }
 	     # Further URLs which work as good as also_indoor directives
 	     # (however, using "#: also_indoor webcam ..." is preferred)
-	     if ($dir->{by}) {
-		 for my $by (@{ $dir->{by} }) {
-		     if ($by =~ m{(https?://\S+).*\bWebcam\b}i) {
+	     my @urls;
+	     for my $dir_key (qw(by by[nocache])) {
+		 push @urls, @{ $dir->{$dir_key} }
+		     if $dir->{$dir_key};
+	     }
+	     if (@urls) {
+		 for my $url (@urls) {
+		     if ($url =~ m{(https?://\S+).*\bWebcam\b}i) {
 			 push @extra_url_defs, ['Webcam', $1];
 		     }
 		 }
