@@ -19539,7 +19539,7 @@ EOF
      { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-23 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
+       recurrences => [['yearly', days => 25, months => 4, start => "2023-06-02T00:00:00"]],
        recurrence_prewarn_days => 14, # weder Ort noch Termin bekannt
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
        type  => 'handicap',
@@ -19565,6 +19565,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8413 (Anfrage)
 #: by: https://berliner-abendblatt.de/2023/01/04/neuer-standort-fuer-maientage-bezirk-prueft-angebot/
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8480 (Anfrage)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/maientage-fallen-aus-volksfest-in-berlin-neukolln-zu-spaterem-zeitpunkt-im-gesprach-9621785.html (vielleicht im Herbst 2023?)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -36052,7 +36053,8 @@ EOF
      },
      { from  => 1659546069, # 2022-08-03 19:01
        until => undef, # 1671222245, # 1671231600, # 2022-12-17 00:00
-       text  => 'Wallensteinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Ilsestr. und Sangeallee; außerdem ist die Ilsestr. an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
+       # was: 'Wallensteinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Ilsestr. und Sangeallee; außerdem ist die Ilsestr. an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt'
+       text  => 'Ilsestr.: Bauarbeiten, an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00', # inaktiv
        data  => <<EOF,
@@ -36061,11 +36063,11 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-03-26 (mapillary)
+#: last_checked: 2023-04-11
 #: check_frequency: 21d
-# REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
-Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
+# REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
+# REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
 EOF
      },
      { from  => 1660168800, # 2022-08-11 00:00
@@ -37072,7 +37074,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte März 2023: enger Übergang existiert)',
+       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte April 2023: enger Übergang existiert, direkte Anbindung Hegemeisterweg abgesperrt)',
        # was: ", oder man benutzt die Fahrbahnverbindung zum Überqueren"
        type  => 'gesperrt',
        data  => <<'EOF',
@@ -37098,7 +37100,7 @@ EOF
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-03-21 vvv
+#: last_checked: 2023-04-11 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37867,7 +37869,7 @@ EOF
 #: next_check_id: KUESTRINER-2023
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (W[unvollständig]) vvv
+#: also_indoor: traffic (ex-W[unvollständig]) vvv
 #: last_checked: 2023-03-29 vvv
 #: check_frequency: 14d vvv
 Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16354,15323 16218,15386
@@ -37906,7 +37908,7 @@ EOF
        text  => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-04-07
+#: last_checked: 2023-04-11
 #: check_frequency: 10d
 	2::inwork 14810,10832 14738,10892
 EOF
@@ -38133,7 +38135,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.2955,52.50343,15.03.2023,15:59',
        data  => <<EOF,
-#: note: bei VIZ entfernt, laut rbb "bis auf weiteres", go with VIZ
+#: note: bei VIZ entfernt, laut rbb "bis auf weiteres", go with VIZ --- am nächsten Tag auch bei rbb entfernt
 #: also_indoor: traffic (none)
 	q4::inwork 3041,10732 3012,10812
 EOF
@@ -38231,12 +38233,14 @@ Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
 EOF
      },
      { from  => $isodate2epoch->("2023-04-10 00:00:00"),
-       until => 1682114399, # 2023-04-21 23:59
-       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. bis 21. April 2023',
+       until => $isodate2epoch->("2023-05-02 23:59:59"), # 1682114399, # 2023-04-21 23:59
+       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. bis 21. April 2023, evtl. auch noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/fahrbahn-wird-neu-gemacht_a376622
+#: source_id: viz2021:13.49247,52.47005,11.04.2023,15:56 (hier: bis 02.05.2023)
+#: next_check: 2023-04-21
 	q4::inwork 16563,7012 16615,7062 16507,7254
 EOF
      },
@@ -38264,7 +38268,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX möglicherweise Asphaltierung?
-#: last_checked: 2023-03-27
+#: last_checked: 2023-04-11
 #: check_frequency: 45d
 #: check_frequency: 2023-06-30
 	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
@@ -38312,6 +38316,9 @@ EOF
 #: by: https://www.nordkurier.de/regional/uckermark/kilometerlanger-umweg-in-passow-1437197
 #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
 #: also_indoor: traffic (G,W)
+#: last_checked: 2023-04-10
+#: check_frequency: 30d
+#: next_check: 2023-06-03
 	2::inwork 56280,83440 56301,83419 56317,83407
 EOF
      },

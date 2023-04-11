@@ -1497,6 +1497,13 @@ Südring, Virchow-Klinikum	1 6252,14812 6231,14952
 # 
 Am Feuchten Winkel	1 12020,19333 11937,19175
 # 
+#: by: osm
+#: XXX Wann wird die alte Brücke endgültig demontiert?
+#: osm_watch: way id="883242877" version="2"
+#: last_checked: 2023-04-09
+#: check_frequency: 120d
+Schmöckwitzwerdersteg: die alte Querung ist nicht mehr nutzbar	2 30534,-3105 30546,-3072
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3640,7 +3647,9 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2023-04-07
+#: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
+#: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
+#: last_checked: 2023-04-11
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3700,6 +3709,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/die-fussgaengerbruecke-am-stadion-wuhletal-soll-abgerissen-und-durch-eine-neue-ersetzt-werden_a370367 (neue Brücke innerhalb drei Jahren (Stand März 2023))
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10843 (Antrag)
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/senatsverwaltung-will-ersatzbau-im-jahre-2025-in-betrieb-nehmen_a377225 (Inbetriebnahme 2025)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1312741.php
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="17"
@@ -3741,7 +3751,7 @@ Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
 #: osm_watch: way id="26322024" version="22"
 #: priority: #C
-#: last_checked: 2023-03-17
+#: last_checked: 2023-04-11
 #: check_frequency: 60d
 (Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 # 
@@ -3920,7 +3930,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2023-03-27
+#: last_checked: 2023-04-11
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4045,7 +4055,7 @@ Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fahrstuhl-in-johannisthal-erst-ab-2024-nutzbar_a368423
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2023-03-17 vvv
+#: last_checked: 2023-04-10 (krickstadt) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-07-01 vvv
 Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673

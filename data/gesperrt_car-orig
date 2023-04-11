@@ -1250,14 +1250,22 @@ Weißenhöher Str.: Durchfahrt zur Pichelsdorfer Str. gesperrt	2 -3739,12756 -3650
 # REMOVED (mittlerweile Fahrradstraße, die in Berlin alle mit "Anlieger frei" versehen sind) --- Hegemeisterweg: Anlieger frei	2:Anlieger 17522,8220 17202,8391
 # 
 # REMOVED (hier nicht mehr?) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/durchfahrtsverbot-in-der-wulkower-strasse-veraergert-die-nachbarschaft_a186881 --- Wulkower Str.	1 21021,10583 21025,10815
-#: by: mapillary
-#: note: "unechte Einbahnstraße", von Süden aus Verbot für Fahrzeuge aller Art außer Anlieger+Radfahrer
-Wulkower Str.	1 21017,10423 21021,10583
-#: note: "unechte Einbahnstraße", von Osten aus Verbot für Fahrzeuge aller Art außer Anlieger+Radfahrer
-Paulinenauer Str.	1 21131,10812 21025,10815
-#: by: mapillary
-#: note: "unechte Einbahnstraße", von Osten aus Verbot für Fahrzeuge aller Art außer Anlieger+Radfahrer
-Kreuzschnabelstr.	1 21223,10573 21021,10583
+#: by: mapillary vvv
+#: historical_note: früher: "unechte Einbahnstraße", von Süden aus Verbot für Fahrzeuge aller Art außer Anlieger+Radfahrer
+Wulkower Str.: Anlieger frei	2:Anlieger 21017,10423 21021,10583
+Wulkower Str.: Anlieger frei	2:Anlieger 21136,11134 21067,11131 21035,11100 21032,11033 21025,10815 21021,10583
+#: historical_note: früher: "unechte Einbahnstraße", von Osten aus Verbot für Fahrzeuge aller Art außer Anlieger+Radfahrer
+Paulinenauer Str.: Anlieger frei	2:Anlieger 21131,10812 21025,10815
+Paulinenauer Str.: Anlieger frei	2:Anlieger 21025,10815 20879,10820
+#: historical_note: früher: "unechte Einbahnstraße", von Osten aus Verbot für Fahrzeuge aller Art außer Anlieger+Radfahrer
+Kreuzschnabelstr.: Anlieger frei	2:Anlieger 21223,10573 21021,10583
+Kreuzschnabelstr.: Anlieger frei	2:Anlieger 21021,10583 20872,10591 20725,10594
+Grabensprung: Anlieger frei	2:Anlieger 20681,10772 20716,10687 20723,10639 20725,10594 20716,10434
+#: historical_note: früher: unechte Einbahnstraße, Verbotsschild steht etwa 50m von der Köpenicker Str.
+Heidefalterweg: Anlieger frei	2:Anlieger 21140,10786 21322,10863
+Aurorafalterweg: Anlieger frei	2:Anlieger 21132,10923 21182,10920 21284,10956
+Mohrenfalterstr.: Anlieger frei	2:Anlieger 21180,10683 21370,10764
+#: by ^^^
 # 
 Moltkebrücke: nur für Anlieger	2:Anlieger 7930,12912 8021,12832
 Willy-Brandt-Str.: nur für Anlieger	2:Anlieger 8021,12832 8030,12824 8120,12756
@@ -1273,7 +1281,6 @@ Lintruper Str.	1 10324,925 10380,757
 #: by: osm (für Radfahrer frei)
 Glaserweg	1 10187,872 10237,749
 Friedrichstr. (Prenzlau)	1 39550,101671 39574,101863
-Heidefalterweg: unechte Einbahnstraße, Verbotsschild steht etwa 50m von der Köpenicker Str.	1 21140,10786 21322,10863
 Eberswalder Str. (Bernau): Radweg vorhanden	1 23109,30968 23103,30923 23084,30893 22917,30635
 Linienstr.	1 9609,13522 9744,13584
 Linienstr.	1 9993,13682 9947,13674
@@ -1772,4 +1779,9 @@ Schwedt - Angermünde	1 50831,68659 50958,68666
 Görlsdorf - Peetzig	2:Anlieger 45683,72646 45651,72706 45595,72753 45557,72838 45503,72909 45468,73067 45425,73282 45273,73431 45178,73581 45098,73740 45178,73830 45193,73919 45141,74055 44912,74243 44857,74294 44571,74470 44344,74590 44297,74757 44356,74890 44412,74962 44403,75026
 # 
 Habelschwerdter Allee: Mittelstreifen	3nocross 2732,4741 2745,4729 2762,4713
+# 
+#: by: mapillary vvv
+Schwabenallee: Anlieger frei	2:Anlieger 21371,9923 21429,10207
+Dramburger Str.: Anlieger frei	2:Anlieger 21594,9895 21606,10010
+#: by ^^^
 # 

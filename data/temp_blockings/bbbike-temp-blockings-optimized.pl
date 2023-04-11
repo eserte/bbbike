@@ -6066,16 +6066,16 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-03-26 (mapillary)
+#: last_checked: 2023-04-11
 #: check_frequency: 21d
-# REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
-Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
+# REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
+# REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
 ',
          'from' => 1659546069,
          'id' => 3597,
          'source_id' => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
-         'text' => 'Wallensteinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Ilsestr. und Sangeallee; außerdem ist die Ilsestr. an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Ilsestr.: Bauarbeiten, an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6540,7 +6540,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-03-21 vvv
+#: last_checked: 2023-04-11 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
@@ -6561,7 +6561,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 ',
          'from' => undef,
          'id' => 3666,
-         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte März 2023: enger Übergang existiert)',
+         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte April 2023: enger Übergang existiert, direkte Anbindung Hegemeisterweg abgesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7052,7 +7052,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'data' => '#: next_check_id: KUESTRINER-2023
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (W[unvollständig]) vvv
+#: also_indoor: traffic (ex-W[unvollständig]) vvv
 #: last_checked: 2023-03-29 vvv
 #: check_frequency: 14d vvv
 Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16354,15323 16218,15386
@@ -7083,7 +7083,7 @@ Küstriner Str.	q4::inwork 16354,15323 16314,15223
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-04-07
+         'data' => '#: last_checked: 2023-04-11
 #: check_frequency: 10d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -7334,13 +7334,15 @@ Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/fahrbahn-wird-neu-gemacht_a376622
+#: source_id: viz2021:13.49247,52.47005,11.04.2023,15:56 (hier: bis 02.05.2023)
+#: next_check: 2023-04-21
 	q4::inwork 16563,7012 16615,7062 16507,7254
 ',
          'from' => 1681077600,
          'id' => 3754,
-         'text' => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. bis 21. April 2023',
+         'text' => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. bis 21. April 2023, evtl. auch noch länger',
          'type' => 'handicap',
-         'until' => 1682114399
+         'until' => 1683064799
        },
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
@@ -7363,7 +7365,7 @@ Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
        },
        {
          'data' => '#: XXX möglicherweise Asphaltierung?
-#: last_checked: 2023-03-27
+#: last_checked: 2023-04-11
 #: check_frequency: 45d
 #: check_frequency: 2023-06-30
 	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
@@ -7405,6 +7407,9 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: by: https://www.nordkurier.de/regional/uckermark/kilometerlanger-umweg-in-passow-1437197
 #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
 #: also_indoor: traffic (G,W)
+#: last_checked: 2023-04-10
+#: check_frequency: 30d
+#: next_check: 2023-06-03
 	2::inwork 56280,83440 56301,83419 56317,83407
 ',
          'from' => 1677452400,

@@ -1987,9 +1987,16 @@ Boppstr.	1 11785,9437 11560,9524
 Schmiedeweg (Bestensee)	1 26459,-17745 26354,-17641 26321,-17629 26297,-17628
 Bohnsdorf - Siedlung Waltersdorf	1 22985,-1319 22993,-1340 23073,-1551 23088,-1588 23246,-2008 23253,-2022
 Weißenhöher Str.: Durchfahrt zur Pichelsdorfer Str. gesperrt	2 -3739,12756 -3650,12762
-Wulkower Str.	1 21017,10423 21021,10583
-Paulinenauer Str.	1 21131,10812 21025,10815
-Kreuzschnabelstr.	1 21223,10573 21021,10583
+Wulkower Str.: Anlieger frei	2:Anlieger 21017,10423 21021,10583
+Wulkower Str.: Anlieger frei	2:Anlieger 21136,11134 21067,11131 21035,11100 21032,11033 21025,10815 21021,10583
+Paulinenauer Str.: Anlieger frei	2:Anlieger 21131,10812 21025,10815
+Paulinenauer Str.: Anlieger frei	2:Anlieger 21025,10815 20879,10820
+Kreuzschnabelstr.: Anlieger frei	2:Anlieger 21223,10573 21021,10583
+Kreuzschnabelstr.: Anlieger frei	2:Anlieger 21021,10583 20872,10591 20725,10594
+Grabensprung: Anlieger frei	2:Anlieger 20681,10772 20716,10687 20723,10639 20725,10594 20716,10434
+Heidefalterweg: Anlieger frei	2:Anlieger 21140,10786 21322,10863
+Aurorafalterweg: Anlieger frei	2:Anlieger 21132,10923 21182,10920 21284,10956
+Mohrenfalterstr.: Anlieger frei	2:Anlieger 21180,10683 21370,10764
 Moltkebrücke: nur für Anlieger	2:Anlieger 7930,12912 8021,12832
 Willy-Brandt-Str.: nur für Anlieger	2:Anlieger 8021,12832 8030,12824 8120,12756
 Bamberger Str.	1 5893,9530 5900,9737
@@ -2005,7 +2012,6 @@ Grüntaler Str. -> Badstr.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmögl
 Lintruper Str.	1 10324,925 10380,757
 Glaserweg	1 10187,872 10237,749
 Friedrichstr. (Prenzlau)	1 39550,101671 39574,101863
-Heidefalterweg: unechte Einbahnstraße, Verbotsschild steht etwa 50m von der Köpenicker Str.	1 21140,10786 21322,10863
 Eberswalder Str. (Bernau): Radweg vorhanden	1 23109,30968 23103,30923 23084,30893 22917,30635
 Linienstr.	1 9609,13522 9744,13584
 Linienstr.	1 9993,13682 9947,13674
@@ -2376,3 +2382,5 @@ Görlsdorf - Peetzig	2:Anlieger 45683,72646 45651,72706 45595,72753 45557,72838 4
 Mittelstreifen	3nocross::ignrte 2732,4741 2745,4729 2762,4713
 Habelschwerdter Allee -> Schwendenerstr.: Mittelstreifen	3::igndisp 2732,4741 2745,4729 2816,4789
 Schwendenerstr. -> Habelschwerdter Allee: Mittelstreifen	3::igndisp 2816,4789 2745,4729 2762,4713
+Schwabenallee: Anlieger frei	2:Anlieger 21371,9923 21429,10207
+Dramburger Str.: Anlieger frei	2:Anlieger 21594,9895 21606,10010

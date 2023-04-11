@@ -948,6 +948,7 @@ Oberspreestr. [Nebenfahrbahn]	1s 19965,5101 19957,5083 19940,5090
 S¸dring, Virchow-Klinikum	1 6305,14964 6319,14821 6252,14812
 S¸dring, Virchow-Klinikum	1 6252,14812 6231,14952
 Am Feuchten Winkel	1 12020,19333 11937,19175
+Schmˆckwitzwerdersteg: die alte Querung ist nicht mehr nutzbar	2 30534,-3105 30546,-3072
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Gˆrlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3707,6 +3708,7 @@ Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18740,
 Treskowallee -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18708,10000
+Richard-Kolkwitz-Weg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18708,10000 18703,9997 18740,9907
 Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18708,10000 18703,9997 18445,9887
 Straﬂenbahn	3nocross::ignrte 18878,9517 18875,9570 18865,9608 18823,9708
 Hˆnower Str. -> Treskowallee: Straﬂenbahn	3::igndisp 18846,9532 18875,9570 18865,9608
