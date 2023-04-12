@@ -24787,7 +24787,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 30. April bis zum 3. Oktober',
+       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 29. April bis zum 3. Oktober',
        recurring => 1,
        type  => 'gesperrt',
        source_id => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
@@ -24800,8 +24800,9 @@ EOF
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-der-bvg-ab-sofort-wieder-auf-der-mueggelspree-unterwegs_a343523
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1309467.php
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/ahoi-paule-iii-sticht-wieder-in-see-saisonstart-der-traditionellen-ruderfaehre-id215621
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-paule-iii-beginnt-saison_a376859
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
-#: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
+#: tempex: (20170430|20230429|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 EOF
@@ -26371,6 +26372,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023)
 #: priority: #A
 #: next_check: 2023-04-13
 	2::bomb -2218,5133 -927,6888
@@ -30354,14 +30356,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: XXX Sperrung möglicherweise doch nur bis Ende März 2023?
-#: last_checked: 2023-04-03
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-04-01
-#: next_check: 2023-09-01
-	2::inwork 13172,11651 13239,11567 13261,11572
+#: last_checked: 2023-04-12 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2023-09-01 vvv
+	2::inwork 13172,11651 13239,11567 13261,11572 13274,11585
+	2::inwork 13261,11572 13308,11515 13323,11497
+	2::inwork 13324,11529 13308,11515
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2021-01-07 17:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
@@ -36223,13 +36228,13 @@ EOF
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2023-04-13 17:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 13.4.2023',
+       until => $isodate2epoch->("2023-04-21 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 21.4.2023',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
-#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023)
+#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -36938,7 +36943,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-09
+#: last_checked: 2023-04-12
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37167,8 +37172,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-04-10 00:00:00"), # 1667170800, # 2022-10-31 00:00
-       until => $isodate2epoch->("2023-05-02 23:59:59"), # 1678541944, # undef, # XXX
-       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Gallwitzallee bis Beselerstr., vom 11.04.2023 bis 02.05.2023',
+       until => $isodate2epoch->("2023-07-31 23:59:59"), # 1678541944, # undef, # XXX
+       dont_check_date => 1, # weitere Bauabschnitte in until berücksichtigt!
+       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Gallwitzallee bis Beselerstr., vom 11.04.2023 bis 02.05.2023, weitere Bauabschnitte folgen',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
        data  => <<EOF,
@@ -37179,6 +37185,7 @@ EOF
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/strassenbau-geht-weiter_a376430
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/bauarbeiten-gehen-weiter-erneute-vollsperrung-in-lankwitz-id216990
 #: by: https://viz.berlin.de/2023/04/eiswaldtstr/
+#: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
 #: next_check: 2023-05-02
@@ -37862,22 +37869,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1681323382, # undef, # XXX
        text  => 'Küstriner Str./Wriezener Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KUESTRINER-2023
-#: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (ex-W[unvollständig]) vvv
-#: last_checked: 2023-03-29 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun? --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv --- #: also_indoor: traffic (ex-W[unvollständig]) vvv --- #: last_checked: 2023-04-12 vvv --- #: check_frequency: 14d vvv
 Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16354,15323 16218,15386
 Küstriner Str.	q4::inwork 16354,15323 16314,15223
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: check_frequency ^^^ ---- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1677135600, # 2023-02-23 08:00
@@ -38234,12 +38234,13 @@ EOF
      },
      { from  => $isodate2epoch->("2023-04-10 00:00:00"),
        until => $isodate2epoch->("2023-05-02 23:59:59"), # 1682114399, # 2023-04-21 23:59
-       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. bis 21. April 2023, evtl. auch noch länger',
+       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. April 2023 bis 1. Mai 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/fahrbahn-wird-neu-gemacht_a376622
-#: source_id: viz2021:13.49247,52.47005,11.04.2023,15:56 (hier: bis 02.05.2023)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1313008.php (mittlerweile bis 1.5.2023)
+#: source_id: viz2021:13.49247,52.47005,11.04.2023,15:56 (hier: bis 02.05.2023) (vorfristig entfernt)
 #: next_check: 2023-04-21
 	q4::inwork 16563,7012 16615,7062 16507,7254
 EOF
@@ -38339,6 +38340,15 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B)
 	q4::inwork 3291,10853 3295,10831 3041,10732
+EOF
+     },
+     { from  => 1681189200, # 2023-04-11 07:00
+       until => 1693447200, # 2023-08-31 04:00
+       text  => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., evtl. sind auch Radfahrer betroffen, vom 12.04.2023 07:00 bis 31.08.2023 04:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.3076,52.50361,12.04.2023,07:00',
+       data  => <<EOF,
+	q4::inwork 3869,10760 4267,10724 4393,10712
 EOF
      },
     );
