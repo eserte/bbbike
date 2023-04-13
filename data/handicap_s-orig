@@ -40,18 +40,6 @@ Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,
 #: valid: -20230517
 Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4+::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931
-#: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html
-#: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
-#: by: https://www.gm013.la/work/fmp
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
-#: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-04-06
-#: check_frequency: 30d
-#: next_check: 2023-07-01
-(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, schmaler Gehweg ist frei	q4::inwork 12788,11898 12891,12008
-# 
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
 # REMOVED (wieder offen) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: XXX Datensatz in gesperrt-orig beachten! --- #: also_indoor: traffic (ex-B,G(falsch)) --- #: last_checked: 2022-05-06 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2022-04-01 vvv --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
 # REMOVED (Radfahrer frei-Schild existiert mittlerweile) --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
@@ -276,7 +264,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-13
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -333,7 +321,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-30 (mapillary)
+#: last_checked: 2023-04-13
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -2915,7 +2903,7 @@ Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
 #: XXX_prog: BS (2x)
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8961,6490 8929,6363 8930,6295
 #: note: allerdings ist der Radweganteil sehr schmal
-(Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
+(Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10143,4283 10220,4236
 #: note: von Norden her existiert ein "Radfahren verboten"-Hinweis, von Süden her aber nicht
 (Westphalweg/Dirschelweg - Schwimmbad): Fußgänger	q2 10059,4396 10051,4295
 (Richterstr. - Rathausstr.): Fußgänger	q2- 9276,3997 9294,3921 9217,3906 9117,3898

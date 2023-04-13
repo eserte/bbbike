@@ -3949,18 +3949,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023)
+#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
 #: priority: #A
-#: next_check: 2023-04-13
+#: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::bomb -1934,6804 -1854,6898
 ',
-         'from' => 1681250400,
+         'from' => 1681855200,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. April 2023 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2023 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1681373700
+         'until' => 1681978500
        },
        undef,
        {
@@ -4233,7 +4233,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-13
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5955,7 +5955,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
 #: last_checked: 2023-04-04
 #: check_frequency: 60d
-#: next_check: 2023-04-15
+#: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
 ',
@@ -6342,6 +6342,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: by: https://nitter.net/VIZ_Berlin/status/1597901017756368898#m
 #: by: https://nitter.net/pic/orig/media%2FFizhNZlXkAArDsW.png
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
+#: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-04-06 vvv
@@ -6349,9 +6350,10 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
-Friedrichstr.	q4::inwork; 9212,13471 9225,13389
-Friedrichstr. (vor der Oranienburger Str.)	q3::inwork 9225,13389 9246,13235
-Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
+Friedrichstr.	q3::inwork; 9212,13471 9225,13389
+Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9246,13235
+Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9254,13171 9246,13235 9225,13389
+# REMOVED (hier nicht mehr) --- Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
 # REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
@@ -6431,7 +6433,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-13
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -7085,14 +7087,15 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'data' => '#: next_check_id: FISCHERINSEL-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424
 #: priority: #B
-#: next_check: 2023-04-15
+#: last_checked: 2023-04-13
+#: next_check: 2023-04-17
 	2::inwork 10680,11875 10776,11942 10824,11992 10869,11949
 ',
          'from' => 1677359677,
          'id' => 3732,
-         'text' => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen, voraussichtlich bis Mitte April 2023',
+         'text' => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen, voraussichtlich bis Mitte April 2023, möglicherweise auch länger',
          'type' => 'gesperrt',
-         'until' => 1681595999
+         'until' => undef
        },
        undef,
        {
@@ -7437,6 +7440,16 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'text' => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., evtl. sind auch Radfahrer betroffen, vom 12.04.2023 07:00 bis 31.08.2023 04:00',
          'type' => 'handicap',
          'until' => 1693447200
+       },
+       {
+         'data' => '	2::inwork 27708,32556 27237,32838
+',
+         'from' => 1680415200,
+         'id' => 3764,
+         'source_id' => '236000466',
+         'text' => 'Bernau - Tempelfelde: Bauarbeiten, Sperrung bei Albertshof, von 03.04.2023 08:00 Uhr bis 14.04.2023 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1681480800
        }
      
 );

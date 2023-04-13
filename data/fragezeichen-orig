@@ -226,7 +226,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf ("noch nicht terminiert")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf (nur noch als "Projektidee")
-#: last_checked: 2023-03-07
+#: last_checked: 2023-04-13
 #: check_frequency: 180d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1476,7 +1476,7 @@ Malteserstr: Verbesserung -> evtl. Radspuren? ("Teilabschnitte")	?::projected 77
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/mehr-sicherheit-fuer-radfahrer_a371210
 #: last_checked: 2023-04-10
 #: check_frequency: 150d
-Mühlenstr.: Verbesserung -> evtl. Radspuren oder Asphaltierung?	?::projected 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1711,2620 1750,2636 1885,2697 2000,2748
+Mühlenstr.: Verbesserung -> evtl. Radspuren oder Asphaltierung?	?::projected 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1703,2620 1750,2636 1885,2697 2000,2748
 # 
 #: by: https://www.berliner-woche.de/lankwitz/c-verkehr/neubau-des-fernradweges-berlin-leipzig-soll-durch-gruenflaeche-fuehren_a167909
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.734767.php (Weiterbau)
@@ -2084,10 +2084,11 @@ Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/bauarbeiten-an-drei-radwegen_a360914
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10799 (noch 2022)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11242 (Erwähnung der Radspur)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1313477.php (zwischen der Ollenhauerstraße und Eichborndamm; 2. Quartal 2023 - 4. Quartal 2023)
 #: last_checked: 2023-03-18
-#: check_frequency: 360d
-#: next_check: 2023-09-30
-Waldstr.: "Grundlagenermittlung für Radverkehrsanlagen"	?::projected 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5364,18775
+#: check_frequency: 90d
+#: next_check: 2023-12-31
+Waldstr.: "Grundlagenermittlung für Radverkehrsanlagen"	?::projected 4211,18882 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5364,18775
 #: by: http://www.infravelo.de/projekt/oranienburger-strasse-und-oraniendamm/ (2. Quartal 2022 - 4. Quartal 2022) (1. Quartal 2024 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9859 (2022/2023)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10451 (westliche Seite: RVA; sonst Radspuren)
@@ -5231,7 +5232,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2023-04-04
+#: last_checked: 2023-04-13
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -6951,13 +6952,13 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 #: next_check_id: GRUENBERGER-2022
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-13
 #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024)
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-13
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7005,7 +7006,7 @@ Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 2188
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10854 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
 #: XXX wird es Änderungen für den Radverkehr geben?
-#: last_checked: 2023-04-04
+#: last_checked: 2023-04-13
 #: check_frequency: 180d
 # REMOVED (keine Anzeichen für Bauarbeiten) --- #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
@@ -7512,7 +7513,7 @@ Stadthausstraße: Abschnitt unter der Unterführung wird für den Kfz-Verkehr einge
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2023-04-04
+#: last_checked: 2023-04-13
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -9325,13 +9326,13 @@ Weiterführung der Peter-Huchel-Str.: Qualität?	? -13257,1337 -13272,1304 -13424,
 #: by: https://www.buwog.de/de/projekt/seed (mittlerweile 404, wurde vermutlich umbenannt)
 #: by: https://www.buwog.de/de/projekt/saatwinklerdamm
 #: by: https://www.tenbrinke.com/de/aktuelle-projekte/aktuelle-projekte-details/saatwinkler-damm-berli00503.html (Fertigstellung ca. Winter 2024)
-#: by: https://www.deutsches-architekturforum.de/thread/14782-seed-wohnquartier-am-saatwinkler-damm-spandau/?postID=704827#post704827
+#: by: https://www.deutsches-architekturforum.de/thread/14782-seed-wohnquartier-am-saatwinkler-damm-spandau/?postID=704827#post704827 (Wohnquartier Halske Sonnengärten)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11087 (Entwurf zum Bebauungsplan 5-107)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/980-wohnungen-neben-der-s-bahn-so-sieht-das-neue-viertel-neben-der-siemensbahn-aus/28190638.html (erster Bauabschnitt bis Herbst 2023)
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/berlin-feiert-richtfest-fuer-das-neue-wohnviertel-am-saatwinkler-damm_a340583
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_43_2917_2976_online.pdf (Straßenbenennungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_44_2977_3032_online.pdf (Berichtigung, nur der Buchstabe in der Aufzählung war falsch)
-#: by: https://www.buwog.de/wohnbauprojekte/berlin-halske-sonnengaerten (neuer Name des Projekts?) (geplante Fertigstellung des ersten Bauabschnitts 2023)
+#: by: https://www.buwog.de/wohnbauprojekte/berlin-halske-sonnengaerten (neuer Name des Projekts) (geplante Fertigstellung des ersten Bauabschnitts 2023)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11669 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_12_1285_1328_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="125758273" version="14"
@@ -9424,6 +9425,7 @@ Uferweg geplant (erst einmal als Provisorium)	?::projected 11981,11578 11821,117
 #: by: https://abendblatt-berlin.de/2021/04/25/marzahn-schaufensterausstellung-zu-knorr-park-plaenen/
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/schaufensterausstellung-zeigt-plaene-fuer-zukunftsquartier-im-georg-knorr-park_a308124
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/garagenabriss-neben-friedhof_a346772
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/trotz-akuten-wohnungsmangels-wuerde-marzahn-hellersdorf-gern-mehr-freiflaechen-unbebaut-lassen_a376952
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2022-08-01 (mapillary)
 #: check_frequency: 720d

@@ -26340,9 +26340,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-04-13 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. April 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-04-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-04-20 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26372,9 +26372,9 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023)
+#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
 #: priority: #A
-#: next_check: 2023-04-13
+#: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::bomb -1934,6804 -1854,6898
@@ -28332,7 +28332,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-13
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -35682,7 +35682,7 @@ EOF
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
 #: last_checked: 2023-04-04
 #: check_frequency: 60d
-#: next_check: 2023-04-15
+#: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
 EOF
@@ -36766,6 +36766,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1597901017756368898#m
 #: by: https://nitter.net/pic/orig/media%2FFizhNZlXkAArDsW.png
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
+#: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-04-06 vvv
@@ -36773,9 +36774,10 @@ EOF
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
-Friedrichstr.	q4::inwork; 9212,13471 9225,13389
-Friedrichstr. (vor der Oranienburger Str.)	q3::inwork 9225,13389 9246,13235
-Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
+Friedrichstr.	q3::inwork; 9212,13471 9225,13389
+Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9246,13235
+Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9254,13171 9246,13235 9225,13389
+# REMOVED (hier nicht mehr) --- Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
 # REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
@@ -36943,7 +36945,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-13
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -37875,8 +37877,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: KUESTRINER-2023
 # REMOVED --- #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun? --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv --- #: also_indoor: traffic (ex-W[unvollständig]) vvv --- #: last_checked: 2023-04-12 vvv --- #: check_frequency: 14d vvv
-Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16354,15323 16218,15386
-Küstriner Str.	q4::inwork 16354,15323 16314,15223
+Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
+Küstriner Str.	q4::inwork 16357,15328 16314,15223
 # REMOVED --- #: check_frequency ^^^ ---- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
@@ -37914,14 +37916,15 @@ EOF
 EOF
      },
      { from  => 1677359677, # 2023-02-25 22:14
-       until => 1681595999, # 2023-04-15 23:59
-       text  => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen, voraussichtlich bis Mitte April 2023',
+       until => undef, # 1681595999, # 2023-04-15 23:59
+       text  => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen, voraussichtlich bis Mitte April 2023, möglicherweise auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: FISCHERINSEL-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424
 #: priority: #B
-#: next_check: 2023-04-15
+#: last_checked: 2023-04-13
+#: next_check: 2023-04-17
 	2::inwork 10680,11875 10776,11942 10824,11992 10869,11949
 EOF
      },
@@ -38349,6 +38352,15 @@ EOF
        source_id => 'viz2021:13.3076,52.50361,12.04.2023,07:00',
        data  => <<EOF,
 	q4::inwork 3869,10760 4267,10724 4393,10712
+EOF
+     },
+     { from  => 1680415200, # 2023-04-02 08:00
+       until => 1681480800, # 2023-04-14 16:00
+       text  => 'Bernau - Tempelfelde: Bauarbeiten, Sperrung bei Albertshof, von 03.04.2023 08:00 Uhr bis 14.04.2023 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '236000466',
+       data  => <<EOF,
+	2::inwork 27708,32556 27237,32838
 EOF
      },
     );

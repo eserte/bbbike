@@ -6915,7 +6915,7 @@ Waldsassener Str.: Asphalt	Q0 7014,203 6982,88 6705,-61
 (Lichterfelder Ring - Mauerweg): unbefestigter Pfad	Q2 6543,98 6498,71
 (Fortsetzung der Waldsassener Str.): Asphalt	Q0 6705,-61 6543,98
 Lechtaler Weg: Verbundsteinpflaster	Q1 6446,584 6437,794 6358,795
-Weygerweg: Kleinsteinpflaster	Q2+ 7423,1905 7514,1930 7561,1959 7595,2016 7578,2087
+Weygerweg: Kleinsteinpflaster	Q2+ 7423,1905 7514,1930 7561,1959 7597,2026 7581,2092
 (Malteserstr. - Kamenzer Damm): Parkweg, etwas gröberer Schotter	Q2+ 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
 (Malteserstr. - Kamenzer Damm): Parkweg	Q1 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
 (Malteserstr. - Kamenzer Damm): Parkweg, etwas holprig	Q1- 7837,2957 7852,3183
@@ -7631,7 +7631,7 @@ Henleinweg: Asphalt	Q0 4897,1352 4877,1275 4778,1194 4702,1147
 Gerberpfad: unbefestigte Straße	Q2 4897,1054 4846,1080 4778,1194 4702,1298
 Großbeerenstr. (Lichterfelde): Beton	Q0 4939,1148 5050,1133
 Großbeerenstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1- 5050,1133 5162,1110
-Heiterwanger Weg: Asphalt	Q0 5893,617 5985,630 6089,643 6186,652 6280,662 6383,667
+Heiterwanger Weg: Asphalt	Q0 5889,618 5985,630 6089,643 6186,652 6280,662 6383,667
 (Zufahrt Bauhaus): Asphalt	Q0 8382,347 8372,175
 Glaserweg: glattes Pflaster	Q1- 10187,872 10237,749
 Ostheimer Str.: glattes Pflaster	Q1 10673,1072 10743,908
@@ -8393,15 +8393,15 @@ Brittendorfer Weg: Asphalt	Q0 1884,3106 1946,3142
 Bolchener Str.: Asphalt	Q0 1970,2974 2028,3008
 Bolchener Str.: glatt gepflastert	Q1 1970,2974 1888,2925
 Bertholdstr.: Beton	Q0- 1927,2570 1932,2614 1885,2697
-Hochbaumstr.: Beton	Q0 2026,2542 1927,2570 1812,2594 1772,2602 1750,2636
+Hochbaumstr.: Beton	Q0 2026,2542 1927,2570 1815,2598 1763,2616 1750,2636
 Hochbaumstr.: Asphalt	Q0 2026,2542 2056,2535
 (Georg-Steger-Weg - Hampsteadstr.): Verbundsteinpflaster	Q1 1635,2720 1652,2770 1641,2914
 Georg-Steger-Weg: wassergebundene Decke	Q1 1476,1730 1473,1740 1432,1904 1432,1953 1432,1964 1461,2073 1452,2095 1480,2199
 Georg-Steger-Weg: Kopfsteinpflaster	Q2 1480,2199 1493,2247
 Am Schweizerhof: Beton	Q0 1524,1924 1432,1964 1368,1991 1258,1961 1191,1944
 Am Schweizerhof - Park: wassergebundene Decke	Q1 1191,1944 1177,1940
-Jänickestr.: Asphalt	Q0 1711,2620 1603,2220
-Jänickestr: glatt gepflastert	Q1+ 1603,2220 1524,1924
+Jänickestr.: Asphalt	Q0 1703,2620 1597,2221
+Jänickestr: glatt gepflastert	Q1+ 1597,2221 1524,1924
 Jänickestr.: unebener Asphalt	Q1+ 1524,1924 1558,1805 1570,1753
 Jänickestr.: Asphalt	Q0 1570,1753 1588,1697 1616,1594 1645,1486 1702,1278
 Melker Str.: Asphalt	Q0 1616,1594 1778,1659
@@ -10359,7 +10359,7 @@ Ritterstr.: Gehwegpflaster und Betonpflaster	Q1+ 9763,11148 9935,11067
 Gäßnerweg: Asphalt	Q0- 8532,6015 8550,6165 8546,6190 8552,6319 8553,6339
 Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8553,6339 8551,6552
 Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
-(Prühßstr. - Rixdorfer Str.): Asphalt	Q0 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
+(Prühßstr. - Rixdorfer Str.): Asphalt	Q0 9869,4271 9965,4299 10051,4295 10143,4283 10220,4236
 (Westphalweg/Dirschelweg - Schwimmbad): wassergebundene Decke, holprig	Q2+ 10059,4396 10051,4295
 (Upstallweg - Richterstr.): Asphalt	Q0 9264,3874 9244,3872 9226,3870 9217,3906
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
@@ -15034,7 +15034,7 @@ Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15944,1483
 #: corrected_by: srt (Q2 -> Q2+, added Kleinsteinpflaster)
 Freienwalder Str.: Kleinsteinpflaster	Q2+ 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 #: corrected_by: srt (Q2, Kopfsteinpflaster -> ...)
-Wriezener Str.: Kleinsteinpflaster	Q2+ 16604,15224 16522,15258 16354,15323 16218,15386
+Wriezener Str.: Kleinsteinpflaster	Q2+ 16604,15224 16522,15258 16357,15328 16218,15386
 #: corrected_by: srt (Asphalt mit Schäden -> ..., neu asphaltiert)
 Roedernstr.: Asphalt	Q0 16218,15386 15825,15547 15552,15660
 Prießnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
@@ -16643,7 +16643,7 @@ Isoldestr.: mäßiges Kopfsteinpflaster	Q2 -4033,1416 -4049,1535
 # 
 #: by: Andrea Büchner:
 #: confirmed_by: srt
-Achenseeweg: Asphalt	Q0 5909,1187 5868,1002 5867,807 5878,729 5893,617 5907,519 5923,423 5929,394 5910,385 5987,256
+Achenseeweg: Asphalt	Q0 5909,1187 5868,1002 5867,807 5871,729 5889,618 5907,519 5923,423 5929,394 5910,385 5987,256
 # 
 #: by: Daniel (cined...):
 Mercatorweg: mäßiger Beton	Q1 4875,677 4695,556
@@ -17531,7 +17531,7 @@ Odinstr.: Kopfsteinpflaster	Q2+ 17890,9580 17866,9639
 # 
 #: by: Schneider:
 #: confirmed_by: srt
-Wolfsburger Weg: Beton	Q0 10505,4713 10386,4771 10304,4801 10105,4818 10012,4826
+Wolfsburger Weg: Beton	Q0 10504,4705 10386,4771 10304,4801 10105,4818 10012,4826
 # 
 #: by: manuel (trommler...):
 #: confirmed_by: srt
@@ -19610,7 +19610,7 @@ Wotanstr. (Lichtenberg): Kopfsteinpflaster	Q2 16720,12614 16696,12437 16685,1235
 #: by: ^^^
 # 
 #: by: C. Appel:
-Industriestr.: mäßiges Kopfsteinpflaster	Q2 10927,5517 10238,5592
+Industriestr.: mäßiges Kopfsteinpflaster	Q2 10931,5516 10238,5592
 # 
 #: by: Oliver Orth:
 Schubartstr.: Asphalt	Q0 3158,19964 3343,19727 3546,19477
@@ -24690,7 +24690,7 @@ Nipkowstr.: Asphalt	Q0 20499,3572 20644,3395 20717,3310 20772,3244 20839,3163
 #: confirmed_by: srt
 Nienkemperstr.: guter Beton	Q0 1658,1852 1640,1922 1710,2189
 #: corrected_by: srt (guter Beton -> Asphalt)
-Nienkemperstr.: Asphalt	Q0 1710,2189 1812,2594
+Nienkemperstr.: Asphalt	Q0 1710,2189 1815,2598
 #: by: ^^^
 # 
 #: by: Julius Uhlmann: vvv
@@ -24741,7 +24741,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: last_checked: 2023-04-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
-Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
+Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
 #: XXX ^^^
 #: by: ^^^
 # 
@@ -25185,7 +25185,7 @@ Rastatter Str.: guter Beton	Q0 24002,9691 24250,9629
 #: by: A. Richter:
 #: note: Tempo-30-Zone:
 #: confirmed_by: srt
-Presingstr.: Asphalt	Q0 7987,2337 7923,2319 7853,2270 7780,2179 7721,2137 7645,2110 7578,2087 7390,2021
+Presingstr.: Asphalt	Q0 7987,2337 7923,2319 7853,2270 7780,2179 7721,2137 7645,2110 7581,2092 7390,2021
 # 
 #: by: Elke Stamm vvv
 #: corrected_by: srt (Asphalt -> Beton)
@@ -28446,7 +28446,7 @@ Kirchmeisterweg: mäßiges kleinteiliges Kopfsteinpflaster, wellige Straßenoberflä
 #: confirmed_by: srt (just changed "gutes" -> "glattes")
 Schillerstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1- 5021,2274 5071,2169
 #: confirmed_by: srt
-Tuxer Steig: gute Betonplatten	Q0 5878,729 5853,729 5742,671
+Tuxer Steig: gute Betonplatten	Q0 5871,729 5853,729 5742,671
 #: by: ^^^
 # 
 #: by: mmholz... vvv
@@ -32058,7 +32058,7 @@ Kreuzungsbereich asphaltiert	Q0 6921,1259
 Einmündungsbereich teilweise mit Kopfsteinpflaster	Q2+ 7226,1428
 Einmündungsbereich asphaltiert	Q0 7193,1492
 Einmündungsbereich asphaltiert	Q0 7332,1718
-Einmündungsbereich asphaltiert	Q0 7578,2087
+Einmündungsbereich asphaltiert	Q0 7581,2092
 Einmündungsbereich mit Kopfsteinpflaster	Q3+ 8346,3633
 Einmündungsbereich asphaltiert	Q0 8404,3648
 Einmündungsbereich asphaltiert	Q0 7182,14986
