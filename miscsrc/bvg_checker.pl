@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -112,7 +112,37 @@ if ($logfh) {
 }
 
 sub find_active_sourceids {
-    find_active_sourceids_bvg2022();
+    find_active_sourceids_bvg2023();
+}
+
+# Valid since Apr 2023
+# Still using "bvg2021:" source_id prefix
+sub find_active_sourceids_bvg2023 {
+    my $disruption_reports_query_url = 'https://www.bvg.de/disruption-reports/notifications/all';
+    require LWP::UserAgent;
+    require JSON::XS;
+
+    my $ua = LWP::UserAgent->new;
+    my $resp = $ua->get($disruption_reports_query_url);
+    die "Request to $disruption_reports_query_url failed:\n" . $resp->dump
+	if !$resp->is_success;
+    my $json = $resp->decoded_content;
+    if ($debug) {
+	my $ofile = '/tmp/bvg_checker_disruption_reports.json';
+	warn "INFO: write JSON to $ofile...\n";
+	open my $ofh, '>', $ofile or die $!;
+	print $ofh $json;
+	close $ofh or die $!;
+    }
+    my $data = JSON::XS::decode_json($json);
+    my %links;
+    for my $disruption (@$data) {
+	my $linie = $disruption->{line}->{name};
+	my $meldungsId = $disruption->{uuid};
+	my $source_id = lc($linie).'#'.$meldungsId;
+	$links{"$id_prefix:$source_id"} = 1;
+    }
+    return %links;
 }
 
 # Valid since Oct 2022

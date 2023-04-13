@@ -43,27 +43,54 @@ my $d = decode_json $json;
 my $qr = qr{(U-Bahn U?\d+|(?:Bus|Tram) [MX]?\d+)};
 
 my %combinedRecords;
-for my $dd (@{ $d->{data}->{allDisruptions} }) {
-    next if $dd->{"__typename"} eq "Elevator";
-    my $from = "$dd->{gueltigVonDatum} $dd->{gueltigVonZeit}";
-    my $sourceid = "bvg2021:" . lc($dd->{linie}) . "#" . $dd->{meldungsId};
-    my $date_row = "$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "");
-    my $title_row = "$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}";
-    my $text_without_line = $dd->{textIntAuswirkung};
-    my $line;
-    if ($text_without_line =~ m{^$qr}) {
-	$line = $1;
-	$text_without_line =~ s{^$qr:\s+}{};
+if (0) { # until Apr 2023
+    for my $dd (@{ $d->{data}->{allDisruptions} }) {
+	next if $dd->{"__typename"} eq "Elevator";
+	my $from = "$dd->{gueltigVonDatum} $dd->{gueltigVonZeit}";
+	my $sourceid = "bvg2021:" . lc($dd->{linie}) . "#" . $dd->{meldungsId};
+	my $date_row = "$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "");
+	my $title_row = "$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}";
+	my $text_without_line = $dd->{textIntAuswirkung};
+	my $line;
+	if ($text_without_line =~ m{^$qr}) {
+	    $line = $1;
+	    $text_without_line =~ s{^$qr:\s+}{};
+	}
+	my $key = "$date_row|$title_row|$text_without_line";
+	push @{ $combinedRecords{$key} }, {
+					   from              => $from,
+					   sourceid          => $sourceid,
+					   date_row          => $date_row,
+					   title_row         => $title_row,
+					   line              => $line,
+					   text_without_line => $text_without_line,
+					   sev               => $dd->{sev},
+					  }
     }
-    my $key = "$date_row\$title_row\$text_without_line";
-    push @{ $combinedRecords{$key} }, {
-        from              => $from,
-	sourceid          => $sourceid,
-        date_row          => $date_row,
-        title_row         => $title_row,
-	line              => $line,
-        text_without_line => $text_without_line,
-	sev               => $dd->{sev},
+} else {
+    for my $dd (@$d) {
+	next if $dd->{"notificationType"} eq "ELEVATOR";
+	my $from = $dd->{startDate};
+	my $sourceid = "bvg2021:" . lc($dd->{line}->{name}) . "#" . $dd->{uuid};
+	my $date_row = "$from - " . ($dd->{endDate} // "?");
+	my $title_row = remove_boring_unicode(join(" - ", grep { defined } $dd->{stationOne}{title}, $dd->{stationTwo}{title}));
+	my $text_without_line = remove_boring_unicode($dd->{content});
+	my $sev = $dd->{isSev} ? 'mit SEV' : '';
+	my $line;
+	if ($text_without_line =~ m{^$qr}) {
+	    $line = $1;
+	    $text_without_line =~ s{^$qr:\s+}{};
+	}
+	my $key = "$date_row|$title_row|$text_without_line";
+	push @{ $combinedRecords{$key} }, {
+					   from              => $from,
+					   sourceid          => $sourceid,
+					   date_row          => $date_row,
+					   title_row         => $title_row,
+					   line              => $line,
+					   text_without_line => $text_without_line,
+					   sev               => $sev,
+					  }
     }
 }
 
@@ -154,6 +181,12 @@ sub combine {
     my $combined = join(', ', uniqstr map { $_->{$field} } grep { defined $_->{$field} && $_->{$field} ne '' } @$arrref);
     $combined = undef if !length $combined;
     $combined;
+}
+
+sub remove_boring_unicode {
+    my $s = shift;
+    $s =~ s/[\x{200b}\x{2060}]//g;
+    $s;
 }
 
 __END__
