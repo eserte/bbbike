@@ -315,7 +315,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-04-10 vvv
+#: last_checked: 2023-04-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1174,7 +1174,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-04-10 vvv
+#: last_checked: 2023-04-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1580,9 +1580,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 # REMOVED --- #: XXX Wurde die Benutzungspflicht aufgehoben? -> nein! --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14389,9656 14495,9609
-	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15534,8943 15591,8848
+	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15445,9090 15452,9079 15534,8943 15591,8848
 	RW2; 15591,8848 15534,8943
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
@@ -2033,7 +2033,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-04-11 vvv
+#: last_checked: 2023-04-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -7534,7 +7534,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2023-03-17 vvv
+#: last_checked: 2023-04-14 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

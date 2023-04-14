@@ -599,7 +599,7 @@ Elsenbrücke	HH 14405,10027 14501,10169 14558,10264
 Am Treptower Park	H 13795,9941 13860,9861 14089,9610
 Am Treptower Park	HH 14089,9610 14185,9509 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651 15070,8584 15079,8575 15166,8489
 #: note: auf den Straßenschildern steht aber nur "Alt Treptow" ohne Bindestrich
-Alt-Treptow	HH 15383,9191 15407,9151 15442,9095 15452,9079 15534,8943 15591,8848
+Alt-Treptow	HH 15383,9191 15407,9151 15442,9095 15445,9090 15452,9079 15534,8943 15591,8848
 Bulgarische Str.	HH 15166,8489 15378,8668 15558,8820 15591,8848
 Bulgarische Str.	N 15591,8848 15680,8914 15778,8990
 Puschkinallee	H 13535,10184 13579,10146 13711,10022 13782,9954 13795,9941 13890,9894 13999,9842 14196,9749
@@ -5834,6 +5834,7 @@ Nennhauser Damm [Stichstraße]	N -8049,13332 -8043,13464 -8064,13534
 Metropolitan Park	N -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
 # REMOVED --- #: osm_watch: way id="725376312" version="10"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_06_0305_0372_online.pdf (Straßenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_17_1761_1912_online.pdf (Grundstücksnummern)
 # REMOVED --- #: XXX Straße soll "Eidechsenweg" heißen, Benennung zum 1.3.2022 wirksam, Eintrag in Berlin.coords.data fehlt
 #: note: Privatstraße
 #: oldname: -20220301: <namenslos>
@@ -6113,7 +6114,7 @@ Fennstr. (Niederschöneweide)	N 18245,5551 18260,5746
 Britzer Str. (Niederschöneweide)	N 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 (Britzer Str. - Uferweg)	NN 18470,5600 18506,5596
 (Britzer Str. - Uferweg)	NN 18470,5600 18473,5645
-(Uferweg an der Spree)	NN 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
+(Uferweg an der Spree)	NN 18695,5453 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg)	NN 18413,5799 18339,5853 18326,5850
 Köllnische Str.	N 19037,5316 18999,5237 18940,5243 18824,5280 18659,5330 18307,5440
 Oberspreestr.	H 19405,5284 19445,5271 19534,5242 19632,5211 19715,5185 19733,5177 19757,5169 19965,5101 20142,5043 20383,4963 20689,4862 20765,4839 20949,4775 20994,4761 21108,4725 21170,4706 21332,4655 21390,4637 21494,4605 21579,4579 21726,4537 21789,4520
@@ -15406,7 +15407,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-04-11
+#: last_checked: 2023-04-14
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15794,7 +15795,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-04-11
+#: last_checked: 2023-04-14
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

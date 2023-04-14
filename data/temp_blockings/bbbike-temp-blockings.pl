@@ -25941,7 +25941,7 @@ EOF
        text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 15591,8848 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581
+	2::temp 15591,8848 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00
@@ -27870,7 +27870,7 @@ EOF
 # REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
-#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023)
+#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
 #: next_check: 2023-04-14
@@ -31826,7 +31826,7 @@ EOF
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
 	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 	q4::temp 15778,8990 15680,8914 15591,8848
-	q4::temp; 15591,8848 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
+	q4::temp; 15591,8848 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
 EOF
      },
      { from  => 1599591506, # 2020-09-08 20:58
@@ -33402,16 +33402,18 @@ EOF
      },
      { from  => undef, # 1624744800, # 2021-06-27 00:00
        until => undef, # 1630533600, # 2021-09-02 00:00
-       text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt', # was: 'vom 28.06.2021 bis voraussichtlich 01.09.2021'
+       text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt (Stand Mitte April 2023)', # was: 'vom 28.06.2021 bis voraussichtlich 01.09.2021'
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1100562.php',
        data  => <<EOF,
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/hasselwerder-park-mit-neuen-wegen_a314970
-#: XXX neue Sperrung, bis wann?
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1100562.php (Sperrung 2021)
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/hasselwerder-park-mit-neuen-wegen_a314970 (Sperrung 2021)
+#: XXX neue Sperrung 2022-2023, bis wann? Bekommt der gesperrte Abschnitt einen neuen Belag (Verbundsteinpflaster?)?
 #: add_fragezeichen: Ist der Weg im Hasselwerderpark noch immer gesperrt?
 #: next_check_id: HASSELWERDERPARK-2021
-#: last_checked: 2023-03-08 (mapillary)
-	2::inwork 18506,5596 18560,5539 18634,5484 18695,5453
+#: last_checked: 2023-04-14
+#: check_frequency: 60d
+	2::inwork 18634,5484 18695,5453
+# REMOVED (hier nicht) ---	2::inwork 18506,5596 18560,5539 18634,5484
 EOF
      },
      { from  => 1625250931, # 2021-07-02 20:35
@@ -35470,16 +35472,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1681495319, # laut osm: Weg ist freigegeben --- undef, # XXX
        text  => 'Mauerweg Rudow: Abschnitt westlich der Schönefelder Str. kann durch Bauzäune abgesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: mapillary
-#: XXX Am 2023-03-26 (mapillary) waren Bauarbeiten zu sehen
-#: osm_watch: way id="80883496" version="16"
-#: last_checked: 2023-03-26 (mapillary)
-# REMOVED --- #: check_frequency: 180d
-#: check_frequency: 90d
+# REMOVED --- #: XXX Am 2023-03-26 (mapillary) waren Bauarbeiten zu sehen --- #: osm_watch: way id="80883496" version="17" --- #: last_checked: 2023-03-26 (mapillary) --- # REMOVED --- #: check_frequency: 180d --- #: check_frequency: 90d
 	2::inwork 17236,-602 17076,-644 16997,-663
 EOF
      },
@@ -35557,7 +35555,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=720279#post720279
 #: by: https://abload.de/img/img_417223kcb.jpg
 #: osm_watch: way id="742199631" version="2"
-#: osm_watch: way id="4531799" version="14"
+#: osm_watch: way id="4531799" version="16"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
 #: last_checked: 2023-04-06
@@ -36068,7 +36066,7 @@ EOF
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 #: XXX Wie lange dauern noch die Bauarbeiten?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-04-11
+#: last_checked: 2023-04-14
 #: check_frequency: 21d
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
@@ -37101,7 +37099,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
-#: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023)
+#: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023)
 #: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
@@ -37522,7 +37520,7 @@ EOF
 #: next_check_id: SPREEPARK-2022
 #: note: Zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-03-27 vvv
+#: last_checked: 2023-04-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
@@ -37636,15 +37634,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1681157169, # construction wurde bei osm entfernt --- undef, # 1676056532, # bei osm entfernt, MarkCompletedHighwayConstruction -- undef, # XXX
+       until => undef, # 1681157169, # construction wurde bei osm entfernt --- undef, # 1676056532, # bei osm entfernt, MarkCompletedHighwayConstruction -- undef, # XXX
        text  => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=733154#post733154',
        data  => <<EOF,
 # REMOVED --- nördlicher Abschnitt	q4::inwork 5350,12906 5341,12875 5376,12781
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
-#: osm_watch: way id="169659243" version="23"
-mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
+# REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
+#: osm_watch: way id="1155654228" version="3"
+#: last_checked: 2023-04-09 (osm)
+südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
      },
      { from  => undef, # 
@@ -37655,7 +37655,7 @@ EOF
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-03-17
+#: last_checked: 2023-04-14
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
@@ -37758,14 +37758,14 @@ EOF
 EOF
      },
      { from  => 1675896728, # 1676156400, # 2023-02-12 00:00
-       until => $isodate2epoch->("2023-04-14 17:00:00"), # 1679093999, # 2023-03-17 23:59
-       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Mitte April 2023',
+       until => $isodate2epoch->("2023-04-28 17:00:00"), # 1679093999, # 2023-03-17 23:59
+       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, bis voraussichtlich Ende April 2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023)
 #: also_indoor: traffic (G,H,B,W)
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -38015,14 +38015,17 @@ EOF
      },
      { from  => 1677610008, # 2023-02-28 19:46
        until => 1681595999, # 2023-04-15 23:59
-       text  => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte April 2023',
+       text  => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: OSKAR-2023
 #: XXX Halteverbotsschilder gelten bis zum 14.4.2023
-#: last_checked: 2023-03-27
-#: next_check: 2023-04-14
-	q3::inwork 17803,8079 17808,8042 17793,8012 17762,7931
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2023-04-14
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2023-04-14
+	q3::inwork 17793,8012 17762,7931
+# REMOVED (hier nicht mehr) ---	q3::inwork 17803,8079 17808,8042 17793,8012
 EOF
      },
      { from  => 1678575600, # 2023-03-12 00:00
@@ -38045,7 +38048,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bauarbeiten-staugefahr-in-baumschulenweg-id211581
 #: by: https://nitter.cz/VIZ_Berlin/status/1635178881606103040#m
 #: by: https://nitter.net/pic/orig/media%2FFq3V4joXgAEsbE1.jpg
-#: source_id: viz2021:13.480741,52.461219,13.03.2023,09:00 (bis 31.03.2023) (bis 14.04.2023)
+#: source_id: viz2021:13.480741,52.461219,13.03.2023,09:00 (bis 31.03.2023) (bis 14.04.2023) (inaktiv)
 # REMOVED (zu kurz) --- #: XXX vielleicht wird der Asphalt danach etwas besser sein (zurzeit Q0-)? --- #: next_check: 2023-03-31
 	q4::inwork 15725,6235 15740,6261
 # REMOVED (hier nicht) ---	q4::inwork 15740,6261 15715,6394
@@ -38237,15 +38240,17 @@ EOF
      },
      { from  => $isodate2epoch->("2023-04-10 00:00:00"),
        until => $isodate2epoch->("2023-05-02 23:59:59"), # 1682114399, # 2023-04-21 23:59
-       text  => 'Rodelbergweg und Neue Krugallee: Fahrbahnerneuerung, von 11. April 2023 bis 1. Mai 2023',
+       text  => 'Neue Krugallee: Fahrbahnerneuerung, Gehweg für Radfahrer frei, von 11. April 2023 bis 1. Mai 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1307011.php ("Radfahrende werden gebeten ... abzusteigen und den Gehweg zu nutzen")
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/fahrbahn-wird-neu-gemacht_a376622
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1313008.php (mittlerweile bis 1.5.2023)
 #: source_id: viz2021:13.49247,52.47005,11.04.2023,15:56 (hier: bis 02.05.2023) (vorfristig entfernt)
-#: next_check: 2023-04-21
-	q4::inwork 16563,7012 16615,7062 16507,7254
+# REMOVED --- #: next_check: 2023-04-21
+# REMOVED (hier nicht, Radwege existieren weiterhin) ---	q4::inwork 16563,7012 16615,7062
+Gehweg für Radfahrer frei	q2::inwork; 16615,7062 16507,7254
+# REMOVED (hier nicht, Radweg existiert weiterhin) ---	q4::inwork; 16507,7254 16615,7062
 EOF
      },
      { from  => undef, # 
@@ -38272,7 +38277,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX möglicherweise Asphaltierung?
-#: last_checked: 2023-04-11
+#: last_checked: 2023-04-14
 #: check_frequency: 45d
 #: check_frequency: 2023-06-30
 	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
@@ -38358,9 +38363,36 @@ EOF
        until => 1681480800, # 2023-04-14 16:00
        text  => 'Bernau - Tempelfelde: Bauarbeiten, Sperrung bei Albertshof, von 03.04.2023 08:00 Uhr bis 14.04.2023 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => '236000466',
+       source_id => '236000466', # inaktiv
        data  => <<EOF,
 	2::inwork 27708,32556 27237,32838
+EOF
+     },
+     { from  => 1682229600, # 2023-04-23 08:00
+       until => 1683900000, # 2023-05-12 16:00
+       text  => 'Haselberg - Steinbeck: Deckenerneuerung, Sperrung, 24.04.2023 07:00 Uhr bis 12.05.2023 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/221-F/22/138',
+       data  => <<EOF,
+	2::inwork 45275,34475 49143,34577 49557,34424 49925,34368 51490,34128
+EOF
+     },
+     { from  => 1681624800, # 2023-04-16 08:00
+       until => 1694008800, # 2023-09-06 16:00
+       text  => 'Eisenhüttenstadt, Grubenbahnstr.: Rückbau der Brücke, Sperrung vom 17.04.2023 bis 06.09.2023',
+       type  => 'gesperrt',
+       source_id => 'LS/221-F/23/036',
+       data  => <<EOF,
+	2::inwork 93720,-26200 92960,-25954
+EOF
+     },
+     { from  => 1681617600, # 2023-04-16 06:00
+       until => 1681920000, # 2023-04-19 18:00
+       text  => 'Bahnübergang zwischen Zossen und Nächst Neuendorf: Sperrung vom 17.04.2023 - 6:00 Uhr bis 19.04.2023 - 18:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '237200773',
+       data  => <<EOF,
+	2::inwork 13271,-20531 13412,-20513 13526,-20548
 EOF
      },
     );

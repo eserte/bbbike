@@ -294,7 +294,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 # REMOVED --- #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-04-11
+#: last_checked: 2023-04-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -2962,7 +2962,10 @@ Eschengraben: Beton	Q0- 11776,16753 11720,16752 11613,16747
 Eschengraben: Beton	Q1 11755,17216 11778,17066
 #: by: rjoop: vvv
 #: note: "stark aufgefaltet", "Q4"
-(Mauerweg Rudow): schlechter Asphalt, extreme Wurzelhebungen	Q3 16997,-663 17076,-644 17236,-602
+#: corrected_by: osm (schlechter Asphalt, extreme Wurzelhebungen, Q3 -> compacted)
+#: XXX Genaue Qualität überprüfen (bei osm weiterhin smoothness=bad)
+#: osm_watch: way id="80883496" version="17"
+(Mauerweg Rudow): unbefestigt	Q2 16997,-663 17076,-644 17236,-602
 (Bucher Teiche - Hobrechtsfelde): Feldweg, zweispurig	Q2 14497,26727 14494,26854 14567,27165 14660,27310 14699,27471
 (Bucher Teiche - Hobrechtsfelde): Waldweg	Q2 14699,27471 14759,27468 15076,27753 15108,27979 15777,28037
 (Bucher Teiche - Schönerlinder Chaussee): wassergebundene Decke	Q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -3679,11 +3682,11 @@ Am Birkenrevier: Verbundsteinpflaster	Q1+ 19303,8005 19176,8098
 Rohrlake: Verbundsteinpflaster	Q1+ 19168,7942 19109,7983 19061,7904
 #: next_check_id: OSKAR-2023
 #: XXX der Asphalt wird neu gemacht und ist nach den Bauarbeiten vielleicht besser
-#: last_checked: 2023-03-27
-#: next_check: 2023-04-14
-Oskarstr.: Asphalt mit Schäden	Q1- 17771,7880 17762,7931 17793,8012 17808,8042
+#: last_checked: 2023-04-14
+# REMOVED --- #: next_check: 2023-04-14
+Oskarstr.: Asphalt mit Schäden	Q1- 17771,7880 17762,7931 17793,8012
 #: historical_note: bis März/April 2023 Asphalt mit Schäden, Q1-
-Oskarstr.: Asphalt	Q0 17808,8042 17803,8079
+Oskarstr.: Asphalt	Q0 17793,8012 17808,8042 17803,8079
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt mit Rissen und Schäden	Q1 17613,7989 17647,8071 17532,8125
@@ -8293,7 +8296,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id: HELLWEG-2014 vvv
 #: last_checked: 2023-04-07 vvv
 #: check_frequency: 100d vvv
-#: osm_watch: way id="531908445" version="10"
+#: osm_watch: way id="531908445" version="11"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
 #: osm_watch: way id="273174490" version="12"
@@ -11268,12 +11271,12 @@ Hänselstr.: Beton	Q0- 15695,7254 15555,7133 15436,7031
 (Britzer Str. - Uferweg): wassergebundene Decke	Q1 18470,5600 18506,5596
 (Britzer Str. - Uferweg): wassergebundene Decke	Q1 18470,5600 18473,5645
 #: note: am Anfang einige Meter betonierte Rampe
-(Uferweg an der Spree): wassergebundene Decke	Q1 18695,5453 18634,5484
-(Uferweg an der Spree): Betonpflaster	Q0- 18634,5484 18560,5539
-(Uferweg an der Spree): Beton	Q1 18560,5539 18506,5596
-(Uferweg an der Spree): wassergebundene Decke	Q1 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900
-(Uferweg an der Spree): Asphalt/Beton	Q0 18334,5900 18199,5935
-(Uferweg an der Spree - Kaisersteg): wassergebundene Decke	Q1 18413,5799 18339,5853 18326,5850
+(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18695,5453 18634,5484
+(Hasselwerderpark, Uferweg an der Spree): Betonpflaster	Q0- 18634,5484 18560,5539
+(Hasselwerderpark, Uferweg an der Spree): Beton	Q1 18560,5539 18506,5596
+(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900
+(Hasselwerderpark, Uferweg an der Spree): Asphalt/Beton	Q0 18334,5900 18199,5935
+(Hasselwerderpark, Uferweg an der Spree - Kaisersteg): wassergebundene Decke	Q1 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: Gehwegplatten	Q1 10967,17671 10978,17589 11064,17599
 Insel-Rügen-Weg: unbefestigt	Q2 11064,17599 11228,17624 11354,17645
 Insel-Rügen-Weg: Beton	Q1 11069,17562 11064,17599
@@ -12763,7 +12766,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Cjtg8DovYfZefovMR2tp8tprw4hE0Vl5XoJKOqnR/REjNBehL/65-Anlagen/04/B0312ZB1.pdf
 #: osm_watch: way id="24202434" version="25"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2023-03-19
+#: last_checked: 2023-04-14
 #: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
