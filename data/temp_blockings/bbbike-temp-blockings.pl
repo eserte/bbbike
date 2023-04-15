@@ -31121,7 +31121,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-03-31
+#: last_checked: 2023-04-15
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -35678,9 +35678,9 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-04
-#: check_frequency: 60d
-#: next_check: 2023-04-17
+#: last_checked: 2023-04-15
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
 EOF
@@ -36743,7 +36743,7 @@ EOF
      },
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
        until => $isodate2epoch->("2023-04-24 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
-       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt, außerdem Oranienburger Str. zwischen Friedrichstr. und Linienstr. (Gleisbauarbeiten), voraussichtlich bis 24.4.2023',
+       text  => 'Friedrichstr.: Fahrbahn zwischen Johannisstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), voraussichtlich bis 24.4.2023',
 # was: voraussichtlich bis Ende Januar 2023
 # was:      text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
        type  => 'handicap',
@@ -36767,13 +36767,13 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-04-06 vvv
+#: last_checked: 2023-04-15 vvv
 #: next_check: 2023-04-24 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
-Friedrichstr.	q3::inwork; 9212,13471 9225,13389
-Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9246,13235
+# REMOVED (hier nicht mehr) --- Friedrichstr.	q3::inwork; 9212,13471 9225,13389
+# REMOVED (hier nicht mehr) --- Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9246,13235
 Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9254,13171 9246,13235 9225,13389
 # REMOVED (hier nicht mehr) --- Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
@@ -37048,7 +37048,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-06
+#: last_checked: 2023-04-15
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37916,15 +37916,13 @@ EOF
 EOF
      },
      { from  => 1677359677, # 2023-02-25 22:14
-       until => undef, # 1681595999, # 2023-04-15 23:59
+       until => 1681570103, # zumindest die westliche Brückenhälfte und der Anschluss zum Uferweg sind offen --- undef, # 1681595999, # 2023-04-15 23:59
        text  => 'Inselbrücke und Uferweg: Bauarbeiten, Sperrungen, voraussichtlich bis Mitte April 2023, möglicherweise auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: FISCHERINSEL-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424
-#: priority: #B
-#: last_checked: 2023-04-13
-#: next_check: 2023-04-17
+# REMOVED --- #: priority: #B --- #: last_checked: 2023-04-13 --- #: next_check: 2023-04-17
 	2::inwork 10680,11875 10776,11942 10824,11992 10869,11949
 EOF
      },
