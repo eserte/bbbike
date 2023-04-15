@@ -612,7 +612,7 @@ sub handle_file {
     my $file_in_bbd;
     if ($relative_paths) {
 	if ($out_file) {
-	    $file_in_bbd = File::Spec->abs2rel(File::Spec->rel2abs($file), dirname($out_file));
+	    $file_in_bbd = File::Spec->abs2rel(File::Spec->rel2abs(realpath($file)), dirname($out_file));
 	} else {
 	    $file_in_bbd = $file;
 	}
