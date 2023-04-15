@@ -80,6 +80,36 @@ EOF
     is_deeply $s2_geojson->{data}, $s->{data}, 'roundtrip check with area data';
 }
 
+SKIP: {
+    my %expected = (
+	"No URL feature"    => undef,
+	"URL feature"       => [qw(http://example.org/item1)],
+	"Multi URL feature" => [qw(http://example.org/item1 http://example.org/item2)],
+    );
+
+    skip "Need JSON::XS", scalar %expected
+	if !eval { require JSON::XS; 1 };
+
+    my $test_with_urls_data = <<"EOF";
+#: map: polar
+#:
+No URL feature\tX 13.4,52.5 13.5,52.6 13.4,52.6 13.4,52.5
+#: url: http://example.org/item1
+URL feature\tX 13.4,52.5 13.5,52.6 13.4,52.6
+#: url: http://example.org/item1
+#: url: http://example.org/item2
+Multi URL feature\tX 12.4,52.5 12.5,52.6 12.4,52.6
+EOF
+    my $s = Strassen->new_from_data_string($test_with_urls_data, UseLocalDirectives => 1);
+    my $geojson_json = Strassen::GeoJSON->new($s)->bbd2geojson;
+    my $geojson = JSON::XS::decode_json($geojson_json);
+    for my $feature (@{ $geojson->{features} }) {
+	my $properties = $feature->{properties};
+	my $name = $properties->{name};
+	is_deeply $properties->{urls}, $expected{$name}, "urls for '$name'";
+    }
+}
+
 {
     my $example_geojson = <<'EOF';
 { "type": "FeatureCollection",

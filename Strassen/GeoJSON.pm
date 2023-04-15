@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018,2019,2020,2021,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 use Strassen::Core;
 @ISA = qw(Strassen);
@@ -195,6 +195,7 @@ sub bbd2geojson {
 
 	my $name = $r->[Strassen::NAME];
 	my $cat = $r->[Strassen::CAT];
+	my @urls = @{ $self->get_directives->{'url'} || [] };
 
 	my $geometry = (@c > 1
 			? ($cat =~ m{^F:}
@@ -216,6 +217,7 @@ sub bbd2geojson {
 		       properties => {
 				      name => $name,
 				      cat => $cat,
+				      (@urls ? (urls => \@urls) : ()),
 				     }
 		      };
 	push @features, $feature;
