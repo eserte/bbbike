@@ -516,7 +516,7 @@ function doLeaflet() {
 			}
 			if (l) {
 			    l.addTo(map);
-			    l.bindPopup(feature.properties.name);
+			    l.bindPopup(bbdgeojsonProp2Html(feature.properties));
 			}
 		    }
 		    var color = '#f00';
@@ -542,7 +542,7 @@ function doLeaflet() {
 	    // 	return L.circleMarker(latlng, { radius: 8 });
 	    // },
             onEachFeature: function (feature, layer) {
-		layer.bindPopup(feature.properties.name);
+		layer.bindPopup(bbdgeojsonProp2Html(feature.properties));
 		id2marker[feature.properties.id] = layer;
             }
 	});
@@ -617,6 +617,20 @@ function doLeaflet() {
 	};
 	showNextWpt();
     }
+}
+
+function bbdgeojsonProp2Html(prop) {
+    var html = prop.name;
+    if (prop.urls) {
+        html += '<br/>';
+        for(var i = 0; i < prop.urls.length; i++) {
+            html += '<a href="' + prop.urls[i] + '">' + prop.urls[i] + '</a>';
+            if (i < prop.urls.length-1) {
+                html += '<br/>';
+            }
+        }
+    }
+    return html;
 }
 
 function enableGeolocationInMap() {
