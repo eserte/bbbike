@@ -39,7 +39,7 @@ GetOptions(
 	  ) or usage();
 
 my $file = shift || usage();
-my $s = Strassen->new($file);
+my $s = Strassen->new($file, UseLocalDirectives => 1);
 my $s_geojson = Strassen::GeoJSON->new($s);
 if ($bbbgeojsonp) {
     print "// generated with bbd2geojson from BBBike distribution, see\n";
