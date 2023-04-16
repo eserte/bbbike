@@ -233,18 +233,9 @@ EOF
 
     $dockerfile .= "CMD $docker_cmd\n";
 
-    # Need to start docker-machine early on MacOSX, and do also some pre-checking.
+    # Need to install socat on MacOSX, and do also some pre-checking.
     local %ENV = %ENV; # actually needed only for darwin
     if ($^O eq 'darwin') {
-	# If you choose to name your docker-mmachine other than
-	# "default", then you have to set the --docker-machine=...
-	# option to this name.
-	#
-	# Some references:
-	# - https://stackoverflow.com/questions/32174560/port-forwarding-in-docker-machine
-	# - https://github.com/docker/for-mac/issues/483#issuecomment-293833781
-	# - https://stackoverflow.com/a/43918461 (another solution using VNC, not tried yet)
-
 	if (!$ENV{DISPLAY}) {
 	    error "No DISPLAY environment variable --- maybe Xquartz has to be started?";
 	}
@@ -252,28 +243,7 @@ EOF
 	    error "Content of $ENV{DISPLAY} should be path to X socket";
 	}
 	$doit->add_component('brew');
-	$doit->brew_install_packages(qw(socat docker-machine));
-
-	{
-	    chomp(my $status = $doit->info_qx({quiet=>1}, 'docker-machine', 'status', $opt{'docker-machine'}));
-	    my $docker_machine_found;
-	    if ($status eq 'Running') {
-		info "docker-machine '" . $opt{'docker-machine'} . "' already running";
-		$docker_machine_found = 1;
-	    }
-	    if (!$docker_machine_found) {
-		$doit->system('docker-machine', 'start', $opt{'docker-machine'});
-	    }
-	}
-	for my $env_line (split /\n/, $doit->info_qx({quiet=>1}, 'docker-machine', 'env', $opt{'docker-machine'})) {
-	    if ($env_line =~ m{^export\s+([^=]+)=(.*)$}) {
-		my($key, $val) = ($1, $2);
-		if ($val =~ m{^"(.*)"$}) {
-		    $val = $1;
-		}
-		$doit->setenv($key, $val);
-	    }
-	}
+	$doit->brew_install_packages(qw(socat));
     }
 
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
@@ -306,8 +276,6 @@ EOF
 	}
     }
 
-    my $XSOCK = '/tmp/.X11-unix';
-    my $XAUTH = '/tmp/.docker.xauth';
     my @docker_run_args =
 	(
 	 # SYS_PTRACE is required for strace --- see
@@ -330,32 +298,24 @@ EOF
 	}
 	$scope_cleanups->add_scope_cleanup(sub { info "Killing socat process $socat_pid"; kill KILL => $socat_pid });
 
-	my $ssh_port_fwd_pid = fork;
-	error "Can't fork: $!" if !defined $ssh_port_fwd_pid;
-	if ($ssh_port_fwd_pid == 0) {
-	    my @cmd = ('docker-machine', 'ssh', $opt{'docker-machine'}, '-R', "$socat_port:localhost:$socat_port", '-N');
-	    info "Running @cmd";
-	    exec @cmd;
-	    die "Can't run <@cmd>: $!";
-	}
-	$scope_cleanups->add_scope_cleanup(sub { info "Killing ssh process $ssh_port_fwd_pid"; kill KILL => $ssh_port_fwd_pid });
-
-	# Race condition! Hopefully socat & ssh are faster than the following docker command!
+	# Race condition! Hopefully socat is faster than the following docker command!
 	$doit->system('docker', 'run', '-ti',
 		      @docker_run_args,
 		      '--network=host',
-		      '-p', $socat_port,
 		      @volume_options,
-		      '-e', "DISPLAY=$display",
+		      '-e', "DISPLAY=host.docker.internal$display",
 		      $tag,
 		     );
     } else {
+	my $XSOCK = '/tmp/.X11-unix';
+	my $XAUTH = '/tmp/.docker.xauth';
 	$doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
 	$doit->run(['docker', 'run', '-ti',
 		    @docker_run_args,
 		    '-v', "$XSOCK:$XSOCK", '-v', "$XAUTH:$XAUTH",
 		    @volume_options,
-		    '-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}", $tag,
+		    '-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}",
+		    $tag,
 		   ]);
     }
 }
@@ -962,7 +922,6 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       distver => 'latest',
 	       src     => 'local',
 	       debug   => 0,
-	       'docker-machine' => 'default',
 	       'bbbike-args' => '',
 	       'install-recommends' => 1,
 	       'install-suggests' => 0,
@@ -975,7 +934,6 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "distver|distversion=s",
 	       "src=s",
 	       'debug!',
-	       'docker-machine=s',
 	       'bbbike-args=s',
 	       'install-recommends!',
 	       'install-suggests!',
