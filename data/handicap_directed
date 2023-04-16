@@ -201,3 +201,6 @@ Treffurter Str. -> Rhinstr./Landsberger Allee: Umwege wegen Gleisbauarbeiten	DH:
 Rhinstr./Landsberger Allee -> Treffurter Str.: Umwege wegen Gleisbauarbeiten	DH:len=110:h=q2,160 18057,14549 18119,14599
 Oderbruchstr. -> Karl-Vesper-Str.: Ampel auf der linken Seite benutzen, Umwege	DH:len=50:tl 14243,13890 14218,13834 14205,13755
 Karl-Vesper-Str. -> Oderbruchstr.: Ampel auf der rechten Seite benutzen, Umwege	DH:len=50:tl 14205,13755 14218,13834 14243,13890
+Tempelhofer Weg: Umweg, Bordsteine	DH:len=50:h=q3,50:kerb_down:kerb_up 12626,5057 12507,5228 12214,5554
+Tempelhofer Weg -> Gradestr.: Umweg, Bordsteine	DH:len=50:h=q3,50:kerb_down:kerb_up 12626,5057 12507,5228 12336,5219
+Gradestr.: vermuteter Umweg	DH:len=50:h=q3,50 12336,5219 12507,5228 12582,5232

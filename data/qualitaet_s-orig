@@ -538,7 +538,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2023-03-11
+#: last_checked: 2023-04-16
 #: check_frequency: 180d
 #: next_check: 2024-06-30
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
@@ -892,7 +892,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2023-03-15
+#: last_checked: 2023-04-16
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1707,7 +1707,8 @@ Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
 Werderstr.: Kopfsteinpflaster	Q2; 8996,5823 8996,5956
 Werderstr.: Asphalt	Q0; 8996,5956 8996,5823
-Wikingerufer: Kopfsteinpflaster	Q2- 5354,12552 5376,12661 5376,12781 5341,12875 5350,12906
+#: historical_note: bis 2022/2023 etwas schlechter (Q2-)
+Wikingerufer: Kopfsteinpflaster	Q2 5354,12552 5376,12661 5376,12781 5341,12875 5350,12906
 Wullenweberstr.: eher unangenehmes Kopfsteinpflaster	Q2- 5354,12552 5372,12538 5427,12495 5497,12448 5524,12430 5657,12339
 (Gemeindewäldchen): Parkweg	Q1 452,3133 71,3179
 Beerenstr.: Kopfsteinpflaster	Q2 71,3179 -107,3194 -179,3204 -300,3219 -434,3236 -530,3241 -654,3249 -779,3257 -1026,3321
@@ -3164,7 +3165,9 @@ Wassermannstr.: asphaltiert	Q0 20776,3753 20637,3919 20583,3983 20522,4056 20467
 #: by: Alexander Lucas:
 #: confirmed_by: srt
 Wassermannstr.: asphaltiert	Q0 20924,3577 20776,3753
-Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 7103,11247 6851,11346
+Köbisstr.: Kleinsteinpflaster	Q1- 7160,11225 7103,11247
+#: historical_note: glatte Gehwegplatten, Q0 (mittlerweile deutlich schlechter)
+Köbisstr.: Gehwegplatten, einige Schäden	Q1+ 7103,11247 6851,11346
 zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
 Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
@@ -13070,6 +13073,8 @@ St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0- 10216,12706 10287,12
 (Jenbacher Weg - Mauerweg): Asphalt	Q0+ 6411,533 6413,520 6401,464 6427,395 6424,346 6388,241 6357,215
 Stindestr.: Kopfsteinpflaster	Q2 6272,4716 6212,4622
 Großbeerenstr.: Asphalt mit einigen Schäden	Q1+; 8602,2377 8655,2556 8674,2627
+Blücherstr.: Asphalt, einige Schäden	Q0-; 10580,9361 10306,9640
+Agricolastr.: Asphalt	Q0 5376,12781 5543,12664 5673,12581 5797,12494
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14045,7 +14050,7 @@ Rellstabweg: Verbundsteinpflaster	Q1 -6514,13017 -6524,13086 -6395,13121 -6299,1
 Kormoranweg: Asphalt	Q0 14023,3276 14056,3374 14141,3614 14189,3732 14233,3840 14290,3908
 #: corrected_by: srt (Verbundsteinpflaster -> ...)
 Devrientweg: schlechtes Kopfsteinpflaster, Radwege mit altem Asphalt	Q2 5083,3436 5244,3348 5371,3279
-#: confirmed_by: Editha Künzel
+#: confirmed_by: Editha Künzel, srt
 Berlichingenstr.: Kopfsteinpflaster	Q2 4985,13470 4972,13804 4963,13969
 Rappoltsweilerstr.: grobes Kopfsteinpflaster	Q3 1221,4071 1348,4019 1380,3986 1451,4026
 Beifußweg: mäßiger Beton	Q1 15307,3683 15611,3448 15921,3215
@@ -18820,6 +18825,7 @@ Wachsmuthstr.: Asphalt	Q0 4113,23363 4201,23397
 Langenbeckstr.: Asphalt	Q0 24688,9918 24793,9860 25018,9735
 # 
 #: by: Christina Hopmann:
+#: confirmed_by: srt
 Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11650,6157 11651,6192 11628,6240
 # 
 #: by: Volkmar (vloebe):
@@ -25337,7 +25343,8 @@ Langfuhrer Allee: guter Asphalt	Q0 31358,3801 31518,3725 31577,3698 31661,3665
 Roseggerstr. (Mahlsdorf): guter Asphalt	Q0 23661,8597 23860,8480
 # 
 #: by: Katja (ondima):
-Unionstr.: guter Asphalt	Q0 5708,14077 5782,14067
+#: corrected_by: srt (guter Asphalt, Q0 -> ...)
+Unionstr.: Gehhwegplatten, Fahrbahn mit Kopfsteinpflaster	Q2+ 5708,14077 5782,14067
 # 
 #: by: Bernhard Albers:
 #: confirmed_by: srt
@@ -31882,7 +31889,7 @@ Einmündungsbereich asphaltiert	Q0 8010,14014
 Einmündungsbereich asphaltiert	Q0 7965,14081
 Kreuzungsbereich asphaltiert	Q0 8601,13584
 Kreuzungsbereich asphaltiert	Q0 8674,13593
-Einmündungsbereich mit Kopfsteinpflaster	Q2- 5376,12781
+Einmündungsbereich mit Kopfsteinpflaster	Q2 5376,12781
 Wendehammerbereich asphaltiert	Q0 5657,12339
 #: by: kartaview
 Kreuzungsbereich betoniert	Q0- 1644,25620
@@ -32104,4 +32111,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 5452,1940
 Einmündungsbereich mit Kopfsteinpflaster	Q2 5474,1940
 Einmündungsbereich asphaltiert	Q0 5923,423
 Einmündungsbereich asphaltiert	Q0 5929,394
+Kreuzungsbereich asphaltiert	Q0 5673,12581
+Kreuzungsbereich asphaltiert	Q0 5543,12664
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 7103,11247
 #: ignore ^^^

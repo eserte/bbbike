@@ -461,3 +461,29 @@ Rhinstr./Landsberger Allee -> Treffurter Str.: Umwege wegen Gleisbauarbeiten	DH:
 Oderbruchstr. -> Karl-Vesper-Str.: Ampel auf der linken Seite benutzen, Umwege	DH:len=50:tl 14243,13890 14218,13834 14205,13755
 Karl-Vesper-Str. -> Oderbruchstr.: Ampel auf der rechten Seite benutzen, Umwege	DH:len=50:tl 14205,13755 14218,13834 14243,13890
 # 
+#: by: https://viz.berlin.de/2023/01/gradestr-rohrbruch/
+#: by: https://berliner-abendblatt.de/2023/01/17/verkehrschaos-in-britz-auffahrt-zur-a100-wochenlang-gesperrt/
+#: by: https://berliner-abendblatt.de/2023/01/18/gradestrasse-so-geht-es-an-der-chaos-kreuzung-weiter/
+#: by: https://nitter.cz/VIZ_Berlin/status/1615670148932816901#m
+#: by: https://nitter.cz/pic/orig/media%2FFmwDTsQX0AAX3cL.jpg
+#: by: https://nitter.cz/pic/orig/media%2FFmwDTrpX0AM16y_.jpg
+#: by: https://nitter.cz/pic/orig/media%2FFmwDTq6XoAAq6Gr.jpg
+#: by: https://nitter.it/pic/orig/media%2FFmwDINLWYAEJjDv.jpg
+#: by: https://berliner-abendblatt.de/kiez-news/neukolln/gradestrasse-vollsperrung-bis-ende-mai-id216562
+#: source_id: viz2021:13.418865,52.452027,14.02.2023,15:00 (damit verbundene Baustelle an der A100-Auffahrt) (bis 10.03.2023) (inaktiv)
+#: source_id: viz2021:13.43298,52.45242,16.01.2023,15:34 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.416363,52.451543,16.01.2023,14:00 (damit verbundene Baustelle an der A100-Auffahrt) (inaktiv) (bis 24.2.2023) (inaktiv)
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) vvv
+#: source_id: bvg2021:170#BVG315316_0 vvv
+#: last_checked: 2023-04-16 vvv
+#: next_check: 2023-05-31 vvv
+#: valid: -20230531 vvv
+Tempelhofer Weg: Umweg, Bordsteine	DH:len=50:h=q3,50:kerb_down:kerb_up 12626,5057 12507,5228 12214,5554
+Tempelhofer Weg -> Gradestr.: Umweg, Bordsteine	DH:len=50:h=q3,50:kerb_down:kerb_up 12626,5057 12507,5228 12336,5219
+Gradestr.: vermuteter Umweg	DH:len=50:h=q3,50 12336,5219 12507,5228 12582,5232
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
+#: source_id ^^^
+# 

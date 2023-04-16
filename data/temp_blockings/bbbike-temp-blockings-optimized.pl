@@ -5528,7 +5528,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: add_fragezeichen: Ist der Uferweg noch immer wegen Bauarbeiten gesperrt? vvv
-#: last_checked: 2023-04-06 vvv
+#: last_checked: 2023-04-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4993234" version="21"
@@ -5545,7 +5545,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1643583600,
          'id' => 3507,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
-         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang April 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
+         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Mitte April 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5714,7 +5714,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-22 (osm)
+#: last_checked: 2023-04-16
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5899,9 +5899,10 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
+#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen 2023-04-16 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="791796343" version="5"
-#: last_checked: 2023-02-06 (daf)
+#: last_checked: 2023-04-16
 #: check_frequency: 30d
 	q4::inwork 4961,12940 4932,12968
 ',
@@ -6818,26 +6819,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2023/01/16/ein-monat-nach-platzen-des-aquariums-schaden-sehr-gross/
-#: by: https://berliner-abendblatt.de/2023/01/21/aquarium-teile-des-zerstoerten-zylinders-aus-hotel-entfernt/
-#: by: https://berliner-abendblatt.de/kiez-news/mitte/geplatzes-aquarium-mehr-als-500-bruchstuecke-wurden-entfernt-id208661 (Heiligegeistgasse bis Mitte März 2023 freigeräumt)
-#: by: https://berliner-abendblatt.de/kiez-news/mitte/nach-chaos-wegen-aquarium-ddr-museum-mit-neuem-konzept-id212321
-#: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
-#: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
-#: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
-#: priority: #C
-#: last_checked: 2023-04-06
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-03-15
-	2::inwork 10359,12634 10351,12646 10305,12717
-',
-         'from' => undef,
-         'id' => 3704,
-         'text' => 'Heiligengeistgasse: Sperrung nach dem Platzen des Aquadoms, Dauer der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Ist die Verlängerte Neukladower Allee weiterhin gesperrt?
 #: XXX Nach den Bauarbeiten wahrscheinlich besserer Asphalt -> in qualitaet_s eintragen!
@@ -6878,7 +6860,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: osm_watch: way id="1155654228" version="3"
-#: last_checked: 2023-04-09 (osm)
+#: last_checked: 2023-04-16
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 ',
          'from' => undef,
@@ -6915,17 +6897,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (B)
-	q4::inwork 20113,3408 20166,3344
-',
-         'from' => 1673984980,
-         'id' => 3711,
-         'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1615325171530846214#m',
-         'text' => 'Anna-Seghers-Str.: Bauarbeiten nördlich der Radickestr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte April 2023',
-         'type' => 'handicap',
-         'until' => 1681595999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7002,17 +6974,7 @@ Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542
          'until' => 1697814000
        },
        undef,
-       {
-         'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
-	2::inwork 5651,8218 5730,8207 5700,8241 5687,8280 5699,8308
-',
-         'from' => 1676329200,
-         'id' => 3725,
-         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
-         'text' => 'Volkspark Wilmersdorf: Wege werden saniert, mögliche Sperrungen, vom 15. Februar 2023 bis voraussichtlich Mitte April 2023',
-         'type' => 'gesperrt',
-         'until' => 1681595999
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023)
 #: source_id: bvg2021:160#BVG316004_0 (kein Ende-Datum)
@@ -7134,22 +7096,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: OSKAR-2023
-#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-04-14
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2023-04-14
-	q3::inwork 17793,8012 17762,7931
-# REMOVED (hier nicht mehr) ---	q3::inwork 17803,8079 17808,8042 17793,8012
-',
-         'from' => 1677610008,
-         'id' => 3738,
-         'text' => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
-         'type' => 'handicap',
-         'until' => 1681595999
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/schlosspark-buch-kein-eingang-wegen-bauarbeiten-id210739
