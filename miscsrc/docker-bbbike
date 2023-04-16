@@ -750,9 +750,6 @@ EOF
 	my $tag = "bbbike-deb-$opt{dist}-$opt{distver}";
 	$doit->system("docker", "build", "--tag", $tag, ".");
 	$doit->system("docker", "run", "-v", "/tmp:/hosttmp", $tag);
-	if ($^O eq 'darwin') { # XXX actually for any system using docker-machine
-	    $doit->system("docker-machine", "scp", "default:/tmp/$debfile", "/tmp");
-	}
 	$doit->system("ls", "-al", "/tmp/$debfile");
     } $docker_context_dir;
 }
