@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015, 2016, 2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015, 2016, 2020, 2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,12 +18,12 @@ use 5.006; # autovivified fh
 use strict;
 # Setting $OLD_AGREP to a true value really means: use String::Approx
 # instead or no agrep at all.
-use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
+use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $DEBUG $sep);
 use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = 1.78;
+$VERSION = 1.79;
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -262,6 +262,7 @@ sub look {
 	    close PLZ;
 	    my %res;
 	    if (@data) {
+		warn "DEBUG[PLZ.pm]: about to call String::Approx::amatch() on data from '$file' with pattern '$str' and allowed error '$args{Agrep}'...\n" if $DEBUG;
 		foreach (map { substr $_, SA_ANCHOR_LENGTH }
 			 String::Approx::amatch(SA_ANCHOR_HACK . $str,
 						['i', $args{Agrep}],
@@ -915,6 +916,7 @@ sub _call_ext_cmd_unix {
 	# (which is probably a bug, because dictionaries are not
 	# used at all)
 	$ENV{HOME} = "/something";
+	warn "DEBUG[PLZ.pm]: _call_ext_cmd_unix with @$cmdref...\n" if $DEBUG;
 	exec @$cmdref;
 	warn "While doing @$cmdref: $!";
 	require POSIX;

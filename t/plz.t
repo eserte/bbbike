@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -77,6 +77,9 @@ my $do_levenshtein;
 if (!GetOptions("create!" => \$create,
 		"xxx!" => \$goto_xxx,
 		"v" => \$PLZ::VERBOSE,
+		"debug" => sub {
+		    $PLZ::DEBUG = 1;
+		},
 		"max=i" => \$max,
 		"externfirst!" => \$extern_first,
 		"levenshtein!" => \$do_levenshtein,
