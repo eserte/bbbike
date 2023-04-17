@@ -75,7 +75,7 @@ if (0) { # until Apr 2023
 	my $date_row = "$from - " . ($dd->{endDate} // "?");
 	my $title_row = remove_boring_unicode(join(" - ", grep { defined } $dd->{stationOne}{title}, $dd->{stationTwo}{title}));
 	my $text_without_line = remove_boring_unicode($dd->{content});
-	my $sev = $dd->{isSev} ? 'mit SEV' : '';
+	my $sev = $dd->{isSev} ? 'ja' : '';
 	my $line;
 	if ($text_without_line =~ m{^$qr}) {
 	    $line = $1;
