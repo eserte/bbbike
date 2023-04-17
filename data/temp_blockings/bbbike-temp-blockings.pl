@@ -36319,7 +36319,7 @@ EOF
 #: note: Linienverkehr ist frei, nur auf dem östliche Abschnitt existiert ein einbahniger Abschnitt, ggfs. kann man als Radfahrer doch passieren
 #: by: https://nitter.cz/VIZ_Berlin/status/1562303691562041344#m
 #: by: https://nitter.cz/pic/media%2FFa19ZroWYAAUS6d.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.377266,52.517839,19.01.2023,12:00 (nur noch für Kfz-Verkehr) (bis 17.04.2023)
+#: source_id: viz2021:13.377266,52.517839,19.01.2023,12:00 (nur noch für Kfz-Verkehr) (bis 17.04.2023) (inaktiv)
 	q3::inwork 8775,12457 8540,12420
 EOF
      },
@@ -38011,7 +38011,7 @@ EOF
 EOF
      },
      { from  => 1677610008, # 2023-02-28 19:46
-       until => 1681595999, # 2023-04-15 23:59
+       until => undef, # 1681595999, # 2023-04-15 23:59
        text  => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
        type  => 'handicap',
        data  => <<EOF,

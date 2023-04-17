@@ -1494,12 +1494,7 @@ Südring, Virchow-Klinikum	1 6252,14812 6231,14952
 # 
 Am Feuchten Winkel	1 12020,19333 11937,19175
 # 
-#: by: osm
-#: XXX Wann wird die alte Brücke endgültig demontiert?
-#: osm_watch: way id="883242877" version="2"
-#: last_checked: 2023-04-09
-#: check_frequency: 120d
-Schmöckwitzwerdersteg: die alte Querung ist nicht mehr nutzbar	2 30534,-3105 30546,-3072
+# REMOVED (Brücke wird abgerissen) --- #: by: osm --- #: XXX Wann wird die alte Brücke endgültig demontiert? --- #: osm_watch: way id="883242877" version="2" --- #: last_checked: 2023-04-09 --- #: check_frequency: 120d --- Schmöckwitzwerdersteg: die alte Querung ist nicht mehr nutzbar	2 30534,-3105 30546,-3072
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2648,8 +2643,8 @@ tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20 13438,10
 tragen (Treppe, 12 Stufen)	0:20 7370,6451
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19150,7320
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19183,7299
-schieben (Rampe Schmöckwitzwerdersteg)	0:30 30534,-3105
-schieben (Rampe Schmöckwitzwerdersteg)	0:30 30546,-3072
+# REMOVED (Brücke wird abgerissen) --- schieben (Rampe Schmöckwitzwerdersteg)	0:30 30534,-3105
+# REMOVED (Brücke wird abgerissen) --- schieben (Rampe Schmöckwitzwerdersteg)	0:30 30546,-3072
 #: by: Fridtjof Gramsch (Anzahl der Stufen)
 #: corrected_by: srt (12 -> 14)
 tragen (14 Stufen)	0:25 3619,9331
@@ -4323,7 +4318,7 @@ Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="719023971" version="11"
-#: last_checked: 2023-03-17
+#: last_checked: 2023-04-16 (daf)
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: osm_watch: way id="719023970" version="11"
 #: last_checked: 2023-03-17
@@ -4346,7 +4341,7 @@ Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 
 #: XXX Wird der Weg noch hergerichtet oder endgültig zurückgebaut? Laut osm existiert hier ein Rettungsweg, Rasengittersteine
 #: osm_watch: way id="152046369" version="15"
 #: priority: #C
-#: last_checked: 2023-03-17
+#: last_checked: 2023-04-16 (daf)
 #: check_frequency: 60d
 (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
 # 
@@ -4397,7 +4392,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="21"
 #: priority: #C
-#: last_checked: 2023-04-01
+#: last_checked: 2023-04-17
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
@@ -4502,7 +4497,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1302846.php
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bahnhof-schoeneweide-vorplatz-soll-schoener-werden-id211216
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.phphttps://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763
 #: last_checked: 2023-04-10 (krickstadt)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-20
@@ -4809,7 +4805,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
-#: last_checked: 2023-01-17 (daf)
+#: last_checked: 2023-04-17
 #: check_frequency: 90d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 

@@ -7096,7 +7096,22 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: OSKAR-2023
+#: XXX Halteverbotsschilder gelten bis zum 14.4.2023
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2023-04-14
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2023-04-14
+	q3::inwork 17793,8012 17762,7931
+# REMOVED (hier nicht mehr) ---	q3::inwork 17803,8079 17808,8042 17793,8012
+',
+         'from' => 1677610008,
+         'id' => 3738,
+         'text' => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/schlosspark-buch-kein-eingang-wegen-bauarbeiten-id210739
