@@ -241,6 +241,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.preussischer-kulturbesitz.de/news-detail/article/2020/11/18/kulturforum-bauarbeiten-fuer-museum-des-20-jahrhunderts-der-nationalgalerie-beginnen.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/museum-der-moderne-kulturforum.123/page-3#post-14361 (bis 2026?)
+#: by: https://www.sueddeutsche.de/wirtschaft/bau-berlin-museen-im-klimakampf-stadt-als-vorbild-fuer-nachhaltigkeit-dpa.urn-newsml-dpa-com-20090101-230418-99-357346 (bis 2027?)
 # REMOVED (broken) --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: by: srt
 #: XXX: temporäre Radspur
@@ -249,7 +250,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2023-04-16
 #: check_frequency: 180d
-#: next_check: 2026-01-01
+#: next_check: 2027-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8031,11249 8000,11137
 	RW1; 8000,11137 7980,11070
@@ -835,8 +836,9 @@ Poller	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
 #: by: https://nitter.cz/pic/media%2FFbAMK1wXkAAdDLa.jpg%3Fname%3Dorig
 #: note: außer an Bushaltestellen und Ausfahrten
 Poller	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
-#: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein
-	RW0; 7811,15096 7911,15008
+	RW4; 7669,15227 7745,15160
+	RW3; 7745,15160 7811,15096 7911,15008
+# REMOVED --- #: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein ---	RW0; 7811,15096 7911,15008
 # 
 für Radfahrer freigegebene Busspur gilt Mo-Sa 6-19 Uhr	RW1;RW1 7911,15008 7533,14702 7514,14687 7480,14660 7458,14643
 #: note: Busspur für Radfahrer nicht freigegeben, aber keine Radwegbenutzungspflicht
@@ -893,7 +895,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-03-29
+#: last_checked: 2023-04-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1887,7 +1889,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-04-15 vvv
+#: last_checked: 2023-04-18 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -2610,7 +2612,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-04-13
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2844,14 +2846,14 @@ asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-18
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen
 # REMOVED XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-18
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -7021,7 +7023,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-03-28 vvv
+#: last_checked: 2023-04-18 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

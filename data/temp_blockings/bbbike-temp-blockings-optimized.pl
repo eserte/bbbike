@@ -5560,7 +5560,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2023-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="34"
+#: osm_watch: way id="4395450" version="35"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="20"
 	2::inwork 6631,12707 6694,12627
@@ -5925,7 +5925,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -6390,7 +6390,30 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'until' => 1685718000
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
+#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
+#: by: https://nitter.cz/VIZ_Berlin/status/1639176473285394432#m
+#: by: https://nitter.net/pic/orig/media%2FFr6HpwIWcAAZJMb.jpg
+#: by: https://nitter.cz/VIZ_Berlin/status/1643455922449289218#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMzeHZjQVhzQU1MNFVPLmpwZw==
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-charlottenburg-wilmersdorf.31/page-10#post-20412
+#: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
+#: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
+#: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
+#: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023) (bis 21.04.2023) (inaktiv)
+#: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023) (inaktiv)
+#: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023) (bis 19.04.2023)
+#: source_id: viz2021:13.322716,52.488699,19.04.2023,07:00 (bis 21.04.2023)
+	q4::inwork 4920,9000 4920,9029 4957,9437
+',
+         'from' => 1681794000,
+         'id' => 3650,
+         'source_id' => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
+         'text' => 'Uhlandstr.: Sperrung der Fahrbahn zwischen Güntzelstr. und Fechnerstr., vom 19.04.2023 07:00 bis 21.04.2023 20:00',
+         'type' => 'handicap',
+         'until' => 1682100000
+       },
        undef,
        undef,
        undef,
@@ -7395,6 +7418,17 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'text' => 'Bahnübergang zwischen Zossen und Nächst Neuendorf: Sperrung vom 17.04.2023 - 6:00 Uhr bis 19.04.2023 - 18:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1681920000
+       },
+       {
+         'data' => '#: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
+	q4 10083,10192 10226,10145 10362,10120 10521,10126
+',
+         'from' => undef,
+         'id' => 3768,
+         'permanent' => 1,
+         'text' => 'Am Landwehrkanal: Grünanlage, Radfahren nicht erlaubt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

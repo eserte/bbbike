@@ -34859,7 +34859,7 @@ EOF
 #: last_checked: 2023-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="34"
+#: osm_watch: way id="4395450" version="35"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="20"
 	2::inwork 6631,12707 6694,12627
@@ -35679,7 +35679,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -36867,9 +36867,9 @@ EOF
 	q4::inwork 2641,12458 2658,12312
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-04 06:00:00"), # 1665291600, # 2022-10-09 07:00
-       until => $isodate2epoch->("2023-04-06 20:00:00"), # 1680442770, # entfernt, da kein Verbot erkennbar, zumindest am südlichen Ende --- $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
-       text  => 'Uhlandstr.: Sperrung der Fahrbahn zwischen Güntzelstr. und Fechnerstr., vom 05.04.2023 06:00 bis 06.04.2023 20:00',
+     { from  => $isodate2epoch->("2023-04-18 07:00:00"), # 1665291600, # 2022-10-09 07:00
+       until => $isodate2epoch->("2023-04-21 20:00:00"), # 1680442770, # entfernt, da kein Verbot erkennbar, zumindest am südlichen Ende --- $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
+       text  => 'Uhlandstr.: Sperrung der Fahrbahn zwischen Güntzelstr. und Fechnerstr., vom 19.04.2023 07:00 bis 21.04.2023 20:00',
        type  => 'handicap',
        source_id => 'viz2021:13.322705,52.4884,10.10.2022,07:00', # inaktiv
        data  => <<EOF,
@@ -36885,7 +36885,8 @@ EOF
 #: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023) (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023) (inaktiv)
-#: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023)
+#: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023) (bis 19.04.2023)
+#: source_id: viz2021:13.322716,52.488699,19.04.2023,07:00 (bis 21.04.2023)
 	q4::inwork 4920,9000 4920,9029 4957,9437
 EOF
      },
@@ -38390,6 +38391,16 @@ EOF
        source_id => '237200773',
        data  => <<EOF,
 	2::inwork 13271,-20531 13412,-20513 13526,-20548
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Landwehrkanal: Grünanlage, Radfahren nicht erlaubt',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
+	q4 10083,10192 10226,10145 10362,10120 10521,10126
 EOF
      },
     );
