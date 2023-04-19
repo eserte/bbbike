@@ -1096,7 +1096,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-19
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2964,9 +2964,8 @@ Eschengraben: Beton	Q1 11755,17216 11778,17066
 #: by: rjoop: vvv
 #: note: "stark aufgefaltet", "Q4"
 #: corrected_by: osm (schlechter Asphalt, extreme Wurzelhebungen, Q3 -> compacted)
-#: XXX Genaue Qualität überprüfen (bei osm weiterhin smoothness=bad)
-#: osm_watch: way id="80883496" version="17"
-(Mauerweg Rudow): unbefestigt	Q2 16997,-663 17076,-644 17236,-602
+# REMOVED --- #: XXX Genaue Qualität überprüfen (bei osm weiterhin smoothness=bad) --- #: osm_watch: way id="80883496" version="17"
+(Mauerweg Rudow): wassergebundene Decke	Q1 16997,-663 17076,-644 17236,-602
 (Bucher Teiche - Hobrechtsfelde): Feldweg, zweispurig	Q2 14497,26727 14494,26854 14567,27165 14660,27310 14699,27471
 (Bucher Teiche - Hobrechtsfelde): Waldweg	Q2 14699,27471 14759,27468 15076,27753 15108,27979 15777,28037
 (Bucher Teiche - Schönerlinder Chaussee): wassergebundene Decke	Q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -6190,10 +6189,7 @@ Smetanastr.: unbefestigte Straße	Q2 14300,15424 14195,15604
 (Antonplatz - Bizetstr.): Gehwegplatten	Q0- 13484,15893 13524,15786
 (Antonplatz - Bizetstr.): Gehwegplatten/Kleinsteinpflaster	Q1+ 13508,15912 13539,15859 13519,15849 13540,15792
 Grünkardinalweg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,19947 12864,19991 12719,20065 12586,20131
-#: by: https://nitter.cz/VIZ_Berlin/status/1587373430076329989#m
-#: add_fragezeichen: Ist die Deckschicht nach den Bauarbeiten besser geworden?
-#: osm_watch: way id="26526387" version="16"
-#: next_check: 2022-11-04
+# REMOVED (keine Verbesserung) --- #: by: https://nitter.cz/VIZ_Berlin/status/1587373430076329989#m --- #: add_fragezeichen: Ist die Deckschicht nach den Bauarbeiten besser geworden? --- #: osm_watch: way id="26526387" version="16" --- #: last_checked: 2023-04-12 (mapillary) --- #: next_check: 2022-11-04
 Grünkardinalweg (Unterführung): schlechtes Kopfsteinpflaster	Q3 12586,20131 12547,20154
 #: note: aus der Bahn gesehen:
 Karestr.: Asphalt	Q0 15453,24474 15414,24418 15344,24315
@@ -10729,8 +10725,8 @@ Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
-(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10061,15775 10045,15754
-(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10045,15754 10079,15661
+(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10050,15824
+(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10050,15824 10061,15775 10045,15754 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
 # REMOVED --- (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10091,15630 10070,15624 10162,15349
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke, teilweise Schotter	Q2+ 10091,15630 10155,15473

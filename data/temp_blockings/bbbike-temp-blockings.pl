@@ -26373,6 +26373,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023)
 #: priority: #A
 #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
@@ -28269,10 +28270,11 @@ EOF
 #: by: https://www.eichwalde.de/wp-content/uploads/2022/05/Boten_02_2022.pdf (bis Ende 2022 oder 2023)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/deutsche-bahn-legt-zeitplan-fuer-baustelle-am-bahnhof-zeuthen-vor-PLTNQXWDNV37DD7HLPDMVTFL6I.html (bis Mai 2023)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-fussgaengertunnel-am-bahnhof-im-rohbau-fertig-freigabe-mai-2023-geplant-ITXXXXQB35TUQUAUQ5F7PVVHKE.html
+#: by: https://www.bahninfo-forum.de/read.php?9,672773,765387#msg-765387 (bis Juli 2023)
 #: osm_watch: way id="36936021" version="7" brb
 #: last_checked: 2022-03-12 (mapillary)
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2023-05-31
+#: next_check: 2023-07-31
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 EOF
      },
@@ -36885,7 +36887,7 @@ EOF
 #: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,24.03.2023,10:00 (bis 17.04.2023) (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023) (inaktiv)
-#: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023) (bis 19.04.2023)
+#: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023) (bis 19.04.2023) (inaktiv)
 #: source_id: viz2021:13.322716,52.488699,19.04.2023,07:00 (bis 21.04.2023)
 	q4::inwork 4920,9000 4920,9029 4957,9437
 EOF
@@ -37101,7 +37103,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
-#: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023)
+#: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
 #: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
@@ -37667,7 +37669,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-01-14
+#: last_checked: 2023-04-13 (mapillary)
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -37998,7 +38000,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: last_checked: 2023-04-04
+#: last_checked: 2023-04-13 (mapillary)
 	q3::inwork 13286,16267 13033,16387
 EOF
      },
@@ -38388,7 +38390,7 @@ EOF
        until => 1681920000, # 2023-04-19 18:00
        text  => 'Bahnübergang zwischen Zossen und Nächst Neuendorf: Sperrung vom 17.04.2023 - 6:00 Uhr bis 19.04.2023 - 18:00 Uhr',
        type  => 'gesperrt',
-       source_id => '237200773',
+       source_id => '237200773', # inaktiv
        data  => <<EOF,
 	2::inwork 13271,-20531 13412,-20513 13526,-20548
 EOF
@@ -38401,6 +38403,15 @@ EOF
        data  => <<EOF,
 #: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
 	q4 10083,10192 10226,10145 10362,10120 10521,10126
+EOF
+     },
+     { from  => 1681711200, # 2023-04-17 08:00
+       until => 1685714400, # 2023-06-02 16:00
+       text  => 'Ortsdurchfahrt Lehnitz: Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, von 18.04.2023 08:00 Uhr bis 02.06.2023 16:00 Uhr',
+       type  => 'handicap',
+       source_id => 'LS/221-E/23/039',
+       data  => <<EOF,
+	q4::inwork 976,37089 737,37218 554,37231 529,37229 346,37232
 EOF
      },
     );
