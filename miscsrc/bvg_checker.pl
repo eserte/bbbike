@@ -118,25 +118,36 @@ sub find_active_sourceids {
 # Valid since Apr 2023
 # Still using "bvg2021:" source_id prefix
 sub find_active_sourceids_bvg2023 {
-    my $disruption_reports_query_url = 'https://www.bvg.de/disruption-reports/notifications/all';
+    my $disruption_reports_query_url_pattern = sub { my %opts = @_; 'https://www.bvg.de/disruption-reports/notifications/all?showScheduled=true&page=' . $opts{page} };
     require LWP::UserAgent;
     require JSON::XS;
 
     my $ua = LWP::UserAgent->new;
-    my $resp = $ua->get($disruption_reports_query_url);
-    die "Request to $disruption_reports_query_url failed:\n" . $resp->dump
-	if !$resp->is_success;
-    my $json = $resp->decoded_content;
+
+    my $page = 1;
+    my $max_pages;
+    my @disruptions;
+    while () {
+	my $disruption_reports_query_url = $disruption_reports_query_url_pattern->(page => $page);
+	my $resp = $ua->get($disruption_reports_query_url);
+	die "Request to $disruption_reports_query_url failed:\n" . $resp->dump
+	    if !$resp->is_success;
+	my $json = $resp->decoded_content;
+	my $data = JSON::XS::decode_json($json);
+	push @disruptions, @{ $data->{elements} };
+	$max_pages = $data->{numPages};
+	$page++;
+	last if $page > $max_pages;
+    }
     if ($debug) {
 	my $ofile = '/tmp/bvg_checker_disruption_reports.json';
 	warn "INFO: write JSON to $ofile...\n";
 	open my $ofh, '>', $ofile or die $!;
-	print $ofh $json;
+	print $ofh JSON::XS::encode_json(\@disruptions);
 	close $ofh or die $!;
     }
-    my $data = JSON::XS::decode_json($json);
     my %links;
-    for my $disruption (@$data) {
+    for my $disruption (@disruptions) {
 	my $linie = $disruption->{line}->{name};
 	my $meldungsId = $disruption->{uuid};
 	my $source_id = lc($linie).'#'.$meldungsId;
