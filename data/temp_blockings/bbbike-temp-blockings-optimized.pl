@@ -3950,18 +3950,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023)
-#: priority: #A
-#: next_check: 2023-04-20
+#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::bomb -1934,6804 -1854,6898
 ',
-         'from' => 1681855200,
+         'from' => 1682460000,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2023 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2023 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1681978500
+         'until' => 1682583300
        },
        undef,
        {
@@ -4385,18 +4384,18 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="38"
+#: osm_watch: way id="8655276" version="39"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-02-08 (osm)
+#: last_checked: 2023-04-19 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
          'from' => 1630670400,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Anfang März 2022: Durchfahrt ist gesperrt)',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand April 2022: Durchfahrt ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5927,7 +5926,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-18
+#: last_checked: 2023-04-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -6068,18 +6067,19 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
-	q4::inwork 1514,5163 1573,5152
+	q4::inwork; 1514,5163 1573,5152
 # REMOVED (hier keine Einschränkung, siehe mapillary) ---	q2::inwork 1573,5152 1964,5070
 ',
          'from' => 1660582743,
          'id' => 3605,
          'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
-         'text' => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 21.4.2023',
+         'text' => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 20.6.2023',
          'type' => 'handicap',
-         'until' => 1682089200
+         'until' => 1687273200
        },
        undef,
        undef,
@@ -7198,7 +7198,8 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'until' => undef
        },
        {
-         'data' => '#: note: Endedatum anhand Halteverbotsschilder
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
+#: note: Endedatum anhand Halteverbotsschilder
 	q4::inwork; 4032,12167 4101,12356
 ',
          'from' => 1678738906,

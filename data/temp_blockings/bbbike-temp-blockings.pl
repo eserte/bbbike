@@ -26340,9 +26340,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-04-20 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-04-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-04-27 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26373,9 +26373,8 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023)
-#: priority: #A
-#: next_check: 2023-04-20
+#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::bomb -1934,6804 -1854,6898
@@ -29445,7 +29444,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-09-03 14:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2021-09-06 04:00:00"), # 1570116625, # 1680364800, # 2023-04-01 18:00
-       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Anfang März 2022: Durchfahrt ist gesperrt)', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
+       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand April 2022: Durchfahrt ist gesperrt)', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
@@ -29453,11 +29452,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="38"
+#: osm_watch: way id="8655276" version="39"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-02-08 (osm)
+#: last_checked: 2023-04-19 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -35681,7 +35680,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-18
+#: last_checked: 2023-04-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -36229,17 +36228,18 @@ EOF
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2023-04-21 17:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 21.4.2023',
+       until => $isodate2epoch->("2023-06-20 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Hüttenweg: Anbindung Clayallee gesperrt, voraussichtlich bis 20.6.2023',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
-	q4::inwork 1514,5163 1573,5152
+	q4::inwork; 1514,5163 1573,5152
 # REMOVED (hier keine Einschränkung, siehe mapillary) ---	q2::inwork 1573,5152 1964,5070
 EOF
      },
@@ -38102,6 +38102,7 @@ EOF
        text  => 'Warburgzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 31.7.2023',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
 #: note: Endedatum anhand Halteverbotsschilder
 	q4::inwork; 4032,12167 4101,12356
 EOF
