@@ -135,7 +135,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18029,6674 17962,6674
-Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
+Hardenbergplatz	1 5542,11075 5560,11124 5600,11143 5627,11210 5618,11255 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2977 8476,3367
@@ -1259,8 +1259,8 @@ Absperrgitter am nördlichen Gehweg	3nocross::ignrte 11473,5131 11676,5185 11799,
 Cafeastr. -> Gradestr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11603,5241 11676,5185 11799,5191
 Gradestr. -> Cafeastr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11473,5131 11676,5185 11603,5241
 Mittelstreifen	3nocross::ignrte -4412,12179 -4365,12358 -4351,12460
-Gatower Str. -> Alfred-Balen-Weg: Mittelstreifen	3::igndisp -4351,12460 -4365,12358 -4169,12368
-Alfred-Balen-Weg -> Gatower Str.: Mittelstreifen	3::igndisp -4169,12368 -4365,12358 -4412,12179
+Gatower Str. -> Alfred-Balen-Weg: Mittelstreifen	3::igndisp -4351,12460 -4365,12358 -4169,12371
+Alfred-Balen-Weg -> Gatower Str.: Mittelstreifen	3::igndisp -4169,12371 -4365,12358 -4412,12179
 Mittelstreifen	3nocross::ignrte 9267,15790 9291,15740 9309,15700
 Zufahrtsstr. am Einkaufszentrum -> Brunnenstr.: Mittelstreifen	3::igndisp 9363,15738 9291,15740 9309,15700
 Mittelstreifen	3nocross::ignrte 4596,3738 4603,3704 4603,3658
@@ -3286,6 +3286,7 @@ Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
 Drängelgitter	BNP:3:-23:trailer=10 22085,5111
+Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:inwork 7998,15068 8015,15047 8037,14958 8091,14895
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821

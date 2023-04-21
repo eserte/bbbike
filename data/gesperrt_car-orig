@@ -597,6 +597,7 @@ Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14609,15921 14597,15970 14595,159
 Lenther Steig	1 1022,14898 1037,14814 1042,14721
 Hauptstr./Wielandstr.: Mittelstreifen	3nocross 6144,7677 6082,7594 5955,7420
 Fehmarner Str.	1 6709,14782 6528,15000
+#: note: Überquerungsmöglichkeit für Fußgänger auf der östlichen Seite
 Kaiserdamm: Mittelstreifen	3nocross 1960,11426 1821,11408 1625,11380
 #: by: Roland Mohrbacher vvv
 Paplitzer Str.	1 11027,-2448 11073,-2037
@@ -1718,7 +1719,7 @@ Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,643
 #: source_id: viz2021:13.409118,52.51693,15.01.2023,18:00 (bis 30.06.2023)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2023-04-16 vvv
+#: last_checked: 2023-04-21 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303
 # REMOVED --- (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285
@@ -1784,4 +1785,14 @@ Habelschwerdter Allee: Mittelstreifen	3nocross 2732,4741 2745,4729 2762,4713
 Schwabenallee: Anlieger frei	2:Anlieger 21371,9923 21429,10207
 Dramburger Str.: Anlieger frei	2:Anlieger 21594,9895 21606,10010
 #: by ^^^
+# 
+Metropolitan Park	1 -8064,13534 -8088,13594
+Eidechsenweg - Brunsbütteler Damm	3 -7893,13781 -7720,13839 -7725,13858
+# 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246962.php (ab 26. September 2022, drei Wochen Bauzeit)
+#: by: https://berliner-abendblatt.de/2022/09/21/mittelstreifen-der-berliner-strasse-wird-umgebaut/
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/mittelstreifen-wird-umgebaut_a358874
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8435 (verkehrsrechtliche Anordnung fehlt (Mitte November 2022))
+#: by: https://media.frag-den-staat.de/files/foi/787257/mittelstreifenberlinerstrae-anordnung.pdf
+Prinzregentenstr./Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschlossen	3nocross 5492,8982 5635,9018 5725,9041
 # 

@@ -894,7 +894,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
-#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023)
+#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-04-18
 #: check_frequency: 60d
@@ -987,7 +987,7 @@ Gehweg für Radfahrer frei, altes Verbundsteinpflaster	RW1; -4819,7833 -4906,7666
 enger Radweg	RW1; -5698,6551 -5454,6896 -5279,7113 -5170,7256 -5097,7361 -5046,7442 -4967,7567
 Gehweg für Radfahrer frei	RW1;RW1 -5698,6551 -5758,6469 -5877,6308 -5915,6269 -6159,6026 -6170,6016 -6343,5853 -6420,5771 -6462,5733 -6482,5711 -6559,5637 -6666,5535 -6734,5470 -6982,5237
 	RW2;RW1 -6982,5237 -7009,5211 -7082,5144 -7120,5076
-	RW1; -5399,11426 -5462,11326 -5509,11256
+neu asphaltiert	RW1; -5399,11426 -5462,11326 -5509,11256
 	RW3; -5509,11256 -5462,11326
 	RW4; -5462,11326 -5399,11426
 	RW1;RW1 -5509,11256 -5564,11209
@@ -1314,13 +1314,11 @@ Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 #: by: https://berliner-abendblatt.de/2022/10/26/paulsternstrasse-wird-am-wochenende-gesperrt/
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1259855.php (Radwege sind fertig)
 #: by: https://berliner-abendblatt.de/2022/10/31/paulsternstrasse-mit-neuer-fahrbahn-und-radwegen/
-#: source_id: viz2021:13.247552,52.541241,28.10.2022,17:00 (inaktiv)
-#: XXX Asphaltierung der Radwege
-#: next_check: 2022-10-31
-#: osm_watch: way id="249163487" version="14"
-#: osm_watch: way id="838509358" version="6"
-#: osm_watch: way id="980133623" version="1"
-	RW2;RW2 -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
+# REMOVED --- #: source_id: viz2021:13.247552,52.541241,28.10.2022,17:00 (inaktiv) --- #: XXX Asphaltierung der Radwege --- #: next_check: 2022-10-31 --- #: osm_watch: way id="249163487" version="14" --- #: osm_watch: way id="838509358" version="6" --- #: osm_watch: way id="980133623" version="1"
+#: note: am Anfang Richtung Süden etwas uneben, danach in Ordnung
+neu asphaltiert	RW1; -344,15200 -343,15113 -315,14933 -284,14738
+neu asphaltiert	RW2; -284,14738 -278,14532
+neu asphaltiert	RW2; -278,14532 -284,14738 -315,14933 -343,15113 -344,15200
 unebenes Verbundsteinpflaster	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 778,14713 838,14530 842,14518 862,14463 889,14392
 	RW1;RW2 2095,11440 2082,11554
 	RW1;RW1 2082,11554 2058,11756
@@ -1695,8 +1693,8 @@ Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 	RW1;RW1 2547,11788 2489,12014 2460,12163 2440,12264 2437,12283 2417,12401 2411,12428
 	RW1;RW1 2058,11756 2047,11873 1999,12207 1969,12375
 	RW1;RW2 889,14392 931,14268
-asphaltiert	RW1;RW1 931,14268 984,14086
-	RW1;RW1 984,14086 1053,13790 1124,13599 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
+asphaltiert	RW1;RW1 931,14268 984,14086 1010,13972
+Verbundsteinpflaster	RW1;RW1 1010,13972 1053,13790 1124,13599 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
 	RW2;RW1 1929,12741 1969,12375
 	RW1; 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4617,13243 4751,13245 4926,13207 5166,13087
 Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 4926,13207 4751,13245 4617,13243 4542,13244
@@ -1890,7 +1888,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-04-18 vvv
+#: last_checked: 2023-04-21 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1917,7 +1915,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-04-15 vvv
+#: last_checked: 2023-04-21 vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -1960,7 +1958,7 @@ provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10710,12377 10714,12355 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
-#: last_checked: 2023-04-16
+#: last_checked: 2023-04-21
 provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2194,7 +2192,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
 #: source_id: 2147345461 (bis 30.09.2021)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: also_indoor: traffic (B[minor])
-#: last_checked: 2023-02-26
+#: last_checked: 2023-04-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
 #	RW3; 5764,10322 5808,10396
@@ -2715,7 +2713,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW3; 11347,12223 11300,12241
 	RW4; 11300,12241 11221,12250 11139,12243
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-21
 #: check_frequency: 90d
 provisorischer Radweg auf Bürgersteig	RW2; 11139,12243 11094,12243 10951,12249 10830,12279
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
@@ -4840,7 +4838,7 @@ schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW3; -707,15108 -767,15082
 	RW1; -767,15082 -834,15053
 	RW1;RW3 -707,15108 -569,15167 -532,15184
-	RW2; -532,15184 -453,15219 -344,15200
+asphaltiert	RW2; -532,15184 -453,15219 -344,15200
 	RW1; -344,15200 -453,15219
 	RW3; -453,15219 -532,15184
 	RW1;RW2 -1350,14646 -1336,14786
@@ -4849,7 +4847,10 @@ schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW;RW1 -3853,15097 -3769,14894 -3734,14879
 # 
 #: note: Hohenzollernring Richtung Süden
-	RW1; -3935,16225 -4135,15894 -4155,15763 -4150,15638 -4137,15512 -4118,15370 -4090,15261 -4053,15167 -4017,15077 -3926,14879 -3900,14818 -3880,14770 -3835,14668 -3757,14552 -3721,14495
+	RW1; -3935,16225 -4135,15894 -4155,15763
+Verbundsteinpflaster, wenig Abstand zu parkenden Autos	RW1; -4155,15763 -4150,15638 -4137,15512 -4118,15370
+Gehwegplatten, wenig Abstand zu parkenden Autos	RW1; -4118,15370 -4090,15261 -4053,15167
+Gehwegplatten/Verbundsteinpflaster/alter Asphalt	RW1; -4053,15167 -4017,15077 -3926,14879 -3900,14818 -3880,14770 -3835,14668 -3757,14552 -3721,14495
 #: note: Hohenzollernring Richtung Norden
 etwas grober Asphalt	RW1; -3721,14495 -3757,14552
 #: note: etwa 10m von der Fahrbahn abgesetzt
@@ -6169,7 +6170,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 	RW4; 9141,12320 9131,12438
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2023-04-01 vvv
+#: last_checked: 2023-04-21 vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514

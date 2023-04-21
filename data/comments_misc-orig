@@ -430,7 +430,7 @@ Bus 309	busroute_N 2411,12428 2397,12513 2332,12793 2295,13031 2362,13046 2455,1
 Bus 245	busroute_N 4591,12511 4658,12450 4807,12348 4973,12256
 Bus 309	busroute_N 3546,10962 3820,10987 3942,11010 3975,11087
 Bus 139	busroute_N 2340,11056 2346,11147 2249,11082 2233,11049
-Bus 100, ...	busroute_N 5352,11502 5587,11397 5666,11362 5565,11147 5542,11075 5600,11114 5698,11333 5666,11362
+Bus 100, ...	busroute_N 5352,11502 5587,11397 5666,11362 5618,11255 5627,11210 5600,11143 5560,11124 5542,11075 5600,11114 5698,11333 5666,11362
 Bus 200	busroute_N 8005,11627 7943,11431 8083,11381
 Bus 282	busroute_N 3981,6850 3944,6901 3910,6949 3784,6985 3947,6814
 Bus 170	busroute_N 5672,5751 5581,5741 5464,5731 5280,5714 5223,5704 5141,5744 5114,5705 5054,5620 4991,5531 4905,5438 4851,5377 4813,5350
@@ -932,7 +932,7 @@ Nikolaus-Ehlen-Weg: Privatstraße	CS 17308,-36 17215,94 17176,90
 #: XXX Wann ziehen die Gaslaternen um?
 #: osm_watch: note 2969085 5
 #: priority: #C
-#: last_checked: 2023-03-13
+#: last_checked: 2023-04-21
 #: check_frequency: 90d
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
@@ -1315,7 +1315,7 @@ Wadzeckstr. - Mollstr.: über das Gelände des Hampton-Hotels	CS 11315,13210 11399
 #: note: laut fis-broker 1:5000 ist das tatsächlich die Falkoniergasse
 #: XXX wird hier noch ausgeschildert?
 #: osm_watch: way id="546927052" version="5"
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-21
 #: check_frequency: 60d
 Falkoniergasse: nicht ausgeschildert	CS 9939,12174 9909,12261
 # 
@@ -1746,7 +1746,7 @@ Richtung Schenkenberg nicht ausgeschildert	CP2; 44444,109014 44605,108715
 Nußbaumallee: nicht ausgeschildert	CP2; 1788,12252 1732,12224
 # 
 #: add_fragezeichen: Ist der Eidechsenweg bereits ausgeschildert? vvv
-#: last_checked: 2022-10-08 vvv
+#: last_checked: 2023-04-21 vvv
 #: check_frequency: 120d vvv
 Eidechsenweg: nicht ausgeschildert	CS -7720,13839 -7893,13781
 ausgeschildert "Zu den Häusern Metropolitan Park"	CP2; -7720,13839 -7893,13781
@@ -1814,4 +1814,8 @@ Gummiweg: nicht ausgeschildert, nicht die ausgebaute Straße zur Hauptstr. 23 d-h
 # 
 #: note: Durchfahrt scheint trotzdem möglich zu sein
 Biesenbrow - Briest: Privatstraße	CS 54508,82572 54307,83141
+# 
+ausgeschildert "Am Juliusturm 66,28"	CP2; -2668,14635 -2800,14566
+ausgeschildert "Am Juliusturm 62"	CP2; -2668,14635 -2570,14661
+ausgeschildert "Am Juliusturm 62,64,66,68"	CP2; -2647,14532 -2652,14559
 # 

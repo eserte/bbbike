@@ -887,8 +887,6 @@ Schloßstr. (Einbahnstraße?)	? -14821,106013 -15004,105813 -15070,105705
 Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -14288,105530 -14242,105542
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
-# added from ampeln
-Wilhelmstr./Am Omnibushof: provisorische Ampel (Existiert die provisorische Ampel noch immer?)	? -4647,12269
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33327,2979 33296,2894
@@ -960,7 +958,6 @@ Leistenhaus - Neugrimnitz: Schotterweg (Ist hier durchgängig ein Schotterweg?)	?
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
-Lindenallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1429,11528 1403,11428
 tragen (Wie viele Stufen sind hier?)	? -45,12243
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
@@ -974,8 +971,6 @@ Ausschilderung nach Luisenthal (?) folgen (Heißt es tatsächlich "Luisenthal"?)	?
 Taubenbogen (Potsdam-Golm): noch nicht ausgeschildert (Sind die Straßen mittlerweile ausgeschildert?)	? -18222,253 -18238,364 -18251,459 -18249,551
 Grasmückenring (Potsdam-Golm): noch nicht ausgeschildert (Sind die Straßen mittlerweile ausgeschildert?)	? -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
 Elsternstr. (Potsdam-Golm): noch nicht ausgeschildert (Sind die Straßen mittlerweile ausgeschildert?)	? -18135,397 -18140,452 -18131,476 -18145,499 -18146,544
-Eidechsenweg: nicht ausgeschildert (Ist der Eidechsenweg bereits ausgeschildert?)	? -7720,13839 -7893,13781
-ausgeschildert "Zu den Häusern Metropolitan Park" (Ist der Eidechsenweg bereits ausgeschildert?)	? -7720,13839 -7893,13781
 # added from comments_route
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -26785,5851 -26783,5891 -26689,6111 -26525,6519 -26170,6459 -25898,6447 -25719,6581 -25537,6616 -25318,6593 -25213,6477
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -18701,4578 -19392,4605 -19316,4365
@@ -991,3 +986,6 @@ L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen P
 # added from bbbike-temp-blockings-optimized
 Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?)	? 20996,16429 20923,16435 20898,16420
 Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein (Ist der Straßenbahnübergang mittlerweile offen?)	? 18818,3332 18834,3315
+Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt Roedeliusplatz (Bis wann gehen die Bauarbeiten?)	? 16248,12177 16158,12191
+Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt Magdalenenstr., nördlicher Abschnitt (Bis wann gehen die Bauarbeiten?)	? 16158,12191 16166,12292
+Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt Magdalenenstr., südlicher Abschnitt (Bis wann gehen die Bauarbeiten?)	? 16158,12191 16127,11950

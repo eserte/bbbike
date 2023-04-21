@@ -1733,7 +1733,7 @@ Brücke über den Britzer Damm: Rampe, enge Kurven	q2 12638,6307 12630,6326 12605,
 Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Mauerstr. - Sternbergpromenade): Fußgänger	q1 -3275,14114 -3187,14116
 (Neuhausweg - Ramin-Park): einige Fußgänger, Bordstein	q2 -3964,14507 -3950,14519
-Földerichplatz: Fußgängerzone	q3 -3942,12559 -3941,12376
+Földerichplatz: Fußgängerzone	q3 -3942,12559 -3940,12377
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fußgänger	q1 20759,15740 20789,15736
 (Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15680,8914 15617,8924
 Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
@@ -1898,7 +1898,7 @@ Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1 20586,18822 
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): drei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
 Königsheide: enge und übersichtliche Stelle	q3 16279,5170 16316,5192
-Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
+Alfons-Loewe-Str.: mehrere Regenablaufrinnen	q1 -8066,15595 -7975,15904
 Pepitapromenade: einige Fußgänger	q1 -2573,17314 -2873,17369
 Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
 (Park am Klötzebecken): Bordstein	q1 5815,22870 5926,22738
@@ -2429,6 +2429,7 @@ Waiblinger Weg: Gehweg, Bordstein	q3 17743,5260 17771,5278
 Hubertusallee: Fußgänger, Bordsteine	q4 2107,8407 2126,8426
 (Fußweg zum Supermarktparkplatz): Fußweg, schmal	q2 6831,1096 6842,1060
 (Supermarktparkplatz): Parkplatzverkehr	q1 6842,1060 6812,925
+(Schulstr. - Am Zeppelinpark): Bordstein	q2 -8279,13433 -8367,13409
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2546,12 +2547,12 @@ Spinozastr.: eng u. unübersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 Koburger Str.: Gehweg	q3 6534,8467 6540,8421
 Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2211,5120
 (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fußgänger u. Skater	q1 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
-(Weverstr. - Gatower Str.): Fußgänger	q1 -4169,12368 -4365,12358
+(Weverstr. - Gatower Str.): Fußgänger	q1 -4169,12371 -4365,12358
 (Südpark): Fußgänger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
-(Südpark): Fußgänger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12368
+(Südpark): Fußgänger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12371
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
-Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
+Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
 (südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
@@ -3201,8 +3202,8 @@ David-Francke-Str.: Bordsteinkante	q3 -2154,16660 -2137,16658
 Franz-Meyer-Str.: Bordsteinkante	q3 -2180,16566 -2189,16570
 Straße Z: enge Straße	q0 -638,16459 -671,16488 -708,16516
 (Winzerstr. - Heerstr.): einige Fußgänger	q1 -4700,11878 -4658,11891 -4628,11969
-(Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8111,13458 -8113,13467 -8136,13542 -8196,13727 -8232,13846 -8251,13904 -8201,13924
-(Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8225,14066 -8243,14183
+(Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8110,13454 -8113,13467 -8136,13542 -8196,13727 -8232,13846 -8251,13904 -8201,13924
+(Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8224,14045 -8248,14144 -8243,14183
 (Bergstr. - Brunsbütteler Damm): einige Fußgänger	q1 -7237,13461 -7209,13529 -7234,13551 -7304,13651 -7322,13784
 (Am Bullengraben - Lutoner Str.): eng, einige Fußgänger	q2 -5785,13606 -5790,13458
 (Am Bullengraben - Lutoner Str.): einige Fußgänger	q1 -5790,13458 -5789,13398 -5788,13291 -5790,13097

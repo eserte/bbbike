@@ -1110,11 +1110,11 @@ Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7227 6082,7594 5955,742
 Fehmarner Str.	1 6709,14782 6528,15000
 Mittelstreifen	3nocross::ignrte 1960,11426 1821,11408 1625,11380
 Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1960,11426 1821,11408 1861,11284
-Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1625,11380 1821,11408 1781,11510
+Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1625,11380 1821,11408 1787,11509
 Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1861,11284 1821,11408 1625,11380
-Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1861,11284 1821,11408 1781,11510
-Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1781,11510 1821,11408 1960,11426
-Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1781,11510 1821,11408 1861,11284
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1861,11284 1821,11408 1787,11509
+Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1787,11509 1821,11408 1960,11426
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1787,11509 1821,11408 1861,11284
 Paplitzer Str.	1 11027,-2448 11073,-2037
 Steinträgerweg: Poller	3 12948,2484 12963,2365 12987,2220
 Steinträgerweg: Poller	3 12987,2220 12963,2365 12948,2484
@@ -2384,3 +2384,12 @@ Habelschwerdter Allee -> Schwendenerstr.: Mittelstreifen	3::igndisp 2732,4741 27
 Schwendenerstr. -> Habelschwerdter Allee: Mittelstreifen	3::igndisp 2816,4789 2745,4729 2762,4713
 Schwabenallee: Anlieger frei	2:Anlieger 21371,9923 21429,10207
 Dramburger Str.: Anlieger frei	2:Anlieger 21594,9895 21606,10010
+Metropolitan Park	1 -8064,13534 -8088,13594
+Eidechsenweg - Brunsbütteler Damm	3 -7893,13781 -7720,13839 -7725,13858
+Mittelstreifen für den Kfz-Verkehr geschlossen	3nocross::ignrte 5492,8982 5635,9018 5725,9041
+Berliner Str. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5725,9041 5635,9018 5641,8831
+Berliner Str. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5492,8982 5635,9018 5633,9263
+Prinzregentenstr. -> Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5641,8831 5635,9018 5492,8982
+Prinzregentenstr. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5641,8831 5635,9018 5633,9263
+Prinzregentenstr. -> Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5633,9263 5635,9018 5725,9041
+Prinzregentenstr. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5633,9263 5635,9018 5641,8831
