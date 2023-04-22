@@ -41,6 +41,7 @@ BEGIN {
 }
 
 sub non_streaming_loop ($);
+sub tie_ixhash_hidden ();
 
 my $datadir = "$FindBin::RealBin/../data";
 my $doit; # Note that the -doit tests currently fail, because the
@@ -258,7 +259,9 @@ EOF
     }
 }
 
-{
+SKIP: {
+    skip "Known to fail without Tie::IxHash (unexpected ordering)", 2 if tie_ixhash_hidden;
+
     for my $preserve_line_info (0, 1) {
 	my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1, PreserveLineInfo => $preserve_line_info)
 #:
@@ -546,7 +549,9 @@ EOF
     }
 }
 
-{
+SKIP: {
+    skip "Known to fail without Tie::IxHash (unexpected ordering)", 1 if tie_ixhash_hidden;
+
     my $data =<<EOF;
 #:
 #: XXX: value1 vvv
@@ -563,7 +568,9 @@ EOF
     eq_or_diff $data2, $data, 'Nested local block directives after serializing';
 }
 
-{
+SKIP: {
+    skip "Known to fail without Tie::IxHash (unexpected ordering)", 1 if tie_ixhash_hidden;
+
     my $data = <<EOF;
 #:
 #: by: http://www.example.org
@@ -732,6 +739,13 @@ sub non_streaming_loop ($) {
 	my $r = $s->next;
 	last if !@{ $r->[Strassen::COORDS] || [] };
     }
+}
+
+# Note: this test script will fail if Tie::IxHash is not installed,
+# after all, it's a prereq. However, when called with Devel::Hide it
+# should still pass.
+sub tie_ixhash_hidden () {
+    return 1 if defined &Devel::Hide::_is_hidden && Devel::Hide::_is_hidden("Tie/IxHash.pm");
 }
 
 __END__
