@@ -22,7 +22,7 @@ BEGIN {
     }
 }
 
-plan tests => 9;
+plan tests => 11;
 
 use Strassen::Core;
 use Strassen::Combine;
@@ -117,5 +117,23 @@ EOF
     # just one record, but this is maybe not the scope of
     # Strassen::Combine, but of a uniquifier function.
 }
+
+{
+    my $data = <<'EOF';
+Potsdam	Z -9490,4579 -10083,4870 -5995,-1650
+Potsdam	Z -5995,-1650 -6890,-1504 -9490,4579
+EOF
+
+    my $combined_data = <<'EOF';
+Potsdam	Z -9490,4579 -10083,4870 -5995,-1650 -6890,-1504 -9490,4579
+EOF
+
+    my $s = Strassen->new_from_data_string($data);
+    my $new_s = $s->make_long_streets(-closedpolygon => 1);
+    isa_ok($new_s, 'Strassen');
+
+    eq_or_diff($new_s->as_string, $combined_data, "with -closedpolygon => 1");
+}
+
 
 __END__
