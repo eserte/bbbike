@@ -368,6 +368,7 @@ sub read_from_fh {
 		if ($has_tie_ixhash && !$directives[$data_pos]) {
 		    tie %{ $directives[$data_pos] }, 'Tie::IxHash';
 		}
+		$directives[$data_pos] ||= {};
 		$this_directives = $directives[$data_pos];
 	    } else {
 		if ($has_tie_ixhash) {
