@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2006,2007,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2006,2007,2012,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -69,7 +69,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1999,2001,2006,2007 Slaven Rezic. All rights reserved.
+Copyright (c) 1999,2001,2006,2007,2012,2023 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
@@ -211,9 +211,9 @@ sub make_long_streets {
 
 	    if (exists $strdata->[0]{$keys[$other_firstlast]}) {
 
-		shift @{ $strdata[$inx]->[Strassen::COORDS] };
 		my $inx2 = $strdata->[0]{$keys[$other_firstlast]};
 		if ($inx != $inx2) {
+		    shift @{ $strdata[$inx]->[Strassen::COORDS] };
 		    unshift @{ $strdata[$inx]->[Strassen::COORDS] },
 			reverse @{ $strdata[$inx2]->[Strassen::COORDS] };
 		    delete $strdata->[0]{$keys[$other_firstlast]};
@@ -223,9 +223,9 @@ sub make_long_streets {
 
 	    } elsif (exists $strdata->[1]{$keys[$other_firstlast]}) {
 
-		shift @{ $strdata[$inx]->[Strassen::COORDS] };
 		my $inx2 = $strdata->[1]{$keys[$other_firstlast]};
 		if ($inx != $inx2) {
+		    shift @{ $strdata[$inx]->[Strassen::COORDS] };
 		    unshift @{ $strdata[$inx]->[Strassen::COORDS] },
 			@{ $strdata[$inx2]->[Strassen::COORDS] };
 		    delete $strdata->[1]{$keys[$other_firstlast]};
@@ -246,9 +246,9 @@ sub make_long_streets {
 
 	    if (exists $strdata->[0]{$keys[$other_firstlast]}) {
 
-		pop @{ $strdata[$inx]->[Strassen::COORDS] };
 		my $inx2 = $strdata->[0]{$keys[$other_firstlast]};
 		if ($inx != $inx2) {
+		    pop @{ $strdata[$inx]->[Strassen::COORDS] };
 		    CORE::push(@{ $strdata[$inx]->[Strassen::COORDS] },
 			       @{ $strdata[$inx2]->[Strassen::COORDS] });
 		    delete $strdata->[0]{$keys[$other_firstlast]};
@@ -258,9 +258,9 @@ sub make_long_streets {
 
 	    } elsif (exists $strdata->[1]{$keys[$other_firstlast]}) {
 
-		pop @{ $strdata[$inx]->[Strassen::COORDS] };
 		my $inx2 = $strdata->[Strassen::COORDS]{$keys[$other_firstlast]};
 		if ($inx != $inx2) {
+		    pop @{ $strdata[$inx]->[Strassen::COORDS] };
 		    CORE::push(@{ $strdata[$inx]->[Strassen::COORDS] },
 			       reverse @{ $strdata[$inx2]->[Strassen::COORDS] });
 		    delete $strdata->[1]{$keys[$other_firstlast]};

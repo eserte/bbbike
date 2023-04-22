@@ -94,7 +94,6 @@ EOF
     my $new_s = $s->make_long_streets;
     isa_ok($new_s, 'Strassen');
 
-    local $TODO = "Last point in ring structure is missing!!!";
     eq_or_diff($new_s->as_string, $combined_data);
 }
 
