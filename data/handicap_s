@@ -29,7 +29,8 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
-Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245 22033,6144
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
@@ -2430,6 +2431,7 @@ Hubertusallee: Fußgänger, Bordsteine	q4 2107,8407 2126,8426
 (Fußweg zum Supermarktparkplatz): Fußweg, schmal	q2 6831,1096 6842,1060
 (Supermarktparkplatz): Parkplatzverkehr	q1 6842,1060 6812,925
 (Schulstr. - Am Zeppelinpark): Bordstein	q2 -8279,13433 -8367,13409
+Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 19884,4018
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2939,7 +2941,6 @@ Rothariweg: enge Straße	q0 8292,6331 8290,6191 8291,6048
 Küselstr.: enge Straße	q1 12292,15464 12221,15514 12158,15556 12094,15598 12058,15621
 Zillertalstr.: enge Straße	q0 10807,17193 10498,17192 10228,17191 10198,17196
 Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
-Hackenbergstr.: enge Straße	q1 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
 Breestpromenade: enge Straße	q1 25761,5613 26059,5631 26199,5643
 Zellerfelder Str.: enge Straße	q1 11526,18929 11468,19106
 Burghardweg: enge Straße	q1 21533,14009 21561,14257 21584,14459
@@ -3357,6 +3358,7 @@ Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 7998,15068 8015,15047 8037,14958 8091,14895
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 14535,11327 14506,11275
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 5522,8011 5520,8132 5573,8197
+Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 20336,3783 20362,3750
 Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 23608,1210 23520,1194
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532

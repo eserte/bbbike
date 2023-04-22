@@ -561,14 +561,19 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 ### Köpenick ###
 # 
 #: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023)
-#: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2023-03-26
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-03-25
-#: next_check: 2023-05-25
-#: valid: 20230325-20230525
-Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245 22033,6144
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) vvv
+#: also_indoor: traffic (H,G,B,W) vvv
+#: last_checked: 2023-04-22 vvv
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2023-05-25 vvv
+#: valid: 20230325-20230525 vvv
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
+Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: source_id ^^^
 # 
 # REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
@@ -663,7 +668,7 @@ Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-04-14 (webcam)
+#: last_checked: 2023-04-22 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -671,7 +676,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-04-14 (webcam)
+#: last_checked: 2023-04-22 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -965,7 +970,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 # 
 ### Prenzlauer Berg ###
 # 
-#: osm_watch: way id="1047231711" version="2"
+#: osm_watch: way id="1047231711" version="3"
 #: last_checked: 2023-03-16
 #: check_frequency: 60d
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
@@ -4475,6 +4480,8 @@ Hubertusallee: Fußgänger, Bordsteine	q4 2107,8407 2126,8426
 #: XXX_prog BS (Bordstein Am Zeppelinpark, ansonsten entfernen)
 (Schulstr. - Am Zeppelinpark): Bordstein	q2 -8279,13433 -8367,13409
 # 
+Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 19884,4018
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -5603,8 +5610,7 @@ Zillertalstr.: enge Straße	q0- 10807,17193 10498,17192 10228,17191 10198,17196
 # REMOVED --- #: by: Frank Soukup: vvv --- Am Heideberg: enge Straße	q1 -7114,14579 -7115,14663 -7121,14711 --- Am Heideberg: enge Straße	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -7234,15003 -7292,15114 -7326,15145 -7373,15154 ---#: by: ^^^
 #: by: Maria (ferrusac):
 Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
-#: by: Thomas Behle:
-Hackenbergstr.: enge Straße	q1 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
+# REMOVED (srt/policy) --- #: by: Thomas Behle: --- Hackenbergstr.: enge Straße	q1 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
 #: by: Manon Pfaff:
 Breestpromenade: enge Straße	q1 25761,5613 26059,5631 26199,5643
 #: by: Theo Schallon:

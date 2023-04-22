@@ -4695,7 +4695,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-22
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4951,7 +4951,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-03-27
+#: last_checked: 2023-04-22
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -4959,7 +4959,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende März 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte April 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5785,7 +5785,7 @@ Ravensberger Str.	q4::inwork; 3711,9855 3927,9935
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-03-26 vvv
+#: last_checked: 2023-04-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-25 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
@@ -6038,25 +6038,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WALLENSTEIN-2022
-# REMOVED --- #: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags, 2022-10-26 (Mi) gegen 12:30, 2022-11-05 (Sa) gegen 10:15, 2022-11-12 (Sa) gegen 12:40, 2022-12-13 (Di) gegen 13:10 --- #: note: tatsächlich Bauarbeiten beobachtet: 2022-11-25 (Fr) gegen 12:35 (Baufahrzeug in Aktion), 2022-12-05 (Mo) gegen 13:45 (Baufahrzeug in Aktion, abschnittsweise konnte die Fahrbahn trotzdem genutzt werden)
-# REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
-#: XXX Wie lange dauern noch die Bauarbeiten?
-#: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-04-14
-#: check_frequency: 21d
-Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
-# REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
-# REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
-',
-         'from' => 1659546069,
-         'id' => 3597,
-         'source_id' => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
-         'text' => 'Ilsestr.: Bauarbeiten, an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6879,7 +6861,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-13 (mapillary)
+#: last_checked: 2023-04-22
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -7024,7 +7006,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-04-11
+         'data' => '#: last_checked: 2023-04-22
 #: check_frequency: 10d
 	2::inwork 14810,10832 14738,10892
 ',
@@ -7104,15 +7086,16 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'data' => '#: next_check_id: OSKAR-2023
 #: XXX Halteverbotsschilder gelten bis zum 14.4.2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-04-14
+#: last_checked: 2023-04-22
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2023-04-14
-	q3::inwork 17793,8012 17762,7931
+# REMOVED (hier nicht mehr) ---	q3::inwork 17793,8012 17762,7931
 # REMOVED (hier nicht mehr) ---	q3::inwork 17803,8079 17808,8042 17793,8012
+	q3::inwork 17762,7931 17771,7880
 ',
          'from' => 1677610008,
          'id' => 3738,
-         'text' => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
+         'text' => 'Oskarstr.: zwischen Gleyeweg und Am Walde Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7209,13 +7192,14 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
 # REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
 # REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
 #: osm_watch: way id="1117716285" version="2"
-#: last_checked: 2023-03-17
-#: check_frequency: 14d
+#: last_checked: 2023-04-22
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2023-05-31
 	2::inwork 18818,3332 18834,3315
 ',
          'from' => undef,
          'id' => 3750,
-         'text' => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein',
+         'text' => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein, möglicherweise bis Ende Mai 2023',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7285,11 +7269,16 @@ Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
          'until' => undef
        },
        {
-         'data' => '#: XXX möglicherweise Asphaltierung?
-#: last_checked: 2023-04-14
-#: check_frequency: 45d
-#: check_frequency: 2023-06-30
-	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
+         'data' => '#: last_checked: 2023-04-22 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2023-06-30 vvv
+#: XXX möglicherweise Asphaltierung?
+	q4::inwork 17856,8162 17793,8225 17753,8290
+#: note: Einschränkungen im Kreuzungsbereich
+	q3::inwork 17753,8290 17771,8349
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1679936842,
          'id' => 3756,

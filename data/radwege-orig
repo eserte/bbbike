@@ -318,7 +318,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-04-15 vvv
+#: last_checked: 2023-04-22 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1185,7 +1185,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-04-16 vvv
+#: last_checked: 2023-04-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3826,7 +3826,7 @@ Verbundsteinpflaster	RW1; 23046,3905 23036,3929 22971,4077 22965,4124
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
-#: last_checked: 2023-03-21
+#: last_checked: 2023-04-22
 #: check_frequency: 180d
 #: next_check: 2023-07-15
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
@@ -4022,8 +4022,8 @@ mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5
 	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
 alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15011,7593 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
-#: note: nicht explizit freigegeben, nur durch Fahrbahnmarkierung
-asphaltierter Gehweg für Radfahrer frei, einige deutliche Wurzelhebungen	RW1; 15221,7778 15553,7408 15560,7400
+#: historical_note: einige deutliche Wurzelhebungen, mittlerweile neu gemacht?
+asphaltierter Gehweg für Radfahrer frei	RW1; 15221,7778 15553,7408 15560,7400
 asphaltierter Gehweg für Radfahrer frei, einige Wurzelhebungen	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
 asphaltiert	RW1; 23402,5483 23492,5488 23519,5490 23590,5487 23657,5467 23724,5437 23818,5394 23849,5380 23942,5338
 asphaltiert	RW1; 23942,5338 23849,5380 23818,5394 23724,5437 23657,5467 23590,5487
@@ -4885,11 +4885,11 @@ Gehweg für Radfahrer frei	RW1; -4544,15940 -4337,16494
 #: note: in der Praxis in beide Richtungen benutzt
 Verbundsteinpflastergehweg für Radfahrer frei	RW1;RW9 -6316,17363 -5918,17180 -5494,16963 -5480,16958 -5267,16871 -5119,16813 -5021,16774 -4879,16718 -4770,16674 -4642,16621 -4337,16494
 	RW1;RW1 -3552,14082 -3624,14113
-	RW1; -3624,14113 -3851,14174 -4107,14254 -4147,14274 -4220,14311 -4378,14388 -4548,14434 -4724,14482
+	RW1; -3624,14113 -3842,14171 -4107,14254 -4147,14274 -4220,14311 -4378,14388 -4548,14434 -4724,14482
 holpriges Verbundsteinpflaster, Bord gegen Gehweg, parkende Autos ragen teilweise in den Radweg hinein	RW1; -4724,14482 -4924,14535 -5013,14565 -5097,14599 -5257,14668 -5442,14738 -5660,14810 -5718,14828 -5731,14832 -5774,14843 -5999,14829
 	RW1; -5999,14829 -6276,14924
 	RW1; -5774,14843 -5731,14832 -5718,14828 -5660,14810 -5442,14738 -5257,14668 -5097,14599 -5013,14565 -4924,14535 -4724,14482
-Verbundsteinpflaster	RW1; -4724,14482 -4548,14434 -4378,14388 -4220,14311 -4147,14274 -4107,14254 -3851,14174 -3624,14113
+Verbundsteinpflaster	RW1; -4724,14482 -4548,14434 -4378,14388 -4220,14311 -4147,14274 -4107,14254 -3842,14171 -3624,14113
 asphaltiert	RW2; -4759,13992 -4754,14075
 gemeinsamer Geh- und Radweg, Gehwegplatten	RW2; -4754,14075 -4748,14237
 gemeinsamer Geh- und Radweg, Gehwegplatten	RW2; -4748,14237 -4754,14075 -4759,13992
@@ -5002,8 +5002,8 @@ Grünbeschichtung	RW4; 18080,5376 18425,5032 18457,5000 18725,4715 19226,4183
 #: source_id: viz2021:13.51205,52.45485,15.10.2022,07:00 (Markierungsarbeiten bis 11.11.2022) (am nächsten Tag wieder inaktiv)
 #: priority: #D
 #: XXX Wird nun doch eine richtige Grünmarkierung aufgebracht?
-#: last_checked: 2022-11-27
-#: check_frequency: 90d
+#: last_checked: 2023-04-22
+#: check_frequency: 120d
 Grünbeschichtung "light"	RW4; 19226,4183 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 #: note die Radspur sah etwas provisorisch aus, aber auf dem Gehweg ist jetzt definitiv kein Platz mehr
@@ -5481,8 +5481,8 @@ Verbundsteinpflaster	RW1; 21392,3732 21363,3699 21324,3691
 	RW1;RW0 21799,4319 21829,4212
 #: by: ust.becker:
 	RW6;RW6 4126,20771 3912,21090
-	RW1;RW1 -3891,13968 -3851,14174
-	RW1;RW1 -3851,14174 -3819,14302 -3777,14405 -3769,14429 -3721,14495 -3640,14643
+	RW1;RW1 -3891,13968 -3842,14171
+	RW1;RW1 -3842,14171 -3811,14299 -3777,14405 -3769,14429 -3721,14495 -3640,14643
 #: by: Marco Kühne: vvv
 	RW1;RW1 15490,24198 15591,24137 15675,24086 15689,24045 15794,23778 15826,23723 15845,23717 15957,23635
 	RW1;RW 15957,23635 16070,23566

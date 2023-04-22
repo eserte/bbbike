@@ -5596,7 +5596,7 @@ Münsingerstr.	N -3598,14587 -3535,14408
 Martin-Albertz-Weg	N -3535,14408 -3608,14398
 (Altstädter Ring - Münsingerstr./Martin-Albertz-Weg)	NN -3498,14413 -3535,14408
 #: note: Beleuchtung existiert
-(Martin-Albertz-Weg - Münsinger Park)	NN -3608,14398 -3684,14394 -3712,14393
+(Martin-Albertz-Weg - Münsingerpark)	NN -3608,14398 -3684,14394 -3712,14393
 Moritzstr. (Spandau)	NN -3275,14407 -3350,14446
 Moritzstr. (Spandau)	N -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523 -3598,14587 -3640,14643
 Bismarckstr. (Spandau)	N -3153,14868 -3360,14974 -3572,15082
@@ -5618,15 +5618,15 @@ Sternbergpromenade	NN -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3390,1394
 (Sternbergpromenade - Charlottenstr.)	NN -3153,14141 -3158,14164 -3144,14170 -3135,14183
 (Lindenufer - Sternbergpromenade)	NN -3091,14220 -3042,14255
 (Wasserstr. - Sternbergpromenade)	NN -3054,14305 -3019,14286
-Am Bahnhof Spandau	H -3891,13968 -3851,14174
-Galenstr.	N -3851,14174 -3819,14302 -3777,14405 -3769,14429 -3721,14495 -3640,14643 -3499,14806
+Am Bahnhof Spandau	H -3891,13968 -3842,14171
+Galenstr.	N -3842,14171 -3811,14299 -3777,14405 -3769,14429 -3721,14495 -3640,14643 -3499,14806
 (Galenstr. - Falkenseer Damm)	NN -3499,14806 -3470,14836
-Kemmannweg	N -3819,14302 -3911,14331 -3937,14340 -4053,14428 -4117,14458 -4207,14473
+Kemmannweg	N -3811,14299 -3911,14331 -3937,14340 -4053,14428 -4117,14458 -4207,14473
 Glacisweg	N -3911,14331 -3887,14405
 (Glacisweg - Ramin-Park)	NN -3887,14405 -3855,14399 -3841,14436
 Neuhausweg	N -4053,14428 -3964,14507
 (Neuhausweg - Ramin-Park)	NN -3964,14507 -3950,14519
-Seegefelder Str.	H -3552,14082 -3624,14113 -3851,14174 -4107,14254 -4147,14274 -4220,14311 -4378,14388 -4548,14434 -4724,14482 -4924,14535 -5013,14565 -5097,14599 -5257,14668 -5442,14738 -5660,14810 -5718,14828 -5731,14832 -5774,14843
+Seegefelder Str.	H -3552,14082 -3624,14113 -3842,14171 -4107,14254 -4147,14274 -4220,14311 -4378,14388 -4548,14434 -4724,14482 -4924,14535 -5013,14565 -5097,14599 -5257,14668 -5442,14738 -5660,14810 -5718,14828 -5731,14832 -5774,14843
 Borkzeile	N -4220,14311 -4207,14473 -4203,14515 -4188,14566 -4156,14677
 (Borkzeile - Spekteweg)	NN -4156,14677 -4160,14690 -4167,14729 -4234,14792 -4257,14888 -4284,14937
 (Borkzeile - Spekteweg/Zeppelinstr.)	NN -4160,14690 -4203,14688 -4255,14709 -4296,14707 -4333,14726 -4382,14733 -4439,14727 -4473,14734 -4496,14767 -4556,14805 -4582,14807 -4671,14818
@@ -5753,9 +5753,11 @@ Achenbachstr.	N -3360,14974 -3322,14814
 Falkenseer Damm	H -3355,14764 -3470,14836 -3561,14918 -3638,14995 -3857,15205 -3937,15299
 Altstädter Ring	HH -3352,14676 -3432,14607 -3481,14523 -3498,14413 -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
 #: note: beleuchtet
-(Münsinger Park)	NN -3721,14495 -3684,14394 -3607,14249 -3517,14218
-(Münsinger Park)	NN -3624,14113 -3663,14277 -3686,14348 -3712,14393 -3769,14429
-(Münsinger Park, Hohenzollernring - Seegefelder Str.)	NN -3684,14394 -3686,14348
+(Münsingerpark)	NN -3721,14495 -3684,14394 -3621,14270 -3607,14249 -3517,14218
+(Münsingerpark)	NN -3624,14113 -3661,14274 -3686,14348 -3712,14393 -3769,14429
+#: note: beleuchtet
+(Münsingerpark)	NN -3621,14270 -3661,14274 -3748,14285 -3811,14299
+(Münsingerpark, Hohenzollernring - Seegefelder Str.)	NN -3684,14394 -3686,14348
 Neuendorfer Str.	H -3228,14794 -3295,14777
 Neuendorfer Str.	H -3251,14741 -3228,14794 -3153,14868 -3126,14948 -3110,15000 -3080,15091 -3043,15207 -3034,15217 -2992,15271 -2968,15333 -2949,15385 -2908,15498 -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
 (Neuendorfer Str. - Neue Brücke)	N -3153,14868 -3113,14832 -3123,14755
@@ -15410,7 +15412,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-04-14
+#: last_checked: 2023-04-22
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15798,7 +15800,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-04-14
+#: last_checked: 2023-04-22
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -20329,11 +20331,11 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2023-03-21
+#: last_checked: 2023-04-22
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2023-03-21
+#: last_checked: 2023-04-22
 #: check_frequency: 30d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21666,5705 21632,5670 21605,5687
 # 

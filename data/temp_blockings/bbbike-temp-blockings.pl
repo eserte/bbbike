@@ -31122,7 +31122,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-04-15
+#: last_checked: 2023-04-22
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32521,7 +32521,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende März 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte April 2023: südlicher Abschnitt ist asphaltiert, aber noch nicht freigegeben)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32530,7 +32530,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-03-27
+#: last_checked: 2023-04-22
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -35390,7 +35390,7 @@ EOF
 #: note: Unterführung passierbar: 2023-02-19 mittags
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-03-26 vvv
+#: last_checked: 2023-04-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-25 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
@@ -36057,7 +36057,7 @@ EOF
 EOF
      },
      { from  => 1659546069, # 2022-08-03 19:01
-       until => undef, # 1671222245, # 1671231600, # 2022-12-17 00:00
+       until => 1682171967, # undef, # 1671222245, # 1671231600, # 2022-12-17 00:00
        # was: 'Wallensteinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Ilsestr. und Sangeallee; außerdem ist die Ilsestr. an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt'
        text  => 'Ilsestr.: Bauarbeiten, an der Wallensteinstr. gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
@@ -36066,10 +36066,7 @@ EOF
 #: next_check_id: WALLENSTEIN-2022
 # REMOVED --- #: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags, 2022-10-26 (Mi) gegen 12:30, 2022-11-05 (Sa) gegen 10:15, 2022-11-12 (Sa) gegen 12:40, 2022-12-13 (Di) gegen 13:10 --- #: note: tatsächlich Bauarbeiten beobachtet: 2022-11-25 (Fr) gegen 12:35 (Baufahrzeug in Aktion), 2022-12-05 (Mo) gegen 13:45 (Baufahrzeug in Aktion, abschnittsweise konnte die Fahrbahn trotzdem genutzt werden)
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
-#: XXX Wie lange dauern noch die Bauarbeiten?
-#: also_indoor: traffic (ex-G,B)
-#: last_checked: 2023-04-14
-#: check_frequency: 21d
+# REMOVED --- #: XXX Wie lange dauern noch die Bauarbeiten? --- #: also_indoor: traffic (ex-G,B) --- #: last_checked: 2023-04-22 --- #: check_frequency: 21d
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 # REMOVED (keine Sperrung mehr) --- Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 # REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
@@ -37669,7 +37666,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-13 (mapillary)
+#: last_checked: 2023-04-22
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -37914,7 +37911,7 @@ EOF
        text  => 'Fußgängerbrücke Ostkreuz: Ausgang Hauptstr. wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2023-04-11
+#: last_checked: 2023-04-22
 #: check_frequency: 10d
 	2::inwork 14810,10832 14738,10892
 EOF
@@ -38017,17 +38014,18 @@ EOF
      },
      { from  => 1677610008, # 2023-02-28 19:46
        until => undef, # 1681595999, # 2023-04-15 23:59
-       text  => 'Oskarstr.: zwischen Hegemeisterweg und Gleyeweg Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
+       text  => 'Oskarstr.: zwischen Gleyeweg und Am Walde Bauarbeiten, Fahrbahn gesperrt; Stand Mitte April 2023: noch immer Bauarbeiten',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: OSKAR-2023
 #: XXX Halteverbotsschilder gelten bis zum 14.4.2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-04-14
+#: last_checked: 2023-04-22
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2023-04-14
-	q3::inwork 17793,8012 17762,7931
+# REMOVED (hier nicht mehr) ---	q3::inwork 17793,8012 17762,7931
 # REMOVED (hier nicht mehr) ---	q3::inwork 17803,8079 17808,8042 17793,8012
+	q3::inwork 17762,7931 17771,7880
 EOF
      },
      { from  => 1678575600, # 2023-03-12 00:00
@@ -38151,7 +38149,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein',
+       text  => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein, möglicherweise bis Ende Mai 2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
@@ -38162,8 +38160,9 @@ EOF
 # REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
 # REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
 #: osm_watch: way id="1117716285" version="2"
-#: last_checked: 2023-03-17
-#: check_frequency: 14d
+#: last_checked: 2023-04-22
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2023-05-31
 	2::inwork 18818,3332 18834,3315
 EOF
      },
@@ -38279,11 +38278,16 @@ EOF
        text  => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2023-04-22 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2023-06-30 vvv
 #: XXX möglicherweise Asphaltierung?
-#: last_checked: 2023-04-14
-#: check_frequency: 45d
-#: check_frequency: 2023-06-30
-	q4::inwork 17856,8162 17793,8225 17753,8290 17771,8349
+	q4::inwork 17856,8162 17793,8225 17753,8290
+#: note: Einschränkungen im Kreuzungsbereich
+	q3::inwork 17753,8290 17771,8349
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1680386400, # 2023-04-02 00:00
