@@ -638,7 +638,7 @@ plz berlin:	plz-orig
 	cat plz-orig | \
 	    ${GREPSTRASSEN} -v -sectionrx "ortsteile" -preserveglobaldirectives | \
 	    $(CONVERT2HAFAS) -basefile plz-orig -specborder=berlin - > plz~
-	${COMBINE_STREETS} berlin > berlin~
+	${COMBINE_STREETS} -closedpolygon berlin > berlin~
 	mv -f berlin~ berlin
 	mv -f plz~ plz
 	-@$(READONLY) plz berlin
@@ -655,7 +655,7 @@ potsdam:	potsdam-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) potsdam-orig > potsdam~
 	mv -f potsdam~ potsdam
-	${COMBINE_STREETS} potsdam > potsdam~
+	${COMBINE_STREETS} -closedpolygon potsdam > potsdam~
 	mv -f potsdam~ potsdam
 	-@$(READONLY) $@
 
