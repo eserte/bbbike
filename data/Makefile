@@ -439,10 +439,7 @@ strassen_bab: strassen_bab-orig
 	mv $@~ $@
 	-@$(READONLY) $@
 
-# Get categories with:
-#     echo $(perl -nle '/\t([^:;\s]+)/ && print $1' sbahn-orig | sort -u)
-# (actual sorting is manually adjusted)
-SBAHN_CATEGORIES=	SA SB SC S0 SBau
+SBAHN_CATEGORIES!=	${PERL} -I${BBBIKEDIR} -MStrassen::Cat -e '@cats = Strassen::Cat::get_category_list(q{sbahn}); print "@cats"'
 
 sbahn: sbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
@@ -468,10 +465,7 @@ sbahnhof:	sbahnhof-orig
 # cp -f data/Berlin.coords.data /tmp
 # perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
-# Get categories with:
-#     echo $(perl -nle '/\t([^:;\s]+)/ && print $1' rbahn-orig | sort -u)
-# (actual sorting is manually adjusted)
-RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP RP0 Ropeway
+RBAHN_CATEGORIES!=	${PERL} -I${BBBIKEDIR} -MStrassen::Cat -e '@cats = Strassen::Cat::get_category_list(q{rbahn}); print "@cats"'
 
 rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014,2016,2017,2020,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016,2017,2020,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.05';
+$VERSION = '2.06';
 
 use File::Basename qw(basename);
 
@@ -64,6 +64,9 @@ my %versioned_file_to_cat;
 			     sub { /^q[01234](?:::?(?:inwork|igndisp))*$/ }
 			    );
 
+    my @sbahn_categories = qw(SA SB SC S0 SBau);
+    my @rbahn_categories = qw(RA RB RC R R0 RBau RG RP RP0 Ropeway);
+
     my %filetype_to_cat =
     (
      "borders"	      => [qw(Z)],
@@ -73,8 +76,16 @@ my %versioned_file_to_cat;
      "orte"	      => [qw(0 1 2 3 4 5 6)],
      "qualitaet"      => [qw(Q0 Q1 Q2 Q3)],
      "radwege"	      => [qw(RW0 RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RW9 RW10 RW)],
-     "rbahn"	      => [sub { /^(R(?:|0|A|B|C|Bau|G|P|P0)(?:::(?:_?Tu_?|Br))?|Ropeway)$/ }],
-     "sbahn"	      => [sub { /^S(?:0|A|B|C|Bau)(?:::(?:_?Tu_?|Br))?$/ }],
+     "rbahn"	      => [do {
+	 my $rx = '^(?:' . join('|', map { quotemeta } @rbahn_categories) . ')(?:::(?:_?Tu_?|Br))?$';
+	 $rx = qr{$rx};
+	 sub { m{$rx} }
+     }],
+     "sbahn"	      => [do {
+	 my $rx = '^(?:' . join('|', map { quotemeta } @sbahn_categories) . ')(?:::(?:_?Tu_?|Br))?$';
+	 $rx = qr{$rx};
+	 sub { m{$rx} }
+     }],
      "sehenswuerdigkeit" => [qw(F:SW SW F:Shop Shop),
 			     sub {
 				 my $anchor  = qr{\|ANCHOR:[news]};
@@ -200,6 +211,20 @@ my %versioned_file_to_cat;
      "wasserumland"		=> $filetype_to_cat{"wasserstrassen"},
      "wasserumland2"		=> $filetype_to_cat{"wasserstrassen"},
     );
+
+    # For some filetypes a list of "plain" categories may be returned
+    # ("plain" means without category attributes). Used in
+    # data/Makefile.
+    sub get_category_list {
+	my($filetype) = @_;
+	if      ($filetype eq 'sbahn') {
+	    @sbahn_categories;
+	} elsif ($filetype eq 'rbahn') {
+	    @rbahn_categories;
+	} else {
+	    die "No support for filetype '$filetype'";
+	}
+    }
 }
 
 sub _normalize_filename {
