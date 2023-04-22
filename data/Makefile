@@ -440,7 +440,8 @@ strassen_bab: strassen_bab-orig
 	-@$(READONLY) $@
 
 # Get categories with:
-# perl -nle '/\t(\S+)/ && print $1' sbahn-orig | sort -u
+#     echo $(perl -nle '/\t([^:;\s]+)/ && print $1' sbahn-orig | sort -u)
+# (actual sorting is manually adjusted)
 SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
 sbahn: sbahn-orig Makefile $(CONVERT_ORIG_FILE)
@@ -467,15 +468,17 @@ sbahnhof:	sbahnhof-orig
 # cp -f data/Berlin.coords.data /tmp
 # perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
-# See SBAHN_CATEGORIES comment
-RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP
+# Get categories with:
+#     echo $(perl -nle '/\t([^:;\s]+)/ && print $1' rbahn-orig | sort -u)
+# (actual sorting is manually adjusted)
+RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP RP0 Ropeway
 
 rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
 	-@rm -f /tmp/rbahn
 	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | $(SORT_NO_LOCALE) > /tmp/rbahn-$(cat)
+	$(GREPSTRASSEN) -catrx '^$(cat)($$|[:;].*)' /tmp/rbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | $(SORT_NO_LOCALE) > /tmp/rbahn-$(cat)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn~
 	mv rbahn~ rbahn
