@@ -3832,9 +3832,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
+         'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen, am So 2023-04-23 gegen 15:50 geschlossen
 #: tempex: volatile
-	2::night 16196,18364 16315,18208
+	2::night:weekend 16196,18364 16315,18208
 ',
          'from' => undef,
          'id' => 2779,
@@ -5243,7 +5243,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 05.05.2023)
+# REMOVED (Überquerung wieder möglich) --- #: next_check_id: FRANKFURTER-2021 --- #: note: auch last Schild der Wasserbetriebe bis März 2022 --- #: last_checked: 2021-12-11 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-03-31 vvv
+	3 14888,11934 14926,12129 15003,12241
+	3 15003,12241 14926,12129 14888,11934
+	3 14888,11934 14926,12129 14854,12137
+	3 15003,12241 14926,12129 14994,12121
+	3 14994,12064 14994,12121 14926,12129
+	3 15110,12107 14994,12121 14994,12064
+Finowstr. -> Frankfurter Allee	3 14836,12045 14854,12137 14709,12156
+Frankfurter Allee -> Finowstr.	3 14926,12129 14854,12137 14836,12045
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3404,
+         'source_id' => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
+         'text' => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr., Finowstr. und Müggelstr. nicht möglich, voraussichtlich bis zum 5. Mai 2023',
+         'type' => 'gesperrt',
+         'until' => 1683298800
+       },
        undef,
        undef,
        undef,
@@ -6401,7 +6420,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-13
+#: last_checked: 2023-04-23
 #: check_frequency: 30d
 #: next_check: 2023-04-27
 	q4::inwork; 13696,11920 13515,11969
@@ -7219,7 +7238,7 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-03-22 vvv
+#: last_checked: 2023-04-23 vvv
 Roedeliusplatz	q3::inwork 16248,12177 16158,12191
 Magdalenenstr., nördlicher Abschnitt	q3::inwork 16158,12191 16166,12292
 Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
