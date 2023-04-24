@@ -17,7 +17,7 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 # 
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023)
 #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023)
-#: source_id: bvg2021:16#BVG316317_0
+# REMOVED --- #: source_id: bvg2021:16#BVG316317_0
 #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023)
 #: note: siehe auch https://www.openstreetmap.org/note/3474648
 #: XXX evtl. ist auch die Travestr. betroffen
@@ -707,11 +707,14 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # 
 #: next_check_id: GRENZALLEE-2014
-#: osm_watch: way id="38725490" version="20"
+#: osm_watch: way id="38725490" version="21"
+#: XXX laut osm nun für den Kfz-Verkehr freigegeben, wie sieht nun die Radverkehrsführung aus?
 #: last_checked: 2023-04-05 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2023-04-22 vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -855,7 +858,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4+::inwork; 155
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1293657.php (Baumfällungen)
 #: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
-#: last_checked: 2023-03-18 (mapillary) vvv
+#: last_checked: 2023-04-22 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-11-12 vvv
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119

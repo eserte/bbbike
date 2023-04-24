@@ -35446,7 +35446,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-04-21
+#: last_checked: 2023-04-24
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -35849,6 +35849,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1311341.php (ab 5. April 2023 Straßenbau; Verkehrsfreigabe Ende Mai 2023)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-ende-mai-soll-der-4-bauabschnitt-fertig-sein_a378280 (bis Ende Mai 2023)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2023-03-16 vvv
 # REMOVED --- #: check_frequency: 30d vvv
@@ -36747,8 +36748,8 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 EOF
      },
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
-       until => $isodate2epoch->("2023-04-24 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
-       text  => 'Friedrichstr.: Fahrbahn zwischen Johannisstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), voraussichtlich bis 24.4.2023',
+       until => $isodate2epoch->("2023-05-10 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
+       text  => 'Friedrichstr.: Fahrbahn zwischen Johannisstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), voraussichtlich bis 10.5.2023',
 # was: voraussichtlich bis Ende Januar 2023
 # was:      text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
        type  => 'handicap',
@@ -36760,7 +36761,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -36773,7 +36774,7 @@ EOF
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-04-15 vvv
-#: next_check: 2023-04-24 vvv
+#: next_check: 2023-05-10 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -37055,7 +37056,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-21
+#: last_checked: 2023-04-24
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -38467,6 +38468,15 @@ EOF
 #: last_checked: 2023-04-21 (indoor)
 #: check_frequency: 60d
 	2::inwork 11667,-7536 11601,-7560 11494,-7647
+EOF
+     },
+     { from  => 1682229600, # 2023-04-23 08:00
+       until => 1687960800, # 2023-06-28 16:00
+       text  => 'Beiersdorf-Freudenberg: zwischen der B168 und der B158 Fahrbahnsanierung, Sperrung der Straße vom 24.04.2023 bis 28.06.2023',
+       type  => 'gesperrt',
+       source_id => 'LS/221-F/23/038',
+       data  => <<EOF,
+	2::inwork 39383,33334 39478,33359 40356,33162 41112,33306 41500,33497 41751,33561 41925,33512
 EOF
      },
     );
