@@ -161,7 +161,37 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
+#: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
+#: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
+#: by: https://www.stadtfest.berlin/de/index.html?date=20220515
+	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
+	2::temp 6729,10212 6971,10346
+	2::temp 6628,10318 6626,10155
+	2::temp 6487,10277 6628,10318 6719,10347
+	2::temp 6719,10347 6729,10212 6739,10120
+	2::temp 6609,10147 6630,9990
+',
+         'from' => 1689285600,
+         'id' => 74,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.7.2023 und 16.7.2023)',
+         'type' => 'gesperrt',
+         'until' => 1689544799
+       },
        undef,
        undef,
        undef,
@@ -1876,7 +1906,44 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
+#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt\'s den Termin)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
+#: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
+# REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+# REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
+# REMOVED (Laurenzstr., 2022 nichts gesehen) ---	2::temp 22175,4730 22246,4711
+# REMOVED (Rosenstr., 2022 nichts gesehen) ---	2::temp 22144,4660 22212,4655 22284,4653
+# REMOVED (Böttcherstr., 2022 nichts gesehen) ---	2::temp 22212,4655 22214,4548
+	2::temp 22093,4499 22076,4422
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
+	2::temp 22138,4642 22074,4664
+	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22284,4653 22355,4660
+	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+# REMOVED ---	2::temp 22324,4586 22314,4604
+',
+         'from' => 1686780000,
+         'id' => 1702,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (16.06.2023 - 18.06.2023)',
+         'type' => 'gesperrt',
+         'until' => 1687111200
+       },
        undef,
        undef,
        undef,
@@ -2644,7 +2711,39 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
+#: by: https://kreuzberg-festival.de/
+#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
+#: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
+#: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
+#: historical_note: früher Bergmannstraßenfest, zwischenzeitlich Kreuzbergstraßenfest
+#: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
+#: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
+	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
+	3 9000,9509 8970,9323 9007,9264
+	3 9007,9264 8970,9323 9000,9509
+	2::temp 9000,9509 8970,9323
+',
+         'from' => 1687989600,
+         'id' => 2089,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              6,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
+         'text' => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (30.06.2023 bis 02.07.2023)',
+         'type' => 'gesperrt',
+         'until' => 1688335199
+       },
        undef,
        undef,
        undef,
@@ -3210,7 +3309,31 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'until' => 1682978399
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
+#: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
+# REMOVED --- #: tempex: 20170630T2000-20170701T2359
+	2::temp 14161,11930 14274,12190
+',
+         'from' => 1685728800,
+         'id' => 2433,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              6,
+                              'start',
+                              '2021-10-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 03.06.2023',
+         'type' => 'gesperrt',
+         'until' => 1685836800
+       },
        undef,
        undef,
        undef,
@@ -3904,7 +4027,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
 #: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
 #: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.)
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?)
 #: source_id: 2147341022 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
@@ -3924,16 +4047,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023)
 # REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::bomb -1934,6804 -1854,6898
 ',
-         'from' => 1682460000,
+         'from' => 1682373600,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2023 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 26. April 2023 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1682583300
+         'until' => 1682496900
        },
        undef,
        {
@@ -4169,7 +4293,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-fussgaengertunnel-am-bahnhof-im-rohbau-fertig-freigabe-mai-2023-geplant-ITXXXXQB35TUQUAUQ5F7PVVHKE.html
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,765387#msg-765387 (bis Juli 2023)
 #: osm_watch: way id="36936021" version="7" brb
-#: last_checked: 2022-03-12 (mapillary)
+#: last_checked: 2023-04-22 (zdf)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2023-07-31
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -4190,7 +4314,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-04-13
+#: last_checked: 2023-04-25
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4316,13 +4440,15 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5772 (bis Ende August 2023?)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/bezirksverordnete-befuerchten-noch-groesseres-verkehrschaos_a303387
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
+#: next_check: 2023-08-31
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
          'from' => 1543258848,
          'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende August 2023',
+         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, mindestens bis Ende August 2023, voraussichtlich Verlängerung bis zum 3. Quartal 2024',
          'type' => 'gesperrt',
-         'until' => 1693497600
+         'until' => 1727712000
        },
        undef,
        undef,
@@ -4544,10 +4670,11 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-04-12 vvv
+#: last_checked: 2023-04-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
-	2::inwork 13172,11651 13239,11567 13261,11572 13274,11585
+# REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
+	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
@@ -5296,7 +5423,7 @@ Frankfurter Allee -> Finowstr.	3 14926,12129 14854,12137 14836,12045
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-04-02 (mapillary)
+#: last_checked: 2023-04-24 (bahninfo-forum)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -5821,7 +5948,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-04-24
+#: last_checked: 2023-04-25
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -5918,7 +6045,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-20
+#: last_checked: 2023-04-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -6152,7 +6279,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-03-20
+#: last_checked: 2023-04-25
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -6460,7 +6587,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-24
+#: last_checked: 2023-04-25
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -7453,6 +7580,18 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'text' => 'Beiersdorf-Freudenberg: zwischen der B168 und der B158 Fahrbahnsanierung, Sperrung der Straße vom 24.04.2023 bis 28.06.2023',
          'type' => 'gesperrt',
          'until' => 1687960800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
+#: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
+#: next_check: 2023-06-30
+	q4::inwork 20159,3623 20073,3734
+',
+         'from' => 1682892000,
+         'id' => 3775,
+         'text' => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., vom 2. Mai bis Ende Juni 2023',
+         'type' => 'handicap',
+         'until' => 1688162399
        }
      
 );

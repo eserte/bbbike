@@ -599,11 +599,11 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2022-07-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-07-17 23:59:59"),
+     { from  => $isodate2epoch->("2023-07-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2021-10-25T00:00:00"]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (16.7.2022 und 17.7.2022)',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.7.2023 und 16.7.2023)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
@@ -14652,11 +14652,11 @@ EOF
 	2::inwork 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
-     { from  => $isodate2epoch->("2022-06-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-06-19 20:00:00"),
+     { from  => $isodate2epoch->("2023-06-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-06-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
+       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (16.06.2023 - 18.06.2023)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
@@ -14742,7 +14742,7 @@ EOF
        postwarn_days => 2,
        text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (7.7.2022 - 11.7.2022; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 7, start => "2021-10-25T00:00:00"]],
+       recurrences => [['yearly', days => 1, months => 7, start => "2024-10-25T00:00:00"]], # note: Gendarmenmarkt wird saniert, nächste Veranstaltung 2025
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -18432,12 +18432,11 @@ EOF
 	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2022-06-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-07-03 23:59:59"),
+     { from  => $isodate2epoch->("2023-06-29 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-07-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
-       # früher Bergmannstraßenfest
-       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (01.07.2022 bis 03.07.2022)',
+       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (30.06.2023 bis 02.07.2023)',
        type  => 'gesperrt',
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
@@ -18446,6 +18445,7 @@ EOF
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
 #: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
+#: historical_note: früher Bergmannstraßenfest, zwischenzeitlich Kreuzbergstraßenfest
 #: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
 #: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
@@ -21976,15 +21976,16 @@ EOF
 	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2022-06-10 20:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-06-11 02:00:00"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 11.06.2022',
+     { from  => $isodate2epoch->("2023-06-02 20:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-06-04 02:00:00"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 03.06.2023',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 6, start => "2021-10-01T00:00:00"]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
 #: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
+#: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
 # REMOVED --- #: tempex: 20170630T2000-20170701T2359
 	2::temp 14161,11930 14274,12190
 EOF
@@ -23059,8 +23060,8 @@ EOF
      { from  => $isodate2epoch->("2021-09-10 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2021-09-11 22:00:00"),
        periodic => 1, # erster Termin im Jahr
-       recurrences => [["yearly", days => 9, months => 5, start => "2022-12-31T00:00:00"]], # wechselnde Termine, kann auch erst Mitte September passieren; findet 2022 wohl nicht statt
-       #recurrences => [["yearly", days => 11, months => 9]],
+       #recurrences => [["yearly", days => 9, months => 5, start => "2022-12-31T00:00:00"]], # wechselnde Termine, kann auch erst Mitte September passieren; findet 2022 wohl nicht statt
+       recurrences => [["yearly", days => 11, months => 9, start => "2022-12-31T00:00:00"]],
        recurrence_prewarn_days => 7,
        # früher: Fest der Nationen
        # früher: Prager Platz
@@ -23071,7 +23072,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932471.php (Absage 2020)
 #: by: https://www.charlottenburg-wilmersdorf-zeitung.de/fest-der-vielfalt-am-prager-platz/ (11. September 2021, 14-20 Uhr, Nikolsburger Platz/Trautenaustraße)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1123056.php
-#: note: für 2022 noch keine Termine, vielleicht wieder erst im September? -> Auch kein Termin für September 2022
+#: note: für 2022 noch keine Termine, vielleicht wieder erst im September? ... Auch kein Termin für September 2022 ... Auch nichts für das Frühjahr 2023.
 #: note: kein tempex-Ausdruck möglich
 # REMOVED ---	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 	2::temp 5291,9675 5374,9619 5314,9588 5297,9579 5291,9675
@@ -26340,9 +26341,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-04-27 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-04-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-04-26 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 26. April 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26354,7 +26355,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
 #: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
 #: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.)
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?)
 #: source_id: 2147341022 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
@@ -26374,6 +26375,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023)
 # REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
@@ -28271,7 +28273,7 @@ EOF
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-fussgaengertunnel-am-bahnhof-im-rohbau-fertig-freigabe-mai-2023-geplant-ITXXXXQB35TUQUAUQ5F7PVVHKE.html
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,765387#msg-765387 (bis Juli 2023)
 #: osm_watch: way id="36936021" version="7" brb
-#: last_checked: 2022-03-12 (mapillary)
+#: last_checked: 2023-04-22 (zdf)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2023-07-31
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -28333,7 +28335,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-04-13
+#: last_checked: 2023-04-25
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29105,8 +29107,8 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2023-08-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende August 2023',
+       until => $isodate2epoch->("2024-09-30 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, mindestens bis Ende August 2023, voraussichtlich Verlängerung bis zum 3. Quartal 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343519 (bis 31.12.2021) (möglicherweise inaktiv)
@@ -29118,6 +29120,8 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5772 (bis Ende August 2023?)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/bezirksverordnete-befuerchten-noch-groesseres-verkehrschaos_a303387
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
+#: next_check: 2023-08-31
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },
@@ -30357,10 +30361,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-04-12 vvv
+#: last_checked: 2023-04-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
-	2::inwork 13172,11651 13239,11567 13261,11572 13274,11585
+# REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
+	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
@@ -33900,7 +33905,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-04-02 (mapillary)
+#: last_checked: 2023-04-24 (bahninfo-forum)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -35446,7 +35451,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-04-24
+#: last_checked: 2023-04-25
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -35683,7 +35688,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-20
+#: last_checked: 2023-04-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -36541,7 +36546,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-03-20
+#: last_checked: 2023-04-25
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -37056,7 +37061,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-24
+#: last_checked: 2023-04-25
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -38477,6 +38482,17 @@ EOF
        source_id => 'LS/221-F/23/038',
        data  => <<EOF,
 	2::inwork 39383,33334 39478,33359 40356,33162 41112,33306 41500,33497 41751,33561 41925,33512
+EOF
+     },
+     { from  => 1682892000, # 2023-05-01 00:00
+       until => 1688162399, # 2023-06-30 23:59
+       text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., vom 2. Mai bis Ende Juni 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
+#: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
+#: next_check: 2023-06-30
+	q4::inwork 20159,3623 20073,3734
 EOF
      },
     );
