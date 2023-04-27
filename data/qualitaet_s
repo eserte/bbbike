@@ -616,7 +616,7 @@ Bartastr.: Asphalt mit Schäden	Q1 13686,7627 13654,7723
 Wipperstr.: Kopfsteinpflaster	Q2 13117,7471 13133,7375 13150,7254
 Wipperstr.: Asphalt	Q0 13150,7254 13161,7173
 Schöneweider Str.: Kopfsteinpflaster	Q2 13133,7375 13341,7423
-Kanner Str.: gutes Kopfsteinpflaster	Q1 13341,7423 13373,7426
+Kanner Str.: Asphalt	Q0 13341,7423 13373,7426
 Kanner Str.: Asphalt	Q0 13373,7426 13476,7330
 Unstrutstr.: Asphalt	Q0 13476,7330 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
@@ -817,7 +817,7 @@ Roland-Krüger-Str.: Kopfsteinpflaster	Q2 12478,7878 12571,7899
 Roland-Krüger-Str. - Lessinghöhe: Verbundsteinpflaster	Q1 12571,7899 12602,7907
 Neuwedeller Str.: Kopfsteinpflaster	Q2 12327,7847 12335,7770
 Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
-Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11929,7512 11878,7501 11803,7487 11675,7462 11558,7438
+Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11929,7512 11878,7501 11803,7487 11731,7473 11675,7462 11558,7438
 Auguststr.: Kopfsteinpflaster	Q2 10309,13601 10263,13594 10142,13556 10049,13528
 (Kleine) Rosenthaler Str.: Asphalt	Q0 10301,13701 10309,13601 10313,13568 10318,13528
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11562,12597 11329,12497
@@ -1806,7 +1806,7 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
 (Wolfgang-Harlan-Str. - Landschaftspark Johannisthal): Asphalt	Q0 18018,3276 18027,3276
 (Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt	Q0 17607,4068 17621,4063 17883,3976 17953,3955 18006,3992 18122,4074
-Bergiusstr.: Asphalt	Q0 14051,6731 14106,6663 14150,6609 14193,6556 14366,6337
+Bergiusstr.: Asphalt	Q0 14150,6609 14193,6556 14366,6337
 Bergiusstr.: Betonstraße	Q0 14366,6337 14396,6298 14398,6184
 Nobelstr.: Betonstraße	Q0 14133,6187 14398,6184
 Nobelstr.: Asphalt	Q0 14398,6184 14691,6173 14784,6169
@@ -10281,7 +10281,7 @@ Dorfstr. (Wartenberg) [Nebenstraße]: Beton	Q0 17824,18963 17874,18936 17958,1890
 (Am Städtischen Zentralfriedhof - Landschaftspark Herzberge): wassergebundene Decke	Q1 17580,12625 17548,12703 17507,12760 17507,12781
 (Oderstr. - Kirchhofweg): Verbundsteinpflaster	Q1 11565,7402 11602,7375
 (Oderstr. - Kirchhofweg): wassergebundene Decke	Q1 11602,7375 11656,7375 11677,7351 11687,7284
-(Weg im Anita-Berber-Park): wassergebundene Decke	Q1 11677,7351 12158,7449
+(Weg im Anita-Berber-Park): wassergebundene Decke	Q1 11677,7351 11751,7366 12158,7449
 Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
 Gotlindestr. [Wohngebietsstraße]: Verbundsteinpflaster	Q1 16470,12612 16471,12657 16473,12707 16515,12711 16517,12665 16471,12657
 (Obrikatstr. - Brückenstr.): Asphalt	Q0 17847,6089 17900,6072
@@ -11198,6 +11198,9 @@ Lietzenburger Str. - Fürther Str.: Gehwegplatten, Mosaikpflaster	Q1 5764,10322 5
 Mauerstr.: Kleinpflastersteine	Q1 9405,11413 9459,11371
 Mauerstr. - Friedrichstr.: Gehwegplatten	Q0 9459,11371 9474,11360
 Leinestr. [Stichstraße]: Beton	Q1 11878,7501 11888,7455
+Leinestr. [Stichstraße]: schadhafter Beton	Q2 11731,7473 11738,7431
+(Leinestr. - Anita-Berber-Park): Gitter	Q1 11738,7431 11727,7423 11740,7423
+(Leinestr. - Anita-Berber-Park): wassergebundene Decke	Q1 11740,7423 11751,7366
 (Weg entlang der Straßenbahnstrecke): Asphalt	Q0 18836,3203 18834,3315 18833,3388 18835,3562
 (Weg entlang der Straßenbahnstrecke): glattes Kleinsteinpflaster	Q1 18835,3562 18851,3598
 (Straßenbahnstrecke - Konrad-Zuse-Str.): glattes Kleinsteinpflaster	Q1 18833,3388 18857,3418
@@ -11218,7 +11221,7 @@ St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0 10216,12706 10287,127
 (Jenbacher Weg - Mauerweg): Asphalt	Q0 6411,533 6413,520 6401,464 6427,395 6424,346 6388,241 6357,215
 Stindestr.: Kopfsteinpflaster	Q2 6272,4716 6212,4622
 Großbeerenstr.: Asphalt mit einigen Schäden	Q1; 8602,2377 8655,2556 8674,2627
-Blücherstr.: Asphalt, einige Schäden	Q0; 10580,9361 10306,9640
+Blücherstr.: Asphalt mit einigen Schäden	Q1 10429,9514 10306,9640
 Agricolastr.: Asphalt	Q0 5376,12781 5543,12664 5673,12581 5797,12494
 Götelstr. [Parallelstraße]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
 Hölderlinstr.: Asphalt mit einigen leichten Schäden	Q0 1787,11509 1586,11483 1429,11528

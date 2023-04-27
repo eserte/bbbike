@@ -355,7 +355,7 @@ Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241
 #: confirmed_by: srt
 #: XXX bleibt das Provisorium?
 #: osm_watch: way id="984857536" version="5"
-#: last_checked: 2023-01-26
+#: last_checked: 2023-04-27
 #: check_frequency: 90d
 provisorische geschützte Radspur	RW3; 13155,9907 13136,9883 13086,9825 13026,9854
 	RW1; 13026,9854 12932,9900
@@ -895,7 +895,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
-#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023)
+#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-04-23
 #: check_frequency: 60d
@@ -1107,9 +1107,9 @@ Gehwegplatten, teilweise mit Schäden und Hebungen	RW1; 16815,1278 16698,1392 166
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 16135,2135 16028,2261 15980,2318 15804,2512 15736,2593 15613,2739 15599,2752 15572,2785
 #: by: https://nitter.cz/VIZ_Berlin/status/1643191201942626304#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMzSkVhSlhvQUVSMEdRLmpwZw==
-#: source_id: viz2021:13.477441,52.430079,04.04.2023,08:00 (bis 28.04.2023)
+#: source_id: viz2021:13.477441,52.430079,04.04.2023,08:00 (bis 28.04.2023) (bis 26.05.2023)
 #: XXX Instandsetzung des Radwegs
-#: next_check: 2023-04-28
+#: next_check: 2023-05-26
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15572,2785 15459,2921 15301,3038
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15176,3136 14994,3245
 Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786 14347,3836 14290,3908 14119,4153
@@ -1610,25 +1610,17 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 	RW2;RW1 14239,6875 14153,6795 14139,6786
 # REMOVED --- #: osm_watch: way id="693065560" version="14"
 	RW1;RW1 14344,7003 14257,6895 14239,6875
-#: next_check_id: GRENZALLEE-2014 vvv
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1021149.php (Verkehrsumstellung auf der Grenzallee, evtl. am 25.11.2020; außerdem wird die Bergiusstr. für den Kfz-Verkehr gesperrt (und später sowieso verlegt))
-#: source_id: 2147343690
-#: source_id: LMS-BR_r_LMS-BR_6571 (inaktiv)
-#: XXX siehe auch ampeln-Eintrag vvv
+# REMOVED --- #: next_check_id: GRENZALLEE-2014 vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1021149.php (Verkehrsumstellung auf der Grenzallee, evtl. am 25.11.2020; außerdem wird die Bergiusstr. für den Kfz-Verkehr gesperrt (und später sowieso verlegt)) --- #: source_id: 2147343690 --- #: source_id: LMS-BR_r_LMS-BR_6571 (inaktiv) --- #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2023-04-05 vvv
-#: check_frequency: 30d vvv
-#	RW1;RW2 14051,6731 14139,6786 14153,6795
-#	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
-#: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
-	RW2;RW8 14139,6786 14051,6731 14040,6726 13979,6700
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
+# REMOVED --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 30d vvv
+# REMOVED ---	RW1;RW2 14051,6731 14139,6786 14153,6795
+# REMOVED ---	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
+# REMOVED --- #: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten ---	RW2;RW8 14139,6786 14051,6731 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
-	RW2;RW2 13932,6680 13979,6700
+	RW2; 14139,6786 14051,6731 13932,6680
+	RW2; 13932,6680 14051,6731
+	RW1; 14051,6731 14139,6786
 	RW1;RW1 13932,6680 13882,6674 13786,6670 13712,6656
 	RW1; 13712,6656 13520,6583
 Gehwegplatten, Wurzelschäden	RW1; 13520,6583 13712,6656
@@ -4466,7 +4458,12 @@ vorhandener Radweg ist abgesperrt, sehr eng	RW0; 13566,5792 13394,5754
 	RW6;RW6 5922,12765 5914,12845
 	RW6;RW6 5914,12845 5938,12848
 # REMOVED (ja) --- #: XXX wie wird die Radwegführung hier sein? Offizieller Zweirichtungsradweg? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02
-gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14150,6609 14106,6663 14051,6731
+gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14150,6609
+#: next_check_id: GRENZALLEE-2014
+#: last_checked: 2023-04-27
+#: next_check_id: 2023-06-30
+provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14150,6609 14137,6658 14179,6714 14179,6743 14139,6786
+# REMOVED --- gemeinsamer Geh- und Radweg	RW2;RW8 14150,6609 14106,6663 14051,6731
 #: by: osm:
 	RW6;RW6 5782,14067 5943,14049
 # 
@@ -5307,7 +5304,10 @@ am Anfang Verbundsteinpflaster, dann nur noch aufgemalt	RW1; 14617,7243 14693,71
 # REMOVED (mittlerweile 20er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 13188,7590 13117,7471
 # REMOVED (mittlerweile 20er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 13392,7648 13513,7532
 # REMOVED (mittlerweile 20er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 13424,7680 13566,7649
-Tempo 10	RW6;RW6 13476,7330 13373,7426 13341,7423
+#: XXX Wird Tempo 10 wieder eingeführt?
+#: last_checked: 2023-04-27
+#: historical_note: Tempo 10	RW6;RW6
+	RW0;RW0 13476,7330 13373,7426 13341,7423
 #: by: Martin Weber (und ADFC-Karte):
 #: confirmed_by: srt
 	RW1;RW1 -4748,14237 -4835,14223 -4891,14169 -5879,14242 -6024,14252
@@ -7780,7 +7780,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="29"
 #: osm_watch: way id="335487059" version="27"
-#: last_checked: 2023-04-25 vvv
+#: last_checked: 2023-04-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

@@ -232,7 +232,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023)
-#: last_checked: 2023-04-21 vvv
+#: last_checked: 2023-04-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
@@ -265,7 +265,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-26
+#: last_checked: 2023-04-27
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -705,22 +705,11 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # REMOVED (fertig) --- #: osm_watch: way id="657255429" version="1" --- Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12392,8724 12551,8612
 # REMOVED (widersprüchlich) --- #: next_check_id: DONAUSTR-2018 --- #: also_indoor: traffic (H) --- #: osm_watch: way id="155605273" version="8" --- #: last_checked: 2020-04-18 vvv --- #: check_frequency: 14d vvv --- Donaustr.: Einbahnstraßenregelung zwischen Pannierstr. und Reuterstr.	q3::inwork; 12150,8891 12202,8895
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
-# 
-#: next_check_id: GRENZALLEE-2014
-#: osm_watch: way id="38725490" version="21"
-#: XXX laut osm nun für den Kfz-Verkehr freigegeben, wie sieht nun die Radverkehrsführung aus?
-#: last_checked: 2023-04-05 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-04-22 vvv
-Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
-Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: osm_watch: way id="38725490" version="21" --- #: XXX laut osm nun für den Kfz-Verkehr freigegeben, wie sieht nun die Radverkehrsführung aus? --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-04-22 vvv --- Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743 --- Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2023-04-05 vvv
+#: last_checked: 2023-04-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
@@ -765,7 +754,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: osm_watch: way id="625667165" version="17"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
-#: last_checked: 2023-02-14
+#: last_checked: 2023-04-25 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
@@ -1739,6 +1728,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/planungen-werden-online-vorgestellt_a343700
 #: by: https://berliner-abendblatt.de/2022/05/05/bahnhof-lichtenberg-enhaltestelle-der-strassenbahn-wird-verlegt/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="7"
 #: last_checked: 2023-01-24
 # REMOVED --- #: check_frequency: 90d
@@ -3801,7 +3791,7 @@ Heilbronner Str.: einige Fußgänger	q1- 6140,9338 6144,9295 6131,9241
 Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
 #: XXX_prog BS, ansonsten entfernen
 Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
-(Weg im Anita-Berber-Park): einige Fußgänger	q1 11677,7351 12158,7449
+(Weg im Anita-Berber-Park): einige Fußgänger	q1 11677,7351 11751,7366 12158,7449
 Henriettenplatz: Fußgänger, stellenweise eng	q3 2770,9945 2768,9980 2784,9992 2770,10024
 (Ottomar-Geschke-Str., Gehweg): Fußgänger	q3 21073,4165 21148,4220
 (Zinsgutstr. - Ottomar-Geschke-Str.): einige Fußgänger, teilweise schmal	q2 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165
@@ -4484,6 +4474,9 @@ Hubertusallee: Fußgänger, Bordsteine	q4 2107,8407 2126,8426
 (Schulstr. - Am Zeppelinpark): Bordstein	q2 -8279,13433 -8367,13409
 # 
 Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 19884,4018
+# 
+(Leinestr. - Anita-Berber-Park): enge Rampe	q4+ 11738,7431 11727,7423 11740,7423
+(Leinestr. - Anita-Berber-Park): einige Fußgänger	q1 11740,7423 11751,7366
 # 
 ######################### User Contributions #################################
 # 

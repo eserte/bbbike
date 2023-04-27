@@ -155,7 +155,7 @@ zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
 # REMOVED (stattdessen gibt's die nächsten vier Einträge) --- #: note: längerer Abschnitt, deshalb CS; und nicht CP2;: --- #: XXX_prog: RL:ja, GPS:nein --- Zugang zum Bahndamm über die Terasse der Mambo-Bar	CS; 13923,9405 13953,9372
 Elsenstr. - Bahndamm: bereits an der Beermannstr. auf den linken Gehweg wechseln	PI; 13973,9465 13923,9405 13953,9372
 Bahndamm - Elsenstr.: linken Gehweg bis zur Kiefholzstr. benutzen	CP; 13953,9372 13923,9405 13892,9365 13849,9310
-Elsenstr. - Bahndamm: Absperrgitter, bereits an der Kiefholzstr. auf den Gehweg wechseln	PI; 13849,9310 13892,9365 13923,9405 13953,9372
+Elsenstr. - Bahndamm: Absperrgitter, bereits vor der Bahnbrücke auf den Gehweg wechseln	PI; 13892,9365 13923,9405 13953,9372
 Bahndamm - Elsenstr.: Absperrgitter, zunächst auf dem Gehweg fahren	CP; 13953,9372 13923,9405 13973,9465
 # 
 #: XXX_prog: RL:ja, GPS:nein
@@ -474,7 +474,7 @@ Weg am Marzahn-Hohenschönhauser Grenzgraben: zum Überqueren der Boxberger Str. l
 Walsheimer Str. - Alt-Biesdorf: zunächst linken Gehweg bis zum Biesdorfer Friedhofsweg benutzen	CP; 21352,11701 21251,11560 21275,11547 21311,11528
 # REMOVED (nicht mehr notwendig, Brücke existiert) --- Yorckstr. - Park am Gleisdreieck: schon an der Ampel Bautzener Str. auf den linken Gehweg wechseln (wegen Geländer keine Überquerung der Yorckstr. mehr möglich)	PI; 8192,9619 8358,9568 8357,9598
 #: note: Lastwagen parken an der Einmündung Grenzallee/Straße 12, unübersichtlich!
-Grenzallee - Straße 12: ggfs. schon an der Ampel Autobahnausfahrt/Bergiusstr. auf den linken Gehweg wechseln	PI; 14051,6731 14040,6726 13979,6700 13932,6680 13882,6674 13881,6634
+Grenzallee - Straße 12: ggfs. schon an der Ampel Autobahnausfahrt auf den linken Gehweg wechseln	PI; 14051,6731 13932,6680 13882,6674 13881,6634
 # REMOVED (-> routing_helper-orig) --- Buschkrugallee - Bürgerstr.: bereits an der Fußgängerampel die Straßenseite wechseln	PI; 13316,6320 13307,6359 13289,6355 13283,6354 13239,6344
 Prenzlauer Allee - Wohngebiet: bereits an der Krügerstr. oder Wisbyer Str. auf den linken Gehweg wechseln	PI; 12075,16144 12061,16091 12030,15968 12154,15902
 Mariendorfer Damm - Göllweg: Mittelstreifen kann nicht überquert werden, bis zum Ankogelweg vorfahren und dort den Mariendorfer Damm überqueren	CP; 10276,1383 10239,1481 10119,1435

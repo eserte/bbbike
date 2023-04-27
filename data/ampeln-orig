@@ -153,7 +153,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-04-22 vvv
+#: last_checked: 2023-04-27 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -3384,32 +3384,25 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 18878,9517
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: valid: 20140224-20230630 vvv
-#: last_checked: 2023-04-05 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-06-30 vvv
-#: note: Ampel befindet sich nordwestlich der Kreuzung
-#: osm_watch: node id="9904010844" version="1"
-	F::inwork 14567,6810
-#: note: Extra-Umweg für Radfahrer in Richtung Südosten, Anforderungsampel in dieser Richtung
-#: osm_watch: node id="7838025476" version="4"
-	X::inwork 14724,6668
-#: osm_watch: node id="7694895359" version="2"
-	X::inwork 14366,6337
-#: osm_watch: node id="7694895365" version="2"
-	X::inwork 14193,6556
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: valid: 20140224-20230630 vvv
+# REMOVED --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv
+# REMOVED --- #: note: Ampel befindet sich nordwestlich der Kreuzung --- #: osm_watch: node id="9904010844" version="1" ---	F::inwork 14567,6810
+# REMOVED --- #: note: Extra-Umweg für Radfahrer in Richtung Südosten, Anforderungsampel in dieser Richtung --- #: osm_watch: node id="7838025476" version="4" ---	X::inwork 14724,6668
+# REMOVED --- #: osm_watch: node id="7694895359" version="2" ---	X::inwork 14366,6337
+# REMOVED --- #: osm_watch: node id="7694895365" version="2" ---	X::inwork 14193,6556
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
 #: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr.
-#: last_checked: 2023-04-05
+#: last_checked: 2023-04-27
+#: next_check: 2023-06-30
 	F::inwork 14139,6786
-#: note: Anforderungsampel
-#: last_checked: 2023-04-05
-	F::inwork 13979,6700
-#: next_check ^^^
-#: valid ^^^
+#: XXX wird später möglicherweise nur eine Fußgängerampel sein? eine weitere Ampel wird an der Einmündung Autobahnausfahrt/Bergiusstr. entstehen
+#: last_checked: 2023-04-27
+#: next_check: 2023-06-30
+	X::inwork 14051,6731
+# REMOVED --- #: note: Anforderungsampel --- #: last_checked: 2023-04-05 ---	F::inwork 13979,6700
+# REMOVED --- #: next_check ^^^ --- #: valid ^^^
 #: next_check_id ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
@@ -3432,14 +3425,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-04-27
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="5"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-04-27
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
@@ -3644,7 +3637,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2023-03-04 (mapillary)
+#: last_checked: 2023-04-27
 #: check_frequency: 120d
 	X::inwork 12185,7381
 # 

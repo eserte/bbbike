@@ -3576,7 +3576,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-04-26
+#: last_checked: 2023-04-27
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, Abschnitte des Gehwegs sind gesperrt	2::inwork 12788,11898 12891,12008
@@ -3660,7 +3660,7 @@ Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,53
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2023-03-11
+#: last_checked: 2023-04-27
 #: check_frequency: 60d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 # 
@@ -3814,7 +3814,7 @@ Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	1s:q4:inwork 20336,3
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-04-19 (osm) vvv
+#: last_checked: 2023-04-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-06-01 vvv
 #: osm_watch: way id="358602468" version="12"
@@ -4844,30 +4844,10 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 # REMOVED (laut VMZ beendet) --- #: next_check_id: STERNDAMM-2016 --- #: XXX laut Fritz bis April 2018 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018) --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet) --- #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018) --- #: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html --- #: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180601 (Buslinie wird erst am 27.08.2018 verlängert) --- #: source_id: 2147341515	 --- #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72 --- #: last_checked: 2018-03-10 --- #: next_check: 2018-06-16 --- #: valid: -20180616 --- #: priority: #A --- Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17745,5450 17736,5441
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/04_Umleitungsstrecken_Grenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/02_Ueplan_West_Bph1.pdf --- #: XXX zeitgleich wird die Neuköllnische Allee zwischen Lahnstr. und Grenzallee gesperrt, aber wohl nicht für Radfahrer --- #: source_id: IM_021335 --- #: source_id: 2147338144 --- #: source_id: LMS-BR_r_LMS-BR_6571 --- #: last_checked: 2018-10-27 --- # REMOVED --- #: next_check: 2019-12-31 --- #: next_check: 2019-01-24 --- #: priority: #A --- #: valid: 20140224-20191231 --- Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
-#: next_check_id: GRENZALLEE-2014
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/grenzallee-wird-angebunden_a294931
-#: by: https://twitter.com/VIZ_Berlin/status/1364948097718190084 (bis Ende März 2021 für den Kfz-Verkehr gesperrt)
-#: by: https://berliner-abendblatt.de/2022/05/09/dreieck-neukoelln-keine-zufahrt-zur-grenzallee/ (ab 2022-05-11 für rund drei Monate; ändert sich für Radfahrer etwas?)
-#: by: https://viz.berlin.de/2022/05/as-grenzallee/ (ab 18.05.2022 für drei Monate)
-#: by: https://viz.berlin.de/wp-content/uploads/22-0598-A-100-Grenzallee-16.-BA-gesamt-2022-04-28-1.pdf
-#: source_id: 2147346461 (bis 31.12.2021) (inaktiv)
-#: source_id: 2147346643 (bis 31.12.2021) (inaktiv)
-#: source_id: viz2021:13.4581,52.46415,29.12.2022,09:40 (bis 30.6.2023) (später am Tag wieder entfernt -> inaktiv)
-#: source_id: viz2021:13.456584,52.465328,25.11.2020,08:00 (bis 31.12.2022) (30.6.2023) (bis 19.4.2023) (inaktiv)
-#: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 26.06.2023)
+# REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/grenzallee-wird-angebunden_a294931 --- #: by: https://twitter.com/VIZ_Berlin/status/1364948097718190084 (bis Ende März 2021 für den Kfz-Verkehr gesperrt) --- #: by: https://berliner-abendblatt.de/2022/05/09/dreieck-neukoelln-keine-zufahrt-zur-grenzallee/ (ab 2022-05-11 für rund drei Monate; ändert sich für Radfahrer etwas?) --- #: by: https://viz.berlin.de/2022/05/as-grenzallee/ (ab 18.05.2022 für drei Monate) --- #: by: https://viz.berlin.de/wp-content/uploads/22-0598-A-100-Grenzallee-16.-BA-gesamt-2022-04-28-1.pdf --- #: source_id: 2147346461 (bis 31.12.2021) (inaktiv) --- #: source_id: 2147346643 (bis 31.12.2021) (inaktiv) --- #: source_id: viz2021:13.4581,52.46415,29.12.2022,09:40 (bis 30.6.2023) (später am Tag wieder entfernt -> inaktiv) --- #: source_id: viz2021:13.456584,52.465328,25.11.2020,08:00 (bis 31.12.2022) (30.6.2023) (bis 19.4.2023) (inaktiv) --- #: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 26.06.2023)
 # REMOVED (wurde für was anderes recyclet) --- #: osm_watch: way id="194653032" version="26"
 # REMOVED --- #: osm_watch: way id="1131855532" version="2"
-#: osm_watch: way id="831444833" version="12"
-#: osm_watch: way id="831444834" version="12"
-#: also_indoor: traffic (G,B)
-#: last_checked: 2023-04-05 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-06-26 vvv
-Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
-Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: osm_watch: way id="831444833" version="12" --- #: osm_watch: way id="831444834" version="12" --- #: also_indoor: traffic (G,B) --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-26 vvv --- Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663 --- Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
@@ -4875,7 +4855,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-04-05
+#: last_checked: 2023-04-27
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
