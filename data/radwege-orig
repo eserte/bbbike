@@ -1487,7 +1487,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="24"
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-30
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1501,7 +1501,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="38"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2023-04-12
+#: last_checked: 2023-04-30
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -1881,7 +1881,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5258,11285 5153,11357 5085,11413 5080,11417 
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-04-21 vvv
+#: last_checked: 2023-04-27 (mapillary) vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1908,7 +1908,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-04-21 vvv
+#: last_checked: 2023-04-27 (mapillary) vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -3938,12 +3938,12 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
 #: by: https://viz.berlin.de/2022/02/blumberger-damm-bruecke/ (2-tägige Sperrung nur für Kfz)
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
-#: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
+#: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="8"
 #: last_checked: 2023-03-26 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-06-01 vvv
+#: next_check: 2025-11-30 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
 # REMOVED (während der Bauarbeiten) --- Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
 # REMOVED (während der Bauarbeiten) --- alter Beton	RW1; 21190,12193 21199,12258
@@ -4298,7 +4298,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2023-03-28 vvv
+#: last_checked: 2023-04-30 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-05-28 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -7026,7 +7026,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-04-18 vvv
+#: last_checked: 2023-04-30 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7493,7 +7493,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-30
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8003,7 +8003,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38515,52.44928,27.01.2023,11:11 (bis 06.03.2023) (inaktiv)
 #: source_id: viz2021:13.385832,52.445579,14.02.2023,08:00 (bis 15.3.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv)
-#: source_id: viz2021:13.385342,52.44754,17.03.2023,06:00 (bis 31.05.2023)
+#: source_id: viz2021:13.385342,52.44754,17.03.2023,06:00 (bis 31.05.2023) (bis 15.06.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-04-10 vvv

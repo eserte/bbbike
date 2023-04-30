@@ -595,7 +595,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-04-09
+#: last_checked: 2023-04-30
 #: check_frequency: 150d
 #: next_check: 2024-12-31
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -945,11 +945,11 @@ Wipperstr.: Kopfsteinpflaster	Q2- 13117,7471 13133,7375 13150,7254
 Wipperstr.: Asphalt	Q0 13150,7254 13161,7173
 Schöneweider Str.: Kopfsteinpflaster	Q2- 13133,7375 13341,7423
 #: historical_note: früher: gutes Kopfsteinpflaster, Q1
-#: note: glattes Moabiter Kissen
-Kanner Str.: Asphalt	Q0 13341,7423 13373,7426
+#: note: mit "Rixdorfer Kissen"
+Kanner Str.: Asphalt	Q0- 13341,7423 13373,7426
 #: historical_note: früher: Asphalt mit Schäden, Q1
-#: note: glattes Moabiter Kissen
-Kanner Str.: Asphalt	Q0 13373,7426 13476,7330
+#: note: mit erhöhter Überquerungshilfe für Fußgänger
+Kanner Str.: Asphalt	Q0- 13373,7426 13476,7330
 Unstrutstr.: Asphalt	Q0 13476,7330 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 #: note: nach Regenfällen Pfützen
@@ -1099,7 +1099,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-04-19
+#: last_checked: 2023-04-30
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -7272,6 +7272,7 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.940819.php (ab 8.6.2020 für ca. drei Monate)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/veitstrasse-wird-erneuert-und-ist-drei-monate-gesperrt_a276028
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1317571.php (zur geplanten Gehwegverbreiterung)
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/neue-cdu-verkehrsstadtraetin-laesst-gehwegparken-in-der-veithstrasse-weiter-zu_a379534
 #: note: während den Bauarbeiten ist der Radverkehr laut viz nicht betroffen
 #: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020)
 #: priority: #C
@@ -14959,7 +14960,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20220724 (BPU 2022 anvisiert, außerdem Erwähnung der Planung in der Hermann-Hesse-Str.)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: osm_watch: way id="4764684" version="25"
-#: osm_watch: way id="26790073" version="14"
+#: osm_watch: way id="26790073" version="15"
 #: last_checked: 2022-11-15
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421

@@ -1040,6 +1040,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
+Neumeichow - Blankenburg	1 46866,88892 47130,88771 47222,88669 47396,88566 47545,88381 47675,88141
 Jüterboger Str., Wallstr. (Kloster Zinna)	1 -8922,-43250 -9006,-43232 -9050,-43212 -9091,-43151 -9044,-42958
 Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
 Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
@@ -1115,7 +1116,7 @@ Vorfahrt Flughafen Schönefeld	1 18419,-1418 18429,-1443 18480,-1577 18532,-1717 
 Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
 Mittelstr. B179	1 18368,-1337 18419,-1418
 Mittelstr. B179	1 18293,-1472 18279,-1438 18368,-1337
-Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 52355,93894
+Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52442,94134 52419,94029 52355,93894
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88890,-6691 88881,-6462 88775,-6151 88759,-5911
@@ -1184,6 +1185,8 @@ Markt (Luckenwalde)	1 -4358,-35445 -4307,-35421 -4274,-35352
 Markt (Luckenwalde)	1 -4274,-35352 -4248,-35379 -4309,-35471
 Breite Str. (Luckenwalde)	1s -4299,-35514 -4208,-35409
 Schulstr. (Joachimsthal)	1s 32331,64049 32388,64047 32459,64042
+B109: Templin - Prenzlau	1:igndisp 16435,79761 16360,79693 16323,79690
+B109: Templin - Prenzlau	1:igndisp 16323,79690 16331,79764
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935

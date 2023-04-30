@@ -5115,19 +5115,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Stand Februar 2023: Bauarbeiten sind noch nicht vorbei, aber die Umleitungsführung ist derzeitig "deaktiviert".
-# REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
-#: also_indoor: traffic (G,H)
-	2::inwork 48929,70947 49089,70562 49253,70168
-',
-         'from' => 1618696800,
-         'id' => 3361,
-         'source_id' => 'LS/721-E/21/032',
-         'text' => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 30.04.2023',
-         'type' => 'gesperrt',
-         'until' => 1682863200
-       },
+       undef,
        {
          'data' => '	2::temp -1846,8129 -1798,7949 -1640,7832 -1328,7597
 ',
@@ -5270,7 +5258,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
 #: source_id: viz2021:13.19772,52.52281,24.10.2022,12:12 (bis 29.04.2023) (inaktiv)
-#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023)
+#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023) (bis 26.05.2023)
 #: source_id: bvg2021:m36#BVG279266_0
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
 # REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
@@ -5280,9 +5268,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1624917600,
          'id' => 3401,
          'source_id' => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
-         'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 28.04.2023',
+         'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 26.05.2023',
          'type' => 'handicap',
-         'until' => 1682780400
+         'until' => 1685113200
        },
        undef,
        {
@@ -5791,23 +5779,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (ex-G,ex-H,B)
-#: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
-#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022) (inaktiv) (bis 30.4.2023) (bis 28.4.2023)
-#: last_checked: 2023-01-03 (vmz)
-# REMOVED --- #: check_frequency: 7d
-#: next_check: 2023-04-28
-	q4::inwork; -5804,16415 -5830,16356 -5849,16199
-# REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
-',
-         'from' => 1650305075,
-         'id' => 3539,
-         'source_id' => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
-         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis Ende April 2023',
-         'type' => 'handicap',
-         'until' => 1682694000
-       },
+       undef,
        {
          'data' => '#: osm_watch: way id="874517258" version="9"
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
@@ -6366,6 +6338,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: by: https://nitter.net/pic/orig/media%2FFizhNZlXkAArDsW.png
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-04-15 vvv
@@ -6466,7 +6439,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-23
+#: last_checked: 2023-04-30
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -6560,6 +6533,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
 #: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (bis 28.8.2023)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
@@ -6885,7 +6859,8 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-30 (Umleitungsschild steht noch)
+#: check_frequency: 14d
 	2::inwork 12173,15040 12095,14888
 ',
          'from' => undef,
@@ -7537,6 +7512,20 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'text' => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., vom 2. Mai bis Ende Juni 2023',
          'type' => 'handicap',
          'until' => 1688162399
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1646541311606923270#m (28.04.2023-15.07.2023, nur für Kfz-Verkehr)
+#: by: https://nitter.cz/VIZ_Berlin/status/1651812233012211712#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV1cm8wZ1hvQUFjTXd0LmpwZw==
+#: source_id: viz2021:13.24634,52.426424,28.04.2023,07:00 (nur Kfz-Verkehr, bis 14.07.2023)
+	q2::inwork 169,2264 96,2225 23,2185
+	q3::inwork -134,2098 -38,2152
+',
+         'from' => 1682571600,
+         'id' => 3776,
+         'text' => 'Berlepschstr.: Sperrungen in Höhe Kösterstr. und Dallwitzstr., evtl. sind auch Radfahrer betroffen, vom 28.04.2023 07:00 bis 14.07.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1689346800
        }
      
 );

@@ -6503,7 +6503,7 @@ EOF
        text  => 'B 198 Polßen-Gramzow OD Gramzow Vollsperrung 16.10.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 49930,89857 49757,90015 49779,90206
+	q4::inwork 49930,89857 49775,89980 49757,90015 49779,90206
 EOF
      },
      { from  => 1161295200, # 2006-10-20 00:00
@@ -6703,7 +6703,7 @@ EOF
        text  => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 16331,79764 16904,79746 17094,79875 17240,80006 17426,80173 17455,80199
+	q4::inwork 16331,79764 16435,79761 16904,79746 17094,79875 17240,80006 17426,80173 17455,80199
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
@@ -30302,7 +30302,7 @@ EOF
        type  => 'gesperrt',
        source_id => '197302254',
        data  => <<EOF,
-	2::inwork 51187,92090 50732,91744
+	2::inwork 51187,92090 50730,91726
 EOF
      },
      { from  => undef, # 
@@ -32743,7 +32743,7 @@ EOF
        type  => 'gesperrt',
        source_id => '217300060',
        data  => <<EOF,
-	2::inwork 53811,97943 53912,97812
+	2::inwork 53814,97948 53908,97809
 EOF
      },
      { from  => 1616698800, # 2021-03-25 20:00
@@ -32924,7 +32924,7 @@ EOF
        until => $isodate2epoch->("2023-04-30 16:00:00"), # 1661192906, # 1662069600, # 2022-09-02 00:00
        text  => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 30.04.2023',
        type  => 'gesperrt',
-       source_id => 'LS/721-E/21/032',
+       source_id => 'LS/721-E/21/032', # inaktiv
        data  => <<EOF,
 #: note: Stand Februar 2023: Bauarbeiten sind noch nicht vorbei, aber die Umleitungsführung ist derzeitig "deaktiviert".
 # REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
@@ -33379,8 +33379,8 @@ EOF
 EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
-       until => $isodate2epoch->("2023-04-29 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 28.04.2023',
+       until => $isodate2epoch->("2023-05-26 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 26.05.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00', # mittlerweile bis 28.4.2023, inaktiv
        data  => <<EOF,
@@ -33390,7 +33390,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
 #: source_id: viz2021:13.19772,52.52281,24.10.2022,12:12 (bis 29.04.2023) (inaktiv)
-#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023)
+#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023) (bis 26.05.2023)
 #: source_id: bvg2021:m36#BVG279266_0
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
 # REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
@@ -33762,7 +33762,7 @@ EOF
        type  => 'gesperrt',
        source_id => '217300307',
        data  => <<EOF,
-	2::inwork 43567,87443 43400,87088 43129,86934 42751,86432 42245,86063
+	2::inwork 43567,87443 43431,87182 43354,87048 43114,86913 42751,86432 42541,86242 42266,86072
 EOF
      },
      { from  => 1629583200, # 2021-08-22 00:00
@@ -34855,7 +34855,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1238153.php
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/information-zu-bauarbeiten_a355817
 #: source_id: 226500387 (bis 31.12.2022) (inaktiv)
-#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023)
+#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023) (inaktiv)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
 #: last_checked: 2022-09-09 (kartaview)
 #: next_check: 2022-10-01
@@ -35255,7 +35255,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,ex-H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
-#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022) (inaktiv) (bis 30.4.2023) (bis 28.4.2023)
+#: source_id: viz2021:13.174654,52.554348,31.03.2021,07:00 (bis 31.12.2022) (inaktiv) (bis 30.4.2023) (bis 28.4.2023) (inaktiv)
 #: last_checked: 2023-01-03 (vmz)
 # REMOVED --- #: check_frequency: 7d
 #: next_check: 2023-04-28
@@ -35926,7 +35926,7 @@ EOF
        type  => 'gesperrt',
        source_id => '227300224',
        data  => <<EOF,
-	2::inwork 42938,96695 43612,96993 44588,96894 44825,96893
+	2::inwork 42934,96700 43009,96735 43612,96993 44588,96894 44825,96893
 EOF
      },
      { from  => 1657094400, # 2022-07-06 10:00
@@ -36775,6 +36775,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFizhNZlXkAArDsW.png
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2023-04-15 vvv
@@ -36955,7 +36956,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-23
+#: last_checked: 2023-04-30
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -37107,6 +37108,7 @@ EOF
 #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
 #: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (bis 28.8.2023)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
@@ -37636,7 +37638,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-28
+#: last_checked: 2023-04-30 (Umleitungsschild steht noch)
+#: check_frequency: 14d
 	2::inwork 12173,15040 12095,14888
 EOF
      },
@@ -37808,7 +37811,7 @@ EOF
        until => $isodate2epoch->("2023-04-06 15:00:00"), # 1680267600, # 2023-03-31 15:00
        text  => 'Falkensee - Alter Finkenkrug: Baustelle, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 13.02.2023 08:00 Uhr bis 06.04.2023 15:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/223-P/22/226',
+       source_id => 'LS/223-P/22/226', # inaktiv
        data  => <<EOF,
 #: XXX Radwegbau
 #: next_check: 2023-04-06
@@ -38313,7 +38316,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.354875,52.448856,31.03.2023,06:00', # inaktiv
        data  => <<EOF,
-#: source_id: viz2021:13.353735,52.447456,31.03.2023,06:00 (bis 28.04.2023, nur eine Richtung gesperrt, und nur Kfz-Verkehr)
+#: source_id: viz2021:13.353735,52.447456,31.03.2023,06:00 (bis 28.04.2023, nur eine Richtung gesperrt, und nur Kfz-Verkehr) (inaktiv)
 	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
 EOF
      },
@@ -38492,6 +38495,19 @@ EOF
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
 #: next_check: 2023-06-30
 	q4::inwork 20159,3623 20073,3734
+EOF
+     },
+     { from  => 1682571600, # 2023-04-27 07:00
+       until => 1689346800, # 2023-07-14 17:00
+       text  => 'Berlepschstr.: Sperrungen in Höhe Kösterstr. und Dallwitzstr., evtl. sind auch Radfahrer betroffen, vom 28.04.2023 07:00 bis 14.07.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1646541311606923270#m (28.04.2023-15.07.2023, nur für Kfz-Verkehr)
+#: by: https://nitter.cz/VIZ_Berlin/status/1651812233012211712#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV1cm8wZ1hvQUFjTXd0LmpwZw==
+#: source_id: viz2021:13.24634,52.426424,28.04.2023,07:00 (nur Kfz-Verkehr, bis 14.07.2023)
+	q2::inwork 169,2264 96,2225 23,2185
+	q3::inwork -134,2098 -38,2152
 EOF
      },
     );

@@ -18,6 +18,7 @@ Prenzlau	OS 36972,100027
 Prenzlau	OS 37020,101115
 Prenzlau	OS 41979,103529
 Prenzlau	OS 40388,104944
+Prenzlau	OS 41054,103738
 # 
 Blindow	OS 41018,106054
 Blindow	OS 41602,106953
@@ -272,7 +273,19 @@ Dauerthal	OS 46634,107416
 Schenkenberg	OS 45784,107451
 Schenkenberg	OS 45822,106918
 Schenkenberg	OS 45241,107625
+Schenkenberg	OS 45244,106889
 #: linked ^^^
+# 
+Wittenhof	OS 43906,105697
+Wittenhof	OS 42884,105089
+# 
+Magnushof	OS 41782,98263
+# 
+Dreyershof	OS 41945,98482
+Dreyershof	OS 42080,98783
+# 
+Alexanderhof	OS 42995,100079
+Alexanderhof	OS 42833,99973
 # 
 #: linked: Tornow|(bei Schönfeld, Uckermark) vvv
 Tornow	OS 45999,110316
@@ -520,9 +533,9 @@ Bietikow	OS 44588,96894
 Bietikow	OS 44778,96200
 Bietikow	OS 44769,96942
 # 
-Seelübbe	OS 42925,96685
-#: note: ungefähre Position
-Seelübbe	OS 42843,96821
+#: historical_note: früher war hier ein Ortsschild: Seelübbe OS 42921,96690
+Seelübbe	OS 43009,96735
+Seelübbe	OS 42842,96829
 #: note: ungefähre Position
 Seelübbe	OS 43044,96539
 Seelübbe	OS 42088,95894
@@ -544,9 +557,13 @@ Blankenburg|(Uckermark)	OS 44650,90587
 Blankenburg|(Uckermark)	OS 45213,90527
 # 
 Neumeichow/Ausbau	OS 46453,89194
-Neumeichow/Ausbau	OS 46772,88975
+Neumeichow/Ausbau	OS 46772,88970
+Neumeichow/Ausbau	OS 46398,89077
 # 
 Neumeichow	OS 49093,87752
+# 
+Melzow	OS 42225,86026
+Melzow	OS 41370,85128
 # 
 Warnitz	OS 41244,86900
 Warnitz	OS 41223,88013
@@ -603,7 +620,7 @@ Lützlow	OS 52515,94250
 # 
 #: linked: Wollin|(Randowtal) vvv
 Wollin	OS 53763,97535
-Wollin	OS 53912,97812
+Wollin	OS 53908,97809
 #: note: früher OS
 Wollin	OHT 53320,98110
 Wollin	OHT 53631,97972
@@ -1116,7 +1133,7 @@ Arendsee	OS 24670,103515
 # 
 Milmersdorf	OS 24689,77347
 Milmersdorf	OS 25175,79308
-#: by: mapillary
+Milmersdorf	OS 24412,78672
 Milmersdorf	OS 25328,79323
 # 
 Ahlimbsmühle	OS 23929,74843
@@ -1585,7 +1602,7 @@ Drense	OS 47340,101150
 Drense	OS 47709,101591
 Drense	OS 48485,101810
 # 
-Grünow	OS 45031,101287
+Grünow	OS 45031,101292
 Grünow	OS 46326,102203
 Grünow	OS 46228,102142
 Grünow	OS 46018,102470
@@ -1633,8 +1650,7 @@ Fergitz	OS 38748,86791
 #: linked: Suckow|am Oberückersee vvv
 Suckow	OS 38973,84368
 Suckow	OS 39152,83627
-#: by: mapillary
-Suckow	OS 38745,84340
+Suckow	OS 38710,84337
 #: linked ^^^
 # 
 Potzlow	OS 38992,90586
@@ -2133,6 +2149,11 @@ Immenheim	OHT 27755,88677
 # 
 Templin	OS 17426,80173
 Templin	OS 13789,77521
+# 
+#: linked: Ahrensdorf|(Templin) vvv
+Ahrensdorf	OS 20814,79486
+Ahrensdorf	OS 22120,79199
+#: linked ^^^
 # 
 Hindenburg	OS 13383,77168
 Hindenburg	OS 12603,76365
@@ -2996,10 +3017,8 @@ Sputendorf	OS -714,-7615
 #: by: ^^^
 #: linked ^^^
 # 
-#: by: mapillary vvv
-Groß-Kölpin	OS 27527,79395
-Groß-Kölpin	OS 27936,79407
-#: by ^^^
+Groß-Kölpin	OS 27533,79394
+Groß-Kölpin	OS 27930,79408
 # 
 #: by: mapillary vvv
 Luisenhof	OHT 30171,80534
@@ -3012,8 +3031,8 @@ Friedenfelde	OS 31280,81787
 #: by ^^^
 # 
 #: by: mapillary vvv
-Berkenlatten	OS 32958,81966
-Berkenlatten	OS 32937,82367
+Berkenlatten	OS 32958,81969
+Berkenlatten	OS 32935,82362
 #: by ^^^
 # 
 #: by: mapillary vvv
