@@ -2167,7 +2167,7 @@ sub click {
 
     if (($main::f8_editor||'') eq 'external') {
 	my $success = $edit_with_external_editor->();
-	main::status_message("Cannot find line " . $click_info->line, "die") if !$success;
+	main::status_message("Cannot find line " . $click_info->line . " in file " . $file, "die") if !$success;
 	return;
     }
 
