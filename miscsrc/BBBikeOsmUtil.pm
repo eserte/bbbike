@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.30;
+$VERSION = 1.31;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -419,7 +419,7 @@ sub plot_osm_files {
 		next;
 	    }
 
-	    if (exists $tag{name} || exists $tag{amenity}) {
+	    if (exists $tag{name} || exists $tag{amenity} || exists $tag{power}) {
 		my $uninteresting_tags = join(" ",
 					      "user=" . ($node->getAttribute("user")||"<undef>"),
 					      "timestamp=" . ($node->getAttribute("timestamp")||"<undef>"),
