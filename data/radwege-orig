@@ -492,7 +492,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-03-23 vvv
+#: last_checked: 2023-05-01 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -824,9 +824,15 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 	RW1; 7911,15008 8057,14876
 # 
 #: note: Müllerstr., Richtung Norden
-# REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7811,15096
-#: historical_note: früher: provisorische Busspur ist immer gültig, RW5;
-	RW4?; 7911,15008 7811,15096 7745,15160
+# REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
+#: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
+#: osm_watch: way id="25217949" version="44"
+#: last_checked: 2023-05-01
+provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
+#: XXX kommt hier noch ein Radwegschild hin?
+#: osm_watch: way id="374344536" version="14"
+#: last_checked: 2023-05-01
+	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
 Poller	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
@@ -839,8 +845,8 @@ Poller	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
 #: note: außer an Bushaltestellen und Ausfahrten
 Poller	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
 	RW4; 7669,15227 7745,15160
-	RW3; 7745,15160 7811,15096 7911,15008
-# REMOVED --- #: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein ---	RW0; 7811,15096 7911,15008
+	RW3; 7745,15160 7845,15066 7911,15008
+# REMOVED --- #: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein ---	RW0; 7845,15066 7911,15008
 # 
 für Radfahrer freigegebene Busspur gilt Mo-Sa 6-19 Uhr	RW1;RW1 7911,15008 7533,14702 7514,14687 7480,14660 7458,14643
 #: note: Busspur für Radfahrer nicht freigegeben, aber keine Radwegbenutzungspflicht
@@ -897,7 +903,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-04-23
+#: last_checked: 2023-05-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2668,7 +2674,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-01
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -7554,7 +7560,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2023-04-14 vvv
+#: last_checked: 2023-04-29 (bahninfo-forum) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

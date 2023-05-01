@@ -3640,6 +3640,8 @@ Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
 Am Buckersberg: Schotter	Q2 16048,3978 16090,4021 16234,4171 16357,4346 16382,4381 16445,4454
 Ostweg: Schotter	Q2 16445,4454 16483,4505 16518,4551 16547,4590
+#: XXX wird anscheinend neu gemacht, siehe mapillary
+#: last_checked: 2023-04-29 (mapillary)
 Ostweg: zweispuriger Verbundsteinpflasterweg	Q1+ 16547,4590 16604,4668 16781,4910
 #: note: von der S-Bahn aus gesehen:
 Resedenstr.: Kopfsteinpflaster	Q2 4274,4808 4332,4819 4515,4966
@@ -29265,13 +29267,12 @@ Margarete-Kühn-Str.: Asphalt	Q0 5133,12240 5194,12398 5225,12450
 Otto-Dibelius-Str.: Asphalt	Q0 5181,12195 5243,12303 5299,12420
 #: confirmed_by: srt
 Hannah-Karminski-Str.: Asphalt	Q0 5233,12109 5258,12128 5317,12242 5360,12331
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=734501#post734501 (Erneuerung der Straße) --- #: XXX Mitte der Fahrbahn ist mittlerweile asphaltiert, Parkstreifen weiterhin gepflastert --- #: osm_watch: way id="35433912" version="10" --- #: last_checked: 2023-04-06 --- #: check_frequency: 30d
+#: corrected_by: srt (früher: Kopfsteinpflaster, Q2 -> ..., neu gemacht)
+#: note: Parkstreifen sind weiterhin gepflastert
+Schleswiger Ufer: Asphalt	Q0 5714,12266 5800,12361
 #: confirmed_by: srt
-#: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=734501#post734501 (Erneuerung der Straße)
-#: XXX Mitte der Fahrbahn ist mittlerweile asphaltiert, Parkstreifen weiterhin gepflastert
-#: osm_watch: way id="35433912" version="10"
-#: last_checked: 2023-04-06
-#: check_frequency: 30d
-Schleswiger Ufer: Kopfsteinpflaster	Q2 5714,12266 5800,12361 5858,12425
+Schleswiger Ufer: Kopfsteinpflaster	Q2 5800,12361 5858,12425
 Schleswiger Ufer: Kopfsteinpflaster	Q1 5858,12425 5886,12467 5944,12548
 Cuxhavener Str.: Asphalt	Q1 5886,12467 5904,12417 5931,12399
 # REMOVED (lohnt nicht) --- Holsteiner Ufer: Verbundsteine	Q1 6575,12778 6469,12867 6449,12865
@@ -32153,4 +32154,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 20380,3855
 Einmündungsbereich mit Kopfsteinpflaster	Q2 20329,3928
 Kreuzungsbereich asphaltiert	Q0 20790,4114
 Einmündungsbereich asphaltiert	Q0 20981,4628
+Kreuzungsbereich asphaltiert	Q0 5800,12361
 #: ignore ^^^

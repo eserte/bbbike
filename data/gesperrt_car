@@ -366,12 +366,12 @@ Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.:
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8688,16533
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8759,16665
-Müllerstr./Lindower Str.	3nocross::ignrte 7911,15008 7811,15096 7745,15160 7669,15227 7607,15282
-Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7811,15096 7745,15160 7694,15125
+Müllerstr./Lindower Str.	3nocross::ignrte 7911,15008 7845,15066 7745,15160 7669,15227 7607,15282
+Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7845,15066 7745,15160 7694,15125
 Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7669,15227 7745,15160 7929,15355
 Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7669,15227
 Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7929,15355
-Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7811,15096
+Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7845,15066
 Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7694,15125
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213

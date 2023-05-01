@@ -30364,7 +30364,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-04-25 vvv
+#: last_checked: 2023-05-01 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -30745,12 +30745,12 @@ EOF
 #: next_check_id: VOLTAIRE-2019
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
-#: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
+#: source_id: 2147347291 (Kraneinsatz bis 18.6.2021) (inaktiv)
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-31
+#: last_checked: 2023-05-01
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -34779,14 +34779,14 @@ EOF
      },
      { from  => 1643583600, # 2022-01-31 00:00
        until => undef, # 1676321850, # laut osm offen --- undef, # XXX
-       text  => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Mitte April 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
+       text  => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang Mai 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: add_fragezeichen: Ist der Uferweg noch immer wegen Bauarbeiten gesperrt? vvv
-#: last_checked: 2023-04-16 vvv
+#: last_checked: 2023-05-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4993234" version="21"
@@ -37116,8 +37116,8 @@ EOF
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-04-11 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2023-04-29 (bahninfo-forum) vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
 #	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
@@ -38129,9 +38129,11 @@ EOF
      },
      { from  => 1678819239, # 2023-03-14 19:40
        until => 1688162400, # 2023-07-01 00:00
-       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
+       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023, vielleicht noch länger',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: laut osm "Baustelle bis Ende 2023"
+#: osm_watch: way id="1153745378" version="1"
 #: last_checked: 2023-04-02 (mapillary)
 	2::inwork 13078,21754 13031,21538
 EOF
@@ -38322,13 +38324,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Schleswiger Ufer: Bauarbeiten, Fahrbahn gesperrt, außerdem Zufahrt zum Uferweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Schleswiger Ufer - Uferweg: Bauarbeiten, Zufahrt zum Uferweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: note: 2023-04-06: Fahrbahn ist weitgehend fertig, aber Bauarbeiten z.B. im Kreuzungsbereich Flotowstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten hier fertig? vvv
-#: last_checked: 2023-04-06 vvv
-	q3::inwork 5858,12425 5800,12361 5714,12266
+#: last_checked: 2023-05-01 vvv
+# REMOVED (Schleswiger Ufer) ---	q3::inwork 5858,12425 5800,12361 5714,12266
 Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: last_checked ^^^
 #: add_fragezeichen ^^^

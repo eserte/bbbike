@@ -10,9 +10,21 @@
 # 
 ### Friedrichshain ###
 # 
-#: 
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
+#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931
+#: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html
+#: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
+#: by: https://www.gm013.la/work/fmp
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
+#: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
+#: last_checked: 2023-05-01
+#: check_frequency: 30d
+#: next_check: 2023-07-01
+(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
+# 
 #: also_indoor: traffic (B)
-#: last_checked: 2023-04-30
+#: last_checked: 2023-05-01
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -43,7 +55,7 @@ Untere Kynaststr.: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den link
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2023-04-25 vvv
+#: last_checked: 2023-05-01 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -198,7 +210,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2023-02-12
+#: last_checked: 2023-05-01
 #: check_frequency: 150d
 #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -213,7 +225,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2023-04-01
+#: last_checked: 2023-05-01
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -273,7 +285,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
 #: note: bei rbb noch bis 31.12.2022
-#: last_checked: 2023-04-18
+#: last_checked: 2023-05-01
 #: check_frequency: 60d
 #: next_check: 2023-05-26
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -596,13 +608,13 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 #: osm_watch: way id="30195541" version="34"
 #: osm_watch: way id="1101061991" version="7"
 #: osm_watch: way id="310164489" version="26"
-#: last_checked: 2023-04-20 (osm)
+#: last_checked: 2023-05-01
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
 #: source_id: bvg2021:101#BVG301286_0
 #: osm_watch: way id="4571954" version="29"
-#: last_checked: 2023-04-20 (osm)
+#: last_checked: 2023-05-01
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
 #: osm_watch: way id="269696665" version="22"

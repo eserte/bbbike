@@ -2688,7 +2688,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3585,42 +3585,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
-#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
-#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
-#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
-#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
-#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
-	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-	2::inwork 8573,12325 8540,12420
-	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
-	2::inwork 8089,12190 8214,12205
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
-',
-         'from' => 1682805600,
-         'id' => 2565,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4,
-                              'start',
-                              '2021-05-03T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
-         'text' => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2023',
-         'type' => 'gesperrt',
-         'until' => 1682964000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4629,7 +4594,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-04-25 vvv
+#: last_checked: 2023-05-01 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4681,12 +4646,12 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'data' => '#: next_check_id: VOLTAIRE-2019
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
-#: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
+#: source_id: 2147347291 (Kraneinsatz bis 18.6.2021) (inaktiv)
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-03-31
+#: last_checked: 2023-05-01
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -5609,7 +5574,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: add_fragezeichen: Ist der Uferweg noch immer wegen Bauarbeiten gesperrt? vvv
-#: last_checked: 2023-04-16 vvv
+#: last_checked: 2023-05-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4993234" version="21"
@@ -5626,7 +5591,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1643583600,
          'id' => 3507,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
-         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Mitte April 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
+         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang Mai 2023: weiterhin Bauarbeiten und vereinzelte Sperrungen)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6541,8 +6506,8 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-04-11 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2023-04-29 (bahninfo-forum) vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-01-12 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
 #	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
@@ -7212,12 +7177,14 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-04-02 (mapillary)
+         'data' => '#: note: laut osm "Baustelle bis Ende 2023"
+#: osm_watch: way id="1153745378" version="1"
+#: last_checked: 2023-04-02 (mapillary)
 	2::inwork 13078,21754 13031,21538
 ',
          'from' => 1678819239,
          'id' => 3747,
-         'text' => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023',
+         'text' => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023, vielleicht noch länger',
          'type' => 'gesperrt',
          'until' => 1688162400
        },
@@ -7326,29 +7293,19 @@ Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
          'type' => 'handicap',
          'until' => 1688162400
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1310601.php (unpräzises Endedatum: "Mitte/Ende April")
-	2::inwork 22153,4840 22196,4847
-',
-         'from' => 1680386400,
-         'id' => 3757,
-         'text' => 'Luisenhain: Bauarbeiten, Sperrung, vom 3. April 2023 bis voraussichtlich Ende April 2023',
-         'type' => 'gesperrt',
-         'until' => 1682891999
-       },
+       undef,
        undef,
        {
-         'data' => '#: note: 2023-04-06: Fahrbahn ist weitgehend fertig, aber Bauarbeiten z.B. im Kreuzungsbereich Flotowstr.
-#: add_fragezeichen: Wann sind die Bauarbeiten hier fertig? vvv
-#: last_checked: 2023-04-06 vvv
-	q3::inwork 5858,12425 5800,12361 5714,12266
+         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten hier fertig? vvv
+#: last_checked: 2023-05-01 vvv
+# REMOVED (Schleswiger Ufer) ---	q3::inwork 5858,12425 5800,12361 5714,12266
 Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3759,
-         'text' => 'Schleswiger Ufer: Bauarbeiten, Fahrbahn gesperrt, außerdem Zufahrt zum Uferweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Schleswiger Ufer - Uferweg: Bauarbeiten, Zufahrt zum Uferweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
