@@ -3280,34 +3280,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
-#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
-# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'from' => 1682632800,
-         'id' => 2431,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              4,
-                              'start',
-                              '2021-05-06T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2023 bis 01.05.2023)',
-         'type' => 'handicap',
-         'until' => 1682978399
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
@@ -4719,7 +4692,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-04-22
+#: last_checked: 2023-05-02
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5598,7 +5571,27 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: FUERSTENDAMM-2022
+#: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
+#: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1238153.php
+#: by: https://www.berliner-woche.de/frohnau/c-verkehr/information-zu-bauarbeiten_a355817
+#: source_id: 226500387 (bis 31.12.2022) (inaktiv)
+#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023) (inaktiv)
+#: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
+#: last_checked: 2022-09-09 (kartaview)
+#: next_check: 2023-05-12
+# REMOVED (hier bereits fertig, siehe kartaview)	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965
+	q4::inwork 3015,24965 3117,24966
+',
+         'from' => 1646694000,
+         'id' => 3511,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1175116.php',
+         'text' => 'Fürstendamm: Bauarbeiten in Höhe Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 12.05.2023',
+         'type' => 'handicap',
+         'until' => 1683903600
+       },
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
@@ -6404,7 +6397,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-30
+#: last_checked: 2023-05-02
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -6563,17 +6556,17 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
-#: next_check: 2023-05-02
+#: next_check: 2023-06-27
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
-westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
-# REMOVED (hier später) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
+# REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
+mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED (hier später) --- östlicher Abschnitt ab Am Gemeindepark	q4::inwork 7172,2343 7285,2377
 ',
          'dont_check_date' => 1,
          'from' => 1681077600,
          'id' => 3670,
          'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
-         'text' => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Gallwitzallee bis Beselerstr., vom 11.04.2023 bis 02.05.2023, weitere Bauabschnitte folgen',
+         'text' => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Beselerstr. bis Am Gemeindepark, bis 28.06.2023, weitere Bauabschnitte folgen',
          'type' => 'handicap',
          'until' => 1690840799
        },
@@ -7335,17 +7328,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'type' => 'gesperrt',
          'until' => 1685570399
        },
-       {
-         'data' => '#: also_indoor: traffic (H,B)
-	q4::inwork 3291,10853 3295,10831 3041,10732
-',
-         'from' => 1680843600,
-         'id' => 3762,
-         'source_id' => 'viz2021:13.2955,52.50343,08.04.2023,07:00',
-         'text' => 'Rönnestr.: Bauarbeiten, zwischen Holtzendorffstr. und Stuttgarter Platz gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.04.2023 07:00 bis 02.05.2023 12:00',
-         'type' => 'handicap',
-         'until' => 1683021600
-       },
+       undef,
        {
          'data' => '	q4::inwork 3869,10760 4267,10724 4393,10712
 ',
@@ -7483,6 +7466,18 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'text' => 'Berlepschstr.: Sperrungen in Höhe Kösterstr. und Dallwitzstr., evtl. sind auch Radfahrer betroffen, vom 28.04.2023 07:00 bis 14.07.2023 17:00',
          'type' => 'handicap',
          'until' => 1689346800
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1653255744798486530#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV6Y1NYcldBQUk1TTRNLnBuZw==
+	q4::inwork 4713,8997 4689,8953
+',
+         'from' => 1682917200,
+         'id' => 3777,
+         'source_id' => 'viz2021:13.319435,52.487436,02.05.2023,07:00',
+         'text' => 'Sigmaringer Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Gasteiner Str. gesperrt, vom 02.05.2023 07:00 bis 23.06.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1687532400
        }
      
 );

@@ -2844,17 +2844,12 @@ asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-04-18
+#: last_checked: 2023-05-02
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
-#: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
-#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen
-# REMOVED XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
-#: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-04-18
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2021-12-31
-	RW0; 14052,13389 14148,13321 14252,13263
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen --- #: XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt --- #: last_checked: 2023-04-18 --- #: check_frequency: 14d --- #: next_check: 2021-12-31
+#: historical_note: früher: Verbundsteinpflaster, einige Wurzelhebungen
+Verbundsteinpflaster	RW1; 14052,13389 14148,13321 14252,13263
 Verbundsteinpflaster, teilweise erhebliche Wurzelhebungen	RW1; 14252,13263 14476,13181 14741,13081 14795,13022 14830,12932 14836,12826
 Verbundsteinpflaster	RW1;RW1 13895,13017 13926,13090 13943,13129 13998,13272 14052,13389 14109,13449
 Gehwegplatten, teilweise schadhaft	RW1; 13730,12535 13732,12526 13785,12292
@@ -3046,7 +3041,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2023-04-08 (daf) vvv
+#: last_checked: 2023-05-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967

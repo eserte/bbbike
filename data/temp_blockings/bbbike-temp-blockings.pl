@@ -27680,8 +27680,8 @@ EOF
 	2::bomb -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573
 	2::bomb -12110,-1862 -12247,-1858 -12457,-1857 -12478,-1879 -12493,-1896
 	2::bomb -12493,-1896 -12528,-1950
-	2::bomb -12557,-1900 -12625,-1956 -12721,-2082 -12754,-2154
-	2::bomb -12363,-1742 -12377,-1743 -12557,-1900
+	2::bomb -12557,-1900 -12614,-1942 -12660,-2000 -12665,-2019 -12683,-2026 -12705,-2050 -12721,-2082 -12754,-2154
+	2::bomb -12363,-1742 -12377,-1743 -12535,-1881 -12557,-1900
 	2::bomb -12457,-1857 -12363,-1742
 	2::bomb -12363,-1742 -12342,-1715 -12102,-1582 -12027,-1610
 	2::bomb -12300,-1381 -12281,-1378 -12265,-1434 -12256,-1456
@@ -31130,7 +31130,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-04-22
+#: last_checked: 2023-05-02
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34844,8 +34844,8 @@ EOF
 EOF
      },
      { from  => 1646694000, # 2022-03-08 00:00
-       until => 1669323146, # 1683583200, # 2023-05-09 00:00
-       text  => 'Fürstendamm: Bauarbeiten in Höhe Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 9.3.2022, Gesamtbaumaßnahme bis voraussichtlich Mitte 2023',
+       until => $isodate2epoch->("2023-05-12 17:00:00"), # 1669323146, # 1683583200, # 2023-05-09 00:00
+       text  => 'Fürstendamm: Bauarbeiten in Höhe Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 12.05.2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1175116.php',
        data  => <<EOF,
@@ -34858,7 +34858,7 @@ EOF
 #: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023) (inaktiv)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
 #: last_checked: 2022-09-09 (kartaview)
-#: next_check: 2022-10-01
+#: next_check: 2023-05-12
 # REMOVED (hier bereits fertig, siehe kartaview)	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965
 	q4::inwork 3015,24965 3117,24966
 EOF
@@ -36956,7 +36956,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-04-30
+#: last_checked: 2023-05-02
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -37185,7 +37185,7 @@ EOF
      { from  => $isodate2epoch->("2023-04-10 00:00:00"), # 1667170800, # 2022-10-31 00:00
        until => $isodate2epoch->("2023-07-31 23:59:59"), # 1678541944, # undef, # XXX
        dont_check_date => 1, # weitere Bauabschnitte in until berücksichtigt!
-       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Gallwitzallee bis Beselerstr., vom 11.04.2023 bis 02.05.2023, weitere Bauabschnitte folgen',
+       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Beselerstr. bis Am Gemeindepark, bis 28.06.2023, weitere Bauabschnitte folgen',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
        data  => <<EOF,
@@ -37199,10 +37199,10 @@ EOF
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
-#: next_check: 2023-05-02
+#: next_check: 2023-06-27
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
-westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
-# REMOVED (hier später) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
+# REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
+mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED (hier später) --- östlicher Abschnitt ab Am Gemeindepark	q4::inwork 7172,2343 7285,2377
 EOF
      },
@@ -38363,7 +38363,7 @@ EOF
        until => 1683021600, # 2023-05-02 12:00
        text  => 'Rönnestr.: Bauarbeiten, zwischen Holtzendorffstr. und Stuttgarter Platz gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.04.2023 07:00 bis 02.05.2023 12:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.2955,52.50343,08.04.2023,07:00',
+       source_id => 'viz2021:13.2955,52.50343,08.04.2023,07:00', # inaktiv
        data  => <<EOF,
 #: also_indoor: traffic (H,B)
 	q4::inwork 3291,10853 3295,10831 3041,10732
@@ -38509,6 +38509,17 @@ EOF
 #: source_id: viz2021:13.24634,52.426424,28.04.2023,07:00 (nur Kfz-Verkehr, bis 14.07.2023)
 	q2::inwork 169,2264 96,2225 23,2185
 	q3::inwork -134,2098 -38,2152
+EOF
+     },
+     { from  => 1682917200, # 2023-05-01 07:00
+       until => 1687532400, # 2023-06-23 17:00
+       text  => 'Sigmaringer Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Gasteiner Str. gesperrt, vom 02.05.2023 07:00 bis 23.06.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.319435,52.487436,02.05.2023,07:00',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1653255744798486530#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV6Y1NYcldBQUk1TTRNLnBuZw==
+	q4::inwork 4713,8997 4689,8953
 EOF
      },
     );
