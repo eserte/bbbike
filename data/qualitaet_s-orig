@@ -1504,6 +1504,7 @@ Zum Seddinsee: teils schlechter Waldweg	Q3 30869,-5 30857,-60 30803,-147 30778,-
 Melchiorstr.: Asphalt	Q0 11917,11186 11726,11265 11542,11342
 #: note: mit gepflasterten Parkstreifen
 Hansa-Ufer: Asphalt	Q0 5871,12595 5797,12494 5740,12419
+Hansa-Ufer: Gehwegplatten	Q0- 5740,12419 5657,12339
 Bochumer Platz: Kleinpflaster	Q1 5914,12845 5938,12848
 Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
 Bremer Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradweg	Q1 5956,14168 5943,14049
@@ -3186,7 +3187,7 @@ Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
 Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier der Asphalt wieder komplett hergestellt?
-#: last_checked: 2023-02-28
+#: last_checked: 2023-05-03
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1- 16201,8860 16358,8841 16388,8821
@@ -3692,13 +3693,9 @@ Fritz-Kortner-Str.: Asphalt	Q0 19258,7943 19282,7976 19303,8005 19320,8027 19334
 (Fritz-Kortner-Str. - Maria-Matray-Str.): Verbundsteinpflaster	Q1+ 19320,8027 19443,7937
 Am Birkenrevier: Verbundsteinpflaster	Q1+ 19303,8005 19176,8098
 Rohrlake: Verbundsteinpflaster	Q1+ 19168,7942 19109,7983 19061,7904
-#: next_check_id: OSKAR-2023
-#: XXX der Asphalt wird neu gemacht und ist nach den Bauarbeiten vielleicht besser
-#: last_checked: 2023-04-22
-# REMOVED --- #: next_check: 2023-04-14
-Oskarstr.: Asphalt mit Schäden	Q1- 17771,7880 17762,7931
-#: historical_note: bis März/April 2023 Asphalt mit Schäden, Q1-
-Oskarstr.: Asphalt	Q0 17762,7931 17793,8012 17808,8042 17803,8079
+# REMOVED --- #: next_check_id: OSKAR-2023 --- #: XXX der Asphalt wird neu gemacht und ist nach den Bauarbeiten vielleicht besser --- #: last_checked: 2023-04-22 --- #: next_check: 2023-04-14
+#: historical_note: bis März/April/Mai 2023 Asphalt mit Schäden, Q1-
+Oskarstr.: Asphalt	Q0 17771,7880 17762,7931 17793,8012 17808,8042 17803,8079
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt mit Rissen und Schäden	Q1 17613,7989 17647,8071 17532,8125
@@ -4963,7 +4960,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 Ederstr.: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster	Q0 13946,7918 13958,8106
 Ederstr.: Verbundsteinpflaster	Q0- 13958,8106 13967,8195 13939,8228
 (Zur Eisackstr.): Kleinkopfsteinpflaster	Q1 6388,7999 6418,7958 6429,7876
-Brascheweg: Asphalt	Q0 18881,9865 18810,9850
+Brascheweg: Asphalt mit einigen Schäden	Q1+ 18881,9865 18810,9850
 Brekowweg: Beton	Q0- 18951,9995 18919,10061
 Horterweg: Asphalt mit Schäden	Q1 19005,9816 19018,10022
 Horterweg: Beton	Q0- 19018,10022 19023,10088
