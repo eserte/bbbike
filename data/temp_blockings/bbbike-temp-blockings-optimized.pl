@@ -4211,7 +4211,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-04
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4567,7 +4567,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-01 vvv
+#: last_checked: 2023-05-04 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5822,7 +5822,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-02 (mapillary)
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -5919,7 +5919,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -6298,7 +6298,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-04-15 vvv
+#: last_checked: 2023-05-02 (mapillary) vvv
 #: next_check: 2023-05-10 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -6830,8 +6830,9 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'data' => '# REMOVED --- nördlicher Abschnitt	q4::inwork 5350,12906 5341,12875 5376,12781
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
-#: osm_watch: way id="1155654228" version="3"
-#: last_checked: 2023-04-16
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: osm_watch: way id="1155654228" version="4"
+#: last_checked: 2023-05-05 (osm)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 ',
          'from' => undef,
@@ -6890,18 +6891,18 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023)
 #: also_indoor: traffic (G,H,B,W)
-#: next_check: 2023-05-05
+#: next_check: 2023-06-09
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 ',
          'from' => 1675896728,
          'id' => 3719,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
-         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt, mindestens bis 9.6.2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1686322800
        },
        {
          'data' => '#: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/schoeneberg-barbarossastrasse-monatelang-gesperrt-id204159
@@ -6977,7 +6978,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
-#: osm_watch: way id="46907541" version="12"
+#: osm_watch: way id="46907541" version="13"
 #: note: laut osm: Bauarbeiten erst ab Juni 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4053,2300 4209,2641 4247,2652
@@ -7461,33 +7462,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'type' => 'handicap',
          'until' => 1704063599
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1320155.php
-#: by: https://berliner-abendblatt.de/berlin-news/friedrichshain-weltkriegsbomben-entschaerfung-am-donnerstag-id220100
-#: by: https://berliner-abendblatt.de/berlin-news/s-bahnverkehr-in-friedrichshain-wird-unterbrochen-id220137
-#: by: https://nitter.cz/polizeiberlin/status/1653714614922641408#m
-#: by: https://viz.berlin.de/2023/05/friedrichshain-weltkriegsbombe/
-Am Ostbahnhof	2::bomb 12204,11748 12310,11682
-(entlang des Stadtbahnviadukts)	2::bomb 11966,11832 12132,11788 12207,11763
-Holzmarktstr.	2::bomb 11764,12001 11916,11846 11963,11813 12180,11657
-Stralauer Platz	2::bomb 12180,11657 12497,11459
-Andreasstr.	2::bomb 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
-Kleine Andreasstr.	2::bomb 12059,12172 12211,12128 12279,12113
-An der Schillingbrücke	2::bomb 12092,11475 12143,11574 12180,11657
-Krautstr.	2::bomb 11963,11813 11966,11832 11993,11978 12002,12008 12021,12066 12059,12172 12081,12236
-Lange Str. (Friedrichshain)	2::bomb 11993,11978 12238,11931 12413,11901
-Lange Str. (Friedrichshain)	2::bomb 12002,12008 12212,11963
-Mehlbeerenweg	2::bomb 11993,11978 11940,11982 11909,11985
-Kleine Markusstr.	2::bomb 12059,12172 11958,12195 11937,12127
-(Kleine Markusstr. - Krautstr.)	2::bomb 11937,12127 11958,12112 12021,12066
-(Krautstr. - Kleine Markusstr.)	2::bomb 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
-',
-         'from' => 1683093600,
-         'id' => 3779,
-         'text' => 'Friedrichshain: aufgrund einer Bombenentschärfung wird im Bereich Andreasstr./Holzmarktstr. ein Sperrkreis errichtet, am 4.5.2023 ab 8 Uhr bis voraussichtlich zum Nachmittag',
-         'type' => 'gesperrt',
-         'until' => 1683208800
-       },
+       undef,
        {
          'data' => '	2::inwork 99825,-46697 99765,-46542 99770,-46280
 ',

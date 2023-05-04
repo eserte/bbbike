@@ -1503,8 +1503,11 @@ Karl-Marx-Platz: Poller	3 * 13130,7633 *
 Weidenkätzchenweg: Poller	3 * 21450,38 *
 # 
 # REMOVED --- #: note: offiziell für allen Verkehr gesperrt, praktisch aber für Fußgänger + Radfahrer offen
-#: osm_watch: way id="104156160" version="9" brb
-Liepe - Bralitz: Brücke gesperrt	2 48210,51009 48230,50933
+#: osm_watch: way id="104156160" version="10" brb
+#: XXX Brücke wird neu gebaut, laut osm Fertigstellung frühestens Ende 2023
+#: last_checked: 2023-05-01 (osm)
+#: next_check: 2023-12-31
+Liepe - Bralitz: Brücke wurde abgerissen und wird neu gebaut	2::inwork 48210,51009 48230,50933
 # 
 Köpenicker Str. (KW)	1 26044,-11318 26149,-11189
 # 

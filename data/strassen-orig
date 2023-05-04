@@ -1545,7 +1545,7 @@ Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
-#: last_checked: 2023-02-15 (mapillary)
+#: last_checked: 2023-05-02 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Annenstr. (Mitte) [Wohngebiet]	N 11192,11429 11259,11391 11217,11288
@@ -10904,7 +10904,7 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2131 1045
 #: by: https://pbs.twimg.com/media/EYzBdB6XgAEfb0h?format=jpg&name=large
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnuebergang-in-der-lichtenrader-bahnhofstrasse-ist-seit-25-mai-geschlossen_a271258
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (evtl. mittlerweile etwas verlegt?)
-#: osm_watch: way id="855309801" version="4"
+#: osm_watch: way id="855309801" version="5"
 # REMOVED --- #: osm_watch: way id="810461577" version="5"
 #: osm_watch: way id="997120420" version="4"
 #: XXX bis wann wird es diesen Weg geben?
@@ -12856,9 +12856,10 @@ Stuthirtenweg	N 13241,1113 13336,1162 13450,1222
 Stuthirtenweg	N 13450,1222 13542,1268 13580,1300 13635,1347 13634,1371
 Christoph-Ruden-Str.	N 12785,1308 12725,1429 12643,1706
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_01_0001_0140_online.pdf (Benennung eines Geh- und Radweges zum 5. Mai 2023)
-#: XXX neuer Name "Wolfgang-Seifert-Weg", fehlt in Berlin.coords.data, PLZ=?
-#: next_check: 2023-05-05
-(Christoph-Ruden-Str. - Buckower Damm)	NN 12725,1429 12939,1469
+# REMOVED --- #: XXX neuer Name "Wolfgang-Seifert-Weg", fehlt in Berlin.coords.data, PLZ=? --- #: next_check: 2023-05-05
+#: historical_note: früher in BBBike gekennzeichnet als "(Christoph-Ruden-Str. - Buckower Damm)"
+#: oldname: -20230505: <namenslos>
+Wolfgang-Seifert-Weg	NN 12725,1429 12939,1469
 Kestenzeile	N 12725,1429 12623,1415 12489,1439 12364,1471 12286,1540
 Haewererweg	N 12295,1560 12286,1540 12206,1418 12156,1346 12125,1282
 Haewererweg	NN 12125,1282 12097,1243
