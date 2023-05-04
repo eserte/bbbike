@@ -7,15 +7,17 @@ if (thisURL.match(/bbbikeleaflet\.en\./)) {
     thisURL = thisURL.replace(/bbbikeleaflet\.en\./, "bbbikeleaflet.");
 }
 var useOldURLLayout = thisURL.match(/(cgi\/bbbikeleaflet|bbbike\/html\/bbbikeleaflet)/);
-var bbbikeRoot, cgiURL, bbbikeImagesRoot;
+var bbbikeRoot, cgiURL, bbbikeImagesRoot, bbbikeTempRoot;
 if (useOldURLLayout) {
     bbbikeRoot = thisURL.replace(/\/(cgi|html)\/bbbikeleaflet\..*/, "");
     bbbikeImagesRoot = bbbikeRoot + "/images";
     cgiURL     = bbbikeRoot + "/cgi/bbbike.cgi";
+    bbbikeTempRoot   = bbbikeRoot + "/tmp";
 } else {
     bbbikeRoot = thisURL.replace(/\/(cgi-bin|BBBike\/html)\/bbbikeleaflet\..*/, "");
     bbbikeImagesRoot = bbbikeRoot + "/BBBike/images";
     cgiURL     = bbbikeRoot + "/cgi-bin/bbbike.cgi";
+    bbbikeTempRoot   = bbbikeRoot + "/BBBike/tmp";
 }
 
 var q = new HTTP.Query;
@@ -47,7 +49,8 @@ var msg = {"en":{"Kartendaten":"Map data",
 		 "Radwege":"Cycleways",
 		 "Unbeleuchtet":"Unlit",
 		 "Gr\u00fcne Wege":"Green ways",
-		 "Fragezeichen":"Unknown"
+		 "Fragezeichen":"Unknown",
+		 "temp. Sperrungen":"Temp. blockings",
 		}
 	  };
 function M(string) {
@@ -198,6 +201,72 @@ var green_map_url = green_map_url_mapping[mapset] || green_map_url_mapping['stab
 var unknown_map_url = unknown_map_url_mapping[mapset] || unknown_map_url_mapping['stable'];
 var accel;
 
+var stdGeojsonLayerOptions = {
+            style: function (feature) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
+		    var cat    = RegExp.$1;
+                    var attribString = RegExp.$2;
+		    var attribs = {};
+		    attribString.replace(/^::/, "").split("::").forEach(function(x) { attribs[x] = true; });
+		    var centerLatLng;
+		    if (Array.isArray(feature.geometry.coordinates)) {
+			if (Array.isArray(feature.geometry.coordinates[0])) {
+			    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
+			    centerLatLng = getLineStringCenter(latLngs);
+			} else {
+			    centerLatLng = L.GeoJSON.coordsToLatLng(feature.geometry.coordinates);
+			}
+			var l;
+			if (attribs['night']) {
+			    l = L.marker(centerLatLng, { icon: nightIcon });
+			} else if (attribs['inwork']) {
+			    l = L.marker(centerLatLng, { icon: inworkIcon });
+			} else if (attribs['xmas']) {
+			    l = L.marker(centerLatLng, { icon: xmasIcon });
+			} else if (attribs['bomb']) {
+			    l = L.marker(centerLatLng, { icon: bombIcon });
+			} else if (attribs['play']) {
+			    l = L.marker(centerLatLng, { icon: playIcon });
+			} else if (attribs['mask']) {
+			    l = L.marker(centerLatLng, { icon: maskIcon });
+			} else if (attribs['trailer=no']) {
+			    l = L.marker(centerLatLng, { icon: notrailerIcon });
+			} else if (attribs['temp']) { // should be last, as it is sometimes too unspecific
+			    l = L.marker(centerLatLng, { icon: clockIcon });
+			}
+			if (l) {
+			    l.addTo(map);
+			    l.bindPopup(bbdgeojsonProp2Html(feature.properties));
+			}
+		    }
+		    var color = '#f00';
+		    if (cat == '?') {
+			color = '#6c0000';
+		    } else if (cat.match(/^[qQ]0/)) {
+			color = '#698b69';
+		    } else if (cat.match(/^[qQ]1/)) {
+			color = '#9acd32';
+		    } else if (cat.match(/^[qQ]2/)) {
+			color = '#ffd700';
+		    } else if (cat.match(/^[qQ]3/)) {
+			color = '#ff0000';
+		    } else if (cat.match(/^[qQ]4/)) {
+			color = '#c00000';
+		    }
+                    return { //dashArray: [2,2],
+			color: color, weight: 5, lineCap: "butt" }
+		}
+            },
+	    // --- XXX does not work (with leaflet 0.4.4?)
+	    // pointToLayer: function (feature, latlng) {
+	    // 	return L.circleMarker(latlng, { radius: 8 });
+	    // },
+            onEachFeature: function (feature, layer) {
+		layer.bindPopup(bbdgeojsonProp2Html(feature.properties));
+		id2marker[feature.properties.id] = layer;
+            }
+	};
+
 if (isHttps) {
     enableGeolocationInMap();
 }
@@ -229,6 +298,9 @@ function doLeaflet() {
 
     var bbbikeOrgUnknownUrl = unknown_map_url + '/{z}/{x}/{y}.png';
     var bbbikeUnknownTileLayer = new L.TileLayer(bbbikeOrgUnknownUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
+    var bbbikeTempBlockingsUrl = bbbikeTempRoot + '/geojson/bbbike-temp-blockings-optimized.geojson';
+    var bbbikeTempBlockingsLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
 
     var osmMapnikUrl = use_osm_de_map ? 'https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png' : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
@@ -319,7 +391,8 @@ function doLeaflet() {
 	{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'},
 	{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'},
 	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'},
-	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
+	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'},
+	{label:M("temp. Sperrungen"), layer:bbbikeTempBlockingsLayer, abbrev:'TB'}
     ];
 
     var baseMapDefs = [
@@ -360,6 +433,20 @@ function doLeaflet() {
 
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
+
+    map.on('overlayadd', function(e) {
+	if (e.layer === bbbikeTempBlockingsLayer) {
+	    var xhr = new XMLHttpRequest();
+	    xhr.open('GET', bbbikeTempBlockingsUrl);
+	    xhr.responseType = 'json';
+	    xhr.onload = function() {
+		if (xhr.status === 200) {
+		    bbbikeTempBlockingsLayer.addData(xhr.response);
+		}
+	    };
+	    xhr.send();
+	}
+    });
 
     var initTileLayer;
     if (initBaseMapAbbrev) {
@@ -481,71 +568,7 @@ function doLeaflet() {
 		features[i].properties.id = ++id;
 	    }
 	}
-	var l = L.geoJson(initialGeojson, {
-            style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
-		    var cat    = RegExp.$1;
-                    var attribString = RegExp.$2;
-		    var attribs = {};
-		    attribString.replace(/^::/, "").split("::").forEach(function(x) { attribs[x] = true; });
-		    var centerLatLng;
-		    if (Array.isArray(feature.geometry.coordinates)) {
-			if (Array.isArray(feature.geometry.coordinates[0])) {
-			    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
-			    centerLatLng = getLineStringCenter(latLngs);
-			} else {
-			    centerLatLng = L.GeoJSON.coordsToLatLng(feature.geometry.coordinates);
-			}
-			var l;
-			if (attribs['night']) {
-			    l = L.marker(centerLatLng, { icon: nightIcon });
-			} else if (attribs['inwork']) {
-			    l = L.marker(centerLatLng, { icon: inworkIcon });
-			} else if (attribs['xmas']) {
-			    l = L.marker(centerLatLng, { icon: xmasIcon });
-			} else if (attribs['bomb']) {
-			    l = L.marker(centerLatLng, { icon: bombIcon });
-			} else if (attribs['play']) {
-			    l = L.marker(centerLatLng, { icon: playIcon });
-			} else if (attribs['mask']) {
-			    l = L.marker(centerLatLng, { icon: maskIcon });
-			} else if (attribs['trailer=no']) {
-			    l = L.marker(centerLatLng, { icon: notrailerIcon });
-			} else if (attribs['temp']) { // should be last, as it is sometimes too unspecific
-			    l = L.marker(centerLatLng, { icon: clockIcon });
-			}
-			if (l) {
-			    l.addTo(map);
-			    l.bindPopup(bbdgeojsonProp2Html(feature.properties));
-			}
-		    }
-		    var color = '#f00';
-		    if (cat == '?') {
-			color = '#6c0000';
-		    } else if (cat.match(/^[qQ]0/)) {
-			color = '#698b69';
-		    } else if (cat.match(/^[qQ]1/)) {
-			color = '#9acd32';
-		    } else if (cat.match(/^[qQ]2/)) {
-			color = '#ffd700';
-		    } else if (cat.match(/^[qQ]3/)) {
-			color = '#ff0000';
-		    } else if (cat.match(/^[qQ]4/)) {
-			color = '#c00000';
-		    }
-                    return { //dashArray: [2,2],
-			color: color, weight: 5, lineCap: "butt" }
-		}
-            },
-	    // --- XXX does not work (with leaflet 0.4.4?)
-	    // pointToLayer: function (feature, latlng) {
-	    // 	return L.circleMarker(latlng, { radius: 8 });
-	    // },
-            onEachFeature: function (feature, layer) {
-		layer.bindPopup(bbdgeojsonProp2Html(feature.properties));
-		id2marker[feature.properties.id] = layer;
-            }
-	});
+	var l = L.geoJson(initialGeojson, stdGeojsonLayerOptions);
 	l.addTo(map);
 	setViewLayer = l;
     } else {
