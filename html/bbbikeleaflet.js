@@ -51,6 +51,7 @@ var msg = {"en":{"Kartendaten":"Map data",
 		 "Gr\u00fcne Wege":"Green ways",
 		 "Fragezeichen":"Unknown",
 		 "temp. Sperrungen":"Temp. blockings",
+		 "F\u00e4hrinfos":"ferry info"
 		}
 	  };
 function M(string) {
@@ -302,6 +303,9 @@ function doLeaflet() {
     var bbbikeTempBlockingsUrl = bbbikeTempRoot + '/geojson/bbbike-temp-blockings-optimized.geojson';
     var bbbikeTempBlockingsLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
 
+    var bbbikeCommentsFerryUrl = bbbikeTempRoot + '/geojson/comments_ferry.geojson';
+    var bbbikeCommentsFerryLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
+
     var osmMapnikUrl = use_osm_de_map ? 'https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png' : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 19, attribution: osmAttribution});
@@ -392,7 +396,8 @@ function doLeaflet() {
 	{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'},
 	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'},
 	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'},
-	{label:M("temp. Sperrungen"), layer:bbbikeTempBlockingsLayer, abbrev:'TB'}
+	{label:M("temp. Sperrungen"), layer:bbbikeTempBlockingsLayer, abbrev:'TB', geojsonurl:bbbikeTempBlockingsUrl},
+	{label:M("F\u00e4hrinfos"),  layer:bbbikeCommentsFerryLayer,  abbrev:'CF', geojsonurl:bbbikeCommentsFerryUrl},
     ];
 
     var baseMapDefs = [
@@ -435,13 +440,21 @@ function doLeaflet() {
     map.addControl(layersControl);
 
     map.on('overlayadd', function(e) {
-	if (e.layer === bbbikeTempBlockingsLayer) {
+	var overlayDef;
+	for(var i=0; i<overlayDefs.length; i++) {
+	    if (overlayDefs[i].layer == e.layer) {
+		overlayDef = overlayDefs[i];
+		break;
+	    }
+	}
+	if (overlayDef.geojsonurl && !overlayDef._geojsonloaded) {
+	    overlayDef._geojsonloaded = true;
 	    var xhr = new XMLHttpRequest();
-	    xhr.open('GET', bbbikeTempBlockingsUrl);
+	    xhr.open('GET', overlayDef.geojsonurl);
 	    xhr.responseType = 'json';
 	    xhr.onload = function() {
 		if (xhr.status === 200) {
-		    bbbikeTempBlockingsLayer.addData(xhr.response);
+		    overlayDef.layer.addData(xhr.response);
 		}
 	    };
 	    xhr.send();
@@ -647,7 +660,7 @@ function bbdgeojsonProp2Html(prop) {
     if (prop.urls) {
         html += '<br/>';
         for(var i = 0; i < prop.urls.length; i++) {
-            html += '<a href="' + prop.urls[i] + '">' + prop.urls[i] + '</a>';
+            html += '<a target="_blank" href="' + prop.urls[i] + '">' + prop.urls[i] + '</a>';
             if (i < prop.urls.length-1) {
                 html += '<br/>';
             }
