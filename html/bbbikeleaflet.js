@@ -202,13 +202,51 @@ var green_map_url = green_map_url_mapping[mapset] || green_map_url_mapping['stab
 var unknown_map_url = unknown_map_url_mapping[mapset] || unknown_map_url_mapping['stable'];
 var accel;
 
+function parseCat(cat) {
+    if (cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
+	var cat    = RegExp.$1;
+        var attribString = RegExp.$2;
+	var attribs = {};
+	attribString.replace(/^::/, "").split("::").forEach(function(x) { attribs[x] = true; });
+	return {cat:cat, attribs:attribs};
+    } else {
+	return null;
+    }
+}
+
+var currentLayer; // XXX hacky!!!
 var stdGeojsonLayerOptions = {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
-		    var cat    = RegExp.$1;
-                    var attribString = RegExp.$2;
-		    var attribs = {};
-		    attribString.replace(/^::/, "").split("::").forEach(function(x) { attribs[x] = true; });
+		var parsedCat = parseCat(feature.properties.cat);
+		if (parsedCat) {
+		    cat = parsedCat.cat;
+		    var color = '#f00';
+		    if (cat == '?') {
+			color = '#6c0000';
+		    } else if (cat.match(/^[qQ]0/)) {
+			color = '#698b69';
+		    } else if (cat.match(/^[qQ]1/)) {
+			color = '#9acd32';
+		    } else if (cat.match(/^[qQ]2/)) {
+			color = '#ffd700';
+		    } else if (cat.match(/^[qQ]3/)) {
+			color = '#ff0000';
+		    } else if (cat.match(/^[qQ]4/)) {
+			color = '#c00000';
+		    }
+                    return { //dashArray: [2,2],
+			color: color, weight: 5, lineCap: "butt" }
+		}
+	    },
+	    // --- XXX does not work (with leaflet 0.4.4?)
+	    // pointToLayer: function (feature, latlng) {
+	    // 	return L.circleMarker(latlng, { radius: 8 });
+	    // },
+            onEachFeature: function (feature, layer) {
+		var parsedCat = parseCat(feature.properties.cat);
+		if (parsedCat) {
+		    var cat = parsedCat.cat;
+		    var attribs = parsedCat.attribs;
 		    var centerLatLng;
 		    if (Array.isArray(feature.geometry.coordinates)) {
 			if (Array.isArray(feature.geometry.coordinates[0])) {
@@ -236,33 +274,11 @@ var stdGeojsonLayerOptions = {
 			    l = L.marker(centerLatLng, { icon: clockIcon });
 			}
 			if (l) {
-			    l.addTo(map);
+			    currentLayer.addLayer(l); // XXX hacky!!! need a better solution!!!
 			    l.bindPopup(bbdgeojsonProp2Html(feature.properties));
 			}
 		    }
-		    var color = '#f00';
-		    if (cat == '?') {
-			color = '#6c0000';
-		    } else if (cat.match(/^[qQ]0/)) {
-			color = '#698b69';
-		    } else if (cat.match(/^[qQ]1/)) {
-			color = '#9acd32';
-		    } else if (cat.match(/^[qQ]2/)) {
-			color = '#ffd700';
-		    } else if (cat.match(/^[qQ]3/)) {
-			color = '#ff0000';
-		    } else if (cat.match(/^[qQ]4/)) {
-			color = '#c00000';
-		    }
-                    return { //dashArray: [2,2],
-			color: color, weight: 5, lineCap: "butt" }
 		}
-            },
-	    // --- XXX does not work (with leaflet 0.4.4?)
-	    // pointToLayer: function (feature, latlng) {
-	    // 	return L.circleMarker(latlng, { radius: 8 });
-	    // },
-            onEachFeature: function (feature, layer) {
 		layer.bindPopup(bbdgeojsonProp2Html(feature.properties));
 		id2marker[feature.properties.id] = layer;
             }
@@ -454,6 +470,7 @@ function doLeaflet() {
 	    xhr.responseType = 'json';
 	    xhr.onload = function() {
 		if (xhr.status === 200) {
+		    currentLayer = overlayDef.layer; // XXX hacky! must be set before calling addData (which would call onEachFeature callback)
 		    overlayDef.layer.addData(xhr.response);
 		}
 	    };
