@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2021,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -47,6 +47,7 @@ my $geometry_field = 'geometry';
 GetOptions(
 	   "to-file" => \my $to_file,
 	   "allow-override" => \my $allow_override,
+	   "allow-overflow" => \my $allow_overflow,
 	   "open"    => \my $do_open,
 	   "used-limit=i" => \$used_limit,
 	   "geometry-field=s" => \$geometry_field,
@@ -89,6 +90,7 @@ my $end_captured_at = do {
 
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 
+my @overflows;
 my $data = fetch_images($start_captured_at, $end_captured_at);
 @$data = sort {
     $a->{sequence} cmp $b->{sequence} || $a->{captured_at} <=> $b->{captured_at}
@@ -125,6 +127,13 @@ print $ofh "#\n";
 print $ofh "# Fetched from mapillary for bbox=@$bbox ($region) and date $capture_date\n";
 print $ofh "# Used geometry field: $geometry_field\n";
 print $ofh "#\n";
+if (@overflows) {
+    print $ofh "# Detected overflows:\n";
+    for my $overflow (@overflows) {
+	print $ofh "# $overflow\n";
+    }
+    print $ofh "#\n";
+}
 for my $sequence (@sequences) {
     my $id = $sequence->[0]->{id};
     my $name = join " ",
@@ -202,7 +211,12 @@ sub fetch_images {
     if (@$data >= $used_limit) {
 	my $interval = $end_captured_at - $start_captured_at;
 	if ($interval < 60) {
-	    die "Interval is/got too small: $interval ($start_captured_at_iso .. $end_captured_at_iso)";
+	    if ($allow_overflow) {
+		push @overflows, "$start_captured_at_iso .. $end_captured_at_iso";
+		return [@$data];
+	    } else {
+		die "Interval is/got too small: $interval ($start_captured_at_iso .. $end_captured_at_iso). Ignore this error using --allow-overflow.\n";
+	    }
 	}
 	my $middle_captured_at = $start_captured_at + floor($interval/2);
 	my $data1 = fetch_images($start_captured_at, $middle_captured_at);
