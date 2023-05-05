@@ -79,7 +79,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-05
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -1184,6 +1184,7 @@ Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren 
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/gut-eine-milliarde-euro-wird-fuer-das-grossprojekt-behrens-ufer-investiert_a281659 
 #: by: https://media04.berliner-woche.de/article/2020/07/27/2/331282_XXL.jpg?1596021228
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/grundstueck-in-der-schnellerstrasse-wird-fuer-bau-der-wilhelminenhofbruecke-benoetigt_a313236
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/wohnungsbau-in-der-schnellerstrasse-wird-vorbereitet_a380239 (Erwähnung der Planung)
 #: last_checked: 2022-06-26
 #: check_frequency: 720d
 #: next_check: 2026-12-31
@@ -1948,6 +1949,7 @@ Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 #: next_check: 2025-04-01
 Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbreiterung und Asphaltierung des Weges?)	?::projected 8106,3410 8016,3651 7795,4242 7769,4315
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_20_2129_2184_online.pdf (Grundstücksnummerierungen)
 #: XXX auch im Zuge des Bebauungsplans 7-80 (siehe oben) vvv
 #: next_check: 2025-04-01 vvv
 Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235,3577
@@ -2178,7 +2180,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-vollendung-band-des-bundes-in-entwicklung/?postID=739447#post739447 (Erwähnung)
-#: last_checked: 2023-04-18
+#: last_checked: 2023-05-05
 #: check_frequency: 120d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::projected 8870,12647 8754,12622
 # 
@@ -3585,12 +3587,13 @@ Seegefelder Weg: Verbreiterung der Straße + Anlange von Radspuren geplant	?::pro
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20220609 (erstes Halbjahr 2023: Verlängerung der M10)
 #: by: https://berliner-abendblatt.de/2023/01/12/bvg-bereits-3-500-meter-gleis-richtung-turmstrasse-verlegt/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/mobilitaet-tram-m10-moabit-bvg-berlin-die-strassenbahn-kehrt-in-den-berliner-westen-zurueck-bald-faehrt-die-tram-zur-turmstrasse-li.344268 (Inbetriebnahme Juli 2023)
+#: by: https://www.bahninfo-forum.de/read.php?9,705321,766692#msg-766692 (Inbetriebnahme August 2023?)
 #: source_id: viz2021:13.357166,52.523541,06.01.2023,12:51 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.35969,52.52348,06.01.2023,12:53 (bis 07.07.2023) (inaktiv)
 #: source_id: viz2021:13.3568,52.524974,14.01.2022,09:00 (bis 9.1.2023, weitere Arbeiten im Anschluss) (bis 7.7.2023)
 #: source_id: viz2021:13.359293,52.523429,29.03.2023,17:00 (bis 07.07.2023)
 #: XXX Während der Straßenbahnbauarbeiten bereits temporäre Radspuren in der Straße Alt-Moabit
-#: last_checked: 2023-04-16
+#: last_checked: 2023-05-04 (bahninfo-forum)
 #: check_frequency: 90d
 #: next_check: 2023-07-07
 Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7084,13352 7069,13381
@@ -5484,6 +5487,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/komponistenviertel-als-kiezblock-nun-sind-die-anwohner-gefragt-id204194
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/kiezblock-im-komponistenviertel_a372290
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1320045.php (Fahrradstraße ab 8.5.2023, Realisierung 13 Wochen)
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/bizetstrasse-wird-fahrradstrasse_a380503
 #: last_checked: 2023-05-02
 #: check_frequency: 30d
 #: next_check: 2023-08-11
@@ -6352,7 +6356,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: https://luisenblock.berlin.de/2022/08/16/verfahrenspause/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/bundestag-parlament-fast-900-millionen-euro-fuer-das-naechste-bundestagsprojekt-li.340187 (zum Luisenblock Ost)
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-vollendung-band-des-bundes-in-entwicklung/?postID=739442#post739442 (Bauarbeiten 2027 bis 2032/2034)
-#: last_checked: 2023-02-25
+#: last_checked: 2023-05-05
 #: check_frequency: 720d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -6830,12 +6834,12 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1253431.php (restliche Abschnitte zwischen Pariser Kommune und Andreasstr., zunächst Richtung Westen, 12.10.2022 - Ende November 2022; außerdem wird es für Radfahrer eine "signalisierte Querungsmöglichkeit" in Höhe Koppenstr. geben)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/karl-marx-allee-radweg-wird-breiter_a360314
 # REMOVED (fertig) --- #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2023-04-23
+#: last_checked: 2023-05-05
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
-#: last_checked: 2023-04-23
+#: last_checked: 2023-05-05
 #: XXX nach Fertigstellung Eintrag in handicap_directed apassen/entfernen
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
 # 
@@ -6898,6 +6902,7 @@ Schule am Planetarium: Weg wird entfallen, neue Wege nördlich und südlich des Sc
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/erst-rohre-dann-radweg_a306897 (nach den Bauarbeiten der Wasserbetriebe, die bis Ende April 2021 beendet sein werden)
 #: by: https://www.infravelo.de/projekt/spandauer-damm/ (2. Quartal 2022 - 2. Quartal 2023, bis Klausener Platz Radfahrstreifen, im weiteren Verlauf bis zur Kaiser-Friedrich-Str. Verbesserungen) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (gelöscht)
 #: http://www.infravelo.de/projekt/spandauer-damm-2/ (Ersatzeintrag?) (2. Quartal 2023 - 2. Quartal 2024)
+#: by: https://www.bz-berlin.de/berlin/charlottenburg-wilmersdorf/charlottenburg-wilmersdorf-setzt-alle-bauprojekte-an-hauptstrassen-aus (Errichtung eines Popup-Radwegs wird erstmal ausgesetzt)
 #: XXX die Wasserbetriebe bauen bis Ende September 2022 noch bis zur Nithackstr. weiter, in insgesamt acht Bauabschnitten
 #: source_id: viz2021:13.28661,52.518717,19.01.2021,07:00 (Gesamtbaumaßnahme bis Mitte November 2022) (inaktiv)
 #: source_id: viz2021:13.29383,52.519215,06.09.2021,12:13 (zwischen Klausener Platz und Schloßstr., bis 6.10.2021, Gesamtbaumaßnahme bis Ende 2022) (inaktiv)
@@ -6995,7 +7000,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024)
-#: last_checked: 2023-04-13
+#: last_checked: 2023-05-05
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7342,7 +7347,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=18B1427E-DCE6-45CE-A2D8-3AE59415C594
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.3_Einschraenkung_Strassenverkehr.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.4_Einschraenkung_Fuss-_und_Radweg.pdf
-#: last_checked: 2023-04-20 vvv
+#: last_checked: 2023-05-05 vvv
 #: next_check: 2024-06-01 vvv
 Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)	? 11139,12243 11155,12184 11278,12185
 #: next_check ^^^
@@ -7427,12 +7432,12 @@ Treuenbrietzen: L85 soll rechtwinklig auf die B102 stoßen	?::projected -25677,-3
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-04-23-barrierefrei.pdf (Fahrspureinengung 3.4.2023 bis 28.4.2023, evtl. hat das was mit dem Vorhaben zu tun?)
 #: XXX südliche Fahrbahn noch 2022 (Termin konnte nicht gehalten werden), nördliche 2023
 #: XXX laut https://www.openstreetmap.org/note/3432004 beginnen die Bauarbeiten voraussichtlich 12/2022 mit der Südseite
-#: XXX Poller zumindest vor dem Hotelgebäude
+#: XXX ungefähr die Hälfte schon mit Pollern
 #: osm_watch: way id="31985151" version="33"
 #: osm_watch: way id="317878311" version="16"
 #: source_id: bvg2021:140#BVG318247_0
 #: source_id: viz2021:13.430179,52.510318,06.04.2023,07:00 (Richtung Mühlenstr.; bis 28.04.2023) (bis 12.05.2023)
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-05
 #: check_frequency: 60d
 #: next_check: 2023-05-12
 # REMOVED --- #: next_check: 2023-12-31
@@ -8434,10 +8439,11 @@ Planstraße G: genaue Lage, Qualität? geplanter Name: An der Waldsiedlung	?::proj
 #: by: http://www.deal-magazin.com/news/3/107874/Lakeward-startet-Neubauprojekt-Ferdinands-Garden-in-Berlin (ist das erwähnte Neubaugebiet hier?)
 #: by: https://nitter.cz/VIZ_Berlin/status/1610159019406016513#m (evtl. im Zusammenhang mit den Bauarbeiten?)
 #: by: https://nitter.net/pic/orig/media%2FFldqbjBXgAEBF0s.png
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ferdinands-garden.363/page-2#post-20646
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="5"
-#: last_checked: 2023-04-22 (webcam)
+#: last_checked: 2023-05-02 (architektur-urbanistik)
 #: check_frequency: 90d
 Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
 # 
@@ -8492,6 +8498,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5726 (Forderung nach Schulstandort)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_17_1761_1912_online.pdf (Einschränkung des Bebauungsplans)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1316418.php
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/ungenutzter-teil-des-georgen-parochial-iii-friedhofs-wird-bebaut_a379912
 #: last_checked: 2023-02-27
 #: check_frequency: 540d
 Friedhof Georgen-Parochial III: Wohngebiet entsteht, evtl. mit einem Weg zwischen Roelckestr. und Gustav-Adolf-Str.	?::projected 12969,16908 13129,17024 13272,16672 13184,16595 13128,16654 13162,16685 12969,16908
@@ -9576,11 +9583,12 @@ Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hie
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1288728.php
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/gewobag-baut-an-der-landsberger-allee-ueber-1400-wohnungen_a371648
 #: by: http://www.gewobag.de/landsberger-allee
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-2#post-20645
 #: XXX vermutlich wird es am westlichen Rand im Zuge der Hofheimer Str. einen Weg geben; unklar, ob es eine Verlängerung der Heldburger Str. geben wird
 #: osm_watch: way id="89803856" version="18"
-#: last_checked: 2022-08-17 (mapillary)
+#: last_checked: 2023-05-02 (architektur-urbanistik)
 #: check_frequency: 720d
-Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::projected 17633,14857 17633,14707 17763,14588
+Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::inwork 17633,14857 17633,14707 17763,14588
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9695
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/rgCAMV9MwRPZa1V4zKCNAhZ25ZObccdvjCLg0vi7/WWWghrqd/06-Anlagen/04/209-2022-03AntragaufEinleitungeinesvorhabenbez.pdf

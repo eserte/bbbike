@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2023-05-04
+#: last_checked: 2023-05-05
 #: check_frequency: 7d
 Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
@@ -239,10 +239,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
 #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023)
-#: last_checked: 2023-05-04 vvv
+#: last_checked: 2023-05-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
-Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
+# REMOVED (hier nicht mehr) --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
 Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279
 #: next_check ^^^
 #: check_frequency ^^^
@@ -298,7 +298,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-04-21 vvv
+#: last_checked: 2023-05-05 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="39"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -319,7 +319,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
-#: last_checked: 2023-04-21
+#: last_checked: 2023-05-05
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -408,7 +408,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-04-21 vvv
+#: last_checked: 2023-05-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="13"
@@ -684,7 +684,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-04-22 (webcam)
+#: last_checked: 2023-05-05 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -1087,6 +1087,7 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/arbeiten-an-der-abwasserleitung_a371543
 #: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben)
 #: osm_watch: way id="22966091" version="36"
+#: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023)
 #: last_checked: 2023-03-27 (mapillary)
 #: next_check: 2023-05-07
 #: valid: -20230508
@@ -4054,7 +4055,7 @@ Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,28
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
 #: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören?
-#: last_checked: 2023-04-21
+#: last_checked: 2023-05-05
 #: check_frequency: 45d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)

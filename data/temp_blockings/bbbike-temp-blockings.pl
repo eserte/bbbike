@@ -36724,14 +36724,14 @@ EOF
 #: last_checked: 2023-03-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
-	2::temp 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
+	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
 # REMOVED (hier keine Einschränkungen) ---	2::temp 2226,16096 2290,16022 2580,15939 2595,15922 2604,15875 2638,15842 2701,15853 2787,15870
-	2::temp 2787,15870 2828,15903 2880,15884 2787,15870
-	2::temp 2996,15930 2960,15847 2944,15880 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
+	2 2787,15870 2828,15903 2880,15884 2787,15870
+	2 2996,15930 2960,15847 2944,15880 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
 Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
-	2::temp 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
-	2::temp 2809,16143 2853,16293
-	2::temp 2880,15884 2960,15847
+	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
+	2 2809,16143 2853,16293
+	2 2880,15884 2960,15847
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -36777,7 +36777,7 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-05-02 (mapillary) vvv
+#: last_checked: 2023-05-05 vvv
 #: next_check: 2023-05-10 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -36955,7 +36955,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-02
+#: last_checked: 2023-05-05
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -37225,7 +37225,7 @@ EOF
      },
      { from  => 1667199600, # 2022-10-31 08:00
        until => 1688130000, # 2023-06-30 15:00
-       text  => 'Bandelo - Trebenow: Bauarbeiten, Sperrung, 01.11.2022 08:00 Uhr bis 30.06.2023 15:00 Uhr',
+       text  => 'Bandelow - Trebenow: Bauarbeiten, Sperrung, 01.11.2022 08:00 Uhr bis 30.06.2023 15:00 Uhr',
        type  => 'gesperrt',
        source_id => 'LS/221-E/22/140',
        data  => <<EOF,
@@ -38574,6 +38574,24 @@ EOF
        source_id => '237120046',
        data  => <<EOF,
 	2::inwork 99825,-46697 99765,-46542 99770,-46280
+EOF
+     },
+     { from  => 1683439200, # 2023-05-07 08:00
+       until => 1684764000, # 2023-05-22 16:00
+       text  => 'Glienicke: Bauarbeiten zwischen Oranienburger Chaussee und Paul-Singer-Str., Sperrung vom 08.05.2023 08:00 Uhr bis 22.05.2023 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '236500970',
+       data  => <<EOF,
+	2::inwork 6063,25197 5198,24863
+EOF
+     },
+     { from  => 1661058000, # 2022-08-21 07:00
+       until => 1702652400, # 2023-12-15 16:00
+       text  => 'Glienicke: Sperrung der Kindelfließbrücke vom 22.08.2022, 07:00 Uhr bis 15.12.2023, 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '226502373',
+       data  => <<EOF,
+	2::inwork 6957,25450 7170,25566 7415,25928
 EOF
      },
     );

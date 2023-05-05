@@ -5228,26 +5228,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 05.05.2023)
-# REMOVED (Überquerung wieder möglich) --- #: next_check_id: FRANKFURTER-2021 --- #: note: auch last Schild der Wasserbetriebe bis März 2022 --- #: last_checked: 2021-12-11 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-03-31 vvv
-	3 14888,11934 14926,12129 15003,12241
-	3 15003,12241 14926,12129 14888,11934
-	3 14888,11934 14926,12129 14854,12137
-	3 15003,12241 14926,12129 14994,12121
-	3 14994,12064 14994,12121 14926,12129
-	3 15110,12107 14994,12121 14994,12064
-Finowstr. -> Frankfurter Allee	3 14836,12045 14854,12137 14709,12156
-Frankfurter Allee -> Finowstr.	3 14926,12129 14854,12137 14836,12045
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3404,
-         'source_id' => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
-         'text' => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr., Finowstr. und Müggelstr. nicht möglich, voraussichtlich bis zum 5. Mai 2023',
-         'type' => 'gesperrt',
-         'until' => 1683298800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6257,14 +6238,14 @@ Winterfeldtstr., westlicher Abschnitt	q3::inwork 6630,9990 6741,10017
 #: last_checked: 2023-03-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
-	2::temp 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
+	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
 # REMOVED (hier keine Einschränkungen) ---	2::temp 2226,16096 2290,16022 2580,15939 2595,15922 2604,15875 2638,15842 2701,15853 2787,15870
-	2::temp 2787,15870 2828,15903 2880,15884 2787,15870
-	2::temp 2996,15930 2960,15847 2944,15880 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
+	2 2787,15870 2828,15903 2880,15884 2787,15870
+	2 2996,15930 2960,15847 2944,15880 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
 Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
-	2::temp 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
-	2::temp 2809,16143 2853,16293
-	2::temp 2880,15884 2960,15847
+	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
+	2 2809,16143 2853,16293
+	2 2880,15884 2960,15847
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6298,7 +6279,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2023-05-02 (mapillary) vvv
+#: last_checked: 2023-05-05 vvv
 #: next_check: 2023-05-10 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -6396,7 +6377,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-02
+#: last_checked: 2023-05-05
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -6577,7 +6558,7 @@ mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
          'from' => 1667199600,
          'id' => 3673,
          'source_id' => 'LS/221-E/22/140',
-         'text' => 'Bandelo - Trebenow: Bauarbeiten, Sperrung, 01.11.2022 08:00 Uhr bis 30.06.2023 15:00 Uhr',
+         'text' => 'Bandelow - Trebenow: Bauarbeiten, Sperrung, 01.11.2022 08:00 Uhr bis 30.06.2023 15:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1688130000
        },
@@ -7472,6 +7453,26 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'text' => 'Guben, Bahnübergang Kupferhammerstr.: Sperrung vom 23.06.2023 - 20:00 Uhr bis 27.06.2023 - 06:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1687838400
+       },
+       {
+         'data' => '	2::inwork 6063,25197 5198,24863
+',
+         'from' => 1683439200,
+         'id' => 3781,
+         'source_id' => '236500970',
+         'text' => 'Glienicke: Bauarbeiten zwischen Oranienburger Chaussee und Paul-Singer-Str., Sperrung vom 08.05.2023 08:00 Uhr bis 22.05.2023 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1684764000
+       },
+       {
+         'data' => '	2::inwork 6957,25450 7170,25566 7415,25928
+',
+         'from' => 1661058000,
+         'id' => 3782,
+         'source_id' => '226502373',
+         'text' => 'Glienicke: Sperrung der Kindelfließbrücke vom 22.08.2022, 07:00 Uhr bis 15.12.2023, 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1702652400
        }
      
 );

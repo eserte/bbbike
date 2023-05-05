@@ -31,15 +31,7 @@ Gegenverkehrsregelung	X::inwork 22192,6659
 #: valid: -20240701
 Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 # 
-#: next_check_id: ADELESCHREIBERKRIEGER-2014
-#: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm
-#: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.37994,52.52093,17.02.2023,12:00 (neuer Eintrag, bis 13.04.2023) (inaktiv)
-#: last_checked: 2023-04-18
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2023-04-13
-#: valid: -20230427
-Gegenverkehrsregelung	X::inwork 8737,12757
+# REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm --- #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023) (inaktiv) --- #: source_id: viz2021:13.37994,52.52093,17.02.2023,12:00 (neuer Eintrag, bis 13.04.2023) (inaktiv) --- #: last_checked: 2023-04-18 --- #: check_frequency: 7d --- #: next_check: 2023-04-13 --- #: valid: -20230427 --- Gegenverkehrsregelung	X::inwork 8737,12757
 # 
 #: by: https://viz.berlin.de/2023/01/verkehrsvorschau-240123/ (Bedarfsampeln für Fußgänger, bis 2024)
 #: by: https://berliner-abendblatt.de/2023/01/24/bauarbeiten-staugefahr-in-der-guertelstrasse/
@@ -69,10 +61,10 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: next_check: 2023-05-10 vvv
 #: valid: -20230510 vvv
 #: XXX schon seit mehreren Tagen ausgeschaltet
-#: last_checked: 2023-05-02 (mapillary)
+#: last_checked: 2023-05-05
 #: check_frequency: 30d
 Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-04-15
+#: last_checked: 2023-05-05
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -3239,7 +3231,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-05-02 (mapillary) vvv
+#: last_checked: 2023-05-05 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
