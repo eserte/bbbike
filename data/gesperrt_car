@@ -1,6 +1,9 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen (nur für Autofahrer)
 #:
+Bitterfelder Brücke: nur für den MV gesperrt	1::inwork 20390,16663 20397,16621
+Bitterfelder Brücke: nur für den MV gesperrt	2::inwork 20397,16621 20379,16585 20354,16563 20325,16551 20230,16560
+Bitterfelder Brücke: nur für den MV gesperrt	1::inwork 20230,16560 20150,16572
 Mittelweg	1 12335,7770 12224,7799 12176,7811
 Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9910,11755 9896,11760
 Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7673,4223
@@ -1314,10 +1317,10 @@ Poller	3 7277,-77 7231,25 7181,-15
 Mittelstreifen	3nocross::ignrte 9346,4144 9375,4022 9426,3797
 Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9276,3997 9375,4022 9346,4144
 Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9426,3797 9375,4022 9276,3997
-Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
-Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18387,10070
-Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
-Ontarioseestr.: Sackgasse für Autos	3 18387,10070 18339,10048 18408,10041
+Ontarioseestr.: Sackgasse für Autos	3 18411,10037 18339,10048 18296,10027
+Ontarioseestr.: Sackgasse für Autos	3 18411,10037 18339,10048 18387,10070
+Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18411,10037
+Ontarioseestr.: Sackgasse für Autos	3 18387,10070 18339,10048 18411,10037
 Schranke	3 11948,21366 11973,21385 11982,21392
 Schranke	3 11982,21392 11973,21385 11948,21366
 Pestalozzistr.	1 24769,11819 24908,11785
@@ -2225,7 +2228,7 @@ Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 17879,4910 17951
 Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 18042,4667 17951,4785 17868,4742
 Ahornallee	1 1586,11483 1566,11409 1574,11379
 Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	2 10205,11758 10238,11741
-Rudolf-Reusch-Str	1 15710,12365 15668,12304 15658,12231 15651,12214
+Rudolf-Reusch-Str	1 15710,12365 15668,12304 15663,12270 15658,12231 15651,12214
 (Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13088,14469 13031,14390
 (Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13016,14370 12954,14287
 Eckertstr.	1 13598,12554 13585,12584
@@ -2394,3 +2397,4 @@ Prinzregentenstr. -> Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschloss
 Prinzregentenstr. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5641,8831 5635,9018 5633,9263
 Prinzregentenstr. -> Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5633,9263 5635,9018 5725,9041
 Prinzregentenstr. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5633,9263 5635,9018 5641,8831
+Radieschenpfad	1 20582,18475 20635,18381

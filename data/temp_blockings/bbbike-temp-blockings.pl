@@ -29459,11 +29459,12 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
 #: osm_watch: way id="8655276" version="39"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-04-19 (osm)
+#: last_checked: 2023-05-06
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34748,7 +34749,7 @@ EOF
 #: next_check_id: ZWIESELER-2022
 #: XXX laut osm access=no wegen Baustelle (osm watch in fragezeichen-orig)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-05-03
+#: last_checked: 2023-05-06
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 EOF
@@ -35472,6 +35473,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1525328801823133698#m',
        data  => <<EOF,
+#: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 	2::temp 17782,5698 17807,5730 17916,5675
 	2::temp 17810,5736 17877,5860
@@ -37007,7 +37009,7 @@ EOF
        data  => <<EOF,
 #: by: mapillary
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-02-11 (mapillary)
+#: last_checked: 2023-05-06
 	2::inwork 20996,16429 20923,16435 20898,16420
 EOF
      },
@@ -37108,6 +37110,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (bis 28.8.2023)
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/05/20230505_PM_Kurz_angebunden.pdf (nächste Bauphase bis 3.9.2023)
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
@@ -37117,7 +37120,7 @@ EOF
 #: priority: #A vvv
 #: last_checked: 2023-05-03 vvv
 #: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2023-01-12 vvv
+#: next_check: 2023-09-03 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
 #	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
 Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
@@ -37128,7 +37131,7 @@ Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18406,7760 18471,7862
 Hegemeisterweg -> Modellpark Wuhlheide	3::inwork 18325,7778 18406,7760 18437,7752
 Modellpark Wuhlheide -> Treskowallee	3::inwork 18437,7752 18406,7760 18382,7724
 Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,7778
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^

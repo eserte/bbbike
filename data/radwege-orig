@@ -908,7 +908,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-06
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3521,7 +3521,7 @@ asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
 	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-01-21 vvv
+#: last_checked: 2023-05-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: XXX früher RW2;
@@ -3945,24 +3945,24 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
-#: osm_watch: way id="865716506" version="8"
-#: last_checked: 2023-03-26 vvv
+#: osm_watch: way id="865716506" version="9"
+#: last_checked: 2023-05-06 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2023-05-03 vvv
-# REMOVED --- #: next_check: 2025-11-30 vvv
+#: next_check: 2025-11-30 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
 # REMOVED (während der Bauarbeiten) --- Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
 # REMOVED (während der Bauarbeiten) --- alter Beton	RW1; 21190,12193 21199,12258
-alter Beton	RW2; 21199,12258 21190,12193 21166,12023 21152,11945
-#: note: explizizes "Radfahrer verboten"-Schild
-alter Beton	RW8; 21152,11945 21166,12023 21190,12193 21199,12258
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW2;RW8 21152,11945 21166,12023
+gemeinsamer Geh- und Radweg, Asphalt, Gehwegplatten	RW2;RW8 21166,12023 21190,12193
+#: note: Richtung Süden ein explizites "Radfahrer verboten"-Schild
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW2;RW8 21190,12193 21199,12258
 # REMOVED --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2019-09-30 ---	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
-alter Beton	RW1; 21152,11945 21150,11925 21139,11830
+Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21150,11925 21139,11830
 	RW1; 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154
 	RW2; 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909
 	RW2; 21358,13909 21367,13757 21345,13550 21337,13470 21298,13154 21251,12767 21221,12484 21206,12351 21199,12258
@@ -4619,9 +4619,11 @@ Grünbeschichtung "light" (einige längere Abschnitte)	RW4; 19985,11727 20018,1169
 Grünbeschichtung "light" (Rauten)	RW4; 19924,11890 19934,11977
 Verbundsteinpflaster	RW1; 20323,16706 20390,16663 20397,16621 20379,16585 20354,16563 20325,16551
 Verbundsteinpflaster	RW1; 20328,16546 20358,16560 20382,16582 20397,16621 20390,16663 20323,16706
-	RW1; 20325,16551 20230,16560 20150,16572
+Asphalt	RW1; 20325,16551 20230,16560 20150,16572
+Verbundsteinpflaster	RW1; 20150,16572 19896,16611
+	RW1; 19896,16611 19647,16633 19428,16692 18951,16847
 	RW1; 18875,16872 18951,16847 19428,16692 19647,16633 19896,16611 20150,16572
-	RW1; 20150,16572 19896,16611 19647,16633 19428,16692 18951,16847
+am Anfang und Ende Leitboys	RW3; 20150,16572 20230,16560 20328,16546
 neu asphaltiert	RW1; 18951,16847 18875,16872
 #: note: hier kann man auch Richtung Osten bis zur Klettwitzer Str. fahren; dort gibt es eine Mittelinsel als Überquerungshilfe
 neu asphaltiert	RW1; 18875,16872 18738,16957
@@ -6501,7 +6503,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Asphaltierung des Radwegs vvv
-#: last_checked: 2023-04-23 vvv
+#: last_checked: 2023-05-05 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-12-31 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16981,17855 17159,17631
@@ -7703,6 +7705,7 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 asphaltiertes Straßenbahnkap	RW1;RW1 14461,11738 14416,11815
 asphaltiertes Straßenbahnkap	RW1; 13991,11992 14055,11964
 asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
+	RW3;RW3 14798,11777 14802,11784 14836,11842
 #: note: im Anschluss Richtung Scharnweberstr. noch ein paar Meter Radweg
 asphaltiertes Straßenbahnkap	RW1; 14836,11842 14888,11934
 asphaltiertes Straßenbahnkap	RW1; 14888,11934 14836,11842

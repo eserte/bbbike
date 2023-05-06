@@ -3,6 +3,22 @@
 #:
 #: temporary vvv
 # 
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1305442.php (einseitige Sperrung für Kfz-Verkehr)
+#: by: https://nitter.net/VIZ_Berlin/status/1636731537650581506#m
+#: by: https://nitter.net/VIZ_Berlin/status/1636701131999944705#m
+#: by: https://viz.berlin.de/2023/03/bitterfelder-bruecke-einseitig-gesperrt/
+#: by: https://berliner-abendblatt.de/kiez-news/marzahn-hellersdorf/wegen-bauwerksschaeden-bitterfelder-bruecke-teilweise-gesperrt-id213120
+#: source_id: viz2021:13.55229,52.554008,17.03.2023,12:07
+#: priority: #C vvv
+#: last_checked: 2023-05-06 vvv
+#: check_frequency: 120d vvv
+Bitterfelder Brücke: nur für den MV gesperrt	1::inwork 20390,16663 20397,16621
+Bitterfelder Brücke: nur für den MV gesperrt	2::inwork 20397,16621 20379,16585 20354,16563 20325,16551 20230,16560
+Bitterfelder Brücke: nur für den MV gesperrt	1::inwork 20230,16560 20150,16572
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+# 
 # REMOVED (laut osm existiert die Unterführung) --- #: XXX neue Unterführung wird gebaut --- #: last_checked: 2021-08-27 --- #: check_frequency: 360d --- Wünsdorf: Bahnübergang gesperrt	2 15353,-26857 15536,-26728 15580,-26698 15602,-26674
 # 
 #: temporary ^^^
@@ -743,8 +759,8 @@ Fuchsmühler Weg	2:Anlieger 7277,-77 7231,25 7179,147
 Poller	3 7181,-15 7231,25 *
 Poller	3 * 7231,25 7181,-15
 Mittelstreifen	3nocross 9346,4144 9375,4022 9426,3797
-Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 *
-Ontarioseestr.: Sackgasse für Autos	3 * 18339,10048 18408,10041
+Ontarioseestr.: Sackgasse für Autos	3 18411,10037 18339,10048 *
+Ontarioseestr.: Sackgasse für Autos	3 * 18339,10048 18411,10037
 #: by: Almuth Maasz
 #: note: "für Radfahrer mit Anhänger passierbar"
 Schranke	3 * 11973,21385 *
@@ -1540,7 +1556,7 @@ Ahornallee	1 1586,11483 1566,11409 1574,11379
 #: note: von Norden ein explizites "Verboten für Fahrzeuge aller Art"-Schild, von Süden mit Barriere (außer für Radfahrer)
 Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	2 10205,11758 10238,11741
 # 
-Rudolf-Reusch-Str	1 15710,12365 15668,12304 15658,12231 15651,12214
+Rudolf-Reusch-Str	1 15710,12365 15668,12304 15663,12270 15658,12231 15651,12214
 # 
 (Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13088,14469 13031,14390
 (Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13016,14370 12954,14287
@@ -1799,4 +1815,7 @@ Eidechsenweg - Brunsbütteler Damm	3 -7893,13781 -7720,13839 -7725,13858
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8435 (verkehrsrechtliche Anordnung fehlt (Mitte November 2022))
 #: by: https://media.frag-den-staat.de/files/foi/787257/mittelstreifenberlinerstrae-anordnung.pdf
 Prinzregentenstr./Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschlossen	3nocross 5492,8982 5635,9018 5725,9041
+# 
+#: note: keine Gehwege, enge Straße; beim Einbahnstraßenschild fehlt das Radfahrer-frei-Zusatzschild
+Radieschenpfad	1 20582,18475 20635,18381
 # 

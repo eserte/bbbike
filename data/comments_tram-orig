@@ -11,7 +11,9 @@ Alte/Neue Schönhauser Str.: Schienen auf Fahrbahn, Tram fährt aber nicht mehr	CS
 Kastanienallee: Tram auf Fahrbahn	CS 10177,13766 10193,13816 10209,13854 10263,13977 10370,14158 10426,14262 10497,14391
 # REMOVED (mittlerweile gibt es genug Platz zwischen Parkstreifen und Schienen) --- Kastanienallee: Tram auf Fahrbahn	CS 10530,14452 10723,14772 10838,14962 10881,15047
 Wühlisch/Kopernikusstr.: Tram auf Fahrbahn	CS 13651,11731 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514 14369,11489 14434,11465 14460,11455 14575,11407
-Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14639,11512 14676,11572 14710,11626 14798,11777 14802,11784 14836,11842 14888,11934 14965,11924 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
+Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14639,11512 14676,11572 14710,11626 14798,11777
+# REMOVED (Radspuren/Radwege existieren) --- Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14798,11777 14802,11784 14836,11842 14888,11934
+Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14888,11934 14965,11924 15077,11910 15133,11902 15174,11896 15217,11890 15256,11884
 Boxhagener Str.: Tram auf Fahrbahn (Geradeausspur)	CS; 14988,11130 14918,11249
 Boxhagener Str.: Tram auf Fahrbahn	CS 13745,12118 13991,11992 14055,11964 14097,11949 14161,11930 14306,11889 14416,11815
 #: XXX_prog: allerdings existieren Radwege bzw. Radspuren, sollte also bei Optimierungen ignoriert werden vvv

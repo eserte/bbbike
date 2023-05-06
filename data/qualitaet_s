@@ -892,7 +892,7 @@ Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12852,7282 12910,7297 13003,7316
 Schierker Str.: Kopfsteinpflaster	Q2 13003,7316 13034,7319
 Hönower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
-Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925 18301,9946
+Splanemannstr.: Asphalt	Q0 18411,10037 18397,9928 18305,9951
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8738 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
@@ -8726,7 +8726,7 @@ Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1 9240,7811 9130,7810
 (Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2 8333,10167 8384,10507
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
-(Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
+(Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17485,13316 17488,13257 17491,13190 17490,13133 17491,13125
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, einige Wurzelhebungen	Q0 17698,13124 17739,13146 17871,13145 17906,13141
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17906,13141 17978,13328 18054,13477 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1 17698,13134 17690,13365 17689,13405 17688,13430
@@ -9141,7 +9141,7 @@ Wischbergweg: unbefestigt, teilweise holprig	Q2 13898,18597 13900,18642
 (Cecilienstr. - Joachim-Ringelnatz-Str.): Beton	Q0 22101,13616 22110,13639 22136,13735 22141,13784
 (Weg entlang der U-Bahn): wassergebundene Decke	Q1 23405,14410 23350,14387 23217,14295
 (Weg entlang der U-Bahn): wassergebundene Decke	Q1 23217,14295 23228,14265
-(Diagonalverbindung im Landschaftspark Herzberge): Asphalt	Q0 17689,13405 17670,13378 17638,13363 17590,13317 17562,13255 17487,13198
+(Diagonalverbindung im Landschaftspark Herzberge): Asphalt	Q0 17689,13405 17670,13378 17643,13363 17585,13300 17570,13262 17491,13190
 (Eichhorster Str. - Schorfheidestr.): Gehwegplatten	Q0 21825,18689 21828,18701 21860,18718 21875,18717
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20588,16992 20657,16959 20770,16901
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20657,16959 20682,17010
@@ -11227,6 +11227,7 @@ Götelstr. [Parallelstraße]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252
 Hölderlinstr.: Asphalt mit einigen leichten Schäden	Q0 1787,11509 1586,11483 1429,11528
 (Schulstr. - Am Zeppelinpark): unbefestigter Pfad	Q2 -8279,13433 -8367,13409
 (Hertefeldstr. - Sternbergpromenade): Kleinsteinpflaster	Q1 -2964,14478 -2939,14433
+(Rathauspark - Rudolf-Reusch-Str.): alter Asphalt	Q1 15628,12246 15663,12270
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12725,7 +12726,7 @@ Borsigstr.: asphaltiert	Q0 9508,13578 9376,13765 9316,13870
 Newtonstr.: asphaltiert	Q0 19324,2939 19216,3052 19175,3095 19076,3193 18953,3318 18857,3418
 Staakener Str.: asphaltiert	Q0 -4748,14237 -4835,14223 -4891,14169 -5879,14242 -6024,14252 -6046,14253 -6192,14252
 Isländische Str.: sehr guter Asphalt	Q0 10022,16237 10030,16238 10281,16263
-Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15658,12231 15668,12304 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
+Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15658,12231 15663,12270 15668,12304 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15571,12648 15657,12648 15732,12650
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15732,12562 15657,12562 15657,12648
 Pritzwalker Str.: Kopfsteinpflaster	Q2 6919,13360 6897,13551

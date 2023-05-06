@@ -99,7 +99,7 @@ Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2023-01-21 vvv
+#: last_checked: 2023-05-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	1no 19013,14905 19175,14968 19196,14976
@@ -264,8 +264,8 @@ Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kietzer Str.	1s:q3 22372,4496 22383,4470
 # REMOVED (hier keine Einbahnstraße, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18585,10024
-Ontarioseestr.	1 18585,10024 18408,10041
-# REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18408,10041 18339,10048
+Ontarioseestr.	1 18585,10024 18411,10037
+# REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16469,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4911,11018 4910,10940 4858,10943 4812,10948 4821,11026 4828,11094 4880,11088 4916,11083 4911,11018
@@ -329,8 +329,8 @@ Aspenweg	1 -3000,18196 -3020,18194 -3050,18173 -3096,18119 -3111,18105 -3168,180
 Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13339,13196 13435,12973
 # REMOVED (stimmt nicht (mehr?)) --- Wolliner Str.	1 10405,14425 10320,14608
-Splanemannstr.	1 18301,9946 18389,9925 18408,10041
-Ontarioseestr.	1 18408,10041 18387,10070
+Splanemannstr.	1 18305,9951 18397,9928 18411,10037
+Ontarioseestr.	1 18411,10037 18387,10070
 Burgherrenstr.	1 8972,8643 9076,8783
 Travestr.	1 14836,11842 14901,11808 14986,11760
 Müggelstr.	1 14901,11808 14965,11924
@@ -1018,8 +1018,6 @@ Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 Olympische Str./Steubenplatz	1 610,12100 620,12144 668,12190
 Steubenplatz	1 689,12152 653,12109 610,12100
 Steubenplatz	1s:q4 668,12190 689,12152
-#: note: keine Gehwege, enge Straße
-Radieschenpfad	1 20582,18475 20635,18381
 #: note: keine Gehwege, enge Straße
 Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
 Enger Steig	1 -4310,11770 -4312,11720 -4302,11669
@@ -2731,8 +2729,8 @@ tragen (Treppe, 9 Stufen)	0:15 14331,17016
 # REMOVED --- tragen (4 Stufen)	0:10 12871,15882
 Rampe und flache Treppe (8 Stufen)	0:25 16065,6126
 tragen (Treppe, 12 Stufen)	0:15 5475,7906
-tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
-tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
+tragen (Treppe, 11+13 Stufen)	0:30 19163,14981
+tragen (Treppe, 11+10+4 Stufen)	0:30 19160,14935
 # REMOVE (asphaltierte Rampe existiert) --- #: note: oder "wilde" Rampe benutzen --- #: XXX existiert hier mittlerweile eine Rampe? --- #: by: https://adfc-berlin.de/aktiv-werden/in-deinem-bezirk/wuhletal/641-zum-fahrrat-mahe.html?date=20201129 (Stand: 29.10.20) --- #: priority: #B --- tragen (Treppe, 3 Stufen)	0:10 19173,14931
 #: by: rjoop, keine Stufenangabe!
 tragen (Treppe)	0:30 89344,-5795
@@ -3572,7 +3570,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: XXX Hat die Sperrung etwas mit den Bahnbrücken zu tun?
 #: priority: #C
-#: last_checked: 2023-04-28
+#: last_checked: 2023-05-06
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
 #: XXX Bauarbeiten am Kanzlerpark
@@ -3680,7 +3678,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-05-03
+#: last_checked: 2023-05-06
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3893,7 +3891,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 # REMOVED (Absperrgitter mittlerweile üblicherweise verschoben) --- #: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23, 2022-09-30, 2022-10-29) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-09-30 --- Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
 # 
 #: next_check_id: FALKENBERG-2021
-#: last_checked: 2022-11-06
+#: last_checked: 2023-05-06
 #: check_frequency: 150d
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
@@ -4637,7 +4635,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 # REMOVED (fertig) --- #: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster? --- #: XXX laut osm mittlerweile fertig --- #: osm_watch: way id="412161705" version="4" brb --- #: last_checked: 2018-02-17 --- #: check_frequency: 60d --- Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 # REMOVED --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="497699542" version="7" --- #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg? --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C --- Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 # 
-# REMOVED (wurde (wegen fehlender Bautätigkeit?) aufgehoben) --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/landesunternehmen-berlinovo-baut-wohnhaus_a196168 --- #: last_checked: 2018-04-29 vvv --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18301,9946 --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18266,9853 --- #: last_checked ^^^
+# REMOVED (wurde (wegen fehlender Bautätigkeit?) aufgehoben) --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/landesunternehmen-berlinovo-baut-wohnhaus_a196168 --- #: last_checked: 2018-04-29 vvv --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18305,9951 --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18305,9951 18280,9868 18266,9853 --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506 --- #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php (bis Ende 2019) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schwedter-strasse-bleibt-fernradweg_a188545 --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/nach-anwohnerbeschwerden-gleimtunnel-wird-ein-halbes-jahr-fuer-autos-voll-gesperrt--31848488 (Ende der oberirdischen Bauarbeiten) --- #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/ --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/im-mauerpark-erinnert-kuenftig-ein-gedenkort-an-die-teilung-der-stadt_a233200 (Ende des Jahres (2019) verschwinden die Baustellen) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schichtenwasser-erschwerte-bauarbeiten-der-berliner-wasserbetriebe-am-stauraumkanal_a250078 (bis Ende März 2020) --- #: source_id: 2147342369 --- #: last_checked: 2020-04-03 vvv --- #: check_frequency: 30d vvv
 # REMOVED (hier kommt man mittlerweile durch) --- Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 # REMOVED (fertig) --- Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487

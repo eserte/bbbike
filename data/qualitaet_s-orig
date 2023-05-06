@@ -1330,7 +1330,7 @@ Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12852,7282 12910,7297 13003,7316
 Schierker Str.: Kopfsteinpflaster	Q2+ 13003,7316 13034,7319
 Hˆnower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
-Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925 18301,9946
+Splanemannstr.: Asphalt	Q0 18411,10037 18397,9928 18305,9951
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8738 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
 Wuhlewanderweg: Asphalt, einige Wurzelsch‰den	Q0- 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
@@ -2180,11 +2180,11 @@ Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18365,14607 18410,1
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
 #: check_frequency: 120d vvv
-#: last_checked: 2023-01-21 vvv
+#: last_checked: 2023-05-06 vvv
 Landsberger Allee: Beton-Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2023-04-29 (mapillary)
+#: last_checked: 2023-05-06
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -3633,7 +3633,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_46_6239_6362_online.pdf (Eingruppierung in die Straﬂenreinigungsverzeichnisse)
 #: XXX ‰ndert sich mit der Straﬂenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
-#: osm_watch: way id="641657694" version="4"
+#: osm_watch: way id="641657694" version="5"
 #: priority: #C
 #: last_checked: 2023-02-19
 #: check_frequency: 120d
@@ -6466,7 +6466,7 @@ Am Dˆrferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 # 
 #: next_check_id: FALKENBERG-2021
 #: XXX: letzte Deckschicht fehlt noch
-#: last_checked: 2022-11-06
+#: last_checked: 2023-05-06
 #: check_frequency: 150d
 Am Dˆrferweg: provisorischer Asphalt	Q1+ 20889,18935 20951,18961 20998,18980 21021,18989
 # 
@@ -9433,7 +9433,9 @@ F¸rstendamm: Asphalt	Q0 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9859 (Erw‰hnung einer Straﬂenbaumaﬂnahme 2022/2023 --- hier?)
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1282912.php (Erw‰hnung)
+#: osm_watch: way id="281648784" version="11"
 #: XXX wird hier die Fahrbahn neu gemacht?
+#: last_checked: 2022-09-07 (osm)
 #: next_check: 2023-05-09
 F¸rstendamm: Asphalt mit einigen Sch‰den	Q1+ 3490,24887 3550,24887 3741,24942 3754,24946
 Hambacher Weg: Kopfsteinpflaster	Q2- 3205,24839 3239,24892 3267,24964
@@ -10291,7 +10293,7 @@ Peter-Strasser-Weg: Asphalt mit einigen Sch‰den	Q1+ 9240,7811 9130,7810
 (Straﬂe unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2- 8333,10167 8384,10507
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
-(Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
+(Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17485,13316 17488,13257 17491,13190 17490,13133 17491,13125
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, einige Wurzelhebungen	Q0- 17698,13124 17739,13146 17871,13145 17906,13141
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17906,13141 17978,13328 18054,13477 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
@@ -10707,8 +10709,9 @@ Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 2
 #: source_id: viz2021:13.54537,52.542117,17.10.2022,10:12 (Fahrbahninstandsetzung bis 9.12.2022) (inaktiv)
 #: osm_watch: way id="8014720" version="33"
 #: XXX Nach der Instandsetzung bessere Qualit‰t, vielleicht asphaltiert?
-#: last_checked: 2022-12-30 (mapillary)
-#: next_check: 2023-02-28
+#: last_checked: 2023-05-06
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2023-02-28
 Marzahner Promenade: Beton	Q0- 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0- 20832,15981 20788,15968 20761,15940
 (Marzahner Promenade - Landsberger Allee): Verbundsteinpflaster/Betonplatten	Q1 20693,15758 20703,15755 20715,15751 20719,15749
@@ -10767,7 +10770,7 @@ Wischbergweg: unbefestigt, teilweise holprig	Q2 13898,18597 13900,18642
 (Cecilienstr. - Joachim-Ringelnatz-Str.): Beton	Q0 22101,13616 22110,13639 22136,13735 22141,13784
 (Weg entlang der U-Bahn): wassergebundene Decke	Q1 23405,14410 23350,14387 23217,14295
 (Weg entlang der U-Bahn): wassergebundene Decke	Q1- 23217,14295 23228,14265
-(Diagonalverbindung im Landschaftspark Herzberge): Asphalt	Q0 17689,13405 17670,13378 17638,13363 17590,13317 17562,13255 17487,13198
+(Diagonalverbindung im Landschaftspark Herzberge): Asphalt	Q0 17689,13405 17670,13378 17643,13363 17585,13300 17570,13262 17491,13190
 (Eichhorster Str. - Schorfheidestr.): Gehwegplatten	Q0- 21825,18689 21828,18701 21860,18718 21875,18717
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20588,16992 20657,16959 20770,16901
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20657,16959 20682,17010
@@ -13095,6 +13098,7 @@ Gˆtelstr. [Parallelstraﬂe]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252
 Hˆlderlinstr.: Asphalt mit einigen leichten Sch‰den	Q0- 1787,11509 1586,11483 1429,11528
 (Schulstr. - Am Zeppelinpark): unbefestigter Pfad	Q2 -8279,13433 -8367,13409
 (Hertefeldstr. - Sternbergpromenade): Kleinsteinpflaster	Q1- -2964,14478 -2939,14433
+(Rathauspark - Rudolf-Reusch-Str.): alter Asphalt	Q1 15628,12246 15663,12270
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16607,7 +16611,7 @@ Isl‰ndische Str.: sehr guter Asphalt	Q0 10022,16237 10030,16238 10281,16263
 # 
 #: by: Diana Stark: vvv
 #: confirmed_by: srt
-Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15658,12231 15668,12304 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
+Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15658,12231 15663,12270 15668,12304 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15571,12648 15657,12648 15732,12650
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15732,12562 15657,12562 15657,12648
 #: by: ^^^
@@ -30427,7 +30431,7 @@ Golliner Str.: Beton	Q1 22217,17989 22276,18107 22191,18150
 Kˆlpiner Str.: Beton	Q1 22069,18401 22114,18244 22213,18193
 Dˆllner Str.: fester Sandweg mit Lˆchern	Q2 22313,18595 22071,18593
 #: corrected_by: osm, srt (Beton, Q0- -> ... (ab Fr¸hjahr 2022))
-(Radweg an der Straﬂenbahn): Asphalt	Q0 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442
+(Radweg an der Straﬂenbahn): Asphalt	Q0+ 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442
 (Radweg an der Straﬂenbahn): Beton	Q0- 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
 # REMOVED (anscheinend realisiert) --- #: corrected_by: srt (was Q3) --- #: XXX: wird der Radweg hier verbessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4
 (Radweg an der Straﬂenbahn): asphaltiert	Q0 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21192,16466 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237
