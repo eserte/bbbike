@@ -5804,7 +5804,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-05-02 (mapillary)
+#: last_checked: 2023-05-07
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -6422,7 +6422,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-07
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',

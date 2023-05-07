@@ -35450,7 +35450,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
-#: last_checked: 2023-05-02 (mapillary)
+#: last_checked: 2023-05-07
 #: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -37062,7 +37062,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-07
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37607,6 +37607,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/aufraeumarbeiten-dauern-an_a373874
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
+#: by: https://berliner-abendblatt.de/berlin-news/nach-platzen-von-aquadom-kein-neues-aquarium-geplant-id220494
 # REMOVED --- #: priority: #C --- #: last_checked: 2023-04-06 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10359,12634 10351,12646 10305,12717

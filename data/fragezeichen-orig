@@ -49,7 +49,7 @@ Berliner Str. (Wilmersdorf): wird es hier Radspuren geben?	? 3952,8980 4006,8967
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
 # REMOVED (hier fertig) --- Mehringdamm: Sanierung des Radwegs (Asphaltierung + Verbreiterung)	?::inwork; 9248,9350 9283,9487 9334,9670
 #: XXX Bauarbeiten haben angefangen, alter Radweg ist teilweise abgesperrt, getrennter/gemeinsamer Geh -und Radweg; mittlerweile (Dezember 2022) keine Bauarbeiten mehr, bezüglich des Radwegs ist nichts passiert
-#: last_checked: 2023-04-02
+#: last_checked: 2023-05-07
 #: check_frequency: 90d
 # REMOVED (bislang nichts passiert) --- #: next_check: 2022-12-31
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 9444,9919 9448,10014
@@ -4263,7 +4263,7 @@ Monumentenstr.: Fahrradstraße geplant	?::projected 7647,9196 7735,9121 7790,9126
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/#headline_1_58
 #: by: https://berliner-abendblatt.de/2022/11/05/online-befragung-zum-verkehrskonzept-fuer-gartenstadt-tempelhof/
 #: XXX in welcher Form soll die Radwegverbindung entstehen? Wie sieht die Anbindung zum Tempelhofer Feld aus?
-#: last_checked: 2023-04-21
+#: last_checked: 2023-05-07
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610 8263,7611 8378,7623 8465,7699 8512,7757 8553,7795 8642,7876 8731,7956 8731,7990 8769,7994 8783,8020 8834,8023 8921,8028 8952,8030 9033,8029 9130,8029 9240,8028
@@ -4561,7 +4561,7 @@ Potsdamer Str.: Busspur vermutlich nur in Richtung Osten, oder doch in beiden Ri
 # REMOVED (zurückgestellt, Konflikt mit Radverkehrsanlage) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Kuhligshofstr. -> Albrechtstr.) --- #: osm_watch: way id="30157290" version="22" --- #: XXX hier vermutlich erst nach Abschluss der Bauarbeiten am Steglitzer Kreisel --- #: last_checked: 2020-07-11 --- #: check_frequency: 180d --- Schloßstr.: wird eine Busspur Richtung Norden eingerichtet?	?::projected; 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: XXX im Artikel fälschlicherweise als "Unter den Eichen" bezeichnet
 #: osm_watch: way id="183331569" version="17"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-05-07
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 120d
 Schloßstr.: Busspur vermutlich nur in Richtung Steglitz, oder doch in beiden Richtungen? Wird hier die Radwegbenutzungspflicht aufgehoben?	?::projected; 4436,5150 4516,5194 4593,5235 4677,5274 4741,5309
@@ -4718,7 +4718,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer? Wird eine Radspu
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1027810.php
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/umgestaltung-des-platz-der-luftbr%C3%BCcke.1186/#post-18304
 #: by: https://berliner-abendblatt.de/2022/05/11/platz-der-luftbruecke/ (Baustart Ende 2023, Teilfertigstellung 2025)
-#: last_checked: 2023-04-21
+#: last_checked: 2023-05-07
 #: check_frequency: 360d
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9093,8665
 # 
@@ -6026,7 +6026,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2023-05-02 (mapillary)
+#: last_checked: 2023-05-07
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6821,7 +6821,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-07
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7188,7 +7188,7 @@ Alt-Karow/Bucher Chaussee/Hofzeichendamm/Schönerlinder Weg: "Fußgängerschutzweg"
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10587 (Anfrage)
-#: last_checked: 2023-04-24
+#: last_checked: 2023-05-07
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -7568,7 +7568,7 @@ Meta-London-Str.: genaue Lage? Qualität?	? -2939,16495 -2904,16703
 #: by: https://viz.berlin.de/2023/02/radfahrstreifen-zossener-str/
 #: source_id: viz2021:13.39518,52.49613,27.02.2023,07:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.39505,52.493771,27.02.2023,07:00 (bis 07.04.2023) (bis 21.04.2023) (bis 12.5.2023)
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-07
 #: next_check: 2023-05-12
 Zossener Str./Brücke: Radfahrstreifen bekommen Protektionselemente (niedrige Protektion)	? 9827,10051 9837,10117 9845,10148 9858,10199 9865,10227 9873,10285
 # 
