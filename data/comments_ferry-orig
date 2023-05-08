@@ -18,17 +18,18 @@ Fähre Caputh (Havel): pro Person 0,50 Euro, pro Fahrrad 0,50 Euro; Fährzeiten im
 #: url: https://www.ketzin.de/verzeichnis/objekt.php?mandat=110420
 #: as_of: 2023-03
 Fähre Ketzin (Havel): Fahrrad mit Fahrer 2,00 Euro; Fährzeiten im Sommer Mo-So 5:30-20:00 Uhr; Fährzeiten im Winter Mo-Fr 5.30-19:00 Uhr, Sa/So 9:00-18:00 Uhr	CS -26784,5756 -26840,5684
-# 
-#: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
-# REMOVED (frühere URL) --- #: url: https://schifffahrt-in-potsdam.de/potsdamer-wassertaxi/
-#: url: https://potsdamer-wassertaxi.de/ vvv
-#: as_of: 2022-05-30 vvv
-Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer Do bis So, Feiertag, 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
-Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer Do bis So, Feiertag, 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -10086,1886 -10053,1640
-#: note: absichtlich nicht im Straßennetz verbunden (verkehrlich nicht sinnvoll, genaue Lage der Anlegestelle unbekannt) --- Park Babelsberg - Schiffbauergasse: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 6x täglich, ansonsten 3x täglich; pro Person 3,50 Euro, pro Fahrrad 2 Euro	CS -11422,-827 -11608,-709
-#: as_of ^^^
-#: url: ^^^
-#: XXX_prog ^^^
+#
+### XXX auf der Website am 2023-05-08: "Leider ist der Zeitpunkt unseres Saisonstarts 2023 derzeit immer noch nicht absehbar." 
+##: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
+## REMOVED (frühere URL) --- #: url: https://schifffahrt-in-potsdam.de/potsdamer-wassertaxi/
+##: url: https://potsdamer-wassertaxi.de/ vvv
+##: as_of: 2022-05-30 vvv
+#Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer Do bis So, Feiertag, 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
+#Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer Do bis So, Feiertag, 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -10086,1886 -10053,1640
+##: note: absichtlich nicht im Straßennetz verbunden (verkehrlich nicht sinnvoll, genaue Lage der Anlegestelle unbekannt) --- Park Babelsberg - Schiffbauergasse: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 6x täglich, ansonsten 3x täglich; pro Person 3,50 Euro, pro Fahrrad 2 Euro	CS -11422,-827 -11608,-709
+##: as_of ^^^
+##: url: ^^^
+##: XXX_prog ^^^
 # 
 #: url: https://www.swp-potsdam.de/de/verkehr/fahrplan-und-liniennetz/fahrplan-f%C3%A4hre-f1/
 # REMOVED (alter Fahrplan) --- #: url: https://www.swp-potsdam.de/content/verkehr/pdf_7/fahrplanwechsel_2018_2019/faehre_09_12_2018/fahrplan_f1_taeglich_ab_09_12_2018.pdf
@@ -136,8 +137,8 @@ Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man 
 #: XXX_prog ^^^
 # 
 #: url: http://www.liepnitzinsel.de/faehre.php
-#: as_of: 2023-04
-Fähre Liepnitzsee zum Großen Werder: täglich 10.00 bis eine Stunde vor Sonnenuntergang; Saisonbetrieb (Anfang April bis Ende Oktober); Normaltarif 5 EUR (hin und zurück), Fahrrad 1 EUR	CS 17391,38405 17448,38277 17692,38138
+#: as_of: 2023-05
+Fähre Liepnitzsee zum Großen Werder: von 10.00 bis abends (17:00, 18:00 oder 19:00); Saisonbetrieb (Anfang April bis Ende Oktober), fährt nicht jeden Tag; Normaltarif 5 EUR (hin und zurück), Fahrrad 1 EUR	CS 17391,38405 17448,38277 17692,38138
 # 
 #: url: https://www.strausberger-eisenbahn.de/strausseefaehre/
 #: as_of: 2023-03

@@ -670,8 +670,9 @@ Kynaststr.	NH 14652,10201 14738,10317 14766,10372 14797,10476 14805,10518 14828,
 # REMOVED (an dieser Stelle wird es definitiv keinen Weg mehr geben --- hier steht bereits ein Wohnriegel) --- (Kynaststr. - Paul-und-Paula-Ufer)	NN 14843,10621 14911,10587
 # REMOVED --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- (Kynaststr. - Paul-und-Paula-Ufer)	NN 14815,10516 14820,10473
 (Kynaststr. - Flaschenkai)	NN 14797,10476 14820,10473 14861,10467
-#: alias: Untere Kynaststr.
-Kynaststr.	N 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732 14904,10812
+#: note: "Untere Kynaststr." war kein offizieller, aber durchaus gebräuchlicher Name, um diesen Strang von der restlichen Kynaststr. zu unterscheiden
+#: oldname: -202305: Untere Kynaststr.
+An der Mole	N 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732 14904,10812
 # REMOVED (Asphalt ist entfernt) --- #: XXX wann erfolgt der Rückbau der Ersatzstraße? --- #: osm_watch: way id="58929537" version="32" --- #: last_checked: 2014-09-06 --- #: next_check: 2014-09-16 --- Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 # REMOVED (es existiert kein Weg mehr) --- (Alt-Stralau - Spreeufer)	NN 14652,10201 14569,10055
 (Spreeufer)	NN 14569,10055 14599,10039 14690,9993 14776,9949 15000,9820
@@ -12857,6 +12858,7 @@ Stuthirtenweg	N 13241,1113 13336,1162 13450,1222
 Stuthirtenweg	N 13450,1222 13542,1268 13580,1300 13635,1347 13634,1371
 Christoph-Ruden-Str.	N 12785,1308 12725,1429 12643,1706
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_01_0001_0140_online.pdf (Benennung eines Geh- und Radweges zum 5. Mai 2023)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1321335.php (mit Straßenschild)
 # REMOVED --- #: XXX neuer Name "Wolfgang-Seifert-Weg", fehlt in Berlin.coords.data, PLZ=? --- #: next_check: 2023-05-05
 #: historical_note: früher in BBBike gekennzeichnet als "(Christoph-Ruden-Str. - Buckower Damm)"
 #: oldname: -20230505: <namenslos>
@@ -15389,7 +15391,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-05-06
+#: last_checked: 2023-05-08
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15777,7 +15779,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-05-06
+#: last_checked: 2023-05-08
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
