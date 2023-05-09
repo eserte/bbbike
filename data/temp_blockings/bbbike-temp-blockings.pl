@@ -38602,4 +38602,17 @@ EOF
 	2::inwork 6957,25450 7170,25566 7415,25928
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zimmerstr.: Kraneinsatz, Fahrbahn zwischen Axel-Springer-Str. und Markgrafenstr. gesperrt, Ende unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2023-05-09 vvv
+#: check_frequency: 3d vvv
+	q4::inwork 9737,11349 9945,11371
+	q3::inwork 9945,11371 10072,11384
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
     );

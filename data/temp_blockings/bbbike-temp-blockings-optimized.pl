@@ -7388,6 +7388,20 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'text' => 'Glienicke: Sperrung der Kindelfließbrücke vom 22.08.2022, 07:00 Uhr bis 15.12.2023, 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1702652400
+       },
+       {
+         'data' => '#: last_checked: 2023-05-09 vvv
+#: check_frequency: 3d vvv
+	q4::inwork 9737,11349 9945,11371
+	q3::inwork 9945,11371 10072,11384
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3783,
+         'text' => 'Zimmerstr.: Kraneinsatz, Fahrbahn zwischen Axel-Springer-Str. und Markgrafenstr. gesperrt, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
