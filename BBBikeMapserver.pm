@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2005,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2005,2013,2015,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,6 +18,8 @@ package BBBikeMapserver;
 use strict;
 use File::Basename;
 use CGI;
+use Time::HiRes ();
+
 use BBBikeCGI::Util ();
 use BBBikeMapserver::Bbox;
 
@@ -318,7 +320,8 @@ sub create_mapfile {
 
     if ($do_route) {
 	# create a new unique id
-	my $prefix = "xxx-" . time . "-" . $$ . int(rand(100000));
+	my $dashed_time = Time::HiRes::time(); $dashed_time =~ s{\.}{-};
+	my $prefix = "xxx-" . $dashed_time . "-" . $$ . int(rand(100000));
 
 	my @scopes;
 	my $preferred_scope;
