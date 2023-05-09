@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2023-05-08
+#: last_checked: 2023-05-09
 #: check_frequency: 7d
 Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
@@ -28,7 +28,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-05-04
+#: last_checked: 2023-05-09
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
@@ -279,7 +279,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-04
+#: last_checked: 2023-05-09
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -1029,7 +1029,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: osm_watch: way id="1040605739" version="1"
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
 #: XXX laut osm opening_date=2023-12
-#: last_checked: 2023-04-04
+#: last_checked: 2023-05-07 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
@@ -1565,7 +1565,7 @@ Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q3 15793,9334 15813,937
 Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
 # REMOVED --- #: next_check_id: RUMMELSBURGERBUCHT-2021 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung einer Verbreiterung, wo genau?) --- #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strang wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenfügen --- #: last_checked: 2022-05-07 --- #: check_frequency: 90d
 #: note: Fußweg für Radfahrer frei
-Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636 15200,10600 15249,10564
+Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15135,10639 15200,10600 15249,10564
 #: note: siehe auch permanenten temp-blockings-Eintrag (Radfahren verboten)
 Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,9749 16119,9689 16125,9678 16120,9653

@@ -4499,7 +4499,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-04 vvv
+#: last_checked: 2023-05-09 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5365,7 +5365,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-04-21 (daf)
+#: last_checked: 2023-05-09 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5810,7 +5810,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-05-04
+#: last_checked: 2023-05-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-04-17
 # REMOVED --- #: next_check: 2023-12-31
@@ -5998,6 +5998,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://berliner-abendblatt.de/2022/09/27/neubau-des-bauhaus-archivs-richtfest-erst-fuer-2023-geplant/
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-des-bauhaus-archivs-hat-begonnen_a359183
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf (Einziehung)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1321885.php (Richtfest)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -6187,10 +6188,12 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
-#: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
-#: XXX Bis wann ist die Kreuzung gesperrt?
+#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-100523/ (Bauphase bis Mitte Juni 2023, Gesamtbaumaßnahme bis Ende Juli 2023)
+# REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
+#: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: last_checked: 2023-05-05 vvv
 #: next_check: 2023-05-10 vvv
+# REMOVED --- #: next_check: 2023-06-15 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -6208,9 +6211,9 @@ Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9254,131
 ',
          'from' => 1667499233,
          'id' => 3643,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Johannisstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), voraussichtlich bis 10.5.2023',
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Johannisstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), Gesamtbaumaßnahme bis Ende Juli 2023',
          'type' => 'handicap',
-         'until' => 1683730800
+         'until' => 1690815600
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
@@ -6230,7 +6233,7 @@ Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9254,131
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-04-17 (mapillary) vvv
+#: last_checked: 2023-05-07 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
@@ -6479,7 +6482,7 @@ mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
        },
        {
          'data' => '# REMOVED (als die Bauarbeiten noch in der Weserstr. waren) --- #: also_indoor: traffic (G,B[zuviel],W) vvv
-#: also_indoor: traffic (B) vvv
+#: also_indoor: traffic (ex-B) vvv
 #: last_checked: 2023-04-10 vvv
 # REMOVED --- Weserstr. Richtung Westen	q4::inwork; 13946,7918 13891,7961
 # REMOVED --- Weserstr. Richtung Osten	q3::inwork; 13891,7961 13946,7918
@@ -6917,6 +6920,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1304897.php
 #: by: https://nitter.cz/VIZ_Berlin/status/1639218010979278848#m
 #: by: https://nitter.net/pic/orig/media%2FFr-rz3SXgAIyH7I.jpg
+#: by: https://www.berliner-zeitung.de/mensch-metropole/bahnhofstrasse-koepenick-bvg-stau-und-stress-in-koepenick-das-chaos-koennte-noch-jahre-andauern-tram-bus-senat-db-li.346665
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -6973,13 +6977,14 @@ Blumenthalstr.	q4::inwork 8944,6293 8971,6154
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1302099.php
 #: by: https://berliner-abendblatt.de/kiez-news/pankow/schlosspark-buch-kein-eingang-wegen-bauarbeiten-id210739
 #: by: https://www.berliner-woche.de/buch/c-bauen/schlosspark-buch-eingang-alt-buch-gesperrt_a375113
+#: by: https://www.berliner-woche.de/buch/c-bauen/sanierung-des-schlossparks-ist-beendet_a378976
 	2::inwork 16558,25688 16583,25667 16593,25640
 ',
          'from' => 1678575600,
          'id' => 3739,
-         'text' => 'Schlosspark Buch: Eingang Alt-Buch wegen Bauarbeiten am Kirchturm gesperrt, vom 13.03.2023 bis voraussichtlich Ende Dezember 2023',
+         'text' => 'Schlosspark Buch: Eingang Alt-Buch wegen Bauarbeiten am Kirchturm gesperrt, vom 13.03.2023 bis voraussichtlich 13. Mai 2023',
          'type' => 'gesperrt',
-         'until' => 1704063599
+         'until' => 1683990000
        },
        undef,
        {
@@ -7164,9 +7169,9 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: by: https://www.nordkurier.de/regional/uckermark/kilometerlanger-umweg-in-passow-1437197
 #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-04-10
+#: last_checked: 2023-05-09 (indoor)
 #: check_frequency: 30d
-#: next_check: 2023-06-03
+#: next_check: 2023-06-02
 	2::inwork 56280,83440 56301,83419 56317,83407
 ',
          'from' => 1677452400,
@@ -7187,12 +7192,12 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
        },
        undef,
        {
-         'data' => '	q4::inwork 3869,10760 4267,10724 4393,10712
+         'data' => '	q3::inwork 3869,10760 4267,10724 4393,10712
 ',
          'from' => 1681189200,
          'id' => 3763,
          'source_id' => 'viz2021:13.3076,52.50361,12.04.2023,07:00',
-         'text' => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., evtl. sind auch Radfahrer betroffen, vom 12.04.2023 07:00 bis 31.08.2023 04:00',
+         'text' => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 12.04.2023 07:00 bis 31.08.2023 04:00',
          'type' => 'handicap',
          'until' => 1693447200
        },

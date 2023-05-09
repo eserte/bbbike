@@ -59,7 +59,7 @@ Neue Kreisstr.: Asphaltstreifen	Q0-; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14680,10837
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14680,10837 14717,10855 14810,10832 14904,10812
 # REMOVED --- #: next_check_id: HAUPTSTR-2015 vvv --- #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv --- #: source_id: 2147339565 vvv --- #: last_checked: 2016-08-25 vvv --- #: next_check: 2016-08-29 vvv
-Hauptstr.: Asphalt	Q0 14904,10812 15004,10791 15261,10738
+Hauptstr.: Asphalt	Q0 14904,10812 15004,10791 15163,10758 15261,10738
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -2210,7 +2210,7 @@ Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
 Flaschenkai: Parkweg bzw. Betonpflaster	Q0- 15101,10263 15044,10297 14977,10348 14892,10411
 Flaschenkai: Beton	Q0 14892,10411 14864,10451 14861,10467 14884,10497
-Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636 15200,10600
+Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15135,10639 15200,10600
 Uferweg: Parkweg	Q1- 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048
 Uferweg: Parkweg	Q1 15260,10048 15295,10022 15296,10000 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15561,9809 15626,9710
@@ -7272,6 +7272,7 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/veitstrasse-wird-erneuert-und-ist-drei-monate-gesperrt_a276028
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1317571.php (zur geplanten Gehwegverbreiterung)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/neue-cdu-verkehrsstadtraetin-laesst-gehwegparken-in-der-veithstrasse-weiter-zu_a379534
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/veithstrasse-gruene-setzen-sich-weiter-fuer-wegfall-von-parkplaetzen-zugunsten-eines-gehwegs-ein_a380485
 #: note: während den Bauarbeiten ist der Radverkehr laut viz nicht betroffen
 #: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020)
 #: priority: #C

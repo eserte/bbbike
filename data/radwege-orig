@@ -316,7 +316,7 @@ Grünbeschichtung	RW4; 13633,10705 13678,10685 13779,10642
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier auch eine Grünbeschichtung entstehen?
 #: priority: #D
-#: last_checked: 2023-05-05
+#: last_checked: 2023-05-07 (mapillary)
 	RW4; 13779,10642 13850,10612
 asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -2787,12 +2787,12 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552
 #: last_checked ^^^
 #: check_frequency ^^^
 	RW3;RW2 14671,10751 14680,10837
-	RW3; 15261,10738 15004,10791 14904,10812
+	RW3; 15261,10738 15163,10758 15004,10791 14904,10812
 	RW4; 14904,10812 14810,10832 14717,10855 14680,10837
 	RW4; 14680,10837 14717,10855 14810,10832 14904,10812
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
 # REMOVED --- #: XXX Markierungen fehlen hier noch --- #: osm_watch: way id="439421759" version="9" --- #: osm_watch: way id="384136808" version="13" --- #: source_id: 2147342887 --- #: last_checked: 2018-07-01 --- #: check_frequency: 14d
-	RW4; 14904,10812 15004,10791 15261,10738
+	RW4; 14904,10812 15004,10791 15163,10758 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
 	RW1; 13999,9842 13890,9894
@@ -5922,7 +5922,7 @@ asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 130
 	RW6;RW6 16384,12874 16385,12825 16431,12825 16484,12825
 	RW6;RW6 16430,12848 16431,12825 16428,12741
 # REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
-# REMOVED ---	RW0; 15261,10738 15004,10791 14904,10812
+# REMOVED ---	RW0; 15261,10738 15163,10758 15004,10791 14904,10812
 #: by: anonymous
 asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW6;RW6 10332,11929 10364,11896
@@ -5935,7 +5935,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2023-04-16 vvv
+#: last_checked: 2023-05-07 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
