@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2023-05-09
+#: last_checked: 2023-05-10
 #: check_frequency: 7d
 Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
@@ -28,7 +28,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-05-09
+#: last_checked: 2023-05-10
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
@@ -279,7 +279,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-09
+#: last_checked: 2023-05-10
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -337,7 +337,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus, nicht am House of One
-#: last_checked: 2023-05-04
+#: last_checked: 2023-05-10
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -769,7 +769,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: osm_watch: way id="625667165" version="17"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
-#: last_checked: 2023-04-25 (mapillary)
+#: last_checked: 2023-05-10
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
@@ -3408,7 +3408,8 @@ Einbecker Str.: einige Fußgänger	q2 17734,11408 17764,11371
 #: note: Gehweg für Radfahrer frei
 Greifenhagener Str.: einige Fußgänger	q1 11150,15908 11176,15958
 #: note: früher "q1"
-Am Landwehrkanal: einige Fußgänger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897 13271,9927 13333,9929
+Am Landwehrkanal: einige Fußgänger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897
+# XXX (next_check_id: SCHLESISCHERBUSCH-2023) --- Am Landwehrkanal: einige Fußgänger	q2 13225,9897 13271,9927 13333,9929
 #: note: sieben Moabiter Kissen
 #: XXX_prog: für Anhänger größere Behinderung (q1? q2?)
 Knobelsdorffstr.: einige Moabiter Kissen	q0- 3117,11852 2953,11830 2728,11805 2547,11788
@@ -4499,6 +4500,9 @@ Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 1988
 # 
 (Leinestr. - Anita-Berber-Park): enge Rampe	q4+ 11738,7431 11727,7423 11740,7423
 (Leinestr. - Anita-Berber-Park): einige Fußgänger	q1 11740,7423 11751,7366
+# 
+#: note: einige davon kaum umfahrbar, manchmal parken hier auch Autos
+Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 7621,7813
 # 
 ######################### User Contributions #################################
 # 

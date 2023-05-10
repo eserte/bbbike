@@ -1691,7 +1691,7 @@ Allee der Kosmonauten: enge Straﬂe	q1; 20096,14127 20097,14039 20081,13993 20080
 Allee der Kosmonauten [Wohngebietsweg]: einige Fuﬂg‰nger	q1 19859,13765 20038,13771 20075,13758 20114,13762
 Einbecker Str.: einige Fuﬂg‰nger	q2 17734,11408 17764,11371
 Greifenhagener Str.: einige Fuﬂg‰nger	q1 11150,15908 11176,15958
-Am Landwehrkanal: einige Fuﬂg‰nger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897 13271,9927 13333,9929
+Am Landwehrkanal: einige Fuﬂg‰nger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897
 Knobelsdorffstr.: einige Moabiter Kissen	q0 3117,11852 2953,11830 2728,11805 2547,11788
 Wegenerstr.: ein Moabiter Kissen	q0 4495,9184 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4713,8997
@@ -2433,6 +2433,7 @@ Hubertusallee: Fuﬂg‰nger, Bordsteine	q4 2107,8407 2126,8426
 Anna-Seghers-Str.: enge und un¸bersichtliche Kurve	q1 19795,3945 19821,4018 19884,4018
 (Leinestr. - Anita-Berber-Park): enge Rampe	q4 11738,7431 11727,7423 11740,7423
 (Leinestr. - Anita-Berber-Park): einige Fuﬂg‰nger	q1 11740,7423 11751,7366
+Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 7621,7813
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3373,6 +3374,7 @@ Walter-Friedrich-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
+Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert: gesperrt, ggfs. schieben	q3:inwork::igndisp 13333,9929 13271,9927 13225,9897
 Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert: gesperrt, ggfs. schieben	q4:inwork::igndisp 13333,9929 13418,9944
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003

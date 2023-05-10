@@ -113,9 +113,9 @@ Maybachufer: Asphalt	Q0 12053,9793 12085,9778
 Maybachufer: Asphalt	Q0 12085,9778 12250,9691 12412,9610 12563,9536
 Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12837,9353 12868,9359
 Am Landwehrkanal: Asphalt	Q0 12897,9365 12889,9426 12905,9470
-Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1 12905,9470 13109,9743
-Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0 13109,9743 13225,9897
-Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
+Am Landwehrkanal: Asphalt	Q0 12905,9470 13109,9743
+Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
+Am Landwehrkanal: Asphalt	Q0 13225,9897 13271,9927 13333,9929
 Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606
 Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13301,8606 13262,8554 13217,8493 13166,8423 13102,8343
 Innstr.: Asphalt	Q0 13301,8606 13314,8624 13368,8689
@@ -1562,10 +1562,10 @@ Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0; 20733,15657 2
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 Kurfürstenweg: fester Waldweg	Q1 -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4978,918
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8961,6490 8995,6473
-Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
-Parkstr.: Kopfsteinpflaster	Q2 8944,6293 8992,6312 9029,6360
-Parkstr.: Asphalt	Q0 9029,6360 9078,6360 9143,6415
-Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8944,6293 8971,6154
+Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9031,6355
+Parkstr.: unebenes Kleinsteinpflaster	Q2 8944,6293 8992,6312 9031,6355
+Parkstr.: Asphalt	Q0 9031,6355 9078,6360 9143,6415
+Blumenthalstr.: Asphalt	Q0 8944,6293 8971,6154
 Blumenthalstr.: Asphalt	Q0; 8976,6094 8996,5956
 Blumenthalstr.: Kopfsteinpflaster	Q2; 8996,5956 8976,6094
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8996,5956 9192,5930
@@ -10815,7 +10815,8 @@ Henriette-Lustig-Str.: Asphalt	Q0 21611,5119 21631,5079
 Rosenfelder Ring [Fußweg]: Steinpflaster	Q0 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919
 Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
-Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
+Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7622,7986
+Quartiersweg: Asphalt	Q0 7639,7974 7622,7986 7516,8063 7498,8062
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
 Quartiersweg: gepflastert	Q2 7537,7859 7548,7884 7548,7937 7499,7937
 Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
@@ -11079,7 +11080,6 @@ In den Alboingärten: Betonpflaster	Q0 7646,6031 7638,5967
 (Falkenberger Chaussee - Wartenberger Str.): Asphalt	Q0 17568,17945 17585,17963
 Max-und Herta-Naujocks-Weg: wassergebundene Decke	Q1 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
 (Mausohrweg - R1): Asphalt, letzte Deckschicht fehlt	Q1 33296,2894 33267,2810 33255,2762
-Attilastr.: Asphalt mit einigen Schäden	Q0; 7690,4563 7825,4672 7896,4732 8014,4832
 Geiserichstr.: Asphalt mit einigen Schäden	Q0 8130,4932 8198,4861 8255,4791
 Distelfinkweg: Beton	Q0 15672,2864 15537,3026 15460,3118 15410,3179 15367,3215 15273,3269
 Distelfinkweg [Stichstraße]: Beton	Q0 15460,3118 15512,3157
@@ -13058,7 +13058,7 @@ Wolfsburger Weg: Beton	Q0 10504,4705 10386,4771 10304,4801 10105,4818 10012,4826
 Onkel-Herse-Str.: Asphalt	Q0 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
 Kamminer Str.: Asphalt	Q0 3240,12966 3283,13132 3310,13253 3351,13411 3371,13501 3395,13605
 Wattstr. (Oberschöneweide): guter Asphalt	Q0 17681,7589 17676,7555 17669,7515 17647,7280
-Ottokarstr.: schlechtes Kopfsteinpflaster	Q3 8642,5422 8744,5483 8767,5571
+Ottokarstr.: Kopfsteinpflaster	Q2 8642,5422 8744,5483 8767,5571
 Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1 -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674
@@ -13709,7 +13709,8 @@ Wackenbergstr.: Betonplatten	Q1 11311,20273 11359,20297 11419,20327 11535,20383
 Wackenbergstr.: Asphalt	Q0 11535,20383 11558,20414 11630,20476 11718,20551 11797,20601
 Okarinastr.: Asphalt	Q0 11558,20414 11506,20507 11424,20653 11421,20674 11435,20709 11502,20781 11569,20845
 Okarinastr.: Beton	Q0 11569,20845 11657,20915
-Friedrich-Franz-Str.: Kopfsteinpflaster	Q2 8767,5571 8786,5720 8801,5844
+Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8767,5571 8786,5720
+Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8786,5720 8801,5844
 Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8801,5844 8816,5980 8830,6145
 Friedrich-Franz-Str.: Kopfsteinpflaster	Q2 8830,6145 8846,6303
 Lowise-Reuter-Ring: guter Asphalt	Q0 13675,4855 13639,4850 13574,4862 13540,4861 13503,4846 13476,4812 13468,4766 13482,4718 13511,4695 13560,4681 13589,4681 13680,4715
@@ -13930,7 +13931,9 @@ Groenerstr.: schlechtes Kopfsteinpflaster, mäßiger Asphaltstreifen	Q2 -3258,1510
 Groenerstr.: schlechtes Kopfsteinpflaster	Q3 -3360,14974 -3447,14863
 Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5572,19478
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
-Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8629,5866 8801,5844 8996,5823
+Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8629,5866
+Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8629,5866 8801,5844
+Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8801,5844 8996,5823
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574
 Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18899,8754

@@ -60,7 +60,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: next_check: 2023-05-10 vvv
-#: valid: -20230510 vvv
+#: valid: -20230731 vvv
 #: XXX schon seit mehreren Tagen ausgeschaltet
 #: last_checked: 2023-05-05
 #: check_frequency: 30d
@@ -234,7 +234,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-10 (daf)
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -1596,7 +1596,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="1"
-#: last_checked: 2023-03-11 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2023-05-10 (manchmal ausgeschaltet (abends? selten?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645

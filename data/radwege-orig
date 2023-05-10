@@ -144,8 +144,8 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8629,5866
 #: priority ^^^
 #: XXX ^^^
 # 
-	RW1;RW1 8593,5491 8642,5422
-	RW1; 8642,5422 8667,5372 8674,5357
+alte Gehwegplatten, Bord gegen Gehweg	RW1; 8593,5491 8642,5422 8667,5372 8674,5357
+Verbundsteinpflaster	RW1; 8642,5422 8593,5491
 	RW3; 8674,5357 8707,5289
 neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: XXX Instandsetzung des Radwegs, in welchem Bereich genau? vvv
@@ -170,7 +170,9 @@ Bord gegen Gehweg	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
 alte Gehwegplatten, Bord gegen Gehweg, relativ breit	RW1; 8014,4832 8130,4932
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8130,4932 8219,5010 8348,5184 8356,5195
-letzte 30m mit Bordsteinradweg, nicht benutzungspflichtig	RW0; 7896,4732 8014,4832
+	RW3; 8014,4832 7986,4808 7896,4732 7825,4672 7743,4605
+	RW4; 7690,4563 7743,4605 7825,4672 7896,4732 7986,4808
+alte Gehwegplatten	RW1; 7986,4808 8014,4832
 	RW2; 9242,7286 9242,7218 9242,7145
 	RW2; 9242,7145 9242,7218 9242,7286
 	RW2;RW2 9242,7145 9242,7044 9242,6962
@@ -230,7 +232,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2023-04-25 vvv
+#: last_checked: 2023-05-10 vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: last_checked ^^^
@@ -316,14 +318,14 @@ Grünbeschichtung	RW4; 13633,10705 13678,10685 13779,10642
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier auch eine Grünbeschichtung entstehen?
 #: priority: #D
-#: last_checked: 2023-05-07 (mapillary)
+#: last_checked: 2023-05-10
 	RW4; 13779,10642 13850,10612
 asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-05-05 vvv
+#: last_checked: 2023-05-10 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -497,7 +499,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-05-01 vvv
+#: last_checked: 2023-05-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1364,7 +1366,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="20"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-05-10
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -3689,8 +3691,9 @@ altes Verbundsteinpflaster	RW1;RW0 17531,2460 17772,2331 17928,2248 18101,2164 1
 Verbundsteinpflaster	RW2;RW2 15585,4139 15594,4152
 Asphalt	RW2;RW2 15594,4152 15618,4189 15640,4222
 Verbundsteinpflaster	RW2;RW2 15640,4222 15669,4266 15720,4341
-Grünbeschichtung	RW4; 8594,8777 8598,9074
-die letzten Meter werden auf dem Gehweg geführt; Grünbeschichtung	RW3; 8598,9074 8594,8777
+Grünbeschichtung	RW4; 8594,8777 8595,8827 8598,9074
+Grünbeschichtung	RW3; 8598,9074 8595,8827
+Gehwegplatten	RW1; 8595,8827 8594,8777
 Grünbeschichtung	RW3;RW3 8598,9074 8598,9269 8595,9495
 #: by: rjoop
 #: confirmed_by: Daniel Pepper ("seit April 2008") + srt
@@ -7654,7 +7657,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen)
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2023-03-11
+#: last_checked: 2023-05-10
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
@@ -7787,7 +7790,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="29"
+#: osm_watch: way id="169738742" version="31"
 #: osm_watch: way id="335487059" version="27"
 #: last_checked: 2023-05-07 vvv
 #: check_frequency: 60d vvv
@@ -8136,7 +8139,7 @@ provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
 #: source_id ^^^
 # 
 # REMOVED --- #: next_check_id: MOECKERN-2021 --- #: XXX Baumaßnahme 2.28 (Realisierung nach 2011)  --- #: by: https://api.fixmyberlin.de/api/plannings/23 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.920730.php (temporäre Radwege) --- #: by: https://api.fixmyberlin.de/api/projects/376 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006 --- #: by: https://abendblatt-berlin.de/2020/04/21/friedrichshain-kreuzberg-radwegprojekt-geht-weiter/ --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/die-meisten-temporaeren-radwege-sollen-bleiben_a263404 (Verzögerung) --- #: by: https://abendblatt-berlin.de/2020/05/24/kreuzberg-radwege-statt-parkplaetze/ (... im Juni (2020) umgesetzt werden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (hier wird eine permanente Lösung entstehen, 600m mit Pollern) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (außerdem: Verbreiterung des existierenden Radwegs in Richtung Norden (Stand Mai 2020)) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (verkehrsrechtliche Anordnung fehlt (Stand Oktober 2020)) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-ostseite/ (zwischen Yorckstr. und Hornstr. wird der Hochbordradweg saniert und verbreitert, bis 4. Quartal 2020) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite/ (1. Quartal 2021, PBL) (alter Eintrag) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite-2/ (3. Quartal 2021 - 4. Quartal 2021) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ostseite zwischen Hornstr. und Obentrautstr. wird auch saniert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9983 (Frage) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10016 (Antrag, abgelehnt) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1137745.php (Poller) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/poller-gegen-falschparker_a325790 --- #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021) --- #: osm_watch: way id="240451922" version="23" --- #: XXX kommen hier noch Poller/Leitboys hin? -> es wurde nur zur Gehwegseite hin gepollert. Mehr kommt hier wohl nicht. --- #: last_checked: 2021-11-09 --- #: check_frequency: 30d --- #: next_check: 2021-10-22
-Grünbeschichtung	RW3; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
+Grünbeschichtung	RW4; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
 Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 # 
@@ -8291,4 +8294,9 @@ Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,
 	RW6;RW6 23419,15226 23538,15247
 	RW6;RW6 23538,15247 23569,15062
 #: by ^^^
+# 
+#: note: Steglitzer Damm Richtung Osten
+Radspur teiweise hinter parkenden Autos	RW3; 6846,4808 7092,4763 7205,4741 7285,4724 7364,4704 7387,4696 7485,4659 7532,4605 7544,4587 7597,4499
+#: note: Steglitzer Damm Richtung Westen
+	RW3; 7597,4499 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7092,4763 6846,4808
 # 

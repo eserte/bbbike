@@ -176,7 +176,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="20"
-#: last_checked: 2023-03-19 (mapillary)
+#: last_checked: 2023-05-10
 #: check_frequency: 120d
 #: next_check: 2023-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
@@ -233,9 +233,12 @@ Maybachufer: Asphalt	Q0 12053,9793 12085,9778
 Maybachufer: Asphalt	Q0 12085,9778 12250,9691 12412,9610 12563,9536
 Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12837,9353 12868,9359
 Am Landwehrkanal: Asphalt	Q0 12897,9365 12889,9426 12905,9470
-Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1- 12905,9470 13109,9743
-Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0- 13109,9743 13225,9897
-Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
+#: historical_note: früher (bis 2023): Parkweg, Schotterstellen, bei Regen große Pfützen, Q1-
+Am Landwehrkanal: Asphalt	Q0 12905,9470 13109,9743
+#: historical_note: früher (bis 2023): Asphalt, einige Wurzelhebungen, Q0-
+Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
+#: historical_note: früher (bis 2023): Parkweg, Q1
+Am Landwehrkanal: Asphalt	Q0 13225,9897 13271,9927 13333,9929
 #: note: zwischen gepflastertem Parkstreifen (Diagonalparken) und Asphaltstreifen ist eine deutliche Lücke, so dass man bei Gegenverkehr auf die Pflasterung fahren muss
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahrrat-oktober-2018 (Planungsfehler)
 Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606
@@ -2193,10 +2196,12 @@ Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	
 #: by: http://www.bsisb.de/friedhofsb/b_s_ws_drl/c10.jpg
 Kurfürstenweg: fester Waldweg	Q1- -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4978,918
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8961,6490 8995,6473
-Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
-Parkstr.: Kopfsteinpflaster	Q2 8944,6293 8992,6312 9029,6360
-Parkstr.: Asphalt	Q0 9029,6360 9078,6360 9143,6415
-Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8944,6293 8971,6154
+Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9031,6355
+Parkstr.: unebenes Kleinsteinpflaster	Q2 8944,6293 8992,6312 9031,6355
+Parkstr.: Asphalt	Q0 9031,6355 9078,6360 9143,6415
+#: historical_note: früher (bis 2023): schlechtes Kopfsteinpflaster, Q3
+#: note: Parkstreifen gepflastert
+Blumenthalstr.: Asphalt	Q0 8944,6293 8971,6154
 Blumenthalstr.: Asphalt	Q0; 8976,6094 8996,5956
 Blumenthalstr.: Kopfsteinpflaster	Q2; 8996,5956 8976,6094
 #: note: unebenes Kleinsteinpflaster sowie Großsteinpflaster
@@ -12639,7 +12644,8 @@ Henriette-Lustig-Str.: Asphalt	Q0 21611,5119 21631,5079
 Rosenfelder Ring [Fußweg]: Steinpflaster	Q0- 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919
 Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1+ 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
-Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
+Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7622,7986
+Quartiersweg: Asphalt	Q0 7639,7974 7622,7986 7516,8063 7498,8062
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
 Quartiersweg: gepflastert	Q2 7537,7859 7548,7884 7548,7937 7499,7937
 Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
@@ -12944,7 +12950,7 @@ Max-und Herta-Naujocks-Weg: wassergebundene Decke	Q1 16036,18604 16077,18674 161
 #: check_frequency: 120d
 (Mausohrweg - R1): Asphalt, letzte Deckschicht fehlt	Q1+ 33296,2894 33267,2810 33255,2762
 # 
-Attilastr.: Asphalt mit einigen Schäden	Q0-; 7690,4563 7825,4672 7896,4732 8014,4832
+# REMOVED (nicht mehr) --- Attilastr.: Asphalt mit einigen Schäden	Q0-; 7690,4563 7743,4605 7825,4672 7896,4732 7986,4808 8014,4832
 Geiserichstr.: Asphalt mit einigen Schäden	Q0- 8130,4932 8198,4861 8255,4791
 Distelfinkweg: Beton	Q0- 15672,2864 15537,3026 15460,3118 15410,3179 15367,3215 15273,3269
 Distelfinkweg [Stichstraße]: Beton	Q0- 15460,3118 15512,3157
@@ -17582,7 +17588,8 @@ Kamminer Str.: Asphalt	Q0 3240,12966 3283,13132 3310,13253 3351,13411 3371,13501
 Wattstr. (Oberschöneweide): guter Asphalt	Q0- 17681,7589 17676,7555 17669,7515 17647,7280
 # 
 #: by: Saskia (sengewitz...):
-Ottokarstr.: schlechtes Kopfsteinpflaster	Q3 8642,5422 8744,5483 8767,5571
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Ottokarstr.: Kopfsteinpflaster	Q2 8642,5422 8744,5483 8767,5571
 # 
 #: by: Herbert Seitz: vvv
 #: note: laut Herbert Seitz "fester Sandweg", laut anonymen Eintrag "wassergebundener Weg":
@@ -19558,12 +19565,12 @@ Okarinastr.: Beton	Q0- 11569,20845 11657,20915
 #: by: ^^^
 # 
 #: by: Christian (chriskeys): vvv
-#: corrected_by: srt (gut -> mäßig, zumindest der nördliche Abschnitt)
-Friedrich-Franz-Str.: Kopfsteinpflaster	Q2 8767,5571 8786,5720 8801,5844
-#: corrected_by: srt (gut -> ..., per Augenschein)
+#: corrected_by: srt (gutes Kopfsteinpflaster -> ...) vvv
+Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8767,5571 8786,5720
+Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3+ 8786,5720 8801,5844
 Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8801,5844 8816,5980 8830,6145
-#: corrected_by: srt (gut -> mäßig, zumindest der nördliche Abschnitt)
 Friedrich-Franz-Str.: Kopfsteinpflaster	Q2 8830,6145 8846,6303
+#: corrected_by ^^^
 #: by ^^^
 # 
 #: by: Susanne Kuby:
@@ -20214,7 +20221,11 @@ Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,1923
 #: confirmed_by: srt
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
 #: corrected_by: srt (schlecht -> mäßig, zumindest der westliche Abschnitt)
-Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8629,5866 8801,5844 8996,5823
+Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8629,5866
+#: confirmed_by: srt
+Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8629,5866 8801,5844
+#: corrected_by: srt (schlecht -> mäßig)
+Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8801,5844 8996,5823
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 #: by: ^^^
@@ -32161,4 +32172,6 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 20329,3928
 Kreuzungsbereich asphaltiert	Q0 20790,4114
 Einmündungsbereich asphaltiert	Q0 20981,4628
 Kreuzungsbereich asphaltiert	Q0 5800,12361
+Kreuzungsbereich asphaltiert	Q0 8816,5980
+Kreuzungsbereich asphaltiert	Q0 8830,6145
 #: ignore ^^^
