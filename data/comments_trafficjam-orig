@@ -21,10 +21,10 @@
 # 
 #: next_check_id: MARKGRAFENDAMM-2022
 #: note: Stau gesehen: 2022-08-24 (Mi) gegen 13:00, 2022-08-25 (Do) gegen 14:30, 2022-08-27 (Sa) gegen 17:30, 2022-10-07 (Fr) gegen 13:20, 2023-02-16 (Do) gegen 19:30, 2023-02-17 (Fr) gegen 13:45, 2023-03-02 (Do) gegen 13:05, 2023-03-11 (Sa) gegen 13:50, 2023-03-14 (Di) gegen 12:50, 2023-04-05 (Mi) gegen 13:30 und 14:15
-#: note: kurzen Stau gesehen (ab Corinthstr.): 2022-09-24 (Sa) gegen 16:40, vermutlich 2022-10-10 (Mo) gegen 13:05, 2022-10-24 (Mo) gegen 16:30, 2022-11-21 (Mo) gegen 13:40, 2023-01-14 (Sa) gegen 13:00, 2023-02-19 (So) gegen 12:40, 2023-04-03 (Mo, Osterferien) gegen 12:45
+#: note: kurzen Stau gesehen (ab Corinthstr.): 2022-09-24 (Sa) gegen 16:40, vermutlich 2022-10-10 (Mo) gegen 13:05, 2022-10-24 (Mo) gegen 16:30, 2022-11-21 (Mo) gegen 13:40, 2023-01-14 (Sa) gegen 13:00, 2023-02-19 (So) gegen 12:40, 2023-04-03 (Mo, Osterferien) gegen 12:45, 2023-05-11 (Do) gegen 12:35
 #: note: ganz kurzen Stau gesehen (Beginn zwischen Corinthstr. und Radweg): 2022-12-04 (So) gegen 15:00, 2022-12-22 (Do) gegen 18:40, 2023-04-10 (Ostermontag) gegen 15:45
-#: note: keinen Stau gesehen: 2022-08-29 (Mo) gegen 18:10, 2022-09-01 (Do) gegen 19:00, 2022-09-03 (Sa) gegen 12:45, 2022-09-04 (So) gegen 15:00, 2022-09-21 (Mi) gegen 19:50, 2022-09-28 (Mi) gegen 11:15, 2022-10-16 (So) gegen 14:40, 2022-10-18 (Di) gegen 17:30, 2022-10-20 (Do) gegen 12:30, 2022-10-23 (So) gegen 15:50, 2022-11-01 (Di) gegen 17:50, 2022-11-08 (Di) gegen 13:50, 2022-11-12 (Sa) gegen 14:00 und 16:00, 2022-11-13 (So) gegen 11:45, 2022-11-18 (Fr) mittags (2x), 2022-11-27 (So) mittags (2x), 2022-12-01 (Do) gegen 13:30, 2022-12-06 (Di) gegen 13:20, 2022-12-08 (Do) gegen 17:30 und 18:00, 2022-12-15 (Do) gegen 12:45, 2022-12-22 (Do) gegen 17:50, 2022-12-28 (Mi) 14:30, 2023-01-04 (Mi) 18:30, 2023-01-10 (Di) gegen 13:15, 2023-01-17 (Di) gegen 11:45 und 12:30, 2023-02-04 (So) gegen 16:00, 2023-03-06 (Mo) gegen 12:40, 2023-04-15 (So) gegen 11:25
-#: last_checked: 2023-04-16
+#: note: keinen Stau gesehen: 2022-08-29 (Mo) gegen 18:10, 2022-09-01 (Do) gegen 19:00, 2022-09-03 (Sa) gegen 12:45, 2022-09-04 (So) gegen 15:00, 2022-09-21 (Mi) gegen 19:50, 2022-09-28 (Mi) gegen 11:15, 2022-10-16 (So) gegen 14:40, 2022-10-18 (Di) gegen 17:30, 2022-10-20 (Do) gegen 12:30, 2022-10-23 (So) gegen 15:50, 2022-11-01 (Di) gegen 17:50, 2022-11-08 (Di) gegen 13:50, 2022-11-12 (Sa) gegen 14:00 und 16:00, 2022-11-13 (So) gegen 11:45, 2022-11-18 (Fr) mittags (2x), 2022-11-27 (So) mittags (2x), 2022-12-01 (Do) gegen 13:30, 2022-12-06 (Di) gegen 13:20, 2022-12-08 (Do) gegen 17:30 und 18:00, 2022-12-15 (Do) gegen 12:45, 2022-12-22 (Do) gegen 17:50, 2022-12-28 (Mi) 14:30, 2023-01-04 (Mi) 18:30, 2023-01-10 (Di) gegen 13:15, 2023-01-17 (Di) gegen 11:45 und 12:30, 2023-02-04 (So) gegen 16:00, 2023-03-06 (Mo) gegen 12:40, 2023-04-15 (So) gegen 11:25, 2023-05-11 (Do) gegen 22:30
+#: last_checked: 2023-05-11
 #: check_frequency: 90d
 #: next_check: 2023-05-31
 	Jam; 14641,10552 14608,10409 14558,10264
@@ -74,7 +74,7 @@ Berliner Allee: Sperrung einer Fahrbahn	Jam; 14248,16202 14346,16241 14499,16341
 #: also_indoor ^^^
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2023-05-10 vvv
+#: last_checked: 2023-05-11 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-09-01 vvv
 Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
@@ -135,7 +135,7 @@ Dorotheenstr.	Jam; 8775,12457 8540,12420
 Boxhagener Str.	Jam; 14799,11330 14918,11249
 # 
 #: note: kann manchmal schon an der Kreuzung Kynaststr. anfangen, gesehen: (allerdings Sperrung der Oberen Kynaststr. seit Ende Januer 2023) 2023-02-20 (Mo) gegen 12:20 und 12:55, 2023-03-02 (Do) gegen 13:30, 2023-03-21 (Di) gegen 12:50, 2023-03-24 (Fr) gegen 12:45, 2023-03-27 (Mo, S-Bahnstreik) gegen 11:45, 2023-04-19 (Mi) gegen 11:35
-#: note: oder in Höhe Krummhübler Str., gesehen: 2023-03-14 (Di) um 11:55, 2023-04-11 (Di, Osterferien) gegen 12:10, 2023-04-14 (Fr, Osterferien) gegen 18:05, 2023-04-19 (Mi) gegen 11:10, 2023-05-06 (Sa) gegen 13:40
+#: note: oder in Höhe Krummhübler Str., gesehen: 2023-03-14 (Di) um 11:55, 2023-04-11 (Di, Osterferien) gegen 12:10, 2023-04-14 (Fr, Osterferien) gegen 18:05, 2023-04-19 (Mi) gegen 11:10, 2023-05-06 (Sa) gegen 13:40, gesehen: 2023-05-11 (Do) gegen 12:30
 #: note: oder der übliche Stau ab Schreiberhauer Str., gesehen: 2023-05-03 (Mi) um 17:50
 Marktstr.	Jam; 15088,10950 15113,10916 15144,10905 15279,10862
 Marktstr.	Jam; 15279,10862 15144,10905

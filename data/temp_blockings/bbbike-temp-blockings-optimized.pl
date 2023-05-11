@@ -4538,7 +4538,19 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
+# REMOVED --- #: next_check: 2019-11-25
+#: add_fragezeichen: Wann sind die Kranarbeiten beendet?
+#: last_checked: 2023-05-11
+	q3::inwork 13711,11458 13895,11663
+',
+         'from' => undef,
+         'id' => 3180,
+         'text' => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -5637,7 +5649,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-16
+#: last_checked: 2023-05-11
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5671,7 +5683,17 @@ Ravensberger Str.	q4::inwork; 3711,9855 3927,9935
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: confirmed_by: srt (am 2022-05-03 gesehen)
+	q4::temp::play 14946,11697 14986,11760
+',
+         'from' => 1685916000,
+         'id' => 3543,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+         'text' => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, im Juni 2023',
+         'type' => 'handicap',
+         'until' => 1687881600
+       },
        undef,
        undef,
        undef,
@@ -5734,15 +5756,15 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        },
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
+#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
 #: last_checked: 2023-05-07
-#: next_check: 2023-05-12
+#: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 ',
-         'from' => 1683842400,
+         'from' => 1684965600,
          'id' => 3551,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 26.08. bis Ende September',
+         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September',
          'type' => 'handicap',
          'until' => 1696091400
        },
@@ -6178,7 +6200,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -6359,7 +6381,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-07
+#: last_checked: 2023-05-11
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6486,7 +6508,7 @@ mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
        {
          'data' => '# REMOVED (als die Bauarbeiten noch in der Weserstr. waren) --- #: also_indoor: traffic (G,B[zuviel],W) vvv
 #: also_indoor: traffic (ex-B) vvv
-#: last_checked: 2023-04-10 vvv
+#: last_checked: 2023-05-11 vvv
 # REMOVED --- Weserstr. Richtung Westen	q4::inwork; 13946,7918 13891,7961
 # REMOVED --- Weserstr. Richtung Osten	q3::inwork; 13891,7961 13946,7918
 Ederstr.	q3::inwork 13946,7918 13919,7707
@@ -7401,7 +7423,8 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'until' => 1702652400
        },
        {
-         'data' => '#: last_checked: 2023-05-10 vvv
+         'data' => '#: also_indoor: traffic (B)
+#: last_checked: 2023-05-10 vvv
 #: check_frequency: 1d vvv
 	q4::inwork 9737,11349 9945,11371
 	q3::inwork 9945,11371 10072,11384

@@ -19,7 +19,7 @@ Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14246,7042 14236,
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="6"
-#: last_checked: 2023-03-11 vvv
+#: last_checked: 2023-05-11 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="4"
@@ -135,7 +135,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-03-19
+#: last_checked: 2023-05-11
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -206,7 +206,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2023-05-07 vvv
+#: last_checked: 2023-05-11 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -895,7 +895,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2023-04-16
+#: last_checked: 2023-05-11
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -8133,7 +8133,8 @@ Apfelwicklerstr.: Verbundsteinpflaster	Q0- 21456,10631 21553,10671
 Dramburger Str.: Asphalt	Q0 21594,9895 21606,10010 21571,10128 21556,10232 21573,10296 21584,10329
 Birnbaumer Str.: Beton	Q0- 22093,6630 22186,6672
 Birnbaumer Str.: gepflastert	Q2 22050,6619 22093,6630
-Am Flutgraben: Parkweg	Q1- 13333,9929 13418,9944 13579,10146
+#: historical_note: früher (bis ca. Mai 2023): Parkweg, Q1-
+Am Flutgraben: Asphalt	Q0 13333,9929 13418,9944 13579,10146
 Feldtmannstr.: Kopfsteinpflaster	Q2 14766,17702 14671,17735
 (B2 - Straße 52): Beton	Q0- 15872,20496 15851,20517
 (B2 - Straße 52): wassergebundene Decke	Q1- 15851,20517 15821,20539 15730,20549 15605,21098 15499,21569

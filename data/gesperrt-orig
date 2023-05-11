@@ -1323,7 +1323,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023) (bis 30.5.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2023-05-07
+#: last_checked: 2023-05-11
 #: check_frequency: 60d
 #: next_check: 2023-05-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3208,9 +3208,9 @@ Drängelgitter	BNP:2::trailer=5 18833,3781
 Drängelgitter	BNP:2::trailer=5 18018,3276
 # REMOVED (existiert nicht mehr oder war offen?) --- #: note: lichte Breite beträgt 90cm --- Schranke, ggfs. auf Gehweg ausweichen	BNP:2::trailer=6 16368,7425
 Drängelgitter	BNP:3::trailer=10 23012,3598
-Tor	BNP:3::trailer=5 14425,8116
+# REMOVED (Tor existiert nicht mehr, gesehen Mai 2023) --- Tor	BNP:3::trailer=5 14425,8116
 Tor	BNP:3::trailer=5 14688,8355
-# REMOVE (man fährt jetzt via neuen Gehweg) --- Schranke	BNP:0::trailer=3
+# REMOVED (man fährt jetzt via neuen Gehweg) --- Schranke	BNP:0::trailer=3
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
 Drängelgitter	BNP:5 4272,2704
 # REMOVED (gibt's mittlerweile nicht mehr) --- Drängelgitter	BNP:5 4202,2622
@@ -3660,7 +3660,7 @@ Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,53
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-11
 #: check_frequency: 60d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 # 
@@ -3686,7 +3686,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-05-06
+#: last_checked: 2023-05-11
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3814,7 +3814,7 @@ Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	1s:q4:inwork 20336,3
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-05-10 vvv
+#: last_checked: 2023-05-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-06-01 vvv
 #: osm_watch: way id="358602468" version="12"
@@ -4207,14 +4207,14 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-03-27
+#: last_checked: 2023-05-11
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-05-03
+#: last_checked: 2023-05-11
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4222,7 +4222,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
-#: last_checked: 2023-04-22 vvv
+#: last_checked: 2023-05-11 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4407,7 +4407,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="21"
 #: priority: #C
-#: last_checked: 2023-04-24
+#: last_checked: 2023-05-11
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148

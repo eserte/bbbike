@@ -30627,12 +30627,14 @@ EOF
 EOF
      },
      { from  => undef,
-       until => 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
-       text  => 'Libauer Str.: Bauarbeiten, ein Abschnitt der Fahrbahn ist gesperrt',
+       until => undef, # 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
+       text  => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
+#: add_fragezeichen: Wann sind die Kranarbeiten beendet?
+#: last_checked: 2023-05-11
 	q3::inwork 13711,11458 13895,11663
 EOF
      },
@@ -32381,7 +32383,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346756', # inaktiv
        data  => <<EOF,
-#: source_id: 2147346949
+#: source_id: 2147346949 (vermutlich inaktiv)
 #: by: wosch
 # REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
 # REMOVED ---	q4::inwork 9298,12765 9303,12718
@@ -35228,7 +35230,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-16
+#: last_checked: 2023-05-11
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35312,9 +35314,9 @@ EOF
 	q4::inwork; 11893,17397 12324,17213
 EOF
      },
-     { from  => undef, # do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-02 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-07-06 18:00:00") }, # nur temporäre Schilder, möglicherweise nicht mehr nach den Sommerferien 2022 verlängert
-       text  => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15 und 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 03.05. bis 06.07.',
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2023-06-05 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2023-06-27 18:00:00") }, # nur temporäre Schilder
+       text  => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, im Juni 2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
        data  => <<EOF,
@@ -35441,17 +35443,17 @@ EOF
 	q4::inwork; 16166,25767 16121,25818
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-12 00:00:00") }, # 1 Tag Vorlauf
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-25 00:00:00") }, # 1 Tag Vorlauf
        #from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-08-25 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2023?
-       text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 26.08. bis Ende September',
+       text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
+#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
 #: last_checked: 2023-05-07
-#: next_check: 2023-05-12
+#: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 EOF
      },
@@ -36769,7 +36771,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -37069,7 +37071,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-07
+#: last_checked: 2023-05-11
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37254,7 +37256,7 @@ EOF
        data  => <<EOF,
 # REMOVED (als die Bauarbeiten noch in der Weserstr. waren) --- #: also_indoor: traffic (G,B[zuviel],W) vvv
 #: also_indoor: traffic (ex-B) vvv
-#: last_checked: 2023-04-10 vvv
+#: last_checked: 2023-05-11 vvv
 # REMOVED --- Weserstr. Richtung Westen	q4::inwork; 13946,7918 13891,7961
 # REMOVED --- Weserstr. Richtung Osten	q3::inwork; 13891,7961 13946,7918
 Ederstr.	q3::inwork 13946,7918 13919,7707
@@ -38619,6 +38621,7 @@ EOF
        text  => 'Zimmerstr.: Kraneinsatz, Fahrbahn zwischen Axel-Springer-Str. und Markgrafenstr. gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic (B)
 #: last_checked: 2023-05-10 vvv
 #: check_frequency: 1d vvv
 	q4::inwork 9737,11349 9945,11371

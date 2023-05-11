@@ -38,7 +38,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-11
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -78,9 +78,9 @@ Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: by: https://officehome.de/ostkreuz-campus-a
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
-#: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20
+#: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30
 #: note: Anforderungsampel
-#: last_checked: 2023-05-08
+#: last_checked: 2023-05-11
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -152,7 +152,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-04-27 vvv
+#: last_checked: 2023-05-11 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -1596,7 +1596,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="1"
-#: last_checked: 2023-05-10 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2023-05-11 (manchmal ausgeschaltet (abends? selten?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -2450,7 +2450,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog gilt nicht für Radfahrer auf der Karlshorster Str. Richtung Süden
 	X 15272,10790
 	F 11270,13412
-#: off: night (seen Th 2021-09-09 22:20)
+#: off: night (seen Th 2021-09-09 22:20, Th 2023-05-11 22:30)
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
@@ -2556,7 +2556,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-04-22
+#: last_checked: 2023-05-11
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
