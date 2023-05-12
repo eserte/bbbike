@@ -61,11 +61,8 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: next_check: 2023-05-10 vvv
 #: valid: -20230731 vvv
-#: XXX schon seit mehreren Tagen ausgeschaltet
-#: last_checked: 2023-05-05
-#: check_frequency: 30d
-Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-#: last_checked: 2023-05-05
+# REMOVED (entfernt) --- #: XXX schon seit mehreren Tagen ausgeschaltet --- #: last_checked: 2023-05-05 --- #: check_frequency: 30d --- Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
+#: last_checked: 2023-05-12
 #: check_frequency: 30d
 Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 #: valid ^^^
@@ -287,7 +284,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-12
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -3232,7 +3229,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-05-05 vvv
+#: last_checked: 2023-05-12 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

@@ -3197,6 +3197,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'data' => '#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
+#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -3235,7 +3236,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'source_id' => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
          'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 13. Mai 2023',
          'type' => 'gesperrt',
-         'until' => 1684015199
+         'until' => 1684036800
        },
        undef,
        undef,
@@ -4542,7 +4543,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'data' => '# REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
 #: add_fragezeichen: Wann sind die Kranarbeiten beendet?
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-12
+#: check_frequency: 3d
 	q3::inwork 13711,11458 13895,11663
 ',
          'from' => undef,
@@ -4568,7 +4570,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-12
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -5495,27 +5497,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: FUERSTENDAMM-2022
-#: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1238153.php
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/information-zu-bauarbeiten_a355817
-#: source_id: 226500387 (bis 31.12.2022) (inaktiv)
-#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023) (inaktiv)
-#: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
-#: last_checked: 2022-09-09 (kartaview)
-#: next_check: 2023-05-12
-# REMOVED (hier bereits fertig, siehe kartaview)	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965
-	q4::inwork 3015,24965 3117,24966
-',
-         'from' => 1646694000,
-         'id' => 3511,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1175116.php',
-         'text' => 'Fürstendamm: Bauarbeiten in Höhe Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 12.05.2023',
-         'type' => 'handicap',
-         'until' => 1683903600
-       },
+       undef,
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
@@ -6216,9 +6198,8 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-05-05 vvv
-#: next_check: 2023-05-10 vvv
-# REMOVED --- #: next_check: 2023-06-15 vvv
+#: last_checked: 2023-05-12 vvv
+#: next_check: 2023-06-15 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -6815,6 +6796,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
+#: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023)
 #: also_indoor: traffic (G,H,B,W)
@@ -6970,6 +6952,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'data' => '#: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (ex-G[falsch]) vvv
+#: osm_watch: way id="1171918026" version="2" vvv
 #: last_checked: 2023-05-10 vvv
 #: check_frequency: 60d vvv
 	q2::inwork 9031,6355 8995,6473
@@ -6978,6 +6961,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
 #: check_frequency ^^^
 #: last_checked ^^^
+#: osm_watch ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
 ',
@@ -7236,9 +7220,9 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'from' => 1682229600,
          'id' => 3765,
          'source_id' => 'LS/221-F/22/138',
-         'text' => 'Haselberg - Steinbeck: Deckenerneuerung, Sperrung, 24.04.2023 07:00 Uhr bis 12.05.2023 16:00 Uhr',
+         'text' => 'Haselberg - Steinbeck: Deckenerneuerung, Sperrung, 24.04.2023 bis 02.06.2023',
          'type' => 'gesperrt',
-         'until' => 1683900000
+         'until' => 1685714400
        },
        {
          'data' => '	2::inwork 93720,-26200 92960,-25954
@@ -7422,21 +7406,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'type' => 'gesperrt',
          'until' => 1702652400
        },
-       {
-         'data' => '#: also_indoor: traffic (B)
-#: last_checked: 2023-05-10 vvv
-#: check_frequency: 1d vvv
-	q4::inwork 9737,11349 9945,11371
-	q3::inwork 9945,11371 10072,11384
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3783,
-         'text' => 'Zimmerstr.: Kraneinsatz, Fahrbahn zwischen Axel-Springer-Str. und Markgrafenstr. gesperrt, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
