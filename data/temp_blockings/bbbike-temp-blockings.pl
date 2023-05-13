@@ -1421,7 +1421,7 @@ EOF
        text  => 'Bahnhofstr. zwischen Goltzstr. und Steinstraße Weihnachstsmarkt, in beiden Richtungen gesperrt. Dauer: 04.12.2004, 06:00 Uhr bis 05.12.2004, 01:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 10453,-2133 10509,-2131 10631,-2130 10756,-2128
+	2::xmas 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -16279,7 +16279,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022852',
        data  => <<EOF,
-	q4::temp 10983,-2116 10756,-2128 10631,-2130 10509,-2131 10453,-2133 10310,-2136
+	q4::temp 10983,-2116 10756,-2128 10631,-2130 10509,-2128 10465,-2129 10310,-2136
 EOF
      },
      { from  => 1252651568, # 2009-09-11 08:46
@@ -18801,7 +18801,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_019152',
        data  => <<EOF,
-	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10756,-2128 10983,-2116
+	2::temp 10310,-2136 10465,-2129 10509,-2128 10631,-2130 10756,-2128 10983,-2116
 EOF
      },
      { from  => 1284091200, # 2010-09-10 06:00 # periodischer Eintrag ist weiter unten
@@ -22027,10 +22027,10 @@ EOF
 #: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
 #: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19961,5989 20015,6069 20293,6278 20199,6318 20106,6357
+	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
 	2::temp 20199,6318 20262,6493 20225,6631
 	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19944,6006 20064,6290 20086,6307 20106,6357
+	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
 #: tempex ^^^
 EOF
      },
@@ -27755,7 +27755,7 @@ EOF
 # REMOVED --- #: priority: #A
 # REMOVED --- #: last_checked: 2019-02-16
 # REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21518,5389 21512,5404 21476,5434
-	2::inwork 21476,5434 21442,5414
+# REMOVED (Weg wurde komplett aus den Daten entfernt) ---	2::inwork 21476,5434 21442,5414
 EOF
      },
      { from  => undef, # 
@@ -30635,7 +30635,7 @@ EOF
 # REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
 #: add_fragezeichen: Wann sind die Kranarbeiten beendet?
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-13
 #: check_frequency: 3d
 	q3::inwork 13711,11458 13895,11663
 EOF
@@ -32695,7 +32695,7 @@ EOF
        data  => <<EOF,
 #: by: rbb
 # REMOVED (keine Sperrung mehr) --- #: XXX Bis wann geht die Sperrung? Hat die Sperrung etwas mit den Bauarbeiten in der Bahnhofstr. zu tun? Sind Radfahrer betroffen?
-	q4::inwork 10513,-1954 10511,-1985 10508,-2006 10453,-2133
+	q4::inwork 10513,-1954 10512,-1994 10507,-2016 10465,-2129
 EOF
      },
      { from  => 1615676400, # 2021-03-14 00:00
@@ -33424,7 +33424,7 @@ EOF
 #: XXX neue Sperrung 2022-2023, bis wann? Bekommt der gesperrte Abschnitt einen neuen Belag (Verbundsteinpflaster?)?
 #: add_fragezeichen: Ist der Weg im Hasselwerderpark noch immer gesperrt?
 #: next_check_id: HASSELWERDERPARK-2021
-#: last_checked: 2023-04-14
+#: last_checked: 2023-05-13
 #: check_frequency: 60d
 	2::inwork 18634,5484 18695,5453
 # REMOVED (hier nicht) ---	2::inwork 18506,5596 18560,5539 18634,5484
@@ -34172,7 +34172,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.39486,52.41213,18.10.2021,00:00',
        data  => <<EOF,
-	q4::inwork 9940,559 10002,695
+	q4::inwork 9950,577 10002,695
 EOF
      },
      { from  => undef, # 
@@ -35397,11 +35397,11 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26)
-#: note: Unterführung passierbar: 2023-02-19 mittags
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13)
+#: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-04-22 vvv
+#: last_checked: 2023-05-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-05-25 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
@@ -35454,7 +35454,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-07
+#: last_checked: 2023-05-13
 #: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -36517,10 +36517,12 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
+#: last_checked: 2023-05-13 vvv
 #: next_check: 2023-09-30 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 10980,-1919
 #: next_check ^^^
+#: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
      },
@@ -36995,18 +36997,20 @@ EOF
      },
      { from  => 1665942194, # 2022-10-16 19:43
        until => 1697565600, # 2023-10-17 20:00
-       text  => 'Mauerweg: Bauarbeiten im Bereich Marienfelde, einige Abschnitte des Mauerwegs (B101 - Abzweig nach Diedersdorf) können gesperrt sein, bis Herbst 2023',
+       text  => 'Mauerweg: Bauarbeiten im Bereich Marienfelde, einige Abschnitte des Mauerwegs (B101 - Abzweig nach Diedersdorf) können gesperrt sein, bis Herbst 2023 (Stand Mitte Mai 2023: Mauerweg ist hier gesperrt)',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599',
        data  => <<EOF,
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-beginn-der-baumassnahmen-am-jenbacher-weg
-#: add_fragezeichen: Wo genau sind die gesperrten Abschnitte des Mauerwegs? vvv
-#: last_checked: 2023-04-10 vvv
-#: check_frequency: 30d vvv
+#: add_fragezeichen: Ist der Mauerweg noch immer gesperrt? vvv
+#: last_checked: 2023-05-13 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2023-10-30 vvv
 # REMOVED (laut osm hier nicht mehr) --- Mauerweg Marienfelde - Lichterfelde	2::inwork 7097,-527 6961,-389 6668,-100 6498,71 6357,215 6256,363
 # REMOVED (separater Eintrag) --- Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93 5441,-150
 # REMOVED (laut osm hier nicht mehr) --- Mauerweg Marienfelde - Lichterfelde	2::inwork 5441,-150 4842,-547 4596,-707 4406,-910
 Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -37100,7 +37104,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Anfang Mai 2023: Übergang existiert)',
+       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte Mai 2023: keine Einschränkungen)',
        # was: ", oder man benutzt die Fahrbahnverbindung zum Überqueren"
        type  => 'gesperrt',
        data  => <<'EOF',
@@ -37131,7 +37135,7 @@ EOF
 #: XXX außerdem: hier wird eine neue Ampel gebaut
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
-#: last_checked: 2023-05-03 vvv
+#: last_checked: 2023-05-13 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2023-09-03 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
@@ -37695,7 +37699,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-22
+#: last_checked: 2023-05-13
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -38315,7 +38319,7 @@ EOF
        text  => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2023-05-08 vvv
+#: last_checked: 2023-05-13 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX möglicherweise Asphaltierung?
@@ -38641,6 +38645,33 @@ EOF
 #: also_indoor: traffic (none)
 #: last_checked: 2023-05-10
 	q4::inwork 6923,5057 7030,4937
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren
+#: last_checked: 2023-05-13
+#: check_frequency: 120d
+#: next_check: 2027-07-31
+	2::inwork 22280,6128 22296,6170
+EOF
+     },
+     { from  => 1684003905, # 2023-05-13 20:51
+       until => 1684101599, # 2023-05-14 23:59
+       text  => 'Lennéstr., Ebertstr., Bellevuestr.: Staatsbesuch, Sperrungen am 14.05.2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
+#: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
+	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
+	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
+	2::temp 8548,11571 8553,11630
 EOF
      },
     );

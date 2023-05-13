@@ -169,9 +169,9 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2022-07-24
+#: last_checked: 2023-05-13
 #: next_check: 2023-07-31
-(Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10225,-2207 10215,-2210 10209,-2211 10161,-2146 10096,-2137
+(Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -576,7 +576,7 @@ Wandlitzstr.: in Hˆhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) vvv
 #: also_indoor: traffic (H,G,B,W) vvv
-#: last_checked: 2023-04-22 vvv
+#: last_checked: 2023-05-13 vvv
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-05-25 vvv
 #: valid: 20230325-20230525 vvv
@@ -1695,7 +1695,8 @@ Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8635,12629 87
 #: note: im Mittelteil theoretisch q3 oder q3- mˆglich
 Helenenhof: enge Tore, Fuﬂg‰nger	q4+ 14506,11275 14395,11356
 F‰rberstr. - Uferweg: sehr eng	q2 21662,4974 21670,4997 21665,5035 21696,5053
-Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21476,5434 21512,5404 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
+# REMOVED --- Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21476,5434 21512,5404 21518,5389
+Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
@@ -1930,7 +1931,7 @@ Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fuﬂg‰nger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fuﬂg‰nger-Eintrag verkn¸pfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11928,588 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straﬂe	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -3261,7 +3262,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="10"
-#: last_checked: 2023-04-14 vvv
+#: last_checked: 2023-05-13 vvv
 #: check_frequency: 120d vvv
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850

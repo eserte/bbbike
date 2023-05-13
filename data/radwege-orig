@@ -1022,15 +1022,17 @@ asphaltiert mit einigen Unebenheiten	RW1; 1479,4853 1330,4867 922,4910 844,4916 
 	RW2; 922,4910 1330,4867 1479,4853
 	RW3;RW3 2027,4792 1884,4811 1747,4829 1479,4853
 	RW3; 2027,4792 2079,4769
+#: note: Mariendorfer Damm Richtung Süden
 #XXX zurzeit kein Radweg	RW;RW 9426,3797 9438,3745 9455,3671
-	RW1; 9455,3671 9462,3642 9489,3525 9621,3155
-für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939
+	RW3; 9455,3671 9462,3642
+Verbundsteinpflaster mit Unebenheiten	RW1; 9462,3642 9489,3525 9510,3446
+Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 13-20 Uhr	RW1; 9510,3446 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
+# 
 Verbundsteinpflaster mit Unebenheiten und zahlreichen Wurzelhebungen, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 10427,968 10379,1097 10329,1231 10276,1383 10239,1481 10226,1515 10172,1657 10127,1778 10067,1939 10024,2059 9954,2252 9934,2307 9801,2663 9720,2887
 # REMOVED (Busspur-Gültigkeitsdauer wurde nicht geändert, dafür gibt's zusätzliche zeitlich befristete Parkverbote) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7168 (Ausweitung der Gültigkeit: Montag bis Freitag von 6-18 Uhr und Sonnabend von 9-16 Uhr) --- #: XXX ab wo wurde die Gültigkeit der Busspuren geändert? --- #: priority: #C
 Verbundsteinpflaster mit Unebenheiten und zahlreichen Wurzelhebungen, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr und 15-18 Uhr	RW1; 9720,2887 9621,3155
-Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9621,3155 9489,3525 9462,3642
+Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9621,3155 9510,3446 9489,3525 9462,3642
 Verbundsteinpflaster mit Unebenheiten	RW1; 9462,3642 9455,3671
-für Radfahrer freigegebene Busspur gilt Mo-Fr 13-20 Uhr	RW1; 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
 	RW2; 10329,1231 10379,1097 10427,968
 holpriges Verbundsteinpflaster	RW1; 10427,968 10485,807 10522,708 10534,674 10590,525 10617,452 10620,445 10638,403 10676,299 10713,197 10735,137 10753,83 10782,-24 10793,-161
 	RW1; 10620,445 10617,452 10590,525 10534,674 10522,708
@@ -1084,10 +1086,13 @@ sehr uneben	RW1;RW1 14274,3129 14392,2979
 Verbundsteinpflaster	RW1; 14392,2979 14500,2864
 #: note: Kommentar von Jens Velten vvv
 sehr uneben	RW1; 14500,2864 14392,2979
-sehr uneben	RW1;RW1 14500,2864 14739,2714 14745,2710 14812,2661 14946,2519 15123,2349 15207,2313 15350,2305 15525,2299 15745,2294 15917,2289
-sehr uneben	RW2;RW1 15917,2289 15980,2318
-altes Verbundsteinpflaster	RW1;RW1 13775,3500 13710,3522 13623,3523 13526,3519 13387,3513
+sehr uneben	RW2; 15917,2289 15980,2318
+sehr uneben	RW1;RW1 13775,3500 13710,3522 13623,3523 13526,3519 13387,3513
+sehr uneben	RW1; 15980,2318 15917,2289 15745,2294 15525,2299 15350,2305 15207,2313 15159,2334 15092,2373 14946,2519 14812,2661 14745,2710 14739,2714 14500,2864
+sehr uneben	RW1; 14500,2864 14739,2714 14745,2710 14812,2661 14946,2519 15092,2373 15159,2334
 #: note ^^^
+unebene Gehwegplatten, Bord gegen Gehweg	RW1; 15159,2334 15207,2313 15350,2305
+neues Verbundsteinpflaster	RW1; 15350,2305 15525,2299 15745,2294 15917,2289
 neu asphaltiert, allerdings schon mit ersten Schäden und Hebungen	RW1; 13387,3513 13217,3557 13163,3582 13030,3664 12910,3739 12791,3814
 neues Verbundsteinpflaster	RW1; 12791,3814 12726,3870 12711,3881 12655,3882
 asphaltiert	RW1; 12655,3882 12711,3881 12726,3870 12791,3814
@@ -3132,7 +3137,9 @@ mäßiges Verbundsteinpflaster, sehr schmal, teilweise ragen parkende Autos in den
 	RW1;RW1 8735,2866 8674,2627
 #: note: explizites "Vorfahrt gewähren"-Zeichen am Radwegende
 	RW1; 8674,2627 8655,2556
-	RW2;RW2 7668,471 7602,305 7501,83 7427,-69 7404,-110 7397,-123 7199,-418 7188,-434 7164,-473
+Verbundsteinpflaster	RW2; 7668,471 7602,305 7501,83
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster, vereinzelt Betonplatten	RW2; 7501,83 7427,-69 7404,-110 7397,-123 7199,-418 7184,-441 7164,-473
+	RW2; 7164,-473 7184,-441 7199,-418 7397,-123 7404,-110 7427,-69 7501,83 7602,305 7668,471
 # 
 #: note: Wismarer Str. Richtung Südosten
 Verbundsteinpflaster	RW1; 3432,1667 3511,1601 3580,1545 3585,1541 3698,1450
@@ -3826,7 +3833,7 @@ Verbundsteinpflaster	RW1; 23046,3905 23036,3929 22971,4077 22965,4124
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
-#: last_checked: 2023-04-22
+#: last_checked: 2023-05-13
 #: check_frequency: 180d
 #: next_check: 2023-07-15
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
@@ -6018,7 +6025,7 @@ Tempo 10	RW6;RW6 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
 #: by: domi-89
 #: confirmed_by: Renate Jahnke
 #: corrected_by: srt (die ersten Meter sind noch nicht verkehrsberuhigt)
-	RW6;RW6 7673,-839 7616,-790 7473,-669 7380,-585 7297,-519 7188,-434
+	RW6;RW6 7673,-839 7616,-790 7473,-669 7376,-593 7292,-526 7184,-441
 # 
 #: by: Roland Mohrbacher: vvv
 	RW6;RW6 12963,2365 12948,2484 12937,2575 12924,2617
@@ -6226,7 +6233,7 @@ Tempo 10	RW6;RW6 18023,833 17937,958 17839,905
 	RW1;RW1 8820,3188 8910,3171 8996,3150 9152,3114
 	RW1;RW1 9152,3114 9359,3083
 	RW1;RW1 9359,3083 9488,3115 9621,3155
-	RW1;RW1 9858,744 9885,681 9940,559
+	RW1;RW1 9858,744 9885,681 9950,577
 	RW6;RW6 9745,522 9787,503 9894,453
 	RW6;RW6 9732,379 9777,364 9812,348 9838,327
 	RW6;RW6 10713,197 10903,263
@@ -6259,7 +6266,7 @@ Radwegschild steht etwa 60 Meter weiter	RW4; 9123,15963 8953,15871 8917,15851
 	RW4; 8917,15851 8953,15871 9123,15963
 #: by: Edeltraud Perschon:
 #: confirmed_by: srt
-	RW6;RW6 7297,-519 7384,-387 7536,-139
+	RW6;RW6 7292,-526 7384,-387 7536,-139
 #: by: anonymous:
 #: confirmed_by: osm:
 #: confirmed_by: srt:
@@ -6422,7 +6429,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW6;RW6 7630,-445 7692,-238
 	RW6;RW6 7473,-669 7565,-494 7593,-434 7630,-445
 	RW6;RW6 7427,-69 7452,-84 7536,-139 7623,-196 7692,-238
-	RW6;RW6 7380,-585 7475,-443 7623,-196
+	RW6;RW6 7376,-593 7475,-443 7623,-196
 10er-Zone	RW6;RW6 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 10er-Zone	RW6;RW6 7087,-396 7110,-363 7146,-307
 10er-Zone	RW6;RW6 7005,-354 7030,-313 7090,-225 7143,-136 7201,-39
@@ -6995,9 +7002,11 @@ asphaltiertes Straßenbahnkap	RW1; 14162,12808 14096,12827
 Busspur immer gültig	RW5; 6228,13324 6377,13321
 	RW3;RW3 6377,13321 6535,13327 6674,13332 6692,13333 6814,13349 6919,13360 7069,13381
 #: by: Irit Früchtnicht vvv
-	RW6;RW6 12374,1193 12369,1171 12348,1085
-	RW6;RW6 12369,1171 12295,1191 12239,1209 12243,1224 12224,1235
+#: confirmed_by: srt vvv
+	RW6;RW6 12379,1185 12373,1169 12350,1088
+	RW6;RW6 12373,1169 12295,1191 12239,1209 12243,1224 12224,1235
 	RW6;RW6 12175,1101 12200,1163 12283,1143 12295,1191
+#: confirmed_by ^^^
 #: by: ^^^
 	RW6;RW6 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132
 # REMOVED (Bauarbeiten, existiert zurzeit nicht) ---	RW1; 14650,14322 14464,14216 14358,14155
@@ -8021,7 +8030,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385342,52.44754,17.03.2023,06:00 (bis 31.05.2023) (bis 15.06.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2023-04-10 vvv
+#: last_checked: 2023-05-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -8044,10 +8053,10 @@ provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 917
 #: priority ^^^
 #: XXX ^^^
 #: note: Mariendorfer Damm Richtung Süden
-Leitboys	RW4; 9346,4144 9375,4022
-	RW4; 9375,4022 9426,3797
+#: note: Leitboys hören etwa 80m vor der Kreuzung auf
+Leitboys	RW4; 9346,4144 9375,4022 9426,3797
 #: note: Mariendorfer Damm Richtung Norden
-	RW4; 9426,3797 9375,4022 9346,4144
+Leitboys	RW4; 9426,3797 9375,4022 9346,4144
 # 
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
@@ -8217,7 +8226,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 19171,8280 19333,8165 19
 Verbundsteinpflaster	RW1; 6961,836 6966,880
 Verbundsteinpflaster	RW1; 6978,917 6966,880
 # 
-aus dem Nichts beginnender bzw. abgesperrter Radweg	RW0; 12307,964 12107,898 12007,877
+aus dem Nichts beginnender bzw. abgesperrter Radweg	RW0; 12307,964 12107,898 11997,874
 # 
 #: by: mapillary vvv
 Gehweg für Radfahrer frei, alter Asphalt, schmal	RW1; 12666,23223 12805,23268 12882,23312
@@ -8300,4 +8309,6 @@ Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,
 Radspur teiweise hinter parkenden Autos	RW3; 6846,4808 7092,4763 7205,4741 7285,4724 7364,4704 7387,4696 7485,4659 7532,4605 7544,4587 7597,4499
 #: note: Steglitzer Damm Richtung Westen
 	RW3; 7597,4499 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7092,4763 6846,4808
+# 
+Tempo 10	RW6;RW6 12460,1168 12379,1185
 # 
