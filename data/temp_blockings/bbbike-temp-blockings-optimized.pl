@@ -3193,51 +3193,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
-#: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
-#: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
-#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023)
-# REMOVED --- #: tempex: 20170520 vvv
-	2::temp 8055,12186 8119,12414
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
-	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7648,11708 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
-	2::temp 8026,11764 8016,11770 7793,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 8522,12239 8466,12197
-	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
-	2::temp 7600,11513 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
-	2::temp 8221,11885 8215,12156 8214,12205
-	2::temp 8244,11878 8327,12174 8344,12221
-	3 7429,12070 7383,12095 7031,12320
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1683842400,
-         'id' => 2427,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
-         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 13. Mai 2023',
-         'type' => 'gesperrt',
-         'until' => 1684036800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3887,7 +3843,50 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
+#: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
+#: source_id: 2147341022 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023)
+# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
+	2::bomb -2218,5133 -927,6888
+	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::bomb -1934,6804 -1854,6898
+',
+         'from' => 1684015200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. Mai 2023 zwischen 09:15 und 10:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1684138500
+       },
        undef,
        {
          'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
@@ -4270,6 +4269,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/bezirksverordnete-befuerchten-noch-groesseres-verkehrschaos_a303387
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
+#: last_checked: 2023-05-13 (mapillary)
 #: next_check: 2023-08-31
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
@@ -4638,7 +4638,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-05-02
+#: last_checked: 2023-05-13
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4825,7 +4825,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-04-25 (mapillary)
+#: last_checked: 2023-05-14
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5631,7 +5631,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5739,7 +5739,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-13
+#: last_checked: 2023-05-14
 #: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -6366,7 +6366,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6671,8 +6671,9 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        },
        {
          'data' => '#: also_indoor: traffic (none)
+#: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-03-16
+#: last_checked: 2023-05-07 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6685,7 +6686,9 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=719774#post719774 (Geplanter Projektabschluss: 2023-12-31)
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
-#: last_checked: 2023-03-16
+#: osm_watch: way id="1170463985" version="1"
+#: osm_watch: way id="1170463986" version="1"
+#: last_checked: 2023-05-07 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -7311,6 +7314,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
+#: last_checked: 2023-05-13 (mapillary)
 #: next_check: 2023-06-30
 	q4::inwork 20159,3623 20073,3734
 ',
@@ -7413,7 +7417,12 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        },
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,767543#msg-767543
+#: confirmed_by: srt
+#: osm_watch: way id="25370127" version="12"
+#: osm_watch: way id="25370128" version="11"
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren
+#: priority: #A
 #: last_checked: 2023-05-13
 #: check_frequency: 120d
 #: next_check: 2027-07-31
@@ -7424,21 +7433,6 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'text' => 'Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
-#: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
-	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
-	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
-	2::temp 8548,11571 8553,11630
-',
-         'from' => 1684003905,
-         'id' => 3786,
-         'text' => 'Lennéstr., Ebertstr., Bellevuestr.: Staatsbesuch, Sperrungen am 14.05.2023',
-         'type' => 'gesperrt',
-         'until' => 1684101599
        }
      
 );

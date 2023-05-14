@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-04-16
+#: last_checked: 2023-05-14
 #: check_frequency: 90d
 #: next_check: 2023-07-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -1323,7 +1323,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023) (bis 30.5.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 60d
 #: next_check: 2023-05-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1495,6 +1495,8 @@ Am Feuchten Winkel	1 12020,19333 11937,19175
 # REMOVED (Brücke wird abgerissen) --- #: by: osm --- #: XXX Wann wird die alte Brücke endgültig demontiert? --- #: osm_watch: way id="883242877" version="2" --- #: last_checked: 2023-04-09 --- #: check_frequency: 120d --- Schmöckwitzwerdersteg: die alte Querung ist nicht mehr nutzbar	2 30534,-3105 30546,-3072
 # 
 Hauptstr.: Mittelstreifen, unbequemes Überqueren	3nocross 15261,10738 15163,10758 15004,10791
+# 
+Wildmeisterdamm	1 15207,2313 15143,2315
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -4154,7 +4156,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
 #: osm_watch: way id="4713304" version="42"
 #: priority: #A
-#: last_checked: 2023-02-22 (osm)
+#: last_checked: 2023-05-09 (youtube)
 #: check_frequency: 360d
 #: next_check: 2025-12-31
 Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
@@ -4214,7 +4216,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4222,7 +4224,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
-#: last_checked: 2023-05-11 vvv
+#: last_checked: 2023-05-14 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4981,6 +4983,7 @@ Trebbiner Straße (Mahlow): Bahnübergang gesperrt, neue Unterführung wird gebaut	
 #: XXX Kaiserstr. (PLZ=14467) wird im DPAG-Mitteilungsblatt 06/2019 erwähnt (fehlt in Potsdam.coords.data); evtl. wird sich die Straße hier befinden
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643126#post643126
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_15_2019_final.pdf (Straßenneubenennungen)
+#: by: https://berliner-abendblatt.de/berlin-news/protestcamp-gegen-den-abriss-des-wohnblocks-staudenhof-id221336
 #: XXX Kaiserstr. -> Anna-Flügge-Straße (PLZ: 14467)
 #: XXX Schlossstraße (östlicher Verlauf) -> Anna-Zielenziger-Straße (PLZ: 14467) (siehe auch handicap_l-Eintrag)
 #: XXX Schwertfegerstraße (östlicher Verlauf) -> Erika-Wolf-Straße (bereits eingetragen)

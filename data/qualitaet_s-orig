@@ -135,7 +135,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -895,7 +895,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -7651,8 +7651,9 @@ Turfweg: unbefestigte Straße	Q2 13336,2151 13357,2031
 #: note: sowie daneben Gehwegplatten vvv
 Wildmeisterdamm: Verbundsteinpflaster	Q1- 13640,2229 13827,2280
 Wildmeisterdamm: Verbundsteinpflaster	Q1+ 13827,2280 13943,2284 14082,2289 14237,2292 14276,2293 14362,2294
-Wildmeisterdamm: Verbundsteinpflaster	Q1 14362,2294 14744,2308 15140,2312 15159,2334
+Wildmeisterdamm: Verbundsteinpflaster	Q1 14362,2294 14744,2308 15143,2315 15159,2334
 #: note ^^^
+Wildmeisterdamm: Verbundsteinpflaster	Q1 15143,2315 15207,2313
 (U Johannisthaler Chaussee - U Lipschitzallee): Verbundsteinpflaster	Q1+ 14362,2294 14515,2212
 (U Johannisthaler Chaussee - U Lipschitzallee): Verbundsteinpflaster	Q1+ 14079,2504 14224,2368 14259,2317 14276,2293
 (U Wutzkyallee - U Lipschitzallee): Verbundsteinpflaster	Q1 15144,2015 15133,2046 14994,2069
@@ -9157,7 +9158,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2023-04-06 (mapillary)
+#: last_checked: 2023-05-13 (mapillary)
 #: check_frequency: 120d
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860

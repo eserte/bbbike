@@ -26344,9 +26344,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-04-27 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-05-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-05-15 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. Mai 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26380,6 +26380,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023)
 # REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
@@ -29125,6 +29126,7 @@ EOF
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/bezirksverordnete-befuerchten-noch-groesseres-verkehrschaos_a303387
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
+#: last_checked: 2023-05-13 (mapillary)
 #: next_check: 2023-08-31
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
@@ -31135,7 +31137,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-05-02
+#: last_checked: 2023-05-13
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32164,7 +32166,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-04-25 (mapillary)
+#: last_checked: 2023-05-14
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -35232,7 +35234,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35454,7 +35456,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-13
+#: last_checked: 2023-05-14
 #: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -37076,7 +37078,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-14
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37568,8 +37570,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
+#: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-03-16
+#: last_checked: 2023-05-07 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 EOF
@@ -37581,7 +37584,9 @@ EOF
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=719774#post719774 (Geplanter Projektabschluss: 2023-12-31)
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
-#: last_checked: 2023-03-16
+#: osm_watch: way id="1170463985" version="1"
+#: osm_watch: way id="1170463986" version="1"
+#: last_checked: 2023-05-07 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -37626,6 +37631,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/ddr-museum-oeffnet-bald_a375560
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: by: https://berliner-abendblatt.de/berlin-news/nach-platzen-von-aquadom-kein-neues-aquarium-geplant-id220494
+#: by: https://berliner-abendblatt.de/berlin-news/nach-geplatztem-aquadom-sealife-aquarium-oeffnet-wieder-id221332
 # REMOVED --- #: priority: #C --- #: last_checked: 2023-04-06 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10359,12634 10351,12646 10305,12717
@@ -38523,6 +38529,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
+#: last_checked: 2023-05-13 (mapillary)
 #: next_check: 2023-06-30
 	q4::inwork 20159,3623 20073,3734
 EOF
@@ -38653,7 +38660,12 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,767543#msg-767543
+#: confirmed_by: srt
+#: osm_watch: way id="25370127" version="12"
+#: osm_watch: way id="25370128" version="11"
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren
+#: priority: #A
 #: last_checked: 2023-05-13
 #: check_frequency: 120d
 #: next_check: 2027-07-31
@@ -38661,7 +38673,7 @@ EOF
 EOF
      },
      { from  => 1684003905, # 2023-05-13 20:51
-       until => 1684101599, # 2023-05-14 23:59
+       until => 1684090606, # 1684101599, # 2023-05-14 23:59
        text  => 'Lennéstr., Ebertstr., Bellevuestr.: Staatsbesuch, Sperrungen am 14.05.2023',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -38669,6 +38681,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
 #: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
+#: by: https://berliner-abendblatt.de/berlin-news/sicherheitsvorkehrungen-nach-selenskyj-besuch-aufgehoben-id221352
 	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
 	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
 	2::temp 8548,11571 8553,11630

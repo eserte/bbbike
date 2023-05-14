@@ -349,7 +349,7 @@ Kastanienallee: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20
 #: source_id: viz2021:13.45316,52.49472,29.07.2021,08:00 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 30.6.2022) (inaktiv) (bis 31.12.2022) (bis 31.7.2023)
 #: osm_watch: way id="1005683568" version="9"
-#: last_checked: 2023-04-10 vvv
+#: last_checked: 2023-05-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: note: allerdings spart man hier eine Ampel
@@ -477,4 +477,12 @@ Gradestr.: vermuteter Umweg	DH:len=50:h=q3,50 12336,5219 12507,5228 12582,5232
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
+# 
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1313406.php (26. April bis 9. Juni 2023, keine Einschränkungen für Radfahrer)
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/berliner-wasserbetriebe-sind-bis-anfang-juni-in-der-oberspreestrasse-am-werk_a378103
+#: source_id: viz2021:13.564989,52.445459,27.03.2023,07:00 (bis 09.06.2023)
+#: next_check: 2023-06-09
+#: valid: -20230609
+Oberspreestr.: Umweg wegen Bauarbeiten	DH:len=30:h=q3,50 21332,4655 21390,4637 21494,4605
 # 
