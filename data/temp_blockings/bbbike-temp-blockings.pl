@@ -30630,15 +30630,15 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef, # 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
-       text  => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2023-05-18 18:00:00"), # undef, # 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
+       text  => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, voraussichtlich bis 18.5.2023',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
 #: add_fragezeichen: Wann sind die Kranarbeiten beendet?
 #: last_checked: 2023-05-13
-#: check_frequency: 3d
+#: next_check: 2023-05-18
 	q3::inwork 13711,11458 13895,11663
 EOF
      },
@@ -35789,11 +35789,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023)
+#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023)
+#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
 	3 7822,12201 7816,12150 7823,12120
 	3 7429,12070 7383,12095 7031,12320
 	3 8049,12140 8055,12186 8119,12414
@@ -38281,10 +38285,12 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-04-23 vvv
+#: last_checked: 2023-05-15 vvv
+#: check_frequency: 14d vvv
 Roedeliusplatz	q3::inwork 16248,12177 16158,12191
 Magdalenenstr., nördlicher Abschnitt	q3::inwork 16158,12191 16166,12292
 Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -38689,6 +38695,39 @@ EOF
 	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
 	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
 	2::temp 8548,11571 8553,11630
+EOF
+     },
+     { from  => 1684101600, # 2023-05-15 00:00
+       until => 1686322800, # 2023-06-09 17:00
+       text  => 'Rosenfelder Str.: Sperrung zwischen Frankfurter Allee und Egmontstr., bis 09.06.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für eine Woche, dann 22.5.2023 für eine Woche)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1322778.php ("Rad- und Fußverkehr ist während dieser Zeit eingeschränkt", bis 9.6.2023)
+#: source_id: bvg2021:108#BVG320247_0
+#: source_id: viz2021:13.504921,52.510749,15.05.2023,07:00 (bis 09.06.2023)
+#: source_id: viz2021:13.505329,52.511112,15.05.2023,07:00 (bis 22.05.2023)
+	q4::inwork; 17251,11789 17306,11866
+EOF
+     },
+     { from  => $isodate2epoch->("2023-05-26 05:00:00"),
+       until => $isodate2epoch->("2023-05-29 23:00:00"),
+       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Straße vermutlich gesperrt, vom 27.05.2023 bis 29.05.2023',
+       periodic => 1,
+       recurrences => [['yearly', days => 27, months => 5]],
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
+	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+EOF
+     },
+     { from  => 1684036800, # 2023-05-14 06:00
+       until => 1686607140, # 2023-06-12 23:59
+       text  => 'Am Plänterwald: Bauarbeiten, Fahrbahn zwischen Neue Krugallee und Orionstr. gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.48123,52.48258,15.05.2023,06:00',
+       data  => <<EOF,
+	q4::inwork 15714,8633 15543,8525
 EOF
      },
     );

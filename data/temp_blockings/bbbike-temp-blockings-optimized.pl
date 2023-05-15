@@ -3790,50 +3790,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
-#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
-#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
-#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
-#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
-#: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
-#: source_id: 2147341022 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023)
-# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
-	2::bomb -2218,5133 -927,6888
-	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
-	2::bomb -1934,6804 -1854,6898
-',
-         'from' => 1684015200,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. Mai 2023 zwischen 09:15 und 10:15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1684138500
-       },
+       undef,
        undef,
        {
          'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
@@ -4491,14 +4448,14 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED --- #: next_check: 2019-11-25
 #: add_fragezeichen: Wann sind die Kranarbeiten beendet?
 #: last_checked: 2023-05-13
-#: check_frequency: 3d
+#: next_check: 2023-05-18
 	q3::inwork 13711,11458 13895,11663
 ',
          'from' => undef,
          'id' => 3180,
-         'text' => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, voraussichtlich bis 18.5.2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1684425600
        },
        undef,
        undef,
@@ -5818,11 +5775,15 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023)
+#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023)
+#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
 	3 7822,12201 7816,12150 7823,12120
 	3 7429,12070 7383,12095 7031,12320
 	3 8049,12140 8055,12186 8119,12414
@@ -7082,10 +7043,12 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-04-23 vvv
+#: last_checked: 2023-05-15 vvv
+#: check_frequency: 14d vvv
 Roedeliusplatz	q3::inwork 16248,12177 16158,12191
 Magdalenenstr., nördlicher Abschnitt	q3::inwork 16158,12191 16166,12292
 Magdalenenstr., südlicher Abschnitt	q2::inwork 16158,12191 16127,11950
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -7413,6 +7376,51 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'text' => 'Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für eine Woche, dann 22.5.2023 für eine Woche)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1322778.php ("Rad- und Fußverkehr ist während dieser Zeit eingeschränkt", bis 9.6.2023)
+#: source_id: bvg2021:108#BVG320247_0
+#: source_id: viz2021:13.504921,52.510749,15.05.2023,07:00 (bis 09.06.2023)
+#: source_id: viz2021:13.505329,52.511112,15.05.2023,07:00 (bis 22.05.2023)
+	q4::inwork; 17251,11789 17306,11866
+',
+         'from' => 1684101600,
+         'id' => 3787,
+         'text' => 'Rosenfelder Str.: Sperrung zwischen Frankfurter Allee und Egmontstr., bis 09.06.2023',
+         'type' => 'handicap',
+         'until' => 1686322800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
+	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1685070000,
+         'id' => 3788,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Straße vermutlich gesperrt, vom 27.05.2023 bis 29.05.2023',
+         'type' => 'gesperrt',
+         'until' => 1685394000
+       },
+       {
+         'data' => '	q4::inwork 15714,8633 15543,8525
+',
+         'from' => 1684036800,
+         'id' => 3789,
+         'source_id' => 'viz2021:13.48123,52.48258,15.05.2023,06:00',
+         'text' => 'Am Plänterwald: Bauarbeiten, Fahrbahn zwischen Neue Krugallee und Orionstr. gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1686607140
        }
      
 );
