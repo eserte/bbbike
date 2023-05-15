@@ -845,36 +845,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
-#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022)
-#: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00
-#: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
-#: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
-	2::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291
-	2::temp 7308,9163 7101,9027 6975,8944
-	2::temp 6945,9142 7035,9161
-	2::temp 7012,9222 7124,9226
-',
-         'from' => 1683842400,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (13.5.2023 und 14.5.2023)',
-         'type' => 'gesperrt',
-         'until' => 1684101599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1797,31 +1768,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
-#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210409 (geplant 8. und 9. Mai 2021)
-#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210418 (erst 2022)
-#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20220407 (geplant 7. und 8. Mai 2022)
-	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1683842400,
-         'id' => 1642,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
-         'type' => 'gesperrt',
-         'until' => 1684101599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5869,7 +5816,40 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1735599599
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
+#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
+#: by: https://viz.berlin.de/2023/05/firmenlauf/
+#: by: https://berliner-firmenlauf.de/
+	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7822,12201 7816,12150 7823,12120
+	3 7429,12070 7383,12095 7031,12320
+	3 8049,12140 8055,12186 8119,12414
+	3 8327,12174 8344,12221 8391,12389
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12187 8538,12245 8522,12239
+	3 8119,12414 8055,12186 8049,12140
+	3 8391,12389 8344,12221 8327,12174
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1684036800,
+         'id' => 3576,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 15.05.2023 bis 17.05.2023 06:00 ',
+         'type' => 'gesperrt',
+         'until' => 1684296000
+       },
        undef,
        undef,
        {

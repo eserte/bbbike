@@ -35781,13 +35781,17 @@ EOF
 	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
 EOF
      },
-     { from  => 1656302400, # 2022-06-27 06:00
-       until => 1656561600, # 2022-06-30 06:00
-       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 28.06.2022 06:00 bis 30.06.2022 06:00 ',
+     { from  => $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00
+       until => $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00
+       periodic => 1,
+       recurrences => [['yearly', days => 14, months => 5]],
+       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 15.05.2023 bis 17.05.2023 06:00 ',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.351095,52.514567,28.06.2022,06:00',
        data  => <<EOF,
+#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
+#: by: https://viz.berlin.de/2023/05/firmenlauf/
+#: by: https://berliner-firmenlauf.de/
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	3 7822,12201 7816,12150 7823,12120
