@@ -161,6 +161,7 @@ sub highlight_words {
 	       |   Kundgebung
 	       |   Veranstaltung
 	       |   Sportveranstaltung
+	       |   wegen[ ]zu[ ]hoher[ ]Verkehrsbelastung
 	       )\b}{wrap_friendly_coloring(['bold'], $1)}eigx;
     $text;
 }
