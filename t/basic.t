@@ -103,6 +103,7 @@ for my $f (@files) {
 	    if $f =~ m{^( Strassen/Touratech.pm
 			| Strassen/KML.pm
 			| GPS/KML.pm
+			| GPS/GpsmanData/TCX.pm
 			)$}x && !eval { require XML::LibXML };
 	myskip "$f needs XML::LibXML or XML::Twig", $tests_per_file
 	    if $f =~ m{^( Strassen/GPX.pm

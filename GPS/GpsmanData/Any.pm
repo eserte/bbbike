@@ -39,6 +39,9 @@ sub load {
 	GPS::GpsmanData::SportsTracker->match($file);
     }) {
 	GPS::GpsmanData::SportsTracker->load($file, %args);
+    } elsif ($file =~ /\.tcx$/) {
+	require GPS::GpsmanData::TCX;
+	GPS::GpsmanData::TCX->load_tcx($file);
     } else {
 	$class->load_gpsman($file, %args);
     }
