@@ -162,6 +162,7 @@ sub highlight_words {
 	       |   Veranstaltung
 	       |   Sportveranstaltung
 	       |   wegen[ ]zu[ ]hoher[ ]Verkehrsbelastung
+	       |   wegen[ ]eines[ ]Wasserrohrbruches
 	       )\b}{wrap_friendly_coloring(['bold'], $1)}eigx;
     $text;
 }
