@@ -3,7 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14305,11514
+Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 14211,11229
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
@@ -26,6 +26,7 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10364,11896 10332,11929 10392,11991
+Caroline-von-Humboldt-Weg: Kraneinsatz, Fahrbahn gesperrt, schmaler Durchgang existiert	q4::inwork 9961,12094 10050,11942
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
@@ -2240,7 +2241,6 @@ Weißenhöher Str. [69-71]: einige Fußgänger	q1 20569,11492 20582,11558
 Wuhlewanderweg: enge Brücke	q2 22349,17302 22364,17323
 (Verbindung Golliner Str. - Wuhlewanderweg): schmaler Pfad	q2 22272,18296 22287,18297 22356,18264 22356,18239 22363,18219
 Bergmannstr.: Tempo 10	q3 9505,9306 9632,9280 9689,9266 9753,9252
-Niemannstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0 14254,11377 14211,11229
 Helmerdingstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0 14468,11203 14442,11101
 Matkowskystr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0 14531,11142 14513,11075
 Orankestrand: Fußgänger, Radfahren offiziell verboten	q3 15479,16060 15592,16069 15664,16115 15731,16208

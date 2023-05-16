@@ -4046,7 +4046,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-05-10
+#: last_checked: 2023-05-16
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4404,7 +4404,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-10 vvv
+#: last_checked: 2023-05-16 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4446,8 +4446,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '# REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
+#: also_indoor: traffic (G,W)
 #: add_fragezeichen: Wann sind die Kranarbeiten beendet?
-#: last_checked: 2023-05-13
+#: last_checked: 2023-05-16
 #: next_check: 2023-05-18
 	q3::inwork 13711,11458 13895,11663
 ',
@@ -5718,10 +5719,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-05-09
+#: last_checked: 2023-05-16
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-04-17
-# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
 ',
          'from' => undef,
@@ -6343,7 +6343,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
-#: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023) (bis 17.05.2023)
+#: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023) (bis 17.05.2023) (inaktiv)
 #: XXX außerdem: hier wird eine neue Ampel gebaut
 #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
 #: priority: #A vvv
@@ -6558,12 +6558,15 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        undef,
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
+#: last_checked: 2023-05-15 (mapillary)
+#: check_frequency: 120d
+#: next_check: 2024-06-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 ',
          'from' => 1669762800,
          'id' => 3694,
          'source_id' => 'https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/',
-         'text' => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024',
+         'text' => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024 (Stand Mai 2023: noch keine Sperrung)',
          'type' => 'gesperrt',
          'until' => 1719784799
        },

@@ -2706,14 +2706,14 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: last_checked: 2023-02-16 vvv
-#: check_frequency: 90d vvv
+# REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: 20140224-20230630
 Naumburger Str.	H 13265,6972 13520,6583
 #: valid: !20140224-20230630
 Naumburger Str.	N 13265,6972 13520,6583
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -10908,7 +10908,7 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 1046
 #: by: https://pbs.twimg.com/media/EYzBdB6XgAEfb0h?format=jpg&name=large
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnuebergang-in-der-lichtenrader-bahnhofstrasse-ist-seit-25-mai-geschlossen_a271258
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (evtl. mittlerweile etwas verlegt?)
-#: osm_watch: way id="855309801" version="6"
+#: osm_watch: way id="855309801" version="8"
 # REMOVED --- #: osm_watch: way id="810461577" version="5"
 #: osm_watch: way id="997120420" version="4"
 #: XXX bis wann wird es diesen Weg geben?
@@ -16002,8 +16002,8 @@ Apostel-Paulus-Str.	N 6442,9068 6366,9056 6276,9042 6214,9003
 #: by: https://gruene-fraktion-pankow.de/2022/11/21/warum-im-pankower-ortsteil-buch-eine-alte-strasse-einen-neuen-namen-bekommt/
 #: XXX mögliche Umbenennung der Straße (z.B. nach Cécile Vogt)
 #: osm_watch: way id="10951433" version="23"
-#: last_checked: 2023-04-23 (indoor)
-# REMOVED --- #: next_check: 2023-03-28
+#: last_checked: 2023-05-15 (mapillary)
+#: check_frequency: 90d
 Robert-Rössle-Str.	N 16521,24864 16681,24764 16719,24734
 Ernst-Ludwig-Heim-Str.	N 16681,24764 16613,24643 16487,24721
 Stubenrauchstr. (Lichterfelde)	N 3448,3738 3570,3819 3627,3740

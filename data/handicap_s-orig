@@ -10,13 +10,15 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: NIEMANN-2023
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
+#: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-15
+#: last_checked: 2023-05-16
 #: check_frequency: 30d
 #: next_check: 2023-11-10
 #: valid: -20231110
-Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14305,11514
+Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 14211,11229
 # 
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
@@ -34,7 +36,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-16
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
@@ -285,7 +287,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-10
+#: last_checked: 2023-05-16
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -343,9 +345,13 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus, nicht am House of One
-#: last_checked: 2023-05-10
+#: last_checked: 2023-05-16
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
+# 
+#: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben
+#: last_checked: 2023-05-10
+Caroline-von-Humboldt-Weg: Kraneinsatz, Fahrbahn gesperrt, schmaler Durchgang existiert	q4::inwork 9961,12094 10050,11942
 # 
 # REMOVED --- #: source_id: viz2021:13.404739,52.514839,10.05.2021,06:00 (bis 1.10.2021) (inaktiv) --- #: note: laut rbb bis 1.11.2021 --- #: last_checked: 2021-10-26 (mapillary) --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2021-10-30 --- # REMOVED --- #: valid: -20211030 --- Scharrenstr.: Bauarbeiten an der Breiten Str., einige Meter der Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
 # REMOVED (explizit für Radfahrer frei, siehe Mapillary) --- #: osm_watch: way id="639343525" version="2" --- #: osm_watch: way id="268002748" version="10" --- #: XXX laut osm opening_date=2021 --- #: also_indoor: traffic (G,ex-H) --- #: last_checked: 2021-05-22 --- #: check_frequency: 30d --- Hirtenstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11012,13278 10925,13322
@@ -615,7 +621,7 @@ Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg e
 #: last_checked: 2023-05-14 (osm) vvv
 #: source_id: viz2021:13.35534,52.52683,28.04.2022,07:00 (bis 07.07.2023) (inaktiv)
 #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="140336721" version="32"
+#: osm_watch: way id="140336721" version="33"
 #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
 # REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag)
@@ -624,15 +630,15 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
 #: osm_watch: way id="30195541" version="35"
-#: osm_watch: way id="1101061991" version="7"
+#: osm_watch: way id="1101061991" version="8"
 #: osm_watch: way id="310164489" version="27"
-#: last_checked: 2023-05-14 (osm)
+#: last_checked: 2023-05-15 (osm)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
 #: source_id: bvg2021:101#BVG301286_0
-#: osm_watch: way id="4571954" version="29"
-#: last_checked: 2023-05-01
+#: osm_watch: way id="4571954" version="30"
+#: last_checked: 2023-05-15 (osm)
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
 #: osm_watch: way id="269696665" version="22"
@@ -1003,8 +1009,8 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022 (kann vermutlich nicht gehalten werden)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="16"
-#: osm_watch: way id="885619858" version="11"
+#: osm_watch: way id="885619857" version="17"
+#: osm_watch: way id="885619858" version="12"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
@@ -4190,7 +4196,11 @@ Wuhlewanderweg: enge Brücke	q2 22349,17302 22364,17323
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1244910.php
 #: note: außerdem zahlreiche Bodenschwellen auf dem Rest der Fahrbahn
 Bergmannstr.: Tempo 10	q3+ 9505,9306 9632,9280 9689,9266 9753,9252
+#: next_check_id: NIEMANN-2023
 #: XXX_prog mit Anhänger aber ggfs. q2
+#: XXX valid-Direktive anpassen
+#: next_check: 2023-11-10
+#: valid: 20231110-
 Niemannstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14254,11377 14211,11229
 #: XXX_prog mit Anhänger aber ggfs. q2
 Helmerdingstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14468,11203 14442,11101

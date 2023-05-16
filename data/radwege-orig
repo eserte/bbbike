@@ -761,7 +761,7 @@ neu asphaltiert, etwas breiter	RW2; 3291,12721 3269,12648 3271,12609 3279,12533
 #: historical_note: früher RW1
 	RW0; 7172,13051 7346,13022
 #: historical_note: früher RW1
-provisorische Radspur	RW3; 7346,13022 7172,13051
+	RW3?; 7346,13022 7172,13051
 	RW1; 5490,17173 5411,17242
 # 
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Tegel
@@ -8038,10 +8038,12 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: osm_watch: way id="111048866" version="15"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
-#: osm_watch: way id="28680188" version="23"
+# REMOVED (hier realisiert) --- #: osm_watch: way id="28680188" version="24"
+#: osm_watch: way id="28680187" version="19"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
-#: osm_watch: way id="30958674" version="22"
+# REMOVED (hier realisiert) --- #: osm_watch: way id="30958674" version="23"
+#: osm_watch: way id="28680189" version="20"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
 #: osm_watch: way id="4526218" version="26"
 #: note: keine Benutzungspflicht
