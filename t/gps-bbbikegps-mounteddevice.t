@@ -23,7 +23,7 @@ SKIP: {
     cmp_ok keys(%$disks), ">", 0, 'disks detected by udisksctl';
     my $first_disk = (keys(%$disks))[0];
     my $first_disk_info = $disks->{$first_disk};
-    is $first_disk_info->{MODEL}, $first_disk;
+    is $first_disk_info->{MODEL}, $first_disk, "Model of first found disk '$first_disk'";
     ok $first_disk_info->{DEVICE}, 'DEVICE should be defined';
     # SERIAL may be missing, seen with 'QEMU QEMU HARDDISK'
 
@@ -43,7 +43,7 @@ SKIP: {
     cmp_ok keys(%$disks), ">", 0, 'disks detected by udisksctl';
     my $first_disk = (keys(%$disks))[0];
     my $first_disk_info = $disks->{$first_disk};
-    is $first_disk_info->{MODEL}, $first_disk;
+    is $first_disk_info->{MODEL}, $first_disk, "Model of first usable disk '$first_disk'";
     ok $first_disk_info->{DEVICE}, 'DEVICE should be defined';
     # SERIAL may be missing, seen with 'QEMU QEMU HARDDISK'
 
@@ -65,28 +65,28 @@ SKIP: {
 	 "MODEL" => "Garmin GARMIN Card",
 	 "REVISION" => "1.00",
 	 "SERIAL" => "0000e709ffff"
-	};
+	}, 'parsing sample udisksctl status output -> Garmin Card';
     is_deeply $disks->{"Garmin GARMIN Flash"},
 	{
 	 "DEVICE" => "-",
 	 "MODEL" => "Garmin GARMIN Flash",
 	 "REVISION" => "1.00",
 	 "SERIAL" => "0000e709ffff"
-	};
+	}, 'parsing sample udisksctl status output -> Garmin Flash';
     is_deeply $disks->{"Microsoft SDMMC"},
 	{
 	 "DEVICE" => "sdd",
 	 "MODEL" => "Microsoft SDMMC",
 	 "REVISION" => "0000",
 	 "SERIAL" => "1000000000386CF84D4FFFFFFFFFFFFF"
-	};
+	}, 'parsing sample udisksctl status output -> Microsoft SDMMC';
     is_deeply $disks->{"TOSHIBA DT01ACA200"},
 	{
 	 "DEVICE" => "sda",
 	 "MODEL" => "TOSHIBA DT01ACA200",
 	 "REVISION" => "MX4OABB0",
 	 "SERIAL" => "95LZ9RXXX"
-	};
+	}, 'parsing sample udisksctl status output -> Toshiba ...';
 }
 
 SKIP: {

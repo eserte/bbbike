@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016,2017,2018,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017,2018,2020,2021,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.22';
+    $VERSION = '0.23';
 
     sub has_gps_settings { 1 }
 
@@ -62,6 +62,7 @@
 		 my @try_subdirs = (
 				    'Garmin/GPX', # e.g. Garmin etrex
 				    'GPXImport',  # e.g. Falk Lux
+				    'iGPSPORT/Courses', # e.g. iGPSPORT IGS630
 				   );
 		 for my $try_subdir (@try_subdirs) {
 		     my $subdirpath = "$mount_point/$try_subdir";
@@ -143,27 +144,38 @@
 		my $max_wait = 80; # full etrex 30 device boot until mass storage is available lasts 66-70 seconds
 		my @check_mount_devices;
 		if ($garmin_disk_type eq 'flash') {
-		    @check_mount_devices = ('/dev/disk/by-label/GARMIN', '/dev/disk/by-label/Falk');
+		    @check_mount_devices = ('/dev/disk/by-label/GARMIN', '/dev/disk/by-label/Falk', '/dev/disk/by-label/IGS630');
 		} elsif ($garmin_disk_type eq 'card') {
 		    my $disks = _parse_udisksctl_status2();
-		    my @card_names = ('Garmin GARMIN Card', 'Microsoft SDMMC');
+		    my @card_name_defs = ('Garmin GARMIN Card', 'Microsoft SDMMC');
 		    my @errors;
 		    my $seen_disks_diagnostics;
-		CHECK_FOR_CARD: for my $card_name (@card_names) {
-			if ($disks->{$card_name}) {
-			    my $disk_info = $disks->{$card_name};
+		CHECK_FOR_CARD: for my $card_name_def (@card_name_defs) {
+			my $disk_info;
+			if (ref $card_name_def eq 'Regexp') {
+			    for my $check_card_name (sort keys %$disks) {
+				if ($check_card_name =~ $card_name_def) {
+				    $disk_info = $disks->{$check_card_name};
+				    last;
+				}
+			    }
+			} elsif ($disks->{$card_name_def}) {
+			    $disk_info = $disks->{$card_name_def};
+			} else {
+			    my $msg = "Cannot find '$card_name_def'";
+			    if (!$seen_disks_diagnostics++) {
+				$msg .= ", only disks found: " . join(", ", keys %$disks);
+			    }
+			    push @errors, $msg;
+			}
+
+			if ($disk_info) {
 			    my $check_mount_device = _udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
 			    if (!defined $check_mount_device) {
 				push @errors, "Cannot find a mountable filesystem on device '$disk_info->{DEVICE}'";
 			    } else {
 				push @check_mount_devices, $check_mount_device;
 			    }
-			} else {
-			    my $msg = "Cannot find '$card_name'";
-			    if (!$seen_disks_diagnostics++) {
-				$msg .= ", only disks found: " . join(", ", keys %$disks);
-			    }
-			    push @errors, $msg;
 			}
 		    }
 		    if (!@check_mount_devices) {
@@ -192,7 +204,7 @@
 		    #	last;
 		    #}
 		    if (!$info_dialog_active) {
-			_status_message("Wait for GPS device (Garmin or Falk) (max $max_wait seconds)...", "infoauto");
+			_status_message("Wait for GPS device (Garmin, Falk or iGPSPORT) (max $max_wait seconds)...", "infoauto");
 			$info_dialog_active = 1;
 		    }
 		    sleep 1;
