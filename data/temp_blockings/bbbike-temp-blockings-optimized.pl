@@ -1980,9 +1980,11 @@ push @temp_blocking,
 Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
 Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
-(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21484,7326 21343,7321 21231,7249
+(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21484,7326 21346,7321 21284,7289 21233,7246
+(Straße B, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21346,7321 21341,7487
 (Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21153,7393 21207,7280 21231,7249 21175,7212 21243,7135
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21153,7393 21207,7280 21233,7246 21181,7199 21243,7135
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21233,7246 21294,7189
 (Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
 (Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide)	2::night:weekend 21582,6842 21560,6869
@@ -4088,7 +4090,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-03-24
+#: last_checked: 2023-05-17
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -5615,9 +5617,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'from' => 1651953282,
          'id' => 3548,
          'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
-         'text' => 'Schubertstr.: wegen Bauarbeiten gesperrt, voraussichtlich bis 25.5.2023',
+         'text' => 'Schubertstr.: wegen Bauarbeiten gesperrt, mindestens bis 25.5.2023, möglicherweise bis Mitte Juni 2023',
          'type' => 'gesperrt',
-         'until' => 1685030400
+         'until' => 1686844800
        },
        undef,
        {
@@ -5773,44 +5775,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1735599599
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023)
-#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023)
-#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023)
-#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
-#: by: https://viz.berlin.de/2023/05/firmenlauf/
-#: by: https://berliner-firmenlauf.de/
-	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8055,12186 8119,12414
-	3 7822,12201 7816,12150 7823,12120
-	3 7429,12070 7383,12095 7031,12320
-	3 8049,12140 8055,12186 8119,12414
-	3 8327,12174 8344,12221 8391,12389
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8119,12414 8055,12186 8049,12140
-	3 8391,12389 8344,12221 8327,12174
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
-',
-         'from' => 1684036800,
-         'id' => 3576,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 15.05.2023 bis 17.05.2023 06:00 ',
-         'type' => 'gesperrt',
-         'until' => 1684296000
-       },
+       undef,
        undef,
        undef,
        {
@@ -6202,13 +6167,13 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
 ',
          'from' => 1665385200,
          'id' => 3648,
-         'source_id' => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
          'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, vom 11.10.2022 09:00 bis 02.06.2023 17:00',
          'type' => 'handicap',
          'until' => 1685718000
@@ -6218,7 +6183,8 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2023-04-21
+         'data' => '#: also_indoor: traffic (none)
+#: last_checked: 2023-04-21
 	q4::inwork; 7073,8081 7139,8079 7268,8008
 ',
          'from' => undef,
@@ -6672,7 +6638,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-30 (Umleitungsschild steht noch)
+#: last_checked: 2023-05-16 (mapillary)
 #: check_frequency: 14d
 	2::inwork 12173,15040 12095,14888
 ',
@@ -6688,7 +6654,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1155654228" version="4"
-#: last_checked: 2023-05-05 (osm)
+#: last_checked: 2023-05-14 (osm note)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 ',
          'from' => undef,
@@ -6702,12 +6668,12 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-04-14
+#: last_checked: 2023-05-17
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
          'id' => 3709,
-         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer',
+         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Mitte Mai 2023: noch immer gesperrt)',
          'type' => 'handicap',
          'until' => undef
        },

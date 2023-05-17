@@ -3580,7 +3580,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: XXX Hat die Sperrung etwas mit den Bahnbrücken zu tun?
 #: priority: #C
-#: last_checked: 2023-05-15
+#: last_checked: 2023-05-17
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
 #: XXX Bauarbeiten am Kanzlerpark
@@ -3684,7 +3684,7 @@ Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-17
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4009,13 +4009,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 # REMOVED (wieder offen) --- Radweg an der Panke	2::inwork 13031,21538 13078,21754
 # 
-#: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung.
-#: osm_watch: way id="4045220" version="49"
-#: osm_watch: way id="938037386" version="3"
-#: osm_watch: way id="868103791" version="3"
-#: last_checked: 2023-03-24
-#: check_frequency: 60d
-Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
+# REMOVED (keine Einbahnstraße mehr) --- #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung. --- #: osm_watch: way id="4045220" version="49" --- #: osm_watch: way id="938037386" version="3" --- #: osm_watch: way id="868103791" version="3" --- #: last_checked: 2023-03-24 --- #: check_frequency: 60d --- Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930890136" version="20"
@@ -4142,8 +4136,8 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
-#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023)
 #: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
+#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025)
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: note: Eintrag existiert auch in temp blockings
@@ -4241,7 +4235,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-04-21 (daf)
+#: last_checked: 2023-05-17 (webcam)
 #: check_frequency: 30d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862

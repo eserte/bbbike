@@ -13,19 +13,26 @@
 #: next_check_id: NIEMANN-2023
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
-#: also_indoor: traffic (none)
-#: last_checked: 2023-05-16
-#: check_frequency: 30d
-#: next_check: 2023-11-10
-#: valid: -20231110
-Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 14211,11229
+#: also_indoor: traffic (none) vvv
+#: last_checked: 2023-05-17 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2023-11-10 vvv
+#: valid: -20231110 vvv
+Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
+#: XXX hier sind zwar Verbotsschilder, aber die Barrieren sind zurzeit offen
+Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q1::inwork 14254,11377 14211,11229
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="3"
 #: osm_watch: way id="36987812" version="14"
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-17
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
@@ -46,22 +53,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
-# 
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate)
-#: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
-#: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
-#: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m
-#: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv)
-#: source_id: bvg2021:m43#BVG315520_0
-#: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv)
-#: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023)
-#: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023)
-#: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+)
-#: last_checked: 2023-05-03
-#: next_check: 2023-05-17
-#: valid: -20230517
-An der Mole: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4+::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
-# 
+# REMOVED (keine Einbahnstraßenregelung mehr) --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate) --- #: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m --- #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg --- #: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m --- #: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv) --- #: source_id: bvg2021:m43#BVG315520_0 --- #: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv) --- #: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023) --- #: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023) --- #: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+) --- #: last_checked: 2023-05-03 --- #: next_check: 2023-05-17 --- #: valid: -20230517 --- An der Mole: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4+::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
 # REMOVED (wieder offen) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: XXX Datensatz in gesperrt-orig beachten! --- #: also_indoor: traffic (ex-B,G(falsch)) --- #: last_checked: 2022-05-06 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2022-04-01 vvv --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
 # REMOVED (Radfahrer frei-Schild existiert mittlerweile) --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
@@ -427,7 +419,7 @@ Caroline-von-Humboldt-Weg: Kraneinsatz, Fahrbahn gesperrt, schmaler Durchgang ex
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-05-05 vvv
+#: last_checked: 2023-05-07 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -588,12 +580,14 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 ### Köpenick ###
 # 
 #: next_check_id: HAEMMERLING-2022
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (hier bis 15.6.2023)
+#: osm_watch: way id="794278028" version="10"
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) vvv
 #: also_indoor: traffic (H,G,B,W) vvv
 #: last_checked: 2023-05-13 vvv
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-05-25 vvv
-#: valid: 20230325-20230525 vvv
+#: valid: 20230325-20230615 vvv
 Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
 Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
 #: valid ^^^
@@ -703,7 +697,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-05-05 (webcam)
+#: last_checked: 2023-05-17 (webcam)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -883,15 +877,16 @@ Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: add_fragezeichen Bis wann gibt es diese Einschränkung?
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
+#: osm_watch: way id="1089784266" version="2"
+#: add_fragezeichen: Bis wann gibt es diese Einschränkung?
 #: last_checked: 2023-01-21
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2024-12-31
+# REMOVED (s.o., Fertigstellung des Bauvorhabens) --- #: next_check: 2024-12-31
 #: next_check: 2023-11-15
 #: valid: -20241231
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
@@ -4105,7 +4100,7 @@ Mercedes-Platz: Fußgängerzone	q4 12990,11006 13063,11147
 (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
 #: note: früher (bis ca. 2020) für Radfahrer explizit frei, mittlerweile hängt hier ein explizites Radfahren-verboten-Schild
 An der Kieler Brücke: Fußgängerzone, Radfahren verboten	q4 7877,14504 7804,14445
-(Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21231,7249 21175,7212 21243,7135
+# REMOVED (zurzeit keine größeren Einschränkungen feststellbar) --- (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21233,7246 21181,7199 21243,7135
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
 (Relingstr. - Uferweg): einige Fußgänger	q2 22358,2460 22399,2481
 (Uferweg): einige Fußgänger	q2 22399,2481 22304,2570 22239,2644

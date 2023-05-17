@@ -3951,7 +3951,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2023-03-21
+#: last_checked: 2023-05-17
 #: check_frequency: 180d
 #: note: fr¸her: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraﬂe, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -12682,10 +12682,13 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
-(Straﬂe A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21343,7321 21231,7249
+(Straﬂe A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21346,7321 21284,7289 21233,7246
+(Straﬂe B, Innovationspark Wuhlheide): Asphalt	Q0 21346,7321 21341,7487
 (Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
-(Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21153,7393 21207,7280 21231,7249
-(Straﬂe E, Innovationspark Wuhlheide): Beton	Q0- 21231,7249 21175,7212 21243,7135
+(Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21153,7393 21207,7280 21233,7246
+(Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21233,7246 21294,7189
+#: historical_note: fr¸her: Beton, Q0-
+(Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21233,7246 21181,7199 21243,7135
 (Straﬂe F, Innovationspark Wuhlheide): Beton	Q0- 21505,7129 21410,7027 21394,7040 21371,7021
 (Straﬂe F, Innovationspark Wuhlheide): Asphalt	Q0 21371,7021 21345,7000
 (Straﬂe G, Innovationspark Wuhlheide): Asphalt	Q0 21572,7051 21547,7024 21476,6956 21560,6869
@@ -12769,22 +12772,6 @@ Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Mosaikpflaster	Q1- 8548,7384 8603,7452
 Falkenberger Chaussee [Wohngebiet]: Beton	Q1+ 17358,17400 17211,17600
 Puschkinallee [Nebenstraﬂe]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 14152,9746
-#: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/anreise-zum-spreepark-soll-mit-schiffen-und-mehr-bussen-erfolgen_a315294 (Fahrbahn soll wasserdurchl‰ssige Deckschicht bekommen)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserkl‰rung zu einer Straﬂenlandeinziehung)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
-#: by: https://www.berliner-woche.de/plaenterwald/c-bauen/dammweg-zum-spreepark-soll-einen-gehweg-bekommen_a350024 (Schranke f¸r Autos? Umbaumaﬂnahme laut BA "nicht terminiert")
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1212256.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/00_entwurf-b-plan-9-7.pdf (Dammweg wird zum Fuﬂg‰nger/Radfahrerbereich)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7207 (Vorlage zur Kenntnisnahme)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7401 (Vorlage zur Beschlussfassung)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/o1gHOIz9inLpfChJtoFmL7XSumjcPeHmlGeJUQT9/uvnpvxsi/99-Anlagen/02/DRS0408VB.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7372 (Antrag)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5828 (Verkehrskonzept Spreepark)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Cjtg8DovYfZefovMR2tp8tprw4hE0Vl5XoJKOqnR/REjNBehL/65-Anlagen/04/B0312ZB1.pdf
-#: osm_watch: way id="24202434" version="25"
-#: XXX Wann wird der Asphalt ersetzt? Wann wird die Straﬂe nur f¸r Anlieger/Radfahrer frei sein?
-#: last_checked: 2023-04-14
-#: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195

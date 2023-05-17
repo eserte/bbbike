@@ -68,15 +68,7 @@ Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 # 
 # REMOVED (existiert nicht mehr) --- #: next_check_id: WILHELMAMPEL-2022 --- #: source_id: viz2021:13.184034,52.519038,11.10.2022,07:00 (Sperrung der Wilhelmstr. Richtung Nordosten bis 28.10.2022) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.183049,52.518565,02.11.2022,08:00 (bis 30.11.2022) (bis 9.12.2022) (inaktiv) --- #: by: https://nitter.cz/VIZ_Berlin/status/1579825402096521218#m (bis auf Weiteres gibt es keine Sperrung) --- #: note: am 2022-09-22 war hier eine temporäre Ampelanlage für die gesamte Einmündung mit vollständiger Gelbmarkierung, aber noch nicht eingeschaltet --- #: note: gilt nicht für Radfahrer Richtung Süden (Heerstr.) --- #: add_fragezeichen: Existiert die provisorische Ampel noch immer? --- #: last_checked: 2022-10-08 --- #: check_frequency: 120d --- #: next_check: 2022-12-09 --- Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 # REMOVED (abgebaut) --- #: next_check_id: HAENSEL-2022 --- #: last_checked: 2022-10-24 --- #: XXX Ampel befindet sich südöstlich der Einmündung --- Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
-# 
-#: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten)
-#: by: https://officehome.de/ostkreuz-campus-a
-#: osm_watch: way id="936801541" version="3"
-#: XXX Ampel befindet sich östlich der Einmündung
-#: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30, 2023-05-14 (So) um 13:30
-#: note: Anforderungsampel
-#: last_checked: 2023-05-14
-Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
+# REMOVED (wurde durch einen temporären Zebrastreifen ersetzt) --- #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten) --- #: by: https://officehome.de/ostkreuz-campus-a --- #: osm_watch: way id="936801541" version="3" --- #: XXX Ampel befindet sich östlich der Einmündung --- #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30, 2023-05-14 (So) um 13:30 --- #: note: Anforderungsampel --- #: last_checked: 2023-05-14 --- Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
 #: last_checked: 2023-05-13
@@ -99,7 +91,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
 #: last_checked: 2023-05-13
 #: next_check: 2023-05-25
-#: valid: -20230525
+#: valid: -20230615
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
@@ -144,7 +136,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-05-11 vvv
+#: last_checked: 2023-05-17 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2539,7 +2531,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-05-11
+#: last_checked: 2023-05-17
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

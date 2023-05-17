@@ -15590,9 +15590,11 @@ EOF
 Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
 Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
-(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21484,7326 21343,7321 21231,7249
+(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21484,7326 21346,7321 21284,7289 21233,7246
+(Straße B, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21346,7321 21341,7487
 (Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21153,7393 21207,7280 21231,7249 21175,7212 21243,7135
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21153,7393 21207,7280 21233,7246 21181,7199 21243,7135
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21233,7246 21294,7189
 (Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
 (Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide)	2::night:weekend 21582,6842 21560,6869
@@ -28438,7 +28440,7 @@ EOF
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-03-24
+#: last_checked: 2023-05-17
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -35384,8 +35386,8 @@ EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
        #until => $isodate2epoch->("2023-03-21 00:00:00"),
-       until => $isodate2epoch->("2023-05-25 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: wegen Bauarbeiten gesperrt, voraussichtlich bis 25.5.2023',
+       until => $isodate2epoch->("2023-06-15 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr.: wegen Bauarbeiten gesperrt, mindestens bis 25.5.2023, möglicherweise bis Mitte Juni 2023',
        #text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
@@ -35789,9 +35791,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023)
-#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023)
-#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023)
+#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/
@@ -36878,12 +36880,12 @@ EOF
        until => $isodate2epoch->("2023-06-02 17:00:00"), # 1667664000, # 2022-11-05 17:00
        text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, vom 11.10.2022 09:00 bis 02.06.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
 #: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -36959,6 +36961,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://sbahn.berlin/fahren/bauen-stoerung/detail/neubau-der-moltkestrassenbruecke-am-s-bf-botanischer-garten-reparatur-bahnsteigdach-in-friedenau/',
        data  => <<EOF,
+#: also_indoor: traffic (none)
 #: last_checked: 2023-04-21
 	q4::inwork; 7073,8081 7139,8079 7268,8008
 EOF
@@ -37676,7 +37679,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-04-30 (Umleitungsschild steht noch)
+#: last_checked: 2023-05-16 (mapillary)
 #: check_frequency: 14d
 	2::inwork 12173,15040 12095,14888
 EOF
@@ -37692,19 +37695,19 @@ EOF
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1155654228" version="4"
-#: last_checked: 2023-05-05 (osm)
+#: last_checked: 2023-05-14 (osm note)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer',
+       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Mitte Mai 2023: noch immer gesperrt)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-04-14
+#: last_checked: 2023-05-17
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
