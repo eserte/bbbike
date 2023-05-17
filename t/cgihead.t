@@ -164,7 +164,7 @@ sub check_url {
     my $t0 = time;
     my $resp = $ua->head($url);
     my $t1 = time;
-    ok($resp->is_success, $url) or diag $resp->content;
+    ok($resp->is_success, $url) or diag $resp->dump;
     {
 	my $dt = $t1-$t0;
 	cmp_ok $dt, "<=", $soft_timeout, "Request to $url was fast enough";

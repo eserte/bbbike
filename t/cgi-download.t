@@ -61,8 +61,7 @@ for my $def (
 	ok $resp->is_success && !$resp->header('X-Died'), "Fetching $baseurl"
 	    or do {
 		output_apache_errorslogs if $is_local_server;
-		diag $resp->status_line;
-		diag $resp->headers->as_string;
+		diag $resp->dump;
 	    };
 	    
 	zip_ok $tempfile, -memberchecks => \@member_checks;
