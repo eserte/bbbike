@@ -771,7 +771,7 @@ detected automatically by inspecting the drive's volume name.
 =head2 Mac OS X
 
 It is assumed that the device is mounted in the directory
-F</Volume/GARMIN> or F</Volume/Falk> or F</Volume/IGS630>.
+F</Volumes/GARMIN> or F</Volumes/Falk> or F</Volumes/IGS630>.
 
 =head2 FreeBSD
 
