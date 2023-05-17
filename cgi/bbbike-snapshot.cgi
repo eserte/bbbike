@@ -19,6 +19,8 @@ use lib "$FindBin::RealBin/..";
 use CGI;
 use BBBikeVar;
 
+use constant DEFAULT_SNAPSHOT_IS_LOCAL => 1;
+
 my $q = CGI->new;
 
 {
@@ -36,7 +38,12 @@ my $q = CGI->new;
     }
 }
 
-if ($q->param('local')) {
+my $local = $q->param('local');
+if (!defined $local || $local eq '') {
+    $local = DEFAULT_SNAPSHOT_IS_LOCAL;
+}
+
+if ($local) {
     # Do not use FindBin, because it does not work with Apache::Registry
     (my $target = $0) =~ s{bbbike-snapshot.cgi}{bbbike-data.cgi};
     do $target;
