@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.23';
+    $VERSION = '0.24';
 
     sub has_gps_settings { 1 }
 
@@ -237,6 +237,7 @@
 		@mount_point_candidates = (
 					   '/Volumes/GARMIN',
 					   '/Volumes/Falk', # XXX not tested
+					   '/Volumes/IGS630',
 					  );
 	    } elsif ($garmin_disk_type eq 'card') {
 		my $diskutil_list = _diskutil_list();
@@ -747,7 +748,8 @@ GPS::BBBikeGPS::MountedDevice - handle gps uploads via a mounted device
 =head1 DESCRIPTION
 
 Currently support is only available for newer Garmin devices (e.g.
-etrex 30) and (on Linux and Mac OS X systems only) for Falk devices.
+etrex 30) and (on Linux and Mac OS X systems only) for Falk and IGS630
+devices.
 
 See also the convenience script L<gps-mount.pl> (in subdirectory
 F<miscsrc>), which is a wrapper around this module.
@@ -769,7 +771,7 @@ detected automatically by inspecting the drive's volume name.
 =head2 Mac OS X
 
 It is assumed that the device is mounted in the directory
-F</Volume/GARMIN> or F</Volume/Falk>.
+F</Volume/GARMIN> or F</Volume/Falk> or F</Volume/IGS630>.
 
 =head2 FreeBSD
 
@@ -880,6 +882,13 @@ The following sample oneliner waits until the device is available:
     perl -w -I. -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'while () { $status = GPS::BBBikeGPS::MountedDevice->get_gps_device_status("flash", \$info); if ($status eq "unknown") { die "We cannot detect the gps device status: $info" } exit if $status eq "attached"; sleep 1 }'
 
 =back
+
+=head1 BUGS
+
+Currently it's not possible to specify which device should be mounted
+if multiple supported ones are available. Currently, the order is
+Garmin, then Falk, then IGS630. Workaround: unplug the unwanted
+device(s).
 
 =head1 AUTHOR
 
