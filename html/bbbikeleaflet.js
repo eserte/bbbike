@@ -406,14 +406,14 @@ function doLeaflet() {
     map.addControl(new L.control.scale());
 
     var overlayDefs = [
-	{label:M("Qualit\u00e4t"),   layer:bbbikeSmoothnessTileLayer, abbrev:'Q'},
-	{label:M("Handicaps"),       layer:bbbikeHandicapTileLayer,   abbrev:'H'},
-	{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'},
-	{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'},
-	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'},
-	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'},
-	{label:M("temp. Sperrungen"), layer:bbbikeTempBlockingsLayer, abbrev:'TB', geojsonurl:bbbikeTempBlockingsUrl},
-	{label:M("F\u00e4hrinfos"),  layer:bbbikeCommentsFerryLayer,  abbrev:'CF', geojsonurl:bbbikeCommentsFerryUrl},
+	 {label:M("Qualit\u00e4t"),   layer:bbbikeSmoothnessTileLayer, abbrev:'Q'}
+	,{label:M("Handicaps"),       layer:bbbikeHandicapTileLayer,   abbrev:'H'}
+	,{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'}
+	,{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'}
+	,{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'}
+	,{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
+	,{label:M("temp. Sperrungen"), layer:bbbikeTempBlockingsLayer, abbrev:'TB', geojsonurl:bbbikeTempBlockingsUrl}
+	,{label:M("F\u00e4hrinfos"),  layer:bbbikeCommentsFerryLayer,  abbrev:'CF', geojsonurl:bbbikeCommentsFerryUrl}
     ];
 
     var baseMapDefs = [
