@@ -30632,16 +30632,14 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2023-05-18 18:00:00"), # undef, # 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
+       until => 1684415747, # $isodate2epoch->("2023-05-18 18:00:00"), # undef, # 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
        text  => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, voraussichtlich bis 18.5.2023',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
 #: also_indoor: traffic (G,W)
-#: add_fragezeichen: Wann sind die Kranarbeiten beendet?
-#: last_checked: 2023-05-16
-#: next_check: 2023-05-18
+# REMOVED --- #: add_fragezeichen: Wann sind die Kranarbeiten beendet? --- #: last_checked: 2023-05-16 --- #: next_check: 2023-05-18
 	q3::inwork 13711,11458 13895,11663
 EOF
      },
@@ -30760,7 +30758,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-18
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -33307,7 +33305,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094021.php',
        data  => <<EOF,
-	q4::inwork -1478,18407 -1358,18400
+	q4::inwork -1478,18407 -1351,18407
 EOF
      },
      { from  => 1625349600, # 2021-07-04 00:00
@@ -34215,7 +34213,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1137594.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/fuenf-tage-umleitung_a325949
-	2::inwork 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738
+	2::inwork 1293,21123 1290,21105 1119,21012 958,21006 892,20989 817,20953 625,20738
 EOF
      },
      { from  => 1634882400, # 2021-10-22 08:00
@@ -36982,7 +36980,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-05
+#: last_checked: 2023-05-18
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -37429,6 +37427,7 @@ EOF
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
 #: osm_watch: node id="10202117536" version="7"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
+#: last_checked: 2023-05-18
 #: next_check: 2023-12-01
 	2 -784,16658 -719,16608
 EOF
@@ -37994,6 +37993,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/u6-in-tegel-arbeiten-an-bruecke-ueber-seidelstrasse-starten-id212679 (auch für Radfahrer+Fußgänger)
 #: by: https://nitter.net/VIZ_Berlin/status/1636346966010470403#m
 #: by: https://nitter.net/pic/orig/media%2FFrV443CXwAMqn6l.jpg
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7453 (Antrag)
 # REMOVED --- #: add_fragezeichen: Tatsächlich auch für Radfahrer und Fußgänger gesperrt? --- #: begin_check: 2023-03-16 --- #: next_check: 2023-03-16
 #: source_id: viz2021:13.3065,52.568067,17.03.2023,20:00 (bis 20.03.2023) (inaktiv)
 	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929

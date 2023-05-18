@@ -4445,21 +4445,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
-# REMOVED --- #: next_check: 2019-11-25
-#: also_indoor: traffic (G,W)
-#: add_fragezeichen: Wann sind die Kranarbeiten beendet?
-#: last_checked: 2023-05-16
-#: next_check: 2023-05-18
-	q3::inwork 13711,11458 13895,11663
-',
-         'from' => undef,
-         'id' => 3180,
-         'text' => 'Libauer Str.: Kranarbeiten, ein Abschnitt der Fahrbahn ist gesperrt, voraussichtlich bis 18.5.2023',
-         'type' => 'handicap',
-         'until' => 1684425600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4477,7 +4463,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-18
 #: check_frequency: 30d
 #: next_check: 2023-05-31
 	q4::inwork; 11329,12497 11202,12426
@@ -6205,7 +6191,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-05
+#: last_checked: 2023-05-18
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -6471,6 +6457,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
 #: osm_watch: node id="10202117536" version="7"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
+#: last_checked: 2023-05-18
 #: next_check: 2023-12-01
 	2 -784,16658 -719,16608
 ',

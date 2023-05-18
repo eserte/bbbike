@@ -889,8 +889,8 @@ Rosenthaler Weg -> Guyotstr.: Straßenbahntrasse	3::igndisp 11073,22225 10999,221
 Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10999,22195 10935,22174
 Elisabethstr. (Spandau)	1 -3387,15410 -3451,15372 -3492,15331
 Eisenacher Str.	1 22899,15073 23113,15110
-Mittelstreifen	3nocross::ignrte -3009,17090 -3017,16984 -3018,16974
-Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3009,17090 -3017,16984 -2838,16951
+Mittelstreifen	3nocross::ignrte -3009,17090 -3013,17024 -3017,16984 -3018,16974
+Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3013,17024 -3017,16984 -2838,16951
 Chamissostr. -> Streitstr.: Mittelstreifen	3::igndisp -2838,16951 -3017,16984 -3018,16974
 Straßenbahntrasse	3nocross::ignrte 18770,8898 18737,8686 18727,8634
 Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18778,8663
@@ -2399,3 +2399,10 @@ Prinzregentenstr. -> Berliner Str.: Mittelstreifen für den Kfz-Verkehr geschloss
 Prinzregentenstr. -> Prinzregentenstr.: Mittelstreifen für den Kfz-Verkehr geschlossen	3::igndisp 5633,9263 5635,9018 5641,8831
 Radieschenpfad	1 20582,18475 20635,18381
 Dammweg: durch Barrieren für den Autoverkehr gesperrt	2 15869,8355 16388,8821
+Mittelstreifen	3nocross::ignrte 2169,20095 2224,20007 2268,19919
+Berliner Str. -> Schlieperstr.: Mittelstreifen	3::igndisp 2268,19919 2224,20007 2029,19963
+Berliner Str. -> Schlieperstr.: Mittelstreifen	3::igndisp 2169,20095 2224,20007 2435,20032
+Schlieperstr. -> Berliner Str.: Mittelstreifen	3::igndisp 2029,19963 2224,20007 2169,20095
+Schlieperstr. -> Schlieperstr.: Mittelstreifen	3::igndisp 2029,19963 2224,20007 2435,20032
+Schlieperstr. -> Berliner Str.: Mittelstreifen	3::igndisp 2435,20032 2224,20007 2268,19919
+Schlieperstr. -> Schlieperstr.: Mittelstreifen	3::igndisp 2435,20032 2224,20007 2029,19963

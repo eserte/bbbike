@@ -13,8 +13,8 @@
 #: next_check_id: NIEMANN-2023
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
-#: also_indoor: traffic (none) vvv
-#: last_checked: 2023-05-17 vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2023-05-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -43,7 +43,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-05-16
+#: last_checked: 2023-05-18
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
@@ -234,9 +234,9 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="24"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: valid: 20171026-
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-18
 #: check_frequency: 60d
+#: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
@@ -257,7 +257,7 @@ Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-03-07
+#: last_checked: 2023-05-18
 #: check_frequency: 90d
 Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
@@ -296,7 +296,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
 #: note: bei rbb noch bis 31.12.2022
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-18
 #: check_frequency: 60d
 #: next_check: 2023-05-26
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -305,7 +305,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-05-05 vvv
+#: last_checked: 2023-05-18 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -326,7 +326,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
-#: last_checked: 2023-05-05
+#: last_checked: 2023-05-18
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -419,7 +419,7 @@ Caroline-von-Humboldt-Weg: Kraneinsatz, Fahrbahn gesperrt, schmaler Durchgang ex
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-05-07 (mapillary) vvv
+#: last_checked: 2023-05-18 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -3329,6 +3329,7 @@ Iranische Str.: einige Fußgänger	q1 7843,16524 7713,16557 7447,16613
 (Röddelinseeweg - Kindelseeweg): einige Fußgänger	q1 -1705,16515 -1699,16513 -1661,16506
 (Wolzenseeweg - Wittweseeweg): einige Fußgänger	q1 -1721,16448 -1716,16447 -1680,16441
 (Quenzseeweg - Strausseeweg): einige Fußgänger	q1 -1671,16653 -1666,16652 -1627,16643
+#: note: Grünanlagen-Schild ohne Zusatzschilder
 (Beetzseeweg - Zeuthener-See-Weg): einige Fußgänger	q1 -1689,16584 -1685,16583 -1647,16573
 (Mall of Berlin): Einkaufszentrum, Fußgänger	q4 8837,11676 8834,11536
 (Hohenschönhauser Str. - Falkenberger Krugwiesen): einige Fußgänger, eng	q1 19183,17444 19074,17533 19017,17609 18993,17630 18965,17675 18937,17738
@@ -4077,7 +4078,7 @@ Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,28
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
 #: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören?
-#: last_checked: 2023-05-05
+#: last_checked: 2023-05-18
 #: check_frequency: 45d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
@@ -4515,6 +4516,12 @@ Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 1988
 # 
 #: note: einige davon kaum umfahrbar, manchmal parken hier auch Autos
 Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 7621,7813
+# 
+#: note: Grünanlagen-Schild ohne Zusatzschilder am östlichen Ende, am westlichen Ende fehlt es
+Zobeltitzstr.: einige Fußgänger	q1 4377,18037 4492,18013
+# 
+#: note: Grünanlagen-Schild ohne Zusatzschilder
+Am Aalemannkanal: selten Fußgänger	q0- -2741,18333 -2229,18312 -2197,18307 -2171,18265
 # 
 ######################### User Contributions #################################
 # 
@@ -5270,7 +5277,7 @@ Rathener Str.: enge Straße	q1 24228,14644 24271,14576 24359,14543
 Stanzer Zeile: enge Straße	q0- 6175,372 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
 # 
 #: by: rjoop (Foto):
-(Uferweg an der Havel): enge Brücke	q1 -2401,18776 -2451,18851 -2460,18918
+(Uferweg an der Havel): enge Brücke	q1 -2398,18774 -2451,18851 -2460,18918
 # 
 #: by: Jörg Schulze:
 #: confirmed_by: Beate (wolter) "Keine gute Straße! Beidseitiges Parken, gerade Platz für Autobreite, am Ende Ausfahrt Parkplatz Reichelt, sehr unübersichtlich"
