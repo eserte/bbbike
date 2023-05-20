@@ -5748,7 +5748,7 @@ EOF
        text  => 'L 073 OD Luckenwalde OD Luckenwalde, Beelitzer Str., Gewerbehof Aufstellung Autodrehkran Halbseitige Sperrung 28.08.2006-30.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1::inwork -4725,-34957 -4299,-35198
+	1::inwork -4725,-34957 -4612,-35020 -4299,-35198
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -6567,7 +6567,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-31.03.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4299,-35198 -4725,-34957
+	q4::inwork -4299,-35198 -4612,-35020 -4725,-34957
 EOF
      },
      { from  => 1161326798, # 2006-10-20 08:46
@@ -7930,7 +7930,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 01.03.2007-31.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4299,-35198 -4725,-34957
+	q4::inwork -4299,-35198 -4612,-35020 -4725,-34957
 EOF
      },
      { from  => 1176488131, # 2007-04-13 20:15
@@ -9827,7 +9827,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 18.07.2007-15.10.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4299,-35198 -4725,-34957
+	q4::inwork -4299,-35198 -4612,-35020 -4725,-34957
 EOF
      },
      { from  => 1188424800, # 2007-08-30 00:00
@@ -16351,7 +16351,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-02-25
+#: last_checked: 2023-05-19
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -23556,7 +23556,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
        data  => <<EOF,
-	2::inwork -5280,-38803 -5524,-39226 -5550,-39270 -5699,-39451 -6050,-40072 -6171,-40299 -6279,-40310 -6430,-40390 -6458,-40259 -6903,-40090 -6748,-40840 -6720,-41039
+	2::inwork -5280,-38803 -5524,-39226 -5561,-39278 -5699,-39451 -6050,-40072 -6171,-40299 -6279,-40310 -6430,-40390 -6458,-40259 -6887,-40083 -6903,-40090 -6748,-40840 -6720,-41039
 EOF
      },
      { from  => 1402738058, # 2014-06-14 11:27
@@ -38710,7 +38710,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für eine Woche, dann 22.5.2023 für eine Woche)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1322778.php ("Rad- und Fußverkehr ist während dieser Zeit eingeschränkt", bis 9.6.2023)
-#: source_id: bvg2021:108#BVG320247_0
+# REMOVED ---- #: source_id: bvg2021:108#BVG320247_0
 #: source_id: viz2021:13.504921,52.510749,15.05.2023,07:00 (bis 09.06.2023)
 #: source_id: viz2021:13.505329,52.511112,15.05.2023,07:00 (bis 22.05.2023)
 	q4::inwork; 17251,11789 17306,11866
@@ -38734,6 +38734,19 @@ EOF
        source_id => 'viz2021:13.48123,52.48258,15.05.2023,06:00',
        data  => <<EOF,
 	q4::inwork 15714,8633 15543,8525
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Modersohnbrücke: nach Brandschaden Radweg Richtung Norden gesperrt, Behinderungen auf dem Radweg Richtung Süden möglich',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2023-05-20 vvv
+#: next_check: 2023-05-22 vvv
+Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
+Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
     );

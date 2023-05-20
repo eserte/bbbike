@@ -2312,7 +2312,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-02-25
+#: last_checked: 2023-05-19
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -7337,7 +7337,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für eine Woche, dann 22.5.2023 für eine Woche)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1322778.php ("Rad- und Fußverkehr ist während dieser Zeit eingeschränkt", bis 9.6.2023)
-#: source_id: bvg2021:108#BVG320247_0
+# REMOVED ---- #: source_id: bvg2021:108#BVG320247_0
 #: source_id: viz2021:13.504921,52.510749,15.05.2023,07:00 (bis 09.06.2023)
 #: source_id: viz2021:13.505329,52.511112,15.05.2023,07:00 (bis 22.05.2023)
 	q4::inwork; 17251,11789 17306,11866
@@ -7377,6 +7377,20 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'text' => 'Am Plänterwald: Bauarbeiten, Fahrbahn zwischen Neue Krugallee und Orionstr. gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
          'type' => 'handicap',
          'until' => 1686607140
+       },
+       {
+         'data' => '#: last_checked: 2023-05-20 vvv
+#: next_check: 2023-05-22 vvv
+Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
+Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3790,
+         'text' => 'Modersohnbrücke: nach Brandschaden Radweg Richtung Norden gesperrt, Behinderungen auf dem Radweg Richtung Süden möglich',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
