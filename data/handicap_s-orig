@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-05-20 vvv
+#: last_checked: 2023-05-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -58,15 +58,18 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
 #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
 #: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m
+#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-220523/ (bis 26.05.2023)
 #: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv)
 #: source_id: bvg2021:m43#BVG315520_0
+#: source_id: bvg2021:m43#BVG321058_0
 #: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv)
 #: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023)
 #: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023)
+#: source_id: viz2021:13.470533,52.504112,22.05.2023,06:00 (unklare Verkehrsmeldung, bis 26.05.2023)
 #: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+)
 #: last_checked: 2023-05-20
-# REMOVED --- #: next_check: 2023-05-17
-# REMOVED --- #: valid: -20230517
+#: next_check: 2023-05-26
+#: valid: -20230526
 An der Mole: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4+::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
@@ -650,12 +653,12 @@ Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork;
 #: last_checked: 2023-05-15 (osm)
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
-#: osm_watch: way id="269696665" version="22"
-#: last_checked: 2023-03-18
+#: osm_watch: way id="269696665" version="23"
+#: last_checked: 2023-05-20 (osm)
 Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,13381
-#: osm_watch: way id="1101405485" version="6"
+#: osm_watch: way id="1101405485" version="7"
 #: osm_watch: way id="217183438" version="18"
-#: last_checked: 2023-05-12 (osm)
+#: last_checked: 2023-05-20 (osm)
 Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
 #: last_checked ^^^
 # REMOVED --- #: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv) --- #: osm_watch: way id="61816617" version="29" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
@@ -702,8 +705,8 @@ Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
-#: also_indoor: traffic
-#: also_indoor: webcam https://portal1443.webcam-profi.de/
+#: also_indoor: traffic (none)
+#: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt)
 #: last_checked: 2023-04-22 (webcam)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
@@ -1000,7 +1003,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 ### Prenzlauer Berg ###
 # 
 #: osm_watch: way id="1047231711" version="3"
-#: last_checked: 2023-03-16
+#: last_checked: 2023-05-21
 #: check_frequency: 60d
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
@@ -1011,7 +1014,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2023-04-18
+#: last_checked: 2023-05-21
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -1115,12 +1118,18 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 #: by: https://berliner-abendblatt.de/2023/01/31/bauarbeiten-in-rosenthal-in-der-hauptstrasse-wird-es-eng/
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/arbeiten-an-der-abwasserleitung_a371543
 #: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben)
+#: note: laut Bauschild der Wasserbetriebe bis Juli 2024
 #: osm_watch: way id="22966091" version="36"
-#: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023)
-#: last_checked: 2023-03-27 (mapillary)
-#: next_check: 2023-06-30
-#: valid: -20230629
+#: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023) vvv
+#: last_checked: 2023-05-21 vvv
+#: next_check: 2023-06-30 vvv
+#: valid: -20230629 vvv
 Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8568,21863 8473,21633 8460,21602
+Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8479,21590 8473,21633
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
 # 
 #: temporary ^^^
 ######################################################################
@@ -4537,6 +4546,9 @@ Zobeltitzstr.: einige Fußgänger	q1 4377,18037 4492,18013
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder
 Am Aalemannkanal: selten Fußgänger	q0- -2741,18333 -2229,18312 -2197,18307 -2171,18265
+# 
+#: XXX_prog BS (Bordstein am nördlichen Ende, ansonsten q2 oder q1)
+Waldemarstr.: einige Fußgänger, Bordstein	q3 10464,20390 10475,20355
 # 
 ######################### User Contributions #################################
 # 

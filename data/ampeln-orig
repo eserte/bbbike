@@ -153,7 +153,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) vvv
-#: last_checked: 2023-01-15 (mapillary) vvv
+#: last_checked: 2023-05-21 vvv
 #: next_check: 2023-05-31 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
@@ -175,7 +175,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2023-03-18
+#: last_checked: 2023-05-21
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -2072,6 +2072,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8456,15235
 	X 9443,15430
 	X 9907,15618
+#: off: Sunday (seen 2023-05-21 13:45)
 	X 10629,14299
 	X 11535,14900
 #: note: Anforderungsampel für Fußgänger und Radfahrer in der Relation Fröbelstr. - Raumerstr.
@@ -2903,12 +2904,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 4074,6681
 	X 4103,6716
 #: note: Anforderungsampel
-#: off: Sunday (seen 2019-10-13 13:00, 2020-03-15 12:00)
+#: off: Sunday (seen 2019-10-13 13:00, 2020-03-15 12:00, 2023-05-21 12:40)
 	F 11148,19838
 	F 14633,2145
 	X 9267,15790
 	X 8079,16953
 	F 9461,17554
+#: note: Anforderungsampel
 	F 9170,17161
 #: off: night (seen 2022-06-30 23:00)
 	F 9218,11793
@@ -3863,6 +3865,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Ampeln elsewhere vvv
 	X -8647,-41731
 	F -10116,-46120
+#: note: Anforderungsampel
+	F -10360,-46580
+	F -10776,-46622
 	X 50863,68629
 	X 52036,69172
 	X 32957,10948

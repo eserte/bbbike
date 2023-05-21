@@ -1042,7 +1042,12 @@ Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
 Neumeichow - Blankenburg	1 46866,88892 47130,88771 47222,88669 47396,88566 47545,88381 47675,88141
+Zinnaer Str. (Jüterbog)	1 -10247,-46356 -10245,-46277 -10240,-46248 -10236,-46240
+Markt (Jüterbog)	1 -10456,-46448 -10422,-46587
+Promenade (Jüterbog)	1 -10193,-46048 -10165,-45794
 Jüterboger Str., Wallstr. (Kloster Zinna)	1 -8922,-43250 -9006,-43232 -9050,-43212 -9091,-43151 -9044,-42958
+Heidestr. (Luckenwalde)	1 -5029,-35945 -5086,-35837
+Heidestr. (Luckenwalde)	1 -5062,-35834 -5029,-35945
 Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
 Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
 Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
@@ -3290,6 +3295,7 @@ Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
 Drängelgitter	BNP:3:-23:trailer=10 22085,5111
 weites Drängelgitter	BNP:2:-225:trailer=7 3002,18971
+Drängelgitter	BNP:3:-196:trailer=10 10475,20355
 Falkenberger Str. - Hansastr: Bauarbeiten, gesperrt	2::inwork 15819,16857 15892,16834
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
@@ -3308,8 +3314,6 @@ Virchow-Klinikum, Südstraße: Bauarbeiten, Straße komplett gesperrt, auch für Fuß
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
-Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
-Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,11275
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935

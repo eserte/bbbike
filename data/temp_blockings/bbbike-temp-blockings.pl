@@ -3865,7 +3865,7 @@ EOF
        text  => 'B 101 Trebbiner Str. OL Luckenwalde, zw. Beelitzer Str. u. Potsdamer Str. Anschluß Gewerbehof Vollsperrung; Umleitung 13.03.2006-13.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -4299,-35198 -4204,-35072
+	q4 -4290,-35207 -4229,-35109 -4178,-34916
 EOF
      },
      { from  => 1142809200, # 2006-03-20 00:00
@@ -4273,7 +4273,7 @@ EOF
        text  => 'K 7220 Potsdamer Str. OL Luckenwalde, zw. Buchtstr. u. Feldstr. Abbrucharbeiten Vollsperrung 18.04.2006-22.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -4173,-34910 -4129,-34535
+	q4 -4146,-34505
 EOF
      },
      { from  => 1145743200, # 2006-04-23 00:00
@@ -5748,7 +5748,7 @@ EOF
        text  => 'L 073 OD Luckenwalde OD Luckenwalde, Beelitzer Str., Gewerbehof Aufstellung Autodrehkran Halbseitige Sperrung 28.08.2006-30.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1::inwork -4725,-34957 -4612,-35020 -4299,-35198
+	1::inwork -4725,-34957 -4612,-35020 -4290,-35207
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -6567,7 +6567,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-31.03.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4299,-35198 -4612,-35020 -4725,-34957
+	q4::inwork -4290,-35207 -4612,-35020 -4725,-34957
 EOF
      },
      { from  => 1161326798, # 2006-10-20 08:46
@@ -6662,7 +6662,7 @@ EOF
        text  => 'B 101 Haag OD Luckenwalde, Kno. Beelitzer Str. Straßenausbau Vollsperrung 01.11.2006-29.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -4545,-35560 -4446,-35414 -4299,-35198
+	2::inwork -4545,-35560 -4446,-35414 -4290,-35207
 EOF
      },
      { from  => 1162249200, # 2006-10-31 00:00
@@ -7930,7 +7930,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 01.03.2007-31.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4299,-35198 -4612,-35020 -4725,-34957
+	q4::inwork -4290,-35207 -4612,-35020 -4725,-34957
 EOF
      },
      { from  => 1176488131, # 2007-04-13 20:15
@@ -9827,7 +9827,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 18.07.2007-15.10.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4299,-35198 -4612,-35020 -4725,-34957
+	q4::inwork -4290,-35207 -4612,-35020 -4725,-34957
 EOF
      },
      { from  => 1188424800, # 2007-08-30 00:00
@@ -18197,12 +18197,12 @@ EOF
 	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => 1658440800, # 2022-07-22 00:00
-       until => 1658613599, # 2022-07-23 23:59
+     { from  => $isodate2epoch->("2023-07-21 00:00:00"), # 1658440800, # 2022-07-22 00:00
+       until => $isodate2epoch->("2023-07-23 23:59:59"), # 1658613599, # 2022-07-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6, start => "2020-07-30T00:00:00"]], # Absage 2020
        source_id => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-       text  => 'CSD am 23.7.2022',
+       text  => 'CSD am 22.7.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
@@ -29710,7 +29710,7 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
        until => $isodate2epoch->("2023-06-29 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 29.06.2023, eventuell noch länger',
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 29.06.2023, eventuell noch länger',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!) (inaktiv)
        data  => <<EOF,
@@ -29721,11 +29721,12 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2023-02-12
+#: last_checked: 2023-05-21
 #: check_frequency: 90d
 #: next_check: 2023-06-29
-	q3::inwork  8986,16092 9178,16317
-# REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
+# REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
+	q3::inwork 9178,16317 9301,16439
+Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,16398
 EOF
      },
      { from  => undef,
@@ -36980,7 +36981,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-18
+#: last_checked: 2023-05-21
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -37645,6 +37646,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/mitte/trabant-rollt-ueber-treppen-zurueck-ins-ddr-museum-id213966
 #: by: https://berliner-abendblatt.de/berlin-news/nach-platzen-von-aquadom-kein-neues-aquarium-geplant-id220494
 #: by: https://berliner-abendblatt.de/berlin-news/nach-geplatztem-aquadom-sealife-aquarium-oeffnet-wieder-id221332
+#: by: https://www.berliner-woche.de/mitte/c-bauen/sea-life-wieder-geoeffnet_a381604
 # REMOVED --- #: priority: #C --- #: last_checked: 2023-04-06 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10359,12634 10351,12646 10305,12717
@@ -37693,8 +37695,8 @@ EOF
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="1155654228" version="4"
-#: last_checked: 2023-05-14 (osm note)
+#: osm_watch: way id="1155654228" version="6"
+#: last_checked: 2023-05-21 (osm)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
      },
@@ -38571,6 +38573,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1653255744798486530#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV6Y1NYcldBQUk1TTRNLnBuZw==
+#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/sigmaringer-strasse-gesperrt_a380710
 	q4::inwork 4713,8997 4689,8953
 EOF
      },
@@ -38710,6 +38713,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für eine Woche, dann 22.5.2023 für eine Woche)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1322778.php ("Rad- und Fußverkehr ist während dieser Zeit eingeschränkt", bis 9.6.2023)
+#: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/bauarbeiten-im-kreuzungsbereich_a381253
 # REMOVED ---- #: source_id: bvg2021:108#BVG320247_0
 #: source_id: viz2021:13.504921,52.510749,15.05.2023,07:00 (bis 09.06.2023)
 #: source_id: viz2021:13.505329,52.511112,15.05.2023,07:00 (bis 22.05.2023)
@@ -38741,12 +38745,38 @@ EOF
        text  => 'Modersohnbrücke: nach Brandschaden Radweg Richtung Norden gesperrt, Behinderungen auf dem Radweg Richtung Süden möglich',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2023-05-20 vvv
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1326349.php (unbestimmte Zeit)
+#: by: https://berliner-abendblatt.de/berlin-news/verdacht-auf-brandstiftung-an-modersohnbruecke-id221842
+#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-we-20-210523/
+#: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
+#: last_checked: 2023-05-21 vvv
 #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
 Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
 #: next_check ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Virchowstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (B)
+#: last_checked: 2023-05-21
+	q3::inwork 12707,13706 12640,13814
+EOF
+     },
+     { from  => undef, # 
+       until => 1686002399, # 2023-06-05 23:59
+       text  => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Anfang Juni 2023, vielleicht auch länger',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (none)
+#: last_checked: 2023-05-21
+	q4::inwork 11599,19171 11634,19187 11671,19204 11748,19235
 EOF
      },
     );
