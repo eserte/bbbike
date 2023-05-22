@@ -598,6 +598,7 @@ function doLeaflet() {
 		features[i].properties.id = ++id;
 	    }
 	}
+	currentLayer = map; // XXX hacky! must be set before creating geoJson layer (which would call onEachFeature callback)
 	var l = L.geoJson(initialGeojson, stdGeojsonLayerOptions);
 	l.addTo(map);
 	setViewLayer = l;
