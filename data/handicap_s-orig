@@ -59,6 +59,8 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
 #: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-220523/ (bis 26.05.2023)
+#: by: https://nitter.cz/VIZ_Berlin/status/1660499223828402181#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcTdIZ1dZQUlvMjc5LmpwZw==
 #: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv)
 #: source_id: bvg2021:m43#BVG315520_0
 #: source_id: bvg2021:m43#BVG321058_0
@@ -71,6 +73,12 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: next_check: 2023-05-26
 #: valid: -20230526
 An der Mole: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4+::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
+# 
+#: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw==
+#: next_check: 2023-05-26
+#: valid: -20230526
+Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
 # 
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
 # REMOVED (wieder offen) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: XXX Datensatz in gesperrt-orig beachten! --- #: also_indoor: traffic (ex-B,G(falsch)) --- #: last_checked: 2022-05-06 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2022-04-01 vvv --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
@@ -258,6 +266,13 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
+# 
+#: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023)
+#: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw==
+#: next_check: 20230609
+#: valid: -20230609
+Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
 # 
 # REMOVED (fertig) --- #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=737430#post737430 --- #: XXX evtl. wird die Straße nach den Bauarbeiten nicht mehr gepflastert sein -> ja, es ist schon asphaltiert (bereits eingetragen, bis auf die Stichstraße) --- #: last_checked: 2023-04-06 --- #: check_frequency: 30d --- Elisabeth-Abegg-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 7930,12912 7858,12830 7789,12764
 # 

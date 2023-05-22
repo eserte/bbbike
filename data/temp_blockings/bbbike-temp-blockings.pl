@@ -38779,4 +38779,15 @@ EOF
 	q4::inwork 11599,19171 11634,19187 11671,19204 11748,19235
 EOF
      },
+     { from  => 1684645200, # 2023-05-21 07:00
+       until => 1688742000, # 2023-07-07 17:00
+       text  => 'Friedrich-Wilhelm-Str.: Fahrbahn vor dem Tempelhofer Damm gesperrt, vom 22.05.2023 07:00 bis 07.07.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
+#: by: https://nitter.cz/VIZ_Berlin/status/1660510800392355840#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlVFJsb1h3QUFPUlFHLmpwZw==
+	q4::inwork 9176,5803 8996,5823
+EOF
+     },
     );

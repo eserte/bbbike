@@ -7603,6 +7603,18 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
          'text' => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Anfang Juni 2023, vielleicht auch länger',
          'type' => 'handicap',
          'until' => 1686002399
+       },
+       {
+         'data' => '#: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
+#: by: https://nitter.cz/VIZ_Berlin/status/1660510800392355840#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlVFJsb1h3QUFPUlFHLmpwZw==
+	q4::inwork 9176,5803 8996,5823
+',
+         'from' => 1684645200,
+         'id' => 3793,
+         'text' => 'Friedrich-Wilhelm-Str.: Fahrbahn vor dem Tempelhofer Damm gesperrt, vom 22.05.2023 07:00 bis 07.07.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1688742000
        }
      
 );
