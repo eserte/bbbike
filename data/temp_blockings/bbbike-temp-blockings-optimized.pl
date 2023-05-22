@@ -40,21 +40,24 @@ push @temp_blocking,
                           ],
          'text' => 'Straßenfest rund um den Blücherplatz, 26.05.2023 bis 29.05.2023, Sperrungen fangen schon einen Tag vorher an',
          'type' => 'gesperrt',
-         'until' => 1685397599
+         'until' => 1685419200
        },
        {
          'data' => '#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
 #: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
 #: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9047,9750
+#: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
+#: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
+	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
+# REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
 	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
 # REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
 # REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
 # REMOVED ---	3 9000,9509 9047,9750 9078,9916
 # REMOVED ---	3 9078,9916 9047,9750 9000,9509
-	3 9283,9487 9334,9670 9387,9804
-	3 9387,9804 9334,9670 9283,9487
+# REMOVED (2023 hier nicht) --- Mehringdamm	3 9283,9487 9334,9670 9387,9804
+# REMOVED (2023 hier nicht) --- Mehringdamm	3 9387,9804 9334,9670 9283,9487
 	3 9524,9426 9552,9602 9588,9827
 	3 9588,9827 9552,9602 9524,9426
 	3 9650,9404 9676,9564 9705,9732
@@ -4139,7 +4142,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
 	q4 14909,9649 14867,9573 14837,9517 14809,9466
 	q4 15623,9028 15633,9007 15630,8979 15623,8949 15617,8924 15608,8882 15591,8848
-	q4 15680,8914 15617,8924
+	q4 15678,8911 15617,8924
 	q4 15630,8979 15658,9007
 	q4 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 	q4 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
@@ -4588,7 +4591,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-16 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5814,7 +5817,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-14
+#: last_checked: 2023-05-22
 #: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -6258,7 +6261,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -6373,7 +6376,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-21
+#: last_checked: 2023-05-22
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -6729,12 +6732,12 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        },
        {
          'data' => '#: next_check_id: SPREEPARK-2022
-#: note: Zusätzlich in gesperrt-orig eingetragen
+#: note: war zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-05-03 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
-	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
+# REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
 	2::inwork 16086,8860 16084,8833
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6744,7 +6747,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'from' => 1670264861,
          'id' => 3699,
          'source_id' => 'https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger',
-         'text' => 'Wasserweg: mögliche Bauarbeiten und Sperrung des Wegs, Dezember 2022 bis Mitte 2023',
+         'text' => 'Platz vor dem Spreepark: mögliche Bauarbeiten und Sperrung des Wegs, Dezember 2022 bis Mitte 2023',
          'type' => 'gesperrt',
          'until' => 1688162399
        },
@@ -7134,14 +7137,15 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        {
          'data' => '#: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="1"
-#: last_checked: 2023-04-02 (mapillary)
-	2::inwork 13078,21754 13031,21538
+#: last_checked: 2023-05-21 (mapillary)
+#: next_check: 2023-07-01
+	2::inwork 13078,21754 13031,21538 12980,21411
 ',
          'from' => 1678819239,
          'id' => 3747,
          'text' => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023, vielleicht noch länger',
          'type' => 'gesperrt',
-         'until' => 1688162400
+         'until' => undef
        },
        undef,
        undef,
@@ -7464,16 +7468,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'type' => 'gesperrt',
          'until' => 1687838400
        },
-       {
-         'data' => '	2::inwork 6063,25197 5198,24863
-',
-         'from' => 1683439200,
-         'id' => 3781,
-         'source_id' => '236500970',
-         'text' => 'Glienicke: Bauarbeiten zwischen Oranienburger Chaussee und Paul-Singer-Str., Sperrung vom 08.05.2023 08:00 Uhr bis 22.05.2023 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1684764000
-       },
+       undef,
        {
          'data' => '	2::inwork 6957,25450 7170,25566 7415,25928
 ',
@@ -7553,12 +7548,12 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'until' => 1685394000
        },
        {
-         'data' => '	q4::inwork 15714,8633 15543,8525
+         'data' => '	q3::inwork 15714,8633 15547,8531
 ',
          'from' => 1684036800,
          'id' => 3789,
          'source_id' => 'viz2021:13.48123,52.48258,15.05.2023,06:00',
-         'text' => 'Am Plänterwald: Bauarbeiten, Fahrbahn zwischen Neue Krugallee und Orionstr. gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
+         'text' => 'Am Plänterwald: Bauarbeiten, Fahrbahn an der Einmündung Neue Krugallee gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
          'type' => 'handicap',
          'until' => 1686607140
        },
@@ -7567,11 +7562,14 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: by: https://berliner-abendblatt.de/berlin-news/verdacht-auf-brandstiftung-an-modersohnbruecke-id221842
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-we-20-210523/
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
-#: last_checked: 2023-05-21 vvv
-#: next_check: 2023-05-22 vvv
+#: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
+#: last_checked: 2023-05-22 vvv
+#: check_frequency: 3d vvv
+# REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
 Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -7606,6 +7604,7 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
        },
        {
          'data' => '#: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
+#: source_id: viz2021:13.38415,52.45819,22.05.2023,07:00 (bis 07.07.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1660510800392355840#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlVFJsb1h3QUFPUlFHLmpwZw==
 	q4::inwork 9176,5803 8996,5823
@@ -7615,6 +7614,30 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
          'text' => 'Friedrich-Wilhelm-Str.: Fahrbahn vor dem Tempelhofer Damm gesperrt, vom 22.05.2023 07:00 bis 07.07.2023 17:00',
          'type' => 'handicap',
          'until' => 1688742000
+       },
+       {
+         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
+#: source_id: bvg2021:347#BVG321063_0
+#: last_checked: 2023-05-21
+#: check_frequency: 30d
+#: next_check: 2023-07-22
+	q4::inwork 15090,10140 15050,10160
+',
+         'from' => 1684620000,
+         'id' => 3794,
+         'text' => 'Fischzug: zwischen Engelswiese und Bootsbauerstr. Bauarbeiten, Fahrbahn gesperrt, ab 22.5.2023 für ca. zwei Monate',
+         'type' => 'handicap',
+         'until' => 1689976800
+       },
+       {
+         'data' => '	q4::inwork; 24730,14288 24667,14088
+',
+         'from' => 1684731600,
+         'id' => 3795,
+         'source_id' => 'viz2021:13.615005,52.531159,23.05.2023,07:00',
+         'text' => 'Jenaer Str.: Bauarbeiten, zwischen Riesaer Str. und Hermsdorfer Str. ist die Fahrbahn Richtung Süden gesperrt, vom 23.05.2023 07:00 bis 01.09.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1693580400
        }
      
 );

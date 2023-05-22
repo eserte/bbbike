@@ -3547,6 +3547,8 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 Drängelgitter	BNP:3::trailer=10 22085,5111
 weites Drängelgitter	BNP:2::trailer=7 3002,18971
 Drängelgitter	BNP:3::trailer=10 10475,20355
+weites Drängelgitter	BNP:2::trailer=7 15698,8903
+weites Drängelgitter	BNP:2::trailer=7 16369,8836
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3679,11 +3681,11 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # 
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
-# REMOVED (-> nur temp blockings ist nun aktiv) --- #: next_check_id: SPREEPARK-2022 --- #: last_checked: 2023-05-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 vvv --- Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821 --- Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED (-> nur temp blockings ist nun aktiv) --- #: next_check_id: SPREEPARK-2022 --- #: last_checked: 2023-05-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 vvv --- Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15678,8911 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821 --- Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-05-19
+#: last_checked: 2023-05-22
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3812,7 +3814,7 @@ Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	1s:q4:inwork 20336,3
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-05-11 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-06-01 vvv
 #: osm_watch: way id="358602468" version="12"
@@ -4003,7 +4005,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: osm_watch: way id="43205335" version="3"
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023)
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2023-04-02 (mapillary)
+#: last_checked: 2023-05-21 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
@@ -4602,12 +4604,12 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/ein-anleger-fuer-das-eierhaeuschen_a377057
 #: osm_watch: way id="171586571" version="3"
 #: osm_watch: way id="485693846" version="1"
-#: XXX Vermutlich wird hier im Zuge der Ausbauarbeiten am Wasserweg auch asphaltiert.
+#: add_fragezeichen: Ist der Weg am Eierhäuschen mittlerweile freigegeben?
 #: priority: #C
-#: last_checked: 2023-05-03
+#: last_checked: 2023-05-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
-am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
+am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16619,8606 16578,8586 16436,8687
 # 
 # REMOVED (laut PTR-Berlin) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: by: https://residential.jll.de/de/embassy (bezugsfertig Ende 2020) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_47_7145_7272_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="710342475" version="2" --- #: also_indoor: traffic (G) --- #: last_checked: 2020-12-29 (mapillary) --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2020-12-31 --- Am Köllnischen Park: Bauarbeiten, Fahrbahn gesperrt	2s:q3:inwork 11197,11882 11155,11750
 # REMOVED --- #: next_check_id: ALEXANDRINENSTR-2018 --- #: osm_watch: way id="17370332" version="14" --- #: last_checked: 2019-04-10 vvv --- #: check_frequency: 14d vvv

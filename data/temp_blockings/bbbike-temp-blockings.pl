@@ -33,7 +33,7 @@ my $isodate2epoch = sub {
        type  => "handicap",
      },
      { from  => $isodate2epoch->("2023-05-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-05-29 23:59:59"),
+       until => $isodate2epoch->("2023-05-30 06:00:00"),
        prewarn_days => 2,
        periodic => 1,
        recurrences => [['easter', 47, start => "2022-10-25T00:00:00"]], # zwei Tage vor Pfingsten
@@ -76,15 +76,18 @@ EOF
 #: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
 #: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
 #: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9047,9750
+#: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
+#: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
+	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
+# REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
 	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
 # REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
 # REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
 # REMOVED ---	3 9000,9509 9047,9750 9078,9916
 # REMOVED ---	3 9078,9916 9047,9750 9000,9509
-	3 9283,9487 9334,9670 9387,9804
-	3 9387,9804 9334,9670 9283,9487
+# REMOVED (2023 hier nicht) --- Mehringdamm	3 9283,9487 9334,9670 9387,9804
+# REMOVED (2023 hier nicht) --- Mehringdamm	3 9387,9804 9334,9670 9283,9487
 	3 9524,9426 9552,9602 9588,9827
 	3 9588,9827 9552,9602 9524,9426
 	3 9650,9404 9676,9564 9705,9732
@@ -18167,7 +18170,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015813',
        data  => <<EOF,
-	q4::temp 15778,8990 15680,8914 15591,8848 15714,8633
+	q4::temp 15778,8990 15678,8911 15591,8848 15714,8633
 EOF
      },
      { from  => 1276547925, # 2010-06-14 22:38
@@ -21011,7 +21014,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018917',
        data  => <<EOF,
-	q4::inwork 15751,8250 15708,8212 15692,8198 15557,8077
+	q4::inwork 15761,8257 15708,8212 15692,8198 15557,8077
 EOF
      },
      { from  => 1340082000, # 2012-06-19 07:00
@@ -27782,7 +27785,7 @@ EOF
 	q4 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
 	q4 14909,9649 14867,9573 14837,9517 14809,9466
 	q4 15623,9028 15633,9007 15630,8979 15623,8949 15617,8924 15608,8882 15591,8848
-	q4 15680,8914 15617,8924
+	q4 15678,8911 15617,8924
 	q4 15630,8979 15658,9007
 	q4 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 	q4 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
@@ -30371,7 +30374,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-16 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -31842,8 +31845,8 @@ EOF
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
-	q4::temp 15778,8990 15680,8914 15591,8848
+	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
+	q4::temp 15778,8990 15678,8911 15591,8848
 	q4::temp; 15591,8848 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
 EOF
      },
@@ -35458,7 +35461,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-14
+#: last_checked: 2023-05-22
 #: next_check: 2023-05-26
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -36786,7 +36789,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -36981,7 +36984,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2023-05-21
+#: last_checked: 2023-05-22
 #: check_frequency: 30d
 #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
@@ -37560,17 +37563,17 @@ EOF
      },
      { from  => 1670264861, # 2022-12-05 19:27
        until => 1688162399, # 2023-06-30 23:59
-       text  => 'Wasserweg: mögliche Bauarbeiten und Sperrung des Wegs, Dezember 2022 bis Mitte 2023',
+       text  => 'Platz vor dem Spreepark: mögliche Bauarbeiten und Sperrung des Wegs, Dezember 2022 bis Mitte 2023', # früher: Wasserweg
        type  => 'gesperrt',
        source_id => 'https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger',
        data  => <<EOF,
 #: next_check_id: SPREEPARK-2022
-#: note: Zusätzlich in gesperrt-orig eingetragen
+#: note: war zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv
-#: last_checked: 2023-05-03 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
-	2::inwork 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
+# REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
 	2::inwork 16086,8860 16084,8833
 #: next_check ^^^
 #: check_frequency ^^^
@@ -38177,14 +38180,15 @@ EOF
 EOF
      },
      { from  => 1678819239, # 2023-03-14 19:40
-       until => 1688162400, # 2023-07-01 00:00
+       until => undef, # 1688162400, # 2023-07-01 00:00
        text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023, vielleicht noch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="1"
-#: last_checked: 2023-04-02 (mapillary)
-	2::inwork 13078,21754 13031,21538
+#: last_checked: 2023-05-21 (mapillary)
+#: next_check: 2023-07-01
+	2::inwork 13078,21754 13031,21538 12980,21411
 EOF
      },
      { from  => 1678849200, # 2023-03-15 04:00
@@ -38733,11 +38737,11 @@ EOF
      },
      { from  => 1684036800, # 2023-05-14 06:00
        until => 1686607140, # 2023-06-12 23:59
-       text  => 'Am Plänterwald: Bauarbeiten, Fahrbahn zwischen Neue Krugallee und Orionstr. gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
+       text  => 'Am Plänterwald: Bauarbeiten, Fahrbahn an der Einmündung Neue Krugallee gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
        type  => 'handicap',
        source_id => 'viz2021:13.48123,52.48258,15.05.2023,06:00',
        data  => <<EOF,
-	q4::inwork 15714,8633 15543,8525
+	q3::inwork 15714,8633 15547,8531
 EOF
      },
      { from  => undef, # 
@@ -38749,11 +38753,14 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/verdacht-auf-brandstiftung-an-modersohnbruecke-id221842
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-we-20-210523/
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
-#: last_checked: 2023-05-21 vvv
-#: next_check: 2023-05-22 vvv
+#: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
+#: last_checked: 2023-05-22 vvv
+#: check_frequency: 3d vvv
+# REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
 Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -38785,9 +38792,32 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
+#: source_id: viz2021:13.38415,52.45819,22.05.2023,07:00 (bis 07.07.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1660510800392355840#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlVFJsb1h3QUFPUlFHLmpwZw==
 	q4::inwork 9176,5803 8996,5823
+EOF
+     },
+     { from  => 1684620000, # 2023-05-21 00:00
+       until => 1689976800, # 2023-07-22 00:00
+       text  => 'Fischzug: zwischen Engelswiese und Bootsbauerstr. Bauarbeiten, Fahrbahn gesperrt, ab 22.5.2023 für ca. zwei Monate',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
+#: source_id: bvg2021:347#BVG321063_0
+#: last_checked: 2023-05-21
+#: check_frequency: 30d
+#: next_check: 2023-07-22
+	q4::inwork 15090,10140 15050,10160
+EOF
+     },
+     { from  => 1684731600, # 2023-05-22 07:00
+       until => 1693580400, # 2023-09-01 17:00
+       text  => 'Jenaer Str.: Bauarbeiten, zwischen Riesaer Str. und Hermsdorfer Str. ist die Fahrbahn Richtung Süden gesperrt, vom 23.05.2023 07:00 bis 01.09.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.615005,52.531159,23.05.2023,07:00',
+       data  => <<EOF,
+	q4::inwork; 24730,14288 24667,14088
 EOF
      },
     );

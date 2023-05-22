@@ -318,14 +318,14 @@ Grünbeschichtung	RW4; 13633,10705 13678,10685 13779,10642
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier auch eine Grünbeschichtung entstehen?
 #: priority: #D
-#: last_checked: 2023-05-21
+#: last_checked: 2023-05-22
 	RW4; 13779,10642 13850,10612
 asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-05-21 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -362,7 +362,7 @@ Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241
 #: confirmed_by: srt
 #: XXX bleibt das Provisorium?
 #: osm_watch: way id="984857536" version="5"
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-22
 #: check_frequency: 90d
 provisorische geschützte Radspur	RW3; 13155,9907 13136,9883 13086,9825 13026,9854
 	RW1; 13026,9854 12932,9900
@@ -8040,6 +8040,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv)
 #: source_id: viz2021:13.385342,52.44754,17.03.2023,06:00 (bis 31.05.2023) (bis 15.06.2023)
 #: source_id: viz2021:13.384974,52.44972,22.05.2023,07:00 (Leitungsbaustelle bis 26.05.2023)
+#: source_id: viz2021:13.38486,52.4502,22.05.2023,07:00 (bis 26.05.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-05-13 vvv
@@ -8302,7 +8303,7 @@ Gehweg für Radfahrer frei, alte Gehwegplatten	RW1; 18977,9322 19048,9146
 # 
 Gehwegplatten	RW2; 10936,16892 10971,16907
 # 
-	RW7;RW7 15591,8848 15680,8914 15778,8990
+	RW7;RW7 15591,8848 15678,8911 15778,8990
 # 
 	RW7;RW7 6743,15102 6886,15156 7085,15226 7248,15296 7270,15307 7356,15350 7417,15383
 	RW7;RW7 7464,15409 7627,15412 7723,15417

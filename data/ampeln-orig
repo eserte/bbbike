@@ -117,7 +117,14 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw== --- #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) --- #: last_checked: 2023-04-09 --- #: next_check: 2023-05-19 --- #: valid: -20230519 ---	F::inwork 11913,13077
+# 
+#: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
+#: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023)
+#: last_checked: 2023-04-09
+#: next_check: 2023-06-16
+#: valid: -20230616
+	F::inwork 11913,13077
 # 
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
@@ -129,9 +136,10 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet)
-#: last_checked: 2023-05-17 vvv
-#: check_frequency: 30d vvv
+#: source_id: viz2021:13.458072,52.486032,23.05.2023,07:00 (Bau einer Fußgängerquerungsanlage, bis 31.05.2023)
+#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (vielleicht wird die Ampel bald abgebaut? siehe auch VIZ-Meldung)
+#: last_checked: 2023-05-22 vvv
+#: check_frequency: 14d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
 #: last_checked ^^^

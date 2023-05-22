@@ -622,7 +622,7 @@ Kanner Str.: Asphalt	Q0 13341,7423 13373,7426
 Kanner Str.: Asphalt	Q0 13373,7426 13476,7330
 Unstrutstr.: Asphalt	Q0 13476,7330 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
-Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
+Uferweg: fester Sandweg	Q1 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -972,7 +972,7 @@ Pankeweg: feiner Schotter	Q1 14869,24387 14625,24215 14356,23862 14265,23759 139
 Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: Asphalt mit einigen Unebenheiten	Q1 13206,22290 13141,22018
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1 13141,22018 13078,21754
-Pankeweg: wassergebundene Decke	Q1 13078,21754 13031,21538 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
+Pankeweg: wassergebundene Decke	Q1 13078,21754 13031,21538 12980,21411 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestigter Weg	Q2 13365,22743 13321,22586 13295,22545 13291,22422
 Pankeweg: Feinschotter	Q1 13291,22422 13290,22399 13388,22386 13404,22384
 Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2 13136,22397 13117,22337 13110,22313
@@ -1580,7 +1580,7 @@ Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0 15253,10171 15199,10211 15134,10243 15101,10263
 Flaschenkai: Parkweg bzw. Betonpflaster	Q0 15101,10263 15044,10297 14977,10348 14892,10411
 Flaschenkai: Beton	Q0 14892,10411 14864,10451 14861,10467 14884,10497
-Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15135,10639 15200,10600
+Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15138,10638 15200,10600
 Uferweg: Parkweg	Q1 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048
 Uferweg: Parkweg	Q1 15260,10048 15295,10022 15296,10000 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15561,9809 15626,9710
@@ -2329,14 +2329,14 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
-Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
-Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867
-Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
-Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
-Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1 16201,8860 16358,8841 16388,8821
+Wasserweg: neu asphaltiert	Q0 15678,8911 15698,8903 15873,8884
+Wasserweg: neu asphaltiert	Q0 15873,8884 15981,8872 16028,8867
+Wasserweg: neu asphaltiert	Q0 16028,8867 16086,8860 16129,8855
+Wasserweg: neu asphaltiert	Q0 16129,8855 16201,8860
+Wasserweg: neu asphaltiert	Q0 16201,8860 16369,8836 16388,8821
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16490,8432 16534,8182
 Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0 16534,8182 16602,7810 16620,7574 16633,7434
-(Uferweg - Kiehnwerderallee): Waldweg	Q2 16627,8581 16577,8581 16436,8687
+(Uferweg - Kiehnwerderallee): neu asphaltiert	Q0 16619,8606 16578,8586 16436,8687
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16657,8443 16490,8432
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16655,7572 16620,7574
 Luisenhain: glattes Pflaster	Q0 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
@@ -2654,7 +2654,7 @@ Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 Schwertlilienweg: Beton	Q0 15574,3856 15510,3778 15452,3700
 (Heideläuferweg - Stuthirtenweg): unbefestigt	Q2 13109,1071 13113,1046
 (Niederwallstr. - Kurstr.): Asphalt	Q0 10189,11773 10230,11839
-Am Plänterwald: Kleinsteinpflaster, etwas wellig	Q2 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
+Am Plänterwald: Kleinsteinpflaster, etwas wellig	Q2 15714,8633 15547,8531 15499,8496 15443,8458 15303,8343
 Güldenhofer Ufer: Kopfsteinpflaster	Q2 16677,6892 16630,6800
 Güldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
 Deulstr.: mit Teer verfugtes Kopfsteinpflaster	Q2 17860,6644 17763,6960
@@ -9627,7 +9627,7 @@ Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18482,11849 18578,11881
 An der Hansekogge: Verbundsteinpflaster	Q1 18702,11921 18888,11910 18913,11909
 Treptower Park: Kleinsteinpflaster	Q1 15623,9028 15633,9007 15630,8979 15623,8949
 Treptower Park: wassergebundene Decke	Q1 15623,8949 15617,8924 15608,8882 15591,8848
-(Wasserweg - Treptower Park): wassergebundene Decke	Q1 15680,8914 15617,8924
+(Wasserweg - Treptower Park): wassergebundene Decke	Q1 15678,8911 15617,8924
 (S-Bahnhof - Treptower Hafen): Mosaikpflaster	Q1 14404,9847 14466,9861 14488,9848
 Abteibrücke: Kleinsteinpflaster	Q1 15630,8979 15658,9007
 Abteibrücke: asphaltiert	Q0 15658,9007 15674,9095
@@ -10612,7 +10612,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0 5621,12150 5606,12232 5604,12244
 (Margueritenring - Köpenicker Str.): alter Asphalt	Q1 17046,1708 17100,1650
 (Grünstreifen 1929): Verbundsteinpflaster	Q1 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
-(Am Plänterwald - Spreepark): alter Asphalt	Q1 16084,8833 16086,8860
+(Am Plänterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
 Lepsiusstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0 4520,5793 4558,5863 4603,5954 4646,6040 4652,6052 4689,6122 4716,6173 4730,6198 4776,6284 4840,6405 4846,6417 4894,6509
 Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
 Hilda-Geiringer-Weg: gepflastert	Q2 8236,13495 8241,13393
@@ -11242,6 +11242,8 @@ Bernauer Str. (Lichtenrade): Asphalt mit vereinzelten Löchern	Q0 11085,-50 11083
 (Hawaiiweg - Uferweg): Verbundsteinpflaster	Q1 -2413,18765 -2398,18774
 Jamaikaweg: Verbundsteinpflaster	Q1 -2622,18772 -2621,18840
 Bahamasbogen: Verbundsteinpflaster	Q1 -2759,18843 -2621,18840 -2482,18836 -2485,18768
+(Mauerweg - Lohmühlenstr.): neu asphaltiert	Q0 13109,9743 13128,9726
+(Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2 13128,9726 13156,9702
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -14849,7 +14851,7 @@ Arndtstr. (Adlershof): schlechtes Kopfsteinpflaster	Q3 20725,3476 20592,3633 204
 Lotzestr.: mäßiges Kopfsteinpflaster	Q2 2632,2969 2594,3009 2549,3058
 Lotzestr.: schlechtes Kopfsteinpflaster	Q3 2549,3058 2436,3180 2289,3331
 Am Kringel: gutes Verbundsteinpflaster	Q1 1316,24924 1309,24955 1309,24995 1323,25041 1370,25085
-Orionstr.: Kleinsteinpflaster, etwas wellig	Q2 15751,8250 15543,8525
+Orionstr.: Kleinsteinpflaster, etwas wellig	Q2 15761,8257 15547,8531
 Wilhelm-Gericke-Str.: Beton	Q0 5700,19511 5592,19888 5598,19912 5627,19940
 Wilhelm-Gericke-Str.: Kopfsteinpflaster	Q2 5627,19940 5651,19953 5804,20047 5914,20112
 Segewaldweg: guter Asphalt	Q0 22742,3382 22638,3366 22553,3363 22468,3359 22356,3351
@@ -18275,6 +18277,7 @@ Löwenstammstr.: Asphalt	Q0 -7961,15552 -7865,15867
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10860 16425,10839
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
+(Ferdinand-Buisson-Str. - Pankeweg): unbefestigte Straße	Q2 12948,21421 12980,21411
 Sarah-Kirsch-Str.: Asphalt	Q0 23452,15046 23569,15062 23693,15080
 Elfriede-Brüning-Str.: Betonpflaster	Q0 23452,15046 23419,15226
 Eva-Strittmatter-Str.: Betonpflaster	Q0 23419,15226 23538,15247

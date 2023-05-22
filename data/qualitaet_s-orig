@@ -959,7 +959,7 @@ Kanner Str.: Asphalt	Q0- 13373,7426 13476,7330
 Unstrutstr.: Asphalt	Q0 13476,7330 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 #: note: nach Regenfällen Pfützen
-Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
+Uferweg: fester Sandweg	Q1 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 # REMOVED --- #: next_check_id: PLAENTERWALDUFERWEG-2019 --- #: XXX nach den Bauarbeiten wassergebundene Decke --- #: last_checked: 2019-12-30 --- #: check_frequency: 14d
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.885152.php
 #: note: nach Regenfällen (noch) keine Pfützenbildung
@@ -1105,7 +1105,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-05-21
+#: last_checked: 2023-05-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1439,7 +1439,7 @@ Pankeweg: feiner Schotter	Q1 14869,24387 14625,24215 14356,23862 14265,23759 139
 Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: Asphalt mit einigen Unebenheiten	Q1+ 13206,22290 13141,22018
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1- 13141,22018 13078,21754
-Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
+Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12980,21411 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13291,22422
 Pankeweg: Feinschotter	Q1 13291,22422 13290,22399 13388,22386 13404,22384
 Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13136,22397 13117,22337 13110,22313
@@ -2222,7 +2222,7 @@ Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
 Flaschenkai: Parkweg bzw. Betonpflaster	Q0- 15101,10263 15044,10297 14977,10348 14892,10411
 Flaschenkai: Beton	Q0 14892,10411 14864,10451 14861,10467 14884,10497
-Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15135,10639 15200,10600
+Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15138,10638 15200,10600
 Uferweg: Parkweg	Q1- 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048
 Uferweg: Parkweg	Q1 15260,10048 15295,10022 15296,10000 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15561,9809 15626,9710
@@ -2244,7 +2244,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9520 (Anfrage)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/ekgf3qoJIrr9337BpG4iMbZ0LD6NRaRRMlLcP8ms/jaFrvTVW/25-Anlagen/02/schriftlBeantwortungmdlAnfrageDS0398-IXErneue.pdf
 #: XXX möglicherweise Änderung des Wegbelags
-#: last_checked: 2023-01-27
+#: last_checked: 2023-05-22
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -3181,20 +3181,22 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
-Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
-Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867
-Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
-Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
-#: next_check_id: SPREEPARK-2022
-#: XXX wird hier der Asphalt wieder komplett hergestellt?
-#: last_checked: 2023-05-03
-#: check_frequency: 120d
-#: next_check: 2023-06-30
-Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1- 16201,8860 16358,8841 16388,8821
+#: historical_note: früher (bis Frühjahr 2023) Kopfsteinpflaster, Q2
+Wasserweg: neu asphaltiert	Q0 15678,8911 15698,8903 15873,8884
+#: historical_note: früher (bis Frühjahr 2023) fester Sandweg, Q2
+Wasserweg: neu asphaltiert	Q0 15873,8884 15981,8872 16028,8867
+#: historical_note: früher (bis Frühjahr 2023) alter Asphalt, Q1
+Wasserweg: neu asphaltiert	Q0 16028,8867 16086,8860 16129,8855
+#: historical_note: früher (bis Frühjahr 2023) fester Sandweg, Q2
+Wasserweg: neu asphaltiert	Q0 16129,8855 16201,8860
+# REMOVED --- #: next_check_id: SPREEPARK-2022 --- #: XXX wird hier der Asphalt wieder komplett hergestellt? --- #: last_checked: 2023-05-03 --- #: check_frequency: 120d --- #: next_check: 2023-06-30
+#: historical_note: früher (bis Frühjahr 2023) Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt, Q1-; davor die gesamte über die Breite betoniert/asphaltiert
+Wasserweg: neu asphaltiert	Q0 16201,8860 16369,8836 16388,8821
 # REMOVED --- Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16028,8867 16084,8833 16129,8855
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16490,8432 16534,8182
 Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0- 16534,8182 16602,7810 16620,7574 16633,7434
-(Uferweg - Kiehnwerderallee): Waldweg	Q2+ 16627,8581 16577,8581 16436,8687
+#: historical_note: früher (bis Frühjahr 2023) Waldweg, Q2+
+(Uferweg - Kiehnwerderallee): neu asphaltiert	Q0 16619,8606 16578,8586 16436,8687
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16657,8443 16490,8432
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16655,7572 16620,7574
 Luisenhain: glattes Pflaster	Q0 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
@@ -3583,7 +3585,7 @@ Schwertlilienweg: Beton	Q0- 15574,3856 15510,3778 15452,3700
 (Heideläuferweg - Stuthirtenweg): unbefestigt	Q2- 13109,1071 13113,1046
 (Niederwallstr. - Kurstr.): Asphalt	Q0 10189,11773 10230,11839
 # REMOVED (keine Änderung) --- #  --- #: next_check_id: KOEPENICKERLANDSTR-2018 --- #: XXX wird das Kopfsteinpflaster nach den Bauarbeiten durch Asphalt ersetzt werden, zumindest im südwestlichen Abschnitt? --- #: last_checked: 2019-03-11 --- #: next_check: 2019-07-01
-Am Plänterwald: Kleinsteinpflaster, etwas wellig	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
+Am Plänterwald: Kleinsteinpflaster, etwas wellig	Q2+ 15714,8633 15547,8531 15499,8496 15443,8458 15303,8343
 Güldenhofer Ufer: Kopfsteinpflaster	Q2- 16677,6892 16630,6800
 Güldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
 Deulstr.: mit Teer verfugtes Kopfsteinpflaster	Q2 17860,6644 17763,6960
@@ -9156,7 +9158,7 @@ Bananenapfelweg: unbefestigte Straße	Q2 12994,21719 13008,21783 13050,21994
 # 
 #: XXX wird hier die Fahrbahnoberfläche verbessert werden?
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: last_checked: 2023-04-06 (mapillary)
+#: last_checked: 2023-05-21 (mapillary)
 #: check_frequency: 720d
 Straße 55: schlechtes Kopfsteinpflaster	Q3 12837,21229 12696,21342
 # 
@@ -11292,7 +11294,7 @@ Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18482,11849 18578,11881
 An der Hansekogge: Verbundsteinpflaster	Q1+ 18702,11921 18888,11910 18913,11909
 Treptower Park: Kleinsteinpflaster	Q1 15623,9028 15633,9007 15630,8979 15623,8949
 Treptower Park: wassergebundene Decke	Q1 15623,8949 15617,8924 15608,8882 15591,8848
-(Wasserweg - Treptower Park): wassergebundene Decke	Q1 15680,8914 15617,8924
+(Wasserweg - Treptower Park): wassergebundene Decke	Q1 15678,8911 15617,8924
 (S-Bahnhof - Treptower Hafen): Mosaikpflaster	Q1 14404,9847 14466,9861 14488,9848
 Abteibrücke: Kleinsteinpflaster	Q1 15630,8979 15658,9007
 Abteibrücke: asphaltiert	Q0 15658,9007 15674,9095
@@ -12398,11 +12400,11 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Grünstreifen 1929): Verbundsteinpflaster	Q1 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
-#: XXX wird hier der Asphalt noch verbessert?
-#: last_checked: 2022-12-08
+#: XXX wird hier die Fahrbahndecke noch verbessert?
+#: last_checked: 2023-05-22
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2023-06-30
-(Am Plänterwald - Spreepark): alter Asphalt	Q1 16084,8833 16086,8860
+(Am Plänterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
 Lepsiusstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 4520,5793 4558,5863 4603,5954 4646,6040 4652,6052 4689,6122 4716,6173 4730,6198 4776,6284 4840,6405 4846,6417 4894,6509
 Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
 Hilda-Geiringer-Weg: gepflastert	Q2 8236,13495 8241,13393
@@ -13105,6 +13107,13 @@ Bernauer Str. (Lichtenrade): Asphalt mit vereinzelten Löchern	Q0- 11085,-50 1108
 (Hawaiiweg - Uferweg): Verbundsteinpflaster	Q1+ -2413,18765 -2398,18774
 Jamaikaweg: Verbundsteinpflaster	Q1+ -2622,18772 -2621,18840
 Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485,18768
+(Mauerweg - Lohmühlenstr.): neu asphaltiert	Q0 13109,9743 13128,9726
+#: next_check_id: SCHLESISCHERBUSCH-2023
+#: XXX bleibt der unbefestigte Abschnitt?
+#: last_checked: 2023-05-22
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2023-06-01
+(Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2+ 13128,9726 13156,9702
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -22779,7 +22788,7 @@ Am Kringel: gutes Verbundsteinpflaster	Q1 1316,24924 1309,24955 1309,24995 1323,
 # 
 #: by: Beata Jankowski:
 #: corrected_by: srt (Q2 -> Q2+)
-Orionstr.: Kleinsteinpflaster, etwas wellig	Q2+ 15751,8250 15543,8525
+Orionstr.: Kleinsteinpflaster, etwas wellig	Q2+ 15761,8257 15547,8531
 # 
 #: by: michael fenner: vvv
 #: corrected_by: srt (asphaltiert -> Beton)
@@ -31331,6 +31340,7 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
+(Ferdinand-Buisson-Str. - Pankeweg): unbefestigte Straße	Q2 12948,21421 12980,21411
 Sarah-Kirsch-Str.: Asphalt	Q0 23452,15046 23569,15062 23693,15080
 Elfriede-Brüning-Str.: Betonpflaster	Q0- 23452,15046 23419,15226
 Eva-Strittmatter-Str.: Betonpflaster	Q0- 23419,15226 23538,15247
@@ -32226,4 +32236,7 @@ Einmündungsbereich asphaltiert	Q0 10650,20205
 Kreuzungsbereich asphaltiert	Q0 10534,20144
 Einmündungsbereich asphaltiert	Q0 10115,19105
 Einmündungsbereich asphaltiert	Q0 9985,18735
+Einmündungsbereich asphaltiert	Q0 15761,8257
+Einmündungsbereich asphaltiert	Q0 15708,8212
+Einmündungsbereich asphaltiert	Q0 15692,8198
 #: ignore ^^^

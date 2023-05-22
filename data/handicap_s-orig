@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern mˆglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-05-21 vvv
+#: last_checked: 2023-05-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -68,11 +68,11 @@ Kinzigstr.: Bauarbeiten nˆrdlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023)
 #: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023)
 #: source_id: viz2021:13.470533,52.504112,22.05.2023,06:00 (unklare Verkehrsmeldung, bis 26.05.2023)
-#: note: laut Baustellenplan Wegf¸hrung ¸ber den linken Gehweg, in der Realit‰t gibt es keine Freigabe des Gehwegs; wegen des erhˆhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett f¸r den Kfz-Verkehr gesperrt: q3 -> q4+)
-#: last_checked: 2023-05-20
+#: note: laut Baustellenplan Wegf¸hrung ¸ber den linken Gehweg, in der Realit‰t gibt es keine Freigabe des Gehwegs; wegen des erhˆhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett f¸r den Kfz-Verkehr gesperrt: q3 -> q4+); bei der neuerlichen Sperrung gibt es nun doch Radfahrer-frei-Schilder, allerdings recht schmal
+#: last_checked: 2023-05-22
 #: next_check: 2023-05-26
 #: valid: -20230526
-An der Mole: Einbahnstraﬂenregelung, ggfs. vor der Einm¸ndung auf den linken Gehweg ausweichen	q4+::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
+An der Mole: Einbahnstraﬂenregelung, f¸r Radfahrer offen	q2::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
 #: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw==
@@ -270,7 +270,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw==
-#: next_check: 20230609
+#: next_check: 2023-06-09
 #: valid: -20230609
 Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden ¸ber den Gehweg gef¸hrt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
 # 
@@ -1611,7 +1611,7 @@ Am Rummelsburger See: Fuﬂg‰nger, kurvenreich, Gr¸nanlage	q3 15793,9334 15813,937
 Am Rummelsburger See: Fuﬂg‰nger, Gr¸nanlage	q3 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
 # REMOVED --- #: next_check_id: RUMMELSBURGERBUCHT-2021 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erw‰hnung einer Verbreiterung, wo genau?) --- #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strang wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenf¸gen --- #: last_checked: 2022-05-07 --- #: check_frequency: 90d
 #: note: Fuﬂweg f¸r Radfahrer frei
-Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15135,10639 15200,10600 15249,10564
+Am Rummelsburger See: Fuﬂg‰nger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15138,10638 15200,10600 15249,10564
 #: note: siehe auch permanenten temp-blockings-Eintrag (Radfahren verboten)
 Am Rummelsburger See: teilweise enge Kurven, Fuﬂg‰nger an schˆnen Tagen	q2 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Fuﬂg‰nger an schˆnen Tagen	q1 15931,9846 16002,9787 16049,9749 16119,9689 16125,9678 16120,9653
@@ -3148,7 +3148,7 @@ Cajamarcaplatz: viele Fuﬂg‰nger, Bordstein	q4 17730,5698 17782,5698
 (Fuﬂg‰ngertunnel S-Bhf. Schˆneweide): viele Fuﬂg‰nger, ggfs. schieben	q4 17730,5698 17639,5612
 #: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3
 (S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger, Bordstein	q3 17639,5612 17675,5521
-# REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15680,8914 15873,8884
+# REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15678,8911 15698,8903 15873,8884
 (Ella-Trebe-Str. - Invalidenstr.): einige Fuﬂg‰nger	q1 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fuﬂg‰nger	q1 7880,13315 7938,13302
 Wuhlestr. [Wohngebiet]: Fuﬂg‰nger	q1 21580,13583 21430,13602
@@ -3518,7 +3518,7 @@ Fˆlderichplatz: Fuﬂg‰ngerzone	q3 -3942,12559 -3940,12377
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fuﬂg‰nger	q1 20759,15740 20789,15736
 # REMOVED (-> handicap_s-directed) --- #: note: an der Schlichtallee, Abbremsen notwendig; die Pollerreihe an der eigentlichen Fischerstr. ist unterbrochen und gut umfahrbar --- Fischerstr.: Pollerreihe	q2; 15982,10765 16080,10743
 #: XXX_prog BS, ansonsten q2
-(Wasserweg - Treptower Park): einige Fuﬂg‰nger, Bordstein, Zugang kann zugeparkt sein	q3 15680,8914 15617,8924
+(Wasserweg - Treptower Park): einige Fuﬂg‰nger, Bordstein, Zugang kann zugeparkt sein	q3 15678,8911 15617,8924
 Monumentenplatz: einige Fuﬂg‰nger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
 (Minna-Cauer-Str. - Lehrter Str.): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7879,13438 7837,13499 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): einige Fuﬂg‰nger, schmale Straﬂe	q1 7775,13540 7666,13479 7653,13480
@@ -4564,6 +4564,18 @@ Am Aalemannkanal: selten Fuﬂg‰nger	q0- -2741,18333 -2229,18312 -2197,18307 -2171
 # 
 #: XXX_prog BS (Bordstein am nˆrdlichen Ende, ansonsten q2 oder q1)
 Waldemarstr.: einige Fuﬂg‰nger, Bordstein	q3 10464,20390 10475,20355
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf
+#: by: https://www.berliner-woche.de/alt-treptow/c-bauen/umgestaltung-des-schmollerplatzes-ist-geplant-aber-erst-ab-2025_a350879 (Erw‰hnung der Teileinziehung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_40_2729_2764_online.pdf
+#: osm_watch: note 3390316 1
+#: XXX Bleibt die Komplettsperrung auch f¸r Radfahrer?
+#: osm_watch: way id="856982239" version="4"
+#: last_checked: 2023-05-22
+#: check_frequency: 30d
+Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,9426 13202,9455
+# 
+(Mauerweg - Lohm¸hlenstr.): einige Fuﬂg‰nger	q2 13109,9743 13128,9726 13156,9702
 # 
 ######################### User Contributions #################################
 # 

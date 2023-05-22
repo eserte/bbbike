@@ -8,7 +8,7 @@ Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der 
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, nur enger Gehweg ist vorhanden	q4::inwork 12788,11898 12891,12008
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
-An der Mole: Einbahnstraßenregelung, ggfs. vor der Einmündung auf den linken Gehweg ausweichen	q4::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
+An der Mole: Einbahnstraßenregelung, für Radfahrer offen	q2::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
@@ -378,7 +378,7 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8
 (Kynaststr. - Paul-und-Paula-Ufer): Fußgänger	q1 14797,10476 14820,10473 14861,10467
 Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q3 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142 15253,10171
 Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
-Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15135,10639 15200,10600 15249,10564
+Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15138,10638 15200,10600 15249,10564
 Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,9749 16119,9689 16125,9678 16120,9653
 Am Rummelsburger See: Fußgänger an schönen Tagen	q2 16120,9653 16182,9591 16268,9670
@@ -1741,7 +1741,7 @@ Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Neuhausweg - Ramin-Park): einige Fußgänger, Bordstein	q2 -3964,14507 -3950,14519
 Földerichplatz: Fußgängerzone	q3 -3942,12559 -3940,12377
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fußgänger	q1 20759,15740 20789,15736
-(Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15680,8914 15617,8924
+(Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15678,8911 15617,8924
 Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
 (Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7879,13438 7837,13499 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): einige Fußgänger, schmale Straße	q1 7775,13540 7666,13479 7653,13480
@@ -2441,6 +2441,8 @@ Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 76
 Zobeltitzstr.: einige Fußgänger	q1 4377,18037 4492,18013
 Am Aalemannkanal: selten Fußgänger	q0 -2741,18333 -2229,18312 -2197,18307 -2171,18265
 Waldemarstr.: einige Fußgänger, Bordstein	q3 10464,20390 10475,20355
+Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,9426 13202,9455
+(Mauerweg - Lohmühlenstr.): einige Fußgänger	q2 13109,9743 13128,9726 13156,9702
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

@@ -1152,8 +1152,12 @@ Goebelplatz	1 1974,14646 1974,14565
 # 
 # REMOVED (offen) --- #: last_checked: 2016-10-02 --- #: next_check: 2017-02-01 --- #: XXX laut osm access=no außer für Fußgänger/Radfahrer --- #: osm_watch: way id="311371554" version="6" --- Clara-Immerwahr-Str.: Bauzäune, Fußgänger und Radfahrer können aber passieren	2::inwork 19202,17471 19542,17344 19798,17263 19845,17235 19914,17203
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
+#: osm_watch: note 3346008 1
+#: add_fragezeichen: Ist die Einbahnstraße für Radfahrer offen?
 Brixplatz	1 179,12434 269,12462 329,12503
 #: by: osm
+#: osm_watch: note 3346008 1
+#: add_fragezeichen: Ist die Einbahnstraße für Radfahrer offen?
 Brixplatz	1 419,12397 335,12343 208,12305
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: confirmed_by: kartonage (osm)
@@ -1835,11 +1839,13 @@ Radieschenpfad	1 20582,18475 20635,18381
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1325312.php
 #: osm_watch: way id="24202434" version="26"
 #: XXX Wird der Asphalt ersetzt werden? Wann wird die provisorische Absperrung durch eine richtige ersetzt werden?
-#: last_checked: 2023-05-17 (Pressemitteilung)
+#: last_checked: 2023-05-22
 #: check_frequency: 30d
 Dammweg: durch Barrieren für den Autoverkehr gesperrt	2 15869,8355 16388,8821
 # 
 #: note: für Fußgänger existiert nördlich der Kreuzung eine Überquerungsmöglichkeit
 #: note: für Autofahrer existiert einige Meter weiter südlich eine Wendemöglichkeit
 Berliner Str. (Tegel): Mittelstreifen	3nocross 2169,20095 2224,20007 2268,19919
+# 
+Schmollerplatz	1 13234,9426 13178,9363 13206,9335
 # 
