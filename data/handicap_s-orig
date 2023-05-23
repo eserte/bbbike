@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-05-22 vvv
+#: last_checked: 2023-05-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -4514,7 +4514,9 @@ Kurfürstenstr. - Pohlstr.: einige Fußgänger	q1 7432,10546 7450,10625
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
 #: by: https://www.bahninfo-forum.de/read.php?9,757005,757414#msg-757414
-# REMOVED --- #: last_checked: 2022-11-17 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2022-11-22 --- # REMOVED --- #: valid: 20200821-20211031 ---
+# REMOVED --- #: last_checked: 2022-11-17 (mapillary) --- #: check_frequency: 90d
+#: next_check: 2023-07-01
+# REMOVED --- #: valid: 20200821-20211031 ---
 Friedrichstr.: Fußgängerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 #: XXX_prog BS an beiden Enden (ansonsten q3)
@@ -4570,7 +4572,8 @@ Waldemarstr.: einige Fußgänger, Bordstein	q3 10464,20390 10475,20355
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_40_2729_2764_online.pdf
 #: osm_watch: note 3390316 1
 #: XXX Bleibt die Komplettsperrung auch für Radfahrer?
-#: osm_watch: way id="856982239" version="4"
+#: XXX Bleibt die Ausschilderung der TR4-Routenführung?
+#: osm_watch: way id="856982239" version="5"
 #: last_checked: 2023-05-22
 #: check_frequency: 30d
 Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,9426 13202,9455

@@ -6,6 +6,8 @@ push @temp_blocking,
 #: by: https://www.gratis-in-berlin.de/festivals/item/2009881-strassenfest-am-bluecherplatz-kreuzberg-karneval-der-kulturen (geplant 03.06.2022 bis 06.06.2022)
 #: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt --- gibt es überhaupt ein Straßenfest vorher?)
 #: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
+#: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -25,6 +27,8 @@ push @temp_blocking,
 	3 9837,9856 9827,10051 9922,10010
 	2::temp 9827,10051 9837,9856
 	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
+Johanniterstr.	2::temp 10066,10071 9837,10117
+Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
 ',
          'from' => 1684879200,
          'id' => 3,
@@ -3359,7 +3363,38 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
+#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
+#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
+#: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
+#: tempex: YYYY0531-YYYY0603 vvv
+	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
+	2::temp 20199,6318 20262,6493 20225,6631
+	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
+#: tempex ^^^
+',
+         'from' => 1685484000,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2023',
+         'type' => 'gesperrt',
+         'until' => 1685656799
+       },
        undef,
        undef,
        undef,
@@ -5487,15 +5522,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,21.12.2022,14:37 (bis 31.03.2023) (inaktiv)
 #: source_id: bvg2021:188#BVG296003_0
-#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (bis 31.05.2023)
-#: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023)
+#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (bis 31.05.2023) (bis 19.07.2023)
+#: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023)
 #: source_id: viz2021:13.29541,52.43779,30.03.2023,12:14 (Baseler Str., bis 31.05.2023)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
 #: last_checked: 2022-09-04 vvv
 # REMOVED --- #: check_frequency: 180d vvv
-#: next_check: 2023-05-31 vvv
+#: next_check: 2023-07-19 vvv
 	q3::inwork 3011,3303 2778,3132
 # REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
@@ -5508,7 +5543,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # 
 #: note: bei rbb bis 31.10.2022
 #: last_checked: 2022-09-04 vvv
-#: next_check: 2023-05-31 vvv
+#: next_check: 2023-07-19 vvv
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
@@ -5528,7 +5563,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
          'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 31. Mai 2023',
          'type' => 'handicap',
-         'until' => 1685509200
+         'until' => 1689742800
        },
        undef,
        {
@@ -6365,30 +6400,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: GRUENBERGER-2022
-#: by: https://nitter.cz/VIZ_Berlin/status/1580164107835125760#m (Einbahnstraße, offen Richtung Osten, ab 2022-10-17)
-#: by: https://nitter.cz/VIZ_Berlin/status/1580448626056519680#m (... bis 14.02.2023)
-#: XXX Bleibt es bei der Einbahnstraßenregelung auch für Radfahrer?
-# REMOVED (nein) --- #: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
-#: source_id: viz2021:13.4528,52.512439,17.10.2022,07:00 (bis 27.04.2023) (inaktiv)
-#: source_id: bvg2021:240#BVG310117_0
-#: source_id: bvg2021:n40#BVG310118_0
-#: also_indoor: traffic (H,B)
-#: priority: #A
-#: last_checked: 2023-05-22
-#: check_frequency: 30d
-#: next_check: 2023-05-23
-	q4::inwork; 13696,11920 13515,11969
-# REMOVED (hier nicht) ---	q4::inwork; 13515,11969 13352,12003
-',
-         'from' => 1665896400,
-         'id' => 3654,
-         'source_id' => 'viz2021:13.451202,52.512713,17.10.2022,07:00',
-         'text' => 'Grünberger Str.: Einbahnstraßenregelung zwischen Kadiner Str. und Warschauer Str., offen Richtung Osten, auch Radfahrer sind betroffen, bis 23.05.2023',
-         'type' => 'handicap',
-         'until' => 1684854000
-       },
+       undef,
        undef,
        undef,
        {
@@ -6444,7 +6456,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-14
+#: last_checked: 2023-05-23
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6991,14 +7003,15 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1628999413598408708#m
 #: by: https://nitter.it/pic/orig/media%2FFpp930OXEAEr-JC.jpg
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/waltersdorfer-strasse-vollsperrung-id208350
+#: source_id: viz2021:13.5735,52.40571,24.02.2023,08:00 (bis 30.06.2023)
 	q4::inwork; 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228
 ',
          'from' => 1677135600,
          'id' => 3729,
          'source_id' => 'viz2021:13.573445,52.40384,24.02.2023,08:00',
-         'text' => 'Waltersdorfer Str. : Bauarbeiten zwischen Schulzendorfer Str. und Dahmestr., Sperrung Richtung Süden, auch Radfahrer sind voraussichtlich betroffen, vom 24.02.2023 08:00 bis 24.05.2023 17:00',
+         'text' => 'Waltersdorfer Str. : Bauarbeiten zwischen Schulzendorfer Str. und Dahmestr., Sperrung Richtung Süden, auch Radfahrer sind voraussichtlich betroffen, vom 24.02.2023 08:00 bis 30.06.2023 17:00',
          'type' => 'handicap',
-         'until' => 1684940400
+         'until' => 1688137200
        },
        undef,
        undef,
@@ -7563,7 +7576,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-we-20-210523/
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
-#: last_checked: 2023-05-22 vvv
+#: last_checked: 2023-05-23 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -7638,6 +7651,26 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
          'text' => 'Jenaer Str.: Bauarbeiten, zwischen Riesaer Str. und Hermsdorfer Str. ist die Fahrbahn Richtung Süden gesperrt, vom 23.05.2023 07:00 bis 01.09.2023 17:00',
          'type' => 'handicap',
          'until' => 1693580400
+       },
+       {
+         'data' => '	2::inwork 36539,16154 38171,15125
+',
+         'from' => 1685340000,
+         'id' => 3796,
+         'source_id' => '236400686',
+         'text' => 'Bruchmühle - Eggersdorf: Bauarbeiten, Sperrung der Straße, evtl. sind Radfahrer betroffen, 30.05.2023 08:00 Uhr bis 07.07.2023 16:00',
+         'type' => 'gesperrt',
+         'until' => 1688738400
+       },
+       {
+         'data' => '	q4::inwork 931,14268 968,14263 1023,14259
+',
+         'from' => 1684818000,
+         'id' => 3797,
+         'source_id' => 'viz2021:13.26594,52.535571,24.05.2023,07:00',
+         'text' => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 21.07.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1689951600
        }
      
 );

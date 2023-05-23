@@ -135,10 +135,11 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
+#: by: https://nitter.cz/VIZ_Berlin/status/1660863624997662720#m
 #: osm_watch: node id="31260916" version="5"
 #: source_id: viz2021:13.458072,52.486032,23.05.2023,07:00 (Bau einer Fußgängerquerungsanlage, bis 31.05.2023)
-#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (vielleicht wird die Ampel bald abgebaut? siehe auch VIZ-Meldung)
-#: last_checked: 2023-05-22 vvv
+#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (vielleicht wird die Ampel bald abgebaut? siehe auch VIZ-Meldung --- am nächsten Tag wieder eingeschaltet)
+#: last_checked: 2023-05-23 vvv
 #: check_frequency: 14d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2434,8 +2435,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: FRIEDRICH-2020
 #: note: vorhandene Ampel ist vermutlich dauerhaft abgeschaltet
 #: last_checked: 2023-03-16
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-12-31
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2023-07-01
 # REMOVED --- #: valid: !20200821-20211031
 	X0 9418,11804
 # 
@@ -4222,7 +4223,7 @@ UBB, halbstündlich	B 51270,179246
 	B -89777,-42832
 	B -93557,-39865
 S-Bahn ca. alle 10 Minuten	B 10778,-3988
-S-Bahn ca. alle 10 Minuten	B 10896,-4469
+# REMOVED (Unterführung existiert) --- S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	B 99765,-46542
 	B 99245,-43974
 	B -13875,20548

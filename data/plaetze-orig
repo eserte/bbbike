@@ -555,13 +555,12 @@ Eierhäuschen	Pl 16619,8606
 #: section Eingänge vvv
 # Hier werden nur Eingänge für Flächen aufgenommen, die für Radfahrer gesperrt sind.
 # Insbesondere das Tempelhofer Feld gehört hier nicht rein.
+# 
 #: by: https://www.bgbm.org/de/pr/aktuelle-info-garteneingang-unter-den-eichen-geschlossen-ersatzeingang-willdenowstrasse-mit
-#: XXX wegen Bauarbeiten ist der Eingang Unter den Eichen seit September 2021 gesperrt
-#: osm_watch: way id="1160960788" version="1"
-#: last_checked: 2023-05-07
-#: check_frequency: 90d
-#Botanischer Garten [Eingang Unter den Eichen]	Pl 4160,4988
-Botanischer Garten [Ersatzeingang Willdenowstraße]	Pl 3622,5069
+#: by: https://www.bgbm.org/de/pr/aktuelle-info-garteneingaenge-oeffnungszeiten (Unter den Eichen wieder offen)
+# REMOVED --- #: XXX wegen Bauarbeiten ist der Eingang Unter den Eichen seit September 2021 gesperrt --- #: osm_watch: way id="1160960788" version="2" --- #: last_checked: 2023-05-07 --- #: check_frequency: 90d
+Botanischer Garten [Eingang Unter den Eichen]	Pl 4160,4988
+# REMOVED --- Botanischer Garten [Ersatzeingang Willdenowstraße]	Pl 3622,5069
 Botanischer Garten [Eingang Königin-Luise-Platz]	Pl 3707,5758
 Gärten der Welt [Eingang Eisenacher Str.]	Pl 22059,15153
 Gärten der Welt [Eingang Blumberger Damm]	Pl 21537,14932
