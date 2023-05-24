@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.91;
+$VERSION = 1.92;
 
 use vars qw(%images);
 
@@ -1436,6 +1436,10 @@ sub show_fis_broker_menu {
 	(-label => 'Flurstücke (ALKIS)',
 	 -command => sub { showmap_fis_broker(mapId => 'wmsk_alkis@senstadt', %args) },
 	);
+    $link_menu->command
+	(-label => 'Flurstücke (ALKIS) (via strassenraumkarte)',
+	 -command => sub { showmap_strassenraumkarte(%args) },
+	);
     $link_menu->separator;
     $link_menu->command
 	(-label => 'Orthophotos 2021',
@@ -1451,6 +1455,23 @@ sub show_fis_broker_menu {
     my $e = $w->XEvent;
     $link_menu->Post($e->X, $e->Y);
     Tk->break;
+}
+
+######################################################################
+# strassenraumkarte (using mapproxy.codefor.de)
+
+sub showmap_url_strassenraumkarte {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png#%s/%s/%s", $scale, $py, $px;
+}
+
+sub showmap_strassenraumkarte {
+    my(%args) = @_;
+    my $url = showmap_url_strassenraumkarte(%args);
+    start_browser($url);
 }
 
 ######################################################################
