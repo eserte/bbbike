@@ -218,12 +218,6 @@ sub register {
 	  ),
 	  ($images{BKG} ? (icon => $images{BKG}) : ()),
 	};
-## "NOT FOUND"
-#    $main::info_plugins{__PACKAGE__ . 'Fahrrad_Stadtplan_Eu'} =
-#	{ name => 'fahrrad-stadtplan.eu',
-#	  callback => sub { showmap_fahrrad_stadtplan_eu(@_) },
-#	  callback_3_std => sub { showmap_url_fahrrad_stadtplan_eu(@_) },
-#	};
     $main::info_plugins{__PACKAGE__ . 'QwantMaps'} =
 	{ name => 'Qwant Maps',
 	  callback => sub { showmap_qwantmaps(@_) },
@@ -1458,23 +1452,6 @@ sub show_fis_broker_menu {
     $link_menu->Post($e->X, $e->Y);
     Tk->break;
 }
-
-#######################################################################
-## fahrrad-stadtplan.eu
-#
-#sub showmap_url_fahrrad_stadtplan_eu {
-#    my(%args) = @_;
-#    my $px = $args{px};
-#    my $py = $args{py};
-#    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-#    sprintf "http://www.fahrrad-stadtplan.eu/?lat=%s&lon=%s&zoom=%d", $py, $px, $scale;
-#}
-#
-#sub showmap_fahrrad_stadtplan_eu {
-#    my(%args) = @_;
-#    my $url = showmap_url_fahrrad_stadtplan_eu(%args);
-#    start_browser($url);
-#}
 
 ######################################################################
 # Mapillary
