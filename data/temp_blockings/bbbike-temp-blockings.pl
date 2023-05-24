@@ -31146,7 +31146,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-05-13
+#: last_checked: 2023-05-24
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -35703,7 +35703,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-05-16
+#: last_checked: 2023-05-24
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -36981,16 +36981,11 @@ EOF
 #: next_check_id: GRUENBERGER-2022
 #: by: https://nitter.cz/VIZ_Berlin/status/1580164107835125760#m (Einbahnstraße, offen Richtung Osten, ab 2022-10-17)
 #: by: https://nitter.cz/VIZ_Berlin/status/1580448626056519680#m (... bis 14.02.2023)
-#: XXX Bleibt es bei der Einbahnstraßenregelung auch für Radfahrer?
+# REMOVED --- #: XXX Bleibt es bei der Einbahnstraßenregelung auch für Radfahrer?
 # REMOVED (nein) --- #: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
 #: source_id: viz2021:13.4528,52.512439,17.10.2022,07:00 (bis 27.04.2023) (inaktiv)
-#: source_id: bvg2021:240#BVG310117_0
-#: source_id: bvg2021:n40#BVG310118_0
-#: also_indoor: traffic (H,B)
-#: priority: #A
-#: last_checked: 2023-05-22
-#: check_frequency: 30d
-#: next_check: 2023-05-23
+# REMOVED (noch aktiv, aber Baustelle ist fertig) --- #: source_id: bvg2021:240#BVG310117_0 --- #: source_id: bvg2021:n40#BVG310118_0
+# REMOVED --- #: also_indoor: traffic (H,B) --- #: priority: #A --- #: last_checked: 2023-05-22 --- #: check_frequency: 30d --- #: next_check: 2023-05-23
 	q4::inwork; 13696,11920 13515,11969
 # REMOVED (hier nicht) ---	q4::inwork; 13515,11969 13352,12003
 EOF
@@ -38027,6 +38022,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1639218010979278848#m
 #: by: https://nitter.net/pic/orig/media%2FFr-rz3SXgAIyH7I.jpg
 #: by: https://www.berliner-zeitung.de/mensch-metropole/bahnhofstrasse-koepenick-bvg-stau-und-stress-in-koepenick-das-chaos-koennte-noch-jahre-andauern-tram-bus-senat-db-li.346665
+#: by: https://viz.berlin.de/2023/05/sonderfahrstreifen-bahnhofstr/
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -38064,12 +38060,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1684950869, # undef, # XXX
        text  => 'Charlottenburger Str.: Bauarbeiten an der Roelckestr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: last_checked: 2023-04-13 (mapillary)
+# REMOVED (bei Mapillary nicht mehr zu sehen) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: last_checked: 2023-04-13 (mapillary)
 	q3::inwork 13286,16267 13033,16387
 EOF
      },
@@ -38759,7 +38754,8 @@ EOF
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-we-20-210523/
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
-#: last_checked: 2023-05-23 vvv
+#: osm_watch: note 3695963 3
+#: last_checked: 2023-05-24 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -38774,6 +38770,7 @@ EOF
        text  => 'Virchowstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1327771.php (zu neuen, teilweise provisorischen Gehwegen an der Werneuchener Wiese; Erwähnung von Bauarbeiten der Wasserbetriebe)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
 #: last_checked: 2023-05-21
@@ -38797,7 +38794,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
-#: source_id: viz2021:13.38415,52.45819,22.05.2023,07:00 (bis 07.07.2023)
+#: source_id: viz2021:13.38415,52.45819,22.05.2023,07:00 (bis 07.07.2023) (inaktiv)
 #: by: https://nitter.cz/VIZ_Berlin/status/1660510800392355840#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlVFJsb1h3QUFPUlFHLmpwZw==
 	q4::inwork 9176,5803 8996,5823
