@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -168,6 +168,7 @@ sub get_route_simplification_mapping {
 	# XXX besser binäre Suche statt inkrementell
 	my $step = 5;
     TRY: {
+	    last TRY if !defined $gps_waypoints; # no simplification necessary
 	    for(my $tryangle = 5; $tryangle <= 90; $tryangle+=$step) {
 		$routetoname = [StrassenNetz::simplify_route_to_name
 				([$net->route_to_name([@realcoords],-startindex=>0,-combinestreet=>0)],
