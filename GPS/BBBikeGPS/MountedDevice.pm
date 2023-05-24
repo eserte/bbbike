@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.24';
+    $VERSION = '0.25';
 
     sub has_gps_settings { 1 }
 
@@ -97,6 +97,7 @@
 
     sub maybe_mount {
 	my(undef, $cb, %opts) = @_;
+	my $prefer_device = delete $opts{prefer_device};
 	my $garmin_disk_type = delete $opts{garmin_disk_type} || 'flash';
 	my $with_tty = exists $opts{with_tty} ? delete $opts{with_tty} : 1;
 	die "Unhandled options: " . join(" ", %opts) if %opts;
@@ -144,7 +145,10 @@
 		my $max_wait = 80; # full etrex 30 device boot until mass storage is available lasts 66-70 seconds
 		my @check_mount_devices;
 		if ($garmin_disk_type eq 'flash') {
-		    @check_mount_devices = ('/dev/disk/by-label/GARMIN', '/dev/disk/by-label/Falk', '/dev/disk/by-label/IGS630');
+		    @check_mount_devices = (
+					    (defined $prefer_device ? '/dev/disk/by-label/'.$prefer_device : ()),
+					    '/dev/disk/by-label/GARMIN', '/dev/disk/by-label/Falk', '/dev/disk/by-label/IGS630'
+					   );
 		} elsif ($garmin_disk_type eq 'card') {
 		    my $disks = _parse_udisksctl_status2();
 		    my @card_name_defs = ('Garmin GARMIN Card', 'Microsoft SDMMC');
@@ -235,6 +239,7 @@
 	} elsif ($^O eq 'darwin') { ##########################################
 	    if ($garmin_disk_type eq 'flash') {
 		@mount_point_candidates = (
+					   (defined $prefer_device ? '/Volumes/'.$prefer_device : ()),
 					   '/Volumes/GARMIN',
 					   '/Volumes/Falk', # XXX not tested
 					   '/Volumes/IGS630',
@@ -842,10 +847,28 @@ the callback.
 It's made sure that an unmount (if required) is done even if the
 callback dies.
 
-Options are given as key-value pairs and may consist of
-C<garmin_disk_type> (see above) or C<with_tty> (defaults to true; set
-to a false value if you want to avoid user interaction like password
-input, which may happen in linux' udisks2 setup).
+Options are given as key-value pairs. Following options are available:
+
+=over
+
+=item C<prefer_device> => I<devicename>
+
+Set the preferred device. By default the following order is used:
+C<GARMIN>, C<Falk>, C<IGS30>. Note that on some systems (i.e. linux)
+correct case needs to be used.
+
+=item C<garmin_disk_type> => C<flash> | C<card>
+
+For some Garmin devices, specify whether the internal flash memory or
+an external card is mounted.
+
+=item C<with_tty> => I<boolean>
+
+Defaults to true; set to a false value if you want to avoid user
+interaction like password input, which may happen in linux' udisks2
+setup.
+
+=back
 
 =item C<get_gps_device_status(I<disk_type>, I<inforef>)>
 

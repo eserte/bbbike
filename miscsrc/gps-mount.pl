@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2019,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019,2021,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -32,6 +32,7 @@ use GPS::BBBikeGPS::MountedDevice;
 my $perl_code;
 my $shell_code;
 my $garmin_disk_type;
+my $device;
 my $cd;
 my $do_gpx_copy;
 my $debug;
@@ -48,6 +49,7 @@ GetOptions
      'perl=s'             => \$perl_code,
      'shell=s'            => \$shell_code,
      'garmin-disk-type=s' => \$garmin_disk_type,
+     'device|prefer-device=s' => \$device,
      'cd:s'               => \$cd,
      'gpxcp|gpx-cp|gpx-copy' => \$do_gpx_copy,
      'debug'              => \$debug,
@@ -124,6 +126,7 @@ if ($do_gpx_copy) {
 GPS::BBBikeGPS::MountedDevice->maybe_mount($sub,
 					   ($garmin_disk_type ? (garmin_disk_type => $garmin_disk_type) : ()),
 					   ($without_tty      ? (with_tty         => 0)                 : ()),
+					   ($device           ? (prefer_device    => $device)           : ()),
 					  );
 
 __END__
@@ -134,7 +137,7 @@ gps-mount.pl - mount GPS device
 
 =head1 SYNOPSIS
 
-    gps-mount.pl [--perl 'perl code' | --shell 'shell code'] [--garmin-disk-type flash|card] [--cd | --cd reldir] [--gpx-cp | --gpx-copy file1 ...] [--debug]
+    gps-mount.pl [--perl 'perl code' | --shell 'shell code'] [--device GARMIN|Falk|IGS630|...] [--garmin-disk-type flash|card] [--cd | --cd reldir] [--gpx-cp | --gpx-copy file1 ...] [--debug]
 
 =head1 DESCRIPTION
 
@@ -149,7 +152,7 @@ unmounts, but still provide the information about the mount directory.
 
 =over
 
-=item C<--perl I<perl code fragment>>
+=item C<--perl> I<perl code fragment>
 
 Execute some perl code with the GPS device being mounted. The variable
 C<$gps> is set to the path of the GPS device (but see below for the
@@ -164,7 +167,7 @@ Examples:
     gps-mount.pl --cd --perl 'say cwd';
     gps-mount.pl --cd --perl 'say join "\n", <*>'
 
-=item C<--shell I<shell code fragment>>
+=item C<--shell> I<shell code fragment>
 
 Execute some shell code with the GPS device being mounted. The
 environment variable C<$GPS> is set to the path of the GPS device (but
@@ -198,6 +201,11 @@ Garmin supported). Example:
    gps-mount.pl --gpx-cp file.gpx
 
 Aliases: C<--gpx-copy> and C<--gpxcp>.
+
+=item C<--device> I<devicename>
+
+Set the preferred device. May be relevant if multiple devices are
+plugged in at the same time.
 
 =item C<--garmin-disk-type flash|card>
 
