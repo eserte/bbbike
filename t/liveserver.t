@@ -25,7 +25,6 @@ BEGIN {
     }
 }
 
-use Data::Dumper;
 use Sys::Hostname;
 use URI;
 
@@ -77,21 +76,21 @@ for my $url (@urls) {
 	{
 	    my $resp = $ua->get("$url/temp_blockings/bbbike-temp-blockings-optimized.pl");
 	    ok($resp->is_success, ".pl file which should be treated as text ($url)")
-		or diag(Dumper $resp);
+		or diag $resp->dump;
 	    like($resp->content, qr{temp_blocking});
 	}
 
 	{
 	    my $resp = $ua->get("$url/handicap_l");
 	    ok($resp->is_success, "normal bbd file")
-		or diag(Dumper $resp);
+		or diag $resp->dump;
 	    do_content_checks($resp->decoded_content, "LWP");
 	}
 
 	{
 	    my $resp = $uagzip->get("$url/handicap_l");
 	    ok($resp->is_success, "normal bbd file")
-		or diag(Dumper $resp);
+		or diag $resp->dump;
 	    do_content_checks($resp->decoded_content, "LWP (gzip)");
 	}
 
