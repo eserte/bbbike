@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-05-24 vvv
+#: last_checked: 2023-05-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -245,10 +245,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="24"
+#: osm_watch: way id="549316654" version="25"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2023-05-18
+#: last_checked: 2023-05-25 (osm)
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -300,7 +300,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-24
+#: last_checked: 2023-05-25
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -310,16 +310,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2022-10-03 vvv --- #: next_check: 2024-06-01 vvv --- (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10803,12283 10830,12279 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # REMOVED (hier gibt's nur noch Fußwege) --- #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022) --- # REMOVED --- #: osm_watch: way id="822127127" version="3" --- #: osm_watch: way id="736448990" version="9" --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-01-01 --- Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
-# 
-#: next_check_id: CHAUSSEE-2020
-#: source_id: 2147346552 (bis 16.7.2021)
-#: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt -> inaktiv)
-#: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr) (bis 30.4.2023) (bis 26.5.2023) (inaktiv)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag)
-#: last_checked: 2023-05-18
-#: check_frequency: 60d
-#: next_check: 2023-05-26
-Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
+# REMOVED (laut osm beendet) --- #: next_check_id: CHAUSSEE-2020 --- #: source_id: 2147346552 (bis 16.7.2021) --- #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt -> inaktiv) --- #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr) (bis 30.4.2023) (bis 26.5.2023) (inaktiv) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag) --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 --- Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 # REMOVED --- #: last_checked: 2022-07-17 (mapillary) --- # REMOVED --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2022-07-31 --- Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
 # 
 #: next_check_id: DOROTHEEN-2018
@@ -602,12 +593,12 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 #: next_check_id: HAEMMERLING-2022
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (hier bis 15.6.2023)
 #: osm_watch: way id="794278028" version="10"
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) vvv
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) vvv
 #: also_indoor: traffic (H,G,B,W) vvv
 #: last_checked: 2023-05-13 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-05-25 vvv
-#: valid: 20230325-20230615 vvv
+#: next_check: 2023-06-30 vvv
+#: valid: 20230325-20230630 vvv
 Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
 Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
 #: valid ^^^
@@ -709,7 +700,7 @@ Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic (none)
 #: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt)
-#: last_checked: 2023-04-22 (webcam)
+#: last_checked: 2023-05-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -717,7 +708,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-05-17 (webcam)
+#: last_checked: 2023-05-25
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -792,7 +783,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022) (bis 31.10.2023)
 #: osm_watch: way id="137623800" version="27"
-#: osm_watch: way id="625667165" version="17"
+#: osm_watch: way id="625667165" version="18"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2023-05-11
@@ -920,7 +911,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023)
 #: also_indoor: traffic (ex-H,B,ex-G,W)
-#: last_checked: 2023-04-02
+#: last_checked: 2023-05-25
 #: check_frequency: 90d
 #: next_check: 2023-06-05
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
@@ -1469,8 +1460,9 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
 # REMOVED (hier Radweg) --- Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5761,8339 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358
+Volkspark Wilmersdorf: einige Fußgänger	q1- 5680,8355 5699,8308
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5401,8528 5405,8549
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5469,8524 5405,8549 5331,8581
@@ -4557,9 +4549,9 @@ Waldemarstr.: einige Fußgänger, Bordstein	q3 10464,20390 10475,20355
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/umgestaltung-des-schmollerplatzes-ist-geplant-aber-erst-ab-2025_a350879 (Erwähnung der Teileinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_40_2729_2764_online.pdf
-#: osm_watch: note 3390316 1
 #: XXX Bleibt die Komplettsperrung auch für Radfahrer?
 #: XXX Bleibt die Ausschilderung der TR4-Routenführung?
+# REMOVED (closed) --- #: osm_watch: note 3390316 1
 #: osm_watch: way id="856982239" version="5"
 #: last_checked: 2023-05-22
 #: check_frequency: 30d

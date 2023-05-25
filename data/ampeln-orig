@@ -59,7 +59,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: last_checked ^^^
 # 
 #: next_check_id: ORANIENBURGERTORTRAM-2022
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2023-07-31
 #: valid: -20230731
@@ -90,8 +90,8 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: next_check_id: HAEMMERLING-2022
 #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
 #: last_checked: 2023-05-13
-#: next_check: 2023-05-25
-#: valid: -20230615
+#: next_check: 2023-06-30
+#: valid: -20230630
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
@@ -3233,13 +3233,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich --- #: XXX eigentlich gibt es sogar zwei Fußgängerampeln --- #: last_checked: 2016-05-26 --- #: check_frequency: 60d ---	F::inwork 9812,12145
 # REMOVED --- #: next_check_id: INVALIDEN-2014 --- #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv --- #: XXX Aufhebung der Umleitungsstrecke ab 6. August --- werden die Ampeln ausgeschaltet? --- #: last_checked: 2015-08-10 vvv --- #: check_frequency: 7d vvv
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
-# 
-#: next_check_id: CHAUSSEE-2020
-#: last_checked: 2023-04-15
-#: check_frequency: 60d
-#: next_check: 2023-05-26
-	X::inwork 8732,14098
-# 
+# REMOVED (laut osm entfernt) --- #: next_check_id: CHAUSSEE-2020 --- #: last_checked: 2023-04-15 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 ---	X::inwork 8732,14098
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8870,13926
 # REMOVED (existiert nicht mehr) ---	X::inwork 8634,13588
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8426,13909
@@ -3564,12 +3558,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 5364,7330
 # 
-#: next_check_id: CHAUSSEE-2020
-#: osm_watch: node id="26748289" version="9"
-#: last_checked: 2023-05-18
-#: check_frequency: 60d
-#: next_check: 2023-05-26
-	X::inwork 8336,14586
+# REMOVED (bei osm entfernt) --- #: next_check_id: CHAUSSEE-2020 --- #: osm_watch: node id="26748289" version="10" --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 ---	X::inwork 8336,14586
 # 
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/schulneubau-bekommt-ampel_a189100 (2019, kein genauer Termin)

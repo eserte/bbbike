@@ -194,7 +194,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2023-05-07
+#: last_checked: 2023-05-25
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -206,7 +206,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2023-05-11 vvv
+#: last_checked: 2023-05-25 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -358,7 +358,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2023-04-16 (architektur-urbanistik) vvv
+#: last_checked: 2023-05-25 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -1859,13 +1859,20 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
-Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5806,8350 5761,8339 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: Parkweg	Q1 5469,8524 5405,8549 5331,8581
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
-#: XXX wird die Qualität nach den Bauarbeiten besser sein?
-#: last_checked: 2023-04-21
+#: XXX wird die Qualität nach den Bauarbeiten besser sein? vvv
+#: last_checked: 2023-05-25 vvv
+#: next_check: 2023-07-25 vvv
 # REMOVED --- #: next_check: 2023-04-15
-Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308 5687,8280 5700,8241 5730,8207
+Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308
+Volkspark Wilmersdorf: Parkweg	Q1- 5700,8241 5730,8207
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+Volkspark Wilmersdorf: neu gemachter Parkweg	Q1+ 5680,8355 5699,8308
+Volkspark Wilmersdorf: neu gemachter Parkweg	Q1+ 5699,8308 5687,8280 5700,8241
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8052
 (Volksparksteg - Volkspark Wilmersdorf): Parkweg	Q2 5401,8528 5405,8549
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
@@ -32241,4 +32248,5 @@ Einmündungsbereich asphaltiert	Q0 9985,18735
 Einmündungsbereich asphaltiert	Q0 15761,8257
 Einmündungsbereich asphaltiert	Q0 15708,8212
 Einmündungsbereich asphaltiert	Q0 15692,8198
+Einmündungsbereich mit Kopfsteinpflaster	Q2 6552,8281
 #: ignore ^^^

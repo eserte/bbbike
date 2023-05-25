@@ -46,6 +46,9 @@ my $isodate2epoch = sub {
 #: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
+#: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023)
+#: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023)
+#: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -64,7 +67,8 @@ my $isodate2epoch = sub {
 	3 9922,10010 9827,10051 9837,9856
 	3 9837,9856 9827,10051 9922,10010
 	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
+	2::temp 9837,9856 9723,9842
+# REMOVED (hier doch nicht) --- Baruther Str.	2::temp 9723,9842 9588,9827 9387,9804
 Johanniterstr.	2::temp 10066,10071 9837,10117
 Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
 EOF
@@ -27253,7 +27257,7 @@ EOF
 	2::bomb 5651,8218 5730,8207
 	2::bomb 5806,7796 5807,7771
 	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
-	2::bomb 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5660,8366
+	2::bomb 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366
 	2::bomb 6388,7999 6443,7971 6480,7992 6409,8026
 	2::bomb 6437,7968 6489,7908
 EOF
@@ -34890,7 +34894,7 @@ EOF
 #: last_checked: 2023-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="35"
+#: osm_watch: way id="4395450" version="36"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="20"
 	2::inwork 6631,12707 6694,12627
@@ -35391,9 +35395,8 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       #until => $isodate2epoch->("2023-03-21 00:00:00"),
-       until => $isodate2epoch->("2023-06-15 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: wegen Bauarbeiten gesperrt, mindestens bis 25.5.2023, möglicherweise bis Mitte Juni 2023',
+       until => $isodate2epoch->("2023-06-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr.: wegen Bauarbeiten gesperrt, voraussichtlich bis 30.6.2023',
        #text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
@@ -35403,6 +35406,8 @@ EOF
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 30.06.2023)
+#: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -35414,7 +35419,7 @@ EOF
 #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
 #: last_checked: 2023-05-13 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-05-25 vvv
+#: next_check: 2023-06-30 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
@@ -35457,16 +35462,15 @@ EOF
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-25 00:00:00") }, # 1 Tag Vorlauf
-       #from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-08-25 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2023?
-       text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September',
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-07-14 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2024?
+       text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Mitte Juli',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
        data  => <<EOF,
 #: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-22
-#: next_check: 2023-05-26
+#: last_checked: 2023-05-25
+#: next_check: 2023-08-25
 	q4::temp::play 12822,10487 12897,10439
 EOF
      },
@@ -35595,7 +35599,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen 2023-04-16 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: osm_watch: way id="791796343" version="5"
+# REMOVED (construction wurde entfernt) --- #: osm_watch: way id="791796343" version="6"
 #: last_checked: 2023-04-16
 #: check_frequency: 30d
 	q4::inwork 4961,12940 4932,12968
@@ -35703,7 +35707,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-05-24
+#: last_checked: 2023-05-25
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -36607,22 +36611,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1685038146, # undef, # XXX
        text  => 'Winterfeldtstr.: Bauarbeiten im Kreuzungsbereich Eisenacher Str., Fahrbahn gesperrt, möglicherweise bis Mai 2023',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (hier nicht mehr, aber vielleicht Bauarbeiten etwas weiter nördlich?) --- #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? --- #: also_indoor: traffic (none) --- #: last_checked: 2022-09-17 ---	q4::inwork; 6753,9814 6747,9912 6741,10017
 #: note: laut Bauschild der Wasserbetriebe bis Mai 2023
-#: also_indoor: traffic (B,G,W)
-#: last_checked: 2023-03-25 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-05-31 vvv
+# REMOVED --- #: also_indoor: traffic (B,G,W) --- #: last_checked: 2023-03-25 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-05-31 vvv
 # REMOVED (hier nicht mehr) --- Eisenacher Str.	q3::inwork 6739,10120 6741,10017 6747,9912
 Winterfeldtstr., westlicher Abschnitt	q3::inwork 6630,9990 6741,10017
 # REMOVED (hier nicht mehr) --- Winterfeldtstr., östlicher Abschnitt	q3::inwork 6741,10017 6903,10056
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -36961,14 +36960,13 @@ EOF
 EOF
      },
      { from  => undef, # 1665836837, # 2022-10-15 14:27
-       until => undef, # 1665993600, # 2022-10-17 10:00
+       until => 1685038451, # undef, # 1665993600, # 2022-10-17 10:00
        # SEV-Endstelle für den S-Bhf. Schöneberg
        text  => 'Ella-Barowsky-Str.: temporäre Einbahnstraßenregelung (Stand Mitte April 2023)', # möglicherweise wegen SEV?
        type  => 'handicap',
        source_id => 'https://sbahn.berlin/fahren/bauen-stoerung/detail/neubau-der-moltkestrassenbruecke-am-s-bf-botanischer-garten-reparatur-bahnsteigdach-in-friedenau/',
        data  => <<EOF,
-#: also_indoor: traffic (none)
-#: last_checked: 2023-04-21
+# REMOVED --- #: also_indoor: traffic (none) --- #: last_checked: 2023-04-21
 	q4::inwork; 7073,8081 7139,8079 7268,8008
 EOF
      },
@@ -37090,7 +37088,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-23
+#: last_checked: 2023-05-25
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37831,10 +37829,10 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 EOF
      },
      { from  => 1675576800, # 2023-02-05 07:00
-       until => $isodate2epoch->("2023-05-26 17:00:00"), # 1682694000, # 2023-04-28 17:00
+       until => 1685043916, # $isodate2epoch->("2023-05-26 17:00:00"), # 1682694000, # 2023-04-28 17:00
        text  => 'Barbarossastr.: Bauarbeiten zwischen Heilbronner Str. und Treuchtlinger Str., evtl. Beeinträchtigungen für Radfahrer, vom 06.02.2023 07:00 bis 26.05.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.339017,52.492299,06.02.2023,07:00',
+       source_id => 'viz2021:13.339017,52.492299,06.02.2023,07:00', # inaktiv
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/schoeneberg-barbarossastrasse-monatelang-gesperrt-id204159
 #: by: https://nitter.cz/VIZ_Berlin/status/1622905331079692289#m
@@ -37894,14 +37892,20 @@ EOF
      },
      { from  => 1676329200, # 2023-02-14 00:00
        until => undef, # 1681595999, # 2023-04-15 23:59
-       text  => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand April 2023)',
+       text  => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand Mai 2023), voraussichtlich bis Ende Juli 2023',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
-#: last_checked: 2023-04-21
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
+#: last_checked: 2023-05-25 vvv
+#: next_check: 2023-07-25 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
-	2::inwork 5730,8207 5700,8241 5687,8280 5699,8308
+	2::inwork 5730,8207 5700,8241
+# REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
+	q4::inwork 5730,8207 5918,8221
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1676361600, # 2023-02-14 09:00
@@ -38755,7 +38759,7 @@ EOF
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
 #: osm_watch: note 3695963 3
-#: last_checked: 2023-05-24 vvv
+#: last_checked: 2023-05-25 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
