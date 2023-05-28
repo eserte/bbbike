@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-05-25 vvv
+#: last_checked: 2023-05-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -32,42 +32,18 @@ Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der 
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="3"
 #: osm_watch: way id="36987812" version="14"
+#: also_indoor: traffic (W,G)
 #: last_checked: 2023-05-17
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B)
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-13
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
-# 
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate)
-#: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
-#: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
-#: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m
-#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-220523/ (bis 26.05.2023)
-#: by: https://nitter.cz/VIZ_Berlin/status/1660499223828402181#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcTdIZ1dZQUlvMjc5LmpwZw==
-#: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv)
-#: source_id: bvg2021:m43#BVG315520_0
-#: source_id: bvg2021:m43#BVG321058_0
-#: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv)
-#: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023)
-#: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023)
-#: source_id: viz2021:13.470533,52.504112,22.05.2023,06:00 (unklare Verkehrsmeldung, bis 26.05.2023)
-#: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+); bei der neuerlichen Sperrung gibt es nun doch Radfahrer-frei-Schilder, allerdings recht schmal
-#: last_checked: 2023-05-22
-#: next_check: 2023-05-26
-#: valid: -20230526
-An der Mole: Einbahnstraßenregelung, für Radfahrer offen	q2::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
-# 
-#: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023)
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw==
-#: next_check: 2023-05-26
-#: valid: -20230526
-Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
-# 
+# REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate) --- #: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m --- #: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg --- #: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m --- #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-220523/ (bis 26.05.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660499223828402181#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcTdIZ1dZQUlvMjc5LmpwZw== --- #: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv) --- #: source_id: bvg2021:m43#BVG315520_0 --- #: source_id: bvg2021:m43#BVG321058_0 --- #: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv) --- #: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023) (inaktiv) --- #: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023) (inaktiv) --- #: source_id: viz2021:13.470533,52.504112,22.05.2023,06:00 (unklare Verkehrsmeldung, bis 26.05.2023) (inaktiv) --- #: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+); bei der neuerlichen Sperrung gibt es nun doch Radfahrer-frei-Schilder, allerdings recht schmal --- #: last_checked: 2023-05-22 --- #: next_check: 2023-05-26 --- #: valid: -20230526 --- An der Mole: Einbahnstraßenregelung, für Radfahrer offen	q2::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
+# REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023) --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw== --- #: next_check: 2023-05-26 --- #: valid: -20230526 --- Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
 # REMOVED (wieder offen) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: XXX Datensatz in gesperrt-orig beachten! --- #: also_indoor: traffic (ex-B,G(falsch)) --- #: last_checked: 2022-05-06 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2022-04-01 vvv --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
 # REMOVED (Radfahrer frei-Schild existiert mittlerweile) --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
@@ -348,7 +324,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus, nicht am House of One
-#: last_checked: 2023-05-16
+#: last_checked: 2023-05-27 (daf)
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -637,12 +613,12 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 #: osm_watch: way id="30195541" version="35"
 #: osm_watch: way id="1101061991" version="8"
 #: osm_watch: way id="310164489" version="27"
-#: last_checked: 2023-05-15 (osm)
+#: last_checked: 2023-05-26 (bahninfo-forum)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
 #: source_id: bvg2021:101#BVG301286_0
-#: osm_watch: way id="4571954" version="30"
+#: osm_watch: way id="4571954" version="31"
 #: last_checked: 2023-05-15 (osm)
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
@@ -981,6 +957,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/neubau-der-moltkebruecke-s1-unterbrochen-id213531
 #: by: https://nitter.cz/VIZ_Berlin/status/1639304567061102592#m
 #: by: https://www.stadtrand-nachrichten.de/moltkebruecke/
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/buerger-machen-sich-gedanken-ueber-die-zukunft-ihres-wohnviertels-am-botanischen-garten_a382252
 #: XXX Neubau der Brücke, laut osm bis 2024
 #: osm_watch: way id="13860352" version="25"
 #: osm_watch: way id="1056377427" version="2"

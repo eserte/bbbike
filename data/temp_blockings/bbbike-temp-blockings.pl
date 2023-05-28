@@ -30382,7 +30382,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-22 vvv
+#: last_checked: 2023-05-28 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -30767,12 +30767,12 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021) (inaktiv)
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2023-05-18
 #: check_frequency: 30d
-#: next_check: 2023-05-31
+#: next_check: 2023-06-30
 	q4::inwork; 11329,12497 11202,12426
 EOF
      },
@@ -32801,7 +32801,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2022-10-31 (daf)
+#: last_checked: 2023-02-26 (baustellen-doku)
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2023-10-01
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
@@ -33410,8 +33410,9 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
 #: source_id: viz2021:13.19772,52.52281,24.10.2022,12:12 (bis 29.04.2023) (inaktiv)
-#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023) (bis 26.05.2023)
+#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023) (bis 26.05.2023) (inaktiv)
 #: source_id: bvg2021:m36#BVG279266_0
+#: also_indoor: traffic (G,W,B)
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3); laut rbb nun bis 31.7.2023
 # REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
 # REMOVED ---	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
@@ -34956,7 +34957,7 @@ EOF
      },
      { from  => 1645336800, # 2022-02-20 07:00
        until => undef, dont_check_date => 1, # $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
-       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens 31.01.2023 17:00, vermutlich noch länger',
+       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens Mitte 2023, vermutlich noch länger',
        type  => 'handicap',
        source_id => 'viz2021:13.452362,52.470898,21.02.2022,07:00', # bis 31.12.2022, mittlerweile bis 31.1.2023, bis 2.6.2023
        data  => <<EOF,
@@ -35287,7 +35288,7 @@ EOF
        text  => 'Ravensberger Str.: Einbahnstraßenregelung', # was: 'Zähringerstr.: Einbahnstraßenregelung', # früher: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
        type  => 'handicap',
        data  => <<EOF,
-#: osm_watch: way id="874517258" version="9"
+#: osm_watch: way id="874517258" version="10"
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
@@ -36400,12 +36401,12 @@ EOF
 EOF
      },
      { from  => 1658970000, # 2022-07-28 03:00
-       until => $isodate2epoch->("2023-05-31 17:00:00"), # 1666969200, # 2022-10-28 17:00
-       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 31.05.2023',
+       until => $isodate2epoch->("2023-12-31 17:00:00"), # 1666969200, # 2022-10-28 17:00
+       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, voraussichtlich bis Ende 2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00', # bis 31.5.2023
+       source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00', # bis 31.5.2023 # bis 31.12.2023
        data  => <<EOF,
-#: source_id: viz2021:13.32149,52.49982,29.12.2022,09:28 (bis 25.2.2023) (später am Tag wieder entfernt)
+#: source_id: viz2021:13.32149,52.49982,29.12.2022,09:28 (bis 25.2.2023) (später am Tag wieder entfernt -> inaktiv)
 #: also_indoor: traffic (H,G,B,W)
 #: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
 	q3::inwork; 4838,10597 4819,10355
@@ -36495,7 +36496,7 @@ EOF
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023)
 #: last_checked: 2023-01-10
 #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
@@ -36576,7 +36577,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-24 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -36808,7 +36809,7 @@ EOF
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-05-12 vvv
+#: last_checked: 2023-05-24 (mapillary) vvv
 #: next_check: 2023-06-15 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -37695,7 +37696,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="1155654228" version="6"
+#: osm_watch: way id="1155654228" version="7"
 #: last_checked: 2023-05-21 (osm)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
@@ -38644,7 +38645,7 @@ EOF
        until => 1684764000, # 2023-05-22 16:00
        text  => 'Glienicke: Bauarbeiten zwischen Oranienburger Chaussee und Paul-Singer-Str., Sperrung vom 08.05.2023 08:00 Uhr bis 22.05.2023 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => '236500970',
+       source_id => '236500970', # inaktiv
        data  => <<EOF,
 	2::inwork 6063,25197 5198,24863
 EOF
@@ -38730,13 +38731,15 @@ EOF
      },
      { from  => $isodate2epoch->("2023-05-26 05:00:00"),
        until => $isodate2epoch->("2023-05-29 23:00:00"),
-       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Straße vermutlich gesperrt, vom 27.05.2023 bis 29.05.2023',
+       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn zwischen Marathonallee und Badenallee gesperrt, vom 27.05.2023 bis 29.05.2023',
        periodic => 1,
        recurrences => [['yearly', days => 27, months => 5]],
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
-	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+#: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
+	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607
 EOF
      },
      { from  => 1684036800, # 2023-05-14 06:00
@@ -38759,7 +38762,7 @@ EOF
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
 #: osm_watch: note 3695963 3
-#: last_checked: 2023-05-25 vvv
+#: last_checked: 2023-05-28 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -38842,6 +38845,15 @@ EOF
        source_id => 'viz2021:13.26594,52.535571,24.05.2023,07:00',
        data  => <<EOF,
 	q4::inwork 931,14268 968,14263 1023,14259
+EOF
+     },
+     { from  => 1685340000, # 2023-05-29 08:00
+       until => 1688133600, # 2023-06-30 16:00
+       text  => 'B 109: Bauarbeiten zwischen Fährkrug und Kreuzkrug, Sperrung, von 30.05.2023 08:00 Uhr bis 30.06.2023 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/221-E/23/067',
+       data  => <<EOF,
+	2::inwork 21990,83613 21913,83553 21653,83374 20786,82828 20424,82312 20037,82044 19703,81641 19597,81551
 EOF
      },
     );

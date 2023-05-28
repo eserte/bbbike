@@ -401,6 +401,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1327423.php
 #: by: https://berliner-abendblatt.de/berlin-news/friedrichstrasse-ab-juli-wieder-fuer-autos-befahrbar-id222141
 #: by: https://viz.berlin.de/2023/05/friedrichstr/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/ueberraschende-kehrtwende-im-streit-um-die-friedrichstrasse_a382411
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
@@ -896,7 +897,7 @@ Potsdamer Str. (Schˆneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
 #: XXX wird die Straﬂe zur Fuﬂg‰ngerzone?
 #: osm_watch: way id="4597334" version="27"
-#: last_checked: 2023-04-25
+#: last_checked: 2023-05-24 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
@@ -1402,7 +1403,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgel‰nde"
 #: osm_watch: way id="491906864" version="15"
 #: priority: #C
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-25 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraﬂe C	N 12926,11224 12848,11093
@@ -1829,7 +1830,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straﬂe heiﬂen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraﬂe) --- #: XXX wird es Einschr‰nkungen f¸r den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: last_checked: 2023-05-18
+#: last_checked: 2023-05-25 (mapillary)
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porsch¸tz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -4651,7 +4652,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="14"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 10
-#: last_checked: 2023-03-27 (mapillary)
+#: last_checked: 2023-05-28
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7264,19717 7273,19682
@@ -10825,7 +10826,8 @@ Germanenplatz	N 20381,1390 20406,1465
 Germanenstr. (Altglienicke)	N 19955,1502 19972,1505 20226,1416 20340,1401 20365,1394 20381,1390 20539,1285 20647,1208 20694,1175 20813,1014 20836,982 20850,963 20960,819 21089,639 21116,605 21139,568 21164,476 21182,436
 Am Seegraben (Bohnsdorf, Altglienicke)	HH 19618,-1021 19815,-909 19894,-835 19996,-740 20205,-548
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7477 (Benennung zu "Am Seegraben"?)
-#: XXX Bekommt die Straﬂe den Namen "Am Seegraben"?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_23_2333_2480_online.pdf (Benennung)
+#: XXX Die Straﬂe bekommt den Namen "Am Seegraben"
 #: next_check: 2023-06-29
 (B96a)	HH 20205,-548 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21506,1768
 (B96a)	NN 21829,1351 21874,1511 21881,1513
