@@ -19,7 +19,7 @@ use lib "$FindBin::RealBin/..";
 use CGI;
 use BBBikeVar;
 
-use constant DEFAULT_SNAPSHOT_IS_LOCAL => 0;
+use constant DEFAULT_SNAPSHOT_IS_LOCAL => 1;
 
 my $q = CGI->new;
 
