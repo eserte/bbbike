@@ -78,7 +78,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8374 (Festsetzung)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="21"
-#: last_checked: 2023-05-25
+#: last_checked: 2023-05-29
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -198,7 +198,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="20"
-#: last_checked: 2023-03-05 (mapillary)
+#: last_checked: 2023-05-29
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -1323,7 +1323,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023) (bis 30.5.2023) (bis 31.5.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2023-05-25
+#: last_checked: 2023-05-29
 #: check_frequency: 60d
 #: next_check: 2023-05-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1497,6 +1497,11 @@ Am Feuchten Winkel	1 12020,19333 11937,19175
 Hauptstr.: Mittelstreifen, unbequemes Überqueren	3nocross 15261,10738 15163,10758 15004,10791
 # 
 Wildmeisterdamm	1 15207,2313 15143,2315
+# 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
+# REMOVED --- #: osm_watch: note 3346008 1
+#: corrected_by: srt (Einbahnstraße auch für Radfahrer)
+Brixplatz	1 179,12434 269,12462 329,12503
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1962,6 +1967,8 @@ Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16090,10141 16117,10120 16138,
 #: confirmed_by: srt
 Kniprodestr.: Grünstreifen	3nocross 13647,14912 13744,15018 13823,15111
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
+#: note: Kategorie "eher nicht empfehlenswert": fünf Fahrspuren, keine Mittelinsel, auf der südlichen Seite existiert keine Durchfahrt zur Nebenfahrbahn und Frankenallee (Bordsteine, Gras)
+Heerstr.: nicht überquerbar	3nocross 1051,11311 1206,11324 1381,11335
 Heerstr.: nicht überquerbar	3nocross 504,11243 571,11255 683,11270
 Heerstr.: Mittelstreifen	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
 #: by: Sabine (schaeffler)
@@ -2782,7 +2789,9 @@ tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
 #: next_check_id: MACHANDELWEG-2022
 #: add_fragezeichen Wie viele Stufen sind hier?
 #: XXX Bleibt es bei der Treppe nach den Bauarbeiten?
-#: next_check: 2023-03-17
+#: last_checked: 2023-05-29
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2023-03-17
 tragen	0:30 -45,12243
 tragen (Treppe, 14 Stufen)	0:25 -1667,16828
 tragen (Treppe, 31 Stufen)	0:30 17983,8960
@@ -3549,6 +3558,7 @@ weites Drängelgitter	BNP:2::trailer=7 3002,18971
 Drängelgitter	BNP:3::trailer=10 10475,20355
 weites Drängelgitter	BNP:2::trailer=7 15698,8903
 weites Drängelgitter	BNP:2::trailer=7 16369,8836
+Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5::trailer=15 3135,12101
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3723,7 +3733,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="2"
-#: last_checked: 2023-04-15 (Baustraße existiert noch)
+#: last_checked: 2023-05-29 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -3861,7 +3871,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-05-21
+#: last_checked: 2023-05-29
 #: check_frequency: 60d
 #: next_check: 2023-10-31
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
@@ -4413,7 +4423,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-05-28
+#: last_checked: 2023-05-29
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4912,7 +4922,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="4"
-#: last_checked: 2023-04-16
+#: last_checked: 2023-05-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
@@ -4934,7 +4944,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="9"
-#: last_checked: 2023-05-18
+#: last_checked: 2023-05-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-04-13
 #: also_indoor: traffic (ex-G)
@@ -5044,7 +5054,7 @@ Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5056,7505 5147,7505 5188,7536
 (Zur Dillenburger Str.)	1 3784,6985 3910,6949 3944,6901 3981,6850
-Dillenburger Str.	1 3947,6814 3837,6926 3784,6985
+Dillenburger Str.	1 3947,6814 3855,6918 3784,6985
 Drängelgitter	BNP:5 3596,7199
 Am Wieselbau	1 310,5084 310,4924
 Am Fuchspaß	1 388,4951 389,5111

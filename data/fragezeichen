@@ -842,7 +842,6 @@ Mühlenstr. (Dallgow-Döberitz): Qualität?	? -14055,13775 -14057,13830 -14060,1388
 Feldstr. (Dallgow-Döberitz): Qualität?	? -14633,14358 -14737,14356 -14821,14299 -14883,14246
 Döberitz - Elstal: Qualität?	? -14821,14299 -15013,14417 -15467,14476 -15733,14666 -15997,14714 -16080,14680 -16152,14690
 Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden?	? 30512,7909 30454,7670 30495,7350
-Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
 Mozartstr.: Qualität des südlichen Abschnitts?	? 8334,26287 8348,26449
 Tegeler Str. (Falkensee): Qualität?	? -10088,17984 -10150,17988 -10292,17929 -10374,17869 -10417,17770
 Trampe - Kruge: Qualität?	? 39683,40892 40258,40191 41298,39991 41731,39846
@@ -888,9 +887,6 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Fürstendamm: Asphalt mit einigen Schäden (Sind die Bauarbeiten hier beendet? Wurde die Fahrbahn neu gemacht?)	? 3490,24887 3550,24887 3741,24942 3754,24946
-Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33327,2979 33296,2894
-Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33167,2940 33296,2894 33406,2852 33503,2818
-Abendseglersteig: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33406,2852 33383,2792 33267,2810 33139,2835 33167,2940
 # added from qualitaet_l
 Heckelberg - Beerbaum: etwas welliger Asphalt (Ist die Fahrbahnqualität nach den Bauarbeiten besser geworden?)	? 39402,37410 39156,37578 38986,37512 38171,37238 37672,36908 36605,36450 36523,36465 36359,36493
 Ortsdurchfahrt Beerbaum: schlechtes Kopfsteinpflaster (Ist die Fahrbahnqualität nach den Bauarbeiten besser geworden?)	? 36000,36534 36215,36497 36307,36503 36359,36493
@@ -954,11 +950,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
-tragen (Wie viele Stufen sind hier?)	? -45,12243
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
-# added from gesperrt_car
-Brixplatz (Ist die Einbahnstraße für Radfahrer offen?)	? 179,12434 269,12462 329,12503
-Brixplatz (Ist die Einbahnstraße für Radfahrer offen?)	? 419,12397 335,12343 208,12305
 # added from comments_cyclepath
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden) (Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?)	? 43162,14428 42996,14793
 (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
@@ -983,5 +975,7 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen Prenzlau und Güstow einen straßenbegleitenden Radweg? Wenn ja: auf welcher Seite und ist der Radweg asphaltiert?)	? 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 # added from bbbike-temp-blockings-optimized
 Wielandstr.: Einbahnstraße zwischen Kantstr. und Pestalozzistr., offen Richtung Norden, Ende der Bauarbeiten unbekannt (Wann wird die Einbahnstraßenregelung wieder aufgehoben?)	? 4434,11227 4415,11050
-Pascalstr.: Fahrbahn zwischen Heisenbergstr. und Schlesingerstr. wegen Hochbauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet?)	? 4961,12940 4932,12968
+Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt Roedeliusplatz (Bis wann gehen die Bauarbeiten?)	? 16248,12177 16158,12191
+Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt Magdalenenstr., nördlicher Abschnitt (Bis wann gehen die Bauarbeiten?)	? 16158,12191 16166,12292
+Roedeliusplatz/Magdalenenstr.: Arbeiten im Einmündungsbereich, Fahrbahn gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt Magdalenenstr., südlicher Abschnitt (Bis wann gehen die Bauarbeiten?)	? 16158,12191 16127,11950
 Götelstr.: Bauarbeiten, Fahrbahn zwischen Betckestr. und Weverstr. gesperrt (Stand Mitte April 2023), Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? -3269,12406 -3260,12540

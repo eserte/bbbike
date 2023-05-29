@@ -46,6 +46,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 1553
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
+Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
@@ -367,7 +368,7 @@ Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,1014
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
 (Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4 9702,10129 9827,10051
-Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3258,12035 3295,12068
+Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
 (Fritz-Bräuning-Promenade): Bordstein, Fußgänger	q3 8731,8020 8623,8018
@@ -2117,7 +2118,7 @@ Einstein-Park: einige Fußgänger	q2 13163,14924 13207,14998 13204,15062
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10209,14996 10215,14977
 (Karstadt-Parkplatz): einige Fußgänger	q1 11775,9234 11767,9026
 Neuchateller Str.: einige Fußgänger	q2 3898,4490 3951,4521
-Auguste-Viktoria-Str.: nicht ganz abgeflachte Bordsteine	q2 2640,8014 2642,8040
+Auguste-Viktoria-Str.: nicht ganz abgeflachte Bordsteine	q3 2640,8014 2642,8040
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): verschmutzt, Glasscherben	q2 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 (Schulstr. - Waldbacher-Weg-Brücke): Fußgänger, Bordstein	q4 20368,11937 20374,11949
 (Schulstr. - Waldbacher-Weg-Brücke): Fußgänger	q3 20374,11949 20334,12022
@@ -2335,7 +2336,7 @@ Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307
 Max-und Herta-Naujocks-Weg: Fußgänger, schmaler Weg	q2 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
 Max-und Herta-Naujocks-Weg: einige Fußgänger	q1 16163,18780 16325,18796 16216,19183
 (Einkaufszentrum Lagunenweg): Fußgänger	q2 31762,3202 31650,3218
-(Mausohrweg - R1): Bordsteine, Fußgänger	q3 33296,2894 33267,2810 33255,2762
+(Mausohrweg - R1): einige Fußgänger	q1 33296,2894 33267,2810 33255,2762
 Haydnstr. - Märkische Allee: Bordsteine, einige Fußgänger	q3 19995,11795 19979,11774
 Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15737,3609 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
 (Tornower Weg - Wilhelmsruher Damm): einige Fußgänger	q1 6519,21002 6565,21004

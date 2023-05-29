@@ -950,6 +950,7 @@ Südring, Virchow-Klinikum	1 6252,14812 6231,14952
 Am Feuchten Winkel	1 12020,19333 11937,19175
 Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 15261,10738 15163,10758 15004,10791
 Wildmeisterdamm	1 15207,2313 15143,2315
+Brixplatz	1 179,12434 269,12462 329,12503
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1389,6 +1390,13 @@ Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13758,15009 13744,15018
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
+nicht überquerbar	3nocross::ignrte 1051,11311 1206,11324 1381,11335
+Bayernallee -> Heerstr.: nicht überquerbar	3::igndisp 1177,11382 1206,11324 1381,11335
+Bayernallee -> Frankenallee: nicht überquerbar	3::igndisp 1177,11382 1206,11324 1203,11221
+Heerstr. -> Frankenallee: nicht überquerbar	3::igndisp 1381,11335 1206,11324 1203,11221
+Heerstr. -> Bayernallee: nicht überquerbar	3::igndisp 1051,11311 1206,11324 1177,11382
+Frankenallee -> Bayernallee: nicht überquerbar	3::igndisp 1203,11221 1206,11324 1177,11382
+Frankenallee -> Heerstr.: nicht überquerbar	3::igndisp 1203,11221 1206,11324 1051,11311
 nicht überquerbar	3nocross::ignrte 504,11243 571,11255 683,11270
 Mittelstreifen	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4030,11794 -4033,11786 -3820,11721
@@ -3298,6 +3306,7 @@ weites Drängelgitter	BNP:2:-225:trailer=7 3002,18971
 Drängelgitter	BNP:3:-196:trailer=10 10475,20355
 weites Drängelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
+Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, Zugang zur Rüdersdorfer Str. ist gesperrt	2::inwork 12788,11898 12891,12008
 Falkenberger Str. - Hansastr: Bauarbeiten, gesperrt	2::inwork 15819,16857 15892,16834
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555
@@ -3422,7 +3431,7 @@ Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5056,7505 5147,7505 5188,7536
 (Zur Dillenburger Str.)	1 3784,6985 3910,6949 3944,6901 3981,6850
-Dillenburger Str.	1 3947,6814 3837,6926 3784,6985
+Dillenburger Str.	1 3947,6814 3855,6918 3784,6985
 Drängelgitter	BNP:5:-165 3596,7199
 Am Wieselbau	1 310,5084 310,4924
 Am Fuchspaß	1 388,4951 389,5111

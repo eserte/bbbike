@@ -63,7 +63,7 @@ Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5810,11902 5900,11913
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
 Fasanenstr.	1 5192,10241 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
-Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
+Naumannstr. N - H	3 7707,8919 7709,8777 7713,8600
 zum Mariannenplatz	2 11944,11152 11917,11186
 # ... kompliziert ... mit vorgeschriebenen Fahrtrichtungen hätte man
 # sich die Hälfte gespart ...
@@ -181,10 +181,10 @@ Heylstr.	1 6459,8281 6385,8274 6313,8254
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
 Gutzkowstr.	1 6785,8194 6634,8134
 Gleditschstr.	1 7124,9226 7118,9315
-Hohenfriedbergstr.	3 7791,8882 7790,8913 7790,9126
-Hohenfriedbergstr.	3 7790,9126 7790,8913 7791,8882
-Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8913 7707,8915
-Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7790,9126
+Hohenfriedbergstr.	3 7791,8882 7790,8918 7790,9126
+Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
+Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
+Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
 Filandastr.	3nocross 5676,5488 5675,5573 5673,5664 5672,5751
 Gelnitzstr.	1 22885,5835 22900,5740
@@ -888,7 +888,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="19"
-#: last_checked: 2023-04-02
+#: last_checked: 2023-05-29
 #: check_frequency: 60d
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
@@ -959,7 +959,7 @@ Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14185,9509
 Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912
 Am Treptower Park - Elsenstr.	3 14185,9509 14089,9610 13973,9465
-Czeminskistr.	1 7604,8927 7563,8871
+Czeminskistr.	1 7600,8921 7563,8871
 Berlinickestr.	1 5080,5498 5016,5401
 Sembritzkistr.: nur für Radfahrer	3 * 7199,5479 *
 Egon-Erwin-Kisch-Str. [Wohngebiet]: Schranke (für Autofahrer)	3 * 17067,19004 *
@@ -1152,12 +1152,10 @@ Goebelplatz	1 1974,14646 1974,14565
 # 
 # REMOVED (offen) --- #: last_checked: 2016-10-02 --- #: next_check: 2017-02-01 --- #: XXX laut osm access=no außer für Fußgänger/Radfahrer --- #: osm_watch: way id="311371554" version="6" --- Clara-Immerwahr-Str.: Bauzäune, Fußgänger und Radfahrer können aber passieren	2::inwork 19202,17471 19542,17344 19798,17263 19845,17235 19914,17203
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
-#: osm_watch: note 3346008 1
-#: add_fragezeichen: Ist die Einbahnstraße für Radfahrer offen?
-Brixplatz	1 179,12434 269,12462 329,12503
 #: by: osm
-#: osm_watch: note 3346008 1
-#: add_fragezeichen: Ist die Einbahnstraße für Radfahrer offen?
+# REMOVED --- #: osm_watch: note 3346008 1
+#: confirmed_by: srt
+# REMOVED (ja) --- #: add_fragezeichen: Ist die Einbahnstraße für Radfahrer offen?
 Brixplatz	1 419,12397 335,12343 208,12305
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: confirmed_by: kartonage (osm)
@@ -1173,7 +1171,7 @@ Ubierstr.	1 1310,11193 1278,11087
 #: confirmed_by ^^^
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4509&options=4 (Einbahnstraßenregelung für alle)
 #: by: kartonage (osm) (Aufhebung für Radfahrer)
-Westendallee	1 461,11455 425,11455 395,11486 329,11696 323,11801
+Westendallee	1 461,11455 425,11455 395,11486 329,11696 320,11810
 #: by ^^^
 Barsstr.	1 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
@@ -1230,7 +1228,7 @@ Kiehlufer	1 12913,9353 12901,9340 12895,9323
 # 
 # REMOVED (Sperrung beendet) --- #: osm_watch: way id="454034985" version="5" --- #: next_check_id: DIESEL-2015 --- #: XXX laut osm wieder offen --- #: last_checked: 2018-05-21 --- #: next_check: 2018-05-24 --- Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf --- #: XXX evtl wird die Straße für Radfahrer geöffnet --- #: osm_watch: way id="12307305" version="4" --- #: last_checked: 2017-08-22 --- #: check_frequency: 60d
-Naumannstr.	1 7709,8777 7707,8915
+Naumannstr.	1 7709,8777 7707,8919
 Schulenburgring	1 9030,8431 9028,8584 9011,8605
 #: by: mapillary
 Vereinssteg	1 8340,18984 8406,19081
@@ -1669,7 +1667,7 @@ Alt-Lankwitz	2:Anlieger 7407,3473 7419,3500 7236,3605 7012,3743
 #: osm_watch: way id="152832871" version="23"
 #: osm_watch: way id="1132383957" version="1"
 #: priority: #C
-#: last_checked: 2023-01-17 (mapillary)
+#: last_checked: 2023-05-29
 #: check_frequency: 120d
 Abbestr.	2 4674,12076 4698,12124
 # 
@@ -1848,4 +1846,7 @@ Dammweg: durch Barrieren für den Autoverkehr gesperrt	2 15869,8355 16388,8821
 Berliner Str. (Tegel): Mittelstreifen	3nocross 2169,20095 2224,20007 2268,19919
 # 
 Schmollerplatz	1 13270,9518 13298,9491 13234,9426 13178,9363 13206,9335
+# 
+#: note: für Fußgänger existiert ein Übergang
+Hohenzollerndamm	3nocross 2539,8196 2661,8307 2713,8357
 # 

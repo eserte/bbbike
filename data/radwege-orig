@@ -439,7 +439,8 @@ die letzten Meter werden auf der Fahrbahn geführt und sind benutzungspflichtig	R
 	RW2;RW1 1821,11408 1625,11380 1574,11379
 #: by: ^^^
 	RW2; 4737,11768 4781,11708 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768
-	RW2;RW1 4854,11843 4846,11989
+	RW2; 4854,11843 4846,11989
+abschnittsweise mit für Radfahrer freigegebener Busspur, Busspur ist immer gültig	RW1; 4846,11989 4854,11843
 	RW1;RW1 4846,11989 4921,12148 4973,12256
 	RW4;RW4 4973,12256 4993,12291 5013,12323
 	RW3; 5013,12323 5081,12458
@@ -659,10 +660,12 @@ für Radfahrer freigegebene Busspur gilt 6-21 Uhr	RW1; 4238,12067 4356,12009 4507
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4507,11936 4596,11912 4653,11896 4689,11886
 	RW2; 4689,11886 4763,11834
 #: note: Otto-Suhr-Allee Richtung NW
-	RW2; 4763,11834 4689,11886 4653,11896 4596,11912 4507,11936 4356,12009
-für Radfahrer freigegebene Busspur gilt Mo-Fr 9-20 Uhr	RW1; 4356,12009 4238,12067 4032,12167
+#: note: Benutzungspflichtig hier nicht klar, eine Wiederholung der Schilder vom Ernst-Reuter-Platz erfolgt nicht
+Gehwegplatten	RW2; 4763,11834 4689,11886 4653,11896 4596,11912 4507,11936
+#: historical_note: früher hier benutzungspflichtig; Busspur mit eingeschränkter Gültigkeit Mo-Fr 9-20 Uhr
+Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4507,11936 4356,12009 4238,12067 4032,12167
 #: historical_note: früher hier benutzungspflichtig
-	RW1; 4032,12167 4000,12183 3761,12298
+Gehwegplatten	RW1; 4032,12167 4000,12183 3761,12298
 #: historical_note: früher (vor Mai 2023) eingeschränkte Gültigkeit Mo-Fr 9-20 Uhr
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 3761,12298 3612,12377 3472,12447 3416,12473
 	RW1; 3416,12473 3350,12502
@@ -759,7 +762,7 @@ neu asphaltiert, etwas breiter	RW2; 3291,12721 3269,12648 3271,12609 3279,12533
 #: historical_note: früher RW1
 	RW0; 7172,13051 7346,13022
 #: historical_note: früher RW1
-	RW3?; 7346,13022 7172,13051
+	RW4; 7346,13022 7172,13051
 	RW1; 5490,17173 5411,17242
 # 
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Tegel
@@ -1259,7 +1262,7 @@ alte Gehwegplatten, Bord gegen Gehweg	RW2; 6787,12099 6831,12150 7001,12274 7031
 	RW1;RW3 -927,6888 -739,6838
 asphaltiert, Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 Verbundsteinpflaster, Unebenheiten	RW2;RW8 2688,7067 2576,7026 2465,6984 2397,6960 2266,6911 2155,6873 2130,6865 2052,6847 1960,6826
-	RW2; 3947,6814 4021,6729
+Verbundsteinpflaster	RW2; 3855,6918 3947,6814 4021,6729
 Verbundsteinpflaster	RW1; 4021,6729 4074,6681 4111,6651 4218,6583
 Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 	RW2; 4423,6477 4347,6551 4248,6620 4141,6688
@@ -1702,7 +1705,7 @@ Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 	RW1;RW2 2058,11756 1747,11719
 	RW1;RW1 2609,11503 2583,11613 2566,11708
 	RW2;RW1 2566,11708 2547,11788
-	RW1;RW1 2547,11788 2489,12014 2460,12163 2440,12264 2437,12283 2417,12401 2411,12428
+Gehwegplatten	RW1;RW1 2547,11788 2485,12032 2460,12163 2440,12264 2437,12283 2417,12401 2411,12428
 	RW1;RW1 2058,11756 2047,11873 1999,12207 1969,12375
 	RW1;RW2 889,14392 931,14268
 asphaltiert	RW1;RW1 931,14268 984,14086 1010,13972
@@ -5152,11 +5155,11 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW1;RW1 3042,7465 3084,7599 3094,7790 3107,7997 3108,8052 3117,8248
 	RW0;RW1 3117,8248 3218,8233 3230,8230 3332,8207 3665,8131 3779,8105
 	RW1;RW1 3779,8105 4106,8031
-	RW3;RW3 3159,11562 3144,11659 3117,11852 3103,11968 3091,12071 3072,12222 3060,12311 3048,12413 3033,12509
+	RW3;RW3 3159,11562 3144,11659 3117,11852 3103,11968 3088,12094 3072,12222 3060,12311 3048,12413 3033,12509
 	RW1;RW1 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 	RW1; 3534,13098 3645,13206
 	RW2;RW2 19004,11780 19092,11776 19389,11761
-	RW6;RW6 2641,12458 2658,12312 2672,12190 2689,12042 2728,11805 2739,11730
+	RW6;RW6 2641,12458 2658,12312 2672,12190 2686,12051 2728,11805 2739,11730
 	RW1; 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691
 # REMOVED (vermutlich wieder der alte Zustand) --- #: next_check_id: BAHNHOF-2021 --- #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/ --- #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg --- #: last_checked: 2022-05-17 (mapillary) --- #: check_frequency: 60d --- #: next_check: 2022-05-23
 # REMOVED (temporärer Eintrag) ---	RW0; 12723,20691 12672,20720
@@ -5284,7 +5287,7 @@ asphaltiert	RW10; 21289,4563 21206,4387
 	RW6;RW6 -1948,1819 -1984,1911 -2014,1981 -2046,2070 -2060,2105
 Verbundsteinpflaster	RW1;RW1 -2280,2177 -2208,2010 -2174,1933
 Verbundsteinpflaster	RW1; -2124,1780 -2146,1849 -2174,1933
-	RW6;RW6 3091,12071 2924,12047 2689,12042 2489,12014
+	RW6;RW6 3088,12094 2920,12070 2686,12051 2485,12032
 	RW2;RW2 16891,3129 16929,3172 16952,3197 16964,3210 16991,3241 17142,3393
 	RW1;RW1 17142,3393 17253,3496 17364,3565 17377,3571
 kurzes Stück Radweg zur Kreuzung Stubenrauchstr. hin	RW0;RW0 17364,3565 17219,3795 17053,3971
@@ -5385,7 +5388,7 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 2460,12163 2672,12190 2895,12217
 	RW6;RW6 2899,12200 3072,12222
 	RW6;RW6 2817,12334 2888,12292 3060,12311
-	RW6;RW6 2953,11830 2924,12047 2899,12200 2895,12217 2888,12292
+	RW6;RW6 2953,11830 2920,12070 2899,12200 2895,12217 2888,12292
 	RW6;RW6 2953,11830 2956,11790
 	RW6;RW6 2795,12480 2817,12334 2658,12312
 	RW6;RW6 7441,15909 7279,16057 7158,16167 7051,16264
@@ -5799,7 +5802,7 @@ asphaltiert	RW1; 20689,4862 20765,4839 20949,4775
 #: note: der restliche Abschnitt der Münchehagenstr. ist Tempo-30-Zone
 #: confirmed_by: srt
 	RW6;RW6 16587,23067 16383,23197
-	RW7;RW7 10418,12922 10535,13006 10571,13034 10595,13100 10635,13207 10703,13467 10740,13621
+	RW7;RW7 10418,12922 10535,13006 10571,13034 10591,13091 10635,13207 10703,13467 10740,13621
 Gehweg für Radfahrer frei	RW1; 15904,12340 15928,12483 15947,12626
 Gehweg für Radfahrer frei, holpriges Verbundsteinpflaster	RW1; 15947,12626 15952,12679 15953,12753 15950,12886
 gemeinsamer Geh- und Radweg, die letzten 50 Meter getrennter Rad- und Gehweg	RW2; 18216,11656 18215,11690 18215,12123
@@ -7025,7 +7028,7 @@ Busspur immer gültig	RW5; 6228,13324 6377,13321
 	RW6;RW6 19449,7669 19350,7741 19245,7577
 	RW6;RW6 7995,13537 8048,13578
 	RW6;RW6 12282,8204 12134,8172
-ab ca. Mitte des Abschnitts markiert, die letzten 5 Meter sogar benutzungspflichtig	RW3; 7604,8927 7563,8871
+ab ca. Mitte des Abschnitts markiert, die letzten 5 Meter sogar benutzungspflichtig	RW3; 7600,8921 7563,8871
 	RW4; 14558,10264 14619,10223
 	RW2; 14619,10223 14558,10264
 	RW3; 14652,10201 14619,10223
@@ -7114,7 +7117,7 @@ asphaltiert	RW1;RW1 19363,3730 19125,3491
 # REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14775,7385 14840,7307 14848,7288 14878,7211
 # REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14840,7307 14861,7316 14868,7297 14848,7288
 # REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14708,7325 14762,7261 14792,7192
-# REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.868593.php (aufgehoben, ab 25.11.2019) --- Tempo 10	RW6;RW6 10339,13052 10445,13091 10595,13100 10706,13043
+# REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.868593.php (aufgehoben, ab 25.11.2019) --- Tempo 10	RW6;RW6 10339,13052 10445,13091 10591,13091 10706,13043
 	RW6;RW6 3730,2368 3767,2367
 	RW6;RW6 3731,2411 3814,2408 3902,2405
 	RW6;RW6 3812,2303 3813,2368 3814,2408
@@ -7883,7 +7886,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1320962.php (Pressemitteilung zum Aussetzen von Baumaßnahmen)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/bezirksamt-charlottenburg-legt-geplante-radwege-auf-eis_a380956
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8576 (Antrag)
-#: last_checked: 2023-04-06 vvv
+#: last_checked: 2023-05-29 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -8158,8 +8161,8 @@ baulich getrennt	RW4; 10807,12451 10831,12371
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
-#: last_checked: 2023-04-10 vvv
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2023-05-27 (mapillary) vvv
+#: check_frequency: 90d
 #: next_check: 2023-05-31 vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
@@ -8333,4 +8336,6 @@ Radspur teiweise hinter parkenden Autos	RW3; 6846,4808 7092,4763 7205,4741 7285,
 Tempo 10	RW6;RW6 12460,1168 12379,1185
 # 
 asphaltiert, breit	RW2;RW8 18034,2526 18247,2490 18496,2471
+# 
+	RW6;RW6 987,11605 1127,11455
 # 
