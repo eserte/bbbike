@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2015,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2015,2016,2018,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -39,6 +39,7 @@ my $route_title        = $q->param('routetitle');
 my $replay_trk         = $q->param('replaytrk');
 my $loc                = $q->param('loc');
 my $geojsonp_url       = $q->param('geojsonp_url');
+my $show_feature_list  = $q->param('fl') || 0; # feature list can currently only be enabled together with a geojsonp_url
 my $show_expired_session_msg;
 my($coords, $wgs84_coords);
 if ($q->param('coordssession')) {
@@ -63,7 +64,6 @@ if ($q->param('coordssession')) {
     $wgs84_coords = [ join "!", map { join ',', $_->{lon}, $_->{lat} } @polyline ];
 }
 
-my $show_feature_list;
 my $show_speedometer;
 if ($devel) {
     $enable_upload = $show_feature_list = $show_speedometer = 1;
