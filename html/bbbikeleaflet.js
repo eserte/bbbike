@@ -593,6 +593,9 @@ function doLeaflet() {
     } else if (initialGeojson) {
 	if (show_feature_list) { // auto-id numbering
 	    var features = initialGeojson.features;
+	    if (!features && initialGeojson.type == 'Feature') {
+		features = [ initialGeojson ];
+	    }
 	    var id = 0;
 	    for(var i = 0; i < features.length; i++) {
 		features[i].properties.id = ++id;
@@ -634,6 +637,9 @@ function doLeaflet() {
     if (show_feature_list && initialGeojson) {
 	var listHtml = '';
 	var features = initialGeojson.features;
+	if (!features && initialGeojson.type == 'Feature') {
+	    features = [ initialGeojson ];
+	}
 	for(var i = 0; i < features.length; i++) {
 	    var featureProperties = features[i].properties
 	    if (featureProperties) {
