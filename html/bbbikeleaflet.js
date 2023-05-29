@@ -640,10 +640,14 @@ function doLeaflet() {
 	if (!features && initialGeojson.type == 'Feature') {
 	    features = [ initialGeojson ];
 	}
-	for(var i = 0; i < features.length; i++) {
-	    var featureProperties = features[i].properties
-	    if (featureProperties) {
-		listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
+	if (!features || !features.length) {
+	    listHtml += 'no features in geojson file<br>';
+	} else {
+	    for(var i = 0; i < features.length; i++) {
+		var featureProperties = features[i].properties
+		if (featureProperties) {
+		    listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
+		}
 	    }
 	}
 
