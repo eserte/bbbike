@@ -138,8 +138,9 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: by: https://nitter.cz/VIZ_Berlin/status/1660863624997662720#m
 #: osm_watch: node id="31260916" version="5"
 #: source_id: viz2021:13.458072,52.486032,23.05.2023,07:00 (Bau einer Fußgängerquerungsanlage, bis 31.05.2023)
-#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (vielleicht wird die Ampel bald abgebaut? siehe auch VIZ-Meldung --- am nächsten Tag wieder eingeschaltet)
-#: last_checked: 2023-05-23 vvv
+#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (am nächsten Tag wieder eingeschaltet)
+#: note: hier wurde eine Fußgängerinsel gebaut, vielleicht kommt noch ein Zebrastreifen oder eine Fußgängerampel hinzu? (siehe auch VIZ-Meldung: "Bau einer Fußgängerquerungsanlage")
+#: last_checked: 2023-05-30 vvv
 #: check_frequency: 14d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2530,7 +2531,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-04-10
+#: last_checked: 2023-05-30
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3368,11 +3369,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
 #: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr.
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-30
 #: next_check: 2023-06-30
 	F::inwork 14139,6786
 #: XXX wird später möglicherweise nur eine Fußgängerampel sein? eine weitere Ampel wird an der Einmündung Autobahnausfahrt/Bergiusstr. entstehen
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-30
 #: next_check: 2023-06-30
 	X::inwork 14051,6731
 # REMOVED --- #: note: Anforderungsampel --- #: last_checked: 2023-04-05 ---	F::inwork 13979,6700
@@ -3386,7 +3387,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check: 2023-06-30 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2023-04-05
+#: last_checked: 2023-05-30
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3399,14 +3400,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-05-22 (architektur-urbanistik)
+#: last_checked: 2023-05-30
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="5"
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-30
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 

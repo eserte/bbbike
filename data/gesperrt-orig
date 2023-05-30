@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-05-23
+#: last_checked: 2023-05-30
 #: check_frequency: 90d
 #: next_check: 2023-07-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -3836,16 +3836,16 @@ Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	1s:q4:inwork 20336,3
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-05-23 vvv
+#: last_checked: 2023-05-30 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-06-01 vvv
+#: next_check: 2023-09-15 vvv
 #: osm_watch: way id="358602468" version="12"
 #: osm_watch: way id="24189226" version="27"
 #: XXX Achtung: alten Eintrag in handicap_s-orig reaktivieren!
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q3:inwork 13333,9929 13271,9927 13225,9897
 # REMOVED (hier nicht mehr) --- Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q2:inwork 13225,9897 13109,9743 12905,9470
 #: osm_watch: way id="72183569" version="11"
-#: valid: -20230601 vvv
+#: valid: -20230915 vvv
 Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert	2s:q4:inwork 13333,9929 13418,9944
 Am Flutgraben: Bauarbeiten, Weg ist gesperrt	2::inwork 13418,9944 13579,10146
 #: valid ^^^
@@ -4862,7 +4862,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-04-27
+#: last_checked: 2023-05-30
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
