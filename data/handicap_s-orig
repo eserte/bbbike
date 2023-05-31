@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-05-30 vvv
+#: last_checked: 2023-05-31 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -55,7 +55,7 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2023-05-19 vvv
+#: last_checked: 2023-05-31 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -894,11 +894,11 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv)
 #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv)
-#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023)
+#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023)
 #: also_indoor: traffic (ex-H,B,ex-G,W)
 #: last_checked: 2023-05-25
 #: check_frequency: 90d
-#: next_check: 2023-06-05
+#: next_check: 2023-06-28
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)

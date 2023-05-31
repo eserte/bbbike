@@ -4429,14 +4429,14 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
          'data' => '#: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
 #: last_checked: 2023-05-27 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2023-06-23
+#: next_check: 2023-06-30
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -5326,7 +5326,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-05-09 (daf)
+#: last_checked: 2023-05-31
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5718,37 +5718,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'type' => 'handicap',
          'until' => 1714489200
        },
-       {
-         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=720279#post720279
-#: by: https://abload.de/img/img_417223kcb.jpg
-#: osm_watch: way id="742199631" version="2"
-#: osm_watch: way id="4531799" version="16"
-#: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-04-06
-#: check_frequency: 30d
-	q4::inwork; 4434,11227 4415,11050
-',
-         'from' => undef,
-         'id' => 3560,
-         'text' => 'Wielandstr.: Einbahnstraße zwischen Kantstr. und Pestalozzistr., offen Richtung Norden, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
-       {
-         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
-#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen 2023-04-16 (So), 2023-05-29 (Pfingstmontag)
-#: note: Halteverbotsschilder bis 31.5.2023
-# REMOVED (construction wurde entfernt) --- #: osm_watch: way id="791796343" version="6"
-# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2023-05-29 --- #: check_frequency: 30d
-	q4::inwork 4961,12940 4932,12968
-',
-         'from' => undef,
-         'id' => 3561,
-         'text' => 'Pascalstr.: Fahrbahn zwischen Heisenbergstr. und Schlesingerstr. kann wegen Hochbauarbeiten gesperrt sein, voraussichtlich bis Ende Mai 2023',
-         'type' => 'handicap',
-         'until' => 1685548800
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -5999,7 +5970,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-05-24 (mapillary)
+#: last_checked: 2023-05-31
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -6281,7 +6252,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-29
+#: last_checked: 2023-05-31
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6458,19 +6429,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
          'until' => 1694185200
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/vollsperrung-im-gruenstreifen_a364052
-#: note: wurde am 2023-03-19 bestätigt (mapillary)
-	2::inwork 7019,655 7032,533 7231,236
-',
-         'from' => 1668466800,
-         'id' => 3685,
-         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1265181.php',
-         'text' => 'Grünzug Tirschenreuther Ring - Marienfelder Allee: Sanierung, Sperrung zwischen November 2022 und Frühjahr 2023',
-         'type' => 'gesperrt',
-         'until' => 1685548800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: TEGELERBRUECKE-2021
@@ -6747,9 +6706,9 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
          'from' => 1675749600,
          'id' => 3721,
          'source_id' => 'viz2021:13.600257,52.54031,08.02.2023,07:00',
-         'text' => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Sarah-Kirsch-Str., Fahrbahn gesperrt, vom 08.02.2023 07:00 bis 10.06.2023 17:00',
+         'text' => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Sarah-Kirsch-Str., Fahrbahn gesperrt, vom 08.02.2023 07:00 bis 30.06.2023 17:00',
          'type' => 'handicap',
-         'until' => 1686409200
+         'until' => 1688137200
        },
        undef,
        {
@@ -7356,8 +7315,8 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: by: https://viz.berlin.de/2023/05/modersohnbruecke-gesperrt/
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43
 #: osm_watch: note 3695963 3
-#: note: zurzeit (2023-05-30) gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann
-#: last_checked: 2023-05-30 vvv
+#: note: zurzeit (2023-05-31) gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann
+#: last_checked: 2023-05-31 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -7503,6 +7462,20 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
          'text' => 'Paradiesstr.: Straße zwischen Bohnsdorfer Kirchsteig und Buntzelstr. gesperrt (Wasserrohrbruch), vom 29.05.2023 04:55, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: EDELHOFDAMM-2023
+#: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
+#: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023)
+	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
+hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
+',
+         'from' => 1685422800,
+         'id' => 3802,
+         'text' => 'Edelhofdamm: Bauarbeiten zwischen Zeltinger Platz und Markgrafenstr., Fahrbahn ist gesperrt, vom 31.05.2023 07:00 bis 09.08.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1691593200
        }
      
 );

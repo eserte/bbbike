@@ -1320,14 +1320,8 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
-#: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
-#: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023) (bis 30.5.2023) (bis 31.5.2023)
-#: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2023-05-29
-#: check_frequency: 60d
-#: next_check: 2023-05-31
-(Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
-#(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
+# REMOVED (offen) --- #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten --- #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023) (bis 30.4.2023) (bis 30.5.2023) (bis 31.5.2023) --- #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze") --- #: last_checked: 2023-05-29 --- #: check_frequency: 60d --- #: next_check: 2023-05-31 --- (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
+(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
 Cantianstr.	1s:q4 10871,15288 10887,15287
 # 
@@ -3584,7 +3578,7 @@ Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5::trail
 Falkenberger Str. - Hansastr: Bauarbeiten, gesperrt	2::inwork 15819,16857 15892,16834
 # 
 #: next_check_id: SONYCENTER-2023
-#: last_checked: 2023-05-24 (mapillary)
+#: last_checked: 2023-05-31
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 #: valid: -20240701
@@ -3999,7 +3993,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2023-05-19
+#: last_checked: 2023-05-31
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4290,7 +4284,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="3"
-#: last_checked: 2023-05-01
+#: last_checked: 2023-05-31
 #: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -4414,7 +4408,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-05-21
+#: last_checked: 2023-05-31
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148

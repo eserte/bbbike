@@ -277,8 +277,10 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW1; 9022,10857 8947,10956
 	RW1; 8947,10956 9022,10857
 Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11334 8602,11369 8573,11404 8542,11502
 	RW1;RW1 8947,10956 8889,10906 8784,10824 8772,10814 8698,10756 8682,10744 8581,10663
-	RW3;RW3 9827,10051 9837,10117 9858,10199 9865,10227
-	RW4;RW3 9865,10227 9873,10285
+niedrige Protektionselemente	RW3; 9827,10051 9837,10117
+	RW3; 9837,10117 9858,10199 9865,10227
+niedrige Protektionselemente, vereinzelte Poller	RW3; 9865,10227 9858,10199 9837,10117 9827,10051
+niedrige Protektionselemente	RW4;RW3 9865,10227 9873,10285
 	RW3;RW3 11393,10390 11443,10394
 	RW2;RW2 11443,10394 11671,10402
 # REMOVED (vorfristig beendet) --- #: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00 (bis 9.12.2022) --- #: XXX Wie lange bleibt die Radspur hier erhalten? --- #: last_checked: 2022-10-15 --- #: check_frequency: 45d --- #: next_check: 2022-12-09 --- #provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
@@ -2655,7 +2657,8 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 11764,12001 11916,11846
 Radspur zwischen Fahrspuren	RW4; 11916,11846 11764,12001
 	RW4;RW4 11916,11846 11963,11813 12180,11657
-	RW3;RW4 12180,11657 12497,11459
+Poller	RW3; 12180,11657 12497,11459
+	RW4; 12497,11459 12180,11657
 	RW3; 12497,11459 12539,11416
 Radspur zwischen Fahrspuren	RW3; 12539,11416 12497,11459
 	RW3;RW4 12539,11416 12576,11375 12641,11288
@@ -2685,7 +2688,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-05-12
+#: last_checked: 2023-05-31
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -5954,7 +5957,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2023-05-07 (mapillary) vvv
+#: last_checked: 2023-05-31 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -7449,7 +7452,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2023-05-25
+#: last_checked: 2023-05-31
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7819,7 +7822,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="32"
 #: osm_watch: way id="335487059" version="27"
-#: last_checked: 2023-05-25 vvv
+#: last_checked: 2023-05-31 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7886,7 +7889,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1320962.php (Pressemitteilung zum Aussetzen von Baumaßnahmen)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/bezirksamt-charlottenburg-legt-geplante-radwege-auf-eis_a380956
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8576 (Antrag)
-#: last_checked: 2023-05-29 vvv
+#: last_checked: 2023-05-31 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -8163,7 +8166,7 @@ baulich getrennt	RW4; 10807,12451 10831,12371
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
 #: last_checked: 2023-05-27 (mapillary) vvv
 #: check_frequency: 90d
-#: next_check: 2023-06-23 vvv
+#: next_check: 2023-06-30 vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
