@@ -967,7 +967,8 @@ sub _make_dist_tag {
 		$out .= "** sorted by $sort_keys[0]\n";
 		for my $planned_route_file (sort { $custom_sort->($planned_route_to_numbers{$a}, $planned_route_to_numbers{$b}) } keys %planned_route_to_numbers) {
 		    my $numbers = $planned_route_to_numbers{$planned_route_file};
-		    $out .= "*** $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
+		    my $state = $numbers->{expired_and_open_count} ? 'TODO' : 'DONE';
+		    $out .= "*** $state $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
 		}
 	    }
 	}
