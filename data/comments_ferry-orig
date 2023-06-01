@@ -19,7 +19,7 @@ Fähre Caputh (Havel): pro Person 0,50 Euro, pro Fahrrad 0,50 Euro; Fährzeiten im
 #: as_of: 2023-03
 Fähre Ketzin (Havel): Fahrrad mit Fahrer 2,00 Euro; Fährzeiten im Sommer Mo-So 5:30-20:00 Uhr; Fährzeiten im Winter Mo-Fr 5.30-19:00 Uhr, Sa/So 9:00-18:00 Uhr	CS -26784,5756 -26840,5684
 #
-### XXX auf der Website am 2023-05-08: "Leider ist der Zeitpunkt unseres Saisonstarts 2023 derzeit immer noch nicht absehbar." 
+### XXX auf der Website am 2023-05-08 sowie 2023-06-01: "Leider ist der Zeitpunkt unseres Saisonstarts 2023 derzeit immer noch nicht absehbar." 
 ##: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
 ## REMOVED (frühere URL) --- #: url: https://schifffahrt-in-potsdam.de/potsdamer-wassertaxi/
 ##: url: https://potsdamer-wassertaxi.de/ vvv
@@ -38,18 +38,21 @@ Fähre Ketzin (Havel): Fahrrad mit Fahrer 2,00 Euro; Fährzeiten im Sommer Mo-So 5
 #: as_of: 2023-03
 F1 (Auf dem Kiewitt - Hermannswerder): im 15-Minuten-Abstand von ca. 7:00 bis 18:20 Uhr; VBB-Tarif	CS -14107,-2278 -14081,-2516
 # 
-#: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF10.pdf
+# REMOVED --- #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF10.pdf
+#: url: https://www.bvg.de/dam/jcr:e2b24f91-662b-4185-849b-b428598db15e/F10_2022-12-11.pdf
 #: by: https://www.bahninfo-forum.de/read.php?9,701569,701569#msg-701569 (Verstärkung 2021)
 #: by: https://www.berliner-woche.de/kladow/c-verkehr/temporaere-zweite-faehre-kommt_a310494
 # REMOVED --- #: note: 24.6.2021-8.8.2021 zwischen 10 und 19 Uhr halbstündlich
 #: as_of: 2023-03
 F10 (Wannsee - Kladow): stündlich, Mo ab ca. 6 Uhr, Sa ab ca. 7 Uhr, So ab ca. 9 Uhr; letzte Fahrt: im Winter 19 Uhr, Mai-August 21 Uhr, ansonsten 20 Uhr; BVG-Tarif; ca. 20 Minuten Fahrzeit	CS -4905,1514 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6866,4765
 # 
-#: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF11.pdf
+# REMOVED --- #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF11.pdf
+#: url: https://www.bvg.de/dam/jcr:b4dec176-acef-4109-b1b9-0c4d7732bbe4/F11_2022-12-11.pdf
 #: as_of: 2023-03
 F11 (Baumschulenstr. - Wilhelmstrand): Mo-Fr von ca. 6 bis 19.30 Uhr im 10/20-Minuten-Abstand; Sa/So von ca. 8 bis 19 Uhr im 20-Minuten-Abstand; BVG-Kurzstreckentarif; ca. 2 Minuten Fahrzeit	CS 16655,7572 16796,7715
 # 
-#: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF12.pdf
+# REMOVED --- #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF12.pdf
+#: url: https://www.bvg.de/dam/jcr:33e3248d-a921-4934-b0b3-8a3f9323f9be/F12_2022-12-11.pdf
 #: as_of: 2023-03
 F12 (Dahme): Mo-Fr von ca. 6 bis 21 Uhr alle 10 bis 20 Minuten; Sa/So von ca. 8 bis 20 Uhr im 20-Minuten-Abstand; BVG-Kurzstreckentarif; ca. 2 Minuten Fahrzeit	CS 22756,1524 23068,1638
 # 
@@ -58,21 +61,24 @@ F12 (Dahme): Mo-Fr von ca. 6 bis 21 Uhr alle 10 bis 20 Minuten; Sa/So von ca. 8 
 #: XXX_prog: die Regel ist: ab ersten Samstag im April oder Karfreitag, was früher ist
 #: XXX_prog: der letzte Fährtag: letzter Sonntag im Oktober bzw. Ende der Herbstferien
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.455486.php
-#: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF21.pdf
+# REMOVED --- #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF21.pdf
+#: url: https://www.bvg.de/dam/jcr:4cb5efdd-12c3-4aab-a518-2bafa00aa759/F21_2022-12-11.pdf
 #: as_of: 2023-03
 F21 (Krampe): Mo keine Fahrten; alle 30 Minuten von ca. 10 bis 18 Uhr; Sa/So bis 19 Uhr; Saisonbetrieb (ab Karfreitag bis Ende Oktober); BVG-Kurzstreckentarif; ca. 7 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive
 #: XXX_prog: gleiche Saison-Regeln wie bei der F21
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.455486.php
-#: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF23.pdf
+# REMOVED --- #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF23.pdf
+#: url: https://www.bvg.de/dam/jcr:f23c277f-63a7-486a-916f-cc206f93386e/F23_2022-12-11.pdf
 #: as_of: 2023-03
 F23 (Spree): Mo keine Fahrten; stündlich von ca. 10 bis 19 Uhr; Sa/So bis 20 Uhr; Saisonbetrieb (ab Karfreitag bis zum Ende Oktober); BVG-Kurzstreckentarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29059,3377 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.305067.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.455486.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.466289.php
-#: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF24.pdf
+# REMOVED --- #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF24.pdf
+#: url: https://www.bvg.de/dam/jcr:5594c9ea-bec3-47f0-9c15-1b4491e5925b/F24_2022-12-11.pdf
 #: as_of: 2023-03
 F24 (Spree): nur samstags, sonntags und an Feiertagen, jeweils 11 bis 19 Uhr, ca. stündlich, bei Bedarf auch außerhalb des Fahrplans; Saisonbetrieb (ab Ende April bis Anfang Oktober); BVG-Kurzstreckentarif; ca. 5 Minuten Fahrzeit; Ruderfähre mit Fahrradmitnahme	CS 29959,3031 29968,2986
 # 
