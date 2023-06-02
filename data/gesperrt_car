@@ -679,7 +679,6 @@ Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11522,1724
 Neumannstr. -> Greta-Garbo-Str.: Mittelstreifen	3::igndisp 11522,17248 11508,17315 11353,17288
 Greta-Garbo-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11353,17288 11508,17315 11482,17459
 Straßenbahn	3nocross::ignrte 14056,16120 14248,16202 14346,16241
-Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14346,16241 14248,16202 14295,16076
 Lindenallee -> Berliner Allee: Straßenbahn	3::igndisp 14295,16076 14248,16202 14056,16120
 Straßenbahn	3nocross::ignrte 13398,15826 13425,15846 13484,15893 13508,15912
 Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13398,15826 13425,15846 13263,15930
@@ -2409,3 +2408,7 @@ Schmollerplatz	1 13270,9518 13298,9491 13234,9426 13178,9363 13206,9335
 Hohenzollerndamm	3nocross::ignrte 2539,8196 2661,8307 2713,8357
 Hohenzollerndamm -> Auguste-Viktoria-Str.: Hohenzollerndamm	3::igndisp 2713,8357 2661,8307 2642,8040
 Auguste-Viktoria-Str. -> Hohenzollerndamm: Hohenzollerndamm	3::igndisp 2642,8040 2661,8307 2539,8196
+Lindenallee	1 14248,16202 14295,16076
+Bizetstr.	1 14056,15985 14248,16058 14295,16076
+Bizetstr.	1 14056,15985 13867,15915
+Smetanastr.	1 14015,16103 14056,15985

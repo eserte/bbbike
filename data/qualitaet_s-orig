@@ -2327,6 +2327,7 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 # REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
 # REMOVED --- Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/senatsverwaltung-startet-machbarkeitsstudie-mit-fuenf-varianten_a382462
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
 #: last_checked: 2022-09-30
 #: next_check: 2024-01-01
@@ -4428,7 +4429,8 @@ Hunsrückstr.: Asphalt	Q0 13914,17016 13990,17122 14060,17221
 Soonwaldstr.: Asphalt	Q0 13990,17122 13832,17232
 Große Seestr.: neu gemachter Asphalt	Q0 13754,17133 13834,17078 13914,17016
 Große Seestr.: Asphalt mit leichten Unebenheiten	Q0- 13914,17016 13996,16959 14107,16889
-Lemgoer Str.: Asphalt	Q0 14328,17011 14295,16951 14296,16892
+Lemgoer Str.: brüchiger Asphalt	Q1+ 14328,17011 14295,16951 14296,16892
+Lemgoer Str.: Mosaikpflaster	Q1 14328,17011 14331,17016 14341,17030
 Cohnstr.: Asphalt	Q0 13225,15697 13197,15734 13143,15764 13108,15798 13065,15825
 Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
 # REMOVED --- #: next_check_id: MANDEL-2020 --- #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Außerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zurückgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf --- #: last_checked: 2020-06-06 --- #: next_check: 2020-02-01
@@ -16101,7 +16103,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
-#: last_checked: 2023-05-02
+#: last_checked: 2023-06-02
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -31351,6 +31353,8 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
+(Rampe S-Bhf. Buch): Verbundsteinpflaster	Q1 16044,25608 16077,25635 16065,25595 16071,25591
+(Wiltbergstr. - südlicher Bahnhofseingang S-Bhf. Buch): Beton	Q1 16220,25716 16071,25591
 (Ferdinand-Buisson-Str. - Pankeweg): unbefestigte Straße	Q2 12948,21421 12980,21411
 Sarah-Kirsch-Str.: Asphalt	Q0 23452,15046 23569,15062 23693,15080
 Elfriede-Brüning-Str.: Betonpflaster	Q0- 23452,15046 23419,15226

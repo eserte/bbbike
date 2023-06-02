@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-06-01 vvv
+#: last_checked: 2023-06-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -791,6 +791,11 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 # 
 ### Lichtenberg ###
 # 
+#: add_fragezeichen: Wann ist die Sperrung beendet?
+#: also_indoor: traffic (B)
+#: last_checked: 2023-06-02
+Frankfurter Allee [Wohngebiet]: Bauarbeiten, Anbindung zur richtigen Frankfurter Allee unterbrochen, Bordsteine	q3::inwork 16190,11872 16214,11935
+# 
 #: next_check_id: PARKAUE-2022
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
@@ -871,7 +876,7 @@ Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="1089784266" version="2"
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2023-01-21
+#: last_checked: 2023-05-31 (mapillary)
 #: check_frequency: 120d
 # REMOVED (s.o., Fertigstellung des Bauvorhabens) --- #: next_check: 2024-12-31
 #: next_check: 2023-11-15
@@ -2158,8 +2163,10 @@ Mahlerstr.: Fußgängerzone, Radfahrer frei	q2 13739,15643 13714,15709
 Fußgängerbrücke Storkower Str.: Fußgänger	q4+ 14481,13143 14524,13271 14530,13269
 #: XXX_prog: BS (an der Straßenseite)
 (Fußgängerbrücke Storkower Str.): Bordstein	q3 14465,13138 14481,13143
-#: XXX_prog: BS an der Rennbahnstr.
-Lemgoer Str.: Fußgänger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
+# 
+#: XXX_prog BS (beide Enden, ansonsten q1)
+Lemgoer Str.: Bordsteine, einige Fußgänger	q3 14341,17030 14331,17016 14328,17011
+# 
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
 #: XXX_prog: BS am Wendehammer (ansonsten q3)
@@ -4543,6 +4550,9 @@ Waldemarstr.: einige Fußgänger, Bordstein	q3 10464,20390 10475,20355
 Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,9426 13202,9455
 # 
 (Mauerweg - Lohmühlenstr.): einige Fußgänger	q2 13109,9743 13128,9726 13156,9702
+# 
+(Unterführung S-Bhf. Buch): Fußgänger	q4 16004,25638 16044,25608
+(Rampe S-Bhf. Buch): Rampe, Kurven	q3 16044,25608 16077,25635 16065,25595 16071,25591
 # 
 ######################### User Contributions #################################
 # 
