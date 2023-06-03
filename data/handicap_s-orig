@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern mˆglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-06-02 vvv
+#: last_checked: 2023-06-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -38,7 +38,7 @@ Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der 
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B,H)
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-03
 Kinzigstr.: Bauarbeiten nˆrdlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- M¸ggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -998,7 +998,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-03
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -2780,7 +2780,7 @@ Bornepfad: enge Straﬂe	q1 4332,23059 4312,23157
 #: XXX_prog BS nur am Wendehammer
 Forlenweg: Fuﬂg‰nger, eng, Bordstein	q2 3978,23301 4021,23330
 #: note: offiziell nur ein Gehweg
-Am Leitbruch: Fuﬂg‰nger	q4 4062,22069 4130,21961
+Am Leitbruch: Fuﬂg‰nger	q4 4063,22072 4067,22066 4130,21961
 #: note: offiziell nur ein Gehweg
 #: XXX_prog BS nach Norden
 Primusweg: Fuﬂg‰nger, Bordstein	q4 5651,19953 5666,19926 5704,19902 5715,19888
@@ -3805,7 +3805,8 @@ Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 13013,14523 13010
 # 
 #: XXX_prog BS an der Franzˆsischen Str., ansonsten entfernen
 Falkoniergasse: Bordstein	q1 9939,12174 9909,12261
-Epensteinplatz: einige Fuﬂg‰nger	q2 8432,17798 8417,17790 8409,17774
+#: XXX_prog BS an beiden Enden, ansonsten q2
+Epensteinplatz: einige Fuﬂg‰nger, flache Bordsteine	q3 8432,17798 8417,17790 8409,17774
 #: note: relativ nah an den Geb‰uden
 #: note: R¸ckrichtung -> gesperrt_orig, 1s-Eintrag
 (Friedrichstr. - Enckestr.): Fuﬂg‰nger	q3; 9537,10837 9666,10848
@@ -4553,6 +4554,11 @@ Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,94
 # 
 (Unterf¸hrung S-Bhf. Buch): Fuﬂg‰nger	q4 16004,25638 16044,25608
 (Rampe S-Bhf. Buch): Rampe, Kurven	q3 16044,25608 16077,25635 16065,25595 16071,25591
+# 
+#: note: an manchen Tagen erheblicher Fuﬂg‰ngerverkehr vvv
+Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10583,15208 10562,15236 10520,15353 10512,15406 10456,15561
+Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10520,15353 10781,15438 10804,15447
+#: note ^^^
 # 
 ######################### User Contributions #################################
 # 

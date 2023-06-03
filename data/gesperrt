@@ -835,7 +835,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 (Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Wadzeckstr.	1s 11315,13210 11354,13184 11369,13174
-Cantianstr.	1s 10871,15288 10887,15287
+Cantianstr.	1s 10855,15283 10887,15287
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 (Suermondtstr. - Konrad-Wolf-Str.)	1s 16842,15932 16799,15974 16719,16005 16753,16111
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
@@ -951,6 +951,7 @@ Am Feuchten Winkel	1 12020,19333 11937,19175
 Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 15261,10738 15163,10758 15004,10791
 Wildmeisterdamm	1 15207,2313 15143,2315
 Brixplatz	1 179,12434 269,12462 329,12503
+Schönfließer Str.	1 3145,26256 3112,26253
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2971,7 +2972,7 @@ Schranke, lichte Breite 120cm	BNP:1:-256:trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
 weites Drängelgitter	BNP:1:-237:trailer=5 -3437,14029
 Drängelgitter	BNP:2:-79:trailer=8 7928,10094
-enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20:-19:trailer=no 10583,15208
+enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20:-36:trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5:-108:trailer=no 10781,15438
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155
@@ -3307,6 +3308,7 @@ Drängelgitter	BNP:3:-196:trailer=10 10475,20355
 weites Drängelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
+Drängelgitter	BNP:3:-33:trailer=10 4067,22066
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, Zugang zur Rüdersdorfer Str. ist gesperrt	2::inwork 12788,11898 12891,12008
 Falkenberger Str. - Hansastr: Bauarbeiten, gesperrt	2::inwork 15819,16857 15892,16834
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555

@@ -837,11 +837,11 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
 #: osm_watch: way id="25217949" version="45"
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-02 (mapillary)
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
 #: osm_watch: way id="374344536" version="15"
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-02 (mapillary)
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
@@ -869,7 +869,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8024,15401 8002,1534
 	RW1; 7998,15068 7911,15008
 	RW1;RW1 7198,18575 7197,18639 7209,18682 7248,18793 7329,18996 7466,19351
 	RW0;RW1 7466,19351 7481,19400
-	RW0;RW1 7481,19400 7504,19459 7512,19480
+	RW0;RW1 7504,19459 7512,19480
 	RW1;RW1 7512,19480 7540,19550
 	RW1; 7540,19550 7578,19648 7603,19713 7617,19748 7634,19793 7672,19869
 teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,19793 7617,19748 7603,19713 7578,19648 7540,19550
@@ -2353,7 +2353,9 @@ Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
 neu asphaltiert, 2m breit	RW1; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
 	RW1; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
 # 
-	RW4;RW3 9811,16112 10005,16150 10045,16157 10301,16186
+	RW4;RW3 9811,16112 10005,16150 10045,16157
+auf der Radspur stehen regelmäßig wartende Autos vor dem BSR-Recyclinghof	RW4; 10045,16157 10301,16186
+	RW3; 10301,16186 10045,16157
 	RW3;RW3 10301,16186 10421,16175 10603,16158 10739,16146
 die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 	RW3; 10982,16121 10739,16146
@@ -6320,7 +6322,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11693 (Antrag)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
-#: last_checked: 2023-05-21 vvv
+#: last_checked: 2023-06-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
 #: osm_watch: way id="162965650" version="24"
@@ -7064,7 +7066,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-05-30 (mapillary) vvv
+#: last_checked: 2023-06-03 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7556,7 +7558,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2023-06-02 vvv
+#: last_checked: 2023-06-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-29 vvv
 #: osm_watch: way id="335479077" version="19"

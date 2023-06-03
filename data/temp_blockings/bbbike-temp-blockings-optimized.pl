@@ -2255,7 +2255,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
-# REMOVED --- #: XXX diese Abschnitte wieder nach der Corona-Krise entfernen vvv ---	2::temp 10512,15406 10530,15356 10583,15208 ---	2::temp 10530,15356 10781,15438
+# REMOVED --- #: XXX diese Abschnitte wieder nach der Corona-Krise entfernen vvv ---	2::temp 10512,15406 10520,15353 10562,15236 10583,15208 ---	2::temp 10520,15353 10781,15438
 ',
          'from' => undef,
          'id' => 1956,
@@ -4306,9 +4306,10 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
+#: note: Halteverbotsschilder bis 29.06.2023
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-03
 #: check_frequency: 90d
 #: next_check: 2023-06-29
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
@@ -4559,7 +4560,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-05-24
+#: last_checked: 2023-06-03
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4716,6 +4717,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00
+#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023)
+#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
@@ -5571,14 +5574,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: WILHELMVONSIEMENSPARK-2019
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
-#: last_checked: 2023-03-18
+#: last_checked: 2023-06-02 (mapillary)
 #: check_frequency: 90d
 	2::inwork 983,15136 971,15193
 ',
          'from' => 1649541600,
          'id' => 3535,
          'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1194824.php',
-         'text' => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt (Stand März 2023: Weg ist weitehin gesperrt)',
+         'text' => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt (Stand Juni 2023: Weg ist weitehin gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6192,7 +6195,7 @@ Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9262,131
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-05-07 (mapillary) vvv
+#: last_checked: 2023-06-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
@@ -6454,12 +6457,15 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
-	q4::inwork; 2112,26066 2207,26090 2293,26111 2402,26121
+#: note: Fahrbahn wird neu gemacht
+	q4::inwork 2112,26066 2207,26090 2293,26111
+#: note: Vorbereitungen für Neubau der Fahrbahn
+	q3::inwork 2293,26111 2402,26121
 ',
          'from' => 1668540097,
          'id' => 3683,
          'source_id' => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
-         'text' => 'Schönfließer Str.: Einbahnstraßenregelung zwischen Senheimer Str. und Gollanczstr., offen Richtung Westen, bis 08.09.2023',
+         'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 08.09.2023',
          'type' => 'handicap',
          'until' => 1694185200
        },
@@ -6474,7 +6480,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
 #: osm_watch: node id="10202117536" version="7"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-02 (mapillary)
 #: next_check: 2023-12-01
 	2 -784,16658 -719,16608
 ',
@@ -6642,7 +6648,7 @@ Ederstr.	q3::inwork 13946,7918 13919,7707
        {
          'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-02
+#: last_checked: 2023-06-03
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 ',
@@ -7308,7 +7314,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
 #: note: zurzeit (2023-05-31) gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann
-#: last_checked: 2023-06-02 vvv
+#: last_checked: 2023-06-03 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -7325,6 +7331,7 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1327771.php (zu neuen, teilweise provisorischen Gehwegen an der Werneuchener Wiese; Erwähnung von Bauarbeiten der Wasserbetriebe)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/provisorischer-parkweg_a382807
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
 #: last_checked: 2023-05-30 (mapillary)
@@ -7532,6 +7539,21 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
          'text' => 'Friedlander Str.: zwischen Lohnauer Steig und Waldstr. wegen Tiefbauarbeiten bis 09.06.2023 gesperrt',
          'type' => 'handicap',
          'until' => 1686326400
+       },
+       {
+         'data' => 'Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
+#: note: Schranke mit wenig Platz, oder Umweg über Gehweg
+Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
+#: note: Schranke mit wenig Platz, oder Umweg über Gehweg
+Cyclopstr.	q4::inwork 4812,21737 4829,21714
+	q4::inwork 4829,21714 4805,21715
+',
+         'from' => 1673247600,
+         'id' => 3809,
+         'source_id' => 'viz2021:13.325275,52.602903,10.01.2023,08:00',
+         'text' => 'Hermsdorfer Str.: Bauarbeiten zwischen Avenue Charles de Gaulle und Oranienburger Str., Fahrbahn gesperrt, Gehweg für Radfahrer frei, außerdem Sperrungen im Kreuzungsbereich Jean-Jaurès-Str./Cyclopstr., vom 10.01.2023 08:00 bis 24.07.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1690210800
        }
      
 );
