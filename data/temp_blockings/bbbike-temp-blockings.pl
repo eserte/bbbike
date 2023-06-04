@@ -20164,7 +20164,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/S-SG33-W/11/303',
        data  => <<EOF,
-	q3::inwork; 26679,-8825 26429,-9618 26381,-9753
+	q3::inwork; 26679,-8825 26589,-9108 26429,-9618 26381,-9753
 EOF
      },
      { from  => 1313270628, # 2011-08-13 23:23
@@ -28456,7 +28456,7 @@ EOF
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-05-17
+#: last_checked: 2023-06-03 (mapillary)
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -30777,7 +30777,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-04
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 	q4::inwork; 11329,12497 11202,12426
@@ -31861,6 +31861,7 @@ EOF
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00
 #: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023)
 #: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023)
+#: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
@@ -32068,6 +32069,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1330851.php (Sperrung 2023)
 #: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
 #: source_id: 2147346494 (inaktiv)
+#: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023)
 # REMOVED ---	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 #: next_check: 2023-06-05
 	q4::inwork; 16169,6064 16510,5917 16868,5938
@@ -34783,7 +34785,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZWIESELER-2022
-#: XXX laut osm access=no wegen Baustelle (osm watch in fragezeichen-orig)
+#: osm_watch: way id="43566268" version="25"
+# REMOVED (gelöscht) --- #: osm_watch: way id="43566318" version="20"
+# REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
+#: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
 #: last_checked: 2023-05-06
 #: check_frequency: 30d
@@ -35798,7 +35803,7 @@ EOF
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q4 26300,-11727 26301,-11824 26300,-11864
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 EOF
      },
      { from  => 1656194400, # 2022-06-26 00:00
@@ -37137,7 +37142,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1685899173, # undef, # XXX
        text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte Mai 2023: keine Einschränkungen)',
        # was: ", oder man benutzt die Fahrbahnverbindung zum Überqueren"
        type  => 'gesperrt',
@@ -37168,12 +37173,7 @@ EOF
 #: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
 #: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
 #: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023) (bis 17.05.2023) (inaktiv)
-#: XXX außerdem: hier wird eine neue Ampel gebaut
-#: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
-#: priority: #A vvv
-#: last_checked: 2023-05-13 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2023-09-03 vvv
+# REMOVED --- #: XXX außerdem: hier wird eine neue Ampel gebaut --- #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv --- #: priority: #A vvv --- #: last_checked: 2023-06-03 (mapillary, keine Bautätigkeiten mehr zu sehen) vvv --- #: check_frequency: 21d vvv --- #: next_check: 2023-09-03 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
 #	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
 Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
@@ -37184,11 +37184,7 @@ Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18406,7760 18471,7862
 Hegemeisterweg -> Modellpark Wuhlheide	3::inwork 18325,7778 18406,7760 18437,7752
 Modellpark Wuhlheide -> Treskowallee	3::inwork 18437,7752 18406,7760 18382,7724
 Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,7778
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => $isodate2epoch->("2022-10-26 08:00:00"),
@@ -37851,6 +37847,8 @@ EOF
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023)
 #: also_indoor: traffic (G,H,B,W)
+#: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
+#: last_checked: 2023-06-04
 #: next_check: 2023-06-30
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -38248,7 +38246,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein, möglicherweise bis Ende Mai 2023',
+       text  => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein', # , möglicherweise bis Ende Mai 2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
@@ -38259,9 +38257,9 @@ EOF
 # REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
 # REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
 #: osm_watch: way id="1117716285" version="2"
-#: last_checked: 2023-04-22
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2023-05-31
+#: last_checked: 2023-06-04
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-05-31
 	2::inwork 18818,3332 18834,3315
 EOF
      },
@@ -38787,8 +38785,8 @@ EOF
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43 (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
-#: note: zurzeit (2023-05-31) gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann
-#: last_checked: 2023-06-03 vvv
+#: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -38812,13 +38810,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1686002399, # 2023-06-05 23:59
-       text  => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Anfang Juni 2023, vielleicht auch länger',
+       until => undef, # 1686002399, # 2023-06-05 23:59
+       text  => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Baustelle unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-03 (mapillary)
 	q4::inwork 11599,19171 11634,19187 11671,19204 11748,19235
 EOF
      },
@@ -39014,6 +39012,37 @@ Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Cyclopstr.	q4::inwork 4812,21737 4829,21714
 	q4::inwork 4829,21714 4805,21715
+EOF
+     },
+     { from  => undef, # 
+       until => 1690815600, # 2023-07-31 17:00
+       text  => 'Holzmindener Str., Am Straßenbahnhof: Einbahnstraßenregelung',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: TEMPELHOFERWEG-2023
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023)
+	q4::inwork; 12214,5554 12256,5591 12495,5659
+	q4::inwork; 12495,5659 12525,5510 12582,5232
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Seelower Str.: samstags 10-16 Uhr Wochenmarkt, Fahrbahn zwischen Schivelbeiner Str. und Dänenstr. gesperrt',
+       type  => 'handicap',
+       recurring => 1,
+       source_id => 'https://bbm-maerkte.de/bauernmarkt-seelower-strasse/',
+       data  => <<EOF,
+#: tempex: (sa) T10-T16
+	q4::temp:clock 10739,16146 10729,16042
+EOF
+     },
+     { from  => 1686369600, # 2023-06-10 06:00
+       until => 1687813200, # 2023-06-26 23:00
+       text  => 'Heinrich-von-Gagern-Str.: Sperrung ab 11.06.2023 06:00 bis 26.06.2023 23:00, evtl. sind auch Radfahrer betroffen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: laut Hinweisschild auf Kapelle-Ufer
+	q4::inwork 8119,12414 8122,12603
 EOF
      },
     );

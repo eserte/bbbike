@@ -14,7 +14,7 @@
 #: XXX Bauarbeiten dauern mˆglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-06-03 vvv
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -254,7 +254,7 @@ Stralauer Str.: Radweg auf schmalen B¸rgersteig	q2::inwork; 10951,12249 10830,12
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-04
 #: check_frequency: 90d
 Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
@@ -292,7 +292,7 @@ Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-06-01 vvv
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -313,7 +313,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
-#: last_checked: 2023-06-01
+#: last_checked: 2023-06-04
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -4091,7 +4091,7 @@ Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18191,28
 #: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
 #: XXX auﬂerdem pr¸fen: Wird diese Verbindung auch zur Fuﬂg‰ngerzone gehˆren?
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-04
 #: check_frequency: 45d
 #: next_check: 2023-10-01
 # REMOVED (fr¸her: Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384)
@@ -4566,7 +4566,7 @@ Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10520,15353 10781,15438 10804,1544
 #: corrected_by: srt (q4 -> q2)
 #: note: Michael meint, dass man nur "die Strecke von Heinersdorf kommend _in Richtung Pankow_ empfehlen" kann
 #: note: inkonsistente Ausschilderung: teilweise mit "Radfahrer frei"-Zusatzschild, teilweise Gehweg-Schilder ohne Freigabe
-(Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
+(Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 #: corrected_by: srt (Konkretisierung)
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 #: by ^^^

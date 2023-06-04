@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023)
+#: last_checked: 2023-06-04
+#: next_check: 2023-09-30
+#: valid: -20230930
+	F::inwork 8373,12416
+# 
 #: next_check_id: KAULSDORFER-2023
 #: XXX siehe auch Eintrag in bbbike-temp-blockings
 #: next_check: 2023-07-17
@@ -16,7 +22,7 @@ Gegenverkehrsregelung	X::inwork 22192,6659
 #: next_check_id: BAUMSCHULEN-2023
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
-#: last_checked: 2023-03-14
+#: last_checked: 2023-06-03 (mapillary)
 #: next_check: 2023-08-31
 #: valid: -20230831
 	X::inwork 16328,7005
@@ -135,18 +141,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: next_check: 2023-12-31
 Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # 
-#: next_check_id: KIEFHOLZ-2015 vvv
-#: by: https://nitter.cz/VIZ_Berlin/status/1660863624997662720#m
-#: osm_watch: node id="31260916" version="5"
-#: source_id: viz2021:13.458072,52.486032,23.05.2023,07:00 (Bau einer Fußgängerquerungsanlage, bis 31.05.2023) (inaktiv)
-#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (am nächsten Tag wieder eingeschaltet)
-#: note: hier wurde eine Fußgängerinsel gebaut, vielleicht kommt noch ein Zebrastreifen oder eine Fußgängerampel hinzu? (siehe auch VIZ-Meldung: "Bau einer Fußgängerquerungsanlage")
-#: last_checked: 2023-05-30 vvv
-#: check_frequency: 14d vvv
-	X::inwork 14151,8967
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED (abgebaut?) --- #: next_check_id: KIEFHOLZ-2015 vvv --- #: by: https://nitter.cz/VIZ_Berlin/status/1660863624997662720#m --- #: osm_watch: node id="31260916" version="5" --- #: source_id: viz2021:13.458072,52.486032,23.05.2023,07:00 (Bau einer Fußgängerquerungsanlage, bis 31.05.2023) (inaktiv) --- #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00) (scheint sehr selten zu sein, nicht wieder beobachtet) (Mo 2023-05-23 12:45) (am nächsten Tag wieder eingeschaltet) --- #: note: hier wurde eine Fußgängerinsel gebaut, vielleicht kommt noch ein Zebrastreifen oder eine Fußgängerampel hinzu? (siehe auch VIZ-Meldung: "Bau einer Fußgängerquerungsanlage") --- #: last_checked: 2023-05-30 vvv --- #: check_frequency: 14d vvv ---	X::inwork 14151,8967 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 # REMOVED --- #: note: eigentlich südlich der Kreuzung --- #: source_id: viz2021:13.456209,52.487399,17.01.2022,09:00 (unklar, ob diese Ampel gemeint ist, bis 14.2.2022) (inaktiv) --- #: source_id: viz2021:13.46142,52.48374,14.02.2022,12:27 (bis 28.2.2022) (inaktiv) --- #: source_id: viz2021:13.4617,52.483555,17.01.2022,09:00 (bis 28.2.2022) (mittlerweile bis 1.3.2022) --- #: source_id: viz2021:13.46142,52.48374,25.02.2022,19:42 (zusätzlicher Eintrag) (inaktiv) --- #: also_indoor: traffic --- #: last_checked: 2022-02-23 --- #: next_check: 2022-03-01 --- Kiefholzstr./Puderstr.: Gegenverkehrsregelung	X::inwork 14363,8738
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1491370038774964227 --- #: by: https://pbs.twimg.com/media/FLEUIiEX0AA8mNx?format=jpg&name=large --- #: source_id: viz2021:13.157143,52.539213,09.02.2022,13:00 (bis 12.3.2022) --- #: valid: 20220209-20220312 vvv --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6442,14535 --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6451,14413 --- #: valid ^^^
@@ -224,7 +219,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2023-05-24
+#: last_checked: 2023-06-04
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -277,7 +272,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2023-05-31
+#: last_checked: 2023-06-04
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -2539,7 +2534,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-05-20
+#: last_checked: 2023-06-04
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3865,6 +3860,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+#: off: 2023-06-04 (Sun) gegen 10 Uhr
+	F 26589,-9108
 	X -8647,-41731
 	F -10116,-46120
 #: note: Anforderungsampel

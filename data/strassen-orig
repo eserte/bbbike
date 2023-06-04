@@ -406,7 +406,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
-#: last_checked: 2023-05-24
+#: last_checked: 2023-06-04
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-07-01
 # REMOVED --- #: valid: !20200821-20221122
@@ -1404,7 +1404,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="15"
 #: priority: #C
-#: last_checked: 2023-05-25 (mapillary)
+#: last_checked: 2023-06-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
@@ -10737,7 +10737,7 @@ Brigittenweg	N 19385,-444 19348,-434 19270,-417 19105,-376 18997,-351
 Siriusstr. (Altglienicke)	N 18904,-573 18928,-506 18950,-490 18990,-371
 Siriusstr. (Altglienicke)	NN 18990,-371 18997,-351
 Siriusstr. (Altglienicke)	N 18997,-351 18906,-316 18675,-231
-Auerswaldstr.	N 19498,1465 19638,1436 19817,1404
+Auerswaldstr.	N 19498,1465 19638,1436 19768,1413 19817,1404
 Ortolfstr.	N 18997,-351 19026,-283 19040,-250 19210,-85 19273,35 19297,80 19398,254 19429,337 19470,453 19477,472 19507,556 19559,696 19579,753 19613,851 19625,884 19651,956 19694,1074 19737,1204 19780,1311 19817,1404
 Ortolfstr. [Wohngebiet]	N 19210,-85 19205,-219 19214,-313
 (Ortolfstr., Verbindungsweg)	NN 19214,-313 19026,-283
@@ -10835,6 +10835,7 @@ Am Seegraben (Bohnsdorf, Altglienicke)	HH 19618,-1021 19815,-909 19894,-835 1999
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_23_2333_2480_online.pdf (Benennung)
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/neuer-name-fuer-strassenabschnitt_a382189
 #: XXX Die Straße bekommt den Namen "Am Seegraben"
+#: last_checked: 2023-06-04
 #: next_check: 2023-06-29
 (B96a)	HH 20205,-548 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21506,1768
 (B96a)	NN 21829,1351 21874,1511 21881,1513
@@ -13037,7 +13038,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-04
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
@@ -15827,7 +15828,10 @@ Stiftsweg	N 11001,18528 11239,18832 11263,18842
 Bleicheroder Str.	N 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 #: note: Parkplatz
 (Bleicheroder Str. - Pasewalker Str.)	N 11818,19089 11845,19121
-(Bleicheroder Str. - Pasewalker Str.)	NN 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
+(Bleicheroder Str. - Pasewalker Str.)	NN 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279 11927,19308
+#: osm.highway: service
+#: note: zwar steht auf der Seite der Vesaliusstr. ein "Fußgänger"-Schild, allerdings vom Charakter her eher eine Service-Straße
+(Pasewalker Str. - Vesaliusstr.)	N 11908,19255 11748,19235
 (Pasewalker Str. - Vesaliusstr.)	NN 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Einziehung einer öffentlichen Grün- und Erholungsanlage)
 #: by: https://www.deutsches-architekturforum.de/thread/11142-pankow-ot-von-pankow-kleinere-projekte/?postID=724110#post724110
@@ -16776,7 +16780,7 @@ Hüttendorfer Weg	N 21466,-281 21402,-116
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="5"
-#: last_checked: 2023-03-26 (mapillary)
+#: last_checked: 2023-06-04
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -20334,7 +20338,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2023-05-01
+#: last_checked: 2023-06-04
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

@@ -3174,31 +3174,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
-#: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
-# REMOVED --- #: tempex: 20170630T2000-20170701T2359
-	2::temp 14161,11930 14274,12190
-',
-         'from' => 1685728800,
-         'id' => 2433,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 03.06.2023',
-         'type' => 'gesperrt',
-         'until' => 1685836800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4116,7 +4092,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-05-17
+#: last_checked: 2023-06-03 (mapillary)
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4492,7 +4468,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-04
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 	q4::inwork; 11329,12497 11202,12426
@@ -4707,31 +4683,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
-#: by: https://viz.berlin.de/2023/05/wochenendverkehr-in-berlin-zum-dfb-pokalfinale-und-zur-adfc-sternfahrt/
-#: note: betroffene BVG-Linien fahren nicht zwischen 10h und 21h
-#: source_id: viz2021:13.491317,52.469108,12.06.2022,07:00
-#: source_id: viz2021:13.479325,52.484519,11.06.2022,13:00
-#: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00
-#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023)
-#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023)
-	q4::temp 16507,7254 16428,7144
-	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
-	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
-	q4::temp 15778,8990 15678,8911 15591,8848
-	q4::temp; 15591,8848 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
-',
-         'from' => 1685743200,
-         'id' => 3274,
-         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Puschkinallee, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 4.6.2023 von 7:00 bis 20:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1685901600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4749,6 +4701,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1330851.php (Sperrung 2023)
 #: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
 #: source_id: 2147346494 (inaktiv)
+#: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023)
 # REMOVED ---	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 #: next_check: 2023-06-05
 	q4::inwork; 16169,6064 16510,5917 16868,5938
@@ -5417,7 +5370,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: ZWIESELER-2022
-#: XXX laut osm access=no wegen Baustelle (osm watch in fragezeichen-orig)
+#: osm_watch: way id="43566268" version="25"
+# REMOVED (gelöscht) --- #: osm_watch: way id="43566318" version="20"
+# REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
+#: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
 #: last_checked: 2023-05-06
 #: check_frequency: 30d
@@ -5813,7 +5769,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q4 26300,-11727 26301,-11824 26300,-11864
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 ',
          'from' => 1656194400,
          'id' => 3574,
@@ -6300,61 +6256,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: TRESKOWALLEE-2022
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9442 (Bauzeit: 01.08.2022 bis 16.02.2023)
-#: by: https://www.bahninfo-forum.de/read.php?9,727655,738857#msg-738857 (hier: Bauzeit bis 8.5.2023)
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier: bis Mai 2023)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1230428.php
-#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bvg-baut-in-der-treskowallee-bis-mai-2023-gleise-fuer-neue-strassenbahnen_a353375
-#: by: https://berliner-abendblatt.de/2022/07/27/gleisbauarbeiten-in-der-treskowallee/
-#: by: https://www.bahninfo-forum.de/embed_images/47d/1a0/1f3/bc1/149/fa9/6cd/407/c85/26e/51_1200x920.png
-#: by: https://fahrinfo.vbb.de/him-uploads/1659119978201_bvg_22_BM_tram_treskowallee_aushang_din_a3_220718.pdf
-#: by: https://viz.berlin.de/2022/08/oberschoeneweide-gleisarbeiten/ (Radverkehr kann in der Edisonstraße passieren)
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
-#: by: https://nitter.net/StefanB94551270/status/1595076736168992768
-#: by: https://viz.berlin.de/2023/02/verkehrsvorschau-270223/ (Gleisüberfahrten zwischen An der Wuhlheide und Hegemeisterweg)
-#: by: https://berliner-abendblatt.de/kiez-news/lichtenberg/bauarbeiten-in-treskowallee-staugefahr-id208687
-#: by: https://www.bahninfo-forum.de/read.php?9,727655,761981#msg-761981 (Verlängerung der Straßenbahnarbeiten bis 28.08.2023)
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (bis 28.8.2023)
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/05/20230505_PM_Kurz_angebunden.pdf (nächste Bauphase bis 3.9.2023)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1321251.php
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1321194.php
-#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ersatzverkehr-bis-anfang-september_a380569
-#: by: https://www.berliner-kurier.de/berlin/anwohner-genervt-endlose-bauarbeiten-machen-karlshorster-nebenstrassen-zu-stau-fallen-li.352293?fbclid=IwAR1SjKbVxVIpo5N8RJByxAwIR6ohndpOCkTp9cvwa4bKGdAb2VgDCWpCS08
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/05/BVG-PLUS-06-23-barrierefrei-1.pdf (bis 28.8.2023)
-#: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022) (bis 4.1.2023) (bis 12.1.2023) (inaktiv)
-#: source_id: viz2021:13.517279,52.471065,27.02.2023,07:00 (weiter südlich, bis 30.03.2023) (bis 15.4.2023) (bis 19.4.2023) (inaktiv)
-#: source_id: viz2021:13.51474,52.46874,27.02.2023,07:00 (zusätzlicher Eintrag, bis 15.04.2023) (inaktiv)
-#: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023) (bis 17.05.2023) (inaktiv)
-#: XXX außerdem: hier wird eine neue Ampel gebaut
-#: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv
-#: priority: #A vvv
-#: last_checked: 2023-05-13 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2023-09-03 vvv
-## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
-#	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
-Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
-Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18382,7724 18406,7760
-Treskowallee -> Hegemeisterweg	3::inwork 18382,7724 18406,7760 18325,7778
-Treskowallee -> Modellpark Wuhlheide	3::inwork 18471,7862 18406,7760 18437,7752
-Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18406,7760 18471,7862
-Hegemeisterweg -> Modellpark Wuhlheide	3::inwork 18325,7778 18406,7760 18437,7752
-Modellpark Wuhlheide -> Treskowallee	3::inwork 18437,7752 18406,7760 18382,7724
-Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,7778
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3666,
-         'text' => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein (Stand Mitte Mai 2023: keine Einschränkungen)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -6727,6 +6629,8 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023)
 #: also_indoor: traffic (G,H,B,W)
+#: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
+#: last_checked: 2023-06-04
 #: next_check: 2023-06-30
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -6980,14 +6884,14 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 # REMOVED (landuse wurde geändert) --- #: osm_watch: way id="229647788" version="10"
 # REMOVED (offener Teil des Weges) --- #: osm_watch: way id="850453338" version="9"
 #: osm_watch: way id="1117716285" version="2"
-#: last_checked: 2023-04-22
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2023-05-31
+#: last_checked: 2023-06-04
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-05-31
 	2::inwork 18818,3332 18834,3315
 ',
          'from' => undef,
          'id' => 3750,
-         'text' => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein, möglicherweise bis Ende Mai 2023',
+         'text' => 'Alexander-von-Humboldt-Weg: Straßenbahnübergang kann noch mit Bauzäunen gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7313,8 +7217,8 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.45788,52.50475,19.05.2023,15:43 (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
-#: note: zurzeit (2023-05-31) gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann
-#: last_checked: 2023-06-03 vvv
+#: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -7346,14 +7250,14 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-03 (mapillary)
 	q4::inwork 11599,19171 11634,19187 11671,19204 11748,19235
 ',
          'from' => undef,
          'id' => 3792,
-         'text' => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Anfang Juni 2023, vielleicht auch länger',
+         'text' => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Baustelle unbekannt',
          'type' => 'handicap',
-         'until' => 1686002399
+         'until' => undef
        },
        {
          'data' => '#: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
@@ -7554,6 +7458,40 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'text' => 'Hermsdorfer Str.: Bauarbeiten zwischen Avenue Charles de Gaulle und Oranienburger Str., Fahrbahn gesperrt, Gehweg für Radfahrer frei, außerdem Sperrungen im Kreuzungsbereich Jean-Jaurès-Str./Cyclopstr., vom 10.01.2023 08:00 bis 24.07.2023 17:00',
          'type' => 'handicap',
          'until' => 1690210800
+       },
+       {
+         'data' => '#: next_check_id: TEMPELHOFERWEG-2023
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023)
+	q4::inwork; 12214,5554 12256,5591 12495,5659
+	q4::inwork; 12495,5659 12525,5510 12582,5232
+',
+         'from' => undef,
+         'id' => 3810,
+         'text' => 'Holzmindener Str., Am Straßenbahnhof: Einbahnstraßenregelung',
+         'type' => 'handicap',
+         'until' => 1690815600
+       },
+       {
+         'data' => '#: tempex: (sa) T10-T16
+	q4::temp:clock 10739,16146 10729,16042
+',
+         'from' => undef,
+         'id' => 3811,
+         'recurring' => 1,
+         'source_id' => 'https://bbm-maerkte.de/bauernmarkt-seelower-strasse/',
+         'text' => 'Seelower Str.: samstags 10-16 Uhr Wochenmarkt, Fahrbahn zwischen Schivelbeiner Str. und Dänenstr. gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: laut Hinweisschild auf Kapelle-Ufer
+	q4::inwork 8119,12414 8122,12603
+',
+         'from' => 1686369600,
+         'id' => 3812,
+         'text' => 'Heinrich-von-Gagern-Str.: Sperrung ab 11.06.2023 06:00 bis 26.06.2023 23:00, evtl. sind auch Radfahrer betroffen',
+         'type' => 'handicap',
+         'until' => 1687813200
        }
      
 );

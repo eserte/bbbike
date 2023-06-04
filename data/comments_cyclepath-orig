@@ -1448,7 +1448,7 @@ Verbundsteinpflaster	RW1;RW -3049,25593 -3136,25693 -3196,25763 -3306,25887
 #: by: Andreas Titz
 asphaltiert	RW2;RW2 929,32980 831,33128 746,33231 728,33253 470,33540 81,33971 -445,34937 -570,35185
 # 
-Verbundsteinpflaster	RW2; 26466,-10409 26442,-10452
+	RW8; 26466,-10409 26442,-10452
 #: by: René (refan): vvv
 #: corrected_by: srt (mittlerweile benutzungspflichtig)
 #: note: außerdem als Zweirichtungsweg gekennzeichnet --- möglicherweise für Radfahrer aus Richtung Niederlehme
@@ -1463,7 +1463,7 @@ neu asphaltiert	RW2;RW8 26453,-10235 26450,-10134 26434,-10054 26420,-10035 2638
 # REMOVED (realisiert) --- #: source_id: LS/722-W/20/105 (inaktiv) --- #: XXX Werden hier die Radverkehrsanlagen neu gemacht? Wird es dann auch einen Radweg auf der anderen Seite geben? --- #: last_checked: 2020-11-15 (mapillary) --- #: next_check: 2020-12-21 --- #: note: früher alter Asphalt, und nur Richtung Norden
 Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 26376,-9924 26365,-9875 26381,-9753
 Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 26381,-9753 26429,-9618
-Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 26429,-9618 26679,-8825
+Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 26429,-9618 26589,-9108 26679,-8825
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 26679,-8825 26727,-8668 26749,-8481 26782,-8032
 Gehweg für Radfahrer frei	RW1;RW1 26786,-7968 26790,-7918 26700,-7334 26609,-7136 26506,-6931
 Gehweg für Radfahrer frei	RW1; 26376,-6676 26506,-6931

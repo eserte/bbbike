@@ -3175,7 +3175,7 @@ Krimnitzer Weg: Waldweg	Q2 26429,-1876 26489,-1884
 Krimnitzer Weg: unbefestigte Straße	Q2 26489,-1884 26547,-1894 26662,-1914 26750,-1932
 Sielower Weg: Beton	Q0 26398,-1645 26500,-1672 26600,-1698 26707,-1726
 Zaucher Weg: asphaltiert, Sand auf der Fahrbahn	Q1 26547,-1894 26600,-1698 26663,-1443
-Peitzer Weg: asphaltiert, mit Schäden	Q1 26719,-1354 26614,-1316 26520,-1255
+Peitzer Weg: asphaltiert, mit leichten Schäden	Q0 26719,-1354 26614,-1316 26520,-1255
 Peitzer Weg: asphaltiert	Q0 26520,-1255 26399,-1118 26369,-1074 26303,-972 26230,-858
 Fehrower Steig: Asphalt	Q0 26369,-1074 26445,-1037
 Krugauer Steig: Waldweg	Q2 26303,-972 26389,-932
@@ -9474,7 +9474,7 @@ Schwarzwurzel-Park: Gehwegplatten	Q0 20698,18359 20814,18341 20823,18329
 (Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20761,15856 20719,15749 20731,15742
 (Pasewalker Str. - Vesaliusstr.): Beton	Q0 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 (Pasewalker Str. - Vesaliusstr.): Gehwegplatten	Q0 11884,19169 11841,19188 11763,19191
-(Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
+(Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279 11927,19308
 (Flaschenhalspark, Weg entlang den Bahngleisen): Beton	Q0 8423,9529 8414,9366 8393,9293 8374,9291
 (Yorckstr. - Flaschenhalspark): Beton	Q0 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099 8344,9085
@@ -13686,7 +13686,8 @@ Solquellstr.: Kopfsteinpflaster	Q2 4034,24181 4031,24218 4029,24235
 Solquellstr.: Beton mit einigen Schäden	Q1 4029,24235 4039,24296 4073,24393 4111,24488
 Brettnacher Str.: guter Asphalt	Q0 2146,2878 2108,2883 2021,2890 1970,2974 1884,3106 1825,3202 1894,3245
 Schrimmer Weg: schlechtes Kopfsteinpflaster	Q3 17949,180 17879,127
-Auerswaldstr.: schlechtes Kopfsteinpflaster	Q3 19498,1465 19638,1436 19817,1404
+Auerswaldstr.: schlechtes Kopfsteinpflaster	Q3 19498,1465 19638,1436 19768,1413
+Auerswaldstr.: Asphalt	Q0 19768,1413 19817,1404
 Ernst-Augustin-Str.: Asphalt	Q0 19743,3026 19778,3064 19848,3140 19890,3186 19913,3210 19949,3249
 Leuchtenburgstr.: Beton	Q0 794,1572 857,1300 862,1282 932,1005
 Engadiner Weg: guter Asphalt	Q0 3716,2063 3818,2070 3851,2148 3805,2196
@@ -18289,6 +18290,7 @@ Löwenstammstr.: Asphalt	Q0 -7961,15552 -7865,15867
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10860 16425,10839
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
+(Pasewalker Str. - Vesaliusstr.): Asphalt mit einigen Schäden	Q1 11908,19255 11748,19235
 (Rampe S-Bhf. Buch): Verbundsteinpflaster	Q1 16044,25608 16077,25635 16065,25595 16071,25591
 (Wiltbergstr. - südlicher Bahnhofseingang S-Bhf. Buch): Beton	Q1 16220,25716 16071,25591
 (Ferdinand-Buisson-Str. - Pankeweg): unbefestigte Straße	Q2 12948,21421 12980,21411

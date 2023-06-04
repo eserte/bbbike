@@ -1606,6 +1606,7 @@ Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
 ###################################################################### 
 # elsewhere in Brandenburg
 # 
+Königs Wusterhausen - Zeuthen	1:igndisp 26442,-10452 26446,-10394
 Neumeichow - Blankenburg	1 46866,88892 47130,88771 47222,88669 47396,88566 47545,88381 47675,88141
 Zinnaer Str. (Jüterbog)	1 -10247,-46356 -10245,-46277 -10240,-46248 -10236,-46240
 Markt (Jüterbog)	1 -10456,-46448 -10422,-46587
@@ -3651,16 +3652,18 @@ Wateweg: Bauarbeiten, Weg komplett gesperrt	2::inwork 21131,8739 21124,8792
 # 
 #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung)
-#: XXX Laut Schilder Eröffnung Ende Mai 2023
-#: last_checked: 2023-04-22 vvv
-#: next_check: 2023-05-31 vvv
+#: XXX Laut Schilder Eröffnung Ende Mai 2023 --- am 04.06.2023 standen aber immer noch Bauzäune
+#: last_checked: 2023-06-04 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2023-05-31 vvv
 #: osm_watch: way id="1155774800" version="1"
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315
 #: osm_watch: way id="1155774804" version="2"
 Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598
 #: osm_watch: way id="1155774792" version="1"
 (Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: TELTOWKANALUFERWEG-2023
@@ -3717,7 +3720,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2023-05-12 vvv
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -3883,7 +3886,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: source_id: 226110967 (hier: bis 27.6.2023)
 #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/ (SEV bis 26.8.2022, danach gibt's Hilfsbrücken für die Bahn)
 #: note: siehe auch temp-blockings-Eintrag
-#: last_checked: 2022-07-12 vvv
+#: last_checked: 2023-06-04 vvv
 #: next_check: 2023-08-28 vvv
 #: valid: -20230828 vvv
 # REMOVED --- #: next_check: 2023-06-27 vvv
@@ -3891,7 +3894,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: osm_watch: way id="8042965" version="22"
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 #: osm_watch: way id="787699937" version="8"
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q4 26300,-11727 26301,-11824 26300,-11864
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -3927,7 +3930,7 @@ Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
 #: by: https://berliner-abendblatt.de/2022/12/16/umbau-der-st-hedwigs-kathedrale-im-zeitplan-aber-teurer/
-#: last_checked: 2023-05-10
+#: last_checked: 2023-06-04
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4048,7 +4051,7 @@ Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesper
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2023-05-01 vvv
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-10 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4228,7 +4231,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-05-23
+#: last_checked: 2023-06-04
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4236,7 +4239,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
-#: last_checked: 2023-05-23 vvv
+#: last_checked: 2023-06-04 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4320,7 +4323,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-06-01
+#: last_checked: 2023-06-04
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4395,7 +4398,7 @@ Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,123
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-04
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -4599,7 +4602,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollständig aktiv; am 2023-02-10 war das Einbahnstraßenschild verschwunden, das Einfahrt-verboten-Schild aber noch da
-#: last_checked: 2023-06-01
+#: last_checked: 2023-06-04
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 # REMOVED --- #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4821,7 +4824,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
-#: last_checked: 2023-05-18 (architektur-urbanistik)
+#: last_checked: 2023-06-04
 #: check_frequency: 90d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
