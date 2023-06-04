@@ -326,6 +326,9 @@ function doLeaflet() {
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 19, attribution: osmAttribution});
 
+    var osm04TileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 19, attribution: osmAttribution});
+    osm04TileLayer.setOpacity(0.4);
+
     var cyclosmUrl = 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png';
     var cyclosmAttribution = '\u00a9 <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors. Tiles style by <a href="https://www.cyclosm.org">CyclOSM</a> hosted by <a href="https://openstreetmap.fr">OpenStreetMap France</a>';
     var cyclosmTileLayer = new L.TileLayer(cyclosmUrl, {maxZoom: 19, attribution: cyclosmAttribution});
@@ -420,6 +423,7 @@ function doLeaflet() {
 	 {label:"BBBike",        layer:bbbikeTileLayer,       abbrev:'B',  inControl:true  }
 	,{label:"BBBike (dull)", layer:bbbike04TileLayer,     abbrev:'B04',inControl:false }
 	,{label:"OSM",           layer:osmTileLayer,          abbrev:'O',  inControl:true  }
+	,{label:"OSM (dull)",    layer:osm04TileLayer,        abbrev:'O04',inControl:true  }
 	,{label:"CyclOSM",       layer:cyclosmTileLayer,      abbrev:'C',  inControl:true  }
 	,{label:"Berlin Aerial", layer:berlinAerialTileLayer, abbrev:'A',  inControl:true  }
 	,{label:"BVG",           layer:bvgStadtplanLayer,     abbrev:'BVG',inControl:false }
