@@ -11713,7 +11713,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED ---	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14828,10561 14843,10621 14882,10732 14904,10812
+# REMOVED ---	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14828,10561 14843,10621 14882,10732 14886,10748 14904,10812
 EOF
      },
      { from  => undef, # 
@@ -29798,16 +29798,18 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2022-06-13 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
-       until => $isodate2epoch->("2022-06-18 09:00:00"), # 1560549599, # 2019-06-14 23:59
-       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 14. Juni 2022 18 Uhr bis 18. Juni 2022 9 Uhr',
+     { from  => $isodate2epoch->("2023-06-05 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
+       until => $isodate2epoch->("2023-06-10 09:00:00"), # 1560549599, # 2019-06-14 23:59
+       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 06. Juni 2023 18 Uhr bis 10. Juni 2023 9 Uhr',
+       periodic => 1,
+       recurrences => [['yearly', days => 5, months => 6]],
        type  => 'gesperrt',
        source_id => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
        data  => <<EOF,
-#: source_id: 2147344332
-#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00
-#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00
-#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00
+#: source_id: 2147344332 (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6694,12627 7031,12320 7051,12426
@@ -31859,9 +31861,9 @@ EOF
 #: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00
 #: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00
-#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023)
-#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023)
-#: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023)
+#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023) (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023) (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
@@ -36388,8 +36390,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: osm_watch: way id="1096678426" version="5"
-#: last_checked: 2023-05-31 (mapillary)
+#: osm_watch: way id="1096678426" version="6"
+#: last_checked: 2023-06-03 (osm)
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 EOF
@@ -38054,6 +38056,8 @@ EOF
 #: by: https://www.berliner-zeitung.de/mensch-metropole/bahnhofstrasse-koepenick-bvg-stau-und-stress-in-koepenick-das-chaos-koennte-noch-jahre-andauern-tram-bus-senat-db-li.346665
 #: by: https://viz.berlin.de/2023/05/sonderfahrstreifen-bahnhofstr/
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/in-der-bahnhofstrasse-sollen-verschiedene-massnahmen-gegen-den-stau-helfen_a381100
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (temporäre Busspur)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331169.php
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -38786,7 +38790,7 @@ EOF
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
 #: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
-#: last_checked: 2023-06-04 vvv
+#: last_checked: 2023-06-05 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -38839,7 +38843,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
 #: source_id: bvg2021:347#BVG321063_0
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-05
 #: check_frequency: 30d
 #: next_check: 2023-07-22
 	q4::inwork 15090,10140 15050,10160
@@ -39043,6 +39047,34 @@ EOF
        data  => <<EOF,
 #: note: laut Hinweisschild auf Kapelle-Ufer
 	q4::inwork 8119,12414 8122,12603
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rummelsburger Bucht: neues Wohngebiet, größtenteils noch Baustelle, unter Umständen Befahren/Betreten verboten',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: RUMMELSBURGERBUCHT-2021
+#: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
+#: XXX Wann sind die Straßen offen? vvv
+#: last_checked: 2023-06-05 vvv
+#: check_frequency: 60d vvv
+Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
+Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
+Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+EOF
+     },
+     { from  => 1686434400, # 2023-06-11 00:00
+       until => 1692395999, # 2023-08-18 23:59
+       text  => 'Parrisiusstr.: Bauarbeiten zwischen Bahnhofstr. und Borgmannstr., Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331104.php',
+       data  => <<EOF,
+#: next_check_id: PARRISIUS-2023
+	q4::inwork 22531,5871 22358,5918
 EOF
      },
     );

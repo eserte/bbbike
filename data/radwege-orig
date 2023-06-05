@@ -323,12 +323,13 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-06-04 vvv
+#: last_checked: 2023-06-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
 asphaltiert	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
+#: note: kurz vor der Kreuzung benutzungspflichtig
 asphaltiert	RW1; 14218,10430 14405,10340 14558,10264
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -836,11 +837,11 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 #: note: Müllerstr., Richtung Norden
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
-#: osm_watch: way id="25217949" version="45"
+#: osm_watch: way id="25217949" version="46"
 #: last_checked: 2023-06-02 (mapillary)
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
-#: osm_watch: way id="374344536" version="15"
+#: osm_watch: way id="374344536" version="16"
 #: last_checked: 2023-06-02 (mapillary)
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
@@ -1212,7 +1213,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-06-04 vvv
+#: last_checked: 2023-06-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2795,7 +2796,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-05-30 vvv
+#: last_checked: 2023-06-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-07-31 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -2805,12 +2806,12 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552
 #: last_checked ^^^
 #: check_frequency ^^^
 	RW3;RW2 14671,10751 14680,10837
-	RW3; 15261,10738 15163,10758 15004,10791 14904,10812
+	RW3; 15261,10738 15163,10758 15081,10775 15004,10791 14904,10812
 	RW4; 14904,10812 14810,10832 14717,10855 14680,10837
 	RW4; 14680,10837 14717,10855 14810,10832 14904,10812
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
 # REMOVED --- #: XXX Markierungen fehlen hier noch --- #: osm_watch: way id="439421759" version="9" --- #: osm_watch: way id="384136808" version="13" --- #: source_id: 2147342887 --- #: last_checked: 2018-07-01 --- #: check_frequency: 14d
-	RW4; 14904,10812 15004,10791 15163,10758 15261,10738
+	RW4; 14904,10812 15004,10791 15081,10775 15163,10758 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
 	RW1; 13999,9842 13890,9894
@@ -5950,7 +5951,7 @@ asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 130
 	RW6;RW6 16384,12874 16385,12825 16431,12825 16484,12825
 	RW6;RW6 16430,12848 16431,12825 16428,12741
 # REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
-# REMOVED ---	RW0; 15261,10738 15163,10758 15004,10791 14904,10812
+# REMOVED ---	RW0; 15261,10738 15163,10758 15081,10775 15004,10791 14904,10812
 #: by: anonymous
 asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW6;RW6 10332,11929 10364,11896

@@ -948,7 +948,9 @@ Oberspreestr. [Nebenfahrbahn]	1s 19965,5101 19957,5083 19940,5090
 Südring, Virchow-Klinikum	1 6305,14964 6319,14821 6252,14812
 Südring, Virchow-Klinikum	1 6252,14812 6231,14952
 Am Feuchten Winkel	1 12020,19333 11937,19175
-Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 15261,10738 15163,10758 15004,10791
+Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 15261,10738 15163,10758 15081,10775 15004,10791
+Hauptstr. -> Ingrid-Reschke-Str.: Mittelstreifen, unbequemes Überqueren	3::igndisp 15261,10738 15163,10758 15151,10699
+Ingrid-Reschke-Str. -> Hauptstr.: Mittelstreifen, unbequemes Überqueren	3::igndisp 15151,10699 15163,10758 15081,10775
 Wildmeisterdamm	1 15207,2313 15143,2315
 Brixplatz	1 179,12434 269,12462 329,12503
 Schönfließer Str.	1 3145,26256 3112,26253
@@ -3310,6 +3312,9 @@ weites Drängelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
+An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
+Paul-und-Paula-Promenade	2::inwork 14886,10748 14984,10677
+Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, Zugang zur Rüdersdorfer Str. ist gesperrt	2::inwork 12788,11898 12891,12008
 Falkenberger Str. - Hansastr: Bauarbeiten, gesperrt	2::inwork 15819,16857 15892,16834
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555

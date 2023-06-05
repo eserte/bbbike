@@ -4313,7 +4313,39 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147344332 (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
+	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
+	3 6694,12627 7031,12320 7051,12426
+	3 6694,12627 7031,12320 7001,12274
+	3 7654,12464 7627,12380 7603,12353
+	3 7001,12274 7031,12320 7051,12426
+	3 7001,12274 7031,12320 6694,12627
+	3 7051,12426 7031,12320 7001,12274
+	3 7051,12426 7031,12320 6694,12627
+	3 7603,12353 7627,12380 7654,12464
+',
+         'from' => 1685980800,
+         'id' => 3113,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              5,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
+         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 06. Juni 2023 18 Uhr bis 10. Juni 2023 9 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1686380400
+       },
        undef,
        undef,
        undef,
@@ -5870,8 +5902,8 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: osm_watch: way id="1096678426" version="5"
-#: last_checked: 2023-05-31 (mapillary)
+#: osm_watch: way id="1096678426" version="6"
+#: last_checked: 2023-06-03 (osm)
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 ',
@@ -6754,6 +6786,8 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://www.berliner-zeitung.de/mensch-metropole/bahnhofstrasse-koepenick-bvg-stau-und-stress-in-koepenick-das-chaos-koennte-noch-jahre-andauern-tram-bus-senat-db-li.346665
 #: by: https://viz.berlin.de/2023/05/sonderfahrstreifen-bahnhofstr/
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/in-der-bahnhofstrasse-sollen-verschiedene-massnahmen-gegen-den-stau-helfen_a381100
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (temporäre Busspur)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331169.php
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -7218,7 +7252,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
 #: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
-#: last_checked: 2023-06-04 vvv
+#: last_checked: 2023-06-05 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -7275,7 +7309,7 @@ Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
 #: source_id: bvg2021:347#BVG321063_0
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-05
 #: check_frequency: 30d
 #: next_check: 2023-07-22
 	q4::inwork 15090,10140 15050,10160
@@ -7492,6 +7526,36 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'text' => 'Heinrich-von-Gagern-Str.: Sperrung ab 11.06.2023 06:00 bis 26.06.2023 23:00, evtl. sind auch Radfahrer betroffen',
          'type' => 'handicap',
          'until' => 1687813200
+       },
+       {
+         'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
+#: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
+#: XXX Wann sind die Straßen offen? vvv
+#: last_checked: 2023-06-05 vvv
+#: check_frequency: 60d vvv
+Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
+Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
+Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3813,
+         'text' => 'Rummelsburger Bucht: neues Wohngebiet, größtenteils noch Baustelle, unter Umständen Befahren/Betreten verboten',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: PARRISIUS-2023
+	q4::inwork 22531,5871 22358,5918
+',
+         'from' => 1686434400,
+         'id' => 3814,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331104.php',
+         'text' => 'Parrisiusstr.: Bauarbeiten zwischen Bahnhofstr. und Borgmannstr., Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
+         'type' => 'handicap',
+         'until' => 1692395999
        }
      
 );
