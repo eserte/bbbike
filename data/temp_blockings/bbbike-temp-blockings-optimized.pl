@@ -1674,6 +1674,7 @@ push @temp_blocking,
 #: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt\'s den Termin)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331265.php
 #: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
 # REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 # REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
@@ -1702,7 +1703,7 @@ push @temp_blocking,
                               '2020-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (16.06.2023 - 18.06.2023)',
+         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag von der Alten Försterei bis in die Altstadt Köpenick (16.06.2023 - 18.06.2023)',
          'type' => 'gesperrt',
          'until' => 1687111200
        },
@@ -4318,6 +4319,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023)
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6694,12627 7031,12320 7051,12426
@@ -4443,7 +4445,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-05-28 vvv
+#: last_checked: 2023-06-06 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5731,7 +5733,36 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: Juni 2022: Special Olympics Nationale Spiele
+#: note: Juni 2023: Special Olympics World Games
+#: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00
+#: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00
+#: by: https://viz.berlin.de/2022/06/sons-2022/
+#: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
+#: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1217800.php
+#: by: https://viz.berlin.de/2023/06/tiergarten_grossveranstaltungen/
+#: XXX 09.06.2023 06:00 Uhr bis 28.06.2023, ca. 23:00 Uhr auch Scheidemannstraße zwischen Ebertstraße und Heinrich-von-Gagern-Straße
+#: XXX 11.06.2023 06:00 bis 28.06.2023, ca. 23:00 Uhr auch Spreeweg Richtung Paulstraße zwischen Großer Stern und John-Foster-Dulles-Allee + John-Foster-Dulles-Allee
+#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
+#: next_check: 2023-06-08
+	2::temp 8538,12245 8592,12252
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8538,12245 8522,12239
+	2::temp 8538,12245 8522,12187
+Straße des 17. Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
+',
+         'from' => 1686024000,
+         'id' => 3563,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: Sportveranstaltung, Straßen auch für Radfahrer gesperrt (vom 7.6.2023 06:00 Uhr bis 28.6.2023 23:00 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1687986000
+       },
        undef,
        undef,
        undef,
@@ -5743,7 +5774,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-05-25
+#: last_checked: 2023-06-06
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -6203,8 +6234,8 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
+#: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023)
-#: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -7252,7 +7283,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
 #: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
-#: last_checked: 2023-06-05 vvv
+#: last_checked: 2023-06-06 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
