@@ -1818,25 +1818,25 @@ push @temp_blocking,
 #: note: Öffnung im Sommer ab 4:30 Uhr (laut Sicherheitsdienst)
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08); mapillary tagsüber am 2022-03-08 (Frauentag)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
-Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
-Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
-(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21484,7326 21346,7321 21284,7289 21233,7246
-(Straße B, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21346,7321 21341,7487
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21153,7393 21207,7280 21233,7246 21181,7199 21243,7135
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21233,7246 21294,7189
-(Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
-(Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
+Am Wuhleufer, Innovationspark Köpenick	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
+Straße am Wald, Innovationspark Köpenick	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
+Verlängerte Köpenicker Str.	2::night:weekend 21291,7048 21345,7000 21359,6983
+(Straße A, Innovationspark Wuhlheide)	2::night:weekend 21484,7326 21346,7321 21284,7289 21233,7246
+(Straße B, Innovationspark Wuhlheide)	2::night:weekend 21346,7321 21341,7487
+(Straße E, Innovationspark Wuhlheide)	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
+(Straße E, Innovationspark Wuhlheide)	2::night:weekend 21153,7393 21207,7280 21233,7246 21181,7199 21243,7135
+(Straße E, Innovationspark Wuhlheide)	2::night:weekend 21233,7246 21294,7189
+(Straße F, Innovationspark Wuhlheide)	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
+(Straße G, Innovationspark Wuhlheide)	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide)	2::night:weekend 21582,6842 21560,6869
-(Innovationspark Wuhlheide - Wuhlewanderweg): Tor nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night::weekend 21491,7182 21547,7208
+(Innovationspark Wuhlheide - Wuhlewanderweg)	2::night::weekend 21491,7182 21547,7208
 #: tempex ^^^
 #: note: ^^^
 ',
          'from' => undef,
          'id' => 1808,
          'recurring' => 1,
-         'text' => 'Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt',
+         'text' => 'Innovationspark Köpenick: nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -1846,10 +1846,10 @@ Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr, am Wochenende und a
 	2::night -11650,590 -11603,721 -11615,853
 	2::night -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
 	2::night -11615,853 -11510,810 -11412,784 -11392,762 -11231,696
-(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12205,732 -12182,788 -12154,963 -12180,1131 -12161,1211 -12141,1267 -12133,1323 -12135,1358 -12166,1384
-Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12265,-418 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
-Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12332,585 -12276,554 -12115,409
+(Ökonomieweg, Neuer Garten)	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12205,732 -12182,788 -12154,963 -12180,1131 -12161,1211 -12141,1267 -12133,1323 -12135,1358 -12166,1384
+Neuer Garten, Westufer des Heiligen Sees	2::night -12265,-418 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
+Neuer Garten (am Portierhaus) - Weinmeisterstr.	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
+Neuer Garten	2::night -12332,585 -12276,554 -12115,409
 	2::night -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
 	2::night -12449,-186 -12440,-181 -12449,-134 -12424,-107
 (Ökonomieweg - Leistikowstr.)	2::night -12205,732 -12266,731 -12297,738
@@ -1865,19 +1865,19 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '#: tempex: sunset-T06 vvv
 (Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15820,-1131 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13829,-1034 -14159,-1119 -14173,-1013
-(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
-(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14611,-1329 -14858,-1215 -14869,-1120
-(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13728,-807 -13995,-826
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14025,-829 -14163,-840
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14212,-844 -14366,-858
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
-Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14389,-859 -14910,-903 -15684,-966
-(Am Grünen Gitter - Schloss): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14186,-868
-(Am Grünen Gitter - Schloss): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14191,-818 -14199,-707 -14205,-644
+(Am Grünen Gitter, Sanssouci)	2::night -13829,-1034 -14159,-1119 -14173,-1013
+(Ökonomieweg, Sanssouci)	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
+(Lennestr. - Ökonomieweg, Sanssouci)	2::night -14611,-1329 -14858,-1215 -14869,-1120
+(Affengang, Sanssouci)	2::night -14129,-1258 -14131,-1181 -14159,-1119
+Hauptallee	2::night -13728,-807 -13995,-826
+Hauptallee	2::night -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
+Hauptallee	2::night -14025,-829 -14163,-840
+Hauptallee	2::night -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
+Hauptallee	2::night -14212,-844 -14366,-858
+Hauptallee	2::night -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
+Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
+(Am Grünen Gitter - Schloss)	2::night -14173,-1013 -14186,-868
+(Am Grünen Gitter - Schloss)	2::night -14191,-818 -14199,-707 -14205,-644
 #: tempex ^^^
 ',
          'from' => undef,
