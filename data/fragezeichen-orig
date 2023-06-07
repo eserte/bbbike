@@ -79,7 +79,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-06-04
+#: last_checked: 2023-06-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -117,7 +117,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2023-06-05
+#: last_checked: 2023-06-07
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -1728,7 +1728,7 @@ Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::project
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf
-#: osm_watch: way id="352683182" version="17"
+#: osm_watch: way id="352683182" version="18"
 #: osm_watch: way id="501402607" version="11"
 #: last_checked: 2023-06-03
 #: check_frequency: 360d
@@ -2956,7 +2956,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: next_check: 2023-12-31
 Hermannstr. (Thomasstr. - Werbellinstr.): Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12185,7381 12158,7449 12123,7549 12090,7651 12081,7679 12075,7696 12057,7744 12041,7788 12025,7852 12001,7937 11979,8014
 #: by: http://www.infravelo.de/projekt/hermannstrasse-noerdliche-bauabschnitt/ (vermutlich auch eine Umbenennung, nördlich Werbellinstr., 3. Quartal 2023 - 3. Quartal 2023)
-#: last_checked: 2023-05-14
+#: last_checked: 2023-06-04 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-09-30
 Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstreifens	?::projected 11979,8014 11963,8074 11933,8198 11931,8206 11920,8252 11915,8279 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
@@ -6879,11 +6879,12 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs	?::projected 5043,14671 4897,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_49_3361_3472_online.pdf (Einziehung der Grünanlage zum 19.12.2022, neuer Weg wird erwähnt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (Eingruppierung des neuen Wegs in das Straßenreinigungsverzeichnis)
 #: XXX außerdem: Grünanlage in flaechen-orig verkleinern, sobald die Bauarbeiten tatsächlich beginnen
+#: XXX Stand Juni 2023: Weg wurde noch nicht entfernt, auch keine anderen Anzeichen von Bauarbeiten
 # REMOVED (done) --- #: XXX außerdem: den Namen des Weges "(Prenzlauer Allee - Lilli-Henoch-Str.)" anpassen
 # REMOVED (offen) --- #: XXX siehe neuen Weg *südlich* des Geländes
 # REMOVED --- #: osm_watch: way id="18677670" version="15"
 #: priority: #D
-#: last_checked: 2023-03-16
+#: last_checked: 2023-06-02
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-01
 Schule am Planetarium: Weg wird entfallen, neue Wege nördlich und südlich des Schulgeländes werden entstehen	?::projected 12208,15108 12103,15218
@@ -8799,7 +8800,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 # REMOVED (eingetragen) --- #: XXX * bestehende Untere Kynaststr. -> An der Mole (PLZ=10317 laut LOR)
 # REMOVED --- #: XXX * Paul-und-Paula-Promenade --- #: XXX * Rummelsburger Seeblick (PLZ=10317 laut LOR) --- #: XXX * Ulrich-Plenzdorf-Str. (PLZ=10317 laut LOR) --- #: XXX * An den Eiswerken --- #: XXX * Heiner-Carow-Str. --- #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR) --- #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraße in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, wäre aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2023-06-05 vvv
+#: last_checked: 2023-06-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED (nicht mehr notwendig) --- Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15221,10621 15253,10730 14915,10785
 # REMOVED (-> strassen-orig) --- Ingrid-Reschke-Str.: vermutlich asphaltiert, noch nicht offiziell offen	? 15163,10758 15151,10699 15140,10647 15138,10638
@@ -9404,7 +9405,7 @@ Weiterführung der Peter-Huchel-Str.: Qualität?	? -13257,1337 -13272,1304 -13424,
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11669 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_12_1285_1328_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="125758273" version="14"
-#: osm_watch: way id="1152661788" version="3"
+#: osm_watch: way id="1152661788" version="4"
 # REMOVED (realisiert) --- wird hier die Kleingartenanlage aufgehoben?
 #: XXX Bebauungsplan 5-107 in Spandau
 #: XXX neue private Erschließungsstraßen, fehlen in Berlin.coords.data

@@ -35653,6 +35653,9 @@ EOF
 #: note: Juni 2023: Special Olympics World Games
 #: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00
 #: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00
+#: source_id: viz2021:13.37688,52.51775,07.06.2023,06:00 (Ebertstr., bis 28.06.2023)
+#: source_id: viz2021:13.351216,52.514376,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
+#: source_id: viz2021:13.36968,52.51571,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
 #: by: https://viz.berlin.de/2022/06/sons-2022/
 #: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
@@ -37855,7 +37858,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023)
 #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
 #: last_checked: 2023-06-04
@@ -38787,7 +38790,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Modersohnbrücke: nach Brandschaden Radweg Richtung Norden gesperrt, Behinderungen auf dem Radweg Richtung Süden möglich',
+       text  => 'Modersohnbrücke: nach Brandschaden ist der Radweg Richtung Norden gesperrt, aber meistens gibt es Lücken in den Absperrungen',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1326349.php (unbestimmte Zeit)
@@ -38798,11 +38801,11 @@ EOF
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
 #: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
-#: last_checked: 2023-06-06 vvv
+#: last_checked: 2023-06-07 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
-Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
-Richtung Norden	q3::inwork; 14076,11057 14096,11134 14134,11272
+# REMOVED --- Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
+Richtung Norden	q2::inwork; 14076,11057 14096,11134 14134,11272
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
