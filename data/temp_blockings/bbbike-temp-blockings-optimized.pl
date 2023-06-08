@@ -4319,7 +4319,8 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023)
+#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
+#: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023)
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6694,12627 7031,12320 7051,12426
@@ -4570,7 +4571,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-08
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4842,7 +4843,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-05-08
+#: last_checked: 2023-06-08
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -4850,7 +4851,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mai 2023: Bauarbeiten mit möglichen Sperrungen im mittleren Abschnitt)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Juni 2023: zurzeit keine Bauarbeiten)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5736,20 +5737,22 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: note: Juni 2022: Special Olympics Nationale Spiele
 #: note: Juni 2023: Special Olympics World Games
-#: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00
-#: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00
-#: source_id: viz2021:13.37688,52.51775,07.06.2023,06:00 (Ebertstr., bis 28.06.2023)
-#: source_id: viz2021:13.351216,52.514376,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
-#: source_id: viz2021:13.36968,52.51571,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
+#: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00 (inaktiv)
+#: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00 (inaktiv)
+#: source_id: viz2021:13.37688,52.51775,07.06.2023,06:00 (Ebertstr., bis 28.06.2023) (inaktiv)
+#: source_id: viz2021:13.351216,52.514376,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023) (inaktiv)
+#: source_id: viz2021:13.36968,52.51571,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023) (inaktiv)
+#: source_id: viz2021:13.376813,52.516225,07.06.2023,06:00 (Ebertstr., bis 28.06.2023)
+#: source_id: viz2021:13.36452,52.515396,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
+#: source_id: viz2021:13.370292,52.516745,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
 #: by: https://viz.berlin.de/2022/06/sons-2022/
 #: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1217800.php
 #: by: https://viz.berlin.de/2023/06/tiergarten_grossveranstaltungen/
-#: XXX 09.06.2023 06:00 Uhr bis 28.06.2023, ca. 23:00 Uhr auch Scheidemannstraße zwischen Ebertstraße und Heinrich-von-Gagern-Straße
 #: XXX 11.06.2023 06:00 bis 28.06.2023, ca. 23:00 Uhr auch Spreeweg Richtung Paulstraße zwischen Großer Stern und John-Foster-Dulles-Allee + John-Foster-Dulles-Allee
 #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
-#: next_check: 2023-06-08
+#: next_check: 2023-06-10
 	2::temp 8538,12245 8592,12252
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -5759,10 +5762,12 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 	2::temp 8538,12245 8522,12187
 Straße des 17. Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
+#: note: 09.06.2023 06:00 Uhr bis 28.06.2023, ca. 23:00 Uhr auch Scheidemannstraße zwischen Ebertstraße und Heinrich-von-Gagern-Straße
+Scheidemannstraße	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 ',
          'from' => 1686024000,
          'id' => 3563,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: Sportveranstaltung, Straßen auch für Radfahrer gesperrt (vom 7.6.2023 06:00 Uhr bis 28.6.2023 23:00 Uhr)',
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr. und Scheidemannstr.: Sportveranstaltung, Straßen auch für Radfahrer gesperrt (vom 7.6.2023 06:00 Uhr bis 28.6.2023 23:00 Uhr)',
          'type' => 'gesperrt',
          'until' => 1687986000
        },
@@ -6825,7 +6830,8 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
-#: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023)
+#: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten)
+#: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023)
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
@@ -7000,7 +7006,7 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2023-05-13 vvv
+         'data' => '#: last_checked: 2023-06-08 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX möglicherweise Asphaltierung?
@@ -7013,9 +7019,9 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
 ',
          'from' => 1679936842,
          'id' => 3756,
-         'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023',
+         'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023, evtl. länger',
          'type' => 'handicap',
-         'until' => 1688162400
+         'until' => undef
        },
        undef,
        undef,
@@ -7239,7 +7245,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: osm_watch: way id="25370128" version="11"
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren
 #: priority: #A
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-01 (baustellen-doku)
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 	2::inwork 22280,6128 22296,6170
@@ -7286,7 +7292,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.45801,52.504908,19.05.2023,15:43 (kein Endedatum)
 #: osm_watch: note 3695963 3
 #: note: manchmal gibt es Lücken in den Absperrungen, so dass man ohne Bordsteinbenutzung auf die Fahrbahn kann, gesehen: 2023-05-31, 2023-06-04 nachmittags (aber am Vormittag des gleichen Tages war noch alles zu)
-#: last_checked: 2023-06-07 vvv
+#: last_checked: 2023-06-08 vvv
 #: check_frequency: 3d vvv
 # REMOVED --- #: next_check: 2023-05-22 vvv
 # REMOVED --- Richtung Süden	q2::inwork; 14134,11272 14096,11134 14076,11057
@@ -7565,7 +7571,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-06-05 vvv
+#: last_checked: 2023-06-08 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -7582,6 +7588,7 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
        },
        {
          'data' => '#: next_check_id: PARRISIUS-2023
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 	q4::inwork 22531,5871 22358,5918
 ',
          'from' => 1686434400,
