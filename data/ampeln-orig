@@ -96,8 +96,8 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: next_check_id: HAEMMERLING-2022
 #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
 #: last_checked: 2023-05-13
-#: next_check: 2023-06-30
-#: valid: -20230630
+#: next_check: 2023-07-11
+#: valid: -20230711
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
@@ -1572,7 +1572,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="3"
-#: last_checked: 2023-05-11 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2023-06-09 (manchmal ausgeschaltet (abends? selten?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -2528,7 +2528,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-09
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -4553,6 +4553,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B 29414,24387
 	B 32471,26060
 #: by: mapillary vvv
+	X 40580,9711
 	X -7413,16362
 	X -8507,-9605
 	X -3184,-4161

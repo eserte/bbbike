@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
 Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -181,6 +182,7 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
+Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 Am Landwehrkanal: Parkweg, Fußgänger	q3 12739,9576 12796,9548 12919,9584 12981,9672
@@ -3386,7 +3388,6 @@ Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert: gesperrt, ggfs. schieben	q3:inwork::igndisp 13333,9929 13271,9927 13225,9897
-Am Flutgraben: Bauarbeiten, Weg ist gesperrt, enger Pfad daneben existiert: gesperrt, ggfs. schieben	q4:inwork::igndisp 13333,9929 13418,9944
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922

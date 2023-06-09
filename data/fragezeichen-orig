@@ -79,7 +79,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-06-07
+#: last_checked: 2023-06-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -405,7 +405,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16276,6611
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/zweites-gleis-wird-eingebaut_a257140
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (für September 2020, nur zwischen Schlossallee und Galenusstr. (erstmal?))
 #: by: http://www.infravelo.de/projekt/pasewalker-strasse/ (geschützter Radfahrstreifen in Planung, 1. Quartal 2024 - 4. Quartal 2024) (in API gelöscht, im Web noch verfügbar) (wieder da)
-#: osm_watch: way id="33836252" version="21"
+#: osm_watch: way id="33836252" version="22"
 #: source_id: LMS-BR_r_LMS-BR_95211 (Gesamtmaßnahmen bis Ende 2020, inaktiv)
 #: source_id: 2147341170 (bis 31.12.2020) (inaktiv)
 #: last_checked: 2023-06-03 (mapillary)
@@ -554,7 +554,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6478 (Antrag zum Pankower Radverkehrsnetz, Erwähnung der Kreuzung)
 #: osm_watch: node id="29420748" version="7"
 #: source_id: 2147342788 (möglicherweise inaktiv)
-#: last_checked: 2023-05-23 (mapillary)
+#: last_checked: 2023-06-07 (mapillary)
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -1968,7 +1968,7 @@ Marienpark: Straße geplant	?::projected 8163,3660 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="17"
 #: source_id: 2147343384 (möglicherweise inaktiv)
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-09
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2812,7 +2812,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv)
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (inaktiv) (bis 6.10.2024) (bis 31.10.2023)
-#: last_checked: 2023-05-10
+#: last_checked: 2023-06-09
 #: check_frequency: 180d
 #: next_check: 2023-10-31
 # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
@@ -2992,12 +2992,12 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (2. Bauabschnitt (Fuldastr. - Innstr.): Frühjahr 2023 bis Anfang 2024)
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-09
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025)
-#: last_checked: 2023-05-11
+#: last_checked: 2023-06-09
 #: next_check: 2025-12-31
 Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
 # 
@@ -3887,7 +3887,7 @@ Malteser Str.: Busspur geplant, evtl. auch für Radfahrer frei	?; 7539,1529 7630,
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
 #: source_id: viz2021:13.40645,52.398143,27.07.2022,07:00 (Leitungsarbeiten, bis 2.11.2022) (inaktiv)
-#: last_checked: 2023-03-06 (Anfrage)
+#: last_checked: 2023-06-06 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-11-02
 Lichtenrader Damm: Busspur geplant, evtl. auch für Radfahrer frei	?; 10822,-806 10849,-1332
@@ -4012,7 +4012,7 @@ Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/baustart-fuer-opernroute-nord_a353243
 #: osm_watch: way id="4410427" version="37"
 #: osm_watch: way id="1052921140" version="6"
-#: osm_watch: way id="31621016" version="31"
+#: osm_watch: way id="31621016" version="33"
 #: XXX Grünbeschichtung existiert bereits in der Richard-Wagner-Str.
 #: last_checked: 2023-06-04
 #: check_frequency: 90d
@@ -7107,7 +7107,7 @@ Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthof
 Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 18922,2238 18928,2319 18928,2327
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022)
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-09
 #: check_frequency: 120d
 # REMOVED (wurde 2022 nicht realisiert) --- #: next_check: 2022-12-31
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 13860,9861
@@ -7795,6 +7795,26 @@ Treskowallee/Hegemeisterweg: Ampel wird gebaut	?::inwork 18388,7800 18406,7760 1
 #: last_checked: 2021-12-21
 #: check_frequency: 1000d
 Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,16203
+# 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php (Genter Straße südlich der Limburger Straße)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf
+#: XXX zwischen Limburger Str. und Einfahrt Schillerbibliothek; für Radfahrer wird es weiterhin offen bleiben; gehört wohl zum Kiezblock Brüsseler Kiez
+#: next_check: 2023-07-14
+Genter Str.: Teileinziehung geplant	? 7012,15571 7138,15437
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php ("diesen Sommer" (2023))
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/kiezblock-bellermannkiez-1173910.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Teileinziehung Eulerstr./Jülicher Str., nicht für Radfahrer offen)
+#: next_check: 2023-07-15
+Bellermannkiez: Quartierplatz Eulerstr./Jülicher Str.	? 9498,16480 9381,16372
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php ("Schulzone")
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Teileinziehung, weiterhin für Radfahrer offen)
+#: last_checked: 2023-06-06
+#: next_check: 2023-09-01
+Kiezblock Singerstr.	? 11845,12292 11635,12398
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php (Verkehrsberuhigung in Erwägung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Teileinziehung, weiterhin für Radfahrer offen)
+#: next_check: 2023-09-01
+Helgoländer Ufer	? 6686,12768 6765,12680 6776,12668
 # 
 #: ignore ^^^
 # 
@@ -9300,7 +9320,7 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 # REMOVED --- #: XXX Ingeborg-Feustel-Str. (Privatstraße) (PLZ 12629) (laut LOR PLZ=12627+12629)
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
-#: last_checked: 2023-05-31 (osm) vvv
+#: last_checked: 2023-06-09 (architektur-urbanistik) vvv
 #: osm_watch: way id="198375762" version="8"
 Bebauungsplan 10-45: Stadtplatz geplant (geplanter Straßenname Gut Hellersdorf)	?::inwork 23265,15054 23283,15061 23339,15079 23348,15042 23452,15046
 # REMOVED (realisiert) --- #: osm_watch: way id="1098688706" version="2" --- Bebauungsplan 10-45: Planstraße C geplant (geplanter Straßenname Sarah-Kirsch-Str.)	?::projected 23452,15046 23569,15062 23693,15080
@@ -9459,7 +9479,7 @@ Marquardter Str. [Stichstraße]: Qualität?	? -16853,5634 -16885,5359 -16774,5335
 #: XXX Planstraße 6: Jakob-Kaiser-Str.
 #: XXX Quartiersplatz: Hannah-von-Bredow-Platz
 #: osm_watch: way id="257216846" version="6" brb
-#: osm_watch: way id="556679999" version="3" brb
+# REMOVED (deleted) --- #: osm_watch: way id="556679999" version="3" brb
 #: next_check: 2021-05-01
 Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante Planstraßen, wo genau, welche Qualität?	? -11697,-2753 -11490,-2779 -11371,-2971
 # 
@@ -11480,15 +11500,10 @@ Freiheitstr.: Gehwege für Radfahrer frei?	? 26133,-8639 25910,-8697
 # REMOVED (ja, beleuchtet) --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/bezirksamt-baut-neuen-weg-zur-schragenfeldstrasse_a175934 --- #: next_check: 2018-08-31 --- Schragenfeldstr. - Allee der Kosmonmauten: existiert die neue Wegverbindung schon? Ist der Weg beleuchtet? Welche Beschaffenheit hat der Weg (Asphalt, Verbundsteinpflaster...)?	? 21095,15003 21025,15005
 # REMOVED --- #: XXX Baumaßnahme 10.11 (Realisierung nach 2011) --- #: XXX laut fixmyberlin schon fertig --- #: osm_watch: way id="387676294" version="4" --- #: osm_watch: way id="10041007" version="19" --- #: last_checked: 2018-04-07 --- Wuhletalstr.: wurden hier die Radspuren bis zur Wolfener Str. fortgeführt?	? 20895,17594 20769,17650 20728,17670 20485,17784
 # REMOVED (hmmm, hier ist wohl nichts) --- #: next_check: 2018-11-13 --- Neuer Mauerweg - Kreuzsteg: existiert hier eine Verbindung?	? 8014,19149 8062,19212
-# 
 # REMOVED (aufgenommen) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6955 --- Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.: ist dieser Weg für Radfahrer nutzbar? Fahrbahnqualität? Nachts beleuchtet?	? 3218,8233 3205,7972 3198,7787 3183,7563
-# 
-#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=20797
-#: source_id: LS/721-F/18/080 (möglicherweise inaktiv)
-#: osm_watch: way id="376710426" version="4" brb
-#: osm_watch: way id="472490728" version="6" brb
-#: next_check: 2020-05-29
-Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40737,9012 40654,9441 40580,9711 40301,10729 40318,11400 40412,11647 40467,11827
+# REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=20797 --- #: source_id: LS/721-F/18/080 (möglicherweise inaktiv) --- #: osm_watch: way id="376710426" version="4" brb --- #: osm_watch: way id="472490728" version="8" brb --- #: next_check: 2020-05-29
+# REMOVED (hier nicht) --- Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40737,9012 40654,9441 40580,9711
+# REMOVED (hier nicht) --- Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40314,11223 40318,11400 40412,11647 40467,11827
 # 
 Heinrich-Mann-Allee [Nebenfahrbahn] - Friedhofsgasse: gibt es hier eine Verbindung? Qualität?	? -12017,-2511 -12001,-2495
 Saarmunder Str. - Eduard-Claudius-Str.: gibt es hier eine Verbindung? Qualität?	? -10662,-4280 -10626,-4260
