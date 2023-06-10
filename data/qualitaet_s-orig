@@ -297,7 +297,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 # REMOVED --- #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-10
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -4824,7 +4824,7 @@ Lassallestr. (Wilhelmshagen): Asphalt	Q0- 31783,4162 31793,4072 31822,3982 31856
 Schettkatstr.: Asphalt	Q0 31783,4162 31876,4162 32017,4165
 Erknerstr.: Asphalt	Q0 31967,4381 31987,4332 32017,4165 32046,4089 32081,4021 32120,3977 32224,3889
 Wiebelskircher Weg: Asphalt	Q0- 31876,4162 31880,4092 31903,4020 31966,3902 32030,3839 32108,3793 32162,3774 32230,3770
-Fahlenbergstr.: Asphalt	Q0 31991,3756 31986,3646 31983,3518 31973,3237 31971,3170 31967,2966 31965,2920 32031,2723
+Fahlenbergstr.: Asphalt	Q0 31991,3756 31986,3646 31983,3518 31973,3237 31971,3170 31965,2999 31965,2966 31965,2920 32031,2723
 Grünelinder Str.: Asphalt	Q0 31863,3257 31865,3375 31870,3484 31876,3568 31909,3703
 Schönblicker Str.: Asphalt	Q0 31695,3690 31661,3665 31670,3604 31724,3592 31756,3620 31745,3679 31695,3690
 Nickelswalder Str.: Asphalt	Q0 31632,3297 31674,3409 31715,3508 31729,3551 31724,3592
@@ -5485,7 +5485,7 @@ Durlacher Str. (Mahlsdorf): Asphalt	Q0 23972,9439 23918,9312
 Weitzgründer Str.: Asphalt	Q0 23717,9509 23673,9414
 Weitzgründer Str.: Asphalt	Q0 23643,9330 23596,9220 23541,9091 23469,8929
 Herderstr. (Mahlsdorf): Asphalt	Q0 23633,8872 23569,8775 23482,8636
-Bergedorfer Str.: Asphalt	Q0 23627,8543 23511,8617 23482,8636 23392,8694 23291,8758 23182,8828 23082,8892 22988,8952 22886,9017 22694,9139 22593,9203 22442,9300 22295,9395 22200,9430 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592
+Bergedorfer Str.: Asphalt	Q0 23855,8382 23731,8466 23627,8543 23511,8617 23482,8636 23392,8694 23291,8758 23182,8828 23082,8892 22988,8952 22886,9017 22694,9139 22593,9203 22442,9300 22295,9395 22200,9430 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592
 Kleinschewskystr.: Asphalt	Q0 22960,7215 22717,7276 22528,7314 22303,7361 22172,7384 21956,7428
 Keplerstr. (Oberschöneweide): Asphalt	Q0 19161,6291 19259,6133 19283,6123
 Kottmeierstr.: Asphalt	Q0 18645,6511 18801,6471 19118,6248
@@ -7950,7 +7950,7 @@ Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/UL03_Anlage03_Lageplan_Bl_1.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/UL01_Anlage01_Erlaeuterungsbericht.pdf
 #: XXX Straßenbahnhaltestelle soll auf die Westseite verlegt werden; gemeinsamer Rad- und Gehweg bis zur Schöneicher Str.; Kopfsteinpflaster wird durch Asphalt ersetzt; ggfs. eine Signalisierung für die Straßenbahn
-#: last_checked: 2023-04-10 (mapillary)
+#: last_checked: 2023-06-10
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
@@ -8095,7 +8095,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
 #: osm_watch: way id="723757589" version="20"
-#: last_checked: 2022-08-07 (mapillary) vvv
+#: last_checked: 2023-06-10 vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
 Werlseestr.: Kopfsteinpflaster	Q2; 26612,5051 26620,4936
@@ -13135,6 +13135,8 @@ Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14984,10677
 #: last_checked ^^^
 #: XXX ^^^
 # 
+Bölschestr. [Marktplatz]: Kopfsteinpflaster	Q2 25491,5240 25497,5327 25544,5326
+Bölschestr. [Kirchplatz]: Kopfsteinpflaster	Q2 25544,5326 25592,5322 25588,5235
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -13917,7 +13919,7 @@ Grenzstr. (Mahlsdorf): Asphalt	Q0 23188,9593 23166,9549 23120,9443 23072,9341 23
 Eschenstr.: sehr guter Asphalt	Q0+ 23031,9209 23018,9226 22947,9277 22830,9361 22718,9442 22666,9479 22548,9523 22473,9530 22458,9532 22413,9544 22402,9551 22366,9571
 Heerstr.: Beton mit Schäden/Asphalt	Q0- 22366,9571 22274,9622 22129,9702
 Heerstr.: Beton	Q0- 22129,9702 21988,9766 21859,9822 21842,9829 21749,9856 21691,9874 21650,9884 21611,9893
-Heesestr.: sehr guter Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 21164,9960
+Heesestr.: sehr guter Asphalt	Q0+ 21611,9893 21594,9895 21534,9901 21371,9923 21164,9960
 #: confirmed_by ^^^
 #: confirmed_by: srt
 Parchimer Str.: guter Beton	Q1 22319,12637 22272,12610 22258,12573 22257,12481 22212,12422 22212,12403
@@ -16035,7 +16037,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=736614#post736614 (BV Kaisergärten)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2023-03-17
+#: last_checked: 2023-06-10
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
@@ -25332,7 +25334,7 @@ Bohnsacker Steig: Verbundsteinpflaster	Q1 -2245,22954 -2284,22847
 # 
 #: by: Martina (martigro):
 #: confirmed_by: srt
-Wolfgang-Steinitz-Str.: guter Asphalt	Q0 31967,2966 31948,2962 31861,2898 31772,2830 31647,2729
+Wolfgang-Steinitz-Str.: guter Asphalt	Q0 31965,2966 31948,2962 31861,2898 31772,2830 31647,2729
 # 
 #: by: Enno (super...):
 #: confirmed_by: srt
@@ -30248,7 +30250,7 @@ Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0+ 26488,5292 26364,5288
 #: confirmed_by: srt
 Aßmannstr.: guter Asphalt	Q0 25738,5228 25602,5234
 #: corrected_by: srt (guter Asphalt -> Verbundsteinpflaster)
-Aßmannstr.: Verbundsteinpflaster	Q1 25602,5234 25539,5237 25470,5241
+Aßmannstr.: Verbundsteinpflaster	Q1 25602,5234 25588,5235 25539,5237 25491,5240 25470,5241
 #: confirmed_by: srt
 Aßmannstr.: guter Asphalt	Q0 25470,5241 25264,5253 25121,5286
 #: corrected_by: srt (Asphalt -> Beton)

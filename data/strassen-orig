@@ -10351,6 +10351,8 @@ Brösener Str.	N 26282,6033 26284,6130 26247,6228
 Schöneicher Str. (Friedrichshagen)	H 25584,6029 25776,6054 25967,6125 26139,6188 26247,6228
 Schöneicher Landstr. (Friedrichshagen)	H 26247,6228 28586,7139 29168,7350 29192,7368
 Bölschestr.	NH 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
+Bölschestr. [Marktplatz]	N 25491,5240 25497,5327 25544,5326
+Bölschestr. [Kirchplatz]	N 25544,5326 25592,5322 25588,5235
 Myliusgarten	N 25548,5398 25466,5408 25272,5417
 Peter-Hille-Str.	N 25248,4752 25240,4885 25246,4969 25255,5117 25264,5253 25272,5417 25286,5638 25294,5761
 Lindenallee (Friedrichshagen)	N 25123,5767 25294,5761 25479,5753 25567,5749
@@ -10358,7 +10360,7 @@ Albert-Schweitzer-Str.	N 25479,5753 25475,5635 25466,5408
 (Rahnsdorfer Str. - Karl-Marx-Str./Schöneiche)	N 30309,6841 30381,6711
 #: by: Radzeit 6/2003 sind die folgenden beiden Straßen für RR9 ausgebaut worden:
 Rahnsdorfer Str. (Friedrichshagen)	N 26611,5301 26570,5300 26488,5292 26364,5288 26224,5285 26162,5283 26068,5273 25739,5242
-Aßmannstr.	N 25738,5228 25602,5234 25539,5237 25470,5241 25264,5253 25121,5286 25039,5295 25018,5294 25002,5296
+Aßmannstr.	N 25738,5228 25602,5234 25588,5235 25539,5237 25491,5240 25470,5241 25264,5253 25121,5286 25039,5295 25018,5294 25002,5296
 Aßmannstr.	N 25039,5295 25039,5304 25048,5727 25015,5729
 Ingrid-Goltzsche-Schwarz-Str.	N 25015,5751 25015,5729 25009,5593
 (Charlotte-E.-Pauly-Str. - Ingrid-Goltzsche-Schwarz-Str.)	NN 25002,5296 25009,5593
@@ -10387,7 +10389,7 @@ Waldstr. (Hessenwinkel)	N 32785,2935 32445,2716 32162,2542 32115,2492 32095,2475
 Bogenstr. (Hessenwinkel)	N 32334,2224 32268,2229 32203,2254 32142,2304 32039,2428
 Dämeritzstr.	N 32512,2621 32445,2716
 (Dämeritzstr. - Dämeritzsee)	NN 32512,2621 32558,2562
-Fahlenbergstr.	N 31991,3756 31986,3646 31983,3518 31973,3237 31971,3170 31967,2966 31965,2920 32031,2723
+Fahlenbergstr.	N 31991,3756 31986,3646 31983,3518 31973,3237 31971,3170 31965,2999 31965,2966 31965,2920 32031,2723
 #: note: Privatstraße
 (Fahlenbergstr. - Einkaufszentrum Lagunenweg)	N 31971,3170 31788,3192 31762,3202
 (Einkaufszentrum Lagunenweg)	NN 31762,3202 31650,3218
@@ -10476,7 +10478,7 @@ Inselstr. (Hessenwinkel)	N 32101,2216 32067,2178
 Im Haselwinkel	N 31975,2365 32101,2216 32167,2160 32248,2125 32332,2118
 Biberpelzstr.	N 31975,2365 31903,2497 31896,2512 31789,2636 31701,2701 31647,2729 31565,2762 31514,2755 31495,2753 31463,2748
 #: XXX_indoor: richtiger Ortsteil: Hessenwinkel oder Wilhelmshagen? Oder Rahnsdorf?
-Wolfgang-Steinitz-Str.	N 31967,2966 31948,2962 31861,2898 31772,2830 31647,2729
+Wolfgang-Steinitz-Str.	N 31965,2966 31948,2962 31861,2898 31772,2830 31647,2729
 Rialtoring	N 31463,2748 31434,2729 31396,2713 31236,2702 30962,2787 30989,2949 31002,3045 31012,3124 31057,3279 31082,3366 31139,3497
 Plutoweg	N 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
 # REMOVED (hmmm, wo ich hier der Weg? zu versteckt?) --- Plutoweg	NN 30366,3681 30312,3741
@@ -15416,7 +15418,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-10
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15804,7 +15806,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-10
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

@@ -4096,7 +4096,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-06-03 (mapillary)
+#: last_checked: 2023-06-10
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-03-21
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4317,41 +4317,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147344332 (inaktiv)
-#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
-#: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023)
-	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
-	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
-	3 6694,12627 7031,12320 7051,12426
-	3 6694,12627 7031,12320 7001,12274
-	3 7654,12464 7627,12380 7603,12353
-	3 7001,12274 7031,12320 7051,12426
-	3 7001,12274 7031,12320 6694,12627
-	3 7051,12426 7031,12320 7001,12274
-	3 7051,12426 7031,12320 6694,12627
-	3 7603,12353 7627,12380 7654,12464
-',
-         'from' => 1685980800,
-         'id' => 3113,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              5,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
-         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 06. Juni 2023 18 Uhr bis 10. Juni 2023 9 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1686380400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5116,7 +5082,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX neue Sperrung 2022-2023, bis wann? Bekommt der gesperrte Abschnitt einen neuen Belag (Verbundsteinpflaster?)?
 #: add_fragezeichen: Ist der Weg im Hasselwerderpark noch immer gesperrt?
 #: next_check_id: HASSELWERDERPARK-2021
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-10
 #: check_frequency: 60d
 	2::inwork 18634,5484 18695,5453
 # REMOVED (hier nicht) ---	2::inwork 18506,5596 18560,5539 18634,5484
@@ -5413,13 +5379,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-05-06
+#: last_checked: 2023-06-10
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 ',
          'from' => undef,
          'id' => 3504,
-         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Anfang Mai 2023: Durchgang ist mit Bauzäunen versperrt)',
+         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Juni 2023: Durchgang ist mit Bauzäunen versperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5755,9 +5721,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1217800.php
 #: by: https://viz.berlin.de/2023/06/tiergarten_grossveranstaltungen/
-#: XXX 11.06.2023 06:00 bis 28.06.2023, ca. 23:00 Uhr auch Spreeweg Richtung Paulstraße zwischen Großer Stern und John-Foster-Dulles-Allee + John-Foster-Dulles-Allee
 #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
-#: next_check: 2023-06-10
+#: next_check: 2023-06-16
 	2::temp 8538,12245 8592,12252
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -5769,6 +5734,9 @@ Straße des 17. Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 6828,12
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 09.06.2023 06:00 Uhr bis 28.06.2023, ca. 23:00 Uhr auch Scheidemannstraße zwischen Ebertstraße und Heinrich-von-Gagern-Straße
 Scheidemannstraße	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
+#: note: 11.06.2023 06:00 bis 28.06.2023, ca. 23:00 Uhr auch Spreeweg Richtung Paulstraße zwischen Großer Stern und John-Foster-Dulles-Allee + John-Foster-Dulles-Allee
+Spreeweg Richtung Paulstr. gesperrt	1::temp 6787,12099 6831,12150 7001,12274 7031,12320
+John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 ',
          'from' => 1686024000,
          'id' => 3563,
@@ -6642,12 +6610,12 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-05-17
+#: last_checked: 2023-06-10
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
          'id' => 3709,
-         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Mitte Mai 2023: noch immer gesperrt)',
+         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Juni 2023: noch immer gesperrt)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6820,6 +6788,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331169.php
 #: by: https://nitter.cz/VIZ_Berlin/status/1665721442158215170#m
 #: by: https://nitter.cz/BaBerlinTK/status/1665720334689943552#m
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15561.pdf
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -7578,6 +7547,38 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
          'text' => 'Beerbaum - Gratze: Bauarbeiten, Sperrung vom 05.06.2023, 08:00 Uhr bis 30.06.2023, 16:00 Uhr.',
          'type' => 'gesperrt',
          'until' => 1688133600
+       },
+       {
+         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10935 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
+#: source_id: bvg2021:190#BVG320324_0
+#: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
+#: also_indoor: traffic (none)
+#: last_checked: 2023-06-10
+#: check_frequency: 120d
+#: next_check: 2024-05-10
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork 20947,9999 20703,10004
+',
+         'from' => 1686407303,
+         'id' => 3817,
+         'text' => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+         'type' => 'handicap',
+         'until' => 1715378400
+       },
+       {
+         'data' => '#: note: Halteverbotsschilder bis 12.08.2023
+#: also_indoor: traffic (B)
+#: last_checked: 2023-06-10
+#: next_check: 2023-08-12
+	q4::inwork 17391,9746 17404,9794
+',
+         'from' => 1686409892,
+         'id' => 3818,
+         'text' => 'Dolgenseestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 12.08.2023',
+         'type' => 'handicap',
+         'until' => 1691877600
        }
      
 );

@@ -2066,7 +2066,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-06-08 vvv
+#: last_checked: 2023-06-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3370,7 +3370,7 @@ asphaltiert	RW1; 30210,4046 30037,4176 29959,4235 29946,4241
 	RW3; 29946,4241 29901,4264 29850,4288
 Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31447,3372
-	RW2; 31632,3297 31863,3257 31967,3238 31973,3237
+Gehwegplatten	RW2; 31632,3297 31863,3257 31967,3238 31973,3237
 # REMOVED --- #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen) --- #: last_checked: 2018-08-04 (mapillary)
 asphaltiert	RW2;RW2 33525,2901 33327,2979 33111,3064
 asphaltiert	RW2;RW2 33111,3064 32814,3107 32376,3175 32121,3215 32016,3230
@@ -4069,7 +4069,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2023-06-08 vvv
+#: last_checked: 2023-06-10 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -7600,7 +7600,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2023-06-08 vvv
+#: last_checked: 2023-06-10 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
@@ -8351,4 +8351,6 @@ asphaltiert, breit	RW2;RW8 18034,2526 18247,2490 18496,2471
 # 
 #: note: Bizetstr.
 	RW7;RW7 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760 13409,15687
+# 
+	RW6;RW6 25497,5327 25544,5326
 # 
