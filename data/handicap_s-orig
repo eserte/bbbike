@@ -19,7 +19,7 @@ Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-06-10 vvv
+#: last_checked: 2023-06-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -43,7 +43,7 @@ Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der 
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B,H)
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-11
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -62,10 +62,12 @@ Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn
 #: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.470533,52.504112,22.05.2023,06:00 (unklare Verkehrsmeldung, bis 26.05.2023) (inaktiv)
+#: source_id: viz2021:13.469648,52.501756,12.06.2023,07:00 (Vollsperrung für Kfz-Verkehr, bis 25.08.2023)
 #: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+); bei der neuerlichen Sperrung gibt es nun doch Radfahrer-frei-Schilder, allerdings recht schmal; die neue Sperrung ab Juni 2023 wieder ohne Radfahrer-frei-Schilder
 #: note: laut rbbtext von 6.6.2023 bis Ende August 2023
 #: last_checked: 2023-06-07
-#: next_check: 2023-08-31
+#: next_check: 2023-06-12
+# REMOVED --- #: next_check: 2023-08-31
 #: valid: -2023-08-31
 An der Mole: Einbahnstraßenregelung	q3::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
@@ -698,7 +700,7 @@ Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic (none)
 #: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt)
-#: last_checked: 2023-05-25
+#: last_checked: 2023-06-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -706,8 +708,8 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-05-25
-#: check_frequency: 14d
+#: last_checked: 2023-06-11
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 # 
@@ -780,8 +782,8 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022) (bis 31.10.2023)
-#: osm_watch: way id="137623800" version="27"
-#: osm_watch: way id="625667165" version="18"
+#: osm_watch: way id="137623800" version="28"
+#: osm_watch: way id="625667165" version="19"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2023-06-09
@@ -1031,7 +1033,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: osm_watch: way id="885619857" version="17"
 #: osm_watch: way id="885619858" version="12"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
-#: also_indoor: traffic (ex-G,B)
+#: also_indoor: traffic (G,B,W)
 #: priority: #B
 #: last_checked: 2023-04-13 (mapillary) vvv
 #: check_frequency: 60d vvv
@@ -1245,8 +1247,8 @@ Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	q1 7356,11517 7362,11561 7373,11594
 Am S-Bhf. Bellevue: einige Fußgänger	q1 6694,12627 6516,12650
-Bellevue-Ufer: Parkweg	q1 7031,12320 6694,12627
-Bellevueallee: Parkweg	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
+Bellevue-Ufer: einige Fußgänger	q1 7031,12320 6694,12627
+Bellevueallee: einige Fußgänger	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 (Luiseninsel - Tiergartenstr.): Parkweg	q1 7664,11597 7600,11513
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
@@ -4911,6 +4913,7 @@ Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 #: by: Wilfried Flade:
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):
+#: note: wobei der südliche Bordstein mit etwas Umweg umfahren werden kann und am nördlichen Ende eine Bordsteinabsenkung existiert
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 #: by: Uta Voigt:
 #: corrected_by: srt/policy (q1 -> ...)
@@ -5096,7 +5099,7 @@ Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 41
 #: note: Grünanlagenschild mit "Radfahren verboten"-Zusatzschild am nordöstlichen Ende
 #: note: früher q2
 (Müllerstr. - Gerichtstr.): Fußgänger	q3 7607,15282 7723,15417
-(südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5770,12346 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nördliches Spreeufer): Fußgänger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307

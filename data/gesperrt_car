@@ -1015,13 +1015,13 @@ Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5
 Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5188,7536
 Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5188,7536 5073,7660 5051,7631
 Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5073,7660 5052,7686
-Überqueren verboten	3nocross::ignrte 6687,8385 6807,8309 6935,8208
+Überqueren verboten	3nocross::ignrte 6687,8385 6744,8349 6807,8309 6935,8208
 Feurigstr. -> Dominicusstr.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6935,8208
 Feurigstr. -> Gustav-Freytag-Str.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6779,8279
-Dominicusstr. -> Feurigstr.: Überqueren verboten	3::igndisp 6687,8385 6807,8309 7012,8511
+Dominicusstr. -> Feurigstr.: Überqueren verboten	3::igndisp 6744,8349 6807,8309 7012,8511
 Dominicusstr. -> Gustav-Freytag-Str.: Überqueren verboten	3::igndisp 6935,8208 6807,8309 6779,8279
 Gustav-Freytag-Str. -> Feurigstr.: Überqueren verboten	3::igndisp 6779,8279 6807,8309 7012,8511
-Gustav-Freytag-Str. -> Dominicusstr.: Überqueren verboten	3::igndisp 6779,8279 6807,8309 6687,8385
+Gustav-Freytag-Str. -> Dominicusstr.: Überqueren verboten	3::igndisp 6779,8279 6807,8309 6744,8349
 Schranke	3 8992,14176 8825,14401 8776,14364
 Schranke	3 8776,14364 8825,14401 8992,14176
 Plonzstr.	1 16227,12281 16259,12419

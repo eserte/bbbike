@@ -3833,7 +3833,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: next_check: 2023-06-30
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
-#: osm_watch: way id="26322024" version="22"
+#: osm_watch: way id="26322024" version="23"
 #: XXX Fahrbahn wird befestigt, vermutlich asphaltiert
 #: priority: #C
 #: last_checked: 2023-06-10
@@ -4435,7 +4435,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: priority: #C
 #: last_checked: 2023-05-31
 #: check_frequency: 90d
-#: next_check: 2023-06-30
+# REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 # 
 #: next_check_id: TACHELES-2020

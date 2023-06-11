@@ -1676,7 +1676,7 @@ Lexisstr.: Asphalt	Q0 13063,9422 13124,9375
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12788,8101
 Geygerstr.: Asphalt	Q0 13070,8138 13194,8276
-Bellevue-Ufer: Kleinsteinpflaster	Q1 6694,12627 7031,12320
+Bellevue-Ufer: Mosaikpflaster	Q1 6694,12627 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
 Große Querallee: Asphalt mit einigen leichten Schäden	Q0 7875,12363 7822,12201 7816,12150
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
@@ -1833,7 +1833,9 @@ Gartenufer: Parkweg, bei Regen Pfützen	Q1 5845,11615 6067,11479 6200,11417
 Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): wassergebundene Decke	Q1 5550,12238 5573,12242
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
-(südliches Spreeufer): Asphalt	Q0 5643,12253 5714,12290 5796,12372 5940,12564
+(südliches Spreeufer): unbefestigter Weg	Q2 5643,12253 5714,12290 5770,12346
+(südliches Spreeufer): Kleinsteinpflaster	Q1 5770,12346 5796,12372
+(südliches Spreeufer): Asphalt	Q0 5796,12372 5940,12564
 (südliches Spreeufer): Kleinsteinpflaster	Q1 5940,12564 5953,12592
 (südliches Spreeufer): Asphalt	Q0 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 Elisabeth-Abegg-Str.: Asphalt	Q0 7930,12912 7858,12830 7789,12764
@@ -12973,7 +12975,8 @@ Soldiner Str. (Lichtenrade): guter Asphalt	Q0 11086,516 11222,483 11281,454 1134
 Hochgallweg: guter Beton	Q0 9891,3203 9771,3229 9683,3185
 Buchhorster Str.: Asphalt	Q0 7979,20528 7866,20556 7793,20580 7736,20598 7616,20633
 Albestr.: Asphalt	Q0 5419,7464 5448,7436 5640,7435 5811,7433
-Flotowstr.: Kopfsteinpflaster	Q2 5796,12372 5800,12361 5870,12179
+Flotowstr.: Kleinsteinpflaster	Q1 5796,12372 5800,12361
+Flotowstr.: Kopfsteinpflaster	Q2 5800,12361 5870,12179
 Erfurter Str.: Asphalt	Q0 6060,8334 6181,8181 6257,8078 6261,8058
 Goldhähnchenweg: Asphalt	Q0 14164,4271 14398,4000
 Leuthener Str.: Asphalt	Q0 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356

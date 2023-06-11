@@ -194,7 +194,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2023-05-31
+#: last_checked: 2023-06-11
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -206,7 +206,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2023-05-31 vvv
+#: last_checked: 2023-06-11 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -358,7 +358,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2023-05-25 vvv
+#: last_checked: 2023-06-11 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -2347,7 +2347,7 @@ Lexisstr.: Asphalt	Q0- 13063,9422 13124,9375
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12788,8101
 Geygerstr.: Asphalt	Q0 13070,8138 13194,8276
-Bellevue-Ufer: Kleinsteinpflaster	Q1- 6694,12627 7031,12320
+Bellevue-Ufer: Mosaikpflaster	Q1- 6694,12627 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
 Große Querallee: Asphalt mit einigen leichten Schäden	Q0- 7875,12363 7822,12201 7816,12150
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
@@ -2524,8 +2524,10 @@ Gartenufer: Parkweg, bei Regen Pfützen	Q1- 5845,11615 6067,11479 6200,11417
 Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): wassergebundene Decke	Q1+ 5550,12238 5573,12242
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
+(südliches Spreeufer): unbefestigter Weg	Q2+ 5643,12253 5714,12290 5770,12346
+(südliches Spreeufer): Kleinsteinpflaster	Q1- 5770,12346 5796,12372
 #: historical_note: früher (bis Frühjahr 2023): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1-
-(südliches Spreeufer): Asphalt	Q0 5643,12253 5714,12290 5796,12372 5940,12564
+(südliches Spreeufer): Asphalt	Q0 5796,12372 5940,12564
 #: historical_note: früher (bis Herbst 2022): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt, Q1- vvv
 (südliches Spreeufer): Kleinsteinpflaster	Q1 5940,12564 5953,12592
 #: note: kurzer Abschnitt mit wassergebundener Decke
@@ -17230,9 +17232,12 @@ Buchhorster Str.: Asphalt	Q0 7979,20528 7866,20556 7793,20580 7736,20598 7616,20
 #: confirmed_by: srt
 Albestr.: Asphalt	Q0 5419,7464 5448,7436 5640,7435 5811,7433
 # 
-#: by: klaus-j. schulz:
+#: by: klaus-j. schulz: vvv
+#: corrected_by: srt (Asphalt -> Kopfsteinpflaster, Q2 -> ..., neu gemacht)
+Flotowstr.: Kleinsteinpflaster	Q1- 5796,12372 5800,12361
 #: corrected_by: srt (Asphalt -> ...)
-Flotowstr.: Kopfsteinpflaster	Q2 5796,12372 5800,12361 5870,12179
+Flotowstr.: Kopfsteinpflaster	Q2 5800,12361 5870,12179
+#: by: ^^^
 # 
 #: by: pyka.e...:
 #: confirmed_by: srt
@@ -32309,4 +32314,5 @@ Kreuzungsbereich asphaltiert	Q0 1558,25505
 Einmündungsbereich mit Mosaikpflaster	Q2 2816,25037
 Einmündungsbereich mit Kleinsteinpflaster	Q2+ 2694,25132
 Einmündungsbereich asphaltiert	Q0+ 26129,-807
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 5191,10190
 #: ignore ^^^

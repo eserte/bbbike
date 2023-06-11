@@ -5395,11 +5395,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: add_fragezeichen: Ist der Uferweg noch immer wegen Bauarbeiten gesperrt? vvv
-#: last_checked: 2023-05-01 vvv
+#: last_checked: 2023-06-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4993234" version="21"
-	2::inwork 5714,12290 5796,12372 5940,12564
+	2::inwork 5714,12290 5770,12346 5796,12372 5940,12564
 #: XXX laut osm hier fertiggestellt, aber es sind weiterhin Bauarbeiten und Sperrungen möglich
 #: osm_watch: way id="4410535" version="27"
 	2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
@@ -5423,8 +5423,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa) vvv
-#: last_checked: 2023-04-06 vvv
+#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So) vvv
+#: last_checked: 2023-06-11 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="36"
@@ -5716,6 +5716,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.36452,52.515396,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
 #: source_id: viz2021:13.370292,52.516745,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
 #: source_id: viz2021:13.37688,52.51775,09.06.2023,06:00 (Scheidemannstr., bis 28.06.2023)
+#: source_id: viz2021:13.37081,52.51779,11.06.2023,06:00 (Heinrich-von-Gagern-Str., bis 26.06.2023)
+#: source_id: viz2021:13.3546,52.51713,11.06.2023,06:00 (John-Foster-Dulles-Allee, bis 26.06.2023)
+#: source_id: viz2021:13.35095,52.51487,11.06.2023,06:00 (Spreeweg, bis 26.06.2023)
 #: by: https://viz.berlin.de/2022/06/sons-2022/
 #: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
@@ -5737,6 +5740,11 @@ Scheidemannstraße	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 #: note: 11.06.2023 06:00 bis 28.06.2023, ca. 23:00 Uhr auch Spreeweg Richtung Paulstraße zwischen Großer Stern und John-Foster-Dulles-Allee + John-Foster-Dulles-Allee
 Spreeweg Richtung Paulstr. gesperrt	1::temp 6787,12099 6831,12150 7001,12274 7031,12320
 John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+#: note: Damit ist die Überquerung der Straße des 17. Juni nicht möglich
+Bellevueallee (Abschnitt)	2::temp 7429,12070 7383,12095
+#: note: Vermutet, analog Bellevueallee
+zur Großen Querallee	2::temp 7816,12150 7823,12120
+Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
 ',
          'from' => 1686024000,
          'id' => 3563,
@@ -6289,7 +6297,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-05-31
+#: last_checked: 2023-06-11
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6310,11 +6318,11 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ml48-sch%C3%B6neberg.652/#post-19614
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/11-000-quadratmeter-flaeche-fuer-bueros-wohnen-und-gewerbe_a380464 ("Schöneberger Eck", bis Frühjahr 2025)
 #: note: Halteverbotsschilder bis 31.12.2023
-#: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
+#: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="1"
-#: last_checked: 2023-01-04 (architektur-urbanistik)
+#: last_checked: 2023-06-11
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -6951,7 +6959,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 # REMOVED --- #: source_id: bvg2021:106#BVG312086_0 vvv
-#: last_checked: 2023-05-10 vvv
+#: last_checked: 2023-06-11 vvv
 # REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 # REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 # REMOVED (hier nicht (mehr?)) --- Leberstr.: Einbahnstraßenregelung	q4::inwork; 7563,8871 7574,8596
@@ -6989,7 +6997,7 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
        undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten hier fertig? vvv
-#: last_checked: 2023-05-01 vvv
+#: last_checked: 2023-06-11 vvv
 # REMOVED (Schleswiger Ufer) ---	q3::inwork 5858,12425 5800,12361 5714,12266
 Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: last_checked ^^^
@@ -7484,16 +7492,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: note: laut Hinweisschild auf Kapelle-Ufer
-	q4::inwork 8119,12414 8122,12603
-',
-         'from' => 1686369600,
-         'id' => 3812,
-         'text' => 'Heinrich-von-Gagern-Str.: Sperrung ab 11.06.2023 06:00 bis 26.06.2023 23:00, evtl. sind auch Radfahrer betroffen',
-         'type' => 'handicap',
-         'until' => 1687813200
-       },
+       undef,
        {
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
@@ -7515,6 +7514,7 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
        },
        {
          'data' => '#: next_check_id: PARRISIUS-2023
+#: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 	q4::inwork 22531,5871 22358,5918
 ',
@@ -7579,6 +7579,20 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
          'text' => 'Dolgenseestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 12.08.2023',
          'type' => 'handicap',
          'until' => 1691877600
+       },
+       {
+         'data' => '#: next_check_id: SPREEUFER-2022
+#: note: vermutlich wird hier asphaltiert; Halteverbotsschilder bis 23.09.2023
+#: last_checked: 2023-06-11
+#: check_frequency: 60d
+#: next_check: 2023-09-23
+	q4::inwork 6182,12900 6347,12901 6449,12865 6575,12778
+',
+         'from' => 1686502900,
+         'id' => 3819,
+         'text' => 'Holsteiner Ufer: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2023',
+         'type' => 'handicap',
+         'until' => 1695484800
        }
      
 );
