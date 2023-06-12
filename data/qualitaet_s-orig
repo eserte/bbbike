@@ -176,7 +176,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="21"
-#: last_checked: 2023-05-10
+#: last_checked: 2023-06-12
 #: check_frequency: 120d
 #: next_check: 2023-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
@@ -2044,8 +2044,8 @@ Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	Q2 4274,2717 4272,2704 42
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6416
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 # REMOVED (nicht sehr -> Q1-) --- #: XXX hat sich die Qualität verschlechtert?
-Teltowkanal: Parkweg, OK	Q1- 4209,2641 4053,2300 3971,2106 3814,1729
-Teltowkanal: Asphalt	Q0- 3814,1729 3698,1450
+Teltowkanal: Parkweg, OK	Q1- 4209,2641 4064,2293 3980,2102 3821,1725
+Teltowkanal: Asphalt	Q0- 3821,1725 3698,1450
 #: by: taztaz
 #: note: 2007 Bauarbeiten bis zur Krahmerstr.
 #: confirmed_by: srt
@@ -2270,7 +2270,10 @@ Am Teltowkanal: Feldweg	Q2+ 20810,2398 20496,2321
 Am Teltowkanal: Feldweg, holprig	Q2 20496,2321 20499,2285 20303,2254 20282,2259
 (Weg in Kolonie Bodenreform): Kopfsteinpflaster	Q2- 20282,2259 20148,2254 20128,2271
 (Weg in Kolonie Bodenreform): Kopfsteinpflaster	Q2- 20148,2254 20135,2251 20100,2247
-Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,832 3261,835 3232,803
+Am Teltowkanal: feiner Schotter	Q1 3381,1022 3366,1007 3364,944 3355,893 3304,832
+Am Teltowkanal: Asphalt	Q0 3304,832 3261,835
+Am Teltowkanal: feiner Schotter	Q1 3261,835 3232,803
+Am Teltowkanal: Asphalt	Q0 3381,1022 3424,1052 3635,1215 3710,1317 3766,1389
 Akeleiweg: Asphalt	Q0 17894,2783 17631,3200
 # REMOVED (wurde asphaltiert) --- #: next_check_id: AKELEIWEG-2021 --- #: XXX bleibt der Kopfsteinpflasterabschnitt nach den Bauarbeiten? --- #: last_checked: 2020-08-06 --- #: next_check: 2021-07-31
 Akeleiweg: Asphalt	Q0 17631,3200 17603,3240
@@ -3440,7 +3443,7 @@ Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4406,-910 4081,-425
 Mauerweg Lichterfelde: Asphalt mit Wurzelschäden	Q1- 4081,-425 4038,-362 4046,-299 4034,-255
 Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4034,-255 3982,-181 3941,-127 3908,-117
 Mauerweg Lichterfelde: Asphalt mit Wurzelschäden	Q1- 3908,-117 3842,-6 3788,26
-Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 3788,26 3767,66 3689,182 3607,283 3417,524
+Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Alexanderufer: Asphalt	Q0 8315,13042 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8362,13466 8354,13523 8342,13536 8332,13548
 Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12592,12472 12632,12630
@@ -8974,7 +8977,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7213 (Antrag: Asphaltierung des westlich weiterführenden Weges)
 #: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden -> letzteres ist realisiert
 #: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19, 2020-11-28, 2021-04-24, 2022-06-06, 2022-10-05)
-#: last_checked: 2023-02-19
+#: last_checked: 2023-06-12
 #: check_frequency: 120d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
@@ -13873,7 +13876,7 @@ Gehringstr.: guter Asphalt	Q0 14900,17423 14668,17463 14434,17500 14168,17522 14
 #: corrected_by: srt ("gut" gestrichen)
 Bergener Str.: Kopfsteinpflaster	Q2 10370,16516 10382,16661
 #: corrected_by: srt (guter Beton -> ...)
-Lacknerstr.: Asphalt	Q0 6313,4332 6416,4452
+Lacknerstr.: Asphalt	Q0 6309,4328 6416,4452
 #: confirmed_by: srt
 Pankstr. (Französisch Buchholz): Asphalt	Q0 12609,20935 12519,20870 12434,20809
 #: confirmed_by: srt
@@ -14585,7 +14588,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="12"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-06-12
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -15505,7 +15508,7 @@ Claszeile: Kopfsteinpflaster	Q2 786,979 718,1264 644,1539 630,1590 603,1590 530,
 # 
 #: by: Benjamin Hersch: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt):
-Borstellstr.: Asphalt	Q0 6222,4341 6313,4332 6375,4326 6391,4328 6491,4391 6532,4422 6523,4491
+Borstellstr.: Asphalt	Q0 6219,4336 6309,4328 6368,4324 6391,4328 6491,4391 6532,4422 6523,4491
 Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6523,4491 6635,4639 6756,4769 6845,4761
 #: corrected_by: srt (gut befahrbar -> ...)
 Promenade am Teltowkanal: Asphalt mit einigen Wurzelschäden	Q1 6633,4272 6392,4312 6210,4325
@@ -19500,7 +19503,7 @@ Leuchtenburgstr.: Beton	Q0 794,1572 857,1300 862,1282 932,1005
 Engadiner Weg: guter Asphalt	Q0 3716,2063 3818,2070 3851,2148 3805,2196
 #: corrected_by: srt (unbefestigter Weg -> wassergebundene Decke)
 Engadiner Weg - Promenade am Teltowkanal: wassergebundene Decke	Q1 3851,2148 3898,2120
-Engadiner Weg - Promenade am Teltowkanal: geteert	Q0 3906,2135 3971,2106
+Engadiner Weg - Promenade am Teltowkanal: geteert	Q0 3906,2135 3980,2102
 #: by: ^^^
 # 
 #: by: Jonas Laehnemann: vvv
@@ -28924,11 +28927,11 @@ Hirtestr.: am Rand Beton, zwischen den Gleisen asphaltiert	Q1-; 22727,6487 22753
 #: corrected_by: mapillary (Asphalt -> ...)
 Hirtestr.: Beton	Q0- 22727,6487 22675,6498
 # 
+Parrisiusstr.: Kopfsteinpflaster	Q2 22358,5918 22531,5871
 #: next_check_id: PARRISIUS-2023
 #: confirmed_by: srt
 #: XXX Ist die Fahrbahn der Parrisiusstr. nach den Bauarbeiten besser, vielleicht asphaltiert?
 #: next_check: 2023-08-18
-Parrisiusstr.: Kopfsteinpflaster	Q2 22358,5918 22531,5871
 Parrisiusstr.: schlechtes Kopfsteinpflaster	Q3 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
 # 
 Kiekebuschstr.: schlechtes Kopfsteinpflaster	Q3 22631,5866 22608,5732

@@ -323,7 +323,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-06-11 vvv
+#: last_checked: 2023-06-12 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -915,6 +915,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
+#: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-05-06
 #: check_frequency: 60d
@@ -1215,7 +1216,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-06-09 vvv
+#: last_checked: 2023-06-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1382,7 +1383,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="20"
-#: last_checked: 2023-05-19
+#: last_checked: 2023-06-12
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -4162,7 +4163,9 @@ Gehweg für Radfahrer frei	RW1; 21466,-281 21534,-262 21800,-109 21968,-15
 Gehweg für Radfahrer frei	RW1; 21157,-413 21235,-354
 Gehweg für Radfahrer frei	RW1; 22145,208 22073,59 21977,-8 21968,-15
 Gehweg für Radfahrer frei	RW1; 22145,208 22166,312 22162,452
-asphaltierter Gehweg für Radfahrer frei	RW1; 22062,773 22110,702 22162,452 22166,312 22145,208
+asphaltierter Gehweg für Radfahrer frei	RW1; 22062,773 22116,691 22142,573
+asphaltiert, gemeinsamer Geh- und Radweg	RW2; 22142,573 22162,452
+asphaltierter Gehweg für Radfahrer frei	RW1; 22162,452 22166,312 22145,208
 	RW1;RW1 18491,2128 18580,2121 18630,2117 18881,2062
 # REMOVED (existieren nicht mehr) ---	RW1;RW1 18881,2062 18938,2054 18985,2047 19055,2037
 # REMOVED (existieren nicht mehr) ---	RW1;RW0 19055,2037 19164,2001
@@ -7142,7 +7145,7 @@ asphaltiert	RW1;RW1 19363,3730 19125,3491
 	RW6;RW6 3812,2303 3813,2368 3814,2408
 #: note: implizit, Schild an der Altendorfer Str. hat noch gefehlt (2014-04-27)
 	RW6;RW6 3902,2456 3902,2405 3901,2388 3894,2368 3849,2302 3812,2303 3784,2304
-	RW1;RW1 3467,560 3497,583
+	RW1;RW1 3465,563 3497,583
 	RW1; 3511,593 3497,583
 	RW4;RW3 4342,9301 4377,9258 4396,9237 4467,9163
 	RW3;RW3 4467,9163 4609,9027 4689,8953
@@ -7532,7 +7535,8 @@ Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
 	RW6;RW6 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 	RW3;RW3 10228,-2136 10194,-2138 10096,-2137
 	RW6;RW6 12422,21492 12472,21510
-Grünbeschichtung	RW4; 22092,999 22092,977 22100,941 22120,886 22062,773 22007,711
+Grünbeschichtung, Leitboys	RW4; 22092,999 22092,977 22100,941
+Grünbeschichtung	RW4; 22100,941 22120,886 22062,773 22007,711
 Grünbeschichtung	RW4; 22007,711 22062,773 22120,886
 Busspur ist immer gültig	RW5; 22120,886 22100,941 22092,977
 Radspur nur für linksabbiegende Radfahrer, rot markiert	RW3; 22092,977 22092,999

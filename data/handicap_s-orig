@@ -19,7 +19,7 @@ Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-06-11 vvv
+#: last_checked: 2023-06-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -47,29 +47,6 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
-# 
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0123_barrierefrei.pdf (ab 30.1.2023 für ca. 7 Monate)
-#: by: https://nitter.cz/VIZ_Berlin/status/1620389056898269185#m
-#: by: https://nitter.cz/pic/orig/media%2FFnzGTtUXEAImMiS.jpg
-#: by: https://nitter.net/VIZ_Berlin/status/1636751731508871169#m
-#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-220523/ (bis 26.05.2023)
-#: by: https://nitter.cz/VIZ_Berlin/status/1660499223828402181#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcTdIZ1dZQUlvMjc5LmpwZw==
-#: source_id: viz2021:13.47,52.50223,31.01.2023,12:45 (bis 17.05.2023) (inaktiv)
-#: source_id: bvg2021:m43#BVG315520_0
-#: source_id: bvg2021:m43#BVG321058_0
-#: source_id: viz2021:13.468993,52.501198,30.01.2023,08:00 (bis 17.5.2023, nur Kfz-Verkehr betroffen) (ersetzt, inaktiv)
-#: source_id: viz2021:13.4675,52.498041,30.01.2023,08:00 (bis 17.05.2023) (inaktiv)
-#: source_id: viz2021:13.468961,52.501075,17.03.2023,08:00 (bis 17.05.2023) (inaktiv)
-#: source_id: viz2021:13.470533,52.504112,22.05.2023,06:00 (unklare Verkehrsmeldung, bis 26.05.2023) (inaktiv)
-#: source_id: viz2021:13.469648,52.501756,12.06.2023,07:00 (Vollsperrung für Kfz-Verkehr, bis 25.08.2023)
-#: note: laut Baustellenplan Wegführung über den linken Gehweg, in der Realität gibt es keine Freigabe des Gehwegs; wegen des erhöhten Verkehrs (obere Kynaststr. wurde mittlerweile komplett für den Kfz-Verkehr gesperrt: q3 -> q4+); bei der neuerlichen Sperrung gibt es nun doch Radfahrer-frei-Schilder, allerdings recht schmal; die neue Sperrung ab Juni 2023 wieder ohne Radfahrer-frei-Schilder
-#: note: laut rbbtext von 6.6.2023 bis Ende August 2023
-#: last_checked: 2023-06-07
-#: next_check: 2023-06-12
-# REMOVED --- #: next_check: 2023-08-31
-#: valid: -2023-08-31
-An der Mole: Einbahnstraßenregelung	q3::inwork; 14843,10621 14828,10561 14832,10512 14815,10516 14805,10518
 # 
 # REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023) --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw== --- #: next_check: 2023-05-26 --- #: valid: -20230526 --- Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
@@ -1615,7 +1592,7 @@ Am Rummelsburger See: Fußgänger an schönen Tagen	q2+ 16120,9653 16182,9591 16268
 # REMOVED (hier eigentlich Service-Straße) --- Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
 # REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20904,2426 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
-Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3695,1308 3619,1207 3419,1061 3375,1026 3366,1007
+Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3710,1317 3635,1215 3424,1052 3381,1022 3366,1007
 #: XXX_prog BS (es gibt an beiden Seiten Bordsteine sowie eine zusätzliche Stufe im südlichen Bereich, ansonsten wäre es wohl q2)
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 # REMOVED (separater Radweg existiert) --- Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5622,6400 5582,6360
@@ -1867,7 +1844,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="16"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-06-12
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -1975,7 +1952,7 @@ Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fußgänger-Eintrag verknüpfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
 Mauerweg: einige Fußgänger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11928,588 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
-Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
+Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
 Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205

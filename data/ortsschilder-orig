@@ -1045,11 +1045,13 @@ Bestensee	OS 26431,-16931
 Bestensee	OS 25597,-17887
 Bestensee	OS 28101,-18011
 Bestensee	OS 26729,-16199
-Bestensee	OS 28419,-17633
-Bestensee	OS 28359,-17440
-Bestensee	OS 28304,-17279
-Bestensee	OS 28264,-17188
-Bestensee	OS 28224,-17091
+# REMOVED (Ortseingangsschilder nun auf der B179) --- Bestensee	OS 28419,-17633
+# REMOVED --- Bestensee	OS 28359,-17440
+# REMOVED --- Bestensee	OS 28304,-17279
+# REMOVED --- Bestensee	OS 28264,-17188
+# REMOVED --- Bestensee	OS 28224,-17091
+Bestensee	OS 28250,-17056
+Bestensee	OS 28469,-17638
 # 
 Pätz	OS 28779,-18156
 # 
@@ -1871,7 +1873,7 @@ Stahnsdorf	OS -347,-1747
 Teltow	OS 166,-2946
 Teltow	OS -624,-1468
 Teltow	OS 3721,195
-Teltow	OS 3467,560
+Teltow	OS 3465,563
 Teltow	OS 1464,-367
 Teltow	OS 4309,-2385
 Teltow	OS 81,-2868
@@ -2368,8 +2370,16 @@ Kerzendorf	OS 2223,-14935
 Jühnsdorf	OS 9466,-11222
 Jühnsdorf	OS 9779,-12108
 # 
+Wietstock	OS 4916,-15488
+Wietstock	OS 4181,-15094
+# 
 Groß Schulzendorf	OS 7868,-14585
 Groß Schulzendorf	OS 7369,-15379
+Groß Schulzendorf	OS 7950,-15310
+Groß Schulzendorf	OS 6840,-14917
+# 
+Glienick	OS 8921,-16527
+Glienick	OS 9756,-17967
 # 
 #: linked: Werben|bei Zossen vvv
 Werben	OS 6740,-17328
@@ -2391,10 +2401,10 @@ Raben	OS -44763,-41820
 # 
 Ludwigsfelde	OS 1899,-8471
 Ludwigsfelde	OS 3077,-9731
+Ludwigsfelde	OS 1957,-12703
+Ludwigsfelde	OS -904,-9448
 #: by: mapillary vvv
 Ludwigsfelde	OS 2353,-11431
-Ludwigsfelde	OS 1942,-12684
-Ludwigsfelde	OS -906,-9454
 #: by: ^^^
 # 
 Genshagen	OS 3077,-9731
@@ -2780,6 +2790,7 @@ Mildenberg	OS 1957,66653
 # 
 #: linked: Schöneiche|b. Zossen vvv
 Schöneiche	OS 19648,-20249
+#: note: hier waren Scherzkekse am Werk: eine Seite zeigt "Ortseingang", die andere "Ortsausgang" (gesehen Juni 2023)
 Schöneiche	OS 18195,-20546
 #: by: mapillary vvv
 Schöneiche	OS 17851,-19772
@@ -2787,6 +2798,11 @@ Schöneiche	OS 17851,-19772
 #: linked ^^^
 # 
 Zossen	OS 15985,-20746
+# 
+Nächst Neuendorf	OS 13223,-20504
+Nächst Neuendorf	OS 11519,-19905
+Nächst Neuendorf	OHT 11178,-19984
+Nächst Neuendorf	OHT 10975,-19854
 # 
 Waldstadt	OS 16006,-26895
 Waldstadt	OS 16865,-26608
@@ -3037,8 +3053,8 @@ Birkenwerder	OS -279,30796
 #: linked ^^^
 # 
 #: linked: Sputendorf|b. Großbeeren vvv
+Sputendorf	OS -1344,-7854
 #: by: mapillary vvv
-Sputendorf	OS -1344,-7858
 Sputendorf	OS -2156,-7563
 Sputendorf	OS -714,-7615
 #: by: ^^^

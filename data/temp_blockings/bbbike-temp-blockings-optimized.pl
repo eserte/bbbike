@@ -4703,17 +4703,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1003726.php (Sperrung 2020)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1330851.php (Sperrung 2023)
-#: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
+# REMOVED --- #: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
 #: source_id: 2147346494 (inaktiv)
 #: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023)
 # REMOVED ---	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
-#: next_check: 2023-06-05
-	q4::inwork; 16169,6064 16510,5917 16868,5938
+# REMOVED --- #: next_check: 2023-06-05
+	q2::inwork; 16169,6064 16510,5917 16868,5938
 ',
          'from' => 1685829600,
          'id' => 3287,
          'source_id' => '',
-         'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, vom 05.06.2023 bis 23.06.2023',
+         'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, Radfahrer benutzen den gegenüberliegenden Radweg, vom 05.06.2023 bis 23.06.2023',
          'type' => 'handicap',
          'until' => 1687536000
        },
@@ -5718,7 +5718,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.37688,52.51775,09.06.2023,06:00 (Scheidemannstr., bis 28.06.2023)
 #: source_id: viz2021:13.37081,52.51779,11.06.2023,06:00 (Heinrich-von-Gagern-Str., bis 26.06.2023)
 #: source_id: viz2021:13.3546,52.51713,11.06.2023,06:00 (John-Foster-Dulles-Allee, bis 26.06.2023)
-#: source_id: viz2021:13.35095,52.51487,11.06.2023,06:00 (Spreeweg, bis 26.06.2023)
+#: source_id: viz2021:13.35095,52.51487,11.06.2023,06:00 (Spreeweg, bis 26.06.2023) (wurde ersetzt, inaktiv)
+#: source_id: viz2021:13.350711,52.51499,11.06.2023,06:00 (Spreeweg, bis 26.06.2023)
 #: by: https://viz.berlin.de/2022/06/sons-2022/
 #: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
@@ -6297,7 +6298,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-06-11
+#: last_checked: 2023-06-12
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6631,7 +6632,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-12
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -6748,12 +6749,12 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: osm_watch: way id="46907541" version="13"
 #: note: laut osm: Bauarbeiten erst ab Juni 2023
 #: note: siehe auch Eintrag in gesperrt-orig
-	2::inwork 4053,2300 4209,2641 4247,2652
+	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
 ',
          'from' => 1685397600,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann ab Juni 2023 bis Ende 2024 gesperrt sein, Stand Mitte April 2023: Weg ist frei',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann ab Juni 2023 bis Ende 2024 gesperrt sein, Stand Mitte Juni 2023: Weg ist frei',
          'type' => 'gesperrt',
          'until' => 1735685999
        },
@@ -6763,7 +6764,8 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://nitter.it/pic/orig/media%2FFpp930OXEAEr-JC.jpg
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/waltersdorfer-strasse-vollsperrung-id208350
 #: source_id: viz2021:13.5735,52.40571,24.02.2023,08:00 (bis 30.06.2023) (inaktiv)
-	q4::inwork; 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228
+# REMOVED (hier nicht) ---	q4::inwork; 22145,208 22172,194
+	q4::inwork; 22172,194 22169,14 22168,-71 22177,-137 22190,-228
 ',
          'from' => 1677135600,
          'id' => 3729,
@@ -7206,14 +7208,23 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        },
        undef,
        {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-05-10
-	q4::inwork 6923,5057 7030,4937
+         'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (none) vvv
+#: last_checked: 2023-06-12 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2025-10-31 vvv
+Grabertstr.	q4::inwork 6923,5057 7030,4937
+Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3784,
-         'text' => 'Grabertstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Grabertstr. und Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7239,16 +7250,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        undef,
        undef,
        undef,
-       {
-         'data' => '	q3::inwork 15714,8633 15547,8531
-',
-         'from' => 1684036800,
-         'id' => 3789,
-         'source_id' => 'viz2021:13.48123,52.48258,15.05.2023,06:00',
-         'text' => 'Am Plänterwald: Bauarbeiten, Fahrbahn an der Einmündung Neue Krugallee gesperrt, vom 15.05.2023 06:00 bis 12.06.2023 23:59',
-         'type' => 'handicap',
-         'until' => 1686607140
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1327771.php (zu neuen, teilweise provisorischen Gehwegen an der Werneuchener Wiese; Erwähnung von Bauarbeiten der Wasserbetriebe)
@@ -7516,12 +7518,16 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
          'data' => '#: next_check_id: PARRISIUS-2023
 #: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
-	q4::inwork 22531,5871 22358,5918
+#: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
+# REMOVED (hier wohl nicht) ---	q4::inwork 22531,5871 22358,5918
+Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
+	q3::inwork 22631,5866 22766,5840
 ',
          'from' => 1686434400,
          'id' => 3814,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331104.php',
-         'text' => 'Parrisiusstr.: Bauarbeiten zwischen Bahnhofstr. und Borgmannstr., Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
+         'text' => 'Parrisiusstr.: Bauarbeiten zwischen Borgmannstr. und Weinbergstr., Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
          'type' => 'handicap',
          'until' => 1692395999
        },
@@ -7593,6 +7599,21 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
          'text' => 'Holsteiner Ufer: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2023',
          'type' => 'handicap',
          'until' => 1695484800
+       },
+       {
+         'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (B)
+#: last_checked: 2023-06-12
+#: check_frequency: 180d
+#: next_check: 2025-10-31
+	q4::inwork 6826,4472 6826,4500 6841,4667
+',
+         'from' => 1686595951,
+         'id' => 3820,
+         'text' => 'Liebenowstr.: Bauarbeiten zwischen Stephanstr. und Denkstr., Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761951600
        }
      
 );
