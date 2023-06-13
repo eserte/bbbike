@@ -5900,7 +5900,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -5912,9 +5912,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1660582743,
          'id' => 3605,
          'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
-         'text' => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 20.6.2023',
+         'text' => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 21.7.2023',
          'type' => 'handicap',
-         'until' => 1687273200
+         'until' => 1689951600
        },
        undef,
        undef,
@@ -6406,9 +6406,9 @@ mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
          'from' => 1668540097,
          'id' => 3683,
          'source_id' => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
-         'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 08.09.2023',
+         'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 30.09.2023',
          'type' => 'handicap',
-         'until' => 1694185200
+         'until' => 1696086000
        },
        undef,
        undef,
@@ -6605,7 +6605,7 @@ mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1155654228" version="7"
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-12 (daf)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 ',
          'from' => undef,
@@ -6747,16 +6747,16 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch: way id="46907541" version="13"
-#: note: laut osm: Bauarbeiten erst ab Juni 2023
+#: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
 ',
-         'from' => 1685397600,
+         'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann ab Juni 2023 bis Ende 2024 gesperrt sein, Stand Mitte Juni 2023: Weg ist frei',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab Novemeber 2023 bis Juni 2024 gesperrt sein',
          'type' => 'gesperrt',
-         'until' => 1735685999
+         'until' => 1719763200
        },
        undef,
        {
@@ -7516,18 +7516,22 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
        },
        {
          'data' => '#: next_check_id: PARRISIUS-2023
-#: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023)
+#: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023) (inaktiv)
+#: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 #: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
-# REMOVED (hier wohl nicht) ---	q4::inwork 22531,5871 22358,5918
+#: note: mittlerweile hat rbb die Meldung geändert, von Borgmannstraße-Weinbergstraße zu Bahnhofstraße-Borgmannstraße
+#: add_fragezeichen: Wo genau befinden sich die Bauarbeiten? vvv
+	q4::inwork 22531,5871 22358,5918
 Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
 	q3::inwork 22631,5866 22766,5840
+#: add_fragezeichen ^^^
 ',
          'from' => 1686434400,
          'id' => 3814,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331104.php',
-         'text' => 'Parrisiusstr.: Bauarbeiten zwischen Borgmannstr. und Weinbergstr., Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
+         'text' => 'Parrisiusstr.: Bauarbeiten, Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
          'type' => 'handicap',
          'until' => 1692395999
        },
@@ -7535,6 +7539,7 @@ Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: XXX wie groß sind die Einschränkungen für Radfahrer?
+#: last_checked: 2023-06-13 (Halteverbotsschilder stehen schon, keine weiteren Schilder/Absperrungen)
 #: next_check: 2023-06-16
 	q3::temp::play 14208,12235 14055,11964
 ',

@@ -36317,14 +36317,14 @@ EOF
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2023-06-20 17:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 20.6.2023',
+       until => $isodate2epoch->("2023-07-21 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 21.7.2023',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -37419,10 +37419,10 @@ EOF
 EOF
      },
      { from  => 1668540097, # 2022-11-15 20:21
-       until => $isodate2epoch->("2023-09-08 17:00:00"), # 1691445599, # 2023-08-07 23:59
-       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 08.09.2023',
+       until => $isodate2epoch->("2023-09-30 17:00:00"), # 1691445599, # 2023-08-07 23:59
+       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 30.09.2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
+       source_id => 'viz2021:13.288823,52.641792,15.11.2022,07:30', # bis 30.09.2023
        data  => <<EOF,
 #: next_check_id: SCHOENFLIESSER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
@@ -37753,7 +37753,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1155654228" version="7"
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-12 (daf)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
      },
@@ -37978,9 +37978,9 @@ Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
 Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-30 00:00:00"), # 1677452400, # 2023-02-27 00:00
-       until => 1735685999, # 2024-12-31 23:59
-       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann ab Juni 2023 bis Ende 2024 gesperrt sein, Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
+     { from  => $isodate2epoch->("2023-10-15 00:00:00"), # 1677452400, # 2023-02-27 00:00
+       until => $isodate2epoch->("2024-06-30 18:00:00"), # 1735685999, # 2024-12-31 23:59
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab Novemeber 2023 bis Juni 2024 gesperrt sein', # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: TELTOWKANALUFERWEG-2023
@@ -37988,7 +37988,7 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch: way id="46907541" version="13"
-#: note: laut osm: Bauarbeiten erst ab Juni 2023
+#: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
@@ -39116,18 +39116,22 @@ EOF
      },
      { from  => 1686434400, # 2023-06-11 00:00
        until => 1692395999, # 2023-08-18 23:59
-       text  => 'Parrisiusstr.: Bauarbeiten zwischen Borgmannstr. und Weinbergstr., Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023', # was: zwischen Bahnhofstr. und Borgmannstr.
+       text  => 'Parrisiusstr.: Bauarbeiten, Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023', # was: zwischen Bahnhofstr. und Borgmannstr.; dann "zwischen Borgmannstr. und Weinbergstr."
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331104.php',
        data  => <<EOF,
 #: next_check_id: PARRISIUS-2023
-#: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023)
+#: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023) (inaktiv)
+#: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 #: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
-# REMOVED (hier wohl nicht) ---	q4::inwork 22531,5871 22358,5918
+#: note: mittlerweile hat rbb die Meldung geändert, von Borgmannstraße-Weinbergstraße zu Bahnhofstraße-Borgmannstraße
+#: add_fragezeichen: Wo genau befinden sich die Bauarbeiten? vvv
+	q4::inwork 22531,5871 22358,5918
 Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
 	q3::inwork 22631,5866 22766,5840
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-15 00:00:00") }, # 1 Tag Vorlauf
@@ -39138,6 +39142,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: XXX wie groß sind die Einschränkungen für Radfahrer?
+#: last_checked: 2023-06-13 (Halteverbotsschilder stehen schon, keine weiteren Schilder/Absperrungen)
 #: next_check: 2023-06-16
 	q3::temp::play 14208,12235 14055,11964
 EOF
