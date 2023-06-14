@@ -799,14 +799,11 @@ RUN CODENAME=$(perl -nle '/^VERSION_CODENAME="?([^"]+)/ and $codename=$1; /^VERS
 EOF
     }
     $dockerfile .= <<EOF;
-RUN apt-get update
-RUN apt-get install -qqy --no-install-recommends \\
+RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libplack-middleware-rewrite-perl libcgi-emulate-psgi-perl libcgi-compile-perl \\
       libapache-session-counted-perl \\
-      libarray-heap-perl
-RUN apt-get install -qqy --no-install-recommends \\
-      make gcc libc6-dev libinline-perl libinline-c-perl
-RUN apt-get install -qqy --no-install-recommends \\
+      libarray-heap-perl \\
+      make gcc libc6-dev libinline-perl libinline-c-perl \\
       libmime-lite-perl
 EOF
     if ($opt{mapserver}) {
