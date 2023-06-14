@@ -82,6 +82,7 @@ usage: $0
 	  [-addtracksdir dir ...]
 	  [-person ...]
 	  [-interpolate] [-allow-overwrite-gpspos]
+          [-mode external-geocoding|manipulate-copy|manipulate-inplace]
           [-v] [-debug] image ...
 EOF
 }
