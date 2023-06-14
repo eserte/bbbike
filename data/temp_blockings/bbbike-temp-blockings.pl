@@ -35793,16 +35793,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-06-14 00:00:00"), # 1656007200, # 2022-06-23 20:00
-       until => $isodate2epoch->("2023-06-20 23:59:59"), # 1656640800, # 2022-07-01 04:00
-       text  => 'Blumberger Damm: voraussichtlich Sperrung zwischen Altentreptower Str. und Frankenholzer Weg, auch Radfahrer und Fußgänger sind betroffen, 15. Juni 2023 bis 20. Juni 2023',
+       until => $isodate2epoch->("2023-06-20 18:00:00"), # 1656640800, # 2022-07-01 04:00
+       text  => 'Blumberger Damm: Sperrung zwischen Altentreptower Str. und Frankenholzer Weg, auch Radfahrer und Fußgänger sind betroffen, 15. Juni 2023 bis 20. Juni 2023',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php',
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php
 #: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2023/05/BVG-PLUS-06-23-barrierefrei-1.pdf
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1334239.php
+#: by: https://nitter.cz/VIZ_Berlin/status/1669039498230116352#m
+#: by: https://viz.berlin.de/2023/06/blumberger-damm-bruecke-2/
 #: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
+#: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023)
 	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
 EOF
      },
@@ -36867,7 +36871,7 @@ EOF
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
 #: last_checked: 2023-06-01 vvv
-#: next_check: 2023-06-15 vvv
+#: next_check: 2023-06-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -36926,16 +36930,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Uhlandstr.: Fahrbahn zwischen Lessingstr. und Friedhof kann wegen Bauarbeiten gesperrt sein',
+       text  => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein', # was "... Lessingstr. und ..."
        type  => 'handicap',
        data  => <<EOF,
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-06-02 (mapillary) vvv
+#: last_checked: 2023-06-11 (mapillary) vvv
 #: check_frequency: 30d vvv
-nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
-Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
+nur Gehweg frei	q4::inwork 7641,20745 7630,20698
+# REMOVED (hier nicht mehr) --- nur Gehweg frei	q4::inwork 7630,20698 7616,20633
+# REMOVED (hier nicht mehr) --- Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -38115,14 +38120,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
+#: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (ex-G[falsch]) vvv
 #: osm_watch: way id="1171918026" version="2" vvv
 #: last_checked: 2023-05-10 vvv
 #: check_frequency: 60d vvv
+#: next_check: 2023-06-11 vvv
 	q2::inwork 9031,6355 8995,6473
 	q4::inwork 8995,6473 8961,6490
 	q2::inwork 8961,6490 8949,6644
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
