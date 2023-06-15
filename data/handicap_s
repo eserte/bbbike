@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, enger Weg	q4::inwork 12788,11898 12891,12008
 Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
 Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229
@@ -26,7 +27,6 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10364,11896 10332,11929 10392,11991
-Caroline-von-Humboldt-Weg: Kraneinsatz, Fahrbahn gesperrt, schmaler Durchgang existiert	q4::inwork 9961,12094 10050,11942
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
@@ -3378,7 +3378,6 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833 9375,12911
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
 Taubenstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
-Mauerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9138,11872 9171,11777
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Weinmeisterhornweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174
 Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16172,25217 16171,25254

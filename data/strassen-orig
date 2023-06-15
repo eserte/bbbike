@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-06-01 vvv
+#: last_checked: 2023-06-15 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -406,7 +406,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
-#: last_checked: 2023-06-04
+#: last_checked: 2023-06-15
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-07-01
 # REMOVED --- #: valid: !20200821-20221122
@@ -11085,8 +11085,10 @@ Lohmühlenstr.	N 12897,9365 12987,9481 13058,9572 13127,9661 13156,9702 13190,975
 (Uferweg zum Ernst-Heilmann-Steg)	NN 13216,9983 13230,9981 13270,10030
 (Rampe zum Ernst-Heilmann-Steg)	NN 13275,10055 13270,10030
 (Görlitzer Ufer - Am Flutgraben)	NN 13270,10030 13306,10006 13371,9974
+(Am Flutgraben)	NN 13535,10184 13371,9974 13333,9929
 Am Flutgraben	NN 13333,9929 13418,9944 13579,10146
-(Am Flutgraben)	NN 13333,9929 13371,9974 13535,10184
+#: osm.highway: service
+Am Flutgraben	N 13579,10146 13613,10187 13647,10218
 #: alias: Lohmühlenufer
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_35_3877_3996_online.pdf (Grünanlagenbezeichnung)
 (Am Landwehrkanal)	NN 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470 12889,9426 12897,9365
@@ -18769,7 +18771,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9153,12928
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="10"
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-15
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9153,12928
 Karlplatz	N 8711,12986 8676,12976

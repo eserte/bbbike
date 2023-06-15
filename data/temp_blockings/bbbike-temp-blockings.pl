@@ -28362,7 +28362,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-06-01
+#: last_checked: 2023-06-15
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30397,13 +30397,15 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-06-06 vvv
+#: last_checked: 2023-06-15 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-09-01 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
+	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400 13513,11351
+	2::inwork 13442,11400 13416,11425 13427,11431
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
 #: next_check ^^^
@@ -35475,7 +35477,7 @@ EOF
      },
      { from  => 1652122429, # 2022-05-09 20:53
        until => 1706716800, # 2024-01-31 17:00
-       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023', # auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023', #
        type  => 'gesperrt',
        source_id => 'viz2021:13.492858,52.63663,09.05.2022,11:58', # inaktiv
        data  => <<EOF,
@@ -35493,10 +35495,11 @@ EOF
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024) (bis 02.06.2023) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023)
 #: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023)
-#: next_check: 2023-06-16
-# REMOVED --- #: next_check: 2024-01-31
-#	q4::inwork; 16166,25767 16121,25818
-	2::inwork 16166,25767 16121,25818
+#: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023)
+# REMOVED --- #: next_check: 2023-06-16
+#: next_check: 2024-01-31
+	q4::inwork; 16166,25767 16121,25818
+#	2::inwork 16166,25767 16121,25818
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-25 00:00:00") }, # 1 Tag Vorlauf
@@ -35674,8 +35677,6 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1217800.php
 #: by: https://viz.berlin.de/2023/06/tiergarten_grossveranstaltungen/
-#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
-#: next_check: 2023-06-16
 	2::temp 8538,12245 8592,12252
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -35721,14 +35722,17 @@ EOF
 	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
 EOF
      },
-     { from  => 1655978400, # 2022-06-23 12:00
-       until => 1656108000, # 2022-06-25 00:00
-       text  => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, Von 24.06.2022, ca. 12:00 Uhr bis 24.06.2022, ca. 24:00 Uhr',
+     { from  => $isodate2epoch->("2023-06-16 06:00:00"), # 1 Tag Vorlauf # 1655978400, # 2022-06-23 12:00
+       until => $isodate2epoch->("2023-06-18 23:00:00"), # 1656108000, # 2022-06-25 00:00
+       text  => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, Von 17.06.2023, ca. 06:00 Uhr bis 18.06.2023, ca. 23:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',
        data  => <<EOF,
+#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
+#: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
 	2::temp 8737,12098 8595,12066 8577,11896 8783,11959 8844,11984 8901,12008
+Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
 EOF
      },
      { from  => undef, # 
@@ -35764,7 +35768,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-06-06
+#: last_checked: 2023-06-15
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -36870,7 +36874,7 @@ EOF
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-06-01 vvv
+#: last_checked: 2023-06-15 vvv
 #: next_check: 2023-06-16 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -37973,11 +37977,12 @@ EOF
 EOF
      },
      { from  => 1676361600, # 2023-02-14 09:00
-       until => 1686841200, # 2023-06-15 17:00
-       text  => 'Semmelweisstr.: Bauarbeiten zwischen Pfarrwörde und Am Bruchland, Fahrbahn kann gesperrt sein, außerdem Einbahnstraßenregelung in der Pfarrwöhrde, vom 15.02.2023 09:00 bis 15.06.2023 17:00',
+       until => $isodate2epoch->("2023-08-14 17:00:00"), # 1686841200, # 2023-06-15 17:00
+       text  => 'Semmelweisstr.: Bauarbeiten zwischen Pfarrwörde und Am Bruchland, Fahrbahn kann gesperrt sein, außerdem Einbahnstraßenregelung in der Pfarrwöhrde, vom 15.02.2023 09:00 bis 14.08.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023)
+#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023) (bis 14.08.2023)
+#: source_id: viz2021:13.53054,52.42388,15.02.2023,09:00 (bis 14.08.2023)
 #: source_id: bvg2021:160#BVG316004_0 (kein Ende-Datum)
 Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
 Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
@@ -38966,10 +38971,10 @@ EOF
 EOF
      },
      { from  => 1685242500, # 2023-05-28 04:55
-       until => $isodate2epoch->("2023-06-30 17:00:00"),
-       text  => 'Paradiesstr.: Straße zwischen Bohnsdorfer Kirchsteig und Buntzelstr. gesperrt (Wasserrohrbruch), voraussichtlich bis 30.06.2023',
+       until => $isodate2epoch->("2023-07-03 17:00:00"),
+       text  => 'Paradiesstr.: Straße zwischen Bohnsdorfer Kirchsteig und Buntzelstr. gesperrt (Wasserrohrbruch), voraussichtlich bis 03.07.2023',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.561277,52.401879,29.05.2023,04:55', # (ohne Endedatum) (mittlerweile bis 30.06.2023)
+       source_id => 'viz2021:13.561277,52.401879,29.05.2023,04:55', # (ohne Endedatum) (mittlerweile bis 30.06.2023) (bis 03.07.2023)
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1663504216277614592#m
 # REMOVED --- #: XXX Bis wann ist die Straße gesperrt? Kommen tatsächlich auch keine Fußgänger durch? --- #: next_check: 2023-06-29
@@ -39219,6 +39224,24 @@ EOF
 #: check_frequency: 180d
 #: next_check: 2025-10-31
 	q4::inwork 6826,4472 6826,4500 6841,4667
+EOF
+     },
+     { from  => 1686693600, # 2023-06-14 00:00
+       until => 1688162340, # 2023-06-30 23:59
+       text  => 'Sakrower Landstraße: zwischen Kafkastr. und Hottengrundweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 00:00 bis 30.06.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.128539,52.448135,15.06.2023,00:00',
+       data  => <<EOF,
+	q4::inwork -8086,4504 -8259,4267 -8273,4249
+EOF
+     },
+     { from  => 1686715200, # 2023-06-14 06:00
+       until => 1687723200, # 2023-06-25 22:00
+       text  => 'Schirwindter Allee, Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.228423,52.508685,15.06.2023,06:00',
+       data  => <<EOF,
+	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 EOF
      },
     );
