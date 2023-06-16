@@ -18406,12 +18406,13 @@ EOF
 	q4::temp 5368,13406 5351,13238 5328,13019
 EOF
      },
-     { from  => 1276833600, # 2010-06-18 06:00
-       until => 1276966800, # 2010-06-19 19:00
-       text  => 'Lipschitzallee (Neukölln): Veranstaltung, gesperrt (bis 19 Uhr) in beiden Richtungen zwischen Fritz-Erler-Allee und Rudower Straße, 19.06.2010 06:00 Uhr bis 19.06.2010 19:00 Uhr ',
-       type  => 'gesperrt',
-       source_id => 'IM_015892',
+     { from  => 1686866400, # 2023-06-16 00:00, # 1276833600, # 2010-06-18 06:00
+       until => 1687010400, # 2023-06-17 16:00, # 1276966800, # 2010-06-19 19:00
+       text  => 'Lipschitzallee: Sportveranstaltung zwischen Fritz-Erler-Allee und Rudower Str., Straße ist gesperrt, evtl. sind auch Radfahrer betroffen, am 17.06.2023 zwischen 06:00 und 16:00 Uhr',
+       type  => 'handicap',
        data  => <<EOF,
+#: source_id: IM_015892 (inaktiv)
+#: by: https://viz.berlin.de/2023/06/verkehrsvorschau-17_180623/
 	q4::temp 14946,2519 15078,2647 15174,2773 15254,2926 15301,3038
 EOF
      },
@@ -29486,11 +29487,11 @@ EOF
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="40"
+#: osm_watch: way id="8655276" version="41"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-05-06
+#: last_checked: 2023-06-16 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -31167,7 +31168,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-08
+#: last_checked: 2023-06-16
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32829,7 +32830,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2023-02-26 (baustellen-doku)
+#: last_checked: 2023-06-13 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2023-10-01
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
@@ -35493,7 +35494,7 @@ EOF
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
 #: source_id: viz2021:13.493,52.63648,26.10.2022,11:11 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024) (bis 02.06.2023) (inaktiv)
-#: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023)
+#: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023) (inaktiv)
 #: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023)
 # REMOVED --- #: next_check: 2023-06-16
@@ -36858,7 +36859,8 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023) (bis 30.6.2023)
+#: source_id: viz2021:13.38778,52.52391,10.05.2023,06:00 (bis 30.06.2023)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -36871,11 +36873,12 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-100523/ (nun ab Reinhardstr., Bauphase bis Mitte Juni 2023, Gesamtbaumaßnahme bis Ende Juli 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,767328#msg-767328
+#: by: https://www.nd-aktuell.de/artikel/1173999.bvg-friedrichstrasse-skandal-baustelle-in-der-dauerschleife.html
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
 #: last_checked: 2023-06-15 vvv
-#: next_check: 2023-06-16 vvv
+#: next_check: 2023-06-30 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -36953,7 +36956,7 @@ EOF
      },
      { from  => 1665385200, # 2022-10-10 09:00
        until => $isodate2epoch->("2023-07-14 17:00:00"), # 1667664000, # 2022-11-05 17:00
-       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, vom 11.10.2022 09:00 bis 14.07.2023 17:00',
+       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 14.07.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
@@ -36965,6 +36968,7 @@ EOF
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
+Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 EOF
      },
      { from  => 1665291600, # 2022-10-09 07:00
@@ -37272,7 +37276,7 @@ EOF
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
-#: osm_watch: way id="1055654058" version="1"
+#: osm_watch: way id="1055654058" version="2"
 #: last_checked: 2023-06-11
 #: check_frequency: 150d
 #: next_check: 2025-01-05
@@ -38103,6 +38107,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1665721442158215170#m
 #: by: https://nitter.cz/BaBerlinTK/status/1665720334689943552#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15561.pdf
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-in-koepenick-bvg-bus-tram-wann-die-staufalle-endlich-entschaerft-wird-li.359363
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -38472,16 +38477,18 @@ EOF
      },
      { from  => 1677452400, # 2023-02-27 00:00
        until => $isodate2epoch->("2023-11-30 18:00:00"), # 1685743200, # 2023-06-03 00:00
-       text  => 'Passow: Bahnübergang komplett gesperrt, bis zum 2.6.2023 (Umfahrungsmöglichkeit über Ortsumfahrung Passow, Kraftfahrzeugstr. wurde hier aufgehoben, Routing in BBBike nicht möglich), evtl. auch länger',
+       text  => 'Passow: Bahnübergang komplett gesperrt, bis zum 1.7.2023 (Umfahrungsmöglichkeit über Ortsumfahrung Passow, Kraftfahrzeugstr. wurde hier aufgehoben, Routing in BBBike nicht möglich), evtl. auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.moz.de/lokales/schwedt/strassensperrung-passow-bahnhof-in-passow-kaum-noch-erreichbar-_-anwohner-ohne-auto-haben-das-nachsehen-69248727.html
 #: by: https://www.nordkurier.de/regional/uckermark/kilometerlanger-umweg-in-passow-1437197
 #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
+#: by: https://www.schwedt.eu/de/31978 (Verlängerung bis 1.7.2023, allerdings nicht täglich)
+#: by: https://www.schwedt.eu/de/31541
 #: also_indoor: traffic (G,W)
 #: last_checked: 2023-06-02 (traffic)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-06-02
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2023-07-01
 	2::inwork 56280,83440 56301,83419 56317,83407
 EOF
      },
@@ -38867,6 +38874,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1327771.php (zu neuen, teilweise provisorischen Gehwegen an der Werneuchener Wiese; Erwähnung von Bauarbeiten der Wasserbetriebe)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/provisorischer-parkweg_a382807
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
 #: last_checked: 2023-05-30 (mapillary)
@@ -39154,10 +39162,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
-#: XXX wie groß sind die Einschränkungen für Radfahrer?
-#: last_checked: 2023-06-13 (Halteverbotsschilder stehen schon, keine weiteren Schilder/Absperrungen)
-#: next_check: 2023-06-16
-	q3::temp::play 14208,12235 14055,11964
+#: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
+#: last_checked: 2023-06-15
+#: next_check: 2023-08-30
+	q4::temp::play 14208,12235 14055,11964
 EOF
      },
      { from  => 1685858400, # 2023-06-04 08:00
@@ -39237,11 +39245,29 @@ EOF
      },
      { from  => 1686715200, # 2023-06-14 06:00
        until => 1687723200, # 2023-06-25 22:00
-       text  => 'Schirwindter Allee, Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
+       text  => 'Schirwindter Allee, Passenheimer Str., Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
        type  => 'gesperrt',
        source_id => 'viz2021:13.228423,52.508685,15.06.2023,06:00',
        data  => <<EOF,
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
+EOF
+     },
+     { from  => 1685858400, # 2023-06-04 08:00
+       until => 1689343200, # 2023-07-14 16:00
+       text  => 'Fürstenwalde, Hegelstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.06.2023, 08:00 Uhr bis 14.07.2023, 16:00 Uhr.',
+       type  => 'gesperrt',
+       source_id => 'LS/221-F/23/073',
+       data  => <<EOF,
+	2::inwork 54260,-2960 54095,-3250
+EOF
+     },
+     { from  => 1687068000, # 2023-06-18 08:00
+       until => 1715349600, # 2024-05-10 16:00
+       text  => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
+       type  => 'gesperrt',
+       source_id => 'LS/221-E/23/077',
+       data  => <<EOF,
+	2::inwork -7332,66101 -7636,65571
 EOF
      },
     );
