@@ -2662,17 +2662,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_015892 (inaktiv)
-#: by: https://viz.berlin.de/2023/06/verkehrsvorschau-17_180623/
-	q4::temp 14946,2519 15078,2647 15174,2773 15254,2926 15301,3038
-',
-         'from' => 1686866400,
-         'id' => 2086,
-         'text' => 'Lipschitzallee: Sportveranstaltung zwischen Fritz-Erler-Allee und Rudower Str., Straße ist gesperrt, evtl. sind auch Radfahrer betroffen, am 17.06.2023 zwischen 06:00 und 16:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1687010400
-       },
+       undef,
        undef,
        undef,
        {
@@ -4425,15 +4415,15 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-06-15 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2023-09-01 vvv
+#: last_checked: 2023-06-17 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
-	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400 13513,11351
-	2::inwork 13442,11400 13416,11425 13427,11431
+	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400
+außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
 #: next_check ^^^
@@ -4552,7 +4542,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-16
+#: last_checked: 2023-06-17
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5767,7 +5757,9 @@ Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
        undef,
        undef,
        {
-         'data' => '#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
+         'data' => '#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023)
+#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023)
+#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
 #: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
 	2::temp 8737,12098 8595,12066 8577,11896 8783,11959 8844,11984 8901,12008
@@ -5832,6 +5824,8 @@ Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1334239.php
 #: by: https://nitter.cz/VIZ_Berlin/status/1669039498230116352#m
 #: by: https://viz.berlin.de/2023/06/blumberger-damm-bruecke-2/
+#: by: https://nitter.cz/VIZ_Berlin/status/1669933639965237248#m (Rad/Fuß nur Sa 8:00 bis So 19:00 betroffen)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl2Nl85LVhvQUFoVU13LnBuZw==
 #: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
 #: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023)
@@ -5839,7 +5833,7 @@ Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
 ',
          'from' => 1686693600,
          'id' => 3571,
-         'text' => 'Blumberger Damm: Sperrung zwischen Altentreptower Str. und Frankenholzer Weg, auch Radfahrer und Fußgänger sind betroffen, 15. Juni 2023 bis 20. Juni 2023',
+         'text' => 'Blumberger Damm: Sperrung zwischen Altentreptower Str. und Frankenholzer Weg, am Samstag und Sonntag sind auch Radfahrer und Fußgänger betroffen, 15. Juni 2023 bis 20. Juni 2023',
          'type' => 'gesperrt',
          'until' => 1687276800
        },
@@ -6330,7 +6324,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-06-12
+#: last_checked: 2023-06-17
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 ',
@@ -6745,7 +6739,7 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
        {
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
-#: last_checked: 2023-05-25 vvv
+#: last_checked: 2023-06-17 vvv
 #: next_check: 2023-07-25 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 	2::inwork 5730,8207 5700,8241
@@ -6757,7 +6751,7 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
          'from' => 1676329200,
          'id' => 3725,
          'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
-         'text' => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand Mai 2023), voraussichtlich bis Ende Juli 2023',
+         'text' => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand Mitte Juni 2023), voraussichtlich bis Ende Juli 2023',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6856,17 +6850,17 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        {
          'data' => '#: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
+# REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (ex-G[falsch]) vvv
 #: osm_watch: way id="1171918026" version="2" vvv
-#: last_checked: 2023-05-10 vvv
+#: last_checked: 2023-06-17 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-06-11 vvv
-	q2::inwork 9031,6355 8995,6473
+# REMOVED --- #: next_check: 2023-06-11 vvv
+	q4::inwork 9031,6355 8995,6473
 	q4::inwork 8995,6473 8961,6490
-	q2::inwork 8961,6490 8949,6644
+# REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -6998,7 +6992,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 # REMOVED --- #: source_id: bvg2021:106#BVG312086_0 vvv
-#: last_checked: 2023-06-11 vvv
+#: last_checked: 2023-06-17 vvv
 # REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 # REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 # REMOVED (hier nicht (mehr?)) --- Leberstr.: Einbahnstraßenregelung	q4::inwork; 7563,8871 7574,8596
@@ -7010,7 +7004,7 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
 ',
          'from' => undef,
          'id' => 3755,
-         'text' => 'Leberstr.: Bauarbeiten, Einbahnstraßenregelung, möglicherweise für Radfahrer frei, Ende der Bauarbeiten unbekannt',
+         'text' => 'Leberstr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7484,16 +7478,7 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 23647,31351 23549,31301 23526,31290
-',
-         'from' => 1686200400,
-         'id' => 3807,
-         'source_id' => '236000978',
-         'text' => 'Bahnübergang Pankstr./Albertshofer Chaussee gesperrt, vom 09.06.2023, 07:00 Uhr bis 17.06.2023, 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1686974400
-       },
+       undef,
        undef,
        {
          'data' => 'Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
@@ -7671,11 +7656,11 @@ Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
          'until' => 1688162340
        },
        {
-         'data' => '	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
+         'data' => '#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
+	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 ',
          'from' => 1686715200,
          'id' => 3822,
-         'source_id' => 'viz2021:13.228423,52.508685,15.06.2023,06:00',
          'text' => 'Schirwindter Allee, Passenheimer Str., Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
          'type' => 'gesperrt',
          'until' => 1687723200
@@ -7699,6 +7684,18 @@ Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
          'text' => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
          'type' => 'gesperrt',
          'until' => 1715349600
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
+#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023)
+#: also_indoor: traffic (H)
+	q3::inwork 8852,6642 8949,6644
+',
+         'from' => 1685397600,
+         'id' => 3825,
+         'text' => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 23.6.2023',
+         'type' => 'handicap',
+         'until' => 1687557600
        }
      
 );

@@ -86,7 +86,7 @@ EOF
 #: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
 #: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
 #: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
-	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
+	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
 # REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
 	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
@@ -104,8 +104,8 @@ EOF
 	3 9820,9718 9790,9528 9767,9386
 	3 9892,9286 9927,9487 9957,9692
 	3 9957,9692 9927,9487 9892,9286
-	3 10004,9268 10032,9456 10067,9667
-	3 10067,9667 10032,9456 10004,9268
+	3 10004,9268 10032,9456 10067,9674
+	3 10067,9674 10032,9456 10004,9268
 	3 10123,9233 10198,9405 10306,9640
 	3 10306,9640 10198,9405 10123,9233
 	3 10547,9233 10564,9292 10580,9361
@@ -19592,10 +19592,10 @@ EOF
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
-	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+	q4::temp 11182,8983 11259,8591 11279,8489 11282,8428 11275,8387 11266,8336
 	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
 	q4::temp 11275,8387 11230,8402
-	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+	q4::temp 11333,8582 11295,8595 11259,8591 11193,8568 11133,8560
 # REMOVED --- #: tempex ^^^
 EOF
      },
@@ -25850,8 +25850,8 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
        data  => <<EOF,
 	q4::inwork; 6454,8653 6461,8463 6459,8281
-	3 6534,8467 6461,8463 6377,8460
-	3 6377,8460 6461,8463 6534,8467
+	3 6461,8463 6377,8460
+	3 6377,8460 6461,8463
 EOF
      },
      { from  => $isodate2epoch->("2016-07-10 00:00:00"),
@@ -25861,8 +25861,8 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
        data  => <<EOF,
 	q3::inwork; 6459,8281 6461,8463 6454,8653
-	3 6534,8467 6461,8463 6377,8460
-	3 6377,8460 6461,8463 6534,8467
+	3 6461,8463 6377,8460
+	3 6377,8460 6461,8463
 EOF
      },
      { from  => 1501526175, # 1465682400, # 2016-06-12 00:00
@@ -27247,26 +27247,26 @@ EOF
        data  => <<EOF,
 	2::bomb 5472,8012 5357,8013
 	2::bomb 5501,8253 5573,8197 5631,8141 5631,8011 5630,7875
-	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5810,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
+	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5812,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
 	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
 	2::bomb 5570,7939 5570,8011 5522,8011
 	2::bomb 5913,8415 5917,8351 5918,8221 5730,8207 5700,8241 5687,8280 5699,8308
 	2::bomb 6333,7708 6352,7523
-	2::bomb 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
-	2::bomb 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5810,7684
+	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
+	2::bomb 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
 	2::bomb 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
-	2::bomb 5660,8366 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
-	2::bomb 5820,8117 5909,8184 6009,8101
+	2::bomb 5660,8366 5651,8218 5631,8141 5808,8124 5801,8031 5631,8011 5570,8011
+	2::bomb 5808,8124 5909,8184 6003,8120
 	2::bomb 6409,8026 6373,8083 6341,8174 6313,8254
 	2::bomb 6271,7733 6332,7721 6410,7722
 	2::bomb 6289,7472 6272,7645
 	2::bomb 6181,8181 6257,8078 6261,8058 6260,8011 6388,7999 6333,7927 6307,7893
-	2::bomb 5636,7685 5636,7709
+	2::bomb 5636,7685 5635,7718
 	2::bomb 5458,7866 5492,7868 5517,7869
-	2::bomb 5928,8052 5824,8035
+	2::bomb 5911,8042 5801,8031
 	2::bomb 5651,8218 5730,8207
-	2::bomb 5806,7796 5807,7771
-	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
+	2::bomb 5813,7807 5813,7774
+	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5911,8042 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
 	2::bomb 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366
 	2::bomb 6388,7999 6443,7971 6480,7992 6409,8026
 	2::bomb 6437,7968 6489,7908
@@ -30398,15 +30398,15 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-06-15 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2023-09-01 vvv
+#: last_checked: 2023-06-17 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
-	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400 13513,11351
-	2::inwork 13442,11400 13416,11425 13427,11431
+	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400
+außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
 #: next_check ^^^
@@ -30830,7 +30830,7 @@ EOF
 # REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.992535.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1072925.php (Teilöffnung)
-	2::inwork 5809,7712 5636,7709
+	2::inwork 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718
 EOF
      },
      { from  => 1576623600, # 2019-12-18 00:00
@@ -31168,7 +31168,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-16
+#: last_checked: 2023-06-17
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -35729,6 +35729,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',
        data  => <<EOF,
+#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023)
+#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023)
 #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
 #: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
@@ -35799,7 +35801,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-06-14 00:00:00"), # 1656007200, # 2022-06-23 20:00
        until => $isodate2epoch->("2023-06-20 18:00:00"), # 1656640800, # 2022-07-01 04:00
-       text  => 'Blumberger Damm: Sperrung zwischen Altentreptower Str. und Frankenholzer Weg, auch Radfahrer und Fußgänger sind betroffen, 15. Juni 2023 bis 20. Juni 2023',
+       text  => 'Blumberger Damm: Sperrung zwischen Altentreptower Str. und Frankenholzer Weg, am Samstag und Sonntag sind auch Radfahrer und Fußgänger betroffen, 15. Juni 2023 bis 20. Juni 2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
@@ -35809,6 +35811,8 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1334239.php
 #: by: https://nitter.cz/VIZ_Berlin/status/1669039498230116352#m
 #: by: https://viz.berlin.de/2023/06/blumberger-damm-bruecke-2/
+#: by: https://nitter.cz/VIZ_Berlin/status/1669933639965237248#m (Rad/Fuß nur Sa 8:00 bis So 19:00 betroffen)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl2Nl85LVhvQUFoVU13LnBuZw==
 #: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
 #: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023)
@@ -37163,7 +37167,7 @@ EOF
 #: by: https://www.starkundstilb-architekten-berlin.de/projekte/524-emmauskirche/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=730631#post730631
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2023-06-12
+#: last_checked: 2023-06-17
 #: check_frequency: 60d
 	q3::inwork 12328,10442 12274,10612
 EOF
@@ -37964,13 +37968,13 @@ EOF
      },
      { from  => 1676329200, # 2023-02-14 00:00
        until => undef, # 1681595999, # 2023-04-15 23:59
-       text  => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand Mai 2023), voraussichtlich bis Ende Juli 2023',
+       text  => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand Mitte Juni 2023), voraussichtlich bis Ende Juli 2023',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
-#: last_checked: 2023-05-25 vvv
+#: last_checked: 2023-06-17 vvv
 #: next_check: 2023-07-25 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 	2::inwork 5730,8207 5700,8241
@@ -38130,17 +38134,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
+# REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (ex-G[falsch]) vvv
 #: osm_watch: way id="1171918026" version="2" vvv
-#: last_checked: 2023-05-10 vvv
+#: last_checked: 2023-06-17 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-06-11 vvv
-	q2::inwork 9031,6355 8995,6473
+# REMOVED --- #: next_check: 2023-06-11 vvv
+	q4::inwork 9031,6355 8995,6473
 	q4::inwork 8995,6473 8961,6490
-	q2::inwork 8961,6490 8949,6644
+# REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -38408,14 +38412,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Leberstr.: Bauarbeiten, Einbahnstraßenregelung, möglicherweise für Radfahrer frei, Ende der Bauarbeiten unbekannt',
+       text  => 'Leberstr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
 # REMOVED --- #: source_id: bvg2021:106#BVG312086_0 vvv
-#: last_checked: 2023-06-11 vvv
+#: last_checked: 2023-06-17 vvv
 # REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 # REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 # REMOVED (hier nicht (mehr?)) --- Leberstr.: Einbahnstraßenregelung	q4::inwork; 7563,8871 7574,8596
@@ -39059,7 +39063,7 @@ EOF
        until => 1686974400, # 2023-06-17 06:00
        text  => 'Bahnübergang Pankstr./Albertshofer Chaussee gesperrt, vom 09.06.2023, 07:00 Uhr bis 17.06.2023, 06:00 Uhr',
        type  => 'gesperrt',
-       source_id => '236000978',
+       source_id => '236000978', # inaktiv
        data  => <<EOF,
 	2::inwork 23647,31351 23549,31301 23526,31290
 EOF
@@ -39247,8 +39251,8 @@ EOF
        until => 1687723200, # 2023-06-25 22:00
        text  => 'Schirwindter Allee, Passenheimer Str., Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.228423,52.508685,15.06.2023,06:00',
        data  => <<EOF,
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 EOF
      },
@@ -39268,6 +39272,17 @@ EOF
        source_id => 'LS/221-E/23/077',
        data  => <<EOF,
 	2::inwork -7332,66101 -7636,65571
+EOF
+     },
+     { from  => 1685397600, # 2023-05-30 00:00
+       until => 1687557600, # 2023-06-24 00:00
+       text  => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 23.6.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
+#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023)
+#: also_indoor: traffic (H)
+	q3::inwork 8852,6642 8949,6644
 EOF
      },
     );

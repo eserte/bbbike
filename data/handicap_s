@@ -3,7 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-(Vorfahrt Neues-Deutschland-Geb‰ude): Bauarbeiten, enger Weg	q4::inwork 12788,11898 12891,12008
 W¸hlischstr.: Bauarbeiten an der Einm¸ndung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
 Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229
@@ -170,7 +169,7 @@ Tiergarten: einige Fuﬂg‰nger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14558,10082 14453,9929
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14558,10082 14597,10129 14626,10162 14652,10201
-Hasenheide: Fuﬂg‰nger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
+Hasenheide: Fuﬂg‰nger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fuﬂg‰nger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fuﬂg‰nger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fuﬂg‰nger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
@@ -448,8 +447,8 @@ Heidenfeldstr.: Gehweg, Bordstein	q3 13433,13371 13383,13349
 (Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordstein	q3; 16818,11878 16803,11859
 Gr¸nstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
 Schloﬂplatz Kˆpenick: Fuﬂg‰nger, Straﬂenbahn, Lieferverkehr	q2 22111,4562 22093,4499
-(Karlsgartenstr. - Hasenheide): Parkweg, Fuﬂg‰nger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
-(Am Rixdorfer Teich): Parkweg, Fuﬂg‰nger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
+(Karlsgartenstr. - Hasenheide): Parkweg, Fuﬂg‰nger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11295,8595 11259,8591
+(Am Rixdorfer Teich): Parkweg, Fuﬂg‰nger	q1 11259,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 Gustav-Heinemann-Br¸cke: Fuﬂg‰nger, enge Br¸cke	q3 8116,12938 8111,13029 8110,13042
 Spreebogenpark: Fuﬂg‰nger	q2 8116,12938 8115,12912 8114,12839 8120,12756
 Spreebogenpark: Fuﬂg‰nger	q2 8115,12912 8252,12757
@@ -605,8 +604,8 @@ Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
 Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
 (Wohnanlage Friedastr.): Fuﬂg‰nger	q3 16887,11545 16753,11559
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
-Bennigsenstr.: enge Straﬂe	q0 5807,7771 5957,7773 6195,7775 6209,7765
-Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
+Bennigsenstr.: enge Straﬂe	q0 5813,7774 5957,7773 6195,7775 6209,7765
+Perelsplatz: Fuﬂg‰nger, Radfahren verboten	q4 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718
 Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q3 4224,6718 4223,6796 4204,6826
 Unterf¸hrung unter der Stromstr.: Fuﬂg‰nger, eng	q2 6218,12975 6180,12972
 nˆrdliches Spreeufer: drei niedrige Stufen, Fuﬂg‰nger	q2 6180,12972 6102,12960 6064,12950
@@ -1912,7 +1911,8 @@ Pepitapromenade: einige Fuﬂg‰nger	q1 -2856,17489 -2873,17369 -2878,17324
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fuﬂg‰nger, Bordstein	q3 23448,4145 23453,4181
 Fasanenplatz, ˆstliche Fahrbahn: einige Fuﬂg‰nger, Bordsteine	q2 5220,10192 5229,10210 5223,10243
 Admiralstr.: Fuﬂg‰nger, Bodenschwellen	q2 11244,10111 11274,10184
-Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
+Innsbrucker Platz - Eisackstr.: einige Fuﬂg‰nger	q2 6388,7999 6418,7958
+Innsbrucker Platz - Eisackstr.: Bordstein, einige Fuﬂg‰nger	q3 6418,7958 6429,7876
 (Buckower Damm - Neumarkplan): enger Radweg	q2 12673,3619 12624,3659 12603,3712 12578,3728
 (Johannisthaler Chaussee - Wildmeisterdamm): enge Straﬂe	q1 13045,2107 13064,2090 13157,2116
 (Schragenfeldstr. - Allee der Kosmonmauten): Fuﬂg‰nger	q2 21095,15003 21025,15005
@@ -2446,6 +2446,8 @@ Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,94
 (Rampe S-Bhf. Buch): Rampe, Kurven	q3 16044,25608 16077,25635 16065,25595 16071,25591
 Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10583,15208 10562,15236 10520,15353 10512,15406 10456,15561
 Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10520,15353 10781,15438 10804,15447
+Kuppenheimerstr.: einige Fuﬂg‰nger, Bordstein an der Wexstr.	q3 5808,8124 5801,8031
+(Fritz-Elsas-Str./Dominicusstr. - Koburger Str.): Gehweg, Bordstein am Wendehammer	q3 6575,8469 6546,8456
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2560,7 +2562,6 @@ Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4290,6445 4335,6523
 (Gustav-Mahler-Platz - R¸ckertstr.): Fuﬂweg durch Wohngebiet	q3 3878,6110 3943,6107 3976,6094 4027,6088
 Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Rampe	q3 2214,4992 2280,4941
-Koburger Str.: Gehweg	q3 6534,8467 6540,8421
 H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2211,5120
 (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
 (Weverstr. - Gatower Str.): Fuﬂg‰nger	q1 -4169,12371 -4365,12358

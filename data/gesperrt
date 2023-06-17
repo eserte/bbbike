@@ -107,7 +107,7 @@ Platz S (Hundekehlestr.)	1 2169,7690 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
 Wexstr.	2 6260,8011 5807,7978 5631,8011
 Wexstr.	1 6388,7999 6260,8011
-Wexstr.	1 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
+Wexstr.	1 5631,8011 5801,8031 5911,8042 6154,8070 6261,8058 6409,8026
 Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -2380,7 +2380,7 @@ Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 103
 Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383
 Mittelstreifen	3nocross::ignrte 11500,9116 11449,9125 11136,9183
 Hasenheide, zwischen Jahnstr. und Columbiadamm -> Hasenheide: Mittelstreifen	3::igndisp 11439,9049 11449,9125 11136,9183
-Mittelstreifen	3nocross::ignrte 11500,9116 11550,9104 11629,9086
+Mittelstreifen	3nocross::ignrte 11500,9116 11507,9114 11550,9104 11629,9086
 Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
 Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
@@ -3316,6 +3316,7 @@ weites Drängelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
+(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, am südlichen Ende mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
 (Fahlenbergstr. - Einkaufszentrum Lagunenweg): Bauarbeiten, Straße wird neu gemacht	2::inwork 31971,3170 31788,3192 31762,3202
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
