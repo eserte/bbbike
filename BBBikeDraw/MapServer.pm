@@ -32,6 +32,8 @@ $VERSION = '1.46';
 				 ImageSuffix FontsList
 				 MapserverVersion MapserverDriver));
 
+    use BBBikeUtil qw(is_in_path);
+
     use vars qw($QUIET);
 
     use vars qw(%notice_once);
@@ -84,7 +86,7 @@ $VERSION = '1.46';
 	if (!$self->MapserverBinDir || ! -e $self->MapserverBinDir) {
 	TRY: {
 		for my $path (qw(/usr/local/bin /usr/bin)) {
-		    if (-e "$path/shp2img") {
+		    if (-e "$path/shp2img" || -e "$path/map2img") {
 			$self->MapserverBinDir($path);
 			last TRY;
 		    }
@@ -92,7 +94,7 @@ $VERSION = '1.46';
 	    }
 	}
 	if (!defined $self->MapserverBinDir || ! -e $self->MapserverBinDir) {
-	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path. Or maybe shp2img is not installed in one of the standard paths?";
+	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path. Or maybe shp2img resp. map2img is not installed in one of the standard paths?";
 	}
 
 	$self->TemplateMap("brb.map-tpl");
@@ -116,10 +118,17 @@ $VERSION = '1.46';
 	$self;
     }
 
+    # Mapserver 8.x renamed shp2img to map2img
     sub shp2img_path {
 	my $self = shift;
 	if ($self->MapserverBinDir) {
-	    $self->MapserverBinDir . '/shp2img';
+	    if (-x $self->MapserverBinDir . '/map2img') {
+		$self->MapserverBinDir . '/map2img';
+	    } else {
+		$self->MapserverBinDir . '/shp2img';
+	    }
+	} elsif (is_in_path 'map2img') {
+	    'map2img';
 	} else {
 	    'shp2img';
 	}
