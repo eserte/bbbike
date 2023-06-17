@@ -81,6 +81,7 @@ if (0) { # until Apr 2023
 	    $line = $1;
 	    $text_without_line =~ s{^$qr:\s+}{};
 	}
+	$text_without_line =~ s{\s+$}{}sg;
 	my $key = "$date_row|$title_row|$text_without_line";
 	push @{ $combinedRecords{$key} }, {
 					   from              => $from,
