@@ -35,7 +35,7 @@ Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der 
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
-#: osm_watch: way id="936801541" version="3"
+#: osm_watch: way id="936801541" version="4"
 #: osm_watch: way id="36987812" version="14"
 #: also_indoor: traffic (W,G)
 #: last_checked: 2023-05-30
@@ -43,7 +43,7 @@ Seumestr./Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der 
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B,H)
-#: last_checked: 2023-06-16
+#: last_checked: 2023-06-18
 Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -621,12 +621,12 @@ Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork;
 #: last_checked: 2023-06-12 (osm)
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
-#: osm_watch: way id="269696665" version="23"
-#: last_checked: 2023-05-20 (osm)
+#: osm_watch: way id="269696665" version="24"
+#: last_checked: 2023-06-17 (osm)
 Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,13381
-#: osm_watch: way id="1101405485" version="7"
-#: osm_watch: way id="217183438" version="18"
-#: last_checked: 2023-05-20 (osm)
+#: osm_watch: way id="1101405485" version="8"
+#: osm_watch: way id="217183438" version="19"
+#: last_checked: 2023-06-17 (osm)
 Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
 #: last_checked ^^^
 # REMOVED --- #: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv) --- #: osm_watch: way id="61816617" version="29" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
@@ -757,8 +757,8 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022) (bis 31.10.2023)
-#: osm_watch: way id="137623800" version="28"
-#: osm_watch: way id="625667165" version="19"
+#: osm_watch: way id="137623800" version="29"
+#: osm_watch: way id="625667165" version="20"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2023-06-09
@@ -989,7 +989,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-18
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -1035,6 +1035,14 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
 ### Pankow ###
+# 
+#: XXX Neumannstraße (Pankow) in beiden Richtungen zwischen Schonensche Straße und Thulestraße: Leitungsbau, Vollsperrung für Kfz-Verkehr, vom 05.06.2023 07:00 bis 28.07.2023 17:00
+#: source_id: viz2021:13.423554,52.554909,05.06.2023,07:00 (bis 28.07.2023)
+#: also_indoor: traffic (G,B,W)
+#: last_checked: 2023-06-18
+#: next_check: 2023-07-28
+#: valid: -20230728
+Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 11655,16486
 # 
 # REMOVED (vermutlich nicht mehr) --- #: next_check_id: NEUMANN-2021 --- #: XXX Bis wann gehen die Bauarbeiten (laut Baustellenschild bis Juni 2021)? Wird es dann schon eine Radspur o.ä. geben? --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-02-22 --- #: next_check: 2021-06-01 --- Neumannstr.: Bauarbeiten Richtung Süden zwischen Eschengraben und Thulestr., Ausweichen auf Gehweg	q3+; 11613,16747 11630,16623
 # REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: last_checked: 2019-10-13 vvv --- #: next_check: 2019-12-31 vvv --- Hermann-Hesse-Str.: Bauarbeiten, Radweg wird auf dem Gehweg geführt	q2::inwork 9811,19302 9681,19179 9501,18902 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -1146,7 +1154,27 @@ Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q4 2044,20289 2116,20314 2297,
 Alt-Tegel: reger Fußgängerverkehr (Fußgängerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
+# 
 Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3820,10987
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8092 (Umsetzung 2022)
+#: by: https://karl-august-kiez.online/fussgaengerzone_wilmersdorfer_strasse_wird_verlaengert (vorübergehende Umsetzung 2022, endgültige 2023)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_47_3201_3352_online.pdf (Absicht der Teileinziehung, soll zur Fußgängerzone werden)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/verkehrsberuhigung-im-berliner-westen-grolmanstrasse-soll-zur-flaniermeile-werden-9224175.html (Erwähnung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_04_0361_0452_online.pdf (Teileinziehung)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1314330.php (zunächst 75m "Sommerstraße", im Anschluss daran dauerhafte Fußgängerzone)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/sommerstrassen-zum-flanieren_a379426
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1333304.php (ab 19.6.2023)
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fussgaengerzone-verlaengert_a384342
+#: osm_watch: way id="4495307" version="18"
+#: osm_watch: way id="1133396210" version="2"
+#: also_indoor: search Wilmersdorfer_Straße Fußgängerzone
+#: XXX Prüfen, ob der Radverkehr vielleicht nicht doch erlaubt ist. Außerdem prüfen, ob es im Zuge der Schillerstr. Einschränkungen gibt.
+#: last_checked: 2023-06-04
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2022-06-19
+Wilmersdorfer Str.: Fußgängerzone	q4 3717,11462 3708,11519
+# REMOVED (hier nicht) --- Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3708,11519 3689,11637
+# 
 # REMOVED (hier ist eh' noch eine normale Straße) --- (An der Müggelspree): Fußgänger	q2 23444,4942 23462,4906
 (An der Müggelspree): Fußgänger	q2 23462,4906 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
@@ -4551,7 +4579,9 @@ Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,94
 (Rampe S-Bhf. Buch): Rampe, Kurven	q3 16044,25608 16077,25635 16065,25595 16071,25591
 # 
 #: note: an manchen Tagen erheblicher Fußgängerverkehr vvv
-Friedrich-Ludwig-Jahn-Sportpark: Fußgänger	q1 10583,15208 10562,15236 10520,15353 10512,15406 10456,15561
+Friedrich-Ludwig-Jahn-Sportpark: Fußgänger	q1 10583,15208 10562,15236 10520,15353 10512,15406
+#: note: in diesem Abschnitt ist die Fahrbahn nicht mehr zugänglich und der Gehweg relativ eng
+Friedrich-Ludwig-Jahn-Sportpark: Fußgänger	q3 10512,15406 10456,15561
 Friedrich-Ludwig-Jahn-Sportpark: Fußgänger	q1 10520,15353 10781,15438 10804,15447
 #: note ^^^
 # 
@@ -4562,6 +4592,8 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 # 
 #: XXX_prog BS (ansonsten q2)
 (Fritz-Elsas-Str./Dominicusstr. - Koburger Str.): Gehweg, Bordstein am Wendehammer	q3 6575,8469 6546,8456
+# 
+(Schönholzer Heide, Germanenstr. - Friesenstr.): gemeinsamer Geh- und Radweg	q1 8348,19304 8405,19336 8484,19401
 # 
 ######################### User Contributions #################################
 # 

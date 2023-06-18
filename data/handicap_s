@@ -55,6 +55,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4::inwork 12556,15518 12605,15491 12621,15482
 Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
+Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 11655,16486
 (Buckower Chaussee - Bahnhof): einige Fuﬂg‰nger	q1 9200,562 9239,461 9254,413
 (Fuﬂg‰ngerbr¸cke S-Bhf. Buckower Chaussee): Fuﬂg‰ngerbr¸cke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fuﬂg‰nger	q1 9123,533 9160,460 9200,450
@@ -85,6 +86,7 @@ Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3820,10987
+Wilmersdorfer Str.: Fuﬂg‰ngerzone	q4 3717,11462 3708,11519
 (An der M¸ggelspree): Fuﬂg‰nger	q2 23462,4906 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3738,11231 3770,11231 3813,11230
@@ -2444,10 +2446,12 @@ Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,94
 (Mauerweg - Lohm¸hlenstr.): einige Fuﬂg‰nger	q2 13109,9743 13128,9726 13156,9702
 (Unterf¸hrung S-Bhf. Buch): Fuﬂg‰nger	q4 16004,25638 16044,25608
 (Rampe S-Bhf. Buch): Rampe, Kurven	q3 16044,25608 16077,25635 16065,25595 16071,25591
-Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10583,15208 10562,15236 10520,15353 10512,15406 10456,15561
+Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10583,15208 10562,15236 10520,15353 10512,15406
+Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q3 10512,15406 10456,15561
 Friedrich-Ludwig-Jahn-Sportpark: Fuﬂg‰nger	q1 10520,15353 10781,15438 10804,15447
 Kuppenheimerstr.: einige Fuﬂg‰nger, Bordstein an der Wexstr.	q3 5808,8124 5801,8031
 (Fritz-Elsas-Str./Dominicusstr. - Koburger Str.): Gehweg, Bordstein am Wendehammer	q3 6575,8469 6546,8456
+(Schˆnholzer Heide, Germanenstr. - Friesenstr.): gemeinsamer Geh- und Radweg	q1 8348,19304 8405,19336 8484,19401
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

@@ -1668,45 +1668,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
-#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt\'s den Termin)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331265.php
-#: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
-# REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
-# REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
-# REMOVED (Laurenzstr., 2022 nichts gesehen) ---	2::temp 22175,4730 22246,4711
-# REMOVED (Rosenstr., 2022 nichts gesehen) ---	2::temp 22144,4660 22212,4655 22284,4653
-# REMOVED (Böttcherstr., 2022 nichts gesehen) ---	2::temp 22212,4655 22214,4548
-	2::temp 22093,4499 22076,4422
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-	2::temp 22138,4642 22074,4664
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22284,4653 22355,4660
-	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-# REMOVED ---	2::temp 22324,4586 22314,4604
-',
-         'from' => 1686780000,
-         'id' => 1702,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag von der Alten Försterei bis in die Altstadt Köpenick (16.06.2023 - 18.06.2023)',
-         'type' => 'gesperrt',
-         'until' => 1687111200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3735,6 +3697,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 #: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
 #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+#: note: offen am 2023-06-18 (So) gegen 13:30 Uhr
 	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
@@ -5757,20 +5720,20 @@ Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023)
-#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023)
-#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
-#: next_check: 2023-06-24
+         'data' => '#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023) (inaktiv)
+#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023) (inaktiv)
+# REMOVED --- #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße --- #: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
-	2::temp 8737,12098 8595,12066 8577,11896 8783,11959 8844,11984 8901,12008
-Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
+	2::temp 8737,12098 8595,12066 8577,11896
+# REMOVED (hier nicht) --- Hannah-Arendt-Straße	2::temp 8577,11896 8783,11959 8844,11984 8901,12008
+# REMOVED (hier nicht) --- Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
 ',
-         'from' => 1686888000,
+         'from' => 1687579200,
          'id' => 3566,
          'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
-         'text' => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, Von 17.06.2023, ca. 06:00 Uhr bis 18.06.2023, ca. 23:00 Uhr',
+         'text' => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, am 25.06.2023, ca. 06:00 Uhr bis 23:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1687122000
+         'until' => 1687726800
        },
        undef,
        {
@@ -7467,7 +7430,7 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
        {
          'data' => '#: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-02
+#: last_checked: 2023-06-18
 #: check_frequency: 14d
 #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
@@ -7696,6 +7659,30 @@ Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
          'text' => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 23.6.2023',
          'type' => 'handicap',
          'until' => 1687557600
+       },
+       {
+         'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
+#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun
+#: last_checked: 2023-06-18
+	2::inwork 7090,19943 7123,19855 7138,19839
+',
+         'from' => undef,
+         'id' => 3826,
+         'text' => 'Bhf. Wilhemsruh - Hertzstr.: Weg kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juni 2023: Absperrung mit Bauzäunen)',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1670462625707175936#m (im Text steht Wattstr. ...)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl3SDZRMVhnQUFqRzhiLmpwZw== (... aber laut Verkehrszeichenplan ist Waltraud-Krause-Weg genauer)
+	q4::inwork; 17842,6639 17860,6644 17962,6674
+',
+         'from' => 1687060800,
+         'id' => 3827,
+         'text' => 'Siemensstr.: zwischen Waltraud-Krause-Weg und Edisonstr. ist die Fahrbahn auch für Radfahrer gesperrt, von 19.06.2023 06:00 Uhr bis 22.06.2023 abends',
+         'type' => 'handicap',
+         'until' => 1687449600
        }
      
 );

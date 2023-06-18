@@ -1821,7 +1821,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="5"
 #: osm_watch: way id="642581102" version="6"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2023-05-18
+#: last_checked: 2023-06-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -4656,7 +4656,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="15"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 10
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7264,19717 7273,19682
@@ -4755,12 +4755,13 @@ Kleine Homeyerstr.	N 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3722 ("Benennungsabsicht") --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036892092299/892092299/00059995/95-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasse201.pdf --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3790 ("Benennung") --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014 ("mit Wirkung vom 15. Oktober 2014") --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20141009.1115.399621.html ("Feierliche Straßenbenennung") --- #: last_checked: 2014-05-21 --- #: next_check: 2014-10-15 --- #: priority: #A --- XXX diese wird Straße umbenannt, neuer Name "Beatrice-Zweig-Str.", vor Ort überprüfen!
 #: oldname: -20140515: Straße 201
 Beatrice-Zweig-Str.	N 9529,18815 9511,18785 9366,18669
-Friesenstr. (Niederschönhausen)	N 8311,19458 8331,19458 8390,19428 8467,19408 8641,19339 8765,19288
+Friesenstr. (Niederschönhausen)	N 8311,19458 8331,19458 8390,19428 8484,19401 8641,19339 8765,19288
 Friesenstr. (Niederschönhausen)	NN 8765,19288 8834,19253 8944,19197 9458,18859
 (Friesenstr. - Heinrich-Mann-Str.)	NN 8834,19253 8830,19239 8933,19179 8958,19149 9017,19036 9201,18777 9279,18724
 (Schönholzer Heide, Sowjetisches Ehrenmal - Friesenstr.)	NN 8357,19284 8579,19263 8682,19260 8700,19242 8721,19256 8791,19249
 (Schönholzer Heide, parallel zur Friesenstr.)	NN 8791,19249 8830,19239
 (Schönholzer Heide, parallel zur Friesenstr.)	NN 8933,19179 9022,19135 9159,19010 9446,18855 9458,18859
+(Schönholzer Heide, Germanenstr. - Friesenstr.)	NN 8348,19304 8405,19336 8484,19401
 (Pankeweg)	NN 11907,19749 11995,19759 12154,20325 12216,20344 12235,20380 12266,20467 12310,20523 12363,20582 12386,20636 12505,20702 12578,20749
 (Pankeweg)	NN 12553,20757 12753,20884 12807,20944 12867,21098
 #: XXX Wird der Pankeweg nach den Bauarbeiten hier wieder begradigt?
@@ -9580,7 +9581,7 @@ Beuthstr. (Niederschönhausen)	N 10843,20301 10784,20275 10650,20205 10534,20144 
 Waldemarstr. (Niederschönhausen)	N 10609,19971 10534,20144 10478,20345
 Waldemarstr. (Niederschönhausen)	NN 10478,20345 10475,20355 10464,20390
 Waldemarstr. (Niederschönhausen)	N 10464,20390 10409,20592 10380,20720
-Platanenstr.	N 10134,19981 9824,19910 9498,19817 9349,19782 9177,19745 8977,19694 8956,19688 8779,19589 8710,19550 8467,19408
+Platanenstr.	N 10134,19981 9824,19910 9498,19817 9349,19782 9177,19745 8977,19694 8956,19688 8779,19589 8710,19550 8484,19401
 Schönhauser Str. (Französisch Buchholz)	NH 12012,21895 11927,21703 11870,21574 11858,21541 11831,21469 11805,21385 11794,21354 11783,21324 11769,21288 11757,21253 11725,21162 11714,21130 11703,21097 11686,21058 11599,20973 11518,20894 11395,20777 11370,20751 11353,20716
 (Schönhauser Str. - Rosenthaler Str.)	N 11858,21541 11889,21543
 (Nisbléstr. - Schönhauser Str.)	N 11838,21580 11858,21541
@@ -11149,8 +11150,8 @@ Gervinusstr.	H 3395,10704 3567,10771 3603,10765
 # REMOVED (existiert nicht (mehr?)) --- Gervinusstr.	H 3603,10765 3623,10800
 Gervinusstr.	N 3623,10800 3835,10915
 Wilmersdorfer Str.	N 3813,10435 3870,10510 3883,10585 3881,10699 3869,10760 3847,10865 3835,10915 3820,10987
-Wilmersdorfer Str.	NN 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462
-Wilmersdorfer Str.	N 3717,11462 3708,11519 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
+Wilmersdorfer Str.	NN 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462 3708,11519
+Wilmersdorfer Str.	N 3708,11519 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
 Fritschestr.	N 3391,11097 3368,11237 3339,11433 3320,11583 3287,11846 3251,12025
 Hebbelstr.	NN 3117,11852 3251,12025 3262,12040 3288,12061
 Hebbelstr.	N 3288,12061 3367,12156
@@ -15150,7 +15151,7 @@ Siegfried-Baruch-Weg	NN 7857,19693 7871,19698 7974,19739 8030,19762
 (Weg in der Schönholzer Heide)	NN 8304,19475 8237,19501 8193,19555 8117,19605 8042,19629 7988,19680 7968,19704 7871,19698
 (Schönholzer Heide - Wilhelmsruher See)	NN 7968,19704 7974,19739
 (Rondell vor dem Sowjetischen Ehrenmal)	N 8338,19262 8351,19274 8357,19284 8348,19304 8333,19305 8319,19299 8314,19288 8320,19270 8338,19262
-(zum Sowjetischen Ehrenmal)	N 8319,19299 8258,19353
+(zum Sowjetischen Ehrenmal)	N 8319,19299 8255,19362
 (Schönholzer Str. - Waldsteg)	NN 8314,19288 8211,19294 8177,19316 7851,19631
 (Waldsteg/Genossenschaftssteg - Schönholzer Heide)	NN 8166,19308 8177,19316
 Spiekermannstr.	N 11659,16457 11842,16493 11920,16508 12051,16535

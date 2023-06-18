@@ -3622,7 +3622,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: last_checked: 2023-04-21
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
-#: last_checked: 2023-05-26 (daf)
+#: last_checked: 2023-06-18
 #: check_frequency: 90d
 Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # 
@@ -4102,14 +4102,11 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # REMOVED (offen, dafür ist nun temporär die Anbindung an die Zobtener Str. verschwenkt) --- #: last_checked: 2021-05-23 vvv --- #: check_frequency: 14d vvv --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997 --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
 # REMOVED (hier jetzt offen, aber noch nicht fertig) --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16841,9997 16830,10030 16835,10052
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
 # REMOVED --- #: next_check_id: CORONA-2020 --- #: XXX während der Corona-Krise
 # REMOVED (closed) --- #: osm_watch: note 2832326 10
-#: note: Tor verschlossen: 2023-03-12 (So), 2023-04-01 (Sa) gegen 12:00, 2023-05-18 (Do, Feiertag) gegen 13:55
-#: last_checked: 2023-05-18
+# REMOVED (wieder offen) --- #: note: Tor verschlossen: 2023-03-12 (So), 2023-04-01 (Sa) gegen 12:00, 2023-05-18 (Do, Feiertag) gegen 13:55 --- #: last_checked: 2023-06-18
 # REMOVED --- #: check_frequency: 90d
-Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
-# 
+# REMOVED --- Alexanderufer - Charité: Tor ist geschlossen	2 8371,13399 8363,13402 8356,13404
 # REMOVED (laut osm fertig) --- #: osm_watch: way id="141309175" version="13" --- #: last_checked: 2022-01-08 (mapillary) vvv --- #: check_frequency: 60d vvv --- Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 # REMOVED (nicht mehr) --- Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20694,11811 20708,11918 20715,12040
 # REMOVED (nicht mehr) --- Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20715,12040 20708,11918 20694,11811
@@ -4220,7 +4217,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 #: XXX laut osm ist die Schule 2023-02 fertig
 #: osm_watch: way id="860287005" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-18
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4769,7 +4766,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16619,8606 16578,8586 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-05-18 vvv
+#: last_checked: 2023-06-18 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4968,7 +4965,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="9"
-#: last_checked: 2023-05-29
+#: last_checked: 2023-06-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-04-13
 #: also_indoor: traffic (ex-G)

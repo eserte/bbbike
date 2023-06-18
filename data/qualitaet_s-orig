@@ -190,7 +190,7 @@ Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8041,9434 796
 Großgörschenstr.: verfugtes Kopfsteinpflaster	Q1- 7771,9479 7829,9485
 Großgörschenstr.: Asphalt	Q0 7829,9485 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11552,10863 11328,10957
-Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
+Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
@@ -1224,6 +1224,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wasserg
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025) (mittlerweile: 1. Quartal 2025 - 4. Quartal 2026)
+#: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="34"
 #: last_checked: 2023-02-25
@@ -1746,7 +1747,7 @@ Grumbkowstr.: Asphalt	Q0 11555,20051 11627,19907 11695,19760 11730,19684
 #: by: ^^^
 #: by: Steffen Ryll: vvv
 #: confirmed_by: srt
-Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8467,19408
+Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8484,19401
 #: corrected_by: osm (was: miserables Kopfsteinpflaster etc.), srt
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765
 #: by: http://www.berliner-woche.de/pankow/verkehr/zu-viele-verkehrszeichen-sonderfall-regt-zum-schmunzeln-an-d156819.html
@@ -3486,7 +3487,7 @@ Wördenweg: unbefestigter, holpriger Weg	Q2 8513,21099 8489,21061 8248,20933 8107
 #: note: laut ADFC-Karte "nicht für Radfahrer geeignet"
 #: note: Weiterfahrt Richtung Westen ist nicht erlaubt (wasserwirtschaftliche Anlage)
 (Am Nordgraben): unbefestigter, holpriger Weg	Q2 8107,20859 7641,20745 7454,20671
-Friesenstr.: Beton	Q1+ 8765,19288 8641,19339 8467,19408 8390,19428 8331,19458 8311,19458
+Friesenstr.: Beton	Q1+ 8765,19288 8641,19339 8484,19401 8390,19428 8331,19458 8311,19458
 Homeyerstr.: Asphalt mit Schäden	Q1- 9458,18859 9529,18815 9613,18758
 #: note: neu gemacht
 Homeyerstr.: Asphalt	Q0 9613,18758 9801,18686 9920,18636
@@ -11184,9 +11185,10 @@ Rosenapfelweg: unbefestigter Weg	Q2- 13127,22716 12917,22829
 Silberapfelweg: unbefestigter Weg	Q2- 13200,22766 13160,22776 13006,22858
 Krugpfuhlweg: Schotterstraße	Q2 11817,22519 11178,22999 11025,23111
 (Feldkräuterweg - Lorenzsteinweg): unbefestigter Weg	Q2 9279,21292 9290,21284
-(zum Sowjetischen Ehrenmal): Kopfsteinpflaster	Q2+ 8319,19299 8258,19353
+(zum Sowjetischen Ehrenmal): Kopfsteinpflaster	Q2+ 8319,19299 8255,19362
 (Schönholzer Heide, Sowjetisches Ehrenmal - Friesenstr.): wassergebundene Decke	Q1 8357,19284 8579,19263 8682,19260
 (Schönholzer Heide, Sowjetisches Ehrenmal - Friesenstr.): Waldweg	Q1- 8682,19260 8700,19242 8721,19256 8791,19249
+(Schönholzer Heide, Germanenstr. - Friesenstr.): Gehwegplatten	Q1 8348,19304 8405,19336 8484,19401
 (Schönholzer Str. - Waldsteg): Waldweg	Q1- 8314,19288 8211,19294 8177,19316 7851,19631
 (Waldsteg/Genossenschaftssteg - Schönholzer Heide): Waldweg	Q1- 8166,19308 8177,19316
 Edith-Stein-Str.: Verbundsteinpflaster	Q1+ 14089,13247 14035,13104
@@ -14416,8 +14418,9 @@ Kneippstr.: schlechtes Kopfsteinpflaster	Q3 2891,23829 3015,23913
 #: confirmed_by: srt
 Waldsteg: Asphalt, einige Schäden	Q0- 8364,19166 8337,19160 8277,19210 8166,19308 7940,19521 7849,19614 7851,19631 7857,19693
 #: confirmed_by: srt
-#: note: (srt) teilweise an den Rändern Asphalt, der wegen parkender Autos nicht erreichbar ist
-Niederstr.: altes grobes Kopfsteinpflaster	Q3 7857,19693 7769,19736 7634,19793
+Niederstr.: altes grobes Kopfsteinpflaster	Q3; 7634,19793 7769,19736 7857,19693
+#: corrected_by: srt (added Asphaltstreifen)
+Niederstr.: altes grobes Kopfsteinpflaster, teilweise provisorischer Asphaltstreifen	Q3+; 7857,19693 7769,19736 7634,19793
 #: by ^^^
 # 
 #: by: Thomas Dobrzinski
@@ -15033,7 +15036,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: osm_watch: way id="4764684" version="26"
 #: osm_watch: way id="26790073" version="15"
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-18
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^
@@ -20056,7 +20059,10 @@ Uhlandstr. (Lichtenrade): Kopfsteinpflaster, OK	Q1- 10425,67 10469,-52
 #: by: ^^^
 # 
 #: by: Torsten Franik: vvv
-Gürtelstr.: guter Asphalt	Q0 13307,15758 13409,15687 13459,15653 13555,15596
+#: confirmed_by: srt
+Gürtelstr.: guter Asphalt	Q0 13307,15758 13409,15687 13459,15653
+#: corrected_by: srt (guter Asphalt, Q0 -> ...)
+Gürtelstr.: Asphalt mit Schäden	Q1 13459,15653 13555,15596
 #: note: Quote "übles Kopfsteinpflaster"
 #: corrected_by: srt (Q3 -> Q3+)
 Gürtelstr.: schlechtes Kopfsteinpflaster	Q3+ 13555,15596 13574,15585 13606,15571 13700,15501

@@ -25772,6 +25772,7 @@ EOF
 #: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 #: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
 #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+#: note: offen am 2023-06-18 (So) gegen 13:30 Uhr
 	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -35723,19 +35724,19 @@ EOF
 	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
 EOF
      },
-     { from  => $isodate2epoch->("2023-06-16 06:00:00"), # 1 Tag Vorlauf # 1655978400, # 2022-06-23 12:00
-       until => $isodate2epoch->("2023-06-18 23:00:00"), # 1656108000, # 2022-06-25 00:00
-       text  => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, Von 17.06.2023, ca. 06:00 Uhr bis 18.06.2023, ca. 23:00 Uhr',
+     { from  => $isodate2epoch->("2023-06-24 06:00:00"), # 1 Tag Vorlauf # 1655978400, # 2022-06-23 12:00
+       until => $isodate2epoch->("2023-06-25 23:00:00"), # 1656108000, # 2022-06-25 00:00
+       text  => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, am 25.06.2023, ca. 06:00 Uhr bis 23:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',
        data  => <<EOF,
-#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023)
-#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023)
-#: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße
-#: next_check: 2023-06-24
+#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023) (inaktiv)
+#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023) (inaktiv)
+# REMOVED --- #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße --- #: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
-	2::temp 8737,12098 8595,12066 8577,11896 8783,11959 8844,11984 8901,12008
-Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
+	2::temp 8737,12098 8595,12066 8577,11896
+# REMOVED (hier nicht) --- Hannah-Arendt-Straße	2::temp 8577,11896 8783,11959 8844,11984 8901,12008
+# REMOVED (hier nicht) --- Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
 EOF
      },
      { from  => undef, # 
@@ -39053,7 +39054,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-02
+#: last_checked: 2023-06-18
 #: check_frequency: 14d
 #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
@@ -39283,6 +39284,28 @@ EOF
 #: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023)
 #: also_indoor: traffic (H)
 	q3::inwork 8852,6642 8949,6644
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bhf. Wilhemsruh - Hertzstr.: Weg kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juni 2023: Absperrung mit Bauzäunen)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: HEIDEKRAUTBAHN-2021
+#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun
+#: last_checked: 2023-06-18
+	2::inwork 7090,19943 7123,19855 7138,19839
+EOF
+     },
+     { from  => 1687060800, # 2023-06-18 06:00
+       until => 1687449600, # 2023-06-22 18:00
+       text  => 'Siemensstr.: zwischen Waltraud-Krause-Weg und Edisonstr. ist die Fahrbahn auch für Radfahrer gesperrt, von 19.06.2023 06:00 Uhr bis 22.06.2023 abends',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1670462625707175936#m (im Text steht Wattstr. ...)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl3SDZRMVhnQUFqRzhiLmpwZw== (... aber laut Verkehrszeichenplan ist Waltraud-Krause-Weg genauer)
+	q4::inwork; 17842,6639 17860,6644 17962,6674
 EOF
      },
     );
