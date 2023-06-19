@@ -7683,6 +7683,21 @@ Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
          'text' => 'Siemensstr.: zwischen Waltraud-Krause-Weg und Edisonstr. ist die Fahrbahn auch für Radfahrer gesperrt, von 19.06.2023 06:00 Uhr bis 22.06.2023 abends',
          'type' => 'handicap',
          'until' => 1687449600
+       },
+       {
+         'data' => '#: osm_watch: note 3359195 6
+#: osm_watch: way id="311338440" version="4"
+#: by: l.epp
+#: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
+#: last_checked: 2023-06-18 (user/osm)
+#: check_frequency: 120d
+	2::inwork 2829,18126 2797,18126 2790,18139
+',
+         'from' => undef,
+         'id' => 3828,
+         'text' => 'Flughafensee: Brücke gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

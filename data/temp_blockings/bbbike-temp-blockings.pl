@@ -39308,4 +39308,18 @@ EOF
 	q4::inwork; 17842,6639 17860,6644 17962,6674
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Flughafensee: Brücke gesperrt, Ende der Sperrung unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: osm_watch: note 3359195 6
+#: osm_watch: way id="311338440" version="4"
+#: by: l.epp
+#: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
+#: last_checked: 2023-06-18 (user/osm)
+#: check_frequency: 120d
+	2::inwork 2829,18126 2797,18126 2790,18139
+EOF
+     },
     );
