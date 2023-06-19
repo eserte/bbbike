@@ -323,7 +323,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-06-17 vvv
+#: last_checked: 2023-06-19 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1216,7 +1216,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-06-14 vvv
+#: last_checked: 2023-06-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1604,7 +1604,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 	RW2;RW2 22358,5918 22431,6068
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
-#: last_checked: 2023-03-26 vvv
+#: last_checked: 2023-06-19 vvv
 #: check_frequency: 120d vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
@@ -3683,7 +3683,9 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 # REMOVED --- #: next_check: 2022-12-23 vvv
 # REMOVED --- #: priority: #A vvv
 #: note: im Bereich der Bushaltestelle ist das Asphaltband unterbrochen
-neu asphaltiert, relativ breit	RW2; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
+neu asphaltiert, relativ breit	RW2; 23451,4877 23447,4906 23443,4942 23433,5037
+neu asphaltiert, trotzdem recht uneben, relativ breit	RW2; 23433,5037 23420,5159
+neu asphaltiert, relativ breit	RW2; 23420,5159 23404,5325
 # REMOVED --- #: priority ^^^
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -3978,6 +3980,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/halbzeit-beim-neubau-der-suedlichen-blumberger-damm-bruecke_a380524 (östliche Brückenhälfte fertig)
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
+#: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="10"
 #: last_checked: 2023-06-16 (osm) vvv
@@ -5275,13 +5278,18 @@ Verbundsteinpflaster	RW1; 18929,2454 19091,2443 19592,2403 19974,2381 20100,2373
 	RW6;RW6 5483,4359 5557,4523
 	RW6;RW6 5231,13843 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 asphaltierter Bordsteinradweg	RW1;RW1 19501,3101 19417,3184
-asphaltierter Bordsteinradweg	RW1;RW2 19417,3184 19348,3253
-asphaltierter Bordsteinradweg	RW2;RW2 19348,3253 19242,3366 19125,3491 19029,3595 18930,3703
-asphaltierter Bordsteinradweg	RW1;RW2 18930,3703 18884,3752
+asphaltierter Bordsteinradweg	RW1; 19417,3184 19348,3253
+#: historical_note: früher (bis 2023?) RW2;
+asphaltierter Bordsteinradweg	RW1; 19348,3253 19242,3366 19125,3491 19029,3595 18930,3703
+asphaltierter Bordsteinradweg	RW1; 18930,3703 18884,3752
+#: historical_note: früher (bis 2023?) RW2;
+asphaltierter Bordsteinradweg	RW1; 18884,3752 18930,3703 19029,3595 19125,3491 19242,3366 19348,3253 19417,3184
 #: by: Thomas Kruel (Benutzungspflicht): vvv
 #: corrected_by: mapillary (Richtung Norden nicht mehr)
-asphaltierter Bordsteinradweg	RW1;RW2 18884,3752 18856,3783 18826,3816 18779,3866 18739,3909 18541,4125 18374,4307 18239,4453
-asphaltierter Bordsteinradweg	RW2;RW2 18239,4453 18042,4667
+asphaltierter Bordsteinradweg	RW1; 18884,3752 18856,3783 18826,3816 18779,3866 18739,3909 18541,4125 18374,4307 18239,4453
+asphaltierter Bordsteinradweg	RW2; 18239,4453 18042,4667
+#: historical_note: früher (bis 2023?) RW2;
+asphaltierter Bordsteinradweg	RW1; 18042,4667 18239,4453 18374,4307 18541,4125 18739,3909 18779,3866 18826,3816 18856,3783 18884,3752
 #: by ^^^
 	RW2;RW1 17848,14523 17791,14639
 Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17638,14951 17608,15010 17432,15378 17424,15400 17405,15454 17379,15575 17370,15670 17378,15760
@@ -5513,7 +5521,7 @@ sehr schmaler Radweg, alter Asphalt, Wurzeln	RW1;RW1 22724,6608 22579,6700 22395
 	RW1;RW0 22049,7085 22035,7146 22021,7245 22009,7327 21988,7367
 	RW1;RW2 23451,4877 23447,4679
 	RW1; 23447,4679 23445,4596 23443,4524 23439,4420 23435,4179
-#: note: unklarer Status der Bürgersteigs: dürfen Radfahrer hier fahren oder nicht? Am Müggelschlößchenweg gibt es immerhin eine Auffahrrampe.
+#: note: unklarer Status der Bürgersteigs: dürfen Radfahrer hier fahren oder nicht? Am Müggelschlößchenweg gibt es immerhin eine Auffahrrampe, allerdings führt die Radspurmarkierung zur Fahrbahn.
 Gehweg möglicherweise für Radfahrer frei	RW1; 23435,4179 23439,4420 23443,4524 23445,4596 23447,4679
 gemeinsamer Geh- und Radweg	RW2;RW2 23435,4179 23422,4094 23368,3894
 # REMOVED (keine Benutzungspflicht) --- #: XXX Wurde die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
@@ -5901,7 +5909,8 @@ Verbundsteinpflaster	RW2; 12403,14663 12371,14615 12317,14535
 Grünbeschichtung	RW4; 11226,12945 11139,13008
 Fahrradschleuse	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
-asphaltiert	RW2; 17648,5338 17700,5232 17705,5223 17726,5166 17763,5104
+#: historical_note: früher (bis 2023?) RW2;
+asphaltiert	RW1; 17648,5338 17700,5232 17705,5223 17726,5166 17763,5104
 asphaltiert	RW1; 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 asphaltiert	RW1; 18042,4667 17951,4785 17879,4910 17775,5083
 asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,5338
@@ -6603,7 +6612,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="2"
-#: last_checked: 2023-05-13
+#: last_checked: 2023-06-19
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -8077,7 +8086,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2023-05-13 vvv
+#: last_checked: 2023-06-17 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 # REMOVED --- #: valid: -20211007 vvv

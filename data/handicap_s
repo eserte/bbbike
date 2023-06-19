@@ -3377,7 +3377,6 @@ Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 
 Reinickendorfer Str.: Einbahnstraﬂenregelung im Bereich des Weddingplatzes: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 7998,15068 8015,15047 8037,14958 8091,14895
 Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 14535,11327 14506,11275
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraﬂe auch f¸r Radfahrer: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 5522,8011 5520,8132 5573,8197
-Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 20336,3783 20362,3750
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 Planckstr.: Einbahnstraﬂenregelung, offen Richtung S¸den: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833 9375,12911
 Johannisstr.: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
@@ -3388,6 +3387,7 @@ Walter-Friedrich-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
+Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten: gesperrt, ggfs. schieben	q4:inwork::igndisp 20336,3783 20362,3750
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert: gesperrt, ggfs. schieben	q3:inwork::igndisp 13333,9929 13271,9927 13225,9897
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
