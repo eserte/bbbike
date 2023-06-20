@@ -15,7 +15,7 @@
 # 
 #: next_check_id: KAULSDORFER-2023
 #: XXX siehe auch Eintrag in bbbike-temp-blockings
-#: next_check: 2023-07-17
+#: next_check: 2023-08-21
 #: valid: -20231231
 Gegenverkehrsregelung	X::inwork 22192,6659
 # 
@@ -362,6 +362,8 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 	X 8947,10956
 	X 9234,11056
 	X 9196,11165
+#: note: Rundum-Grün für Fußgänger
+#: by: https://berliner-abendblatt.de/berlin-news/ampel-mit-fussgaenger-gruen-in-alle-richtungen-abgestellt-id224856 (Abstellen des Rundum-Grüns voraussichtlich 2024)
 	X 9492,11209
 	X 9388,10393
 #: off: night (seen 2015-06-25)

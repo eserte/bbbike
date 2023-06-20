@@ -3589,10 +3589,10 @@ Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2023-06-17
+#: last_checked: 2023-06-20
 #: check_frequency: 30d
 #: next_check: 2023-07-01
-(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, am südlichen Ende mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
+(Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, südliches Ende kan mit Bauzäunen abgesperrt sein	2::inwork 12788,11898 12891,12008
 # 
 #: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt
 #: last_checked: 2023-06-15
@@ -3660,7 +3660,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 # 
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
-#: last_checked: 2023-05-18 (daf) vvv
+#: last_checked: 2023-06-19 (daf) vvv
 #: check_frequency: 180d vvv
 #: XXX laut osm gesperrt vvv
 #: osm_watch: way id="256450718" version="7"
@@ -5201,7 +5201,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
 #: osm_watch: way id="257432926" version="10"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2023-05-18 (daf)
+#: last_checked: 2023-06-19 (daf)
 #: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

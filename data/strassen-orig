@@ -2670,6 +2670,8 @@ Gustav-Hertz-Platz	NN 18722,4628 18656,4687 18649,4678 18685,4595
 Igo-Etrich-Str.	N 18930,3703 19162,3935
 Georg-Schendel-Str.	N 19125,3491 19363,3730
 Merlitzstr.	N 19417,3184 19524,3286 19661,3421
+#: osm.highway: service
+(Verlängerung Merlitzstr.)	N 19661,3421 19746,3501
 Karl-Otto-Reinsch-Str.	NN 19598,3212 19524,3286
 Walther-Nernst-Str.	N 19592,2965 19498,3054
 Walther-Nernst-Str.	NN 19498,3054 19475,3074
@@ -4655,7 +4657,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: XXX: Bebauungsplan 3-15b
 #: osm_watch: way id="31428032" version="15"
 #: osm_watch: way id="386544517" version="4"
-#: osm_watch: note 2048562 10
+#: osm_watch: note 2048562 11
 #: last_checked: 2023-06-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-05-01

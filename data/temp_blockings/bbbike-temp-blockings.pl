@@ -29136,13 +29136,14 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2024-09-30 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, mindestens bis Ende August 2023, voraussichtlich Verlängerung bis zum 3. Quartal 2024',
+       until => $isodate2epoch->("2024-07-08 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Juli 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343519 (bis 31.12.2021) (möglicherweise inaktiv)
 #: source_id: viz2021:13.46842,52.61467,29.08.2022,13:10 (bis 31.08.2023) (inaktiv)
-#: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023)
+#: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023) (bis 08.07.2024)
+#: source_id: viz2021:13.46842,52.61467,20.06.2023,16:33 (bis 08.07.2024)
 #: also_indoor: traffic (G,H,B)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
@@ -29152,7 +29153,7 @@ EOF
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/karow/c-bauen/strasse-am-bahnhof-karow-wird-tiefer-gelegt_a382636 (voraussichtliche Freigabe im Herbst 2024)
 #: last_checked: 2023-05-13 (mapillary)
-#: next_check: 2023-08-31
+#: next_check: 2024-07-08
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },
@@ -35778,7 +35779,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-06-15
+#: last_checked: 2023-06-20
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -35822,7 +35823,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl2Nl85LVhvQUFoVU13LnBuZw==
 #: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
-#: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023)
+#: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023) (inaktiv)
 	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
 EOF
      },
@@ -38119,6 +38120,7 @@ EOF
 #: by: https://nitter.cz/BaBerlinTK/status/1665720334689943552#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15561.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-in-koepenick-bvg-bus-tram-wann-die-staufalle-endlich-entschaerft-wird-li.359363
+#: by: https://nitter.cz/VIZ_Berlin/status/1671189918050304000#m
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -38665,10 +38667,10 @@ EOF
 EOF
      },
      { from  => 1682917200, # 2023-05-01 07:00
-       until => 1687532400, # 2023-06-23 17:00
+       until => 1687283944, # 1687532400, # 2023-06-23 17:00
        text  => 'Sigmaringer Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Gasteiner Str. gesperrt, vom 02.05.2023 07:00 bis 23.06.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.319435,52.487436,02.05.2023,07:00',
+       source_id => 'viz2021:13.319435,52.487436,02.05.2023,07:00', # vorzeitig inaktiv
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1653255744798486530#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV6Y1NYcldBQUk1TTRNLnBuZw==
@@ -38678,16 +38680,16 @@ EOF
      },
      { from  => 1683064800, # 2023-05-03 00:00
        until => $isodate2epoch->("2023-12-31 23:59:59"), # 1689606000, # 2023-07-17 17:00
-       text  => 'Birnbaumer Str./Hoernlestr.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrungen, ggfs. Umwege notwendig, mindestens bis 17.07.2023, möglicherweise bis Dezember 2023',
+       text  => 'Birnbaumer Str./Hoernlestr.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrungen, ggfs. Umwege notwendig, mindestens bis 21.08.2023, möglicherweise bis Dezember 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1653626689128402944#m (Gesamtdauer bis voraussichtlich 12/2023)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
-#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 vvv
+#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023)vvv
 #: source_id: bvg2021:x69#BVG319326_0 vvv
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
-#: next_check: 2023-07-17 vvv
+#: next_check: 2023-08-21 vvv
 Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
@@ -39314,6 +39316,26 @@ EOF
 #: last_checked: 2023-06-18 (user/osm)
 #: check_frequency: 120d
 	2::inwork 2829,18126 2797,18126 2790,18139
+EOF
+     },
+     { from  => 1687281760, # 2023-06-20 19:22
+       until => 1698443999, # 2023-10-27 23:59
+       text  => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, bis zum 27. Oktober 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
+#: by: http://spielstraßen.de/uebersicht.php?date=20230620
+	q4::temp::play 7657,9942 7698,10147
+EOF
+     },
+     { from  => 1688594400, # 2023-07-06 00:00
+       until => 1699052399, # 2023-11-03 23:59
+       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, 7. Juli 2023 bis 3. November 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
+#: by: http://spielstraßen.de/uebersicht.php?date=20230620
+	q4::temp::play 5956,7686 5812,7685
 EOF
      },
     );
