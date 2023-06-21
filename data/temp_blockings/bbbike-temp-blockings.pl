@@ -29142,8 +29142,8 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343519 (bis 31.12.2021) (möglicherweise inaktiv)
 #: source_id: viz2021:13.46842,52.61467,29.08.2022,13:10 (bis 31.08.2023) (inaktiv)
+#: source_id: viz2021:13.46842,52.61467,20.06.2023,16:33 (bis 08.07.2024) (inaktiv)
 #: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023) (bis 08.07.2024)
-#: source_id: viz2021:13.46842,52.61467,20.06.2023,16:33 (bis 08.07.2024)
 #: also_indoor: traffic (G,H,B)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
@@ -35779,7 +35779,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-06-20
+#: last_checked: 2023-06-21
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -38121,6 +38121,7 @@ EOF
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15561.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-in-koepenick-bvg-bus-tram-wann-die-staufalle-endlich-entschaerft-wird-li.359363
 #: by: https://nitter.cz/VIZ_Berlin/status/1671189918050304000#m
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-bvg-gelbe-folie-gegen-stau-in-koepenick-kommt-die-bvg-jetzt-besser-durch-li.361499
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -39126,7 +39127,7 @@ EOF
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-06-08 vvv
+#: last_checked: 2023-06-21 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39236,10 +39237,10 @@ EOF
 EOF
      },
      { from  => 1686693600, # 2023-06-14 00:00
-       until => 1688162340, # 2023-06-30 23:59
+       until => 1687379728, # vorfristig entfernt --- 1688162340, # 2023-06-30 23:59
        text  => 'Sakrower Landstraße: zwischen Kafkastr. und Hottengrundweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 00:00 bis 30.06.2023 23:59',
        type  => 'handicap',
-       source_id => 'viz2021:13.128539,52.448135,15.06.2023,00:00',
+       source_id => 'viz2021:13.128539,52.448135,15.06.2023,00:00', # inaktiv
        data  => <<EOF,
 	q4::inwork -8086,4504 -8259,4267 -8273,4249
 EOF
