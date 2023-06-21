@@ -125,6 +125,7 @@ sub load_gpx {
 	 'running'  => 'pedes',
 	 'hiking'   => 'pedes',
 	 'swimming' => 'swim',
+	 'kayaking' => 'kayak',
 	);
 
     my $latlong2xy_twig = sub {

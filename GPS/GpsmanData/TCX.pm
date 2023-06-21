@@ -67,6 +67,8 @@ sub load_tcx {
 		$vehicle = 'swim';
 	    } elsif ($raw_vehicle =~ m{^(Rowing)$}i) {
 		$vehicle = 'boat';
+	    } elsif ($raw_vehicle =~ m{^(Kayaking)$}i) {
+		$vehicle = 'kayak';
 	    } else {
 		warn "Don't know how to handle Sport '$raw_vehicle'";
 	    }
