@@ -7072,16 +7072,18 @@ EOF
 
 				if (!$dont_plot_line) {
 				    my $arrow;
-				    if ($line_capstyle && $line_capstyle eq 'round') {
-					# XXX Tk problem? bad rendering with capstyle=>"round" and arrow=>something
-					$arrow = 'none';
-				    } else {
-					$arrow =
+				    if (!$is_overview_canvas) { # don't draw any arrows on overview canvas, as the default arrowheads are much too large for the tiny map
+					if ($line_capstyle && $line_capstyle eq 'round') {
+					    # XXX Tk problem? bad rendering with capstyle=>"round" and arrow=>something
+			       		    $arrow = 'none';
+					} else {
+					    $arrow =
 EOF
 . $get_arrow_code . <<'EOF'
-					;
-					if (!$arrow) {
-					    $arrow = 'last';
+					    ;
+					    if (!$arrow) {
+						$arrow = 'last';
+					    }
 					}
 				    }
 
@@ -10232,12 +10234,14 @@ sub plotstr {
     return if !$c;
     my $std = 1;
     my $transpose = \&transpose;
+    my $is_overview_canvas;
     if (exists $args{Canvas}) {
 	$c = $args{Canvas};
 	$std = 0;
 	$transpose = ($show_overview_mode eq 'region'
 		      ? \&transpose_small
 		      : \&transpose_medium);
+	$is_overview_canvas = 1;
     }
 
     status_message("");

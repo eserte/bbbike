@@ -469,6 +469,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $label_spaceadd = undef; # XXX? note that "" is special
 	    my $transpose = \&transpose;
 	    my $conv = $lazy_str{$abk}->get_conversion;
+	    my $is_overview_canvas = 0; # XXX hardcoded, maybe should be dependend on $args{Canvas} which does not exist here
 	    my $draw_sub;
 	    local $str_name_draw{$abk} = $str_name_draw{$abk};
 	    if ($do_street_name_experiment) {
