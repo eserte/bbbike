@@ -24786,7 +24786,7 @@ EOF
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
 #: osm_watch: way id="462738551" version="16"
-#: osm_watch: way id="848019125" version="3"
+#: osm_watch: way id="848019125" version="4"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-03-21 (osm)
 #: next_check: 2023-08-30
@@ -32079,8 +32079,8 @@ EOF
 EOF
      },
      { from  => 1685829600, # 2023-06-04 00:00 # 1602972000, # 2020-10-18 00:00
-       until => 1687536000, # 2023-06-23 18:00 # $isodate2epoch->("2020-10-23 15:00:00"),
-       text  => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, Radfahrer benutzen den gegenüberliegenden Radweg, vom 05.06.2023 bis 23.06.2023',
+       until => $isodate2epoch->("2023-06-30 18:00:00"), # 1687536000, # 2023-06-23 18:00 # $isodate2epoch->("2020-10-23 15:00:00"),
+       text  => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, Radfahrer benutzen den gegenüberliegenden Radweg, vom 05.06.2023 bis 30.06.2023',
        type  => 'handicap',
        source_id => '',
        data  => <<EOF,
@@ -32088,7 +32088,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1330851.php (Sperrung 2023)
 # REMOVED --- #: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
 #: source_id: 2147346494 (inaktiv)
-#: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023)
+#: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023) (bis 30.06.2023)
 # REMOVED ---	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 # REMOVED --- #: next_check: 2023-06-05
 	q2::inwork; 16169,6064 16510,5917 16868,5938
@@ -35779,7 +35779,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-22
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -36889,7 +36889,7 @@ EOF
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-06-15 vvv
+#: last_checked: 2023-06-22 vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -38146,7 +38146,7 @@ EOF
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (ex-G[falsch]) vvv
-#: osm_watch: way id="1171918026" version="2" vvv
+#: osm_watch: way id="1171918026" version="3" vvv
 #: last_checked: 2023-06-17 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
@@ -39251,6 +39251,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023)
+#: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 EOF
      },
@@ -39337,6 +39339,24 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
 	q4::temp::play 5956,7686 5812,7685
+EOF
+     },
+     { from  => 1687672800, # 2023-06-25 08:00
+       until => 1690466400, # 2023-07-27 16:00
+       text  => 'Bagemühl: Deckensanierung, Vollsperrung, voraussichtlich 26.06.2023 08:00 Uhr bis 27.07.2023 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '237300001',
+       data  => <<EOF,
+	2::inwork 62767,106530 62837,105731 62745,105429
+EOF
+     },
+     { from  => 1687406400, # 2023-06-22 06:00
+       until => 1693494000, # 2023-08-31 17:00
+       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00 bis 31.08.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
+       data  => <<EOF,
+	q3::inwork 12632,12630 12690,12769
 EOF
      },
     );

@@ -3546,7 +3546,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
 #: osm_watch: way id="462738551" version="16"
-#: osm_watch: way id="848019125" version="3"
+#: osm_watch: way id="848019125" version="4"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-03-21 (osm)
 #: next_check: 2023-08-30
@@ -4686,7 +4686,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1330851.php (Sperrung 2023)
 # REMOVED --- #: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
 #: source_id: 2147346494 (inaktiv)
-#: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023)
+#: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023) (bis 30.06.2023)
 # REMOVED ---	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 # REMOVED --- #: next_check: 2023-06-05
 	q2::inwork; 16169,6064 16510,5917 16868,5938
@@ -4694,9 +4694,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1685829600,
          'id' => 3287,
          'source_id' => '',
-         'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, Radfahrer benutzen den gegenüberliegenden Radweg, vom 05.06.2023 bis 23.06.2023',
+         'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, Radfahrer benutzen den gegenüberliegenden Radweg, vom 05.06.2023 bis 30.06.2023',
          'type' => 'handicap',
-         'until' => 1687536000
+         'until' => 1688140800
        },
        undef,
        undef,
@@ -5759,7 +5759,7 @@ Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-22
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -6127,7 +6127,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-06-15 vvv
+#: last_checked: 2023-06-22 vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -6813,7 +6813,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (ex-G[falsch]) vvv
-#: osm_watch: way id="1171918026" version="2" vvv
+#: osm_watch: way id="1171918026" version="3" vvv
 #: last_checked: 2023-06-17 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
@@ -7560,6 +7560,8 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
        undef,
        {
          'data' => '#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023)
+#: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 ',
          'from' => 1686715200,
@@ -7613,17 +7615,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1670462625707175936#m (im Text steht Wattstr. ...)
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl3SDZRMVhnQUFqRzhiLmpwZw== (... aber laut Verkehrszeichenplan ist Waltraud-Krause-Weg genauer)
-	q4::inwork; 17842,6639 17860,6644 17962,6674
-',
-         'from' => 1687060800,
-         'id' => 3827,
-         'text' => 'Siemensstr.: zwischen Waltraud-Krause-Weg und Edisonstr. ist die Fahrbahn auch für Radfahrer gesperrt, von 19.06.2023 06:00 Uhr bis 22.06.2023 abends',
-         'type' => 'handicap',
-         'until' => 1687449600
-       },
+       undef,
        {
          'data' => '#: osm_watch: note 3359195 6
 #: osm_watch: way id="311338440" version="4"
@@ -7660,6 +7652,26 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, 7. Juli 2023 bis 3. November 2023',
          'type' => 'handicap',
          'until' => 1699052399
+       },
+       {
+         'data' => '	2::inwork 62767,106530 62837,105731 62745,105429
+',
+         'from' => 1687672800,
+         'id' => 3831,
+         'source_id' => '237300001',
+         'text' => 'Bagemühl: Deckensanierung, Vollsperrung, voraussichtlich 26.06.2023 08:00 Uhr bis 27.07.2023 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1690466400
+       },
+       {
+         'data' => '	q3::inwork 12632,12630 12690,12769
+',
+         'from' => 1687406400,
+         'id' => 3832,
+         'source_id' => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
+         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00 bis 31.08.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1693494000
        }
      
 );

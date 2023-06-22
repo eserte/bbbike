@@ -1520,6 +1520,7 @@ Manitiusstr.: Asphalt	Q0 12374,9542 12523,9465
 Nansenstr.: Kopfsteinpflaster	Q2 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
 Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
+(Vorfahrt Neues-Deutschland-Gebäude): Kleinsteinpflaster/Beton	Q1 12788,11898 12891,12008
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11998,8872 12012,9092
 Hobrechtstr.: Kleinsteinpflaster	Q1 12012,9092 12005,9211
@@ -10702,7 +10703,8 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Weststr., Virchow-Klinikum): Asphalt	Q0 6012,15024 6030,14924
 (Ost-West-Str., Virchow-Klinikum): Asphalt	Q0 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
 (Südstr., Virchow-Klinikum): Asphalt	Q0 6414,14981 6305,14964
-(Südstr., Virchow-Klinikum): Beton	Q0 6305,14964 6231,14952 6159,14921 6104,14937
+(Südstr., Virchow-Klinikum): Beton	Q0 6305,14964 6231,14952
+(Südstr., Virchow-Klinikum): Asphalt/Beton	Q0 6231,14952 6159,14921 6104,14937
 (Südstr., Virchow-Klinikum): Asphalt/Beton	Q0 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Asphalt/Beton	Q0 6414,14981 6400,15080 6395,15109
 (Oststr., Virchow-Klinikum): Asphalt	Q0 6395,15109 6380,15210 6320,15283
@@ -16685,7 +16687,8 @@ Iznikstr.: Verbundsteinpflaster	Q0 -2140,16909 -2119,17015
 Hans-Poelzig-Str.: guter Asphalt	Q0 -2296,16866 -2157,16838
 Chamissostr. (Hakenfelde): guter Asphalt	Q0 -2585,16900 -2838,16951
 Chamissostr. (Hakenfelde): Kopfsteinpflaster	Q2 -2838,16951 -3017,16984
-Telegrafenweg: Asphalt	Q0 -1336,14786 -1369,14802 -1411,14875 -1480,14922 -1543,14938 -1610,14925 -2056,15041
+Telegrafenweg: Asphalt	Q0 -1336,14786 -1369,14802 -1411,14875 -1480,14922 -1543,14938 -1610,14925 -1789,14972
+Telegrafenweg: Kopfsteinpflaster	Q2 -1789,14972 -2056,15041
 Schwerter Weg: mäßiger Beton	Q2 -692,15491 -676,15370
 Kanalstr. (Haselhorst): guter Beton	Q1 -736,15294 -593,15300
 Simonring: guter Beton	Q1 -945,14999 -896,14888 -836,14765

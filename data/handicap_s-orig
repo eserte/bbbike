@@ -229,7 +229,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="25"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2023-05-25 (osm)
+#: last_checked: 2023-06-22
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -282,7 +282,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-22
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -298,7 +298,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-06-15 vvv
+#: last_checked: 2023-06-22 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -3978,7 +3978,14 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Mittelallee, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
 (Weststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5944,15172 5998,15112 6007,15053 6012,15024 6030,14924
 (Ost-West-Str., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
-(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6030,14924
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6305,14964
+#: next_check_id: VIRCHOW-2023
+#: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6305,14964 6231,14952
+#: osm_watch: way id="1168244288" version="1"
+#: last_checked: 2023-06-22
+#: check_frequency: 30d
+Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6231,14952 6159,14921 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6400,15080 6395,15109 6380,15210
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6470,14990 6504,14969
 (Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6158,14851 6078,14864 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
@@ -4594,6 +4601,8 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Fritz-Elsas-Str./Dominicusstr. - Koburger Str.): Gehweg, Bordstein am Wendehammer	q3 6575,8469 6546,8456
 # 
 (Schönholzer Heide, Germanenstr. - Friesenstr.): gemeinsamer Geh- und Radweg	q1 8348,19304 8405,19336 8484,19401
+# 
+(Vorfahrt Neues-Deutschland-Gebäude): einige Fußgänger	q2+ 12788,11898 12891,12008
 # 
 ######################### User Contributions #################################
 # 

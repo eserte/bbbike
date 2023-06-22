@@ -173,12 +173,13 @@ Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/naturschutzbund-kritisiert-routenfuehrung-der-geplanten-radschnellverbindungen-durch-gruenanlagen_a288190 (naher Hans-Baluschek-Park erw‰hnt)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
-#: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023) (umbenannt)
+#: by: http://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 mˆglich)
 #: osm_watch: way id="102486250" version="21"
 #: last_checked: 2023-06-12
 #: check_frequency: 120d
-#: next_check: 2023-09-30
+#: next_check: 2024-09-30
 Priesterweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
@@ -487,7 +488,7 @@ Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8953
 Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
-#: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/fahrbahn-und-gehwege-in-der-gerichts-und-gartenstrasse-1046099.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf (Asphaltierung, geplante Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
@@ -1078,8 +1079,9 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer l‰ngs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="18"
-#: last_checked: 2023-04-18
-#: check_frequency: 60d
+#: last_checked: 2023-06-22
+#: check_frequency: 45d
+#: next_check: 2023-09-30
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
 #: historical_note: fr¸her Kopfsteinpflaster, Q2
@@ -2147,7 +2149,8 @@ Nansenstr.: Kopfsteinpflaster	Q2- 12412,9610 12374,9542 12333,9470 12270,9362 12
 #: note: teilweise mit Asphaltflicken
 Reuterplatz: Kopfsteinpflaster	Q2- 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
-# REMOVED (wird umgestaltet) --- (Vorfahrt Neues-Deutschland-Geb‰ude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
+#: historical_note: fr¸her (bis 2023): Kopfsteinpflaster, OK, Q1
+(Vorfahrt Neues-Deutschland-Geb‰ude): Kleinsteinpflaster/Beton	Q1+ 12788,11898 12891,12008
 # REMOVED (eigentlich keine groﬂen Qualit‰tseinbuﬂen) --- Husemannstr.: m‰ﬂiger Asphalt	Q1+ 11265,14756 11285,14958
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2- 11998,8872 12012,9092
@@ -12515,7 +12518,9 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Weststr., Virchow-Klinikum): Asphalt	Q0 6012,15024 6030,14924
 (Ost-West-Str., Virchow-Klinikum): Asphalt	Q0 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
 (S¸dstr., Virchow-Klinikum): Asphalt	Q0 6414,14981 6305,14964
-(S¸dstr., Virchow-Klinikum): Beton	Q0 6305,14964 6231,14952 6159,14921 6104,14937
+(S¸dstr., Virchow-Klinikum): Beton	Q0 6305,14964 6231,14952
+#: historical_note: fr¸her (bis 2023) Beton
+(S¸dstr., Virchow-Klinikum): Asphalt/Beton	Q0 6231,14952 6159,14921 6104,14937
 (S¸dstr., Virchow-Klinikum): Asphalt/Beton	Q0 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Asphalt/Beton	Q0 6414,14981 6400,15080 6395,15109
 (Oststr., Virchow-Klinikum): Asphalt	Q0 6395,15109 6380,15210 6320,15283
@@ -28393,7 +28398,9 @@ Chamissostr. (Hakenfelde): guter Asphalt	Q0 -2585,16900 -2838,16951
 #: corrected_by: srt (guter Asphalt -> )
 Chamissostr. (Hakenfelde): Kopfsteinpflaster	Q2- -2838,16951 -3017,16984
 #: confirmed_by: srt
-Telegrafenweg: Asphalt	Q0 -1336,14786 -1369,14802 -1411,14875 -1480,14922 -1543,14938 -1610,14925 -2056,15041
+Telegrafenweg: Asphalt	Q0 -1336,14786 -1369,14802 -1411,14875 -1480,14922 -1543,14938 -1610,14925 -1789,14972
+#: corrected_by: mapillary, daf (Asphalt, Q0 -> ...)
+Telegrafenweg: Kopfsteinpflaster	Q2 -1789,14972 -2056,15041
 Schwerter Weg: m‰ﬂiger Beton	Q2 -692,15491 -676,15370
 #: confirmed_by: srt
 Kanalstr. (Haselhorst): guter Beton	Q1+ -736,15294 -593,15300
