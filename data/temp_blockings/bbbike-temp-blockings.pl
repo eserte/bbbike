@@ -16370,7 +16370,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-05-19
+#: last_checked: 2023-06-23
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -28301,10 +28301,12 @@ EOF
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/deutsche-bahn-legt-zeitplan-fuer-baustelle-am-bahnhof-zeuthen-vor-PLTNQXWDNV37DD7HLPDMVTFL6I.html (bis Mai 2023)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-fussgaengertunnel-am-bahnhof-im-rohbau-fertig-freigabe-mai-2023-geplant-ITXXXXQB35TUQUAUQ5F7PVVHKE.html
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,765387#msg-765387 (bis Juli 2023)
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
+#: by[nocache]: https://archive.ph/2023.06.22-094813/https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
 #: osm_watch: way id="36936021" version="7" brb
 #: last_checked: 2023-04-22 (zdf)
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2023-07-31
+#: next_check: 2023-09-30
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 EOF
      },
@@ -30790,7 +30792,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-04
+#: last_checked: 2023-06-23
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 	q4::inwork; 11329,12497 11202,12426
@@ -32089,6 +32091,7 @@ EOF
 # REMOVED --- #: XXX Wird es eine Umfahrung durch den Wald oder auf dem gegenüberliegenden Gehweg geben?
 #: source_id: 2147346494 (inaktiv)
 #: source_id: viz2021:13.488572,52.458994,05.06.2023,08:00 (bis 23.06.2023) (bis 30.06.2023)
+#: note: bei rbb sogar bis 4.7.2023
 # REMOVED ---	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 # REMOVED --- #: next_check: 2023-06-05
 	q2::inwork; 16169,6064 16510,5917 16868,5938
@@ -34931,8 +34934,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So) vvv
-#: last_checked: 2023-06-11 vvv
+#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr vvv
+#: last_checked: 2023-06-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="36"
@@ -36889,7 +36892,7 @@ EOF
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-06-22 vvv
+#: last_checked: 2023-06-23 vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -37935,7 +37938,8 @@ EOF
        data  => <<EOF,
 #: note: laut VIZ nur der Kfz-Verkehr betroffen
 # REMOVED (hier nicht, siehe Mapillary) ---	q4::inwork 23698,15049 23693,15080 23686,15128
-	q4::inwork 23686,15128 23663,15270 23643,15392
+	q4::inwork 23686,15128 23663,15270
+# REMOVED (hier nicht, siehe Mapillary) ---	q4::inwork 23663,15270 23643,15392
 EOF
      },
      { from  => 1676185200, # 2023-02-12 08:00
@@ -39251,7 +39255,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
-#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv)
 #: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 EOF
@@ -39275,12 +39279,12 @@ EOF
 EOF
      },
      { from  => 1685397600, # 2023-05-30 00:00
-       until => 1687557600, # 2023-06-24 00:00
-       text  => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 23.6.2023',
+       until => $isodate2epoch->("2023-06-30 17:00:00"), # 1687557600, # 2023-06-24 00:00
+       text  => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 30.6.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
-#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023)
+#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023)
 #: also_indoor: traffic (H)
 	q3::inwork 8852,6642 8949,6644
 EOF
@@ -39341,12 +39345,13 @@ EOF
 	q4::temp::play 5956,7686 5812,7685
 EOF
      },
-     { from  => 1687672800, # 2023-06-25 08:00
-       until => 1690466400, # 2023-07-27 16:00
-       text  => 'Bagemühl: Deckensanierung, Vollsperrung, voraussichtlich 26.06.2023 08:00 Uhr bis 27.07.2023 16:00 Uhr',
+     { from  => $isodate2epoch->("2023-06-22 08:00:00"), # 1687672800, # 2023-06-25 08:00
+       until => $isodate2epoch->("2023-07-22 16:00:00"), # 1690466400, # 2023-07-27 16:00
+       text  => 'Bagemühl: Deckensanierung, Vollsperrung, voraussichtlich 23.06.2023 08:00 Uhr bis 22.07.2023 16:00 Uhr',
        type  => 'gesperrt',
        source_id => '237300001',
        data  => <<EOF,
+#: source_id: 237300173
 	2::inwork 62767,106530 62837,105731 62745,105429
 EOF
      },

@@ -1981,7 +1981,8 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
 #: osm_watch: way id="82654055" version="20"
-#: source_id: 2147343632 (bis Mitte 2023)
+#: source_id: 2147343632 (bis Mitte 2023) (inaktiv?)
+#: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023)
 #: priority: #A vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-03-11 vvv
@@ -4345,15 +4346,15 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.432298,52.535532,28.09.2022,09:24 (bis 6.10.2022) (bis 14.10.2022) (inaktiv)
 #: source_id: viz2021:13.42832,52.53198,29.12.2022,09:25 (bis 03.03.2023) (inaktiv)
 #: source_id: viz2021:13.43331,52.53623,26.10.2022,07:00 (zusätzlicher Eintrag, bis 28.05.2023) (inaktiv)
-#: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv)
+#: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
 #: last_checked: 2023-06-21 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2023-05-28 vvv
+#: next_check: 2023-09-29 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -7589,7 +7590,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://berliner-abendblatt.de/2022/10/26/bauarbeiten-in-der-greifswalder-strasse-wird-es-eng/
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022) (bis 30.10.2022) (inaktiv)
 #: source_id: viz2021:13.433311,52.536229,26.10.2022,07:00 (zusätzlicher Eintrag, bis 28.05.2023) (inaktiv)
-#: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv)
+#: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
 #: last_checked: 2023-06-21 vvv
@@ -7926,7 +7927,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/bezirksamt-charlottenburg-legt-geplante-radwege-auf-eis_a380956
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8576 (Antrag)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsverwaltung-will-situation-neu-bewerten-pop-up-radwege-an-der-berliner-kantstrasse-werden-zu-busspuren-9997531.html (westlich Wilmersdorfer Str.)
-#: last_checked: 2023-06-11 vvv
+#: last_checked: 2023-06-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
