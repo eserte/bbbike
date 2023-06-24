@@ -605,7 +605,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-24
 #: check_frequency: 150d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -619,7 +619,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-24
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1679,7 +1679,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (in API verschwunden, Web ist noch da) (und wieder da) (1. Quartal 2024 - 4. Quartal 2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-fahrradstrasse_a373544 (Entwurfsplanung 2023)
 #: osm_watch: way id="4615063" version="36"
-#: last_checked: 2023-05-21
+#: last_checked: 2023-06-24
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -6339,7 +6339,7 @@ Friedensteg: Asphalt	Q0 8029,19353 7981,19269 7959,19231
 Kreuzsteg: Asphalt	Q0 8056,19216 8025,19157
 Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
 #: corrected_by: mapillary (unbefestigte Straße, Q2 -> ...)
-Vereinssteg: Asphalt	Q0  8406,19081 8340,18984
+Vereinssteg: Asphalt	Q0  8412,19074 8340,18984
 Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 # 
 #: next_check_id: STRASSEVORSCHOENHOLZ-2019
@@ -6348,10 +6348,10 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="6"
-#: last_checked: 2023-03-18
+#: last_checked: 2023-06-24
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
-Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
+Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
 # 
 Frühlingstr.: Kopfsteinpflaster	Q2 8583,18668 8660,18679
 Straße 201: Asphalt	Q1 9529,18815 9511,18785 9366,18669
@@ -7313,8 +7313,8 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020)
 #: priority: #C
 #: source_id: 2147344935 (inaktiv)
-#: source_id: 2147347061 (Leitungsbau, bis 7.5.2021)
-#: last_checked: 2023-05-18
+#: source_id: 2147347061 (Leitungsbau, bis 7.5.2021) (inaktiv)
+#: last_checked: 2023-06-24
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-05-07
 Veitstr.: Fahrbahn Beton	Q0 1886,19835 1606,19775 1557,19765
@@ -12503,8 +12503,10 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0- 3219,7987 3206,7988
 (Brusebergstr. - Gotthardstr.): wassergebundene Decke, teilweise mit Schotter	Q1- 6045,18305 6046,18290 6040,18289 6031,18151 6065,18004 6049,17839 6056,17798
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh): Asphalt	Q0- 7090,19943 7123,19855 7138,19839
 #: note: mögliche Pfützen nach Regenfällen
-(Hertzstr./PankowPark - Bhf. Wilhelmsruh): unbefestigter Weg	Q2 7138,19839 7184,19783 7264,19717 7273,19682
-(Provinzstr. - Verlängerte Koloniestr.): unbefestigter Weg	Q2 8628,18441 8823,18252 8918,18159
+(Hertzstr./PankowPark - Bhf. Wilhelmsruh): unbefestigter Weg	Q2 7138,19839 7184,19783 7285,19700 7308,19653
+(Provinzstr. - Verlängerte Koloniestr.): unbefestigter Weg	Q2 8628,18441 8823,18252
+#: historical_note: früher: unbefestigter Weg, Q2
+(Provinzstr. - Verlängerte Koloniestr.): Feinschotter	Q2+ 8823,18252 8918,18159
 (Koloniestr. - Pankeweg): Verbundsteinpflaster	Q1 8973,17756 9024,17780
 (Koloniestr. - Pankeweg): wassergebundene Decke	Q1 9024,17780 9050,17794 9110,17784
 Königstuhlweg: Beton	Q0 10145,2622 10087,2365
@@ -12791,7 +12793,7 @@ Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -941,14637
 #: next_check_id: TEGELERBRUECKE-2021
 (provisorische Umleitung): Asphalt	Q0 -192,16054 -174,16084
-(An der Nordbahn): Asphalt	Q0 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
+(An der Nordbahn): Asphalt	Q0 7236,19689 7273,19682 7308,19653 7435,19547 7446,19522 7504,19459
 (Wohngebiet an der Kopenhagener Str.): Asphalt	Q0 7578,19648 7546,19665 7578,19753
 Heubudenbrücke: Holzbohlen	Q1- 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
@@ -13162,8 +13164,7 @@ Am Flutgraben: brüchiger Beton, Schienen	Q2 13613,10187 13647,10218
 # 
 Nymphenburger Str.: Asphalt mit leichten Schäden	Q0- 6163,8398 6246,8222
 # 
-#: XXX genaue Qualität ermitteln!
-(Waldweg nördlich des Schwarzen Grabens): Waldweg	Q2 3213,18115 3161,18100 3133,18109 3087,18147 2864,18175 2804,18189 2771,18157
+(Waldweg nördlich des Schwarzen Grabens): Waldweg, Schotter	Q2 3213,18115 3161,18100 3133,18109 3087,18147 2864,18175 2804,18189 2771,18157
 # 
 (Verlängerung Merlitzstr.): Asphalt	Q0 19661,3421 19746,3501
 ######################### User Contributions #################################
@@ -13691,7 +13692,7 @@ Galileistr.: Kleinsteinpflaster	Q2+ 15692,8198 15443,8458
 #: corrected_by: srt (mäßiges -> ...)
 Granatenstr.: schlechtes Kopfsteinpflaster	Q3; 8580,18106 8918,18159
 #: confirmed_by: srt
-Granatenstr.: mäßiges Kopfsteinpflaster	Q2; 8918,18159 8580,18106
+Granatenstr.: mäßiges Kopfsteinpflaster	Q2-; 8918,18159 8580,18106
 #: corrected_by: srt, mapillary (guter Asphalt, Q0 -> ...)
 Landreiterweg: schlechtes Kopfsteinpflaster, Asphaltflicken	Q3+ 14062,1846 14050,1904 13857,1975
 #: confirmed_by: srt
@@ -23259,8 +23260,8 @@ Reichenberger Str. (Alt-Hohenschönhausen): gröberes Verbundsteinpflaster	Q1 1593
 Hirschkäferweg: guter Asphalt	Q0 -6982,16403 -6953,16395 -6859,16369 -6767,16343 -6669,16316 -6557,16283 -6455,16254 -6354,16224 -6239,16190
 # 
 #: by: sonja.burg:
-#: confirmed_by: srt
-Coesfelder Weg: guter Asphalt	Q1+ 1658,18693 1761,18693 1782,18689 1965,18686
+#: corrected_by: srt (guter Asphalt -> ...)
+Coesfelder Weg: Asphalt mit Unebenheiten	Q1 1658,18693 1761,18693 1782,18689 1965,18686
 # 
 #: by: Falk Hübner:
 #: confirmed_by: srt
@@ -29201,7 +29202,7 @@ Kernhofer Str.: Kopfsteinpflaster	Q2+ 15434,11086 15386,10961
 Kernhofer Str.: Kopfsteinpflaster	Q2 15386,10961 15380,10946
 Kernhofer Str.: glattes Pflaster	Q0 15380,10946 15355,10875
 Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843
-Eichendorffstr.: Kopfsteinpflaster	Q2- 9231,13843 9189,13953
+Eichendorffstr.: Kopfsteinpflaster	Q2- 9231,13843 9193,13942 9189,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9353,13521 9275,13720
 #: corrected_by: srt (Q1 -> Q0)
 Philippstr.: Asphalt	Q0 8892,13498 8833,13440
@@ -32360,4 +32361,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 11880,9874
 Einmündungsbereich asphaltiert	Q0 7166,8487
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9892,9286
 Kreisverkehr mit Kopfsteinpflaster	Q2 11274,10184
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 6349,16213
 #: ignore ^^^

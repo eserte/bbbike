@@ -5097,9 +5097,9 @@ Kreuzsteg: Asphalt	Q0 8099,19276 8056,19216
 Friedensteg: Asphalt	Q0 8029,19353 7981,19269 7959,19231
 Kreuzsteg: Asphalt	Q0 8056,19216 8025,19157
 Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
-Vereinssteg: Asphalt	Q0 8406,19081 8340,18984
+Vereinssteg: Asphalt	Q0 8412,19074 8340,18984
 Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
-Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
+Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
 Frühlingstr.: Kopfsteinpflaster	Q2 8583,18668 8660,18679
 Straße 201: Asphalt	Q1 9529,18815 9511,18785 9366,18669
 Kleine Homeyerstr.: mäßiger Beton	Q1 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
@@ -10689,8 +10689,9 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 (Seestr. - Armenische Str.): Verbundsteinpflaster	Q1 7393,16566 7285,16638
 (Brusebergstr. - Gotthardstr.): wassergebundene Decke, teilweise mit Schotter	Q1 6045,18305 6046,18290 6040,18289 6031,18151 6065,18004 6049,17839 6056,17798
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh): Asphalt	Q0 7090,19943 7123,19855 7138,19839
-(Hertzstr./PankowPark - Bhf. Wilhelmsruh): unbefestigter Weg	Q2 7138,19839 7184,19783 7264,19717 7273,19682
-(Provinzstr. - Verlängerte Koloniestr.): unbefestigter Weg	Q2 8628,18441 8823,18252 8918,18159
+(Hertzstr./PankowPark - Bhf. Wilhelmsruh): unbefestigter Weg	Q2 7138,19839 7184,19783 7285,19700 7308,19653
+(Provinzstr. - Verlängerte Koloniestr.): unbefestigter Weg	Q2 8628,18441 8823,18252
+(Provinzstr. - Verlängerte Koloniestr.): Feinschotter	Q2 8823,18252 8918,18159
 (Koloniestr. - Pankeweg): Verbundsteinpflaster	Q1 8973,17756 9024,17780
 (Koloniestr. - Pankeweg): wassergebundene Decke	Q1 9024,17780 9050,17794 9110,17784
 Königstuhlweg: Beton	Q0 10145,2622 10087,2365
@@ -10952,7 +10953,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19993,15116 19893,14947 19867,14886 19793,14728 1976
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -941,14637
 (provisorische Umleitung): Asphalt	Q0 -192,16054 -174,16084
-(An der Nordbahn): Asphalt	Q0 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
+(An der Nordbahn): Asphalt	Q0 7236,19689 7273,19682 7308,19653 7435,19547 7446,19522 7504,19459
 (Wohngebiet an der Kopenhagener Str.): Asphalt	Q0 7578,19648 7546,19665 7578,19753
 Heubudenbrücke: Holzbohlen	Q1 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
@@ -11279,7 +11280,7 @@ Bölschestr. [Kirchplatz]: Kopfsteinpflaster	Q2 25544,5326 25592,5322 25588,5235
 Am Flutgraben: Kopfsteinpflaster	Q3 13579,10146 13613,10187
 Am Flutgraben: brüchiger Beton, Schienen	Q2 13613,10187 13647,10218
 Nymphenburger Str.: Asphalt mit leichten Schäden	Q0 6163,8398 6246,8222
-(Waldweg nördlich des Schwarzen Grabens): Waldweg	Q2 3213,18115 3161,18100 3133,18109 3087,18147 2864,18175 2804,18189 2771,18157
+(Waldweg nördlich des Schwarzen Grabens): Waldweg, Schotter	Q2 3213,18115 3161,18100 3133,18109 3087,18147 2864,18175 2804,18189 2771,18157
 (Verlängerung Merlitzstr.): Asphalt	Q0 19661,3421 19746,3501
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
@@ -15015,7 +15016,7 @@ Nordhellesteig: guter Beton	Q0 1805,18606 1831,18424 1843,18315 1848,18199
 Baumgartensteg: Kopfsteinpflaster	Q2 -2937,13399 -2882,13474
 Reichenberger Str. (Alt-Hohenschönhausen): gröberes Verbundsteinpflaster	Q1 15937,15134 16075,15069 16123,15025
 Hirschkäferweg: guter Asphalt	Q0 -6982,16403 -6953,16395 -6859,16369 -6767,16343 -6669,16316 -6557,16283 -6455,16254 -6354,16224 -6239,16190
-Coesfelder Weg: guter Asphalt	Q1 1658,18693 1761,18693 1782,18689 1965,18686
+Coesfelder Weg: Asphalt mit Unebenheiten	Q1 1658,18693 1761,18693 1782,18689 1965,18686
 Oberonstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Fußweg mit ebenfalls schlechter Qualität möglich	Q3 13643,21901 13392,22014
 Ehrenfelder Platz: guter Asphalt	Q0 20052,-239 20148,-236
 Ehrenfelder Str.: guter Asphalt	Q0 20148,-236 20228,-235 20308,-234
@@ -17148,7 +17149,7 @@ Kernhofer Str.: Kopfsteinpflaster	Q2 15434,11086 15386,10961
 Kernhofer Str.: Kopfsteinpflaster	Q2 15386,10961 15380,10946
 Kernhofer Str.: glattes Pflaster	Q0 15380,10946 15355,10875
 Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843
-Eichendorffstr.: Kopfsteinpflaster	Q2 9231,13843 9189,13953
+Eichendorffstr.: Kopfsteinpflaster	Q2 9231,13843 9193,13942 9189,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9353,13521 9275,13720
 Philippstr.: Asphalt	Q0 8892,13498 8833,13440
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707

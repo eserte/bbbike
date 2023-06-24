@@ -4482,7 +4482,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002733',
        data  => <<EOF,
-	1::inwork 10341,13376 10527,13257
+	1::inwork 10341,13376 10385,13348 10527,13257
 EOF
      },
      { from  => 1147557600, # 2006-05-14 00:00
@@ -7115,7 +7115,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004491',
        data  => <<EOF,
-	1::inwork 10341,13376 10527,13257
+	1::inwork 10341,13376 10385,13348 10527,13257
 EOF
      },
      { from  => 1169074800, # 2007-01-18 00:00
@@ -12836,7 +12836,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009483',
        data  => <<EOF,
-	1::inwork 10341,13376 10527,13257
+	1::inwork 10341,13376 10385,13348 10527,13257
 EOF
      },
      { from  => 1221686258, # 2008-09-17 23:17
@@ -13524,7 +13524,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-	q4::inwork; 10341,13376 10527,13257
+	q4::inwork; 10341,13376 10385,13348 10527,13257
 EOF
      },
      { from  => 1238347304, # 2009-03-29 19:21
@@ -29736,7 +29736,7 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
        until => $isodate2epoch->("2023-06-29 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 29.06.2023, eventuell noch länger',
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 29.06.2023',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!) (inaktiv)
        data  => <<EOF,
@@ -29748,7 +29748,7 @@ EOF
 #: note: Halteverbotsschilder bis 29.06.2023
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-24 (sieht mittlerweile recht fertig aus)
 #: check_frequency: 90d
 #: next_check: 2023-06-29
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
@@ -31178,7 +31178,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-17
+#: last_checked: 2023-06-24
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -33213,7 +33213,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet? --- #: last_checked: 2021-06-25 (daf) --- #: check_frequency: 30d
-	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
+	2::inwork 7236,19689 7273,19682 7308,19653 7435,19547 7446,19522 7504,19459
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 00:00:00"),
@@ -34940,7 +34940,7 @@ EOF
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="36"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="20"
+#: osm_watch: way id="505363417" version="21"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -37781,7 +37781,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1155654228" version="7"
-#: last_checked: 2023-06-12 (daf)
+#: last_checked: 2023-06-22 (osm note)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
      },
@@ -38883,7 +38883,7 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-05-30 (mapillary)
+#: last_checked: 2023-06-24
 	q3::inwork 12707,13706 12640,13814
 EOF
      },
@@ -39004,6 +39004,8 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023)
+#: osm_watch: way id="688087510" version="11"
+#: osm_watch: way id="844709935" version="16"
 	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
 EOF
@@ -39255,7 +39257,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
-#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv) (bis 25.06.2023)
 #: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 EOF
@@ -39297,7 +39299,7 @@ EOF
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun
-#: last_checked: 2023-06-18
+#: last_checked: 2023-06-24
 	2::inwork 7090,19943 7123,19855 7138,19839
 EOF
      },
@@ -39316,11 +39318,12 @@ EOF
        text  => 'Flughafensee: Brücke gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: note 3359195 6
+#: osm_watch: note 3359195 7
 #: osm_watch: way id="311338440" version="4"
 #: by: l.epp
+#: confirmed_by: osm, srt
 #: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
-#: last_checked: 2023-06-18 (user/osm)
+#: last_checked: 2023-06-24
 #: check_frequency: 120d
 	2::inwork 2829,18126 2797,18126 2790,18139
 EOF
@@ -39362,6 +39365,29 @@ EOF
        source_id => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
        data  => <<EOF,
 	q3::inwork 12632,12630 12690,12769
+EOF
+     },
+     { from  => 1687609413, # 2023-06-24 14:23
+       until => 1735686000, # 2025-01-01 00:00
+       text  => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
+#: also_indoor: traffic (H,G,W)
+#: last_checked: 2023-05-18
+#: check_frequency: 360d
+#: next_check: 2024-12-31
+	q2::inwork 3213,18115 3420,18470
+EOF
+     },
+     { from  => 1687609413, # 2023-06-24 14:23
+       until => 1735686000, # 2025-01-01 00:00
+       text  => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
+#: XXX wie groß sind die Einschränkungen hier?
+	q2::inwork 3267,18767 3008,18464
 EOF
      },
     );

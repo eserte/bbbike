@@ -2220,7 +2220,7 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10662,
 Molkenmarkt: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10703,12313 10714,12355 10710,12377
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
-Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7024,15810
+Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888
 Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5524,21034 5596,21043 5819,21057
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
@@ -2335,6 +2335,7 @@ Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
 Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3693,13769 -3716,13724
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr.: Mittelstreifen	3nocross -4008,12916 -3967,12976 -3923,13060
+Invalidenstr.: Straßenbahntrasse	3nocross 9148,13944 9189,13953 9274,13963
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 #: XXX_prog hack für das bekannte 3nocross-Problem
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
@@ -3635,7 +3636,7 @@ Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: osm_watch: way id="4596985" version="20"
-#: last_checked: 2023-06-22
+#: last_checked: 2023-06-24
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -3722,7 +3723,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-06-23
+#: last_checked: 2023-06-24
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3987,7 +3988,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="20"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2023-06-22
+#: last_checked: 2023-06-24
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4175,7 +4176,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
-#: osm_watch: way id="4713304" version="42"
+#: osm_watch: way id="4713304" version="43"
 #: priority: #A
 #: last_checked: 2023-05-09 (youtube)
 #: check_frequency: 360d
@@ -4214,7 +4215,7 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: XXX hier wird eine neue Unterführung gebaut vvv
 #: last_checked: 2023-05-13 vvv
 #: next_check: 2023-07-31 vvv
-#: osm_watch: way id="152434836" version="22"
+#: osm_watch: way id="152434836" version="23"
 #: osm_watch: way id="30084962" version="29"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159

@@ -777,7 +777,7 @@ Gehwegplatten	RW2; 5198,17433 5109,17507
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4326,17801 4200,17848 4096,17890 4016,17918
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2023-05-21 (mapillary) vvv
+#: last_checked: 2023-06-24 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Verbundsteinpflaster, Bord gegen Gehweg	RW2; 4016,17918 3930,17923 3833,17929 3706,17931 3628,17935
@@ -794,7 +794,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Wedding
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2023-05-18 vvv
+#: last_checked: 2023-06-24 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -840,7 +840,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
 #: osm_watch: way id="25217949" version="48"
-#: last_checked: 2023-06-22
+#: last_checked: 2023-06-24
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
 #: osm_watch: way id="374344536" version="16"
@@ -3160,8 +3160,12 @@ neu asphaltiert	RW2; 3165,19136 3045,19032 2994,18979 2874,18876 2821,18831
 #: note: im Bereich der Bushaltestelle kein Radweg
 	RW0; 2821,18831 2874,18876
 neu asphaltiert	RW2; 2874,18876 2994,18979 3045,19032 3165,19136
-mäßiges Verbundsteinpflaster	RW1; 2568,19345 2773,19359 2827,19333 2876,19309 3095,19203 3165,19136
-mäßige Gehwegplatten, Bord	RW1; 3165,19136 3095,19203 2876,19309 2827,19333 2773,19359 2568,19345
+mäßige Gehwegplatten, Bord	RW1; 2568,19345 2727,19362 2827,19333
+asphaltiert	RW1; 2827,19333 2876,19309
+mäßige Gehwegplatten, Bord	RW1; 2876,19309 3095,19203 3165,19136
+mäßige Gehwegplatten, Bord	RW1; 3165,19136 3095,19203 2876,19309
+asphaltiert	RW1; 2876,19309 2827,19333
+mäßige Gehwegplatten, Bord	RW1; 2827,19333 2727,19362 2568,19345
 mäßiges Verbundsteinpflaster, sehr schmal, teilweise ragen parkende Autos in den Radweg rein	RW1;RW1 3165,19136 3241,19068 3377,19018 3700,18965 3726,18962 3883,18944 4144,18896
 	RW1;RW1 8820,3188 8792,3082 8752,2931 8735,2866
 	RW1;RW1 8735,2866 8674,2627
@@ -3244,10 +3248,11 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 1883,20639 1910,20548 1
 Radweg nur aufgemalt	RW1;RW1 3167,19597 3021,19780 2854,19992 2835,20013 2814,20035 2803,20045 2726,20146 2684,20223 2645,20300 2613,20416
 	RW1;RW1 2613,20416 2595,20514 2572,20622 2570,20837 2571,20886 2571,20914 2573,21008
 neu asphaltiert	RW1; 4491,20125 4262,20025
-	RW1; 4262,20025 4491,20125
+neu asphaltiert	RW1; 4262,20025 4491,20125
 Radweg nur aufgemalt	RW1; 4262,20025 3820,19688 3695,19595 3621,19539 3546,19477 3452,19392 3377,19325
 Verbundsteinpflaster, Bord	RW1; 3377,19325 3324,19277 3165,19136
-	RW1; 3165,19136 3324,19277 3377,19325 3452,19392 3546,19477 3621,19539 3695,19595 3820,19688 4262,20025
+	RW1; 3165,19136 3324,19277 3377,19325 3452,19392 3546,19477 3621,19539 3695,19595 3820,19688
+Verbundsteinpflaster, Bord	RW1; 3820,19688 4262,20025
 Radweg nur aufgemalt	RW1; 5217,18030 5225,18070 5301,18447
 	RW0;RW1 5324,18560 5345,18675
 	RW1;RW1 5345,18675 5364,18775
@@ -4027,7 +4032,8 @@ mäßiges Verbundsteinpflaster	RW1; 3563,20589 3598,20545 3901,20348 4076,20268 43
 mäßiges Verbundsteinpflaster	RW1; 4491,20125 4319,20182
 mäßiges Verbundsteinpflaster, Bord	RW1; 4319,20182 4076,20268 3901,20348 3598,20545 3563,20589
 asphaltiert	RW1;RW1 4491,20125 4780,20116
-	RW1;RW1 4780,20116 5201,20103 5299,20104 5399,20106 5517,20120
+Gehwegplatten, mit Bord	RW1; 4780,20116 5201,20103 5299,20104 5399,20106 5517,20120
+	RW1; 5517,20120 5399,20106 5299,20104 5201,20103 4780,20116
 asphaltiert	RW1; 5517,20120 5744,20155 5868,20198
 	RW1; 5868,20198 5744,20155 5517,20120
 asphaltiert	RW1; 5868,20198 6089,20290
@@ -6356,7 +6362,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11693 (Antrag)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
-#: last_checked: 2023-06-04 (mapillary) vvv
+#: last_checked: 2023-06-24 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
 #: osm_watch: way id="162965650" version="24"
@@ -6530,8 +6536,11 @@ Radweg nur aufgemalt, Gehwegplatten	RW1; 4102,18298 4009,18322
 	RW6;RW6 -1855,24072 -1911,24039 -1928,23984 -1854,23964 -1812,23976
 	RW6;RW6 -1806,23947 -1720,23923
 	RW9;RW1 -2508,22627 -2687,22501
-	RW1;RW1 1606,19775 1557,19765
-breiter asphaltierter Geh- und Radweg	RW1;RW9 1557,19765 1509,19693 1463,19417 1450,19336 1472,19165 1528,18971
+	RW1; 1606,19775 1557,19765
+#: note: kann in beide Richtungen genutzt werden
+breiter asphaltierter Geh- und Radweg	RW1; 1557,19765 1509,19693 1463,19417 1450,19336 1472,19165 1528,18971
+#: note: kann möglicherweise auch von Fußgängern genutzt werden (keine Ausschilderung)
+relativ breiter asphaltierter Radweg	RW1; 1528,18971 1472,19165 1450,19336 1463,19417 1509,19693 1557,19765 1606,19775
 	RW6;RW6 22983,11098 23159,11097
 	RW6;RW6 24175,11265 24154,11284 24019,11286 23853,11284 23654,11285
 	RW6;RW6 23654,11285 23449,11281 23382,11279 23362,11263
@@ -6992,7 +7001,7 @@ im Bereich der Straßenbahnhaltestelle	RW1; 15724,13544 15653,13542
 im Bereich der Straßenbahnhaltestelle	RW1; 15626,13541 15653,13542 15724,13544
 	RW3;RW3 15724,13544 15896,13547
 	RW6;RW6 9405,11413 9459,11371
-	RW4;RW4 8406,19081 8364,19166 8338,19262 8333,19305 8311,19458
+	RW4;RW4 8412,19074 8364,19166 8338,19262 8333,19305 8311,19458
 	RW3;RW3 8311,19458 8304,19475 8268,19558 8244,19624 8232,19695 8227,19725 8231,19806
 	RW3;RW4 8231,19806 8242,19869 8234,19936
 	RW3; 8234,19936 8224,19977 8196,20096
@@ -7927,6 +7936,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/bezirksamt-charlottenburg-legt-geplante-radwege-auf-eis_a380956
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8576 (Antrag)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsverwaltung-will-situation-neu-bewerten-pop-up-radwege-an-der-berliner-kantstrasse-werden-zu-busspuren-9997531.html (westlich Wilmersdorfer Str.)
+#: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-verkehr/pop-up-radweg-auf-kantstrasse-sorgt-wieder-fuer-streit_a385284
 #: last_checked: 2023-06-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
@@ -8384,4 +8394,6 @@ asphaltiert, breit	RW2;RW8 18034,2526 18247,2490 18496,2471
 	RW7;RW7 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760 13409,15687
 # 
 	RW6;RW6 25497,5327 25544,5326
+# 
+	RW3; 10385,13348 10341,13376
 # 

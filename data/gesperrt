@@ -2099,7 +2099,7 @@ Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp
 Möllendorffstr. -> Deutschmeisterstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15420,12178 15443,12222 15435,12226
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
 Vorfahrt am Rathaus Lichtenberg -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
-Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888 7024,15810
+Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888
 Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 6936,15888 6914,15908 6802,15790
 Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6781,16026 6914,15908 7077,16078
 Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 6781,16026
@@ -2406,6 +2406,9 @@ Sprengelstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4026,12720 -4119,12763 -
 Mittelstreifen	3nocross::ignrte -4008,12916 -3967,12976 -3923,13060
 Wilhelmstr. -> Zimmerstr.: Mittelstreifen	3::igndisp -3923,13060 -3967,12976 -3942,12957
 Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3967,12976 -4008,12916
+Straßenbahntrasse	3nocross::ignrte 9148,13944 9189,13953 9274,13963
+Invalidenstr. -> Eichendorffstr.: Straßenbahntrasse	3::igndisp 9274,13963 9189,13953 9193,13942
+Eichendorffstr. -> Invalidenstr.: Straßenbahntrasse	3::igndisp 9193,13942 9189,13953 9148,13944
 Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
@@ -3996,3 +3999,4 @@ Sachsendamm: linker Gehweg	1::igndisp 7014,8165 6935,8208
 Tempelhofer Damm: linker Gehweg	1::igndisp 9237,6413 9245,6352
 Tempelhofer Damm: linker Gehweg	1::igndisp 9254,6542 9242,6482
 Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	1::igndisp 15435,12226 15420,12178
+Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	1::igndisp 9148,13944 9193,13942

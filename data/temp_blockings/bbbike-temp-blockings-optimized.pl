@@ -4255,7 +4255,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: note: Halteverbotsschilder bis 29.06.2023
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2023-06-03
+#: last_checked: 2023-06-24 (sieht mittlerweile recht fertig aus)
 #: check_frequency: 90d
 #: next_check: 2023-06-29
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
@@ -4265,7 +4265,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
          'from' => 1558648800,
          'id' => 3108,
          'source_id' => '2147344253',
-         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 29.06.2023, eventuell noch länger',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 29.06.2023',
          'type' => 'handicap',
          'until' => 1688054400
        },
@@ -4523,7 +4523,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-17
+#: last_checked: 2023-06-24
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5413,7 +5413,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="36"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="20"
+#: osm_watch: way id="505363417" version="21"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6593,7 +6593,7 @@ mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1155654228" version="7"
-#: last_checked: 2023-06-12 (daf)
+#: last_checked: 2023-06-22 (osm note)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 ',
          'from' => undef,
@@ -7207,7 +7207,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-05-30 (mapillary)
+#: last_checked: 2023-06-24
 	q3::inwork 12707,13706 12640,13814
 ',
          'from' => undef,
@@ -7328,6 +7328,8 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023)
+#: osm_watch: way id="688087510" version="11"
+#: osm_watch: way id="844709935" version="16"
 	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
 ',
@@ -7564,7 +7566,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
        undef,
        {
          'data' => '#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
-#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv) (bis 25.06.2023)
 #: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 ',
@@ -7610,7 +7612,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun
-#: last_checked: 2023-06-18
+#: last_checked: 2023-06-24
 	2::inwork 7090,19943 7123,19855 7138,19839
 ',
          'from' => undef,
@@ -7621,11 +7623,12 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
        },
        undef,
        {
-         'data' => '#: osm_watch: note 3359195 6
+         'data' => '#: osm_watch: note 3359195 7
 #: osm_watch: way id="311338440" version="4"
 #: by: l.epp
+#: confirmed_by: osm, srt
 #: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
-#: last_checked: 2023-06-18 (user/osm)
+#: last_checked: 2023-06-24
 #: check_frequency: 120d
 	2::inwork 2829,18126 2797,18126 2790,18139
 ',
@@ -7677,6 +7680,31 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00 bis 31.08.2023 17:00',
          'type' => 'handicap',
          'until' => 1693494000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
+#: also_indoor: traffic (H,G,W)
+#: last_checked: 2023-05-18
+#: check_frequency: 360d
+#: next_check: 2024-12-31
+	q2::inwork 3213,18115 3420,18470
+',
+         'from' => 1687609413,
+         'id' => 3833,
+         'text' => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1735686000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
+#: XXX wie groß sind die Einschränkungen hier?
+	q2::inwork 3267,18767 3008,18464
+',
+         'from' => 1687609413,
+         'id' => 3834,
+         'text' => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1735686000
        }
      
 );
