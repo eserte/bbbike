@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.92;
+$VERSION = 1.93;
 
 use vars qw(%images);
 
@@ -1700,7 +1700,7 @@ sub showmap_url_viz {
     my($x,$y) = $proj4->forward($args{py}, $args{px});
     $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
     my $scale = 11; # XXX hardcoded for now
-    sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin3_2_6_3/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
+    sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
 }
 
 sub showmap_viz {

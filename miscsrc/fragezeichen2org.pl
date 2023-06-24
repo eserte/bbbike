@@ -425,7 +425,7 @@ for my $file (@files) {
 			 my($x,$y) = $proj4_epsg2078->forward($py, $px);
 			 $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
 			 my $scale = 11; # XXX hardcoded for now
-			 my $viz_url = sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin3_2_6_3/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
+			 my $viz_url = sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
 			 push @extra_url_defs, ['VIZ', $viz_url, ($inactive ? "(inactive)" : ())];
 		     } else {
 			 if (!state $warned_proj4++) {
