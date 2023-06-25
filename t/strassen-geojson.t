@@ -276,6 +276,8 @@ EOF
 
 }
 
+######################################################################
+# Test -combinemodule
 {
     my $tempmoddir = tempdir("strassen-geojson-XXXXXXXX", CLEANUP => 1);
     open my $ofh, ">$tempmoddir/StrassenGeoJSONMyCombine.pm" or die $!;
@@ -324,7 +326,7 @@ EOF
         local @INC = ($tempmoddir, @INC);
         $s->bbd2geojson(combine => 1, combinemodule => 'StrassenGeoJSONMyCombine');
     };
-    is $geojson, <<'EOF', 'combine=>1 and custom combinemodule';
+    eq_or_diff $geojson, <<'EOF', 'combine=>1 and custom combinemodule';
 {
    "features" : [
       {
@@ -361,6 +363,77 @@ EOF
 EOF
 
 }
+
+######################################################################
+# Test -manipulatemodule
+{
+    my $tempmoddir = tempdir("strassen-geojson-XXXXXXXX", CLEANUP => 1);
+    open my $ofh, ">$tempmoddir/StrassenGeoJSONMyManipulate.pm" or die $!;
+    print $ofh <<'EOF';
+package StrassenGeoJSONMyManipulate;
+sub new { bless { }, shift }
+sub manipulate_feature {
+    my($self, $feature) = @_;
+    $feature->{properties}->{is_manipulated} = 1;
+    $feature->{properties}->{name} .= " - added something using manipulatemodule";
+}
+1;
+EOF
+    close $ofh or die $!;
+
+    my $test_manipulate_data = <<"EOF";
+#: map: polar
+#:
+Waypoint 1\tX 13.4,52.5
+Waypoint 2\tX 13.5,52.6
+EOF
+    my $s = Strassen->new_from_data_string($test_manipulate_data);
+    my $s_geojson = Strassen::GeoJSON->new($s);
+    my $geojson = do {
+        local @INC = ($tempmoddir, @INC);
+        $s->bbd2geojson(manipulatemodule => 'StrassenGeoJSONMyManipulate');
+    };
+    eq_or_diff $geojson, <<'EOF', 'custom manipulatemodule';
+{
+   "features" : [
+      {
+         "geometry" : {
+            "coordinates" : [
+               "13.4",
+               "52.5"
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "cat" : "X",
+            "is_manipulated" : 1,
+            "name" : "Waypoint 1 - added something using manipulatemodule"
+         },
+         "type" : "Feature"
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               "13.5",
+               "52.6"
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "cat" : "X",
+            "is_manipulated" : 1,
+            "name" : "Waypoint 2 - added something using manipulatemodule"
+         },
+         "type" : "Feature"
+      }
+   ],
+   "type" : "FeatureCollection"
+}
+EOF
+
+}
+
+######################################################################
 
 {
     my $example_geojson = <<'EOF';
