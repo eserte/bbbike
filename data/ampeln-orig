@@ -77,12 +77,14 @@ Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 # REMOVED (wurde durch einen temporären Zebrastreifen ersetzt) --- #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten) --- #: by: https://officehome.de/ostkreuz-campus-a --- #: osm_watch: way id="936801541" version="3" --- #: XXX Ampel befindet sich östlich der Einmündung --- #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30, 2023-05-14 (So) um 13:30 --- #: note: Anforderungsampel --- #: last_checked: 2023-05-14 --- Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2023-06-19
+#: last_checked: 2023-06-25
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
+#: osm_watch: node id="9882573114" version="2"
+#: osm_watch: node id="7023223791" version="3"
 #: last_checked: 2023-06-12
 #: next_check: 2023-06-27
 #: valid: -20230627
@@ -2538,7 +2540,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-06-12
+#: last_checked: 2023-06-25
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -2569,7 +2571,7 @@ Industriebahn	B0 -2410,13746
 	X 16819,15912
 	X -1564,14489
 	F -6459,14160
-	X 18496,2471
+	X 18484,2471
 	X 19501,3101
 	X 19574,3186
 	X -6482,5711
@@ -3673,13 +3675,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-06-19
+#: last_checked: 2023-06-25
 #: check_frequency: 120d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="15"
 #: note: Anforderungsampel
-#: last_checked: 2023-06-19
+#: last_checked: 2023-06-25
 #: check_frequency: 120d
 	F::inwork 17747,5452
 # 

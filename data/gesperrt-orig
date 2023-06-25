@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-06-09
+#: last_checked: 2023-06-25
 #: check_frequency: 90d
 #: next_check: 2023-07-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -1503,6 +1503,9 @@ Schönfließer Str.	1 3145,26256 3112,26253
 # 
 Bölschestr. [Kirchplatz]	1 25544,5326 25592,5322 25588,5235
 # 
+#: by: mapillary
+Segewaldweg	1 22364,3351 22367,3287 22342,3277 22338,3260 22305,3255 22297,3265 22306,3323 22316,3351 22335,3349
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2298,7 +2301,7 @@ Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21974,5
 Lindenstr.: Straßenbahnhaltestelle	3nocross 21974,5208 22023,5160 22033,5148 22078,5093
 # REMOVED (separate Straße nun) --- Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21129,4217 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
-Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
+Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18484,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16525,17253 16578,17285 16837,17440
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 18930,3703 18884,3752 18856,3783 18826,3816
@@ -2548,7 +2551,7 @@ tragen (6 Stufen)	0:10 4121,4841
 #: corrected_by: srt (added Aufzug)
 tragen (ca. 25 Stufen, Aufzug ist vorhanden)	0:30 6160,7074
 tragen (10 Stufen)	0:15 22862,6547
-tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15 22876,6598
+tragen (10 Stufen) oder sehr steile Rampe benutzen	0:15 22876,6598
 tragen (8 Stufen)	0:15 29521,4213
 tragen (8 Stufen)	0:15 29516,4223
 tragen (15 Stufen)	0:20 31362,2800
@@ -3318,8 +3321,8 @@ Drängelgitter	BNP:3::trailer=10 12391,2382
 Drängelgitter	BNP:3::trailer=10 12593,2472
 #: note: war am 2022-10-24 offen
 Drängelgitter	BNP:3::trailer=10 11373,1925
-Drängelgitter	BNP:5 15516,6357
-Drängelgitter	BNP:5 15496,6314
+# REMOVED (wurde 2023 oder davor durch Poller ersetzt, allerdings gibt's noch immer ein Drängelgitter auf dem Mittelstreifen) --- Drängelgitter	BNP:5 15516,6357
+# REMOVED (wurde 2023 oder davor durch Poller ersetzt) --- Drängelgitter	BNP:5 15496,6314
 Drängelgitter	BNP:5 15403,6145
 Drängelgitter	BNP:5 15393,6112
 Enges Drängelgitter	BNP:5::trailer=15 7887,24043
@@ -4238,7 +4241,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-25
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4246,7 +4249,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
-#: last_checked: 2023-06-21 vvv
+#: last_checked: 2023-06-25 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176

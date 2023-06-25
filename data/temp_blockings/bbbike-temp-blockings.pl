@@ -35742,6 +35742,8 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023) (inaktiv)
 #: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023) (inaktiv)
+#: source_id: viz2021:13.37721,52.51308,25.06.2023,06:00 (Ebertstr., bis 25.06.2023)
+
 # REMOVED --- #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße --- #: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
 	2::temp 8737,12098 8595,12066 8577,11896
@@ -36997,11 +36999,10 @@ EOF
 	q4::inwork 2641,12458 2658,12312
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-18 07:00:00"), # 1665291600, # 2022-10-09 07:00
-       until => $isodate2epoch->("2023-04-21 20:00:00"), # 1680442770, # entfernt, da kein Verbot erkennbar, zumindest am südlichen Ende --- $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
-       text  => 'Uhlandstr.: Sperrung der Fahrbahn zwischen Güntzelstr. und Fechnerstr., vom 19.04.2023 07:00 bis 21.04.2023 20:00',
+     { from  => $isodate2epoch->("2023-06-25 06:00:00"), # $isodate2epoch->("2023-04-18 07:00:00"), # 1665291600, # 2022-10-09 07:00
+       until => $isodate2epoch->("2023-06-29 10:00:00"), # $isodate2epoch->("2023-04-21 20:00:00"), # 1680442770, # entfernt, da kein Verbot erkennbar, zumindest am südlichen Ende --- $isodate2epoch->("2023-04-17 13:00:00"), # 1665770400, # 2022-10-14 20:00
+       text  => 'Uhlandstr.: Sperrung der Fahrbahn zwischen Güntzelstr. und Fechnerstr., vom 26.06.2023 06:00 bis 29.06.2023 10:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.322705,52.4884,10.10.2022,07:00', # inaktiv
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
 #: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
@@ -37010,6 +37011,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1643455922449289218#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMzeHZjQVhzQU1MNFVPLmpwZw==
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-charlottenburg-wilmersdorf.31/page-10#post-20412
+#: source_id: viz2021:13.322705,52.4884,10.10.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,23.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,24.02.2023,13:00 (Gegenverkehrsregelung bis 20.03.2023) (bis 23.3.2023) (inaktiv)
 #: source_id: viz2021:13.3226,52.48767,24.02.2023,13:00 (bis 17.04.2023) (inaktiv)
@@ -37017,6 +37019,7 @@ EOF
 #: source_id: viz2021:13.322778,52.489163,05.04.2023,06:00 ("Vollsperrung" bis 06.04.2023) (inaktiv)
 #: source_id: viz2021:13.322642,52.488455,06.04.2023,20:00 (für Radfahrer gesperrt, bis 21.04.2023) (bis 19.04.2023) (inaktiv)
 #: source_id: viz2021:13.322716,52.488699,19.04.2023,07:00 (bis 21.04.2023) (inaktiv)
+#: source_id: viz2021:13.322694,52.488608,26.06.2023,06:00 (bis 29.06.2023)
 	q4::inwork 4920,9000 4920,9029 4957,9437
 EOF
      },
@@ -37370,7 +37373,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-25
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37805,7 +37808,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-19
+#: last_checked: 2023-06-25
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -38651,6 +38654,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
+#: osm_watch: way id="1172668082" version="3"
 #: note: laut rbbtext bis 27.06.2023
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
 #: last_checked: 2023-06-19

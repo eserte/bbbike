@@ -956,6 +956,7 @@ Wildmeisterdamm	1 15207,2313 15143,2315
 Brixplatz	1 179,12434 269,12462 329,12503
 Schˆnflieﬂer Str.	1 3145,26256 3112,26253
 Bˆlschestr. [Kirchplatz]	1 25544,5326 25592,5322 25588,5235
+Segewaldweg	1 22364,3351 22367,3287 22342,3277 22338,3260 22305,3255 22297,3265 22306,3323 22316,3351 22335,3349
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Gˆrlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2306,9 +2307,9 @@ Bhf.str. -> Uferweg: Straﬂenbahntrasse	3::igndisp 22054,5360 21974,5255 22035,52
 Straﬂenbahnhaltestelle	3nocross::ignrte 21974,5208 22023,5160 22033,5148 22078,5093
 Bhf.str. -> Lindenstr.: Straﬂenbahnhaltestelle	3::igndisp 22035,5217 22023,5160 22033,5148
 Lindenstr. -> Bhf.str.: Straﬂenbahnhaltestelle	3::igndisp 21974,5208 22023,5160 22035,5217
-L‰rmschutzwand	3nocross::ignrte 18496,2471 18656,2465 18929,2454
+L‰rmschutzwand	3nocross::ignrte 18484,2471 18656,2465 18929,2454
 North-Willys-Str. -> Ernst-Ruska-Ufer: L‰rmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
-Ernst-Ruska-Ufer -> North-Willys-Str.: L‰rmschutzwand	3::igndisp 18496,2471 18656,2465 18644,2582
+Ernst-Ruska-Ufer -> North-Willys-Str.: L‰rmschutzwand	3::igndisp 18484,2471 18656,2465 18644,2582
 Straﬂenbahntrasse	3nocross::ignrte 14843,15007 14828,15050 14686,15608
 Straﬂenbahntrasse	3nocross::ignrte 16460,17214 16525,17253 16578,17285 16837,17440
 Hansastr. -> Neuzeller Weg: Straﬂenbahntrasse	3::igndisp 16837,17440 16578,17285 16658,17142
@@ -2633,7 +2634,7 @@ tragen (8 Stufen)	0:15:-210 9956,12617
 tragen (6 Stufen)	0:10:-211 4121,4841
 tragen (ca. 25 Stufen, Aufzug ist vorhanden)	0:30:-233 6160,7074
 tragen (10 Stufen)	0:15:-161 22862,6547
-tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15:-164 22876,6598
+tragen (10 Stufen) oder sehr steile Rampe benutzen	0:15:-164 22876,6598
 tragen (8 Stufen)	0:15:-210 29521,4213
 tragen (8 Stufen)	0:15:-206 29516,4223
 tragen (15 Stufen)	0:20:-21 31362,2800
@@ -3153,8 +3154,6 @@ Dr‰ngelgitter	BNP:3:64:trailer=10 12280,2330
 Dr‰ngelgitter	BNP:3:65:trailer=10 12391,2382
 Dr‰ngelgitter	BNP:3:65:trailer=10 12593,2472
 Dr‰ngelgitter	BNP:3:66:trailer=10 11373,1925
-Dr‰ngelgitter	BNP:5:22 15516,6357
-Dr‰ngelgitter	BNP:5:17 15496,6314
 Dr‰ngelgitter	BNP:5:22 15403,6145
 Dr‰ngelgitter	BNP:5:13 15393,6112
 Enges Dr‰ngelgitter	BNP:5:52:trailer=15 7887,24043

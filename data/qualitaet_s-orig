@@ -2717,7 +2717,7 @@ Fenchelweg: Beton	Q0- 15872,3888 15860,3838 15838,3754 15791,3686 15737,3609 156
 (Weg an der Teltowkanalautobahn): Asphalt	Q0 14164,5936 14308,5627 14388,5429 14544,5123 14703,4930 14802,4842 15768,4102 16518,3529 16797,3321
 (Weg an der Teltowkanalautobahn): Asphalt	Q0+ 16797,3321 17524,2765 17773,2621 18034,2526
 (Weg an der Teltowkanalautobahn - Stubenrauchstr., Rampe): Verbundsteinpflaster	Q0 16797,3321 16964,3210
-(Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18496,2471
+(Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18484,2471
 #: by: Erik Thon
 #: corrected_by: srt
 Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19723,4175
@@ -4483,7 +4483,7 @@ Nieberstr.: Asphalt	Q0 17879,4910 17792,4875 17760,4867
 Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817 18296,4850
 Sportfliegerstr.: Asphalt	Q0 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-Blériot-Str.: Asphalt	Q0 18341,4543 18239,4453
-Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18496,2471
+Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18484,2471
 Wagner-Régeny-Str.: Asphalt	Q0 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 19162,3935
 Georg-Schendel-Str.: Asphalt	Q0 19125,3491 19363,3730
 Hans-Schmidt-Str.: Asphalt	Q0 19667,3578 19585,3499 19449,3358 19348,3253
@@ -6121,7 +6121,7 @@ An der Nachtbucht: Verbundsteinpflaster	Q1 17889,1971 18052,2012
 Köpenicker Str.: Asphalt	Q0 17764,2032 17860,2061 17901,2075 18111,2135
 Köpenicker Str.: Asphalt mit Schäden	Q1 18111,2135 18209,2164 18320,2195
 Niederschlemaer Weg: grobes Verbundsteinpflaster	Q1- 18447,1727 18444,1782 18425,1831
-entlang der Teltowkanalautobahn: Asphalt	Q0 18496,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
+entlang der Teltowkanalautobahn: Asphalt	Q0 18484,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
 Hornkleepfad: unbefestigte Straße, Schotter	Q2 18750,1522 18786,1510 18830,1497
 Künnekeweg: Kopfsteinpflaster	Q2 18112,1235 18220,1278 18300,1306 18383,1334 18432,1352
 Ziehrerweg: Kopfsteinpflaster	Q2 18448,1159 18383,1334
@@ -20989,8 +20989,10 @@ Strindbergstr.: guter Asphalt	Q1 23962,13689 24119,13658 24295,13621
 Linderhofstr.: schlechtes Kopfsteinpflaster	Q3 24530,12757 24713,12655 24862,12579 24975,12518 25191,12343
 # 
 #: by: ant.schaefer: vvv
+#: corrected_by: mapillary (gutes Kopfsteinpflaster -> ...)
+Rotkäppchenstr.: unbefestigte Straße	Q2 22876,6598 22888,6712
 #: corrected_by: srt (gutes Kopfsteinpflaster -> Kopfsteinpflaster)
-Rotkäppchenstr.: Kopfsteinpflaster	Q2 22876,6598 22888,6712 22893,6835 22897,6879 22985,7007 23088,7143
+Rotkäppchenstr.: Kopfsteinpflaster	Q2 22888,6712 22893,6835 22897,6879 22985,7007 23088,7143
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Rotkäppchenstr.: Asphalt	Q0 23088,7143 23135,7198 23172,7236
 #: by: ^^^
@@ -22867,7 +22869,7 @@ Wilhelm-Gericke-Str.: Kopfsteinpflaster	Q2+ 5627,19940 5651,19953 5804,20047 591
 #: by: ^^^
 # 
 #: by: Hendrik Hammann:
-Segewaldweg: guter Asphalt	Q0 22742,3382 22638,3366 22553,3363 22468,3359 22356,3351
+Segewaldweg: guter Asphalt	Q0 22743,3377 22638,3366 22553,3363 22468,3359 22364,3351 22335,3349
 # 
 #: by: Marco (...-bet@...):
 #: corrected_by: srt (Q3 -> Q3+)
@@ -31428,6 +31430,8 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
+Segewaldweg: Verbundsteinpflaster	Q1 22335,3349 22316,3351 22306,3323 22297,3265 22305,3255 22338,3260 22342,3277 22367,3287 22364,3351
+Rotkäppchenstr.: unbefestigter Pfad	Q2 22876,6598 22862,6547
 (Pasewalker Str. - Vesaliusstr.): Asphalt mit einigen Schäden	Q1 11908,19255 11748,19235
 (Rampe S-Bhf. Buch): Verbundsteinpflaster	Q1 16044,25608 16077,25635 16065,25595 16071,25591
 (Wiltbergstr. - südlicher Bahnhofseingang S-Bhf. Buch): Beton	Q1 16220,25716 16071,25591

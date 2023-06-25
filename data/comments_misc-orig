@@ -123,7 +123,7 @@ Radfahren durch den Park erlaubt	CS 6534,1702 6673,1748 6844,1813
 #: by: Ingrid Beese:
 Teltower Weg: nicht ausgeschildert	CP2; -119,5885 -182,5927
 Röntgentaler Weg: durch den Schloßpark	CS 16166,25767 16222,25829 16532,26174
-(Autobahnzubringer): Fahrbahn ist Kraftfahrzeugstraße	CS 18034,2526 18247,2490 18496,2471
+(Autobahnzubringer): Fahrbahn ist Kraftfahrzeugstraße	CS 18034,2526 18247,2490 18484,2471
 #: by: Karin Millonig
 (In den Gärten - Hochspannungsweg): Privatweg	CS 11724,1629 11704,1692 11718,1771 11652,1959
 # REMOVED (es existieren keine Hinweise dazu mehr) --- Privatweg, Durchfahrt eigentlich verboten, aber möglich	CS 19735,11721 19830,11677 19881,11591
@@ -815,7 +815,7 @@ Lindenblütenstr.: Privatstraße	CS 21703,388 21671,509
 (Kleine Waldstr. - Waldstr.): Autobahnunterführung	CS 21531,-1819 21590,-1810
 (Adlergestell - Am Kanal): als "Adlergestell" ausgeschildert	CS 21041,2259 21050,2267 20946,2397
 Grasmückenweg: nur Anlieger frei	CS 14911,3568 14877,3475
-Zufahrt zur Rampe	CP2; 18496,2471 18452,2502
+Zufahrt zur Rampe	CP2; 18484,2471 18452,2502
 (Künnekeweg - Dankmarsteig): ausgeschildert als "zum Dankmarsteig"	CP2; 18432,1352 18556,1394
 Traberweg: hier nicht ausgeschildert	CP2; 17851,8662 17930,8567
 Rousseauweg: Privatstraße	CS 10267,20193 10286,20209 10310,20213 10327,20149 10282,20137
@@ -1363,7 +1363,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 (Enckestr. - Friedrichstr.): entlang taz-Gebäude und Besselpark	CS; 9666,10848 9537,10837
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2023-06-12
+#: last_checked: 2023-06-25
 #: check_frequency: 90d
 Mergenthalerring: nicht ausgeschildert	CP2; 14261,8851 14252,8829
 # 
@@ -1857,4 +1857,6 @@ Paul-und-Paula-Promenade: nicht ausgeschildert	CS 14886,10748 14984,10677
 #: XXX ^^^
 # 
 Rubensstr.: nicht ausgeschildert	CP2; 6307,7893 6429,7876
+# 
+Segewaldweg: Privatstraße	CS 22335,3349 22316,3351 22306,3323 22297,3265 22305,3255 22338,3260 22342,3277 22367,3287 22364,3351
 # 
