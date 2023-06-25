@@ -389,6 +389,21 @@ sub BBBikeGPS::draw_gpsman_data {
 	    }
 	    undef;
 	};
+	my $get_gestern_track = sub {
+	    for my $suffix (qw(trk gpx)) {
+		return "$gestern.$suffix" if -r "$gestern.suffix";
+	    }
+	    # private SRT hack
+	    require Time::Piece;
+	    my $f = "$ENV{HOME}/trash/Current.gpx";
+	    my @s = stat($f);
+	    if ($s[9]) {
+		my $yesterday = Time::Piece->new(time-86400)->ymd; # XXX may be wrong during DST switches!
+		my $filemtime = Time::Piece->new($s[9])->ymd;
+		return $f if $yesterday eq $filemtime;
+	    }
+	    undef;
+	};
 	$ff->Button(-text => M"Track heute",
 		    (!$get_heute_track->() ? (-state => "disabled") : ()),
 		    -command => sub { $file = $get_heute_track->();  
@@ -397,11 +412,8 @@ sub BBBikeGPS::draw_gpsman_data {
 				  }
 		   )->grid(-row => $row, -column => 0, -sticky => "ew");
 	$ff->Button(-text => M"Track gestern",
-		    (!-r "$gestern.trk" && !-r "$gestern.gpx" ? (-state => "disabled") : ()),
-		    -command => sub { $file = "$gestern.trk";
-				      if (!-r $file && -r "$gestern.gpx") {
-					  $file = "$gestern.gpx";
-				      }
+		    (!$get_gestern_track->() ? (-state => "disabled") : ()),
+		    -command => sub { $file = $get_gestern_track->();
 				      $gui_draw_gpsman_data_s = 1;
 				      $gui_draw_gpsman_data_p = 0;
 				  }
