@@ -373,9 +373,12 @@ EOF
 package StrassenGeoJSONMyManipulate;
 sub new { bless { }, shift }
 sub manipulate_feature {
-    my($self, $feature) = @_;
+    my($self, $feature, $r, $directives) = @_;
     $feature->{properties}->{is_manipulated} = 1;
     $feature->{properties}->{name} .= " - added something using manipulatemodule";
+    if ($directives->{by}) {
+        $feature->{properties}->{name} .= " - by $directives->{by}->[0]";
+    }
 }
 1;
 EOF
@@ -385,9 +388,10 @@ EOF
 #: map: polar
 #:
 Waypoint 1\tX 13.4,52.5
+#: by: me
 Waypoint 2\tX 13.5,52.6
 EOF
-    my $s = Strassen->new_from_data_string($test_manipulate_data);
+    my $s = Strassen->new_from_data_string($test_manipulate_data, UseLocalDirectives => 1);
     my $s_geojson = Strassen::GeoJSON->new($s);
     my $geojson = do {
         local @INC = ($tempmoddir, @INC);
@@ -422,7 +426,7 @@ EOF
          "properties" : {
             "cat" : "X",
             "is_manipulated" : 1,
-            "name" : "Waypoint 2 - added something using manipulatemodule"
+            "name" : "Waypoint 2 - added something using manipulatemodule - by me"
          },
          "type" : "Feature"
       }

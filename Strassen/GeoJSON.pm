@@ -205,7 +205,8 @@ sub bbd2geojson {
 
 	my $name = $r->[Strassen::NAME];
 	my $cat = $r->[Strassen::CAT];
-	my @urls = @{ $self->get_directives->{'url'} || [] };
+	my $directives = $self->get_directives;
+	my @urls = @{ $directives->{'url'} || [] };
 
 	my $geometry = (@c > 1
 			? ($cat =~ m{^F:}
@@ -232,7 +233,7 @@ sub bbd2geojson {
 		      };
 
 	if ($manipulate_object) {
-	    $manipulate_object->manipulate_feature($feature);
+	    $manipulate_object->manipulate_feature($feature, $r, $directives);
 	}
 
 	push @features, $feature;
