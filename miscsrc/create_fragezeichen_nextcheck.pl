@@ -193,6 +193,8 @@ sub handle_file {
 		     $cat = $r->[Strassen::CAT];
 		 } elsif ($r->[Strassen::CAT] =~ m{:(inwork|projected)}) {
 		     $cat = "?::$1";
+		 } elsif ($r->[Strassen::CAT] =~ m{^NL(:|$)}) { # nolighting entries (usually with "NL" category) -> ?::night
+		     $cat = "?::night";
 		 } else {
 		     $cat = '?';
 		 }
