@@ -12,7 +12,7 @@ use Strassen::GeoJSON;
 
 sub usage {
     die <<EOF;
-usage: $0 [-compact|-nocompact|-multiline] [-bbbgeojsonp] bbdfile
+usage: $0 [-compact|-nocompact|-multiline] [-bbbgeojsonp] [-combine [-combinemodule A::B::C]] [-manipulatemodule A::B::C] bbdfile
 EOF
 }
 
@@ -21,6 +21,7 @@ my $multiline = 0;
 my $utf8 = 0;
 my $combine;
 my $combinemodule;
+my $manipulatemodule;
 my $bbbgeojsonp;
 GetOptions(
 	   "compact"     => sub {
@@ -35,6 +36,7 @@ GetOptions(
 	   },
 	   "combine!"     => \$combine,
 	   "combinemodule=s" => \$combinemodule,
+	   "manipulatemodule=s" => \$manipulatemodule,
 	   "bbbgeojsonp!" => \$bbbgeojsonp,
 	  ) or usage();
 
@@ -45,7 +47,7 @@ if ($bbbgeojsonp) {
     print "// generated with bbd2geojson from BBBike distribution, see\n";
     print "// https://github.com/eserte/bbbike/blob/master/miscsrc/bbd2geojson\n";
 }
-print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => $pretty, utf8 => $utf8, multiline => $multiline, combine => $combine, combinemodule => $combinemodule);
+print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => $pretty, utf8 => $utf8, multiline => $multiline, combine => $combine, combinemodule => $combinemodule, manipulatemodule => $manipulatemodule);
 print "\n";
 
 __END__
@@ -56,7 +58,7 @@ bbd2geojson - convert BBD files to GeoJSON files
 
 =head1 SYNOPSIS
 
-    bbd2geojson [-compact|-nocompact|-multiline] [-combine [-combinemodule A::B::C]] [-bbbgeojsonp] bbdfile > output.geo.json
+    bbd2geojson [-compact|-nocompact|-multiline] [-combine [-combinemodule A::B::C]] [-manipulatemodule A::B::C] [-bbbgeojsonp] bbdfile > output.geo.json
 
 =head1 DESCRIPTION
 
@@ -87,6 +89,11 @@ the names (separated with a HTML C<< <br/> >>).
 =item C<-combinemodule I<module>>
 
 Use a custom module for combining features. See L</CUSTOM COMBINING>
+for more details.
+
+=item C<-manipulatemodule I<module>>
+
+Use a custom module for manipulating feature. See L</CUSTOM MANIPULATION>
 for more details.
 
 =item C<-bbbgeojsonp>
@@ -126,6 +133,29 @@ combines were already done in C<maybe_append>.
 Please see the source code of L<Strassen::GeoJSON> for a package named
 C<< Strassen::GeoJSON::CombineFeatureNames >> and the test file
 F<t/strassen-geojson.t> for sample implementations.
+
+=head2 CUSTOM MANIPULATION
+
+Manipulating a feature (e.g. its properties) may be done in a custom
+way using a module specified with the C<-manipulatemodule> option.
+This module should be implemented as a normal perl OO module with a
+constructor C<new> (which in this case usually just blesses an empty
+hash) and the following method:
+
+=over
+
+=item C<< manipulate_feature(I<$feature>, I<$bbd_record>, I<$bbd_directives>) >>
+
+The I<$feature> can be manipulated, e.g. fields in C<properties>
+added, changed or removed. The <$bbd_record> (a hash with name,
+category and coordinates, see L<Strassen::Core>) and
+C<$bbd_directives> (a HoA containing local directives for the current
+record) is also given. The return value is ignored.
+
+=back
+
+Please see the test file F<t/strassen-geojson.t> for a sample
+implementation.
 
 =head1 AUTHOR
 
