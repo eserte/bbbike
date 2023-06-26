@@ -391,7 +391,7 @@ sub BBBikeGPS::draw_gpsman_data {
 	};
 	my $get_gestern_track = sub {
 	    for my $suffix (qw(trk gpx)) {
-		return "$gestern.$suffix" if -r "$gestern.suffix";
+		return "$gestern.$suffix" if -r "$gestern.$suffix";
 	    }
 	    # private SRT hack
 	    require Time::Piece;
