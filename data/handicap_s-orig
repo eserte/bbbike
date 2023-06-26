@@ -34,9 +34,12 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 # 
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
+#: last_checked: 2023-06-26
+Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
+# 
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
-#: osm_watch: way id="936801541" version="4"
-#: osm_watch: way id="36987812" version="14"
+#: osm_watch: way id="936801541" version="5"
+#: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
 #: last_checked: 2023-05-30
 #: check_frequency: 90d
@@ -790,9 +793,18 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 # 
 ### Lichtenberg ###
 # 
+#: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023)
+#: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m
+#: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00
+#: note: Halteverbote bis 2023-07-14
+#: last_checked: 2023-06-26
+#: next_check: 2023-07-03
+#: valid: -20230714
+Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
+# 
 #: add_fragezeichen: Wann ist die Sperrung beendet?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-06-02
+#: last_checked: 2023-06-26
 Frankfurter Allee [Wohngebiet]: Bauarbeiten, Anbindung zur richtigen Frankfurter Allee unterbrochen, Bordsteine	q3::inwork 16190,11872 16214,11935
 # 
 # REMOVED (keine Einschränkung mehr) --- #: next_check_id: PARKAUE-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023 --- #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen --- #: also_indoor: traffic (ex-G) --- #: last_checked: 2023-06-16 --- #: check_frequency: 90d --- #: next_check: 2023-10-31 --- Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4+::inwork; 15535,12420 15457,12449
@@ -4603,6 +4615,8 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Schönholzer Heide, Germanenstr. - Friesenstr.): gemeinsamer Geh- und Radweg	q1 8348,19304 8405,19336 8484,19401
 # 
 (Vorfahrt Neues-Deutschland-Gebäude): einige Fußgänger	q2+ 12788,11898 12891,12008
+# 
+(Hans-Schmidt-Str. - Merlitzstr.): einige Fußgänger	q2 19667,3578 19746,3501
 # 
 ######################### User Contributions #################################
 # 

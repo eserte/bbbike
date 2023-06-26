@@ -3954,7 +3954,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://aera.berlin/
+# REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
+#: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
+#: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
+#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
+#: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023)
+#: last_checked: 2022-09-16
+#: check_frequency: 90d
+#: next_check: 2023-06-26
+# REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
+	q3::inwork 3828,12697 3981,12709 4071,12720 4124,12721
+',
+         'from' => 1687804758,
+         'id' => 2961,
+         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn möglicherweise gesperrt, voraussichtlich bis Ende 2023',
+         'type' => 'handicap',
+         'until' => 1704063599
+       },
        undef,
        undef,
        undef,
@@ -5738,24 +5756,7 @@ Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023) (inaktiv)
-#: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023) (inaktiv)
-#: source_id: viz2021:13.37721,52.51308,25.06.2023,06:00 (Ebertstr., bis 25.06.2023)
-
-# REMOVED --- #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße --- #: next_check: 2023-06-24
-	2::temp 8743,12099 8861,12125
-	2::temp 8737,12098 8595,12066 8577,11896
-# REMOVED (hier nicht) --- Hannah-Arendt-Straße	2::temp 8577,11896 8783,11959 8844,11984 8901,12008
-# REMOVED (hier nicht) --- Cora-Berliner-Straße	2::temp 8737,12098 8783,11959
-',
-         'from' => 1687579200,
-         'id' => 3566,
-         'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
-         'text' => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, am 25.06.2023, ca. 06:00 Uhr bis 23:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1687726800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: FISCHERINSEL-2023
@@ -6633,7 +6634,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-06-10
+#: last_checked: 2023-06-25 (mapillary)
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -6981,7 +6982,7 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2023-06-08 vvv
+         'data' => '#: last_checked: 2023-06-26 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX möglicherweise Asphaltierung?
@@ -7355,8 +7356,6 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023)
-#: osm_watch: way id="688087510" version="11"
-#: osm_watch: way id="844709935" version="16"
 	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
 ',
@@ -7591,18 +7590,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'until' => 1761951600
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
-#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv) (bis 25.06.2023)
-#: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
-	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
-',
-         'from' => 1686715200,
-         'id' => 3822,
-         'text' => 'Schirwindter Allee, Passenheimer Str., Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
-         'type' => 'gesperrt',
-         'until' => 1687723200
-       },
+       undef,
        {
          'data' => '	2::inwork 54260,-2960 54095,-3250
 ',
@@ -7732,6 +7720,16 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'text' => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2024 17:00',
          'type' => 'handicap',
          'until' => 1735686000
+       },
+       {
+         'data' => '	q4::inwork 3144,11659 3064,11657
+',
+         'from' => 1687644000,
+         'id' => 3835,
+         'source_id' => 'viz2021:13.29609,52.51176,26.06.2023,00:00',
+         'text' => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2023 00:00 bis 11.07.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1689112740
        }
      
 );

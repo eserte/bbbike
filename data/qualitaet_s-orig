@@ -298,7 +298,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 # REMOVED --- #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-06-10
+#: last_checked: 2023-06-26
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -2286,7 +2286,7 @@ Am Teltowkanal: feiner Schotter	Q1 3261,835 3232,803
 Am Teltowkanal: Asphalt	Q0 3381,1022 3424,1052 3635,1215 3710,1317 3766,1389
 Akeleiweg: Asphalt	Q0 17894,2783 17631,3200
 # REMOVED (wurde asphaltiert) --- #: next_check_id: AKELEIWEG-2021 --- #: XXX bleibt der Kopfsteinpflasterabschnitt nach den Bauarbeiten? --- #: last_checked: 2020-08-06 --- #: next_check: 2021-07-31
-Akeleiweg: Asphalt	Q0 17631,3200 17603,3240
+Akeleiweg: Asphalt	Q0 17631,3200 17612,3227 17603,3240
 Akeleiweg: Asphalt	Q0 17603,3240 17377,3571
 # REMOVED (vollständig asphaltiert) --- Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
 # REMOVED (ja) --- #: next_check_id: WINCKELMANN-2021 --- #: XXX werden die Betonplatten durch Asphalt ersetzt? --- #: priority: #C --- #: next_check: 2021-07-05
@@ -23666,7 +23666,8 @@ Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
 # REMOVED (früher) --- #: corrected_by: srt: (Q3 -> Q2-) --- Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2- 17554,8458 17584,8413 17617,8363 17652,8349 17707,8328 17753,8290 17793,8225 17856,8162
 Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17584,8413
 Hönower Wiesenweg: Asphalt, Deckschicht abgefräst	Q1- 17584,8413 17617,8363 17652,8349 17707,8328 17753,8290
-Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17753,8290 17793,8225 17856,8162
+#: corrected_by: srt (früher (bis Juni 2023) Kopfsteinpflaster und Sandweg mit Schlaglöchern, Q2 -> ..., neu gemacht)
+Hönower Wiesenweg: Asphalt	Q0 17753,8290 17793,8225 17856,8162
 #: by: ^^^
 # 
 #: by: martin (noisee)
@@ -31430,6 +31431,9 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
+(Eisenhutweg - Akeleiweg): unbefestigter Weg	Q2 17454,3096 17513,3158
+(Eisenhutweg - Akeleiweg): unbefestigte Straße	Q2 17513,3158 17612,3227
+(Hans-Schmidt-Str. - Merlitzstr.): Betonpflaster	Q0- 19667,3578 19746,3501
 Segewaldweg: Verbundsteinpflaster	Q1 22335,3349 22316,3351 22306,3323 22297,3265 22305,3255 22338,3260 22342,3277 22367,3287 22364,3351
 Rotkäppchenstr.: unbefestigter Pfad	Q2 22876,6598 22862,6547
 (Pasewalker Str. - Vesaliusstr.): Asphalt mit einigen Schäden	Q1 11908,19255 11748,19235

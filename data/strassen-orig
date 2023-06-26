@@ -1844,7 +1844,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: osm_watch: way id="977556359" version="10"
+#: osm_watch: way id="977556359" version="11"
 #: last_checked: 2023-06-22
 #: check_frequency: 90d
 #: osm.highway: service
@@ -2659,6 +2659,7 @@ Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 1916
 Wagner-Régeny-Allee	N 19162,3935 19130,3969 18596,4517 18487,4638 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 (Gleislinse - Hans-Schmidt-Str.)	NN 19242,4077 19219,4023
+(Hans-Schmidt-Str. - Merlitzstr.)	NN 19667,3578 19746,3501
 # REMOVED --- #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch --- #: last_checked: 2020-07-31 --- #: check_frequency: 120d --- #: next_check: 2019-11-19
 Gustav-Hertz-Platz	N 18674,4585 18685,4595 18722,4628
 Gustav-Hertz-Platz	NN 18722,4628 18656,4687 18649,4678 18685,4595
@@ -6080,7 +6081,10 @@ Nieberstr.	N 18029,5009 17959,4955 17879,4910 17792,4875 17760,4867
 (Weg im Johannisthaler Park)	NN 17760,4867 17659,4849 17580,4761
 Pilotenstr.	N 18117,4895 18031,4831 17951,4785 17868,4742 17820,4729
 Engelhardstr.	N 17774,4966 17792,4875 17820,4729 17865,4534
-Akeleiweg	N 17894,2783 17631,3200 17603,3240 17377,3571
+Akeleiweg	N 17894,2783 17631,3200 17612,3227 17603,3240 17377,3571
+(Eisenhutweg - Akeleiweg)	NN 17454,3096 17513,3158
+#: osm.highway: service
+(Eisenhutweg - Akeleiweg)	N 17513,3158 17612,3227
 Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,4068 17628,4164 17659,4205 17713,4278 17748,4349 17794,4443 17877,4525 18042,4667
 #: XXX evtl. Benennung in Alois-Kloecker-Str. --- abgelehnt --- welchen Namen bekommt sie dann?
 #: XXX im Amtsblatt 35/2002 wurden einige Namen für das Gebiet vorgeschlagen, die noch keine Verwendung haben: Bölkowstr., Carl-Julius-Vogel-Str., Gorissenstr., Helmut-Brenner-Str., Lotte-Loebinger-Str., Wolfgang-Liebe-Str.
@@ -6210,7 +6214,7 @@ Arthur-Müller-Str.	N 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 1819
 Hugo-Junkers-Str.	N 18156,2912 18007,3066 17890,3204
 #: note: Die richtige Schreibweise ist "Fokkerstr.", und es gibt tatsächlich ein Schild, wo es so geschrieben ist, auf allen anderen steht fälschlicherweise "Fokker-Str."
 Fokkerstr.	N 18057,3117 18007,3066 17910,3004
-Eisenhutweg	H 18445,2642 18338,2669 18164,2712 18017,2751 17894,2783 17850,2795 17741,2824 17525,3029 17274,3267 17194,3343 17142,3393
+Eisenhutweg	H 18445,2642 18338,2669 18164,2712 18017,2751 17894,2783 17850,2795 17741,2824 17525,3029 17454,3096 17274,3267 17194,3343 17142,3393
 Johannes-Sasse-Ring	N 17274,3267 17206,3189 17146,3125 17199,3082 17412,2908 17465,2964 17525,3029
 Johannes-Sasse-Ring	N 17206,3189 17465,2964
 Stubenrauchstr. (Rudow, Johannisthal)	H 17490,3630 17431,3599 17377,3571 17364,3565 17253,3496 17142,3393 16991,3241 16964,3210 16952,3197 16929,3172 16891,3129 16831,3049 16786,2989 16677,2856 16635,2796 16573,2715 16547,2680 16475,2586 16461,2569 16382,2464 16306,2364 16242,2279 16182,2200 16135,2135
@@ -14152,9 +14156,10 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED --- #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt --- Bergiusstr.	H 14051,6731 14106,6663
 # REMOVED --- #: valid: 20140224-20230630 --- Bergiusstr.	H 14106,6663 14150,6609
 # REMOVED --- #: valid: !20140224-20230630 --- Bergiusstr.	N 14106,6663 14150,6609
+#: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 06.07.2023)
 #: last_checked: 2023-04-27 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-06-30 vvv
+#: next_check: 2023-07-06 vvv
 Bergiusstr.	NN 14137,6658 14150,6609 14193,6556
 #: next_check ^^^
 #: check_frequency ^^^

@@ -1464,7 +1464,7 @@ EOF
        text  => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 17894,2783 17631,3200 17603,3240 17377,3571
+	q4; 17894,2783 17631,3200 17612,3227 17603,3240 17377,3571
 EOF
      },
      { from  => 1102538190, # 2004-12-08 21:36
@@ -17465,7 +17465,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014849',
        data  => <<EOF,
-	q4::inwork; 17142,3393 17194,3343 17274,3267 17525,3029 17741,2824 17850,2795 17894,2783
+	q4::inwork; 17142,3393 17194,3343 17274,3267 17454,3096 17525,3029 17741,2824 17850,2795 17894,2783
 EOF
      },
      { from  => 1260745200, # 2009-12-14 00:00
@@ -27892,9 +27892,9 @@ EOF
 	q2::inwork 20354,11500 20521,11494
 EOF
      },
-     { from  => 1644676199, # 1527186848, # 2018-05-24 20:34
-       until => $isodate2epoch->("2023-04-14 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, voraussichtlich bis Mitte April 2023',
+     { from  => 1687804758, # 1644676199, # 1527186848, # 2018-05-24 20:34
+       until => $isodate2epoch->("2023-12-31 23:59:59"), # $isodate2epoch->("2023-04-14 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
+       text  => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn möglicherweise gesperrt, voraussichtlich bis Ende 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://aera.berlin/
@@ -27902,9 +27902,10 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
+#: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023)
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
-#: next_check: 2023-04-14
+#: next_check: 2023-06-26
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
 	q3::inwork 3828,12697 3981,12709 4071,12720 4124,12721
 EOF
@@ -31862,7 +31863,7 @@ EOF
 #: next_check_id: AKELEIWEG-2021
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1032696.php (2. Bauabschnitt)
 #: by: https://www.berliner-woche.de/johannisthal/c-bauen/weitere-arbeiten-im-akeleiweg_a297056
-	q4::inwork 17603,3240 17631,3200
+	q4::inwork 17603,3240 17612,3227 17631,3200
 	q3::inwork 17631,3200 17894,2783
 EOF
      },
@@ -35742,7 +35743,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.37737,52.51457,17.06.2023,06:00 (Behrenstr., bis 18.06.2023) (inaktiv)
 #: source_id: viz2021:13.37721,52.51308,17.06.2023,06:00 (Ebertstr., bis 18.06.2023) (inaktiv)
-#: source_id: viz2021:13.37721,52.51308,25.06.2023,06:00 (Ebertstr., bis 25.06.2023)
+#: source_id: viz2021:13.37721,52.51308,25.06.2023,06:00 (Ebertstr., bis 25.06.2023) (inaktiv)
 
 # REMOVED --- #: XXX 17.06.2023 06:00 - 18.06.2023, ca. 23:00 Uhr sowie 25.06.2023 06:00 - ca. 23:00 Uhr: Ebertstraße bis zur Hannah-Arendt-Straße + Behrenstraße zwischen Cora-Berliner-Straße und Ebertstraße --- #: next_check: 2023-06-24
 	2::temp 8743,12099 8861,12125
@@ -37796,7 +37797,7 @@ EOF
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-06-10
+#: last_checked: 2023-06-25 (mapillary)
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
@@ -38449,7 +38450,7 @@ EOF
        text  => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023, evtl. länger',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2023-06-08 vvv
+#: last_checked: 2023-06-26 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX möglicherweise Asphaltierung?
@@ -39008,8 +39009,6 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023)
-#: osm_watch: way id="688087510" version="11"
-#: osm_watch: way id="844709935" version="16"
 	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
 EOF
@@ -39260,8 +39259,8 @@ EOF
        text  => 'Schirwindter Allee, Passenheimer Str., Glockenturmstr.: wegen Sportveranstaltung gesperrt, evtl. sind auch Radfahrer betroffen, vom 15.06.2023 06:00 bis 25.06.2023 22:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023)
-#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv) (bis 25.06.2023)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,06:00 (bis 25.06.2023) (inaktiv)
+#: source_id: viz2021:13.228423,52.508685,15.06.2023,00:00 (bis 25.06.2023) (inaktiv) (bis 25.06.2023) (inaktiv)
 #: note: laut rbb nur zwischn 06:00 und 22:00 Uhr
 	2::temp -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803 -1382,11736 -1375,11555 -1368,11525 -1427,11491 -1471,11416 -1505,11307 -1515,11278 -1536,11176
 EOF
@@ -39392,6 +39391,15 @@ EOF
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
 #: XXX wie groß sind die Einschränkungen hier?
 	q2::inwork 3267,18767 3008,18464
+EOF
+     },
+     { from  => 1687644000, # 2023-06-25 00:00
+       until => 1689112740, # 2023-07-11 23:59
+       text  => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2023 00:00 bis 11.07.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.29609,52.51176,26.06.2023,00:00',
+       data  => <<EOF,
+	q4::inwork 3144,11659 3064,11657
 EOF
      },
     );

@@ -2084,7 +2084,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-06-10 vvv
+#: last_checked: 2023-06-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -4520,7 +4520,8 @@ vorhandener Radweg ist abgesperrt, sehr eng	RW0; 13566,5792 13394,5754
 gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14150,6609
 #: next_check_id: GRENZALLEE-2014
 #: last_checked: 2023-05-30
-#: next_check_id: 2023-06-30
+#: check_frequency: 60d
+# REMOVED --- #: next_check_id: 2023-06-30
 provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14150,6609 14137,6658 14179,6714 14179,6743 14139,6786
 # REMOVED --- gemeinsamer Geh- und Radweg	RW2;RW8 14150,6609 14106,6663 14051,6731
 #: by: osm:
@@ -6561,7 +6562,7 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 	RW6;RW6 3653,2127 3655,2210
 	RW6;RW6 3581,2125 3653,2127
 	RW1; 5584,475 5486,461 5448,455 5061,409
-Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2795
+Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
 #: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022) (wurde ersetzt)
 #: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau") (4. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 4. Quartal 2023)
@@ -7640,7 +7641,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2023-06-10 vvv
+#: last_checked: 2023-06-25 (mapillary) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
