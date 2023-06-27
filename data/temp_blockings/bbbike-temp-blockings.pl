@@ -14006,6 +14006,7 @@ EOF
        text  => 'Anwohner haben den Uferweg am Griebnitzsee versperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.stadtrand-nachrichten.de/griebnitzsee-steglitz-zehlendorf-berlin/
 	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9116,-737 -9254,-656 -9358,-537 -9375,-502 -9445,-377 -9585,-277 -9795,-230
 	2::temp -8084,-1460 -8133,-1474 -8260,-1461
 EOF
@@ -15694,14 +15695,14 @@ EOF
 EOF
      },
      { from  => undef, #
-       until => undef, #
+       until => $isodate2epoch->("2023-06-28 19:00:00"),
        text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich; außerdem Mi 15.00-19.00 Uhr temporäre Spielstraße, vom 31. Mai bis zum 28. Juni 2023',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: tempex: (tu,fr) T08-T13
 #: XXX temporäre Spielstraße wieder austragen bzw. auf http://spielstraßen.de/uebersicht.php überprüfen, ob es nach den Sommerferien 2023 eine Fortsetzung geben wird
-#: next_check: 2023-06-28
+#: next_check: 2023-08-19
 	q4::temp:clock 3374,10201 3359,9968 3348,9806
 EOF
      },
@@ -29736,12 +29737,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
-       until => $isodate2epoch->("2023-06-29 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 29.06.2023',
+       until => $isodate2epoch->("2023-07-28 18:00:00"),
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 28.07.2023',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!) (inaktiv)
        data  => <<EOF,
-#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023) (bis 29.06.2023)
+#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023) (bis 29.06.2023) (bis 28.07.2023)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
@@ -29751,7 +29752,7 @@ EOF
 #: osm_watch: way id="1006570991" version="1"
 #: last_checked: 2023-06-24 (sieht mittlerweile recht fertig aus)
 #: check_frequency: 90d
-#: next_check: 2023-06-29
+#: next_check: 2023-07-28
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
 	q3::inwork 9178,16317 9301,16439
 Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,16398
@@ -35441,8 +35442,8 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2023-07-11 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: kan wegen Bauarbeiten gesperrt sein, voraussichtlich bis 11.7.2023',
+       until => $isodate2epoch->("2023-08-01 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr.: kan wegen Bauarbeiten gesperrt sein, voraussichtlich bis 1.8.2023',
        #text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
@@ -35452,8 +35453,8 @@ EOF
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 30.06.2023)
 #: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 30.06.2023) (bis 01.08.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -35466,7 +35467,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
 #: last_checked: 2023-06-19 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-07-11 vvv
+#: next_check: 2023-08-01 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
@@ -35681,10 +35682,10 @@ EOF
 #: source_id: viz2021:13.36452,52.515396,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
 #: source_id: viz2021:13.370292,52.516745,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
 #: source_id: viz2021:13.37688,52.51775,09.06.2023,06:00 (Scheidemannstr., bis 28.06.2023)
-#: source_id: viz2021:13.37081,52.51779,11.06.2023,06:00 (Heinrich-von-Gagern-Str., bis 26.06.2023)
-#: source_id: viz2021:13.3546,52.51713,11.06.2023,06:00 (John-Foster-Dulles-Allee, bis 26.06.2023)
+#: source_id: viz2021:13.37081,52.51779,11.06.2023,06:00 (Heinrich-von-Gagern-Str., bis 26.06.2023) (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,11.06.2023,06:00 (John-Foster-Dulles-Allee, bis 26.06.2023) (inaktiv)
 #: source_id: viz2021:13.35095,52.51487,11.06.2023,06:00 (Spreeweg, bis 26.06.2023) (wurde ersetzt, inaktiv)
-#: source_id: viz2021:13.350711,52.51499,11.06.2023,06:00 (Spreeweg, bis 26.06.2023)
+#: source_id: viz2021:13.350711,52.51499,11.06.2023,06:00 (Spreeweg, bis 26.06.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/06/sons-2022/
 #: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
 #: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
@@ -37319,7 +37320,7 @@ EOF
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
-#: next_check: 2023-06-27
+#: next_check: 2023-06-29
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
 mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
@@ -38649,17 +38650,17 @@ EOF
 EOF
      },
      { from  => 1682892000, # 2023-05-01 00:00
-       until => $isodate2epoch->("2023-06-27 18:00:00"), # 1688162399, # 2023-06-30 23:59
-       text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., vom 2. Mai bis Ende Juni 2023',
+       until => $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
+       text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis 08.07.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: osm_watch: way id="1172668082" version="3"
-#: note: laut rbbtext bis 27.06.2023
+#: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
 #: last_checked: 2023-06-19
-#: next_check: 2023-06-27
+#: next_check: 2023-07-08
 	q4::inwork 20159,3623 20073,3734
 EOF
      },
@@ -38738,7 +38739,7 @@ EOF
        until => 1687838400, # 2023-06-27 06:00
        text  => 'Guben, Bahnübergang Kupferhammerstr.: Sperrung vom 23.06.2023 - 20:00 Uhr bis 27.06.2023 - 06:00 Uhr',
        type  => 'gesperrt',
-       source_id => '237120046',
+       source_id => '237120046', # inaktiv
        data  => <<EOF,
 	2::inwork 99825,-46697 99765,-46542 99770,-46280
 EOF
