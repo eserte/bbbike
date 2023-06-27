@@ -20,8 +20,7 @@ use Doit::Util qw(copy_stat);
 use Cwd qw(cwd realpath);
 use Getopt::Long;
 use Template;
-
-use BBBikeVar;
+use URI::Escape qw(uri_escape);
 
 my $dest_dir;
 my %c;
@@ -40,47 +39,54 @@ sub _need_rebuild ($@) {
 }
 
 sub compute_config {
-    my($d) = @_;
+    my($doit, $target_doit, %opts) = @_;
 
-    $c{SCOPES} = [qw(brb b inner-b wide p)];
-    $c{LOCAL_BBBIKE_DIR} = realpath(cwd . "/../..");
+    # configurable
+    $c{LOCATION_STYLE}           = delete $opts{LOCATION_STYLE} // 'bbbike'; # or 'vhost'
+    $c{HOST}                     = delete $opts{HOST} // 'localhost'; # XXX needs to be determined by bbbike.cgi.config or so
+    $c{LOCAL_BBBIKE_DIR}         = delete $opts{LOCAL_BBBIKE_DIR} // realpath(cwd . "/../..");
+    $c{BBBIKE_DIR}               = delete $opts{BBBIKE_DIR} // $c{LOCAL_BBBIKE_DIR};
+    $c{HTDOCS_DIR}               = delete $opts{HTDOCS_DIR} // $c{BBBIKE_DIR};
+    die "Unhandled options: " . join(' ', %opts) if %opts;
+
+    # static
+    $c{SCOPES}                   = [qw(brb b inner-b wide p)];
     # computed config
-    $c{BBBIKE_DATA_DIR}  = "$c{LOCAL_BBBIKE_DIR}/data";
-    $c{BBBIKE_MISCSRC_DIR} = "$c{LOCAL_BBBIKE_DIR}/miscsrc";
-    $c{MAPSERVER_DIR}    = "$c{LOCAL_BBBIKE_DIR}/mapserver/brb";
-    $c{MAPSERVER_RELURL} = '/bbbike/mapserver/brb'; # XXX on live system /mapserver/brb; needs to be determined using bbbike cgi config or so
-    $c{HOST}             = 'localhost'; # XXX needs to be determined by bbbike.cgi.config or so
-    $c{MAPSERVER_URL}    = "http://$c{HOST}$c{MAPSERVER_RELURL}";
-#	--define MAPSERVER_PROG_RELURL="$(MAPSERVER_PROG_RELURL)" \
-#	--define MAPSERVER_PROG_URL="$(MAPSERVER_PROG_URL)" \
+    $c{LOCAL_BBBIKE_DATA_DIR}    = "$c{LOCAL_BBBIKE_DIR}/data";
+    $c{LOCAL_BBBIKE_MISCSRC_DIR} = "$c{LOCAL_BBBIKE_DIR}/miscsrc";
+    $c{MAPSERVER_DIR}            = "$c{HTDOCS_DIR}/mapserver/brb";
+    $c{MAPSERVER_RELURL}         = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/mapserver/brb' : '/mapserver/brb';
+    $c{MAPSERVER_URL}            = "http://$c{HOST}$c{MAPSERVER_RELURL}";
+    $c{MAPSERVER_PROG_RELURL}    =	'/cgi-bin/mapserv';
+    $c{MAPSERVER_PROG_URL}       = "http://$c{HOST}$c{MAPSERVER_PROG_RELURL}";
 #	--define MAPSERVER_PROG_FSPATH="$(MAPSERVER_PROG_FSPATH)"
-    $c{MAPSERVER_VERSION} = get_mapserver_version($d);
-    $c{MAPSERVER_DRIVER}  = get_mapserver_driver($d);
-    $c{IMAGE_DIR}         = "$c{LOCAL_BBBIKE_DIR}/images";
-    $c{BBBIKE_HTML_RELURL} = "/bbbike/html"; # XXX on live system different; needs to be determined using bbbike cgi config or so
-#	--define BBBIKE_URL="$(BBBIKE_URL)" \
-#	--define BBBIKE_RELURL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_RELURL)` \
-#	--define BBBIKE_URL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_URL)`
-    $c{BBBIKE_CGI_RELURL} = '/bbbike/cgi'; # XXX on live system different; needs to be determined using bbbike cgi config or so
-    $c{BBBIKE_RELURL}     = "$c{BBBIKE_CGI_RELURL}/bbbike.cgi";
-    $c{BBBIKE_IMAGES_RELURL} = "/bbbike/images"; # XXX on live system different; needs to be determined using bbbike cgi config or so
-#	--define BBBIKE_MISCSRC_DIR="$(BBBIKE_MISCSRC_DIR)"
-    $c{IMAGE_SUFFIX} = 'png';
-    $c{FONTS_LIST} = $^O eq 'freebsd' ? 'fonts-freebsd.list' : 'fonts-debian.list';
+    $c{MAPSERVER_VERSION}        = get_mapserver_version($target_doit);
+    $c{MAPSERVER_DRIVER}         = get_mapserver_driver($target_doit);
+    $c{IMAGE_DIR}                = "$c{BBBIKE_DIR}/images";
+    $c{BBBIKE_HTML_RELURL}       = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/html' : '/BBBike/html';
+    $c{BBBIKE_CGI_RELURL}        = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/cgi' : '/cgi-bin';
+    $c{BBBIKE_RELURL}            = "$c{BBBIKE_CGI_RELURL}/bbbike.cgi";
+    $c{BBBIKE_URL}               = "http://$c{HOST}$c{BBBIKE_RELURL}";
+    $c{BBBIKE_RELURL_ENC}        = uri_escape($c{BBBIKE_RELURL});
+    $c{BBBIKE_URL_ENC}           = uri_escape($c{BBBIKE_URL});
+    $c{BBBIKE_IMAGES_RELURL}     = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/images' : '/BBBike/images';
+    $c{IMAGE_SUFFIX}             = 'png';
+    $c{FONTS_LIST}               = $^O eq 'freebsd' ? 'fonts-freebsd.list' : 'fonts-debian.list';
 #	--define WWW_USER="$(WWW_USER)" \
-#	--define ALL_LAYERS="$(ALL_LAYERS)" \
-#	--define EMAIL="$(EMAIL)" \
-#	--define BBBIKE_SF_WWW="$(BBBIKE_SF_WWW)"
-    $c{IMGWIDTH}   = 550;
-    $c{IMGHEIGHT}  = 550;
-    $c{IMAGECOLOR} = '225 225 225';
-    $c{EDITWARNHTML} = "<!-- DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl -->";
-#	--define EDITWARNJS="/* DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} */"
-    $c{EDITWARNMAP} = "## DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl";
+    $c{IMGWIDTH}                 = 550;
+    $c{IMGHEIGHT}                = 550;
+    $c{IMAGECOLOR}               = '225 225 225';
+    $c{EDITWARNHTML}             = "<!-- DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl -->";
+    $c{EDITWARNJS}               = "/* DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl */";
+    $c{EDITWARNMAP}              = "## DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl";
 #	--define SMALLDEVICE=0 \
 #	--define SCOPES_STRING="$(SCOPES)" \
 
-    # from BBBikeVar.pm
+    require BBBikeMapserver;
+    $c{ALL_LAYERS} = join ' ', BBBikeMapserver::all_layers();
+
+    require BBBikeVar;
+    no warnings 'once';
     $c{BBBIKE_MAPSERVER_URL}    = $BBBike::BBBIKE_MAPSERVER_URL;
     $c{BBBIKE_MAPSERVER_DIRECT} = $BBBike::BBBIKE_MAPSERVER_DIRECT;
     $c{BBBIKE_SF_WWW}           = $BBBike::BBBIKE_SF_WWW;
@@ -150,27 +156,30 @@ sub action_map_file {
 
 sub action_html_files {
     my($d) = @_;
-    my @html_files = qw(brb.html brb_init.html brb.js help.html query_header.html query_footer.html);
+    my @html_files = qw(brb.html brb_init.html brb.js help.html query_header.html query_footer.html radroute_header.html radroute_footer.html);
     for my $html_file (@html_files) {
 	my $src = "$html_file-tpl";
 	my $dest = "$dest_dir/$html_file";
 	if (_need_rebuild($dest, $src)) {
-	    run_tt($d, $src, $dest, { %c, EDITWARNHTML => "<!-- DO NOT EDIT. Created automatically from $src -->" });
+	    run_tt($d, $src, $dest, { %c,
+				      EDITWARNHTML => "<!-- DO NOT EDIT. Created automatically from $src -->",
+				      EDITWARNJS   => "/* DO NOT EDIT. Created automatically from $src */",
+				    });
 	}
     }
 
     $d->ln_nsf("brb_init.html", "$dest_dir/index.html");
 
-    if (_need_rebuild("$dest_dir/radroute_body.html", "$c{BBBIKE_DATA_DIR}/comments_route-orig", "$c{BBBIKE_MISCSRC_DIR}/bbd2mapservhtml.pl", "$c{BBBIKE_MISCSRC_DIR}/grepstrassen")) {
+    if (_need_rebuild("$dest_dir/radroute_body.html", "$c{LOCAL_BBBIKE_DATA_DIR}/comments_route-orig", "$c{LOCAL_BBBIKE_MISCSRC_DIR}/bbd2mapservhtml.pl", "$c{LOCAL_BBBIKE_MISCSRC_DIR}/grepstrassen")) {
 	$d->file_atomic_write("$dest_dir/radroute_body.html", sub {
 				  my(undef, $file) = @_;
 				  $d->system(<<"EOF" . <<'EOF' . <<"EOF");
-$c{BBBIKE_MISCSRC_DIR}/grepstrassen -v -directive 'ignore=' $c{BBBIKE_DATA_DIR}/comments_route-orig |\\
-    $c{BBBIKE_MISCSRC_DIR}/grepstrassen -v -directive 'ignore_routelist=' |\\
+$c{LOCAL_BBBIKE_MISCSRC_DIR}/grepstrassen -v -directive 'ignore=' $c{LOCAL_BBBIKE_DATA_DIR}/comments_route-orig |\\
+    $c{LOCAL_BBBIKE_MISCSRC_DIR}/grepstrassen -v -directive 'ignore_routelist=' |\\
 EOF
     perl -pe 's{(Flaeming-Skate)\s+\(.*\)\t}{$$1\t}' |\
 EOF
-    $c{BBBIKE_MISCSRC_DIR}/bbd2mapservhtml.pl \\
+    $c{LOCAL_BBBIKE_MISCSRC_DIR}/bbd2mapservhtml.pl \\
 	-bbbikeurl $c{BBBIKE_CGI_RELURL}/bbbike.cgi \\
 	-email $c{EMAIL} \\
 	-linklist -preferalias -partialhtml \\
@@ -184,10 +193,10 @@ EOF
 			      });
     }
 
-    if (_need_rebuild("$dest_dir/radroute.html", "$FindBin::RealBin/radroute_header.html", "$dest_dir/radroute_body.html", "$FindBin::RealBin/radroute_footer.html")) {
+    if (_need_rebuild("$dest_dir/radroute.html", "$dest_dir/radroute_header.html", "$dest_dir/radroute_body.html", "$dest_dir/radroute_footer.html")) {
 	$d->file_atomic_write("$dest_dir/radroute.html", sub {
 				  my(undef, $file) = @_;
-				  $d->system("cat $FindBin::RealBin/radroute_header.html $dest_dir/radroute_body.html $FindBin::RealBin/radroute_footer.html > $file");
+				  $d->system("cat $dest_dir/radroute_header.html $dest_dir/radroute_body.html $dest_dir/radroute_footer.html > $file");
 			      });
     }
     $d->chmod(0644, "$dest_dir/radroute.html");
@@ -247,14 +256,26 @@ $d->add_component('file');
 
 GetOptions(
 	   "destdir|dest-dir|dest-directory=s" => \$dest_dir,
-	  ) or die "usage: $0 [--dry-run] [--dest-dir directory] action ...\n";
+	   "host=s" => \my $host,
+	   "location-style=s" => \my $location_style,
+	   "bbbike-dir=s" => \my $bbbike_dir,
+	   "htdocs-dir=s" => \my $htdocs_dir,
+	   "target-ssh=s" => \my $target_ssh,
+	  ) or die "usage: $0 [--dry-run] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--htdocs-dir /path...] action ...\n";
 
 if (!defined $dest_dir) {
     error "Currently defining --dest-dir is mandatory!";
 }
 $d->make_path($dest_dir); # XXX may this directory contain files from a previous run?
 
-compute_config($d);
+my $target_doit;
+if ($target_ssh) {
+    $target_doit = $d->do_ssh_connect($target_ssh);
+} else {
+    $target_doit = $d;
+}
+
+compute_config($d, $target_doit, HOST => $host, LOCATION_STYLE => $location_style, BBBIKE_DIR => $bbbike_dir, HTDOCS_DIR => $htdocs_dir);
 
 my @actions = @ARGV;
 if (!@actions) {
@@ -271,3 +292,15 @@ for my $action (@actions) {
 }
 
 __END__
+
+=head1 EXAMPLES
+
+A typical local setup (using "bbbike" location style):
+
+    ./doit.pl --dest-dir /tmp/mapserver_dist
+
+A typical production setup (using "vhost" location style):
+
+    ./doit.pl --dest-dir /tmp/remote_mapserver_dist --host bbbike.de --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh bbbike-prod
+
+=cut
