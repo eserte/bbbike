@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016,2018,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -57,6 +57,7 @@ my $do_mapserver_button = 1;
 my $do_leaflet_button = 1;
 my $link_target;
 my $bad_browser_compat = 1; # e.g. IE7/8
+my $debug;
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -91,6 +92,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'mapserverbutton!' => \$do_mapserver_button,
 		'leafletbutton!' => \$do_leaflet_button,
 		'linktarget=s' => \$link_target,
+		'debug' => \$debug,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -264,7 +266,7 @@ EOF
 	my($cat_hin,$cat_rueck) = split /;/, $r->[Strassen::CAT];
 	if ($only_one_direction) {
 	    if ($cat_hin eq '') {
-		warn "Ignore rueckweg in $r->[Strassen::NAME]...\n";
+		warn "Ignore rueckweg in $r->[Strassen::NAME]...\n" if $debug;
 		next;
 	    }
 	}
@@ -294,7 +296,7 @@ EOF
 		$current_alternatives{$alt_name}->{label} = $alt_name;
 		$current_alternatives{$alt_name}->{coords_with_directions} = [];
 		$push_coords_with_directions->($current_alternatives{$alt_name}->{coords_with_directions});
-		warn "XXX handle alternative $r->[Strassen::NAME]...\n";
+		warn "XXX handle alternative $r->[Strassen::NAME]...\n" if $debug;
 		next;
 	    }
 	}
