@@ -1886,19 +1886,7 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: tempex: (tu,fr) T08-T13
-#: XXX temporäre Spielstraße wieder austragen bzw. auf http://spielstraßen.de/uebersicht.php überprüfen, ob es nach den Sommerferien 2023 eine Fortsetzung geben wird
-#: next_check: 2023-08-19
-	q4::temp:clock 3374,10201 3359,9968 3348,9806
-',
-         'from' => undef,
-         'id' => 1814,
-         'recurring' => 1,
-         'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich; außerdem Mi 15.00-19.00 Uhr temporäre Spielstraße, vom 31. Mai bis zum 28. Juni 2023',
-         'type' => 'gesperrt',
-         'until' => 1687971600
-       },
+       undef,
        {
          'data' => '#: note: der Auf/Abbau dürfte mindestens eine weitere Stunde dauern, in tempex eingerechnet
 #: tempex: (tu,fr) T10:00-T19:30, sa T10:00-T18:00
@@ -3148,7 +3136,20 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/06/velocity-radrennen/
+#: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee
+#: next_check: 2023-06-30
+Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
+',
+         'from' => 1687924800,
+         'id' => 2440,
+         'source_id' => 'IM_019938',
+         'text' => 'Straße des 17. Juni und Yitzak-Rabin-Str. wegen Vorbereitungen zur Velocity gesperrt, evtl. sind auch Radfahrer betroffen, 29.06.2023 06:00 bis 04.07.2023 18:00',
+         'type' => 'gesperrt',
+         'until' => 1688486400
+       },
        undef,
        undef,
        undef,
@@ -4377,7 +4378,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: also_indoor: traffic (G,H)
 #: last_checked: 2023-05-27 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2023-06-30
+#: next_check: 2023-09-30
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -4386,7 +4387,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
          'from' => undef,
          'id' => 3151,
          'source_id' => '2147344558',
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Mai 2023, vielleicht sogar bis 2024',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende September 2023, vielleicht sogar bis 2024',
          'type' => 'gesperrt',
          'until' => 1735660800
        },
@@ -4400,7 +4401,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-06-17 vvv
+#: last_checked: 2023-06-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5698,53 +5699,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Juni 2022: Special Olympics Nationale Spiele
-#: note: Juni 2023: Special Olympics World Games
-#: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00 (inaktiv)
-#: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00 (inaktiv)
-#: source_id: viz2021:13.37688,52.51775,07.06.2023,06:00 (Ebertstr., bis 28.06.2023) (inaktiv)
-#: source_id: viz2021:13.351216,52.514376,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023) (inaktiv)
-#: source_id: viz2021:13.36968,52.51571,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023) (inaktiv)
-#: source_id: viz2021:13.376813,52.516225,07.06.2023,06:00 (Ebertstr., bis 28.06.2023)
-#: source_id: viz2021:13.36452,52.515396,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
-#: source_id: viz2021:13.370292,52.516745,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
-#: source_id: viz2021:13.37688,52.51775,09.06.2023,06:00 (Scheidemannstr., bis 28.06.2023)
-#: source_id: viz2021:13.37081,52.51779,11.06.2023,06:00 (Heinrich-von-Gagern-Str., bis 26.06.2023) (inaktiv)
-#: source_id: viz2021:13.3546,52.51713,11.06.2023,06:00 (John-Foster-Dulles-Allee, bis 26.06.2023) (inaktiv)
-#: source_id: viz2021:13.35095,52.51487,11.06.2023,06:00 (Spreeweg, bis 26.06.2023) (wurde ersetzt, inaktiv)
-#: source_id: viz2021:13.350711,52.51499,11.06.2023,06:00 (Spreeweg, bis 26.06.2023) (inaktiv)
-#: by: https://viz.berlin.de/2022/06/sons-2022/
-#: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
-#: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1217800.php
-#: by: https://viz.berlin.de/2023/06/tiergarten_grossveranstaltungen/
-	2::temp 8538,12245 8592,12252
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8538,12245 8522,12239
-	2::temp 8538,12245 8522,12187
-Straße des 17. Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
-#: note: 09.06.2023 06:00 Uhr bis 28.06.2023, ca. 23:00 Uhr auch Scheidemannstraße zwischen Ebertstraße und Heinrich-von-Gagern-Straße
-Scheidemannstraße	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-#: note: 11.06.2023 06:00 bis 28.06.2023, ca. 23:00 Uhr auch Spreeweg Richtung Paulstraße zwischen Großer Stern und John-Foster-Dulles-Allee + John-Foster-Dulles-Allee
-Spreeweg Richtung Paulstr. gesperrt	1::temp 6787,12099 6831,12150 7001,12274 7031,12320
-John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-#: note: Damit ist die Überquerung der Straße des 17. Juni nicht möglich
-Bellevueallee (Abschnitt)	2::temp 7429,12070 7383,12095
-#: note: Vermutet, analog Bellevueallee
-zur Großen Querallee	2::temp 7816,12150 7823,12120
-Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-',
-         'from' => 1686024000,
-         'id' => 3563,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr. und Scheidemannstr.: Sportveranstaltung, Straßen auch für Radfahrer gesperrt (vom 7.6.2023 06:00 Uhr bis 28.6.2023 23:00 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1687986000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7108,23 +7063,14 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 39383,33334 39478,33359 40356,33162 41112,33306 41500,33497 41751,33561 41925,33512
-',
-         'from' => 1682229600,
-         'id' => 3774,
-         'source_id' => 'LS/221-F/23/038',
-         'text' => 'Beiersdorf-Freudenberg: zwischen der B168 und der B158 Fahrbahnsanierung, Sperrung der Straße vom 24.04.2023 bis 28.06.2023',
-         'type' => 'gesperrt',
-         'until' => 1687960800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
-#: osm_watch: way id="1172668082" version="3"
+#: osm_watch: way id="1172668082" version="4"
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-06-19
+#: last_checked: 2023-06-28 (osm)
 #: next_check: 2023-07-08
 	q4::inwork 20159,3623 20073,3734
 ',

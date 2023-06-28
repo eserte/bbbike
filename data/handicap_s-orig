@@ -11,16 +11,18 @@
 ### Friedrichshain ###
 # 
 #: by: https://www.openstreetmap.org/note/3677860
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (G,H[falsch],B,W)
 #: last_checked: 2023-06-26
 #: check_frequency: 14d
 Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # 
 #: next_check_id: NIEMANN-2023
+#: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw==
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
-#: also_indoor: traffic (B) vvv
+#: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
 #: last_checked: 2023-06-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
@@ -614,10 +616,10 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="30195541" version="37"
-#: osm_watch: way id="1101061991" version="9"
+#: osm_watch: way id="30195541" version="38"
+#: osm_watch: way id="1101061991" version="10"
 #: osm_watch: way id="310164489" version="29"
-#: last_checked: 2023-06-13 (osm)
+#: last_checked: 2023-06-28 (osm)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
@@ -904,7 +906,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv)
 #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv)
-#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023)
+#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv)
 #: osm_watch: way id="1096203482" version="7"
 #: also_indoor: traffic (ex-H,B,ex-G,W)
 #: last_checked: 2023-05-25
@@ -1308,9 +1310,9 @@ Am Flutgraben: Fußgänger	q1 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 #: note: Grünanlage mit "Radfahren-verboten-Zeichen" (FH/KB-Style), früher "q1"
-Am Landwehrkanal: Parkweg, Fußgänger	q3 12739,9576 12796,9548 12919,9584 12981,9672
+Am Landwehrkanal: Parkweg, Fußgänger	q3 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825
 #: note: Grünanlagen-Schild (ohne Radfahrer-Zusatzschild) nur an der Görlitzer Str., früher "q1"
-Am Landwehrkanal: Parkweg, Fußgänger	q2 12981,9672 13086,9825 13145,9861 13230,9981
+Am Landwehrkanal: Parkweg, Fußgänger	q2 13086,9825 13145,9861 13230,9981
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14467,9887 14459,9897 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
 #: confirmed_by: srt

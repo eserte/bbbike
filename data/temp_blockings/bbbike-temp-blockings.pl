@@ -22094,13 +22094,17 @@ EOF
 	q4::temp 5072,10701 5069,10662
 EOF
      },
-     { from  => 1497556466, # 1370491200, # 2013-06-06 06:00
-       until => $isodate2epoch->("2017-06-19 06:00:00"), # 1370836800, # 2013-06-10 06:00
-       text  => 'Str. des 17. Juni wegen Vorbereitungen zum Velothon gesperrt bis 19.06.2017 6:00 Uhr ',
+     { from  => $isodate2epoch->("2023-06-28 06:00:00"), # 1497556466, # 1370491200, # 2013-06-06 06:00
+       until => $isodate2epoch->("2023-07-04 18:00:00"), # 1370836800, # 2013-06-10 06:00
+       text  => 'Straße des 17. Juni und Yitzak-Rabin-Str. wegen Vorbereitungen zur Velocity gesperrt, evtl. sind auch Radfahrer betroffen, 29.06.2023 06:00 bis 04.07.2023 18:00',
        type  => 'gesperrt',
        source_id => 'IM_019938',
        data  => <<EOF,
-	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+#: by: https://viz.berlin.de/2023/06/velocity-radrennen/
+#: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee
+#: next_check: 2023-06-30
+Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
 EOF
      },
      { from  => 1371938400, # 2013-06-23 00:00
@@ -30304,7 +30308,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2024-12-31 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Mai 2023, vielleicht sogar bis 2024',
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende September 2023, vielleicht sogar bis 2024',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10 # inaktiv
        data  => <<EOF,
@@ -30318,7 +30322,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: last_checked: 2023-05-27 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2023-06-30
+#: next_check: 2023-09-30
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -30404,7 +30408,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-06-17 vvv
+#: last_checked: 2023-06-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -35678,10 +35682,10 @@ EOF
 #: source_id: viz2021:13.37688,52.51775,07.06.2023,06:00 (Ebertstr., bis 28.06.2023) (inaktiv)
 #: source_id: viz2021:13.351216,52.514376,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023) (inaktiv)
 #: source_id: viz2021:13.36968,52.51571,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023) (inaktiv)
-#: source_id: viz2021:13.376813,52.516225,07.06.2023,06:00 (Ebertstr., bis 28.06.2023)
-#: source_id: viz2021:13.36452,52.515396,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023)
-#: source_id: viz2021:13.370292,52.516745,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023)
-#: source_id: viz2021:13.37688,52.51775,09.06.2023,06:00 (Scheidemannstr., bis 28.06.2023)
+#: source_id: viz2021:13.376813,52.516225,07.06.2023,06:00 (Ebertstr., bis 28.06.2023) (inaktiv)
+#: source_id: viz2021:13.36452,52.515396,07.06.2023,06:00 (Straße des 17. Juni, bis 28.06.2023) (inaktiv)
+#: source_id: viz2021:13.370292,52.516745,07.06.2023,06:00 (Yitzhak-Rabin-Str., bis 28.06.2023) (inaktiv)
+#: source_id: viz2021:13.37688,52.51775,09.06.2023,06:00 (Scheidemannstr., bis 28.06.2023) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,11.06.2023,06:00 (Heinrich-von-Gagern-Str., bis 26.06.2023) (inaktiv)
 #: source_id: viz2021:13.3546,52.51713,11.06.2023,06:00 (John-Foster-Dulles-Allee, bis 26.06.2023) (inaktiv)
 #: source_id: viz2021:13.35095,52.51487,11.06.2023,06:00 (Spreeweg, bis 26.06.2023) (wurde ersetzt, inaktiv)
@@ -38644,7 +38648,7 @@ EOF
        until => 1687960800, # 2023-06-28 16:00
        text  => 'Beiersdorf-Freudenberg: zwischen der B168 und der B158 Fahrbahnsanierung, Sperrung der Straße vom 24.04.2023 bis 28.06.2023',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/038',
+       source_id => 'LS/221-F/23/038', # inaktiv
        data  => <<EOF,
 	2::inwork 39383,33334 39478,33359 40356,33162 41112,33306 41500,33497 41751,33561 41925,33512
 EOF
@@ -38656,10 +38660,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
-#: osm_watch: way id="1172668082" version="3"
+#: osm_watch: way id="1172668082" version="4"
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-06-19
+#: last_checked: 2023-06-28 (osm)
 #: next_check: 2023-07-08
 	q4::inwork 20159,3623 20073,3734
 EOF

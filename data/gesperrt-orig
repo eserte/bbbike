@@ -3813,7 +3813,8 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:369#BVG310116_0
 # REMOVED --- #: source_id: bvg2021:369#BVG310521_0
-#: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023)
+#: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024)
+#: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024)
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
 # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
@@ -3824,7 +3825,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: last_checked: 2022-06-15
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-10-28
-#: next_check: 2023-06-30
+#: next_check: 2024-03-01
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
 #: osm_watch: way id="26322024" version="23"
@@ -4425,7 +4426,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-06-17
+#: last_checked: 2023-06-28
 #: check_frequency: 90d
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
@@ -4572,8 +4573,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
-#: osm_watch: way id="40451054" version="17"
-#: last_checked: 2023-06-19
+#: osm_watch: way id="40451054" version="18"
+#: last_checked: 2023-06-28 (osm)
 #: next_check: 2023-09-01
 #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
@@ -5188,7 +5189,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/index.shtml
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
-#: osm_watch: way id="257432926" version="10"
+#: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
 #: last_checked: 2023-06-23
 #: check_frequency: 150d

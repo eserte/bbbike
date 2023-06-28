@@ -79,7 +79,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-06-17
+#: last_checked: 2023-06-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -1796,10 +1796,12 @@ Hielscherstr.: Asphaltierung geplant	?::projected 7558,19886 7604,19988 7695,201
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf ("keine Entscheidung")
 #: XXX vielleicht passiert erst etwas im Zuge des Bebauungsplans 3-72 (Pankow)?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Aufstellung des Bebauungsplans)
+#: note: laut osm mittlerweile asphaltiert
 #: osm_watch: way id="4684852" version="11"
 #: priority: #B
 #: last_checked: 2023-03-20 (mapillary)
 #: check_frequency: 360d
+#: next_check: 2023-06-28
 Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 # 
 # REMOVED (realisiert, neue Fragezeichen existieren) --- #: osm_watch: way id="25799814" version="12" --- #: last_checked: 2018-10-13 --- #: check_frequency: 60d --- Oraniendamm - Dianastr.: Befestigung (evtl. Asphaltierung?)	?::projected 4222,22854 4176,22764 4155,22707
@@ -4086,7 +4088,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: XXX an Mai/Juni 2023 Bauarbeiten im Bereich Helsingforser Platz; dann wird die Rampe auch nicht benutzbar sein
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2023-06-17
+#: last_checked: 2023-06-27
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-10-31
 Wriezener Park: Umbauarbeiten, einige Wege sind zwischenzeitlich gesperrt	?::inwork 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
@@ -4164,7 +4166,7 @@ Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 2322
 #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/bezirksamt-prueft-die-einrichtung-von-weiteren-fahrradstrassen_a317157 (weitere mögliche Fahrradstraßen in TK werden genannt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1653270592932675584#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV4Nk1aTFh3QUFQVE9WLmpwZw== (laut Verkehrszeichenplan "Einfahrt verboten, Radfahrer frei")
-#: source_id: viz2021:13.449644,52.490923,02.05.2023,07:00 (Leitungsarbeiten, Fahrtrichtung für Kfz gesperrt, bis 30.06.2023)
+#: source_id: viz2021:13.449644,52.490923,02.05.2023,07:00 (Leitungsarbeiten, Fahrtrichtung für Kfz gesperrt, bis 30.06.2023) (bis 04.07.2023)
 #: last_checked: 2023-05-30
 #: check_frequency: 180d
 Bouchéstr.: Prüfung einer Fahrradstraße	? 13188,9134 13298,9252 13357,9313 13489,9456 13602,9581
@@ -7021,7 +7023,7 @@ Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,
 # 
 #: by: https://www.infravelo.de/projekt/revaler-strasse/ (2.-3. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 3. Quartal 2023) vvv
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10192 (EwA)
-#: last_checked: 2023-06-12 vvv
+#: last_checked: 2023-06-27 vvv
 #: next_check: 2023-09-30 vvv
 Revaler Str.: geschützte Radfahrstreifen geplant	?::projected 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -7480,7 +7482,7 @@ Lynarstr.: Fahrradstraße entsteht, Poller in Höhe Sparrplatz	? 7259,14870 7409,1
 #: by: https://berliner-abendblatt.de/2022/12/11/wrangelkiez-digitale-infoveranstaltung-am-12-dezember/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/bezirksamt-entschleunigt-wrangelkiez_a367223
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Einziehung von Straßenland)
-#: last_checked: 2023-06-23 (Amtsblatt)
+#: last_checked: 2023-06-28
 #: check_frequency: 30d
 Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	?::projected 13216,9983 13155,9907 13136,9883 13086,9825
 # 
@@ -7824,6 +7826,7 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php (Genter Straße südlich der Limburger Straße)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1335220.php (Ende Juni 2023)
+#: by: https://www.berliner-woche.de/wedding/c-verkehr/im-bruesseler-kiez-werden-jetzt-poller-gesetzt_a385173
 #: XXX zwischen Limburger Str. und Einfahrt Schillerbibliothek; für Radfahrer wird es weiterhin offen bleiben; gehört wohl zum Kiezblock Brüsseler Kiez
 #: last_checked: 2023-06-22
 #: next_check: 2023-06-30
@@ -8286,7 +8289,7 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1271762.php
 #: by: https://berliner-abendblatt.de/2022/12/05/baubeginn-fuer-neue-bruecke-ueber-das-adlergestell/
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/estw-s9-sued-bauvorhaben-tramtunnel-in-schoeneweide-neubau-fussgaengerbruecke-ueber-das-adlergestell/
-#: source_id: viz2021:13.532612,52.441405,15.06.2023,07:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 28.06.2023) (bis 30.09.2023)
+#: source_id: viz2021:13.532612,52.441405,15.06.2023,07:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 28.06.2023) (bis 30.09.2023) (inaktiv)
 #: last_checked: 2023-06-25
 #: check_frequency: 360d
 #: next_check: 2024-06-30
@@ -10159,7 +10162,7 @@ Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufe
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10693 (Erwähnung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/rudolfstra%C3%9Fe-ehrenbergstra%C3%9Fe.1044/page-2#post-20811
-#: last_checked: 2023-06-14
+#: last_checked: 2023-06-28
 #: check_frequency: 360d
 Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehen?	? 13540,11148 13527,11110
 # 
