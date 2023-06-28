@@ -28,7 +28,7 @@ my %c;
 sub _need_rebuild ($@) {
     my($dest, @srcs) = @_;
     return 1 if !-e $dest;
-    for my $src (@srcs, __FILE__) {
+    for my $src (@srcs, __FILE__,"$dest_dir/.options") {
 	if (!-e $src) {
 	    warning "$src does not exist";
 	} else {
@@ -254,6 +254,8 @@ return 1 if caller;
 my $d = Doit->init;
 $d->add_component('file');
 
+my @saved_ARGV = @ARGV;
+
 GetOptions(
 	   "destdir|dest-dir|dest-directory=s" => \$dest_dir,
 	   "host=s" => \my $host,
@@ -266,6 +268,9 @@ GetOptions(
 if (!defined $dest_dir) {
     error "Currently defining --dest-dir is mandatory!";
 }
+
+$d->write_binary("$dest_dir/.options", "@saved_ARGV\n"); # only written if different from previous run
+
 $d->make_path($dest_dir); # XXX may this directory contain files from a previous run?
 
 my $target_doit;
