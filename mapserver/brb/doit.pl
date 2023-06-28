@@ -239,6 +239,14 @@ sub action_static_files {
     }
 }
 
+sub action_dist_any {
+    my $d = shift;
+    $d->system('rsync', '-a', 'data/', "$dest_dir/data/");
+    $d->system('rsync', '-a', 'graphics/', "$dest_dir/graphics/");
+    $d->mkdir("$dest_dir/tmp");
+    $d->chmod(0755, "$dest_dir/tmp");
+}
+
 ######################################################################
 
 sub action_all {
@@ -247,6 +255,7 @@ sub action_all {
     action_map_file($d, "brb");
     action_map_file($d, "brb-ipaq");
     action_html_files($d);
+    action_dist_any($d);
 }
 
 return 1 if caller;
