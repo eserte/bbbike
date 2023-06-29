@@ -501,7 +501,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-06-15 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -896,7 +896,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 	RW4; 10685,12422 10644,12469 10601,12521
 	RW4; 10601,12521 10644,12469 10685,12422
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-	RW4;RW4 10601,12521 10431,12709
+	RW4;RW4 10601,12521 10542,12587 10431,12709
 # 
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15110,12107
@@ -1741,6 +1741,7 @@ Verbundsteinpflaster	RW1; 5328,13019 5166,13087
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzallee wird der bestehende Zweirichtungsradweg saniert und ausgebaut) (teilweise ist das schon passiert)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Sperrung Gallwitzallee ab 10.7.2023)
 #: source_id: 2147344664 (bis Ende Oktober 2019) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeiten bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,20.12.2022,12:03 (bis 30.06.2023) (inaktiv)
@@ -1926,7 +1927,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 4838,11697 4900,11626
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-06-22 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1953,7 +1954,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-06-15 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -1984,11 +1985,10 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
 #: osm_watch: way id="82654055" version="20"
 #: source_id: 2147343632 (bis Mitte 2023) (inaktiv?)
-#: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023)
+#: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023)
 #: priority: #A vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2021-03-11 vvv
-#: next_check: 2023-07-07 vvv
+#: next_check: 2023-07-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 #: last_checked: 2023-06-21 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
@@ -2031,7 +2031,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-29
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10951,12637
 # 
@@ -4519,7 +4519,7 @@ vorhandener Radweg ist abgesperrt, sehr eng	RW0; 13566,5792 13394,5754
 # REMOVED (ja) --- #: XXX wie wird die Radwegführung hier sein? Offizieller Zweirichtungsradweg? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02
 gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14150,6609
 #: next_check_id: GRENZALLEE-2014
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check_id: 2023-06-30
 provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14150,6609 14137,6658 14179,6714 14179,6743 14139,6786
@@ -4802,20 +4802,22 @@ Grünbeschichtung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2023-04-16 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2023-06-30 vvv
-#: valid: 20140224-20230630 vvv
+# REMOVED --- #: next_check: 2023-06-30 vvv
+# REMOVED --- #: valid: 20140224-20230630 vvv
+#: valid: 20140224- vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
 	RW0; 13265,6972 13085,6925
 #: note: einige Meter vor der Ampel ist die Radspur aufgehoben
 	RW0; 13085,6925 13265,6972
 #: valid ^^^
-#: valid: !20140224-20230630 vvv
+# REMOVED --- #: valid: !20140224-20230630 vvv
+#: valid: !20140224- vvv
 	RW4; 13265,6972 13085,6925
 	RW3; 13085,6925 13265,6972
 #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -5373,8 +5375,7 @@ am Anfang Verbundsteinpflaster, dann nur noch aufgemalt	RW1; 14617,7243 14693,71
 # REMOVED (mittlerweile 20er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 13188,7590 13117,7471
 # REMOVED (mittlerweile 20er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 13392,7648 13513,7532
 # REMOVED (mittlerweile 20er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 13424,7680 13566,7649
-#: XXX Wird Tempo 10 wieder eingeführt?
-#: last_checked: 2023-05-30
+# REMOVED (erst im Zuge des neuen modalen Filters prüfen) --- #: XXX Wird Tempo 10 wieder eingeführt? --- #: last_checked: 2023-05-30
 #: historical_note: Tempo 10	RW6;RW6
 	RW0;RW0 13476,7330 13373,7426 13341,7423
 #: by: Martin Weber (und ADFC-Karte):
@@ -7870,7 +7871,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="32"
 #: osm_watch: way id="335487059" version="27"
-#: last_checked: 2023-06-11 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

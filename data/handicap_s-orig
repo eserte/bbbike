@@ -243,6 +243,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: next_check_id: ROTESRATHAUS-2023
+#: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
+#: last_checked: 2023-06-29
+#: check_frequency: 7d
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2 10704,12595 10695,12616 10615,12642 10542,12587
+# 
 #: next_check_id: PLDVEREINTENNATIONEN-2023
 #: last_checked: 2023-06-01
 #: check_frequency: 30d
@@ -256,7 +262,7 @@ Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstelle
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
 #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023)
-#: last_checked: 2023-05-05 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 # REMOVED (hier nicht mehr) --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249
@@ -267,7 +273,7 @@ Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-29
 #: check_frequency: 90d
 Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
@@ -326,7 +332,8 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
-#: last_checked: 2023-06-04
+#: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
+#: last_checked: 2023-06-29
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -723,12 +730,12 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2023-05-30 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-06-30 vvv
+# REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
-Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14310,7022 14276,7021 14246,7042 14236,7058 14196,7086
-#: next_check ^^^
+Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1121,10 +1128,10 @@ Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 1165
 #: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben)
 #: note: laut Bauschild der Wasserbetriebe bis Juli 2024
 #: osm_watch: way id="22966091" version="36"
-#: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023) vvv
+#: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023) (bis 30.9.2023) vvv
 #: last_checked: 2023-05-21 vvv
-#: next_check: 2023-06-30 vvv
-#: valid: -20230629 vvv
+#: next_check: 2023-09-30 vvv
+#: valid: -20230930 vvv
 Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8568,21863 8473,21633 8460,21602
 Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8479,21590 8473,21633
 #: valid ^^^
@@ -1297,6 +1304,7 @@ Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 
 Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
+#: note: auf der östlichen Seite ist ein Fußgänger-Piktogramm auf dem Weg
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, Eingang Lucy-Lameck-Str.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
@@ -4594,7 +4602,7 @@ Waldemarstr.: einige Fußgänger, Bordstein	q3 10464,20390 10475,20355
 #: XXX Bleibt die Ausschilderung der TR4-Routenführung? Laut SGA TK wird die Radroutenführung mit SenMVKU und InfraVelo abgestimmt
 # REMOVED (closed) --- #: osm_watch: note 3390316 1
 #: osm_watch: way id="856982239" version="5"
-#: last_checked: 2023-06-09
+#: last_checked: 2023-06-29
 #: check_frequency: 30d
 Heidelberger Str.: Fahrbahn in Bereich des Schmollerplatzes gesperrt	q3 13234,9426 13202,9455
 # 

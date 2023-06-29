@@ -404,6 +404,8 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ueberraschende-kehrtwende-im-streit-um-die-friedrichstrasse_a382411
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_24_2481_2520_online.pdf (Aussetzung der Teileinziehung)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/wieder-autos-in-der-friedrichstrasse-was-berlin-durch-die-oeffnung-entgeht-mitte-natascha-von-hirschhausen-galeries-lafayette-li.360709
+#: by: https://berliner-abendblatt.de/berlin-news/friedrichstrassen-mobiliar-wird-abgeraeumt-id225696
+#: by: https://www.berliner-zeitung.de/news/friedrichstrasse-in-berlin-mitte-sitzmoebel-werden-bereits-am-donnerstag-abgebaut-li.364385
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
@@ -1505,7 +1507,7 @@ Petriplatz	N 10460,11979 10418,12016
 Brüderstr. (Mitte)	N 10392,11991 10289,12106
 Scharrenstr.	N 10301,11899 10332,11929 10392,11991 10418,12016 10480,12077
 Spandauer Str. (Mitte)	HH 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
-Spandauer Str. (Mitte)	H 10685,12422 10644,12469 10601,12521 10431,12709 10373,12776 10360,12793 10308,12859
+Spandauer Str. (Mitte)	H 10685,12422 10644,12469 10601,12521 10542,12587 10431,12709 10373,12776 10360,12793 10308,12859
 Spandauer Str. (Mitte) [Gehweg]	NN 10584,12507 10626,12455 10665,12413 10714,12355
 Leipziger Str.	HH 10213,11728 10240,11740
 Leipziger Str.	HH 10238,11741 10213,11728
@@ -2539,16 +2541,24 @@ Britzer Damm	H 12576,6374 12588,6337 12595,6299 12597,6293 12618,6207 12628,6166
 Lahnstr.	H 13085,6925 13265,6972
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: priority: #A vvv
-#: next_check: 2023-06-30 vvv
-#: valid: -20230630
+#: last_checked: 2023-06-29 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2023-06-30 vvv
+# REMOVED --- #: valid: -20230630
+#: valid: -20230930
 Lahnstr.	N 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103
-#: valid: !-20230630
+# REMOVED --- #: valid: !-20230630
+#: valid: !-20230930
 Lahnstr.	H 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103
-#: valid: -20230630
+# REMOVED --- #: valid: -20230630
+#: valid: -20230930
 Neuköllnische Allee	N 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
-#: valid: !-20230630
+# REMOVED --- #: valid: !-20230630
+#: valid: !-20230930
 Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: priority ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
@@ -2557,11 +2567,11 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
-#: last_checked: 2023-05-30
+#: last_checked: 2023-06-29
 #: check_frequency: 90d
-#: next_check: 2023-06-30
+# REMOVED --- #: next_check: 2023-06-30
 # REMOVED --- (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
-(provisorische Umfahrung)	NN 14310,7022 14276,7021 14246,7042 14236,7058 14196,7086
+(provisorische Umfahrung)	NN 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
 # 
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 vvv --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: 20140224-20230630 --- Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668 --- #: valid: !20140224-20230630
 Neuköllnische Allee	N 14344,7003 14567,6810 14724,6668
@@ -2725,15 +2735,17 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2023-02-16 vvv
-# REMOVED --- #: check_frequency: 90d vvv
-#: next_check: 2023-06-30 vvv
-#: valid: 20140224-20230630
+#: last_checked: 2023-06-29 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2023-06-30 vvv
+# REMOVED --- #: valid: 20140224-20230630
+#: valid: 20140224-
 Naumburger Str.	H 13265,6972 13520,6583
-#: valid: !20140224-20230630
+# REMOVED --- #: valid: !20140224-20230630
+#: valid: !20140224-
 Naumburger Str.	N 13265,6972 13520,6583
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -10848,7 +10860,7 @@ Am Seegraben (Bohnsdorf, Altglienicke)	HH 19618,-1021 19815,-909 19894,-835 1999
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7477 (Benennung zu "Am Seegraben"?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_23_2333_2480_online.pdf (Benennung)
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/neuer-name-fuer-strassenabschnitt_a382189
-#: XXX Die Straße bekommt den Namen "Am Seegraben"
+#: add_fragezeichen: Die Straße bekommt den Namen "Am Seegraben". Hängen bereits entsprechende Straßenschilder?
 #: last_checked: 2023-06-12
 #: next_check: 2023-06-29
 (B96a)	HH 20205,-548 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21506,1768
@@ -13055,7 +13067,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-06-21
+#: last_checked: 2023-06-29
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
@@ -14157,7 +14169,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED --- #: valid: 20140224-20230630 --- Bergiusstr.	H 14106,6663 14150,6609
 # REMOVED --- #: valid: !20140224-20230630 --- Bergiusstr.	N 14106,6663 14150,6609
 #: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 06.07.2023)
-#: last_checked: 2023-04-27 vvv
+#: last_checked: 2023-06-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-07-06 vvv
 Bergiusstr.	NN 14137,6658 14150,6609 14193,6556
@@ -20380,3 +20392,10 @@ Gustav-Tempel-Str.	N 15220,10682 15205,10616
 Gustav-Tempel-Str.	NN 15205,10616 15200,10600
 An den Eiswerken	N 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	N 14886,10748 14984,10677
+# 
+#: next_check_id: ROTESRATHAUS-2023
+#: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
+#: last_checked: 2023-06-29
+#: check_frequency: 7d
+(Umleitungsstrecke Rotes Rathaus)	NN 10704,12595 10695,12616 10615,12642 10542,12587
+# 
