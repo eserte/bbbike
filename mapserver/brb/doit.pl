@@ -58,9 +58,9 @@ sub compute_config {
     $c{MAPSERVER_DIR}            = "$c{HTDOCS_DIR}/mapserver/brb";
     $c{MAPSERVER_RELURL}         = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/mapserver/brb' : '/mapserver/brb';
     $c{MAPSERVER_URL}            = "http://$c{HOST}$c{MAPSERVER_RELURL}";
-    $c{MAPSERVER_PROG_RELURL}    =	'/cgi-bin/mapserv';
+    $c{MAPSERVER_PROG_RELURL}    = '/cgi-bin/mapserv';
     $c{MAPSERVER_PROG_URL}       = "http://$c{HOST}$c{MAPSERVER_PROG_RELURL}";
-#	--define MAPSERVER_PROG_FSPATH="$(MAPSERVER_PROG_FSPATH)"
+    $c{MAPSERVER_PROG_FSPATH}    = '/usr/lib/cgi-bin/mapserv'; # XXX what about non-debian systems?
     $c{MAPSERVER_VERSION}        = get_mapserver_version($target_doit);
     $c{MAPSERVER_DRIVER}         = get_mapserver_driver($target_doit);
     $c{IMAGE_DIR}                = "$c{BBBIKE_DIR}/images";
@@ -80,8 +80,6 @@ sub compute_config {
     $c{EDITWARNHTML}             = "<!-- DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl -->";
     $c{EDITWARNJS}               = "/* DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl */";
     $c{EDITWARNMAP}              = "## DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl";
-#	--define SMALLDEVICE=0 \
-#	--define SCOPES_STRING="$(SCOPES)" \
 
     require BBBikeMapserver;
     $c{ALL_LAYERS} = join ' ', BBBikeMapserver::all_layers();
@@ -255,6 +253,16 @@ sub action_crontab {
     my $src = "crontab.tpl";
     if (_need_rebuild($dest, $src)) {
 	run_tt($d, $src, $dest, \%c);
+    }
+}
+
+# not included in "action_all"
+sub action_httpd_conf {
+    my $d = shift;
+    my $dest = "/tmp/mapserver-httpd.conf"; # XXX
+    my $src = "httpd.conf-tpl";
+    if (_need_rebuild($dest, $src)) {
+	run_tt($d, $src, $dest, { %c, EDITWARNMAP => "## DO NOT EDIT. Created automatically from $src" });
     }
 }
 
