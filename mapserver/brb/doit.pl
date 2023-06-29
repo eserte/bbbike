@@ -47,6 +47,7 @@ sub compute_config {
     $c{LOCAL_BBBIKE_DIR}         = delete $opts{LOCAL_BBBIKE_DIR} // realpath(cwd . "/../..");
     $c{BBBIKE_DIR}               = delete $opts{BBBIKE_DIR} // $c{LOCAL_BBBIKE_DIR};
     $c{HTDOCS_DIR}               = delete $opts{HTDOCS_DIR} // $c{BBBIKE_DIR};
+    $c{WWW_USER}                 = delete $opts{WWW_USER} // 'www-data';
     die "Unhandled options: " . join(' ', %opts) if %opts;
 
     # static
@@ -63,6 +64,7 @@ sub compute_config {
     $c{MAPSERVER_VERSION}        = get_mapserver_version($target_doit);
     $c{MAPSERVER_DRIVER}         = get_mapserver_driver($target_doit);
     $c{IMAGE_DIR}                = "$c{BBBIKE_DIR}/images";
+    $c{BBBIKE_MISCSRC_DIR}       = "$c{BBBIKE_DIR}/miscsrc";
     $c{BBBIKE_HTML_RELURL}       = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/html' : '/BBBike/html';
     $c{BBBIKE_CGI_RELURL}        = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/cgi' : '/cgi-bin';
     $c{BBBIKE_RELURL}            = "$c{BBBIKE_CGI_RELURL}/bbbike.cgi";
@@ -72,7 +74,6 @@ sub compute_config {
     $c{BBBIKE_IMAGES_RELURL}     = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/images' : '/BBBike/images';
     $c{IMAGE_SUFFIX}             = 'png';
     $c{FONTS_LIST}               = $^O eq 'freebsd' ? 'fonts-freebsd.list' : 'fonts-debian.list';
-#	--define WWW_USER="$(WWW_USER)" \
     $c{IMGWIDTH}                 = 550;
     $c{IMGHEIGHT}                = 550;
     $c{IMAGECOLOR}               = '225 225 225';
@@ -247,6 +248,16 @@ sub action_dist_any {
     $d->chmod(0755, "$dest_dir/tmp");
 }
 
+# not included in "action_all"
+sub action_crontab {
+    my $d = shift;
+    my $dest = "/tmp/bbbike-mapserver-cleanup"; # XXX
+    my $src = "crontab.tpl";
+    if (_need_rebuild($dest, $src)) {
+	run_tt($d, $src, $dest, \%c);
+    }
+}
+
 ######################################################################
 
 sub action_all {
@@ -272,7 +283,8 @@ GetOptions(
 	   "bbbike-dir=s" => \my $bbbike_dir,
 	   "htdocs-dir=s" => \my $htdocs_dir,
 	   "target-ssh=s" => \my $target_ssh,
-	  ) or die "usage: $0 [--dry-run] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--htdocs-dir /path...] action ...\n";
+	   'www-user=s' => \my $www_user,
+	  ) or die "usage: $0 [--dry-run] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--htdocs-dir /path...] [--target-ssh user\@host] [--www-user username] action ...\n";
 
 if (!defined $dest_dir) {
     error "Currently defining --dest-dir is mandatory!";
@@ -289,7 +301,13 @@ if ($target_ssh) {
     $target_doit = $d;
 }
 
-compute_config($d, $target_doit, HOST => $host, LOCATION_STYLE => $location_style, BBBIKE_DIR => $bbbike_dir, HTDOCS_DIR => $htdocs_dir);
+compute_config($d, $target_doit,
+	       HOST => $host,
+	       LOCATION_STYLE => $location_style,
+	       BBBIKE_DIR => $bbbike_dir,
+	       HTDOCS_DIR => $htdocs_dir,
+	       WWW_USER => $www_user,
+	      );
 
 my @actions = @ARGV;
 if (!@actions) {
