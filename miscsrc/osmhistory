@@ -86,6 +86,7 @@ sub history_log {
 	print "="x70,"\n";
 	print "id $changeset->{id}\n";
 	print "OSMCha-URL: https://osmcha.org/changesets/$changeset->{id}\n";
+	print "achavi-URL: https://overpass-api.de/achavi/?changeset=$changeset->{id}&relations=true\n";
 	print "Author: $changeset->{user}\n";
 
 	print "Date:   $changeset->{closed_at}";

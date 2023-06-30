@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2018,2019,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2018,2019,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -347,6 +347,7 @@ sub show_diff {
 		if ($changeset) {
 		    warn "Changeset URL: $osm_url/changeset/$changeset\n";
 		    warn "OSMCha URL:    https://osmcha.org/changesets/$changeset/\n";
+		    warn "achavi-URL:    https://overpass-api.de/achavi/?changeset=$changeset&relations=true\n";
 		}
 		warn "="x70, "\n";
 	    }
