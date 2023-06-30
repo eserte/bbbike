@@ -631,13 +631,49 @@
 (defun bbbike-grep-with-args (search-key search-val)
   (bbbike-grep-with-search-term (concat "^#:[ ]*" search-key ":?[ ]*" search-val) t))
 
-(defun bbbike-grep-with-search-term (search-term &optional is-regexp)
+;; old, now unused version which just uses the "grep" command
+(defun bbbike-grep-with-search-term-simple (search-term &optional is-regexp)
   (let ((bbbike-rootdir (bbbike-rootdir)))
     (grep (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
 		  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
 		  " --add-file " bbbike-rootdir "/t/old_comments.t"
 		  (if is-regexp " --rx" " --")
 		  " '" search-term "'"))))
+
+;; new version: if there's only one match, then go directly to the file.
+;; Otherwise display the output in temporary grep-mode buffer.
+(defun bbbike-grep-with-search-term (search-term &optional is-regexp)
+  (let* ((bbbike-rootdir (bbbike-rootdir))
+	 (output (shell-command-to-string
+		  (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
+			  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
+			  " --add-file " bbbike-rootdir "/t/old_comments.t"
+			  (if is-regexp " --rx" " --")
+			  " '" search-term "'")))
+         (lines (split-string output "\n" t))
+         (num-lines (length lines)))
+    (cond
+     ((= num-lines 0)
+      (message "No matching lines found."))
+     ((= num-lines 1)
+      (let* ((line (car lines))
+             (parts (split-string line ":"))
+             (filename (car parts))
+             (line-number (string-to-number (cadr parts))))
+        (find-file filename)
+        (goto-line line-number)))
+     (t
+      (let ((buffer (get-buffer-create "*bbbike-grep-output*")))
+        (with-current-buffer buffer
+          (read-only-mode -1)
+          (erase-buffer)
+          (dolist (line lines)
+            (insert line)
+            (insert "\n"))
+	  (grep-mode))
+        (split-window-vertically)
+        (other-window 1)
+        (pop-to-buffer buffer))))))
 
 (defun bbbike-grep-button (button)
   (bbbike-grep))
