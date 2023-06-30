@@ -252,8 +252,8 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: PLDVEREINTENNATIONEN-2023
 #: last_checked: 2023-06-01
 #: check_frequency: 30d
-#: next_check: 2023-06-30
-#: valid: -20230630
+#: next_check: 2023-07-28
+#: valid: -20230728
 Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
 # 
 # REMOVED (mittlerweile wieder Führung via Fahrbahn trotz nicht ganz abgeschlossener Baustelle) --- #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw== --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
@@ -273,7 +273,7 @@ Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-06-29
+#: last_checked: 2023-06-30
 #: check_frequency: 90d
 Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 # 
@@ -628,7 +628,8 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 #: osm_watch: way id="310164489" version="29"
 #: last_checked: 2023-06-28 (osm)
 #: check_frequency: 30d
-Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330
+# REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
 #: source_id: bvg2021:101#BVG301286_0
 #: osm_watch: way id="4571954" version="32"
@@ -4539,13 +4540,11 @@ Hochstr.: Fußgänger, Bordsteine	q3 8933,15872 8917,15851
 Schönegarten: einige Fußgänger	q1 7416,10492 7432,10546 7337,10587 7330,10590
 Kurfürstenstr. - Pohlstr.: einige Fußgänger	q1 7432,10546 7450,10625
 # 
-#: next_check_id: FRIEDRICH-2020
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: by: https://www.bahninfo-forum.de/read.php?9,757005,757414#msg-757414
+# REMOVED --- #: next_check_id: FRIEDRICH-2020 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541 --- #: by: https://www.bahninfo-forum.de/read.php?9,757005,757414#msg-757414
 # REMOVED --- #: last_checked: 2022-11-17 (mapillary) --- #: check_frequency: 90d
-#: next_check: 2023-07-01
+# REMOVED --- #: next_check: 2023-07-01
 # REMOVED --- #: valid: 20200821-20211031 ---
-Friedrichstr.: Fußgängerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
+# REMOVED --- Friedrichstr.: Fußgängerzone, Radfahrer frei	q3 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 #: XXX_prog BS an beiden Enden (ansonsten q3)
 (Roedernstr. - Edisonstr.): Gehweg, Bordsteine	q4 17981,6793 17945,6788

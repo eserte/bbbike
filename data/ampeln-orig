@@ -129,10 +129,10 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: next_check_id: PLDVEREINTENNATIONEN-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
-#: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023)
+#: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023)
 #: last_checked: 2023-04-09
-#: next_check: 2023-06-30
-#: valid: -20230630
+#: next_check: 2023-07-28
+#: valid: -20230728
 	F::inwork 11913,13077
 # 
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
@@ -1125,7 +1125,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2023-06-11
+#: last_checked: 2023-06-30
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -2438,12 +2438,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
-#: note: vorhandene Ampel ist vermutlich dauerhaft abgeschaltet
+#: XXX: vorhandene Ampel ist vermutlich wieder eingeschaltet, prüfen!
 #: last_checked: 2023-06-15
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-07-01
 # REMOVED --- #: valid: !20200821-20211031
-	X0 9418,11804
+	X 9418,11804
 # 
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
 #: by: Andreas Mühlhausen: vvv

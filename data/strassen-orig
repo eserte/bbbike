@@ -406,14 +406,13 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-zeitung.de/mensch-metropole/wieder-autos-in-der-friedrichstrasse-was-berlin-durch-die-oeffnung-entgeht-mitte-natascha-von-hirschhausen-galeries-lafayette-li.360709
 #: by: https://berliner-abendblatt.de/berlin-news/friedrichstrassen-mobiliar-wird-abgeraeumt-id225696
 #: by: https://www.berliner-zeitung.de/news/friedrichstrasse-in-berlin-mitte-sitzmoebel-werden-bereits-am-donnerstag-abgebaut-li.364385
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1340711.php
+#: by: https://berliner-abendblatt.de/berlin-news/senatorin-friedrichstrasse-nicht-dauerhaft-autostrasse-id225746
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
-#: priority: #A
-#: last_checked: 2023-06-15
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-07-01
+# REMOVED --- #: priority: #A --- #: last_checked: 2023-06-15 --- #: check_frequency: 30d --- #: next_check: 2023-07-01
 # REMOVED --- #: valid: !20200821-20221122
-Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
+Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # REMOVED --- #: valid: 20200821-20221122 --- Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 Friedrichstr. (Mitte, Kreuzberg)	H 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662 9303,12718 9298,12765 9286,12886 9279,12953 9269,13060 9262,13111 9254,13171 9246,13235 9225,13389 9212,13471
@@ -900,8 +899,9 @@ Potsdamer Str. (Schöneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
 #: XXX wird die Straße zur Fußgängerzone?
+#: XXX laut StefanHRT mittlerweile Verbundsteinpflaster, zumindest an der Einmündung Potsdamer Platz
 #: osm_watch: way id="4597334" version="27"
-#: last_checked: 2023-05-31
+#: last_checked: 2023-06-30
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
