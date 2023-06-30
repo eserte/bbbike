@@ -671,9 +671,7 @@
             (insert line)
             (insert "\n"))
 	  (grep-mode))
-        (split-window-vertically)
-        (other-window 1)
-        (pop-to-buffer buffer))))))
+	(pop-to-buffer buffer))))))
 
 (defun bbbike-grep-button (button)
   (bbbike-grep))
