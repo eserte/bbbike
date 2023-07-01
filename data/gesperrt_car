@@ -432,17 +432,21 @@ Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::ignd
 Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14709,12156
 Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14926,12129 14888,11934
 Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14888,11934 14926,12129 14854,12137
-Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9246,13235 9254,13171 9262,13111
+Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9244,13253 9246,13235 9254,13171 9262,13111
+Friedrichstr. -> Passage am Tacheles: Friedrichstr. (Straßenbahn)	3::igndisp 9225,13389 9244,13253 9353,13273
+Passage am Tacheles -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9353,13273 9244,13253 9246,13235
 Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9254,13171 9246,13235 9132,13187
-Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9132,13187 9246,13235 9225,13389
+Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9132,13187 9246,13235 9244,13253
 Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9246,13235 9254,13171 9385,13174
 Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9262,13111 9269,13060 9279,12953
 Friedrichstr. -> Ziegelstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9262,13111 9269,13060 9401,13072
 Ziegelstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9401,13072 9269,13060 9279,12953
-Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9293,13366 9415,13315
+Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9293,13366 9371,13333 9415,13315
 Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9225,13389 9293,13366 9312,13388
-Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9312,13388 9293,13366 9415,13315
+Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9312,13388 9293,13366 9371,13333
+Oranienburger Str. -> Passage am Tacheles: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9415,13315 9371,13333 9353,13273
+Passage am Tacheles -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9353,13273 9371,13333 9293,13366
 Durchfahrt für Autofahrer per Poller gesperrt	3nocross::ignrte 5966,6747 5928,6768 5896,6785 5811,6833
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5928,6768 5896,6785 5783,6635
@@ -992,12 +996,12 @@ Neue Schönholzer Str. - Wollankstr.	3 10141,18030 10089,18180 10027,18165
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
-Mittelstreifen	3nocross::ignrte 6152,9136 6264,9156 6361,9175
+Mittelstreifen	3nocross::ignrte 6142,9134 6264,9156 6361,9175
 Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6276,9042
-Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6152,9136 6264,9156 6255,9194
+Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6142,9134 6264,9156 6255,9194
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6361,9175
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
-Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6152,9136
+Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6142,9134
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
 Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6278,9925
@@ -1006,12 +1010,12 @@ Else-Lasker-Schüler-Str.: Poller	3 7281,10510 7227,10489 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
 Mittelstreifen	3nocross::ignrte 5091,7676 5073,7660 5051,7631
-Südwestkorso -> Görresstr.: Mittelstreifen	3::igndisp 5091,7676 5073,7660 5188,7536
+Südwestkorso -> Görresstr.: Mittelstreifen	3::igndisp 5091,7676 5073,7660 5194,7540
 Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5051,7631 5073,7660 5052,7686
 Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5091,7676
-Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5188,7536
-Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5188,7536 5073,7660 5051,7631
-Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5073,7660 5052,7686
+Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5194,7540
+Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5194,7540 5073,7660 5051,7631
+Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5194,7540 5073,7660 5052,7686
 Überqueren verboten	3nocross::ignrte 6687,8385 6744,8349 6807,8309 6935,8208
 Feurigstr. -> Dominicusstr.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6935,8208
 Feurigstr. -> Gustav-Freytag-Str.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6779,8279
@@ -1680,9 +1684,9 @@ Rüdesheimer Str.	1 4322,7085 4393,7266
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 Mittelstreifen	3nocross::ignrte 4467,9163 4609,9027 4689,8953
 Gieselerstr. -> Brandenburgische Str.: Mittelstreifen	3::igndisp 4619,9200 4609,9027 4689,8953
-Mittelstreifen	3nocross::ignrte 4783,8557 4772,8599 4777,8731
-Blissestr. -> zur Mannheimer Str./Wilmersdorf: Mittelstreifen	3::igndisp 4783,8557 4772,8599 4456,8598
-zur Mannheimer Str./Wilmersdorf -> Blissestr.: Mittelstreifen	3::igndisp 4456,8598 4772,8599 4777,8731
+Mittelstreifen	3nocross::ignrte 4769,8563 4766,8598 4777,8731
+Blissestr. -> zur Mannheimer Str./Wilmersdorf: Mittelstreifen	3::igndisp 4769,8563 4766,8598 4456,8598
+zur Mannheimer Str./Wilmersdorf -> Blissestr.: Mittelstreifen	3::igndisp 4456,8598 4766,8598 4777,8731
 Landhausstr.	1 5343,8858 5341,8931
 Mittelstreifen	3nocross::ignrte 5635,9018 5725,9041 5783,9060
 Berliner Str. -> Helmstedter Str.: Mittelstreifen	3::igndisp 5635,9018 5725,9041 5711,9357

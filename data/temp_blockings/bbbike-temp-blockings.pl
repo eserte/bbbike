@@ -12178,8 +12178,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009394',
        data  => <<EOF,
-	2::inwork 4280,8188 4344,8246 4423,8315 4473,8351 4623,8457 4783,8557
-	2::inwork 4772,8599 4456,8598
+	2::inwork 4280,8188 4344,8246 4423,8315 4473,8351 4623,8457 4769,8563
+	2::inwork 4766,8598 4456,8598
 	2::inwork 4473,8351 4457,8372 4457,8484
 EOF
      },
@@ -22683,7 +22683,7 @@ EOF
        text  => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5073,7660
+	q4::inwork; 5352,7428 5318,7424 5273,7460 5194,7540 5073,7660
 EOF
      },
      { from  => 1379149200, # 2013-09-14 11:00
@@ -23751,10 +23751,11 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Gartenufer: nachts ab Sonnenuntergang, spätestens ab 21.00 Uhr gesperrt',
+       text  => 'Gartenufer: nachts gesperrt (Mo-Fr ab 18:30 Uhr, am Wochenende ab 19:30 Uhr)',
        recurring => 1,
        data  => <<EOF,
-#: tempex: min(sunset,T21:00)-sunrise
+#: note: auf dem Schild steht "werktags", aber vermutlich ist Mo-Fr gemeint
+#: tempex: (mo-fr T18:30-sunrise),(sa,su T19:30-sunrise)
 Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 EOF
      },
@@ -30807,21 +30808,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, #
+       until => 1688217078, # undef, #
        text  => 'Voltairestr.: Einbahnstraße wegen Bauarbeiten, offen Richtung Osten',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: VOLTAIRE-2019
-#: osm_watch: way id="194962398" version="14"
-#: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
+# REMOVED --- #: osm_watch: way id="194962398" version="14" --- #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021) (inaktiv)
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023) (bis 03.07.2023)
 #: note: laut rbb mittlerweile bis 30.12.2022
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-23
-#: check_frequency: 30d
-#: next_check: 2023-07-03
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2023-07-01 --- #: check_frequency: 30d --- #: next_check: 2023-07-03
 	q4::inwork; 11329,12497 11202,12426
 EOF
      },
@@ -31205,7 +31202,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-01
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32298,7 +32295,7 @@ Altstadt Spandau: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp:
 #: note ^^^
 Bergmannstr. (Kreuzberg): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252 9793,9241 9880,9233 9973,9232 10001,9234 10123,9233 10547,9233
 Bölschestr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
-Friedrichstr. (Mitte): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9212,13471 9225,13389 9246,13235 9254,13171 9262,13111 9269,13060 9279,12953 9286,12886 9298,12765 9303,12718 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351 9369,12253 9373,12197 9384,12103 9393,12000 9405,11903 9418,11804 9432,11702 9444,11616 9456,11513 9468,11412 9474,11360 9478,11317
+Friedrichstr. (Mitte): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9212,13471 9225,13389 9244,13253 9246,13235 9254,13171 9262,13111 9269,13060 9279,12953 9286,12886 9298,12765 9303,12718 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351 9369,12253 9373,12197 9384,12103 9393,12000 9405,11903 9418,11804 9432,11702 9444,11616 9456,11513 9468,11412 9474,11360 9478,11317
 Karl-Marx-Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 13236,6489 13200,6550 13141,6651 13121,6689 13117,6716 13085,6925 13072,7013 13068,7043 13058,7112 13051,7157 13043,7234 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471 12987,7560 12972,7602 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823,8028 12788,8101 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955 11831,8989
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2415,9765 2445,9838 2473,9861 2532,9911 2590,9949 2694,10002 2702,10006 2770,10024 2828,10040 2974,10081 3111,10116 3189,10141 3289,10174 3374,10201 3489,10240 3562,10264 3618,10283 3737,10322 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4496,10504 4672,10552 4838,10597 5069,10662 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2445,9838 2369,9779
@@ -34961,8 +34958,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr vvv
-#: last_checked: 2023-06-23 vvv
+#: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
+#: last_checked: 2023-07-01 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="36"
@@ -35355,16 +35352,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2022-11-26 17:00:00"), # undef, # XXX
+       until => 1688214874, # undef, # $isodate2epoch->("2022-11-26 17:00:00"), # undef, # XXX
        text  => 'Ravensberger Str.: Einbahnstraßenregelung', # was: 'Zähringerstr.: Einbahnstraßenregelung', # früher: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
        type  => 'handicap',
        data  => <<EOF,
-#: osm_watch: way id="874517258" version="10"
+# REMOVED --- #: osm_watch: way id="874517258" version="10"
 # REMOVED --- #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022) (inaktiv)
-#: last_checked: 2023-04-02
-#: check_frequency: 60d
+# REMOVED --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben? --- #: last_checked: 2023-07-01 --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
 # REMOVED ---	q4::inwork 4126,9932 3927,9935
@@ -36687,7 +36682,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-06-30
+#: last_checked: 2023-07-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -36922,20 +36917,20 @@ EOF
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-06-23 vvv
+#: last_checked: 2023-07-01 vvv
 #: next_check: 2023-07-31 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
 # REMOVED (hier nicht mehr) --- Friedrichstr.	q3::inwork; 9212,13471 9225,13389
-# REMOVED (hier nicht mehr) --- Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9246,13235
-Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9262,13111 9254,13171 9246,13235 9225,13389
+# REMOVED (hier nicht mehr) --- Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9244,13253 9246,13235
+Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9262,13111 9254,13171 9246,13235 9244,13253 9225,13389
 # REMOVED (hier nicht mehr) --- Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
 # REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
 # REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
-# ungünstiges Routing ---	3 9246,13235 9225,13389 9312,13388
-# ungünstiges Routing ---	3 9312,13388 9225,13389 9246,13235
+# ungünstiges Routing ---	3 9246,13235 9244,13253 9225,13389 9312,13388
+# ungünstiges Routing ---	3 9312,13388 9225,13389 9244,13253 9246,13235
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -37585,7 +37580,7 @@ EOF
 # REMOVED (vermutlich andere Baumaßnahme) --- source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2024
-#: last_checked: 2023-04-02
+#: last_checked: 2023-07-01
 #: check_frequency: 120d
 #: next_check: 2024-04-30
 	q4::inwork; 5172,8880 5165,8784
@@ -38318,13 +38313,13 @@ EOF
      },
      { from  => 1678819239, # 2023-03-14 19:40
        until => undef, # 1688162400, # 2023-07-01 00:00
-       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, evtl. bis zum 30.6.2023, vielleicht noch länger',
+       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, voraussichtlich bis Ende 2023, vielleicht noch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="1"
 #: last_checked: 2023-05-21 (mapillary)
-#: next_check: 2023-07-01
+#: next_check: 2023-12-31
 	2::inwork 13078,21754 13031,21538 12980,21411
 EOF
      },
@@ -38521,7 +38516,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 EOF
      },
      { from  => 1677452400, # 2023-02-27 00:00
-       until => $isodate2epoch->("2023-11-30 18:00:00"), # 1685743200, # 2023-06-03 00:00
+       until => 1688234742, # $isodate2epoch->("2023-11-30 18:00:00"), # 1685743200, # 2023-06-03 00:00
        text  => 'Passow: Bahnübergang komplett gesperrt, bis zum 1.7.2023 (Umfahrungsmöglichkeit über Ortsumfahrung Passow, Kraftfahrzeugstr. wurde hier aufgehoben, Routing in BBBike nicht möglich), evtl. auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -38530,10 +38525,7 @@ EOF
 #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
 #: by: https://www.schwedt.eu/de/31978 (Verlängerung bis 1.7.2023, allerdings nicht täglich)
 #: by: https://www.schwedt.eu/de/31541
-#: also_indoor: traffic (G,W)
-#: last_checked: 2023-06-02 (traffic)
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2023-07-01
+# REMOVED --- #: also_indoor: traffic (ex-G,ex-W) --- #: last_checked: 2023-06-02 (traffic) --- #: check_frequency: 14d --- #: next_check: 2023-07-01
 	2::inwork 56280,83440 56301,83419 56317,83407
 EOF
      },
@@ -38691,7 +38683,7 @@ EOF
      },
      { from  => 1682571600, # 2023-04-27 07:00
        until => 1689346800, # 2023-07-14 17:00
-       text  => 'Berlepschstr.: Sperrungen in Höhe Kösterstr. und Dallwitzstr., evtl. sind auch Radfahrer betroffen, vom 28.04.2023 07:00 bis 14.07.2023 17:00',
+       text  => 'Berlepschstr.: Sperrungen der Fahrbahn in Höhe Kösterstr. und Dallwitzstr., vom 28.04.2023 07:00 bis 14.07.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1646541311606923270#m (28.04.2023-15.07.2023, nur für Kfz-Verkehr)
@@ -38995,10 +38987,11 @@ EOF
        text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. dürfen Radfahrer den Gehweg benutzen, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
-#: last_checked: 2023-05-29
+#: last_checked: 2023-07-01
 #: check_frequency: 30d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -39434,9 +39427,11 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ROTESRATHAUS-2023
+#: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
 #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-01
 #: check_frequency: 7d
+#: next_check: 2023-07-05
 	2::temp 10704,12595 10601,12521
 EOF
      },
@@ -39467,6 +39462,19 @@ EOF
        source_id => 'viz2021:13.378482,52.51322,30.06.2023,06:00',
        data  => <<EOF,
 	q4::temp; 8577,11896 8783,11959
+EOF
+     },
+     { from  => $isodate2epoch->("2023-06-18 08:00:00"),
+       until => $isodate2epoch->("2023-10-28 17:00:00"),
+       text  => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, Gesamtbaumaßnahme bis Ende Oktober 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
+#: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind
+#: last_checked: 2023-06-28 (mapillary)
+#: next_check: 2023-10-23
+Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 EOF
      },
     );

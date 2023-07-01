@@ -35,7 +35,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
 H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
 Turmstr.: Bauarbeiten, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
-Turmstr.: Bauarbeiten, Engstellen, Umweg ¸ber den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330
+Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 Thusnelda-Allee: noch offen f¸r Radfahrer, aber Einschr‰nkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
 Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,13381
 Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
@@ -732,7 +732,7 @@ Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
 M¸ggelpark: Fuﬂg‰nger	q2 25695,4714 25658,4619 25656,4578 25772,4543
 (entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
-Gˆrresstr.: enge Straﬂe	q1 5073,7660 5188,7536 5272,7458 5318,7424
+Gˆrresstr.: enge Straﬂe	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8011,13128 8106,13130
 Washingtonplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 8011,13128 7937,13126
@@ -1132,7 +1132,7 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15239,13580 15247,13662
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15204,14087 15189,14027 15118,13961
-(Park am Fuﬂg‰nger): Fuﬂg‰nger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
+(Park am Fuﬂg‰nger): Fuﬂg‰nger, drei Stufen oder verwinkelte Rampe	q3 15256,14237 15204,14087
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Bernhard-B‰stlein-Str. - Park am Fennpfuhl): Fuﬂg‰nger	q1 15354,13998 15267,13967 15254,13899
@@ -1987,7 +1987,7 @@ Siegfried-Hirschmann-Park: einige Fuﬂg‰nger	q2 14830,11551 14808,11520 14779,115
 Siegfried-Hirschmann-Park: einige Fuﬂg‰nger	q4 14779,11505 14745,11487
 Siegfried-Hirschmann-Park: einige Fuﬂg‰nger	q2 14745,11487 14684,11456
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
-Heilbronner Str.: einige Fuﬂg‰nger	q1 6140,9338 6144,9295 6131,9241
+Heilbronner Str.: einige Fuﬂg‰nger	q1 6140,9338 6144,9295 6132,9246
 Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
 Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
 (Weg im Anita-Berber-Park): einige Fuﬂg‰nger	q1 11677,7351 11751,7366 12158,7449
@@ -2189,7 +2189,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Gehrensee - Grenzweg): einige Fuﬂg‰nger	q1 21100,19107 21169,19146
 (Barnimer Dˆrferweg - Gehrensee): einige Fuﬂg‰nger	q1 21035,19005 21040,19007 21015,19070
 Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-Schloﬂplatz: Fuﬂg‰nger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
+Schloﬂplatz: einige Fuﬂg‰nger	q2 10174,12284 10102,12384
 Schloﬂplatz: einige Fuﬂg‰nger	q2 10102,12384 10063,12438
 (Lustgarten - Schloss): Fuﬂg‰ngerzone	q4 10152,12491 10175,12435
 (Uferweg am Humboldtforum): Fuﬂg‰ngerzone	q4 10357,12356 10336,12404 10271,12503 10243,12546
@@ -2459,6 +2459,7 @@ Kuppenheimerstr.: einige Fuﬂg‰nger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Schˆnholzer Heide, Germanenstr. - Friesenstr.): gemeinsamer Geh- und Radweg	q1 8348,19304 8405,19336 8484,19401
 (Vorfahrt Neues-Deutschland-Geb‰ude): einige Fuﬂg‰nger	q2 12788,11898 12891,12008
 (Hans-Schmidt-Str. - Merlitzstr.): einige Fuﬂg‰nger	q2 19667,3578 19746,3501
+(Passage am Tacheles): Fuﬂg‰nger	q4 9371,13333 9353,13273 9244,13253
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

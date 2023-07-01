@@ -23,7 +23,7 @@ Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-06-24 vvv
+#: last_checked: 2023-07-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -245,7 +245,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-01
 #: check_frequency: 7d
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2 10704,12595 10695,12616 10615,12642 10542,12587
 # 
@@ -333,7 +333,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-01
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -623,13 +623,11 @@ Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="30195541" version="38"
-#: osm_watch: way id="1101061991" version="10"
-#: osm_watch: way id="310164489" version="29"
+#: osm_watch: way id="692480562" version="14"
 #: last_checked: 2023-06-28 (osm)
 #: check_frequency: 30d
-Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5857,13342 5956,13330
-# REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
+# REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- #: osm_watch: way id="30195541" version="38" --- #: osm_watch: way id="1101061991" version="10" --- #: osm_watch: way id="310164489" version="30" --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
 #: source_id: bvg2021:101#BVG301286_0
 #: osm_watch: way id="4571954" version="32"
@@ -917,19 +915,20 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv)
 #: osm_watch: way id="1096203482" version="7"
 #: also_indoor: traffic (ex-H,B,ex-G,W)
-#: last_checked: 2023-05-25
+#: last_checked: 2023-07-01
 #: check_frequency: 90d
-#: next_check: 2023-06-28
+# REMOVED --- #: next_check: 2023-06-28
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2023-05-11 (architektur-urbanistik) vvv
+#: last_checked: 2023-07-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
 #: osm_watch: way id="51196438" version="21"
+#: note: der Zweirichtungsradweg-Abschnitt ist etwa 100m lang
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1015,7 +1014,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2023-06-18
+#: last_checked: 2023-06-28 (mapillary)
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -1889,7 +1888,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="16"
-#: last_checked: 2023-06-12
+#: last_checked: 2023-07-01
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -2156,7 +2155,7 @@ Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fußgänger	q2 25571,4553 25658,4619
 Müggelpark: Fußgänger	q2 25695,4714 25658,4619 25656,4578 25772,4543
 (entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuß- und Radweg	q1+ 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
-Görresstr.: enge Straße	q1 5073,7660 5188,7536 5272,7458 5318,7424
+Görresstr.: enge Straße	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8011,13128 8106,13130
 #: XXX_prog: eigentlich 1s:q3 in gesperrt-orig, aber Konflikt mit dem handicap_s-Eintrag in die andere Richtung (stimmt das?)
@@ -2684,7 +2683,8 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fußgänger	q1 15239,13580 15247,13662
 (Park am Fennpfuhl): Fußgänger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fußgänger	q1 15204,14087 15189,14027 15118,13961
-(Park am Fußgänger): Fußgänger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
+#: note: Grünanlagenschild
+(Park am Fußgänger): Fußgänger, drei Stufen oder verwinkelte Rampe	q3 15256,14237 15204,14087
 (Park am Fennpfuhl): Fußgänger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fußgänger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Bernhard-Bästlein-Str. - Park am Fennpfuhl): Fußgänger	q1- 15354,13998 15267,13967 15254,13899
@@ -3880,7 +3880,7 @@ Siegfried-Hirschmann-Park: einige Fußgänger	q4+ 14779,11505 14745,11487
 Siegfried-Hirschmann-Park: einige Fußgänger	q2 14745,11487 14684,11456
 #: XXX_prog BS am südlichen Ende, ansonsten entfernen
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
-Heilbronner Str.: einige Fußgänger	q1- 6140,9338 6144,9295 6131,9241
+Heilbronner Str.: einige Fußgänger	q1- 6140,9338 6144,9295 6132,9246
 #: XXX_prog BS, ansonsten entfernen
 Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
 #: XXX_prog BS, ansonsten entfernen
@@ -4145,14 +4145,8 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-#: next_check_id: EINHEITSDENKMAL-2022
-#: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
-#: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören?
-#: last_checked: 2023-06-15
-#: check_frequency: 45d
-#: next_check: 2023-10-01
-# REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
-Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
+# REMOVED --- #: next_check_id: EINHEITSDENKMAL-2022 --- #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/ --- #: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören? --- #: last_checked: 2023-06-15 --- #: check_frequency: 45d --- #: next_check: 2023-10-01 --- Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
+Schloßplatz: einige Fußgänger	q2 10174,12284 10102,12384
 Schloßplatz: einige Fußgänger	q2 10102,12384 10063,12438
 #: note: Fußgängerzone, das Zusatzschild bittet zum Absteigen, allerdings sind die Wege hier weitläufig und die Fußgängerfrequenz nicht sehr hoch vvv
 (Lustgarten - Schloss): Fußgängerzone	q4+ 10152,12491 10175,12435
@@ -4630,6 +4624,8 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Vorfahrt Neues-Deutschland-Gebäude): einige Fußgänger	q2+ 12788,11898 12891,12008
 # 
 (Hans-Schmidt-Str. - Merlitzstr.): einige Fußgänger	q2 19667,3578 19746,3501
+# 
+(Passage am Tacheles): Fußgänger	q4 9371,13333 9353,13273 9244,13253
 # 
 ######################### User Contributions #################################
 # 

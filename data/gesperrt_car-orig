@@ -269,9 +269,9 @@ Mainzer Str./Frankfurter Allee	3nocross 14381,12207 14427,12199 14488,12188
 Colbestr./Frankfurter Allee	3nocross 14488,12188 14523,12183 14582,12174 14621,12168
 Kinzigstr./Frankfurter Allee	3nocross 14523,12183 14582,12174 14621,12168 14709,12156
 Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14709,12156 14854,12137 14926,12129 14994,12121
-Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9246,13235 9254,13171 9262,13111
+Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9244,13253 9246,13235 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross 9262,13111 9269,13060 9279,12953
-Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9225,13389 9293,13366 9415,13315
+Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9225,13389 9293,13366 9371,13333 9415,13315
 Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5928,6768 5896,6785 5811,6833
 #: by: rjoop:
 Putlitzstr.	1 6212,13944 6204,14220
@@ -548,7 +548,7 @@ Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
 #: XXX_prog für Anhänger auch nicht geeignet, Mittelstreifen zu schmal
-Grunewaldstr.: Mittelstreifen	3nocross 6152,9136 6264,9156 6361,9175
+Grunewaldstr.: Mittelstreifen	3nocross 6142,9134 6264,9156 6361,9175
 #: note: Breite zwischen Pollern ca. 150cm
 Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6278,9925
@@ -983,7 +983,7 @@ Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer
 Brandenburgische Str.: Mittelstreifen	3nocross 4467,9163 4609,9027 4689,8953
 #: note: auch keine Überquerungsmöglichkeit für Fußgänger, Umweg über Ampel erforderlich
-Blissestr.: Mittelstreifen	3nocross 4783,8557 4772,8599 4777,8731
+Blissestr.: Mittelstreifen	3nocross 4769,8563 4766,8598 4777,8731
 #: note: Radfahrer können den Gehweg durch die Grünfläche nutzen
 Landhausstr.	1 5343,8858 5341,8931
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer ca. 20 Meter westlich der Kreuzung

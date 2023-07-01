@@ -600,7 +600,6 @@ Steigung 3.1% (Gehrenseestr.)	St; 18316,16636 18478,16753
 Steigung 3.1% (Fichtenauer Str.)	St; 30179,3966 30210,4046
 Steigung 3.1% (Bornholmer Str.)	St; 9514,16603 9617,16590
 Steigung 3.1% (Bornholmer Str.)	St; 10197,16528 10134,16534
-Steigung 3.1% (Blissestr.)	St; 4784,8508 4788,8354
 Steigung 3.1% ((Oskar-Ziethen-Krankenhaus))	St; 16541,12071 16556,12180
 Steigung 3.0% (Zur Gartenstadt)	St; 21800,-109 21769,-30
 Steigung 3.0% (Wilhelmstr. (Wilhelmstadt))	St; -5509,11256 -5564,11209
@@ -632,6 +631,7 @@ Steigung 3.0% (Germanenstr. (Altglienicke))	St; 20340,1401 20365,1394
 Steigung 3.0% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10688,13963 10606,14005
 Steigung 3.0% (Drakestr. (Lichterfelde))	St; 3185,4109 3214,4066
 Steigung 3.0% (Brodauer Str.)	St; 22469,11627 22554,11681
+Steigung 3.0% (Blissestr.)	St; 4772,8513 4778,8354
 Steigung 3.0% (B2: Potsdam - Lutherstadt Wittenberg)	St; -13051,-3101 -12951,-3008
 Steigung 3.0% (B2: Potsdam - Lutherstadt Wittenberg)	St; -12951,-3008 -12915,-2922
 Steigung 3.0% (Am Pfingstberg)	St; 3225,24431 3188,24487
@@ -665,8 +665,6 @@ Steigung 2.9% (Hohenschönhauser Weg (Friedrichsfelde))	St; 18420,11864 18411,121
 Steigung 2.9% (Hochstr. (Gesundbrunnen))	St; 8557,15373 8596,15427
 Steigung 2.9% (Hochstr. (Gesundbrunnen))	St; 8456,15235 8557,15373
 Steigung 2.9% (Haynauer Str.)	St; 8053,3131 8036,3253
-Steigung 2.9% (Fontanestr. (Grunewald))	St; 972,8626 945,8659
-Steigung 2.9% (Fontanestr. (Grunewald))	St; 945,8659 930,8746
 Steigung 2.9% (Feldlerchenweg)	St; 7109,22919 7000,23095
 Steigung 2.9% (Eickstedt - Wallmow)	St; 53742,102795 53777,102984
 Steigung 2.9% (Drakestr. (Lichterfelde))	St; 3142,4173 3048,4305
@@ -721,6 +719,8 @@ Steigung 2.8% (Gartenstr. (Mitte, Gesundbrunnen))	St; 8663,14960 8570,15107
 Steigung 2.8% (Gartenstadtweg)	St; 21536,603 21527,547
 Steigung 2.8% (Fredersdorfer Weg)	St; 30762,3864 30814,3875
 Steigung 2.8% (Fredersdorfer Weg)	St; 30713,3845 30762,3864
+Steigung 2.8% (Fontanestr. (Grunewald))	St; 972,8626 945,8659
+Steigung 2.8% (Fontanestr. (Grunewald))	St; 945,8659 926,8752
 Steigung 2.8% (Flughafenstr.)	St; 12195,8436 12083,8411
 Steigung 2.8% (Falkenbrunnstr.)	St; 21389,1124 21136,815
 Steigung 2.8% (Erdener Str.)	St; 1587,9320 1457,9344
@@ -1251,7 +1251,6 @@ Steigung 2.1% (Brinkmannstr.)	St; 7266,5292 7216,5303
 Steigung 2.1% (Brinkmannstr.)	St; 7216,5303 7095,5317
 Steigung 2.1% (Brauhausberg (Potsdam))	St; -12840,-2799 -12643,-2673
 Steigung 2.1% (Boddinstr.)	St; 12168,8313 12104,8299
-Steigung 2.1% (Blissestr.)	St; 4789,7859 4793,8005
 Steigung 2.1% (Bismarckallee)	St; 1920,9009 2098,9173
 Steigung 2.1% (Bismarckallee)	St; 1767,8853 1663,8747
 Steigung 2.1% (Biberpelzstr.)	St; 31514,2755 31565,2762
@@ -1357,6 +1356,7 @@ Steigung 2.0% (Burgfrauenstr.)	St; 3022,24393 2969,24382
 Steigung 2.0% (Burgfrauenstr.)	St; 2969,24382 2951,24389
 Steigung 2.0% (Burgfrauenstr.)	St; 2951,24389 2849,24530
 Steigung 2.0% (Bredtschneiderstr.)	St; 1975,11291 1861,11284
+Steigung 2.0% (Blissestr.)	St; 4789,7859 4786,8007
 Steigung 2.0% (Biberpelzstr.)	St; 31565,2762 31647,2729
 Steigung 2.0% (Beckerstr.)	St; 6303,6736 6155,6722
 Steigung 2.0% (Artemisstr.)	St; 4280,22383 4371,22234
@@ -1745,8 +1745,8 @@ Steigung 1.6% (Warschauer Str.)	St; 13391,10963 13409,11004
 Steigung 1.6% (Warschauer Str.)	St; 13332,10832 13391,10963
 Steigung 1.6% (Waldstr. (Bohnsdorf))	St; 21868,-1674 21758,-1707
 Steigung 1.6% (Vorbergstr.)	St; 7308,9163 7363,9152
-Steigung 1.6% (Trabener Str.)	St; 1457,9344 1341,9244
-Steigung 1.6% (Trabener Str.)	St; 1341,9244 1312,9220
+Steigung 1.6% (Trabener Str.)	St; 1457,9344 1325,9229
+Steigung 1.6% (Trabener Str.)	St; 1325,9229 1312,9220
 Steigung 1.6% (Thomasstr.)	St; 12685,7497 12564,7467
 Steigung 1.6% (Skandinavische Str.)	St; 17338,11969 17210,11950
 Steigung 1.6% (Seehofstr.)	St; 1238,2599 1130,2838
@@ -1831,6 +1831,9 @@ Steigung 1.6% (Bergstr. (Wannsee))	St; -6214,1709 -6202,1684
 Steigung 1.6% (Bendastr.)	St; 12715,6775 12702,6846
 Steigung 1.6% (Beiersdorfer Weg)	St; 30837,4521 30913,4766
 Steigung 1.6% (Bautzener Str.)	St; 8186,9380 8185,9338
+Steigung 1.6% (Baraschstr.)	St; 1708,9298 1537,9146
+Steigung 1.6% (Baraschstr.)	St; 1537,9146 1476,9142
+Steigung 1.6% (Baraschstr.)	St; 1476,9142 1435,9162
 Steigung 1.6% (Atzpodienstr.)	St; 16456,12191 16485,12384
 Steigung 1.6% (Attilastr.)	St; 7221,4255 7263,4281
 Steigung 1.6% (Attilastr.)	St; 7171,4200 7221,4255
@@ -1953,9 +1956,6 @@ Steigung 1.5% (Bersarinplatz)	St; 13698,12544 13675,12581
 Steigung 1.5% (Benfeyweg)	St; -8814,5428 -8797,5428
 Steigung 1.5% (Benfeyweg)	St; -8797,5428 -8731,5401
 Steigung 1.5% (Bayerischer Platz)	St; 6044,9223 6059,9118
-Steigung 1.5% (Baraschstr.)	St; 1708,9298 1569,9137
-Steigung 1.5% (Baraschstr.)	St; 1569,9137 1483,9132
-Steigung 1.5% (Baraschstr.)	St; 1483,9132 1434,9154
 Steigung 1.5% (Baerwaldstr.)	St; 10513,10038 10500,10081
 Steigung 1.5% (Baerwaldstr.)	St; 10480,9949 10513,10038
 Steigung 1.5% (Attilastr.)	St; 7263,4281 7310,4308
@@ -2404,6 +2404,7 @@ Steigung 1.2% (Boelckestr.)	St; 8660,8454 8616,8605
 Steigung 1.2% (Blockdammweg)	St; 17990,8963 18070,9022
 Steigung 1.2% (Blockdammweg)	St; 17979,8967 17990,8963
 Steigung 1.2% (Blockdammweg)	St; 17972,8968 17979,8967
+Steigung 1.2% (Blissestr.)	St; 4769,8563 4766,8598
 Steigung 1.2% (Bizetstr.)	St; 13867,15915 14056,15985
 Steigung 1.2% (Bernhard-Lichtenberg-Str. (Prenzlauer Berg))	St; 12494,14532 12676,14393
 Steigung 1.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9410,14410 9472,14478
@@ -2587,7 +2588,6 @@ Steigung 1.1% (Bänschstr.)	St; 14319,12629 14188,12664
 Steigung 1.1% (Bänschstr.)	St; 14188,12664 14058,12709
 Steigung 1.1% (Brauhofstr.)	St; 3486,12473 3606,12484
 Steigung 1.1% (Brauhofstr.)	St; 3472,12447 3486,12473
-Steigung 1.1% (Blissestr.)	St; 4783,8557 4772,8599
 Steigung 1.1% (Birkenstr. (Hessenwinkel))	St; 31927,2735 32031,2723
 Steigung 1.1% (Biberpelzstr.)	St; 31789,2636 31701,2701
 Steigung 1.1% (Biberpelzstr.)	St; 31701,2701 31647,2729
@@ -2797,7 +2797,7 @@ Steigung 1.0% (Bielefelder Str.)	St; 3814,9304 3816,9052
 Steigung 1.0% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9621,14624 9800,14722
 Steigung 1.0% (Berliner Str. (Wilmersdorf))	St; 4777,8870 4451,8874
 Steigung 1.0% (Bayernallee)	St; 320,11810 448,11831
-Steigung 1.0% (Baraschstr.)	St; 1421,9173 1434,9154
+Steigung 1.0% (Baraschstr.)	St; 1421,9173 1435,9162
 Steigung 1.0% (Baltenstr.)	St; 20663,599 20772,742
 Steigung 1.0% (Außenweg)	St; -7783,8524 -7457,8282
 Steigung 1.0% (Außenweg)	St; -7457,8282 -7431,8255
@@ -2807,7 +2807,7 @@ Steigung 1.0% (Am Schlachtensee)	St; -2323,3598 -1986,3703
 Steigung 1.0% (Am Schlachtensee)	St; -1986,3703 -1900,3700
 Steigung 1.0% (Am Klötzgraben)	St; 6779,23139 6817,23167
 Steigung 1.0% (Alter Bernauer Heerweg)	St; 6892,22843 6948,22862
-Steigung 1.0% ((zur Mannheimer Str./Wilmersdorf))	St; 4772,8599 4456,8598
+Steigung 1.0% ((zur Mannheimer Str./Wilmersdorf))	St; 4766,8598 4456,8598
 Steigung 1.0% ((Parkplatz Getränke Hoffmann))	St; 18647,12354 18715,12348
 Steigung 1.0% ((Mauerweg Spandau))	St; -5742,11314 -6012,11458
 Steigung 1.0% ((Haydnstr. - Märkische Allee))	St; 20006,12128 20026,12088

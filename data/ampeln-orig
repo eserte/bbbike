@@ -7,6 +7,13 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: KATHARINAPAULUS-2023
+#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023)
+#: last_checked: 2023-07-01
+#: check_frequency: 120d
+#: next_check: 2025-09-05
+	X::inwork 7873,12927
+# 
 #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023)
 #: last_checked: 2023-06-04
 #: next_check: 2023-09-30
@@ -130,7 +137,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
 #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023)
-#: last_checked: 2023-04-09
+#: last_checked: 2023-06-28 (mapillary)
 #: next_check: 2023-07-28
 #: valid: -20230728
 	F::inwork 11913,13077
@@ -833,7 +840,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 19957,5941
 	X 22467,6135
 	X 7389,8837
-	X 6152,9136
+	X 6142,9134
 	X 6059,9118
 	X 5492,8982
 	X 5494,8843
@@ -1027,7 +1034,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4976,9670
 	X 3521,9059
 	X 4280,8188
-	X 4783,8557
+	X 4769,8563
 	X 6753,10446
 	X 9330,12538
 	X 9262,13111
@@ -1125,7 +1132,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2023-06-30
+#: last_checked: 2023-07-01
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -1428,7 +1435,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6071,6559
 	X 6696,5854
 	X 5966,6747
-	X 4793,8005
+	X 4786,8007
 	X 4787,7788
 	X 4699,9505
 	X 4733,9931
@@ -2438,11 +2445,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
-#: XXX: vorhandene Ampel ist vermutlich wieder eingeschaltet, prüfen!
-#: last_checked: 2023-06-15
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-07-01
-# REMOVED --- #: valid: !20200821-20211031
+# REMOVED (ja) --- #: XXX: vorhandene Ampel ist vermutlich wieder eingeschaltet, prüfen! --- #: last_checked: 2023-06-15 --- #: check_frequency: 90d --- #: next_check: 2023-07-01 --- #: valid: !20200821-20211031
 	X 9418,11804
 # 
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
@@ -3326,8 +3329,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13199,23657
 	X 10603,16158
 	X 16964,3210
-	X 4788,8318
-	X 4788,8354
+	X 4779,8317
+	X 4778,8354
 	X 11214,16043
 	X -3891,13968
 #: note: Anforderungsampel für linksabbiegene Radfahrer (Tegeler Weg -> Max-Dohrn-Str.)
