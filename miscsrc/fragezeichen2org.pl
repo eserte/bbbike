@@ -395,8 +395,8 @@ for my $file (@files) {
 	     for ($dir->{source_id}) {
 		 my @viz_source_ids;
 		 for my $source_id (@{ $dir->{source_id} }) {
-		     if      ($source_id =~ m{^bvg2021:(\S+)}) {
-			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/$1"];
+		     if      ($source_id =~ m{^bvg2021:([^#\s]+)}) { # match the BVG line only; the BVG id cannot be used for linking
+			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#St%C3%B6rungsmeldungen"];
 		     } elsif ($source_id =~ m{^viz2021:}) {
 			 if ($source_id =~ m{^viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
 			     ($px,$py) = ($1,$2);
