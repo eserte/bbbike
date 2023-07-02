@@ -740,6 +740,19 @@
   'mouse-face 'bbbike-button-strike-hover
   'help-echo "Click button to show inactive source_id element (VMZ/VIZ)")
 
+(defun bbbike-bvg-button (button)
+  ;; It would be better to link directly to the traffic note,
+  ;; but unfortunately there's only an anchor available for
+  ;; the "Stoerungsmeldungen" section, not for the specific
+  ;; traffic notes.
+  (browse-url (concat "https://www.bvg.de/de/verbindungen/linienuebersicht/" (button-get button :bvgline) "#St%C3%B6rungsmeldungen")))
+
+(define-button-type 'bbbike-bvg-button
+  'action 'bbbike-bvg-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to show BVG traffic note")
+
 (defun bbbike-osm-button (button)
   (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
 
@@ -825,6 +838,19 @@
 	(make-button begin-pos end-pos
 		     :type button-type
 		     :sourceid source-id
+		     ))))
+
+  ;; recognize "#: source_id" bvg directives in bbd files
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]bvg2021:\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
+      (let* ((bvg-line-begin-pos (match-beginning 1))
+	     (bvg-line-end-pos (match-end 1))
+	     (link-end-pos (match-end 2))
+	     (bvg-line (buffer-substring bvg-line-begin-pos bvg-line-end-pos)))
+	(make-button bvg-line-begin-pos link-end-pos
+		     :type 'bbbike-bvg-button
+		     :bvgline bvg-line
 		     ))))
 
   ;; recognize "#: osm_watch" directives (ways etc.)
