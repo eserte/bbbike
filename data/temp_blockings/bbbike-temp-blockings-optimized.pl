@@ -3147,16 +3147,15 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023)
 #: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023)
 #: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023)
-#: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee
-#: next_check: 2023-07-03
+# REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+# REMOVED (bis 3.7.2023) --- Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 #: note vermutet
-Platz des 18. März	2::temp 8538,12245 8592,12252 8637,12258
-Scheidemannstr. + Dorotheenstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-Paul-Löbe-Allee	2::temp 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
+# REMOVED (bis 3.7.2023) --- Platz des 18. März	2::temp 8538,12245 8592,12252 8637,12258
+# REMOVED (bis 3.7.2023) --- Scheidemannstr. + Dorotheenstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+# REMOVED (bis 3.7.2023) --- Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
+# REMOVED (bis 3.7.2023) --- Paul-Löbe-Allee	2::temp 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
 #: note vermutet
 	2::temp 7823,12120 7816,12150
 #: note vermutet
@@ -4510,7 +4509,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-02
 #: check_frequency: 14d
 	2::inwork 16148,10329 16353,10207
 # REMOVED ---	2::inwork 15758,10578 16148,10329
@@ -4802,15 +4801,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-06-08
-#: check_frequency: 30d
+#: last_checked: 2023-07-02
+#: check_frequency: 14d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17468,8692 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Juni 2023: zurzeit keine Bauarbeiten)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Juli 2023: Bauarbeiten im mittleren Bereich möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6483,7 +6482,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-06-25 (mapillary)
+#: last_checked: 2023-07-02
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -6496,7 +6495,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-25
+#: last_checked: 2023-07-02
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -6817,20 +6816,20 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2023-06-26 vvv
-#: check_frequency: 45d vvv
-#: next_check: 2023-06-30 vvv
+         'data' => '#: last_checked: 2023-07-02 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED (ja, bereits eingetragen) --- #: XXX möglicherweise Asphaltierung?
 	q4::inwork 17856,8162 17793,8225 17753,8290
 #: note: Einschränkungen im Kreuzungsbereich
 	q3::inwork 17753,8290 17771,8349
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1679936842,
          'id' => 3756,
-         'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn gesperrt, vermutlich bis 30.06.2023, evtl. länger',
+         'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn kann gesperrt sein (Stand Anfang Juli 2023: Fahrbahn kann außerhalb der Arbeitszeiten offen sein)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7260,7 +7259,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-06-21 vvv
+#: last_checked: 2023-07-02 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -7300,7 +7299,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
-#: last_checked: 2023-06-15
+#: last_checked: 2023-07-02
 #: next_check: 2023-08-30
 	q4::temp::play 14208,12235 14055,11964
 ',
@@ -7333,7 +7332,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
        {
          'data' => '#: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-02
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 ',
@@ -7420,22 +7419,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: osm_watch: note 3359195 7
-#: osm_watch: way id="311338440" version="4"
-#: by: l.epp
-#: confirmed_by: osm, srt
-#: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
-#: last_checked: 2023-06-24
-#: check_frequency: 120d
-	2::inwork 2829,18126 2797,18126 2790,18139
-',
-         'from' => undef,
-         'id' => 3828,
-         'text' => 'Flughafensee: Brücke gesperrt, Ende der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
@@ -7518,7 +7502,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'data' => '#: next_check_id: ROTESRATHAUS-2023
 #: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
 #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-02
 #: check_frequency: 7d
 #: next_check: 2023-07-05
 	2::temp 10704,12595 10601,12521

@@ -408,6 +408,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-zeitung.de/news/friedrichstrasse-in-berlin-mitte-sitzmoebel-werden-bereits-am-donnerstag-abgebaut-li.364385
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1340711.php
 #: by: https://berliner-abendblatt.de/berlin-news/senatorin-friedrichstrasse-nicht-dauerhaft-autostrasse-id225746
+#: by: https://berliner-abendblatt.de/berlin-news/autos-zurueck-in-der-friedrichstrasse-id225944
 #: source_id: 2147346249 (vermutlich inaktiv)
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 # REMOVED --- #: priority: #A --- #: last_checked: 2023-06-15 --- #: check_frequency: 30d --- #: next_check: 2023-07-01
@@ -1406,11 +1407,13 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_14_1521_1636_online.pdf (Widmung)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8026
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036247069542/247069542/00279027/27-Anlagen/02/DS0254_VzK_BenennungeinerStrassenachFreiaEisne.pdf (erst 2023, nach Umwidmung in eine öffentliche Straße)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11017
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136/3Ip0mPrtHdHfEEJK92UAk9fSljJVnFBwbl4AUfvB/NdmfaPE/57-Anlagen/01/DS0766_Vzk_FreiaEisner.pdf
 #: XXX Vorschlag: Freia-Eisner-Straße; mittlerweile tatsächlich als "Planstraße C" offiziell ausgeschildert
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="15"
 #: priority: #C
-#: last_checked: 2023-06-04
+#: last_checked: 2023-07-02
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
@@ -1460,7 +1463,7 @@ Grunerstr.	HH 11105,12764 11141,12806
 Grunerstr.	HH 10849,12557 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 Grunerstr. [Gehweg]	NN 10900,12546 10973,12612 11057,12715
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
@@ -3420,7 +3423,7 @@ Grünfinkenweg	N 22312,48 22396,76 22451,95 22515,109 22591,105 22631,50
 Hasselwerderstr.	N 17960,5511 18013,5627 18164,5701 18260,5746 18312,5824 18326,5850
 #: oldname: Grünauer Str. (Niederschöneweide)
 Michael-Brückner-Str.	HH 17728,5756 17782,5698 17808,5669 17886,5587 17960,5511 18080,5376 18425,5032 18457,5000
-Adlergestell	HH 18457,5000 18725,4715 19226,4183 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464 19946,3415 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20339,2983 20451,2869 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21388,1895 21506,1768
+Adlergestell	HH 18457,5000 18725,4715 19226,4183 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464 19946,3415 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20339,2983 20451,2869 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21388,1895 21506,1768 21819,1595 21862,1532
 Adlergestell	H 21998,1239 21937,1343 21874,1511 21862,1532
 Adlergestell	H 21506,1768 21812,1366 21837,1340 22096,1136
 Adlergestell	H 21998,1239 22096,1136 22162,1067 22312,919 22351,862 22547,651 22916,402 23225,192 23457,35 24485,-667 25731,-1524 26286,-1901 26698,-2322 26871,-2500 26939,-2574 27017,-2660 27112,-2764 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
@@ -6116,7 +6119,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="5"
-#: last_checked: 2023-06-12
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -10861,9 +10864,10 @@ Am Seegraben (Bohnsdorf, Altglienicke)	HH 19618,-1021 19815,-909 19894,-835 1999
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_23_2333_2480_online.pdf (Benennung)
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/neuer-name-fuer-strassenabschnitt_a382189
 #: add_fragezeichen: Die Straße bekommt den Namen "Am Seegraben". Hängen bereits entsprechende Straßenschilder?
-#: last_checked: 2023-06-12
-#: next_check: 2023-06-29
-(B96a)	HH 20205,-548 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21506,1768
+#: last_checked: 2023-06-29 (mapillary)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2023-06-29
+(B96a)	HH 20205,-548 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532
 (B96a)	NN 21829,1351 21874,1511 21881,1513
 Drusenheimer Weg	H 11483,1401 11532,1295 11557,1252 11625,1203 11729,1102 11762,1040 11767,1007 11777,927 11791,834
 Drusenheimer Weg	N 11791,834 11794,550
@@ -13069,7 +13073,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
@@ -15448,7 +15452,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-02
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15836,7 +15840,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-02
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -19237,6 +19241,11 @@ Mehlbeerenweg	N 11993,11978 11940,11982 11909,11985
 Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 (Kleine Markusstr. - Krautstr.)	N 11937,12127 11958,12112 12021,12066
 (Krautstr. - Kleine Markusstr.)	N 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11016
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3Ip0mPrtHdHfEEJK92UAk9fSljJVnFBwbl4AUfvB/KGefaPE/54-Anlagen/01/DS0765_VzK_IngeMeysel.pdf
+#: XXX Benennung nach Inge Meysel; ist diese Straße gemeint?
+#: last_checked: 2023-06-28 (BVV-Beschluss)
+#: check_frequency: 90d
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
 (nördliches Spreeufer)	NN 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
@@ -20397,7 +20406,7 @@ Paul-und-Paula-Promenade	N 14886,10748 14984,10677
 # 
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-02
 #: check_frequency: 7d
 (Umleitungsstrecke Rotes Rathaus)	NN 10704,12595 10695,12616 10615,12642 10542,12587
 # 

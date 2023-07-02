@@ -950,7 +950,8 @@ Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflich
 Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
 #: osm_watch: way id="25216398" version="35"
 #: check_frequency: 30d
-Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699 21605,5687
+# REMOVED (bis zur Hilfsbrücke offen) --- Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699
+Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21618,5699 21605,5687
 # REMOVED (offen) --- Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21581,5670 21507,5620
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3573,6 +3574,17 @@ Drängelgitter	BNP:3::trailer=10 4067,22066
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: l.epp
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11479 (Instandsetzung frühestens 2025)
+#: confirmed_by: osm, srt
+#: osm_watch: note 3359195 7
+#: osm_watch: way id="311338440" version="4"
+#: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
+#: last_checked: 2023-06-24
+#: check_frequency: 360d
+#: next_check: 2025-09-01
+Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
+# 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,767543#msg-767543
 #: confirmed_by: srt
@@ -3602,7 +3614,7 @@ Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,120
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-06-21 vvv
+#: last_checked: 2023-07-02 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14984,10677
@@ -3765,6 +3777,7 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022) --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392 --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11381 (Ersuchen: Durchgang zu den Sportstätten)
 #: osm_watch: node id="1736425250" version="5"
 #: last_checked: 2022-11-08
 #: check_frequency: 360d
@@ -3831,7 +3844,7 @@ Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 #: osm_watch: way id="26322024" version="23"
 #: XXX Fahrbahn wird befestigt, vermutlich asphaltiert
 #: priority: #C
-#: last_checked: 2023-06-26
+#: last_checked: 2023-07-02
 #: check_frequency: 60d
 (Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 # 
@@ -3892,7 +3905,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-05-29
+#: last_checked: 2023-07-02
 #: check_frequency: 60d
 #: next_check: 2023-10-31
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
@@ -3960,7 +3973,7 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2023-06-08 vvv
+#: last_checked: 2023-07-02 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 #: osm_watch: way id="1061057020" version="7"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
@@ -4119,17 +4132,20 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fahrstuhl-in-johannisthal-erst-ab-2024-nutzbar_a368423
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2023-06-12 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2023-07-01 vvv
+#: last_checked: 2023-07-02 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2023-07-01 vvv
 Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
 # REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (Bauzaun offen) --- #: last_checked: 2021-09-09 --- #: check_frequency: 90d --- Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
+#: last_checked: 2023-07-02
+#: check_frequency: 90d
+Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
+# 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2021) --- #: last_checked: 2021-01-02 --- #: check_frequency: 30d --- #: next_check: 2021-06-01 --- (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # REMOVE (Weg offen) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php --- #: by: https://www.kms-sonne.de/projekte/blueberry-inn/ --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/in-anderthalb-jahren-soll-das-neue-blueberry-inn-an-der-reuterstrasse-fuer-kinder-und-jugendliche-oeffnen_a327431 (neuer Weg ist fast fertig, Eröffnung Anfang 2022) --- #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen --- #: last_checked: 2022-02-01 --- #: check_frequency: 120d --- #: next_check: 2023-01-01 --- #: valid: -20231231 --- Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12276,8590 12274,8607
 # 
@@ -4250,8 +4266,8 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 # 
 #: by: wosch
 #: confirmed_by: srt
-#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar 2023: 401) vvv
-#: last_checked: 2023-06-25 vvv
+#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
+#: last_checked: 2023-07-02 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4335,7 +4351,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4410,12 +4426,12 @@ Jüdenstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,123
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-06-30
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,12637
 # 
@@ -4534,7 +4550,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763
-#: last_checked: 2023-05-21 (krickstadt)
+#: last_checked: 2023-07-02
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4815,7 +4831,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
-#: last_checked: 2023-06-16 (architektur-urbanistik)
+#: last_checked: 2023-07-02
 #: check_frequency: 90d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
