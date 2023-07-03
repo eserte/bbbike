@@ -18472,8 +18472,8 @@ EOF
 #: historical_note: früher Bergmannstraßenfest, zwischenzeitlich Kreuzbergstraßenfest
 #: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
 #: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
-#: source_id: viz2021:13.3767,52.4894,30.06.2023,06:00 (bis 02.07.2023)
-#: source_id: viz2021:13.3767,52.4894,30.06.2023,08:00 (bis 02.07.2023)
+#: source_id: viz2021:13.3767,52.4894,30.06.2023,06:00 (bis 02.07.2023) (inaktiv)
+#: source_id: viz2021:13.3767,52.4894,30.06.2023,08:00 (bis 02.07.2023) (inaktiv)
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
@@ -22104,11 +22104,11 @@ EOF
 #: by: https://viz.berlin.de/2023/06/velocity-radrennen/
 #: source_id: IM_019938 (inaktiv)
 #: source_id: viz2021:13.35105,52.51478,29.06.2023,06:00 (bis 04.07.2023)
-#: source_id: viz2021:13.37737,52.51457,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.370818,52.517831,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023)
+#: source_id: viz2021:13.37737,52.51457,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.370818,52.517831,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 # REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
@@ -30815,7 +30815,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="194962398" version="14" --- #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021) (inaktiv)
 #: source_id: viz2021:13.4182,52.51748,20.12.2022,10:53 (bis 31.5.2023) (inaktiv)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023) (bis 03.07.2023)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022) (bis 31.5.2023) (bis 30.06.2023) (bis 03.07.2023) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2023-07-01 --- #: check_frequency: 30d --- #: next_check: 2023-07-03
 	q4::inwork; 11329,12497 11202,12426
@@ -34167,7 +34167,7 @@ EOF
 # REMOVED (wg. Konflikt mit XXX) --- #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 #: source_id: viz2021:13.37418,52.58681,02.08.2022,11:31 (bis 3.8.2022) (inaktiv)
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (evtl. Umstellung der Baustelle, zwischen Schillerstr. und Friesenstr. Gegenverkehrsregelung bis Ende März 2023, siehe auch Ampeln in der Germanenstr.) (inaktiv)
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito) (+ Sperrung diverser Einmündungen)
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito) (+ Sperrung diverser Einmündungen) (bis 30.11.2023)
 # REMOVED --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (H,B)--- #: last_checked: 2022-05-14 --- #: check_frequency: 45d --- #: next_check: 2022-08-03
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
@@ -37783,8 +37783,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
+#: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
+#: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-03
+#: last_checked: 2023-07-03
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 EOF
@@ -37799,18 +37801,19 @@ EOF
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="1155654228" version="7"
+#: osm_watch: way id="1155654228" version="8"
 #: last_checked: 2023-06-22 (osm note)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Juni 2023: noch immer gesperrt)',
+       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Anfang Juli 2023: noch immer gesperrt)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2023-07-02
 	q4::inwork; 17962,6674 17991,6431
@@ -37867,7 +37870,7 @@ EOF
        text  => 'Schule am Planetarium: Weg wird dauerhaft gesperrt, voraussichtlich ab 1.2.2023',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: ERNSTTHAELMANNPARK-2022
+# REMOVED --- #: next_check_id: ERNSTTHAELMANNPARK-2022
 # REMOVED --- #: priority: #A --- #: last_checked: 2023-01-20 --- #: next_check: 2023-02-01 --- #: XXX später nach gesperrt-orig überführen bzw. ganz aus strassen-orig entfernen
 	2::inwork 12103,15218 12208,15108
 EOF
@@ -39046,7 +39049,7 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="17"
+#: osm_watch: way id="58182828" version="18"
 #: last_checked: 2023-06-19
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
@@ -39073,7 +39076,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-18
+#: also_indoor: traffic (W)
+#: last_checked: 2023-07-03
 #: check_frequency: 14d
 #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
@@ -39462,6 +39466,37 @@ EOF
 #: last_checked: 2023-06-28 (mapillary)
 #: next_check: 2023-10-23
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
+EOF
+     },
+     { from  => 1688402822, # 2023-07-03 18:47
+       until => 1703890800, # 2023-12-30 00:00
+       text  => 'Meyerbeerstr.: Hochbauarbeiten, Fahrbahn zwischen Mahlerstr. und Borodinstr. gesperrt, voraussichtlich bis 29.12.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (B[falsch])
+#: last_checked: 2023-07-03
+#: check_frequency: 90d
+#: next_check: 2023-12-29
+	q4::inwork 13609,15706 13701,15744
+EOF
+     },
+     { from  => 1688270400, # 2023-07-02 06:00
+       until => 1689026340, # 2023-07-10 23:59
+       text  => 'Jesse-Owens-Allee: Veranstaltung, Richtung Passenheimer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 03.07.2023 06:00 bis 10.07.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.239886,52.511583,03.07.2023,06:00',
+       data  => <<EOF,
+	q4::temp; -790,11512 -1327,11376
+EOF
+     },
+     { from  => 1688304480, # 2023-07-02 15:28
+       until => 1689692400, # 2023-07-18 17:00
+       text  => 'Lüderstr.: Wasserrohrbruch, Sperrung zwischen Futranplatz und Freiheit, vom 03.07.2023 15:28 bis 18.07.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.578154,52.446933,03.07.2023,15:28',
+       data  => <<EOF,
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1675861551939477504
+	q4::inwork 22388,4737 22377,4836
 EOF
      },
     );

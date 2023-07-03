@@ -2616,41 +2616,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
-#: by: https://kreuzberg-festival.de/
-#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
-#: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
-#: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
-#: historical_note: früher Bergmannstraßenfest, zwischenzeitlich Kreuzbergstraßenfest
-#: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
-#: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
-#: source_id: viz2021:13.3767,52.4894,30.06.2023,06:00 (bis 02.07.2023)
-#: source_id: viz2021:13.3767,52.4894,30.06.2023,08:00 (bis 02.07.2023)
-	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
-	3 9000,9509 8970,9323 9007,9264
-	3 9007,9264 8970,9323 9000,9509
-	2::temp 9000,9509 8970,9323
-',
-         'from' => 1687989600,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
-         'text' => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (30.06.2023 bis 02.07.2023)',
-         'type' => 'gesperrt',
-         'until' => 1688335199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3142,11 +3108,11 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'data' => '#: by: https://viz.berlin.de/2023/06/velocity-radrennen/
 #: source_id: IM_019938 (inaktiv)
 #: source_id: viz2021:13.35105,52.51478,29.06.2023,06:00 (bis 04.07.2023)
-#: source_id: viz2021:13.37737,52.51457,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.370818,52.517831,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023)
-#: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023)
+#: source_id: viz2021:13.37737,52.51457,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.370818,52.517831,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
+#: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 # REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
@@ -6451,8 +6417,10 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        },
        {
          'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
+#: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
+#: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-03
+#: last_checked: 2023-07-03
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 ',
@@ -6467,7 +6435,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
 # REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="1155654228" version="7"
+#: osm_watch: way id="1155654228" version="8"
 #: last_checked: 2023-06-22 (osm note)
 südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 ',
@@ -6481,13 +6449,14 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
        {
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2023-07-02
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
          'id' => 3709,
-         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Juni 2023: noch immer gesperrt)',
+         'text' => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Anfang Juli 2023: noch immer gesperrt)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7173,7 +7142,7 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="17"
+#: osm_watch: way id="58182828" version="18"
 #: last_checked: 2023-06-19
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
@@ -7202,7 +7171,8 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
        {
          'data' => '#: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-18
+#: also_indoor: traffic (W)
+#: last_checked: 2023-07-03
 #: check_frequency: 14d
 #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
@@ -7558,6 +7528,40 @@ Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
          'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, Gesamtbaumaßnahme bis Ende Oktober 2023',
          'type' => 'handicap',
          'until' => 1698505200
+       },
+       {
+         'data' => '#: also_indoor: traffic (B[falsch])
+#: last_checked: 2023-07-03
+#: check_frequency: 90d
+#: next_check: 2023-12-29
+	q4::inwork 13609,15706 13701,15744
+',
+         'from' => 1688402822,
+         'id' => 3841,
+         'text' => 'Meyerbeerstr.: Hochbauarbeiten, Fahrbahn zwischen Mahlerstr. und Borodinstr. gesperrt, voraussichtlich bis 29.12.2023',
+         'type' => 'handicap',
+         'until' => 1703890800
+       },
+       {
+         'data' => '	q4::temp; -790,11512 -1327,11376
+',
+         'from' => 1688270400,
+         'id' => 3842,
+         'source_id' => 'viz2021:13.239886,52.511583,03.07.2023,06:00',
+         'text' => 'Jesse-Owens-Allee: Veranstaltung, Richtung Passenheimer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 03.07.2023 06:00 bis 10.07.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1689026340
+       },
+       {
+         'data' => '#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1675861551939477504
+	q4::inwork 22388,4737 22377,4836
+',
+         'from' => 1688304480,
+         'id' => 3843,
+         'source_id' => 'viz2021:13.578154,52.446933,03.07.2023,15:28',
+         'text' => 'Lüderstr.: Wasserrohrbruch, Sperrung zwischen Futranplatz und Freiheit, vom 03.07.2023 15:28 bis 18.07.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1689692400
        }
      
 );
