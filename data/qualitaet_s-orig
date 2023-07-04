@@ -16,10 +16,10 @@ Neuköllnische Allee: welliger Asphalt	Q2 14344,7003 14319,7001 14276,7021 14246,
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2019
-#: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
+#: XXX und außerdem auch schauen, ob es wieder zum Mergenthalerring wieder ein Tor gibt und dieses ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="6"
-#: last_checked: 2023-05-11 vvv
+#: last_checked: 2023-07-04 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="4"
@@ -386,7 +386,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="26"
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-04
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -4992,7 +4992,8 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Alter Hafen): Asphalt	Q0 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
 (Alter Hafen): Asphalt	Q0 10076,8040 10037,8269
 (südliche Landebahn - Alter Hafen): Verbundsteinpflaster	Q1- 10537,7257 10399,7415 10204,7680
-Ederstr.: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster	Q0 13946,7918 13958,8106
+#: historical_note: früher war hier ein ausgeschilderter Radweg: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster, Q0
+Ederstr.: Asphalt	Q0 13946,7918 13958,8106
 Ederstr.: Verbundsteinpflaster	Q0- 13958,8106 13967,8195 13939,8228
 (Zur Eisackstr.): unebenes Mosaikpflaster	Q1- 6388,7999 6418,7958 6429,7876
 Brascheweg: Asphalt mit einigen Schäden	Q1+ 18881,9865 18810,9850

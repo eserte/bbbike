@@ -3104,35 +3104,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/06/velocity-radrennen/
-#: source_id: IM_019938 (inaktiv)
-#: source_id: viz2021:13.35105,52.51478,29.06.2023,06:00 (bis 04.07.2023)
-#: source_id: viz2021:13.37737,52.51457,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.370818,52.517831,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-# REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
-Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
-# REMOVED (bis 3.7.2023) --- Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-#: note vermutet
-# REMOVED (bis 3.7.2023) --- Platz des 18. März	2::temp 8538,12245 8592,12252 8637,12258
-# REMOVED (bis 3.7.2023) --- Scheidemannstr. + Dorotheenstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-# REMOVED (bis 3.7.2023) --- Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-# REMOVED (bis 3.7.2023) --- Paul-Löbe-Allee	2::temp 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-#: note vermutet
-	2::temp 7823,12120 7816,12150
-#: note vermutet
-	2::temp 7429,12070 7383,12095
-',
-         'from' => 1687924800,
-         'id' => 2440,
-         'text' => 'Straße des 17. Juni, Yitzak-Rabin-Str. und weitere angrenzende Straßen wegen Vorbereitungen zur Velocity gesperrt, evtl. sind auch Radfahrer betroffen, 29.06.2023 06:00 bis 04.07.2023 18:00',
-         'type' => 'gesperrt',
-         'until' => 1688486400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5914,7 +5886,26 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
+# REMOVED --- #: source_id: bvg2021:396#BVG307357_0
+#: source_id: bvg2021:396#BVG323890_0
+#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
+# REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
+#: also_indoor: traffic (none)
+#: note: Halteverbot bis 24.7.2023 17h
+#: last_checked: 2023-07-04
+#: check_frequency: 14d
+#: next_check: 2023-07-24
+# REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
+	q4::inwork 15777,10897 15820,10916 15870,10938
+',
+         'from' => undef,
+         'id' => 3630,
+         'text' => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 24.07.2023, vielleicht auch länger',
+         'type' => 'handicap',
+         'until' => 1690210800
+       },
        undef,
        undef,
        undef,
@@ -6224,7 +6215,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-06-25
+#: last_checked: 2023-07-04
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -7040,6 +7031,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
 #: source_id: bvg2021:347#BVG321063_0
+#: also_indoor: traffic (none)
 #: last_checked: 2023-06-05
 #: check_frequency: 30d
 #: next_check: 2023-07-22
@@ -7140,10 +7132,10 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
        },
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren
+#: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="18"
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-04
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -7229,7 +7221,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-07-02 vvv
+#: last_checked: 2023-07-04 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -7464,15 +7456,15 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'from' => 1687644000,
          'id' => 3835,
          'source_id' => 'viz2021:13.29609,52.51176,26.06.2023,00:00',
-         'text' => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2023 00:00 bis 11.07.2023 23:59',
+         'text' => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2023 00:00 bis 25.07.2023 23:59',
          'type' => 'handicap',
-         'until' => 1689112740
+         'until' => 1690322399
        },
        {
          'data' => '#: next_check_id: ROTESRATHAUS-2023
 #: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
 #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-04 (webcam)
 #: check_frequency: 7d
 #: next_check: 2023-07-05
 	2::temp 10704,12595 10601,12521
@@ -7505,16 +7497,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'type' => 'handicap',
          'until' => 1691766000
        },
-       {
-         'data' => '	q4::temp; 8577,11896 8783,11959
-',
-         'from' => 1688011200,
-         'id' => 3839,
-         'source_id' => 'viz2021:13.378482,52.51322,30.06.2023,06:00',
-         'text' => 'Hannah-Arendt-Str.: Veranstaltung Richtung Französische Str. zwischen Ebertstr. und Cora-Berliner-Str. gesperrt, vom 30.06.2023 06:00 bis 04.07.2023 15:00',
-         'type' => 'handicap',
-         'until' => 1688475600
-       },
+       undef,
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
@@ -7562,6 +7545,31 @@ Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
          'text' => 'Lüderstr.: Wasserrohrbruch, Sperrung zwischen Futranplatz und Freiheit, vom 03.07.2023 15:28 bis 18.07.2023 17:00',
          'type' => 'handicap',
          'until' => 1689692400
+       },
+       {
+         'data' => '#: source_id: bvg2021:m43#BVG323893_0
+#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
+#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
+#: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
+#: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023)
+#: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023)
+#: source_id: viz2021:13.45273,52.48801,04.07.2023,00:00 (bis 21.07.2023)
+#: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
+#: last_checked: 2023-07-04 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2023-07-21 vvv
+Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
+Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
+Elsenstr.: Kreuzungsüberfahrt an der Karl-Kunger-Str. nicht möglich	q2::inwork; 13849,9310 13766,9200
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1688497366,
+         'id' => 3844,
+         'text' => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze EInbahnstraßenabschnitte, bis 21.07.2023',
+         'type' => 'handicap',
+         'until' => 1689951600
        }
      
 );
