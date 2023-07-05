@@ -3918,7 +3918,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
-#: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023)
+#: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
+#: note: bei rbb weiterhin gelistet, bis Ende 2023
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
 #: next_check: 2023-06-26
@@ -6004,7 +6005,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-07-04 (mapillary) vvv
 #: next_check: 2023-07-31 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -6354,7 +6355,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: also_indoor: traffic (none)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-06-02
+#: last_checked: 2023-07-04 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6898,18 +6899,21 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: osm_watch: way id="1172668082" version="4"
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-06-28 (osm)
-#: next_check: 2023-07-08
+#: last_checked: 2023-07-05 (Pressemitteilung)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2023-07-08
 	q4::inwork 20159,3623 20073,3734
 ',
          'from' => 1682892000,
          'id' => 3775,
-         'text' => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis 08.07.2023',
+         'text' => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1688832000
+         'until' => undef
        },
        {
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1646541311606923270#m (28.04.2023-15.07.2023, nur für Kfz-Verkehr)
@@ -7032,7 +7036,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
 #: source_id: bvg2021:347#BVG321063_0
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-05
+#: last_checked: 2023-07-05
 #: check_frequency: 30d
 #: next_check: 2023-07-22
 	q4::inwork 15090,10140 15050,10160
@@ -7194,7 +7198,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
        },
        {
          'data' => '#: next_check_id: TEMPELHOFERWEG-2023
-#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023)
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024)
 	q4::inwork; 12214,5554 12256,5591 12495,5659
 	q4::inwork; 12495,5659 12525,5510 12582,5232
 ',
@@ -7202,7 +7206,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'id' => 3810,
          'text' => 'Holzmindener Str., Am Straßenbahnhof: Einbahnstraßenregelung',
          'type' => 'handicap',
-         'until' => 1690815600
+         'until' => 1709222400
        },
        {
          'data' => '#: tempex: (sa) T10-T16
@@ -7464,9 +7468,9 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'data' => '#: next_check_id: ROTESRATHAUS-2023
 #: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
 #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-07-04 (webcam)
+#: last_checked: 2023-07-05 (webcam)
 #: check_frequency: 7d
-#: next_check: 2023-07-05
+#: next_check: 2023-07-06
 	2::temp 10704,12595 10601,12521
 ',
          'from' => undef,
@@ -7551,9 +7555,9 @@ Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 #: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
 #: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
 #: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
-#: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023)
-#: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023)
-#: source_id: viz2021:13.45273,52.48801,04.07.2023,00:00 (bis 21.07.2023)
+#: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
+#: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
+#: source_id: viz2021:13.45273,52.48801,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: last_checked: 2023-07-04 vvv
 #: check_frequency: 14d vvv
