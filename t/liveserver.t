@@ -53,6 +53,8 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
 my $tests_per_url = 19;
 plan tests => $tests_per_url * scalar(@urls);
 
+my $content_checks_tests = 4;
+
 my $ua_string = 'BBBike-Test/1.0';
 
 my $conn_cache = LWP::ConnCache->new(total_capacity => 10);
@@ -77,27 +79,39 @@ for my $url (@urls) {
 	    my $resp = $ua->get("$url/temp_blockings/bbbike-temp-blockings-optimized.pl");
 	    ok($resp->is_success, ".pl file which should be treated as text ($url)")
 		or diag $resp->dump;
-	    like($resp->content, qr{temp_blocking});
+	SKIP: {
+		skip "Skip content tests because of failed response", 1 if !$resp->is_success;
+		like($resp->content, qr{temp_blocking});
+	    }
 	}
 
 	{
 	    my $resp = $ua->get("$url/handicap_l");
 	    ok($resp->is_success, "normal bbd file")
 		or diag $resp->dump;
-	    do_content_checks($resp->decoded_content, "LWP");
+	SKIP: {
+		skip "Skip content tests because of failed response", $content_checks_tests if !$resp->is_success;
+		do_content_checks($resp->decoded_content, "LWP");
+	    }
 	}
 
 	{
 	    my $resp = $uagzip->get("$url/handicap_l");
 	    ok($resp->is_success, "normal bbd file")
 		or diag $resp->dump;
-	    do_content_checks($resp->decoded_content, "LWP (gzip)");
+	SKIP: {
+		skip "Skip content tests because of failed response", $content_checks_tests if !$resp->is_success;
+		do_content_checks($resp->decoded_content, "LWP (gzip)");
+	    }
 	}
 
 	{
 	    my %res = Http::get(url => "$url/handicap_l");
 	    is($res{'error'}, 200, "Got $url/handicap_l with Http.pm");
-	    do_content_checks($res{'content'}, 'Http (SRT)');
+	SKIP: {
+		skip "Skip content tests because of failed response", $content_checks_tests if $res{'error'} != 200;
+		do_content_checks($res{'content'}, 'Http (SRT)');
+	    }
 	}
 
 	my $root_url = URI->new($url);
