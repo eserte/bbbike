@@ -20833,7 +20833,7 @@ EOF
        text  => 'Peace Wall/Friedensmauer; auf Gehweg ausweichen (bis Juli 2012)',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 9527,10927 9537,10837 9539,10820
+	q4::temp 9527,10927 9537,10837 9538,10827
 EOF
      },
      { from  => 1336943422, # 2012-05-13 23:10
@@ -27926,7 +27926,7 @@ EOF
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
-#: note: bei rbb weiterhin gelistet, bis Ende 2023
+#: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
 #: next_check: 2023-06-26
@@ -31275,7 +31275,7 @@ S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp::play 11290,1
 #: note: gesehen am 2020-07-26; in der Quelle falsch
 S6o - Waldemarstr. zwischen Leuschnerdamm und Adalbertstr.	q4::temp::play 11328,10957 11552,10863
 S7 - Wassertorstr. zwischen Prinzenstr. und Lobeckstr.	q4::temp::play 10685,10483 10484,10567
-S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp::play 9570,10566 9556,10666 9554,10695 9539,10820
+S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp::play 9570,10566 9556,10666 9554,10695 9538,10827
 S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp::play 9487,9209 9553,9196 9566,9194 9614,9186 9674,9179
 S9 - Chamissoplatz	q4::temp::play 9553,9196 9540,9102
 S9 - Chamissoplatz	q4::temp::play 9600,9091 9614,9186
@@ -37825,7 +37825,7 @@ EOF
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-05 (bahninfo)
 	q4::inwork; 17962,6674 17991,6431
 EOF
      },
@@ -38681,6 +38681,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: osm_watch: way id="1172668082" version="4"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
@@ -39129,12 +39130,12 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-02-29 17:00:00"), # 1690815600, # 2023-07-31 17:00
+       until => $isodate2epoch->("2023-08-25 17:00:00"), # 1690815600, # 2023-07-31 17:00
        text  => 'Holzmindener Str., Am Straßenbahnhof: Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TEMPELHOFERWEG-2023
-#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024)
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024) (bis 25.8.2023)
 	q4::inwork; 12214,5554 12256,5591 12495,5659
 	q4::inwork; 12495,5659 12525,5510 12582,5232
 EOF
@@ -39315,12 +39316,12 @@ EOF
 EOF
      },
      { from  => 1685397600, # 2023-05-30 00:00
-       until => $isodate2epoch->("2023-07-14 17:00:00"), # 1687557600, # 2023-06-24 00:00
-       text  => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 14.7.2023',
+       until => $isodate2epoch->("2023-08-05 17:00:00"), # 1687557600, # 2023-06-24 00:00
+       text  => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 5.8.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
-#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023)
+#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023) (bis 5.8.2023)
 #: also_indoor: traffic (H)
 	q3::inwork 8852,6642 8949,6644
 EOF

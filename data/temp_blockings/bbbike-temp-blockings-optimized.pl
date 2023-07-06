@@ -3919,7 +3919,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
-#: note: bei rbb weiterhin gelistet, bis Ende 2023
+#: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
 #: next_check: 2023-06-26
@@ -6443,7 +6443,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-05 (bahninfo)
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -6900,6 +6900,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: osm_watch: way id="1172668082" version="4"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
@@ -7198,7 +7199,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
        },
        {
          'data' => '#: next_check_id: TEMPELHOFERWEG-2023
-#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024)
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024) (bis 25.8.2023)
 	q4::inwork; 12214,5554 12256,5591 12495,5659
 	q4::inwork; 12495,5659 12525,5510 12582,5232
 ',
@@ -7206,7 +7207,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'id' => 3810,
          'text' => 'Holzmindener Str., Am Straßenbahnhof: Einbahnstraßenregelung',
          'type' => 'handicap',
-         'until' => 1709222400
+         'until' => 1692975600
        },
        {
          'data' => '#: tempex: (sa) T10-T16
@@ -7361,15 +7362,15 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
        },
        {
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
-#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023)
+#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023) (bis 5.8.2023)
 #: also_indoor: traffic (H)
 	q3::inwork 8852,6642 8949,6644
 ',
          'from' => 1685397600,
          'id' => 3825,
-         'text' => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 14.7.2023',
+         'text' => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 5.8.2023',
          'type' => 'handicap',
-         'until' => 1689346800
+         'until' => 1691247600
        },
        {
          'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021

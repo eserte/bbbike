@@ -257,9 +257,10 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11012 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11193 (Gebühren für Widerspruchsbescheide)
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
+#: by: https://berliner-abendblatt.de/berlin-news/gericht-urteilt-ueber-umbenennung-der-mohrenstrasse-id226365
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-07-05 (mapillary) vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -306,7 +307,7 @@ Mehringplatz	NN 9593,10238 9592,10263 9606,10263 9646,10279 9668,10306 9675,1035
 #: by: https://de.wikipedia.org/wiki/Friedrichstra%C3%9Fe (Straßenbreite 15-17m)
 #: street_width: 17m vvv
 Friedrichstr. (Mitte, Kreuzberg)	NN 9587,10421 9570,10566
-Friedrichstr. (Mitte, Kreuzberg)	N 9570,10566 9556,10666 9554,10695 9539,10820 9537,10837 9527,10927 9523,10964 9492,11209
+Friedrichstr. (Mitte, Kreuzberg)	N 9570,10566 9556,10666 9554,10695 9538,10827 9537,10837 9527,10927 9523,10964 9492,11209
 Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9456,11513 9444,11616
 # 
 #: next_check_id: FRIEDRICH-2020
@@ -1344,7 +1345,7 @@ Andreasstr.	NH 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295
 Kleine Andreasstr.	N 12059,12172 12211,12128
 Kleine Andreasstr.	NN 12211,12128 12279,12113
 (Jannowitzbrücke - Schillingstr.)	NN 11347,12223 11417,12243
-Schillingstr. (Mitte)	NN 11388,12202 11417,12243 11485,12391 11472,12406
+Schillingstr. (Mitte)	NN 11388,12202 11417,12243 11435,12282 11485,12391 11472,12406
 Schillingstr. (Mitte)	N 11340,12443 11353,12436 11462,12384 11472,12406 11497,12463 11562,12597 11596,12668 11635,12745
 (Schillingstr. - Neue Blumenstr.)	NN 11596,12668 11712,12614
 Neue Blumenstr.	N 11613,12408 11712,12614 12006,12464 12118,12462
@@ -1552,7 +1553,7 @@ Planckstr.	N 9375,12911 9386,12833 9402,12792 9429,12728 9441,12670 9454,12558
 Charlottenstr. (Kreuzberg, Mitte)	N 9454,12558 9462,12481 9475,12365 9489,12263 9496,12215 9509,12117 9523,12019 9536,11922 9547,11819 9559,11715 9569,11631 9581,11523 9593,11424 9603,11328 9615,11225 9653,10950
 Rosmarinstr.	NN 9369,12253 9489,12263
 Besselstr.	N 9527,10927 9653,10950 9786,10971
-Hedemannstr.	N 9131,10716 9323,10791 9539,10820
+Hedemannstr.	N 9131,10716 9323,10791 9538,10827
 # 
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: last_checked: 2021-04-27 --- #: next_check: 2021-06-18 --- (Umfahrung Baustelle Neue Roßstraßenbrücke)	NN 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
 # 
@@ -14175,7 +14176,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED --- #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt --- Bergiusstr.	H 14051,6731 14106,6663
 # REMOVED --- #: valid: 20140224-20230630 --- Bergiusstr.	H 14106,6663 14150,6609
 # REMOVED --- #: valid: !20140224-20230630 --- Bergiusstr.	N 14106,6663 14150,6609
-#: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 06.07.2023)
+#: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 06.07.2023) (inaktiv)
 #: last_checked: 2023-06-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-07-06 vvv
