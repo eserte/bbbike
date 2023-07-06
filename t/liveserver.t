@@ -31,7 +31,7 @@ use URI;
 use Http;
 use Strassen::Core;
 
-use BBBikeTest qw(check_network_testing);
+use BBBikeTest qw(check_network_testing image_ok);
 
 check_network_testing;
 
@@ -50,7 +50,7 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, $bbbike_data_pps_url;
 }
 
-my $tests_per_url = 19;
+my $tests_per_url = 23;
 plan tests => $tests_per_url * scalar(@urls);
 
 my $content_checks_tests = 4;
@@ -123,6 +123,8 @@ for my $url (@urls) {
 	    my $resp = $ua->get("$robots_url");
 	    ok($resp->is_success, 'robots.txt exists')
 		or diag($resp->as_string);
+	    like($resp->decoded_content, qr/^User-Agent:/m, 'expected User-Agent line in robots.txt');
+	    like($resp->decoded_content, qr/^Disallow:/m, 'expected Disallow line in robots.txt');
 	}
 
 	{
@@ -131,6 +133,7 @@ for my $url (@urls) {
 	    my $resp = $ua->get("$favicon_url");
 	    ok($resp->is_success, 'favicon exists')
 		or diag($resp->as_string);
+	    image_ok(\($resp->decoded_content), 'favicon image check');
 	}
     }
 }
