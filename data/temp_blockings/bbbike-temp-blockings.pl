@@ -4659,17 +4659,24 @@ EOF
 	2 11979,8014 12001,7937 12025,7852 12041,7788 12057,7744 12075,7696 12081,7679 12090,7651 12121,7555 12123,7549 12158,7449 12185,7381
 EOF
      },
-     { from  => 1148565600, # 2006-05-25 16:00
-       until => 1153087200, # 2006-07-17 00:00
-       text  => 'Vom 26.05.2006, 16:00 Uhr bis 16.07.2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).',
+     { from  => $isodate2epoch->("2023-07-07 00:00:00"), # 1148565600, # 2006-05-25 16:00
+       until => $isodate2epoch->("2023-07-09 10:00:00"), #1153087200, # 2006-07-17 00:00
+       text  => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 08.07.2023', # 'Vom 26.05.2006, 16:00 Uhr bis 16.07.2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	2 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
+#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023)
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	3 7429,12070 7383,12095 7031,12320
 	3 7031,12320 7383,12095 7429,12070
-	3 8119,12414 8055,12186 8049,12140 8034,12093
-	3 8034,12093 8049,12140 8055,12186 8119,12414
+	3 8119,12414 8055,12186 8049,12140
+	3 8049,12140 8055,12186 8119,12414
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 EOF
      },
      { from  => 1148623200, # 2006-05-26 08:00
@@ -30594,18 +30601,19 @@ EOF
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
-     { from  => $isodate2epoch->("2022-06-17 08:00:00"), # 1571266200, # 2019-10-17 00:50
-       until => $isodate2epoch->("2022-06-19 15:00:00"), # 1571522399, # 2019-10-19 23:59
-       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 18.6.2022 16:00 Uhr bis 19.6.2022 15:00 Uhr',
+     { from  => $isodate2epoch->("2023-07-07 17:00:00"), # 1571266200, # 2019-10-17 00:50
+       until => $isodate2epoch->("2023-07-09 21:30:00"), # 1571522399, # 2019-10-19 23:59
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 8.7.2023 17:00 bis 23:30 Uhr sowie 9.7.2023 17:30 bis 21:30 Uhr',
        type  => 'gesperrt',
        #source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
        data  => <<EOF,
 #: also_indoor: traffic (G,H)
-#: source_id: 2147344351
-#: source_id: 2147344352
-#: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00
-#: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00
+#: source_id: 2147344351 (inaktiv)
+#: source_id: 2147344352 (inaktiv)
+#: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
+#: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
+#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
 	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
@@ -34876,7 +34884,7 @@ EOF
 #: last_checked: 2023-06-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4993234" version="21"
+#: osm_watch: way id="4993234" version="22"
 	2::inwork 5714,12290 5770,12346 5796,12372 5940,12564
 #: XXX laut osm hier fertiggestellt, aber es sind weiterhin Bauarbeiten und Sperrungen möglich
 #: osm_watch: way id="4410535" version="27"
@@ -37837,7 +37845,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-07
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -37938,11 +37946,10 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023)
-#: also_indoor: traffic (G,H,B,W)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
-#: last_checked: 2023-06-04
-#: next_check: 2023-07-07
+# REMOVED --- #: last_checked: 2023-06-04 --- #: next_check: 2023-07-07
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 EOF
@@ -38614,7 +38621,7 @@ EOF
        until => $isodate2epoch->("2023-07-07 16:00:00"), # 1685714400, # 2023-06-02 16:00
        text  => 'Ortsdurchfahrt Lehnitz: Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, von 18.04.2023 08:00 Uhr bis 07.07.2023 16:00 Uhr',
        type  => 'handicap',
-       source_id => 'LS/221-E/23/039', # inaktiv, # bis 7.7.2023
+       source_id => 'LS/221-E/23/039', # inaktiv, # bis 7.7.2023 # inaktiv
        data  => <<EOF,
 	q4::inwork 976,37089 737,37218 554,37231 529,37229 346,37232
 EOF
@@ -38971,7 +38978,7 @@ EOF
        until => 1688738400, # 2023-07-07 16:00
        text  => 'Bruchmühle - Eggersdorf: Bauarbeiten, Sperrung der Straße, evtl. sind Radfahrer betroffen, 30.05.2023 08:00 Uhr bis 07.07.2023 16:00',
        type  => 'gesperrt',
-       source_id => '236400686',
+       source_id => '236400686', # inaktiv
        data  => <<EOF,
 	2::inwork 36539,16154 38171,15125
 EOF
@@ -39527,12 +39534,13 @@ EOF
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2023-07-04 vvv
+#: last_checked: 2023-07-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-07-21 vvv
 Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
 Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
-Elsenstr.: Kreuzungsüberfahrt an der Karl-Kunger-Str. nicht möglich	q2::inwork; 13849,9310 13766,9200
+#: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str.
+Elsenstr.	q3::inwork; 13849,9310 13766,9200
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

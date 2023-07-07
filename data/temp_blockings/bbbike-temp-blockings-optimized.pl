@@ -493,7 +493,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
+#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023)
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 8119,12414 8055,12186 8049,12140
+	3 8049,12140 8055,12186 8119,12414
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+',
+         'from' => 1688680800,
+         'id' => 536,
+         'text' => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 08.07.2023',
+         'type' => 'gesperrt',
+         'until' => 1688889600
+       },
        undef,
        undef,
        undef,
@@ -4394,7 +4414,34 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (G,H)
+#: source_id: 2147344351 (inaktiv)
+#: source_id: 2147344352 (inaktiv)
+#: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
+#: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
+#: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
+#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
+	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
+	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
+	2::temp 9664,12387 9680,12232
+	2::temp 9737,12238 9702,12307 9664,12387
+	2::temp 9680,12232 9702,12307 9713,12392
+	3 10291,12600 10300,12587 10363,12535
+	3 10102,12384 10063,12438 9956,12617
+	3 9873,12315 9858,12410 9846,12516
+	3 9953,12533 9984,12426 9990,12404
+	3 10363,12535 10300,12587 10291,12600
+	3 9956,12617 10063,12438 10102,12384
+	3 9990,12404 9984,12426 9953,12533
+	3 9846,12516 9858,12410 9873,12315
+',
+         'from' => 1688742000,
+         'id' => 3172,
+         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 8.7.2023 17:00 bis 23:30 Uhr sowie 9.7.2023 17:30 bis 21:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1688931000
+       },
        undef,
        undef,
        undef,
@@ -5326,7 +5373,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2023-06-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4993234" version="21"
+#: osm_watch: way id="4993234" version="22"
 	2::inwork 5714,12290 5770,12346 5796,12372 5940,12564
 #: XXX laut osm hier fertiggestellt, aber es sind weiterhin Bauarbeiten und Sperrungen möglich
 #: osm_watch: way id="4410535" version="27"
@@ -6456,7 +6503,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-07
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -6484,27 +6531,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
-#: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
-#: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023)
-#: also_indoor: traffic (G,H,B,W)
-#: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
-#: last_checked: 2023-06-04
-#: next_check: 2023-07-07
-	q4::inwork 22766,1226 22821,1086
-Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
-',
-         'from' => 1675896728,
-         'id' => 3719,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
-         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt, voraussichtlich bis 07.07.2023',
-         'type' => 'handicap',
-         'until' => 1688742000
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut VIZ nur der Kfz-Verkehr betroffen
@@ -6847,16 +6874,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 976,37089 737,37218 554,37231 529,37229 346,37232
-',
-         'from' => 1681711200,
-         'id' => 3769,
-         'source_id' => 'LS/221-E/23/039',
-         'text' => 'Ortsdurchfahrt Lehnitz: Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, von 18.04.2023 08:00 Uhr bis 07.07.2023 16:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1688738400
-       },
+       undef,
        {
          'data' => '#: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
@@ -7020,19 +7038,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 07.07.2023)
-#: source_id: viz2021:13.38415,52.45819,22.05.2023,07:00 (bis 07.07.2023) (inaktiv)
-#: by: https://nitter.cz/VIZ_Berlin/status/1660510800392355840#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlVFJsb1h3QUFPUlFHLmpwZw==
-	q4::inwork 9176,5803 8996,5823
-',
-         'from' => 1684645200,
-         'id' => 3793,
-         'text' => 'Friedrich-Wilhelm-Str.: Fahrbahn vor dem Tempelhofer Damm gesperrt, vom 22.05.2023 07:00 bis 07.07.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1688742000
-       },
+       undef,
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
 #: source_id: bvg2021:347#BVG321063_0
@@ -7058,16 +7064,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'type' => 'handicap',
          'until' => 1693580400
        },
-       {
-         'data' => '	2::inwork 36539,16154 38171,15125
-',
-         'from' => 1685340000,
-         'id' => 3796,
-         'source_id' => '236400686',
-         'text' => 'Bruchmühle - Eggersdorf: Bauarbeiten, Sperrung der Straße, evtl. sind Radfahrer betroffen, 30.05.2023 08:00 Uhr bis 07.07.2023 16:00',
-         'type' => 'gesperrt',
-         'until' => 1688738400
-       },
+       undef,
        {
          'data' => '	q4::inwork 931,14268 968,14263 1023,14259
 ',
@@ -7560,12 +7557,13 @@ Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2023-07-04 vvv
+#: last_checked: 2023-07-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-07-21 vvv
 Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
 Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
-Elsenstr.: Kreuzungsüberfahrt an der Karl-Kunger-Str. nicht möglich	q2::inwork; 13849,9310 13766,9200
+#: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str.
+Elsenstr.	q3::inwork; 13849,9310 13766,9200
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

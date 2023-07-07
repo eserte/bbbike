@@ -3583,6 +3583,9 @@ Treppe zur Putlitzbr¸cke -> An der Putlitzbr¸cke: Mittelstreifen schlecht zu ¸be
 schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3nocross::ignrte 7172,13051 7187,13126 7161,13190
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7161,13190 7187,13126 7356,13213
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7356,13213 7187,13126 7172,13051
+Straﬂenbahntrasse	3nocross::ignrte 6377,13321 6480,13325 6535,13327 6674,13332
+Turmstr. -> Kleiner Tiergarten: Straﬂenbahntrasse	3::igndisp 6674,13332 6535,13327 6564,13260
+Kleiner Tiergarten -> Turmstr.: Straﬂenbahntrasse	3::igndisp 6564,13260 6535,13327 6480,13325
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 L‰rchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20:-147 1372,8011

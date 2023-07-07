@@ -325,7 +325,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-07-06 vvv
+#: last_checked: 2023-07-07 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -845,7 +845,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 #: last_checked: 2023-06-24
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
-#: osm_watch: way id="374344536" version="16"
+#: osm_watch: way id="374344536" version="17"
 #: last_checked: 2023-06-22
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
@@ -1223,7 +1223,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-07-05 vvv
+#: last_checked: 2023-07-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3380,9 +3380,12 @@ Suggestivstreifen, allerdings mit durchgezogener Linie	RW3; 4283,13660 4363,1333
 die letzten Meter werden auf dem Gehweg geführt	RW3; 4363,13336 4381,13239
 	RW1; 4381,13239 4363,13336
 	RW1;RW1 7172,13051 7187,13126 7161,13190
-	RW1; 7161,13190 7131,13261 7084,13352 7069,13381
-	RW1; 7069,13381 7084,13352
-	RW3; 7084,13352 7131,13261 7161,13190
+	RW1; 7161,13190 7131,13261
+#: historical_note: früher: RW1;
+	RW4?; 7131,13261 7084,13352 7069,13381
+#: historical_note: früher: RW1;
+	RW4; 7069,13381 7084,13352
+	RW4; 7084,13352 7131,13261 7161,13190
 	RW1;RW0 22365,6149 22296,6170 22263,6185 22238,6195 21984,6317
 	RW2; 22467,6135 22534,6249
 unebenes Verbundsteinpflaster	RW2; 22534,6249 22467,6135
@@ -4864,7 +4867,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2023-07-05 (mapillary) vvv
+#: last_checked: 2023-07-06 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -7087,7 +7090,7 @@ asphaltiertes Straßenbahnkap	RW1; 14162,12808 14096,12827
 	RW1;RW1 5620,13120 5601,12756
 # REMOVED (mittlerweile schon) --- #: note: eigentlich nicht für Radfahrer freigegeben (2013-01, 2015-03, 2015-06, 2015-12)
 Busspur immer gültig	RW5; 6228,13324 6377,13321
-	RW3;RW3 6377,13321 6535,13327 6674,13332 6692,13333 6814,13349 6919,13360 7069,13381
+	RW3;RW3 6377,13321 6480,13325 6535,13327 6674,13332 6692,13333 6814,13349 6919,13360 6960,13366 7069,13381
 #: by: Irit Früchtnicht vvv
 #: confirmed_by: srt vvv
 	RW6;RW6 12379,1185 12373,1169 12350,1088

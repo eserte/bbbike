@@ -23,7 +23,7 @@ Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-07-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -191,7 +191,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2023-05-11
+#: last_checked: 2023-07-04
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -611,37 +611,34 @@ Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg e
 # 
 #: next_check_id: TRAMTURM-2021
 # REMOVED --- #: source_id: bvg2021:m27#BVG305466_0
-#: next_check: 2023-07-07 vvv
+#: next_check: 2023-09-06 vvv
 #: check_frequency: 90d vvv
 #: last_checked: 2023-05-14 (osm) vvv
-#: source_id: viz2021:13.35534,52.52683,28.04.2022,07:00 (bis 07.07.2023) (inaktiv)
-#: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023)
-#: osm_watch: way id="140336721" version="33"
-#: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
-# REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag)
-Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
+# REMOVED (sieht offen aus) --- #: source_id: viz2021:13.35534,52.52683,28.04.2022,07:00 (bis 07.07.2023) (inaktiv) (bis 06.09.2023) --- #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023) (inaktiv) --- #: osm_watch: way id="140336721" version="33" --- #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
+# REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6960,13366 6919,13360 6814,13349 6692,13333
+# REMOVED --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag) --- #: by: https://www.bahninfo-forum.de/read.php?9,705321,772235#msg-772235 (Freigabe der Fahrbahn 2023-07-07?) --- Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6480,13325 6377,13321
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
-#: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023)
+#: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023) (bis 6.9.2023)
+#: source_id: viz2021:13.33913,52.5264,20.12.2022,13:00 (bis 06.09.2023)
 #: osm_watch: way id="692480562" version="14"
 #: last_checked: 2023-06-28 (osm)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 # REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- #: osm_watch: way id="30195541" version="38" --- #: osm_watch: way id="1101061991" version="10" --- #: osm_watch: way id="310164489" version="30" --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
-#: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023)
-#: source_id: bvg2021:101#BVG301286_0
+#: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023) (bis 6.9.2023)
+#: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023)
+# REMOVED --- #: source_id: bvg2021:101#BVG301286_0
 #: osm_watch: way id="4571954" version="33"
 #: last_checked: 2023-07-02 (osm)
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
-#: osm_watch: way id="269696665" version="24"
-#: last_checked: 2023-06-17 (osm)
-Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 7069,13381
+# REMOVED (Radweg wird nun auf der Fahrbahn geführt) --- #: osm_watch: way id="269696665" version="24" --- #: last_checked: 2023-07-06 (bahninfo-forum) --- Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 6960,13366 7069,13381
 #: osm_watch: way id="1101405485" version="8"
 #: osm_watch: way id="217183438" version="19"
-#: last_checked: 2023-06-17 (osm)
-Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190 7187,13126 7172,13051
+#: last_checked: 2023-07-07 (bahninfo-forum)
+# REMOVED (weitgehend freigegeben) --- Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190
+Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q3::inwork; 7161,13190 7187,13126 7172,13051
 #: last_checked ^^^
 # REMOVED --- #: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv) --- #: osm_watch: way id="61816617" version="29" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 # REMOVED --- #: osm_watch: way id="4407756" version="33" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, teilweise gemeinsamer Geh- und Radweg	q2::inwork; 7346,13022 7422,13012
@@ -1053,7 +1050,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # 
 #: XXX Bleibt es bei der ausschließlichen Busfreigabe oder entsteht hier eine neue Verbindungsstraße?
 #: osm_watch: way id="519370786" version="4"
-#: osm_watch: note 3678184 2
+#: osm_watch: note 3678184 3
 #: last_checked: 2023-07-03
 Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15819,16857 15892,16834
 # 
