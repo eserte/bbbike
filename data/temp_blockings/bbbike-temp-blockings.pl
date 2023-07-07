@@ -4664,6 +4664,7 @@ EOF
        text  => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 08.07.2023', # 'Vom 26.05.2006, 16:00 Uhr bis 16.07.2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
 #: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023)
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
@@ -39435,16 +39436,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1688759535, # undef, # XXX
        text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ROTESRATHAUS-2023
 #: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
-#: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-07-05 (webcam)
-#: check_frequency: 7d
-#: next_check: 2023-07-06
+# REMOVED --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- #: next_check: 2023-07-06
 	2::temp 10704,12595 10601,12521
 EOF
      },

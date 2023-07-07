@@ -494,7 +494,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'data' => '#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
+         'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
+#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023)
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -7462,21 +7463,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
          'type' => 'handicap',
          'until' => 1690322399
        },
-       {
-         'data' => '#: next_check_id: ROTESRATHAUS-2023
-#: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
-#: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg
-#: last_checked: 2023-07-05 (webcam)
-#: check_frequency: 7d
-#: next_check: 2023-07-06
-	2::temp 10704,12595 10601,12521
-',
-         'from' => undef,
-         'id' => 3836,
-         'text' => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke ¸ber das Rathausforum, Ende der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (none)
 #: add_fragezeichen: Ist die Einbahnstraﬂenregelung mittlerweile aufgehoben?
