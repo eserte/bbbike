@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.9901';
+$VERSION = '1.9902';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -411,7 +411,7 @@ sub read_from_fh {
     if (@block_directives) {
 	my $msg = "The following block directives were not closed:";
 	for my $i (0 .. $#block_directives) {
-	    $msg .= " '@{$block_directives[$i]}' (start at line $block_directives_line[$i])";
+	    $msg .= " '@{$block_directives[$i]}' (start at line $block_directives_line[$i]" . ($self->{File} ? " in file " . $self->{File} : "") . ")";
 	}
 	die $msg, "\n";
     }
