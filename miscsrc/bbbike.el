@@ -591,8 +591,7 @@
      ((string-match "https?://www.openstreetmap.org.*\\(way\\|node\\|relation\\)/\\([0-9]+\\)\\(#\\|$\\|/history\\)" sel)
       (let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
 	     (elemid (substring sel (match-beginning 2) (match-end 2)))
-	     (url (concat "https://www.openstreetmap.org/api/0.6/" elemtype "/" elemid))
-	     (elemversion (shell-command-to-string (concat bbbike-perl-modern-executable " -MLWP::UserAgent -MXML::LibXML -e 'my $ua = LWP::UserAgent->new(timeout => 10); my $xml = $ua->get(shift)->decoded_content; print XML::LibXML->load_xml(string => $xml)->documentElement->findvalue(q{/osm/" elemtype "/@version})' " url))))
+	     (elemversion (bbbike--get-osm-elem-version elemtype elemid)))
 	(beginning-of-line)
 	(insert (concat "#: osm_watch: " elemtype " id=\"" elemid "\" version=\"" elemversion "\"\n"))))
      (t (error "No X selection or X selection does not contain a way/node/relation line")))))
@@ -906,5 +905,33 @@
     )
   (buffer-substring (match-beginning 2) (match-end 2))
   )
+
+(defun bbbike--get-osm-elem-version-perl (elemtype elemid)
+  (let* ((url (concat "https://www.openstreetmap.org/api/0.6/" elemtype "/" elemid))
+	 (elemversion (shell-command-to-string (concat bbbike-perl-modern-executable " -MLWP::UserAgent -MXML::LibXML -e 'my $ua = LWP::UserAgent->new(timeout => 10); my $xml = $ua->get(shift)->decoded_content; print XML::LibXML->load_xml(string => $xml)->documentElement->findvalue(q{/osm/" elemtype "/@version})' " url))))
+    elemversion))
+
+(defun bbbike--get-osm-elem-version-elisp (elemtype elemid)
+  (let* ((url (format "https://www.openstreetmap.org/api/0.6/%s/%s" elemtype elemid))
+         (buffer (url-retrieve-synchronously url))
+         (content (with-current-buffer buffer
+                    (goto-char (point-min))
+                    (re-search-forward "\n\n" nil 'move)
+                    (buffer-substring-no-properties (point) (point-max))))
+         (elemversion nil))
+    (with-temp-buffer
+      (insert content)
+      (let* ((xml (xml-parse-region (point-min) (point-max))))
+        (condition-case err
+            (let* ((osm (car xml))
+                   (element (car (xml-get-children osm (intern elemtype))))
+                   (version-attr (xml-get-attribute element 'version)))
+              (setq elemversion version-attr))
+          (error (message "XML parsing error: %s" err)))))
+    (kill-buffer buffer)
+    elemversion))
+
+(defun bbbike--get-osm-elem-version (elemtype elemid)
+  (bbbike--get-osm-elem-version-elisp elemtype elemid))
 
 (provide 'bbbike-mode)
