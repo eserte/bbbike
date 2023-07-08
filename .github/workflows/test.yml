@@ -126,6 +126,11 @@ jobs:
             distver:                    trusty
             bbbike_test_skip_mapserver: 0
             use_bbbike_ppa:             0
+          ## XXX only prepared, but this does not work yet (missing docker-bbbike support for non-system perl)
+          #- dist:                       perl
+          #  distver:                    5.38.0-slim-bookworm
+          #  bbbike_test_skip_mapserver: 1
+          #  use_bbbike_ppa:             0
           #- dist:                       ubuntu
           #  distver:                    jammy
           #  bbbike_test_skip_mapserver: 0

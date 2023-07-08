@@ -33,7 +33,7 @@ use BBBikeUtil qw(save_pwd2 bbbike_root);
 my %codename_to_packagerepos;
 # list generated with following command on mydebs system:
 #     perl -ne 'print " $1" if /Codename: (\S+)/' /srv/www/debian-repo/conf/distributions ; echo
-for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye)) {
+for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye bookworm)) {
     $codename_to_packagerepos{$codename}->{'mydebs.bbbike.de'} = 1;
 }
 for my $codename (qw(bionic focal jammy)) {
@@ -372,25 +372,36 @@ EOF
 
     $dockerfile .= _dockerfile_fix_sources_list(\%opt);
 
+    my($real_dist, $real_distver) = ($opt{dist}, $opt{distver});
+    if ($real_dist eq 'perl') { # perl docker images are usually based on debian
+	if ($real_distver =~ /-(bullseye|bookworm)$/) {
+	    $real_distver = $1;
+	    $real_dist = 'debian';
+	    warn "WARN: currently docker-bbbike has no support for non-system perl systems. Expect failures.\n";
+	} else {
+	    die "Cannot handle distver '$real_distver' (maybe the regexp need to be extended?)\n";
+	}
+    }
+
     # repository for agrep
-    if ($opt{dist} eq 'debian') {
-	my $debhost = $opt{distver} =~ m{^(wheezy|jessie|stretch)$} ? 'archive.debian.org' : 'ftp.debian.org';
+    if ($real_dist eq 'debian') {
+	my $debhost = $real_distver =~ m{^(wheezy|jessie|stretch)$} ? 'archive.debian.org' : 'ftp.debian.org';
 	$dockerfile .= <<EOF;
-RUN echo "deb [check-valid-until=no] http://$debhost/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
+RUN echo "deb [check-valid-until=no] http://$debhost/debian/ $real_distver non-free" > /etc/apt/sources.list.d/$real_distver-non-free.list
 EOF
-    } elsif ($opt{dist} eq 'ubuntu') {
-	if ($opt{distver} =~ m{^(precise|trusty)$}) {
+    } elsif ($real_dist eq 'ubuntu') {
+	if ($real_distver =~ m{^(precise|trusty)$}) {
 	    $dockerfile .= <<EOF;
-RUN echo "deb http://archive.ubuntu.com/ubuntu $opt{distver} multiverse" > /etc/apt/sources.list.d/$opt{distver}-multiverse.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu $real_distver multiverse" > /etc/apt/sources.list.d/$real_distver-multiverse.list
 EOF
 	} else {
 	    # since Ubuntu 16.04 multiverse is enabled by default
 	}
     } else {
-	die "Unsupported dist $opt{dist}";
+	die "Unsupported dist $real_dist";
     }
 
-    if ($opt{distver} eq 'precise') {
+    if ($real_distver eq 'precise') {
 	# http/1.1 pipelining used, but mydebs.bbbike.org cannot
 	# do it (response: 400 Bad Request). Workaround from
 	# http://bnpcs.blogspot.de/2010/11/disable-http-pipelining-in-ubuntu.html
@@ -413,8 +424,8 @@ EOF
 RUN apt-get update -qq && apt-get install -qqy git cpanminus libssl-dev wget
 EOF
     if (
-	($opt{dist} eq 'ubuntu' && $opt{distver} ne 'trusty') ||
-	$opt{dist} eq 'debian'
+	($real_dist eq 'ubuntu' && $real_distver ne 'trusty') ||
+	$real_dist eq 'debian'
        ) {
 	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)
 	$dockerfile .= <<EOF;
@@ -432,14 +443,14 @@ EOF
 				       xenial  => '16.04',
 				       trusty  => '14.04',
 				       precise => '12.04',
-				     } }->{$opt{dist}}->{$opt{distver}};
+				     } }->{$real_dist}->{$real_distver};
 	if (!$distnumver) {
-	    error "No support for --perl-ver and $opt{dist}:$opt{distver}";
+	    error "No support for --perl-ver and $real_dist:$real_distver";
 	}
-	# alternatively the tarballs are also available on https://storage.googleapis.com/travis-ci-language-archives/perl/binaries/$opt{dist}/$distnumver.04/x86_64/perl-$short_perl_ver.tar.bz2
+	# alternatively the tarballs are also available on https://storage.googleapis.com/travis-ci-language-archives/perl/binaries/$real_dist/$distnumver.04/x86_64/perl-$short_perl_ver.tar.bz2
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy bzip2
-RUN wget https://s3.amazonaws.com/travis-perl-archives/binaries/$opt{dist}/$distnumver/x86_64/perl-$short_perl_ver.tar.bz2
+RUN wget https://s3.amazonaws.com/travis-perl-archives/binaries/$real_dist/$distnumver/x86_64/perl-$short_perl_ver.tar.bz2
 RUN tar xf perl-$short_perl_ver.tar.bz2
 ENV PATH=/home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/$opt{'perl-ver'}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 EOF
@@ -478,7 +489,7 @@ WORKDIR bbbike
 
 # "-e" -> init_travis must not be run anymore
 # init_env_vars does not work in a Dockerbuild environment. Set some env vars manually
-ENV CODENAME $opt{distver}
+ENV CODENAME $real_distver
 EOF
 
     # Apply --build-env
@@ -903,6 +914,10 @@ return 1 if caller;
 
 sub _check_distver ($) {
     my $distver = shift;
+    if ($distver =~ m{^5\.\d+\.\d+-}) {
+	# This looks like a perl:... image, accept it
+	return;
+    }
     if ($distver =~ m{^\d+}) {
 	die "Use symbolic --distver (i.e. bionic instead of 18.04)\n";
     }
