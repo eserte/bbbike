@@ -354,7 +354,7 @@ Strasen - Wustrow: guter Asphalt	Q0 -19086,88767 -19112,89025 -19470,89566 -1951
 Wustrow - Zechlinerh¸tte: guter Asphalt	Q0 -20878,90073 -21313,90067 -21771,89802 -22335,89604 -22794,89683 -23020,89541 -24042,88866 -25102,87686 -25524,87583 -25716,87320 -26066,86756 -26130,86317 -26219,85956 -26403,85177 -26398,85020 -26316,84900 -26120,84667 -26137,84005 -26740,82997 -26876,82886 -27054,82822 -27053,82717
 Zechlinerh¸tte - Rheinsberg: guter Asphalt, paralleler Radweg ebenfalls guter Asphalt	Q0 -27053,82717 -26940,82461 -26806,82333 -26541,82132 -26511,81861 -26435,81684 -26469,81277 -26499,80944 -26162,79810 -26058,79663 -25923,78844 -25393,77748 -25413,77561 -25428,77444 -25626,77111 -25760,76840 -25801,76494 -25800,76461 -25737,76374 -25725,76327 -25734,76256
 Schwanebeck - Birkholz: Asphalt	Q0 19658,24589 19790,24572 20056,24488 20337,24461 20811,24556 20956,24594 21058,24628
-Schwanebeck - Birkholz: welliger Asphalt	Q1 21058,24628 21334,24728 21433,24738 21608,24736 21730,24751
+Schwanebeck - Birkholz: welliger Asphalt	Q1+ 21058,24628 21334,24728 21433,24738 21608,24736 21730,24751
 #: corrected_by: mapillary (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht?)
 Autobahnbr¸cke: Asphalt	Q0 27041,18505 26504,18512
 #: corrected_by: mapillary (m‰ﬂiger Asphalt, Q1 -> ..., neu gemacht?)
@@ -605,9 +605,12 @@ Fergitzer M¸hle - Fergitz: unbefestigter Weg	Q2 36101,85396 36142,85438 36143,85
 Neu Lindenberg - Birkholz: holpriger Feldweg	Q2 21122,22476 21318,22750 21383,22958
 #: corrected_by: mapillary (holpriger Feldweg -> ...)
 Neu Lindenberg - Birkholz: Asphalt	Q0 21383,22958 21511,23413
-Neu Lindenberg - Birkholz: holpriger Feldweg	Q2 21511,23413 21556,23581 21754,24269
-#: corrected_by: mapillary (holpriger Feldweg -> ...)
-Neu Lindenberg - Birkholz: schlechtes Kopfsteinpflaster mit Sandbankette	Q3 21754,24269 21820,24439
+#: corrected_by: mapillary (holpriger Feldweg, Q2 -> ..., neu gemacht)
+Neu Lindenberg - Birkholz: Asphalt	Q0 21511,23413 21556,23581 21754,24269
+#: corrected_by: mapillary (holpriger Feldweg -> ...) vvv
+Birkholz - Neu Lindenberg: schlechtes Kopfsteinpflaster, linke Seite mit Asphalt	Q2; 21820,24439 21754,24269
+Neu Lindenberg - Birkholz: Asphaltstreifen	Q0-; 21754,24269 21820,24439
+#: corrected_by ^^^
 #: by: mapillary/osm
 Neu-Schwanebeck: unbefestigte Straﬂe, Schotter	Q2 21556,23581 21540,23583 21421,23596 21165,23713
 F‰hrstr.: schadhafter Asphalt	Q2+ -10309,2155 -10311,1996 -10159,1974

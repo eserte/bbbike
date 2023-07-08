@@ -1852,16 +1852,18 @@ Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 1620
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
 Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
-#: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da)
+#: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da) (3. Quartal 2024 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="15" vvv
 #: XXX wird hier asphaltiert? vvv
 #: last_checked: 2023-01-15 (mapillary) vvv
-#: next_check: 2023-10-01 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2025-09-30 vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: osm_watch ^^^
@@ -9028,11 +9030,11 @@ Georgenstr. (Blankenburg): Asphalt	Q0 14263,20352 14294,20412 14309,20486 14320,
 Georgenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14304,20682 14236,20773
 Georgenstr. (Blankenburg): mäßiger Asphalt, einige Wurzelhebungen	Q1- 14236,20773 14196,20825 14091,20962
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
-#: by: http://www.infravelo.de/projekt/weg-am-fliessgraben/ (Ausbau zum 4m breiten Rad+Gehweg, vielleicht wird auch asphaltiert? in Planung, Bau 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2022 - 2. Quartal 2024) (1. Quartal 2023 - 2. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/weg-am-fliessgraben/ (Ausbau zum 4m breiten Rad+Gehweg, vielleicht wird auch asphaltiert? in Planung, Bau 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2022 - 2. Quartal 2024) (1. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1285357.php (Asphaltierung, Baubeginn II. Quartal 2023)
 #: XXX wird sich hier die Qualität verbessern?
 #: last_checked: 2022-08-26 (mapillary)
-#: next_check: 2023-06-30
+#: next_check: 2023-09-30
 # REMOVED --- #: next_check: 2024-06-30
 (Parkstr./Am Fließ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
 Frau-Elster-Weg: Gras	Q3 13953,18842 13948,18757 14011,18589
@@ -12409,7 +12411,7 @@ Christian-Dohm-Weg: Betonpflaster	Q0- 20760,18812 20894,18861 21028,18915
 #: by: mapillary
 #: confirmed_by: srt
 Karl-Philipp-Moritz-Weg: Betonpflaster	Q0- 20910,18719 21123,18813
-Henriette-Herz-Allee: Asphalt	Q0 20910,18719 20901,18793 20894,18861 20889,18935
+Henriette-Herz-Allee: Asphalt	Q0 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19736,13523 19737,13485
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19737,13485 19811,13487 19812,13442 19815,13317 19817,13259
 (Allee der Kosmonauten, Verbindungsweg): Asphalt	Q0 19815,13317 19835,13317
@@ -24908,7 +24910,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="7"
-#: last_checked: 2023-04-12
+#: last_checked: 2023-07-08
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -30378,7 +30380,9 @@ Hendrichplatz: Asphalt	Q0- 15732,12715 15731,12687
 Hendrichplatz: Betonpflaster	Q1+ 15733,12753 15859,12753
 #: corrected_by ^^^
 #: confirmed_by: srt
-Rathausstr. (Lichtenberg): Asphalt	Q0 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
+Rathausstr. (Lichtenberg): Asphalt	Q0 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154
+#: corrected_by: srt (Asphalt, Q0 -> ..., mittlerweile vielleicht schlechter geworden?)
+Rathausstr. (Lichtenberg): Asphalt mit einigen Schäden	Q0- 15685,12154 15670,12022
 #: confirmed_by: srt
 Dottistr.: Asphalt	Q0 15685,12154 15879,12131
 #: by: ^^^

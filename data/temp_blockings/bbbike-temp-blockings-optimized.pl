@@ -497,7 +497,9 @@ push @temp_blocking,
          'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
 #: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023)
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+#: note: auf Webcam gesehen
+Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	3 7429,12070 7383,12095 7031,12320
 	3 7031,12320 7383,12095 7429,12070
@@ -4421,6 +4423,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: source_id: 2147344352 (inaktiv)
 #: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
 #: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
+#: source_id: viz2021:13.38883,52.5169,08.07.2023,17:00 (bis 08.07.2023)
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
 	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
@@ -5808,19 +5811,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: osm_watch: way id="1096678426" version="6"
-#: last_checked: 2023-06-03 (osm)
-#: check_frequency: 120d
-	q3::inwork 16615,15737 16537,15827
-',
-         'from' => undef,
-         'id' => 3611,
-         'text' => 'Oberseestr.: Fahrbahn an der Einmündung Degnerstr. gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork -3475,26523 -3556,26560
