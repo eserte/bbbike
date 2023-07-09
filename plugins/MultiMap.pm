@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.93;
+$VERSION = 1.94;
 
 use vars qw(%images);
 
@@ -1367,7 +1367,7 @@ sub showmap_url_fis_broker {
     my(%args) = @_;
     my $mapId = delete $args{mapId} || 'k5_farbe@senstadt';
     require Geo::Proj4;
-    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
+    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +units=m +no_defs") # see https://www.spatialreference.org/ref/epsg/25833/
 	or die Geo::Proj4->error;
     my($x0,$y0) = $proj4->forward($args{py0}, $args{px0});
     my($x1,$y1) = $proj4->forward($args{py1}, $args{px1});
