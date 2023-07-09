@@ -21,14 +21,14 @@ my($clat,$clong) = ConvertDatum(53,13,"WGS 84", "Potsdam", "DDD");
 check($clat,$clong,"Potsdam", 4567242, 5874643);
 
 {
-    my($zone, $hemisphere, $easting, $northing) = DegreesToUTM(53.5,13.5,"International 1924");
+    my($zone, $hemisphere, $easting, $northing) = DegreesToUTM(53.5,13.5,"ELD 79");
     is $zone, 33, 'DegreesToUTM zone';
     is $hemisphere, 'U';
     is $easting, 400500;
     is $northing, 5929067;
 }
 {
-    my($y,$x) = UTMToDegrees(qw(33 U 400500 5929067), "International 1924");
+    my($y,$x) = UTMToDegrees(qw(33 U 400500 5929067), "ELD 79");
     cmp_ok abs($y-53.5), '<', 0.0000007, 'northing in UTMToDegrees call';
     cmp_ok abs($x-13.5), '<', 0.000005,  'easting in UTMToDegrees call';
 }

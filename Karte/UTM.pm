@@ -553,7 +553,7 @@ use vars qw(%GDATUM %ELLPSDDEF);
     (
      "WGS 84"  => ["WGS 84", 0, 0, 0, 100, "", -1, -1, -1, 0],
      "Potsdam" => ["Bessel 1841", 587, 16, 393, 102, "GPStrans has: 606 23 413"],
-     "International 1924" => ["International 1924", 0, 0, 0, 100, "", -1, -1, -1, 0], # might be the equivalent to "+proj=utm +zone=33 +ellps=intl +units=m +no_defs"
+     "ELD 79"  => ["International 1924", 0, 0, 0, 100, "", -1, -1, -1, 0], # might be the equivalent to "+proj=utm +zone=33 +ellps=intl +units=m +no_defs"
     );
 
 ## ellipsoid definitions
