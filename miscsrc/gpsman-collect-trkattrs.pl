@@ -22,14 +22,21 @@ use Getopt::Long;
 
 use BBBikeYAML;
 
+my $all_attrs;
+my $with_appearances;
 my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $out_file;
 
 GetOptions(
+	   "all-attrs!" => \$all_attrs,
+	   "with-appearances!" => \$with_appearances,
 	   "gps-data-dir=s" => \$gps_data_dir,
 	   "o=s" => \$out_file,
 	  )
-    or die "usage: $0 [--gps-data-dir ...] [-o file]\n";
+    or die "usage: $0 [--all-attrs] [--with-appearances] [--gps-data-dir ...] [-o file]\n";
+
+my $search_key = $all_attrs ? '[^=]+' : 'srt:[^=]+';
+$search_key = qr{$search_key};
 
 my %attrs;
 
@@ -38,6 +45,11 @@ find sub {
 	open my $fh, $_
 	    or die "Can't open $File::Find::name: $!";
 	my $vehicle;
+
+	my $rel_filename;
+	if ($with_appearances) {
+	    $rel_filename = substr($File::Find::name, length($gps_data_dir)+1);
+	}
 
 	# Only count one appearance of a key-value pair per file.
 	#
@@ -52,12 +64,20 @@ find sub {
 	    my($k, $v, $v2) = @_;
 	    if (defined $v2) {
 		if (!$this_file_attrs{$k}->{$v}->{$v2}) {
-		    $attrs{$k}->{$v}->{$v2}++;
+		    if ($with_appearances) {
+			push @{ $attrs{$k}->{$v}->{$v2} }, $rel_filename;
+		    } else {
+			$attrs{$k}->{$v}->{$v2}++;
+		    }
 		    $this_file_attrs{$k}->{$v}->{$v2} = 1;
 		}
 	    } else {
 		if (!$this_file_attrs{$k}->{$v}) {
-		    $attrs{$k}->{$v}++;
+		    if ($with_appearances) {
+			push @{ $attrs{$k}->{$v} }, $rel_filename;
+		    } else {
+			$attrs{$k}->{$v}++;
+		    }
 		    $this_file_attrs{$k}->{$v} = 1;
 		}
 	    }
@@ -71,7 +91,7 @@ find sub {
 		shift @attrs; # track name
 		my %this_attrs;
 		for my $attr (@attrs) {
-		    if ($attr =~ /^(srt:[^=]+)=(.*)/) {
+		    if ($attr =~ /^($search_key)=(.*)/) {
 			my($k,$v) = ($1,$2);
 			$this_attrs{$k} = $v;
 		    }
@@ -99,6 +119,22 @@ find sub {
 	}
     }
 }, $gps_data_dir;
+
+if ($with_appearances) {
+    while(my($k,$v) = each %attrs) {
+	while(my($k1,$v1) = each %$v) {
+	    if (ref $v1 eq 'ARRAY') {
+		$v->{$k1} = [ sort @$v1 ];
+	    } elsif (ref $v1 eq 'HASH') {
+		while(my($k2,$v2) = each %$v1) {
+		    if (ref $v2 eq 'ARRAY') {
+			$v1->{$k2} = [ sort @$v2];
+		    }
+		}
+	    }
+	}
+    }
+}
 
 if (defined $out_file) {
     require File::Temp;
