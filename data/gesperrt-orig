@@ -3593,13 +3593,14 @@ Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,767543#msg-767543
+#: by: https://phoenix1554.wordpress.com/2023/07/09/umbau-bahnhof-berlin-kopenick-09-07-2023/
 #: confirmed_by: srt
 #: osm_watch: way id="25370127" version="12"
 #: osm_watch: way id="25370128" version="11"
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-09
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -3623,7 +3624,7 @@ Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,120
 #: last_checked: 2023-07-02 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
-Paul-und-Paula-Promenade	2::inwork 14886,10748 14984,10677
+Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
 Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3870,7 +3871,7 @@ Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	2s:q4:inwork 20336,3
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf
 #: XXX Qualität nach den Bauarbeiten? vvv
-#: last_checked: 2023-06-29 vvv
+#: last_checked: 2023-07-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-09-15 vvv
 #: osm_watch: way id="358602468" version="12"
@@ -4378,21 +4379,21 @@ Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="719023971" version="11"
-#: last_checked: 2023-06-08
+#: last_checked: 2023-07-09
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: osm_watch: way id="719023970" version="11"
-#: last_checked: 2023-06-08
+#: last_checked: 2023-07-09
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
-#: note: laut osm offen, stimmt aber nicht
-#: osm_watch: way id="719023969" version="14"
-#: last_checked: 2023-05-13
-Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
+# REMOVED (wieder offen, vermutlich) --- #: note: laut osm offen, stimmt aber nicht --- #: osm_watch: way id="719023969" version="14" --- #: last_checked: 2023-05-13 --- Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
+#: osm_watch: way id="1126013605" version="3"
+#: last_checked: 2023-07-09
+Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
 #: check_frequency ^^^
 #: XXX ^^^
 # REMOVED --- #: XXX Wird der Weg noch hergerichtet oder endgültig zurückgebaut? Laut osm existiert hier ein Rettungsweg, Rasengittersteine --- #: osm_watch: way id="152046369" version="15" --- #: priority: #C --- #: last_checked: 2023-04-16 (daf) --- #: check_frequency: 60d --- (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
@@ -4443,7 +4444,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-06-28
+#: last_checked: 2023-07-09
 #: check_frequency: 90d
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148

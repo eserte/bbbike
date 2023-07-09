@@ -59,7 +59,7 @@ Neue Kreisstr.: Asphaltstreifen	Q0-; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14680,10837
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14680,10837 14717,10855 14810,10832 14904,10812
 # REMOVED --- #: next_check_id: HAUPTSTR-2015 vvv --- #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv --- #: source_id: 2147339565 vvv --- #: last_checked: 2016-08-25 vvv --- #: next_check: 2016-08-29 vvv
-Hauptstr.: Asphalt	Q0 14904,10812 15004,10791 15081,10775 15163,10758 15261,10738
+Hauptstr.: Asphalt	Q0 14904,10812 14927,10807 15004,10791 15081,10775 15163,10758 15261,10738
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -298,7 +298,7 @@ Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 # REMOVED --- #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-09
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Sch‰den	Q1 18037,9195 18092,9141 18134,9080
@@ -2606,7 +2606,8 @@ Gutenbergstr.: Asphalt	Q0 21789,4520 21860,4725 21903,4848 21848,4882
 F‰rberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 # REMOVED (hier wird es keine Durchfahrt mehr geben) --- #: next_check_id: WASSERSTADTSPINDLERSFELD-2019 --- # REMOVED --- #: next_check_id: MENTZELPARK-2018 --- #: XXX Umbau in Asphaltwege --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html --- # REMOVED (temp_blockings reicht) --- : osm_watch: way id="152046369" version="8" --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf --- #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung." --- #: XXX Maﬂnahme Kˆ.13 --- #: XXX siehe auch gesperrt-orig-Eintrag (mit osm_watch ...) --- #: XXX mittlerweile wurde der Strang von der Carl-Spindler-Str. mit Verbundsteinpflaster versehen --- #: last_checked: 2023-03-17 --- #: check_frequency: 60d --- Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg - Carl-Spindler-Str.): Asphalt	Q0 21518,5389 21483,5374
-(Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
+(Uferweg - Carl-Spindler-Str.): Asphalt	Q0 21580,5259 21547,5245
+(Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21580,5259 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): haupts‰chlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Asphalt	Q0 21761,4979 21778,4916 21834,4889 21848,4882
 F‰rberstr.: Beton	Q0- 21607,4850 21622,4884 21649,4946
@@ -12435,7 +12436,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Am Pl‰nterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Pl‰nterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
@@ -13161,7 +13162,7 @@ Ingrid-Reschke-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 15163,10758 15151,
 Ulrich-Plenzdorf-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 14994,10732 15071,10716 15151,10699 15220,10682
 Gustav-Tempel-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 15220,10682 15205,10616 15200,10600
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
-Paul-und-Paula-Promenade: unbefestigte Baustraﬂe	Q2 14886,10748 14984,10677
+Paul-und-Paula-Promenade: unbefestigte Baustraﬂe	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -28986,7 +28987,7 @@ Hirtestr.: Beton	Q0- 22727,6487 22675,6498
 #: next_check_id: PARRISIUS-2023
 #: confirmed_by: srt
 #: XXX Ist die Fahrbahn der Parrisiusstr. nach den Bauarbeiten besser, vielleicht asphaltiert? vvv
-#: last_checked: 2023-06-19 vvv
+#: last_checked: 2023-07-09 vvv
 #: next_check: 2023-08-18 vvv
 Parrisiusstr.: Kopfsteinpflaster	Q2 22358,5918 22531,5871
 #: next_check ^^^

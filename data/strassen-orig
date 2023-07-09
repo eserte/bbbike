@@ -663,7 +663,7 @@ Heidelberger Str.	N 13202,9455 13058,9572
 Laskerstr.	N 14675,10693 14541,10735
 Bödikerstr.	N 14541,10735 14490,10610 14447,10491 14405,10340
 Markgrafendamm	H 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14680,10837 14717,10855
-Hauptstr. (Rummelsburg)	H 14717,10855 14810,10832 14904,10812 15004,10791 15081,10775 15163,10758 15261,10738 15307,10701 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16257,9929 16302,9865 16374,9760
+Hauptstr. (Rummelsburg)	H 14717,10855 14810,10832 14904,10812 14927,10807 15004,10791 15081,10775 15163,10758 15261,10738 15307,10701 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16257,9929 16302,9865 16374,9760
 Hauptstr. (Rummelsburg) [Wohngebiet]	N 15404,10633 15358,10562 15334,10528
 (Hauptstr. - Rummelsburger Ufer)	NN 15334,10528 15322,10513
 (Unterführung S-Bhf. Rummelsburg)	NN 15372,10655 15409,10709 15433,10765
@@ -15454,7 +15454,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-09
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15842,7 +15842,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-09
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -17220,6 +17220,7 @@ Färberstr. [Wohngebiet]	N 21622,4884 21591,4902 21631,4991 21643,5020 21665,5035
 (Färberstr. - Uferweg Richtung Westen)	NN 21662,4974 21670,4997 21665,5035 21696,5053
 (Färberstr. - Uferweg Richtung Osten)	NN 21662,4974 21740,5004
 (Uferweg - Carl-Spindler-Str.)	NN 21518,5389 21483,5374
+(Uferweg - Carl-Spindler-Str.)	NN 21580,5259 21547,5245
 #: note: Privatstraße (laut Amtsblatt)
 Carl-Spindler-Str.	N 21442,5414 21474,5388 21483,5374 21514,5310 21547,5245 21413,5180 21379,5163 21346,5165
 #: note: Privatstraße (laut Amtsblatt)
@@ -17241,7 +17242,7 @@ Eiselenweg	N 21206,5420 21364,5430 21442,5414
 # REMOVED --- (Uferweg, Mentzelpark)	NN 21476,5434 21512,5404 21518,5389
 Gutenbergstr. (Köpenick)	N 21848,4882 21903,4848 21860,4725 21789,4520
 Flemmingstr. (Köpenick)	N 21856,4910 21848,4882 21726,4537
-(Uferweg, Mentzelpark)	NN 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
+(Uferweg, Mentzelpark)	NN 21518,5389 21580,5259 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 (Rosengarten, Mentzelpark)	NN 21761,4979 21821,4918 21834,4889
 (Mentzelpark)	NN 21761,4979 21778,4916 21834,4889 21848,4882
 Charlottenstr. (Köpenick)	N 23036,3929 23027,3916 22966,3912 22855,3902 22666,3888 22456,3889
@@ -18605,7 +18606,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-09
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
@@ -20405,7 +20406,7 @@ Ulrich-Plenzdorf-Str.	N 14994,10732 15071,10716 15151,10699 15220,10682
 Gustav-Tempel-Str.	N 15220,10682 15205,10616
 Gustav-Tempel-Str.	NN 15205,10616 15200,10600
 An den Eiswerken	N 15004,10791 14994,10732 14984,10677
-Paul-und-Paula-Promenade	N 14886,10748 14984,10677
+Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
 # 
 # REMOVED --- #: next_check_id: ROTESRATHAUS-2023 --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- (Umleitungsstrecke Rotes Rathaus)	NN 10704,12595 10695,12616 10615,12642 10542,12587
 # 

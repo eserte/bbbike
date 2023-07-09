@@ -493,30 +493,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
-#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023)
-#: note: auf Webcam gesehen
-Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-',
-         'from' => 1688680800,
-         'id' => 536,
-         'text' => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 08.07.2023',
-         'type' => 'gesperrt',
-         'until' => 1688889600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4384,7 +4361,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-06-27 vvv
+#: last_checked: 2023-07-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4417,35 +4394,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (G,H)
-#: source_id: 2147344351 (inaktiv)
-#: source_id: 2147344352 (inaktiv)
-#: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
-#: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
-#: source_id: viz2021:13.38883,52.5169,08.07.2023,17:00 (bis 08.07.2023)
-#: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
-#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
-	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
-	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
-	2::temp 9664,12387 9680,12232
-	2::temp 9737,12238 9702,12307 9664,12387
-	2::temp 9680,12232 9702,12307 9713,12392
-	3 10291,12600 10300,12587 10363,12535
-	3 10102,12384 10063,12438 9956,12617
-	3 9873,12315 9858,12410 9846,12516
-	3 9953,12533 9984,12426 9990,12404
-	3 10363,12535 10300,12587 10291,12600
-	3 9956,12617 10063,12438 10102,12384
-	3 9990,12404 9984,12426 9953,12533
-	3 9846,12516 9858,12410 9873,12315
-',
-         'from' => 1688742000,
-         'id' => 3172,
-         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 8.7.2023 17:00 bis 23:30 Uhr sowie 9.7.2023 17:30 bis 21:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1688931000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4499,7 +4448,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-09
 #: check_frequency: 14d
 	2::inwork 16148,10329 16353,10207
 # REMOVED ---	2::inwork 15758,10578 16148,10329
@@ -5061,14 +5010,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX neue Sperrung 2022-2023, bis wann? Bekommt der gesperrte Abschnitt einen neuen Belag (Verbundsteinpflaster?)?
 #: add_fragezeichen: Ist der Weg im Hasselwerderpark noch immer gesperrt?
 #: next_check_id: HASSELWERDERPARK-2021
-#: last_checked: 2023-06-10
+#: last_checked: 2023-07-09
 #: check_frequency: 60d
 	2::inwork 18634,5484 18695,5453
 # REMOVED (hier nicht) ---	2::inwork 18506,5596 18560,5539 18634,5484
 ',
          'from' => undef,
          'id' => 3403,
-         'text' => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt (Stand Mitte April 2023)',
+         'text' => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt (Stand Anfang Juli 2023)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5569,10 +5518,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher))
-#: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 # REMOVED --- #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-06-19 vvv
+#: last_checked: 2023-07-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-08-01 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
@@ -6212,7 +6160,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-06-11
+#: last_checked: 2023-07-08 (daf)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -6482,7 +6430,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-07-05 (bahninfo)
+#: last_checked: 2023-07-09
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -7239,7 +7187,7 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
 #: note: mittlerweile hat rbb die Meldung geändert, von Borgmannstraße-Weinbergstraße zu Bahnhofstraße-Borgmannstraße
 # REMOVED --- #: add_fragezeichen: Wo genau befinden sich die Bauarbeiten? vvv
-Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
+Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22358,5918
 # REMOVED (hier keine Bauarbeiten, trotz Verkehrszeichenplans) --- Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
 # REMOVED (hier keine Sperrung oder Bauarbeiten) ---	q3::inwork 22631,5866 22766,5840
 # REMOVED --- #: add_fragezeichen ^^^
@@ -7288,7 +7236,7 @@ Baustellenbereich an der Bahnhofstr.	q3::inwork 22531,5871 22358,5918
        {
          'data' => '#: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-09
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 ',
@@ -7551,6 +7499,42 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
          'text' => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze EInbahnstraßenabschnitte, bis 21.07.2023',
          'type' => 'handicap',
          'until' => 1689951600
+       },
+       {
+         'data' => '#: next_check_id: BRAUNSCHWEIGER-2023
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
+#: also_indoor: traffic (B[auch Unstrutstr])
+#: next_check: 2023-07-21
+	q4::inwork 13368,7300 13476,7330
+',
+         'dont_check_date' => 1,
+         'from' => 1688875200,
+         'id' => 3845,
+         'source_id' => 'viz2021:13.447318,52.471049,10.07.2023,06:00',
+         'text' => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, vom 10.07.2023 06:00 bis 21.07.2023 17:00, möglicherweise länger',
+         'type' => 'handicap',
+         'until' => 1692802800
+       },
+       {
+         'data' => '	q4::inwork 4558,5863 4520,5793
+',
+         'from' => 1688886000,
+         'id' => 3846,
+         'source_id' => 'viz2021:13.315966,52.45914,10.07.2023,09:00',
+         'text' => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 07.08.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1691420400
+       },
+       {
+         'data' => '	q4::inwork 8870,13926 9011,14019
+',
+         'from' => 1688875200,
+         'id' => 3847,
+         'source_id' => 'viz2021:13.382607,52.531437,10.07.2023,06:00',
+         'text' => 'Zinnowitzer Str.: Kraneinsatz, Fahrbahn zwischen Chausseestr. und Am Nordbahnhof gesperrt, vom 10.07.2023 06:00 bis 22.07.2023 19:00',
+         'type' => 'handicap',
+         'until' => 1690045200
        }
      
 );
