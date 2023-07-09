@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2018,2023 Slaven Rezic. All rights reserved.
 #
 #      This program is free software; you can redistribute it and/or modify
 #      it under the terms of the GNU General Public License as published by
@@ -553,6 +553,7 @@ use vars qw(%GDATUM %ELLPSDDEF);
     (
      "WGS 84"  => ["WGS 84", 0, 0, 0, 100, "", -1, -1, -1, 0],
      "Potsdam" => ["Bessel 1841", 587, 16, 393, 102, "GPStrans has: 606 23 413"],
+     "International 1924" => ["International 1924", 0, 0, 0, 100, "", -1, -1, -1, 0], # might be the equivalent to "+proj=utm +zone=33 +ellps=intl +units=m +no_defs"
     );
 
 ## ellipsoid definitions
@@ -567,6 +568,7 @@ use vars qw(%GDATUM %ELLPSDDEF);
     (
      "WGS 84"      => [6378137.0, 298.257223563, ""],
      "Bessel 1841" => [6377397.155, 299.1528128, "used in Germany, Japan"],
+     "International 1924" => [6378388, 297, ""],
     );
 
 
