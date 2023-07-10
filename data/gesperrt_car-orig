@@ -1557,14 +1557,23 @@ Roedernstr.	1 18019,7071 18010,7133
 #: confirmed_by: srt
 Bellermannstr.: Poller	2 9248,16248 9259,16236
 # 
-Klever Str. -> Eulerstr.: Diagonalsperre	3 9301,16439 9381,16372 9322,16317
-Eulerstr. -> Klever Str.: Diagonalsperre	3 9322,16317 9381,16372 9301,16439
-Klever Str.: Diagonalsperre	3 9301,16439 9381,16372 9475,16307
-Klever Str.: Diagonalsperre	3 9475,16307 9381,16372 9301,16439
-Eulerstr.: Diagonalsperre	3 9322,16317 9381,16372 9498,16480
-Eulerstr.: Diagonalsperre	3 9498,16480 9381,16372 9322,16317
-Klever Str. -> Eulerstr.: Diagonalsperre	3 9475,16307 9381,16372 9498,16480
-Eulerstr. -> Klever Str.: Diagonalsperre	3 9498,16480 9381,16372 9475,16307
+Klever Str. -> Eulerstr.: Diagonalsperre	3 9301,16439 9376,16375 9320,16319
+Eulerstr. -> Klever Str.: Diagonalsperre	3 9320,16319 9376,16375 9301,16439
+Klever Str.: Diagonalsperre	3 9301,16439 9376,16375 9475,16307
+Klever Str.: Diagonalsperre	3 9475,16307 9376,16375 9301,16439
+Eulerstr.: Diagonalsperre	3 9320,16319 9376,16375 9465,16464 9490,16455
+Eulerstr.: Diagonalsperre	3 9490,16455 9465,16464 9376,16375 9320,16319
+Klever Str. -> Eulerstr.: Diagonalsperre	3 9475,16307 9376,16375 9465,16464 9490,16455
+Eulerstr. -> Klever Str.: Diagonalsperre	3 9490,16455 9465,16464 9376,16375 9475,16307
+# 
+Jülicher Str. -> Mönkeberger Str.: Diagonalsperre	3 9474,16297 9475,16307 9582,16296
+Mönkeberger Str. -> Jülicher Str.: Diagonalsperre	3 9582,16296 9475,16307 9474,16297
+Jülicher Str.: Diagonalsperre	3 9474,16297 9475,16307 9484,16395
+Jülicher Str.: Diagonalsperre	3 9484,16395 9475,16307 9474,16297
+Klever Str. -> Mönkeberger Str.: Diagonalsperre	3 9376,16375 9475,16307 9582,16296
+Mönkeberger Str. -> Klever Str.: Diagonalsperre	3 9582,16296 9475,16307 9376,16375
+Jülicher Str. -> Klever Str.: Diagonalsperre	3 9484,16395 9475,16307 9376,16375
+Klever Str. -> Jülicher Str.: Diagonalsperre	3 9376,16375 9475,16307 9484,16395
 # 
 Manteuffelstr.	1 11829,10192 11949,10414
 Manteuffelstr.	1 11829,10192 11735,10022
@@ -1849,4 +1858,6 @@ Süderbrokweg	1 13940,14654 13933,14622
 # 
 #: note: eigentlich kein "Radfahrer frei"-Schild, allerdings ist das Schild gegen die Granatenstr. gedreht, so dass man es von Nordwesten kommend schlecht sehen kann
 Verlängerte Koloniestr.	1 8918,18159 8957,18124
+# 
+Rosenthaler -> Weinmeister: Abbiegen verboten	3 10324,13459 10341,13376 10385,13348
 # 

@@ -624,7 +624,7 @@ Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg e
 Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 # REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- #: osm_watch: way id="30195541" version="38" --- #: osm_watch: way id="1101061991" version="10" --- #: osm_watch: way id="310164489" version="30" --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023) (bis 6.9.2023)
-#: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023)
+#: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:101#BVG301286_0
 #: osm_watch: way id="4571954" version="33"
 #: last_checked: 2023-07-02 (osm)
@@ -798,14 +798,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 # 
 ### Lichtenberg ###
 # 
-#: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023)
-#: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m
-#: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023)
-#: note: Halteverbote bis 2023-07-14
-#: last_checked: 2023-06-26
-#: next_check: 2023-07-10
-#: valid: -20230714
-Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
+# REMOVED --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-06-26 --- #: next_check: 2023-07-10 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
 # 
 #: add_fragezeichen: Wann ist die Sperrung beendet?
 #: also_indoor: traffic (B)
@@ -2610,7 +2603,7 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
 #: osm_watch: way id="733001657" version="4"
-#: last_checked: 2022-07-16
+#: last_checked: 2022-07-17
 #: check_frequency: 360d
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
 (Erich-Kästner-Str. - Peter-Huchel-Str.): eng, Fußgänger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
@@ -4634,6 +4627,8 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Hans-Schmidt-Str. - Merlitzstr.): einige Fußgänger	q2 19667,3578 19746,3501
 # 
 (Passage am Tacheles): Fußgänger	q4 9371,13333 9353,13273 9244,13253
+# 
+Eulerstr.: Fußgängerbereich, Quartierplatz	q4 9465,16464 9493,16481
 # 
 ######################### User Contributions #################################
 # 

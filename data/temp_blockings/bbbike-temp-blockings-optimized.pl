@@ -4228,11 +4228,13 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1343794.php (Kiezblock, nach den Bauarbeiten der Wasserbetriebe)
+#: XXX im Anschluss werden Poller aufgestellt (wo genau?)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: note: Halteverbotsschilder bis 29.06.2023
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2023-06-24 (sieht mittlerweile recht fertig aus)
+#: last_checked: 2023-07-10 (sieht mittlerweile recht fertig aus)
 #: check_frequency: 90d
 #: next_check: 2023-07-28
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
@@ -7532,9 +7534,18 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
          'from' => 1688875200,
          'id' => 3847,
          'source_id' => 'viz2021:13.382607,52.531437,10.07.2023,06:00',
-         'text' => 'Zinnowitzer Str.: Kraneinsatz, Fahrbahn zwischen Chausseestr. und Am Nordbahnhof gesperrt, vom 10.07.2023 06:00 bis 22.07.2023 19:00',
+         'text' => 'Zinnowitzer Str.: Kraneinsatz, Fahrbahn zwischen Chausseestr. und Am Nordbahnhof gesperrt, vom 10.07.2023 06:00 bis 24.07.2023 09:00',
          'type' => 'handicap',
-         'until' => 1690045200
+         'until' => 1690182000
+       },
+       {
+         'data' => '#: by: https://www.berliner-zeitung.de/news/strassenfest-fuer-mehr-nachhaltigkeit-gegen-lebensmittelverschwendung-wwf-laesst-friedrichstrasse-in-berlin-sperren-li.367211
+Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418,11804 9432,11702
+',
+         'from' => 1689022894,
+         'id' => 3848,
+         'text' => 'Friedrichstr.: Straßenfest, Sperrung zwischen Jägerstr. und Kronenstr., 11. Juli 2023 ab 8 Uhr bis 13. Juli 2023 14 Uhr',
+         'until' => 1689249600
        }
      
 );

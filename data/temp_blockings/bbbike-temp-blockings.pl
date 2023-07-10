@@ -24998,7 +24998,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_025877	vvv
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.619785.php (Ende der Bauarbeiten)
-	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
+	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9484,16395 9490,16455 9493,16481 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 #: source_id ^^^
 EOF
@@ -29779,11 +29779,13 @@ EOF
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1343794.php (Kiezblock, nach den Bauarbeiten der Wasserbetriebe)
+#: XXX im Anschluss werden Poller aufgestellt (wo genau?)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: note: Halteverbotsschilder bis 29.06.2023
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2023-06-24 (sieht mittlerweile recht fertig aus)
+#: last_checked: 2023-07-10 (sieht mittlerweile recht fertig aus)
 #: check_frequency: 90d
 #: next_check: 2023-07-28
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
@@ -39576,12 +39578,20 @@ EOF
 EOF
      },
      { from  => 1688875200, # 2023-07-09 06:00
-       until => 1690045200, # 2023-07-22 19:00
-       text  => 'Zinnowitzer Str.: Kraneinsatz, Fahrbahn zwischen Chausseestr. und Am Nordbahnhof gesperrt, vom 10.07.2023 06:00 bis 22.07.2023 19:00',
+       until => $isodate2epoch->("2023-07-24 09:00:00"), # 1690045200, # 2023-07-22 19:00
+       text  => 'Zinnowitzer Str.: Kraneinsatz, Fahrbahn zwischen Chausseestr. und Am Nordbahnhof gesperrt, vom 10.07.2023 06:00 bis 24.07.2023 09:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.382607,52.531437,10.07.2023,06:00',
+       source_id => 'viz2021:13.382607,52.531437,10.07.2023,06:00', # bis 22.07.2023 # bis 24.07.2023
        data  => <<EOF,
 	q4::inwork 8870,13926 9011,14019
+EOF
+     },
+     { from  => 1689022894,
+       until => $isodate2epoch->("2023-07-13 14:00:00"),
+       text  => 'Friedrichstr.: Straßenfest, Sperrung zwischen Jägerstr. und Kronenstr., 11. Juli 2023 ab 8 Uhr bis 13. Juli 2023 14 Uhr',
+       data  => <<EOF,
+#: by: https://www.berliner-zeitung.de/news/strassenfest-fuer-mehr-nachhaltigkeit-gegen-lebensmittelverschwendung-wwf-laesst-friedrichstrasse-in-berlin-sperren-li.367211
+Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418,11804 9432,11702
 EOF
      },
     );

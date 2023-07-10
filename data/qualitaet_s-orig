@@ -605,7 +605,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-10
 #: check_frequency: 150d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -619,7 +619,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-10
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1116,7 +1116,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-07-07
+#: last_checked: 2023-07-10
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -9580,7 +9580,7 @@ Am Südfeld: Verbundsteinpflaster	Q1 -1198,21801 -1213,21553
 Dambockstr.: Beton	Q0 -751,21579 -777,21455
 Elchdamm: Beton mit einigen leichten Schäden	Q0- -941,21260 -865,21244 -716,21284 -627,21304 -501,21304 -482,21392 -459,21508
 #: note: Parkstreifen sind gepflastert
-Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9446,16060
+Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
 (Mauerweg Frohnau-Heiligensee): Asphalt, teilweise mit einigen Fugen/Hebungen	Q0- 1896,26788 1869,26304 1832,26248 1595,26061 1410,25993 990,25895 442,25997 415,25974 413,25823 418,25771 565,25332 585,25069 600,24882 575,24601 105,24545 -382,24522 -708,24577
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -822,24540 -972,24498 -1655,24428 -1940,24464 -1953,24435
 (neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8011,10085
@@ -13388,7 +13388,7 @@ Kulmseestr.: Beton, mäßiger bis schlechter Zustand	Q2+ 20001,12368 20062,12353 2
 #: confirmed_by: srt
 Kulmseestr.: Gehwegplatten, mäßiger bis schlechter Zustand, etwas holprig	Q2 20252,12262 20303,12230
 #: confirmed_by: srt
-Klever Str.: mäßiges Kopfsteinpflaster	Q2 9475,16307 9381,16372 9301,16439
+Klever Str.: mäßiges Kopfsteinpflaster	Q2 9475,16307 9376,16375 9301,16439
 Ragazer Str.: schlechtes Kopfsteinpflaster	Q3 6971,18299 7035,18413 7119,18582
 #: confirmed_by: srt
 Zescher Str.: guter Beton	Q0 10513,-2397 10509,-2128
@@ -14483,9 +14483,12 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6127,15688 6267,15844 6383,15972
 Kameruner Str.: Asphalt	Q0 6383,15972 6484,16085 6587,16199
 #: by: ^^^
 # 
-#: by: Paul (without @):
-#: confirmed_by: srt
-Eulerstr.: Asphalt	Q0 9248,16248 9322,16317 9381,16372 9498,16480
+#: by: Paul (without @): vvv
+#: confirmed_by: srt vvv
+Eulerstr.: Asphalt	Q0 9248,16248 9320,16319 9376,16375 9465,16464 9490,16455
+Eulerstr.: Asphalt	Q0 9465,16464 9493,16481
+#: confirmed_by ^^^
+#: by ^^^
 # 
 #: by: jackie kaiser:
 Boizenburger Str.: guter Asphalt	Q0 22319,12795 22319,12663 22319,12637 22323,12347 22385,12268
@@ -18892,7 +18895,7 @@ Cambridger Str.: mäßiger Asphalt	Q1 5866,17419 5778,17436 5691,17404 5556,17254
 # 
 #: by: Astrid Friedrich:
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
-Glücksburger Str.: Kopfsteinpflaster	Q2 9498,16480 9603,16468
+Glücksburger Str.: Kopfsteinpflaster	Q2 9493,16481 9603,16468
 # 
 #: by: Stefan Schirra:
 Propst-Süßmilch-Weg: Verbundsteinpflaster	Q1 856,3188 813,3202 797,3216 727,3231 649,3221
@@ -19485,7 +19488,7 @@ Ortwinstr.: unebene Kleinpflasterung mit Spurrinnen	Q2- 1828,25478 1730,25441 16
 Auguststr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 5277,2054 5335,1913 5396,1774
 # 
 #: by: Wolfgang Koller:
-Spanheimstr.: mäßiges Kopfsteinpflaster	Q2 9458,16180 9322,16317
+Spanheimstr.: mäßiges Kopfsteinpflaster	Q2 9458,16180 9320,16319
 # 
 #: by: Claus Zingel:
 #: note: nur der Hauptweg, die Hausvorfahrten haben kein Kopfsteinpflaster
@@ -20897,7 +20900,7 @@ Bohm-Schuch-Weg: guter Asphalt	Q0 13608,2850 13703,2826 13740,2827 13738,2911
 # 
 #: by: stefbier:
 #: confirmed_by: srt
-Laböer Str.: Asphalt	Q0 9487,16395 9594,16384
+Laböer Str.: Asphalt	Q0 9484,16395 9594,16384
 # 
 #: by: Ulrike Schwarz:
 #: note: 13 km/h als Höchstgeschwindigkeit angegeben
@@ -31762,8 +31765,8 @@ Einmündungsbereich asphaltiert	Q0 7113,17365
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9248,16248
 #: note: gilt nicht für den Radweg in Richtung Nordwesten
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9259,16236
-Einmündungsbereich asphaltiert	Q0 9322,16317
-Kreuzungsbereich asphaltiert	Q0 9381,16372
+Einmündungsbereich asphaltiert	Q0 9320,16319
+Kreuzungsbereich asphaltiert	Q0 9376,16375
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11440,16622
 Kreuzungsbereich asphaltiert	Q0 -1328,23580
 Kreuzungsbereich gepflastert	Q2 17091,12105
@@ -32072,7 +32075,7 @@ Kreuzungsbereich asphaltiert	Q0 24984,10204
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 25200,9939
 Einmündungsbereich betoniert	Q0- 22855,3902
 #: XXX_prog: allerdings ist zur Eulerstr. hin ein paar Meter gepflastert
-Kreuzungsbereich asphaltiert	Q0 9498,16480
+Kreuzungsbereich asphaltiert	Q0 9493,16481
 Kreuzungsbereich asphaltiert	Q0 9475,16307
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7389,8837
 Kreuzungsbereich asphaltiert	Q0 7086,8579
@@ -32404,4 +32407,5 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 6159,2176
 Kreuzungsbereich asphaltiert	Q0 6196,2204
 Kreuzungsbereich asphaltiert	Q0 7002,9526
 Einmündungsbereich asphaltiert	Q0 17753,8290
+Einmündungsbereich mit Kopfsteinpflaster	Q2 9245,16758
 #: ignore ^^^
