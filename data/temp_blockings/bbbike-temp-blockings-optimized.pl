@@ -3063,6 +3063,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
 #: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
+#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/das-tegeler-hafenfest-ist-wieder-da-und-will-an-grosse-zeiten-anschliessen-id226835
 # REMOVED (was) : tempex: 20160714-20160717
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 ',
@@ -4020,7 +4021,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
-#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.7.2023)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -4224,12 +4224,11 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023) (bis 29.06.2023) (bis 28.07.2023)
+         'data' => '#: next_check_id: GRUENTALER-2023
+#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023) (bis 29.06.2023) (bis 28.07.2023)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1343794.php (Kiezblock, nach den Bauarbeiten der Wasserbetriebe)
-#: XXX im Anschluss werden Poller aufgestellt (wo genau?)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: note: Halteverbotsschilder bis 29.06.2023
 #: also_indoor: traffic (ex-H,B,ex-G)
@@ -5309,13 +5308,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-06-10
+#: last_checked: 2023-07-11
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 ',
          'from' => undef,
          'id' => 3504,
-         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Juni 2023: Durchgang ist mit Bauzäunen versperrt)',
+         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Mitte Juli 2023: Durchgang ist mit Bauzäunen versperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5484,7 +5483,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-09
+#: last_checked: 2023-07-11
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5884,7 +5883,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 #: also_indoor: traffic (none)
 #: note: Halteverbot bis 24.7.2023 17h
-#: last_checked: 2023-07-04
+#: last_checked: 2023-07-11
 #: check_frequency: 14d
 #: next_check: 2023-07-24
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
@@ -6077,7 +6076,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -6085,9 +6084,9 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 ',
          'from' => 1665385200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 14.07.2023 17:00',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 21.07.2023 17:00',
          'type' => 'handicap',
-         'until' => 1689346800
+         'until' => 1689951600
        },
        undef,
        undef,
@@ -6746,7 +6745,8 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2023-07-02 vvv
+         'data' => '#: note: Halteverbotsschilder bis 4.8.2023
+#: last_checked: 2023-07-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED (ja, bereits eingetragen) --- #: XXX möglicherweise Asphaltierung?
@@ -7183,7 +7183,8 @@ Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
        {
          'data' => '#: next_check_id: PARRISIUS-2023
 #: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023) (inaktiv)
-#: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023)
+#: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023) (inaktiv)
+#: source_id: viz2021:13.581174,52.456659,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 #: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
@@ -7455,16 +7456,7 @@ Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
          'type' => 'handicap',
          'until' => 1703890800
        },
-       {
-         'data' => '	q4::temp; -790,11512 -1327,11376
-',
-         'from' => 1688270400,
-         'id' => 3842,
-         'source_id' => 'viz2021:13.239886,52.511583,03.07.2023,06:00',
-         'text' => 'Jesse-Owens-Allee: Veranstaltung, Richtung Passenheimer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 03.07.2023 06:00 bis 10.07.2023 23:59',
-         'type' => 'handicap',
-         'until' => 1689026340
-       },
+       undef,
        {
          'data' => '#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1675861551939477504
 	q4::inwork 22388,4737 22377,4836
@@ -7540,12 +7532,36 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
        },
        {
          'data' => '#: by: https://www.berliner-zeitung.de/news/strassenfest-fuer-mehr-nachhaltigkeit-gegen-lebensmittelverschwendung-wwf-laesst-friedrichstrasse-in-berlin-sperren-li.367211
+#: by: https://nitter.net/VIZ_Berlin/status/1678631451875762183 (hier bis Do 20 Uhr)
+#: source_id: viz2021:13.38933,52.51388,11.07.2023,08:00 (bis 13.07.2023)
 Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418,11804 9432,11702
 ',
          'from' => 1689022894,
          'id' => 3848,
-         'text' => 'Friedrichstr.: Straßenfest, Sperrung zwischen Jägerstr. und Kronenstr., 11. Juli 2023 ab 8 Uhr bis 13. Juli 2023 14 Uhr',
-         'until' => 1689249600
+         'text' => 'Friedrichstr.: Straßenfest, Sperrung zwischen Jägerstr. und Kronenstr., vom 11. Juli 2023 08:00 Uhr bis 13. Juli 2023 20:00 Uhr',
+         'until' => 1689271200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/23-0699_kronprinzessinnenweg_rad_u_fussumleitung_-_ba_23_-_.pdf
+	2::inwork -927,6888 -2218,5133 -3296,3686
+',
+         'from' => 1690581600,
+         'id' => 3849,
+         'prewarn_days' => 2,
+         'text' => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, Montag bis Freitag 7 bis 18 Uhr, vom 31.07.2023 bis zum 21.12.2024',
+         'type' => 'gesperrt',
+         'until' => 1734822000
+       },
+       {
+         'data' => '	2::inwork 68928,100165 71282,98881
+',
+         'from' => 1688536800,
+         'id' => 3850,
+         'source_id' => 'LS/221-E/23/089',
+         'text' => 'B113 bei Tantow: Fahrbahnsanierung, Sperrung vom 06.07.2023, 08:00 Uhr bis 28.07.2023, 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1690552800
        }
      
 );

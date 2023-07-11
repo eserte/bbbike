@@ -7,6 +7,10 @@
 # 
 #: temporary vvv
 # 
+#: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024)
+#: valid: -20230930
+Gegenverkehrsregelung	X::inwork 20302,1613
+# 
 #: next_check_id: SGEHRENSEE-2023
 #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023)
 #: last_checked: 2023-07-08
@@ -36,7 +40,7 @@ Gegenverkehrsregelung	X::inwork 22192,6659
 #: next_check_id: BAUMSCHULEN-2023
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
-#: last_checked: 2023-06-19
+#: last_checked: 2023-07-11
 #: next_check: 2023-08-31
 #: valid: -20230831
 	X::inwork 16328,7005
@@ -1593,7 +1597,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="3"
-#: last_checked: 2023-06-09 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2023-07-11 (manchmal ausgeschaltet (abends? selten?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -3383,30 +3387,35 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: note: Ampel befindet sich nordwestlich der Kreuzung --- #: osm_watch: node id="9904010844" version="1" ---	F::inwork 14567,6810
 # REMOVED --- #: note: Extra-Umweg für Radfahrer in Richtung Südosten, Anforderungsampel in dieser Richtung --- #: osm_watch: node id="7838025476" version="4" ---	X::inwork 14724,6668
 # REMOVED --- #: osm_watch: node id="7694895359" version="2" ---	X::inwork 14366,6337
-# REMOVED --- #: osm_watch: node id="7694895365" version="2" ---	X::inwork 14193,6556
+# REMOVED --- #: osm_watch: node id="7694895365" version="2" ---	X::inwork 14187,6555
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
-#: note: Anforderungsampel
+# REMOVED --- #: note: Anforderungsampel
 #: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr.
-#: last_checked: 2023-06-29
-#: next_check: 2023-07-06
-	F::inwork 14139,6786
+#: last_checked: 2023-07-11
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2023-07-06
+	X::inwork 14147,6791
 #: XXX wird später möglicherweise nur eine Fußgängerampel sein? eine weitere Ampel wird an der Einmündung Autobahnausfahrt/Bergiusstr. entstehen
-#: last_checked: 2023-06-29
-#: next_check: 2023-07-06
+#: last_checked: 2023-07-11
+#: check_frequency: 60d
 	X::inwork 14051,6731
+#: XXX bleibt diese Ampel?
+#: last_checked: 2023-07-11
+#: check_frequency: 60d
+	X::inwork 14141,6623
 # REMOVED --- #: note: Anforderungsampel --- #: last_checked: 2023-04-05 ---	F::inwork 13979,6700
 # REMOVED --- #: next_check ^^^ --- #: valid ^^^
 #: next_check_id ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 # REMOVED --- #: valid: 20140224-20211231 vvv
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-11
 #: check_frequency: 90d
-#: next_check: 2023-07-06 vvv
+#: next_check: 2023-08-30 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-11
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
