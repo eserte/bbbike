@@ -3337,7 +3337,17 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/721-E/13/083 (inaktiv)
+#: source_id: LS/221-E/23/099 (bis 04.08.2023)
+	2::inwork 46564,76483 46704,75833
+',
+         'from' => 1690092000,
+         'id' => 2581,
+         'text' => 'B198: OD Greiffenberg, Bauarbeiten, Durchfahrt gesperrt, 24.07.2023 08:00 Uhr bis 04.08.2023 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1691157600
+       },
        undef,
        undef,
        undef,
@@ -4337,7 +4347,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (G,H)
-#: last_checked: 2023-05-27 (mapillary)
+#: last_checked: 2023-07-08 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-09-30
 # REMOVED --- #: next_check: 2024-01-01
@@ -4362,7 +4372,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-07-09 vvv
+#: last_checked: 2023-07-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5617,7 +5627,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-06-22
+#: last_checked: 2023-07-12
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -7062,7 +7072,7 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
          'until' => 1691593200
        },
        {
-         'data' => '#: last_checked: 2023-06-29
+         'data' => '#: last_checked: 2023-07-12
 #: check_frequency: 30d
 #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -7296,9 +7306,9 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'from' => 1687068000,
          'id' => 3824,
          'source_id' => 'LS/221-E/23/077',
-         'text' => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
+         'text' => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 25.08.2023',
          'type' => 'gesperrt',
-         'until' => 1715349600
+         'until' => 1692972000
        },
        {
          'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
@@ -7544,6 +7554,7 @@ Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/23-0699_kronprinzessinnenweg_rad_u_fussumleitung_-_ba_23_-_.pdf
+#: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
 	2::inwork -927,6888 -2218,5133 -3296,3686
 ',
          'from' => 1690581600,
@@ -7562,6 +7573,84 @@ Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418
          'text' => 'B113 bei Tantow: Fahrbahnsanierung, Sperrung vom 06.07.2023, 08:00 Uhr bis 28.07.2023, 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1690552800
+       },
+       {
+         'data' => '#: by: https://www.rbb24.de/panorama/beitrag/2023/07/fassadenteil-friedrichstrasse-berlin-polizist-schwer-verletzt.html
+#: by: https://www.berliner-zeitung.de/news/friedrichstrasse-broeckelnde-fassade-faellt-mann-auf-den-kopf-strasse-gesperrt-objektschuetzer-auf-intensivstation-li.367532
+#: by: https://berliner-abendblatt.de/berlin-news/fassadenteil-stuerzt-herunter-und-verletzt-polizeimitarbeiter-id226599
+#: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
+#: last_checked: 2023-07-12
+#: check_frequency: 14d
+	q4::inwork; 9384,12103 9373,12197
+',
+         'from' => undef,
+         'id' => 3851,
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 24956,29921 25361,29596
+',
+         'from' => 1690696800,
+         'id' => 3852,
+         'source_id' => 'LS/221-E/23/098',
+         'text' => 'Börnicke - Bernau: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 31.07.2023, 08:00 Uhr bis 26.08.2023,16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1693058400
+       },
+       {
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1679159518008074242#m
+#: by: https://nitter.net/pic/orig/media%2FF02SAfmWIAMHXCm.jpg
+#: by: https://nitter.net/pic/orig/media%2FF02SCVzWcAEPLfw.jpg
+#: by: https://viz.berlin.de/2023/07/bombenentschaerfung-marzahn/
+Schwarzwurzelstr.	2::bomb 21009,18503 20927,18480 20814,18419 20759,18390 20698,18359 20654,18336 20538,18275 20452,18273 20407,18273 20289,18274
+Schwarzwurzel-Park	2::bomb 20698,18359 20814,18341 20823,18329
+Farmergasse	2::bomb 20759,18390 20726,18447
+Pflanzergasse	2::bomb 20781,18476 20814,18419
+Radieschenpfad	2::bomb 20635,18381 20654,18336
+Lattichweg	2::bomb 20635,18381 20523,18329 20453,18321 20452,18273
+Merseburger Str. (Marzahn)	2::bomb 20460,18030 20490,18120 20407,18273
+Bernburger Str. (Marzahn)	2::bomb 20351,18066 20367,18129 20289,18274
+Dessauer Str. (Marzahn)	2::bomb 20351,18066 20460,18030 20576,17994
+(Zufahrt Bhf. Ahrensfelde)	2::bomb 21199,18643 21137,18520
+(Zufahrt Bhf. Ahrensfelde)	2::bomb 21309,18626 21285,18637 21224,18519 21251,18508
+Hellersdorfer Weg	2::bomb 20443,17698 20569,17607
+Hellersdorfer Weg	2::bomb 20569,17607 20657,17543
+Köthener Str. (Marzahn)	2::bomb 20488,17793 20542,17911 20576,17994 20591,18037 20616,18126 20538,18275
+Geraer Ring	2::bomb 20591,18037 20746,17984 20778,17996 20818,18075 20866,18174 20911,18258 20932,18328 20909,18379 20823,18329 20706,18269 20734,18219 20866,18174
+(Geraer Ring - Eichenallee)	2::bomb 20778,17996 20781,17958 20799,17941 20786,17893 20804,17848
+Greizer Str. (Marzahn)	2::bomb 20818,18075 20646,18129 20616,18126
+(Eichenallee)	2::bomb 20542,17911 20746,17848 20804,17848
+(Wuhletalstr. - Eichenallee)	2::bomb 20728,17670 20801,17821 20804,17848
+Wolfener Str.	2::bomb 20443,17698 20488,17793
+(Weg entlang der S-Bahn)	2::bomb 20582,17392 20657,17543
+Wuhletalstr.	2::bomb 20769,17650 20891,17572
+Wuhletalstr.	2::bomb 20895,17594 20769,17650
+Wuhletalstr.	2::bomb 20769,17650 20728,17670 20488,17793
+Wuhletalstr. - zur Märkischen Allee	2::bomb 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
+An der Kohlbeke	2::bomb 20728,17670 20657,17543
+Märkische Allee	2::bomb 21309,18626 21251,18508 21163,18347 21009,18055 20912,17872 20889,17838 20843,17745 20798,17664 20768,17609 20717,17516 20691,17463
+Märkische Allee	2::bomb 20996,17865 21073,18023 21150,18179 21220,18323 21281,18451
+Märkische Allee - Wuhletalstr.	2::bomb 20717,17516 20853,17528 20891,17572
+Märkische Allee - Wuhletalstr.	2::bomb 20891,17572 20895,17594
+Wuhletalstr. - Märkische Allee	2::bomb 20895,17594 20912,17678 20843,17745
+Havemannstr.	2::bomb 21251,18508 21446,18405
+Havemannstr.	2::bomb 21281,18451 21432,18376
+Wittenberger Str.	2::bomb 21009,18055 21073,18023 21217,17953
+Flämingstr.	2::bomb 21446,18405 21432,18376 21391,18293 21365,18250 21292,18109 21250,18020 21217,17953 21175,17867 21146,17867 21114,17809 20996,17865
+Flämingstr.	2::bomb 21146,17867 21087,17892
+Flämingstr.	2::bomb 21292,18109 21150,18179
+Flämingstr.	2::bomb 21365,18250 21220,18323 21163,18347
+(Parkweg an der Neuen Wuhle)	2::bomb 20889,17838 20983,17846 21057,17785 21093,17765
+(Verbindungsweg zur Neuen Wuhle)	2::bomb 20996,17865 20983,17846
+(Verbindungsweg zur Neuen Wuhle)	2::bomb 21114,17809 21093,17765
+',
+         'from' => 1689188273,
+         'id' => 3853,
+         'text' => 'Bombenentschärfung am Geraer Ring: 500m großer Sperrkreis wird errichtet, voraussichtlich am 13. Juli 2023 von 06:00 bis 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1689264000
        }
      
 );
