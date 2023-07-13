@@ -38,6 +38,7 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 # 
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
+#: also_indoor: traffic (G,W)
 #: last_checked: 2023-07-08
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
@@ -49,10 +50,10 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
-#: also_indoor: traffic (B,H)
-#: last_checked: 2023-07-03
-#: check_frequency: 7d
-Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
+#: also_indoor: traffic (B[unvollständig],H[unvollständig])
+#: last_checked: 2023-07-13
+#: check_frequency: 14d
+Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 # 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
 # 
@@ -292,7 +293,7 @@ Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-13
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -308,7 +309,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-06-22 vvv
+#: last_checked: 2023-07-13 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -618,8 +619,8 @@ Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg e
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023) (bis 6.9.2023)
 #: source_id: viz2021:13.33913,52.5264,20.12.2022,13:00 (bis 06.09.2023)
-#: osm_watch: way id="692480562" version="14"
-#: last_checked: 2023-06-28 (osm)
+#: osm_watch: way id="692480562" version="15"
+#: last_checked: 2023-07-13 (osm)
 #: check_frequency: 30d
 Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 # REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- #: osm_watch: way id="30195541" version="38" --- #: osm_watch: way id="1101061991" version="10" --- #: osm_watch: way id="310164489" version="30" --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
@@ -2163,7 +2164,7 @@ Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8
 #: XXX_prog: die Verlangsamung eigentlich nur durch das "Vorfahrt gewähren" verursacht, hier explizit gemacht, damit bei "Ampeloptimierung" keine unnötigen Schlenker gemacht werden. Leider reicht q3 hier nicht aus. Durch gerichtete Handicaps ersetzen, sobald implementiert.
 #: note: Rio-Reiser-Platz
 	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576 7710,12585
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7578,19753 7617,19748
 #: XXX_prog: BS Bordsteine (2x)
@@ -3303,7 +3304,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-13
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3433,8 +3434,8 @@ Biedermannweg: eng, einige Fußgänger	q1- -742,12924 -744,12911 -717,12823
 Biedermannweg: einige Fußgänger	q1 -717,12823 -686,12735
 #: XXX_prog BS (ansonsten entfernen)
 Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
-(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Gefälle	q1; 7733,14570 7696,14577 7662,14579 7653,14570
-(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7733,14570
+(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Gefälle	q1; 7696,14577 7662,14579 7653,14570
+(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577
 (Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fußgänger	q1 7605,14600 7589,14627 7549,14664 7514,14687
 #: XXX_prog BS beim Überqueren der Lietzenburger Str., ansonsten weiterhin q2
 Kelheimer Str.: einige Fußgänger, Bordstein	q2 5894,10287 5898,10318
@@ -4938,8 +4939,11 @@ Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13
 Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
 # XXX removed by srt: Lefèvrestr.: enge Straße	q1 5215,6643 5360,6642
-(Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
-(südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
+#: corrected_by srt: (q4 -> aber man kommt eigentlich gut vorbei) vvv
+(Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q3 7776,12586 7745,12603
+(südliches Spreeufer): Biergarten am HDKDW	q3 7745,12603 7710,12585
+# REMOVED (hier eigentlich nicht) --- (südliches Spreeufer): Biergarten am HDKDW	q4 7710,12585 7670,12576
+#: corrected_by ^^^
 #: by: ^^^
 # 
 # REMOVED --- #: next_check_id: ROBERTVONOSTERTAG-2104 --- #: by: Michael Heckner: --- #: XXX Reitweg wird separiert --- #: next_check: 2015-09-01 --- Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320

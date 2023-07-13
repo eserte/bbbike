@@ -767,6 +767,7 @@ asphaltiert	RW1; 3327,12818 3300,12751
 neu asphaltiert, etwas breiter	RW1; 3300,12751 3291,12721
 neu asphaltiert, etwas breiter	RW2; 3291,12721 3269,12648 3271,12609 3279,12533
 #: historical_note: früher RW1
+#: note: erste Meter Busspur (Haltestelle), keine Radfreigabe (!), dafür aber ein Fahrradpiktogramm; möglicherweise wird das noch "richtig" gemacht
 	RW0; 7172,13051 7346,13022
 #: historical_note: früher RW1
 	RW4; 7346,13022 7172,13051
@@ -2527,7 +2528,9 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7937,583 8075,499
 	RW2; 7847,638 7937,583
 	RW2;RW2 7847,638 7790,672
 	RW4;RW4 7031,12320 7051,12426
-	RW1;RW1 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
+Verbundsteinpflaster	RW1; 7051,12426 7077,12575 7085,12610
+unebenes Verbundsteinpflaster, Bord gegen Gehweg	RW1; 7085,12610 7111,12743 7172,13051
+	RW1; 7172,13051 7111,12743 7085,12610 7077,12575 7051,12426
 	RW1;RW1 8161,16752 8082,16483 8093,16438
 	RW1;RW1 4144,18896 4211,18882 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5364,18775
 	RW1; 5364,18775 5550,18775
@@ -3383,13 +3386,16 @@ Suggestivstreifen, allerdings mit durchgezogener Linie	RW3; 4283,13660 4363,1333
 	RW1; 4363,13336 4283,13660
 die letzten Meter werden auf dem Gehweg geführt	RW3; 4363,13336 4381,13239
 	RW1; 4381,13239 4363,13336
-	RW1;RW1 7172,13051 7187,13126 7161,13190
-	RW1; 7161,13190 7131,13261
 #: historical_note: früher: RW1;
-	RW4?; 7131,13261 7084,13352 7069,13381
+	RW4; 7172,13051 7187,13126
 #: historical_note: früher: RW1;
-	RW4; 7069,13381 7084,13352
-	RW4; 7084,13352 7131,13261 7161,13190
+	RW3; 7187,13126 7161,13190 7131,13261
+#: historical_note: früher: RW1;
+	RW3; 7131,13261 7084,13352 7069,13381
+#: historical_note: früher: RW1;
+	RW4; 7069,13381 7084,13352 7131,13261
+#: historical_note: früher: RW1;
+	RW3; 7131,13261 7161,13190 7187,13126 7172,13051
 	RW1;RW0 22365,6149 22296,6170 22263,6185 22238,6195 21984,6317
 	RW2; 22467,6135 22534,6249
 unebenes Verbundsteinpflaster	RW2; 22534,6249 22467,6135
@@ -4315,7 +4321,7 @@ Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW1;RW4 6288,14661 6281,14630
 #: by: https://berliner-abendblatt.de/2022/02/09/putlitzbruecke-soll-sicherer-werden/ (Erneuerung der Radwege 2022 geplant)
 #: XXX Was ändert sich bei der Sanierung der Radwege?
-#: last_checked: 2023-01-07
+#: last_checked: 2023-07-13
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-31
 	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14184 6228,14077
@@ -6392,7 +6398,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="24"
+#: osm_watch: way id="162965650" version="25"
 	RW3; 8776,16268 8921,16578
 #: osm_watch: way id="761539110" version="11"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
@@ -6754,6 +6760,7 @@ Verbundsteinpflaster	RW1;RW2 19875,18182 20136,18291 20160,18301
 	RW6;RW6 15374,1086 15323,1215 15254,1396 15245,1459
 	RW6;RW6 15117,1456 15120,1381 15187,1171 15269,930 15316,888 15337,889
 	RW6;RW6 15187,1171 15277,1201 15323,1215 15385,1241
+#: note: es ist unklar, ob der Radweg als Zweirichtungsradweg gedacht ist (Piktogramme auf dem Weg zeigen nur Richtung Westen), aber wird in der Regel so genutzt
 asphaltiert	RW1;RW9 7437,12368 7215,12295 7031,12320
 	RW3;RW4 10285,12306 10199,12251 10174,12284 10109,12238 10091,12232
 	RW3;RW3 10091,12232 10029,12208 9972,12184 9939,12174 9898,12161
@@ -6876,7 +6883,7 @@ Radweg nur aufgemalt	RW1; 4224,23074 4030,23054
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX ein Radwegschild steht hier, aber es gibt keine Radspuren --- vielleicht werden sie noch markiert? --- #: last_checked: 2018-06-08
 #: by: osm
 Radspur teilweise hinter den parkenden Autos	RW4; 8732,14098 8607,14253
-	RW4; 8607,14253 8732,14098
+Poller	RW4; 8607,14253 8732,14098
 	RW3; 8607,14253 8570,14299 8490,14397
 # REMOVED (nein) --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX wird es hier eine Benutzungspflicht geben? --- #: last_checked: 2018-05-17
 asphaltiert	RW1; 8490,14397 8442,14456
@@ -6884,7 +6891,8 @@ Radweg mit Bushaltestelle	RW3; 8442,14456 8406,14507
 	RW4; 8406,14507 8336,14586
 	RW3; 8336,14586 8323,14599 8286,14635 8250,14672 8234,14686 8153,14769 8138,14786 8131,14794 8057,14876
 	RW3; 8057,14876 8131,14794 8138,14786 8153,14769 8234,14686 8250,14672 8286,14635 8323,14599 8336,14586
-Radspur hinter den parkenden Autos	RW4; 8336,14586 8406,14507 8442,14456
+Radspur hinter den parkenden Autos	RW4; 8336,14586 8406,14507
+Poller	RW4; 8406,14507 8442,14456
 	RW4;RW4 8671,14919 8653,14899
 	RW3; 6781,16026 6712,16087
 	RW4; 6712,16087 6781,16026
@@ -7093,7 +7101,9 @@ asphaltiertes Straßenbahnkap	RW1; 14162,12808 14096,12827
 	RW1;RW1 5620,13120 5601,12756
 # REMOVED (mittlerweile schon) --- #: note: eigentlich nicht für Radfahrer freigegeben (2013-01, 2015-03, 2015-06, 2015-12)
 Busspur immer gültig	RW5; 6228,13324 6377,13321
-	RW3;RW3 6377,13321 6480,13325 6535,13327 6674,13332 6692,13333 6814,13349 6919,13360 6960,13366 7069,13381
+	RW3; 6377,13321 6480,13325 6535,13327 6674,13332 6692,13333 6814,13349 6919,13360 6960,13366 7002,13372 7069,13381
+Bushaltestelle	RW5; 7069,13381 7002,13372
+	RW3; 7002,13372 6960,13366 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6480,13325 6377,13321
 #: by: Irit Früchtnicht vvv
 #: confirmed_by: srt vvv
 	RW6;RW6 12379,1185 12373,1169 12350,1088

@@ -16723,6 +16723,7 @@ Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15732,12562 15657,12562 15657,12648
 #: by: ^^^
 # 
 #: by: Ulrike Grömping:
+#: confirmed_by: srt
 Pritzwalker Str.: Kopfsteinpflaster	Q2 6919,13360 6897,13551
 # 
 #: by: Bernd Klaenfoth:
@@ -29353,6 +29354,7 @@ Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
 Döberitzer Str.: asphaltiert	Q0 7979,13733 7872,13685
 #: confirmed_by: srt
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
+#: confirmed_by: srt
 Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6692,13333 6687,13545 6686,13746
 #: confirmed_by: srt (clarified: Q2 -> Q1-)
 Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q1- 6230,13532 6104,13530 6008,13529
@@ -31087,7 +31089,7 @@ Sleipnerstr.: Asphalt	Q1 12261,19099 12510,18954
 #: corrected_by: srt (Q1 -> Q0-)
 Neukirchstr.: Asphalt	Q0- 12548,18503 12014,18771
 #: corrected_by: srt (added "kleinteiliges")
-(Paul-Löbe-Allee - südliches Spreeufer): kleinteiliges Kopfsteinpflaster	Q1 7851,12590 7741,12586 7710,12585
+(Paul-Löbe-Allee - südliches Spreeufer): kleinteiliges Kopfsteinpflaster	Q1 7851,12590 7776,12586 7745,12603
 #: by:^^^
 # 
 #: by: Geske, Anselm [AM]
@@ -32408,4 +32410,8 @@ Kreuzungsbereich asphaltiert	Q0 6196,2204
 Kreuzungsbereich asphaltiert	Q0 7002,9526
 Einmündungsbereich asphaltiert	Q0 17753,8290
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9245,16758
+Kreuzungsbereich asphaltiert	Q0 6783,13551
+Einmündungsbereich asphaltiert	Q0 6686,13746
+Einmündungsbereich mit Mosaikpflaster	Q2+ 6897,13551
+Einmündungsbereich mit Mosaikpflaster	Q2+ 6687,13545
 #: ignore ^^^

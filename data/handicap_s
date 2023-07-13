@@ -9,7 +9,7 @@ Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn g
 Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
-Kinzigstr.: Bauarbeiten nördlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
+Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -734,7 +734,7 @@ Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8011,13128 8106,13130
 Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 8011,13128 7937,13126
 	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576 7710,12585
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7578,19753 7617,19748
 Oleanderstr.: Fußgänger, Bordsteine	q4 14271,14024 14298,14015
@@ -1659,8 +1659,8 @@ Hochspannungsweg (Britz): einige Fußgänger	q1 13761,2993 13631,2938 13561,2898 1
 Biedermannweg: eng, einige Fußgänger	q1 -742,12924 -744,12911 -717,12823
 Biedermannweg: einige Fußgänger	q1 -717,12823 -686,12735
 Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
-(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Gefälle	q1; 7733,14570 7696,14577 7662,14579 7653,14570
-(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7733,14570
+(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Gefälle	q1; 7696,14577 7662,14579 7653,14570
+(Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577
 (Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fußgänger	q1 7605,14600 7589,14627 7549,14664 7514,14687
 Kelheimer Str.: einige Fußgänger, Bordstein	q2 5894,10287 5898,10318
 Würzburger Str.: einige Fußgänger, Bordsteine	q3 5898,10318 5907,10347
@@ -2582,8 +2582,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
-(Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
-(südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
+(Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q3 7776,12586 7745,12603
+(südliches Spreeufer): Biergarten am HDKDW	q3 7745,12603 7710,12585
 Hackerstr.: schmale Straße, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 (Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22196,12961 22279,12938 22308,12940 22357,12956 22419,12975 22443,12998

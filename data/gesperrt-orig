@@ -939,6 +939,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023)
 #: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.07.2023)
+#: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023)
 #: last_checked: 2023-06-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-07-15 vvv
@@ -3574,6 +3575,11 @@ Drängelgitter	BNP:3::trailer=10 4067,22066
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
+#: last_checked: 2023-07-13
+#: check_frequency: 90d
+Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
+# 
 #: osm_watch: way id="693060662" version="15"
 #: XXX Straße fertiggestellt, durch Bauzäune abgesperrt
 #: last_checked: 2023-07-08
@@ -3652,7 +3658,7 @@ Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: osm_watch: way id="4596985" version="21"
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-13
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4001,7 +4007,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="20"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-13
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4385,7 +4391,7 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 # REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
-#: osm_watch: way id="1126013605" version="4"
+# REMOVED --- #: osm_watch: way id="1126013605" version="5"
 #: last_checked: 2023-07-09
 Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
 #: check_frequency ^^^
@@ -4546,6 +4552,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php
+#: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
 #: last_checked: 2023-07-02
 #: check_frequency: 360d
 #: next_check: 2024-05-01
@@ -4752,7 +4760,7 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-06-22 vvv
+#: last_checked: 2023-07-13 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -5161,10 +5169,8 @@ Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocros
 #: by: rjoop
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
 An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308
-#: next_check_id: TRAMTURM-2021
-#: XXX Wie wird die Situation mit der Straßenbahntrasse aussehen?
-#: next_check: 2023-07-12
-Rathenower Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3nocross 7172,13051 7187,13126 7161,13190
+#: historical_note: früher: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)
+Rathenower Str.: Straßenbahntrasse	3nocross 7172,13051 7187,13126 7161,13190
 Turmstr.: Straßenbahntrasse	3nocross 6377,13321 6480,13325 6535,13327 6674,13332
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
