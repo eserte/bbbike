@@ -359,7 +359,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2023-06-17 vvv
+#: last_checked: 2023-07-08 (architektur-urbanistik) vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -1116,7 +1116,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-07-10
+#: last_checked: 2023-07-14
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6825,8 +6825,8 @@ Schreckhornweg: unbefestigte Straße	Q2 13878,18823 13882,18918
 (Märchenland - Heinersdorfer Str.): Kopfsteinpflaster	Q2 13381,19911 13280,19977
 Asgardstr.: eine Fahrbahnhälfte asphaltiert, die andere schlechtes Beton	Q2+ 12387,19454 12424,19542
 Hödurstr.: Asphalt	Q1 12952,18598 12910,18584 12852,18514 12751,18401
-Hödurstr.: Kopfsteinpflaster	Q2+ 12592,18230 12647,18289
-Hödurstr.: unbefestigte Straße	Q2+ 12647,18289 12751,18401
+Hödurstr.: Kopfsteinpflaster	Q2+ 12592,18230 12638,18279
+Hödurstr.: unbefestigte Straße	Q2+ 12638,18279 12664,18309 12751,18401
 Fafnerstr. (Heinersdorf): Asphalt	Q0 13031,19576 12909,19609
 Fafnerstr. (Heinersdorf): Asphalt	Q0 12909,19609 12705,19703
 #: by: mapillary (neu gemacht)
@@ -11161,7 +11161,7 @@ Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
 (Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20761,15856 20719,15749 20731,15742
 (Pasewalker Str. - Vesaliusstr.): Beton	Q0 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 (Pasewalker Str. - Vesaliusstr.): Gehwegplatten	Q0- 11884,19169 11841,19188 11763,19191
-(Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279 11927,19308
+(Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279 11929,19281
 (Flaschenhalspark, Weg entlang den Bahngleisen): Beton	Q0 8423,9529 8414,9366 8393,9293 8374,9291
 (Yorckstr. - Flaschenhalspark): Beton	Q0 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099 8344,9085
@@ -16446,7 +16446,7 @@ Paulsenstr.: schlechtes Kopfsteinpflaster	Q3 4172,5918 4238,6080 4268,6154 4298,
 #: confirmed_by: srt
 Hartmannstr.: gute Betonstraße	Q0 5370,3587 5244,3348 5183,3242 5116,3146
 #: by: Florian Schubert:
-Kavalierstr.: Asphalt	Q0 10784,18426 10721,18575 10625,18831
+Kavalierstr.: Asphalt	Q0 10784,18426 10721,18575 10621,18837
 #: by: baatz (n):
 Groscurthstr.: Asphalt	Q0 16583,25440 16572,25407 16530,25276 16467,25092 16423,24935
 # 
@@ -16686,9 +16686,14 @@ Schulstr. (Pankow): Asphalt	Q0 10582,18159 10545,18143 10473,18113
 #: by: ^^^
 # 
 #: by: Julia Scharf: vvv
-Trelleborger Str.: teilweise kaputter Asphalt, Schlaglöcher	Q1 11243,17421 11256,17291 11262,17139 11267,17027
+#: corrected_by: srt (teilweise kaputter Asphalt, Schlaglöcher, Q1 -> ...)
+Trelleborger Str.: Asphalt mit leichten Schäden	Q0- 11243,17421 11256,17291 11262,17139
+#: corrected_by: srt (teilweise kaputter Asphalt, Schlaglöcher, Q1 -> ..., neu gemacht?)
+Trelleborger Str.: Asphalt	Q0 11262,17139 11267,17027 11269,16924
 #: confirmed_by: srt
-Trelleborger Str.: teilweise kaputter Asphalt, Schlaglöcher	Q1 11267,17027 11270,16890 11274,16743 11279,16617 11284,16527
+Trelleborger Str.: teilweise kaputter Asphalt, Schlaglöcher	Q1 11269,16924 11270,16890
+#: corrected_by: srt (teilweise kaputter Asphalt, Schlaglöcher, Q1 -> ..., neu gemacht?)
+Trelleborger Str.: Asphalt	Q0 11270,16890 11274,16743 11279,16617 11284,16527
 #: corrected_by: srt (kaputter Asphalt -> ...)
 Trelleborger Str.: Asphalt	Q0 11284,16527 11289,16423
 #: by ^^^
@@ -16746,9 +16751,11 @@ Grafenwalder Weg: Asphalt	Q0 -3312,16425 -3319,16572
 Manksweg: Asphalt	Q0 20480,14874 20689,15175
 # 
 #: by: Peter (disco...):
+#: confirmed_by: srt
 Schonensche Str.: Asphalt	Q0 11027,16553 11284,16527
 # 
 #: by: Gerhild Komander:
+#: confirmed_by: srt
 Schonensche Str.: Kopfsteinpflaster	Q2 11284,16527 11447,16507 11535,16498 11655,16486
 # 
 #: by: Oliver Kraft: vvv
@@ -16883,10 +16890,10 @@ Thiesstr.: Asphalt	Q0 13006,17392 13085,17413 13161,17468 13223,17530 13271,1758
 #: note: auch laut ADFC-Karte gut geeignet, laut nic (kleene...) Beton, ein weiterer Eintrag meinte ebenfalls "Asphalt":
 #: corrected_by: srt (Q0 -> Q0-)
 Gäblerstr.: Asphalt	Q0- 13129,17024 13057,17120 13029,17162
-#: corrected_by: srt (Q1 -> Q1+)
-Gäblerstr.: Asphalt mit einigen Schäden	Q1+ 13029,17162 13023,17210 13018,17264 13012,17332 13006,17392 13003,17430 12998,17480
+#: corrected_by: srt (Asphalt mit einigen Schäden, Q1 -> Q1+ -> ..., neu gemacht?
+Gäblerstr.: Asphalt	Q0 13029,17162 13023,17210 13018,17264 13012,17332 13006,17392 13003,17430 12998,17480
 #: confirmed_by: srt
-#: corrected_by: osm (loser Sandweg, Q2 -> ..., neu gemacht)
+#: corrected_by: osm, srt (loser Sandweg, Q2 -> ..., neu gemacht)
 Neukirchstr.: Asphalt	Q0 12885,18329 12751,18401
 #: corrected_by: srt (Q2 -> Q3, später: neue Asphaltierung)
 # REMOVED --- #: XXX Asphaltierung ist geplant --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3249 (kein Termin für Asphaltierung) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.288001.php (Bauarbeiten ab April bis Ende Juli 2015) --- #: last_checked: 2014-12-13 --- #: next_check: 2015-07-31
@@ -17145,7 +17152,7 @@ Wolfshagener Str.: mäßiger Beton	Q1 11220,18992 10905,18671 10860,18650 10825,18
 #: confirmed_by: Sylke Sallmon ("altes" Kopfsteinpflaster, zumindest an der Pankgrafenstr.)
 #: confirmed_by: srt (zumindest an der Ossietzkystr. und Eintrachtstr.)
 Wolfshagener Str.: Kopfsteinpflaster	Q2 10825,18634 10721,18575 10650,18544 10562,18506 10447,18452
-Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
+Crusemarkstr.: guter Beton	Q0 10715,18965 10825,18634
 #: by: ^^^
 # 
 #: by: anna (flugahab):
@@ -18233,11 +18240,15 @@ Hanielweg: Asphalt	Q0- 7651,1615 7610,1695 7562,1796
 #: note: auch laut ADFC-Karte gut geeignet
 #: confirmed_by: srt
 Galenusstr.: glatter Asphalt	Q0 11915,19580 11698,19489 11523,19393 11364,19313 11314,19282 11255,19253 11141,19239 11054,19226
-Am Schloßpark: löchriger Asphalt, aber OK	Q1 11054,19226 10775,19054
-Am Schloßpark: Asphalt	Q0 10775,19054 10712,18975
+#: corrected_by: srt (Q1 -> Q1-)
+Am Schloßpark: löchriger Asphalt, aber OK	Q1- 11054,19226 10935,19186 10784,19079 10775,19054
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Am Schloßpark: Asphalt mit einigen Rissen	Q0- 10775,19054 10715,18965
 #: confirmed_by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3327
-Am Schloßpark: schlechtes Kopfsteinpflaster	Q3 10712,18975 10625,18831
-Am Schloßpark: Asphalt	Q0 10625,18831 10496,18704
+#: confirmed_by: srt
+Am Schloßpark: schlechtes Kopfsteinpflaster	Q3 10715,18965 10621,18837
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Am Schloßpark: Asphalt mit einigen Rissen	Q0- 10621,18837 10542,18749 10527,18718 10496,18704
 #: by: ^^^
 # 
 #: by: Bianca Mettin:
@@ -18450,8 +18461,8 @@ Fritz-Reuter-Str.: guter Asphalt	Q0 24739,11968 24575,11932
 #: by: ^^^
 # 
 #: by: Jörg Rother:
-#: note: laut ADFC-Karte "gut geeignet"
-Tiniusstr.: guter Asphalt	Q0 12555,18375 11984,18650
+#: corrected_by: srt (guter Asphalt, Q0 -> ...)
+Tiniusstr.: Asphalt mit Rissen und geflickten Stellen	Q1 12555,18375 11984,18650
 # 
 #: by: rainer Kühling: vvv
 #: confirmed_by: srt (seit 2009-09 alles Asphalt, vorher teilweise Kopfsteinpflaster)
@@ -32353,7 +32364,7 @@ Einmündungsbereich asphaltiert	Q0 2381,20157
 Kreuzungsbereich asphaltiert	Q0 2352,20224
 Einmündungsbereich asphaltiert	Q0 -1351,18407
 Kreuzungsbereich asphaltiert	Q0 -1478,18407
-Kreuzungsbereich mit Kopfsteinpflaster	Q2- 11535,16498
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11535,16498
 Einmündungsbereich mit Kopfsteinpflaster	Q2 11671,19204
 Einmündungsbereich mit Kopfsteinpflaster	Q2 11599,19171
 Einmündungsbereich mit Kopfsteinpflaster	Q2 11468,19106
@@ -32414,4 +32425,7 @@ Kreuzungsbereich asphaltiert	Q0 6783,13551
 Einmündungsbereich asphaltiert	Q0 6686,13746
 Einmündungsbereich mit Mosaikpflaster	Q2+ 6897,13551
 Einmündungsbereich mit Mosaikpflaster	Q2+ 6687,13545
+Kreuzungsbereich betoniert	Q0- 11073,17526
+Kreuzungsbereich betoniert	Q0 11447,16507
+Einmündungsbereich asphaltiert	Q0 11655,16486
 #: ignore ^^^

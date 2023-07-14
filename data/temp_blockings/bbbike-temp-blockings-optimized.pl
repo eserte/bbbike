@@ -5237,7 +5237,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-05-31
+#: last_checked: 2023-07-09 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5565,7 +5565,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493,52.63648,26.10.2022,11:11 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024) (bis 02.06.2023) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023) (inaktiv)
-#: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023)
+#: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023)
 # REMOVED --- #: next_check: 2023-06-16
 #: next_check: 2024-01-31
@@ -5579,20 +5579,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'type' => 'gesperrt',
          'until' => 1706716800
        },
-       {
-         'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-05-25
-#: next_check: 2023-08-25
-	q4::temp::play 12822,10487 12897,10439
-',
-         'from' => 1684965600,
-         'id' => 3551,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Mitte Juli',
-         'type' => 'handicap',
-         'until' => 1689352200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5985,7 +5972,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
 #: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023) (bis 30.6.2023) (bis 31.07.2023)
-#: source_id: viz2021:13.38778,52.52391,10.05.2023,06:00 (bis 30.06.2023) (bis 31.07.2023)
+#: source_id: viz2021:13.38778,52.52391,10.05.2023,06:00 (bis 30.06.2023) (bis 31.07.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
@@ -6353,7 +6340,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: also_indoor: traffic (none)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-07-04 (mapillary)
+#: last_checked: 2023-07-14
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6368,7 +6355,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
 #: osm_watch: way id="1170463985" version="1"
 #: osm_watch: way id="1170463986" version="1"
-#: last_checked: 2023-05-07 (mapillary)
+#: last_checked: 2023-07-14
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -6482,7 +6469,26 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
+#: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
+#: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023)
+# REMOVED --- #: also_indoor: traffic (G,H,B,W)
+#: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
+# REMOVED --- #: last_checked: 2023-06-04 --- #: next_check: 2023-07-07
+	q4::inwork 22766,1226 22821,1086
+Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
+',
+         'from' => 1675896728,
+         'id' => 3719,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
+         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt, voraussichtlich bis 21.07.2023',
+         'type' => 'handicap',
+         'until' => 1689951600
+       },
        undef,
        {
          'data' => '#: note: laut VIZ nur der Kfz-Verkehr betroffen
@@ -6643,20 +6649,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/03/verkehrsvorschau-130323/
-#: by: https://nitter.cz/VIZ_Berlin/status/1635151200550281217#m
-#: by: https://nitter.net/pic/orig/media%2FFq3YpLQX0AsPZPF.jpg (keine gesonderte Regelung für Radfahrer erkennbar)
-#: source_id: viz2021:13.192978,52.560193,13.03.2023,07:00 (bis 14.07.2023)
-	q4::inwork -3845,16921 -3975,16905 -4099,16925 -4152,16942 -4259,16974
-# REMOVED (hier nicht) ---	q4::inwork -4259,16974 -4318,16979
-',
-         'from' => 1678481148,
-         'id' => 3741,
-         'text' => 'Hubertusstr.: Bauarbeiten zwischen Kaiserstr. und Pausiner Str., Fahrbahn ist gesperrt, bis Mitte Juli 2023',
-         'type' => 'handicap',
-         'until' => 1689458399
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (none)
 #: note: Ende durch Halteverbotsschilder festgestellt
@@ -6886,20 +6879,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1646541311606923270#m (28.04.2023-15.07.2023, nur für Kfz-Verkehr)
-#: by: https://nitter.cz/VIZ_Berlin/status/1651812233012211712#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnV1cm8wZ1hvQUFjTXd0LmpwZw==
-#: source_id: viz2021:13.24634,52.426424,28.04.2023,07:00 (nur Kfz-Verkehr, bis 14.07.2023)
-	q2::inwork 169,2264 96,2225 23,2185
-	q3::inwork -134,2098 -38,2152
-',
-         'from' => 1682571600,
-         'id' => 3776,
-         'text' => 'Berlepschstr.: Sperrungen der Fahrbahn in Höhe Kösterstr. und Dallwitzstr., vom 28.04.2023 07:00 bis 14.07.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1689346800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KAULSDORFER-2023
@@ -6969,7 +6949,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-14
 	q3::inwork 12707,13706 12640,13814
 ',
          'from' => undef,
@@ -6978,18 +6958,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-06-03 (mapillary)
-	q4::inwork 11599,19171 11634,19187 11671,19204 11748,19235
-',
-         'from' => undef,
-         'id' => 3792,
-         'text' => 'Achtermannstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Baustelle unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
@@ -7118,7 +7087,7 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
          'data' => '#: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-07-03
+#: last_checked: 2023-07-14
 #: check_frequency: 14d
 #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
@@ -7290,16 +7259,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork 54260,-2960 54095,-3250
-',
-         'from' => 1685858400,
-         'id' => 3823,
-         'source_id' => 'LS/221-F/23/073',
-         'text' => 'Fürstenwalde, Hegelstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.06.2023, 08:00 Uhr bis 14.07.2023, 16:00 Uhr.',
-         'type' => 'gesperrt',
-         'until' => 1689343200
-       },
+       undef,
        {
          'data' => '	2::inwork -7332,66101 -7636,65571
 ',
@@ -7440,21 +7400,26 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        },
        undef,
        {
-         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
+         'data' => '#: next_check_id: PISTORIUS-2023
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
-#: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind
-#: last_checked: 2023-06-28 (mapillary)
-#: next_check: 2023-10-23
+#: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
+#: last_checked: 2023-07-14 vvv
+#: next_check: 2023-10-23 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
+Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1687068000,
          'id' => 3840,
-         'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, Gesamtbaumaßnahme bis Ende Oktober 2023',
+         'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., Gesamtbaumaßnahme bis Ende Oktober 2023',
          'type' => 'handicap',
          'until' => 1698505200
        },
        {
          'data' => '#: also_indoor: traffic (B[falsch])
+#: note: evtl. außerhalb der Arbeitszeiten offen? (nicht sicher, evtl. war das am 2023-07-14 (Fr) abends der Fall)
 #: last_checked: 2023-07-03
 #: check_frequency: 90d
 #: next_check: 2023-12-29
@@ -7588,6 +7553,43 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
          'text' => 'Börnicke - Bernau: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 31.07.2023, 08:00 Uhr bis 26.08.2023,16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1693058400
+       },
+       undef,
+       {
+         'data' => '#: also_indoor: traffic (none)
+#: add_fragezeichen: Ist die Sperrung der Fahrbahn beendet?
+#: last_checked: 2023-07-14
+	q3::inwork 13247,17262 13342,17180
+',
+         'from' => undef,
+         'id' => 3854,
+         'text' => 'Günter-Litfin-Str.: etwa 60m der Fahrbahn gesperrt, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
+#: note: Halteverbote bis 17. November 2023
+#: last_checked: 2023-07-14
+#: check_frequency: 60d
+#: next_check: 2023-11-17
+	q4::inwork 11618,16183 11680,16151 11750,16116
+',
+         'from' => 1689356385,
+         'id' => 3855,
+         'text' => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte November 2023',
+         'type' => 'handicap',
+         'until' => 1700240400
+       },
+       {
+         'data' => '	2::inwork 61299,108828 61164,108987 61054,109046 61261,109631 61517,110776
+',
+         'from' => 1689487200,
+         'id' => 3856,
+         'source_id' => '237300187',
+         'text' => 'Wollschow: Bauarbeiten, Sperrung, vom 17.07.2023, 08:00 Uhr bis 30.06.2024, 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1719756000
        }
      
 );

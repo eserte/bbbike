@@ -23,7 +23,7 @@ W¸hlischstr.: Bauarbeiten an der Einm¸ndung Boxhagener Str., Fahrbahn gesperrt	q
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-07-07 vvv
+#: last_checked: 2023-07-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -51,7 +51,8 @@ Weserstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14710,11626 14651
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollst‰ndig],H[unvollst‰ndig])
-#: last_checked: 2023-07-13
+#: note: eigentlich auch Einbahnstraﬂenregelung in der Scharnweberstr., offen Richtung Westen, ggfs. nochmal genauer anschauen
+#: last_checked: 2023-07-14
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten nˆrdlich und s¸dlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 # 
@@ -617,8 +618,8 @@ H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg e
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag) --- #: by: https://www.bahninfo-forum.de/read.php?9,705321,772235#msg-772235 (Freigabe der Fahrbahn 2023-07-07?) --- Turmstr.: Bauarbeiten, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6480,13325 6377,13321
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
+#: source_id: viz2021:13.33913,52.5264,20.12.2022,13:00 (bis 06.09.2023) (inaktiv)
 #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023) (bis 6.9.2023)
-#: source_id: viz2021:13.33913,52.5264,20.12.2022,13:00 (bis 06.09.2023)
 #: osm_watch: way id="692480562" version="15"
 #: last_checked: 2023-07-13 (osm)
 #: check_frequency: 30d
@@ -997,7 +998,7 @@ Moltkestraﬂenbr¸cke: f¸r Fuﬂg‰nger existiert eine Behelfsbr¸cke	q3::inwork 3839,
 ### Prenzlauer Berg ###
 # 
 #: osm_watch: way id="1047231711" version="3"
-#: last_checked: 2023-05-21
+#: last_checked: 2023-07-14
 #: check_frequency: 60d
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
@@ -1043,6 +1044,7 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwor
 ### Weiﬂensee ###
 # 
 # 
+#: by: #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von ˆffentlichen Straﬂenland)
 #: XXX Bleibt es bei der ausschlieﬂlichen Busfreigabe oder entsteht hier eine neue Verbindungsstraﬂe?
 #: osm_watch: way id="519370786" version="4"
 #: osm_watch: note 3678184 3
@@ -1065,7 +1067,7 @@ Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Goethestr. und Friesickes
 #: XXX Neumannstraﬂe (Pankow) in beiden Richtungen zwischen Schonensche Straﬂe und Thulestraﬂe: Leitungsbau, Vollsperrung f¸r Kfz-Verkehr, vom 05.06.2023 07:00 bis 28.07.2023 17:00
 #: source_id: viz2021:13.423554,52.554909,05.06.2023,07:00 (bis 28.07.2023)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-06-18
+#: last_checked: 2023-07-14
 #: next_check: 2023-07-28
 #: valid: -20230728
 Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 11655,16486
@@ -4501,8 +4503,8 @@ Straﬂenbahn¸bergang	q3 21176,16480 21181,16479 21183,16467 21192,16466
 (Lyonstr. - Parkweg): einige Fuﬂg‰nger	q1 12443,21439 12501,21468
 (Straﬂe 79 - Mauerweg): schmal	q2 7793,19346 7784,19332 7763,19318
 (Straﬂe 78 - Mauerweg): schmal	q2 7715,19408 7704,19366
-#: note: Ausschilderung: am ˆstlichen Ende Gehweg, keine Freigabe, am westlichen Ende kein Schild
-Neukirchstr.: einige Fuﬂg‰nger	q1 12751,18401 12885,18329
+#: note: Ausschilderung: am ˆstlichen Ende Gehweg, keine Freigabe (mˆglicherweise vergessen?), am westlichen Ende ein Sackgassenschild mit Fuﬂg‰nger+Radfahrer frei
+Neukirchstr.: einige Fuﬂg‰nger	q0- 12751,18401 12885,18329
 #: XXX_prog BS, ansonsten q1
 (Ernst-Lemmer-Ring - Buschgrabenweg): gemeinsamer Fuﬂ- und Radweg, Bordstein am s¸dlichen Ende	q3 -31,1606 0,1503
 #: note: am westlichen Ende explizites Geh+Radwegzeichen, am ˆstlichen Ende nur ein Gr¸nanlagen-Schild ohne Zusatzschilder
@@ -4643,7 +4645,7 @@ Eulerstr.: Fuﬂg‰ngerbereich, Quartierplatz	q4 9465,16464 9493,16481
 #: note: inkonsistente Ausschilderung: teilweise mit "Radfahrer frei"-Zusatzschild, teilweise Gehweg-Schilder ohne Freigabe
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 #: corrected_by: srt (Konkretisierung)
-(Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
+(Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 #: by ^^^
 #: by: Steini
 #: confirmed_by: srt (konkretisiert, q2 -> q3, mittlerweile: q4) (neu: nun auf der anderen Seite, aber trotzdem q4)
@@ -4795,7 +4797,7 @@ Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger, Radfahrer sollen schieben	q4 5370,2542 5471,2470
 # 
 #: by: garci
-Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
+Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10715,18965 10621,18837 10542,18749 10527,18718 10496,18704
 # REMOVED (keine Behinderungen deswegen) --- #: by: anonymous --- (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgel‰nde	q1 4997,19849 5003,19833 5060,19699 5073,19656 5110,19665 5183,19454 5208,19378 5187,19368 5219,19285 5388,19186 5429,19165
 #: by: Daniel (dan.berlin):
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
