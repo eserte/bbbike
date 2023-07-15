@@ -36,6 +36,7 @@ use BBBikeTest qw(check_network_testing image_ok);
 check_network_testing;
 
 plan skip_all => "skip due to slow network" if $ENV{BBBIKE_TEST_SLOW_NETWORK};
+plan skip_all => "skip bbbike.de live tests" if $ENV{BBBIKE_TEST_SKIP_BBBIKE_DE};
 
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";

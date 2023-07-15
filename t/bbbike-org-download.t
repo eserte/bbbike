@@ -7,7 +7,9 @@
 
 # NOTE: this test is controlled by three environment variables:
 #
-# - BBBIKE_TEST_NO_NETWORK: if set to a perl-true value,
+# - BBBIKE_TEST_NO_NETWORK
+# - BBBIKE_TEST_SKIP_BBBIKE_ORG
+#   if any of these two is set to a perl-true value,
 #   then this test is completely skipped
 #
 # - BBBIKE_LONG_TESTS: if set to a perl-true value,
@@ -48,6 +50,8 @@ BEGIN {
 }
 
 check_network_testing;
+plan skip_all => "skip bbbike.org live tests" if $ENV{BBBIKE_TEST_SKIP_BBBIKE_ORG};
+
 
 #plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: https://ci.appveyor.com/project/eserte/bbbike/build/1.0.65#L270
 plan 'no_plan';
