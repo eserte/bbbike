@@ -392,17 +392,22 @@ for my $file (@files) {
 		     }
 		 }
 	     }
-	     for ($dir->{source_id}) {
+	     my @source_id_defs; # ([id, inactive], ...)
+	     for my $dir_key (qw(source_id source_id[inactive])) {
+		 push @source_id_defs, map { [$_, $dir_key =~ /inactive/ ? 1 : 0] } @{ $dir->{$dir_key} }
+		     if $dir->{$dir_key};
+	     }
+	     if (@source_id_defs) {
 		 my @viz_source_ids;
-		 for my $source_id (@{ $dir->{source_id} }) {
+		 for my $source_id_def (@source_id_defs) {
+		     my($source_id, $inactive) = @$source_id_def;
 		     if      ($source_id =~ m{^bvg2021:([^#\s]+)}) { # match the BVG line only; the BVG id cannot be used for linking
-			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#St%C3%B6rungsmeldungen"];
+			 push @extra_url_defs, ['BVG' . ($inactive ? '(inactive)' : ''), "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#St%C3%B6rungsmeldungen"];
 		     } elsif ($source_id =~ m{^viz2021:}) {
 			 if ($source_id =~ m{^viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
 			     ($px,$py) = ($1,$2);
 			 }
-			 my $inactive;
-			 if ($source_id =~ m{\b(inactive|inaktiv)\)?\s*$}) {
+			 if ($source_id =~ m{\b(inactive|inaktiv)\)?\s*$}) { # marked as inactive in a "comment" in the source_id value
 			     $inactive = 1;
 			 }
 			 push @viz_source_ids, {
