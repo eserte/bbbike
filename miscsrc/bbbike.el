@@ -705,8 +705,8 @@
   'face 'bbbike-button
   'help-echo "Click button to browse (cached) URL")
 
-(setq bbbike-sourceid-in-pl-regexp  (concat "^[ ]*source_id[ ]*=>[ ]*'\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/-]*\\|AdB/[0-9-]+\\)"))
-(setq bbbike-sourceid-in-bbd-regexp (concat "^#:[ ]*source_id:?[ ]*\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/-]*\\|AdB/[0-9-]+\\)"))
+(setq bbbike-sourceid-in-pl-regexp  (concat "^[ ]*source_id\\(\\[inactive\\]\\)?[ ]*=>[ ]*'\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/-]*\\|AdB/[0-9-]+\\)"))
+(setq bbbike-sourceid-in-bbd-regexp (concat "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]*\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/-]*\\|AdB/[0-9-]+\\)"))
 (setq bbbike-vmz-diff-file "~/cache/misc/diffnewvmz.bbd")
 
 ;; old definition when it was possible to create deeplinks for VMZ ids
@@ -753,6 +753,14 @@
   'follow-link t
   'face 'bbbike-button
   'help-echo "Click button to show BVG traffic note")
+
+(define-button-type 'bbbike-inactive-bvg-button
+  'action 'bbbike-bvg-button
+  'follow-link t
+  'face 'bbbike-button-strike
+  'mouse-face 'bbbike-button-strike-hover
+  'help-echo "Click button to show inactive BVG traffic note" ; this should still link somewhere, as currently linking is done using BVG lines
+  )
 
 (defun bbbike-osm-button (button)
   (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
@@ -818,10 +826,11 @@
 	(save-excursion
 	  (goto-char (point-min))
 	  (while (search-forward-regexp bbbike-sourceid-in-pl-regexp nil t)
-	    (let* ((begin-pos (match-beginning 1))
-		   (end-pos (match-end 1))
+	    (let* ((is-inactive (if (match-beginning 1) t nil))
+		   (begin-pos (match-beginning 2))
+		   (end-pos (match-end 2))
 		   (source-id (buffer-substring begin-pos end-pos))
-	           (button-type (if (bbbike--is-source-id-inactive) 'bbbike-inactive-sourceid-viz-button 'bbbike-sourceid-viz-button)))
+	           (button-type (if (or is-inactive (bbbike--is-source-id-inactive)) 'bbbike-inactive-sourceid-viz-button 'bbbike-sourceid-viz-button)))
 	      (make-button begin-pos end-pos
 			   :type button-type
 			   :sourceid source-id
@@ -832,10 +841,11 @@
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp bbbike-sourceid-in-bbd-regexp nil t)
-      (let* ((begin-pos (match-beginning 1))
-	     (end-pos (match-end 1))
+      (let* ((is-inactive (if (match-beginning 1) t nil))
+	     (begin-pos (match-beginning 2))
+	     (end-pos (match-end 2))
 	     (source-id (buffer-substring begin-pos end-pos))
-	     (button-type (if (bbbike--is-source-id-inactive) 'bbbike-inactive-sourceid-viz-button 'bbbike-sourceid-viz-button)))
+	     (button-type (if (or is-inactive (bbbike--is-source-id-inactive)) 'bbbike-inactive-sourceid-viz-button 'bbbike-sourceid-viz-button)))
 	(make-button begin-pos end-pos
 		     :type button-type
 		     :sourceid source-id
@@ -844,13 +854,15 @@
   ;; recognize "#: source_id" bvg directives in bbd files
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]bvg2021:\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
-      (let* ((bvg-line-begin-pos (match-beginning 1))
-	     (bvg-line-end-pos (match-end 1))
-	     (link-end-pos (match-end 2))
+    (while (search-forward-regexp "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]bvg2021:\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
+      (let* ((is-inactive (if (match-beginning 1) t nil))
+	     (button-type (if is-inactive 'bbbike-inactive-bvg-button 'bbbike-bvg-button))
+	     (bvg-line-begin-pos (match-beginning 2))
+	     (bvg-line-end-pos (match-end 2))
+	     (link-end-pos (match-end 3))
 	     (bvg-line (buffer-substring bvg-line-begin-pos bvg-line-end-pos)))
 	(make-button bvg-line-begin-pos link-end-pos
-		     :type 'bbbike-bvg-button
+		     :type button-type
 		     :bvgline bvg-line
 		     ))))
 
