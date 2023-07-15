@@ -4179,11 +4179,11 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="41"
+#: osm_watch: way id="8655276" version="42"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-06-16 (osm)
+#: last_checked: 2023-07-15 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -4455,22 +4455,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: offizielle Umleitung über Fischerstr.
-#: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
-#: priority: #A
-#: last_checked: 2023-07-09
-#: check_frequency: 14d
-	2::inwork 16148,10329 16353,10207
-# REMOVED ---	2::inwork 15758,10578 16148,10329
-# REMOVED ---	2::inwork 16353,10207 16539,10097
-',
-         'from' => 1687200191,
-         'id' => 3222,
-         'text' => 'Zobtener Str.: Bauarbeiten, 120m lange Engstelle, Straße kann auch komplett gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten)
@@ -6428,7 +6413,7 @@ südlicher Abschnitt	q4::inwork 5376,12661 5354,12552
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-07-09
+#: last_checked: 2023-07-15
 	q4::inwork; 17962,6674 17991,6431
 ',
          'from' => undef,
@@ -6748,21 +6733,21 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
          'until' => undef
        },
        {
-         'data' => '#: note: Halteverbotsschilder bis 4.8.2023
-#: last_checked: 2023-07-11 vvv
+         'data' => '#: note: neue Halteverbotsschilder bis 4.8.2023
+#: last_checked: 2023-07-15 vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2023-06-30 vvv
+#: next_check: 2023-08-04 vvv
 # REMOVED (ja, bereits eingetragen) --- #: XXX möglicherweise Asphaltierung?
 	q4::inwork 17856,8162 17793,8225 17753,8290
 #: note: Einschränkungen im Kreuzungsbereich
 	q3::inwork 17753,8290 17771,8349
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1679936842,
          'id' => 3756,
-         'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn kann gesperrt sein (Stand Anfang Juli 2023: Fahrbahn kann außerhalb der Arbeitszeiten offen sein)',
+         'text' => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn kann gesperrt sein (Stand Mitte Juli 2023: Fahrbahn kann außerhalb der Arbeitszeiten offen sein)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7218,7 +7203,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        {
          'data' => '#: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-07-09
+#: last_checked: 2023-07-15
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 ',
@@ -7295,7 +7280,21 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1670462625707175936#m (im Text steht Wattstr. ...)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl3SDZRMVhnQUFqRzhiLmpwZw== (... aber laut Verkehrszeichenplan ist Waltraud-Krause-Weg genauer)
+#: also_indoor: traffic (H,G[ungenau],W[ungenau],B)
+#: source_id: viz2021:13.504135,52.460893,05.07.2023,08:00 (bis 25.07.2023, danach weitere Arbeiten)
+#: add_fragezeichen: Ist die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2023-07-15
+	q4::inwork; 17842,6639 17860,6644 17962,6674
+',
+         'from' => 1687060800,
+         'id' => 3827,
+         'text' => 'Siemensstr.: zwischen Waltraud-Krause-Weg und Edisonstr. ist die Fahrbahn auch für Radfahrer gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
@@ -7515,7 +7514,7 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
          'from' => 1690581600,
          'id' => 3849,
          'prewarn_days' => 2,
-         'text' => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, Montag bis Freitag 7 bis 18 Uhr, vom 31.07.2023 bis zum 21.12.2024',
+         'text' => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, vom 31.07.2023 bis zum 21.12.2024',
          'type' => 'gesperrt',
          'until' => 1734822000
        },
@@ -7590,6 +7589,18 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
          'text' => 'Wollschow: Bauarbeiten, Sperrung, vom 17.07.2023, 08:00 Uhr bis 30.06.2024, 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1719756000
+       },
+       {
+         'data' => '#: also_indoor: traffic (none)
+#: last_checked: 2023-07-15
+#: check_frequency: 90d
+	q4::inwork 23278,1668 23185,1649
+',
+         'from' => undef,
+         'id' => 3857,
+         'text' => 'Müggelbergallee: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

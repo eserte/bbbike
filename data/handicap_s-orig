@@ -10,11 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: by: https://www.openstreetmap.org/note/3677860
-#: also_indoor: traffic (G,H[falsch],B,W)
-#: last_checked: 2023-07-11
-#: check_frequency: 14d
-Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
+# REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # 
 #: next_check_id: NIEMANN-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m
@@ -46,7 +42,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="5"
 #: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-07-11 (daf)
+#: last_checked: 2023-07-15
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
@@ -797,14 +793,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 # 
 ### Lichtenberg ###
 # 
-#: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023)
-#: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m
-#: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv)
-#: note: Halteverbote bis 2023-07-14
-#: last_checked: 2023-07-11
-#: next_check: 2023-07-14
-#: valid: -20230714
-Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
+# REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
 # 
 #: add_fragezeichen: Wann ist die Sperrung beendet?
 #: also_indoor: traffic (B)
@@ -1130,7 +1119,7 @@ Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 1165
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/arbeiten-an-der-abwasserleitung_a371543
 #: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben)
 #: note: laut Bauschild der Wasserbetriebe bis Juli 2024
-#: osm_watch: way id="22966091" version="36"
+#: osm_watch: way id="22966091" version="37"
 #: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023) (bis 30.9.2023) vvv
 #: last_checked: 2023-05-21 vvv
 #: next_check: 2023-09-30 vvv
@@ -3932,7 +3921,7 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (Löwenbrucher Weg - Lortzingplatz): eng, einige Fußgänger	q3 10107,-3063 10067,-2952
 (Löwenbrucher Weg - Lortzingplatz): einige Fußgänger	q1 10067,-2952 10058,-2924 10085,-2810
 (Wittelsbacherstr. - Mauerweg): enger Pfad	q3 12268,-2139 12331,-2108
-(Lieselstr. - Alfonsstr.): einige Fußgänger	q1 18931,1192 18998,1349
+(Lieselstr. - Alfonsstr.): einige Fußgänger	q1 18931,1192 18964,1270 18998,1349
 (zur Yorckstraßenbrücke 17): enge Kurven	q3 8423,9529 8453,9519 8454,9528
 Weichselstr./Maybachufer: asphaltierte Kissen	q1+ 12755,9188 12845,9304 12837,9353
 Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
@@ -4636,6 +4625,10 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Passage am Tacheles): Fußgänger	q4 9371,13333 9353,13273 9244,13253
 # 
 Eulerstr.: Fußgängerbereich, Quartierplatz	q4 9465,16464 9493,16481
+# 
+(Mauerweg - Schönefelder Chaussee): einige Fußgänger	q1 18702,1338 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
+# 
+(Adlergestell/Am Seegraben - Walchenseestr.): schmaler Pfad	q3 21879,1517 21899,1526
 # 
 ######################### User Contributions #################################
 # 

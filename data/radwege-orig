@@ -2042,6 +2042,7 @@ asphaltiert	RW2; 10685,12422 10783,12502
 #: by: https://nitter.net/VIZ_Berlin/status/1678738122501242882
 #: by: https://nitter.net/pic/orig/media%2FF0wTSUUXgAQDCdI.jpg
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1345953.php
+#: source_id: bvg2021:248#BVG324714_0
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
 #: last_checked: 2023-07-02
 #: check_frequency: 90d
@@ -2097,7 +2098,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-07-11 vvv
+#: last_checked: 2023-07-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3893,9 +3894,9 @@ Verbundsteinpflaster	RW1; 23046,3905 23036,3929 22971,4077 22965,4124
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
-#: last_checked: 2023-06-08
+#: last_checked: 2023-07-15
 #: check_frequency: 180d
-#: next_check: 2023-07-15
+# REMOVED --- #: next_check: 2023-07-15
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
 Gehweg für Radfahrer frei	RW1; 21569,5730 21522,5771
 	RW3; 21522,5771 21470,5809 21365,5832
@@ -4016,8 +4017,8 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
-#: osm_watch: way id="865716506" version="10"
-#: last_checked: 2023-06-16 (osm) vvv
+#: osm_watch: way id="865716506" version="11"
+#: last_checked: 2023-07-15 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -4118,7 +4119,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2023-07-09 vvv
+#: last_checked: 2023-07-15 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -7680,12 +7681,11 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="33"
-#: last_checked: 2023-07-09 vvv
+#: last_checked: 2023-07-15 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
-provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
-# REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17945,6788 17962,6674
-	RW0; 17919,6968 17945,6788 17962,6674
+provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
+provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17945,6788 17962,6674
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 # REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
@@ -7759,8 +7759,12 @@ Verbundsteinpflaster, Straßenbahnkap	RW2; 25544,5326 25539,5237
 asphaltiert	RW1; 25522,4935 25519,4830
 #: confirmed_by ^^^
 #: by: ^^^
+# 
+#: note: Verkehrsberuhigung mit nicht-amtlichen Schildern vvv
 	RW6;RW6 19625,884 19564,898 19316,951
 	RW6;RW6 19564,898 19551,868 19316,951
+#: note ^^^
+# 
 #: by: osm & mapillary
 #: confirmed_by: srt
 	RW6;RW6 19316,951 19143,979

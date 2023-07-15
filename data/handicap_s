@@ -3,7 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
 Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229
 Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320
@@ -40,7 +39,6 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
-Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
 Frankfurter Allee [Wohngebiet]: Bauarbeiten, Anbindung zur richtigen Frankfurter Allee unterbrochen, Bordsteine	q3::inwork 16190,11872 16214,11935
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
@@ -2019,7 +2017,7 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (Löwenbrucher Weg - Lortzingplatz): eng, einige Fußgänger	q3 10107,-3063 10067,-2952
 (Löwenbrucher Weg - Lortzingplatz): einige Fußgänger	q1 10067,-2952 10058,-2924 10085,-2810
 (Wittelsbacherstr. - Mauerweg): enger Pfad	q3 12268,-2139 12331,-2108
-(Lieselstr. - Alfonsstr.): einige Fußgänger	q1 18931,1192 18998,1349
+(Lieselstr. - Alfonsstr.): einige Fußgänger	q1 18931,1192 18964,1270 18998,1349
 (zur Yorckstraßenbrücke 17): enge Kurven	q3 8423,9529 8453,9519 8454,9528
 Weichselstr./Maybachufer: asphaltierte Kissen	q1 12755,9188 12845,9304 12837,9353
 Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
@@ -2459,6 +2457,8 @@ Kuppenheimerstr.: einige Fußgänger, Bordstein an der Wexstr.	q3 5808,8124 5801,8
 (Hans-Schmidt-Str. - Merlitzstr.): einige Fußgänger	q2 19667,3578 19746,3501
 (Passage am Tacheles): Fußgänger	q4 9371,13333 9353,13273 9244,13253
 Eulerstr.: Fußgängerbereich, Quartierplatz	q4 9465,16464 9493,16481
+(Mauerweg - Schönefelder Chaussee): einige Fußgänger	q1 18702,1338 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
+(Adlergestell/Am Seegraben - Walchenseestr.): schmaler Pfad	q3 21879,1517 21899,1526
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

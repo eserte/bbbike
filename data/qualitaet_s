@@ -4452,7 +4452,7 @@ Jungfernsteg: Beton	Q1 19379,1357 19271,1461 19200,1510
 Jungfernsteg: Verbundsteinpflaster	Q1 19200,1510 19174,1522 19101,1553
 Kasperstr.: Asphalt	Q0 19198,1122 19140,1137 19053,1159 18931,1192 18796,1227
 Gustelstr.: Asphalt	Q0 18973,941 19053,1159
-Alfonsstr.: Asphalt	Q0 19053,1159 19083,1243
+Alfonsstr.: Asphalt	Q0 19053,1159 19081,1236 19083,1243
 Lieselstr.: Asphalt	Q0 18857,988 18931,1192
 Nibelungenweg: Beton	Q0 18892,330 18785,374 18714,403
 Guntherstr. (Altglienicke): Asphalt	Q0 18694,136 18785,374 18850,550
@@ -8212,7 +8212,7 @@ Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0 6560,21
 Lampesteig: Asphalt	Q0 7534,18588 7520,18701
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
 Caroline-Herschel-Platz: gepflastert	Q1 14752,11369 14737,11347
-(Adlergestell - Wassersportallee): Beton, kann verschmutzt sein	Q0 21856,1573 22082,1327
+(Adlergestell - Wassersportallee): Beton, kann verschmutzt sein	Q0 21856,1573 21899,1526 22082,1327
 (Adlergestell - Wassersportallee): Verbundsteinpflaster	Q1 22082,1327 22150,1203
 (Adlergestell - Wassersportallee): Kopfsteinpflaster	Q2 22150,1203 22152,1179
 Böhmallee: Asphalt	Q0 27185,-6585 27292,-6641
@@ -8229,7 +8229,7 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 (Fahlenbergbrücke - Sandgrube): guter Waldweg	Q1 30817,43 30770,-13 30745,-66 30233,-293 29503,-611
 (Waldweg zur Sandgrube): Asphalt mit einigen Schäden	Q1 29120,271 29208,71
 (Waldweg zur Sandgrube): Asphalt mit einigen Schäden	Q1 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
-(Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2 27202,173 26666,-54
+(Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2 27202,173 27161,156 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2 26666,-54 26488,-131
 Kuglerstr.: Asphalt mit leichten Schäden	Q1 11750,16116 11680,16151 11618,16183
 Kuglerstr.: Asphalt	Q0 12030,15968 11961,16002 11899,16037 11852,16061
@@ -9576,7 +9576,7 @@ Advokatensteig: Asphalt mit einigen Wurzelschäden	Q1 22162,452 22221,465 22251,5
 (Wilhelm-Hoff-Str. - James-Franck-Str.): Asphalt	Q0 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
 Adlergestell: Radweg wechselnd mäßiger Beton und Verbundsteinpflaster	Q1 21242,2048 21388,1895
 Adlergestell: Beton	Q0 21388,1895 21515,1785 21800,1644 21856,1573
-Adlergestell: Verbundsteinpflaster	Q1 21856,1573 21881,1513 21998,1239
+Adlergestell: Verbundsteinpflaster	Q1 21856,1573 21879,1517 21885,1503 21998,1239
 Liliensteinweg: schlechtes Kopfsteinpflaster	Q3 10120,21464 10099,21461 10071,21453
 Liliensteinweg: unbefestigte Straße	Q2 10071,21453 10054,21448 10012,21436 9971,21424 9960,21421 9932,21413 9907,21406 9870,21395 9830,21384 9752,21362 9684,21337 9645,21323 9629,21317 9590,21303 9574,21297 9532,21282 9519,21277 9497,21259 9481,21241 9472,21230 9455,21211 9445,21199 9429,21181 9420,21170 9394,21140 9344,21084
 Liliensteinweg [Nebenstrang]: unbefestigte Straße	Q2 9464,21307 9475,21281 9497,21259
@@ -10078,7 +10078,7 @@ Theodorstr. [31-37c] (Mahlsdorf): Asphalt	Q0 24925,10762 24747,10806
 Kaiserkorso: Asphalt mit Schäden	Q1; 9128,8251 9128,8414
 (provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14798,11058 14809,11037 14808,10978
 Alfonsstr.: Asphalt	Q0 19083,1243 18998,1349 19027,1427 19034,1441 19061,1457
-Traudelstr.: Verbundsteinpflaster	Q1 19027,1427 19169,1249 19140,1137
+Traudelstr.: Verbundsteinpflaster	Q1 19027,1427 19169,1249 19160,1215 19140,1137
 Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
 Rainweg: Verbundsteinpflaster	Q1 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846
 Rainweg: Verbundsteinpflaster	Q1 25028,-2846 25113,-2797
@@ -10527,7 +10527,7 @@ Zugang zur Fußgängerbrücke Bhf. Johannisthal: unbefestigt, sandig	Q3 18649,4678 
 (Bambachstr. - Mariendorfer Weg): neu asphaltiert	Q0 12052,6660 12059,6642 12092,6616 12155,6526 12155,6512
 (Löwenbrucher Weg - Lortzingplatz): Waldweg	Q2 10107,-3063 10067,-2952 10058,-2924 10085,-2810
 (Wittelsbacherstr. - Mauerweg): unbefestigt	Q2 12268,-2139 12331,-2108
-(Lieselstr. - Alfonsstr.): Asphalt	Q0 18931,1192 18998,1349
+(Lieselstr. - Alfonsstr.): Asphalt	Q0 18931,1192 18964,1270 18998,1349
 Glienicker Str. (Köpenick): Verbundsteinpflaster	Q1 21308,3644 21363,3699
 (Müggelheim - Uferweg am Langen See): Waldweg, Schotter	Q2 26597,803 26380,545
 (Müggelheim - Uferweg am Langen See): Waldweg	Q2 26380,545 26073,194
@@ -11289,6 +11289,10 @@ Nymphenburger Str.: Asphalt mit leichten Schäden	Q0 6163,8398 6246,8222
 (Verlängerung Merlitzstr.): Asphalt	Q0 19661,3421 19746,3501
 (Passage am Tacheles): glattes Pflaster	Q0 9371,13333 9353,13273 9244,13253
 Ida-Wolff-Platz: Verbundsteinpflaster	Q1 9161,10574 9192,10528
+(Mauerweg - Schönefelder Chaussee): kleine Betonplatten	Q0 18702,1338 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
+(Adlergestell/Am Seegraben - Walchenseestr.): Waldweg	Q2 21879,1517 21899,1526 22010,1624 22222,1831
+Am Seegraben: Asphalt	Q0 21829,1351 21865,1441 21866,1492 21878,1500
+(Parkplatz am Langen See/Müggelberg - Straße zur Krampenburg): verdichteter Waldweg	Q1 25562,1038 25990,825 25954,692 25997,658 26380,545 27082,336 27161,156 27182,110
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13291,7 +13295,7 @@ Nüßlerstr.: Asphalt	Q0 14754,17673 14214,17754
 Watzmannweg: Beton	Q0 10349,2188 10313,2231 10334,2321 10392,2577
 Paul-Wegener-Str.: Asphalt	Q0 24143,9371 24315,9302 24471,9241
 Paul-Wegener-Str.: Beton	Q0 24471,9241 24610,9186 24737,9110 24860,9040 24973,8954 25065,8899 25114,8870
-Bohnsdorfer Str.: Waldweg, teilweise verwurzelt, bei großer Hitze auch mit sandigen Abschnitten und nach starkem Regen schlammig	Q2 22004,2149 21997,1869 21996,1683 22082,1327
+Bohnsdorfer Str.: Waldweg, teilweise verwurzelt, bei großer Hitze auch mit sandigen Abschnitten und nach starkem Regen schlammig	Q2 22004,2149 21997,1869 21996,1683 22010,1624 22082,1327
 Georg-Lehnig-Str.: mäßiger Asphalt	Q1 14551,13571 14527,13486 14447,13507
 Erich-Kuttner-Str.: Asphalt mit einigen Schäden	Q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
 Eiswaldtstr.: Asphalt	Q0 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343
@@ -15664,7 +15668,7 @@ Hoevelstr.: guter Beton	Q0 17222,4357 17173,4392 17111,4414 17025,4462 16954,450
 Heiligenstadter Str.: guter Asphalt	Q0 16738,14695 16839,14676
 Treiberpfad: Verbundsteinpflaster	Q1 3970,22215 3896,22307 3860,22358
 Treiberpfad: Verbundsteinpflaster	Q1 3896,22307 3810,22231 3766,22165
-(Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0 18280,-295 18385,-173 18515,19 18544,86 18608,232 18708,600 18739,835 18737,1033 18716,1249 18701,1344 18673,1487 18659,1551 18649,1600 18612,1700 18596,1770 18580,2121
+(Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0 18280,-295 18385,-173 18515,19 18544,86 18608,232 18708,600 18739,835 18737,1033 18716,1249 18702,1338 18673,1487 18659,1551 18649,1600 18612,1700 18596,1770 18580,2121
 Muttlerweg: Asphalt	Q0 10576,2683 10612,2675 10603,2626 10716,2597
 Grünsteinweg: Beton mit Asphaltflicken	Q1 10886,2167 10907,2207 10938,2296
 Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
