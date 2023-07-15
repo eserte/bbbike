@@ -42,7 +42,8 @@ jobs:
       run: |
         set -ex
         echo "My IP address: $(curl -s ipinfo.io/ip)"; true
-        { set -o pipefail; curl -s -I http://bbbike.de/robots.txt | head -1; } || { echo "::warning::network check on port 80 failed"; }
+        { set -o pipefail; curl -s -I http://bbbike.de/robots.txt | head -1; } || { echo "::warning::network check on bbbike.de port 80 failed";            echo "BBBIKE_TEST_SKIP_BBBIKE_DE=1"  >> "$GITHUB_ENV"; }
+        { set -o pipefail; curl -s -I https://download.bbbike.org | head -1; } || { echo "::warning::network check on download.bbbike.org port 443 failed"; echo "BBBIKE_TEST_SKIP_BBBIKE_ORG=1" >> "$GITHUB_ENV"; }
         { set -o pipefail; curl -s -I http://mydebs.bbbike.de:8000/dists/jessie/InRelease | head -1; true; } || { echo "::warning::network check on port 8000 failed"; }
     - name: apt hacks
       # the already installed libgd3 conflicts with libgd-dev to be installed
@@ -143,11 +144,17 @@ jobs:
       run: |
         set -ex
         echo "My IP address: $(curl -s ipinfo.io/ip)"; true
-        { set -o pipefail; curl -s -I http://bbbike.de/robots.txt | head -1; } || { echo "::warning::network check on port 80 failed"; }
+        { set -o pipefail; curl -s -I http://bbbike.de/robots.txt | head -1; } || { echo "::warning::network check on bbbike.de port 80 failed";            echo "BBBIKE_TEST_SKIP_BBBIKE_DE=1"  >> "$GITHUB_ENV"; }
+        { set -o pipefail; curl -s -I https://download.bbbike.org | head -1; } || { echo "::warning::network check on download.bbbike.org port 443 failed"; echo "BBBIKE_TEST_SKIP_BBBIKE_ORG=1" >> "$GITHUB_ENV"; }
         { set -o pipefail; curl -s -I http://mydebs.bbbike.de:8000/dists/jessie/InRelease | head -1; true; } || { echo "::warning::network check on port 8000 failed"; }
     - uses: actions/checkout@v3
     - name: Build and test
       run: |
         set -e
         sudo apt-get install -y libipc-run-perl
-        ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }} --env USE_BBBIKE_PPA=${{ matrix.use_bbbike_ppa }} --build-env TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=${{ env.TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT }}
+        ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 \
+            --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }} \
+            --env USE_BBBIKE_PPA=${{ matrix.use_bbbike_ppa }} \
+            --env BBBIKE_TEST_SKIP_BBBIKE_DE=${BBBIKE_TEST_SKIP_BBBIKE_DE:-0} \
+            --env BBBIKE_TEST_SKIP_BBBIKE_ORG=${BBBIKE_TEST_SKIP_BBBIKE_ORG:-0} \
+            --build-env TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=${{ env.TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT }}
