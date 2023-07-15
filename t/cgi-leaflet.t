@@ -79,14 +79,24 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
 {
     my $url = $base_url.'?gple=qjl_Io~%7CpAlH%7CGhEeRgIuHoD%7CR'; # ein Karre in SO36 als GooglePolylineEncoding
     my $resp = $ua->get($url);
-    ok $resp->is_success, "Fetching with multiple coords is OK"
+    ok $resp->is_success, "Fetching with gple is OK"
 	or diag $resp->status_line;
     my $content = $resp->decoded_content(charset => 'none');
     tidy_check $content, 'tidy check with multiple coords';
     (my $content_oneline = $content) =~ s{\n}{ }g;
-    like $content_oneline, qr<initialGeojson =\s*\{\s*"geometry" : \{\s*"coordinates" : \[\s*\[\s*"13.42456",\s*"52.49721"\s*\],\s*\[\s*"13.42313",\s*"52.4957"\s*\],\s*\[\s*"13.4262",\s*"52.49469"\s*\],\s*\[\s*"13.42775",\s*"52.49633"\s*\],\s*\[\s*"13.42456",\s*"52.49721"\s*\]\s*\],>;
-}   
+    like $content_oneline, qr<initialGeojson =\s*\{\s*"geometry" : \{\s*"coordinates" : \[\s*\[\s*"13.42456",\s*"52.49721"\s*\],\s*\[\s*"13.42313",\s*"52.4957"\s*\],\s*\[\s*"13.4262",\s*"52.49469"\s*\],\s*\[\s*"13.42775",\s*"52.49633"\s*\],\s*\[\s*"13.42456",\s*"52.49721"\s*\]\s*\],>, 'expected geojson as generated from gple';
+}
 
+{
+    my $url = $base_url.'?gpleu=qjl_Io-8pAlH8GhEeRgIuHoD8R'; # das gleiche wie oben als "gpleu" (URL safe variant of gple)
+    my $resp = $ua->get($url);
+    ok $resp->is_success, "Fetching with gpleu is OK"
+	or diag $resp->status_line;
+    my $content = $resp->decoded_content(charset => 'none');
+    tidy_check $content, 'tidy check with multiple coords';
+    (my $content_oneline = $content) =~ s{\n}{ }g;
+    like $content_oneline, qr<initialGeojson =\s*\{\s*"geometry" : \{\s*"coordinates" : \[\s*\[\s*"13.42456",\s*"52.49721"\s*\],\s*\[\s*"13.42313",\s*"52.4957"\s*\],\s*\[\s*"13.4262",\s*"52.49469"\s*\],\s*\[\s*"13.42775",\s*"52.49633"\s*\],\s*\[\s*"13.42456",\s*"52.49721"\s*\]\s*\],>, 'expected geojson as generated from gpleu';
+}
 
 SKIP: {
     my $can_apache_session = get_cgi_config()->{use_apache_session};

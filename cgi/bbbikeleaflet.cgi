@@ -58,9 +58,13 @@ if ($q->param('coordssession')) {
 	       BBBikeCGI::Util::my_multi_param($q, 'coords_forw'),
 	       BBBikeCGI::Util::my_multi_param($q, 'coords_rev'),
 	      ];
-} elsif ($q->param('gple')) {
+} elsif ($q->param('gple') || $q->param('gpleu')) {
+    my $gple = scalar $q->param('gpleu') ? do {
+	require Route::GPLEU;
+	Route::GPLEU::gpleu_to_gple(scalar $q->param('gpleu'));
+    } : scalar $q->param('gple');
     require Algorithm::GooglePolylineEncoding;
-    my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline(scalar $q->param('gple'));
+    my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline($gple);
     $wgs84_coords = [ join "!", map { join ',', $_->{lon}, $_->{lat} } @polyline ];
 }
 
