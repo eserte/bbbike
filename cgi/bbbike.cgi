@@ -1230,7 +1230,7 @@ if (defined $q->param('begin')) {
     (my $local_route_file = $q->param('localroutefilelist')) =~ s/[^A-Za-z0-9._-]//g;
     $local_route_file = "$local_route_dir/$local_route_file";
     show_routelist_from_file($local_route_file);
-} elsif (defined $q->param('coords') || defined $q->param('coordssession') || $q->param('gple')) {
+} elsif (defined $q->param('coords') || defined $q->param('coordssession') || $q->param('gple') || $q->param('gpleu')) {
     if ($q->param('showroutelist')) {
 	# XXX note: coordssession+showroutelist is not implemented
 	show_routelist_from_coords();
@@ -5679,9 +5679,13 @@ sub draw_route {
 	$q->param(oldcoords => $oldsess->{routestringrep});
     }
 
-    if (defined $q->param('gple')) {
+    if (defined $q->param('gple') || defined $q->param('gpleu')) {
+	my $gple = defined $q->param('gpleu') ? do {
+	    require Route::GPLEU;
+	    Route::GPLEU::gpleu_to_gple(scalar $q->param('gpleu'));
+	} : scalar $q->param('gple');
 	require Algorithm::GooglePolylineEncoding;
-	my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline(scalar $q->param('gple'));
+	my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline($gple);
 	my @coords = map { join ',', convert_wgs84_to_data($_->{lon}, $_->{lat}) } @polyline;
 	$q->param(coords => join("!", @coords));
     }
@@ -7327,7 +7331,14 @@ sub show_routelist_from_file {
 sub show_routelist_from_coords {
     require Route;
     my @coords;
-    my(@gple) = BBBikeCGI::Util::my_multi_param($q, 'gple');
+    my(@gpleu) = BBBikeCGI::Util::my_multi_param($q, 'gpleu');
+    my @gple;
+    if (@gpleu) {
+	require Route::GPLEU;
+	@gple = map { Route::GPLEU::gpleu_to_gple($_) } @gpleu;
+    } else {
+	@gple = BBBikeCGI::Util::my_multi_param($q, 'gple');
+    }
     if (@gple) {
 	require Algorithm::GooglePolylineEncoding;
 	for my $gple (@gple) {

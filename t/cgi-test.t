@@ -55,7 +55,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 174 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 181 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -707,15 +707,15 @@ SKIP: {
     no warnings 'qw';
     my @coords = qw(8763,8780 8982,8781 9063,8935 9111,9036 9115,9046 9150,9152 9170,9206 9211,9354 9248,9350 9280,9476); # Duden - Methfessel - Kreuzberg - Mehringdamm
 
-    for my $coordtype (qw(coords gple)) {
-	if ($coordtype eq 'gple') {
+    for my $coordtype (qw(coords gple gpleu)) {
+	if ($coordtype =~ /^gple/) {
 	    require Algorithm::GooglePolylineEncoding;
 	    require Karte::Polar;
 	    require Karte::Standard;
 	}
 
 	my %params = (showroutelist => 1);
-	if ($coordtype eq 'gple') {
+	if ($coordtype =~ /^gple/) {
 	    $params{gple} = Algorithm::GooglePolylineEncoding::encode_polyline(map {
 		my($x,$y) = split /,/, $_;
 		($x,$y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map($x,$y));
@@ -725,11 +725,16 @@ SKIP: {
 	    $params{coords} = join("!", @coords);
 	}
 
+	if ($coordtype eq 'gpleu') {
+	    require Route::GPLEU;
+	    $params{gpleu} = Route::GPLEU::gple_to_gpleu(delete $params{gple});
+	}
+
 	{
 	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist with text display, param is $coordtype";
 	    my $content = $resp->decoded_content;
 	    local $TODO;
-	    $TODO = "some streets might be unrecognized due to floating point inaccuracies" if $coordtype eq 'gple'; # converting from std coords to wgs84 and back
+	    $TODO = "some streets might be unrecognized due to floating point inaccuracies" if $coordtype =~ /^gple/; # converting from std coords to wgs84 and back
 	    like_html $content, qr{nach Osten.*Dudenstr};
 	    like_html $content, qr{links.*Methfesselstr};
 	    like_html $content, qr{rechts.*Kreuzbergstr};
