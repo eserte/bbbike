@@ -35,7 +35,7 @@ use IPC::Run qw(run);
     }
 }
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
@@ -48,7 +48,7 @@ my $quiet;
 my $show_diffs;
 my $new_file;
 my $with_notes = 1;
-my $method = 'osm-file';
+my $method = 'overpass';
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
@@ -59,10 +59,10 @@ GetOptions(
 	   'without-notes' => sub { $with_notes = 0 },
 	   'method=s' => \$method,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...] [-without-notes]";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file]\n";
 
 if ($method !~ m{^(osm-file|api|overpass)$}) {
-    die "Allowed methods are 'osm-file', 'api' and 'overpass', specified was '$method'";
+    die "Allowed methods are 'overpass', 'api' and 'osm-file', specified was '$method'";
 }
 
 my $ua;
@@ -363,7 +363,7 @@ check-osm-watch-list.pl - check if something happened in OpenStreetMap data
 
 =head1 SYNOPSIS
 
-Check Berlin data, using the "api" method, and showing diffs:
+Check Berlin data, using the "overpass" method, and showing diffs:
 
     ./check-osm-watch-list.pl -diff -method overpass
 
@@ -400,19 +400,19 @@ the Makefile target C<osm-watch-lists> in the F<data> directory.
 
 There are currently three methods for fetching the OpenStreetMap data.
 
-Using C<-method osm-file> (default) it's expected that a complete
-C<.osm>, C<.osm.gz> C<.osm.bz2> with Berlin or Brandenburg data
-exists. This path to this file should be specified with the
-C<-osm-file> option. This script does not obtain the required osm
-files; see L<osm_watch_tasks> for a script doing this.
-
-Using C<-method overpass> one API call against the overpass-turbo API
+Using C<-method overpass> (default) one API call against the overpass-turbo API
 is done to fetch all osm_watch features. This is currently the
 preferred method.
 
 Using C<-method api> an API call is done for every osm_watch feature.
 
-The latter two methods do not need the help of a download script, and
+Using C<-method osm-file> it's expected that a complete
+C<.osm>, C<.osm.gz> C<.osm.bz2> with Berlin or Brandenburg data
+exists. This path to this file should be specified with the
+C<-osm-file> option. This script does not obtain the required osm
+files; see L<osm_watch_tasks> for a script doing this.
+
+The former two methods do not need the help of a download script, and
 typically need less bandwidth (C<api> for 500 watches about 2 MB,
 C<overpass> even less) than downloading complete osm files (Berlin,
 for example, is gzip-compressed more than 120 MB at the time of
