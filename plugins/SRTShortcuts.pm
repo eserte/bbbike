@@ -1993,15 +1993,16 @@ sub current_route_in_bbbike_cgi {
     }
     require Route;
     require Route::GPLE;
+	require Route::GPLEU;
     my $rte = Route->new_from_realcoords(\@main::realcoords);
     $rte->set_coord_system($main::coord_system);
-    my $gple = Route::GPLE::as_gple($rte);
+    my $gpleu = Route::GPLEU::gple_to_gpleu(Route::GPLE::as_gple($rte));
 
     require BBBikeUtil;
     my $url = BBBikeUtil::uri_with_query
 	("http://localhost/bbbike/cgi/bbbike.cgi",
 	 # [ @params ], raw_query => [ gple => $gple ], # minimal, but may cause problems in start_browser call
-	 [ gple => $gple, @params ],
+	 [ gpleu => $gpleu, @params ],
 	);
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
