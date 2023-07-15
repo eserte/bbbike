@@ -669,7 +669,9 @@
           (dolist (line lines)
             (insert line)
             (insert "\n"))
-	  (grep-mode))
+	  (grep-mode)
+	  (goto-char (point-min))
+	  )
 	(pop-to-buffer buffer))))))
 
 (defun bbbike-grep-button (button)
