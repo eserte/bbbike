@@ -403,6 +403,20 @@ entry after the I<source>.
 Denotes that the information in the next block or line was confirmed
 by I<source>.
 
+=item C<source_id: I<id>>
+
+A special form of a C<by> directive where a formal id can be used.
+Currently there are three id schemes in use: C<viz2021> (a pseudo id
+for VIZ traffic reports), C<bvg2021> (BVG traffic reports: prefixed by
+the affected line, then a C<#>, then the id), and scheme-less (a real
+VIZ id). Sometimes also other forms of pseudo ids or even URLs are
+used here.
+
+=item C<source_id[inactive]: I<id>>
+
+An inactive source id (typically not accessible anymore at the source
+site and/or expired).
+
 =item C<valid: YYYYMMDD-YYYYMMDD>
 
 =item C<valid: YYYYMMDD->
