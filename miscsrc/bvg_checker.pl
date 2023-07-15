@@ -57,6 +57,7 @@ my @files = (
 	     "$bbbike_dir/tmp/bbbike-temp-blockings-optimized.bbd",
 	    );
 tie my %check_sourceids, 'Tie::IxHash';
+tie my %check_inactive_sourceids, 'Tie::IxHash';
 for my $file (@files) {
     my $s = Strassen->new_stream($file, UseLocalDirectives => 1);
     $s->read_stream
@@ -73,14 +74,19 @@ for my $file (@files) {
 		     $check_sourceids{$1} = $r->[Strassen::NAME];
 		 }
 	     }
+	     for my $inactive_sourceid (@{ $dir->{'source_id[inactive]'} || [] }) {
+		 if ($inactive_sourceid =~ m{^(\Q$id_prefix\E:\S+)}) {
+		     $check_inactive_sourceids{$1} = $r->[Strassen::NAME];
+		 }
+	     }
 	 }
 	);
 }
 
 my $errors = 0;
-if (%check_sourceids) {
+if (%check_sourceids || %check_inactive_sourceids) {
     if ($list_only) {
-	printerr join("\n", keys %check_sourceids) . "\n";
+	printerr join("\n", keys %check_sourceids) . "\n"; # ignore inactive ones here
     } else {
 	my %links = find_active_sourceids();
 
@@ -93,6 +99,15 @@ if (%check_sourceids) {
 		printerr "OK", "green on_black";
 	    }
 	    printerr "\n";
+	}
+
+	# diagnostics for inactive sourceids only if active again
+	while(my($check_inactive_sourceid, $strname) = each %check_inactive_sourceids) {
+	    if ($links{$check_inactive_sourceid}) {
+		printerr "$check_inactive_sourceid ($strname)... note is again available -> please change source_id[inactive] to source_id", "red on_black";
+		printerr "\n";
+		$errors++;
+	    }
 	}
     }
 }
