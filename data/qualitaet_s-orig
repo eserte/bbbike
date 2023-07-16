@@ -9554,7 +9554,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://mein.berlin.de/projekte/sanierung-grunflache-auerdreieck/?initialSlide=6 (vermutlich bleiben die Stufen am nˆrdlichen Ende)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11067 (Anfrage)
 #: XXX mˆglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollst‰ndige Fertigstellung erst 2022; Stand Mai 2023: laut Papieraushang bis Juni 2023, laut Baustellenschild bis Herbst 2023 vvv
-#: last_checked: 2023-07-02 vvv
+#: last_checked: 2023-07-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-10-31 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur M¸hsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
@@ -11063,7 +11063,8 @@ An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1- 8704,21858 8725,21910 
 An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1- 8725,21910 8615,21955 8590,21894 8597,21879
 (Brockenweg - Blankenburger Pflasterweg): unbefestigter Weg	Q2 15102,20723 15119,20655 15226,20587
 (Brockenweg - Blankenburger Pflasterweg): wassergebundene Decke	Q1- 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
-Groﬂe-Leege-Str.: Beton mit einigen Hebungen	Q0- 16033,14756 15968,14684 15899,14598
+Groﬂe-Leege-Str.: Beton mit einigen Hebungen	Q0-; 16033,14756 15968,14684 15899,14598
+Groﬂe-Leege-Str.: Asphalt	Q0; 15899,14598 15968,14684 16033,14756
 (R¸digerstr. - Nibelungenring): Verbundsteinpflaster	Q1+ 17441,12247 17444,12286 17442,12292
 Nibelungenring: Verbundsteinpflaster	Q1+ 17320,12308 17359,12302 17442,12292 17454,12348
 Nibelungenring: Verbundsteinpflaster	Q1+ 17466,12346 17479,12408 17433,12414 17382,12421 17376,12422 17337,12428
@@ -12912,7 +12913,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-06-08
+#: last_checked: 2023-07-16 (mapillary)
 #: check_frequency: 45d
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483
 Heiner-M¸ller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -30183,11 +30184,14 @@ Seefelder Str.: Asphalt	Q0 16966,16127 16975,16164 17071,16174 17156,16180 17183
 Seefelder Str.: Asphalt	Q0 17183,16181 17238,16185 17325,16189
 #: corrected_by: srt (Gehwegplatten -> ..., neu gemacht)
 Seefelder Str. (Fuﬂweg): Verbundsteinpflaster	Q1+ 17325,16189 17362,16189 17383,16197
-#: corrected_by: srt (Q1 -> Q1+)
-Seefelder Str.: Beton	Q1+ 16961,16042 16966,16127
+#: corrected_by: srt (Q1 -> Q0-)
+Seefelder Str.: Beton	Q0- 16961,16042 16966,16127
 #: confirmed_by: srt
 Seefelder Str.: Beton	Q1 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
-Straﬂe 142: Asphalt	Q0 17102,16464 17152,16605 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Straﬂe 142: rauer Asphalt	Q0- 17102,16464 17152,16605 17212,16760
+#: corrected_by: srt (Q0 -> Q0+)
+Straﬂe 142: Asphalt	Q0+ 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
 #: confirmed_by: srt
 Paul-Koenig-Str.: Asphalt	Q0 17152,16605 17268,16526 17312,16498 17304,16485
 #: corrected_by: srt (added Sch‰den)

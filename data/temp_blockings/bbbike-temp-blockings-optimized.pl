@@ -3386,7 +3386,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.laubinger.de/event/koepenickerwinzersommer/
+# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
+	2::temp 22138,4642 22111,4562 22093,4499
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
+	2::temp 22212,4655 22214,4548
+	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22175,4730 22246,4711
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1692273600,
+         'id' => 2610,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              8,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 18.8.2923 bis 20.8.2023 möglich',
+         'type' => 'gesperrt',
+         'until' => 1692568799
+       },
        undef,
        undef,
        undef,
@@ -3730,7 +3760,52 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: Sprengplatz Grunewald
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
+#: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
+#: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
+#: source_id: 2147341022 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023) (inaktiv)
+# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
+	2::bomb -2218,5133 -927,6888
+	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::bomb -1934,6804 -1854,6898
+',
+         'from' => 1689544800,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Juli 2023 zwischen 09:15 und 10:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1689668100
+       },
        undef,
        {
          'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
@@ -4480,7 +4555,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-16
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4736,7 +4811,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-16 (mapillary)
 #: check_frequency: 14d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -4744,7 +4819,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Juli 2023: Bauarbeiten im mittleren Bereich möglich)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juli 2023: Bauarbeiten im mittleren Bereich möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5303,7 +5378,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-07-11
+#: last_checked: 2023-07-16 (mapillary)
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 ',
@@ -7600,6 +7675,19 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
          'id' => 3857,
          'text' => 'Müggelbergallee: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (none)
+#: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
+#: last_checked: 2023-07-16
+	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
+',
+         'from' => undef,
+         'id' => 3858,
+         'text' => 'Straße 3: Bauarbeiten, Straße wird neu gemacht, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

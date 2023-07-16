@@ -23922,11 +23922,11 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2022-08-18 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
-       until => $isodate2epoch->("2022-08-21 23:59:59"),
+     { from  => $isodate2epoch->("2023-08-17 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
+       until => $isodate2epoch->("2023-08-20 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 8, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 19.8.2922 bis 21.8.2022 möglich',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 18.8.2923 bis 20.8.2023 möglich',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -26404,11 +26404,12 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-05-15 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. Mai 2023 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2023-07-17 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-07-18 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Juli 2023 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: Sprengplatz Grunewald
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
@@ -26420,6 +26421,7 @@ EOF
 #: by: https://viz.berlin.de/2022/11/a115-sprengungen/
 #: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
 #: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
+#: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
 #: source_id: 2147341022 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
@@ -31220,7 +31222,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-16
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32631,7 +32633,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Juli 2023: Bauarbeiten im mittleren Bereich möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juli 2023: Bauarbeiten im mittleren Bereich möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32640,7 +32642,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="30"
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-16 (mapillary)
 #: check_frequency: 14d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -34854,7 +34856,7 @@ EOF
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-07-11
+#: last_checked: 2023-07-16 (mapillary)
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 EOF
@@ -36186,7 +36188,7 @@ EOF
        type  => 'gesperrt',
        source_id => '226400817',
        data  => <<EOF,
-	2::inwork 42833,41088 42225,41215 41992,41263 39354,41395
+	2::inwork 42833,41088 42409,41206 42225,41215 41992,41263 40961,41283 39354,41411
 EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
@@ -36780,7 +36782,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/221-F/22/131',
        data  => <<EOF,
-	2::inwork 39156,37578 38986,37512 38171,37238 37672,36908 36605,36450
+	2::inwork 39156,37578 38986,37512 38171,37238 37790,37032 37641,36894 36605,36450
 EOF
      },
      { from  => 1664056800, # 2022-09-25 00:00
@@ -39743,6 +39745,18 @@ EOF
 #: last_checked: 2023-07-15
 #: check_frequency: 90d
 	q4::inwork 23278,1668 23185,1649
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Straße 3: Bauarbeiten, Straße wird neu gemacht, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (none)
+#: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
+#: last_checked: 2023-07-16
+	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
 EOF
      },
     );
