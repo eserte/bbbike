@@ -1451,7 +1451,7 @@ Spittelmarkt	HH 10299,11786 10238,11741
 Gertraudenstr.	HH 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999 10512,12039
 Mühlendamm	HH 10512,12039 10574,12131 10625,12206 10646,12234 10662,12255 10697,12303
 # REMOVED --- #: note: früher Hauptverkehrsstraße, jetzt nur noch als Gehweg übrig, wird beim Umbau des Molkenmarkts um/zurückgebaut --- (Molkenmarkt - zur Stralauer Str.)	NN 10736,12285 10772,12288
-Littenstr.	N 11155,12184 11139,12243 11088,12382 11084,12395 11065,12452 10973,12612 10951,12637
+Littenstr.	N 11155,12184 11139,12243 11088,12382 11084,12395 11065,12452 10982,12597 10951,12637
 Magazinstr. (Mitte)	N 11562,12597 11329,12497
 #: note: Privatstraße ("Unbefugten ist das Betreten und Befahren verboten")
 (zwischen VoltAir und The Student Hotel)	N 11240,12368 11344,12410
@@ -1467,7 +1467,7 @@ Grunerstr.	HH 10849,12557 10783,12502
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
 #: last_checked: 2023-07-02
 #: check_frequency: 90d
-Grunerstr. [Gehweg]	NN 10900,12546 10973,12612 11057,12715
+Grunerstr. [Gehweg]	NN 10900,12546 10982,12597 11057,12715
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
 Rathausstr. (Mitte)	N 10357,12356 10416,12394 10476,12432 10584,12507 10601,12521 10704,12595
 Rathausstr. (Mitte)	NN 10704,12595 10923,12779
@@ -13085,7 +13085,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371

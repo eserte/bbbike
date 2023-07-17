@@ -268,9 +268,9 @@ Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-06-30
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
-Grunerstr.: Gehweg	q4 10900,12546 10973,12612 11057,12715
+Grunerstr.: Gehweg	q4 10900,12546 10982,12597 11057,12715
 # 
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 # 
@@ -328,7 +328,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-17
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -624,7 +624,7 @@ Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023) (bis 6.9.2023)
 #: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023) (inaktiv)
 # REMOVED --- #: source_id: bvg2021:101#BVG301286_0
-#: osm_watch: way id="4571954" version="33"
+#: osm_watch: way id="4571954" version="34"
 #: last_checked: 2023-07-02 (osm)
 #: check_frequency: 45d
 Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
@@ -1303,9 +1303,7 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
 Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944
-#: next_check_id: SCHLESISCHERBUSCH-2023
-#: XXX_prog: Konflikt mit gesperrt-orig-Eintrag
-#: valid: 20230915-
+# REMOVED --- #: next_check_id: SCHLESISCHERBUSCH-2023 --- #: XXX_prog: Konflikt mit gesperrt-orig-Eintrag --- #: valid: 20230915-
 Am Flutgraben: Fußgänger	q1 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993

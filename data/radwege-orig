@@ -501,7 +501,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-07-05 (mapillary) vvv
+#: last_checked: 2023-07-17 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1996,9 +1996,9 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023)
 #: priority: #A vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-07-31 vvv
+#: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-06-21 vvv
+#: last_checked: 2023-07-17 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234
 provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
@@ -2042,12 +2042,15 @@ asphaltiert	RW2; 10685,12422 10783,12502
 #: by: https://nitter.net/VIZ_Berlin/status/1678738122501242882
 #: by: https://nitter.net/pic/orig/media%2FF0wTSUUXgAQDCdI.jpg
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1345953.php
+#: by: https://nitter.net/VIZ_Berlin/status/1680800745606774785#m
+#: by: https://www.berliner-woche.de/mitte/c-bauen/grunerstrasse-bis-ende-august-dicht_a387625
 #: source_id: bvg2021:248#BVG324714_0
 #: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023)
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-07-08 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2023-07-17
+#: XXX wird hier noch verschwenkt (siehe twitter-Bild?)
+#: last_checked: 2023-07-17
+#: check_frequency: 14d
+#: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10951,12637
 # 
 # REMOVED (ist wieder weg) --- #: XXX wie lange bleibt die provisorische Radspur? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.787705.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres) --- #: by: https://twitter.com/VIZ_Berlin/status/1311892425351331847 --- #: source_id: 2147343815 (bis auf Weiteres) (nicht mehr aktiv) --- #: source_id: 2147346386 (bis 30.10.2020) --- #: last_checked: 2020-10-06 --- #: check_frequency: 30d --- #: next_check: 2020-10-30 --- provisorische Radspur	RW4; 11141,12806 11226,12945
@@ -7540,7 +7543,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2023-06-28 (mapillary)
+#: last_checked: 2023-07-17
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7915,7 +7918,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="32"
 #: osm_watch: way id="335487059" version="27"
-#: last_checked: 2023-07-08 (mapillary) vvv
+#: last_checked: 2023-07-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

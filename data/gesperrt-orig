@@ -1717,7 +1717,7 @@ Bernau - Tempelfelde	1 23179,31047 23103,30923
 Dallgower Str.	1 -10799,15946 -10853,16230
 Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22850,30562 22892,30426
-Elisenau - Bˆrnicke: Privatgel‰nde?	2 24311,26512 24412,26796
+# REMOVED (auf Mapillary-Bildern nicht erkennbar) --- Elisenau - Bˆrnicke: Privatgel‰nde?	2 24311,26512 24412,26796
 # REMOVED --- Weg nach Altlandsberg: Privatstraﬂe, gesperrt	2 28159,19037 28227,18962 28547,18590 28627,18536 28697,18498
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
 Vorfahrt Flughafen Schˆnefeld	1 18419,-1418 18429,-1443 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
@@ -3577,6 +3577,7 @@ Dr‰ngelgitter	BNP:3::trailer=10 4067,22066
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=744224#post744224
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Gel‰nder
 #: last_checked: 2023-07-13
 #: check_frequency: 90d
@@ -3882,10 +3883,7 @@ Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	2s:q4:inwork 20336,3
 #: last_checked: 2023-07-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-09-15 vvv
-#: osm_watch: way id="358602468" version="12"
-#: osm_watch: way id="24189226" version="27"
-#: XXX Achtung: alten Eintrag in handicap_s-orig reaktivieren!
-Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q3:inwork 13333,9929 13271,9927 13225,9897
+# REMOVED (laut osm hier nicht mehr) --- #: osm_watch: way id="358602468" version="12" --- #: osm_watch: way id="24189226" version="29" --- #: XXX Achtung: alten Eintrag in handicap_s-orig reaktivieren! --- Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q3:inwork 13333,9929 13271,9927 13225,9897
 # REMOVED (hier nicht mehr) --- Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q2:inwork 13225,9897 13109,9743 12905,9470
 #: osm_watch: way id="72183569" version="11"
 #: valid: -20230915 vvv
@@ -3978,7 +3976,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: last_checked: 2023-07-16 (mapillary) vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-#: osm_watch: way id="1061057020" version="7"
+#: osm_watch: way id="1061057020" version="8"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
@@ -3986,18 +3984,18 @@ Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
 # REMOVED --- Heiner-M¸ller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
-#: osm_watch: way id="1084269869" version="6"
+#: osm_watch: way id="1084269869" version="8"
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
-#: osm_watch: way id="1084267262" version="9"
+#: osm_watch: way id="1084267262" version="10"
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
 # REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17738,8450 17755,8519
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17755,8519 17627,8556
-#: osm_watch: way id="1061057021" version="7"
+#: osm_watch: way id="1061057021" version="8"
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17773,8588 17648,8626
-#: osm_watch: way id="1061057024" version="6"
+#: osm_watch: way id="1061057024" version="7"
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17648,8626 17627,8556 17608,8483 17682,8464 17738,8450
 #: last_checked ^^^
 # 
@@ -4313,7 +4311,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 Planckstr.: Einbahnstraﬂenregelung, offen Richtung S¸den	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
-# REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraﬂenregelung, offen Richtung S¸den	1s:q3:inwork 11059,12450 10973,12612 10951,12637
+# REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraﬂenregelung, offen Richtung S¸den	1s:q3:inwork 11059,12450 10982,12597 10951,12637
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 f¸r alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php (bis Herbst 2021) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung --- #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1097688.php --- #: also_indoor: traffic (G,H) vvv --- #: source_id: 2147345254 (bis 18.06.2021) vvv --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- #: priority: #A vvv --- Neue Roﬂstraﬂenbr¸cke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901 --- Neue Roﬂstraﬂenbr¸cke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
@@ -4354,7 +4352,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="28"
 #: osm_watch: way id="289966097" version="15"
 #: priority: #A
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 # REMOVED --- Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4416,27 +4414,27 @@ Uferweg - Carl-Spindler-Str.: noch nicht offiziell geˆffnet	2::inwork 21547,5245
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2023-06-30
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-06-21
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
-J¸denstr.: Anbindung an die Stralauer Str. komplett gesperrt	2::inwork 10830,12313 10830,12279
+J¸denstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Bˆﬂ-Str./J¸denstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 J¸denstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
-Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,12637
+Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10982,12597 10951,12637
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 
@@ -4446,7 +4444,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12612 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe --- mittlerweile manchmal tats‰chlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-07-12 (mapillary)
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2023-06-30
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148

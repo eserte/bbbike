@@ -5503,7 +5503,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-	1::inwork 11329,12497 11202,12426 11088,12382 11084,12395 11065,12452 10973,12612 10951,12637
+	1::inwork 11329,12497 11202,12426 11088,12382 11084,12395 11065,12452 10982,12597 10951,12637
 	1::inwork 10951,12637 11057,12715 11105,12764 11141,12806
 EOF
      },
@@ -16731,7 +16731,7 @@ EOF
        text  => 'L 292 Schönfeld - Grüntal OD Tempelfelde, Schönefelder Str. Kanal- und Straßenbau Vollsperrung 01.10.2009-18.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 31377,34072 31293,33987
+	q4::inwork 31372,34078 31310,34005
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
@@ -26220,7 +26220,7 @@ EOF
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
 # REMOVED --- #: last_checked: 2018-06-07 vvv
 # REMOVED --- #: check_frequency: 1d vvv
-	q4::inwork 10951,12637 10973,12612 11065,12452
+	q4::inwork 10951,12637 10982,12597 11065,12452
 	q4::inwork 11065,12452 11084,12395 11088,12382
 	q4::inwork 11139,12243 11088,12382
 	2::inwork 11033,12439 11065,12452
@@ -26405,8 +26405,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-07-17 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-07-18 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Juli 2023 zwischen 09:15 und 10:15 Uhr',
+       until => $isodate2epoch->("2023-07-18 10:45:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Juli 2023 zwischen 09:15 und 10:45 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: Sprengplatz Grunewald
@@ -26443,6 +26443,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,18.07.2023,09:45 (bis 18.07.2023)
 # REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
 	2::bomb -2218,5133 -927,6888
 	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
@@ -32641,7 +32642,7 @@ EOF
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
-#: osm_watch: way id="165832806" version="30"
+#: osm_watch: way id="165832806" version="31"
 #: last_checked: 2023-07-16 (mapillary)
 #: check_frequency: 14d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
@@ -36006,9 +36007,10 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1311341.php (ab 5. April 2023 Straßenbau; Verkehrsfreigabe Ende Mai 2023)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-ende-mai-soll-der-4-bauabschnitt-fertig-sein_a378280 (bis Ende Mai 2023)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2023-06-02 vvv
-#: check_frequency: 45d vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-05-31 vvv
 #: osm_watch: way id="1043813287" version="2"
 #: osm_watch: way id="1043813288" version="2"
@@ -36089,12 +36091,14 @@ EOF
 	2::inwork 47334,21218 47192,21608 47072,21650 46672,21791 46264,21879 46072,21966
 EOF
      },
-     { from  => 1658313000, # 2022-07-20 12:30
-       until => 1658649600, # 2022-07-24 10:00
-       text  => 'Straße des 17. Juni und Ebertstr.: zwischen Großer Stern und Dorotheenstr./Behrenstr. Sperrung der Straße, möglicherweise sind auch Radfahrer betroffen, vom 21.07.2022 12:30 bis 24.07.2022 10:00 ',
+     { from  => $isodate2epoch->("2023-07-19 08:00:00"), # 1658313000, # 2022-07-20 12:30
+       until => $isodate2epoch->("2023-07-23 18:00:00"), # 1658649600, # 2022-07-24 10:00
+       text  => 'Straße des 17. Juni und Ebertstr.: zwischen Großer Stern und Dorotheenstr./Behrenstr. Sperrung der Straße, möglicherweise sind auch Radfahrer betroffen, vom 20.07.2023 08:00 bis 23.07.2023 18:00 ',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.369347,52.515752,21.07.2022,12:30',
        data  => <<EOF,
+#: by: https://nitter.net/VIZ_Berlin/status/1680938171305951232#m
+#: by: https://viz.berlin.de/2023/07/csd-berlin/
+#: source_id: viz2021:13.369347,52.515752,21.07.2022,12:30 (inaktiv)
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	3 8119,12414 8055,12186 8049,12140
@@ -38644,6 +38648,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (none)
 #: last_checked: 2023-06-17 (mapillary)
 	q4::inwork -3269,12406 -3260,12540
 EOF
@@ -39528,12 +39533,12 @@ EOF
 EOF
      },
      { from  => 1688304480, # 2023-07-02 15:28
-       until => 1689692400, # 2023-07-18 17:00
+       until => 1689616469, # 1689692400, # 2023-07-18 17:00
        text  => 'Lüderstr.: Wasserrohrbruch, Sperrung zwischen Futranplatz und Freiheit, vom 03.07.2023 15:28 bis 18.07.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.578154,52.446933,03.07.2023,15:28',
        data  => <<EOF,
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1675861551939477504
+#: by: https://nitter.net/VIZ_Berlin/status/1675861551939477504
 	q4::inwork 22388,4737 22377,4836
 EOF
      },

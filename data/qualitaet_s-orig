@@ -1054,8 +1054,10 @@ Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11259,859
 Hasenheide, zur Lilienthalstr.: Verbundsteinpflaster, kleine Stück mit Kleinsteinpflaster	Q1+ 10709,9192 11111,9104 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10627,9912 10602,9957 10500,10081
 #: note: Kategorisierung ist ein Kompromiss zwischen dem Kopfsteinpflaster (Q2 bis Q2+) und der Sitte, auf dem Uferweg zu fahren (größtenteils Q1+ und besser)
-#: XXX Uferweg wird gerade neu gemacht und ist gesperrt
-#: last_checked: 2023-06-17
+#: XXX Uferweg wird gerade neu gemacht und ist gesperrt; laut Aushang bis Auguster 2023, danach eine Oberfläche ähnlich wie in der Grimmpromenade
+#: last_checked: 2023-07-17
+#: check_frequency: 30d
+#: next_check: 2023-08-31
 # REMOVED --- Carl-Herz-Ufer: Kopfsteinpflaster (aber es existiert ein breiter asphaltierter Uferweg)	Q1- 10168,10085 10313,10084 10430,10081 10500,10081
 Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10168,10085 10313,10084 10430,10081 10500,10081
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
@@ -15776,6 +15778,9 @@ Doberaner Str. (Schmargendorf): Kopfsteinpflaster	Q2 2731,7247 2827,7246
 (Verlängerter Dauerwaldweg): befestigter Waldweg	Q1 467,9516 461,9556 418,9752
 #: corrected_by: srt (Q1 -> Q1-)
 (Verlängerte Alte Allee): befestigter Waldweg	Q1- 616,9602 418,9752 328,9820 262,9867 84,10003 -45,10096 -57,10103
+#: source_id: viz2021:13.26431,52.4958,17.07.2023,07:00 (Fahrbahnerneuerung bis 04.08.2023)
+#: XXX nach den Bauarbeiten bessere Qualität?
+#: next_check: 2023-08-04
 Maikäferpfad: Asphalt mit Löchern	Q2 841,9914 937,9841 981,9806 1026,9772 1117,9706
 Maikäferpfad: Verbundsteinpflaster	Q1 841,9914 748,9981 556,10122
 #: confirmed_by: srt

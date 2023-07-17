@@ -80,7 +80,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -309,7 +309,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: last_checked: 2023-05-21
 #: check_frequency: 120d
 #: osm_watch: way id="82449630" version="23"
-#: osm_watch: way id="32426064" version="16"
+#: osm_watch: way id="32426064" version="17"
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7939,21600 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
 # REMOVD --- #: XXX Baumaßnahme B3.4 (Realisierung nach 2011) --- #: XXX außerdem entstehen wohl Ampeln an der Autobahnausfahrt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5566.html --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b109/index.shtml (Baubeginn 2. Halbjahr 2017) --- #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: IV/2017 bis IV/2019) (beidseitige Radwege) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bis-2020-soll-die-ueberfuehrung-komplett-erneuert-sein_a169331 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742008.php (neu gebauter Radweg wird erwähnt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820221.php (bis 2.9.2019) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bis-2-september-wird-der-naechste-strassenabschnitt-neu-gebaut_a220372 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.842131.php (nördlich der Autobahnbrücke am 5.9.2019 fertig, Rest erst am 08.11.2019) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-brucke-b109-bauarbeiten-%C2%B7-vollsperrung-bis-8-november --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-an-fahrbahn-sowie-fuss-und-radwegen-bis-november-geplant_a231304 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.871724.php --- #: osm_watch: way id="4484357" version="16" --- #: source_id: 2147342176 --- #: source_id: 2147341532 --- #: source_id: LMS-BR_r_LMS-BR_116482_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_120876_LMS-BR_72 --- #: source_id: 2147344738 (bis Anfang November 2019) --- #: source_id: 2147345058 (bis Anfang Dezember 2019) --- #: source_id: 2147345213 (bis Mitte Dezember 2019)
@@ -464,6 +464,8 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4187 (zu der Kreuzung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/fSBeVHSP/49-Anlagen/06/B0088ZB1.pdf (Zwischenbericht; kein Zeitplan)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7502 (Antrag)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php ("Baumschulenweg" (vermutlich die Baumschulenstr. gemeint?) - Bulgarische Str., beide Richtungen?)
+#: by: https://berliner-abendblatt.de/berlin-news/verkehrsverwaltung-gibt-gruenes-licht-fuer-weitere-radwege-id227370 (und weitere)
 #: XXX Maßnahme Pw.1
 #: osm_watch: way id="28961260" version="24"
 #: osm_watch: way id="899453841" version="2"
@@ -1375,6 +1377,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, hier: Buschallee bis Malchower Weg, geschützter Radfahrstreifen, kein Datum, vielleicht noch 2021?)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php (Erwähnung)
 #: osm_watch: way id="111283481" version="22"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
 #: source_id: viz2021:13.48997,52.55798,29.12.2022,09:38 (bis 25.1.2023) (später am Tag wieder entfernt, inaktiv)
@@ -1414,6 +1417,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
 # 
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php ("Überarbeitung" notwendig)
 #: last_checked: 2023-04-17 (mapillary)
 #: check_frequency: 120d
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
@@ -1798,7 +1802,7 @@ Tollerstr.: Asphaltierung geplant	?::projected 7751,19696 7769,19736 7807,19811 
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="272532028" version="8"
-#: osm_watch: way id="73682384" version="6"
+#: osm_watch: way id="73682384" version="11"
 #: osm_watch: way id="272532027" version="6"
 #: last_checked: 2023-06-26 (mapillary)
 #: check_frequency: 120d
@@ -2058,6 +2062,7 @@ Friederikestr.: entsteht hier ein Radstreifen?	?::projected -1661,18749 -1654,18
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11178 (Empfehlung)
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230321_Roedernallee_Nord.pdf (Oranienburger Str. - Am Nordgraben, überwiegend Radspuren)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-verkehrspolitik-fuer-berlin-jetzt-wird-erstmals-ein-radweg-abgebaut-verkehr-reinickendorf-li.360954 (Roedernallee: Projekt ist gefährdet)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php ("Überarbeitung" notwendig)
 #: XXX geplante Fertigstellung war 2019
 #: source_id: 2147344459 (bis Ende August 2019, Leitungsbau, inaktiv)
 #: source_id: viz2021:13.341407,52.586168,02.02.2023,07:00 (Leitungsarbeiten, bis 21.04.2023) (inaktiv) (bis 16.5.2023) (inaktiv)
@@ -2143,7 +2148,7 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1342555.php
 #: by: http://www.infravelo.de/projekt/schlesische-strasse-und-koepenicker-strasse-1/ (4. Quartal 2023 - 2. Quartal 2024)
 #: XXX evtl. Verbreiterung oder Poller?
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-17
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Köpenicker Str., Schlesische Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629 13136,10535 13142,10530 13249,10445 13369,10337 13449,10262 13487,10227 13535,10184 13579,10146
@@ -2949,6 +2954,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/senatorin-will-radverkehrsprojekte-erneut-ueberpruefen-foerdermittel-verfallen_a385557
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8625 (Anfrage)
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/radwege-werden-nicht-angelegt_a386693 (Finanzierungsstopp hier unklar)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php (Erwähnung)
 #: osm_watch: way id="410242419" version="16"
 #: osm_watch: way id="860638046" version="11"
 #: last_checked: 2023-06-29
@@ -2956,6 +2962,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: next_check: 2023-12-31
 Hermannstr. (Thomasstr. - Werbellinstr.): Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12185,7381 12158,7449 12123,7549 12090,7651 12081,7679 12075,7696 12057,7744 12041,7788 12025,7852 12001,7937 11979,8014
 #: by: http://www.infravelo.de/projekt/hermannstrasse-noerdliche-bauabschnitt/ (vermutlich auch eine Umbenennung, nördlich Werbellinstr., 3. Quartal 2023 - 3. Quartal 2023)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php (anhand der Kilometerangabe hier vermutlich erst einmal nicht?)
 #: last_checked: 2023-06-30
 #: check_frequency: 120d
 #: next_check: 2023-09-30
@@ -3992,6 +3999,7 @@ Majakowskiring/Ossietzkystr.: vielleicht entsteht etwa hier ein modaler Filter	?
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6301 (Antrag)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6340 (Antrag)
 #: by: https://nitter.cz/VIZ_Berlin/status/1580104406200385536#m
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php (Erwähnung)
 #: source_id: viz2021:13.429763,52.544926,15.08.2022,07:00 (Fahrbahnausbesserungsarbeiten, bis 22.8.2022) (bis 18.8.2022) (inaktiv)
 #: priority: #D vvv
 #: next_check: 2023-12-31 vvv
@@ -6058,7 +6066,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-17
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6584,6 +6592,8 @@ Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,2
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/280000-teure-anlage-an-der-ollenhauer-strasse-ist-zum-politikum-geworden_a385908
 #: by: https://berliner-abendblatt.de/berlin-news/sperrung-von-radweg-in-reinickendorf-id226111
 #: by: https://berliner-abendblatt.de/berlin-news/radweg-ollenhauerstrasse-steht-laut-behoerden-nicht-in-frage-id227189
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346479.php (Freigabe?)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346382.php
 #: osm_watch: way id="39965120" version="24"
 #: osm_watch: way id="39965424" version="19"
 #: osm_watch: way id="962783115" version="9"
@@ -7898,7 +7908,7 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1343794.php (ab 24.07.2023)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/vzp_bellermann_stettiner.pdf
-#: osm_watch: note 3765360 4
+#: osm_watch: note 3765360 5
 #: last_checked: 2023-07-10
 #: next_check: 2023-07-24
 Stettiner Str./Bellermannstr.: Diagonalsperre in Planung	?::projected 9063,16399 9099,16398 9141,16399
@@ -7913,7 +7923,7 @@ Bellermannstr./Grüntaler Str.: Diagonalsperre in Planung	?::projected 9175,16347
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php ("Schulzone")
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Teileinziehung, weiterhin für Radfahrer offen)
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-17
 #: next_check: 2023-09-01
 Kiezblock Singerstr.	? 11845,12292 11635,12398
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1331865.php (Verkehrsberuhigung in Erwägung)
@@ -8600,7 +8610,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data
 #: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
 #: also_indoor: webcam https://portal1961.webcam-profi.de/
-#: osm_watch: way id="428279379" version="15" vvv
+#: osm_watch: way id="428279379" version="16" vvv
 #: last_checked: 2023-07-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-03-01 vvv
@@ -9890,6 +9900,8 @@ Arnimstr.: hier soll eine Grünfläche entstehen	?::projected 18472,16844 18267,17
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_44_2977_3032_online.pdf (Straßenbenennungen)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6051 (Erwähnung der Helga-Hahnemann-Str.)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_08_0725_0852_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.deutsches-architekturforum.de/thread/14809-wohnwerk-niedersch%C3%B6neweide/?postID=744243#post744243
+#: by: https://www.buwog-weydenhof.de/
 #: XXX Planstraßen A bis C, außerdem ein Uferweg mit Anschluss an die Spreestr., außerdem scheint die Grünanlage etwas vergrößert zu werden; neue Straßennamen fehlen in Berlin.coords.data, PLZ aus DPAG-Mitteilungsblatt
 #: XXX Planstraße A -> Kupferkamp (PLZ: 12439)
 #: XXX Planstraße B -> Am Werkstor (PLZ: 12439)
@@ -10347,6 +10359,11 @@ Schulzendorf: weitere Straßen entstehen	?::inwork 22906,-4982 22835,-5312
 #: next_check: 2027-01-01
 Siemensstadt Square: vermutlich entstehen hier auch einige Straßen und Plätze	?::projected -299,15102 -275,14953 38,14957 50,14521 462,14480 452,14175 944,14116 847,14436 772,14621 446,14870 172,14936 133,15137 -299,15102
 # 
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php
+#: last_checked: 2023-07-17 (Ankündigung)
+#: check_frequency: 90d
+Hellersdorfer Str., Anschluss Ernst-Bloch-Str.: wird hier ein Verbindungsweg entstehen?	? 22963,12764 22971,12814
+# 
 #: ignore ^^^
 #: section ^^^
 # 
@@ -10583,9 +10600,7 @@ Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2) (ode
 (bei Altlüdersdorf): Qualität? westlich des Bahnübergangs anscheinend mäßiger Asphalt (Q1)	? -7200,71146 -6211,71583 -5320,71996
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 # REMOVED (Mapillary-Fotos existieren) --- #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet; bei osm gibt es diesen Weg nicht --- #: XXX: laut mapillary im Mittelabschnitt ein zweispuriger Betonplattenweg, Qualität unklar (könnte nicht ganz so schlecht sein) --- Börnicke - Wessow: Qualität?	? 26022,28779 26545,28648 26617,28624 26812,28833 30981,27380 31165,27230 31366,27367 31738,27620
-#: XXX: laut "Berliner Umland" ist der Abschnitt von Tempelfelde bis Abzweig Schönfeld mäßig geeignet (Autoverkehr?)
-#: XXX: laut osm: track, teilweise asphalt, teilweise concrete:lanes
-Tempelfelde - Beiersdorf: Qualität?	? 31420,34133 31827,33780 33310,33365 35441,32759
+# REMOVED (Mapillary-Fotos existieren) --- #: XXX: laut "Berliner Umland" ist der Abschnitt von Tempelfelde bis Abzweig Schönfeld mäßig geeignet (Autoverkehr?) --- #: XXX: laut osm: track, teilweise asphalt, teilweise concrete:lanes --- Tempelfelde - Beiersdorf: Qualität?	? 31420,34133 31626,33946 31827,33780 31867,33763 33020,33446 33310,33365 35226,32819 35272,32968 35441,32759
 #: XXX: laut "Berliner Umland" gut geeignet
 #: XXX: laut osm: track, concrete:lanes
 Schönfeld - Tempelfelde: Qualität?	? 32875,31143 32722,31273 33310,33365
