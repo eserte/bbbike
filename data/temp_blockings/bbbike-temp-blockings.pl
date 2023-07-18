@@ -28999,8 +28999,8 @@ EOF
        text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Konrad-Wolf-Str. gesperrt, Bauarbeiten, bis 12.06.2020',
        type  => 'handicap',
        data  => <<EOF,
-# REMOVED --- #: source_id: 2147343382
-#: source_id: 2147345803
+#: source_id[inactive]: 2147343382
+#: source_id[inactive]: 2147345803
 	q4::inwork; 16314,15223 16119,15302
 EOF
      },
@@ -29599,7 +29599,7 @@ EOF
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
 #: XXX teilweise existieren auch Einschränkungen beim Überqueren der Langhansstr., auch für Fußgänger (gesehen: 2021-02-17 an der Behaimstr.)
 #: also_indoor: traffic (H,G)
-# REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
+#: source_id[inactive]: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-10-12 vvv
@@ -34442,7 +34442,7 @@ EOF
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.471948,52.512205,09.12.2022,07:00 (bis 23.12.2022) (bis 31.01.2023) (inaktiv)
 #: source_id: viz2021:13.4693,52.511651,09.12.2022,07:00 (mittlerweile bis 31.1.2023) (inaktiv)
-# REMOVED --- #: source_id: bvg2021:m13#BVG313614_0
+#: source_id[inactive]: bvg2021:m13#BVG313614_0
 #: source_id: bvg2021:m13#BVG315165_0
 # REMOVED --- #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz --- #: XXX Aufnahme des Straßenbahnbetriebs für den 28.1.2023 geplant -- wie sieht die Führung für die übrigen Verkehrsteilnehmer aus? --- #: last_checked: 2023-01-24 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2023-01-28 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -34639,12 +34639,12 @@ EOF
 #: by: https://viz.berlin.de/2021/12/feiertage/
 #: by: https://viz.berlin.de/2022/12/verkehr-an-den-feiertagen-und-zum-jahreswechsel/
 #: by: https://viz.berlin.de/2022/12/verkehrsvorschau_24-261222/ (Aufbauarbeiten ab dem 26.12.2022)
-# REMOVED --- #: source_id: viz2021:13.369855,52.515768,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.37737,52.51457,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.351326,52.514425,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.36968,52.51571,26.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.377132,52.512991,31.12.2021,06:00
-# REMOVED --- #: source_id: viz2021:13.351095,52.514567,31.12.2021,06:00
+#: source_id[inactive]: viz2021:13.369855,52.515768,26.12.2021,06:00
+#: source_id[inactive]: viz2021:13.37737,52.51457,26.12.2021,06:00
+#: source_id[inactive]: viz2021:13.351326,52.514425,26.12.2021,06:00
+#: source_id[inactive]: viz2021:13.36968,52.51571,26.12.2021,06:00
+#: source_id[inactive]: viz2021:13.377132,52.512991,31.12.2021,06:00
+#: source_id[inactive]: viz2021:13.351095,52.514567,31.12.2021,06:00
 Pariser Platz	2::temp 8592,12252 8637,12258 8722,12268 8804,12280
 EOF
      },
@@ -36759,7 +36759,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
-# REMOVED --- #: source_id: bvg2021:396#BVG307357_0
+#: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id: bvg2021:396#BVG323890_0
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
@@ -36924,8 +36924,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ORANIENBURGERTORTRAM-2022
-# REMOVED --- #: source_id: bvg2021:142#BVG311081_0
-# REMOVED --- #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
+#: source_id[inactive]: bvg2021:142#BVG311081_0
+#: source_id[inactive]: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
@@ -36990,7 +36990,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
 #: by: https://www.berliner-woche.de/westend/c-bauen/bvg-baut-neue-bruecke_a362501
 #: by: https://berliner-abendblatt.de/berlin-news/u2-faehrt-ab-freitag-wieder-bis-ruhleben-id212852
-# REMOVED --- #: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
+#: source_id[inactive]: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
 #: add_fragezeichen: Wann wird der Durchgang für die Öffentlichkeit möglich sein?
 #: last_checked: 2023-05-29
 #: check_frequency: 120d
@@ -37245,7 +37245,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.493078,52.501052,24.10.2022,07:00',
        data  => <<EOF,
-# REMOVED (vorfristig entfernt) --- #: source_id: bvg2021:240#BVG310665_0
+#: source_id[inactive]: bvg2021:240#BVG310665_0 (vorfristig entfernt)
 # REMOVED (ja, etwas) --- #: add_fragezeichen: Sind Radfahrer auch betroffen? --- #: next_check: 2022-10-24
 	q3::inwork; 16468,10695 16537,10895
 EOF
@@ -38180,7 +38180,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1671189918050304000#m
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-bvg-gelbe-folie-gegen-stau-in-koepenick-kommt-die-bvg-jetzt-besser-durch-li.361499
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
-#: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
+#: source_id[inactive]: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023)
@@ -38482,14 +38482,14 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
-# REMOVED --- #: source_id: bvg2021:106#BVG312086_0 vvv
+#: source_id[inactive]: bvg2021:106#BVG312086_0 vvv
 #: last_checked: 2023-06-17 vvv
 # REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 # REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 # REMOVED (hier nicht (mehr?)) --- Leberstr.: Einbahnstraßenregelung	q4::inwork; 7563,8871 7574,8596
 Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
 #: last_checked ^^^
-# REMOVED --- #: source_id ^^^
+#: source_id[inactive] ^^^
 #: source_id ^^^
 #: also_indoor ^^^
 EOF
@@ -38877,7 +38877,7 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für eine Woche, dann 22.5.2023 für eine Woche)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1322778.php ("Rad- und Fußverkehr ist während dieser Zeit eingeschränkt", bis 9.6.2023)
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/bauarbeiten-im-kreuzungsbereich_a381253
-# REMOVED ---- #: source_id: bvg2021:108#BVG320247_0
+#: source_id[inactive]: bvg2021:108#BVG320247_0
 #: source_id: viz2021:13.504921,52.510749,15.05.2023,07:00 (bis 09.06.2023) (inaktiv)
 #: source_id: viz2021:13.505329,52.511112,15.05.2023,07:00 (bis 22.05.2023) (bis 09.06.2023) (inaktiv)
 	q4::inwork; 17251,11789 17306,11866

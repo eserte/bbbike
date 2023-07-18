@@ -605,7 +605,7 @@ Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg e
 ### Moabit ###
 # 
 #: next_check_id: TRAMTURM-2021
-# REMOVED --- #: source_id: bvg2021:m27#BVG305466_0
+#: source_id[inactive]: bvg2021:m27#BVG305466_0
 #: next_check: 2023-09-06 vvv
 #: check_frequency: 90d vvv
 #: last_checked: 2023-05-14 (osm) vvv
@@ -623,7 +623,7 @@ Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 # REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- #: osm_watch: way id="30195541" version="38" --- #: osm_watch: way id="1101061991" version="10" --- #: osm_watch: way id="310164489" version="30" --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023) (bis 6.9.2023)
 #: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023) (inaktiv)
-# REMOVED --- #: source_id: bvg2021:101#BVG301286_0
+#: source_id[inactive]: bvg2021:101#BVG301286_0
 #: osm_watch: way id="4571954" version="34"
 #: last_checked: 2023-07-02 (osm)
 #: check_frequency: 45d

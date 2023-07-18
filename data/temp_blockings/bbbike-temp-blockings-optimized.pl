@@ -4353,7 +4353,7 @@ Mellener Str./Lˆptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        undef,
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-# REMOVED --- #: source_id: bvg2021:396#BVG307357_0
+#: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id: bvg2021:396#BVG323890_0
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geˆffnet, Durchfahrt zumindest f¸r Radfahrer mˆglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg mˆglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
@@ -4444,8 +4444,8 @@ Br¸ckenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
-# REMOVED --- #: source_id: bvg2021:142#BVG311081_0
-# REMOVED --- #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verl‰ngert bis 30.1.2023)
+#: source_id[inactive]: bvg2021:142#BVG311081_0
+#: source_id[inactive]: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verl‰ngert bis 30.1.2023)
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich f¸r Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
@@ -4512,7 +4512,7 @@ Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9262,131
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
 #: by: https://www.berliner-woche.de/westend/c-bauen/bvg-baut-neue-bruecke_a362501
 #: by: https://berliner-abendblatt.de/berlin-news/u2-faehrt-ab-freitag-wieder-bis-ruhleben-id212852
-# REMOVED --- #: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
+#: source_id[inactive]: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
 #: add_fragezeichen: Wann wird der Durchgang f¸r die ÷ffentlichkeit mˆglich sein?
 #: last_checked: 2023-05-29
 #: check_frequency: 120d
@@ -5078,7 +5078,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: by: https://nitter.cz/VIZ_Berlin/status/1671189918050304000#m
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-bvg-gelbe-folie-gegen-stau-in-koepenick-kommt-die-bvg-jetzt-besser-durch-li.361499
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
-#: REMOVED --- #: source_id: bvg2021:x69#BVG317810_0
+#: source_id[inactive]: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023)
@@ -5209,14 +5209,14 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
 #: also_indoor: traffic (none) vvv
 #: source_id: bvg2021:106#BVG312090_0 vvv
-# REMOVED --- #: source_id: bvg2021:106#BVG312086_0 vvv
+#: source_id[inactive]: bvg2021:106#BVG312086_0 vvv
 #: last_checked: 2023-06-17 vvv
 # REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 # REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraﬂenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
 # REMOVED (hier nicht (mehr?)) --- Leberstr.: Einbahnstraﬂenregelung	q4::inwork; 7563,8871 7574,8596
 Leberstr.: Einbahnstraﬂenregelung	q3::inwork; 7574,8596 7578,8358
 #: last_checked ^^^
-# REMOVED --- #: source_id ^^^
+#: source_id[inactive] ^^^
 #: source_id ^^^
 #: also_indoor ^^^
 ',
