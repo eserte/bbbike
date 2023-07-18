@@ -417,7 +417,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-07-05 (mapillary) vvv
+#: last_checked: 2023-07-18 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -678,7 +678,7 @@ Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbere
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic (none)
 #: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt)
-#: last_checked: 2023-06-11
+#: last_checked: 2023-07-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -686,7 +686,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: last_checked: 2023-06-11
+#: last_checked: 2023-07-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -899,7 +899,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv)
 #: osm_watch: way id="1096203482" version="7"
 #: also_indoor: traffic (ex-H,B,ex-G,W)
-#: last_checked: 2023-07-01
+#: last_checked: 2023-07-18
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-28
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
@@ -907,10 +907,10 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-07-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7223,9815 7216,9657
+Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 #: osm_watch: way id="51196438" version="21"
 #: note: der Zweirichtungsradweg-Abschnitt ist etwa 100m lang
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
@@ -2175,6 +2175,8 @@ Viktoria-Luise-Platz: Fußgängerzone, Radfahren verboten	q4 6142,9934 6224,9980
 Viktoria-Luise-Platz: Fußgängerzone, Radfahrer frei	q1 6149,9897 6209,9885
 Viktoria-Luise-Platz: Fußgängerzone, Radfahrer frei	q1 6278,9925 6275,9962
 Luitpoldstr.: Schulhof	q3 6611,9879 6688,9897
+#: XXX_prog: BS (Bordstein am Wendehammer und zur Martin-Luther-Str., sonst q2 bis q3)
+Luitpoldstr.: Fußgänger, Bordsteine	q3 6463,9862 6504,9865
 Weg am Tempodrom: Fußgänger, eng, kurvig	q2 8853,10708 8798,10678 8738,10704 8698,10756
 Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
@@ -3212,7 +3214,8 @@ Ackerstr.: einige Fußgänger, Bordstein	q2 -3937,15299 -3869,15333
 Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12012
 (Sonnenallee - Aronsstr.): einige Fußgänger	q1 14530,7301 14558,7350 14571,7427
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fußgänger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
-(Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8201,9647 8192,9619
+(Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8213,9662 8201,9647 8192,9619
+(Hellweg-Parkplatz): Parkplatzverkehr	q2 8243,9766 8181,9707 8213,9662
 (Langensalzaer Str. - Gräfentaler Str.): Fußgänger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
 # REMOVED (existiert nicht mehr) --- #: XXX_prog Steigung -> eigentlich comments_mount --- Am Lokdepot: starke Steigung	q4; 8390,8879 8370,8775
 #: XXX_prog BS und wenn man Pech hat, ist der bordsteinlose Zugang zugeparkt, deshalb q3 (ansonsten q2)

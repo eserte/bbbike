@@ -2099,6 +2099,7 @@ Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 1
 # REMOVED (Fußgängerampel existiert) --- Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10431,12709 10515,12780 10525,12789
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10525,12789 10695,12933 10733,12967
 Martin-Luther-Str.: Mittelstreifen	3nocross 6492,9782 6447,9661 6445,9538
+Martin-Luther-Str.: Mittelstreifen	3nocross 6504,9961 6504,9865 6492,9782
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,16197 10982,16121
 #: XXX_prog: wobei die Fußgängerampel nur ca. 20 Meter weiter östlich entfernt ist, ggfs. aufnehmen, wenn handicaps für Fahrtrichtungen implementiert sind
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21789,4520
@@ -2870,7 +2871,7 @@ Barriere	BNP:2::trailer=8 13386,22378
 #: by: mapillary
 Barriere	BNP:2::trailer=8 13388,22386
 #: note ^^^
-Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
+# REMOVED (abgebaut, vielleicht dauerhaft?) --- Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
 #: note: etwas weiter als üblich
 Drängelgitter	BNP:2::trailer=8 4140,2706
 #: note: mittlerweile gut umfahrbar vvv
@@ -3577,6 +3578,12 @@ Drängelgitter	BNP:3::trailer=10 4067,22066
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: YORCKSTRBR5-2023
+#: last_checked: 2023-07-18
+#: check_frequency: 90d
+#: next_check: 2023-09-30
+Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
+# 
 #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=744224#post744224
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: last_checked: 2023-07-13
@@ -4080,7 +4087,7 @@ Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesper
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2023-06-04 vvv
+#: last_checked: 2023-07-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-10 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4320,7 +4327,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="3"
-#: last_checked: 2023-05-31
+#: last_checked: 2023-07-18
 #: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -5039,7 +5046,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-14
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-04-21
+#: last_checked: 2023-07-18
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

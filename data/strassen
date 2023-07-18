@@ -15975,7 +15975,7 @@ Stübbenstr.	N 5945,9235 5965,9131
 Stübbenstr.	NN 5965,9131 5974,9100
 Luitpoldstr.	N 6209,9833 6463,9862
 Luitpoldstr.	NN 6463,9862 6504,9865
-Luitpoldstr.	N 6504,9865 6611,9879
+Luitpoldstr.	N 6504,9865 6518,9867 6611,9879
 Luitpoldstr.	NN 6611,9879 6688,9897
 Luitpoldstr.	N 6688,9897 6747,9912 6912,9956
 Kalckreuthstr.	N 6636,10492 6628,10318 6626,10155
@@ -17778,7 +17778,10 @@ Wiedenbrücker Weg	N 4141,1282 4220,1175 4207,1113
 Soester Str.	N 4146,1128 4057,866 4003,831 3951,798
 Blücherstr. (Lichterfelde)	N 4271,1081 4155,794 4069,734 4018,699
 Boninstr. (Lichterfelde)	N 3945,1034 3892,999 3840,964
-(Hellweg-Parkplatz)	N 8243,9766 8242,9699 8201,9647 8192,9619
+#: osm.highway: service vvv
+(Hellweg-Parkplatz)	N 8243,9766 8242,9699 8213,9662 8201,9647 8192,9619
+(Hellweg-Parkplatz)	N 8243,9766 8181,9707 8213,9662
+#: osm.highway: ^^^
 (zur Yorckstraßenbrücke 11)	NN 8395,9538 8423,9529
 (zur Yorckstraßenbrücke 17)	NN 8423,9529 8453,9519
 (Yorckstraßenbrücke 17)	NN 8453,9519 8454,9528 8457,9556 8458,9566
@@ -18389,3 +18392,5 @@ Tempelhofer Damm: linker Gehweg	NN::igndisp 9245,6352 9237,6413
 Tempelhofer Damm: linker Gehweg	NN::igndisp 9242,6482 9254,6542
 Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	NN::igndisp 15420,12178 15435,12226
 Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	NN::igndisp 9193,13942 9148,13944
+Martin-Luther-Str.: linker Gehweg	NN::igndisp 6504,9961 6518,9867
+Martin-Luther-Str.: linker Gehweg	NN::igndisp 6518,9867 6492,9782

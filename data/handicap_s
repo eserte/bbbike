@@ -45,7 +45,7 @@ Eisenacher Str.: Radfahrer teilen sich mit Fuﬂg‰ngern den B¸rgersteig, Umwege	q2
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung S¸den	q3::inwork; 19181,13485 19198,13272 19180,13219
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
-Elﬂholzstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 7223,9815 7216,9657
+Elﬂholzstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen B¸rgersteig	q2::inwork; 7122,9517 7126,9825
 Moltkestraﬂenbr¸cke: f¸r Fuﬂg‰nger existiert eine Behelfsbr¸cke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
@@ -747,6 +747,7 @@ Viktoria-Luise-Platz: Fuﬂg‰ngerzone, Radfahren verboten	q4 6142,9934 6224,9980
 Viktoria-Luise-Platz: Fuﬂg‰ngerzone, Radfahrer frei	q1 6149,9897 6209,9885
 Viktoria-Luise-Platz: Fuﬂg‰ngerzone, Radfahrer frei	q1 6278,9925 6275,9962
 Luitpoldstr.: Schulhof	q3 6611,9879 6688,9897
+Luitpoldstr.: Fuﬂg‰nger, Bordsteine	q3 6463,9862 6504,9865
 Weg am Tempodrom: Fuﬂg‰nger, eng, kurvig	q2 8853,10708 8798,10678 8738,10704 8698,10756
 Kienheideweg: Fuﬂg‰nger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fuﬂg‰nger	q1 13331,5640 13414,5655
@@ -1510,7 +1511,8 @@ Ackerstr.: einige Fuﬂg‰nger, Bordstein	q2 -3937,15299 -3869,15333
 Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12012
 (Sonnenallee - Aronsstr.): einige Fuﬂg‰nger	q1 14530,7301 14558,7350 14571,7427
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fuﬂg‰nger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
-(Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8201,9647 8192,9619
+(Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8213,9662 8201,9647 8192,9619
+(Hellweg-Parkplatz): Parkplatzverkehr	q2 8243,9766 8181,9707 8213,9662
 (Langensalzaer Str. - Gr‰fentaler Str.): Fuﬂg‰nger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
 L¸bbener Str.: Fuﬂg‰nger	q3 12729,10515 12731,10547
 (Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3 15102,20723 15119,20655 15226,20587
@@ -3460,3 +3462,5 @@ Tempelhofer Damm: linker Gehweg	q4::igndisp; 9245,6352 9237,6413
 Tempelhofer Damm: linker Gehweg	q4::igndisp; 9242,6482 9254,6542
 Mˆllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	q3::igndisp; 15420,12178 15435,12226
 Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	q3::igndisp; 9193,13942 9148,13944
+Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6504,9961 6518,9867
+Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6518,9867 6492,9782

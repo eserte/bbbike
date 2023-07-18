@@ -1746,6 +1746,8 @@ Verbundsteinpflaster	RW1; 5328,13019 5166,13087
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzallee wird der bestehende Zweirichtungsradweg saniert und ausgebaut) (teilweise ist das schon passiert)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Sperrung Gallwitzallee ab 10.7.2023)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Sperrung Gallwitzallee ab 31.7.2023, nur Kfz-Verkehr)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/fahrbahninstandsetzung-gallwitzallee-umleitungsplan.pdf
 #: source_id: 2147344664 (bis Ende Oktober 2019) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeiten bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,20.12.2022,12:03 (bis 30.06.2023) (inaktiv)
@@ -1753,12 +1755,12 @@ Verbundsteinpflaster	RW1; 5328,13019 5166,13087
 #: osm_watch: way id="85468589" version="21"
 #: osm_watch: way id="458915639" version="5"
 #: last_checked: 2023-07-01 vvv
-#: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2023-02-24 vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: next_check: 2023-11-30 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
 alter holpriger Verbundsteinpflasterradweg	RW2;RW8 6643,3070 6638,3138 6640,3192 6712,3237
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
 neu asphaltiert, allerdings bilden sich schon die ersten Wellen	RW1;RW9 6718,2443 6711,2496 6679,2701
@@ -1909,19 +1911,16 @@ Busspur ist immer gültig	RW5; 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 # REMOVED (stimmt nicht) --- #: XXX Busspur vermutlich temporär aufgehoben ("Fahrbahn auf zwei Fahrstreifen verengt ... bis Ende 12/2017", laut fritz bis 17.11.2017) --- #: source_id: 2147341902 --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 5459,11135 5258,11285
 #: historical_note: früher Mo-Fr 7-19 Uhr vvv
-Busspur ist immer gültig	RW5; 5459,11135 5258,11285
-Busspur ist immer gültig	RW5; 5153,11357 5258,11285 5459,11135
+#: note: ein paar Meter vor der Fasanenstr. verengt sich die Busspur auf die alte Breite
+breite Busspur ist immer gültig	RW5; 5459,11135 5258,11285
+breite Busspur ist immer gültig	RW5; 5258,11285 5153,11357 5085,11413
 breite Busspur ist immer gültig	RW5; 5085,11413 5080,11417 4922,11600 4900,11626
-Busspur ist immer gültig	RW5; 4900,11626 4838,11697
-Busspur ist immer gültig	RW5; 4900,11626 4922,11600 5080,11417 5085,11413 5153,11357
+breite Busspur ist immer gültig	RW5; 4900,11626 4838,11697 4900,11626 4922,11600 5080,11417 5085,11413 5153,11357
+#: note: ein paar Meter vor der Fasanenstr. verengt sich die Busspur auf die alte Breite
+breite Busspur ist immer gültig	RW5; 5153,11357 5258,11285
+breite Busspur ist immer gültig	RW5; 5258,11285 5459,11135
 #: historical_note ^^^
 # REMOVED --- #: XXX Busspur wegen Bauarbeiten größtenteils aufgehoben (bis auf ein paar Meter am Steinplatz) --- #: XXX früher:  --- #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017, laut fritz bis 22.12.2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29825 --- #: source_id: 2147339533 --- #: source_id: 2147342120 --- #: last_checked: 2017-10-08 --- #: next_check: 2017-12-20
-#: XXX Ist die Busspur hier auch immer gültig oder wird sie es nach den Bauarbeiten sein?
-#: last_checked: 2023-06-11
-Busspur gilt Mo-Fr 7-19 Uhr	RW5; 5258,11285 5153,11357 5085,11413
-#: XXX Ist die Busspur hier auch immer gültig?
-#: last_checked: 2023-03-26 (mapillary)
-Busspur gilt Mo-Fr 7-19 Uhr	RW5; 4838,11697 4900,11626
 # 
 #: note: Unter den Linden, Schloßplatz, Karl-Liebknecht-Str. Richtung Osten
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1123035.php (Oktober 2021 - Sommer 2022)
@@ -1935,7 +1934,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 4838,11697 4900,11626
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-07-05 (mapillary) vvv
+#: last_checked: 2023-07-18 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1962,7 +1961,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-07-05 (mapillary) vvv
+#: last_checked: 2023-07-18 vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -2249,7 +2248,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
 #: source_id: 2147345461 (bis 30.09.2021)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: also_indoor: traffic (B[minor])
-#: last_checked: 2023-04-21
+#: last_checked: 2023-07-18
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
 #	RW3; 5764,10322 5808,10396
@@ -2782,7 +2781,7 @@ Fahrradschleuse	RW4; 11221,12250 11300,12241 11347,12223
 # REMOVED ---	RW4; 10736,12285 10772,12288
 	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3;RW3 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463 11924,13529 11893,13547
-	RW3; 11893,13547 11842,13576
+	RW3; 11893,13547 11842,13576 11819,13593
 	RW4;RW4 11819,13593 11785,13625
 # 
 # REMOVED --- #: next_check_id: POPUPRADWEGE-2020 --- #: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019446.php (Verstetigung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/aus-temporaer-wird-dauerhaft_a293917 --- #: by: https://twitter.com/VIZ_Berlin/status/1329434716882268162 --- #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/ (früherer Eintrag) --- #: by: https://www.infravelo.de/projekt/lichtenberger-strasse-4/ (bis 3. Quartal 2021) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021) --- #: source_id: 2147346610 --- #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021) --- #: XXX Benutzungspflicht prüfen vvv --- #: last_checked: 2021-08-12 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-08-17 vvv --- # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464 --- #: osm_watch: way id="284761029" version="18"
@@ -8152,6 +8151,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.384974,52.44972,22.05.2023,07:00 (Leitungsbaustelle bis 26.05.2023) (inaktiv)
 #: source_id: viz2021:13.38486,52.4502,22.05.2023,07:00 (bis 26.05.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
+#: source_id: viz2021:13.385498,52.446998,19.07.2023,07:00 (bis 24.07.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-07-09 (mapillary) vvv

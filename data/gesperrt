@@ -1753,6 +1753,13 @@ Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6348,9541 6447,96
 Speyerer Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6348,9541 6447,9661 6542,9606
 Traunsteiner Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6542,9606 6447,9661 6445,9538
 Traunsteiner Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6542,9606 6447,9661 6348,9541
+Mittelstreifen	3nocross::ignrte 6504,9961 6504,9865 6492,9782
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6504,9961 6504,9865 6518,9867
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6492,9782 6504,9865 6463,9862
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6463,9862 6504,9865 6504,9961
+Luitpoldstr. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6463,9862 6504,9865 6518,9867
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6518,9867 6504,9865 6492,9782
+Luitpoldstr. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6518,9867 6504,9865 6463,9862
 U-Bahnviadukt und Straßenbahn	3nocross::ignrte 10997,16280 10989,16197 10982,16121
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10989,16197 10982,16121
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10989,16197 11253,16118
@@ -2833,7 +2840,6 @@ Schranke	BNP:2:62:trailer=5 8757,9748
 Barriere	BNP:2:-85:trailer=8 13148,22396
 Barriere	BNP:2:-113:trailer=8 13386,22378
 Barriere	BNP:2:-82:trailer=8 13388,22386
-Schranke, gut umfahrbar	BNP:0:-160:trailer=3 8243,9766
 Drängelgitter	BNP:2:-51:trailer=8 4140,2706
 Drängelgitter	BNP:2:-76:trailer=6 7886,8335
 Drängelgitter	BNP:2:-75:trailer=6 7911,8329
@@ -3322,6 +3328,7 @@ weites Drängelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
+Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße eröffnet?	2::inwork 20922,18613 20910,18719
 Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
@@ -4008,3 +4015,5 @@ Tempelhofer Damm: linker Gehweg	1::igndisp 9237,6413 9245,6352
 Tempelhofer Damm: linker Gehweg	1::igndisp 9254,6542 9242,6482
 Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	1::igndisp 15435,12226 15420,12178
 Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	1::igndisp 9148,13944 9193,13942
+Martin-Luther-Str.: linker Gehweg	1::igndisp 6518,9867 6504,9961
+Martin-Luther-Str.: linker Gehweg	1::igndisp 6492,9782 6518,9867

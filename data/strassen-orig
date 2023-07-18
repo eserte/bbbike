@@ -18313,7 +18313,7 @@ Stübbenstr.	N 5945,9235 5965,9131
 Stübbenstr.	NN 5965,9131 5974,9100
 Luitpoldstr.	N 6209,9833 6463,9862
 Luitpoldstr.	NN 6463,9862 6504,9865
-Luitpoldstr.	N 6504,9865 6611,9879
+Luitpoldstr.	N 6504,9865 6518,9867 6611,9879
 Luitpoldstr.	NN 6611,9879 6688,9897
 Luitpoldstr.	N 6688,9897 6747,9912 6912,9956
 #: carriageway_width: 17m
@@ -20301,7 +20301,10 @@ Wiedenbrücker Weg	N 4141,1282 4220,1175 4207,1113
 Soester Str.	N 4146,1128 4057,866 4003,831 3951,798
 Blücherstr. (Lichterfelde)	N 4271,1081 4155,794 4069,734 4018,699
 Boninstr. (Lichterfelde)	N 3945,1034 3892,999 3840,964
-(Hellweg-Parkplatz)	N 8243,9766 8242,9699 8201,9647 8192,9619
+#: osm.highway: service
+(Hellweg-Parkplatz)	N 8243,9766 8242,9699 8213,9662 8201,9647 8192,9619
+#: osm.highway: service
+(Hellweg-Parkplatz)	N 8243,9766 8181,9707 8213,9662
 (zur Yorckstraßenbrücke 11)	NN 8395,9538 8423,9529
 (zur Yorckstraßenbrücke 17)	NN 8423,9529 8453,9519
 (Yorckstraßenbrücke 17)	NN 8453,9519 8454,9528 8457,9556 8458,9566
@@ -20387,7 +20390,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2023-06-04
+#: last_checked: 2023-07-18
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

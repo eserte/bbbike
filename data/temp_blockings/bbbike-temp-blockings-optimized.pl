@@ -2151,53 +2151,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Sprengplatz Grunewald
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
-#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
-#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
-#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
-#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
-#: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
-#: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
-#: source_id: 2147341022 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15 (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023) (inaktiv)
-#: source_id: viz2021:13.196408,52.438127,18.07.2023,09:45 (bis 18.07.2023)
-# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
-	2::bomb -2218,5133 -927,6888
-	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
-	2::bomb -1934,6804 -1854,6898
-',
-         'from' => 1689544800,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Juli 2023 zwischen 09:15 und 10:45 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1689669900
-       },
+       undef,
        undef,
        {
          'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
@@ -2497,7 +2451,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://nitter.cz/VIZ_Berlin/status/1573281027723665409#m
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
-#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -2506,7 +2460,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-08-21 vvv
+#: next_check: 2023-11-24 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -2525,9 +2479,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => undef,
          'id' => 3007,
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis August 2023; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis November 2023; außerdem Einbahnstraßenregelung in der Andernacher Str.',
          'type' => 'handicap',
-         'until' => 1692633600
+         'until' => 1700845200
        },
        undef,
        undef,
@@ -3808,7 +3762,21 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
+#: also_indoor: traffic (none)
+#: last_checked: 2022-10-15
+#: check_frequency: 90d
+#: next_check: 2023-07-31
+	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
+',
+         'from' => 1690668000,
+         'id' => 3509,
+         'source_id' => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
+         'text' => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich vom 31.07.2023 bis 30.11.2023',
+         'type' => 'handicap',
+         'until' => 1701363600
+       },
        undef,
        undef,
        {
@@ -4215,7 +4183,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -4227,9 +4195,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1660582743,
          'id' => 3605,
          'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
-         'text' => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 21.7.2023',
+         'text' => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 22.8.2023',
          'type' => 'handicap',
-         'until' => 1689951600
+         'until' => 1692716400
        },
        undef,
        undef,
@@ -4656,6 +4624,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/strassenbau-geht-weiter_a376430
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/bauarbeiten-gehen-weiter-erneute-vollsperrung-in-lankwitz-id216990
 #: by: https://viz.berlin.de/2023/04/eiswaldtstr/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Erwähnung)
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
@@ -4767,7 +4736,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-04-21
+#: last_checked: 2023-07-18
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -5365,15 +5334,15 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1653626689128402944#m (Gesamtdauer bis voraussichtlich 12/2023)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
-#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023)vvv
-#: source_id: bvg2021:x69#BVG319326_0 vvv
+#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) vvv
+#: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
-#: next_check: 2023-08-21 vvv
+#: next_check: 2023-07-17 vvv
 Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
 #: XXX ^^^
-#: source_id ^^^
+#: source_id[inactive] ^^^
 #: source_id ^^^
 ',
          'from' => 1683064800,
