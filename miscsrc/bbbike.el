@@ -854,14 +854,15 @@
   ;; recognize "#: source_id" bvg directives in bbd files
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]bvg2021:\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]\\(bvg2021\\):\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
       (let* ((is-inactive (if (match-beginning 1) t nil))
 	     (button-type (if is-inactive 'bbbike-inactive-bvg-button 'bbbike-bvg-button))
-	     (bvg-line-begin-pos (match-beginning 2))
-	     (bvg-line-end-pos (match-end 2))
-	     (link-end-pos (match-end 3))
+	     (link-begin-pos (match-beginning 2))
+	     (bvg-line-begin-pos (match-beginning 3))
+	     (bvg-line-end-pos (match-end 3))
+	     (link-end-pos (match-end 4))
 	     (bvg-line (buffer-substring bvg-line-begin-pos bvg-line-end-pos)))
-	(make-button bvg-line-begin-pos link-end-pos
+	(make-button link-begin-pos link-end-pos
 		     :type button-type
 		     :bvgline bvg-line
 		     ))))
@@ -887,7 +888,7 @@
   ;; recognize "#: also_indoor: traffic" directives
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(also_indoor:?[ ]*traffic.*\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*also_indoor:?[ ]*\\(traffic.*\\)" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-traffic-button
 		   ;: very expensive, use only for debugging --- bbbikepos (bbbike--bbd-find-next-coordinate (format "traffic at line %s" (line-number-at-pos (match-beginning 1))))
