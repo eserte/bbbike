@@ -15,7 +15,7 @@ package VMZTool;
 
 use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -454,11 +454,15 @@ sub parse_biber {
 	    # "LS/721-F/18/087" instead of "LS_721-F_18_087"
 	    $id = $element->{messageId};
 	} elsif ($element->{id}) {
-	    ($id = $element->{id}) =~ s{\@Concert$}{};
+	    $id = $element->{id};
 	} else {
 	    warn "No id or messageId available, skipping element...";
 	    next;
 	}
+
+	$id =~ s{\@Concert$}{};
+	$id =~ s{\@VMS$}{};
+	$id =~ s{\@Landesbetrieb.*}{};
 
 	my $place;
 	if ($element->{roadSections}) {
