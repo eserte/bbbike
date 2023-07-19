@@ -2101,7 +2101,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-07-15 vvv
+#: last_checked: 2023-07-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -7683,7 +7683,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="33"
+#: osm_watch: way id="26708088" version="34"
 #: last_checked: 2023-07-15 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
@@ -7692,7 +7692,7 @@ provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 # REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="12"
+#: osm_watch: way id="671329664" version="13"
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17962,6674
 	RW0; 17991,6431 17962,6674
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17962,6674 17945,6788 17919,6968
@@ -8138,6 +8138,9 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://berliner-abendblatt.de/2023/01/17/mariendorf-baustart-fuer-radfahrstreifen/
 #: by: https://viz.berlin.de/2023/01/mariendorfer-damm-radverkehrsanlagen/
 #: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/bauarbeiten-auf-dem-mariendorfer-damm-wird-es-eng-id205831
+#: by: https://nitter.net/VIZ_Berlin/status/1681519229873410049#m
+#: by: https://nitter.net/pic/orig/media%2FF1UU2_9WwAEiVXB.jpg
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1347486.php (Fortsetzung der Baumaßnahme, "bis zum Ende des Jahres" (2023))
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
@@ -8156,7 +8159,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: priority: #A vvv
 #: last_checked: 2023-07-09 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-09-30 vvv
+#: next_check: 2023-12-31 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 #: osm_watch: way id="111048866" version="15"

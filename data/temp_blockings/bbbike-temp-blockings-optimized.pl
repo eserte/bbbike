@@ -2198,7 +2198,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147341611 (inaktiv)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Groﬂer Zapfenstreich 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschr‰nkung)
+#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Groﬂer Zapfenstreich 2021, neuer Termin)
+#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erw‰hnung des Groﬂes Zapfenstreichs)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Groﬂer Zapfenstreich f¸r Merkel)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_28_1693_1828_online.pdf (feierliches Gelˆbnis 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (feierliches Gelˆbnis 2022)
+Hildebrandstr.	2::temp 7435,11514 7322,11177
+Stauffenbergstr.	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
+Reichpietschufer	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
+L¸tzowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
+Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
+# REMOVED --- Hiroshimastr.	2::temp 7253,11208 7356,11517
+# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7233,11189 7160,11186 7135,11171
+# REMOVED ---	2::temp 7665,11353 7745,11332
+# REMOVED ---	2::temp 7745,11332 7690,11108
+# REMOVED --- Herkulesufer	2::temp 7595,11086 7575,11076 7252,11188
+',
+         'from' => 1689717600,
+         'id' => 2875,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
+         'text' => 'Straﬂen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straﬂensperrungen wegen einer Veranstaltung mˆglich, 20. Juli 2023 von 13:00 bis 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1689876000
+       },
        undef,
        undef,
        undef,
@@ -2901,7 +2932,7 @@ auﬂerhalb der Arbeitszeiten Zugang mˆglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-07-16
+#: last_checked: 2023-07-19
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2971,11 +3002,11 @@ auﬂerhalb der Arbeitszeiten Zugang mˆglich, Rampe ist aber noch enger als sonst	
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaﬂnahme bis Ende 2021) (inaktiv)
 #: source_id: 2147347233 (bis 23.12.2021) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022) (inaktiv)
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)  (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: fr¸her auch "auﬂerdem Lipaer Str. zwischen Neuchateller Str. und Gardesch¸tzenweg gesperrt"
@@ -2993,6 +3024,7 @@ auﬂerhalb der Arbeitszeiten Zugang mˆglich, Rampe ist aber noch enger als sonst	
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
+zwischen Moltkestr. und Tietzenweg	q4::inwork; 3934,4441 3643,4232
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -3667,13 +3699,15 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Ringstraﬂe und Baseler Straﬂe beendet? vvv
+# 
+#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum f¸r die Gesamtbaumaﬂnahme mehr) (inaktiv) vvv
 #: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,21.12.2022,14:37 (bis 31.03.2023) (inaktiv)
 #: source_id: bvg2021:188#BVG296003_0
-#: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023)
+#: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,30.03.2023,12:14 (Baseler Str., bis 31.05.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaﬂnahme bis Ende 2022, Sperrung an der Drakestr. mˆglicherweise nur bis Ende M‰rz 2022, hier nur f¸r den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tats‰chlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
@@ -3701,20 +3735,22 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (bis 31.05.2023) (bis 19.07.2023)
+#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (bis 31.05.2023) (bis 19.07.2023) (inaktiv)
 #: last_checked: 2022-09-04
 #: next_check: 2023-07-19
 ˆstlich Drakestr.	q4::inwork 3558,3688 3507,3654
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
 #: source_id ^^^
+# 
+#: add_fragezeichen ^^^
 ',
          'from' => 1614492000,
          'id' => 3502,
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
-         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 31. Mai 2023',
+         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei',
          'type' => 'handicap',
-         'until' => 1689742800
+         'until' => undef
        },
        undef,
        {
@@ -4327,7 +4363,7 @@ Mellener Str./Lˆptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geˆffnet, Durchfahrt zumindest f¸r Radfahrer mˆglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg mˆglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 #: also_indoor: traffic (none)
 #: note: Halteverbot bis 24.7.2023 17h
-#: last_checked: 2023-07-11
+#: last_checked: 2023-07-19
 #: check_frequency: 14d
 #: next_check: 2023-07-24
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
@@ -4337,7 +4373,7 @@ Mellener Str./Lˆptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'id' => 3630,
          'text' => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 24.07.2023, vielleicht auch l‰nger',
          'type' => 'handicap',
-         'until' => 1690210800
+         'until' => undef
        },
        undef,
        undef,
@@ -4520,7 +4556,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -4528,9 +4564,9 @@ Einbahnstraﬂenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 ',
          'from' => 1665385200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg f¸r Radfahrer frei, Einbahnstraﬂenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 21.07.2023 17:00',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg f¸r Radfahrer frei, Einbahnstraﬂenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 25.08.2023 17:00',
          'type' => 'handicap',
-         'until' => 1689951600
+         'until' => 1692975600
        },
        undef,
        undef,
@@ -4749,6 +4785,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        undef,
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
+#: note: auf den Mapillary-Bildern vom 14.7.2023 sind zwar Absperrungen zu sehen, die aber weggeschoben sind --- vielleicht kann man auﬂerhalb der Arbeitszeiten noch langfahren?
 #: last_checked: 2023-05-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-06-30
@@ -4757,7 +4794,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'from' => 1669762800,
          'id' => 3694,
          'source_id' => 'https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/',
-         'text' => 'Pˆlnitzwiesen: Neubau der Pankebr¸cke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024 (Stand Mai 2023: noch keine Sperrung)',
+         'text' => 'Pˆlnitzwiesen: Neubau der Pankebr¸cke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024 (Stand Juli 2023: mˆgliche Sperrungen)',
          'type' => 'gesperrt',
          'until' => 1719784799
        },
@@ -4855,22 +4892,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED --- nˆrdlicher Abschnitt	q4::inwork 5350,12906 5341,12875 5376,12781
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G[falsch]) --- #: last_checked: 2023-03-19 (osm)
-# REMOVED --- #: osm_watch: way id="169659243" version="23" --- mittlerer Abschnitt	q4::inwork 5376,12781 5376,12661
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="1155654228" version="8"
-#: last_checked: 2023-06-22 (osm note)
-s¸dlicher Abschnitt	q4::inwork 5376,12661 5354,12552
-',
-         'from' => undef,
-         'id' => 3708,
-         'source_id' => 'https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=733154#post733154',
-         'text' => 'Wikingerufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
@@ -4970,21 +4992,23 @@ Sperrung beginnt ab CafÈ Liebig	q2::inwork 22766,1226 22655,1450
        {
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 f¸r voraussichtlich zwei Monate)
-#: last_checked: 2023-06-17 vvv
-#: next_check: 2023-07-25 vvv
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 f¸r voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraﬂe)
+#: last_checked: 2023-07-19 (Pressemitteilung) vvv
+#: next_check: 2023-10-23 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
-	2::inwork 5730,8207 5700,8241
+# REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
-	q4::inwork 5730,8207 5918,8221
+# REMOVED (hier vermutlich fertig) ---	q4::inwork 5730,8207 5918,8221
+	2::inwork 5438,8402 5611,8252
 #: next_check ^^^
 #: last_checked ^^^
 ',
-         'from' => 1676329200,
+         'from' => 1690063200,
          'id' => 3725,
          'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
-         'text' => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen (Stand Mitte Juni 2023), voraussichtlich bis Ende Juli 2023',
+         'text' => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen sind mˆglich, voraussichtlich bis Ende Oktober 2023',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1698771600
        },
        {
          'data' => '#: source_id: viz2021:13.53054,52.42388,15.02.2023,09:00 (bis 14.08.2023) (inaktiv)
@@ -5197,7 +5221,7 @@ Leberstr.: Einbahnstraﬂenregelung	q3::inwork; 7574,8596 7578,8358
        },
        {
          'data' => '#: note: neue Halteverbotsschilder bis 4.8.2023
-#: last_checked: 2023-07-15 vvv
+#: last_checked: 2023-07-19 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-08-04 vvv
 # REMOVED (ja, bereits eingetragen) --- #: XXX mˆglicherweise Asphaltierung?
@@ -5550,7 +5574,8 @@ hier nur der Kreuzungsbereich Dinkelsb¸hler Str./Edelhofdamm gesperrt	q3::inwork
        undef,
        undef,
        {
-         'data' => 'Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
+         'data' => '#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024)
+Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg ¸ber Gehweg
 Jean-JaurËs-Str.	q2::inwork 4812,21737 4655,21939
 #: note: Schranke mit wenig Platz, oder Umweg ¸ber Gehweg
@@ -5559,10 +5584,9 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 ',
          'from' => 1673247600,
          'id' => 3809,
-         'source_id' => 'viz2021:13.325275,52.602903,10.01.2023,08:00',
-         'text' => 'Hermsdorfer Str.: Bauarbeiten zwischen Avenue Charles de Gaulle und Oranienburger Str., Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei, auﬂerdem Sperrungen im Kreuzungsbereich Jean-JaurËs-Str./Cyclopstr., vom 10.01.2023 08:00 bis 24.07.2023 17:00',
+         'text' => 'Hermsdorfer Str.: Bauarbeiten zwischen Avenue Charles de Gaulle und Oranienburger Str., Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei, auﬂerdem Sperrungen im Kreuzungsbereich Jean-JaurËs-Str./Cyclopstr., vom 10.01.2023 08:00 bis 29.03.2024 17:00',
          'type' => 'handicap',
-         'until' => 1690210800
+         'until' => 1711728000
        },
        {
          'data' => '#: next_check_id: TEMPELHOFERWEG-2023
@@ -5593,7 +5617,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: XXX Wann sind die Straﬂen offen? vvv
-#: last_checked: 2023-07-04 vvv
+#: last_checked: 2023-07-19 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682

@@ -990,6 +990,9 @@ Schwimmerweg: Privatweg, Tor der Einfahrt	2 -3584,11177 -3642,11216 -3673,11216
 Rudererweg: Privatweg, Tor der Einfahrt	2 -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Privatweg	2 -3689,11291 -3679,11248 -3673,11216
 Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
+#: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet?
+#: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild
+#: last_checked: 2023-07-15
 Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
@@ -3529,8 +3532,8 @@ Schranke	BNP:1::trailer=3 1201,15804
 Drängelgitter	BNP:3::trailer=10 32616,-23392
 #: note: kann offen sein, eine kurvige sowie eine gerade+enge Umfahrungsmöglichkeit existieren
 Schranke	BNP:2::trailer=8 17837,12277
-#: note: kann offen sein, eine gerade Umfahrungsmöglichkeit existiert
-Schranke	BNP:0::trailer=2 18037,12362
+#: note: kann offen sein, eine kurvige sowie eine gerade+enge Umfahrungsmöglichkeit existieren
+Schranke	BNP:2::trailer=8 18037,12362
 Schranke	BNP:1::trailer=5 20813,-941
 Drängelgitter	BNP:3::trailer=10 18414,1380
 Drängelgitter	BNP:3::trailer=10 18232,1669
@@ -3658,7 +3661,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: last_checked: 2023-06-17 (mapillary)
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
-#: last_checked: 2023-06-26 (mapillary)
+#: last_checked: 2023-07-14 (mapillary)
 #: check_frequency: 90d
 Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # 
@@ -3678,7 +3681,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
 #: XXX Hat die Sperrung etwas mit den Bahnbrücken zu tun?
 #: priority: #C
-#: last_checked: 2023-07-11
+#: last_checked: 2023-07-19
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
 #: XXX Bauarbeiten am Kanzlerpark
@@ -3755,7 +3758,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-07-16
+#: last_checked: 2023-07-19
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3845,6 +3848,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: source_id[inactive]: bvg2021:369#BVG310521_0
 #: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024)
+#: source_id: viz2021:13.704581,52.402425,19.07.2023,17:30 (bis 20.07.2023)
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
 # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
@@ -3981,7 +3985,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2023-07-16 (mapillary) vvv
+#: last_checked: 2023-07-19 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 #: osm_watch: way id="1061057020" version="8"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
@@ -4024,7 +4028,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-19
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 

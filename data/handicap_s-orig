@@ -232,10 +232,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="26"
+#: osm_watch: way id="549316654" version="27"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2023-07-02 (osm)
+#: last_checked: 2023-07-18 (osm)
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -792,6 +792,11 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (none)
+#: last_checked: 2023-07-19
+Margaretenstr.: Fahrbahn zwischen Metastr. und Heinrichstr. gesperrt	q3::inwork 17006,11391 16948,11409
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
 # 
@@ -1799,7 +1804,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2023-05-02 (mapillary)
+#: last_checked: 2023-07-19
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
