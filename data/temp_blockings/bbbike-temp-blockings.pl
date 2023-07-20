@@ -5503,7 +5503,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
-	1::inwork 11329,12497 11202,12426 11088,12382 11084,12395 11065,12452 10982,12597 10951,12637
+	1::inwork 11329,12497 11202,12426 11088,12382 11084,12395 11065,12452 10973,12611 10951,12637
 	1::inwork 10951,12637 11057,12715 11105,12764 11141,12806
 EOF
      },
@@ -26220,7 +26220,7 @@ EOF
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
 # REMOVED --- #: last_checked: 2018-06-07 vvv
 # REMOVED --- #: check_frequency: 1d vvv
-	q4::inwork 10951,12637 10982,12597 11065,12452
+	q4::inwork 10951,12637 10973,12611 11065,12452
 	q4::inwork 11065,12452 11084,12395 11088,12382
 	q4::inwork 11139,12243 11088,12382
 	2::inwork 11033,12439 11065,12452
@@ -31727,8 +31727,8 @@ EOF
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)  (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)  (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023)
 #: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -31740,10 +31740,10 @@ EOF
 # REMOVED (doppelt) ---	q4::inwork; 4039,4500 3934,4441
 # REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
+# REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
 #: next_check: 2023-11-30 vvv
-	q4::inwork; 3643,4232 3523,4139
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -35536,7 +35536,7 @@ EOF
 EOF
      },
      { from  => 1652122429, # 2022-05-09 20:53
-       until => 1706716800, # 2024-01-31 17:00
+       until => 1689878456, # 1706716800, # 2024-01-31 17:00
        text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023', #
        type  => 'gesperrt',
        source_id => 'viz2021:13.492858,52.63663,09.05.2022,11:58', # inaktiv
@@ -35556,8 +35556,9 @@ EOF
 #: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023) (inaktiv)
 #: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023)
-# REMOVED --- #: next_check: 2023-06-16
-#: next_check: 2024-01-31
+#: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024)
+# REMOVED --- #: last_checked: 2023-07-17 (mapillary, Durchfahrt möglich)
+# REMOVED --- #: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
 #	2::inwork 16166,25767 16121,25818
 EOF
@@ -36003,7 +36004,7 @@ EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
        until => undef, # 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine und Umwege, Ende der Bauarbeiten unbekannt', # war: vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
@@ -36015,13 +36016,13 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-ende-mai-soll-der-4-bauabschnitt-fertig-sein_a378280 (bis Ende Mai 2023)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-02 vvv
+#: last_checked: 2023-07-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-05-31 vvv
 #: osm_watch: way id="1043813287" version="2"
 #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
-	q4::inwork 13996,16959 13974,16924 13870,16837
+	q4::inwork 13996,16959 13974,16924 13870,16837 13794,16773
 # REMOVED (fertig) ---	q3::inwork 13996,16959 14136,17170
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -36105,6 +36106,9 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1680938171305951232#m
 #: by: https://viz.berlin.de/2023/07/csd-berlin/
 #: source_id: viz2021:13.369347,52.515752,21.07.2022,12:30 (inaktiv)
+#: source_id: viz2021:13.376805,52.516213,20.07.2023,08:00 (bis 23.07.2023)
+#: source_id: viz2021:13.364259,52.515422,20.07.2023,08:00 (bis 23.07.2023)
+#: source_id: viz2021:13.370204,52.516676,20.07.2023,08:00 (bis 23.07.2023)
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	3 8119,12414 8055,12186 8049,12140
@@ -36121,6 +36125,7 @@ EOF
 	3 8522,12187 8538,12245 8522,12239
 	3 8522,12239 8538,12245 8592,12252
 	3 8522,12239 8538,12245 8522,12187
+Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 EOF
      },
      { from  => 1659247200, # 2022-07-31 08:00
@@ -37648,14 +37653,14 @@ EOF
      },
      { from  => 1669762800, # 2022-11-30 00:00
        until => 1719784799, # 2024-06-30 23:59
-       text  => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024 (Stand Juli 2023: mögliche Sperrungen)',
+       text  => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, voraussichtlich zwischen Dezember 2022 und Mitte 2024 (Stand Mitte Juli 2023: noch keine Sperrung)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/', # Ende der Bauarbeiten voraussichtlich im I. oder II Quartal 2024
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
 #: note: auf den Mapillary-Bildern vom 14.7.2023 sind zwar Absperrungen zu sehen, die aber weggeschoben sind --- vielleicht kann man außerhalb der Arbeitszeiten noch langfahren?
-#: last_checked: 2023-05-15 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2023-07-17 (mapillary)
+#: check_frequency: 60d
 #: next_check: 2024-06-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
@@ -38684,15 +38689,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1689800429, # -> gesperrt+landstrassen+handicap_l # undef, # XXX
        text  => 'Blankenfelde, Bahnübergang Karl-Marx-Str.: Sperrung, Neubau einer Unterführung',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
-#: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-06-19 (indoor)
-#: check_frequency: 60d
-	2::inwork 11667,-7536 11601,-7560 11494,-7647
+#: next_check_id: BHFBLANKENFELDE-2023
+	2::inwork 11667,-7536 11601,-7560 11551,-7599
 EOF
      },
      { from  => 1682229600, # 2023-04-23 08:00
@@ -38948,7 +38950,7 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-07-14
+#: last_checked: 2023-07-20
 	q3::inwork 12707,13706 12640,13814
 EOF
      },
@@ -39079,7 +39081,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.414599,52.516503,02.11.2022,08:00',
        data  => <<EOF,
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-20
 #: check_frequency: 30d
 #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -39121,7 +39123,7 @@ EOF
 #: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-07-14
+#: last_checked: 2023-07-20
 #: check_frequency: 14d
 #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
@@ -39510,7 +39512,7 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
-#: last_checked: 2023-07-14 vvv
+#: last_checked: 2023-07-20 vvv
 #: next_check: 2023-10-23 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
@@ -39519,15 +39521,13 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 EOF
      },
      { from  => 1688402822, # 2023-07-03 18:47
-       until => 1703890800, # 2023-12-30 00:00
+       until => 1689875940, # 1703890800, # 2023-12-30 00:00
        text  => 'Meyerbeerstr.: Hochbauarbeiten, Fahrbahn zwischen Mahlerstr. und Borodinstr. gesperrt, voraussichtlich bis 29.12.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B[falsch])
 #: note: evtl. außerhalb der Arbeitszeiten offen? (nicht sicher, evtl. war das am 2023-07-14 (Fr) abends der Fall)
-#: last_checked: 2023-07-03
-#: check_frequency: 90d
-#: next_check: 2023-12-29
+# REMOVED (dauerhaft offen?) --- #: last_checked: 2023-07-20 --- #: check_frequency: 90d --- #: next_check: 2023-12-29
 	q4::inwork 13609,15706 13701,15744
 EOF
      },
@@ -39551,21 +39551,19 @@ EOF
 EOF
      },
      { from  => 1688497366, # 2023-07-04 21:02
-       until => 1689951600, # 2023-07-21 17:00
-       text  => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze EInbahnstraßenabschnitte, bis 21.07.2023',
+       until => $isodate2epoch->("2023-07-25 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       text  => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze Einbahnstraßenabschnitte, bis 25.07.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: bvg2021:m43#BVG323893_0
-#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
-#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
-#: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023)
+#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023)
+#: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
-#: source_id: viz2021:13.45273,52.48801,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: last_checked: 2023-07-07 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2023-07-21 vvv
+#: next_check: 2023-07-25 vvv
 Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
 Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
 #: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str.
@@ -39585,7 +39583,7 @@ EOF
 #: next_check_id: BRAUNSCHWEIGER-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
-#: also_indoor: traffic (B[auch Unstrutstr])
+#: also_indoor: traffic (B[auch Unstrutstr],G,W)
 #: next_check: 2023-07-21
 	q4::inwork 13368,7300 13476,7330
 EOF
@@ -39641,14 +39639,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, Ende unbekannt',
+       text  => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.rbb24.de/panorama/beitrag/2023/07/fassadenteil-friedrichstrasse-berlin-polizist-schwer-verletzt.html
 #: by: https://www.berliner-zeitung.de/news/friedrichstrasse-broeckelnde-fassade-faellt-mann-auf-den-kopf-strasse-gesperrt-objektschuetzer-auf-intensivstation-li.367532
 #: by: https://berliner-abendblatt.de/berlin-news/fassadenteil-stuerzt-herunter-und-verletzt-polizeimitarbeiter-id226599
+#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum)
+#: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-20
 #: check_frequency: 14d
 	q4::inwork; 9384,12103 9373,12197
 EOF

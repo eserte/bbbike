@@ -1451,23 +1451,32 @@ Spittelmarkt	HH 10299,11786 10238,11741
 Gertraudenstr.	HH 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999 10512,12039
 Mühlendamm	HH 10512,12039 10574,12131 10625,12206 10646,12234 10662,12255 10697,12303
 # REMOVED --- #: note: früher Hauptverkehrsstraße, jetzt nur noch als Gehweg übrig, wird beim Umbau des Molkenmarkts um/zurückgebaut --- (Molkenmarkt - zur Stralauer Str.)	NN 10736,12285 10772,12288
-Littenstr.	N 11155,12184 11139,12243 11088,12382 11084,12395 11065,12452 10982,12597 10951,12637
+Littenstr.	N 11155,12184 11139,12243 11088,12382 11084,12395 11065,12452 10973,12611 10951,12637
 Magazinstr. (Mitte)	N 11562,12597 11329,12497
 #: note: Privatstraße ("Unbefugten ist das Betreten und Befahren verboten")
 (zwischen VoltAir und The Student Hotel)	N 11240,12368 11344,12410
 Voltairestr.	N 11329,12497 11202,12426 11088,12382
 Stralauer Str.	HH 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250 11300,12241 11347,12223
 Grunerstr.	HH 10697,12303 10746,12364 10807,12451 10838,12496 10849,12557
-Grunerstr.	HH 10873,12577 10951,12637 11057,12715 11105,12764
+Grunerstr.	HH 10873,12577 10931,12622 10951,12637 11057,12715 11105,12764
 Grunerstr.	HH 11105,12764 11055,12717 11013,12684 10950,12640 10873,12577 10849,12557
 # REMOVED --- Grunerstr.	HH 10849,12557 10838,12496 10807,12451
 Grunerstr.	HH 11105,12764 11141,12806
 Grunerstr.	HH 10849,12557 10783,12502
 #: next_check_id: MOLKENMARKT-2021
+#: by: https://viz.berlin.de/2023/07/grunerstr/ (Umstellung im Bereich Littenstr., 17.07.- 25.08.2023 )
+#: by: https://nitter.net/VIZ_Berlin/status/1678738122501242882
+#: by: https://nitter.net/pic/orig/media%2FF0wTSUUXgAQDCdI.jpg
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1345953.php
+#: by: https://nitter.net/VIZ_Berlin/status/1680800745606774785#m
+#: by: https://www.berliner-woche.de/mitte/c-bauen/grunerstrasse-bis-ende-august-dicht_a387625
+#: source_id: bvg2021:248#BVG324714_0
+#: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023)
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-20
 #: check_frequency: 90d
-Grunerstr. [Gehweg]	NN 10900,12546 10982,12597 11057,12715
+#: next_check: 2023-08-25
+Grunerstr. [Radweg]	NN 10931,12622 10954,12604 10973,12611 11057,12715
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
 Rathausstr. (Mitte)	N 10357,12356 10416,12394 10476,12432 10584,12507 10601,12521 10704,12595
 Rathausstr. (Mitte)	NN 10704,12595 10923,12779
@@ -4956,7 +4965,7 @@ Rübländerstr.	N 14321,23378 14382,23574
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3988&date=20151213
 #: XXX Planstraße D --- bleibt dieser Weg erhalten?
 #: osm_watch: way id="224122378" version="17"
-#: last_checked: 2023-03-18 (mapillary)
+#: last_checked: 2023-07-17 (mapillary)
 #: check_frequency: 360d
 (S-Bahndamm - Hobrechtsfelder Chaussee)	NN 15469,24813 15339,24861 14434,25388
 (Bucher Teiche - Schönerlinder Chaussee)	NN 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -9986,14 +9995,16 @@ Zepernicker Str.	H 17011,25830 17039,25861 17218,26121 17259,26148 17310,26181 1
 Schalauer Str.	N 17310,26452 17367,26349 17423,26253
 Sudauer Str.	N 17259,26148 17215,26263 17202,26324 17229,26400 17310,26452 17414,26524
 Nadrauer Str.	N 17215,26263 17367,26349
-(Pankeweg)	NN 16580,26154 16616,26158 16655,26127 16686,26128 16895,26295 16928,26311 17043,26407 17363,26609 17381,26585 17414,26524
+(Pankeweg)	NN 16580,26154 16616,26158 16655,26127 16686,26128 16895,26295 16928,26311 17043,26407 17363,26609 17381,26585
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6192
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6262 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_06_0509_0660_online.pdf (Straßenbenennung, Wirksamkeit am 27. April 2023)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1312835.php ("Feierliche Namensgebung dreier Nummernstraßen")
 # REMOVED --- #: XXX Straße soll in "Ilse-Krause-Str." umbenannt werden (Erwähnung auch im DPAG-Mitteilungsblatt 03/2023) --- #: osm_watch: way id="14116958" version="10" --- #: last_checked: 2023-01-21 (indoor, noch kein Amtsblatt-Eintrag) --- #: next_check: 2023-04-27
-#: oldname: -20230427: Straße 5 (Buch)
+#: oldname: -20230427: Straße 5 (Buch) vvv
 Ilse-Krause-Str.	N 17542,26302 17493,26391 17448,26469 17414,26524
+Ilse-Krause-Str.	NN 17414,26524 17381,26585
+#: oldname ^^^
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6191
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6260 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_06_0509_0660_online.pdf (Straßenbenennung, Wirksamkeit am 27. April 2023)
@@ -10982,8 +10993,9 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 1046
 # REMOVED --- #: osm_watch: way id="810461577" version="5"
 #: osm_watch: way id="997120420" version="4"
 #: XXX bis wann wird es diesen Weg geben?
-#: last_checked: 2023-02-26 (baustellen-doku)
-#: next_check: 2023-07-31
+#: last_checked: 2023-05-13
+#: check_frequency: 180d
+#: next_check: 2024-09-30
 (Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 Zescher Str.	N 10513,-2397 10509,-2128
@@ -11015,8 +11027,9 @@ Rhinstr. (Lichtenrade)	N 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-
 Pfarrer-Lütkehaus-Platz	N 10318,-2156 10296,-2156 10231,-2159 10228,-2136
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX möglicherweise provisorische Verbindung
-#: last_checked: 2021-04-02
-#: next_check: 2023-07-31
+#: last_checked: 2023-05-13
+#: check_frequency: 180d
+#: next_check: 2024-09-30
 (Pfarrer-Lütkehaus-Platz - Bahnhofstr.)	N 10296,-2156 10300,-2135
 Briesingstr.	N 10310,-2136 10318,-2156 10404,-2404 10454,-2520
 Schichauweg	H 9640,-833 9598,-846 9498,-890 9379,-935 9276,-973 9155,-1017
