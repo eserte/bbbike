@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.19 2006/04/17 12:11:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2006,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -114,7 +113,7 @@ $net->make_net;
 $net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 
 @arr = Strassen::Inline::search_c($net, $start_coord, $goal1_coord);
-ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
+ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result between $start_coord and $goal1_coord");
 
 {
     my $handle;
