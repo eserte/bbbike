@@ -91,7 +91,7 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s 4228,19024 4223,18982
 Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
-Spreestr.	1 17900,6072 17939,5968 17931,5955 17877,5860 17810,5736 17807,5730 17782,5698
+Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s 15674,10851 15777,10897 15820,10916 15870,10938
 Nˆldnerplatz	1s 15870,10938 15903,10906
@@ -3330,6 +3330,10 @@ weites Dr‰ngelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Dr‰ngelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem B¸rgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Dr‰ngelgitter	BNP:3:-33:trailer=10 4067,22066
+Am Werkstor: Bauz‰une, Straﬂe gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
+Kupferkamp: Bauz‰une, Straﬂe gesperrt	2::inwork 17935,5961 18075,5880
+Helga-Hahnemann-Str.: Bauz‰une, Straﬂe gesperrt	2::inwork 18260,5746 18062,5856
+Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraﬂenbr¸cke 5 gesperrt	2::inwork 8242,9699 8243,9766
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 Henriette-Herz-Allee: (fr¸herer Vorschlag Georg-Fˆrster-Allee) Wann wird die Straﬂe erˆffnet?	2::inwork 20922,18613 20910,18719
@@ -3361,7 +3365,7 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraﬂe auch f¸r Radfahrer	1s:inwork 552
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbr¸cke	2::inwork 31009,19 31080,-19
-(Fortsetzung Wandlitzstr.): gesperrt, Bauz‰une	2::inwork 17981,9000 17837,9086
+(Fortsetzung Wandlitzstr.): mˆgliche Bauarbeiten	2::inwork 17981,9000 17837,9086
 Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	2s:inwork 20336,3783 20362,3750
 Am Flutgraben: Bauarbeiten, Weg ist gesperrt	2::inwork 13418,9944 13579,10146
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -3599,6 +3603,13 @@ Otto-Dix-Str. -> Rathenower Str.: Straﬂenbahntrasse	3::igndisp 7356,13213 7187,1
 Straﬂenbahntrasse	3nocross::ignrte 6377,13321 6480,13325 6535,13327 6674,13332
 Turmstr. -> Kleiner Tiergarten: Straﬂenbahntrasse	3::igndisp 6674,13332 6535,13327 6564,13260
 Kleiner Tiergarten -> Turmstr.: Straﬂenbahntrasse	3::igndisp 6564,13260 6535,13327 6480,13325
+Straﬂenbahntrasse	3nocross::ignrte 5857,13342 5956,13330 6011,13330
+Turmstr. -> Jonasstr.: Straﬂenbahntrasse	3::igndisp 5857,13342 5956,13330 5956,13433
+Turmstr. -> Thusnelda-Allee: Straﬂenbahntrasse	3::igndisp 6011,13330 5956,13330 5975,13256
+Thusnelda-Allee -> Turmstr.: Straﬂenbahntrasse	3::igndisp 5975,13256 5956,13330 5857,13342
+Thusnelda-Allee -> Jonasstr.: Straﬂenbahntrasse	3::igndisp 5975,13256 5956,13330 5956,13433
+Jonasstr. -> Turmstr.: Straﬂenbahntrasse	3::igndisp 5956,13433 5956,13330 6011,13330
+Jonasstr. -> Thusnelda-Allee: Straﬂenbahntrasse	3::igndisp 5956,13433 5956,13330 5975,13256
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 L‰rchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20:-147 1372,8011

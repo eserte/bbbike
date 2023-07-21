@@ -842,12 +842,12 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 #: note: Müllerstr., Richtung Norden
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
-#: osm_watch: way id="25217949" version="49"
+#: osm_watch: way id="25217949" version="50"
 #: last_checked: 2023-06-24
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
-#: osm_watch: way id="374344536" version="17"
-#: last_checked: 2023-06-22
+#: osm_watch: way id="374344536" version="18"
+#: last_checked: 2023-06-24
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
@@ -1224,7 +1224,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-07-07 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2826,7 +2826,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-07-05 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-07-31 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4286,7 +4286,7 @@ auf der Fahrbahn hinter den parkenden Autos	RW1; 4778,8784 4777,8731 4766,8598
 Ersatzbrücke exklusiv für Radfahrer und Fußgänger	RW10; 17528,6502 17492,6462 17432,6352
 	RW1; 17528,6502 17614,6571
 	RW4; 17614,6571 17528,6502
-Verbundsteinpflaster	RW2; 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000 18932,5926 19024,5830
+Verbundsteinpflaster	RW2; 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000 18928,5920 19010,5833
 	RW1; 6843,16346 7056,16587 7106,16646 7177,16715 7267,16784 7394,16836 7583,16872 7666,16879
 asphaltiert, aber mäßige Qualität	RW1; 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715
 Verbundsteinpflaster, mäßige Qualität	RW1; 7177,16715 7106,16646 7056,16587 6843,16346
@@ -4538,7 +4538,7 @@ vorhandener Radweg ist abgesperrt, sehr eng	RW0; 13566,5792 13394,5754
 # REMOVED (ja) --- #: XXX wie wird die Radwegführung hier sein? Offizieller Zweirichtungsradweg? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02
 # REMOVED (Radspuren existieren nun) --- gemeinsamer Geh- und Radweg	RW2;RW8 14187,6555 14141,6623 --- #: next_check_id: GRENZALLEE-2014 --- #: last_checked: 2023-06-29 --- #: check_frequency: 60d --- # REMOVED --- #: next_check_id: 2023-06-30 --- provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
 # REMOVED --- gemeinsamer Geh- und Radweg	RW2;RW8 14141,6623 14106,6663 14051,6731
-	RW4;RW4 14187,6555 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
+	RW4;RW3 14187,6555 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
 #: by: osm:
 	RW6;RW6 5782,14067 5943,14049
 # 
@@ -4817,7 +4817,7 @@ Grünbeschichtung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2023-07-11 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: 20140224-20230630 vvv
@@ -6269,8 +6269,10 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 	RW4; 9141,12320 9131,12438
-#: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2023-06-15 vvv
+# 
+#: next_check_id: MITTEL-2019
+#: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
+#: last_checked: 2023-07-20 (daf) vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
@@ -6278,7 +6280,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW0; 9121,12514 9131,12438
 #: check_frequency ^^^
 #: last_checked ^^^
-#: next_check_id ^^^
+# 
 	RW4; 9131,12438 9141,12320
 	RW6;RW6 21645,200 21669,99
 	RW6;RW6 21608,85 21596,132 21582,185
@@ -7661,7 +7663,7 @@ Radspur hinter den parkenden Autos, Grünbeschichtung	RW4; 12317,14535 12123,1464
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/umleitung-wird-ausgeschildert_a259735
 #: by: https://twitter.com/SenUVKBerlin/status/1268835220389793793
 Grünbeschichtung, Leitboys	RW4; 17782,5698 17807,5730
-Grünbeschichtung	RW4; 17807,5730 17810,5736 17877,5860 17931,5955 17939,5968 17900,6072
+Grünbeschichtung	RW4; 17807,5730 17810,5736 17877,5860 17935,5961 17939,5968 17900,6072
 # REMOVED (ja) --- #: XXX wird es hier auch eine Grünbeschichtung geben? --- #: last_checked: 2020-05-09 vvv --- #: next_check: 2020-05-12 vvv
 Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 # 
@@ -7901,7 +7903,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
 #: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022) (inaktiv)
 #: source_id: viz2021:13.39961,52.49841,11.01.2023,11:39 (bis 26.05.2023) (inaktiv)
-#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023)
+#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023) (bis 01.09.2023)
 #: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023) (bis 31.5.2023) (bis 01.09.2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/220824_mobilitaetswenderat_final.pdf (Fertigstellung Mitte 2023)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021

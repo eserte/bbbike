@@ -2711,7 +2711,7 @@ Preuﬂstr.: Asphalt	Q0 12325,15328 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9955,12300 9959,12281 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
-M¸ncheberger Str.: m‰ﬂiger Asphalt	Q1 12450,11980 12617,11888
+M¸ncheberger Str.: m‰ﬂiger Asphalt	Q1 12450,11980 12558,11920 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9293,5919
 Kolonie Albrechtshˆhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
 Wussowstr.: Asphalt	Q0 12798,5580 12702,5553
@@ -4167,10 +4167,10 @@ Strandschloﬂweg: Beton	Q0 23749,3883 23925,3886
 Strandschloﬂweg: Feinschotter	Q1 23925,3886 24147,3888 24321,3886
 Strandschloﬂweg: Waldweg, Wurzeln	Q2 24321,3886 24869,3879
 Strandschloﬂweg: Waldweg, Schotter	Q1 24869,3879 25052,3877 25193,3844 25262,3828
-Johannes-Kraaz-Str.: Asphalt	Q0 18932,5926 18870,5833 18818,5756 18771,5686
-Peter-Behrens-Str.: Asphalt	Q0 19024,5830 18925,5688 18877,5618
-Paul-Tropp-Str.: Asphalt	Q0 19097,5686 19042,5607
-Osmar-Klemm-Str.: Asphalt	Q0 19042,5607 18925,5688 18818,5756
+Johannes-Kraaz-Str.: Asphalt	Q0 18928,5920 18870,5833 18818,5756 18771,5686
+Peter-Behrens-Str.: Asphalt	Q0 19017,5815 18925,5684 18877,5618
+Paul-Tropp-Str.: Asphalt	Q0 19099,5689 19042,5607
+Osmar-Klemm-Str.: Asphalt	Q0 19042,5607 18925,5684 18818,5756
 Ernst-Ziesel-Str.: Asphalt	Q0 18877,5618 18787,5676 18771,5686
 Antoniuskirchstr.: Asphalt	Q0 18119,6693 18147,6747 18122,6773 18068,6748
 Scharfensteinstr.: schlechtes Kopfsteinpflaster	Q3 13545,21738 13270,21870
@@ -6424,7 +6424,7 @@ Schwarzer Weg (Schmˆckwitz): Feinschotterstraﬂe, einige Kuhlen	Q1 28000,-3139 28
 (Schwarzer Weg - am Oder-Spree-Kanal): Waldweg, Schotter	Q2 29559,-2866 29390,-2851 29079,-2874
 am Oder-Spree-Kanal: Waldweg, viele Wurzeln	Q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
 am Oder-Spree-Kanal: Waldweg, einige Wurzeln	Q2 29559,-2866 30531,-3115
-(Uferweg an der HTW): Asphalt, einige Wurzelhebungen	Q1 19177,5560 19020,5532 18846,5548 18744,5612 18650,5707
+(Uferweg an der HTW): Asphalt, einige Wurzelhebungen	Q1 19184,5554 19134,5544 18978,5522 18860,5534 18776,5575 18744,5612 18650,5707
 (Uferweg - Ernst-Ziesel-Str.): Verbundsteinpflaster	Q1 18744,5612 18787,5676
 Plˆnzeile: Asphalt	Q0 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
 (Zufahrt Zentrum Schˆneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17412,5951 17483,6024
@@ -11295,6 +11295,12 @@ Ida-Wolff-Platz: Verbundsteinpflaster	Q1 9161,10574 9192,10528
 (Adlergestell/Am Seegraben - Walchenseestr.): Waldweg	Q2 21879,1517 21899,1526 22010,1624 22222,1831
 Am Seegraben: Asphalt	Q0 21829,1351 21865,1441 21866,1492 21878,1500
 (Parkplatz am Langen See/M¸ggelberg - Straﬂe zur Krampenburg): verdichteter Waldweg	Q1 25562,1038 25990,825 25954,692 25997,658 26380,545 27082,336 27161,156 27182,110
+(Umfahrung Baustelle Behrens-Ufer): unbefestigter Weg	Q2 19139,5627 19137,5613 19165,5568
+(Umfahrung Baustelle Behrens-Ufer): Asphalt/unbefestigter Weg	Q2 19165,5568 19134,5544
+Am Werkstor: Asphalt	Q0 18019,5786 18062,5856 18075,5880
+Kupferkamp: Asphalt	Q0 17935,5961 18075,5880
+Helga-Hahnemann-Str.: Asphalt	Q0 18260,5746 18062,5856
+Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -15166,9 +15172,9 @@ Ehm-Welk-Str.: guter Beton	Q0 22608,13442 22745,13386 22776,13468 22775,13482 22
 Kummerower Ring: guter Beton	Q0 22594,13408 22608,13442 22647,13545 22640,13619 22615,13734
 Kummerower Ring: guter Beton	Q0 22615,13734 22527,13708 22523,13680 22544,13602 22503,13489 22608,13442
 Hainstr.: guter Asphalt	Q0 18370,5511 18370,5647 18349,5744 18312,5824
-Flieﬂstr.: m‰ﬂiges Kopfsteinpflaster	Q2 18164,5701 18017,5783
-Flieﬂstr.: guter Asphalt	Q0 18017,5783 17877,5860
-Flutstr.: am Rand m‰ﬂiges Kopfsteinpflaster, in der Mitte eine gute asphaltierte Spur	Q1 18017,5783 17980,5721 17931,5695 17916,5675
+Flieﬂstr.: m‰ﬂiges Kopfsteinpflaster	Q2 18164,5701 18019,5786
+Flieﬂstr.: guter Asphalt	Q0 18019,5786 17877,5860
+Flutstr.: am Rand m‰ﬂiges Kopfsteinpflaster, in der Mitte eine gute asphaltierte Spur	Q1 18019,5786 17980,5721 17931,5695 17916,5675
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): sehr gut asphaltiert	Q0 15204,7236 15306,7251 15350,7272
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): Asphalt, einige Wurzelhebungen	Q0 15350,7272 15422,7265
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): m‰ﬂig asphaltiert (viele Unebenheiten durch Baumwurzeln)	Q2 15422,7265 15468,7291 15579,7316 15609,7347

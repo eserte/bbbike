@@ -8347,7 +8347,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005487',
        data  => <<EOF,
-	1::inwork 18861,6000 18932,5926 19024,5830
+	1::inwork 18861,6000 18928,5920 19010,5833
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -18242,6 +18242,7 @@ EOF
 #: by: https://csd-berlin.de/demo-route-finale-2022/
 #: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
 #: by: https://csd-berlin.de/csd-berlin-2023/route-finale
+#: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023)
 	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
 	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
@@ -18554,7 +18555,7 @@ EOF
 #: note: nicht gesperrt: 2021-03-21 (So) gegen 15 Uhr
 #: note: nicht gesperrt: 2021-04-01 (Do) gegen 11:30 Uhr
 #: tempex: volatile
-	2::temp 18870,5833 18932,5926
+	2::temp 18870,5833 18928,5920
 EOF
      },
      { from  => 1278970058, # 2010-07-12 23:27
@@ -22647,7 +22648,7 @@ EOF
        data  => <<EOF,
 #: note: der zweite Bauabschnitt dürfte für Radfahrer nicht relevant sein, siehe
 #: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
-	q4::inwork; 19957,5941 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
+	q4::inwork; 19957,5941 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19010,5833 18928,5920
 EOF
      },
      { from  => 1378332000, # 2013-09-05 00:00
@@ -31102,7 +31103,7 @@ EOF
        source_id => '2147345680',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1247042611732414465 (hier: bis Mitte Mai)
-	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17931,5955 17939,5968 17900,6072
+	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17935,5961 17939,5968 17900,6072
 EOF
      },
      { from  => 1586020992, # 2020-04-04 19:23
@@ -35064,7 +35065,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-06-29 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -35549,14 +35550,16 @@ EOF
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf ("weiterhin für ca. 2 Jahre")
 #: by: https://nitter.cz/VIZ_Berlin/status/1664497318455046145#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhpb1BlWGFrQUFoQXhRLmpwZw==
+#: by: https://nitter.net/VIZ_Berlin/status/1682284279324360704#m
+#: by: https://nitter.net/pic/orig/media%2FF1fgjuGXsAAx82o.jpg
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
 #: source_id: viz2021:13.493,52.63648,26.10.2022,11:11 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024) (bis 02.06.2023) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023) (inaktiv)
 #: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023)
-#: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024)
+#: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
+#: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023)
 # REMOVED --- #: last_checked: 2023-07-17 (mapillary, Durchfahrt möglich)
 # REMOVED --- #: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
@@ -37439,7 +37442,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-07-04
+#: last_checked: 2023-07-21
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37971,7 +37974,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
 # REMOVED --- #: last_checked: 2023-06-04 --- #: next_check: 2023-07-07
@@ -37998,7 +38001,7 @@ EOF
        until => $isodate2epoch->("2023-07-21 17:00:00"), # 1677600000, # 2023-02-28 17:00
        text  => 'Kastanienallee: Bauarbeiten zwischen Havelländer Ring und Sarah-Kirsch-Str., Fahrbahn gesperrt, vom 08.02.2023 07:00 bis 21.07.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.600257,52.54031,08.02.2023,07:00', # bis 28.2.2023; bis 10.4.2023; bis 10.6.2023; bis 30.6.2023; bis 21.07.2023
+       source_id => 'viz2021:13.600257,52.54031,08.02.2023,07:00', # bis 28.2.2023; bis 10.4.2023; bis 10.6.2023; bis 30.6.2023; bis 21.07.2023; inaktiv
        data  => <<EOF,
 #: note: laut VIZ nur der Kfz-Verkehr betroffen
 # REMOVED (hier nicht, siehe Mapillary) ---	q4::inwork 23698,15049 23693,15080 23686,15128
@@ -38715,11 +38718,11 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
-#: osm_watch: way id="1172668082" version="4"
+#: osm_watch: way id="1172668082" version="5"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-07-05 (Pressemitteilung)
+#: last_checked: 2023-07-20 (osm)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-08
 	q4::inwork 20159,3623 20073,3734
@@ -38976,13 +38979,14 @@ EOF
 EOF
      },
      { from  => 1684620000, # 2023-05-21 00:00
-       until => 1689976800, # 2023-07-22 00:00
+       until => undef, # 1689976800, # 2023-07-22 00:00
        text  => 'Fischzug: zwischen Engelswiese und Bootsbauerstr. Bauarbeiten, Fahrbahn gesperrt, ab 22.5.2023 für ca. zwei Monate',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (22.5.2023 für zwei Monate)
 #: source_id: bvg2021:347#BVG321063_0
-#: also_indoor: traffic (none)
+#: osm_watch: way id="45689070" version="5"
+#: also_indoor: traffic (G)
 #: last_checked: 2023-07-05
 #: check_frequency: 30d
 #: next_check: 2023-07-22
@@ -39008,11 +39012,11 @@ EOF
 EOF
      },
      { from  => 1684818000, # 2023-05-23 07:00
-       until => 1689951600, # 2023-07-21 17:00
-       text  => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 21.07.2023 17:00',
+       until => $isodate2epoch->("2023-08-31 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       text  => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 31.08.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.26594,52.535571,24.05.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.26594,52.535571,24.05.2023,07:00 (bis 21.07.2023) (bis 31.08.2023)
 	q4::inwork 931,14268 968,14263 1023,14259
 EOF
      },
@@ -39095,8 +39099,8 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="18"
-#: last_checked: 2023-07-04
+#: osm_watch: way id="58182828" version="19"
+#: last_checked: 2023-07-20 (osm)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39277,7 +39281,7 @@ EOF
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-21
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 EOF
@@ -39561,7 +39565,7 @@ EOF
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2023-07-07 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-07-25 vvv
 Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
@@ -39576,16 +39580,23 @@ EOF
      { from  => 1688875200, # 2023-07-09 06:00
        until => $isodate2epoch->("2023-08-23 17:00:00"), # 1689951600, # 2023-07-21 17:00
        dont_check_date => 1,
-       text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, vom 10.07.2023 06:00 bis 21.07.2023 17:00, möglicherweise länger',
+       text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 23. August 2023, vielleicht länger', # 'vom 10.07.2023 06:00 bis 21.07.2023 17:00, möglicherweise länger'
        type  => 'handicap',
-       source_id => 'viz2021:13.447318,52.471049,10.07.2023,06:00',
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2023
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
-#: also_indoor: traffic (B[auch Unstrutstr],G,W)
-#: next_check: 2023-07-21
-	q4::inwork 13368,7300 13476,7330
+#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
+#: last_checked: 2023-07-21 vvv
+#: next_check: 2023-08-11 vvv
+	q4::inwork 13368,7300 13476,7330 13519,7345
+Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
+#: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+#: source_id ^^^
 EOF
      },
      { from  => 1688886000, # 2023-07-09 09:00
@@ -39770,6 +39781,17 @@ EOF
 #: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
 #: last_checked: 2023-07-16
 	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
+EOF
+     },
+     { from  => 1690077600, # 2023-07-23 04:00
+       until => $isodate2epoch->("2023-08-20 18:00:00"),
+       text  => 'Kirchstr.: Bauarbeiten zwischen Grünstr. und Alt-Köpenick, Sperrung auch für Radfahrer, vom 24.07.2023 04:00 Uhr bis 20.08.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Einschränkung beim Straßenbahnverkehr, bis 20.8.2023)
+#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-240723/ (auch Radverkehr, bis Ende August 2023)
+# REMOVED --- #: last_checked: 2023-07-15 --- #: next_check: 2023-07-24
+	q4::inwork 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 EOF
      },
     );

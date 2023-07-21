@@ -140,7 +140,7 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s:q3 4228,19024 4223,18982
 Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
-Spreestr.	1 17900,6072 17939,5968 17931,5955 17877,5860 17810,5736 17807,5730 17782,5698
+Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
@@ -3586,6 +3586,26 @@ Drängelgitter	BNP:3::trailer=10 4067,22066
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: HELGAHAHNEMANN-2023
+#: last_checked: 2023-07-21 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2025-03-15 vvv
+#: osm_watch: way id="1116003134" version="2"
+Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
+#: osm_watch: way id="955370454" version="5"
+Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
+#: osm_watch: way id="955370453" version="7"
+Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: next_check_id: BEHRENSUFER-2023
+#: last_checked: 2023-07-21
+#: check_frequency: 180d
+#: next_check: 2026-12-31
+Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
+# 
 #: next_check_id: YORCKSTRBR5-2023
 #: last_checked: 2023-07-18
 #: check_frequency: 90d
@@ -3645,7 +3665,7 @@ Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,120
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-07-02 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -3675,7 +3695,7 @@ Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 #: by: https://www.berliner-woche.de/wedding/c-bauen/auf-dem-weddingplatz-laeuft-die-erste-bauphase-noch-bis-jahresende_a384210
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
-#: osm_watch: way id="4596985" version="21"
+#: osm_watch: way id="4596985" version="22"
 #: last_checked: 2023-07-13
 #: check_frequency: 90d
 #: next_check: 2024-09-30
@@ -3763,7 +3783,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-07-19
+#: last_checked: 2023-07-21
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3868,11 +3888,11 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
 #: osm_watch: way id="26322024" version="23"
-#: XXX Fahrbahn wird befestigt, vermutlich asphaltiert
+#: XXX Fahrbahn wurde größtenteils asphaltiert, aber noch nicht alles fertig
 #: priority: #C
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-21
 #: check_frequency: 60d
-(Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
+(Fortsetzung Wandlitzstr.): mögliche Bauarbeiten	2::inwork 17981,9000 17837,9086
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/
@@ -4020,7 +4040,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: by: https://www.deutsches-architekturforum.de/thread/10894-projekte-rund-um-das-bnd-areal/?postID=742860#post742860 (laut Baustellenschild der Wasserbetriebe bis September 2026)
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
-#: osm_watch: way id="129104626" version="20"
+#: osm_watch: way id="129104626" version="21"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
 #: last_checked: 2023-07-13
@@ -4308,7 +4328,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-06-22
+#: last_checked: 2023-07-21 (webcam)
 #: check_frequency: 30d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
@@ -4578,7 +4598,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php
 #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-21
 #: check_frequency: 360d
 #: next_check: 2024-05-01
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4602,7 +4622,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
-#: last_checked: 2023-07-15 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-01 vvv
 #: osm_watch: way id="1085382250" version="3"
@@ -4622,7 +4642,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="18"
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-21
 #: next_check: 2023-09-01
 #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
@@ -4900,7 +4920,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023) (bis 6.7.2023) (inaktiv) (bis 30.8.2023)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-21
 #: check_frequency: 90d
 #: next_check: 2023-08-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
@@ -5204,6 +5224,9 @@ An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 
 #: historical_note: früher: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)
 Rathenower Str.: Straßenbahntrasse	3nocross 7172,13051 7187,13126 7161,13190
 Turmstr.: Straßenbahntrasse	3nocross 6377,13321 6480,13325 6535,13327 6674,13332
+#: next_check_id: TRAMTURM-2021
+#: XXX vermutet, überprüfen!
+Turmstr.: Straßenbahntrasse	3nocross 5857,13342 5956,13330 6011,13330
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20 1372,8011

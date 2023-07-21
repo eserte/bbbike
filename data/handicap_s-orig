@@ -19,7 +19,7 @@
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-07-14 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -108,7 +108,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (wieder offen) --- #: last_checked: 2020-03-30 --- Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
 # REMOVED (weitgehend wiederhergestellt) --- #: next_check_id: KAUFHOF-2018 --- #: XXX bis wann gehen die Bauarbeiten? --- #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren --- #: last_checked: 2021-04-09 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2021-03-01 --- Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED (beendet) --- #: next_check_id: KAUFHOF-2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/fassade-am-buerohochhaus-am-ostbahnhof-ist-fast-fertig_a279073 (bis Frühjahr 2021) --- #: note: laut fritz bis Ende 2020 --- #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-01-25 --- #: check_frequency: 30d --- #: next_check: 2021-03-01 --- Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
+# REMOVED (beendet) --- #: next_check_id: KAUFHOF-2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/fassade-am-buerohochhaus-am-ostbahnhof-ist-fast-fertig_a279073 (bis Frühjahr 2021) --- #: note: laut fritz bis Ende 2020 --- #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-01-25 --- #: check_frequency: 30d --- #: next_check: 2021-03-01 --- Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12558,11920 12617,11888
 # REMOVED --- #: XXX vermutlich wird der Zebrastreifen nördlich der Kreuzung "verstetigt" --- #: source_id: 2147346517 (bis 6.11.2020) --- #: source_id: LMS-BR_r_LMS-BR_221528_LMS-BR_72 (bis 18.12.2020) (inaktiv) --- #: priority: #B --- #: last_checked: 2020-12-15 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2020-12-15 vvv
 # REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2020-11-06 --- #: valid: -20201106
@@ -310,7 +310,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-07-13 vvv
+#: last_checked: 2023-07-20 (daf) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -541,6 +541,15 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Oberschöneweide ###
 # 
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2023-07-21 vvv
+Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000
+Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+# 
 # REMOVED (beendet) --- #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020 (Termin wurde nicht gehalten) --- #: last_checked: 2020-10-04 --- #: next_check: 2020-07-31 --- #: valid: -20200731 --- Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
 # REMOVED (BVG-Meldung ist weg) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle) --- #: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018 --- #: also_indoor: traffic --- #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72 --- #: source_id: 2147342044 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-12-06 --- # REMOVED --- #: valid: -20181201 --- #: priority: #A --- Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
@@ -614,39 +623,20 @@ Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg e
 # 
 ### Moabit ###
 # 
-#: next_check_id: TRAMTURM-2021
-#: source_id[inactive]: bvg2021:m27#BVG305466_0
-#: next_check: 2023-09-06 vvv
-#: check_frequency: 90d vvv
-#: last_checked: 2023-05-14 (osm) vvv
+# REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: source_id[inactive]: bvg2021:m27#BVG305466_0 --- #: next_check: 2023-09-06 vvv --- #: check_frequency: 90d vvv --- #: last_checked: 2023-05-14 (osm) vvv
 # REMOVED (sieht offen aus) --- #: source_id: viz2021:13.35534,52.52683,28.04.2022,07:00 (bis 07.07.2023) (inaktiv) (bis 06.09.2023) --- #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023) (inaktiv) --- #: osm_watch: way id="140336721" version="33" --- #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
 # REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6960,13366 6919,13360 6814,13349 6692,13333
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11522 (Antrag) --- #: by: https://www.bahninfo-forum.de/read.php?9,705321,772235#msg-772235 (Freigabe der Fahrbahn 2023-07-07?) --- Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6480,13325 6377,13321
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
-#: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv)
-#: source_id: viz2021:13.33913,52.5264,20.12.2022,13:00 (bis 06.09.2023) (inaktiv)
-#: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023) (bis 6.9.2023)
-#: osm_watch: way id="692480562" version="15"
-#: last_checked: 2023-07-13 (osm)
-#: check_frequency: 30d
-Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
+# REMOVED (laut bahninfo-forum freigegeben) --- #: source_id: viz2021:13.339142,52.52642,28.04.2022,07:00 (bis 7.7.2023) (inaktiv) --- #: source_id: viz2021:13.33913,52.5264,20.12.2022,13:00 (bis 06.09.2023) (inaktiv) --- #: source_id: viz2021:13.340409,52.526379,28.04.2022,07:00 (bis 7.7.2023) (bis 6.9.2023) --- #: osm_watch: way id="692480562" version="15" --- #: last_checked: 2023-07-13 (osm) --- #: check_frequency: 30d --- Turmstr.: Bauarbeiten, Engstelle	q3::inwork; 5857,13342 5956,13330
 # REMOVED (hier wieder Führung auf der Fahrbahn, siehe bahninfo-forum) --- #: osm_watch: way id="30195541" version="38" --- #: osm_watch: way id="1101061991" version="10" --- #: osm_watch: way id="310164489" version="30" --- Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
-#: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023) (bis 6.9.2023)
-#: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023) (inaktiv)
-#: source_id[inactive]: bvg2021:101#BVG301286_0
-#: osm_watch: way id="4571954" version="34"
-#: last_checked: 2023-07-02 (osm)
-#: check_frequency: 45d
-Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
+# REMOVED (vermutlich auch offen) --- #: source_id: viz2021:13.339142,52.52642,06.01.2023,10:00 (Thusnelda-Allee für Kfz-Verkehr gesperrt, bis 7.7.2023) (bis 6.9.2023) --- #: source_id: viz2021:13.33913,52.5264,07.07.2023,16:48 (bis 06.09.2023) (inaktiv) --- #: source_id[inactive]: bvg2021:101#BVG301286_0 --- #: osm_watch: way id="4571954" version="34" --- #: last_checked: 2023-07-02 (osm) --- #: check_frequency: 45d --- Thusnelda-Allee: noch offen für Radfahrer, aber Einschränkungen im Kreuzungsbereich	q3::inwork 5956,13330 5975,13256
 # REMOVED (Radweg wird nun auf der Fahrbahn geführt) --- #: osm_watch: way id="269696665" version="24" --- #: last_checked: 2023-07-06 (bahninfo-forum) --- Turmstr.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 6919,13360 6960,13366 7069,13381
 # REMOVED (vermutlich wieder offen?) --- #: osm_watch: way id="1101405485" version="8" --- #: osm_watch: way id="217183438" version="19" --- #: last_checked: 2023-07-07 (bahninfo-forum) --- # REMOVED (weitgehend freigegeben) --- Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q2::inwork; 7069,13381 7084,13352 7131,13261 7161,13190
 # REMOVED (vermutlich mittlerweile offen?) --- Rathenower Str.: Bauarbeiten, gemeinsamer Geh- und Radweg	q3::inwork; 7161,13190 7187,13126 7172,13051
-#: last_checked ^^^
 # REMOVED --- #: source_id: viz2021:13.360357,52.523267,26.09.2022,10:00 (bis 9.1.2023) (bis 7.7.2023) (bis 29.3.2023) (inaktiv) --- #: osm_watch: way id="61816617" version="29" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 # REMOVED --- #: osm_watch: way id="4407756" version="33" --- #: last_checked: 2023-03-18 --- Alt-Moabit: Bauarbeiten, teilweise gemeinsamer Geh- und Radweg	q2::inwork; 7346,13022 7422,13012
-#: check_frequency ^^^
-#: next_check ^^^
-# 
+# REMOVED --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: next_check ^^^
 # REMOVED (offen) --- #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021) --- #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant für 1. Quartal 2022) --- #: by: https://berliner-abendblatt.de/2022/01/24/kein-halt-am-u-bahnhof-birkenstrasse/ --- #: by: https://berliner-abendblatt.de/2022/03/16/bahnhof-birkenstrasse-jetzt-stufenlos-erreichbar/ --- #: by: https://www.berliner-woche.de/moabit/c-bauen/u-bahnhof-birkenstrasse-erhielt-weiteren-ausgang_a339752 --- #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr. --- #: also_indoor: traffic (ex-G,H) --- #: osm_watch: way id="746589388" version="17" --- #: osm_watch: way id="746589386" version="1" --- #: last_checked: 2022-03-16 (twitter) --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-03-31 --- Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 # REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13397 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 # REMOVED --- #: XXX was ändert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
@@ -729,7 +719,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2023-06-29 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
@@ -2596,7 +2586,7 @@ Zur Fähre: Stufen oder Rampe benutzen	q4 27055,-2298 27069,-2282
 Fährsteg	q4 27069,-2282 27090,-2253
 Fährsteg	q4 27374,-1573 27361,-1551
 Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
-(Uferweg an der HTW): einige Fußgänger	q1+ 19177,5560 19020,5532 18846,5548 18744,5612 18650,5707
+(Uferweg an der HTW): einige Fußgänger	q1+ 19184,5554 19134,5544 18978,5522 18860,5534 18776,5575 18744,5612 18650,5707
 (Zerbster Str. - Louis-Lewin-Str.): eng, Fußgänger	q2 24324,15519 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
 (Louis-Lewin-Str. - U-Bhf. Hönow): eng, Fußgänger	q2 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
 (Gohliser Str. - Wuhle-Hönow-Weg): eng, Fußgänger	q2 25504,15352 25541,15406 25540,15429
@@ -3344,7 +3334,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="10"
-#: last_checked: 2023-07-09 vvv
+#: last_checked: 2023-07-21 vvv
 #: check_frequency: 120d vvv
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -4645,6 +4635,8 @@ Eulerstr.: Fußgängerbereich, Quartierplatz	q4 9465,16464 9493,16481
 (Mauerweg - Schönefelder Chaussee): einige Fußgänger	q1 18702,1338 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
 # 
 (Adlergestell/Am Seegraben - Walchenseestr.): schmaler Pfad	q3 21879,1517 21899,1526
+# 
+(Umfahrung Baustelle Behrens-Ufer): schmal, kurvig	q3 19139,5627 19137,5613 19165,5568 19134,5544
 # 
 ######################### User Contributions #################################
 # 
