@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2014,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014,2016,2018,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,7 +27,7 @@ sub usage () {
     die "usage: $0 [-frequency days] [-n] [-v] -log file bbdfile ...";
 }
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $check_frequency = 30; # days
 my $log_file;
@@ -79,6 +79,7 @@ for my $file (@files) {
 	(sub {
 	     my($r, $dir) = @_;
 	     for my $url (@{ $dir->{url} || [] }) {
+		 $url =~ s{\s.*}{}; # strip comments
 		 next if $seen_urls{$url};
 		 v_print "Check URL <$url> ... ";
 		 if (!$dry_run) {
