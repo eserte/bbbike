@@ -359,7 +359,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2023-07-08 (architektur-urbanistik) vvv
+#: last_checked: 2023-07-22 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -620,7 +620,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2023-07-10
+#: last_checked: 2023-07-22
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -718,7 +718,8 @@ Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8441,3918 -8401,3899 -830
 Sakrower Kirchweg: Beton	Q1+ -8255,3946 -8162,4025
 Sakrower Kirchweg: Asphalt	Q0 -8162,4025 -7990,4086 -7914,4150 -7792,4249 -7714,4279
 Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1+ -7714,4279 -7636,4346 -7595,4374 -7419,4497 -7381,4517 -7257,4581 -7152,4645 -7134,4681 -7131,4742 -7080,4896
-Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 3970,8582 3979,8772 4006,8967
+Kalischer Str.: Asphalt	Q0 3964,8559 3970,8582
+Kalischer Str.: Kleinsteinpflaster	Q1 3970,8582 3979,8772 4006,8967
 Mannheimer Str. (Wilmersdorf): Asphalt	Q0 4456,8598 4320,8596
 Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8703 4456,8598
 Thulestr.: Asphalt	Q0 11630,16623 11534,16622 11440,16622
@@ -905,7 +906,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2023-07-11
+#: last_checked: 2023-07-22
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -981,7 +982,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="22"
-#: last_checked: 2023-06-28 (mapillary)
+#: last_checked: 2023-07-18 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1622,7 +1623,7 @@ Am Volkspark: Parkweg	Q1 5611,8252 5438,8402 5433,8407
 #: note: paralleler Bürgersteig mit normalen Gehwegplatten
 Am Volkspark: Kopfsteinpflaster mit großen Ritzen	Q3 5730,8207 5651,8218
 Am Volkspark: Kopfsteinpflaster	Q2 5611,8252 5651,8218
-Am Volkspark: Parkweg	Q1 5730,8207 5918,8221
+Am Volkspark: neu gemachter Parkweg	Q1+ 5730,8207 5918,8221
 Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11240,12368 11202,12426 11138,12604 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080 7252,6058 7227,6058
@@ -1879,21 +1880,19 @@ Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
 Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
-Volkspark Wilmersdorf: Parkweg	Q1 5469,8524 5405,8549 5331,8581
-#: next_check_id: VOLKSPARKWILMERSDORF-2023
-#: XXX wird die Qualität nach den Bauarbeiten besser sein? vvv
-#: last_checked: 2023-05-25 vvv
-#: next_check: 2023-07-19 vvv
-# REMOVED --- #: next_check: 2023-04-15
+Volkspark Wilmersdorf: Mosaikpflaster mit Parkweg-Streifen	Q1- 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308
-Volkspark Wilmersdorf: Parkweg	Q1- 5700,8241 5730,8207
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: next_check_id: VOLKSPARKWILMERSDORF-2023 --- #: XXX wird die Qualität nach den Bauarbeiten besser sein? vvv --- #: last_checked: 2023-05-25 vvv --- #: next_check: 2023-07-19 vvv --- # REMOVED --- #: next_check: 2023-04-15 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
+Volkspark Wilmersdorf: neu gemachter Parkweg	Q1+ 5700,8241 5730,8207
 Volkspark Wilmersdorf: neu gemachter Parkweg	Q1+ 5680,8355 5699,8308
 Volkspark Wilmersdorf: neu gemachter Parkweg	Q1+ 5699,8308 5687,8280 5700,8241
+Volkspark Wilmersdorf: Parkweg	Q1 4677,8605 4456,8598
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8052
-(Volksparksteg - Volkspark Wilmersdorf): Parkweg	Q2 5401,8528 5405,8549
+(Volksparksteg - Volkspark Wilmersdorf): Kleinsteinpflaster	Q1- 5401,8528 5405,8549
+zum Volksparksteg: Parkweg	Q1- 5533,8478 5531,8458
+zum Volksparksteg: Verbundsteinpflaster	Q1 5531,8458 5511,8480 5497,8486
+zum Volksparksteg: Verbundsteinpflaster	Q1 5429,8516 5401,8528
+(Uhlandstr./Blissestr. - Mannheimer Str.): Kleinsteinpflaster	Q1- 4769,8563 4677,8605
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
 Friedrichsruher Str.: Verbundsteine	Q0 3196,9193 3093,9306 2998,9408
 Cunostr.: Kopfsteinpflaster	Q2+ 3196,9193 3180,9015
@@ -2753,7 +2752,9 @@ Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2- 17632,6930 
 #: confirmed_by: srt
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12271,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
-Ellricher Str.: Kopfsteinpflaster	Q2 12242,6234 12127,6204 12053,6185
+#: XXX Qualität prüfen, vielleicht besser als Q2+?
+Ellricher Str.: Kopfsteinpflaster mit Asphaltstreifen	Q2+ 12242,6234 12127,6204
+Ellricher Str.: Kopfsteinpflaster	Q2 12127,6204 12053,6185
 #: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten unangenehmes Kopfsteinpflaster -> neu gemachter Asphalt)
 Sangeallee: Asphalt	Q0+ 18490,9387 18459,9354 18319,9218 18247,9158
 #: corrected_by: srt (mäßiger Asphalt, Q2+ -> ... neu gemacht?)
@@ -4322,7 +4323,7 @@ Goethepark: Asphalt	Q1 3467,11373 3594,11372
 Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 3040,9420
 (entlang der Stadtautobahn): Gehwegplatten	Q1+ 3379,8969 3489,8839 3510,8814
 (entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1+ 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
-(am Stadion Wilmersdorf): teilweise unebener Asphalt	Q1 3597,8457 3550,8453 3517,8464 3455,8454 3358,8511 3295,8524
+(am Stadion Wilmersdorf): teilweise unebener Asphalt	Q1 3618,8436 3597,8457 3550,8453 3513,8463 3479,8449 3425,8460 3358,8511 3295,8524
 Werdauer Weg: Beton	Q0- 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
 Werdauer Weg: Beton	Q0- 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
@@ -17157,12 +17158,12 @@ Florapromenade: schlechter Asphalt	Q2 10311,17764 10320,17487 10284,17458 10207,
 Grimmelshausenstr.: Verbundsteinpflaster	Q1 -8293,4915 -8283,4936 -8204,5103 -8074,5361
 # 
 #: by: kathrin wenkel: vvv
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Burgemeisterstr.: Asphalt	Q0 9361,5647 9158,5673
 #: corrected_by: srt (Q3 -> Q3+, by eyesight)
 Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3+ 9158,5673 8981,5692 8786,5720 8709,5732 8613,5745 8380,5766
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
-Burgemeisterstr.: Asphalt mit leichten Schäden	Q0- 8380,5766 8279,5794 8226,5809
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
+Burgemeisterstr.: Asphalt mit einigen Schäden	Q1+ 8380,5766 8279,5794 8226,5809
 #: by: ^^^
 # 
 #: by: Christoph Oelmüller: vvv
@@ -20375,12 +20376,12 @@ Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,1923
 #: by Andreas (johnnyyen): vvv
 #: confirmed_by: srt
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
-#: corrected_by: srt (schlecht -> mäßig, zumindest der westliche Abschnitt)
+#: corrected_by: srt (schlecht -> mäßig)
 Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8629,5866
 #: confirmed_by: srt
 Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8629,5866 8801,5844
-#: corrected_by: srt (schlecht -> mäßig)
-Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8801,5844 8996,5823
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
+Friedrich-Wilhelm-Str.: unebenes Kleinsteinpflaster	Q2 8801,5844 8996,5823
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 #: by: ^^^
@@ -32460,4 +32461,5 @@ Kreuzungsbereich betoniert	Q0- 11073,17526
 Kreuzungsbereich betoniert	Q0 11447,16507
 Einmündungsbereich asphaltiert	Q0 11655,16486
 Kreuzungsbereich asphaltiert	Q0 10437,11352
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 8801,5844
 #: ignore ^^^

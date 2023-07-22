@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-06-25
+#: last_checked: 2023-07-22
 #: check_frequency: 90d
 #: next_check: 2023-07-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -347,7 +347,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="15"
-#: last_checked: 2023-07-12 (mapillary)
+#: last_checked: 2023-07-22
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3880,10154
 # 
@@ -1517,6 +1517,8 @@ Segewaldweg	1 22364,3351 22367,3287 22342,3277 22338,3260 22305,3255 22297,3265 
 # 
 #: note: außerdem Bordstein, falls man von Westen aus nach links abbiegen möchte
 Schönefelder Chaussee: Mittelstreifen	3nocross 19198,1122 19221,1198 19251,1240
+# 
+Blissestr.: Mittelstreifen	3nocross 4769,8563 4768,8608 4777,8731
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3440,6 +3442,7 @@ Drängelgitter	BNP:3 63740,42840
 Drängelgitter	BNP:3 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 Drängelgitter	BNP:3::trailer=6 3644,8441
+Tor	BNP:2::trailer=5 3618,8436
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,5682
 #: by: guylian
 #: note: ohne Schloss, also immer offen
@@ -3783,7 +3786,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-07-21
+#: last_checked: 2023-07-22
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4946,7 +4949,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="30"
 #: also_indoor: traffic
-#: last_checked: 2023-07-10 (osm)
+#: last_checked: 2023-07-22
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230

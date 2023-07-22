@@ -962,6 +962,9 @@ Segewaldweg	1 22364,3351 22367,3287 22342,3277 22338,3260 22305,3255 22297,3265 
 Mittelstreifen	3nocross::ignrte 19198,1122 19221,1198 19251,1240
 Schönefelder Chaussee -> Mauerweg: Mittelstreifen	3::igndisp 19198,1122 19221,1198 19160,1215
 Mauerweg -> Schönefelder Chaussee: Mittelstreifen	3::igndisp 19160,1215 19221,1198 19251,1240
+Mittelstreifen	3nocross::ignrte 4769,8563 4768,8608 4777,8731
+Blissestr. -> zur Mannheimer Str.: Mittelstreifen	3::igndisp 4769,8563 4768,8608 4754,8608
+zur Mannheimer Str. -> Blissestr.: Mittelstreifen	3::igndisp 4754,8608 4768,8608 4777,8731
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3227,6 +3230,7 @@ Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:0:trailer=6 3644,8441
+Tor	BNP:2:-247:trailer=5 3618,8436
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
 Tor, üblicherweise geschlossen	BNP:10:-145 16145,4217
@@ -4032,3 +4036,4 @@ Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	1::ig
 Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	1::igndisp 9148,13944 9193,13942
 Martin-Luther-Str.: linker Gehweg	1::igndisp 6518,9867 6504,9961
 Martin-Luther-Str.: linker Gehweg	1::igndisp 6492,9782 6518,9867
+Blissestr.: linker Gehweg	1::igndisp 4754,8608 4769,8563

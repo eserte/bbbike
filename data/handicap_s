@@ -9,6 +9,7 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
+Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -88,7 +89,7 @@ Alt-Tegel: reger Fußgängerverkehr (Fußgängerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3820,10987
-Wilmersdorfer Str.: Fußgängerzone	q4 3717,11462 3708,11519
+Wilmersdorfer Str.: Fußgängerzone, nachts und sonntags Radfahren erlaubt	q4 3717,11462 3706,11534
 (An der Müggelspree): Fußgänger	q2 23462,4906 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
 Pestalozzistr.: Fußgängerzone	q3 3738,11231 3770,11231 3813,11230
@@ -304,9 +305,10 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,
 Volkspark Wilmersdorf: einige Fußgänger	q1 5917,8351 5831,8358
 Volkspark Wilmersdorf: einige Fußgänger	q1 5680,8355 5699,8308
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
-Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5401,8528 5405,8549
+Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5511,8480 5497,8486 5429,8516 5401,8528 5405,8549
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: einige Fußgänger	q1 5761,8339 5699,8308 5687,8280 5700,8241 5730,8207
+(Uhlandstr./Blissestr. - Mannheimer Str.): schmaler Weg, Fußgänger	q2 4769,8563 4677,8605
 (zur Thomas-Dehler-Str.): Fußgänger, Bordstein	q4 6657,11467 6716,11439
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 16939,18652 16998,18695
 (S-Bahnunterführung Wartenberg): Rampe	q3 16998,18695 17024,18674 17008,18701
@@ -361,7 +363,7 @@ Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
 Südstern: Fußgänger	q3 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 Ruhlsdorfer Str.: Bordstein, Fußgänger	q4 9350,10176 9368,10211
-(Olivaer Platz, Wielandstr. - Bayerische Str.): Fußgänger, Bordstein	q3 4360,10320 4352,10260
+(Olivaer Platz, Wielandstr. - Bayerische Str.): Fußgänger	q3 4360,10320 4352,10260
 (Güntzelstr. - Pommersche Str.): Fußgänger	q3 4699,9505 4550,9539
 Naunynstr.: Fußgänger	q1 11366,10793 11329,10787
 Spreepromenade am DomAquarée: Fußgänger, Cafés, Radfahren verboten	q4 10300,12587 10291,12600 10244,12664 10216,12706 10166,12777
@@ -3468,3 +3470,4 @@ Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	q3::i
 Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	q3::igndisp; 9193,13942 9148,13944
 Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6504,9961 6518,9867
 Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6518,9867 6492,9782
+Blissestr.: linker Gehweg	q3::igndisp; 4769,8563 4754,8608
