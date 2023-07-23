@@ -18,12 +18,12 @@ use 5.006; # autovivified fh
 use strict;
 # Setting $OLD_AGREP to a true value really means: use String::Approx
 # instead or no agrep at all.
-use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $DEBUG $sep);
+use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $AGREP_VARIANT $VERSION $VERBOSE $DEBUG $sep);
 use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = 1.79;
+$VERSION = 1.80;
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -39,6 +39,7 @@ $PLZ_BASE_FILE = "Berlin.coords.data" if !defined $PLZ_BASE_FILE;
 	   "$_/Berlin.data",        "$_/data/Berlin.data") } @INC),
   ) if !@plzfile;
 $OLD_AGREP = 0 unless defined $OLD_AGREP;
+$AGREP_VARIANT = 'agrep' unless defined $AGREP_VARIANT;
 # on FreeBSD is
 #    ports/textproc/agrep => agrep 2.04 with buggy handling of umlauts
 #    ports/textproc/glimpse => agrep 3.0
@@ -171,9 +172,9 @@ sub look {
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));
     if ($grep_type eq 'agrep') {
-	if ($OLD_AGREP ||
+	if (($AGREP_VARIANT eq 'agrep' && $OLD_AGREP) ||
 	    (!$args{Noextern} && !is_in_path('agrep')) ||
-	    length($str) > AGREP_LONGEST_RX # otherwise there are "pattern too long" errors
+	    ($AGREP_VARIANT eq 'agrep' && length($str) > AGREP_LONGEST_RX) # otherwise there are "pattern too long" errors
 	    # XXX AGREP_LONGEST_RX is not perfect --- the string is rx-escaped, see below
 	   ) {
 	    $args{Noextern} = 1;
@@ -229,7 +230,11 @@ sub look {
 		# XXX quotemeta verwenden?
 		$str =~ s/([\\.*\[\]])/\\$1/g; # quote metacharacters
 	    } else { # agrep
-		$str =~ s/([\$\^\*\[\]\^\|\(\)\!\`\,\;])/\\$1/g;
+		if ($AGREP_VARIANT eq 'tre-agrep') {
+		    $str = quotemeta($str);
+		} else {
+		    $str =~ s/([\$\^\*\[\]\^\|\(\)\!\`\,\;])/\\$1/g;
+		}
 	    }
 	    $str = "^$str";
 	}
@@ -251,7 +256,8 @@ sub look {
 	if ($grep_type eq 'grep' && _grep_needs_a()) {
 	    unshift @grep_args, '-a';
 	}
-	my @cmd = ($grep_type, @grep_args);
+	my $grep_basecmd = $grep_type eq 'agrep' ? $PLZ::AGREP_VARIANT : $grep_type;
+	my @cmd = ($grep_basecmd, @grep_args);
 	_call_ext_cmd(\@cmd, $push_sub);
     } else {
 	CORE::open(PLZ, $file)

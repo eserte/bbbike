@@ -73,6 +73,7 @@ my $max = 1;
 my $extern_first;
 
 my $do_levenshtein;
+my $do_tre_agrep;
 
 if (!GetOptions("create!" => \$create,
 		"xxx!" => \$goto_xxx,
@@ -83,8 +84,11 @@ if (!GetOptions("create!" => \$create,
 		"max=i" => \$max,
 		"externfirst!" => \$extern_first,
 		"levenshtein!" => \$do_levenshtein,
+		"tre-agrep!" => sub {
+		    $PLZ::AGREP_VARIANT = 'tre-agrep',
+		},
 	       )) {
-    die "Usage: $0 [-create] [-xxx] [-v] [-[no]extern] [-levenshtein]";
+    die "Usage: $0 [-create] [-xxx] [-v] [-[no]extern] [-levenshtein] [-tre-agrep]\n";
 }
 
 if ($create) {
@@ -210,7 +214,7 @@ for my $noextern (@extern_order) {
     if ($do_levenshtein) {
 	pass("*** This is a test with Text::Levenshtein $Text::Levenshtein::VERSION");
     } else {
-	pass("*** This is a test with " . ($noextern ? "String::Approx $String::Approx::VERSION" : "agrep") . " (if available) ***");
+	pass("*** This is a test with " . ($noextern ? "String::Approx $String::Approx::VERSION" : $PLZ::AGREP_VARIANT) . " (if available) ***");
     }
 
     if ($goto_xxx) { goto XXX }
@@ -289,7 +293,10 @@ for my $noextern (@extern_order) {
 	    or diag $dump->(\@res);
 
 	{
-	    local $TODO = "Both agrep and String::Approx started to fail after addition of some streets to Berlin.coords.data; maybe problems with the iso-8859-1 data here?)";
+	    local $TODO;
+	    if (!$noextern && $PLZ::AGREP_VARIANT eq 'agrep') { # tre-agrep not affected
+		$TODO = "Both agrep and String::Approx started to fail after addition of some streets to Berlin.coords.data; maybe problems with the iso-8859-1 data here?)";
+	    }
 	    @res = $plz->look_loop(PLZ::split_street("str.des 17.Juni"),
 				   @standard_look_loop_args);
 	    is(scalar @{$res[0]}, 4, "Hits for Straﬂe des 17. Juni (missing spaces)")
