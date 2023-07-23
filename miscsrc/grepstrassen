@@ -344,41 +344,32 @@ while(my($k,$v) = each %special_end) {
 }
 
 binmode STDOUT; # for Windows
-if ($preserveglobaldirectives) {
-    $new_s->set_global_directives(dclone $s->get_global_directives);
-#XXX del:
-#     my $global_directives = $s->get_global_directives;
-#     if ($global_directives && keys %$global_directives) {
-# 	for my $global_directive (keys %$global_directives) {
-# 	    print join("", map { "#: $global_directive: $_\n" } @{ $global_directives->{$global_directive} });
-# 	    if ($global_directive eq 'encoding') {
-# 		binmode STDOUT, ":encoding(" . $global_directives->{$global_directive}->[0] . ")";
-# 	    }
-# 	}
-# 	print "#:\n"; # end
-#     }
-} elsif (!$ignoreglobaldirectives) {
-    # Only preserve some importing global directives:
-    my $need_global_directive_separator;
-    my $comment_directives = $s->get_global_directives->{'#'};
-    if ($comment_directives) {
-	print join("", map { "#: #: $_\n" } @$comment_directives);
-	$need_global_directive_separator++;
+
+if ($preserveglobaldirectives || !$ignoreglobaldirectives) {
+    my $global_directives = $s->get_global_directives;
+    my $encoding_directive = $s->get_global_directive('encoding');
+    if ($preserveglobaldirectives) {
+	$new_s->set_global_directives(dclone $global_directives);
+    } elsif (!$ignoreglobaldirectives) {
+	# Only preserve some importing global directives:
+	my $need_global_directive_separator;
+	my $comment_directives = $global_directives->{'#'};
+	if ($comment_directives) {
+	    print join("", map { "#: #: $_\n" } @$comment_directives);
+	    $need_global_directive_separator++;
+	}
+	if ($encoding_directive) {
+	    (my $emacs_coding_system = $encoding_directive) =~ s{iso8859}{iso-8859};
+	    print "#: encoding: $emacs_coding_system\n";
+	    $need_global_directive_separator++;
+	}
+	if ($need_global_directive_separator) {
+	    print "#:\n";
+	}
     }
-    my $encoding_directive = $s->get_global_directives->{'encoding'}->[0];
     if ($encoding_directive) {
-	(my $emacs_coding_system = $encoding_directive) =~ s{iso8859}{iso-8859};
-	print "#: encoding: $emacs_coding_system\n";
 	binmode STDOUT, ":encoding($encoding_directive)";
-	$need_global_directive_separator++;
     }
-    if ($need_global_directive_separator) {
-	print "#:\n";
-    }
-    # XXX del:
-    # XXX The "# filtered" is a hack to prevent the first line being interpreted
-    # as a global directive.
-    #print "# filtered\n" . 
 }
 
 print $new_s->as_string;

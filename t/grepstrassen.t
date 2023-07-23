@@ -419,11 +419,11 @@ EOF
     $sample_utf8_bbd =~ s{iso-8859-1}{utf-8}g;	    
 
     for my $def (
-		 [$sample_latin1_bbd,                'latin1 encoding',       undef],
-		 [$sample_no_encoding_directive_bbd, 'no encoding directive', undef],
-		 [$sample_utf8_bbd,                  'utf-8 encoding',        1],
+		 [$sample_latin1_bbd,                'latin1 encoding'],
+		 [$sample_no_encoding_directive_bbd, 'no encoding directive'],
+		 [$sample_utf8_bbd,                  'utf-8 encoding'],
 		) {
-	my($bbd, $test_label, $todo_needed) = @$def;
+	my($bbd, $test_label) = @$def;
 
 	{
 	    my $out = run_grepstrassen $bbd, [];
@@ -431,9 +431,6 @@ EOF
 	}
 
 	{
-	    local $TODO;
-	    $TODO = "Known failure with -preserveglobaldirectives and non-latin1 encodings" if $todo_needed; # XXX temporary
-
 	    my $out = run_grepstrassen $bbd, ['-preserveglobaldirectives'];
 	    eq_or_diff $out, $bbd, "bbd file with $test_label - roundtrip with -preserveglobaldirectives";
 	}
