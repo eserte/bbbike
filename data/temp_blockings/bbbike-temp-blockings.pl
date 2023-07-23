@@ -18228,7 +18228,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-07-21 00:00:00"), # 1658440800, # 2022-07-22 00:00
-       until => $isodate2epoch->("2023-07-23 23:59:59"), # 1658613599, # 2022-07-23 23:59
+       until => $isodate2epoch->("2023-07-22 23:59:59"), # 1658613599, # 2022-07-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6, start => "2020-07-30T00:00:00"]], # Absage 2020
        source_id => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
@@ -36110,9 +36110,9 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1680938171305951232#m
 #: by: https://viz.berlin.de/2023/07/csd-berlin/
 #: source_id: viz2021:13.369347,52.515752,21.07.2022,12:30 (inaktiv)
-#: source_id: viz2021:13.376805,52.516213,20.07.2023,08:00 (bis 23.07.2023)
-#: source_id: viz2021:13.364259,52.515422,20.07.2023,08:00 (bis 23.07.2023)
-#: source_id: viz2021:13.370204,52.516676,20.07.2023,08:00 (bis 23.07.2023)
+#: source_id: viz2021:13.376805,52.516213,20.07.2023,08:00 (bis 23.07.2023) (inaktiv)
+#: source_id: viz2021:13.364259,52.515422,20.07.2023,08:00 (bis 23.07.2023) (inaktiv)
+#: source_id: viz2021:13.370204,52.516676,20.07.2023,08:00 (bis 23.07.2023) (inaktiv)
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	3 8119,12414 8055,12186 8049,12140
@@ -39198,6 +39198,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
+#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023)
 #: XXX Wann sind die Straßen offen? vvv
 #: last_checked: 2023-07-23 vvv
 #: check_frequency: 60d vvv
@@ -39788,6 +39789,7 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Einschränkung beim Straßenbahnverkehr, bis 20.8.2023)
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-240723/ (auch Radverkehr, bis Ende August 2023)
 #: source_id: bvg2021:61#BVG324735_0 (hier bis 28.8.2023)
+#: source_id: viz2021:13.576366,52.445991,24.07.2023,04:00 (bis 27.08.2023)
 # REMOVED --- #: last_checked: 2023-07-15 --- #: next_check: 2023-07-24
 	q4::inwork 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 EOF
