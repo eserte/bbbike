@@ -35,15 +35,14 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000
 Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198
-Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
-Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
+Hämmerlingstr.: Bauarbeiten, Engstellen und Verschwenkungen	q3::inwork 21984,6317 22000,6245 22033,6144
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
+Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15236,10684
 Margaretenstr.: Fahrbahn zwischen Metastr. und Heinrichstr. gesperrt	q3::inwork 17006,11391 16948,11409
-Frankfurter Allee [Wohngebiet]: Bauarbeiten, Anbindung zur richtigen Frankfurter Allee unterbrochen, Bordsteine	q3::inwork 16190,11872 16214,11935
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
@@ -232,7 +231,8 @@ Volkspark Friedrichshain: Fußgänger	q3 12126,13538 12006,13481 11995,13463
 Volkspark Friedrichshain: Fußgänger	q3 11857,13596 11842,13576
 Volkspark Friedrichshain: Fußgänger	q3 12141,13341 12131,13333
 Volkspark Friedrichshain: Fußgänger	q3 12038,13685 12145,13628 12169,13609
-Volkspark Friedrichshain, Weg zum großen Bunkerberg: Fußgänger, Steigung	q3 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
+Volkspark Friedrichshain, Weg zum großen Bunkerberg: Fußgänger, Steigung	q3 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12337,13436 12310,13481 12254,13495 12232,13477 12238,13441 12247,13444 12256,13428 12278,13418 12295,13433 12275,13445
+Volkspark Friedrichshain, Weg zum großen Bunkerberg: Fußgänger, Steigung	q3 12337,13436 12294,13395 12275,13392 12250,13413 12238,13441
 Volkspark Friedrichshain: Fußgänger	q3 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 Volkspark Friedrichshain: Skater, Fußgänger	q3 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
 Volkspark Friedrichshain: Fußgänger	q3 12915,13785 12937,13803 12887,13877 12879,13889
@@ -1087,6 +1087,7 @@ Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
 (Unterführung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
 (Cottbusser Platz - Hellersdorfer Str.): Fußgänger	q2 23366,14537 23399,14520
 Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23758,14683 23740,14667 23760,14669 23769,14609 23778,14568 23781,14545 23772,14523 23794,14511 23801,14500 23817,14461 23877,14315 23897,14274 23962,14140 24055,13984
+Kastanienallee (Hellersdorf): Fußgänger	q1 23781,14545 23800,14534 23807,14512 23801,14500
 (Kastanienallee - Stollberger Str.): Fußgänger	q1 23897,14274 23983,14318
 enge Rampe	q3 23778,14568 23792,14561 23793,14573
 (Erich-Kuttner-Str. - Storkower Str.): Bordsteine	q4 14088,13627 14060,13622
@@ -2468,6 +2469,9 @@ Eulerstr.: Fußgängerbereich, Quartierplatz	q4 9465,16464 9493,16481
 (Mauerweg - Schönefelder Chaussee): einige Fußgänger	q1 18702,1338 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
 (Adlergestell/Am Seegraben - Walchenseestr.): schmaler Pfad	q3 21879,1517 21899,1526
 (Umfahrung Baustelle Behrens-Ufer): schmal, kurvig	q3 19139,5627 19137,5613 19165,5568 19134,5544
+(Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): einige Fußgänger, Kurve	q2 23387,15322 23404,15324
+(Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): einige Fußgänger	q1 23404,15324 23418,15234
+(Eva-Strittmatter-Str. - Kastanienallee): einige Fußgänger	q1 23536,15252 23550,15261 23661,15282
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

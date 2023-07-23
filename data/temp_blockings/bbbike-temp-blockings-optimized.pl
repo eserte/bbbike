@@ -530,7 +530,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt f‰llt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist ¸blicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - M‰rz)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfl‰che; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfl‰che existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-06-23
+#: last_checked: 2023-07-23
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -2606,14 +2606,14 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: also_indoor: search Blumberger-Damm-Br¸cke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-07-15 (osm)
+#: last_checked: 2023-07-23
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
          'from' => 1630670400,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der S¸dlichen Blumberger-Damm-Br¸cke mˆglicherweise gesperrt (Stand April 2022: Durchfahrt ist gesperrt)',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der S¸dlichen Blumberger-Damm-Br¸cke mˆglicherweise gesperrt (Stand Juli 2022: Durchfahrt ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2795,7 +2795,7 @@ Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,1639
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 kˆnnen die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-07-12 vvv
+#: last_checked: 2023-07-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5435,7 +5435,7 @@ hier nur der Kreuzungsbereich Dinkelsb¸hler Str./Edelhofdamm gesperrt	q3::inwork
        {
          'data' => '#: note: Einbahnstraﬂenbereich ist 50m lang
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2023-06-02
+#: last_checked: 2023-07-23
 #: check_frequency: 90d
 #: next_check: 2023-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -5507,11 +5507,11 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: XXX Wann sind die Straﬂen offen? vvv
-#: last_checked: 2023-07-19 vvv
+#: last_checked: 2023-07-23 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
-Gustav-Tempel-Str.	2::inwork 15220,10682 15205,10616 15200,10600
+Gustav-Tempel-Str.	2::inwork 15261,10738 15236,10684 15220,10682 15205,10616 15200,10600
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

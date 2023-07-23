@@ -573,6 +573,9 @@ Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,
 Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
 Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
 Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21618,5699 21605,5687
+Waltersdorfer Chaussee: Mittelstreifen, Leitplanken	1::igndisp 18561,-1183 18513,-1212 18454,-1241
+Waltersdorfer Chaussee: Mittelstreifen, Leitplanken	1::igndisp 18454,-1241 18515,-1203 18561,-1183
+Waltersdorfer Chaussee: Mittelstreifen, Leitplanken	3nocross::ignrte 18454,-1241 18515,-1203 18561,-1183
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -3334,6 +3337,7 @@ weites Drängelgitter	BNP:2:-68:trailer=7 15698,8903
 weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
+Schranke, auf Gehweg umfahren	BNP:2:-11:trailer=4 23537,15247
 Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
 Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
 Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856

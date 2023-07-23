@@ -927,7 +927,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-07-22
+#: last_checked: 2023-07-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -4017,7 +4017,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="11"
-#: last_checked: 2023-07-15 (osm) vvv
+#: last_checked: 2023-07-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -8426,9 +8426,9 @@ verlängerte Suggestivstreifen am Anfang und Ende des Straßenabschnitts	RW0; 9183
 Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,2598 3171,2848
 # 
 #: by: mapillary vvv
-	RW6;RW6 23452,15046 23419,15226
-	RW6;RW6 23419,15226 23538,15247
-	RW6;RW6 23538,15247 23569,15062
+	RW6;RW6 23452,15046 23418,15234
+	RW6;RW6 23418,15234 23536,15252
+	RW6;RW6 23536,15252 23537,15247 23569,15062
 #: by ^^^
 # 
 #: note: Steglitzer Damm Richtung Osten

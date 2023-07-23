@@ -68,7 +68,7 @@ Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2023-06-23 vvv
+#: last_checked: 2023-07-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -248,7 +248,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: next_check_id: ROTESRATHAUS-2023 --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fuﬂg‰nger	q2 10704,12595 10695,12616 10615,12642 10542,12587
 # 
 #: next_check_id: PLDVEREINTENNATIONEN-2023
-#: last_checked: 2023-07-02
+#: last_checked: 2023-07-23
 #: check_frequency: 30d
 #: next_check: 2023-07-28
 #: valid: -20230728
@@ -601,12 +601,13 @@ Rathenaustr./Plˆnzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 188
 #: osm_watch: way id="1181902719" version="1"
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) vvv
 #: also_indoor: traffic (H,G,B,W) vvv
-#: last_checked: 2023-07-09 vvv
+#: last_checked: 2023-07-22 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-08-01 vvv
 #: valid: 20230325-20230801 vvv
-H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
-H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
+# REMOVED --- H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
+# REMOVED --- H‰mmerlingstr.: Fahrbahn unter der Eisenbahnbr¸cke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
+H‰mmerlingstr.: Bauarbeiten, Engstellen und Verschwenkungen	q3::inwork 21984,6317 22000,6245 22033,6144
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -795,18 +796,17 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: RUMMELSBURGERBUCHT-2021
+#: last_checked: 2023-07-23
+Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15261,10738 15236,10684
+# 
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
 #: last_checked: 2023-07-19
 Margaretenstr.: Fahrbahn zwischen Metastr. und Heinrichstr. gesperrt	q3::inwork 17006,11391 16948,11409
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraﬂenregelung an der Rummelsburger Landstraﬂe, B¸rgersteig existiert	q3::inwork; 17527,7812 17590,7828
-# 
-#: add_fragezeichen: Wann ist die Sperrung beendet?
-#: also_indoor: traffic (B)
-#: last_checked: 2023-07-05 (mapillary)
-Frankfurter Allee [Wohngebiet]: Bauarbeiten, Anbindung zur richtigen Frankfurter Allee unterbrochen, Bordsteine	q3::inwork 16190,11872 16214,11935
-# 
+# REMOVED (beendet) --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-07-05 (mapillary) --- Frankfurter Allee [Wohngebiet]: Bauarbeiten, Anbindung zur richtigen Frankfurter Allee unterbrochen, Bordsteine	q3::inwork 16190,11872 16214,11935
 # REMOVED (keine Einschr‰nkung mehr) --- #: next_check_id: PARKAUE-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023 --- #: XXX Einbahnstraﬂenregelung nach den Bauarbeiten wiederherstellen --- #: also_indoor: traffic (ex-G) --- #: last_checked: 2023-06-16 --- #: check_frequency: 90d --- #: next_check: 2023-10-31 --- Parkaue: Bauarbeiten der Wasserbetriebe, Einbahnstraﬂenregelung	q4+::inwork; 15535,12420 15457,12449
 # REMOVED (am n‰chsten Tag aufgehoben) --- #: last_checked: 2022-06-18 --- #: check_frequency: 14d --- Gustav-Holzmann-Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 16119,9689 16302,9865
 # REMOVED (Fahrbahn ist frei) --- #: next_check_id: ROEDELIUSPLATZ-2022 --- #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021) --- #: XXX ‰ndert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit? --- #: XXX Laut Schild der Wasserbetriebe bis Juni 2022 --- #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!) --- #: also_indoor: traffic (ex-G[unvollst‰ndig],H[mittlerweile richtig],B) --- #: last_checked: 2022-11-06 vvv --- #: check_frequency: 7d vvv --- #: next_check: 2023-08-31 vvv --- Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12293
@@ -1388,7 +1388,10 @@ Volkspark Friedrichshain: Fuﬂg‰nger	q3 12141,13341 12131,13333
 Volkspark Friedrichshain: Fuﬂg‰nger	q3 12038,13685 12145,13628 12169,13609
 #: XXX_prog: Steigung sollte in comments_mount erw‰hnt werden?
 #: note: kein offizieller Radweg
-Volkspark Friedrichshain, Weg zum groﬂen Bunkerberg: Fuﬂg‰nger, Steigung	q3 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
+Volkspark Friedrichshain, Weg zum groﬂen Bunkerberg: Fuﬂg‰nger, Steigung	q3 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12337,13436 12310,13481 12254,13495 12232,13477 12238,13441 12247,13444 12256,13428 12278,13418 12295,13433 12275,13445
+#: XXX_prog: Steigung sollte in comments_mount erw‰hnt werden?
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain, Weg zum groﬂen Bunkerberg: Fuﬂg‰nger, Steigung	q3 12337,13436 12294,13395 12275,13392 12250,13413 12238,13441
 #: note: kein offizieller Radweg
 Volkspark Friedrichshain: Fuﬂg‰nger	q3 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 #: note: kein offizieller Radweg
@@ -1803,7 +1806,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2023-07-19
+#: last_checked: 2023-07-23
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -2603,8 +2606,8 @@ Lion-Feuchtwanger-Str.: Fuﬂg‰nger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: XXX_prog BS am nˆrdlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Mˆglicherweise nur wegen der benachbarten Hochbauarbeiten?
 #: osm_watch: way id="733001657" version="4"
-#: last_checked: 2022-07-17
-#: check_frequency: 360d
+#: last_checked: 2023-07-23
+#: check_frequency: 120d
 Lion-Feuchtwanger-Weg: Fuﬂg‰nger, Bordstein	q3 22516,12946 22493,12999
 (Erich-K‰stner-Str. - Peter-Huchel-Str.): eng, Fuﬂg‰nger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
 (Carola-Neher-Str. - U-Bhf. Cottbusser Platz): Fuﬂg‰nger	q1 23438,14355 23476,14409 23458,14439
@@ -2612,6 +2615,7 @@ Lion-Feuchtwanger-Weg: Fuﬂg‰nger, Bordstein	q3 22516,12946 22493,12999
 (Unterf¸hrung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
 (Cottbusser Platz - Hellersdorfer Str.): Fuﬂg‰nger	q2 23366,14537 23399,14520
 Kastanienallee (Hellersdorf): Fuﬂg‰nger	q1 23756,14696 23758,14683 23740,14667 23760,14669 23769,14609 23778,14568 23781,14545 23772,14523 23794,14511 23801,14500 23817,14461 23877,14315 23897,14274 23962,14140 24055,13984
+Kastanienallee (Hellersdorf): Fuﬂg‰nger	q1 23781,14545 23800,14534 23807,14512 23801,14500
 (Kastanienallee - Stollberger Str.): Fuﬂg‰nger	q1 23897,14274 23983,14318
 enge Rampe	q3 23778,14568 23792,14561 23793,14573
 #: XXX_prog BS (2x), ansonsten q3 wegen der Fuﬂg‰nger
@@ -4636,6 +4640,10 @@ Eulerstr.: Fuﬂg‰ngerbereich, Quartierplatz	q4 9465,16464 9493,16481
 (Adlergestell/Am Seegraben - Walchenseestr.): schmaler Pfad	q3 21879,1517 21899,1526
 # 
 (Umfahrung Baustelle Behrens-Ufer): schmal, kurvig	q3 19139,5627 19137,5613 19165,5568 19134,5544
+# 
+(Havell‰nder Ring - Elfriede-Br¸ning-Str./Eva-Strittmatter-Str.): einige Fuﬂg‰nger, Kurve	q2 23387,15322 23404,15324
+(Havell‰nder Ring - Elfriede-Br¸ning-Str./Eva-Strittmatter-Str.): einige Fuﬂg‰nger	q1+ 23404,15324 23418,15234
+(Eva-Strittmatter-Str. - Kastanienallee): einige Fuﬂg‰nger	q1+ 23536,15252 23550,15261 23661,15282
 # 
 ######################### User Contributions #################################
 # 

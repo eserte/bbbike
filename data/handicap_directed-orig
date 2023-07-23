@@ -361,7 +361,7 @@ Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9
 #: last_checked ^^^
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: last_checked: 2023-05-06 vvv
+#: last_checked: 2023-07-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 vvv
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
@@ -513,4 +513,10 @@ Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:
 #: source_id: viz2021:13.263096,52.430416,11.07.2023,14:25 (bis 28.07.2023)
 #: valid: -20230728
 Mühlenstr./Prinz-Handjery-Str.: Umweg über Prinz-Handjery-Str.	DH:len=50:h=q3,50 1121,2583 1008,2568 960,2534
+# 
+#: source_id: viz2021:13.529089,52.510269,06.07.2023,16:00 (bis 04.08.2023)
+#: last_checked: 2023-07-23
+#: next_check: 2023-08-04
+#: valid: -20230804
+Alt-Friedrichsfelde: Umweg über einen unbefestigten Trampelpfad	DH:len=42:h=q2,267 19092,11776 19389,11761
 # 
