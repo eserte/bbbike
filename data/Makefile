@@ -817,7 +817,7 @@ ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross .che
 	-@$(WRITEABLE) $@
 	${GREPSTRASSEN_VALID} ${f}-orig | \
 	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
-	    $(CONVERT_ORIG) -keep-directive url -keep-directive alias -special as_of - | \
+	    $(CONVERT_ORIG) -unutf8ify -keep-directive url -keep-directive alias -special as_of - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - > $@~
 	mv $@~ $@
