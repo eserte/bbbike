@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.13 2006/05/23 21:33:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -46,10 +45,11 @@ GetOptions("doit!" => \$doit,
 	   "forward" => \$forward,
 	   "potsdam!" => \$potsdam,
 	   "extern!" => \$extern,
+	   "tre-agrep!" => sub { $PLZ::AGREP_VARIANT = 'tre-agrep' },
 	   "v" => \$v,
 	  ) or die <<EOF;
 usage: $0 -doit [-hnr] [-logfile file] [-seek pos]
-          [-nopotsdam] [-noextern] [-forward] [-v]
+          [-nopotsdam] [-noextern | -tre-agrep] [-forward] [-v]
 EOF
 SKIP: {
 skip("Call this test script with -doit", 1) unless $doit;
