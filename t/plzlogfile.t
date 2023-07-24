@@ -73,13 +73,29 @@ my @standard_look_loop_args =
      Noextern => !$extern,
     );
 
+if ($logfile =~ /\.gz$/) {
+    if ($seek) {
+	die "Refusing operation on gzipped file if -seek is given"
+    }
+    if (!$forward) {
+	diag "Switching to forward operation for gzipped file";
+	$forward = 1;
+    }
+}
+
 my $LOGFILE;
 #open(LOGFILE, $logfile)
 if ($forward) {
-    require IO::File;
-    $LOGFILE = IO::File->new($logfile, "r")
-	or die "Can't open $logfile in forward mode: $!";
-    $LOGFILE->seek($seek, SEEK_SET);
+    if ($logfile =~ /\.gz$/) {
+	require PerlIO::gzip;
+	open $LOGFILE, '<:gzip', $logfile
+	    or die "Can't open gzipped file $logfile: $!";
+    } else {
+	require IO::File;
+	$LOGFILE = IO::File->new($logfile, "r")
+	    or die "Can't open $logfile in forward mode: $!";
+	$LOGFILE->seek($seek, SEEK_SET);
+    }
 } else {
     $LOGFILE = File::ReadBackwards->new($logfile)
 	or die "Can't open $logfile: $!";
@@ -153,7 +169,7 @@ __END__
 
 =head1 EXAMPLE USAGE
 
-Grab a bbbike apache accesslog file (currently has to be uncompressed)
+Grab a bbbike apache accesslog file
 and try it with different PLZ.pm methods:
 
     ALOGFILE=/path/to/bbbike.de_access.log
