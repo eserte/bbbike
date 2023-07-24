@@ -150,3 +150,19 @@ sub lookup {
 }
 
 __END__
+
+=head1 EXAMPLE USAGE
+
+Grab a bbbike apache accesslog file (currently has to be uncompressed)
+and try it with different PLZ.pm methods:
+
+    ALOGFILE=/path/to/bbbike.de_access.log
+    time perl t/plzlogfile.t --doit             --logfile $ALOGFILE >| /tmp/alog-extern
+    time perl t/plzlogfile.t --doit --noextern  --logfile $ALOGFILE >| /tmp/alog-noextern
+    time perl t/plzlogfile.t --doit --tre-agrep --logfile $ALOGFILE >| /tmp/alog-tre-agrep
+
+Do a diff or try multi-diff (see L<https://github.com/eserte/srezic-misc/blob/master/scripts/multi-diff>):
+
+    multi-diff /tmp/alog-extern /tmp/alog-noextern /tmp/alog-tre-agrep
+
+=cut
