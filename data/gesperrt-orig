@@ -771,7 +771,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
-#: osm_watch: way id="5111625" version="14"
+#: osm_watch: way id="5111625" version="15"
 #: last_checked: 2022-09-25
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
@@ -3803,7 +3803,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2023-07-12 vvv
+#: last_checked: 2023-07-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4226,7 +4226,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
-#: osm_watch: way id="4713304" version="43"
+#: osm_watch: way id="4713304" version="44"
 #: priority: #A
 #: last_checked: 2023-05-09 (youtube)
 #: check_frequency: 360d
@@ -4264,11 +4264,11 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8677 (Antrag zum Radweg in der Unterführung)
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2023-05-13 vvv
+#: last_checked: 2023-07-23 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
-#: osm_watch: way id="152434836" version="23"
-#: osm_watch: way id="30084962" version="29"
+#: osm_watch: way id="152434836" version="24"
+#: osm_watch: way id="30084962" version="30"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
@@ -4337,9 +4337,11 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-06-15
-#: check_frequency: 45d
-Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
+#: XXX mittlerweile bis zur Georgenstr. ausgeweitet, check_frequency deswegen angepasst
+#: last_checked: 2023-07-25
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 45d
+Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10973,12611 10951,12637

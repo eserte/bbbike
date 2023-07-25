@@ -30448,7 +30448,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-07-23 vvv
+#: last_checked: 2023-07-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -35352,16 +35352,17 @@ EOF
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 EOF
      },
-     { from  => undef, # 
-       until => 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten östlich der Innstr., Fahrbahn gesperrt, Radweg Richtung Osten gesperrt, Ende der Bauarbeiten unbekannt',
+     { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
+       until => undef, # 1654702215, # undef, # XXX
+       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., vermutlich wird die Fahrbahn gesperrt sein, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-# REMOVED (hier nicht mehr) --- #: next_check_id: WESER-2021 --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv
-	q4::inwork; 13217,8493 13384,8354
-#: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen
-	q2::inwork; 13384,8354 13217,8493
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
+#: next_check_id: WESER-2021
+# REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
+#: last_checked: 2023-07-25
+#: next_check: 2023-07-31
+zwischen Wildenbruchstr. und Innstr.	q4::inwork 13033,8628 13124,8562 13217,8493
 EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
@@ -35561,7 +35562,7 @@ EOF
 #: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023) (inaktiv)
 #: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023)
+#: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024)
 # REMOVED --- #: last_checked: 2023-07-17 (mapillary, Durchfahrt möglich)
 # REMOVED --- #: next_check: 2024-01-31
@@ -35839,7 +35840,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-07-12
+#: last_checked: 2023-07-25
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -37854,15 +37855,18 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr. Richtung Süden, auch für Radfahrer (Stand: Anfang Juli 2023: noch immer gesperrt)',
+       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr., vermutlich auch für Radfahrer, bis 28.08.2023, evtl. auch länger', # Richtung Süden ... (Stand: Anfang Juli 2023: noch immer gesperrt)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: EDISON-2022
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
+#: by: https://nitter.net/VIZ_Berlin/status/1683714580856311808#m
+#: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023)
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2023-07-15
-	q4::inwork; 17962,6674 17991,6431
+#: next_check: 2023-07-25
+	q4::inwork 17962,6674 17991,6431
 EOF
      },
      { from  => undef, # 
@@ -39379,7 +39383,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1670462625707175936#m (im Text steht Wattstr. ...)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl3SDZRMVhnQUFqRzhiLmpwZw== (... aber laut Verkehrszeichenplan ist Waltraud-Krause-Weg genauer)
 #: also_indoor: traffic (H,G[ungenau],W[ungenau],B)
-#: source_id: viz2021:13.504135,52.460893,05.07.2023,08:00 (bis 25.07.2023, danach weitere Arbeiten)
+#: source_id: viz2021:13.504135,52.460893,05.07.2023,08:00 (bis 25.07.2023, danach weitere Arbeiten) (bis 01.09.2023)
 #: add_fragezeichen: Ist die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2023-07-15
 	q4::inwork; 17842,6639 17860,6644 17962,6674
@@ -39558,21 +39562,17 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: bvg2021:m43#BVG323893_0
-#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023)
-#: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023)
+#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
+#: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2023-07-24 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2023-07-25 vvv
+# REMOVED --- #: last_checked: 2023-07-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-07-25 vvv
 Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
 Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
 #: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str.
 Elsenstr.	q3::inwork; 13849,9310 13766,9200
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1688875200, # 2023-07-09 06:00
@@ -39657,7 +39657,7 @@ EOF
 #: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum)
 #: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-07-20
+#: last_checked: 2023-07-25
 #: check_frequency: 14d
 	q4::inwork; 9384,12103 9373,12197
 EOF
@@ -39842,6 +39842,16 @@ EOF
        source_id => 'LS/221-F/23/091', # zwei Bauabschnitte, bis 30.09.2023
        data  => <<EOF,
 	2::inwork 65854,-2562 65816,-2687 65638,-2821 64980,-3141 64470,-3222 63787,-3692 63523,-3781 62692,-4215 62507,-4444
+EOF
+     },
+     { from  => 1690196400, # 2023-07-24 13:00
+       until => 1693494000, # 2023-08-31 17:00
+       text  => 'Schillerstr.: Wasserrohrbruch, zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.07.2023 13:00 bis 31.08.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
+#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023)
+	q4::inwork 10178,20525 10066,20494
 EOF
      },
     );
