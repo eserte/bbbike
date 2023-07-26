@@ -3516,15 +3516,23 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			  -command => sub { pending(1, 'recalc-net') },
 			 );
 	if ($devel_host) { # XXX noch kaum Implementation dafür vorhanden
+	    # XXX better to use state
+	    use vars qw($WARNED_CARGOBIKE_IMPL $WARNED_HEAVYBIKE_IMPL);
 	    $umm->radiobutton(-label => M"Lastenrad",
 			      -variable => \$special_vehicle_rb,
 			      -value => 'cargobike',
-			      -command => sub { pending(1, 'recalc-net') },
+			      -command => sub {
+				  main::status_message("Achtung: die Lastenrad-Routenoptimierung ist derzeit nur rudimentär vorhanden!", 'infodlg') if !$WARNED_CARGOBIKE_IMPL++;
+				  pending(1, 'recalc-net');
+			      },
 			     );
 	    $umm->radiobutton(-label => M"Schweres Rad",
 			      -variable => \$special_vehicle_rb,
 			      -value => 'heavybike',
-			      -command => sub { pending(1, 'recalc-net') },
+			      -command => sub {
+				  main::status_message("Achtung: die Routenoptimierung für schwere Räder ist derzeit nur rudimentär vorhanden!", 'infodlg') if !$WARNED_HEAVYBIKE_IMPL++;
+				  pending(1, 'recalc-net');
+			      },
 			     );
 	}
     }
