@@ -34940,6 +34940,7 @@ EOF
        source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30', # zunächst bis 21.12.2022, mittlerweile bis 31.1.2023
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
 #: also_indoor: traffic (none)
 #: last_checked: 2022-10-15
 # REMOVED --- #: check_frequency: 90d
@@ -36772,20 +36773,15 @@ Winterfeldtstr., westlicher Abschnitt	q3::inwork 6630,9990 6741,10017
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
+       until => $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
        text  => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 24.07.2023, vielleicht auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id: bvg2021:396#BVG323890_0
-#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
-#: also_indoor: traffic (G)
-#: note: Halteverbot bis 24.7.2023 17h
-#: last_checked: 2023-07-24
-#: check_frequency: 14d
-#: next_check: 2023-07-25
+# REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 	q4::inwork 15777,10897 15820,10916 15870,10938
 EOF
@@ -37835,7 +37831,7 @@ EOF
 #: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
 #: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-03
+#: last_checked: 2023-07-26
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 EOF
@@ -37862,7 +37858,7 @@ EOF
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: by: https://nitter.net/VIZ_Berlin/status/1683714580856311808#m
-#: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023)
+#: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2023-07-15
 #: next_check: 2023-07-25
@@ -39036,7 +39032,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023)
+#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
 #: last_checked: 2023-07-01
 #: check_frequency: 30d
@@ -39100,7 +39096,7 @@ EOF
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="19"
-#: last_checked: 2023-07-20 (osm)
+#: last_checked: 2023-07-26
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39155,7 +39151,8 @@ EOF
        text  => 'Hermsdorfer Str.: Bauarbeiten zwischen Avenue Charles de Gaulle und Oranienburger Str., Fahrbahn gesperrt, Gehweg für Radfahrer frei, außerdem Sperrungen im Kreuzungsbereich Jean-Jaurès-Str./Cyclopstr., vom 10.01.2023 08:00 bis 29.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024)
+#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023)
+#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -39516,7 +39513,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: last_checked: 2023-07-20 vvv
 #: next_check: 2023-10-23 vvv
@@ -39634,6 +39631,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/23-0699_kronprinzessinnenweg_rad_u_fussumleitung_-_ba_23_-_.pdf
 #: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
+#: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -39818,10 +39816,10 @@ EOF
 EOF
      },
      { from  => 1690063200, # 2023-07-23 00:00
-       until => 1691791140, # 2023-08-11 23:59
+       until => 1690406598, # 1691791140, # 2023-08-11 23:59
        text  => 'Aachener Str.: Bauarbeiten, zwischen Mecklenburgische Str. und Paretzer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.07.2023 00:00 bis 11.08.2023 23:59',
        type  => 'handicap',
-       source_id => 'viz2021:13.318556,52.482185,24.07.2023,00:00', # bis 11.08.2023
+       source_id => 'viz2021:13.318556,52.482185,24.07.2023,00:00', # bis 11.08.2023 # inaktiv
        data  => <<EOF,
 	q4::inwork 4623,8457 4687,8306
 EOF
@@ -39852,6 +39850,15 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
 #: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023)
 	q4::inwork 10178,20525 10066,20494
+EOF
+     },
+     { from  => 1687039200, # 2023-06-18 00:00
+       until => 1692655140, # 2023-08-21 23:59
+       text  => 'Gervinusstr.: Baustelle, zwischen Kracauerplatz und Droysenstr.gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.06.2023 00:00 bis 21.08.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.29624,52.50221,19.06.2023,00:00',
+       data  => <<EOF,
+	q4::inwork 3093,10594 3395,10704
 EOF
      },
     );

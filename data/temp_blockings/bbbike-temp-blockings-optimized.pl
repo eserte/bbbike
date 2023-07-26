@@ -3589,6 +3589,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
 #: also_indoor: traffic (none)
 #: last_checked: 2022-10-15
 # REMOVED --- #: check_frequency: 90d
@@ -4135,26 +4136,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: source_id[inactive]: bvg2021:396#BVG307357_0
-#: source_id: bvg2021:396#BVG323890_0
-#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
-# REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
-#: also_indoor: traffic (G)
-#: note: Halteverbot bis 24.7.2023 17h
-#: last_checked: 2023-07-24
-#: check_frequency: 14d
-#: next_check: 2023-07-25
-# REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
-	q4::inwork 15777,10897 15820,10916 15870,10938
-',
-         'from' => undef,
-         'id' => 3630,
-         'text' => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 24.07.2023, vielleicht auch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4644,7 +4626,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 #: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
 #: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-03
+#: last_checked: 2023-07-26
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 ',
@@ -4660,7 +4642,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: by: https://nitter.net/VIZ_Berlin/status/1683714580856311808#m
-#: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023)
+#: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2023-07-15
 #: next_check: 2023-07-25
@@ -5200,7 +5182,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        {
          'data' => '#: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023)
+#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
 #: last_checked: 2023-07-01
 #: check_frequency: 30d
@@ -5258,7 +5240,7 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="19"
-#: last_checked: 2023-07-20 (osm)
+#: last_checked: 2023-07-26
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -5301,7 +5283,8 @@ hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024)
+         'data' => '#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023)
+#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -5589,16 +5572,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'type' => 'handicap',
          'until' => 1735686000
        },
-       {
-         'data' => '	q4::inwork 3144,11659 3064,11657
-',
-         'from' => 1687644000,
-         'id' => 3835,
-         'source_id' => 'viz2021:13.29609,52.51176,26.06.2023,00:00',
-         'text' => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2023 00:00 bis 25.07.2023 23:59',
-         'type' => 'handicap',
-         'until' => 1690322399
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: BUERGER-2023
@@ -5627,7 +5601,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        {
          'data' => '#: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: last_checked: 2023-07-20 vvv
 #: next_check: 2023-10-23 vvv
@@ -5685,6 +5659,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/23-0699_kronprinzessinnenweg_rad_u_fussumleitung_-_ba_23_-_.pdf
 #: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
+#: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 	2::inwork -927,6888 -2218,5133 -3296,3686
 ',
          'from' => 1690581600,
@@ -5832,16 +5807,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 4623,8457 4687,8306
-',
-         'from' => 1690063200,
-         'id' => 3862,
-         'source_id' => 'viz2021:13.318556,52.482185,24.07.2023,00:00',
-         'text' => 'Aachener Str.: Bauarbeiten, zwischen Mecklenburgische Str. und Paretzer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.07.2023 00:00 bis 11.08.2023 23:59',
-         'type' => 'handicap',
-         'until' => 1691791140
-       },
+       undef,
        {
          'data' => '	2::inwork 41808,36267 42773,35959 43155,35936 44203,35121 44481,34906 44972,34649 45275,34475
 ',
@@ -5872,6 +5838,16 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'text' => 'Schillerstr.: Wasserrohrbruch, zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.07.2023 13:00 bis 31.08.2023 17:00',
          'type' => 'handicap',
          'until' => 1693494000
+       },
+       {
+         'data' => '	q4::inwork 3093,10594 3395,10704
+',
+         'from' => 1687039200,
+         'id' => 3866,
+         'source_id' => 'viz2021:13.29624,52.50221,19.06.2023,00:00',
+         'text' => 'Gervinusstr.: Baustelle, zwischen Kracauerplatz und Droysenstr.gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.06.2023 00:00 bis 21.08.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1692655140
        }
      
 );

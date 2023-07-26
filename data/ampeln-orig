@@ -20,7 +20,7 @@ Köpenicker Str.: Gegenverkehrsregelung	X::inwork 19933,2078
 Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 # 
 #: next_check_id: PISTORIUS-2023
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023)
 #: last_checked: 2023-07-20
 #: next_check: 2023-10-23
 #: valid: -20231023
@@ -39,7 +39,7 @@ Gegenverkehrsregelung	X::inwork 20302,1613
 Gegenverkehrsregelung	X::inwork 18527,16789
 # 
 #: next_check_id: KATHARINAPAULUS-2023
-#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023)
+#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: last_checked: 2023-07-01
 #: check_frequency: 120d
 #: next_check: 2025-09-05
@@ -82,7 +82,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung
-#: last_checked: 2023-07-24
+#: last_checked: 2023-07-26
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -2146,9 +2146,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12870,15342
 #: off: night (seen 2013-05-30 00:30)
 	X 13273,12902
-#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55, Mon 2023-03-06 23:05)
+#: off: night (seen Thu 2022-06-03 00:15, Mon 2023-03-06 23:00, Wed 2023-07-26 22:40)
+	X 13644,13332
+#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55, Mon 2023-03-06 23:05, Wed 2023-07-26 22:40)
 	X 13741,13107
-#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55, Mon 2023-03-06 23:05)
+#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55, Mon 2023-03-06 23:05, Wed 2023-07-26 22:40)
 	X 13844,12900
 	X 13073,13329
 	X 14771,14048
@@ -3222,8 +3224,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: ^^^
 	F 4646,6040
 	F 12347,6923
-#: off: night (seen Thu 2022-06-03 00:15, Mon 2023-03-06 23:00)
-	X 13644,13332
 #: XXX_prog: Ampel gilt nicht auf dem Radweg
 #: note: keine Anforderungsampel
 	F 13163,12382
