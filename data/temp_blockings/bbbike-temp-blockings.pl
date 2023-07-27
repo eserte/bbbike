@@ -28409,7 +28409,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-06-29
+#: last_checked: 2023-07-27
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -32558,7 +32558,7 @@ EOF
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-06-30
+#: last_checked: 2023-07-23 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -34770,7 +34770,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-07-09 (architektur-urbanistik)
+#: last_checked: 2023-07-27
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -34983,18 +34983,17 @@ EOF
      },
      { from  => 1643583600, # 2022-01-31 00:00
        until => undef, # XXX
-       text  => 'Spreeuferweg: Bauarbeiten, Holsteiner Ufer und Bellevueufer gesperrt, ab Anfang Februar 2022 für voraussichtlich zwei Jahre',
+       text  => 'Spreeuferweg: Bauarbeiten, Holsteiner Ufer gesperrt, ab Anfang Februar 2022 für voraussichtlich zwei Jahre', # ... und Bellevueufer
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-07-22 vvv
+#: last_checked: 2023-07-27 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="36"
-	2::inwork 7031,12320 6694,12627
+# REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="21"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
@@ -36575,7 +36574,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2023-06-09
+#: last_checked: 2023-07-27
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
@@ -36724,7 +36723,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-07-23 (daf)
+#: last_checked: 2023-07-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -36930,8 +36929,8 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 EOF
      },
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
-       until => $isodate2epoch->("2023-07-31 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
-       text  => 'Friedrichstr.: Fahrbahn zwischen Reinhardstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), Gesamtbaumaßnahme bis Ende Juli 2023',
+       until => $isodate2epoch->("2023-08-09 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
+       text  => 'Friedrichstr.: Fahrbahn zwischen Reinhardstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), voraussichtlich bis 8. August 2023',
 # was: voraussichtlich bis Ende Januar 2023
 # was:      text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
 # was: voraussichtlich bis 10.5.2023
@@ -36944,7 +36943,7 @@ EOF
 #: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
 #: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023) (bis 30.6.2023) (bis 31.07.2023)
+#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023) (bis 30.6.2023) (bis 31.07.2023) (bis 09.08.2023)
 #: source_id: viz2021:13.38778,52.52391,10.05.2023,06:00 (bis 30.06.2023) (bis 31.07.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
@@ -36964,7 +36963,7 @@ EOF
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
 #: last_checked: 2023-07-18 (mapillary) vvv
-#: next_check: 2023-07-31 vvv
+#: next_check: 2023-08-09 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -39081,7 +39080,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.414599,52.516503,02.11.2022,08:00',
        data  => <<EOF,
-#: last_checked: 2023-07-20
+#: last_checked: 2023-07-27
 #: check_frequency: 30d
 #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -39151,7 +39150,7 @@ EOF
        text  => 'Hermsdorfer Str.: Bauarbeiten zwischen Avenue Charles de Gaulle und Oranienburger Str., Fahrbahn gesperrt, Gehweg für Radfahrer frei, außerdem Sperrungen im Kreuzungsbereich Jean-Jaurès-Str./Cyclopstr., vom 10.01.2023 08:00 bis 29.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023)
+#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
@@ -39291,7 +39290,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: note: vermutlich wird hier asphaltiert; Halteverbotsschilder bis 23.09.2023
-#: last_checked: 2023-07-22
+#: last_checked: 2023-07-27 (daf)
 #: check_frequency: 60d
 #: next_check: 2023-09-23
 	q4::inwork 6182,12900 6347,12901 6449,12865 6575,12778
@@ -39420,7 +39419,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 237300173 (bis 22.07.2023) (inaktiv)
-#: source_id: 237300001 (bis 27.07.2023)
+#: source_id: 237300001 (bis 27.07.2023) (inaktiv)
 	2::inwork 62767,106530 62837,105731 62745,105429
 EOF
      },
@@ -39457,11 +39456,13 @@ EOF
 EOF
      },
      { from  => 1687644000, # 2023-06-25 00:00
-       until => $isodate2epoch->("2023-07-25 23:59:59"), # 1689112740, # 2023-07-11 23:59
-       text  => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2023 00:00 bis 25.07.2023 23:59',
+       until => $isodate2epoch->("2023-09-20 18:00:00"), # $isodate2epoch->("2023-07-25 23:59:59"), # 1689112740, # 2023-07-11 23:59
+       text  => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 20.09.2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.29609,52.51176,26.06.2023,00:00', # bis 11.07.2023; bis 25.07.2023
        data  => <<EOF,
+#: source_id: viz2021:13.29609,52.51176,26.06.2023,00:00 (bis 11.07.2023) (bis 25.07.2023) (inaktiv)
+#: also_indoor: traffic (W)
+#: note: nur noch beim rbb gelistet
 	q4::inwork 3144,11659 3064,11657
 EOF
      },
@@ -39843,12 +39844,12 @@ EOF
 EOF
      },
      { from  => 1690196400, # 2023-07-24 13:00
-       until => 1693494000, # 2023-08-31 17:00
-       text  => 'Schillerstr.: Wasserrohrbruch, zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.07.2023 13:00 bis 31.08.2023 17:00',
+       until => $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
+       text  => 'Schillerstr.: Wasserrohrbruch, zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
-#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023)
+#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023)
 	q4::inwork 10178,20525 10066,20494
 EOF
      },
@@ -39859,6 +39860,49 @@ EOF
        source_id => 'viz2021:13.29624,52.50221,19.06.2023,00:00',
        data  => <<EOF,
 	q4::inwork 3093,10594 3395,10704
+EOF
+     },
+     { from  => 1690486071, # 2023-07-27 21:27
+       until => 1693519200, # 2023-09-01 00:00
+       text  => 'Andreasberger Str.: zwischen Lauterberger Str. und Karl-Elsasser-Str. Bauarbeiten, vermutlich ist die Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 31.08.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: nur beim rbb
+#: also_indoor: traffic (G,W)
+	q4::inwork 12053,6042 12063,5927
+EOF
+     },
+     { from  => 1690486388, # 2023-07-27 21:33
+       until => 1693519200, # 2023-09-01 00:00
+       text  => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 31.08.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: nur beim rbb
+#: also_indoor: traffic (G,B,W)
+	q4::inwork 2350,11269 2340,11223 2365,11179
+EOF
+     },
+     { from  => 1690351200, # 2023-07-26 08:00
+       until => 1691074800, # 2023-08-03 17:00
+       text  => 'Chausseestr.: zwischen Schlegelstr. und Tieckstr.: Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, vom 27.07.2023 08:00 bis 03.08.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.384918,52.529076,27.07.2023,08:00',
+       data  => <<EOF,
+#: by: https://nitter.net/VIZ_Berlin/status/1684428403116498947#m
+#: by: https://nitter.net/pic/orig/media%2FF1-X7vXX0AMIH1H.jpg (keine Ausnahme für Radfahrer erkennbar)
+	q4::inwork; 9042,13707 9094,13641
+EOF
+     },
+     { from  => 1691272800, # 2023-08-06 00:00
+       until => $isodate2epoch->("2023-08-25 18:00:00"), # 1691791199, # 2023-08-11 23:59
+       text  => 'Lückstraße: Bauarbeiten, zwischen Giselastr. und Weitlingstr. gesperrt, Radfahrer sind auch betroffen, vom 7. August bis voraussichtlich 11. August 2023, evtl. noch zwei Wochen länger',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349184.php',
+       data  => <<EOF,
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
+#: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
+#: next_check: 2023-08-11
+	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
 EOF
      },
     );
