@@ -275,11 +275,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2022-09-08 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-09-11 21:00:00"),
+     { from  => $isodate2epoch->("2023-09-07 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-09-10 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 09.09.2022 14:00 Uhr bis 11.09.2022 20:00 Uhr',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 08.09.2023 14:00 Uhr bis 10.09.2023 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
@@ -933,15 +933,15 @@ EOF
 	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2022-09-02 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-09-04 23:59:59"),
+     { from  => $isodate2epoch->("2023-09-01 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-09-03 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (03.09.2022 bis 04.09.2022)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (02.09.2023 bis 03.09.2023)',
        type  => 'gesperrt',
-       source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
        data  => <<EOF,
-#: note: keine Anzeichen für eine Veranstaltung 2021 
+#: by: http://www.hier-in-rudow.de/meilenfeste.html
+#: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
 Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 Krokusstr.	2::temp 16610,1715 16767,1831
 EOF
@@ -24073,16 +24073,17 @@ EOF
 	q4::inwork; 5317,12242 5518,12159 5417,11949
 EOF
      },
-     { from  => $isodate2epoch->("2022-09-09 00:00:00"),
-       until => $isodate2epoch->("2022-09-10 21:00:00"),
+     { from  => $isodate2epoch->("2023-09-15 00:00:00"),
+       until => $isodate2epoch->("2023-09-16 21:00:00"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2021-10-25T00:00:00"]], # 2021 scheint nichts stattzufinden
-       text  => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2022, 12 bis 21 Uhr ',
+       text  => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2023, voraussichtlich 12 bis 21 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
        data  => <<EOF,
 #: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
 #: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
+#: by_ https://www.turmstrasse.de/mitgestalten/kiezfest
 # REMOVED --- : tempex YYYY09 & sa2 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa3 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa1 & T12-T21
@@ -28487,6 +28488,7 @@ EOF
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/fahrbahn-ein-jahr-lang-gesperrt_a355424
 #: by: https://nitter.cz/VIZ_Berlin/status/1573281027723665409#m
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/suedlich-des-bahnhofs-werden-noch-rasengleise-eingebaut_a388018
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
@@ -29777,13 +29779,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
-       until => $isodate2epoch->("2023-07-28 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 28.07.2023',
+       until => $isodate2epoch->("2023-08-03 18:00:00"),
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, außerdem Einbahnstraßenregelung in der Bellermannstr., voraussichtlich bis 03.08.2023',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!) (inaktiv)
        data  => <<EOF,
 #: next_check_id: GRUENTALER-2023
-#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023) (bis 29.06.2023) (bis 28.07.2023)
+#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022) (bis 3.4.2023) (inaktiv) (bis 26.04.2023) (bis 29.06.2023) (bis 28.07.2023) (bis 03.08.2023)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: source_id: viz2021:13.38743,52.55268,30.11.2022,14:49 (bis 3.4.2023, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
@@ -29793,7 +29795,7 @@ EOF
 #: osm_watch: way id="1006570991" version="1"
 #: last_checked: 2023-07-10 (sieht mittlerweile recht fertig aus)
 #: check_frequency: 90d
-#: next_check: 2023-07-28
+#: next_check: 2023-08-03
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
 	q3::inwork 9178,16317 9301,16439
 Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,16398
@@ -34941,6 +34943,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
+#: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023)
 #: also_indoor: traffic (none)
 #: last_checked: 2022-10-15
 # REMOVED --- #: check_frequency: 90d
@@ -34994,7 +34997,7 @@ EOF
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="21"
+#: osm_watch: way id="505363417" version="22"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -35346,7 +35349,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-22
+#: last_checked: 2023-08-01 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35354,15 +35357,15 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., vermutlich wird die Fahrbahn gesperrt sein, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
+       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn gesperrt, Radweg weiterhin befahrbar, evtl. mit Einschränkungen, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: last_checked: 2023-07-25
-#: next_check: 2023-07-31
-zwischen Wildenbruchstr. und Innstr.	q4::inwork 13033,8628 13124,8562 13217,8493
+#: last_checked: 2023-08-01 (mapillary)
+# REMOVED --- #: next_check: 2023-07-31
+zwischen Wildenbruchstr. und Innstr.	q2::inwork 13033,8628 13124,8562 13217,8493
 EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
@@ -35493,8 +35496,8 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2023-08-01 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: kan wegen Bauarbeiten gesperrt sein, voraussichtlich bis 1.8.2023',
+       until => $isodate2epoch->("2023-09-14 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr.: kan wegen Bauarbeiten gesperrt sein, voraussichtlich bis Mitte September 2023',
        #text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
@@ -35517,7 +35520,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
 #: last_checked: 2023-07-09 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-08-01 vvv
+#: next_check: 2023-09-14 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
@@ -38593,11 +38596,13 @@ EOF
 EOF
      },
      { from  => 1681189200, # 2023-04-11 07:00
-       until => 1693447200, # 2023-08-31 04:00
-       text  => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 12.04.2023 07:00 bis 31.08.2023 04:00',
+       until => $isodate2epoch->("2023-12-31 23:59:59"), # 1693447200, # 2023-08-31 04:00
+       dont_check_date => 1,
+       text  => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 12.04.2023 07:00 bis 31.08.2023 04:00, evtl. sogar bis Ende 2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.3076,52.50361,12.04.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023)
+#: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023)
 	q3::inwork 3869,10760 4267,10724 4393,10712
 EOF
      },
@@ -39151,6 +39156,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023)
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
@@ -39334,7 +39340,7 @@ EOF
        until => $isodate2epoch->("2023-07-28 16:00:00"), # 1689343200, # 2023-07-14 16:00
        text  => 'Fürstenwalde, Hegelstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.06.2023, 08:00 Uhr bis 28.07.2023, 16:00 Uhr.',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/073', # inaktiv # bis 28.07.2023
+       source_id => 'LS/221-F/23/073', # inaktiv # bis 28.07.2023 # inaktiv
        data  => <<EOF,
 	2::inwork 54260,-2960 54095,-3250
 EOF
@@ -39514,7 +39520,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: last_checked: 2023-07-20 vvv
 #: next_check: 2023-10-23 vvv
@@ -39626,13 +39632,14 @@ EOF
      { from  => 1690581600, # 2023-07-29 00:00
        until => 1734822000, # 2024-12-22 00:00
        prewarn_days => 2,
-       text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, vom 31.07.2023 bis zum 21.12.2024',
+       text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/23-0699_kronprinzessinnenweg_rad_u_fussumleitung_-_ba_23_-_.pdf
 #: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
 #: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -39640,24 +39647,25 @@ EOF
        until => 1690552800, # 2023-07-28 16:00
        text  => 'B113 bei Tantow: Fahrbahnsanierung, Sperrung vom 06.07.2023, 08:00 Uhr bis 28.07.2023, 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-E/23/089',
+       source_id => 'LS/221-E/23/089', # inaktiv
        data  => <<EOF,
 	2::inwork 68928,100165 71282,98881
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, Ende der Sperrung unbekannt',
+       until => $isodate2epoch->("2023-08-14 17:00:00"), # undef, # XXX
+       text  => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, voraussichtlich bis 14.08.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.rbb24.de/panorama/beitrag/2023/07/fassadenteil-friedrichstrasse-berlin-polizist-schwer-verletzt.html
 #: by: https://www.berliner-zeitung.de/news/friedrichstrasse-broeckelnde-fassade-faellt-mann-auf-den-kopf-strasse-gesperrt-objektschuetzer-auf-intensivstation-li.367532
 #: by: https://berliner-abendblatt.de/berlin-news/fassadenteil-stuerzt-herunter-und-verletzt-polizeimitarbeiter-id226599
-#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum)
+#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023)
 #: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
 #: last_checked: 2023-07-25
 #: check_frequency: 14d
+#: next_check: 2023-08-14
 	q4::inwork; 9384,12103 9373,12197
 EOF
      },
@@ -39903,6 +39911,15 @@ EOF
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
 #: next_check: 2023-08-11
 	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
+EOF
+     },
+     { from  => 1691042400, # 2023-08-03 08:00
+       until => 1691330400, # 2023-08-06 16:00
+       text  => 'Brücke über den Oder-Spree-Kanal: Sperrung vom 04.08.2023, 08:00 Uhr bis 06.08.2023, 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/222-W/23/140',
+       data  => <<EOF,
+	2::inwork 31260,-3484 31492,-3156
 EOF
      },
     );

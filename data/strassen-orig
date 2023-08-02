@@ -10243,8 +10243,9 @@ Landsberger Allee - Märkische Allee	HH 19694,15141 19707,15206 19654,15219 19577
 Märkische Allee - Wuhletalstr.	H 20717,17516 20853,17528 20891,17572
 #: next_check_id: WUHLETALBRUECKE-2019
 #: XXX Wann wird die provisorische Überfahrt wieder entfernt?
+#: osm_watch: way id="706450234" version="9"
 #: last_checked: 2022-08-04
-#: check_frequency: 360d
+#: check_frequency: 720d
 #: next_check: 2025-06-30
 #: valid: 20190603-20250630
 Märkische Allee - Wuhletalstr.	H 20891,17572 20895,17594
@@ -19090,7 +19091,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: XXX wie sieht die Zukunft dieser Straße aus? (Widmung als Grünanlage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
-#: osm_watch: way id="26590565" version="20"
+#: osm_watch: way id="26590565" version="21"
 #: last_checked: 2023-06-23
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
@@ -20421,14 +20422,14 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-29 (mapillary)
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-29 (mapillary)
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2023-07-15
+#: last_checked: 2023-07-29 (mapillary)
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 
