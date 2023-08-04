@@ -347,6 +347,8 @@
 
   (bbbike-create-buttons)
 
+  (setq-local bbbike-mode-load-time (current-time))
+
   (run-hooks 'bbbike-mode-hook)
   )
 
