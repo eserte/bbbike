@@ -10249,7 +10249,7 @@ Amberbaumallee: Asphalt	Q0 -6661,6743 -6556,6663 -6410,6549 -6370,6521 -6340,650
 Am Waldkiefernpfad: Asphalt	Q0 -6340,6500 -6268,6610 -6302,6690
 An den Parkbäumen: Asphalt	Q0 -6410,6549 -6381,6587 -6302,6690 -6288,6710 -6437,6824 -6530,6699 -6556,6663
 Parkrosenweg: Asphalt	Q0 -6530,6699 -6381,6587
-(Neukladower Allee - Gutspark Neukladow): Asphalt mit einigen Schäden	Q1 -6319,5606 -6246,5562 -6125,5447 -6112,5406
+(Neukladower Allee - Gutspark Neukladow): Asphalt	Q0 -6319,5606 -6246,5562 -6125,5447 -6112,5406
 (Spektegrünzug - Ramin-Park): wassergebundene Decke	Q1 -4160,14690 -4118,14736 -4108,14769 -4090,14780 -4026,14765
 (Spektegrünzug - Hohenzollernring): wassergebundene Decke	Q1 -4090,14780 -4056,14799 -3926,14879
 Malchower Weg: Asphalt, einige Schlaglöcher	Q0; 17014,16724 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16920,17204 16915,17231 16905,17281 16887,17349
@@ -10770,6 +10770,7 @@ Fredersdorfer Str.: Kopfsteinpflaster	Q2 13051,12167 13086,12186
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275
 Ruppiner Chaussee: Asphalt, einige Schäden	Q1;Q0 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
+(Otto-Suhr-Allee - Eosanderstr.): Asphalt	Q0 3328,12512 3357,12562 3357,12615
 Mausohrweg: Asphalt	Q0 33327,2979 33296,2894
 Mausohrweg: Asphalt	Q0 33167,2940 33296,2894 33406,2852 33503,2818
 Abendseglersteig: Asphalt	Q0 33406,2852 33383,2792 33267,2810 33139,2835 33167,2940
@@ -11073,9 +11074,9 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Dolgenseestr., Fußgängerzone): Betonpflaster	Q0 17457,10083 17412,9911 17384,9807
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0 10547,15586 10542,15609
-Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700 17792,8660 17846,8644
+Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17468,8692 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
-Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483
+Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483 17588,8413
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
 Heiner-Müller-Str.: Asphalt	Q0 17648,8626 17773,8588
 Ruth-Baumgarte-Str.: Asphalt	Q0 17794,8429 17738,8450 17682,8464 17608,8483
@@ -15166,13 +15167,13 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke	Q1 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q2 7576,18837 7480,18828 7332,18818
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q1 7332,18818 7313,18781
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
-Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,8692
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858
+Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1 17380,8858 17416,8767 17468,8692
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
 Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17524,8536
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17524,8536 17533,8505
-Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
-Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17584,8413
-Hönower Wiesenweg: Asphalt	Q0 17584,8413 17617,8363 17652,8349 17707,8328 17753,8290
+Hönower Wiesenweg: Asphalt	Q0 17524,8536 17533,8505
+Hönower Wiesenweg: Asphalt	Q0 17533,8505 17554,8458
+Hönower Wiesenweg: Asphalt	Q0 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 Hönower Wiesenweg: Asphalt	Q0 17753,8290 17793,8225 17856,8162
 Frank-Zappa-Str.: guter Beton	Q0 18591,14573 18896,14649 18868,14745 18938,14768
 Birkhuhnweg: Asphalt	Q0 15162,3462 15042,3527 14991,3547 14911,3568 14854,3587 14811,3597 14761,3580
@@ -17463,8 +17464,8 @@ Wulfsheinstr.: Asphalt	Q0 3060,12311 3207,12325
 Stallstr.: Asphalt	Q0 3048,12413 3191,12432
 Saldernstr.: Asphalt	Q0 2371,11475 2400,11597 2422,11700
 Siemenssteg: Holzbohlen	Q2 4128,12637 4124,12706
-Eosanderstr.: Asphalt	Q0 3612,12377 3606,12484 3600,12552 3454,12607 3344,12611
-Eosanderstr.: Kopfsteinpflaster	Q1 3344,12611 3271,12609
+Eosanderstr.: Asphalt	Q0 3612,12377 3606,12484 3600,12552 3454,12607 3357,12615 3323,12615
+Eosanderstr.: Kopfsteinpflaster	Q1 3323,12615 3271,12609
 Brauhofstr.: Asphalt, leichte Unebenheiten	Q0 3472,12447 3486,12473 3606,12484
 Brauhofstr.: Asphalt	Q0 3606,12484 3747,12495
 Behaimstr. (Charlottenburg): Asphalt	Q0 3495,12185 3630,12201 3767,12217

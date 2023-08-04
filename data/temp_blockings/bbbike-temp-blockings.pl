@@ -23629,7 +23629,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/721-E/13/083 (inaktiv)
-#: source_id: LS/221-E/23/099 (bis 04.08.2023)
+#: source_id: LS/221-E/23/099 (bis 04.08.2023) (inaktiv)
 	2::inwork 46564,76483 46704,75833
 EOF
      },
@@ -23932,6 +23932,7 @@ EOF
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 #: by: https://www.laubinger.de/event/koepenickerwinzersommer/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
 # REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -32639,7 +32640,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juli 2023: Bauarbeiten im mittleren Bereich möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Anfang August 2023: aktuell keine Sperrung)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32648,11 +32649,9 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="26"
 #: osm_watch: way id="165832806" version="31"
-#: last_checked: 2023-07-16 (mapillary)
+#: last_checked: 2023-08-04
 #: check_frequency: 14d
-	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536
-# REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
-# REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17468,8692 17416,8767 17380,8858
+	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 EOF
      },
      { from  => 1611529200, # 2021-01-25 00:00
@@ -37806,14 +37805,13 @@ EOF
 EOF
      },
      { from  => 1673074800, # 2023-01-07 08:00
-       until => undef, # XXX
-       text  => 'Verlängerte Neukladower Allee: Sperrung wegen Bauarbeiten, voraussichtlich bis Mai 2023',
+       until => $isodate2epoch->("2023-08-11 18:00:00"), # undef, # XXX
+       text  => 'Verlängerte Neukladower Allee: Sperrung wegen Bauarbeiten, voraussichtlich bis 11.08.2023',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1281512.php',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Verlängerte Neukladower Allee weiterhin gesperrt?
-#: XXX Nach den Bauarbeiten wahrscheinlich besserer Asphalt -> in qualitaet_s eintragen!
-#: next_check: 2023-05-31
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1353475.php (bis 11.08.2023)
+# REMOVED --- #: add_fragezeichen: Ist die Verlängerte Neukladower Allee weiterhin gesperrt? --- #: XXX Nach den Bauarbeiten wahrscheinlich besserer Asphalt -> in qualitaet_s eintragen! --- #: next_check: 2023-05-31
 	2::inwork -6319,5606 -6246,5562 -6125,5447
 EOF
      },
@@ -37855,7 +37853,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Edisonstr.: Sperrung der Fahrbahn zwischen Siemensstr. und Wilhelminenhofstr., vermutlich auch für Radfahrer, bis 28.08.2023, evtl. auch länger', # Richtung Süden ... (Stand: Anfang Juli 2023: noch immer gesperrt)',
+       text  => 'Edisonstr.: Sperrung der Fahrbahn in beiden Richtungen zwischen Siemensstr. und Wilhelminenhofstr., bis 28.08.2023, evtl. auch länger', # Richtung Süden ... (Stand: Anfang Juli 2023: noch immer gesperrt)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: EDISON-2022
@@ -37864,8 +37862,9 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1683714580856311808#m
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-07-15
-#: next_check: 2023-07-25
+#: priority: #B
+#: last_checked: 2023-08-04
+#: next_check: 2023-08-28
 	q4::inwork 17962,6674 17991,6431
 EOF
      },
@@ -38515,21 +38514,17 @@ Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
 EOF
      },
      { from  => 1679936842, # 2023-03-27 19:07
-       until => undef, # 1688162400, # 2023-07-01 00:00
+       until => 1691166113, # undef, # 1688162400, # 2023-07-01 00:00
        text  => 'Hönower Wiesenweg: Bauarbeiten im südlichen Abschnitt, Fahrbahn kann gesperrt sein (Stand Mitte Juli 2023: Fahrbahn kann außerhalb der Arbeitszeiten offen sein)',
        type  => 'handicap',
        data  => <<EOF,
 #: note: neue Halteverbotsschilder bis 4.8.2023
-#: last_checked: 2023-07-19 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2023-08-04 vvv
+# REMOVED --- #: last_checked: 2023-07-19 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-08-04 vvv
 # REMOVED (ja, bereits eingetragen) --- #: XXX möglicherweise Asphaltierung?
 	q4::inwork 17856,8162 17793,8225 17753,8290
 #: note: Einschränkungen im Kreuzungsbereich
 	q3::inwork 17753,8290 17771,8349
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1680386400, # 2023-04-02 00:00
@@ -39077,7 +39072,7 @@ EOF
 #: next_check_id: EDELHOFDAMM-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
-#: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023)
+#: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
 #: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023)
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
@@ -39105,7 +39100,7 @@ EOF
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="19"
-#: last_checked: 2023-07-26
+#: last_checked: 2023-08-04
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39289,7 +39284,7 @@ EOF
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-04
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 EOF
@@ -39381,7 +39376,7 @@ EOF
 EOF
      },
      { from  => 1687060800, # 2023-06-18 06:00
-       until => undef, # 1687449600, # 2023-06-22 18:00
+       until => 1691166229, # undef, # 1687449600, # 2023-06-22 18:00
        text  => 'Siemensstr.: zwischen Waltraud-Krause-Weg und Edisonstr. ist die Fahrbahn auch für Radfahrer gesperrt, Ende der Sperrung unbekannt', # von 19.06.2023 06:00 Uhr bis 22.06.2023 abends',
        type  => 'handicap',
        data  => <<EOF,
@@ -39389,8 +39384,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl3SDZRMVhnQUFqRzhiLmpwZw== (... aber laut Verkehrszeichenplan ist Waltraud-Krause-Weg genauer)
 #: also_indoor: traffic (H,G[ungenau],W[ungenau],B)
 #: source_id: viz2021:13.504135,52.460893,05.07.2023,08:00 (bis 25.07.2023, danach weitere Arbeiten) (bis 01.09.2023)
-#: add_fragezeichen: Ist die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2023-07-15
+# REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2023-07-15
 	q4::inwork; 17842,6639 17860,6644 17962,6674
 EOF
      },
@@ -39605,10 +39599,10 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 EOF
      },
      { from  => 1688886000, # 2023-07-09 09:00
-       until => 1691420400, # 2023-08-07 17:00
-       text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 07.08.2023 17:00',
+       until => $isodate2epoch->("2023-09-04 17:00:00"), # 1691420400, # 2023-08-07 17:00
+       text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 04.09.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.315966,52.45914,10.07.2023,09:00',
+       source_id => 'viz2021:13.315966,52.45914,10.07.2023,09:00', # bis 04.09.2023
        data  => <<EOF,
 	q4::inwork 4558,5863 4520,5793
 EOF
@@ -39934,6 +39928,15 @@ EOF
 #: XXX Ist diese Stelle gemeint? Wann ist der Steg wieder offen?
 #: osm_watch: way id="238032318" version="4"
 	2::inwork 11162,22939 11150,22898
+EOF
+     },
+     { from  => 1691877600, # 2023-08-13 00:00
+       until => 1693519199, # 2023-08-31 23:59
+       text  => 'Straße AEG Siedlung Heimat: Sperrung der Str. an der Einmündung Wittenauer Str., vom 14. August 2023 bis zum 31. August 2023',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353335.php',
+       data  => <<EOF,
+	2::inwork 6301,22581 6361,22511
 EOF
      },
     );

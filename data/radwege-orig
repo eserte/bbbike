@@ -659,7 +659,7 @@ die letzten 30 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 	RW3; 4125,6763 4204,6826
 #: note: Otto-Suhr-Allee Richtung SW
 #: note: im Bereich der Bushaltestelle kein Radweg mehr
-	RW0; 3279,12533 3350,12502
+	RW0; 3279,12533 3328,12512 3350,12502
 	RW1; 3350,12502 3416,12473 3472,12447 3612,12377
 	RW2; 3612,12377 3761,12298
 für Radfahrer freigegebene Busspur gilt 6-20 Uhr	RW1; 3761,12298 4000,12183 4032,12167
@@ -679,7 +679,7 @@ Gehwegplatten	RW1; 4032,12167 4000,12183 3761,12298
 #: historical_note: früher (vor Mai 2023) eingeschränkte Gültigkeit Mo-Fr 9-20 Uhr
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 3761,12298 3612,12377 3472,12447 3416,12473
 	RW1; 3416,12473 3350,12502
-	RW2; 3350,12502 3279,12533
+	RW2; 3350,12502 3328,12512 3279,12533
 # 
 	RW1; 3279,12533 3177,12522 3033,12509 2795,12480 2744,12474 2715,12470
 enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 2715,12470 2641,12458 2411,12428 2279,12412
@@ -2096,7 +2096,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-07-19 vvv
+#: last_checked: 2023-08-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -5499,7 +5499,7 @@ gemeinsamer Geh- und Radweg	RW2; 19733,15511 19681,15405
 	RW2; 19681,15405 19664,15366
 #: confirmed_by: srt (added "Gehweg für Radfahrer frei")
 Gehweg für Radfahrer frei	RW1; 19664,15366 19644,15320 19619,15262 19604,15227
-#: confirmed_by. srt
+#: confirmed_by: srt
 Gehweg für Radfahrer frei, eng	RW1; 19604,15227 19502,15089 19364,15045
 #: by: ^^^
 Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19205,14980 19196,14976 19175,14968 19013,14905
@@ -7678,7 +7678,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="34"
-#: last_checked: 2023-07-15 vvv
+#: last_checked: 2023-08-04 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
@@ -7830,7 +7830,7 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 #: note: im Anschluss Richtung Scharnweberstr. noch ein paar Meter Radweg
 asphaltiertes Straßenbahnkap	RW1; 14836,11842 14888,11934
 asphaltiertes Straßenbahnkap	RW1; 14888,11934 14836,11842
-	RW3; 15077,11910 15133,11902
+	RW4; 15077,11910 15133,11902
 asphaltiertes Straßenbahnkap	RW1; 15133,11902 15174,11896 15217,11890
 	RW3; 15217,11890 15256,11884
 asphaltiertes Straßenbahnkap	RW1; 15174,11896 15133,11902 15077,11910

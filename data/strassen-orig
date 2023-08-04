@@ -1835,7 +1835,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: next_check_id: EUROPACITY-2015
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
-#: osm_watch: way id="1010731431" version="5"
+#: osm_watch: way id="1010731431" version="6"
 #: osm_watch: way id="642581102" version="6"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
 #: last_checked: 2023-07-26 (daf)
@@ -4283,8 +4283,10 @@ Gierkezeile	N 3472,12447 3478,12306
 Gierkezeile	N 3493,12228 3495,12185 3507,12076 3514,11988 3528,11852 3539,11784
 Lohmeyerstr.	N 3348,12314 3416,12473 3454,12607 3450,12722
 (Lohmeyerstr. - Uferweg)	NN 3450,12722 3445,12733
-Eosanderstr.	N 3612,12377 3606,12484 3600,12552 3454,12607 3344,12611
-Eosanderstr.	NN 3344,12611 3271,12609
+Eosanderstr.	N 3612,12377 3606,12484 3600,12552 3454,12607 3357,12615 3323,12615
+Eosanderstr.	NN 3323,12615 3271,12609
+#: osm.highway: service
+(Otto-Suhr-Allee - Eosanderstr.)	N 3328,12512 3357,12562 3357,12615
 Charlottenburger Ufer	N 3741,12607 3597,12681 3450,12722 3370,12725 3291,12721
 (Galvanistr. - Iburger Ufer)	NN 4478,12537 4441,12559 4321,12566
 (Galvanistr./Iburger Ufer - Uferweg)	NN 4441,12559 4441,12578
@@ -4297,7 +4299,7 @@ Luisenplatz	HH 3279,12533 3271,12609 3269,12648 3291,12721 3300,12751
 Goethepark	N 3467,11373 3594,11372
 Kaiser-Friedrich-Str.	H 3279,12533 3348,12314 3355,12258 3367,12156 3376,12086 3379,12064 3406,11849 3416,11768 3441,11601 3460,11441 3467,11373 3479,11238 3501,11096 3546,10962
 Bismarckstr. (Charlottenburg)	HH 3159,11562 3320,11583 3441,11601 3554,11617 3689,11637 3843,11659 3897,11666 3969,11675 4122,11694 4194,11703 4337,11721 4502,11740 4737,11768
-Otto-Suhr-Allee	HH 4763,11834 4689,11886 4653,11896 4596,11912 4507,11936 4356,12009 4238,12067 4032,12167 4000,12183 3761,12298 3612,12377 3472,12447 3416,12473 3350,12502 3279,12533
+Otto-Suhr-Allee	HH 4763,11834 4689,11886 4653,11896 4596,11912 4507,11936 4356,12009 4238,12067 4032,12167 4000,12183 3761,12298 3612,12377 3472,12447 3416,12473 3350,12502 3328,12512 3279,12533
 Loschmidtstr.	N 4238,12067 4276,12153 4215,12307 4219,12324
 Richard-Wagner-Str.	H 3843,11659 3837,11760 3801,11858 3786,12014 3778,12104 3767,12217 3761,12298
 (Richard-Wagner-Platz - Schustehrusstr.)	NN 3761,12298 3726,12273 3699,12290
@@ -6889,13 +6891,13 @@ Köpenicker Chaussee	H 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725 171
 Blockdammweg	H 17067,8725 17126,8750 17380,8858 17729,8850
 Blockdammweg	N 17754,8863 17760,8853 17904,8924 17972,8968
 Blockdammweg	NN 17972,8968 17979,8967 17990,8963 18070,9022
-Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17584,8413 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623 17468,8692 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
+Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623 17468,8692 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg)	N 17308,9090 17300,9135 17284,9198
 # 
 #: note: Parkstadt Karlshorst vvv
 Georg-Klingenberg-Str.	N 17846,8644 17792,8660 17656,8700 17468,8692
 Adolf-Wermuth-Allee	N 17656,8700 17640,8627
-Adolf-Wermuth-Allee	N 17648,8626 17627,8556 17608,8483 17597,8434
+Adolf-Wermuth-Allee	N 17648,8626 17627,8556 17608,8483 17588,8413
 Heiner-Müller-Str.	N 17497,8623 17640,8627
 Heiner-Müller-Str.	N 17648,8626 17773,8588
 Ruth-Baumgarte-Str.	N 17794,8429 17738,8450 17682,8464 17608,8483
@@ -15482,7 +15484,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-04
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15870,7 +15872,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-04
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

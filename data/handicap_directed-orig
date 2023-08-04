@@ -489,17 +489,19 @@ Erich-Kurz-Str. -> Am Tierpark: Z-Übergang nördlich der Einmündung	DH:h=q4,65 18
 Am Tierpark -> Otto-Schmirgal-Str.: Z-Übergang	DH:h=q4,25 18585,10278 18554,10354 18512,10337
 Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,10354 18446,10620
 # 
-#: source_id: viz2021:13.320363,52.478755,02.06.2023,09:00 (bis 30.06.2023) (bis 01.09.2023) (bis 15.09.2023) vvv
+#: source_id: viz2021:13.320363,52.478755,02.06.2023,09:00 (bis 30.06.2023) (bis 01.09.2023) (bis 15.09.2023) (inaktiv) vvv
+#: source_id: viz2021:13.320334,52.478774,02.06.2023,09:00 (bis 31.10.2023) vvv
 #: by: https://nitter.cz/VIZ_Berlin/status/1671133669078052865#m
 #: note: laut rbb ist das Ende der Einschränkungen ungewiss
 #: last_checked: 2023-07-01 vvv
-#: next_check: 2023-09-15 vvv
-#: valid: -20230915 vvv
+#: next_check: 2023-10-31 vvv
+#: valid: -20231031 vvv
 #: note: alternativ auf der Südseite umfahren
 Detmolder Str.: Umweg über Blissestr.	DH:len=160 4873,8007 4786,8007 4711,8013
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
@@ -514,9 +516,9 @@ Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:
 #: valid: -20230915
 Mühlenstr./Prinz-Handjery-Str.: Umweg über Prinz-Handjery-Str.	DH:len=50:h=q3,50 1121,2583 1008,2568 960,2534
 # 
-#: source_id: viz2021:13.529089,52.510269,06.07.2023,16:00 (bis 04.08.2023)
+#: source_id: viz2021:13.529089,52.510269,06.07.2023,16:00 (bis 04.08.2023) (bis 09.08.2023)
 #: last_checked: 2023-07-23
-#: next_check: 2023-08-04
-#: valid: -20230804
+#: next_check: 2023-08-09
+#: valid: -20230809
 Alt-Friedrichsfelde: Umweg über einen unbefestigten Trampelpfad	DH:len=42:h=q2,267 19092,11776 19389,11761
 # 

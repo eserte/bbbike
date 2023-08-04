@@ -1284,6 +1284,9 @@ Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
 Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
 Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
 Abbestr. -> Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3::igndisp 4608,11935 4596,11912 4653,11896
+Mittelstreifen	3nocross::ignrte 3279,12533 3328,12512 3350,12502
+Eosanderstr. -> Otto-Suhr-Allee: Mittelstreifen	3::igndisp 3357,12562 3328,12512 3350,12502
+Otto-Suhr-Allee -> Eosanderstr.: Mittelstreifen	3::igndisp 3279,12533 3328,12512 3357,12562
 Absperrgitter am nördlichen Gehweg	3nocross::ignrte 11473,5131 11676,5185 11799,5191
 Cafeastr. -> Gradestr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11603,5241 11676,5185 11799,5191
 Gradestr. -> Cafeastr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11473,5131 11676,5185 11603,5241
@@ -3385,7 +3388,7 @@ Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
-Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
+Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17627,8556
