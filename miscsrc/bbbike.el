@@ -58,9 +58,11 @@
 
 (defadvice switch-to-buffer (after bbbike-revert last act)
   "Make sure bbbike buffers are up-to-date"
-  (if (and (eq major-mode 'bbbike-mode)
-	   (not (buffer-modified-p)))
-      (revert-buffer)))
+  (when (and (eq major-mode 'bbbike-mode)
+	     (not (buffer-modified-p)))
+    (let ((last-modified (nth 5 (file-attributes (buffer-file-name)))))
+      (when (time-less-p bbbike-mode-load-time last-modified)
+        (revert-buffer)))))
 
 ;;; reverses the current region
 (defun bbbike-reverse-street ()
