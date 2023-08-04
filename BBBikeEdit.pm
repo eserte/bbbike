@@ -2378,30 +2378,21 @@ sub start_editor {
 	       "vi",                   # used within an xterm
 	      );
     for my $try (@try) {
-	if ($try =~ m{gnuclient} && BBBikeUtil::is_in_path($try)) {
-	    system($try, '-q', '+'.$line, $file);
-	    if ($?/256 != 0) {
-		main::status_message("Error while starting $try", "die");
-	    }
-	    return;
+	my @cmd;
+	if      ($try =~ m{gnuclient} && BBBikeUtil::is_in_path($try)) {
+	    @cmd = ($try, '-q', '+'.$line, $file);
 	} elsif ($try =~ m{emacsclient} && BBBikeUtil::is_in_path($try)) {
-	    system($try, '-n', '+'.$line, $file);
-	    if ($?/256 != 0) {
-		main::status_message("Error while starting $try", "die");
-	    }
-	    return;
-	} elsif ($try eq 'vi') {
-	    if (BBBikeUtil::is_in_path($try) && BBBikeUtil::is_in_path("xterm")) {
-		system("xterm", "-e", "vi", "+".$line, $file);
-		if ($?/256 != 0) {
-		    main::status_message("Error while starting $try in an xterm", "die");
-		}
-		return;
-	    }
+	    @cmd = ($try, '-n', '+'.$line, $file);
+	} elsif ($try eq 'vi' && BBBikeUtil::is_in_path($try) && BBBikeUtil::is_in_path("xterm")) {
+	    @cmd = ("xterm", "-e", "vi", "+".$line, $file);
 	} elsif (BBBikeUtil::is_in_path($try)) {
-	    system($try, "+".$line, $file);
+	    @cmd = ($try, "+".$line, $file);
+	}
+	if (@cmd) {
+	    #warn "Run '@cmd'...\n";
+	    system @cmd;
 	    if ($?/256 != 0) {
-		main::status_message("Error while starting $try", "die");
+		main::status_message("Error while starting '@cmd'", "die");
 	    }
 	    return;
 	}
