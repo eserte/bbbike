@@ -14,9 +14,11 @@
 
 use strict;
 use FindBin;
-use lib (
+use lib (grep { -d }
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/BBBike", # weitere Alternative
+	 "$FindBin::RealBin/BBBike/lib",
 	);
 
 use CGI ();
