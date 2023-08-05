@@ -767,7 +767,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.011';
+$VERSION = '11.012';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -5031,7 +5031,7 @@ EOF
 	}
 
 	my($bbbikeleaflet_url, $bbbikeleaflet_loc_url);
-	if (!$printmode && $apache_session_module eq 'Apache::Session::Counted') {
+	if (!$printmode && $sess && $apache_session_module eq 'Apache::Session::Counted') {
 	    my $href = _bbbikeleaflet_url();
 	    $bbbikeleaflet_url     = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
 	    $bbbikeleaflet_loc_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}, loc => 1})->query_string;
