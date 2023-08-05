@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-07-24
+#: last_checked: 2023-08-05
 #: check_frequency: 90d
 #: next_check: 2023-12-22
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -392,7 +392,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
 #: osm_watch: way id="27491366" version="13"
-#: last_checked: 2023-03-11
+#: last_checked: 2023-08-05
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -1192,7 +1192,7 @@ Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
 #: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
-#: last_checked: 2023-07-20
+#: last_checked: 2023-08-04 (mapillary)
 #: check_frequency: 90d
 Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
@@ -1524,6 +1524,8 @@ Schönefelder Chaussee: Mittelstreifen	3nocross 19198,1122 19221,1198 19251,1240
 # 
 Blissestr.: Mittelstreifen	3nocross 4769,8563 4768,8608 4777,8731
 # 
+Martin-Luther-Str.	1 6485,8639 6455,8613
+Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3759,7 +3761,7 @@ Wateweg: Bauarbeiten, Weg komplett gesperrt	2::inwork 21131,8739 21124,8792
 #: next_check_id: TELTOWKANALUFERWEG-2023
 #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
 #: by: Karsten S.: wieder (temporär?) frei
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-08-05 vvv
 #: next_check: 2023-11-01 vvv
 #: valid: -20230317 vvv
 # REMOVED --- #: valid: -20241231 vvv
@@ -4294,7 +4296,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-07-24
+#: last_checked: 2023-08-05
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4302,7 +4304,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2023-07-24 vvv
+#: last_checked: 2023-08-05 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4358,7 +4360,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="4"
-#: last_checked: 2023-07-21 (osm)
+#: last_checked: 2023-08-05
 #: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384

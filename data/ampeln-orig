@@ -580,6 +580,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6709,9234
 	X 6860,8878
 	X 6460,8688
+	X 6485,8639
 	X 6449,8807
 	X 6440,9192
 	X 6461,8463
@@ -2576,13 +2577,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-07-04
+#: last_checked: 2023-08-05
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-05
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3159,6 +3160,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: off: außerhalb der Geschäftszeiten (seen Su 2015-07-19 15:30)
 	F 13125,17758
 	F 7602,305
+#: XXX_prog: nicht relevant für Radfahrer (wegen der Radwegbenutzungspflicht)
 	F 7404,-110
 	F 7535,3101
 #: note: Anforderungsampel

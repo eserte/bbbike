@@ -4340,9 +4340,10 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten)
 #: XXX ist die Ausweitung des Marktes dauerhaft?
-#: last_checked: 2023-03-25
+#: note: Halteverbotsschilder (samstags) befristet bis zum 28.10.2023
+#: last_checked: 2023-08-05
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2022-08-27
+#: next_check: 2023-11-03
 # REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
 	q4::temp 7118,9870 7080,10098
 ',
@@ -4359,7 +4360,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-07-22
+#: last_checked: 2023-08-05
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5022,7 +5023,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="16"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2023-05-31 (osm)
+#: last_checked: 2023-08-05
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 ',
@@ -5114,34 +5115,30 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,30.03.2023,12:14 (Baseler Str., bis 31.05.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
-# REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (ex-G,ex-H,B) vvv
-#: last_checked: 2022-09-04 vvv
-# REMOVED --- #: check_frequency: 180d vvv
-#: next_check: 2023-07-19 vvv
-	q3::inwork 3011,3303 2778,3132
+# REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
+# REMOVED --- #: last_checked: 2023-08-05 vvv --- #: check_frequency: 180d vvv --- #: next_check: 2023-07-19 vvv
+# REMOVED (hier nicht mehr) ---	q3::inwork 3011,3303 2778,3132
 # REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
 # REMOVED (hier nicht mehr) ---	q4::inwork 2655,3025 2594,3009
 # REMOVED (hier nicht mehr) ---	q4::inwork 2632,2969 2594,3009
 # REMOVED ---	q4::inwork; 3507,3654 3375,3559 3228,3455 3184,3427
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: note: bei rbb bis 31.10.2022
-#: last_checked: 2022-09-04 vvv
-#: next_check: 2023-07-19 vvv
-Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
-Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
+#: last_checked: 2023-08-05 vvv
+# REMOVED --- #: next_check: 2023-07-19 vvv
+# REMOVED (hier nicht mehr) --- Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
+# REMOVED (hier nicht mehr) --- Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3184,3427 3174,3052
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 # 
 #: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (bis 31.05.2023) (bis 19.07.2023) (inaktiv)
-#: last_checked: 2022-09-04
-#: next_check: 2023-07-19
+#: last_checked: 2023-08-05
+# REMOVED --- #: next_check: 2023-07-19
 östlich Drakestr.	q4::inwork 3558,3688 3507,3654
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
@@ -5152,7 +5149,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1614492000,
          'id' => 3502,
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
-         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei',
+         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str.',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5208,9 +5205,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
 #: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023)
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-15
+#: last_checked: 2023-08-05
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-07-31
+#: next_check: 2023-11-30
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 ',
          'from' => 1690668000,
@@ -5355,7 +5352,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-01 (mapillary)
+#: last_checked: 2023-08-05
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5370,13 +5367,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
+#: note: Radfahrer sollen absteigen
 #: last_checked: 2023-08-01 (mapillary)
 # REMOVED --- #: next_check: 2023-07-31
-zwischen Wildenbruchstr. und Innstr.	q2::inwork 13033,8628 13124,8562 13217,8493
+zwischen Wildenbruchstr. und Innstr.	q4::inwork 13033,8628 13124,8562 13217,8493
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn gesperrt, Radweg weiterhin befahrbar, evtl. mit Einschränkungen, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn und Radwege gesperrt, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5560,7 +5558,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-08-03 (bw) vvv
+#: last_checked: 2023-08-04 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -5852,7 +5850,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
 # REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Friedrichstr. gesperrt?
 #: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-07-18 (mapillary) vvv
+#: last_checked: 2023-08-04 (mapillary) vvv
 #: next_check: 2023-08-09 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
@@ -6022,12 +6020,14 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353123.php (Verkehrsfreigabe am 8.8.2023)
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
+#: note: an der östlichen Seite sind sogar die Gehwege gesperrt
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
+#: last_checked: 2023-08-05
 #: next_check: 2023-08-08
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
-östlicher Abschnitt ab Am Gemeindepark	q4::inwork 7172,2343 7285,2377
+östlicher Abschnitt ab Am Gemeindepark	2::inwork 7172,2343 7285,2377
 ',
          'dont_check_date' => 1,
          'from' => 1681077600,
@@ -6044,7 +6044,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-05
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6187,7 +6187,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
          'data' => '#: also_indoor: traffic (none)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-07-14
+#: last_checked: 2023-08-04 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6202,7 +6202,8 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
 #: osm_watch: way id="1170463985" version="1"
 #: osm_watch: way id="1170463986" version="1"
-#: last_checked: 2023-07-14
+#: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
+#: last_checked: 2023-08-04 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -6747,7 +6748,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-07-20
+#: last_checked: 2023-08-04 (mapillary)
 	q3::inwork 12707,13706 12640,13814
 ',
          'from' => undef,
@@ -6874,9 +6875,9 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'data' => '#: next_check_id: BIZET-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-07-20
+#: last_checked: 2023-08-04 (mapillary)
 #: check_frequency: 14d
-#: next_check: 2023-08-11
+# REMOVED --- #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
 ',
          'from' => undef,
@@ -7162,7 +7163,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
-#: last_checked: 2023-07-20 vvv
+#: last_checked: 2023-08-04 (mapillary) vvv
 #: next_check: 2023-10-23 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
@@ -7237,7 +7238,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 #: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023)
 #: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-07-25
+#: last_checked: 2023-08-04 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2023-08-14
 	q4::inwork; 9384,12103 9373,12197
@@ -7426,6 +7427,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        undef,
        {
          'data' => '#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
+#: source_id: bvg2021:194#BVG325855_0
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
 #: next_check: 2023-08-11
 	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
@@ -7468,6 +7470,19 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'text' => 'Straße AEG Siedlung Heimat: Sperrung der Str. an der Einmündung Wittenauer Str., vom 14. August 2023 bis zum 31. August 2023',
          'type' => 'gesperrt',
          'until' => 1693519199
+       },
+       {
+         'data' => '#: by: https://www.diemarktplaner.de/rixdorf/ (Zeiten)
+#: note: eher wenig los, man kommt hier durch
+#: tempex: we T11-18, sa T08-15
+	q3::temp:clock 12987,7560 13100,7626
+',
+         'from' => undef,
+         'id' => 3874,
+         'recurring' => 1,
+         'text' => 'Karl-Marx-Platz: Mi 11 bis 18 Uhr und Sa 8 bis 15 Uhr Einschränkungen wegen des Wochenmarkts möglich',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
