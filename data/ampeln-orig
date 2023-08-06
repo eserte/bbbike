@@ -51,11 +51,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: valid: -20230930
 	F::inwork 8373,12416
 # 
-#: next_check_id: KAULSDORFER-2023
-#: XXX siehe auch Eintrag in bbbike-temp-blockings
-#: next_check: 2023-08-21
-#: valid: -20231231
-Gegenverkehrsregelung	X::inwork 22192,6659
+# REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork 22192,6659
 # 
 #: next_check_id: BAUMSCHULEN-2023
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023)
@@ -142,19 +138,19 @@ B179/Fichtestr.	X::inwork 26138,-12596
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
-#: last_checked: 2023-06-13 (mapillary)
+#: last_checked: 2023-08-06
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2023-03-26
+#: last_checked: 2023-08-06
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2023-03-26
+#: last_checked: 2023-08-06
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2023-03-26
+#: last_checked: 2023-08-06
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes

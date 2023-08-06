@@ -5021,7 +5021,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="16"
+#: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2023-08-05
 #: check_frequency: 180d
@@ -5080,7 +5080,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-06 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5161,13 +5161,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-07-16 (mapillary)
+#: last_checked: 2023-08-06
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 ',
          'from' => undef,
          'id' => 3504,
-         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Mitte Juli 2023: Durchgang ist mit Bauzäunen versperrt)',
+         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Anfang August 2023: Durchgang ist mit Bauzäunen versperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6434,7 +6434,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: last_checked: 2023-06-19
+#: last_checked: 2023-08-06
 #: check_frequency: 120d
 #: next_check: 2023-08-28
 	q4::inwork; 22431,6068 22467,6135
@@ -6687,17 +6687,19 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) vvv
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
-#: next_check: 2023-07-17 vvv
-Hoernlestr.	q4::inwork 22192,6659 22265,6689
+#: last_checked: 2023-08-06 vvv
+#: next_check: 2023-08-21 vvv
+# REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: source_id[inactive] ^^^
 #: source_id ^^^
 ',
          'from' => 1683064800,
          'id' => 3778,
-         'text' => 'Birnbaumer Str./Hoernlestr.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrungen, ggfs. Umwege notwendig, mindestens bis 21.08.2023, möglicherweise bis Dezember 2023',
+         'text' => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, mindestens bis 21.08.2023, möglicherweise bis Dezember 2023',
          'type' => 'handicap',
          'until' => 1704063599
        },
@@ -6820,7 +6822,13 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023)
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
-	q4::inwork 2756,25260 2909,25322 3101,25402 3185,25437 3166,25496
+# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 2756,25260 2909,25322
+	q4::inwork 2909,25322 3101,25402 3185,25437
+# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 3185,25437 3166,25496
+#: osm_watch: way id="1110745857" version="5"
+Markgrafenstr.	q4::inwork 2882,25375 2909,25322
+#: osm_watch: way id="478247076" version="15"
+Gutshofstr.	q4::inwork 3076,25456 3101,25402
 ',
          'from' => 1685422800,
          'id' => 3802,
@@ -6845,8 +6853,8 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="19"
-#: last_checked: 2023-08-04
+#: osm_watch: way id="58182828" version="20"
+#: last_checked: 2023-08-06 (osm)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6935,7 +6943,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-07-24 vvv
+#: last_checked: 2023-08-06 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -6996,15 +7004,15 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        {
          'data' => '#: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-06
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 ',
          'from' => 1686409892,
          'id' => 3818,
-         'text' => 'Dolgenseestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 12.08.2023',
+         'text' => 'Dolgenseestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 12.08.2023, eventuell auch länger',
          'type' => 'handicap',
-         'until' => 1691877600
+         'until' => undef
        },
        {
          'data' => '#: next_check_id: SPREEUFER-2022
@@ -7275,7 +7283,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023
-#: last_checked: 2023-07-14
+#: last_checked: 2023-08-05 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151 11750,16116
@@ -7428,6 +7436,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        {
          'data' => '#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
 #: source_id: bvg2021:194#BVG325855_0
+#: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023)
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
 #: next_check: 2023-08-11
 	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
@@ -7439,16 +7448,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'type' => 'handicap',
          'until' => 1692979200
        },
-       {
-         'data' => '	2::inwork 31260,-3484 31492,-3156
-',
-         'from' => 1691042400,
-         'id' => 3871,
-         'source_id' => 'LS/222-W/23/140',
-         'text' => 'Brücke über den Oder-Spree-Kanal: Sperrung vom 04.08.2023, 08:00 Uhr bis 06.08.2023, 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1691330400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1352930.php (unklare Instandsetzung)
 #: XXX Ist diese Stelle gemeint? Wann ist der Steg wieder offen?
@@ -7483,6 +7483,17 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'text' => 'Karl-Marx-Platz: Mi 11 bis 18 Uhr und Sa 8 bis 15 Uhr Einschränkungen wegen des Wochenmarkts möglich',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.598234,52.503701,31.07.2023,10:00 (hier nur Kfz-Verkehr, bis 08.09.2023)
+#: note: Absperrungen über die volle Breite der Fahrbahn, Umfahrung über westlichen Bürgersteig möglich, aber dann muss man entweder Bordsteine überfahren oder auf dem Bürgersteig bleiben; eigentliche Bauarbeiten nur auf einem kurzen Abschnitt
+	q3::inwork 23575,10972 23648,11265
+',
+         'from' => 1690704000,
+         'id' => 3875,
+         'text' => 'Kressenweg: zwischen Alt-Mahlsdorf/Alt-Kaulsdorf und Elsenstr./Am Niederfeld Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen, vom 31.07.2023 10:00 bis 08.09.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1694185200
        }
      
 );

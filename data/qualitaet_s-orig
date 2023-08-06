@@ -278,6 +278,8 @@ Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23138,8764 23108,8720 23012,8575 22
 Pariser Str.: Asphalt	Q0 23470,9403 23513,9567
 Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23603,9883 23659,10074
+Kressenweg: Asphalt	Q0 23538,10857 23569,10956 23575,10972 23648,11265
+Kressenweg: leicht löchriger Beton	Q0- 23659,10074 23726,10308 23683,10391 23638,10408 23534,10446 23522,10456 23467,10569 23466,10622 23538,10857
 # REMOVED --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130816.1515.388062.html --- #: XXX Sanierung der Fischerstr. bis Ende Oktober, danach asphaltiert --- #: priority: #A --- #: last_checked: 2013-10-19
 #: note: außen Kopfsteinpflaster
 Fischerstr.: Asphaltstreifen in der Mitte	Q0- 16080,10743 16181,10609
@@ -396,7 +398,7 @@ Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2- 18555,12101 18420,11864 18417,11854 18382,11740
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4871 (Verbesserung für den Radverkehr?) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036852138672/852138672/00101938/38-Anlagen/04/B0771SB.pdf (wird nicht geändert)
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
-Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1-; 22467,6135 22603,6141 22777,6151 22857,6155
+Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, Gehweg mit unebenem Mosaikpflaster für Radfahrer freigegeben	Q1-; 22467,6135 22603,6141 22777,6151 22857,6155
 Stellingdamm: Asphalt mit Schäden	Q1; 22857,6155 23011,6181
 Stellingdamm: Asphalt	Q0; 23011,6181 22857,6155
 Stellingdamm: Asphalt	Q0 23011,6181 23131,6237 23222,6276
@@ -7396,8 +7398,8 @@ Hirschgartenstr.: Asphalt, einige Schäden	Q1 23660,5819 23634,5873
 Hirschgartenstr.: Asphalt	Q0 23634,5873 23617,5902
 Hirschgartenstr.: Asphalt, einige Schäden	Q1 23617,5902 23600,5932
 (Zufahrt zum Bahnhof Südkreuz): Asphalt	Q0 7951,7801 7932,7795 7919,7679
-Alt-Mahlsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1+ 24175,11265 24154,11284 24019,11286 23853,11284 23654,11285
-Alt-Kaulsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1+ 23654,11285 23449,11281 23382,11279 23362,11263
+Alt-Mahlsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1 24175,11265 24154,11284 24019,11286 23853,11284 23654,11285
+Alt-Kaulsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1 23654,11285 23449,11281 23382,11279 23362,11263
 Karlstr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 23148,11419 22945,11402 22751,11381
 Myslowitzer Str.: leicht unebener Asphalt	Q0- 23153,11947 23215,11852 23269,11767 23225,11649 23182,11534
 Hamsterstr.: unbefestigter Weg	Q2+ 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
@@ -9559,7 +9561,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://mein.berlin.de/projekte/sanierung-grunflache-auerdreieck/?initialSlide=6 (vermutlich bleiben die Stufen am nördlichen Ende)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11067 (Anfrage)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022; Stand Mai 2023: laut Papieraushang bis Juni 2023, laut Baustellenschild bis Herbst 2023 vvv
-#: last_checked: 2023-07-16 vvv
+#: last_checked: 2023-08-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-10-31 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
@@ -25770,13 +25772,13 @@ Landenhäuser Weg: guter Beton	Q0 5676,21354 5604,21400 5535,21460
 #: by: Bernhard Husch: vvv
 #: note: laut ADFC-Karte "gut geeignet"
 #: confirmed_by: srt
-(Marienfelder Allee - Hildburghauser Str., Grünzug): fester Sandweg	Q1 7501,83 7231,236
+(Marienfelder Allee - Hildburghauser Str., Grünzug): fester Sandweg	Q1 7501,83 7457,101 7444,118 7398,131 7302,186 7290,206 7256,219 7234,237
 #: corrected_by: mapillary (fester Sandweg -> fester Sandweg und Verbundsteinpflasterstreifen)
 #: corrected_by: srt (... -> ..., neu gemacht)
-(Marienfelder Allee - Hildburghauser Str., Grünzug): Verbundsteinpflaster	Q1+ 7231,236 7063,444 7055,498 7021,557 7019,655
+(Marienfelder Allee - Hildburghauser Str., Grünzug): Verbundsteinpflaster	Q1+ 7234,237 7216,250 7135,350 7107,397 7083,415 7063,444 7055,498 7021,557 7016,655
 #: corrected_by: mapillary (fester Sandweg -> ...)
 #: corrected_by: srt (... -> ..., schlechtere Qualität als auf den Bildern gesehen) vvv
-(Marienfelder Allee - Hildburghauser Str., Grünzug): mäßiger Asphalt	Q1- 7019,655 7019,694
+(Marienfelder Allee - Hildburghauser Str., Grünzug): mäßiger Asphalt	Q1- 7016,655 7019,694
 (Marienfelder Allee - Hildburghauser Str., Grünzug): mäßiger Asphalt	Q2+ 7019,694 7023,772 7056,835 7058,844
 #: corrected_by ^^^
 Berntweg: Asphalt	Q0 13161,1991 13181,1645

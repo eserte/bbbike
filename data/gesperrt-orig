@@ -1526,6 +1526,10 @@ Blissestr.: Mittelstreifen	3nocross 4769,8563 4768,8608 4777,8731
 # 
 Martin-Luther-Str.	1 6485,8639 6455,8613
 Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
+# 
+#: note: explizites Radfahren-verboten-Schild
+Alt-Kaulsdorf	1::igndisp 23648,11265 23447,11264 23362,11263
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3655,7 +3659,7 @@ Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2023-07-09
+#: last_checked: 2023-08-06
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -3676,7 +3680,7 @@ Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,120
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-07-24 vvv
+#: last_checked: 2023-08-06 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -3794,7 +3798,7 @@ Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-06
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3944,13 +3948,13 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-07-16
+#: last_checked: 2023-08-06
 #: check_frequency: 60d
 #: next_check: 2023-10-31
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
-#: last_checked: 2023-03-26
+#: last_checked: 2023-08-06
 #: check_frequency: 180d
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 
