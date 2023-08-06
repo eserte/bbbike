@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.95;
+$VERSION = 1.96;
 
 use vars qw(%images);
 
@@ -1439,6 +1439,11 @@ sub show_fis_broker_menu {
     $link_menu->command
 	(-label => 'Flurstücke (ALKIS) (via strassenraumkarte)',
 	 -command => sub { showmap_strassenraumkarte(%args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => 'Grünanlagen',
+	 -command => sub { showmap_fis_broker(mapId => 'gris_oeffgruen@senstadt', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
