@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.94;
+$VERSION = 1.95;
 
 use vars qw(%images);
 
@@ -176,13 +176,13 @@ sub register {
 	$main::info_plugins{__PACKAGE__ . "_LGB"} =
 	    { name => "LGB Brandenburg Topo DTK10",
 	      callback => sub { showmap_mapcompare(@_, maps => 'lgb-topo-10') },
-	      callback_3_std => sub { showmap_url_mapcompare(@_, maps => 'lgb-topo-10') },
+	      callback_3 => sub { show_bbviewer_menu(@_) },
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LSB"} =
 	    { name => "LS Brandenburg Verkehrsmengen",
 	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_bbviewer(@_) },
+	       ? (callback => sub { showmap_bbviewer(@_, layers => 'verkehrsstaerke') },
 		  callback_3_std => sub { showmap_url_bbviewer(@_) },
 		 )
 	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
@@ -1745,12 +1745,21 @@ sub showmap_gdi_berlin {
 
 sub showmap_url_bbviewer {
     my(%args) = @_;
-    # XXX layerids is hardcoded for "Verkehrsstärke"
-    my $layerids = '10021,2062,22,10,11,7,8,5,6';
+    my $layers = delete $args{layers} || 'verkehrsstaerke';
+    my $layerids = {
+		    verkehrsstaerke => '10021,2062,22,10,11,7,8,5,6',
+		    flurstuecke     => '291-bg,9001,9000,159,149',
+		   }->{$layers};
+    my $baseurl = {
+		   verkehrsstaerke => 'https://viewer.brandenburg.de/strassennetz/',
+		   flurstuecke     => 'https://bb-viewer.geobasis-bb.de/',
+		  }->{$layers};
+    die "Unhandled layers value '$layers'" if !$layerids || !$baseurl;
+
     my $number_layerids = scalar split /,/, $layerids;
     my $visibility = join ',', ("true") x $number_layerids;
     my $transparency = join ',', ("0") x $number_layerids;
-    my $rooturl = "https://viewer.brandenburg.de/strassennetz/?layerIDs=$layerids&visibility=$visibility&transparency=$transparency&";
+    my $rooturl = "$baseurl?layerIDs=$layerids&visibility=$visibility&transparency=$transparency&";
     require Geo::Proj4;
     my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25833
 	or die Geo::Proj4->error;
@@ -1764,6 +1773,32 @@ sub showmap_bbviewer {
     my(%args) = @_;
     my $url = showmap_url_bbviewer(%args);
     start_browser($url);
+}
+
+sub show_bbviewer_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_BBViewer_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'bb-viewer',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'Flurstücke',
+	 -command => sub { showmap_bbviewer(layers => 'flurstuecke', %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => ($lang eq 'de' ? "Link kopieren" : 'Copy link'),
+	 -command => sub { _copy_link(showmap_url_mapcompare(%args, maps => 'lgb-topo-10')) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 ######################################################################
