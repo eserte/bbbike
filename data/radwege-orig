@@ -1227,7 +1227,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-08-05 vvv
+#: last_checked: 2023-08-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2833,7 +2833,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-08-05 vvv
+#: last_checked: 2023-08-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-08-31 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7654,7 +7654,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2023-07-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-29 vvv
-#: osm_watch: way id="335479077" version="19"
+#: osm_watch: way id="335479077" version="20"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"

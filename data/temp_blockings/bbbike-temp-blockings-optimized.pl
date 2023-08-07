@@ -4081,18 +4081,18 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="42"
+#: osm_watch: way id="8655276" version="43"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-07-23
+#: last_checked: 2023-08-06 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
          'from' => 1630670400,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Juli 2022: Durchfahrt ist gesperrt)',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand August 2023: Durchfahrt ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6044,7 +6044,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-07
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6146,6 +6146,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
          'data' => '#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/ # Ende der Bauarbeiten voraussichtlich im I. oder II. Quartal 2024 (mittlerweile bis II. Quartal 2024)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
+#: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
 #: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023)
 #: last_checked: 2023-07-17 (mapillary)
 #: check_frequency: 60d
@@ -6513,7 +6514,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
 #: note: Endedatum anhand Halteverbotsschilder
-#: last_checked: 2023-07-22
+#: last_checked: 2023-08-07 (daf)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 	q4::inwork; 4032,12167 4101,12356
@@ -6686,6 +6687,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
 #: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) vvv
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
+#: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: last_checked: 2023-08-06 vvv
 #: next_check: 2023-08-21 vvv
@@ -6943,7 +6945,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-08-06 vvv
+#: last_checked: 2023-08-07 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -7437,14 +7439,19 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'data' => '#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
 #: source_id: bvg2021:194#BVG325855_0
 #: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023)
+#: note: eigentlich ist schon ab Schlichtallee die Einfahrt nur für den Linienverkehr erlaubt
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
-#: next_check: 2023-08-11
-	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
+#: last_checked: 2023-08-07 vvv
+#: next_check: 2023-08-11 vvvv
+Lückstr.	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
+Giselastr.	q4::inwork; 16227,10991 16192,10907 16153,10818
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1691272800,
          'id' => 3870,
          'source_id' => 'https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349184.php',
-         'text' => 'Lückstraße: Bauarbeiten, zwischen Giselastr. und Weitlingstr. gesperrt, Radfahrer sind auch betroffen, vom 7. August bis voraussichtlich 11. August 2023, evtl. noch zwei Wochen länger',
+         'text' => 'Lückstraße: Bauarbeiten, zwischen Giselastr. und Weitlingstr. gesperrt, Radfahrer sind auch betroffen, außerdem Einbahnstraßenregelung in der Giselastr., vom 7. August bis voraussichtlich 11. August 2023, evtl. noch zwei Wochen länger',
          'type' => 'handicap',
          'until' => 1692979200
        },
@@ -7494,6 +7501,57 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'text' => 'Kressenweg: zwischen Alt-Mahlsdorf/Alt-Kaulsdorf und Elsenstr./Am Niederfeld Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen, vom 31.07.2023 10:00 bis 08.09.2023 17:00',
          'type' => 'handicap',
          'until' => 1694185200
+       },
+       {
+         'data' => '#: by: http://dunckerstrassenfest.de/ (zwischen Stargarder Str. und Ahlbecker Str., laut Videobildern auch bis zur S-Bahnbrücke)
+#: by: https://www.berlin.de/events/4978409-2229501-dunckerstrassenfest.html
+	2::temp 11595,15460 11632,15530 11654,15572 11689,15639
+',
+         'from' => 1692964800,
+         'id' => 3876,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 26. August 2023 von 14 bis 22 Uhr',
+         'type' => 'handicap',
+         'until' => 1693080000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023)
+	q4::inwork 9417,6063 9339,6076 9321,6079 9212,6096
+',
+         'from' => 1691384400,
+         'id' => 3877,
+         'text' => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Wenckebachstr., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, vom 08.08.2023 07:00 bis 23.08.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1692802800
+       },
+       {
+         'data' => '	q4::inwork 5782,8828 5783,9060
+',
+         'from' => 1691298000,
+         'id' => 3878,
+         'source_id' => 'viz2021:13.33522,52.4859,07.08.2023,07:00',
+         'text' => 'Babelsberger Str.: Bauarbeiten zwischen Badensche Str. und Berliner Str., Fahrbahn gesperrt, vom 07.08.2023 07:00 bis 25.08.2023 16:00',
+         'type' => 'handicap',
+         'until' => 1692972000
+       },
+       {
+         'data' => '	2::inwork 14701,40362 15007,40331 15221,40317
+',
+         'from' => 1692507600,
+         'id' => 3879,
+         'source_id' => '236001421',
+         'text' => 'Lanke - Stolzenhagen: Sperrung des Bahnübergang, evtl. sind auch Radfahrer betroffen, 21.08.2023 07:00 Uhr bis 26.08.2023 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1693065600
        }
      
 );
