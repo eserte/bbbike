@@ -56,13 +56,14 @@
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
 
-(defadvice switch-to-buffer (after bbbike-revert last act)
-  "Make sure bbbike buffers are up-to-date"
-  (when (and (eq major-mode 'bbbike-mode)
-	     (not (buffer-modified-p)))
-    (let ((last-modified (nth 5 (file-attributes (buffer-file-name)))))
-      (when (time-less-p bbbike-mode-load-time last-modified)
-        (revert-buffer)))))
+;; using auto-revert-mode
+;(defadvice switch-to-buffer (after bbbike-revert last act)
+;  "Make sure bbbike buffers are up-to-date"
+;  (when (and (eq major-mode 'bbbike-mode)
+;	     (not (buffer-modified-p)))
+;    (let ((last-modified (nth 5 (file-attributes (buffer-file-name)))))
+;      (when (time-less-p bbbike-mode-load-time last-modified)
+;        (revert-buffer)))))
 
 ;;; reverses the current region
 (defun bbbike-reverse-street ()
@@ -349,7 +350,8 @@
 
   (bbbike-create-buttons)
 
-  (setq-local bbbike-mode-load-time (current-time))
+  (setq-local bbbike-mode-load-time (current-time)) ; not really necessary since using auto-revert-mode
+  (auto-revert-mode 1)
 
   (run-hooks 'bbbike-mode-hook)
   )
