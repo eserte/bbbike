@@ -1937,7 +1937,7 @@ breite Busspur ist immer gültig	RW5; 5258,11285 5459,11135
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-07-26 (mapillary) vvv
+#: last_checked: 2023-08-01 (mapillary) vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1964,7 +1964,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-07-26 (mapillary) vvv
+#: last_checked: 2023-08-01 (mapillary) vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -2225,8 +2225,17 @@ neu asphaltiert	RW2; -6492,12574 -6275,12498 -6025,12419 -5518,12259
 	RW2; -9005,13354 -8892,13351 -8784,13321
 #: by ^^^
 	RW1;RW1 3380,10373 3388,10559 3395,10704
-	RW3;RW1 6929,10852 6966,10931
-	RW1;RW1 6966,10931 6998,11003
+# 
+#: note: Radwege/spur am Lützowplatz wegen einer neuen 30er-Zone entfernt
+#: by: https://www.tagesspiegel.de/berlin/bezirke/in-tempo-30-zone-nicht-erlaubt-berliner-bezirksamt-entfernt-radweg-am-lutzwoplatz-10222597.html vvv
+#: confirmed_by: osm vvv
+#: historical_note: früher RW3;RW1
+	RW0;RW0 6929,10852 6966,10931
+#: historical_note: früher RW1;RW1
+	RW0;RW0 6966,10931 6998,11003
+#: confirmed_by ^^^
+#: by ^^^
+# 
 	RW1; 7002,11034 6998,11003
 	RW1;RW1 12240,8964 12328,9117 12416,9273 12481,9390 12523,9465 12563,9536
 laut Schild sollen Radfahrer Richtung Urbanstr. auch diesen Weg nehmen	RW2; 11909,9155 11888,9189

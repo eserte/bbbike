@@ -5933,7 +5933,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -5941,9 +5941,9 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 ',
          'from' => 1665385200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 25.08.2023 17:00',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
          'type' => 'handicap',
-         'until' => 1692975600
+         'until' => 1691679600
        },
        undef,
        undef,
@@ -6018,12 +6018,13 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 #: by: https://viz.berlin.de/2023/04/eiswaldtstr/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Erwähnung)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353123.php (Verkehrsfreigabe am 8.8.2023)
-#: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023)
+#: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023) (inaktiv)
+#: source_id: viz2021:13.352741,52.427535,13.04.2023,06:00 (bis 09.08.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
 #: note: an der östlichen Seite sind sogar die Gehwege gesperrt
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
 #: last_checked: 2023-08-05
-#: next_check: 2023-08-08
+#: next_check: 2023-08-09
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
@@ -6033,9 +6034,9 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
          'from' => 1681077600,
          'id' => 3670,
          'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
-         'text' => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Am Gemeindepark bis Malteserstraße, voraussichtlich bis 8. August 2023',
+         'text' => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Am Gemeindepark bis Malteserstraße, voraussichtlich bis 9. August 2023',
          'type' => 'handicap',
-         'until' => 1691531999
+         'until' => 1691618399
        },
        undef,
        undef,
@@ -7158,11 +7159,11 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'until' => undef
        },
        {
-         'data' => '	q3::inwork 4319,20182 4262,20025
+         'data' => '#: source_id: viz2021:13.31705,52.588081,14.11.2022,07:00 (hier nur Kfz-Verkehr, bis 11.08.2023)
+	q3::inwork 4319,20182 4262,20025
 ',
          'from' => 1668319200,
          'id' => 3838,
-         'source_id' => 'viz2021:13.31705,52.588081,14.11.2022,07:00',
          'text' => 'Triftstr. : Bauarbeiten, Fahrbahn zwischen Am Nordgraben und Holzhauser Str. gesperrt, vom 14.11.2022 07:00 bis 11.08.2023 17:00',
          'type' => 'handicap',
          'until' => 1691766000
@@ -7552,6 +7553,20 @@ Giselastr.	q4::inwork; 16227,10991 16192,10907 16153,10818
          'text' => 'Lanke - Stolzenhagen: Sperrung des Bahnübergang, evtl. sind auch Radfahrer betroffen, 21.08.2023 07:00 Uhr bis 26.08.2023 18:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1693065600
+       },
+       {
+         'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
+#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-090823/ (Umleitung für Radverkehr via "Am Zirkus")
+#: source_id: viz2021:13.387693,52.523668,09.08.2023,11:00 (bis 13.09.2023)
+#: XXX Einschränkungen dokumentieren
+#: next_check: 2023-08-09
+	q4::inwork; 9262,13111 9269,13060 9279,12953
+',
+         'from' => 1691485200,
+         'id' => 3880,
+         'text' => 'Friedrichstr.: Bauarbeiten zwischen Reinhardstr. und Schiffbauerdamm, evtl. sind auch Radfahrer betroffen, vom 09.08.2023 11:00 bis 13.09.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1694617200
        }
      
 );

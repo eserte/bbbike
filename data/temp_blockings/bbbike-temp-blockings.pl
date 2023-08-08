@@ -37041,8 +37041,8 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 EOF
      },
      { from  => 1665385200, # 2022-10-10 09:00
-       until => $isodate2epoch->("2023-08-25 17:00:00"), # 1667664000, # 2022-11-05 17:00
-       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 25.08.2023 17:00',
+       until => $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
+       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
@@ -37050,7 +37050,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -37364,9 +37364,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-04-10 00:00:00"), # 1667170800, # 2022-10-31 00:00
-       until => $isodate2epoch->("2023-08-08 23:59:59"), # 1678541944, # undef, # XXX
+       until => $isodate2epoch->("2023-08-09 23:59:59"), # 1678541944, # undef, # XXX
        dont_check_date => 1, # weitere Bauabschnitte in until berücksichtigt!
-       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Am Gemeindepark bis Malteserstraße, voraussichtlich bis 8. August 2023',
+       text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Am Gemeindepark bis Malteserstraße, voraussichtlich bis 9. August 2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
        data  => <<EOF,
@@ -37379,12 +37379,13 @@ EOF
 #: by: https://viz.berlin.de/2023/04/eiswaldtstr/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Erwähnung)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353123.php (Verkehrsfreigabe am 8.8.2023)
-#: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023)
+#: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023) (inaktiv)
+#: source_id: viz2021:13.352741,52.427535,13.04.2023,06:00 (bis 09.08.2023)
 #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
 #: note: an der östlichen Seite sind sogar die Gehwege gesperrt
 #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
 #: last_checked: 2023-08-05
-#: next_check: 2023-08-08
+#: next_check: 2023-08-09
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
@@ -39507,8 +39508,8 @@ EOF
        until => 1691766000, # 2023-08-11 17:00
        text  => 'Triftstr. : Bauarbeiten, Fahrbahn zwischen Am Nordgraben und Holzhauser Str. gesperrt, vom 14.11.2022 07:00 bis 11.08.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.31705,52.588081,14.11.2022,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.31705,52.588081,14.11.2022,07:00 (hier nur Kfz-Verkehr, bis 11.08.2023)
 	q3::inwork 4319,20182 4262,20025
 EOF
      },
@@ -40016,6 +40017,19 @@ EOF
        source_id => '236001421',
        data  => <<EOF,
 	2::inwork 14701,40362 15007,40331 15221,40317
+EOF
+     },
+     { from  => 1691485200, # 2023-08-08 11:00
+       until => 1694617200, # 2023-09-13 17:00
+       text  => 'Friedrichstr.: Bauarbeiten zwischen Reinhardstr. und Schiffbauerdamm, evtl. sind auch Radfahrer betroffen, vom 09.08.2023 11:00 bis 13.09.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: ORANIENBURGERTORTRAM-2022
+#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-090823/ (Umleitung für Radverkehr via "Am Zirkus")
+#: source_id: viz2021:13.387693,52.523668,09.08.2023,11:00 (bis 13.09.2023)
+#: XXX Einschränkungen dokumentieren
+#: next_check: 2023-08-09
+	q4::inwork; 9262,13111 9269,13060 9279,12953
 EOF
      },
     );
