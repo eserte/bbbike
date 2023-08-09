@@ -20,16 +20,21 @@ Köpenicker Str.: Gegenverkehrsregelung	X::inwork 19933,2078
 Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 # 
 #: next_check_id: PISTORIUS-2023
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023)
 #: last_checked: 2023-07-20
-#: next_check: 2023-10-23
-#: valid: -20231023
+#: next_check: 2023-10-20
+#: valid: -20231020
 Roelckestr./Gäblerstr.	X::inwork 13272,16672
 # 
 #: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024)
-#: next_check: 2023-09-30
-#: valid: -20230930
+#: next_check: 2024-09-30
+#: valid: -20240930
 Gegenverkehrsregelung	X::inwork 20302,1613
+# 
+#: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023)
+#: next_check: 2023-08-14
+#: valid: -20230814
+Am Falkenberg	X::inwork 21497,1042
 # 
 #: next_check_id: SGEHRENSEE-2023
 #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023)
@@ -98,15 +103,8 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: ORANIENBURGERTORTRAM-2022
-#: note: am 19.7.2023 ausgeschaltet (laut mapillary)
-#: last_checked: 2023-07-05 (mapillary)
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-08-09
-#: valid: -20230809
-Tucholskystr./Ziegelstr.	X::inwork 9559,13087
+# REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-09 --- #: valid: -20230809 --- Tucholskystr./Ziegelstr.	X::inwork 9559,13087
 # REMOVED (entfernt) --- #: XXX schon seit mehreren Tagen ausgeschaltet --- #: last_checked: 2023-05-05 --- #: check_frequency: 30d --- Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
-# 
 # REMOVED (existiert nicht mehr) --- #: next_check_id: WILHELMAMPEL-2022 --- #: source_id: viz2021:13.184034,52.519038,11.10.2022,07:00 (Sperrung der Wilhelmstr. Richtung Nordosten bis 28.10.2022) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.183049,52.518565,02.11.2022,08:00 (bis 30.11.2022) (bis 9.12.2022) (inaktiv) --- #: by: https://nitter.cz/VIZ_Berlin/status/1579825402096521218#m (bis auf Weiteres gibt es keine Sperrung) --- #: note: am 2022-09-22 war hier eine temporäre Ampelanlage für die gesamte Einmündung mit vollständiger Gelbmarkierung, aber noch nicht eingeschaltet --- #: note: gilt nicht für Radfahrer Richtung Süden (Heerstr.) --- #: add_fragezeichen: Existiert die provisorische Ampel noch immer? --- #: last_checked: 2022-10-08 --- #: check_frequency: 120d --- #: next_check: 2022-12-09 --- Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 # REMOVED (abgebaut) --- #: next_check_id: HAENSEL-2022 --- #: last_checked: 2022-10-24 --- #: XXX Ampel befindet sich südöstlich der Einmündung --- Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 # REMOVED (wurde durch einen temporären Zebrastreifen ersetzt) --- #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten) --- #: by: https://officehome.de/ostkreuz-campus-a --- #: osm_watch: way id="936801541" version="3" --- #: XXX Ampel befindet sich östlich der Einmündung --- #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30, 2023-05-14 (So) um 13:30 --- #: note: Anforderungsampel --- #: last_checked: 2023-05-14 --- Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
@@ -165,7 +163,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
 #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023) (bis 11.08.2023)
-#: last_checked: 2023-07-23
+#: last_checked: 2023-08-09
 #: next_check: 2023-08-11
 #: valid: -20230811
 	F::inwork 11913,13077
@@ -3255,7 +3253,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-07-26 (mapillary) vvv
+#: last_checked: 2023-08-09 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

@@ -3414,11 +3414,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlinerbaeder.de/aktuelles/detail/einblicke-in-die-sanierung-des-stadtbades-tiergarten/ (Fertigstellung Mitte 2023)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
-#: osm_watch: way id="462738551" version="16"
+#: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
+#: osm_watch: way id="462738551" version="17"
 #: osm_watch: way id="848019125" version="4"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-03-21 (osm)
-#: next_check: 2023-08-30
+#: last_checked: 2023-08-09 (osm)
+# REMOVED --- #: next_check: 2023-08-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 ',
@@ -4251,7 +4252,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-07-25 vvv
+#: last_checked: 2023-08-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4615,8 +4616,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
-#: osm_watch: way id="26322046" version="26"
-#: osm_watch: way id="165832806" version="31"
+#: osm_watch: way id="26322046" version="28"
+#: osm_watch: way id="165832806" version="32"
 #: last_checked: 2023-08-04
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
@@ -5823,56 +5824,7 @@ Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
-#: source_id[inactive]: bvg2021:142#BVG311081_0
-#: source_id[inactive]: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022) (verlängert bis 30.1.2023)
-#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022) (inaktiv)
-#: source_id: viz2021:13.384646,52.526904,05.10.2022,03:30 (bis 1.12.2022, Kreuzungsbereich für Kfz-Verkehr gesperrt) (inaktiv)
-#: source_id: viz2021:13.387093,52.527156,05.10.2022,11:47 (bis 16.1.2023, nur Richtung Norden) (bis 31.1.2023) (inaktiv)
-#: source_id: viz2021:13.387679,52.524493,30.01.2023,11:58 (bis 02.03.2023) (inaktiv)
-#: source_id: viz2021:13.387251,52.526281,30.11.2022,11:39 (bis 16.1.2023, beide Richtungen) (bis 31.1.2023) (bis 2.3.2023) (bis 13.3.2023) (bis 28.3.2023) (bis 24.4.2023) (bis 10.5.2023) (inaktiv) (bis 16.6.2023) (bis 30.6.2023) (bis 31.07.2023) (bis 09.08.2023)
-#: source_id: viz2021:13.38778,52.52391,10.05.2023,06:00 (bis 30.06.2023) (bis 31.07.2023) (inaktiv)
-#: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
-#: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
-#: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
-#: by: https://nitter.net/tramathon/status/1583012911013761024
-#: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
-#: by: https://nitter.net/VIZ_Berlin/status/1597901017756368898#m
-#: by: https://nitter.net/pic/orig/media%2FFizhNZlXkAArDsW.png
-#: by: https://nitter.net/pic/orig/media%2FFizho6UWQAI-o77.jpg (Umleitung für den Radverkehr)
-#: by: https://www.bahninfo-forum.de/read.php?9,751033,764779#msg-764779
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (Sperrung Am Kupfergraben bis 24.7.2023)
-#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-100523/ (nun ab Reinhardstr., Bauphase bis Mitte Juni 2023, Gesamtbaumaßnahme bis Ende Juli 2023)
-#: by: https://www.bahninfo-forum.de/read.php?9,751033,767328#msg-767328
-#: by: https://www.nd-aktuell.de/artikel/1173999.bvg-friedrichstrasse-skandal-baustelle-in-der-dauerschleife.html
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (weiterhin Sperrung Am Kupfergraben bis 24.7.2023)
-# REMOVED (nicht mehr) --- #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
-#: XXX Bis wann ist die Friedrichstr. gesperrt?
-#: note: laut rbb läuft diese Bauphase bis 16.06.2023
-#: last_checked: 2023-08-04 (mapillary) vvv
-#: next_check: 2023-08-09 vvv
-# REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
-# REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
-# REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
-# REMOVED (hier nicht mehr) --- Friedrichstr.	q3::inwork; 9212,13471 9225,13389
-# REMOVED (hier nicht mehr) --- Friedrichstr. (Richtung Süden, ab der Oranienburger Str.)	q3::inwork; 9225,13389 9244,13253 9246,13235
-Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9262,13111 9254,13171 9246,13235 9244,13253 9225,13389
-# REMOVED (hier nicht mehr) --- Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
-# REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
-# REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
-# REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
-# ungünstiges Routing ---	3 9246,13235 9244,13253 9225,13389 9312,13388
-# ungünstiges Routing ---	3 9312,13388 9225,13389 9244,13253 9246,13235
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1667499233,
-         'id' => 3643,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Reinhardstr. und Oranienburger Str. gesperrt (Gleisbauarbeiten), voraussichtlich bis 8. August 2023',
-         'type' => 'handicap',
-         'until' => 1691593200
-       },
+       undef,
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
 #: by: https://www.bahninfo-forum.de/read.php?9,725584,728443#msg-728443 (nur nachts/am Wochenende zu?)
@@ -6019,12 +5971,10 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Erwähnung)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353123.php (Verkehrsfreigabe am 8.8.2023)
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023) (inaktiv)
-#: source_id: viz2021:13.352741,52.427535,13.04.2023,06:00 (bis 09.08.2023)
+#: source_id: viz2021:13.352741,52.427535,13.04.2023,06:00 (bis 09.08.2023) (inaktiv)
 #: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
 #: note: an der östlichen Seite sind sogar die Gehwege gesperrt
-#: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023
-#: last_checked: 2023-08-05
-#: next_check: 2023-08-09
+# REMOVED --- #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023 --- #: last_checked: 2023-08-05 --- #: next_check: 2023-08-09
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
@@ -6369,16 +6319,16 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
        },
        {
          'data' => '#: source_id: viz2021:13.53054,52.42388,15.02.2023,09:00 (bis 14.08.2023) (inaktiv)
-#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023) (bis 14.08.2023)
+#: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023) (bis 14.08.2023) (bis 15.09.2023)
 #: source_id: bvg2021:160#BVG316004_0 (kein Ende-Datum)
 Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
 Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 ',
          'from' => 1676361600,
          'id' => 3726,
-         'text' => 'Semmelweisstr.: Bauarbeiten zwischen Pfarrwörde und Am Bruchland, Fahrbahn kann gesperrt sein, außerdem Einbahnstraßenregelung in der Pfarrwöhrde, vom 15.02.2023 09:00 bis 14.08.2023 17:00',
+         'text' => 'Semmelweisstr.: Bauarbeiten zwischen Pfarrwörde und Am Bruchland, Fahrbahn kann gesperrt sein, außerdem Einbahnstraßenregelung in der Pfarrwöhrde, vom 15.02.2023 09:00 bis 15.09.2023 17:00',
          'type' => 'handicap',
-         'until' => 1692025200
+         'until' => 1694790000
        },
        {
          'data' => '#: next_check_id: TELTOWKANALUFERWEG-2023
@@ -7172,10 +7122,10 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        {
          'data' => '#: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: last_checked: 2023-08-04 (mapillary) vvv
-#: next_check: 2023-10-23 vvv
+#: next_check: 2023-10-20 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: next_check ^^^
@@ -7185,7 +7135,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
          'id' => 3840,
          'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., Gesamtbaumaßnahme bis Ende Oktober 2023',
          'type' => 'handicap',
-         'until' => 1698505200
+         'until' => 1697814000
        },
        undef,
        undef,
@@ -7249,7 +7199,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 #: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023)
 #: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-08-04 (mapillary)
+#: last_checked: 2023-08-09
 #: check_frequency: 14d
 #: next_check: 2023-08-14
 	q4::inwork; 9384,12103 9373,12197
@@ -7556,17 +7506,59 @@ Giselastr.	q4::inwork; 16227,10991 16192,10907 16153,10818
        },
        {
          'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
-#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-090823/ (Umleitung für Radverkehr via "Am Zirkus")
+#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-090823/ (Umleitung für Radverkehr via "Am Zirkus") (confirmed by srt, ausgeschildert)
+#: by: https://nitter.net/VIZ_Berlin/status/1689185998544994306#m
 #: source_id: viz2021:13.387693,52.523668,09.08.2023,11:00 (bis 13.09.2023)
-#: XXX Einschränkungen dokumentieren
-#: next_check: 2023-08-09
-	q4::inwork; 9262,13111 9269,13060 9279,12953
+# REMOVED --- #: XXX Einschränkungen dokumentieren
+#: last_checked: 2023-08-09 vvv
+#: next_check: 2023-09-13 vvv
+Friedrichstr.	q4::inwork; 9262,13111 9269,13060 9279,12953
+Ziegelstr.	q4::inwork; 9401,13072 9269,13060
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1691485200,
          'id' => 3880,
-         'text' => 'Friedrichstr.: Bauarbeiten zwischen Reinhardstr. und Schiffbauerdamm, evtl. sind auch Radfahrer betroffen, vom 09.08.2023 11:00 bis 13.09.2023 17:00',
+         'text' => 'Friedrichstr.: Bauarbeiten zwischen Reinhardstr. und Schiffbauerdamm, auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Ziegelstr., vom 09.08.2023 11:00 bis 13.09.2023 17:00',
          'type' => 'handicap',
          'until' => 1694617200
+       },
+       {
+         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
+#: next_check: 2023-08-28
+	q4::inwork 22431,6068 22467,6135
+',
+         'from' => 1693087200,
+         'id' => 3881,
+         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung, vermutlich ist der Durchgang durch den Bahnhof Köpenick möglich, vom 28.08.2023 bis voraussichtlich 09.10.2023',
+         'type' => 'gesperrt',
+         'until' => 1696867200
+       },
+       {
+         'data' => '	q4::inwork 12226,16757 12257,16876
+',
+         'from' => 1691557200,
+         'id' => 3882,
+         'source_id' => 'viz2021:13.432829,52.557277,10.08.2023,07:00',
+         'text' => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., vom 10.08.2023 07:00 bis 25.08.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1692975600
+       },
+       {
+         'data' => '#: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
+#: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
+#: XXX Eventuell im Zusammehang mit den angrenzenden Bauarbeiten in der Birnbaumer Straße?
+#: priority: #A
+#: last_checked: 2023-08-09 (twitter)
+#: check_frequency: 14d
+	2::inwork 22027,6608 22050,6619
+',
+         'from' => undef,
+         'id' => 3883,
+         'text' => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
