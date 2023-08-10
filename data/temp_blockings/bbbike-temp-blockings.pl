@@ -37048,7 +37048,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023)
+#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 	q2::inwork; 12010,16774 12230,16915
 #: note: hier u.U. Umwege erforderlich
 	q4::inwork; 12230,16915 12267,16946
@@ -39291,7 +39291,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 12.08.2023
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B)
 #: last_checked: 2023-08-06
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
@@ -39913,7 +39913,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349184.php',
        data  => <<EOF,
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
-#: source_id: bvg2021:194#BVG325855_0
+#: source_id[inactive]: bvg2021:194#BVG325855_0
 #: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023)
 #: note: eigentlich ist schon ab Schlichtallee die Einfahrt nur für den Linienverkehr erlaubt
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
@@ -39951,6 +39951,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353335.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/wittenau/c-verkehr/50-meter-neue-aeg-strasse_a389350
 	2::inwork 6301,22581 6361,22511
 EOF
      },
@@ -40046,10 +40047,11 @@ EOF
      },
      { from  => 1691557200, # 2023-08-09 07:00
        until => 1692975600, # 2023-08-25 17:00
-       text  => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., vom 10.08.2023 07:00 bis 25.08.2023 17:00',
+       text  => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., eventuell auch für Radfahrer relevant, vom 10.08.2023 07:00 bis 25.08.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.432829,52.557277,10.08.2023,07:00',
        data  => <<EOF,
+#: by: https://nitter.net/VIZ_Berlin/status/1689554678986813440#m (hier nur Kfz-Verkehr)
 	q4::inwork 12226,16757 12257,16876
 EOF
      },

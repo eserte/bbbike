@@ -1979,6 +1979,7 @@ Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbreiterung und Asphaltierung des Weges?)	?::projected 8106,3410 8016,3651 7795,4242 7769,4315
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_20_2129_2184_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.deutsches-architekturforum.de/thread/15219-marienpark-berlin/?postID=745721
 #: XXX auch im Zuge des Bebauungsplans 7-80 (siehe oben) vvv
 #: next_check: 2025-04-01 vvv
 #: note: hier existieren bereits Straßen+Wege, aber sieht noch alles sehr privat aus
@@ -3985,7 +3986,7 @@ Rheinstr./Hauptstr.: Busspur geplant	?; 5644,6936 5806,7205 5817,7223 5853,7274 
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf
 #: last_checked: 2023-05-13
-#: check_frequency: 90d
+#: check_frequency: 120d
 Friedrich-Karl-Str.: Busspur geplant	?; 8968,5554 9161,5535
 # 
 # REMOVED (realisiert) --- #: osm_watch: way id="154484610" version="11" --- #: XXX Markierung weitgehend fertig, aber die Schilder fehlen --- #: last_checked: 2022-04-30 --- #: check_frequency: 14d --- Bülowstr.: Markierungsarbeiten, vielleicht entsteht hier eine Fahrradstraße?	? 7866,9902 7889,9901 7933,9755
@@ -4307,7 +4308,7 @@ Ungarnstr.: Fahrradstraße soll entstehen	?::projected 6843,16346 7056,16587 7106
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groß-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (Übergabe der Verkehrsflächen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-König-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2023-07-20 vvv
+#: last_checked: 2023-08-10 vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="17"
 #: osm_watch: way id="339201177" version="17"
@@ -5327,7 +5328,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen in Bau	?::inwork 11356,11212 11349,1
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2023-07-25
+#: last_checked: 2023-08-10
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -6651,6 +6652,7 @@ Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,2
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11541 (Anfrage - Antwort)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11545 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11578 (Anfrage - Antwort)
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/die-naechste-radweg-demo_a388969
 #: osm_watch: way id="39965120" version="24"
 #: osm_watch: way id="39965424" version="19"
 #: osm_watch: way id="962783115" version="9"
@@ -7907,8 +7909,9 @@ Adlergestell: Radspur auch stadteinwärts	?::projected; 19904,3464 19857,3514 198
 Hauptstr.: geschützter Radfahrstreifen zwischen Kleistpark und Dominicusstr. geplant	? 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960 7201,8870 7105,8788 7009,8705 6989,8687 6912,8617 6765,8480 6687,8385
 # 
 #: by: https://www.maz-online.de/lokales/teltow-flaeming/zossen-informationsabend-zum-bahnumbau-baustellen-bis-2028-5CJ2ESYUVNAU7PTYW45CNVZM3A.html (2022-2024)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7165/docs/PR_berlin-dresden_infoveranstaltung_zossen_20230330.pdf (neue Unterführung wird nördlich gebaut, Beginn etwa 450m nördlich von der jetzigen Einmündung; Bauzeit Q2/2023 - 06/2024)
 #: osm_watch: way id="186897941" version="8"
-#: last_checked: 2023-06-12
+#: last_checked: 2023-08-10 (indoor)
 #: check_frequency: 60d
 B246: Bau einer neuen Eisenbahnüberführung	? 13271,-20531 13412,-20513 13526,-20548
 # 
@@ -8032,9 +8035,9 @@ Fasanenstr.: Fahrradstraße wird eingerichtet	? 5219,9808 5203,9840 5194,9985 519
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/ampelanlage-entsteht-neu_a384792 (voraussichtlich bis Mitte Juli 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1670708956694495235#m (Sperrung der Fahrbahn wird verschoben)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnktTWpDd1gwQUlSLXRDLmpwZw==
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1675708944730447874
+#: by: https://nitter.net/VIZ_Berlin/status/1675708944730447874
 #: by: https://pbs.twimg.com/media/Fz34U0-XsAE75C6?format=jpg&name=4096x4096
-#: source_id: viz2021:13.396451,52.58038,03.07.2023,06:00 (bis 11.08.2023)
+#: source_id: viz2021:13.396451,52.58038,03.07.2023,06:00 (bis 11.08.2023) (inaktiv)
 #: next_check: 2023-08-11
 Friedrich-Engels-Str.: Ampel wird errichtet	?::inwork 9709,19371 9691,19436 9745,19430
 # 
@@ -9699,6 +9702,7 @@ Weiterführung der Peter-Huchel-Str.: Qualität?	? -13257,1337 -13272,1304 -13424,
 #: by: https://www.buwog.de/wohnbauprojekte/berlin-halske-sonnengaerten (neuer Name des Projekts) (geplante Fertigstellung des ersten Bauabschnitts 2023)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11669 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_12_1285_1328_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/wieder-1000-neue-wohnungen-das-nachste-riesige-neubauviertel-in-spandau-wachst-und-wachst-10287055.html
 #: osm_watch: way id="125758273" version="14"
 #: osm_watch: way id="1152661788" version="4"
 # REMOVED (realisiert) --- wird hier die Kleingartenanlage aufgehoben?

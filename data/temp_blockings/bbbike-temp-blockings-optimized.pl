@@ -5879,24 +5879,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
-#: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
-#: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
-#: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
-#: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023)
-	q2::inwork; 12010,16774 12230,16915
-#: note: hier u.U. Umwege erforderlich
-	q4::inwork; 12230,16915 12267,16946
-Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
-',
-         'from' => 1665385200,
-         'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1691679600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5960,34 +5943,7 @@ Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: EISWALDT-2022
-#: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
-#: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1306690.php (Fortsetzung)
-#: by: https://www.berliner-woche.de/lankwitz/c-bauen/strassenbau-geht-weiter_a376430
-#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/bauarbeiten-gehen-weiter-erneute-vollsperrung-in-lankwitz-id216990
-#: by: https://viz.berlin.de/2023/04/eiswaldtstr/
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Erwähnung)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353123.php (Verkehrsfreigabe am 8.8.2023)
-#: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023) (inaktiv)
-#: source_id: viz2021:13.352741,52.427535,13.04.2023,06:00 (bis 09.08.2023) (inaktiv)
-#: note: Sollte noch 2022 fertig werden, jetzt wird\'s Sommer 2023
-#: note: an der östlichen Seite sind sogar die Gehwege gesperrt
-# REMOVED --- #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023 --- #: last_checked: 2023-08-05 --- #: next_check: 2023-08-09
-# REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
-# REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
-# REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
-östlicher Abschnitt ab Am Gemeindepark	2::inwork 7172,2343 7285,2377
-',
-         'dont_check_date' => 1,
-         'from' => 1681077600,
-         'id' => 3670,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php',
-         'text' => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Am Gemeindepark bis Malteserstraße, voraussichtlich bis 9. August 2023',
-         'type' => 'handicap',
-         'until' => 1691618399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6956,7 +6912,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        },
        {
          'data' => '#: note: Halteverbotsschilder bis 12.08.2023
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B)
 #: last_checked: 2023-08-06
 #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
@@ -7388,7 +7344,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        undef,
        {
          'data' => '#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
-#: source_id: bvg2021:194#BVG325855_0
+#: source_id[inactive]: bvg2021:194#BVG325855_0
 #: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023)
 #: note: eigentlich ist schon ab Schlichtallee die Einfahrt nur für den Linienverkehr erlaubt
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
@@ -7420,7 +7376,8 @@ Giselastr.	q4::inwork; 16227,10991 16192,10907 16153,10818
          'until' => undef
        },
        {
-         'data' => '	2::inwork 6301,22581 6361,22511
+         'data' => '#: by: https://www.berliner-woche.de/wittenau/c-verkehr/50-meter-neue-aeg-strasse_a389350
+	2::inwork 6301,22581 6361,22511
 ',
          'from' => 1691877600,
          'id' => 3873,
@@ -7536,12 +7493,13 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'until' => 1696867200
        },
        {
-         'data' => '	q4::inwork 12226,16757 12257,16876
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1689554678986813440#m (hier nur Kfz-Verkehr)
+	q4::inwork 12226,16757 12257,16876
 ',
          'from' => 1691557200,
          'id' => 3882,
          'source_id' => 'viz2021:13.432829,52.557277,10.08.2023,07:00',
-         'text' => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., vom 10.08.2023 07:00 bis 25.08.2023 17:00',
+         'text' => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., eventuell auch für Radfahrer relevant, vom 10.08.2023 07:00 bis 25.08.2023 17:00',
          'type' => 'handicap',
          'until' => 1692975600
        },
