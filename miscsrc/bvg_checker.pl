@@ -138,6 +138,7 @@ sub find_active_sourceids_bvg2023 {
     require JSON::XS;
 
     my $ua = LWP::UserAgent->new;
+    $ua->cookie_jar({});
 
     my $page = 1;
     my $max_pages;
