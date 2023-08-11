@@ -21401,11 +21401,11 @@ EOF
 EOF
      },
      { do {
-           my $from1  = $isodate2epoch->("2022-09-18 06:00:00"); # 1 Tag Vorlauf
-           my $until1 = $isodate2epoch->("2022-09-23 06:00:00");
+           my $from1  = $isodate2epoch->("2023-09-19 06:00:00"); # 1 Tag Vorlauf
+           my $until1 = $isodate2epoch->("2023-09-24 06:00:00");
            # in der Zwischenzeit ist die erweiterte Sperrung aktiv, siehe unten
-           my $from2  = $isodate2epoch->("2022-09-26 06:00:00");
-           my $until2 = $isodate2epoch->("2022-09-27 23:30:00");
+           my $from2  = $isodate2epoch->("2023-09-27 06:00:00");
+           my $until2 = $isodate2epoch->("2023-09-28 23:30:00");
            if (time <= $until1) {
                (from => $from1, until => $until1);
            } else {
@@ -21416,7 +21416,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, 19.09.2022 bis 27.09.2022',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 20.09.2023 bis 28.09.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -21432,12 +21432,12 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2022-09-22 06:00:00"),
-       until => $isodate2epoch->("2022-09-26 06:00:00"),
+     { from  => $isodate2epoch->("2023-09-23 06:00:00"),
+       until => $isodate2epoch->("2023-09-27 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 22.09.2022 bis 26.09.2022',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 23.09.2023 bis 27.09.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -35841,7 +35841,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-07-25
+#: last_checked: 2023-08-11
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -39093,7 +39093,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.414599,52.516503,02.11.2022,08:00',
        data  => <<EOF,
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-11
 #: check_frequency: 30d
 #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -39505,7 +39505,7 @@ EOF
        text  => 'Triftstr. : Bauarbeiten, Fahrbahn zwischen Am Nordgraben und Holzhauser Str. gesperrt, vom 14.11.2022 07:00 bis 11.08.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31705,52.588081,14.11.2022,07:00 (hier nur Kfz-Verkehr, bis 11.08.2023)
+#: source_id: viz2021:13.31705,52.588081,14.11.2022,07:00 (hier nur Kfz-Verkehr, bis 11.08.2023) (inaktiv)
 	q3::inwork 4319,20182 4262,20025
 EOF
      },
@@ -39585,18 +39585,19 @@ Elsenstr.	q3::inwork; 13849,9310 13766,9200
 EOF
      },
      { from  => 1688875200, # 2023-07-09 06:00
-       until => $isodate2epoch->("2023-08-23 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       until => $isodate2epoch->("2023-09-15 17:00:00"), # 1689951600, # 2023-07-21 17:00
        dont_check_date => 1,
-       text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 23. August 2023, vielleicht länger', # 'vom 10.07.2023 06:00 bis 21.07.2023 17:00, möglicherweise länger'
+       text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 15. September 2023', # 'vom 10.07.2023 06:00 bis 21.07.2023 17:00, möglicherweise länger'
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2023
 #: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
-#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) vvv
+#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: note: bei rbb nur bis 15.08.2023
 #: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
 #: last_checked: 2023-07-21 vvv
-#: next_check: 2023-08-11 vvv
+#: next_check: 2023-09-15 vvv
 	q4::inwork 13368,7300 13476,7330 13519,7345
 Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
 #: next_check ^^^
@@ -39659,18 +39660,18 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2023-08-14 17:00:00"), # undef, # XXX
-       text  => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, voraussichtlich bis 14.08.2023',
+       text  => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, kein Endedatum', # voraussichtlich bis 14.08.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.rbb24.de/panorama/beitrag/2023/07/fassadenteil-friedrichstrasse-berlin-polizist-schwer-verletzt.html
 #: by: https://www.berliner-zeitung.de/news/friedrichstrasse-broeckelnde-fassade-faellt-mann-auf-den-kopf-strasse-gesperrt-objektschuetzer-auf-intensivstation-li.367532
 #: by: https://berliner-abendblatt.de/berlin-news/fassadenteil-stuerzt-herunter-und-verletzt-polizeimitarbeiter-id226599
-#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023)
+#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023) (kein Endedatum)
 #: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-08-09
+#: last_checked: 2023-08-11
 #: check_frequency: 14d
-#: next_check: 2023-08-14
+# REMOVED --- #: next_check: 2023-08-14
 	q4::inwork; 9384,12103 9373,12197
 EOF
      },
@@ -39907,14 +39908,14 @@ EOF
 EOF
      },
      { from  => 1691272800, # 2023-08-06 00:00
-       until => $isodate2epoch->("2023-08-25 18:00:00"), # 1691791199, # 2023-08-11 23:59
+       until => $isodate2epoch->("2023-08-11 18:00:00"), # 1691791199, # 2023-08-11 23:59
        text  => 'Lückstraße: Bauarbeiten, zwischen Giselastr. und Weitlingstr. gesperrt, Radfahrer sind auch betroffen, außerdem Einbahnstraßenregelung in der Giselastr., vom 7. August bis voraussichtlich 11. August 2023, evtl. noch zwei Wochen länger',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349184.php',
        data  => <<EOF,
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
 #: source_id[inactive]: bvg2021:194#BVG325855_0
-#: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023)
+#: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023) (inaktiv)
 #: note: eigentlich ist schon ab Schlichtallee die Einfahrt nur für den Linienverkehr erlaubt
 #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
 #: last_checked: 2023-08-07 vvv
@@ -40067,6 +40068,15 @@ EOF
 #: last_checked: 2023-08-09 (twitter)
 #: check_frequency: 14d
 	2::inwork 22027,6608 22050,6619
+EOF
+     },
+     { from  => 1692511200, # 2023-08-20 08:00
+       until => 1703224800, # 2023-12-22 07:00
+       text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 22.12.2023, 07:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/223-K/23/078',
+       data  => <<EOF,
+	2::inwork -19289,63424 -19675,64106
 EOF
      },
     );

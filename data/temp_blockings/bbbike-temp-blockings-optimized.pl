@@ -2848,8 +2848,92 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: by: https://www.bmw-berlin-marathon.com/
+#: by: https://viz.berlin.de/2021/09/berlin-marathon/
+#: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
+#: by: https://viz.berlin.de/2022/09/marathon/
+#: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
+# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
+	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+# REMOVED --- #: tempex ^^^
+',
+         'dont_check_date' => 1,
+         'from' => 1695096000,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 20.09.2023 bis 28.09.2023',
+         'type' => 'gesperrt',
+         'until' => 1695528000
+       },
+       {
+         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
+#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00
+#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00
+#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00
+# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
+	2::temp 8573,12325 8540,12420
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8119,12414 8055,12186
+	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
+	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
+	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
+	2::temp 8207,12606 8206,12734 8206,12757
+	3 7945,12592 8122,12603 8120,12756
+	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
+	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
+	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
+	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
+	2::temp 7775,12114 7772,12040 7717,11918
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1695441600,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 23.09.2023 bis 27.09.2023',
+         'type' => 'gesperrt',
+         'until' => 1695787200
+       },
        undef,
        undef,
        undef,
@@ -5492,7 +5576,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-07-25
+#: last_checked: 2023-08-11
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -6125,18 +6209,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1353475.php (bis 11.08.2023)
-# REMOVED --- #: add_fragezeichen: Ist die Verlängerte Neukladower Allee weiterhin gesperrt? --- #: XXX Nach den Bauarbeiten wahrscheinlich besserer Asphalt -> in qualitaet_s eintragen! --- #: next_check: 2023-05-31
-	2::inwork -6319,5606 -6246,5562 -6125,5447
-',
-         'from' => 1673074800,
-         'id' => 3705,
-         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1281512.php',
-         'text' => 'Verlängerte Neukladower Allee: Sperrung wegen Bauarbeiten, voraussichtlich bis 11.08.2023',
-         'type' => 'gesperrt',
-         'until' => 1691769600
-       },
+       undef,
        {
          'data' => '	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
 ',
@@ -6746,7 +6819,7 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
          'until' => 1697814000
        },
        {
-         'data' => '#: last_checked: 2023-07-27
+         'data' => '#: last_checked: 2023-08-11
 #: check_frequency: 30d
 #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -7064,16 +7137,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.31705,52.588081,14.11.2022,07:00 (hier nur Kfz-Verkehr, bis 11.08.2023)
-	q3::inwork 4319,20182 4262,20025
-',
-         'from' => 1668319200,
-         'id' => 3838,
-         'text' => 'Triftstr. : Bauarbeiten, Fahrbahn zwischen Am Nordgraben und Holzhauser Str. gesperrt, vom 14.11.2022 07:00 bis 11.08.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1691766000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: PISTORIUS-2023
@@ -7100,11 +7164,12 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
        {
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2023
 #: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
-#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) vvv
+#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: note: bei rbb nur bis 15.08.2023
 #: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
 #: last_checked: 2023-07-21 vvv
-#: next_check: 2023-08-11 vvv
+#: next_check: 2023-09-15 vvv
 	q4::inwork 13368,7300 13476,7330 13519,7345
 Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
 #: next_check ^^^
@@ -7116,9 +7181,9 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'dont_check_date' => 1,
          'from' => 1688875200,
          'id' => 3845,
-         'text' => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 23. August 2023, vielleicht länger',
+         'text' => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 15. September 2023',
          'type' => 'handicap',
-         'until' => 1692802800
+         'until' => 1694790000
        },
        {
          'data' => '	q4::inwork 4558,5863 4520,5793
@@ -7152,17 +7217,17 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'data' => '#: by: https://www.rbb24.de/panorama/beitrag/2023/07/fassadenteil-friedrichstrasse-berlin-polizist-schwer-verletzt.html
 #: by: https://www.berliner-zeitung.de/news/friedrichstrasse-broeckelnde-fassade-faellt-mann-auf-den-kopf-strasse-gesperrt-objektschuetzer-auf-intensivstation-li.367532
 #: by: https://berliner-abendblatt.de/berlin-news/fassadenteil-stuerzt-herunter-und-verletzt-polizeimitarbeiter-id226599
-#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023)
+#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023) (kein Endedatum)
 #: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
 #: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-08-09
+#: last_checked: 2023-08-11
 #: check_frequency: 14d
-#: next_check: 2023-08-14
+# REMOVED --- #: next_check: 2023-08-14
 	q4::inwork; 9384,12103 9373,12197
 ',
          'from' => undef,
          'id' => 3851,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, voraussichtlich bis 14.08.2023',
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, kein Endedatum',
          'type' => 'handicap',
          'until' => 1692025200
        },
@@ -7342,26 +7407,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'until' => 1693519200
        },
        undef,
-       {
-         'data' => '#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/07/BVG_PLUS_0823_barrierefrei.pdf (hier: bis 25.08.2023)
-#: source_id[inactive]: bvg2021:194#BVG325855_0
-#: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023)
-#: note: eigentlich ist schon ab Schlichtallee die Einfahrt nur für den Linienverkehr erlaubt
-#: XXX nach den Bauarbeiten vermutlich wieder bessere Qualität
-#: last_checked: 2023-08-07 vvv
-#: next_check: 2023-08-11 vvvv
-Lückstr.	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695
-Giselastr.	q4::inwork; 16227,10991 16192,10907 16153,10818
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1691272800,
-         'id' => 3870,
-         'source_id' => 'https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349184.php',
-         'text' => 'Lückstraße: Bauarbeiten, zwischen Giselastr. und Weitlingstr. gesperrt, Radfahrer sind auch betroffen, außerdem Einbahnstraßenregelung in der Giselastr., vom 7. August bis voraussichtlich 11. August 2023, evtl. noch zwei Wochen länger',
-         'type' => 'handicap',
-         'until' => 1692979200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1352930.php (unklare Instandsetzung)
@@ -7517,6 +7563,16 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'text' => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork -19289,63424 -19675,64106
+',
+         'from' => 1692511200,
+         'id' => 3884,
+         'source_id' => 'LS/223-K/23/078',
+         'text' => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 22.12.2023, 07:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1703224800
        }
      
 );

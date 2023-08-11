@@ -7,6 +7,20 @@
 # 
 #: temporary vvv
 # 
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1355528.php
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/
+#: note: Gilt vermutlich nur für den Radverkehr Richtung Norden (gesonderte Radspur); Richtung Süden weiterhin der alte Hochbordradweg
+#: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) vvv
+#: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 30.11.2023) vvv
+#: next_check: 2023-11-30 vvv
+#: valid: -20231130 vvv
+Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1170,13521
+Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1124,13599
+#: valid ^^^
+#: next_check ^^^
+#: source_id ^^^
+#: source_id ^^^
+# 
 #: by: https://nitter.net/VIZ_Berlin/status/1683357845155115010#m
 #: by: https://nitter.net/pic/orig/media%2FF1fwqZtXgA4eKSM.jpg
 #: source_id: viz2021:13.541546,52.423078,24.07.2023,09:00 (bis 21.08.2023) (bis 25.08.2023)
@@ -158,15 +172,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: PLDVEREINTENNATIONEN-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
-#: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023) (bis 11.08.2023)
-#: last_checked: 2023-08-09
-#: next_check: 2023-08-11
-#: valid: -20230811
-	F::inwork 11913,13077
+# REMOVED --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw== --- #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023) (bis 11.08.2023) --- #: last_checked: 2023-08-09 --- #: next_check: 2023-08-11 --- #: valid: -20230811 ---	F::inwork 11913,13077
 # 
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
@@ -308,7 +314,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2023-07-10
+#: last_checked: 2023-08-11
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
