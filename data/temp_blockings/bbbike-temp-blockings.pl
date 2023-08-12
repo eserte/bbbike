@@ -1745,7 +1745,7 @@ EOF
        text  => 'L 29; (Oderberg-Hohenfinow); OD Oderberg Baumfällarb. Dammsicherung Vollsperrung 14.03.2005-18.03.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 52671,51846 51496,51542
+	q4 52616,51837 52007,51669 51840,51665 51721,51594 51496,51542
 EOF
      },
      { from  => 1110679200, # 2005-03-13 03:00
@@ -3852,7 +3852,7 @@ EOF
        text  => 'L 029 Eberswalder Chaussee OD Oderberg, von Berliner Str. in Ri. Eberswalde Beseit. Tragfähigkeitsschäden Vollsperrung 27.02.2006-27.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 52671,51846 51496,51542
+	q4::inwork 52616,51837 52007,51669 51840,51665 51721,51594 51496,51542
 EOF
      },
      { from  => 1141499777, # 1141426800 2006-03-04 00:00
@@ -6386,7 +6386,7 @@ EOF
        text  => 'L 029 Oderberg-Niederfinow OD Liepe grundhafter Straßenbau Vollsperrung 04.10.2006-20.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 48662,51337 49039,51453 49211,51421 49875,51562
+	q4::inwork 48662,51337 48862,51408 48943,51479 49032,51497 49147,51446 49829,51549
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -6508,7 +6508,7 @@ EOF
        text  => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenschluss Vollsperrung 18.10.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41204,17507 40712,16743
+	2::inwork 41204,17507 40751,16779
 EOF
      },
      { from  => 1161036000, # 2006-10-17 00:00
@@ -6556,7 +6556,7 @@ EOF
        text  => 'L 303 Eggersdorfer Weg zw. Abzw. Altlandsberg und OE Eggersdorf Deckenerneuerung Vollsperrung 18.10.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 40540,16584 39400,15803
+	2::inwork 40528,16613 39400,15803
 EOF
      },
      { from  => 1161208800, # 2006-10-19 00:00
@@ -6732,7 +6732,7 @@ EOF
        text  => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenerneuerung Richtungsverkehr 27.09.2006-04.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 41204,17507 40712,16743
+	q4::inwork 41204,17507 40751,16779
 EOF
      },
      { from  => 1162454215, # 2006-11-02 08:56
@@ -8238,7 +8238,7 @@ EOF
        text  => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. Eggersd.Weg (Umgehungs.) Deckenerneuerung Vollsperrung 07.05.2007-15.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 40540,16584 40793,16343 40882,16328 41168,16281
+	2::inwork 40528,16613 40793,16343 40882,16328 41168,16281
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -9578,7 +9578,7 @@ EOF
        text  => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 06.08.2007-30.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 52671,51846 51496,51542
+	2::inwork 52616,51837 52007,51669 51840,51665 51721,51594 51496,51542
 EOF
      },
      { from  => 1186264800, # 2007-08-05 00:00
@@ -11274,7 +11274,7 @@ EOF
        text  => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 17.03.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 52671,51846 51496,51542
+	q4::inwork 52616,51837 52007,51669 51840,51665 51721,51594 51496,51542
 EOF
      },
      { from  => 1206313200, # 2008-03-24 00:00
@@ -12714,7 +12714,7 @@ EOF
        text  => 'L 029 Berliner Straße OL Oderberg in/aus Richtg. Liepe, Höhe Hausnr. 51-55 Kanalarbeiten Vollsperrung 06.09.2008-06.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 52671,51846 53177,51933
+	q4::inwork 52616,51837 52694,51860 52771,51844 53177,51933
 EOF
      },
      { from  => 1219874400, # 2008-08-28 00:00
@@ -13101,7 +13101,7 @@ EOF
        text  => 'L 034 Hohensteiner Chaussee OD Strausberg, zw. Ph.-Müller-Str. und Getränkemarkt Instandsetzung Entwäss. Vollsperrung 20.10.2008-30.10.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 43131,19792 43686,19241
+	q4::inwork 43131,19792 43192,19730 43421,19504 43669,19252
 EOF
      },
      { from  => 1191362400, # 2007-10-03 00:00
@@ -14257,7 +14257,7 @@ EOF
        text  => 'L 029 Oderberg - Niederfinow OD Liepe, E.-Thälmann-Straße Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 48662,51337 49039,51453
+	2::inwork 48662,51337 48862,51408 48943,51479 49032,51497
 EOF
      },
      { from  => 1243807200, # 2009-06-01 00:00
@@ -16549,7 +16549,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 216000649
-	2::inwork 45328,48225 45321,48142 45322,48104
+	2::inwork 45328,48225 45316,48141 45317,48119
 # REMOVED (wrong?) ---	2::inwork 45406,45979 45119,45958
 EOF
      },
@@ -19119,7 +19119,7 @@ EOF
        type  => 'gesperrt',
        source_id => '106402691',
        data  => <<EOF,
-	2::inwork 43131,19792 43686,19241
+	2::inwork 43131,19792 43192,19730 43421,19504 43669,19252
 EOF
      },
      { from  => 1289494800, # 2010-11-11 18:00
@@ -34863,7 +34863,8 @@ EOF
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-08-06
+#: note: vielleicht am Wochenende mittlerweile offen? (gesehen 2023-08-12) 
+#: last_checked: 2023-08-12
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 EOF
@@ -36065,7 +36066,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/221-E/22/094',
        data  => <<EOF,
-	2::inwork 49875,51562 49211,51421
+	2::inwork 49829,51549 49147,51446
 EOF
      },
      { from  => 1657695600, # 2022-07-13 09:00
@@ -39286,14 +39287,13 @@ EOF
 EOF
      },
      { from  => 1686409892, # 2023-06-10 17:11
-       until => undef, # 1691877600, # 2023-08-13 00:00
+       until => 1691865024, # undef, # 1691877600, # 2023-08-13 00:00
        text  => 'Dolgenseestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 12.08.2023, eventuell auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 12.08.2023
 #: also_indoor: traffic (ex-B)
-#: last_checked: 2023-08-06
-#: next_check: 2023-08-12
+# REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 	q4::inwork 17391,9746 17404,9794
 EOF
      },
@@ -39790,7 +39790,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
 #: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
-#: last_checked: 2023-07-16
+#: last_checked: 2023-08-12
 	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
 EOF
      },

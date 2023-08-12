@@ -19,7 +19,7 @@
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-08-05 vvv
+#: last_checked: 2023-08-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-07-16
+#: last_checked: 2023-08-12
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
@@ -4623,6 +4623,8 @@ Eulerstr.: Fußgängerbereich, Quartierplatz	q4 9465,16464 9493,16481
 (Eva-Strittmatter-Str. - Kastanienallee): einige Fußgänger	q1+ 23536,15252 23550,15261 23661,15282
 # 
 Friedrichstr.: am Checkpoint Charlie öfters Fußgänger auf der Fahrbahn	q1 9492,11209 9478,11317
+# 
+Heinrich-Grüber-Str.: Gehweg	q3 23377,12765 23355,12732
 # 
 ######################### User Contributions #################################
 # 

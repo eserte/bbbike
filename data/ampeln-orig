@@ -4168,7 +4168,7 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	B 24078,22265
 	B 21665,19490
 geschlossen jede volle Stunde	Zbr 28488,-26166
-geschlossen bei Bedarf	Zbr 45321,48142
+geschlossen bei Bedarf	Zbr 45316,48141
 #: note: (URL existiert nicht mehr) http://verkehrsinformation.mvnet.de/bruecken/bruecken.htm vvv
 geschlossen 5x täglich für max. 20 Minuten	Zbr 36080,162883
 geschlossen 5x täglich für max. 30 Minuten	Zbr 32848,183868
@@ -4638,7 +4638,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X -3111,-4047
 	X 14934,42934
 	B 15485,43058
-	X 40540,16584
+	X 40528,16613
 	X 41356,16225
 	X 57093,-1882
 	X 58249,-5090
@@ -4660,6 +4660,18 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 # 
 #: note: Anforderungsampel für die B109 überquerende Radfahrer
 	X 40361,104822
+# 
+#: note: permanente Gegenverkehrsregelung vvv
+	X 52616,51837
+	X 52771,51844
+#: note ^^^
+# 
+	F 53573,48942
+	X 43669,19252
+#: note: Anforderungsampel
+	F 43421,19504
+	B 43192,19730
+	X 43131,19792
 # 
 #: note: ^^^
 ################################################################################

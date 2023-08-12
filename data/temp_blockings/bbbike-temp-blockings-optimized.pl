@@ -5246,7 +5246,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: XXX laut osm access=no wegen Baustelle (confirmed)
 #: XXX (alte Notiz) Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2023-08-06
+#: note: vielleicht am Wochenende mittlerweile offen? (gesehen 2023-08-12) 
+#: last_checked: 2023-08-12
 #: check_frequency: 30d
 	2::inwork 19711,10426 19697,10210
 ',
@@ -6983,19 +6984,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'type' => 'handicap',
          'until' => 1715378400
        },
-       {
-         'data' => '#: note: Halteverbotsschilder bis 12.08.2023
-#: also_indoor: traffic (ex-B)
-#: last_checked: 2023-08-06
-#: next_check: 2023-08-12
-	q4::inwork 17391,9746 17404,9794
-',
-         'from' => 1686409892,
-         'id' => 3818,
-         'text' => 'Dolgenseestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 12.08.2023, eventuell auch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: note: vermutlich wird hier asphaltiert; Halteverbotsschilder bis 23.09.2023
@@ -7294,7 +7283,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
 #: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
-#: last_checked: 2023-07-16
+#: last_checked: 2023-08-12
 	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
 ',
          'from' => undef,
