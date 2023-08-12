@@ -5804,7 +5804,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-05 (architektur-urbanistik)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -6538,23 +6538,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
-#: also_indoor: traffic (none)
-#: source_id: bvg2021:106#BVG312090_0
-#: source_id[inactive]: bvg2021:106#BVG312086_0
-#: last_checked: 2023-07-22
-Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
-# REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
-# REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
-# REMOVED (hier nicht (mehr?)) --- Leberstr.: Einbahnstraßenregelung	q4::inwork; 7563,8871 7574,8596
-',
-         'from' => undef,
-         'id' => 3755,
-         'text' => 'Leberstr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,

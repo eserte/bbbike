@@ -36726,7 +36726,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-05 (architektur-urbanistik)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 	q4::inwork 8389,11378 8481,11447
@@ -38498,15 +38498,15 @@ Gehweg für Radfahrer frei	q2::inwork; 16615,7062 16507,7254
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1691867070, # undef, # XXX
        text  => 'Leberstr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/euref-campus-am-gasometer.128/page-5#post-20353
 #: also_indoor: traffic (none)
-#: source_id: bvg2021:106#BVG312090_0
+#: source_id[inactive]: bvg2021:106#BVG312090_0
 #: source_id[inactive]: bvg2021:106#BVG312086_0
-#: last_checked: 2023-07-22
+# REMOVED (nicht mehr bei der BVG gelistet) --- #: last_checked: 2023-07-22
 Leberstr.: Einbahnstraßenregelung	q3::inwork; 7574,8596 7578,8358
 # REMOVED (nicht mehr) --- Leuthener Str.: Abschnitt der Fahrbahn gesperrt, Bordsteine	q3::inwork 7640,8359 7578,8358
 # REMOVED (umgedreht, verlagert) --- Leberstr.: Einbahnstraßenregelung	q2::inwork; 7582,8123 7578,8358 7574,8596
