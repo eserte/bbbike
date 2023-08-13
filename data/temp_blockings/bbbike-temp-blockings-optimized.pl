@@ -6245,7 +6245,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
 #: also_indoor: traffic (H,G,W)
 #: priority: #B
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-11 (bahninfo-forum)
 #: next_check: 2023-08-28
 	q4::inwork 17962,6674 17991,6431
 ',
@@ -7100,6 +7100,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
        {
          'data' => '#: next_check_id: BUERGER-2023
 #: also_indoor: traffic (none)
+#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024)
 #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: last_checked: 2023-07-22
 	q4::inwork; 12618,6207 12805,6248
@@ -7168,7 +7169,17 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'type' => 'handicap',
          'until' => 1693839600
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.382607,52.531437,10.07.2023,06:00 (bis 22.07.2023) (bis 24.07.2023) (inaktiv)
+#: source_id: viz2021:13.38289,52.531563,14.08.2023,06:00 (hier nur Kfz-Verkehr, bis 18.08.2023)
+	q4::inwork 8870,13926 9011,14019
+',
+         'from' => 1691899200,
+         'id' => 3847,
+         'text' => 'Zinnowitzer Str.: Kraneinsatz, Fahrbahn zwischen Chausseestr. und Am Nordbahnhof gesperrt, evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 20:00',
+         'type' => 'handicap',
+         'until' => 1692381600
+       },
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -7486,7 +7497,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 #: by: https://nitter.net/VIZ_Berlin/status/1689185998544994306#m
 #: source_id: viz2021:13.387693,52.523668,09.08.2023,11:00 (bis 13.09.2023)
 # REMOVED --- #: XXX Einschränkungen dokumentieren
-#: last_checked: 2023-08-09 vvv
+#: last_checked: 2023-08-11 (mapillary) vvv
 #: next_check: 2023-09-13 vvv
 Friedrichstr.	q4::inwork; 9262,13111 9269,13060 9279,12953
 Ziegelstr.	q4::inwork; 9401,13072 9269,13060
@@ -7546,6 +7557,28 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'text' => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 22.12.2023, 07:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1703224800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
+#: source_id: bvg2021:240#BVG326189_0
+#: XXX Sperrung überprüfen
+#: next_check: 2023-08-14
+	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801
+',
+         'from' => 1691906400,
+         'id' => 3885,
+         'text' => 'Nöldnerstr. : Leitungsbauarbeiten zwischen Stadthausstr. und Lückstr., evtl. sind auch Radfahrer von der Sperrung betroffen, vom 14.08.2023 08:00 bis 30.11.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1701360000
+       },
+       {
+         'data' => '	2::inwork 8545,12760 8596,12760
+',
+         'from' => 1691862875,
+         'id' => 3886,
+         'text' => 'Adele-Schreiber-Krieger-Str.: Hebebühneneinsatz, Sperrung des Zugang zum Marie-Elisabeth-Lüders-Steg, zwischen 06:00 und 16:00 bis zum 16.08.2023',
+         'type' => 'gesperrt',
+         'until' => 1692194400
        }
      
 );

@@ -850,7 +850,7 @@ Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715
 #: next_check_id: MOLKENMARKT-2021
 # XXX später wiederherstellen: Grunerstr. (Richtungsfahrbahn)	1::igndisp 11057,12715 10951,12637 10931,12622
-#: last_checked: 2023-07-20
+#: last_checked: 2023-08-13 (daf)
 Grunerstr. [Fahrbahn]: gesperrt	2::inwork 10931,12622 10951,12637 11057,12715
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10931,12622 10873,12577
 # REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10807,12451 10746,12364 10697,12303
@@ -1835,6 +1835,8 @@ Schulstr. (Joachimsthal)	1s:q3 32331,64049 32388,64047 32459,64042
 B109: Templin - Prenzlau	1:igndisp 16435,79761 16360,79693 16323,79690
 B109: Templin - Prenzlau	1:igndisp 16323,79690 16331,79764
 #: note ^^^
+# 
+Albert-Thaer-Str.	1 24697,23369 24357,23092 24263,23015
 # 
 ######################################################################
 # elsewhere not in Brandenburg
@@ -4480,12 +4482,12 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-07-17
+#: last_checked: 2023-08-13 (daf)
 #: check_frequency: 90d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-07-20 vvv
+#: last_checked: 2023-08-13 (daf) vvv
 Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611 10954,12604 10931,12622
 #: last_checked ^^^
 # 
@@ -4929,7 +4931,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023) (bis 6.7.2023) (inaktiv) (bis 30.8.2023)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-13 (daf)
 #: check_frequency: 90d
 #: next_check: 2023-08-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
