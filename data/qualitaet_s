@@ -11061,7 +11061,7 @@ Mellenseestr. [Wohngebiet]: Beton	Q0 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1 19133,9087 19083,9062
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0 10123,9233 10547,9233
 Südstern: Asphalt, einige Querrillen	Q0 10547,9233 10705,9234
-Lückstr.: Asphalt	Q0 16153,10818 16300,10753 16313,10747 16468,10695
+Lückstr.: Asphalt	Q0; 16153,10818 16300,10753 16313,10747 16468,10695
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
 (Greifswalder Str. - Ella-Kay-Str.): Beton	Q1 12128,14764 12050,14808
 Aschaffenburger Str. (Schöneberg, Wilmersdorf): Kleinsteinpflaster	Q1 5668,9590 5642,9613
@@ -11078,7 +11078,8 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Dolgenseestr., Fußgängerzone): Betonpflaster	Q0 17457,10083 17412,9911 17384,9807
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0 10547,15586 10542,15609
-Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17468,8692 17656,8700 17792,8660 17846,8644
+Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
+Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483 17588,8413
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -15172,13 +15173,10 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke	Q1 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q2 7576,18837 7480,18828 7332,18818
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q1 7332,18818 7313,18781
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
-Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858
-Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1 17380,8858 17416,8767 17468,8692
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,8692
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
-Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17524,8536
-Hönower Wiesenweg: Asphalt	Q0 17524,8536 17533,8505
-Hönower Wiesenweg: Asphalt	Q0 17533,8505 17554,8458
-Hönower Wiesenweg: Asphalt	Q0 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
+Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
+Hönower Wiesenweg: Asphalt	Q0 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 Hönower Wiesenweg: Asphalt	Q0 17753,8290 17793,8225 17856,8162
 Frank-Zappa-Str.: guter Beton	Q0 18591,14573 18896,14649 18868,14745 18938,14768
 Birkhuhnweg: Asphalt	Q0 15162,3462 15042,3527 14991,3547 14911,3568 14854,3587 14811,3597 14761,3580

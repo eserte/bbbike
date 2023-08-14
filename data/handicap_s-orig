@@ -46,8 +46,8 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
-#: also_indoor: traffic (B[unvollständig],H[unvollständig])
-#: last_checked: 2023-08-04 vvv
+#: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
+#: last_checked: 2023-08-14 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
@@ -524,7 +524,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 ### Oberschöneweide ###
 # 
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (B) vvv
+#: also_indoor: traffic (B,W,G,H[ungenau]) vvv
 #: last_checked: 2023-07-21 vvv
 Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000
 Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198
@@ -746,8 +746,8 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022) (bis 31.10.2023)
-#: osm_watch: way id="137623800" version="29"
-#: osm_watch: way id="625667165" version="20"
+#: osm_watch: way id="137623800" version="30"
+#: osm_watch: way id="625667165" version="21"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2023-07-11
@@ -780,7 +780,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 ### Lichtenberg ###
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-14
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 #: add_fragezeichen: Sind die Bauarbeiten beendet?

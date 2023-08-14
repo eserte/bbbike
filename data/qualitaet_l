@@ -54,7 +54,7 @@ Altlandsberg - Strausberg: Asphalt	Q0 34514,17762 34813,17682
 Blumberg - Ahrensfelde: sehr guter Asphalt	Q0 24709,22522 24540,22469 24418,22375 24405,22365 24203,22171 24196,22163 24114,22074 24010,21960 23973,21919 23930,21873 23741,21626 23565,21396 23285,21067 23026,20493 22986,20408 22551,19476 22525,19420 22475,19310 22418,19268 22092,19121 21975,19068
 Bernau - Albertshof: Asphalt	Q0 23109,30968 23179,31047 23325,31194 23526,31290 23549,31301 23647,31351 23701,31395 23954,31612 24376,31986 25093,32573 25548,33027 25912,33255 26443,33278 26497,33280 26755,33126 27004,32977 27103,32918 27237,32838 27708,32556
 Albertshof - Tempelfelde: Asphalt	Q0 27708,32556 27942,32634 28254,32737 28437,32745 30136,33545 30694,33698 31128,33926 31310,34005
-B96 Oranienburg - Abzweig nach Grüneberg: sehr guter Asphalt (Fahrbahn)	Q0 -1864,43042 -1943,43360 -2602,45078 -2631,45150 -2715,45284 -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -5719,48993 -6068,49150 -6042,49596 -6042,49937 -6459,50093 -6671,50534 -6548,51220 -6563,51290
+B96 Oranienburg - Abzweig nach Grüneberg: sehr guter Asphalt (Fahrbahn)	Q0 -1864,43042 -1943,43360 -2342,44404 -2602,45078 -2631,45150 -2715,45284 -2731,45311 -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -5641,48958 -5719,48993 -6068,49150 -6042,49596 -6042,49937 -6459,50093 -6598,50356 -6671,50534 -6548,51220 -6563,51290
 Grüneberg - Liebenberg: Asphalt	Q0 -6563,51290 -6457,51333 -5765,51087 -5002,51097 -3453,51255 -3116,51293 -2964,51410 -2935,51573 -2851,51687 -2670,51807 -2399,52269 -1458,52910 -508,53721 -425,53956
 Liebenberg - Neulöwenberg: Asphalt	Q0 -425,53956 -511,53978 -669,54073 -684,54082 -1453,54400 -1488,54421 -1848,54667 -2084,54707 -2710,54626 -3137,54571 -3492,54548 -3747,54549 -4055,54553 -4170,54557
 Liebenberg - Falkenthal: Asphalt	Q0 -425,53956 -219,53944 -99,53913 108,53795 217,53752 372,53738 599,53809 1294,54296 1821,54536
@@ -2277,7 +2277,8 @@ Müncheberg: Kopfsteinpflaster	Q2 60803,11559 60643,11590 60484,11681 60475,11734
 Petershagen: Asphalt	Q0 74683,385 74197,607 73775,831
 Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster	Q3 31512,7971 31446,7915
 Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster	Q3 31446,7915 30891,7130
-Brandenburgische Str. (Schöneiche): Betonstraße	Q0 30512,7909 30587,8490
+Brandenburgische Str. (Schöneiche): Asphalt	Q0 30512,7909 30587,8490
+Brandenburgische Str. (Schöneiche): Asphalt	Q0 30512,7909 30454,7670 30495,7350
 Kurze Straße (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30774,5881 30912,5855
 Bismarckstr. (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30972,6172 30847,6181 30623,6193 30498,6200
 Bergstr. (Schöneiche): unbefestigte Straße	Q2 32269,6334 32189,6320
@@ -2960,9 +2961,10 @@ Karl-Marx-Str. (Schöneiche): Kopfsteinpflaster	Q2 30557,6731 30802,6760
 Forststr. (Schöneiche): Asphalt	Q0 31416,6774 30995,7040 30891,7130
 Forststr. (Schöneiche): unbefestigte Straße	Q2 30891,7130 30750,7249
 Heideweg (Schöneiche): unbefestigte Straße, holprig	Q2 31721,6750 31751,6653 31817,6517 31915,6328 31980,6201 32019,6115
-Brandenburgische Str.: Verbundsteinpflasterradwege, Kleinpflaster auf Fahrbahn	Q1 30495,7350 30557,6731
+Brandenburgische Str.: Verbundsteinpflasterradwege, asphaltierte Fahrbahn	Q0 30495,7350 30529,7009
+Brandenburgische Str.: Verbundsteinpflasterradwege, Kleinpflaster auf Fahrbahn	Q1 30529,7009 30557,6731
 Brandenburgische Str.: Verbundsteinpflasterradwege, betonierte Fahrbahn	Q1 30557,6731 30602,6366
-Brandenburgische Str.: Verbundsteinpflasterradwege, gepflasterte Fahrbahn	Q1 30602,6366 30623,6193 30648,5979
+Brandenburgische Str.: Verbundsteinpflasterradwege, schlecht gepflasterte Fahrbahn	Q1 30602,6366 30623,6193 30648,5979
 Hamburger Str.: Asphalt, leicht uneben	Q0 30871,6356 31007,6343
 Hamburger Str.: Asphalt	Q0 31007,6343 31080,6454 31416,6774
 (Schöneiche - Woltersdorf): Waldweg	Q2 31007,6343 31016,6269 31030,6168 31027,6076
@@ -7063,6 +7065,7 @@ Adolf-Hoffmann-Str. (Vogelsdorf): Asphalt	Q0 34002,11577 34149,11511 34274,11551
 Walter-Sawall-Str.: schlechtes Kopfsteinpflaster	Q3 34024,1360 34181,1349
 Geraer Str. (Neuenhagen): mäßiges Kleinsteinpflaster	Q2 29959,11913 29967,11844 29956,11569 29949,11390
 Geraer Str. (Neuenhagen): unbefestigte Straße	Q2 29949,11390 29942,11284
+Seestr. (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30560,5997 30648,5979 30790,5946
 Albert-Thaer-Str. (Blumberg): Asphalt	Q0 23713,22519 23866,22636 23870,22691 24263,23015 24357,23092
 Albert-Thaer-Str. (Blumberg): unbefestigte Straße	Q2 24357,23092 24697,23369
 Kunersdorf - Bliesdorf: Asphalt	Q0 61255,31127 61259,31307 61194,31842 61268,32264 61294,32550 61241,32838

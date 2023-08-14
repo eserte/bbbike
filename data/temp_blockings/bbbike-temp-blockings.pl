@@ -20371,11 +20371,11 @@ EOF
 	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 160,24390 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2022-09-15 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2022-09-18 23:59:59"),
+     { from  => $isodate2epoch->("2023-09-14 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2023-09-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2022 bis 18.09.2022',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 15.09.2023 bis 17.09.2023',
        type  => 'handicap',
        source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
        data  => <<EOF,
@@ -31230,7 +31230,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-14
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32642,7 +32642,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Anfang August 2023: aktuell keine Sperrung)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Mitte August 2023: aktuell keine Sperrung)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32651,9 +32651,10 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="28"
 #: osm_watch: way id="165832806" version="32"
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-14
 #: check_frequency: 14d
-	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
+	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
+# REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 EOF
      },
      { from  => 1611529200, # 2021-01-25 00:00
@@ -35347,7 +35348,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-13 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -36399,13 +36400,16 @@ EOF
 # REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
-     { from  => undef, # 
-       until => $isodate2epoch->("2022-08-21 23:59:59"),
-       text  => 'Zietenplatz: Veranstaltung, Sperrung der Fahrbahn, voraussichtlich bis 21.8.2022',
+     { from  => $isodate2epoch->("2023-08-14 00:00:00"), # undef, # 
+       until => $isodate2epoch->("2023-08-22 23:59:59"),
+       text  => 'Zietenplatz: Veranstaltung, Sperrung der Fahrbahn, voraussichtlich bis 22.8.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
+#: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2023/bundesministerium-fuer-arbeit-und-soziales-2063814
+#: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023)
+#: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023)
 	q4::temp 9075,11756 9171,11777
 EOF
      },
@@ -38755,19 +38759,19 @@ EOF
 EOF
      },
      { from  => 1683064800, # 2023-05-03 00:00
-       until => $isodate2epoch->("2023-12-31 23:59:59"), # 1689606000, # 2023-07-17 17:00
-       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, mindestens bis 21.08.2023, möglicherweise bis Dezember 2023',
+       until => $isodate2epoch->("2023-12-04 23:59:59"), # 1689606000, # 2023-07-17 17:00
+       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Dezember 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1653626689128402944#m (Gesamtdauer bis voraussichtlich 12/2023)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
-#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) vvv
+#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) (bis 4.12.2023) vvv
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: last_checked: 2023-08-06 vvv
-#: next_check: 2023-08-21 vvv
+#: next_check: 2023-12-04 vvv
 # REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
@@ -39489,16 +39493,20 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Bürgerstr.: Bauarbeiten, Einfahrt vom Britzer Damm verboten, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2024-01-07 17:00:00"), # undef, # XXX
+       text  => 'Bürgerstr.: Bauarbeiten, Straße ist vom Britzer Damm verboten, bis 7.1.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BUERGER-2023
 #: also_indoor: traffic (none)
 #: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024)
-#: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
+#: source_id: bvg2021:m44#BVG326176_0
+#: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
+# REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: last_checked: 2023-07-22
-	q4::inwork; 12618,6207 12805,6248
+#: check_frequency: 30d
+#: next_check: 2024-01-07
+	q4::inwork 12618,6207 12805,6248
 EOF
      },
      { from  => 1668319200, # 2022-11-13 07:00
@@ -40059,16 +40067,17 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
-       text  => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, Ende der Sperrung unbekannt',
+       until => $isodate2epoch->("2023-12-04 23:59:59"), # undef,
+       text  => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, möglicherweise bis Dezember 2023',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
 #: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
-#: XXX Eventuell im Zusammehang mit den angrenzenden Bauarbeiten in der Birnbaumer Straße?
 #: priority: #A
 #: last_checked: 2023-08-09 (twitter)
-#: check_frequency: 14d
+#: check_frequency: 45d
+#: next_check: 2023-12-04
 	2::inwork 22027,6608 22050,6619
 EOF
      },
@@ -40083,14 +40092,19 @@ EOF
      },
      { from  => 1691906400, # 2023-08-13 08:00
        until => 1701360000, # 2023-11-30 17:00
-       text  => 'Nöldnerstr. : Leitungsbauarbeiten zwischen Stadthausstr. und Lückstr., evtl. sind auch Radfahrer von der Sperrung betroffen, vom 14.08.2023 08:00 bis 30.11.2023 17:00',
+       text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
-#: XXX Sperrung überprüfen
-#: next_check: 2023-08-14
-	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801
+#: also_indoor: traffic (H[ungenau],G,W,B)
+#: note: gesperrter Bereich ist etwa 90m lang
+#: last_checked: 2023-08-14
+#: next_check: 2023-11-30
+# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
+#: note: eigentlich q3-::inwork
+	q3::inwork 15856,10821 15681,10801
 EOF
      },
      { from  => 1691862875, # 2023-08-12 19:54
@@ -40098,7 +40112,27 @@ EOF
        text  => 'Adele-Schreiber-Krieger-Str.: Hebebühneneinsatz, Sperrung des Zugang zum Marie-Elisabeth-Lüders-Steg, zwischen 06:00 und 16:00 bis zum 16.08.2023',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://nitter.net/VIZ_Berlin/status/1690926466715070464#m
 	2::inwork 8545,12760 8596,12760
+EOF
+     },
+     { from  => 1691899200, # 2023-08-13 06:00
+       until => 1696715940, # 2023-10-07 23:59
+       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 07.10.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.56401,52.4134,14.08.2023,06:00',
+       data  => <<EOF,
+#: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
+	q4::inwork 21329,832 21497,1042
+EOF
+     },
+     { from  => 1691899200, # 2023-08-13 06:00
+       until => 1692374400, # 2023-08-18 18:00
+       text  => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.301291,52.5098,14.08.2023,06:00',
+       data  => <<EOF,
+	q4::inwork 3460,11441 3339,11433
 EOF
      },
     );

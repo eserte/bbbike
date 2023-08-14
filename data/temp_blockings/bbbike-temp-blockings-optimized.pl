@@ -2733,7 +2733,32 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/ (geplant: 18.09.2021 - 19.09.2021)
+#: by: https://www.berliner-woche.de/rosenthal/c-kultur/feiern-mit-abstand-und-einschraenkungen_a321188
+#: by: https://dorf-rosenthal.de/programmheft
+#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/
+	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
+',
+         'from' => 1694642400,
+         'id' => 2285,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
+         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 15.09.2023 bis 17.09.2023',
+         'type' => 'handicap',
+         'until' => 1695074399
+       },
        undef,
        undef,
        undef,
@@ -4445,7 +4470,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-14
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4702,13 +4727,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="28"
 #: osm_watch: way id="165832806" version="32"
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-14
 #: check_frequency: 14d
-	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
+	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
+# REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Anfang August 2023: aktuell keine Sperrung)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Mitte August 2023: aktuell keine Sperrung)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5438,7 +5464,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-13 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5697,7 +5723,20 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
+#: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
+#: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2023/bundesministerium-fuer-arbeit-und-soziales-2063814
+#: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023)
+#: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023)
+	q4::temp 9075,11756 9171,11777
+',
+         'from' => 1691964000,
+         'id' => 3604,
+         'text' => 'Zietenplatz: Veranstaltung, Sperrung der Fahrbahn, voraussichtlich bis 22.8.2023',
+         'type' => 'handicap',
+         'until' => 1692741599
+       },
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
@@ -6650,12 +6689,12 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1653626689128402944#m (Gesamtdauer bis voraussichtlich 12/2023)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
-#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) vvv
+#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) (bis 4.12.2023) vvv
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: last_checked: 2023-08-06 vvv
-#: next_check: 2023-08-21 vvv
+#: next_check: 2023-12-04 vvv
 # REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
@@ -6666,9 +6705,9 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 ',
          'from' => 1683064800,
          'id' => 3778,
-         'text' => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, mindestens bis 21.08.2023, möglicherweise bis Dezember 2023',
+         'text' => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Dezember 2023',
          'type' => 'handicap',
-         'until' => 1704063599
+         'until' => 1701730799
        },
        undef,
        undef,
@@ -7101,15 +7140,19 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'data' => '#: next_check_id: BUERGER-2023
 #: also_indoor: traffic (none)
 #: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024)
-#: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
+#: source_id: bvg2021:m44#BVG326176_0
+#: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
+# REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: last_checked: 2023-07-22
-	q4::inwork; 12618,6207 12805,6248
+#: check_frequency: 30d
+#: next_check: 2024-01-07
+	q4::inwork 12618,6207 12805,6248
 ',
          'from' => undef,
          'id' => 3837,
-         'text' => 'Bürgerstr.: Bauarbeiten, Einfahrt vom Britzer Damm verboten, Ende der Bauarbeiten unbekannt',
+         'text' => 'Bürgerstr.: Bauarbeiten, Straße ist vom Britzer Damm verboten, bis 7.1.2024',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1704643200
        },
        undef,
        undef,
@@ -7197,24 +7240,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'until' => 1734822000
        },
        undef,
-       {
-         'data' => '#: by: https://www.rbb24.de/panorama/beitrag/2023/07/fassadenteil-friedrichstrasse-berlin-polizist-schwer-verletzt.html
-#: by: https://www.berliner-zeitung.de/news/friedrichstrasse-broeckelnde-fassade-faellt-mann-auf-den-kopf-strasse-gesperrt-objektschuetzer-auf-intensivstation-li.367532
-#: by: https://berliner-abendblatt.de/berlin-news/fassadenteil-stuerzt-herunter-und-verletzt-polizeimitarbeiter-id226599
-#: source_id: viz2021:13.38916,52.514945,09.07.2023,10:18 (kein Endedatum) (bis 14.08.2023) (kein Endedatum)
-#: also_indoor: traffic (G[unvollständig?],B[unvollständig?],W[unvollständig?])
-#: note: eigentlich ist auch die Einfahrt in die Französische Str. gesperrt, aber hier ist die Fahrbahn frei
-#: last_checked: 2023-08-11
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-08-14
-	q4::inwork; 9384,12103 9373,12197
-',
-         'from' => undef,
-         'id' => 3851,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Französische Str. und Behrenstr. wegen herabfallenden Fassadenteilen teilweise gesperrt, kein Endedatum',
-         'type' => 'handicap',
-         'until' => 1692025200
-       },
+       undef,
        {
          'data' => '	2::inwork 24956,29921 25361,29596
 ',
@@ -7534,19 +7560,20 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'until' => 1692975600
        },
        {
-         'data' => '#: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
+         'data' => '#: next_check_id: KAULSDORFER-2023
+#: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
 #: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
-#: XXX Eventuell im Zusammehang mit den angrenzenden Bauarbeiten in der Birnbaumer Straße?
 #: priority: #A
 #: last_checked: 2023-08-09 (twitter)
-#: check_frequency: 14d
+#: check_frequency: 45d
+#: next_check: 2023-12-04
 	2::inwork 22027,6608 22050,6619
 ',
          'from' => undef,
          'id' => 3883,
-         'text' => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, möglicherweise bis Dezember 2023',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1701730799
        },
        {
          'data' => '	2::inwork -19289,63424 -19675,64106
@@ -7559,26 +7586,53 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'until' => 1703224800
        },
        {
-         'data' => '#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
+         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
-#: XXX Sperrung überprüfen
-#: next_check: 2023-08-14
-	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801
+#: also_indoor: traffic (H[ungenau],G,W,B)
+#: note: gesperrter Bereich ist etwa 90m lang
+#: last_checked: 2023-08-14
+#: next_check: 2023-11-30
+# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
+#: note: eigentlich q3-::inwork
+	q3::inwork 15856,10821 15681,10801
 ',
          'from' => 1691906400,
          'id' => 3885,
-         'text' => 'Nöldnerstr. : Leitungsbauarbeiten zwischen Stadthausstr. und Lückstr., evtl. sind auch Radfahrer von der Sperrung betroffen, vom 14.08.2023 08:00 bis 30.11.2023 17:00',
+         'text' => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 17:00',
          'type' => 'handicap',
          'until' => 1701360000
        },
        {
-         'data' => '	2::inwork 8545,12760 8596,12760
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1690926466715070464#m
+	2::inwork 8545,12760 8596,12760
 ',
          'from' => 1691862875,
          'id' => 3886,
          'text' => 'Adele-Schreiber-Krieger-Str.: Hebebühneneinsatz, Sperrung des Zugang zum Marie-Elisabeth-Lüders-Steg, zwischen 06:00 und 16:00 bis zum 16.08.2023',
          'type' => 'gesperrt',
          'until' => 1692194400
+       },
+       {
+         'data' => '#: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
+	q4::inwork 21329,832 21497,1042
+',
+         'from' => 1691899200,
+         'id' => 3887,
+         'source_id' => 'viz2021:13.56401,52.4134,14.08.2023,06:00',
+         'text' => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 07.10.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1696715940
+       },
+       {
+         'data' => '	q4::inwork 3460,11441 3339,11433
+',
+         'from' => 1691899200,
+         'id' => 3888,
+         'source_id' => 'viz2021:13.301291,52.5098,14.08.2023,06:00',
+         'text' => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
+         'type' => 'handicap',
+         'until' => 1692374400
        }
      
 );

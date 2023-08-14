@@ -135,7 +135,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-13 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -300,7 +300,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-14
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1122,7 +1122,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-14
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2355,7 +2355,7 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/senatsverwaltung-startet-machbarkeitsstudie-mit-fuenf-varianten_a382462
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
-#: last_checked: 2023-08-01 (mapillary)
+#: last_checked: 2023-08-13 (mapillary)
 #: next_check: 2024-01-01
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
@@ -12454,7 +12454,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
-#: last_checked: 2023-07-16 (mapillary)
+#: last_checked: 2023-08-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
@@ -12913,7 +12913,7 @@ Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10547,9233
 Südstern: Asphalt, einige Querrillen	Q0- 10547,9233 10705,9234
 #: historical_note: bis August 2023 in Richtung Osten: Asphalt, einige Schäden, Q0-;
-Lückstr.: Asphalt	Q0 16153,10818 16300,10753 16313,10747 16468,10695
+Lückstr.: Asphalt	Q0+; 16153,10818 16300,10753 16313,10747 16468,10695
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
 (Greifswalder Str. - Ella-Kay-Str.): Beton	Q1+ 12128,14764 12050,14808
 Aschaffenburger Str. (Schöneberg, Wilmersdorf): Kleinsteinpflaster	Q1 5668,9590 5642,9613
@@ -12930,13 +12930,14 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Dolgenseestr., Fußgängerzone): Betonpflaster	Q0- 17457,10083 17412,9911 17384,9807
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0- 10547,15586 10542,15609
+Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-08-04
-#: check_frequency: 14d
-Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17468,8692 17656,8700 17792,8660 17846,8644
+#: last_checked: 2023-08-14
+#: check_frequency: 45d
+Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-08-04
+#: last_checked: 2023-08-14
 #: check_frequency: 45d
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483 17588,8413
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -23744,23 +23745,18 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1- 7313,18781 7248,
 #: note: erlaubte Höchstgeschwindigkeit 10 km/h
 #: confirmed_by: Christian Marwitz meint "Unebener Weg mit teilweise Schienen und Betonflächen... Bodenmängel":
 #: corrected_by: srt (Q3 -> Q2+, kein Kopfsteinpflaster, Beton mit alten Bahngleisen -> ...; ... -> ..., neu gemacht)
-Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-08-04
-#: check_frequency: 14d
-#: next_check: 2023-08-11
-Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1 17380,8858 17416,8767 17468,8692
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,8692
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17468,8692 17497,8623 17515,8567
 #: corrected_by: srt (... -> ..., neu gemacht)
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
 #: corrected_by: srt (... -> ..., neu gemacht)
-Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17524,8536
-#: corrected_by: srt (... -> ..., neu gemacht)
-Hönower Wiesenweg: Asphalt	Q0 17524,8536 17533,8505
-#: corrected_by: srt (... -> ..., neu gemacht)
-Hönower Wiesenweg: Asphalt	Q0 17533,8505 17554,8458
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: last_checked: 2023-08-14
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-08-11
+Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1+ 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
 #: corrected_by: srt: (Q3 -> Q2-, Kopfsteinpflaster und Sandweg mit Schlaglöchern -> ...)
-Hönower Wiesenweg: Asphalt	Q0 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
+Hönower Wiesenweg: Asphalt	Q0 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 #: corrected_by: srt (früher (bis Juni 2023) Kopfsteinpflaster und Sandweg mit Schlaglöchern, Q2 -> ..., neu gemacht)
 Hönower Wiesenweg: Asphalt	Q0 17753,8290 17793,8225 17856,8162
 #: by: ^^^
