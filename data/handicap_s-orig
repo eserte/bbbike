@@ -47,7 +47,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-08-14 vvv
+#: last_checked: 2023-08-15 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
@@ -1027,8 +1027,8 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: XXX Bleibt es bei der ausschließlichen Busfreigabe oder entsteht hier eine neue Verbindungsstraße?
 #: osm_watch: way id="519370786" version="4"
 #: osm_watch: note 3678184 3
-#: last_checked: 2023-07-03
-Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15819,16857 15892,16834
+#: last_checked: 2023-08-15
+Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15832,16846 15866,16823 15875,16816
 # 
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
@@ -3512,7 +3512,7 @@ Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
 Finckensteinallee: Fußgänger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 Kietzgrabensteg: einige Fußgänger	q1 22514,4632 22531,4605
 Brücke über den Britzer Damm: Rampe, enge Kurven	q2 12638,6307 12630,6326 12605,6322 12619,6310
-# REMOVED (Bauarbeiten; spätere Situation wird vermutlich anders aussehen) ---  #: XXX_prog BS am Wendehammer, ansonsten vielleicht q1 wg. Fußgängern --- Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
+# REMOVED (Bauarbeiten; spätere Situation wird vermutlich anders aussehen) ---  #: XXX_prog BS am Wendehammer, ansonsten vielleicht q1 wg. Fußgängern --- Falkenberger Str.: Bordstein	q3 15832,16846 15866,16823 15875,16816
 (Mauerstr. - Sternbergpromenade): Fußgänger	q1 -3275,14114 -3187,14116
 #: XXX_prog BS am Wendehammer, ansonsten q1
 (Neuhausweg - Ramin-Park): einige Fußgänger, Bordstein	q2 -3964,14507 -3950,14519

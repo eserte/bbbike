@@ -3937,6 +3937,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://aera.berlin/
 # REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -5670,7 +5671,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-08-04 (mapillary) vvv
+#: last_checked: 2023-08-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -6725,6 +6726,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        undef,
        {
          'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
+#: osm_watch: way id="1197821336" version="1"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
 #: last_checked: 2023-06-12 vvv
@@ -6885,21 +6887,7 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
          'type' => 'handicap',
          'until' => 1727712000
        },
-       {
-         'data' => '#: next_check_id: BIZET-2023
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (W)
-#: last_checked: 2023-08-04 (mapillary)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-08-11
-	q4::inwork 13456,15760 13409,15687
-',
-         'from' => undef,
-         'id' => 3806,
-         'text' => 'Bizetstr.: Bauarbeiten zwischen Rossinistr. und Gürtelstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -7255,7 +7243,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        {
          'data' => '#: also_indoor: traffic (none)
 #: add_fragezeichen: Ist die Sperrung der Fahrbahn beendet?
-#: last_checked: 2023-07-14
+#: last_checked: 2023-08-15
 	q3::inwork 13247,17262 13342,17180
 ',
          'from' => undef,

@@ -16594,6 +16594,7 @@ EOF
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 21, # Termin steht noch nicht fest
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -27943,6 +27944,7 @@ EOF
 #: by: https://aera.berlin/
 # REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -36027,7 +36029,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-08-04 (mapillary) vvv
+#: last_checked: 2023-08-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -37482,7 +37484,7 @@ EOF
        until => 1669384800, # 2022-11-25 15:00
        text  => 'Bernau, Börnicker Chaussee: Sperrung der Bahnunterführung, evtl. sind auch Radfahrer betroffen, 04.10.2022 08:00 Uhr bis 25.11.2022 15:00 Uhr',
        type  => 'gesperrt',
-       source_id => '226001339',
+       source_id => '226001339', # inaktiv
        data  => <<EOF,
 	2::inwork 23113,30450 23015,30519
 EOF
@@ -38852,6 +38854,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Endedatum laut Baustellenschild der Wasserbetriebe
+#: osm_watch: way id="1197821336" version="1"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
 #: last_checked: 2023-06-12 vvv
@@ -39133,15 +39136,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1692122199, # undef, # XXX
        text  => 'Bizetstr.: Bauarbeiten zwischen Rossinistr. und Gürtelstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BIZET-2023
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (W)
-#: last_checked: 2023-08-04 (mapillary)
-#: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (W) --- #: last_checked: 2023-08-15 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-08-11
 	q4::inwork 13456,15760 13409,15687
 EOF
@@ -39755,7 +39755,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Ist die Sperrung der Fahrbahn beendet?
-#: last_checked: 2023-07-14
+#: last_checked: 2023-08-15
 	q3::inwork 13247,17262 13342,17180
 EOF
      },
