@@ -3379,7 +3379,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
+#: source_id: IM_022700 (inaktiv)
+	q4::temp 8426,13909 8572,13671
+',
+         'from' => 1692187200,
+         'id' => 2622,
+         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 17. August 2023 14 Uhr bis 21. August 2023 12 Uhr',
+         'type' => 'handicap',
+         'until' => 1692612000
+       },
        undef,
        undef,
        {
@@ -4019,7 +4029,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-16
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4362,7 +4372,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-08-09 vvv
+#: last_checked: 2023-08-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5604,7 +5614,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-16
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -7038,18 +7048,7 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
          'type' => 'gesperrt',
          'until' => 1692972000
        },
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
-#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023) (bis 5.8.2023) (bis 25.8.2023)
-#: also_indoor: traffic (H)
-	q3::inwork 8852,6642 8949,6644
-',
-         'from' => 1685397600,
-         'id' => 3825,
-         'text' => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 25.8.2023',
-         'type' => 'handicap',
-         'until' => 1692975600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7591,16 +7590,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'type' => 'handicap',
          'until' => 1701360000
        },
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1690926466715070464#m
-	2::inwork 8545,12760 8596,12760
-',
-         'from' => 1691862875,
-         'id' => 3886,
-         'text' => 'Adele-Schreiber-Krieger-Str.: Hebebühneneinsatz, Sperrung des Zugang zum Marie-Elisabeth-Lüders-Steg, zwischen 06:00 und 16:00 bis zum 16.08.2023',
-         'type' => 'gesperrt',
-         'until' => 1692194400
-       },
+       undef,
        {
          'data' => '#: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042

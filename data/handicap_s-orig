@@ -47,7 +47,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-08-15 vvv
+#: last_checked: 2023-08-16 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
@@ -278,7 +278,7 @@ Grunerstr.: Radweg auf Gehweg	q1 10973,12611 11057,12715
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-25
+#: last_checked: 2023-08-16
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -326,14 +326,14 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-16
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-16
 #: check_frequency: 90d
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 # 
@@ -746,8 +746,8 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022) (bis 31.10.2023)
-#: osm_watch: way id="137623800" version="30"
-#: osm_watch: way id="625667165" version="21"
+#: osm_watch: way id="137623800" version="31"
+#: osm_watch: way id="625667165" version="22"
 #: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2023-07-11
@@ -3280,7 +3280,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-16
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243

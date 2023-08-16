@@ -24047,12 +24047,13 @@ EOF
 	q4::temp 6686,13746 6493,13822
 EOF
      },
-     { from  => 1534967761, # 1409202000, # 2014-08-28 07:00
-       until => $isodate2epoch->("2018-08-27 12:00:00"), #  1409569200, # 2014-09-01 13:00
-       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 23. August 2018 16 Uhr bis 27. August 2018 12 Uhr ',
+     { from  => $isodate2epoch->("2023-08-16 14:00:00"), # 1534967761, # 1409202000, # 2014-08-28 07:00
+       until => $isodate2epoch->("2023-08-21 12:00:00"), # $isodate2epoch->("2018-08-27 12:00:00"), # 1409569200, # 2014-09-01 13:00
+       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 17. August 2023 14 Uhr bis 21. August 2023 12 Uhr',
        type  => 'handicap',
-       source_id => 'IM_022700',
        data  => <<EOF,
+#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
+#: source_id: IM_022700 (inaktiv)
 	q4::temp 8426,13909 8572,13671
 EOF
      },
@@ -28414,7 +28415,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-16
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30454,7 +30455,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-08-09 vvv
+#: last_checked: 2023-08-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -35845,7 +35846,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=733862#post733862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-16
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -39367,12 +39368,12 @@ EOF
 EOF
      },
      { from  => 1685397600, # 2023-05-30 00:00
-       until => $isodate2epoch->("2023-08-25 17:00:00"), # 1687557600, # 2023-06-24 00:00
+       until => 1692207729, # $isodate2epoch->("2023-08-25 17:00:00"), # 1687557600, # 2023-06-24 00:00
        text  => 'Alt-Tempelhof: Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis 25.8.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1663451791374053377#m
-#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023) (bis 5.8.2023) (bis 25.8.2023)
+#: source_id: viz2021:13.37979,52.46581,30.05.2023,09:08 (kein Endedatum) (bis 23.6.2023) (bis 30.6.2023) (bis 14.7.2023) (bis 5.8.2023) (bis 25.8.2023) (vorfristig inaktiv)
 #: also_indoor: traffic (H)
 	q3::inwork 8852,6642 8949,6644
 EOF

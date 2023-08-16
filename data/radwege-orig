@@ -3354,10 +3354,10 @@ Gehwegplatten	RW1; 1406,15719 1232,15717
 #: historical_note: Verbundsteinpflaster, RW0;
 neu gemachter Asphalt, sehr breit, uneben	RW1; 1232,15717 954,15724 731,15693
 Verbundsteinpflaster	RW1; 731,15693 449,15654
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 449,15654 51,15599 -302,15546
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 449,15654 51,15599 37,15597 -218,15558 -302,15546
 # 
 #: note: Saatwinkler Damm (Osten/Süden)
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -302,15546 51,15599 449,15654
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -302,15546 -218,15558 37,15597 51,15599 449,15654
 Verbundsteinpflaster	RW1; 449,15654 731,15693 954,15724 1232,15717
 Gehwegplatten	RW1; 1232,15717 1406,15719
 	RW0; 1406,15719 2834,15703
@@ -8173,6 +8173,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385498,52.446998,19.07.2023,07:00 (bis 24.07.2023) (inaktiv) (bis 31.07.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
 #: source_id: viz2021:13.385551,52.447066,31.07.2023,11:00 (bis 17.08.2023)
+#: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-05 vvv
