@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 97;
+plan tests => 101;
 
 use GPS::GpsmanData::Any;
 
@@ -387,7 +387,7 @@ EOF
 }
 
 {
-    # Test case here: with <trk><type>
+    # Test case here: with <trk><type> and <desc> containing device
     my $sample_trk_gpx = <<'EOF';
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="fit2gpx by Matjaz Rihtar" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxwpx="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0">
@@ -446,6 +446,19 @@ EOF
 	    }
 	    eq_or_diff $gpsman, $expected_gpsman, "expected srt:vehicle line for $type=$type, type_to_vehicle=$type_to_vehicle";
 	}
+    }
+
+    for my $guess_device (0, 1) {
+	my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, guessdevice => $guess_device);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+	my $gpsman = $gps->as_string;
+	$gpsman =~ s{^% Written by.*\n\n}{};
+	my $expected_gpsman = $expected_gpsman;
+	if ($guess_device) {
+	    $expected_gpsman =~ s{^(!T:.*)}{$1\tsrt:device=Garmin Fenix5_plus}m;
+	}
+	eq_or_diff $gpsman, $expected_gpsman, "expected " . ($guess_device ? "with" : "without") . " srt:device line";
     }
 }
 

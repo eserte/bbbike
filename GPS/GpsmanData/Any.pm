@@ -97,6 +97,7 @@ sub load_gpx {
 
     my $timeoffset = delete $args{timeoffset};
     my $type_to_vehicle = delete $args{typetovehicle};
+    my $guess_device = delete $args{guessdevice};
 
     require Time::Local;
 
@@ -264,9 +265,16 @@ sub load_gpx {
 			$track_display_color = GPS::GpsmanData::GarminGPX::garmin_to_gpsman_color($track_display_color);
 		    }
 		} elsif ($trk_child->name eq 'type') {
-		    my $type = $trk_child->children_text;
 		    if ($type_to_vehicle) {
+			my $type = $trk_child->children_text;
 			$vehicle = $activity_type_to_vehicle{ lc($type) };
+		    }
+		} elsif ($trk_child->name eq 'desc') {
+		    if ($guess_device && !defined $gps_device) {
+			my $desc = $trk_child->children_text;
+			if ($desc =~ / recorded on (.*)/) { # fit2gpx would generate something like "Cycling (generic) recorded on Garmin Fenix5_plus"
+			    $gps_device = $1;
+			}
 		    }
 		} elsif ($trk_child->name eq 'trkseg') {
 		    if ($trkseg) {

@@ -27,7 +27,7 @@ sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [--check-roundtrip] [--if-roundtrip-ok] [-o ...] [-timeoffset hours|automatic] [-type-to-vehicle] gpxfile
+usage: $0 [--check-roundtrip] [--if-roundtrip-ok] [-o ...] [-timeoffset hours|automatic] [-type-to-vehicle] [-guess-device] gpxfile
 EOF
 }
 
@@ -38,6 +38,7 @@ my $if_roundtrip_ok;
 my $outfile;
 my $timeoffset;
 my $type_to_vehicle;
+my $guess_device;
 my $debug;
 GetOptions(
 	   'check-roundtrip!' => \$do_check_roundtrip,
@@ -45,6 +46,7 @@ GetOptions(
 	   'out-file|o=s' => \$outfile,
 	   'timeoffset=s' => \$timeoffset,
 	   'type-to-vehicle!' => \$type_to_vehicle,
+	   'guess-device!' => \$guess_device,
 	   'debug!' => \$debug,
 	  )
     or die usage;
@@ -67,6 +69,9 @@ if (defined $timeoffset) {
 }
 if (defined $type_to_vehicle) {
     push @gps_gpsmandata_any_options, typetovehicle => $type_to_vehicle;
+}
+if (defined $guess_device) {
+    push @gps_gpsmandata_any_options, guessdevice => $guess_device;
 }
 
 if ($do_check_roundtrip) {
