@@ -850,7 +850,7 @@ Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715
 #: next_check_id: MOLKENMARKT-2021
 # XXX später wiederherstellen: Grunerstr. (Richtungsfahrbahn)	1::igndisp 11057,12715 10951,12637 10931,12622
-#: last_checked: 2023-08-13 (daf)
+#: last_checked: 2023-08-17
 Grunerstr. [Fahrbahn]: gesperrt	2::inwork 10931,12622 10951,12637 11057,12715
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10931,12622 10873,12577
 # REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10807,12451 10746,12364 10697,12303
@@ -1964,7 +1964,7 @@ Am Seegraben: Mittelstreifen	3nocross 19894,-835 19996,-740 20205,-548
 Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2037,11122 2102,11307 2095,11440
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Warnemünder Str.: Mittelstreifen	3nocross 2757,7604 2750,7444 2744,7397
-Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
+Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14908
 # 
 #: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter vvv
 Holländerstr., Residenzstr.: Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
@@ -3717,7 +3717,7 @@ Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: osm_watch: way id="4596985" version="22"
-#: last_checked: 2023-07-26 (mapillary)
+#: last_checked: 2023-08-17
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -3751,7 +3751,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/auswaertiges-amt/kurstrasse-33-35.html (Fertigstellung 2027/2028)
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
-#: last_checked: 2023-08-16
+#: last_checked: 2023-08-17
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4065,7 +4065,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2023-07-23
+#: last_checked: 2023-08-17
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4102,6 +4102,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 # REMOVED (keine Einbahnstraße mehr) --- #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung. --- #: osm_watch: way id="4045220" version="49" --- #: osm_watch: way id="938037386" version="3" --- #: osm_watch: way id="868103791" version="3" --- #: last_checked: 2023-03-24 --- #: check_frequency: 60d --- Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
 #: next_check_id: TEGELERBRUECKE-2021
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-31-august-2023-rollt-der-verkehr-ueber-die-neue-tegeler-bruecke_a389844 (Abschluss bis Jahresende (2023)?)
 #: osm_watch: way id="930890136" version="20"
 #: last_checked: 2023-05-18
 #: check_frequency: 180d
@@ -4329,7 +4330,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-07-21 (webcam)
+#: last_checked: 2023-08-17
 #: check_frequency: 30d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
@@ -4396,7 +4397,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="29"
 #: osm_watch: way id="289966097" version="16"
 #: priority: #A
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-17
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4464,24 +4465,24 @@ Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-17
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-07-17
+#: last_checked: 2023-08-17
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-08-13 (daf)
+#: last_checked: 2023-08-17
 #: check_frequency: 90d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-08-13 (daf) vvv
+#: last_checked: 2023-08-17 vvv
 Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611 10954,12604 10931,12622
 #: last_checked ^^^
 # 
@@ -4809,7 +4810,7 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-07-13 vvv
+#: last_checked: 2023-08-17 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4951,7 +4952,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="31"
 #: also_indoor: traffic
-#: last_checked: 2023-07-28
+#: last_checked: 2023-08-17
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230
@@ -4999,7 +5000,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
 # REMOVED (-> handicap_s-orig) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 # REMOVED --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
-# REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021) --- #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/DBT/MELHErweiterung/melherweiterung.html (Fertigstellung bis III. Quartal 2021) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig) --- #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere) --- #: osm_watch: way id="158025179" version="11" --- #: last_checked: 2023-08-09 (mapillary, offen) --- #: check_frequency: 45d --- #: next_check: 2023-04-13 --- #: also_indoor: traffic (ex-G) --- Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
+# REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021) --- #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/DBT/MELHErweiterung/melherweiterung.html (Fertigstellung bis III. Quartal 2021) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig) --- #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere) --- #: osm_watch: way id="158025179" version="11" --- #: last_checked: 2023-08-09 (mapillary, offen) --- #: check_frequency: 45d --- #: next_check: 2023-04-13 --- #: also_indoor: traffic (ex-G) --- Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8735,12780 8589,12772
 # REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
@@ -5234,9 +5235,9 @@ Clayallee: Mittelstreifen	3nocross 1139,3876 1159,3915 1191,3997 1221,4071
 Clayallee: Mittelstreifen	3nocross 1297,4311 1304,4334 1370,4547
 Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # REMOVED --- XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraße in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
-Adele-Schreiber-Krieger-Str.	1s:q4 8737,12757 8596,12760
+Adele-Schreiber-Krieger-Str.	1s:q4 8735,12780 8589,12772
 # REMOVED (-> handicap) --- Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
-tragen (ca. 20 Stufen)	0:45 8536,12758
+tragen (ca. 20 Stufen)	0:45 8532,12771
 #: note: abgeschätzt, wie das nördliche Gegenstück
 tragen (35 Stufen)	0:45 8507,12873
 tragen (35 Stufen)	0:45 8480,12909

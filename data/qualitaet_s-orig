@@ -500,7 +500,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Teileinziehung, weiterhin für Radfahrer offen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Teileinziehung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2023-07-25 (mapillary) vvv
+#: last_checked: 2023-08-17 vvv
 #: next_check: 2023-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -1057,13 +1057,9 @@ Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11259,859
 # REMOVED --- #: next_check_id: LILIENTHALWEG-2020 --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php --- #: by: https://abendblatt-berlin.de/2020/04/26/neukoelln-sanierung-des-lilienthalwegs/ --- #: XXX Weg wird gepflastert (Betonpflaster, kleines Stück Kleinsteinpflaster) --- #: last_checked: 2020-08-12 --- # REMOVED --- #: next_check: 2020-07-31 --- #: check_frequency: 7d
 Hasenheide, zur Lilienthalstr.: Verbundsteinpflaster, kleine Stück mit Kleinsteinpflaster	Q1+ 10709,9192 11111,9104 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10627,9912 10602,9957 10500,10081
-#: note: Kategorisierung ist ein Kompromiss zwischen dem Kopfsteinpflaster (Q2 bis Q2+) und der Sitte, auf dem Uferweg zu fahren (größtenteils Q1+ und besser)
-#: XXX Uferweg wird gerade neu gemacht und ist gesperrt; laut Aushang bis August 2023, danach eine Oberfläche ähnlich wie in der Grimmpromenade
-#: last_checked: 2023-07-17
-#: check_frequency: 30d
-#: next_check: 2023-08-31
-# REMOVED --- Carl-Herz-Ufer: Kopfsteinpflaster (aber es existiert ein breiter asphaltierter Uferweg)	Q1- 10168,10085 10313,10084 10430,10081 10500,10081
-Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10168,10085 10313,10084 10430,10081 10500,10081
+#: note: Kategorisierung ist ein Kompromiss zwischen dem Kopfsteinpflaster (Q2 bis Q2+) und der Sitte, auf dem Uferweg zu fahren (Q1)
+# REMOVED --- #: XXX Uferweg wird gerade neu gemacht und ist gesperrt; laut Aushang bis August 2023, danach eine Oberfläche ähnlich wie in der Grimmpromenade --- #: last_checked: 2023-07-17 --- #: check_frequency: 30d --- #: next_check: 2023-08-31
+Carl-Herz-Ufer: Fahrbahn Kopfsteinpflaster, Uferweg mit relativ glatter Oberfläche	Q1- 10168,10085 10313,10084 10430,10081 10500,10081
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4745&options=4 --- #: XXX Ist eine Verbesserung in Zukunft in Sicht? --- #: last_checked: 2013-06-27 --- #: next_check: 2013-08-01
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
@@ -1088,7 +1084,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="18"
-#: last_checked: 2023-06-22
+#: last_checked: 2023-08-17
 #: check_frequency: 45d
 #: next_check: 2023-09-30
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -2794,7 +2790,7 @@ Parkstr.: leicht welliger Asphalt	Q0 9905,18329 10075,18472 10205,18575 10359,18
 Eintrachtstr.: Asphalt	Q0 10710,18393 10650,18544
 Hiddenseer Str.: neuer Asphalt, aber wellig	Q0- 11651,15273 11828,15210
 Stubbenkammerstr.: Asphalt mit leichten Schäden	Q0- 11631,15192 11801,15132
-(Chausseestr. - Schulzendorfer Str.): Parkweg	Q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
+(Chausseestr. - Schulzendorfer Str.): Parkweg	Q1 8286,14635 8322,14687 8292,14734 8275,14869 8262,14910
 (Pankeweg zwischen Pankstr. und Wiesenstr.): Kopfsteinpflaster	Q2 8176,15635 8150,15700 8164,15840
 Gropiusstr.: Fahrbahn Kopfsteinpflaster, Uferweg mit Verbundsteinpflaster	Q1 8389,16214 8534,16355 8543,16364
 Orthstr.: Verbundsteinpflaster	Q1 8164,15840 8250,16008
@@ -3665,7 +3661,8 @@ Preußstr.: Asphalt	Q0 12325,15328 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9955,12300 9959,12281 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
-Müncheberger Str.: mäßiger Asphalt	Q1+ 12450,11980 12558,11920 12617,11888
+Müncheberger Str.: Asphalt	Q0- 12450,11980 12558,11920
+Müncheberger Str.: mäßiger Asphalt	Q1+ 12558,11920 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9293,5919
 Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
 Wussowstr.: Asphalt	Q0- 12798,5580 12702,5553
@@ -12557,7 +12554,9 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Oststr., Virchow-Klinikum): Asphalt	Q0 6395,15109 6380,15210 6320,15283
 (Oststr., Virchow-Klinikum): Beton	Q0 6320,15283 6309,15320
 (Oststr., Virchow-Klinikum): Asphalt	Q0 6309,15320 6293,15330
-(Oststr., Virchow-Klinikum): Asphalt	Q0 6504,14969 6470,14990 6414,14981
+(Oststr., Virchow-Klinikum): Asphalt	Q0 6504,14969 6470,14990
+(Oststr., Virchow-Klinikum): Asphalt	Q0; 6470,14990 6414,14981
+(Oststr., Virchow-Klinikum): Kleinsteinpflaster	Q1-; 6414,14981 6470,14990
 (Südring, Virchow-Klinikum): Asphalt	Q0 6158,14851 6078,14864 6073,14892
 (Südring, Virchow-Klinikum): Beton	Q0 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
 (Südring, Virchow-Klinikum): Beton	Q0 6231,14952 6252,14812
@@ -14221,7 +14220,7 @@ Presselstr.: mäßiges Kopfsteinpflaster	Q2+ 6107,4718 6186,4783
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
 Presselstr.: mäßiges Kopfsteinpflaster	Q2 6186,4783 6204,4835 6215,4926
 #: confirmed_by: srt
-Kunkelstr.: Beton	Q0- 8219,14897 8227,15075
+Kunkelstr.: Beton	Q0- 8219,14908 8227,15075
 #: corrected_by: srt (Q0 -> Q1)
 Kunkelstr.: Gehwegplatten	Q1 8227,15075 8229,15128
 Kunkelstr.: Fahrbahn ist Kopfsteinpflaster, Uferweg ist wassergebundene Decke	Q1 8229,15128 8232,15220
@@ -29324,7 +29323,7 @@ Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8111,13029 8110,1304
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8670,13633 8664,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8670,13633 8633,13629 8594,13625
 Linienstr.: Kleinsteinpflaster	Q1 9225,13389 9312,13388
-Kleine Hamburger Str.: Asphalt mit leichten Unebenheiten	Q0- 9670,13637 9744,13584 9793,13549
+Kleine Hamburger Str.: Asphalt mit leichten Unebenheiten	Q0- 9670,13637 9744,13584 9771,13564
 # REMOVED --- Helga-Hahnemann-Str.: Schotter, bei Regen große Pfützen	Q2 9415,13315 9408,13282 9385,13174
 Blasewitzer Ring: Asphalt	Q0 -5437,12440 -5219,12374 -5196,12452 -5146,12632 -5170,12690 -5282,12730
 Gruberzeile: Beton	Q0 -6013,12009 -5881,11902 -5847,11876 -5789,11831 -5735,11793 -5674,11800 -5618,11884
@@ -29420,7 +29419,7 @@ Max-Urich-Str.: Kopfsteinpflaster	Q2 9034,14910 8953,14758
 #: confirmed_by: srt
 Gartenplatz: Asphalt	Q0 8870,14637 8953,14758
 Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
-(Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8264,14902 8245,15004 8266,15134
+(Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8262,14910 8245,15004 8266,15134
 #: note: früher schlechtes Kopfsteinpflaster, aber mittlerweile wegen Benutzung als Baustraße asphaltiert
 Döberitzer Str.: asphaltiert	Q0 7979,13733 7872,13685
 #: confirmed_by: srt

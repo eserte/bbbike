@@ -2172,7 +2172,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-07-23
+#: last_checked: 2023-08-17
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -3382,6 +3382,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
 #: source_id: IM_022700 (inaktiv)
+#: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023)
 	q4::temp 8426,13909 8572,13671
 ',
          'from' => 1692187200,
@@ -4372,7 +4373,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-08-16 vvv
+#: last_checked: 2023-08-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5740,11 +5741,12 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2023/bundesministerium-fuer-arbeit-und-soziales-2063814
 #: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023)
 #: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023)
-	q4::temp 9075,11756 9171,11777
+# REMOVED (hier existiert ein Radweg am Veranstaltungsgelände vorbei) ---	q4::temp 9075,11756 9171,11777
+Mauerstr.	2::temp 9171,11777 9138,11872
 ',
          'from' => 1691964000,
          'id' => 3604,
-         'text' => 'Zietenplatz: Veranstaltung, Sperrung der Fahrbahn, voraussichtlich bis 22.8.2023',
+         'text' => 'Mauerstr./Zietenplatz: Veranstaltung, Durchfahrt nicht möglich, voraussichtlich bis 22.8.2023',
          'type' => 'handicap',
          'until' => 1692741599
        },
@@ -6700,15 +6702,17 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.cz/VIZ_Berlin/status/1653626689128402944#m (Gesamtdauer bis voraussichtlich 12/2023)
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
-#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) (bis 4.12.2023) vvv
+#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) (bis 4.12.2023) (inaktiv) vvv
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: last_checked: 2023-08-06 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2023-12-04 vvv
 # REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: source_id[inactive] ^^^
@@ -6807,8 +6811,8 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
-#: last_checked: 2023-07-01
-#: check_frequency: 30d
+#: last_checked: 2023-08-17
+#: check_frequency: 120d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
 ',
@@ -6967,6 +6971,7 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
 #: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023) (inaktiv)
 #: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023) (inaktiv)
 #: source_id: viz2021:13.581174,52.456659,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023)
+#: also_indoor: traffic (H[zuviel?],G,B,W)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 #: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
@@ -7371,16 +7376,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'type' => 'handicap',
          'until' => 1697814000
        },
-       {
-         'data' => '	q4::inwork 3093,10594 3395,10704
-',
-         'from' => 1687039200,
-         'id' => 3866,
-         'source_id' => 'viz2021:13.29624,52.50221,19.06.2023,00:00',
-         'text' => 'Gervinusstr.: Baustelle, zwischen Kracauerplatz und Droysenstr.gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.06.2023 00:00 bis 21.08.2023 23:59',
-         'type' => 'handicap',
-         'until' => 1692655140
-       },
+       undef,
        {
          'data' => '#: note: nur beim rbb
 #: also_indoor: traffic (G,W)
@@ -7550,6 +7546,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'data' => '#: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
 #: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
+#: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt
 #: priority: #A
 #: last_checked: 2023-08-09 (twitter)
 #: check_frequency: 45d
@@ -7611,6 +7608,31 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'text' => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
          'type' => 'handicap',
          'until' => 1692374400
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: last_checked: 2023-08-17
+	2::inwork 10069,10151 10158,10117
+',
+         'from' => undef,
+         'id' => 3889,
+         'text' => 'Carl-Herz-Ufer - Brachvogelstr.: Weg wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: VIRCHOW-2023
+#: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
+#: last_checked: 2023-08-17
+#: check_frequency: 60d
+#: next_check: 2023-12-30
+	2::inwork 6213,14777 6210,14808
+',
+         'from' => undef,
+         'id' => 3890,
+         'text' => 'Virchow-Klinikum, Einfahrt Nordufer: komplett gesperrt, auch für Fußgänger, voraussichtlich bis Ende 2023',
+         'type' => 'gesperrt',
+         'until' => 1703952000
        }
      
 );

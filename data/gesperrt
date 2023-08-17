@@ -1334,8 +1334,8 @@ Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Str
 Mittelstreifen	3nocross::ignrte 2757,7604 2750,7444 2744,7397
 Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,7444 2719,7415
 Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2757,7604
-Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
-Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
+Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14908
+Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14908
 Holländerstr., Residenzstr.: Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
 Holländerstr., Residenzstr. (Richtungsfahrbahn)	1::igndisp 7602,17399 7675,17430 7902,17166
 Holländerstr., Residenzstr. (Richtungsfahrbahn)	1::igndisp 7902,17166 7675,17427 7602,17399
@@ -3647,8 +3647,8 @@ Leichhardtstr. -> Clayallee: Mittelstreifen	3::igndisp 1310,4335 1304,4334 1297,
 Clayallee -> Leichhardtstr.: Mittelstreifen	3::igndisp 1370,4547 1304,4334 1310,4335
 Mittelstreifen	3nocross::ignrte 623,4902 844,4916 922,4910
 Argentinische Allee -> Zum Holzungsweg: Mittelstreifen	3::igndisp 623,4902 844,4916 755,5017
-Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760
-tragen (ca. 20 Stufen)	0:45:-98 8536,12758
+Adele-Schreiber-Krieger-Str.	1s 8735,12780 8589,12772
+tragen (ca. 20 Stufen)	0:45:-167 8532,12771
 tragen (35 Stufen)	0:45:-108 8507,12873
 tragen (35 Stufen)	0:45:-57 8480,12909
 Fröhner Str.	1 -4302,11669 -4432,11621 -4590,11541
