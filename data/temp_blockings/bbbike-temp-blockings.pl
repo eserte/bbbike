@@ -2058,7 +2058,7 @@ EOF
        text  => 'Danziger Str. (Prenzlauer Berg) Richtung Osten zwischen Schönhauser Allee und Knaackstr. Baustelle Fahrtrichtung gesperrt, Umleitung: Schönhauser Allee - Sredzkistr. - Knaackstr. (bis Mitte 09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 10881,15047 11056,15009
+	q4; 10881,15047 11045,15012
 EOF
      },
      { from  => 1115535600, # 2005-05-08 09:00
@@ -16250,7 +16250,7 @@ EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
        until => 1253397600, # 2009-09-20 00:00
-       text  => 'B 112 Eisenhüttenstadt - Brieskow-Finenheerd Brücke über DB u. Oder-Spree-Kanal bei Zilten Belagserneuerung Vollasperrung 07.09.2009-19.09.2009 ',
+       text  => 'B 112 Eisenhüttenstadt - Brieskow-Finenheerd Brücke über DB u. Oder-Spree-Kanal bei Zilten Belagserneuerung Vollsperrung 07.09.2009-19.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 93494,-21221 93192,-21578
@@ -24828,11 +24828,12 @@ EOF
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/aussenbecken-im-stadtbad-tiergarten-ist-nicht-ausfinanziert_a369047 (Eröffnung: Spätsommer 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
+#: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
 #: osm_watch: way id="462738551" version="17"
 #: osm_watch: way id="848019125" version="4"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-08-09 (osm)
-# REMOVED --- #: next_check: 2023-08-30
+#: next_check: 2023-09-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 EOF
@@ -34778,7 +34779,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-08-06 (daf)
+#: last_checked: 2023-08-13 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -35014,9 +35015,9 @@ EOF
        text  => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20
+#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2023-04-21 vvv
+#: last_checked: 2023-08-18 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -35352,7 +35353,7 @@ EOF
 #: osm_watch: way id="975241319" version="5"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-13 (mapillary)
+#: last_checked: 2023-08-18
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35366,10 +35367,10 @@ EOF
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: note: Radfahrer sollen absteigen
-#: last_checked: 2023-08-01 (mapillary)
+#: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße)
+#: last_checked: 2023-08-18
 # REMOVED --- #: next_check: 2023-07-31
-zwischen Wildenbruchstr. und Innstr.	q4::inwork 13033,8628 13124,8562 13217,8493
+zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
@@ -38225,25 +38226,25 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Schönburgstr.: Bauarbeiten, Fahrbahn an der Einmündung Richnowstr. gesperrt',
+       text  => 'Parkstr.: Bauarbeiten, Fahrbahn gesperrt', # Schönburgstr.: Bauarbeiten, Fahrbahn an der Einmündung Richnowstr. gesperrt
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (ex-G[falsch]) vvv
-#: osm_watch: way id="1171918026" version="3" vvv
-#: last_checked: 2023-06-17 vvv
+#: osm_watch: way id="1171918026" version="3"
+#: osm_watch: way id="151353924" version="10"
+#: last_checked: 2023-08-18 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
-	q4::inwork 9031,6355 8995,6473
-	q4::inwork 8995,6473 8961,6490
+# REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
 # REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
+Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-#: osm_watch ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -39243,7 +39244,7 @@ EOF
 #: next_check_id: PARRISIUS-2023
 #: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023) (inaktiv)
 #: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023) (inaktiv)
-#: source_id: viz2021:13.581174,52.456659,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023)
+#: source_id: viz2021:13.581174,52.456659,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023) (inaktiv)
 #: also_indoor: traffic (H[zuviel?],G,B,W)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
 #: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
@@ -39637,7 +39638,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.382607,52.531437,10.07.2023,06:00 (bis 22.07.2023) (bis 24.07.2023) (inaktiv)
-#: source_id: viz2021:13.38289,52.531563,14.08.2023,06:00 (hier nur Kfz-Verkehr, bis 18.08.2023)
+#: source_id: viz2021:13.38289,52.531563,14.08.2023,06:00 (hier nur Kfz-Verkehr, bis 18.08.2023) (inaktiv)
 	q4::inwork 8870,13926 9011,14019
 EOF
      },
@@ -40137,7 +40138,7 @@ EOF
        until => 1692374400, # 2023-08-18 18:00
        text  => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.301291,52.5098,14.08.2023,06:00',
+       source_id => 'viz2021:13.301291,52.5098,14.08.2023,06:00', # inaktiv
        data  => <<EOF,
 	q4::inwork 3460,11441 3339,11433
 EOF
@@ -40163,6 +40164,41 @@ EOF
 #: check_frequency: 60d
 #: next_check: 2023-12-30
 	2::inwork 6213,14777 6210,14808
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Thomasstr./Altenbraker Str.: Bauarbeiten im Einmündungsbereich, Fahrbahn gesperrt, Bordsteine, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (ex-H,B,G,W)
+#: source_id: viz2021:13.43177,52.47224,16.08.2023,18:46
+#: add_fragezeichen: Ist der Einmündungsbereich weiterhin gesperrt? vvv
+#: last_checked: 2023-08-18 vvv
+#: check_frequency: 14d vvv
+	q2::inwork 12185,7381 12368,7423 12564,7467
+	q2::inwork 12368,7423 12396,7312
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1692241200, # 2023-08-17 05:00
+       until => 1692561600, # 2023-08-20 22:00
+       text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, vom 18.08.2023 05:00 bis 20.08.2023 22:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.38639,52.5137,18.08.2023,05:00',
+       data  => <<EOF,
+	2::temp 9207,11880 9195,11972
+EOF
+     },
+     { from  => 1693116000, # 2023-08-27 08:00
+       until => 1695391200, # 2023-09-22 16:00
+       text  => 'Ortsdurchfahrt Marwitz: Bauarbeiten, Sperrung, 28.08.2023 08:00 Uhr bis 22.09.2023 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/221-E/23/111',
+       data  => <<EOF,
+	2::inwork -5516,30287 -6055,30073
 EOF
      },
     );

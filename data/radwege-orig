@@ -134,7 +134,7 @@ Gehwegplatten, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2023-07-22 vvv
+#: last_checked: 2023-08-18 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -364,7 +364,7 @@ Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241
 #: confirmed_by: srt
 #: XXX bleibt das Provisorium?
 #: osm_watch: way id="984857536" version="5"
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-18
 #: check_frequency: 90d
 provisorische geschützte Radspur	RW3; 13155,9907 13136,9883 13086,9825 13026,9854
 	RW1; 13026,9854 12932,9900
@@ -377,8 +377,8 @@ asphaltierter Radweg	RW1; 10144,9856 10006,9942
 	RW1;RW1 10144,9856 10177,9850 10357,9807 10405,9795 10564,9755
 unklare Ausschilderung, Zeichen 237 ist nur zur Geibelstr. hin gerichtet	RW1; 10564,9755 10781,9697
 	RW1; 10781,9697 10564,9755
-unklare Ausschilderung, Zeichen 237 auf halber Strecke ist durchgekreuzt (offiziell oder nicht?)	RW1; 10781,9697 11023,9597
-	RW1; 11023,9597 10781,9697
+unklare Ausschilderung, Zeichen 237 auf halber Strecke ist durchgekreuzt (offiziell oder nicht?)	RW1; 10781,9697 10807,9686 11023,9597
+	RW1; 11023,9597 10807,9686 10781,9697
 	RW1;RW1 11023,9597 11075,9576 11274,9492
 	RW1; 11274,9492 11383,9446 11509,9392
 unklare Ausschilderung, Zeichen 237 auf halber Strecke ist nur senkrecht zur Fahrtrichtung einsehbar	RW1; 11509,9392 11383,9446 11274,9492
@@ -1478,7 +1478,7 @@ Mitbenutzung des Gehwegs erlaubt	RW1; 19899,13534 20073,13535
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025)
-#: last_checked: 2023-07-22
+#: last_checked: 2023-08-17
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7880,13315
@@ -2427,9 +2427,9 @@ die letzten 50 Meter werden auf dem Gehweg geführt	RW3; 13148,14850 13439,14673
 #: by: ^^^
 	RW3;RW2 11709,14856 11609,14881
 	RW2; 11864,14781 11709,14856
-	RW1;RW2 10881,15047 11056,15009
-	RW3; 11056,15009 11154,14985
-die letzten Meter sind benutzungspflichtig	RW3; 11154,14985 11056,15009
+	RW1;RW2 10881,15047 11045,15012
+	RW3; 11045,15012 11154,14985
+die letzten Meter sind benutzungspflichtig	RW3; 11154,14985 11045,15012
 	RW3;RW3 11154,14985 11285,14958 11325,14949 11339,14946 11535,14900 11609,14881
 	RW1;RW2 12786,13185 12878,13229 12979,13280 13073,13329
 	RW2;RW2 13073,13329 13151,13367 13241,13415 13330,13468
@@ -6988,7 +6988,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2023-08-05 vvv
+#: last_checked: 2023-08-18 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7028,7 +7028,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2023-08-05
+#: last_checked: 2023-08-18
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -8233,7 +8233,7 @@ Leitboys	RW4; 9426,3797 9375,4022 9346,4144
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße)
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
-#: last_checked: 2023-07-11 (mapillary) vvv
+#: last_checked: 2023-08-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	RW3; 8739,6701 8653,6781
@@ -8357,7 +8357,7 @@ gemeinsamer Rad- und Gehweg	RW2;RW2 -261,15858 -265,15917 -255,15993 -239,16077 
 # 
 	RW3;RW3 20919,3082 21068,2926
 # 
-	RW7;RW7 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
+	RW7;RW7 10953,15787 11086,15772 11158,15739 11290,15669 11407,15595 11502,15527 11595,15460 11682,15397 11852,15281
 # 
 	RW4; 11664,6796 11652,6879
 #: historical_note: früherer Radweg explizit abgesperrt und kaum erkennbar

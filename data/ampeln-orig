@@ -178,6 +178,11 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
+#: source_id: viz2021:13.560004,52.48297,07.07.2023,11:00 (bis 01.09.2023)
+#: next_check: 2023-09-01
+#: valid: -20230901
+Köpenicker Str./Geraldweg: Gegenverkehrsregelung	X::inwork 21072,8742
+# 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw== --- #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023) (bis 11.08.2023) --- #: last_checked: 2023-08-09 --- #: next_check: 2023-08-11 --- #: valid: -20230811 ---	F::inwork 11913,13077
@@ -209,10 +214,10 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) vvv
-#: last_checked: 2023-07-03 vvv
+#: last_checked: 2023-08-17 (mapillary) vvv
 #: next_check: 2023-11-30 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
-Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
+# REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: next_check ^^^
@@ -3106,7 +3111,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 25546,5359
 #: by: Germar Molter
 #: note: keine reine Fußgängerampel: Radfahrer zwischen Knaackstr. und Lychener Str. müssen sie auch benutzen (mit Anforderung)
-	F 11056,15009
+	F 11045,15012
 	F 12158,7449
 	F 12121,7555
 	B 19302,-734
@@ -3670,7 +3675,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2023-08-01 (mapillary)
+#: last_checked: 2023-08-18
 #: check_frequency: 120d
 	X::inwork 12185,7381
 # 

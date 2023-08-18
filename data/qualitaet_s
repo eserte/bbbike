@@ -1259,7 +1259,7 @@ Fasanenplatz, östliche Fahrbahn: Kleinsteinpflaster	Q1 5220,10192 5229,10210 522
 Meierottostr.: Asphalt mit einigen Schäden	Q1 5246,10168 5463,9961
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11325,14949 11450,15173 11480,15229 11595,15460
-Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11112,15387
+Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11223,15319 11112,15387
 Schudomastr.: Kleinsteinpflaster	Q1 13815,7490 13785,7520
 Schwarzastr.: Kleinsteinpflaster	Q1 13840,7513 13815,7490
 Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
@@ -1505,7 +1505,7 @@ May-Ayim-Ufer: gut verfugtes Kopfsteinpflaster	Q2 12951,10839 13077,10747 13206,
 Bevernstr.: Kopfsteinpflaster	Q2 13015,10659 13077,10747
 Naunynstr.: Kopfsteinpflaster	Q2 11400,10790 11397,10781 11376,10788 11366,10793
 Maria-von-Maltzan-Platz: Kopfsteinpflaster	Q2 11376,10788 11382,10805 11403,10799 11400,10790
-Lychener Str.: Kopfsteinpflaster	Q2 11056,15009 11236,15312 11268,15360 11418,15587 11499,15710
+Lychener Str.: Kopfsteinpflaster	Q2 11045,15012 11058,15069 11223,15319 11262,15374 11407,15595 11486,15718
 Arndtstr.: Kopfsteinpflaster	Q2 9487,9209 9553,9196 9566,9194 9614,9186 9674,9179 9795,9162 9966,9151
 Fidicinstr.: Kopfsteinpflaster	Q2 9224,9053 9295,9047 9459,9019 9654,8991 9799,8962
 Kopischstr.: Kopfsteinpflaster	Q2 9459,9019 9477,9113
@@ -6505,7 +6505,7 @@ Kummerower Ring: Kleinsteinpflaster	Q1 22678,13756 22615,13734
 (Ehm-Welk-Str. - Feldberger Ring): Beton	Q0 22723,13638 22685,13738
 (Ehm-Welk-Str. - Feldberger Ring): Beton	Q1 22685,13738 22678,13756 22664,13811 22692,13836
 Clara-Zetkin-Weg: Verbundsteinpflaster	Q1 22572,13025 22591,12959
-Clara-Zetkin-Weg: Gehwegplatten	Q1 22591,12959 22612,12966 22681,12985 22693,12970 22775,12984
+Clara-Zetkin-Weg: Gehwegplatten	Q1 22591,12959 22612,12966 22687,12986 22690,12979 22768,13004
 (Clara-Zetkin-Platz - Bansiner Str.): Gehwegplatten	Q1 22612,12966 22623,12944
 Bansiner Str. [Parkplatz]: Asphalt	Q0 22623,12944 22619,12885
 Lion-Feuchtwanger-Str.: Verbundsteinpflaster/Gehwegplatten	Q1 22528,12924 22516,12946 22538,12955 22562,12944 22591,12959
@@ -7465,7 +7465,7 @@ Harry-Liedtke-Pfad: Gehwegplatten	Q0 15788,1747 15783,1820 15806,1903
 Harry-Liedtke-Pfad: Gehwegplatten	Q0 15806,1903 15834,2024
 Harry-Liedtke-Pfad: Gehwegplatten	Q0 15834,2024 15843,2065 15836,2113
 Senefelderstr.: Kleinsteinpflaster	Q1 11595,15058 11582,15021
-Knackstr.: Kopfsteinpflaster	Q2 11094,14769 11038,14972 11056,15009
+Knackstr.: Kopfsteinpflaster	Q2 11094,14769 11038,14972 11045,15012
 Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8266,14346 8442,14456
 Riedemannweg: Beton	Q0 4248,15647 4389,15336
 Thaters Privatweg: schlechtes Kopfsteinpflaster	Q3 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
@@ -10958,7 +10958,8 @@ Otto-Weidt-Platz: Kleinsteinpflaster	Q1 7850,14100 7923,14142
 Am Bahnhof Wuhlheide: Betonpflaster	Q0 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
-Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1 9093,8665 9158,8706 9229,8718
+Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9093,8665 9158,8706 9229,8718
+Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q0; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676
 Schillingstr.: Asphalt mit Querrissen	Q1 11635,12745 11596,12668 11562,12597
 Schillingstr.: Asphalt mit Querrissen	Q0 11562,12597 11497,12463
@@ -11661,7 +11662,7 @@ Am Hügel: mäßiger Beton	Q2 4261,20808 4107,21059
 Schauflerpfad: Beton	Q0 -716,21284 -734,21360 -796,21375
 Schauflerpfad: schlechtes Kopfsteinpflaster	Q3 -796,21375 -868,21367 -901,21374
 Schauflerpfad: Verbundsteinpflaster	Q1 -901,21374 -1128,21421 -1218,21436
-Ludwigsluster Str.: guter Beton	Q0 22743,13077 22775,12984 22790,12937 22868,12899
+Ludwigsluster Str.: guter Beton	Q0 22743,13077 22768,13004 22775,12984 22790,12937 22868,12899
 Ludwigsluster Str.: Asphalt	Q0 22831,12999 22868,12899 22896,12827 22906,12766
 Ludwigsluster Str.: sehr welliger Asphalt	Q2 22906,12766 22906,12707 22891,12673 22780,12567
 Ludwigsluster Str.: Beton mit einigen Schäden	Q1 22780,12567 22688,12489 22607,12422
@@ -12229,7 +12230,7 @@ Fregestr.: guter Asphalt	Q0 5896,6785 5957,6889 5959,6976 5961,7229 5955,7420
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Verbundsteinpflaster und wassergebundene Decke	Q1 7911,4465 7925,4477 8027,4571 8076,4606
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): etwas unebener Asphalt, Regenablaufrinnen	Q1 8076,4606 8192,4710
 (Gersdorfstr. - Wulfilaufer): Verbundsteinpflaster	Q1 8192,4710 8255,4791
-Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
+Lettestr.: Kopfsteinpflaster	Q2 11262,15374 11368,15301 11480,15229
 Apostel-Paulus-Str.: Kopfsteinpflaster	Q2 7035,9161 6945,9142 6885,9132 6735,9103 6588,9087
 Apostel-Paulus-Str.: Asphalt	Q0 6588,9087 6509,9077
 Apostel-Paulus-Str.: Gehwegplatten	Q0 6509,9077 6442,9068

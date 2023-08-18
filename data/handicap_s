@@ -355,7 +355,7 @@ zum Tunnel S-Bhf. Grunewald: Fußgänger	q1 693,9129 731,9103
 Tunnel S-Bhf. Grunewald: Fußgänger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
 enge Kurven	q2 33526,2771 33419,2765 33406,2738
 Kieler Str.: Fußgänger	q3 4998,5817 5030,5800
-Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
+Fontanepromenade: enger Gehweg	q3 10781,9697 10774,9681 10760,9646
 Südstern: Fußgänger	q3 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 Ruhlsdorfer Str.: Bordstein, Fußgänger	q4 9350,10176 9368,10211
@@ -1073,7 +1073,7 @@ Fritz-Lang-Str.: Fußgängerzone	q2 23856,14868 23878,14748
 Kurt-Weill-Gasse: Fußgänger	q1 23846,14931 23778,14995
 Kurt-Weill-Gasse: Fußgängerzone	q4 23993,14797 23961,14841 23918,14876 23882,14904
 (Alt-Hellersdorf - Cottbusser Str.): getrennter Rad/Gehweg	q1 23305,14914 23318,14847 23297,14772
-Clara-Zetkin-Weg: Fußgänger	q1 22572,13025 22591,12959 22612,12966 22681,12985 22693,12970 22775,12984
+Clara-Zetkin-Weg: Fußgänger	q1 22572,13025 22591,12959 22612,12966 22687,12986 22690,12979 22768,13004
 (Clara-Zetkin-Platz - Bansiner Str.): Fußgänger	q1 22612,12966 22623,12944
 Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
@@ -2978,7 +2978,6 @@ Großstr.: enge Straße	q0 18574,6401 18487,6469 18462,6495 18429,6582
 Rothariweg: enge Straße	q0 8292,6331 8290,6191 8291,6048
 Küselstr.: enge Straße	q1 12292,15464 12221,15514 12158,15556 12094,15598 12058,15621
 Zillertalstr.: enge Straße	q0 10807,17193 10498,17192 10228,17191 10198,17196
-Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
 Breestpromenade: enge Straße	q1 25761,5613 26059,5631 26199,5643
 Zellerfelder Str.: enge Straße	q1 11526,18929 11468,19106
 Burghardweg: enge Straße	q1 21533,14009 21561,14257 21584,14459
@@ -3477,3 +3476,4 @@ Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6504,9961 6518,9867
 Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6518,9867 6492,9782
 Blissestr.: linker Gehweg	q3::igndisp; 4769,8563 4754,8608
 Hansastr.: linker Gehweg	q3::igndisp; 15866,16823 15917,16858
+Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	q4::igndisp; 10807,9686 10802,9673 10774,9681

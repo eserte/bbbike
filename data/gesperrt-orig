@@ -1530,6 +1530,9 @@ Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
 #: note: explizites Radfahren-verboten-Schild
 Alt-Kaulsdorf	1::igndisp 23648,11265 23447,11264 23362,11263
 # 
+#: note: allerdings keine explizite Einbahnstraßenregelung
+Fontanepromenade	1 10617,9353 10706,9554 10746,9646 10760,9646 10773,9632 10735,9542 10647,9337
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1838,6 +1841,9 @@ B109: Templin - Prenzlau	1:igndisp 16323,79690 16331,79764
 # 
 Albert-Thaer-Str.	1 24697,23369 24357,23092 24263,23015
 # 
+#: by: osm
+B102, Ortsumfahrung Schmerzke	2 -44344,-3604 -44222,-3387 -43986,-3248 -43861,-3115 -43805,-2898 -43844,-2696 -43939,-2557 -44250,-2362
+# 
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -1987,6 +1993,7 @@ Marienfelder/Daimler: Abbiegen nicht erlaubt	3 8602,2377 8579,2265 8639,2212
 Munsterdamm: Mittelstreifen	3nocross 6767,5274 6767,5233 6747,5010
 Puschkinallee: Hecken	3nocross 13782,9954 13711,10022 13579,10146
 Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,9492 11383,9446 11509,9392
+Urbanstr.: Mittelstreifen	3nocross 10564,9755 10781,9697 10807,9686
 #: by: Rainer (ghostviewer...)
 #: confirmed_by: srt
 Aroser Allee: Mittelstreifen	3nocross 6685,17922 6711,17839 6739,17749
@@ -3618,6 +3625,7 @@ Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
 #: last_checked ^^^
 # 
 #: next_check_id: BEHRENSUFER-2023
+#: osm_watch: way id="41340056" version="25"
 #: last_checked: 2023-07-21
 #: check_frequency: 180d
 #: next_check: 2026-12-31
@@ -3631,7 +3639,8 @@ Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gespe
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=744224#post744224
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
-#: last_checked: 2023-07-13
+#: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
+#: last_checked: 2023-08-17
 #: check_frequency: 90d
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
@@ -4423,10 +4432,10 @@ Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="719023971" version="11"
+#: osm_watch: way id="719023971" version="12"
 #: last_checked: 2023-07-09
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
-#: osm_watch: way id="719023970" version="11"
+#: osm_watch: way id="719023970" version="12"
 #: last_checked: 2023-07-09
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
