@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.97;
+$VERSION = 1.98;
 
 use vars qw(%images);
 
@@ -268,6 +268,13 @@ sub register {
 	      callback_3_std => sub { showmap_url_daf_berlin(@_) },
 	      ($images{DAF} ? (icon => $images{DAF}) : ()),
 	      order => 7501,
+	    };
+	$main::info_plugins{__PACKAGE__ . "_ArchitekturUrbanistik"} =
+	    { name => "Berliner Architektur & Urbanistik",
+	      callback => sub { showmap_architektur_urbanistik(@_) },
+	      callback_3_std => sub { showmap_url_architektur_urbanistik(@_) },
+	      # no icon (yet)
+	      order => 7502,
 	    };
     }
     if ($is_berlin && $main::devel_host) {
@@ -1357,6 +1364,23 @@ sub showmap_url_daf_berlin {
 sub showmap_daf_berlin {
     my(%args) = @_;
     my $url = showmap_url_daf_berlin(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Architektur Urbanistik (via umap)
+
+sub showmap_url_architektur_urbanistik {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://umap.openstreetmap.fr/de/map/berliner-architektur-und-urbanistik_945116#%d/%s/%s", $scale, $py, $px;
+}
+
+sub showmap_architektur_urbanistik {
+    my(%args) = @_;
+    my $url = showmap_url_architektur_urbanistik(%args);
     start_browser($url);
 }
 
