@@ -1,0 +1,21 @@
+Various snippets which may be used for editing
+
+Empty bbbike-temp-blockings record:
+
+     { from  => undef,
+       until => undef,
+       text  => '',
+       type  => 'gesperrt',
+       data  => <<EOF,
+EOF
+     },
+
+Alternative, with placeholders for ISO 8601 dates:
+
+     { from  => $isodate2epoch->(""),
+       until => $isodate2epoch->(""),
+       text  => '',
+       type  => 'gesperrt',
+       data  => <<EOF,
+EOF
+     },
