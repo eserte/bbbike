@@ -1055,10 +1055,10 @@ Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5921,13866 5907,13746 5882,
 Bremer Str.: Asphalt	Q0 5882,13548 5868,13441 5857,13342
 Zum Langen See: Kopfsteinpflaster	Q2 23325,2070 23390,1785 23409,1699 23464,1449 23520,1194
 Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23102,1637 23185,1649
-Müggelbergallee: Kopfsteinpflaster	Q2 23185,1649 23278,1668
+Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23185,1649 23278,1668
 Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,1678 23293,1697
-Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
-(Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1 23669,1759 24265,1891 24879,1728
+Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23321,1678 23409,1699 23606,1744
+(Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1 23606,1744 24265,1891 24879,1728
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1 24265,1891 24528,1949 24630,2034
 Am Oder-Spree-Kanal: holpriger Fahrweg	Q2 30546,-3072 30572,-2997 30588,-3000
 Am Oder-Spree-Kanal: Asphalt	Q0 30588,-3000 30599,-2827 30629,-2817
@@ -3104,7 +3104,7 @@ Lisztstr. (Karlshorst): Asphalt	Q0 18332,9356 18377,9366
 Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18490,9387 18377,9366
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 18021,8976 17981,9000 17950,8974
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
-(Fortsetzung Wandlitzstr.): Betonplattenstraße	Q2 17981,9000 17837,9086
+(Fortsetzung Wandlitzstr.): Asphalt	Q0 17981,9000 17837,9086 17743,9116 17570,9103
 Schmiedeberger Weg: Verbundsteinpflaster	Q0 18021,8976 17987,8954 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
@@ -11323,6 +11323,9 @@ Helga-Hahnemann-Str.: Asphalt	Q0 18260,5746 18062,5856
 Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 (Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): Asphalt	Q0 23387,15322 23404,15324 23418,15234
 (Eva-Strittmatter-Str. - Kastanienallee): Asphalt	Q0 23536,15252 23550,15261 23661,15282
+An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125
+An der Villa Bolle: Baustraße	Q2 22668,3125 22477,3109
+An der Villa Bolle: Verbundsteinpflaster	Q1 22668,3125 22674,3052
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -17037,7 +17040,7 @@ Elcknerplatz: Kopfsteinpflaster	Q2 22538,6046 22624,6044
 Hirtestr.: am Rand Kopfsteinpflaster, zwischen den Gleisen asphaltiert	Q2; 22777,6151 22763,6398 22753,6437 22727,6487
 Hirtestr.: am Rand Beton, zwischen den Gleisen asphaltiert	Q1; 22727,6487 22753,6437 22763,6398 22777,6151
 Hirtestr.: Beton	Q0 22727,6487 22675,6498
-Parrisiusstr.: Kopfsteinpflaster	Q2 22358,5918 22531,5871
+Parrisiusstr.: Asphalt	Q0 22358,5918 22531,5871
 Parrisiusstr.: schlechtes Kopfsteinpflaster	Q3 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
 Kiekebuschstr.: schlechtes Kopfsteinpflaster	Q3 22631,5866 22608,5732
 Gelnitzstr.: Asphalt	Q0 22885,5835 22830,5924 22767,5984

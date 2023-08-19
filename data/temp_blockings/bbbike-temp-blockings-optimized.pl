@@ -3340,13 +3340,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.laubinger.de/event/koepenickerwinzersommer/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
 # REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
-	2::temp 22212,4655 22214,4548
-	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22175,4730 22246,4711
+# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22093,4499
+# REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
+# REMOVED (hier wohl nicht) ---	2::temp 22212,4655 22214,4548
+# REMOVED (hier wohl nicht) ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+# REMOVED (hier wohl nicht) ---	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+# REMOVED (hier wohl nicht) ---	2::temp 22175,4730 22246,4711
+# REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
+# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
+Luisenhain	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
+Schlossinsel	2::temp 22093,4499 22076,4422
 # REMOVED --- #: tempex ^^^
 ',
          'from' => 1692273600,
@@ -4483,7 +4486,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-08-14
+#: last_checked: 2023-08-19
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5529,7 +5532,7 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher))
 #: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
 # REMOVED --- #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
-#: last_checked: 2023-07-09 vvv
+#: last_checked: 2023-08-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-14 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
@@ -5544,7 +5547,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'from' => 1651953282,
          'id' => 3548,
          'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
-         'text' => 'Schubertstr.: kan wegen Bauarbeiten gesperrt sein, voraussichtlich bis Mitte September 2023',
+         'text' => 'Schubertstr.: kann wegen Bauarbeiten gesperrt sein, voraussichtlich bis Mitte September 2023',
          'type' => 'gesperrt',
          'until' => 1694707200
        },
@@ -6469,7 +6472,7 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: last_checked: 2023-08-06
+#: last_checked: 2023-08-19
 #: check_frequency: 120d
 #: next_check: 2023-08-28
 	q4::inwork; 22431,6068 22467,6135
@@ -6678,7 +6681,8 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
+         'data' => '#: next_check_id: FLORIANGEYER-2023
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
@@ -6686,7 +6690,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-07-20 (osm)
+#: last_checked: 2023-08-19
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-08
 	q4::inwork 20159,3623 20073,3734
@@ -6877,7 +6881,7 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="20"
-#: last_checked: 2023-08-06 (osm)
+#: last_checked: 2023-08-19
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6967,29 +6971,7 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: PARRISIUS-2023
-#: source_id: viz2021:13.581905,52.456587,12.06.2023,08:00 (hier zwischen Borgmannstr. und Weinbergstr., stimmt das? bis 18.08.2023) (inaktiv)
-#: source_id: viz2021:13.579285,52.456952,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023) (inaktiv)
-#: source_id: viz2021:13.581174,52.456659,12.06.2023,08:00 (hier weiterhin zwischen Borgmannstr. und Weinbergstr., bis 18.08.2023) (inaktiv)
-#: also_indoor: traffic (H[zuviel?],G,B,W)
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/parrisiusstrasse-zwei-monate-dicht_a383344
-#: by: https://nitter.cz/VIZ_Berlin/status/1668128496424570880#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnlNSnM4Sld3QVFnS1NjLmpwZw==
-#: note: mittlerweile hat rbb die Meldung geändert, von Borgmannstraße-Weinbergstraße zu Bahnhofstraße-Borgmannstraße
-# REMOVED --- #: add_fragezeichen: Wo genau befinden sich die Bauarbeiten? vvv
-Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22358,5918
-# REMOVED (hier keine Bauarbeiten, trotz Verkehrszeichenplans) --- Bereich der eigentlichen Baustelle	q4::inwork 22531,5871 22631,5866
-# REMOVED (hier keine Sperrung oder Bauarbeiten) ---	q3::inwork 22631,5866 22766,5840
-# REMOVED --- #: add_fragezeichen ^^^
-',
-         'from' => 1686434400,
-         'id' => 3814,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331104.php',
-         'text' => 'Parrisiusstr.: Bauarbeiten, Fahrbahn gesperrt, vom 12. Juni 2023 bis zum 18. August 2023',
-         'type' => 'handicap',
-         'until' => 1692395999
-       },
+       undef,
        undef,
        undef,
        {
@@ -7271,18 +7253,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'type' => 'gesperrt',
          'until' => 1719756000
        },
-       {
-         'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2023-07-15
-#: check_frequency: 90d
-	q4::inwork 23278,1668 23185,1649
-',
-         'from' => undef,
-         'id' => 3857,
-         'text' => 'Müggelbergallee: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
@@ -7513,6 +7484,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
 ',
@@ -7539,7 +7511,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 #: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
 #: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt
 #: priority: #A
-#: last_checked: 2023-08-09 (twitter)
+#: last_checked: 2023-08-19
 #: check_frequency: 45d
 #: next_check: 2023-12-04
 	2::inwork 22027,6608 22050,6619
@@ -7653,6 +7625,18 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'text' => 'Ortsdurchfahrt Marwitz: Bauarbeiten, Sperrung, 28.08.2023 08:00 Uhr bis 22.09.2023 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1695391200
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (none)
+#: last_checked: 2023-08-19
+Margaretenstr.	q3::inwork 17006,11391 16948,11409
+',
+         'from' => undef,
+         'id' => 3894,
+         'text' => 'Margaretenstr.: Fahrbahn kann zwischen Metastr. und Heinrichstr. gesperrt sein, evtl. außerhalb der Arbeitszeiten offen',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

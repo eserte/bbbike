@@ -19,7 +19,7 @@ Neuköllnische Allee: welliger Asphalt	Q2 14344,7003 14319,7001 14276,7021 14246,
 #: XXX und außerdem auch schauen, ob es wieder zum Mergenthalerring wieder ein Tor gibt und dieses ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="7"
-#: last_checked: 2023-07-04 vvv
+#: last_checked: 2023-08-19 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="4"
@@ -300,7 +300,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-08-14
+#: last_checked: 2023-08-19
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1536,11 +1536,14 @@ Bremer Str.: Kopfsteinpflaster	Q2 5928,13922 5921,13866
 Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5921,13866 5907,13746 5882,13548
 Bremer Str.: Asphalt	Q0 5882,13548 5868,13441 5857,13342
 Zum Langen See: Kopfsteinpflaster	Q2 23325,2070 23390,1785 23409,1699 23464,1449 23520,1194
+#: historical_note: früher Kopfsteinpflaster, Q2
 Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23102,1637 23185,1649
-Müggelbergallee: Kopfsteinpflaster	Q2 23185,1649 23278,1668
+#: historical_note: früher (bis Sommer 2023) Kopfsteinpflaster	Q2
+Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23185,1649 23278,1668
 Müggelbergplatz: Kopfsteinpflaster	Q2 23293,1697 23278,1668 23303,1650 23321,1678 23293,1697
-Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
-(Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24879,1728
+#: historical_note: früher (bis Sommer 2023) Kopfsteinpflaster	Q2
+Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23321,1678 23409,1699 23606,1744
+(Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23606,1744 24265,1891 24879,1728
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24630,2034
 Am Oder-Spree-Kanal: holpriger Fahrweg	Q2 30546,-3072 30572,-2997 30588,-3000
 Am Oder-Spree-Kanal: Asphalt	Q0 30588,-3000 30599,-2827 30629,-2817
@@ -4133,7 +4136,8 @@ Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,936
 #: historical_note: früher: Asphalt mit einigen schadhaften Stellen, Q1-
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 18021,8976 17981,9000 17950,8974
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
-(Fortsetzung Wandlitzstr.): Betonplattenstraße	Q2 17981,9000 17837,9086
+#: historical_note: früher: Betonplattenstraße, Q2
+(Fortsetzung Wandlitzstr.): Asphalt	Q0 17981,9000 17837,9086 17743,9116 17570,9103
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17987,8954 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3- 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3- 18147,8895 18009,8687 17930,8567
@@ -13230,6 +13234,14 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 (Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): Asphalt	Q0 23387,15322 23404,15324 23418,15234
 (Eva-Strittmatter-Str. - Kastanienallee): Asphalt	Q0 23536,15252 23550,15261 23661,15282
 # 
+An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125
+#: next_check_id: MARIENUFER-2023
+#: last_checked: 2023-08-19
+#: check_frequency: 120d
+#: next_check: 2026-12-31
+An der Villa Bolle: Baustraße	Q2 22668,3125 22477,3109
+An der Villa Bolle: Verbundsteinpflaster	Q1+ 22668,3125 22674,3052
+# 
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -15484,6 +15496,10 @@ Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3+ 19723,4175 19759,4160 19815,4148
 Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
 #: corrected_by: Hartmut Schröder (mäßiges Q2 -> schlechtes Q3+)
 #: corrected_by: srt (Q3+ -> Q3)
+#: next_check_id: FLORIANGEYER-2023
+#: XXX Bleibt das Kopfsteinpflaster im südlichen Bereich?
+#: last_checked: 2023-08-19
+#: check_frequency: 90d
 Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19954,3887 19992,3839 20073,3734 20159,3623
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Borkumstr.: Asphalt	Q0 11412,17823 11335,17807 11296,17799
@@ -16140,7 +16156,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=736614#post736614 (BV Kaisergärten)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-19
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
@@ -29061,15 +29077,9 @@ Hirtestr.: am Rand Beton, zwischen den Gleisen asphaltiert	Q1-; 22727,6487 22753
 #: corrected_by: mapillary (Asphalt -> ...)
 Hirtestr.: Beton	Q0- 22727,6487 22675,6498
 # 
-#: next_check_id: PARRISIUS-2023
-#: confirmed_by: srt
-#: XXX Ist die Fahrbahn der Parrisiusstr. nach den Bauarbeiten besser, vielleicht asphaltiert? vvv
-#: last_checked: 2023-07-09 vvv
-#: next_check: 2023-08-18 vvv
-Parrisiusstr.: Kopfsteinpflaster	Q2 22358,5918 22531,5871
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: next_check_id: PARRISIUS-2023 --- #: XXX Ist die Fahrbahn der Parrisiusstr. nach den Bauarbeiten besser, vielleicht asphaltiert? vvv --- #: last_checked: 2023-07-09 vvv --- #: next_check: 2023-08-18 vvv
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ..., seit 2023-08 neu gemacht)
+Parrisiusstr.: Asphalt	Q0 22358,5918 22531,5871
 #: confirmed_by: srt
 Parrisiusstr.: schlechtes Kopfsteinpflaster	Q3 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
 # 
@@ -32501,4 +32511,5 @@ Kreuzungsbereich mit gutem Kleinsteinpflaster	Q1 2937,4645
 Kreuzungsbereich mit gutem Kleinsteinpflaster	Q1 3057,4731
 Kreuzungsbereich asphaltiert	Q0 6588,9087
 Kreuzungsbereich asphaltiert	Q0 8412,14923
+Kreuzungsbereich asphaltiert	Q0 22531,5871
 #: ignore ^^^

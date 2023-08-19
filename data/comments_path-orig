@@ -45,7 +45,8 @@ von der Brandenburgischen in die Paderborner: bereits an der Ampel Zähringerstr.
 zur Pasewalker Straße: bei der Ampel an der Rothenbachstr. die Straßenseite wechseln	CP2; 11950,18529 11934,18576
 #: XXX_prog: RL:ja, GPS:nein (gehört das nicht zu comments_misc?)
 abbiegender Waldweg zur Köpenicker Str. ist nicht ausgeschildert	CP2; 20870,7122 20867,7165
-abgehender Waldweg ist etwas versteckt, Bordstein muss überquert werden, Reitweg-Schild	CP2; 20872,7268 20892,7236
+#: historical_note: früher gab's hier ein Reitweg-Schild
+abgehender Waldweg ist etwas versteckt, etwa 20m hinter dem Geländer-Ende, Bordstein muss überquert werden	CP2; 20872,7268 20892,7236
 #: XXX_prog: RL:ja, GPS:nein (gehört das nicht zu comments_misc?)
 Zugang durch Betonabsperrung	PI; 21221,12484 21205,12489 21200,12512 21191,12516
 #: XXX_prog: RL:ja, GPS:nein
@@ -523,7 +524,7 @@ Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichsh
 #: XXX wird eventuell im Zuge der Maßnahme Nsw.3 verbessert
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5826 (Verkehrsführung verbessern) (wurde allerdings abgelehnt; die allgemeine Verbesserung der Situation wird aber irgendwann passieren ("Umgestaltung des Bahnhofsvorplatzes")
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/3A22FF18-9B17-4F51-B470-2F50F0C68929/U13-2_Entwurf%20Sterndamm%20und%20Bahnhofsvorplatz_LP-Blatt02.pdf (Linksabbiegemöglichkeit für Radfahrer im Zuge der Umgestaltung am S-Bhf. Schöneweide)
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-19
 #: check_frequency: 180d
 Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17747,5452
 Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17160,6239 17056,6133 17070,6115
@@ -759,4 +760,7 @@ ehemaliger Flughafen Schönefeld - Am Seegraben: ggfs. den linken Rad- und Gehweg
 Brunsbütteler Damm - Sommerbad: ggfs. frühzeitig auf die Fahrbahn wechseln, ansonsten muss man über ein Stück Straßenabstandsgrün fahren	CP; -8007,14238 -8184,14196 -8156,14089
 # 
 Koloniestr. - Osloer Str.: zum Überqueren der Osloer Str. Fußgängerampel auf der linken Seite benutzen	CP; 8583,16914 8503,16716 8721,16689
+# 
+Wendenschloßstr. -> An der Villa Bolle: Bordstein an der Einmündung, ggfs. schon an der Pritstabelstr. auf die Fahrbahn wechseln	PI; 22811,3037 22802,3081 22790,3135 22668,3125
+An der Villa Bolle -> Wendenschloßstr.: Bordstein an der Einmündung, zunächst auf der Fahrbahn bleiben	CP; 22668,3125 22790,3135 22743,3377
 # 

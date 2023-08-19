@@ -328,6 +328,7 @@ Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Bahngelände	2 17300,9135 17284,9198
+(verlängerte Wandlitzstr.): Bahngelände	2 17837,9086 17743,9116
 Triniusstr.	1 18339,6660 18273,6606
 Planetenstr.	1 15172,7231 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
@@ -3349,6 +3350,7 @@ weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
 Schranke, auf Gehweg umfahren	BNP:2:-11:trailer=4 23537,15247
+An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
 Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
 Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
@@ -3385,7 +3387,6 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 552
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
-Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	2s:inwork 20336,3783 20362,3750
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
