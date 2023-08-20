@@ -1385,7 +1385,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4011,13407
 	X -3803,13464
 	X -3716,13724
+# 
+#: related vvv
+#: XXX_prog: gilt nur von der Pichelsdorfer Str., für andere Fahrtbeziehungen gilt die andere Ampel
 	X -3824,13350
+	X -3836,13310
+#: related ^^^
+# 
 	X -3650,12762
 	X -3635,12572
 	X -3630,12251
@@ -1452,6 +1458,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 20624,12133
 	B 1583,9713
 	X 1049,10568
+#: off: Sunday (seen 2023-08-20 14:30)
 	X 1344,10012
 	X 4063,7287
 #: note: Anforderung für Radfahrer Richtung Norden (offene Einbahnstraße!)

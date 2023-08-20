@@ -1860,7 +1860,7 @@ EOF
        text  => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -3923,13060 -3896,13124 -3824,13350
+	2 -3923,13060 -3896,13124 -3836,13310 -3824,13350
 	2 -3923,13060 -3967,12976 -4008,12916 -4063,12842
 	2 -4063,12842 -4119,12763 -4180,12690
 EOF
@@ -2440,7 +2440,7 @@ EOF
        text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Weißenburger Str. gesperrt bis 02.07.2006 (Sommerfest Wilhelmstadt) ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -3667,12919 -3693,13012 -3786,13267 -3824,13350
+	2 -3667,12919 -3693,13012 -3786,13267 -3802,13303 -3824,13350
 	2 -3667,12919 -3658,12854 -3650,12762
 EOF
      },
@@ -4535,7 +4535,7 @@ EOF
        text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 -3824,13350 -3896,13124 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460
+	1 -3824,13350 -3836,13310 -3896,13124 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460
 EOF
      },
      { from  => 1146801600, # 2006-05-05 06:00
@@ -10400,7 +10400,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006856',
        data  => <<EOF,
-	2::temp -3650,12762 -3658,12854 -3667,12919 -3693,13012 -3786,13267 -3824,13350
+	2::temp -3650,12762 -3658,12854 -3667,12919 -3693,13012 -3786,13267 -3802,13303 -3824,13350
 EOF
      },
      { from  => 1192310039, # 2007-10-13 23:13
@@ -24053,12 +24053,12 @@ EOF
      { from  => $isodate2epoch->("2023-08-16 14:00:00"), # 1534967761, # 1409202000, # 2014-08-28 07:00
        until => $isodate2epoch->("2023-08-21 12:00:00"), # $isodate2epoch->("2018-08-27 12:00:00"), # 1409569200, # 2014-09-01 13:00
        text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 17. August 2023 14 Uhr bis 21. August 2023 12 Uhr',
-       type  => 'handicap',
+       type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
 #: source_id: IM_022700 (inaktiv)
 #: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023)
-	q4::temp 8426,13909 8572,13671
+	2::temp 8426,13909 8572,13671
 EOF
      },
      { from  => 1409025600, # 2014-08-26 06:00
@@ -24833,7 +24833,7 @@ EOF
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
 #: osm_watch: way id="462738551" version="17"
-#: osm_watch: way id="848019125" version="4"
+#: osm_watch: way id="848019125" version="6"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-08-09 (osm)
 #: next_check: 2023-09-30
@@ -25301,7 +25301,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
        data  => <<EOF,
 	2::inwork -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
-	2::inwork -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
+	2::inwork -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615 -3170,12603
 EOF
      },
      { from  => 1442786400, # 2015-09-21 00:00
@@ -33515,7 +33515,7 @@ EOF
 #: also_indoor: traffic (G,W,B)
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3); laut rbb nun bis 31.7.2023
 # REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
-# REMOVED ---	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
+# REMOVED ---	q3::inwork -3824,13350 -3802,13303 -3786,13267 -3693,13012 -3667,12919
 	q3::inwork -3693,13012 -3667,12919 -3658,12854 -3650,12762
 EOF
      },
@@ -35000,7 +35000,7 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-07-27 (daf) vvv
+#: last_checked: 2023-08-20 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
@@ -35310,15 +35310,12 @@ EOF
 EOF
      },
      { from  => 1649541600, # 2022-04-10 00:00
-       until => undef, # XXX
+       until => 1692542953, # undef, # XXX
        text  => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt (Stand Juni 2023: Weg ist weitehin gesperrt)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1194824.php',
        data  => <<EOF,
-#: next_check_id: WILHELMVONSIEMENSPARK-2019
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
-#: last_checked: 2023-06-02 (mapillary)
-#: check_frequency: 90d
+# REMOVED --- #: next_check_id: WILHELMVONSIEMENSPARK-2019 --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert? --- #: last_checked: 2023-06-02 (mapillary) --- #: check_frequency: 90d
 	2::inwork 983,15136 971,15193
 EOF
      },
@@ -37846,7 +37843,7 @@ EOF
 #: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
 #: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-26
+#: last_checked: 2023-08-20
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 EOF
@@ -37934,7 +37931,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: next_check_id: ERNSTTHAELMANNPARK-2022
 # REMOVED --- #: priority: #A --- #: last_checked: 2023-01-20 --- #: next_check: 2023-02-01 --- #: XXX später nach gesperrt-orig überführen bzw. ganz aus strassen-orig entfernen
-	2::inwork 12103,15218 12208,15108
+# REMOVED ---	2::inwork 12103,15218 12208,15108
 EOF
      },
      { from  => 1674342000, # 2023-01-22 00:00
@@ -38679,7 +38676,7 @@ EOF
 #: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-17 (mapillary)
+#: last_checked: 2023-08-20
 	q4::inwork -3269,12406 -3260,12540
 EOF
      },
@@ -38733,7 +38730,7 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
-#: osm_watch: way id="1172668082" version="5"
+#: osm_watch: way id="1172668082" version="6"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
@@ -39319,7 +39316,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: note: vermutlich wird hier asphaltiert; Halteverbotsschilder bis 23.09.2023
-#: last_checked: 2023-07-27 (daf)
+#: last_checked: 2023-08-20
 #: check_frequency: 60d
 #: next_check: 2023-09-23
 	q4::inwork 6182,12900 6347,12901 6449,12865 6575,12778
@@ -40062,6 +40059,7 @@ EOF
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
+#: source_id: bvg2021:269#BVG326513_0
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
 EOF
@@ -40152,7 +40150,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-20
 	2::inwork 10069,10151 10158,10117
 EOF
      },
@@ -40213,6 +40211,24 @@ EOF
 #: also_indoor: traffic (none)
 #: last_checked: 2023-08-19
 Margaretenstr.	q3::inwork 17006,11391 16948,11409
+EOF
+     },
+     { from  => 1692511200, # 2023-08-20 08:00
+       until => 1692975600, # 2023-08-25 17:00
+       text  => 'Klärwerkstr.: Brückenarbeiten, Radfahrer sollen schieben, vom 21.08.2023 08:00 bis 25.08.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.232853,52.528921,21.08.2023,08:00',
+       data  => <<EOF,
+	q4::inwork -1284,13340 -1258,13552
+EOF
+     },
+     { from  => 1692471600, # 2023-08-19 21:00
+       until => 1692590400, # 2023-08-21 06:00
+       text  => 'Schwedter Steg: gesperrt von 20.08.2023 21:00 Uhr bis 21.08.2023 06:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1693298095172284871
+	2::inwork 10062,15927 10005,16150
 EOF
      },
     );

@@ -347,7 +347,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="15"
-#: last_checked: 2023-07-22
+#: last_checked: 2023-08-20
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3880,10154
 # 
@@ -1533,6 +1533,15 @@ Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
 Alt-Kaulsdorf	1::igndisp 23648,11265 23447,11264 23362,11263
 # 
 Fontanepromenade	1 10617,9353 10706,9554 10746,9646 10760,9646 10773,9632 10735,9542 10647,9337
+# 
+#: note: mittlere Fahrbahn ist eine Kfz-Straße
+Heerstr.: am Scholzplatz	1 -1448,11020 -1475,10979 -1517,10971
+# REMOVED (tatsächlich ist hier Gegenverkehr erlaubt) --- Heerstr.: am Scholzplatz	1 -1517,10971 -1558,10970 -1581,11030
+Heerstr.: am Scholzplatz	1 -1581,11030 -1527,11047 -1481,11050 -1448,11020
+Heerstr.: am Scholzplatz	2::igndisp -1581,11030 -1523,11012 -1448,11020
+# 
+Pichelsdorfer Str.	1 -3802,13303 -3836,13310
+Pichelsdorfer Str.	1 -3824,13350 -3802,13303
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3611,6 +3620,17 @@ Schranke, auf Gehweg umfahren	BNP:2::trailer=4 23537,15247
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SAATWINKLER-2023
+#: last_checked: 2023-08-20 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2023-10-01 vvv
+Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
+Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
+Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486 -213,15529 -218,15558
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: MARIENUFER-2023
 #: last_checked: 2023-08-19
 #: check_frequency: 120d
@@ -3639,7 +3659,7 @@ Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
 Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 # 
 #: next_check_id: YORCKSTRBR5-2023
-#: last_checked: 2023-07-18
+#: last_checked: 2023-08-20
 #: check_frequency: 90d
 #: next_check: 2023-09-30
 Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
@@ -3720,7 +3740,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 # 
 #: next_check_id: GOETEL-2023
 #: XXX Bleibt die Einbahnstraßenregelung permanent?
-#: last_checked: 2023-06-17 (mapillary)
+#: last_checked: 2023-08-20
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
 #: last_checked: 2023-07-14 (mapillary)
@@ -3810,12 +3830,7 @@ Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,53
 #: check_frequency: 60d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 # 
-#: next_check_id: ERNSTTHAELMANNPARK-2022
-#: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist.
-#: last_checked: 2023-07-03
-#: check_frequency: 180d
-Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
-# 
+# REMOVED (mittlerweile fest eingezäunt) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist. --- #: last_checked: 2023-07-03 --- #: check_frequency: 180d --- Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
 # REMOVED (-> nur temp blockings ist nun aktiv) --- #: next_check_id: SPREEPARK-2022 --- #: last_checked: 2023-05-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 vvv --- Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15678,8911 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821 --- Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
@@ -4278,7 +4293,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 #: XXX laut osm ist die Schule 2023-02 fertig
 #: osm_watch: way id="860287005" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-06-18
+#: last_checked: 2023-08-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4969,7 +4984,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="31"
 #: also_indoor: traffic
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-20
 #: check_frequency: 180d
 #: next_check: 2023-12-11
 # REMOVED --- #: valid: -20221230
@@ -5041,7 +5056,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2023-07-03 vvv
+#: last_checked: 2023-08-20 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
@@ -5238,8 +5253,6 @@ Turmstr.: Straßenbahntrasse	3nocross 6377,13321 6480,13325 6535,13327 6674,13332
 #: next_check_id: TRAMTURM-2021
 #: XXX vermutet, überprüfen!
 Turmstr.: Straßenbahntrasse	3nocross 5857,13342 5956,13330 6011,13330
-Eichkatzweg	1 1137,9921 1026,9772 925,9644
-Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20 1372,8011
 tragen (4 x 12 Stufen)	0:180 876,8131
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1256,7841
@@ -5264,7 +5277,7 @@ Roedeliusweg	1 -4432,11621 -4444,11772
 Bollmannweg	1 -4444,11772 -4310,11770
 Weinmeisterhornweg	1s:q3 -4798,11231 -4579,11174
 #: note: keine Verbindung zur südlichen Nebenfahrbahn
-Heerstr.	3nocross -1523,11012 -1288,11037 -1050,11061
+Heerstr.	3nocross -1523,11012 -1448,11020 -1288,11037 -1050,11061
 Heerstr.	3nocross -4515,11935 -4438,11910 -4311,11872
 Heerstr.	3nocross -4311,11872 -4279,11862 -4078,11800
 #: XXX_prog: Treppe with two points: -4768,11016 -4836,11028

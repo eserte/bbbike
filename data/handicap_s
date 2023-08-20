@@ -43,7 +43,6 @@ Eisenacher Str.: Radfahrer m¸ssen B¸rgersteig benutzen, Bordsteine	q1::inwork; 2
 Eisenacher Str.: Radfahrer teilen sich mit Fuﬂg‰ngern den B¸rgersteig, Umwege	q2::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung S¸den	q3::inwork; 19181,13485 19198,13272 19180,13219
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
-Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
 Elﬂholzstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen B¸rgersteig	q2::inwork; 7122,9517 7126,9825
 Moltkestraﬂenbr¸cke: f¸r Fuﬂg‰nger existiert eine Behelfsbr¸cke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
@@ -331,7 +330,7 @@ Rolandufer: Gehweg, viele Fuﬂg‰nger	q3 10821,12153 10660,12176 10591,12203 10583
 Spreeufer: Gehweg, viele Fuﬂg‰nger, im Sommer Straﬂencafe	q4 10583,12206 10492,12289 10417,12378 10416,12394
 Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
 Fuggerstr.: einige Fuﬂg‰nger	q1 6128,10319 6020,10351
-Pfalzburger Str.: Gehweg	q2 4905,10069 4910,10135
+Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
@@ -2587,6 +2586,7 @@ Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2211,5120
 (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
 (Weverstr. - Gatower Str.): Fuﬂg‰nger	q1 -4169,12371 -4365,12358
+(S¸dpark): Fuﬂg‰nger	q1 -4106,12100 -4063,12104
 (S¸dpark): Fuﬂg‰nger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
 (S¸dpark): Fuﬂg‰nger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12371
 (Gl¸hw¸rmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
@@ -2644,7 +2644,8 @@ Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6724,9457
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 (Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
-(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
+(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12103,15218
+(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11937,15349
 (Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12056,15159 12082,15206 12103,15218
 (Anton-Saefkow-Str. - John-Schehr-Str.): einige Fuﬂg‰nger, Parkplatz	q1 13088,14469 13031,14390
@@ -2710,12 +2711,12 @@ Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5858,12425 5886,12467
 Schleswiger Ufer: schmal, Fuﬂg‰nger	q3 5886,12467 5944,12548
 Cuxhavener Str.: stellenweise eng, einige Fuﬂg‰nger	q3 5931,12399 5904,12417 5886,12467
 (Zufahrt Parkpl‰tze Bartningallee): schmal, un¸bersichtlich, Fuﬂg‰nger	q3 6179,12513 6149,12454
-(Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q2 6173,12396 6149,12454 6137,12532 6160,12681
+(Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q3 6173,12396 6149,12454 6137,12532 6162,12690
 (Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5982,12291 6030,12363 6067,12381 6098,12446
 (Parkweg Ortelsburger Allee): Fuﬂg‰nger	q2 48,10922 37,11014 23,11137 16,11190
 (Parkweg Kranzallee): Fuﬂg‰nger	q1 -532,10994 -511,11127
-(Teufelsseechaussee - Waldschulallee): Fuﬂg‰nger	q1 194,10846 355,10740
-(Teufelsseechaussee - Maik‰ferpfad): Fuﬂg‰nger	q1 556,10122 460,10193 304,10305 41,10501
+(Teufelsseechaussee - Waldschulallee): Fuﬂg‰nger	q1 200,10851 324,10763
+(Teufelsseechaussee - Maik‰ferpfad): Fuﬂg‰nger	q1 556,10122 460,10193 335,10284 41,10501
 Gutsmuthsweg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q1 -505,11882 -503,11782
 Gutsmuthsweg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem), Bordstein	q2 -503,11782 -496,11720
 Carl-Schuhmann-Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q1 -503,11782 -750,11740
@@ -3108,7 +3109,7 @@ Pertisauer Weg: enge Straﬂe	q1 6199,1104 6176,1023 6167,933 6163,822 6186,652
 Chorweilerstr.: enge Straﬂe	q1 20036,-122 20143,-93 20223,-72 20302,-51
 Bisonweg: enge Straﬂe	q0 -774,22977 -709,22909 -657,22854 -595,22791 -542,22736
 Flatower Str.: enge Straﬂe	q1 -5049,16987 -4999,16971 -4875,16928 -4821,16914 -4758,16910 -4628,16899 -4319,16879 -4151,16857
-Kroppenstedtweg: Fuﬂg‰nger haben Vorrang	q2 1056,14906 1035,14996 998,15094 983,15136 971,15193
+Kroppenstedtweg: Fuﬂg‰nger haben Vorrang	q1 1056,14906 1035,14996 998,15094 983,15136 971,15193
 R¸bezahlweg: einige Fuﬂg‰nger	q1 14743,18839 14698,18967 14664,19057 14622,19123 14571,19172 14507,19214 14375,19296 14241,19379 14119,19455 14030,19510
 Gebr¸der-Grimm-Weg: Fuﬂg‰nger, querlaufende Ablaufrinnen	q2 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14414,19063 14433,19093 14457,19132 14482,19174 14507,19214 14546,19286
 Charles-H.-King-Str.: enge Straﬂe	q1 -1248,2451 -1401,2391 -1604,2324

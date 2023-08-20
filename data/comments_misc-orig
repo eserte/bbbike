@@ -427,7 +427,7 @@ Bus 247	busroute_N 7198,15656 7354,15817 7436,15746
 Bus 101, Bus 106	busroute_N 5368,13406 5351,13238 5328,13019
 Bus 107	busroute_N 9855,26032 9863,26000 9879,25933 9882,25918 9900,25796 9912,25130 9900,24943 9882,24724 9797,24154 9794,23980 9774,23936 9625,23781 9415,23699
 Bus M27	busroute_N 4283,13660 4363,13336 4381,13239
-Bus M27	busroute_N 3556,13200 3583,13313 3642,13548
+Bus M27	busroute_N 3556,13200 3585,13320 3642,13548
 Bus M27	busroute_N 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
 Bus M21, Bus M27	busroute_N 3005,13728 3320,13796 3695,13902
 Bus M21	busroute_N 3695,13902 3656,14150
@@ -1442,7 +1442,7 @@ ausgeschildert zur Georg-Knorr-Str. (Industriegebiet)	CP2;  19214,14966 19244,14
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (hier: Stichstraße Invalidenstraße)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Widmungsänderung; auf der westlichen Seite entsteht noch ein Gebäude mit Tiefgarage)
 #: XXX wann wird die Straße ausgeschildert?
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-20
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: westliche Einfahrt nicht ausgeschildert	CP2; 8167,13457 8174,13397
 # 
@@ -1832,8 +1832,9 @@ Gummiweg: nicht ausgeschildert, nicht die ausgebaute Straße zur Hauptstr. 23 d-
 Biesenbrow - Briest: Privatstraße	CS 54508,82572 54307,83141
 # 
 ausgeschildert "Am Juliusturm 66,28"	CP2; -2668,14635 -2800,14566
-ausgeschildert "Am Juliusturm 62"	CP2; -2668,14635 -2570,14661
+ausgeschildert "Am Juliusturm 62"	CP2; -2668,14635 -2618,14654
 ausgeschildert "Am Juliusturm 62,64,66,68"	CP2; -2647,14532 -2652,14559
+ausgeschildert "Wladimir-Gall-Weg"	CP2; -2618,14654 -2570,14661
 # 
 Münsingerpark: Richtung Kemmannweg/Galenstr.	CP2; -3621,14270 -3661,14274
 # 
@@ -1877,4 +1878,9 @@ ausgeschildert "Jelena-Šantić-Friedenspark"	CP2; 22854,14018 22903,14063
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-02-13
 Zur Märkischen Aue: nicht ausgeschildert	CS 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619 17856,10560 17864,10537
+# 
+Havelwerke	CS -1854,14989 -1945,15018 -2009,15033 -2070,15046
+Havelwerke	CS -1985,14916 -1946,14907 -1937,14955 -1959,14962 -1945,15018
+# 
+ausgeschildert "Scholzplatz"	CP2; -1517,10971 -1558,10970
 # 

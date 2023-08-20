@@ -3386,12 +3386,12 @@ Schlossinsel	2::temp 22093,4499 22076,4422
          'data' => '#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
 #: source_id: IM_022700 (inaktiv)
 #: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023)
-	q4::temp 8426,13909 8572,13671
+	2::temp 8426,13909 8572,13671
 ',
          'from' => 1692187200,
          'id' => 2622,
          'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 17. August 2023 14 Uhr bis 21. August 2023 12 Uhr',
-         'type' => 'handicap',
+         'type' => 'gesperrt',
          'until' => 1692612000
        },
        undef,
@@ -3540,7 +3540,7 @@ Schlossinsel	2::temp 22093,4499 22076,4422
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
 #: osm_watch: way id="462738551" version="17"
-#: osm_watch: way id="848019125" version="4"
+#: osm_watch: way id="848019125" version="6"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-08-09 (osm)
 #: next_check: 2023-09-30
@@ -5351,7 +5351,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-07-27 (daf) vvv
+#: last_checked: 2023-08-20 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
@@ -5457,20 +5457,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WILHELMVONSIEMENSPARK-2019
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
-#: last_checked: 2023-06-02 (mapillary)
-#: check_frequency: 90d
-	2::inwork 983,15136 971,15193
-',
-         'from' => 1649541600,
-         'id' => 3535,
-         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1194824.php',
-         'text' => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt (Stand Juni 2023: Weg ist weitehin gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
@@ -6282,7 +6269,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
 #: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-07-26
+#: last_checked: 2023-08-20
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 ',
@@ -6656,7 +6643,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-17 (mapillary)
+#: last_checked: 2023-08-20
 	q4::inwork -3269,12406 -3260,12540
 ',
          'from' => undef,
@@ -6686,7 +6673,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
-#: osm_watch: way id="1172668082" version="5"
+#: osm_watch: way id="1172668082" version="6"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
@@ -6997,7 +6984,7 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: note: vermutlich wird hier asphaltiert; Halteverbotsschilder bis 23.09.2023
-#: last_checked: 2023-07-27 (daf)
+#: last_checked: 2023-08-20
 #: check_frequency: 60d
 #: next_check: 2023-09-23
 	q4::inwork 6182,12900 6347,12901 6449,12865 6575,12778
@@ -7485,6 +7472,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
+#: source_id: bvg2021:269#BVG326513_0
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
 ',
@@ -7565,7 +7553,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
        undef,
        {
          'data' => '#: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-20
 	2::inwork 10069,10151 10158,10117
 ',
          'from' => undef,
@@ -7637,6 +7625,26 @@ Margaretenstr.	q3::inwork 17006,11391 16948,11409
          'text' => 'Margaretenstr.: Fahrbahn kann zwischen Metastr. und Heinrichstr. gesperrt sein, evtl. außerhalb der Arbeitszeiten offen',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork -1284,13340 -1258,13552
+',
+         'from' => 1692511200,
+         'id' => 3895,
+         'source_id' => 'viz2021:13.232853,52.528921,21.08.2023,08:00',
+         'text' => 'Klärwerkstr.: Brückenarbeiten, Radfahrer sollen schieben, vom 21.08.2023 08:00 bis 25.08.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1692975600
+       },
+       {
+         'data' => '#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1693298095172284871
+	2::inwork 10062,15927 10005,16150
+',
+         'from' => 1692471600,
+         'id' => 3896,
+         'text' => 'Schwedter Steg: gesperrt von 20.08.2023 21:00 Uhr bis 21.08.2023 06:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1692590400
        }
      
 );

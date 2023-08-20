@@ -971,6 +971,11 @@ Martin-Luther-Str.	1 6485,8639 6455,8613
 Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
 Alt-Kaulsdorf	1::igndisp 23648,11265 23447,11264 23362,11263
 Fontanepromenade	1 10617,9353 10706,9554 10746,9646 10760,9646 10773,9632 10735,9542 10647,9337
+Heerstr.: am Scholzplatz	1 -1448,11020 -1475,10979 -1517,10971
+Heerstr.: am Scholzplatz	1 -1581,11030 -1527,11047 -1481,11050 -1448,11020
+Heerstr.: am Scholzplatz	2::igndisp -1581,11030 -1523,11012 -1448,11020
+Pichelsdorfer Str.	1 -3802,13303 -3836,13310
+Pichelsdorfer Str.	1 -3824,13350 -3802,13303
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3350,6 +3355,9 @@ weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
 Schranke, auf Gehweg umfahren	BNP:2:-11:trailer=4 23537,15247
+Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
+Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
+Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486 -213,15529 -218,15558
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
 Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
@@ -3378,7 +3386,6 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 Wateweg: Bauarbeiten, Weg komplett gesperrt	2::inwork 21131,8739 21124,8792
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
-Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,11275
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
@@ -3628,8 +3635,6 @@ Thusnelda-Allee -> Turmstr.: Straßenbahntrasse	3::igndisp 5975,13256 5956,13330 
 Thusnelda-Allee -> Jonasstr.: Straßenbahntrasse	3::igndisp 5975,13256 5956,13330 5956,13433
 Jonasstr. -> Turmstr.: Straßenbahntrasse	3::igndisp 5956,13433 5956,13330 6011,13330
 Jonasstr. -> Thusnelda-Allee: Straßenbahntrasse	3::igndisp 5956,13433 5956,13330 5975,13256
-Eichkatzweg	1 1137,9921 1026,9772 925,9644
-Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20:-147 1372,8011
 tragen (4 x 12 Stufen)	0:180:78 876,8131
 schieben (steile Treppe mit seitlicher Rampe)	0:180:35 1256,7841
@@ -3662,8 +3667,9 @@ Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4432,11621 -4444,11772
 Bollmannweg	1 -4444,11772 -4310,11770
 Weinmeisterhornweg	1s -4798,11231 -4579,11174
-Heerstr.	3nocross::ignrte -1523,11012 -1288,11037 -1050,11061
-Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1523,11012 -1288,11037 -1304,11183
+Heerstr.	3nocross::ignrte -1523,11012 -1448,11020 -1288,11037 -1050,11061
+Heerstr. -> Heerstr.: Heerstr.	3::igndisp -1475,10979 -1448,11020 -1481,11050
+Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1448,11020 -1288,11037 -1304,11183
 Passenheimer Str. -> Heerstr.: Heerstr.	3::igndisp -1304,11183 -1288,11037 -1050,11061
 Heerstr.	3nocross::ignrte -4515,11935 -4438,11910 -4311,11872
 Heerstr.	3nocross::ignrte -4311,11872 -4279,11862 -4078,11800
