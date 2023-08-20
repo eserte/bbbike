@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,6 +19,7 @@ my $v;
 my @opdefs;
 
 my $geo_distance;
+my $op_needs_argv;
 
 GetOptions
     (
@@ -35,9 +36,18 @@ GetOptions
 	 $geo_distance->formula('hsin');
 	 push @opdefs, { op => 'trkseg_split', args => ['dist', $meters] };
      },
+     'trkcat' => sub {
+	 my $opdef = { op => 'trkcat' };
+	 push @opdefs, $opdef;
+	 $op_needs_argv = $opdef;
+     },
     )
     or die "usage?";
 my $file = shift;
+if ($op_needs_argv) {
+    $op_needs_argv->{args} = [@ARGV];
+    @ARGV = ();
+}
 @ARGV and die "usage?";
 
 my @load_xml_opts;
@@ -109,6 +119,31 @@ sub trkpt_label {
     $trkpt->findvalue('./*[local-name(.)="time"]');
 }
 
+sub trkcat {
+    my(@more_files) = @_;
+    return if !@more_files;
+
+    # Find the trkseg node to which we will be appending
+    my ($append_to) = $doc->findnodes('//*[local-name(.)="trkseg"]');
+    unless ($append_to) {
+	die "First GPX file does not have a trkseg element\n";
+    }
+
+    # Loop through the rest of the files and extract trkseg elements
+    for my $file (@more_files) {
+	if ($v) {
+	    warn "Add $file to first gpx file...\n";
+	}
+	my $tree = XML::LibXML->load_xml(location => $file);
+	my @trkseg_nodes = $tree->findnodes('//*[local-name(.)="trkseg"]');
+    
+	for my $trkseg (@trkseg_nodes) {
+	    my $cloned = $trkseg->cloneNode(1);  # deep copy
+	    $append_to->addSibling($cloned);    # Append to previous trkseg
+	}
+    }
+}
+
 __END__
 
 =head1 NAME
@@ -117,7 +152,7 @@ gpx2gpx - apply operations on GPX files
 
 =head1 SYNOPSIS
 
-    gpx2gpx [--trkseg-split-by-time=...] [--trkseg-split-by-dist=...] src.gpx > dst.gpx
+    gpx2gpx [--trkseg-split-by-time=...] [--trkseg-split-by-dist=...] src.gpx [--trkcat src2.gpx ...] > dst.gpx
 
 =head1 DESCRIPTION
 
@@ -139,6 +174,12 @@ number of seconds.
 Split a C<< <trkseg> >> element if the distance between two adjacent
 C<< <trkpt> >> elements is greater or equal the specified number of
 meters.
+
+=head3 C<--trkcat I<file2 file3 ...>>
+
+Concat the primary gpx file and further files. Only trk files are
+supported. Only the C<< <trkseg> >> elements of the further files are
+appended to the first one.
 
 =head2 BUGS AND LIMITATIONS
 
