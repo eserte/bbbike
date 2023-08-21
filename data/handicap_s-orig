@@ -525,9 +525,11 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,W,G,ex-H[ungenau]) vvv
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-08-21 vvv
+#: check_frequency: 14d vvv
 Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000
 Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -577,6 +579,7 @@ Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 188
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (ab Ende Juni 2023 passierbar)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
+#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
 #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 #: osm_watch: way id="794278028" version="10"
 #: osm_watch: way id="1181902719" version="1"
@@ -3300,7 +3303,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="10"
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-08-21 vvv
 #: check_frequency: 120d vvv
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -4614,6 +4617,11 @@ Friedrichstr.: am Checkpoint Charlie öfters Fußgänger auf der Fahrbahn	q1 9492,1
 Heinrich-Grüber-Str.: Gehweg	q3 23377,12765 23355,12732
 # 
 Genter Str.: einige Fußgänger	q1 7064,15515 7012,15571
+# 
+#: note: am östlichen Ende Grünanlagenschild mit Zusatzschildern, aber ohne Radfahrverbot
+(Zitadellenpark - Zitadellenweg): einige Fußgänger	q1 -2364,14812 -2340,14834 -2299,14842 -2274,14862 -2246,14857 -2213,14855 -2208,14811 -2193,14799
+#: in Höhe Zitadelle Richtung Westen Grünanlagenschild ohne Zusatzschilder
+Wladimir-Gall-Weg: einige Fußgänger	q1 -2735,15062 -2708,15004 -2738,14961 -2858,14961 -2885,14943 -2900,14896 -2888,14743 -2838,14589 -2800,14566 -2668,14635 -2618,14654 -2570,14661 -2464,14664 -2452,14664 -2430,14675 -2424,14718 -2480,14818 -2412,14800 -2364,14812
 # 
 ######################### User Contributions #################################
 # 

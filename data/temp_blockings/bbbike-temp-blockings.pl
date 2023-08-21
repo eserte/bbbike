@@ -18555,6 +18555,7 @@ EOF
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
 #: note: nicht gesperrt: 2021-03-21 (So) gegen 15 Uhr
 #: note: nicht gesperrt: 2021-04-01 (Do) gegen 11:30 Uhr
+#: note: nicht gesperrt: 2023-08-21 (Mo) gegen 17:50 Uhr
 #: tempex: volatile
 	2::temp 18870,5833 18928,5920
 EOF
@@ -24057,7 +24058,7 @@ EOF
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
 #: source_id: IM_022700 (inaktiv)
-#: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023)
+#: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023) (inaktiv)
 	2::temp 8426,13909 8572,13671
 EOF
      },
@@ -30462,7 +30463,7 @@ EOF
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: last_checked: 2023-08-17 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-08-31 vvv
+# REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
@@ -30471,7 +30472,7 @@ EOF
 außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -32659,7 +32660,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="28"
 #: osm_watch: way id="165832806" version="32"
-#: last_checked: 2023-08-14
+#: last_checked: 2023-08-21
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
 # REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
@@ -35205,7 +35206,7 @@ EOF
        until => 1702656000, # 2023-12-15 17:00
        text  => 'Uferstr.: Bauarbeiten zwischen Bornemannstr. und Exerzierstr., Fahrbahn abschnittsweise gesperrt, vom 09.03.2022 07:01 bis 15.12.2023 17:00 ',
        type  => 'handicap',
-       source_id => 'viz2021:13.374637,52.551773,09.03.2022,07:01',
+       source_id => 'viz2021:13.374637,52.551773,09.03.2022,07:01', # bis 15.12.2023
        data  => <<EOF,
 	q4::inwork 8187,15965 8236,16071 8334,16282 8420,16365
 EOF
@@ -36420,14 +36421,14 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2023-08-22 17:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 22.8.2023',
+       until => $isodate2epoch->("2023-10-25 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 25.10.2023',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -37873,8 +37874,8 @@ EOF
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
 #: also_indoor: traffic (H,G,W)
 #: priority: #B
-#: last_checked: 2023-08-11 (bahninfo-forum)
-#: next_check: 2023-08-28
+#: last_checked: 2023-08-21
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-08-28
 	q4::inwork 17962,6674 17991,6431
 EOF
      },
@@ -39226,7 +39227,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-08-07 vvv
+#: last_checked: 2023-08-21 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39506,7 +39507,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BUERGER-2023
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G,B,W)
 #: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024)
 #: source_id: bvg2021:m44#BVG326176_0
 #: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
@@ -39664,6 +39665,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
 #: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
+#: by[nocache]: https://twitter.com/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -40188,7 +40190,7 @@ EOF
        until => 1692561600, # 2023-08-20 22:00
        text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, vom 18.08.2023 05:00 bis 20.08.2023 22:00',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.38639,52.5137,18.08.2023,05:00',
+       source_id => 'viz2021:13.38639,52.5137,18.08.2023,05:00', # inaktiv
        data  => <<EOF,
 	2::temp 9207,11880 9195,11972
 EOF
@@ -40229,6 +40231,26 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1693298095172284871
 	2::inwork 10062,15927 10005,16150
+EOF
+     },
+     { from  => 1692504000, # 2023-08-20 06:00
+       until => 1693000740, # 2023-08-25 23:59
+       text  => 'Guerickestr.: Bauarbeiten zwischen Cauerstr. und Galvanistr., evtl. sind auch Radfahrer betroffen, vom 21.08.2023 06:00 bis 25.08.2023 23:59',
+       type  => 'handicap',
+       source_id => 'viz2021:13.31767,52.51783,21.08.2023,06:00',
+       data  => <<EOF,
+	q4::inwork 4358,12365 4520,12358
+EOF
+     },
+     { from  => 1692594000, # 2023-08-21 07:00
+       until => 1694790000, # 2023-09-15 17:00
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., evtl. sind auch Radfahrer betroffen, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.402799,52.524086,22.08.2023,07:00', # nur Kfz-Verkehr betroffen, bis 15.09.2023
+       data  => <<EOF,
+#: XXX Ist auch der Radverkehr betroffen?
+#: next_check: 2023-08-22
+	q4::inwork 10313,13227 10264,13097
 EOF
      },
     );
