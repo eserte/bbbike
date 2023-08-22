@@ -31234,13 +31234,11 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: next_check_id: CORONA-2020
+# REMOVED --- #: next_check_id: CORONA-2020
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
 #: note: Halteverbotschilder von 6 bis 20 Uhr
-#: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2023-08-19
-#: check_frequency: 21d
+# REMOVED (Halteverbotsschilder sind nun permanent) --- #: XXX bis wann wird hier gesperrt sein? --- #: last_checked: 2023-08-19 --- #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
      },
@@ -36414,8 +36412,8 @@ EOF
 #: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2023/bundesministerium-fuer-arbeit-und-soziales-2063814
-#: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023)
-#: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023)
+#: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023) (inaktiv)
+#: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023) (inaktiv)
 # REMOVED (hier existiert ein Radweg am Veranstaltungsgelände vorbei) ---	q4::temp 9075,11756 9171,11777
 Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
@@ -37039,7 +37037,7 @@ EOF
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H) vvv
-#: last_checked: 2023-08-02 (mapillary) vvv
+#: last_checked: 2023-08-17 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 # REMOVED (hier nicht mehr) --- nur Gehweg frei	q4::inwork 7630,20698 7616,20633
@@ -39665,7 +39663,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
 #: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
-#: by[nocache]: https://twitter.com/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
+#: by: https://nitter.net/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -39861,7 +39859,7 @@ EOF
        until => 1692712800, # 2023-08-22 16:00
        text  => 'Steinbeck - Brunow: Bauarbeiten, Sperrung, vom 31.07.2023 08:00 Uhr bis 22.08.2023 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/104', # bis 22.08.2023
+       source_id => 'LS/221-F/23/104', # bis 22.08.2023 # inaktiv
        data  => <<EOF,
 	2::inwork 41808,36267 42773,35959 43155,35936 44203,35121 44481,34906 44972,34649 45275,34475
 EOF
@@ -40229,7 +40227,7 @@ EOF
        text  => 'Schwedter Steg: gesperrt von 20.08.2023 21:00 Uhr bis 21.08.2023 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1693298095172284871
+#: by: https://nitter.net/VIZ_Berlin/status/1693298095172284871
 	2::inwork 10062,15927 10005,16150
 EOF
      },
@@ -40249,6 +40247,7 @@ EOF
        source_id => 'viz2021:13.402799,52.524086,22.08.2023,07:00', # nur Kfz-Verkehr betroffen, bis 15.09.2023
        data  => <<EOF,
 #: XXX Ist auch der Radverkehr betroffen?
+#: also_indoor: traffic (G,B,W)
 #: next_check: 2023-08-22
 	q4::inwork 10313,13227 10264,13097
 EOF

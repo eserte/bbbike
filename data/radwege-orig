@@ -1947,7 +1947,7 @@ breite Busspur ist immer gültig	RW5; 5258,11285 5459,11135
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-08-17 vvv
+#: last_checked: 2023-08-22 vvv
 #: check_frequency: 14d vvv
 	RW3; 8804,12280 9028,12307
 Busspur ist immer gültig	RW5; 9028,12307 9141,12320
@@ -1974,7 +1974,7 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
 #: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-08-15 (mapillary) vvv
+#: last_checked: 2023-08-22 vvv
 #: check_frequency: 14d vvv
 Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
@@ -8196,6 +8196,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
 #: source_id: viz2021:13.385551,52.447066,31.07.2023,11:00 (bis 17.08.2023) (inaktiv)
 #: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023)
+#: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-05 vvv
