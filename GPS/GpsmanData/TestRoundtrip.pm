@@ -164,6 +164,10 @@ sub strip_unhandled_gpx_stuff {
 	$node->parentNode->removeChild($node);
     }
 
+    # remove <gpxtrkx:TrackStatsExtension> (usually contains <gpxtrkx:Distance>)
+    for my $node ($doc->findnodes('//*[local-name(.)="TrackStatsExtension"]')) {
+	$node->parentNode->removeChild($node);
+    }
 }
 
 1;
