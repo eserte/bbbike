@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-08-12
+#: last_checked: 2023-08-23
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
@@ -182,7 +182,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2023-07-04
+#: last_checked: 2023-08-23
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 # REMOVED (hier gar kein Durchgang) --- (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14116,10149 14126,10176
@@ -588,14 +588,14 @@ Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 188
 #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 #: osm_watch: way id="794278028" version="10"
 #: osm_watch: way id="1181902719" version="1"
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) vvv
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) vvv
 #: also_indoor: traffic (H,G,B,W) vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-19 vvv
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-09-14 vvv
-#: next_check: 2023-08-28 vvv
-#: valid: 20230325-20230828 vvv
+#: next_check: 2023-08-27 vvv
+#: valid: 20230325-20230827 vvv
 # REMOVED --- Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
 # REMOVED --- Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
 Hämmerlingstr.: Bauarbeiten, Engstellen und Verschwenkungen	q3::inwork 21984,6317 22000,6245 22033,6144
@@ -715,8 +715,8 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2023-07-21 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2023-08-23 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
 Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086

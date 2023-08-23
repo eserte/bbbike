@@ -502,7 +502,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-08-17 vvv
+#: last_checked: 2023-08-22 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1582,13 +1582,15 @@ Verbundsteinpflaster	RW1; 12731,4841 12652,5006
 	RW1; 12731,4841 12819,4780 12916,4757
 	RW2; 12916,4757 12819,4780
 Radweg nur aufgemalt	RW2; 12819,4780 12731,4841
-	RW1;RW1 12916,4757 13001,4724 13056,4678 13266,4503 13305,4504
+	RW1; 12916,4757 12998,4715 13056,4678 13213,4565
+	RW1; 13266,4507 13305,4504
+	RW1; 13305,4504 13266,4507 13213,4565 13056,4678 12998,4715 12916,4757
 Verbundsteinpflasterradweg, in beide Richtungen befahrbar	RW1; 13305,4504 13394,4500
 	RW1; 13394,4500 13305,4504
 	RW1; 13394,4500 13485,4496 13571,4493 13671,4490
 Verbundsteinpflasterradweg, holprig	RW1; 13671,4490 13571,4493 13485,4496 13394,4500
 	RW1;RW1 13671,4490 13771,4485 13866,4481 14023,4475
-neues Verbundsteinpflaster	RW1; 14023,4475 14295,4462
+neues Verbundsteinpflaster, allerdings schon erste Unebenheiten	RW1; 14023,4475 14295,4462
 	RW1; 14295,4462 14023,4475
 	RW1;RW1 9512,6652 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527
 	RW1;RW1 10613,6437 10943,6498 11142,6535
@@ -1661,9 +1663,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 	RW1;RW2 14617,7243 14344,7003
 # 
 # REMOVED --- #: osm_watch: way id="679376891" version="11"
-	RW2;RW1 14239,6875 14153,6795 14147,6791
 # REMOVED --- #: osm_watch: way id="693065560" version="14"
-	RW1;RW1 14344,7003 14257,6895 14239,6875
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1021149.php (Verkehrsumstellung auf der Grenzallee, evtl. am 25.11.2020; außerdem wird die Bergiusstr. für den Kfz-Verkehr gesperrt (und später sowieso verlegt)) --- #: source_id: 2147343690 --- #: source_id: LMS-BR_r_LMS-BR_6571 (inaktiv) --- #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
@@ -1672,13 +1672,20 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 # REMOVED ---	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
 # REMOVED --- #: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten ---	RW2;RW8 14147,6791 14051,6731 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
-	RW2; 14147,6791 14051,6731 13932,6680
-	RW2; 13932,6680 14051,6731
-	RW1; 14051,6731 14147,6791
-	RW1;RW1 13932,6680 13882,6674 13786,6670 13712,6656
-	RW1; 13712,6656 13520,6583
+#: note: Grenzallee Richtung Westen
+	RW1; 14344,7003 14257,6895 14239,6875
+	RW2; 14239,6875 14153,6795 14147,6791 14051,6731 13932,6680
+	RW1; 13932,6680 13882,6674 13786,6670 13712,6656 13520,6583
+	RW2; 13520,6583 13455,6559
+#: note: Radwegschild wird hier nicht wiederholt
+	RW1; 13455,6559 13236,6489
+#: note: Grenzallee Richtung Osten
+	RW1; 13236,6489 13455,6559 13520,6583
 Gehwegplatten, Wurzelschäden	RW1; 13520,6583 13712,6656
-	RW2;RW1 13520,6583 13455,6559 13236,6489
+	RW1; 13712,6656 13786,6670 13882,6674 13932,6680
+	RW2; 13932,6680 14051,6731
+	RW1; 14051,6731 14147,6791 14153,6795 14239,6875 14257,6895 14344,7003
+# 
 	RW1; 12547,4391 12564,4308
 Verbundsteinpflaster	RW1; 12564,4308 12547,4391
 #: by: https://www.facebook.com/baustellen.berlin/posts/267573523691082 (Asphaltierung)
@@ -2261,10 +2268,11 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
+#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023)
 #: also_indoor: traffic (B[minor])
 #: last_checked: 2023-07-18
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-06-30
+#: next_check: 2022-10-13
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -6165,7 +6173,7 @@ Tempo 10	RW6;RW6 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
 	RW6;RW6 15561,386 15667,199 15783,72
 Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 # REMOVED --- Tempo 10	RW6;RW6 17116,7241
-	RW1;RW9 13098,4452 13266,4503
+	RW1;RW9 13098,4452 13225,4495 13266,4507
 	RW6;RW6 11496,3850 11484,3898 11494,3912 11479,3971 11458,3965 11471,3908 11484,3898
 	RW1;RW1 1552,3460 1576,3417
 # 
@@ -8195,7 +8203,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385498,52.446998,19.07.2023,07:00 (bis 24.07.2023) (inaktiv) (bis 31.07.2023) (inaktiv)
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
 #: source_id: viz2021:13.385551,52.447066,31.07.2023,11:00 (bis 17.08.2023) (inaktiv)
-#: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023)
+#: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv

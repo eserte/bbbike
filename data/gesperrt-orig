@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-08-07
+#: last_checked: 2023-08-23
 #: check_frequency: 90d
 #: next_check: 2023-12-22
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -1542,6 +1542,8 @@ Heerstr.: am Scholzplatz	2::igndisp -1581,11030 -1523,11012 -1448,11020
 # 
 Pichelsdorfer Str.	1 -3802,13303 -3836,13310
 Pichelsdorfer Str.	1 -3824,13350 -3802,13303
+# 
+Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -4342,7 +4344,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2023-08-14 vvv
+#: last_checked: 2023-08-23 vvv
 #: check_frequency: 60d vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -4715,7 +4717,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2023-07-30 (architektur-urbanistik)
+#: last_checked: 2023-08-22 (mapillary)
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
@@ -4959,9 +4961,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023) (bis 6.7.2023) (inaktiv) (bis 30.8.2023)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-08-13 (daf)
-#: check_frequency: 90d
-#: next_check: 2023-08-30
+#: last_checked: 2023-08-23
+#: check_frequency: 30d
+# REMOVED (wird länger dauern) --- #: next_check: 2023-08-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
@@ -4987,7 +4989,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: also_indoor: traffic
 #: last_checked: 2023-08-20
 #: check_frequency: 180d
-#: next_check: 2023-12-11
+#: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindestens bis Ende 2022, vermutlich länger	2:inwork 8106,13130 8102,13304 8099,13391
 # REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419

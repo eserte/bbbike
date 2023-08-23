@@ -2557,7 +2557,7 @@ Britzer Damm	H 12576,6374 12588,6337 12595,6299 12597,6293 12618,6207 12628,6166
 Lahnstr.	H 13085,6925 13265,6972
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: priority: #A vvv
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-08-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: -20230630
@@ -2583,8 +2583,8 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
-#: last_checked: 2023-07-21
-#: check_frequency: 90d
+#: last_checked: 2023-08-23
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 # REMOVED --- (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
 (provisorische Umfahrung)	NN 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
@@ -2751,7 +2751,7 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2023-07-11 vvv
+#: last_checked: 2023-08-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: 20140224-20230630
@@ -3150,7 +3150,9 @@ Alt-Britz	NN 12564,4308 12594,4324
 Alt-Britz	N 12594,4324 12678,4389 12836,4649 12916,4757 13018,5071 13045,5119 13239,5203 13250,5234
 Pätzer Str.	N 12885,5205 12963,5199 13045,5119
 Backbergstr.	N 12836,4649 12819,4780 12898,4974 13018,5071
-Fulhamer Allee	H 12731,4841 12819,4780 12916,4757 13001,4724 13056,4678 13266,4503
+Fulhamer Allee	H 12731,4841 12819,4780 12916,4757 12998,4715 13056,4678 13213,4565 13266,4507
+#: note: verschwenkter Radweg
+Fulhamer Allee	NN 13213,4565 13225,4495
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7902 (Umbenennung beabsichtigt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_03_0297_0360_online.pdf (Benennung einer Straße, Wirksamkeit zum 28. April 2023)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1316275.php (Benennung am 28.4.2023 um 14h)
@@ -3185,8 +3187,8 @@ Goldenes Horn	N 10563,3767 10586,4039 10601,4185 10614,4314
 Bosporusstr.	N 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
 Skutaristr.	N 10412,4552 10453,4518 10558,4394 10550,4320
 Blaschkoallee	H 12883,5257 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238 13594,5240 13607,5241 13809,5257
-Parchimer Allee	N 13098,4452 13266,4503
-Parchimer Allee	H 13266,4503 13305,4504 13394,4500 13485,4496 13571,4493 13671,4490 13771,4485 13866,4481 14023,4475
+Parchimer Allee	N 13098,4452 13225,4495 13266,4507
+Parchimer Allee	H 13266,4507 13305,4504 13394,4500 13485,4496 13571,4493 13671,4490 13771,4485 13866,4481 14023,4475
 Parchimer Allee	N 14023,4475 14295,4462 14343,4491 14398,4541 14427,4571 14466,4624 14475,4635
 Parchimer Allee	N 14466,4624 14454,4626 14425,4593 14427,4571
 Talberger Str.	N 13531,4152 13329,4294

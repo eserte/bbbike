@@ -33498,8 +33498,8 @@ EOF
 EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
-       until => $isodate2epoch->("2023-07-31 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 31.07.2023',
+       until => $isodate2epoch->("2023-08-25 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 25.08.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00', # mittlerweile bis 28.4.2023, inaktiv
        data  => <<EOF,
@@ -33508,6 +33508,7 @@ EOF
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1256599.php (ab 24.10.2022: Metzer Platz - Weißenburger Str.)
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1358805.php
 #: source_id: viz2021:13.19772,52.52281,24.10.2022,12:12 (bis 29.04.2023) (inaktiv)
 #: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023) (bis 26.05.2023) (inaktiv)
 #: source_id: bvg2021:m36#BVG279266_0
@@ -35500,8 +35501,8 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2023-09-14 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: kann wegen Bauarbeiten gesperrt sein, voraussichtlich bis Mitte September 2023',
+       until => $isodate2epoch->("2023-08-27 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       text  => 'Schubertstr.: kann wegen Bauarbeiten gesperrt sein, voraussichtlich bis 27.08.2023',
        #text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
@@ -35512,7 +35513,7 @@ EOF
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
 #: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 30.06.2023) (bis 01.08.2023)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 30.06.2023) (bis 01.08.2023) (bis 27.08.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -35524,7 +35525,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
 #: last_checked: 2023-08-19 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-09-14 vvv
+#: next_check: 2023-08-27 vvv
 # REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
@@ -39223,7 +39224,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
-#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023)
+#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023)
 #: XXX Wann sind die Straßen offen? vvv
 #: last_checked: 2023-08-21 vvv
 #: check_frequency: 60d vvv
@@ -39500,19 +39501,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-01-07 17:00:00"), # undef, # XXX
-       text  => 'Bürgerstr.: Bauarbeiten, Straße ist vom Britzer Damm verboten, bis 7.1.2024',
+       until => 1692817494, # $isodate2epoch->("2024-01-07 17:00:00"), # undef, # XXX
+       text  => 'Bürgerstr.: Bauarbeiten, Einfahrt vom Britzer Damm ist verboten, bis 7.1.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BUERGER-2023
-#: also_indoor: traffic (G,B,W)
+# REMOVED --- #: also_indoor: traffic (G,B,W)
 #: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024)
 #: source_id: bvg2021:m44#BVG326176_0
 #: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
 # REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
-#: last_checked: 2023-07-22
-#: check_frequency: 30d
-#: next_check: 2024-01-07
+# REMOVED (von Osten her explizites Radfahrer-frei-Schild, von Westen her geht's auch irgendwie) --- #: last_checked: 2023-08-23 --- #: check_frequency: 30d --- #: next_check: 2024-01-07
 	q4::inwork 12618,6207 12805,6248
 EOF
      },
@@ -39830,7 +39829,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BUERGER-2023
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2023-07-22
+#: last_checked: 2023-08-23
 	q3::inwork 12794,6407 12801,6377 12792,6358 12810,6348 12812,6343 12813,6334
 EOF
      },
@@ -40011,7 +40010,7 @@ EOF
        text  => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Wenckebachstr., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, vom 08.08.2023 07:00 bis 23.08.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023)
+#: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
 	q4::inwork 9417,6063 9339,6076 9321,6079 9212,6096
 EOF
      },
@@ -40059,6 +40058,7 @@ EOF
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
 #: source_id: bvg2021:269#BVG326513_0
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
@@ -40242,13 +40242,13 @@ EOF
      },
      { from  => 1692594000, # 2023-08-21 07:00
        until => 1694790000, # 2023-09-15 17:00
-       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., evtl. sind auch Radfahrer betroffen, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.402799,52.524086,22.08.2023,07:00', # nur Kfz-Verkehr betroffen, bis 15.09.2023
        data  => <<EOF,
-#: XXX Ist auch der Radverkehr betroffen?
+#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer
 #: also_indoor: traffic (G,B,W)
-#: next_check: 2023-08-22
+#: last_checked: 2023-08-22 (mapillary)
 	q4::inwork 10313,13227 10264,13097
 EOF
      },

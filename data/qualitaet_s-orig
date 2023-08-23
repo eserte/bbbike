@@ -8,8 +8,8 @@
 #: temporary vvv
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: last_checked: 2023-07-21
-#: check_frequency: 90d
+#: last_checked: 2023-08-23
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Neuköllnische Allee: welliger Asphalt	Q2 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
 # 
@@ -1130,9 +1130,12 @@ Colbestr.: Asphalt	Q0 14416,11815 14468,11992
 Colbestr.: Asphalt, einige Schlaglöcher	Q0- 14468,11992 14523,12183
 Kinzigstr.: Asphalt	Q0 14589,11975 14475,11778
 Waldeyerstr.: Kopfsteinpflaster	Q2 15058,12329 15003,12241
-#: by: Carsten (kcdr):
+#: by: Carsten (kcdr): vvv
+#: corrected_by: srt (neue Wurzelhebungen)
+Am Heidekampgraben: asphaltiert, einige Wurzelhebungen	Q0- 15053,7966 15030,7928 15025,7860 14975,7665 14989,7574 15042,7513 15054,7474 15132,7402 15176,7330 15168,7269 15187,7240
 #: confirmed_by: srt
-Am Heidekampgraben: asphaltiert	Q0 15053,7966 15030,7928 15025,7860 14975,7665 14989,7574 15042,7513 15054,7474 15132,7402 15176,7330 15168,7269 15187,7240 15204,7236 15262,7172 15270,7138 15322,7063 15367,7031 15408,6949 15470,6886 15489,6839 15532,6794 15615,6610 15595,6569 15587,6497 15578,6471 15557,6458 15516,6357 15505,6342 15496,6314 15437,6227 15403,6145 15397,6129 15393,6112 15358,6022
+Am Heidekampgraben: asphaltiert	Q0 15187,7240 15204,7236 15262,7172 15270,7138 15322,7063 15367,7031 15408,6949 15470,6886 15489,6839 15532,6794 15615,6610 15595,6569 15587,6497 15578,6471 15557,6458 15516,6357 15505,6342 15496,6314 15437,6227 15403,6145 15397,6129 15393,6112 15358,6022
+#: by: ^^^
 (Am Heidekampgraben - Dammweg): asphaltiert	Q0 15042,7513 15036,7551 15011,7593
 An der Güterbahn: grobes Verbundsteinpflaster	Q2 15351,1653 15205,1670
 An der Güterbahn: Parkweg	Q1 15205,1670 15110,1732 14986,1820
@@ -3678,7 +3681,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2023-04-29 (mapillary)
+#: last_checked: 2023-08-23
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -12456,7 +12459,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
-#: last_checked: 2023-08-14
+#: last_checked: 2023-08-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
