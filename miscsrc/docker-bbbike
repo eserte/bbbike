@@ -50,7 +50,7 @@ sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github] [--bbbike-args "..."]
 	 [--no-feature-pdf] [-no-feature-remote]
-	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt]
+	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag]
 
 Note that --install-suggests would install quite a lot...
 EOF
@@ -170,8 +170,10 @@ sub gui {
 
     my $docker_cmd;
 
+    my $docker_image = $opt{'docker-image'} // "$opt{dist}:$opt{distver}";
+
     my $dockerfile = <<EOF;
-FROM $opt{dist}:$opt{distver}
+FROM $docker_image
 EOF
     $dockerfile .= _dockerfile_invalidate_cache if $opt{'invalidate-apt'};
 
@@ -940,6 +942,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'feature-pdf' => 1,
 	       'feature-remote' => 1,
 	       'invalidate-apt' => 0,
+	       'docker-image' => undef,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -952,6 +955,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'feature-pdf!',
 	       'feature-remote!',
 	       'invalidate-apt!',
+	       'docker-image=s',
 	      )
 	or usage_gui;
     gui($doit, %opt);
