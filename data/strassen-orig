@@ -1416,7 +1416,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="15"
 #: priority: #C
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-25
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
@@ -1471,13 +1471,16 @@ Grunerstr.	HH 10849,12557 10783,12502
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1345953.php
 #: by: https://nitter.net/VIZ_Berlin/status/1680800745606774785#m
 #: by: https://www.berliner-woche.de/mitte/c-bauen/grunerstrasse-bis-ende-august-dicht_a387625
-#: source_id: bvg2021:248#BVG324714_0
-#: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023)
+#: source_id[expired]: bvg2021:248#BVG324714_0
+#: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023) (inaktiv)
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-08-17
-#: check_frequency: 90d
-#: next_check: 2023-08-25
-Grunerstr. [Radweg]	NN 10931,12622 10954,12604 10973,12611 11057,12715
+#: last_checked: 2023-08-26 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2023-08-25
+Grunerstr. [provisorischer Radweg]	NN 10973,12611 11057,12715
+Grunerstr. [Gehweg]	NN 10900,12546 10973,12611
+#: check_frequency ^^^
+#: last_checked ^^^
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
 Rathausstr. (Mitte)	N 10357,12356 10416,12394 10476,12432 10584,12507 10601,12521 10704,12595
 Rathausstr. (Mitte)	NN 10704,12595 10923,12779
@@ -1579,7 +1582,7 @@ Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
-#: last_checked: 2023-08-09
+#: last_checked: 2023-08-25
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Annenstr. (Mitte) [Wohngebiet]	N 11192,11429 11259,11391 11217,11288
@@ -11162,6 +11165,7 @@ Selkestr.	N 12685,7497 12703,7370
 Selkestr.	NN 12722,7261 12741,7224
 Selkestr.	N 12741,7224 12748,7177 12767,7110
 (Körnerpark)	NN 12703,7370 12722,7261
+#: alias: Grüner Weg
 Kirchhofweg	NN 11608,7267 11687,7284 12185,7381
 Hertzbergstr.	N 13416,7712 13423,7757 13441,7874 13474,8060
 Lohmühlenstr.	N 12897,9365 12987,9481 13058,9572 13127,9661 13156,9702 13190,9750 13251,9829 13302,9894 13311,9905 13333,9929
@@ -20455,7 +20459,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2023-07-18
+#: last_checked: 2023-08-25
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

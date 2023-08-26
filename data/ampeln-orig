@@ -62,7 +62,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 # 
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-26
 #: check_frequency: 120d
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
@@ -87,7 +87,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2023-07-27
+#: last_checked: 2023-08-25
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 #: valid: -20240701
@@ -323,7 +323,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-25
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -1603,7 +1603,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5477,9621
 	X 9701,11656
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50) vvv
-#: off: night (seen 2015-06-25)
+#: off: night (seen 2015-06-25, 2023-08-26 00:15)
 	X 14011,10812
 #: off: night (seen 2015-06-25)
 	F 14024,10861
@@ -1680,9 +1680,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
-#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55)
-#: off: night (seen 2015-06-25)
-#: off: night (seen 2018-02-01 00:25)
+#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15)
 	X 14134,11272
 	X 11785,13625
 	X 10904,17288
@@ -3275,7 +3273,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-08-22 vvv
+#: last_checked: 2023-08-26 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3769,7 +3767,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: MOLKENMARKT-2021
 #: XXX zurzeit erstreckt sich die Ampelanlage bis zur Einmündung der alten Grunerstr.; nach den Bauarbeiten bleibt vermutlich nur eine Fußgängerampel
 #: note: gilt nicht für Radfahrer Richtung Südwesten
-#: last_checked: 2023-08-01 (mapillary)
+#: last_checked: 2023-08-26
 #: check_frequency: 90d
 	X 10873,12577
 ################################################################################

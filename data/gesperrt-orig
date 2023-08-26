@@ -850,10 +850,8 @@ Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7
 #: note ^^^
 #: note: Mittelstreifen mit teilweise dichter Beparkung, sehr breite Straße, Straßentunnel vvv
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715
-#: next_check_id: MOLKENMARKT-2021
-# XXX später wiederherstellen: Grunerstr. (Richtungsfahrbahn)	1::igndisp 11057,12715 10951,12637 10931,12622
-#: last_checked: 2023-08-24
-Grunerstr. [Fahrbahn]: gesperrt	2::inwork 10931,12622 10951,12637 11057,12715
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11057,12715 10951,12637 10931,12622
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2023-08-24 --- Grunerstr. [Fahrbahn]: gesperrt	2::inwork 10931,12622 10951,12637 11057,12715
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10931,12622 10873,12577
 # REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10807,12451 10746,12364 10697,12303
 # REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10697,12303 10746,12364 10807,12451
@@ -3622,6 +3620,13 @@ Schranke, auf Gehweg umfahren	BNP:2::trailer=4 23537,15247
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1199037.php (bis Sommer 2023)
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/quartierspark-ritterstrasse-wird-auf-wunsch-der-anwohner-aufgehuebscht_a346061
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/schaeden-im-quartierpark-entdeckt_a355859
+#: last_checked: 2023-08-25
+# REMOVED --- #: next_check: 2023-07-15
+Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
+# 
 #: next_check_id: SAATWINKLER-2023
 #: last_checked: 2023-08-20 vvv
 #: check_frequency: 180d vvv
@@ -3664,7 +3669,7 @@ Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
 Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 # 
 #: next_check_id: YORCKSTRBR5-2023
-#: last_checked: 2023-08-20
+#: last_checked: 2023-08-25
 #: check_frequency: 90d
 #: next_check: 2023-09-30
 Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
@@ -3771,7 +3776,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 # 
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-08-26 vvv
 #: check_frequency: 180d vvv
 #: XXX laut osm gesperrt vvv
 #: osm_watch: way id="256450718" version="7"
@@ -3839,7 +3844,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-08-21
+#: last_checked: 2023-08-26
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3865,7 +3870,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="2"
-#: last_checked: 2023-07-01 (Baustraße existiert noch)
+#: last_checked: 2023-08-26 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4153,7 +4158,7 @@ Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesper
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2023-07-18 vvv
+#: last_checked: 2023-08-26 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-10 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4168,11 +4173,14 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 --- #: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?) --- #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)--- #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden--- #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr --- #: osm_watch: way id="25008069" version="15" --- #: last_checked: 2022-03-31 --- #: check_frequency: 90d --- # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 --- Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545 --- #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung) --- #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht --- #: osm_watch: way id="308312347" version="6" --- #: last_checked: 2022-11-30 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-08-15 --- Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 # 
-#: XXX bleibt die Absperrung dauerhaft?
+#: XXX Wird es nach den Bauarbeiten weiterhin eine Verbindung geben? (Auf den Visualisierung ist es nicht ausgeschlossen...)
+#: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=746476#post746476
+#: by: https://www.howoge.de/wohnungsbau/neubauprojekte/lueckstrasse.html (Fertigstellung Ende 2025)
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: last_checked: 2023-08-14
-#: check_frequency: 60d
+#: check_frequency: 180d
+#: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 # REMOVED (offen, dafür ist nun temporär die Anbindung an die Zobtener Str. verschwenkt) --- #: last_checked: 2021-05-23 vvv --- #: check_frequency: 14d vvv --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997 --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
@@ -4385,7 +4393,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 #: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX mittlerweile bis zur Georgenstr. ausgeweitet, check_frequency deswegen angepasst
-#: last_checked: 2023-08-22
+#: last_checked: 2023-08-26
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -4433,7 +4441,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="29"
 #: osm_watch: way id="289966097" version="16"
 #: priority: #A
-#: last_checked: 2023-08-24
+#: last_checked: 2023-08-26
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4495,7 +4503,7 @@ Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-25
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -4513,14 +4521,14 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-26
 #: check_frequency: 90d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-08-17 vvv
-Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611 10954,12604 10931,12622
-#: last_checked ^^^
+#: last_checked: 2023-08-17
+Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
+# REMOVED (Wegführung existiert nicht mehr) --- Grunerstr.: Radweg	1::igndisp 10973,12611 10954,12604 10931,12622
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 
@@ -4684,7 +4692,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="18"
-#: last_checked: 2023-07-21
+#: last_checked: 2023-08-25 (bahninfo-forum)
 #: next_check: 2023-09-01
 #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
@@ -4924,7 +4932,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
-#: last_checked: 2023-08-11
+#: last_checked: 2023-08-25
 #: check_frequency: 90d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
@@ -5304,7 +5312,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
 #: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2023-07-01
+#: last_checked: 2023-08-26
 #: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

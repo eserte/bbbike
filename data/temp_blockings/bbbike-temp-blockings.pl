@@ -16381,7 +16381,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-26
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -32573,7 +32573,7 @@ EOF
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-07-23 (architektur-urbanistik)
+#: last_checked: 2023-08-25
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -33512,6 +33512,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1358805.php
+#: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/pichelsdorfer-strasse-wieder-frei_a391148
 #: source_id: viz2021:13.19772,52.52281,24.10.2022,12:12 (bis 29.04.2023) (inaktiv)
 #: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00 (bis 28.04.2023) (bis 26.05.2023) (inaktiv)
 #: source_id: bvg2021:m36#BVG279266_0
@@ -35003,7 +35004,7 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-08-20 vvv
+#: last_checked: 2023-08-26 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
@@ -35505,9 +35506,9 @@ EOF
 EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2023-08-27 18:00:00"), # 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: kann wegen Bauarbeiten gesperrt sein, voraussichtlich bis 27.08.2023',
-       #text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, ggfs. außerhalb der Arbeitszeiten Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, möglicherweise ist die Hämmerlingstr. ab dem 21.3.2023 offen', # was: bis zum 25.5.2023', # Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 31.01.2023',
+       until => $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
+       dont_check_date => 1,
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
@@ -35517,27 +35518,31 @@ EOF
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
 #: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 30.06.2023) (bis 01.08.2023) (bis 27.08.2023)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (Hämmerlingstr. bis 15.6.2023 gesperrt)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (Hämmerlingstr. ab Ende Juni 2023 passierbar)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
+#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher))
-#: also_indoor: traffic (B[Schubert fehlt],G[falsch],H[Schubert fehlt],W[Schubert fehlt]) vvv
-# REMOVED --- #: add_fragezeichen: Kann man das Fahrrad hier wenigstens durchschieben? vvv
+#: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
+#: osm_watch: way id="794278028" version="10"
+#: osm_watch: way id="1181902719" version="1"
+#: also_indoor: traffic (H,G,B,W)
+#: priority: #A
 #: last_checked: 2023-08-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-08-27 vvv
-# REMOVED (hier nicht mehr) --- Am Bahndamm	2::inwork 21984,6317 22238,6195
+Hämmerlingstr.: Bauarbeiten, Engstellen und Verschwenkungen	q3::inwork 21984,6317 22000,6245 22033,6144
 Schubertstr.	2::inwork 21984,6317 21856,6390
-# REMOVED (temporär (?) nicht mehr) --- Hämmerlingstr.	2::inwork 21984,6317 22000,6245 22033,6144
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-# REMOVED --- #: add_fragezeichen ^^^
-#: also_indoor ^^^
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
@@ -37874,10 +37879,11 @@ EOF
 #: by: https://nitter.net/StefanB94551270/status/1617960021819797505#m
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (Wiederaufnahme des Straßenbahnbetriebs voraussichtlich am 4. September 2023)
 #: by: https://nitter.net/VIZ_Berlin/status/1683714580856311808#m
+#: by: https://www.bahninfo-forum.de/read.php?9,727655,776539#msg-776539
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
 #: also_indoor: traffic (H,G,W)
 #: priority: #B
-#: last_checked: 2023-08-21
+#: last_checked: 2023-08-25 (bahninfo-forum)
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-08-28
 	q4::inwork 17962,6674 17991,6431
 EOF
@@ -37991,7 +37997,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
 #: last_checked: 2023-06-04
@@ -39056,7 +39062,7 @@ EOF
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-26
 #: check_frequency: 120d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -39197,7 +39203,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TEMPELHOFERWEG-2023
-#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024) (bis 25.8.2023)
+#: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024) (bis 25.8.2023) (inaktiv)
 	q4::inwork; 12214,5554 12256,5591 12495,5659
 	q4::inwork; 12495,5659 12525,5510 12582,5232
 EOF
@@ -39321,7 +39327,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: note: vermutlich wird hier asphaltiert; Halteverbotsschilder bis 23.09.2023
-#: last_checked: 2023-08-20
+#: last_checked: 2023-08-26
 #: check_frequency: 60d
 #: next_check: 2023-09-23
 	q4::inwork 6182,12900 6347,12901 6449,12865 6575,12778
@@ -39374,7 +39380,7 @@ EOF
        until => $isodate2epoch->("2023-08-25 16:00:00"), # 1715349600, # 2024-05-10 16:00
        text  => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 25.08.2023',
        type  => 'gesperrt',
-       source_id => 'LS/221-E/23/077', # bis 10.05.2024 # bis 25.08.2023
+       source_id => 'LS/221-E/23/077', # bis 10.05.2024 # bis 25.08.2023 # inaktiv
        data  => <<EOF,
 	2::inwork -7332,66101 -7636,65571
 EOF
@@ -39698,10 +39704,10 @@ EOF
 EOF
      },
      { from  => 1690696800, # 2023-07-30 08:00
-       until => 1693058400, # 2023-08-26 16:00
+       until => 1693036434, # 1693058400, # 2023-08-26 16:00
        text  => 'Börnicke - Bernau: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 31.07.2023, 08:00 Uhr bis 26.08.2023,16:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-E/23/098',
+       source_id => 'LS/221-E/23/098', # inaktiv
        data  => <<EOF,
 	2::inwork 24956,29921 25361,29596
 EOF
@@ -40023,7 +40029,7 @@ EOF
        until => 1692972000, # 2023-08-25 16:00
        text  => 'Babelsberger Str.: Bauarbeiten zwischen Badensche Str. und Berliner Str., Fahrbahn gesperrt, vom 07.08.2023 07:00 bis 25.08.2023 16:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.33522,52.4859,07.08.2023,07:00',
+       source_id => 'viz2021:13.33522,52.4859,07.08.2023,07:00', # inaktiv
        data  => <<EOF,
 	q4::inwork 5782,8828 5783,9060
 EOF
@@ -40032,21 +40038,24 @@ EOF
        until => 1693065600, # 2023-08-26 18:00
        text  => 'Lanke - Stolzenhagen: Sperrung des Bahnübergang, evtl. sind auch Radfahrer betroffen, 21.08.2023 07:00 Uhr bis 26.08.2023 18:00 Uhr',
        type  => 'gesperrt',
-       source_id => '236001421',
+       source_id => '236001421', # inaktiv
        data  => <<EOF,
 	2::inwork 14701,40362 15007,40331 15221,40317
 EOF
      },
      { from  => 1691485200, # 2023-08-08 11:00
-       until => 1694617200, # 2023-09-13 17:00
-       text  => 'Friedrichstr.: Bauarbeiten zwischen Reinhardstr. und Schiffbauerdamm, auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Ziegelstr., vom 09.08.2023 11:00 bis 13.09.2023 17:00',
+       until => $isodate2epoch->("2023-10-01 17:00:00"), # 1694617200, # 2023-09-13 17:00
+       postwarn_days => 18,
+       text  => 'Friedrichstr.: Bauarbeiten zwischen Reinhardstr. und Schiffbauerdamm, auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Ziegelstr., vom 09.08.2023 11:00 bis 13.09.2023 17:00, evtl. länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ORANIENBURGERTORTRAM-2022
 #: by: https://viz.berlin.de/2023/08/verkehrsvorschau-090823/ (Umleitung für Radverkehr via "Am Zirkus") (confirmed by srt, ausgeschildert)
 #: by: https://nitter.net/VIZ_Berlin/status/1689185998544994306#m
+#: by: https://www.bahninfo-forum.de/read.php?9,751033,776461#msg-776461 (Tram fährt mindestens bis zum 1.10.2022 nicht, evtl. wegen dieser Baustelle?)
 #: source_id: viz2021:13.387693,52.523668,09.08.2023,11:00 (bis 13.09.2023)
 # REMOVED --- #: XXX Einschränkungen dokumentieren
+#: priority: #A
 #: last_checked: 2023-08-11 (mapillary) vvv
 #: next_check: 2023-09-13 vvv
 Friedrichstr.	q4::inwork; 9262,13111 9269,13060 9279,12953
@@ -40065,17 +40074,18 @@ EOF
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
 #: source_id: bvg2021:269#BVG326513_0
+#: source_id: bvg2021:63#BVG326792_0
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
 EOF
      },
      { from  => 1691557200, # 2023-08-09 07:00
-       until => 1692975600, # 2023-08-25 17:00
-       text  => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., eventuell auch für Radfahrer relevant, vom 10.08.2023 07:00 bis 25.08.2023 17:00',
+       until => $isodate2epoch->("2023-09-08 17:00:00"), # 1692975600, # 2023-08-25 17:00
+       text  => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., eventuell auch für Radfahrer relevant, vom 10.08.2023 07:00 bis 08.09.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.432829,52.557277,10.08.2023,07:00',
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1689554678986813440#m (hier nur Kfz-Verkehr)
+#: source_id: viz2021:13.432829,52.557277,10.08.2023,07:00 (bis 25.08.2023) (bis 08.09.2023)
 	q4::inwork 12226,16757 12257,16876
 EOF
      },
@@ -40227,7 +40237,7 @@ EOF
        until => 1692975600, # 2023-08-25 17:00
        text  => 'Klärwerkstr.: Brückenarbeiten, Radfahrer sollen schieben, vom 21.08.2023 08:00 bis 25.08.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.232853,52.528921,21.08.2023,08:00',
+       source_id => 'viz2021:13.232853,52.528921,21.08.2023,08:00', # inaktiv
        data  => <<EOF,
 	q4::inwork -1284,13340 -1258,13552
 EOF
@@ -40245,7 +40255,7 @@ EOF
        until => 1693000740, # 2023-08-25 23:59
        text  => 'Guerickestr.: Bauarbeiten zwischen Cauerstr. und Galvanistr., evtl. sind auch Radfahrer betroffen, vom 21.08.2023 06:00 bis 25.08.2023 23:59',
        type  => 'handicap',
-       source_id => 'viz2021:13.31767,52.51783,21.08.2023,06:00',
+       source_id => 'viz2021:13.31767,52.51783,21.08.2023,06:00', # inaktiv
        data  => <<EOF,
 	q4::inwork 4358,12365 4520,12358
 EOF
@@ -40258,7 +40268,7 @@ EOF
        data  => <<EOF,
 #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-08-22 (mapillary)
+#: last_checked: 2023-08-26
 	q4::inwork 10313,13227 10264,13097
 EOF
      },

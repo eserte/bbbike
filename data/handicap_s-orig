@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: KARLMARXALLEE-2023
+#: last_checked: 2023-08-26
+#: check_frequency: 90d
+#: next_check: 2023-11-30
+Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
+# 
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # 
 #: next_check_id: NIEMANN-2023
@@ -258,10 +264,11 @@ Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesp
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-08-17 vvv
+#: last_checked: 2023-08-26 vvv
 #: check_frequency: 90d vvv
-Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
 Grunerstr.: Radweg auf Gehweg	q1 10973,12611 11057,12715
+Grunerstr.: Gehweg	q3 10900,12546 10973,12611
+# REMOVED --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -321,7 +328,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-08-24
+#: last_checked: 2023-08-26
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -338,7 +345,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
-#: last_checked: 2023-08-24
+#: last_checked: 2023-08-25
 #: check_frequency: 90d
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 # 
@@ -416,7 +423,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-08-22 vvv
+#: last_checked: 2023-08-26 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -578,33 +585,6 @@ Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 188
 # REMOVED --- #: XXX siehe auch aufgehobene Einbahnstraßenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag --- #: last_checked: 2013-06-11 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 # 
 ### Köpenick ###
-# 
-#: next_check_id: HAEMMERLING-2022
-#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (hier bis 15.6.2023)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (ab Ende Juni 2023 passierbar)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
-#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
-#: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
-#: osm_watch: way id="794278028" version="10"
-#: osm_watch: way id="1181902719" version="1"
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) vvv
-#: also_indoor: traffic (H,G,B,W) vvv
-#: priority: #A vvv
-#: last_checked: 2023-08-19 vvv
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-09-14 vvv
-#: next_check: 2023-08-27 vvv
-#: valid: 20230325-20230827 vvv
-# REMOVED --- Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q4::inwork 21984,6317 22000,6245
-# REMOVED --- Hämmerlingstr.: Fahrbahn unter der Eisenbahnbrücke gesperrt, sehr enger Gehweg existiert, ggfs. schieben	q3::inwork 22000,6245 22033,6144
-Hämmerlingstr.: Bauarbeiten, Engstellen und Verschwenkungen	q3::inwork 21984,6317 22000,6245 22033,6144
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: also_indoor ^^^
-#: source_id ^^^
 # 
 # REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
