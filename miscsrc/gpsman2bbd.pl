@@ -233,6 +233,7 @@ EOF
 	my $event;   # dito
 	my %brand;   # vehicle -> brand
 	my $with;    # remember with persons across chunks
+	my $device;  # remember device
 
     GPSMAN_CHUNK:
 	for my $gps (@{ $gps_multi->Chunks }) {
@@ -275,6 +276,10 @@ EOF
 		    }
 		}
 
+		if ($gps->TrackAttrs->{"srt:device"}) {
+		    $device = $gps->TrackAttrs->{"srt:device"};
+		}
+
 		if ($gps->TrackAttrs->{"srt:event"}) {
 		    $event = $gps->TrackAttrs->{"srt:event"};
 		}
@@ -291,7 +296,7 @@ EOF
 	    my $push_streets = sub {
 		if (@street_coords) {
 		    my $name = $base;
-		    if ($vehicle) { # XXX yes? no? && $vehicle ne 'bike') {
+		    if ($vehicle) { # XXX make configurable?
 			$name .= " ($vehicle";
 			if ($brand) {
 			    $name .= "/$brand";
@@ -303,6 +308,9 @@ EOF
 			    $name .= "/$with";
 			}
 			$name .= ")";
+		    }
+		    if ($device) { # XXX make configurable?
+			$name .= " ($device)";
 		    }
 		    $s->push([$name, [@street_coords], $scat[$last_is_inaccurate]]);
 		    @street_coords = ();
