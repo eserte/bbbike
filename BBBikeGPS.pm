@@ -688,6 +688,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my @pos2vehicle;
     my $brand;
     my %brand; # per vehicle
+    my $device;
     my $first_date;
     foreach my $chunk (@{ $gps->Chunks }) {
 	my $is_route = $chunk->Type == GPS::GpsmanData::TYPE_ROUTE();
@@ -718,6 +719,10 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    if (defined $vehicle and defined $brand) {
 		$brand{$vehicle} = $brand;
 	    }
+	}
+
+	if ($trackattrs->{"srt:device"}) {
+	    $device = $trackattrs->{"srt:device"};
 	}
 
 	$is_new_chunk = 1;
@@ -842,6 +847,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				    (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
 				    (defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
 				    (defined $vehicle ? ", vehicle=$vehicle" . (defined $brand ? "/$brand" : "") : "") .
+				    (defined $device ? ", device=$device" : "") .
 				    "]";
 				$first_date = $date if !defined $first_date;
 				my $c1 = "$last_x,$last_y";
