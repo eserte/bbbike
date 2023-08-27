@@ -395,7 +395,8 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libclass-accessor-perl libarchive-zip-perl \
 		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
 		libyaml-perl libyaml-syck-perl libjson-xs-perl \
-		libtext-unidecode-perl libdata-compare-perl agrep
+		libtext-unidecode-perl libdata-compare-perl agrep \
+		pkwalify
 DEB_MISC=	libdate-calc-perl libdatetime-perl libimage-exiftool-perl \
 		libgeo-metar-perl libtext-csv-xs-perl libxml2-utils libdb-file-lock-perl \
 		libarray-heap-perl
@@ -406,14 +407,20 @@ DEB_APACHE=	apache2
 DEB_MAPSERVER=	mapserver-bin cgi-mapserver
 
 # Debian packages from own repo
-# Available from
+# Please add something like this (please replace $codename by something like "bookworm", "jammy" etc.)
 #
-#    deb http://mydebs.bbbike.de squeeze main
+#    deb http://mydebs.bbbike.de $codename main
+#
+# to a file a /etc/apt/sources.list.d/mydebs.bbbike.list
+#
+# On ubuntu systems you can run instead
+# 
+#    add-apt-repository ppa:eserte/bbbike
 #
 OWN_DEB=	libapache-session-counted-perl libpalm-palmdoc-perl \
 		libgd-svg-perl libgeo-spacemanager-perl \
 		libgeo-distance-perl libgeo-distance-xs-perl \
-		libobject-iterate-perl libkwalify-perl libcdb-file-perl \
+		libobject-iterate-perl libcdb-file-perl \
 		libgeo-coder-bing-perl libgeo-coder-googlev3-perl libgeo-coder-osm-perl \
 		libgeo-proj4-perl
 
