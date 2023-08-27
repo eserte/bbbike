@@ -6169,7 +6169,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: also_indoor: traffic (none)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-08-04 (mapillary)
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6781,19 +6781,7 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
          'type' => 'handicap',
          'until' => 1697814000
        },
-       {
-         'data' => '#: last_checked: 2023-08-11
-#: check_frequency: 30d
-#: next_check: 2023-09-30
-	q4::inwork 11139,12243 11155,12184
-',
-         'from' => 1685639599,
-         'id' => 3803,
-         'source_id' => 'viz2021:13.414599,52.516503,02.11.2022,08:00',
-         'text' => 'Littenstr.: Fahrbahn an der Stralauer Str. gesperrt, voraussichtlich bis 30.9.2023',
-         'type' => 'handicap',
-         'until' => 1696086000
-       },
+       undef,
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
@@ -6962,7 +6950,8 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
        },
        undef,
        {
-         'data' => '#: next_check: 2023-08-31
+         'data' => '#: last_checked: 2023-08-27
+#: next_check: 2023-08-31
 	q3::inwork 12632,12630 12690,12769
 ',
          'from' => 1687406400,
@@ -7107,7 +7096,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023
-#: last_checked: 2023-08-05 (mapillary)
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151 11750,16116
@@ -7201,7 +7190,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 ',
          'from' => 1690196400,
          'id' => 3865,
-         'text' => 'Schillerstr.: Wasserrohrbruch, zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
+         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
          'type' => 'handicap',
          'until' => 1697814000
        },
@@ -7312,9 +7301,11 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
+#: by: https://viz.berlin.de/2023/08/bahnhofstr/
 #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
+#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023)
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
 ',
@@ -7469,9 +7460,9 @@ Margaretenstr.	q3::inwork 17006,11391 16948,11409
        undef,
        undef,
        {
-         'data' => '#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer
+         'data' => '#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-08-26
+#: last_checked: 2023-08-27
 	q4::inwork 10313,13227 10264,13097
 ',
          'from' => 1692594000,

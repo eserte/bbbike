@@ -878,6 +878,8 @@ Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10203,17478
 Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10502,17286
 Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
+Brixener Str.: Asphalt	Q0 10507,17400 10502,17286 10498,17192
+Brixener Str.: Asphalt, einige Querrillen	Q0- 10498,17192 10497,17095
 # REMOVED (weitgehend fertig) --- #: next_check_id: HELMERDINGSTR-2018 --- #: XXX wird nach den Bauarbeiten die Qualität besser sein? --- #: source_id: 2147342929 --- #: priority: #B --- #: last_checked: 2018-11-02 --- # REMOVED --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2018-10-31
 Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
@@ -1490,9 +1492,9 @@ Hofzeichendamm: Asphalt	Q0 16229,23150 16243,23174 16141,23243 16122,23219
 Hofzeichendamm: Verbundsteine	Q0 16594,22903 16543,22942 16315,23094
 Krontaler Str.: Kopfsteinpflaster	Q2 13884,22879 13976,22813 14109,22714
 Grüntaler Str.: Kopfsteinpflaster	Q2 9778,16915 9744,16875 9611,16741 9516,16639 9514,16603
-Grüntaler Str.: Kopfsteinpflaster	Q2 9736,16919 9719,16904 9579,16770 9448,16638 9442,16610 9436,16572 9301,16439 9178,16317
-#: historical_note: früher (bis Frühjahr 2023) hier auch Kopfsteinpflaster, Q2
-Grüntaler Str.: Asphalt	Q0 9178,16317 9148,16282
+Grüntaler Str.: Kopfsteinpflaster	Q2 9736,16919 9719,16904 9579,16770 9448,16638 9442,16610 9436,16572 9301,16439 9193,16331
+#: historical_note: früher (bis Frühjahr/Sommer 2023) hier auch Kopfsteinpflaster, Q2
+Grüntaler Str.: Asphalt	Q0 9193,16331 9178,16317 9148,16282
 Grüntaler Str.: Kopfsteinpflaster	Q2 9148,16282 8986,16092
 Grüntaler Str.: Kopfsteinpflaster	Q2 9744,16875 9719,16904
 Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8774,9534 8679,9544
@@ -1815,7 +1817,10 @@ Ystader Str.: Kopfsteinpflaster	Q2 10365,15902 10355,15946
 Ystader Str.: Asphalt	Q0 10418,15704 10391,15800 10365,15902
 #: by: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/asphalt01.shtml
 Esplanade: asphaltiert	Q0 10971,16907 10936,16892 10886,16893
-Esplanade: Kleinsteinpflaster	Q2+ 10886,16893 10655,16904
+Esplanade: schadhafter Asphalt	Q1 10490,16914 10569,16910
+Esplanade: Asphalt mit leichten Schäden	Q0- 10569,16910 10655,16904
+Esplanade: Kleinsteinpflaster	Q2+ 10655,16904 10854,16895
+Esplanade: Kopfsteinpflaster	Q2 10854,16895 10886,16893
 Glinkastr.: Asphalt	Q0+ 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5936,10147
 # REMOVED --- #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas? Gibt es während der Bauarbeiten Einschränkungen? vvv --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php --- #: next_check: 2018-05-28 vvv
@@ -7087,7 +7092,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="17"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2023-03-08 (mapillary)
+#: last_checked: 2023-03-12 (mapillary)
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -11140,7 +11145,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2023-07-03
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -11833,7 +11838,8 @@ Rainweg: Verbundsteinpflaster	Q1 25028,-2846 25113,-2797
 (Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0- 7879,13438 7837,13499 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0- 7775,13540 7666,13479 7653,13480
 Finckensteinallee: glatte Pflasterung	Q1- 4115,2726 4104,2749 4071,2763
-Brixener Str.: Asphalt mit einigen Schäden	Q1 10493,16960 10495,17022 10497,17095
+#: historical_note: früher: Asphalt mit einigen Schäden, Q1
+Brixener Str.: Asphalt	Q0 10493,16960 10495,17022 10497,17095
 Zypressenweg: unbefestigte Straße	Q2 10685,23707 10603,23870
 Lebensbaumweg: unbefestigte Straße	Q2 10708,23696 10759,23597
 Mispelweg: unbefestigte Straße	Q2 10747,23718 10797,23620
@@ -12305,7 +12311,7 @@ Grenzweg: Verbundsteinpflaster	Q1 21101,19448 21289,19147 21328,19049
 Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1- 21553,17701 21542,17632 21535,17550
 (Fürstenwalder Allee - Ahornstr.): provisorische Baustraße, holprig und teilweise sandig	Q3+ 33111,3064 33085,2974 33002,2826
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): Verbundsteinpflaster	Q1 3218,8233 3218,8223 3212,8107 3206,7988 3198,7787 3183,7563
-(entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10172,20142 10157,20128 10098,20113
+(entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10172,20142 10157,20128 10095,20108
 (entlang der Siemensbahn): gepflastert	Q2 778,14713 739,14723 547,14880 537,14919
 (Alt-Biesdorf - Schloss Biesdorf): Kopfsteinpflaster	Q2 20764,11675 20825,11732
 (Alt-Biesdorf - Schloss Biesdorf): Kleinsteinpflaster	Q1 20825,11732 20831,11777
@@ -13260,6 +13266,8 @@ Havelwerke - Zitadellenweg: Kleinsteinpflaster	Q2 -1985,14916 -2002,14861 -2006,
 (Zitadellenpark - Zitadellenweg): Verbundsteinpflaster	Q1+ -2193,14799 -2127,14798
 (Zitadellenpark - Zitadellenweg): Asphalt	Q0 -2127,14798 -2006,14811
 # 
+Uhlandstr.: Asphalt mit einigen leichten Schäden	Q0- 9120,20015 9255,20038 9372,20065 9754,20134 10072,20188
+# 
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -13779,7 +13787,7 @@ Mönchsheimer Str.: Asphalt, etwas wellig	Q0- 30398,4095 30243,4143
 Siegmarstr.: guter Asphalt	Q0 21853,13784 21870,13852 21885,13954 21918,14219 21940,14413
 #: confirmed_by: srt
 Siegmarstr.: guter Asphalt	Q0- 21940,14413 21948,14501
-Heinrich-Böll-Str.: Asphalt	Q0 10178,20525 10251,20252 10223,20229 10068,20188
+Heinrich-Böll-Str.: Asphalt	Q0 10178,20525 10251,20252 10223,20229 10072,20188
 #: corrected_by: srt (Beton -> )
 Galileistr.: Kleinsteinpflaster	Q2+ 15692,8198 15443,8458
 #: corrected_by: srt (mäßiges -> ...)
@@ -15294,7 +15302,8 @@ Waldstr. (Niederschönhausen): asphaltiert	Q0 9832,19885 9824,19910
 #: corrected_by: srt (asphaltiert -> ...)
 Waldstr. (Niederschönhausen): asphaltiert, einige umfahrbare Schlaglöcher	Q0- 9824,19910 9788,20035
 #: confirmed_by: Uta Voigt:
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
+#: corrected_by: srt (asphaltiert, Q0 -> ...)
+Waldstr. (Niederschönhausen): asphaltiert, einige leichte Schäden	Q0- 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
 #: by: ^^^
 # 
 #: by: Raik:
@@ -16266,7 +16275,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
-#: last_checked: 2023-07-03
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -17699,7 +17708,7 @@ Walporzheimer Str.: Kleinsteinpflaster	Q1- 2904,24993 2910,24953 2938,24894 2980
 Skladanowskystr.: schlechtes Kopfsteinpflaster	Q3 9690,19630 9588,19511
 Skladanowskystr.: Beton	Q1 9562,19529 9408,19470 9231,19440
 #: confirmed_by: srt
-Wilhelm-Wolff-Str.: schlechtes Kopfsteinpflaster	Q3 9781,19550 9688,19440 9453,19383 9249,19351 9123,19329
+Wilhelm-Wolff-Str.: schlechtes Kopfsteinpflaster	Q3 9781,19550 9694,19435 9453,19383 9249,19351 9123,19329
 #: by: ^^^
 # 
 #: by: Hans-Peter Thurau:
@@ -18759,9 +18768,9 @@ Amalienpark: schlechtes Kopfsteinpflaster	Q3 10958,18512 10905,18671
 #: confirmed_by: albrecht_martina, srt:
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9289,19947 9408,19968 9788,20035
 #: corrected_by: srt (guter Asphalt -> ...)
-Eichenstr. (Niederschönhausen): Asphalt mit leichten Schäden	Q1+; 9788,20035 10106,20093
+Eichenstr. (Niederschönhausen): Asphalt mit leichten Schäden	Q1+; 9788,20035 10104,20092
 #: confirmed_by: srt
-Eichenstr. (Niederschönhausen): guter Asphalt	Q0; 10106,20093 9788,20035
+Eichenstr. (Niederschönhausen): guter Asphalt	Q0; 10104,20092 9788,20035
 #: note: laut ADFC-Karte gut geeignet
 #: confirmed_by: mianos@...
 #: corrected_by: srt (asphaltiert, Q0- -> ...)
@@ -30804,7 +30813,8 @@ Nordendstr.: Asphalt	Q0 8442,19980 8402,19959
 #: by: ^^^
 # 
 #: by: Jacqueline Naber-Siemon, Peter Scherbarth [AM] vvv
-Nordendstr.: Asphalt	Q0 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9717,20501 9615,20469 9498,20435 9324,20386
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Nordendstr.: Asphalt, einige leichte Schäden	Q0- 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9717,20501 9615,20469 9498,20435 9324,20386
 #: corrected_by: srt (Asphalt, Q0 -> ...)
 Nordendstr.: Asphalt, einige Schäden	Q1+ 9324,20386 9209,20361 9149,20336
 #: by: ^^^
@@ -32541,4 +32551,10 @@ Kreuzungsbereich asphaltiert	Q0 556,10122
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6399,12673
 Einmündungsbereich asphaltiert	Q0 -4390,14257
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- -434,10964
+Einmündungsbereich asphaltiert	Q1+ 9781,19550
+Einmündungsbereich asphaltiert	Q1+ 9690,19630
+Einmündungsbereich asphaltiert	Q1+ 9565,19751
+Kreuzungsbereich asphaltiert	Q0 10502,17286
+Einmündungsbereich mit Kleinsteinpflaster	Q2+ 10655,16904
+Einmündungsbereich asphaltiert	Q0 10886,16893
 #: ignore ^^^

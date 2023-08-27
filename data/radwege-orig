@@ -932,7 +932,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-08-15
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2019,7 +2019,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-08-17 vvv
+#: last_checked: 2023-08-27 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234
 provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
@@ -2761,7 +2761,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-08-26
+#: last_checked: 2023-08-27
 #: check_frequency: 90d
 #: next_check: 2025-01-01
 	RW2; 12543,11521 12645,11673
@@ -2801,7 +2801,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-08-24
+#: last_checked: 2023-08-27
 #: check_frequency: 90d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -4440,9 +4440,6 @@ Gehweg für Radfahrer frei	RW1; 4812,21737 4887,21944
 #: note: ab Brücke bis Cyclopstr. wurde ein Stück Verbundsteinpflasterradweg gebaut
 Gehweg für Radfahrer frei	RW1; 4887,21944 4812,21737
 Gehweg für Radfahrer frei	RW1;RW1 4887,21944 4925,22022
-Verbundsteinpflaster	RW1; 9513,17600 9469,17560 9461,17554 9394,17498 9349,17451 9228,17274 9170,17161 9144,17108 9082,16982
-	RW1; 9082,16982 9144,17108 9170,17161 9228,17274 9349,17451 9394,17498 9461,17554 9469,17560 9513,17600
-Radweg nur aufgemalt	RW1;RW1 9082,16982 9033,16862 9030,16853 9008,16799 8952,16666
 Verbundsteinpflaster	RW2;RW2 10354,14987 10372,14994 10515,15045 10618,15076
 Verbundsteinpflaster	RW2;RW1 10618,15076 10881,15047
 #: by: laut bln.verkehr-Artikel und Joern (js):
@@ -6207,8 +6204,8 @@ asphaltiert, die letzten Meter werden auf der Fahrbahn geführt	RW1; 14805,10518 
 	RW3; 14797,10476 14805,10518
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080912.1205.109026.html
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20100528.1010.297121.html
-	RW4;RW4 9791,19363 9688,19440
-	RW3;RW3 9688,19440 9588,19511 9562,19529 9468,19599
+	RW4;RW4 9791,19363 9704,19428 9694,19435
+	RW3;RW3 9694,19435 9588,19511 9562,19529 9468,19599
 	RW4;RW4 9468,19599 9404,19691
 	RW3;RW3 9404,19691 9349,19782
 asphaltiert	RW2; 24049,5380 23942,5338
@@ -6435,29 +6432,6 @@ Gehweg für Radfahrer frei, asphaltiert, sehr breit und wenig frequentiert	RW1; 1
 	RW3; 11931,19965 11963,20136 11984,20246 12000,20327
 	RW4; 12000,20327 12008,20368
 	RW6;RW6 10267,20193 10286,20209 10310,20213 10327,20149 10282,20137
-	RW3; 9721,17806 9660,17736
-asphaltiert	RW1; 9660,17736 9721,17806
-	RW3;RW3 9660,17736 9618,17693 9586,17665 9544,17629
-	RW3; 8952,16666 8921,16578
-	RW3; 8921,16578 8776,16268
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11693 (Antrag)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
-#: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
-#: last_checked: 2023-06-24 vvv
-# REMOVED --- #: check_frequency: 60d vvv
-#: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="27"
-	RW3; 8776,16268 8921,16578
-#: osm_watch: way id="761539110" version="12"
-die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 	RW6;RW6 13402,2719 13510,2690 13566,2673
 	RW6;RW6 13348,2588 13376,2631 13402,2719 13430,2837
 	RW6;RW6 10968,3599 10866,3611
@@ -6722,9 +6696,44 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
 	RW6;RW6 21473,10369 21546,10352
 	RW6;RW6 21542,10398 21549,10377 21546,10352 21548,10329
-	RW3;RW4 9721,17806 9787,17880 9818,17921 9858,17967
-	RW3;RW3 9858,17967 9978,18104 10027,18165
-	RW2;RW3 10027,18165 10089,18180
+# 
+#: note: Prinzenallee, Wollankstr. Richtung Norden
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11693 (Antrag)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
+#: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
+#: last_checked: 2023-08-27 vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2020-10-01 vvv
+#: osm_watch: way id="162965650" version="27"
+	RW3; 8776,16268 8921,16578
+#: osm_watch: way id="761539110" version="12"
+die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+Radweg nur aufgemalt	RW1; 8952,16666 9008,16799 9030,16853 9033,16862 9082,16982
+Verbundsteinpflaster	RW1; 9082,16982 9144,17108 9170,17161 9228,17274 9349,17451 9394,17498 9461,17554 9469,17560 9513,17600
+	RW3; 9513,17600 9544,17629 9586,17665 9618,17693 9660,17736
+asphaltiert	RW1; 9660,17736 9721,17806
+	RW3; 9721,17806 9787,17880 9818,17921
+	RW4; 9818,17921 9858,17967
+	RW3; 9858,17967 9978,18104 10027,18165
+#: historical_note: früher benutzungspflichtig
+	RW1; 10027,18165 10089,18180
+# 
+#: note: Wollankstr., Prinzenallee Richtung Süden
+	RW3; 10089,18180 10027,18165 9978,18104 9858,17967
+	RW4; 9858,17967 9818,17921 9787,17880 9721,17806
+	RW3; 9721,17806 9660,17736 9618,17693 9586,17665 9544,17629 9513,17600
+Verbundsteinpflaster	RW1; 9513,17600 9469,17560 9461,17554 9394,17498 9349,17451 9228,17274 9170,17161 9144,17108 9082,16982
+Radweg nur aufgemalt	RW1; 9082,16982 9033,16862 9030,16853 9008,16799 8952,16666
+	RW3; 8952,16666 8921,16578 8776,16268
+# 
 Gehweg für Radfahrer frei	RW1; 10089,18180 10054,18210
 Radweg nur aufgemalt, kein Abstand zu parkenden Autos	RW1; 10054,18210 9905,18329
 	RW6;RW6 16594,22903 16543,22942 16315,23094
@@ -7202,7 +7211,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-08-05 (mapillary) vvv
+#: last_checked: 2023-08-27 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7299,13 +7308,13 @@ asphaltiert	RW1;RW9 -1872,24336 -1953,24435 -1982,24514
 	RW3; 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 	RW4; 10195,19703 10182,19746
 asphaltiertes Straßenbahnkap	RW2; 10182,19746 10167,19797
-	RW4; 10167,19797 10156,19860 10134,19981 10117,20065 10106,20093 10098,20113 10068,20188
-asphaltiertes Straßenbahnkap	RW2; 10068,20188 10067,20254
-	RW4; 10067,20254 10066,20323 10064,20437
+	RW4; 10167,19797 10156,19860 10134,19981 10120,20064 10104,20092 10095,20108 10078,20140 10072,20188
+asphaltiertes Straßenbahnkap	RW2; 10072,20188 10069,20254
+	RW4; 10069,20254 10066,20323 10064,20437
 	RW2; 10064,20437 10066,20494
-	RW4; 10066,20494 10064,20437 10066,20323 10067,20254
-asphaltiertes Straßenbahnkap	RW2; 10067,20254 10068,20188
-	RW4; 10068,20188 10098,20113 10106,20093 10117,20065 10134,19981 10156,19860
+	RW4; 10066,20494 10064,20437 10066,20323 10069,20254
+asphaltiertes Straßenbahnkap	RW2; 10069,20254 10072,20188
+	RW4; 10072,20188 10078,20140 10095,20108 10104,20092 10120,20064 10134,19981 10156,19860
 asphaltiertes Straßenbahnkap	RW2; 10156,19860 10167,19797
 	RW4; 10167,19797 10182,19746 10195,19703 10224,19628
 	RW6;RW6 8597,21879 8626,21892 8704,21858 8725,21910 8737,21942

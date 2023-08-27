@@ -12518,7 +12518,7 @@ EOF
        text  => 'B 273 A 11 - Wandlitz zw. Abzw. Bernau und Wandlitz Rückau u. Erneuerung B273 Vollsperrung 18.08.2008-30.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 16953,35907 16653,35993 16424,36152 16132,36512 15491,37176 15387,37252 15201,37349 14948,37315 14703,37197 14470,37191 13546,37474
+	2::inwork 16953,35907 16653,35993 16424,36152 16174,36457 15491,37176 15387,37252 15201,37349 14948,37315 14703,37197 14470,37191 13546,37474
 EOF
      },
      { from  => 1218924000, # 2008-08-17 00:00
@@ -15549,7 +15549,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013876',
        data  => <<EOF,
-	q4::inwork; 9349,19782 9404,19691 9468,19599 9562,19529 9588,19511 9688,19440 9791,19363
+	q4::inwork; 9349,19782 9404,19691 9468,19599 9562,19529 9588,19511 9694,19435 9704,19428 9791,19363
 EOF
      },
      { from  => 1249365600, # 2009-08-04 08:00
@@ -27219,7 +27219,7 @@ EOF
        data  => <<EOF,
 #: note: vmz meint Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
-	q3::inwork; 10066,20494 10064,20437 10066,20323 10067,20254 10068,20188 10098,20113 10106,20093 10117,20065 10134,19981 10156,19860 10167,19797
+	q3::inwork; 10066,20494 10064,20437 10066,20323 10069,20254 10072,20188 10078,20140 10095,20108 10104,20092 10120,20064 10134,19981 10156,19860 10167,19797
 EOF
      },
      { from  => undef, # 
@@ -27261,7 +27261,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
-	q3::inwork; 10167,19797 10156,19860 10134,19981 10117,20065 10106,20093 10098,20113 10068,20188 10067,20254 10066,20323 10064,20437 10066,20494
+	q3::inwork; 10167,19797 10156,19860 10134,19981 10120,20064 10104,20092 10095,20108 10078,20140 10072,20188 10069,20254 10066,20323 10064,20437 10066,20494
 EOF
      },
      { from  => undef, # 
@@ -29811,7 +29811,7 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2023-08-03
 # REMOVED (hier nicht (mehr)) ---	q3::inwork  8986,16092 9148,16282 9178,16317
-	q3::inwork 9178,16317 9301,16439
+	q3::inwork 9178,16317 9193,16331 9301,16439
 Bellermannstr.	q3::inwork; 9248,16248 9200,16295 9178,16317 9156,16339 9099,16398
 EOF
      },
@@ -37756,7 +37756,7 @@ EOF
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-08-04 (mapillary)
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 EOF
@@ -39117,14 +39117,13 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
 EOF
      },
      { from  => 1685639599, # 2023-06-01 19:13
-       until => $isodate2epoch->("2023-09-30 17:00:00"),
+       until => 1693146856, # $isodate2epoch->("2023-09-30 17:00:00"),
        text  => 'Littenstr.: Fahrbahn an der Stralauer Str. gesperrt, voraussichtlich bis 30.9.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.414599,52.516503,02.11.2022,08:00',
        data  => <<EOF,
-#: last_checked: 2023-08-11
-#: check_frequency: 30d
-#: next_check: 2023-09-30
+#: note: vorzeitige Aufhebung der Sperrung
+# REMOVED --- #: last_checked: 2023-08-27 --- #: check_frequency: 30d --- #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
 EOF
      },
@@ -39466,6 +39465,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
        data  => <<EOF,
+#: last_checked: 2023-08-27
 #: next_check: 2023-08-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -39789,7 +39789,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023
-#: last_checked: 2023-08-05 (mapillary)
+#: last_checked: 2023-08-27
 #: check_frequency: 60d
 #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151 11750,16116
@@ -39891,7 +39891,7 @@ EOF
      },
      { from  => 1690196400, # 2023-07-24 13:00
        until => $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
-       text  => 'Schillerstr.: Wasserrohrbruch, zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
+       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
@@ -40082,9 +40082,11 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
+#: by: https://viz.berlin.de/2023/08/bahnhofstr/
 #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
+#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023)
 #: next_check: 2023-08-28
 	q4::inwork 22431,6068 22467,6135
 EOF
@@ -40277,9 +40279,9 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.402799,52.524086,22.08.2023,07:00', # nur Kfz-Verkehr betroffen, bis 15.09.2023
        data  => <<EOF,
-#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer
+#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-08-26
+#: last_checked: 2023-08-27
 	q4::inwork 10313,13227 10264,13097
 EOF
      },
