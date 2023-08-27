@@ -16594,7 +16594,7 @@ EOF
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 18, # Termin steht noch nicht fest
+       recurrence_prewarn_days => 15, # Termin steht noch nicht fest
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -32652,7 +32652,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Mitte August 2023: aktuell keine Sperrung)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Asphaltierungsarbeiten gesperrt sein (Stand Mitte August 2023: keine Sperrung)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -38691,10 +38691,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-09-05 00:00:00"),
-       until => $isodate2epoch->("2023-09-01 18:00:00"),
+       until => $isodate2epoch->("2023-09-30 18:00:00"),
        text  => 'Tharsanderweg: Bauarbeiten, Fahrbahn zwischen Pichelsdorfer Str. und Grimnitzseeweg gesperrt, voraussichtlich bis September 2023',
        type  => 'handicap',
        data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: auch der Radweg ist nicht benutzbar
 #: last_checked: 2023-06-17 (mapillary)
 #: next_check: 2023-09-01
@@ -39036,11 +39037,12 @@ EOF
 EOF
      },
      { from  => 1684818000, # 2023-05-23 07:00
-       until => $isodate2epoch->("2023-08-31 17:00:00"), # 1689951600, # 2023-07-21 17:00
-       text  => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 31.08.2023 17:00',
+       until => undef, # $isodate2epoch->("2023-08-31 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       text  => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 31.08.2023 17:00, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.26594,52.535571,24.05.2023,07:00 (bis 21.07.2023) (bis 31.08.2023)
+#: next_check: 2023-08-31
 	q4::inwork 931,14268 968,14263 1023,14259
 EOF
      },
@@ -39080,8 +39082,8 @@ EOF
 EOF
      },
      { from  => 1685242500, # 2023-05-28 04:55
-       until => $isodate2epoch->("2023-09-01 17:00:00"),
-       text  => 'Paradiesstr.: Fahrbahn zwischen Bohnsdorfer Kirchsteig und Buntzelstr. gesperrt (Wasserrohrbruch), voraussichtlich bis 01.09.2023',
+       until => undef, # $isodate2epoch->("2023-09-01 17:00:00"),
+       text  => 'Paradiesstr.: Fahrbahn zwischen Bohnsdorfer Kirchsteig und Buntzelstr. gesperrt (Wasserrohrbruch), voraussichtlich bis 01.09.2023, evtl. wird die Sperrung verlängert',
        type  => 'gesperrt',
        source_id => 'viz2021:13.561277,52.401879,29.05.2023,04:55', # (ohne Endedatum) (mittlerweile bis 30.06.2023) (bis 03.07.2023) (bis 04.08.2023) (bis 24.08.2023) (inaktiv)
        data  => <<EOF,
@@ -39089,6 +39091,7 @@ EOF
 # REMOVED --- #: XXX Bis wann ist die Straße gesperrt? Kommen tatsächlich auch keine Fußgänger durch? --- #: next_check: 2023-06-29
 #: note: mittlerweile ist bei VIZ nur noch von einer Sperrung für den Kfz-Verkehr die Rede (2 -> q4)
 #: note: bei VIZ inaktiv, bei rbb noch verlängert
+#: next_check: 2023-09-01
 	q4::inwork 21322,-176 21355,-309
 EOF
      },
@@ -39458,11 +39461,12 @@ EOF
 EOF
      },
      { from  => 1687406400, # 2023-06-22 06:00
-       until => 1693494000, # 2023-08-31 17:00
-       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00 bis 31.08.2023 17:00',
+       until => undef, # 1693494000, # 2023-08-31 17:00
+       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00 bis 31.08.2023 17:00, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        source_id => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
        data  => <<EOF,
+#: next_check: 2023-08-31
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -39634,11 +39638,12 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 EOF
      },
      { from  => 1688886000, # 2023-07-09 09:00
-       until => $isodate2epoch->("2023-09-04 17:00:00"), # 1691420400, # 2023-08-07 17:00
-       text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 04.09.2023 17:00',
+       until => undef, # $isodate2epoch->("2023-09-04 17:00:00"), # 1691420400, # 2023-08-07 17:00
+       text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 04.09.2023 17:00, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        source_id => 'viz2021:13.315966,52.45914,10.07.2023,09:00', # bis 04.09.2023
        data  => <<EOF,
+#: next_check: 2023-09-04
 	q4::inwork 4558,5863 4520,5793
 EOF
      },
@@ -39821,8 +39826,8 @@ EOF
 EOF
      },
      { from  => 1690077600, # 2023-07-23 04:00
-       until => $isodate2epoch->("2023-09-04 17:00:00"),
-       text  => 'Kirchstr.: Bauarbeiten zwischen Grünstr. und Alt-Köpenick, Sperrung auch für Radfahrer, vom 24.07.2023 04:00 Uhr bis 04.09.2023',
+       until => undef, # $isodate2epoch->("2023-09-04 17:00:00"),
+       text  => 'Kirchstr.: Bauarbeiten zwischen Grünstr. und Alt-Köpenick, Sperrung auch für Radfahrer, vom 24.07.2023 04:00 Uhr bis 04.09.2023, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Einschränkung beim Straßenbahnverkehr, bis 20.8.2023)
@@ -39830,6 +39835,7 @@ EOF
 #: source_id: bvg2021:61#BVG324735_0 (hier bis 28.8.2023)
 #: source_id: viz2021:13.576366,52.445991,24.07.2023,04:00 (bis 27.08.2023) (bis 04.09.2023)
 # REMOVED --- #: last_checked: 2023-07-15 --- #: next_check: 2023-07-24
+#: next_check: 2023-09-04
 	q4::inwork 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 EOF
      },
@@ -39903,22 +39909,24 @@ EOF
 EOF
      },
      { from  => 1690486071, # 2023-07-27 21:27
-       until => 1693519200, # 2023-09-01 00:00
-       text  => 'Andreasberger Str.: zwischen Lauterberger Str. und Karl-Elsasser-Str. Bauarbeiten, vermutlich ist die Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 31.08.2023',
+       until => undef, # 1693519200, # 2023-09-01 00:00
+       text  => 'Andreasberger Str.: zwischen Lauterberger Str. und Karl-Elsasser-Str. Bauarbeiten, vermutlich ist die Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 31.08.2023, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: note: nur beim rbb
 #: also_indoor: traffic (G,W)
+#: next_check: 2023-08-31
 	q4::inwork 12053,6042 12063,5927
 EOF
      },
      { from  => 1690486388, # 2023-07-27 21:33
-       until => 1693519200, # 2023-09-01 00:00
-       text  => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 31.08.2023',
+       until => undef, # 1693519200, # 2023-09-01 00:00
+       text  => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 31.08.2023, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: note: nur beim rbb
 #: also_indoor: traffic (G,B,W)
+#: next_check: 2023-08-31
 	q4::inwork 2350,11269 2340,11223 2365,11179
 EOF
      },
@@ -39995,12 +40003,13 @@ EOF
 EOF
      },
      { from  => 1690704000, # 2023-07-30 10:00
-       until => 1694185200, # 2023-09-08 17:00
-       text  => 'Kressenweg: zwischen Alt-Mahlsdorf/Alt-Kaulsdorf und Elsenstr./Am Niederfeld Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen, vom 31.07.2023 10:00 bis 08.09.2023 17:00',
+       until => undef, # 1694185200, # 2023-09-08 17:00
+       text  => 'Kressenweg: zwischen Alt-Mahlsdorf/Alt-Kaulsdorf und Elsenstr./Am Niederfeld Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen, vom 31.07.2023 10:00 bis 08.09.2023 17:00, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.598234,52.503701,31.07.2023,10:00 (hier nur Kfz-Verkehr, bis 08.09.2023)
 #: note: Absperrungen über die volle Breite der Fahrbahn, Umfahrung über westlichen Bürgersteig möglich, aber dann muss man entweder Bordsteine überfahren oder auf dem Bürgersteig bleiben; eigentliche Bauarbeiten nur auf einem kurzen Abschnitt
+#: next_check: 2023-09-08
 	q3::inwork 23575,10972 23648,11265
 EOF
      },
@@ -40073,6 +40082,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
+#: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
 #: next_check: 2023-08-28
@@ -40080,12 +40090,13 @@ EOF
 EOF
      },
      { from  => 1691557200, # 2023-08-09 07:00
-       until => $isodate2epoch->("2023-09-08 17:00:00"), # 1692975600, # 2023-08-25 17:00
-       text  => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., eventuell auch für Radfahrer relevant, vom 10.08.2023 07:00 bis 08.09.2023 17:00',
+       until => undef, # $isodate2epoch->("2023-09-08 17:00:00"), # 1692975600, # 2023-08-25 17:00
+       text  => 'Heinersdorfer Str.: Sperrung an der Einmündung Pistoriusstr., eventuell auch für Radfahrer relevant, vom 10.08.2023 07:00 bis 08.09.2023 17:00, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1689554678986813440#m (hier nur Kfz-Verkehr)
 #: source_id: viz2021:13.432829,52.557277,10.08.2023,07:00 (bis 25.08.2023) (bis 08.09.2023)
+#: next_check: 2023-09-08
 	q4::inwork 12226,16757 12257,16876
 EOF
      },
@@ -40193,7 +40204,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-H,B,G,W)
-#: source_id: viz2021:13.43177,52.47224,16.08.2023,18:46
+#: source_id: viz2021:13.43177,52.47224,16.08.2023,18:46 (ohne Endedatum)
 #: add_fragezeichen: Ist der Einmündungsbereich weiterhin gesperrt? vvv
 #: last_checked: 2023-08-18 vvv
 #: check_frequency: 14d vvv
