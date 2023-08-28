@@ -1084,7 +1084,7 @@ Gehweg für Radfahrer frei	RW1; 9584,3713 9751,3769
 Busspur ist immer gültig	RW5; 8964,3539 9128,3580 9222,3602 9391,3651
 altes Verbundsteinpflaster	RW1; 9953,3806 10048,3806
 altes Verbundsteinpflaster	RW2; 10048,3806 9953,3806
-altes Verbundsteinpflaster	RW1;RW1 10048,3806 10237,3789 10462,3765 10562,3754 10958,3710 10985,3707 11048,3700 11084,3702
+altes Verbundsteinpflaster	RW1;RW1 10048,3806 10237,3789 10462,3765 10562,3754 10879,3719 10958,3710 10985,3707 11048,3700 11084,3702
 # REMOVED --- #: XXX Radweg Richtung Südwesten aufgehoben, später werden hier Radspuren eingerichtet --- #: source_id: IM_026105 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150703.0950.402227.html --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende) --- #: osm_watch: way id="30701044" version="9" --- #: osm_watch: way id="29890799" version="11" --- #: last_checked: 2016-03-28 (noch Bauarbeiten, Richtung Süden noch keine Markierungen) --- #: check_frequency: 30d
 #: by: Susan Richter
 #: confirmed_by: srt
@@ -2115,7 +2115,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-08-21 vvv
+#: last_checked: 2023-08-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -6690,7 +6690,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2023-08-19
+#: last_checked: 2023-08-28
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -7742,7 +7742,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="34"
-#: last_checked: 2023-08-21 vvv
+#: last_checked: 2023-08-28 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788

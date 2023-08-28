@@ -1367,7 +1367,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2023-07-15 vvv
+#: last_checked: 2023-08-28 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -10963,7 +10963,11 @@ Am Rodelberg: Asphalt	Q0 7082,22414 7287,22403 7292,22505
 (Rondell vor dem Sowjetischen Ehrenmal): Kopfsteinpflaster	Q2 8338,19262 8351,19274 8357,19284 8348,19304 8333,19305 8319,19299 8314,19288 8320,19270 8338,19262
 Wilhelm-Kuhr-Str.: Asphalt	Q0 9236,17907 9193,17763 9160,17656
 Hönower Weg: Asphalt	Q0 17383,9719 17471,9688
-Hönower Weg: Beton mit einigen Hebungen	Q0- 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770 18266,9853
+Hönower Weg: Beton mit einigen Hebungen	Q0- 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
+#: next_check_id: HOENOWERWEG-2023
+#: XXX werden diese Schäden demnächst behoben?
+#: last_checked: 2023-08-28
+Hönower Weg: Asphalt mit einigen Schäden	Q0- 18066,9770 18266,9853
 Am Tierpark [Wohngebiet]: Beton	Q1 18538,10189 18552,10220 18512,10337
 (Hultschiner Damm - Immortellenweg): Verbundsteinpflaster	Q1 24402,9987 24282,10015
 Wolframstr.: Asphalt	Q0 8433,5108 8288,4955
@@ -12951,7 +12955,7 @@ Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
 Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-08-21
+#: last_checked: 2023-08-28
 #: check_frequency: 45d
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483 17588,8413
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -30889,7 +30893,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.tagesspiegel.de/berlin/bezirke/700-000-euro-fur-70-meter-strasse-diskussion-um-ausbau-dieser-strasse-in-berlin-10088179.html
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2023-03-24 vvv
+#: last_checked: 2023-08-28 vvv
 #: next_check: 2024-06-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629
