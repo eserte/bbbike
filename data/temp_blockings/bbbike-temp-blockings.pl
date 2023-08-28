@@ -38786,6 +38786,7 @@ EOF
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
+#: osm_watch: way id="54269295" version="15"
 #: last_checked: 2023-08-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-04 vvv
@@ -40073,7 +40074,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-08-27 00:00:00"),
        until => $isodate2epoch->("2023-10-09 18:00:00"),
-       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm, vom 28.08.2023 bis voraussichtlich 09.10.2023',
+       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, vom 28.08.2023 bis voraussichtlich 09.10.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -40089,6 +40090,8 @@ EOF
 #: next_check: 2023-10-09 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
 Am Bahndamm	q3::inwork 22467,6135 22365,6149
+#: note: evtl. geht's mit der Einbahnstraße in der Borgmannstraße weiter?
+Elcknerplatz	q3::inwork; 22431,6068 22478,6048 22538,6046
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -40105,20 +40108,27 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2023-12-04 23:59:59"), # undef,
-       text  => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, möglicherweise bis Dezember 2023',
+       until => $isodate2epoch->("2024-02-29 23:59:59"), # undef,
+       text  => 'Wuhlewanderweg zwischen Mozartstr. und Birnbaumer Str. sowie Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, möglicherweise bis Februar 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KAULSDORFER-2023
 #: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
 #: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
 #: confirmed_by: srt
-#: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt
-#: priority: #A
-#: last_checked: 2023-08-28
-#: check_frequency: 45d
-#: next_check: 2023-12-04
-	2::inwork 22027,6608 22050,6619
+#: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt; laut Aushang Vollsperrung für 6 bis 9 Monate
+#: priority: #A vvv
+#: last_checked: 2023-08-28 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-02-29 vvv
+#: osm_watch: way id="217297577" version="8"
+Brücke	2::inwork 22027,6608 22050,6619
+#: osm_watch: way id="30823827" version="16"
+Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 EOF
      },
      { from  => 1692511200, # 2023-08-20 08:00

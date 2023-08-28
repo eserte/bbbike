@@ -1359,6 +1359,11 @@ Hönower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
 Splanemannstr.: Asphalt	Q0 18411,10037 18397,9928 18305,9951
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8738 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
+#: next_check_id: KAULSDORFER-2023
+#: XXX evtl. wird der Asphalt nach der Sperrung besser sein?
+#: last_checked: 2023-08-28
+#: check_frequency: 90d
+#: next_check: 2024-02-29
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
 # REMOVED (nein, hier passiert vorerst nichts, siehe 2. URL) --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
@@ -10967,7 +10972,7 @@ Hönower Weg: Beton mit einigen Hebungen	Q0- 17471,9688 17587,9655 17668,9632 177
 #: next_check_id: HOENOWERWEG-2023
 #: XXX werden diese Schäden demnächst behoben?
 #: last_checked: 2023-08-28
-Hönower Weg: Asphalt mit einigen Schäden	Q0- 18066,9770 18266,9853
+Hönower Weg: Asphalt mit einigen Schäden	Q1+ 18066,9770 18266,9853
 Am Tierpark [Wohngebiet]: Beton	Q1 18538,10189 18552,10220 18512,10337
 (Hultschiner Damm - Immortellenweg): Verbundsteinpflaster	Q1 24402,9987 24282,10015
 Wolframstr.: Asphalt	Q0 8433,5108 8288,4955

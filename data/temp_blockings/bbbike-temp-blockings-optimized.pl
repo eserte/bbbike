@@ -6591,6 +6591,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
+#: osm_watch: way id="54269295" version="15"
 #: last_checked: 2023-08-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-04 vvv
@@ -7275,12 +7276,14 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 #: next_check: 2023-10-09 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
 Am Bahndamm	q3::inwork 22467,6135 22365,6149
+#: note: evtl. geht\'s mit der Einbahnstraße in der Borgmannstraße weiter?
+Elcknerplatz	q3::inwork; 22431,6068 22478,6048 22538,6046
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1693087200,
          'id' => 3881,
-         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm, vom 28.08.2023 bis voraussichtlich 09.10.2023',
+         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, vom 28.08.2023 bis voraussichtlich 09.10.2023',
          'type' => 'gesperrt',
          'until' => 1696867200
        },
@@ -7301,18 +7304,25 @@ Am Bahndamm	q3::inwork 22467,6135 22365,6149
 #: by: https://nitter.net/nichtJoel/status/1689245277784301570#m
 #: by: https://nitter.net/pic/orig/media%2FF3Fnnp1XUAAHqBx.jpg
 #: confirmed_by: srt
-#: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt
-#: priority: #A
-#: last_checked: 2023-08-28
-#: check_frequency: 45d
-#: next_check: 2023-12-04
-	2::inwork 22027,6608 22050,6619
+#: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt; laut Aushang Vollsperrung für 6 bis 9 Monate
+#: priority: #A vvv
+#: last_checked: 2023-08-28 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-02-29 vvv
+#: osm_watch: way id="217297577" version="8"
+Brücke	2::inwork 22027,6608 22050,6619
+#: osm_watch: way id="30823827" version="16"
+Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 ',
          'from' => undef,
          'id' => 3883,
-         'text' => 'Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, möglicherweise bis Dezember 2023',
+         'text' => 'Wuhlewanderweg zwischen Mozartstr. und Birnbaumer Str. sowie Wuhlebrücke in Höhe Birnbaumer Str. gesperrt, möglicherweise bis Februar 2024',
          'type' => 'gesperrt',
-         'until' => 1701730799
+         'until' => 1709247599
        },
        {
          'data' => '	2::inwork -19289,63424 -19675,64106
