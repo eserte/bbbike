@@ -34030,7 +34030,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-05-27 (mapillary)
+#: last_checked: 2023-07-03 (baustellen-doku)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -35515,7 +35515,7 @@ EOF
 #: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
 #: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -39036,12 +39036,11 @@ EOF
 EOF
      },
      { from  => 1684818000, # 2023-05-23 07:00
-       until => undef, # $isodate2epoch->("2023-08-31 17:00:00"), # 1689951600, # 2023-07-21 17:00
-       text  => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 31.08.2023 17:00, evtl. wird die Sperrung verlängert',
+       until => $isodate2epoch->("2023-10-06 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       text  => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 06.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.26594,52.535571,24.05.2023,07:00 (bis 21.07.2023) (bis 31.08.2023)
-#: next_check: 2023-08-31
+#: source_id: viz2021:13.26594,52.535571,24.05.2023,07:00 (bis 21.07.2023) (bis 31.08.2023) (bis 06.10.2023)
 	q4::inwork 931,14268 968,14263 1023,14259
 EOF
      },
@@ -39236,7 +39235,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
-#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023)
+#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023)
 #: XXX Wann sind die Straßen offen? vvv
 #: last_checked: 2023-08-28 vvv
 #: check_frequency: 60d vvv
@@ -39894,7 +39893,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
+#: by: https://www.bahninfo-forum.de/read.php?9,774482,776967#msg-776967 (frei ab 31.8.2023?)
 #: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023)
+#: source_id: bvg2021:m1#BVG327081_0
+#: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen
+#: next_check: 2023-08-31
 	q4::inwork 10178,20525 10066,20494
 EOF
      },
@@ -39919,13 +39922,12 @@ EOF
 EOF
      },
      { from  => 1690486388, # 2023-07-27 21:33
-       until => undef, # 1693519200, # 2023-09-01 00:00
-       text  => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 31.08.2023, evtl. wird die Sperrung verlängert',
+       until => $isodate2epoch->("2023-09-30 23:59:59"), # 1693519200, # 2023-09-01 00:00
+       text  => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 30.09.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: note: nur beim rbb
 #: also_indoor: traffic (G,B,W)
-#: next_check: 2023-08-31
 	q4::inwork 2350,11269 2340,11223 2365,11179
 EOF
      },

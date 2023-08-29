@@ -76,11 +76,11 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork 22192,6659
 # 
 #: next_check_id: BAUMSCHULEN-2023
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: last_checked: 2023-07-11
-#: next_check: 2023-08-31
-#: valid: -20230831
+#: next_check: 2023-09-30
+#: valid: -20230930
 	X::inwork 16328,7005
 # 
 #: next_check_id: SONYCENTER-2023
@@ -100,7 +100,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln
-#: last_checked: 2023-08-28
+#: last_checked: 2023-08-29
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -175,9 +175,9 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
-#: source_id: viz2021:13.560004,52.48297,07.07.2023,11:00 (bis 01.09.2023)
-#: next_check: 2023-09-01
-#: valid: -20230901
+#: source_id: viz2021:13.560004,52.48297,07.07.2023,11:00 (bis 01.09.2023) (bis 18.09.2023)
+#: next_check: 2023-09-18
+#: valid: -20230918
 Köpenicker Str./Geraldweg: Gegenverkehrsregelung	X::inwork 21072,8742
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969

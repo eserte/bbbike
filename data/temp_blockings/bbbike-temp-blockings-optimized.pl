@@ -5001,7 +5001,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-05-27 (mapillary)
+#: last_checked: 2023-07-03 (baustellen-doku)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -6682,15 +6682,14 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.26594,52.535571,24.05.2023,07:00 (bis 21.07.2023) (bis 31.08.2023)
-#: next_check: 2023-08-31
+         'data' => '#: source_id: viz2021:13.26594,52.535571,24.05.2023,07:00 (bis 21.07.2023) (bis 31.08.2023) (bis 06.10.2023)
 	q4::inwork 931,14268 968,14263 1023,14259
 ',
          'from' => 1684818000,
          'id' => 3797,
-         'text' => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 31.08.2023 17:00, evtl. wird die Sperrung verlängert',
+         'text' => 'Wernerwerkdamm: Bauarbeiten zwischen Rohrdamm und Wattstr./Grammestr., Sperrung auch für Radfahrer, vom 24.05.2023 07:00 bis 06.10.2023 17:00',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1696604400
        },
        undef,
        {
@@ -6815,7 +6814,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
        {
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
-#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023)
+#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023)
 #: XXX Wann sind die Straßen offen? vvv
 #: last_checked: 2023-08-28 vvv
 #: check_frequency: 60d vvv
@@ -7151,7 +7150,11 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        },
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
+#: by: https://www.bahninfo-forum.de/read.php?9,774482,776967#msg-776967 (frei ab 31.8.2023?)
 #: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023)
+#: source_id: bvg2021:m1#BVG327081_0
+#: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen
+#: next_check: 2023-08-31
 	q4::inwork 10178,20525 10066,20494
 ',
          'from' => 1690196400,
@@ -7176,14 +7179,13 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        {
          'data' => '#: note: nur beim rbb
 #: also_indoor: traffic (G,B,W)
-#: next_check: 2023-08-31
 	q4::inwork 2350,11269 2340,11223 2365,11179
 ',
          'from' => 1690486388,
          'id' => 3868,
-         'text' => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 31.08.2023, evtl. wird die Sperrung verlängert',
+         'text' => 'Riehlstr.: Bauarbeiten, zwischen Wundtstr. und Dresselstr. gesperrt., evtl. sind auch Radfahrer betroffen, bis 30.09.2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1696111199
        },
        undef,
        undef,

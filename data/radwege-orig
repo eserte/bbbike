@@ -930,9 +930,9 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
-#: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023)
+#: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-08-27
+#: last_checked: 2023-08-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2270,11 +2270,11 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023)
+#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023)
 #: also_indoor: traffic (B[minor])
 #: last_checked: 2023-07-18
 #: check_frequency: 90d
-#: next_check: 2023-10-13
+#: next_check: 2023-12-31
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -2862,11 +2862,11 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
-#: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023)
+#: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: source_id: bvg2021:m43#BVG315176_0
 #: last_checked: 2023-08-24 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-08-31 vvv
+#: next_check: 2023-09-30 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
 #	RW3; 14641,10552 14608,10409
 #die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
@@ -8216,7 +8216,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
 #: source_id: viz2021:13.385551,52.447066,31.07.2023,11:00 (bis 17.08.2023) (inaktiv)
 #: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023) (inaktiv)
-#: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023)
+#: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-05 vvv
