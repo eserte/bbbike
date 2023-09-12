@@ -349,8 +349,8 @@ Kastanienallee: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20
 #: source_id: viz2021:13.45767,52.49173,29.07.2021,08:00 (bis 30.06.2023) (inaktiv) (bis 31.07.2023) (inaktiv)
 #: source_id: viz2021:13.45316,52.49472,29.07.2021,08:00 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 30.6.2022) (inaktiv) (bis 31.12.2022) (bis 31.7.2023) (bis 22.12.2023)
-#: osm_watch: way id="1005683568" version="10"
-#: last_checked: 2023-08-23 vvv
+#: osm_watch: way id="1005683568" version="11"
+#: last_checked: 2023-09-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-22 vvv
 #: note: allerdings spart man hier eine Ampel
@@ -466,7 +466,7 @@ Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,1035
 #: source_id: viz2021:13.320363,52.478755,02.06.2023,09:00 (bis 30.06.2023) (bis 01.09.2023) (bis 15.09.2023) (inaktiv) vvv
 #: source_id: viz2021:13.320334,52.478774,02.06.2023,09:00 (bis 31.10.2023) vvv
 #: by: https://nitter.cz/VIZ_Berlin/status/1671133669078052865#m
-#: note: laut rbb bis 29.02.2024
+#: note: laut rbb bis 29.02.2024; mittlerweile vorzeitig entfernt
 #: last_checked: 2023-07-01 vvv
 #: next_check: 2023-10-31 vvv
 #: valid: -20231031 vvv
@@ -479,22 +479,23 @@ Detmolder Str.: Umweg über Blissestr.	DH:len=160 4873,8007 4786,8007 4711,8013
 #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2023-08-14 vvv
+#: last_checked: 2023-09-12 vvv
 Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
 Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 16720,6845 16677,6892
 #: last_checked ^^^
 # 
 #: by: https://nitter.net/VIZ_Berlin/status/1678744392159436804
 #: by: https://nitter.net/pic/orig/media%2FF0wZC7-WcAcUdnP.jpg
-#: source_id: viz2021:13.263096,52.430416,11.07.2023,14:25 (bis 28.07.2023) (bis 15.09.2023)
-#: valid: -20230915
+#: source_id: viz2021:13.263096,52.430416,11.07.2023,14:25 (bis 28.07.2023) (bis 15.09.2023) (bis 29.09.2023)
+#: valid: -20230929
 Mühlenstr./Prinz-Handjery-Str.: Umweg über Prinz-Handjery-Str.	DH:len=50:h=q3,50 1121,2583 1008,2568 960,2534
 # 
 #: source_id: viz2021:13.529089,52.510269,06.07.2023,16:00 (bis 04.08.2023) (bis 09.08.2023) (bis 11.08.2023, im Anschluss weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.53005,52.510351,11.08.2023,10:00 (bis 22.09.2023, im Anschluss weitere Arbeiten)
+#: source_id: viz2021:13.53005,52.510351,11.08.2023,10:00 (bis 22.09.2023, im Anschluss weitere Arbeiten) (inaktiv)
+#: source_id: viz2021:13.53005,52.510351,25.07.2023,10:00 (bis 06.10.2023)
 #: note: laut rbb dauern die weiteren Arbeiten bis 2024 an
 #: last_checked: 2023-07-23
 #: next_check: 2023-09-22
-#: valid: -20230922
+#: valid: -20231006
 Alt-Friedrichsfelde: Umweg über einen unbefestigten Trampelpfad	DH:len=42:h=q2,267 19092,11776 19389,11761
 # 

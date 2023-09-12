@@ -701,6 +701,7 @@ Gustav-Meyer-Str.: wurde die Straße schon teilweise Richtung Osten verlängert? Q
 Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verlängert? Qualität?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13698,1621 -13664,1729 -13645,1807
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität? verkehrsberuhigt?	? -13325,-2935 -13331,-2900 -13454,-2914 -13450,-2951
 Straßen in Döberitz: genaue Straßennamen, Qualität?	? -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13448,13520
+Heerstr. - Fichtenstr. - Chemnitzer Str.: wird hier ein Verbindungsweg für Radfahrer und Fußgänger gebaut? Qualität? Nachts beleuchtet?	? 22366,9571 22219,9545 22137,9532
 Heinersdorf: Qualität? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
 Umfahrung B5 bei Karstädt: ist das eine Kraftfahrzeugstraße?	? -102187,80033 -102492,80202 -102824,80211 -103579,80166 -104020,80374 -104246,80597 -104370,80854 -104406,81222 -104370,81603 -104546,81975
 Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrecke --- wo sind genau die asphaltierten und Kies-Abschnitte?	? 61080,147233 61159,147126 61212,146969 61436,146668 61529,146496 61748,146197 61701,146118 61660,145978 61680,145900 62088,145749 62271,145636 62327,145481 62336,145361 62390,145266 62423,145178 62547,145035 62595,144932 62674,144822
@@ -831,6 +832,9 @@ Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenf
 Technologiepark KW - Funkerberg: Qualität der Verbindung?	? 24452,-10414 24518,-10498 24950,-10965 25233,-11257 25366,-11396 25528,-11392
 Promenade (Jüterbog): Qualität des südlichen Abschnitts?	? -10165,-45794 -10193,-46048
 Radweg der Sympathie: Qualität, genaue Wegführung?	? -8080,16157 -8120,16183 -8332,16379 -8644,16488 -8608,16593 -8686,16604 -8759,16583 -8811,16627 -9088,16704 -9167,16726 -9358,16764 -9639,16785 -9676,16807 -9841,16813 -10108,16901 -10248,16990 -10296,16953 -10337,17006 -10396,17098 -10475,17234
+Triftstr. (Hohen Neuendorf): Qualität?	? 1470,29391 1483,29433 1604,29508 1646,29550 1687,29557 1717,29541
+Waldstr. (Hohen Neuendorf): Qualität des westlichen Abschnitts?	? 1604,29508 1717,29541
+Am Rathaus (Hohen Neuendorf): Qualität?	? 1717,29541 1730,29579 1733,29664
 # added from landstrassen
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
 ehem. B1/B5: Berlin - Müncheberg (Ist dieser Abschnitt für den Kfz-Verkehr gesperrt?)	? 41650,8965 43293,8953
@@ -958,7 +962,14 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen Prenzlau und Güstow einen straßenbegleitenden Radweg? Wenn ja: auf welcher Seite und ist der Radweg asphaltiert?)	? 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 L25 (Schmölln - Güstow): hier entsteht ein Radweg (Gibt es einen neuen Radweg im Bereich Schmölln - Autobahnauffahrt?)	? 55977,100103 56030,100076 56188,99924 56268,99856 56856,99683 57042,99574 57512,99290 57634,99199
 # added from bbbike-temp-blockings-optimized
+Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str. [Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer] (Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet?)	? 3185,3476 3184,3427
+Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str. [Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer] (Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet?)	? 3184,3427 3174,3052
+Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str. [östlich Drakestr.] (Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet?)	? 3558,3688 3507,3654
 Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Mitte Juli 2023: weiterhin Bauarbeiten, aber Weg kann zeitweise offen sein) (Ist der Uferweg noch immer wegen Bauarbeiten gesperrt?)	? 5714,12290 5770,12346 5796,12372 5940,12564
 Spreeuferweg: Bauarbeiten, zwischen Wullenwebersteg und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Mitte Juli 2023: weiterhin Bauarbeiten, aber Weg kann zeitweise offen sein) (Ist der Uferweg noch immer wegen Bauarbeiten gesperrt?)	? 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?)	? 20996,16429 20923,16435 20898,16420
 Schleswiger Ufer - Uferweg: Bauarbeiten, Zufahrt zum Uferweg noch nicht offiziell eröffnet [Zugang zum Uferweg] (Wann sind die Bauarbeiten hier fertig?)	? 5800,12361 5796,12372
+Tharsanderweg: Bauarbeiten, Fahrbahn zwischen Pichelsdorfer Str. und Grimnitzseeweg gesperrt, voraussichtlich bis September 2023 (Sind die Bauarbeiten beendet?)	? -3681,11767 -3636,11777 -3524,11980
+Straße 3: Bauarbeiten, Straße wird neu gemacht, Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
+Carl-Herz-Ufer - Brachvogelstr.: beide Wege wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt [nördlicher Weg an der ehemaligen Minigolfanlage] (Sind beide Wege noch immer gesperrt?)	? 10069,10151 10158,10117
+Carl-Herz-Ufer - Brachvogelstr.: beide Wege wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt [südlicher Weg] (Sind beide Wege noch immer gesperrt?)	? 10168,10085 10066,10071

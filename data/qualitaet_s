@@ -135,12 +135,12 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 645
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 Rüdersdorfer Str.: Asphalt	Q0 13295,11792 13173,11788 13161,11795 13066,11854
-Kaskelstr.: relativ glattes Kopfsteinpflaster	Q1 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
+Kaskelstr.: relativ glattes Kopfsteinpflaster	Q1 15359,11115 15434,11086 15509,11058 15586,11030 15763,10963
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
 Geusenstr.: mäßiges Kopfsteinpflaster	Q2 15586,11030 15560,10946 15541,10892
 Türrschmidtstr.: glattes Kopfsteinpflaster	Q1 15279,10862 15355,10875 15447,10883 15541,10892
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15541,10892 15626,10915
-Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15626,10915 15649,10922 15756,10966
+Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15626,10915 15649,10922 15763,10963
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16367,11341 16338,11308 16311,11226 16273,11113 16227,10991
 Emanuelstr.: etwas glatteres Kopfsteinpflaster	Q2 16313,10747 16349,10860
 Emanuelstr.: Kopfsteinpflaster	Q2 16349,10860 16374,10946
@@ -194,8 +194,8 @@ Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12392,8724 
 Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
 Weichselstr./Maybachufer: Asphalt	Q0 12755,9188 12845,9304 12837,9353
 Treptower Str.: Asphalt	Q0 13863,8597 14011,8787 14151,8967
-Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
-Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
+Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15461,11313
+Pfarrstr.: sehr guter Asphalt	Q0 15461,11313 15477,11338
 Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 15515,11416 15498,11380
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15639,11653 15489,11735 15413,11690
@@ -2599,7 +2599,7 @@ Homeyerstr.: Asphalt	Q0 9613,18758 9801,18686 9920,18636
 nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1 6608,12858 6551,12901 6535,12934 6443,12952 6271,12985 6218,12975 6180,12972
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen	Q0 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Kietzer Str.: Kopfsteinpflaster, Straßenbahngleise asphaltiert	Q1; 22324,4586 22358,4521
-Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15756,10966
+Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15763,10963
 Silberberger Str.: Asphalt	Q0 19735,3643 19804,3697 19864,3742 19992,3839
 Thelenstr.: Asphalt	Q0 19804,3697 19871,3600
 Wassermannstr.: Asphaltbetondecke	Q0 21062,3406 20992,3493 20924,3577
@@ -9678,7 +9678,8 @@ Abteibrücke: asphaltiert	Q0 15658,9007 15674,9095
 Hänselstr.: Beton	Q0 15695,7254 15555,7133 15436,7031
 (Britzer Str. - Uferweg): wassergebundene Decke	Q1 18470,5600 18506,5596
 (Britzer Str. - Uferweg): wassergebundene Decke	Q1 18470,5600 18473,5645
-(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18695,5453 18634,5484
+(Hasselwerderpark, Uferweg an der Spree): Betonpflaster	Q0 18695,5453 18667,5467
+(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18667,5467 18634,5484
 (Hasselwerderpark, Uferweg an der Spree): Betonpflaster	Q0 18634,5484 18560,5539
 (Hasselwerderpark, Uferweg an der Spree): Beton	Q1 18560,5539 18506,5596
 (Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900
@@ -14385,8 +14386,8 @@ Celsiusstr.: guter Beton	Q0 4505,465 4506,514 4474,563
 Celsiusstr.: Betonpflastersteine	Q1 4474,563 4436,621 4424,640
 Celsiusstr.: guter Beton	Q0 4424,640 4367,725 4366,764 4432,947 4456,984 4492,1013 4605,1089
 Teltower Str. (Wannsee): überwiegend Verbundsteinpflaster	Q0 -7983,-1896 -7992,-1968 -8005,-2017 -8086,-2007 -8109,-2116
-Hauffstr.: Asphalt	Q0 15322,11335 15356,11338 15458,11306 15484,11292 15567,11247 15578,11241 15620,11210
-Hauffstr.: Asphalt	Q0 15620,11210 15694,11125 15740,11028 15756,10966
+Hauffstr.: Asphalt	Q0 15322,11335 15356,11338 15461,11313 15488,11300 15568,11248 15578,11241 15620,11210
+Hauffstr.: Asphalt	Q0 15620,11210 15700,11128 15747,11030 15763,10963
 Richard-Willstätter-Str.: Asphalt	Q0 19592,2462 19794,2629 19983,2795
 Alfred-Randt-Str.: Beton	Q0 23749,3868 23925,3869 23925,3886 23922,3973 23971,4020 24293,4017 24296,4096 24293,4227 24140,4227 24135,4264
 Grünfinkenweg: glatt gepflastert	Q1 22312,48 22396,76

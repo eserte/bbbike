@@ -32,8 +32,6 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
-Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000
-Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
@@ -1587,7 +1585,8 @@ Borretschweg: eng	q2 24300,6142 24275,6156
 Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18506,5596
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18473,5645
-(Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
+(Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
+(Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
@@ -2411,7 +2410,7 @@ Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 (entlang der Alten Erpe): einige Fußgänger, schmal	q2 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
 (Berliner Str. - Kissingenstr.): Lieferverkehr, einige Fußgänger	q2 10853,17802 10896,17846 10944,17863
 (Blitzenroder Ring - Packereigraben): einige Fußgänger	q2 5808,22387 5796,22401 5796,22412
-Johannisthaler Park: Grünanlage, Fußgänger	q4 17760,4867 17659,4849 17580,4761
+Johannisthaler Park: Fußgänger, Radfahren erlaubt	q2 17760,4867 17659,4849 17580,4761
 (Märkische Allee - Biesdorfer Promenade): Fußgänger, schmal	q2 19743,13210 19757,13191 19830,13170
 (Märkische Allee - Biesdorfer Promenade): Fußgänger	q1 19830,13170 19842,13144 19873,13129
 (Tränkegraben - Volkradstr.): Fußgänger, Radfahren erlaubt	q2 17298,10633 17329,10620 17363,10587 17422,10571
