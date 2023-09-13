@@ -420,7 +420,7 @@ Pietschkerstr. - Groß-Berliner Damm: Umweg über Ampel Greifstr.	DH:len=50:tl 177
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: Mindestwartezeit an den Ampeln etwa eine Minute
-#: last_checked: 2023-05-06 vvv
+#: last_checked: 2023-07-29 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Landsberger Allee	DH:t=50 18553,14678 18831,14823 19013,14905
@@ -494,8 +494,10 @@ Mühlenstr./Prinz-Handjery-Str.: Umweg über Prinz-Handjery-Str.	DH:len=50:h=q3,50
 #: source_id: viz2021:13.53005,52.510351,11.08.2023,10:00 (bis 22.09.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.53005,52.510351,25.07.2023,10:00 (bis 06.10.2023)
 #: note: laut rbb dauern die weiteren Arbeiten bis 2024 an
-#: last_checked: 2023-07-23
-#: next_check: 2023-09-22
-#: valid: -20231006
-Alt-Friedrichsfelde: Umweg über einen unbefestigten Trampelpfad	DH:len=42:h=q2,267 19092,11776 19389,11761
+#: note: Luftlinie 307m, Umleitungsstrecke 341m
+#: last_checked: 2023-09-13
+#: next_check: 2023-10-06
+# REMOVED --- #: valid: -20231006
+# REMOVED --- #: valid: -20241231
+Alt-Friedrichsfelde: Umweg über einen asphaltierten Notweg, kurvig	DH:len=34:h=q1,341 19092,11776 19389,11761
 # 

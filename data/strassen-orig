@@ -258,6 +258,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11193 (Gebühren für Widerspruchsbescheide)
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: by: https://berliner-abendblatt.de/berlin-news/gericht-urteilt-ueber-umbenennung-der-mohrenstrasse-id226365
+#: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-22 vvv
@@ -2361,7 +2362,7 @@ Landsberger Allee [Nebenfahrbahn]	N 16669,14438 16845,14461
 (Georg-Knorr-Str. - Landsberger Allee)	NN 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19175,14926 19180,14915 19255,14911
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-05-06
+#: last_checked: 2023-07-29 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 (Knoten Marzahn, Fußgängerüberweg)	NN 19196,14976 19200,14963
@@ -12141,8 +12142,9 @@ Allée du Stade	N 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,158
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930770437" version="7"
 #: last_checked: 2023-05-18
-#: check_frequency: 180d
-#: next_check: 2023-12-01
+# REMOVED --- #: check_frequency: 180d
+# REMOVED --- #: next_check: 2023-12-01
+#: next_check: 2024-04-30
 (provisorische Umleitung)	NN -192,16054 -174,16084
 (Am Hohenzollernkanal - Charles-Corcelle-Ring/Dohnagestell)	NN 4369,15950 4620,15919 4723,15907 4799,15891
 An der Mäckeritzbrücke	N 1232,15717 1232,15804 1164,15902 1141,15949 1086,16102 1033,16278
@@ -12489,8 +12491,8 @@ Eisensteiner Str.	N 19727,9672 19722,9483
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
 #: osm_watch: way id="338124008" version="15"
 #: priority: #C
-#: last_checked: 2023-05-03
-#: check_frequency: 120d
+#: last_checked: 2023-09-13
+#: check_frequency: 180d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473
 Rinchnacher Weg	N 19801,9680 19790,9478
@@ -15515,7 +15517,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-08-28
+#: last_checked: 2023-09-13
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15903,7 +15905,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-08-28
+#: last_checked: 2023-09-13
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

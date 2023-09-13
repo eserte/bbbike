@@ -158,7 +158,6 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kietzer Str.	1s 22372,4496 22383,4470
-Ontarioseestr.	1 18585,10024 18411,10037
 Degnerstr. (außer Tram)	1 16448,15593 16469,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4911,11018 4910,10940 4858,10943 4812,10948 4821,11026 4828,11094 4880,11088 4916,11083 4911,11018
@@ -3358,6 +3357,7 @@ weites Drängelgitter	BNP:2:-81:trailer=7 16369,8836
 Schranke, kann nur auf dem Bürgersteig umfahren werden (Bordstein!)	BNP:5:83:trailer=15 3135,12101
 Drängelgitter	BNP:3:-33:trailer=10 4067,22066
 Schranke, auf Gehweg umfahren	BNP:2:-11:trailer=4 23537,15247
+zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
@@ -3783,8 +3783,6 @@ Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14752,7108 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
 Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14752,7108
 Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18740,9907
-Treskowallee -> Zur Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18585,10024
-Zur Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18585,10024 18694,10018 18631,10167
 Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18740,9907 18703,9997 18445,9887
 Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018

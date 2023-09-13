@@ -930,7 +930,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
-#: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023)
+#: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2023-08-29
 #: check_frequency: 60d
@@ -1945,6 +1945,13 @@ breite Busspur ist immer gültig	RW5; 5258,11285 5459,11135
 # REMOVED --- #: XXX Busspur wegen Bauarbeiten größtenteils aufgehoben (bis auf ein paar Meter am Steinplatz) --- #: XXX früher:  --- #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017, laut fritz bis 22.12.2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29825 --- #: source_id: 2147339533 --- #: source_id: 2147342120 --- #: last_checked: 2017-10-08 --- #: next_check: 2017-12-20
 # 
 #: note: Unter den Linden, Schloßplatz, Karl-Liebknecht-Str. Richtung Osten
+	RW4; 8804,12280 9028,12307
+Busspur ist immer gültig	RW5; 9028,12307 9141,12320
+	RW4; 9141,12320 9303,12343
+Busspur ist immer gültig	RW5; 9303,12343 9358,12351 9429,12359
+	RW4; 9429,12359 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401
+Busspur ist immer gültig	RW5; 9780,12401 9858,12410
+	RW4; 9858,12410 9934,12420
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1123035.php (Oktober 2021 - Sommer 2022)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/strassen-und-kfz-verkehr/projekte-in-planung/boulevard-unter-den-linden/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794
@@ -1956,17 +1963,12 @@ breite Busspur ist immer gültig	RW5; 5258,11285 5459,11135
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
 #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-08-25 vvv
+#: last_checked: 2023-09-09 (mapillary) vvv
 #: check_frequency: 14d vvv
-	RW3; 8804,12280 9028,12307
-Busspur ist immer gültig	RW5; 9028,12307 9141,12320
-	RW3; 9141,12320 9303,12343
-Busspur ist immer gültig	RW5; 9303,12343 9358,12351 9429,12359
-	RW3; 9429,12359 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401
-Busspur ist immer gültig	RW5; 9780,12401 9858,12410
-	RW3; 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438
+	RW3; 9934,12420 9984,12426 10024,12431 10063,12438
 Bushaltestelle	RW5; 10063,12438 10152,12491
-	RW3; 10152,12491 10176,12506 10243,12546
+	RW3; 10152,12491 10176,12506
+	RW4; 10176,12506 10243,12546
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2864,7 +2866,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-08-24 vvv
+#: last_checked: 2023-09-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3632,7 +3634,7 @@ asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
 	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-05-06 vvv
+#: last_checked: 2023-07-29 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: XXX früher RW2;
@@ -4792,7 +4794,7 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Sanierung des Radwegs? vvv
-#: last_checked: 2023-07-11 vvv
+#: last_checked: 2023-09-13 vvv
 #: check_frequency: 270d vvv
 Radweg antik und unbenutzbar	RW1;RW1 18843,9952 18881,9865
 Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816

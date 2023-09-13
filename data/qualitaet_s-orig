@@ -987,7 +987,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="22"
-#: last_checked: 2023-08-10
+#: last_checked: 2023-08-30 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1121,7 +1121,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-08-21
+#: last_checked: 2023-09-13
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -5035,7 +5035,8 @@ Rudolf-Grosse-Str.: Beton	Q0 19142,9755 19144,9810
 Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
 Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19657,9666 19646,9490 19641,9411 19634,9292 19628,9194 19626,9171 19621,9097
-Zwieseler Str.: Beton	Q0 19669,9876 19684,10037 19688,10094 19697,10210 19711,10426
+#: next_check_id: ZWIESELER-2022
+Zwieseler Str.: Beton/provisorischer Asphalt	Q1+ 19669,9876 19684,10037 19688,10094 19697,10210 19711,10426
 (Verlängerung der Zwieseler Str.): Kleinsteinpflaster	Q1- 19621,9097 19638,9070
 (Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19638,9070 19705,9039
 Bodenmaiser Weg: Asphalt mit Schäden	Q1- 19406,9236 19488,9223 19628,9194
@@ -10321,6 +10322,10 @@ Pappelweg (Hakenfelde): unebener, rauer Asphalt	Q1- -3263,18151 -3118,18299
 Pappelweg (Hakenfelde): Verbundsteinpflaster	Q1 -3118,18299 -3091,18328
 Pappelweg (Hakenfelde): Waldweg	Q1- -3091,18328 -3059,18359
 Schlehenweg: Asphalt	Q0- -3127,17918 -3146,17845 -3204,17749
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1363092.php (Bauarbeiten bis 13.10.2023)
+#: by: https://www.berliner-woche.de/hakenfelde/c-verkehr/wallduerner-weg-bis-13-oktober-gesperrt_a392728
+#: XXX nach den Bauarbeiten vermutlich bessere Qualität
+#: next_check: 2023-10-13
 Walldürner Weg: Asphalt mit einigen Schäden	Q1 -3376,17149 -3353,17274 -3292,17361 -3186,17415 -3092,17420
 Breubergweg: Asphalt	Q0- -3353,17274 -3206,17263
 Reußstr.: Kleinsteinpflaster	Q1- -3023,16925 -3129,16931 -3238,16948
@@ -10969,10 +10974,10 @@ Am Rodelberg: Asphalt	Q0 7082,22414 7287,22403 7292,22505
 Wilhelm-Kuhr-Str.: Asphalt	Q0 9236,17907 9193,17763 9160,17656
 Hönower Weg: Asphalt	Q0 17383,9719 17471,9688
 Hönower Weg: Beton mit einigen Hebungen	Q0- 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
-#: next_check_id: HOENOWERWEG-2023
-#: XXX werden diese Schäden demnächst behoben?
-#: last_checked: 2023-08-28
-Hönower Weg: Asphalt mit einigen Schäden	Q1+ 18066,9770 18266,9853
+# REMOVED --- #: next_check_id: HOENOWERWEG-2023 --- #: XXX werden diese Schäden demnächst behoben? --- #: last_checked: 2023-08-28
+#: historical_note: bis September 2023: Asphalt mit einigen Schäden, Q1+
+#: note: Asphalt wurde nur geflickt
+Hönower Weg: Asphalt	Q0 18066,9770 18266,9853
 Am Tierpark [Wohngebiet]: Beton	Q1 18538,10189 18552,10220 18512,10337
 (Hultschiner Damm - Immortellenweg): Verbundsteinpflaster	Q1 24402,9987 24282,10015
 Wolframstr.: Asphalt	Q0 8433,5108 8288,4955
@@ -15535,7 +15540,8 @@ Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
 #: next_check_id: FLORIANGEYER-2023
 #: XXX Bleibt das Kopfsteinpflaster im südlichen Bereich?
 #: last_checked: 2023-08-19
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2023-12-31
 Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19954,3887 19992,3839 20073,3734 20159,3623
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Borkumstr.: Asphalt	Q0 11412,17823 11335,17807 11296,17799
@@ -30897,6 +30903,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/rheinpfalzallee-wird-ab-2024-saniert_a332567 (Instandsetzung ab 2024) vvv
 #: by: https://www.tagesspiegel.de/berlin/bezirke/700-000-euro-fur-70-meter-strasse-diskussion-um-ausbau-dieser-strasse-in-berlin-10088179.html
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
 #: last_checked: 2023-08-28 vvv
 #: next_check: 2024-06-01 vvv
@@ -32566,4 +32573,5 @@ Einmündungsbereich asphaltiert	Q1+ 9565,19751
 Kreuzungsbereich asphaltiert	Q0 10502,17286
 Einmündungsbereich mit Kleinsteinpflaster	Q2+ 10655,16904
 Einmündungsbereich asphaltiert	Q0 10886,16893
+Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 19871,9680
 #: ignore ^^^

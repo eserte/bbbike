@@ -54,6 +54,7 @@ Gegenverkehrsregelung	X::inwork 20302,1613
 Am Falkenberg	X::inwork 21497,1042
 # 
 #: next_check_id: SGEHRENSEE-2023
+#: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/s-bahnhof-gehrenseestrasse-wird-grunderneuert_a391406
 #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023)
 #: last_checked: 2023-07-08
 #: next_check: 2023-12-08
@@ -107,7 +108,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-05-06 vvv
+#: last_checked: 2023-07-29 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
@@ -146,14 +147,20 @@ B179/Fichtestr.	X::inwork 26138,-12596
 # REMOVED (vermutlich wegen der Sperrung nicht mehr) --- #: next_check_id: HAEMMERLING-2022 --- #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022) --- #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) --- #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m --- #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig --- #: last_checked: 2023-01-15 vvv --- #: next_check: 2023-01-31 vvv --- #: valid: -20230131 vvv --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317 --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022) --- #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022) (bis 18.11.2022) --- #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt) --- #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022) --- #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung) --- #: last_checked: 2022-11-07 --- #: next_check: 2022-11-18 --- #: valid: -20221118 --- Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
-# REMOVED --- #: next_check_id: RBAHNHOFKOEPENICK-2022
-# REMOVED --- #: next_check_id: HAEMMERLING-2022
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: next_check_id: HAEMMERLING-2022
+#: source_id: viz2021:13.572881,52.460427,14.09.2023,12:00 (bis 27.09.2024) vvv
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-# REMOVED --- #: last_checked: 2023-08-19
-# REMOVED --- #: next_check: 2023-09-14
-# REMOVED --- #: valid: -20230914
-# REMOVED --- Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
+#: last_checked: 2023-08-19 vvv
+#: next_check: 2023-09-13 vvv
+#: valid: -20240927 vvv
+Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
+Hämmerlingstr./Friedenstr.: Gegenverkehrsregelung	X::inwork  22033,6144
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
 # 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: last_checked: 2023-08-06
@@ -3278,7 +3285,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-08-26 vvv
+#: last_checked: 2023-09-09 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -4579,7 +4586,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
-#: last_checked: 2023-03-17
+#: last_checked: 2023-03-26 (mapillary)
 #: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^
