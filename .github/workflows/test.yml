@@ -53,7 +53,9 @@ jobs:
         sudo apt-get update -qq
         sudo apt-get remove -y libgd3 nginx
       if: "startsWith(matrix.os, 'ubuntu-')"
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+      with:
+        show-progress: false
     - name: Build and test
       env:
         USE_SYSTEM_PERL:          1
@@ -147,6 +149,7 @@ jobs:
         { set -o pipefail; curl -s -I http://bbbike.de/robots.txt | head -1; } || { echo "::warning::network check on bbbike.de port 80 failed";            echo "BBBIKE_TEST_SKIP_BBBIKE_DE=1"  >> "$GITHUB_ENV"; }
         { set -o pipefail; curl -s -I https://download.bbbike.org | head -1; } || { echo "::warning::network check on download.bbbike.org port 443 failed"; echo "BBBIKE_TEST_SKIP_BBBIKE_ORG=1" >> "$GITHUB_ENV"; }
         { set -o pipefail; curl -s -I http://mydebs.bbbike.de:8000/dists/jessie/InRelease | head -1; true; } || { echo "::warning::network check on port 8000 failed"; }
+    # must stick with v3 here, v4 is not compatible with old debian
     - uses: actions/checkout@v3
     - name: Build and test
       run: |
