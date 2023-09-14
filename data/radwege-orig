@@ -1875,7 +1875,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 #: note: Detmolder Str.
 #: by: http://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024)
 #: XXX Sanierung der Radwege vvv
-#: last_checked: 2023-07-01 vvv
+#: last_checked: 2023-09-14 vvv
 #: next_check: 2024-12-31 vvv
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 # REMOVED (hängt nicht mehr) --- #: note: ein vergessenes Radwegschild?
@@ -7603,7 +7603,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2023-08-25
+#: last_checked: 2023-09-14
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7770,7 +7770,7 @@ Gehweg für Radfahrer frei	RW1; -264,13009 -278,13094 -309,13268
 	RW1; 4545,22312 4604,22332 4658,22350
 teilweise Radspur, teilweise asphaltiertes Straßenbahnkap	RW1;RW1 19681,5924 19795,5935
 	RW3;RW3 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
-unbefestigter Gehweg für Radfahrer frei	RW1;RW9 -1082,2140 -987,2203 -882,2260
+unbefestigter Gehweg für Radfahrer frei	RW1;RW9 -1082,2140 -1078,2154 -987,2205 -878,2265
 asphaltiertes Straßenbahnkap	RW1;RW1 13786,12636 13828,12658
 asphaltiertes Straßenbahnkap	RW1; 14073,12755 14089,12805
 im Kurverbereich als Hochbordradweg	RW3;RW3 16220,25716 16294,25683 16414,25575
@@ -7979,7 +7979,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="32"
 #: osm_watch: way id="335487059" version="27"
-#: last_checked: 2023-08-25 vvv
+#: last_checked: 2023-09-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

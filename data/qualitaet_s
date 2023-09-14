@@ -517,13 +517,13 @@ Königstr.: Asphalt	Q0 548,3023 595,3067
 Königstr.: Kleinsteinpflaster	Q1 595,3067 669,3119
 Königstr.: schlechtes Kopfsteinpflaster	Q3 431,2984 292,2905 200,2855 104,2802 12,2752 -81,2699 -155,2658 -197,2634
 Königstr.: schlechtes Kopfsteinpflaster	Q3; -197,2634 -298,2577
-Königstr.: schlechtes Kopfsteinpflaster, provisorischer Asphaltstreifen	Q3; -298,2577 -197,2634
+Königstr.: schlechtes Kopfsteinpflaster, provisorischer Asphaltstreifen	Q2; -298,2577 -197,2634
 Königsweg: Beton	Q0 -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
 Königsweg: Waldweg, mäßig bis OK	Q2 -3096,1026 -3413,843
 Königsweg: Kleinsteinpflaster	Q1 -3413,843 -3506,791
-Königsweg: gut befahrbarer Waldweg	Q1 -3506,791 -4256,369 -5960,-604 -6380,-848 -6807,-1093 -6928,-1076
+Königsweg: gut befahrbarer Waldweg	Q1 -3506,791 -4256,369 -5960,-604 -6380,-848 -6793,-1085 -6919,-1072
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
-Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2605,1302
+Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2140,1555 -2605,1302
 Sonntagstr.: Kopfsteinpflaster	Q2 14460,11455 14453,11439 14535,11327 14598,11245 14669,11157 14760,11044
 Ostkreuz: Asphalt	Q0 14808,10978 14851,10966
 Ostkreuz: Asphalt	Q0 14760,11044 14808,10978
@@ -3071,7 +3071,7 @@ Adelheid-Poninska-Str.: Asphalt	Q0 -7322,13161 -7378,13167 -7496,13214 -7595,132
 (Radweg parallel zur Potsdamer Chaussee): Asphalt	Q0 -6603,9918 -7238,9086 -7252,8982 -7255,8971 -7414,8970 -7530,8825 -7539,8788 -7597,8735 -7729,8553 -7783,8524
 Kätchenweg: Verbundsteinpflaster	Q1 -7020,-1275 -6975,-1250
 Kätchenweg: Pfad	Q2 -6975,-1250 -6914,-1218
-Dorotheenstr. (Wannsee): Asphalt	Q0 -6991,-1159 -6914,-1218
+Dorotheenstr. (Wannsee): Asphalt	Q0 -6987,-1160 -6914,-1218
 Grüner Weg (Wannsee): Kopfsteinpflaster	Q2 -6830,499 -6921,448 -6956,456 -7009,449 -7045,473
 Stutterichstr.: schlechtes Kopfsteinpflaster	Q3 -6875,555 -6830,499 -6807,464
 Charlottenstr. (Wannsee): Asphalt	Q0 -6855,567 -6886,629 -6909,661 -6955,742
@@ -9989,7 +9989,7 @@ Barkenhof: Kopfsteinpflaster	Q2 -1892,1732 -1889,1693
 Widenhof: Kopfsteinpflaster	Q2 -1813,1776 -1805,1740
 Kesperhof: Kopfsteinpflaster	Q2 -1734,1806 -1724,1785
 Flererhof: Kopfsteinpflaster	Q2 -1655,1847 -1650,1826
-Königsweg: Asphalt	Q0 -882,2260 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510 -298,2577
+Königsweg: Asphalt	Q0 -878,2265 -844,2268 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510 -298,2577
 Schubertstr.: schlechtes Kopfsteinpflaster	Q3 2328,3482 2289,3500
 Mirabellenblütenweg: unbefestigte Schotterstraße	Q2 11308,21550 11296,21456
 Mirabellenblütenweg: unbefestigte Schotterstraße	Q2 11249,21463 11296,21456 11397,21440
@@ -11126,7 +11126,7 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Neuköllnische Wiesen, Hauptweg): Verbundsteinpflaster	Q1 14903,7997 14968,8046 14976,8053
 (Hänselstr. - Michael-Bohnen-Ring): neues Betonsteinpflaster	Q0 15143,6865 15251,6745
 (Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
-Holstweg: Beton und Asphalt	Q0 -1013,2579 -882,2260
+Holstweg: Beton und Asphalt	Q0 -1013,2579 -878,2265
 (Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1 1690,4708 1730,4743
 (Uferweg - Forster Str.): unbefestigt	Q2 12280,9728 12286,9739
 (Uferweg - Liegnitzer Str.): unbefestigt	Q2 12432,9652 12441,9663
@@ -15577,7 +15577,7 @@ Melsunger Str.: mäßiger Asphalt	Q1 -4694,8897 -4786,8847 -5071,8864 -5382,8880
 Schützenstr. (Spandau): guter Asphalt	Q0 -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
 Fliegerhorstsiedlung: guter Asphalt	Q0 -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838
 Kramstaweg: guter Asphalt	Q0 -1174,2516 -1147,2437 -1144,2276 -1012,2276
-Ravenweg: guter Asphalt	Q0 -1097,2546 -1012,2276 -987,2203
+Ravenweg: guter Asphalt	Q0 -1097,2546 -1012,2276 -987,2205
 Nipkowstr.: Asphalt, einige leichte Schäden	Q0 20352,3744 20499,3572
 Nipkowstr.: Asphalt	Q0 20499,3572 20644,3395 20717,3310 20772,3244 20839,3163
 Nienkemperstr.: guter Beton	Q0 1658,1852 1640,1922 1710,2189

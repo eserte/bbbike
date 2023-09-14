@@ -859,9 +859,9 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: osm_watch: way id="1146544138" version="3"
 #: note: Länge der Engstelle etwa 40m
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-05-29
-#: check_frequency: 90d
-#: next_check: 2023-12-31
+#: last_checked: 2023-09-14
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2023-12-31
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 # 
 # REMOVED (offen) --- #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/ --- #: XXX laut Schild bis Dezember 2021 (dauer aber länger) --- #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv) --- #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv) --- #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv) --- #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv) --- #: osm_watch: way id="1096203482" version="8" --- #: also_indoor: traffic (ex-H,B,ex-G,W) --- #: last_checked: 2023-08-05 --- #: check_frequency: 30d --- #: next_check: 2023-06-28 --- Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
@@ -4607,6 +4607,8 @@ Genter Str.: einige Fußgänger	q1 7064,15515 7012,15571
 (Zitadellenpark - Zitadellenweg): einige Fußgänger	q1 -2364,14812 -2340,14834 -2299,14842 -2274,14862 -2246,14857 -2213,14855 -2208,14811 -2193,14799
 #: in Höhe Zitadelle Richtung Westen Grünanlagenschild ohne Zusatzschilder
 Wladimir-Gall-Weg: einige Fußgänger	q1 -2735,15062 -2708,15004 -2738,14961 -2858,14961 -2885,14943 -2900,14896 -2888,14743 -2838,14589 -2800,14566 -2668,14635 -2618,14654 -2570,14661 -2464,14664 -2452,14664 -2430,14675 -2424,14718 -2480,14818 -2412,14800 -2364,14812
+# 
+Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 # 
 ######################### User Contributions #################################
 # 

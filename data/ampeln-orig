@@ -183,9 +183,9 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
-#: source_id: viz2021:13.560004,52.48297,07.07.2023,11:00 (bis 01.09.2023) (bis 18.09.2023)
-#: next_check: 2023-09-18
-#: valid: -20230918
+#: source_id: viz2021:13.560004,52.48297,07.07.2023,11:00 (bis 01.09.2023) (bis 18.09.2023) (bis 9.10.2023)
+#: next_check: 2023-10-09
+#: valid: -20231009
 Köpenicker Str./Geraldweg: Gegenverkehrsregelung	X::inwork 21072,8742
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
@@ -370,7 +370,9 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 	X 8982,8781
 	X 8594,8777
 	X 8298,8774
+#: off: night (2023-09-14 (Th) 23:00)
 	X 8598,9074
+#: off: night (2023-09-14 (Th) 23:00)
 	X 8389,9087
 	X 8598,9269
 #: note: Anforderung für Radfahrer, die von Yorckstr. links in die Katzbachstr. abbiegen
@@ -897,6 +899,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: linksabbiegen Radfahrer An der Wuhlheide -> Weiskopffstr. müssen an zwei Ampeln warten oder frühzeitig auf die Linksabbiegespur wechseln
 	X 19957,5941
 	X 22467,6135
+#: off: night (seen 2023-09-14 (Th) 23:00)
 	X 7389,8837
 	X 6142,9134
 	X 6059,9118
@@ -1143,6 +1146,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12180,11657
 	X 14639,11512
 	X 14575,11407
+#: off: night (seen 2023-09-14 (Th) 22:55)
 	X 7086,8579
 #: note: Kontaktschleifen in der Nebenstraßenrelation
 	X 6144,7677
@@ -2747,6 +2751,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: keine Anforderungsampel, wahrscheinlich gleichgeschaltet mit der Ampel an der Grunewaldstr.
 	F 4900,5648
 #: note: Anforderungsampel
+#: off: night (seen 2023-09-14 (Th) 22:50)
 	F 6333,7708
 #: note: am Wochenende nicht eingeschaltet
 	X 8868,2061
@@ -3059,6 +3064,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 18042,4667
 	X 18445,2642
 	X 17364,3565
+#: off: night (seen 2023-09-14 (Th) 23:00)
 	F 8053,9123
 	F 6445,8949
 	X 5360,6642
@@ -3877,7 +3883,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -7055,-3120
 # REMOVED (existiert nicht mehr) ---	X -5662,-3583
 	X -9462,-2540
-	X -9734,-1896
+	X -9725,-1892
 	X -9735,-1845
 	X -16026,1044
 	X -10281,-2690

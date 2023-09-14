@@ -195,7 +195,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2023-08-25
+#: last_checked: 2023-09-14
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -207,7 +207,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2023-08-25 vvv
+#: last_checked: 2023-09-14 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -829,15 +829,15 @@ Königstr.: Asphalt	Q0 548,3023 595,3067
 Königstr.: Kleinsteinpflaster	Q1 595,3067 669,3119
 Königstr.: schlechtes Kopfsteinpflaster	Q3 431,2984 292,2905 200,2855 104,2802 12,2752 -81,2699 -155,2658 -197,2634
 Königstr.: schlechtes Kopfsteinpflaster	Q3; -197,2634 -298,2577
-Königstr.: schlechtes Kopfsteinpflaster, provisorischer Asphaltstreifen	Q3+; -298,2577 -197,2634
+Königstr.: schlechtes Kopfsteinpflaster, provisorischer Asphaltstreifen	Q2-; -298,2577 -197,2634
 Königsweg: Beton	Q0 -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
 Königsweg: Waldweg, mäßig bis OK	Q2+ -3096,1026 -3413,843
 Königsweg: Kleinsteinpflaster	Q1- -3413,843 -3506,791
-Königsweg: gut befahrbarer Waldweg	Q1- -3506,791 -4256,369 -5960,-604 -6380,-848 -6807,-1093 -6928,-1076
+Königsweg: gut befahrbarer Waldweg	Q1- -3506,791 -4256,369 -5960,-604 -6380,-848 -6793,-1085 -6919,-1072
 # REMOVED (laut osm fertig) --- #: XXX Asphaltstreifen (3m) geplant (wurde dieser Abschnitt schon realisiert? -> nein) --- #: osm_watch: way id="23044828" version="13" --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf --- #: last_checked: 2015-12-05
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
 # REMOVED (fertig) --- #: XXX Instandsetzung, wird neu asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php --- #: last_checked: 2015-09-27 --- #: check_frequency: 30d
-Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2605,1302
+Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2140,1555 -2605,1302
 Sonntagstr.: Kopfsteinpflaster	Q2 14460,11455 14453,11439 14535,11327 14598,11245 14669,11157 14760,11044
 # REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14760,11044 14808,10978
 Ostkreuz: Asphalt	Q0 14808,10978 14851,10966
@@ -4108,7 +4108,7 @@ Adelheid-Poninska-Str.: Asphalt	Q0 -7322,13161 -7378,13167 -7496,13214 -7595,132
 (Radweg parallel zur Potsdamer Chaussee): Asphalt	Q0 -6603,9918 -7238,9086 -7252,8982 -7255,8971 -7414,8970 -7530,8825 -7539,8788 -7597,8735 -7729,8553 -7783,8524
 Kätchenweg: Verbundsteinpflaster	Q1 -7020,-1275 -6975,-1250
 Kätchenweg: Pfad	Q2 -6975,-1250 -6914,-1218
-Dorotheenstr. (Wannsee): Asphalt	Q0 -6991,-1159 -6914,-1218
+Dorotheenstr. (Wannsee): Asphalt	Q0 -6987,-1160 -6914,-1218
 Grüner Weg (Wannsee): Kopfsteinpflaster	Q2 -6830,499 -6921,448 -6956,456 -7009,449 -7045,473
 Stutterichstr.: schlechtes Kopfsteinpflaster	Q3 -6875,555 -6830,499 -6807,464
 Charlottenstr. (Wannsee): Asphalt	Q0 -6855,567 -6886,629 -6909,661 -6955,742
@@ -11718,7 +11718,7 @@ Barkenhof: Kopfsteinpflaster	Q2+ -1892,1732 -1889,1693
 Widenhof: Kopfsteinpflaster	Q2+ -1813,1776 -1805,1740
 Kesperhof: Kopfsteinpflaster	Q2+ -1734,1806 -1724,1785
 Flererhof: Kopfsteinpflaster	Q2+ -1655,1847 -1650,1826
-Königsweg: Asphalt	Q0 -882,2260 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510 -298,2577
+Königsweg: Asphalt	Q0 -878,2265 -844,2268 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510 -298,2577
 Schubertstr.: schlechtes Kopfsteinpflaster	Q3 2328,3482 2289,3500
 Mirabellenblütenweg: unbefestigte Schotterstraße	Q2 11308,21550 11296,21456
 Mirabellenblütenweg: unbefestigte Schotterstraße	Q2 11249,21463 11296,21456 11397,21440
@@ -12223,6 +12223,10 @@ Händelplatz: Beton	Q0- 4568,4789 4543,4820
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238
 Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053
 Klingsorstr.: schadhafter Asphalt	Q1+ 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
+#: next_check_id: KLINGSOR-2023
+#: XXX Sanierung des Asphalts
+#: last_checked: 2023-09-14
+#: next_check: 2023-11-01
 Klingsorstr.: schadhafter Asphalt	Q1+ 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
 #: historical_note: früher schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5535,5068 5583,5179
@@ -13004,7 +13008,7 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Neuköllnische Wiesen, Hauptweg): Verbundsteinpflaster	Q1 14903,7997 14968,8046 14976,8053
 (Hänselstr. - Michael-Bohnen-Ring): neues Betonsteinpflaster	Q0- 15143,6865 15251,6745
 (Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2- 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
-Holstweg: Beton und Asphalt	Q0- -1013,2579 -882,2260
+Holstweg: Beton und Asphalt	Q0- -1013,2579 -878,2265
 (Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1- 1690,4708 1730,4743
 (Uferweg - Forster Str.): unbefestigt	Q2 12280,9728 12286,9739
 (Uferweg - Liegnitzer Str.): unbefestigt	Q2 12432,9652 12441,9663
@@ -19567,7 +19571,7 @@ Altmarkstr.: guter Asphalt	Q0 6343,6297 6323,6270 6300,6214 6306,6124 6318,6006 
 #: note: laut ADFC-Karte "gut geeignet"
 #: confirmed_by: srt
 Friedrichsruher Str.: Asphalt	Q0 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
-#: note: laut ADFC-Karte zumindest der nördliche Abschnitt gut geeignet
+#: confirmed_by: srt (nördlicher Abschnitt)
 Schönhauser Str.: Asphalt	Q0 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 #: corrected_by: srt (Asphalt -> ...)
 Jeverstr.: Verbundsteinpflaster	Q1 5672,5751 5682,5798
@@ -24978,7 +24982,7 @@ Fliegerhorstsiedlung: guter Asphalt	Q0 -7330,7878 -7305,7838 -7266,7775 -7168,78
 #: by: Uwe (upvlh): vvv
 Kramstaweg: guter Asphalt	Q0 -1174,2516 -1147,2437 -1144,2276 -1012,2276
 #: note: 30er-Zone
-Ravenweg: guter Asphalt	Q0 -1097,2546 -1012,2276 -987,2203
+Ravenweg: guter Asphalt	Q0 -1097,2546 -1012,2276 -987,2205
 #: by: ^^^
 # 
 #: by: XBowe: vvv
@@ -32574,4 +32578,6 @@ Kreuzungsbereich asphaltiert	Q0 10502,17286
 Einmündungsbereich mit Kleinsteinpflaster	Q2+ 10655,16904
 Einmündungsbereich asphaltiert	Q0 10886,16893
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 19871,9680
+Einmündungsbereich asphaltiert	Q0 37,2562
+Einmündungsbereich asphaltiert	Q0 272,2548
 #: ignore ^^^
