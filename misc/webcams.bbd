@@ -168,7 +168,8 @@ https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WC 7682,13984 7647
 https://cam.webcam-profi.de/bilder/fay/spandau/image.jpg	WC -3647,13878 -3490,13938
 # REMOVED (404) --- http://baustelle.strabag.com/de/germany/?Webcam[selected_webcam]=129	WC 10009,11336 10008,11412
 # REMOVED (page exists, but no webcam) --- http://the-westlight.de/de/gebaeude.html	WC 6115,10956 6198,11003
-https://trockland.webcam-profi.de/berlin/pier6163/image.jpg	WC 12770,10969 12775,11090
+#: note: 404 (2023-09-15)
+https://trockland.webcam-profi.de/berlin/pier6163/image.jpg	WCbroken 12770,10969 12775,11090
 https://www.finanzen.de/webcam	WC 13440,10498 13368,10637
 # REMOVED (404) --- http://www.wsv.de/wsa-b/aktuelles/webcam/index.html	WC 10913,12120 10800,12129
 # REMOVED (login page) --- https://baucam159.it-wms.com/	WC 5778,7884 5698,7884
@@ -176,14 +177,14 @@ https://www.finanzen.de/webcam	WC 13440,10498 13368,10637
 # REMOVED --- http://www.johthal.de/	WC 17694,5315 17600,5333
 # REMOVED --- http://www.johthal.de/instar-video.html	WC 17694,5312 17645,5366
 # REMOVED --- http://www.johthal.de/instar-video2.html	WC 17691,5318 17657,5273
+# REMOVED --- #: note: "Leider ist unsere webcam defekt." (19.2.2022; still broken: 29.12.2022); falscher Redirect auf alle-an-deck.de, dort keine Webcam auffindbar --- https://www.surf-und-segelschule-mueggelsee.de/webcam/webcam.php	WCbroken 29111,4449 28990,4440
 # 
-#: note: "Leider ist unsere webcam defekt." (19.2.2022; still broken: 29.12.2022)
-https://www.surf-und-segelschule-mueggelsee.de/webcam/webcam.php	WCbroken 29111,4449 28990,4440
+# REMOVED --- #: note: broken since Sep 2021 (last checked: 19.2.2022; still broken: 11.11.2022; certificate expired on 2022-12-19; host does not exist anymore (2023-09-15)) --- https://camera.deckchair.com/park-inn-berlin-alexanderplatz	WCbroken 10913,13028 10805,12853
+#: note: schwenkt automatisch
+https://www.parkinn-berlin.de/en/panorama-terrace/	WC 10913,13028 10805,12853
 # 
-#: note: broken since Sep 2021 (last checked: 19.2.2022; still broken: 11.11.2022; certificate expired on 2022-12-19)
-https://camera.deckchair.com/park-inn-berlin-alexanderplatz	WCbroken 10913,13028 10805,12853
-# 
-https://www.youtube.com/watch?v=AmJdb4h8Z4k	WC 10938,12882 11066,12913
+#: note: Livestream wurde im April 2023 beendet
+https://www.youtube.com/watch?v=AmJdb4h8Z4k	WCbroken 10938,12882 11066,12913
 # 
 https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
 # 
