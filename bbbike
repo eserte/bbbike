@@ -14140,8 +14140,17 @@ sub handle_show_info_url {
 # Zeigt Informationen zum aktuellen Tag.
 ### AutoLoad Sub
 sub show_info {
-    my($x, $y) = @_;
-    my(@tags) = $c->gettags('current');
+    my @tags;
+    {
+	my @forbidden_tags_rxs = ('^show$', '^route$', '-label'); # ignore labels and show marker etc.
+	my $forbidden_tags_qr = join("|", @forbidden_tags_rxs);
+	$forbidden_tags_qr = qr{$forbidden_tags_qr};
+	@tags = $c->gettags('current');
+	if (grep { $_ =~ $forbidden_tags_qr } @tags) {
+	    (undef, @tags) = find_below_rx($c, [q{.}], undef, \@forbidden_tags_rxs);
+	}
+    }
+
     return if !@tags || !defined $tags[0];
     my($base_tag, $is_p);
 
