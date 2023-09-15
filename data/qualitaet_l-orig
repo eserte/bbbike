@@ -4636,8 +4636,9 @@ Lerchenstr.: Beton	Q0- 32940,5485 32961,5707 32978,5895
 Lerchenstr.: Beton	Q0- 32978,5895 33006,6162 33015,6171
 Lenzstr.: unbefestigte Straße	Q2 33047,5433 33073,5667
 Lenzstr.: Asphalt	Q0 33073,5667 33098,5856
-#: add_fragezeichen: ist der nördliche Abschnitt der Lenzstr. ebenfalls asphaltiert?
-Lenzstr.: Asphalt	Q0 33098,5856 33119,6053 33135,6164
+#: add_fragezeichen: ist der nördliche Abschnitt der Lenzstr. asphaltiert oder unbefestigt?
+#: XXX Mapillary-Bilder sind etwas unscharf, aber das sieht eher nach "unbefestigt" aus...
+Lenzstr.: unbefestigt	Q2 33098,5856 33119,6053 33135,6164
 Etkar-André-Str.: unbefestigte Straße	Q2 33158,5420 33183,5630
 Etkar-André-Str.: unbefestigter Weg	Q2+ 33183,5630 33207,5820
 Eichendamm: Verbundsteinpflaster	Q1+ 32797,6434 32773,6334 32749,6129 32728,5942

@@ -852,6 +852,15 @@ Torstr. (Richtungsfahrbahn)	1::igndisp 11160,13492 11111,13518 10898,13632
 Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
 Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 #: note ^^^
+# 
+Turmstr.: Straßenbahntrasse	3nocross 6377,13321 6480,13325 6535,13327 6674,13332
+# 
+#: note: Straßenbahntrasse vvv
+Turmstr. (Richtungsfahrbahn)	1::igndisp 5857,13342 5956,13338 6012,13332 6031,13330
+Turmstr. (Richtungsfahrbahn)	1::igndisp 6031,13330 5956,13330 5857,13342
+Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13330 6031,13330
+#: note ^^^
+# 
 #: note: Bundesplatztunnel, Grünanlage vvv
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
@@ -2272,6 +2281,7 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Sonnenallee: Mittelstreifen	3nocross 13011,8416 13038,8394 13102,8343
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10662,12255 10646,12234 10625,12206 10574,12131
+Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10512,12039 10556,12105 10574,12131
 Molkenmarkt: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10703,12313 10714,12355 10710,12377
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
@@ -3628,6 +3638,8 @@ Schranke, auf Gehweg umfahren	BNP:2::trailer=4 23537,15247
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: ONTARIOSEE-2023
+#: osm_watch: way id="25796640" version="21"
+#: osm_watch: way id="176946641" version="11"
 #: last_checked: 2023-09-13
 #: check_frequency: 90d
 #: next_check: 2024-10-31
@@ -3641,16 +3653,16 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
 #: next_check_id: SAATWINKLER-2023
-#: last_checked: 2023-08-20 vvv
-#: check_frequency: 180d vvv
-#: next_check: 2023-10-01 vvv
+#: last_checked: 2023-09-01 (daf) vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2023-10-01 vvv
 #: osm_watch: way id="1198442169" version="4"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
 #: osm_watch: way id="1152661787" version="11"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
 #: osm_watch: way id="1198395777" version="6"
 Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486 -213,15529 -218,15558
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3734,7 +3746,7 @@ Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,120
 # 
 #: next_check_id: CLARAMUELLERJAHNKE-2023
 #: also_indoor: traffic (none)
-#: last_checked: 2023-06-10
+#: last_checked: 2023-09-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 (Fahlenbergstr. - Einkaufszentrum Lagunenweg): Bauarbeiten, Straße wird neu gemacht	2::inwork 31971,3170 31788,3192 31762,3202
@@ -3809,7 +3821,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/auswaertiges-amt/kurstrasse-33-35.html (Fertigstellung 2027/2028)
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
-#: last_checked: 2023-08-24
+#: last_checked: 2023-09-14 (daf)
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -3858,7 +3870,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-09-13
+#: last_checked: 2023-09-15
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4101,7 +4113,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="21"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2023-07-26 (mapillary)
+#: last_checked: 2023-09-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4158,8 +4170,9 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: next_check_id: TEGELERBRUECKE-2021
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-31-august-2023-rollt-der-verkehr-ueber-die-neue-tegeler-bruecke_a389844 (Abschluss bis Jahresende (2023)?)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/auf-der-neuen-bruecke-zwischen-tegel-und-siemensstadt-fliesst-der-verkehr_a391961 (Sperrung bis April 2024)
+#: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=746926#post746926
 #: osm_watch: way id="930890136" version="20"
-#: last_checked: 2023-05-18
+#: last_checked: 2023-09-01 (daf)
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-01
 #: next_check: 2024-04-30
@@ -4321,7 +4334,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6"
 #: osm_watch: way id="1095306828" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-08-20
+#: last_checked: 2023-09-15
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4542,7 +4555,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-08-17
+#: last_checked: 2023-08-26
 Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 # REMOVED (Wegführung existiert nicht mehr) --- Grunerstr.: Radweg	1::igndisp 10973,12611 10954,12604 10931,12622
 # 
@@ -4554,7 +4567,7 @@ Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-09-14
+#: last_checked: 2023-09-15
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
@@ -4945,11 +4958,12 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136312310058/312310058/00343264/64-Anlagen/01/BVV_VzK_Anita-Berber-Platz.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_25_2105_2220_online.pdf (Straßenbenennung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/upside-berlin-max-und-moritz.182/
+#: by: https://www.deutsches-architekturforum.de/thread/11490-hochh%C3%A4user-max-und-moritz-upside-berlin-95-86m-in-bau/?postID=747798#post747798 (Insolvenz)
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
 #: last_checked: 2023-08-25
-#: check_frequency: 90d
+#: check_frequency: 180d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16 --- #: osm_watch: way id="276821479" version="5" --- #: XXX möglicherweise mittlerweile offen --- #: last_checked: 2023-01-11 --- #: check_frequency: 90d --- #: next_check: 2023-01-22 --- Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
@@ -5046,7 +5060,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="4"
-#: last_checked: 2023-06-12 (daf)
+#: last_checked: 2023-09-09 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
@@ -5280,11 +5294,6 @@ Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocros
 An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308
 #: historical_note: früher: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)
 Rathenower Str.: Straßenbahntrasse	3nocross 7172,13051 7187,13126 7161,13190
-Turmstr.: Straßenbahntrasse	3nocross 6377,13321 6480,13325 6535,13327 6674,13332
-#: next_check_id: TRAMTURM-2021
-#: by: https://www.bahninfo-forum.de/read.php?9,776966,776966#msg-776966 (Vermutung bestätigt)
-#: XXX vermutet, überprüfen!
-Turmstr.: Straßenbahntrasse	3nocross 5857,13342 5956,13330 6011,13330
 schieben - einzelne Stufen	0:20 1372,8011
 tragen (4 x 12 Stufen)	0:180 876,8131
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1256,7841

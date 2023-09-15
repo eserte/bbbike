@@ -17,15 +17,13 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 20381,1390
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/
 #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/rohrdammbruecke-wird-saniert_a389916
 #: note: Gilt vermutlich nur für den Radverkehr Richtung Norden (gesonderte Radspur); Richtung Süden weiterhin der alte Hochbordradweg
-#: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) vvv
-#: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 30.11.2023) vvv
-#: next_check: 2023-11-30 vvv
-#: valid: -20231130 vvv
+#: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) (bis 30.11.2023) (bis 31.10.2023) vvv
+#: next_check: 2023-10-31 vvv
+#: valid: -20231031 vvv
 Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1170,13521
 Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1124,13599
 #: valid ^^^
 #: next_check ^^^
-#: source_id ^^^
 #: source_id ^^^
 # 
 # REMOVED --- #: by: https://nitter.net/VIZ_Berlin/status/1683357845155115010#m --- #: by: https://nitter.net/pic/orig/media%2FF1fwqZtXgA4eKSM.jpg --- #: source_id: viz2021:13.541546,52.423078,24.07.2023,09:00 (bis 21.08.2023) (bis 25.08.2023) (inaktiv) --- #: next_check: 2023-08-25 --- #: valid: -20230825 --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork 19933,2078
@@ -1561,7 +1559,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16368,11912
 	X 6757,13112
 	X 5975,13256
-	X 5956,13330
+# REMOVED (Ampel wurde bei der Straßenbahnerweiterung abgebaut) ---	X 5956,13330
 	X -1350,14646
 #: note: Anforderung für linksabbiegende Radfahrer (Am Juliusturm -> Daumstr.)
 #: XXX_prog: gilt nicht für geradesausfahrende Radfahrer
@@ -1655,7 +1653,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="3"
-#: last_checked: 2023-07-11 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2023-09-15 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -2607,13 +2605,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-08-24
+#: last_checked: 2023-09-15
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-08-24
+#: last_checked: 2023-09-15
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3291,7 +3289,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-09-09 (mapillary) vvv
+#: last_checked: 2023-09-11 (daf) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3366,6 +3364,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderung für Radfahrer/Fußgänger quer zur Schildhornstr.
 	X 4937,6205
 	F 6115,13328
+	F 6031,13330
 # 
 # REMOVED (nein, es bleibt bei einer Fußgängerampel) --- #: next_check_id: TRAMTURM-2021 --- #: XXX wird im Zuge des Straßenbahnnaus zur "richtigen" Ampel --- #: next_check: 2023-07-07
 #: note: Anforderungsampel
@@ -3658,7 +3657,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-07-26 (mapillary)
+#: last_checked: 2023-09-02 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 

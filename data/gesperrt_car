@@ -885,11 +885,8 @@ Straßenbahntrasse	3nocross::ignrte 21789,4520 21781,4470 21778,4440
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21778,4440 21781,4470 21585,4459
 Rudower Str. -> Köllnischer Pl.: Straßenbahntrasse	3::igndisp 21585,4459 21781,4470 21789,4520
 Kietz	1 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
-Mittelstreifen	3nocross::ignrte 5705,13359 5857,13342 5956,13330
-Turmstr. -> Bremer Str.: Mittelstreifen	3::igndisp 5705,13359 5857,13342 5868,13441
-Bremer Str. -> Turmstr.: Mittelstreifen	3::igndisp 5868,13441 5857,13342 5956,13330
-Mittelstreifen	3nocross::ignrte 6228,13324 6115,13328 6105,13328 6011,13330
-Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6011,13330 6105,13328 6104,13530
+Mittelstreifen	3nocross::ignrte 6228,13324 6115,13328 6105,13328 6031,13330
+Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6031,13330 6105,13328 6104,13530
 Wilhelmshavener Str. -> Turmstr.: Mittelstreifen	3::igndisp 6104,13530 6105,13328 6115,13328
 Straßenbahntrasse	3nocross::ignrte 10935,22174 10999,22195 11073,22225
 Rosenthaler Weg -> Guyotstr.: Straßenbahntrasse	3::igndisp 11073,22225 10999,22195 11056,21978

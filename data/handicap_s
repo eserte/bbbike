@@ -421,6 +421,8 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10662,11863 10672,11870
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10680,11875 10776,11942
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10776,11942 10824,11992
+(Fischerinsel, Spreeufer): Fußgänger	q2 10742,12033 10755,12053 10699,12089 10619,12103 10599,12089
+(Fischerinsel, Spreeufer): Rampe, Bordstein	q3 10599,12089 10598,12104 10579,12089 10556,12105
 (Baikalstr. - Rummelsburger Str.): Fußgänger, Bordstein	q3 17276,10617 17277,10633
 (Baikalstr. - Rummelsburger Str.): Fußgänger, Rampe	q2 17277,10633 17298,10633
 (Baikalstr. - Rummelsburger Str.): Fußgänger, Radfahren erlaubt	q1 17298,10633 17249,10651
@@ -3480,3 +3482,4 @@ Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6518,9867 6492,9782
 Blissestr.: linker Gehweg	q3::igndisp; 4769,8563 4754,8608
 Hansastr.: linker Gehweg	q3::igndisp; 15866,16823 15917,16858
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	q4::igndisp; 10807,9686 10802,9673 10774,9681
+Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	q3::igndisp; 6012,13338 6031,13330
