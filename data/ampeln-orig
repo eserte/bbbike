@@ -62,8 +62,10 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
-#: last_checked: 2023-08-26
-#: check_frequency: 120d
+#: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
+#: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
+#: last_checked: 2023-09-16
+#: check_frequency: 180d
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
 # 
@@ -149,7 +151,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,14.09.2023,12:00 (bis 27.09.2024) vvv
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2023-08-19 vvv
+#: last_checked: 2023-08-28 vvv
 #: next_check: 2023-09-13 vvv
 #: valid: -20240927 vvv
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
@@ -193,7 +195,7 @@ Köpenicker Str./Geraldweg: Gegenverkehrsregelung	X::inwork 21072,8742
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
 #: osm_watch: way id="870502434" version="3"
-#: last_checked: 2023-06-22
+#: last_checked: 2023-09-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
@@ -3289,7 +3291,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-09-11 (daf) vvv
+#: last_checked: 2023-09-16 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3363,8 +3365,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 20927,3292
 #: note: Anforderung für Radfahrer/Fußgänger quer zur Schildhornstr.
 	X 4937,6205
-	F 6115,13328
-	F 6031,13330
+#: note: zwei Übergänge, zu beiden Seiten der Wilhelmshavener Str.
+	F 6105,13328
+	F 6022,13330
 # 
 # REMOVED (nein, es bleibt bei einer Fußgängerampel) --- #: next_check_id: TRAMTURM-2021 --- #: XXX wird im Zuge des Straßenbahnnaus zur "richtigen" Ampel --- #: next_check: 2023-07-07
 #: note: Anforderungsampel

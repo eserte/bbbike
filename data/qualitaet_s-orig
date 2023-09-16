@@ -4122,7 +4122,7 @@ Kornaue: Asphalt	Q0 -6932,1224 -7022,1290
 Am Heidesaum: Asphalt	Q0 -7001,1323 -7022,1290 -7078,1216
 Grassoweg: schlechtes Kopfsteinpflaster	Q3 -6188,997 -6179,1020 -6181,1053 -6193,1097
 Grassoweg: Gehwegplatten	Q1+ -6193,1097 -6216,1192
-Wickenhagenweg: Asphalt	Q0 -6170,969 -6137,864
+Wickenhagenweg: Asphalt mit Sch‰den	Q1- -6170,969 -6137,864
 Wickenhagenweg: Verbundsteinpflaster	Q1 -6137,864 -6125,838
 Waltharistr.: schlechtes Kopfsteinpflaster	Q3 -4031,1706 -4239,1512 -4401,1357
 Lohengrinstr. (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3785,1451 -3791,1512 -3813,1545 -3883,1610 -3931,1637 -3995,1673 -4031,1706 -4071,1739
@@ -12785,7 +12785,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18222,8103 18276,8136
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
-George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
+George-Stephenson-Str.: Asphalt	Q0 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 (Straﬂe A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21346,7321 21284,7289 21233,7246
 (Straﬂe B, Innovationspark Wuhlheide): Asphalt	Q0 21346,7321 21341,7487
 (Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
@@ -13238,6 +13238,7 @@ Nymphenburger Str.: Asphalt mit leichten Sch‰den	Q0- 6163,8398 6246,8222
 (Verl‰ngerung Merlitzstr.): Asphalt	Q0 19661,3421 19746,3501
 # 
 (Passage am Tacheles): glattes Pflaster	Q0 9371,13333 9353,13273 9244,13253
+Aaron-Bernstein-Platz: glattes Pflaster	Q0 9353,13273 9382,13265 9385,13246 9463,13256 9476,13293
 # 
 Ida-Wolff-Platz: Verbundsteinpflaster	Q1 9161,10574 9192,10528
 # 
@@ -15171,7 +15172,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erw‰hnung, auﬂerdem Weiterf¸hrung der Fahrradstraﬂe in der Waldstr.)
 #: osm_watch: way id="4764684" version="29"
 #: osm_watch: way id="26790073" version="18"
-#: last_checked: 2023-06-18
+#: last_checked: 2023-09-15 (mapillary)
 #: check_frequency: 360d
 G¸llweg: m‰ﬂiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^

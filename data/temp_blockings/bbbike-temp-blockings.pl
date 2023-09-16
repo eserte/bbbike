@@ -395,7 +395,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006461',
        data  => <<EOF,
-	2 6228,13324 6115,13328 6105,13328 6031,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406 5248,13434
+	2 6228,13324 6105,13328 6022,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406 5248,13434
 EOF
      },
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
@@ -881,7 +881,7 @@ EOF
        text  => 'Turmstraße zwischen Kreuzung Beusselstraße und Kreuzung Stromstraße sowie Thusneldaallee: Straße gesperrt (Turmstraßenfest), Dauer: 03.09.2004 02:00 Uhr bis 06.09.2004 02:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 5248,13434 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6031,13330 6105,13328 6115,13328 6228,13324
+	2 5248,13434 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6022,13330 6105,13328 6228,13324
 	2 5975,13256 5956,13330
 EOF
      },
@@ -5029,7 +5029,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002950',
        data  => <<EOF,
-	2 6228,13324 6115,13328 6105,13328 6031,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406
+	2 6228,13324 6105,13328 6022,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406
 EOF
      },
      { from  => 1151099435, # 2006-06-23 23:50
@@ -5745,7 +5745,7 @@ EOF
        text  => 'Turmstraßenfest vom 01.09. bis 03.09.2006 (zwischen Strom- und Waldstraße) ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6031,13330 6105,13328 6115,13328 6228,13324
+	2::temp 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6022,13330 6105,13328 6228,13324
 EOF
      },
      { from  => 1156456800, # 2006-08-25 00:00
@@ -8206,7 +8206,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005384',
        data  => <<EOF,
-	2::temp 6228,13324 6115,13328 6105,13328 6031,13330 5956,13330 5857,13342 5705,13359
+	2::temp 6228,13324 6105,13328 6022,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
      { from  => $isodate2epoch->("2023-05-05 00:00:00"), # ein Tag Vorlauf
@@ -11522,7 +11522,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008375',
        data  => <<EOF,
-	2::temp 5705,13359 5857,13342 5956,13330 6031,13330 6105,13328 6115,13328 6228,13324
+	2::temp 5705,13359 5857,13342 5956,13330 6022,13330 6105,13328 6228,13324
 EOF
      },
      { from  => 1223933558, # 2008-10-13 23:32
@@ -12657,7 +12657,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009776',
        data  => <<EOF,
-	2::temp 6228,13324 6115,13328 6105,13328 6031,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406
+	2::temp 6228,13324 6105,13328 6022,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406
 EOF
      },
      { from  => 1219874400, # 2008-08-28 00:00
@@ -18863,7 +18863,7 @@ EOF
        text  => 'Turmstraße (Moabit): Veranstaltung (Turmstraßenfest), Straße zwischen Stromstr. und Waldstr. vollständig gesperrt (30.08.2013 bis 01.09.2012)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6031,13330 6105,13328 6115,13328 6228,13324
+	2::temp 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6022,13330 6105,13328 6228,13324
 EOF
      },
      { from  => 1284271200, # 2010-09-12 08:00
@@ -36764,7 +36764,7 @@ EOF
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: osm_watch: way id="1094113747" version="1"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-18
+#: last_checked: 2023-08-20
 #: check_frequency: 180d
 #: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
@@ -38382,7 +38382,7 @@ EOF
        data  => <<EOF,
 #: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="1"
-#: last_checked: 2023-05-21 (mapillary)
+#: last_checked: 2023-09-15 (mapillary)
 #: next_check: 2023-12-31
 	2::inwork 13078,21754 13031,21538 12980,21411
 EOF
@@ -39057,8 +39057,8 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
-#: last_checked: 2023-08-26
-#: check_frequency: 120d
+#: last_checked: 2023-09-16
+#: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
 EOF
@@ -39662,7 +39662,7 @@ EOF
      { from  => 1690581600, # 2023-07-29 00:00
        until => 1734822000, # 2024-12-22 00:00
        prewarn_days => 2,
-       text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
+       text  => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -39671,6 +39671,8 @@ EOF
 #: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
 #: by: https://nitter.net/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
+#: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
+#: last_checked: 2023-09-14 (mapillary)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -40057,6 +40059,7 @@ EOF
 #: by: https://viz.berlin.de/2023/08/verkehrsvorschau-090823/ (Umleitung für Radverkehr via "Am Zirkus") (confirmed by srt, ausgeschildert)
 #: by: https://nitter.net/VIZ_Berlin/status/1689185998544994306#m
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,776461#msg-776461 (Tram fährt mindestens bis zum 1.10.2022 nicht, evtl. wegen dieser Baustelle?)
+#: by: https://www.bahninfo-forum.de/read.php?9,751033,778801#msg-778801 (Ende der Bauarbeiten)
 #: source_id: viz2021:13.387693,52.523668,09.08.2023,11:00 (bis 13.09.2023) (inaktiv)
 # REMOVED --- #: XXX Einschränkungen dokumentieren
 #: priority: #A
@@ -40316,6 +40319,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2023)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: last_checked: 2023-09-12
 #: check_frequency: 60d
@@ -40376,7 +40380,7 @@ EOF
        text  => 'Kapelle-Ufer: in Richtung Moabit zwischen Konrad-Adenauer-Str. und Alexanderufer nachts zwischen 20:00 und 05:00 Uhr gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.09.2023 00:00 bis 20.09.2023 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023)
+#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023) (inaktiv)
 #: source_id: viz2021:13.374981,52.523043,11.09.2023,20:00 (bis 20.09.2023)
 	q4::inwork; 8503,12895 8488,12920 8411,12992 8315,13042
 EOF

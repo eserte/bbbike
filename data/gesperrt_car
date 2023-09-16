@@ -885,9 +885,9 @@ Straßenbahntrasse	3nocross::ignrte 21789,4520 21781,4470 21778,4440
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21778,4440 21781,4470 21585,4459
 Rudower Str. -> Köllnischer Pl.: Straßenbahntrasse	3::igndisp 21585,4459 21781,4470 21789,4520
 Kietz	1 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
-Mittelstreifen	3nocross::ignrte 6228,13324 6115,13328 6105,13328 6031,13330
-Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6031,13330 6105,13328 6104,13530
-Wilhelmshavener Str. -> Turmstr.: Mittelstreifen	3::igndisp 6104,13530 6105,13328 6115,13328
+Mittelstreifen	3nocross::ignrte 6228,13324 6105,13328 6022,13330
+Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6022,13330 6105,13328 6104,13530
+Wilhelmshavener Str. -> Turmstr.: Mittelstreifen	3::igndisp 6104,13530 6105,13328 6228,13324
 Straßenbahntrasse	3nocross::ignrte 10935,22174 10999,22195 11073,22225
 Rosenthaler Weg -> Guyotstr.: Straßenbahntrasse	3::igndisp 11073,22225 10999,22195 11056,21978
 Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10999,22195 10935,22174
@@ -2453,3 +2453,4 @@ Rankestr. -> Breitscheidpl.: Mittelstreifen provisorisch gesperrt	3::igndisp 566
 Breitscheidpl. -> Tauentzienstr.: Mittelstreifen provisorisch gesperrt	3::igndisp 5829,10964 5782,10884 5907,10821
 Breitscheidpl. -> Rankestr.: Mittelstreifen provisorisch gesperrt	3::igndisp 5829,10964 5782,10884 5669,10704
 Stavangerstr.: Einfahrt verboten	1 10886,16893 10883,16824
+Plantagenplatz (Potsdam)	1 -9910,-1626 -9874,-1551

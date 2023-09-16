@@ -2629,35 +2629,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
-#: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
-#: by_ https://www.turmstrasse.de/mitgestalten/kiezfest
-# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
-# REMOVED ---	2::temp 5857,13342 5868,13441 5882,13548
-	2::temp 5857,13342 5868,13441 5956,13433 5956,13338
-',
-         'from' => 1694728800,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.turmstrasse.de/aktuelles',
-         'text' => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2023, voraussichtlich 12 bis 21 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1694890800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4972,7 +4944,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: osm_watch: way id="1094113747" version="1"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-03-18
+#: last_checked: 2023-08-20
 #: check_frequency: 180d
 #: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
@@ -5631,7 +5603,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293
        {
          'data' => '#: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="1"
-#: last_checked: 2023-05-21 (mapillary)
+#: last_checked: 2023-09-15 (mapillary)
 #: next_check: 2023-12-31
 	2::inwork 13078,21754 13031,21538 12980,21411
 ',
@@ -5853,8 +5825,8 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen
-#: last_checked: 2023-08-26
-#: check_frequency: 120d
+#: last_checked: 2023-09-16
+#: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
 ',
@@ -6183,12 +6155,14 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 #: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
 #: by: https://nitter.net/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
+#: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
+#: last_checked: 2023-09-14 (mapillary)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 ',
          'from' => 1690581600,
          'id' => 3849,
          'prewarn_days' => 2,
-         'text' => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
+         'text' => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)',
          'type' => 'gesperrt',
          'until' => 1734822000
        },
@@ -6511,6 +6485,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2023)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: last_checked: 2023-09-12
 #: check_frequency: 60d
@@ -6577,7 +6552,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'until' => 1697554800
        },
        {
-         'data' => '#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023)
+         'data' => '#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023) (inaktiv)
 #: source_id: viz2021:13.374981,52.523043,11.09.2023,20:00 (bis 20.09.2023)
 	q4::inwork; 8503,12895 8488,12920 8411,12992 8315,13042
 ',

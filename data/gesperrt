@@ -526,9 +526,9 @@ Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 Straßenbahntrasse	3nocross::ignrte 6377,13321 6480,13325 6535,13327 6674,13332
 Turmstr. -> Kleiner Tiergarten: Straßenbahntrasse	3::igndisp 6674,13332 6535,13327 6564,13260
 Kleiner Tiergarten -> Turmstr.: Straßenbahntrasse	3::igndisp 6564,13260 6535,13327 6480,13325
-Turmstr. (Richtungsfahrbahn)	1::igndisp 5857,13342 5956,13338 6012,13332 6031,13330
-Turmstr. (Richtungsfahrbahn)	1::igndisp 6031,13330 5956,13330 5857,13342
-Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13330 6031,13330
+Turmstr. (Richtungsfahrbahn)	1::igndisp 5857,13342 5956,13338 6012,13332 6022,13330
+Turmstr. (Richtungsfahrbahn)	1::igndisp 6022,13330 5956,13330 5857,13342
+Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13338 6012,13332 6022,13330
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715
@@ -3443,7 +3443,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
-George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
+George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -3633,8 +3633,8 @@ An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu übe
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6253,14184 6230,14184 6228,14077
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6230,14246 6209,14245
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6230,14246 6231,14308
-Straßenbahntrasse	3nocross::ignrte 7172,13051 7187,13126 7161,13190
-Rathenower Str. -> Otto-Dix-Str.: Straßenbahntrasse	3::igndisp 7161,13190 7187,13126 7356,13213
+Straßenbahntrasse	3nocross::ignrte 7172,13051 7187,13126 7131,13261
+Rathenower Str. -> Otto-Dix-Str.: Straßenbahntrasse	3::igndisp 7131,13261 7187,13126 7356,13213
 Otto-Dix-Str. -> Rathenower Str.: Straßenbahntrasse	3::igndisp 7356,13213 7187,13126 7172,13051
 schieben - einzelne Stufen	0:20:-147 1372,8011
 tragen (4 x 12 Stufen)	0:180:78 876,8131
@@ -4059,4 +4059,4 @@ Martin-Luther-Str.: linker Gehweg	1::igndisp 6492,9782 6518,9867
 Blissestr.: linker Gehweg	1::igndisp 4754,8608 4769,8563
 Hansastr.: linker Gehweg	1::igndisp 15917,16858 15866,16823
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	1::igndisp 10774,9681 10802,9673 10807,9686
-Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	1::igndisp 6031,13330 6012,13338
+Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	1::igndisp 6022,13330 6012,13338

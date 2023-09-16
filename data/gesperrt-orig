@@ -856,9 +856,9 @@ Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 Turmstr.: Straßenbahntrasse	3nocross 6377,13321 6480,13325 6535,13327 6674,13332
 # 
 #: note: Straßenbahntrasse vvv
-Turmstr. (Richtungsfahrbahn)	1::igndisp 5857,13342 5956,13338 6012,13332 6031,13330
-Turmstr. (Richtungsfahrbahn)	1::igndisp 6031,13330 5956,13330 5857,13342
-Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13330 6031,13330
+Turmstr. (Richtungsfahrbahn)	1::igndisp 5857,13342 5956,13338 6012,13332 6022,13330
+Turmstr. (Richtungsfahrbahn)	1::igndisp 6022,13330 5956,13330 5857,13342
+Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13338 6012,13332 6022,13330
 #: note ^^^
 # 
 #: note: Bundesplatztunnel, Grünanlage vvv
@@ -3702,7 +3702,7 @@ Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gespe
 #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=744224#post744224
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
-#: last_checked: 2023-08-17
+#: last_checked: 2023-09-16
 #: check_frequency: 90d
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
@@ -4403,9 +4403,9 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-08-17
+#: last_checked: 2023-09-16
 #: check_frequency: 30d
-George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
+George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
@@ -4470,7 +4470,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="30"
 #: osm_watch: way id="289966097" version="17"
 #: priority: #A
-#: last_checked: 2023-08-27
+#: last_checked: 2023-09-16
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4538,7 +4538,7 @@ Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-08-27
+#: last_checked: 2023-09-16
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -4755,7 +4755,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2023-08-22 (mapillary)
+#: last_checked: 2023-08-31 (architektur-urbanistik)
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
@@ -4883,7 +4883,7 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-08-17 vvv
+#: last_checked: 2023-09-16 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -5293,7 +5293,7 @@ Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocros
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
 An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308
 #: historical_note: früher: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)
-Rathenower Str.: Straßenbahntrasse	3nocross 7172,13051 7187,13126 7161,13190
+Rathenower Str.: Straßenbahntrasse	3nocross 7172,13051 7187,13126 7131,13261
 schieben - einzelne Stufen	0:20 1372,8011
 tragen (4 x 12 Stufen)	0:180 876,8131
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1256,7841

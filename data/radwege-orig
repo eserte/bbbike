@@ -773,11 +773,12 @@ Gehwegplatten	RW1; 3337,12855 3327,12818
 asphaltiert	RW1; 3327,12818 3300,12751
 neu asphaltiert, etwas breiter	RW1; 3300,12751 3291,12721
 neu asphaltiert, etwas breiter	RW2; 3291,12721 3269,12648 3271,12609 3279,12533
+#: historical_note: früher RW1 vvv
+Bushaltestelle	RW5; 7172,13051 7246,13039
+	RW4; 7246,13039 7346,13022
+#: historical_note ^^^
 #: historical_note: früher RW1
-#: note: erste Meter Busspur (Haltestelle) mit Radfreigabe, danach provisorische Radspur
-	RW5; 7172,13051 7346,13022
-#: historical_note: früher RW1
-	RW4; 7346,13022 7172,13051
+	RW4; 7346,13022 7246,13039 7172,13051
 	RW1; 5490,17173 5411,17242
 # 
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Tegel
@@ -1951,26 +1952,12 @@ Busspur ist immer gültig	RW5; 9303,12343 9358,12351 9429,12359
 	RW4; 9429,12359 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401
 Busspur ist immer gültig	RW5; 9780,12401 9858,12410
 	RW4; 9858,12410 9934,12420
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1123035.php (Oktober 2021 - Sommer 2022)
-#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/strassen-und-kfz-verkehr/projekte-in-planung/boulevard-unter-den-linden/
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794
-#: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
-#: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
-#: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
-#: by: https://nitter.cz/VIZ_Berlin/status/1592130421860757505#m (in den kommenden Wochen die letzten Arbeiten; 3,25m breiter Radfahrstreifen)
-#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
-#: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
-#: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
-#: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv
-#: last_checked: 2023-09-09 (mapillary) vvv
-#: check_frequency: 14d vvv
-	RW3; 9934,12420 9984,12426 10024,12431 10063,12438
+# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1123035.php (Oktober 2021 - Sommer 2022) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/strassen-und-kfz-verkehr/projekte-in-planung/boulevard-unter-den-linden/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794 --- #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true --- #: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/ --- #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677 --- #: by: https://nitter.cz/VIZ_Berlin/status/1592130421860757505#m (in den kommenden Wochen die letzten Arbeiten; 3,25m breiter Radfahrstreifen) --- #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv) --- #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv) --- #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv) --- #: XXX noch nicht ausgeschildert, evtl. werden einige Busspur-Abschnitte noch ummarkiert vvv --- #: last_checked: 2023-09-09 (mapillary) vvv --- #: check_frequency: 14d vvv
+	RW4; 9934,12420 9984,12426 10024,12431 10063,12438
 Bushaltestelle	RW5; 10063,12438 10152,12491
 	RW3; 10152,12491 10176,12506
 	RW4; 10176,12506 10243,12546
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 Busspur ist immer gültig	RW5; 10243,12546 10300,12587 10359,12634 10431,12709 10515,12780 10525,12789 10695,12933 10733,12967 10776,13005 10863,13095
 Busspur ist immer gültig	RW5; 10923,13156 10976,13229 11012,13278 11070,13357 11081,13372 11107,13410
 Fahrradschleuse	RW3; 11107,13410 11135,13452 11160,13492
@@ -1983,17 +1970,11 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
-#: XXX noch nicht ausgeschildert vvv
-#: last_checked: 2023-08-25 vvv
-#: check_frequency: 14d vvv
-Radspur	RW3; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
+Radspur	RW4; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
-Radspur	RW3; 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351
+Radspur	RW4; 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351
 Bushaltestelle	RW5; 9358,12351 9303,12343
-Radspur	RW3; 9303,12343 9141,12320 9028,12307 8804,12280
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+Radspur	RW4; 9303,12343 9141,12320 9028,12307 8804,12280
 # 
 Busspur in Mittellage ist immer gültig	RW5; 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631
 Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,11691 10133,11708
@@ -2715,7 +2696,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-08-26 vvv
+#: last_checked: 2023-09-16 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -2802,8 +2783,8 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-08-27
-#: check_frequency: 90d
+#: last_checked: 2023-09-16
+#: check_frequency: 60d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
 Fahrradschleuse	RW4; 11221,12250 11300,12241 11347,12223
@@ -2862,6 +2843,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
+#: by: https://www.nd-aktuell.de/artikel/1173685.stadtentwicklung-the-fizz-in-berlin-zerstoert-ein-luxus-neubau-die-nachbarhaeuser.html (Baustopp)
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: source_id: bvg2021:m43#BVG315176_0
@@ -3430,13 +3412,13 @@ die letzten Meter werden auf dem Gehweg geführt	RW3; 4363,13336 4381,13239
 #: historical_note: früher: RW1;
 	RW4; 7172,13051 7187,13126
 #: historical_note: früher: RW1;
-	RW4; 7187,13126 7161,13190 7131,13261
+	RW4; 7187,13126 7131,13261
 #: historical_note: früher: RW1;
 	RW4; 7131,13261 7084,13352 7069,13381
 #: historical_note: früher: RW1;
 	RW4; 7069,13381 7084,13352 7131,13261
 #: historical_note: früher: RW1;
-	RW3; 7131,13261 7161,13190 7187,13126 7172,13051
+	RW4; 7131,13261 7187,13126 7172,13051
 	RW1;RW0 22365,6149 22296,6170 22263,6185 22238,6195 21984,6317
 	RW2; 22467,6135 22534,6249
 unebenes Verbundsteinpflaster	RW2; 22534,6249 22467,6135
@@ -7166,7 +7148,7 @@ asphaltiertes Straßenbahnkap	RW1; 14162,12808 14096,12827
 	RW1;RW1 5620,13120 5601,12756
 # REMOVED (mittlerweile schon) --- #: note: eigentlich nicht für Radfahrer freigegeben (2013-01, 2015-03, 2015-06, 2015-12)
 Busspur immer gültig	RW5; 6228,13324 6377,13321
-	RW3; 6377,13321 6480,13325 6535,13327 6674,13332 6692,13333 6756,13341 6814,13349 6919,13360 6960,13366 7002,13372 7069,13381
+	RW4; 6377,13321 6480,13325 6535,13327 6674,13332 6692,13333 6756,13341 6814,13349 6919,13360 6960,13366 7002,13372 7069,13381
 Bushaltestelle	RW5; 7069,13381 7002,13372
 	RW4; 7002,13372 6960,13366 6919,13360 6814,13349
 Bushaltestelle	RW5; 6814,13349 6756,13341
@@ -7415,12 +7397,12 @@ Gehweg für Radfahrer frei	RW1; 16847,25778 16802,25876 16635,26087 16580,26154
 Gehweg für Radfahrer frei	RW1; 16532,26174 16580,26154 16635,26087 16802,25876 16847,25778
 	RW6;RW6 19406,7886 19550,7780 19500,7719
 # REMOVED (mittlerweile schon) --- #: XXX: eigentlich nicht für Radfahrer freigegeben --- #: last_checked: 2016-07-28 --- #: check_frequency: 60d
-	RW3; 6105,13328 6115,13328 6228,13324
-Busspur ist immer gültig	RW5; 6228,13324 6115,13328 6105,13328
+	RW4; 6105,13328 6228,13324
+Busspur ist immer gültig	RW5; 6228,13324 6105,13328
 	RW3;RW3 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342
-	RW3; 5857,13342 5956,13330
-Busspur ist immer gültig	RW5; 5956,13330 6031,13330 6105,13328
-	RW4; 6105,13328 6031,13330 6012,13332
+	RW4; 5857,13342 5956,13330
+Busspur ist immer gültig	RW5; 5956,13330 6022,13330 6105,13328
+	RW4; 6105,13328 6022,13330 6012,13332
 	RW3; 6012,13332 5956,13338 5857,13342
 	RW6;RW6 19626,9171 19764,9160 19874,9151
 asphaltiert, breit	RW1;RW9 18374,4307 18228,4168
