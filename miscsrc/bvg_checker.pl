@@ -169,6 +169,14 @@ sub find_active_sourceids_bvg2023 {
 	my $source_id = lc($linie).'#'.$meldungsId;
 	$links{"$id_prefix:$source_id"} = 1;
     }
+    if ($debug) {
+	my $ofile = '/tmp/bvg_checker_disruption_ids.json';
+	my $jsoner = JSON::XS->new->pretty->canonical->utf8;
+	warn "INFO: write active IDs to $ofile...\n";
+	open my $ofh, '>', $ofile or die $!;
+	print $ofh $jsoner->encode(\%links);
+	close $ofh or die $!;
+    }
     return %links;
 }
 
