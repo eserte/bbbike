@@ -15441,7 +15441,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
+	q4::inwork; 22292,5774 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15450,7 +15450,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
+	q4::inwork; 22292,5774 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -19956,7 +19956,7 @@ EOF
 	2::inwork 22358,5918 22431,6068 22467,6135 22603,6141
 	2::inwork 22478,6048 22538,6046
 	2::inwork 22325,6385 22365,6149 22296,6170
-	2::inwork 22513,5747 22531,5871 22358,5918 22292,5774
+	2::inwork 22521,5743 22531,5871 22358,5918 22292,5774
 	2::inwork 22777,6151 22603,6141
 	2::inwork 22608,5732 22631,5866 22531,5871 22535,5971 22731,5953
 	2::inwork 22624,6044 22538,6046 22535,5971
@@ -21405,11 +21405,11 @@ EOF
 EOF
      },
      { do {
-           my $from1  = $isodate2epoch->("2023-09-19 06:00:00"); # 1 Tag Vorlauf
-           my $until1 = $isodate2epoch->("2023-09-24 06:00:00");
+           my $from1  = $isodate2epoch->("2023-09-17 06:00:00"); # 1 Tag Vorlauf
+           my $until1 = $isodate2epoch->("2023-09-20 06:00:00");
            # in der Zwischenzeit ist die erweiterte Sperrung aktiv, siehe unten
-           my $from2  = $isodate2epoch->("2023-09-27 06:00:00");
-           my $until2 = $isodate2epoch->("2023-09-28 23:30:00");
+           my $from2  = $isodate2epoch->("2023-09-25 06:00:00");
+           my $until2 = $isodate2epoch->("2023-09-26 23:30:00");
            if (time <= $until1) {
                (from => $from1, until => $until1);
            } else {
@@ -21420,7 +21420,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 20.09.2023 bis 28.09.2023',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 18.09.2023 bis 26.09.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -21428,7 +21428,9 @@ EOF
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
 #: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
 #: by: https://viz.berlin.de/2022/09/marathon/
+#: by: https://viz.berlin.de/2023/09/marathon/
 #: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023)
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -21436,20 +21438,20 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2023-09-23 06:00:00"),
-       until => $isodate2epoch->("2023-09-27 06:00:00"),
+     { from  => $isodate2epoch->("2023-09-20 06:00:00"),
+       until => $isodate2epoch->("2023-09-25 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 23.09.2023 bis 27.09.2023',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 20.09.2023 bis 25.09.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
-#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
-#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
-#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00
-#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00
-#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00 (inaktiv)
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30 (inaktiv)
+#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -28265,7 +28267,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-verzoegern-sich_a181430 (hier: bis "Ende September" 2018)
-	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
+	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22521,5743 22292,5774
 EOF
      },
      { from  => $isodate2epoch->("2018-07-24 12:00:00"),
@@ -30433,7 +30435,7 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/Neddy40586844/status/1167016431600492545
 # REMOVED --- #: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen --- #: next_check: 2019-10-06
-	q4::inwork 22513,5747 22292,5774
+	q4::inwork 22521,5743 22292,5774
 EOF
      },
      { from  => 1567112731, # 2019-08-29 23:05
@@ -30836,7 +30838,7 @@ EOF
 	2::bomb 23067,15429 23245,15442
 	2::bomb 23265,15054 23117,15081
 	2::bomb 23775,15428 23823,15437 23895,15450 23868,15633 23617,15594 23629,15498
-	2::bomb 23297,14772 23354,14756 23405,14758 23531,14781
+	2::bomb 23297,14772 23369,14756 23405,14758 23531,14781
 EOF
      },
      { from  => undef, # 
@@ -30959,7 +30961,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (Radweg ist nun offen; Kinzerallee ist zu minor (nicht mehr geprüft) --- #: next_check_id: BAHNHOFSTRKOEP-2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851 --- #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050 --- #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/ --- #: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/ --- #: by: https://www.bahninfo-forum.de/file.php?9,file=13443 --- #: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/ --- #: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654 --- #: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020) --- #: source_id: 2147345568 (schon ab 9.3.2020?) --- #: source_id: 2147345558 (bis 8.6.2020) --- #: add_fragezeichen: wann kann der Radweg in der Bahnhofstraße Richtung Süden benutzt werden? --- #: last_checked: 2020-06-17 --- #: check_frequency: 14d
-# REMOVED ---	q4::inwork; 22513,5747 22383,5611 22204,5447
+# REMOVED ---	q4::inwork; 22521,5743 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22236,5633
 # REMOVED ---	q4::inwork; 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
@@ -31745,7 +31747,7 @@ EOF
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)  (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
-#: source_id: bvg2021:188#BVG259885_0
+#: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -35855,14 +35857,14 @@ EOF
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-01 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:00:00") }, # 2022 letztes Konzert am 17. September
-       text  => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis September',
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-17 18:00:00") }, # 2022 letztes Konzert am 17. September
+       text  => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis Mitte September',
        type  => 'gesperrt',
        source_id => 'https://www.wuhlheide.de/programm',
        data  => <<EOF,
 #: url: http://www.wuhlheide.de/programm
 #: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03
-#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023
+#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023; Nachtrag: am 17. September 2023 gab es wohl auch eins
 	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
 EOF
      },
@@ -37200,8 +37202,8 @@ EOF
        data  => <<EOF,
 #: by: mapillary
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-05-06
-	2::inwork 20996,16429 20923,16435 20898,16420
+#: last_checked: 2023-09-17
+	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 EOF
      },
      { from  => undef,
@@ -37720,8 +37722,8 @@ EOF
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
-#: source_id: bvg2021:m85#BVG312983_0
-#: source_id: bvg2021:m85#BVG312988_0
+#: source_id[inactive]: bvg2021:m85#BVG312983_0
+#: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
 	1::inwork 4515,4760 4517,4853
 EOF
@@ -39232,7 +39234,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-09-13 vvv
+#: last_checked: 2023-09-17 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39458,7 +39460,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
        data  => <<EOF,
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-17
 #: next_check: 2023-10-15
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40071,7 +40073,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-08-27 00:00:00"),
        until => $isodate2epoch->("2023-10-09 18:00:00"),
-       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, vom 28.08.2023 bis voraussichtlich 09.10.2023',
+       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -40083,12 +40085,14 @@ EOF
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023)
-#: last_checked: 2023-08-28 vvv
+#: last_checked: 2023-09-17 vvv
 #: next_check: 2023-10-09 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
 Am Bahndamm	q3::inwork 22467,6135 22365,6149
-#: note: evtl. geht's mit der Einbahnstraße in der Borgmannstraße weiter?
-Elcknerplatz	q3::inwork; 22431,6068 22478,6048 22538,6046
+Elcknerplatz	q3::inwork; 22431,6068 22478,6048
+# REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
+Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
+Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -40478,6 +40482,30 @@ EOF
 #: also_indoor: traffic (none)
 #: last_checked: 2023-09-15
 	q4::inwork; 13314,8624 13227,8692 13138,8762
+EOF
+     },
+     { from  => 1694958118, # 2023-09-17 15:41
+       until => 1702681199, # 2023-12-15 23:59
+       text  => 'Allee der Kosmonauten - Murtzaner Ring: Hochbauarbeiten, Straße gesperrt, voraussichtlich bis Mitte Dezember 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: Endedatum anhand Halteverbotsschild
+#: last_checked: 2023-09-17 vvv
+#: next_check: 2023-12-15 vvv
+	2::inwork 20097,14039 20096,14127 20040,14179
+	2::inwork 20096,14127 20111,14140 20172,14141
+#: next_check ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2023-09-17
+#: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
+	2::inwork 23305,14914 23318,14847 23297,14772
 EOF
      },
     );

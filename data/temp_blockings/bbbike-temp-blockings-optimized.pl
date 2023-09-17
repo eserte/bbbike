@@ -2157,7 +2157,9 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
 #: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
 #: by: https://viz.berlin.de/2022/09/marathon/
+#: by: https://viz.berlin.de/2023/09/marathon/
 #: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023)
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -2165,7 +2167,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED --- #: tempex ^^^
 ',
          'dont_check_date' => 1,
-         'from' => 1695096000,
+         'from' => 1694923200,
          'id' => 2387,
          'periodic' => 1,
          'recurrences' => [
@@ -2179,17 +2181,17 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               '2020-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 20.09.2023 bis 28.09.2023',
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 18.09.2023 bis 26.09.2023',
          'type' => 'gesperrt',
-         'until' => 1695528000
+         'until' => 1695182400
        },
        {
          'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
-#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
-#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00
-#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00
-#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00 (inaktiv)
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30 (inaktiv)
+#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -2219,7 +2221,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	2::temp 7775,12114 7772,12040 7717,11918
 # REMOVED --- #: tempex ^^^
 ',
-         'from' => 1695441600,
+         'from' => 1695182400,
          'id' => 2388,
          'periodic' => 1,
          'recurrences' => [
@@ -2233,9 +2235,9 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               '2020-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 23.09.2023 bis 27.09.2023',
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 20.09.2023 bis 25.09.2023',
          'type' => 'gesperrt',
-         'until' => 1695787200
+         'until' => 1695614400
        },
        undef,
        undef,
@@ -3763,7 +3765,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)  (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
-#: source_id: bvg2021:188#BVG259885_0
+#: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -4708,19 +4710,7 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
        undef,
        undef,
        undef,
-       {
-         'data' => '#: url: http://www.wuhlheide.de/programm
-#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03
-#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023
-	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
-',
-         'from' => 1685570400,
-         'id' => 3569,
-         'source_id' => 'https://www.wuhlheide.de/programm',
-         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis September',
-         'type' => 'gesperrt',
-         'until' => 1696089600
-       },
+       undef,
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -5096,8 +5086,8 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: by: mapillary
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-05-06
-	2::inwork 20996,16429 20923,16435 20898,16420
+#: last_checked: 2023-09-17
+	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 ',
          'from' => undef,
          'id' => 3658,
@@ -5283,8 +5273,8 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
-#: source_id: bvg2021:m85#BVG312983_0
-#: source_id: bvg2021:m85#BVG312988_0
+#: source_id[inactive]: bvg2021:m85#BVG312983_0
+#: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
 	1::inwork 4515,4760 4517,4853
 ',
@@ -5930,7 +5920,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-09-13 vvv
+#: last_checked: 2023-09-17 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -6038,7 +6028,7 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-09-15
+         'data' => '#: last_checked: 2023-09-17
 #: next_check: 2023-10-15
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -6351,18 +6341,20 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023)
-#: last_checked: 2023-08-28 vvv
+#: last_checked: 2023-09-17 vvv
 #: next_check: 2023-10-09 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
 Am Bahndamm	q3::inwork 22467,6135 22365,6149
-#: note: evtl. geht\'s mit der Einbahnstraße in der Borgmannstraße weiter?
-Elcknerplatz	q3::inwork; 22431,6068 22478,6048 22538,6046
+Elcknerplatz	q3::inwork; 22431,6068 22478,6048
+# REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
+Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
+Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1693087200,
          'id' => 3881,
-         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, vom 28.08.2023 bis voraussichtlich 09.10.2023',
+         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
          'type' => 'gesperrt',
          'until' => 1696867200
        },
@@ -6654,6 +6646,32 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'id' => 3916,
          'text' => 'Wildenbruchplatz: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: Endedatum anhand Halteverbotsschild
+#: last_checked: 2023-09-17 vvv
+#: next_check: 2023-12-15 vvv
+	2::inwork 20097,14039 20096,14127 20040,14179
+	2::inwork 20096,14127 20111,14140 20172,14141
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => 1694958118,
+         'id' => 3917,
+         'text' => 'Allee der Kosmonauten - Murtzaner Ring: Hochbauarbeiten, Straße gesperrt, voraussichtlich bis Mitte Dezember 2023',
+         'type' => 'gesperrt',
+         'until' => 1702681199
+       },
+       {
+         'data' => '#: last_checked: 2023-09-17
+#: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
+	2::inwork 23305,14914 23318,14847 23297,14772
+',
+         'from' => undef,
+         'id' => 3918,
+         'text' => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

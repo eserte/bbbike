@@ -2053,7 +2053,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 13398,15826 13425,15846 13484,15893
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5370,21066 5379,21016
-Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9293,13366 9371,13333 9415,13315
+Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9293,13366 9371,13333
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16563,7012
 Schnellerstr.: Mittelstreifen	3nocross 17293,6230 17216,6308 16909,6628 16838,6708
@@ -2323,7 +2323,7 @@ Mühlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
-Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21239,15633
+Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21180,15846 21220,15741 21239,15633
 Adlergestell: Straßenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 #: note: Luftbild:
@@ -3732,7 +3732,7 @@ Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2023-08-28
+#: last_checked: 2023-09-17
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -3754,7 +3754,7 @@ Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,120
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-09-13 vvv
+#: last_checked: 2023-09-17 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -3853,7 +3853,7 @@ Uferweg am Teltowkanal	2::inwork 4209,2641 4220,2664
 #: last_checked ^^^
 # 
 #: osm_watch: way id="770592585" version="5"
-#: last_checked: 2023-07-15
+#: last_checked: 2023-09-17
 #: check_frequency: 120d
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 # 
@@ -3870,7 +3870,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-17
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4016,8 +4016,8 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-08-06
-#: check_frequency: 60d
+#: last_checked: 2023-09-17
+#: check_frequency: 14d
 #: next_check: 2023-10-31
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
@@ -4123,7 +4123,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2023-09-12
+#: last_checked: 2023-09-17
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4495,12 +4495,12 @@ Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 90d vvv
 #: osm_watch: way id="719023971" version="13"
-#: last_checked: 2023-07-09
+#: last_checked: 2023-09-17
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: osm_watch: way id="719023970" version="12"
-#: last_checked: 2023-07-09
+#: last_checked: 2023-09-17
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
@@ -4510,8 +4510,7 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
 # REMOVED --- #: osm_watch: way id="1126013605" version="5"
-#: last_checked: 2023-07-09
-Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
+# REMOVED --- #: last_checked: 2023-07-09 --- Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
 #: check_frequency ^^^
 #: XXX ^^^
 # REMOVED --- #: XXX Wird der Weg noch hergerichtet oder endgültig zurückgebaut? Laut osm existiert hier ein Rettungsweg, Rasengittersteine --- #: osm_watch: way id="152046369" version="15" --- #: priority: #C --- #: last_checked: 2023-04-16 (daf) --- #: check_frequency: 60d --- (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
@@ -5157,12 +5156,12 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-04-21
+#: last_checked: 2023-09-17
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-07-18
+#: last_checked: 2023-09-17
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

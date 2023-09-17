@@ -1469,11 +1469,9 @@ Streustr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13263,15930 13425,1584
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5370,21066 5379,21016
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,21198 5343,21250
-Straßenbahnhaltestelle	3nocross::ignrte 9225,13389 9293,13366 9371,13333 9415,13315
+Straßenbahnhaltestelle	3nocross::ignrte 9225,13389 9293,13366 9371,13333
 Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9225,13389 9293,13366 9312,13388
 Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9312,13388 9293,13366 9371,13333
-Oranienburger Str. -> Passage am Tacheles: Straßenbahnhaltestelle	3::igndisp 9415,13315 9371,13333 9353,13273
-Passage am Tacheles -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9353,13273 9371,13333 9293,13366
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16563,7012
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
@@ -2244,8 +2242,8 @@ Mittelstreifen	3nocross::ignrte 12908,11058 12848,11093 12793,11132 12736,11186
 Mühlenstr. -> Planstr. C: Mittelstreifen	3::igndisp 12793,11132 12848,11093 12926,11224
 Planstr. C -> Mühlenstr.: Mittelstreifen	3::igndisp 12926,11224 12848,11093 12908,11058
 Edith-Kiss-Str. -> Mühlenstr.: Mittelstreifen	3::igndisp 12866,11256 12793,11132 12848,11093
-Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21239,15633
-Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
+Straßenbahntrasse	3nocross::ignrte 21180,15846 21220,15741 21239,15633
+Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21180,15846 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908 21220,15741 21239,15633
 Straßenbahntrasse	3nocross::ignrte 26871,-2500 26698,-2322 26286,-1901
 Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
@@ -3449,7 +3447,6 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
-Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451

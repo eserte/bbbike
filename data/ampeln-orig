@@ -148,17 +148,25 @@ B179/Fichtestr.	X::inwork 26138,-12596
 # REMOVED --- #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022) --- #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022) (bis 18.11.2022) --- #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt) --- #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022) --- #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung) --- #: last_checked: 2022-11-07 --- #: next_check: 2022-11-18 --- #: valid: -20221118 --- Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
+#: last_checked: 2023-09-17
+#: next_check:  2023-10-09
+#: valid: -20231009
+Parrisiusstr./Borgmannstr.: provisorische Ampel	X::inwork 22531,5871
+# 
+#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,14.09.2023,12:00 (bis 27.09.2024) vvv
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2023-08-28 vvv
-#: next_check: 2023-09-13 vvv
+#: last_checked: 2023-09-17 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2024-09-27 vvv
 #: valid: -20240927 vvv
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
-Hämmerlingstr./Friedenstr.: Gegenverkehrsregelung	X::inwork  22033,6144
+Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork  22000,6245
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
 #: valid ^^^
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 # 
@@ -208,7 +216,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2023-09-12
+#: last_checked: 2023-09-17
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -354,6 +362,9 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
 ################################################################################
 # Ampeln und Bahnübergänge in Berlin
+#: note: Anforderung für den Hegemeisterweg
+	F 18406,7760
+# 
 #: note: Anforderungsampel
 	F 15445,9090
 # 
@@ -2297,7 +2308,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 30410,5450
 #: note: Anforderungsampel
 	F 25028,5756
-	X 22513,5747
+	X 22521,5743
 	X 22292,5774
 	X 22675,6498
 #: note: Grüner Pfeil (Triniusstr. -> An der Wuhlheide)
@@ -2349,7 +2360,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 21982,9017
 	X 18672,8238
 #: note: Anforderungsampel
-	F 18633,8126
+	F 18626,8114
 	X 18807,9746
 #: XXX_prog gilt nicht in Fahrtrichtung Nordwest
 	X 14614,9052

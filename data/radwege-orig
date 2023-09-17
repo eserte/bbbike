@@ -933,7 +933,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1631,7 +1631,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 	RW2;RW2 22358,5918 22431,6068
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
-#: last_checked: 2023-08-19 vvv
+#: last_checked: 2023-09-17 vvv
 #: check_frequency: 120d vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
@@ -2097,7 +2097,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-09-12 vvv
+#: last_checked: 2023-09-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -4898,10 +4898,10 @@ Verbundsteinpflaster	RW1; 17286,7173 17352,7051 17459,6854 17510,6751
 neu asphaltiert	RW1; 17286,7173 17211,7280
 asphaltiert, uneben	RW1; 18010,7133 18086,7243 18165,7371 18256,7520
 Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18471,7862 18577,8033
-neu asphaltiert	RW1; 18577,8033 18633,8126 18657,8163
+neu asphaltiert	RW1; 18577,8033 18626,8114 18657,8163
 neu asphaltiert	RW2; 18657,8163 18672,8238
 	RW1; 18577,8033 18471,7862 18406,7760 18382,7724 18256,7520 18165,7371 18086,7243 18010,7133
-	RW2; 18672,8238 18657,8163 18633,8126 18577,8033
+	RW2; 18672,8238 18657,8163 18626,8114 18577,8033
 	RW2;RW1 18672,8238 18704,8427
 	RW1; 13265,5519 13305,5316
 	RW1;RW1 13305,5316 13327,5234
@@ -6950,12 +6950,12 @@ Poller	RW4; 8406,14507 8442,14456
 # 
 #: note: Radstreifen an der Bahnhofstr. fängt später an bzw. hört früher auf vvv
 # REMOVED (ja, überall fertig) --- #: XXX wird hier auch grün markiert werden? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 (teilweise) --- #: priority: #D --- #: last_checked: 2019-05-05
-Grünbeschichtung	RW3; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747
+Grünbeschichtung	RW3; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22521,5743
 #: note: Grünbeschichtung ist nach der Wiederherstellung der Seelenbinderstr. verlorengegangen
-	RW3; 22513,5747 22292,5774
+	RW3; 22521,5743 22292,5774
 #: note: Grünbeschichtung ist nach der Wiederherstellung der Seelenbinderstr. verlorengegangen
-	RW3; 22292,5774 22513,5747
-Grünbeschichtung	RW3; 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+	RW3; 22292,5774 22521,5743
+Grünbeschichtung	RW3; 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 #: note ^^^
 # 
 Tempo 10	RW6;RW6 -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8570,15078
@@ -7400,8 +7400,8 @@ Gehweg für Radfahrer frei	RW1; 16532,26174 16580,26154 16635,26087 16802,25876 1
 	RW4; 6105,13328 6228,13324
 Busspur ist immer gültig	RW5; 6228,13324 6105,13328
 	RW3;RW3 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342
-	RW4; 5857,13342 5956,13330
-Busspur ist immer gültig	RW5; 5956,13330 6022,13330 6105,13328
+	RW4; 5857,13342 5956,13330 6022,13330
+Busspur ist immer gültig	RW5; 6022,13330 6105,13328
 	RW4; 6105,13328 6022,13330 6012,13332
 	RW3; 6012,13332 5956,13338 5857,13342
 	RW6;RW6 19626,9171 19764,9160 19874,9151
@@ -8206,6 +8206,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023)
+#: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-05 vvv
@@ -8223,7 +8224,7 @@ Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 # REMOVED (hier realisiert) --- #: osm_watch: way id="30958674" version="23"
 #: osm_watch: way id="28680189" version="21"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
-#: osm_watch: way id="4526218" version="27"
+#: osm_watch: way id="4526218" version="28"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
