@@ -22481,7 +22481,7 @@ EOF
        data  => <<EOF,
 #: by: fritz
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
-#: source_id: 2147339574
+#: source_id: 2147339574 (inaktiv)
 #: confirmed_by: srt
 	1::inwork 17886,5587 17747,5452 17736,5441
 EOF
@@ -23126,10 +23126,10 @@ EOF
      },
      { from  => $isodate2epoch->("2021-09-10 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2021-09-11 22:00:00"),
-       periodic => 1, # erster Termin im Jahr
+       #periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5, start => "2022-12-31T00:00:00"]], # wechselnde Termine, kann auch erst Mitte September passieren; findet 2022 wohl nicht statt
-       recurrences => [["yearly", days => 11, months => 9, start => "2022-12-31T00:00:00"]],
-       recurrence_prewarn_days => -7,
+       #recurrences => [["yearly", days => 11, months => 9, start => "2022-12-31T00:00:00"]],
+       #recurrence_prewarn_days => -7,
        # früher: Fest der Nationen
        # früher: Prager Platz
        text  => 'Nikolsburger Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt vermutlich nicht möglich, am 11.9.2021 von 14 bis 20 Uhr',
@@ -23139,7 +23139,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932471.php (Absage 2020)
 #: by: https://www.charlottenburg-wilmersdorf-zeitung.de/fest-der-vielfalt-am-prager-platz/ (11. September 2021, 14-20 Uhr, Nikolsburger Platz/Trautenaustraße)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1123056.php
-#: note: für 2022 noch keine Termine, vielleicht wieder erst im September? ... Auch kein Termin für September 2022 ... Auch nichts für das Frühjahr 2023.
+#: note: für 2022 noch keine Termine, vielleicht wieder erst im September? ... Auch kein Termin für September 2022 ... Auch nichts für das Frühjahr 2023... und nichts für September 2023. "Recurrence" entfernt.
 #: note: kein tempex-Ausdruck möglich
 # REMOVED ---	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 	2::temp 5291,9675 5374,9619 5314,9588 5297,9579 5291,9675
@@ -34785,7 +34785,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-08-13 (architektur-urbanistik)
+#: last_checked: 2023-09-18
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -40456,6 +40456,7 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.stadtrand-nachrichten.de/kommentar-klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/klingsorstrasse-wird-saniert_a392572
+#: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
 	q4::inwork 5535,5068 5499,4999 5482,4965 5478,4957 5411,4825 5407,4815 5336,4676 5316,4637 5271,4547
 EOF
