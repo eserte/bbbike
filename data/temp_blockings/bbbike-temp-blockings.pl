@@ -21452,6 +21452,7 @@ EOF
 #: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -30362,14 +30363,14 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2024-12-31 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende September 2023, vielleicht sogar bis 2024',
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Mitte Dezember 2023, vielleicht sogar bis 2024',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10 # inaktiv
        data  => <<EOF,
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -30379,7 +30380,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: last_checked: 2023-07-19 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2023-09-30
+#: next_check: 2023-12-15
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -30465,7 +30466,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-09-15 vvv
+#: last_checked: 2023-09-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -30766,7 +30767,7 @@ EOF
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf',
        data  => <<EOF,
 	2::temp 10660,12176 10591,12203 10583,12206 10492,12289 10417,12378
-	2::temp 10583,12206 10625,12206 10574,12131 10556,12105 10512,12039 10478,11999 10460,11979 10418,12016
+	2::temp 10583,12206 10625,12206 10574,12131 10550,12096 10512,12039 10478,11999 10460,11979 10418,12016
 	2::temp 10285,12306 10383,12191 10289,12106
 	2::temp 10383,12191 10480,12077 10512,12039
 	2::temp 10480,12077 10418,12016 10392,11991
@@ -36737,10 +36738,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
-#: XXX Wie lange dauern die Bauarbeiten an?
+#: XXX Wie lange dauern die Bauarbeiten an? -> nordöstlicher Abschnitt ist fertig, prüfen! (evtl. ist jetzt der südwestliche gesperrt)
 #: last_checked: 2023-08-31 (daf)
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-12-31
+#: next_check: 2023-09-15
 	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 EOF
@@ -39661,10 +39662,10 @@ EOF
 Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418,11804 9432,11702
 EOF
      },
-     { from  => 1690581600, # 2023-07-29 00:00
-       until => 1734822000, # 2024-12-22 00:00
-       prewarn_days => 2,
-       text  => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
+     { from  => 1695149689, # 1690581600, # 2023-07-29 00:00
+       until => $isodate2epoch->("2025-08-31 23:59:59"), # 1734822000, # 2024-12-22 00:00
+       prewarn_days => 13,
+       text  => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, Start der Bauarbeiten voraussichtlich am 2.10.2023, Ende der Bauarbeiten am 31.08.2025', # (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -39673,8 +39674,11 @@ EOF
 #: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
 #: by: https://nitter.net/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
-#: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1367360.php (neuer Zeitraum)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/umleitungsstrecke-radverkehr-kronprinzessinnenweg.pdf?ts=1695129056
+# REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: last_checked: 2023-09-14 (mapillary)
+#: next_check: 2023-10-02
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -40380,12 +40384,12 @@ EOF
 EOF
      },
      { from  => 1694296800, # 2023-09-10 00:00
-       until => 1695247140, # 2023-09-20 23:59
-       text  => 'Kapelle-Ufer: in Richtung Moabit zwischen Konrad-Adenauer-Str. und Alexanderufer nachts zwischen 20:00 und 05:00 Uhr gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.09.2023 00:00 bis 20.09.2023 23:59',
+       until => $isodate2epoch->("2023-09-23 05:00:00"), # 1695247140, # 2023-09-20 23:59
+       text  => 'Kapelle-Ufer: in Richtung Moabit zwischen Konrad-Adenauer-Str. und Alexanderufer nachts zwischen 20:00 und 05:00 Uhr gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.09.2023 00:00 bis 23.09.2023 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023) (inaktiv)
-#: source_id: viz2021:13.374981,52.523043,11.09.2023,20:00 (bis 20.09.2023)
+#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023) (inaktiv) (bis 22.09.2023)
+#: source_id: viz2021:13.374981,52.523043,11.09.2023,20:00 (bis 20.09.2023) (bis 23.09.2023)
 	q4::inwork; 8503,12895 8488,12920 8411,12992 8315,13042
 EOF
      },
@@ -40456,7 +40460,8 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.stadtrand-nachrichten.de/kommentar-klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/klingsorstrasse-wird-saniert_a392572
-#: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023)
+#: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
+#: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
 	q4::inwork 5535,5068 5499,4999 5482,4965 5478,4957 5411,4825 5407,4815 5336,4676 5316,4637 5271,4547
 EOF
@@ -40507,6 +40512,19 @@ EOF
 #: last_checked: 2023-09-17
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
 	2::inwork 23305,14914 23318,14847 23297,14772
+EOF
+     },
+     { from  => undef, # 
+       until => 1735833600, # 2025-01-02 17:00
+       text  => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: METZER-2025
+#: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
+#: last_checked: 2023-08-12 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2025-01-02
+	q4::inwork; 10908,13978 10933,14122
 EOF
      },
     );

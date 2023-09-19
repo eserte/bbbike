@@ -1451,7 +1451,7 @@ Beuthstr. (Mitte)	N 10318,11434 10226,11617 10201,11631
 Spittelmarkt	HH 10240,11740 10299,11786 10314,11804
 Spittelmarkt	HH 10299,11786 10238,11741
 Gertraudenstr.	HH 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999 10512,12039
-Mühlendamm	HH 10512,12039 10556,12105 10574,12131 10625,12206 10646,12234 10662,12255 10697,12303
+Mühlendamm	HH 10512,12039 10550,12096 10574,12131 10625,12206 10646,12234 10662,12255 10697,12303
 # REMOVED --- #: note: früher Hauptverkehrsstraße, jetzt nur noch als Gehweg übrig, wird beim Umbau des Molkenmarkts um/zurückgebaut --- (Molkenmarkt - zur Stralauer Str.)	NN 10736,12285 10772,12288
 Littenstr.	N 11155,12184 11139,12243 11088,12382 11084,12395 11065,12452 10973,12611 10951,12637
 Magazinstr. (Mitte)	N 11562,12597 11329,12497
@@ -1502,7 +1502,7 @@ Friedrichsgracht	N 10207,12055 10227,12013 10301,11899
 Friedrichsgracht	NN 10301,11899 10317,11875
 (Alte Gertraudenbrücke)	NN 10364,11896 10317,11875 10295,11856 10262,11814
 (Fischerinsel, Spreekanalufer)	NN 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10662,11863 10672,11870 10680,11875 10776,11942 10824,11992
-(Fischerinsel, Spreeufer)	NN 10742,12033 10755,12053 10699,12089 10619,12103 10599,12089 10598,12104 10579,12089 10556,12105
+(Fischerinsel, Spreeufer)	NN 10824,11992 10827,12044 10748,12061 10699,12089 10600,12102 10578,12083 10585,12106 10562,12087 10550,12096
 Am Zeughaus	NN 9919,12613 9953,12533 9984,12426
 #: oldname: -2009: Am Schinkelplatz
 Schinkelplatz	N 9984,12426 9990,12404 9996,12372 10006,12306 10010,12275 10012,12259 10029,12208
@@ -1844,7 +1844,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="7"
 #: osm_watch: way id="642581102" version="7"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2023-09-16
+#: last_checked: 2023-09-18 (daf)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -19333,7 +19333,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; ist diese Straße gemeint?
-#: last_checked: 2023-09-16
+#: last_checked: 2023-09-19
 #: check_frequency: 90d
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

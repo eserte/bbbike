@@ -7,11 +7,18 @@
 # 
 #: temporary vvv
 # 
-#: source_id: viz2021:13.54877,52.416283,15.08.2023,09:00 (bis 06.09.2023) (bis 19.09.2023)
-#: note: zwischen Wendenstr. und Germanenplatz
-#: next_check: 2023-09-19
-#: valid: -20230919
-Germanenstr.: Gegenverkehrsregelung	X::inwork 20381,1390
+#: next_check_id: METZER-2025
+#: last_checked: 2023-08-15 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2025-01-02
+#: valid: -20250102
+Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
+# 
+# REMOVED --- #: source_id: viz2021:13.54877,52.416283,15.08.2023,09:00 (bis 06.09.2023) (bis 19.09.2023) (inaktiv)
+# REMOVED --- #: note: zwischen Wendenstr. und Germanenplatz
+# REMOVED --- #: next_check: 2023-09-19
+# REMOVED --- #: valid: -20230919
+# REMOVED --- Germanenstr.: Gegenverkehrsregelung	X::inwork 20381,1390
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1355528.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/

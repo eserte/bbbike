@@ -1987,7 +1987,7 @@ Busspur ist immer gültig	RW5; 10240,11740 10299,11786
 #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
 Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
 #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
-Busspur ist immer gültig	RW5; 10512,12039 10556,12105 10574,12131
+Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbau-des-molkenmarktes-beginnt-mit-stauchaos-und-baumfaellungen_a197140
@@ -2031,8 +2031,8 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 # REMOVED --- temporär	RW4; 10807,12451 10746,12364 10697,12303
 # REMOVED (hier mittlerweile getrennte Rad- und Busspuren) --- Busspur gilt Mo-Fr 6-20 Uhr
 	RW4; 10625,12206 10574,12131
-Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10574,12131 10556,12105 10512,12039
-# REMOVED (hier weder Rad- noch Busspur) --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10574,12131 10556,12105 10512,12039
+Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10574,12131 10550,12096 10512,12039
+# REMOVED (hier weder Rad- noch Busspur) --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10574,12131 10550,12096 10512,12039
 	RW3; 11057,12715 11105,12764 11141,12806
 	RW3; 11141,12806 11105,12764
 	RW4; 11055,12717 11013,12684
@@ -2696,7 +2696,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-09-16 vvv
+#: last_checked: 2023-09-19 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -8321,7 +8321,7 @@ baulich getrennt	RW4; 10807,12451 10831,12371
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
 #: last_checked: 2023-07-19 (mapillary) vvv
 #: check_frequency: 90d
-#: next_check: 2023-09-30 vvv
+#: next_check: 2023-12-15 vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
