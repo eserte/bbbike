@@ -755,7 +755,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4436949" version="20"
 #: osm_watch: way id="1101189359" version="5"
 #: osm_watch: way id="1101189360" version="4"
-#: last_checked: 2023-06-30
+#: last_checked: 2023-09-20
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-05-02
 #: next_check: 2024-12-31
@@ -1121,7 +1121,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-09-13
+#: last_checked: 2023-09-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6380,7 +6380,7 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="9"
-#: last_checked: 2023-06-24
+#: last_checked: 2023-08-17 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
@@ -11062,7 +11062,7 @@ Aronsstr. [Richtung Sonnenallee]: Asphalt mit Schäden	Q2+ 14571,7427 14579,7576 
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): teilweise alter Beton	Q0- 17190,13903 17213,13931 17210,14054 17164,14067
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17164,14067 17152,14084
-(Hellweg-Parkplatz): Asphalt	Q0 8243,9766 8242,9699 8213,9662 8201,9647 8192,9619
+(Hellweg-Parkplatz): Asphalt	Q0 8243,9766 8239,9754 8247,9699 8213,9662 8201,9647 8192,9619
 (Hellweg-Parkplatz): Verbundsteinpflaster	Q1 8243,9766 8181,9707 8213,9662
 (Bautzener Str. - Südkreuz): Asphalt	Q0 8185,9338 8207,9324 8206,9262 8204,9001 8198,8893 8175,8815 8002,8315 7996,8298 7837,7899
 (Karl-Vesper-Str. - Landsberger Allee): Gehwegpflasterung	Q1 14205,13755 14218,13834
@@ -12423,7 +12423,9 @@ Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Wasserweg - Uferweg): unbefestigter Waldweg	Q2+ 15981,8872 15973,8894 15879,8994 15845,9031
 (Wasserweg - Uferweg): unbefestigter Waldweg	Q2+ 15879,8994 15839,9006 15797,9002
 (Wohnquartier Bautzener Str. - Großgörschenstr.): Betonsteinpflaster	Q1+ 8255,9357 8186,9380
-(Wohnquartier Bautzener Straße): Asphalt	Q0 8206,9262 8254,9278 8255,9357 8260,9560 8227,9579
+(Wohnquartier Bautzener Straße): Asphalt	Q0 8206,9262 8254,9278 8255,9357 8260,9560 8226,9574 8226,9589
+(Yorckbrücke 5): Asphalt mit Metallquerleisten	Q0- 8226,9589 8227,9621
+(Rampe Yorckbrücke 5): Asphalt mit Metallquerleisten	Q0- 8227,9621 8257,9684 8243,9766
 #: by: mapillary
 (Straße 50 - Straße 50): Asphalt und Verbundsteinpflaster	Q1+ 15305,22017 15325,22070 15353,22105
 Saalestr.: Asphalt mit einigen Schäden	Q1+ 14015,7631 13980,7548
@@ -12482,6 +12484,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
+#: osm_watch: way id="1061650562" version="1"
 #: last_checked: 2023-08-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
@@ -12677,7 +12680,7 @@ Münstersche Str.: Kopfsteinpflaster	Q2 3840,9683 3869,9699
 Münstersche Str.: Asphalt	Q0 3869,9699 3980,9761
 #: next_check_id: HEER-2020
 #: XXX nach der geplanten Sanierung hoffentlich asphaltiert
-#: last_checked: 2023-08-20
+#: last_checked: 2023-09-20
 #: check_frequency: 360d
 Heerstr.: holprige, enge Radwege	Q1- -2317,11254 -2413,11283 -2476,11301 -2871,11423 -3069,11487
 (Parkweg im Zuge der Furkastr.): wassergebundene Decke	Q1- 10322,2815 10318,2839 10329,2882
@@ -28270,8 +28273,8 @@ Eschenallee: Asphalt mit einigen Schäden	Q1 1154,12167 1183,12276 1206,12364 122
 Bayernallee: guter Asphalt	Q0- 320,11810 448,11831 577,11837
 #: confirmed_by: srt
 Adamstr., Melanchthonplatz: Asphalt	Q0 -4239,12626 -4210,12575 -4189,12560 -4180,12553 -4084,12557 -3942,12559 -3892,12560 -3752,12566 -3635,12572
-#: confirmed_by: srt
-Tharsanderweg: Asphalt mit Fugen	Q0- -3524,11980 -3636,11777 -3681,11767
+#: corrected_by: srt (Asphalt mit Fugen, Q0- -> ..., neu gemacht)
+Tharsanderweg: Asphalt	Q0 -3524,11980 -3636,11777 -3681,11767
 #: confirmed_by: srt
 Scharfe Lanke: Asphalt	Q0 -4245,11400 -4259,11267 -4265,11109 -4266,11008 -4292,10888
 #: corrected_by: srt (genauer)

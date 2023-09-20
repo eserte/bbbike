@@ -837,7 +837,7 @@ Ella-Barowsky-Str.	H 7268,8008 7499,7880 7537,7859 7621,7813 7632,7807 7696,7771
 Hattenheimer Str. (Tempelhof)	N 11590,6026 11650,6157 11651,6192 11628,6240
 Haberechtstr.	N 11651,6192 11768,6159
 Langenscheidtstr.	NH 7735,9121 7647,9196 7604,9242 7509,9337 7471,9360
-Goebenstr. (Schöneberg)	HH 7938,9694 7829,9723
+Goebenstr. (Schöneberg)	HH 7938,9694 7906,9703 7829,9723
 Goebenstr. (Schöneberg)	H 7829,9723 7725,9748 7631,9770 7625,9771 7518,9791
 #: carriageway_width: 10m (Höhe Winterfeldtplatz)
 Pallasstr.	H 7518,9791 7223,9815 7126,9825 7049,9833
@@ -5620,7 +5620,7 @@ Fischerstr. (Spandau)	N -3173,14216 -3092,14331 -3060,14380
 Charlottenbrücke	H -3083,14105 -3135,14183
 Charlottenstr. (Spandau)	H -3135,14183 -3173,14216 -3227,14260
 Charlottenstr. (Spandau)	NN -3227,14260 -3293,14304 -3338,14333 -3397,14370
-Schulenburgstr. (Spandau, Wilhelmstadt)	H -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890
+Schulenburgstr. (Spandau, Wilhelmstadt)	H -2725,13287 -2756,13263 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890
 Götelstr.	H -3246,12890 -3301,12864
 Götelstr.	N -3301,12864 -3275,12769 -3259,12580 -3260,12557 -3260,12540 -3269,12406 -3284,12332 -3293,12304 -3349,12232 -3416,12165
 Götelstr. [Parallelstraße]	N -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
@@ -11265,7 +11265,10 @@ Niederwallstr.	N 9925,11947 9991,11903 10079,11845 10132,11810 10189,11773 10205
 (Niederwallstr. - Ampel am Spittelmarkt)	NN 10205,11758 10213,11728
 Bautzener Str.	N 8180,9099 8182,9240 8183,9260 8185,9338 8186,9380 8192,9619
 (Wohnquartier Bautzener Straße - Großgörschenstr.)	NN 8255,9357 8186,9380
-(Wohnquartier Bautzener Straße)	NN 8206,9262 8254,9278 8255,9357 8260,9560 8227,9579
+(Wohnquartier Bautzener Straße - Yorckbrücke 5)	NN 8206,9262 8254,9278 8255,9357 8260,9560 8226,9574 8226,9589
+#: alias: Yorckstraßenbrücke 5
+(Yorckbrücke 5)	NN 8226,9589 8227,9621
+(Rampe Yorckbrücke 5)	NN 8227,9621 8257,9684 8243,9766
 Großgörschenstr.	N 8186,9380 8086,9418 8041,9434 7960,9466
 Großgörschenstr.	NN 7960,9466 7882,9490
 Großgörschenstr.	N 7882,9490 7829,9485 7771,9479 7609,9463 7507,9458
@@ -12145,7 +12148,7 @@ Allée du Stade	N 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,158
 (Uferweg am Hohenzollernkanal)	NN 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930770437" version="7"
-#: last_checked: 2023-05-18
+#: last_checked: 2023-09-19 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-01
 #: next_check: 2024-04-30
@@ -16238,7 +16241,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="19"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2023-06-24
+#: last_checked: 2023-07-12 (mapillary)
 #: check_frequency: 90d
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -20383,7 +20386,7 @@ Soester Str.	N 4146,1128 4057,866 4003,831 3951,798
 Blücherstr. (Lichterfelde)	N 4271,1081 4155,794 4069,734 4018,699
 Boninstr. (Lichterfelde)	N 3945,1034 3892,999 3840,964
 #: osm.highway: service
-(Hellweg-Parkplatz)	N 8243,9766 8242,9699 8213,9662 8201,9647 8192,9619
+(Hellweg-Parkplatz)	N 8243,9766 8239,9754 8247,9699 8213,9662 8201,9647 8192,9619
 #: osm.highway: service
 (Hellweg-Parkplatz)	N 8243,9766 8181,9707 8213,9662
 (zur Yorckstraßenbrücke 11)	NN 8395,9538 8423,9529
@@ -20419,7 +20422,7 @@ Boninstr. (Lichterfelde)	N 3945,1034 3892,999 3840,964
 Am Bülowbogen	NN 7906,10098 7928,10094 8011,10085
 (Park am Gleisdreieck, Eingang Am Bülowbogen)	NN 8011,10085 8013,10055 8027,10074 8042,10084 8145,10090 8211,10083 8276,10079
 (Park am Gleisdreieck, Eingang Kurfürstenstr.)	NN 8058,10306 8180,10282 8256,10264
-(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.)	NN 8264,10192 8276,10079 8289,9988 8206,9867 8233,9863 8243,9766
+(Park am Gleisdreieck - Yorckbrücke 5/Hellweg-Parkplatz)	NN 8264,10192 8276,10079 8289,9988 8206,9867 8233,9863 8243,9766
 (Flaschenhalspark, Weg entlang den Bahngleisen)	NN 8423,9536 8423,9529 8414,9366 8393,9293 8374,9291
 (Yorckstr. - Flaschenhalspark)	NN 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 #: note: beleuchtet
@@ -20471,7 +20474,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2023-08-25
+#: last_checked: 2023-09-20
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

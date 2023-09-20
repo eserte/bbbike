@@ -83,7 +83,7 @@ alte Gehwegplatten	RW1; 8097,9650 8192,9619 8358,9567 8595,9495
 Gehwegplatten	RW1; 8595,9495 8358,9568 8192,9619
 neu asphaltiert	RW1; 8192,9619 8097,9650
 neu asphaltiert, teilweise etwas breiter	RW2; 8097,9650 7938,9694
-neu asphaltiert, etwas breiter	RW1; 7938,9694 7829,9723
+neu asphaltiert, etwas breiter	RW1; 7938,9694 7906,9703 7829,9723
 	RW1;RW1 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634
 	RW2;RW1 9451,9634 9334,9670
 neu asphaltiert	RW1; 10198,9405 10564,9292
@@ -134,7 +134,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2023-08-18 vvv
+#: last_checked: 2023-09-19 (mapillary) vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -184,7 +184,8 @@ alte Gehwegplatten	RW1; 7986,4808 8014,4832
 	RW1;RW1 7735,9121 7647,9196 7604,9242 7509,9337
 	RW1; 7829,9723 7725,9748 7631,9770 7625,9771
 	RW1; 7625,9771 7631,9770 7725,9748 7829,9723
-Busspur ist nicht für Radfahrer freigegeben	RW1; 7829,9723 7938,9694
+Busspur ist nicht für Radfahrer freigegeben	RW1; 7829,9723 7906,9703
+	RW3; 7906,9703 7938,9694
 	RW2;RW1 7625,9771 7518,9791
 	RW1;RW1 7518,9791 7223,9815 7126,9825 7049,9833
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 7033,10328 7060,10221 7080,10098
@@ -326,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-09-12 vvv
+#: last_checked: 2023-09-20 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1404,7 +1405,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="20"
-#: last_checked: 2023-07-19 (mapillary)
+#: last_checked: 2023-09-19 (mapillary)
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -2001,7 +2002,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-08-27 vvv
+#: last_checked: 2023-09-20 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234
 provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
@@ -2696,7 +2697,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-09-19 vvv
+#: last_checked: 2023-09-20 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -2783,7 +2784,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-09-16
+#: last_checked: 2023-09-20
 #: check_frequency: 60d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -4945,10 +4946,19 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW2;RW4 9816,16565 9781,16569
 	RW4;RW4 9781,16569 9617,16590
 	RW2;RW1 9617,16590 9514,16603 9442,16610
-	RW3;RW4 -224,16095 -215,16121 -204,16162 -196,16187 -168,16269
+	RW3; -224,16095 -215,16121 -204,16162 -196,16187 -168,16269
+	RW4; -168,16269 -196,16187 -204,16162
+#: next_check_id: TEGELERBRUECKE-2021
+#: XXX noch nicht fertiggestellt
+#: last_checked: 2023-09-19 (mapillary) vvv
+#	RW4; -204,16162 -215,16121 -224,16095
+	RW0; -204,16162 -215,16121 -224,16095
+#asphaltiert	RW1; -226,16086 -236,16043 -242,15982
+	RW0; -226,16086 -236,16043 -242,15982
+#: last_checked ^^^
+asphaltiert	RW1; -242,15982 -236,16043 -226,16086
 	RW1;RW1 -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903
 	RW3;RW3 -252,15903 -242,15982
-asphaltiert	RW1;RW1 -242,15982 -236,16043 -226,16086
 	RW3;RW3 -226,16086 -224,16095
 Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -1628,16225
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
@@ -6306,7 +6316,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 #: next_check_id: MITTEL-2019
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
-#: last_checked: 2023-09-11 (daf) vvv
+#: last_checked: 2023-09-20 vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
@@ -6614,7 +6624,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
-#: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023)
+#: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs vvv
 #: last_checked: 2023-08-12 vvv
 #: check_frequency: 120d vvv
@@ -8266,7 +8276,7 @@ Leitboys	RW4; 9426,3797 9375,4022 9346,4144
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße)
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
-#: last_checked: 2023-08-18 vvv
+#: last_checked: 2023-09-19 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	RW3; 8739,6701 8653,6781
@@ -8508,4 +8518,6 @@ asphaltiert, breit	RW2;RW8 18034,2526 18247,2490 18484,2471
 Tempo 10	RW6;RW6 841,9914 937,9841 981,9806 1026,9772 1117,9706
 # 
 neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,15229
+# 
+	RW4; -2756,13263 -2725,13287
 # 

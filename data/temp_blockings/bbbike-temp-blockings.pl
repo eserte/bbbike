@@ -21498,7 +21498,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113279',
        data  => <<EOF,
-	q4::inwork; -2974,13188 -2940,13221 -2798,13257 -2725,13287
+	q4::inwork; -2974,13188 -2940,13221 -2756,13263 -2725,13287
 EOF
      },
      { from  => 1353366000, # 2012-11-20 00:00
@@ -37369,7 +37369,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-07-08 (daf)
+#: last_checked: 2023-09-20
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -37982,7 +37982,7 @@ EOF
 EOF
      },
      { from  => 1675896728, # 1676156400, # 2023-02-12 00:00
-       until => $isodate2epoch->("2023-09-22 17:00:00"), # 1679093999, # 2023-03-17 23:59
+       until => $isodate2epoch->("2023-12-31 17:00:00"), # 1679093999, # 2023-03-17 23:59
        text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 22.09.2023, evtl. wird verlängert',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
@@ -37991,12 +37991,12 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php (Instandsetzung des Gehwegs, voraussichtlich bis Jahresende 2023)
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv) (bis 01.09.2023) (bis 15.09.2023) (bis 22.09.2023)
 # REMOVED --- #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
-#: last_checked: 2023-06-04
+#: last_checked: 2023-09-10 (mapillary)
 #: next_check: 2023-09-22
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -38682,7 +38682,7 @@ EOF
 #: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-20
+#: last_checked: 2023-09-20
 	q4::inwork -3269,12406 -3260,12540
 EOF
      },
@@ -38692,9 +38692,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: auch der Radweg ist nicht benutzbar
-#: last_checked: 2023-06-17 (mapillary)
-#: next_check: 2023-09-01
+#: note: auch der Radweg ist nicht benutzbar; mittlerweile (2023-09-20) sind zwar noch Absperrungen da, aber die Fahrbahn ist weitgehend nutzbar, bis Ende September 2023 auslaufen lassen
+#: last_checked: 2023-09-20
+# REMOVED --- #: next_check: 2023-09-01
 	q4::inwork -3681,11767 -3636,11777 -3524,11980
 EOF
      },

@@ -2143,7 +2143,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED --- #: tempex ^^^
 ',
          'dont_check_date' => 1,
-         'from' => 1694923200,
+         'from' => 1695614400,
          'id' => 2387,
          'periodic' => 1,
          'recurrences' => [
@@ -2159,7 +2159,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                           ],
          'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 18.09.2023 bis 26.09.2023',
          'type' => 'gesperrt',
-         'until' => 1695182400
+         'until' => 1695763800
        },
        {
          'data' => '#: next_check_id: BERLINMARATHON-RECURRING
@@ -5103,7 +5103,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-07-08 (daf)
+#: last_checked: 2023-09-20
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -5363,12 +5363,12 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php (Instandsetzung des Gehwegs, voraussichtlich bis Jahresende 2023)
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv) (bis 01.09.2023) (bis 15.09.2023) (bis 22.09.2023)
 # REMOVED --- #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
-#: last_checked: 2023-06-04
+#: last_checked: 2023-09-10 (mapillary)
 #: next_check: 2023-09-22
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
@@ -5378,7 +5378,7 @@ Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
          'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 22.09.2023, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1695394800
+         'until' => 1704038400
        },
        undef,
        undef,
@@ -5651,7 +5651,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
          'data' => '#: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-20
+#: last_checked: 2023-09-20
 	q4::inwork -3269,12406 -3260,12540
 ',
          'from' => undef,
@@ -5662,9 +5662,9 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: auch der Radweg ist nicht benutzbar
-#: last_checked: 2023-06-17 (mapillary)
-#: next_check: 2023-09-01
+#: note: auch der Radweg ist nicht benutzbar; mittlerweile (2023-09-20) sind zwar noch Absperrungen da, aber die Fahrbahn ist weitgehend nutzbar, bis Ende September 2023 auslaufen lassen
+#: last_checked: 2023-09-20
+# REMOVED --- #: next_check: 2023-09-01
 	q4::inwork -3681,11767 -3636,11777 -3524,11980
 ',
          'from' => 1662328800,
@@ -6041,18 +6041,7 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
          'type' => 'handicap',
          'until' => 1735686000
        },
-       {
-         'data' => '#: source_id: viz2021:13.29609,52.51176,26.06.2023,00:00 (bis 11.07.2023) (bis 25.07.2023) (inaktiv)
-#: also_indoor: traffic (W)
-#: note: nur noch beim rbb gelistet
-	q4::inwork 3144,11659 3064,11657
-',
-         'from' => 1687644000,
-         'id' => 3835,
-         'text' => 'Horstweg: Bauarbeiten, zwischen Sophie-Charlotte-Platz und Schloßstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 20.09.2023',
-         'type' => 'handicap',
-         'until' => 1695225600
-       },
+       undef,
        undef,
        undef,
        undef,
