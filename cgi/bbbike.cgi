@@ -7018,12 +7018,12 @@ EOF
 	} elsif (defined $mapserver_init_url) {
 	    $s .= "  <td><a href=\"$mapserver_init_url\">Mapserver</a></td>\n";
 	}
-	if (1) {
-	    $s .= qq{  <td><a href="@{[ _bbbikeleaflet_url() ]}">BBBike &amp; Leaflet</a></td>\n};
-	}
 	if ($can_google_maps) {
 	    $s .= qq{  <td><a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>\n};
 	}
+    }
+    if (1) {
+	$s .= qq{  <td><a href="@{[ _bbbikeleaflet_url() ]}">BBBike &amp; Leaflet</a></td>\n};
     }
     $s .= <<EOF;
  </tr>
