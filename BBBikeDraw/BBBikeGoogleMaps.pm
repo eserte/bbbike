@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2009,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2009,2013,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,16 +23,10 @@ require BBBikeVar;
 
 use vars qw($bbbike_googlemaps_url $maptype);
 if (!defined $bbbike_googlemaps_url) {
-    if ($ENV{SERVER_NAME} && $ENV{SERVER_NAME} eq 'www.herceg.de' && $ENV{REMOTE_ADDR} eq '192.168.1.5') {
-	$bbbike_googlemaps_url = "http://localhost/~eserte/bbbike/cgi/bbbikegooglemap.cgi";
-    } elsif ($ENV{SERVER_NAME} && $ENV{SERVER_NAME} =~ m{^user.cs.tu-berlin.de$}) {
-	($bbbike_googlemaps_url = $ENV{SCRIPT_NAME}) =~ s{[^/]+$}{bbbikegooglemap.cgi};
-    } else {
-	# Note that this only works if there's no redirection
-	# involved:
-	$BBBike::BBBIKE_GOOGLEMAP_URL = $BBBike::BBBIKE_GOOGLEMAP_URL if 0; # cease -w
-	$bbbike_googlemaps_url = $BBBike::BBBIKE_GOOGLEMAP_URL;
-    }
+    # Note that this only works if there's no redirection
+    # involved:
+    $BBBike::BBBIKE_GOOGLEMAP_URL = $BBBike::BBBIKE_GOOGLEMAP_URL if 0; # cease -w
+    $bbbike_googlemaps_url = $BBBike::BBBIKE_GOOGLEMAP_URL;
 }
 
 $maptype = "hybrid" unless $maptype;
