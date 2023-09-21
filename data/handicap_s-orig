@@ -53,7 +53,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-09-12 vvv
+#: last_checked: 2023-09-21 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
@@ -71,12 +71,13 @@ Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-ploetzlich-wurde-es-hell-was-passiert-eigentlich-im-berliner-ostbahnhof-li.418658 (bis 2026)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
 #: last_checked: 2023-08-27 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-01-01 vvv
+#: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 #: next_check ^^^

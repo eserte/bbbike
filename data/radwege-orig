@@ -503,7 +503,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-08-25 vvv
+#: last_checked: 2023-09-21 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -934,7 +934,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-09-17
+#: last_checked: 2023-09-21
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2043,7 +2043,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-08-26
+#: last_checked: 2023-09-21
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577
 asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2746,7 +2746,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: last_checked: 2023-08-27
 #: check_frequency: 90d
-#: next_check: 2025-01-01
+#: next_check: 2026-01-01
 	RW2; 12543,11521 12645,11673
 	RW3; 12645,11673 12660,11705 12676,11739 12728,11850 12758,11915
 Fahrradschleuse	RW3; 12758,11915 12822,12067
@@ -4403,7 +4403,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2023-09-15 vvv
+#: last_checked: 2023-09-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-09-29 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5134,6 +5134,7 @@ Grünbeschichtung, mittlehohe Leitboys	RW4; 18080,5376 18425,5032 18457,5000 1872
 #: source_id: viz2021:13.541006,52.435642,10.08.2023,07:00 (bis 18.09.2023) (inaktiv)
 #: priority: #D
 #: XXX Wird nun doch eine richtige Grünmarkierung aufgebracht?
+#: XXX hier mittlerweile auch mittelhohe Leitboys, Grünbeschichtung unklar
 #: last_checked: 2023-05-13 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2023-09-18
@@ -7702,7 +7703,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2023-09-15 vvv
+#: last_checked: 2023-09-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-29 vvv
 #: osm_watch: way id="335479077" version="20"

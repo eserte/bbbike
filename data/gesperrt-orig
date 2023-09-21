@@ -3648,7 +3648,9 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1199037.php (bis Sommer 2023)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/quartierspark-ritterstrasse-wird-auf-wunsch-der-anwohner-aufgehuebscht_a346061
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/schaeden-im-quartierpark-entdeckt_a355859
+#: note: laut Aushang Bauarbeiten bis 26.9.2023
 #: last_checked: 2023-08-25
+#: next_check: 2023-09-26
 # REMOVED --- #: next_check: 2023-07-15
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
@@ -3734,11 +3736,7 @@ Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931 --- #: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html --- #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742 --- #: by: https://www.gm013.la/work/fmp --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593 --- #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können --- #: last_checked: 2023-06-20 --- #: check_frequency: 30d --- #: next_check: 2023-07-01 --- (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, südliches Ende kan mit Bauzäunen abgesperrt sein	2::inwork 12788,11898 12891,12008
-# 
-#: osm_watch: way id="1195364871" version="3"
-#: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt
-#: last_checked: 2023-09-11 (osm)
-Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
+# REMOVED --- #: osm_watch: way id="1195364871" version="3" --- #: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt --- #: last_checked: 2023-09-21 --- Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
 # 
 #: next_check_id: CLARAMUELLERJAHNKE-2023
 #: also_indoor: traffic (none)
@@ -3817,7 +3815,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/auswaertiges-amt/kurstrasse-33-35.html (Fertigstellung 2027/2028)
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
-#: last_checked: 2023-09-14 (daf)
+#: last_checked: 2023-09-21
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4130,7 +4128,7 @@ Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 1637
 #: next_check_id: OSTBAHNHOF-2021
 #: last_checked: 2023-08-27
 #: check_frequency: 120d
-#: next_check: 2025-01-01
+#: next_check: 2026-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # 
 # REMOVED --- #: next_check_id: SPREEPARK-2022 --- #: by: https://ausschreibungen-deutschland.de/816165_Spreepark_Berlin_Erschliessung_Ost__Pionierweg_C1_2021_Berlin (u.a.: "Beleuchtung" (zurzeit nolighting), ~6 Monate) --- #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800 --- #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (bis Mai 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 --- #: by: https://www.deutsches-architekturforum.de/thread/14728-neue-pl%C3%A4ne-f%C3%BCr-den-spreepark/?postID=719337#post719337 --- # REMOVED (ja, eingetragen) --- #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
@@ -4168,7 +4166,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-31-august-2023-rollt-der-verkehr-ueber-die-neue-tegeler-bruecke_a389844 (Abschluss bis Jahresende (2023)?)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/auf-der-neuen-bruecke-zwischen-tegel-und-siemensstadt-fliesst-der-verkehr_a391961 (Sperrung bis April 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=746926#post746926
-#: osm_watch: way id="930890136" version="20"
+#: osm_watch: way id="930890136" version="21"
 #: last_checked: 2023-09-01 (daf)
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-01
@@ -4345,10 +4343,10 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,779064#msg-779064
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2023-09-18 (bahninfo-forum) vvv
+#: last_checked: 2023-09-21 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
-#: osm_watch: way id="152434836" version="24"
+#: osm_watch: way id="152434836" version="25"
 #: osm_watch: way id="30084962" version="31"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
@@ -4468,7 +4466,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="30"
 #: osm_watch: way id="289966097" version="17"
 #: priority: #A
-#: last_checked: 2023-09-20
+#: last_checked: 2023-09-21
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4547,7 +4545,7 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-08-26
+#: last_checked: 2023-09-21
 #: check_frequency: 90d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
@@ -5099,7 +5097,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2023-08-20 vvv
+#: last_checked: 2023-09-21 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
@@ -5114,7 +5112,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20230703/
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-07-03 (baustellen-doku)
+#: last_checked: 2023-09-19 (mapillary)
 #: check_frequency: 180d
 Bhf. Blankenfelde: Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
 # 

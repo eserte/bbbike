@@ -16593,12 +16593,11 @@ EOF
      { from  => $isodate2epoch->("2022-09-16 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -7, # Termin steht noch nicht fest
+       recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht stat
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
+#: by: https://www.family-and-friends-ev.de/
 #: by: https://www.berlin.de/events/3614943-2229501-herbst-in-westend.html (geplant 25.9.2021-26.9.2021) (mittlerweile bestätigt)
 #: by: https://www.family-and-friends-ev.de/herbst-in-westend (hauptsächlich die Fahrbahn Richtung Süden betroffen)
 #: by: https://www.stadtfeste-in-deutschland.de/herbst-in-der-preussenallee-in-berlin-charlottenburg.html (fällt 2023 aus?)
@@ -21453,6 +21452,7 @@ EOF
 #: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023)
+#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -28426,7 +28426,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-08-16
+#: last_checked: 2023-09-21
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -35350,7 +35350,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: osm_watch: way id="734271970" version="5"
-#: osm_watch: way id="975241319" version="5"
+#: osm_watch: way id="975241319" version="6"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
 #: last_checked: 2023-09-15
@@ -37992,6 +37992,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php (Instandsetzung des Gehwegs, voraussichtlich bis Jahresende 2023)
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-weitere-arbeiten_a393893
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv) (bis 01.09.2023) (bis 15.09.2023) (bis 22.09.2023)
 # REMOVED --- #: also_indoor: traffic (G,H,B,W)
@@ -38694,7 +38695,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: auch der Radweg ist nicht benutzbar; mittlerweile (2023-09-20) sind zwar noch Absperrungen da, aber die Fahrbahn ist weitgehend nutzbar, bis Ende September 2023 auslaufen lassen
 #: last_checked: 2023-09-20
-# REMOVED --- #: next_check: 2023-09-01
+#: next_check: 2023-09-30
 	q4::inwork -3681,11767 -3636,11777 -3524,11980
 EOF
      },
@@ -38738,11 +38739,11 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
-#: osm_watch: way id="1172668082" version="7"
+#: osm_watch: way id="1172668082" version="8"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-09-04 (osm)
+#: last_checked: 2023-09-20 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
@@ -40384,12 +40385,12 @@ EOF
 EOF
      },
      { from  => 1694296800, # 2023-09-10 00:00
-       until => $isodate2epoch->("2023-09-23 05:00:00"), # 1695247140, # 2023-09-20 23:59
+       until => 1695321643, # $isodate2epoch->("2023-09-23 05:00:00"), # 1695247140, # 2023-09-20 23:59
        text  => 'Kapelle-Ufer: in Richtung Moabit zwischen Konrad-Adenauer-Str. und Alexanderufer nachts zwischen 20:00 und 05:00 Uhr gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.09.2023 00:00 bis 23.09.2023 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023) (inaktiv) (bis 22.09.2023)
-#: source_id: viz2021:13.374981,52.523043,11.09.2023,20:00 (bis 20.09.2023) (bis 23.09.2023)
+#: source_id: viz2021:13.37649,52.52207,11.09.2023,00:00 (bis 20.09.2023) (inaktiv) (bis 22.09.2023) (inaktiv)
+#: source_id: viz2021:13.374981,52.523043,11.09.2023,20:00 (bis 20.09.2023) (bis 23.09.2023) (inaktiv)
 	q4::inwork; 8503,12895 8488,12920 8411,12992 8315,13042
 EOF
      },
