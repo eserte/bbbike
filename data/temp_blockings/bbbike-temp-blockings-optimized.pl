@@ -4510,7 +4510,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-09-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5359,29 +5359,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-wird-voll-gesperrt_a371402
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1320004.php (kein Endedatum mehr)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1322779.php (bis Mitte/Ende Juni 2023)
-#: by: https://www.berliner-woche.de/gruenau/c-verkehr/verzoegerungen-in-der-regattastrasse_a380986
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php (Instandsetzung des Gehwegs, voraussichtlich bis Jahresende 2023)
-#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-weitere-arbeiten_a393893
-#: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv) (bis 01.09.2023) (bis 15.09.2023) (bis 22.09.2023)
-# REMOVED --- #: also_indoor: traffic (G,H,B,W)
-#: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
-#: last_checked: 2023-09-10 (mapillary)
-#: next_check: 2023-09-22
-	q4::inwork 22766,1226 22821,1086
-Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
-',
-         'from' => 1675896728,
-         'id' => 3719,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
-         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 22.09.2023, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => 1704038400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5899,7 +5877,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-09-17 vvv
+#: last_checked: 2023-09-22 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -6076,8 +6054,9 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) (bis 29.09.2023) vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: note: bei rbb nur bis 15.08.2023
+#: note: am 22.9.2023 waren zwar noch Absperrungen da, aber die Durchfahrt war möglich
 #: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-09-22 vvv
 #: next_check: 2023-09-29 vvv
 	q4::inwork 13368,7300 13476,7330 13519,7345
 Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
@@ -6429,16 +6408,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork -5516,30287 -6055,30073
-',
-         'from' => 1693116000,
-         'id' => 3893,
-         'source_id' => 'LS/221-E/23/111',
-         'text' => 'Ortsdurchfahrt Marwitz: Bauarbeiten, Sperrung, 28.08.2023 08:00 Uhr bis 22.09.2023 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1695391200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6650,6 +6620,16 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'text' => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
          'type' => 'handicap',
          'until' => 1735833600
+       },
+       {
+         'data' => '#: next_check_id: WEGAMFLIESSGRABEN-2023
+	2::inwork 13584,20628 13602,20613 13743,20594 13827,20557 13888,20558
+',
+         'from' => 1696284000,
+         'id' => 3920,
+         'text' => 'Weg am Fließgraben: wegen Bauarbeiten voraussichtliche Sperrung vom 4. Oktober 2023 bis Ende Dezember 2023',
+         'type' => 'gesperrt',
+         'until' => 1704063599
        }
      
 );

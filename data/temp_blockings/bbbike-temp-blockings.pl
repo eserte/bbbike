@@ -1074,14 +1074,14 @@ EOF
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9, start => "2022-10-25T00:00:00"]],
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => 3,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20211001 (findet 2021 anscheinend nicht statt)
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20220922 (findet 2022 nicht statt)
-#: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72 (inaktiv)
 	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
 	2 8546,12279 8538,12245
@@ -15092,7 +15092,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013591',
        data  => <<EOF,
-	q4::inwork; 7532,4605 7544,4587 7597,4499
+	q4::inwork; 7532,4605 7544,4587 7573,4540 7597,4499
 EOF
      },
      { from  => 1249972560, # 2009-08-11 08:36
@@ -26022,7 +26022,7 @@ EOF
        text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 15591,8848 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581
+	2::temp 15591,8848 15534,8943 15445,9090 15440,9098 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00
@@ -31954,7 +31954,7 @@ EOF
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
 	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 	q4::temp 15778,8990 15678,8911 15591,8848
-	q4::temp; 15591,8848 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
+	q4::temp; 15591,8848 15534,8943 15445,9090 15440,9098 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
 EOF
      },
      { from  => 1599591506, # 2020-09-08 20:58
@@ -35077,7 +35077,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-09-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -37982,7 +37982,7 @@ EOF
 EOF
      },
      { from  => 1675896728, # 1676156400, # 2023-02-12 00:00
-       until => $isodate2epoch->("2023-12-31 17:00:00"), # 1679093999, # 2023-03-17 23:59
+       until => 1695406745, # $isodate2epoch->("2023-12-31 17:00:00"), # 1679093999, # 2023-03-17 23:59
        text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 22.09.2023, evtl. wird verlängert',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1290457.php',
@@ -37994,11 +37994,10 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1365782.php (Instandsetzung des Gehwegs, voraussichtlich bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-weitere-arbeiten_a393893
 #: source_id: viz2021:13.58341,52.41363,08.02.2023,15:02 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv) (bis 01.09.2023) (bis 15.09.2023) (bis 22.09.2023)
+#: source_id: viz2021:13.582488,52.415092,03.01.2023,10:00 (hier: bis 31.3.2023) (bis 14.4.2023) (bis 28.4.2023) (bis 5.5.2023) (bis 9.6.2023) (bis 30.6.2023) (bis 07.07.2023) (inaktiv) (bis 21.07.2023) (inaktiv) (bis 25.08.2023) (inaktiv) (bis 01.09.2023) (bis 15.09.2023) (bis 22.09.2023) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (G,H,B,W)
 #: note: Möglicherweise kommen Radfahrer zumindest teilweise und/oder zeitweise (am Wochenende) durch die Baustelle
-#: last_checked: 2023-09-10 (mapillary)
-#: next_check: 2023-09-22
+# REMOVED --- #: last_checked: 2023-09-10 (mapillary) --- #: next_check: 2023-09-22
 	q4::inwork 22766,1226 22821,1086
 Sperrung beginnt ab Café Liebig	q2::inwork 22766,1226 22655,1450
 EOF
@@ -39236,7 +39235,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-09-17 vvv
+#: last_checked: 2023-09-22 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39622,8 +39621,9 @@ EOF
 #: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) (bis 29.09.2023) vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: note: bei rbb nur bis 15.08.2023
+#: note: am 22.9.2023 waren zwar noch Absperrungen da, aber die Durchfahrt war möglich
 #: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
-#: last_checked: 2023-07-21 vvv
+#: last_checked: 2023-09-22 vvv
 #: next_check: 2023-09-29 vvv
 	q4::inwork 13368,7300 13476,7330 13519,7345
 Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
@@ -40250,7 +40250,7 @@ EOF
        until => 1695391200, # 2023-09-22 16:00
        text  => 'Ortsdurchfahrt Marwitz: Bauarbeiten, Sperrung, 28.08.2023 08:00 Uhr bis 22.09.2023 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-E/23/111',
+       source_id => 'LS/221-E/23/111', # inaktiv
        data  => <<EOF,
 	2::inwork -5516,30287 -6055,30073
 EOF
@@ -40526,6 +40526,15 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 	q4::inwork; 10908,13978 10933,14122
+EOF
+     },
+     { from  => 1696284000, # 2023-10-03 00:00
+       until => 1704063599, # 2023-12-31 23:59
+       text  => 'Weg am Fließgraben: wegen Bauarbeiten voraussichtliche Sperrung vom 4. Oktober 2023 bis Ende Dezember 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: WEGAMFLIESSGRABEN-2023
+	2::inwork 13584,20628 13602,20613 13743,20594 13827,20557 13888,20558
 EOF
      },
     );

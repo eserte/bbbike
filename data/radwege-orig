@@ -365,7 +365,7 @@ Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241
 #: confirmed_by: srt
 #: XXX bleibt das Provisorium?
 #: osm_watch: way id="984857536" version="5"
-#: last_checked: 2023-08-18
+#: last_checked: 2023-09-22
 #: check_frequency: 90d
 provisorische geschützte Radspur	RW3; 13155,9907 13136,9883 13086,9825 13026,9854
 	RW1; 13026,9854 12932,9900
@@ -1235,7 +1235,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-09-15 vvv
+#: last_checked: 2023-09-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1651,9 +1651,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 # REMOVED --- #: XXX Wurde die Benutzungspflicht aufgehoben? -> nein! --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14389,9656 14495,9609
-	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15445,9090 15452,9079 15534,8943 15591,8848
+	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15440,9098 15445,9090 15534,8943 15591,8848
 	RW2; 15591,8848 15534,8943
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 15445,9090 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 15440,9098 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
@@ -1777,7 +1777,7 @@ Verbundsteinpflaster	RW1; 5328,13019 5166,13087
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="21"
 #: osm_watch: way id="458915639" version="5"
-#: last_checked: 2023-08-05 vvv
+#: last_checked: 2023-09-19 (mapillary) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2023-11-30 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -2848,7 +2848,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-09-15 vvv
+#: last_checked: 2023-09-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-30 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3343,7 +3343,7 @@ vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,147
 	RW1; 7156,14763 7236,14729
 Verbundsteinpflaster	RW1; 5736,15098 5848,14977 5972,14820
 Radweg nur aufgemalt	RW1; 5972,14820 5848,14977
-Verbundsteinpflaster, teiweise nur aufgemalt	RW2; 5848,14977 5736,15098
+Verbundsteinpflaster, teilweise nur aufgemalt	RW2; 5848,14977 5736,15098
 südlicher Gehweg ist asphaltiert und für beide Richtungen frei, nördlicher Radweg nur aufgemalt	RW1;RW1 5972,14820 6213,14777 6334,14756
 # 
 #: note: Saatwinkler Damm (Norden/Westen)
@@ -4681,13 +4681,14 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1352801.php (Sanierung des Geh- und Radweges, ab 7.8.2023 bis Mitte September 2023)
 #: by: https://www.berliner-woche.de/konradshoehe/c-bauen/geh-und-radweg-wird-saniert_a389314
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11543 (Anfrage - Antwort: Radfahrstreifen nur auf der westlichen Fahrbahnseite; möglicherweise Sanierung des vorhandenen Rad/Gehwegs?)
-#: source_id: viz2021:13.235806,52.586491,21.08.2023,07:00 (Sperrung des Radwegs, bis 23.09.2023)
+#: source_id: viz2021:13.235806,52.586491,21.08.2023,07:00 (Sperrung des Radwegs, bis 23.09.2023) (inaktiv)
+#: source_id: viz2021:13.235806,52.586491,14.08.2023,07:00 (bis 10.10.2023)
 #: note: Asphalt sah älter aus
 #: note: stellenweise (etwa 100m) sollen Radfahrer absteigen
 # REMOVED (früher) --- Gehweg für Radfahrer frei, asphaltiert, schmal	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 #: last_checked: 2023-03-08 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2023-09-23
+#: next_check: 2023-10-10
 wegen Bauarbeiten ist der Gehweg gesperrt	RW0;RW0 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 # 
 # REMOVED ---	RW2;RW2 -1788,19663 -1726,19725 -1619,19754 -1419,19815 -1240,19869 -1202,19877
@@ -8330,7 +8331,7 @@ baulich getrennt	RW4; 10807,12451 10831,12371
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
-#: last_checked: 2023-07-19 (mapillary) vvv
+#: last_checked: 2023-09-19 (mapillary) vvv
 #: check_frequency: 90d
 #: next_check: 2023-12-15 vvv
 # REMOVED --- #: next_check: 2024-01-01
@@ -8494,9 +8495,21 @@ Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,
 #: by ^^^
 # 
 #: note: Steglitzer Damm Richtung Osten
-Radspur teiweise hinter parkenden Autos, teilweise mit Leitboys	RW3; 6846,4808 7092,4763 7205,4741 7285,4724 7364,4704 7387,4696 7485,4659 7532,4605 7544,4587 7597,4499
+Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 6846,4808 6922,4794 7039,4773 7092,4763
+#: XXX Radweg wegen Bauarbeiten aufgehoben, Radfahrüberholverbot
+#: source_id: viz2021:13.354446,52.449029,22.05.2023,07:00 (bis 8.11.2023)
+#: last_checked: 2023-09-19 (mapillary)
+#: next_check: 2023-11-08
+	RW0; 7092,4763 7205,4741 7285,4724 7364,4704
+Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 7364,4704 7387,4696 7485,4659 7532,4605
+	RW4; 7532,4605 7544,4587 7573,4540
+Bushaltestelle	RW5; 7573,4540 7597,4499
 #: note: Steglitzer Damm Richtung Westen
-	RW3; 7597,4499 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7092,4763 6846,4808
+Bushaltestelle	RW5; 7597,4499 7573,4540
+	RW4; 7573,4540 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7092,4763
+Bushaltestelle	RW5; 7092,4763 7039,4773
+Leitboys	RW4; 7039,4773 6922,4794
+Bushaltestelle	RW5; 6922,4794 6846,4808
 # 
 Tempo 10	RW6;RW6 12460,1168 12379,1185
 # 
