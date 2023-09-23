@@ -579,7 +579,7 @@ Bus 373	busroute_N 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747 15799,
 Bus 271	busroute_N 15757,610 15810,525 15835,489 15944,368 15995,328 16035,298 16057,284 16130,239 16055,153 15966,52 15960,-10 15995,-115 16051,-264 16079,-337 16142,-414 16234,-450 16297,-468 16378,-489 16431,-311 16477,-160 16498,-92 16536,26 16590,216 16642,393 16726,642 16735,668 16779,775 16796,820 16813,865 16887,1051 16886,1094 16839,1162
 Bus 260, ...	busroute_N 16450,1691 16549,1758
 Bus 372	busroute_N 16698,1392 16805,1488
-Bus 372	busroute_N 16849,1437 16988,1571 17100,1650 17241,1750 17347,1823 17431,1882 17567,1942 17747,2028 17764,2032
+Bus 372	busroute_N 16849,1437 16992,1566 17100,1650 17241,1750 17347,1823 17431,1882 17567,1942 17747,2028 17764,2032
 Bus 172	busroute_N 18111,2135 17901,2075 17860,2061 17764,2032
 Bus 172, ...	busroute_N 17764,2032 17809,1855 17824,1756 17848,1657 17855,1629
 Bus 372	busroute_N 17855,1629 17871,1570 17902,1517 17962,1437 18053,1317 18093,1263 18112,1235 18224,1077 18272,1009 18128,910 18123,906 18023,833 17928,764 17734,675 17640,626 17518,564
@@ -1671,10 +1671,13 @@ Am Karlsbad: Hausdurchfahrt	CP2; 8027,11000 7959,10910
 # 
 #: next_check_id: ANDERGAERTNEREI-2022
 #: XXX laut osm "Straßenname vorhanden", siehe https://www.openstreetmap.org/note/3038739
-#: last_checked: 2023-03-11
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2023-01-26
-An der alten Gärtnerei: am Bauzaun hängt nur ein provisorisches schwarzes Schild	CP2; 10958,3710 10972,3779
+#: last_checked: 2023-09-23 vvv
+#: check_frequency: 180d vvv
+#: historical_note: "am Bauzaun hängt nur ein provisorisches schwarzes Schild", aber mittlerweile (Sep 2023) nicht mehr
+An der alten Gärtnerei: nicht ausgeschildert	CP2; 10958,3710 10972,3779
+An der alten Gärtnerei: nicht ausgeschildert	CP2; 10879,3719 10888,3787
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 ausgeschildert "Grüner Weg 94, 96, 98"	CP2; 13775,3500 13728,3332
 # 
@@ -1811,11 +1814,7 @@ Boveristr.: nicht ausgeschildert	CS 19053,2890 19069,2904 19146,2975
 # 
 Neue Schönholzer Str.: zur Weiterfahrt in die Schönholzer Str. Radweg und Radfahrampel auf der linken Seite benutzen	CP; 10141,18030 10089,18180 10054,18210
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Grundstücksnummerierungen)
-#: add_fragezeichen: Wann wird der Krabbentaucherweg ausgeschildert?
-#: last_checked: 2023-04-13 (mapillary)
-#: check_frequency: 90d
-Krabbentaucherweg: nicht ausgeschildert	CS 16498,-92 16531,-104 16553,-158 16527,-169
+# REMOVED (mittlerweile ausgeschildert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_25_2521_2620_online.pdf (Grundstücksnummerierungen) --- #: add_fragezeichen: Wann wird der Krabbentaucherweg ausgeschildert? --- #: last_checked: 2023-09-23 --- #: check_frequency: 90d --- Krabbentaucherweg: nicht ausgeschildert	CS 16498,-92 16531,-104 16553,-158 16523,-170
 # 
 Spreegasse: nicht ausgeschildert	CS 10373,12776 10305,12717 10244,12664
 Heiligegeistgasse: nicht ausgeschildert	CS 10359,12634 10351,12646 10305,12717 10290,12742 10287,12747

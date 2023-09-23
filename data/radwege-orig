@@ -327,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-09-20 vvv
+#: last_checked: 2023-09-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1086,7 +1086,7 @@ Gehweg für Radfahrer frei	RW1; 9584,3713 9751,3769
 Busspur ist immer gültig	RW5; 8964,3539 9128,3580 9222,3602 9391,3651
 altes Verbundsteinpflaster	RW1; 9953,3806 10048,3806
 altes Verbundsteinpflaster	RW2; 10048,3806 9953,3806
-altes Verbundsteinpflaster	RW1;RW1 10048,3806 10237,3789 10462,3765 10562,3754 10879,3719 10958,3710 10985,3707 11048,3700 11084,3702
+altes Verbundsteinpflaster	RW1;RW1 10048,3806 10237,3789 10462,3765 10562,3754 10879,3719 10958,3710 10985,3707 11048,3700 11086,3708
 # REMOVED --- #: XXX Radweg Richtung Südwesten aufgehoben, später werden hier Radspuren eingerichtet --- #: source_id: IM_026105 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150703.0950.402227.html --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende) --- #: osm_watch: way id="30701044" version="9" --- #: osm_watch: way id="29890799" version="11" --- #: last_checked: 2016-03-28 (noch Bauarbeiten, Richtung Süden noch keine Markierungen) --- #: check_frequency: 30d
 #: by: Susan Richter
 #: confirmed_by: srt
@@ -1096,13 +1096,13 @@ altes Verbundsteinpflaster	RW1;RW1 10048,3806 10237,3789 10462,3765 10562,3754 1
 Verbundsteinpflaster	RW1;RW1 10412,4552 10504,4705 10755,5129
 Verbundsteinpflaster	RW2;RW1 10755,5129 10800,5203
 Verbundsteinpflaster	RW1;RW1 10800,5203 10931,5516 10976,5628 11128,5782 11196,5851 11338,5992
-# REMOVED (stimmt größtenteils nicht) --- #: note: Kommentar von Jens Velten, von srt korrigiert --- teilweise relativ breit, neues Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12119,4075 12284,4133 12337,4160 12363,4175 12564,4308
+# REMOVED (stimmt größtenteils nicht) --- #: note: Kommentar von Jens Velten, von srt korrigiert --- teilweise relativ breit, neues Verbundsteinpflaster	RW1; 11086,3708 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12119,4075 12284,4133 12337,4160 12363,4175 12564,4308
 # 
 #: note: Mohriner Allee Richtung Westen
 teilweise neues Verbundsteinpflaster	RW1; 12564,4308 12363,4175 12337,4160
-uneben, schmal, Verbundsteinpflaster	RW1; 12337,4160 12284,4133 12119,4075 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11394,3814 11375,3807 11283,3774 11264,3767 11166,3732 11159,3730 11153,3728 11084,3702
+uneben, schmal, Verbundsteinpflaster	RW1; 12337,4160 12284,4133 12119,4075 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11394,3814 11375,3807 11283,3774 11264,3767 11166,3732 11159,3730 11153,3728 11086,3708
 #: note: Mohriner Allee Richtung Osten
-uneben, schmal, Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12119,4075
+uneben, schmal, Verbundsteinpflaster	RW1; 11086,3708 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12119,4075
 etwas breiter, teilweise neues Verbundsteinpflaster	RW1; 12119,4075 12284,4133 12337,4160
 teilweise neues Verbundsteinpflaster	RW1; 12337,4160 12363,4175 12564,4308
 # 
@@ -1130,8 +1130,8 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str. Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2023-06-04
-#: check_frequency: 60d
+#: last_checked: 2023-09-23
+#: check_frequency: 90d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
 Bushaltestelle mit Radspur	RW5;RW5 16908,1217 16839,1262
@@ -1142,23 +1142,19 @@ Verbundsteinpflaster	RW1; 14023,3276 14056,3374 14141,3614 14189,3732 14233,3840
 neues Verbundsteinpflaster, trotzdem bereits mit leichten Unebenheiten	RW1;RW1 13809,5257 13824,5204 13892,4955 13914,4877 13939,4778 14023,4475 14048,4363 14108,4175 14119,4153
 alte Gehwegplatten, Unebenheiten	RW1; 14119,4153 14290,3908
 	RW1; 14290,3908 14347,3836 14391,3786 14550,3625 14788,3441 14822,3409 14994,3245 15176,3136 15301,3038
-Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15459,2921
-	RW1; 15459,2921 15572,2785 15599,2752 15613,2739 15736,2593 15804,2512 15980,2318
-	RW2; 15980,2318 16028,2261 16135,2135
-	RW1; 16135,2135 16254,1999 16315,1904 16400,1770 16450,1691 16459,1680 16643,1460 16698,1392 16815,1278 16839,1262
+Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15459,2921 15572,2785 15599,2752 15613,2739 15736,2593 15804,2512 15980,2318
+#: historical_note: früher benutzungspflichtig
+Verbundsteinpflaster	RW1; 15980,2318 16028,2261 16135,2135
+Verbundsteinpflaster	RW1; 16135,2135 16254,1999 16315,1904
+	RW1; 16315,1904 16400,1770 16450,1691 16459,1680 16643,1460 16698,1392 16815,1278 16839,1262
 neues Verbundsteinpflaster	RW1; 16839,1262 16815,1278
 Gehwegplatten, teilweise mit Schäden und Hebungen	RW1; 16815,1278 16698,1392 16643,1460 16459,1680 16450,1691
 neues Verbundsteinpflaster	RW1; 16450,1691 16400,1770 16315,1904
 Gehwegplatten, teilweise mit Schäden und Hebungen	RW1; 16315,1904 16254,1999 16135,2135
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 16135,2135 16028,2261 15980,2318 15804,2512 15736,2593 15613,2739 15599,2752 15572,2785
-#: by: https://nitter.cz/VIZ_Berlin/status/1643191201942626304#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMzSkVhSlhvQUVSMEdRLmpwZw==
-#: source_id: viz2021:13.477441,52.430079,04.04.2023,08:00 (bis 28.04.2023) (bis 26.05.2023) (bis 30.06.2023) (bis 04.07.2023) (inaktiv)
-#: note: laut rbb stadtauswärts?
-#: XXX Instandsetzung des Radwegs --- bis 04.06.2023 teilweise schon fertig, neues Verbundsteinpflaster
-#: last_checked: 2023-06-04
-#: next_check: 2023-07-04
-Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15572,2785 15459,2921 15301,3038
+# REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1643191201942626304#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnMzSkVhSlhvQUVSMEdRLmpwZw== --- #: source_id: viz2021:13.477441,52.430079,04.04.2023,08:00 (bis 28.04.2023) (bis 26.05.2023) (bis 30.06.2023) (bis 04.07.2023) (inaktiv) --- #: note: laut rbb stadtauswärts? --- #: XXX Instandsetzung des Radwegs --- bis 04.06.2023 teilweise schon fertig, neues Verbundsteinpflaster --- #: last_checked: 2023-06-04 --- #: next_check: 2023-07-04
+#: historical_note: bis Sommer 2023: Verbundsteinpflaster, teilweise mit Schäden und Hebungen
+Verbundsteinpflaster, neu gemacht, trotzdem etwas uneben	RW1; 15572,2785 15459,2921 15301,3038
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15176,3136 14994,3245
 Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786 14347,3836 14290,3908 14119,4153
 	RW2; 13316,6320 13307,6359 13294,6386 13261,6456 13236,6489 13248,6452 13275,6382 13289,6355 13316,6320
@@ -1235,7 +1231,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-09-22 vvv
+#: last_checked: 2023-09-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2848,15 +2844,12 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-09-22 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-09-30 vvv
+#: last_checked: 2023-09-23
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2023-09-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
 #	RW3; 14641,10552 14608,10409
 #die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
-#: next_check ^^^
-#: last_checked ^^^
-#: check_frequency ^^^
 	RW3;RW2 14671,10751 14680,10837
 	RW3; 15261,10738 15163,10758 15081,10775 15004,10791 14927,10807 14904,10812
 	RW4; 14904,10812 14810,10832 14717,10855 14680,10837
@@ -3166,7 +3159,7 @@ Gehweg für Radfahrer frei, recht eng	RW1;RW1 5223,1318 5059,1337 4897,1352 4795,
 	RW0;RW1 10793,-161 10822,-806
 	RW1;RW1 10822,-806 10849,-1332 10853,-1475 10870,-1645 10903,-1768 10909,-1790 10980,-1919 11073,-2037
 	RW6;RW6 10453,4518 10558,4394 10550,4320
-	RW6;RW6 11244,4325 11196,4325 11125,4331 11073,4342
+	RW6;RW6 11259,4325 11196,4325 11125,4331 11073,4342
 	RW3;RW3 5116,13457 4985,13470 4605,13525 4455,13567 4283,13660
 Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5220,14043 5212,14154
 asphaltiert, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5212,14154 5205,14253
@@ -4178,7 +4171,7 @@ Verbundsteinpflaster mit Schäden	RW1; 12597,6293 12618,6207 12628,6166 12644,608
 asphaltiert	RW1; 12699,5909 12718,5845
 Verbundsteinpflaster mit Schäden	RW1; 12718,5845 12789,5612 12794,5596 12798,5580 12812,5526 12841,5416 12883,5257
 #: note: Britzer Damm/Hermannstr. Richtung Norden
-	RW1; 12883,5257 12841,5416 12812,5526 12798,5580 12794,5596 12789,5612 12718,5845 12699,5909 12644,6087 12628,6166 12618,6207
+Verbundsteinpflaster mit Schäden	RW1; 12883,5257 12841,5416 12812,5526 12798,5580 12794,5596 12789,5612 12718,5845 12699,5909 12644,6087 12628,6166 12618,6207
 	RW2; 12618,6207 12597,6293 12595,6299 12588,6337 12576,6374 12553,6423
 	RW1; 12553,6423 12510,6508
 # 
@@ -4588,7 +4581,8 @@ schmal, teilweise mit Bord, parkende Autos ragen in den Radweg hinein	RW1; 11355
 #: note: Quarzweg Richtung Süden
 	RW1; 10661,2464 10673,2457 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689 11407,1592 11436,1513 11483,1401
 # 
-	RW1;RW9 10748,2412 10933,2606 10939,2642 11005,2726 11199,2932
+	RW1;RW9 10748,2412 10933,2606 10939,2642 10958,2666
+# REMOVED (nicht (mehr?) als Radweg erkennbar) ---	RW1;RW9 10958,2666 11005,2726 11199,2932
 	RW1;RW9 10661,2464 10693,2513 10705,2570 10716,2597
 	RW9;RW1 10222,2902 9972,2939 9824,2940 9746,3013 9712,3113
 Verbundsteinpflaster	RW1;RW1 9712,3113 9697,3142 9675,3150 9621,3155
@@ -4671,7 +4665,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 # 
 #: next_check_id: KONRADSHOEHER-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8344 (Umsetzung bis 2021 bzw. 2023, "Grundlagenermittlung für Radverkehrsanlagen")
-#: by: https://www.infravelo.de/projekt/konradshoeher-strasse/ (2. Quartal 2023 - 4. Quartal 2023) (mittlerweile Baustart 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023)
+#: by: https://www.infravelo.de/projekt/konradshoeher-strasse/ (2. Quartal 2023 - 4. Quartal 2023) (mittlerweile Baustart 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (in der API gelöscht, im Web weiterhin verfügbar)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10451 (Radspuren)
 #: by: https://berliner-abendblatt.de/2022/04/21/qm-lichtenrade/ (Radspuren in der Heiligenseestraße, Konradshöher Straße sowie der Ollenhauerstraße; Realisierung bis Ende 2023)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10708 (Erwähnung)
@@ -7027,7 +7021,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2023-09-15 vvv
+#: last_checked: 2023-09-23 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7067,11 +7061,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-23
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-23
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7707,7 +7701,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2023-09-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-29 vvv
-#: osm_watch: way id="335479077" version="20"
+#: osm_watch: way id="335479077" version="21"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"

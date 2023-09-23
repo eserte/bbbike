@@ -71,7 +71,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2023-09-16
+#: last_checked: 2023-09-21 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
@@ -1271,6 +1271,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8742,475
 	X 8736,337
 #: note: Radfahrer werden beim Rechtsabbiegen aus Alt-Rudow an der Ampel vorbei geführt
+#: note: Anforderungsampel (2x) beim Linksabbiegen aus der Neuköllner Str.
 	X 16315,1904
 	X 15301,3038
 #: note: Anforderungsampel
@@ -2625,13 +2626,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-23
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-23
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3416,6 +3417,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 8075,499
 	X 12221,7271
 	X -3631,16224
+#: note: keine Überquerungsmöglichkeit über die Johannisthaler Chaussee, siehe Einträge in comments_path
 	X 15640,4222
 #: note: Anforderungsampel für querende Fußgänger
 	X 15669,4266
