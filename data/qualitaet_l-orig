@@ -5981,7 +5981,10 @@ Alte Hirschfelder Str. (Werneuchen): rauer Asphalt mit Schäden und Unebenheiten	
 Werneuchen - Hirschfelde: Asphalt	Q0 34347,26261 34900,26373 35284,26390 35331,26390
 Werneuchen - Hirschfelde: unebener Asphalt, Splitt	Q1 35331,26390 36251,26400 36489,26368
 Werneuchen - Hirschfelde: Asphalt	Q0 36489,26368 36557,26359 36644,26449
-Schönefeld - Flughafen Berlin-Brandenburg: Asphalt	Q0 18936,-1581 19273,-2026 19259,-2043 19182,-2075 19157,-2100 19158,-2135 19168,-2147 19262,-2151 19339,-2152 19417,-2122 19493,-2183 19514,-2241 19555,-2277 19596,-2280 19759,-2440 19866,-2607 19927,-2671 19940,-2711 20039,-2863
+Schönefeld - Flughafen Berlin-Brandenburg: Asphalt	Q0 18936,-1581 19168,-1870 19273,-2026 19259,-2043 19182,-2075 19157,-2100 19158,-2135 19168,-2147 19262,-2151 19339,-2152 19417,-2122 19493,-2183 19514,-2241 19555,-2277 19596,-2280 19759,-2440 19866,-2607 19927,-2671 19940,-2711 20039,-2863
+Business Park Berlin - Schönefeld: Asphalt	Q0 19192,-2124 19177,-2106 19157,-2100
+(Service-Weg): Asphalt	Q0 19157,-2100 19120,-2077 19054,-1940
+(Service-Weg): Beton	Q1- 19054,-1940 19160,-1897
 (zum Radweg): Asphalt	Q0 19262,-2151 19262,-2128
 (Mauerweg - Siegfriedstr.): unbefestigter Trampelpfad	Q3+ 4081,-425 4058,-437
 Hagenstr.: Asphalt	Q0 4209,-959 4329,-925
@@ -6200,7 +6203,7 @@ Groß Glienicker Heide: Kleinsteinpflaster	Q2+ -8661,8457 -8640,8453 -8560,8438 -
 #: next_check_id: BUSINESSPARKBERLIN-2020
 #: osm_watch: way id="193392074" version="5"
 #: XXX wird die Straße befestigt?
-#: last_checked: 2023-03-26 (mapillary)
+#: last_checked: 2023-09-24
 #: check_frequency: 180d
 Flughafen Berlin-Brandenburg - Business Park Berlin: unbefestigte Straße, etwas Schotter	Q2+ 19731,-1903 20125,-1739 20412,-1750
 #: next_check_id: BUSINESSPARKBERLIN-2020
@@ -6209,7 +6212,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: unbefestigte Straße, etwas 
 #: osm_watch: node id="8243873919" version="1"
 #: osm_watch: node id="2038971392" version="3"
 #: XXX wird hier ein offizieller Durchgang entstehen?
-#: last_checked: 2023-03-26 (mapillary)
+#: last_checked: 2023-09-24
 #: check_frequency: 180d
 Flughafen Berlin-Brandenburg - Business Park Berlin: unbefestigter Pfad	Q2 20412,-1750 20416,-1721
 Am Luch (Schulzendorf): schlechtes Kopfsteinpflaster	Q3 24394,-3357 24475,-3093

@@ -1296,7 +1296,10 @@ Eichhorst - Altenhof	N 25488,54151 25512,54174 25734,54179 25843,54253 25955,545
 Dorfstr. (Altenhof)	N 29859,56494 29924,56609 30049,56674
 Altenhofer Waldstr. (Altenhof)	N 30806,56904 30725,57076 30623,57197
 Schwarzer Weg (Hubertussiedlung)	N 21205,-1763 21239,-1770 21250,-1782 21191,-1982 21062,-2006 21071,-2228 21088,-2461
-Schönefeld - Flughafen Berlin-Brandenburg	NN 18936,-1581 19273,-2026 19259,-2043 19182,-2075 19157,-2100 19158,-2135 19168,-2147 19262,-2151 19339,-2152 19417,-2122 19493,-2183 19514,-2241 19555,-2277 19596,-2280 19759,-2440 19866,-2607 19927,-2671 19940,-2711 20039,-2863
+Schönefeld - Flughafen Berlin-Brandenburg	NN 18936,-1581 19168,-1870 19273,-2026 19259,-2043 19182,-2075 19157,-2100 19158,-2135 19168,-2147 19262,-2151 19339,-2152 19417,-2122 19493,-2183 19514,-2241 19555,-2277 19596,-2280 19759,-2440 19866,-2607 19927,-2671 19940,-2711 20039,-2863
+Business Park Berlin - Schönefeld	NN 19192,-2124 19177,-2106 19157,-2100
+#: note: ein Trampelpfad zum eigentlichen Radweg existiert, lohnt aber nicht, in die Datenbasis aufgenommen zu werden
+(Service-Weg)	NN 19157,-2100 19120,-2077 19054,-1940 19160,-1897
 (zum Radweg)	NN 19262,-2151 19262,-2128
 Siedlung Hubertus - Flughafen Berlin-Brandenburg	N 21088,-2461 20875,-2584 20285,-2775 20211,-2805 20039,-2863 19996,-2880 19909,-2863
 Waltersdorf - Flughafen Berlin-Brandenburg/Siedlung Hubertus	N 21013,-4308 20951,-4235 20802,-4032 20711,-3869
@@ -3235,8 +3238,8 @@ Waltersdorfer Chaussee	HH 18121,-374 18122,-375 18163,-438 18170,-449 18423,-843
 Waltersdorfer Chaussee	HH 18578,-1130 18561,-1183
 Waltersdorfer Chaussee	HH 18561,-1183 18515,-1203 18454,-1241
 Waltersdorfer Chaussee	HH 18561,-1183 18513,-1212 18454,-1241
-Waltersdorfer Chaussee	HH 18454,-1241 18368,-1337 18279,-1438 18293,-1472
-Waltersdorfer Chaussee	HH 18419,-1418 18368,-1337
+Waltersdorfer Chaussee	HH 18454,-1241 18398,-1305 18279,-1438 18293,-1472
+Waltersdorfer Chaussee	HH 18419,-1418 18390,-1338 18398,-1305
 (Bohnsdorfer Chaussee - Waltersdorfer Chaussee)	NN 18773,-1095 18723,-1128 18658,-1052 18592,-1102 18550,-1137 18515,-1203
 (Bohnsdorfer Chaussee - Waltersdorfer Chaussee)	NN 18592,-1102 18599,-1117 18586,-1163 18564,-1195 18513,-1212
 Mittelstr.	B 18293,-1472 18168,-1555 18050,-1636
@@ -3304,7 +3307,7 @@ Flughafen Berlin-Brandenburg - B96a	H 19158,-4083 19189,-4062 19454,-3956 19524,
 Kienberger Brücke	N 20037,-3899 19904,-3581
 #: next_check_id: BER-20XX vvv
 #: XXX wird wahrscheinlich wieder zurückgebaut, zumindest teilweise. Vielleicht bleibt der Abschnitt parallel zur Autobahn bestehen. vvv
-#: last_checked: 2023-03-26 (mapillary) vvv
+#: last_checked: 2023-09-24 vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="192153936" version="15" brb
 #: osm_watch: way id="161704705" version="25" brb

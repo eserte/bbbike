@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: KARLMARXALLEE-2023
-#: last_checked: 2023-09-16
+#: last_checked: 2023-09-24
 #: check_frequency: 90d
 #: next_check: 2023-11-30
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -48,7 +48,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-09-17
+#: last_checked: 2023-09-24
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
@@ -767,7 +767,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2023-09-22
+#: last_checked: 2023-09-24
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -937,6 +937,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 #: by: https://nitter.cz/VIZ_Berlin/status/1639304567061102592#m
 #: by: https://www.stadtrand-nachrichten.de/moltkebruecke/
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/buerger-machen-sich-gedanken-ueber-die-zukunft-ihres-wohnviertels-am-botanischen-garten_a382252
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8816 (Antrag)
 #: XXX Neubau der Brücke, laut osm bis 2024
 #: osm_watch: way id="13860352" version="25"
 #: osm_watch: way id="1056377427" version="2"
@@ -2302,8 +2303,8 @@ Schattenweg: Fußgänger, spielende Kinder	q2 19928,319 19897,292 19865,263 19806,
 (Sternblütenweg - Grünzug am Falkenberg): telweise recht eng, Fußgänger	q3 21620,372 21621,360 21592,341
 (Grünzug am Falkenberg - Kletterrosenweg): einige Fußgänger	q1 21317,326 21344,300
 (Grünzug am Falkenberg - Kletterrosenweg): einige Fußgänger	q1 21344,300 21350,330
-#: XXX_prog: für Anhänger gesperrt
-(Kleine Lindenstr. - Schirmpilzstr.): sehr eng, für Anhänger nicht geeignet	q4 21528,-1134 21570,-1219
+#: note: siehe auch Durchfahrtsperre für Anhänger in gesperrt-orig
+(Kleine Lindenstr. - Schirmpilzstr.): sehr eng	q3 21528,-1134 21548,-1158 21573,-1209
 Fraustadter Weg: enge, unübersichtliche Straße	q1 21885,-483 21940,-542 21934,-617
 Schilfsängersteig: eng	q3 21385,2031 21372,2043
 #: XXX_prog: für Anhänger q4

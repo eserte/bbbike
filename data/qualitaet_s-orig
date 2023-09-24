@@ -1699,6 +1699,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erwähnung der Hufelandstraße)
 #: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (in API verschwunden, Web ist noch da) (und wieder da) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2024 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-fahrradstrasse_a373544 (Entwurfsplanung 2023)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6636 (Antrag) (Erwähnung)
 #: osm_watch: way id="4615063" version="36"
 #: last_checked: 2023-09-21
 #: check_frequency: 180d
@@ -4015,6 +4016,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straße hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9930 (Antrag (Umbau des Kreuzungsbereichs))
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
@@ -5876,9 +5878,9 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 (Grünzug am Falkenberg): Asphalt	Q0 21734,580 21723,605
 (Kirchsteig - Grünzug am Falkenberg): Beton	Q0- 21925,612 21879,557 21876,554 21905,510 21904,481 21886,466 21860,462
 (Grünzug am Falkenberg): Beton	Q0- 21876,554 21801,608
-#: XXX eventuell nur während der Bauarbeiten eine Schotterstraße, wie sieht es danach aus?
+#: XXX eventuell nur während der Bauarbeiten eine Schotterstraße, wie sieht es danach aus? (mittlerweile gibt es aber keine Bauarbeiten mehr)
 #: osm_watch: way id="226981984" version="3"
-#: last_checked: 2022-09-03
+#: last_checked: 2023-09-24
 #: check_frequency: 360d
 (Kirchsteig - Grünzug am Falkenberg): Schotter	Q2+ 21860,462 21774,412
 (Lindenblütenstr. - Mohnblütenweg): wassergebundene Decke	Q1 21681,326 21688,312
@@ -5889,7 +5891,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
 # REMOVED (dieser Stummel ist bereits asphaltiert) --- #: osm_watch: way id="226981995" version="4"
 #: osm_watch: way id="226982293" version="4"
-#: last_checked: 2023-03-26 (mapillary)
+#: last_checked: 2023-09-24
 #: check_frequency: 360d
 Mohnblütenweg: unbefestigte Straße	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
@@ -5911,12 +5913,13 @@ Sausenberger Str.: Beton	Q0 21358,-834 21423,-732 21437,-662 21451,-561
 Hüttendorfer Weg: Asphalt, leichte Schäden	Q0- 21466,-281 21402,-116
 Champignonstr.: unbefestigte Straße	Q2 21291,-1114 21387,-1033 21406,-1012
 Fliegenpilzstr.: Beton	Q0- 21528,-1134 21392,-1388 21306,-1714
-(Kleine Lindenstr. - Schirmpilzstr.): Pfad	Q3 21528,-1134 21570,-1219
-Schirmpilzstr.: Beton	Q0 21570,-1219 21493,-1434 21447,-1556
-Schirmpilzstr.: Betonplattenweg, Querplatten	Q2 21447,-1556 21409,-1717
+(Kleine Lindenstr. - Schirmpilzstr.): Pfad	Q3 21528,-1134 21548,-1158 21573,-1209
+Schirmpilzstr.: Beton	Q0 21573,-1209 21487,-1430 21447,-1556
+Schirmpilzstr.: Betonplattenweg, Querplatten	Q2 21447,-1556 21427,-1639
+Schirmpilzstr.: welliger Asphalt	Q1 21427,-1639 21409,-1717
 Kleine Spechtstr.: Beton	Q0- 21301,-1347 21392,-1388
-Kleine Spechtstr.: Beton	Q0 21392,-1388 21493,-1434
-Kleine Spechtstr.: Asphalt	Q0 21493,-1434 21527,-1449
+Kleine Spechtstr.: Beton	Q0 21392,-1388 21487,-1430
+Kleine Spechtstr.: Asphalt	Q0 21487,-1430 21527,-1449
 Kleine Spechtstr.: Beton	Q0 21527,-1449 21573,-1468
 Boviststr.: unbefestigte Straße	Q2 21604,-1350 21602,-1381
 Boviststr.: Asphalt	Q0 21602,-1381 21573,-1468
@@ -7856,6 +7859,7 @@ Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0- 23941,15458 23960,15340 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10385 (Anfrage)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1316105.php (Teich der Hönower Weiherkette wird geflutet)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1355163.php (Abschluss"spaziergang")
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11071 (Antrag)
 #: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv
 #: last_checked: 2023-06-04 (mapillary) (noch Bauarbeiten) vvv
 # REMOVED --- #: check_frequency: 30d vvv
@@ -12978,7 +12982,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0- 10547,15586 10542,15609
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-08-14
+#: last_checked: 2023-09-24
 #: check_frequency: 45d
 Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
@@ -16525,13 +16529,14 @@ Antonstr.: Asphalt	Q0 7393,15476 7518,15605 7648,15741 7738,15838
 # 
 #: by: Hubertus Fürther: vvv
 #: confirmed_by: srt
-Paradiesstr.: sehr guter Asphalt	Q0 21171,222 21225,172 21250,118 21322,-176 21355,-309
+Paradiesstr.: sehr guter Asphalt	Q0 21171,222 21225,172 21250,118 21323,-178 21355,-309
 #: corrected_by: srt (sehr guter Asphalt -> Verbundsteinpflaster) (zumindest am östl. Ende)
 (Am Gartenstadtweg - Paradiesstr.): Verbundsteinpflaster	Q0- 21262,375 21199,309
 # REMOVED (existiert nicht mehr) --- (Am Gartenstadtweg - Paradiesstr.): Verbundsteinpflaster	Q0- 21199,309 21171,222
 #: confirmed_by: srt
 Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21355,-309 21371,-374 21367,-420 21360,-455 21350,-549
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20150330 --- #: XXX: Ist der südliche Abschnitt der Paradiesstr. fertiggestellt? Wie ist die Qualität? --- #: osm_watch: way id="153260673" version="2" --- #: last_checked: 2015-08-01 --- #: next_check: 2015-11-30 (public)
+#: confirmed_by: srt
 Paradiesstr: Asphalt	Q0 21350,-549 21335,-653 21291,-767
 #: by: ^^^
 # 
@@ -23839,7 +23844,7 @@ Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
 #: corrected_by: srt (... -> ..., neu gemacht)
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-09-12
+#: last_checked: 2023-09-24
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-08-11
 Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1+ 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
@@ -30567,7 +30572,7 @@ Grottewitzstr.: schlechtes Kopfsteinpflaster	Q3 21742,115 21868,139
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ..., neu gemacht)
 Grottewitzstr.: Asphalt	Q0 21868,139 21933,152 22145,208
 #: corrected_by: srt (sehr guter -> rauer)
-Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21135,-274 21322,-176 21364,-168 21402,-116 21465,-15 21515,67
+Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21135,-274 21323,-178 21360,-167 21402,-116 21465,-15 21515,67
 #: corrected_by: srt (sehr guter Asphalt -> ... (neu gemacht?))
 Rosenrotweg: Betonsteinpflaster	Q0- 21515,67 21503,114 21487,173
 #: confirmed_by: srt
@@ -32607,4 +32612,11 @@ Einmündungsbereich asphaltiert	Q0 37,2562
 Einmündungsbereich asphaltiert	Q0 272,2548
 Kreuzungsbereich asphaltiert	Q0 16992,1566
 Einmündungsbereich asphaltiert	Q0 11259,4325
+#: note: wobei man am südlichen Ende am Pflaster vorbeifahren kann
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 21350,-549
+Einmündungsbereich asphaltiert	Q0 21291,-767
+Einmündungsbereich mit Kopfsteinpflaster	Q2 21358,-834
+Einmündungsbereich mit Kopfsteinpflaster	Q2 21403,-859
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 21487,-912
+Einmündungsbereich asphaltiert	Q0 21758,-1707
 #: ignore ^^^
