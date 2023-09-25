@@ -1540,8 +1540,8 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11059 (Anfrage)
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="24"
-#: last_checked: 2023-07-26
+#: osm_watch: way id="203884042" version="26"
+#: last_checked: 2023-09-25
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1553,9 +1553,9 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="40"
+#: osm_watch: way id="4615746" version="42"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2023-07-26
+#: last_checked: 2023-09-25
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -1998,9 +1998,11 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-09-20 vvv
+#: last_checked: 2023-09-25 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
-provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234
+provisorische Radspur	RW4; 10574,12131 10625,12206
+#: note: vorher: provisorische Radspur, RW4;
+	RW0; 10625,12206 10646,12234
 provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
@@ -2013,7 +2015,12 @@ provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234 10625,12206
 # 
 #: note: Benutzungspflicht "per Fortsetzung"
 #: note: es wird suggeriert, dass Radfahrer Richtung Stralauer Str. bereits auf dem Gehweg abbiegen dürfen
-asphaltiert, relativ breit	RW2; 10646,12234 10662,12255 10697,12303
+#: note: später wieder: asphaltiert, relativ breit, RW2;
+#: XXX Radweg nicht befahrbar, Radfahrer müssen sich eine Fahrspur mit Autos teilen, Radfahrüberholverbot
+#: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
+#: last_checked: 2023-09-25
+#: check_frequency: 7d
+	RW0; 10646,12234 10662,12255 10697,12303
 provisorische Radspur	RW4; 10697,12303 10746,12364
 	RW4; 10746,12364 10807,12451 10838,12496
 provisorische Radspur	RW4; 10838,12496 10849,12557
@@ -2911,7 +2918,7 @@ asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-09-15
+#: last_checked: 2023-09-25
 #: check_frequency: 45d
 	RW0; 13945,13564 14052,13389
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen --- #: XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt --- #: last_checked: 2023-04-18 --- #: check_frequency: 14d --- #: next_check: 2021-12-31
@@ -3016,12 +3023,18 @@ mit grüner Leitlinie	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 	RW1;RW1 9070,14058 9167,14127 9192,14145
 	RW3;RW1 9192,14145 9224,14169
 	RW2;RW2 9224,14169 9272,14208
-#: by: Marija Rezic:
+#: by: mrt:
 #: confirmed_by: srt
 Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10170,14905 10235,14934 10297,14961 10354,14987
 	RW1;RW1 10741,13685 10779,13793 10836,13883 10895,13961
 	RW4;RW1 10895,13961 10908,13978
-	RW4; 10908,13978 10933,14122
+#: next_check_id: METZER-2023
+#: note: später wieder einsetzen: RW4;
+#: XXX Radspur nicht befahrbar, eine gemeinsame Spur für Radfahrer und Autos
+#: last_checked: 2023-09-25
+#: check_frequency: 90d
+#: next_check: 2025-01-02
+	RW0; 10908,13978 10933,14122
 Gehwegplatten	RW2; 10933,14122 10908,13978
 	RW1;RW1 10431,12709 10373,12776 10360,12793 10308,12859
 	RW3; 10923,13156 11033,13086 11139,13008
@@ -3113,7 +3126,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2023-08-15 vvv
+#: last_checked: 2023-09-25 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -3135,7 +3148,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 # 
 #: note: es scheint üblich zu sein, den westlichen Radweg auch Richtung Norden (in der falschen Richtung) zu benutzen vvv
 Beton- und Gehwegplatten	RW1; 11950,18529 11936,18440
-asphaltierter Radweg, ca. 1,50m breit	RW1; 11936,18440 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 11924,17224 12010,16774
+asphaltierter Radweg, ca. 1,50m breit	RW1; 11936,18440 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 11924,17224 11993,16862 12010,16774
 #: note ^^^
 # 
 #: by: Roland Maier (aber RW1!):
@@ -6080,8 +6093,8 @@ Gehwegplatten	RW1; 620,12144 610,12100
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
-#: osm_watch: way id="153370345" version="18"
-#: osm_watch: way id="153373877" version="24"
+#: osm_watch: way id="153370345" version="20"
+#: osm_watch: way id="153373877" version="26"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: die Rechtsabbieger werden an der Ampel vorbei geführt
 Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
@@ -6093,8 +6106,8 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="34"
-#: osm_watch: way id="153373879" version="22"
+#: osm_watch: way id="153370344" version="36"
+#: osm_watch: way id="153373879" version="24"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -7202,7 +7215,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-09-06 (mapillary) vvv
+#: last_checked: 2023-09-25 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7699,7 +7712,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2023-09-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-09-29 vvv
-#: osm_watch: way id="335479077" version="21"
+#: osm_watch: way id="335479077" version="23"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"

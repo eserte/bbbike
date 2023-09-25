@@ -2162,62 +2162,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'type' => 'gesperrt',
          'until' => 1695763800
        },
-       {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00 (inaktiv)
-#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30 (inaktiv)
-#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023)
-#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023)
-# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
-	2::temp 8573,12325 8540,12420
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8119,12414 8055,12186
-	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
-	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12734 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
-	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
-	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
-	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
-	2::temp 7775,12114 7772,12040 7717,11918
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1695182400,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 20.09.2023 bis 25.09.2023',
-         'type' => 'gesperrt',
-         'until' => 1695614400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4462,11 +4407,11 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-08-26 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2023-09-25 (osm) vvv
+#: check_frequency: 90d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="22"
+#: osm_watch: way id="505363417" version="23"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4735,7 +4680,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-08-15 vvv
+#: last_checked: 2023-09-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -6102,22 +6047,11 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (none)
-#: add_fragezeichen: Ist die Sperrung der Fahrbahn beendet?
-#: last_checked: 2023-08-15
-	q3::inwork 13247,17262 13342,17180
-',
-         'from' => undef,
-         'id' => 3854,
-         'text' => 'Günter-Litfin-Str.: etwa 60m der Fahrbahn gesperrt, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023
-#: last_checked: 2023-09-06 (mapillary)
+#: last_checked: 2023-09-25
 #: check_frequency: 60d
 #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151 11750,16116
@@ -6394,7 +6328,19 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
+#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
+# REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
+#	q4::inwork 10313,13227 10264,13097
+	q4::inwork; 10313,13227 10321,13259
+',
+         'from' => 1695667405,
+         'id' => 3898,
+         'text' => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., evtl. sind auch Radfahrer betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1697468400
+       },
        undef,
        undef,
        {
@@ -6589,16 +6535,21 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'until' => undef
        },
        {
-         'data' => '#: next_check_id: METZER-2025
+         'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2023-08-12 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2025-01-02
-	q4::inwork; 10908,13978 10933,14122
+#: last_checked: 2023-08-12 (mapillary) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2025-01-02 vvv
+# REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
+Metzer Str.: Fahrbahn gesperrt, Umweg zur Fußgängerampel	q4::inwork; 11006,14087 10933,14122
+Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
+#: last_checked ^^^
+#: check_frequency ^^^
+#: next_check ^^^
 ',
          'from' => undef,
          'id' => 3919,
-         'text' => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
+         'text' => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
          'type' => 'handicap',
          'until' => 1735833600
        },
@@ -6613,14 +6564,50 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'until' => 1704063599
        },
        {
-         'data' => '	q4::inwork; 10723,14772 10643,14639 10618,14598 10600,14568 10578,14531 10530,14452
+         'data' => '#: source_id: viz2021:13.409072,52.538016,25.09.2023,07:00 (bis 11.10.2023)
+	q4::inwork; 10723,14772 10643,14639 10618,14598 10600,14568 10578,14531 10530,14452
 ',
          'from' => 1695531600,
          'id' => 3921,
-         'source_id' => 'viz2021:13.409072,52.538016,25.09.2023,07:00',
          'text' => 'Kastanienallee: Gleisbauarbeiten zwischen Oderberger Str. und Schwedter Str., Richtung Weinbergsweg gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 11.10.2023 17:00',
          'type' => 'handicap',
          'until' => 1697036400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
+#: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
+#: XXX Wie lange bleibt die Straße (Fahrbahn?) gesperrt? Sind Radfahrer überhaupt betroffen? Ist der gesamte Abschnitt betroffen?
+#: note: laut rbb "auch für Fußgänger und Radfahrer."
+#: last_checked: 2023-09-25 (Verkehrsmeldung erstellt)
+#: check_frequency: 14d
+# REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
+	2::inwork 4449,8999 4451,8874
+',
+         'from' => 1695550500,
+         'id' => 3922,
+         'text' => 'Mannheimer Str.: Wasserrohrbruch, zwischen Berliner Str. und Brandenburgische Str. gesperrt, vom 25.09.2023 12:15',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.610678,52.514967,26.09.2023,07:00 (Leitungsbaustelle, bis 6.10.2023)
+	q4::inwork 24530,12296 24434,12402 24354,12510
+',
+         'from' => 1695618000,
+         'id' => 3923,
+         'text' => 'Ridbacher Str.: Bauarbeiten zwischen Hönower Str. und Briesener Weg, Sperrung, angeblich sind auch Radfahrer betroffen, vom 26.09.2023 07:00 bis 06.10.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1696604400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023)
+	q4::inwork 11963,8074 12147,8117
+',
+         'from' => 1695528000,
+         'id' => 3924,
+         'text' => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 25.09.2023 06:00 bis 28.09.2023 18:00',
+         'type' => 'handicap',
+         'until' => 1695916800
        }
      
 );

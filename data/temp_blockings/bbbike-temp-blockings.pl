@@ -1073,14 +1073,14 @@ EOF
      { from  => $isodate2epoch->("2019-09-30 00:00:00"),
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 9, start => "2022-10-25T00:00:00"]],
-       recurrence_prewarn_days => 3,
+       recurrences => [['yearly', days => 29, months => 9, start => "2023-10-25T00:00:00"]],
+       #recurrence_prewarn_days => 7,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20211001 (findet 2021 anscheinend nicht statt)
-#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20220922 (findet 2022 nicht statt)
+#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20220922 (findet 2022 nicht statt) (2023 auch nicht)
 #: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72 (inaktiv)
 	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -21453,7 +21453,7 @@ EOF
 #: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023)
-#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023)
+#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -35002,11 +35002,11 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-08-26 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2023-09-25 (osm) vvv
+#: check_frequency: 90d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="22"
+#: osm_watch: way id="505363417" version="23"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -36039,7 +36039,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2023-08-15 vvv
+#: last_checked: 2023-09-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="2"
@@ -39778,13 +39778,11 @@ Flämingstr.	2::bomb 21365,18250 21220,18323 21163,18347
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1695663175, # undef, # XXX
        text  => 'Günter-Litfin-Str.: etwa 60m der Fahrbahn gesperrt, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (none)
-#: add_fragezeichen: Ist die Sperrung der Fahrbahn beendet?
-#: last_checked: 2023-08-15
+# REMOVED --- #: also_indoor: traffic (none) --- #: add_fragezeichen: Ist die Sperrung der Fahrbahn beendet? --- #: last_checked: 2023-08-15
 	q3::inwork 13247,17262 13342,17180
 EOF
      },
@@ -39795,7 +39793,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023
-#: last_checked: 2023-09-06 (mapillary)
+#: last_checked: 2023-09-25
 #: check_frequency: 60d
 #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151 11750,16116
@@ -40295,15 +40293,17 @@ EOF
 	q4::inwork 4358,12365 4520,12358
 EOF
      },
-     { from  => 1692594000, # 2023-08-21 07:00
-       until => 1694639218, # 1694790000, # 2023-09-15 17:00
-       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
+     { from  => 1695667405, # 1692594000, # 2023-08-21 07:00
+       until => $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
+       text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., evtl. sind auch Radfahrer betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
+# alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.402799,52.524086,22.08.2023,07:00', # nur Kfz-Verkehr betroffen, bis 15.09.2023 # inaktiv
        data  => <<EOF,
+#: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
 #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
 # REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
-	q4::inwork 10313,13227 10264,13097
+#	q4::inwork 10313,13227 10264,13097
+	q4::inwork; 10313,13227 10321,13259
 EOF
      },
      { from  => 1693173600, # 2023-08-28 00:00
@@ -40521,15 +40521,21 @@ EOF
      },
      { from  => undef, # 
        until => 1735833600, # 2025-01-02 17:00
-       text  => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
+       text  => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
+       # früherer Text: 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025'
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: METZER-2025
+#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2023-08-12 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2025-01-02
-	q4::inwork; 10908,13978 10933,14122
+#: last_checked: 2023-08-12 (mapillary) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2025-01-02 vvv
+# REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
+Metzer Str.: Fahrbahn gesperrt, Umweg zur Fußgängerampel	q4::inwork; 11006,14087 10933,14122
+Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
+#: last_checked ^^^
+#: check_frequency ^^^
+#: next_check ^^^
 EOF
      },
      { from  => 1696284000, # 2023-10-03 00:00
@@ -40545,9 +40551,42 @@ EOF
        until => 1697036400, # 2023-10-11 17:00
        text  => 'Kastanienallee: Gleisbauarbeiten zwischen Oderberger Str. und Schwedter Str., Richtung Weinbergsweg gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 11.10.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.409072,52.538016,25.09.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.409072,52.538016,25.09.2023,07:00 (bis 11.10.2023)
 	q4::inwork; 10723,14772 10643,14639 10618,14598 10600,14568 10578,14531 10530,14452
+EOF
+     },
+     { from  => 1695550500, # 2023-09-24 12:15
+       until => undef, # XXX
+       text  => 'Mannheimer Str.: Wasserrohrbruch, zwischen Berliner Str. und Brandenburgische Str. gesperrt, vom 25.09.2023 12:15',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
+#: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
+#: XXX Wie lange bleibt die Straße (Fahrbahn?) gesperrt? Sind Radfahrer überhaupt betroffen? Ist der gesamte Abschnitt betroffen?
+#: note: laut rbb "auch für Fußgänger und Radfahrer."
+#: last_checked: 2023-09-25 (Verkehrsmeldung erstellt)
+#: check_frequency: 14d
+# REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
+	2::inwork 4449,8999 4451,8874
+EOF
+     },
+     { from  => 1695618000, # 2023-09-25 07:00
+       until => 1696604400, # 2023-10-06 17:00
+       text  => 'Ridbacher Str.: Bauarbeiten zwischen Hönower Str. und Briesener Weg, Sperrung, angeblich sind auch Radfahrer betroffen, vom 26.09.2023 07:00 bis 06.10.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.610678,52.514967,26.09.2023,07:00 (Leitungsbaustelle, bis 6.10.2023)
+	q4::inwork 24530,12296 24434,12402 24354,12510
+EOF
+     },
+     { from  => 1695528000, # 2023-09-24 06:00
+       until => 1695916800, # 2023-09-28 18:00
+       text  => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 25.09.2023 06:00 bis 28.09.2023 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023)
+	q4::inwork 11963,8074 12147,8117
 EOF
      },
     );

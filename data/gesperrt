@@ -3815,6 +3815,9 @@ Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 nicht passierbarer Mittelstreifen	3nocross::ignrte 11950,18529 11984,18771 12003,18896
 Mittelstreifen, Bordsteine	3nocross::ignrte 11849,17655 11872,17522 11893,17397
 Mittelstreifen	3nocross::ignrte 11849,17655 11839,17738 11884,18063
+Mittelstreifen	3nocross::ignrte 11924,17224 11993,16862 12010,16774
+Prenzlauer Promenade -> Prenzlauer Promenade [Nebenfahrbahn]: Mittelstreifen	3::igndisp 12010,16774 11993,16862 11951,16914
+Prenzlauer Promenade [Nebenfahrbahn] -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 11951,16914 11993,16862 11924,17224
 Hindenburgdamm	1 4454,3260 4467,3332 4497,3412 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4566,3461 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40:-256 14581,16529
