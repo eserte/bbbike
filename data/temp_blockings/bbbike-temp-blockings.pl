@@ -18246,7 +18246,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
 #: by: https://csd-berlin.de/csd-berlin-2023/route-finale
 #: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
-	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
+	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
 	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
 	3 8573,11404 8542,11502 8548,11571
@@ -18330,7 +18330,7 @@ EOF
 	3 7227,10489 7033,10396 7033,10328
 	3 9702,11647 9701,11656 9692,11732
 # REMOVED ---	2::temp 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6778,11742 6809,11570 6825,11486 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6740,10755 6685,10690 6532,10529 6494,10440
-# REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+# REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 # REMOVED ---	3 8592,11541 8596,11508 8599,11474
 # REMOVED ---	3 9992,11682 10000,11691 9997,11713
 # REMOVED ---	3 6841,11114 6880,11110 7004,11168 7115,11220
@@ -21452,7 +21452,7 @@ EOF
 #: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023)
+#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
@@ -34788,7 +34788,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-09-18
+#: last_checked: 2023-09-26
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -36738,16 +36738,17 @@ EOF
      },
      { from  => 1663329224, # 2022-09-16 13:53
        until => undef, # 1670626800, # 2022-12-10 00:00
-       text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # früher: 'voraussichtlich bis Dezember 2022'
+       text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn zwischen Varian-Fry-Str. und Marlene-Dietrich-Platz gesperrt, Ende der Bauarbeiten unbekannt', # früher: 'voraussichtlich bis Dezember 2022'
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an? -> nordöstlicher Abschnitt ist fertig, prüfen! (evtl. ist jetzt der südwestliche gesperrt)
-#: last_checked: 2023-08-31 (daf)
+#: last_checked: 2023-09-26
 #: check_frequency: 30d
-#: next_check: 2023-09-15
-	q4::inwork 8389,11378 8481,11447
+# REMOVED --- #: next_check: 2023-09-15
+# REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
+	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 EOF
      },
      { from  => undef, # 
@@ -37654,7 +37655,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-07-18
+#: last_checked: 2023-09-26
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -38743,6 +38744,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
 #: osm_watch: way id="1172668082" version="8"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
@@ -39106,6 +39108,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
 #: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023)
+#: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
 # REMOVED (laut osm hier (noch?) nicht)	q4::inwork 2756,25260 2909,25322
@@ -40299,10 +40302,12 @@ EOF
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
-#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
+# REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
+# REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
 # REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
 #	q4::inwork 10313,13227 10264,13097
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen)
+#: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023)
 	q4::inwork; 10313,13227 10321,13259
 EOF
      },
@@ -40587,6 +40592,28 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023)
 	q4::inwork 11963,8074 12147,8117
+EOF
+     },
+     { from  => 1695531600, # 2023-09-24 07:00
+       until => 1698681600, # 2023-10-30 17:00
+       text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr)
+#: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
+	q3::inwork; 10722,11816 10815,11662
+EOF
+     },
+     { from  => 1695746966, # 2023-09-26 18:49
+       until => 1711922399, # 2024-03-31 23:59
+       text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
+#: note: Halteverbotsschilder bis Ende März 2024; nur ein Abschnitt der Fahrbahn ist gesperrt, deshalb q3
+#: last_checked: 2023-09-26
+#: next_check: 2024-03-31
+	q3::inwork 7103,11247 7171,11510
 EOF
      },
     );

@@ -3768,7 +3768,7 @@ Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 # REMOVED (nicht mehr) --- #: last_checked: 2023-08-21 --- #: check_frequency: 14d --- Ingrid-Reschke-Str.: wegen Bauarbeiten wieder gesperrt	2::inwork 15163,10758 15151,10699
 # 
 #: next_check_id: SONYCENTER-2023
-#: last_checked: 2023-07-27
+#: last_checked: 2023-09-26
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 #: valid: -20240701
@@ -3779,6 +3779,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: last_checked: 2023-09-20
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
+#: osm_watch: way id="30441457" version="30"
 #: last_checked: 2023-09-25
 #: check_frequency: 60d
 Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
@@ -4123,7 +4124,12 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
 # 
-# REMOVED (falsche Ausschilderung: Einbahnstraßenschilder ohne Einfahrt-verboten-Schilder) --- #: next_check_id: PLANSTRASSEC-2019 --- #: last_checked: 2022-04-07 (architektur-urbanistik) --- #: check_frequency: 60d --- (Planstraße C): abschnittsweise Einbahnstraße	1s:q3:inwork 12848,11093 12926,11224
+#: next_check_id: PLANSTRASSEC-2019
+#: note: zwischenzeitlich waren die "Einfahrt verboten"-Schilder an der Mühlenstr. verschwunden
+#: last_checked: 2023-09-26
+#: check_frequency: 60d
+(Planstraße C): Einbahnstraße	1s:q4:inwork 12848,11093 12926,11224
+# 
 # REMOVED (weitgehend offen) -- #: next_check_id: SIEGFRIED-2021 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?) --- #: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023) --- #: priority: #C --- #: last_checked: 2022-09-24 --- #: check_frequency: 120d --- (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
@@ -4444,7 +4450,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="5"
-#: last_checked: 2023-09-18
+#: last_checked: 2023-09-26
 #: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -4572,7 +4578,7 @@ Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-09-22
+#: last_checked: 2023-09-26
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
@@ -5093,6 +5099,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/loewenbruecke/ (geänderte URL)
 #: by: https://www.bz-berlin.de/berlin/mitte/berlin-bekommt-seine-loewenbruecke-wieder (Bauarbeiten voraussichtlich ab Sommer 2023 + 15 Monate Bauzeit)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1361549.php (Fertigstellung Ende 2024)
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/loewenbruecke-wird-bis-ende-2024-wieder-aufgebaut_a394430
 #: XXX: existiert nicht mehr, die Brücke wird aber wieder aufgebaut; einer der vier Löwen wurde entfernt
 #: also_indoor: search Löwenbrücke Tiergarten
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"

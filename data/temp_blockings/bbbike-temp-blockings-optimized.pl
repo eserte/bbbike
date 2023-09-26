@@ -4280,7 +4280,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-09-18
+#: last_checked: 2023-09-26
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -4840,15 +4840,16 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an? -> nordöstlicher Abschnitt ist fertig, prüfen! (evtl. ist jetzt der südwestliche gesperrt)
-#: last_checked: 2023-08-31 (daf)
+#: last_checked: 2023-09-26
 #: check_frequency: 30d
-#: next_check: 2023-09-15
-	q4::inwork 8389,11378 8481,11447
+# REMOVED --- #: next_check: 2023-09-15
+# REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
+	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 ',
          'from' => 1663329224,
          'id' => 3626,
-         'text' => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn zwischen Varian-Fry-Str. und Marlene-Dietrich-Platz gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5161,7 +5162,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-07-18
+#: last_checked: 2023-09-26
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -5613,6 +5614,7 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
 #: osm_watch: way id="1172668082" version="8"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
@@ -5741,6 +5743,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
 #: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023)
+#: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
 # REMOVED (laut osm hier (noch?) nicht)	q4::inwork 2756,25260 2909,25322
@@ -6329,10 +6332,12 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
-#: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
+         'data' => '# REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
+# REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
 # REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
 #	q4::inwork 10313,13227 10264,13097
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen)
+#: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023)
 	q4::inwork; 10313,13227 10321,13259
 ',
          'from' => 1695667405,
@@ -6608,6 +6613,30 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'text' => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 25.09.2023 06:00 bis 28.09.2023 18:00',
          'type' => 'handicap',
          'until' => 1695916800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr)
+#: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
+	q3::inwork; 10722,11816 10815,11662
+',
+         'from' => 1695531600,
+         'id' => 3925,
+         'text' => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1698681600
+       },
+       {
+         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
+#: note: Halteverbotsschilder bis Ende März 2024; nur ein Abschnitt der Fahrbahn ist gesperrt, deshalb q3
+#: last_checked: 2023-09-26
+#: next_check: 2024-03-31
+	q3::inwork 7103,11247 7171,11510
+',
+         'from' => 1695746966,
+         'id' => 3926,
+         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2024',
+         'type' => 'handicap',
+         'until' => 1711922399
        }
      
 );

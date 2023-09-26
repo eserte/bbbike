@@ -25,7 +25,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-09-19 vvv
+#: last_checked: 2023-09-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-11-10 vvv
 #: valid: -20231110 vvv
@@ -251,6 +251,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
+# 
+#: last_checked: 2023-09-26
+#: check_frequency: 14d
+Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q2::inwork 10908,11908 11111,12027
 # 
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # REMOVED --- #: next_check_id: ROTESRATHAUS-2023 --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2 10704,12595 10695,12616 10615,12642 10542,12587
@@ -606,6 +610,17 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # REMOVED --- #: XXX was ändert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
 # 
 ### Tiergarten ###
+# 
+#: next_check_id: MUSEUMDERMODERNE-2021
+#: also_indoor: traffic (G,H,B)
+#: last_checked: 2023-09-26 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2027-01-01 vvv
+Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
+Matthäikirchplatz: Fahrbahn gesperrt	q4::inwork 7970,11396 7934,11275
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (offen) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant) --- #: by: https://www.tagesspiegel.de/berlin/spaeter-als-geplant-neue-nationalgalerie-in-berlin-wird-erst-mitte-august-2021-eroeffnet/26645770.html (Eröffnung Mitte August 2021) --- # REMOVED --- #: XXX laut Plakatwerbung wird am 22.8.2021 eröffnet --- #: XXX Straße fertig asphaltiert, aber noch durch Bauzäune abgesperrt --- #: last_checked: 2022-03-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-08-22 --- Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inwork 7874,11293 7828,11133
 # REMOVED (eigentlich keine Behinderungen durch die Bauarbeiten) --- #: next_check_id: MUSEUMDERMODERNE-2021 --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam) --- #: last_checked: 2021-12-29 --- #: check_frequency: 90d --- Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
@@ -3709,6 +3724,7 @@ Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
 #: XXX_prog: BS zumindest an der Alten Potsdamer Str., ansonsten q2
 (Potsdamer Platz - Linkstr.): Bordstein, einige Fußgänger	q3 8474,11350 8481,11447
+Alte Potsdamer Str.: Fußgängerzone	q4+ 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 #: XXX_prog relativ steil -> comments_mount?
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737

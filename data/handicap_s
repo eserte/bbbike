@@ -19,6 +19,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q2::inwork 10908,11908 11111,12027
 Grunerstr.: Radweg auf Gehweg	q1 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -31,6 +32,8 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
+Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
+Matthäikirchplatz: Fahrbahn gesperrt	q4::inwork 7970,11396 7934,11275
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5382,9942
 Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
@@ -1907,6 +1910,7 @@ Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 
 Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
 (Potsdamer Platz - Linkstr.): Bordstein, einige Fußgänger	q3 8474,11350 8481,11447
+Alte Potsdamer Str.: Fußgängerzone	q4 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): drei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
@@ -3411,6 +3415,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes: gege
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 14535,11327 14506,11275
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 5522,8011 5520,8132 5573,8197
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
+(Planstraße C): Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12848,11093 12926,11224
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
 Taubenstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
