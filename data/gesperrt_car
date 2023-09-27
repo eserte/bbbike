@@ -274,7 +274,8 @@ Landsberger Allee -> Pöhlbergstr. [zur/von Landsberger Allee]: Straßenbahn	3::ig
 Pöhlbergstr. [zur/von Landsberger Allee] -> Landsberger Allee: Straßenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
 Landsberger Allee -> Schönagelstr.: Straßenbahn	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Straßenbahn	3::igndisp 21602,15908 21584,15753 21709,15808
-Topsstr.	1 10598,15150 10865,15244 10883,15251
+Topsstr.	1 10598,15150 10865,15244
+Topsstr.	1 10883,15251 10865,15244
 Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10941,15697
 Schönhauser Allee -> Milastr.: Schönhauser Allee	3::igndisp 10902,15422 10917,15525 10768,15534
 Schönhauser Allee -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10941,15697 10917,15525 11055,15504
