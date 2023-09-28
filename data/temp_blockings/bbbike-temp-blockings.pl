@@ -28427,7 +28427,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-09-21
+#: last_checked: 2023-09-28
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36704,10 +36704,10 @@ EOF
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023)
+#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: last_checked: 2023-05-13 vvv
-#: next_check: 2023-09-30 vvv
+#: next_check: 2023-12-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 10980,-1919
 #: next_check ^^^
@@ -39644,11 +39644,11 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 EOF
      },
      { from  => 1688886000, # 2023-07-09 09:00
-       until => $isodate2epoch->("2023-09-29 17:00:00"), # 1691420400, # 2023-08-07 17:00
-       text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 29.09.2023 17:00',
+       until => $isodate2epoch->("2023-10-13 17:00:00"), # 1691420400, # 2023-08-07 17:00
+       text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 13.10.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.315966,52.45914,10.07.2023,09:00', # bis 04.09.2023 # bis 29.09.2023
        data  => <<EOF,
+#: source_id: viz2021:13.315966,52.45914,10.07.2023,09:00 (bis 04.09.2023) (bis 29.09.2023) (bis 13.10.2023)
 	q4::inwork 4558,5863 4520,5793
 EOF
      },
@@ -39863,7 +39863,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 24.07.2023) (bis 01.09.2023) (bis 29.09.2023)
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B)
 #: last_checked: 2023-07-22
 #: next_check: 2023-09-29
 	q3::inwork 9176,5803 8996,5823
@@ -40592,7 +40592,7 @@ EOF
        text  => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 25.09.2023 06:00 bis 28.09.2023 18:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023)
+#: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
 	q4::inwork 11963,8074 12147,8117
 EOF
      },

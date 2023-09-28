@@ -1299,7 +1299,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024)
-#: osm_watch: way id="8590249" version="20"
+#: osm_watch: way id="8590249" version="21"
 #: last_checked: 2022-07-27
 #: check_frequency: 540d
 #: next_check: 2024-12-31
@@ -8218,7 +8218,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.384974,52.44972,22.05.2023,07:00 (Leitungsbaustelle bis 26.05.2023) (inaktiv)
 #: source_id: viz2021:13.38486,52.4502,22.05.2023,07:00 (bis 26.05.2023) (inaktiv)
 #: source_id: viz2021:13.385498,52.446998,19.07.2023,07:00 (bis 24.07.2023) (inaktiv) (bis 31.07.2023) (inaktiv)
-#: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023)
+#: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022) (bis 6.1.2023) (bis 3.1.2023) (bis 15.1.2023) (inaktiv) (bis 6.3.2023) (bis 3.4.2023) (inaktiv) (bis 9.6.2023) (bis 30.9.2023) (bis 29.9.2023)
 #: source_id: viz2021:13.385551,52.447066,31.07.2023,11:00 (bis 17.08.2023) (inaktiv)
 #: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
@@ -8546,11 +8546,12 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11074 (unklare Situation, geplant war 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1369409.php (Bauarbeiten beginnen am 27.9.2023, bis Ende November 2023, Einbahnstraßenregelung während der Bauarbeiten (offen Richtung Westen), Zebrastreifen in Höhe Simon-Dach-Str.)
 #: by: https://viz.berlin.de/2023/09/revaler-str/
+#: by: https://berliner-abendblatt.de/berlin-news/radweg-auf-revaler-strasse-einschraenkungen-fuer-autos-id233272
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
-#: note: Einbahnstraße wird für Radfahrer frei sein
-#: last_checked: 2023-09-27 vvv
+#: note: durchgehende Gelbmarkierung, keine Radwegschilder
+#: last_checked: 2023-09-28 vvv
 #: next_check: 2023-11-29 vvv
-provisorische Radspuren	RW4;RW3 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272
+provisorische Radspuren	RW3;RW3 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
 #: next_check ^^^
 #: last_checked ^^^
