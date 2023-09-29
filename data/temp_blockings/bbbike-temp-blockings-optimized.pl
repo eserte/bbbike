@@ -3109,10 +3109,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,765387#msg-765387 (bis Juli 2023)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
 #: by[nocache]: https://archive.ph/2023.06.22-094813/https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
+#: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
 #: osm_watch: way id="36936021" version="7" brb
 #: last_checked: 2023-04-22 (zdf)
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2023-09-30
+#: next_check: 2023-11-15
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 ',
          'from' => 1533756141,
@@ -3815,7 +3816,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-08-25
+#: last_checked: 2023-09-29
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -4561,20 +4562,7 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
          'type' => 'gesperrt',
          'until' => 1706720400
        },
-       {
-         'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2023-09-14
-#: next_check: 2024-05-01
-	q4::temp::play 12822,10487 12897,10439
-',
-         'from' => 1684965600,
-         'id' => 3551,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September (außer Sommerferien)',
-         'type' => 'handicap',
-         'until' => 1696005000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5064,6 +5052,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
+#: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: note: Fahrbahn wird neu gemacht
 	q4::inwork 2112,26066 2207,26090 2293,26111
 #: note: Vorbereitungen für Neubau der Fahrbahn
@@ -5071,7 +5060,6 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 ',
          'from' => 1668540097,
          'id' => 3683,
-         'source_id' => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
          'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 30.09.2023',
          'type' => 'handicap',
          'until' => 1696086000
@@ -5129,7 +5117,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (W)
-#: last_checked: 2023-09-26
+#: last_checked: 2023-09-29
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -5746,6 +5734,7 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
        },
        {
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
+#: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
 #: last_checked: 2023-07-23
 #: check_frequency: 90d
@@ -5762,7 +5751,8 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
+         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1371280.php (Neuasphaltierung der Fahrbahn, 6.11.2023 bis 8.12.2023)
+#: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
 #: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023)
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
@@ -5955,31 +5945,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BRAUNSCHWEIGER-2023
-#: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
-#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) (bis 29.09.2023) vvv
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: note: bei rbb nur bis 15.08.2023
-#: note: am 22.9.2023 waren zwar noch Absperrungen da, aber die Durchfahrt war möglich
-#: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
-#: last_checked: 2023-09-22 vvv
-#: next_check: 2023-09-29 vvv
-	q4::inwork 13368,7300 13476,7330 13519,7345
-Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-#: source_id ^^^
-',
-         'dont_check_date' => 1,
-         'from' => 1688875200,
-         'id' => 3845,
-         'text' => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 29. September 2023',
-         'type' => 'handicap',
-         'until' => 1695999600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.315966,52.45914,10.07.2023,09:00 (bis 04.09.2023) (bis 29.09.2023) (bis 13.10.2023)
 	q4::inwork 4558,5863 4520,5793
@@ -6001,6 +5967,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
 #: by: https://nitter.net/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1367360.php (neuer Zeitraum)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/umleitungsstrecke-radverkehr-kronprinzessinnenweg.pdf?ts=1695129056
+#: osm_watch: way id="50830991" version="25"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: last_checked: 2023-09-14 (mapillary)
 #: next_check: 2023-10-02
@@ -6058,30 +6025,9 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.383835,52.457024,22.05.2023,07:00 (bis 24.07.2023) (bis 01.09.2023) (bis 29.09.2023)
-#: also_indoor: traffic (ex-B)
-#: last_checked: 2023-07-22
-#: next_check: 2023-09-29
-	q3::inwork 9176,5803 8996,5823
-',
-         'from' => undef,
-         'id' => 3861,
-         'text' => 'Friedrich-Wilhelm-Str.: Bauarbeiten am Tempelhofer Damm, etwa 60m der Fahrbahn sind gesperrt, voraussichtlich bis 29.09.2023, vielleicht auch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
        undef,
-       {
-         'data' => '	2::inwork 41808,36267 42773,35959 43155,35936 44203,35121 44481,34906 44972,34649 45275,34475
-',
-         'from' => 1690696800,
-         'id' => 3863,
-         'source_id' => 'LS/221-F/23/104',
-         'text' => 'Steinbeck - Brunow: Bauarbeiten, Sperrung, vom 31.07.2023 08:00 Uhr bis 29.09.2023 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1695996000
-       },
+       undef,
+       undef,
        {
          'data' => '	2::inwork 65854,-2562 65816,-2687 65638,-2821 64980,-3141 64470,-3222 63787,-3692 63523,-3781 62692,-4215 62507,-4444
 ',
@@ -6149,18 +6095,7 @@ Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 134
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.598234,52.503701,31.07.2023,10:00 (hier nur Kfz-Verkehr, bis 08.09.2023) (bis 29.09.2023)
-#: note: Absperrungen über die volle Breite der Fahrbahn, Umfahrung über westlichen Bürgersteig möglich, aber dann muss man entweder Bordsteine überfahren oder auf dem Bürgersteig bleiben; eigentliche Bauarbeiten nur auf einem kurzen Abschnitt
-#: next_check: 2023-09-29
-	q3::inwork 23575,10972 23648,11265
-',
-         'from' => 1690704000,
-         'id' => 3875,
-         'text' => 'Kressenweg: zwischen Alt-Mahlsdorf/Alt-Kaulsdorf und Elsenstr./Am Niederfeld Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen, vom 31.07.2023 10:00 bis 29.09.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1695999600
-       },
+       undef,
        undef,
        undef,
        undef,

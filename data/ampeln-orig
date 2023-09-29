@@ -87,6 +87,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: next_check_id: BAUMSCHULEN-2023
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
+#: osm_watch: way id="383023440" version="13"
 #: last_checked: 2023-09-24
 #: next_check: 2023-09-30
 #: valid: -20230930
@@ -96,7 +97,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2023-08-25
+#: last_checked: 2023-09-29
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 #: valid: -20240701
@@ -1220,7 +1221,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2023-09-26
+#: last_checked: 2023-09-29
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -3322,7 +3323,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-09-20 vvv
+#: last_checked: 2023-09-29 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3502,11 +3503,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 # REMOVED --- #: valid: 20140224-20211231 vvv
+#: osm_watch: node id="9383783929" version="1"
 #: last_checked: 2023-07-11
 #: check_frequency: 90d
 #: next_check: 2023-09-30 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
+#: osm_watch: node id="4530512037" version="4"
 #: last_checked: 2023-07-21
 #: check_frequency: 90d
 	X::inwork 13627,7047

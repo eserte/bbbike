@@ -95,7 +95,7 @@ Friedrichstr.	Jam; 9254,13171 9246,13235 9244,13253 9225,13389
 # REMOVED (hier eher weniger Gefahr) --- Friedrichstr.	Jam; 9358,12351 9369,12253 9373,12197 9384,12103 9393,12000 9405,11903 9418,11804
 # REMOVED (hier eher weniger Gefahr) --- Friedrichstr.	Jam; 9418,11804 9405,11903 9393,12000 9384,12103
 # 
-Markgrafenstr.	Jam; 9692,11732 9701,11656
+# REMOVED (vermutlich nicht mehr) --- Markgrafenstr.	Jam; 9692,11732 9701,11656
 #: tempex ^^^
 # 
 #: note: Stau eher morgens, meistens 150m vor der Ampel an der Stralauer Allee
@@ -200,11 +200,12 @@ Sterndamm	Jam; 17886,5587 17747,5452 17736,5441
 Sterndamm	Jam; 17736,5441 17747,5452 17886,5587
 # REMOVED --- #: XXX ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
+#: next_check_id: WALL-2023
 #: note: nachmittags und abends werktags
 #: note: gesehen: 2021-02-25 18:15 (Werktag, schöner warmer Tag)
 Märkisches Ufer	Jam; 11111,12027 11160,12071 11275,12055 11325,12021
 # 
-#: note: nachmittags, aber nicht immer
+#: note: nachmittags, aber mittlerweile eher selten
 Krausenstr.	Jam; 10001,11577 10176,11593
 # 
 # REMOVED --- #: note: nachmittags werktags
