@@ -1874,6 +1874,12 @@ Albert-Thaer-Str.	1 24697,23369 24357,23092 24263,23015
 #: by: osm
 B102, Ortsumfahrung Schmerzke	2 -44344,-3604 -44222,-3387 -43986,-3248 -43861,-3115 -43805,-2898 -43844,-2696 -43939,-2557 -44250,-2362
 # 
+Mühlenstr. (Rheinsberg)	1s:q4 -25737,76374 -25711,76478
+Markt (Rheinsberg)	1s:q4 -25838,76634 -25853,76534 -25842,76514 -25801,76494
+# 
+Kuhstr. (Wittstock)	1s:q4 -53455,82926 -53556,82888
+Burgstr. (Wittstock)	1s:q4 -53556,82888 -53717,83024 -53765,83128
+Poststr. (Wittstock)	1s:q4 -53717,83024 -53602,83076
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -3639,6 +3645,17 @@ Drängelgitter	BNP:3::trailer=10 16271,-522
 Tor	BNP:10 16254,-575
 Drängelgitter/Schranke	BNP:3::trailer=10 11350,2470
 enger Pfad	BNP:0::trailer=no 21548,-1158
+Drängelgitter	BNP:3::trailer=10 -29315,60830
+Drängelgitter	BNP:3::trailer=10 -30502,62663
+Drängelgitter	BNP:3::trailer=10 -30509,62687
+Drängelgitter	BNP:3::trailer=10 -33633,82253
+Drängelgitter	BNP:3::trailer=10 -33268,81139
+weites Drängelgitter	BNP:2::trailer=7 -44549,87038
+weites Drängelgitter	BNP:2::trailer=7 -48780,85133
+weites Drängelgitter	BNP:2::trailer=7 -48802,85120
+weites Drängelgitter	BNP:2::trailer=7 -48977,85035
+weites Drängelgitter	BNP:2::trailer=7 -48996,85026
+Drängelgitter	BNP:3::trailer=10 -53609,82816
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3880,7 +3897,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-09-29
+#: last_checked: 2023-09-30
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -5052,7 +5069,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="32"
 #: also_indoor: traffic
-#: last_checked: 2023-09-11 (osm)
+#: last_checked: 2023-09-30
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230

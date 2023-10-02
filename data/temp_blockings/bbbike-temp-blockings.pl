@@ -2591,7 +2591,7 @@ EOF
        text  => 'L 15; (Rosa-Luxemburg-Str.); OD Wittstock Straßenbauarbeiten Vollsperrung 25.07.2005-28.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -53875,82485 -53648,82294
+	q4 -53875,82485 -53691,82324
 EOF
      },
      { from  => 1122242400, # 2005-07-25 00:00
@@ -4937,7 +4937,7 @@ EOF
        text  => 'K 6828 L 164 Altfriesack-Wuthenow OT Seehof, Dorfstr. Kanalarbeiten Vollsperrung 22.06.2006-15.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -28368,51517 -28736,52387
+	2::inwork -28235,51326 -28661,52380
 EOF
      },
      { from  => 1151618400, # 2006-06-30 00:00
@@ -6291,7 +6291,7 @@ EOF
        text  => 'L 018 L 16 nördl. Neuruppin-AS Herzsprung gesamte OD Rossow bis Höhe Fretzdorf Deckenerneuerung Vollsperrung 04.10.2006-14.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -48354,72564 -48057,70618
+	2::inwork -48454,72603 -48364,71896 -48125,70686
 EOF
      },
      { from  => 1159912800, # 2006-10-04 00:00
@@ -12146,7 +12146,7 @@ EOF
        text  => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -53403,76884 -53483,76327
+	2::inwork -53432,76887 -53450,76749 -53551,76441 -53542,76301 -53443,76003
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
@@ -12872,7 +12872,7 @@ EOF
        text  => 'K 6828 L164 Altfriesack - Wuthenow OD Karwe Erntedankfest Vollsperrung 20.09.2008-20.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -25968,49631 -27035,49829 -27196,50015
+	q4::inwork -25968,49631 -26842,49820 -27035,49829 -27196,50015
 EOF
      },
      { from  => 1221084000, # 2008-09-11 00:00
@@ -12904,7 +12904,7 @@ EOF
        text  => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-31.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -53875,82485 -53648,82294 -53491,81954
+	q4::inwork -53875,82485 -53691,82324 -53499,81983
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -13639,7 +13639,7 @@ EOF
        text  => 'K 6828 Altfriesack-Wuthenow zw. Seehof u. Karwe Straßenbauarbeiten Vollsperrung 08.04.2009-18.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -27196,50015 -27421,50349 -28001,50966 -28368,51517 -28736,52387
+	2::inwork -27196,50015 -27421,50349 -27886,50769 -28235,51326 -28661,52380
 EOF
      },
      { from  => 1238536800, # 2009-04-01 00:00
@@ -14377,7 +14377,7 @@ EOF
        text  => 'L 014 Kyritz - Wittstock OD Herzsprung Straßenausbau Vollsperrung 20.07.2009-18.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -54249,73343 -54091,72917 -54034,72687
+	q4::inwork -54249,73343 -54177,73078 -54091,72917 -54096,72794 -54048,72691
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
@@ -14385,7 +14385,7 @@ EOF
        text  => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.05.2009-29.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -54338,71670 -54116,72465
+	q4::inwork -54352,71877 -54116,72465
 EOF
      },
      { from  => 1244498400, # 2009-06-09 00:00
@@ -14393,7 +14393,7 @@ EOF
        text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 10.06.2009-18.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -54665,72030 -54116,72465
+	q4::inwork -54725,72016 -54434,72167 -54116,72465
 EOF
      },
      { from  => 1306879200, # 1242851109, # 2009-05-20 22:25
@@ -14427,7 +14427,7 @@ EOF
        text  => 'L 014 Rosa-Luxemburg-Straße OL Wittstock, Kreuzungsberereich Bohnekampweg Bau Kreisverkehr Vollsperrung 25.05.2009-31.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -53648,82294 -53491,81954 -53248,81574
+	q4::inwork -53691,82324 -53499,81983 -53328,81689 -53239,81289
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
@@ -14655,7 +14655,7 @@ EOF
        text  => 'K 6828 Altfriesack - Wuthenow OD Karwe, Lange Straße Kanal- u. Straßenbau Vollsperrung 08.06.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -28001,50966 -27421,50349 -27196,50015
+	q4::inwork -27886,50769 -27421,50349 -27196,50015
 EOF
      },
      { from  => 1244325600, # 2009-06-07 00:00
@@ -14834,7 +14834,7 @@ EOF
        text  => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 29.06.2009-18.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -54338,71670 -54116,72465
+	q4::inwork -54352,71877 -54116,72465
 EOF
      },
      { from  => 1246572000, # 2009-07-03 00:00
@@ -14874,7 +14874,7 @@ EOF
        text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 24.06.2009-18.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -54665,72030 -54116,72465
+	q4::inwork -54725,72016 -54434,72167 -54116,72465
 EOF
      },
      { from  => 1246572000, # 2009-07-03 00:00
@@ -15058,7 +15058,7 @@ EOF
        text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Abzw. Zühlen und Linow Straßenneubau, Vollsperrung 27.07.2009-11.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -29604,76391 -28840,76019 -28297,75740 -27679,75655 -27336,75747 -27175,75718
+	2::inwork -29604,76391 -29138,76165 -28840,76019 -28297,75740 -27679,75655 -27336,75747 -27175,75718
 EOF
      },
      { from  => 1252792800, # 2009-09-13 00:00
@@ -15066,7 +15066,7 @@ EOF
        text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau, Vollsperrung 14.09.2009-25.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -26350,76073 -26474,76051 -26746,75931 -27175,75718
+	2::inwork -26350,76073 -26474,76051 -26765,75920 -27175,75718
 EOF
      },
      { from  => 1247349600, # 2009-07-12 00:00
@@ -16019,7 +16019,7 @@ EOF
        text  => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.08.2009-18.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -54665,72030 -54116,72465
+	q4::inwork -54725,72016 -54434,72167 -54116,72465
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -16676,7 +16676,7 @@ EOF
        text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau mit KV Vollsperrung 28.09.2009-30.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -26474,76051 -26746,75931 -27175,75718
+	2::inwork -26474,76051 -26765,75920 -27175,75718
 EOF
      },
      { from  => 1254002400, # 2009-09-27 00:00
@@ -17095,7 +17095,7 @@ EOF
        text  => 'B 122 Zechlinerhütte - Wesenberg zw. Abzw. Kleinzerlang und Prebelowbrücke Deckenerneuerung Vollsperrung 16.11.2009-18.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -26740,82997 -26137,84005 -26120,84667 -26316,84900
+	2::inwork -26740,82997 -26137,84005 -26080,84500 -26120,84667 -26316,84900
 EOF
      },
      { from  => 1256425200, # 2009-10-25 01:00
@@ -18209,7 +18209,7 @@ EOF
        type  => 'gesperrt',
        source_id => '106800201',
        data  => <<EOF,
-	2::inwork -27035,49829 -25968,49631
+	2::inwork -27035,49829 -26842,49820 -25968,49631
 EOF
      },
      { from  => 1276547986, # 2010-06-14 22:39
@@ -35003,7 +35003,7 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-09-25 (osm) vvv
+#: last_checked: 2023-09-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
@@ -36553,6 +36553,7 @@ EOF
        type  => 'gesperrt',
        source_id => '226502047',
        data  => <<EOF,
+#: note: auch für Fußgänger gesperrt
 	2::inwork -3475,26523 -3556,26560
 EOF
      },
@@ -37856,7 +37857,7 @@ EOF
 #: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
 #: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-09-15
+#: last_checked: 2023-10-02
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 EOF

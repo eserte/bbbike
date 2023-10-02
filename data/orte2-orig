@@ -159,8 +159,8 @@ Kummerow|(Uckermark)	1 63202,83842
 Schönow|(Uckermark)	1 59776,86911
 Zechlinerhütte	1 -27053,82717
 Adamswalde	0 -22743,84940
-Großzerlang	1 -22148,86587
-Kleinzerlang	0 -24423,86440
+Großzerlang	1 -22095,86440
+Kleinzerlang	0 -24489,86240
 Canow	1 -25102,87686
 Luhme	1 -29126,86083
 Repente	0 -30917,83823
@@ -327,7 +327,7 @@ Gramzow	2 49779,90206
 Zehnebeck	0 52749,90827
 Randowhöhe	0 53956,95685
 Neustadt-Glewe	3 -115372,106534
-Wittstock|a.d. Dosse	4 -53717,83024
+Wittstock|a.d. Dosse	4 -53496,83115
 Randow	1 -48771,86818
 Berlinchen	1 -47023,89414
 Kieve	1 -46277,95633
@@ -413,7 +413,7 @@ Zielow	1 -40081,104703
 Ludorf	1 -41541,107412
 Diemitz	1 -29888,88105
 Dorf Zechlin	1 -33462,80777
-Flecken Zechlin	1 -34305,82896
+Flecken Zechlin	1 -34257,82909
 Saßnitz	3 22453,235285
 Ostseebad Göhren	2 28435,215851
 Middelhagen	1 26389,214433
@@ -534,7 +534,8 @@ Herzsprung	1 -54091,72917
 Blumenthal	2 -63286,73362
 Kolrep	1 -67053,68051
 Dannenwalde	2 -69696,67716
-Blandikow	1 -60087,77692
+Blandikow	1 -60149,77736
+Papenbruch	1 -57414,78914
 Speck	0 -30045,114237
 Ribnitz-Damgarten	3 -59694,203153
 Ostseebad Graal-Müritz	2 -72052,203678
@@ -1209,9 +1210,8 @@ Kolkwitz	2 69314,-71975
 Feldgrieben	0 -22064,79842
 Paulshorst	0 -24122,78330
 Beerenbusch	0 -22750,81465
-Wittwien	0 -23725,81512
+Wittwien	0 -23714,81246
 Sellenwalde	0 -21558,77171
-Vogelberg	0 -32862,82400
 Reiherholz	0 -28187,83162
 Pälitzhof	0 -20362,88200
 Dagow	0 -14200,82637
@@ -1308,6 +1308,8 @@ Ragower Mühle	0 80727,-21212
 Kupferhammer	0 81021,-23411
 Siehdichum	0 81720,-25707
 Schlaubemühle	0 84815,-34524
+Zempow	1 -36339,88455
+Dranse	1 -44385,87488
 ######################################################################
 # Polen
 Cedynia|(Polen)	2 63744,53664

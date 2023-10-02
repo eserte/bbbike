@@ -1232,6 +1232,11 @@ B109: Templin - Prenzlau	1:igndisp 16435,79761 16360,79693 16323,79690
 B109: Templin - Prenzlau	1:igndisp 16323,79690 16331,79764
 Albert-Thaer-Str.	1 24697,23369 24357,23092 24263,23015
 B102, Ortsumfahrung Schmerzke	2 -44344,-3604 -44222,-3387 -43986,-3248 -43861,-3115 -43805,-2898 -43844,-2696 -43939,-2557 -44250,-2362
+Mühlenstr. (Rheinsberg)	1s -25737,76374 -25711,76478
+Markt (Rheinsberg)	1s -25838,76634 -25853,76534 -25842,76514 -25801,76494
+Kuhstr. (Wittstock)	1s -53455,82926 -53556,82888
+Burgstr. (Wittstock)	1s -53556,82888 -53717,83024 -53765,83128
+Poststr. (Wittstock)	1s -53717,83024 -53602,83076
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -3370,6 +3375,17 @@ Drängelgitter	BNP:3:-162:trailer=10 16271,-522
 Tor	BNP:10:-164 16254,-575
 Drängelgitter/Schranke	BNP:3:-227:trailer=10 11350,2470
 enger Pfad	BNP:0:-39:trailer=no 21548,-1158
+Drängelgitter	BNP:3:74:trailer=10 -29315,60830
+Drängelgitter	BNP:3:-194:trailer=10 -30502,62663
+Drängelgitter	BNP:3:-195:trailer=10 -30509,62687
+Drängelgitter	BNP:3:-205:trailer=10 -33633,82253
+Drängelgitter	BNP:3:-158:trailer=10 -33268,81139
+weites Drängelgitter	BNP:2:-107:trailer=7 -44549,87038
+weites Drängelgitter	BNP:2:-122:trailer=7 -48780,85133
+weites Drängelgitter	BNP:2:-115:trailer=7 -48802,85120
+weites Drängelgitter	BNP:2:-113:trailer=7 -48977,85035
+weites Drängelgitter	BNP:2:-114:trailer=7 -48996,85026
+Drängelgitter	BNP:3:-236:trailer=10 -53609,82816
 Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
