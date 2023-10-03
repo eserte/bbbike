@@ -1119,7 +1119,7 @@ function populateRouteList(geojson) {
     var result = geojson.properties.result;
     var route = result.Route;
 
-    var html = "<div>LÃÂ¤nge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
+    var html = "<div>Länge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
 
     var pref_speed;
     var pref_time;
@@ -1144,7 +1144,7 @@ function populateRouteList(geojson) {
 			       'u':  '&#x21b6;',
 			      };
     html += "<table>\n";
-    html += "<tr><th>Etappe</th><th></th><th>StraÃÂe</th></tr>\n";
+    html += "<tr><th>Etappe</th><th></th><th>Straße</th></tr>\n";
     for(var i=0; i<route.length; i++) {
 	var elem = route[i];
 	html += "<tr>";
