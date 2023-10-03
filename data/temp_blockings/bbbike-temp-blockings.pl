@@ -8144,7 +8144,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005465',
        data  => <<EOF,
-	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
+	1::inwork 2821,18831 2680,18757 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
 EOF
      },
      { from  => undef, # 
@@ -29959,7 +29959,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (-> gesperrt-orig) --- #: last_checked: 2020-07-31 --- #: next_check: 2019-12-02 --- #: check_frequency: 60d
-	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
+# REMOVED (Koordinaten existieren nicht mehr) ---	2::inwork 18621,4675 18636,4660 18642,4654 18653,4663
+	2::inwork 18653,4663 18664,4673
 EOF
      },
      { from  => 1560895200, # 2019-06-19 00:00
@@ -30469,7 +30470,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-09-27 vvv
+#: last_checked: 2023-10-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -36923,17 +36924,19 @@ EOF
 #: osm_watch: way id="8039689" version="17"
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2023-03-18 vvv
+#: last_checked: 2023-10-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
 # REMOVED (hier keine Einschränkungen) ---	2::temp 2226,16096 2290,16022 2580,15939 2595,15922 2604,15875 2638,15842 2701,15853 2787,15870
-	2 2787,15870 2828,15903 2880,15884 2787,15870
-	2 2996,15930 2960,15847 2944,15880 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
-Brückenabriss, Komplettsperrung	2::temp 2892,15983 2809,16143
+# REMOVED (hier nicht mehr) ---	2 2787,15870 2828,15903 2880,15884 2787,15870
+# REMOVED ---	2 2996,15930 2960,15847
+# REMOVED ---	2 2960,15847 2944,15880 2913,15944
+# REMOVED ---	2 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
+# REMOVED ---	2 2880,15884 2960,15847
+Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
 	2 2809,16143 2853,16293
-	2 2880,15884 2960,15847
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -37378,7 +37381,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-09-20
+#: last_checked: 2023-10-01 (daf)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -39474,7 +39477,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
        data  => <<EOF,
-#: last_checked: 2023-09-27
+#: last_checked: 2023-10-03
 #: next_check: 2023-10-15
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -39486,7 +39489,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-05-18
+#: last_checked: 2023-10-03
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -39498,7 +39501,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
-#: XXX wie groß sind die Einschränkungen hier?
+#: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
+#: last_checked: 2023-10-03
+#: check_frequency: 360d
+#: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
 EOF
      },
@@ -39692,6 +39698,8 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/umleitungsstrecke-radverkehr-kronprinzessinnenweg.pdf?ts=1695129056
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707745207880478781#m (neuer Start: 5.10.2023)
 #: by: https://viz.berlin.de/2023/09/kronprinzessinnenweg/ (2024+2025 kann es auch zu Vollsperrungen abends + am Wochenende kommen)
+#: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
+#: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
 #: osm_watch: way id="50830991" version="25"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: last_checked: 2023-09-14 (mapillary)
@@ -40097,6 +40105,7 @@ EOF
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
 #: by: https://viz.berlin.de/2023/08/bahnhofstr/
+#: by: https://www.youtube.com/watch?v=Y73X25IYfTM
 #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
@@ -40225,7 +40234,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
-#: last_checked: 2023-08-17
+#: last_checked: 2023-10-03
 #: check_frequency: 60d
 #: next_check: 2023-12-30
 	2::inwork 6213,14777 6210,14808
@@ -40344,6 +40353,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2023)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
+#: by: https://www.youtube.com/watch?v=m7OQ0dpU-FI
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: last_checked: 2023-09-24
 #: check_frequency: 60d
@@ -40497,13 +40507,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wildenbruchplatz: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Wildenbruchplatz: Bauarbeiten, Einbahnstraßenregelung; außerdem ist die Anbindung Finowstr. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
-#: last_checked: 2023-09-23
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (none) vvv
+#: last_checked: 2023-09-23 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
+	q3::inwork 13227,8692 13173,8623
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1694958118, # 2023-09-17 15:41
@@ -40630,6 +40644,43 @@ EOF
        source_id => 'viz2021:13.30431,52.51913,02.10.2023,11:00',
        data  => <<EOF,
 	q4::inwork 3486,12473 3606,12484 3747,12495
+EOF
+     },
+     { from  => 1696309200, # 2023-10-03 07:00
+       until => 1700064000, # 2023-11-15 17:00
+       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vom 04.10.2023 07:00 bis 15.11.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.452867,52.524141,04.10.2023,07:00',
+       data  => <<EOF,
+	q4::inwork 13598,13180 13692,13221
+EOF
+     },
+     { from  => 1696312800, # 2023-10-03 08:00
+       until => 1700236800, # 2023-11-17 17:00
+       text  => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 17.11.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.432818,52.481758,04.10.2023,08:00',
+       data  => <<EOF,
+	q4::inwork 12349,8464 12494,8501
+EOF
+     },
+     { from  => 1696309200, # 2023-10-03 07:00
+       until => 1700064000, # 2023-11-15 17:00
+       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 15.11.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.290205,52.497012,04.10.2023,07:00',
+       data  => <<EOF,
+	q4::inwork 2702,10006 2687,10053
+EOF
+     },
+     { from  => $isodate2epoch->("2023-09-24 07:00:00"),
+       until => $isodate2epoch->("2024-09-18 17:00:00"),
+       text  => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 18.09.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
+#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
+	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
 EOF
      },
     );

@@ -2588,8 +2588,7 @@ tragen (ca. 30 Stufen)	0:35:-90 20371,12057
 tragen (6+6+1 Stufen)	0:25:-190 5606,12232
 tragen (insgesamt 16 Stufen)	0:35:-160 2913,13919
 tragen (3x13 Stufen)	0:45:-132 18739,4728
-tragen (3x13 Stufen)	0:45:-225 18636,4660
-tragen (36 Stufen)	0:45:-43 18687,4649
+tragen	0:45:-225 18661,4655
 tragen (2x15 Stufen) oder Aufzug	0:35:-15 9209,417
 tragen (3x12 Stufen) oder Aufzug	0:35:-30 9249,421
 tragen (28 Stufen)	0:30:-260 6138,12877
@@ -3386,6 +3385,7 @@ weites Drängelgitter	BNP:2:-115:trailer=7 -48802,85120
 weites Drängelgitter	BNP:2:-113:trailer=7 -48977,85035
 weites Drängelgitter	BNP:2:-114:trailer=7 -48996,85026
 Drängelgitter	BNP:3:-236:trailer=10 -53609,82816
+Drängelgitter	BNP:3:-15:trailer=10 3789,18863
 Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
@@ -3446,12 +3446,10 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
-Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -224,16095 -265,16111
+Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -214,16093 -265,16111
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
-Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
-Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9178,556
 Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556

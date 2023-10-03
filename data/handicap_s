@@ -815,7 +815,7 @@ KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fußgänger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fußgänger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -214,16093 -265,16111 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
@@ -1420,7 +1420,7 @@ Landsberger Allee - Siegfriedstr.: einige Fußgänger	q1 16590,14386 16596,14367 1
 (Weg 1 im KGA Hochspannung): Rampe, enge Radien	q3 18182,9623 18165,9627 18164,9623
 Fromet-und-Moses-Mendelssohn-Platz: einige Fußgänger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 (Grillostr. - Wehnertstr.): eng, Fußgänger, Bordstein	q2 8790,854 8672,919
-(Otisstr. - Wackerweg): eng	q2 3753,18889 3803,18855
+(Otisstr. - Wackerweg): eng	q2 3753,18889 3784,18881 3789,18863 3803,18855
 Breitkopfstr.: einige Fußgänger	q1 7789,17853 7809,17708 7820,17549
 Orankeweg: Bordstein	q2 14936,15857 14769,15867
 Jenneweg: einige Fußgänger, eng, Bordstein	q3 -3978,14766 -4015,14744
@@ -2022,7 +2022,7 @@ Am Betriebsbahnhof Schöneweide: Steigung	q3; 17775,5392 17822,5409
 Am Betriebsbahnhof Schöneweide: Gefälle	q3; 17822,5409 17775,5392
 (Grüne Trift - Salvador-Allende-Str.): schmaler Trampelpfad, flache Bordsteine	q3 23257,3884 23368,3894
 Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
-(Fußgängerbrücke Betriebsbahnhof Schöneweide): einige Fußgänger	q2 18725,4715 18739,4728 18730,4735 18664,4673 18642,4654 18636,4660 18621,4675 18649,4678
+(Fußgängerbrücke Betriebsbahnhof Schöneweide): einige Fußgänger	q2 18725,4715 18739,4728 18730,4735 18664,4673 18653,4663 18661,4655 18666,4650
 (Löwenbrucher Weg - Lortzingplatz): eng, einige Fußgänger	q3 10107,-3063 10067,-2952
 (Löwenbrucher Weg - Lortzingplatz): einige Fußgänger	q1 10067,-2952 10058,-2924 10085,-2810
 (Wittelsbacherstr. - Mauerweg): enger Pfad	q3 12268,-2139 12331,-2108
@@ -2483,6 +2483,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 (Straßenbahnhaltestelle): Straßenbahnübergang, einige Fußgänger	q3 21020,16298 21033,16308 21041,16301 21031,16287 21036,16286
 (Weg am Beerenpfuhlgraben): Grünanlage, einige Fußgänger	q1 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Grünanlage, einige Fußgänger	q1 23521,14973 23529,14973 23543,14966
+Singerstr.: Fußgängerzone für Radfahrer frei, höherer Fußgängerfrequenz zum Unterrichtsbeginn	q0 11635,12398 11845,12292
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

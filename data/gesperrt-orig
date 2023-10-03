@@ -2487,9 +2487,9 @@ tragen (insgesamt 16 Stufen)	0:35 2913,13919
 # 
 #: note: Aufzug existiert
 tragen (3x13 Stufen)	0:45 18739,4728
-tragen (3x13 Stufen)	0:45 18636,4660
-#: note: provisorische Treppe
-tragen (36 Stufen)	0:45 18687,4649
+# REMOVED (alte Treppe wurde demontiert) --- tragen (3x13 Stufen)	0:45 18636,4660
+# REMOVED (nicht mehr in Benutzung) --- #: note: provisorische Treppe --- tragen (36 Stufen)	0:45 18687,4649
+tragen	0:45 18661,4655
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (F¸hrungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -3656,6 +3656,7 @@ weites Dr‰ngelgitter	BNP:2::trailer=7 -48802,85120
 weites Dr‰ngelgitter	BNP:2::trailer=7 -48977,85035
 weites Dr‰ngelgitter	BNP:2::trailer=7 -48996,85026
 Dr‰ngelgitter	BNP:3::trailer=10 -53609,82816
+Dr‰ngelgitter	BNP:3::trailer=10 3789,18863
 #
 ############################################################################
 #: section tempor‰re Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3812,7 +3813,7 @@ Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraﬂe sein
 #: osm_watch: way id="4596985" version="22"
-#: last_checked: 2023-08-17
+#: last_checked: 2023-10-03
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraﬂenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4043,7 +4044,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, mˆglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-09-27
+#: last_checked: 2023-10-03
 #: check_frequency: 7d
 #: next_check: 2023-10-31
 Gr¸nfl‰che Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
@@ -4142,7 +4143,7 @@ Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="21"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2023-09-02 (mapillary)
+#: last_checked: 2023-10-03
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4161,7 +4162,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂ
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
-# REMOVED (erˆffnet) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: last_checked: 2023-06-02 (mapillary) --- #: next_check: 2023-12-01 --- Tegeler Br¸cke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,16043 -226,16086
+# REMOVED (erˆffnet) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: last_checked: 2023-06-02 (mapillary) --- #: next_check: 2023-12-01 --- Tegeler Br¸cke: wird neu gebaut	2::inwork -261,15858 -252,15903 -233,15997 -236,16043 -226,16086
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stˆhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
@@ -4207,11 +4208,11 @@ Hebammensteigbr¸cke	2::inwork 13168,21706 13046,21734
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/auf-der-neuen-bruecke-zwischen-tegel-und-siemensstadt-fliesst-der-verkehr_a391961 (Sperrung bis April 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=746926#post746926
 #: osm_watch: way id="930890136" version="21"
-#: last_checked: 2023-09-01 (daf)
+#: last_checked: 2023-10-03
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-01
 #: next_check: 2024-04-30
-Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Br¸cke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -224,16095 -265,16111
+Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Br¸cke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -214,16093 -265,16111
 # 
 # REMOVED (BVG-Meldung entfernt) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609 --- #: XXX bis wann ist gilt hier die Einbahnstraﬂenregelung? --- #: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag --- #: last_checked: 2021-05-29 --- #: next_check: 2021-05-31 --- #: valid: -20210531 --- Wildensteiner Str.: Einbahnstraﬂenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
 # 
@@ -4260,35 +4261,7 @@ L¸ckstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (mittlerweile Einbahnstraﬂe, Radfahrer frei) --- #: next_check_id: MITTEL-2019 --- #: source_id: IM_020714 --- #: osm_watch: way id="690322561" version="4" --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: XXX laut osm offen --- #: also_indoor: traffic (ex-G,ex-H) --- #: last_checked: 2022-07-29 --- Mittelstr.: zwischen Neust‰dtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch f¸r Fuﬂg‰nger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
-#: next_check_id: BHFJOHANNISTHAL-2022
-#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Br¸cke 2021)
-#: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
-#: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in K¸rze ... saniert")
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf ("Verbesserung ... nach 2024 diskutiert")
-#: by: https://www.facebook.com/larsduesterhoeft1981/posts/2656989284551902 (Bauarbeiten Dezember 2020 bis Ende 2021)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6697 (Antrag)
-#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993
-#: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Br¸cke bis 10.12.2021)
-#: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erw‰hnung)
-#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
-#: by: https://www.facebook.com/larsduesterhoeft1981/posts/2986916781559149 (provisorische Treppe wurde geˆffnet)
-#: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
-#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024)
-#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fahrstuhl-in-johannisthal-erst-ab-2024-nutzbar_a368423
-#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fussgaengerbruecke-am-s-bahnhof-johannisthal-soll-im-herbst-fertig-werden-fahrstuhl-erst-2024_a385887
-#: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: osm_watch: way id="1146034287" version="2"
-#: osm_watch: way id="1012523982" version="8"
-#: last_checked: 2023-09-24 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2023-09-30 vvv
-Fuﬂg‰ngerbr¸cke Bhf. Johannisthal: s¸dwestlicher Abgang wird zur¸ckgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
-# REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Br¸ckenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
-Gustav-Hertz-Platz: wegen Br¸ckenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: BHFJOHANNISTHAL-2022 --- #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Br¸cke 2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in K¸rze ... saniert") --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf ("Verbesserung ... nach 2024 diskutiert") --- #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2656989284551902 (Bauarbeiten Dezember 2020 bis Ende 2021) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6697 (Antrag) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993 --- #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Br¸cke bis 10.12.2021) --- #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erw‰hnung) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021) --- #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2986916781559149 (provisorische Treppe wurde geˆffnet) --- #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fahrstuhl-in-johannisthal-erst-ab-2024-nutzbar_a368423 --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fussgaengerbruecke-am-s-bahnhof-johannisthal-soll-im-herbst-fertig-werden-fahrstuhl-erst-2024_a385887 --- #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig --- #: osm_watch: way id="1146034287" version="2" --- #: osm_watch: way id="1012523982" version="8" --- #: last_checked: 2023-09-24 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-09-30 vvv --- Fuﬂg‰ngerbr¸cke Bhf. Johannisthal: s¸dwestlicher Abgang wird zur¸ckgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18653,4663 18664,4673 --- # REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Br¸ckenarbeiten gesperrt	2::inwork 18722,4628 18656,4687 --- Gustav-Hertz-Platz: wegen Br¸ckenarbeiten gesperrt	2::inwork 18691,4601 18654,4636 18661,4645 18639,4670 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: last_checked: 2023-07-15
 #: check_frequency: 90d
@@ -4385,7 +4358,7 @@ Cotheniusstr.: Bauarbeiten, Straﬂe existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,779064#msg-779064
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterf¸hrung gebaut vvv
-#: last_checked: 2023-09-25 (osm) vvv
+#: last_checked: 2023-09-30 (sven okas) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
 #: osm_watch: way id="152434836" version="25"
@@ -4418,12 +4391,16 @@ Unterf¸hrung unter der Elsenbr¸cke: gesperrt, teilweise existiert der Steg nicht
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 # 
 #: by: wosch
+#: by: https://www.agromex.de/projekte/the-molecules-berlin/ (Fertigstellung: IV. Quartal 2027)
+#: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
 #: last_checked: 2023-09-12 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 90d vvv
+#: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -4520,7 +4497,7 @@ Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 # REMOVED (offen) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf --- #: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet) --- #: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781 --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaﬂnahme beginnt 2019, Dauer 18 Monate) --- #: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht) --- #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ert¸chtigungsmaﬂnahmen ab 1.10.2019 f¸r die Umleitungsstrecke) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/informationen-zur-a114-erneuerung_a234835 (Informationsveranstaltung am 23.10.2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/auf-und-am-zubringer-a114-wird-auch-2020-gebaut_a244747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.955339.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php --- #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/bauarbeiten-auf-dem-zubringer-sollen-bis-ende-2022-abgeschlossen-sein_a292013 --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/koenigsteinbruecke/ --- #: by: https://www.berlin-usedom-radweginfo.de/1-Berlin-Bernau.php (voraussichtlich bis zum Fr¸hjahr 2021) --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/neugebaute-koenigsteinbruecke-wurde-fuer-radfahrer-und-fussgaenger-eroeffnet_a306690 --- #: osm_watch: way id="16307526" version="19" --- #: priority: #A --- #: also_indoor: search Kˆnigsteinbr¸cke --- #: last_checked: 2021-02-24 (mapillary) (laut Baustellenschild bis April 2021) --- #: check_frequency: 45d --- #: next_check: 2021-04-01 --- # REMOVED --- #: valid: -20210228 --- Kˆnigsteinbr¸cke: Br¸ckenneubau	2::inwork 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378
 # REMOVED (-> handicap) --- #: next_check_id: HOSEMANN-2019 --- #: last_checked: 2020-12-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-12-31 vvv --- #: valid: -20200731 vvv --- Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr.	1::inwork 12605,15491 12556,15518 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- #: next_check_id: OLIVAERPLATZ-2019 --- #: last_checked: 2019-12-08 --- #: check_frequency: 60d --- (Olivaer Platz, Wielandstr. - Bayerische Str.): wegen Bauarbeiten gesperrt	2::inwork 4360,10320 4352,10260
-# REMOVED (teilweise schon offiziell offen) --- #: XXX auch Maﬂnahme Jt.7 --- #: XXX laut Planfestellungsverfahren kommt an der Kreuzung Groﬂ-Berliner Damm eine Ampel hin --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/ --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie) --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel) --- #: last_checked: 2020-07-31 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="72852443" version="12" --- Benno-Kˆnig-Str.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18374,4307 18434,4363 18596,4517 --- Gustav-Hertz-Platz: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18596,4517 18674,4585 18685,4595 18722,4628 --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED (teilweise schon offiziell offen) --- #: XXX auch Maﬂnahme Jt.7 --- #: XXX laut Planfestellungsverfahren kommt an der Kreuzung Groﬂ-Berliner Damm eine Ampel hin --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/ --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie) --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel) --- #: last_checked: 2020-07-31 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="72852443" version="12" --- Benno-Kˆnig-Str.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18374,4307 18434,4363 18596,4517 --- Gustav-Hertz-Platz: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18596,4517 18674,4585 18691,4601 18722,4628 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (keine Einschr‰nkung mehr) --- #: XXX wird dieser Abschnitt ein reiner Fuﬂ- und Radweg sein? --- #: last_checked: 2020-06-17 --- #: check_frequency: 60d --- Landfliegerstr.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18296,4850 18254,4817
 # REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: source_id: 2147345502 --- #: source_id: 2147343407 (hier nur bis 2020-07-13)--- #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv --- #: also_indoor: traffic (H) vvv --- #: last_checked: 2020-06-21 (mapillary) vvv --- #: next_check: 2020-08-05 vvv --- Tschaikowskistr.: Einbahnstraﬂe wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 # REMOVED (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraﬂenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
@@ -4575,20 +4552,20 @@ Am Kutscherhaus: durch Bauz‰une abgesperrt	2::inwork 21514,5310 21386,5251 21355
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-09-20
+#: last_checked: 2023-10-02 (daf)
 #: check_frequency: 90d
 J¸denstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Bˆﬂ-Str./J¸denstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-09-21
+#: last_checked: 2023-10-02 (daf)
 #: check_frequency: 90d
 J¸denstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-09-27
-#: check_frequency: 90d
+#: last_checked: 2023-10-02 (daf)
+#: check_frequency: 14d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -4613,7 +4590,7 @@ Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraﬂenregelung wieder aufgehoben? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-09-27
+#: last_checked: 2023-09-29 (daf)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9588,13174 9385,13174 9254,13171

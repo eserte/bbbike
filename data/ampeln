@@ -26,7 +26,6 @@ Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 Köpenicker Str./Geraldweg: Gegenverkehrsregelung	X::inwork 21072,8742
-	F::inwork 11913,13077
 Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
@@ -43,6 +42,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen auf den l
 Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linken Bürgersteig auf die Fahrbahn wechseln	X::inwork 9227,20617
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 Gegenverkehrsregelung	X::inwork 18767,-1343
+	F 11913,13077
 	F 18406,7760
 	F 15445,9090
 	F 19757,5169
@@ -2114,7 +2114,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -2088,13413
 	F 417,12115
 	F 6447,11144
-	F -196,16187
+	F -193,16186
 	F 8743,12099
 	F 30993,3557
 	F 5238,13714
@@ -2310,7 +2310,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -1099,14925
 	X 9242,7286
 	X 9242,7325
-	F 2944,15880
 	X 18875,13467
 	F 16066,11960
 	X 18878,9517
@@ -2542,6 +2541,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -13181,2285
 	X -13142,1989
 	F -14457,-1797
+	X -3356,29260
 	B -49659,72791
 	B -53693,82738
 	F -25797,76620

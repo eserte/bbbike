@@ -789,7 +789,7 @@ Gehwegplatten	RW2; 5198,17433 5109,17507
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4326,17801 4200,17848 4096,17890 4016,17918
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2023-06-24 vvv
+#: last_checked: 2023-10-03 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Verbundsteinpflaster, Bord gegen Gehweg	RW2; 4016,17918 3930,17923 3833,17929 3706,17931 3628,17935
@@ -806,7 +806,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Wedding
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2023-06-24 vvv
+#: last_checked: 2023-10-03 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -852,11 +852,11 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
 #: osm_watch: way id="25217949" version="50"
-#: last_checked: 2023-09-02 (mapillary)
+#: last_checked: 2023-10-03
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
 #: osm_watch: way id="374344536" version="18"
-#: last_checked: 2023-09-02 (mapillary)
+#: last_checked: 2023-10-03
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
@@ -1999,7 +1999,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-09-25 vvv
+#: last_checked: 2023-10-02 (daf) vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206
 #: note: vorher: provisorische Radspur, RW4;
@@ -2555,7 +2555,6 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5364,18775
 	RW1;RW1 5550,18775 5635,18776 5713,18777 5791,18778 5869,18779 6009,18755 6314,18705 6432,18682
 	RW1;RW2 6432,18682 6619,18639 6720,18616
 	RW1;RW1 6720,18616 6924,18599 7119,18582 7198,18575
-	RW1;RW1 5364,18775 5389,18907 5391,18932 5410,19050
 Leitboys	RW4;RW4 5410,19050 5429,19165
 	RW1;RW1 5429,19165 5476,19450
 # REMOVED --- #: next_check_id: ORANIENBURGERSUED-2018 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.864478.php (Anfang Dezember 2019 Umschwenkung auf andere Fahrbahnseite) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20191124 (Bauende Mitte 2020) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8093 (Bauende Ende 2020) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1022183.php (Fertigstellung) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/9566-oranienburger-blick-tessenowstr.jpg --- #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fuenf-von-sechs-abgeschlossen_a294436 --- #: by: https://abendblatt-berlin.de/2020/11/27/berlin-reinickendorf-bauarbeiten-in-der-oranienburger-strasse-naehern-sich-dem-ende/ (Bild zeigt Oranienburger/Wittenauer) --- #: by: http://www.infravelo.de/projekt/oranienburger-strasse-2/ (bis 2. Quartal 2021) --- #: source_id: 2147341383 (bis 10.11.2020) (inaktiv) --- #: source_id: 2147346684 (bis 21.12.2020) (inaktiv) --- #: XXX ist Richtung Norden durchgängig eine Radspur? --- #: last_checked: 2020-09-11 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2020-12-15 vvv --- #: next_check: 2020-11-10 vvv
@@ -2784,8 +2783,8 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-09-20
-#: check_frequency: 60d
+#: last_checked: 2023-10-02 (daf)
+#: check_frequency: 30d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
 Fahrradschleuse	RW4; 11221,12250 11300,12241 11347,12223
@@ -3185,12 +3184,26 @@ aufgemalte Radwege	RW1;RW1 5907,16000 5981,16091 6104,16223 6211,16343 6304,1644
 #: by: ^^^
 	RW2;RW2 5295,17344 5250,17318 5034,17322
 Gehwegplatten	RW2;RW2 5109,17507 5068,17384 5034,17322
+# 
+#: note: Ollenhauerstr. Richtung Norden
+Gehwegplatten	RW1; 5109,17507 5121,17559 5138,17630 5144,17659 5159,17726 5172,17789 5184,17855
+	RW3; 5184,17855 5200,17938 5217,18030
+Radweg nur aufgemalt	RW1; 5217,18030 5225,18070 5243,18162
+#: historical_note: früher: Radweg nur aufgemalt, RW1; (noch immer sichtbar)
+Radspur hinter parkenden Autos, schadhafter Asphalt	RW4; 5243,18162 5301,18447
+Radspur hinter parkenden Autos, schadhafter Asphalt	RW4; 5301,18447 5324,18560 5345,18675
+alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; 5345,18675 5364,18775 5389,18907
+Radspur hinter parkenden Autos bzw. Poller	RW4; 5389,18907 5391,18932 5410,19050
+# 
+#: note: Ollenhauerstr. Richtung Süden
+	RW4; 5410,19050 5391,18932 5389,18907
+alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; 5389,18907 5364,18775 5345,18675 5324,18560
+Radspur hinter parkenden Autos, schadhafter Asphalt	RW4; 5324,18560 5301,18447 5243,18162 5225,18070
 Busspur gilt Mo-Fr 6-9 Uhr	RW5; 5225,18070 5217,18030 5200,17938 5184,17855
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 5184,17855 5172,17789
-Gehwegplatten	RW1; 5109,17507 5121,17559 5138,17630 5144,17659 5159,17726 5172,17789 5184,17855
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 5172,17789 5159,17726 5144,17659 5138,17630 5121,17559
 Gehwegplatten	RW1; 5121,17559 5109,17507
-	RW3; 5184,17855 5200,17938 5217,18030
+# 
 	RW1; 7277,15586 7138,15437 6996,15319 6833,15215 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
 alte Gehwegplatten	RW1; 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437 7277,15586
@@ -3296,9 +3309,6 @@ Radweg nur aufgemalt	RW1; 4262,20025 3820,19688 3695,19595 3621,19539 3546,19477
 Verbundsteinpflaster, Bord	RW1; 3377,19325 3324,19277 3165,19136
 	RW1; 3165,19136 3324,19277 3377,19325 3452,19392 3546,19477 3621,19539 3695,19595 3820,19688
 Verbundsteinpflaster, Bord	RW1; 3820,19688 4262,20025
-Radweg nur aufgemalt	RW1; 5217,18030 5225,18070 5301,18447
-	RW0;RW1 5324,18560 5345,18675
-	RW1;RW1 5345,18675 5364,18775
 	RW1; 6314,18705 6306,18673 6296,18638
 asphaltiert mit Wurzelschäden und -hebungen	RW1; 6296,18638 6217,18619 6153,18592 6060,18534 5860,18400 5536,18234 5225,18070
 	RW1;RW1 5225,18070 4905,18142
@@ -3372,9 +3382,9 @@ Verbundsteinpflaster	RW1; 449,15654 731,15693 954,15724 1232,15717
 Gehwegplatten	RW1; 1232,15717 1406,15719
 	RW0; 1406,15719 2834,15703
 	RW2; 2834,15703 3028,15696
-	RW1; 3028,15696 3188,15688 3335,15686 3425,15684 3579,15682 3854,15670 3992,15664 4248,15647 4398,15626 4498,15556
+alte Gehwegplatten, teilweise schadhaft, schmal, mit Bord gegen Gehweg	RW1; 3028,15696 3188,15688 3335,15686 3425,15684 3579,15682 3854,15670 3992,15664 4248,15647 4398,15626 4498,15556
 	RW3; 4498,15556 4535,15530
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4891,15092 4922,15053 5032,14956 5098,14892 5095,14792 5048,14710
+altes Verbundsteinpflaster, teilweise mit Bord gegen Gehweg, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4891,15092 4922,15053 5032,14956 5098,14892 5095,14792 5048,14710
 	RW1; 5048,14710 5043,14671
 # 
 alter Verbundsteinpflasterradweg	RW1; 1232,15717 1280,15591 1374,15314 1416,15190 1468,15044 1465,14963
@@ -4954,20 +4964,22 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW2;RW4 9816,16565 9781,16569
 	RW4;RW4 9781,16569 9617,16590
 	RW2;RW1 9617,16590 9514,16603 9442,16610
-	RW3; -224,16095 -215,16121 -204,16162 -196,16187 -168,16269
-	RW4; -168,16269 -196,16187 -204,16162
+	RW3; -214,16093 -208,16120 -198,16161 -193,16186 -168,16269
+	RW4; -168,16269 -193,16186 -198,16161
 #: next_check_id: TEGELERBRUECKE-2021
 #: XXX noch nicht fertiggestellt
-#: last_checked: 2023-09-19 (mapillary) vvv
-#	RW4; -204,16162 -215,16121 -224,16095
-	RW0; -204,16162 -215,16121 -224,16095
-#asphaltiert	RW1; -226,16086 -236,16043 -242,15982
-	RW0; -226,16086 -236,16043 -242,15982
+#: last_checked: 2023-10-03 vvv
+#	RW4; -198,16161 -208,16120 -214,16093
+	RW0; -198,16161 -208,16120 -214,16093
+#asphaltiert	RW1; -216,16084 -224,16041 -233,15997
+#	RW3; -233,15997 -252,15903
+	RW0; -216,16084 -224,16041 -233,15997 -252,15903
 #: last_checked ^^^
-asphaltiert	RW1; -242,15982 -236,16043 -226,16086
-	RW1;RW1 -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903
-	RW3;RW3 -252,15903 -242,15982
-	RW3;RW3 -226,16086 -224,16095
+asphaltiert	RW1; -233,15997 -224,16041 -216,16084
+	RW1; -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903
+alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; -252,15903 -261,15858 -292,15715 -302,15602 -302,15546 -286,15354 -344,15200
+	RW3; -252,15903 -233,15997
+	RW3;RW3 -216,16084 -214,16093
 Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -1628,16225
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW1;RW1 -1013,15433 -934,15254 -834,15053
@@ -6298,8 +6310,8 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: Florian Schlichting vvv
 #: confirmed_by: srt vvv
 #: note: vor der Edeka-Filiale (zwischen Oelder Weg und Sterkrader Str.) ein paar Meter "geschützter" Radstreifen
-	RW3; 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2821,18831
-	RW3; 2821,18831 2643,18738
+	RW3; 1229,18750 1405,18749 1659,18747 1967,18743 2175,18740 2602,18737 2643,18738 2680,18757 2821,18831
+	RW3; 2821,18831 2680,18757 2643,18738
 	RW1; 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
 #: confirmed_by: ^^^
 #: by: ^^^
@@ -6320,7 +6332,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 #: next_check_id: MITTEL-2019
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
-#: last_checked: 2023-09-20 vvv
+#: last_checked: 2023-10-02 (daf) vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
@@ -8396,7 +8408,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 13-19 Uhr	RW5; 3813,10435 3783,10517 3753,10578 3
 	RW7;RW7 6530,15849 6383,15972 6244,16096
 	RW7;RW7 6555,15827 6690,15671 6794,15553
 # 
-# REMOVED --- #: next_check_id: TEGELERBRUECKE-2021 --- #: by: osm --- #: confirmed_by: srt --- #: note: der benutzungspflichtige Rad/Gehweg gilt noch einige Meter südlich der Brücke, beide Richtungen --- gemeinsamer Rad- und Gehweg	RW2;RW2 -261,15858 -265,15917 -255,15993 -239,16077 -204,16162
+# REMOVED --- #: next_check_id: TEGELERBRUECKE-2021 --- #: by: osm --- #: confirmed_by: srt --- #: note: der benutzungspflichtige Rad/Gehweg gilt noch einige Meter südlich der Brücke, beide Richtungen --- gemeinsamer Rad- und Gehweg	RW2;RW2 -261,15858 -265,15917 -255,15993 -239,16077 -198,16161
 # 
 	RW3;RW3 20919,3082 21068,2926
 # 
@@ -8544,9 +8556,10 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1369409.php (Bauarbeiten beginnen am 27.9.2023, bis Ende November 2023, Einbahnstraßenregelung während der Bauarbeiten (offen Richtung Westen), Zebrastreifen in Höhe Simon-Dach-Str.)
 #: by: https://viz.berlin.de/2023/09/revaler-str/
 #: by: https://berliner-abendblatt.de/berlin-news/radweg-auf-revaler-strasse-einschraenkungen-fuer-autos-id233272
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: durchgehende Gelbmarkierung, keine Radwegschilder
-#: last_checked: 2023-09-29 vvv
+#: last_checked: 2023-10-03 vvv
 #: next_check: 2023-11-29 vvv
 provisorische Radspuren	RW3;RW3 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075

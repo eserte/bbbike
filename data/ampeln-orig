@@ -206,15 +206,7 @@ Köpenicker Str./Geraldweg: Gegenverkehrsregelung	X::inwork 21072,8742
 # 
 # REMOVED --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022) (bis Ende 2023) (bis 28.2.2023) (inaktiv) --- #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen --- #: last_checked: 2023-02-16 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-12-31 --- #: next_check: 2023-02-28 --- Fischerinsel	F::inwork 10578,11969
 # REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: next_check_id: PLDVEREINTENNATIONEN-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw==
-#: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023) (bis 11.08.2023) (inaktiv)
-#: XXX bleibt diese Ampel dauerhaft?
-#: last_checked: 2023-08-09
-# REMOVED --- #: next_check: 2023-08-11
-# REMOVED --- #: valid: -20230811 ---
-	F::inwork 11913,13077
+# REMOVED (zurzeit noch Bauampel, aber Masten für eine richtige Ampel stehen schon, außerdem ist die Markierung weiß, nicht gelb) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1641500130158481409#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNmSGFIWFhvQUE0a2JrLmpwZw== --- #: source_id: viz2021:13.427586,52.523136,31.03.2023,04:00 (bis 19.05.2023) (inaktiv) (bis 16.06.2023) (bis 30.06.2023) (bis 28.07.2023) (bis 11.08.2023) (inaktiv) --- #: XXX bleibt diese Ampel dauerhaft? --- #: note: Anforderungsampel --- #: last_checked: 2023-10-03 --- # REMOVED --- #: next_check: 2023-08-11 --- # REMOVED --- #: valid: -20230811 ---	F::inwork 11913,13077
 # 
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
@@ -378,6 +370,9 @@ Gegenverkehrsregelung	X::inwork 18767,-1343
 # 
 ################################################################################
 # Ampeln und Bahnübergänge in Berlin
+#: note: Anforderungsampel
+	F 11913,13077
+# 
 #: note: Anforderung für den Hegemeisterweg
 	F 18406,7760
 # 
@@ -2180,7 +2175,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2023-08-17
+#: last_checked: 2023-10-03
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -3126,7 +3121,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 417,12115
 #: note: Anforderungsampel
 	F 6447,11144
-	F -196,16187
+	F -193,16186
 	F 8743,12099
 	F 30993,3557
 	F 5238,13714
@@ -3323,7 +3318,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-09-29 vvv
+#: last_checked: 2023-10-02 (daf) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3467,7 +3462,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel für linksabbiegende Radfahrer (Te-Damm -> Manfred-von-Richthofen-Str.)
 	X 9242,7325
 #: note ^^^
-	F 2944,15880
+#: evtl. dauerhaft ausgeschaltet (gesehen 2023-10-03)
+	F0 2944,15880
 	X 18875,13467
 #: note: Anforderungsampel
 #: XXX_prog: Ampel für Radfahrer offiziell nicht relevant
@@ -3603,10 +3599,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX wird diese Ampel jemals wieder in Betrieb genommen?
 #: osm_watch: node id="28321258" version="10"
-#: last_checked: 2023-09-20 (osm)
+#: last_checked: 2023-10-03
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2023-12-01
-	F0 -224,16095
+	F0 -214,16093
 #: note: Anforderungsampel
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)
@@ -3694,7 +3690,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-09-02 (mapillary)
+#: last_checked: 2023-10-03
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
@@ -3986,6 +3982,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X -3356,29260
 	B -49659,72791
 	B -53693,82738
 	F -25797,76620
