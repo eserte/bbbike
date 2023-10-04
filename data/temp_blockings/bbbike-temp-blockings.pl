@@ -40675,19 +40675,4 @@ EOF
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Marggraffbrücke: wegen einer Gashavarie komplett gesperrt',
-       type  => 'gesperrt',
-       data  => <<EOF,
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1709576272441958539#m
-#: by: https://berliner-abendblatt.de/berlin-news/beschaedigte-gasleitung-sperrkreis-in-koepenick-eingerichtet-id233907
-#: last_checked: 2023-10-04 vvv
-#: check_frequency: 1d vvv
-	2::inwork 16563,7012 16677,6892 16720,6845 16747,6813 16805,6747
-	2::inwork 16775,6813 16747,6813 16834,6910
-#: check_frequency ^^^
-#: last_checked ^^^
-EOF
-     },
     );
