@@ -29545,7 +29545,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-09-03 14:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2021-09-06 04:00:00"), # 1570116625, # 1680364800, # 2023-04-01 18:00
-       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand August 2023: Durchfahrt ist gesperrt)', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
+       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Oktober 2023: Durchfahrt ist gesperrt)', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
@@ -29554,11 +29554,11 @@ EOF
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="44"
+#: osm_watch: way id="8655276" version="45"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-09-14 (osm)
+#: last_checked: 2023-10-03 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34921,7 +34921,7 @@ EOF
 #: osm_watch: way id="4993234" version="22"
 	2::inwork 5714,12290 5770,12346 5796,12372 5940,12564
 #: XXX laut osm hier fertiggestellt, aber es sind weiterhin Bauarbeiten und Sperrungen möglich
-#: osm_watch: way id="4410535" version="27"
+#: osm_watch: way id="4410535" version="28"
 	2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 #: next_check ^^^
 #: check_frequency ^^^
@@ -34954,7 +34954,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
-#: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023)
+#: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023)
 #: also_indoor: traffic (none)
 #: last_checked: 2023-08-05
 # REMOVED --- #: check_frequency: 90d
@@ -35081,7 +35081,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-09-22 vvv
+#: last_checked: 2023-10-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -35357,7 +35357,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-09-23
+#: last_checked: 2023-10-04
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -36665,7 +36665,7 @@ EOF
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023)
 #: last_checked: 2023-01-10
 #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
@@ -39145,8 +39145,8 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="21"
-#: last_checked: 2023-09-14 (osm)
+#: osm_watch: way id="58182828" version="22"
+#: last_checked: 2023-10-03 (osm)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39635,22 +39635,10 @@ EOF
        text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn zwischen Unstrutstr./Kannerstr. und Richardstr. gesperrt, voraussichtlich bis 29. September 2023', # 'vom 10.07.2023 06:00 bis 21.07.2023 17:00, möglicherweise länger'
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: BRAUNSCHWEIGER-2023
-#: note: Halteverbotsschilder 7.7.2023 - 23.8.2023
-#: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) (bis 29.09.2023) (inaktiv) vvv
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: note: bei rbb nur bis 15.08.2023
-#: note: am 22.9.2023 waren zwar noch Absperrungen da, aber die Durchfahrt war möglich
-#: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv
-#: last_checked: 2023-09-22 vvv
-#: next_check: 2023-09-29 vvv
+# REMOVED (Sperrung beendet) --- #: next_check_id: BRAUNSCHWEIGER-2023 --- #: note: Halteverbotsschilder 7.7.2023 - 23.8.2023 --- #: source_id: viz2021:13.447318,52.471049,10.07.2023,06:00 (bis 21.07.2023) (bis 11.08.2023) (bis 15.09.2023) (bis 29.09.2023) (inaktiv) vvv --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: note: bei rbb nur bis 15.08.2023 --- #: note: am 22.9.2023 waren zwar noch Absperrungen da, aber die Durchfahrt war möglich --- #: also_indoor: traffic (B[auch Unstrutstr],G,W) vvv --- #: last_checked: 2023-09-22 vvv --- #: next_check: 2023-09-29 vvv
 	q4::inwork 13368,7300 13476,7330 13519,7345
 Kreuzungsbereich Kanner Str./Unstrutstr. auch gesperrt	q3::inwork 13495,7249 13476,7330 13373,7426
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-#: source_id ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^ --- #: source_id ^^^
 EOF
      },
      { from  => 1688886000, # 2023-07-09 09:00
@@ -39700,10 +39688,12 @@ EOF
 #: by: https://viz.berlin.de/2023/09/kronprinzessinnenweg/ (2024+2025 kann es auch zu Vollsperrungen abends + am Wochenende kommen)
 #: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
+#: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
 #: osm_watch: way id="50830991" version="25"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: last_checked: 2023-09-14 (mapillary)
-#: next_check: 2023-10-05
+#: check_frequency: 120d
+#: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -40234,6 +40224,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
+#: osm_watch: way id="4543436" version="29"
 #: last_checked: 2023-10-03
 #: check_frequency: 60d
 #: next_check: 2023-12-30
@@ -40432,7 +40423,7 @@ EOF
        until => 1696438800, # 2023-10-04 19:00
        text  => 'Kufsteiner Str.: Bauarbeiten zwischen Berliner Str. und Badensche Str., evtl. sind auch Radfahrer betroffen, vom 30.08.2023 07:00 bis 04.10.2023 19:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.336981,52.487139,30.08.2023,07:00',
+       source_id => 'viz2021:13.336981,52.487139,30.08.2023,07:00', # inaktiv
        data  => <<EOF,
 	q4::inwork 5895,9083 5900,8930 5901,8819
 EOF
@@ -40661,7 +40652,8 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.432818,52.481758,04.10.2023,08:00',
        data  => <<EOF,
-	q4::inwork 12349,8464 12494,8501
+#: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
+	q3::inwork 12349,8464 12494,8501
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
@@ -40681,6 +40673,21 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Marggraffbrücke: wegen einer Gashavarie komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1709576272441958539#m
+#: by: https://berliner-abendblatt.de/berlin-news/beschaedigte-gasleitung-sperrkreis-in-koepenick-eingerichtet-id233907
+#: last_checked: 2023-10-04 vvv
+#: check_frequency: 1d vvv
+	2::inwork 16563,7012 16677,6892 16720,6845 16747,6813 16805,6747
+	2::inwork 16775,6813 16747,6813 16834,6910
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
     );
