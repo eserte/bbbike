@@ -85,11 +85,11 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork 22192,6659
 # 
 #: next_check_id: BAUMSCHULEN-2023
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: osm_watch: way id="383023440" version="14"
-#: last_checked: 2023-09-24
-#: next_check: 2023-10-02
+#: last_checked: 2023-10-04
+#: next_check: 2023-10-27
 # REMOVED --- #: valid: -20230930
 	X::inwork 16328,7005
 # 
@@ -1678,7 +1678,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="3"
-#: last_checked: 2023-09-15 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
+#: last_checked: 2023-10-04 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -3497,22 +3497,25 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (permanente Ampelanlage existiert, war aber im Juli 2023 noch nicht eingeschaltet) --- #: XXX bleibt diese Ampel? --- #: last_checked: 2023-07-21 --- #: check_frequency: 60d
 	X::inwork 14141,6623
 # 
-#: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
+#: next_check_id: NEUKOELLNISCHEALLEE-2019
 # REMOVED --- #: valid: 20140224-20211231 vvv
 #: osm_watch: node id="9383783929" version="1"
-#: last_checked: 2023-07-11
-#: check_frequency: 90d
-#: next_check: 2023-09-30 vvv
-	X::inwork 13265,6972
+#: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt
+#: priority: #C
+#: last_checked: 2023-10-04
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2023-09-30 vvv
+	X0::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
 #: osm_watch: node id="4530512037" version="4"
-#: last_checked: 2023-07-21
-#: check_frequency: 90d
-	X::inwork 13627,7047
+#: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt
+#: priority: #C
+#: last_checked: 2023-10-04
+#: check_frequency: 30d
+	X0::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # REMOVED --- #: valid ^^^
-#: next_check_id ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407

@@ -5015,17 +5015,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 # REMOVED (wurde für was anderes recyclet) --- #: osm_watch: way id="194653032" version="26"
 # REMOVED --- #: osm_watch: way id="1131855532" version="2"
 # REMOVED --- #: osm_watch: way id="831444833" version="12" --- #: osm_watch: way id="831444834" version="12" --- #: also_indoor: traffic (G,B) --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-26 vvv --- Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663 --- Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
-#: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv)
-#: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023) (bis 6.7.2023) (inaktiv) (bis 30.8.2023) (bis 30.9.2023) (inaktiv)
-#: also_indoor: traffic (G,B)
-#: last_checked: 2023-08-23
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-09-30
-wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
-# 
+# REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da) --- #: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv) --- #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023) (bis 6.7.2023) (inaktiv) (bis 30.8.2023) (bis 30.9.2023) (inaktiv) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2023-08-23 --- #: check_frequency: 30d --- #: next_check: 2023-09-30 --- wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
 # REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: source_id: LMS-BR_r_LMS-BR_44 --- #: last_checked: 2021-08-12 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410

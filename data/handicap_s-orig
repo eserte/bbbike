@@ -48,7 +48,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-04
 #: check_frequency: 90d
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
@@ -699,18 +699,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 54
 # REMOVED (widersprüchlich) --- #: next_check_id: DONAUSTR-2018 --- #: also_indoor: traffic (H) --- #: osm_watch: way id="155605273" version="8" --- #: last_checked: 2020-04-18 vvv --- #: check_frequency: 14d vvv --- Donaustr.: Einbahnstraßenregelung zwischen Pannierstr. und Reuterstr.	q3::inwork; 12150,8891 12202,8895
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: osm_watch: way id="38725490" version="21" --- #: XXX laut osm nun für den Kfz-Verkehr freigegeben, wie sieht nun die Radverkehrsführung aus? --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-04-22 vvv --- Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743 --- Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2023-08-23 vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2023-09-30 vvv
-# REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
-Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif --- #: last_checked: 2023-08-23 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2023-09-30 vvv --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086 --- Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (nicht mehr so eng, Seitenwechsel nicht mehr notwendig) --- #: next_check_id: GRENZALLEE-2014 vvv --- #: source_id: 2147343690 --- #: source_id: LMS-BR_r_LMS-BR_6571 --- #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden) --- #: last_checked: 2020-06-17 (webcam) vvv --- #: check_frequency: 7d vvv --- provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731 --- provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (offen) --- #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-09-30 --- #: check_frequency: 14d --- Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12682,9089
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
@@ -725,33 +714,12 @@ Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14319,7001 14276,702
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: osm_watch: way id="640465875" version="12"
-#: last_checked: 2023-09-15
+#: last_checked: 2023-10-04
 #: check_frequency: 120d
 #: next_check: 2024-06-01
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 # 
-#: next_check_id: KARLMARXSTR-2018
-#: by: https://viz.berlin.de/2022/01/verkehrsvorschau-01022022/
-#: by: https://twitter.com/VIZ_Berlin/status/1488418565413871617 (verschoben)
-#: by: https://www.kms-sonne.de/baustellennews
-#: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
-#: by: https://berliner-abendblatt.de/2022/02/04/sperrung-flughafenstrasse/
-#: by: https://twitter.com/VIZ_Berlin/status/1491648121176145925 (Sperrung ab 10.2.2022)
-#: XXX Flughafenstraße (Neukölln) Richtung Hermannstraße zwischen Karl-Marx-Straße und Isarstraße: Umbau Karl-Marx-Straße, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00, mittlerweile bis 01.09.2022
-#: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist.
-#: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv)
-#: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv)
-#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert) (bis 6.10.2022) (bis 11.10.2022) (bis 31.10.2023) (bis 4.10.2023)
-#: osm_watch: way id="137623800" version="31"
-#: osm_watch: way id="625667165" version="22"
-#: also_indoor: traffic (G[falsch],B,H)
-#: priority: #B
-#: last_checked: 2023-09-15
-#: check_frequency: 90d
-#: next_check: 2023-10-04
-#: valid: -20231004
-Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
-# 
+# REMOVED (durch andere Sperrung ersetzt) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-01022022/ --- #: by: https://twitter.com/VIZ_Berlin/status/1488418565413871617 (verschoben) --- #: by: https://www.kms-sonne.de/baustellennews --- #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf --- #: by: https://berliner-abendblatt.de/2022/02/04/sperrung-flughafenstrasse/ --- #: by: https://twitter.com/VIZ_Berlin/status/1491648121176145925 (Sperrung ab 10.2.2022) --- #: XXX Flughafenstraße (Neukölln) Richtung Hermannstraße zwischen Karl-Marx-Straße und Isarstraße: Umbau Karl-Marx-Straße, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00, mittlerweile bis 01.09.2022 --- #: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist. --- #: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv) --- #: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv) --- #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert) (bis 6.10.2022) (bis 11.10.2022) (bis 31.10.2023) (bis 4.10.2023) --- #: osm_watch: way id="137623800" version="31" --- #: osm_watch: way id="625667165" version="22" --- #: also_indoor: traffic (G[falsch],B,H) --- #: priority: #B --- #: last_checked: 2023-09-15 --- #: check_frequency: 90d --- #: next_check: 2023-10-04 --- #: valid: -20231004 --- Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098 --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 --- #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt) --- #: by: https://www.kms-sonne.de/baustellennews?date=202102 (voraussichtlich bis Sommer 2021) --- #: source_id: 2147345472 (Verschwenkung der KMS) --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-05-30 --- #: check_frequency: 120d --- #: next_check: 2021-10-08 --- #: next_check: 2021-06-01 --- Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12494,8501
 # REMOVED (laut osm wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020) --- #: by: https://www.kms-sonne.de/assets/2021/06/Baustellenuebersicht-A4-06-2021-Web.pdf (möglicherweise offen?) --- #: XXX laut rbbtext bis 4.7.2021 --- #: osm_watch: way id="822805265" version="8" --- #: also_indoor: traffic (G) --- #: last_checked: 2021-07-05 --- #: check_frequency: 1d --- # REMOVED --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2021-07-05 --- Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # REMOVED (laut osm offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung) --- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html --- #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (voraussichtlich bis Mitte April 2018) (für südlichen Abschnitt) --- #: by: http://www.berliner-woche.de/neukoelln/bauen/auf-der-karl-marx-strasse-beginnt-der-3-bauabschnitt-bis-ende-2021-wird-zwischen-briese-und-weichselstrasse-gebuddelt-und-gebaut-d161345.html --- # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191 --- # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=60327 --- #: by: http://www.abendblatt-berlin.de/2019/02/03/neues-von-neukoellns-laengster-baustelle/ --- #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-in-der-karl-marx-strasse-schreiten-voran-staugefahr-bleibt_a216409 (Fortschritte zwischen Anzengruberstr. und Erkstr. (Spekulation: vielleicht bis August 2019 fertig?)) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/warum-sich-die-sanierung-auf-der-karl-marx-strasse-hinzieht_a226894 --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (Abschluss im Frühsommer 2024) --- #: by: 7. Baustellennewsletter der Aktion Karl-Marx-Str. (Abschluss des Abschnitts bis zur Erkstr.: Frühsommer 2020)  --- #: by: https://www.kms-sonne.de/baustellennews/?date=20200115 (ab Februar 2020 wird die Einbahnstraßenregelung südlich der Werbellinstr. aufgehoben; außerdem wird die Rollbergstr. für fünf Monate zur Sackgasse) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/jetzt-wird-von-zwei-seiten-aus-gebuddelt_a249214 (hier: ab Mitte Februar 2020) --- #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (Abschluss bis Rollberstr. voraussichtlich Mitte Juli 2020) --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (Abschluss bis Rollberstr. voraussichtlich September 2020) --- #: by: https://www.kms-sonne.de/baustellennews?date=202102 (voraussichtlich im Juni/Juli 2021 fertig) --- #: by: https://www.kms-sonne.de/assets/2021/06/Baustellenuebersicht-A4-06-2021-Web.pdf (möglicherweise in beiden Richtungen nun offen?) --- #: XXX laut rbbtext bis 06.04.2021 --- #: source_id: IM_022515 --- #: source_id: 2147338550 --- #: source_id: LMS-BR_r_LMS-BR_19252 --- #: source_id: 2147342527 (bis Ende Juni 2021, Gesamtmaßnahme bis 2024) --- #: source_id: viz2021:13.435272,52.480882,22.11.2018,07:00 (bis 5.7.2021, Gesamtmaßnahme bis 2024) --- #: osm_watch: way id="585753318" version="8" --- #: osm_watch: way id="71392596" version="14" --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2021-07-05 --- #: check_frequency: 1d --- # REMOVED --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-07-05 --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249

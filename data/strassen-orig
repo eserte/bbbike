@@ -2562,39 +2562,14 @@ Hertastr. (Neukölln)	N 12649,6833 12689,6905
 Silbersteinstr.	H 11689,6634 12044,6707 12395,6785 12649,6833 12702,6846 12816,6870 12973,6902 13085,6925
 Britzer Damm	H 12576,6374 12588,6337 12595,6299 12597,6293 12618,6207 12628,6166 12644,6087 12699,5909 12718,5845 12789,5612 12794,5596 12798,5580 12812,5526 12841,5416 12883,5257 12885,5205 12731,4841 12547,4391 12564,4308
 Lahnstr.	H 13085,6925 13265,6972
-#: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: priority: #A vvv
-#: last_checked: 2023-08-23 vvv
-#: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2023-06-30 vvv
-# REMOVED --- #: valid: -20230630
-#: valid: -20230930
-Lahnstr.	N 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103
-# REMOVED --- #: valid: !-20230630
-#: valid: !-20230930
+# REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: priority: #A vvv --- #: last_checked: 2023-08-23 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 --- #: valid: -20230930 --- Lahnstr.	N 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103 --- #: valid: !-20230630 --- #: valid: !-20230930
 Lahnstr.	H 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103
-# REMOVED --- #: valid: -20230630
-#: valid: -20230930
-Neuköllnische Allee	N 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
-# REMOVED --- #: valid: !-20230630
-#: valid: !-20230930
+# REMOVED --- #: valid: -20230630 --- #: valid: -20230930 --- Neuköllnische Allee	N 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003 --- # REMOVED --- #: valid: !-20230630 --- #: valid: !-20230930
 Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 # 
-#: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/neukolln-offnung-der-grenzallee-am-24-01-
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/de/bau_los1.shtml
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
-#: last_checked: 2023-08-23
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-09-30
-# REMOVED --- (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
-(provisorische Umfahrung)	NN 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
+# REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/neukolln-offnung-der-grenzallee-am-24-01- --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/de/bau_los1.shtml --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400 --- #: last_checked: 2023-08-23 --- #: check_frequency: 30d --- #: next_check: 2023-09-30 --- (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086 --- (provisorische Umfahrung)	NN 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
 # 
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 vvv --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: 20140224-20230630 --- Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668 --- #: valid: !20140224-20230630
 Neuköllnische Allee	N 14344,7003 14567,6810 14724,6668
@@ -2758,20 +2733,10 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 #: note: Eröffnung 2011-09-08
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
-#: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2023-08-23 vvv
-#: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2023-06-30 vvv
-# REMOVED --- #: valid: 20140224-20230630
-#: valid: 20140224-
-Naumburger Str.	H 13265,6972 13520,6583
-# REMOVED --- #: valid: !20140224-20230630
-#: valid: !20140224-
+# REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv --- #: last_checked: 2023-08-23 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: 20140224-20230630 --- #: valid: 20140224- --- Naumburger Str.	H 13265,6972 13520,6583
+# REMOVED --- #: valid: !20140224-20230630 --- #: valid: !20140224-
 Naumburger Str.	N 13265,6972 13520,6583
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 Storkower Str.	H 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673 13731,14200 13736,14192 13879,13967 13971,13818 14006,13761 14043,13667 14060,13622 14089,13509 14109,13449 14159,13384 14218,13358 14307,13318 14502,13264 14530,13256 14630,13230 14780,13160 14871,13135 15080,13117 15090,13116 15347,13124 15515,13134
 Storkower Str. [Gewerbegebiet]	N 13736,14192 13639,14133 13715,14018 13784,13908
