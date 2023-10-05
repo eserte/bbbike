@@ -4170,7 +4170,7 @@ Hasensprung: Asphalt	Q1- -10915,-4308 -10888,-4346
 Hasensprung: unbefestigter Weg	Q2 -10888,-4346 -10837,-4398
 (Hasensprung - Zum Jagenstein): unbefestigter Weg	Q2 -10837,-4398 -10825,-4409 -10824,-4434
 Zum Jagenstein: Beton	Q0- -10824,-4434 -10722,-4618 -10659,-4750 -10601,-4882 -10453,-4819
-Zum Jagenstein: Asphalt	Q0 -10453,-4819 -10359,-4780
+Zum Jagenstein: Asphalt	Q0 -10453,-4819 -10397,-4795 -10359,-4780
 Zum Kahleberg: Beton	Q0- -11013,-4671 -10999,-4820
 (Am Wald - Zum Kahleberg): Waldweg	Q2 -11153,-4512 -11121,-4605 -11013,-4671
 Ginsterweg: Beton	Q0- -10659,-4750 -10517,-4686
@@ -6865,7 +6865,7 @@ Kiefernring (Potsdam): guter Beton	Q0- -10519,-5173 -10618,-4998 -10685,-5022 -1
 Zum Kahleberg: Asphalt	Q0 -10500,-4514 -10577,-4552 -10722,-4618 -10824,-4651 -10924,-4664 -11013,-4671
 #: by: JuliusKlug:
 #: note: "einige Fußgänger, q1" ignoriert
-Am Moosfenn: mäßiger Asphalt	Q1 -10249,-5048 -10331,-5085 -10388,-5112 -10503,-5165 -10519,-5173 -10649,-5236 -10773,-5294
+Am Moosfenn: mäßiger Asphalt	Q1 -10249,-5048 -10283,-5063 -10331,-5085 -10388,-5112 -10503,-5165 -10519,-5173 -10649,-5236 -10773,-5294
 #: by: Bernt Roder:
 #: confirmed_by: srt (zumindest der östliche Teil)
 Sacco-Vanzetti-Str.: schlechtes Kopfsteinpflaster	Q3+ 1960,31979 1676,31979 1553,31935 1448,31889 1418,31914 1407,31960
@@ -8983,6 +8983,7 @@ Geraer Str. (Neuenhagen): unbefestigte Straße	Q2 29949,11390 29942,11284
 #: by ^^^
 # 
 #: by: mapillary vvv
+Zum Teufelssee (Potsdam): Asphalt	Q0 -10150,-5260 -10186,-5276 -10254,-5307 -10397,-5379
 Seestr. (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30560,5997 30648,5979 30790,5946
 Albert-Thaer-Str. (Blumberg): Asphalt	Q0 23713,22519 23866,22636 23870,22691 24263,23015 24357,23092
 Albert-Thaer-Str. (Blumberg): unbefestigte Straße	Q2 24357,23092 24697,23369
@@ -9387,4 +9388,6 @@ Einmündungsbereich asphaltiert	Q0 -10119,-1515
 Kreuzungsbereich mit Betonpflaster	Q1- 11756,2096
 Kreuzungsbereich glatt gepflastert	Q1 -31911,57186
 Kreuzungsbereich glatt gepflastert	Q1 -31796,57116
+#: by: mapillary
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- -10254,-5307
 #: ignore ^^^

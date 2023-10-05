@@ -1236,7 +1236,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025) (mittlerweile: 1. Quartal 2025 - 4. Quartal 2026)
 #: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="39"
+#: osm_watch: way id="4810830" version="44"
 #: last_checked: 2023-08-26
 #: check_frequency: 720d
 #: next_check: 2026-12-31
@@ -14795,8 +14795,9 @@ Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 590
 #: confirmed_by: srt
 Buchstr.: Asphalt	Q0 6596,14740 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
-#: corrected_by: srt (OK -> normal)
-Holsteiner Ufer: Kopfsteinpflaster	Q2+ 6182,12900 6347,12901 6449,12865 6575,12778
+#: corrected_by: srt (OK -> normales Kopfsteinpflaster, Q2+)
+#: corrected_by: osm (neu gemacht)
+Holsteiner Ufer: Asphalt	Q0 6182,12900 6347,12901 6449,12865 6575,12778
 #: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
 Holsteiner Ufer: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 6575,12778 6631,12707
 Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6631,12707 6694,12627
