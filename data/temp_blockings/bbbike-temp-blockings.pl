@@ -38237,9 +38237,9 @@ EOF
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: last_checked: 2023-08-28
+#: last_checked: 2023-09-17
 #: check_frequency: 120d
-#: next_check: 2023-10-08
+#: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -39316,7 +39316,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
 #: source_id: bvg2021:190#BVG320324_0
 #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G)
 #: last_checked: 2023-06-10
 #: check_frequency: 120d
 #: next_check: 2024-05-10
