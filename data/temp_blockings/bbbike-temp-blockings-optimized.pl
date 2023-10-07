@@ -5199,8 +5199,8 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        {
          'data' => '#: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
-#: osm_watch: way id="4543436" version="29"
-#: last_checked: 2023-10-03
+#: osm_watch: way id="4543436" version="30"
+#: last_checked: 2023-10-05 (osm)
 #: check_frequency: 60d
 #: next_check: 2023-12-30
 	2::inwork 6213,14777 6210,14808

@@ -3687,16 +3687,19 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
 #: next_check_id: SAATWINKLER-2023
-#: last_checked: 2023-09-01 (daf) vvv
+#: XXX Laut osm zumindest teilweise offen
+#: last_checked: 2023-10-06 (osm) vvv
 #: check_frequency: 60d vvv
+#: next_check: 2023-10-06 vvv
 # REMOVED --- #: next_check: 2023-10-01 vvv
-#: osm_watch: way id="1198442169" version="4"
+#: osm_watch: way id="1198442169" version="6"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
-#: osm_watch: way id="1152661787" version="11"
+#: osm_watch: way id="1152661787" version="14"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
-#: osm_watch: way id="1198395777" version="6"
+#: osm_watch: way id="1198395777" version="11"
 Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486 -213,15529 -218,15558
 # REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -5035,9 +5038,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="32"
+#: osm_watch: way id="186329816" version="33"
 #: also_indoor: traffic
-#: last_checked: 2023-09-30
+#: last_checked: 2023-10-05 (osm)
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
