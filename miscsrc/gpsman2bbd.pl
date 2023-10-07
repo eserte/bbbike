@@ -355,7 +355,7 @@ EOF
 		    my $l = [$base . "/" . $wpt->Ident . "/" . $wpt->Comment . (defined $alt ? " alt=".sprintf("%.1fm",$alt) : ""), ["$prefix$x,$y"], $cat];
 		    $p->push($l);
 	        } elsif ($force_points) {
-		    my $ident = $wpt->Ident;
+		    my $ident = $wpt->Ident || $wpt->DateTime;
 		    if (!defined $ident || $ident eq '') {
 			if (($wpt->Comment||'') eq '31-Dec-1989 01:00:00') {
 			    $ident = $alt;
