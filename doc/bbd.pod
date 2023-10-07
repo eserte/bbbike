@@ -1408,6 +1408,11 @@ Mark a temporary play street.
 
 Mark a street with mandatory mask-wearing.
 
+=item sign
+
+Mainly used for roads that will either receive a new street name or
+have other remarks regarding signage.
+
 =back
 
 =head1 CONVENTIONS

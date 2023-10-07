@@ -436,6 +436,18 @@ entry after the <i>source</i>.
 <dd>
 Denotes that the information in the next block or line was confirmed
 by <i>source</i>.
+<dt class="POD_ITEM"><a name="source_id_id"><code>source_id: <i>id</i></code></a>
+<dd>
+A special form of a <code>by</code> directive where a formal id can be used.
+Currently there are three id schemes in use: <code>viz2021</code> (a pseudo id
+for VIZ traffic reports), <code>bvg2021</code> (BVG traffic reports: prefixed by
+the affected line, then a <code>#</code>, then the id), and scheme-less (a real
+VIZ id). Sometimes also other forms of pseudo ids or even URLs are
+used here.
+<dt class="POD_ITEM"><a name="source_id_inactive_i"><code>source_id[inactive]: <i>id</i></code></a>
+<dd>
+An inactive source id (typically not accessible anymore at the source
+site and/or expired).
 <dt class="POD_ITEM"><a name="valid_YYYYMMDD_YYYYM"><code>valid: YYYYMMDD-YYYYMMDD</code></a>
 <dt><a name="valid_YYYYMMDD_"><code>valid: YYYYMMDD-</code></a>
 <dt><a name="valid_YYYYMMDD"><code>valid: -YYYYMMDD</code></a>
@@ -1266,6 +1278,10 @@ Mark a temporary play street.
 <dt class="POD_ITEM"><a name="mask">mask</a>
 <dd>
 Mark a street with mandatory mask-wearing.
+<dt class="POD_ITEM"><a name="sign">sign</a>
+<dd>
+Mainly used for roads that will either receive a new street name or
+have other remarks regarding signage.
 </dl>
 <h2 class="POD_HEAD1"><a name="CONVENTIONS">CONVENTIONS</a></h2>
 <p class="POD_TEXT">
