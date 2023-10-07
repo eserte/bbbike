@@ -437,16 +437,11 @@ files are processed differently depending on time.
 
 =item C<temporary:>
 
-The next block or line is just a temporary feature. Typically this
-directive is accompanied by a C<next_check> directive to specify the
-end date, so systems like "fragezeichen-nextcheck" can include this
-feature in their lists.
-
-Earlier versions of this document suggested to put the date
-information into the Name field of the data line, preferred in a
-ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a starting
-and an end date). This may still be done additionally to the
-C<next_check> directive, but is not evaluated by automatic scripts.
+The next block or line is just a temporary feature. Typically there's
+one large "temporary" block per bbd file, and typically entries within
+this block are accompanied by C<next_check> directives to specify the
+end date, so systems like "fragezeichen-nextcheck" can include these
+entries in their lists.
 
 =item C<XXX: I<why>>
 

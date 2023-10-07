@@ -468,17 +468,11 @@ files are processed differently depending on time.
 </p>
 <dt class="POD_ITEM"><a name="temporary_"><code>temporary:</code></a>
 <dd>
-The next block or line is just a temporary feature. Typically this
-directive is accompanied by a <code>next_check</code> directive to specify the
-end date, so systems like &quot;fragezeichen-nextcheck&quot; can include this
-feature in their lists.
-<p class="POD_TEXT">
-Earlier versions of this document suggested to put the date
-information into the Name field of the data line, preferred in a
-ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a starting
-and an end date). This may still be done additionally to the
-<code>next_check</code> directive, but is not evaluated by automatic scripts.
-</p>
+The next block or line is just a temporary feature. Typically there&#39;s
+one large &quot;temporary&quot; block per bbd file, and typically entries within
+this block are accompanied by <code>next_check</code> directives to specify the
+end date, so systems like &quot;fragezeichen-nextcheck&quot; can include these
+entries in their lists.
 <dt class="POD_ITEM"><a name="XXX_why"><code>XXX: <i>why</i></code></a>
 <dd>
 The next block or line is unsure or unclear information, and usually
