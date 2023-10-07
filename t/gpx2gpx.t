@@ -16,6 +16,7 @@ use BBBikeUtil qw(bbbike_root);
 use BBBikeTest qw(eq_or_diff gpxlint_string);
 
 sub count_trksegs ($);
+sub count_trkpts ($);
 sub require_datetime_iso8601 (&);
 sub require_geo_distance (&);
 
@@ -115,16 +116,75 @@ require_geo_distance {
     ok run [@script, '--trkseg-split-by-dist-gap=1000'], '<', \$src_gpx, '>', \my $dest_gpx;
     ok gpxlint_string($dest_gpx);
     is count_trksegs($dest_gpx), 2, 'now there are two trksegs';
+    is count_trkpts($dest_gpx), 3, 'but still there are all three trkpts';
 
     ok run [@script, '--trkseg-split-by-dist-gap=1000'], '<', \$dest_gpx, '>', \my $dest2_gpx;
     eq_or_diff $dest2_gpx, $dest_gpx, 'no change, already split';
 };
 
+## trkpts-delete tests
+# delete middle point -> two trksegs
+{
+    ok run [@script, '--trkpts-delete=//gpx:trkpt[gpx:time="2000-01-01T07:09:45Z"]'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok gpxlint_string($dest_gpx);
+    is count_trksegs($dest_gpx), 2, 'now there are two trksegs';
+    is count_trkpts($dest_gpx), 2, 'one trkpt is gone';
+}
+
+# delete first point
+{
+    ok run [@script, '--trkpts-delete=//gpx:trkpt[gpx:time="2000-01-01T07:09:43Z"]'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok gpxlint_string($dest_gpx);
+    is count_trksegs($dest_gpx), 1, 'still one trkseg (deleted point on front)';
+    is count_trkpts($dest_gpx), 2, 'one trkpt is gone';
+}
+
+# delete last point
+{
+    ok run [@script, '--trkpts-delete=//gpx:trkpt[gpx:time="2000-01-01T11:49:17Z"]'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok gpxlint_string($dest_gpx);
+    is count_trksegs($dest_gpx), 1, 'still one trkseg (deleted point at end)';
+    is count_trkpts($dest_gpx), 2, 'one trkpt is gone';
+}
+
+# no match -> no change
+{
+    ok run [@script, '--trkpts-delete=//gpx:trkpt[gpx:time="1999-01-01T11:49:17Z"]'], '<', \$src_gpx, '>', \my $dest_gpx;
+    (my $src_gpx = $src_gpx) =~ s{<gpx.*>}{<gpx>}; # XXX unfortunately this operation changes the order of attributes in the root element, so for simplicity delete them before running eq_or_diff
+    $dest_gpx                =~ s{<gpx.*>}{<gpx>};
+    eq_or_diff $dest_gpx, $src_gpx, 'no change';
+}
+
+# delete first two points with str-le
+{
+    ok run [@script, '--trkpts-delete=//gpx:trkpt[str-le(gpx:time,"2000-01-01T07:09:45Z")]'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok gpxlint_string($dest_gpx);
+    is count_trksegs($dest_gpx), 1, 'still one trkseg (deleted two points on front)';
+    local $TODO = "for some reason the str-le function returns only node, not two";
+    is count_trkpts($dest_gpx), 1, 'two trkpts are gone';
+}
+
+# delete first two points with str-ge & str-le
+{
+    ok run [@script, '--trkpts-delete=//gpx:trkpt[str-ge(gpx:time,"2000-01-01T00:00:00Z") and str-le(gpx:time,"2000-01-01T07:09:45Z")]'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok gpxlint_string($dest_gpx);
+    is count_trksegs($dest_gpx), 1, 'still one trkseg (deleted two points on front)';
+    is count_trkpts($dest_gpx), 1, 'two trkpts are gone';
+}
 
 sub count_trksegs ($) {
     my $gpx = shift;
     my $count = 0;
     while ($gpx =~ /<trkseg>/g) {
+	$count++;
+    }
+    $count;
+}
+
+sub count_trkpts ($) {
+    my $gpx = shift;
+    my $count = 0;
+    while ($gpx =~ /<trkpt( |>)/g) {
 	$count++;
     }
     $count;

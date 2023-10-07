@@ -20,6 +20,7 @@ my @opdefs;
 
 my $geo_distance;
 my $op_needs_argv;
+my $need_xpath_context_functions;
 
 GetOptions
     (
@@ -41,6 +42,11 @@ GetOptions
 	 push @opdefs, $opdef;
 	 $op_needs_argv = $opdef;
      },
+     'trkpts-delete=s' => sub {
+	 my $xpath = $_[1];
+	 push @opdefs, { op => 'trkpts_delete', args => [$xpath] };
+	 $need_xpath_context_functions = 1;
+     },
     )
     or die "usage?";
 my $file = shift;
@@ -58,6 +64,17 @@ if ($file && $file ne '-') {
 }
 
 my $doc = XML::LibXML->load_xml(@load_xml_opts);
+
+my $xc;
+if ($need_xpath_context_functions) {
+    require XML::LibXML::XPathContext;
+    $xc = XML::LibXML::XPathContext->new($doc);
+    $xc->registerNs('gpx', 'http://www.topografix.com/GPX/1/1');
+    $xc->registerFunction('str-lt', sub { $_[0] lt $_[1] });
+    $xc->registerFunction('str-le', sub { $_[0] le $_[1] });
+    $xc->registerFunction('str-gt', sub { $_[0] gt $_[1] });
+    $xc->registerFunction('str-ge', sub { $_[0] ge $_[1] });
+}
 
 for my $opdef (@opdefs) {
     no strict 'refs';
@@ -144,6 +161,50 @@ sub trkcat {
     }
 }
 
+sub trkpts_delete {
+    my($xpath) = @_;
+
+    my %prev_siblings;
+
+    my $deletions = 0;
+    for my $node ($xc->findnodes($xpath)) {
+	my $prev_sibling = $node->previousNonBlankSibling;
+	$node->unbindNode;
+	$deletions++;
+	$prev_siblings{$prev_sibling} = $prev_sibling if $prev_sibling;
+    }
+    warn "Deleted $deletions node(s)\n" if $v;
+
+    # Split <trkseg> after each unique previous sibling
+    foreach my $prev_sibling (values %prev_siblings) {
+	my $trkseg = $prev_sibling->parentNode;
+
+	if ($trkseg->nodeName eq 'trkseg') {
+	    my @trkpts = $trkseg->findnodes('./*[local-name(.)="trkpt"]');
+
+	    if (@trkpts == 0) {
+		# If there are no <trkpt> nodes, remove the <trkseg>
+		$trkseg->unbindNode;
+	    } elsif ($prev_sibling->nextNonBlankSibling) {
+		# If there's a previous sibling, split the <trkseg> after it
+		my $new_trkseg = XML::LibXML::Element->new('trkseg');
+
+		# Move trkpts after the previous sibling to the new trkseg
+		my $next = $prev_sibling->nextSibling;
+		while ($next) {
+		    my $temp = $next;
+		    $next = $next->nextSibling;
+		    $temp->unbindNode;
+		    $new_trkseg->appendChild($temp);
+		}
+
+		# Insert the new trkseg after the previous sibling
+		$trkseg->parentNode->insertAfter($new_trkseg, $prev_sibling);
+	    }
+	}
+    }
+}
+
 __END__
 
 =head1 NAME
@@ -152,7 +213,7 @@ gpx2gpx - apply operations on GPX files
 
 =head1 SYNOPSIS
 
-    gpx2gpx [--trkseg-split-by-time-gap=...] [--trkseg-split-by-dist-gap=...] src.gpx [--trkcat src2.gpx ...] > dst.gpx
+    gpx2gpx [--trkseg-split-by-time-gap=...] [--trkseg-split-by-dist-gap=...] [--trkpts-delete=xpath] src.gpx [--trkcat src2.gpx ...] > dst.gpx
 
 =head1 DESCRIPTION
 
@@ -175,11 +236,37 @@ Split a C<< <trkseg> >> element if the distance between two adjacent
 C<< <trkpt> >> elements is greater or equal the specified number of
 meters.
 
+=head3 C<--trkpts-delete=I<xpath>>
+
+Delete C<< <trkpt> >> elements which match the given I<xpath>.
+
+The C<gpx> prefix is registered into the XPath engine.
+
+Additional functions are registered into the XPath engine:
+
+=over
+
+=item str-lt(val1,val2): string comparison less
+
+=item str-le(val1,val2): string comparison less-or-equal
+
+=item str-gt(val1,val2): string comparison greater
+
+=item str-ge(val1,val2): string comparison greater-or-equal
+
+=back
+
 =head3 C<--trkcat I<file2 file3 ...>>
 
 Concat the primary gpx file and further files. Only trk files are
 supported. Only the C<< <trkseg> >> elements of the further files are
 appended to the first one.
+
+=head2 EXAMPLES
+
+For removing trkpt elements within a time range, use something like
+
+    gpx2gpx --trkpts-delete '//gpx:trkpt[str-ge(gpx:time,"2023-01-02T12:11:29Z") and str-le(gpx:time, "2023-01-02T12:11:31Z")]' src.gpx
 
 =head2 BUGS AND LIMITATIONS
 
@@ -187,6 +274,9 @@ Even if there are no changes, the resulting GPX file may have
 (non-structural) differences against the source file. Currently
 observed is a different ordering of XML attributes. It is possible
 that insignificant whitespace may change.
+
+The registered functions str-XX seem to have bugs and do not always
+work as expected.
 
 =head1 AUTHOR
 
