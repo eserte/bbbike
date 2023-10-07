@@ -241,13 +241,15 @@ EOF
 
 	    my $brand;
 
+	    my $track_attrs = $gps->TrackAttrs || {}; # maybe undef for track segments
+
 	    my $curr_s;
 	    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK()) {
 		if (@code_filter) {
 		    for my $code_filter (@code_filter) {
 			my $code_filter_given = 0;
-			for my $k (keys %{ $gps->TrackAttrs }) {
-			    my $v = $gps->TrackAttrs->{$k};
+			for my $k (keys %$track_attrs) {
+			    my $v = $track_attrs->{$k};
 			    if ($code_filter->($k,$v)) {
 				$code_filter_given++;
 				last;
@@ -261,11 +263,11 @@ EOF
 
 	        $curr_s = $s;
 
-		if ($gps->TrackAttrs->{"srt:vehicle"}) {
-		    $vehicle = $gps->TrackAttrs->{"srt:vehicle"};
+		if ($track_attrs->{"srt:vehicle"}) {
+		    $vehicle = $track_attrs->{"srt:vehicle"};
 		}
 
-		$brand = $gps->TrackAttrs->{"srt:brand"};
+		$brand = $track_attrs->{"srt:brand"};
 		if (!$brand) {
 		    if (defined $vehicle && $brand{$vehicle}) {
 			$brand = $brand{$vehicle}; # remember from last
@@ -276,16 +278,16 @@ EOF
 		    }
 		}
 
-		if ($gps->TrackAttrs->{"srt:device"}) {
-		    $device = $gps->TrackAttrs->{"srt:device"};
+		if ($track_attrs->{"srt:device"}) {
+		    $device = $track_attrs->{"srt:device"};
 		}
 
-		if ($gps->TrackAttrs->{"srt:event"}) {
-		    $event = $gps->TrackAttrs->{"srt:event"};
+		if ($track_attrs->{"srt:event"}) {
+		    $event = $track_attrs->{"srt:event"};
 		}
 
-		if (exists $gps->TrackAttrs->{"srt:with"}) {
-		    $with = $gps->TrackAttrs->{"srt:with"}; # may also be the empty string, which would reset a previously set srt:with
+		if (exists $track_attrs->{"srt:with"}) {
+		    $with = $track_attrs->{"srt:with"}; # may also be the empty string, which would reset a previously set srt:with
 		}
 	    } else {
 	        $curr_s = $p;
@@ -318,7 +320,7 @@ EOF
 		}
 	    };
 
-	    my $frequency = $gps->TrackAttrs ? $gps->TrackAttrs->{"srt:frequency"} : undef;
+	    my $frequency = $track_attrs->{"srt:frequency"};
 	    if ($frequency) {
 		$frequency =~ s{\D}{}; # remove "m"
 	    }
@@ -354,14 +356,14 @@ EOF
 		    $p->push($l);
 	        } elsif ($force_points) {
 		    my $ident = $wpt->Ident;
-		    if ($ident eq '') {
-			if ($wpt->Comment eq '31-Dec-1989 01:00:00') {
+		    if (!defined $ident || $ident eq '') {
+			if (($wpt->Comment||'') eq '31-Dec-1989 01:00:00') {
 			    $ident = $alt;
 			} else {
 			    $ident = $wpt->Comment;
 			}
 		    }
-		    my $l = [$base . "/" . $ident, ["$prefix$x,$y"], $cat];
+		    my $l = [$base . (defined $ident ? "/" . $ident : ""), ["$prefix$x,$y"], $cat];
 		    $p->push($l);
 		}
 
