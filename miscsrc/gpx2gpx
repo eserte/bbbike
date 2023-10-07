@@ -24,17 +24,17 @@ my $op_needs_argv;
 GetOptions
     (
      'verbose|v' => \$v,
-     'trkseg-split-by-time=f' => sub {
+     'trkseg-split-by-time-gap|trkseg-split-by-time=f' => sub {
 	 my $delta_time = $_[1];
 	 require DateTime::Format::ISO8601;
-	 push @opdefs, { op => 'trkseg_split', args => ['time', $delta_time] };
+	 push @opdefs, { op => 'trkseg_split', args => ['time-gap', $delta_time] };
      },
-     'trkseg-split-by-dist=f' => sub {
+     'trkseg-split-by-dist-gap|trkseg-split-by-dist=f' => sub {
 	 my $meters = $_[1];
 	 require Geo::Distance;
 	 $geo_distance = Geo::Distance->new;
 	 $geo_distance->formula('hsin');
-	 push @opdefs, { op => 'trkseg_split', args => ['dist', $meters] };
+	 push @opdefs, { op => 'trkseg_split', args => ['dist-gap', $meters] };
      },
      'trkcat' => sub {
 	 my $opdef = { op => 'trkcat' };
@@ -74,10 +74,10 @@ sub trkseg_split {
 	    while (my $next_trkpt = $prev_trkpt->nextNonBlankSibling) {
 		# XXX do we need to check if $next_trkpt is really a trkpt?
 		my $do_split;
-		if ($by eq 'time') {
+		if ($by eq 'time-gap') {
 		    my $this_delta_time = trkpt_delta_time($prev_trkpt, $next_trkpt);
 		    $do_split = $this_delta_time >= $delta;
-		} elsif ($by eq 'dist') {
+		} elsif ($by eq 'dist-gap') {
 		    my $this_dist = trkpt_dist($prev_trkpt, $next_trkpt);
 		    $do_split = $this_dist >= $delta;
 		} else {
@@ -152,7 +152,7 @@ gpx2gpx - apply operations on GPX files
 
 =head1 SYNOPSIS
 
-    gpx2gpx [--trkseg-split-by-time=...] [--trkseg-split-by-dist=...] src.gpx [--trkcat src2.gpx ...] > dst.gpx
+    gpx2gpx [--trkseg-split-by-time-gap=...] [--trkseg-split-by-dist-gap=...] src.gpx [--trkcat src2.gpx ...] > dst.gpx
 
 =head1 DESCRIPTION
 
@@ -163,13 +163,13 @@ modified GPX to stdout.
 
 =head2 OPERATIONS
 
-=head3 C<--trkseg-split-by-time=I<seconds>>
+=head3 C<--trkseg-split-by-time-gap=I<seconds>>
 
 Split a C<< <trkseg> >> element if the time difference between two
 adjacent C<< <trkpt> >> elements is greater or equal the specified
 number of seconds.
 
-=head3 C<--trkseg-split-by-dist=I<meters>>
+=head3 C<--trkseg-split-by-dist-gap=I<meters>>
 
 Split a C<< <trkseg> >> element if the distance between two adjacent
 C<< <trkpt> >> elements is greater or equal the specified number of
