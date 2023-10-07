@@ -29,7 +29,7 @@ use BBBikeUtil qw(ms2kmh);
 use GPS::GpsmanData;
 use GPS::GpsmanData::VehicleInfo ();
 
-my @wpt_cols = qw(Ident Comment Latitude Longitude Altitude Symbol Accuracy Velocity VelocityGraph);
+my @wpt_cols = qw(Ident Comment DateTime Latitude Longitude Altitude Symbol Accuracy Velocity VelocityGraph);
 my %wpt_col_label = map {
     # Shorten some header labels
     ($_ => ($_ eq 'Symbol' ? 'Sym.' :
