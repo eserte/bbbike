@@ -138,7 +138,7 @@ sub handle_file {
 				     $cat = $_cat;
 				     my $is_directed = $r->[Strassen::CAT] =~ m{;$};
 				     if ($r->[Strassen::CAT] =~ m{^.*?:+(.*)}) { # preserve some category attributes like "projected", "inwork"
-					 my(@attr) = grep { $_ =~ m{^(?:projected|inwork|ignrte);?$} } split /::?/, $1;
+					 my(@attr) = grep { $_ =~ m{^(?:projected|inwork|sign|ignrte);?$} } split /::?/, $1;
 					 if (@attr) {
 					     $cat .= "::" . join("::", @attr);
 					 }
@@ -191,7 +191,7 @@ sub handle_file {
 	     if (!defined $cat) {
 		 if ($r->[Strassen::CAT] =~ m{^\?}) {
 		     $cat = $r->[Strassen::CAT];
-		 } elsif ($r->[Strassen::CAT] =~ m{:(inwork|projected)}) {
+		 } elsif ($r->[Strassen::CAT] =~ m{:(inwork|projected|sign)}) {
 		     $cat = "?::$1";
 		 } elsif ($r->[Strassen::CAT] =~ m{^NL(:|$)}) { # nolighting entries (usually with "NL" category) -> ?::night
 		     $cat = "?::night";
@@ -200,6 +200,13 @@ sub handle_file {
 		 }
 		 if ($r->[Strassen::CAT] =~ m{;$} && $cat !~ m{;$}) {
 		     $cat .= ';';
+		 }
+	     }
+
+	     if ($cat =~ /\?$/) { # no attrib yet
+		 # heuristics from fragezeichen text
+		 if (($add_name||'') =~ /(Umbenennung|umbenannt|neuer Name|neuer Straﬂenname|ausgeschildert|Ausschilderung|Straﬂenschilder)/i) {
+		     $cat .= '::sign';
 		 }
 	     }
 

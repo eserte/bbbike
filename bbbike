@@ -5721,6 +5721,7 @@ sub load_photos {
     $gefaelle_photo      = load_photo($top, 'gefaelle');
     $inwork_photo        = load_photo($top, 'inwork_18');
     $inwork_klein_photo  = load_photo($top, 'inwork_12');
+    $sign_mini_photo     = load_photo($top, 'wegweiser_mini');
     $achtung_photo       = load_photo($top, 'achtung');
     $cal_photo           = load_photo($top, 'cal');
     $cal_questionmark_photo = load_photo($top, 'cal_questionmark');
@@ -7246,6 +7247,9 @@ EOF
 				    $street_addtag = "attrib-inwork";
 				} elsif ($addinfo_hin eq 'danger' && $achtung_photo) {
 				    $street_photo = $achtung_photo;
+				    $street_anchor = "c";
+				} elsif ($addinfo_hin eq 'sign' && $sign_mini_photo) {
+				    $street_photo = $sign_mini_photo;
 				    $street_anchor = "c";
 				}
 			    }
