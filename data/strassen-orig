@@ -1802,7 +1802,7 @@ Angermünder Str. (Prenzlauer Berg)	N 10645,13711 10703,13832
 Fehrbelliner Str. (Mitte, Prenzlauer Berg)	N 10836,13883 10688,13963 10606,14005 10502,14070 10370,14158 10282,14212 10037,14379
 Schönhauser Allee	HH 10741,13685 10779,13793 10836,13883 10895,13961 10908,13978 10933,14122 10938,14159 10910,14488 10893,14705 10884,14952 10881,15047 10883,15129
 Schönhauser Allee	HH 10883,15129 10883,15251 10887,15287
-Schönhauser Allee	HH 10883,15129 10886,15251 10887,15287
+Schönhauser Allee	HH 10883,15129 10884,15152 10886,15251 10887,15287
 Schönhauser Allee	HH 10887,15287 10902,15422 10917,15525 10941,15697 10953,15787 10964,15896 10969,15944 10975,16010 10982,16121 10989,16197 10997,16280 11004,16360 11019,16465 11027,16553
 Choriner Str.	N 10480,13871 10487,13928 10502,14070 10561,14181 10629,14299 10864,14692 10893,14705
 Brunnenstr.	H 10177,13766 10002,14092 9938,14356 9864,14578 9855,14598 9838,14640 9800,14722 9718,14888 9642,15038 9566,15188 9540,15238 9443,15430 9309,15700 9291,15740 9267,15790 9255,15816 9242,15843 9183,15909 9123,15963
@@ -1868,7 +1868,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: osm_watch: way id="977556359" version="11"
+#: osm_watch: way id="977556359" version="13"
 #: last_checked: 2023-09-16
 #: check_frequency: 90d
 #: osm.highway: service
@@ -4823,7 +4823,7 @@ Tomatenweg	N 12389,23097 12434,23109 12485,22940 12500,22895 12506,22870
 Straße 175	N 12532,22858 12532,22902 12526,22972 12510,23016 12582,23041
 Straße 89 (Französisch Buchholz)	N 12532,22858 12589,22948
 Straße 89 (Französisch Buchholz)	N 12608,22943 12699,22971
-Straße 76	N 12766,22668 12532,22858
+Straße 76	N 12766,22668 12657,22751 12532,22858
 Straße 77a	N 12848,22776 12982,22703
 #: oldname: -2014: Margueritenweg (KGA Gravenstein)
 #: ignore_oldname_file: yes
@@ -4873,30 +4873,14 @@ Rosenapfelweg	N 13219,22689 13127,22716 12917,22829
 #: oldname: -2014: Rosenweg (KGA Gravenstein)
 #: ignore_oldname_file: yes
 Silberapfelweg	N 13200,22766 13160,22776 13006,22858
-Gravensteinstr.	N 12185,22465 12229,22457 12257,22452 12366,22434 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12777,22679 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
+Gravensteinstr.	N 12185,22465 12229,22457 12257,22452 12366,22434 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 #: note: sowohl osm als auch google glauben, dass sich hier die "Straße 17" befindet, aber in der Realität ist das nur die Gravensteinstr. mit weiteren Hausnummern
 #: note: Privatstraße
 Gravensteinstr. [Wohngebiet]	N 12694,22570 12738,22546 12781,22593 12738,22630
 # 
-#: next_check_id: ANDERSTREUOBSTWIESE-2021
-#: XXX Teilfläche soll eingezogen werden ---laut Amtsblatt 50/2019 ist das so gut wie die gesamte Straße; könnte was mit den Bauvorhaben "An der Streuobstwiese" zu tun haben
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_50_7633_7832_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_47_5497_5582_online.pdf (als "ehemalig" bezeichnet, keine Grundstücksnummern mehr)
-#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/quartier-an-der-gravensteinstrasse-genehmigt_a323819 (könnte das Bauvorhaben "Kokoni One" was damit zu tun haben? Fertigstellung 2024)
-#: by: https://kokoni.de/kokoni-one/
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kokoni-one-gravensteinstra%C3%9Fe-47.1109/
-#: by: https://www.deutsches-architekturforum.de/thread/13357-ortsteile-im-pankower-norden-kleinere-projekte/?postID=701626#post701626
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5704 (Antrag)
-#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/gebaut-wird-in-holztafelbauweise_a339233 (bis Herbst 2024)
-#: by: https://www.dafmap.de/d/berlin.html?id=7898&mt=4&zoom=17
-#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/haeuser-fuer-kokoni-one-entstehen-in-holztafelbauweise_a358049
-#: last_checked: 2022-10-10 (mapillary)
-#: check_frequency: 360d
-#: next_check: 2024-10-01
 Straße 171	N 12694,22570 12657,22596 12628,22604
 # 
-Straße 76a	N 12777,22679 12883,22615 12920,22597
+Straße 76a	N 12773,22678 12883,22615 12920,22597
 Straße 73 (Französisch Buchholz)	N 12565,22425 12597,22374 12635,22369 12853,22342 13110,22313
 Eddastr.	N 12364,21623 12399,21697
 Eddastr.	N 12415,21757 12433,21880 12450,21984 12467,22147 12488,22305 12489,22428
@@ -9857,10 +9841,10 @@ Grenobler Ring	N 12404,21217 12483,21255
 Grenobler Ring	N 12493,21212 12483,21255 12441,21341 12360,21303
 #: note: Privatstraße
 Bordeauxstr.	N 12323,21479 12411,21515
-Bahnhofstr. (Blankenburg, Französisch Buchholz)	NH 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749 12553,20757 12462,20785 12434,20809 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
+Bahnhofstr. (Blankenburg, Französisch Buchholz)	NH 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749 12553,20757 12462,20785 12434,20809 12332,20962 12298,21015 12257,21079 12202,21158 12166,21208
 Bahnhofstr. (Blankenburg, Französisch Buchholz)	NH 12158,21166 12202,21158
 #: oldname: -20071220: Straße 49
-Ferdinand-Buisson-Str.	N 12337,20954 12459,21010 12562,21055 12619,21079 12629,21083 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
+Ferdinand-Buisson-Str.	N 12332,20962 12458,21013 12562,21055 12619,21079 12629,21083 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	N 12619,21079 12611,21138
 #: osm.highway: service
 (Ferdinand-Buisson-Str. - Pankeweg)	N 12948,21421 12980,21411
@@ -9870,7 +9854,7 @@ Ferdinand-Buisson-Str.	N 12337,20954 12459,21010 12562,21055 12619,21079 12629,2
 Bananenapfelweg	N 12994,21719 13008,21783 13050,21994
 Straße 55	N 12837,21229 12696,21342
 Pankstr. (Französisch Buchholz)	N 12609,20935 12519,20870 12434,20809
-Straße 59 (Französisch Buchholz)	N 12459,21010 12519,20870
+Straße 59 (Französisch Buchholz)	N 12458,21013 12519,20870
 Krugstege	H 13590,20705 13592,20785 13576,20849
 Alt-Blankenburg	H 13576,20849 13677,20873 13909,20928 14050,20955
 Alt-Blankenburg	H 13909,20928 13712,20919 13662,20917 13562,20913 13576,20849

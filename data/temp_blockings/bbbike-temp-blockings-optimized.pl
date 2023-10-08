@@ -2130,20 +2130,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
+#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=749078#post749078
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
-#: last_checked: 2023-07-22
+#: last_checked: 2023-10-08 (daf)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
-	q3::inwork 3828,12697 3981,12709 4071,12720
+	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier nicht) ---	q3::inwork 4071,12720 4124,12721
 ',
          'from' => 1687804758,
          'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer können auf den Gehweg ausweichen, voraussichtlich bis Ende 2023',
+         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, voraussichtlich bis Ende 2023',
          'type' => 'handicap',
          'until' => 1704063599
        },
@@ -4217,7 +4218,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
 #: osm_watch: way id="156800019" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-02
+#: last_checked: 2023-10-08
 #: check_frequency: 30d
 	2::inwork 12173,15040 12095,14888
 ',
@@ -4866,7 +4867,7 @@ Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 152
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-10-03
+         'data' => '#: last_checked: 2023-10-08
 #: next_check: 2023-10-15
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -5031,21 +5032,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
          'type' => 'gesperrt',
          'until' => 1697810400
        },
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
-#: by: https://www.bahninfo-forum.de/read.php?9,774482,776967#msg-776967 (frei ab 31.8.2023?)
-#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023)
-#: source_id: bvg2021:m1#BVG327081_0
-#: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen
-#: next_check: 2023-08-31
-	q4::inwork 10178,20525 10066,20494
-',
-         'from' => 1690196400,
-         'id' => 3865,
-         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1697814000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5054,8 +5041,10 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1352930.php (unklare Instandsetzung)
-#: XXX Ist diese Stelle gemeint? Wann ist der Steg wieder offen?
-#: osm_watch: way id="238032318" version="4"
+#: osm_watch: way id="238032318" version="5"
+#: add_fragezeichen: Wann ist der Steg wieder offen?
+#: last_checked: 2023-10-08
+#: check_frequency: 120d
 	2::inwork 11162,22939 11150,22898
 ',
          'from' => undef,
@@ -5091,10 +5080,12 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
 #: by: https://viz.berlin.de/2023/08/bahnhofstr/
 #: by: https://www.youtube.com/watch?v=Y73X25IYfTM
+#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
 #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023)
 #: last_checked: 2023-09-17 vvv
 #: next_check: 2023-10-09 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -5412,8 +5403,9 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'until' => 1702681199
        },
        {
-         'data' => '#: last_checked: 2023-09-17
+         'data' => '#: osm_watch: way id="381691526" version="7"
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
+#: last_checked: 2023-09-17
 	2::inwork 23305,14914 23318,14847 23297,14772
 ',
          'from' => undef,
@@ -5592,6 +5584,16 @@ bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,
          'text' => 'Handjerystr.: Bauarbeiten zur Realisierung der Fahrradstraße, Sperrungen zwischen 7:00 und 18:00 Uhr möglich, vom 23.10.2023 bis 04.11.2023',
          'type' => 'handicap',
          'until' => 1699138800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.358017,52.424828,09.10.2023,07:00 (nur Kfz-Verkehr, bis 27.10.2023)
+	q4::inwork 7390,2021 7581,2092
+',
+         'from' => 1696741200,
+         'id' => 3935,
+         'text' => 'Preysingstr.: Bauarbeiten zwischen Weygerweg und Malteserstr., evtl. sind auch Radfahrer betroffen, vom 09.10.2023 07:00 bis 27.10.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1698418800
        }
      
 );

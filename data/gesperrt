@@ -568,8 +568,8 @@ Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8187,13472 8295,13531 83
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8236,13495 8167,13457 8098,13419
 Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13472 8098,13419
 Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10883,15129 10883,15251 10887,15287
-Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10883,15129
-Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10886,15251 10887,15287
+Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10884,15152 10883,15129
+Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10884,15152 10886,15251 10887,15287
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21519,5767 21467,5802 21364,5827 21303,5826
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492 21789,5427
@@ -3386,6 +3386,7 @@ weites Drängelgitter	BNP:2:-113:trailer=7 -48977,85035
 weites Drängelgitter	BNP:2:-114:trailer=7 -48996,85026
 Drängelgitter	BNP:3:-236:trailer=10 -53609,82816
 Drängelgitter	BNP:3:-15:trailer=10 3789,18863
+Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,22604
 Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925

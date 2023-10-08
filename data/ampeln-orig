@@ -257,7 +257,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2023-08-27
+#: last_checked: 2023-10-08
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -3305,6 +3305,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 10469,18262
 #: note: Anforderung für linksabbiegende Radfahrer (Pasewalker -> Marien)
 	X 12095,20832
+#: XXX_prog: Ampel gilt nicht auf dem Bürgersteig Richtung Süden
 	X 12038,20530
 	X 13879,13967
 	X 8514,17634
@@ -3761,7 +3762,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
-#: last_checked: 2023-08-02 (mapillary) vvv
+#: last_checked: 2023-10-08 vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

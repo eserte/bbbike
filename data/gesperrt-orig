@@ -932,8 +932,8 @@ Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13
 #: note ^^^
 #: note: Mittelstreifen, U-Bahnhof vvv
 Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10883,15129 10883,15251 10887,15287
-Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10883,15129
-Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10886,15251 10887,15287
+Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10884,15152 10883,15129
+Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10884,15152 10886,15251 10887,15287
 #: note ^^^
 # 
 #: note: Straßenbahntrasse vvv
@@ -3663,6 +3663,24 @@ Drängelgitter	BNP:3::trailer=10 3789,18863
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: ANDERSTREUOBSTWIESE-2021
+#: XXX Teilfläche soll eingezogen werden ---laut Amtsblatt 50/2019 ist das so gut wie die gesamte Straße; könnte was mit den Bauvorhaben "An der Streuobstwiese" zu tun haben
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_50_7633_7832_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_47_5497_5582_online.pdf (als "ehemalig" bezeichnet, keine Grundstücksnummern mehr)
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/quartier-an-der-gravensteinstrasse-genehmigt_a323819 (könnte das Bauvorhaben "Kokoni One" was damit zu tun haben? Fertigstellung 2024)
+#: by: https://kokoni.de/kokoni-one/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kokoni-one-gravensteinstra%C3%9Fe-47.1109/
+#: by: https://www.deutsches-architekturforum.de/thread/13357-ortsteile-im-pankower-norden-kleinere-projekte/?postID=701626#post701626
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5704 (Antrag)
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/gebaut-wird-in-holztafelbauweise_a339233 (bis Herbst 2024)
+#: by: https://www.dafmap.de/d/berlin.html?id=7898&mt=4&zoom=17
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/haeuser-fuer-kokoni-one-entstehen-in-holztafelbauweise_a358049
+#: last_checked: 2023-10-08
+#: check_frequency: 180d
+#: next_check: 2024-10-01
+Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,22604
+# 
 #: last_checked: 2023-09-27
 #: check_frequency: 60d
 #: next_check: 2024-03-31
@@ -4047,7 +4065,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-08
 #: check_frequency: 7d
 #: next_check: 2023-10-31
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563

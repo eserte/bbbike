@@ -962,14 +962,38 @@ neu asphaltiert, breit	RW2; 11976,12595 11988,12546 12028,12519
 	RW2; 12028,12519 12083,12518 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
 # 
 # REMOVED (weitgehend fertig) --- #: next_check_id: KARLMARXALLEE-2018 --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020, mittlerweile Spätsommer 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374 --- #: by: http://www.abendblatt-berlin.de/2018/06/21/karl-marx-allee-wird-fuer-zwei-jahre-zur-grossbaustelle/ --- #: by: http://www.abendblatt-berlin.de/2018/07/15/hier-kann-bald-geradelt-werden/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/zweiter-bauabschnitt-fuer-umbau-der-karl-marx-allee-beginnt_a210106 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php --- #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249 --- #: source_id: 2147342756 --- #: source_id: 2147346300 --- #: source_id: 2147346384 --- #: XXX zurzeit provisorische Radspuren --- #: priority: #A --- #: last_checked: 2020-09-23 --- #: next_check: 2020-09-27
-teilweise mit Grünbeschichtung, sehr breit	RW4;RW4 11976,12595 11678,12727 11635,12745 11589,12768 11289,12908 11226,12945
+# 
+#: note: Schönhauser Allee, Richtung Norden
+	RW1; 10741,13685 10779,13793 10836,13883 10895,13961
+	RW4; 10895,13961 10908,13978
+#: next_check_id: METZER-2023
+#: note: später wieder einsetzen: RW4;
+#: XXX Radspur nicht befahrbar, eine gemeinsame Spur für Radfahrer und Autos
+#: last_checked: 2023-09-25
+#: check_frequency: 90d
+#: next_check: 2025-01-02
+	RW0; 10908,13978 10933,14122
 Gehwegplatten	RW1; 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
 neu asphaltiert	RW2; 10884,14952 10881,15047
-die ersten Meter mit benutzungspflichtiger Radspur	RW1; 10881,15047 10883,15129
-größtenteils neu asphaltiert, allerdings wieder neue Unebenheiten	RW1; 10883,15129 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697
+	RW4; 10881,15047 10883,15129
+neu asphaltiert	RW1; 10883,15129 10884,15152
+Radspur, niedrige Protektion	RW3; 10884,15152 10886,15251 10887,15287 10902,15422
+prvisorische Radspur	RW3; 10902,15422 10917,15525
+größtenteils neu asphaltiert, allerdings wieder neue Unebenheiten	RW1; 10917,15525 10941,15697
 Gehwegplatten	RW2; 10941,15697 10953,15787
+größtenteils neu asphaltiert	RW1; 10953,15787 10964,15896 10969,15944 10975,16010
+größtenteils neu asphaltiert	RW2; 10975,16010 10982,16121
+neu asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
+	RW2; 11004,16360 11019,16465
+	RW1; 11019,16465 11027,16553
+# 
+#: note: Schönhauser Allee, Richtung Süden
+	RW2; 11027,16553 11019,16465
+	RW1; 11019,16465 11004,16360 10997,16280
+neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
+	RW1; 10982,16121 10975,16010 10969,15944 10964,15896 10953,15787
 #: note: allerdings Mosaikpflaster an allen Auffahrten 
 neu asphaltiert	RW1; 10953,15787 10941,15697 10917,15525 10902,15422 10887,15287 10883,15251 10883,15129
 Gehwegplatten	RW2; 10883,15129 10881,15047
@@ -977,15 +1001,10 @@ Gehwegplatten	RW2; 10883,15129 10881,15047
 #: note: allerdings Mosaikpflaster an allen Auffahrten 
 neu asphaltiert	RW2; 10884,14952 10893,14705 10910,14488 10938,14159
 Gehwegplatten	RW2; 10938,14159 10933,14122
-größtenteils neu asphaltiert	RW1; 10953,15787 10964,15896 10969,15944 10975,16010
-	RW1; 10975,16010 10969,15944 10964,15896 10953,15787
-größtenteils neu asphaltiert	RW2; 10975,16010 10982,16121
-	RW1; 10982,16121 10975,16010
-neu asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
-	RW1; 11004,16360 10997,16280
-neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
-	RW2;RW1 11004,16360 11019,16465
-	RW1;RW2 11019,16465 11027,16553
+Gehwegplatten	RW2; 10933,14122 10908,13978
+	RW1; 10908,13978 10895,13961 10836,13883 10779,13793 10741,13685
+# 
+teilweise mit Grünbeschichtung, sehr breit	RW4;RW4 11976,12595 11678,12727 11635,12745 11589,12768 11289,12908 11226,12945
 	RW1; 11027,16553 11021,16605 11008,16729 10992,16829
 	RW2; 10992,16829 10971,16907
 #: note: ist der Asphalt nur provisorisch oder bleibt das so?
@@ -1232,7 +1251,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-10-04 vvv
+#: last_checked: 2023-10-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1542,7 +1561,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11059 (Anfrage)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2023-10-06
+#: last_checked: 2023-10-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1556,7 +1575,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="42"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2023-10-06
+#: last_checked: 2023-10-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2847,7 +2866,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-10-04
+#: last_checked: 2023-10-07
 #: check_frequency: 90d
 #: next_check: 2023-12-15
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -2912,10 +2931,10 @@ Grünbeschichtung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,1244
 #: historical_note: Verbundsteinpflaster, einige Wurzelhebungen; vemutlich 2022 oder 2023 ausgebessert
 asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
-#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
+#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen; mittlerweile keine Einbahnstraße mehr, Radweg wird wiederhergestellt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2023-09-25
-#: check_frequency: 45d
+#: last_checked: 2023-10-08
+#: check_frequency: 7d
 	RW0; 13945,13564 14052,13389
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen --- #: XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt --- #: last_checked: 2023-04-18 --- #: check_frequency: 14d --- #: next_check: 2021-12-31
 #: historical_note: früher: Verbundsteinpflaster, einige Wurzelhebungen
@@ -3022,16 +3041,6 @@ mit grüner Leitlinie	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 #: by: mrt:
 #: confirmed_by: srt
 Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10170,14905 10235,14934 10297,14961 10354,14987
-	RW1;RW1 10741,13685 10779,13793 10836,13883 10895,13961
-	RW4;RW1 10895,13961 10908,13978
-#: next_check_id: METZER-2023
-#: note: später wieder einsetzen: RW4;
-#: XXX Radspur nicht befahrbar, eine gemeinsame Spur für Radfahrer und Autos
-#: last_checked: 2023-09-25
-#: check_frequency: 90d
-#: next_check: 2025-01-02
-	RW0; 10908,13978 10933,14122
-Gehwegplatten	RW2; 10933,14122 10908,13978
 	RW1;RW1 10431,12709 10373,12776 10360,12793 10308,12859
 	RW3; 10923,13156 11033,13086 11139,13008
 #: note: die letzten Meter vor der Ampel mit Radwegschild
@@ -3122,7 +3131,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2023-09-25 vvv
+#: last_checked: 2023-10-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4418,7 +4427,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2023-10-06 vvv
+#: last_checked: 2023-10-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-01-15 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5917,7 +5926,8 @@ Verbundsteinpflaster, OK	RW1; 13531,4152 13595,4232 13632,4304 13666,4410 13671,
 	RW6;RW6 11317,14564 11247,14578
 #: by: wosch vvv
 #: confirmed_by: srt vvv
-	RW2;RW4 10066,20494 10088,20570
+Gehwegplatten, teilweise nur aufgemalt	RW2; 10066,20494 10088,20570
+	RW4; 10088,20570 10066,20494
 	RW4;RW4 10088,20570 10114,20732 10117,20748 10138,20840
 #: confirmed_by ^^^
 #: by ^^^
@@ -7227,7 +7237,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-10-02 vvv
+#: last_checked: 2023-10-08 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7327,7 +7337,7 @@ asphaltiertes Straßenbahnkap	RW2; 10182,19746 10167,19797
 	RW4; 10167,19797 10156,19860 10134,19981 10120,20064 10104,20092 10095,20108 10078,20140 10072,20188
 asphaltiertes Straßenbahnkap	RW2; 10072,20188 10069,20254
 	RW4; 10069,20254 10066,20323 10064,20437
-	RW2; 10064,20437 10066,20494
+Verbundsteinpflaster	RW2; 10064,20437 10066,20494
 	RW4; 10066,20494 10064,20437 10066,20323 10069,20254
 asphaltiertes Straßenbahnkap	RW2; 10069,20254 10072,20188
 	RW4; 10072,20188 10078,20140 10095,20108 10104,20092 10120,20064 10134,19981 10156,19860
@@ -7696,7 +7706,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2023-10-06
+#: last_checked: 2023-10-08
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7721,7 +7731,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2023-10-06 vvv
+#: last_checked: 2023-10-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-01-15 vvv
 #: osm_watch: way id="335479077" version="23"

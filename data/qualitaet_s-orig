@@ -514,7 +514,7 @@ Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322 12097,16263 12090,16199
 #: corrected_by: Jörg Schwarzer und Gunnar Purtz (mittlerweile asphaltiert, vorher fester Sandweg, Q2):
 #: confirmed_by: srt
-Straße 59: Asphalt	Q0 12459,21010 12519,20870
+Straße 59: Asphalt	Q0 12458,21013 12519,20870
 #: corrected_by: srt (früher mäßiger Asphalt, jetzt vielleicht neu gemacht)
 Charlottenburger Str.: Asphalt	Q0 13712,16089 13642,16118 13479,16182 13445,16198 13410,16214
 #: confirmed_by: srt
@@ -1118,7 +1118,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-08
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -9192,13 +9192,13 @@ Straße 175: Asphalt	Q0 12526,22972 12510,23016 12582,23041
 Straße 89 (Französisch Buchholz): Asphalt	Q0 12532,22858 12589,22948
 Straße 89 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12699,22971
 #: by: mapillary
-Straße 76: Asphalt	Q0 12766,22668 12532,22858
+Straße 76: Asphalt	Q0 12766,22668 12657,22751 12532,22858
 #: note: früher (bis ca. 2013/2014) unbefestigt
 Straße 77a: Asphalt	Q0 12848,22776 12982,22703
 Prinzenapfelweg: unbefestigte Straße	Q2 12982,22703 13088,22646 13202,22605
-Karower Weg: unbefestigte Straße	Q2- 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
+Herrgottsapfelweg: unbefestigte Straße	Q2- 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
 Edelapfelweg: unbefestigte Straße	Q2 12942,22521 12920,22597
-Straße 76a: Asphalt	Q0 12777,22679 12883,22615 12920,22597
+Straße 76a: Asphalt	Q0 12773,22678 12883,22615 12920,22597
 Straße 73 (Französisch Buchholz): Asphalt	Q0 12565,22425 12597,22374 12635,22369 12853,22342
 Straße 73 (Französisch Buchholz): unbefestigte Straße	Q2 12853,22342 13110,22313
 Eddastr.: Asphalt	Q0 12475,22428 12473,22801
@@ -9218,7 +9218,7 @@ Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
 Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straße 44 (Französisch Buchholz): Asphalt	Q0 12211,20486 12112,20562
-Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12619,21079 12629,21083
+Ferdinand-Buisson-Str.: Asphalt	Q0 12332,20962 12458,21013 12562,21055 12619,21079 12629,21083
 # 
 #: XXX Beim Ausbau hier hier asphaltiert. Außerdem: Einmündungsbereich in die Ludwig-Quidde-Str. wird umgestaltet, siehe Blatt 2 der Planung
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strassen-sollen-sicherer-werden_a178577 (Planung nicht vor Mitte 2019 fertig)
@@ -9228,7 +9228,7 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12619,210
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-2.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-3.pdf
 #: osm_watch: way id="23121641" version="14"
-#: last_checked: 2022-10-16 (mapillary)
+#: last_checked: 2023-10-08
 #: check_frequency: 270d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229
 # 
@@ -9238,7 +9238,7 @@ Bananenapfelweg: unbefestigte Straße	Q2 12994,21719 13008,21783 13050,21994
 # 
 #: XXX wird hier die Fahrbahnoberfläche verbessert werden?
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: last_checked: 2023-10-16 (mapillary)
+#: last_checked: 2023-10-08
 #: check_frequency: 720d
 Straße 55: schlechtes Kopfsteinpflaster	Q3 12837,21229 12696,21342
 # 
@@ -13285,11 +13285,14 @@ Havelwerke - Zitadellenweg: Kleinsteinpflaster	Q2 -1985,14916 -2002,14861 -2006,
 (Zitadellenpark - Zitadellenweg): Verbundsteinpflaster	Q1+ -2193,14799 -2127,14798
 (Zitadellenpark - Zitadellenweg): Asphalt	Q0 -2127,14798 -2006,14811
 # 
-Uhlandstr.: Asphalt mit einigen leichten Schäden	Q0- 9120,20015 9255,20038 9372,20065 9754,20134 10072,20188
+Uhlandstr.: Asphalt mit einigen leichten Schäden	Q0- 9120,20015 9255,20038 9372,20065 9754,20134
+Uhlandstr.: Asphalt mit einigen Schäden	Q1+ 9754,20134 10072,20188
 # 
 (Straßenbahnhaltestelle - Lea-Grundig-Str): Verbundsteinpflaster	Q1 21036,16286 21065,16295 21070,16293
 # 
-Prenzlauer Promenade [Nebenfahrbahn]: mäßiger Beton	Q1- 11843,17517 11891,17240 11951,16914 11993,16862
+Prenzlauer Promenade [Nebenfahrbahn]: Asphalt, leichte Schäden	Q0- 11843,17517 11891,17240
+Prenzlauer Promenade [Nebenfahrbahn]: mäßiger Beton	Q1- 11891,17240 11951,16914
+Prenzlauer Promenade [Nebenfahrbahn]: Asphalt	Q0 11951,16914 11993,16862
 # 
 Alte Potsdamer Str.: Betonpflaster	Q0- 8389,11378 8481,11447 8479,11493
 # 
@@ -15181,7 +15184,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: osm_watch: way id="4764684" version="29"
 #: osm_watch: way id="26790073" version="18"
-#: last_checked: 2023-09-15 (mapillary)
+#: last_checked: 2023-10-08
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^
@@ -18734,6 +18737,7 @@ Waldhüterpfad: Kopfsteinpflaster, uneben	Q2 510,4202 371,4453 301,4643
 Goldenes Horn: guter Asphalt	Q0 10562,3754 10563,3767 10586,4039 10601,4185 10614,4314
 # 
 #: by: Rüdiger Steinke:
+#: confirmed_by: srt
 Aubertstr.: guter Asphalt	Q0 11025,22504 11188,22742 11240,22803 11278,22848
 # 
 #: by: ladzik:
@@ -25781,7 +25785,7 @@ Gravensteinstr.: Kopfsteinpflaster	Q3; 12257,22452 12366,22434
 Gravensteinstr.: guter Asphalt	Q0; 12366,22434 12257,22452
 #: confirmed_by: Andreas R.
 #: confirmed_by: srt
-Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12777,22679 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
+Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 Gravensteinstr.: Kopfsteinpflaster	Q3 12366,22434 12397,22429
 # 
 #: by: Andreas R.
@@ -31654,6 +31658,7 @@ Curtiusstr. [Stichstraße]: Kopfsteinpflaster	Q2 2965,3823 2915,3905
 # 
 #: by: mapillary, osm: vvv
 (entlang der Alten Erpe): Parkweg	Q1- 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
+#: confirmed_by: srt
 (Rosenthaler Weg - Aubertstr.): Asphalt	Q0 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): Asphalt	Q0 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
 (Weg im erweiterten Mauerpark): Asphalt	Q0 10235,14934 10215,14977 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024
@@ -32607,4 +32612,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 21358,-834
 Einmündungsbereich mit Kopfsteinpflaster	Q2 21403,-859
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21487,-912
 Einmündungsbereich asphaltiert	Q0 21758,-1707
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 9878,19741
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 12397,22429
+Einmündungsbereich asphaltiert	Q0 12489,22428
 #: ignore ^^^

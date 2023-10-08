@@ -314,7 +314,7 @@ Marchlewskistr.: Kopfsteinpflaster	Q2 12972,12361 12997,12361 13019,12316
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
 Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322 12097,16263 12090,16199
-Straﬂe 59: Asphalt	Q0 12459,21010 12519,20870
+Straﬂe 59: Asphalt	Q0 12458,21013 12519,20870
 Charlottenburger Str.: Asphalt	Q0 13712,16089 13642,16118 13479,16182 13445,16198 13410,16214
 Charlottenburger Str.: teilweise m‰ﬂiger Asphalt	Q1 13410,16214 13286,16267 13033,16387
 Charlottenburger Str.: Asphalt	Q0 13033,16387 12919,16438 12798,16493
@@ -7692,12 +7692,12 @@ Straﬂe 175: unbefestigte Straﬂe	Q2 12532,22858 12532,22902 12526,22972
 Straﬂe 175: Asphalt	Q0 12526,22972 12510,23016 12582,23041
 Straﬂe 89 (Franzˆsisch Buchholz): Asphalt	Q0 12532,22858 12589,22948
 Straﬂe 89 (Franzˆsisch Buchholz): unbefestigte Straﬂe	Q2 12608,22943 12699,22971
-Straﬂe 76: Asphalt	Q0 12766,22668 12532,22858
+Straﬂe 76: Asphalt	Q0 12766,22668 12657,22751 12532,22858
 Straﬂe 77a: Asphalt	Q0 12848,22776 12982,22703
 Prinzenapfelweg: unbefestigte Straﬂe	Q2 12982,22703 13088,22646 13202,22605
-Karower Weg: unbefestigte Straﬂe	Q2 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
+Herrgottsapfelweg: unbefestigte Straﬂe	Q2 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
 Edelapfelweg: unbefestigte Straﬂe	Q2 12942,22521 12920,22597
-Straﬂe 76a: Asphalt	Q0 12777,22679 12883,22615 12920,22597
+Straﬂe 76a: Asphalt	Q0 12773,22678 12883,22615 12920,22597
 Straﬂe 73 (Franzˆsisch Buchholz): Asphalt	Q0 12565,22425 12597,22374 12635,22369 12853,22342
 Straﬂe 73 (Franzˆsisch Buchholz): unbefestigte Straﬂe	Q2 12853,22342 13110,22313
 Eddastr.: Asphalt	Q0 12475,22428 12473,22801
@@ -7716,7 +7716,7 @@ Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
 Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straﬂe 44 (Franzˆsisch Buchholz): Asphalt	Q0 12211,20486 12112,20562
-Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12619,21079 12629,21083
+Ferdinand-Buisson-Str.: Asphalt	Q0 12332,20962 12458,21013 12562,21055 12619,21079 12629,21083
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229
 Ferdinand-Buisson-Str.: unbefestigte Straﬂe	Q2 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.): asphaltiert	Q0 12619,21079 12611,21138
@@ -11363,9 +11363,12 @@ Havelwerke - Zitadellenweg: Kleinsteinpflaster	Q2 -1985,14916 -2002,14861 -2006,
 (Zitadellenpark - Zitadellenweg): Asphalt	Q0 -2364,14812 -2340,14834 -2299,14842 -2274,14862 -2246,14857 -2213,14855 -2208,14811 -2193,14799
 (Zitadellenpark - Zitadellenweg): Verbundsteinpflaster	Q1 -2193,14799 -2127,14798
 (Zitadellenpark - Zitadellenweg): Asphalt	Q0 -2127,14798 -2006,14811
-Uhlandstr.: Asphalt mit einigen leichten Sch‰den	Q0 9120,20015 9255,20038 9372,20065 9754,20134 10072,20188
+Uhlandstr.: Asphalt mit einigen leichten Sch‰den	Q0 9120,20015 9255,20038 9372,20065 9754,20134
+Uhlandstr.: Asphalt mit einigen Sch‰den	Q1 9754,20134 10072,20188
 (Straﬂenbahnhaltestelle - Lea-Grundig-Str): Verbundsteinpflaster	Q1 21036,16286 21065,16295 21070,16293
-Prenzlauer Promenade [Nebenfahrbahn]: m‰ﬂiger Beton	Q1 11843,17517 11891,17240 11951,16914 11993,16862
+Prenzlauer Promenade [Nebenfahrbahn]: Asphalt, leichte Sch‰den	Q0 11843,17517 11891,17240
+Prenzlauer Promenade [Nebenfahrbahn]: m‰ﬂiger Beton	Q1 11891,17240 11951,16914
+Prenzlauer Promenade [Nebenfahrbahn]: Asphalt	Q0 11951,16914 11993,16862
 Alte Potsdamer Str.: Betonpflaster	Q0 8389,11378 8481,11447 8479,11493
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1; 5243,18162 5301,18447 5324,18560 5345,18675
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1; 5324,18560 5301,18447 5243,18162 5225,18070
@@ -15840,7 +15843,7 @@ Matthieustr.: guter Asphalt	Q0 11235,22590 11176,22526 11108,22445
 (Kniprodestr./Michelangelostr. - Puccinistr.): wassergebundene Decke, herutergefahrener Belag	Q2 13973,15259 13905,15306
 Gravensteinstr.: Kopfsteinpflaster	Q3; 12257,22452 12366,22434
 Gravensteinstr.: guter Asphalt	Q0; 12366,22434 12257,22452
-Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12777,22679 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
+Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 Gravensteinstr.: Kopfsteinpflaster	Q3 12366,22434 12397,22429
 Gravensteinstr.: Kopfsteinpflaster	Q3; 12185,22465 12229,22457
 Gravensteinstr.: Kopfsteinpflaster	Q3 12229,22457 12257,22452
