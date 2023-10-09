@@ -836,12 +836,9 @@ Verbundsteinpflaster	RW1; 5295,17344 5411,17242
 alte Gehwegplatten, mittelhoher Bord gegen Gehweg	RW1; 5411,17242 5490,17173
 	RW4;RW4 -168,16269 130,17187
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 130,17187 149,17239 255,17528 511,18340
-	RW3; 511,18340 560,18494
 # REMOVED (realisiert) --- #: next_check_id: BERNAUERSTR-2019 --- #: XXX während der Bauarbeiten Zweirichtungsradweg, danach vielleicht Radspuren? --- #: source_id: 2147342114 (bis Mitte September 2019) --- #: last_checked: 2019-08-17 --- #: next_check: 2019-09-13
-	RW4?;RW4 560,18494 847,18738
-	RW4?;RW4 847,18738 929,18741
-	RW4?;RW3 929,18741 1229,18750
-	RW3; 560,18494 511,18340
+	RW4;RW4 511,18340 560,18494 847,18738 929,18741
+	RW4;RW3 929,18741 1229,18750
 Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenreich	RW1; 511,18340 255,17528 149,17239
 	RW4; 149,17239 130,17187
 	RW1; 8057,14876 7911,15008
@@ -1648,6 +1645,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 	RW2;RW2 22358,5918 22431,6068
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023)
 #: last_checked: 2023-09-17 vvv
 #: check_frequency: 120d vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -6714,7 +6712,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2023-08-28
+#: last_checked: 2023-10-09
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435

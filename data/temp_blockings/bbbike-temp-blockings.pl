@@ -28530,7 +28530,7 @@ EOF
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: last_checked: 2023-08-28
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
-#: last_checked: 2023-08-28
+#: last_checked: 2023-10-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -32660,7 +32660,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Ende September 2023: keine Sperrung)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Anfang Oktober 2023: keine Sperrung)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32669,7 +32669,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="29"
 #: osm_watch: way id="165832806" version="33"
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-09
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
 # REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
@@ -34956,7 +34956,9 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
+#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-101023/
 #: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023)
+#: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023)
 #: also_indoor: traffic (none)
 #: last_checked: 2023-08-05
 # REMOVED --- #: check_frequency: 90d
@@ -36778,7 +36780,7 @@ EOF
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: osm_watch: way id="1094113747" version="1"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-20
+#: last_checked: 2023-10-08 (daf)
 #: check_frequency: 180d
 #: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
@@ -38238,9 +38240,9 @@ EOF
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: last_checked: 2023-09-17
+#: last_checked: 2023-10-09
 #: check_frequency: 120d
-#: next_check: 2023-10-09
+# REMOVED --- #: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -38801,7 +38803,7 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: osm_watch: way id="54269295" version="15"
-#: last_checked: 2023-08-28 vvv
+#: last_checked: 2023-10-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-04 vvv
 # REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
@@ -39253,7 +39255,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-09-24 vvv
+#: last_checked: 2023-10-09 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39309,7 +39311,7 @@ EOF
      },
      { from  => 1686407303, # 2023-06-10 16:28
        until => 1715378400, # 2024-05-11 00:00
-       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
@@ -39318,11 +39320,15 @@ EOF
 #: source_id: bvg2021:190#BVG320324_0
 #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
 #: also_indoor: traffic (G)
-#: last_checked: 2023-06-10
-#: check_frequency: 120d
-#: next_check: 2024-05-10
-#: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork 20947,9999 20703,10004
+#: last_checked: 2023-10-09 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2024-05-10 vvv
+Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
+#: XXX_prog eigentlich q3+
+Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1686409892, # 2023-06-10 17:11
@@ -39675,7 +39681,7 @@ EOF
      { from  => 1695149689, # 1690581600, # 2023-07-29 00:00
        until => $isodate2epoch->("2025-08-31 23:59:59"), # 1734822000, # 2024-12-22 00:00
        prewarn_days => 16,
-       text  => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 7 bis 18 Uhr, Start der Bauarbeiten voraussichtlich am 5.10.2023, Ende der Bauarbeiten am 31.08.2025', # (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
+       text  => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Start der Bauarbeiten voraussichtlich am 5.10.2023, Ende der Bauarbeiten am 31.08.2025', # (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -40090,7 +40096,8 @@ EOF
      },
      { from  => $isodate2epoch->("2023-08-27 00:00:00"),
        until => $isodate2epoch->("2023-10-09 18:00:00"),
-       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
+       text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
+# ursprünglich: text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -40103,17 +40110,19 @@ EOF
 #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
 #: source_id: bvg2021:63#BVG326792_0
-#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023)
-#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023)
-#: last_checked: 2023-09-17 vvv
-#: next_check: 2023-10-09 vvv
-Bahnbrücke	q4::inwork 22431,6068 22467,6135
-Am Bahndamm	q3::inwork 22467,6135 22365,6149
-Elcknerplatz	q3::inwork; 22431,6068 22478,6048
+#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
+#: last_checked: 2023-10-09 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2023-10-09 vvv
+# REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
+# REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
+# REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
 # REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
 Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
 Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -40139,7 +40148,7 @@ EOF
 #: confirmed_by: srt
 #: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt; laut Aushang Vollsperrung für 6 bis 9 Monate
 #: priority: #A vvv
-#: last_checked: 2023-08-28 vvv
+#: last_checked: 2023-10-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-02-29 vvv
 #: osm_watch: way id="217297577" version="8"
@@ -40171,7 +40180,7 @@ EOF
 #: source_id: bvg2021:240#BVG326189_0
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-09-12
+#: last_checked: 2023-10-09
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -40603,12 +40612,13 @@ EOF
 	q4::inwork 24530,12296 24434,12402 24354,12510
 EOF
      },
-     { from  => 1695528000, # 2023-09-24 06:00
-       until => 1695916800, # 2023-09-28 18:00
-       text  => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 25.09.2023 06:00 bis 28.09.2023 18:00',
+     { from  => $isodate2epoch->("2023-10-09 06:00:00"), # 1695528000, # 2023-09-24 06:00
+       until => $isodate2epoch->("2023-10-12 18:00:00"), # 1695916800, # 2023-09-28 18:00
+       text  => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 09.10.2023 06:00 bis 12.10.2023 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
+#: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023)
 	q4::inwork 11963,8074 12147,8117
 EOF
      },
@@ -40658,6 +40668,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.432818,52.481758,04.10.2023,08:00',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
 	q3::inwork 12349,8464 12494,8501
 EOF
@@ -40722,6 +40733,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.358017,52.424828,09.10.2023,07:00 (nur Kfz-Verkehr, bis 27.10.2023)
 	q4::inwork 7390,2021 7581,2092
+EOF
+     },
+     { from  => 1696827600, # 2023-10-09 07:00
+       until => 1699113600, # 2023-11-04 17:00
+       text  => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 04.11.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.432538,52.605013,10.10.2023,07:00',
+       data  => <<EOF,
+	q4::inwork; 12063,21991 12122,22185 12165,22323
 EOF
      },
     );
