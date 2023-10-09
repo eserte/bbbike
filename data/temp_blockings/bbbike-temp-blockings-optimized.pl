@@ -5079,7 +5079,38 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
+#: by: https://viz.berlin.de/2023/08/bahnhofstr/
+#: by: https://www.youtube.com/watch?v=Y73X25IYfTM
+#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
+#: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
+#: source_id: bvg2021:269#BVG326513_0
+#: source_id: bvg2021:63#BVG326792_0
+#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
+#: last_checked: 2023-10-09 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2023-10-09 vvv
+# REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
+# REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
+# REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
+# REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
+Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
+Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1693087200,
+         'id' => 3881,
+         'text' => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: next_check_id: KAULSDORFER-2023
@@ -5121,6 +5152,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
 #: also_indoor: traffic (H[ungenau],G,W,B)
+#: osm_watch: way id="198589911" version="16"
 #: note: gesperrter Bereich ist etwa 90m lang
 #: last_checked: 2023-10-09
 #: next_check: 2023-11-30

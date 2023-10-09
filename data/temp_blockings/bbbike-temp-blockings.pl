@@ -40095,7 +40095,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 EOF
      },
      { from  => $isodate2epoch->("2023-08-27 00:00:00"),
-       until => $isodate2epoch->("2023-10-09 18:00:00"),
+       until => undef, # $isodate2epoch->("2023-10-09 18:00:00"),
        text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
 # ursprünglich: text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
        type  => 'gesperrt',
@@ -40179,6 +40179,7 @@ EOF
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
 #: also_indoor: traffic (H[ungenau],G,W,B)
+#: osm_watch: way id="198589911" version="16"
 #: note: gesperrter Bereich ist etwa 90m lang
 #: last_checked: 2023-10-09
 #: next_check: 2023-11-30
