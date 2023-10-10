@@ -28429,7 +28429,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-09-28
+#: last_checked: 2023-10-10
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -34957,7 +34957,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-101023/
-#: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023)
+#: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023) (inaktiv)
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023)
 #: also_indoor: traffic (none)
 #: last_checked: 2023-08-05
@@ -37543,8 +37543,8 @@ EOF
 EOF
      },
      { from  => 1668540097, # 2022-11-15 20:21
-       until => $isodate2epoch->("2023-09-30 17:00:00"), # 1691445599, # 2023-08-07 23:59
-       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 30.09.2023',
+       until => $isodate2epoch->("2024-05-07 17:00:00"), # 1691445599, # 2023-08-07 23:59
+       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 07.05.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENFLIESSER-2023
@@ -37553,6 +37553,8 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
+#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024)
+#: also_indoor: traffic (H,B)
 #: note: Fahrbahn wird neu gemacht
 	q4::inwork 2112,26066 2207,26090 2293,26111
 #: note: Vorbereitungen für Neubau der Fahrbahn
@@ -40056,12 +40058,13 @@ EOF
 	q4::inwork 9417,6063 9339,6076 9321,6079 9212,6096
 EOF
      },
-     { from  => 1691298000, # 2023-08-06 07:00
-       until => 1692972000, # 2023-08-25 16:00
-       text  => 'Babelsberger Str.: Bauarbeiten zwischen Badensche Str. und Berliner Str., Fahrbahn gesperrt, vom 07.08.2023 07:00 bis 25.08.2023 16:00',
+     { from  => $isodate2epoch->("2023-10-09 00:00:00"), # 1691298000, # 2023-08-06 07:00
+       until => $isodate2epoch->("2023-10-16 17:00:00"), # 1692972000, # 2023-08-25 16:00
+       text  => 'Babelsberger Str.: Bauarbeiten zwischen Badensche Str. und Berliner Str., Fahrbahn gesperrt, vom 10.10.2023 07:00 bis 16.10.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.33522,52.4859,07.08.2023,07:00', # inaktiv
        data  => <<EOF,
+#: source_id: viz2021:13.33522,52.4859,07.08.2023,07:00 (inaktiv)
+#: source_id: viz2021:13.335186,52.487058,10.10.2023,07:00 (bis 16.10.2023)
 	q4::inwork 5782,8828 5783,9060
 EOF
      },
@@ -40109,7 +40112,7 @@ EOF
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
 #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id: bvg2021:269#BVG326513_0
-#: source_id: bvg2021:63#BVG326792_0
+#: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
 #: last_checked: 2023-10-09 vvv
