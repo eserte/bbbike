@@ -39,9 +39,9 @@ our $VERSION = '0.06';
 
 my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
-my $osm_api_url = 'https://www.openstreetmap.org/api/0.6';
+my $osm_api_url = 'https://api.openstreetmap.org/api/0.6';
 my $osm_url = 'https://www.openstreetmap.org';
-my $overpass_api_url = 'http://overpass-api.de/api/interpreter';
+my $overpass_api_url = 'https://overpass-api.de/api/interpreter';
 
 my $show_unchanged;
 my $quiet;
