@@ -36,7 +36,7 @@ GetOptions(
 	  )
     or die "usage: $0 [--no-pager] osmobject/id\n";
 
-my $api_root_url = "https://www.openstreetmap.org/api/0.6";
+my $api_root_url = "https://api.openstreetmap.org/api/0.6";
 
 my $elem = shift
     or die qq{Please specify osm element (e.g. "way/12345")\n};
