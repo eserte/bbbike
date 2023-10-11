@@ -2760,6 +2760,8 @@ Neptunstr.: Fuﬂg‰nger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 #: XXX_prog BS nach Osten hin
 #: note: Parkl¸cke ist durch Parkverbotsschilder gesichert
 M¸hsamstr.: Bordstein	q2 13232,12628 13273,12649
+#: note: Gr¸nanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol; fr¸her kein Eintrag
+Auerdreieck: einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13232,12628 13091,12563
 (Neuf‰hrer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
 # REMOVED (nach dem Neubau breit genug) --- (neben dem U-Bahn-Viadukt): Fuﬂg‰nger	q1 7906,10098 7928,10094 8011,10085
 (Dennewitzstr., hinterer Weg): Fuﬂg‰nger	q1 8011,10085 8023,10106 8074,10292 8058,10306
@@ -3037,6 +3039,7 @@ Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,1539
 (Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5989,15390
 (Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6184,15162
 (Wolfshorst - Spektewiesen): einige Fuﬂg‰nger, eng	q2 -6573,15254 -6584,15311
+#: note: Gr¸nanlagenschild ohne Zusatzschilder
 (am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 (Ziegelhof - Burgwallgraben): Fuﬂg‰nger	q2 -3651,13476 -3654,13293
 (Burgwallgraben - Krowelstr.): einige Fuﬂg‰nger, Rampe	q2 -3457,13028 -3458,13006 -3457,12960
@@ -4597,6 +4600,13 @@ Wickenhagenweg: Gr¸nanlage, einige Fuﬂg‰nger	q3 -6137,864 -6125,838
 # 
 Singerstr.: Fuﬂg‰ngerzone f¸r Radfahrer frei, hˆherer Fuﬂg‰ngerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
+#: note: Gr¸nanlagenschild ohne Zusatzschilder
+Staakener Feldstr.: einige Fuﬂg‰nger	q1 -7647,13985 -7716,14031
+# 
+(Gl¸hw¸rmchenweg - Pionierstr.): einige Fuﬂg‰nger	q1 -6048,16292 -5959,16235 -5924,16458
+# 
+(Seydlitzstr. - Lehrter Str.): eng, wenn BVG-Busse hier parken	q3 7613,13517 7651,13447
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -4897,7 +4907,8 @@ H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (S¸dpark): Fuﬂg‰nger	q1 -4106,12100 -4063,12104
 (S¸dpark): Fuﬂg‰nger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
 (S¸dpark): Fuﬂg‰nger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12371
-(Gl¸hw¸rmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
+#: note: Gr¸nanlagenschild ohne Zusatzschilder
+(Gl¸hw¸rmchenweg - Pionierstr.): einige Fuﬂg‰nger	q1 -6014,16485 -6048,16292
 Schloﬂpark Charlottenburg: Fuﬂg‰nger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 Spreeweg: eng und un¸bersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
 LefËvrestr.: enge Straﬂe	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
@@ -5117,7 +5128,9 @@ Siemenssteg: Fuﬂg‰nger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 41
 #: note: Gr¸nanlagenschild mit "Radfahren verboten"-Zusatzschild am nordˆstlichen Ende
 #: note: fr¸her q2
 (M¸llerstr. - Gerichtstr.): Fuﬂg‰nger	q3 7607,15282 7723,15417
-(s¸dliches Spreeufer): Fuﬂg‰nger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5770,12346 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
+(s¸dliches Spreeufer): Fuﬂg‰nger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5770,12346 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887
+#: note: unter der Br¸cke ausgeschildert: Gehweg, Radfahrer frei
+(s¸dliches Spreeufer): Fuﬂg‰nger	q2 6123,12887 6182,12900
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307
@@ -5126,14 +5139,14 @@ Siemenssteg: Fuﬂg‰nger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 41
 #: note: Gr¸nanlagenschild ohne weitere Zusatzschilder bzgl. Radfahren
 (Hansa-Ufer - nˆrdliches Spreeufer): Fuﬂg‰nger	q2 5657,12339 5607,12307
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
-Machandelweg: Fuﬂg‰nger, schmal	q2 -248,12718 -217,12778 -187,12830
+Machandelweg: Fuﬂg‰nger, schmal	q2 -248,12718 -217,12778 -190,12825
 Merowingerweg: Fuﬂg‰nger, schmal	q2 1041,11169 1070,11226
 Wandalenallee: Fuﬂg‰nger	q1 736,11206 711,11199
 Flinsberger Platz: Fuﬂg‰nger	q1 2919,8582 2966,8586
 #: corrected_by: srt (added "Bordsteine", q1 -> q3, moved from qualitaet entry)
 #: XXX_prog: BS (wahrscheinlich auf beiden Seiten, da Plural, ansonsten q1)
 (Wacholderweg - Rominterallee): Fuﬂg‰nger, Bordsteine	q3 -365,12788 -408,12766
-(Machandelweg - Rossitter Weg): Fuﬂg‰nger	q2 -45,12243 -76,12236 -107,12220
+(Machandelweg - Rossitter Weg): Fuﬂg‰nger	q2 -10,12256 -76,12236 -107,12220
 Frauenburger Pfad: Fuﬂg‰nger, schmal	q2 475,10882 572,10876 677,10870 775,10864
 Willenberger Pfad: Fuﬂg‰nger, schmal	q2 569,10738 673,10727
 (Uferweg Hubertussee): Fuﬂg‰nger, schmal	q3 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1834,8893 1809,8916 1761,8936
@@ -5142,7 +5155,7 @@ Willenberger Pfad: Fuﬂg‰nger, schmal	q2 569,10738 673,10727
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -103,12841 -45,12778 23,12739
 #: XXX_prog BS (auf beiden Seiten) (ansonsten w‰re es q3)
-(Machandelweg - Reichsstr.): Fuﬂg‰nger, eng, Bordsteine	q4 -187,12830 -166,12849 -103,12841 -85,12852
+(Machandelweg - Reichsstr.): Fuﬂg‰nger, eng, Bordsteine	q4 -190,12825 -166,12849 -103,12841 -85,12852
 #: XXX_prog BS (auf beiden Seiten) (ansonsten w‰re es q1) (mittlerweile gibt es eine kurze "Asphaltrampe" am nordˆstlichen Ende)
 #: note: fr¸her "q2", rechtliche Lage unklar
 (zur Karl-Marx-Allee): Bordsteine, Fuﬂg‰nger	q3 11367,12940 11289,12908

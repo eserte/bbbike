@@ -986,6 +986,7 @@ Pichelsdorfer Str.	1 -3824,13350 -3802,13303
 Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 (Vergissmeinnichtweg - Weidenkätzchenweg)	1s 21503,114 21435,99
 (Weidenkätzchenweg - Buschwindröschenweg)	1s 21435,99 21367,84
+(Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1237,6 +1238,8 @@ Markt (Rheinsberg)	1s -25838,76634 -25853,76534 -25842,76514 -25801,76494
 Kuhstr. (Wittstock)	1s -53455,82926 -53556,82888
 Burgstr. (Wittstock)	1s -53556,82888 -53717,83024 -53765,83128
 Poststr. (Wittstock)	1s -53717,83024 -53602,83076
+Kirchstr. (Falkensee)	1s -10082,17402 -10046,17514
+Freimuthstr. (Falkensee)	1s -10354,17616 -10357,17603 -10258,17508
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -1617,6 +1620,9 @@ Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross::ignrt
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3214,16561 -3046,16548 -3043,16601
 Mittelstreifen	3nocross::ignrte -3029,16823 -3023,16925 -3018,16974
+Mittelstreifen	3nocross::ignrte -3009,17090 -3006,17128 -2959,17507
+Streitstr. -> Cautiusstr.: Mittelstreifen	3::igndisp -3009,17090 -3006,17128 -3019,17129
+Cautiusstr. -> Streitstr.: Mittelstreifen	3::igndisp -3019,17129 -3006,17128 -2959,17507
 Mittelstreifen	3nocross::ignrte 10769,1111 10829,1135 11012,1210
 Marienfelder Chaussee -> Wingerter Str.: Mittelstreifen	3::igndisp 11012,1210 10829,1135 10845,1026
 Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10829,1135 10769,1111
@@ -2833,7 +2839,7 @@ tragen (einige Stufen)	0:15:-82 -18612,4568
 tragen (Treppe)	0:30:-19 -18875,5375
 tragen (Treppe)	0:30:-101 -18860,5378
 tragen (eine Stufe) oder wilden Pfad benutzen	0:5:-215 21660,5424
-tragen	0:30:75 -45,12243
+tragen oder Aufzug benutzen (Treppe, 49 Stufen)	0:45:78 -10,12256
 tragen (Treppe, 14 Stufen)	0:25:24 -1667,16828
 tragen (Treppe, 31 Stufen)	0:30:-213 17983,8960
 Schranke	BNP:3:-213:trailer=10 13081,14090
@@ -3246,7 +3252,7 @@ Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
 Barriere	BNP:10:-13 12178,7985
 Schranke, ggfs. auf dem Bürgersteig umfahren	BNP:2:-15:trailer=4 12216,7838
 Drängelgitter	BNP:10:-77 7158,9509
-Drängelgitter	BNP:5:-51 -6162,16287
+Drängelgitter	BNP:3:-108:trailer=10 -6214,16339
 Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:5:-135 7693,11627
@@ -3391,8 +3397,8 @@ Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,119
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
-Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
-Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486 -213,15529 -218,15558
+Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503 59,15518
+Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
 Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
@@ -3400,7 +3406,6 @@ Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
 Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße eröffnet?	2::inwork 20922,18613 20910,18719
-Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
 (Fahlenbergstr. - Einkaufszentrum Lagunenweg): Bauarbeiten, Straße wird neu gemacht	2::inwork 31971,3170 31788,3192 31762,3202
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
@@ -3427,7 +3432,6 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
-Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864
@@ -4081,3 +4085,4 @@ Blissestr.: linker Gehweg	1::igndisp 4754,8608 4769,8563
 Hansastr.: linker Gehweg	1::igndisp 15917,16858 15866,16823
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	1::igndisp 10774,9681 10802,9673 10807,9686
 Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	1::igndisp 6022,13330 6012,13338
+Streitstr.: linker Gehweg	1::igndisp -3019,17129 -3009,17090

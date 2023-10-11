@@ -198,7 +198,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="20"
-#: last_checked: 2023-09-20
+#: last_checked: 2023-10-11
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -1563,6 +1563,8 @@ Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 (Vergissmeinnichtweg - Weidenkätzchenweg)	1s:q3 21503,114 21435,99
 (Weidenkätzchenweg - Buschwindröschenweg)	1s:q3 21435,99 21367,84
 # 
+(Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1880,6 +1882,10 @@ Markt (Rheinsberg)	1s:q4 -25838,76634 -25853,76534 -25842,76514 -25801,76494
 Kuhstr. (Wittstock)	1s:q4 -53455,82926 -53556,82888
 Burgstr. (Wittstock)	1s:q4 -53556,82888 -53717,83024 -53765,83128
 Poststr. (Wittstock)	1s:q4 -53717,83024 -53602,83076
+# 
+Kirchstr. (Falkensee)	1s:q4 -10082,17402 -10046,17514
+Freimuthstr. (Falkensee)	1s:q4 -10354,17616 -10357,17603 -10258,17508
+# 
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -1947,7 +1953,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="15"
-#: last_checked: 2023-09-20
+#: last_checked: 2023-10-11
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -2108,6 +2114,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 Streitstr.: Mittelstreifen	3nocross -3029,16823 -3023,16925 -3018,16974
+Streitstr.: Mittelstreifen	3nocross -3009,17090 -3006,17128 -2959,17507
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10769,1111 10829,1135 11012,1210
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5527,20044 5545,19909 5533,19811
@@ -2865,13 +2872,8 @@ tragen (einige Stufen)	0:15 -18612,4568
 tragen (Treppe)	0:30 -18875,5375
 tragen (Treppe)	0:30 -18860,5378
 tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
-#: next_check_id: MACHANDELWEG-2022
-#: add_fragezeichen Wie viele Stufen sind hier?
-#: XXX Bleibt es bei der Treppe nach den Bauarbeiten?
-#: last_checked: 2023-05-29
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2023-03-17
-tragen	0:30 -45,12243
+# REMOVED --- #: next_check_id: MACHANDELWEG-2022 --- #: add_fragezeichen Wie viele Stufen sind hier? --- #: XXX Bleibt es bei der Treppe nach den Bauarbeiten? --- #: last_checked: 2023-05-29 --- #: check_frequency: 120d --- #: next_check: 2023-03-17
+tragen oder Aufzug benutzen (Treppe, 49 Stufen)	0:45 -10,12256
 tragen (Treppe, 14 Stufen)	0:25 -1667,16828
 tragen (Treppe, 31 Stufen)	0:30 17983,8960
 #: note: zwar überspannt die Schranke nicht die gesamte Fahrbahn, aber die Lücke mit Poller kann zugeparkt sein
@@ -3471,7 +3473,7 @@ Barriere	BNP:10 12178,7985
 Schranke, ggfs. auf dem Bürgersteig umfahren	BNP:2::trailer=4 12216,7838
 # REMOVED (mittlerweile gibt es zwei Durchfahrten, rechts und links von der Barriere) --- #: note: manchmal ist die Barriere zur Hälfte entfernt --- gesehen im Juni 2016 --- #: note: Durchfahrt ist 120cm breit --- Drängelgitter	BNP:0::trailer=3 10535,13006
 Drängelgitter	BNP:10 7158,9509
-Drängelgitter	BNP:5 -6162,16287
+Drängelgitter	BNP:3::trailer=10 -6214,16339
 # in Brandenburg:
 Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5 38662,97200
@@ -3706,16 +3708,17 @@ Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
 #: next_check_id: SAATWINKLER-2023
 #: XXX Laut osm zumindest teilweise offen
-#: last_checked: 2023-10-06 (osm) vvv
+#: last_checked: 2023-10-11 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-10-06 vvv
+#: next_check: 2023-11-11 vvv
 # REMOVED --- #: next_check: 2023-10-01 vvv
 #: osm_watch: way id="1198442169" version="6"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
 #: osm_watch: way id="1152661787" version="14"
-Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 59,15518
+Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503 59,15518
 #: osm_watch: way id="1198395777" version="11"
-Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486 -213,15529 -218,15558
+Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
+# REMOVED (hier nicht mehr) --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -213,15529 -218,15558
 # REMOVED --- #: next_check ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3763,16 +3766,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: check_frequency: 60d
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße eröffnet?	2::inwork 20922,18613 20910,18719
 # 
-#: by: l.epp
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11479 (Instandsetzung frühestens 2025)
-#: confirmed_by: osm, srt
-#: osm_watch: note 3359195 7
-#: osm_watch: way id="311338440" version="4"
-#: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt?
-#: last_checked: 2023-06-24
-#: check_frequency: 360d
-#: next_check: 2025-09-01
-Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
+# REMOVED (laut osm wieder offen) --- #: by: l.epp --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11479 (Instandsetzung frühestens 2025) --- #: confirmed_by: osm, srt --- #: osm_watch: note 3359195 7 --- #: osm_watch: way id="311338440" version="4" --- #: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt? --- #: last_checked: 2023-06-24 --- #: check_frequency: 360d --- #: next_check: 2025-09-01 --- Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,767543#msg-767543
@@ -3820,7 +3814,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 # 
 #: next_check_id: GOETEL-2023
 #: XXX Bleibt die Einbahnstraßenregelung permanent?
-#: last_checked: 2023-09-20
+#: last_checked: 2023-10-11
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
 #: osm_watch: way id="30441457" version="30"
@@ -4065,11 +4059,7 @@ Marktplatz Adlershof: Umbauarbeiten, keine Einbahnstraßenregelung	1no 20336,3783
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
-#: next_check_id: AUERDREIECK-2022
-#: last_checked: 2023-10-08
-#: check_frequency: 7d
-#: next_check: 2023-10-31
-Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
+# REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
 #: last_checked: 2023-08-06
@@ -4475,7 +4465,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="6"
-#: last_checked: 2023-09-26
+#: last_checked: 2023-10-11
 #: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -5059,7 +5049,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="33"
 #: also_indoor: traffic
-#: last_checked: 2023-10-05 (osm)
+#: last_checked: 2023-10-11
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
@@ -5094,7 +5084,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="4"
-#: last_checked: 2023-09-09 (mapillary)
+#: last_checked: 2023-10-11
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910

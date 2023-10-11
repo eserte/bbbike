@@ -501,7 +501,7 @@ Adlergestell/Weerthstr.: keine Abbiegemöglichkeit	3nocross 20064,3278 20010,3340
 #: note: als Radfahrer müsste man durchkommen
 Adlergestell/Radickestr.: vorhandene Überfahrt mit Baken abgesperrt	3nocross 20010,3340 20064,3278 20207,3115
 Hardenbergstr./Jebensstr.: Mittelstreifen	3nocross 5542,11075 5459,11135 5258,11285
-#: note: Luftbild:
+#: note: Übergänge existieren, aber relativ schmaler Mittelstreifen, man muss sein Rad mindestens diagonal stellen
 Alt-Moabit/Calvinstr.: Mittelstreifen	3nocross 6757,13112 6860,13093 6966,13075
 Krautstr. - Kleine Markusstr.: Poller	3 11958,12112 11937,12127 11958,12195
 Krautstr. - Kleine Markusstr.: Poller	3 11932,12111 11937,12127 11958,12195
@@ -1914,4 +1914,17 @@ Bellermannstr./Grüntaler Str.: Diagonalsperre	3 9148,16282 9178,16317 9193,16331
 Bellermannstr./Grüntaler Str.: Diagonalsperre	3 9156,16339 9178,16317 9193,16331
 Bellermannstr./Grüntaler Str.: Diagonalsperre	3 9193,16331 9178,16317 9156,16339
 #: by ^^^
+# 
+#: by: osm vvv
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 9156,16339 9099,16398 8921,16578
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 8921,16578 9099,16398 9156,16339
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 9156,16339 9099,16398 9331,16624
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 9331,16624 9099,16398 9156,16339
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 9331,16624 9099,16398 8913,16159
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 8913,16159 9099,16398 9331,16624
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 9331,16624 9099,16398 9156,16339
+Stettiner Str./Bellermannstr.: Diagonalsperre	3 9156,16339 9099,16398 9331,16624
+#: by ^^^
+# 
+Rhenaniastr. -> Daumstr.	3 -1737,16283 -1821,16327 -1816,16111
 # 

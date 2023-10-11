@@ -1230,6 +1230,7 @@ Am Leitbruch: Fußgänger	q4 4063,22072 4067,22066 4130,21961
 Primusweg: Fußgänger, Bordstein	q4 5651,19953 5666,19926 5704,19902 5715,19888
 Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
+Auerdreieck: einige Fußgänger, Radfahren nicht erlaubt	q3 13232,12628 13091,12563
 (Neufährer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
 (Dennewitzstr., hinterer Weg): Fußgänger	q1 8011,10085 8023,10106 8074,10292 8058,10306
 Havelbrücke: Rampe, Fußgänger	q3 -3204,13913 -3159,13886 -3285,13947
@@ -2481,6 +2482,9 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 (Weg am Beerenpfuhlgraben): Grünanlage, einige Fußgänger	q1 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Grünanlage, einige Fußgänger	q1 23521,14973 23529,14973 23543,14966
 Singerstr.: Fußgängerzone für Radfahrer frei, höherer Fußgängerfrequenz zum Unterrichtsbeginn	q0 11635,12398 11845,12292
+Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031
+(Glühwürmchenweg - Pionierstr.): einige Fußgänger	q1 -6048,16292 -5959,16235 -5924,16458
+(Seydlitzstr. - Lehrter Str.): eng, wenn BVG-Busse hier parken	q3 7613,13517 7651,13447
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2601,7 +2605,7 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -4106,12100 -4063,12104
 (Südpark): Fußgänger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
 (Südpark): Fußgänger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12371
-(Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
+(Glühwürmchenweg - Pionierstr.): einige Fußgänger	q1 -6014,16485 -6048,16292
 Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
@@ -2745,19 +2749,20 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 Eosanderstr.: Fußgänger	q1 3323,12615 3271,12609
 Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q3 7607,15282 7723,15417
-(südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5770,12346 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5770,12346 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887
+(südliches Spreeufer): Fußgänger	q2 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nördliches Spreeufer): Fußgänger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307
 (nördliches Spreeufer): Fußgänger	q2 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469 5356,12494 5372,12538
 (Hansa-Ufer - nördliches Spreeufer): Fußgänger	q2 5657,12339 5607,12307
 (nördliches Spreeufer): Fußgänger	q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
-Machandelweg: Fußgänger, schmal	q2 -248,12718 -217,12778 -187,12830
+Machandelweg: Fußgänger, schmal	q2 -248,12718 -217,12778 -190,12825
 Merowingerweg: Fußgänger, schmal	q2 1041,11169 1070,11226
 Wandalenallee: Fußgänger	q1 736,11206 711,11199
 Flinsberger Platz: Fußgänger	q1 2919,8582 2966,8586
 (Wacholderweg - Rominterallee): Fußgänger, Bordsteine	q3 -365,12788 -408,12766
-(Machandelweg - Rossitter Weg): Fußgänger	q2 -45,12243 -76,12236 -107,12220
+(Machandelweg - Rossitter Weg): Fußgänger	q2 -10,12256 -76,12236 -107,12220
 Frauenburger Pfad: Fußgänger, schmal	q2 475,10882 572,10876 677,10870 775,10864
 Willenberger Pfad: Fußgänger, schmal	q2 569,10738 673,10727
 (Uferweg Hubertussee): Fußgänger, schmal	q3 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1834,8893 1809,8916 1761,8936
@@ -2765,7 +2770,7 @@ Willenberger Pfad: Fußgänger, schmal	q2 569,10738 673,10727
 (Zum Hubertussee): Fußgänger, schmal	q3 1834,8893 1807,8893
 (Zum Hubertussee): Fußgänger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fußgänger	q2 -264,13009 -208,12938 -103,12841 -45,12778 23,12739
-(Machandelweg - Reichsstr.): Fußgänger, eng, Bordsteine	q4 -187,12830 -166,12849 -103,12841 -85,12852
+(Machandelweg - Reichsstr.): Fußgänger, eng, Bordsteine	q4 -190,12825 -166,12849 -103,12841 -85,12852
 (zur Karl-Marx-Allee): Bordsteine, Fußgänger	q3 11367,12940 11289,12908
 (Börnicker Str. - Südpark): Fußgänger	q2 -4117,11997 -4095,12006
 (Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4144,12187
@@ -3493,3 +3498,4 @@ Blissestr.: linker Gehweg	q3::igndisp; 4769,8563 4754,8608
 Hansastr.: linker Gehweg	q3::igndisp; 15866,16823 15917,16858
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	q4::igndisp; 10807,9686 10802,9673 10774,9681
 Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	q3::igndisp; 6012,13338 6022,13330
+Streitstr.: linker Gehweg	q4::igndisp; -3009,17090 -3019,17129

@@ -158,7 +158,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: last_checked: 2023-10-09
 #: check_frequency: 7d
-# REMOVED --- #: next_check:  2023-10-09
+#: next_check:  2023-10-11
 # REMOVED --- #: valid: -20231009
 Parrisiusstr./Borgmannstr.: provisorische Ampel	X::inwork 22531,5871
 # 
@@ -1147,6 +1147,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3625,13889
 	X 653,12109
 	X 620,12144
+#: note: die Reichsstr. kann in Richtung Westen nicht in einem Zug überquert werden
 	X 818,11954
 	F 1200,11600
 	X 2233,11049
@@ -3988,6 +3989,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X -10179,17565
+#: note: Anforderungsampel
+	F -8519,16853
+#: note: Anforderungsampel
+	F -9687,17364
 	X -3356,29260
 	B -49659,72791
 	B -53693,82738
