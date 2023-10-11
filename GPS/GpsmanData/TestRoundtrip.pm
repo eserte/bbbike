@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2016,2019,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::TestRoundtrip;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.06';
+$VERSION = '0.05';
 
 use File::Temp qw(tempfile);
 use IPC::Run qw(run);
@@ -67,7 +67,7 @@ sub gpx2gpsman2gpx {
     }
 
     # Newlines are preserved in gpsman files
-    for my $node ($doc_before->findnodes('//cmt/text()')) {
+    for my $node ($doc_before->findnodes('//*[local-name(.)="cmt"]/text()')) {
 	my $node_value = $node->getData;
 	if ($node_value =~ m{\n}) {
 	    $node_value =~ s{\n}{ }g;
@@ -76,7 +76,7 @@ sub gpx2gpsman2gpx {
     }
 
     # empty cmt tags get lost in gpsman files, which is acceptable
-    for my $node ($doc_before->findnodes('//cmt')) {
+    for my $node ($doc_before->findnodes('//*[local-name(.)="cmt"]')) {
 	if (!$node->hasChildNodes) {
 	    $node->parentNode->removeChild($node);
 	}
@@ -129,9 +129,6 @@ sub gpx2gpsman2gpx {
 # - <trk><number> not handled
 sub strip_unhandled_gpx_stuff {
     my $doc = shift;
-
-    $doc->documentElement->setNamespaceDeclURI('',''); # remove ns for easier xpath expressions
-
     my $root = $doc->documentElement;
 
     # namespace normalizations
@@ -163,12 +160,12 @@ sub strip_unhandled_gpx_stuff {
     $doc->setDocumentElement($new_root);
 
     # remove <trk><number>
-    for my $node ($doc->findnodes('//trk/number')) {
+    for my $node ($doc->findnodes('//*[local-name(.)="trk"]/*[local-name(.)="number"]')) {
 	$node->parentNode->removeChild($node);
     }
 
     # remove <gpxtrkx:TrackStatsExtension> (usually contains <gpxtrkx:Distance>)
-    for my $node ($doc->findnodes('//TrackStatsExtension')) {
+    for my $node ($doc->findnodes('//*[local-name(.)="TrackStatsExtension"]')) {
 	$node->parentNode->removeChild($node);
     }
 }
