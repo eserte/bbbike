@@ -35074,7 +35074,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-10-04 vvv
+#: last_checked: 2023-10-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -36328,7 +36328,7 @@ EOF
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
 Hüttenweg (westlicher Abschnitt)	1::temp -927,6888 -1006,6911
-#: osm_watch: way id="50830991" version="22"
+# REMOVED (watch for other entry exists) --- #: osm_watch: way id="50830991" version="26"
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
 Kronprinzessinenweg (NN)	1::temp -3296,3686 -2218,5133
 #Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
@@ -38110,7 +38110,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
-#: osm_watch: way id="46907541" version="13"
+#: osm_watch: way id="46907541" version="14"
 #: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
@@ -38179,7 +38179,7 @@ EOF
        text  => 'Seidelstr.: Sperrung im Bereich der U-Bahnbrücke, auch für Fußgänger und Radfahrer, von 17.03.2023 20:00 bis 20.03.2023 04:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: SEIDELSTRASSENBRUECKE-2022
+#: next_check_id: U6-2022
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/die-seidelstrassenbruecke-wird-ab-17-maerz-abgerissen_a374135
 #: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/u6-in-tegel-arbeiten-an-bruecke-ueber-seidelstrasse-starten-id212679 (auch für Radfahrer+Fußgänger)
@@ -39478,9 +39478,10 @@ EOF
        text  => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-11 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -39491,9 +39492,11 @@ EOF
        text  => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: U6-2022
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-11 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -39680,7 +39683,7 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
-#: osm_watch: way id="50830991" version="25"
+#: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: last_checked: 2023-09-14 (mapillary)
 #: check_frequency: 120d
@@ -40569,7 +40572,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (hier nur 30.9.-2.10.2023, aber vielleicht stimmt das auch für die Tram)
-#: source_id: viz2021:13.409072,52.538016,25.09.2023,07:00 (bis 11.10.2023) (bis 12.10.2023)
+#: source_id: viz2021:13.409072,52.538016,25.09.2023,07:00 (bis 11.10.2023) (bis 12.10.2023) (inaktiv)
 	q4::inwork; 10723,14772 10643,14639 10618,14598 10600,14568 10578,14531 10530,14452
 EOF
      },
@@ -40603,7 +40606,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
-#: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023)
+#: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023) (inaktiv)
 	q4::inwork 11963,8074 12147,8117
 EOF
      },
@@ -40727,6 +40730,20 @@ EOF
        source_id => 'viz2021:13.432538,52.605013,10.10.2023,07:00',
        data  => <<EOF,
 	q4::inwork; 12063,21991 12122,22185 12165,22323
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uranusweg: Fahrbahn unter der U-Bahnbrücke gesperrt, Engstelle',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: U6-2022
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
+#: add_fragezeichen: Besteht die Sperrung noch immer?
+#: last_checked: 2023-10-11 (daf)
+#: check_frequency: 120d
+#: next_check: 2024-12-31
+	q3::inwork 4335,17642 4392,17777
 EOF
      },
     );

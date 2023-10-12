@@ -953,6 +953,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # 
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
+#: by: https://mein.berlin.de/vorhaben/2023-00780/ (Abschluss der Bauarbeiten voraussichtlich noch 2023)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022 (kann vermutlich nicht gehalten werden)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
 #: osm_watch: way id="885619857" version="19"
@@ -962,12 +963,12 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: priority: #B
 #: last_checked: 2023-10-06 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2022-12-31 vvv
+#: next_check: 2023-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork 12556,15518 12605,15491 12621,15482
 # REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1808,7 +1809,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
-#: osm_watch: way id="77098244" version="16"
+#: osm_watch: way id="77098244" version="17"
 #: last_checked: 2023-07-01
 #: check_frequency: 360d
 #: next_check: 2024-12-31

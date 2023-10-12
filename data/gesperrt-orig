@@ -3955,7 +3955,7 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 
 # 
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022) --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392 --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: next_check_id: SEIDELSTRASSENBRUECKE-2022
+#: next_check_id: U6-2022
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11381 (Ersuchen: Durchgang zu den Sportstätten)
 #: osm_watch: node id="1736425250" version="5"
 #: last_checked: 2022-11-08
@@ -3963,7 +3963,7 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 
 #: next_check: 2025-04-15
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 # 
-# REMOVED (kein Gerüst mehr) --- #: next_check_id: SEIDELSTRASSENBRUECKE-2022 --- #: XXX Wie sieht die Situation nach den Bauarbeiten aus? --- #: last_checked: 2022-09-26 (mapillary) --- #: next_check: 2022-11-30 --- Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
+# REMOVED (kein Gerüst mehr) --- #: next_check_id: U6-2022 --- #: XXX Wie sieht die Situation nach den Bauarbeiten aus? --- #: last_checked: 2022-09-26 (mapillary) --- #: next_check: 2022-11-30 --- Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
 # 
 #: next_check_id: WUHLESTEG-2022
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1258812.php
@@ -4397,7 +4397,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-09-22
+#: last_checked: 2023-10-12
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4407,7 +4407,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2023-09-12 vvv
+#: last_checked: 2023-10-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -4748,7 +4748,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="18"
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-11 (krickstadt)
 #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701

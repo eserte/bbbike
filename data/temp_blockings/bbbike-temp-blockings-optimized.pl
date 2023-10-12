@@ -3412,7 +3412,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2023-10-04 vvv
+#: last_checked: 2023-10-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -4283,7 +4283,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
-#: osm_watch: way id="46907541" version="13"
+#: osm_watch: way id="46907541" version="14"
 #: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
@@ -4845,9 +4845,10 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
+         'data' => '#: next_check_id: U6-2022
+#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-11 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -4859,9 +4860,11 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
          'until' => 1735686000
        },
        {
-         'data' => '#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
+         'data' => '#: next_check_id: U6-2022
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
+#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-11 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -4926,7 +4929,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
-#: osm_watch: way id="50830991" version="25"
+#: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: last_checked: 2023-09-14 (mapillary)
 #: check_frequency: 120d
@@ -5408,17 +5411,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'type' => 'gesperrt',
          'until' => 1704063599
        },
-       {
-         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (hier nur 30.9.-2.10.2023, aber vielleicht stimmt das auch für die Tram)
-#: source_id: viz2021:13.409072,52.538016,25.09.2023,07:00 (bis 11.10.2023) (bis 12.10.2023)
-	q4::inwork; 10723,14772 10643,14639 10618,14598 10600,14568 10578,14531 10530,14452
-',
-         'from' => 1695531600,
-         'id' => 3921,
-         'text' => 'Kastanienallee: Gleisbauarbeiten zwischen Oderberger Str. und Schwedter Str., Richtung Weinbergsweg gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 12.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1697122800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
@@ -5436,17 +5429,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
-#: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023)
-	q4::inwork 11963,8074 12147,8117
-',
-         'from' => 1696824000,
-         'id' => 3924,
-         'text' => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 09.10.2023 06:00 bis 12.10.2023 18:00',
-         'type' => 'handicap',
-         'until' => 1697126400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr)
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
@@ -5580,6 +5563,21 @@ bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,
          'text' => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 04.11.2023 17:00',
          'type' => 'handicap',
          'until' => 1699113600
+       },
+       {
+         'data' => '#: next_check_id: U6-2022
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
+#: add_fragezeichen: Besteht die Sperrung noch immer?
+#: last_checked: 2023-10-11 (daf)
+#: check_frequency: 120d
+#: next_check: 2024-12-31
+	q3::inwork 4335,17642 4392,17777
+',
+         'from' => undef,
+         'id' => 3937,
+         'text' => 'Uranusweg: Fahrbahn unter der U-Bahnbrücke gesperrt, Engstelle',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
