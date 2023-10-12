@@ -26,7 +26,7 @@ use Strassen::Core;
 sub get_node ($);
 sub get_way  ($);
 
-my $api_root_url = 'https://www.openstreetmap.org/api/0.6';
+my $api_root_url = 'https://api.openstreetmap.org/api/0.6';
 
 GetOptions
     or die "usage: $0 osmURL ...\n";

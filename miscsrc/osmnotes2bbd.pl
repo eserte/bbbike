@@ -26,7 +26,7 @@ use Tie::IxHash;
 
 use Strassen::Core;
 
-my $osm_notes_rooturl_fmt = "http://www.openstreetmap.org/api/0.6/notes.json?limit=%d&closed=0&bbox=%s,%s,%s,%s";
+my $osm_notes_rooturl_fmt = "https://api.openstreetmap.org/api/0.6/notes.json?limit=%d&closed=0&bbox=%s,%s,%s,%s";
 
 my $o;
 my $bbox;
