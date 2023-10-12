@@ -48,9 +48,9 @@ my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
 my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
 
 use vars qw($OSM_API_URL $OVERPASS_API_URL);
-$OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
+$OSM_API_URL = "https://api.openstreetmap.org/api/0.6";
 #$OVERPASS_API_URL = "http://overpass.osm.rambler.ru/cgi/interpreter"; # feels slower than the .de server (2013-11)
-$OVERPASS_API_URL = "http://overpass-api.de/api/interpreter"; # quick, but compresses only sometimes
+$OVERPASS_API_URL = "https://overpass-api.de/api/interpreter"; # quick, but compresses only sometimes
 #$OVERPASS_API_URL = "http://api.openstreetmap.fr/oapi/interpreter"; # compresses always # was broken in 2015-12 for a couple of days; truncated downloads (2018-02)
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
@@ -1001,8 +1001,7 @@ sub cleanup_photos {
 
 # TODO:
 # support for main::show_info to show way xml and history xml:
-#  GET http://www.openstreetmap.org/api/0.5/way/22495210/history
-#  GET http://www.openstreetmap.org/api/0.5/way/22495210
+# maybe it would be enough to run osmhistory
 
 # Osm Menu in SRTShortcuts should be created here and changed to the
 # following layout:

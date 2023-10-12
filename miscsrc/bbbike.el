@@ -928,12 +928,12 @@
   )
 
 (defun bbbike--get-osm-elem-version-perl (elemtype elemid)
-  (let* ((url (concat "https://www.openstreetmap.org/api/0.6/" elemtype "/" elemid))
+  (let* ((url (concat "https://api.openstreetmap.org/api/0.6/" elemtype "/" elemid))
 	 (elemversion (shell-command-to-string (concat bbbike-perl-modern-executable " -MLWP::UserAgent -MXML::LibXML -e 'my $ua = LWP::UserAgent->new(timeout => 10); my $xml = $ua->get(shift)->decoded_content; print XML::LibXML->load_xml(string => $xml)->documentElement->findvalue(q{/osm/" elemtype "/@version})' " url))))
     elemversion))
 
 (defun bbbike--get-osm-elem-version-elisp (elemtype elemid)
-  (let* ((url (format "https://www.openstreetmap.org/api/0.6/%s/%s" elemtype elemid))
+  (let* ((url (format "https://api.openstreetmap.org/api/0.6/%s/%s" elemtype elemid))
          (buffer (url-retrieve-synchronously url))
          (content (with-current-buffer buffer
                     (goto-char (point-min))

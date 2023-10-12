@@ -176,7 +176,7 @@ Please specify one or more osm files. To download an osm file, you can use
 the script downloadosm (usually to be found in the same directory as this
 script) or raw wget, for example
 
-  wget -O filename.osm http://www.openstreetmap.org/api/0.5/map?bbox=x0,y0,x1,y1
+  wget -O filename.osm https://api.openstreetmap.org/api/0.5/map?bbox=x0,y0,x1,y1
 
 Note that the bbox must not be too large, otherwise you get a 400 bad request
 error.
