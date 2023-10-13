@@ -327,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-10-12 vvv
+#: last_checked: 2023-10-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -502,7 +502,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2023-09-29 vvv
+#: last_checked: 2023-10-13 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2015,7 +2015,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-10-02 (daf) vvv
+#: last_checked: 2023-10-13 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206
 #: note: vorher: provisorische Radspur, RW4;
@@ -2798,7 +2798,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-10-02 (daf)
+#: last_checked: 2023-10-13
 #: check_frequency: 30d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -8021,7 +8021,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="32"
 #: osm_watch: way id="335487059" version="27"
-#: last_checked: 2023-10-11 vvv
+#: last_checked: 2023-10-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -8264,7 +8264,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385985,52.444292,17.08.2023,07:00 (bis 23.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
-#: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023)
+#: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-08-05 vvv
@@ -8591,7 +8591,7 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: durchgehende Gelbmarkierung, keine Radwegschilder; Richtung Osten: durchgängige niedrige Protektion
-#: last_checked: 2023-10-12 vvv
+#: last_checked: 2023-10-13 vvv
 #: next_check: 2023-11-29 vvv
 provisorische Radspuren	RW3;RW3 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075

@@ -28497,8 +28497,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2023-11-24 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis November 2023; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+       until => $isodate2epoch->("2024-03-16 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Mitte März 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
        type  => 'handicap',
        # alt: source_id => '2147342174',
        data  => <<EOF,
@@ -28510,7 +28510,7 @@ EOF
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/suedlich-des-bahnhofs-werden-noch-rasengleise-eingebaut_a388018
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9988 (Antrag; Bauarbeiten noch bis 2025?)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
-#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -28519,7 +28519,7 @@ EOF
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-11-24 vvv
+#: next_check: 2024-03-16 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -39640,7 +39640,7 @@ EOF
        text  => 'Lepsiusstr.: Bauarbeiten, Fahrbahn zwischen Grunewaldstr. und Herfurthstr. gesperrt, vom 10.07.2023 09:00 bis 13.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.315966,52.45914,10.07.2023,09:00 (bis 04.09.2023) (bis 29.09.2023) (bis 13.10.2023)
+#: source_id: viz2021:13.315966,52.45914,10.07.2023,09:00 (bis 04.09.2023) (bis 29.09.2023) (bis 13.10.2023) (inaktiv)
 	q4::inwork 4558,5863 4520,5793
 EOF
      },
@@ -40210,7 +40210,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-10-11 vvv
+#: last_checked: 2023-10-13 vvv
 #: check_frequency: 14d vvv
 nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
 südlicher Weg	2::inwork 10168,10085 10066,10071

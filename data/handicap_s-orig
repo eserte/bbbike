@@ -11,9 +11,10 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: KARLMARXALLEE-2023
+#: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023)
 #: last_checked: 2023-10-10
 #: check_frequency: 90d
-#: next_check: 2023-11-30
+#: next_check: 2023-11-01
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
 # 
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
@@ -327,7 +328,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-09-25
+#: last_checked: 2023-10-13
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -424,7 +425,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-09-29 vvv
+#: last_checked: 2023-10-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -1525,8 +1526,7 @@ Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,1014
 #: note: nicht "ggfs.", also kein Kandidat für die Datei gesperrt-orig als 1s:q3
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
-#: XXX_prog: Radfahren nicht erlaubt, rjoop möchte hier nicht geroutet werden, wenn "strikt befolgen" eingeschaltet ist
-#: note: auf der westlichen Seite steht ein überklebtes Grünanlagen-Schild mit "Radfahren verboten", auf der östlichen Seite nicht
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 #: note: abgeflachte Bordsteine existieren
 #: note: früher "q2"
 (Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4+ 9702,10129 9827,10051
@@ -2641,6 +2641,7 @@ Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
 (Bethanienpark): Fußgänger, Bordstein	q3 11668,10916 11589,10947
 # REMOVED (nein, hier ist (mittlerweile?) auch abgesenkt) --- #: XXX_prog BS (südliches Ende) --- (Hildegard-Knef-Platz - Lotte-Laserstein-Str.): Bordstein	q2 7774,7724 7757,7682
 #: XXX_prog BS (östliches Ende nur, westliches Ende ist abgesenkt)
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 #: note: früher "q2"
 (Blücherplatz - Johanniterstr.): Fußgänger, Grünanlage, Bordstein	q4+ 9702,10129 9816,10119 9837,10117
 Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
@@ -3233,7 +3234,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-10-10
+#: last_checked: 2023-10-13
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243

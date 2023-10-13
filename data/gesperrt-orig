@@ -3699,11 +3699,11 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1199037.php (bis Sommer 2023)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/quartierspark-ritterstrasse-wird-auf-wunsch-der-anwohner-aufgehuebscht_a346061
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/schaeden-im-quartierpark-entdeckt_a355859
-#: note: laut Aushang Bauarbeiten bis 26.9.2023
+#: note: laut Aushang Bauarbeiten bis 26.9.2023 (wurde aber nicht eingehalten)
 #: priority: #C
-#: last_checked: 2023-08-25
-#: next_check: 2023-09-26
-# REMOVED --- #: next_check: 2023-07-15
+#: last_checked: 2023-10-13
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2023-09-26
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
 #: next_check_id: SAATWINKLER-2023
@@ -3926,7 +3926,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2023-09-28 vvv
+#: last_checked: 2023-10-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4159,12 +4159,6 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
-# 
-#: next_check_id: PLANSTRASSEC-2019
-#: note: zwischenzeitlich waren die "Einfahrt verboten"-Schilder an der Mühlenstr. verschwunden
-#: last_checked: 2023-09-26
-#: check_frequency: 60d
-(Planstraße C): Einbahnstraße	1s:q4:inwork 12848,11093 12926,11224
 # 
 # REMOVED (weitgehend offen) -- #: next_check_id: SIEGFRIED-2021 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?) --- #: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023) --- #: priority: #C --- #: last_checked: 2022-09-24 --- #: check_frequency: 120d --- (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # 
@@ -4497,7 +4491,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="19"
 #: priority: #A
-#: last_checked: 2023-09-25
+#: last_checked: 2023-10-13
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4564,7 +4558,7 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-02 (daf)
+#: last_checked: 2023-10-13
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -4593,7 +4587,7 @@ Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-09-26
+#: last_checked: 2023-10-13
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
