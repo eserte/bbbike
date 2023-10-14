@@ -340,6 +340,7 @@ sub _process {
 		   grenzuebergaenge
 		   culdesac
 		   ../misc/abdeckung.bbd
+		   mudways
 		  );
 	    # Specify files here which are only available as -orig or
 	    # non-orig version:
@@ -414,6 +415,7 @@ sub _process {
 	# user defined files
 	%noorig_files = ();
 	$noorig_files{'../misc/ampelschaltung_rules.bbd'} = 1;
+	$noorig_files{'mudways'} = 1;
 
 	if ($operation =~ /^(change|grep)$/) {
 	    @{$check_files[T_AMPELSCHALTUNG]} = ('../misc/ampelschaltung.txt', 'ampelschaltung');

@@ -41,9 +41,10 @@ my @search_files = (
 		    bsd_glob("$bbbike_datadir/*-orig"),
 		    bsd_glob("$bbbike_datadir/*.coords.data"),
 		    "$bbbike_datadir/temp_blockings/bbbike-temp-blockings.pl",
+		    "$bbbike_datadir/mudways",
+		    "$bbbike_datadir/zebrastreifen",
 		    (defined $bbbike_aux_datadir ? 
-		     ("$bbbike_aux_datadir/fragezeichen_lowprio.bbd",
-		      "$bbbike_aux_datadir/mudways.bbd") : ()
+		     ("$bbbike_aux_datadir/fragezeichen_lowprio.bbd") : ()
 		    ),
 		   );
 

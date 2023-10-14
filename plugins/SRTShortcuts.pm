@@ -436,21 +436,18 @@ EOF
 				  maybe_orig_file => 1,
 				  above => $str_layer_level,
 				 ),
-		(defined $bbbike_auxdir ?
-		 (
-		  layer_checkbutton([$do_compound->('mudways')],
-				    'str', "$bbbike_auxdir/bbd/mudways.bbd",
-				    above => $str_layer_level,
-				   ),
-		  layer_checkbutton([$do_compound->('current mudways')],
-				    'str', "/tmp/mudways_prognosis.bbd",
-				    above => $str_layer_level,
-				    preparecallback => sub {
-					prepare_mudways_prognosis();
-				    },
-				   ),
-		 ) : ()
-		),
+		layer_checkbutton([$do_compound->('mudways')],
+				  'str', "$main::datadir/mudways",
+				  maybe_orig_file => 0, # no orig file
+				  above => $str_layer_level,
+			         ),
+		layer_checkbutton([$do_compound->('current mudways')],
+				  'str', "/tmp/mudways_prognosis.bbd",
+				  above => $str_layer_level,
+				  preparecallback => sub {
+				      prepare_mudways_prognosis();
+				  },
+			          ),
 		layer_checkbutton([$do_compound->('Exits (ÖPNV)')],
 				  'str', "$main::datadir/exits",
 				  maybe_orig_file => 1),
@@ -979,10 +976,7 @@ EOF
 }
 
 sub prepare_mudways_prognosis {
-    if (!defined $bbbike_auxdir) {
-	main::status_message("Works only with bbbike-aux directory", "die");
-    }
-    my $dwd_soil = `$bbbike_auxdir/misc/dwd-soil-update.pl -q`;
+    my $dwd_soil = `$bbbike_rootdir/miscsrc/dwd-soil-update.pl -q`;
     print STDERR $dwd_soil;
 
     my $dwd_station = 'Dahlem';
@@ -997,8 +991,8 @@ sub prepare_mudways_prognosis {
 	main::status_message("Cannot get soil data for DWD station '$dwd_station', please see stderr for more information", "die");
     }
 
-    system("$bbbike_auxdir/misc/mudways-enrich.pl"); die $? if $? != 0;
-    system("$bbbike_auxdir/misc/mudways-enriched-to-handicap.pl --bf10=$bf10 > /tmp/mudways_prognosis.bbd~"); die $? if $? != 0;
+    system("$bbbike_rootdir/miscsrc/mudways-enrich.pl"); die $? if $? != 0;
+    system("$bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl --bf10=$bf10 > /tmp/mudways_prognosis.bbd~"); die $? if $? != 0;
     rename "/tmp/mudways_prognosis.bbd~", "/tmp/mudways_prognosis.bbd" or die "Error while renaming: $!";
 }
 
