@@ -2705,13 +2705,6 @@ sub _insert_points_and_co ($) {
 		    ($verbose ? "-v" : ()),
 		    @inslauf_selection,
 		   );
-#XXX:
-# 	if (!$SRTShortcuts::force_edit_mode) {
-# 	    push @args, (
-# 			 (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
-# 			 ($coord_system_obj->coordsys eq 'B' || !defined $edit_mode || $edit_mode eq '' ? () : (-coordsys => $coord_system_obj->coordsys)),
-# 			);
-# 	}
 	warn "@args\n" if $verbose;
 	my $modify_ret = BBBikeModify::process(@args);
 	$ret = $modify_ret == BBBikeModify::RET_MODIFIED();

@@ -2798,12 +2798,6 @@ sub insert_point_from_canvas {
 				   @main::ext_selection = ();
 			       });
 	my($middle, $first, $last) = map { join(",", @$_) } @neighbors;
-	if ($SRTShortcuts::force_edit_mode) {
-	    for ($first, $last) {
-		$_ = find_corresponding_orig_point($c, $_);
-	    }
-	    $middle = $main::coord_prefix . join(",", $main::coord_output_sub->(split /,/, $middle));
-	}
 	@main::inslauf_selection = ($first, $middle, $last);
 	warn "insert coords=@main::inslauf_selection\n";
 	if (main::insert_points() && $auto_reload) {
