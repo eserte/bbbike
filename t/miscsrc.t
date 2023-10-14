@@ -117,6 +117,10 @@ for my $f (@files) {
 	    if $f =~ m{/copy-doit.pl$} && !-d "$ENV{HOME}/src/Doit";
 	myskip "$f works only with newer List::Util (>= 1.45, impl of 'uniqstr', and >= 1.33, impl of 'any')", 1
 	    if $f =~ m{/bvg_disruptions_format.pl$} && !eval q{ use List::Util 1.45; 1 };
+	myskip "$f works only with installed Text::CSV_XS", 1
+	    if $f =~ m{/( vbb-stops-to-bbd.pl
+                       |  mudways-enrich.pl
+		       )$}x && !eval { require Text::CSV_XS; 1 };
 
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {

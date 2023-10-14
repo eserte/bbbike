@@ -15,9 +15,25 @@
 use strict;
 use warnings;
 use FindBin;
+use File::Path qw(make_path);
 use Getopt::Long;
 
-my $soil_dwd_dir = "$FindBin::RealBin/../data/soil_dwd";
+use lib "$FindBin::RealBin/..";
+
+use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
+
+my $soil_dwd_dir;
+if (bbbike_aux_dir) {
+    $soil_dwd_dir = bbbike_aux_dir . "/data/soil_dwd";
+} else {
+    $soil_dwd_dir = bbbike_root . "/tmp/soil_dwd";
+    for my $subdir (qw(recent historical)) {
+	if (!-d "$soil_dwd_dir/$subdir") {
+	    warn "INFO: create $soil_dwd_dir/$subdir directory...";
+	    make_path "$soil_dwd_dir/$subdir";
+	}
+    }
+}
 # XXX make list of stations configurable?
 my %stations = qw(
     400 Buch
@@ -62,11 +78,11 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 	print STDERR " historical file does not exist -> need update\n";
 	$need_update = 1;
     } else {
-	my $last_historical_line = `zcat $historical_file | tail -1`;
+	my $last_historical_line = `gunzip -c $historical_file | tail -1`;
 	my(undef, $historical_date) = split /;/, $last_historical_line;
 	my $historical_year = substr($historical_date, 0, 4);
 	my $recent_file = "$soil_dwd_dir/recent/derived_germany_soil_daily_recent_${station}.txt.gz";
-	my $first_recent_line = `zcat $recent_file | head -2 | tail -1`;
+	my $first_recent_line = `gunzip -c $recent_file | head -2 | tail -1`;
 	my(undef, $recent_date) = split /;/, $first_recent_line;
 	my $recent_year = substr($recent_date, 0, 4);
 	if ($recent_year - $historical_year != 1) {
@@ -88,7 +104,7 @@ $pm and $pm->wait_all_children;
 
 chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 for my $station (sort {$a<=>$b} keys %stations) {
-    chomp(my $last_line = `zcat derived_germany_soil_daily_recent_${station}.txt.gz | tail -1`);
+    chomp(my $last_line = `gunzip -c derived_germany_soil_daily_recent_${station}.txt.gz | tail -1`);
     my @f = split /;/, $last_line;
     printf "%-12s: %s %s\n", $stations{$station}||$station, $f[1], $f[11];
 }

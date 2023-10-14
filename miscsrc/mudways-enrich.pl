@@ -14,26 +14,32 @@
 
 use strict;
 use warnings;
+use FindBin;
 
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
-use PerlIO::gzip;
+use IO::Uncompress::Gunzip;
 use Text::CSV_XS;
 
 my %date_to_bf10;
 my $station = '403'; # hardcode to Dahlem for now
 my $station_name = 'Berlin-Dahlem'; # -"-
-my $soil_dwd_dir = "$ENV{HOME}/src/bbbike-aux/data/soil_dwd";
-my $bbd_dir = "$ENV{HOME}/src/bbbike-aux/bbd";
+my $soil_dwd_dir;
+my $data_dir = "$FindBin::RealBin/../data";
 
-GetOptions or
-    die "usage: $0\n"; # no options!
+GetOptions(
+    "soil-dwd-dir=s" => \$soil_dwd_dir
+)
+    or die "$0 --soil-dwd-dir ...\n";
+
+$soil_dwd_dir or die "Please specify --soil-dwd-dir option!";
 
 sub trim { $_[0] =~ s/^\s+//r }
 
 for my $f (bsd_glob("$soil_dwd_dir/*/*_$station.txt.gz")) {
     my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1, sep_char => ';' });
-    open my $fh, '<:gzip', $f or die $!;
+    my $fh = IO::Uncompress::Gunzip->new($f)
+	or die "Can't gunzip $f: $!";
     my @cols = @{ $csv->getline($fh) };
     $csv->column_names(@cols);
     while(my $row = $csv->getline_hr($fh)) {
@@ -44,7 +50,7 @@ for my $f (bsd_glob("$soil_dwd_dir/*/*_$station.txt.gz")) {
 }
 
 my $ofile = "/tmp/mudways_enriched.bbd";
-open my $fh, "$bbd_dir/mudways.bbd" or die $!;
+open my $fh, "$data_dir/mudways" or die $!;
 open my $ofh, ">", "$ofile~" or die $!;
 my $in_global_directives = 1;
 while(<$fh>) {

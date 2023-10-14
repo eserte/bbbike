@@ -976,7 +976,7 @@ EOF
 }
 
 sub prepare_mudways_prognosis {
-    my $dwd_soil = `$bbbike_rootdir/miscsrc/dwd-soil-update.pl -q`;
+    my $dwd_soil = `$^X $bbbike_rootdir/miscsrc/dwd-soil-update.pl -q`;
     print STDERR $dwd_soil;
 
     my $dwd_station = 'Dahlem';
@@ -991,8 +991,16 @@ sub prepare_mudways_prognosis {
 	main::status_message("Cannot get soil data for DWD station '$dwd_station', please see stderr for more information", "die");
     }
 
-    system("$bbbike_rootdir/miscsrc/mudways-enrich.pl"); die $? if $? != 0;
-    system("$bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl --bf10=$bf10 > /tmp/mudways_prognosis.bbd~"); die $? if $? != 0;
+    # XXX some duplication in dwd-soil-update.pl
+    my $soil_dwd_dir;
+    if (defined $bbbike_auxdir) {
+	$soil_dwd_dir = $bbbike_auxdir . "/data/soil_dwd";
+    } else {
+	$soil_dwd_dir = $bbbike_rootdir . "/tmp/soil_dwd";
+    }
+
+    system("$^X", "$bbbike_rootdir/miscsrc/mudways-enrich.pl", "--soil-dwd-dir", $soil_dwd_dir); die $? if $? != 0;
+    system("$^X $bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl --bf10=$bf10 > /tmp/mudways_prognosis.bbd~"); die $? if $? != 0;
     rename "/tmp/mudways_prognosis.bbd~", "/tmp/mudways_prognosis.bbd" or die "Error while renaming: $!";
 }
 
