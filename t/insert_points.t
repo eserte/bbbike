@@ -40,7 +40,6 @@ plan tests => 5 * 2;
 my($logfh,$logfile) = tempfile(SUFFIX => ".log", UNLINK => 1);
 
 my $dudenstr      = "9229,8785"; # ecke Mehringdamm
-my $dudenstr_orig = $dudenstr; # "8796,8817";
 
 BEGIN { $^W = 0 }
 my @methfesselstr = qw(8982,8781 9063,8935);
@@ -68,7 +67,7 @@ for my $use_indexer (0, 1) {
 	{
 	    my @res = run_insert_points("-operation", "grep",
 					@common_args,
-					$dudenstr_orig);
+					$dudenstr);
 	    @res = grep { $_ ne 'fragezeichen-orig' } @res;
 	    is(join(" ", sort @res),
 	       join(" ",
@@ -90,7 +89,7 @@ for my $use_indexer (0, 1) {
 	{
 	    my @res = run_insert_points("-operation", "grep",
 					@common_args,
-					"-noorig", "-coordsys", "H",
+					"-noorig",
 					$dudenstr);
 	    @res = grep { $_ ne 'fragezeichen' } @res;
 	    is(join(" ", sort @res),
@@ -113,7 +112,7 @@ for my $use_indexer (0, 1) {
 	{
 	    my @res = run_insert_points("-operation", "change",
 					@common_args,
-					$dudenstr_orig, "0,0");
+					$dudenstr, "0,0");
 	    @res = grep { $_ ne 'fragezeichen-orig' } @res;
 	    is(join(" ", sort @res),
 	       join(" ",
@@ -135,7 +134,7 @@ for my $use_indexer (0, 1) {
 	{
 	    my @res = run_insert_points("-operation", "change",
 					@common_args,
-					"-noorig", "-coordsys", "H",
+					"-noorig",
 					$dudenstr, "0,0");
 	    @res = grep { $_ ne 'fragezeichen' } @res;
 	    is(join(" ", sort @res),
