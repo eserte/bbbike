@@ -14962,18 +14962,6 @@ sub show_info {
 	    $info_text->insert("end", "\n");
 	}
 
-	# Das war der letzte Link
-	for (1 .. $linkcount) {
-	    $info_text->tagConfigure("link$_", -underline => 1,
-				     -foreground => "blue3");
-	    $info_text->tagBind("link$_", "<Enter>" => sub {
-				    $info_text->configure(-cursor => "hand2");
-				});
-	    $info_text->tagBind("link$_", "<Leave>" => sub {
-				    $info_text->configure(-cursor => undef);
-				});
-	}
-
 	eval {
 	    require Astro::Sunrise;
 	    Astro::Sunrise->VERSION(0.85);
@@ -15034,6 +15022,18 @@ EOF
 		("comments_text",
 		 -lmargin2 => $bbox[0]-1-$info_text->cget(-bd)-$info_text->cget(-highlightthickness),
 		);
+	}
+
+	# At this point there cannot be any new links --- configure all link tags
+	for (1 .. $linkcount-1) {
+	    $info_text->tagConfigure("link$_", -underline => 1,
+				     -foreground => "blue3");
+	    $info_text->tagBind("link$_", "<Enter>" => sub {
+				    $info_text->configure(-cursor => "hand2");
+				});
+	    $info_text->tagBind("link$_", "<Leave>" => sub {
+				    $info_text->configure(-cursor => undef);
+				});
 	}
 
 	if (defined $yview) {
@@ -15133,6 +15133,7 @@ EOF
 		for (@tags) {
 		    if (my($_type,$_id) = $_ =~ m{^osm-(node|way|relation)-(\d+)$}) {
 			push @tags, "https://www.openstreetmap.org/$_type/$_id";
+			push @tags, "https://osm.mapki.com/history/$_type/$_id";
 			($osm_type, $osm_id) = ($_type, $_id);
 		    } elsif ($_ =~ m{\bversion=(\d+)}) {
 			$osm_version = $1;
@@ -15143,7 +15144,7 @@ EOF
 		}
 	    }
 
-	    push @internal_canvas_tags, join("\n", @tags), undef;
+	    push @internal_canvas_tags, map { ($_, undef) } @tags;
 	}
     }
 
@@ -15152,7 +15153,6 @@ EOF
     }
     if (@above_tags) {
 	push @internal_canvas_tags, "\n".M("Oben liegende interne Canvas-Tags").":\n", "bold";
-	push @internal_canvas_tags, join("\n", @above_tags), undef;
     }
     if (@info_txt_and_tag) {
 	unshift @info_txt_and_tag, M("Info").":\n", "bold";
