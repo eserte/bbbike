@@ -72,7 +72,7 @@ print "#: line_dash.?: 4,4\n";
 print "# Angenommener BF10-Wert: $current_bf10\n";
 print "# \n";
 
-print "#: source_file: " . bbbike_aux_dir . "/bbd/mudways.bbd\n"; # XXX Eigentlich müsste source_file in mudways_enriched.bbd reingeschrieben und hier übernommen werden
+print "#: source_file: mudways\n"; # XXX Eigentlich müsste source_file in mudways_enriched.bbd reingeschrieben und hier übernommen werden
 my $mudways_enriched_linenumber_offset = 2; # XXX besser wäre es, wenn in mudways_enriched.bbd auch source_file/line abgelegt werden würde, und wenn man das übernehmen könnte
 
 my $f = "/tmp/mudways_enriched.bbd";
