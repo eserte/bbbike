@@ -35,7 +35,7 @@ my $v;
 GetOptions("v!" => \$v)
     or die "usage: $0 [-v]";
 
-plan tests => 15 * 2;
+plan tests => 19 * 2;
 
 my($logfh,$logfile) = tempfile(SUFFIX => ".log", UNLINK => 1);
 
@@ -200,8 +200,23 @@ for my $use_indexer (0, 1) {
 	       join(" ", qw(qualitaet_s-orig strassen-orig)),
 	       "orig and insertmulti $indexer_label");
 	}
-    }
 
+	{
+	    my($stdout, $stderr, $success) = run_insert_points("-operation", "grep",
+							       @common_args,
+							       "123456789,987654321");
+	    is_deeply $stdout, [];
+	    like $stderr, qr{Punkt nicht gefunden};
+	}
+
+	{
+	    my($stdout, $stderr, $success) = run_insert_points("-operation", "grepline",
+							       @common_args,
+							       "123456789,987654321", "987654321,123456789");
+	    is_deeply $stdout, [];
+	    like $stderr, qr{Strecke nicht gefunden};
+	}
+    }
 }
 
 sub run_insert_points {
