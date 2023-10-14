@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2011,2013,2014,2015,2017,2018,2019,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011,2013,2014,2015,2017,2018,2019,2021,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ use File::Basename qw(dirname basename);
 use File::Temp     qw(tempfile);
 use Getopt::Long;
 
-use BBBikeUtil     qw(is_in_path);
+use BBBikeUtil     qw(is_in_path first);
 
 my @target_defs =
     (
@@ -199,10 +199,6 @@ sub target_addr_suburbs {
 	}
     }
 
-    if (@addr_suburbs_filter_city) {
-	require List::Util;
-    }
-
     # XXX the following should go to a separate module XXX
     # XXX quite slow, takes currently ~20min for Berlin's _addr
 
@@ -231,7 +227,7 @@ sub target_addr_suburbs {
 	     my @f = split /\|/, $r->[Strassen::NAME()];
 	     my $p = [ split /,/, $r->[Strassen::COORDS()]->[0] ];
 	     my($strname,$zip,$city) = @f[0,2,3];
-	     if (@addr_suburbs_filter_city && !List::Util::first(sub { $_ eq $city }, @addr_suburbs_filter_city)) {
+	     if (@addr_suburbs_filter_city && !first(sub { $_ eq $city }, @addr_suburbs_filter_city)) {
 		 warn "ignore @f because it's not in @addr_suburbs_filter_city...\n"
 		     if $debug >= 2;
 		 next;
