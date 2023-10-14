@@ -2654,11 +2654,6 @@ sub addnew {
 	return;
     }
     return if !BBBikeEdit::ask_for_co($top, $file);
-    my $std_prefix = { BBBikeEditUtil::base() }->{basename($file)};
-    my $prefix = "";
-    if ($main::coord_system_obj->coordsys ne $std_prefix) {
-	$prefix = $main::coord_system_obj->coordsys;
-    }
     my $t = $top->Toplevel(-title => M("Neu hinzufügen"));
     $t->transient($top) unless defined $main::transient && !$main::transient;
     $t->Popup(@main::popup_style);
@@ -4504,16 +4499,11 @@ sub add_cross_road_blockings {
 	my $r = shift;
 	for my $p (@{ $r->[Strassen::COORDS()] }) {
 	    my($ox,$oy) = split /,/, $p;
-	    my($prefix) = $ox =~ m/^([^0-9+-]+)/; # stores prefix
-	    $prefix = "" if !defined $prefix;
-	    $ox =~ s/^([^0-9+-]+)//; # removes prefix
-	    my $map = $prefix ? $Karte::map_by_coordsys{$prefix} : $map;
-	    #if (!defined $map) { warn "@$r $p $prefix" }
 	    my($x, $y)  = $map->map2standard($ox,$oy);
 	    my($cx,$cy) = $transpose->($x,$y);
 	    $c->createLine($cx,$cy,$cx,$cy,
 			   -tags => ['pp', "$x,$y",
-				     "ORIG:$prefix$ox,$oy", "pp-$abk"],
+				     "ORIG:$ox,$oy", "pp-$abk"],
 			  );
 	}
     }
@@ -4544,18 +4534,7 @@ sub add_cross_road_blockings {
 	my $maptoken = $args{-map};
 	require Karte;
 	Karte::preload(":all");
-	require BBBikeEditUtil;
 	$map = $Karte::map{$maptoken};
-	my $mapprefix; $mapprefix = $map->coordsys if $map;
-	for my $f (@orig_files) {
-	    my $baseprefix = { BBBikeEditUtil::base() }->{$f};
-	    if (defined $mapprefix && $mapprefix ne $baseprefix) {
-		warn "Ambigous base prefixes ($mapprefix vs $baseprefix)";
-	    } else {
-		$mapprefix = $baseprefix;
-	    }
-	}
-	$map = $Karte::map_by_coordsys{$mapprefix};
 	($s, $nonorig_s);
     }
 
