@@ -492,9 +492,9 @@ Gegenverkehrsregelung	X::inwork 18767,-1343
 #: related ^^^
 #: related antidromic vvv
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:30) vvv
-#: note: mittlerweile auch am Wochenende und an Feiertagen ausgeschaltet (gesehen 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55) vvv
+#: note: mittlerweile auch am Wochenende und an Feiertagen ausgeschaltet (gesehen 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50) vvv
 	X 11089,9751
-#: note: vermutlich am Wochenende und an Feiertagen ausgeschaltet (gesehen 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55)
+#: note: vermutlich am Wochenende und an Feiertagen ausgeschaltet (gesehen 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50)
 	X 11141,9732
 #: note ^^^
 #: note ^^^
@@ -3532,7 +3532,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
-#: osm_watch: node id="6512193990" version="5"
+#: osm_watch: node id="6512193990" version="6"
 #: last_checked: 2023-09-22
 #: check_frequency: 90d
 	X::inwork 14334,7395

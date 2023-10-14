@@ -35073,7 +35073,7 @@ EOF
 #: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023)
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
-#: osm_watch: way id="1047544510" version="1"
+#: osm_watch: way id="1047544510" version="2"
 #: last_checked: 2023-10-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
