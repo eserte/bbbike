@@ -177,34 +177,7 @@ if ($f eq '-') {
 }
 
 if (!defined $use_map) {
-    my $f_dir  = dirname($f);
-    my $f_base = basename($f);
-    if ($base_file) {
-	$f_dir = dirname($base_file);
-	$f_base = basename($base_file);
-    }
-    # the "BASE" file is not really used anymore, as everything's
-    # in standard BBBike coordinates or the coordinate system
-    # may be specified in the file itself with the :map
-    # directive
-    my $BASE   = "$f_dir/BASE";
-    if (open(BASE, $BASE)) {
-    LOOP: {
-	    while(<BASE>) {
-		chomp;
-		my($file, $map) = split(/\s+/, $_);
-		if ($file eq $f_base) {
-		    $use_map = $map;
-		    last LOOP;
-		}
-	    }
-	}
-	close BASE;
-    }
-    if (!defined $use_map) {
-	#die "-map is not set and no entry for $f in $f_base.\nPlease edit $BASE.\n";
-	$use_map = 'H'; # this is now the default
-    }
+    $use_map = 'H'; # this is now the default
 } elsif (!$k_obj) {
     my $karte_token_rx = join("|", keys %Karte::map);
     if ($use_map =~ /^($karte_token_rx)$/) {

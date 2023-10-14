@@ -1889,7 +1889,6 @@ use myclassstruct qw(top
 		     str_file
 		     p_file
 		     coord_system
-		     file2base
 		   );
 
 {
@@ -1946,14 +1945,6 @@ sub create {
     $o->str_file(\%main::str_file);
     $o->p_file(\%main::p_file);
     $o->coord_system($main::coord_system_obj);
-    eval {
-	BBBikeEditUtil::base();
-	$o->file2base(\%BBBikeEditUtil::file2base);
-    };
-    if ($@) {
-	# BASE is not really used these days, so just warn... 
-	warn $@;
-    }
     $o;
 }
 
@@ -2277,22 +2268,10 @@ sub click {
 		    $cat  = $initial_cat = $l->[Strassen::CAT];
 		    $coords = $initial_coords = join(" ", @{$l->[Strassen::COORDS]});
 
-		    my $coordsys = $o->coord_system->coordsys;
-		    my $base = $o->file2base->{basename $file};
-		    ## XXX $base is not really used today, so do not warn...
-		    #main::status_message("Can't get base from $file", "error") if !defined $base;
-
-		    # use only coordinates in coordsys and strip coordsys
 		    my @coords;
 		    foreach my $coord (@{$l->[Strassen::COORDS]}) {
-			my($x,$y,$this_base) = @{Strassen::to_koord1_slow($coord)};
-			if (!defined $this_base) {
-			    $this_base = $base;
-			}
-			local $^W = 0;
-			if ($this_base eq $coordsys) {
-			    push @coords, [$x,$y];
-			}
+			my($x,$y) = @{Strassen::to_koord1_slow($coord)};
+			push @coords, [$x,$y];
 		    }
 
 		    main::mark_street
