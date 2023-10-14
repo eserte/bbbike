@@ -68,26 +68,11 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/miscsrc", # in the case it's required from bbbike
 	);
 use BBBikeUtil;
-use BBBikeUtil qw(save_pwd);
+use BBBikeUtil qw(save_pwd first);
 use BBBikeProcUtil qw(double_fork);
 use File::Basename;
 use Strassen::Dataset;
 use Strassen::Core;
-BEGIN {
-    if (!eval q{
-        use List::Util qw(first);
-	1;
-    }) {
-        *first = sub (&@) {
-            my $sub = shift;
-            for my $elem (@_) {
-                local $_ = $elem;
-                return $elem if $sub->($elem);
-            }
-            undef;
-        };
-    }
-}
 use File::Copy qw(cp);
 
 if (eval { require DB_File::Lock; 1 }) {
