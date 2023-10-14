@@ -16,6 +16,7 @@ use Getopt::Long;
 use Data::Dumper qw(Dumper);
 use Storable qw(dclone);
 
+use BBBikeUtil qw(sum);
 use Strassen::Core;
 use Strassen::Util;
 use Strassen::Lazy;
@@ -26,10 +27,9 @@ use BBBikeTest;
 BEGIN {
     if (!eval q{
 	use Test::More;
-	use List::Util qw(sum);
 	1;
     }) {
-	print "1..0 # skip no Test::More and/or List::Util module\n";
+	print "1..0 # skip no Test::More module\n";
 	exit;
     }
 }
