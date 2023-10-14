@@ -226,6 +226,8 @@ sub do_display {
 	    system("xpdf $filename &");
 	} elsif ($^O eq 'MSWin32') {
 	    system($filename);
+	} elsif ($^O eq 'darwin') {
+	    system("open", $filename); # runs in background
 	} else {
 	    warn "Can't display $filename";
 	}
