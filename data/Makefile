@@ -1461,7 +1461,8 @@ do-checks:	.check_empty_lines \
 	.check_berlin .check_potsdam \
 	.check_ortsschilder .check_ortsschilder2 \
 	${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET} \
-	.check_data_islands_temp_blockings
+	.check_data_islands_temp_blockings \
+	.check_mudways .check_mudways2
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
@@ -1886,6 +1887,15 @@ check-names:	.check_names
 	    })' ${target}
 .endfor
 	touch $@
+
+.check_mudways:    mudways strassen landstrassen landstrassen2
+	$(CHECK_NEIGHBOUR) -type standard -data mudways \
+	    -against strassen -against landstrassen -against landstrassen2
+	@touch $@
+
+.check_mudways2:   mudways
+	$(CHECK_DOUBLE) -linesegs mudways
+	@touch $@
 
 ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 					brunnels
