@@ -40,7 +40,7 @@ sub get_generated_files {
     opendir(DIR, $datadir) or die "Can't opendir $datadir: $!";
     my $f;
     while(defined(my $f = readdir DIR)) {
-	next if $f =~ /^(\.|.*[Mm]akefile.*|README.*|BASE|datachange\.log)/;
+	next if $f =~ /^(\.|.*[Mm]akefile.*|README.*|datachange\.log)/;
 	next if $f =~ /(-info|\.coords\.data|\.desc|\.st|\.inx|\.inx4|\.lock|~)$/;
 	if (-f "$datadir/$f" && $f !~ /-orig$/) {
 	    push @files, $f;

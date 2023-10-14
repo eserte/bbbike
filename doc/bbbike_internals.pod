@@ -10,8 +10,6 @@ The following changes are necessary:
 
 =item * Create data/I<layer>-orig file
 
-=item * Add entry to data/BASE
-
 =item * Add creation rule I<layer>-orig => I<layer> to data/Makefile.
 List the rule in TARGETS
 

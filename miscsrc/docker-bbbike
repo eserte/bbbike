@@ -763,7 +763,7 @@ sub cgi {
     }
     if ($opt{mapserver}) {
 	# XXX Actually it would be easier to copy everything in the repository, not just the files mentioned in MANIFEST
-	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", "data/BASE", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
+	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
 	    my($src, $dest) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
 	    next if -d $src; # ignore directories in miscsrc
 	    $doit->copy($src, $dest);
