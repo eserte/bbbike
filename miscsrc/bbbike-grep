@@ -80,6 +80,7 @@ debug "search $searchterm (case " . ($case_insens ? "in" : "") . "sensitive) ($s
 my $errors = 0;
 my $hits = 0;
 my $file_hits = 0;
+my @removed_lines;
 for my $file (@search_files) {
     debug "  $file...";
     # XXX getting the global directives should be skipped for non-bbd files (coords.data, temp blockings, maybe added files)
@@ -96,12 +97,16 @@ for my $file (@search_files) {
     while(<$fh>) {
 	if ($_ =~ $search_rx) {
 	    chomp;
-	    print "$file:";
+	    my $out = "$file:";
 	    if ($with_line_number) {
-		print "$.:";
+		$out .= "$.:";
 	    }
-	    print $_;
-	    print "\n";
+	    $out .= "$_\n";
+	    if (/^#\s*REMOVED/) {
+		push @removed_lines, $out;
+	    } else {
+		print $out;
+	    }
 	    $local_hits++;
 	}
     }
@@ -112,10 +117,15 @@ for my $file (@search_files) {
     }
 }
 
+if (@removed_lines) {
+    print @removed_lines;
+}
+
 if ($debug) {
     debug "\nStatistics:";
-    debug "  Hits:      $hits";
-    debug "  File hits: $file_hits";
+    debug "  Hits:               $hits";
+    debug "  File hits:          $file_hits";
+    debug "  Removed lines hits: " . scalar(@removed_lines);
 }
 
 if ($errors) {
@@ -158,6 +168,8 @@ may be used. The default is "fixed", unlike grep.
 
 =item * By default the search is done in a case insenitive way (unlike
 grep).
+
+=item * Lines beginning with a "REMOVED" comment will be listed at the end.
 
 =back
 
