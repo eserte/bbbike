@@ -58,7 +58,9 @@ if (!defined $file || $file eq '-') {
     if ($do_check_roundtrip || $if_roundtrip_ok) {
 	die "-check-roundtrip or -if-roundtrip-ok is not supported when reading GPX file from stdin.\n";
     }
-    warn "Reading GPX file from stdin...\n";
+    if (!defined $file) { # be loud only if run without arguments
+	warn "Reading GPX file from stdin...\n";
+    }
     $file = \*STDIN;
 }
 @ARGV and usage "Please specify only one gpx file";
