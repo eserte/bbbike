@@ -210,9 +210,10 @@
       (error "No X selection"))))
 
 (defun bbbike--get-x-selection ()
-  (if (fboundp 'w32-get-clipboard-data)
-      (w32-get-clipboard-data)
-    (x-selection)))
+  (cond
+   ((fboundp 'w32-get-clipboard-data) (w32-get-clipboard-data))
+   ((eq system-type 'darwin) (shell-command-to-string "pbpaste"))
+   (t (x-selection))))
 
 (defun bbbike-toggle-tabular-view ()
   (interactive)
