@@ -778,6 +778,7 @@ sub cgi {
 FROM $opt{dist}:$opt{distver}
 EOF
     $dockerfile .= _dockerfile_invalidate_cache if $opt{'invalidate-apt'};
+    $dockerfile .= _dockerfile_fix_sources_list(\%opt);
     $dockerfile .= _dockerfile_apt_auth(\%opt);
 
     my $fonts_dejavu_package = (
