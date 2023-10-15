@@ -650,12 +650,14 @@
 ;; Otherwise display the output in temporary grep-mode buffer.
 (defun bbbike-grep-with-search-term (search-term &optional is-regexp)
   (let* ((bbbike-rootdir (bbbike-rootdir))
-	 (output (shell-command-to-string
-		  (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
-			  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
-			  " --add-file " bbbike-rootdir "/t/old_comments.t"
-			  (if is-regexp " --rx" " --")
-			  " '" search-term "'")))
+	 (bbbike-datadir (bbbike-datadir))
+	 (bbbike-grep-cmd (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
+				  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
+				  " --add-file " bbbike-rootdir "/t/old_comments.t"
+				  " --reldir " bbbike-datadir
+				  (if is-regexp " --rx" " --")
+				  " '" search-term "'"))
+	 (output (shell-command-to-string bbbike-grep-cmd))
          (lines (split-string output "\n" t))
          (num-lines (length lines)))
     (cond
@@ -677,6 +679,9 @@
             (insert line)
             (insert "\n"))
 	  (grep-mode)
+	  (setq-local compilation-arguments (list bbbike-grep-cmd 'grep-mode nil nil))
+	  (setq-local default-directory bbbike-datadir)
+	  (setq-local compilation-directory (concat bbbike-datadir "/"))
 	  (goto-char (point-min))
 	  )
 	(pop-to-buffer buffer))))))
