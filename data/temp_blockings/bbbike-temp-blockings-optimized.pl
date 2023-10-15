@@ -1340,7 +1340,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -4106,11 +4106,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
 #: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023)
-#: last_checked: 2023-07-17 (mapillary)
+#: last_checked: 2023-10-08 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2023-07-24
-#: REMOVED: next_check: 2023-12-31
-#: REMOVED: next_check: 2024-06-30
+#: next_check: 2024-06-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 ',
          'from' => 1690063200,
@@ -4833,14 +4831,14 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
        },
        undef,
        {
-         'data' => '#: last_checked: 2023-10-11
-#: next_check: 2023-10-15
+         'data' => '#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023)
+#: last_checked: 2023-10-15
+# REMOVED --- #: next_check: 2023-10-15
 	q3::inwork 12632,12630 12690,12769
 ',
          'from' => 1687406400,
          'id' => 3832,
-         'source_id' => 'viz2021:13.437884,52.520284,23.06.2023,06:00',
-         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00 bis 15.10.2023 17:00, evtl. wird die Sperrung verlängert',
+         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
