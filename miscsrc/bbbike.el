@@ -354,6 +354,8 @@
   (setq-local bbbike-mode-load-time (current-time)) ; not really necessary since using auto-revert-mode
   (auto-revert-mode 1)
 
+  (autoload 'org-read-date "org" "Read an Org date." t)
+
   (run-hooks 'bbbike-mode-hook)
   )
 
