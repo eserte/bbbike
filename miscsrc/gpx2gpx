@@ -15,6 +15,9 @@ use warnings;
 use Getopt::Long;
 use XML::LibXML;
 
+use constant XMLNS_SRT     => 'http://rezic.de/gpxext/1';
+use constant XMLPREFIX_SRT => 'srt';
+
 my $v;
 my @opdefs;
 
@@ -46,6 +49,10 @@ GetOptions
 	 my $xpath = $_[1];
 	 push @opdefs, { op => 'trkpts_delete', args => [$xpath] };
 	 $need_xpath_context_functions = 1;
+     },
+     'trk-attrib=s' => sub {
+	 my($key, $val) = split /=/, $_[1], 2;
+	 push @opdefs, { op => 'trk_attrib', args => [$key, $val] };
      },
     )
     or die "usage?";
@@ -205,6 +212,39 @@ sub trkpts_delete {
     }
 }
 
+sub maybe_add_xmlns {
+    my($doc, $ns_uri, $ns_prefix) = @_;
+    my $root = $doc->documentElement;
+    my $ns_attr = "xmlns:$ns_prefix";
+    my $ns_attr_value = $root->getAttribute($ns_attr);
+    if (!$ns_attr_value) {
+	$root->setAttribute($ns_attr, $ns_uri);
+    } elsif ($ns_attr_value ne $ns_uri) {
+	die "xmlns:$ns_prefix already exists, but instead to $ns_uri it points to $ns_attr_value";
+    }
+}
+
+# It's called "trk_attrib", but it is adding an element to the first <trkseg> element
+sub trk_attrib {
+    my($key, $val) = @_;
+    if ($key =~ /^@{[ XMLPREFIX_SRT ]}:(.*)/) {
+	maybe_add_xmlns($doc, XMLNS_SRT, XMLPREFIX_SRT);
+	my($trkseg) = $doc->findnodes('/*[local-name(.)="gpx"]/*[local-name(.)="trk"]/*[local-name(.)="trkseg"]');
+	if (!$trkseg) {
+	    die "GPX file does not have a <trkseg> element.\n";
+	}
+	my $new_elem = XML::LibXML::Element->new($key);
+	$new_elem->appendText($val);
+	if ($trkseg->hasChildNodes) {
+	    $trkseg->insertBefore($new_elem, $trkseg->firstChild);
+	} else {
+	    $trkseg->appendChild($new_elem);
+	}
+    } else {
+	die "Key '$key' must be prefixed by " . XMLPREFIX_SRT . ", other prefixes or prefix-less track attributes are not allowed.\n";
+    }
+}
+
 __END__
 
 =head1 NAME
@@ -253,6 +293,20 @@ Additional functions are registered into the XPath engine:
 =item str-gt(val1,val2): string comparison greater
 
 =item str-ge(val1,val2): string comparison greater-or-equal
+
+=back
+
+=head3 C<--trk-attrib srt:I<attrib>=I<value>>
+
+Add a custom element below the first C<< <trkseg> >>. Currently only
+elements with a C<srt> prefix are allowed. Possible attributes are for
+example:
+
+=over
+
+=item C<--trk-attrib srt:vehicle=bike>
+
+=item C<--trk-attrib "srt:brand=rental bike">
 
 =back
 

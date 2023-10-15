@@ -13,7 +13,7 @@ use lib $FindBin::RealBin, "$FindBin::RealBin/..";
 use Test::More;
 
 use BBBikeUtil qw(bbbike_root);
-use BBBikeTest qw(eq_or_diff gpxlint_string);
+use BBBikeTest qw(eq_or_diff gpxlint_string xmllint_string);
 
 sub count_trksegs ($);
 sub count_trkpts ($);
@@ -29,6 +29,7 @@ BEGIN {
 plan 'no_plan';
 
 my @script = ($^X, bbbike_root . '/miscsrc/gpx2gpx');
+my @gpx2gpsman = ($^X, bbbike_root . '/miscsrc/gpx2gpsman');
 
 my $src_gpx = <<'EOF';
 <?xml version="1.0" encoding="UTF-8"?>
@@ -170,6 +171,14 @@ require_geo_distance {
     ok gpxlint_string($dest_gpx);
     is count_trksegs($dest_gpx), 1, 'still one trkseg (deleted two points on front)';
     is count_trkpts($dest_gpx), 1, 'two trkpts are gone';
+}
+
+{
+    ok run [@script, '--trk-attrib', 'srt:vehicle=bike', '--trk-attrib', 'srt:brand=rental bike'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok xmllint_string($dest_gpx); # do not check with gpxlint_string, srt:... is not in the schema
+    ok run [@gpx2gpsman, '-'], '<', \$dest_gpx, '>', \my $dest_gpsman;
+    like $dest_gpsman, qr{^!T:.*srt:vehicle=bike}m, 'found srt:vehicle';
+    like $dest_gpsman, qr{^!T:.*srt:brand=rental bike}m, 'found srt:brand';
 }
 
 sub count_trksegs ($) {
