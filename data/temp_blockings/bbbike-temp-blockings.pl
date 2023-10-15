@@ -39188,9 +39188,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1371280.php (Neuasphaltierung der Fahrbahn, 6.11.2023 bis 8.12.2023)
+#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
+#: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
 #: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023)
-#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -39465,9 +39466,10 @@ EOF
        text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00, Ende der Bauarbeiten unbekannt', # was: bis 15.10.2023 17:00, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv)
+#: note: laut rbb Sperrung bis 03.11.2023
 #: last_checked: 2023-10-15
-# REMOVED --- #: next_check: 2023-10-15
+#: next_check: 2023-11-03
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -40208,7 +40210,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-10-13 vvv
+#: last_checked: 2023-10-15 vvv
 #: check_frequency: 14d vvv
 nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
 südlicher Weg	2::inwork 10168,10085 10066,10071
@@ -40225,7 +40227,7 @@ EOF
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
 #: osm_watch: way id="4543436" version="30"
-#: last_checked: 2023-10-05 (osm)
+#: last_checked: 2023-10-06 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-12-30
 	2::inwork 6213,14777 6210,14808
@@ -40737,11 +40739,24 @@ EOF
        data  => <<EOF,
 #: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
+#: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: last_checked: 2023-10-11 (daf)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 	q3::inwork 4335,17642 4392,17777
+EOF
+     },
+     { from  => 1697346000, # 2023-10-15 07:00
+       until => 1702656000, # 2023-12-15 17:00
+       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 15.12.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: BLUMBERGER-2023
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
+	q4::inwork 21869,16719 21889,16817 21925,16981
+#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
+	q4::inwork 21944,16805 21889,16817
 EOF
      },
     );

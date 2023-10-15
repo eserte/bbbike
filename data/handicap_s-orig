@@ -247,7 +247,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="29"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-06 (mapillary)
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -264,9 +264,9 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-08-26 vvv
+#: last_checked: 2023-10-12 (mapillary) vvv
 #: check_frequency: 90d vvv
-Grunerstr.: Radweg auf Gehweg	q1 10973,12611 11057,12715
+Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 # REMOVED --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
 #: check_frequency ^^^
@@ -4053,7 +4053,8 @@ Herzfelder Steig: starkes Gefälle	q4; 31321,4226 31331,4248 31342,4254
 (Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20657,12101 20640,12095
 #: XXX_prog BS an der Galenstr., ansonsten q1
 (Galenstr. - Falkenseer Damm): einige Fußgänger, Bordstein	q3 -3499,14806 -3470,14836
-Vorfahrt Urban-Krankenhaus: Krankenhausgelände	q2 10627,9912 10695,9922 10783,9892 10893,9854
+#: note: nur für Rettungsfahrzeuge und Taxis frei, früher q2
+Vorfahrt Urban-Krankenhaus: Krankenhausgelände	q3 10627,9912 10695,9922 10783,9892 10893,9854
 (Grimmelshausenstr. - Pegnitzweg/Wickramstr.): starkes Gefälle, schmaler Pfad	q4; -8057,5395 -8065,5416 -8059,5433
 (Grimmelshausenstr. - Pegnitzweg/Wickramstr.): starke Steigung, schmaler Pfad	q4; -8059,5433 -8065,5416 -8057,5395
 (Grimmelshausenstr. - Pegnitzweg/Wickramstr.): schmaler Pfad	q3 -8059,5433 -8047,5462 -8050,5560

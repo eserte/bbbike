@@ -327,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-10-14 vvv
+#: last_checked: 2023-10-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -365,7 +365,7 @@ Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241
 #: confirmed_by: srt
 #: XXX bleibt das Provisorium?
 #: osm_watch: way id="984857536" version="5"
-#: last_checked: 2023-10-04
+#: last_checked: 2023-10-15
 #: check_frequency: 90d
 provisorische geschützte Radspur	RW3; 13155,9907 13136,9883 13086,9825 13026,9854
 	RW1; 13026,9854 12932,9900
@@ -849,11 +849,11 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
 #: osm_watch: way id="25217949" version="50"
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-06 (mapillary)
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
 #: osm_watch: way id="374344536" version="18"
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-06 (mapillary)
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
@@ -2271,7 +2271,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023)
-#: also_indoor: traffic (B[minor])
+#: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2023-07-18
 #: check_frequency: 90d
 #: next_check: 2023-12-31
@@ -2717,7 +2717,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113
 	RW3; 12279,12113 12295,12197
-Bushaltestelle	RW0; 12295,12197 12279,12113
+Bushaltestelle	RW5; 12295,12197 12279,12113
 	RW4;RW3 12295,12197 12339,12436
 	RW3;RW4 12339,12436 12352,12509
 #: next_check ^^^
@@ -4369,7 +4369,7 @@ Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW1;RW4 6288,14661 6281,14630
 #: by: https://berliner-abendblatt.de/2022/02/09/putlitzbruecke-soll-sicherer-werden/ (Erneuerung der Radwege 2022 geplant)
 #: XXX Was ändert sich bei der Sanierung der Radwege?
-#: last_checked: 2023-07-13
+#: last_checked: 2023-10-06 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-31
 	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14184 6228,14077
