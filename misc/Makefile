@@ -27,7 +27,12 @@ READONLY=	chmod ugo+r,ugo-w
 
 TODAY_DATE!=	date +'%Y%m%d'
 UNAME!=		uname
-OS=		${UNAME:tl}
+.if ${UNAME} == "Darwin"
+# bsdmake from homebrew cannot cope with :tl modifier, so set this without
+OS=darwin
+.else
+OS=${UNAME:tl}
+.endif
 USER!=		id -n -u
 
 all:	check validate targets
