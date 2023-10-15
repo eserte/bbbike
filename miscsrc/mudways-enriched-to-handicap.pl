@@ -97,11 +97,13 @@ $s->read_stream(sub {
     my($r, $dir, $linenumber) = @_;
 
     my @mud_candidates;
+    my @other_candidates;
     for my $mud (@{ $dir->{mud} || [] }) {
 	if (my($date, $bf10, $rest) = $mud =~ /^(\d{4}-\d{2}-\d{2}):\s+BF10=(\d+):\s+(.*)/) {
+	    my($desc, $h) = $rest =~ m{(.*)\th=(q\d[+-]?)}; # may fail to match if q is missing
 	    my $delta = abs($bf10-$current_bf10);
 	    if ($delta <= 20) {
-		if (my($desc, $h) = $rest =~ m{(.*)\th=(q\d[+-]?)}) {
+		if (defined $h) {
 		    push @mud_candidates, { delta => $delta,
 					    date  => $date,
 					    bf10  => $bf10,
@@ -109,6 +111,12 @@ $s->read_stream(sub {
 					    h     => $h,
 					  };
 		}
+	    } elsif (defined $h && $h ne 'q0') {
+		push @other_candidates, { date => $date,
+					  bf10  => $bf10,
+					  desc => $desc,
+					  h    => $h,
+					};
 	    }
 	} else {
 	    warn "Cannot parse mud directive '$mud' in $f:$linenumber...\n";
@@ -118,6 +126,9 @@ $s->read_stream(sub {
     if (@mud_candidates) {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
 	print "$r->[Strassen::NAME]; Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})\t$used_mud_candidate->{h} @{ $r->[Strassen::COORDS] }\n";
+    } elsif (@other_candidates) {
+	my($used_other_candidate) = sort { compare_q_strings($b->{h}, $a->{h}) } @other_candidates;
+	print "$r->[Strassen::NAME]; keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})\t? @{ $r->[Strassen::COORDS] }\n";
     } else {
 	print "$r->[Strassen::NAME]; keine Prognose\t? @{ $r->[Strassen::COORDS] }\n";
     }
@@ -126,6 +137,38 @@ $s->read_stream(sub {
 if ($outfile) {
     rename "$outfile.$$", $outfile
 	or die "Can't rename to $outfile: $!";
+}
+
+sub compare_q_strings {
+    my ($str1, $str2) = @_;
+
+    my $q_regex = qr/^([qQ])(\d+)([+-])?$/;
+
+    $str1 =~ $q_regex;
+    my $q1 = $2;
+    my $tendency1 = $3 // '';
+
+    $str2 =~ $q_regex;
+    my $q2 = $2;
+    my $tendency2 = $3 // '';
+
+    if ($q1 != $q2) {
+        return $q1 <=> $q2;
+    } elsif ($tendency1 eq '' && $tendency2 eq '+') {
+        return 1;
+    } elsif ($tendency1 eq '' && $tendency2 eq '-') {
+        return -1;
+    } elsif ($tendency1 eq '+' && $tendency2 eq '') {
+        return -1;
+    } elsif ($tendency1 eq '-' && $tendency2 eq '') {
+        return 1;
+    } elsif ($tendency1 eq '+' && $tendency2 eq '-') {
+        return -1;
+    } elsif ($tendency1 eq '-' && $tendency2 eq '+') {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 __END__
