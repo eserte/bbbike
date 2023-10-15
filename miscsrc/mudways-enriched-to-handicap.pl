@@ -44,11 +44,27 @@ use Getopt::Long;
 use BBBikeUtil qw(bbbike_aux_dir);
 use Strassen::Core;
 
+sub usage (;$) {
+    my $msg = shift;
+    warn $msg, "\n" if $msg;
+    die "usage: $0 --bf10 soil_moisture_value [-o outfile]\n";
+}
+
 my $current_bf10;
-GetOptions("bf10=i" => \$current_bf10)
-    or die "usage?";
-die "please specify --bf10 option"
+GetOptions(
+	   "bf10=i" => \$current_bf10,
+	   "o|outfile=s" => \my $outfile,
+	  )
+    or usage;
+usage "Please specify --bf10 option."
     if !defined $current_bf10;
+
+my $ofh;
+if ($outfile) {
+    open $ofh, '>', "$outfile.$$"
+	or die "Can't write to $outfile.$$: $!";
+    select $ofh;
+}
 
 print "#: line_width: 5\n";
 print "#: line_dash.?: 4,4\n";
@@ -106,5 +122,10 @@ $s->read_stream(sub {
 	print "$r->[Strassen::NAME]; keine Prognose\t? @{ $r->[Strassen::COORDS] }\n";
     }
 });
+
+if ($outfile) {
+    rename "$outfile.$$", $outfile
+	or die "Can't rename to $outfile: $!";
+}
 
 __END__

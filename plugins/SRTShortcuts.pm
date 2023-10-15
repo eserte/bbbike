@@ -976,8 +976,9 @@ EOF
 }
 
 sub prepare_mudways_prognosis {
-    my $dwd_soil = `$^X $bbbike_rootdir/miscsrc/dwd-soil-update.pl -q`;
-    print STDERR $dwd_soil;
+    open my $fh, '-|', $^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q';
+    my $dwd_soil = do { local $/; <$fh> };
+    print STDERR "Current soil data:\n", $dwd_soil;
 
     my $dwd_station = 'Dahlem';
     my $bf10;
@@ -999,9 +1000,8 @@ sub prepare_mudways_prognosis {
 	$soil_dwd_dir = $bbbike_rootdir . "/tmp/soil_dwd";
     }
 
-    system("$^X", "$bbbike_rootdir/miscsrc/mudways-enrich.pl", "--soil-dwd-dir", $soil_dwd_dir); die $? if $? != 0;
-    system("$^X $bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl --bf10=$bf10 > /tmp/mudways_prognosis.bbd~"); die $? if $? != 0;
-    rename "/tmp/mudways_prognosis.bbd~", "/tmp/mudways_prognosis.bbd" or die "Error while renaming: $!";
+    system($^X, "$bbbike_rootdir/miscsrc/mudways-enrich.pl", "--soil-dwd-dir", $soil_dwd_dir); die $? if $? != 0;
+    system($^X, "$bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl", "--bf10=$bf10", "-o", "/tmp/mudways_prognosis.bbd"); die $? if $? != 0;
 }
 
 sub add_keybindings {
