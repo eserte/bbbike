@@ -26,7 +26,7 @@ use File::Temp qw(tempdir);
 use BBBikeBuildUtil qw(get_pmake get_modern_perl module_path module_version);
 use BBBikeUtil qw(save_pwd2);
 
-plan tests => 9;
+plan tests => 12;
 
 my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
@@ -83,6 +83,23 @@ EOF
 {
     my $perl = get_modern_perl(required_modules => { 'This::Module::Does::Not::Exist' => 0 });
     is $perl, $^X, "Got fallback (current perl)";
+}
+
+{
+    my $perl = get_modern_perl(required_modules => { 'This::Module::Does::Not::Exist' => 0 }, fallback => 0);
+    is $perl, undef, "No fallback";
+}
+
+SKIP: {
+    skip "Capture::Tiny required", 2
+	if !eval { require Capture::Tiny; 1 };
+    my $perl;
+    my $stderr = Capture::Tiny::capture_stderr
+	    (sub {
+		 $perl = get_modern_perl(required_modules => { 'This::Module::Does::Not::Exist' => 0 }, fallback => 0, debug => 1);
+	     });
+    is $perl, undef, "No fallback (with debug option)";
+    like $stderr, qr{No matching perl found, and fallback is disabled}, 'expected debugging message';
 }
 
 {

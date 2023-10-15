@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2017,2018,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2017,2018,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use Exporter 'import';
 @EXPORT_OK = qw(get_pmake module_path module_version get_modern_perl monkeypatch_manifind);
@@ -74,7 +74,13 @@ sub get_modern_perl (;@) {
     if (exists $opt{required_modules}) {
 	%required_modules = %{ delete $opt{required_modules} };
     }
+    my $fallback = exists $opt{fallback} ? delete $opt{fallback} : 1;
+    my $opt_debug = delete $opt{debug};
     die "Unhandled args: " . join(" ", %opt) if %opt;
+
+    my $debug = $opt_debug ? sub ($) {
+	warn $_[0], "\n";
+    } : sub ($) {};
 
     # Convention: perls are available as /opt/perl-5.X.Y/bin/perl
     # Do not use bleadperl or RCs.
@@ -92,23 +98,47 @@ sub get_modern_perl (;@) {
 	}, $_] }
 	grep { m{/perl-5\.(\d+)\.\d+$} && $1 % 2 == 0 }
 	bsd_glob("/opt/perl-5.*.*");
+    my $min_missing;
+    my $fallback_perlpath = $^X;
  PERL_CANDIDATE:
     for my $perldir_candidate (@perldir_candidates) {
+	$debug->("Check perl candidate $perldir_candidate...");
 	my $perlpath = "$perldir_candidate/bin/perl";
 	if (-x $perlpath) {
+	    my $missing = 0;
 	    for my $required_module (keys %required_modules) {
 		local @INC = grep { -d } (
 					  bsd_glob("$perldir_candidate/lib/site_perl/*/*$^O*"),
 					  bsd_glob("$perldir_candidate/lib/site_perl/*"),
 					 ); # only check for site_perl here
 		if (!module_path($required_module)) {
-		    next PERL_CANDIDATE;
+		    $debug->("... module $required_module not available.");
+		    $missing++;
 		}
 	    }
+	    if ($missing) {
+		if ($missing != scalar(keys %required_modules) && $fallback) {
+		    if (!defined $min_missing || $min_missing > $missing) {
+			$debug->("... use as possible fallback perl (missing: $missing)");
+			$fallback_perlpath = $perlpath;
+			$min_missing = $missing;
+		    }
+		}
+		next PERL_CANDIDATE;
+	    }
+	    $debug->("... candidate is sufficient.");
 	    return $perlpath;
+	} else {
+	    $debug->("... no .../bin/perl found.");
 	}
     }
-    return $^X;
+    if ($fallback) {
+	$debug->("Use $fallback_perlpath as fallback.");
+	return $fallback_perlpath;
+    } else {
+	$debug->("No matching perl found, and fallback is disabled.");
+	return undef;
+    }
 }
 
 # See
