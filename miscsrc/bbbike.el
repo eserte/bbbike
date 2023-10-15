@@ -670,7 +670,7 @@
              (parts (split-string line ":"))
              (filename (car parts))
              (line-number (string-to-number (cadr parts))))
-        (find-file filename)
+        (find-file (concat bbbike-datadir "/" filename))
         (goto-line line-number)))
      (t
       (let ((buffer (get-buffer-create "*bbbike-grep-output*")))
