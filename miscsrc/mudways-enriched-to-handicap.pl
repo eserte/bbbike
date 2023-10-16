@@ -37,7 +37,7 @@ SRTShortcuts plugin.
 use strict;
 use warnings;
 use FindBin;
-use lib ("$FindBin::RealBin/../../bbbike", "$FindBin::RealBin/../../bbbike/lib");
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use Getopt::Long;
 
