@@ -3714,7 +3714,7 @@ Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # REMOVED --- #: next_check: 2023-10-01 vvv
 #: osm_watch: way id="1198442169" version="6"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
-#: osm_watch: way id="1152661787" version="14"
+#: osm_watch: way id="1152661787" version="15"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503 59,15518
 #: osm_watch: way id="1198395777" version="11"
 Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
@@ -3761,6 +3761,7 @@ Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5
 #: check_frequency: 90d
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
+#: by: https://www.berliner-woche.de/falkenberg/c-bauen/noch-gibt-es-etliche-defizite-im-neu-entstandenen-quartier-mein-falkenberg_a395776 (kein Termin für die Öffnung)
 #: osm_watch: way id="693060662" version="20"
 #: XXX Straße fertiggestellt, durch Bauzäune abgesperrt
 #: last_checked: 2023-10-12 (osm)
@@ -3818,7 +3819,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: last_checked: 2023-10-11
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
-#: osm_watch: way id="30441457" version="30"
+#: osm_watch: way id="30441457" version="31"
 #: last_checked: 2023-09-25
 #: check_frequency: 60d
 Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
@@ -4351,7 +4352,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6"
 #: osm_watch: way id="1095306828" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-09-15
+#: last_checked: 2023-10-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4392,7 +4393,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-10-12
+#: last_checked: 2023-10-16
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4402,7 +4403,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2023-10-12 vvv
+#: last_checked: 2023-10-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
