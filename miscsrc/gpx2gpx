@@ -224,22 +224,27 @@ sub maybe_add_xmlns {
     }
 }
 
-# It's called "trk_attrib", but it is adding an element to the first <trkseg> element
 sub trk_attrib {
     my($key, $val) = @_;
     if ($key =~ /^@{[ XMLPREFIX_SRT ]}:(.*)/) {
 	maybe_add_xmlns($doc, XMLNS_SRT, XMLPREFIX_SRT);
-	my($trkseg) = $doc->findnodes('/*[local-name(.)="gpx"]/*[local-name(.)="trk"]/*[local-name(.)="trkseg"]');
-	if (!$trkseg) {
-	    die "GPX file does not have a <trkseg> element.\n";
+	my($trk) = $doc->findnodes('/*[local-name(.)="gpx"]/*[local-name(.)="trk"]');
+	if (!$trk) {
+	    die "GPX file does not have a <trk> element.\n";
+	}
+	my($extensions) = $trk->findnodes('./*[local-name(.)="extensions"]');
+	if (!$extensions) {
+	    $extensions = XML::LibXML::Element->new('extensions');
+	    my($trkseg) = $trk->findnodes('./*[local-name(.)="trkseg"]');
+	    if (!$trkseg) {
+		$trk->appendChild($extensions);
+	    } else {
+		$trk->insertBefore($extensions, $trkseg);
+	    }
 	}
 	my $new_elem = XML::LibXML::Element->new($key);
 	$new_elem->appendText($val);
-	if ($trkseg->hasChildNodes) {
-	    $trkseg->insertBefore($new_elem, $trkseg->firstChild);
-	} else {
-	    $trkseg->appendChild($new_elem);
-	}
+	$extensions->appendChild($new_elem);
     } else {
 	die "Key '$key' must be prefixed by " . XMLPREFIX_SRT . ", other prefixes or prefix-less track attributes are not allowed.\n";
     }
@@ -298,9 +303,9 @@ Additional functions are registered into the XPath engine:
 
 =head3 C<--trk-attrib srt:I<attrib>=I<value>>
 
-Add a custom element below the first C<< <trkseg> >>. Currently only
-elements with a C<srt> prefix are allowed. Possible attributes are for
-example:
+Add a custom element into an C<< <extensions> >> section below the
+first C<< <trk> >>. Currently only elements with a C<srt> prefix are
+allowed. Possible attributes are for example:
 
 =over
 

@@ -13,7 +13,7 @@ use lib $FindBin::RealBin, "$FindBin::RealBin/..";
 use Test::More;
 
 use BBBikeUtil qw(bbbike_root);
-use BBBikeTest qw(eq_or_diff gpxlint_string xmllint_string);
+use BBBikeTest qw(eq_or_diff gpxlint_string);
 
 sub count_trksegs ($);
 sub count_trkpts ($);
@@ -82,6 +82,9 @@ my $src_gpx = <<'EOF';
 EOF
 ok gpxlint_string($src_gpx), 'source GPX looks valid';
 is count_trksegs($src_gpx), 1, 'source GPX has just one trkseg';
+
+(my $src_gpx_with_trkext = $src_gpx) =~ s{<trkseg>}{<extensions><gpxx:TrackExtension><gpxx:DisplayColor>Magenta</gpxx:DisplayColor></gpxx:TrackExtension></extensions>\n<trkseg>};
+ok gpxlint_string($src_gpx_with_trkext), 'source GPX with trk extensions looks valid';
 
 {
     ok !(run [@script, '--invalid-option'], '2>', \my $stderr), 'error on invalid option';
@@ -175,10 +178,18 @@ require_geo_distance {
 
 {
     ok run [@script, '--trk-attrib', 'srt:vehicle=bike', '--trk-attrib', 'srt:brand=rental bike'], '<', \$src_gpx, '>', \my $dest_gpx;
-    ok xmllint_string($dest_gpx); # do not check with gpxlint_string, srt:... is not in the schema
+    ok gpxlint_string($dest_gpx);
     ok run [@gpx2gpsman, '-'], '<', \$dest_gpx, '>', \my $dest_gpsman;
     like $dest_gpsman, qr{^!T:.*srt:vehicle=bike}m, 'found srt:vehicle';
     like $dest_gpsman, qr{^!T:.*srt:brand=rental bike}m, 'found srt:brand';
+}
+
+{
+    ok run [@script, '--trk-attrib', 'srt:vehicle=bike', '--trk-attrib', 'srt:brand=rental bike'], '<', \$src_gpx_with_trkext, '>', \my $dest_gpx;
+    ok gpxlint_string($dest_gpx);
+    ok run [@gpx2gpsman, '-'], '<', \$dest_gpx, '>', \my $dest_gpsman;
+    like $dest_gpsman, qr{^!T:.*srt:vehicle=bike}m, 'found srt:vehicle (former gpx already has <trk><extensions>)';
+    like $dest_gpsman, qr{^!T:.*srt:brand=rental bike}m, 'found srt:brand (former gpx already has <trk><extensions>)';
 }
 
 sub count_trksegs ($) {
