@@ -17497,12 +17497,14 @@ EOF
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: SILVESTER-YYYY
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72
 #: by: https://viz.berlin.de/2020/12/welcome21/
 #: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
+#: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -25559,6 +25561,7 @@ EOF
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: SILVESTER-YYYY
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
@@ -32567,7 +32570,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Passauer Str.: Fahrbahn gesperrt (Stand August 2023), Ende der Bauarbeiten unbekannt',
+       text  => 'Passauer Str.: Fahrbahn gesperrt (Stand Oktober 2023), Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
        data  => <<EOF,
@@ -32578,10 +32581,11 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-gebaeude-ensemble-an-der-passauer-strasse_a365087 (Bauarbeiten noch zwei Jahre (ab Mitte November 2022))
+#: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-09-29
+#: last_checked: 2023-10-17 (daf)
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -39242,7 +39246,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-10-09 vvv
+#: last_checked: 2023-10-17 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -40400,7 +40404,7 @@ EOF
        until => 1697554800, # 2023-10-17 17:00
        text  => 'Invalidenstr.: Radspur zwischen Gartenstr. und Bergstr. gesperrt, vom 12.09.2023 07:00 bis 17.10.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.391903,52.531971,12.09.2023,07:00',
+       source_id => 'viz2021:13.391903,52.531971,12.09.2023,07:00', # inaktiv
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1701456853991841866#m
 	q4::inwork; 9383,13986 9469,14004 9659,14043
@@ -40760,8 +40764,12 @@ EOF
        data  => <<EOF,
 #: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
-	q4::inwork 21869,16719 21889,16817 21925,16981
+# REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
+#: osm_watch: way id="1126670512" version="5"
+	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
+#: osm_watch: way id="9030384" version="38"
+#: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
 EOF
      },

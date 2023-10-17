@@ -2868,10 +2868,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-gebaeude-ensemble-an-der-passauer-strasse_a365087 (Bauarbeiten noch zwei Jahre (ab Mitte November 2022))
+#: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-09-29
+#: last_checked: 2023-10-17 (daf)
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -2879,7 +2880,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => undef,
          'id' => 3320,
          'source_id' => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
-         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand August 2023), Ende der Bauarbeiten unbekannt',
+         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Oktober 2023), Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4745,7 +4746,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-10-09 vvv
+#: last_checked: 2023-10-17 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -5247,17 +5248,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'type' => 'handicap',
          'until' => 1702656000
        },
-       {
-         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1701456853991841866#m
-	q4::inwork; 9383,13986 9469,14004 9659,14043
-',
-         'from' => 1694408400,
-         'id' => 3906,
-         'source_id' => 'viz2021:13.391903,52.531971,12.09.2023,07:00',
-         'text' => 'Invalidenstr.: Radspur zwischen Gartenstr. und Bergstr. gesperrt, vom 12.09.2023 07:00 bis 17.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1697554800
-       },
+       undef,
        undef,
        {
          'data' => '	q3::inwork 8486,16425 8467,16718
@@ -5580,8 +5571,12 @@ bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,
        {
          'data' => '#: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
-	q4::inwork 21869,16719 21889,16817 21925,16981
+# REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
+#: osm_watch: way id="1126670512" version="5"
+	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
+#: osm_watch: way id="9030384" version="38"
+#: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
 ',
          'from' => 1697346000,

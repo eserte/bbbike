@@ -852,8 +852,9 @@ Flughafen Berlin-Brandenburg	RG 19866,-3009 19540,-3166 19348,-3339 18797,-3862
 Industrieanlagen Schwedt	RG 56949,84276 57090,84366 57204,84387 57431,84394 57639,84294 60308,82311 61171,81815 63354,80593 64344,79488 66849,76689
 Tanklager Seefeld	R0 28720,24012 28821,24023 28934,24001 29017,23967 29113,23872 29147,23749 29136,23404 29110,23220 29062,23103 28572,22601
 # 
-#: XXX "RB24 Nord" fährt hier 2023 nicht; sobald die beiden Stränge der "RB24 Nord" wieder verbunden sind, kann die ignore_disconnected-Direktive entfernt werden vvv
-#: next_check: 2023-12-10 vvv
+#: XXX "RB24 Nord" fährt hier 2023 und 2024 nicht; sobald die beiden Stränge der "RB24 Nord" wieder verbunden sind, kann die ignore_disconnected-Direktive entfernt werden vvv
+#: by: https://www.bahninfo-forum.de/read.php?9,763552,781544#msg-781544 (Inbetriebnahme Oktober 2024)
+#: next_check: 2024-10-01 vvv
 # Karower Kreuz (Hohenschönhausen - Bernau)
 	RBau 14251,22129 14152,22320 14128,22471 14142,22578 14210,22756
 RE66	RC 14210,22756 14253,22818 14542,23259 14608,23364 14809,23679 15088,24137 15625,24961 16072,25690 16206,25846 16368,26042 16810,26492 17118,26775 17633,27219 18134,27677 18899,28383 19113,28576 19350,28731 22634,30097 22841,30263
