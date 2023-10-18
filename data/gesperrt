@@ -987,6 +987,7 @@ Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 (Vergissmeinnichtweg - Weidenkätzchenweg)	1s 21503,114 21435,99
 (Weidenkätzchenweg - Buschwindröschenweg)	1s 21435,99 21367,84
 (Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
+Mittelstreifen	3nocross::ignrte 14853,7451 14775,7385 14758,7373
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3422,7 +3423,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
-Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
+Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,11275
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935

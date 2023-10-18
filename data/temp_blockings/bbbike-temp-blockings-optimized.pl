@@ -2897,14 +2897,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="29"
 #: osm_watch: way id="165832806" version="33"
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-18
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
 # REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Anfang Oktober 2023: keine Sperrung)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Mitte Oktober 2023: keine Sperrung)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3255,6 +3255,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1375439.php
+#: by: https://www.berliner-woche.de/schmargendorf/c-bauen/fahrbahn-wird-saniert_a396928
 #: source_id: viz2021:13.27859,52.47409,16.10.2023,06:00 (bis 31.10.2023)
 # REMOVED --- #: next_check_id: MESSELSTR-2022 --- #: also_indoor: traffic (H)
 # REMOVED (zwischen Pücklerstr. und Heydenstr.) ---	q4::inwork 2397,6960 2304,7059 2139,7239
@@ -4746,7 +4747,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-10-17 vvv
+#: last_checked: 2023-10-18 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682

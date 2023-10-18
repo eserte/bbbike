@@ -1565,6 +1565,8 @@ Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 # 
 (Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
 # 
+Dammweg: Mittelstreifen	3nocross 14853,7451 14775,7385 14758,7373
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3755,6 +3757,8 @@ Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=744224#post744224
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_44_4149_4196_online.pdf (Bebauungsplan 1-94, hat es was mit diesen Bauarbeiten zu tun?)
+#: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1372212.php
+#: by: https://datenbox.stadt-berlin.de/filr/public-link/file-download/ff8080828a6a2600018b3c77fccb05f5/28322/-3467737955065917509/Bebauungsplanentwurf_B-Plan_1-94.pdf ("Gehrecht")
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
 #: last_checked: 2023-09-16
@@ -3906,9 +3910,10 @@ Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,53
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2023-08-19
+#: historical_note: früher: "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten
+#: last_checked: 2023-10-18
 #: check_frequency: 60d
-Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
+Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 # 
 # REMOVED (mittlerweile fest eingezäunt) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist. --- #: last_checked: 2023-07-03 --- #: check_frequency: 180d --- Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
@@ -3916,7 +3921,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-10-17
+#: last_checked: 2023-10-18
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4122,7 +4127,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2023-10-09 vvv
+#: last_checked: 2023-10-18 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 #: osm_watch: way id="1061057020" version="8"
 #: note: wobei der Gehweg bereits passierbar sein kann
@@ -4393,7 +4398,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-10-16
+#: last_checked: 2023-10-18
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157

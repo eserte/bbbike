@@ -1248,7 +1248,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-10-17 vvv
+#: last_checked: 2023-10-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2115,7 +2115,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-09-24 vvv
+#: last_checked: 2023-10-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2145,7 +2145,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 # REMOVED --- #: next_check_id: KIEFHOLZ-2015 --- #: XXX wann wird die alte Radspur wieder hergestellt? --- #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/mathilde-rathenau-bruecke-ueber-die-a-100-uebergeben_a202954 --- #: by: https://www.bahninfo-forum.de/read.php?9,442687,750179#msg-750179 (Rückverschwenkung der S-Bahn) --- #: source_id: 2147342958 --- #: source_id: viz2021:13.458778,52.485562,28.11.2022,06:00 (bis 16.12.2022) (inaktiv) -- #: also_indoor: traffic (H[unvollständig],G,B) --- #: last_checked: 2022-12-08 --- #: check_frequency: 60d --- #: next_check: 2022-12-16 --- ab der provisorischen Brücke als Gehwegradweg geführt
 	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
-	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 14976,8053 15053,7966
+	RW4;RW4 14261,8851 14318,8790 14341,8763 14363,8738 14560,8528 14700,8368 14841,8207 14976,8053 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 # 
 # REMOVED (realisiert) --- #: XXX Grünbeschichtung in der Reinickendorfer Str. vorgesehen vvv --- #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/ --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen) --- #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962 --- #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?) --- #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920 --- #: by: https://api.fixmyberlin.de/api/projects/409 --- #: priority: #D vvv --- #: last_checked: 2020-06-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-07-01 vvv

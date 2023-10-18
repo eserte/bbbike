@@ -14,7 +14,7 @@
 #: XXX und außerdem auch schauen, ob es wieder zum Mergenthalerring wieder ein Tor gibt und dieses ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="7"
-#: last_checked: 2023-08-19 vvv
+#: last_checked: 2023-10-18 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="4"
@@ -295,7 +295,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -12974,7 +12974,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0- 10547,15586 10542,15609
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-18
 #: check_frequency: 45d
 Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
@@ -15835,7 +15835,7 @@ Im Eck: Kopfsteinpflaster	Q2- 10014,1123 10162,1054
 # 
 #: by: Romana Miftari: vvv
 #: confirmed_by: srt
-Mörikestr.: guter Asphalt	Q0 16060,6850 15946,6722 15830,6579
+Mörikestr.: guter Asphalt	Q0 16060,6850 15946,6722 15884,6653 15830,6579
 #: corrected_by: srt (Q2 -> Q0-)
 Heidekampweg: Asphalt mit leichten Wellen	Q0- 15725,6235 15740,6261 15715,6394 15696,6507
 #: corrected_by: srt (Q2 -> Q1-), später auf Q0
@@ -21622,6 +21622,7 @@ Freiwaldauer Weg: schlechtes Kopfsteinpflaster	Q3 2595,3356 2510,3447 2457,3547
 #: by ^^^
 # 
 #: by: Sylvia Grotjohann-Ernst:
+#: confirmed_by: srt
 Peter-Anders-Str.: Asphalt	Q0 15334,6492 15356,6532 15350,6781
 # 
 #: by: Bernd Albinus: vvv
@@ -23866,7 +23867,7 @@ Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
 #: corrected_by: srt (... -> ..., neu gemacht)
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-18
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-08-11
 Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1+ 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
