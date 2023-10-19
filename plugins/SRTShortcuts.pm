@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.13;
+$VERSION = 2.14;
 
 use File::Glob qw(bsd_glob);
 
@@ -192,6 +192,19 @@ EOF
 iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEXAAAAAgAD////////GbSb/
 AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4AQXBsRFAQBQFwPXmy+lIoFDxdaEDkRqEF4gY
 M3aHhkAgEKhzu57A0BCot/Ze/bi/QKZ1rhotAoEfzicL4tjT/h8AAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{usbahn}) {
+	# Created manually using ubahn.png and sbahn.png
+	$images{usbahn} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<'EOF');
+iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5woTEzE60biiYwAAAH5JREFUKM+Vk1EOwCAIQ9vFe4sn
+7z4WjeLYhD+I9JUIBEyIwszl4JxeyIRBMAwYO1mqT4FtvO01AGDj5qJ8geYGVW0Cx7bZCFUtI6Rm
+TpFVtdJcHJEjkZRtL3D9zbh9UZYcCYzmvhzzYni7i4iB9Lv91hxtGFOH4Q6kJA9jwd/1YTOeKzXm
+wgAAAABJRU5ErkJggg==
 EOF
     }
 }
@@ -448,7 +461,7 @@ EOF
 				      prepare_mudways_prognosis();
 				  },
 			          ),
-		layer_checkbutton([$do_compound->('Exits (ÖPNV)')],
+		layer_checkbutton([$do_compound->('Exits (ÖPNV)', $images{usbahn})],
 				  'str', "$main::datadir/exits",
 				  maybe_orig_file => 1),
 		## car related
