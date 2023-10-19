@@ -17,7 +17,7 @@
 #: last_checked: 2023-10-18 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
-#: osm_watch: way id="680579631" version="4"
+#: osm_watch: way id="680579631" version="6"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -588,6 +588,7 @@ Swinemünder Str.: Asphalt	Q0 10116,14799 10155,14719
 Swinemünder Str.: Kopfsteinpflaster	Q2 10155,14719 10189,14649
 Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 # 
+#: next_check_id: SWINEMUENDER-2023
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.794096.php (bis 2023) (mittlerweile bis 2024/25)
@@ -602,9 +603,11 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (bis Oktober 2023)
 #: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2023 - 3. Quartal 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
+#: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-07-10
-#: check_frequency: 150d
+#: last_checked: 2023-10-19 (daf)
+#: check_frequency: 120d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -1118,7 +1121,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-10-13
+#: last_checked: 2023-10-19
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3848,6 +3851,7 @@ Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,1446
 #: by: https://www.berliner-woche.de/spandau/c-bauen/neugestaltung-des-marktplatzes-in-der-spandauer-altstadt-erneut-verschoben_a366173 (Baustart nach 2023)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1374532.php (Umbau ab 2025)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-spandau-kleinere-projekte/?postID=749278#post749278
+#: by: https://www.berliner-woche.de/spandau/c-bauen/der-marktplatz-in-der-altstadt-soll-ab-2025-umgebaut-werden_a396205
 #: last_checked: 2023-08-20
 # REMOVED --- #: check_frequency: 240d
 #: next_check: 2025-03-01
@@ -6902,6 +6906,9 @@ Aidastr.: unbefestigte Straße	Q2 12462,17814 12517,18034
 Rudolf-Spitzley-Str.: Beton	Q0- 13031,17775 13034,17895
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13760,15187 13801,15256
 Gürtelstr. (Weißensee) [Wohngebiet]: Beton	Q1 13801,15256 13891,15206
+Gürtelstr. (Weißensee, Prenzlauer Berg) [36-39]: Beton	Q1 13378,15709 13325,15619
+(Michelangelostr. - Gürtelstr.): Beton/Verbundsteinpflaster	Q1 13279,15468 13337,15560
+(Michelangelostr. - Gürtelstr.): Beton	Q1 13337,15560 13358,15596 13325,15619
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0- 13801,15256 13724,15309
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13724,15309 13700,15375 13687,15387 13716,15437
 Syringenplatz: Asphalt	Q0 14025,14519 14042,14249
@@ -10826,10 +10833,13 @@ Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10050,15824
-(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10050,15824 10061,15775 10045,15754 10079,15661
+(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10050,15824 10061,15775 10045,15754 10071,15684
+#: historical_note: bis Herbst 2023: wassergebundene Decke, Q1
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10071,15684 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
 # REMOVED --- (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10091,15630 10070,15624 10162,15349
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke, teilweise Schotter	Q2+ 10091,15630 10155,15473
+(Mauerpark - Lichtburgring): Kleinsteinpflaster	Q1 10071,15684 10057,15680
 Lindenschwärmerweg: Asphalt	Q0 21308,11075 21294,11097 21187,11132
 Apollofalterallee [64-98]: Asphalt	Q0 21354,11101 21326,11122
 Apollofalterallee [64-98]: Verbundsteinpflaster	Q1+ 21326,11122 21194,11166
@@ -12127,7 +12137,7 @@ Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059 17319,15038
 #: note: während der Sperrungen im Mauerpark asphaltiert gewesen
 (Gleimstr. - Mauerpark): unbefestigter Weg	Q2+ 10170,15659 10228,15488
 Lichtburgring: Asphalt	Q0 10004,15636 9965,15731 9933,15815
-Lichtburgring: Betonpflaster	Q0- 9997,15884 10016,15823 10041,15742 10059,15673 10022,15659
+Lichtburgring: Betonpflaster	Q0- 9997,15884 10016,15823 10041,15742 10057,15680 10059,15673 10022,15659
 Lichtburgring: Betonpflaster	Q0- 9965,15731 10041,15742
 Lichtburgring: Betonpflaster	Q0- 9933,15815 10016,15823
 Bärbel-Bohley-Ring: Asphalt	Q0 9933,15815 9917,15813 9744,15793
@@ -19490,7 +19500,7 @@ Haßlingerweg: Asphalt	Q0 7644,17054 7894,17073 7926,17050
 #: confirmed_by: srt
 (Michelangelostr. - Straße 106): mäßiger Beton	Q1- 13854,15129 13867,15111 14314,14841
 #: corrected_by: srt (Feldweg, Q2 -> ...)
-(Michelangelostr. - Straße 106): mäßiger Beton	Q1- 14314,14841 14599,14679
+(Michelangelostr. - Straße 106): mäßiger Beton	Q1- 14314,14841 14349,14821 14599,14679
 #: by: ^^^
 # 
 #: by: Annika Weidler:
@@ -20276,7 +20286,7 @@ Uhlandstr. (Lichtenrade): Kopfsteinpflaster, OK	Q1- 10425,67 10469,-52
 # 
 #: by: Torsten Franik: vvv
 #: confirmed_by: srt
-Gürtelstr.: guter Asphalt	Q0 13307,15758 13409,15687 13459,15653
+Gürtelstr.: guter Asphalt	Q0 13307,15758 13378,15709 13409,15687 13459,15653
 #: corrected_by: srt (guter Asphalt, Q0 -> ...)
 Gürtelstr.: Asphalt mit Schäden	Q1 13459,15653 13555,15596
 #: note: Quote "übles Kopfsteinpflaster"

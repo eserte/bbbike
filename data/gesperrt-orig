@@ -1016,6 +1016,7 @@ Rudererweg: Privatweg, Tor der Einfahrt	2 -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Privatweg	2 -3689,11291 -3679,11248 -3673,11216
 Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 #: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet?
+#: osm_watch: way id="57356015" version="18"
 #: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild
 #: last_checked: 2023-09-20 (mapillary)
 Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
@@ -3390,6 +3391,8 @@ Drängelgitter	BNP:5 -7182,15524
 #: XXX_prog: BS (wg. Umfahrung der Schranke; min. 1x; wenn zugeparkt ist, dann 2x)
 Drängelgitter und Schranke	BNP:5::trailer=15 14274,12190
 Drängelgitter	BNP:5 14314,14841
+Schwingtor	BNP:5::trailer=10 13867,15111
+Schwingtor	BNP:5::trailer=10 14349,14821
 # REMOVED (nur noch auf einer Seite) --- Drängelgitter	BNP:5 20586,10935
 Drängelgitter	BNP:3::trailer=10 12373,2375
 Drängelgitter	BNP:3::trailer=10 12280,2330
@@ -3823,10 +3826,17 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: last_checked: 2023-10-11
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # 
+#: next_check_id: MAUERPARK-2022
 #: osm_watch: way id="30441457" version="31"
-#: last_checked: 2023-09-25
+#: last_checked: 2023-10-18 (mapillary)
 #: check_frequency: 60d
-Mauerweg: Weg gesperrt	2::inwork 10091,15630 10155,15473
+Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
+# 
+#: next_check_id: MAUERPARK-2022
+#: osm_watch: way id="946925509" version="6"
+#: last_checked: 2023-10-18 (mapillary)
+#: check_frequency: 60d
+Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1306507.php (Bauarbeiten: 29. März 2023 - voraussichtlich Ende September 2024)
 #: by: https://www.berliner-woche.de/wedding/c-bauen/schoenheitskur-fuer-weddingplatz_a375989
@@ -3956,7 +3966,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wexstra%C3%9Fe-27-bruchsaler-stra%C3%9Fe.1254/#post-19647
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
-#: last_checked: 2023-10-03 (architektur-urbanistik)
+#: last_checked: 2023-10-18 (mapillary)
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5522,8011 5520,8132 5573,8197
 # 
@@ -4355,9 +4365,9 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: XXX laut osm ist die Schule 2023-02 fertig
 # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6"
-#: osm_watch: way id="1095306828" version="5"
+#: osm_watch: way id="1095306828" version="6"
 #: also_indoor: traffic (G)
-#: last_checked: 2023-10-16
+#: last_checked: 2023-10-18 (osm)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4498,7 +4508,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="19"
 #: priority: #A
-#: last_checked: 2023-10-13
+#: last_checked: 2023-10-19 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4565,14 +4575,14 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-13
+#: last_checked: 2023-10-19 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-02 (daf)
+#: last_checked: 2023-10-19 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -4761,7 +4771,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 # REMOVED (fertig) --- Am Groen: Bauarbeiten, noch nicht geöffnet	2:inwork 22137,11033 22146,10995
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wenn-ploetzlich-der-weg-zum-haus-abgeschnitten-ist_a188002 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8036 --- #: next_check_id: MOEWENWEG-2017 --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 30d --- Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
 # REMOVED --- #: next_check_id: BRUECKENSTRASSENBRUECKE-2018 --- #: priority: #C --- #: next_check: 2018-11-15 --- #: valid: -20181115 --- Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
-# REMOVED --- #: next_check_id: LICHTBURGRING-2017 --- #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen? --- #: osm_watch: way id="645183213" version="1" --- #: last_checked: 2019-01-23 --- Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15742 10059,15673 10022,15659
+# REMOVED --- #: next_check_id: LICHTBURGRING-2017 --- #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen? --- #: osm_watch: way id="645183213" version="1" --- #: last_checked: 2019-01-23 --- Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15742 10057,15680 10059,15673 10022,15659
 # REMOVED (notice by Ulfert) --- #: next_check_id: BENJAMINFRANKLIN-2018 --- #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt") --- #: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html --- #: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/ --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr) --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767 --- #: by: https://www.facebook.com/ChariteUniversitaetsmedizinBerlin/photos/a.359588317914082/373973493142231/?type=3 --- #: by: http://www.lbv.brandenburg.de/3372.htm --- #: by: http://www.lbv.brandenburg.de/dateien/luftfahrt/hslp_berlin_charite_PDK_mit_Siegel.pdf --- #: by: https://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-muss-laenger-an-seiner-voruebergehenden-unterkunft-am-flughafen-schoenefeld-bleiben/ (1. Quartal 2020) --- #: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/03/98168/klinikum-benjamin-franklin-der-neue-hubschrauberlandeplatz-wird-erst-anfang-2020-in-betrieb-gehen/ (1. Quartal 2020) --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrspolitisch-wichtige-themen-in-der-ersten-bvv-sitzung-im-neuen-jahr_a247462 (Freigabe voraussichtlich Ende Januar 2020) --- #: also_indoor: search Paul-Schwarz-Promenade --- #: also_indoor: search Benjamin-Franklin Hubschrauber --- #: osm_watch: way id="633600854" version="1" --- #: priority: #A --- #: last_checked: 2019-10-21 --- #: next_check: 2020-01-31 --- #: valid: -20200331 --- Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # REMOVED (offen) --- #: XXX wann ist hier wieder offen? --- #: last_checked: 2020-04-16 --- #: check_frequency: 10d --- Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # REMOVED --- #: next_check_id: FRANZOESISCHE-2018 --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-mittwoch-10-10-18- --- #: by: https://twitter.com/VIZ_Berlin/status/1049983541243781120 --- #: XXX rund um das Ministeriums für Ernährung, Landwirtschaft und Verbraucherschutz --- #: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen", trotzdem in der Anfangszeit häufiger nachprüfen --- #: XXX in der Glinkastr. Einbahnstraße offen für Radfahrer

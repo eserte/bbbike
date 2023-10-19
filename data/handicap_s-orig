@@ -54,7 +54,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14710,11626 14651
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollst‰ndig],H[unvollst‰ndig],G[unvollst‰ndig],W)
-#: last_checked: 2023-10-16 vvv
+#: last_checked: 2023-10-19 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nˆrdlich und s¸dlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964
@@ -332,7 +332,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die H‰lfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-10-13
+#: last_checked: 2023-10-19 (webcam)
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -715,8 +715,8 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 54
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
-#: osm_watch: way id="640465875" version="12"
-#: last_checked: 2023-10-04
+#: osm_watch: way id="640465875" version="13"
+#: last_checked: 2023-10-17 (osm)
 #: check_frequency: 120d
 #: next_check: 2024-06-01
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -967,7 +967,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (G,B,W)
 #: priority: #B
-#: last_checked: 2023-10-06 vvv
+#: last_checked: 2023-10-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -3460,7 +3460,8 @@ R¸tli-Campus: einige Fuﬂg‰nger, Schulgel‰nde	q3 12526,9125 12554,9178 12592,9249
 (Ossastr. - R¸tlistr.): einige Fuﬂg‰nger, Schulgel‰nde	q2 12623,9134 12554,9178
 (Kleiner Tiergarten): Fuﬂg‰nger	q2 6390,13187 6377,13321
 (Einsteinufer - TU-Mathegeb‰ude): Fuﬂg‰nger	q2 5128,12149 5106,12129 5141,11816
-(Mauerpark, ¸ber den Gleimtunnel): Fuﬂg‰nger, einige enge Kurven	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10079,15661 10091,15630
+(Mauerpark, ¸ber den Gleimtunnel): Fuﬂg‰nger, einige enge Kurven	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630
+(Mauerpark - Lichtburgring): Fuﬂg‰nger	q2 10071,15684 10057,15680
 # REMOVED --- (Mauerpark, ¸ber den Gleimtunnel): Fuﬂg‰nger, einige enge Kurven	q2 10091,15630 10070,15624
 #: XXX_prog BS, ansonsten q1 (was aber bei der kurzen Strecke eh' nicht erreicht werden kann)
 Delbr¸ckstr.: flacher Bordstein, Fuﬂg‰nger	q2 17123,10844 17141,10838
@@ -4615,6 +4616,8 @@ Staakener Feldstr.: einige Fuﬂg‰nger	q1 -7647,13985 -7716,14031
 # 
 (Seydlitzstr. - Lehrter Str.): eng, wenn BVG-Busse hier parken	q3 7613,13517 7651,13447
 # 
+(Michelangelostr. - G¸rtelstr.): einige Fuﬂg‰nger	q2 13337,15560 13358,15596 13325,15619
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -4714,7 +4717,8 @@ Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,
 #: by: Kathrin (jackelkathrin):
 Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6151,7078 6157,7117
 #: by: (x)qusor:
-(Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13854,15129 13867,15111 14314,14841 14599,14679
+#: note: teilweise mit Gehwegschild, teilweise werden Radfahrer zum Absteigen gebeten
+(Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13854,15129 13867,15111 14314,14841 14349,14821 14599,14679
 #: by: Andrea (techlin):
 #: corrected_by: srt/policy (q1 -> q0-)
 Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q0- 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032

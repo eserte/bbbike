@@ -1890,7 +1890,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 #: note: Detmolder Str.
 #: by: http://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027)
 #: XXX Sanierung der Radwege vvv
-#: last_checked: 2023-09-14 vvv
+#: last_checked: 2023-10-18 (mapillary) vvv
 #: next_check: 2027-12-31 vvv
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 # REMOVED (hängt nicht mehr) --- #: note: ein vergessenes Radwegschild?
@@ -2016,7 +2016,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-10-13 vvv
+#: last_checked: 2023-10-19 (webcam) vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206
 #: note: vorher: provisorische Radspur, RW4;
@@ -2060,7 +2060,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-09-21
+#: last_checked: 2023-10-19 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577
 asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2807,7 +2807,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-10-13
+#: last_checked: 2023-10-19 (webcam)
 #: check_frequency: 30d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -3134,7 +3134,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2023-10-08 vvv
+#: last_checked: 2023-10-19 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -6432,13 +6432,13 @@ Verbundsteinpflaster, schmal	RW1; 9858,744 9885,681 9950,577
 #: confirmed_by: srt
 	RW3;RW3 10512,12039 10578,11969 10604,11941 10642,11901 10672,11870 10687,11853 10722,11816
 Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
-	RW1; 13186,15518 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
+	RW1; 13186,15518 13279,15468 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
 	RW4; 13636,14900 13439,14673
 	RW4; 13439,14673 13636,14900
 	RW3; 13636,14900 13647,14912 13744,15018
 	RW4; 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187 13692,15231
 	RW3; 13692,15231 13560,15318
-	RW4; 13560,15318 13186,15518
+	RW4; 13560,15318 13279,15468 13186,15518
 Fahrradschleuse, zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
 	RW3; 13078,15586 13186,15518
 #: by: Grönwoldt:
@@ -7830,7 +7830,7 @@ Gehweg kann wohl von Radfahrern benutzt werden	RW1; 15973,25975 15942,26008 1553
 10er-Zone	RW6;RW6 3340,10888 3291,10853 3295,10831
 10er-Zone	RW6;RW6 3291,10853 3241,10877
 Tempo 10	RW6;RW6 1210,20336 1611,20550 1691,20638 1687,20645 1667,20665 1630,20731
-	RW6;RW6 9910,15876 9997,15884 10016,15823 10041,15742 10059,15673 10022,15659
+	RW6;RW6 9910,15876 9997,15884 10016,15823 10041,15742 10057,15680 10059,15673 10022,15659
 	RW6;RW6 9965,15731 10041,15742
 	RW6;RW6 9933,15815 10016,15823
 	RW6;RW6 9744,15793 9747,15847 9910,15876
@@ -8363,15 +8363,7 @@ Tempo 10	RW6;RW6 14254,11377 14211,11229
 Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
-#: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-01-16 vvv
-#: next_check: 2024-06-01 vvv
-# REMOVED ---	RW2; 10830,12279 10830,12313 10831,12371
-	RW4; 10831,12371 10807,12451
-baulich getrennt	RW4; 10807,12451 10831,12371
-# REMOVED --- baulich getrennt	RW4; 10831,12371 10830,12313 10830,12279
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED (existiert nicht mehr) --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2023-01-16 vvv --- #: next_check: 2024-06-01 vvv --- # REMOVED ---	RW2; 10830,12279 10830,12313 10831,12371 ---	RW4; 10831,12371 10807,12451 --- baulich getrennt	RW4; 10807,12451 10831,12371 --- # REMOVED --- baulich getrennt	RW4; 10831,12371 10830,12313 10830,12279 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 	RW6;RW6 -2810,19014 -2792,19013 -2750,19013
 	RW6;RW6 -2550,19005 -2550,18941 -2750,18945 -2750,19013 -2647,19009 -2550,19005 -2524,19005

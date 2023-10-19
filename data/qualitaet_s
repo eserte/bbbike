@@ -5590,6 +5590,9 @@ Aidastr.: unbefestigte Straße	Q2 12462,17814 12517,18034
 Rudolf-Spitzley-Str.: Beton	Q0 13031,17775 13034,17895
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13760,15187 13801,15256
 Gürtelstr. (Weißensee) [Wohngebiet]: Beton	Q1 13801,15256 13891,15206
+Gürtelstr. (Weißensee, Prenzlauer Berg) [36-39]: Beton	Q1 13378,15709 13325,15619
+(Michelangelostr. - Gürtelstr.): Beton/Verbundsteinpflaster	Q1 13279,15468 13337,15560
+(Michelangelostr. - Gürtelstr.): Beton	Q1 13337,15560 13358,15596 13325,15619
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0 13801,15256 13724,15309
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13724,15309 13700,15375 13687,15387 13716,15437
 Syringenplatz: Asphalt	Q0 14025,14519 14042,14249
@@ -9181,9 +9184,11 @@ Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10050,15824
-(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10050,15824 10061,15775 10045,15754 10079,15661
+(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10050,15824 10061,15775 10045,15754 10071,15684
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0 10071,15684 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke, teilweise Schotter	Q2 10091,15630 10155,15473
+(Mauerpark - Lichtburgring): Kleinsteinpflaster	Q1 10071,15684 10057,15680
 Lindenschwärmerweg: Asphalt	Q0 21308,11075 21294,11097 21187,11132
 Apollofalterallee [64-98]: Asphalt	Q0 21354,11101 21326,11122
 Apollofalterallee [64-98]: Verbundsteinpflaster	Q1 21326,11122 21194,11166
@@ -10362,7 +10367,7 @@ Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059 17319,15038
 (Suermondtstr. - Konrad-Wolf-Str.): Beton	Q0 16753,16111 16719,16005 16799,15974 16842,15932
 (Gleimstr. - Mauerpark): unbefestigter Weg	Q2 10170,15659 10228,15488
 Lichtburgring: Asphalt	Q0 10004,15636 9965,15731 9933,15815
-Lichtburgring: Betonpflaster	Q0 9997,15884 10016,15823 10041,15742 10059,15673 10022,15659
+Lichtburgring: Betonpflaster	Q0 9997,15884 10016,15823 10041,15742 10057,15680 10059,15673 10022,15659
 Lichtburgring: Betonpflaster	Q0 9965,15731 10041,15742
 Lichtburgring: Betonpflaster	Q0 9933,15815 10016,15823
 Bärbel-Bohley-Ring: Asphalt	Q0 9933,15815 9917,15813 9744,15793
@@ -13758,7 +13763,7 @@ Eichholzbahn: asphaltiert	Q0 -6454,14392 -6469,14390 -6477,14321 -6576,14303
 Eichholzbahn: asphaltiert	Q0 -6576,14303 -6611,14302 -6938,14329 -6963,14331 -7180,14351 -7445,14392
 Haßlingerweg: Asphalt	Q0 7644,17054 7894,17073 7926,17050
 (Michelangelostr. - Straße 106): mäßiger Beton	Q1 13854,15129 13867,15111 14314,14841
-(Michelangelostr. - Straße 106): mäßiger Beton	Q1 14314,14841 14599,14679
+(Michelangelostr. - Straße 106): mäßiger Beton	Q1 14314,14841 14349,14821 14599,14679
 Willi-Sänger-Str.: guter Beton	Q0 16003,8119 15904,8049 15843,8125 15798,8182
 Schneebergstr.: Asphalt	Q0 7573,3698 7710,3677 7768,3650 7778,3644 7827,3595 7879,3455 7914,3351
 Straße 231: Asphalt mit Schäden	Q1 15337,889 15316,888 15269,930
@@ -14028,7 +14033,7 @@ Zobeltitzstr.: Kleinsteinpflaster	Q1 4862,17934 4893,17928
 Zobeltitzstr.: Asphalt	Q0 4893,17928 4992,17908
 Uhlandstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10179,744 10242,572 10321,341 10373,216 10425,67
 Uhlandstr. (Lichtenrade): Kopfsteinpflaster, OK	Q1 10425,67 10469,-52
-Gürtelstr.: guter Asphalt	Q0 13307,15758 13409,15687 13459,15653
+Gürtelstr.: guter Asphalt	Q0 13307,15758 13378,15709 13409,15687 13459,15653
 Gürtelstr.: Asphalt mit Schäden	Q1 13459,15653 13555,15596
 Gürtelstr.: schlechtes Kopfsteinpflaster	Q3 13555,15596 13574,15585 13606,15571 13700,15501
 Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19819,13606 19826,13444 19835,13317 19846,13209 19870,13183

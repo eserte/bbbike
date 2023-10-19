@@ -3399,11 +3399,11 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-01-08 23:59:59"), # 1357513199, # 2013-0
+     { from  => $isodate2epoch->("2023-11-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-01-07 23:59:59"), # 1357513199, # 2013-0
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 21. November 2022 bis 08. Januar 2023',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 27. November 2023 bis 07. Januar 2024',
        type  => 'gesperrt',
        source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
@@ -35355,7 +35355,7 @@ EOF
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: osm_watch: way id="734271970" version="5"
 #: osm_watch: way id="975241319" version="7"
-#: osm_watch: way id="970452276" version="5"
+#: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
 #: last_checked: 2023-10-04
 #: check_frequency: 30d
@@ -37775,7 +37775,7 @@ EOF
 #: osm_watch: way id="1170463985" version="2"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
-#: last_checked: 2023-08-04 (mapillary)
+#: last_checked: 2023-10-19
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -39572,11 +39572,11 @@ EOF
 #: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023)
-#: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen, bis 17.11.2023)
+#: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen (stimmt aber nicht!), bis 17.11.2023)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
-#: last_checked: 2023-08-04 (mapillary) vvv
-#: next_check: 2023-10-17 vvv
-# REMOVED --- #: next_check: 2023-11-17 vvv
+#: note: Einbahnstraßenregelung in der Pistoriusstraße ist etwa 120m lang
+#: last_checked: 2023-10-19 vvv
+#: next_check: 2023-11-17 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: next_check ^^^

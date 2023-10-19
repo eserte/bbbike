@@ -1249,6 +1249,9 @@ Greifswalder Str. -> Heinrich-Roller-Str.: Straßenbahntrasse	3::igndisp 11706,13
 Bayerische Str.	1 4297,10008 4352,10260
 Ferdinand-Schultze-Str - Landsberger Allee	3 17791,14639 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13854,15129 13816,15137 13823,15111
+Mittelstreifen	3nocross::ignrte 13560,15318 13279,15468 13186,15518
+Michelangelostr. -> Gürtelstr.: Mittelstreifen	3::igndisp 13186,15518 13279,15468 13337,15560
+Gürtelstr. -> Michelangelostr.: Mittelstreifen	3::igndisp 13337,15560 13279,15468 13560,15318
 Frobenstr.: offen nur für BVG und Radfahrer	1 7444,10479 7429,10366 7413,10244
 Hentigstr.	1 18518,8778 18548,8942
 Hentigstr.	1 18548,8942 18586,9172 18626,9406
