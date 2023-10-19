@@ -213,7 +213,8 @@
   (cond
    ((fboundp 'w32-get-clipboard-data) (w32-get-clipboard-data))
    ((eq system-type 'darwin) (shell-command-to-string "pbpaste"))
-   (t (x-selection))))
+   ((fboundp 'x-get-selection) (x-get-selection nil 'UTF8_STRING))
+   (t (x-selection nil 'UTF8_STRING))))
 
 (defun bbbike-toggle-tabular-view ()
   (interactive)
