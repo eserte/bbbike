@@ -213,7 +213,11 @@
   (cond
    ((fboundp 'w32-get-clipboard-data) (w32-get-clipboard-data))
    ((eq system-type 'darwin) (shell-command-to-string "pbpaste"))
-   ((fboundp 'x-get-selection) (x-get-selection nil 'UTF8_STRING))
+   ((fboundp 'x-get-selection)
+    (let ((value (x-get-selection nil 'UTF8_STRING)))
+      (if (not value) ; seen with xpdf selections, only STRING is available (but utf-8 text is wrong)
+	  (setq value (x-get-selection nil 'STRING)))
+      value))
    (t (x-selection nil 'UTF8_STRING))))
 
 (defun bbbike-toggle-tabular-view ()
@@ -652,7 +656,8 @@
 ;; new version: if there's only one match, then go directly to the file.
 ;; Otherwise display the output in temporary grep-mode buffer.
 (defun bbbike-grep-with-search-term (search-term &optional is-regexp)
-  (let* ((bbbike-rootdir (bbbike-rootdir))
+  (let* ((search-term (bbbike--string-trim search-term))
+	 (bbbike-rootdir (bbbike-rootdir))
 	 (bbbike-datadir (bbbike-datadir))
 	 (bbbike-grep-cmd (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
 				  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
@@ -665,7 +670,7 @@
          (num-lines (length lines)))
     (cond
      ((= num-lines 0)
-      (message "No matching lines found."))
+      (message "No matching lines found for '%s'." search-term))
      ((= num-lines 1)
       (let* ((line (car lines))
              (parts (split-string line ":"))
@@ -963,5 +968,9 @@
 
 (defun bbbike--get-osm-elem-version (elemtype elemid)
   (bbbike--get-osm-elem-version-elisp elemtype elemid))
+
+(defun bbbike--string-trim (str)
+  "Remove leading and trailing whitespace from STR."
+  (replace-regexp-in-string "\\`[[:space:]\n]*\\|[[:space:]\n]*\\'" "" str))
 
 (provide 'bbbike-mode)
