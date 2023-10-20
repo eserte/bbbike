@@ -80,7 +80,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-10-15
+#: last_checked: 2023-10-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -598,7 +598,8 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: source_id: 2147344224 (bis Mitte Juni 2019) (es ist aber nichts passiert) (inaktiv)
 #: source_id: 2147345316 (bis Anfang Februar 2020) (inaktiv)
 #: source_id: viz2021:13.347482,52.450637,16.01.2023,07:00 (Schachtdeckelerneuerung, bis 3.2.2023) (inaktiv)
-#: osm_watch: way id="30190074" version="29"
+#: osm_watch: way id="30190074" version="32"
+#: osm_watch: way id="1216937214" version="1"
 #: last_checked: 2023-09-19 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -1425,7 +1426,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: 2147344016 (bis Ende Mai 2019) (inaktiv)
 #: source_id: viz2021:13.50019,52.56161,24.01.2023,15:30 (bis 21.04.2023) (inaktiv)
-#: source_id: viz2021:13.497383,52.560544,25.11.2022,10:00 (Kanalarbeiten bis 25.1.2023) (bis 21.4.2023) (inaktiv) (bis 4.9.2023) (bis 15.9.2023) (bis 29.9.2023) (bis 20.10.2023)
+#: source_id: viz2021:13.497383,52.560544,25.11.2022,10:00 (Kanalarbeiten bis 25.1.2023) (bis 21.4.2023) (inaktiv) (bis 4.9.2023) (bis 15.9.2023) (bis 29.9.2023) (bis 20.10.2023) (inaktiv)
 #: source_id: viz2021:13.495712,52.559878,04.09.2023,07:00 (Leitungsarbeiten bis 06.10.2023) (bis 09.10.2023) (inaktiv)
 #: osm_watch: way id="40520565" version="46"
 #: osm_watch: way id="51317007" version="34"
@@ -1947,6 +1948,7 @@ Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur i
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1573,5152 1607,5259 1640,5383 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976
 #: by: https://www.infravelo.de/projekt/clayallee-1/ (zwischen Im Dol und Finkenstr., Asphaltierung + Verbreiterung auf 2m) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1376641.php (Verbreiterung auf 2,30m; planmäßig bis zum 30.11.2023)
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/radweg-clayallee-wird-saniert_a396988
 #: last_checked: 2023-07-12 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-11-30
@@ -4135,7 +4137,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: XXX im Neubaubereich neues Betonpflaster
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2023-10-03
+#: last_checked: 2023-10-20
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2023-10-31
 Wriezener Park: Umbauarbeiten, einige Wege sind zwischenzeitlich gesperrt	?::inwork 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
@@ -4627,7 +4629,7 @@ Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden ge
 Potsdamer Str.: Busspur vermutlich nur in Richtung Osten, oder doch in beiden Richtungen?	?::projected; 161,3062 255,3085 452,3133 534,3149 669,3119
 # REMOVED (zurückgestellt, Konflikt mit Radverkehrsanlage) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Kuhligshofstr. -> Albrechtstr.) --- #: osm_watch: way id="30157290" version="22" --- #: XXX hier vermutlich erst nach Abschluss der Bauarbeiten am Steglitzer Kreisel --- #: last_checked: 2020-07-11 --- #: check_frequency: 180d --- Schloßstr.: wird eine Busspur Richtung Norden eingerichtet?	?::projected; 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: XXX im Artikel fälschlicherweise als "Unter den Eichen" bezeichnet
-#: osm_watch: way id="183331569" version="20"
+#: osm_watch: way id="183331569" version="21"
 #: last_checked: 2023-06-05 (mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 120d
@@ -5782,6 +5784,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022) (inaktiv)
 #: source_id: viz2021:13.475846,52.501257,25.04.2023,13:00 (Bauarbeiten bis 31.05.2023) (inaktiv)
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.48067,52.49917,20.10.2023,09:55 (Bauarbeiten bis 31.12.2023)
 #: last_checked: 2023-10-18
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
@@ -5792,6 +5795,7 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Gleisbauarbeiten 23.10.-5.11.2023)
 #: by: https://www.berlin-straba.de/images/Bauplan/liniennetzplam_bau/BVG_2023-10-23_T-Bau.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1376601.php (MIV: Einbahnstraße Richtung Treskowallee)
+#: source_id: bvg2021:21#BVG330473_0 (2023-10-23 bis 2023-11-05 früh)
 #: last_checked: 2023-10-18
 #: check_frequency: 180d
 #: next_check: 2023-10-23
@@ -6210,7 +6214,7 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 19904,3464 2
 #: source_id: 2147343937 (inaktiv)
 #: source_id: 2147346743 (bis 30.04.2021) (inaktiv)
 #: osm_watch: way id="46907545" version="14"
-#: osm_watch: way id="30956350" version="32"
+#: osm_watch: way id="30956350" version="35"
 #: XXX anscheinend gibt es hier keine konkreten Planungen, aber laut infravelo-Karte gehört die Straße zum Ergänzungsnetz
 #: last_checked: 2023-09-14
 #: check_frequency: 180d
@@ -7081,7 +7085,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Umsetzung der Fahrradstraße 2023)
 #: by[nocache]: https://archive.is/dz81E (Tagesspiegel; allerdings wurde die Finanzierung gestoppt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11084 (Einwohnerantrag)
-#: last_checked: 2023-10-13 vvv
+#: last_checked: 2023-10-20 vvv
 #: next_check: 2024-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
@@ -7255,6 +7259,7 @@ Blücherstr., Blücherplatz: Umgestaltung	?::projected 9448,10014 9521,10010 9722,
 #: osm_watch: way id="1043511851" version="5"
 #: also_indoor: traffic (G,H,B,W)
 #: source_id: viz2021:13.129186,52.527231,21.09.2023,09:00 (bis 27.10.2023)
+#: source_id: viz2021:13.12808,52.527468,20.10.2023,16:00 (bis 22.10.2023)
 #: last_checked: 2023-07-28 (osm)
 #: check_frequency: 90d
 #: next_check: 2023-10-29
@@ -8089,6 +8094,11 @@ Radweg entlang der A100: asphaltiert, unbeleuchtet, offiziell noch gesperrt	?::i
 Radweg an der A100 - Mergenthalerring: asphaltiert, offiziell noch gesperrt	?::inwork 14405,8099 14419,8112
 #: last_checked ^^^
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_45_4197_4256_online.pdf (wirksam zum 17.11.2023)
+#: XXX laut osm im nördlichen Bereich mit Treppe
+#: XXX kann die B1 am südlichen Ende überquert werden?
+#: next_check: 2023-11-17
+Anna-und Hermann-Muthesius-Steig: Weg soll neuen Namen bekommen, Qualität, Beleuchtung, wieviele Stufen?	? -3153,1837 -3123,1787 -3077,1716
 #: ignore ^^^
 # 
 ######################################################################
@@ -9639,6 +9649,7 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/bauvorhaben-am-beerenpfuhlgraben-verzoegert-sich_a387199 (bis September 2023)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_37_3679_3742_online.pdf (Straßenlandwidmung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_45_4197_4256_online.pdf (Straßenlandwidmung)
 #: XXX bleiben die bestehenden Straßen während der Bauzeit passierbar?
 #: XXX neue Straßen (fehlen alle in Berlin.coords.data) (PLZ aus DPAG-Mitteilungsblatt):
 # REMOVED --- #: XXX Eva-Strittmatter-Str. (PLZ 12629)

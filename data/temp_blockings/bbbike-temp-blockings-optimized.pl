@@ -3810,7 +3810,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-10-03 vvv
+#: last_checked: 2023-10-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -3827,7 +3827,7 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 ',
          'from' => 1677970800,
          'id' => 3159,
-         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023',
+         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Mitte Oktober 2023: Rampe gesperrt, einige Wege gesperrt)',
          'type' => 'gesperrt',
          'until' => 1698778800
        },
@@ -5518,20 +5518,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1625010630397956097#m
-#: by: https://nitter.cz/pic/orig/media%2FFomcps9XsAANAJP.jpg
-#: by: https://nitter.it/pic/orig/media%2FFomcpwwX0AE3OaJ.jpg
-#: source_id: viz2021:13.375018,52.503189,13.02.2023,07:00 (bis 20.10.2023) (inaktiv)
-	q4::inwork 8443,10780 8476,10884
-',
-         'from' => 1676181600,
-         'id' => 3723,
-         'source_id' => 'viz2021:13.374958,52.503091,13.02.2023,07:00',
-         'text' => 'Köthener Str.: Fahrbahn vor der Kreuzung Hallesches Ufer/Reichpietschufer gesperrt, vom 13.02.2023 07:00 bis 20.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1697814000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
@@ -5916,29 +5903,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: EDELHOFDAMM-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
-#: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
-#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023)
-#: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
-# REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
-# REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
-# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 2756,25260 2909,25322
-	q4::inwork 2909,25322 3101,25402 3185,25437
-# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 3185,25437 3166,25496
-#: osm_watch: way id="1110745857" version="5"
-Markgrafenstr.	q4::inwork 2882,25375 2909,25322
-#: osm_watch: way id="478247076" version="15"
-Gutshofstr.	q4::inwork 3076,25456 3101,25402
-',
-         'from' => 1685422800,
-         'id' => 3802,
-         'text' => 'Edelhofdamm: Bauarbeiten zwischen Katzensteg und Enkircher Str., Fahrbahn ist gesperrt, vom 31.05.2023 07:00 bis 20.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1697814000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -6159,26 +6124,7 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: PISTORIUS-2023
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023)
-#: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen (stimmt aber nicht!), bis 17.11.2023)
-#: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
-#: note: Einbahnstraßenregelung in der Pistoriusstraße ist etwa 120m lang
-#: last_checked: 2023-10-19 vvv
-#: next_check: 2023-11-17 vvv
-Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
-Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1687068000,
-         'id' => 3840,
-         'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., Gesamtbaumaßnahme bis Ende Oktober 2023',
-         'type' => 'handicap',
-         'until' => 1697814000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6263,16 +6209,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 65854,-2562 65816,-2687 65638,-2821 64980,-3141 64470,-3222 63787,-3692 63523,-3781 62692,-4215 62507,-4444
-',
-         'from' => 1689487200,
-         'id' => 3864,
-         'source_id' => 'LS/221-F/23/091',
-         'text' => 'Falkenberg - Berkenbrück: Bauarbeiten, Sperrung, vom 17.07.2023, 08:00 Uhr bis 20.10.2023, 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1697810400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6566,6 +6503,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 #: by: https://www.stadtrand-nachrichten.de/klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.stadtrand-nachrichten.de/kommentar-klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/klingsorstrasse-wird-saniert_a392572
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1377283.php (Verlängerung bis 10.11.2023)
 #: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
 #: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
@@ -6573,9 +6511,9 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 ',
          'from' => 1694901600,
          'id' => 3914,
-         'text' => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straße gesperrt, voraussichtlich vom 18.9.2023 bis 31.10.2023',
+         'text' => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straße gesperrt, vom 18.9.2023 bis 10.11.2023',
          'type' => 'handicap',
-         'until' => 1698793200
+         'until' => 1699635600
        },
        {
          'data' => '#: also_indoor: traffic (B)

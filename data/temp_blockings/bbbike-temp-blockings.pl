@@ -30469,12 +30469,12 @@ EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
        until => $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023',
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Mitte Oktober 2023: Rampe gesperrt, einige Wege gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-10-03 vvv
+#: last_checked: 2023-10-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -38053,12 +38053,12 @@ EOF
        until => 1697814000, # 2023-10-20 17:00
        text  => 'Köthener Str.: Fahrbahn vor der Kreuzung Hallesches Ufer/Reichpietschufer gesperrt, vom 13.02.2023 07:00 bis 20.10.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.374958,52.503091,13.02.2023,07:00',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1625010630397956097#m
 #: by: https://nitter.cz/pic/orig/media%2FFomcps9XsAANAJP.jpg
 #: by: https://nitter.it/pic/orig/media%2FFomcpwwX0AE3OaJ.jpg
 #: source_id: viz2021:13.375018,52.503189,13.02.2023,07:00 (bis 20.10.2023) (inaktiv)
+#: source_id: viz2021:13.374958,52.503091,13.02.2023,07:00 (bis 20.10.2023) (inaktiv)
 	q4::inwork 8443,10780 8476,10884
 EOF
      },
@@ -39108,7 +39108,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
-#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023)
+#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023) (inaktiv)
 #: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
@@ -39897,7 +39897,7 @@ EOF
        until => $isodate2epoch->("2023-10-20 16:00:00"),
        text  => 'Falkenberg - Berkenbrück: Bauarbeiten, Sperrung, vom 17.07.2023, 08:00 Uhr bis 20.10.2023, 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/091', # zwei Bauabschnitte, bis 30.09.2023 # bis 20.10.2023
+       source_id => 'LS/221-F/23/091', # zwei Bauabschnitte, bis 30.09.2023 # bis 20.10.2023 # inaktiv
        data  => <<EOF,
 	2::inwork 65854,-2562 65816,-2687 65638,-2821 64980,-3141 64470,-3222 63787,-3692 63523,-3781 62692,-4215 62507,-4444
 EOF
@@ -39909,7 +39909,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
 #: by: https://www.bahninfo-forum.de/read.php?9,774482,776967#msg-776967 (frei ab 31.8.2023?)
-#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023)
+#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023) (inaktiv)
 #: source_id: bvg2021:m1#BVG327081_0
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
 	q4::inwork 10178,20525 10066,20494
@@ -40478,8 +40478,8 @@ EOF
 EOF
      },
      { from  => 1694901600, # 2023-09-17 00:00
-       until => 1698793200, # 2023-11-01 00:00
-       text  => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straße gesperrt, voraussichtlich vom 18.9.2023 bis 31.10.2023',
+       until => $isodate2epoch->("2023-11-10 18:00:00"), # 1698793200, # 2023-11-01 00:00
+       text  => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straße gesperrt, vom 18.9.2023 bis 10.11.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KLINGSOR-2023
@@ -40488,6 +40488,7 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.stadtrand-nachrichten.de/kommentar-klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/klingsorstrasse-wird-saniert_a392572
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1377283.php (Verlängerung bis 10.11.2023)
 #: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
 #: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
