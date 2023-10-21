@@ -1899,15 +1899,6 @@ sub start_browser {
     WWWBrowser::start_browser($url);
 }
 
-# For sites which not work with mozilla/seamonkey - prefer firefox
-sub start_browser_no_mozilla {
-    my($url) = @_;
-    require WWWBrowser;
-    local @WWWBrowser::unix_browsers = @WWWBrowser::unix_browsers;
-    @WWWBrowser::unix_browsers = grep { !m{^(seamonkey|mozilla|htmlview|_.*)$} } @WWWBrowser::unix_browsers;
-    start_browser($url);
-}
-
 ######################################################################
 # Helper
 
