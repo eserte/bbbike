@@ -222,6 +222,8 @@ sub do_display {
     } elsif ($imagetype eq 'pdf') {
 	if (defined $pdf_prog) {
 	    double_forked_exec($pdf_prog, $filename);
+	} elsif (is_in_path("evince")) {
+	    double_forked_exec('xpdf', $filename);
 	} elsif (is_in_path("xpdf")) {
 	    double_forked_exec('xpdf', $filename);
 	} elsif ($^O eq 'MSWin32') {
