@@ -177,7 +177,7 @@ Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12399,16479
 Triftstr. (Buchholz)	1s 12023,23039 12185,23021
 Joachimstr.	1s 10082,13686 10142,13556 10199,13446
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
-Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
+Wilhelmsaue	1 5164,8740 4918,8740 4777,8742
 Schweidnitzer Str	1 3220,9598 3225,9844
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3123,10504 3013,10553
@@ -971,9 +971,11 @@ Segewaldweg	1 22364,3351 22367,3287 22342,3277 22338,3260 22305,3255 22297,3265 
 Mittelstreifen	3nocross::ignrte 19198,1122 19221,1198 19251,1240
 Schönefelder Chaussee -> Mauerweg: Mittelstreifen	3::igndisp 19198,1122 19221,1198 19160,1215
 Mauerweg -> Schönefelder Chaussee: Mittelstreifen	3::igndisp 19160,1215 19221,1198 19251,1240
-Mittelstreifen	3nocross::ignrte 4769,8563 4768,8608 4777,8731
+Mittelstreifen	3nocross::ignrte 4769,8563 4768,8608 4777,8742
 Blissestr. -> zur Mannheimer Str.: Mittelstreifen	3::igndisp 4769,8563 4768,8608 4754,8608
-zur Mannheimer Str. -> Blissestr.: Mittelstreifen	3::igndisp 4754,8608 4768,8608 4777,8731
+zur Mannheimer Str. -> Blissestr.: Mittelstreifen	3::igndisp 4754,8608 4768,8608 4777,8742
+Mittelstreifen	3nocross::ignrte 4769,8563 4772,8513 4778,8354
+Am Volkspark -> Blissestr.: Mittelstreifen	3::igndisp 4954,8454 4772,8513 4778,8354
 Martin-Luther-Str.	1 6485,8639 6455,8613
 Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
 Alt-Kaulsdorf	1::igndisp 23648,11265 23447,11264 23362,11263

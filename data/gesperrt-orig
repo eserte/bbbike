@@ -78,7 +78,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8374 (Festsetzung)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="21"
-#: last_checked: 2023-06-17
+#: last_checked: 2023-10-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -294,7 +294,7 @@ Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12399,16479
 Triftstr. (Buchholz)	1s:q3 12023,23039 12185,23021
 Joachimstr.	1s:q3 10082,13686 10142,13556 10199,13446
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
-Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
+Wilhelmsaue	1 5164,8740 4918,8740 4777,8742
 Schweidnitzer Str	1 3220,9598 3225,9844
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3123,10504 3013,10553
@@ -1540,7 +1540,8 @@ Segewaldweg	1 22364,3351 22367,3287 22342,3277 22338,3260 22305,3255 22297,3265 
 #: note: außerdem Bordstein, falls man von Westen aus nach links abbiegen möchte
 Schönefelder Chaussee: Mittelstreifen	3nocross 19198,1122 19221,1198 19251,1240
 # 
-Blissestr.: Mittelstreifen	3nocross 4769,8563 4768,8608 4777,8731
+Blissestr.: Mittelstreifen	3nocross 4769,8563 4768,8608 4777,8742
+Blissestr.: Mittelstreifen	3nocross 4769,8563 4772,8513 4778,8354
 # 
 Martin-Luther-Str.	1 6485,8639 6455,8613
 Martin-Luther-Str.	1 6455,8613 6454,8653 6460,8688
@@ -3970,8 +3971,6 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5522,8011 5520,8132 5573,8197
 # 
-# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022) --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387 --- Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392 --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
 #: next_check_id: U6-2022
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11381 (Ersuchen: Durchgang zu den Sportstätten)
 #: osm_watch: node id="1736425250" version="5"
@@ -4407,10 +4406,11 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
+#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-10-20
-#: check_frequency: 360d
-#: next_check: 2024-06-30
+#: last_checked: 2023-10-21
+#: check_frequency: 180d
+#: next_check: 2026-01-01
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 # 
 #: by: wosch
@@ -4604,7 +4604,7 @@ Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2023-10-20
+#: last_checked: 2023-10-21
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148

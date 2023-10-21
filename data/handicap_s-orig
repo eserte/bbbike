@@ -276,10 +276,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
-# 
 # REMOVED (keine Einbahnstraﬂe, sondern nur noch eine Gegenverkehrsregelung (wobei das Schild auf der westlichen Seite fehlt) --- #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straﬂenseite bis 16.12.2022 --- #: osm_watch: way id="184632250" version="3" --- #: last_checked: 2022-11-30 --- #: next_check: 2022-12-31 --- Saarbr¸cker Str.: Einbahnstraﬂenregelung	q3::inwork; 10895,13961 11052,13870
-# 
 # REMOVED --- #: next_check_id: ROSENTHALER-2022 --- #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m --- #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig --- #: by: https://berliner-abendblatt.de/2022/07/07/strassenbahn-bauarbeiten-einschraenkungen-ab-ende-juli/ (Gleisbauarbeiten im Anschluss? 11.7.2022-21.8.2022) --- #: by: https://viz.berlin.de/2022/07/verkehrsvorschau-11072022/ --- #: by: https://nitter.it/VIZ_Berlin/status/1546388826465001472#m --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvg-erneuert-tramgleise_a351479 (hier: "Der Autoverkehr bleibt bis zum 28. August eingeschr‰nkt") --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559 --- #: by: https://viz.berlin.de/2022/12/verkehrsvorschau-061222/ --- #: add_fragezeichen: Sind die Bauarbeiten in der Rosenthaler Straﬂe und Gipsstraﬂe beendet? vvv --- #: also_indoor: traffic (B) vvv --- #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv --- #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023) --- #: priority: #A --- #: last_checked: 2023-01-24 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-03-15 vvv --- Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf B¸rgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 # REMOVED --- #: XXX pr¸fen: wird man Richtung Norden via Gormannstr. gef¸hrt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den B¸rgersteig gef¸hrt	q2::inwork; 10324,13459 10341,13376
@@ -1407,7 +1404,8 @@ Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17972,8968 17979,896
 Markgrafenstr.: Gehweg	q3 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9523,12019 9656,12031
-Am Volkspark: Parkweg	q1 5730,8207 5918,8221
+#: note: Radfahrer d¸rfen hier fahren (explizite Radwegschilder), allerdings Vorrang f¸r Fuﬂg‰nger
+Am Volkspark: einige Fuﬂg‰nger	q1 5730,8207 5918,8221
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340
 #: note: hier Lieferanteneinfahrt
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
@@ -4618,6 +4616,12 @@ Staakener Feldstr.: einige Fuﬂg‰nger	q1 -7647,13985 -7716,14031
 # 
 (Michelangelostr. - G¸rtelstr.): einige Fuﬂg‰nger	q2 13337,15560 13358,15596 13325,15619
 # 
+Innsbrucker Platz: schmale Radwege, einige Fuﬂg‰nger	q1 6373,8083 6409,8026
+# 
+#: XXX_prog BS am Gerdsmeyerweg, ansonsten q1
+#: note: am westlichen Ende Gr¸nanlagenschild mit expliziter Radfreigabe (gemeinsamer Fuﬂ- und Radweg), am ˆstlichen Ende fehlt so ein Zusatzschild
+Gerdsmeyerweg - Marienhˆher Weg: einige Fuﬂg‰nger, Bordstein	q2 8026,5307 7935,5230
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -4886,7 +4890,7 @@ Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 Konradinstr.: enge Straﬂe	q0- 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
 #: by: Stefan Wietstock:
 #: note: "f¸r Radfahrer freigegeben" von Holger Gaul:
-(Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5170,8449 5212,8602
+(Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5166,8467 5212,8602
 #: by: Katharina Hoffmann:
 #: confirmed_by: srt
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 835,2715 1017,2823 1093,2866 1112,2880 1145,2898 1262,2975
@@ -5396,7 +5400,7 @@ Sodtkestr.: enge Straﬂe	q1 12221,15514 12298,15658 12382,15802 12423,15875
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
 # 
 #: by: Mario (saric):
-(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9719,6492
+(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9687,6180 9683,6203 9695,6336 9719,6492
 # 
 #: by: Florian (berlin):
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit H‰nger passierbar	q1 -5505,15859 -5523,15766
@@ -5810,7 +5814,7 @@ Immenweg: eng (einspurig)	q1 6529,5026 6419,5048 6385,4896
 #: corrected_by: srt/policy (q2 -> q1)
 Albtalweg: enge Straﬂe	q1 5368,22669 5338,22753 5297,22830 5243,22896
 #: by: Christion Br‰uniger:
-Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9426,6239 9463,6232 9683,6199
+Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9420,6248 9515,6229 9683,6203
 #: by: Carola Becker
 #: corrected_by: srt/policy (q4 -> q2)
 Straﬂe 78: enge Straﬂe	q2 7715,19408 7797,19580

@@ -1,6 +1,422 @@
-$#temp_blocking = 393;
+$#temp_blocking = 35;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
+	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
+	2::xmas -3275,14407 -3338,14333
+	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+	2::xmas -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+	2::xmas -3227,14260 -3155,14340
+	2::xmas -3227,14260 -3293,14304 -3338,14333
+	2::xmas -3552,14082 -3457,14189 -3409,14241 -3338,14333
+	2::xmas -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+	2::xmas -3110,14408 -3174,14438 -3228,14468
+	2::xmas -3231,14383 -3293,14304
+',
+         'from' => 1700953200,
+         'id' => 36,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
+         'text' => 'Spandauer Weihnachtsmarkt, vom 27.11.2023 bis 23.12.2023',
+         'type' => 'gesperrt',
+         'until' => 1703372399
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
+#: tempex: before(1st_advent,1d) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1701385200,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (02.12.2023 - 03.12.2023)',
+         'type' => 'gesperrt',
+         'until' => 1701644399
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
@@ -58,7 +474,32 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
+	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1701471600,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 03. Dezember 2023 von 13 bis 19 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1701630000
+       },
        undef,
        undef,
        undef,
@@ -2736,8 +3177,52 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1701990000,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (09.12.2023 - 10.12.2023)',
+         'type' => 'gesperrt',
+         'until' => 1702249199
+       },
+       {
+         'data' => '#: tempex: before(3rd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1702594800,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (16.12.2023 - 17.12.2023)',
+         'type' => 'gesperrt',
+         'until' => 1702853999
+       },
        undef,
        undef,
        undef,
@@ -2757,7 +3242,32 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
+#: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/brandenburg/3404397-1329503-der-traditionelle-potsdamer-weihnachtsma.html
+#: by: https://www.berlin.de/tourismus/brandenburg/veranstaltungen/7769364-3479097-weihanchtsmarkt-blauer-lichterglanz.html
+#: tempex: before(first_advent,mo) - YYYY1230
+	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
+',
+         'from' => 1701039600,
+         'id' => 2526,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 28.11.2023 - 29.12.2023',
+         'type' => 'gesperrt',
+         'until' => 1703804400
+       },
        undef,
        undef,
        undef,
@@ -3090,7 +3600,34 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
+#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
+#: tempex: before(first_advent, monday)-YYYY1226 vvv
+#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
+	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
+	q4::xmas 11064,12910 11141,12806
+#: tempex ^^^
+',
+         'from' => 1700953200,
+         'id' => 2763,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
+         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 27. November 2023 bis 26. Dezember 2023',
+         'type' => 'handicap',
+         'until' => 1703631599
+       },
        undef,
        undef,
        undef,
@@ -4757,7 +5294,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-04
+#: last_checked: 2023-10-21
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -4775,7 +5312,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-09-23
+#: last_checked: 2023-10-21
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -4958,7 +5495,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -4970,9 +5507,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1660582743,
          'id' => 3605,
          'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
-         'text' => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 25.10.2023',
+         'text' => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 9.12.2023',
          'type' => 'handicap',
-         'until' => 1698246000
+         'until' => 1702137600
        },
        undef,
        undef,
@@ -5259,7 +5796,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-10-01 (daf)
+#: last_checked: 2023-10-21
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -5278,7 +5815,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-09-23
+#: last_checked: 2023-10-21
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -5354,7 +5891,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis April 2024
-#: last_checked: 2023-07-01
+#: last_checked: 2023-10-21
 #: check_frequency: 120d
 #: next_check: 2024-04-30
 	q4::inwork; 5172,8880 5165,8784
@@ -5396,7 +5933,27 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => 1719784799
        },
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachten-an-der-spree.de/
+	2::xmas 13558,10704 13531,10673 13326,10765
+	2::xmas 13527,10660 13531,10673
+',
+         'from' => 1700348400,
+         'id' => 3695,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 20.11. - 23.12.2023',
+         'type' => 'gesperrt',
+         'until' => 1703696400
+       },
        undef,
        undef,
        {
@@ -5524,12 +6081,12 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
-#: last_checked: 2023-07-22 vvv
-#: next_check: 2023-10-23 vvv
+#: last_checked: 2023-10-21 vvv
+#: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 # REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
-	2::inwork 5730,8207 5918,8221
+# REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
 	2::inwork 5438,8402 5611,8252
 #: next_check ^^^
 #: last_checked ^^^
@@ -5537,7 +6094,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'from' => 1690063200,
          'id' => 3725,
          'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
-         'text' => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen sind möglich, voraussichtlich bis Ende Oktober 2023',
+         'text' => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023 (Stand Mitte Oktober 2023: noch immer gesperrt)',
          'type' => 'gesperrt',
          'until' => 1698771600
        },
@@ -5616,13 +6173,13 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: also_indoor: traffic (ex-G[falsch]) vvv
 #: osm_watch: way id="1171918026" version="4"
 #: osm_watch: way id="151353924" version="11"
-#: last_checked: 2023-08-18 vvv
+#: last_checked: 2023-10-21 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
 # REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
-Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293
+Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6532,7 +7089,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-09-23 vvv
+#: last_checked: 2023-10-21 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
 #: last_checked ^^^
@@ -6605,17 +7162,16 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
-#: XXX Wie lange bleibt die Straße (Fahrbahn?) gesperrt? Sind Radfahrer überhaupt betroffen? Ist der gesamte Abschnitt betroffen?
-#: note: laut rbb "auch für Fußgänger und Radfahrer."
-#: last_checked: 2023-09-25 (Verkehrsmeldung erstellt)
-#: check_frequency: 14d
+#: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
+#: last_checked: 2023-10-21
+#: check_frequency: 60d
 # REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
-	2::inwork 4449,8999 4451,8874
+	q4::inwork 4449,8999 4451,8874
 ',
          'from' => 1695550500,
          'id' => 3922,
-         'text' => 'Mannheimer Str.: Wasserrohrbruch, zwischen Berliner Str. und Brandenburgische Str. gesperrt, vom 25.09.2023 12:15',
-         'type' => 'gesperrt',
+         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig, vom 25.09.2023 12:15',
+         'type' => 'handicap',
          'until' => undef
        },
        undef,
@@ -6788,6 +7344,49 @@ bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,
          'text' => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 15.12.2023 17:00',
          'type' => 'handicap',
          'until' => 1702656000
+       },
+       {
+         'data' => '#: next_check_id: BEBELPLATZXMAS-2022
+#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html?date=20231021
+# REMOVED --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv ---
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
+# REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- 
+Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
+',
+         'from' => 1700434800,
+         'id' => 3939,
+         'periodic' => 1,
+         'postwarn_days' => 7,
+         'prewarn_days' => 7,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachtsmarkt-berlin.de/',
+         'text' => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt vermutlich nur über einen engen Weg möglich',
+         'type' => 'gesperrt',
+         'until' => 1704668399
+       },
+       {
+         'data' => '#: source_id: viz2021:13.31365,52.48412,21.10.2023,07:00 (hier von Barbrücke; bis 08.12.2023)
+#: note: außerhalb der Arbeitszeiten kann die Absperrung am nördlichen Ende weggeschoben sein, aber am südlichen Ende muss man trotzdem dann Bordsteine überwinden
+#: note: Halteverbotsschilder bis 17.11.2023
+# REMOVED --- #: last_checked: 2023-10-21 --- #: next_check: 2023-11-17
+	q4::inwork 4456,8598 4456,8716
+',
+         'from' => undef,
+         'id' => 3940,
+         'text' => 'Mannheimer Str.: zwischen Wilhelmsaue und Volkspark Wilmersdorf Bauarbeiten, Fahrbahn gesperrt, vorausichtlich bis zum 08.12.2023',
+         'type' => 'handicap',
+         'until' => 1702054800
        }
      
 );

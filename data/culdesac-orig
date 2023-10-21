@@ -94,7 +94,7 @@ Sackgassenende, südlicher Abschnitt	culdesac 13306,7765
 	culdesac 12465,7250
 Sackgassenende, Schulhof	culdesac 13518,7477
 	culdesac 13654,7723
-	culdesac 8315,8189
+	culdesac 8325,8188
 #: XXX_prog: Ausnahme: würde zurzeit nicht automatisch als Sackgasse erkannt werden
 	culdesac 8952,7719
 	culdesac 8263,7465
@@ -127,7 +127,7 @@ Sackgassenende, kroatische Botschaft	culdesac 6871,10590
 	culdesac 6877,10492
 	culdesac 2212,9755
 	culdesac 3364,9142
-	culdesac 4405,8697
+	culdesac 4393,8715
 	culdesac 4087,8204
 	culdesac 4873,7967
 	culdesac 5049,7966
@@ -1642,6 +1642,7 @@ Sackgassenende im nördlichen Abschnitt	culdesac 12415,21757
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 9687,6180
 	culdesac_pseudo 21573,-1209
 	culdesac_pseudo 4677,8605
 	culdesac_pseudo -2413,18765

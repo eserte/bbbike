@@ -451,7 +451,7 @@ Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -7714,4279 -7636,4346 -759
 Kalischer Str.: Asphalt	Q0 3964,8559 3970,8582
 Kalischer Str.: Kleinsteinpflaster	Q1 3970,8582 3979,8772 4006,8967
 Mannheimer Str. (Wilmersdorf): Asphalt	Q0 4456,8598 4320,8596
-Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8703 4456,8598
+Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8716 4456,8598
 Thulestr.: Asphalt	Q0 11630,16623 11534,16622 11440,16622
 Thulestr.: Kopfsteinpflaster	Q2 11440,16622 11356,16619 11279,16617 11021,16605
 Granitzstr.: Asphalt	Q0 10849,17848 10894,17864 10922,17886 10934,17896 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482 11950,18529
@@ -1486,7 +1486,10 @@ Fanningerstr.: Asphalt	Q0 16456,12191 16556,12180 16657,12165 16794,12144
 Fanningerstr.: Betonplatten in der Mitte, Kopfsteinpflaster außen	Q0 16794,12144 16890,12135 16950,12125
 Fanningerstr.: Asphalt in der Mitte, Kopfsteinpflaster außen	Q0 16950,12125 16993,12118 17091,12105
 Fanningerstr.: Kopfsteinpflaster	Q2 17091,12105 17139,12100
-Marienhöher Weg: mäßiges Kopfsteinpflaster	Q2 8356,5195 8203,5203 8115,5086 8052,5009 7986,4984 7913,4996 7873,5024 7851,5125 7944,5237
+Marienhöher Weg: schlechtes Kopfsteinpflaster	Q3 8356,5195 8199,5210
+Marienhöher Weg: Asphalt	Q0 8199,5210 8105,5098
+Marienhöher Weg: mäßiges Kopfsteinpflaster	Q2 8105,5098 8030,5005 7986,4984 7913,4996 7873,5024 7853,5092 7878,5158 7935,5230
+(zum Marienhöher Weg): mäßiges Kopfsteinpflaster	Q2 7807,4975 7873,5024
 Maulbronner Ufer: Parkweg	Q1 7161,4110 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14709,12156 14748,12314
@@ -7373,7 +7376,7 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 (Kanzlerweg - Schreiberring): unbefestigter Weg	Q1 8830,8148 8839,8168 8861,8242
 (Rumeyplan, Grünanlage): unbefestigter Weg	Q1 8907,7773 8895,7797
 (Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1 8895,7797 8839,7904
-Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0 8482,8364 8394,8313 8327,8302 8276,8295
+Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0 8482,8364 8394,8313 8333,8303 8276,8295
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1 8276,8295 8259,8265 8265,8092 8260,7911 8260,7803 8263,7611
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0 8982,8781 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0 8842,8561 8759,8458
@@ -11213,8 +11216,8 @@ Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q2 25218,2691 25159,2622 25116,2529
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q1 25116,2529 24987,2068 24974,1945 24883,1740
 (zur Dörpfeldstraße [Nebenstraße]): Gehwegplatten	Q1 21129,4217 21126,4221 21071,4189
-Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9681,6180
-Parkstr. (Tempelhof): Kleinsteinpflaster	Q1 9202,6412 9143,6415
+Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9687,6180
+Parkstr. (Tempelhof): Kleinsteinpflaster	Q1 9237,6413 9202,6412 9143,6415
 Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
@@ -11388,6 +11391,7 @@ Marathonallee: Asphalt	Q0 439,11968 291,11941
 (Glühwürmchenweg - Pionierstr.): Asphalt	Q0 -6048,16292 -5959,16235
 (Glühwürmchenweg - Pionierstr.): Verbundsteinpflaster	Q1 -5959,16235 -5924,16458
 (Elsa-Neumann-Str. - Heinrich-Hertz-Str.): Betonpflaster	Q0 -159,15486 -45,15503 59,15518
+Innsbrucker Platz: Mosaikpflaster	Q1 6373,8083 6409,8026
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12370,7 +12374,7 @@ Dickhardtstr.: guter Asphalt	Q0 5533,6753 5604,6709 5752,6751 5811,6833 5826,687
 Wetzlarer Str.: Asphalt	Q0 4482,6866 4599,6933 4673,6983 4737,7036
 Laubenheimer Str.: asphaltiert	Q0 4322,7085 4384,7029 4434,6957 4482,6866 4506,6811 4528,6715
 Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8354 4874,8140 4873,8007 4873,7967
-(Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5170,8449 5212,8602
+(Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5166,8467 5212,8602
 Undinestr.: Kopfsteinpflaster	Q2 4787,4133 4681,4537 4651,4638 4568,4789
 Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3 19723,4175 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
@@ -14215,7 +14219,8 @@ Barnackufer: schlechtes Kopfsteinpflaster	Q3 4366,2563 4315,2541 4297,2364 4245,
 Barnackufer: schlechtes Kopfsteinpflaster	Q3 4245,2207 4351,2225 4454,2221
 Bernshausener Ring: Asphalt	Q0 5322,21849 5292,21921 5297,21960 5326,21982 5440,22012 5475,22006 5496,21991 5527,21942
 Kekuléstr.: guter Asphalt	Q0 19136,2673 19268,2784 19374,2887 19425,2934
-(Templerzeile - Götzstr.): Asphalt	Q0 9681,6180 9683,6199 9695,6336
+(Templerzeile - Götzstr.): glattes Pflaster	Q1 9687,6180 9683,6203
+(Templerzeile - Götzstr.): Asphalt	Q0 9683,6203 9695,6336
 (Templerzeile - Götzstr.): Verbundsteinpflaster	Q1 9695,6336 9719,6492
 Straße 614: Asphalt	Q0 13105,5748 12885,5699
 Marschnerstr.: mäßiges Kopfsteinpflaster	Q2 4613,4515 4641,4287 4634,4053
@@ -15287,7 +15292,7 @@ Kastanienallee (Blankenburg): Kopfsteinpflaster	Q3 13951,21086 14005,21262 14069
 Thaler Str.: Asphalt	Q0 13744,21067 13817,21304 13884,21524 13938,21700
 Hohensaatener Str.: guter Beton	Q0 21782,16253 21842,16242 22063,16203 22088,16341 22094,16376 22108,16457
 Münsingerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3598,14587 -3535,14408
-(Franckepark - Templerzeile): Parkweg markiert als Radweg auf Verbundsteinpflaster und teilweise fester Kies (wassergebunden)	Q1 9381,6277 9426,6239 9463,6232 9683,6199
+(Franckepark - Templerzeile): Parkweg markiert als Radweg auf Verbundsteinpflaster und teilweise fester Kies (wassergebunden)	Q1 9381,6277 9420,6248 9515,6229 9683,6203
 (Schachtelhalmweg - Strohblumenweg): Gras- bzw. Schotterweg	Q2 20351,1981 20340,1974 20383,1903 20471,1768 20525,1713
 Genossenschaftssteg: Asphalt	Q0 7940,19521 7920,19471
 Genossenschaftssteg: Asphalt	Q0 7920,19471 7911,19449 7987,19387
@@ -16162,7 +16167,8 @@ Straße 22: Beton	Q0 3232,18868 3307,18814 3526,18653
 (Wedellstr. - Keffenbrinkweg): Gehwegpflasterung mäßiger Qualität	Q2 7614,2807 7779,2722 7923,2688
 Lachtaubenweg: Verbundsteinpflaster	Q1 -1827,20216 -1823,20298 -1838,20471
 Elstergasse: guter Beton	Q0 -1596,20184 -1827,20216 -1971,20231
-Gerdsmeyerweg: Beton, gute Qualität	Q0 8165,5447 8161,5399 8130,5353 8070,5325 8036,5309
+Gerdsmeyerweg: Beton, gute Qualität	Q0 8165,5447 8160,5401 8134,5360 8069,5328
+Gerdsmeyerweg: Kopfsteinpflaster	Q2 8069,5328 8026,5307
 Im Wolfsgartenfeld: mäßiger Asphalt	Q2 5338,19843 5340,19895 5307,20067
 Erlenstr. (Köpenick): Beton	Q0 23879,4233 23880,4280 23881,4299 23881,4335 23868,4411 23850,4497 23826,4539
 Schmale Gasse: Asphalt	Q0 23881,4335 24053,4357 24072,4423
@@ -16452,13 +16458,13 @@ Im Gartenheim: mäßiges bis gutes Verbundsteinpflaster	Q2 5707,4777 5690,4744 565
 Brigittenstr.: guter, teils mäßiger Asphalt	Q1 6044,3110 6138,3022 6208,2954
 Brigittenstr.: guter, teils mäßiger Asphalt	Q1 6222,2940 6244,2910 6304,2825
 Ruthstr.: mäßiger Asphalt	Q1 6372,2959 6332,3007
-(Marienhöhe): Asphalt	Q0 8070,5325 8075,5307 8116,5276 8115,5245 8052,5154 8115,5086
+(Marienhöhe): Asphalt	Q0 8069,5328 8075,5307 8116,5276 8115,5245 8052,5154 8105,5098
 (Attilastr. - Marienhöher Weg): Kleinsteinpflaster	Q1 8014,4832 8002,4903 7986,4984
 Reginenweg: Asphalt	Q0 6484,3292 6482,3327 6431,3417 6426,3425
 Annastr.: schlechtes Kopfsteinpflaster	Q3 5863,2825 5930,2671
 Ruthstr.: mäßiges Kopfsteinpflaster	Q2 6129,3203 6224,3112
 Saarburger Str.: guter Beton	Q0 6529,3480 6635,3520
-Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
+Gerdsmeyerweg - Marienhöher Weg: Asphalt, etwas uneben	Q1 8026,5307 7935,5230
 Tschaikowskistr.: guter Asphalt	Q0 9487,18887 9620,18935 9868,19023 9958,19053 10090,19097 10115,19105 10249,19148
 (Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1 16673,5488 16564,5381 16497,5323 16316,5192 16279,5170
 Hinter den Gärten: Beton	Q0 -6700,15653 -6718,15447
@@ -16988,7 +16994,7 @@ Kalckreuthstr.: Asphalt	Q0 6636,10492 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4713,8997
-Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8355
+Schrammstr.: grobes Kopfsteinpflaster	Q3 4954,8454 4958,8355
 Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5654,10485 5568,10535
 Los-Angeles-Platz: Kopfsteinpflaster	Q1 5669,10704 5822,10609
 Elisabethkirchstr.: Kleinsteinpflaster	Q1 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132
@@ -17055,7 +17061,7 @@ Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279
 Gustav-Freytag-Str.: Kopfsteinpflaster	Q2 6779,8279 6785,8194 6792,8122
 (Loewenhardtdamm - Höhndorfstr.): Verbundsteine, Beton	Q0 8334,8655 8438,8676
 (Weg d. Kol. Papestr.): Verbundsteine und Schotter	Q1 8215,8631 8259,8628 8260,8567 8265,8305
-Udetzeile: Asphalt mit Fugen	Q1 8327,8302 8315,8189
+Udetzeile: Asphalt	Q0 8333,8303 8325,8188
 (zum Bayernring): Asphalt	Q0 8454,8574 8531,8404
 Bäumerplan: Asphalt	Q0 8561,8252 8536,8192 8519,8088
 Adolf-Scheidt-Platz: Asphalt	Q1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
@@ -17162,7 +17168,7 @@ Ruhrstr.: Asphalt	Q0 3983,9343 4224,9241
 Hektorstr.: Asphalt	Q1 3189,10141 3206,10458
 Walter-Benjamin-Platz: Gehwegplatten	Q0 4256,10583 4381,10583
 Bregenzer Str.: Asphalt	Q1 4279,10270 4228,10020
-Maxdorfer Steig: Kopfsteinpflaster	Q1 4325,8998 4449,8999
+Maxdorfer Steig: Kleinsteinpflaster	Q1 4325,8998 4449,8999
 Am Friedrichshain: Asphalt mit Schäden	Q2 12038,13685 12022,13755 12084,13840 12106,13828 12147,13887 12104,13913 12065,13851 12084,13840
 Vopeliuspfad: Kopfsteinpflaster	Q2 1345,3023 1228,3210
 (Parkweg Dreipfuhlpark): Parkweg	Q1 1608,4313 1548,4168 1524,4054 1520,4006 1523,3904

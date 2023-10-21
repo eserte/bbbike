@@ -286,7 +286,7 @@ Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17972,8968 17979,896
 Markgrafenstr.: Gehweg	q3 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9523,12019 9656,12031
-Am Volkspark: Parkweg	q1 5730,8207 5918,8221
+Am Volkspark: einige Fuﬂg‰nger	q1 5730,8207 5918,8221
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
 Lange Str. [vor dem ehemaligen Kaufhof]: Fuﬂg‰nger, Bordstein	q4 12413,11901 12522,11837
@@ -2488,6 +2488,8 @@ Staakener Feldstr.: einige Fuﬂg‰nger	q1 -7647,13985 -7716,14031
 (Gl¸hw¸rmchenweg - Pionierstr.): einige Fuﬂg‰nger	q1 -6048,16292 -5959,16235 -5924,16458
 (Seydlitzstr. - Lehrter Str.): eng, wenn BVG-Busse hier parken	q3 7613,13517 7651,13447
 (Michelangelostr. - G¸rtelstr.): einige Fuﬂg‰nger	q2 13337,15560 13358,15596 13325,15619
+Innsbrucker Platz: schmale Radwege, einige Fuﬂg‰nger	q1 6373,8083 6409,8026
+Gerdsmeyerweg - Marienhˆher Weg: einige Fuﬂg‰nger, Bordstein	q2 8026,5307 7935,5230
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2586,7 +2588,7 @@ M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20321,16043 20330,16040
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q2 6843,7293 6847,7314 7089,7398 7097,7419 7220,7445
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 Konradinstr.: enge Straﬂe	q0 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
-(Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5170,8449 5212,8602
+(Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5166,8467 5212,8602
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 835,2715 1017,2823 1093,2866 1112,2880 1145,2898 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1667,3232 1687,3244 1715,3257 1977,3414 2228,3554
 Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076
@@ -2878,7 +2880,7 @@ Stanzer Zeile: enge Straﬂe	q0 6175,372 6130,449 6112,547 6089,643 6066,821 6067,
 Mommsenstr. (Lichterfelde): enge Straﬂe	q1 3583,4011 3361,3860
 Sodtkestr.: enge Straﬂe	q1 12221,15514 12298,15658 12382,15802 12423,15875
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
-(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9719,6492
+(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9687,6180 9683,6203 9695,6336 9719,6492
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit H‰nger passierbar	q1 -5505,15859 -5523,15766
 Mittelheide: enge Straﬂe	q0 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 Platanenstr.: teilweise recht eng	q0 9349,19782 9498,19817 9824,19910 10134,19981
@@ -3016,7 +3018,7 @@ Simpsonweg: enge Straﬂe	q1 10092,-669 9937,-693 9913,-705 9899,-732 9907,-812 98
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/un¸bersichtlich	q1 15373,7212 15422,7265 15468,7291 15579,7316 15609,7347
 Immenweg: eng (einspurig)	q1 6529,5026 6419,5048 6385,4896
 Albtalweg: enge Straﬂe	q1 5368,22669 5338,22753 5297,22830 5243,22896
-Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9426,6239 9463,6232 9683,6199
+Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9420,6248 9515,6229 9683,6203
 Straﬂe 78: enge Straﬂe	q2 7715,19408 7797,19580
 Tankredstr.: enge Straﬂe, Kurve	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243

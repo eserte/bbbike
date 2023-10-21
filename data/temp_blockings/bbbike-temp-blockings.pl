@@ -320,11 +320,11 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-12-22 23:59:59"),
+     { from  => $isodate2epoch->("2023-11-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2022-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden, 2021 auch
-       text  => 'Spandauer Weihnachtsmarkt, vom 21.11.2022 bis 22.12.2022',
+       text  => 'Spandauer Weihnachtsmarkt, vom 27.11.2023 bis 23.12.2023',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
        data  => <<EOF,
@@ -1412,9 +1412,9 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-25 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2022-11-27 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (26.11.2022 - 27.11.2022)',
+     { from  => $isodate2epoch->("2023-12-01 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2023-12-03 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (02.12.2023 - 03.12.2023)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11, start => "2022-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
        type  => 'gesperrt',
@@ -3615,11 +3615,11 @@ EOF
 	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-11-27 20:00:00"), #
+     { from  => $isodate2epoch->("2023-12-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-03 20:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11, start => "2022-01-01T00:00:00"]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 27. November 2022 von 13 bis 19 Uhr)',
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 03. Dezember 2023 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
@@ -17274,7 +17274,7 @@ EOF
        periodic => 1,
        prewarn_days => 10,
        postwarn_days => 7,
-       recurrences => [['yearly', days => 20, months => 11, start => "2023-01-01T00:00:00"]], # Weihnachtsmarkt 2020 auf dem Gendarmenmarkt fällt aus - wegen Corona
+       recurrences => [['yearly', days => 20, months => 11, start => "2024-01-01T00:00:00"]], # Weihnachtsmarkt 2023 auf dem Gendarmenmarkt wird wegen Bauarbeiten zum Bebelplatz verlegt
        source_id => 'https://www.weihnachtsmarkt-berlin.de/',
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 22.11.2021 bis 31.12.2021, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
@@ -22920,9 +22920,9 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-02 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2022-12-04 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (03.12.2022 - 04.12.2022)',
+     { from  => $isodate2epoch->("2023-12-08 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2023-12-10 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (09.12.2023 - 10.12.2023)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22932,9 +22932,9 @@ EOF
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-09 00:00:00"),
-       until => $isodate2epoch->("2022-12-11 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (10.12.2022 - 11.12.2022)',
+     { from  => $isodate2epoch->("2023-12-15 00:00:00"),
+       until => $isodate2epoch->("2023-12-17 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (16.12.2023 - 17.12.2023)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22948,7 +22948,7 @@ EOF
        until => $isodate2epoch->("2022-12-18 23:59:59"),
        text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (17.12.2022 - 18.12.2022)',
        periodic => 1,
-       recurrences => [['yearly', days => 16, months => 12, start => "2022-01-01T00:00:00"]],
+       recurrences => [['yearly', days => 16, months => 12, start => "2024-01-01T00:00:00"]], # 2023 nur an drei Adventswochenenden
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -23047,18 +23047,17 @@ EOF
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-12-29 00:00:00"), # $isodate2epoch->("2021-12-29 23:59:59"), #
+     { from  => $isodate2epoch->("2023-11-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-29 00:00:00"), # $isodate2epoch->("2021-12-29 23:59:59"), #
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 21.11.2022 - 29.12.2022',
+       text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 28.11.2023 - 29.12.2023',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
 #: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/brandenburg/3404397-1329503-der-traditionelle-potsdamer-weihnachtsma.html
 #: by: https://www.berlin.de/tourismus/brandenburg/veranstaltungen/7769364-3479097-weihanchtsmarkt-blauer-lichterglanz.html
-#: note: keine Weihnachtsmärkte mehr in Brandenburg ab dem 24.11.2021
 #: tempex: before(first_advent,mo) - YYYY1230
 	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
 EOF
@@ -25507,16 +25506,16 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2023-11-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # findet 2020 nicht statt
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2022 bis 26. Dezember 2022',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 27. November 2023 bis 26. Dezember 2023',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
 #: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 #: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
 	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
@@ -35357,7 +35356,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-04
+#: last_checked: 2023-10-21
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35374,7 +35373,7 @@ EOF
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-09-23
+#: last_checked: 2023-10-21
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -36429,14 +36428,14 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2023-10-25 17:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 25.10.2023',
+       until => $isodate2epoch->("2023-12-09 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 9.12.2023',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -37378,7 +37377,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-10-01 (daf)
+#: last_checked: 2023-10-21
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -37459,7 +37458,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-09-23
+#: last_checked: 2023-10-21
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37647,7 +37646,7 @@ EOF
 # REMOVED (vermutlich andere Baumaßnahme) --- source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2024
-#: last_checked: 2023-07-01
+#: last_checked: 2023-10-21
 #: check_frequency: 120d
 #: next_check: 2024-04-30
 	q4::inwork; 5172,8880 5165,8784
@@ -37690,14 +37689,14 @@ EOF
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
      },
-     { from  => 1669158000, # 2022-11-23 00:00
-       until => $isodate2epoch->("2022-12-27 18:00:00"), # ein paar Tage für den Abbau einplanen
+     { from  => $isodate2epoch->("2023-11-19 00:00:00"), # einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
+       until => $isodate2epoch->("2023-12-27 18:00:00"), # ein paar Tage für den Abbau einplanen
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 24.11. - 23.12.2022',
+       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 20.11. - 23.12.2023',
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachten-an-der-spree.de/',
        data  => <<EOF,
+#: by: https://www.weihnachten-an-der-spree.de/
 	2::xmas 13558,10704 13531,10673 13326,10765
 	2::xmas 13527,10660 13531,10673
 EOF
@@ -38076,19 +38075,19 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-23 00:00:00"), # 1676329200, # 2023-02-14 00:00
        until => $isodate2epoch->("2023-10-31 18:00:00"), # undef, # 1681595999, # 2023-04-15 23:59
-       text  => 'Volkspark Wilmersdorf: Wege werden saniert, Sperrungen sind möglich, voraussichtlich bis Ende Oktober 2023',
+       text  => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023 (Stand Mitte Oktober 2023: noch immer gesperrt)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
-#: last_checked: 2023-07-22 vvv
-#: next_check: 2023-10-23 vvv
+#: last_checked: 2023-10-21 vvv
+#: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 # REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
-	2::inwork 5730,8207 5918,8221
+# REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
 	2::inwork 5438,8402 5611,8252
 #: next_check ^^^
 #: last_checked ^^^
@@ -38250,13 +38249,13 @@ EOF
 #: also_indoor: traffic (ex-G[falsch]) vvv
 #: osm_watch: way id="1171918026" version="4"
 #: osm_watch: way id="151353924" version="11"
-#: last_checked: 2023-08-18 vvv
+#: last_checked: 2023-10-21 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
 # REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
 # REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
-Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293
+Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -40515,7 +40514,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-09-23 vvv
+#: last_checked: 2023-10-21 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
 #: last_checked ^^^
@@ -40588,17 +40587,16 @@ EOF
      },
      { from  => 1695550500, # 2023-09-24 12:15
        until => undef, # XXX
-       text  => 'Mannheimer Str.: Wasserrohrbruch, zwischen Berliner Str. und Brandenburgische Str. gesperrt, vom 25.09.2023 12:15',
-       type  => 'gesperrt',
+       text  => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig, vom 25.09.2023 12:15',
+       type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
-#: XXX Wie lange bleibt die Straße (Fahrbahn?) gesperrt? Sind Radfahrer überhaupt betroffen? Ist der gesamte Abschnitt betroffen?
-#: note: laut rbb "auch für Fußgänger und Radfahrer."
-#: last_checked: 2023-09-25 (Verkehrsmeldung erstellt)
-#: check_frequency: 14d
+#: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
+#: last_checked: 2023-10-21
+#: check_frequency: 60d
 # REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
-	2::inwork 4449,8999 4451,8874
+	q4::inwork 4449,8999 4451,8874
 EOF
      },
      { from  => 1695618000, # 2023-09-25 07:00
@@ -40773,6 +40771,39 @@ EOF
 #: osm_watch: way id="9030384" version="38"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
+EOF
+     },
+     { from  => $isodate2epoch->("2023-11-20 00:00:00"), # mehrere Tage für den Aufbau
+       until => $isodate2epoch->("2024-01-07 23:59:59"), # mehrere Tage für den Abbau
+       periodic => 1,
+       prewarn_days => 7,
+       postwarn_days => 7,
+       recurrences => [['yearly', days => 19, months => 11]],
+       source_id => 'https://www.weihnachtsmarkt-berlin.de/',
+       text  => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt vermutlich nur über einen engen Weg möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: BEBELPLATZXMAS-2022
+#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html?date=20231021
+# REMOVED --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv ---
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
+# REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- 
+Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2023-12-08 18:00:00"), # undef, # XXX
+       text  => 'Mannheimer Str.: zwischen Wilhelmsaue und Volkspark Wilmersdorf Bauarbeiten, Fahrbahn gesperrt, vorausichtlich bis zum 08.12.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.31365,52.48412,21.10.2023,07:00 (hier von Barbrücke; bis 08.12.2023)
+#: note: außerhalb der Arbeitszeiten kann die Absperrung am nördlichen Ende weggeschoben sein, aber am südlichen Ende muss man trotzdem dann Bordsteine überwinden
+#: note: Halteverbotsschilder bis 17.11.2023
+# REMOVED --- #: last_checked: 2023-10-21 --- #: next_check: 2023-11-17
+	q4::inwork 4456,8598 4456,8716
 EOF
      },
     );
