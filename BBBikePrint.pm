@@ -19,6 +19,8 @@ use BBBikeGlobalVars;
 use vars qw(@gv_old_args $gv_pid $gv_version @gv_version);
 use File::Copy qw();
 
+use BBBikeProcUtil qw(double_forked_exec);
+
 BEGIN {
     if (!defined &M) {
 	eval 'sub M ($) { @_ }'; warn $@ if $@;
@@ -255,15 +257,15 @@ sub BBBikePrint::print_postscript {
 	}
     } elsif (is_in_path("ghostview")) {
 	return 1 if $check_availability;
-	system("ghostview $file&");
+	double_forked_exec('ghostview', $file);
     } elsif (is_in_path("ggv")) {
 	return 1 if $check_availability;
-	system("ggv $file&");
+	double_forked_exec('ggv', $file);
     } elsif (is_in_path("kghostview")) {
 	return 1 if $check_availability;
-	system("kghostview $file&");
+	double_forked_exec('kghostview', $file);
     } elsif ($^O eq 'darwin') {
-	system("open $file&"); # will call ps to pdf converter
+	system("open", $file); # will call ps to pdf converter; runs in background
     } elsif ($os eq 'unix' && $^O ne 'darwin') {
 	# XXX Tk::Ghostscript funktioniert noch nicht so
 	# toll... besser mit gs-5.10 als mit gs-3.53
@@ -396,7 +398,7 @@ sub BBBikePrint::view_pdf {
     TRY: {
 	    for my $prog (qw(evince xpdf nautilus acroread acroread5 acroread4 gv ggv atril)) {
 		if (is_in_path($prog)) {
-		    system("$prog $file &");
+		    double_forked_exec($prog, $file);
 		    last TRY;
 		}
 	    }
