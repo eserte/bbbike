@@ -562,7 +562,7 @@ sub get_all_viewers {
 	my @pdf_viewers;
 	# There's also kpdf, but kde programms does not run in a
 	# non-KDE environment anymore...
-	for my $pdf_viewer ("acroread", "xpdf", "gv") {
+	for my $pdf_viewer (qw(evince xpdf acroread gv)) {
 	    push @pdf_viewers, $pdf_viewer if is_in_path($pdf_viewer);
 	}
 	@pdf_viewers;
