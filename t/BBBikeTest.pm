@@ -212,11 +212,10 @@ sub do_display {
     $imagetype = "" if !defined $imagetype; # avoid warnings
 
     if ($imagetype eq 'svg') {
-	# prefer ImageMagick (needs at least version 6) over Mozilla
 	if (is_in_path("display")) {
 	    double_forked_exec('display', $filename);
-	} elsif (is_in_path("mozilla")) {
-	    double_forked_exec(qw(mozilla -noraise -remote), "openURL(file:$filename,new-tab)");
+	} elsif (is_in_path('eog')) {
+	    double_forked_exec('eog', $filename);
 	} else {
 	    warn "Can't display $filename";
 	}
