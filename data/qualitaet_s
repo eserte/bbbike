@@ -2136,7 +2136,7 @@ Straße 70 - Lindenberger Weg: Feldweg	Q2 16332,22204 16339,22199 16423,22141 164
 (Tümpelweg): Gras	Q3 17426,20265 18024,20630 18061,20715
 Straße 2: schlechtes Kopfsteinpflaster	Q3 18515,20587 18869,20484 18911,20471
 Straße 2: Asphalt	Q0 18911,20471 18999,20442 19079,20414 19167,20380 19261,20344
-Straße 3: Asphalt mit einigen Schäden	Q1 18544,19722 18644,19695 18730,19672 18816,19648
+Straße 3: Asphalt, an den Haltestellen Beton	Q0 18544,19722 18644,19695 18730,19672 18816,19648
 Straße 3: Asphalt	Q0 18816,19648 19071,19576
 Straße 3: leicht rauer Asphalt	Q0 19071,19576 19126,19560 19187,19543 19248,19525 19279,19517
 Straße 6: Asphalt	Q0 18816,19648 18955,20050 19079,20414 19162,20700
@@ -2147,7 +2147,8 @@ Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 (Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19819,19602 19579,18933
 (nördlich des Tierheims): Feldweg	Q2 19819,19602 20240,19393 20262,19367
 (nördlich des Tierheims): Feldweg	Q2 20262,19367 20374,19250 20380,19206 20496,19103 20561,19084 20503,18903 20461,18796 20454,18778
-(Am Tierheim): glatte wassergebundene Decke	Q1 19579,18933 19974,18799
+(Am Tierheim): glatte wassergebundene Decke	Q1 19579,18933 19936,18812
+(Am Tierheim): Betonpflaster	Q0 19936,18812 19974,18799
 (Dorfstr. - Köthener Str.): Parkweg	Q1 19875,18182 19968,18144 20189,18063 20542,17911 20746,17848 20804,17848
 (Hohenschönhauser Str. - Eichenallee): wassergebundene Decke	Q1 19845,18120 19868,18107 19968,18144
 Innsbrucker Str.: Verbundsteinpflaster	Q1 6230,8602 6263,8456
@@ -5254,9 +5255,9 @@ Hauptweg (Wartenberg, Neu-Hohenschönhausen): holpriger Asphalt	Q1 18864,18772 18
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
 Grüne Trift (Wartenberg): etwas rauer Asphalt	Q0 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175
 Grüne Trift (Wartenberg): Asphalt, einige leichte Wurzelhebungen	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
-Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
-Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
-Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
+Am Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
+Am Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
+Am Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
 (Tierheim - Grüne Trift): grobes Verbundsteinpflaster	Q1 19579,18933 19381,19003
 (Tierheim - Grüne Trift): glatter Asphalt, aber Wurzelschäden	Q1 19381,19003 19157,19122
 Hausvaterweg: Asphalt mit einigen Schäden	Q0 19974,18799 20044,18774
@@ -5270,10 +5271,10 @@ Marie-Elisabeth-von-Humboldt-Str.: gutes Verbundsteinpflaster	Q1 20586,18822 206
 Julius-Meyen-Str.: gutes Verbundsteinpflaster	Q1 20635,18707 20553,18734 20494,18755
 Marie-Elisabeth-von-Humboldt-Str.: Asphalt	Q0 20622,18491 20593,18571 20635,18707 20694,18857
 Marie-Elisabeth-von-Humboldt-Str.: mäßiger Asphalt	Q1 20694,18857 20855,19299 20971,19616
-Barnimer Dörferweg: Asphalt	Q0 20694,18857 20789,18899 20865,18933 20889,18943 20948,18968 20995,18988 21035,19005 21039,18997 21068,18934 21084,18899 21095,18874 21123,18813 21137,18782
+Barnimer Dörferweg: Asphalt	Q0 20694,18857 20789,18899 20865,18933 20889,18943 20995,18988 21035,19005 21039,18997 21068,18934 21084,18899 21095,18874 21123,18813 21137,18782
 Kundtanger: Verbundsteinpflaster	Q1 20868,18926 20865,18933 20858,18961 20855,19030 20833,19037 20807,18955 20858,18961
 Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
-Am Dörferweg: provisorischer Asphalt	Q1 20889,18935 20951,18961 20998,18980 21021,18989
+Am Dörferweg: provisorischer Asphalt	Q1 20889,18935 20998,18980 21021,18989
 Johann-Jacob-Engel-Str.: Asphalt	Q0 20743,18540 20727,18576 20701,18634
 Johann-Jacob-Engel-Str.: Verbundsteinpflaster	Q1 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
 (entlang des Gehrensees): Beton	Q0 20855,19299 20904,19284
@@ -6484,11 +6485,11 @@ Jerichower Str.: Verbundsteinpflaster	Q0 24047,15370 24035,15442
 Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0 23941,15458 23960,15340 23978,15215 23993,15111
 (Stendaler Str. - Tangermünder Str.): Beton	Q0 23895,15450 23914,15453 23941,15458 24038,15475
 (Stendaler Str. - Tangermünder Str.): Verbundsteinpflaster	Q1 24038,15475 24076,15481 24169,15497
-(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427
-(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke, teilweise etwas gröberes Material	Q1 25003,15617 25052,15591 25142,15584 25184,15575 25234,15577 25314,15553 25333,15509 25346,15501 25415,15493 25446,15447 25543,15430
+(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25543,15430 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
 (Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
 (Zerbster Str. - Louis-Lewin-Str.): wassergebundene Decke	Q1 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
-(Gohliser Str. - Wuhle-Hönow-Weg): wassergebundene Decke	Q1 25504,15352 25541,15406 25540,15429
+(Gohliser Str. - Wuhle-Hönow-Weg): wassergebundene Decke	Q1 25504,15352 25541,15406 25543,15430
 Eilenburger Str.: Asphalt	Q0 25743,15118 25752,15219 25578,15238
 Oschatzer Ring: Asphalt mit leichten Schäden	Q0 24651,15239 24634,15314 24639,15372 24648,15465 24779,15448
 Oschatzer Ring: Asphalt	Q0 24779,15448 24770,15358 24794,15270
@@ -9823,7 +9824,7 @@ Sterckmannweg [62-76]: Rasengittersteine	Q2 20577,15478 20639,15439 20666,15485
 Goldfasanenweg: Verbundsteinpflaster	Q1 20864,15264 20861,15352 20906,15352
 (Wustrower Str. - Wustrower Park): Beton	Q0 17128,18281 17162,18304
 Ahrenshooper Str. [Wohngebiet]: Beton	Q0 16949,18261 17076,18355
-Ahrenshooper Str. [Wohngebiet]: Beton	Q0 16889,18347 17016,18436
+Ahrenshooper Str. [Wohngebiet]: Beton	Q1 16739,18249 16889,18347 17016,18436
 Am Steener Berg: Asphalt	Q0 17011,25830 17446,25914 17856,25959
 Am Steener Berg: Beton	Q0 17856,25959 18108,26048
 (S-Bahndamm - Hobrechtsfelder Chaussee): Asphalt	Q0 15469,24813 15339,24861 14434,25388
@@ -10349,7 +10350,7 @@ Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 (Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1 18715,9589 18754,9584 18811,9576 18835,9572 18865,9608
 (Aristotelessteig - Hönower Str.): Verbundsteinpflaster	Q1 18835,9572 18837,9538 18846,9532
 Am Herzbergteich: Verbundsteinpflaster	Q1 17945,13493 17941,13564 17877,13562
-Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzem Kopfsteinpflasterabschnitt	Q1 17799,19000 17824,18963
+Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzem Kopfsteinpflasterabschnitt	Q1 17793,18999 17824,18963
 Dorfstr. (Wartenberg) [Nebenstraße]: Beton	Q0 17824,18963 17874,18936 17958,18905 17980,18947
 (Schloßpark - Blankenburger Str.): Beton	Q0 10569,19395 10578,19417 10525,19592
 (Schnellerstr. - Uferstr.): Gehwegplatten	Q0 17628,5865 17678,5916
@@ -13369,7 +13370,7 @@ Sondershauser Str.: Asphalt	Q0 6470,1598 6486,1680
 Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	Q2 8106,3410 8016,3651 7795,4242
 Mariendorfer-Hafen-Weg: Holzbohlen	Q1 7795,4242 7769,4315
 (Am Bahndamm): Verbundsteinpflaster/wassergebundene Decke	Q1 7769,4315 7727,4418 7692,4464 7667,4549
-Ahrenshooper Str.: Beton	Q0 16768,18522 16889,18347 16949,18261 17082,18068
+Ahrenshooper Str.: Beton	Q1 16761,18516 16889,18347 16949,18261 17082,18068
 Ahrenshooper Str.: Beton	Q0 16905,17949 17082,18068 17215,18153
 Havelstr.: Asphalt	Q0 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 Klärwerkstr.: Asphalt	Q0 -1284,13340 -1258,13552
@@ -14053,7 +14054,7 @@ Engelmannweg: gut befahrbares Kopfsteinpflaster	Q1 4531,18217 4492,18013 4462,17
 Ahornallee (Friedrichshagen): Asphalt	Q0 25121,5795 25123,5767
 Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5464 25121,5286
 Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
-Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17799,19000 17887,18975 17900,18972 17980,18947 18007,18938
+Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17728,18985 17793,18999 17887,18975 17900,18972 17980,18947 18007,18938
 Am Gutshof: Verbundsteinpflaster	Q0 17730,18747 17813,18726 17817,18738 17824,18774 17837,18784 17854,18777
 Am Gutshof: Kopfsteinpflaster	Q2 17854,18777 17907,18759
 Am Gutshof: Verbundsteinpflaster	Q0 17907,18759 17938,18749 17929,18709 17900,18717

@@ -2924,7 +2924,8 @@ Straße 70 - Lindenberger Weg: Feldweg	Q2 16332,22204 16339,22199 16423,22141 164
 (Tümpelweg): Gras	Q3 17426,20265 18024,20630 18061,20715
 Straße 2: schlechtes Kopfsteinpflaster	Q3 18515,20587 18869,20484 18911,20471
 Straße 2: Asphalt	Q0- 18911,20471 18999,20442 19079,20414 19167,20380 19261,20344
-Straße 3: Asphalt mit einigen Schäden	Q1+ 18544,19722 18644,19695 18730,19672 18816,19648
+#: historical_note: früher (bis Sommer/Herbst 2023): Asphalt mit einigen Schäden, Q1+
+Straße 3: Asphalt, an den Haltestellen Beton	Q0 18544,19722 18644,19695 18730,19672 18816,19648
 Straße 3: Asphalt	Q0 18816,19648 19071,19576
 Straße 3: leicht rauer Asphalt	Q0- 19071,19576 19126,19560 19187,19543 19248,19525 19279,19517
 Straße 6: Asphalt	Q0 18816,19648 18955,20050 19079,20414 19162,20700
@@ -2936,7 +2937,9 @@ Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 (nördlich des Tierheims): Feldweg	Q2+ 19819,19602 20240,19393 20262,19367
 #: note: auch als Reitweg genutzt
 (nördlich des Tierheims): Feldweg	Q2+ 20262,19367 20374,19250 20380,19206 20496,19103 20561,19084 20503,18903 20461,18796 20454,18778
-(Am Tierheim): glatte wassergebundene Decke	Q1+ 19579,18933 19974,18799
+#: note: am nördlichen Rand noch ein Verbundsteinpflasterstreifen
+(Am Tierheim): glatte wassergebundene Decke	Q1+ 19579,18933 19936,18812
+(Am Tierheim): Betonpflaster	Q0- 19936,18812 19974,18799
 (Dorfstr. - Köthener Str.): Parkweg	Q1 19875,18182 19968,18144 20189,18063 20542,17911 20746,17848 20804,17848
 (Hohenschönhauser Str. - Eichenallee): wassergebundene Decke	Q1- 19845,18120 19868,18107 19968,18144
 Innsbrucker Str.: Verbundsteinpflaster	Q1 6230,8602 6263,8456
@@ -6531,9 +6534,9 @@ Hauptweg (Wartenberg, Neu-Hohenschönhausen): holpriger Asphalt	Q1 18864,18772 18
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
 Grüne Trift (Wartenberg): etwas rauer Asphalt	Q0- 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175
 Grüne Trift (Wartenberg): Asphalt, einige leichte Wurzelhebungen	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
-Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
-Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
-Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
+Am Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
+Am Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
+Am Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
 (Tierheim - Grüne Trift): grobes Verbundsteinpflaster	Q1- 19579,18933 19381,19003
 (Tierheim - Grüne Trift): glatter Asphalt, aber Wurzelschäden	Q1 19381,19003 19157,19122
 Hausvaterweg: Asphalt mit einigen Schäden	Q0- 19974,18799 20044,18774
@@ -6547,15 +6550,15 @@ Marie-Elisabeth-von-Humboldt-Str.: gutes Verbundsteinpflaster	Q1+ 20586,18822 20
 Julius-Meyen-Str.: gutes Verbundsteinpflaster	Q1+ 20635,18707 20553,18734 20494,18755
 Marie-Elisabeth-von-Humboldt-Str.: Asphalt	Q0 20622,18491 20593,18571 20635,18707 20694,18857
 Marie-Elisabeth-von-Humboldt-Str.: mäßiger Asphalt	Q1 20694,18857 20855,19299 20971,19616
-Barnimer Dörferweg: Asphalt	Q0 20694,18857 20789,18899 20865,18933 20889,18943 20948,18968 20995,18988 21035,19005 21039,18997 21068,18934 21084,18899 21095,18874 21123,18813 21137,18782
+Barnimer Dörferweg: Asphalt	Q0 20694,18857 20789,18899 20865,18933 20889,18943 20995,18988 21035,19005 21039,18997 21068,18934 21084,18899 21095,18874 21123,18813 21137,18782
 Kundtanger: Verbundsteinpflaster	Q1+ 20868,18926 20865,18933 20858,18961 20855,19030 20833,19037 20807,18955 20858,18961
 Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 # 
 #: next_check_id: FALKENBERG-2021
 #: XXX: letzte Deckschicht fehlt noch
-#: last_checked: 2023-05-06
+#: last_checked: 2023-10-22
 #: check_frequency: 150d
-Am Dörferweg: provisorischer Asphalt	Q1+ 20889,18935 20951,18961 20998,18980 21021,18989
+Am Dörferweg: provisorischer Asphalt	Q1+ 20889,18935 20998,18980 21021,18989
 # 
 Johann-Jacob-Engel-Str.: Asphalt	Q0 20743,18540 20727,18576 20701,18634
 Johann-Jacob-Engel-Str.: Verbundsteinpflaster	Q1+ 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
@@ -7866,30 +7869,14 @@ Jerichower Str.: Verbundsteinpflaster	Q0- 24047,15370 24035,15442
 Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0- 23941,15458 23960,15340 23978,15215 23993,15111
 (Stendaler Str. - Tangermünder Str.): Beton	Q0- 23895,15450 23914,15453 23941,15458 24038,15475
 (Stendaler Str. - Tangermünder Str.): Verbundsteinpflaster	Q1+ 24038,15475 24076,15481 24169,15497
-#: by: https://lsg-hoenower-weiherkette.de/2021/11/24/bald-ist-es-soweit-beginn-der-masnahmen/ (Wegebaumaßnahmen bis Sommer 2022)
-#: by: https://berliner-abendblatt.de/2022/01/26/gestaltung-an-der-hoenower-weiherkette-beginnt/
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9982 (Anfrage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1195419.php
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1202027.php
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10384 (Anfrage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10385 (Anfrage)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1316105.php (Teich der Hönower Weiherkette wird geflutet)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1355163.php (Abschluss"spaziergang")
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11071 (Antrag)
-#: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv
-#: last_checked: 2023-06-04 (mapillary) (noch Bauarbeiten) vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2023-08-30 vvv
-(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+# REMOVED --- #: by: https://lsg-hoenower-weiherkette.de/2021/11/24/bald-ist-es-soweit-beginn-der-masnahmen/ (Wegebaumaßnahmen bis Sommer 2022) --- #: by: https://berliner-abendblatt.de/2022/01/26/gestaltung-an-der-hoenower-weiherkette-beginnt/ --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9982 (Anfrage) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1195419.php --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1202027.php --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10384 (Anfrage) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10385 (Anfrage) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1316105.php (Teich der Hönower Weiherkette wird geflutet) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1355163.php (Abschluss"spaziergang") --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11071 (Antrag) --- #: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv --- #: last_checked: 2023-06-04 (mapillary) (noch Bauarbeiten) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2023-08-30 vvv
+(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke, teilweise etwas gröberes Material	Q1- 25003,15617 25052,15591 25142,15584 25184,15575 25234,15577 25314,15553 25333,15509 25346,15501 25415,15493 25446,15447 25543,15430
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
+(Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25543,15430 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
 (Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
 (Zerbster Str. - Louis-Lewin-Str.): wassergebundene Decke	Q1 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
 # 
-(Gohliser Str. - Wuhle-Hönow-Weg): wassergebundene Decke	Q1 25504,15352 25541,15406 25540,15429
+(Gohliser Str. - Wuhle-Hönow-Weg): wassergebundene Decke	Q1 25504,15352 25541,15406 25543,15430
 Eilenburger Str.: Asphalt	Q0 25743,15118 25752,15219 25578,15238
 Oschatzer Ring: Asphalt mit leichten Schäden	Q0- 24651,15239 24634,15314 24639,15372 24648,15465 24779,15448
 Oschatzer Ring: Asphalt	Q0 24779,15448 24770,15358 24794,15270
@@ -11519,7 +11506,7 @@ Sterckmannweg [62-76]: Rasengittersteine	Q2 20577,15478 20639,15439 20666,15485
 Goldfasanenweg: Verbundsteinpflaster	Q1+ 20864,15264 20861,15352 20906,15352
 (Wustrower Str. - Wustrower Park): Beton	Q0- 17128,18281 17162,18304
 Ahrenshooper Str. [Wohngebiet]: Beton	Q0- 16949,18261 17076,18355
-Ahrenshooper Str. [Wohngebiet]: Beton	Q0- 16889,18347 17016,18436
+Ahrenshooper Str. [Wohngebiet]: Beton	Q1+ 16739,18249 16889,18347 17016,18436
 Am Steener Berg: Asphalt	Q0 17011,25830 17446,25914 17856,25959
 Am Steener Berg: Beton	Q0- 17856,25959 18108,26048
 (S-Bahndamm - Hobrechtsfelder Chaussee): Asphalt	Q0 15469,24813 15339,24861 14434,25388
@@ -12113,7 +12100,7 @@ Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 (Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1+ 18715,9589 18754,9584 18811,9576 18835,9572 18865,9608
 (Aristotelessteig - Hönower Str.): Verbundsteinpflaster	Q1+ 18835,9572 18837,9538 18846,9532
 Am Herzbergteich: Verbundsteinpflaster	Q1 17945,13493 17941,13564 17877,13562
-Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzem Kopfsteinpflasterabschnitt	Q1- 17799,19000 17824,18963
+Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzem Kopfsteinpflasterabschnitt	Q1- 17793,18999 17824,18963
 Dorfstr. (Wartenberg) [Nebenstraße]: Beton	Q0- 17824,18963 17874,18936 17958,18905 17980,18947
 (Schloßpark - Blankenburger Str.): Beton	Q0 10569,19395 10578,19417 10525,19592
 (Schnellerstr. - Uferstr.): Gehwegplatten	Q0- 17628,5865 17678,5916
@@ -18260,7 +18247,8 @@ Mariendorfer-Hafen-Weg: Holzbohlen	Q1 7795,4242 7769,4315
 #: by: ^^^
 # 
 #: by: Petra Hennecke: vvv
-Ahrenshooper Str.: Beton	Q0 16768,18522 16889,18347 16949,18261 17082,18068
+#: corrected_by: srt (Q0 -> ...)
+Ahrenshooper Str.: Beton	Q1+ 16761,18516 16889,18347 16949,18261 17082,18068
 Ahrenshooper Str.: Beton	Q0 16905,17949 17082,18068 17215,18153
 #: by: ^^^
 # 
@@ -20333,7 +20321,7 @@ Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5
 Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
 # REMOVED --- #: note: laut ADFC-Karte/neu schlechter als mäßig geeignet: --- #: XXX wird sich am Fahrbahnbelag was ändern? --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.559438.php --- #: source_id: 2147341173 --- #: source_id: LMS-BR_r_LMS-BR_93888 --- #: next_check: 2017-08-31
 #: corrected_by: srt (neu gemacht)
-Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17799,19000 17887,18975 17900,18972 17980,18947 18007,18938
+Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17728,18985 17793,18999 17887,18975 17900,18972 17980,18947 18007,18938
 #: confirmed_by: srt
 Am Gutshof: Verbundsteinpflaster	Q0- 17730,18747 17813,18726 17817,18738 17824,18774 17837,18784 17854,18777
 #: corrected_by: srt (Verbundsteinpflaster -> ...)

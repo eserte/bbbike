@@ -42,19 +42,21 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-10-06
+#: last_checked: 2023-10-22
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
+#: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?))
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-10-17
+#: last_checked: 2023-10-21 (daf)
 #: check_frequency: 90d
+#: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-10-19 vvv
+#: last_checked: 2023-10-22 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
@@ -746,7 +748,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="33"
 #: osm_watch: way id="1193560283" version="2"
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-22
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -2518,8 +2520,8 @@ Fährsteg	q4 27374,-1573 27361,-1551
 Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
 (Uferweg an der HTW): einige Fußgänger	q1+ 19184,5554 19134,5544 18978,5522 18860,5534 18776,5575 18744,5612 18650,5707
 (Zerbster Str. - Louis-Lewin-Str.): eng, Fußgänger	q2 24324,15519 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
-(Louis-Lewin-Str. - U-Bhf. Hönow): eng, Fußgänger	q2 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
-(Gohliser Str. - Wuhle-Hönow-Weg): eng, Fußgänger	q2 25504,15352 25541,15406 25540,15429
+(Louis-Lewin-Str. - U-Bhf. Hönow): eng, Fußgänger	q2 25003,15617 25052,15591 25142,15584 25184,15575 25234,15577 25314,15553 25333,15509 25346,15501 25415,15493 25446,15447 25543,15430 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+(Gohliser Str. - Wuhle-Hönow-Weg): eng, Fußgänger	q2 25504,15352 25541,15406 25543,15430
 #: XXX_prog BS (2x)
 (Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]): Bordsteine	q3 24009,15094 23993,15111
 Fritz-Lang-Str.: Fußgängerzone	q2- 23856,14868 23878,14748
@@ -4306,7 +4308,7 @@ Hansastr.: einige Fußgänger	q3 15236,16241 15254,16243
 (Richard-Kolkwitz-Weg - Kötztinger Str.): Fußgänger, stellenweise eng, Bordstein	q4 19513,10224 19560,10218
 #: XXX_prog BS (am Wendehammer, ansonsten entfernen)
 (Roßmäßlerstr - Richard-Kolkwitz-Weg): Bordstein	q4 19487,10205 19487,10218
-(Am Dörferweg - Barnimer Dörferweg): provisorische Auffahrt	q3 20951,18961 20948,18968
+# REMOVED --- (Am Dörferweg - Barnimer Dörferweg): provisorische Auffahrt	q3 20951,18961 20948,18968
 #: note: Grünanlage, keine Zusatzschilder
 Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251 19870,15172 19811,15126 19740,15086 19703,15043 19631,14926 19595,14881 19539,14749 19528,14673 19523,14644 19519,14559
 (Bruno-Baum-Grünzug - Martha-Arendsee-Str.): Grünanlage, Fußgänger	q3 19528,14673 19543,14663
@@ -4386,6 +4388,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
 (zur Dörpfeldstraße [Nebenstraße]): Straßenbahnhaltestelle, Fußgänger	q3 21129,4217 21126,4221 21071,4189
 Straßenbahnquerung	q3 17422,17288 17424,17292 17414,17299 17421,17314
+Straßenbahnquerung	q3 16705,18222 16739,18249
 #: note: und außerdem "Stadtmöbel" im Weg
 Varziner Platz: einige Fußgänger	q2 5492,7868 5491,7836
 #: note: keine Ausschilderung
@@ -4621,6 +4624,8 @@ Innsbrucker Platz: schmale Radwege, einige Fußgänger	q1 6373,8083 6409,8026
 #: XXX_prog BS am Gerdsmeyerweg, ansonsten q1
 #: note: am westlichen Ende Grünanlagenschild mit expliziter Radfreigabe (gemeinsamer Fuß- und Radweg), am östlichen Ende fehlt so ein Zusatzschild
 Gerdsmeyerweg - Marienhöher Weg: einige Fußgänger, Bordstein	q2 8026,5307 7935,5230
+# 
+Straße 3: vier Aufpflasterungen	q1+ 18816,19648 19071,19576
 # 
 ######################### User Contributions #################################
 # 

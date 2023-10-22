@@ -931,7 +931,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-10-16
+#: last_checked: 2023-10-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -6685,18 +6685,18 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2023-10-06 vvv
+#: last_checked: 2023-10-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
-Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16981,17855
+Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16945,17900 16981,17855
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-neuer Asphalt, relativ breit, an Einmündungen als Radspur geführt	RW2; 16981,17855 17159,17631
-	RW3; 16981,17855 16905,17949
-die ersten Meter werden auf dem Gehweg geführt	RW3; 17159,17631 16981,17855
+neuer Asphalt, relativ breit, an Einmündungen als Radspur geführt	RW2; 16981,17855 17107,17697 17159,17631
+Betonplatten	RW1; 17159,17631 17107,17697
+	RW3; 17107,17697 16981,17855 16945,17900
 	RW1; 15357,22641 15271,22527
 	RW1;RW1 15271,22527 15154,22370
 getrennter Rad- und Gehweg	RW2;RW2 24853,-3105 24872,-3095 24901,-3076

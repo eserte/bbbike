@@ -1066,8 +1066,8 @@ F‰hrsteg	q4 27374,-1573 27361,-1551
 Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
 (Uferweg an der HTW): einige Fuﬂg‰nger	q1 19184,5554 19134,5544 18978,5522 18860,5534 18776,5575 18744,5612 18650,5707
 (Zerbster Str. - Louis-Lewin-Str.): eng, Fuﬂg‰nger	q2 24324,15519 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
-(Louis-Lewin-Str. - U-Bhf. Hˆnow): eng, Fuﬂg‰nger	q2 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
-(Gohliser Str. - Wuhle-Hˆnow-Weg): eng, Fuﬂg‰nger	q2 25504,15352 25541,15406 25540,15429
+(Louis-Lewin-Str. - U-Bhf. Hˆnow): eng, Fuﬂg‰nger	q2 25003,15617 25052,15591 25142,15584 25184,15575 25234,15577 25314,15553 25333,15509 25346,15501 25415,15493 25446,15447 25543,15430 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+(Gohliser Str. - Wuhle-Hˆnow-Weg): eng, Fuﬂg‰nger	q2 25504,15352 25541,15406 25543,15430
 (Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]): Bordsteine	q3 24009,15094 23993,15111
 Fritz-Lang-Str.: Fuﬂg‰ngerzone	q2 23856,14868 23878,14748
 Kurt-Weill-Gasse: Fuﬂg‰nger	q1 23846,14931 23778,14995
@@ -2320,7 +2320,6 @@ Hansastr.: einige Fuﬂg‰nger	q3 15236,16241 15254,16243
 (Richard-Kolkwitz-Weg - Kˆtztinger Str.): Fuﬂg‰nger, stellenweise eng	q3 19401,10295 19398,10257 19396,10227 19434,10223 19487,10218 19513,10224
 (Richard-Kolkwitz-Weg - Kˆtztinger Str.): Fuﬂg‰nger, stellenweise eng, Bordstein	q4 19513,10224 19560,10218
 (Roﬂm‰ﬂlerstr - Richard-Kolkwitz-Weg): Bordstein	q4 19487,10205 19487,10218
-(Am Dˆrferweg - Barnimer Dˆrferweg): provisorische Auffahrt	q3 20951,18961 20948,18968
 Bruno-Baum-Gr¸nzug: Gr¸nanlage, Fuﬂg‰nger	q3 20260,15434 20245,15394 20004,15251 19870,15172 19811,15126 19740,15086 19703,15043 19631,14926 19595,14881 19539,14749 19528,14673 19523,14644 19519,14559
 (Bruno-Baum-Gr¸nzug - Martha-Arendsee-Str.): Gr¸nanlage, Fuﬂg‰nger	q3 19528,14673 19543,14663
 (Neukˆllnische Wiesen, Wiesenallee): Bodenschwelle, einige Fuﬂg‰nger	q2 14771,8142 14903,7997
@@ -2374,6 +2373,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fuﬂg‰nger	q1 8119,13396 8174,13397
 (zur Dˆrpfeldstraﬂe [Nebenstraﬂe]): Straﬂenbahnhaltestelle, Fuﬂg‰nger	q3 21129,4217 21126,4221 21071,4189
 Straﬂenbahnquerung	q3 17422,17288 17424,17292 17414,17299 17421,17314
+Straﬂenbahnquerung	q3 16705,18222 16739,18249
 Varziner Platz: einige Fuﬂg‰nger	q2 5492,7868 5491,7836
 Rudolf-Leonhard-Str. - Blumberger Damm: einige Fuﬂg‰nger	q1 21493,16387 21538,16444 21574,16547
 Hanielweg: enge Straﬂe	q0 7651,1615 7610,1695 7562,1796
@@ -2490,6 +2490,7 @@ Staakener Feldstr.: einige Fuﬂg‰nger	q1 -7647,13985 -7716,14031
 (Michelangelostr. - G¸rtelstr.): einige Fuﬂg‰nger	q2 13337,15560 13358,15596 13325,15619
 Innsbrucker Platz: schmale Radwege, einige Fuﬂg‰nger	q1 6373,8083 6409,8026
 Gerdsmeyerweg - Marienhˆher Weg: einige Fuﬂg‰nger, Bordstein	q2 8026,5307 7935,5230
+Straﬂe 3: vier Aufpflasterungen	q1 18816,19648 19071,19576
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3387,6 +3388,7 @@ Feldrain: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25684,13
 Oberspreestr. [Nebenfahrbahn]: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 19965,5101 19957,5083 19940,5090
 (Vergissmeinnichtweg - Weidenk‰tzchenweg): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21503,114 21435,99
 (Weidenk‰tzchenweg - Buschwindrˆschenweg): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21435,99 21367,84
+Straﬂe 3: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 18816,19648 18730,19672 18644,19695 18544,19722
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

@@ -5755,8 +5755,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        {
          'data' => '#: by: mapillary
+#: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-09-17
+#: last_checked: 2023-10-22
 	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 ',
          'from' => undef,
@@ -6338,11 +6339,11 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
-#: osm_watch: way id="1172668082" version="8"
+#: osm_watch: way id="1172668082" version="9"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-09-20 (osm)
+#: last_checked: 2023-10-22 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
@@ -6467,7 +6468,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="22"
-#: last_checked: 2023-10-03 (osm)
+#: last_checked: 2023-10-22
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6482,7 +6483,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2023-10-06
+#: last_checked: 2023-10-22
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -6635,7 +6636,7 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
        {
          'data' => '#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv)
 #: note: laut rbb Sperrung bis 03.11.2023
-#: last_checked: 2023-10-15
+#: last_checked: 2023-10-22
 #: next_check: 2023-11-03
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -6748,19 +6749,7 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
          'until' => 1719756000
        },
        undef,
-       {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
-#: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
-#: last_checked: 2023-08-12
-	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
-',
-         'from' => undef,
-         'id' => 3858,
-         'text' => 'Straße 3: Bauarbeiten, Straße wird neu gemacht, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6883,7 +6872,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="16"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-22
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -7076,7 +7065,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'data' => '#: also_indoor: traffic (B)
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
-#: last_checked: 2023-09-13
+#: last_checked: 2023-10-22
 #: next_check: 2023-10-27
 	q4::inwork 16273,11113 16227,10991
 ',
@@ -7120,7 +7109,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        {
          'data' => '#: osm_watch: way id="381691526" version="7"
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
-#: last_checked: 2023-09-17
+#: last_checked: 2023-10-22
 	2::inwork 23305,14914 23318,14847 23297,14772
 ',
          'from' => undef,

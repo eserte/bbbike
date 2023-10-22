@@ -9342,7 +9342,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26336,15473 26175,15461 26071,15470 25955,15531 25866,15543 25528,15587 25007,15650 23992,15894 23965,15894 23895,15904
+	2::inwork 26336,15473 26175,15461 26071,15470 25955,15531 25866,15543 25528,15587 25007,15650 24071,15875 23992,15894 23965,15894 23895,15904
 EOF
      },
      { from  => 1186092000, # 2007-08-03 00:00
@@ -26674,7 +26674,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341173',
        data  => <<EOF,
-	q4::inwork 18007,18938 17980,18947 17900,18972 17887,18975 17799,19000 17697,18989 17600,18994
+	q4::inwork 18007,18938 17980,18947 17900,18972 17887,18975 17793,18999 17728,18985 17697,18989 17600,18994
 EOF
      },
      { from  => 1492466400, # 2017-04-18 00:00
@@ -37210,8 +37210,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: mapillary
+#: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-09-17
+#: last_checked: 2023-10-22
 	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 EOF
      },
@@ -38745,11 +38746,11 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
-#: osm_watch: way id="1172668082" version="8"
+#: osm_watch: way id="1172668082" version="9"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-09-20 (osm)
+#: last_checked: 2023-10-22 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
@@ -39140,7 +39141,7 @@ EOF
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="22"
-#: last_checked: 2023-10-03 (osm)
+#: last_checked: 2023-10-22
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39154,7 +39155,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2023-10-06
+#: last_checked: 2023-10-22
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -39474,7 +39475,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv)
 #: note: laut rbb Sperrung bis 03.11.2023
-#: last_checked: 2023-10-15
+#: last_checked: 2023-10-22
 #: next_check: 2023-11-03
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -39829,14 +39830,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1697985142, # undef, # XXX
        text  => 'Straße 3: Bauarbeiten, Straße wird neu gemacht, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
-#: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen!
-#: last_checked: 2023-08-12
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (none) --- #: XXX nach den Bauarbeiten Fahrbahnbeschaffenheit prüfen! --- #: last_checked: 2023-08-12
 	2::inwork 18544,19722 18644,19695 18730,19672 18816,19648 19071,19576
 EOF
      },
@@ -40176,7 +40174,7 @@ EOF
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="16"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-22
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -40502,7 +40500,7 @@ EOF
 #: also_indoor: traffic (B)
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
-#: last_checked: 2023-09-13
+#: last_checked: 2023-10-22
 #: next_check: 2023-10-27
 	q4::inwork 16273,11113 16227,10991
 EOF
@@ -40543,7 +40541,7 @@ EOF
        data  => <<EOF,
 #: osm_watch: way id="381691526" version="7"
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
-#: last_checked: 2023-09-17
+#: last_checked: 2023-10-22
 	2::inwork 23305,14914 23318,14847 23297,14772
 EOF
      },
