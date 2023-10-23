@@ -6461,7 +6461,31 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: EDELHOFDAMM-2023
+#: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
+#: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
+#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023) (inaktiv)
+#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 27.10.2023)
+#: source_id: viz2021:13.29166,52.6337,23.10.2023,10:45 (bis 27.10.2023)
+#: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
+# REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
+# REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
+# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 2756,25260 2909,25322
+	q4::inwork 2909,25322 3101,25402 3185,25437
+# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 3185,25437 3166,25496
+#: osm_watch: way id="1110745857" version="5"
+Markgrafenstr.	q4::inwork 2882,25375 2909,25322
+#: osm_watch: way id="478247076" version="15"
+Gutshofstr.	q4::inwork 3076,25456 3101,25402
+',
+         'from' => 1685422800,
+         'id' => 3802,
+         'text' => 'Edelhofdamm: Bauarbeiten zwischen Katzensteg und Enkircher Str., Fahrbahn ist gesperrt, vom 31.05.2023 07:00 bis 27.10.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1698418800
+       },
        undef,
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -7164,7 +7188,18 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
+#: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023) (inaktiv)
+#: source_id: viz2021:13.42865,52.47851,23.10.2023,06:00 (bis 26.10.2023)
+	q4::inwork 11963,8074 12147,8117
+',
+         'from' => 1697947200,
+         'id' => 3924,
+         'text' => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.10.2023 06:00 bis 26.10.2023 18:00',
+         'type' => 'handicap',
+         'until' => 1698336000
+       },
        {
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr)
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
@@ -7376,6 +7411,16 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'text' => 'Mannheimer Str.: zwischen Wilhelmsaue und Volkspark Wilmersdorf Bauarbeiten, Fahrbahn gesperrt, vorausichtlich bis zum 08.12.2023',
          'type' => 'handicap',
          'until' => 1702054800
+       },
+       {
+         'data' => '	2::inwork 24027,-86688 23957,-86937 23869,-87065
+',
+         'from' => 1698566400,
+         'id' => 3941,
+         'source_id' => 'LS/222-C/23/138',
+         'text' => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr Str.n: L60',
+         'type' => 'gesperrt',
+         'until' => 1748617200
        }
      
 );

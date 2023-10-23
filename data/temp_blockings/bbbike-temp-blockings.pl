@@ -39100,8 +39100,8 @@ EOF
 EOF
      },
      { from  => 1685422800, # 2023-05-30 07:00
-       until => $isodate2epoch->("2023-10-20 17:00:00"), # 1691593200, # 2023-08-09 17:00
-       text  => 'Edelhofdamm: Bauarbeiten zwischen Katzensteg und Enkircher Str., Fahrbahn ist gesperrt, vom 31.05.2023 07:00 bis 20.10.2023 17:00',
+       until => $isodate2epoch->("2023-10-27 17:00:00"), # 1691593200, # 2023-08-09 17:00
+       text  => 'Edelhofdamm: Bauarbeiten zwischen Katzensteg und Enkircher Str., Fahrbahn ist gesperrt, vom 31.05.2023 07:00 bis 27.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: EDELHOFDAMM-2023
@@ -39109,6 +39109,8 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
 #: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023) (inaktiv)
+#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 27.10.2023)
+#: source_id: viz2021:13.29166,52.6337,23.10.2023,10:45 (bis 27.10.2023)
 #: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
@@ -40606,13 +40608,14 @@ EOF
 	q4::inwork 24530,12296 24434,12402 24354,12510
 EOF
      },
-     { from  => $isodate2epoch->("2023-10-09 06:00:00"), # 1695528000, # 2023-09-24 06:00
-       until => $isodate2epoch->("2023-10-12 18:00:00"), # 1695916800, # 2023-09-28 18:00
-       text  => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 09.10.2023 06:00 bis 12.10.2023 18:00',
+     { from  => $isodate2epoch->("2023-10-22 06:00:00"), # 1695528000, # 2023-09-24 06:00
+       until => $isodate2epoch->("2023-10-26 18:00:00"), # 1695916800, # 2023-09-28 18:00
+       text  => 'Rollbergstr.: Bauarbeiten zwischen Mainzer Str. und Hermannstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.10.2023 06:00 bis 26.10.2023 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
 #: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023) (inaktiv)
+#: source_id: viz2021:13.42865,52.47851,23.10.2023,06:00 (bis 26.10.2023)
 	q4::inwork 11963,8074 12147,8117
 EOF
      },
@@ -40802,6 +40805,15 @@ EOF
 #: note: Halteverbotsschilder bis 17.11.2023
 # REMOVED --- #: last_checked: 2023-10-21 --- #: next_check: 2023-11-17
 	q4::inwork 4456,8598 4456,8716
+EOF
+     },
+     { from  => 1698566400, # 2023-10-29 09:00
+       until => 1748617200, # 2025-05-30 17:00
+       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr Str.n: L60',
+       type  => 'gesperrt',
+       source_id => 'LS/222-C/23/138',
+       data  => <<EOF,
+	2::inwork 24027,-86688 23957,-86937 23869,-87065
 EOF
      },
     );
