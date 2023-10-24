@@ -2060,7 +2060,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-10-19 (webcam)
+#: last_checked: 2023-10-24 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577
 asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2807,7 +2807,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-10-19 (webcam)
+#: last_checked: 2023-10-24 (webcam)
 #: check_frequency: 30d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -4716,6 +4716,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: by: https://www.berliner-woche.de/konradshoehe/c-bauen/geh-und-radweg-wird-saniert_a389314
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11543 (Anfrage - Antwort: Radfahrstreifen nur auf der westlichen Fahrbahnseite; möglicherweise Sanierung des vorhandenen Rad/Gehwegs?)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11674 (Anfrage - Antwort)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1378435.php (Markierungsarbeiten bis Ende November 2023)
 #: source_id: viz2021:13.235806,52.586491,21.08.2023,07:00 (Sperrung des Radwegs, bis 23.09.2023) (inaktiv)
 #: source_id: viz2021:13.235806,52.586491,14.08.2023,07:00 (bis 10.10.2023) (inaktiv)
 #: note: Asphalt sah älter aus
@@ -4723,7 +4724,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 # REMOVED (früher) --- Gehweg für Radfahrer frei, asphaltiert, schmal	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 #: last_checked: 2023-03-08 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2023-10-10
+#: next_check: 2023-11-30
 wegen Bauarbeiten ist der Gehweg gesperrt	RW0;RW0 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 # 
 # REMOVED ---	RW2;RW2 -1788,19663 -1726,19725 -1619,19754 -1419,19815 -1240,19869 -1202,19877
@@ -8029,6 +8030,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.39961,52.49841,11.01.2023,11:39 (bis 26.05.2023) (inaktiv)
 #: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023) (bis 01.09.2023) (bis 31.12.2023)
 #: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023) (bis 31.5.2023) (bis 01.09.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="32"

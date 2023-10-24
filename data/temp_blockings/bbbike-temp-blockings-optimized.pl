@@ -4015,7 +4015,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-10-10
+#: last_checked: 2023-10-24
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5495,7 +5495,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -6706,7 +6706,26 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: PISTORIUS-2023
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023)
+#: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen (stimmt aber nicht!), bis 17.11.2023) (mittlerweile nur eine Richtung)
+#: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
+#: note: Einbahnstraßenregelung in der Pistoriusstraße ist etwa 120m lang
+#: last_checked: 2023-10-19 vvv
+#: next_check: 2023-11-17 vvv
+Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
+Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => 1687068000,
+         'id' => 3840,
+         'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., voraussichtlich bis 17. November 2023',
+         'type' => 'handicap',
+         'until' => 1700236800
+       },
        undef,
        undef,
        undef,
@@ -7303,9 +7322,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: next_check_id: HANDJERY-2023
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1372587.php
 #: XXX Baustelle wandert
-#: next_check: 2023-10-24
-bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,7718 5636,7685 5635,7660
-# bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
+#: next_check: 2023-10-26
+# bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,7718 5636,7685 5635,7660
+bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
 # bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
 # bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
 # bis Bundesallee (02.-04.11.2023)	q4::inwork 5565,7024 5478,6959 5357,6932
@@ -7421,6 +7440,29 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'text' => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr Str.n: L60',
          'type' => 'gesperrt',
          'until' => 1748617200
+       },
+       {
+         'data' => '#: next_check_id: GENDARMENMARKT-2023
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: last_checked: 2023-10-24
+#: check_frequency: 14d
+	q3::inwork; 9656,12031 9666,11935 9679,11834
+',
+         'from' => undef,
+         'id' => 3942,
+         'text' => 'Markgrafenstr.: Einbahnstraßenregelung zwischen Mohrenstr. und Jägerstr., offen Richtung Norden',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q3::inwork 6212,4622 6100,4495
+',
+         'from' => 1679814000,
+         'id' => 3943,
+         'source_id' => 'viz2021:13.341707,52.447309,27.03.2023,09:00',
+         'text' => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 07.12.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1701964800
        }
      
 );

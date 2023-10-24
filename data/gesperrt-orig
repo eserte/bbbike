@@ -3883,7 +3883,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/auswaertiges-amt/kurstrasse-33-35.html (Fertigstellung 2027/2028)
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
-#: last_checked: 2023-10-10
+#: last_checked: 2023-10-24
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -3939,6 +3939,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
+#: next_check_id: GENDARMENMARKT-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10876 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10985 (Frage)
@@ -3947,7 +3948,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2023-10-21 (osm) vvv
+#: last_checked: 2023-10-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4460,7 +4461,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 75
 #: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX mittlerweile bis zur Georgenstr. ausgeweitet, check_frequency deswegen angepasst
-#: last_checked: 2023-09-19 (mapillary)
+#: last_checked: 2023-10-24
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -4508,7 +4509,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="20"
 #: priority: #A
-#: last_checked: 2023-10-19 (webcam)
+#: last_checked: 2023-10-24 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4569,20 +4570,20 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-09-25
+#: last_checked: 2023-10-24
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-19 (webcam)
+#: last_checked: 2023-10-24 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-19 (webcam)
+#: last_checked: 2023-10-24 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -4613,7 +4614,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-09-29 (daf)
+#: last_checked: 2023-10-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4714,7 +4715,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php
 #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-22 (krickstadt)
 #: check_frequency: 360d
 #: next_check: 2024-05-01
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4738,7 +4739,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
-#: last_checked: 2023-09-24 vvv
+#: last_checked: 2023-10-22 (krickstadt) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-01 vvv
 #: osm_watch: way id="1085382250" version="3"
@@ -4759,7 +4760,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="18"
-#: last_checked: 2023-10-11 (krickstadt)
+#: last_checked: 2023-10-22 (krickstadt)
 #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
@@ -4793,7 +4794,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2023-09-28
+#: last_checked: 2023-10-22 (architektur-urbanistik)
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 

@@ -12,7 +12,7 @@
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023)
-#: last_checked: 2023-10-10
+#: last_checked: 2023-10-24
 #: check_frequency: 90d
 #: next_check: 2023-11-01
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -271,7 +271,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-10-12 (mapillary) vvv
+#: last_checked: 2023-10-24 (webcam) vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10973,12611
@@ -294,7 +294,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-10
+#: last_checked: 2023-10-24
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -328,11 +328,11 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # REMOVED (beendet) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic --- #: last_checked: 2021-05-28 --- #: check_frequency: 7d --- Dircksenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11209,12430 11156,12581
 # REMOVED (Fahrbahn offen) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf --- #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16 --- #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027 --- #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße? --- #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt --- #: last_checked: 2022-08-12 --- #: check_frequency: 60d --- (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
-#: osm_watch: way id="751595931" version="4"
+#: osm_watch: way id="751595931" version="5"
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-10-19 (webcam)
+#: last_checked: 2023-10-24 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -429,7 +429,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-10-13 vvv
+#: last_checked: 2023-10-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -993,7 +993,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: XXX Bleibt es bei der ausschließlichen Busfreigabe oder entsteht hier eine neue Verbindungsstraße?
 #: osm_watch: way id="519370786" version="4"
 #: osm_watch: way id="1169861688" version="1"
-#: osm_watch: note 3678184 3
+#: osm_watch: note 3678184 4
 #: last_checked: 2023-10-06
 Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15832,16846 15866,16823 15875,16816
 # 
@@ -3240,7 +3240,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-10-13
+#: last_checked: 2023-10-24
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
