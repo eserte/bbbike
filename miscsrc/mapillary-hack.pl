@@ -136,14 +136,16 @@ if (@overflows) {
 }
 for my $sequence (@sequences) {
     my $id = $sequence->[0]->{id};
+    my $creator = $sequence->[0]->{creator}->{username};
     my $name = join " ",
 	"start_captured_at=" . strftime("%FT%T", localtime($sequence->[0]->{captured_at}/1000)),
+	(defined $creator ? "creator=$creator" : ()),
 	"end_captured_at="   . strftime("%FT%T", localtime($sequence->[-1]->{captured_at}/1000)),
 	"start_id=$id",
 	"sequence=$sequence->[0]->{sequence}",
 	;
     my @coords = map { join(",", @{ $_->{$geometry_field}->{coordinates} || [] }) } @$sequence;
-    print $ofh "#: url: https://www.mapillary.com/app/?pKey=$id&focus=photo&dateFrom=$capture_date&dateTo=$capture_date\n";
+    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$capture_date&dateTo=$capture_date\n";
     print $ofh "$name\tX @coords\n";
 }
 
@@ -164,8 +166,7 @@ sub fetch_images {
     my $start_captured_at_iso = Time::Moment->from_epoch($start_captured_at)->strftime("%FT%TZ");
     my $end_captured_at_iso   = Time::Moment->from_epoch($end_captured_at)  ->strftime("%FT%TZ");
     warn "INFO: Fetching $start_captured_at_iso .. $end_captured_at_iso...\n" if $debug;
-    my $url = "$image_api_url?access_token=$client_token&fields=id,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
-
+    my $url = "$image_api_url?access_token=$client_token&fields=id,creator,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
     my $data;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url);
