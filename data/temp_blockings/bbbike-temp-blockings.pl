@@ -39249,7 +39249,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-10-18 vvv
+#: last_checked: 2023-10-26 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -40487,6 +40487,7 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/kommentar-klingsorstrasse-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/klingsorstrasse-wird-saniert_a392572
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1377283.php (Verlängerung bis 10.11.2023)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-dauern-laenger_a397516
 #: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
 #: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
@@ -40498,7 +40499,7 @@ EOF
        text  => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 27.10.2023',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (B,G)
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: last_checked: 2023-10-22
@@ -40614,16 +40615,17 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.42865,52.47851,25.09.2023,06:00 (bis 28.9.2023) (inaktiv)
 #: source_id: viz2021:13.42865,52.47851,09.10.2023,06:00 (bis 12.10.2023) (inaktiv)
-#: source_id: viz2021:13.42865,52.47851,23.10.2023,06:00 (bis 26.10.2023)
+#: source_id: viz2021:13.42865,52.47851,23.10.2023,06:00 (bis 26.10.2023) (inaktiv)
 	q4::inwork 11963,8074 12147,8117
 EOF
      },
-     { from  => 1695531600, # 2023-09-24 07:00
+     { from  => 1698343183, # 1695531600, # 2023-09-24 07:00
        until => 1698681600, # 2023-10-30 17:00
+       dont_check_date => 1, # vorfristig beendet
        text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr)
+#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
 	q3::inwork; 10722,11816 10815,11662
 EOF
@@ -40716,10 +40718,10 @@ EOF
 #: next_check_id: HANDJERY-2023
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1372587.php
 #: XXX Baustelle wandert
-#: next_check: 2023-10-26
+#: next_check: 2023-10-28
 # bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,7718 5636,7685 5635,7660
-bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
-# bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
+# bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
+bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
 # bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
 # bis Bundesallee (02.-04.11.2023)	q4::inwork 5565,7024 5478,6959 5357,6932
 EOF
@@ -40834,6 +40836,15 @@ EOF
        source_id => 'viz2021:13.341707,52.447309,27.03.2023,09:00',
        data  => <<EOF,
 	q3::inwork 6212,4622 6100,4495
+EOF
+     },
+     { from  => 1699225200, # 2023-11-06 00:00
+       until => 1703285999, # 2023-12-22 23:59
+       text  => 'Stegeweg: Fahrbahninstandsetzung, evtl. gibt es Einschränkungen für Radfahrer, vom 06. November 2023 bis zum 22. Dezember 2023 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: STEGEWEG-2023
+	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
 EOF
      },
     );

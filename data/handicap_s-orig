@@ -24,12 +24,12 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw==
 #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
-#: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023)
+#: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-10-25 vvv
+#: last_checked: 2023-10-26 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-11-10 vvv
-#: valid: -20231110 vvv
+#: next_check: 2023-12-29 vvv
+#: valid: -20231229 vvv
 Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
 Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229
 Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320
@@ -51,7 +51,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-10-21 (daf)
+#: last_checked: 2023-10-26
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -4207,8 +4207,8 @@ Bergmannstr.: Tempo 10	q3+ 9505,9306 9632,9280 9689,9266 9753,9252
 #: next_check_id: NIEMANN-2023
 #: XXX_prog mit Anhänger aber ggfs. q2
 #: XXX valid-Direktive anpassen
-#: next_check: 2023-11-10
-#: valid: 20231110-
+#: next_check: 2023-12-29
+#: valid: 20231229-
 Niemannstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14254,11377 14211,11229
 #: XXX_prog mit Anhänger aber ggfs. q2
 Helmerdingstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14468,11203 14442,11101
