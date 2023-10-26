@@ -32,13 +32,11 @@ $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 # pointer to WWW version
 $BBBIKE_WWW	   = 'http://www.bbbike.de';
 # WWW version, URL for direct access (sometimes www.bbbike.de does not work)
-#$BBBIKE_DIRECT_WWW = 'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi';
 $BBBIKE_DIRECT_WWW = 'http://bbbike.de/cgi-bin/bbbike.cgi';
 
 # Homepage on Sourceforge
 $BBBIKE_SF_WWW	   = $use_bbbike_sourceforge_net_fallback ? 'http://sourceforge.bbbike.de' : 'http://bbbike.sourceforge.net';
 # URLs for data update
-#$BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 $BBBIKE_UPDATE_DIRECT_WWW = "http://bbbike.de/BBBike";
 $BBBIKE_UPDATE_WWW = "http://www.bbbike.de/BBBike";
 $BBBIKE_UPDATE_DATA_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-data.cgi";
