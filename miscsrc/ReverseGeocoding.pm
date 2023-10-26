@@ -50,7 +50,7 @@ use strict;
     sub _get_area_grid {
 	my $self = shift;
 	if (!$self->{area}) {
-	    $self->{area} = MultiStrassen->new('orte', 'orte2');
+	    $self->{area} = MultiStrassen->new('orte', 'orte2', 'berlin_ortsteile');
 	}
 	$self->{area};
     }
@@ -142,7 +142,12 @@ return 1 if caller;
     }
     die "Expects longitude and latitude" if @ARGV != 2;
     my($px, $py) = @ARGV;
-    print ReverseGeocoding->new($module)->find_closest("$px,$py", $type, ($debug ? (debug => $debug) : ())), "\n";
+    my $res = ReverseGeocoding->new($module)->find_closest("$px,$py", $type, ($debug ? (debug => $debug) : ()));
+    if (!defined $res) {
+	print STDERR "# Nothing found for $px,$py\n";
+    } else {
+	print $res, "\n";
+    }
 }
 
 __END__
