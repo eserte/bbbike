@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2012,2015,2017,2018,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2012,2015,2017,2018,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use vars qw($VERSION);
 $VERSION = 1.12;
 
 use GPS::Util qw(eliminate_umlauts);
-use Strassen::Util qw(get_direction);
+use Strassen::Util;
 
 {
     package Route::Simplify::CompressedWaypoint;
