@@ -171,7 +171,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023) (umbenannt)
 #: by: http://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
-#: osm_watch: way id="102486250" version="21"
+#: osm_watch: way id="102486250" version="22"
 #: last_checked: 2023-10-21
 #: check_frequency: 120d
 #: next_check: 2024-09-30
@@ -2405,7 +2405,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2023-10-11 (mapillary)
+#: last_checked: 2023-10-27
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -9437,6 +9437,7 @@ Rorschacher Zeile: Beton	Q0 7291,18392 7203,18360 7198,18307
 (Lindauer Allee/Aroser Allee - Alt-Reinickendorf): Kleinsteinpflaster	Q1 6775,18726 6778,18747 6793,18763
 #: next_check_id: STEGEWEG-2023
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1379288.php
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bauarbeiten-am-stegerweg_a397762
 #: XXX bleibt es beim groben Verbundsteinpflaster oder wird sich die Qualität etwas verbessern?
 #: next_check: 2023-12-22
 Stegeweg (Reinickendorf): grobes Verbundsteinpflaster	Q1- 6869,18721 6879,18737 6910,18861 6960,19047
@@ -32699,4 +32700,5 @@ Einmündungsbereich asphaltiert	Q0 5501,8253
 Einmündungsbereich asphaltiert	Q0 5573,8197
 Kreuzungsbereich asphaltiert	Q0 12478,7878
 Einmündungsbereich asphaltiert	Q0 12446,8032
+Einmündungsbereich asphaltiert	Q0 9535,13801
 #: ignore ^^^

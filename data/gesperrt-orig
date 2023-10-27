@@ -4509,7 +4509,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="20"
 #: priority: #A
-#: last_checked: 2023-10-24 (webcam)
+#: last_checked: 2023-10-27
 #: check_frequency: 90d
 # REMOVED --- Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4570,7 +4570,7 @@ Am Kutscherhaus: durch Bauz‰une abgesperrt	2::inwork 21514,5310 21386,5251 21355
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2023-10-24
+#: last_checked: 2023-10-27
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -4583,20 +4583,17 @@ J¸denstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Bˆﬂ-Str./J¸denstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-24 (webcam)
+#: last_checked: 2023-10-27
 #: check_frequency: 90d
 J¸denstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-10-12 (mapillary)
+#: last_checked: 2023-10-27
 #: check_frequency: 14d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
-#: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-10-12 (mapillary)
-Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2023-10-12 (mapillary) --- Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 # REMOVED (Wegf¸hrung existiert nicht mehr) --- Grunerstr.: Radweg	1::igndisp 10973,12611 10954,12604 10931,12622
-# 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
@@ -4614,7 +4611,7 @@ Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraﬂenregelung wieder aufgehoben? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-10-24
+#: last_checked: 2023-10-27
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9588,13174 9385,13174 9254,13171

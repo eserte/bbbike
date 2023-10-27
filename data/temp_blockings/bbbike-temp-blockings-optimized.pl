@@ -2236,7 +2236,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-08-26
+#: last_checked: 2023-10-27
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -4346,9 +4346,10 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-10-20 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2023-10-27 vvv
+#: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
@@ -4364,9 +4365,9 @@ außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	
 ',
          'from' => 1677970800,
          'id' => 3159,
-         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Mitte Oktober 2023: Rampe gesperrt, einige Wege gesperrt)',
+         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Ende Oktober 2023: Hauptverbindungsweg ist noch immer gesperrt)',
          'type' => 'gesperrt',
-         'until' => 1698778800
+         'until' => undef
        },
        undef,
        undef,
@@ -5840,7 +5841,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024)
+#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023)
 #: also_indoor: traffic (H,B)
 #: note: Fahrbahn wird neu gemacht
 	q4::inwork 2112,26066 2207,26090 2293,26111
@@ -5849,9 +5850,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 ',
          'from' => 1668540097,
          'id' => 3683,
-         'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 07.05.2024',
+         'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., voraussichtlich bis Mitte Dezember 2023',
          'type' => 'handicap',
-         'until' => 1715094000
+         'until' => 1702569600
        },
        undef,
        undef,
@@ -6461,31 +6462,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: EDELHOFDAMM-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
-#: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
-#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023) (inaktiv)
-#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 27.10.2023)
-#: source_id: viz2021:13.29166,52.6337,23.10.2023,10:45 (bis 27.10.2023)
-#: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
-# REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
-# REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
-# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 2756,25260 2909,25322
-	q4::inwork 2909,25322 3101,25402 3185,25437
-# REMOVED (laut osm hier (noch?) nicht)	q4::inwork 3185,25437 3166,25496
-#: osm_watch: way id="1110745857" version="5"
-Markgrafenstr.	q4::inwork 2882,25375 2909,25322
-#: osm_watch: way id="478247076" version="15"
-Gutshofstr.	q4::inwork 3076,25456 3101,25402
-',
-         'from' => 1685422800,
-         'id' => 3802,
-         'text' => 'Edelhofdamm: Bauarbeiten zwischen Katzensteg und Enkircher Str., Fahrbahn ist gesperrt, vom 31.05.2023 07:00 bis 27.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1698418800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -6526,7 +6503,7 @@ Gutshofstr.	q4::inwork 3076,25456 3101,25402
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
-#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -6931,15 +6908,15 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        undef,
        {
          'data' => '#: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
 ',
          'from' => 1691899200,
          'id' => 3887,
-         'text' => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 27.10.2023 17:00',
+         'text' => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 08.12.2023 17:00',
          'type' => 'handicap',
-         'until' => 1698418800
+         'until' => 1702051200
        },
        undef,
        {
@@ -7019,16 +6996,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'type' => 'gesperrt',
          'until' => 1702652400
        },
-       {
-         'data' => '	2::inwork 39310,11034 38808,10458
-',
-         'from' => 1691906400,
-         'id' => 3904,
-         'source_id' => 'LS/221-F/23/105',
-         'text' => 'Hennickendorf: Brückeninstandsetzungsarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 14.08.2023 08:00 Uhr bis 27.10.2023 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1698415200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/bauarbeiten-an-der-gersdorfstrasse_a393023
 	q4::inwork 8336,4378 8427,4435 8569,4459
@@ -7110,6 +7078,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'data' => '#: also_indoor: traffic (B,G)
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
+#: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: last_checked: 2023-10-22
 #: next_check: 2023-10-27
 	q4::inwork 16273,11113 16227,10991
@@ -7118,7 +7087,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'id' => 3915,
          'text' => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 27.10.2023',
          'type' => 'handicap',
-         'until' => 1698444000
+         'until' => undef
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
@@ -7212,11 +7181,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        {
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
+#: note: bei VIZ inaktiv, tatsächlich noch aktiv
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
 	q3::inwork; 10722,11816 10815,11662
 ',
-         'dont_check_date' => 1,
-         'from' => 1698343183,
+         'from' => 1695531600,
          'id' => 3925,
          'text' => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00',
          'type' => 'handicap',
@@ -7282,6 +7251,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
+#: osm_watch: way id="4543441" version="37"
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
 ',
          'from' => 1695531600,
@@ -7327,16 +7297,7 @@ bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,72
          'type' => 'handicap',
          'until' => 1699138800
        },
-       {
-         'data' => '#: source_id: viz2021:13.358017,52.424828,09.10.2023,07:00 (nur Kfz-Verkehr, bis 27.10.2023)
-	q4::inwork 7390,2021 7581,2092
-',
-         'from' => 1696741200,
-         'id' => 3935,
-         'text' => 'Preysingstr.: Bauarbeiten zwischen Weygerweg und Malteserstr., evtl. sind auch Radfahrer betroffen, vom 09.10.2023 07:00 bis 27.10.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1698418800
-       },
+       undef,
        {
          'data' => '	q4::inwork; 12063,21991 12122,22185 12165,22323
 ',
@@ -7411,7 +7372,8 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'until' => 1704668399
        },
        {
-         'data' => '#: source_id: viz2021:13.31365,52.48412,21.10.2023,07:00 (hier von Barbrücke; bis 08.12.2023)
+         'data' => '#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/strasse-wegen-baustelle-gesperrt_a397537
+#: source_id: viz2021:13.31365,52.48412,21.10.2023,07:00 (hier von Barbrücke; bis 08.12.2023)
 #: note: außerhalb der Arbeitszeiten kann die Absperrung am nördlichen Ende weggeschoben sein, aber am südlichen Ende muss man trotzdem dann Bordsteine überwinden
 #: note: Halteverbotsschilder bis 17.11.2023
 # REMOVED --- #: last_checked: 2023-10-21 --- #: next_check: 2023-11-17
@@ -7465,6 +7427,39 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'text' => 'Stegeweg: Fahrbahninstandsetzung, evtl. gibt es Einschränkungen für Radfahrer, vom 06. November 2023 bis zum 22. Dezember 2023 ',
          'type' => 'handicap',
          'until' => 1703285999
+       },
+       {
+         'data' => '#: next_check_id: RUNGE-2023
+#: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023)
+#: note: Ampeleintrag beachten!
+#: note: wenige Meter gesperrt; möglicher Bordstein
+	q3::inwork 11291,11876 11185,11883
+',
+         'from' => 1698051600,
+         'id' => 3945,
+         'text' => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
+         'type' => 'handicap',
+         'until' => 1700780340
+       },
+       {
+         'data' => '	2::inwork -22503,-15767 -23314,-15874
+',
+         'from' => 1699171200,
+         'id' => 3946,
+         'source_id' => '236401779',
+         'text' => 'Beelitz: L88, Sanierung und Sperrung, evtl. sind auch Radfahrer betroffen, 06.11.2023 09:00 Uhr bis 17.11.2023 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1700236800
+       },
+       {
+         'data' => '	2::inwork 23015,30519 23113,30450
+',
+         'from' => 1705186800,
+         'id' => 3947,
+         'source_id' => '236001823',
+         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung für alle Verkehrsteilnehmer vom 15.01.2024 bis 24.01.2024',
+         'type' => 'gesperrt',
+         'until' => 1706137200
        }
      
 );

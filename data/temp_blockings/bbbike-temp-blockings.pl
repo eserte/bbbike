@@ -16381,7 +16381,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-08-26
+#: last_checked: 2023-10-27
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -30467,14 +30467,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Mitte Oktober 2023: Rampe gesperrt, einige Wege gesperrt)',
+       until => undef, # $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Ende Oktober 2023: Hauptverbindungsweg ist noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-10-20 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2023-10-27 vvv
+#: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
@@ -37536,8 +37537,8 @@ EOF
 EOF
      },
      { from  => 1668540097, # 2022-11-15 20:21
-       until => $isodate2epoch->("2024-05-07 17:00:00"), # 1691445599, # 2023-08-07 23:59
-       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., bis 07.05.2024',
+       until => $isodate2epoch->("2023-12-14 17:00:00"), # 1691445599, # 2023-08-07 23:59
+       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., voraussichtlich bis Mitte Dezember 2023', # bis 07.05.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENFLIESSER-2023
@@ -37546,7 +37547,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024)
+#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023)
 #: also_indoor: traffic (H,B)
 #: note: Fahrbahn wird neu gemacht
 	q4::inwork 2112,26066 2207,26090 2293,26111
@@ -39108,9 +39109,8 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1663772295704494081#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhZRFI4d1djQUEyX0FFLmpwZw== (laut Verkehrszeichenplan gibt es keine gesonderte Radverkehrsführung)
 #: source_id: viz2021:13.294234,52.633866,31.05.2023,07:00 (Radwegebau, Sperrung für Kfz-Verkehr, bis 09.08.2023) (bis 04.08.2023) (inaktiv)
-#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023) (inaktiv)
-#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 27.10.2023)
-#: source_id: viz2021:13.29166,52.6337,23.10.2023,10:45 (bis 27.10.2023)
+#: source_id: viz2021:13.301301,52.635423,04.08.2023,07:00 (bis 20.10.2023) (inaktiv) (bis 27.10.2023) (inaktiv)
+#: source_id: viz2021:13.29166,52.6337,23.10.2023,10:45 (bis 27.10.2023) (inaktiv)
 #: note: laut kartaview sieht es aus, als ob der südliche Strang des Edelhofdamms an der Oranienburger Chaussee auch gesperrt ist
 # REMOVED (vermutlich beendet) ---	q4::inwork 2909,25322 2756,25260 2683,25238 2615,25225
 # REMOVED (vermutlich beendet) --- hier nur der Kreuzungsbereich Dinkelsbühler Str./Edelhofdamm gesperrt	q3::inwork 2615,25225 2490,25211
@@ -39200,7 +39200,7 @@ EOF
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
-#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -40192,12 +40192,12 @@ EOF
 EOF
      },
      { from  => 1691899200, # 2023-08-13 06:00
-       until => $isodate2epoch->("2023-10-27 17:00:00"), # 1696715940, # 2023-10-07 23:59
-       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 27.10.2023 17:00',
+       until => $isodate2epoch->("2023-12-08 17:00:00"), # 1696715940, # 2023-10-07 23:59
+       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 08.12.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
 EOF
@@ -40383,7 +40383,7 @@ EOF
        until => 1698415200, # 2023-10-27 16:00
        text  => 'Hennickendorf: Brückeninstandsetzungsarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 14.08.2023 08:00 Uhr bis 27.10.2023 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/105',
+       source_id => 'LS/221-F/23/105', # inaktiv
        data  => <<EOF,
 	2::inwork 39310,11034 38808,10458
 EOF
@@ -40495,13 +40495,14 @@ EOF
 EOF
      },
      { from  => 1694624894, # 2023-09-13 19:08
-       until => 1698444000, # 2023-10-28 00:00
+       until => undef, # 1698444000, # 2023-10-28 00:00
        text  => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 27.10.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G)
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
+#: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: last_checked: 2023-10-22
 #: next_check: 2023-10-27
 	q4::inwork 16273,11113 16227,10991
@@ -40619,13 +40620,13 @@ EOF
 	q4::inwork 11963,8074 12147,8117
 EOF
      },
-     { from  => 1698343183, # 1695531600, # 2023-09-24 07:00
+     { from  => 1695531600, # 2023-09-24 07:00
        until => 1698681600, # 2023-10-30 17:00
-       dont_check_date => 1, # vorfristig beendet
        text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
+#: note: bei VIZ inaktiv, tatsächlich noch aktiv
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
 	q3::inwork; 10722,11816 10815,11662
 EOF
@@ -40689,6 +40690,7 @@ EOF
        data  => <<EOF,
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
+#: osm_watch: way id="4543441" version="37"
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
 EOF
      },
@@ -40731,7 +40733,7 @@ EOF
        text  => 'Preysingstr.: Bauarbeiten zwischen Weygerweg und Malteserstr., evtl. sind auch Radfahrer betroffen, vom 09.10.2023 07:00 bis 27.10.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.358017,52.424828,09.10.2023,07:00 (nur Kfz-Verkehr, bis 27.10.2023)
+#: source_id: viz2021:13.358017,52.424828,09.10.2023,07:00 (nur Kfz-Verkehr, bis 27.10.2023) (inaktiv)
 	q4::inwork 7390,2021 7581,2092
 EOF
      },
@@ -40801,6 +40803,7 @@ EOF
        text  => 'Mannheimer Str.: zwischen Wilhelmsaue und Volkspark Wilmersdorf Bauarbeiten, Fahrbahn gesperrt, vorausichtlich bis zum 08.12.2023',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/strasse-wegen-baustelle-gesperrt_a397537
 #: source_id: viz2021:13.31365,52.48412,21.10.2023,07:00 (hier von Barbrücke; bis 08.12.2023)
 #: note: außerhalb der Arbeitszeiten kann die Absperrung am nördlichen Ende weggeschoben sein, aber am südlichen Ende muss man trotzdem dann Bordsteine überwinden
 #: note: Halteverbotsschilder bis 17.11.2023
@@ -40845,6 +40848,36 @@ EOF
        data  => <<EOF,
 #: next_check_id: STEGEWEG-2023
 	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
+EOF
+     },
+     { from  => 1698051600, # 2023-10-23 11:00
+       until => 1700780340, # 2023-11-23 23:59
+       text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: RUNGE-2023
+#: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023)
+#: note: Ampeleintrag beachten!
+#: note: wenige Meter gesperrt; möglicher Bordstein
+	q3::inwork 11291,11876 11185,11883
+EOF
+     },
+     { from  => 1699171200, # 2023-11-05 09:00
+       until => 1700236800, # 2023-11-17 17:00
+       text  => 'Beelitz: L88, Sanierung und Sperrung, evtl. sind auch Radfahrer betroffen, 06.11.2023 09:00 Uhr bis 17.11.2023 17:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '236401779',
+       data  => <<EOF,
+	2::inwork -22503,-15767 -23314,-15874
+EOF
+     },
+     { from  => 1705186800, # 2024-01-14 00:00
+       until => 1706137200, # 2024-01-25 00:00
+       text  => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung für alle Verkehrsteilnehmer vom 15.01.2024 bis 24.01.2024',
+       type  => 'gesperrt',
+       source_id => '236001823',
+       data  => <<EOF,
+	2::inwork 23015,30519 23113,30450
 EOF
      },
     );
