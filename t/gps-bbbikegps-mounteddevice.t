@@ -89,6 +89,43 @@ SKIP: {
 	}, 'parsing sample udisksctl status output -> Toshiba ...';
 }
 
+{
+    local $TODO = "currently fails";
+    my $disks = eval { GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2(infostring => _sample_udiskctl_status_output_with_overflow()) };
+    is_deeply $disks->{"SAMSUNG MZVLB512HBJQ-000L7"},
+	{
+	 "DEVICE" => "nvme0n1",
+	 "MODEL" => "SAMSUNG MZVLB512HBJQ-000L7",
+	 "REVISION" => "5M2QEXF7",
+	 "SERIAL" => "S4ENNX0RXXXXXX"
+	}, 'parsing sample udisksctl status output -> device with overflow model name';
+    is_deeply $disks->{"TOSHIBA DT01ACA200"},
+	{
+	 "DEVICE" => "sda",
+	 "MODEL" => "TOSHIBA DT01ACA200",
+	 "REVISION" => "MX4OABB0",
+	 "SERIAL" => "95LZ9RXXX"
+	}, 'parsing sample udisksctl status output -> Toshiba ...';
+}
+
+{
+    my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2(infostring => _sample_udiskctl_status_output_vm());
+    is_deeply $disks->{"QEMU QEMU HARDDISK"},
+	{
+	 "DEVICE" => "sda",
+	 "MODEL" => "QEMU QEMU HARDDISK",
+	 "REVISION" => "2.5+",
+	 "SERIAL" => "12345678"
+	}, 'parsing sample udisksctl status output -> qemu harddisk';
+    is_deeply $disks->{"QEMU DVD-ROM"},
+	{
+	 "DEVICE" => "sr0",
+	 "MODEL" => "QEMU DVD-ROM",
+	 "REVISION" => "2.5+",
+	 "SERIAL" => "QEMU_DVD-ROM_QM00001"
+	}, 'parsing sample udisksctl status output -> qemu dvd-rom';
+}
+
 SKIP: {
     { my $err; skip $err, 1 if !udisksctl_usable(\$err) }
     my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_dump();
@@ -196,6 +233,29 @@ Hama Card Reader   SM     1.9C      ABCD1234XXXX         sdh
 Hama CardReaderMMC/SD     1.9C      ABCD1234XXXX         sdg     
 Microsoft Flash ROM       0000      1000000000386CF84D4FFFFFFFFFFFFF sdc     
 Microsoft SDMMC           0000      1000000000386CF84D4FFFFFFFFFFFFF sdd     
+EOF
+}
+
+sub _sample_udiskctl_status_output_with_overflow {
+    # Unfortunately there's no guarantee that the model name
+    # aligns with the header. See also
+    # https://github.com/storaged-project/udisks/blob/a76eda89a4c747f12dc05670f376d95d8ec4cd45/tools/udisksctl.c#L3157
+    #
+    # serials scrambled
+    <<'EOF';
+MODEL                     REVISION  SERIAL               DEVICE
+--------------------------------------------------------------------------
+SAMSUNG MZVLB512HBJQ-000L7 5M2QEXF7  S4ENNX0RXXXXXX       nvme0n1 
+TOSHIBA DT01ACA200        MX4OABB0  95LZ9RXXX            sda     
+EOF
+}
+
+sub _sample_udiskctl_status_output_vm {
+    <<'EOF';
+MODEL                     REVISION  SERIAL               DEVICE
+--------------------------------------------------------------------------
+QEMU QEMU HARDDISK        2.5+      12345678             sda     
+QEMU DVD-ROM              2.5+      QEMU_DVD-ROM_QM00001 sr0     
 EOF
 }
 __END__
