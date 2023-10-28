@@ -142,7 +142,7 @@
 	    my $func;
 	    if (defined $udisksctl) {
 		$func = {
-			 parse_status   => \&_parse_udisksctl_status2,
+			 parse_status   => \&_parse_udisksctl_status3,
 			 find_mountable => \&_udisksctl_find_mountable,
 			};
 	    }
