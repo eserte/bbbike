@@ -683,6 +683,48 @@
 	\%disks;
     }
 
+    sub _parse_udisksctl_status3 {
+	my(%opts) = @_;
+	my $infostring = delete $opts{infostring}; # used for testing
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
+	my %disks;
+
+	my $fh;
+	if (defined $infostring) {
+	    open $fh, '<', \$infostring or die $!;
+	} else {
+	    my @cmd = ('/usr/bin/udisksctl', 'status');
+	    open $fh, '-|', @cmd
+		or die "Error starting '@cmd': $!";
+	}
+	chomp(my $header = <$fh>);
+	my @field_names = split /\s+/, $header;
+	if ($field_names[0] ne 'MODEL') {
+	    die "Unexpected header in 'udisksctl status' command: first field is not MODEL, but '$field_names[0].";
+	}
+	if (@field_names != 4) {
+	    die "Unexpected header in 'udisksctl status' command: expected four fields, got " . scalar(@field_names) . ".";
+	}
+	scalar <$fh>; # dashed line
+	while(<$fh>) {
+	    chomp;
+	    next if /^-($|\s)/;
+	    s/\s+$//;
+	    if (my @v = $_ =~ /^(.+?)\s+(\S+)\s+(\S+)\s+(\S+)$/) {
+		my %f;
+		@f{@field_names} = @v;
+		$disks{$f{MODEL}} = \%f;
+	    } else {
+		die "Cannot parse line '$_'";
+	    }
+	}
+	close $fh
+	    or die "Error while closing filehandle (probably failure of running udisksctl command): $!";
+
+	\%disks;
+    }
+
     # Use in a one-liner:
     #
     #    perl -I. -MGPS::BBBikeGPS::MountedDevice -e 'warn GPS::BBBikeGPS::MountedDevice::_udisksctl_find_mountable(shift)' /dev/sdc
