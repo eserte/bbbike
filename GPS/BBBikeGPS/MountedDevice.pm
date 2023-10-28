@@ -461,7 +461,7 @@
 			    File::Sync::fsync($fh);
 			}
 		    }
-		} elsif (eval { require BBBikeUtil; 1 } && BBBikeUtil::is_in_path('fsync')) {
+		} elsif (_is_in_path('fsync')) {
 		    system('fsync', @sync_files);
 		}
 	    }
@@ -507,11 +507,14 @@
 	}
     }
 
+    ######################################################################
+    # FreeBSD (hal)
+
     # no fallback, return undef if lshal operation not possible
     sub _guess_garmin_mount_device_via_hal {
 	my($garmin_disk_type, $inforef) = @_;
 
-	if (!eval { require BBBikeUtil; 1 } && BBBikeUtil::is_in_path('lshal')) {
+	if (!_is_in_path('lshal')) {
 	    $$inforef = 'cannot detect: lshal unavailable' if $inforef;
 	    return;
 	}
@@ -539,6 +542,9 @@
 	$$inforef = 'disk not found' if $inforef;
 	return;
     }
+
+    ######################################################################
+    # FreeBSD (log fallback)
 
     # with fallback (/dev/da0 or /dev/da1)
     sub _guess_garmin_mount_device_freebsd_via_log {
@@ -571,6 +577,9 @@
 	warn "Cannot find garmin $garmin_disk_type /var/log/messages, use '$mount_device' as fallback...\n";
 	$mount_device;
     }
+
+    ######################################################################
+    # Linux (udisksctl)
 
     # Use in a one-liner:
     #
@@ -740,6 +749,11 @@
 	} # no else
     }
 
+    sub _is_in_path {
+	my $prog = shift;
+	require BBBikeUtil;
+	BBBikeUtil::is_in_path($prog);
+    }
 }
 
 1;
