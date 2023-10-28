@@ -26,8 +26,6 @@ use Time::Moment;
 use Time::Local;
 use YAML::XS qw(LoadFile);
 
-use Geography::Berlin_DE;
-
 my $debug = 1;
 
 my $conf_file = "$ENV{HOME}/.mapillary";
@@ -40,52 +38,96 @@ my $max_try = 10;
 
 my $image_api_url = 'https://graph.mapillary.com/images';
 
-my $region = 'Berlin_DE';
-
 my $geometry_field = 'geometry';
+
+my($start_date, $end_date);
+my $bbox;
 
 GetOptions(
 	   "to-file" => \my $to_file,
+	   "region=s" => \my $region,
+	   "o=s" => \my $output_filename,
 	   "allow-override" => \my $allow_override,
 	   "allow-overflow" => \my $allow_overflow,
 	   "open"    => \my $do_open,
 	   "used-limit=i" => \$used_limit,
 	   "geometry-field=s" => \$geometry_field,
 	   "max-try=i" => \$max_try,
+	   "start-date=s" => \$start_date,
+	   "end-date=s"   => \$end_date,
+	   "bbox=s"       => \$bbox,
+	   "debug!"       => \$debug,
 	  )
     or die "usage?";
 
 $geometry_field =~ m{^(computed_geometry|geometry)$}
     or die "Invalid --geometry-field type";
 
-if ($do_open && !$to_file) {
-    die "--open cannot be used without --to-file\n";
+if ($output_filename && $to_file) {
+    die "--to-file and -o cannot be used together";
 }
 
-my $capture_date = shift
-    or die "Please specify capture date (YYYY-MM-DD)\n";
-@ARGV and die "usage!";
-my($y,$m,$d) = split /-/, $capture_date;
-if (!$d) {
-    die "capture date cannot be parsed";
+if ($start_date && !$end_date) {
+    $end_date = strftime "%Y-%m-%d", localtime;
 }
-
-my $output_filename;
+if (!$start_date && $end_date) {
+    die "Please specify --start-date.\n";
+}
+if (!$start_date && !$end_date) {
+    my $capture_date = shift
+	or die "Please specify capture date (YYYY-MM-DD)\n";
+    $start_date = $end_date = $capture_date;
+}
 if ($to_file) {
-    $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/$region/$y/" . sprintf("%04d%02d%02d", $y, $m, $d) . ".bbd";
-    if (-e $output_filename && !$allow_override) {
-	die "Won't override $output_filename without --allow-override.\n";
+    if ($start_date ne $end_date) {
+	die "--to-file can be used only with a single day (--start-date and --end-date must be the same).\n";
+    }
+    if (!$region) {
+	$region = 'Berlin_DE';
     }
 }
+if ($region && !$to_file) {
+    die "--region must be used together with --to-file.\n";
+}
+@ARGV and die "usage!";
+my($y0,$m0,$d0) = split /-/, $start_date;
+if (!$d0) {
+    die "start date cannot be parsed";
+}
+my($y1,$m1,$d1) = split /-/, $end_date;
+if (!$d1) {
+    die "end date cannot be parsed";
+}
 
-my $bbox = Geography::Berlin_DE->new->bbox_wgs84; # XXX use $region?
+if ($to_file) {
+    my $mod = 'Geography::' . $region;
+    if (!eval "use $mod; 1") {
+	die $@;
+    }
+    $bbox = $mod->new->bbox_wgs84;
+    $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/$region/$y0/" . sprintf("%04d%02d%02d", $y0, $m0, $d0) . ".bbd";
+} elsif (!$bbox) {
+    die "No bounding box specified. Please use either --bbox or --to-file+--region.\n";
+} else {
+    $bbox = [split /,/, $bbox];
+    die "Four elements expected in --bbox (lon,lat,lon,lat).\n" if @$bbox != 4;
+    if ($bbox->[0]>$bbox->[2]) { ($bbox->[2],$bbox->[0]) = ($bbox->[0],$bbox->[2]) }
+    if ($bbox->[1]>$bbox->[3]) { ($bbox->[3],$bbox->[1]) = ($bbox->[1],$bbox->[3]) }
+}
+
+if (-e $output_filename && !$allow_override) {
+    die "Won't override $output_filename without --allow-override.\n";
+}
+
+if ($do_open && !$output_filename) {
+    die "--open cannot be used without --to-file/-o\n";
+}
+
 my $start_captured_at = do {
-    timelocal(0,0,0,$d,$m-1,$y);
-#    timelocal(0,0,12,$d,$m-1,$y);
+    timelocal(0,0,0,$d0,$m0-1,$y0);
 };
 my $end_captured_at = do {
-    timelocal(59,59,23,$d,$m-1,$y) + 1;
-#    timelocal(59,14,12,$d,$m-1,$y) + 1;
+    timelocal(59,59,23,$d1,$m1-1,$y1) + 1;
 };
 
 my $ua = LWP::UserAgent->new(keep_alive => 1);
@@ -124,7 +166,7 @@ if (defined $output_filename) {
 print $ofh "#: map: polar\n";
 print $ofh "#: line_arrow: last\n";
 print $ofh "#\n";
-print $ofh "# Fetched from mapillary for bbox=@$bbox ($region) and date $capture_date\n";
+print $ofh "# Fetched from mapillary for bbox=@$bbox " . (defined $region ? "($region) " : "") . "and date " . ($start_date eq $end_date ? $start_date : "$start_date-$end_date") . "\n";
 print $ofh "# Used geometry field: $geometry_field\n";
 print $ofh "#\n";
 if (@overflows) {
@@ -137,15 +179,17 @@ if (@overflows) {
 for my $sequence (@sequences) {
     my $id = $sequence->[0]->{id};
     my $creator = $sequence->[0]->{creator}->{username};
+    my $make = $sequence->[0]->{make};
     my $name = join " ",
 	"start_captured_at=" . strftime("%FT%T", localtime($sequence->[0]->{captured_at}/1000)),
 	(defined $creator ? "creator=$creator" : ()),
+	(defined $make ? "make=$make" : ()),
 	"end_captured_at="   . strftime("%FT%T", localtime($sequence->[-1]->{captured_at}/1000)),
 	"start_id=$id",
 	"sequence=$sequence->[0]->{sequence}",
 	;
     my @coords = map { join(",", @{ $_->{$geometry_field}->{coordinates} || [] }) } @$sequence;
-    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$capture_date&dateTo=$capture_date\n";
+    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$start_date&dateTo=$end_date\n";
     print $ofh "$name\tX @coords\n";
 }
 
@@ -166,7 +210,7 @@ sub fetch_images {
     my $start_captured_at_iso = Time::Moment->from_epoch($start_captured_at)->strftime("%FT%TZ");
     my $end_captured_at_iso   = Time::Moment->from_epoch($end_captured_at)  ->strftime("%FT%TZ");
     warn "INFO: Fetching $start_captured_at_iso .. $end_captured_at_iso...\n" if $debug;
-    my $url = "$image_api_url?access_token=$client_token&fields=id,creator,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
+    my $url = "$image_api_url?access_token=$client_token&fields=id,creator,make,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
     my $data;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url);
