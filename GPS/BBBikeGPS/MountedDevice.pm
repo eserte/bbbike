@@ -722,6 +722,113 @@
 	\%disks;
     }
 
+    ######################################################################
+    # Linux (udevadm)
+    sub _get_linux_disks {
+	my @disks;
+	my $proc_file = '/proc/partitions';
+	if (open my $fh, $proc_file) {
+	    scalar <$fh>; # overread header
+	    while(<$fh>) {
+		chomp;
+		next if /^\s*$/;
+		s/^\s+//;
+		my(@f) = split /\s+/;
+		if ($f[3] !~ /\d$/) { # skip partitions
+		    push @disks, $f[3];
+		}
+	    }
+	} else {
+	    warn "Cannot open $proc_file: $!, cannot get linux disks.\n";
+	}
+	@disks;
+    }
+
+    sub _parse_udevadm_info {
+	my($disk, %opts) = @_;
+	my $compat = delete $opts{compat};
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
+	$disk = "/dev/$disk" if $disk !~ m{^/};
+	if (!_is_in_path('udevadm')) {
+	    die "Cannot parse disk info using udevadm, utility is not installed.\n";
+	}
+	my @cmd = ('udevadm', 'info', $disk);
+	open my $fh, '-|', @cmd
+	    or die "Error running '@cmd': $!";
+	my $info;
+	while(<$fh>) {
+	    chomp;
+	    if (/^E:\s+(.*?)=(.*)/) {
+		my($key, $val) = ($1, $2);
+		if ($key =~ /_ENC$/) {
+		    $val =~ s/\\x([0-9a-fA-F]{2})/pack("H*", $1)/eg;
+		}
+		$info->{$key} = $val;
+	    }
+	}
+
+	if ($compat) {
+	    if ($compat eq 'udisksctl-status') {
+		(my $model = $info->{ID_MODEL_ENC}) =~ s/\s*$//;
+		my $vendor = $info->{ID_VENDOR};
+		my $vendor_model = (defined $vendor ? "$vendor " : "") . $model;
+		my $short_disk = do {
+		    require File::Basename;
+		    File::Basename::basename($disk);
+		};
+		$info =
+		    {
+		     $vendor_model =>
+		     {
+		      SERIAL   => $info->{ID_SERIAL_SHORT},
+		      MODEL    => $vendor_model,
+		      REVISION => $info->{ID_REVISION},
+		      DEVICE   => $short_disk,
+		     },
+		    };
+	    } else {
+		die "Unhandled compat value '$compat'";
+	    }
+	}
+
+	$info;
+    }
+
+    # Use in a one-liner:
+    #
+    #    perl -I. -MGPS::BBBikeGPS::MountedDevice -MData::Dumper -e 'warn Dumper GPS::BBBikeGPS::MountedDevice::_parse_udevadm_as_udisksctl_status()'
+    #
+    sub _parse_udevadm_as_udisksctl_status {
+	my $info = {};
+	for my $disk (_get_linux_disks()) {
+	    my $add_info = _parse_udevadm_info($disk, compat => 'udisksctl-status');
+	    while(my($k,$v) = each %$add_info) {
+		$info->{$k} = $v;
+	    }
+	}
+	$info;
+    }
+
+    # Use in a one-liner:
+    #
+    #    perl -I. -MGPS::BBBikeGPS::MountedDevice -e 'warn GPS::BBBikeGPS::MountedDevice::_udevadm_find_mountable(shift)' /dev/sdc
+    #
+    sub _udevadm_find_mountable {
+	my $dev_prefix = shift;
+	require File::Glob;
+	my @candidates = File::Glob::bsd_glob($dev_prefix.'*');
+	for my $candidate (@candidates) {
+	    my $info = _parse_udevadm_info($candidate);
+	    if ($info->{ID_FS_USAGE} eq 'filesystem') {
+		return $candidate;
+	    }
+	}
+	undef;
+    }
+
+    ######################################################################
+    # Mac
     sub _diskutil_list {
 	require BBBikePlist;
 	open my $fh, '-|', qw(diskutil list -plist) or die $!;
