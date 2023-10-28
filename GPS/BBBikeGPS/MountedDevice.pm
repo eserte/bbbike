@@ -138,9 +138,15 @@
 		return;
 	    }
 	} elsif ($^O eq 'linux') { ###########################################
-	    my $check_udisksctl = '/usr/bin/udisksctl';
-	    if (-x $check_udisksctl) {
-		$udisksctl = $check_udisksctl;
+	    $udisksctl = _is_in_path('udisksctl');
+	    my $func;
+	    if (defined $udisksctl) {
+		$func = {
+			 parse_status   => \&_parse_udisksctl_status2,
+			 find_mountable => \&_udisksctl_find_mountable,
+			};
+	    }
+	    if ($func) {
 		my $info_dialog_active;
 		my $max_wait = 80; # full etrex 30 device boot until mass storage is available lasts 66-70 seconds
 		my @check_mount_devices;
@@ -150,7 +156,7 @@
 					    '/dev/disk/by-label/GARMIN', '/dev/disk/by-label/Falk', '/dev/disk/by-label/IGS630'
 					   );
 		} elsif ($garmin_disk_type eq 'card') {
-		    my $disks = _parse_udisksctl_status2();
+		    my $disks = $func->{parse_status}->();
 		    my @card_name_defs = ('Garmin GARMIN Card', 'Microsoft SDMMC');
 		    my @errors;
 		    my $seen_disks_diagnostics;
@@ -174,7 +180,7 @@
 			}
 
 			if ($disk_info) {
-			    my $check_mount_device = _udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
+			    my $check_mount_device = $func->{find_mountable}->('/dev/' . $disk_info->{DEVICE});
 			    if (!defined $check_mount_device) {
 				push @errors, "Cannot find a mountable filesystem on device '$disk_info->{DEVICE}'";
 			    } else {
