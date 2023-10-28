@@ -4044,7 +4044,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
-#: note: möglicherweise kann die eigentlich gesperrte westliche Fahrbahn zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09)
+#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
@@ -4058,7 +4058,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-08-28
+#: last_checked: 2023-10-28
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-10-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -5333,7 +5333,48 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HAEMMERLING-2022
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
+#: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
+#: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
+#: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
+#: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
+#: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (Hämmerlingstr. bis 15.6.2023 gesperrt)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (Hämmerlingstr. ab Ende Juni 2023 passierbar)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
+#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags)
+# REMOVED --- #: also_indoor: traffic (H,G,B,W)
+# REMOVED --- #: priority: #A
+#: last_checked: 2023-10-28 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2023-08-27 vvv
+# REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
+# REMOVED --- #: osm_watch: way id="794278028" version="10"
+# REMOVED --- #: osm_watch: way id="1181902719" version="1"
+# REMOVED --- Hämmerlingstr.: Bauarbeiten, Engstellen und Verschwenkungen	q3::inwork 21984,6317 22000,6245 22033,6144
+#: osm_watch: way id="1163982841" version="3"
+Schubertstr.	2::inwork 21984,6317 21856,6390
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'dont_check_date' => 1,
+         'from' => 1651953282,
+         'id' => 3548,
+         'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
+         'text' => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: next_check_id: WILTBERG-2022
@@ -6157,7 +6198,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-28
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
@@ -6469,7 +6510,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="22"
-#: last_checked: 2023-10-22
+#: last_checked: 2023-10-28
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6536,7 +6577,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-10-26 vvv
+#: last_checked: 2023-10-28 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -6611,17 +6652,7 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
-#: by: http://spielstraßen.de/uebersicht.php?date=20230620
-	q4::temp::play 7657,9942 7698,10147
-',
-         'from' => 1687281760,
-         'id' => 3829,
-         'text' => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, bis zum 27. Oktober 2023',
-         'type' => 'handicap',
-         'until' => 1698443999
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
@@ -6826,27 +6857,27 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: by: https://viz.berlin.de/2023/08/bahnhofstr/
 #: by: https://www.youtube.com/watch?v=Y73X25IYfTM
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
-#: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
+# REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: last_checked: 2023-10-09 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2023-10-11 vvv
+#: last_checked: 2023-10-28 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2023-10-11 vvv
 # REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
 # REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
 # REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
-Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
+# REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
 Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1693087200,
          'id' => 3881,
-         'text' => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
+         'text' => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6965,7 +6996,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
 #: by: https://www.youtube.com/watch?v=m7OQ0dpU-FI
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-28
 #: check_frequency: 60d
 #: next_check: 2024-04-11
 	q4::inwork 17826,6495 17991,6431 17948,6248
@@ -7079,15 +7110,15 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2023-10-22
-#: next_check: 2023-10-27
+#: last_checked: 2023-10-28
+#: next_check: 2023-12-01
 	q4::inwork 16273,11113 16227,10991
 ',
          'from' => 1694624894,
          'id' => 3915,
-         'text' => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 27.10.2023',
+         'text' => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 01.12.2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1701450000
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
@@ -7284,14 +7315,15 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: next_check_id: HANDJERY-2023
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1372587.php
 #: XXX Baustelle wandert
-#: next_check: 2023-10-28
+#: next_check: 2023-11-01
 # bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,7718 5636,7685 5635,7660
 # bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
-bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
-# bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
+# bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
+bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
 # bis Bundesallee (02.-04.11.2023)	q4::inwork 5565,7024 5478,6959 5357,6932
 ',
-         'from' => 1697925600,
+         'dont_check_date' => 1,
+         'from' => 1698530400,
          'id' => 3934,
          'text' => 'Handjerystr.: Bauarbeiten zur Realisierung der Fahrradstraße, Sperrungen zwischen 7:00 und 18:00 Uhr möglich, vom 23.10.2023 bis 04.11.2023',
          'type' => 'handicap',
@@ -7460,6 +7492,45 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung für alle Verkehrsteilnehmer vom 15.01.2024 bis 24.01.2024',
          'type' => 'gesperrt',
          'until' => 1706137200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023)
+#: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
+# REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
+Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
+',
+         'from' => 1697022000,
+         'id' => 3948,
+         'text' => 'Wilhelminenhofstr.: zwischen Mathildestr. und Klarastr. Gleisbauarbeiten, Radfahrer sollen den Gehweg benutzen, bis 20.11.2023',
+         'type' => 'handicap',
+         'until' => 1700496000
+       },
+       {
+         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Gleisbauarbeiten 23.10.-5.11.2023)
+#: by: https://www.berlin-straba.de/images/Bauplan/liniennetzplam_bau/BVG_2023-10-23_T-Bau.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1376601.php (MIV: Einbahnstraße Richtung Treskowallee)
+#: source_id: bvg2021:21#BVG330473_0 (2023-10-23 bis 2023-11-05 früh)
+#: source_id: viz2021:13.518472,52.481202,23.10.2023,07:00 (hier nur Kfz-Verkehr, bis 06.11.2023)
+	q4::inwork; 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589 18086,8634 18009,8687
+',
+         'from' => 1698503124,
+         'id' => 3949,
+         'text' => 'Ehrlichstr.: Gleiserneuerung, Fahrbahn Richtung Westen gesperrt, keine offizielle Gehwegfreigabe für Radfahrer, bis 6.11.2023',
+         'type' => 'handicap',
+         'until' => 1699311600
+       },
+       {
+         'data' => '#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
+#: last_checked: 2023-10-28
+#: check_frequency: 30d
+#: next_check: 2023-12-15
+	q2::inwork; 18037,9195 17549,9529
+',
+         'from' => 1698503309,
+         'id' => 3950,
+         'text' => 'Wallensteinstr.: ab Ilsestr. etwa 70m der Fahrbahn Richtung Nordwesten gesperrt, voraussichtlich bis Mitte Dezember 2023',
+         'type' => 'handicap',
+         'until' => 1702681199
        }
      
 );

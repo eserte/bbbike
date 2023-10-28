@@ -961,7 +961,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023)
-#: last_checked: 2023-09-20 (mapillary) vvv
+#: last_checked: 2023-10-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -1018,7 +1018,7 @@ Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 #: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="57356015" version="18"
 #: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild
-#: last_checked: 2023-09-20 (mapillary)
+#: last_checked: 2023-10-28
 Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
@@ -3700,7 +3700,7 @@ Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,119
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="25796640" version="22"
 #: osm_watch: way id="176946641" version="11"
-#: last_checked: 2023-10-22
+#: last_checked: 2023-10-28
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -3790,7 +3790,7 @@ Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Str
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2023-10-09
+#: last_checked: 2023-10-28
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -3858,7 +3858,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2023-10-22
+#: last_checked: 2023-10-28
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -3935,7 +3935,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-10-26
+#: last_checked: 2023-10-28
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4264,7 +4264,8 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/lueckstrasse.html (Fertigstellung Ende 2025)
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
-#: last_checked: 2023-10-22
+#: osm_watch: way id="1171090939" version="2"
+#: last_checked: 2023-10-28
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4400,7 +4401,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-09-23
+#: last_checked: 2023-10-28
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4409,7 +4410,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-10-21
+#: last_checked: 2023-10-28
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157

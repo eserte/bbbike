@@ -26,7 +26,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-10-26 vvv
+#: last_checked: 2023-10-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-29 vvv
 #: valid: -20231229 vvv
@@ -51,7 +51,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="15"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-10-26
+#: last_checked: 2023-10-28
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -507,9 +507,9 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Karlshorst ###
 # 
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023)
-#: last_checked: 2023-08-28
+#: last_checked: 2023-10-28
 #: next_check: 2023-10-31
-#: valid: -20231031
+# REMOVED --- #: valid: -20231031
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: next_check_id: WANDLITZ-2021 --- #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können --- #: also_indoor: traffic --- #: last_checked: 2023-03-17 --- #: check_frequency: 90d --- Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
@@ -640,6 +640,15 @@ Matthäikirchplatz: Fahrbahn gesperrt	q4::inwork 7970,11396 7934,11275
 # 
 ### Charlottenburg ###
 # 
+#: next_check_id: ABBESTR-2021
+#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
+#: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
+#: osm_watch: way id="152832871" version="23"
+#: osm_watch: way id="1132383957" version="1"
+#: last_checked: 2023-10-27 (osm note)
+#: check_frequency: 120d
+Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
+# 
 # REMOVED (laut viz fertig) --- #: next_check_id: FASANEN-2021 --- #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022) --- #: source_id: 2147346972 (- " -) --- #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022) (inaktiv) --- #: source_id: viz2021:13.32784,52.505061,22.12.2021,06:00 (bis 5.3.2022) --- #: XXX evtl. sind die Einschränkungen auf der Nordseite aufgehoben? --- #: last_checked: 2022-01-15 --- #: check_frequency: 90d --- #: next_check: 2022-03-05 --- #: valid: -20220305 --- # REMOVED (hier nicht mehr) --- Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 --- Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5236,10994 5232,10947 5230,10919
 # REMOVED (aufgehoben) --- #: next_check_id: ENGLISCHESTR-2017 --- #: osm_watch: way id="503096340" version="3" --- #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72 --- #: XXX laut fritz bis 2019-04-30 --- #: also_indoor: traffic (H) --- #: last_checked: 2019-09-08 --- #: check_frequency: 60d --- Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5417,11949 5518,12159
 # REMOVED (offen) --- #: next_check_id: ENGLISCHESTR-2017 --- #: last_checked: 2019-10-30 --- Wegelystr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5712,12033 5775,11975
@@ -755,7 +764,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2023-10-18
+#: last_checked: 2023-10-28
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
