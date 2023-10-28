@@ -592,10 +592,21 @@
     #    perl -I. -MGPS::BBBikeGPS::MountedDevice -MData::Dumper -e 'warn Dumper GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status()'
     #
     sub _parse_udisksctl_status {
+	my(%opts) = @_;
+	my $infostring = delete $opts{infostring}; # used for testing
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
 	my %disks;
-	my @cmd = ('/usr/bin/udisksctl', 'status');
-	open my $fh, '-|', @cmd
-	    or die "Error starting '@cmd': $!";
+
+	my $fh;
+	if (defined $infostring) {
+	    open $fh, '<', \$infostring or die $!;
+	} else {
+	    my @cmd = ('/usr/bin/udisksctl', 'status');
+	    open $fh, '-|', @cmd
+		or die "Error starting '@cmd': $!";
+	}
+
 	chomp(my $header = <$fh>);
 	my(@f) = split /(\s+)/, $header;
 	my @field_names = do { my $i; grep { $i++ % 2 == 0 } @f };
@@ -612,7 +623,8 @@
 	    $disks{$f{MODEL}} = \%f;
 	}
 	close $fh
-	    or die "Error running '@cmd': $!";
+	    or die "Error while closing filehandle (probably failure of running udisksctl command): $!";
+
 	\%disks;
     }
 
