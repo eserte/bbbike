@@ -19,111 +19,124 @@ GetOptions("debug" => \my $debug)
 
 SKIP: {
     { my $err; skip $err, 1 if !udisksctl_usable(\$err) }
-    my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status();
-    cmp_ok keys(%$disks), ">", 0, 'disks detected by udisksctl';
-    my $first_disk = (keys(%$disks))[0];
-    my $first_disk_info = $disks->{$first_disk};
-    is $first_disk_info->{MODEL}, $first_disk, "Model of first found disk '$first_disk'";
-    ok $first_disk_info->{DEVICE}, 'DEVICE should be defined';
-    # SERIAL may be missing, seen with 'QEMU QEMU HARDDISK'
+    for my $def (
+		 ['_parse_udisksctl_status',  'parsing may fail on long serials'],
+		 ['_parse_udisksctl_status2', 'parsing may fail on long model names'],
+		 ['_parse_udisksctl_status3', undef],
+		) {
+	my($parser_func, $todo) = @$def;
+	local $TODO = $todo;
+	my $disks = eval 'GPS::BBBikeGPS::MountedDevice::'.$parser_func.'()';
+	is $@, '', "no error calling $parser_func";
+	cmp_ok keys(%$disks), ">", 0, "disks detected by udisksctl and $parser_func";
+	my $first_disk = (keys(%$disks))[0];
+	if (defined $first_disk) {
+	    my $first_disk_info = $disks->{$first_disk};
+	    is $first_disk_info->{MODEL}, $first_disk, "Model of first found disk '$first_disk' (using $parser_func)";
+	    ok $first_disk_info->{DEVICE}, "DEVICE should be defined (using $parser_func)";
+	    # SERIAL may be missing, seen with 'QEMU QEMU HARDDISK'
+	}
 
-    my @mountables;
-    while(my($disk, $disk_info) = each %$disks) {
-	my $mountable = GPS::BBBikeGPS::MountedDevice::_udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
-	push @mountables, "$mountable (from $disk)" if defined $mountable;
-    }
-    if (@mountables) {
-	diag "Found mountables:" . join "", map { "\n\t$_" } @mountables;
-    }
-}
-
-SKIP: {
-    { my $err; skip $err, 1 if !udisksctl_usable(\$err) }
-    my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2();
-    cmp_ok keys(%$disks), ">", 0, 'disks detected by udisksctl';
-    my $first_disk = (keys(%$disks))[0];
-    my $first_disk_info = $disks->{$first_disk};
-    is $first_disk_info->{MODEL}, $first_disk, "Model of first usable disk '$first_disk'";
-    ok $first_disk_info->{DEVICE}, 'DEVICE should be defined';
-    # SERIAL may be missing, seen with 'QEMU QEMU HARDDISK'
-
-    my @mountables;
-    while(my($disk, $disk_info) = each %$disks) {
-	my $mountable = GPS::BBBikeGPS::MountedDevice::_udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
-	push @mountables, "$mountable (from $disk)" if defined $mountable;
-    }
-    if (@mountables) {
-	diag "Found mountables:" . join "", map { "\n\t$_" } @mountables;
+	my @mountables;
+	while(my($disk, $disk_info) = each %$disks) {
+	    my $mountable = GPS::BBBikeGPS::MountedDevice::_udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
+	    push @mountables, "$mountable (from $disk)" if defined $mountable;
+	}
+	if (@mountables) {
+	    diag "Found mountables with $parser_func:" . join "", map { "\n\t$_" } @mountables;
+	} else {
+	    diag "Possible problem: no mountables found with $parser_func; returned disks structure is: " . explain($disks);
+	}
     }
 }
 
-{
-    my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2(infostring => _sample_udiskctl_status_output());
-    is_deeply $disks->{"Garmin GARMIN Card"},
-	{
-	 "DEVICE" => "-",
-	 "MODEL" => "Garmin GARMIN Card",
-	 "REVISION" => "1.00",
-	 "SERIAL" => "0000e709ffff"
-	}, 'parsing sample udisksctl status output -> Garmin Card';
-    is_deeply $disks->{"Garmin GARMIN Flash"},
-	{
-	 "DEVICE" => "-",
-	 "MODEL" => "Garmin GARMIN Flash",
-	 "REVISION" => "1.00",
-	 "SERIAL" => "0000e709ffff"
-	}, 'parsing sample udisksctl status output -> Garmin Flash';
-    is_deeply $disks->{"Microsoft SDMMC"},
-	{
-	 "DEVICE" => "sdd",
-	 "MODEL" => "Microsoft SDMMC",
-	 "REVISION" => "0000",
-	 "SERIAL" => "1000000000386CF84D4FFFFFFFFFFFFF"
-	}, 'parsing sample udisksctl status output -> Microsoft SDMMC';
-    is_deeply $disks->{"TOSHIBA DT01ACA200"},
-	{
-	 "DEVICE" => "sda",
-	 "MODEL" => "TOSHIBA DT01ACA200",
-	 "REVISION" => "MX4OABB0",
-	 "SERIAL" => "95LZ9RXXX"
-	}, 'parsing sample udisksctl status output -> Toshiba ...';
-}
+for my $parser_func (
+		     '_parse_udisksctl_status',
+		     '_parse_udisksctl_status2',
+		     '_parse_udisksctl_status3',
+		    ) {
 
-{
-    local $TODO = "currently fails";
-    my $disks = eval { GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2(infostring => _sample_udiskctl_status_output_with_overflow()) };
-    is_deeply $disks->{"SAMSUNG MZVLB512HBJQ-000L7"},
-	{
-	 "DEVICE" => "nvme0n1",
-	 "MODEL" => "SAMSUNG MZVLB512HBJQ-000L7",
-	 "REVISION" => "5M2QEXF7",
-	 "SERIAL" => "S4ENNX0RXXXXXX"
-	}, 'parsing sample udisksctl status output -> device with overflow model name';
-    is_deeply $disks->{"TOSHIBA DT01ACA200"},
-	{
-	 "DEVICE" => "sda",
-	 "MODEL" => "TOSHIBA DT01ACA200",
-	 "REVISION" => "MX4OABB0",
-	 "SERIAL" => "95LZ9RXXX"
-	}, 'parsing sample udisksctl status output -> Toshiba ...';
-}
+    my $func = do {
+	no strict 'refs';
+	\&{"GPS::BBBikeGPS::MountedDevice::" . $parser_func};
+    };
 
-{
-    my $disks = GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2(infostring => _sample_udiskctl_status_output_vm());
-    is_deeply $disks->{"QEMU QEMU HARDDISK"},
+    {
+	my $disks = $func->(infostring => _sample_udiskctl_status_output());
+	is_deeply $disks->{"Garmin GARMIN Card"},
+	    {
+	     "DEVICE" => "-",
+	     "MODEL" => "Garmin GARMIN Card",
+	     "REVISION" => "1.00",
+	     "SERIAL" => "0000e709ffff"
+	    }, "parsing sample udisksctl status output with $parser_func -> Garmin Card";
+	is_deeply $disks->{"Garmin GARMIN Flash"},
+	    {
+	     "DEVICE" => "-",
+	     "MODEL" => "Garmin GARMIN Flash",
+	     "REVISION" => "1.00",
+	     "SERIAL" => "0000e709ffff"
+	    }, "parsing sample udisksctl status output with $parser_func -> Garmin Flash";
 	{
-	 "DEVICE" => "sda",
-	 "MODEL" => "QEMU QEMU HARDDISK",
-	 "REVISION" => "2.5+",
-	 "SERIAL" => "12345678"
-	}, 'parsing sample udisksctl status output -> qemu harddisk';
-    is_deeply $disks->{"QEMU DVD-ROM"},
-	{
-	 "DEVICE" => "sr0",
-	 "MODEL" => "QEMU DVD-ROM",
-	 "REVISION" => "2.5+",
-	 "SERIAL" => "QEMU_DVD-ROM_QM00001"
-	}, 'parsing sample udisksctl status output -> qemu dvd-rom';
+	    local $TODO;
+	    $TODO = 'parser cannot handle overflow serials' if $parser_func eq '_parse_udisksctl_status';
+	    is_deeply $disks->{"Microsoft SDMMC"},
+		{
+		 "DEVICE" => "sdd",
+		 "MODEL" => "Microsoft SDMMC",
+		 "REVISION" => "0000",
+		 "SERIAL" => "1000000000386CF84D4FFFFFFFFFFFFF"
+		}, "parsing sample udisksctl status output with $parser_func -> Microsoft SDMMC";
+	}
+	is_deeply $disks->{"TOSHIBA DT01ACA200"},
+	    {
+	     "DEVICE" => "sda",
+	     "MODEL" => "TOSHIBA DT01ACA200",
+	     "REVISION" => "MX4OABB0",
+	     "SERIAL" => "95LZ9RXXX"
+	    }, "parsing sample udisksctl status output with $parser_func -> Toshiba ...";
+    }
+
+    {
+	local $TODO; # TODO is deliberately "cumulative" here
+	my $disks = eval { $func->(infostring => _sample_udiskctl_status_output_with_overflow()) };
+	$TODO = 'parser is known to fail' if $parser_func eq '_parse_udisksctl_status2';
+	is $@, '', "no error parsing with $parser_func";
+	$TODO = 'parser cannot handle overflow model names' if $parser_func eq '_parse_udisksctl_status' || $parser_func eq '_parse_udisksctl_status2';
+	is_deeply $disks->{"SAMSUNG MZVLB512HBJQ-000L7"},
+	    {
+	     "DEVICE" => "nvme0n1",
+	     "MODEL" => "SAMSUNG MZVLB512HBJQ-000L7",
+	     "REVISION" => "5M2QEXF7",
+	     "SERIAL" => "S4ENNX0RXXXXXX"
+	    }, "parsing sample udisksctl status output with $parser_func -> device with overflow model name";
+	$TODO = undef if $parser_func eq '_parse_udisksctl_status';
+	is_deeply $disks->{"TOSHIBA DT01ACA200"},
+	    {
+	     "DEVICE" => "sda",
+	     "MODEL" => "TOSHIBA DT01ACA200",
+	     "REVISION" => "MX4OABB0",
+	     "SERIAL" => "95LZ9RXXX"
+	    }, "parsing sample udisksctl status output with $parser_func -> Toshiba ...";
+    }
+
+    {
+	my $disks = $func->(infostring => _sample_udiskctl_status_output_vm());
+	is_deeply $disks->{"QEMU QEMU HARDDISK"},
+	    {
+	     "DEVICE" => "sda",
+	     "MODEL" => "QEMU QEMU HARDDISK",
+	     "REVISION" => "2.5+",
+	     "SERIAL" => "12345678"
+	    }, "parsing sample udisksctl status output with $parser_func -> qemu harddisk";
+	is_deeply $disks->{"QEMU DVD-ROM"},
+	    {
+	     "DEVICE" => "sr0",
+	     "MODEL" => "QEMU DVD-ROM",
+	     "REVISION" => "2.5+",
+	     "SERIAL" => "QEMU_DVD-ROM_QM00001"
+	    }, "parsing sample udisksctl status output with $parser_func -> qemu dvd-rom";
+    }
 }
 
 SKIP: {
