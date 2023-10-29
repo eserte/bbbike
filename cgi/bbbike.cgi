@@ -1238,12 +1238,6 @@ if (defined $q->param('begin')) {
 	draw_route();
     }
 } elsif (defined $q->param('create_all_maps')) {
-    # XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach ungefähr
-    # fünf Karten mit "Profiling timer expired" sterben. Mit thttpd
-    # gibt es zwar auch mysteriöse kills, aber es geht im Großen und
-    # Ganzen.
-    #
-    # Mit dem Apache auf bbbike.de gibt es keine Probleme.
     http_header(-type => 'text/plain',
 		@no_cache,
 	       );
