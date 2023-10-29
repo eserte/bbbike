@@ -35,7 +35,6 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Matth‰ikirchplatz: Fahrbahn gesperrt	q4::inwork 7970,11396 7934,11275
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
-Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5382,9942
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -1908,7 +1907,7 @@ Am Lichtenrader Graben: einige Fuﬂg‰nger	q1 10695,-1515 10615,-1772 10537,-1943 
 (Schwedter Str. - Alt-Lichtenrade): schmal	q2 11023,-374 11010,-378 10938,-405
 Dorotheenstr.: Bordstein, Fuﬂg‰nger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
-(Potsdamer Platz - Linkstr.): Bordstein, einige Fuﬂg‰nger	q3 8474,11350 8481,11447
+(Potsdamer Platz - Linkstr.): Bordstein, Fuﬂg‰nger	q4 8474,11350 8481,11447
 Alte Potsdamer Str.: Fuﬂg‰ngerzone	q4 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Mˆckernkiez): eng	q3 8729,9747 8735,9737
 Mˆckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
@@ -2341,6 +2340,7 @@ Lindenstr.: gegenl‰ufiger Geh/Radweg	q3; 21605,5687 21623,5661 21706,5541 21789,
 (Zur Waage - Zur Innung): Gr¸nanlage, einige Fuﬂg‰nger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
+Solmsstr.: asphaltierte Kissen (2x)	q1 9705,9732 9676,9564
 F¸rbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
 (Nordpromenade, entlang der S-Bahn): einige Fuﬂg‰nger	q2 20640,12095 20807,12083
 Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307 12812,6343 12979,6374
@@ -2655,7 +2655,7 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (Anhalter Steg): Fuﬂg‰nger	q1 8711,10322 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 (Weg im Elise-Tilse-Park): Fuﬂg‰nger	q1 8776,10548 8778,10578 8812,10662
-Fontaneplatz: Fuﬂg‰nger, Bordsteinkante	q3 8474,11350 8427,11365
+Fontaneplatz: Fuﬂg‰nger, Bordsteinkante	q4 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q4 8427,11365 8389,11378
 Voxstr.: Fuﬂg‰nger, Restaurantbetrieb	q4 8309,11390 8375,11368
 Alice-Salomon-Park: Fuﬂg‰nger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497

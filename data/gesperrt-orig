@@ -3819,9 +3819,9 @@ Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 # REMOVED (nicht mehr) --- #: last_checked: 2023-08-21 --- #: check_frequency: 14d --- Ingrid-Reschke-Str.: wegen Bauarbeiten wieder gesperrt	2::inwork 15163,10758 15151,10699
 # 
 #: next_check_id: SONYCENTER-2023
-#: last_checked: 2023-09-29
+#: last_checked: 2023-10-29
 #: check_frequency: 90d
-#: next_check: 2023-12-31
+#: next_check: 2024-07-01
 #: valid: -20240701
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555
 # 
@@ -3837,7 +3837,8 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # 
 #: next_check_id: MAUERPARK-2022
-#: osm_watch: way id="946925509" version="6"
+# REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
+#: osm_watch: way id="1218990564" version="1"
 #: last_checked: 2023-10-18 (mapillary)
 #: check_frequency: 60d
 Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754
@@ -3883,7 +3884,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/auswaertiges-amt/kurstrasse-33-35.html (Fertigstellung 2027/2028)
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
-#: last_checked: 2023-10-24
+#: last_checked: 2023-10-29
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -3948,7 +3949,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: last_checked: 2023-10-24 vvv
+#: last_checked: 2023-10-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4792,12 +4793,12 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2023-10-22 (architektur-urbanistik)
+#: last_checked: 2023-10-29
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollständig aktiv; am 2023-02-10 war das Einbahnstraßenschild verschwunden, das Einfahrt-verboten-Schild aber noch da, am 2023-06-15 wieder weggedreht, am 2023-09-28 wieder da, möglicherweise bis Ende 2023?
-#: last_checked: 2023-09-28
+#: last_checked: 2023-10-29
 #: check_frequency: 60d
 #: next_check: 2023-12-31
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777

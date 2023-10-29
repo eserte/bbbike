@@ -12,7 +12,7 @@
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023)
-#: last_checked: 2023-10-27
+#: last_checked: 2023-10-29
 #: check_frequency: 90d
 #: next_check: 2023-11-01
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -49,7 +49,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?))
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="6"
-#: osm_watch: way id="36987812" version="15"
+#: osm_watch: way id="36987812" version="16"
 #: also_indoor: traffic (W,G)
 #: last_checked: 2023-10-28
 #: check_frequency: 90d
@@ -294,7 +294,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-27
+#: last_checked: 2023-10-29
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -617,7 +617,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-10-01 (daf) vvv
+#: last_checked: 2023-10-29 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-01-01 vvv
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -660,26 +660,13 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 # REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^
 # REMOVED (laut kartaview größtenteils fertiggestellt) --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: last_checked: 2022-02-27 --- #: check_frequency: 90d --- Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
-# 
-#: next_check_id: PARISER-2021
-#: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (inaktiv)
-#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/baustart-fuer-neues-geschaeftshaus_a290278 (bis Herbst 2022)
-#: by: http://www.infravelo.de/projekt/bundesallee/ (Erwähnung der Hochbauarbeiten an der Pariser Str.; Verbesserungen für den Radverkehr bis 4. Quartal 2023) (bis 4. Quartal 2024) (gelöscht) (wieder da) (gelöscht) (wieder da)
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
-#: XXX siehe unten: anderen Eintrag wieder aktivieren
-#: also_indoor: traffic (none)
-#: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt)
-#: last_checked: 2023-09-29
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-10-01
-Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
+# REMOVED (aufgehoben) --- #: next_check_id: PARISER-2021 --- #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (inaktiv) --- #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/baustart-fuer-neues-geschaeftshaus_a290278 (bis Herbst 2022) --- #: by: http://www.infravelo.de/projekt/bundesallee/ (Erwähnung der Hochbauarbeiten an der Pariser Str.; Verbesserungen für den Radverkehr bis 4. Quartal 2023) (bis 4. Quartal 2024) (gelöscht) (wieder da) (gelöscht) (wieder da) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417 --- #: XXX siehe unten: anderen Eintrag wieder aktivieren --- #: also_indoor: traffic (none) --- #: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt) --- #: last_checked: 2023-09-29 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-10-01 --- Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
 #: also_indoor: webcam https://portal1443.webcam-profi.de/
 #: note: wobei mittlerweile die Einschränkungen recht gering sind
-#: last_checked: 2023-09-29
+#: last_checked: 2023-10-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5382,9942
@@ -870,7 +857,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2023-09-20 vvv
+#: last_checked: 2023-10-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
@@ -3249,7 +3236,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-10-27
+#: last_checked: 2023-10-29
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3384,6 +3371,7 @@ Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 (Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577
 (Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fußgänger	q1 7605,14600 7589,14627 7549,14664 7514,14687
 #: XXX_prog BS beim Überqueren der Lietzenburger Str., ansonsten weiterhin q2
+#: note: Bordstein am Wendehammer kann über Grundstückseinfahrt auf der östlichen Seite umfahren werden
 Kelheimer Str.: einige Fußgänger, Bordstein	q2 5894,10287 5898,10318
 #: XXX_prog BS am Wendehammer, sowie beim Überqueren der Lietzenburger Str., ansonsten q2
 Würzburger Str.: einige Fußgänger, Bordsteine	q3 5898,10318 5907,10347
@@ -3696,8 +3684,9 @@ Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 
 #: XXX_prog: BS an der Sackgasse, ansonsten q2
 Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
-#: XXX_prog: BS zumindest an der Alten Potsdamer Str., ansonsten q2
-(Potsdamer Platz - Linkstr.): Bordstein, einige Fußgänger	q3 8474,11350 8481,11447
+#: XXX_prog: BS zumindest an der Alten Potsdamer Str., ansonsten wegen der Fußgänger weiterhin q4
+#: note: früher q3
+(Potsdamer Platz - Linkstr.): Bordstein, Fußgänger	q4 8474,11350 8481,11447
 Alte Potsdamer Str.: Fußgängerzone	q4+ 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 #: XXX_prog relativ steil -> comments_mount?
@@ -4347,6 +4336,7 @@ Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21623,5661 21706,5541 21789,
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
+Solmsstr.: asphaltierte Kissen (2x)	q1 9705,9732 9676,9564
 Fürbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
 #: note: (noch) keine Ausschilderung
 (Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
@@ -5031,7 +5021,8 @@ Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 (Anhalter Steg): Fußgänger	q1 8711,10322 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 (Weg im Elise-Tilse-Park): Fußgänger	q1 8776,10548 8778,10578 8812,10662
-Fontaneplatz: Fußgänger, Bordsteinkante	q3 8474,11350 8427,11365
+#: XXX_prog BS (an der Linkstr.), ansonsten trotzdem q4 
+Fontaneplatz: Fußgänger, Bordsteinkante	q4 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fußgänger, schmal	q4 8427,11365 8389,11378
 Voxstr.: Fußgänger, Restaurantbetrieb	q4 8309,11390 8375,11368
 # REMOVED (mittlerweile mit Absenkungen) --- #: XXX_prog: BS zur Rosenheimer Str., ansonsten q1

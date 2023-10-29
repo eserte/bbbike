@@ -6,7 +6,7 @@
 #:
 #: street_width: 6 lanes
 Dudenstr.	H 9229,8785 9076,8783 8982,8781 8866,8780 8763,8780 8594,8777 8478,8776 8434,8775 8370,8775 8298,8774 8209,8773
-Methfesselstr.	N 8982,8781 9063,8935 9111,9036 9115,9046 9125,9078 9150,9152 9170,9206 9211,9354
+Methfesselstr.	N 8982,8781 9063,8935 9105,9018 9115,9046 9125,9078 9150,9152 9170,9206 9211,9354
 (Katzbachstr. - Denkmal im Viktoriapark)	NN 8598,9074 8695,9079 8827,9086 8883,9089 8901,9104 8943,9098
 (Methfesselstr. - Denkmal im Viktoriapark)	NN 9115,9046 9091,9054 9079,9058 9026,9042 8962,9048 8943,9098
 (Methfesselstr. - Kreuzbergstr., Viktoriapark)	NN 9150,9152 9080,9163 9020,9150 8990,9166 8982,9198 9007,9264 8970,9323
@@ -261,7 +261,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-10-13 vvv
+#: last_checked: 2023-10-29 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -906,7 +906,7 @@ Alte Potsdamer Str.	NN 8479,11493 8481,11447 8389,11378
 #: XXX die Straße wird vermutlich zur Fußgängerzone?
 # REMOVED --- #: XXX laut StefanHRT mittlerweile Verbundsteinpflaster, zumindest an der Einmündung Potsdamer Platz
 # REMOVED (war der andere Abschnitt) --- #: osm_watch: way id="4597334" version="30"
-#: last_checked: 2023-09-26
+#: last_checked: 2023-10-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 Alte Potsdamer Str.	N 8389,11378 8375,11368 8318,11324 8280,11296
@@ -17330,16 +17330,16 @@ Wrightallee	N 17887,3285 17892,3537 17892,3550 17896,3738
 Wolfgang-Harlan-Str.	N 18018,3276 17943,3282 17887,3285 17825,3280
 (Wolfgang-Harlan-Str. - Landschaftspark Johannisthal)	NN 18018,3276 18027,3276
 #: note: nur für Anlieger
-(Zufahrt zum Viktoria-Quartier)	N 9111,9036 9099,9034 9052,8934 9026,8916
+(Zufahrt zum Viktoria-Quartier)	N 9105,9018 9095,9017 9052,8934 9032,8923
 #: note: nur für Anlieger
-Eberhard-Roters-Platz	N 9026,8916 8990,8915 8954,8914
+Eberhard-Roters-Platz	N 9032,8923 8989,8920 8959,8914
 #: note: nur für Anlieger
-Alte Brauerei	N 8954,8914 8953,8886 8814,8881 8815,8944 8954,8914
-Am Weinhang	NN 8914,8965 8914,8988 8913,9020
+Alte Brauerei	N 8959,8914 8958,8891 8803,8884 8803,8943 8959,8914
+Am Weinhang	NN 8918,8965 8917,8988 8916,9023
 #: note: nur für Anlieger
-Schmiedehof	N 8988,8990 8990,8915
-Sixtusgarten	NN 8988,8990 9091,9054
-Tivoliplatz	NN 8988,8990 8914,8988
+Schmiedehof	N 8986,8999 8989,8920
+Sixtusgarten	NN 8986,8999 9002,9015 9003,9025 9091,9054
+Tivoliplatz	NN 8986,8999 8917,8988
 Andréezeile	N 1322,352 1206,337 1078,443 1020,496 914,598 888,619 800,693 737,891 725,970
 Ladiusstr.	N 1224,481 1108,465 1078,443 1042,406 935,391 924,405
 Ritterhufen	N 1020,496 1046,537 1016,737 958,1009

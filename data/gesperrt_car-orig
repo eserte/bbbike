@@ -46,7 +46,8 @@ Holtei von N - Boxhagener	3 14676,11572 14639,11512 14684,11456
 Boxhagener von E - Holtei	3 14684,11456 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5810,11902 5900,11913
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
-Fasanenstr.	1 5192,10241 5196,10398
+Fasanenstr.	1 5191,10190 5192,10241 5196,10398
+Fasanenplatz	1 5192,10241 5223,10243
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8919 7709,8777 7713,8600
 zum Mariannenplatz	2 11944,11152 11917,11186
@@ -67,7 +68,7 @@ Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 12005,9211 11888,9189
 # XXX oder komplett gesperrt?
 Friedenstr.	1 12325,13148 12382,13097
-Fasanenstr.	1 5219,9808 5203,9840 5194,9985
+# REMOVED (hier nicht (mehr?)) --- Fasanenstr.	1 5219,9808 5203,9840 5194,9985
 Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
 Hagelberger - Yorck	3nocross 8595,9495 8679,9544 8777,9601
 Hagelberger - Mehringdamm	3nocross 9334,9670 9283,9487 9248,9350
@@ -880,7 +881,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="20"
-#: last_checked: 2023-09-14
+#: last_checked: 2023-10-29
 #: check_frequency: 60d
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776

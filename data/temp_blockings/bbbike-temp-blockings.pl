@@ -28432,7 +28432,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-10-24
+#: last_checked: 2023-10-29
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30475,15 +30475,16 @@ EOF
 #: next_check_id: WRIEZENERPARK-2019
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: last_checked: 2023-10-27 vvv
+#: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
+#: last_checked: 2023-10-29 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
 	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
-	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400
-außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
+# REMOVED (nicht mehr) ---	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400
+# REMOVED (nicht mehr) --- außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
 # REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 # REMOVED ---	2::inwork 13172,11651 13202,11666
 # REMOVED --- #: next_check ^^^
@@ -31229,14 +31230,8 @@ EOF
        type  => 'handicap',
        recurring => 1,
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten)
-#: XXX ist die Ausweitung des Marktes dauerhaft?
-#: note: Halteverbotsschilder (samstags) befristet bis zum 28.10.2023
-#: last_checked: 2023-08-05
-#: check_frequency: 120d
-#: next_check: 2023-11-03
+#: note: permanente Halteverbotsschilder
+# REMOVED --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten) --- #: XXX ist die Ausweitung des Marktes dauerhaft? --- #: note: Halteverbotsschilder (samstags) befristet bis zum 28.10.2023 --- #: last_checked: 2023-08-05 --- #: check_frequency: 120d --- #: next_check: 2023-11-03
 # REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
 	q4::temp 7118,9870 7080,10098
 EOF
@@ -36749,7 +36744,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an? -> nordöstlicher Abschnitt ist fertig, prüfen! (evtl. ist jetzt der südwestliche gesperrt)
-#: last_checked: 2023-09-26
+#: last_checked: 2023-10-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
@@ -37761,7 +37756,7 @@ EOF
        text  => 'Lehderstr.: Einbahnstraßenregelung zwischen Börnestr. und Behaimstr., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: last_checked: 2023-10-06
@@ -37779,6 +37774,7 @@ EOF
 #: osm_watch: way id="1170463985" version="2"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
+#: also_indoor: traffic (G,W)
 #: last_checked: 2023-10-19
 #: check_frequency: 90d
 #: next_check: 2023-12-31
@@ -39480,7 +39476,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv)
 #: note: laut rbb Sperrung bis 03.11.2023
-#: last_checked: 2023-10-22
+#: last_checked: 2023-10-29
 #: next_check: 2023-11-03
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40221,7 +40217,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-10-15 vvv
+#: last_checked: 2023-10-29 vvv
 #: check_frequency: 14d vvv
 nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
 südlicher Weg	2::inwork 10168,10085 10066,10071
@@ -40625,13 +40621,16 @@ EOF
 EOF
      },
      { from  => 1695531600, # 2023-09-24 07:00
-       until => 1698681600, # 2023-10-30 17:00
-       text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00',
+       until => undef, # 1698681600, # 2023-10-30 17:00
+       dont_check_date => 1,
+       text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: note: bei VIZ inaktiv, tatsächlich noch aktiv
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
+#: last_checked: 2023-10-29
+#: check_frequency: 14d
 	q3::inwork; 10722,11816 10815,11662
 EOF
      },
@@ -40832,7 +40831,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GENDARMENMARKT-2023
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-10-24
+#: last_checked: 2023-10-29
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
 EOF
@@ -40921,4 +40920,16 @@ EOF
 	q2::inwork; 18037,9195 17549,9529
 EOF
      },
+     { from  => 1698603462,
+       until => $isodate2epoch->("2023-11-03 17:00:00"),
+       text  => 'Kochstr.: Bauarbeiten zwischen Friedrichstr. und Wilhelmstr., evtl. sind auch Radfahrer betroffen, 30.10.2023 07 Uhr bis 03.11.2023 17 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: bvg2021:m29#BVG331120_0 (ab 30.10.2023)
+#: source_id: viz2021:13.390149,52.506745,30.10.2023,07:00 (nur Kfz-Verkehr bis 03.11.2023)
+#: by: https://viz.berlin.de/2023/10/verkehrsvorschau/ (bis 3.11.2023, nur Kfz-Verkehr)
+#: next_check: 2023-10-30
+Kochstr.	q4; 9492,11209 9341,11186 9196,11165
+EOF
+     }
     );

@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: RUNGE-2023
-#: last_checked: 2023-10-27
+#: last_checked: 2023-10-29
 #: next_check: 2023-11-23
 #: valid: -20231123
 Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork 11291,11876
@@ -297,7 +297,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2023-10-22 (architektur-urbanistik)
+#: last_checked: 2023-10-29
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -1221,7 +1221,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2023-09-29
+#: last_checked: 2023-10-29
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -1703,6 +1703,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7970,17087
 	X 8899,15147
 	X 6065,10129
+#: off: Sunday (seen 2023-10-29 12:43)
 	X 6217,10099
 	X 10308,12859
 	X 11139,13008
@@ -3662,8 +3663,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 17628,5865
 # REMOVED (nun offiziell) --- #: next_check_id: HAUPTSTRAMPEL-2018 --- #: XXX eigentlich zwischen den Einmündungen Helmstr. und Vorbergstr., aber das wird sich sowieso noch ändern --- #: by: http://www.berliner-woche.de/schoeneberg/verkehr/ampelanlage-installiert-d138694.html --- #: XXX Gesamtmaßnahme bis Ende Mai 2018 (kann nicht gehalten werden); es werden zwei Ampeln entstehen --- #: source_id: 2147342243 --- #: source_id: 2147342260 --- #: last_checked: 2018-05-30
 #: note: Anforderungsampel
+#: note: siehe auch handicap_directed-Eintrag
 	F 7388,9199
 #: note: Anforderungsampel
+#: note: siehe auch handicap_directed-Eintrag
 	F 7354,9135
 #: note: Anforderungsampel
 	F 1485,8845
