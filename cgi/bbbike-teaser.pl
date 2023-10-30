@@ -56,7 +56,6 @@ sub teaser {
 				teaser_beta(),
 				#teaser_mapserver(),
 				#teaser_fahrradstadt(),
-				#_teaser_is_iphone() ? teaser_iphone() : (),
 				teaser_twitter(),
 			       ];
     $teasers_optional{"en"} = [],
@@ -75,7 +74,6 @@ sub teaser {
 				teaser_other_cities_tagcloud(),
 				#teaser_beta(), # XXX There's no beta version in English yet!
 				#teaser_mapserver(),
-				#_teaser_is_iphone() ? teaser_iphone() : (),
 				teaser_twitter(),
 			       ];
 
@@ -345,25 +343,6 @@ EOF
 EOF
     $teaser;
 }
-
-sub teaser_iphone {
-    my $url = "$bbbike_html/bbbike_tracks_iphone.html";
-    if ($lang eq 'en') {
-	<<EOF;
-<div class="teaser">
-  Tutorial: <a href="$url">Load BBBike tracks to iPhone</a> (sorry, German only)
-</div>
-EOF
-    } else {
-	<<EOF;
-<div class="teaser">
-  Anleitung: <a href="$url">BBBike-Tracks unterwegs auf das iPhone laden</a>
-</div>
-EOF
-    }
-}
-
-sub _teaser_is_iphone { $ENV{HTTP_USER_AGENT} =~ m{\biPhone\b} }
 
 sub teaser_maintenance {
     my $maintenance_end = 1622530800; # 2021-06-01 09:00:00
