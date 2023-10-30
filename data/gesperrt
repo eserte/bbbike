@@ -1487,9 +1487,9 @@ Straßenbahnhaltestelle	3nocross::ignrte 9225,13389 9293,13366 9371,13333
 Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9225,13389 9293,13366 9312,13388
 Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9312,13388 9293,13366 9371,13333
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
-Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16563,7012
+Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16627,6945 16563,7012
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
-Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16563,7012
+Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16627,6945
 Mittelstreifen	3nocross::ignrte 17293,6230 17216,6308 16909,6628 16838,6708
 Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16909,6628
 Schnellerstr. -> Rixdorfer Str.: Mittelstreifen	3::igndisp 17293,6230 17216,6308 17160,6239

@@ -203,6 +203,8 @@ Erich-Kurz-Str. -> Am Tierpark: Z-Übergang nördlich der Einmündung	DH:h=q4,65 18
 Am Tierpark -> Otto-Schmirgal-Str.: Z-Übergang	DH:h=q4,25 18585,10278 18554,10354 18512,10337
 Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,10354 18446,10620
 Detmolder Str.: Umweg über Blissestr.	DH:len=160 4873,8007 4786,8007 4711,8013
-Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
-Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 16720,6845 16677,6892
+Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20:len=30 16563,7012 16627,6945 16677,6892
+Marggrafbrücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=40:len=30 16720,6845 16747,6813 16805,6747
+Güldenhofer Ufer - Köpenicker Landstr.: Umweg zurück zur Ampel	DH:t=20:len=175:h=q3,75 16630,6800 16677,6892 16720,6845
+Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,6910 16747,6813 16805,6747
 Alt-Friedrichsfelde: Umweg über einen asphaltierten Notweg, kurvig	DH:len=34:h=q1,341 19092,11776 19389,11761

@@ -144,7 +144,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-30
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
@@ -227,7 +227,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-30
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -270,25 +270,6 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-07-08 vvv --- #: next_check: 2020-07-10 vvv --- #: valid: 20190319-20200717 vvv --- #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12) ---	X::inwork 14103,10489 --- #: note: anstelle des Zebrastreifens ---	F::inwork 14490,10610 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (Zebrastreifen wiederhergestellt) --- #: next_check_id: MAUERPARK-2019 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/bis-sommer-muessen-sich-autofahrer-auf-staus-und-umwege-einstellen_a197767 --- #: by: https://www.tagesspiegel.de/berlin/gleimtunnel-am-berliner-mauerpark-oeffnet-wieder-verbindung-zwischen-prenzlauer-berg-und-gesundbrunnen-bald-wieder-frei/25588796.html (schon am 2. April 2020) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/der-gleimtunnel-wird-freigegeben_a258217 (vor Ostern 2020) --- #: by: https://viz.berlin.de/2020/04/gleimtunnel-prenzlauer-berg-gesundbrunnen-verkehrsfreigabe/ (die Ampel ist gewandert) --- #: source_id: 2147342588 --- #: source_id: 2147343616 --- #: source_id: 2147343616 (bis Ende April 2020) --- #: XXX bis wann bleibt die Ampel? --- #: last_checked: 2020-04-03 --- #: priority: #B --- # REMOVED #: valid: -20200430 ---	F::inwork 10170,15659
 # REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/pressestelle/04-1_vzp_pilgramer-strasse_ba-3_a-2.pdf --- #: also_indoor: traffic --- #: last_checked: 2020-08-15 --- #: next_check: 2021-01-05 --- #: valid: -20210105 ---	X::inwork 25143,10961
-# 
-#: next_check_id: HENNIGSDORFER-2019
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6331
-#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/betriebsbereite-ampel-an-der-schulzendorfer-strasse-bleibt-aus_a183254
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6456
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6842
-#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/chaos-ist-geblieben_a205846
-#: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Zebrastreifen)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8161
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Erwähnung des Zebrastreifens, 2022 unwahrscheinlich)
-#: by: https://viz.berlin.de/2022/04/henningsdorfer-str/
-#: by: https://viz.berlin.de/wp-content/uploads/Schulzendorfer-Str.jpg
-#: source_id: viz2021:13.217617,52.61126,19.04.2022,08:00
-#: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
-#: osm_watch: node id="5469708920" version="1"
-#: last_checked: 2022-06-12
-#: check_frequency: 90d
-	X::inwork -1538,22800
 # REMOVED --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1194601.php (Bauarbeiten für den Kreisverkehr) --- #: by: https://berliner-abendblatt.de/2022/04/08/umbau-fuer-kreisverkehr-kreuzung-wird-voll-gesperrt/ --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/kreuzungsbereich-wegen-asphaltarbeiten-gesperrt_a342023 --- #: XXX später wird hier ein Kreisverkehr entstehen --- #: last_checked: 2021-09-04 --- #: check_frequency: 180d --- #: next_check: 2022-11-15 ---	X::inwork -2508,22627
 # 
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019
@@ -3805,13 +3786,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-30
 #: check_frequency: 120d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="15"
 #: note: Anforderungsampel
-#: last_checked: 2023-09-24
+#: last_checked: 2023-10-30
 #: check_frequency: 120d
 	F::inwork 17747,5452
 # 
