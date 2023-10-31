@@ -5051,20 +5051,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1375439.php
-#: by: https://www.berliner-woche.de/schmargendorf/c-bauen/fahrbahn-wird-saniert_a396928
-#: source_id: viz2021:13.27859,52.47409,16.10.2023,06:00 (bis 31.10.2023)
-# REMOVED --- #: next_check_id: MESSELSTR-2022 --- #: also_indoor: traffic (H)
-# REMOVED (zwischen Pücklerstr. und Heydenstr.) ---	q4::inwork 2397,6960 2304,7059 2139,7239
-	q4::inwork 1956,7453 2017,7412 2139,7239
-',
-         'from' => 1697478274,
-         'id' => 3499,
-         'text' => 'Messelstr.: zwischen Clayallee und Heydenstr. Bauarbeiten, Sperrung der Fahrbahn, bis 31.10.2023 16:00',
-         'type' => 'handicap',
-         'until' => 1698764400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
@@ -5763,7 +5750,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (B,H) vvv
+#: also_indoor: traffic (B,H,G) vvv
 #: last_checked: 2023-10-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
@@ -6118,8 +6105,10 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        {
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
+#: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
 #: last_checked: 2023-10-21 vvv
 #: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
@@ -6132,10 +6121,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 ',
          'from' => 1690063200,
          'id' => 3725,
-         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
-         'text' => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023 (Stand Mitte Oktober 2023: noch immer gesperrt)',
+         'text' => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Mitte Oktober 2023: noch immer gesperrt)',
          'type' => 'gesperrt',
-         'until' => 1698771600
+         'until' => 1701385199
        },
        undef,
        {
@@ -6144,6 +6132,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch: way id="46907541" version="14"
+#: osm_watch: note 3951936 1
+#: osm_watch: note 3947464 1
+#: osm_watch: note 3631207 1
 #: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
@@ -6151,7 +6142,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab Novemeber 2023 bis Juni 2024 gesperrt sein',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Juni 2024 gesperrt sein',
          'type' => 'gesperrt',
          'until' => 1719763200
        },
@@ -6989,10 +6980,12 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2023)
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2024)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
 #: by: https://www.youtube.com/watch?v=m7OQ0dpU-FI
+#: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
+#: note: next_check ist hier der erste Ende-Termin (VIZ)
 #: last_checked: 2023-10-28
 #: check_frequency: 60d
 #: next_check: 2024-04-11
@@ -7000,9 +6993,9 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 ',
          'from' => undef,
          'id' => 3901,
-         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis 11.04.2024',
+         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Ende Mai 2024',
          'type' => 'handicap',
-         'until' => 1712872799
+         'until' => 1716847199
        },
        {
          'data' => '	q4::inwork 22917,30635 22770,30813 22690,30909
@@ -7323,14 +7316,14 @@ bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
        },
        undef,
        {
-         'data' => '	q4::inwork; 12063,21991 12122,22185 12165,22323
+         'data' => '#: source_id: viz2021:13.432538,52.605013,10.10.2023,07:00 (bis 4.11.2023) (bis 24.11.2023)
+	q4::inwork; 12063,21991 12122,22185 12165,22323
 ',
          'from' => 1696827600,
          'id' => 3936,
-         'source_id' => 'viz2021:13.432538,52.605013,10.10.2023,07:00',
-         'text' => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 04.11.2023 17:00',
+         'text' => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 24.11.2023 17:00',
          'type' => 'handicap',
-         'until' => 1699113600
+         'until' => 1700841600
        },
        {
          'data' => '#: next_check_id: U6-2022

@@ -34780,7 +34780,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1375439.php
 #: by: https://www.berliner-woche.de/schmargendorf/c-bauen/fahrbahn-wird-saniert_a396928
-#: source_id: viz2021:13.27859,52.47409,16.10.2023,06:00 (bis 31.10.2023)
+#: source_id: viz2021:13.27859,52.47409,16.10.2023,06:00 (bis 31.10.2023) (inaktiv)
 # REMOVED --- #: next_check_id: MESSELSTR-2022 --- #: also_indoor: traffic (H)
 # REMOVED (zwischen Pücklerstr. und Heydenstr.) ---	q4::inwork 2397,6960 2304,7059 2139,7239
 	q4::inwork 1956,7453 2017,7412 2139,7239
@@ -37047,7 +37047,7 @@ EOF
        data  => <<EOF,
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (B,H) vvv
+#: also_indoor: traffic (B,H,G) vvv
 #: last_checked: 2023-10-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
@@ -38075,14 +38075,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-07-23 00:00:00"), # 1676329200, # 2023-02-14 00:00
-       until => $isodate2epoch->("2023-10-31 18:00:00"), # undef, # 1681595999, # 2023-04-15 23:59
-       text  => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023 (Stand Mitte Oktober 2023: noch immer gesperrt)',
+       until => $isodate2epoch->("2023-11-30 23:59:59"), # $isodate2epoch->("2023-10-31 18:00:00"), # undef, # 1681595999, # 2023-04-15 23:59
+       text  => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Mitte Oktober 2023: noch immer gesperrt)',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php',
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
+#: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
 #: last_checked: 2023-10-21 vvv
 #: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
@@ -38108,7 +38109,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-10-15 00:00:00"), # 1677452400, # 2023-02-27 00:00
        until => $isodate2epoch->("2024-06-30 18:00:00"), # 1735685999, # 2024-12-31 23:59
-       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab Novemeber 2023 bis Juni 2024 gesperrt sein', # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Juni 2024 gesperrt sein', # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: TELTOWKANALUFERWEG-2023
@@ -38116,6 +38117,9 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch: way id="46907541" version="14"
+#: osm_watch: note 3951936 1
+#: osm_watch: note 3947464 1
+#: osm_watch: note 3631207 1
 #: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
@@ -40348,14 +40352,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-04-11 23:59:59"),
-       text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis 11.04.2024',
+       until => $isodate2epoch->("2024-05-27 23:59:59"),
+       text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Ende Mai 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2023)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2024)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
 #: by: https://www.youtube.com/watch?v=m7OQ0dpU-FI
+#: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
+#: note: next_check ist hier der erste Ende-Termin (VIZ)
 #: last_checked: 2023-10-28
 #: check_frequency: 60d
 #: next_check: 2024-04-11
@@ -40744,11 +40750,11 @@ EOF
 EOF
      },
      { from  => 1696827600, # 2023-10-09 07:00
-       until => 1699113600, # 2023-11-04 17:00
-       text  => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 04.11.2023 17:00',
+       until => $isodate2epoch->("2023-11-24 17:00:00"), # 1699113600, # 2023-11-04 17:00
+       text  => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 24.11.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.432538,52.605013,10.10.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.432538,52.605013,10.10.2023,07:00 (bis 4.11.2023) (bis 24.11.2023)
 	q4::inwork; 12063,21991 12122,22185 12165,22323
 EOF
      },
