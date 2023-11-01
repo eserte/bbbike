@@ -531,11 +531,13 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1153703.php (digitale Sprechstunde)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6196 (Ankauf öffentlicher Verkehrsflächen)
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/durchgangsverkehr-weicht-auf-anwohnerstrassen-aus_a372317
+#: by: https://www.tagesspiegel.de/berlin/bezirke/radweg-gestrichen-mehr-platz-fur-lkw-initiative-sieht-umplanung-als-skandal-10703227.html (keine Radstreifen? dafür Nordendstraße als Fahrradstraße?)
+#: by[nocache]: https://archive.ph/3iMDG
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: source_id: viz2021:13.388829,52.59131,05.01.2021,07:00 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: osm_watch: way id="36954368" version="16"
 #: last_checked: 2023-10-08
-#: check_frequency: 90d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-10-29
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
@@ -1429,7 +1431,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: source_id: viz2021:13.50019,52.56161,24.01.2023,15:30 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.497383,52.560544,25.11.2022,10:00 (Kanalarbeiten bis 25.1.2023) (bis 21.4.2023) (inaktiv) (bis 4.9.2023) (bis 15.9.2023) (bis 29.9.2023) (bis 20.10.2023) (inaktiv)
 #: source_id: viz2021:13.495712,52.559878,04.09.2023,07:00 (Leitungsarbeiten bis 06.10.2023) (bis 09.10.2023) (inaktiv)
-#: osm_watch: way id="40520565" version="46"
+#: osm_watch: way id="40520565" version="47"
 #: osm_watch: way id="51317007" version="34"
 #: osm_watch: way id="624116238" version="14"
 #: last_checked: 2023-10-06
@@ -2879,6 +2881,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/karl-marx-strasse-bauarbeiten-zwischen-erk-und-flughafenstrasse-gehen-los_a317172
 #: by: https://deine-laeden-brauchen-dich.de/einblicke/die-baustelle-rueckt-weiter-ins-zentrum-und-geht-in-die-winterpause/ (ab Februar 2022 weitere Bauarbeiten zwischen Fuldastr. und Weichselstr., zwischen Fuldastr. und Erkstr. noch bis Herbst 2022)
 #: by: https://berliner-abendblatt.de/2022/10/10/karl-marx-strasse-bauarbeiten-dauern-bis-2024/
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (evtl. Komplettsperrung in Höhe Weichselstr./Flughafenstr. ab 20.11.2023?)
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv)
@@ -4111,6 +4114,7 @@ Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 967
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11627 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11656 (Einwohneranfrage)
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/der-umbau-der-schildower-strasse-soll-zwei-jahre-dauern_a395539 (ab Frühjahr 2024, keine Fahrradstraße, vermutlich auch keine Radwege mehr)
+#: by: https://www.morgenpost.de/bezirke/reinickendorf/article239923403/Verkehrsplaene-loesen-Entsetzen-im-Waldseeviertel-aus.html
 #: XXX wird es während der Bauarbeiten Einschränkungen geben?
 #: also_indoor: traffic (none)
 #: last_checked: 2023-09-12 (indoor)
@@ -4140,8 +4144,8 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: XXX im Neubaubereich neues Betonpflaster
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2023-10-29
-#: check_frequency: 7d
+#: last_checked: 2023-11-01
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-10-31
 Wriezener Park: Umbauarbeiten, einige Wege sind zwischenzeitlich gesperrt	?::inwork 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
 # 
@@ -5219,7 +5223,7 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::proj
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/umgestaltung-zur-fahrradstrasse_a395575
 #: XXX wird die Vorfahrtsregelung geändert?
 #: XXX Laut infravelo zwei Bauphasen: nördlich Renée-Sintenis-Platz im ersten Halbjahr 2023, südlich im zweiten Halbjahr 2023
-#: osm_watch: way id="83030876" version="21"
+#: osm_watch: way id="83030876" version="22"
 #: osm_watch: way id="133988476" version="19"
 #: last_checked: 2023-10-21 (mapillary)
 #: check_frequency: 90d
@@ -6590,7 +6594,7 @@ Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5152&date=20210720 (Zwischenbericht)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Erwähnung)
 #: source_id: 2147345990 (Fahrbahnsanierungsarbeiten, vermutlich wird nichts für die Radverkehrsanlage gemacht) (möglicherweise inaktiv)
-#: osm_watch: way id="119201840" version="25"
+#: osm_watch: way id="119201840" version="26"
 #: osm_watch: way id="190701274" version="13"
 #: osm_watch: way id="949605667" version="4"
 #: last_checked: 2023-10-18 (mapillary)
@@ -6905,7 +6909,7 @@ Strausberger Platz: Arbeiten an der Radverkehrsanlage?	?::inwork; 12028,12519 12
 #: next_check: 2023-11-30 vvv
 Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12114,12546 12134,12540 12352,12509
 # REMOVED (realisiert) --- Karl-Marx-Allee: Radweg zwischen Andreasstr. und Koppenstr. wird auf 3m verbreitert	?::inwork; 12352,12509 12592,12472
-# REMOVED (realisiert) --- #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) --- Karl-Marx-Allee: Radweg zwischen Andreasstr. und Koppenstr. wird auf 3m verbreitert	?::inwork; 12592,12472 12603,12470 12816,12439
+# REMOVED (realisiert) --- #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) --- Karl-Marx-Allee: Radweg zwischen Andreasstr. und Koppenstr. wird auf 3m verbreitert	?::inwork; 12592,12472 12603,12470 12816,12439
 # REMOVED (hier bereits realisiert) --- Karl-Marx-Allee: neue Radspur zwischen Koppenstr. und Straße der Pariser Kommune	?::inwork; 12816,12439 12848,12434 12878,12430
 #: next_check ^^^
 #: check_frequency ^^^
@@ -9814,11 +9818,11 @@ Gartenfeld: wird es hier eine Verbindung zum neuen Wohngebiet geben?	?::projecte
 #: by: https://m.pnn.de/potsdam/stadtentwicklung-baustart-fuer-die-speicherstadt/25038608.html?utm_referrer=https%3A%2F%2Fwww.google.co.th%2F#layer (Fertigstellung 2024 oder 2025, Stand 2019)
 #: by: https://www.deutsches-architekturforum.de/thread/226-potsdam-aktuelles-sonstige-meldungen-und-projekte/?postID=643093#post643093
 #: by: https://www.miru-potsdam.de/
+#: by: https://www.deutsches-architekturforum.de/thread/14824-potsdam-speicherstadt-und-havel-quartier/?postID=750599#post750599
 #: XXX fehlen in Potsdam.coords.data
 #: XXX - An der Lokremise - PLZ=14473
 #: XXX - Am Magazin - PLZ=14473
-#: XXX außerdem gibt es hier eine Fortsetzung der Straße "Am Speicher"
-#: XXX laut osm fertig
+#: XXX laut osm teilweise fertig
 # REMOVED --- #: osm_watch: relation id="10142363" version="2"
 #: osm_watch: way id="733725947" version="9" brb
 weitere Straßen in der Speicherstadt: genaue Lage, Qualität?	? -12656,-2076 -12647,-2114 -12547,-2070 -12643,-2073
@@ -11673,12 +11677,12 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualität?	? -15825,-166 -16108
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
 #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
 #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso)
-#: last_checked: 2022-05-08 vvv
-#: check_frequency: 360d vvv
+#: by: https://www.deutsches-architekturforum.de/thread/15208-potsdam-verkehrsprojekte-und-wege-stra%C3%9Fe-schiene-wasser-rad-und-fu%C3%9Fwege/?postID=750593#post750593 (fertig, aber noch nicht offiziell freigegeben)
+#: last_checked: 2023-10-31 (daf) vvv
+#: check_frequency: 30d vvv
 #: XXX hier existiert vermutlich schon ein Geh/Radweg, laut osm Verbundsteinpflaster
-# REMOVED --- #: osm_watch: way id="313404756" version="4" brb
 # REMOVED --- Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12783,-2269 -12781,-2376
-#: osm_watch: way id="911461112" version="2"
+#: osm_watch: way id="1178419456" version="3"
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12831,-2439 -12906,-2537 -13156,-2702
 #: check_frequency ^^^
 #: last_checked ^^^

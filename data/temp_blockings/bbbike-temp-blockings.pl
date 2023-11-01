@@ -17366,12 +17366,12 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-01 00:00:00"),
-       until => $isodate2epoch->("2022-12-04 23:59:59"),
+     { from  => $isodate2epoch->("2023-12-07 00:00:00"),
+       until => $isodate2epoch->("2023-12-10 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]], # findet 2020 wegen Corona nicht statt
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (voraussichtlich 02.12.2022 - 04.12.2022)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (08.12.2023 - 10.12.2023)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
@@ -23084,18 +23084,18 @@ EOF
 	2::inwork 20653,7289 20603,7189 20640,7122 20722,6971 21239,6063 21243,6046 21303,5826
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-16 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
-       until => $isodate2epoch->("2022-12-18 21:00:00"), # 1386525600, # 2013-12-08 19:00
+     { from  => $isodate2epoch->("2023-12-15 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
+       until => $isodate2epoch->("2023-12-17 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]],
        #recurrence_prewarn_days => -19,
-       text  => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 17.12.2022 und 18.12.2022', # note: früher "Rudower Adventsmeile"
+       text  => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 16.12.2023 und 17.12.2023', # note: früher "Rudower Adventsmeile"
        type  => 'gesperrt',
        source_id => 'IM_020883',
        data  => <<EOF,
 #: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
 #: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
-#: source_id: 2147345257
+#: source_id: 2147345257 (inaktiv)
 # note: früher Alt-Rudow zwischen Köpenicker Str. und Krokusstr.:	2::xmas 16849,1437 16805,1488 16610,1715
 	2::xmas 16610,1715 16767,1831
 EOF
@@ -30469,15 +30469,15 @@ EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2023 (Stand Ende Oktober 2023: Hauptverbindungsweg ist noch immer gesperrt)',
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Anfang November 2023: Hauptverbindungsweg ist noch immer gesperrt)', # früher: voraussichtlich bis Oktober 2023
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2023-10-29 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2023-11-01 vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
 	2::inwork 13239,11567 13261,11572 13274,11585
@@ -37854,8 +37854,9 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=747210#post747210
-#: note: osm watch zu Bauarbeiten am Nachbargrundstück (ehemals Klinik)
-#: osm_watch: way id="156800019" version="5"
+#: note: osm watches zu Bauarbeiten an den Nachbargrundstücken (ehemals Klinik + building:industrial)
+#: osm_watch: way id="156800019" version="6"
+#: osm_watch: way id="1219773996" version="1"
 #: also_indoor: traffic (none)
 #: last_checked: 2023-10-08
 #: check_frequency: 30d
@@ -38119,7 +38120,7 @@ EOF
 #: osm_watch: way id="46907541" version="14"
 #: osm_watch: note 3951936 1
 #: osm_watch: note 3947464 1
-#: osm_watch: note 3631207 1
+#: osm_watch: note 3631207 2
 #: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
@@ -40196,12 +40197,12 @@ EOF
 EOF
      },
      { from  => 1691899200, # 2023-08-13 06:00
-       until => $isodate2epoch->("2023-12-08 17:00:00"), # 1696715940, # 2023-10-07 23:59
-       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 08.12.2023 17:00',
+       until => $isodate2epoch->("2023-11-06 17:00:00"), # 1696715940, # 2023-10-07 23:59
+       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 06.11.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
 EOF
@@ -40731,13 +40732,12 @@ EOF
        data  => <<EOF,
 #: next_check_id: HANDJERY-2023
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1372587.php
-#: XXX Baustelle wandert
-#: next_check: 2023-11-01
+# REMOVED --- #: XXX Baustelle wandert --- #: next_check: 2023-11-01
 # bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,7718 5636,7685 5635,7660
 # bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
 # bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
-bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
-# bis Bundesallee (02.-04.11.2023)	q4::inwork 5565,7024 5478,6959 5357,6932
+# bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
+bis Bundesallee (02.-04.11.2023)	q4::inwork 5565,7024 5478,6959 5357,6932
 EOF
      },
      { from  => 1696741200, # 2023-10-08 07:00
@@ -40904,7 +40904,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
 EOF
      },
      { from  => 1698503124, # 2023-10-28 16:25
-       until => 1699311600, # 2023-11-07 00:00
+       until => $isodate2epoch->("2023-11-06 12:00:00"),
        text  => 'Ehrlichstr.: Gleiserneuerung, Fahrbahn Richtung Westen gesperrt, keine offizielle Gehwegfreigabe für Radfahrer, bis 6.11.2023',
        type  => 'handicap',
        data  => <<EOF,
