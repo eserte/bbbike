@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2001,2019 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2019,2023 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -10,7 +10,7 @@
 
 package Strassen::MultiStrassen;
 
-$VERSION = '1.19';
+$VERSION = '1.20';
 
 package MultiStrassen;
 use strict;
@@ -23,7 +23,18 @@ use vars qw(@ISA);
 # of filenames (which are used as the argument for Strassen->new())
 # and constructs a new MultiStrassen object, which isa-Strassen.
 sub new {
-    my($class, @obj) = @_;
+    my $class = shift;
+    my $opts;
+    if (ref $_[0] eq 'HASH' && !UNIVERSAL::isa($_[0], 'Strassen')) {
+	$opts = shift;
+    } else {
+	$opts = {};
+    }
+    my @obj = @_;
+
+    my $on_globdir_mismatches = delete $opts->{on_globdir_mismatches} || 'silent';
+    die "on_globdir_mismatches can be only 'silent' (default), 'warn' or 'die'" if $on_globdir_mismatches !~ /^(silent|warn|die)$/;
+    die "Unhandled options: " . join(" ", %$opts) if %$opts;
 
     if (@obj == 1 && UNIVERSAL::isa($obj[0], 'Strassen')) {
 	return $obj[0];
@@ -36,6 +47,9 @@ sub new {
     $self->{SourcePos} = {};
     $self->{SubObj} = [];
     $self->{GlobalDirectives} = {};
+    if (Strassen::_has_tie_ixhash()) {
+	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
+    }
 
     for (@obj) {
 	if (!UNIVERSAL::isa($_, 'Strassen')) {
@@ -75,6 +89,44 @@ sub new {
 	    $first_coordsys = $this_coordsys;
 	} elsif ($this_coordsys ne $first_coordsys) {
 	    warn "WARN: Mismatching coord systems. First was '$first_coordsys', this one (" . $subobj->id . ") is '$this_coordsys'.\nExpect problems!\n";
+	}
+    }
+
+    # other global directives
+    {
+	my %new_global_directives;
+	if (Strassen::_has_tie_ixhash()) {
+	    tie %new_global_directives, 'Tie::IxHash';
+	}
+	my %conflicting_warn;
+	for my $subobj (@{ $self->{SubObj} }) {
+	    my $global_dirs = $subobj->get_global_directives;
+	    if ($global_dirs) {
+		for my $k (keys %$global_dirs) {
+		    next if $k eq 'encoding' || $k eq 'map'; # handled already above
+		    if (!$new_global_directives{$k}) {
+			$new_global_directives{$k} = $global_dirs->{$k};
+		    } else {
+			# XXX simple-minded comparison, but don't rely on the presence of Data::Compare or similar
+			my $first_value = "@{ $new_global_directives{$k} }";
+			my $this_value  = "@{ $global_dirs->{$k} }";
+			if ($first_value eq $this_value) {
+			    # probably the same
+			} elsif ($on_globdir_mismatches ne 'silent' && !$conflicting_warn{$k}) {
+			    my $msg = "Global directive $k with differing values ('$first_value' vs '$this_value')";
+			    if ($on_globdir_mismatches eq 'die') {
+				die "ERROR: $msg.\n";
+			    } else {
+				warn "WARN: $msg, use the first one.\n";
+				$conflicting_warn{$k} = 1;
+			    }
+			}
+		    }
+		}
+	    }
+	}
+	for my $k (keys %new_global_directives) {
+	    $self->{GlobalDirectives}->{$k} = $new_global_directives{$k};
 	}
     }
 
