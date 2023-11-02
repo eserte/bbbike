@@ -33,6 +33,7 @@ my $tempdir = tempdir("strassen-multistrassen-globdirs-XXXXXXXX", TMPDIR => 1, C
 
 {
     open my $ofh, ">", "$tempdir/0.bbd";
+    binmode $ofh;
     print $ofh <<EOF;
 XYZ	X -1,-1 -2,-2
 EOF
@@ -41,6 +42,7 @@ EOF
 
 {
     open my $ofh, ">", "$tempdir/1.bbd";
+    binmode $ofh;
     print $ofh <<EOF;
 #: encoding: utf-8
 #: map: polar
@@ -54,6 +56,7 @@ EOF
 
 {
     open my $ofh, ">", "$tempdir/2.bbd";
+    binmode $ofh;
     print $ofh <<EOF;
 #: encoding: utf-8
 #: map: bbbike
@@ -65,6 +68,7 @@ EOF
 
 {
     open my $ofh, ">", "$tempdir/3.bbd";
+    binmode $ofh;
     print $ofh <<EOF;
 #: encoding: utf-8
 #: map: polar
