@@ -1843,6 +1843,8 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: next_check_id: EUROPACITY-2015
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
+#: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=750664#post750664
+#: by: https://www.nachhaltige-erneuerung.berlin/tiergarten-nordring-heidestrasse/otto-weidt-platz
 #: osm_watch: way id="1010731431" version="7"
 #: osm_watch: way id="642581102" version="8"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
@@ -6843,12 +6845,12 @@ Marzahner Str.	N 17940,15771 18173,15778 18576,15788 18623,15587 18422,15583 181
 Wassergrundstr.	N 18623,15587 18702,15248
 Plauener Str.	NH 17940,15771 17953,15221 17959,15084 17902,15039 17829,15015
 Plauener Str.	N 17829,15015 17762,14993 17718,14979 17638,14951
-Plauener Str.	N 17558,14840 17531,14923 17475,14912 17340,14898 17236,14882 17117,14885 16918,14901 16783,14927
+Plauener Str.	N 17558,14840 17531,14923 17475,14912 17340,14898 17236,14882 17117,14885 16917,14905 16784,14922
 Plauener Str. [zur Küllstedter Str.]	N 17340,14898 17352,14827
 Schalkauer Str.	N 17475,14912 17507,14693 17517,14606 17526,14531
 #: note: wird vielleicht für den Autoverkehr geöffnet, wenn das Bauprojekt Weiße Taube fertiggestellt ist
 Schalkauer Str.	NN 17526,14531 17533,14484
-Schleizer Str.	N 16799,15007 17231,14979 17562,14992 17608,15010
+Schleizer Str.	N 16802,15007 17231,14979 17562,14992 17608,15010
 #: note: Komplex ArendsCarrée vvv 
 #: note: Privatstraße vvv
 Agnethaweg	N 17221,15181 17254,15183 17310,15186 17336,15187
@@ -6870,7 +6872,7 @@ Hofheimer Str.	N 17579,14777 17600,14713
 Küllstedter Str.	N 17363,14760 17377,14678 17392,14591
 #: note: wird vielleicht für den Autoverkehr geöffnet, wenn das Bauprojekt Weiße Taube fertiggestellt ist
 Küllstedter Str.	NN 17392,14591 17400,14511
-Joachimsthaler Str. (Alt-Hohenschönhausen)	N 16918,14901 16943,14785 17063,14797 17129,14804 17117,14885
+Joachimsthaler Str. (Alt-Hohenschönhausen)	N 16917,14905 16943,14785 17063,14797 17129,14804 17117,14885
 Biesenthaler Str. (Alt-Hohenschönhausen)	N 17063,14797 17074,14704 17242,14719
 Ferdinand-Schultze-Str.	NH 17848,14523 17791,14639 17745,14734 17693,14840 17638,14951 17608,15010 17432,15378 17424,15400 17405,15454 17379,15575 17370,15670 17378,15760
 Straße 109	N 17432,15378 17533,15363 17588,15355
@@ -12365,7 +12367,7 @@ Dahlwitzer Str.	H 26592,14117 26610,14049 26662,13876 26684,13794 26717,13687 26
 Markgrafenstr. (Mahlsdorf, Kaulsdorf)	N 24459,12664 24551,12614 24659,12555 24804,12481 24907,12425
 Liebenwalder Str. (Alt-Hohenschönhausen)	NH 16852,14412 16845,14461 16834,14539 16839,14676 16821,14765 16768,14849
 Heiligenstadter Str.	N 16738,14695 16839,14676
-Genslerstr.	N 16669,14438 16715,14609 16738,14695 16752,14745 16768,14849 16783,14927 16799,15007 16816,15092 16835,15188 16849,15263 16858,15300 16868,15337 16898,15453
+Genslerstr.	N 16669,14438 16715,14609 16738,14695 16750,14747 16768,14849 16784,14922 16802,15007 16816,15092 16835,15188 16849,15263 16858,15300 16868,15337 16898,15453
 Genslerstr.	N 16715,14609 16544,14593
 #: XXX_prog 16644,14401 ist wegen 3nocross notwendig!
 (Genslerstr. - Landsberger Allee)	NN 16669,14438 16665,14420 16644,14401 16632,14390
@@ -13124,6 +13126,8 @@ Rosenfelder Ring	N 18165,12091 18093,12088 17978,12084
 Rosenfelder Ring	N 17480,12003 17429,12030
 #: note: Beleuchtung existiert
 Rosenfelder Ring [Fußweg]	NN 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919 17540,11878
+#: osm.highway: service
+Rosenfelder Ring [Wohngebietsstraße]	N 17460,11961 17576,11961
 Hagelberger Str.	N 8679,9544 8774,9534 9000,9509 9283,9487
 Hornstr.	N 8779,9812 8980,9751
 Hornstr.	NN 8980,9751 9002,9731
@@ -15183,7 +15187,7 @@ Honnefer Str.	N 19299,8946 19195,9122
 Rhenser Weg	NN 19083,9062 19133,9087
 Rhenser Weg	N 19133,9087 19195,9122 19267,9201
 Buschiner Str.	N 20162,13287 20263,13271 20364,13255 20482,13241 20600,13232 20746,13209
-Neustrelitzer Str.	N 16752,14745 16668,14765 16524,14749 16443,14825 16356,14725 16282,14640
+Neustrelitzer Str.	N 16750,14747 16668,14765 16524,14749 16443,14825 16356,14725 16282,14640
 Neustrelitzer Str.	N 16447,14750 16393,14689 16356,14725 16248,14819
 #: note: Beleuchtung existiert
 (Neustrelitzer Str. - Werneuchener Str.)	NN 16443,14825 16448,14831 16541,14928

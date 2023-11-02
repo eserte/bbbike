@@ -37377,7 +37377,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-10-21
+#: last_checked: 2023-11-01 (daf)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -39147,7 +39147,7 @@ EOF
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="22"
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-02
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39475,14 +39475,13 @@ EOF
 EOF
      },
      { from  => 1687406400, # 2023-06-22 06:00
-       until => undef, # 1693494000, # 2023-08-31 17:00
-       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, vom 23.06.2023 06:00, Ende der Bauarbeiten unbekannt', # was: bis 15.10.2023 17:00, evtl. wird die Sperrung verlängert',
+       dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
+       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Januar 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv)
-#: note: laut rbb Sperrung bis 03.11.2023
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
 #: last_checked: 2023-10-29
-#: next_check: 2023-11-03
+#: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -40511,7 +40510,7 @@ EOF
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-02
 #: next_check: 2023-12-01
 	q4::inwork 16273,11113 16227,10991
 EOF
@@ -40665,11 +40664,12 @@ EOF
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
-       until => 1700064000, # 2023-11-15 17:00
-       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vom 04.10.2023 07:00 bis 15.11.2023 17:00 (Stand Mitte Oktober 2023: keine Sperrung der Ebertystr. für Radfahrer)',
+       dont_check_date => 1, until => undef, # 1700064000, # 2023-11-15 17:00
+       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vom 04.10.2023 07:00 bis 15.11.2023 17:00, evtl. auch länger (Stand Mitte Oktober 2023: keine Sperrung der Ebertystr. für Radfahrer)',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023)
+#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
+#: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Radfahrer?
 #: last_checked: 2023-10-16
 #: check_frequency: 14d
 	q4::inwork 13598,13180 13692,13221

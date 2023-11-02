@@ -63,7 +63,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-11-01 vvv
+#: last_checked: 2023-11-02 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 14475,11778
 Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964
@@ -845,10 +845,10 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="1089784266" version="2"
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2023-09-27 (mapillary)
-#: check_frequency: 120d
-# REMOVED (s.o., Fertigstellung des Bauvorhabens) --- #: next_check: 2024-12-31
-#: next_check: 2023-11-15
+#: last_checked: 2023-11-02
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 30d
+#: next_check: 2024-12-31
 #: valid: -20241231
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 # 

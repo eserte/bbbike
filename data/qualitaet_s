@@ -977,7 +977,7 @@ Genslerstr.: schadhafter Beton	Q1; 16868,15337 16858,15300
 Genslerstr.: schlechtes Kopfsteinpflaster	Q3; 16858,15300 16868,15337
 Genslerstr.: schlechtes Kopfsteinpflaster	Q3 16858,15300 16849,15263
 Genslerstr.: Kopfsteinpflaster	Q2 16849,15263 16835,15188
-Genslerstr.: Asphalt	Q0 16835,15188 16816,15092 16799,15007 16783,14927 16768,14849
+Genslerstr.: Asphalt	Q0 16835,15188 16816,15092 16802,15007 16784,14922 16768,14849
 Bahnhofstr.: Kopfsteinpflaster	Q2 16633,15753 16675,15688 16694,15658 16767,15549 16819,15495 16898,15453 16962,15440
 Pankeweg: feiner Schotter	Q1 14869,24387 14625,24215 14356,23862 14265,23759 13963,23505 13953,23497
 Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
@@ -3526,9 +3526,9 @@ Hofheimer Str.: Asphalt	Q0 17579,14777 17600,14713
 Plauener Str. [zur Küllstedter Str.]: Asphalt	Q0 17340,14898 17352,14827
 (Plauener Str. - Küllstedter Str.): Gehwegplatten, Kleinkopfsteinpflaster	Q1 17352,14827 17363,14760
 Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591 17400,14511
-Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16918,14901 16943,14785 17063,14797
+Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16917,14905 16943,14785 17063,14797
 Joachimsthaler Str. (Alt-Hohenschönhausen): Beton	Q1 17063,14797 17129,14804 17117,14885
-Schleizer Str.: Verbundsteinpflaster	Q1 16799,15007 17231,14979
+Schleizer Str.: Verbundsteinpflaster	Q1 16802,15007 17231,14979
 Schleizer Str.: Asphalt	Q0 17231,14979 17562,14992 17608,15010
 Lichtenauer Str.: Beton	Q1 16835,15188 17062,15184
 Lichtenauer Str.: Verbundsteinpflaster	Q1 17062,15184 17221,15181
@@ -8887,7 +8887,7 @@ Alt-Lankwitz: Kopfsteinpflaster	Q3 7407,3473 7419,3500
 Alt-Lankwitz: Asphalt	Q0 7419,3500 7236,3605 7012,3743
 (Landschaftspark Herzberge - Arendsweg): Verbundsteinpflaster	Q1 17267,14146 17264,14176
 Genslerstr.: Asphalt mit einigen Schäden	Q1; 16669,14438 16715,14609 16738,14695
-Genslerstr: Beton	Q0 16738,14695 16752,14745 16768,14849
+Genslerstr: Beton	Q0 16738,14695 16750,14747 16768,14849
 Genslerstr.: Asphalt	Q0 16544,14593 16715,14609
 Egon-Erwin-Kisch-Str. [Wohngebiet]: Beton	Q0 17044,18859 17053,18879 17067,19004 17068,19016
 Schweriner Ring [9-19 ungerade]: Beton	Q0 17444,19115 17259,19121
@@ -9492,7 +9492,7 @@ Rostocker Str.: Beton	Q0 17343,19000 17337,18871 17443,18858 17426,18695 17430,1
 Rostocker Str.: Beton	Q0 17456,18641 17480,18661 17511,18636
 Woldegker Str.: Beton	Q0 17511,18636 17566,18680 17589,18709 17611,18858 17596,18884 17600,18994
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Verbundsteinpflaster	Q1 17686,18172 17721,18001
-Neustrelitzer Str.: Asphalt	Q0 16752,14745 16668,14765 16524,14749
+Neustrelitzer Str.: Asphalt	Q0 16750,14747 16668,14765 16524,14749
 Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 Feuerbachstr.: Asphalt	Q0 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13736,14192 13639,14133
@@ -10900,6 +10900,7 @@ Hochkönigweg: Asphalt	Q0 10968,3130 11026,3302 11056,3412 11064,3461 11097,3657 
 Henriette-Lustig-Str.: Asphalt	Q0 21611,5119 21631,5079
 Rosenfelder Ring [Fußweg]: Steinpflaster	Q0 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919
 Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1 17547,11919 17540,11878
+Rosenfelder Ring [Wohngebietsstraße]: Beton	Q1 17460,11961 17576,11961
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
 Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7622,7986
 Quartiersweg: Asphalt	Q0 7639,7974 7622,7986 7516,8063 7498,8062
