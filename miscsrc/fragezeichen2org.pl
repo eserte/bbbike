@@ -429,8 +429,7 @@ for my $file (@files) {
 			 # NOTE: taken from MultiMap.pm
 			 my($x,$y) = $proj4_epsg2078->forward($py, $px);
 			 $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
-			 my $scale = 11; # XXX hardcoded for now
-			 my $viz_url = sprintf 'https://viz.berlin.de/site/_masterportal/berlin/index.html?Map/layerIds=basemap_raster_farbe,Verkehrslage,Baustellen_OCIT&visibility=true,true,true&transparency=40,0,0&Map/center=%d,%d&Map/zoomLevel=%d', $x, $y, $scale;
+			 my $viz_url = sprintf 'vizmap:%d,%d', $x, $y;
 			 push @extra_url_defs, ['VIZ', $viz_url, ($inactive ? "(inactive)" : ())];
 		     } else {
 			 if (!state $warned_proj4++) {
@@ -795,6 +794,7 @@ if ($expired_statistics_logfile) {
 #+OPTIONS: num:nil
 #+OPTIONS: author:nil
 #+HTML_HEAD: <style>div.outline-3 { background: #EEE; margin-top:10px; margin-bottom:10px; padding-top:2px; padding-bottom:2px; } .timestamp { color: #6e6e6e; }</style>
+#+LINK: vizmap https://viz.berlin.de/site/_masterportal/berlin/index.html?Map/layerIds=basemap_raster_farbe,Verkehrslage,Baustellen_OCIT&visibility=true,true,true&transparency=40,0,0&Map/zoomLevel=11&Map/center=%s
 # Local variables:
 # compile-command: "$compile_command"
 # End:
