@@ -18434,12 +18434,13 @@ EOF
 	q4::temp 14946,2519 15078,2647 15174,2773 15254,2926 15301,3038
 EOF
      },
-     { from  => 1276790400, # 2010-06-17 18:00
-       until => 1277085600, # 2010-06-21 04:00
-       text  => 'Melchow: L200: Gleisbauarbeiten Bahnübergang bei Melchow , 18.06.2010 18:00 Uhr bis 21.06.2010 04:00 Uhr ',
+     { from  => $isodate2epoch->("2023-11-02 07:00:00"), # 1276790400, # 2010-06-17 18:00
+       until => $isodate2epoch->("2023-11-06 20:00:00"), # 1277085600, # 2010-06-21 04:00
+       text  => 'Melchow: L200: Gleisbauarbeiten Bahnübergang bei Melchow, Sperrung, 03.11.2023 07:00 Uhr bis 06.11.2023 20:00 Uhr',
        type  => 'gesperrt',
-       source_id => '106000270',
        data  => <<EOF,
+#: source_id: 106000270 (inaktiv)
+#: source_id: 236001844 (bis 06.11.2023)
 	2::inwork 30122,41503 29553,41441 29468,41438
 EOF
      },
@@ -22954,12 +22955,13 @@ EOF
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 #: tempex: before(4th_advent,sa) - +1d
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-26 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-11-27 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2022, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2023-12-02 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-03 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 03. Dezember 2023, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11, start => "2022-01-01T00:00:00"]], # 2020 nicht!
        recurrence_prewarn_days => 14, # finden 2020 überhaupt Weihnachtsmärkte statt?
@@ -22974,9 +22976,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-03 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-12-04 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 4. Dezember 2022, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2023-12-09 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-10 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 10. Dezember 2023, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22986,9 +22988,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-10 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-12-11 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 11. Dezember 2022, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2023-12-16 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-12-17 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 17. Dezember 2023, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -23002,11 +23004,12 @@ EOF
        until => $isodate2epoch->("2022-12-18 17:00:00"),
        text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2022, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 12, start => "2022-01-01T00:00:00"]],
+       recurrences => [['yearly', days => 17, months => 12, start => "2024-01-01T00:00:00"]], # 2023 nur an drei Adventssonntagen
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 4th_advent & T12-T19
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
@@ -35077,7 +35080,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-10-11 (mapillary) vvv
+#: last_checked: 2023-11-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -35353,7 +35356,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-21
+#: last_checked: 2023-11-03
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -38110,7 +38113,8 @@ EOF
      },
      { from  => $isodate2epoch->("2023-10-15 00:00:00"), # 1677452400, # 2023-02-27 00:00
        until => $isodate2epoch->("2024-06-30 18:00:00"), # 1735685999, # 2024-12-31 23:59
-       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Juni 2024 gesperrt sein', # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Juni 2024 gesperrt sein',
+       # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: TELTOWKANALUFERWEG-2023
@@ -38118,9 +38122,9 @@ EOF
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch: way id="46907541" version="14"
-#: osm_watch: note 3951936 1
-#: osm_watch: note 3947464 1
-#: osm_watch: note 3631207 2
+#: osm_watch[closed]: note 3951936 1
+#: osm_watch[closed]: note 3947464 1
+#: osm_watch: note 3631207 5
 #: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
@@ -39204,7 +39208,7 @@ EOF
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
-#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -40177,7 +40181,7 @@ EOF
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
 #: also_indoor: traffic (H[ungenau],G,W,B)
-#: osm_watch: way id="198589911" version="16"
+#: osm_watch: way id="198589911" version="18"
 #: note: gesperrter Bereich ist etwa 90m lang
 #: last_checked: 2023-10-22
 #: next_check: 2023-11-30
@@ -40467,8 +40471,9 @@ EOF
        until => 1734649140, # 2024-12-19 23:59
        text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Sperrung der Fahrbahn, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
        type  => 'handicap',
-       source_id => 'viz2021:13.4345,52.47926,01.09.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (bis 19.12.2024)
+#: XXX genauer anschauen, ist hier noch immer gesperrt?
 	q4::inwork 12407,8177 12545,8209
 EOF
      },
@@ -40648,6 +40653,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
+#: also_indoor: traffic (W)
 #: note: Halteverbotsschilder bis Ende März 2024; nur ein Abschnitt der Fahrbahn ist gesperrt, deshalb q3
 #: last_checked: 2023-09-26
 #: next_check: 2024-03-31
@@ -40710,7 +40716,7 @@ EOF
        until => 1699020000, # 2023-11-03 15:00
        text  => 'Neuranft - Gabow: Fahrbahnsanierung, Sperrung vom 09.10.2023 - 03.11.2023',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/148',
+       source_id => 'LS/221-F/23/148', # inaktiv
        data  => <<EOF,
 	2::inwork 55756,46298 57210,45669 57800,45549
 EOF
@@ -40904,15 +40910,15 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
 EOF
      },
      { from  => 1698503124, # 2023-10-28 16:25
-       until => $isodate2epoch->("2023-11-06 12:00:00"),
-       text  => 'Ehrlichstr.: Gleiserneuerung, Fahrbahn Richtung Westen gesperrt, keine offizielle Gehwegfreigabe für Radfahrer, bis 6.11.2023',
+       until => $isodate2epoch->("2023-11-04 12:00:00"),
+       text  => 'Ehrlichstr.: Gleiserneuerung, Fahrbahn Richtung Westen gesperrt, keine offizielle Gehwegfreigabe für Radfahrer, bis 4.11.2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Gleisbauarbeiten 23.10.-5.11.2023)
 #: by: https://www.berlin-straba.de/images/Bauplan/liniennetzplam_bau/BVG_2023-10-23_T-Bau.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1376601.php (MIV: Einbahnstraße Richtung Treskowallee)
 #: source_id: bvg2021:21#BVG330473_0 (2023-10-23 bis 2023-11-05 früh)
-#: source_id: viz2021:13.518472,52.481202,23.10.2023,07:00 (hier nur Kfz-Verkehr, bis 06.11.2023)
+#: source_id: viz2021:13.518472,52.481202,23.10.2023,07:00 (hier nur Kfz-Verkehr, bis 06.11.2023) (bis 4.11.2023)
 	q4::inwork; 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589 18086,8634 18009,8687
 EOF
      },
@@ -40933,11 +40939,33 @@ EOF
        text  => 'Kochstr.: Bauarbeiten zwischen Friedrichstr. und Wilhelmstr., evtl. sind auch Radfahrer betroffen, 30.10.2023 07 Uhr bis 03.11.2023 17 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: bvg2021:m29#BVG331120_0 (ab 30.10.2023)
-#: source_id: viz2021:13.390149,52.506745,30.10.2023,07:00 (nur Kfz-Verkehr bis 03.11.2023)
+#: source_id[expired]: bvg2021:m29#BVG331120_0 (ab 30.10.2023)
+#: source_id: viz2021:13.390149,52.506745,30.10.2023,07:00 (nur Kfz-Verkehr bis 03.11.2023) (inaktiv)
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau/ (bis 3.11.2023, nur Kfz-Verkehr)
-#: next_check: 2023-10-30
+# REMOVED (nicht geprüft) --- #: next_check: 2023-10-30
 Kochstr.	q4; 9492,11209 9341,11186 9196,11165
 EOF
-     }
+     },
+     { from  => 1699031494, # 2023-11-03 18:11
+       until => 1704063599, # 2023-12-31 23:59
+       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten, voraussichtlich bis Ende 2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GOERLITZERUFER-2023
+#: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
+#: last_checked: 2023-11-03
+#: check_frequency: 30d
+#: next_check: 2023-12-31
+	q3::inwork 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
+EOF
+     },
+     { from  => $isodate2epoch->("2023-10-29 08:00:00"),
+       until => $isodate2epoch->("2023-11-10 14:00:00"),
+       text  => 'Rabindranath-Tagore-Str.: Sperrung wegen Baumschnittarbeiten, jeweils von 8 bis 14 Uhr, 30.10.2023 bis 10.11.2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/gruenau/c-verkehr/sperrung-ohne-ankuendigung_a398344
+	2::inwork 23457,35 23540,591
+EOF
+     },
     );
