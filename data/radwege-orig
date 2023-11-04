@@ -1240,7 +1240,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-11-03 vvv
+#: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1783,7 +1783,7 @@ Verbundsteinpflaster	RW1; 5328,13019 5166,13087
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="24"
 #: osm_watch: way id="458915639" version="7"
-#: last_checked: 2023-09-19 (mapillary) vvv
+#: last_checked: 2023-11-04 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2023-11-30 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -2877,7 +2877,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-11-03
+#: last_checked: 2023-11-04
 #: check_frequency: 90d
 #: next_check: 2023-12-15
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3172,10 +3172,10 @@ Verbundsteinpflasterradweg	RW1;RW1 12010,16774 12017,16734 12045,16574 12051,165
 Verbundsteinpflasterradweg	RW2;RW1 12087,16322 12097,16263 12090,16199
 	RW1;RW1 4485,10307 4360,10320 4239,10358
 	RW1;RW1 7318,759 7058,844 6966,880 6812,925 6749,940 6631,968
-Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
-Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 5585,1275 5741,1234
+Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5733,1240 5585,1275
+Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 5585,1275 5733,1240
 #: note: "Radfahrer frei" durchgekreuzt (zuletzt gesehen: 2021-09-12)
-Gehweg nicht mehr für Radfahrer frei, eng und mäßige Qualität	RW0; 5741,1234 5795,1219 5867,1199 5909,1187
+Gehweg nicht mehr für Radfahrer frei, eng und mäßige Qualität	RW0; 5733,1240 5795,1219 5867,1199 5909,1187
 Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 5909,1187 6010,1157 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6446,1033 6515,1010 6631,968
 # REMOVED --- #: next_check_id: HILDBURGHAUSER-2018 --- #: add_fragezeichen: Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben? --- #: XXX vermutlich ja
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustopp-auf-der-hildburghauser-bezirk-trennt-sich-von-baufirma_a205954#gallery=default&pid=249223 (Freigabe des Radwegs, zumindest Richtung Westen)
@@ -3262,13 +3262,19 @@ Verbundsteinpflaster	RW1; 3795,1365 3857,1235 3895,1219
 	RW4; 3766,1389 3698,1450
 	RW1; 3698,1450 3585,1541 3580,1545 3511,1601 3432,1667
 # 
-	RW1;RW1 4261,1601 4370,1445 4399,1403 4542,1188 4605,1089 4768,840 4867,690 4875,677 4937,579 5061,409
+#: note: Osdorfer Str. stadtauswärts
+Gehwegplatten, teilweise recht schmal	RW1; 4261,1601 4370,1445 4399,1403 4450,1326
+Gehwegplatten, Bord gegen Gehweg, teilweise recht schmal	RW1; 4450,1326 4542,1188 4605,1089 4768,840
+Gehwegplatten, abschnittsweise Bord gegen Gehweg, teilweise recht schmal	RW1; 4768,840 4867,690 4875,677 4937,579 5061,409
+#: note: Osdorfer Str. stadteinwärts
+	RW1; 4937,579 4875,677 4867,690 4768,840 4605,1089 4542,1188 4450,1326 4399,1403 4370,1445 4261,1601
+# 
 	RW3;RW1 6613,3320 6535,3243
 #: note: eigentlich gut, wären da nicht die zahlreichen Kleinsteinpflasterabschnitte an Ausfahrten und Auffahrten
-etwas älterer Asphalt	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5732,2578 5666,2548 5539,2497 5471,2470
+etwas älterer Asphalt	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5731,2581 5669,2556 5539,2497 5471,2470
 	RW3; 5471,2470 5413,2436 5398,2422
 asphaltiert, schmal	RW2; 5413,2436 5471,2470 5539,2497
-etwas älterer Asphalt, schmal, kaum Platz zu parkenden Autos	RW1; 5539,2497 5666,2548 5732,2578 5789,2604 5824,2621 5831,2624 5930,2671 5971,2691
+etwas älterer Asphalt, schmal, kaum Platz zu parkenden Autos	RW1; 5539,2497 5669,2556 5731,2581 5789,2604 5824,2621 5831,2624 5930,2671 5971,2691
 etwas älterer Asphalt	RW1; 5971,2691 6002,2723 6105,2826 6222,2940 6313,3028 6401,3113 6535,3243
 # REMOVED (laut http://www.panoramio.com/photo/19637894 kein Radweg) ---	RW;RW 5413,2436 5398,2422 5317,2345
 	RW1;RW1 3556,13200 3542,13203 3429,13227 3310,13253 3200,13277 3112,13296
@@ -4417,7 +4423,9 @@ Radspur hinter parkenden Autos	RW4; 5870,4992 5764,5059
 	RW3; 5764,5059 5716,5090
 #: note: allerdings fehlt an der Klingsorstr. das "Radfahrer frei"-Zusatzschild, ein Versehen?
 Busspur gilt Mo-Fr 14-18 Uhr	RW5; 5583,5179 5635,5145 5689,5109 5716,5090 5764,5059 5870,4992
-holprig und eng	RW1;RW1 5474,1940 5519,1831 5570,1712 5633,1566 5661,1499 5706,1393
+holprig und eng	RW1; 5474,1940 5519,1831 5570,1712 5633,1566 5661,1499 5706,1393
+holpriges Verbundsteinpflaster, eng	RW1; 5706,1393 5661,1499
+holprig und eng	RW1; 5661,1499 5633,1566 5570,1712 5519,1831 5474,1940
 	RW6;RW6 12050,11511 12031,11529
 #: by: Axel Kokol:
 #: confirmed by: anonymous (sort-of, he specified q4)
@@ -4898,7 +4906,8 @@ Verbundsteinpflaster	RW1; 11054,-740 11077,-714 11125,-613 11176,-489 11207,-413
 altes, holpriges Verbundsteinpflaster, Bord gegen Gehweg	RW1;RW1 8347,3382 8199,3338 8076,3272 8036,3253 7852,3183
 altes, holpriges Verbundsteinpflaster	RW1;RW1 7852,3183 7776,3163 7720,3148
 alte Gehwegplatten	RW1;RW1 7720,3148 7535,3101 7487,3089
-die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
+#: historical_note: früher: die letzten 100 Meter werden auf dem Gehweg geführt
+Fahrradschleuse	RW3; 7487,3089 7115,3003
 	RW1; 7115,3003 7487,3089
 Grünbeschichtung	RW3;RW3 13891,7107 13928,7106 13970,7105 14011,7103
 Grünbeschichtung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
@@ -8276,7 +8285,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2023-08-05 vvv
+#: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -8285,8 +8294,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680188" version="24"
-#: osm_watch: way id="28680187" version="20"
-provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144
+# REMOVED --- #: osm_watch: way id="28680187" version="20"
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 # REMOVED (hier realisiert) --- #: osm_watch: way id="30958674" version="23"
 #: osm_watch: way id="28680189" version="21"
@@ -8301,6 +8309,8 @@ provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 917
 #: priority ^^^
 #: XXX ^^^
 #: note: Mariendorfer Damm Richtung Süden
+abschnittsweise Poller	RW4; 9294,4536 9310,4407
+	RW4; 9310,4407 9333,4229 9346,4144
 #: note: Leitboys hören etwa 80m vor der Kreuzung auf
 Leitboys	RW4; 9346,4144 9375,4022 9426,3797
 #: note: Mariendorfer Damm Richtung Norden
@@ -8378,7 +8388,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
-#: last_checked: 2023-09-19 (mapillary) vvv
+#: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d
 #: next_check: 2023-12-15 vvv
 # REMOVED --- #: next_check: 2024-01-01
@@ -8592,7 +8602,7 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: durchgehende Gelbmarkierung, keine Radwegschilder; Richtung Osten: durchgängige niedrige Protektion
-#: last_checked: 2023-11-03 vvv
+#: last_checked: 2023-11-04 vvv
 #: next_check: 2023-11-29 vvv
 provisorische Radspur	RW3; 14134,11272 13970,11366 13888,11405 13711,11458 13588,11490
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075

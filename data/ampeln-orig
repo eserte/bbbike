@@ -483,7 +483,7 @@ Gegenverkehrsregelung	X::inwork 18767,-1343
 #: related antidromic vvv
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:30) vvv
 #: note: mittlerweile auch am Wochenende und an Feiertagen ausgeschaltet, gesehen: 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50), 2023-10-15 (So) vormittags und abends
-#: note: nicht ausgeschaltet am Wochenende: 2023-10-21 (Sa) 12:40 (zu früh?)
+#: note: nicht ausgeschaltet am Wochenende: 2023-10-21 (Sa) 12:40 (zu früh?), 2023-11-04 (Sa) 11:34
 	X 11089,9751
 #: note: vermutlich am Wochenende und an Feiertagen ausgeschaltet, gesehen: 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50
 	X 11141,9732
@@ -2293,6 +2293,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7235,2542
 	X 7390,2021
 	X 7539,1529
+#: XXX_prog gilt nicht für westwärts fahrende Radfahrer
 	X 8036,3253
 	X 7720,3148
 	X 6914,3093
@@ -2627,13 +2628,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-11-03
+#: last_checked: 2023-11-04
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-11-03
+#: last_checked: 2023-11-04
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3215,6 +3216,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 7602,305
 #: XXX_prog: nicht relevant für Radfahrer (wegen der Radwegbenutzungspflicht)
 	F 7404,-110
+#: note: Anforderungsampel
 	F 7535,3101
 #: note: Anforderungsampel
 	F 7483,3440
@@ -3822,6 +3824,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked: 2023-08-26
 #: check_frequency: 90d
 	X 10873,12577
+#: by: osm
+	F 9704,19428
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554

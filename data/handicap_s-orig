@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-11-03
+#: last_checked: 2023-11-04
 #: next_check: 2023-12-15
 #: valid: -20231215
 Stralauer Allee: Radfahrer und Fuﬂg‰nger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -32,8 +32,8 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-10-31 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2023-11-04 vvv
+#: check_frequency: 14d vvv
 #: next_check: 2023-12-29 vvv
 #: valid: -20231229 vvv
 Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
@@ -57,7 +57,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="16"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-10-30
+#: last_checked: 2023-11-04
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -1055,7 +1055,7 @@ Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Goethestr. und Friesickes
 #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 vvv --- #: last_checked: 2021-10-29 (bahninfo-forum) vvv --- #: next_check: 2021-11-22 vvv --- (provisorische Fuﬂg‰ngerbr¸cke S‰ntisstr.): Fuﬂg‰nger	q3 9014,898 9005,912 9002,919 9047,948 9058,932 --- #: XXX_prog BS an der Kreuzung, ansonsten q2 --- S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898 --- S‰ntisstr.: Bauarbeiten	q3 9058,932 9129,986 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
-# REMOVED (vermutlich keine Einschr‰nkung) --- #: next_check_id: HILDBURGHAUSER-2018 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php --- #: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg" (am 17.02. wird es allerdings noch nirgendwo erw‰hnt) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sanierung-der-hildburghauser-strasse-verzoegert-sich-erneut_a193048 (erneute Sperrung ab 18. Februar 2019) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-ausbau-der-hildburghauser-strasse-verzoegert-sich-weiter_a201187 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php --- #: source_id: 2147341614 --- #: source_id: 2147343257 --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2018-07-02 --- #: next_check: 2019-02-25 --- # REMOVED --- #: valid: 20190218- --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5741,1234 --- # REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
+# REMOVED (vermutlich keine Einschr‰nkung) --- #: next_check_id: HILDBURGHAUSER-2018 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php --- #: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg" (am 17.02. wird es allerdings noch nirgendwo erw‰hnt) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sanierung-der-hildburghauser-strasse-verzoegert-sich-erneut_a193048 (erneute Sperrung ab 18. Februar 2019) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-ausbau-der-hildburghauser-strasse-verzoegert-sich-weiter_a201187 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php --- #: source_id: 2147341614 --- #: source_id: 2147343257 --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2018-07-02 --- #: next_check: 2019-02-25 --- # REMOVED --- #: valid: 20190218- --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5733,1240 --- # REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5733,1240 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
 # 
 ### Franzˆsisch Buchholz ###
 # 
@@ -1824,7 +1824,7 @@ Edenkobener Steg: Fuﬂg‰nger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Kˆnigsberger Str. geplant)
 #: osm_watch: way id="77098244" version="17"
-#: last_checked: 2023-07-01
+#: last_checked: 2023-11-04
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -2512,7 +2512,7 @@ Kleine Eiswerderbr¸cke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2
 Gˆtzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
 (Erntedankweg - Wuhlgartenweg): eng	q3 20861,12192 20841,12185 20823,12139
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fuﬂg‰nger	q1 18616,11654 18619,11463
-(Mariannenstr. - Verl‰ngerte Georgenstr.): Radfahren verboten, Bordsteine	q4 6032,1348 5934,1310
+(Mariannenstr. - Verl‰ngerte Georgenstr.): Radfahren verboten, Bordsteine	q4 6029,1357 5934,1310
 Kindelbergweg: eng	q1 6632,1482 6601,1471 6560,1473
 Melker Str.: Fuﬂg‰nger	q1 1778,1659 1848,1647
 Rilkepfad: Fuﬂg‰nger	q1 1762,1534 1825,1534
@@ -2940,8 +2940,8 @@ M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q3 14837,11706 14858,11744
 (Richterstr. - Rathausstr.): Fuﬂg‰nger, Regenablaufrinne	q3 9117,3898 9073,3892 9021,3878
 (Upstallweg - Richterstr.): Fuﬂg‰nger	q2- 9264,3874 9244,3872 9226,3870 9217,3906
 Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6673,1748 6844,1813
-(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
-(Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6597,2157 6695,2037
+(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6759,2137 6733,2111 6698,2033 6534,1702 6526,1688
+(Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6597,2157 6698,2033
 (Hospitalgrabenpark): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
 # REMOVED --- (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17267,14146 17264,14178
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16644,14401 16632,14390
@@ -3546,7 +3546,7 @@ entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099
 (Lotharstr. - Josef-Hˆhn-Str.): einige Fuﬂg‰nger	q1 17908,16792 17882,16811 17863,16815
 #: note: am nˆrdlichen Ende nur ein Gr¸nanlagenschild ohne weitere Zusatzschilder
 #: XXX_prog BS an der Richterstr., ansonsten q2
-(Richterstr. - Rathausstr./Alt-Mariendorf): einige Fuﬂg‰nger, Bordstein	q3 9118,3983 9117,3898
+(Richterstr. - Rathausstr./Alt-Mariendorf): einige Fuﬂg‰nger, Bordstein	q3 9122,3978 9117,3898
 (Leonorenstr. - Edenkobener Weg): Fuﬂg‰nger	q2 6383,3977 6417,3991 6495,4001 6530,4023 6558,4088 6602,4189 6618,4191
 Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 2048,3062 2066,3072
@@ -5309,7 +5309,8 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, Bordstein	q3 17362,16189 17383,16197
 #: corrected_by: srt (added "schieben", q1 -> q3)
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q3 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1215 6487,1169 6455,1101 6446,1033
 #: corrected_by: srt (q1 -> q2)
-(Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger, schmal	q2 6189,1423 6132,1395
+#: note: keine Ausschilderung
+(Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger, schmal	q2 6189,1423 6130,1399
 #: XXX_prog: Bordstein, auf der S¸dseite (ansonsten trotzdem q2)
 #: corrected_by: srt (added Bordstein)
 #: note: explizites Gehweg-Schild
@@ -5327,7 +5328,7 @@ Altenburger Str.: Fuﬂg‰nger, Bordstein	q2 6651,1063 6631,968
 #: osm_watch: way id="114381362" version="13"
 #: osm_watch: way id="1100622078" version="6"
 #: osm_watch: way id="1100622082" version="6"
-#: last_checked: 2023-04-10
+#: last_checked: 2023-11-04
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: XXX ^^^
@@ -6092,10 +6093,10 @@ Gerstenweg: enge Straﬂe	q0- 21262,13517 21214,13126 21168,12794 21101,12661 2105
 #: by: Katja Frenzel:
 Genfer Weg: Fuﬂg‰nger	q1 2995,2119 3150,2113
 #: by anonymous:
-Renatenweg: enge Straﬂe	q1 6372,2856 6376,2809 6423,2774 6463,2724
+Renatenweg: enge Straﬂe	q1 6372,2856 6376,2809 6423,2774 6468,2720
 #: by: Tina Zimmer:
 #: corrected_by: srt/policy (q4 -> q2)
-Renatenweg: Fuﬂg‰nger	q2 6463,2724 6529,2642
+Renatenweg: Fuﬂg‰nger	q2 6468,2720 6529,2642
 #: by: Ralph Reuscher:
 #: corrected_by: srt/policy (q1 -> q0-)
 Weinbrennerweg: enge Straﬂe	q0- 6003,19461 6106,19510

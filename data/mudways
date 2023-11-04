@@ -345,11 +345,13 @@ Tiergarten, Bellevueallee - Floraplatz: Parkweg	X 8016,11770 8020,11937 8022,120
 #: mud: 2021-02-20: sehr matschig
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	X 6233,412 6256,363
 # 
+#: mud: 2023-04-11: matschige Stellen	h=q3,wet
+(Stanzer Zeile - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	X 6175,372 6204,331
+# 
 #: mud: 2021-02-20: sehr matschig
 (Mauerweg - Achenseeweg): fester Waldweg	X 6013,211 5987,256
 # 
-#: mud: 2021-02-20: sehr matschig
-(Mauerweg - Schütte-Lanz-Str.): fester Waldweg	X 5832,93 5800,138
+# REMOVED (obsolet, mittlerweile asphaltiert) --- #: mud: 2021-02-20: sehr matschig --- (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	X 5832,93 5800,138
 # 
 #: mud: 2021-02-24: durch Fahrspuren matschig, einige große Pfützen
 Krimnitzer Weg: unbefestigte Straße	X 26750,-1932 26662,-1914 26547,-1894 26489,-1884
@@ -552,7 +554,7 @@ Orankestrand: unbefestigter Weg	X 15731,16208 15664,16115 15592,16069 15479,1606
 Mauerweg: wassergebundene Decke	X 11794,550 11928,588 11956,599
 # 
 #: mud: 2023-03-11: leicht matschige Oberfläche, einige teils größere Pfützen	h=q3,wet
-(Seydlitzstr., Verlängerung): wassergebundene Decke	X 6597,2157 6695,2037
+(Seydlitzstr., Verlängerung): wassergebundene Decke	X 6597,2157 6698,2033
 # 
 #: mud: 2023-03-11: zahlreiche teils große Pfützen	h=q3,wet
 Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	X 8106,3410 8016,3651 7795,4242
@@ -604,3 +606,11 @@ Am Akazienweg: unbefestigter Weg	X 19125,19130 19043,18876
 #: mud: 2023-11-03: einige Pfützen, Umfahrung auf unangenehm zu fahrenden Rasengittersteinen möglich	h=q2-,wet
 (Rosenweg (KGA Baumfreunde)): wassergebundene Decke	X 15343,5687 15337,5730
 #
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11725
+#: mud: 2023-06-17: Überschwemmung der Straße	h=q4,wet
+#: mud: 2023-06-23: Überschwemmung der Straße	h=q4,wet
+#: mud: 2023-06-26: Überschwemmung der Straße	h=q4,wet
+#: mud: 2023-07-24: Überschwemmung der Straße	h=q4,wet
+#: mud: 2023-07-29: Überschwemmung der Straße	h=q4,wet
+Platenhofer Weg: Asphalt	X -1980,23033 -1865,23298
+# 

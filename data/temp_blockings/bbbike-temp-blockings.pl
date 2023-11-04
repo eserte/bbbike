@@ -6846,8 +6846,7 @@ EOF
      { from  => $isodate2epoch->("2017-11-28 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       recurrence_prewarn_days => -720, # XXX findet wegen Bauarbeiten 2018 und 2019 nicht statt
+       recurrences => [['yearly', days => 18, months => 11, start => "2024-01-01T00:00:00"]],
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
@@ -7334,7 +7333,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004793',
        data  => <<EOF,
-	q4::inwork 5414,1304 5585,1275 5741,1234
+	q4::inwork 5414,1304 5585,1275 5733,1240
 EOF
      },
      { from  => 1172646005, # 2007-02-28 08:00
@@ -17427,11 +17426,11 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-08 14:00:00"),
-       until => $isodate2epoch->("2022-12-11 23:59:59"),
+     { from  => $isodate2epoch->("2023-12-14 14:00:00"),
+       until => $isodate2epoch->("2023-12-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 09.12.2022 bis zum 11.12.2022',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2023 bis zum 17.12.2023',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
@@ -17491,11 +17490,11 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-26 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2021-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2023-12-26 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2024-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2023 bis 02.01.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
@@ -25557,11 +25556,11 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2023-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2024-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2023-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine, 2022/2023 ebenso
-       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
+       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2023 bis 02.01.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
@@ -30389,7 +30388,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
-#: last_checked: 2023-07-19 (mapillary)
+#: last_checked: 2023-11-04
 #: check_frequency: 90d
 #: next_check: 2023-12-15
 # REMOVED --- #: next_check: 2024-01-01
@@ -31170,9 +31169,9 @@ EOF
 #: next_check_id: HILDBURGHAUSER-2018
 #: by: https://twitter.com/VIZ_Berlin/status/1246007633632546816/photo/1
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/fahrbahn-in-der-hildburghauser-strasse-erhaelt-eine-neue-deckschicht_a259753
-	q4::inwork 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
+	q4::inwork 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5733,1240 5585,1275
 	q4::inwork; 5414,1304 5435,1390 5467,1409
-	q4::inwork; 5661,1499 5706,1393 5751,1289 5741,1234
+	q4::inwork; 5661,1499 5706,1393 5744,1292 5733,1240
 EOF
      },
      { from  => 1586728800, # 2020-04-13 00:00
@@ -34644,16 +34643,16 @@ EOF
 	q4 16038,9837 16002,9787
 EOF
      },
-     { from  => $isodate2epoch->("2022-12-16 05:00:00"),
-       until => $isodate2epoch->("2022-12-18 23:00:00"),
-       text  => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 17.12.2022 05:00 bis 18.12.2022 23:00 ',
+     { from  => $isodate2epoch->("2023-12-15 05:00:00"),
+       until => $isodate2epoch->("2023-12-17 23:00:00"),
+       text  => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 16.12.2023 05:00 bis 17.12.2023 23:00 ',
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 12]],
        type  => 'gesperrt',
-       source_id => 'viz2021:13.259828,52.514849,18.12.2021,05:00',
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
 #: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -34944,7 +34943,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # 1644076653, # 2022-02-05 16:57
-       until => $isodate2epoch->("2023-11-30 18:00:00"), # 1666821600, # 2022-10-27 00:00
+       until => 1699104656, # $isodate2epoch->("2023-11-30 18:00:00"), # 1666821600, # 2022-10-27 00:00
        text  => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich vom 31.07.2023 bis 30.11.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30', # zunächst bis 21.12.2022, mittlerweile bis 31.1.2023
@@ -34955,9 +34954,7 @@ EOF
 #: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023) (inaktiv)
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-08-05
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-11-30
+# REMOVED (keine Einbahnstraßenregelung, Sackgasse für Autos) --- #: last_checked: 2023-08-05 --- #: check_frequency: 90d --- #: next_check: 2023-11-30
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 EOF
      },
@@ -35080,7 +35077,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-11-03 vvv
+#: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -35373,7 +35370,7 @@ EOF
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-10-21
+#: last_checked: 2023-11-04
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -37408,7 +37405,7 @@ EOF
 #: note: an der östlichen Seite sind sogar die Gehwege gesperrt
 # REMOVED --- #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023 --- #: last_checked: 2023-08-05 --- #: next_check: 2023-08-09
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
-# REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6862,2452 6965,2418
+# REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6836,2460 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 östlicher Abschnitt ab Am Gemeindepark	2::inwork 7172,2343 7285,2377
 EOF
@@ -37461,7 +37458,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-10-21
+#: last_checked: 2023-11-04
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -38112,8 +38109,8 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 EOF
      },
      { from  => $isodate2epoch->("2023-10-15 00:00:00"), # 1677452400, # 2023-02-27 00:00
-       until => $isodate2epoch->("2024-06-30 18:00:00"), # 1735685999, # 2024-12-31 23:59
-       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Juni 2024 gesperrt sein',
+       until => $isodate2epoch->("2024-12-31 18:00:00"), # 1735685999, # 2024-12-31 23:59
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Dezember 2024 gesperrt sein',
        # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -38125,7 +38122,6 @@ EOF
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch: note 3631207 5
-#: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
@@ -40527,7 +40523,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-10-21 vvv
+#: last_checked: 2023-11-04 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
 #: last_checked ^^^
@@ -40688,6 +40684,8 @@ EOF
        source_id => 'viz2021:13.432818,52.481758,04.10.2023,08:00',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
+#: osm_watch: way id="137623800" version="32"
+#: osm_watch: way id="625667165" version="23"
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
 	q3::inwork 12349,8464 12494,8501
 EOF
@@ -40917,8 +40915,8 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Gleisbauarbeiten 23.10.-5.11.2023)
 #: by: https://www.berlin-straba.de/images/Bauplan/liniennetzplam_bau/BVG_2023-10-23_T-Bau.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1376601.php (MIV: Einbahnstraße Richtung Treskowallee)
-#: source_id: bvg2021:21#BVG330473_0 (2023-10-23 bis 2023-11-05 früh)
-#: source_id: viz2021:13.518472,52.481202,23.10.2023,07:00 (hier nur Kfz-Verkehr, bis 06.11.2023) (bis 4.11.2023)
+#: source_id[inactive]: bvg2021:21#BVG330473_0 (2023-10-23 bis 2023-11-05 früh)
+#: source_id: viz2021:13.518472,52.481202,23.10.2023,07:00 (hier nur Kfz-Verkehr, bis 06.11.2023) (bis 4.11.2023) (inaktiv)
 	q4::inwork; 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589 18086,8634 18009,8687
 EOF
      },

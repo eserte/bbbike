@@ -2458,14 +2458,75 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
+#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
+	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1702558800,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2023 bis zum 17.12.2023',
+         'type' => 'gesperrt',
+         'until' => 1702853999
+       },
        undef,
        undef,
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SILVESTER-YYYY
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+#: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72
+#: by: https://viz.berlin.de/2020/12/welcome21/
+#: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
+#: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
+Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
+Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+Str. des 17 Juni/Kleine Querallee	3::temp 8391,12389 8344,12221 8327,12174
+Str. des 17 Juni/Kleine Querallee	3::temp 8327,12174 8344,12221 8391,12389
+Simsonweg	2::temp 8546,12279 8391,12389 8354,12416
+Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
+# 2020 hier nicht --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+# 2020 hier nicht --- Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
+# 2020 hier nicht --- Str. des 17 Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+',
+         'from' => 1703566800,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              12,
+                              'start',
+                              '2023-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2023 bis 02.01.2024',
+         'type' => 'gesperrt',
+         'until' => 1704236399
+       },
        undef,
        undef,
        undef,
@@ -3776,7 +3837,56 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SILVESTER-YYYY
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
+#: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
+#: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
+	2::temp 7031,12320 7383,12095
+	2::temp 7875,12363 7822,12201 7816,12150
+	2::temp 8400,12417 8391,12389 8344,12221
+	2::temp 8354,12416 8391,12389 8546,12279
+	2::temp 8775,12457 8804,12280 8722,12268
+# umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
+	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681
+	2::temp 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597
+	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
+	2::temp 8210,11775 8244,11878 8327,12174
+	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809
+	2::temp 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764
+	2::temp 7059,11978 7007,11923 6984,11859
+	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
+	2::temp 8014,11753 8016,11770 8020,11937 8022,12016
+	2::temp 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
+	2::temp 8034,12093 8049,12140
+	2::temp 8167,11865 8132,11910
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
+	2::temp 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
+	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
+	2::temp 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566
+	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
+',
+         'from' => 1703772000,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              28,
+                              'months',
+                              12,
+                              'start',
+                              '2023-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2023 bis 02.01.2024',
+         'type' => 'gesperrt',
+         'until' => 1704236399
+       },
        undef,
        undef,
        undef,
@@ -4468,7 +4578,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
-#: last_checked: 2023-07-19 (mapillary)
+#: last_checked: 2023-11-04
 #: check_frequency: 90d
 #: next_check: 2023-12-15
 # REMOVED --- #: next_check: 2024-01-01
@@ -5175,7 +5285,28 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
+#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
+	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1702612800,
+         'id' => 3489,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 16.12.2023 05:00 bis 17.12.2023 23:00 ',
+         'type' => 'gesperrt',
+         'until' => 1702850400
+       },
        undef,
        undef,
        undef,
@@ -5281,25 +5412,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1346703.php (Bauarbeiten 2023)
-#: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
-#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-101023/
-#: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023) (inaktiv)
-#: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023)
-#: also_indoor: traffic (none)
-#: last_checked: 2023-08-05
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-11-30
-	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
-',
-         'from' => 1690668000,
-         'id' => 3509,
-         'source_id' => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
-         'text' => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich vom 31.07.2023 bis 30.11.2023',
-         'type' => 'handicap',
-         'until' => 1701363600
-       },
+       undef,
        undef,
        undef,
        {
@@ -5356,7 +5469,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-11-03 vvv
+#: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5440,7 +5553,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-10-21
+#: last_checked: 2023-11-04
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -5985,7 +6098,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-10-21
+#: last_checked: 2023-11-04
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6281,16 +6394,15 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch: note 3631207 5
-#: note: laut mapillary: Bauarbeiten erst ab November 2023
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Juni 2024 gesperrt sein',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Dezember 2024 gesperrt sein',
          'type' => 'gesperrt',
-         'until' => 1719763200
+         'until' => 1735664400
        },
        undef,
        undef,
@@ -6786,17 +6898,7 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
-#: by: http://spielstraßen.de/uebersicht.php?date=20230620
-	q4::temp::play 5956,7686 5812,7685
-',
-         'from' => 1688594400,
-         'id' => 3830,
-         'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, 7. Juli 2023 bis 3. November 2023',
-         'type' => 'handicap',
-         'until' => 1699052399
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
@@ -7260,7 +7362,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-10-21 vvv
+#: last_checked: 2023-11-04 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
 #: last_checked ^^^
@@ -7394,6 +7496,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
+#: osm_watch: way id="137623800" version="32"
+#: osm_watch: way id="625667165" version="23"
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
 	q3::inwork 12349,8464 12494,8501
 ',
@@ -7630,20 +7734,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'handicap',
          'until' => 1700496000
        },
-       {
-         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Gleisbauarbeiten 23.10.-5.11.2023)
-#: by: https://www.berlin-straba.de/images/Bauplan/liniennetzplam_bau/BVG_2023-10-23_T-Bau.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1376601.php (MIV: Einbahnstraße Richtung Treskowallee)
-#: source_id: bvg2021:21#BVG330473_0 (2023-10-23 bis 2023-11-05 früh)
-#: source_id: viz2021:13.518472,52.481202,23.10.2023,07:00 (hier nur Kfz-Verkehr, bis 06.11.2023) (bis 4.11.2023)
-	q4::inwork; 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589 18086,8634 18009,8687
-',
-         'from' => 1698503124,
-         'id' => 3949,
-         'text' => 'Ehrlichstr.: Gleiserneuerung, Fahrbahn Richtung Westen gesperrt, keine offizielle Gehwegfreigabe für Radfahrer, bis 4.11.2023',
-         'type' => 'handicap',
-         'until' => 1699095600
-       },
+       undef,
        {
          'data' => '#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
 #: last_checked: 2023-10-28
