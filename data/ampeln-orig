@@ -67,8 +67,9 @@ Gegenverkehrsregelung	X::inwork 20302,1613
 # 
 #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023)
-#: next_check: 2023-11-06
-#: valid: -20231106
+#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023)
+#: next_check: 2023-11-30
+#: valid: -20231130
 Am Falkenberg	X::inwork 21497,1042
 # 
 #: next_check_id: SGEHRENSEE-2023
@@ -123,7 +124,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-05
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -234,7 +235,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2023-10-30
+#: last_checked: 2023-11-05
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -3443,7 +3444,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 23657,5467
 #: note: Anforderungsampel
 #: note: mittlerweile zwei Gehwegübergänge
-#: XXX_prog gilt (vermutlich) nicht für Radfahrer auf dem Radweg
+#: XXX_prog nur der südwestliche Gehwegübergang gilt auch für Radfahrer auf dem Radweg
 	F 18165,7371
 #: off: night (seen 2013-08-25 22:30)
 	F 11579,-3093
@@ -3691,11 +3692,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/wedding/c-bauen/neubau-der-grundschule-am-nordhafen-eroeffnet_a357236 (Schule in der Nähe der Ampel)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11743 (Antrag)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ampel-vor-der-grundschule_a376910
+#: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024)
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
 #: last_checked: 2023-10-03
 #: check_frequency: 90d
+#: next_check: 2024-02-15
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 

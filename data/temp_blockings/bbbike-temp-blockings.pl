@@ -28533,7 +28533,7 @@ EOF
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-05
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-10-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -34830,6 +34830,7 @@ EOF
 #: source_id[inactive]: bvg2021:188#BVG296003_0
 #: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,30.03.2023,12:14 (Baseler Str., bis 31.05.2023) (inaktiv)
+#: source_id: viz2021:13.295715,52.43793,06.11.2023,07:00 (Verengung in der Ringstr., bis 24.11.2023)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 #: also_indoor: traffic (G,ex-H,B) vvv
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
@@ -39146,8 +39147,8 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="22"
-#: last_checked: 2023-11-02
+#: osm_watch: way id="58182828" version="23"
+#: last_checked: 2023-11-04 (osm)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39246,14 +39247,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Rummelsburger Bucht: neues Wohngebiet, größtenteils noch Baustelle, unter Umständen Befahren/Betreten verboten',
+       text  => 'Rummelsburger Bucht: neues Wohngebiet, teilweise noch Baustelle, unter Umständen kann das Befahren/Betreten nicht möglich sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-10-30 vvv
+#: last_checked: 2023-11-05 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39480,7 +39481,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-05
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40196,12 +40197,13 @@ EOF
 EOF
      },
      { from  => 1691899200, # 2023-08-13 06:00
-       until => $isodate2epoch->("2023-11-06 17:00:00"), # 1696715940, # 2023-10-07 23:59
-       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 06.11.2023 17:00',
+       until => $isodate2epoch->("2023-11-30 17:00:00"), # 1696715940, # 2023-10-07 23:59
+       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 30.11.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023)
+#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
 EOF
@@ -40477,9 +40479,9 @@ EOF
        until => 1699286400, # 2023-11-06 17:00
        text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
        type  => 'gesperrt',
-       source_id => '237201864',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
+#: source_id: 237201864 (bis 06.11.2023)
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
@@ -40926,7 +40928,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-05
 #: check_frequency: 30d
 #: next_check: 2023-12-15
 	q2::inwork; 18037,9195 17549,9529
@@ -40964,6 +40966,53 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/gruenau/c-verkehr/sperrung-ohne-ankuendigung_a398344
 	2::inwork 23457,35 23540,591
+EOF
+     },
+     { from  => 1693380660, # 2023-08-30 09:31
+       until => 1712847600, # 2024-04-11 17:00
+       text  => 'Edisonstr.: Richtung Niederschöneweide zwischen An der Wuhlheide und Siemensstr. ist die Fahrbahn gesperrt, für Radfahrer Führung über den engen Gehweg, bis 11.04.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
+#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
+#: last_checked: 2023-11-05
+#: check_frequency: 30d
+#: next_check: 2024-04-11
+	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
+EOF
+     },
+     { from  => 1701471600, # 2023-12-02 00:00
+       until => 1701644400, # 2023-12-04 00:00
+       text  => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 02.12.2023 bis 03.12.2023',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://oldthing.de/riesenflohmarkt
+#: XXX Termine 2024 eintragen, evtl. eine Liste implementieren
+#: next_check: 2024-04-01 vvv
+	q4::temp:clock 18741,8125 18676,8096 18702,8160
+	q4::temp:clock 18676,8096 18650,8111 18626,8114
+#: next_check ^^^
+EOF
+     },
+     { from  => 1699160400, # 2023-11-05 06:00
+       until => 1699722000, # 2023-11-11 18:00
+       text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.11.2023 06:00 bis 11.11.2023 18:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.386086,52.517908,06.11.2023,06:00',
+       data  => <<EOF,
+	2::inwork 9131,12438 9179,12444
+EOF
+     },
+     { from  => 1699164000, # 2023-11-05 07:00
+       until => 1702051200, # 2023-12-08 17:00
+       text  => 'Wandlitzstr.: Bauarbeiten Richtung Blockdammweg zwischen Treskowallee und Wildensteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
+#: next_check: 2023-11-06
+	q4::inwork; 18704,8427 18627,8475
 EOF
      },
     );
