@@ -105,9 +105,9 @@ Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2301,7698 2213,7637
 Platz S (Hundekehlestr.)	1 2169,7690 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
-Wexstr.	2 6260,8011 5807,7978 5631,8011
+Wexstr.	2 6260,8011 5807,7978 5695,8007
 Wexstr.	1 6388,7999 6260,8011
-Wexstr.	1 5631,8011 5801,8031 5911,8042 6154,8070 6261,8058 6409,8026
+Wexstr.	1 5632,8024 5697,8027 5801,8031 5911,8042 6154,8070 6261,8058 6409,8026
 Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -529,8 +529,8 @@ Kleiner Tiergarten -> Turmstr.: Straßenbahntrasse	3::igndisp 6564,13260 6535,133
 Turmstr. (Richtungsfahrbahn)	1::igndisp 5857,13342 5956,13338 6012,13332 6022,13330
 Turmstr. (Richtungsfahrbahn)	1::igndisp 6022,13330 5956,13330 5857,13342
 Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13338 6012,13332 6022,13330
-Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
-Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
+Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5325,8023 5304,8088 5304,8144 5354,8236
+Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5363,8024 5350,7915 5346,7860
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11057,12715 10951,12637 10931,12622
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10931,12622 10873,12577
@@ -3437,7 +3437,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
-Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8011 5520,8132 5573,8197
+Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8024 5520,8132 5573,8197
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
@@ -4035,7 +4035,7 @@ Landsberger Allee, linker Gehweg, ggfs. absteigen	1::igndisp 13073,13329 12974,1
 Landsberger Allee, linker Gehweg, ggfs. absteigen	1::igndisp 16665,14420 16590,14409
 Landsberger Allee, Fußgängerampel	1::igndisp 16590,14409 16590,14386
 Sonnenallee, linker Gehweg, ggfs. absteigen	1::igndisp 13457,8069 13474,8060
-Bundesallee, linker Gehweg zur Durlacher Str., ggfs. absteigen	1::igndisp 5399,8344 5438,8402
+Bundesallee, linker Gehweg zur Durlacher Str., ggfs. absteigen	1::igndisp 5399,8344 5454,8403
 Bundesallee, linker Gehweg zur Straße Am Volkspark, ggfs. absteigen	1::igndisp 5419,8415 5399,8344
 Urbanstr.	1::igndisp 11861,9183 11888,9189
 Badstr., linker Gehweg, ggfs. absteigen	1::igndisp 8486,16425 8486,16412 8534,16355

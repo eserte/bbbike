@@ -190,7 +190,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-06
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -202,7 +202,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2023-10-29 vvv
+#: last_checked: 2023-11-06 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -1633,10 +1633,10 @@ Stallschreiberstr.: Asphalt	Q0 10683,11175 10623,11246
 Stallschreiberstr.: Asphalt	Q0 10623,11246 10489,11405
 Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10627,9912 10695,9922
 Dieffenbachstr.: Kopfsteinpflaster	Q2 11089,9751 11141,9732
-Am Volkspark: Parkweg	Q1 5611,8252 5438,8402 5433,8407
+Am Volkspark: neu gemachter Parkweg	Q1+ 5617,8258 5454,8403
 #: note: paralleler Bürgersteig mit normalen Gehwegplatten
 Am Volkspark: Kopfsteinpflaster mit großen Ritzen	Q3 5730,8207 5651,8218
-Am Volkspark: Kopfsteinpflaster	Q2 5611,8252 5651,8218
+Am Volkspark: Kopfsteinpflaster	Q2 5617,8258 5652,8234
 Am Volkspark: neu gemachter Parkweg	Q1+ 5730,8207 5918,8221
 Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11240,12368 11202,12426 11138,12604 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
@@ -4598,7 +4598,7 @@ Rübezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128
 Rübezahlstr.: Asphalt	Q0 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15172,7231
 (Planetenstr. - Am Heidekampgraben): Asphalt	Q0 15172,7231 15204,7236
-Prinzregentenstr.: Verbundsteinpflaster, mit Aufpflasterungen	Q1 5660,8366 5651,8218
+Prinzregentenstr.: Verbundsteinpflaster, mit Aufpflasterungen	Q1 5660,8366 5652,8234 5651,8218
 Schmidt-Ott-Str.: Asphalt	Q0 4010,5888 4115,5804
 Schmidt-Ott-Str.: Kleinsteinpflaster	Q1 4115,5804 4258,5717
 Schmidt-Ott-Str.: Kopfsteinpflaster	Q1 4258,5717 4313,5682 4408,5622
@@ -30240,11 +30240,11 @@ Nordsternstr.: Kleinsteinpflaster	Q1- 6292,8899 6268,8884 6249,8846 6241,8798
 #: confirmed_by: srt
 Prinz-Georg-Str.: Kopfsteinpflaster	Q2 7012,8511 7104,8413
 #: confirmed_by: srt
-Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8011
+Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8024
 #: confirmed_by: srt
-Bernhardstr.: Asphalt	Q0 5570,8011 5570,7939
+Bernhardstr.: Asphalt	Q0 5570,8024 5570,7939
 #: confirmed_by: srt
-Bernhardstr.: Asphalt	Q0 5472,8012 5471,7915
+Bernhardstr.: Asphalt	Q0 5472,8024 5471,7915
 #: confirmed_by: srt
 (Bernhardstr. - Bundesallee, Parkplatz): Asphalt	Q0 5471,7915 5350,7915
 (Schulstr.): Asphalt	Q0 1443,5193 1443,5279 1407,5298 1333,5246

@@ -66,7 +66,7 @@ Roelckestr./Gäblerstr.	X::inwork 13272,16672
 Gegenverkehrsregelung	X::inwork 20302,1613
 # 
 #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023)
 #: next_check: 2023-11-30
 #: valid: -20231130
@@ -99,11 +99,11 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork 22192,6659
 # 
 #: next_check_id: BAUMSCHULEN-2023
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: osm_watch: way id="383023440" version="15"
 #: last_checked: 2023-10-18
-#: next_check: 2023-12-03
+#: next_check: 2023-12-31
 # REMOVED --- #: valid: -20230930
 	X::inwork 16328,7005
 # 
@@ -621,7 +621,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6485,8639
 	X 6449,8807
 	X 6440,9192
-	X 6461,8463
+	X 6458,8472
 	X 7526,9969
 	X 7579,10183
 	X 7633,10394
@@ -800,13 +800,14 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5806,7205
 #: XXX_prog ^^^
 #: note: Anforderung für Radfahrer aus Richtung Schmiljanstr./Schmargendorfer Str. über die Straße Richtung Bundesallee/Wiesbadener Str.
+#: XXX_prog gilt nicht für Radfahrer aus der Wiesbadener Str. oder Bundesallee Süd Richtung Schmiljanstr. (separate Radwegführung, könnte man vielleicht auch einzeichnen)
 	X 5397,7205
 #: XXX_prog: zusammenhängende Ampelanlage vvv
-	X 5357,8013
-	X 5331,8012
+	X 5363,8024
+	X 5325,8023
 #: XXX_prog ^^^
 	X 5346,7860
-	X 5631,8011
+	X 5632,8024
 	X 4788,7257
 	X 4743,7212
 	X 4787,7213
@@ -3692,7 +3693,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/wedding/c-bauen/neubau-der-grundschule-am-nordhafen-eroeffnet_a357236 (Schule in der Nähe der Ampel)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11743 (Antrag)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ampel-vor-der-grundschule_a376910
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1721436001623535938#m (Neubau einer Ampel)
 #: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024)
+#: source_id: viz2021:13.37326,52.53807,06.11.2023,09:00 (bis 15.02.2024)
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel

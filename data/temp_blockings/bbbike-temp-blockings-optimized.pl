@@ -2657,17 +2657,7 @@ Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 106000270 (inaktiv)
-#: source_id: 236001844 (bis 06.11.2023)
-	2::inwork 30122,41503 29553,41441 29468,41438
-',
-         'from' => 1698904800,
-         'id' => 2087,
-         'text' => 'Melchow: L200: Gleisbauarbeiten Bahnübergang bei Melchow, Sperrung, 03.11.2023 07:00 Uhr bis 06.11.2023 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1699297200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4216,7 +4206,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.545136,52.421827,06.11.2023,07:00 (bis 24.11.2023)
+# REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
+	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
+',
+         'from' => 1699306474,
+         'id' => 2973,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
+         'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis 24.11.2023',
+         'type' => 'gesperrt',
+         'until' => 1700841600
+       },
        undef,
        undef,
        undef,
@@ -4444,11 +4445,11 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="45"
+#: osm_watch: way id="8655276" version="46"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-10-03 (osm)
+#: last_checked: 2023-11-05 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -6369,19 +6370,21 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
 #: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
-#: last_checked: 2023-10-21 vvv
-#: next_check: 2023-10-31 vvv
+#: last_checked: 2023-11-06 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 # REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
 # REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
-	2::inwork 5438,8402 5611,8252
-#: next_check ^^^
+	2::inwork 5433,8407 5454,8403 5617,8258
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1690063200,
          'id' => 3725,
-         'text' => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Mitte Oktober 2023: noch immer gesperrt)',
+         'text' => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Anfang November Oktober 2023: noch immer gesperrt)',
          'type' => 'gesperrt',
          'until' => 1701385199
        },
@@ -6582,7 +6585,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
          'dont_check_date' => 1,
          'from' => 1681189200,
          'id' => 3763,
-         'text' => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Ende 2023',
+         'text' => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Ende 2023',
          'type' => 'handicap',
          'until' => 1704063599
        },
@@ -7158,9 +7161,9 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
 #: also_indoor: traffic (H[ungenau],G,W,B)
-#: osm_watch: way id="198589911" version="18"
+#: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-10-22
+#: last_checked: 2023-11-05 (osm)
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -7175,7 +7178,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        undef,
        {
          'data' => '#: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
@@ -7189,7 +7192,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        undef,
        {
          'data' => '#: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-10-29 vvv
+#: last_checked: 2023-11-06 vvv
 #: check_frequency: 14d vvv
 nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
 südlicher Weg	2::inwork 10168,10085 10066,10071
@@ -7315,17 +7318,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
          'type' => 'handicap',
          'until' => 1734649140
        },
-       {
-         'data' => '#: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023)
-	2::inwork 13526,-20548 13412,-20513 13271,-20531
-',
-         'from' => 1693720800,
-         'id' => 3913,
-         'text' => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1699286400
-       },
+       undef,
        {
          'data' => '#: next_check_id: KLINGSOR-2023
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1361896.php
@@ -7809,6 +7802,18 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'text' => 'Wandlitzstr.: Bauarbeiten Richtung Blockdammweg zwischen Treskowallee und Wildensteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
          'type' => 'handicap',
          'until' => 1702051200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1382626.php
+#: XXX Nach den Bauarbeiten bessere Qualität?
+#: next_check: 2023-11-21
+	2::inwork 17976,3735 17975,3744 17953,3955
+',
+         'from' => 1699311600,
+         'id' => 3958,
+         'text' => 'Landschaftspark Johannisthal: Nord-Süd-Weg wegen Bauarbeiten voraussichtlich vom 8.11.2023 bis 20.11.2023 gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1700521200
        }
      
 );

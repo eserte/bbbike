@@ -18439,7 +18439,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 106000270 (inaktiv)
-#: source_id: 236001844 (bis 06.11.2023)
+#: source_id: 236001844 (bis 06.11.2023) (inaktiv)
 	2::inwork 30122,41503 29553,41441 29468,41438
 EOF
      },
@@ -25909,9 +25909,9 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
        data  => <<EOF,
-	q4::inwork; 6454,8653 6455,8613 6461,8463 6459,8281
-	3 6461,8463 6377,8460
-	3 6377,8460 6461,8463
+	q4::inwork; 6454,8653 6455,8613 6458,8472 6459,8281
+	3 6458,8472 6368,8472
+	3 6368,8472 6458,8472
 EOF
      },
      { from  => $isodate2epoch->("2016-07-10 00:00:00"),
@@ -25920,9 +25920,9 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
        data  => <<EOF,
-	q3::inwork; 6459,8281 6461,8463 6455,8613 6454,8653
-	3 6461,8463 6377,8460
-	3 6377,8460 6461,8463
+	q3::inwork; 6459,8281 6458,8472 6455,8613 6454,8653
+	3 6458,8472 6368,8472
+	3 6368,8472 6458,8472
 EOF
      },
      { from  => 1501526175, # 1465682400, # 2016-06-12 00:00
@@ -27308,17 +27308,17 @@ EOF
        text  => 'Rund um den Innsbrucker Platz: Bombenfund, zahlreiche Straßen im 500m-Radius gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::bomb 5472,8012 5357,8013
-	2::bomb 5501,8253 5573,8197 5631,8141 5631,8011 5630,7875
+	2::bomb 5472,8024 5363,8024
+	2::bomb 5501,8253 5573,8197 5631,8141 5632,8024 5630,7875
 	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5812,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
 	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
-	2::bomb 5570,7939 5570,8011 5522,8011
+	2::bomb 5570,7939 5570,8024 5522,8024
 	2::bomb 5913,8415 5917,8351 5918,8221 5730,8207 5700,8241 5687,8280 5699,8308
 	2::bomb 6333,7708 6352,7523
 	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
 	2::bomb 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
-	2::bomb 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
-	2::bomb 5660,8366 5651,8218 5631,8141 5808,8124 5801,8031 5631,8011 5570,8011
+	2::bomb 5573,8197 5520,8132 5522,8024 5472,8024 5471,7915
+	2::bomb 5660,8366 5652,8234 5651,8218 5631,8141 5808,8124 5801,8031 5697,8027 5632,8024 5570,8024
 	2::bomb 5808,8124 5909,8184 6003,8120
 	2::bomb 6409,8026 6373,8083 6341,8174 6313,8254
 	2::bomb 6271,7733 6332,7721 6410,7722
@@ -28094,16 +28094,15 @@ EOF
 	2::inwork 19414,15132 19424,15068 19400,15027 19347,14936
 EOF
      },
-     { from  => 1530396000, # 2018-07-01 00:00
-       until => 1560096748, # $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
-       text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis Juni 2019',
+     { from  => 1699306474, # 1530396000, # 2018-07-01 00:00
+       until => $isodate2epoch->("2023-11-24 17:00:00"), # 1560096748, # $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
+       text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis 24.11.2023',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
        data  => <<EOF,
+#: source_id: viz2021:13.545136,52.421827,06.11.2023,07:00 (bis 24.11.2023)
 # REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
-	2::inwork 20245,2152 20261,2114
-# REMOVED (hier fertig) ---	2::inwork 20261,2114 20222,2037 20214,1988
-# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
+	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
 EOF
      },
      { from  => undef, # 
@@ -29560,11 +29559,11 @@ EOF
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="45"
+#: osm_watch: way id="8655276" version="46"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2023-10-03 (osm)
+#: last_checked: 2023-11-05 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -30293,7 +30292,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv --- #: priority: #A vvv --- #: last_checked: 2019-12-08 vvv --- #: check_frequency: 14d vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
 	q3::inwork 5636,7734 5632,7821 5630,7875
-# REMOVED ---	q3::inwork 5630,7875 5631,8011
+# REMOVED ---	q3::inwork 5630,7875 5632,8024
 # REMOVED (keine großen Einschränkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
 # REMOVED --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: priority ^^^ --- #: add_fragezeichen ^^^
 EOF
@@ -35655,7 +35654,7 @@ EOF
 #: by: https://nitter.net/Wikinaut/status/1532016521706348547#m (Durchfahrt für Radfahrer wieder möglich)
 #: source_id: viz2021:13.33278,52.47874,07.06.2022,22:05 (bis 1.7.2022, keine Aussage zum Radverkehr)
 # REMOVED --- #: XXX wird hier noch eine bessere Lösung für Radfahrer gefunden? --- #: next_check: 2022-06-01
-	q4::inwork 5631,8011 5631,8141
+	q4::inwork 5632,8024 5631,8141
 EOF
      },
      { from  => undef, # 
@@ -36664,7 +36663,7 @@ EOF
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023)
 #: last_checked: 2023-01-10
 #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
@@ -38078,7 +38077,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-23 00:00:00"), # 1676329200, # 2023-02-14 00:00
        until => $isodate2epoch->("2023-11-30 23:59:59"), # $isodate2epoch->("2023-10-31 18:00:00"), # undef, # 1681595999, # 2023-04-15 23:59
-       text  => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Mitte Oktober 2023: noch immer gesperrt)',
+       text  => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Anfang November Oktober 2023: noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
@@ -38086,14 +38085,16 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
 #: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
-#: last_checked: 2023-10-21 vvv
-#: next_check: 2023-10-31 vvv
+#: last_checked: 2023-11-06 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 # REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
 # REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
-	2::inwork 5438,8402 5611,8252
-#: next_check ^^^
+	2::inwork 5433,8407 5454,8403 5617,8258
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -38624,7 +38625,7 @@ EOF
      { from  => 1681189200, # 2023-04-11 07:00
        until => $isodate2epoch->("2023-12-31 23:59:59"), # 1693447200, # 2023-08-31 04:00
        dont_check_date => 1,
-       text  => 'Mommsenstr.: Bauarbeiten zwischen Hindemithplatz und Wielandstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Ende 2023',
+       text  => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Ende 2023', # war: ... zwischen Hindemithplatz und Wielandstr. ...
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
@@ -40178,9 +40179,9 @@ EOF
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
 #: also_indoor: traffic (H[ungenau],G,W,B)
-#: osm_watch: way id="198589911" version="18"
+#: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-10-22
+#: last_checked: 2023-11-05 (osm)
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -40202,7 +40203,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
@@ -40223,7 +40224,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-10-29 vvv
+#: last_checked: 2023-11-06 vvv
 #: check_frequency: 14d vvv
 nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
 südlicher Weg	2::inwork 10168,10085 10066,10071
@@ -40350,7 +40351,7 @@ EOF
        source_id => 'viz2021:13.33277,52.47982,28.08.2023,07:00', # inaktiv
        data  => <<EOF,
 #: by: https://nitter.net/ulid000/status/1696049760380027204#m
-	q4::inwork 5631,8141 5631,8011
+	q4::inwork 5631,8141 5632,8024
 EOF
      },
      { from  => undef, # 
@@ -40481,7 +40482,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023)
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv)
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
@@ -41013,6 +41014,17 @@ EOF
 #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: next_check: 2023-11-06
 	q4::inwork; 18704,8427 18627,8475
+EOF
+     },
+     { from  => 1699311600, # 2023-11-07 00:00
+       until => 1700521200, # 2023-11-21 00:00
+       text  => 'Landschaftspark Johannisthal: Nord-Süd-Weg wegen Bauarbeiten voraussichtlich vom 8.11.2023 bis 20.11.2023 gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1382626.php
+#: XXX Nach den Bauarbeiten bessere Qualität?
+#: next_check: 2023-11-21
+	2::inwork 17976,3735 17975,3744 17953,3955
 EOF
      },
     );
