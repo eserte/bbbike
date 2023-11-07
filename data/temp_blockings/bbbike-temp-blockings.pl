@@ -17380,6 +17380,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
 #: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
 # REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
@@ -37377,7 +37378,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-11-01 (daf)
+#: last_checked: 2023-11-05 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -38123,7 +38124,7 @@ EOF
 #: osm_watch: way id="46907541" version="14"
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
-#: osm_watch: note 3631207 5
+#: osm_watch: note 3631207 6
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
@@ -38369,6 +38370,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: note: allerdings gibt es vor Ort keine Schilder mit den Öffnungszeiten wie an der Föhrer Str.
 	2::temp 6331,15408 6348,15423
 EOF
      },
@@ -40242,7 +40244,7 @@ EOF
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
 #: source_id: viz2021:13.33994,52.53982,01.06.2023,08:00 (bis 29.12.2023)
 #: osm_watch: way id="4543436" version="30"
-#: last_checked: 2023-10-06 (mapillary)
+#: last_checked: 2023-11-07
 #: check_frequency: 60d
 #: next_check: 2023-12-29
 	2::inwork 6213,14777 6210,14808
@@ -40640,7 +40642,7 @@ EOF
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: note: bei VIZ inaktiv, tatsächlich noch aktiv
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 14d
 	q3::inwork; 10722,11816 10815,11662
 EOF
@@ -41025,6 +41027,27 @@ EOF
 #: XXX Nach den Bauarbeiten bessere Qualität?
 #: next_check: 2023-11-21
 	2::inwork 17976,3735 17975,3744 17953,3955
+EOF
+     },
+     { from  => 1699340417, # 2023-11-07 08:00
+       until => 1704063600, # 2024-01-01 00:00
+       text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerung sind möglich)
+#: by: mapillary
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: next_check: 2023-12-31
+	2::inwork 9462,18234 9460,18053
+EOF
+     },
+     { from  => 1699333200, # 2023-11-07 06:00
+       until => 1700668800, # 2023-11-22 17:00
+       text  => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 22.11.2023 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023)
+	q4::inwork 10103,10989 10397,10852
 EOF
      },
     );

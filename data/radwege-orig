@@ -843,11 +843,11 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
 #: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
 #: osm_watch: way id="25217949" version="50"
-#: last_checked: 2023-10-06 (mapillary)
+#: last_checked: 2023-11-07
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
 #: XXX kommt hier noch ein Radwegschild hin?
 #: osm_watch: way id="374344536" version="18"
-#: last_checked: 2023-10-06 (mapillary)
+#: last_checked: 2023-11-07
 	RW3; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
@@ -2010,7 +2010,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2023-12-31 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2023-10-19 (webcam) vvv
+#: last_checked: 2023-11-07 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206
 #: note: vorher: provisorische Radspur, RW4;
@@ -2019,7 +2019,7 @@ provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10710,12377 10714,12355 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
-#: last_checked: 2023-08-25
+#: last_checked: 2023-11-07
 provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2720,7 +2720,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-10-27 vvv
+#: last_checked: 2023-11-07 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2815,7 +2815,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-10-24 (webcam)
+#: last_checked: 2023-11-07
 #: check_frequency: 30d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -6891,12 +6891,17 @@ asphaltiert	RW1;RW9 7437,12368 7215,12295 7031,12320
 # REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 8959,7824 9035,7810 9130,7810 9240,7811
 # REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9097,7469 9145,7522 9120,7600 9115,7645 9132,7661 9130,7810 9130,8029 9128,8251
 # REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9132,7661 9242,7658
-Radspur hinter den parkenden Autos	RW3; 8715,7384 8706,7585 8704,7603 8690,7704
+zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
+Radspur hinter den parkenden Autos	RW3; 8713,7423 8706,7585 8704,7603 8690,7704
+#: next_check_id: BOELCKE-2023
+#: XXX ist das nur provisorisch?
+#: last_checked: 2023-11-06
 zusammen mit Bushaltestelle	RW3; 8690,7704 8686,7726
 	RW3; 8686,7726 8642,7876
-Radspur hinter den parkenden Autos	RW3; 8642,7876 8627,7941 8623,8018 8620,8095
-	RW3; 8620,8095 8632,8174 8666,8305 8670,8370
-Radspur hinter den parkenden Autos	RW3; 8670,8370 8660,8454 8616,8605 8601,8724
+	RW3; 8642,7876 8627,7941
+Radspur hinter den parkenden Autos	RW3; 8627,7941 8623,8018 8620,8095
+	RW3; 8620,8095 8632,8174 8666,8305 8670,8370 8660,8454
+Radspur hinter den parkenden Autos	RW3; 8660,8454 8616,8605 8601,8724
 die letzten Meter sind benutzungspflichtig	RW3; 8601,8724 8594,8777
 	RW6;RW6 7716,8370 7716,8356 7715,8308
 	RW1; 3711,13210 3645,13206 3556,13200
@@ -8564,6 +8569,7 @@ Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,
 Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 6846,4808 6922,4794 7039,4773 7092,4763
 #: XXX Radweg wegen Bauarbeiten aufgehoben, Radfahrüberholverbot
 #: source_id: viz2021:13.354446,52.449029,22.05.2023,07:00 (bis 8.11.2023) (bis 10.01.2024)
+#: source_id: viz2021:13.35316,52.44914,07.11.2023,18:41 (bis 10.01.2024)
 #: last_checked: 2023-09-19 (mapillary)
 #: next_check: 2024-01-10
 	RW0; 7092,4763 7205,4741 7285,4724 7364,4704
@@ -8624,4 +8630,10 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13588,11490 13711,11
 # 
 	RW7;RW7 5219,9808 5203,9840 5194,9985 5191,10190 5192,10241 5196,10398
 	RW7;RW7 5192,10241 5223,10243
+# 
+#: by: osm vvv
+	RW7; 2490,25211 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437 3166,25496 3307,25554
+	RW7; 3166,25496 3185,25437
+	RW7; 3307,25554 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238 2615,25225 2490,25211
+#: by ^^^
 # 

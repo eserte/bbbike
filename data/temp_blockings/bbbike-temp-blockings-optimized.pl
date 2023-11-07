@@ -2422,6 +2422,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
 #: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
 # REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
@@ -6081,7 +6082,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="2"
-#: last_checked: 2023-11-01 (daf)
+#: last_checked: 2023-11-05 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -6397,7 +6398,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: osm_watch: way id="46907541" version="14"
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
-#: osm_watch: note 3631207 5
+#: osm_watch: note 3631207 6
 #: note: siehe auch Eintrag in gesperrt-orig
 	2::inwork 4064,2293 4209,2641 4247,2652
 	2::inwork 4209,2641 4220,2664
@@ -6514,7 +6515,8 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
          'until' => undef
        },
        {
-         'data' => '	2::temp 6331,15408 6348,15423
+         'data' => '#: note: allerdings gibt es vor Ort keine Schilder mit den Öffnungszeiten wie an der Föhrer Str.
+	2::temp 6331,15408 6348,15423
 ',
          'from' => undef,
          'id' => 3744,
@@ -7211,7 +7213,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
 #: source_id: viz2021:13.33994,52.53982,01.06.2023,08:00 (bis 29.12.2023)
 #: osm_watch: way id="4543436" version="30"
-#: last_checked: 2023-10-06 (mapillary)
+#: last_checked: 2023-11-07
 #: check_frequency: 60d
 #: next_check: 2023-12-29
 	2::inwork 6213,14777 6210,14808
@@ -7448,7 +7450,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: note: bei VIZ inaktiv, tatsächlich noch aktiv
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 14d
 	q3::inwork; 10722,11816 10815,11662
 ',
@@ -7814,6 +7816,29 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'text' => 'Landschaftspark Johannisthal: Nord-Süd-Weg wegen Bauarbeiten voraussichtlich vom 8.11.2023 bis 20.11.2023 gesperrt',
          'type' => 'gesperrt',
          'until' => 1700521200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerung sind möglich)
+#: by: mapillary
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: next_check: 2023-12-31
+	2::inwork 9462,18234 9460,18053
+',
+         'from' => 1699340417,
+         'id' => 3959,
+         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023',
+         'type' => 'gesperrt',
+         'until' => 1704063600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023)
+	q4::inwork 10103,10989 10397,10852
+',
+         'from' => 1699333200,
+         'id' => 3960,
+         'text' => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 22.11.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1700668800
        }
      
 );

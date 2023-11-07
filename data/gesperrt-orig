@@ -1175,7 +1175,6 @@ Cyclopstr.	1 5349,21198 5297,21243
 Dietrichinger Weg	1 5037,21659 5136,21738
 An den Fließtalhöfen	1s:q4 4474,23119 4432,23066 4444,22989
 Edelhofdamm	1 3456,25601 3307,25554
-Edelhofdamm	1 3277,25575 3446,25628
 Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
 Am Krummen Weg	1 -7169,14849 -7026,14890
@@ -3857,7 +3856,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: osm_watch: way id="4596985" version="22"
-#: last_checked: 2023-10-03
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4184,7 +4183,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="21"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2023-10-03
+#: last_checked: 2023-11-07
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4456,9 +4455,10 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-10-06 (daf)
-#: check_frequency: 30d
-George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030
+#: last_checked: 2023-11-07
+#: check_frequency: 45d
+George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136
+# REMOVED (offen) --- George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7614,14136 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
@@ -4583,6 +4583,7 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 #: by: https://www.berliner-woche.de/mitte/c-bauen/architekten-koennen-bis-november-ihre-entwuerfe-einreichen_a324605
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
+#: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2023-10-27
 #: check_frequency: 90d
@@ -4590,7 +4591,7 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-10-24 (webcam)
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -4625,7 +4626,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2023-10-27
+#: last_checked: 2023-11-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4811,7 +4812,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollständig aktiv; am 2023-02-10 war das Einbahnstraßenschild verschwunden, das Einfahrt-verboten-Schild aber noch da, am 2023-06-15 wieder weggedreht, am 2023-09-28 wieder da, möglicherweise bis Ende 2023?
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 60d
 #: next_check: 2023-12-31
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
@@ -4939,7 +4940,7 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-09-16 vvv
+#: last_checked: 2023-11-07 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -5073,7 +5074,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="34"
 #: also_indoor: traffic
-#: last_checked: 2023-10-20 (osm)
+#: last_checked: 2023-11-07
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
@@ -5206,12 +5207,12 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-09-29
+#: last_checked: 2023-11-07 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-09-29
+#: last_checked: 2023-11-07 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

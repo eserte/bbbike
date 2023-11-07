@@ -18,7 +18,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023)
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 #: next_check: 2023-12-01
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -306,7 +306,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -322,7 +322,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-09-20 vvv
+#: last_checked: 2023-11-07 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -344,7 +344,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-10-24 (webcam)
+#: last_checked: 2023-11-07
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -970,12 +970,12 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://mein.berlin.de/vorhaben/2023-00780/ (Abschluss der Bauarbeiten voraussichtlich noch 2023)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022 (kann vermutlich nicht gehalten werden)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="19"
-#: osm_watch: way id="885619858" version="14"
+#: osm_watch: way id="885619857" version="20"
+#: osm_watch: way id="885619858" version="15"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (G,B,W)
 #: priority: #B
-#: last_checked: 2023-10-19 vvv
+#: last_checked: 2023-11-07 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -3248,7 +3248,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3965,9 +3965,10 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6305,14964
 #: next_check_id: VIRCHOW-2023
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6305,14964 6231,14952
+#: XXX hat möglicherweise was mit den Leitungsarbeiten am Nordufer zu tun
 #: osm_watch: way id="1168244288" version="1"
-#: last_checked: 2023-10-03 (Absperrungen von weitem gesehen)
-#: check_frequency: 30d
+#: last_checked: 2023-11-07
+#: check_frequency: 60d
 Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6231,14952 6159,14921 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6400,15080 6395,15109 6380,15210

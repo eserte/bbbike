@@ -660,10 +660,13 @@ Ringstr.: Asphalt	Q0 3507,3654 3558,3688
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 7209,18682 7003,18715 6879,18737 6793,18763 6716,18788 6572,18793 6528,18808 6435,18839
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6572,18793 6734,18728 6775,18726 6869,18721 7003,18715
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6528,18808 6535,18846 6502,18905
-Edelhofdamm: Kleinsteinpflaster	Q2 3456,25601 3307,25554
+#: historical_note: früher bis 2023: Kleinsteinpflaster, Q2
+#: by: osm (neu gemacht)
+Edelhofdamm: Asphalt	Q0 3456,25601 3307,25554
 Edelhofdamm: Asphalt	Q0 3307,25554 3166,25496
-#: note: die ersten Meter noch asphaltiert
-Edelhofdamm: Kleinsteinpflaster	Q2 3446,25628 3277,25575
+#: historical_note: früher bis 2023: die ersten Meter noch asphaltiert, Kleinsteinpflaster, Q2
+#: by: osm (neu gemacht)
+Edelhofdamm: Asphalt	Q0 3446,25628 3277,25575
 # REMOVED (nur ein Zebrastreifen wurde erstellt) --- #: XXX ist nach den Bauarbeiten hier asphaltiert oder gibt es sonstige Änderungen? --- #: source_id: IM_021700 --- #: next_check: 2014-07-04
 Zepernicker Str.: Kopfsteinpflaster, OK	Q1 17259,26148 17218,26121 17039,25861
 Zepernicker Str.: asphaltiert	Q0 17039,25861 17011,25830
@@ -1088,7 +1091,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="19"
-#: last_checked: 2023-10-03
+#: last_checked: 2023-11-07
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-09-30
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -1122,7 +1125,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-11-04
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -9494,7 +9497,9 @@ Unkeler Pfad: Kleinsteinpflaster	Q1 3398,24991 3476,24994
 Rodelbahnpfad: Asphalt mit Schäden	Q1- 3460,25132 3426,25108 3403,25066 3399,25032
 Rüdesheimer Str. (Frohnau): Asphalt	Q0 2818,25022 2816,25037
 Rüdesheimer Str. (Frohnau): Kleinsteinpflaster	Q2+ 2816,25037 2910,25064 3111,25170 3174,25213 3232,25234 3314,25243
-Edelhofdamm: Kopfsteinpflaster	Q2 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437
+#: historical_note: früher bis 2023: Kopfsteinpflaster, Q2
+#: by: osm (neu gemacht)
+Edelhofdamm: Asphalt	Q0 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437
 Edelhofdamm: Asphalt	Q0 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
 Edelhofdamm: Asphalt	Q0 2615,25225 2490,25211
 Koppelweg (Frohnau): Verbundsteinpflaster	Q1 2928,25547 3044,25558

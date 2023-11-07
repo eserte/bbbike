@@ -735,6 +735,7 @@ Alt-Tempelhof/Schönburgstr.: Überquerungshilfe in Planung	?::projected 8961,6662
 Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 8560,2181 8490,2084 8401,1938 8335,1806 8241,1617 8152,1425 8070,1261 8031,1172 7902,893
 # REMOVED (wahrscheinlich bleibt der Bürgersteigradweg hier) --- Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 7902,893 7884,851 7867,831
 # 
+#: next_check_id: BOELCKE-2023
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf
@@ -791,7 +792,7 @@ Boelckestr.: Bau neuer Radverkehrsanlagen (Radspuren)	?::inwork; 8594,8777 8601,
 #: last_checked: 2023-11-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-10-27
-Boelckestr.: Bau neuer Radverkehrsanlagen (Radspuren)	?::inwork; 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
+Boelckestr.: Bau neuer Radverkehrsanlagen (Radspuren)	?::inwork; 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8713,7423 8715,7384 8716,7323
 #: by: ^^^
 #### END Fahrrat-Tempelhof-Liste
 # 
@@ -1073,6 +1074,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 # REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021) (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021) (inaktiv)
+#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024)
 #: last_checked: 2023-10-30
 #: check_frequency: 90d
 #: next_check: 2023-11-08
@@ -1090,9 +1092,11 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 1
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17601,5090 17542,4772 17516,4657
 # 
 #: XXX Jt.3
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1383068.php (Straßenbahnverlängerung bis 2029; was bedeutet das für die RVA-Planungen?)
 #: osm_watch: way id="132688411" version="17"
 #: last_checked: 2023-09-12
 #: check_frequency: 90d
+#: next_check: 2029-12-31
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 # 
 #: XXX Jt.4
@@ -1392,7 +1396,7 @@ Grünauer Weg: Verbesserung der Befahrbarkeit	?::projected 25182,-2915 25174,-290
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
-#: last_checked: 2023-10-03
+#: last_checked: 2023-11-07
 #: check_frequency: 180d
 Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 # 
@@ -2175,22 +2179,6 @@ Waldstr.: Radwege werden saniert	?::inwork 4211,18882 4346,18853 4466,18831 4570
 Oraniendamm: "Grundlagenermittlung für Radverkehrsanlagen"	?::projected 4724,22376 4837,22180 4859,22142 4884,22097 4925,22022 5067,21831 5136,21738
 #: by: ^^^
 # 
-#: next_check_id: EDELHOFDAMM-2023
-#: by: https://berliner-abendblatt.de/2022/04/21/qm-lichtenrade/ (außerdem Edelhofdamm als Fahrradstraße; Realisierung bis Ende 2023)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1315351.php (Umsetzung 2023)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11481 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11532 (Einwohneranfrage)
-#: by: http://www.infravelo.de/projekt/edelhofdamm-1/ (2. Quartal 2023 - 4. Quartal 2023)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11752 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11791 (Einwohneranfrage)
-#: osm_watch: way id="688087510" version="18"
-#: osm_watch: way id="844709935" version="22"
-#: osm_watch: way id="1182168215" version="3"
-#: note: Laut osm wurden Fahrradstraßenschilder schon teilweise aufgestellt
-#: last_checked: 2023-06-26 (osm)
-#: next_check: 2023-10-27
-Edelhofdamm: hier soll eine Fahrradstraße entstehen	?::inwork 3446,25628 3277,25575 3307,25554 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238 2615,25225 2490,25211
-# 
 #: by: http://www.infravelo.de/projekt/buckower-damm-1/ (1. Quartal 2025 - 2. Quartal 2025)
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/VZPL_Buckower_Damm_01.pdf
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/VZPL_Buckower_Damm_02.pdf
@@ -2272,7 +2260,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-vollendung-band-des-bundes-in-entwicklung/?postID=739447#post739447 (Erwähnung)
-#: last_checked: 2023-10-15 (mapillary)
+#: last_checked: 2023-11-07
 #: check_frequency: 120d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::projected 8870,12647 8754,12622
 # 
@@ -3340,7 +3328,7 @@ Uferweg in Bau	?::inwork 7797,14317 7769,14364
 # REMOVED --- #: osm_watch: way id="237716430" version="7"
 # REMOVED --- #: XXX welchen Namen bekommt dieser Weg? Annemarie-Renger-Str. wird es wohl nicht... --- #: XXX Kleinsteinpflaster, Q1, noch keine Ausschilderung --- Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich entsteht hier	?::inwork 8057,13923 7997,13892 7910,13848 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2023-10-06 (daf) vvv
+#: last_checked: 2023-11-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED (eingetragen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_23_2881_3012_online.pdf (Straßenbenennung) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neues-stadtquartier-an-der-heidestrasse-waechst_a286237 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_38_4713_4844_online.pdf (Grundstücksnummerierungen) --- #: XXX fehlt in Berlin.coords.data, PLZ=10557 --- George-Stephenson-Str.: Geplante Straße; Qualität? Genaue Lage?	?::projected 7487,14472 7452,14415 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenbenennung)
@@ -3724,9 +3712,9 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11389 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11399 (Antrag)
 #: XXX genauer Abschnitt? Laut Bildern bei osm ist zumindest in Höhe Claudiusstr. asphaltiert.
-#: osm_watch: way id="1101059959" version="6"
+#: osm_watch: way id="1101059959" version="7"
 #: osm_watch: way id="137501596" version="17"
-#: last_checked: 2023-10-11
+#: last_checked: 2023-11-07 (osm)
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 # REMOVED (hier realisiert) --- Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::inwork 6182,12900 6123,12887 6045,12830 6001,12699 5953,12592
@@ -3840,6 +3828,12 @@ Isenburger Weg: Neubau der Straße geplant	?::projected -7819,15342 -7867,15185 -
 #: last_checked: 2023-06-19 (mapillary)
 #: check_frequency: 360d
 Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahrerbereich geplant	?::projected 13372,19707 13171,19837
+# 
+#: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
+#: last_checked: 2023-11-07 (zwei Torbögen sind noch offen, Durchfahrt ist möglich)
+#: check_frequency: 2d
+Brandenburger Tor: Sanierungsarbeiten, Gerüst wurde aufgebaut, sind Radfahrer von Einschränkungen betroffen?	? 8637,12258 8592,12252 8538,12245
 # 
 #: section ^^^
 #: ignore ^^^
@@ -4082,7 +4076,7 @@ Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/torstrasse/lageplan_05.pdf (Popup-Radweg im weiteren Verlauf der Torstr.)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/buergerbeteiligung-fuer-die-torstrasse-gestartet_a338873
 #: by: https://www.nd-aktuell.de/artikel/1176955.verkehr-linke-berlin-kostenlos-strampeln-fuer-alle.html (Baubeginn frühestens 2025)
-#: last_checked: 2023-10-11
+#: last_checked: 2023-11-07
 #: next_check: 2025-06-30
 Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 9670,13637 9579,13604 9508,13578 9391,13535 9353,13521 9212,13471
 # 
@@ -4385,7 +4379,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 # 
 #: next_check_id: VIRCHOW-2023
 #: XXX zurzeit wegen Bauarbeiten komplett gesperrt; vermutlich komplett 20km/h-Zone; Öffnungszeiten, Schranken? nach den Bauarbeiten überprüfen! vvv
-#: last_checked: 2023-08-17 vvv
+#: last_checked: 2023-11-07 vvv
 #: check_frequency: 60d vvv
 (Virchow-Klinikum, Einfahrt Sylter Str.)	? 5848,14977 5867,14993 5879,14981
 #: XXX hier: Einbahnstraße
@@ -5031,6 +5025,7 @@ Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6164,12980 6183,
 #: next_check: 2026-12-31
 Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13845 4963,13969 5089,14010 5220,14043 5222,14043
 # 
+#: next_check_id: AMRUMER-2023
 #: by: https://api.fixmyberlin.de/api/plannings/48 (2019 soll mit dem Vorhaben begonnen werden, die Bauarbeiten können sich aber noch verschieben)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (Umsetzung 2019)
@@ -5060,11 +5055,12 @@ Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13
 #: source_id: viz2021:13.346694,52.544122,09.08.2022,07:30 (Fahrbahnsanierung bis 6.9.2022) (bis 23.9.2022) (bis 30.9.2022) (bis 28.10.2022) (inaktiv)
 #: source_id: viz2021:13.345126,52.545327,06.02.2023,07:00 (Leitungsarbeiten bis 6.3.2023) (inaktiv)
 #: osm_watch: way id="222005890" version="26"
-#: last_checked: 2023-06-22
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2022-10-28
-#: next_check: 2023-12-31
-Amrumer Str.: Planung einer protected bike lane (hier wegen Hochbauarbeiten später?)	?; 6239,15553 6348,15423
+#: XXX Hochbauarbeiten sind mittlerweile beendet, aber der Lückenschluss ist (noch?) nicht erfolgt
+#: last_checked: 2023-11-07
+#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2023-12-31
+Amrumer Str.: Planung einer protected bike lane (hier auch?)	?; 6239,15553 6348,15423
 # REMOVED (hier weitgehend realisiert) --- Amrumer Str.: Planung einer protected bike lane	?; 6348,15423 6375,15391 6474,15278 6562,15177
 # 
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/49 (Ostseite) --- #: by: http://www.infravelo.de/projekt/amrumer-strasse/ (2. Quartal 2021 bis 4. Quartal 2021; keine bauliche Trennung) (mittlerweile: 2. Quartal 2022 - 4. Quartal 2022) (mittlerweile bis 3. Quartal 2022) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (geschützte Radstreifen 2021) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/geschuetzter-radfahrstreifen-radfahrstreifen-in-der-amrumer-strasse-1077118.php --- #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html --- #: source_id: 2147344860 (bis Mitte Dezember 2019, Leitungsarbeiten) (inaktiv) --- #: source_id: viz2021:13.349475,52.542176,24.06.2022,06:00 (inaktiv) --- #: last_checked: 2022-04-09 --- #: check_frequency: 120d --- # REMOVED --- #: next_check: 2022-09-30 --- #: next_check: 2022-07-31 --- Amrumer Str.: Planung eines Radfahrstreifens	?; 6562,15177 6474,15278 6375,15391 6348,15423 6239,15553
@@ -5330,7 +5326,7 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -5355,11 +5351,11 @@ Huttenstr. 12/Nähe Berlichingenstr.: Zebrastreifen geplant	?::projected 4916,135
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: source_id: 2147347007 (Fernwärmebau bis 25.6.2022, hat das auch Auswirkungen auf den Zebrastreifen?) (inaktiv)
 #: priority: #D
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
-#: last_checked: 2023-09-29
-#: check_frequency: 90d
+#: last_checked: 2023-11-07 (haben Arbeiten am Zebrastreifen begonnen?)
+# REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-31
 Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,11976 8783,11959 8824,11934
 # 
@@ -5417,7 +5413,7 @@ Fontanestr. 15: Zebrastreifen in Bau	?::work 982,8596 972,8626 1002,8618
 Lipschitzallee/Wildmeisterdamm: Zebrastreifen geplant	?::projected 14734,2337 14744,2308 14756,2277
 #: last_checked: 2023-09-15 (mapillary)
 Reginhardtstr. 172: Zebrastreifen geplant	?::projected 7804,18352 7861,18333 7830,18388
-#: last_checked: 2023-10-03
+#: last_checked: 2023-11-07
 Schulzendorfer Str./Kunkelstr.: Zebrastreifen geplant	?::projected 8199,14942 8219,14908 8195,14867
 #: last_checked: 2023-10-19
 Pistoriusstr./Mirbachplatz (Westseite): Zebrastreifen geplant	?::projected 13319,16453 13331,16424 13307,16409
@@ -5923,7 +5919,7 @@ Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht 
 #: last_checked: 2023-10-22
 #: check_frequency: 120d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
-#: osm_watch: way id="25760211" version="16"
+#: osm_watch: way id="25760211" version="18"
 #: last_checked: 2023-09-13
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17255,11077 17322,11296
@@ -5932,7 +5928,7 @@ Eggersdorfer Str.: Asphaltierung	?::projected 17255,11077 17322,11296
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/im-bezirk-hat-sich-der-fahrrat-fuer-diese-legislaturperiode-neu-gegruendet_a347315 (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (Umbau im Rahmen des Projekts "Gleisschleife Gehrenseestraße")
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=49b7b3a5-f36d-46b2-b3ff-9ee601b14d9f
-#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/49b7b3a5-f36d-46b2-b3ff-9ee601b14d9f/P1505-Gleisschleife%20Gehrenseestr-1%2FUL07.1_Lageplan_gesiegelt.pdf (Zweiwegeradweg bis zum Kreuzungsbereich Wartenberger/Malchower Str.; evtl. wird die bestehende Diagonalverbindung zur südlichen Seefelder Str. zum offiziellen Radweg gemacht; außerdem wird im Bereich der dann ehemaligen Straßenbahnstrecke in der Wartenberger Str. wohl ein Hochbordradweg entstehen)
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/49b7b3a5-f36d-46b2-b3ff-9ee601b14d9f/P1505-Gleisschleife%20Gehrenseestr-1%2FUL07.1_Lageplan_gesiegelt.pdf (Zweiwegeradweg bis zum Kreuzungsbereich Wartenberger/Malchower Str.; evtl. wird die bestehende Diagonalverbindung zur südlichen Seefelder Str. zum offiziellen Radweg gemacht; außerdem wird im Bereich der dann ehemaligen Straßenbahnstrecke in der Wartenberger Str. wohl ein Hochbordradweg (1,60m breit) entstehen)
 #: last_checked: 2023-07-08
 #: check_frequency: 360d
 Seefelder Str.: Radweganbindung	?::projected 17362,16189 17383,16197
@@ -6436,7 +6432,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: https://luisenblock.berlin.de/2022/08/16/verfahrenspause/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/bundestag-parlament-fast-900-millionen-euro-fuer-das-naechste-bundestagsprojekt-li.340187 (zum Luisenblock Ost)
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-vollendung-band-des-bundes-in-entwicklung/?postID=739442#post739442 (Bauarbeiten 2027 bis 2032/2034)
-#: last_checked: 2023-08-26
+#: last_checked: 2023-11-07
 #: check_frequency: 720d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -6691,7 +6687,7 @@ Mauerweg: Untertunnelung der Dresdener Bahn	?::inwork 10460,-3199 10687,-3270
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2023-10-24
+#: last_checked: 2023-11-07
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -6878,7 +6874,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2023-11-06
+#: last_checked: 2023-11-07
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7102,7 +7098,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18266,9853 18066,9770 1792
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024)
-#: last_checked: 2023-11-05
+#: last_checked: 2023-11-07
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7139,7 +7135,7 @@ Stallschreiberstr.: Fahrradstraße geplant	?::projected 10794,10927 10824,11010 1
 #: by: https://www.infravelo.de/projekt/wallstrasse/ (3. Quartal 2023 - 4. Quartal 2023)
 #: note: Fahrbahnmarkierung zwischen Französische Str. und Leipziger Str. schon fertig, noch keine Schilder
 #: note: Fahrbahnmarkierung zwischen Neue Roßstr. und Neue Grünstr. sowie Märkisches Museum und Jannowitzbrücke schon fertig, noch keine Schilder
-#: last_checked: 2023-10-29 vvv
+#: last_checked: 2023-11-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-31 vvv
 Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161 9913,12068 9925,11947 9991,11903 10079,11845 10132,11810 10189,11773 10205,11758
@@ -7191,7 +7187,7 @@ Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 2188
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11864 (Anfrage)
 #: XXX wird es Änderungen für den Radverkehr geben?
-#: last_checked: 2023-10-24
+#: last_checked: 2023-11-07
 #: check_frequency: 180d
 # REMOVED (keine Anzeichen für Bauarbeiten) --- #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
@@ -7498,7 +7494,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=18B1427E-DCE6-45CE-A2D8-3AE59415C594
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.3_Einschraenkung_Strassenverkehr.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.4_Einschraenkung_Fuss-_und_Radweg.pdf
-#: last_checked: 2023-10-27 vvv
+#: last_checked: 2023-11-07 vvv
 #: next_check: 2024-06-01 vvv
 Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)	? 11139,12243 11155,12184 11278,12185
 #: next_check ^^^
@@ -7518,7 +7514,7 @@ Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. G
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_44_2977_3032_online.pdf (Straßenlandwidmung, vermutlich der schon bestehende Abschnitt der Promenade)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_54_3861_3956_online.pdf (Eingruppierung in das Straßenreinigungsverzeichnis (der bestehende Abschnitt))
 #: XXX ein paar Meter existieren bereits; wird die Uferpromenade bis an die Spree reichen?
-#: last_checked: 2023-10-11
+#: last_checked: 2023-11-07
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-30
 Humboldthafen: Verlängerung der Uferpromenade	?::inwork 8119,13396 8118,13222 8160,13171 8159,13032
@@ -7610,7 +7606,7 @@ Stralauer Platz: geschützte Radspuren	?::projected; 12497,11459 12180,11657
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1334392.php (Erwähnung der Fahrradstraße)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/lynarstrasse-1271236.php
 #: osm_watch: way id="220647519" version="23"
-#: last_checked: 2023-10-06 (mapillary)
+#: last_checked: 2023-11-07
 #: check_frequency: 60d
 #: next_check: 2023-12-31
 Lynarstr.: Fahrradstraße entsteht, Poller in Höhe Sparrplatz	? 7259,14870 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
@@ -7672,14 +7668,14 @@ Stadthausstraße: Abschnitt unter der Unterführung wird für den Kfz-Verkehr einge
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2023-10-24
+#: last_checked: 2023-11-07
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (BVV-Beschluss)
 #: XXX Wie wird die Situation für Radfahrer aussehen (handicap-Eintrag?)
-#: last_checked: 2023-10-13
+#: last_checked: 2023-11-07
 #: check_frequency: 120d
 Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezogen" werden	? 9478,11317 9474,11360 9468,11412
 # 
@@ -7721,6 +7717,7 @@ Seeburger Str. - Ritterfelddamm: Weg, Qualität?	? -8719,8161 -8709,8082 -8731,78
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1297453.php (Einleitung des Umbenennungsverfahrens)
 #: by: https://berliner-abendblatt.de/kiez-news/charlottenburg/aus-joachimsthaler-platz-wird-gruenfeld-ecke-id208414
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Umbenennung, Wirksamkeit zum 8. November 2023)
+#: osm_watch: note 3977460 1
 #: last_checked: 2023-09-29
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-11-08
@@ -8050,9 +8047,9 @@ Müncheberger Str.: Einziehung des Straßenabschnitts angekündigt	?::projected 125
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/tucho-wird-fahrradstrasse_a390177
 #: by: https://www.infravelo.de/projekt/tucholskystrasse/ (3. Quartal 2023 - 4. Quartal 2023)
 #: XXX außerdem: Linienstraße bekommt Vorfahrt an der Kreuzung mit der Tucholskystraße; sowie Tucholskystraße an der der Kreuzung mit der Auguststraße
-#: XXX Fahrbahnmarkierung und Ausschilderung im nördlichen Abschnitt fertig, an der südlichen Einfahrt fehlt noch das Fahrradstraßenschild
-#: last_checked: 2023-10-27
-#: check_frequency: 7d
+#: XXX Fahrbahnmarkierung und Ausschilderung im nördlichen Abschnitt fertig, an der südlichen Einfahrt fehlt die Markierung und das Fahrradstraßenschild, außerdem fehlt der/die modale/n Filter
+#: last_checked: 2023-11-07
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-09-30
 Tucholskystr.: Fahrradstraße wird eingerichtet	? 9611,13245 9651,13406 9609,13522 9579,13604
 # 
