@@ -367,7 +367,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342170 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72 (möglicherweise inaktiv)
-#: osm_watch: way id="336565341" version="16"
+#: osm_watch: way id="336565341" version="17"
 #: last_checked: 2023-10-22
 #: check_frequency: 120d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -898,7 +898,7 @@ S Adlershof - Köpenicker Str.: wird hier eine neue Verbindung entstehen?	?::proj
 #: XXX Ag.1
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/ersatzneubau-der-altglienicker-bruecke-soll-2025-beginnen_a328502 (möglicherweise "Verbreiterung des Brückenquerschnitts")
 #: osm_watch: way id="144909690" version="17"
-#: last_checked: 2023-09-24
+#: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 120d
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 20196,2392 20212,2354 20154,2283 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
 # 
@@ -926,7 +926,7 @@ Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472
 # 
 #: XXX Ag.8
 #: osm_watch: way id="4920787" version="36"
-#: last_checked: 2023-07-15
+#: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 120d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 19769,-495 19787,-494 19912,-496 20048,-499 20127,-502
 # 
@@ -953,7 +953,7 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: source_id: viz2021:13.541546,52.419441,13.03.2023,09:00 (Tiefbauarbeiten, Gegenverkehrsregelung, bis 11.04.2023) (bis 24.04.2023) (bis 05.05.2023) (inaktiv)
 #: osm_watch: way id="152466386" version="18"
 #: osm_watch: way id="493763039" version="10"
-#: last_checked: 2023-09-20 (mapillary)
+#: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 120d
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 # 
@@ -3391,7 +3391,6 @@ Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,1014
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (noch keine Mittelzusage)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar)
-#: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (Gegenverkehrsregelung in der Nähe, bis 23.04.2025)
 #: last_checked: 2023-11-06
 #: check_frequency: 120d
 Möckernstr./Obentrautstr.: Zebrastreifen geplant	?::projected 8809,10190 8790,10157 8769,10139
@@ -3405,7 +3404,7 @@ Finckensteinallee/Baseler Str.: Zebrastreifen geplant	?::projected 3147,2888 317
 #: last_checked: 2023-09-17
 #: check_frequency: 120d
 Poelchaustr./Langhoffstr.: Zebrastreifen geplant	?::projected 19807,14492 19817,14459 19803,14430
-#: last_checked: 2023-10-22
+#: last_checked: 2023-11-05 (mapillary)
 #: check_frequency: 120d
 Havemannstr./Flämingstr.: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der Havemannstr., oder einer auf der Flämingstr.?)	?::projected 21427,18452 21446,18405 21399,18406
 #: last_checked: 2023-06-03
@@ -3454,7 +3453,7 @@ Boelckestr./Fritz-Bräuning-Promenade: Zebrastreifen entsteht	?::inwork 8596,8043
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7459 (neuer Antrag zu einer Straßenquerung in der Gegend)
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: XXX siehe auch provisorische Fußgängerampel an dieser Stelle
-#: last_checked: 2023-10-30
+#: last_checked: 2023-11-01 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 360d
 Südostallee/Im Brombeerwinkel: Zebrastreifen geplant	?::projected 17490,5422 17473,5471 17528,5471
@@ -5086,7 +5085,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (noch nicht terminiert)
-#: last_checked: 2023-06-03
+#: last_checked: 2023-10-31 (mapillary)
 #: check_frequency: 180d
 Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907 8430,15901 8271,15734 8176,15635 8156,15614 8049,15470
 # 
@@ -5360,10 +5359,10 @@ Huttenstr. 12/Nähe Berlichingenstr.: Zebrastreifen geplant	?::projected 4916,135
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: source_id: 2147347007 (Fernwärmebau bis 25.6.2022, hat das auch Auswirkungen auf den Zebrastreifen?) (inaktiv)
 #: priority: #D
-#: last_checked: 2023-11-07 (haben Arbeiten am Zebrastreifen begonnen?)
+#: last_checked: 2023-11-07 (Arbeiten am Zebrastreifen haben begonnen)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-31
-Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,11976 8783,11959 8824,11934
+Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen wird gebaut	?::inwork 8805,11932 8783,11959 8790,11989
 # 
 # REMOVED (wurde realisiert) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt) --- #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2023) --- #: XXX mittlerweile existiert hier eine Baustellenampel wegen der Hochbauarbeiten --- #: priority: #D --- #: last_checked: 2022-01-03 --- #: check_frequency: 180d --- #: next_check: 2023-12-31 --- Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
 # 
@@ -7651,7 +7650,7 @@ Wendenschloßstr./Dregerhoffstr.: Fußgängerampel geplant	?::projected 22870,2695 
 #: XXX im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data):
 #: XXX Johannisplatz (PLZ=10117 laut LOR und DPAG)
 # REMOVED --- #: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR und DPAG)
-#: last_checked: 2023-10-27 vvv
+#: last_checked: 2023-10-31 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-03-31 vvv
 #: osm_watch: way id="941599318" version="5"
@@ -7724,7 +7723,8 @@ Seeburger Str. - Ritterfelddamm: Weg, Qualität?	? -8719,8161 -8709,8082 -8731,78
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1297453.php (Einleitung des Umbenennungsverfahrens)
 #: by: https://berliner-abendblatt.de/kiez-news/charlottenburg/aus-joachimsthaler-platz-wird-gruenfeld-ecke-id208414
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Umbenennung, Wirksamkeit zum 8. November 2023)
-#: osm_watch: note 3977460 1
+# REMOVED (closed) --- #: osm_watch: note 3977460 1
+#: osm_watch: node id="6665083790" version="4"
 #: last_checked: 2023-09-29
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-11-08
@@ -7869,10 +7869,11 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1372807.php (Bauarbeiten ab 9.10.2023 bis voraussichtlich 24. November 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959
 #: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023)
-#: last_checked: 2023-09-24
+#: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2023-11-24
-Adlergestell: Radspur auch stadteinwärts	?::inwork; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
+# REMOVED (hier nicht, erst ab Altheider Str.) --- Adlergestell: Radspur auch stadteinwärts	?::inwork; 19904,3464 19857,3514 19812,3561
+Adlergestell: Radspur auch stadteinwärts	?::inwork; 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
 # 
 # REMOVED --- #: XXX Evtl. wird das die neue "Straße E", und die alte Straßenführung wird degradiert? Oder zumindest der Straßenname entfernt? --- #: osm_watch: way id="1082018403" version="2" --- #: osm_watch: way id="1082018401" version="2" --- #: last_checked: 2023-03-21 --- Innovationspark: neue asphaltierte Straße	?::inwork 21294,7189 21233,7246
 # 

@@ -35001,11 +35001,11 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
 #: note: Kann außerhalb der Arbeitszeiten offen sein, gesehen am 2022-12-26, 2022-12-28, 2023-02-25 (Sa), 2023-06-11 (So), 2023-06-23 (Fr) gegen 20 Uhr, 2023-07-01 (Sa) vvv
-#: last_checked: 2023-09-30 vvv
+#: last_checked: 2023-11-08 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-02-12 vvv
 # REMOVED (laut daf freigegeben) --- #: osm_watch: way id="4395450" version="36" ---	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="23"
+#: osm_watch: way id="505363417" version="24"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -37901,8 +37901,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
-#: also_indoor: traffic (none)
-#: last_checked: 2023-10-30
+#: also_indoor: traffic (G[falsch],W[falsch])
+#: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -38755,11 +38755,11 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
-#: osm_watch: way id="1172668082" version="9"
+#: osm_watch: way id="1172668082" version="10"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-10-22 (osm)
+#: last_checked: 2023-11-08 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
@@ -40634,7 +40634,7 @@ EOF
 EOF
      },
      { from  => 1695531600, # 2023-09-24 07:00
-       until => undef, # 1698681600, # 2023-10-30 17:00
+       until => 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
        dont_check_date => 1,
        text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00, evtl. wird verlängert',
        type  => 'handicap',
@@ -40642,8 +40642,7 @@ EOF
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: note: bei VIZ inaktiv, tatsächlich noch aktiv
 #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
-#: last_checked: 2023-11-07
-#: check_frequency: 14d
+# REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
 	q3::inwork; 10722,11816 10815,11662
 EOF
      },
@@ -40711,7 +40710,7 @@ EOF
        data  => <<EOF,
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
-#: osm_watch: way id="4543441" version="37"
+#: osm_watch: way id="4543441" version="38"
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
 EOF
      },
