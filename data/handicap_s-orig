@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-11-06
+#: last_checked: 2023-11-08
 #: next_check: 2023-12-15
 #: valid: -20231215
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -32,7 +32,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-11-04 vvv
+#: last_checked: 2023-11-08 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-12-29 vvv
 #: valid: -20231229 vvv
@@ -629,14 +629,10 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-10-29 vvv
-#: check_frequency: 180d vvv
-#: next_check: 2027-01-01 vvv
+#: last_checked: 2023-11-08 (daf)
+#: check_frequency: 180d
+#: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
-Matthäikirchplatz: Fahrbahn gesperrt	q4::inwork 7970,11396 7934,11275
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 # REMOVED (offen) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant) --- #: by: https://www.tagesspiegel.de/berlin/spaeter-als-geplant-neue-nationalgalerie-in-berlin-wird-erst-mitte-august-2021-eroeffnet/26645770.html (Eröffnung Mitte August 2021) --- # REMOVED --- #: XXX laut Plakatwerbung wird am 22.8.2021 eröffnet --- #: XXX Straße fertig asphaltiert, aber noch durch Bauzäune abgesperrt --- #: last_checked: 2022-03-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-08-22 --- Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inwork 7874,11293 7828,11133
 # REMOVED (eigentlich keine Behinderungen durch die Bauarbeiten) --- #: next_check_id: MUSEUMDERMODERNE-2021 --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam) --- #: last_checked: 2021-12-29 --- #: check_frequency: 90d --- Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
