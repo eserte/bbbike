@@ -2263,7 +2263,8 @@ Selma-Lagerlöf-Str.: Asphalt mit Wurzelhebungen	Q1 11782,17222 11768,17296 11729
 Eschengraben: Asphalt	Q0 11613,16747
 Eschengraben: Kopfsteinpflaster	Q2 11613,16747 11559,16747
 Eschengraben: Asphalt	Q0 11559,16747 11504,16746 11473,16746
-Eschengraben: Kopfsteinpflaster	Q2 11473,16746 11441,16745 11428,16745
+Eschengraben: Kopfsteinpflaster	Q2 11473,16746 11441,16745
+Eschengraben: Asphalt mit einigen Schäden	Q1 11441,16745 11428,16745
 Eschengraben: Asphalt	Q0 11428,16745 11369,16744 11351,16744
 Eschengraben: Kopfsteinpflaster	Q2 11351,16744 11274,16743 11008,16729
 Tiroler Str.: schlechter Asphalt	Q1 10862,17087 10654,17091 10497,17095 10226,17098 10114,17098
@@ -3574,7 +3575,7 @@ Johannes-Itten-Str.: Asphalt	Q0 12797,16983 12850,16911 12813,16884
 Lewaldstr.: Kopfsteinpflaster	Q2 11401,16265 11470,16394
 Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
 (Prenzlauer Allee - Ostseestr.): Asphalt	Q1 12154,15902 12198,15999 12254,16097
-Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11903,15874
+Meyerheimstr.: leicht welliger Asphalt	Q0 11852,15765 11903,15874
 Meyerheimstr.: Asphalt	Q0 11903,15874 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
@@ -11783,7 +11784,7 @@ Lacknerstr.: Asphalt	Q0 6309,4328 6416,4452
 Pankstr. (Französisch Buchholz): Asphalt	Q0 12609,20935 12519,20870 12434,20809
 Waldowstr. (Mahlsdorf): Asphalt	Q0 24401,11509 24421,11601 24444,11725
 Waldowstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 24444,11725 24491,11972
-Paul-Grasse-Str.: löchriger Beton	Q2 12783,15921 12583,16025
+Paul-Grasse-Str.: Asphalt	Q0 12783,15921 12583,16025
 Paul-Grasse-Str.: mäßiges Kopfsteinpflaster	Q2 12583,16025 12423,16109
 Enkenbacher Weg: guter Asphalt	Q0 27854,330 27734,437 27621,535 27548,598 27471,664 27393,732 27329,786 27263,839 27234,874 27225,907 27231,962 27280,1119 27325,1265
 Enkenbacher Weg: Verbundsteinpflaster	Q0 27325,1265 27344,1329
@@ -14833,7 +14834,8 @@ Klosterheider Weg: Beton, mit Schäden	Q1 2842,23482 2742,23513 2621,23609
 Klosterheider Weg: Asphalt	Q0 2621,23609 2490,23720
 Klosterheider Weg: Beton	Q1 2490,23720 2522,23761 2582,23814 2638,23856
 Klosterheider Weg: Asphalt	Q0 2638,23856 2663,23875
-Baumbachstr.: guter Beton	Q0 11448,16398 11447,16507 11440,16622
+Baumbachstr.: guter Beton, kurzer Kopfsteinpflasterabschnitt	Q1 11448,16398 11447,16507
+Baumbachstr.: guter Beton	Q0 11447,16507 11440,16622
 Baumbachstr.: schlechtes Kopfsteinpflaster	Q3 11440,16622 11441,16745
 Feldtmannstr.: Asphalt	Q0 16460,17214 16418,17311 16380,17356 16326,17407 16313,17424
 Feldtmannstr.: mäßiges Kopfsteinpflaster	Q2 16313,17424 16302,17439 15920,17495

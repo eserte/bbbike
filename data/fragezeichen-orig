@@ -575,7 +575,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: http://www.infravelo.de/projekt/neumannstrasse/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 4. Quartal 2021 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (2. Quartal 2024 - 2. Quartal 2025)
 #: osm_watch: way id="35573588" version="26"
 #: osm_watch: way id="4632077" version="32"
-#: last_checked: 2023-09-25
+#: last_checked: 2023-11-09
 #: check_frequency: 180d
 #: next_check: 2025-06-30
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
@@ -1459,7 +1459,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegführung zu tun?) (inaktiv)
 #: source_id: 2147346379 (bis 16.10.2020; beziehen sich die Bauarbeiten auf diese Verbindung oder den Radweg auf der Prenzlauer Promenade?) (keine Bauarbeiten zu erkennen) (inaktiv)
 #: XXX war mal bei infravelo gelistet (id 9030023, URL http://www.infravelo.de/projekt/caligariplatz-2/, Bauende 3. Quartal 2023), ist aber mittlerweile (2021-02) verschwunden
-#: last_checked: 2023-10-08
+#: last_checked: 2023-11-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
@@ -2092,7 +2092,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6176 (Antrag zur Eschenallee auf dem Bürgersteig)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/neuer-weg-an-der-wiese-entsteht_a365723
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6359 (Einwohnerantrag zum Gehweg)
-#: last_checked: 2023-10-08
+#: last_checked: 2023-11-09
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -3491,7 +3491,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
 #: XXX Bauarbeiten beendet, (noch) kein Zebrastreifen
 #: priority: #D
-#: last_checked: 2023-10-08
+#: last_checked: 2023-11-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -3832,12 +3832,6 @@ Isenburger Weg: Neubau der Straße geplant	?::projected -7819,15342 -7867,15185 -
 #: check_frequency: 360d
 Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahrerbereich geplant	?::projected 13372,19707 13171,19837
 # 
-#: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
-#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2023-11-08 (zwei Torbögen sind noch offen, Durchfahrt ist möglich)
-#: check_frequency: 2d
-Brandenburger Tor: Sanierungsarbeiten, Gerüst wurde aufgebaut, sind Radfahrer von Einschränkungen betroffen?	? 8637,12258 8592,12252 8538,12245
-# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -4034,7 +4028,7 @@ Majakowskiring/Ossietzkystr.: vielleicht entsteht etwa hier ein modaler Filter	?
 #: check_frequency: 120d
 Grellstr.: Radspur wird mit Grünbeschichtung ausgeführt	?; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
 #: XXX hier noch keine Bauarbeiten zu sehen
-#: last_checked: 2023-10-06
+#: last_checked: 2023-11-09
 #: check_frequency: 120d
 Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 #: next_check ^^^
@@ -5287,7 +5281,7 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: osm_watch: note 3820152 2
 #: priority: #D
-#: last_checked: 2023-09-25 (Masten stehen schon)
+#: last_checked: 2023-11-09 (Masten stehen schon)
 #: check_frequency: 45d
 Neumann/Elsa-Brändström-Str.: Zebrastreifen in Bau	?::inwork 11510,17172 11536,17153 11570,17129
 # 
@@ -5566,7 +5560,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/bizetstrasse-ist-jetzt-fahrradstrasse_a383329
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/im-komponistenviertel-hat-sich-einiges-geaendert_a383897
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1383388.php (Evaluation des Kiezblocks)
-#: last_checked: 2023-10-19
+#: last_checked: 2023-11-09
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-08-11
 Bizetstr.: Ausschilderung und Vorfahrtsregelung noch nicht komplett	? 13409,15687 13456,15760 13524,15786 13540,15792
@@ -5578,7 +5572,7 @@ Bizetstr.: Ausschilderung und Vorfahrtsregelung noch nicht komplett	? 13409,1568
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (abschnittsweise Umsetzung 2021 und 2022/2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Dunckerstr. südlich Wichertstr.: Umsetzung 2022)
 #: XXX laut Tsp "später auch südlich bis zur Danziger und nördlich bis zur Wisbyer/Ostseestraße"
-#: last_checked: 2023-10-02
+#: last_checked: 2023-11-09
 #: check_frequency: 120d
 Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727 11779,15813 11829,15912 11899,16037 11926,16088 12012,16250
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021)
@@ -5648,7 +5642,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707717050695602225#m (bis Gneiststr. fertig)
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=750053#post750053
 #: source_id: viz2021:13.412154,52.541035,04.09.2023,07:00 (bis 29.09.2023, Gesamtbaumaßnahme bis Februar 2024) (bis 24.11.2023) (inaktiv)
-#: source_id: viz2021:13.412537,52.544431,04.09.2023,07:00 (bis 24.11.2023)
+#: source_id: viz2021:13.412537,52.544431,04.09.2023,07:00 (bis 24.11.2023) (bis 13.11.2023)
 #: last_checked: 2023-10-23 (daf)
 #: check_frequency: 30d
 #: next_check: 2024-02-29
@@ -5850,6 +5844,8 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 # REMOVED --- #: next_check: 2023-03-28
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
 #: osm_watch: way id="6060511" version="37"
+#: osm_watch: way id="1097289892" version="1"
+#: osm_watch: way id="1092554599" version="5"
 #: last_checked: 2023-08-12
 #: check_frequency: 90d
 Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18223,18153 18279,18079 18412,17920 18476,17842 18553,17749 18635,17649
@@ -6116,7 +6112,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/vor-ort-termin-an-der-conrad-blenkle-strasse_a322472 (keine Realisierung 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4876 (Erwähnung)
 #: priority: #D
-#: last_checked: 2023-10-16 (Markierung existiert schon, Masten stehen schon, sind aber noch weggedreht)
+#: last_checked: 2023-11-09 (Markierung existiert schon, Masten stehen schon, sind aber noch weggedreht)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-06-30
 Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. entsteht ein Zebrastreifen	?::inwork 13355,13824 13359,13832 13368,13832
@@ -7098,7 +7094,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18266,9853 18066,9770 1792
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
 #: note: zwischenzeitlich gab's einen kombinierten Eintrag https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/
-#: last_checked: 2023-10-24
+#: last_checked: 2023-11-09
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
@@ -7122,6 +7118,7 @@ Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11074 (Mittel sind gesperrt, geplanter Abschluss 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1382027.php (Baustart 7.11.2023, Eröffnung für Dezember 2023 geplant)
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/die-naechste-fahrradstrasse_a398917
 #: XXX Einbahnstraßenregelung für Kfz-Verkehr, offen Richtung Südosten
 #: last_checked: 2023-10-14
 #: check_frequency: 30d

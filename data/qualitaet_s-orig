@@ -1125,7 +1125,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-11-07
+#: last_checked: 2023-11-09
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3113,7 +3113,8 @@ Selma-Lagerlöf-Str.: Asphalt mit Wurzelhebungen	Q1 11782,17222 11768,17296 11729
 Eschengraben: Asphalt	Q0 11613,16747
 Eschengraben: Kopfsteinpflaster	Q2 11613,16747 11559,16747
 Eschengraben: Asphalt	Q0 11559,16747 11504,16746 11473,16746
-Eschengraben: Kopfsteinpflaster	Q2 11473,16746 11441,16745 11428,16745
+Eschengraben: Kopfsteinpflaster	Q2 11473,16746 11441,16745
+Eschengraben: Asphalt mit einigen Schäden	Q1 11441,16745 11428,16745
 Eschengraben: Asphalt	Q0 11428,16745 11369,16744 11351,16744
 Eschengraben: Kopfsteinpflaster	Q2 11351,16744 11274,16743 11008,16729
 #: note: es gab widersprüchliche Angaben: mäßiger Beton Q1 (by anonymous) und guter Asphalt Q0 (by openbc...), die verkehrsberuhigte Zone hat sich wahrscheinlich erledigt
@@ -4690,7 +4691,8 @@ Johannes-Itten-Str.: Asphalt	Q0- 12797,16983 12850,16911 12813,16884
 Lewaldstr.: Kopfsteinpflaster	Q2 11401,16265 11470,16394
 Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
 (Prenzlauer Allee - Ostseestr.): Asphalt	Q1+ 12154,15902 12198,15999 12254,16097
-Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11903,15874
+#: historical_note: früher: mäßiger Asphalt, Q1
+Meyerheimstr.: leicht welliger Asphalt	Q0- 11852,15765 11903,15874
 #: historical_note: früher: mäßiger Asphalt, Q1
 Meyerheimstr.: Asphalt	Q0- 11903,15874 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
@@ -12248,7 +12250,7 @@ Klingsorstr.: schadhafter Asphalt	Q1+ 4834,4102 4932,4152 5063,4266 5090,4291 51
 #: next_check_id: KLINGSOR-2023
 #: XXX Sanierung des Asphalts
 #: last_checked: 2023-09-14
-#: next_check: 2023-11-11
+#: next_check: 2023-11-15
 Klingsorstr.: schadhafter Asphalt	Q1+ 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
 #: historical_note: früher schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5535,5068 5583,5179
@@ -14082,8 +14084,8 @@ Pankstr. (Französisch Buchholz): Asphalt	Q0 12609,20935 12519,20870 12434,20809
 Waldowstr. (Mahlsdorf): Asphalt	Q0 24401,11509 24421,11601 24444,11725
 #: corrected_by: srt (Asphalt -> schlechtes Kopfsteinpflaster)
 Waldowstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 24444,11725 24491,11972
-#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
-Paul-Grasse-Str.: löchriger Beton	Q2+ 12783,15921 12583,16025
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> löchriger Beton, Q2+ -> ..., neu gemacht)
+Paul-Grasse-Str.: Asphalt	Q0 12783,15921 12583,16025
 #: confirmed_by: srt
 Paul-Grasse-Str.: mäßiges Kopfsteinpflaster	Q2 12583,16025 12423,16109
 #: confirmed_by: srt (in Höhe Ludwigshöheweg + Sobernheimer Str.)
@@ -22508,8 +22510,11 @@ Klosterheider Weg: Beton	Q1 2490,23720 2522,23761 2582,23814 2638,23856
 Klosterheider Weg: Asphalt	Q0 2638,23856 2663,23875
 # 
 #: by: Karsten Blumenau vvv
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+Baumbachstr.: guter Beton, kurzer Kopfsteinpflasterabschnitt	Q1 11448,16398 11447,16507
 #: confirmed_by: srt
-Baumbachstr.: guter Beton	Q0 11448,16398 11447,16507 11440,16622
+Baumbachstr.: guter Beton	Q0 11447,16507 11440,16622
+#: confirmed_by: srt
 Baumbachstr.: schlechtes Kopfsteinpflaster	Q3 11440,16622 11441,16745
 #: by: ^^^
 # 
@@ -32715,4 +32720,5 @@ Einmündungsbereich asphaltiert	Q0 12446,8032
 Einmündungsbereich asphaltiert	Q0 9535,13801
 Kreuzungsbereich asphaltiert	Q0 5889,2319
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 5788,2274
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11441,16745
 #: ignore ^^^

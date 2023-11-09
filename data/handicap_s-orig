@@ -12,8 +12,8 @@
 # 
 #: next_check_id: STRALAUERALLEE-2023
 #: last_checked: 2023-11-08
-#: next_check: 2023-12-15
-#: valid: -20231215
+#: next_check: 2023-12-13
+#: valid: -20231213
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
 # 
 #: next_check_id: KARLMARXALLEE-2023
@@ -946,7 +946,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 ### Prenzlauer Berg ###
 # 
 #: osm_watch: way id="1047231711" version="3"
-#: last_checked: 2023-09-15
+#: last_checked: 2023-11-09
 #: check_frequency: 60d
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
@@ -1092,8 +1092,19 @@ Am Zwirngraben: Tische auf der Straße, Fußgänger	q4 10339,13052 10185,12982
 #: XXX_prog ^^^
 #: note ^^^
 Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
-Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8722,12268 8637,12258 8592,12252 8538,12245
 Pariser Platz: Fußgänger	q2 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
+Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
+# 
+#: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
+#: XXX alle Torbögen sind wegen Sanierungsarbeiten abgesperrt, man muss außen herum fahren; kein Endedatum
+#: last_checked: 2023-11-09 (webcam)
+#: check_frequency: 2d
+#: valid: -20231231
+Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3 8637,12258 8592,12252 8538,12245
+#: valid: 20231231-
+Brandenburger Tor: Fußgänger	q2 8637,12258 8592,12252 8538,12245
+# 
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555
 #: XXX_prog BS (Bordstein zum Blücherplatz hin, aber ansonsten wohl q3 beibehalten)
 #: note: früher "q3"

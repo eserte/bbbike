@@ -4296,6 +4296,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/suedlich-des-bahnhofs-werden-noch-rasengleise-eingebaut_a388018
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9988 (Antrag; Bauarbeiten noch bis 2025?)
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/auf-der-treskowallee-wird-seit-acht-jahren-gebuddelt_a397984
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
@@ -4924,6 +4925,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-gebaeude-ensemble-an-der-passauer-strasse_a365087 (Bauarbeiten noch zwei Jahre (ab Mitte November 2022))
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610
+#: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="8"
 #: osm_watch: way id="687428752" version="2"
@@ -6266,7 +6268,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: also_indoor: traffic (W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-10-06
+#: last_checked: 2023-11-09
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6308,23 +6310,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
-#: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=747210#post747210
-#: note: osm watches zu Bauarbeiten an den Nachbargrundstücken (ehemals Klinik + building:industrial)
-#: osm_watch: way id="156800019" version="6"
-#: osm_watch: way id="1219773996" version="1"
-#: also_indoor: traffic (none)
-#: last_checked: 2023-10-08
-#: check_frequency: 30d
-	2::inwork 12173,15040 12095,14888
-',
-         'from' => undef,
-         'id' => 3707,
-         'text' => 'Ella-Kay-Str.: Fahrbahn und Bürgersteig im nördlichen Abschnitt gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -6723,11 +6709,11 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 24730,14288 24667,14088
+         'data' => '#: source_id: viz2021:13.615005,52.531159,23.05.2023,07:00 (bis 1.9.2023) (bis 10.11.2023)
+	q4::inwork; 24730,14288 24667,14088
 ',
          'from' => 1684731600,
          'id' => 3795,
-         'source_id' => 'viz2021:13.615005,52.531159,23.05.2023,07:00',
          'text' => 'Jenaer Str.: Bauarbeiten, zwischen Riesaer Str. und Hermsdorfer Str. ist die Fahrbahn Richtung Süden gesperrt, vom 23.05.2023 07:00 bis 10.11.2023 17:00',
          'type' => 'handicap',
          'until' => 1699632000
@@ -6997,10 +6983,11 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: by: https://viz.berlin.de/2023/09/kronprinzessinnenweg/ (2024+2025 kann es auch zu Vollsperrungen abends + am Wochenende kommen)
 #: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
+#: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/bauarbeiten-am-kronprinzessinnenweg-haben-begonnen_a398941
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
-#: last_checked: 2023-09-14 (mapillary)
+#: last_checked: 2023-11-09 (bw)
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -7020,16 +7007,17 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023
-#: last_checked: 2023-09-25
-#: check_frequency: 60d
+#: last_checked: 2023-11-09
+#: check_frequency: 14d
 #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151 11750,16116
 ',
+         'dont_check_date' => 1,
          'from' => 1689356385,
          'id' => 3855,
-         'text' => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte November 2023',
+         'text' => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte November 2023, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1700240400
+         'until' => undef
        },
        {
          'data' => '	2::inwork 61299,108828 61164,108987 61054,109046 61261,109631 61517,110776
@@ -7331,15 +7319,15 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1377283.php (Verlängerung bis 10.11.2023)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-dauern-laenger_a397516
 #: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
-#: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023) (bis 12.11.2023)
+#: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023) (bis 12.11.2023) (bis 15.11.2023)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
 	q4::inwork 5535,5068 5499,4999 5482,4965 5478,4957 5411,4825 5407,4815 5336,4676 5316,4637 5271,4547
 ',
          'from' => 1694901600,
          'id' => 3914,
-         'text' => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straße gesperrt, vom 18.9.2023 bis 12.11.2023',
+         'text' => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straße gesperrt, vom 18.9.2023 bis 15.11.2023',
          'type' => 'handicap',
-         'until' => 1699804800
+         'until' => 1700064000
        },
        {
          'data' => '#: also_indoor: traffic (B,G)
@@ -7402,7 +7390,7 @@ südlicher Weg	2::inwork 10168,10085 10066,10071
        {
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2023-08-12 (mapillary) vvv
+#: last_checked: 2023-09-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
@@ -7465,15 +7453,14 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        {
          'data' => '#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
-#: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Radfahrer?
-#: last_checked: 2023-10-16
-#: check_frequency: 14d
+#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: last_checked: 2023-11-09
+# REMOVED --- #: check_frequency: 14d
 	q4::inwork 13598,13180 13692,13221
 ',
-         'dont_check_date' => 1,
          'from' => 1696309200,
          'id' => 3928,
-         'text' => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vom 04.10.2023 07:00 bis 15.11.2023 17:00, evtl. auch länger (Stand Mitte Oktober 2023: keine Sperrung der Ebertystr. für Radfahrer)',
+         'text' => 'Ebelingstr.: Anbindung Ebertystr. gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7784,6 +7771,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1382626.php
+#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/asphaltweg-wird-instandgesetzt_a398857
 #: XXX Nach den Bauarbeiten bessere Qualität?
 #: next_check: 2023-11-21
 	2::inwork 17976,3735 17975,3744 17953,3955
