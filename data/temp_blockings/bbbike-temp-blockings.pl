@@ -3418,8 +3418,9 @@ EOF
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
-#: source_id: 2147345089
-#: note: 2022 ist die Farbahn auch gesperrt
+#: source_id: 2147345089 (inaktiv)
+#: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024)
+#: note: 2022+2023 ist die Farbahn auch gesperrt
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 EOF
      },
@@ -39034,7 +39035,7 @@ EOF
        text  => 'Jenaer Str.: Bauarbeiten, zwischen Riesaer Str. und Hermsdorfer Str. ist die Fahrbahn Richtung Süden gesperrt, vom 23.05.2023 07:00 bis 10.11.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.615005,52.531159,23.05.2023,07:00 (bis 1.9.2023) (bis 10.11.2023)
+#: source_id: viz2021:13.615005,52.531159,23.05.2023,07:00 (bis 1.9.2023) (bis 10.11.2023) (inaktiv)
 	q4::inwork; 24730,14288 24667,14088
 EOF
      },
@@ -40673,6 +40674,7 @@ EOF
        text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-11-09
@@ -40788,7 +40790,7 @@ EOF
 #: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="5"
+#: osm_watch: way id="1126670512" version="6"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
 #: osm_watch: way id="9030384" version="38"
@@ -41059,6 +41061,27 @@ EOF
 	q3::inwork 13895,11663 13711,11458
 	q3::inwork 14031,11569 13970,11366
 	q3::inwork 13888,11405 13954,11647
+EOF
+     },
+     { from  => 1700348400, # 2023-11-19 00:00
+       until => 1700866799, # 2023-11-24 23:59
+       text  => 'Ribnitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Einschränkungen auch für Radfahrer, vom 20. November 2023 bis 24. November 2023 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384362.php
+	q4::inwork 16306,18011 16335,18197 16420,18262
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Weidendamm: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: wosch & osm
+#: osm_watch: way id="1151064395" version="3"
+#: XXX Wann sind die Bauarbeiten beendet?
+#: note: Sperrung erscheint nicht besonders lang (30-40m?), deshalb q3 statt q4
+	q3::inwork 9533,12925 9375,12911
 EOF
      },
     );

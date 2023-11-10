@@ -429,8 +429,9 @@ push @temp_blocking,
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
-#: source_id: 2147345089
-#: note: 2022 ist die Farbahn auch gesperrt
+#: source_id: 2147345089 (inaktiv)
+#: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024)
+#: note: 2022+2023 ist die Farbahn auch gesperrt
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
          'from' => 1700953200,
@@ -6708,16 +6709,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.615005,52.531159,23.05.2023,07:00 (bis 1.9.2023) (bis 10.11.2023)
-	q4::inwork; 24730,14288 24667,14088
-',
-         'from' => 1684731600,
-         'id' => 3795,
-         'text' => 'Jenaer Str.: Bauarbeiten, zwischen Riesaer Str. und Hermsdorfer Str. ist die Fahrbahn Richtung Süden gesperrt, vom 23.05.2023 07:00 bis 10.11.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1699632000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7452,7 +7444,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
+#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-11-09
 # REMOVED --- #: check_frequency: 14d
@@ -7543,7 +7536,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="5"
+#: osm_watch: way id="1126670512" version="6"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
 #: osm_watch: way id="9030384" version="38"
@@ -7708,16 +7701,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'handicap',
          'until' => 1704063599
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-verkehr/sperrung-ohne-ankuendigung_a398344
-	2::inwork 23457,35 23540,591
-',
-         'from' => 1698562800,
-         'id' => 3953,
-         'text' => 'Rabindranath-Tagore-Str.: Sperrung wegen Baumschnittarbeiten, jeweils von 8 bis 14 Uhr, 30.10.2023 bis 10.11.2023',
-         'type' => 'gesperrt',
-         'until' => 1699621200
-       },
+       undef,
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
@@ -7817,6 +7801,29 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'text' => 'Libauer Str., Simon-Dach-Str., Dirschauer Str.: Anbindung Revaler Str. gesperrt, voraussichtlich bis Ende November 2023',
          'type' => 'handicap',
          'until' => 1701298799
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384362.php
+	q4::inwork 16306,18011 16335,18197 16420,18262
+',
+         'from' => 1700348400,
+         'id' => 3962,
+         'text' => 'Ribnitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Einschränkungen auch für Radfahrer, vom 20. November 2023 bis 24. November 2023 ',
+         'type' => 'handicap',
+         'until' => 1700866799
+       },
+       {
+         'data' => '#: by: wosch & osm
+#: osm_watch: way id="1151064395" version="3"
+#: XXX Wann sind die Bauarbeiten beendet?
+#: note: Sperrung erscheint nicht besonders lang (30-40m?), deshalb q3 statt q4
+	q3::inwork 9533,12925 9375,12911
+',
+         'from' => undef,
+         'id' => 3963,
+         'text' => 'Weidendamm: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
