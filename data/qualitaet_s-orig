@@ -171,7 +171,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023) (umbenannt)
 #: by: http://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
-#: osm_watch: way id="102486250" version="22"
+#: osm_watch: way id="102486250" version="23"
 #: last_checked: 2023-10-21
 #: check_frequency: 120d
 #: next_check: 2024-09-30
@@ -295,7 +295,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier neu asphaltiert werden?
 #: XXX evtl. in https://www.openstreetmap.org/note/3304298 berichten (mittlerweile geschlossen)
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-11
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1125,7 +1125,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-11-09
+#: last_checked: 2023-11-11
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3271,7 +3271,8 @@ Wasserweg: neu asphaltiert	Q0 16129,8855 16201,8860
 Wasserweg: neu asphaltiert	Q0 16201,8860 16369,8836 16388,8821
 # REMOVED --- Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16028,8867 16084,8833 16129,8855
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16490,8432 16534,8182
-Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0- 16534,8182 16602,7810 16620,7574 16633,7434
+#: historical_note: früher (bis Herbst 2023) Q0-
+Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q1+ 16534,8182 16602,7810 16620,7574 16633,7434
 #: historical_note: früher (bis Frühjahr 2023) Waldweg, Q2+
 (Uferweg - Kiehnwerderallee): neu asphaltiert	Q0 16619,8606 16578,8586 16436,8687
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16657,8443 16490,8432
@@ -12512,7 +12513,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2023-10-04
+#: last_checked: 2023-11-11
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860
@@ -15230,7 +15231,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: osm_watch: way id="4764684" version="29"
 #: osm_watch: way id="26790073" version="18"
-#: last_checked: 2023-10-08
+#: last_checked: 2023-11-04 (mapillary)
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^
@@ -16245,6 +16246,10 @@ Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19704,2726 19878,2899
 Braillestr.: Asphalt	Q0 4516,5194 4477,5250 4430,5324
 # 
 #: by: maja wegener: vvv
+#: next_check_id: WANDLITZ-2021
+#: XXX Asphaltierungsarbeiten, möglicherweise bessere Qualität?
+#: last_checked: 2023-11-11
+#: next_check: 2023-12-08
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
 Wandlitzstr.: Asphalt mit einigen Schäden	Q1+ 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
@@ -16269,7 +16274,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=736614#post736614 (BV Kaisergärten)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2023-08-19
+#: last_checked: 2023-11-11
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764

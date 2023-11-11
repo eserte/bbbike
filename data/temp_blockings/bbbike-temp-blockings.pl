@@ -39256,7 +39256,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-11-05 vvv
+#: last_checked: 2023-11-11 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -40367,10 +40367,18 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
-#: last_checked: 2023-10-28
-#: check_frequency: 60d
-#: next_check: 2024-04-11
-	q4::inwork 17826,6495 17991,6431 17948,6248
+#: last_checked: 2023-11-11 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2024-04-11 vvv
+#: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
+#: osm_watch: way id="1142005449" version="2"
+	q4::inwork 17826,6495 17991,6431
+#: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
+#: osm_watch: way id="176072020" version="33"
+	q4::inwork 17991,6431 17948,6248
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1689487200, # 2023-07-16 08:00
@@ -40931,7 +40939,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
-#: last_checked: 2023-11-05
+#: last_checked: 2023-11-11
 #: check_frequency: 30d
 #: next_check: 2023-12-15
 	q2::inwork; 18037,9195 17549,9529
@@ -40978,7 +40986,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
-#: last_checked: 2023-11-05
+#: last_checked: 2023-11-11
 #: check_frequency: 30d
 #: next_check: 2024-04-11
 	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
@@ -41001,21 +41009,26 @@ EOF
        until => 1699722000, # 2023-11-11 18:00
        text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.11.2023 06:00 bis 11.11.2023 18:00',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.386086,52.517908,06.11.2023,06:00',
+       source_id => 'viz2021:13.386086,52.517908,06.11.2023,06:00', # inaktiv
        data  => <<EOF,
 	2::inwork 9131,12438 9179,12444
 EOF
      },
      { from  => 1699164000, # 2023-11-05 07:00
        until => 1702051200, # 2023-12-08 17:00
-       text  => 'Wandlitzstr.: Bauarbeiten Richtung Blockdammweg zwischen Treskowallee und Wildensteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
+       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, auch Kreuzungsbereich Wildensteiner Str. betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
-#: next_check: 2023-11-06
-	q4::inwork; 18704,8427 18627,8475
+# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
+#: last_checked: 2023-11-11 vvv
+#: next_check: 2023-12-08 vvv
+	q4::inwork 18704,8427 18627,8475
+	q3::inwork 18627,8475 18557,8525
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1699311600, # 2023-11-07 00:00

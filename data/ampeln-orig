@@ -7,6 +7,15 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: STERNDAMM-2023
+#: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
+#: note: etwa 20m südöstlich
+#: last_checked: 2023-11-11
+#: check_frequency: 90d
+#: next_check: 2024-06-30
+#: valid: -20240630
+Michael-Brückner-Str.	F::inwork 17808,5669
+# 
 #: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (bis 23.04.2025)
 #: note: gilt auch für Radfahrer (provisorische Radspur Richtung Norden, auch eine Fahrradampel an der Radspur Richtung Süden)
 #: note: etwa 40m nördlich des Punktes
@@ -111,7 +120,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: osm_watch: way id="383023440" version="15"
-#: last_checked: 2023-10-18
+#: last_checked: 2023-11-11
 #: next_check: 2023-12-31
 # REMOVED --- #: valid: -20230930
 	X::inwork 16328,7005
@@ -133,7 +142,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln
-#: last_checked: 2023-11-10
+#: last_checked: 2023-11-11
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -161,7 +170,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2023-11-01 (mapillary)
+#: last_checked: 2023-11-11
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
@@ -269,7 +278,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2023-10-08
+#: last_checked: 2023-11-04 (mapillary)
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -294,7 +303,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2023-05-25 (mapillary) vvv
+#: last_checked: 2023-11-05 (mapillary) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-06-30 vvv
 #: valid: 20190603-20250630 vvv
@@ -3318,7 +3327,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-10-31 (mapillary) vvv
+#: last_checked: 2023-11-07 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3445,9 +3454,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel für Radfahrer aus dem Jastrower Weg sowie für linksabbiegende Radfahrer Fürstenwalder Damm -> Jastrower Weg
 	X 23657,5467
 #: note: Anforderungsampel
-#: note: mittlerweile zwei Gehwegübergänge
-#: XXX_prog nur der südwestliche Gehwegübergang gilt auch für Radfahrer auf dem Radweg
 	F 18165,7371
+#: note: Anforderungsampel
+#: XXX_prog gilt nicht für Radfahrer auf dem Radweg
+	F 18198,7425
 #: off: night (seen 2013-08-25 22:30)
 	F 11579,-3093
 #: note: Anforderungsampel
@@ -3797,20 +3807,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # 
 	X 18374,4307
-#: next_check_id: SCHOENEWEIDE-2018
-# REMOVED (ausgeschaltet) --- #: next_check_id: STERNDAMM-2020 --- 
-#: XXX wie lange bleibt die provisorische Ampel?
-#: osm_watch: node id="9221296478" version="2"
-#: note: Anforderungsampel
-#: last_checked: 2023-10-30
-#: check_frequency: 120d
-	F::inwork 17695,5394
-#: XXX wie lange bleibt die provisorische Ampel?
-#: osm_watch: node id="9221296482" version="15"
-#: note: Anforderungsampel
-#: last_checked: 2023-10-30
-#: check_frequency: 120d
-	F::inwork 17747,5452
+# REMOVED (beide Ampeln abgebaut) --- #: next_check_id: SCHOENEWEIDE-2018 --- # REMOVED (ausgeschaltet) --- #: next_check_id: STERNDAMM-2020 --- #: XXX wie lange bleibt die provisorische Ampel? --- #: osm_watch: node id="9221296478" version="2" --- #: note: Anforderungsampel --- #: last_checked: 2023-10-30 --- #: check_frequency: 120d ---	F::inwork 17695,5394 --- #: XXX wie lange bleibt die provisorische Ampel? --- #: osm_watch: node id="9221296482" version="15" --- #: note: Anforderungsampel --- #: last_checked: 2023-10-30 --- #: check_frequency: 120d ---	F::inwork 17747,5452
 # 
 #: note: die Relation Wilhelm-Hoff-Str. ist nicht direkt signalisiert
 	X 18828,3196
