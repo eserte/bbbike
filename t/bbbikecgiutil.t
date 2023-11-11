@@ -22,7 +22,7 @@ BEGIN {
 
 use CGI;
 
-plan tests => 9;
+plan tests => 11;
 
 use BBBikeCGI::Util;
 
@@ -76,6 +76,23 @@ SKIP: {
     local $ENV{HTTP_X_FORWARDED_PROTO} = "https";
     my $q = CGI->new;
     is(BBBikeCGI::Util::my_url($q), "https://bbbike.de/cgi-bin/bbbike.cgi", 'https proxy');
+}
+
+{
+    local $ENV{HTTP_HOST} = "bbbike.de:80";
+    local $ENV{REQUEST_URI} = "/cgi-bin/bbbike.cgi";
+    local $ENV{HTTP_X_FORWARDED_PROTO} = "http"; # seen in CloudFlare https setups
+    {
+	local $ENV{HTTP_CF_VISITOR} = '{"scheme":"https"}'; # seen in CloudFlare https setups (f.e. sf)
+	my $q = CGI->new;
+	is(BBBikeCGI::Util::my_url($q), "https://bbbike.de/cgi-bin/bbbike.cgi", 'https on CloudFlare (cf-visitor)');
+    }
+    {
+	local $ENV{HTTP_CF_VISITOR} = '{"something": "else", "scheme": "https", "another_thing": true}'; # in case cf-visitor header contains more data
+	my $q = CGI->new;
+	is(BBBikeCGI::Util::my_url($q), "https://bbbike.de/cgi-bin/bbbike.cgi", 'https on CloudFlare (cf-visitor with more data)');
+    }
+
 }
 
 __END__

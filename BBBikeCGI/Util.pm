@@ -54,7 +54,9 @@ sub decode_possible_utf8_params {
 sub my_url {
     my($q, %args) = @_;
     my $url = $q->url(%args);
-    if (($q->http('x-forwarded-proto')||'') eq 'https') {
+    if (($q->http('x-forwarded-proto')||'') eq 'https' ||
+	($q->http('cf-visitor')||'') =~ /"scheme":\s*"https"/ # CloudFlare; actually this is JSON, but seems to be good enough
+       ) {
 	$url =~ s{^http://}{https://};
     }
     $url;
