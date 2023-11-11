@@ -159,6 +159,7 @@ sub highlight_words {
 	       |   Polizeieinsatz(es)?
 	       |   Demonstration
 	       |   mehreren[ ]Demonstrationen
+	       |   Aufzug(es)?
 	       |   Kundgebung
 	       |   Veranstaltung
 	       |   Sportveranstaltung
