@@ -24845,10 +24845,10 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
-#: osm_watch: way id="462738551" version="19"
+#: osm_watch: way id="462738551" version="20"
 #: osm_watch: way id="848019125" version="6"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-10-11
+#: last_checked: 2023-11-11 (osm)
 # REMOVED --- #: next_check: 2023-09-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
@@ -28435,7 +28435,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-10 (mapillary)
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36046,7 +36046,7 @@ EOF
 #: last_checked: 2023-09-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
-#: osm_watch: way id="1043813287" version="2"
+#: osm_watch: way id="1043813287" version="3"
 #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924 13870,16837 13794,16773
@@ -41090,11 +41090,12 @@ EOF
        text  => 'Weidendamm: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: wosch & osm
-#: osm_watch: way id="1151064395" version="3"
+#: by: wosch & osm & mapillary
 #: XXX Wann sind die Bauarbeiten beendet?
-#: note: Sperrung erscheint nicht besonders lang (30-40m?), deshalb q3 statt q4
-	q3::inwork 9533,12925 9375,12911
+#: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig
+#: osm_watch: way id="1151064395" version="3"
+#: last_checked: 2023-11-10 (mapillary)
+	q4::inwork 9533,12925 9375,12911
 EOF
      },
     );

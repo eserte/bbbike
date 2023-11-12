@@ -1419,7 +1419,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgel‰nde"
 #: osm_watch: way id="491906864" version="15"
 #: priority: #C
-#: last_checked: 2023-10-13
+#: last_checked: 2023-11-12
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraﬂe C	N 12926,11224 12848,11093
@@ -1587,7 +1587,7 @@ Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraﬂenregelung Radfahrer frei geben; evtl. wird auch die Qualtit‰t besser werden
-#: last_checked: 2023-10-13
+#: last_checked: 2023-11-09 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Annenstr. (Mitte) [Wohngebiet]	N 11192,11429 11259,11391 11217,11288
@@ -8261,12 +8261,15 @@ Remstaler Str.	N 3169,26048 3186,25969 3221,25876 3216,25778 3154,25659 3141,256
 Bundschuhweg	N 3221,25876 3348,25902 3422,25935 3477,25969
 Jostweg (Frohnau)	N 3415,25731 3356,25725 3216,25778
 # REMOVED (genauere Koordinaten) --- Bieselheider Weg	N 3615,25890 3477,25969 3362,26046 3390,26225 3448,26315 3540,26465
-Edelhofdamm	H 2490,25211 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437
-Edelhofdamm	H 3166,25496 3307,25554 3456,25601
-Edelhofdamm	H 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
-Edelhofdamm	H 3446,25628 3277,25575
+#: historical_note: bis Herbst 2023 als Hauptstraﬂe kategorisiert vvv
+Edelhofdamm	N 2490,25211 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437
+Edelhofdamm	N 3166,25496 3307,25554 3456,25601
+Edelhofdamm	N 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
+Edelhofdamm	N 3446,25628 3277,25575
+#: historical_note ^^^
 Enkircher Str.	N 3490,24887 3542,24953 3556,24994 3550,25046 3518,25086 3485,25112 3460,25132 3314,25243 3285,25274 3225,25374 3185,25437
-Enkircher Str.	H 3185,25437 3166,25496
+#: historical_note: bis Herbst 2023 als Hauptstraﬂe kategorisiert
+Enkircher Str.	N 3185,25437 3166,25496
 Oppenheimer Weg	N 3485,25112 3484,25139 3469,25206 3441,25280 3416,25311 3387,25331 3266,25374 3225,25374
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.824462.php
