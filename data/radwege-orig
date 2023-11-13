@@ -925,7 +925,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-11-02
+#: last_checked: 2023-11-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3641,7 +3641,7 @@ Radweg verendet im Sand	RW1; 13904,17325 14060,17221
 teilweise schlecht asphaltierter Radweg	RW1; 14653,15738 14686,15608 14828,15050 14843,15007 14959,14752
 asphaltiert	RW2; 14959,14752 15066,14579
 #: note: Weißenseer Weg, Indira-Gandhi-Str. Richtung Norden
-asphaltiert	RW2; 15066,14579 14959,14752
+neu asphaltiert, allerdings bereits erste Wurzelhebungen	RW2; 15066,14579 14959,14752
 teilweise schlecht asphaltierter Radweg	RW2; 14959,14752 14843,15007
 teilweise schlecht asphaltierter Radweg	RW1; 14843,15007 14828,15050 14686,15608
 teilweise schlecht asphaltierter Radweg	RW2; 14686,15608 14653,15738
@@ -4328,15 +4328,16 @@ Die letzten 40 Meter sind benutzungspflichtig	RW3; 11383,22369 11279,22316
 	RW2;RW1 18196,18254 18078,18224 17932,18133
 	RW2;RW3 17932,18133 17843,18078
 Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig	RW1; 15662,16649 15437,16491
-Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816 15917,16858 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214 16525,17253 16578,17285
+Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816 15917,16858 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214
+neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 Verbundsteinpflaster	RW1; 16837,17440 16578,17285 16525,17253
 alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: note: kurze Abschnitte mit Verbundsteinpflasterradweg
 Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017 15986,16922 15917,16858 15875,16816 15776,16721 15735,16698 15662,16649
 	RW2; 16578,17285 16837,17440
 	RW1;RW2 17400,17790 17159,17631
-	RW2;RW2 17159,17631 16947,17506
-	RW4;RW2 16947,17506 16837,17440
+	RW2;RW2 17159,17631 16938,17500
+	RW4;RW2 16938,17500 16930,17495 16837,17440
 	RW3;RW1 19782,18211 19875,18182
 Verbundsteinpflaster	RW1; 19291,18456 19409,18397 19685,18259
 Gehweg für Radfahrer frei	RW1; 19685,18259 19782,18211
@@ -4958,7 +4959,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2023-10-06 vvv
+#: last_checked: 2023-11-13 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen

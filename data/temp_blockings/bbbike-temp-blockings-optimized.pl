@@ -4953,8 +4953,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch) (mittlerweile sieht es ganz anders aus)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
-#: osm_watch: way id="26322046" version="29"
-#: osm_watch: way id="165832806" version="33"
+#: osm_watch: way id="26322046" version="30"
+#: osm_watch: way id="165832806" version="34"
 #: last_checked: 2023-10-30
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
@@ -5329,7 +5329,24 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1704042000
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023)
+# REMOVED --- #: also_indoor: traffic (ex-B,G,W)
+# REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-10-14
+# REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
+# REMOVED --- Jahnstr.	q3::inwork 12833,6127 13027,6168 13227,6209
+# REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
+# REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
+	q4::inwork 12833,6127 13027,6168
+',
+         'from' => 1699830000,
+         'id' => 3496,
+         'text' => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 bis 08.12.2023',
+         'type' => 'handicap',
+         'until' => 1702076399
+       },
        undef,
        undef,
        undef,
@@ -5587,6 +5604,7 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
 #: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
+#: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -6396,7 +6414,28 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => 1735664400
        },
-       undef,
+       {
+         'data' => '#: next_check_id: KUESTRINER-2023
+#: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2023-11-13 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
+# REMOVED --- Küstriner Str.	q4::inwork 16357,15328 16314,15223
+Freienwalder Str.	q4::inwork 16331,15486 16406,15452
+Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3728,
+         'text' => 'Freienwalder Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -6754,7 +6793,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2023-10-22
+#: last_checked: 2023-11-13
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7683,7 +7722,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        undef,
        {
          'data' => '#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
-#: last_checked: 2023-11-11
+#: last_checked: 2023-11-12 (osm)
 #: check_frequency: 30d
 #: next_check: 2023-12-15
 	q2::inwork; 18037,9195 17549,9529
@@ -7829,6 +7868,37 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'text' => 'Weidendamm: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 15307,3683 15611,3448
+',
+         'from' => 1699768800,
+         'id' => 3964,
+         'source_id' => 'viz2021:13.47374,52.43817,13.11.2023,07:00',
+         'text' => 'Beifußweg: Baustelle, zwischen Johannisthaler Chaussee und Fenchelweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 07:00 bis 11.12.2023 04:00',
+         'type' => 'handicap',
+         'until' => 1702263600
+       },
+       {
+         'data' => '	2::inwork 39264,-832 39259,574
+	2::inwork 39250,1024 39259,612
+',
+         'from' => 1701104400,
+         'id' => 3965,
+         'source_id' => '236700083',
+         'text' => 'Bahnübergang Fangschleuse: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 28.11.2023 18:00 Uhr bis 02.12.2023 06:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1701493200
+       },
+       {
+         'data' => '	2::inwork 13452,2548 13420,2509
+',
+         'from' => 1699768800,
+         'id' => 3966,
+         'source_id' => 'viz2021:13.44558,52.42791,13.11.2023,07:00',
+         'text' => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
+         'type' => 'gesperrt',
+         'until' => 1700794800
        }
      
 );

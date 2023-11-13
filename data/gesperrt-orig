@@ -1344,7 +1344,7 @@ Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
 Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
 Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgel‰nde	2 12283,4971 12468,5000
-(Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
+(Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16938,17500
 Dankratweg - Am Waldberg: Betriebsgel‰nde	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s:q3 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
@@ -3954,7 +3954,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-11-12
+#: last_checked: 2023-11-13
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4159,27 +4159,27 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: last_checked: 2023-10-30 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-#: osm_watch: way id="1061057020" version="9"
+#: osm_watch: way id="1061057020" version="10"
 #: note: wobei der Gehweg bereits passierbar sein kann
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
-#: osm_watch: way id="1084269868" version="8"
+#: osm_watch: way id="1084269868" version="9"
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
 # REMOVED --- Heiner-M¸ller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
-#: osm_watch: way id="1084269869" version="9"
+#: osm_watch: way id="1084269869" version="10"
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
-#: osm_watch: way id="1084267262" version="11"
+#: osm_watch: way id="1084267262" version="13"
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
 # REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17738,8450 17755,8519
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17755,8519 17627,8556
-#: osm_watch: way id="1061057021" version="8"
+#: osm_watch: way id="1061057021" version="10"
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17773,8588 17648,8626
-#: osm_watch: way id="1061057024" version="7"
+#: osm_watch: way id="1061057024" version="9"
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17648,8626 17627,8556 17608,8483 17682,8464 17738,8450
 #: last_checked ^^^
 # 
@@ -5526,7 +5526,7 @@ tragen	0:60 18467,16753
 # REMOVED (Dr‰ngelgitter existieren alle nur zur H‰lfte und sind somit gut umfahrbar) --- #: note: bei den meisten Dr‰ngelgittern hier existiert mittlerweile ein umgehender Trampelpfad vvv --- Dr‰ngelgitter	BNP:5 6267,834 --- Dr‰ngelgitter	BNP:5 6250,834 --- Dr‰ngelgitter	BNP:5 6172,822 --- Dr‰ngelgitter	BNP:5 6155,821 --- Dr‰ngelgitter	BNP:5 6075,821 --- Dr‰ngelgitter	BNP:5 6057,821 --- Dr‰ngelgitter	BNP:5 5975,821 --- Dr‰ngelgitter	BNP:5 5954,819 --- Dr‰ngelgitter	BNP:5 5875,807 --- Dr‰ngelgitter	BNP:5 5860,805 --- Dr‰ngelgitter	BNP:5 5684,773
 # REMOVED (nur noch ein halbes Dr‰ngelgitter) --- Dr‰ngelgitter	BNP:5 6367,825
 # REMOVED (Dr‰ngelgitter entfernt) --- Dr‰ngelgitter	BNP:5 6352,825
-Straﬂenbahn	3nocross 16837,17440 16947,17506 17159,17631
+Straﬂenbahn	3nocross 16837,17440 16930,17495 16938,17500 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 #: confirmed_by: srt
 Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7675,17430

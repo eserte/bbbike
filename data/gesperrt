@@ -836,7 +836,7 @@ Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
 Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
 Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgel‰nde	2 12283,4971 12468,5000
-(Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
+(Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16938,17500
 Dankratweg - Am Waldberg: Betriebsgel‰nde	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s 4658,12450 4618,12340 4593,12322
@@ -3857,11 +3857,13 @@ Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
 Gehrenseestr.	1 18487,16741 18324,16625
 tragen	0:60:90 18467,16753
-Straﬂenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
-Falkenberger Chaussee -> R¸dickenstr.: Straﬂenbahn	3::igndisp 17159,17631 16947,17506 16992,17472
-Falkenberger Chaussee -> Darﬂer Str.: Straﬂenbahn	3::igndisp 16837,17440 16947,17506 16848,17530
-R¸dickenstr. -> Falkenberger Chaussee: Straﬂenbahn	3::igndisp 16992,17472 16947,17506 16837,17440
-R¸dickenstr. -> Darﬂer Str.: Straﬂenbahn	3::igndisp 16992,17472 16947,17506 16848,17530
+Straﬂenbahn	3nocross::ignrte 16837,17440 16930,17495 16938,17500 17159,17631
+Falkenberger Chaussee -> Falkenberger Chaussee [Wohngebiet]: Straﬂenbahn	3::igndisp 16938,17500 16930,17495 17050,17437
+Falkenberger Chaussee [Wohngebiet] -> Falkenberger Chaussee: Straﬂenbahn	3::igndisp 17050,17437 16930,17495 16837,17440
+Falkenberger Chaussee -> R¸dickenstr.: Straﬂenbahn	3::igndisp 17159,17631 16938,17500 16992,17472
+Falkenberger Chaussee -> Darﬂer Str.: Straﬂenbahn	3::igndisp 16930,17495 16938,17500 16848,17530
+R¸dickenstr. -> Falkenberger Chaussee: Straﬂenbahn	3::igndisp 16992,17472 16938,17500 16930,17495
+R¸dickenstr. -> Darﬂer Str.: Straﬂenbahn	3::igndisp 16992,17472 16938,17500 16848,17530
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7675,17430
 Mickestr.	1 8185,17352 8134,17398 8110,17470
