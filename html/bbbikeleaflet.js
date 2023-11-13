@@ -151,6 +151,14 @@ var notrailerIcon = L.icon({
     iconAnchor: new L.Point(8,8)
 });
 
+var questionMarkIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/help.gif",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(15,15),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(8,8),
+});
+
 var startMarker, goalMarker, loadingMarker;
 
 var id2marker;
@@ -272,6 +280,8 @@ var stdGeojsonLayerOptions = {
 			    l = L.marker(centerLatLng, { icon: notrailerIcon });
 			} else if (attribs['temp']) { // should be last, as it is sometimes too unspecific
 			    l = L.marker(centerLatLng, { icon: clockIcon });
+			} else if (cat == '?') {
+			    l = L.marker(centerLatLng, { icon: questionMarkIcon });
 			}
 			if (l) {
 			    currentLayer.addLayer(l); // XXX hacky!!! need a better solution!!!
