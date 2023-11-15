@@ -183,6 +183,8 @@ sub yml_to_bbd {
 	}
 	print "# \n";
 	print "#: id: $id vvv\n";
+	print "#: x-from: "  . (defined $rec->{from}  ? $rec->{from}  : "undef") . " vvv\n";
+	print "#: x-until: " . (defined $rec->{until} ? $rec->{until} : "undef") . " vvv\n";
 	my @source_ids;
 	if ($rec->{source_id}) {
 	    for my $source_id (ref $rec->{source_id} eq 'ARRAY' ? @{ $rec->{source_id} } : $rec->{source_id}) {
@@ -207,6 +209,8 @@ sub yml_to_bbd {
 		print "#: source_id ^^^\n";
 	    }
 	}
+	print "#: x-until ^^^\n";
+	print "#: x-from ^^^\n";
 	print "#: id ^^^\n";
     }
 }
