@@ -207,6 +207,16 @@ sub bbd2geojson {
 	my $cat = $r->[Strassen::CAT];
 	my $directives = $self->get_directives;
 	my @urls = @{ $directives->{'url'} || [] };
+	my %props;
+	for my $key ('x-from', 'x-until') {
+	    if ($directives->{$key}) {
+		my $val = $directives->{$key}->[0];
+		if ($val eq 'undef') {
+		    $val = undef;
+		}
+		$props{$key} = $val;
+	    }
+	}
 
 	my $geometry = (@c > 1
 			? ($cat =~ m{^F:}
@@ -229,6 +239,7 @@ sub bbd2geojson {
 				      name => $name,
 				      cat => $cat,
 				      (@urls ? (urls => \@urls) : ()),
+				      %props,
 				     }
 		      };
 

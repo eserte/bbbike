@@ -110,6 +110,49 @@ EOF
     }
 }
 
+SKIP: {
+    my %expected = (
+        "Spandauer Weihnachtsmarkt, vom 27.11.2023 bis 23.12.2023" => {'x-from' => 1700953200, 'x-until' => 1703372399 },
+	"Schlosspark Charlottenburg: bei Dunkelheit geschlossen"   => {'x-from' => undef,      'x-until' => undef },
+    );
+
+    skip "Need JSON::XS", 1
+	if !eval { require JSON::XS; 1 };
+
+    my $test_with_additional_props_data = <<"EOF";
+#: map: polar
+#:
+#: id: 36 vvv
+#: x-from: 1700953200 vvv
+#: x-until: 1703372399 vvv
+Spandauer Weihnachtsmarkt, vom 27.11.2023 bis 23.12.2023\t2::xmas 13.4,52.5 13.5,52.6 13.4,52.6 13.4,52.5
+#: x-until: ^^^
+#: x-from ^^^
+#: id ^^^
+# 
+#: id: 1811 vvv
+#: x-from: undef vvv
+#: x-until: undef vvv
+#: tempex: night
+Schlosspark Charlottenburg: bei Dunkelheit geschlossen\t2::night 13.4,52.5 13.5,52.6 13.4,52.6
+#: x-until ^^^
+#: x-from: ^^^
+#: id ^^^
+# 
+EOF
+    my $s = Strassen->new_from_data_string($test_with_additional_props_data, UseLocalDirectives => 1);
+    my $geojson_json = Strassen::GeoJSON->new($s)->bbd2geojson;
+    my $geojson = JSON::XS::decode_json($geojson_json);
+    for my $feature (@{ $geojson->{features} }) {
+	my $properties = $feature->{properties};
+	my $name = $properties->{name};
+	for my $key ('x-from', 'x-until') {
+	    ok exists $properties->{$key}, "$key exists for '$name'";
+	    is $properties->{$key}, $expected{$name}->{$key}, "... and has the expected value";
+	}
+    }
+}
+
 {
     my $example_geojson = <<'EOF';
 { "type": "FeatureCollection",
