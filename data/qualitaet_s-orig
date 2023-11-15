@@ -2296,6 +2296,8 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9520 (Anfrage)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/ekgf3qoJIrr9337BpG4iMbZ0LD6NRaRRMlLcP8ms/jaFrvTVW/25-Anlagen/02/schriftlBeantwortungmdlAnfrageDS0398-IXErneue.pdf
 #: XXX möglicherweise Änderung des Wegbelags
+#: osm_watch: way id="176112031" version="16"
+#: osm_watch: way id="640883366" version="5"
 #: last_checked: 2023-07-19
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
@@ -5405,7 +5407,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22087,5404 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2023-09-17
+#: last_checked: 2023-09-20 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22056,5314 22054,5360
@@ -12251,8 +12253,9 @@ Händelplatz: Beton	Q0- 4568,4789 4543,4820
 Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053
 Klingsorstr.: schadhafter Asphalt	Q1+ 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
 #: next_check_id: KLINGSOR-2023
-#: XXX Sanierung des Asphalts
+#: add_fragezeichen: Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert?
 #: osm_watch: way id="149994023" version="18"
+#: osm_watch: note 3989114 1
 #: last_checked: 2023-09-14
 #: next_check: 2023-11-15
 Klingsorstr.: schadhafter Asphalt	Q1+ 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
@@ -12477,6 +12480,7 @@ Wladimir-Gall-Weg: unbefestigter Weg, teilweise Schotter	Q2 -2735,15062 -2708,15
 Wladimir-Gall-Weg: wassergebundene Decke	Q1 -2668,14635 -2618,14654 -2570,14661 -2464,14664 -2452,14664 -2430,14675 -2424,14718 -2480,14818 -2412,14800 -2364,14812
 #: next_check_id: METROPOLITANPARK-2019
 #: XXX welche Fahrbahnbeschaffenheit wird die Straße nach den Bauarbeiten haben? "Privater verkehrsberuhigter Bereich" --- werden hier Kfz fahren dürfen?
+#: osm_watch: way id="1147342797" version="2"
 #: last_checked: 2023-04-21
 #: check_frequency: 180d
 Metropolitan Park: unbefestigte Baustraße, Schotter	Q2- -8064,13534 -8088,13594
@@ -16285,6 +16289,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=736614#post736614 (BV Kaisergärten)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
+#: also_indoor: traffic (G)
 #: last_checked: 2023-11-11
 #: check_frequency: 90d
 #: next_check: 2023-12-31
@@ -28618,6 +28623,7 @@ Klingenhofer Steig: Asphalt	Q0 -3554,16849 -3564,17007 -3567,17137
 #: XXX wird die Fahrbahn hier neu gebaut? (siehe Finanzplan Berlin 2019-2023, S. 215 im pdf)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.837073.php (Beginn der Straßenbauarbeiten voraussichtlich im Juni 2021)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022)
+#: osm_watch: way id="27493508" version="20"
 #: last_checked: 2023-04-21
 #: check_frequency: 180d
 Hauptstr. (Staaken): überasphaltiertes Kopfsteinpflaster, teilweise ist der Asphalt löchrig oder fehlt völlig	Q2 -7550,13528 -7847,13604 -7879,13613 -7884,13614

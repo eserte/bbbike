@@ -578,7 +578,6 @@ Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-794
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18058,1645 -18302,1546 -18522,1325 -18673,1266 -18702,1408 -18673,1785 -18728,2153 -18989,2236 -19243,2246 -19422,2220 -19656,2362 -19721,2368
 Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualität?	? -19721,2368 -19721,2424 -19891,2447
-Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 Radweg in der Bergstraße: wo genau?	? -17909,7321 -18152,6572
 Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16157,-3757 -16050,-3982 -15982,-4032
 Am Küssel (Potsdam-Grube): Qualität?	? -19243,2246 -19505,2798
@@ -846,7 +845,6 @@ Zur Königlichen Hofbrauerei (Fahrbahnbeschaffenheit?)	? -12814,-2270 -12783,-226
 Peter-Kühne-Siedlung (Ist der Weg ausgeschildert? Nachts beleuchtet?)	? -15962,-2003 -15961,-2168
 (zwischen Sandweg und Havelhausener Str.) (Welcher Teil ist NN und welche sind N?)	? -4100,34709 -4039,34618 -4007,34553 -3996,34499
 Bruno-Schönlank-Str. (wie ist die Qualität der Bruno-Schönlank-Str.?)	? 1386,30391 708,30406 517,30342 476,30325 456,30295 446,30260
-Bahnhofstr. (die Bahnhofstr. ist in Wirklichkeit nicht so lang)	? 1678,34084 1639,34107 1502,34129 1425,34141 1331,34156 1251,34170 1208,34176 986,34207 852,34225 686,34248 646,34253 406,34290
 Rosenstr. (wo beginnt die Sperberstr.)	? 1282,33870 1168,33887 1112,33896 1064,33890 1023,33856 952,33774 906,33721 868,33695 821,33682 760,33665 696,33664 664,33671 618,33648 539,33617 470,33540
 Sperberstr. (wo beginnt die Rosenstr.)	? 1377,33855 1282,33870
 # added from landstrassen2
@@ -865,6 +863,7 @@ Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
+Klingsorstr.: schadhafter Asphalt (Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert?)	? 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
 # added from qualitaet_l
 Ortsdurchfahrt Sacrow: teilweise mäßiger Asphalt (Ist die Fahrbahnoberfläche nach der Sanierung besser geworden?)	? -10722,2111 -10633,2154 -10489,2151 -10309,2155 -10123,2226 -10118,2280 -10105,2458
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
@@ -888,7 +887,6 @@ Briesen - Petersdorf: guter bis mäßiger Asphalt (nach den Bauarbeiten guter Asph
 Kliestow - Wüste Kunersdorf: Feldwege (Qualität des Feldwegs mäßig und nicht schlecht?)	? 86555,-2783 86261,-1514 85834,181 86307,581
 Mühlental - Lebus: Feldwege (Qualität des Feldwegs mäßig und nicht schlecht?)	? 85662,1959 85885,2842 85956,3025 85940,3299
 Mützlitz: gutes Kopfsteinpflaster (nach Ende der Bauarbeiten (2006-10-06) vielleicht asphaltiert?)	? -50578,15920 -50505,15845 -50271,15917
-Am Neuen Garten: holpriges Kopfsteinpflaster (Liegt hier teilweise Asphalt?)	? -12582,127 -12332,585
 Herzfelde - Wichmannsdorf: schlechtes Kopfsteinpflaster (Wird das Kopfsteinpflaster bei den Bauarbeiten durch Asphalt ersetzt werden?)	? 22537,87990 22643,87937
 Weg am Flughafen - Rotberg: Feldweg (Ist der südöstliche Abschnitt des Weges ein Schotterweg? Oder nur ein unbefestigter Feldweg?)	? 17162,-6465 17910,-6981
 Eichendorffstr. (Schwanebeck-West): unbefestigte Straße (Wurde die Eichendorffstr. mittlerweile befestigt?)	? 17638,24756 17584,24703
@@ -948,10 +946,8 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 Kurpromenade: wird die Fahrbahn hier erneuert? (Wurde die Fahrbahn in der Kurpromenade erneuert?)	? -8917,5986 -8871,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen Prenzlau und Güstow einen straßenbegleitenden Radweg? Wenn ja: auf welcher Seite und ist der Radweg asphaltiert?)	? 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 L25 (Schmölln - Güstow): hier entsteht ein Radweg (Gibt es einen neuen Radweg im Bereich Schmölln - Autobahnauffahrt?)	? 55977,100103 56030,100076 56188,99924 56268,99856 56856,99683 57042,99574 57512,99290 57634,99199
-Stallschreiberstr.: Fahrradstraße geplant (Wurde die Fahrradstraße schon eingerichtet? Gibt es bereits eine Einbahnstraßenregelung für den Kfz-Verkehr?)	? 10794,10927 10824,11010 10690,11167 10683,11175
 # added from bbbike-temp-blockings-optimized
 Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe im Herbst 2023 (Wann sind die Bauarbeiten hier beendet?)	? 10346,-4027 10778,-3988 11338,-3945
 Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str. [Einfahrt Baseler Str.: Fahrbahn gesperrt] (Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet?)	? 3184,3427 3174,3052
 Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str. [östlich Drakestr.] (Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet?)	? 3558,3688 3507,3654
 Götelstr.: Bauarbeiten, Fahrbahn zwischen Betckestr. und Weverstr. gesperrt (Stand Mitte April 2023), Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? -3269,12406 -3260,12540
-Markgrafenstr.: Einbahnstraßenregelung zwischen Mohrenstr. und Jägerstr., offen Richtung Norden (Besteht die Einbahnstraßenregelung noch immer?)	? 9656,12031 9666,11935 9679,11834

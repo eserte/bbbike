@@ -30475,14 +30475,14 @@ EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Anfang November 2023: Hauptverbindungsweg ist noch immer gesperrt)', # früher: voraussichtlich bis Oktober 2023
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte November 2023: Hauptverbindungsweg ist noch immer gesperrt)', # früher: voraussichtlich bis Oktober 2023
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2023-11-01 vvv
+#: last_checked: 2023-11-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -34962,7 +34962,7 @@ EOF
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-101023/
 #: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023) (inaktiv)
-#: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023)
+#: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023) (bis 30.11.2023)
 #: also_indoor: traffic (none)
 # REMOVED (keine Einbahnstraßenregelung, Sackgasse für Autos) --- #: last_checked: 2023-08-05 --- #: check_frequency: 90d --- #: next_check: 2023-11-30
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
@@ -35542,7 +35542,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags)
 # REMOVED --- #: also_indoor: traffic (H,G,B,W)
 # REMOVED --- #: priority: #A
-#: last_checked: 2023-10-28 vvv
+#: last_checked: 2023-11-02 (okas) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-08-27 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -39224,7 +39224,7 @@ EOF
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
-#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023) (bis 29.03.2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg über Gehweg
 Jean-Jaurès-Str.	q2::inwork 4812,21737 4655,21939
@@ -39513,7 +39513,7 @@ EOF
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-10-11 (daf)
+#: last_checked: 2023-11-09 (okas)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -40499,6 +40499,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (bis 19.12.2024)
+#: osm_watch: way id="1207706195" version="1"
 #: XXX genauer anschauen, ist hier noch immer gesperrt?
 	q4::inwork 12407,8177 12545,8209
 EOF
@@ -40527,7 +40528,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1377283.php (Verlängerung bis 10.11.2023)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-dauern-laenger_a397516
 #: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
-#: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023) (bis 12.11.2023) (bis 15.11.2023)
+#: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023) (bis 12.11.2023) (bis 15.11.2023) (inaktiv)
 # REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualität vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
 	q4::inwork 5535,5068 5499,4999 5482,4965 5478,4957 5411,4825 5407,4815 5336,4676 5316,4637 5271,4547
 EOF
@@ -40701,6 +40702,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
+#: note: bei rbb bis 17.11.2023 terminiert
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-11-09
 # REMOVED --- #: check_frequency: 14d
@@ -40721,11 +40723,11 @@ EOF
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
-       until => 1700064000, # 2023-11-15 17:00
-       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 15.11.2023 17:00',
+       until => $isodate2epoch->("2023-11-29 17:00:00"), # 1700064000, # 2023-11-15 17:00
+       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 29.11.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.290205,52.497012,04.10.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023)
 	q4::inwork 2702,10006 2687,10053
 EOF
      },
@@ -40823,14 +40825,14 @@ EOF
 	q4::inwork 21944,16805 21889,16817
 EOF
      },
-     { from  => $isodate2epoch->("2023-11-20 00:00:00"), # mehrere Tage für den Aufbau
+     { from  => $isodate2epoch->("2023-11-14 00:00:00"), # mehrere Tage für den Aufbau (2023 bereits am 15.11.2023 voll aufgebaut)
        until => $isodate2epoch->("2024-01-07 23:59:59"), # mehrere Tage für den Abbau
        periodic => 1,
-       prewarn_days => 7,
+       prewarn_days => 13,
        postwarn_days => 7,
        recurrences => [['yearly', days => 19, months => 11]],
        source_id => 'https://www.weihnachtsmarkt-berlin.de/',
-       text  => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt vermutlich nur über einen engen Weg möglich',
+       text  => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen engen Weg am Rand möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BEBELPLATZXMAS-2022
@@ -40872,8 +40874,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GENDARMENMARKT-2023
+#: osm_watch: way id="35557161" version="24"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-15 (mapillary)
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
 EOF

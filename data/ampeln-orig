@@ -118,11 +118,12 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 # 
 #: next_check_id: BAUMSCHULEN-2023
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: osm_watch: way id="383023440" version="15"
 #: last_checked: 2023-11-11
 #: next_check: 2023-12-31
-# REMOVED --- #: valid: -20230930
+#: valid: -20231231
 	X::inwork 16328,7005
 # 
 #: next_check_id: SONYCENTER-2023
@@ -193,7 +194,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.572881,52.460427,14.09.2023,12:00 (bis 27.09.2024) (inaktiv) vvv
 #: source_id: viz2021:13.572881,52.460427,14.11.2023,14:00 (bis 27.09.2024)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2023-10-28 vvv
+#: last_checked: 2023-11-02 (okas) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-27 vvv
 #: valid: -20240927 vvv
@@ -3928,7 +3929,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -10702,-1851
 	F -12247,-1858
 	F -11571,-1583
+#: note: Anforderungsampel
 	F -12661,-14
+#: by: mapillary
+#: note: Anforderungsampel
+	F -12564,9
 	F -13137,-278
 	F -13811,182
 	F -14485,-1998

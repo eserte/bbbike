@@ -4610,7 +4610,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 kˆnnen die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann ¸ber einen engen und teilweise verwurzelten Trampelpfad umgangen werden, f¸r Radfahrer nur bedingt praktikabel
-#: last_checked: 2023-11-01 vvv
+#: last_checked: 2023-11-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4627,7 +4627,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => 1677970800,
          'id' => 3159,
-         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Anfang November 2023: Hauptverbindungsweg ist noch immer gesperrt)',
+         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte November 2023: Hauptverbindungsweg ist noch immer gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5621,7 +5621,7 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: note: anscheinend Schubertstr. auch f¸r Fuﬂg‰nger gesperrt, hier gibt es keinen Gehweg (noch immer?); auﬂerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags)
 # REMOVED --- #: also_indoor: traffic (H,G,B,W)
 # REMOVED --- #: priority: #A
-#: last_checked: 2023-10-28 vvv
+#: last_checked: 2023-11-02 (okas) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-08-27 vvv
 # REMOVED --- #: note: Unterf¸hrung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -6815,7 +6815,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaﬂnahme bis M‰rz 2024)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
-#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023) (bis 29.03.2024)
 Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737 4887,21944
 #: note: Schranke mit wenig Platz, oder Umweg ¸ber Gehweg
 Jean-JaurËs-Str.	q2::inwork 4812,21737 4655,21939
@@ -6943,7 +6943,7 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
          'data' => '#: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2023-10-11 (daf)
+#: last_checked: 2023-11-09 (okas)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -7341,6 +7341,7 @@ s¸dlicher Weg	2::inwork 10168,10085 10066,10071
        },
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (bis 19.12.2024)
+#: osm_watch: way id="1207706195" version="1"
 #: XXX genauer anschauen, ist hier noch immer gesperrt?
 	q4::inwork 12407,8177 12545,8209
 ',
@@ -7351,26 +7352,7 @@ s¸dlicher Weg	2::inwork 10168,10085 10066,10071
          'until' => 1734649140
        },
        undef,
-       {
-         'data' => '#: next_check_id: KLINGSOR-2023
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1361896.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/lageplan-zur-baumassnahme-in-der-klingsorstrasse.pdf
-#: by: https://www.stadtrand-nachrichten.de/klingsorstrasse-steglitz-zehlendorf-berlin/
-#: by: https://www.stadtrand-nachrichten.de/kommentar-klingsorstrasse-steglitz-zehlendorf-berlin/
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/klingsorstrasse-wird-saniert_a392572
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1377283.php (Verl‰ngerung bis 10.11.2023)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-dauern-laenger_a397516
-#: source_id: viz2021:13.32635,52.44753,18.09.2023,14:51 (bis 31.10.2023) (ersetzt, inaktiv)
-#: source_id: viz2021:13.328851,52.450348,18.09.2023,13:00 (bis 31.10.2023) (bis 12.11.2023) (bis 15.11.2023)
-# REMOVED (Halteverbotsschilder stehen schon) --- #: XXX Danach kann die Qualit‰t vermutlich auf Q0 gesetzt werden. --- #: last_checked: 2023-09-14 --- #: next_check: 2023-09-18
-	q4::inwork 5535,5068 5499,4999 5482,4965 5478,4957 5411,4825 5407,4815 5336,4676 5316,4637 5271,4547
-',
-         'from' => 1694901600,
-         'id' => 3914,
-         'text' => 'Klingsorstr.: Bauarbeiten zwischen Mittelstr. und Birkbuschstr., Straﬂe gesperrt, vom 18.9.2023 bis 15.11.2023',
-         'type' => 'handicap',
-         'until' => 1700064000
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (B,G)
 #: note: Endedatum per Halteverbotsschilder
@@ -7496,6 +7478,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
+#: note: bei rbb bis 17.11.2023 terminiert
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-11-09
 # REMOVED --- #: check_frequency: 14d
@@ -7522,14 +7505,14 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'until' => 1700236800
        },
        {
-         'data' => '	q4::inwork 2702,10006 2687,10053
+         'data' => '#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023)
+	q4::inwork 2702,10006 2687,10053
 ',
          'from' => 1696309200,
          'id' => 3930,
-         'source_id' => 'viz2021:13.290205,52.497012,04.10.2023,07:00',
-         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurf¸rstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 15.11.2023 17:00',
+         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurf¸rstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 29.11.2023 17:00',
          'type' => 'handicap',
-         'until' => 1700064000
+         'until' => 1701273600
        },
        {
          'data' => '#: note: Bauarbeiten beginnen etwa 120m ˆstlich der Fˆhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mˆgliche Umfahrung
@@ -7610,11 +7593,11 @@ Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12
 # REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- 
 Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 ',
-         'from' => 1700434800,
+         'from' => 1699916400,
          'id' => 3939,
          'periodic' => 1,
          'postwarn_days' => 7,
-         'prewarn_days' => 7,
+         'prewarn_days' => 13,
          'recurrences' => [
                             [
                               'yearly',
@@ -7625,7 +7608,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
                             ]
                           ],
          'source_id' => 'https://www.weihnachtsmarkt-berlin.de/',
-         'text' => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt vermutlich nur ¸ber einen engen Weg mˆglich',
+         'text' => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur ¸ber einen engen Weg am Rand mˆglich',
          'type' => 'gesperrt',
          'until' => 1704668399
        },
@@ -7655,8 +7638,9 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
        },
        {
          'data' => '#: next_check_id: GENDARMENMARKT-2023
+#: osm_watch: way id="35557161" version="24"
 #: add_fragezeichen: Besteht die Einbahnstraﬂenregelung noch immer?
-#: last_checked: 2023-10-29
+#: last_checked: 2023-11-15 (mapillary)
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
 ',

@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-11-10
+#: last_checked: 2023-11-15
 #: next_check: 2023-12-13
 #: valid: -20231213
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -32,7 +32,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2023-11-15 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-12-29 vvv
 #: valid: -20231229 vvv
@@ -57,7 +57,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="16"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-15
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -1007,9 +1007,9 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: by: #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von öffentlichen Straßenland)
 #: XXX Bleibt es bei der ausschließlichen Busfreigabe oder entsteht hier eine neue Verbindungsstraße? Nebenan gibt es ein Baufeld; evtl. gibt es in Zukunft noch weitere Gehwegbeziehungen?
 # REMOVED --- #: osm_watch: way id="519370786" version="5"
-#: osm_watch: way id="1169861688" version="3"
+#: osm_watch: way id="1169861688" version="4"
 #: osm_watch: note 3678184 4
-#: osm_watch: way id="1219613564" version="1"
+#: osm_watch: way id="1219613564" version="2"
 #: last_checked: 2023-11-13
 #: check_frequency: 60d
 Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15832,16846 15866,16823 15875,16816
@@ -1111,7 +1111,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum
-#: last_checked: 2023-11-14 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-11-15 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3 8637,12258 8592,12252 8538,12245
