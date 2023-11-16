@@ -1263,7 +1263,7 @@ sub showmap_url_bikemapnet {
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     $scale = 17 if $scale > 17;
     sprintf "https://www.bikemap.net/en/search/?zoom=%d&center=%s%%2C%s",
-	$scale, $py, $px;
+	$scale, $px, $py;
 
 }
 
