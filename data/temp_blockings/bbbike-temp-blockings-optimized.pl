@@ -4026,7 +4026,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neuer Staatsbesuch)
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
+	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
+	2::temp 6694,12627 7031,12320
+	3 7183,12372 7122,12384 7051,12426 6859,12567 6808,12604
+	3 6808,12604 6859,12567 7051,12426 7122,12384 7183,12372
+',
+         'from' => 1700163475,
+         'id' => 2873,
+         'text' => 'Straßen am Schloss Bellevue (inklusive Großer Stern): wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1700262000
+       },
        undef,
        undef,
        undef,
@@ -6570,7 +6586,8 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        },
        undef,
        {
-         'data' => '#: note: laut osm "Baustelle bis Ende 2023"
+         'data' => '#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
+#: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="1"
 #: last_checked: 2023-09-15 (mapillary)
 #: next_check: 2023-12-31
@@ -6742,7 +6759,24 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
+#: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
+#: by: https://berliner-abendblatt.de/berlin-news/sicherheitsvorkehrungen-nach-selenskyj-besuch-aufgehoben-id221352
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
+	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
+	2::temp 8548,11571 8553,11630
+',
+         'from' => 1700163475,
+         'id' => 3786,
+         'text' => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1700262000
+       },
        undef,
        undef,
        undef,
@@ -7478,9 +7512,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
-#: note: bei rbb bis 17.11.2023 terminiert
+#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-11-09
+#: last_checked: 2023-11-16
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 13598,13180 13692,13221
 ',
@@ -7886,6 +7920,51 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'text' => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
          'type' => 'gesperrt',
          'until' => 1700794800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+(Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
+(südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
+(Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
+(Moltkebrücke - südliches Spreeufer)	2::temp 8030,12857 8025,12859 8006,12853
+(Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
+(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8415,12749
+Große Querallee	2::temp 7945,12592 7875,12363
+Zeltenplatz	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
+Simsonweg	2::temp 8354,12416 8391,12389
+Kleine Querallee	2::temp 8391,12389 8400,12417
+John-Foster-Dulles-Allee	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+(Vorfahrt HdKdW)	2::temp 7821,12367 7813,12427 7778,12470 7687,12477 7654,12464 7627,12380
+Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417
+(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
+(Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
+Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
+Willy-Brandt-Str.	2::temp 8030,12824 8120,12756
+(am Bundeskanzleramt)	2::temp 8120,12756 8122,12603
+Heinrich-von-Gagern-Str.	2::temp 8122,12603 8119,12414
+Paul-Löbe-Allee	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
+Paul-Löbe-Allee	2::temp 8207,12606 8122,12603
+Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
+(Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7776,12586 7745,12603
+Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758
+Konrad-Adenauer-Str.	2::temp 8309,12758 8306,12609
+Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758
+Otto-von-Bismarck-Allee	2::temp 8309,12758 8252,12757 8206,12757
+Otto-von-Bismarck-Allee	2::temp 8206,12757 8120,12756
+Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
+Bettina-von-Arnim-Ufer	2::temp 7437,12368 7561,12527 7670,12576
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8115,12912 8116,12938
+(Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
+(Gustav-Heinemann-Brücke - Paul-Löbe-Haus)	2::temp 8115,12912 8252,12757
+(südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8025,12879 8041,12866 8116,12938
+(südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
+',
+         'from' => 1700163840,
+         'id' => 3967,
+         'text' => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1700262000
        }
      
 );

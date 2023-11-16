@@ -10,6 +10,18 @@
 # 
 ### Friedrichshain ###
 # 
+#: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 
+#: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut
+#: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023)
+#: last_checked: 2023-11-16 vvv
+#: next_check: 2023-12-01 vvv
+#: valid: -20231201 vvv
+Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229
+Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: STRALAUERALLEE-2023
 #: last_checked: 2023-11-15
 #: next_check: 2023-12-13
@@ -284,7 +296,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-10-27 vvv
+#: last_checked: 2023-11-08 (mapillary) vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10973,12611
@@ -307,7 +319,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10973,12611
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-11-07
+#: last_checked: 2023-11-16
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -323,7 +335,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2023-11-07 vvv
+#: last_checked: 2023-11-16 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -442,7 +454,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-10-31 (mapillary) vvv
+#: last_checked: 2023-11-16 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -960,17 +972,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: check_frequency: 60d
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
-#: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220
-#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung)
-#: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dstrctberlin-ist-bald-bezugsfertig_a338513
-#: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
-# REMOVED (keine construction mehr) --- #: osm_watch: way id="164816805" version="12"
-#: osm_watch: node id="1425174760" version="5"
-#: priority: #C
-#: last_checked: 2023-10-16
-#: check_frequency: 30d
-Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
+# REMOVED (mittlerweile wurde die Sperrung entfernt und die provisorische Asphaltdecke zur Hälfte zurückgebaut) --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220 --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung) --- #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/ --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dstrctberlin-ist-bald-bezugsfertig_a338513 --- #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4 --- # REMOVED (keine construction mehr) --- #: osm_watch: way id="164816805" version="12" --- #: osm_watch: node id="1425174760" version="5" --- #: priority: #C --- #: last_checked: 2023-10-16 --- #: check_frequency: 30d --- Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
@@ -1109,9 +1111,10 @@ Pariser Platz: Fußgänger	q2 8637,12258 8641,12227 8643,12208 8705,12217 8728,122
 Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 # 
 #: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
+#: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum
-#: last_checked: 2023-11-15 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-11-16 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3 8637,12258 8592,12252 8538,12245
@@ -3267,7 +3270,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2023-11-07
+#: last_checked: 2023-11-16
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
