@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.01;
+$VERSION = 2.02;
 
 use vars qw(%images);
 
@@ -145,16 +145,10 @@ sub register {
 	  ($images{Geocaching} ? (icon => $images{Geocaching}) : ()),
 	  order => 8800,
 	};
-    $main::info_plugins{__PACKAGE__ . "_Bing_Birdseye"} =
-	{ name => "bing (Bird's eye)",
-	  callback => sub { showmap_bing_birdseye(@_) },
-	  callback_3_std => sub { showmap_url_bing_birdseye(@_) },
-	  ($images{Bing} ? (icon => $images{Bing}) : ()),
-	};
-    $main::info_plugins{__PACKAGE__ . "_Bing_Street"} =
-	{ name => "bing (Street)",
+    $main::info_plugins{__PACKAGE__ . "_Bing"} =
+	{ name => "bing",
 	  callback => sub { showmap_bing_street(@_) },
-	  callback_3_std => sub { showmap_url_bing_street(@_) },
+	  callback_3 => sub { show_bing_menu(@_) },
 	  ($images{Bing} ? (icon => $images{Bing}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_Waze"} =
@@ -1332,6 +1326,35 @@ sub showmap_bing_street {
     my(%args) = @_;
     my $url = showmap_url_bing_street(%args);
     start_browser($url);
+}
+
+sub show_bing_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_Bing_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'Bing',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => "Bird's eye",
+	 -command => sub { showmap_bing_birdseye(%args) },
+	);
+    $link_menu->command
+	(-label => "Street-Link kopieren",
+	 -command => sub { _copy_link(showmap_url_bing_street(%args)) },
+	);
+    $link_menu->command
+	(-label => "Bird's eye-Link kopieren",
+	 -command => sub { _copy_link(showmap_url_bing_birdseye(%args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 ######################################################################
