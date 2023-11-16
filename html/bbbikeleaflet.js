@@ -329,6 +329,12 @@ function doLeaflet() {
     var bbbikeUnknownUrl = bbbikeTempRoot + '/geojson/fragezeichen.geojson';
     var bbbikeUnknownTileLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
 
+    var bbbikeXXXUrl = bbbikeTempRoot + '/geojson/fragezeichen-outdoor-nextcheck.geojson';
+    var bbbikeXXXLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
+
+    var bbbikeXXXFutureUrl = bbbikeTempRoot + '/geojson/fragezeichen-outdoor.geojson';
+    var bbbikeXXXFutureLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
+
     var bbbikeTempBlockingsUrl = bbbikeTempRoot + '/geojson/bbbike-temp-blockings-optimized.geojson';
     var bbbikeTempBlockingsLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
 
@@ -422,14 +428,16 @@ function doLeaflet() {
     map.addControl(new L.control.scale());
 
     var overlayDefs = [
-	 {label:M("Qualit\u00e4t"),   layer:bbbikeSmoothnessTileLayer, abbrev:'Q'}
-	,{label:M("Handicaps"),       layer:bbbikeHandicapTileLayer,   abbrev:'H'}
-	,{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'}
-	,{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'}
-	,{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'}
-	,{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ', geojsonurl:bbbikeUnknownUrl}
-	,{label:M("temp. Sperrungen"), layer:bbbikeTempBlockingsLayer, abbrev:'TB', geojsonurl:bbbikeTempBlockingsUrl}
-	,{label:M("F\u00e4hrinfos"),  layer:bbbikeCommentsFerryLayer,  abbrev:'CF', geojsonurl:bbbikeCommentsFerryUrl}
+	 {label:M("Qualit\u00e4t"),           layer:bbbikeSmoothnessTileLayer, abbrev:'Q',  inControl:true}
+	,{label:M("Handicaps"),               layer:bbbikeHandicapTileLayer,   abbrev:'H',  inControl:true}
+	,{label:M("Radwege"),                 layer:bbbikeCyclewayTileLayer,   abbrev:'RW', inControl:true}
+	,{label:M("Unbeleuchtet"),            layer:bbbikeUnlitTileLayer,      abbrev:'NL', inControl:true}
+	,{label:M("Gr\u00fcne Wege"),         layer:bbbikeGreenTileLayer,      abbrev:'GR', inControl:true}
+	,{label:M("Fragezeichen"),            layer:bbbikeUnknownTileLayer,    abbrev:'FZ', inControl:true,  geojsonurl:bbbikeUnknownUrl}
+	,{label:M("nicht-\u00f6ffentl. Fz."), layer:bbbikeXXXLayer,            abbrev:'X',  inControl:false, geojsonurl:bbbikeXXXUrl}
+	,{label:M("zuk\u00fcnft. Fz."),       layer:bbbikeXXXFutureLayer,      abbrev:'XF', inControl:false, geojsonurl:bbbikeXXXFutureUrl}
+	,{label:M("temp. Sperrungen"),        layer:bbbikeTempBlockingsLayer,  abbrev:'TB', inControl:true,  geojsonurl:bbbikeTempBlockingsUrl}
+	,{label:M("F\u00e4hrinfos"),          layer:bbbikeCommentsFerryLayer,  abbrev:'CF', inControl:true,  geojsonurl:bbbikeCommentsFerryUrl}
     ];
 
     var baseMapDefs = [
@@ -443,7 +451,19 @@ function doLeaflet() {
     ];
     var overlayMaps = {};
     for(var i=0; i<overlayDefs.length; i++) {
-        overlayMaps[overlayDefs[i].label] = overlayDefs[i].layer;
+	var overlayDef = overlayDefs[i];
+	var inControl = overlayDef.inControl;
+	if (!inControl && initLayerAbbrevs.length) {
+	    for(var j=0; j<initLayerAbbrevs.length; j++) {
+		if (initLayerAbbrevs[j] == overlayDef.abbrev) {
+		    inControl = true;
+		    break;
+		}
+	    }
+	}
+	if (inControl) {
+            overlayMaps[overlayDef.label] = overlayDef.layer;
+	}
     }
     var baseMaps = {};
     for(var i=0; i<baseMapDefs.length; i++) {
