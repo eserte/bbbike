@@ -508,7 +508,20 @@ function doLeaflet() {
 	    xhr.onload = function() {
 		if (xhr.status === 200) {
 		    currentLayer = overlayDef.layer; // XXX hacky! must be set before calling addData (which would call onEachFeature callback)
-		    overlayDef.layer.addData(xhr.response);
+		    var geojson = xhr.response;
+		    var currentTimeSeconds = Math.floor(new Date().getTime() / 1000);
+		    geojson.features = geojson.features.filter(function (feature) {
+			if (feature.properties["x-until"] && currentTimeSeconds > feature.properties["x-until"]) {
+			    // console.log("skip " + feature.properties["name"] + " because of x-until");
+			    return false;
+			}
+			if (feature.properties["x-from"]  && currentTimeSeconds < feature.properties["x-from"]) {
+			    // console.log("skip " + feature.properties["name"] + " because of x-from");
+			    return false;
+			}
+			return true;
+		    });
+		    overlayDef.layer.addData(geojson);
 		}
 	    };
 	    xhr.send();
