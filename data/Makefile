@@ -128,9 +128,11 @@ COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
 BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd fragezeichen-outdoor.bbd
+BBBGEOJSONP_WEBCAMS_SOURCES=	webcams.bbd
 BBBGEOJSONP_TARGETS=	${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp \
 			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//} \
-			${BBBGEOJSONP_PERSISTENTTMP_SOURCES:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
+			${BBBGEOJSONP_PERSISTENTTMP_SOURCES:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//} \
+			${BBBGEOJSONP_WEBCAMS_SOURCES:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
 GEOJSON_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd fragezeichen-outdoor.bbd
 GEOJSON_TARGETS=	${GEOJSONDIR}/bbbike-temp-blockings-optimized.geojson \
 			${BBD_TARGETS:S/$/.geojson/:S/^/${GEOJSONDIR}\//} \
@@ -1318,6 +1320,13 @@ ${i:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: $i
 ${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${PERSISTENTTMPDIR}/$i
 	@mkdir -p ${BBBGEOJSONPDIR}
 	${BBD_TO_BBBGEOJSONP} $> > $@~
+	mv $@~ $@
+.endfor
+
+.for i in ${BBBGEOJSONP_WEBCAMS_SOURCES}
+${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${MISCDIR}/$i
+	@mkdir -p ${BBBGEOJSONPDIR}
+	${PERL} -I../lib -I.. -MStrassen -e '$$new_s=Strassen->new; Strassen->new_stream(shift)->read_stream(sub{my($$r,$$dir)=@_; if (!$$dir->{url}) { $$dir->{url} = [$$r->[Strassen::NAME]]; $$r->[Strassen::NAME] = "Webcam" }; $$new_s->push_ext($$r,$$dir) }); $$new_s->write("-")' $> | ${BBD_TO_BBBGEOJSONP} - > $@~
 	mv $@~ $@
 .endfor
 
