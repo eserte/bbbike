@@ -162,6 +162,7 @@ sub highlight_words {
 	       |   Aufzug(es)?
 	       |   Kundgebung
 	       |   Veranstaltung
+	       |   Staatsbesuch(es|s)?
 	       |   Sportveranstaltung
 	       |   wegen[ ]zu[ ]hoher[ ]Verkehrsbelastung
 	       |   wegen[ ]eines[ ]Wasserrohrbruches
