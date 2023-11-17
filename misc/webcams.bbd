@@ -12,8 +12,9 @@
 #: section Berlin vvv
 # 
 #: section Tiergarten vvv
-http://www.webcam-berlin-tiergarten.de/	WC 5958,12035 6047,11955
-http://www.webcam-berlin-tiergarten.de/	WC 5953,12035 5852,11932
+#: historical_note: früher http://www.webcam-berlin-tiergarten.de/
+https://www.youtube.com/watch?v=jAL268T1lFw	WC 5958,12035 6047,11955
+https://www.youtube.com/watch?v=iEDMWm0G3Io	WC 5953,12035 5852,11932
 # 
 http://berlin-webcam.illustriertestadt.de/	WC 6692,11096 6787,11112
 # 
@@ -24,7 +25,8 @@ https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WC 7691,14248 7661
 #: historical_note: früher 7582,14169 7540,14240
 https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WC 7642,14326 7567,14373
 #: historical_note: früher 7760,13961 7833,13913
-https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WC 7682,13984 7647,14041
+#: note: seit 9.11.2023 außer Betrieb (Archiv existiert noch)
+https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WCbroken 7682,13984 7647,14041
 # 
 https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
 #: section ^^^
@@ -37,11 +39,16 @@ https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 
 https://www.berlin.de/webcams/4350926-4350835-rbb-fernsehzentrum.html	WC 1674,11250 1712,11133
 # 
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
-#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022)
+#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023)
 # früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
 # früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
 # früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
-https://olympiastadion.berlin/de/webcams_de/	WC -1262,11788 -1185,11806
+https://olympiastadion.berlin/de/webcams_de/	WCbroken -1262,11788 -1185,11806
+# 
+#: note: Rundblick, Kamerafahrt
+https://haustechnik-corbusierhaus.info/Webcam-Rundblick/	WC -477,11415 -417,11336
+#: note: feste Kamera
+https://haustechnik-corbusierhaus.info/Blick-auf-das-Olympiastadion/	WC -477,11416 -541,11486
 #: section ^^^
 # 
 #: section Mitte vvv
