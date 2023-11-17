@@ -1326,7 +1326,7 @@ ${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${PERSISTENTTMPDIR}/$i
 .for i in ${BBBGEOJSONP_WEBCAMS_SOURCES}
 ${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${MISCDIR}/$i
 	@mkdir -p ${BBBGEOJSONPDIR}
-	${PERL} -I../lib -I.. -MStrassen -e '$$new_s=Strassen->new; Strassen->new_stream(shift)->read_stream(sub{my($$r,$$dir)=@_; if (!$$dir->{url}) { $$dir->{url} = [$$r->[Strassen::NAME]]; $$r->[Strassen::NAME] = "Webcam" }; $$new_s->push_ext($$r,$$dir) }); $$new_s->write("-")' $> | ${BBD_TO_BBBGEOJSONP} - > $@~
+	${PERL} -I../lib -I.. -MStrassen -e '$$new_s=Strassen->new; Strassen->new_stream(shift)->read_stream(sub{my($$r,$$dir)=@_; if (!$$dir->{url}) { $$dir->{url} = [$$r->[Strassen::NAME]]; $$r->[Strassen::NAME] = "Webcam"; if ($$r->[Strassen::CAT] =~ /broken/) { $$r->[Strassen::NAME] .= " (broken)" } }; $$new_s->push_ext($$r,$$dir) }); $$new_s->write("-")' $> | ${BBD_TO_BBBGEOJSONP} - > $@~
 	mv $@~ $@
 .endfor
 
