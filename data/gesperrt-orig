@@ -3823,7 +3823,7 @@ Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-11-10 vvv
+#: last_checked: 2023-11-17 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -3864,7 +3864,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754
 #: by: https://www.berliner-woche.de/wedding/c-bauen/auf-dem-weddingplatz-laeuft-die-erste-bauphase-noch-bis-jahresende_a384210
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
-#: osm_watch: way id="4596985" version="22"
+#: osm_watch: way id="4596985" version="23"
 #: last_checked: 2023-11-07
 #: check_frequency: 90d
 #: next_check: 2024-09-30
@@ -3954,7 +3954,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-17
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3971,9 +3971,9 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
-#: osm_watch: way id="766868087" version="10"
+#: osm_watch: way id="766868087" version="11"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
-#: osm_watch: way id="766868090" version="9"
+#: osm_watch: way id="766868090" version="11"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: note ^^^
 #: next_check ^^^
@@ -4189,7 +4189,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025)
-#: osm_watch: way id="129104626" version="21"
+#: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
 #: last_checked: 2023-11-07
@@ -4530,7 +4530,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="729492933" version="4"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
 #: osm_watch: way id="60333311" version="31"
-#: osm_watch: way id="289966097" version="20"
+#: osm_watch: way id="289966097" version="21"
 #: priority: #A
 #: last_checked: 2023-11-08 (mapillary)
 #: check_frequency: 90d

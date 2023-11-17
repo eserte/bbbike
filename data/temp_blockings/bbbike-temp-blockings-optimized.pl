@@ -3689,6 +3689,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
 #: osm_watch: way id="462738551" version="20"
 #: osm_watch: way id="848019125" version="6"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
@@ -6319,7 +6320,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=719774#post719774 (Geplanter Projektabschluss: 2023-12-31)
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
-#: osm_watch: way id="1170463985" version="2"
+#: osm_watch: way id="1170463985" version="3"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: also_indoor: traffic (G,W)
@@ -6882,7 +6883,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2023-11-17 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -7013,12 +7014,12 @@ Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
          'data' => '#: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1717081905781203064#m (bis 17.11.2023 plus eventuell 14 Tage)
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023)
 #: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen (stimmt aber nicht!), bis 17.11.2023) (mittlerweile nur eine Richtung) (inaktiv)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: note: Einbahnstraßenregelung in der Pistoriusstraße ist etwa 120m lang
 #: last_checked: 2023-10-19 vvv
-#: next_check: 2023-11-17 vvv
+#: next_check: 2023-11-27 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: next_check ^^^
@@ -7026,9 +7027,9 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 ',
          'from' => 1687068000,
          'id' => 3840,
-         'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., voraussichtlich bis 17. November 2023',
+         'text' => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., voraussichtlich bis 27. November 2023',
          'type' => 'handicap',
-         'until' => 1700236800
+         'until' => 1701100800
        },
        undef,
        undef,
@@ -7055,7 +7056,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
-#: last_checked: 2023-11-09 (bw)
+#: last_checked: 2023-11-16 (mapillary: südlich Fischerhüttenweg gesperrt)
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -7063,7 +7064,7 @@ Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
          'from' => 1695149689,
          'id' => 3849,
          'prewarn_days' => 16,
-         'text' => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Start der Bauarbeiten voraussichtlich am 5.10.2023, Ende der Bauarbeiten am 31.08.2025',
+         'text' => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Bauarbeiten dauern bis Ende August 2025',
          'type' => 'gesperrt',
          'until' => 1756677599
        },
@@ -7248,22 +7249,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
          'until' => 1701360000
        },
        undef,
-       {
-         'data' => '#: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-11-06 vvv
-#: check_frequency: 14d vvv
-nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
-südlicher Weg	2::inwork 10168,10085 10066,10071
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3889,
-         'text' => 'Carl-Herz-Ufer - Brachvogelstr.: beide Wege wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte Oktober 2023: weiterhin gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
@@ -7512,7 +7498,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
-#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden)
+#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-11-16
 # REMOVED --- #: check_frequency: 14d
@@ -7520,12 +7506,13 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => 1696309200,
          'id' => 3928,
-         'text' => 'Ebelingstr.: Anbindung Ebertystr. gesperrt',
+         'text' => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vermutlich bis Ende Dezember 2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1703091600
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
+#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023)
 #: osm_watch: way id="137623800" version="32"
 #: osm_watch: way id="625667165" version="23"
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
@@ -7533,10 +7520,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => 1696312800,
          'id' => 3929,
-         'source_id' => 'viz2021:13.432818,52.481758,04.10.2023,08:00',
-         'text' => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 17.11.2023 17:00',
+         'text' => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 23.11.2023 17:00',
          'type' => 'handicap',
-         'until' => 1700236800
+         'until' => 1700755200
        },
        {
          'data' => '#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023)
@@ -7845,14 +7831,14 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'until' => 1704063600
        },
        {
-         'data' => '#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023)
+         'data' => '#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023) (bis 29.11.2023)
 	q4::inwork 10103,10989 10397,10852
 ',
          'from' => 1699333200,
          'id' => 3960,
-         'text' => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 22.11.2023 17:00',
+         'text' => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 29.11.2023 17:00',
          'type' => 'handicap',
-         'until' => 1700668800
+         'until' => 1701273600
        },
        {
          'data' => '#: next_check_id: REVALER-2023
@@ -7924,6 +7910,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        {
          'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
 #: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+#: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_49_4437_4640_online.pdf (Amtsblatt ist am gleichen Tag wie die Allgemeinverfügung erschienen (!))
 (Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 (südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
 (Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853

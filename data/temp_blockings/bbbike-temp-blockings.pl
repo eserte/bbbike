@@ -24845,6 +24845,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/baederbetriebe-investieren-so-viel-wie-nie-id209419
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
 #: osm_watch: way id="462738551" version="20"
 #: osm_watch: way id="848019125" version="6"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
@@ -37784,7 +37785,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=719774#post719774 (Geplanter Projektabschluss: 2023-12-31)
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
-#: osm_watch: way id="1170463985" version="2"
+#: osm_watch: way id="1170463985" version="3"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: also_indoor: traffic (G,W)
@@ -39278,7 +39279,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2023-11-17 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39595,19 +39596,19 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-06-18 08:00:00"),
-       until => $isodate2epoch->("2023-11-17 17:00:00"),
-       text  => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., voraussichtlich bis 17. November 2023',
+       until => $isodate2epoch->("2023-11-27 17:00:00"),
+       text  => 'Pistoriusstr.: Richtung Prenzlauer Promenade zwischen Mirbachplatz und Roelckestr. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Einbahnstraßenregelung in der Gäblerstr., voraussichtlich bis 27. November 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: PISTORIUS-2023
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Teilsperrung Pistoriusstraße weiterhin bis Sa, 28.10.(2023))
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1717081905781203064#m (bis 17.11.2023 plus eventuell 14 Tage)
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023)
+#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023)
 #: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen (stimmt aber nicht!), bis 17.11.2023) (mittlerweile nur eine Richtung) (inaktiv)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: note: Einbahnstraßenregelung in der Pistoriusstraße ist etwa 120m lang
 #: last_checked: 2023-10-19 vvv
-#: next_check: 2023-11-17 vvv
+#: next_check: 2023-11-27 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
 #: next_check ^^^
@@ -39707,7 +39708,7 @@ EOF
      { from  => 1695149689, # 1690581600, # 2023-07-29 00:00
        until => $isodate2epoch->("2025-08-31 23:59:59"), # 1734822000, # 2024-12-22 00:00
        prewarn_days => 16,
-       text  => 'Kronprinzessinnenweg: zukünftig Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Start der Bauarbeiten voraussichtlich am 5.10.2023, Ende der Bauarbeiten am 31.08.2025', # (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024',
+       text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Bauarbeiten dauern bis Ende August 2025', # (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024', # , Start der Bauarbeiten voraussichtlich am 5.10.2023
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -39726,7 +39727,7 @@ EOF
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
-#: last_checked: 2023-11-09 (bw)
+#: last_checked: 2023-11-16 (mapillary: südlich Fischerhüttenweg gesperrt)
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -40243,18 +40244,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1700249292, # undef, # XXX
        text  => 'Carl-Herz-Ufer - Brachvogelstr.: beide Wege wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte Oktober 2023: weiterhin gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv
-#: last_checked: 2023-11-06 vvv
-#: check_frequency: 14d vvv
+#: by[nocache]: https://nitter.net/BA_Xhain/status/1725527917998805134#m (Abschluss der Bauarbeiten)
+# REMOVED --- #: add_fragezeichen: Sind beide Wege noch immer gesperrt? vvv --- #: last_checked: 2023-11-06 vvv --- #: check_frequency: 14d vvv
 nördlicher Weg an der ehemaligen Minigolfanlage	2::inwork 10069,10151 10158,10117
 südlicher Weg	2::inwork 10168,10085 10066,10071
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -40701,13 +40699,13 @@ EOF
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
-       until => undef, # 1700064000, # 2023-11-15 17:00
-       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt',
+       until => $isodate2epoch->("2023-12-20 18:00:00"), # undef, # 1700064000, # 2023-11-15 17:00
+       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vermutlich bis Ende Dezember 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
-#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden)
+#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2023-11-16
 # REMOVED --- #: check_frequency: 14d
@@ -40715,12 +40713,12 @@ EOF
 EOF
      },
      { from  => 1696312800, # 2023-10-03 08:00
-       until => 1700236800, # 2023-11-17 17:00
-       text  => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 17.11.2023 17:00',
+       until => $isodate2epoch->("2023-11-23 17:00:00"), # 1700236800, # 2023-11-17 17:00
+       text  => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 23.11.2023 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.432818,52.481758,04.10.2023,08:00',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
+#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023)
 #: osm_watch: way id="137623800" version="32"
 #: osm_watch: way id="625667165" version="23"
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
@@ -41082,11 +41080,11 @@ EOF
 EOF
      },
      { from  => 1699333200, # 2023-11-07 06:00
-       until => 1700668800, # 2023-11-22 17:00
-       text  => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 22.11.2023 17:00',
+       until => $isodate2epoch->("2023-11-29 17:00:00"), # 1700668800, # 2023-11-22 17:00
+       text  => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 29.11.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023)
+#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023) (bis 29.11.2023)
 	q4::inwork 10103,10989 10397,10852
 EOF
      },
@@ -41160,6 +41158,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
 #: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+#: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_49_4437_4640_online.pdf (Amtsblatt ist am gleichen Tag wie die Allgemeinverfügung erschienen (!))
 (Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 (südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
 (Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
