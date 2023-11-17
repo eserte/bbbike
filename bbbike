@@ -14578,6 +14578,7 @@ sub show_info {
 					    [nl          => 'NL'],
 					    [gr          => 'GR'],
 					    [fz          => 'FZ'],
+					    [\"fragezeichen-outdoor.bbd" => 'XF'],
 					   );
 		    my @p_draw_mapping   = ();
 		    my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
@@ -15179,12 +15180,21 @@ sub _layers_to_layers {
     for my $type (qw(str p)) {
 	my $mapping = $type eq 'str' ? \@str_draw_mapping : \@p_draw_mapping;
 	my $draw    = $type eq 'str' ? \%str_draw         : \%p_draw;
+	my $file    = $type eq 'str' ? \%str_file         : \%p_file;
 	for my $check (@$mapping) {
 	    my($abk, $ms_layer) = @$check;
 	    my $doit;
 	    if (ref $abk eq 'ARRAY') {
 		for (@$abk) {
 		    if ($draw->{$_}) {
+			$doit = 1;
+			last;
+		    }
+		}
+	    } elsif (ref $abk eq 'SCALAR') {
+		my $check_file = $$abk;
+		for my $_abk (keys %$file) {
+		    if (basename($file->{$_abk}) eq $check_file && $draw->{$_abk}) {
 			$doit = 1;
 			last;
 		    }
