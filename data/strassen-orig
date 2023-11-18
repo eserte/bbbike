@@ -6283,7 +6283,7 @@ Trojanstr.	N 16353,7226 16290,7160 16234,7100
 Eschenbachstr.	N 16290,7160 16375,7070
 Stormstr. (Baumschulenweg)	N 16328,7005 16234,7100
 Glanzstr.	N 16328,7005 16433,6892 16588,6724
-Neue Bahnhofstr.	H 15016,11431 14918,11249
+Neue Bahnhofstr.	H 15016,11431 14945,11300 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 14760,11044
 # REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
 #: osm.highway: service
@@ -11002,7 +11002,7 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 1046
 # REMOVED --- #: osm_watch: way id="810461577" version="5"
 #: osm_watch: way id="997120420" version="4"
 #: XXX bis wann wird es diesen Weg geben?
-#: last_checked: 2023-05-13
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 (Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -11011,7 +11011,7 @@ Zescher Str.	N 10513,-2397 10509,-2128
 Haeselerstr. (Lichtenrade)	N 10404,-2404 10513,-2397 10563,-2432
 Prinzessinnenstr. (Lichtenrade)	H 10194,-2138 10096,-2137
 Prinzessinnenstr. (Lichtenrade)	N 10096,-2137 9961,-2136 9856,-2135 9757,-2135 9650,-2135 9576,-2135
-Alt-Lichtenrade	N 11119,-1992 11115,-1969 11085,-1969 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11068,-1574 11147,-1346 11149,-1274 11120,-976 11099,-857 11054,-740 10971,-499 10950,-438 10938,-405 10835,-145 10782,-24
+Alt-Lichtenrade	N 11119,-1992 11115,-1969 11085,-1969 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11070,-1574 11147,-1346 11149,-1274 11120,-976 11099,-857 11054,-740 10971,-499 10950,-438 10938,-405 10835,-145 10782,-24
 Alt-Lichtenrade	N 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 Ringelnatzstr.	N 10971,-499 10868,-539 10955,-769
 Happestr.	N 10955,-769 10953,-812 10968,-987 10973,-1041 10976,-1070
@@ -11020,23 +11020,19 @@ Schumpeterstr.	N 10979,-1093 10993,-1256 11003,-1303
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8407 (Empfehlung: Umbenennung in Ottilie-Ehlers-Kollwitz-Str.)
 Straße 40 (Lichtenrade)	N 11015,-1357 11003,-1303
 Weißenthurmstr.	N 10968,-987 11120,-976
-Marienfelder Str.	N 10853,-1475 10981,-1564 11068,-1574
+Marienfelder Str.	N 10853,-1475 10981,-1564 11070,-1574
 Nuthestr.	N 10301,-1891 10270,-1890 10251,-1877 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 9849,-911 9888,-853
 Nuthestr.	NN 9815,-805 9813,-822
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_08_0445_0532_online.pdf (Teileinziehung von Straßenland)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_21_1257_1304_online.pdf (Fahrradabstellplätze entstehen hier)
-#: XXX wenn die Teileinziehung vollzogen ist: N -> NN
-#: osm_watch: way id="49719228" version="9"
-#: last_checked: 2023-09-19 (mapillary)
-#: check_frequency: 90d
-Nuthestr.	N 9813,-822 9849,-911
+# REMOVED --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_08_0445_0532_online.pdf (Teileinziehung von Straßenland) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_21_1257_1304_online.pdf (Fahrradabstellplätze entstehen hier) --- #: XXX wenn die Teileinziehung vollzogen ist: N -> NN --- #: osm_watch: way id="49719228" version="9" --- #: last_checked: 2023-09-19 (mapillary) --- #: check_frequency: 90d
+#: note: durch Poller für Kfz-Verkehr abgesperrt
+Nuthestr.	NN 9813,-822 9849,-911
 Rieflerstr.	N 9989,-1278 10147,-1273
 Dossestr. (Lichtenrade)	N 10082,-986 10030,-1066 9925,-1106
 Rhinstr. (Lichtenrade)	N 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10255,-1345
 Pfarrer-Lütkehaus-Platz	N 10318,-2156 10296,-2156 10231,-2159 10228,-2136
 #: next_check_id: BAHNHOFSTR-2020
-#: XXX möglicherweise provisorische Verbindung
-#: last_checked: 2023-05-13
+#: XXX möglicherweise provisorische Verbindung; mittlerweile wieder gesperrt (siehe gesperrt-orig) oder sogar zurückgebaut
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 (Pfarrer-Lütkehaus-Platz - Bahnhofstr.)	N 10296,-2156 10300,-2135
@@ -12952,7 +12948,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="7"
 #: osm_watch: way id="23106203" version="14"
-#: last_checked: 2023-05-13
+#: last_checked: 2023-11-18
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
 #: note: Auf Brandenburger Seite verläuft gleich nebenan der Grenzweg
@@ -20220,7 +20216,7 @@ Straße 478	N 8054,-198 7781,-182
 (Parkweg im Fresepark)	NN 8769,266 8695,188 8671,118 8626,107 8579,153 8584,320
 Elisabethstr. (Lichtenrade)	N 9970,-1787 9854,-1790 9746,-1792 9612,-1796 9431,-1800
 #: carriageway_width: 10m
-Franziusweg	N 9498,-890 9605,-1296 9606,-1507 9609,-1625 9609,-1709 9612,-1796
+Franziusweg	N 9498,-890 9523,-984 9605,-1296 9606,-1507 9609,-1625 9609,-1709 9612,-1796
 Cecilienstr. (Lichtenrade)	N 9612,-1796 9648,-1928 9650,-2135
 Rangsdorfer Str.	N 9746,-1792 9750,-1925 9757,-2135 9756,-2415 9762,-2642
 Wildauer Str.	N 9609,-1709 9853,-1701 9854,-1790

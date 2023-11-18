@@ -481,7 +481,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
-	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 ',
          'from' => 1701471600,
          'id' => 417,
@@ -4027,23 +4027,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf
-#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neuer Staatsbesuch)
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
-#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
-	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
-	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
-	2::temp 6694,12627 7031,12320
-	3 7183,12372 7122,12384 7051,12426 6859,12567 6808,12604
-	3 6808,12604 6859,12567 7051,12426 7122,12384 7183,12372
-',
-         'from' => 1700163475,
-         'id' => 2873,
-         'text' => 'Straßen am Schloss Bellevue (inklusive Großer Stern): wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1700262000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4903,7 +4887,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-10-15 (mapillary)
+#: last_checked: 2023-11-18
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5022,6 +5006,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe im Herbst 2023)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe Anfang 2024)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
@@ -5029,7 +5014,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1060570985" version="1"
 #: last_checked: 2023-06-13 (mapillary)
 # REMOVED --- #: check_frequency: 180d
-#: next_check: 2023-10-01
+#: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
          'from' => undef,
@@ -5278,7 +5263,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2023-08-05
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 ',
@@ -5578,7 +5563,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-11-03
+#: last_checked: 2023-11-18
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5596,7 +5581,8 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-11-04
+#: last_checked: 2023-11-18
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -5905,10 +5891,11 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2023-05-13 vvv
+#: last_checked: 2023-11-18 vvv
 #: next_check: 2023-12-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
-Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 10980,-1919
+# REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
+Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -5916,7 +5903,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'from' => 1663524336,
          'id' => 3623,
          'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php',
-         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung, außerdem sind Mellener Str. und Löptener Str. Einbahnstraßen, ab 19.9.2022',
+         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung, außerdem ist die Löptener Str. Einbahnstraße, ab 19.9.2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6760,24 +6747,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
-#: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
-#: by: https://berliner-abendblatt.de/berlin-news/sicherheitsvorkehrungen-nach-selenskyj-besuch-aufgehoben-id221352
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
-#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
-	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
-	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
-	2::temp 8548,11571 8553,11630
-',
-         'from' => 1700163475,
-         'id' => 3786,
-         'text' => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1700262000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6816,7 +6786,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="23"
-#: last_checked: 2023-11-04 (osm)
+#: last_checked: 2023-11-18
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -7222,7 +7192,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-18
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -7360,14 +7330,18 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
          'until' => 1702656000
        },
        {
-         'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (bis 19.12.2024)
+         'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="1"
-#: XXX genauer anschauen, ist hier noch immer gesperrt?
-	q4::inwork 12407,8177 12545,8209
+#: note: Halteverbotsschilder sogar bis Ende März 2026
+#: note: Länge der Einbahnstraßenregelung: 100m
+#: last_checked: 2023-11-18
+#: check_frequency: 120d
+#: next_checj: 2026-03-31
+	q4::inwork; 12407,8177 12545,8209
 ',
          'from' => 1693458000,
          'id' => 3912,
-         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Sperrung der Fahrbahn, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
+         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Einbahnstraße, offen Richtung Westen, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
          'type' => 'handicap',
          'until' => 1734649140
        },
@@ -7391,7 +7365,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-11-04 vvv
+#: last_checked: 2023-11-18 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
 #: last_checked ^^^
@@ -7898,60 +7872,14 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'until' => 1701493200
        },
        {
-         'data' => '	2::inwork 13452,2548 13420,2509
+         'data' => '#: source_id: viz2021:13.44558,52.42791,13.11.2023,07:00 (bis 24.11.2023)
+	q4::inwork 13452,2548 13420,2509
 ',
          'from' => 1699768800,
          'id' => 3966,
-         'source_id' => 'viz2021:13.44558,52.42791,13.11.2023,07:00',
-         'text' => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
-         'type' => 'gesperrt',
+         'text' => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, als Radfahrer kann man vorbeifahren, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
+         'type' => 'handicap',
          'until' => 1700794800
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
-#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
-#: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_49_4437_4640_online.pdf (Amtsblatt ist am gleichen Tag wie die Allgemeinverfügung erschienen (!))
-(Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
-(südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
-(Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
-(Moltkebrücke - südliches Spreeufer)	2::temp 8030,12857 8025,12859 8006,12853
-(Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
-(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8415,12749
-Große Querallee	2::temp 7945,12592 7875,12363
-Zeltenplatz	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
-Simsonweg	2::temp 8354,12416 8391,12389
-Kleine Querallee	2::temp 8391,12389 8400,12417
-John-Foster-Dulles-Allee	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-(Vorfahrt HdKdW)	2::temp 7821,12367 7813,12427 7778,12470 7687,12477 7654,12464 7627,12380
-Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417
-(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
-(Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
-Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
-Willy-Brandt-Str.	2::temp 8030,12824 8120,12756
-(am Bundeskanzleramt)	2::temp 8120,12756 8122,12603
-Heinrich-von-Gagern-Str.	2::temp 8122,12603 8119,12414
-Paul-Löbe-Allee	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
-Paul-Löbe-Allee	2::temp 8207,12606 8122,12603
-Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
-(Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7776,12586 7745,12603
-Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758
-Konrad-Adenauer-Str.	2::temp 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758
-Otto-von-Bismarck-Allee	2::temp 8309,12758 8252,12757 8206,12757
-Otto-von-Bismarck-Allee	2::temp 8206,12757 8120,12756
-Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
-Bettina-von-Arnim-Ufer	2::temp 7437,12368 7561,12527 7670,12576
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8115,12912 8116,12938
-(Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
-(Gustav-Heinemann-Brücke - Paul-Löbe-Haus)	2::temp 8115,12912 8252,12757
-(südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8025,12879 8041,12866 8116,12938
-(südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
-',
-         'from' => 1700163840,
-         'id' => 3967,
-         'text' => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1700262000
        }
      
 );

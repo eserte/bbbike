@@ -143,7 +143,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln
-#: last_checked: 2023-11-11
+#: last_checked: 2023-11-18
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -321,7 +321,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
-#: last_checked: 2023-05-13
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 	X::inwork 10096,-2137
@@ -1435,7 +1435,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX bis wann wird es diesen Bahnübergang geben?
-#: last_checked: 2023-05-13
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 	B 10221,-2225
@@ -2626,13 +2626,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-11-04
+#: last_checked: 2023-11-18
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-11-04
+#: last_checked: 2023-11-18
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3495,32 +3495,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (permanente Ampelanlage existiert, war aber im Juli 2023 noch nicht eingeschaltet) --- #: XXX bleibt diese Ampel? --- #: last_checked: 2023-07-21 --- #: check_frequency: 60d
 	X::inwork 14141,6623
 # 
-#: next_check_id: NEUKOELLNISCHEALLEE-2019
-# REMOVED --- #: valid: 20140224-20211231 vvv
-#: osm_watch: node id="9383783929" version="1"
-#: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt
-#: priority: #C
-#: last_checked: 2023-11-03
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-09-30 vvv
-	X0::inwork 13265,6972
-#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: osm_watch: node id="4530512037" version="4"
-#: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt
-#: priority: #C
-#: last_checked: 2023-11-03
-#: check_frequency: 30d
-	X0::inwork 13627,7047
-# REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: valid ^^^
+# REMOVED (die westliche Ampel wurde abgebaut, die östliche möglicherweise auch) --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- # REMOVED --- #: valid: 20140224-20211231 vvv --- #: osm_watch: node id="9383783929" version="1" --- #: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt --- #: priority: #C --- #: last_checked: 2023-11-03 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-09-30 vvv ---	X0::inwork 13265,6972 --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt) --- #: osm_watch: node id="4530512037" version="4" --- #: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt --- #: priority: #C --- #: last_checked: 2023-11-03 --- #: check_frequency: 30d ---	X0::inwork 13627,7047 --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103 --- #: next_check ^^^ --- #: valid ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-09-22
+#: last_checked: 2023-11-18
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 

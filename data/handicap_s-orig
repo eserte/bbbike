@@ -44,7 +44,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-11-15 vvv
+#: last_checked: 2023-11-18 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-12-29 vvv
 #: valid: -20231229 vvv
@@ -75,7 +75,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-11-10 vvv
+#: last_checked: 2023-11-18 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -204,7 +204,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2023-05-13
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -784,7 +784,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2023-11-17
+#: last_checked: 2023-11-18
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -1117,7 +1117,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum
-#: last_checked: 2023-11-17 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-11-18 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3 8637,12258 8592,12252 8538,12245
@@ -4697,6 +4697,8 @@ Friedrich-Wilhelm-Str.: eng	q1 8266,5911 8385,5907
 #: by: elke Peters:
 Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5572,19478
 #: by: Ruth Berendes-Edler:
+#: confirmed_by: srt
+#: note: Grünanlage, gemeinsamer Geh- und Radweg (zumindest am östlichen Ende so ausgeschildert)
 (Hochkalterweg - Floningweg): Fußgänger	q1 10304,2743 10196,2771
 #: by: peter walschburger: vvv
 #: confirmed_by: srt vvv

@@ -287,7 +287,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
 #: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
 #: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
 #: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
-	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+	2::temp 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
      { from  => 1096596000, # 2004-10-01 04:00
@@ -3628,7 +3628,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
-	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00
@@ -5232,7 +5232,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_83811',
        data  => <<EOF,
-	q4::inwork 14918,11249 15016,11431 15055,11505 15106,11598
+	q4::inwork 14918,11249 14945,11300 15016,11431 15055,11505 15106,11598
 EOF
      },
      { from  => 1152228595, # 2006-07-07 01:29
@@ -21929,7 +21929,7 @@ EOF
 #: note: früher in der Bahnhofstr.
 #: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-kunsthandwerklicher-weihnachtsmarkt-in-l.html
 #: tempex: (before(3rd_advent, 1d) - 3rd_advent) T11-T20
-	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
      { from  => $isodate2epoch->("2023-05-12 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
@@ -22011,7 +22011,7 @@ EOF
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+	2::temp 11064,-1597 11054,-1659 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
      },
      { from  => 1377208800, # 2013-08-23 00:00
@@ -32298,7 +32298,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-10-15 (mapillary)
+#: last_checked: 2023-11-18
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -32916,6 +32916,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe im Herbst 2023)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe Anfang 2024)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
@@ -32923,7 +32924,7 @@ EOF
 #: osm_watch: way id="1060570985" version="1"
 #: last_checked: 2023-06-13 (mapillary)
 # REMOVED --- #: check_frequency: 180d
-#: next_check: 2023-10-01
+#: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
      },
@@ -34541,7 +34542,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2023-08-05
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -35366,7 +35367,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-11-03
+#: last_checked: 2023-11-18
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35383,7 +35384,8 @@ EOF
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-11-04
+#: last_checked: 2023-11-18
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -36711,7 +36713,7 @@ EOF
      },
      { from  => 1663524336,
        until => undef, # XXX Einschränkungen werden länger dauern als bei der VIZ angegeben
-       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung, außerdem sind Mellener Str. und Löptener Str. Einbahnstraßen, ab 19.9.2022',
+       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung, außerdem ist die Löptener Str. Einbahnstraße, ab 19.9.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php',
        data  => <<EOF,
@@ -36721,10 +36723,11 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2023-05-13 vvv
+#: last_checked: 2023-11-18 vvv
 #: next_check: 2023-12-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
-Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 10980,-1919
+# REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
+Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -39173,7 +39176,7 @@ EOF
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="23"
-#: last_checked: 2023-11-04 (osm)
+#: last_checked: 2023-11-18
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -40206,7 +40209,7 @@ EOF
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-18
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -40498,13 +40501,17 @@ EOF
      },
      { from  => 1693458000, # 2023-08-31 07:00
        until => 1734649140, # 2024-12-19 23:59
-       text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Sperrung der Fahrbahn, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
+       text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Einbahnstraße, offen Richtung Westen, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (bis 19.12.2024)
+#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="1"
-#: XXX genauer anschauen, ist hier noch immer gesperrt?
-	q4::inwork 12407,8177 12545,8209
+#: note: Halteverbotsschilder sogar bis Ende März 2026
+#: note: Länge der Einbahnstraßenregelung: 100m
+#: last_checked: 2023-11-18
+#: check_frequency: 120d
+#: next_checj: 2026-03-31
+	q4::inwork; 12407,8177 12545,8209
 EOF
      },
      { from  => 1693720800, # 2023-09-03 08:00
@@ -40557,7 +40564,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none) vvv
-#: last_checked: 2023-11-04 vvv
+#: last_checked: 2023-11-18 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
 #: last_checked ^^^
@@ -41142,11 +41149,11 @@ EOF
      },
      { from  => 1699768800, # 2023-11-12 07:00
        until => 1700794800, # 2023-11-24 04:00
-       text  => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
-       type  => 'gesperrt',
-       source_id => 'viz2021:13.44558,52.42791,13.11.2023,07:00',
+       text  => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, als Radfahrer kann man vorbeifahren, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
+       type  => 'handicap',
        data  => <<EOF,
-	2::inwork 13452,2548 13420,2509
+#: source_id: viz2021:13.44558,52.42791,13.11.2023,07:00 (bis 24.11.2023)
+	q4::inwork 13452,2548 13420,2509
 EOF
      },
      { from  => 1700163840,

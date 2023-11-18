@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-18
 #: check_frequency: 90d
 #: next_check: 2023-12-22
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -782,7 +782,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="16"
-#: last_checked: 2023-09-23
+#: last_checked: 2023-11-18
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -3875,7 +3875,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-18
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4402,14 +4402,15 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,779064#msg-779064
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2023-10-23 (sven okas) vvv
+#: last_checked: 2023-11-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
 #: osm_watch: way id="152434836" version="25"
 #: osm_watch: way id="30084962" version="32"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
-Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
+Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
+# REMOVED (gibt es nicht mehr) --- Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4431,7 +4432,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-11-15
+#: last_checked: 2023-11-18
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4441,7 +4442,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2023-11-10 vvv
+#: last_checked: 2023-11-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
