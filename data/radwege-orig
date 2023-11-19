@@ -2108,7 +2108,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-11-14 vvv
+#: last_checked: 2023-11-18 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -4546,10 +4546,17 @@ neues Verbundsteinpflaster	RW1; 13104,2143 13367,2322 13418,2357
 neues Verbundsteinpflaster	RW1; 13418,2357 13501,2413
 #: historical_note: früher: Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster
 neues Verbundsteinpflaster	RW1; 13501,2413 13709,2551
+# REMOVED (nein, siehe mapillary vom 2023-11-18) --- #: XXX wurde der Radweg hier auch erneuert?
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 13709,2551 13886,2653
-#: by: https://www.bahninfo-forum.de/read.php?9,574461,702779#msg-702779
-#: by: https://www.bahninfo-forum.de/read.php?9,574461,705045#msg-705045
-Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13886,2653 13915,2673 13951,2697 13999,2727 14203,2859 14212,2865 14392,2979
+#: by: https://www.bahninfo-forum.de/read.php?9,574461,702779#msg-702779 vvv
+#: by: https://www.bahninfo-forum.de/read.php?9,574461,705045#msg-705045 vvv
+#: confirmed_by: mapillary vvv
+Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13886,2653 13915,2673 13951,2697 13999,2727 14203,2859 14212,2865
+#: note: Busspur in Mittellage
+Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14212,2865 14392,2979
+#: confirmed_by ^^^
+#: by ^^^
+#: by ^^^
 Verbundsteinpflaster, OK	RW1; 14392,2979 14212,2865 14203,2859 13999,2727 13951,2697 13915,2673
 Verbundsteinpflaster, OK	RW2; 13915,2673 13886,2653
 Verbundsteinpflaster sowie alte und teils schadhafte Gehwegplatten, teilweise mit Bord	RW1; 13886,2653 13709,2551 13501,2413 13418,2357 13367,2322
@@ -6172,7 +6179,7 @@ Gehwegplatten	RW1; 620,12144 610,12100
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
 #: osm_watch: way id="153370345" version="20"
-#: osm_watch: way id="153373877" version="26"
+#: osm_watch: way id="153373877" version="27"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: die Rechtsabbieger werden an der Ampel vorbei geführt
 Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
@@ -6185,7 +6192,7 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
 #: osm_watch: way id="153370344" version="36"
-#: osm_watch: way id="153373879" version="24"
+#: osm_watch: way id="153373879" version="25"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -6789,9 +6796,9 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="27"
+#: osm_watch: way id="162965650" version="28"
 	RW3; 8776,16268 8921,16578
-#: osm_watch: way id="761539110" version="12"
+#: osm_watch: way id="761539110" version="13"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -8644,7 +8651,7 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
-#: last_checked: 2023-11-17 (Asphaltierungsarbeiten weitgehend fertig, Markierungsarbeiten folgen) vvv
+#: last_checked: 2023-11-19 (Asphaltierungsarbeiten weitgehend fertig, Markierungsarbeiten folgen) vvv
 #: next_check: 2023-11-29 vvv
 provisorische Radspur	RW3; 14134,11272 13970,11366 13888,11405 13711,11458 13588,11490
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075

@@ -268,7 +268,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder
-#: last_checked: 2023-10-09
+#: last_checked: 2023-11-19
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -3713,9 +3713,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,2
 Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 # 
 #: next_check_id: ONTARIOSEE-2023
-#: osm_watch: way id="25796640" version="22"
+#: osm_watch: way id="25796640" version="23"
 #: osm_watch: way id="176946641" version="11"
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-19
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -3848,14 +3848,14 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 # 
 #: next_check_id: MAUERPARK-2022
 #: osm_watch: way id="30441457" version="31"
-#: last_checked: 2023-10-18 (mapillary)
+#: last_checked: 2023-11-18 (mapillary)
 #: check_frequency: 60d
 Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # 
 #: next_check_id: MAUERPARK-2022
 # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
 #: osm_watch: way id="1218990564" version="1"
-#: last_checked: 2023-10-18 (mapillary)
+#: last_checked: 2023-11-18 (mapillary)
 #: check_frequency: 60d
 Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754
 # 
@@ -3875,7 +3875,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2023-11-18
+#: last_checked: 2023-11-19
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -3954,7 +3954,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: last_checked: 2023-11-17
+#: last_checked: 2023-11-19
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -3973,7 +3973,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
 #: osm_watch: way id="766868087" version="11"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
-#: osm_watch: way id="766868090" version="11"
+#: osm_watch: way id="766868090" version="12"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: note ^^^
 #: next_check ^^^
@@ -4286,7 +4286,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-19
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4738,7 +4738,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php
 #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
-#: last_checked: 2023-11-11
+#: last_checked: 2023-11-17 (krickstadt)
 #: check_frequency: 360d
 #: next_check: 2024-05-01
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4762,13 +4762,14 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2023-11-17 (krickstadt) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-01 vvv
 #: osm_watch: way id="1085382250" version="3"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
+Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 17747,5452 17886,5587
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5083,9 +5084,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="34"
+#: osm_watch: way id="186329816" version="35"
 #: also_indoor: traffic
-#: last_checked: 2023-11-16
+#: last_checked: 2023-11-17 (osm)
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
@@ -5211,8 +5212,8 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
-#: osm_watch: way id="765539341" version="11" brb
-#: last_checked: 2023-10-20 (osm)
+#: osm_watch: way id="765539341" version="12" brb
+#: last_checked: 2023-11-16 (osm)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423

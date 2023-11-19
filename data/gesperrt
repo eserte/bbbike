@@ -3493,6 +3493,9 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
+keine Überquerungsmöglichkeit	3nocross::ignrte::inwork 17695,5394 17736,5441 17747,5452 17886,5587
+Sterndamm -> Ecksteinweg: keine Überquerungsmöglichkeit	3::igndisp::inwork 17747,5452 17736,5441 17762,5408
+Ecksteinweg -> Sterndamm: keine Überquerungsmöglichkeit	3::igndisp::inwork 17762,5408 17736,5441 17695,5394
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9207,11880 9138,11872
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9138,11872 9171,11777

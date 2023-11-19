@@ -36923,7 +36923,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: by: https://nowkoelln.de/#wann
+#: url: https://nowkoelln.de/#wann
 #: XXX Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
 #: next_check: 2023-12-15
 	q4::temp:clock 12412,9610 12250,9691
@@ -39282,7 +39282,7 @@ EOF
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-11-17 vvv
+#: last_checked: 2023-11-19 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -39338,7 +39338,8 @@ EOF
      },
      { from  => 1686407303, # 2023-06-10 16:28
        until => 1715378400, # 2024-05-11 00:00
-       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
@@ -39347,12 +39348,11 @@ EOF
 #: source_id: bvg2021:190#BVG320324_0
 #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
 #: also_indoor: traffic (G)
-#: last_checked: 2023-10-09 vvv
+#: last_checked: 2023-11-19 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-10 vvv
 Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
-#: XXX_prog eigentlich q3+
-Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
+# REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -39509,7 +39509,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-11-05
+#: last_checked: 2023-11-19
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40209,7 +40209,7 @@ EOF
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-11-18
+#: last_checked: 2023-11-19
 #: next_check: 2023-11-30
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
 #: note: eigentlich q3-::inwork
@@ -40266,7 +40266,7 @@ EOF
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
 #: source_id: viz2021:13.33994,52.53982,01.06.2023,08:00 (bis 29.12.2023)
-#: osm_watch: way id="4543436" version="30"
+#: osm_watch: way id="4543436" version="31"
 #: last_checked: 2023-11-07
 #: check_frequency: 60d
 #: next_check: 2023-12-29
@@ -40552,7 +40552,7 @@ EOF
 #: note: Endedatum per Halteverbotsschilder
 #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2023-11-02
+#: last_checked: 2023-11-19
 #: next_check: 2023-12-01
 	q4::inwork 16273,11113 16227,10991
 EOF
@@ -41112,6 +41112,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384362.php
+#: source_id: viz2021:13.493357,52.568526,20.11.2023,12:00 (hier nur Kfz-Verkehr, bis 24.11.2023)
 	q4::inwork 16306,18011 16335,18197 16420,18262
 EOF
      },

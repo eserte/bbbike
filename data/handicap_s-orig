@@ -69,7 +69,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="16"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-11-15
+#: last_checked: 2023-11-19
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -212,7 +212,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2023-11-14 vvv
+#: last_checked: 2023-11-18 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -343,7 +343,7 @@ Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,1
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 #: osm_watch: note 3469300 2
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
-#: osm_watch: way id="153698413" version="12"
+#: osm_watch: way id="153698413" version="13"
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -776,15 +776,15 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 ### Lichtenberg ###
 # 
 #: next_check_id: ONTARIOSEE-2023
-#: osm_watch: way id="42701160" version="33"
-#: osm_watch: way id="1193560283" version="2"
-#: last_checked: 2023-10-22
+#: osm_watch: way id="42701160" version="34"
+#: osm_watch: way id="1193560283" version="3"
+#: last_checked: 2023-11-19
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2023-11-18
+#: last_checked: 2023-11-19
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -1117,7 +1117,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum
-#: last_checked: 2023-11-18 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-11-19 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3 8637,12258 8592,12252 8538,12245
@@ -2570,7 +2570,7 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: note: gemeinsamer Geh- und Radweg
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
-#: osm_watch: way id="733001657" version="5"
+# REMOVED (ist jetzt was anderes) --- #: osm_watch: way id="733001657" version="5"
 #: last_checked: 2023-07-23
 #: check_frequency: 120d
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999

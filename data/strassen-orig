@@ -1862,7 +1862,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: osm_watch: way id="74868383" version="25"
+#: osm_watch: way id="74868383" version="26"
 #: last_checked: 2023-11-16
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
@@ -2900,7 +2900,7 @@ Romain-Rolland-Str.	N 12566,18275 12555,18375 12548,18503 12541,18625 12522,1881
 Heimdallstr.	N 11984,18771 12002,18768 12014,18771 12028,18810 12190,19009 12231,19061 12261,19099 12299,19143
 #: note: beleuchtet, Privatweg
 (Heimdallstr. - Frithjofstr.)	NN 12299,19143 12372,19203 12457,19248
-Idunastr.	N 12910,18584 12794,18656 12623,18756 12522,18813 12190,19009
+Idunastr.	N 12910,18584 12794,18656 12623,18756 12522,18813 12481,18838 12381,18897 12190,19009
 Lokistr.	N 12683,18597 12717,18662
 Donarstr.	N 12749,18564 12716,18581 12683,18597 12651,18613 12619,18612
 Hildestr.	N 12684,18859 12623,18756 12609,18730 12616,18630 12619,18612 12627,18506 12609,18470
@@ -11631,7 +11631,8 @@ Strehlener Str.	N 22652,10392 22538,10477 22403,10523
 Graubündener Str.	N 22498,10201 22429,10255 22343,10289
 Hirsinger Str.	N 22013,9919 21897,9972 21858,9988 21782,10007 21718,10013
 Am Binsengrund	N 21264,10237 21429,10207
-Am Binsengrund	N 21435,10255 21556,10232 21566,10230
+Am Binsengrund	N 21435,10255 21556,10232
+(Am Binsengrund - Wuhlewanderweg)	NN 21556,10232 21566,10230
 Büllinger Str.	N 21935,10318 21978,10384 22030,10467
 #: XXX_osm: bei osm ohne Straßennamen und schlecht positioniert
 Jurek-Becker-Str.	N 21978,10384 22009,10371 21970,10247 21959,10251 21923,10265
@@ -15498,7 +15499,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-19
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15886,7 +15887,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-19
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -17980,7 +17981,7 @@ Preunelstr.	N 12865,17381 12930,17302 12965,17324 13012,17332
 Günter-Litfin-Str.	N 13342,17180 13247,17262 13239,17269 13171,17335 13085,17413
 #: historical_note: früher stellenweise nur ein Pfad und praktisch NN
 Neukirchstr.	N 12885,18329 12751,18401
-Neukirchstr.	N 12751,18401 12683,18435 12609,18470 12548,18503 12014,18771
+Neukirchstr.	N 12751,18401 12683,18435 12609,18470 12548,18503 12363,18596 12257,18649 12014,18771
 Albrecht-Thaer-Weg	N 3350,6467 3449,6863
 (Fritz-Elsas-Str./Dominicusstr. - Koburger Str.)	NN 6575,8469 6546,8456
 Koburger Str.	N 6546,8456 6552,8281 6560,8219
