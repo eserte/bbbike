@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.02;
+$VERSION = 2.03;
 
 use vars qw(%images);
 
@@ -235,6 +235,12 @@ sub register {
 	{ name => 'berliner-linien.de (VBB)',
 	  callback => sub { showmap_berlinerlinien(@_) },
 	  callback_3_std => sub { showmap_url_berlinerlinien(@_) },
+	};
+    $main::info_plugins{__PACKAGE__ . 'F4map'} =
+	{ name => 'F4map',
+	  callback => sub { showmap_f4map(@_) },
+	  callback_3_std => sub { showmap_url_f4map(@_) },
+	  ($images{F4map} ? (icon => $images{F4map}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . 'SentinelHub'} =
 	{ name => 'Sentinel Hub',
@@ -817,6 +823,37 @@ AuoamnL8WpraOjABXT19OX4DQykjmIAxvwlQi7qpGUTA3MLSylqO38ZWyQ4sYO/g4Ogk6uzi4urm
 DhRg9+BDAp4cDJxc3EiAi5OwZwGPyhIaEtAInAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0y
 NVQyMjoyMzoyNyswMjowMA6Xa+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDUtMzFUMDg6MzU6
 NDErMDI6MDA9FeOMAAAAAElFTkSuQmCC
+EOF
+    }
+
+    if (!defined $images{F4map}) {
+	# Created with
+	#   curl --silent https://www.f4map.com/cacheForever/f51c5661379bb5441e8e773abdf87d7a8a9932cd/images/f4_favicon.png | convert -resize 16 - png:- | base64  
+	$images{F4map} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAMAAAAR8Wy4AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAACQ1BMVEUAAAAgLTM/QUKgoaHR
+fjcqLTBKS0sVFxmHh4caGxwqKyz/9ehFRUczSVGEV0QsJCEADHsADIMrLzHNspYoJSEkJyo0Nzw/
+P0INHjEbJjHGk19MXWWyq6QAAAAAAAAUFRUvLy9HREJUU1MhIyV2dnaYmJeioaCsrKyusLFrg5hD
+Ul//nxs2ODmLjIyssblFYnuWfmgAAABKS0ykpKRKc5ZuaWQAAABZWVqzs7NQg69bYmcUFRZxcXHE
+xMRVZ3f///8lJid8fX1TcIm+rJk+QkRSe52Lh4JKSkpqf4lUh7N+how/RUeHo7IATJZOhbZoeYcA
+AABWZW2Vt8oQP24OLU0GNmUJQHUqTG4MQHUISYkvVXdPVFgWFRV4kJ0RQ3NMUlg2AAAuLS1FRUhI
+MB8PHy8iKTFASU5hdH0tRl5QWWPs28kAAABAOjS1sKqFk6d3iqFsgJlifZtblsvh4uONmq5VbYxH
+YoMQOWUEMWFLicDZ3N/l6evh5efg4+WkvdM+cqMCLV45caWLpL8xZ52Brc+y1Omqyt9nm8ZRkswO
+PGwgUoRTjsHHyMtrjLAHVqQAUaITWqFvqN203fyEsNFanNUoW44hUYFXmNCPoaltjKcBUKAAV6wA
+V6sAS5QHV6VUlNCXweBinc9Ni8JPjcNanNaRt88bXZ0AVqsAV6wAUqIASpMCV6w3fL5bksJdod1L
+iL41b6Vrl7oEU6MAV6sAWKwASI8AVKgYYqpPjMIcWJITXaQ1cKcAVaoAVKZ+pcAOWKD///+n8oR5
+AAAAbnRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIEh8vGQ9pnbLF1+SBACan+r0L
+AknN4ycMdOn5USKh+YcBS8e5DJzgKyLD+GM/5f/5bgFt99dxp+TfsOO+GAue8VcGLDQIKy0dkdmF
+BQMkD+P6vqoAAAABYktHRD8+YzB1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wsUEiIH
+SUrU3gAAAOdJREFUCNdjYAABRiZmWTl5BUUlFjCXgZVNWUVVTV1DU0sbzGfn0NHVy8svKCzSNwDx
+OQ2NjItLSsvKKypNTIF8LjNzi6rqmtq6+oZGSytuBh5rG9um5pbWtvaOzq5uO3sGB8ee3r7+CRMn
+TZ4yddp0J2cGlxkzZ82eM3fe/AULFy1e4urG4O6xdNnyFStXrV6zdt36DZ5eDLzePhs3bd6y1Xfb
+9h07d/n5M/AFBAbt3rM3OCQ0LDwiMiqagYE/Jnbf/rh4gYTEpOSUVEGgQ4TS0jMys4RFRMXEJSSl
+QE6Vzs7JlWGAAgBbcEehwmrrtAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMS0yMFQxODozNDow
+NyswMTowMHlDTeAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTEtMjBUMTg6MzQ6MDcrMDE6MDAI
+HvVcAAAAAElFTkSuQmCC
 EOF
     }
 }
@@ -1688,6 +1725,23 @@ sub showmap_url_bkg {
 sub showmap_bkg {
     my(%args) = @_;
     my $url = showmap_url_bkg(%args);
+    start_browser($url);
+}
+
+######################################################################
+# F4map
+sub showmap_url_f4map {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 21 if $scale > 21;
+    sprintf 'https://demo.f4map.com/#lat=%s&lon=%s&zoom=%d', $py, $px, $scale;
+}
+
+sub showmap_f4map {
+    my(%args) = @_;
+    my $url = showmap_url_f4map(%args);
     start_browser($url);
 }
 
