@@ -14579,6 +14579,8 @@ sub show_info {
 					    [gr          => 'GR'],
 					    [fz          => 'FZ'],
 					    [\"fragezeichen-outdoor.bbd" => 'XF'],
+					    ['temp_sperre_s' => 'TB'],
+					    [e           => 'CF'],
 					   );
 		    my @p_draw_mapping   = ();
 		    my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
