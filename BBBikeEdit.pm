@@ -3969,10 +3969,12 @@ sub temp_blockings_editor {
        text  => '$blocking_text',
        type  => '$blocking_type',
 EOF
-	if (defined $source_id && $source_id !~ /^\s*$/) {
-	    $pl_entry .= <<EOF;
+	if (0) { # siehe unten
+	    if (defined $source_id && $source_id !~ /^\s*$/) {
+		$pl_entry .= <<EOF;
        source_id => '$source_id',
 EOF
+	    }
 	}
 
 	if ($action eq 'replace_preserve_data') {
@@ -3987,7 +3989,15 @@ EOF
 		    return;
 		}
 	    }
-	    $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
+	    my $end_time_dmy_text = !$end_undef ? "(bis " . POSIX::strftime("%d.%m.%Y", localtime $end_time) . ")" : undef;
+	    $pl_entry .=
+		"       data  => <<EOF,\n" .
+		(defined $source_id && $source_id !~ /^\s*$/
+		 ? "#: source_id: $source_id" . (defined $end_time_dmy_text ? " $end_time_dmy_text" : "") . "\n"
+		 : "") .
+		$s->as_string .
+		"EOF\n"
+		;
 	}
 	$pl_entry .= <<EOF;
      },
