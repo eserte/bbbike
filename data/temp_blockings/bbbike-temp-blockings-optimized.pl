@@ -6069,6 +6069,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: by: mapillary
 #: confirmed_by: srt
+#: osm_watch: way id="978727717" version="6"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
 #: last_checked: 2023-10-22
 	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
@@ -6248,7 +6249,8 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'until' => 1719784799
        },
        {
-         'data' => '#: by: https://www.weihnachten-an-der-spree.de/
+         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
+#: by: https://www.weihnachten-an-der-spree.de/
 	2::xmas 13558,10704 13531,10673 13326,10765
 	2::xmas 13527,10660 13531,10673
 ',
@@ -6666,9 +6668,10 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
+#: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023)
 #: osm_watch: way id="1172668082" version="10"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: laut rbbtext bis 27.06.2023, mittlerweile bis 08.07.2023 verlängert
+#: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
 #: last_checked: 2023-11-08 (osm)
 # REMOVED --- #: check_frequency: 90d
@@ -6677,9 +6680,9 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 ',
          'from' => 1682892000,
          'id' => 3775,
-         'text' => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., Ende der Bauarbeiten unbekannt',
+         'text' => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis Ende 2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1704063599
        },
        undef,
        undef,
@@ -7485,7 +7488,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
-#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023)
+#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023)
 #: osm_watch: way id="137623800" version="32"
 #: osm_watch: way id="625667165" version="23"
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
@@ -7493,9 +7496,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => 1696312800,
          'id' => 3929,
-         'text' => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 23.11.2023 17:00',
+         'text' => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 21.11.2023 12:00',
          'type' => 'handicap',
-         'until' => 1700755200
+         'until' => 1700564400
        },
        {
          'data' => '#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023)
@@ -7688,16 +7691,17 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'until' => 1706137200
        },
        {
-         'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023)
+         'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
+#: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
 ',
          'from' => 1697022000,
          'id' => 3948,
-         'text' => 'Wilhelminenhofstr.: zwischen Mathildestr. und Klarastr. Gleisbauarbeiten, Radfahrer sollen den Gehweg benutzen, bis 20.11.2023',
+         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 04.12.2023',
          'type' => 'handicap',
-         'until' => 1700496000
+         'until' => 1701705600
        },
        undef,
        {
@@ -7880,6 +7884,71 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'text' => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, als Radfahrer kann man vorbeifahren, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
          'type' => 'handicap',
          'until' => 1700794800
+       },
+       undef,
+       {
+         'data' => '#: source_id: viz2021:13.452251,52.492574,13.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
+#: source_id: viz2021:13.45427,52.4939,14.11.2023,13:59 (hier nur Kfz-Verkehr, bis 30.01.2024)
+#: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024)
+#: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
+#: note: abgesperrter Bereich ist etwa 50-60m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
+#: last_checked: 2023-11-20
+#: check_frequency: 14d
+#: next_check: 2024-01-31
+	q2::inwork 13860,9861 13704,9691 13642,9624
+',
+         'from' => 1700499546,
+         'id' => 3968,
+         'text' => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn, bis 31.01.2024',
+         'type' => 'handicap',
+         'until' => 1706716800
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html (Erwähnung der Sperrung bis Mitte Oktober 2024)
+	2::inwork -11494,-1014 -11407,-1086 -11084,-1396 -11090,-1506
+',
+         'from' => 1700504750,
+         'id' => 3969,
+         'text' => 'Am Babelsberger Park: Fahrradstraße wegen Bauarbeiten gesperrt, voraussichtlich bis Mitte Oktober 2024',
+         'type' => 'gesperrt',
+         'until' => 1729029599
+       },
+       {
+         'data' => '#: source_id: LS/223-P/23/182 (bis 12.07.2024)
+#: XXX nach den Umbauarbeiten wird hier ein Kreisverkehr sein
+#: next_check: 2024-07-12
+	2::inwork -22269,16581 -22227,16510 -22458,16473
+	2::inwork -22145,16377 -22227,16510 -21975,16615
+',
+         'from' => 1699776000,
+         'id' => 3970,
+         'text' => 'B5/L204/L863: Bauarbeiten, Sperrung der Kreuzung, evtl. sind auch Radfahrer betroffen, 13.11.2023 09:00 Uhr bis 12.07.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1720792800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024)
+	q4::inwork; 12330,8636 12494,8501
+',
+         'from' => 1700478000,
+         'id' => 3971,
+         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 01.03.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1709308800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.30422,52.47276,20.11.2023,00:00 (bis 05.01.2024)
+#: also_indoor: traffic (H[südliche Sodener],B[südliche Sodener])
+Wiesbadener Str.	q3::inwork; 3965,7297 3703,7324
+#: note: laut rbb ist nur die Sodener Str. zwischen Wiesbadener und Rudolf-Mosse-Str. gesperrt, gleiches Enddatum -> beide aufnehmen!
+Sodener Str.	q3::inwork 3718,7576 3703,7324
+',
+         'from' => 1700348400,
+         'id' => 3972,
+         'text' => 'Wiesbadener Str.: in Höhe Schlangenbader Tunnel Bauarbeiten, Fahrtrichtung gesperrt, evtl. ist auch die Sodener Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis 05.01.2024 20:00',
+         'type' => 'handicap',
+         'until' => 1704481200
        }
      
 );
