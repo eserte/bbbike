@@ -69,15 +69,20 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 # REMOVED (hier nicht mehr, Radspur) --- #: note: seltener Stau als in der Gegenrichtung --- Revaler Str.: Ausweichverkehr wegen der für Kfz gesperrten Stralauer Allee	Jam; 13711,11458 13588,11490
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 #: next_check_id: STRALAUERALLEE-2023
+#: source_id: viz2021:13.450662,52.501661,26.09.2023,15:00 (bis 24.10.2023) (inaktiv)
+#: source_id: viz2021:13.455421,52.500339,26.09.2023,15:00 (bis 31.12.2023) (bis 10.01.2024) (bis 15.12.2023) (bis 13.12.2023)
 #: note: Stau zwischen Stralauer Allee und Corinthstr., gesehen: 2023-10-12 (Thu) 18:07 und 18:31, 2023-10-15 (Sun) 18:30, 2023-10-26 (Fri) 14:10, 2023-10-30 (Mon) 12:40, 2023-11-06 (Mon) 17:45
 #: note: Stau mit wechselnder Länge, gesehen: 2023-11-15 (Wed) 11:18
 #: note: kein Stau, gesehen: 2023-10-13 (Fri) 23:04, 2023-10-20 (Fri) 08:35, 2023-10-28 (Sat) 11:35, 2023-11-06 (Mon) 16:13, 2023-11-06 (Mon) 21:47
 #: note: bei rbb nur bis 29.12.2023
-#: source_id: viz2021:13.450662,52.501661,26.09.2023,15:00 (bis 24.10.2023) (inaktiv)
-#: source_id: viz2021:13.455421,52.500339,26.09.2023,15:00 (bis 31.12.2023) (bis 10.01.2024) (bis 15.12.2023) (bis 13.12.2023)
 #: last_checked: 2023-11-15
 #: next_check: 2023-12-13
 Modersohnstr.	Jam; 13919,10583 14011,10812
+#: note: Stau bereits ab Simplonstr., gesehen: 2023-11-16 (Thu) 09:15 (allerdings auch Bahnstreik)
+#: note: Stau ab Libauer Str., gesehen: 2023-11-21 (Tue) 09:18
+#: last_checked: 2023-11-21
+#: next_check: 2023-12-13
+Kopernikusstr.	Jam; 13895,11663 13651,11731
 # 
 # REMOVED --- #: next_check_id: FRANZOESISCHE-2018 vvv --- #: source_id: 2147343056 (bis 30.06.2021) (inaktiv) vvv --- #: source_id: viz2021:13.385078,52.515417,10.10.2018,13:25 (bis 27.2.2023) (inaktiv) vvv --- #: note: Die Einspurigkeit wurde aufgehoben, trotzdem gibt es weiterhin Stau/stockenden Verkehr. Vielleicht erst dann weniger, wenn die Französische Str. wieder offen ist? --- #: note: Stau Richtung Westen: am 2022-12-09 (Fr) gegen 17:00 etwa 100m vor der Ampel, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr --- #: note: Stau Richtung Osten: am 2022-12-09 (Fr) gegen 17:00 kein Stau, am 2023-01-18 (Mi) gegen 18:10 viel Verkehr --- #: last_checked: 2023-02-10 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-02-28 vvv --- # REMOVED --- #: valid: -20230227 vvv --- Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172 --- Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check_id ^^^
 # REMOVED (hat sich mittlerweile etwas entschärft) --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12502-tempelhof-treptower-park-baumschulenweg/#con-14537 (Dauer des SEVs) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kein-zugverkehr-richtung-tempelhof-und-treptow_a278500 --- #: XXX Stau möglicherweise verschärft durch den SEV für die Ringbahn --- #: last_checked: 2020-06-25 vvv --- #: next_check: 2020-07-27 vvv --- Saalestr.	Jam; 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -184,7 +189,7 @@ Wendenschloßstr.	Jam; 22832,4491 22791,4457 22759,4430 22740,4415 22700,4351
 #: note: direkt in der Treskowallee wird es angeblich keine Einschränkungen für den Radverkehr geben
 #: note: bei rbbtext auch erst ab 15.11.2023
 #: XXX außerdem möglich: Einbahnstraßenregelungen im Prinzenviertel
-#: last_checked: 2023-11-15 (indoor)
+#: last_checked: 2023-11-21 (indoor)
 #: check_frequency: 7d
 #: next_check: 2023-12-15
 #: tempex: rush_hour_evening

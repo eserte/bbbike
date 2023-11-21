@@ -5495,7 +5495,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: source_id: viz2021:13.452161,52.471082,01.06.2023,20:20 (bis 29.12.2023) (inaktiv)
 #: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023)
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: osm_watch: way id="1047544509" version="2"
+#: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d vvv
@@ -7245,7 +7245,23 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
+# REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
+# REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
+#	q4::inwork 10313,13227 10264,13097
+# REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
+#: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024)
+#: XXX Sind Radfahrer tatsächlich betroffen?
+#: next_check: 2023-11-21
+	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
+',
+         'from' => 1700546400,
+         'id' => 3898,
+         'text' => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., evtl. sind auch Radfahrer betroffen, vom 22.11.2023 07:00 bis 09.01.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1704816000
+       },
        undef,
        undef,
        {
@@ -7486,20 +7502,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'type' => 'handicap',
          'until' => 1703091600
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
-#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023)
-#: osm_watch: way id="137623800" version="32"
-#: osm_watch: way id="625667165" version="23"
-#: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
-	q3::inwork 12349,8464 12494,8501
-',
-         'from' => 1696312800,
-         'id' => 3929,
-         'text' => 'Flughafenstr.: Anbindung Karl-Marx-Str. gesperrt, auch Radfahrer sind betroffen, vom 04.10.2023 08:00 bis 21.11.2023 12:00',
-         'type' => 'handicap',
-         'until' => 1700564400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023)
 	q4::inwork 2702,10006 2687,10053
@@ -7780,19 +7783,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'handicap',
          'until' => 1702051200
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1382626.php
-#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/asphaltweg-wird-instandgesetzt_a398857
-#: XXX Nach den Bauarbeiten bessere Qualität?
-#: next_check: 2023-11-21
-	2::inwork 17976,3735 17975,3744 17953,3955
-',
-         'from' => 1699311600,
-         'id' => 3958,
-         'text' => 'Landschaftspark Johannisthal: Nord-Süd-Weg wegen Bauarbeiten voraussichtlich vom 8.11.2023 bis 20.11.2023 gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1700521200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerung sind möglich)
 #: by: mapillary
@@ -7949,6 +7940,30 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'text' => 'Wiesbadener Str.: in Höhe Schlangenbader Tunnel Bauarbeiten, Fahrtrichtung gesperrt, evtl. ist auch die Sodener Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis 05.01.2024 20:00',
          'type' => 'handicap',
          'until' => 1704481200
+       },
+       {
+         'data' => '#: next_check_id: GROSSBEEREN-2023
+#: last_checked: 2023-11-21
+	q3::inwork 9178,10451 9192,10528
+',
+         'from' => undef,
+         'id' => 3973,
+         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (H,B)
+#: note: vom rbb gemeldet
+#: last_checked: 2023-11-21 (Verkehrsmeldung)
+#: check_frequency: 2d
+	2::inwork -430,23912 -406,23934
+',
+         'from' => undef,
+         'id' => 3974,
+         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

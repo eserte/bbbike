@@ -35089,7 +35089,7 @@ EOF
 #: source_id: viz2021:13.452161,52.471082,01.06.2023,20:20 (bis 29.12.2023) (inaktiv)
 #: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023)
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: osm_watch: way id="1047544509" version="2"
+#: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: last_checked: 2023-11-04 vvv
 #: check_frequency: 90d vvv
@@ -35283,7 +35283,7 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1509046513573498881',
        data  => <<EOF,
 # REMOVED (mittlerweile provisorische Radspur) --- #: next_check_id: STRALAUER-2019 --- #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar) --- #: last_checked: 2022-05-15 --- #: check_frequency: 30d --- #: next_check: 2022-06-30
-	1::inwork 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
+	1::inwork 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 EOF
      },
      { from  => undef, # 
@@ -40347,9 +40347,10 @@ EOF
 	q4::inwork 4358,12365 4520,12358
 EOF
      },
-     { from  => 1695667405, # 1692594000, # 2023-08-21 07:00
-       until => 1697033485, # (keine Einschränkungen mehr gesehen) # $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
-       text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
+     { from  => $isodate2epoch->("2023-11-21 07:00:00"), # 1695667405, # 1692594000, # 2023-08-21 07:00
+       until => $isodate2epoch->("2024-01-09 17:00:00"), # 1697033485, # (keine Einschränkungen mehr gesehen) # $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
+       text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., evtl. sind auch Radfahrer betroffen, vom 22.11.2023 07:00 bis 09.01.2024 17:00',
+# alt: text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
@@ -40357,9 +40358,11 @@ EOF
 # REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
 # REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
 #	q4::inwork 10313,13227 10264,13097
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen)
-#: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv)
-	q4::inwork; 10313,13227 10321,13259
+# REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
+#: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024)
+#: XXX Sind Radfahrer tatsächlich betroffen?
+#: next_check: 2023-11-21
+	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 EOF
      },
      { from  => 1693173600, # 2023-08-28 00:00
@@ -40728,7 +40731,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/flughafenstrasse-ist-sackgasse_a395392
-#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023)
+#: source_id: viz2021:13.432818,52.481758,04.10.2023,08:00 (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023) (inaktiv)
 #: osm_watch: way id="137623800" version="32"
 #: osm_watch: way id="625667165" version="23"
 #: note: Länge der Sperrung etwa 50m, deshalb q3 statt q4
@@ -41266,6 +41269,28 @@ EOF
 Wiesbadener Str.	q3::inwork; 3965,7297 3703,7324
 #: note: laut rbb ist nur die Sodener Str. zwischen Wiesbadener und Rudolf-Mosse-Str. gesperrt, gleiches Enddatum -> beide aufnehmen!
 Sodener Str.	q3::inwork 3718,7576 3703,7324
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GROSSBEEREN-2023
+#: last_checked: 2023-11-21
+	q3::inwork 9178,10451 9192,10528
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: also_indoor: traffic (H,B)
+#: note: vom rbb gemeldet
+#: last_checked: 2023-11-21 (Verkehrsmeldung)
+#: check_frequency: 2d
+	2::inwork -430,23912 -406,23934
 EOF
      },
     );

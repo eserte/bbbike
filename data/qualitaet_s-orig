@@ -24,7 +24,7 @@
 # 
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998 14287,10892
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
-# REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13779,10642 13850,10612 13919,10583
+# REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: last_checked: 2023-07-03 (baustellen-doku) vvv
@@ -992,7 +992,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="23"
+#: osm_watch: way id="266580485" version="25"
 #: last_checked: 2023-11-18 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -1127,7 +1127,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2023-11-16
+#: last_checked: 2023-11-21
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12985,8 +12985,13 @@ Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17633,9793 175
 Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17738,9822 17777,9649
 Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
+#: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet
+#: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023)
+#: last_checked: 2023-11-21
+#: next_check: 2023-12-01
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10547,9233
-Südstern: Asphalt, einige Querrillen	Q0- 10547,9233 10705,9234
+#: historical_note: bis Herbst 2023: Asphalt, einige Querrillen, Q0-
+Südstern: Asphalt	Q0 10547,9233 10705,9234
 #: historical_note: bis August 2023 in Richtung Osten: Asphalt, einige Schäden, Q0-;
 Lückstr.: Asphalt	Q0+; 16153,10818 16300,10753 16313,10747 16468,10695
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
