@@ -2493,7 +2493,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -1078,2154 -987,2205 -
 #: by: https://weddingweiser.de/bitte-nicht-nur-etikettenschwindel/
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/blau-weisse-schilder-im-afrikanischen-viertel_a329798
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10995 (Antrag zur Ampelschaltung an der Seestr.)
-#: osm_watch: way id="597289462" version="6"
+#: osm_watch: way id="597289462" version="7"
 #: osm_watch: way id="4605293" version="27"
 # REMOVED (hier bereits realisiert) --- #: osm_watch: way id="281071129" version="8"
 #: last_checked: 2023-10-03
@@ -5762,7 +5762,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="18"
 #: also_indoor: traffic
-#: last_checked: 2023-10-24 (traffic)
+#: last_checked: 2023-11-22 (traffic)
 #: check_frequency: 30d
 # REMOVED (this was for outdoor checks) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -7143,7 +7143,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Umsetzung der Fahrradstraße 2023)
 #: by[nocache]: https://archive.is/dz81E (Tagesspiegel; allerdings wurde die Finanzierung gestoppt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11084 (Einwohnerantrag)
-#: last_checked: 2023-11-15 vvv
+#: last_checked: 2023-11-22 vvv
 #: next_check: 2024-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
@@ -7579,7 +7579,7 @@ Hohenschönhauser Str./Süderbrokweg: Widmung als öffentliches Straßenland, ändert
 #: next_check_id: MAHLOWUNTERFUEHRUNG-2023
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe im Dezember 2023)
-#: osm_watch: way id="1060569804" version="6" brb
+#: osm_watch: way id="1060569804" version="7" brb
 # REMOVED --- #: osm_watch: way id="5086382" version="22" brb
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 360d
@@ -7705,9 +7705,11 @@ Johannisplatz: in Bau, vermutlich nur für Fußgänger	?::inwork 9385,13174 9385,13
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9433&date=20221126 (Teileinziehung der Stadthausstraße?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_03_0297_0360_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10056 (Antrag: größerer Tuchollaplatz)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1387776.php (voraussichtlich ab Dezember 2023)
 #: osm_watch: way id="198595363" version="12"
 #: last_checked: 2023-11-19
 #: check_frequency: 30d
+#: next_check: 2023-11-31
 Stadthausstraße: Abschnitt unter der Unterführung wird für den Kfz-Verkehr eingezogen	? 15649,10922 15674,10851
 # 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
@@ -7897,10 +7899,10 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1348146.php (Erwähnung von 2,64km, vermutlich hier (passt von der Streckenlänge))
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1372807.php (Bauarbeiten ab 9.10.2023 bis voraussichtlich 24. November 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959
-#: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023)
+#: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv)
 #: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2023-11-24
+#: next_check: 2023-11-22
 # REMOVED (hier nicht, erst ab Altheider Str.) --- Adlergestell: Radspur auch stadteinwärts	?::inwork; 19904,3464 19857,3514 19812,3561
 Adlergestell: Radspur auch stadteinwärts	?::inwork; 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
 # 
@@ -8059,15 +8061,16 @@ Werner-Salomon-Platz: Benennung geplant	? -3552,14082 -3507,14171 -3457,14189
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1379207.php (Radspuren mit niedriger Protektion; die Südseite zwischen Müggelstr. und Jessnerstr. erst ab Sommer 2024)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/radwegbau-geht-weiter_a398029
 #: note: Halteverbotsschilder bis 20.11.2023; auf der nördlichen Seite ab Jessnerstr. markiert, noch ohne Radwegschilder; es wurden nur kleine Stellen saniert (bereits eingetragen, inkl. neuen qualitaet_s-Eintrag)
-#: last_checked: 2023-11-18 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2023-11-20 vvv
+#: note: Richtung Osten: ab Weichselstr. bereits markiert, aber noch abgesperrt, Container auf der Radspur; ab Müggelstr. teilweise noch unsaniert (Kopfsteinpflaster) und eine Hochbaustelle
+#: last_checked: 2023-11-22 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2023-11-20 vvv
 #: osm_watch: way id="1145089834" version="4"
 Scharnweberstr.: Radspuren werden noch komplettiert	?::projected 14888,11934 14965,11924 15077,11910
 # REMOVED (hier komplett) --- Scharnweberstr.: werden hier die Radwege komplettiert?	? 15077,11910 15133,11902 15174,11896 15217,11890
 #: osm_watch: way id="1145089845" version="5"
 Scharnweberstr.: Radspuren werden noch komplettiert	?::projected; 15256,11884 15217,11890
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -10070,7 +10073,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: XXX beide Straßen noch nicht in Berlin.coords.data (PLZ vermutlich 13089)
 #: XXX Benennungsabsicht: Beate-Hahn-Str. (öffentliche Straße, westlicher Strang) (früherer Vorschlag: Herta-Hammerbacher-Str.)
 #: XXX Benennung: Marianne-Foerster-Str. (private Erschließungsstraße, östlicher Strang) (laut DPAG-Mitteilungsblatt PLZ=13089)
-#: osm_watch: way id="556057045" version="5"
+#: osm_watch: way id="556057045" version="6"
 #: osm_watch: way id="1143169552" version="5"
 #: add_fragezeichen: Sind die Straßen fertiggestellt? vvv
 #: last_checked: 2023-11-18 (mapillary) vvv

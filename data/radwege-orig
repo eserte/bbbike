@@ -1639,7 +1639,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 	RW2;RW2 22358,5918 22431,6068
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
-#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024)
 #: last_checked: 2023-10-28 vvv
 #: check_frequency: 120d vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -2054,7 +2054,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-11-21
+#: last_checked: 2023-11-21 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
 # REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2815,7 +2815,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 #: next_check_id: MOLKENMARKT-2021
 #: next_check_id: STRALAUER-2023
-#: last_checked: 2023-11-21
+#: last_checked: 2023-11-21 (webcam)
 #: check_frequency: 30d
 durch Barriere getrennt	RW4; 10830,12279 10772,12288 10697,12303
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
@@ -8651,7 +8651,7 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
-#: last_checked: 2023-11-21 (Asphaltierungsarbeiten weitgehend fertig, Markierungsarbeiten folgen) vvv
+#: last_checked: 2023-11-22 (Asphaltierungsarbeiten fertig, Markierungsarbeiten + Setzen der Borde in Arbeit) vvv
 #: next_check: 2023-11-29 vvv
 provisorische Radspur	RW3; 14134,11272 13970,11366 13888,11405 13711,11458 13588,11490
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075

@@ -44,7 +44,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
 #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
 #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-11-20 vvv
+#: last_checked: 2023-11-22 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2023-12-29 vvv
 #: valid: -20231229 vvv
@@ -61,13 +61,13 @@ Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn ges
 # 
 #: also_indoor: traffic (G,W)
 #: note: Wobei vermutlich nur das Radfahrer-frei-Schild fehlt oder verlorengegangen ist, denn das entsprechende Einbahnstraßen-Schild hat so etwas.
-#: last_checked: 2023-11-13
+#: last_checked: 2023-11-22
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?))
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="6"
-#: osm_watch: way id="36987812" version="16"
+#: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
 #: last_checked: 2023-11-19
 #: check_frequency: 90d
@@ -75,7 +75,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-11-18 vvv
+#: last_checked: 2023-11-22 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -296,7 +296,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-11-21 vvv
+#: last_checked: 2023-11-21 (webcam) vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10973,12611
@@ -535,7 +535,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Karlshorst ###
 # 
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023)
-#: last_checked: 2023-10-28
+#: last_checked: 2023-11-01 (mapillary)
 #: next_check: 2023-11-25
 #: valid: -20231125
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
@@ -1117,11 +1117,11 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum
-#: last_checked: 2023-11-21 (webcam, zwei-drei Torbögen offen)
+#: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
+#: last_checked: 2023-11-22 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
-Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3 8637,12258 8592,12252 8538,12245
+Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245
 #: valid: 20231231-
 Brandenburger Tor: Fußgänger	q2 8637,12258 8592,12252 8538,12245
 # 

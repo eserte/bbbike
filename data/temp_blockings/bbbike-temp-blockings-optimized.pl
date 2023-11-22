@@ -7252,6 +7252,8 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #	q4::inwork 10313,13227 10264,13097
 # REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024)
+#: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024)
+#: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: XXX Sind Radfahrer tatsächlich betroffen?
 #: next_check: 2023-11-21
 	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -7908,6 +7910,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        {
          'data' => '#: source_id: LS/223-P/23/182 (bis 12.07.2024)
 #: XXX nach den Umbauarbeiten wird hier ein Kreisverkehr sein
+#: also_indoor: traffic (H,G,B,W)
 #: next_check: 2024-07-12
 	2::inwork -22269,16581 -22227,16510 -22458,16473
 	2::inwork -22145,16377 -22227,16510 -21975,16615
@@ -7920,6 +7923,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        },
        {
          'data' => '#: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024)
+#: also_indoor: traffic (G,B,W)
 	q4::inwork; 12330,8636 12494,8501
 ',
          'from' => 1700478000,
@@ -7942,7 +7946,8 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'until' => 1704481200
        },
        {
-         'data' => '#: next_check_id: GROSSBEEREN-2023
+         'data' => '#: also_indoor: traffic (B)
+#: next_check_id: GROSSBEEREN-2023
 #: last_checked: 2023-11-21
 	q3::inwork 9178,10451 9192,10528
 ',
@@ -7953,17 +7958,32 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (H,B)
-#: note: vom rbb gemeldet
+         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727203617906843664#m (hier: Wildschutzzaun-Reparatur)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
+#: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023)
+#: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023)
+#: note: vom rbb gemeldet (hier: Brückenschäden)
+#: also_indoor: traffic (ex-H,B)
 #: last_checked: 2023-11-21 (Verkehrsmeldung)
-#: check_frequency: 2d
+# REMOVED --- #: check_frequency: 2d
+#: next_check: 2023-12-01
 	2::inwork -430,23912 -406,23934
 ',
          'from' => undef,
          'id' => 3974,
-         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen',
+         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 01.12.2023',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1701446400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.300851,52.527492,22.11.2023,07:00 (bis 13.12.2023)
+	q4::inwork 3310,13253 3351,13411 3371,13501
+',
+         'from' => 1700546400,
+         'id' => 3975,
+         'text' => 'Kamminer Str.: Bauarbeiten zwischen Fabriciusstr. und Osnabrücker Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22.11.2023 07:00 bis 13.12.2023 18:00',
+         'type' => 'handicap',
+         'until' => 1702486800
        }
      
 );
