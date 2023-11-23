@@ -6589,7 +6589,7 @@ sub fix_coords {
 		 $$varref eq ''    or
 		 exists $net->{Net}{$$varref});
 	if ($$varref !~ /,/) {
-	    send_error(reason => "Invalid coordinate format in '$$varref', missing comma");
+	    send_error(reason => "Invalid coordinate format in '$$varref', missing comma", quiet => 1);
 	}
 	if (!defined $kr) {
 	    new_kreuzungen();
@@ -7774,6 +7774,7 @@ sub http_req_logging {
 sub send_error {
     my(%args) = @_;
     my $reason = delete $args{reason} || 'Unknown error';
+    my $quiet = delete $args{quiet};
     die "Unhandled args: " . join(" ", %args) if %args;
     my $output_as = $q->param('output_as');
     if ($output_as && $output_as eq 'json') {
@@ -7791,8 +7792,10 @@ sub send_error {
 	    );
 	print "Error: $reason\n";
     }
-    warn "DEBUG: Error page sent for " . $q->query_string . ", reason: $reason\n";
-    http_req_logging();
+    unless ($quiet) {
+	warn "DEBUG: Error page sent for " . $q->query_string . ", reason: $reason\n";
+	http_req_logging();
+    }
     my_exit 0;
 }
 
