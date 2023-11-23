@@ -1477,11 +1477,11 @@ Grunerstr.	HH 10849,12557 10783,12502
 #: source_id[expired]: bvg2021:248#BVG324714_0
 #: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023) (inaktiv)
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-11-08 (mapillary) vvv
+#: last_checked: 2023-11-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-25
 Grunerstr. [Gehweg]	NN 10973,12611 11057,12715
-Grunerstr. [Gehweg]	NN 10900,12546 10973,12611
+Grunerstr. [Gehweg]	NN 10900,12546 10930,12501 10908,12553 10973,12611
 #: check_frequency ^^^
 #: last_checked ^^^
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
@@ -13115,7 +13115,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-11-21 (webcam)
+#: last_checked: 2023-11-23
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
@@ -15618,7 +15618,9 @@ Müggelstr.	NN 14994,12064 14994,12121
 Travestr.	N 14986,11760 14901,11808 14836,11842
 Hiddenseer Str.	N 11828,15210 11651,15273
 Naglerstr.	N 13575,10963 13496,10763
-Müncheberger Str.	N 12450,11980 12558,11920 12617,11888
+Müncheberger Str.	N 12450,11980 12558,11920
+#: historical_note: bis November 2023 N
+Müncheberger Str.	NN 12558,11920 12617,11888
 Erich-Steinfurth-Str.	NN 12645,11673 12608,11692
 Erich-Steinfurth-Str.	N 12608,11692 12453,11790 12378,11806
 #: osm.highway: service
@@ -19317,7 +19319,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; ist diese Straße gemeint?
-#: last_checked: 2023-10-27
+#: last_checked: 2023-11-23
 #: check_frequency: 90d
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

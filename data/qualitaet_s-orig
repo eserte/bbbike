@@ -623,7 +623,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2023-09-25
+#: last_checked: 2023-11-23
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -4510,7 +4510,8 @@ Mahlerstr.: Asphalt	Q0 13665,15840 13623,15954
 Gäblerstr.: Asphalt	Q0 13347,16447 13315,16548 13272,16672
 Hedwigstr. (Weißensee): Asphalt	Q0 13315,16548 13376,16600
 Bundenbacher Weg: mäßiger Asphalt	Q1 13653,16907 13834,17078
-Hunsrückstr.: mäßiger Asphalt	Q1 13722,16843 13914,17016
+#: historical_note: früher: mäßiger Asphalt, Q1
+Hunsrückstr.: Asphalt	Q0 13722,16843 13914,17016
 Hunsrückstr.: Asphalt	Q0 13914,17016 13990,17122 14060,17221
 Soonwaldstr.: Asphalt	Q0 13990,17122 13832,17232
 Große Seestr.: neu gemachter Asphalt	Q0 13754,17133 13834,17078 13914,17016
@@ -9850,7 +9851,9 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 #: note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
 (Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 27161,156 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
-Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11750,16116 11680,16151 11618,16183
+Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11750,16116 11680,16151
+#: historical_note: bis Herbst 2023: Asphalt mit leichten Schäden, Q1+
+Kuglerstr.: Asphalt	Q0 11680,16151 11618,16183
 Kuglerstr.: Asphalt	Q0 12030,15968 11961,16002 11899,16037 11852,16061
 Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11852,16061 11750,16116
 (Schönhauser Str. - Rosenthaler Str.): Asphalt	Q0 11858,21541 11889,21543
@@ -11189,7 +11192,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2023-09-21
+#: last_checked: 2023-11-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -16385,7 +16388,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
-#: last_checked: 2023-09-21
+#: last_checked: 2023-11-23
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
