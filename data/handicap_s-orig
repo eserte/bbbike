@@ -32,7 +32,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-11-20
+#: last_checked: 2023-11-24
 #: next_check: 2023-12-13
 #: valid: -20231213
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -45,27 +45,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
 # 
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
-# 
-#: next_check_id: NIEMANN-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw==
-#: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder)
-#: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen
-#: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023)
-#: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv
-#: last_checked: 2023-11-22 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2023-12-29 vvv
-#: valid: -20231229 vvv
-Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377
-Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229
-Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-# 
+# REMOVED (fertig) --- #: next_check_id: NIEMANN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw== --- #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder) --- #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen --- #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023) --- #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv --- #: last_checked: 2023-11-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-12-29 vvv --- #: valid: -20231229 vvv --- Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 --- Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229 --- Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: also_indoor: traffic (G,W)
@@ -754,7 +734,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 54
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: osm_watch: way id="640465875" version="13"
-#: last_checked: 2023-10-17 (osm)
+#: last_checked: 2023-11-24
 #: check_frequency: 120d
 #: next_check: 2024-06-01
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -1127,7 +1107,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-11-23 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-11-24 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245

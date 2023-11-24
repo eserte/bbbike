@@ -59,7 +59,8 @@ Berliner Allee	Jam; 14622,16674 14624,16659 14619,16551 14610,16522 14556,16391 
 #: last_checked: 2023-11-03 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-09-01 vvv
-Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
+# REMOVED (hier nicht mehr, Radspur) --- Karl-Marx-Str.	Jam; 12330,8636 12494,8501
+Karl-Marx-Str.	Jam; 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
 Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -73,10 +74,11 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 #: source_id: viz2021:13.450662,52.501661,26.09.2023,15:00 (bis 24.10.2023) (inaktiv)
 #: source_id: viz2021:13.455421,52.500339,26.09.2023,15:00 (bis 31.12.2023) (bis 10.01.2024) (bis 15.12.2023) (bis 13.12.2023)
 #: note: Stau zwischen Stralauer Allee und Corinthstr., gesehen: 2023-10-12 (Thu) 18:07 und 18:31, 2023-10-15 (Sun) 18:30, 2023-10-26 (Fri) 14:10, 2023-10-30 (Mon) 12:40, 2023-11-06 (Mon) 17:45
+#: note: Stau auf halber Strecke, gesehen: 2023-11-24 (Fri) 11:41
 #: note: Stau mit wechselnder Länge, gesehen: 2023-11-15 (Wed) 11:18
 #: note: kein Stau, gesehen: 2023-10-13 (Fri) 23:04, 2023-10-20 (Fri) 08:35, 2023-10-28 (Sat) 11:35, 2023-11-06 (Mon) 16:13, 2023-11-06 (Mon) 21:47
-#: note: bei rbb nur bis 29.12.2023
-#: last_checked: 2023-11-15
+#: note: bei rbb sogar bis 29.12.2023
+#: last_checked: 2023-11-24
 #: next_check: 2023-12-13
 Modersohnstr.	Jam; 13919,10583 14011,10812
 #: note: Stau bereits ab Simplonstr., gesehen: 2023-11-16 (Thu) 09:15 (allerdings auch Bahnstreik)

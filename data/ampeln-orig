@@ -30,12 +30,12 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: valid: -20250423
 Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 # 
-#: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023)
-#: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
-#: last_checked: 2023-11-03
-#: next_check: 2023-11-24
-#: valid: -20231124
-Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
+# REMOVED --- #: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv)
+# REMOVED --- #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
+# REMOVED --- #: last_checked: 2023-11-03
+# REMOVED --- #: next_check: 2023-11-24
+# REMOVED --- #: valid: -20231124
+# REMOVED --- Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 # 
 # REMOVED --- #: next_check_id: RUNGE-2023
 # REMOVED --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
@@ -72,10 +72,10 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
 # REMOVED --- #: by: https://nitter.net/VIZ_Berlin/status/1683357845155115010#m --- #: by: https://nitter.net/pic/orig/media%2FF1fwqZtXgA4eKSM.jpg --- #: source_id: viz2021:13.541546,52.423078,24.07.2023,09:00 (bis 21.08.2023) (bis 25.08.2023) (inaktiv) --- #: next_check: 2023-08-25 --- #: valid: -20230825 --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork 19933,2078
 # 
-#: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023)
-#: next_check: 2023-11-24
-#: valid: -20231124
-Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
+# REMOVED --- #: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv)
+# REMOVED --- #: next_check: 2023-11-24
+# REMOVED --- #: valid: -20231124
+# REMOVED --- Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 # 
 #: next_check_id: PISTORIUS-2023
 #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023)
@@ -125,6 +125,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: next_check_id: BAUMSCHULEN-2023
 #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023)
+#: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrbahn-der-baumschulenstrasse-wird-neu-gemacht_a400218
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: osm_watch: way id="383023440" version="15"
 #: last_checked: 2023-11-18 (mapillary)
@@ -1675,7 +1676,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="3"
-#: last_checked: 2023-11-03 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
+#: last_checked: 2023-11-24 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645

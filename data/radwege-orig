@@ -327,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-11-18 vvv
+#: last_checked: 2023-11-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -949,8 +949,8 @@ neu asphaltiert, ca. 2,3m breit	RW2; 12929,12421 13163,12382 13448,12340 13543,1
 neu asphaltiert, ca. 2,3m breit	RW2; 13543,12326 13785,12292
 # 
 #: note: Strausberger Platz
-neu asphaltiert, breit	RW2; 11976,12595 11988,12546 12028,12519
-	RW2; 12028,12519 12083,12518 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
+neu asphaltiert, breit	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546
+	RW2; 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
 # 
 # REMOVED (weitgehend fertig) --- #: next_check_id: KARLMARXALLEE-2018 --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020, mittlerweile Spätsommer 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374 --- #: by: http://www.abendblatt-berlin.de/2018/06/21/karl-marx-allee-wird-fuer-zwei-jahre-zur-grossbaustelle/ --- #: by: http://www.abendblatt-berlin.de/2018/07/15/hier-kann-bald-geradelt-werden/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/zweiter-bauabschnitt-fuer-umbau-der-karl-marx-allee-beginnt_a210106 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php --- #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249 --- #: source_id: 2147342756 --- #: source_id: 2147346300 --- #: source_id: 2147346384 --- #: XXX zurzeit provisorische Radspuren --- #: priority: #A --- #: last_checked: 2020-09-23 --- #: next_check: 2020-09-27
 # 
@@ -2463,15 +2463,14 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 #
 #: next_check_id: GOERLITZERUFER-2023
 #: XXX wie sieht es nach dem Umbau aus?
-#: last_checked: 2023-11-03 vvv
+#: last_checked: 2023-11-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-31 vvv
-#: historical_note: früher Radweg auf dem Bürgersteig
-während der Bauarbeiten aufgehoben, möglicherweise dauerhaft?	RW0; 13216,9983 13155,9907
+	RW1; 13216,9983 13155,9907
 #: historical_note: früher Radweg auf dem Bürgersteig
 #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3;
 #: osm_watch: way id="984857536" version="5"
-	RW0; 13155,9907 13136,9883 13086,9825 13026,9854
+	RW1; 13155,9907 13136,9883 13086,9825 13026,9854
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7943,13 +7942,10 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen)
-#: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2023-11-03
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2022-07-31
-# REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
-# REMOVED ---	RW4; 12330,8636 12318,8645
-	RW0; 12494,8501 12330,8636 12318,8645
+#: last_checked: 2023-11-24
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2024-03-01
+provisorische Radspur	RW4; 12494,8501 12330,8636 12318,8645
 	RW4; 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
 	RW1; 11880,8955 11831,8989
 	RW4; 11831,8989 11880,8955
@@ -8651,11 +8647,13 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
-#: last_checked: 2023-11-23 (Asphaltierungsarbeiten fertig, Markierungsarbeiten + Setzen der Borde in Arbeit) vvv
+#: last_checked: 2023-11-24 (weitgehend fertig) vvv
+#: check_frequency: 2d vvv
 #: next_check: 2023-11-29 vvv
 provisorische Radspur	RW3; 14134,11272 13970,11366 13888,11405 13711,11458 13588,11490
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by: ^^^
 niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272

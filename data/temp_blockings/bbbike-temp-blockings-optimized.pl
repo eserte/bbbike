@@ -4209,18 +4209,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.545136,52.421827,06.11.2023,07:00 (bis 24.11.2023)
-# REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
-	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
-',
-         'from' => 1699306474,
-         'id' => 2973,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
-         'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis 24.11.2023',
-         'type' => 'gesperrt',
-         'until' => 1700841600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5387,6 +5376,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet? vvv
 # 
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
+#: source_id: viz2021:13.287063,52.432721,01.03.2021,07:00 (mittlerweile nur bis 31.1.2022, aber siehe unten) (inaktiv)
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
 #: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
@@ -5394,7 +5384,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id[inactive]: bvg2021:188#BVG296003_0
 #: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023) (inaktiv)
 #: source_id: viz2021:13.29541,52.43779,30.03.2023,12:14 (Baseler Str., bis 31.05.2023) (inaktiv)
-#: source_id: viz2021:13.295715,52.43793,06.11.2023,07:00 (Verengung in der Ringstr., bis 24.11.2023)
+#: source_id: viz2021:13.295715,52.43793,06.11.2023,07:00 (Verengung in der Ringstr., bis 24.11.2023) (inaktiv)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 #: also_indoor: traffic (G,ex-H,B) vvv
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
@@ -5429,7 +5419,6 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 ',
          'from' => 1614492000,
          'id' => 3502,
-         'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
          'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str.',
          'type' => 'handicap',
          'until' => undef
@@ -7249,8 +7238,8 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 # REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
 #	q4::inwork 10313,13227 10264,13097
 # REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
+#: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024)
-#: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024)
 #: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: XXX Sind Radfahrer noch immer betroffen?
 #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
@@ -7545,16 +7534,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.432538,52.605013,10.10.2023,07:00 (bis 4.11.2023) (bis 24.11.2023)
-	q4::inwork; 12063,21991 12122,22185 12165,22323
-',
-         'from' => 1696827600,
-         'id' => 3936,
-         'text' => 'Hauptstr. : Gleisbauarbeiten zwischen Chamissostr. und Parkstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.10.2023 07:00 bis 24.11.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1700841600
-       },
+       undef,
        {
          'data' => '#: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
@@ -7677,19 +7657,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'type' => 'handicap',
          'until' => 1703285999
        },
-       {
-         'data' => '#: next_check_id: RUNGE-2023
-#: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
-#: note: Ampeleintrag beachten! (-> REMOVED)
-#: note: wenige Meter gesperrt; möglicher Bordstein
-	q3::inwork 11291,11876 11185,11883
-',
-         'from' => 1698051600,
-         'id' => 3945,
-         'text' => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
-         'type' => 'handicap',
-         'until' => 1700780340
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork 23015,30519 23113,30450
@@ -7731,15 +7699,15 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        undef,
        {
          'data' => '#: next_check_id: GOERLITZERUFER-2023
-#: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
-#: last_checked: 2023-11-03
+# REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
+#: last_checked: 2023-11-24
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	q3::inwork 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
 ',
          'from' => 1699031494,
          'id' => 3952,
-         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten, voraussichtlich bis Ende 2023',
+         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten, voraussichtlich bis Ende 2023 (Stand Ende November 2023: alte Radwege sind noch passierbar)',
          'type' => 'handicap',
          'until' => 1704063599
        },
@@ -7816,29 +7784,8 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'handicap',
          'until' => 1701273600
        },
-       {
-         'data' => '#: next_check_id: REVALER-2023
-	q3::inwork 13895,11663 13711,11458
-	q3::inwork 14031,11569 13970,11366
-	q3::inwork 13888,11405 13954,11647
-',
-         'from' => 1699398145,
-         'id' => 3961,
-         'text' => 'Libauer Str., Simon-Dach-Str., Dirschauer Str.: Anbindung Revaler Str. gesperrt, voraussichtlich bis Ende November 2023',
-         'type' => 'handicap',
-         'until' => 1701298799
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384362.php
-#: source_id: viz2021:13.493357,52.568526,20.11.2023,12:00 (hier nur Kfz-Verkehr, bis 24.11.2023)
-	q4::inwork 16306,18011 16335,18197 16420,18262
-',
-         'from' => 1700348400,
-         'id' => 3962,
-         'text' => 'Ribnitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Einschränkungen auch für Radfahrer, vom 20. November 2023 bis 24. November 2023 ',
-         'type' => 'handicap',
-         'until' => 1700866799
-       },
+       undef,
+       undef,
        {
          'data' => '#: by: wosch & osm & mapillary
 #: XXX Wann sind die Bauarbeiten beendet?
@@ -7874,16 +7821,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'gesperrt',
          'until' => 1701493200
        },
-       {
-         'data' => '#: source_id: viz2021:13.44558,52.42791,13.11.2023,07:00 (bis 24.11.2023)
-	q4::inwork 13452,2548 13420,2509
-',
-         'from' => 1699768800,
-         'id' => 3966,
-         'text' => 'Malersteig: Baustelle in Höhe Tischlerzeile, Sperrung, als Radfahrer kann man vorbeifahren, vom 13.11.2023 07:00 bis 24.11.2023 04:00',
-         'type' => 'handicap',
-         'until' => 1700794800
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.452251,52.492574,13.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
@@ -7930,11 +7868,12 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        {
          'data' => '#: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024)
 #: also_indoor: traffic (G,B,W)
-	q4::inwork; 12330,8636 12494,8501
+Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501
+Weichselstr.	q3::inwork 12330,8636 12392,8724
 ',
          'from' => 1700478000,
          'id' => 3971,
-         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 01.03.2024 17:00',
+         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, Einmündungsbereich Weichselstr. gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 01.03.2024 17:00',
          'type' => 'handicap',
          'until' => 1709308800
        },

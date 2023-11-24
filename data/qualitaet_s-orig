@@ -992,8 +992,8 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="25"
-#: last_checked: 2023-11-18 (mapillary)
+#: osm_watch: way id="266580485" version="26"
+#: last_checked: 2023-11-23 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -9254,7 +9254,7 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12332,20962 12458,21013 12562,21055 12619,210
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-1.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-2.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-3.pdf
-#: osm_watch: way id="23121641" version="14"
+#: osm_watch: way id="23121641" version="15"
 #: last_checked: 2023-10-08
 #: check_frequency: 270d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229
@@ -11191,11 +11191,15 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
-#: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2023-11-23
-#: check_frequency: 60d
+#: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
+#: last_checked: 2023-11-23 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
-Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
+Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
+Stadtpark Lichtenberg: unebene Gehwegplatten	Q1+ 15433,12686 15424,12732 15395,12762
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596 25116,6640
 Engelwurzweg: Gehwegplatten	Q1 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
