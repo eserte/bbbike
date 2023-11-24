@@ -156,10 +156,6 @@ Rosenfelder Str.: Ampel auf der linken Seite benutzen	DH:t=15 17306,11866 17251,
 Am Steinberg: Umweg zur Straßenbahnüberquerung	DH:len=50 12307,16950 12267,16946 12230,16915
 Am Steinberg: Straßenbahnüberquerung, dann einige Meter auf dem linken Gehweg	DH:h=q3,25 12324,17213 12267,16946 12307,16950
 Behrenstr. - Ebertstr.: zum Linksabbiegen die linke Fußgängerampel benutzen	DH:t=75 8737,12098 8595,12066 8577,11896
-Elsenstr.: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 13973,9465
-Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 14185,9509
-Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
-Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 21199,12258 21190,12193
 Krügerstr. - Prenzlauer Allee: linker Gehweg	DH:h=q3,50 12013,16120 12075,16144 12090,16199
 Wisbyer Str. - Dunckerstr.: linker Gehweg	DH:h=q3,90 12090,16199 12012,16250 11926,16088
 Kurfürstendamm - Bornstedter Str.: linker Geh/Radweg	DH:h=q3,70 2532,9911 2590,9949 2551,9995
@@ -185,21 +181,25 @@ Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13827,2280 13640,2229 13661,220
 Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13568,2208 13640,2229 13827,2280
 Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13501,2413 13640,2229 13827,2280
 Pietschkerstr. - Groß-Berliner Damm: Umweg über Ampel Greifstr.	DH:len=50:tl 17729,5091 17763,5104 17726,5166
-Landsberger Allee	DH:t=50 18553,14678 18831,14823 19013,14905
-Landsberger Allee	DH:t=50 19175,14968 19196,14976 19200,14963
 Danziger Str. - Dunckerstr.: Fußgängerampel hinter der Einmündung zum Überqueren benutzen	DH:len=30:tl 11285,14958 11325,14949 11450,15173
 Manteuffelstr./zum Bosepark: Bordstein auf dem Mittelstreifen	DH:kerb_up 8823,6458 8699,6468 8683,6326
 Manteuffelstr./zum Bosepark: Bordstein auf dem Mittelstreifen	DH:kerb_up 8707,6537 8699,6468 8823,6458
 Weg im Business Park Berlin - Alexander-Meißner-Str.: Mittelstreifen, nächste Überquerungsmöglichkeit etwas weiter nördlich	DH:len=50 20770,-1315 20394,-1397 20416,-1721
 Alexander-Meißner-Str. - Weg im Business Park Berlin: Mittelstreifen, etwa 25m früher auf den linken Gehweg wechseln	DH:h=q3,25 20388,-1373 20394,-1397 20770,-1315
-Seidelstr..: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 3429,17987 3570,17938 3628,17935
-Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 3833,17929 3930,17923 4016,17918
 Oderbruchstr. -> Karl-Vesper-Str.: Ampel auf der linken Seite benutzen, Umwege	DH:len=50:tl 14243,13890 14218,13834 14205,13755
 Karl-Vesper-Str. -> Oderbruchstr.: Ampel auf der rechten Seite benutzen, Umwege	DH:len=50:tl 14205,13755 14218,13834 14243,13890
 Am Tierpark -> Erich-Kurz-Str.: Z-Übergang nördlich der Einmündung	DH:len=80:h=q4,25 18554,10354 18446,10620 18397,10608
 Erich-Kurz-Str. -> Am Tierpark: Z-Übergang nördlich der Einmündung	DH:h=q4,65 18397,10608 18446,10620 18417,10738
 Am Tierpark -> Otto-Schmirgal-Str.: Z-Übergang	DH:h=q4,25 18585,10278 18554,10354 18512,10337
 Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,10354 18446,10620
+Elsenstr.: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 13973,9465
+Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 14185,9509
+Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
+Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 21199,12258 21190,12193
+Landsberger Allee	DH:t=50 18553,14678 18831,14823 19013,14905
+Landsberger Allee	DH:t=50 19175,14968 19196,14976 19200,14963
+Seidelstr..: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 3429,17987 3570,17938 3628,17935
+Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 3833,17929 3930,17923 4016,17918
 Detmolder Str.: Umweg über Blissestr.	DH:len=160 4873,8007 4786,8007 4711,8013
 Marggrafbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20:len=30 16563,7012 16627,6945 16677,6892
 Marggrafbrücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=40:len=30 16720,6845 16747,6813 16805,6747
