@@ -152,12 +152,16 @@ Mauerpark, über den Gleimtunnel: Sandweg mit Kuhlen	X 10091,15630 10155,15473
 #: mud: 2023-04-01: viele große Pfützen, matschig	h=q3-,wet
 (Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): wassergebundene Decke, bei Regen große Pfützen	X 10064,15920 9996,15901 9997,15884
 # 
+#: note: auf der westlichen Wegseite (Richtung Süden) üblicherweise etwas trockener
 #: mud: 2020-03-17: keine Beeinträchtigungen
 #: mud: 2020-03-21: keine Beeinträchtigungen
+#: mud: 2023-11-25: etwas feuchtere Oberfläche	h=q1+,wet
 Am Städtischen Zentralfriedhof: wassergebundene Decke	X; 17507,12781 17507,12760 17548,12703 17580,12625
 # 
+#: note: auf der östlichen Wegseite (Richtung Norden) üblicherweise etwas feuchter
 #: mud: 2020-03-17: etwas feuchterer Boden, Spurrillen sichtbar
 #: mud: 2020-03-21: keine Beeinträchtigungen
+#: mud: 2023-11-25: etwas feuchtere Oberfläche	h=q1-,wet
 Am Städtischen Zentralfriedhof: wassergebundene Decke, etwas schattiger	X; 17580,12625 17548,12703 17507,12760 17507,12781
 # 
 #: mud: 2022-11-05: einige Pfützen	h=q3
@@ -318,6 +322,7 @@ Tauernallee - Wildspitzweg (Buga-Eingang): fester Sandweg	X 10716,2597 10775,276
 #: mud: 2023-03-24: leicht matschig, einige umfahrbare Pfützen	h=q2+,wet
 #: mud: 2023-08-28: trocken, leicht sandig	h=q1,dry
 #: mud: 2023-11-19: sehr viele Pfützen	h=q3,wet
+#: mud: 2023-11-25: sehr viele Pfützen	h=q3,wet
 (Weg entlang der Bahnstrecke): fester, holpriger Sandweg	X 18278,9818 18445,9887 18703,9997
 # 
 #: mud: 2022-03-06: keine Beeinträchtigungen	h=q0
@@ -328,6 +333,7 @@ Tauernallee - Wildspitzweg (Buga-Eingang): fester Sandweg	X 10716,2597 10775,276
 #: mud: 2021-08-03: trocken
 #: mud: 2022-10-09: trocken	h=q0
 #: mud: 2023-08-28: trocken	h=q0
+#: mud: 2023-11-25: viele Pfützen	h=q3+,wet
 (Römerweg - Weg entlang der Bahnstrecke): fester Sandweg	X 18436,9842 18445,9887
 # 
 # REMOVED (mittlerweile asphaltiert) --- #: next_check_id: SPREEPARK-2022 --- #: mud: 2020-12-29: matschig, Pfützen --- #: mud: 2021-11-14: matschig --- #: mud: 2022-01-16: feuchte Oberfläche --- #: mud: 2022-07-26: matschig, zahlreiche Pfützen	h=q3,wet --- #: mud: 2022-10-16: keine Beeinträchtigungen	h=q0 --- #: mud: 2022-11-27: matschig	h=q2,wet --- #: XXX kann nach Fertigstellung des neuen Wegs entfernt werden --- #: next_check: 2023-06-30 --- Wasserweg: fester Sandweg	X 15873,8884 15981,8872 16028,8867
@@ -614,10 +620,10 @@ Am Ahornweg: unbefestigter Weg	X 19071,19576 19019,19396 18947,19168
 #: mud: 2023-10-22: zahlreiche Pfützen	h=q3-,wet
 Am Lindenweg: unbefestigter Weg	X 19187,19543 19129,19360 19061,19145 18983,18906
 # 
-#: mud: 2023-10-22: einige Pfützen, h=q1,wet
+#: mud: 2023-10-22: einige Pfützen	h=q1,wet
 Am Akazienweg: unbefestigter Weg	X 19248,19525 19190,19340 19125,19130
 # 
-#: mud: 2023-10-22: einige Pfützen, h=q2,wet
+#: mud: 2023-10-22: einige Pfützen	h=q2,wet
 Am Akazienweg: unbefestigter Weg	X 19125,19130 19043,18876
 # 
 #: mud: 2023-11-03: einige Pfützen, Umfahrung auf unangenehm zu fahrenden Rasengittersteinen möglich	h=q2-,wet
@@ -633,4 +639,7 @@ Am Akazienweg: unbefestigter Weg	X 19125,19130 19043,18876
 #: mud: 2023-07-24: Überschwemmung der Straße	h=q4,wet
 #: mud: 2023-07-29: Überschwemmung der Straße	h=q4,wet
 Platenhofer Weg: Asphalt	X -1980,23033 -1865,23298
+# 
+#: mud: 2023-11-25: einige Pfützen	h=q2,wet
+Zu den Faltern: unbefestigter Weg	X 21861,10970 21894,10983 21917,10991 21930,10996
 # 

@@ -925,7 +925,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-11-23
+#: last_checked: 2023-11-25
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3661,7 +3661,7 @@ asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
 	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-07-29 (mapillary) vvv
+#: last_checked: 2023-11-25 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: XXX früher RW2;
@@ -4811,7 +4811,8 @@ Verbundsteinpflaster	RW1; 20328,16546 20358,16560 20382,16582 20397,16621 20390,
 Asphalt	RW1; 20325,16551 20230,16560 20150,16572
 Verbundsteinpflaster	RW1; 20150,16572 19896,16611
 	RW1; 19896,16611 19647,16633 19428,16692 18951,16847
-	RW1; 18875,16872 18951,16847 19428,16692 19647,16633 19896,16611 20150,16572
+	RW1; 18875,16872 18951,16847 19428,16692 19647,16633 19896,16611
+	RW2; 19896,16611 20150,16572
 am Anfang und Ende Leitboys	RW3; 20150,16572 20230,16560 20328,16546
 neu asphaltiert	RW1; 18951,16847 18875,16872
 #: note: hier kann man auch Richtung Osten bis zur Klettwitzer Str. fahren; dort gibt es eine Mittelinsel als Überquerungshilfe
@@ -4853,7 +4854,7 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: XXX Sanierung des Radwegs? vvv
-#: last_checked: 2023-09-13 vvv
+#: last_checked: 2023-11-25 vvv
 #: check_frequency: 270d vvv
 Radweg antik und unbenutzbar	RW1;RW1 18843,9952 18881,9865
 Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816
@@ -5411,7 +5412,8 @@ unebenes Verbundsteinpflaster, schmale Stellen	RW1; 3703,7324 3612,7335 3389,738
 schadhaftes Verbundsteinpflaster	RW1; 3389,7383 3612,7335 3703,7324
 	RW2;RW2 17073,21329 16815,21156 16644,21042 16025,20631
 Verbundsteinpflaster	RW2; 18166,14277 18141,14363 18057,14549
-	RW4; 18057,14549 18141,14363 18166,14277
+	RW4; 18057,14549 18141,14363
+Fahrradschleuse	RW4; 18141,14363 18166,14277
 Betonplatten	RW2; 18057,14549 17991,14684 17937,14795 17886,14899
 Betonplatten	RW2; 17886,14899 17937,14795
 Verbundsteinpflaster	RW2; 17937,14795 17991,14684 18057,14549
@@ -6096,7 +6098,7 @@ asphaltiert	RW1; 18042,4667 17951,4785 17879,4910 17775,5083
 asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,5338
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024)
-#: last_checked: 2023-11-11
+#: last_checked: 2023-11-24 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 provisorische Radspur, auf den letzten Metern gemeinsamer Fuß- und Radweg	RW4; 17886,5587 17747,5452 17736,5441
@@ -8669,6 +8671,9 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13588,11490 13711,11
 	RW7; 3307,25554 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238 2615,25225 2490,25211
 #: by ^^^
 # 
-#: note: Fahrradstraße in der Tucholskystr. ab November 2023
+#: note: Fahrradstraße in der Tucholskystr. ab November 2023 (teilweise mit Vorfahrtsregelung)
 	RW7;RW7 9611,13245 9651,13406 9609,13522 9579,13604
+# 
+#: note: Fahrradstraße im Hönower Weg ab November 2023 (mit Vorfahrtsregelung, größtenteils ohne Fahrbahnsanierung)
+	RW7;RW7 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688
 # 

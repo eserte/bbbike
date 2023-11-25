@@ -2258,6 +2258,7 @@ Weiﬂenhˆher Str. [69-71]: einige Fuﬂg‰nger	q1 20569,11492 20582,11558
 Wuhlewanderweg: enge Br¸cke	q2 22349,17302 22364,17323
 (Verbindung Golliner Str. - Wuhlewanderweg): schmaler Pfad	q2 22272,18296 22287,18297 22356,18264 22356,18239 22363,18219
 Bergmannstr.: Tempo 10	q3 9505,9306 9632,9280 9689,9266 9753,9252
+Niemannstr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0 14254,11377 14211,11229
 Helmerdingstr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0 14468,11203 14442,11101
 Matkowskystr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0 14531,11142 14513,11075
 Orankestrand: Fuﬂg‰nger, Radfahren offiziell verboten	q3 15479,16060 15592,16069 15664,16115 15731,16208
@@ -2498,6 +2499,8 @@ Straﬂe 3: vier Aufpflasterungen	q1 18816,19648 19071,19576
 Straﬂenbahn¸bergang	q3 17790,17126 17799,17145
 Straﬂenbahn¸bergang	q3 17861,17099 17866,17116
 Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
+Colbestr.: eng durch Zweite-Reihe-Parker	q0 14523,12183 14468,11992
+Colbestr.: eng	q0 14468,11992 14416,11815
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3286,6 +3289,8 @@ Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1
 (Verl‰ngerung Senheimer Str.): teils enger Weg	q2 2560,26475 2493,26665 2434,26783 2384,26851 2303,26913
 (Ludwig-Lesser-Park, mittlerer Weg): viele Fuﬂg‰nger	q2 2312,25673 2293,26111
 (Senheimer Str. - Oranienburger Chaussee/Schwarzkittelweg): enger Weg	q2 2540,26280 3013,26458
+(Cardinalplatz - Wuhlewanderweg): schmal	q2 21901,5743 21884,5769 21873,5832 21856,5854
+(Cardinalplatz - Wuhlewanderweg): schmal	q2 21873,5832 21938,5866
 Vulkanstr./Landsberger Allee - Altenhofer Str.: schmal	q2 15796,14310 15791,14320 15699,14350
 (Amselhainer Weg - Hirschfelder Weg): Fuﬂg‰nger	q2 21886,15594 21892,15637
 (Bollersdorfer Weg - Amselhainer Weg): Fuﬂg‰nger	q2 21849,15404 21860,15458
@@ -3329,7 +3334,7 @@ Alsenzer Weg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2775
 Fichtenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -2961,17875 -2949,17946 -2968,18038 -3000,18196
 Johann-Landefeldt-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8619,7012 -8598,7018
 Joachimstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22009,5593 21907,5517 21789,5427
-Cardinalstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21901,5728 21828,5623 21706,5541
+Cardinalstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21896,5724 21828,5623 21706,5541
 Fuchsbergeweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20595,9558 20592,9298
 (Marchlewskistr. - Gubener Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 13168,12219 13173,12202 13097,12166
 Pitschener Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21769,-432 21719,-397 21637,-381

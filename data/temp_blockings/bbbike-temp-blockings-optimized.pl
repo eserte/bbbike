@@ -6657,11 +6657,11 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
 #: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023)
-#: osm_watch: way id="1172668082" version="10"
+#: osm_watch: way id="1172668082" version="11"
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm
 #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-11-08 (osm)
+#: last_checked: 2023-11-24 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
@@ -7394,18 +7394,20 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
        },
        {
          'data' => '#: note: Endedatum anhand Halteverbotsschild
-#: last_checked: 2023-09-17 vvv
+#: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
+#: last_checked: 2023-11-25 vvv
 #: next_check: 2023-12-15 vvv
 	2::inwork 20097,14039 20096,14127 20040,14179
 	2::inwork 20096,14127 20111,14140 20172,14141
 #: next_check ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1694958118,
          'id' => 3917,
-         'text' => 'Allee der Kosmonauten - Murtzaner Ring: Hochbauarbeiten, Straße gesperrt, voraussichtlich bis Mitte Dezember 2023',
+         'text' => 'Allee der Kosmonauten - Murtzaner Ring: Hochbauarbeiten, Straße gesperrt, mindestens bis Mitte Dezember 2023',
          'type' => 'gesperrt',
-         'until' => 1702681199
+         'until' => undef
        },
        {
          'data' => '#: osm_watch: way id="381691526" version="7"
@@ -7555,7 +7557,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="6"
+#: osm_watch: way id="1126670512" version="7"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
 #: osm_watch: way id="9030384" version="38"
@@ -7715,9 +7717,11 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
+#: XXX laut osm note https://www.openstreetmap.org/note/3753067 nun (auch? nur?) Richtung Norden gesperrt (wie sieht die Radverkehrsführung aus?)
 #: last_checked: 2023-11-11
 #: check_frequency: 30d
-#: next_check: 2024-04-11
+# REMOVED --- #: next_check: 2024-04-11
+#: next_check: 2023-11-24
 	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
 ',
          'from' => 1693380660,
@@ -7929,6 +7933,36 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'text' => 'Kamminer Str.: Bauarbeiten zwischen Fabriciusstr. und Osnabrücker Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22.11.2023 07:00 bis 13.12.2023 18:00',
          'type' => 'handicap',
          'until' => 1702486800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023)
+Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
+Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
+',
+         'from' => 1694494800,
+         'id' => 3976,
+         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 05.12.2023 17:00',
+         'type' => 'gesperrt',
+         'until' => 1701792000
+       },
+       {
+         'data' => '#: note: laut Bauschild der Wasserbetriebe bis September 2024 (nicht sicher)
+#: also_indoor: traffic (G,W) vvv
+#: last_checked: 2023-11-25 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2024-09-30 vvv
+Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
+Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+',
+         'from' => undef,
+         'id' => 3977,
+         'text' => 'Rüdigerstr. und Hagenstr.: Leitungsarbeiten, Einbahnstraßenregelung bzw. Sperrung',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

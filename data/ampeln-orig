@@ -7,6 +7,15 @@
 # 
 #: temporary vvv
 # 
+#: by: https://www.howoge.de/schulbau/allee-der-kosmonauten-projektuebersicht.html
+#: XXX evtl. wurde die Ampel wegen der Hochbauarbeiten (Schule) eingerichtet
+#: osm_watch: way id="29432246" version="24"
+#: osm_watch: note 3707299 5
+#: last_checked: 2023-11-25
+#: check_frequency: 90d
+#: next_check: 2024-08-31
+Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
+# 
 #: by: https://www.deutsches-architekturforum.de/thread/14562-b%C3%BCro-und-wohnquartier-elements-mediaspree-in-bau/?postID=750488#post750488
 #: XXX eigentlich zwei Ampeln
 #: last_checked: 2023-11-23
@@ -150,17 +159,17 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln
-#: last_checked: 2023-11-19
+#: last_checked: 2023-11-25
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2023-07-29 (mapillary) vvv
+#: last_checked: 2023-11-25 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
-#: note: kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10)
+#: note: kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30)
 #: note: Anforderungsampel
 	F::inwork 18831,14823
 #: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
@@ -306,7 +315,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2023-11-05 (mapillary) vvv
+#: last_checked: 2023-11-23 (mapillary) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-06-30 vvv
 #: valid: 20190603-20250630 vvv
@@ -3241,8 +3250,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 8382,347
 	X 5720,2081
 	X 27112,-2764
+#: note: Anforderungsampel
 	F 18843,6013
+#: note: Anforderungsampel
 	F 19852,15201
+#: note: Anforderungsampel
 	F 22131,16000
 #: note: Anforderungsampel für Radfahrer aus der Kastanienallee
 	X 23617,15594
