@@ -14,6 +14,7 @@
 
 use strict;
 use warnings;
+use 5.010; # //
 use List::Util qw(first);
 
 sub usage (;$) {
@@ -118,6 +119,18 @@ if (check_task 'pl_to_yml') {
 
     yml_to_bbd($infile, @options);
 
+} elsif (check_task('bbd_to_pl_snippet')) {
+    require Getopt::Long;
+    if (!Getopt::Long::GetOptions()) {
+	die "usage: $0 $task file.bbd\n";
+    }
+    my $infile = shift
+	or die usage "bbd file is missing";
+    @ARGV and usage "Extra args";
+
+    my @options;
+    bbd_to_pl_snippet($infile, @options);
+
 } elsif (check_task 'check_recurrences') {
     require Getopt::Long;
     my $prewarn_days = 7;
@@ -213,6 +226,42 @@ sub yml_to_bbd {
 	print "#: x-from ^^^\n";
 	print "#: id ^^^\n";
     }
+}
+
+sub bbd_to_pl_snippet {
+    my($infile, %args) = @_;
+    die "Unhandled arguments: " . join(", ", %args) if %args;
+
+    require Time::Local;
+    _add_bbbike_inc();
+    require Strassen::Core;
+    my $s = Strassen->new_stream($infile);
+    my $name;
+    my $max_epoch;
+    $s->read_stream
+	(sub {
+	     my($r,$dir) = @_;
+	     if (!defined $name && $r->[Strassen::NAME()]) {
+		 $name = $r->[Strassen::NAME()];
+	     }
+	     if (($dir->{source_id} || [])->[0] =~ /.*bis\s+(\d{1,2})\.(\d{1,2})\.(\d{4})/) {
+		 my $epoch = Time::Local::timelocal(59,59,23,$1,$2-1,$3);
+		 $max_epoch = $epoch if !defined $max_epoch || $max_epoch < $epoch;
+	     }
+	 });
+    my $max_epoch_string = $max_epoch // 'undef';
+    $name //= '';
+    chomp(my $bbd_string = Strassen->new($infile, UseLocalDirectives => 1)->as_string);
+    print <<OUTEREOF;
+     { from  => undef, #
+       until => $max_epoch_string, #
+       text  => '$name',
+       type  => 'gesperrt', # handicap
+       data  => <<EOF,
+$bbd_string
+EOF
+     },
+OUTEREOF
 }
 
 sub check_recurrences {
