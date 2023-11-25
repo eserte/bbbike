@@ -134,15 +134,16 @@ $s->read_stream(sub {
 	    warn "Cannot parse mud directive '$mud' in $f:$linenumber...\n";
 	}
     }
+    my $directed = $r->[Strassen::CAT] =~ /;$/ ? ';' : '';
     print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
     if ($today_candidate) {
-	print "$r->[Strassen::NAME]; Ist-Zustand: $today_candidate->{desc}\t$today_candidate->{h} @{ $r->[Strassen::COORDS] }\n";
+	print "$r->[Strassen::NAME]; Ist-Zustand: $today_candidate->{desc}\t$today_candidate->{h}$directed @{ $r->[Strassen::COORDS] }\n";
     } elsif (@mud_candidates) {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
-	print "$r->[Strassen::NAME]; Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})\t$used_mud_candidate->{h} @{ $r->[Strassen::COORDS] }\n";
+	print "$r->[Strassen::NAME]; Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})\t$used_mud_candidate->{h}$directed @{ $r->[Strassen::COORDS] }\n";
     } elsif (@other_candidates) {
 	my($used_other_candidate) = sort { compare_q_strings($b->{h}, $a->{h}) } @other_candidates;
-	print "$r->[Strassen::NAME]; keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})\t? @{ $r->[Strassen::COORDS] }\n";
+	print "$r->[Strassen::NAME]; keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})\t?$directed @{ $r->[Strassen::COORDS] }\n";
     } else {
 	print "$r->[Strassen::NAME]; keine Prognose\t? @{ $r->[Strassen::COORDS] }\n";
     }
