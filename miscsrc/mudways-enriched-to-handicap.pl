@@ -40,6 +40,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use Getopt::Long;
+use POSIX qw(strftime);
 
 use BBBikeUtil qw(bbbike_aux_dir);
 use Strassen::Core;
@@ -58,6 +59,8 @@ GetOptions(
     or usage;
 usage "Please specify --bf10 option."
     if !defined $current_bf10;
+
+my $today = strftime "%Y-%m-%d", localtime;
 
 my $ofh;
 if ($outfile) {
@@ -96,34 +99,45 @@ my $s = Strassen->new_stream($f);
 $s->read_stream(sub {
     my($r, $dir, $linenumber) = @_;
 
+    my $today_candidate;
     my @mud_candidates;
     my @other_candidates;
     for my $mud (@{ $dir->{mud} || [] }) {
-	if (my($date, $bf10, $rest) = $mud =~ /^(\d{4}-\d{2}-\d{2}):\s+BF10=(\d+):\s+(.*)/) {
+	if (my($date, $bf10, $rest) = $mud =~ m{^(\d{4}-\d{2}-\d{2}):\s+BF10=(\d+|N/A):\s+(.*)}) {
 	    my($desc, $h) = $rest =~ m{(.*)\th=(q\d[+-]?)}; # may fail to match if q is missing
-	    my $delta = abs($bf10-$current_bf10);
-	    if ($delta <= 20) {
-		if (defined $h) {
-		    push @mud_candidates, { delta => $delta,
-					    date  => $date,
-					    bf10  => $bf10,
-					    desc  => $desc,
-					    h     => $h,
-					  };
+	    if ($date eq $today) {
+		# usually no bf10 value for today available
+		$today_candidate = { date => $date,
+				     desc => $desc,
+				     h    => $h,
+				   };
+	    } elsif ($bf10 =~ /^\d+$/) { # i.e. not 'N/A'
+		my $delta = abs($bf10-$current_bf10);
+		if ($delta <= 20) {
+		    if (defined $h) {
+			push @mud_candidates, { delta => $delta,
+						date  => $date,
+						bf10  => $bf10,
+						desc  => $desc,
+						h     => $h,
+					      };
+		    }
+		} elsif (defined $h && $h ne 'q0') {
+		    push @other_candidates, { date => $date,
+					      bf10  => $bf10,
+					      desc => $desc,
+					      h    => $h,
+					    };
 		}
-	    } elsif (defined $h && $h ne 'q0') {
-		push @other_candidates, { date => $date,
-					  bf10  => $bf10,
-					  desc => $desc,
-					  h    => $h,
-					};
 	    }
 	} else {
 	    warn "Cannot parse mud directive '$mud' in $f:$linenumber...\n";
 	}
     }
     print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
-    if (@mud_candidates) {
+    if ($today_candidate) {
+	print "$r->[Strassen::NAME]; Ist-Zustand: $today_candidate->{desc}\t$today_candidate->{h} @{ $r->[Strassen::COORDS] }\n";
+    } elsif (@mud_candidates) {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
 	print "$r->[Strassen::NAME]; Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})\t$used_mud_candidate->{h} @{ $r->[Strassen::COORDS] }\n";
     } elsif (@other_candidates) {
