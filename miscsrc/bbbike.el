@@ -290,7 +290,7 @@
 	  (bindings--define-key menu-map [center-point]        '(menu-item "Show on BBBike" bbbike-center-point))
 	  (bindings--define-key menu-map [toggle-tabular-view] '(menu-item "Toggle Tabular View" bbbike-toggle-tabular-view))
 	  (bindings--define-key menu-map [search-x-selection]  '(menu-item "Search X Selection" bbbike-search-x-selection))
-	  (bindings--define-key menu-map [grep]                '(menu-item "Grep" bbbike-grep))
+	  (bindings--define-key menu-map [grep]                '(menu-item "Grep" bbbike-grep-with-search-term))
 	  (bindings--define-key menu-map [separator3]          menu-bar-separator)
 	  (bindings--define-key menu-map [toggle-view-url]     '(menu-item "Toggle View URL behavior" bbbike-toggle-view-url))
 	  (bindings--define-key menu-map [view-remote-url]     '(menu-item "View Remote URL" bbbike-view-remote-url))
@@ -655,6 +655,7 @@
 ;; new version: if there's only one match, then go directly to the file.
 ;; Otherwise display the output in temporary grep-mode buffer.
 (defun bbbike-grep-with-search-term (search-term &optional is-regexp)
+  (interactive "MString to grep for in bbbike data: ")
   (let* ((search-term (bbbike--string-trim search-term))
 	 (bbbike-rootdir (bbbike-rootdir))
 	 (bbbike-datadir (bbbike-datadir))
