@@ -42,6 +42,14 @@ use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
 
 sub _temp_blockings_id_to_line ($$);
 
+my %filter_callback =
+    (
+     'without-osm-watch' => sub {
+	 my(undef,$dir) = @_;
+	 return !exists $dir->{osm_watch};
+     },
+    );
+
 my $with_dist = 1;
 my $max_dist_km;
 my $dist_dbfile;
@@ -55,6 +63,7 @@ my $compile_command = do {
     my $pmake = get_pmake;
     "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})";
 };
+my @filters;
 my $debug;
 GetOptions(
 	   "with-dist!" => \$with_dist,
@@ -66,12 +75,19 @@ GetOptions(
 	   "with-searches-weight!" => \$with_searches_weight,
 	   "with-nextcheckless-records!" => \$with_nextcheckless_records,
 	   'expired-statistics-logfile=s' => \$expired_statistics_logfile,
+	   'filter=s@' => \@filters,
 	   "compile-command=s" => \$compile_command,
 	   "debug" => \$debug,
 	  )
     or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db]
     [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight]
-    [--nowith-nextcheckless-records] [--debug] [--compile-command ...] bbdfile ...\n";
+    [--nowith-nextcheckless-records] [--filter without-osm-watch] [--debug] [--compile-command ...] bbdfile ...\n";
+
+for my $filter (@filters) {
+    if (!$filter_callback{$filter}) {
+	die "Filter '$filter' is unknown.\n";
+    }
+}
 
 # --with-dist requires one or two reference positions. Use from
 # cmdline arguments, or look into the user's bbbike config.
@@ -206,6 +222,9 @@ for my $file (@files) {
 	     #    and records in other files marked with add_fragezeichen, XXX,
 	     #    or similar), these won't have date set in @records
 	     my($r, $dir) = @_;
+	     for my $filter (@filters) {
+		 return if !$filter_callback{$filter}->($r, $dir);
+	     }
 	     my $where;
 	     if ($abs_file =~ m{^(.*)/tmp/bbbike-temp-blockings-optimized\.bbd$}) {
 		 my $non_optimized_src_file = "$1/data/temp_blockings/bbbike-temp-blockings.pl";

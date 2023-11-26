@@ -243,9 +243,9 @@ sub action_survey_today {
     }
 }
 
-sub action_fragezeichen_nextcheck_home_home_org {
-    my $d = shift;
-    my $dest = "$persistenttmpdir/fragezeichen-nextcheck-home-home.org";
+sub _build_fragezeichen_nextcheck_variant {
+    my($d, $dest) = @_;
+    my $variant = ($dest =~ /(home-home|without-osm-watch)/ ? $1 : die "Cannot recognize variant from destination file '$dest'");
     my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads";
     my @gps_uploads_files = bsd_glob("$gps_uploads_dir/*.bbr");
@@ -257,17 +257,30 @@ sub action_fragezeichen_nextcheck_home_home_org {
 	my $pmake = BBBikeBuildUtil::get_pmake();
 	_make_writable $d, $dest;
 	$d->run([$perl, "$miscsrcdir/fragezeichen2org.pl",
-		 "--expired-statistics-logfile=$persistenttmpdir/expired-fragezeichen-home-home.log",
+		 "--expired-statistics-logfile=$persistenttmpdir/expired-fragezeichen-${variant}.log",
 		 (@gps_uploads_files ? "--plan-dir=$gps_uploads_dir" : ()),
 		 "--with-searches-weight",
 		 "--max-dist=50",
 		 "--dist-dbfile=$persistenttmpdir/dist.db",
-		 ($centerc ? ("-centerc", $centerc, "-center2c", $centerc) : ()),
+		 ($variant eq 'home-home' ? ($centerc ? ("-centerc", $centerc, "-center2c", $centerc) : ()) : ()),
+		 ($variant eq 'without-osm-watch' ? ('--filter', 'without-osm-watch') : ()),
 		 "--compile-command", "cd @{[ cwd ]} && $pmake $dest",
 		 @srcs], ">", "$dest~");
 	_empty_file_error "$dest~";
 	_commit_dest $d, $dest;
     }
+}
+
+sub action_fragezeichen_nextcheck_home_home_org {
+    my $d = shift;
+    my $dest = "$persistenttmpdir/fragezeichen-nextcheck-home-home.org";
+    _build_fragezeichen_nextcheck_variant($d, $dest);
+}
+
+sub action_fragezeichen_nextcheck_without_osm_watch_org {
+    my $d = shift;
+    my $dest = "$persistenttmpdir/fragezeichen-nextcheck-without-osm-watch.org";
+    _build_fragezeichen_nextcheck_variant($d, $dest);
 }
 
 ######################################################################
@@ -478,6 +491,7 @@ sub action_all {
     action_check_connected($d);
     action_survey_today($d);
     action_fragezeichen_nextcheck_home_home_org($d);
+    action_fragezeichen_nextcheck_without_osm_watch_org($d);
 }
 
 return 1 if caller;

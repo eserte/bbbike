@@ -1099,6 +1099,10 @@ fragezeichen-nextcheck.org-exact-dist:
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org!
 	${PERL} doit.pl fragezeichen-nextcheck-home-home.org
 
+# Like fragezeichen-nextcheck.org-exact-dist, but only entries without osm-watch
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck-without-osm-watch.org!
+	${PERL} doit.pl fragezeichen-nextcheck-without-osm-watch.org
+
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
