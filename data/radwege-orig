@@ -1783,6 +1783,7 @@ Verbundsteinpflaster	RW1; 5328,13019 5166,13087
 #: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeiten bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (inaktiv)
 #: source_id: viz2021:13.34634,52.43195,20.12.2022,12:03 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
+#: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023)
 #: osm_watch: way id="85468589" version="24"
 #: osm_watch: way id="458915639" version="7"
 #: last_checked: 2023-11-04 vvv
@@ -2108,7 +2109,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2023-11-18 (mapillary) vvv
+#: last_checked: 2023-11-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-09-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -4762,6 +4763,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: note: Asphalt sah älter aus
 #: note: stellenweise (etwa 100m) sollen Radfahrer absteigen
 # REMOVED (früher) --- Gehweg für Radfahrer frei, asphaltiert, schmal	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
+#: osm_watch: way id="24403109" version="41"
 #: last_checked: 2023-03-08 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2023-11-30
@@ -5012,14 +5014,13 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW2;RW1 9617,16590 9514,16603 9442,16610
 	RW3; -214,16093 -208,16120 -198,16161 -193,16186 -168,16269
 	RW4; -168,16269 -193,16186 -198,16161
+	RW4; -198,16161 -208,16120 -214,16093
+asphaltiert	RW1; -216,16084 -224,16041 -233,15997
 #: next_check_id: TEGELERBRUECKE-2021
 #: XXX noch nicht fertiggestellt
 #: last_checked: 2023-10-03 vvv
-#	RW4; -198,16161 -208,16120 -214,16093
-	RW0; -198,16161 -208,16120 -214,16093
-#asphaltiert	RW1; -216,16084 -224,16041 -233,15997
 #	RW3; -233,15997 -252,15903
-	RW0; -216,16084 -224,16041 -233,15997 -252,15903
+	RW0; -233,15997 -252,15903
 #: last_checked ^^^
 asphaltiert	RW1; -233,15997 -224,16041 -216,16084
 	RW1; -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903
@@ -7849,7 +7850,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="34"
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2023-11-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
@@ -8388,6 +8389,8 @@ Leitboys	RW4; 9426,3797 9375,4022 9346,4144
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023)
+#: osm_watch: way id="354645907" version="16"
+#: osm_watch: way id="354645904" version="9"
 #: last_checked: 2023-09-19 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv

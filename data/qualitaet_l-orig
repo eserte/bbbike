@@ -252,6 +252,7 @@ Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Rich
 Heinersdorf: Kopfsteinpflaster	Q2 5941,-2072 5767,-2048
 Heinersdorf: rauher Asphalt	Q1 5767,-2048 5671,-2004 5633,-2011
 #: add_fragezeichen: ist hier mittlerweile asphaltiert?
+#: XXX laut osm surface=asphalt
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5633,-2011 5292,-2221 5132,-2299
 Heinersdorf - Teltow: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5132,-2299 4998,-2359
 Heinersdorf - Teltow: Asphalt	Q0 4998,-2359 4278,-2339 4245,-2350
@@ -2707,7 +2708,7 @@ Ziegelbergstr.: Kopfsteinpflaster	Q2 -797,127710 -621,127728 -390,127731 -405,12
 Briesen: Asphalt	Q0; 70326,-5505 70549,-5215
 Briesen: Kopfsteinpflaster	Q2; 70549,-5215 70326,-5505
 #: note: frühere Bauarbeiten bis 2007-05-10
-#: add_fragezeichen: nach den Bauarbeiten guter Asphalt?
+#: add_fragezeichen: nach den Bauarbeiten guter Asphalt? Gibt es hier mittlerweile einen Radweg?
 #: source_id: LS/221-F/23/149 (bis 27.09.2023, Deckensanierung) (inaktiv)
 #: next_check: 2023-09-27
 Briesen - Petersdorf: guter bis mäßiger Asphalt	Q0- 70549,-5215 71331,-5118 73292,-4598 74238,-3970
@@ -8944,6 +8945,8 @@ Hennigsdorfer Str.: Asphalt	Q0 401,29122 334,29807 320,29941
 #: by: ^^^
 # 
 #: by: osm: vvv
+Siegfriedstr. (Teltow): unbefestigte Straße	Q2 4058,-437 4049,-470 4023,-562 4011,-696
+Siegfriedstr. (Teltow): schlechtes Kopfsteinpflaster	Q3 4011,-696 4009,-753 3980,-901 3970,-909
 Heimstättenstr. (Mahlow): Asphalt	Q0 11119,-5326 11098,-5197 11093,-5169 11078,-5057
 Breite Str. (Luckenwalde): Kopfsteinpflaster	Q2 -4568,-35783 -4478,-35736
 #: confirmed_by: srt (nur im nördlichen Abschnitt)
@@ -8986,18 +8989,20 @@ Altlandsberg - Wegendorf: schlechtes Kopfsteinpflaster	Q3 32483,18870 32561,1909
 #: by: ^^^
 # 
 #: by: mapillary/osm vvv
-Friedrich-Engels-Str.: Asphalt	Q0 950,29767 707,29911 590,29922 320,29941 171,29953 0,30042
-Jägerstr.: Asphalt	Q0 667,29004 719,29085 934,29434
 Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 18580,30715
-Karl-Marx-Str.: Asphalt	Q0 950,29767 1078,29668 1141,29607
+Friedrich-Engels-Str. (Hohen Neuendorf): Asphalt	Q0 950,29767 707,29911 590,29922 320,29941 171,29953 0,30042
+Jägerstr. (Hohen Neuendorf): Asphalt	Q0 667,29004 719,29085 934,29434
+Karl-Marx-Str. (Hohen Neuendorf): Asphalt	Q0 950,29767 1078,29668 1141,29607
 #: XXX später möglicherweise auch komplett asphaltiert?
+#: osm_watch: way id="8069474" version="16"
+#: osm_watch: way id="831213734" version="7"
 #: last_checked: 2023-11-06 (mapillary)
-Karl-Marx-Str.: Bauarbeiten, teilweise Asphalt, teilweise andere Beläge	Q1 1141,29607 1272,29447
-Karl-Marx-Str.: Asphalt	Q0 1272,29447 1366,29416
-Emile-Zola-Str.: Asphalt	Q0 1481,29365 1447,29301 1395,29203 1325,29072 1221,28876 1150,28743 1103,28654 1110,28515 1208,28460
-Osramplatz: Asphalt	Q0 1198,28265 1229,28298 1261,28406
-Osramplatz: Asphalt	Q0 1221,28418 1194,28320 1167,28295
-Remanéstr.: Asphalt	Q0 1737,27925 1640,27959 1426,28065 1342,28118 1276,28175 1268,28184 1198,28265 1167,28295 1145,28303 1118,28303 1045,28282
+Karl-Marx-Str. (Hohen Neuendorf): Bauarbeiten, teilweise Asphalt, teilweise andere Beläge	Q1 1141,29607 1272,29447
+Karl-Marx-Str. (Hohen Neuendorf): Asphalt	Q0 1272,29447 1366,29416
+Emile-Zola-Str. (Hohen Neuendorf): Asphalt	Q0 1481,29365 1447,29301 1395,29203 1325,29072 1221,28876 1150,28743 1103,28654 1110,28515 1208,28460
+Osramplatz (Hohen Neuendorf): Asphalt	Q0 1198,28265 1229,28298 1261,28406
+Osramplatz (Hohen Neuendorf): Asphalt	Q0 1221,28418 1194,28320 1167,28295
+Remanéstr. (Hohen Neuendorf): Asphalt	Q0 1737,27925 1640,27959 1426,28065 1342,28118 1276,28175 1268,28184 1198,28265 1167,28295 1145,28303 1118,28303 1045,28282
 #: by: ^^^
 # 
 #: by: ??? (siehe Mail...)

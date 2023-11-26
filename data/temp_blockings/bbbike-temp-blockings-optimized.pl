@@ -4282,7 +4282,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 für etwa ein Jahr)
+         'data' => '#: next_check_id: TRESKOWALLEE-2023
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 für etwa ein Jahr)
 #: by: https://viz.berlin.de/2022/08/treskowallee/
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/fahrbahn-ein-jahr-lang-gesperrt_a355424
 #: by: https://nitter.cz/VIZ_Berlin/status/1573281027723665409#m
@@ -4309,7 +4310,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: last_checked: 2023-11-05
+#: last_checked: 2023-11-26
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: last_checked: 2023-10-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4574,6 +4575,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
+#: osm_watch: note 3938423 2
 #: last_checked: 2023-11-04
 #: check_frequency: 90d
 #: next_check: 2023-12-15
@@ -4947,14 +4949,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="30"
 #: osm_watch: way id="165832806" version="34"
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-26
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
 # REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Mitte November 2023: keine Bauarbeiten)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Ende November 2023: Absperrungen im mittleren Abschnitt, kann außerhalb der Arbeitszeiten umfahren werden)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5857,8 +5859,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2023-07-27
-#: check_frequency: 120d
+#: last_checked: 2023-11-26 (webcam)
+#: check_frequency: 30d
+# REMOVED (kürzere Frequenz bei webcam-Checks) --- #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
          'from' => undef,
@@ -6208,7 +6211,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        },
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (W)
+#: also_indoor: traffic (W,G)
 #: last_checked: 2023-09-29
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
@@ -6226,6 +6229,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
 #: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023)
+#: osm_watch: way id="1153732901" version="4"
 #: last_checked: 2023-10-08 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2024-06-30
@@ -6634,7 +6638,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        {
          'data' => '#: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G)
 #: last_checked: 2023-10-11
 	q4::inwork -3269,12406 -3260,12540
 ',
@@ -6777,7 +6781,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="23"
-#: last_checked: 2023-11-18
+#: last_checked: 2023-11-25 (mapillary)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6843,8 +6847,8 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
 #: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
-#: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2023-11-19 vvv
+#: XXX Wann sind die Straßen endgültig offen? vvv
+#: last_checked: 2023-11-26 vvv
 #: check_frequency: 60d vvv
 Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
 Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
@@ -6889,7 +6893,8 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        {
          'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B)
+#: osm_watch: note 3732762 1
 #: last_checked: 2023-06-12
 #: check_frequency: 180d
 #: next_check: 2025-10-31
@@ -6923,7 +6928,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        undef,
        {
          'data' => '#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-11-19
+#: last_checked: 2023-11-26
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -7378,7 +7383,7 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (none) vvv
+#: also_indoor: traffic (H,G) vvv
 #: last_checked: 2023-11-18 vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
@@ -7490,6 +7495,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
 #: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: osm_watch: note 3677859 4
 #: last_checked: 2023-11-16
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 13598,13180 13692,13221
@@ -7687,7 +7693,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        undef,
        {
          'data' => '#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
-#: last_checked: 2023-11-14
+#: last_checked: 2023-11-26
 #: check_frequency: 30d
 #: next_check: 2023-12-15
 	q2::inwork; 18037,9195 17549,9529
@@ -7702,6 +7708,8 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        {
          'data' => '#: next_check_id: GOERLITZERUFER-2023
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
+#: osm_watch: way id="4782403" version="26"
+#: osm_watch: way id="148176599" version="14"
 #: last_checked: 2023-11-24
 #: check_frequency: 30d
 #: next_check: 2023-12-31
@@ -7717,11 +7725,9 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
-#: XXX laut osm note https://www.openstreetmap.org/note/3753067 nun (auch? nur?) Richtung Norden gesperrt (wie sieht die Radverkehrsführung aus?)
-#: last_checked: 2023-11-11
+#: last_checked: 2023-11-26
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-04-11
-#: next_check: 2023-11-24
+#: next_check: 2024-04-11
 	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
 ',
          'from' => 1693380660,
@@ -7752,14 +7758,15 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2023-11-11 vvv
 #: next_check: 2023-12-08 vvv
-	q4::inwork 18704,8427 18627,8475
-	q3::inwork 18627,8475 18557,8525
+# REMOVED ---	q4::inwork 18704,8427 18627,8475
+# REMOVED ---	q3::inwork 18627,8475 18557,8525
+	q3::inwork; 18704,8427 18627,8475
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1699164000,
          'id' => 3957,
-         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, auch Kreuzungsbereich Wildensteiner Str. betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
+         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 08.12.2023 17:00',
          'type' => 'handicap',
          'until' => 1702051200
        },
@@ -7834,6 +7841,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
 #: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
 #: note: abgesperrter Bereich ist etwa 50-60m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
+#: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2023-11-20
 #: check_frequency: 14d
 #: next_check: 2024-01-31
@@ -7895,8 +7903,8 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'until' => 1704481200
        },
        {
-         'data' => '#: also_indoor: traffic (B)
-#: next_check_id: GROSSBEEREN-2023
+         'data' => '#: next_check_id: GROSSBEEREN-2023
+#: also_indoor: traffic (B)
 #: last_checked: 2023-11-21
 	q3::inwork 9178,10451 9192,10528
 ',
