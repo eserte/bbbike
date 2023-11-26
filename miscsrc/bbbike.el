@@ -627,8 +627,7 @@
 
 (setq bbbike-next-check-id-regexp "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
 
-(defun bbbike-grep ()
-  (interactive)
+(defun bbbike-grep-next-check-id ()
   (let (search-key search-val dirop)
     (save-excursion
       (beginning-of-line)
@@ -639,9 +638,9 @@
     (if (not search-val)
 	(error "Can't find anything to grep for"))
     (if search-key
-	(bbbike-grep-with-args search-key search-val))))
+	(bbbike-grep-bbd-directive search-key search-val))))
 
-(defun bbbike-grep-with-args (search-key search-val)
+(defun bbbike-grep-bbd-directive (search-key search-val)
   (bbbike-grep-with-search-term (concat "^#:[ ]*" search-key ":?[ ]*" search-val) t))
 
 ;; old, now unused version which just uses the "grep" command
@@ -694,11 +693,11 @@
 	  )
 	(pop-to-buffer buffer))))))
 
-(defun bbbike-grep-button (button)
-  (bbbike-grep))
+(defun bbbike-next-check-id-button (button)
+  (bbbike-grep-next-check-id))
 
-(define-button-type 'bbbike-grep-button
-  'action 'bbbike-grep-button
+(define-button-type 'bbbike-next-check-id-button
+  'action 'bbbike-next-check-id-button
   'follow-link t
   'face 'bbbike-button
   'help-echo "Click button to grep for the same next_check_id")
@@ -825,7 +824,7 @@
 	(if (> (length next-check-id-val) 3)
 	    (setq next-check-id-val (substring next-check-id-val 0 3)))
 	(if (not (string= next-check-id-val "^^^"))
-	    (make-button (match-beginning 1) (match-end 2) :type 'bbbike-grep-button)))
+	    (make-button (match-beginning 1) (match-end 2) :type 'bbbike-next-check-id-button)))
       ))
 
   ;; recognize "#: by" directives which look like a URL in normal bbd files, additionally "#: also_indoor url" directives
