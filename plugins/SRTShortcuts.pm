@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.14;
+$VERSION = 2.15;
 
 use File::Glob qw(bsd_glob);
 
@@ -53,12 +53,11 @@ my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
 my $fit_track                        = "$bbbike_rootdir/tmp/fit.bbd";
-my %acc_cat_split_streets_byyear_track;
-my $curr_year = 1900 + (localtime)[5];
-my @acc_cat_split_streets_years = ($curr_year-3..$curr_year); # also used for unique-matches
-for my $year (@acc_cat_split_streets_years) {
-    $acc_cat_split_streets_byyear_track{$year} = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd";
-}
+my @acc_cat_split_streets_years = do {
+    my $curr_year = 1900 + (localtime)[5];
+    ($curr_year-3..$curr_year); # also used for unique-matches
+};
+my $acc_cat_split_streets_byyear_track = sub { my $year = shift; "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since$year.bbd" };
 my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 my $str_layer_level = 'l';
 
@@ -354,13 +353,48 @@ EOF
 	      (map {
 		  my $year = $_;
 		  layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd")],
-				    'str', $acc_cat_split_streets_byyear_track{$year},
+				    'str', $acc_cat_split_streets_byyear_track->($year),
 				    set_layer_highlightning => 1,
 				    special_raise => 1,
 				    Width => 1,
 				   );
-	      } @acc_cat_split_streets_years
+	      } ($acc_cat_split_streets_years[0], $acc_cat_split_streets_years[-1]), # only first and last year, rest will be done in a submenu
 	      ),
+	      [Cascade => $do_compound->("Add streets-accurate-categorized-split-since ..."), -menuitems =>
+	       [
+		(map {
+		    my $last_days = $_;
+		    my $file = '/tmp/street-accurate-categorized-split-last-' . $last_days . '-days.bbd';
+		    layer_checkbutton([$do_compound->("Last $last_days days")],
+				      'str', $file,
+				      set_layer_highlightning => 1,
+				      special_raise => 1,
+				      Width => 1,
+				      preparecallback => sub {
+					  my $rx = _generate_date_range_regex($last_days);
+					  require IPC::Run;
+					  my @cmd = ("$bbbike_rootdir/miscsrc/grepstrassen", "--preserveglobaldirectives", "--namerx", $rx, "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2013.bbd", "$bbbike_rootdir/tmp/fit.bbd");
+					  if (!IPC::Run::run(\@cmd, '>', "$file~")) {
+					      main::status_message("Failed to create $file", "die");
+					  }
+					  rename "$file~", $file
+					      or main::status_message("Failed to rename $file to final destination: $!", "die");
+				      },
+				     );
+		} (30, 90)
+		),
+		(map {
+		    my $year = $_;
+		    layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd")],
+				      'str', $acc_cat_split_streets_byyear_track->($year),
+				      set_layer_highlightning => 1,
+				      special_raise => 1,
+				      Width => 1,
+				     );
+		} @acc_cat_split_streets_years[1..$#acc_cat_split_streets_years-1],
+		),
+	       ],
+	      ],
 	      layer_checkbutton([$do_compound->("Add fit tracks")],
 				'str', $fit_track,
 				-interactivelyselected => 0,
@@ -3894,6 +3928,34 @@ sub visvalingam_whyatt {
     return \@out_points;
 }
     
+######################################################################
+sub _generate_date_range_regex {
+    my($last_days) = @_;
+
+    require Time::Piece;
+    require Regexp::Assemble;
+
+    my $current_date = Time::Piece->new;
+    my $some_days_ago = $current_date - $last_days * 24 * 60 * 60;
+
+    my $start_date = $some_days_ago->ymd;
+    my $end_date   = $current_date->ymd;
+
+    my $ra = Regexp::Assemble->new;
+
+    my $tp_start = Time::Piece->strptime($start_date, '%Y-%m-%d');
+    my $tp_end = Time::Piece->strptime($end_date, '%Y-%m-%d');
+
+    while ($tp_start <= $tp_end) {
+        my $date_str = $tp_start->ymd('-');
+        $ra->add(quotemeta($date_str), 's');
+        $ra->add(quotemeta($tp_start->ymd('')), 's'); # Date without dashes
+        $tp_start += 24 * 60 * 60; # Incrementing by 1 day
+    }
+
+    my $regexp_pattern = '^' . $ra->re;
+    $regexp_pattern;
+}
 
 ######################################################################
 1;
