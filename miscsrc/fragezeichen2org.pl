@@ -59,6 +59,8 @@ my $plan_dir;
 my $with_searches_weight;
 my $with_nextcheckless_records = 1;
 my $expired_statistics_logfile;
+my %url_defs = (infravelo => qr{\Qwww.infravelo.de/projekt});
+my %with_urls = map { ($_ => $url_defs{$_}) } qw(infravelo); # XXX temporary; maybe in future this could be turned on by option
 my $compile_command = do {
     my $pmake = get_pmake;
     "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})";
@@ -408,6 +410,14 @@ for my $file (@files) {
 		 for my $url (@urls) {
 		     if ($url =~ m{(https?://\S+).*\bWebcam\b}i) {
 			 push @extra_url_defs, ['Webcam', $1];
+		     }
+		     for my $url_key (sort keys %with_urls) {
+			 my $url_rx = $with_urls{$url_key};
+			 if ($url =~ $url_rx) {
+			     if ($url =~ m{(https?://\S+)}) {
+				 push @extra_url_defs, [$url_key, $1];
+			     }
+			 }
 		     }
 		 }
 	     }
