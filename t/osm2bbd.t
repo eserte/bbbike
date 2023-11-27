@@ -501,6 +501,35 @@ EOF
 }
 
 SKIP: {
+    skip 'Requires IPC::Run for -parsefor test', 1
+	if !eval { require IPC::Run; 1 };
+    my($osmfh,$osmfile) = tempfile(UNLINK => 1, SUFFIX => '_osm2bbd.osm');
+    print $osmfh <<'EOF';
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.61.5 4133829e">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2023-11-27T07:27:20Z"/>
+  <node id="338178874" lat="52.4585984" lon="13.3103323">
+    <tag k="name" v="positive name"/>
+    <tag k="key" v="positive_val"/>
+  </node>
+  <node id="727611593" lat="52.5222444" lon="13.3765784">
+    <tag k="name" v="negative name"/>
+    <tag k="key" v="negative_val"/>
+  </node>
+</osm>
+EOF
+    close $osmfh;
+
+    my @cmd = ($^X, $osm2bbd, "--debug=0", "-parsefor", "key=positive_val", $osmfile);
+    ok IPC::Run::run(\@cmd, '>', \my $bbd), 'osm2bbd with -parsefor';
+    my $s = Strassen->new_from_data_string($bbd);
+    isa_ok $s, 'Strassen';
+    is $s->count, 1, 'only one element found with -parsefor';
+    is $s->data->[0], "positive name\tpositive_val 13.3103323,52.4585984\n", 'expected data';
+}
+
+SKIP: {
     skip 'Requires IPC::Run for -version test', 1
 	if !eval { require IPC::Run; 1 };
     my $succ = IPC::Run::run([$^X, $osm2bbd, '-version'], '>', \my $stdout, '2>', \my $stderr);
