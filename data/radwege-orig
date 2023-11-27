@@ -841,14 +841,12 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # 
 #: note: Müllerstr., Richtung Norden
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7845,15066
-#: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen?
+#: XXX Wie wird die endgültige Rad/Busverkehrsführung aussehen? Mittlerweile (Ende November 2023) ohne Busspurschild?
 #: osm_watch: way id="25217949" version="51"
-#: last_checked: 2023-11-07
+#: last_checked: 2023-11-26 (mapillary)
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7845,15066
-#: XXX kommt hier noch ein Radwegschild hin?
-#: osm_watch: way id="374344536" version="19"
-#: last_checked: 2023-11-07
-	RW3; 7845,15066 7745,15160
+# REMOVED (ja) --- #: XXX kommt hier noch ein Radwegschild hin? --- #: osm_watch: way id="374344536" version="19" --- #: last_checked: 2023-11-26 (mapillary)
+	RW4; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
 Poller	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
@@ -2187,6 +2185,7 @@ Gehwegplatten und Verbundsteinpflaster	RW2; 7393,16566 7417,16587 7447,16613 760
 	RW3; 10085,21840 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
 	RW2;RW8 8277,21257 8316,21240
 Gehweg für Radfahrer frei	RW1;RW9 8316,21240 8409,21183 8513,21099 8610,21000 8698,20897 8764,20799 8789,20763 8904,20596
+#: note: am Anfang ist noch der östliche Gehweg für Radfahrer freigegeben, mindestens bis Kastanienallee
 Gehweg für Radfahrer frei, teilweise asphaltiert, teilweise Beton mit Schäden	RW1;RW9 8904,20596 8967,20539 9068,20446 9091,20425 9108,20410 9119,20399
 Gehweg für Radfahrer frei, asphaltiert	RW1; 9149,20336 9119,20399
 #: by: Wolfhard Schleese (teilweise) vvv
@@ -4441,7 +4440,7 @@ holprig und eng	RW1; 5661,1499 5633,1566 5570,1712 5519,1831 5474,1940
 # 
 #: note: Greifswalder Str. stadtauswärts
 Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186
-#: by: https://www.infravelo.de/projekt/greifswalderstrasse/ (1. Halbjahr 2019)
+#: by: https://www.infravelo.de/projekt/greifswalderstrasse/ (1. Halbjahr 2019) (mittlerweile gelöscht)
 #: XXX Grünbeschichtung geplant vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: by: https://www.tagesspiegel.de/berlin/gruene-radwege-in-berlin-warum-die-farbe-auf-den-strassen-ploetzlich-verschwimmt/25246650.html (nach den Bauarbeiten der BWB in der zweiten Hälfte 2020)
@@ -6712,7 +6711,7 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
 #: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022) (wurde ersetzt)
-#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau") (4. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (API-DEL)
+#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau") (4. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (API-DEL) (als "abgeschlossen" markiert)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Bauarbeiten beginnen Mitte 2022)
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
@@ -8392,7 +8391,7 @@ Leitboys	RW4; 9426,3797 9375,4022 9346,4144
 #: osm_watch: way id="354645907" version="16"
 #: osm_watch: way id="354645904" version="9"
 #: last_checked: 2023-09-19 (mapillary) vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 	RW3; 8739,6701 8653,6781
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
@@ -8642,6 +8641,8 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 	RW4; -2756,13263 -2725,13287
 # 
 # 
+niedrige Protektionselemente, Poller an der Einfahrten	RW4; 14134,11272 13970,11366
+niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13970,11366 13888,11405
 #: next_check_id: REVALER-2023
 #: by: https://www.infravelo.de/projekt/revaler-strasse/ (2.-3. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) vvv
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10192 (EwA)
@@ -8652,10 +8653,10 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
 #: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
-#: last_checked: 2023-11-24 (weitgehend fertig) vvv
+#: last_checked: 2023-11-27 (Restarbeiten) vvv
 #: check_frequency: 2d vvv
 #: next_check: 2023-11-29 vvv
-provisorische Radspur	RW3; 14134,11272 13970,11366 13888,11405 13711,11458 13588,11490
+abschnittsweise niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13888,11405 13711,11458 13588,11490
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
 #: next_check ^^^
 #: check_frequency ^^^

@@ -82,17 +82,17 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
 # REMOVED --- #: by: https://nitter.net/VIZ_Berlin/status/1683357845155115010#m --- #: by: https://nitter.net/pic/orig/media%2FF1fwqZtXgA4eKSM.jpg --- #: source_id: viz2021:13.541546,52.423078,24.07.2023,09:00 (bis 21.08.2023) (bis 25.08.2023) (inaktiv) --- #: next_check: 2023-08-25 --- #: valid: -20230825 --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork 19933,2078
 # 
-# REMOVED --- #: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv)
-# REMOVED --- #: next_check: 2023-11-24
-# REMOVED --- #: valid: -20231124
-# REMOVED --- Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
+#: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv) (bis 16.02.2024)
+#: next_check: 2024-02-16
+#: valid: -20240216
+Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 # 
-#: next_check_id: PISTORIUS-2023
-#: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023)
-#: last_checked: 2023-11-23
-#: next_check: 2023-11-27
-#: valid: -20231127
-Roelckestr./Gäblerstr.	X::inwork 13272,16672
+# REMOVED --- #: next_check_id: PISTORIUS-2023
+# REMOVED --- #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023) (inaktiv)
+# REMOVED --- #: last_checked: 2023-11-23
+# REMOVED --- #: next_check: 2023-11-27
+# REMOVED --- #: valid: -20231127
+# REMOVED --- Roelckestr./Gäblerstr.	X::inwork 13272,16672
 # 
 #: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024)
 #: next_check: 2024-09-30
@@ -268,9 +268,9 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 #: next_check_id: SCHOENHOLZER-2022
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) vvv
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) vvv
 #: last_checked: 2023-08-17 (mapillary) vvv
-#: next_check: 2023-11-30 vvv
+#: next_check: 2024-02-02 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
@@ -3600,11 +3600,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5187,22601
 #: next_check_id: TEGELERBRUECKE-2021
 #: note: Anforderungsampel
-#: XXX wird diese Ampel jemals wieder in Betrieb genommen?
+#: XXX wird diese Ampel jemals wieder in Betrieb genommen? zumindest gibt es noch die Haltelinien, aber alle Masten wurden zurückgebaut
 #: osm_watch: node id="28321258" version="10"
-#: last_checked: 2023-10-03
-# REMOVED --- #: check_frequency: 180d
-#: next_check: 2023-12-01
+#: last_checked: 2023-11-25 (mapillary)
+#: check_frequency: 180d
+#: next_check: 2024-04-30
 	F0 -214,16093
 #: note: Anforderungsampel
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
@@ -3698,7 +3698,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-11-07
+#: last_checked: 2023-11-26 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2024-02-15
 	X::inwork 8250,14672
@@ -3767,7 +3767,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
-#: last_checked: 2023-11-13 (mapillary) vvv
+#: last_checked: 2023-11-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -3816,7 +3816,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked: 2023-11-23
 #: check_frequency: 90d
 	X 10873,12577
-#: by: osm
+#: by: osm, mapillary
+#: note: Anforderungsampel
 	F 9704,19428
 ################################################################################
 #: note: Potsdam vvv
