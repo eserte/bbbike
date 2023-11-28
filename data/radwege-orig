@@ -327,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-11-24 vvv
+#: last_checked: 2023-11-28 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -968,7 +968,9 @@ neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
 neu asphaltiert	RW2; 10884,14952 10881,15047
 	RW4; 10881,15047 10883,15129
 neu asphaltiert	RW1; 10883,15129 10884,15152
-Radspur, niedrige Protektion	RW3; 10884,15152 10886,15251 10887,15287 10902,15422
+Radspur, niedrige Protektion	RW3; 10884,15152 10886,15251
+asphaltiert	RW1; 10886,15251 10887,15287
+Radspur, niedrige Protektion	RW3; 10887,15287 10902,15422
 prvisorische Radspur	RW3; 10902,15422 10917,15525
 größtenteils neu asphaltiert, allerdings wieder neue Unebenheiten	RW1; 10917,15525 10941,15697
 Gehwegplatten	RW2; 10941,15697 10953,15787
@@ -8651,11 +8653,11 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13970,11366 13888,11
 #: by: https://viz.berlin.de/2023/09/revaler-str/
 #: by: https://berliner-abendblatt.de/berlin-news/radweg-auf-revaler-strasse-einschraenkungen-fuer-autos-id233272
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
-#: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023)
+#: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023)
 #: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
 #: last_checked: 2023-11-27 (Restarbeiten) vvv
 #: check_frequency: 2d vvv
-#: next_check: 2023-11-29 vvv
+#: next_check: 2023-12-01 vvv
 abschnittsweise niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13888,11405 13711,11458 13588,11490
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
 #: next_check ^^^

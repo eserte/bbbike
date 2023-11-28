@@ -694,7 +694,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: also_indoor: webcam https://portal1443.webcam-profi.de/
+# REMOVED (404) --- #: also_indoor: webcam https://portal1443.webcam-profi.de/
 #: note: wobei mittlerweile die Einschränkungen recht gering sind
 #: last_checked: 2023-10-29
 #: check_frequency: 30d
@@ -894,7 +894,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6344,7174 6234,7020
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
-#: osm_watch: way id="51196438" version="22"
+#: osm_watch: way id="51196438" version="25"
 #: note: der Zweirichtungsradweg-Abschnitt ist etwa 100m lang
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 #: next_check ^^^
@@ -1002,11 +1002,11 @@ Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 #: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum)
-#: osm_watch: way id="1040605739" version="1"
+# REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="1040605739" version="2"
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
 #: XXX laut osm opening_date=2023-12
 #: last_checked: 2023-11-23
-#: check_frequency: 120d
+#: check_frequency: 30d
 #: next_check: 2023-12-31
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
@@ -1097,7 +1097,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-11-27 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-11-28 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245

@@ -4575,7 +4575,6 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
-#: osm_watch: note 3938423 2
 #: last_checked: 2023-11-04
 #: check_frequency: 90d
 #: next_check: 2023-12-15
@@ -6894,7 +6893,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
          'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-B)
-#: osm_watch: note 3732762 1
+#: osm_watch: note 3732762 2
 #: last_checked: 2023-06-12
 #: check_frequency: 180d
 #: next_check: 2025-10-31
@@ -7228,7 +7227,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: XXX Sind Radfahrer noch immer betroffen?
 #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
-#: last_checked: 2023-11-23 vvv
+#: last_checked: 2023-11-27 (mapillary) vvv
 #: check_frequency: 45d vvv
 #: next_check: 2024-01-09 vvv
 Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -7898,19 +7897,19 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727203617906843664#m (hier: Wildschutzzaun-Reparatur)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
-#: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023)
+#: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
 #: note: vom rbb gemeldet (hier: Brückenschäden)
 #: also_indoor: traffic (ex-H,B)
-#: last_checked: 2023-11-21 (Verkehrsmeldung)
+#: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d
-#: next_check: 2023-12-01
+#: next_check: 2023-12-15
 	2::inwork -430,23912 -406,23934
 ',
          'from' => undef,
          'id' => 3974,
-         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 01.12.2023',
+         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 15.12.2023',
          'type' => 'gesperrt',
-         'until' => 1701446400
+         'until' => 1702656000
        },
        {
          'data' => '#: source_id: viz2021:13.300851,52.527492,22.11.2023,07:00 (bis 13.12.2023)
@@ -7951,6 +7950,27 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
          'text' => 'Rüdigerstr. und Hagenstr.: Leitungsarbeiten, Einbahnstraßenregelung bzw. Sperrung',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024)
+#: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
+	q4::inwork 5189,9397 5189,8983
+',
+         'from' => 1701064800,
+         'id' => 3978,
+         'text' => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 07:00 bis 12.01.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1705075200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.401194,52.590408,29.11.2023,07:00 (bis 15.12.2023)
+	q4::inwork; 10066,20494 9983,20581
+',
+         'from' => 1701151200,
+         'id' => 3979,
+         'text' => 'Schönhauser Str.: Fahrbahnarbeiten zwischen Dietzgenstr. und Nordendstr., Sperrung, evtl. sich auch Radfahrer betroffen, vom 29.11.2023 07:00 bis 15.12.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1702656000
        }
      
 );
