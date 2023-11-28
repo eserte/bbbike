@@ -61,6 +61,7 @@ usage "Please specify --bf10 option."
     if !defined $current_bf10;
 
 my $today = strftime "%Y-%m-%d", localtime;
+my $max_delta = 20;
 
 my $ofh;
 if ($outfile) {
@@ -99,10 +100,20 @@ my $s = Strassen->new_stream($f);
 $s->read_stream(sub {
     my($r, $dir, $linenumber) = @_;
 
+    my $best_mud_candidate = find_best_mud_candidate($dir->{mud}, $f, $linenumber);
+    my $h_directed = $best_mud_candidate->{h} . ($r->[Strassen::CAT] =~ /;$/ ? ';' : '');
+
+    print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
+    print "$r->[Strassen::NAME]; $best_mud_candidate->{text_de}\t$h_directed @{ $r->[Strassen::COORDS] }\n";
+});
+
+sub find_best_mud_candidate {
+    my($mud_directives, $f, $linenumber) = @_;
+
     my $today_candidate;
     my @mud_candidates;
     my @other_candidates;
-    for my $mud (@{ $dir->{mud} || [] }) {
+    for my $mud (@{ $mud_directives || [] }) {
 	if (my($date, $bf10, $rest) = $mud =~ m{^(\d{4}-\d{2}-\d{2}):\s+BF10=(\d+|N/A):\s+(.*)}) {
 	    my($desc, $h) = $rest =~ m{(.*)\th=(q\d[+-]?)}; # may fail to match if q is missing
 	    if ($date eq $today) {
@@ -113,7 +124,7 @@ $s->read_stream(sub {
 				   };
 	    } elsif ($bf10 =~ /^\d+$/) { # i.e. not 'N/A'
 		my $delta = abs($bf10-$current_bf10);
-		if ($delta <= 20) {
+		if ($delta <= $max_delta) {
 		    if (defined $h) {
 			push @mud_candidates, { delta => $delta,
 						date  => $date,
@@ -134,20 +145,18 @@ $s->read_stream(sub {
 	    warn "Cannot parse mud directive '$mud' in $f:$linenumber...\n";
 	}
     }
-    my $directed = $r->[Strassen::CAT] =~ /;$/ ? ';' : '';
-    print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
     if ($today_candidate) {
-	print "$r->[Strassen::NAME]; Ist-Zustand: $today_candidate->{desc}\t$today_candidate->{h}$directed @{ $r->[Strassen::COORDS] }\n";
+	return { type => 'today', text_de => "Ist-Zustand: $today_candidate->{desc}", h => $today_candidate->{h} };
     } elsif (@mud_candidates) {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
-	print "$r->[Strassen::NAME]; Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})\t$used_mud_candidate->{h}$directed @{ $r->[Strassen::COORDS] }\n";
+	return { type => 'best', text_de => "Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})", h => $used_mud_candidate->{h} };
     } elsif (@other_candidates) {
 	my($used_other_candidate) = sort { compare_q_strings($b->{h}, $a->{h}) } @other_candidates;
-	print "$r->[Strassen::NAME]; keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})\t?$directed @{ $r->[Strassen::COORDS] }\n";
+	return { type => 'other', text_de => "keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})", h => "?" };
     } else {
-	print "$r->[Strassen::NAME]; keine Prognose\t? @{ $r->[Strassen::COORDS] }\n";
+	return { type => 'none', text_de => "keine Prognose", h => "?" };
     }
-});
+}
 
 if ($outfile) {
     rename "$outfile.$$", $outfile
