@@ -33,6 +33,12 @@ the given bf10 value (soil moisture at 10cm). This can be used as a
 Currently also available as a "current mudways" layer from the
 SRTShortcuts plugin.
 
+=head2 CONSISTENCY CHECK
+
+To check how good the prognosis algorithm works try
+
+    ./miscsrc/mudways-enriched-to-handicap.pl --consistency-check
+
 =cut
 
 use strict;
@@ -56,10 +62,13 @@ my $current_bf10;
 GetOptions(
 	   "bf10=i" => \$current_bf10,
 	   "o|outfile=s" => \my $outfile,
+	   "consistency-check" => \my $do_consistency_check,
 	  )
     or usage;
-usage "Please specify --bf10 option."
-    if !defined $current_bf10;
+if (!$do_consistency_check) {
+    usage "Please specify --bf10 option."
+	if !defined $current_bf10;
+}
 
 my $today = strftime "%Y-%m-%d", localtime;
 my $max_delta = 20;
@@ -71,45 +80,83 @@ if ($outfile) {
     select $ofh;
 }
 
-print "#: line_width: 5\n";
-print "#: line_dash.?: 4,4\n";
-{
-    my %cat_colors = (
-	'q0' => '#8FBC8F',
-	'q1' => '#9ACD32',
-	'q2' => '#FFD700',
-	'q3' => '#FF0000',
-	'q4' => '#c00000',
-    );
-    for my $cat (sort keys %cat_colors) {
-	for my $tendency ('', '-', '+') {
-	    print "#: line_color.$cat$tendency: $cat_colors{$cat}\n";
+my $mudways_enriched_linenumber_offset;
+if (!$do_consistency_check) {
+    print "#: line_width: 5\n";
+    print "#: line_dash.?: 4,4\n";
+    {
+	my %cat_colors = (
+	    'q0' => '#8FBC8F',
+	    'q1' => '#9ACD32',
+	    'q2' => '#FFD700',
+	    'q3' => '#FF0000',
+	    'q4' => '#c00000',
+	);
+	for my $cat (sort keys %cat_colors) {
+	    for my $tendency ('', '-', '+') {
+		print "#: line_color.$cat$tendency: $cat_colors{$cat}\n";
+	    }
 	}
+	print "#: line_color.?: #6c0000\n";
+	print "#:\n";
     }
-    print "#: line_color.?: #6c0000\n";
-    print "#:\n";
+
+    print "# Angenommener BF10-Wert: $current_bf10\n";
+    print "# \n";
+
+    print "#: source_file: mudways\n"; # XXX Eigentlich müsste source_file in mudways_enriched.bbd reingeschrieben und hier übernommen werden
+    $mudways_enriched_linenumber_offset = 2; # XXX besser wäre es, wenn in mudways_enriched.bbd auch source_file/line abgelegt werden würde, und wenn man das übernehmen könnte
 }
-
-print "# Angenommener BF10-Wert: $current_bf10\n";
-print "# \n";
-
-print "#: source_file: mudways\n"; # XXX Eigentlich müsste source_file in mudways_enriched.bbd reingeschrieben und hier übernommen werden
-my $mudways_enriched_linenumber_offset = 2; # XXX besser wäre es, wenn in mudways_enriched.bbd auch source_file/line abgelegt werden würde, und wenn man das übernehmen könnte
 
 my $f = "/tmp/mudways_enriched.bbd";
 my $s = Strassen->new_stream($f);
-$s->read_stream(sub {
-    my($r, $dir, $linenumber) = @_;
+if (!$do_consistency_check) {
+    $s->read_stream(sub {
+        my($r, $dir, $linenumber) = @_;
 
-    my $best_mud_candidate = find_best_mud_candidate($dir->{mud}, $f, $linenumber);
-    my $h_directed = $best_mud_candidate->{h} . ($r->[Strassen::CAT] =~ /;$/ ? ';' : '');
+	my $best_mud_candidate = find_best_mud_candidate($dir->{mud}, $f, $linenumber);
+	my $h_directed = $best_mud_candidate->{h} . ($r->[Strassen::CAT] =~ /;$/ ? ';' : '');
 
-    print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
-    print "$r->[Strassen::NAME]; $best_mud_candidate->{text_de}\t$h_directed @{ $r->[Strassen::COORDS] }\n";
-});
+	print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
+	print "$r->[Strassen::NAME]; $best_mud_candidate->{text_de}\t$h_directed @{ $r->[Strassen::COORDS] }\n";
+    });
+} else {
+    $s->read_stream(sub {
+        my($r, $dir, $linenumber) = @_;
+
+	my @categorized_mud_directives = grep { /\th=q\d/ } @{ $dir->{mud} || [] };
+	if (@categorized_mud_directives >= 2) {
+	    my $count = 0;
+	    my $sum_percentage = 0;
+	    for my $i (0 .. $#categorized_mud_directives-1) {
+		my($this_current_bf10) = $categorized_mud_directives[$i+1] =~ /:\s+BF10=(\d+)/;
+		next if !defined $this_current_bf10;
+		my $best_mud_candidate = find_best_mud_candidate([@categorized_mud_directives[0..$i]], $f, $linenumber, $this_current_bf10);
+		if ($best_mud_candidate->{type} eq 'best') {
+		    my($current_h) = $categorized_mud_directives[$i+1] =~ /\th=(q\d[+-]?)/;
+		    my $prognosis_h = $best_mud_candidate->{h};
+		    my $current_h_number = q_string_to_number($current_h);
+		    my $prognosis_h_number = q_string_to_number($prognosis_h);
+		    my $delta = $prognosis_h_number-$current_h_number;
+		    my $percentage = (100 * (4+2/3-abs($delta))) / (4+2/3);
+		    print "$r->[Strassen::NAME]: $best_mud_candidate->{date}: BF10=$this_current_bf10: $best_mud_candidate->{date}: prognosis=$prognosis_h vs real=$current_h => " .
+			($delta == 0 ? "!OK!" : "DELTA=".$delta) .
+			"\n";
+		    $count++;
+		    $sum_percentage += $percentage;
+		}
+	    }
+	    if ($count) {
+		printf "=> %d%% (prognosis quality)\n", $sum_percentage/$count;
+		print "-"x70, "\n";
+	    }
+	}
+    });
+}
 
 sub find_best_mud_candidate {
-    my($mud_directives, $f, $linenumber) = @_;
+    my($mud_directives, $f, $linenumber, $used_current_bf10) = @_;
+    $used_current_bf10 //= $current_bf10;
 
     my $today_candidate;
     my @mud_candidates;
@@ -124,7 +171,7 @@ sub find_best_mud_candidate {
 				     h    => $h,
 				   };
 	    } elsif ($bf10 =~ /^\d+$/) { # i.e. not 'N/A'
-		my $delta = abs($bf10-$current_bf10);
+		my $delta = abs($bf10-$used_current_bf10);
 		if ($delta <= $max_delta) {
 		    if (defined $h) {
 			push @mud_candidates, { delta => $delta,
@@ -147,15 +194,15 @@ sub find_best_mud_candidate {
 	}
     }
     if ($today_candidate) {
-	return { type => 'today', text_de => "Ist-Zustand: $today_candidate->{desc}", h => $today_candidate->{h} };
+	return { type => 'today', text_de => "Ist-Zustand: $today_candidate->{desc}", date => $today, h => $today_candidate->{h} };
     } elsif (@mud_candidates) {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
-	return { type => 'best', text_de => "Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})", h => $used_mud_candidate->{h} };
+	return { type => 'best', text_de => "Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})", date => $used_mud_candidate->{date}, h => $used_mud_candidate->{h} };
     } elsif (@other_candidates) {
 	my($used_other_candidate) = sort { compare_q_strings($b->{h}, $a->{h}) } @other_candidates;
-	return { type => 'other', text_de => "keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})", h => "?" };
+	return { type => 'other', text_de => "keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})", date => $used_other_candidate->{date}, h => "?" };
     } else {
-	return { type => 'none', text_de => "keine Prognose", h => "?" };
+	return { type => 'none', text_de => "keine Prognose", date => undef, h => "?" };
     }
 }
 
@@ -194,6 +241,21 @@ sub compare_q_strings {
     } else {
         return 0;
     }
+}
+
+sub q_string_to_number {
+    my($str) = @_;
+
+    my $q_regex = qr/^([qQ])(\d+)([+-])?$/;
+    $str =~ $q_regex;
+    my $q = $2;
+    my $tendency = $3 // '';
+    if ($tendency eq '+') {
+	$q -= 1/3;
+    } elsif ($tendency eq '-') {
+	$q += 1/3;
+    }
+    $q;
 }
 
 __END__
