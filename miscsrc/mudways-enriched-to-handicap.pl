@@ -24,10 +24,11 @@ the given bf10 value (soil moisture at 10cm). This can be used as a
 
 =head2 TYPICAL WORKFLOW
 
-    BF10=$(~/src/bbbike-aux/misc/dwd-soil-update.pl -q | tee /dev/tty | perl -nale 'print $F[3] if /Dahlem/')
-    ~/src/bbbike-aux/misc/mudways-enrich.pl
-    ~/src/bbbike-aux/misc/mudways-enriched-to-handicap.pl --bf10=$BF10 >| /tmp/mudways_prognosis.bbd
-    ~/src/bbbike/bbbikeclient /tmp/mudways_prognosis.bbd 
+    cd ~/src/bbbike
+    BF10=$(./miscsrc/dwd-soil-update.pl -q | tee /dev/tty | perl -nale 'print $F[3] if /Dahlem/')
+    ./miscsrc/mudways-enrich.pl
+    ./miscsrc/mudways-enriched-to-handicap.pl --bf10=$BF10 >| /tmp/mudways_prognosis.bbd
+    ~/bbbikeclient /tmp/mudways_prognosis.bbd 
 
 Currently also available as a "current mudways" layer from the
 SRTShortcuts plugin.
