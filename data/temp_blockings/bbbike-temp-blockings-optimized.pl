@@ -3693,7 +3693,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="462738551" version="20"
 #: osm_watch: way id="848019125" version="6"
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-11-11 (osm)
+#: last_checked: 2023-11-29
 # REMOVED --- #: next_check: 2023-09-30
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
@@ -6760,7 +6760,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023) scheint das Schild weg zu sein
-#: last_checked: 2023-09-27
+#: last_checked: 2023-11-29
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -7162,6 +7162,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023)
 #: source_id: bvg2021:240#BVG326189_0
+#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024)
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
@@ -7173,9 +7174,9 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 ',
          'from' => 1691906400,
          'id' => 3885,
-         'text' => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 17:00',
+         'text' => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
          'type' => 'handicap',
-         'until' => 1701360000
+         'until' => 1701356400
        },
        undef,
        {
@@ -7227,7 +7228,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: XXX Sind Radfahrer noch immer betroffen?
 #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
-#: last_checked: 2023-11-27 (mapillary) vvv
+#: last_checked: 2023-11-30 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2024-01-09 vvv
 Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -7487,14 +7488,14 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023)
+         'data' => '#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 04.12.2024)
 	q4::inwork 2702,10006 2687,10053
 ',
          'from' => 1696309200,
          'id' => 3930,
-         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 29.11.2023 17:00',
+         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 04.12.2023 17:00',
          'type' => 'handicap',
-         'until' => 1701273600
+         'until' => 1701705600
        },
        {
          'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
@@ -7658,16 +7659,16 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
        },
        {
          'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
-#: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023)
+#: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
 ',
          'from' => 1697022000,
          'id' => 3948,
-         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 04.12.2023',
+         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 11.12.2023',
          'type' => 'handicap',
-         'until' => 1701705600
+         'until' => 1702310400
        },
        undef,
        {
@@ -7703,10 +7704,10 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        undef,
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
-#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
+#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023)
 #: last_checked: 2023-11-26
 #: check_frequency: 30d
-#: next_check: 2024-04-11
+#: next_check: 2023-12-04
 	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
 ',
          'from' => 1693380660,
@@ -7764,16 +7765,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'gesperrt',
          'until' => 1704063600
        },
-       {
-         'data' => '#: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023) (bis 29.11.2023)
-	q4::inwork 10103,10989 10397,10852
-',
-         'from' => 1699333200,
-         'id' => 3960,
-         'text' => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 29.11.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1701273600
-       },
+       undef,
        undef,
        undef,
        {
@@ -7971,6 +7963,29 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
          'text' => 'Schönhauser Str.: Fahrbahnarbeiten zwischen Dietzgenstr. und Nordendstr., Sperrung, evtl. sich auch Radfahrer betroffen, vom 29.11.2023 07:00 bis 15.12.2023 17:00',
          'type' => 'handicap',
          'until' => 1702656000
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist die Schillingstraße weiterhin gesperrt?
+#: XXX Evtl. Asphaltierungsarbeiten, vielleicht danach bessere Qualität?
+#: last_checked: 2023-11-30
+#: check_frequency: 14d
+	q4::inwork 11562,12597 11596,12668 11635,12745
+',
+         'from' => undef,
+         'id' => 3980,
+         'text' => 'Schillingstr.: Bauarbeiten zwischen Magazinstr. und Karl-Marx-Allee, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.392713,52.54526,27.11.2023,07:00 (nur Kfz-Verkehr, bis 06.12.2023)
+	q4::inwork 9443,15430 9574,15507 9720,15578
+',
+         'from' => 1700978400,
+         'id' => 3981,
+         'text' => 'Rügener Str.: Bauarbeten zwischen Brunnenstr. und Swinemünder Str., evtl. sind auch Radfahrer betroffen, vom 27.11.2023 07:00 bis 06.12.2023 17:00',
+         'type' => 'handicap',
+         'until' => 1701878400
        }
      
 );

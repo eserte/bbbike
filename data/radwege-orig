@@ -7847,13 +7847,13 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023) (inaktiv)
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (bis 28.08.2023) (inaktiv)
 #: source_id: viz2021:13.513289,52.46651,31.08.2023,09:31 (bis 11.04.2024) (inaktiv)
-#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024)
+#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="34"
 #: last_checked: 2023-11-26 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-04-11 vvv
+#: next_check: 2023-12-04 vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17945,6788 17962,6674
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
@@ -8643,27 +8643,12 @@ neu asphaltiert	RW2; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,1522
 	RW4; -2756,13263 -2725,13287
 # 
 # 
+#: note: Revaler Str. Richtung Westen
 niedrige Protektionselemente, Poller an der Einfahrten	RW4; 14134,11272 13970,11366
 niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13970,11366 13888,11405
-#: next_check_id: REVALER-2023
-#: by: https://www.infravelo.de/projekt/revaler-strasse/ (2.-3. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) vvv
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10192 (EwA)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11074 (unklare Situation, geplant war 2023)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1369409.php (Bauarbeiten beginnen am 27.9.2023, bis Ende November 2023, Einbahnstraßenregelung während der Bauarbeiten (offen Richtung Westen), Zebrastreifen in Höhe Simon-Dach-Str.)
-#: by: https://viz.berlin.de/2023/09/revaler-str/
-#: by: https://berliner-abendblatt.de/berlin-news/radweg-auf-revaler-strasse-einschraenkungen-fuer-autos-id233272
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
-#: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023)
-#: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
-#: last_checked: 2023-11-27 (Restarbeiten) vvv
-#: check_frequency: 2d vvv
-#: next_check: 2023-12-01 vvv
-abschnittsweise niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13888,11405 13711,11458 13588,11490
-# REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: by: ^^^
+abschnittsweise niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13888,11405 13711,11458
+abschnittsweise niedrige Protektionselemente, Poller an der Einfahrten	RW4; 13711,11458 13588,11490
+#: note: Revaler Str. Richtung Osten
 niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13588,11490 13711,11458 13888,11405 13970,11366 14134,11272
 # 
 	RW7;RW7 6182,12900 6347,12901 6449,12865 6575,12778
