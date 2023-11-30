@@ -99,12 +99,12 @@ Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 #: valid: -20240930
 Gegenverkehrsregelung	X::inwork 20302,1613
 # 
-#: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023)
-#: next_check: 2023-11-30
-#: valid: -20231130
-Am Falkenberg	X::inwork 21497,1042
+# REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv)
+# REMOVED --- #: next_check: 2023-11-30
+# REMOVED --- #: valid: -20231130
+# REMOVED --- Am Falkenberg	X::inwork 21497,1042
 # 
 #: next_check_id: SGEHRENSEE-2023
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/s-bahnhof-gehrenseestrasse-wird-grunderneuert_a391406
@@ -1728,7 +1728,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
-#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15)
+#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30)
 	X 14134,11272
 	X 11785,13625
 	X 10904,17288
@@ -3333,7 +3333,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-11-16 vvv
+#: last_checked: 2023-11-28 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

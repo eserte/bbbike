@@ -452,7 +452,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-11-16 vvv
+#: last_checked: 2023-11-28 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -531,10 +531,11 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 #: next_check_id: TRESKOWALLEE-2023
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
+#: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024)
 #: last_checked: 2023-11-26
 #: check_frequency: 90d
-#: next_check: 2024-03-16
-#: valid: -20240316
+#: next_check: 2024-02-29
+#: valid: -20240229
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 #: next_check_id: WANDLITZ-2021
@@ -866,7 +867,7 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="1089784266" version="2"
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2023-11-02
+#: last_checked: 2023-11-28 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 #: next_check: 2024-12-31
@@ -876,7 +877,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 ### Schöneberg ###
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867
-#: osm_watch: way id="1146544138" version="4"
+#: osm_watch: way id="1146544138" version="5"
 #: osm_watch: way id="1145470730" version="2"
 #: note: Länge der Engstelle etwa 40m
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
