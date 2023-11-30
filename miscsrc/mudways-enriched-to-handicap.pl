@@ -139,7 +139,7 @@ if (!$do_consistency_check) {
 		    my $prognosis_h_number = q_string_to_number($prognosis_h);
 		    my $delta = $prognosis_h_number-$current_h_number;
 		    my $percentage = (100 * (4+2/3-abs($delta))) / (4+2/3);
-		    print "$r->[Strassen::NAME]: $best_mud_candidate->{date}: BF10=$this_current_bf10: $best_mud_candidate->{date}: prognosis=$prognosis_h vs real=$current_h => " .
+		    print "$r->[Strassen::NAME]: $best_mud_candidate->{date}: BF10=$this_current_bf10: prognosis=$prognosis_h vs real=$current_h => " .
 			($delta == 0 ? "!OK!" : "DELTA=".$delta) .
 			"\n";
 		    $count++;
