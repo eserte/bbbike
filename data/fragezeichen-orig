@@ -84,7 +84,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
-#: last_checked: 2023-11-28
+#: last_checked: 2023-12-01
 #: check_frequency: 14d
 Stralauer Allee: Radspur wird markiert	?::inwork; 13865,10606 13850,10612 13779,10642 13700,10676
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
@@ -121,7 +121,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-01
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -1471,7 +1471,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegführung zu tun?) (inaktiv)
 #: source_id: 2147346379 (bis 16.10.2020; beziehen sich die Bauarbeiten auf diese Verbindung oder den Radweg auf der Prenzlauer Promenade?) (keine Bauarbeiten zu erkennen) (inaktiv)
 #: XXX war mal bei infravelo gelistet (id 9030023, URL http://www.infravelo.de/projekt/caligariplatz-2/, Bauende 3. Quartal 2023), ist aber mittlerweile (2021-02) verschwunden
-#: last_checked: 2023-11-23
+#: last_checked: 2023-11-30 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
@@ -2944,8 +2944,10 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1356359.php (21.08.2023 bis zum 04.02.2024; während der Bauarbeiten Provisorium für Fuß/Radverkehr)
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/mehr-sicherheit-fuer-kuenftige-clay-schueler_a390221
 #: by: https://www.bahninfo-forum.de/read.php?9,781016,785956#msg-785956
+#: by: https://www.bahninfo-forum.de/read.php?9,781016,786428#msg-786428 (Fahrbahn gesperrt + man sieht einen gemeinsamen Geh/Radweg)
 #: source_id: viz2021:13.5145,52.42382,21.08.2023,07:00 (bis 04.02.2024)
 #: XXX zweiter Bauabschnitt (bis 16.07.2024): Bau einer Ampel am südlichen Ende
+#: last_checked: 2023-11-30 (bahninfo-forum)
 #: next_check: 2024-02-04
 August-Froehlich-Str.: asphaltierter Zweirichtungsradweg wird gebaut	?::projected 18111,2135 18199,1811
 # 
@@ -4361,7 +4363,9 @@ Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfa
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11196 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/radverkehr-895126.php#headline_1_39 (auf der Karte sichtbar, nur zwischen Edinburger Str. und Indische Str.)
-#: last_checked: 2022-01-22
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_51_4717_4788_online.pdf (Teileinziehung zwischen Edinburger Str. und Indische Str.)
+#: last_checked: 2023-12-01 (Amtsblatt, Teileinziehung)
+#: check_frequency: 60d
 #: next_check: 2025-04-15
 Ungarnstr.: Fahrradstraße soll entstehen	?::projected 6843,16346 7056,16587 7106,16646 7177,16715 7267,16784 7394,16836 7583,16872 7666,16879
 # 
@@ -5645,7 +5649,7 @@ Bizetstr.: Ausschilderung und Vorfahrtsregelung noch nicht komplett	? 13409,1568
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (abschnittsweise Umsetzung 2021 und 2022/2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Dunckerstr. südlich Wichertstr.: Umsetzung 2022)
 #: XXX laut Tsp "später auch südlich bis zur Danziger und nördlich bis zur Wisbyer/Ostseestraße"
-#: last_checked: 2023-11-23
+#: last_checked: 2023-11-30 (mapillary)
 #: check_frequency: 120d
 Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727 11779,15813 11829,15912 11899,16037 11926,16088 12012,16250
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021)
@@ -7312,6 +7316,9 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: by: https://www.berliner-woche.de/westend/c-bauen/erste-idee-fuer-neues-quartier-stadteingang-west-vorgestellt_a373403
 #: by: https://berliner-abendblatt.de/kiez-news/charlottenburg/autobahndreieck-funkturm-zahlreiche-einwendungen-gegen-umbau-id211820
 #: by: https://www.berliner-woche.de/westend/c-bauen/oeffentliche-werkstatt-zum-stadteingang-west-am-14-august-geplant_a388849
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1391596.php (Stadteingang West)
+#: by: https://mein.berlin.de/projekte/stadteingang-west/
+#: by: https://www.berlin.de/sen/stadtentwicklung/staedtebau/stadteingang-west/
 #: next_check: 2024-03-01 vvv
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348 1723,10289 1725,10242 1742,10220
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1723,10289 1847,10323 1882,10356 1870,10406 1833,10427 1793,10424 1692,10348
@@ -7680,6 +7687,7 @@ Stralauer Platz: geschützte Radspuren	?::projected; 12497,11459 12180,11657
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/lynarstrasse-wird-fahrradstrasse_a363368
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1334392.php (Erwähnung der Fahrradstraße)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/lynarstrasse-1271236.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_51_4717_4788_online.pdf (Teileinziehung)
 #: osm_watch: way id="220647519" version="23"
 #: last_checked: 2023-11-26 (mapillary)
 #: check_frequency: 60d
@@ -8252,10 +8260,10 @@ Spandauer Str. (Falkensee): Fußgängerampel wird errichtet	?::inwork -9330,17182 
 #: by: https://viz.berlin.de/2023/09/revaler-str/
 #: by: https://berliner-abendblatt.de/berlin-news/radweg-auf-revaler-strasse-einschraenkungen-fuer-autos-id233272
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
-#: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023)
+#: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
 #: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
 #: priority: #D
-#: last_checked: 2023-11-30 vvv
+#: last_checked: 2023-12-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -9324,7 +9332,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- Gustav-Tempel-Str.: zukünftiger Fahrbahnbelag unklar, noch nicht offiziell offen, vermutlich wird noch in Richtung Westen verlängert	? 15220,10682 15205,10616 15200,10600
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
-#: last_checked: 2023-11-26 vvv
+#: last_checked: 2023-12-01 vvv
 #: check_frequency: 60d vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
 Paul-und-Paula-Promenade: existiert noch nicht	?::projected 14984,10677 15056,10625

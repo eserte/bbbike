@@ -30381,14 +30381,14 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2024-12-31 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Mitte Dezember 2023, vielleicht sogar bis 2024',
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Mitte Januar 2024, vielleicht nocht länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -30398,7 +30398,7 @@ EOF
 #: also_indoor: traffic (ex-G,H,B,W)
 #: last_checked: 2023-11-04
 #: check_frequency: 90d
-#: next_check: 2023-12-15
+#: next_check: 2024-01-19
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -31745,8 +31745,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2023-11-30 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende November 2023',
+       until => $isodate2epoch->("2023-12-22 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Dezember 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
@@ -31763,7 +31763,7 @@ EOF
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv))
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -31777,7 +31777,7 @@ EOF
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2023-11-30 vvv
+#: next_check: 2023-12-22 vvv
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -34967,7 +34967,7 @@ EOF
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/gallwitzallee-voll-gesperrt_a388570
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-101023/
 #: source_id: viz2021:13.346141,52.433697,31.07.2023,07:00 (hier: Sperrung der Gallwitzallee, bis 25.10.2023) (bis 10.10.2023) (inaktiv)
-# REMOVED (siehe radwege-orig) --- #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023) (bis 30.11.2023) (bis 01.12.2023)
+# REMOVED (siehe radwege-orig) --- #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (bis 15.11.2023) (bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: also_indoor: traffic (none)
 # REMOVED (keine Einbahnstraßenregelung, Sackgasse für Autos) --- #: last_checked: 2023-08-05 --- #: check_frequency: 90d --- #: next_check: 2023-11-30
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
@@ -39842,16 +39842,19 @@ EOF
      },
      { from  => 1689356385, # 2023-07-14 19:39
        until => undef, # $isodate2epoch->("2023-11-17 18:00:00"),
-       #text  => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte November 2023, evtl. wird verlängert',
+       #text  => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte November 2023, wahrscheinlich wird verlängert',
        text  => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; wurden nicht verlängert; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
-#: last_checked: 2023-11-23
-#: check_frequency: 30d
+#: last_checked: 2023-11-30 (mapillary) vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-11-17
-	q4::inwork 11618,16183 11680,16151 11750,16116
+	q4::inwork 11618,16183 11680,16151
+Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11680,16151 11750,16116
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1689487200, # 2023-07-16 08:00
@@ -40214,9 +40217,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
+#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
 #: source_id: bvg2021:240#BVG326189_0
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024)
-#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024)
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
@@ -41321,7 +41324,7 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
 #: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
-#: note: vom rbb gemeldet (hier: Brückenschäden)
+#: note: vom rbb gemeldet (hier: Brückenschäden) (bei rbb am 1.12.2023 entfernt)
 #: also_indoor: traffic (ex-H,B)
 #: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d
