@@ -2237,7 +2237,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-11-23
+#: last_checked: 2023-12-02
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -7751,17 +7751,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'handicap',
          'until' => 1702263600
        },
-       {
-         'data' => '	2::inwork 39264,-832 39259,574
-	2::inwork 39250,1024 39259,612
-',
-         'from' => 1701104400,
-         'id' => 3965,
-         'source_id' => '236700083',
-         'text' => 'Bahnübergang Fangschleuse: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 28.11.2023 18:00 Uhr bis 02.12.2023 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1701493200
-       },
+       undef,
        undef,
        undef,
        {
@@ -7956,6 +7946,16 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
          'text' => 'Hufelandstr.: an die Greifswalder Str. ist unterbrochen, evtl. sind auch Radfahrer betroffen, vom 30.11.2023 07:00 bis 31.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1722438000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.367632,52.522362,04.12.2023,06:00 (bis 06.12.2023)
+	q4::inwork 7873,12927 7930,12912
+',
+         'from' => 1701579600,
+         'id' => 3983,
+         'text' => 'Alt-Moabit: Sperrung zwischen Rahel-Hirsch-Str. und Katharina-Paulus-Str., evtl. sind auch Radfahrer betroffen, vom 04.12.2023 06:00 bis 06.12.2023 18:00',
+         'type' => 'handicap',
+         'until' => 1701882000
        }
      
 );

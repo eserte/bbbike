@@ -7111,7 +7111,8 @@ Niederfinow - Eberswalde: wassergebundene Decke	Q1- 38162,48400 38126,48386 3810
 Niederfinow - Eberswalde: Kopfsteinpflaster	Q2 37908,48342 37856,48337
 #: note: der Radweg ist ca. 2 Meter breit
 Niederfinow - Eberswalde: Asphalt	Q0 37856,48337 37784,48323 37565,48389 37452,48447 37411,48447 37217,48445 37141,48467 36973,48608 36813,48667 36586,48613 36539,48630 36472,48629 36364,48599 36131,48611 35959,48620
-Steinstr.: Kopfsteinpflaster	Q2 -7751,-2420 -7870,-2400 -7909,-2375
+#: historical_note: früher: Kopfsteinpflaster, Q2
+Steinstr.: Asphalt	Q0 -7751,-2420 -7870,-2400 -7909,-2375
 # REMOVED (confirmed) --- #: by: http://www.potsdam.de/cms/dokumente/10066274_974248/d4867fa9/20100628AblPdmStadt09_10.pdf --- #: XXX 2m breit, beleuchtet --- #: add_fragezeichen: ist der Verbindungsweg mittlerweile asphaltiert? --- #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf --- #: osm_watch: way id="24956654" version="9"
 (Steinstr. - Tschaikowskiweg): asphaltiert	Q0 -7996,-2293 -8024,-2468
 Tschaikowskiweg: Asphalt mit Schäden	Q1 -8024,-2468 -8018,-2585

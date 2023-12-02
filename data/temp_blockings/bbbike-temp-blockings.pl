@@ -16381,7 +16381,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-11-23
+#: last_checked: 2023-12-02
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -41178,7 +41178,7 @@ EOF
        until => 1701493200, # 2023-12-02 06:00
        text  => 'Bahnübergang Fangschleuse: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 28.11.2023 18:00 Uhr bis 02.12.2023 06:00 Uhr',
        type  => 'gesperrt',
-       source_id => '236700083',
+       source_id => '236700083', # inaktiv
        data  => <<EOF,
 	2::inwork 39264,-832 39259,574
 	2::inwork 39250,1024 39259,612
@@ -41416,6 +41416,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024)
 	q3::inwork 12228,14083 12077,14186
+EOF
+     },
+     { from  => 1701579600, # 2023-12-03 06:00
+       until => 1701882000, # 2023-12-06 18:00
+       text  => 'Alt-Moabit: Sperrung zwischen Rahel-Hirsch-Str. und Katharina-Paulus-Str., evtl. sind auch Radfahrer betroffen, vom 04.12.2023 06:00 bis 06.12.2023 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.367632,52.522362,04.12.2023,06:00 (bis 06.12.2023)
+	q4::inwork 7873,12927 7930,12912
 EOF
      },
     );
