@@ -49,6 +49,7 @@ my $show_diffs;
 my $new_file;
 my $with_notes = 1;
 my $method = 'overpass';
+my $diff_context = 0;
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
@@ -58,8 +59,9 @@ GetOptions(
 	   "new-file=s" => \$new_file,
 	   'without-notes' => sub { $with_notes = 0 },
 	   'method=s' => \$method,
+	   'diff-context=i' => \$diff_context,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file]\n";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-diff-context lines] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file]\n";
 
 if ($method !~ m{^(osm-file|api|overpass)$}) {
     die "Allowed methods are 'overpass', 'api' and 'osm-file', specified was '$method'";
@@ -341,7 +343,10 @@ sub show_diff {
 	    } else {
 		my $old_string = $last_version->serialize(1);
 		my $new_string = $this_version->serialize(1);
-		my $diff = Text::Diff::diff(\$old_string, \$new_string);
+		my $diff = Text::Diff::diff(\$old_string, \$new_string, { CONTEXT => $diff_context });
+		if ($diff_context == 0) {
+		    $diff =~ s/^\@\@ .*\n//mg;
+		}
 		warn $diff, "\n";
 		my($changeset) = $this_version->findvalue('./@changeset');
 		if ($changeset) {
