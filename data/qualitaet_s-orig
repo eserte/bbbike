@@ -132,7 +132,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-03
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -388,7 +388,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2023-11-14
+#: last_checked: 2023-12-03
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -701,7 +701,8 @@ Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 1252
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (Fahrbahnverbesserung wurde realisiert, sort-of) --- #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane" --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.626855.php (Radstreifen: Frühjahr 2018) --- #: last_checked: 2017-09-13 --- #: next_check: 2017-10-15
 # REMOVED (mittlerweile wurden schadhafte Stellen ausgebessert) --- Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1+; 11880,8955 11998,8872 12063,8826 12156,8760
-Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12494,8501
+#: historical_note: früher: Asphalt mit Schäden, Q0-
+Karl-Marx-Str.: Asphalt	Q0 12330,8636 12494,8501
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12972,7602 13100,7626
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13130,7633 13174,7644
 Richardplatz: Kopfsteinpflaster	Q2 13174,7644 13288,7653
@@ -745,7 +746,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: by: http://www.infravelo.de/projekt/windscheidstrasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile (2021-08) gelöscht)
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
-#: osm_watch: way id="4515622" version="26"
+#: osm_watch: way id="4515622" version="27"
 #: last_checked: 2023-10-11
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-31
@@ -13266,8 +13267,8 @@ Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485
 #: next_check_id: SCHLESISCHERBUSCH-2023
 #: XXX bleibt der unbefestigte Abschnitt?
 #: osm_watch: way id="993271092" version="2"
-#: last_checked: 2023-10-16
-#: check_frequency: 45d
+#: last_checked: 2023-12-03
+#: check_frequency: 60d
 (Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2+ 13128,9726 13156,9702
 # 
 Topsstr.: Kleinsteinpflaster	Q1 10883,15251 10865,15244
@@ -15271,8 +15272,8 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20210720 (Abschluss der Planung Anfang 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20220724 (BPU 2022 anvisiert, außerdem Erwähnung der Planung in der Hermann-Hesse-Str.)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
-#: osm_watch: way id="4764684" version="29"
-#: osm_watch: way id="26790073" version="18"
+#: osm_watch: way id="4764684" version="30"
+#: osm_watch: way id="26790073" version="19"
 #: last_checked: 2023-11-26 (mapillary)
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
@@ -15503,7 +15504,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.522382.php
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erwähnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
-#: osm_watch: way id="156350665" version="9"
+#: osm_watch: way id="156350665" version="10"
 #: last_checked: 2023-10-11 (mapillary)
 #: check_frequency: 180d
 Dielingsgrund: glattes Kopfsteinpflaster, etwas wellig	Q2+ 10777,605 10880,633 11083,639
@@ -32573,7 +32574,8 @@ Kreuzungsbereich asphaltiert	Q0 18735,9421
 Einmündungsbereich asphaltiert	Q0 18859,6198
 Kreuzungsbereich asphaltiert	Q0 18767,6268
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13173,8623
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 13124,8562
+#: historical_note: bis Herbst/Winter 2023: Kreuzungsbereich mit Kopfsteinpflaster	Q2
+Kreuzungsbereich asphaltiert	Q0 13124,8562
 Einmündungsbereich asphaltiert	Q0 15659,15759
 Einmündungsbereich asphaltiert	Q0- 13572,15804
 Einmündungsbereich asphaltiert	Q0 15891,16041

@@ -327,7 +327,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-12-01 vvv
+#: last_checked: 2023-12-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -392,7 +392,12 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1192214.php
 	RW7;RW7 12328,9117 12406,9076 12480,9037 12524,9012 12590,8977 12740,8862
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 12590,8977 12740,8862
-	RW1;RW1 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+	RW1;RW1 12740,8862 12881,8750 13033,8628
+#: next_check_id: WESER-2021
+#: XXX ehemalige Radwege vermutlich nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert
+#: last_checked: 2023-12-03
+	RW0;RW0 13033,8628 13124,8562 13217,8493
+	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
 Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090
 # REMOVED (hier gibt es keinen Radweg mehr) --- #: XXX ist der Radweg komplett aufgehoben? vvv--- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20131219.1210.392853.html vvv --- altes Verbundsteinpflaster	RW1;RW1 13946,7918 13919,7707
@@ -1242,7 +1247,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-12-01 vvv
+#: last_checked: 2023-12-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2880,7 +2885,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-11-20
+#: last_checked: 2023-12-03
 #: check_frequency: 90d
 #: next_check: 2023-12-15
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5927,7 +5932,13 @@ Grünbeschichtung	RW3; 5370,6486 5424,6584 5533,6753 5604,6870
 	RW6;RW6 11000,3115 11154,3246 11125,3343
 #: by: susanne von below: (eigentlich "Privatstraße", aber wahrscheinlich analog zu den anderen Straßen im Viertel):
 	RW6;RW6 3382,2216 3385,2341 3387,2473
-	RW6;RW6 5635,7660 5636,7685 5635,7718 5636,7734
+# 
+	RW7;RW7 5636,7734 5632,7821 5630,7875 5632,8024
+#: historical_note: bis November/Dezember 2023 verkehrsberuhigter Bereich
+	RW7;RW7 5635,7660 5636,7685 5635,7718 5636,7734
+	RW7;RW7 5642,7255 5641,7332 5640,7435 5636,7540 5635,7660
+	RW7;RW7 5565,7024 5624,7113 5641,7189
+# 
 #: by: Jürgen Lüthje:
 	RW6;RW6 -146,4814 -190,4878 -225,4949 -255,5059
 #: by: Carola Rückwardt:
@@ -7124,16 +7135,16 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2023-11-18 vvv
+#: last_checked: 2023-12-03 vvv
 #: check_frequency: 60d vvv
-temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
+Gelbmarkierung	RW3; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
 	RW4; 12639,8344 12689,8289 12714,8249
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2023-11-18 vvv
+#: last_checked: 2023-12-03 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7173,11 +7184,12 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-03
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2023-11-03
+#: last_checked: 2023-12-03
+#: check_frequency: 60d
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7851,6 +7863,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="34"
+#: also_indoor: traffic (H[zu wenig],G,B[zu viel],W[zu viel])
 #: last_checked: 2023-11-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-04 vvv
@@ -8081,8 +8094,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="32"
-#: osm_watch: way id="335487059" version="27"
+#: osm_watch: way id="169738742" version="33"
+#: osm_watch: way id="335487059" version="28"
 #: last_checked: 2023-11-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv

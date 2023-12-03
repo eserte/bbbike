@@ -32590,7 +32590,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="8"
+#: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2023-10-17 (daf)
 #: check_frequency: 120d
@@ -35368,7 +35368,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-03
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35376,7 +35376,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn und Radwege gesperrt, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
+       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn könnte mittlerweile für Radfahrer offen sein',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
@@ -35385,8 +35385,8 @@ EOF
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-11-18
-#: check_frequency: 21d
+#: last_checked: 2023-12-03
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
@@ -40534,7 +40534,7 @@ EOF
 #: osm_watch: way id="1207706195" version="1"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-03
 #: check_frequency: 120d
 #: next_checj: 2026-03-31
 	q4::inwork; 12407,8177 12545,8209
@@ -40570,8 +40570,8 @@ EOF
 EOF
      },
      { from  => 1694624894, # 2023-09-13 19:08
-       until => $isodate2epoch->("2023-12-01 18:00:00"), # undef, # 1698444000, # 2023-10-28 00:00
-       text  => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 01.12.2023',
+       until => undef, # $isodate2epoch->("2023-12-01 18:00:00"), # undef, # 1698444000, # 2023-10-28 00:00
+       text  => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 01.12.2023, vielleicht auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G)
@@ -40584,18 +40584,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1701608532, # undef, # XXX
        text  => 'Wildenbruchplatz: Bauarbeiten, Einbahnstraßenregelung; außerdem ist die Anbindung Finowstr. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (H,G) vvv
-#: last_checked: 2023-11-18 vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: also_indoor: traffic (H,G) vvv --- #: last_checked: 2023-12-03 (keine Bauarbeiten oder Einbahnstraßenregelung mehr gesehen) vvv
 	q4::inwork; 13314,8624 13227,8692 13138,8762
 	q3::inwork 13227,8692 13173,8623
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1694958118, # 2023-09-17 15:41
@@ -41242,7 +41238,7 @@ EOF
      },
      { from  => 1700499546, # 2023-11-20 17:59
        until => 1706716800, # 2024-01-31 17:00
-       text  => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn, bis 31.01.2024',
+       text  => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn auf etwa 40-50m Länge, bis 31.01.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.452251,52.492574,13.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
@@ -41250,12 +41246,13 @@ EOF
 #: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
-#: note: abgesperrter Bereich ist etwa 50-60m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
+#: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2023-11-20
-#: check_frequency: 14d
+#: check_frequency: 30d
 #: next_check: 2024-01-31
-	q2::inwork 13860,9861 13704,9691 13642,9624
+	q2::inwork 13860,9861 13704,9691
+# REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 EOF
      },
      { from  => 1700504750, # 2023-11-20 19:25
@@ -41324,7 +41321,6 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
 #: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
-#: note: vom rbb gemeldet (hier: Brückenschäden) (bei rbb am 1.12.2023 entfernt)
 #: also_indoor: traffic (ex-H,B)
 #: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d

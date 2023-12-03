@@ -475,32 +475,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
-	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1701471600,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 03. Dezember 2023 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1701630000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3326,34 +3301,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => 1702853999
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
-#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
-#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
-#: tempex: 1st_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1701514800,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 14,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 03. Dezember 2023, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1701626400
-       },
+       undef,
        {
          'data' => '#: tempex: 2nd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -4921,7 +4869,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="8"
+#: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2023-10-17 (daf)
 #: check_frequency: 120d
@@ -5553,7 +5501,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-03
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5571,15 +5519,15 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-11-18
-#: check_frequency: 21d
+#: last_checked: 2023-12-03
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
 zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn und Radwege gesperrt, ab 31.7.2023, Ende der Bauarbeiten unbekannt',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn könnte mittlerweile für Radfahrer offen sein',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7306,7 +7254,7 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
 #: osm_watch: way id="1207706195" version="1"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-03
 #: check_frequency: 120d
 #: next_checj: 2026-03-31
 	q4::inwork; 12407,8177 12545,8209
@@ -7319,23 +7267,22 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
        },
        undef,
        undef,
-       undef,
        {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (H,G) vvv
-#: last_checked: 2023-11-18 vvv
-	q4::inwork; 13314,8624 13227,8692 13138,8762
-	q3::inwork 13227,8692 13173,8623
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
+         'data' => '#: also_indoor: traffic (B,G)
+#: note: Endedatum per Halteverbotsschilder
+#: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
+#: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
+#: last_checked: 2023-11-19
+#: next_check: 2023-12-01
+	q4::inwork 16273,11113 16227,10991
 ',
-         'from' => undef,
-         'id' => 3916,
-         'text' => 'Wildenbruchplatz: Bauarbeiten, Einbahnstraßenregelung; außerdem ist die Anbindung Finowstr. gesperrt',
+         'from' => 1694624894,
+         'id' => 3915,
+         'text' => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, möglicherweise bis 01.12.2023, vielleicht auch länger',
          'type' => 'handicap',
          'until' => undef
        },
+       undef,
        {
          'data' => '#: note: Endedatum anhand Halteverbotsschild
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
@@ -7760,16 +7707,17 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
 #: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
-#: note: abgesperrter Bereich ist etwa 50-60m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
+#: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2023-11-20
-#: check_frequency: 14d
+#: check_frequency: 30d
 #: next_check: 2024-01-31
-	q2::inwork 13860,9861 13704,9691 13642,9624
+	q2::inwork 13860,9861 13704,9691
+# REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 ',
          'from' => 1700499546,
          'id' => 3968,
-         'text' => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn, bis 31.01.2024',
+         'text' => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn auf etwa 40-50m Länge, bis 31.01.2024',
          'type' => 'handicap',
          'until' => 1706716800
        },
@@ -7840,7 +7788,6 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
 #: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
-#: note: vom rbb gemeldet (hier: Brückenschäden) (bei rbb am 1.12.2023 entfernt)
 #: also_indoor: traffic (ex-H,B)
 #: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d
