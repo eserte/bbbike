@@ -31,10 +31,12 @@ use constant STATUS_URL => 'https://prometheus.openstreetmap.org/d/5rTT87FMk/web
 
 my $use_pager = -t STDOUT && is_in_path('less');
 my $do_blame;
+my $diff_context = 0;
 
 GetOptions(
 	   'pager!' => \$use_pager,
 	   'blame'  => \$do_blame,
+	   'diff-context=i' => \$diff_context,
 	  )
     or die "usage: $0 [--no-pager] osmobject/id\n";
 
@@ -129,7 +131,12 @@ sub history_log {
 	    $older = "/dev/null";
 	    $old_version = "0";
 	}
-	system('diff', "--label=$old_version", "--label=$new_version", '-u', $older, $newer);
+	open my $fh, '-|', 'diff', "--label=$old_version", "--label=$new_version", "--unified=$diff_context", $older, $newer
+	    or die "Error while running diff command: $!";
+	while(<$fh>) {
+	    next if /^\@\@/;
+	    print $_;
+	}
 	print "\n";
     }
 }
