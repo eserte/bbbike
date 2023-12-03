@@ -27,6 +27,8 @@ use XML::LibXML;
 
 use BBBikeUtil qw(is_in_path);
 
+use constant STATUS_URL => 'https://prometheus.openstreetmap.org/d/5rTT87FMk/web-site?orgId=1&refresh=1m&from=now-3h&to=now&viewPanel=16';
+
 my $use_pager = -t STDOUT && is_in_path('less');
 my $do_blame;
 
@@ -48,10 +50,10 @@ if ($elem =~ m{((?:way|node|relation)/\d+)}) {
 
 my $history_url = "$api_root_url/$elem/history";
 
-my $ua = LWP::UserAgent->new(keep_alive => 1);
+my $ua = LWP::UserAgent->new(keep_alive => 1, timeout => 10); # normal response times are below 10ms
 my $resp = $ua->get($history_url);
 if (!$resp->is_success) {
-    die "Failed to fetch '$history_url': " . $resp->as_string . "\n";
+    dump_failed_resp($resp);
 }
 
 my $today = localtime->strftime('%F');
@@ -200,7 +202,7 @@ sub get_changeset {
     $changeset{url} = "$api_root_url/changeset/$changeset_id";
     my $changeset_resp = $ua->get($changeset{url});
     if (!$changeset_resp->is_success) {
-	die "Failed to fetch '$changeset{url}': " . $changeset_resp->dump . "\n";
+	dump_failed_resp($changeset_resp);
     }
     my $changeset_dom = XML::LibXML->load_xml(string => $changeset_resp->decoded_content);
     my($changeset_elem) = $changeset_dom->findnodes('/osm/changeset');
@@ -221,6 +223,18 @@ sub get_changeset {
 	}
 	$cached_changeset{$changeset_id};
     }
+}
+
+sub dump_failed_resp {
+    my $resp = shift;
+    my $msg = "Failed to fetch ";
+    if ($resp->request) {
+	$msg .= "'" . $resp->request->url . "'";
+    } else {
+	$msg .= "resource";
+    }
+    $msg .= ":\n" . $resp->dump . "\n\nMore information possibly at:\n\n    " . STATUS_URL . "\n\n";
+    die $msg;
 }
 
 __END__
