@@ -994,7 +994,6 @@ if ($show_weather || $bp_obj) {
     start_weather_proc();
 }
 
-$q->delete('Dummy');
 $smallform = $q->param('smallform') || $bi->{'mobile_device'} || $is_m;
 $got_cookie = 0;
 %c = ();
@@ -6078,7 +6077,6 @@ sub draw_map {
 	print "</tr>\n";
     }
     print "</table>";
-    #print "<input type=submit name=Dummy value=\"&lt;&lt; Zur&uuml;ck\">";
     print qq{<input type=button value="&lt;&lt; } . M("Zurück") . qq{" onclick="history.back(1);">};
     print "</center>";
     footer();
