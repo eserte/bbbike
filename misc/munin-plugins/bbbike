@@ -46,7 +46,7 @@ my $reset = 0;
 my $config = {
     'ajax'   => [qw/api log street-coord crossing maptype weather location/],
     'output' => [
-        qw/print gpx-track gpx-route kml-track pdf png palmdoc googlemaps mapserv xml gpsies/
+        qw/print gpx-track gpx-route kml-track pdf png palmdoc googlemaps mapserv xml/
     ],
     'pref' => [
         qw/speed cat_np cat_N1 cat_N2 cat_H1 cat_H2 cat_N_RW cat_N_RW1
@@ -617,11 +617,6 @@ sub count_output {
         s,"GET http://.*?/,"GET /, if $frontend_proxy;
 
         next if $ignore_localrequests && localrequest($_);
-
-        # gspies.com
-        if ( /^188\.40\.84\.75 / && /Jakarta Commons-HttpClient/ ) {
-            $counter->{"gpsies"}++;
-        }
 
         elsif (m,"GET /\S+output_as=(.*?)[;&\s],) {
             $counter->{$1}++;

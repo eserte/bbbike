@@ -80,7 +80,6 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 	{
 	 bbbikedraw_pdf_module	    => undef,
 	 can_gif		    => JSON::XS::false,
-	 can_gpsies_link	    => JSON::XS::false,
 	 can_gpx		    => JSON::XS::false,
 	 can_jpeg		    => JSON::XS::false,
 	 can_kml		    => JSON::XS::false,

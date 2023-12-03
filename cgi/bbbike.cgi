@@ -84,7 +84,7 @@ use vars qw($VERSION $VERBOSE
 	    $use_module
 	    $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
 	    $can_wbmp $can_palmdoc $can_gpx $can_kml
-	    $can_google_maps $can_gpsies_link
+	    $can_google_maps
 	    $can_mapserver $mapserver_address_url
 	    $bbbikedraw_pdf_module
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
@@ -392,16 +392,6 @@ below for special mapserver variables.
 =cut
 
 $can_mapserver = 0;
-
-=item $can_gpsies_link
-
-Set this to a true value if a link to L<www.gpsies.com> should be
-created. Default: false. (Note: since 2020 the gpsies site is not
-functional anymore, so this should never be set)
-
-=cut
-
-$can_gpsies_link = 0;
 
 =back
 
@@ -5104,19 +5094,6 @@ EOF
 		if ($is_beta) {
 		    print add_qrcode_html($href, 'KML');
 		}
-		print "</td>";
-		$maybe_do_table_br->();
-	    }
-	    if ($can_gpsies_link) {
-		print "<td>";
-		my $qq2 = CGI->new($q->query_string);
-		$qq2->param('output_as', "gpx-track");
-		my $bbbike_script = $bbbike_script;
-		if ($bbbike_script =~ m{^https?://[^.]+/}) { # local hostname?
-		    $bbbike_script = $BBBike::BBBIKE_DIRECT_WWW;
-		}
-		my $href = 'http://www.gpsies.com/map.do?url=' . $bbbike_script . '?' . $qq2->query_string;
-		print qq{<a title="upload route to GPSies.com" href="$href">GPSies.com</a>};
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
