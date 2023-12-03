@@ -5529,6 +5529,7 @@ sub user_agent_info {
 }
 
 sub show_user_agent_info {
+    http_header(-type => 'text/html', @no_cache);
     print $bi->show_info('complete');
     print $bi->show_server_info;
 }
