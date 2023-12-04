@@ -99,12 +99,12 @@ Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 #: valid: -20240930
 Gegenverkehrsregelung	X::inwork 20302,1613
 # 
-# REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv)
-# REMOVED --- #: next_check: 2023-11-30
-# REMOVED --- #: valid: -20231130
-# REMOVED --- Am Falkenberg	X::inwork 21497,1042
+#: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
+#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
+#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023)
+#: next_check: 2023-12-12
+#: valid: -20231212
+Am Falkenberg	X::inwork 21497,1042
 # 
 #: next_check_id: SGEHRENSEE-2023
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/s-bahnhof-gehrenseestrasse-wird-grunderneuert_a391406
@@ -137,9 +137,10 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrbahn-der-baumschulenstrasse-wird-neu-gemacht_a400218
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
+#: note: bei rbb nur bis 29.12.2023
 #: osm_watch: way id="383023440" version="15"
 #: last_checked: 2023-11-18 (mapillary)
-#: next_check: 2023-12-31
+#: next_check: 2023-12-29
 #: valid: -20231231
 	X::inwork 16328,7005
 # 
@@ -147,7 +148,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2023-09-29
+#: last_checked: 2023-12-04
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 #: valid: -20240701
@@ -309,7 +310,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2023-11-07
+#: last_checked: 2023-12-04
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -3333,7 +3334,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2023-12-02 vvv
+#: last_checked: 2023-12-04 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3529,7 +3530,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
-#: last_checked: 2023-11-26 (daf)
+#: also_indoor: webcam https://portal1828.webcam-profi.de/ 
+#: last_checked: 2023-12-04 (webcam)
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 

@@ -2848,6 +2848,7 @@ grüne Längsstreifen	RW4; 12122,13029 12112,12861
 Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12112,12861 12064,12673
 	RW4; 12064,12673 12050,12616
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
+Gelbmarkierung	RW3; 12028,12519 12006,12464
 Radspur hinter den parkenden Autos	RW4; 12006,12464 11920,12266
 Radspur hinter den parkenden Autos	RW4; 11920,12266 11872,12185 11809,12078
 Fahrradschleuse	RW4; 11809,12078 11764,12001
@@ -7859,11 +7860,10 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023) (inaktiv)
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (bis 28.08.2023) (inaktiv)
 #: source_id: viz2021:13.513289,52.46651,31.08.2023,09:31 (bis 11.04.2024) (inaktiv)
-#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023)
+#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="34"
-#: also_indoor: traffic (H[zu wenig],G,B[zu viel],W[zu viel])
 #: last_checked: 2023-11-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-04 vvv

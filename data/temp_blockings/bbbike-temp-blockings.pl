@@ -36055,10 +36055,14 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-ende-mai-soll-der-4-bauabschnitt-fertig-sein_a378280 (bis Ende Mai 2023)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024)
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
+#: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
 #: last_checked: 2023-11-23 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-12-31 vvv
+#: next_check: 2023-12-05 vvv
+# REMOVED --- #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="3"
 #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -36725,7 +36729,7 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2023-11-18 vvv
+#: last_checked: 2023-12-03 (mapillary) vvv
 #: next_check: 2023-12-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -36763,7 +36767,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an? -> nordöstlicher Abschnitt ist fertig, prüfen! (evtl. ist jetzt der südwestliche gesperrt)
-#: last_checked: 2023-10-29
+#: last_checked: 2023-12-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
@@ -38654,13 +38658,14 @@ EOF
 EOF
      },
      { from  => 1681189200, # 2023-04-11 07:00
-       until => $isodate2epoch->("2023-12-31 23:59:59"), # 1693447200, # 2023-08-31 04:00
+       until => $isodate2epoch->("2024-04-01 23:59:59"), # 1693447200, # 2023-08-31 04:00
        dont_check_date => 1,
-       text  => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Ende 2023', # war: ... zwischen Hindemithplatz und Wielandstr. ...
+       text  => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Frühjahr 2024', # war: ... zwischen Hindemithplatz und Wielandstr. ...
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
-#: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023)
+#: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
+#: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024)
 	q3::inwork 3869,10760 4267,10724 4393,10712
 EOF
      },
@@ -40240,13 +40245,13 @@ EOF
 EOF
      },
      { from  => 1691899200, # 2023-08-13 06:00
-       until => $isodate2epoch->("2023-11-30 17:00:00"), # 1696715940, # 2023-10-07 23:59
-       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 30.11.2023 17:00',
+       until => $isodate2epoch->("2023-12-12 17:00:00"), # 1696715940, # 2023-10-07 23:59
+       text  => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 12.12.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv)
+#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
 EOF
@@ -40731,16 +40736,17 @@ EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
        until => $isodate2epoch->("2023-12-20 18:00:00"), # undef, # 1700064000, # 2023-11-15 17:00
-       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, vermutlich bis Ende Dezember 2023',
+       text  => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, voraussichtlich bis 20.12.2023',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php
-#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr)
-#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php (voraussichtlich bis Mitte Dezember 2023)
+#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr) (bis 5.12.2023)
+#: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023)
+#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023, weitere Arbeiten im Anschluss)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: osm_watch: note 3677859 4
 #: last_checked: 2023-11-16
-# REMOVED --- #: check_frequency: 14d
+#: next_check: 2023-12-20
 	q4::inwork 13598,13180 13692,13221
 EOF
      },
@@ -40912,7 +40918,7 @@ EOF
 #: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="24"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-11-15 (mapillary)
+#: last_checked: 2023-12-04
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
 EOF
@@ -41045,7 +41051,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
-#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023)
+#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
+#: also_indoor: traffic (ex-H[zu wenig],G,ex-B[zu viel],ex-W[zu viel])
+#: note: bei rbb weiterhin bis 11.04.2024, sogar beide Richtungen
 #: last_checked: 2023-11-26
 #: check_frequency: 30d
 #: next_check: 2023-12-04
@@ -41155,9 +41163,11 @@ EOF
        data  => <<EOF,
 #: by: wosch & osm & mapillary
 #: XXX Wann sind die Bauarbeiten beendet?
-#: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig
+#: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: osm_watch: way id="1151064395" version="3"
-#: last_checked: 2023-11-10 (mapillary)
+#: last_checked: 2023-12-04
+#: check_frequency: 30d
+#: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
 EOF
      },
@@ -41338,11 +41348,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-12 07:00:00"),
-       until => $isodate2epoch->("2023-12-05 17:00:00"),
-       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 05.12.2023 17:00',
+       until => $isodate2epoch->("2024-01-10 17:00:00"),
+       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 10.01.2024 17:00',
        type  => 'gesperrt', # handicap
        data  => <<EOF,
-#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023)
+#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024)
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
 EOF
@@ -41391,7 +41401,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Ist die Schillingstraße weiterhin gesperrt?
 #: XXX Evtl. Asphaltierungsarbeiten, vielleicht danach bessere Qualität?
-#: last_checked: 2023-11-30
+#: last_checked: 2023-12-04
 #: check_frequency: 14d
 	q4::inwork 11562,12597 11596,12668 11635,12745
 EOF
