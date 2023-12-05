@@ -249,6 +249,8 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/museum-der-moderne-kulturforum.123/page-3#post-14361 (bis 2026?)
 #: by: https://www.sueddeutsche.de/wirtschaft/bau-berlin-museen-im-klimakampf-stadt-als-vorbild-fuer-nachhaltigkeit-dpa.urn-newsml-dpa-com-20090101-230418-99-357346 (bis 2027?)
 #: by: https://berliner-abendblatt.de/berlin-news/roth-450-millionen-museum-als-vorbild-fuer-nachhaltigkeit-id218279
+#: by: https://www.tagesspiegel.de/berlin/grundsteinlegung-im-februar-halbe-milliarde-fur-museum-berlin-modern-einkalkuliert-10880509.html (neuer Name: "berlin modern", weiter bis 2027)
+#: by: https://berliner-abendblatt.de/berlin-news/grundstein-fuer-museum-berlin-modern-im-februar-id239006
 # REMOVED (broken) --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: by: srt
 #: XXX: temporäre Radspur
@@ -928,7 +930,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2023-11-25
+#: last_checked: 2023-12-05
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -8244,9 +8246,9 @@ Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW3;RW3 18596,4517 18434,4363 18374,4307
 	RW6;RW6 -8061,4274 -8123,4273 -8143,4244 -8064,4190 -8033,4231 -8009,4266 -8046,4292
 	RW6;RW6 -7914,4150 -8033,4231
-#: note: verkehrsberuhigter Bereich geht über die Kreuzung Alexandrinenstr./Stallschreiberstr. hinweg vvv
-	RW6;RW6 10489,11405 10623,11246 10683,11175
-	RW6;RW6 10690,11180 10736,11212 10818,11269
+#: note: Alexandrinenstr./Stallschreiberstr. vvv
+	RW6;RW6 10489,11405 10623,11246 10683,11175 10690,11167
+	RW6;RW6 10674,11170 10683,11175 10690,11180 10736,11212 10818,11269
 #: note ^^^
 	RW6;RW6 10818,11269 10826,11251 10911,11080
 	RW4; 4813,5350 4779,5358 4767,5389
@@ -8680,4 +8682,8 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13588,11490 13711,11
 # 
 #: note: Fahrradstraße im Hönower Weg ab November 2023 (mit Vorfahrtsregelung, größtenteils ohne Fahrbahnsanierung)
 	RW7;RW7 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688
+# 
+#: note: Fahrradstraße in der Stallschreiberstr. ab Dezember 2023
+#: by: osm
+	RW7;RW7 10794,10927 10824,11010 10690,11167
 # 

@@ -69,7 +69,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-11-25 vvv
+#: last_checked: 2023-12-05 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -867,7 +867,7 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="1089784266" version="2"
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2023-11-28 (mapillary)
+#: last_checked: 2023-12-01 (architektur-urbanistik)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 #: next_check: 2024-12-31
@@ -1098,7 +1098,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-12-04 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-12-05 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245
@@ -1752,7 +1752,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="8"
-#: last_checked: 2023-07-23
+#: last_checked: 2023-12-05
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
