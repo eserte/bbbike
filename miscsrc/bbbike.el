@@ -571,7 +571,12 @@
 	       (elemid (substring sel (match-beginning 2) (match-end 2)))
 	       (elemversion (substring sel (match-beginning 3) (match-end 3)))
 	       (bbbike-datadir (bbbike-datadir))
-	       (grepcmd (concat "cd " bbbike-datadir " && grep -ns '^#: osm_watch: " elemtype " id=\"" elemid "\"' *-orig temp_blockings/bbbike-temp-blockings.pl"))
+	       (fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd"))
+	       (grepcmd (concat "cd " bbbike-datadir " && grep -ns '^#: osm_watch: " elemtype " id=\"" elemid "\"' "
+				"*-orig "
+				"temp_blockings/bbbike-temp-blockings.pl"
+				(if (file-exists-p fragezeichen-lowprio) (concat " " fragezeichen-lowprio))
+				))
 	       (tempbuf "*bbbike update osm watch*"))
 	  (condition-case nil
 	      (kill-buffer tempbuf)
@@ -584,7 +589,7 @@
 		(error "Strange: can't find a grep result in " tempbuf)
 	      (let ((file (buffer-substring-no-properties (match-beginning 1) (match-end 1)))
 		    (line (string-to-int (buffer-substring-no-properties (match-beginning 2) (match-end 2)))))
-		(find-file (concat bbbike-datadir "/" file))
+		(find-file (concat (if (not (file-name-absolute-p file)) (concat bbbike-datadir "/")) file))
 		(goto-line line)
 		(if (not (search-forward-regexp "version=\"" (line-end-position)))
 		    (error "Cannot find osm watch item in file")
