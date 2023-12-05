@@ -121,6 +121,11 @@ ADDITIONAL_SOURCEID_FILES+=	$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd
 
 ADDITIONAL_FRAGEZEICHEN_FILES=	routing_helper-orig
 
+ADDITIONAL_OSMWATCH_FILES=
+.if exists($(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd)
+ADDITIONAL_OSMWATCH_FILES+=	$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd
+.endif
+
 # These have to be checked using the check-urls target
 FILES_WITH_URLS=	comments_route-orig comments_ferry-orig comments_misc-orig
 
@@ -1289,9 +1294,9 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 	${PERL} $(MISCRSRCDIR)/match_bbd_data -incatrx . -v fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 > /tmp/fragezeichen-matches.bbd
 	mv /tmp/fragezeichen-matches.bbd ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd
 
-${PERSISTENTTMPDIR}/osm_watch_list:		*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+${PERSISTENTTMPDIR}/osm_watch_list:		*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd ${ADDITIONAL_OSMWATCH_FILES}
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/bbd_to_osm_watch_list *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	${MISCSRCDIR}/bbd_to_osm_watch_list *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd ${ADDITIONAL_OSMWATCH_FILES} > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
