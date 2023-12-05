@@ -475,6 +475,20 @@
   (setq bbbike-addition-for-last-checked "")
   (bbbike-set-date-for-last-checked))
 
+(defun bbbike-set-date-for-last-checked-any ()
+  (interactive)
+  (let* ((command `("perl" "-nle"
+		    "BEGIN { binmode STDOUT, qq{:encoding(utf-8)} } /^#:\\s+last_checked:.*?\\((.*?)\\)/ and $by{$1}++; END { my $i = 0; for my $by (sort { $by{$b}<=>$by{$a} } keys %by) { last if $i++>20; print $by } }"
+		    ,@(directory-files (bbbike-datadir) t ".*-orig$")))
+	 (process-coding-system-alist (cons '("perl" utf-8 . utf-8) process-coding-system-alist))
+	 (completions (split-string
+		       (with-output-to-string
+			 (apply #'call-process (car command) nil standard-output
+				nil (cdr command)))
+		       "\n" t)))
+    (setq bbbike-addition-for-last-checked (concat " (" (completing-read "Choose last-modified appendix: " completions) ")")))
+  (bbbike-set-date-for-last-checked))
+
 (defun bbbike-update-last-checked ()
   (interactive)
   (if (not bbbike-date-for-last-checked)
