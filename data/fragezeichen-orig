@@ -80,11 +80,11 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-06
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-06
 #: check_frequency: 14d
 Stralauer Allee: Radspur wird markiert	?::inwork; 13865,10606 13850,10612 13779,10642 13700,10676
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
@@ -4712,7 +4712,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: last_checked: 2023-09-14
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 150d
-# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2023-03-29
 Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden geplant	?::projected; 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
 #: osm_watch: way id="48988573" version="16"
 #: last_checked: 2023-08-05
@@ -7189,7 +7189,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Umsetzung der Fahrradstraße 2023)
 #: by[nocache]: https://archive.is/dz81E (Tagesspiegel; allerdings wurde die Finanzierung gestoppt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11084 (Einwohnerantrag)
-#: last_checked: 2023-12-03 vvv
+#: last_checked: 2023-12-06 vvv
 #: next_check: 2024-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
@@ -7447,6 +7447,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: by: https://www.bahninfo-forum.de/read.php?9,726473,726473
 #: by: https://www.bahninfo-forum.de/read.php?9,763838,763884#msg-763884 (Bauzeit September 2023 bis Dezember 2023)
 #: by: https://www.nd-aktuell.de/artikel/1173566.strassenbahnausbau-ostkreuz-tram-in-der-endlosschleife.html (Fertigstellung 2024 oder später?)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17324.pdf
 #: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr.
 #: last_checked: 2023-11-26
 #: check_frequency: 120d
@@ -8718,12 +8719,12 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 #: by: http://thomas.krickstadt.de/s-bahn/2023-10-03-johannisthal/index.html
 #: source_id: viz2021:13.532612,52.441405,15.06.2023,07:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 28.06.2023) (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.532262,52.441543,26.10.2023,09:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 26.10.2023) (inaktiv)
-#: last_checked: 2023-10-03 (krickstadt)
+#: last_checked: 2023-12-05 (krickstadt)
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Fuß- und Radwegbrücke: in Bau	?::inwork 19162,3935 19268,4037 19245,4046 19252,4069 19300,4018 19405,4125 19428,4071 19372,4084 19366,4065 19351,4050 19335,4067
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Jt.8)
-#: last_checked: 2023-09-12
+#: last_checked: 2023-12-05 (krickstadt)
 #: check_frequency: 180d
 Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19219,4023 19667,3578
 # REMOVED (eingetragen) --- Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19667,3578 19746,3501
@@ -10338,6 +10339,7 @@ Arnimstr.: hier soll eine Grünfläche entstehen	?::projected 18472,16844 18267,17
 #: by: https://www.berliner-woche.de/heinersdorf/c-bauen/am-ortskern-sollen-etwa-500-neue-wohnungen-entstehen_a335642
 #: by: https://www.berliner-woche.de/heinersdorf/c-bauen/auf-der-frueheren-gaertnerei-wird-bald-gebaut_a337076
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1390674.php (Erwähnung)
+#: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/tram-und-u-bahnlinien-sollen-richtung-nordosten-verlaengert-werden_a401507
 #: source_id: viz2021:13.43784,52.56967,21.09.2022,10:09 (Leitungsarbeiten) (inaktiv)
 #: XXX und was wird mit dem südlichen Abschnitt der Hödurstr.?
 #: last_checked: 2023-11-11 (mapillary)

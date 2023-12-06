@@ -37,7 +37,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-06
 #: next_check: 2023-12-13
 #: valid: -20231213
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -63,7 +63,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-11-26
+#: last_checked: 2023-12-06
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -216,7 +216,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: last_checked ^^^
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2023-11-20
+#: last_checked: 2023-12-06
 #: check_frequency: 90d
 #: next_check: 2027-12-31
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -1096,9 +1096,10 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 # 
 #: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
 #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
+#: by: https://berliner-abendblatt.de/berlin-news/reinigung-des-brandenburger-tors-erfolgreich-beendet-id239186 (Gerüst wird "demnächst" abgebaut)
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-12-05 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-12-06 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245

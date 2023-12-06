@@ -31745,8 +31745,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2023-12-22 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Dezember 2023',
+       until => $isodate2epoch->("2024-01-05 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Anfang Januar 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
@@ -31763,7 +31763,7 @@ EOF
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -31777,7 +31777,7 @@ EOF
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2023-12-22 vvv
+#: next_check: 2024-01-05 vvv
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -35577,7 +35577,6 @@ EOF
        until => $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
        text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023', #
        type  => 'gesperrt',
-       source_id => 'viz2021:13.492858,52.63663,09.05.2022,11:58', # inaktiv
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
@@ -35590,6 +35589,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1682284279324360704#m
 #: by: https://nitter.net/pic/orig/media%2FF1fgjuGXsAAx82o.jpg
 #: source_id: bvg2021:150#BVG300484_0
+#: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
 #: source_id: viz2021:13.493,52.63648,26.10.2022,11:11 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024) (bis 02.06.2023) (inaktiv)
@@ -35597,9 +35597,11 @@ EOF
 #: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
-#: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023)
-# REMOVED --- #: last_checked: 2023-07-17 (mapillary, Durchfahrt möglich)
-# REMOVED --- #: next_check: 2024-01-31
+#: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
+#: also_indoor: traffic (H,G,B,W)
+#: last_checked: 2023-12-06 (indoor)
+#: check_frequency: 14d
+#: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
 #	2::inwork 16166,25767 16121,25818
 EOF
@@ -37711,7 +37713,7 @@ EOF
 #: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023)
 #: osm_watch: way id="1153732901" version="4"
 #: last_checked: 2023-10-08 (mapillary)
-#: check_frequency: 60d
+#: check_frequency: 90d
 #: next_check: 2024-06-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
@@ -37749,8 +37751,8 @@ EOF
 EOF
      },
      { from  => 1670972400, # 2022-12-14 00:00
-       until => 1704063599, # 2023-12-31 23:59
-       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, vom 15.12.2022 bis voraussichtlich Ende 2023',
+       until => $isodate2epoch->("2024-03-29 17:00:00"), # 1704063599, # 2023-12-31 23:59
+       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis Ende März 2024',
        type  => 'gesperrt',
        source_id => 'viz2021:13.315375,52.450057,04.12.2022,07:00', # hier ab 4.12.2022, mittlerweile inaktiv
        data  => <<EOF,
@@ -37759,7 +37761,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFi-jSc_XoAA7nGg.jpg
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023)
+#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024)
 #: source_id[inactive]: bvg2021:m85#BVG312983_0
 #: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
@@ -39587,7 +39589,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: BUERGER-2023
 # REMOVED --- #: also_indoor: traffic (G,B,W)
-#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024)
+#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024) (bis 31.05.2024)
+#: source_id: viz2021:13.434679,52.461938,14.08.2023,07:00 (bis 31.05.2024)
 #: source_id: bvg2021:m44#BVG326176_0
 #: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
 # REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
@@ -40771,7 +40774,7 @@ EOF
        text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 06.12.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023)
+#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv)
 	q4::inwork 2702,10006 2687,10053
 EOF
      },
@@ -41432,7 +41435,7 @@ EOF
        text  => 'Alt-Moabit: Sperrung zwischen Rahel-Hirsch-Str. und Katharina-Paulus-Str., evtl. sind auch Radfahrer betroffen, vom 04.12.2023 06:00 bis 06.12.2023 18:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.367632,52.522362,04.12.2023,06:00 (bis 06.12.2023)
+#: source_id: viz2021:13.367632,52.522362,04.12.2023,06:00 (bis 06.12.2023) (inaktiv)
 	q4::inwork 7873,12927 7930,12912
 EOF
      },
@@ -41456,6 +41459,7 @@ EOF
 #: by[nocache]: https://nitter.net/polizeiberlin/status/1731961408768573603#m
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731962651792531481#m
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1391307.php
+#: source_id: viz2021:13.378787,52.516372,07.12.2023,10:00 (bis 07.12.2023)
 Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8901,12008 8861,12125 8804,12280
 Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8804,12280 8775,12457
 Cora-Berliner-Str.	2::temp 8783,11959 8737,12098
