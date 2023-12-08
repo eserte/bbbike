@@ -4871,14 +4871,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="30"
 #: osm_watch: way id="165832806" version="34"
-#: last_checked: 2023-11-26
+#: last_checked: 2023-12-07
 #: check_frequency: 14d
 	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
 # REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Ende November 2023: Absperrungen im mittleren Abschnitt, kann außerhalb der Arbeitszeiten umfahren werden)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Straßenarbeiten gesperrt sein (Stand Anfang Dezember 2023: zurzeit keine Absperrungen im mittleren Abschnitt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5247,7 +5247,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1704042000
        },
        {
-         'data' => '#: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023)
+         'data' => '#: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv)
+#: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024)
 # REMOVED --- #: also_indoor: traffic (ex-B,G,W)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
@@ -5261,9 +5262,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1699830000,
          'id' => 3496,
-         'text' => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 bis 08.12.2023',
+         'text' => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 bis 29.03.2024',
          'type' => 'handicap',
-         'until' => 1702076399
+         'until' => 1711753199
        },
        undef,
        undef,
@@ -6220,7 +6221,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: also_indoor: traffic (W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-11-23
+#: last_checked: 2023-12-07
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -6627,9 +6628,10 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        undef,
        {
          'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
+#: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt
 #: osm_watch: way id="1197821336" version="1"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (none) vvv
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: also_indoor: traffic (B[Grabertstr]) vvv
 #: last_checked: 2023-06-12 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-10-31 vvv
@@ -6749,26 +6751,7 @@ Cyclopstr.	q4::inwork 4812,21737 4829,21714
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
-#: note: Weitere Sperrungen sind in gesperrt-orig, dort wo eindeutig nur Baustelle ist
-#: source_id: viz2021:13.472998,52.501877,24.07.2023,07:00 (Straßenbau in Höhe Ingrid-Reschke-Str., bis 25.08.2023) (bis 01.09.2023) (bis 08.09.2023) (inaktiv)
-#: XXX Wann sind die Straßen endgültig offen? vvv
-#: last_checked: 2023-11-26 vvv
-#: check_frequency: 60d vvv
-Ingrid-Reschke-Str.	2::inwork 15163,10758 15151,10699 15140,10647 15138,10638
-Ulrich-Plenzdorf-Str.	2::inwork 15151,10699 15220,10682
-Gustav-Tempel-Str.	2::inwork 15261,10738 15245,10719 15236,10684 15220,10682 15205,10616 15200,10600
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3813,
-         'text' => 'Rummelsburger Bucht: neues Wohngebiet, teilweise noch Baustelle, unter Umständen kann das Befahren/Betreten nicht möglich sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6798,7 +6781,8 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        undef,
        {
          'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: note: bei Google ist mittlerweile eine Sperrung in der abgehenden Denkstr. eingetragen
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: note 3732762 2
 #: last_checked: 2023-06-12
@@ -6816,11 +6800,11 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        undef,
        undef,
        {
-         'data' => '	2::inwork -7332,66101 -7636,65571
+         'data' => '#: source_id: LS/221-E/23/077 (bis 10.05.2024) (bis 25.08.2023) (inaktiv) (bis 10.05.2024)
+	2::inwork -7332,66101 -7636,65571
 ',
          'from' => 1687068000,
          'id' => 3824,
-         'source_id' => 'LS/221-E/23/077',
          'text' => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
          'type' => 'gesperrt',
          'until' => 1715349600
@@ -6927,7 +6911,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; wurden nicht verlängert; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
-#: last_checked: 2023-11-30 (mapillary) vvv
+#: last_checked: 2023-12-05 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-11-17
 	q4::inwork 11618,16183 11680,16151
@@ -7346,24 +7330,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'until' => 1711922399
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php (voraussichtlich bis Mitte Dezember 2023)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731915050880024610#m (neue Verkehrsführung, gilt die Einbahnstraße tatsächlich nicht für Radfahrer?)
-#: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr) (bis 5.12.2023) (inaktiv)
-#: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023)
-#: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023, weitere Arbeiten im Anschluss)
-#: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: osm_watch: note 3677859 4
-#: last_checked: 2023-11-16
-#: next_check: 2023-12-05
-	q4::inwork 13598,13180 13692,13221
-',
-         'from' => 1696309200,
-         'id' => 3928,
-         'text' => 'Ebelingstr.: Anbindung Ebertystr. gesperrt, voraussichtlich bis 20.12.2023',
-         'type' => 'handicap',
-         'until' => 1703091600
-       },
+       undef,
        undef,
        undef,
        {
@@ -7456,20 +7423,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'type' => 'gesperrt',
          'until' => 1704668399
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/strasse-wegen-baustelle-gesperrt_a397537
-#: source_id: viz2021:13.31365,52.48412,21.10.2023,07:00 (hier von Barbrücke; bis 08.12.2023)
-#: note: außerhalb der Arbeitszeiten kann die Absperrung am nördlichen Ende weggeschoben sein, aber am südlichen Ende muss man trotzdem dann Bordsteine überwinden
-#: note: Halteverbotsschilder bis 17.11.2023
-# REMOVED --- #: last_checked: 2023-10-21 --- #: next_check: 2023-11-17
-	q4::inwork 4456,8598 4456,8716
-',
-         'from' => undef,
-         'id' => 3940,
-         'text' => 'Mannheimer Str.: zwischen Wilhelmsaue und Volkspark Wilmersdorf Bauarbeiten, Fahrbahn gesperrt, vorausichtlich bis zum 08.12.2023',
-         'type' => 'handicap',
-         'until' => 1702054800
-       },
+       undef,
        {
          'data' => '	2::inwork 24027,-86688 23957,-86937 23869,-87065
 ',
@@ -7494,16 +7448,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q3::inwork 6212,4622 6100,4495
-',
-         'from' => 1679814000,
-         'id' => 3943,
-         'source_id' => 'viz2021:13.341707,52.447309,27.03.2023,09:00',
-         'text' => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 07.12.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1701964800
-       },
+       undef,
        {
          'data' => '#: next_check_id: STEGEWEG-2023
 	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
@@ -7541,15 +7486,16 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
        },
        undef,
        {
-         'data' => '#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
-#: last_checked: 2023-11-26
+         'data' => '#: also_indoor: traffic (none)
+#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
+#: last_checked: 2023-12-07
 #: check_frequency: 30d
 #: next_check: 2023-12-15
 	q2::inwork; 18037,9195 17549,9529
 ',
          'from' => 1698503309,
          'id' => 3950,
-         'text' => 'Wallensteinstr.: ab Ilsestr. etwa 70m der Fahrbahn Richtung Nordwesten gesperrt, voraussichtlich bis Mitte Dezember 2023',
+         'text' => 'Wallensteinstr.: ab Ilsestr. etwa 70m der Fahrbahn Richtung Nordwesten gesperrt, voraussichtlich bis Mitte Dezember 2023, vielleicht auch länger',
          'type' => 'handicap',
          'until' => 1702681199
        },
@@ -7571,22 +7517,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'until' => 1704063599
        },
        undef,
-       {
-         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1719374277948928304#m (bis Anfang Dezember 2023)
-#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
-#: also_indoor: traffic (ex-H[zu wenig],G,ex-B[zu viel],ex-W[zu viel])
-#: note: bei rbb weiterhin bis 11.04.2024, sogar beide Richtungen
-#: last_checked: 2023-11-26
-#: check_frequency: 30d
-#: next_check: 2023-12-04
-	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
-',
-         'from' => 1693380660,
-         'id' => 3954,
-         'text' => 'Edisonstr.: Richtung Niederschöneweide zwischen An der Wuhlheide und Siemensstr. ist die Fahrbahn gesperrt, für Radfahrer Führung über den engen Gehweg, bis 11.04.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1712847600
-       },
+       undef,
        undef,
        undef,
        {
@@ -7756,6 +7687,7 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
        },
        {
          'data' => '#: source_id: viz2021:13.300851,52.527492,22.11.2023,07:00 (bis 13.12.2023)
+#: note: bei rbb "Sperrung in Richtung Tegeler Weg" (aber die Straße führt gar nicht in diese Richtung?)
 	q4::inwork 3310,13253 3351,13411 3371,13501
 ',
          'from' => 1700546400,
@@ -7835,46 +7767,21 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 ',
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: an die Greifswalder Str. ist unterbrochen, evtl. sind auch Radfahrer betroffen, vom 30.11.2023 07:00 bis 31.07.2024 17:00',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 31.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1722438000
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.380478,52.429466,06.12.2023,07:00 (bis 15.12.2023)
+         'data' => '#: source_id: viz2021:13.380478,52.429466,06.12.2023,07:00 (bis 15.12.2023) (bis 11.12.2023)
 #: note: q3, weil nur Teilstrecke
 	q3::inwork; 8674,2627 9081,2594
 ',
          'from' => 1701756000,
          'id' => 3984,
-         'text' => 'Wilhelm-von-Siemens-Str.: Richtung Hirzerweg zwischen Baumarkt und Fritz-Werner-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 06.12.2023 07:00 bis 15.12.2023 17:00',
+         'text' => 'Wilhelm-von-Siemens-Str.: Richtung Hirzerweg zwischen Baumarkt und Fritz-Werner-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 06.12.2023 07:00 bis 11.12.2023 16:00',
          'type' => 'handicap',
-         'until' => 1702656000
-       },
-       {
-         'data' => '#: by[nocache]: https://nitter.net/polizeiberlin/status/1731961408768573603#m
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731962651792531481#m
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1391307.php
-#: source_id: viz2021:13.378787,52.516372,07.12.2023,10:00 (bis 07.12.2023)
-Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8901,12008 8861,12125 8804,12280
-Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8804,12280 8775,12457
-Cora-Berliner-Str.	2::temp 8783,11959 8737,12098
-Ebertstr.	2::temp 8577,11896 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-Pariser Platz	2::temp 8804,12280 8722,12268
-Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252
-Pariser Platz	2::temp 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
-Platz des 18. März	2::temp 8592,12252 8538,12245
-Dorotheenstr. (Mitte)	2::temp 8540,12420 8775,12457
-Scheidemannstr.	2::temp 8540,12420 8400,12417
-Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 9054,12154
-(Bremer Weg)	2::temp 8522,12239 8538,12245
-Hannah-Arendt-Str.	2::temp 8577,11896 8783,11959 8844,11984
-',
-         'from' => 1701817200,
-         'id' => 3985,
-         'text' => 'Brandenburger Tor und umgebende Straßen: Veranstaltung, mögliche Sperrungen, am 7.12.2023 von 10 bis 17 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1701964800
+         'until' => 1702306800
        }
      
 );
