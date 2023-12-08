@@ -165,7 +165,10 @@ sub highlight_words {
 	       |   Staatsbesuch(es|s)?
 	       |   Sportveranstaltung
 	       |   wegen[ ]zu[ ]hoher[ ]Verkehrsbelastung
+	       |   erhöhte[ms][ ]Verkehrsaufkommen
 	       |   wegen[ ]eines[ ]Wasserrohrbruches
+	       |   betrieblichen[ ]Gründen
+	       |   Bauarbeiten
 	       )\b}{wrap_friendly_coloring(['bold'], $1)}eigx;
     $text;
 }
