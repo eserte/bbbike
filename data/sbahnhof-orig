@@ -255,11 +255,11 @@ Grünau	SB 22166,986
 #: by: https://www.berliner-zeitung.de/mensch-metropole/mobilitaet-neue-stationsnamen-flughafen-ber-umbenennung-in-sicht-so-heissen-die-berliner-flughafenbahnhoefe-kuenftig-li.325866 (Umbenennung zum Fahrplanwechsel Dez 2023)
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20230807
 #: by: https://berliner-abendblatt.de/berlin-news/flughafenbahnhof-heisst-kuenftig-wieder-schoenefeld-id237334
-#: XXX wird in Zukunft "Schönefeld (bei Berlin)" heißen (auch der rbahnhof); außerdem wird aus "Flughafen BER Terminal 1-2" "Flughafen BER" (sbahnhof+rbahnhof)
-#: next_check: 2023-12-10
+# REMOVED --- #: XXX wird in Zukunft "Schönefeld (bei Berlin)" heißen (auch der rbahnhof); außerdem wird aus "Flughafen BER Terminal 1-2" "Flughafen BER" (sbahnhof+rbahnhof) --- #: next_check: 2023-12-10
 #: attrs bf
 #: oldname: -20201025: Flughafen Berlin-Schönefeld
-Flughafen BER - Terminal 5	SC 18079,-1507
+#: oldname: -20231210: Flughafen BER - Terminal 5
+Schönefeld	SC 18079,-1507
 #: attrs bf
 Grünbergallee	SB 20033,-559
 #: attrs bg
@@ -378,5 +378,6 @@ Julius-Leber-Brücke	SA 7534,8895
 # REMOVED (eröffnet) --- #: next_check_id: BER-20XX vvv --- #: XXX Eröffnung: Oktober 2013. Zone=SC, Siehe auch Linien. Wahrscheinlich wird auch Flughafen Berlin-Schönefeld umbenannt (vielleicht: "Flughafen Berlin Brandenburg Terminal 5" oder "Flughafen BER Terminal 5"). vvv --- #: next_check: 2020-10-31 vvv
 Waßmannsdorf	SC 14761,-4102
 #: note: "Untertitel" Willy Brandt
-Flughafen BER - Terminal 1-2	SC 17808,-4496
+#: oldname: -20231210: Flughafen BER - Terminal 1-2
+Flughafen BER	SC 17808,-4496
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^

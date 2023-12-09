@@ -28,7 +28,7 @@ Jacobsdorf (Mark)	R 75478,-6977
 Pillgram	R 78352,-6456
 Frankfurt (O)-Rosengarten	R 83465,-6250
 Frankfurt (Oder)	R 88456,-6331
-Flughafen BER - Terminal 5	RC 18055,-1466
+Schönefeld (b Berlin)	RC 18055,-1466
 Berlin-Hohenschönhausen	RB 17607,18021
 Berlin-Karow	RB 14608,23364
 Bernau	RC 22841,30263
@@ -383,13 +383,13 @@ Sarnow	R -70793,77708
 Wilmersdorf (bei Angermünde)	R 42228,79118
 Warnitz (Uckermark)	R 41026,87058
 Seehausen (Uckermark)	R 41460,91207
-Passow (Uckermark)	R 56446,83578
-Schönow (Uckermark)	R 59927,87619
-Casekow	R 63518,90843
-Petershagen (Uckermark)	R 66435,93817
-Tantow	R 72840,97178
+Passow (Uckermark)	R0 56446,83578
+Schönow (Uckermark)	RBau 59927,87619
+Casekow	RBau 63518,90843
+Petershagen (Uckermark)	RBau 66435,93817
+Tantow	RBau 72840,97178
+Szczecin Gumience	RBau 82588,111663
 Szczecin	R 86276,114076
-Szczecin Gumience	R 82588,111663
 Swinoujscie	R 66275,167900
 Nechlin	R 42224,115817
 Pasewalk	R 47854,124113
@@ -527,7 +527,7 @@ Lübs (Magdeburg)	R -88371,-44590
 Güterglück	R -84733,-47603
 Rodleben	R -68863,-57974
 #: alias: Flughafen Berlin-Brandenburg
-Flughafen BER - Terminal 1-2	RC 17817,-4514
+Flughafen BER	RC 17817,-4514
 Kienbergpark	Ropeway 23008,14090
 Bergstation Kienberg	Ropeway 22326,14474
 Gärten der Welt	Ropeway 21522,14677
