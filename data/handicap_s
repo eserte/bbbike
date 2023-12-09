@@ -37,8 +37,8 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Wandlitzstr.: in Höhe Lehndorffstr. Bauarbeiten, Sperrung der Fahrbahn	q4::inwork 18401,8636 18448,8602
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
+Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
-Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5382,9942
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
@@ -1711,7 +1711,7 @@ Wegenerstr.: ein Moabiter Kissen	q0 4495,9184 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4713,8997
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1 15249,10564 15307,10701
-Lepsiusstr.: Bordstein	q2 4913,6538 4894,6509
+Lepsiusstr.: Bordsteine, Fußgänger	q4 4913,6538 4894,6509
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
 Mirabellenblütenweg: schmale Straße	q1 11308,21550 11296,21456
 Mirabellenblütenweg: schmale Straße	q1 11249,21463 11296,21456 11397,21440
@@ -2626,7 +2626,7 @@ Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656
 Lefèvrestr.: enge Straße	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q3 7776,12586 7745,12603
 (südliches Spreeufer): Biergarten am HDKDW	q3 7745,12603 7710,12585
-Hackerstr.: schmale Straße, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
+Hackerstr.: schmale Straße, schlecht einzusehen	q0 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 (Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22196,12961 22279,12938 22308,12940 22357,12956 22419,12975 22443,12998
 Retzdorffpromenade: Fußgänger	q2 4886,6819 4985,6818

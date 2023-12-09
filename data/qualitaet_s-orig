@@ -192,7 +192,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2023-11-06
+#: last_checked: 2023-12-09
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -361,10 +361,10 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.deutsches-architekturforum.de/thread/6974-gasometer-sch%C3%B6neberg-euref-campus/?postID=752087#post752087 (Umbauarbeiten)
 #: osm_watch: way id="306702294" version="19"
 #: osm_watch: note 4003302 1
-#: last_checked: 2023-11-24 (daf) vvv
+#: last_checked: 2023-12-09 vvv
 #: check_frequency: 30d vvv
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
+#: historical_note: früher (bis Herbst/Winter 2023): mäßiges, teils schlechtes Kopfsteinpflaster, bergab waren 17 km/h möglich, Q3 bzw Q3+
+Torgauer Str.: Asphalt, letzte Deckschicht fehlt	Q1+ 7225,8219 7158,8208 7014,8165 7001,8161
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1888,7 +1888,7 @@ Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587
 Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da) (3. Quartal 2024 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
-#: osm_watch: way id="34428911" version="15" vvv
+#: osm_watch: way id="34428911" version="16" vvv
 #: XXX wird hier asphaltiert? vvv
 #: last_checked: 2023-08-18 (mapillary) vvv
 #: check_frequency: 360d vvv
@@ -2107,7 +2107,7 @@ um den Flughafen: Schotter, fester Sand	Q2+ 315,16262 258,16642 309,16740 1450,1
 Arnimplatz: Mosaikpflaster	Q1 10739,16146 10606,16319
 Bergstr. (Mitte): Kopfsteinpflaster	Q2 9797,13691 9741,13850 9725,13894 9676,14046
 Schröderstr.: Kopfsteinpflaster	Q2 9535,13801 9725,13894
-Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
+Lepsiusstr.: Kopfsteinpflaster	Q2+ 4973,6645 4940,6586 4913,6538
 #: by: Johann Eickhoff-Koberg (Nordteil, Q2) vvv
 #: corrected_by: srt (Südteil)
 #: corrected_by: Bernd Barthel (fertig) 
@@ -13002,11 +13002,10 @@ Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17633,9793 175
 Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17738,9822 17777,9649
 Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
-#: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet
-#: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv)
-#: last_checked: 2023-11-21
-#: next_check: 2023-12-01
-Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10547,9233
+# REMOVED (im westlichen Abschnitt passiert nichts) --- #: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet --- #: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv) --- #: last_checked: 2023-11-21 --- #: next_check: 2023-12-01
+Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10366,9233
+#: historical_note: bis Herbst 2023: Asphalt, einige leichte Schäden, Q0-
+Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige Querrillen, Q0-
 Südstern: Asphalt	Q0 10547,9233 10705,9234
 #: historical_note: bis August 2023 in Richtung Osten: Asphalt, einige Schäden, Q0-;
@@ -15441,7 +15440,7 @@ Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3448,3738 3570,3819 3627,3740
 Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10118,15754 10391,15800
 # 
 #: by: Sonja Wienert:
-Roennebergstr.: Asphalt	Q0 5357,6932 5533,6753
+Roennebergstr.: Asphalt	Q0 5384,6933 5383,6905 5533,6753
 # 
 #: by: Werner (p.f.): vvvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
@@ -16185,6 +16184,7 @@ Keibelstr.: Asphalt	Q0 11276,13408 11201,13289 11108,13142
 Hittorfstr.: Asphalt	Q0- 2212,4590 2290,4709
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 Hittorfstr: Kleinsteinpflaster	Q1- 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2577,4959
+#: confirmed_by: srt
 Lefèvrestr.: Asphalt	Q0 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612 2908,13656
@@ -17139,7 +17139,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="12"
-#: last_checked: 2023-08-05
+#: last_checked: 2023-12-09
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -22226,7 +22226,7 @@ Stolzingstr.: Asphalt	Q0 1468,25384 1542,25483
 #: corrected_by: srt (Kleinpflastersteine, Q2 -> ...)
 Stolzingstr.: Asphalt	Q0 1542,25483 1558,25505
 #: XXX Wird der Abschnitt zwischen Alemannenstr. und Nibelungenstr. auch asphaltiert?
-#: last_checked: 2023-06-13 (mapillary)
+#: last_checked: 2023-07-13 (mapillary)
 #: check_frequency: 180d
 #: osm_watch: way id="958504169" version="2"
 Stolzingstr.: Kleinsteinpflaster, uneben	Q2 1558,25505 1644,25620
@@ -32805,4 +32805,6 @@ Kreuzungsbereich asphaltiert	Q0- 9762,155
 Kreuzungsbereich asphaltiert	Q0- 9730,-33
 Kreuzungsbereich betoniert	Q0- 9605,-1296
 Kreuzungsbereich mit Kleinpflastersteinen	Q1 13561,2898
+Einmündungsbereich asphaltiert	Q0 4973,6645
+Einmündungsbereich mit Kopfsteinpflaster	Q2+ 4940,6586
 #: ignore ^^^

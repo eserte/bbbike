@@ -202,8 +202,7 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15639,11653 15489,11735 15413,11690
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7225,8219 7158,8208 7014,8165 7001,8161
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
+Torgauer Str.: Asphalt, letzte Deckschicht fehlt	Q1 7225,8219 7158,8208 7014,8165 7001,8161
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
 Ebersstr.: Asphalt	Q0 6792,8122 6648,8064 6559,8033
 Reichenberger Str.: Asphalt	Q0 11443,10394 11476,10357
@@ -11108,7 +11107,8 @@ Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1 17633,9898 17633,9793 1758
 Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1 17738,9922 17738,9822 17777,9649
 Mellenseestr. [Wohngebiet]: Beton	Q0 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1 19133,9087 19083,9062
-Bergmannstr.: Asphalt, einige leichte Schäden	Q0 10123,9233 10547,9233
+Bergmannstr.: Asphalt, einige leichte Schäden	Q0 10123,9233 10366,9233
+Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 Südstern: Asphalt	Q0 10547,9233 10705,9234
 Lückstr.: Asphalt	Q0; 16153,10818 16300,10753 16313,10747 16468,10695
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
@@ -12329,7 +12329,7 @@ Waldstr. (Niederschönhausen): asphaltiert, einige leichte Schäden	Q0 9788,20035 
 Robert-Rössle-Str.: Beton	Q0 16521,24864 16681,24764 16719,24734
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3448,3738 3570,3819 3627,3740
 Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10118,15754 10391,15800
-Roennebergstr.: Asphalt	Q0 5357,6932 5533,6753
+Roennebergstr.: Asphalt	Q0 5384,6933 5383,6905 5533,6753
 Stephanstr.: mäßiges Kopfsteinpflaster	Q2 6360,4504 6523,4491 6758,4476
 Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6758,4476 6826,4472
 Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4689,6122 4472,6242

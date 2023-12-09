@@ -37,7 +37,7 @@ Matthiasstr.: Sperrung im Einm¸ndungsbereich Landsberger Allee	q2::inwork 12786,
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-12-07
+#: last_checked: 2023-12-09
 #: next_check: 2023-12-13
 #: valid: -20231213
 Stralauer Allee: Radfahrer und Fuﬂg‰nger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -671,6 +671,13 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 ### Charlottenburg ###
 # 
+#: next_check_id: RANKE-2023
+#: note: L‰nge des gesperrten Bereichs etwa 20-30m
+#: also_indoor: traffic (G,B,W)
+#: last_checked: 2023-12-09
+#: check_frequency: 60d
+Rankestr.: Einm¸ndungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+# 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
@@ -692,15 +699,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^
 # REMOVED (laut kartaview grˆﬂtenteils fertiggestellt) --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: last_checked: 2022-02-27 --- #: check_frequency: 90d --- Werner-Richard-Heymann-Platz: groﬂe Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
 # REMOVED (aufgehoben) --- #: next_check_id: PARISER-2021 --- #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (inaktiv) --- #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/baustart-fuer-neues-geschaeftshaus_a290278 (bis Herbst 2022) --- #: by: http://www.infravelo.de/projekt/bundesallee/ (Erw‰hnung der Hochbauarbeiten an der Pariser Str.; Verbesserungen f¸r den Radverkehr bis 4. Quartal 2023) (bis 4. Quartal 2024) (gelˆscht) (wieder da) (gelˆscht) (wieder da) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erw‰hnung des B-Plans 4-19) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417 --- #: XXX siehe unten: anderen Eintrag wieder aktivieren --- #: also_indoor: traffic (none) --- #: also_indoor: webcam https://portal1443.webcam-profi.de/ (leider mittlerweile verpixelt) --- #: last_checked: 2023-09-29 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-10-01 --- Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
-# 
-#: next_check_id: PARISER-2021
-#: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-# REMOVED (404) --- #: also_indoor: webcam https://portal1443.webcam-profi.de/
-#: note: wobei mittlerweile die Einschr‰nkungen recht gering sind
-#: last_checked: 2023-10-29
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-10-01
-Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5382,9942
+# REMOVED (Bauarbeiten weitgehend fertig) --- #: next_check_id: PARISER-2021 --- #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html --- # REMOVED (404) --- #: also_indoor: webcam https://portal1443.webcam-profi.de/ --- #: note: wobei mittlerweile die Einschr‰nkungen recht gering sind --- #: last_checked: 2023-10-29 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-10-01 --- Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5394,9940
 # 
 ### Neukˆlln ###
 # 
@@ -1099,7 +1098,7 @@ Pariser Platz: Fuﬂg‰nger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/reinigung-des-brandenburger-tors-erfolgreich-beendet-id239186 (Ger¸st wird "demn‰chst" abgebaut)
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbˆgen kˆnnen wegen Sanierungsarbeiten gesperrt sein, aber man kann auﬂen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-12-08 (webcam, zwei-drei Torbˆgen offen)
+#: last_checked: 2023-12-09 (webcam, zwei-drei Torbˆgen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fuﬂg‰nger, Engstelle wegen eines Ger¸sts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245
@@ -3448,8 +3447,8 @@ Wegenerstr.: ein Moabiter Kissen	q0- 4495,9184 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4713,8997
 (Wittenauer Str. - Zabel-Kr¸ger-Damm): einige Fuﬂg‰nger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fuﬂg‰nger	q1+ 15249,10564 15307,10701
-#: XXX_prog BS Bordstein am Wendehammer, ansonsten vielleicht q1 f¸r Fuﬂg‰nger
-Lepsiusstr.: Bordstein	q2 4913,6538 4894,6509
+#: XXX_prog BS 2x Bordsteine, ansonsten q3 f¸r Fuﬂg‰nger
+Lepsiusstr.: Bordsteine, Fuﬂg‰nger	q4 4913,6538 4894,6509
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
 Mirabellenbl¸tenweg: schmale Straﬂe	q1 11308,21550 11296,21456
 Mirabellenbl¸tenweg: schmale Straﬂe	q1 11249,21463 11296,21456 11397,21440
@@ -4965,7 +4964,8 @@ H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Gl¸hw¸rmchenweg - Pionierstr.): einige Fuﬂg‰nger	q1 -6014,16485 -6048,16292
 Schloﬂpark Charlottenburg: Fuﬂg‰nger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 Spreeweg: eng und un¸bersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
-LefËvrestr.: enge Straﬂe	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
+#: note: Abstufung wegen des leicht kurvigen Verlaufs
+LefËvrestr.: enge Straﬂe	q1+ 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
 # XXX removed by srt: LefËvrestr.: enge Straﬂe	q1 5215,6643 5360,6642
 #: corrected_by srt: (q4 -> aber man kommt eigentlich gut vorbei) vvv
 (Paul-Lˆbe-Allee - s¸dl. Spreeufer): Biergarten am HDKDW	q3 7776,12586 7745,12603
@@ -4977,7 +4977,8 @@ LefËvrestr.: enge Straﬂe	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 52
 # REMOVED --- #: next_check_id: ROBERTVONOSTERTAG-2104 --- #: by: Michael Heckner: --- #: XXX Reitweg wird separiert --- #: next_check: 2015-09-01 --- Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 # 
 #: by: Jens Wesendrup:
-Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
+#: corrected_by: srt (q1 -> q0-)
+Hackerstr.: schmale Straﬂe, schlecht einzusehen	q0- 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 #: by: Jochen LIedtke:
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 #: by: Katrin Kroschk:
