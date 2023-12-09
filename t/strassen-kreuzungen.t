@@ -194,7 +194,7 @@ for my $kr ($kr1, $kr2) {
 
     # Bergmannstr./Südstern
     {
-	my %situation = situation_at_point_inorder($kr, qw(10123,9233 10547,9233 10564,9292));
+	my %situation = situation_at_point_inorder($kr, qw(10366,9233 10547,9233 10564,9292));
 	is($situation{action}, 'left', "Bergmannstr/Suedstern");
 	if ($kr == $kr2) {
 	    is($situation{traffic_rule}, 'bent_right_of_way', "Bergmannstr/Suedstern: bent right of way");
