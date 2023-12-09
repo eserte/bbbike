@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2017,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2017,2020,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,16 +28,17 @@ use Strassen::CoreHeavy;
 use Strassen::Combine;
 use Strassen::MultiStrassen;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $do_berlin_specialities = 1;
 my $output_format = 'Map::Tube';
 my $include_lines_file;
+my $additional_comment;
 
 sub usage (;$) {
     my $msg = shift;
     warn $msg if $msg;
-    die "usage: $0 [--output-format=Map::Tube|Map::Metro] [--include-lines=...] [--no-ubahn] [--no-sbahn]\n";
+    die "usage: $0 [--output-format=Map::Tube|Map::Metro] [--include-lines=...] [--no-ubahn] [--no-sbahn] [--additional-comment ...]\n";
 }
 
 my $do_ubahn = 1;
@@ -47,6 +48,7 @@ GetOptions(
 	   "ubahn!" => \$do_ubahn,
 	   "sbahn!" => \$do_sbahn,
 	   'include-lines=s' => \$include_lines_file,
+	   "additional-comment=s" => \$additional_comment,
 	   'v|version' => sub {
 	       print basename($0) . " $VERSION\n";
 	       exit 0;
@@ -56,6 +58,10 @@ GetOptions(
 
 $output_format =~ m{^(Map::Tube|Map::Metro)$}
     or usage("Invalid output format '$output_format'\n");
+
+if ($additional_comment =~ /\n/) {
+    die "The --addition-comment value should not have newlines.\n";
+}
 
 my $datadir = "$FindBin::RealBin/../data";
 my $s = MultiStrassen->new(
@@ -220,6 +226,9 @@ if ($output_format eq 'Map::Tube') {
 
     my $doc = XML::LibXML::Document->new('1.0', 'utf-8');
     $doc->addChild($doc->createComment('Created by ' . basename(__FILE__) . ' ' . $VERSION . ' (part of BBBike)'));
+    if ($additional_comment) {
+	$doc->addChild($doc->createComment($additional_comment));
+    }
     my $tube = $doc->createElement('tube');
     $doc->setDocumentElement($tube);
     $tube->setAttribute(name => 'Berlin Metro');
@@ -253,7 +262,11 @@ if ($output_format eq 'Map::Tube') {
     print $doc->serialize(1);
 } elsif ($output_format eq 'Map::Metro') {
     binmode STDOUT, ':utf8';
-    print '# Created by ' . basename(__FILE__) . ' ' . $VERSION . ' (part of BBBike)' . "\n\n";
+    print '# Created by ' . basename(__FILE__) . ' ' . $VERSION . ' (part of BBBike)' . "\n";
+    if ($additional_comment) {
+	print "# $additional_comment\n";
+    }
+    print "\n";
     print "--stations\n\n";
     my %seen_station;
     for my $line (sort keys %line2stations) {
