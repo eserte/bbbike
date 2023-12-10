@@ -681,6 +681,12 @@
 	 (bbbike-grep-cmd (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
 				  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
 				  " --add-file " bbbike-rootdir "/t/old_comments.t"
+				  ; XXX experimental: search also in org files (e.g. for Bebauungsplaene)
+				  (if (org-agenda-files)
+				      (concat " "
+					      (mapconcat (lambda (file) (concat "--add-file " file))
+							 (org-agenda-files)
+							 " ")))
 				  " --reldir " bbbike-datadir
 				  (if is-regexp " --rx" " --")
 				  " '" search-term "'"))
