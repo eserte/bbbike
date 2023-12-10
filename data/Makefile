@@ -1046,46 +1046,8 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 		> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 
-${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd:	\
-		.check_daily \
-		Makefile \
-		ampeln-orig \
-		fragezeichen-orig \
-		gesperrt-orig \
-		qualitaet_s-orig \
-		qualitaet_l-orig \
-		handicap_s-orig \
-		handicap_l-orig \
-		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
-		${PERSISTENTTMPDIR}/XXX-indoor.bbd \
-		${PERSISTENTTMPDIR}/XXX-outdoor.bbd
-	${ECHO_N} > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-.for i in ampeln-orig fragezeichen-orig gesperrt-orig qualitaet_s-orig qualitaet_l-orig handicap_s-orig handicap_l-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "# source: $(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	${GREPSTRASSEN} -directive last_checked~. -special nextcheck $(i) > /dev/null
-	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	${GREPSTRASSEN} -directive next_check~. -special nextcheck $(i) > /dev/null
-	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-.endfor
-	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "# source: fragezeichen-orig" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "# (without next_check/last_checked)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	${GREPSTRASSEN} -special nonextcheck fragezeichen-orig >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-.for i in indoor outdoor
-	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	echo "# source: XXX-$(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	${GREPSTRASSEN} -directive last_checked~. -special nextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd > /dev/null
-	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	${GREPSTRASSEN} -directive next_check~. -special nextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd > /dev/null
-	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-	${GREPSTRASSEN} -special nonextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~
-.endfor
-	-rm -f /tmp/nextcheck.bbd
-	mv -f ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd!
+	${PERL} doit.pl fragezeichen-nextcheck.bbd
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd .check_daily
 	-@$(WRITEABLE) $@

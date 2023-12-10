@@ -20,6 +20,7 @@ use Doit::Util qw(copy_stat);
 use File::Basename qw(dirname basename);
 use File::Compare ();
 use File::Glob qw(bsd_glob);
+use File::Spec ();
 use File::Temp qw(tempfile);
 use Getopt::Long;
 use Cwd qw(realpath cwd);
@@ -90,6 +91,22 @@ sub _commit_dest ($$) {
     $d->rename("$f~", $f);
     _make_readonly($d, $f);
 }
+
+# REPO BEGIN
+# REPO NAME slurp /home/e/eserte/src/srezic-repository 
+# REPO MD5 241415f78355f7708eabfdb66ffcf6a1
+sub slurp ($) {
+    my($file) = @_;
+    my $fh;
+    my $buf;
+    open $fh, $file
+	or die "Can't slurp file $file: $!";
+    local $/ = undef;
+    $buf = <$fh>;
+    close $fh;
+    $buf;
+}
+# REPO END
 
 sub action_files_with_tendencies {
     my $d = shift;
@@ -240,6 +257,63 @@ sub action_survey_today {
 		'>', "$dest~",
 	       );
 	_commit_dest $d, $dest;
+    }
+}
+
+sub action_fragezeichen_nextcheck_bbd {
+    my $d = shift;
+    $d->add_component('file');
+    my $dest = "$persistenttmpdir/fragezeichen-nextcheck.bbd";
+    my @srcs = (qw(ampeln-orig
+		   fragezeichen-orig
+		   gesperrt-orig
+		   qualitaet_s-orig
+		   qualitaet_l-orig
+		   handicap_s-orig
+		   handicap_l-orig
+		 ),
+		"$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
+    my @add_deps = ("$persistenttmpdir/XXX-indoor.bbd", "$persistenttmpdir/XXX-outdoor.bbd");
+    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs, @add_deps) {
+	my $processor = sub {
+	    my($ofh, $src, $with_next_last_check, $with_nonextcheck) = @_;
+	    my $relsrc = File::Spec->abs2rel($src);
+	    $ofh->print(<<"EOF");
+############################################################
+# source: $relsrc
+EOF
+	    if (!$with_next_last_check) {
+		$ofh->print(<<'EOF');
+# (without next_check/last_checked)
+EOF
+	    }
+	    if ($with_next_last_check) {
+		$d->run([@grepstrassen, '-directive', 'last_checked~.', '-special', 'nextcheck', $src], '>', '/dev/null');
+		$ofh->print(slurp('/tmp/nextcheck.bbd'));
+		$d->run([@grepstrassen, '-directive', 'next_check~.', '-special', 'nextcheck', $src], '>', '/dev/null');
+		$ofh->print(slurp('/tmp/nextcheck.bbd'));
+	    }
+	    if ($with_nonextcheck) {
+		$ofh->print($d->info_qx(@grepstrassen, '-special', 'nonextcheck', $src));
+	    }
+	};
+	$d->file_atomic_write
+	    ($dest, sub {
+		 my $ofh = shift;
+		 $ofh->print(<<'EOF');
+#: line_dash: 8, 5
+#: line_width: 5
+#:
+EOF
+		 for my $src (@srcs) {
+		     $processor->($ofh, $src, 1, 0);
+		 }
+		 $processor->($ofh, "fragezeichen-orig", 0, 1);
+		 for my $srcfrag (qw(indoor outdoor)) {
+		     $processor->($ofh, "$persistenttmpdir/XXX-$srcfrag.bbd", 1, 1);
+		 }
+	     }
+	    );
     }
 }
 
@@ -542,6 +616,7 @@ sub action_all {
     action_check_handicap_directed($d);
     action_check_connected($d);
     action_survey_today($d);
+    action_fragezeichen_nextcheck_bbd($d);
     action_fragezeichen_nextcheck_home_home_org($d);
     action_fragezeichen_nextcheck_without_osm_watch_org($d);
 }
