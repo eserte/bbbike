@@ -511,6 +511,53 @@ sub action_old_bbbike_data {
     }
 }
 
+sub action_bbbgeojsonp_index_html {
+    my $d = shift;
+    $d->add_component('file');
+
+    require Geography::Berlin_DE;
+    my($lon,$lat) = split /,/, Geography::Berlin_DE->new->center_wgs84;
+
+    my @bbbgeojsonp_targets = @ARGV;
+    die "Unexpected: no targets?" if !@bbbgeojsonp_targets;
+    $d->file_atomic_write
+	("$persistenttmpdir/bbbgeojsonp/index.html", sub {
+	     my $ofh = shift;
+	     $ofh->print("<ul>\n");
+	     for my $target (@bbbgeojsonp_targets) {
+		 my $base = basename $target;
+		 (my $label = $base) =~ s/\.bbbgeojsonp$//;
+		 $ofh->print(<<"EOF");
+ <li><a href="/cgi-bin/bbbikeleaflet.cgi?geojsonp_url=/BBBike/tmp/bbbgeojsonp/$base&zoom=12&lat=$lat&lon=$lon">$label</a>
+EOF
+	     }
+	     $ofh->print("</ul>\n");
+	     $ofh->print("Last update: " . strftime('%F %T', localtime) . "\n");
+	 });
+}
+
+sub action_geojson_index_html {
+    my $d = shift;
+    $d->add_component('file');
+
+    my @geojson_targets = @ARGV;
+    die "Unexpected: no targets?" if !@geojson_targets;
+    $d->file_atomic_write
+	("$persistenttmpdir/geojson/index.html", sub {
+	     my $ofh = shift;
+	     $ofh->print("<ul>\n");
+	     for my $target (@geojson_targets) {
+		 my $base = basename $target;
+		 (my $label = $base) =~ s/\.geojson$//;
+		 $ofh->print(<<"EOF");
+ <li><a href="$base">$label</a>
+EOF
+	     }
+	     $ofh->print("</ul>\n");
+	     $ofh->print("Last update: " . strftime('%F %T', localtime) . "\n");
+	 });
+}
+
 ######################################################################
 
 # note: not run in action_all
@@ -626,9 +673,21 @@ return 1 if caller;
 my $d = Doit->init;
 
 # special actions with own argument/option handling
-if (($ARGV[0]||'') eq 'forever_until_error') {
+my %action_with_own_opt_handling = map{($_,1)}
+    qw(
+	  forever_until_error
+	  bbbgeojsonp_index_html
+	  geojson_index_html
+     );
+if ($action_with_own_opt_handling{($ARGV[0]||'')}) {
+    (my $action = $ARGV[0]) =~ s{[-.]}{_}g;
     shift;
-    action_forever_until_error($d, @ARGV);
+    my $sub = "action_$action";
+    if (!defined &$sub) {
+	die "Action '$action' not defined";
+    }
+    no strict 'refs';
+    &$sub($d, @ARGV);
     exit 0;
 }
 
