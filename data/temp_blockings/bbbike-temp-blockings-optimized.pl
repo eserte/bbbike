@@ -7671,6 +7671,7 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727203617906843664#m (hier: Wildschutzzaun-Reparatur)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11877 (Anfrage)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
 #: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
 #: also_indoor: traffic (ex-H,B)
