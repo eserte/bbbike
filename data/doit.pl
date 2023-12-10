@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -463,6 +463,58 @@ sub action_last_checked_vs_next_check {
 
 ######################################################################
 
+sub action_forever_until_error {
+    my($d, @argv) = @_;
+
+    require Fcntl;
+    require File::Glob;
+    $d->add_component('git');
+
+    local @ARGV = @argv;
+    my $allowed_errors = 1;
+    my $forever_interval = 30;
+    GetOptions(
+	       "allowed-errors=i" => \$allowed_errors,
+	       "forever-interval=i" => \$forever_interval,
+	      )
+	or die "usage?";
+    my @cmd = @ARGV;
+
+    my $error_count = 0;
+    while() {
+	next if $d->git_current_branch() ne 'master';
+	{
+	    open my $LOCK, '>', ".check_forever.lck"
+		or die "Can't write lock file: $!";
+	    flock $LOCK, &Fcntl::LOCK_EX|&Fcntl::LOCK_NB
+		or die "Can't lock: $!";
+	    # XXX use system() once statusref is implemented
+	    $d->qx({quiet => 0, statusref => \my %status}, @cmd);
+	    exit 2 if ($status{signalnum}||0) == 2;
+	    $error_count++ if $status{exitcode};
+	    exit 1 if $error_count >= $allowed_errors;
+	}
+    } continue {
+	unlink ".check_forever.lck";
+	my $t0 = time;
+	print STDERR "wait...";
+	if ($^O eq q{linux}) {
+	    # XXX use system() once statusref is implemented
+	    $d->qx({quiet => 1, statusref => \my %status},
+		   qw(inotifywait -q -e close_write -t), $forever_interval,
+		   File::Glob::bsd_glob(q{*-orig}), q{temp_blockings/bbbike-temp-blockings.pl},
+		  );
+	    exit 2 if ($status{signalnum}||0) == 2;
+	} else {
+	    sleep $forever_interval;
+	}
+	my $t1 = time;
+	print STDERR "finished after " . ($t1-$t0) . " seconds\n";
+    }
+}
+
+######################################################################
+
 sub action_doit_update {
     my $d = shift;
     my $doitsrc  = "$ENV{HOME}/src/Doit/lib";
@@ -497,6 +549,13 @@ sub action_all {
 return 1 if caller;
 
 my $d = Doit->init;
+
+# special actions with own argument/option handling
+if (($ARGV[0]||'') eq 'forever_until_error') {
+    shift;
+    action_forever_until_error($d, @ARGV);
+    exit 0;
+}
 
 GetOptions or die "usage: $0 [--dry-run] action ...\n";
 
