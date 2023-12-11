@@ -22282,7 +22282,7 @@ EOF
        data  => <<EOF,
 	2::inwork 14187,6555 14141,6623
 # REMOVED ---	2::inwork 14141,6623 14106,6663
-# REMOVED ---	2::inwork 14106,6663 14051,6731
+# REMOVED ---	2::inwork 14106,6663 14057,6734
 EOF
      },
      { from  => undef, # 
@@ -35081,7 +35081,7 @@ EOF
      },
      { from  => 1645336800, # 2022-02-20 07:00
        until => undef, dont_check_date => 1, # $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
-       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens Ende 2023',
+       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens Ende 2023, vermutlich noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: NIEMETZ-2022
@@ -35094,14 +35094,14 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-11-04 vvv
+#: last_checked: 2023-12-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-12-31 vvv
+# REMOVED (keine baldige Fertigstellung absehbar) --- #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
 	2::inwork 13797,7267 13693,7228 13575,7200
 #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs
 	q4::inwork; 13484,7140 13575,7200 13627,7047
-#: next_check ^^^
+# REMOVED (keine baldige Fertigstellung absehbar) --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -38671,7 +38671,9 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024)
+#: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
+#: add_fragezeichen: Besteht die Baustelle noch immer?
+#: next_check: 2023-12-11
 	q3::inwork 3869,10760 4267,10724 4393,10712
 EOF
      },
@@ -39589,8 +39591,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: BUERGER-2023
 # REMOVED --- #: also_indoor: traffic (G,B,W)
+#: source_id: viz2021:13.434679,52.461938,14.08.2023,07:00 (bis 31.05.2024) (inaktiv)
 #: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024) (bis 31.05.2024)
-#: source_id: viz2021:13.434679,52.461938,14.08.2023,07:00 (bis 31.05.2024)
 #: source_id: bvg2021:m44#BVG326176_0
 #: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
 # REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
@@ -40855,14 +40857,14 @@ EOF
 EOF
      },
      { from  => 1697346000, # 2023-10-15 07:00
-       until => 1702656000, # 2023-12-15 17:00
-       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 15.12.2023 17:00',
+       until => $isodate2epoch->("2024-03-01 17:00:00"), # 1702656000, # 2023-12-15 17:00
+       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 01.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BLUMBERGER-2023
-#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="7"
+#: osm_watch: way id="1126670512" version="8"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
 #: osm_watch: way id="9030384" version="38"
@@ -40982,7 +40984,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
-#: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023)
+#: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
@@ -41178,8 +41180,8 @@ EOF
        until => 1702263600, # 2023-12-11 04:00
        text  => 'Beifußweg: Baustelle, zwischen Johannisthaler Chaussee und Fenchelweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 07:00 bis 11.12.2023 04:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.47374,52.43817,13.11.2023,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.47374,52.43817,13.11.2023,07:00 (inaktiv)
 	q4::inwork 15307,3683 15611,3448
 EOF
      },
@@ -41443,7 +41445,7 @@ EOF
        text  => 'Wilhelm-von-Siemens-Str.: Richtung Hirzerweg zwischen Baumarkt und Fritz-Werner-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 06.12.2023 07:00 bis 11.12.2023 16:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.380478,52.429466,06.12.2023,07:00 (bis 15.12.2023) (bis 11.12.2023)
+#: source_id: viz2021:13.380478,52.429466,06.12.2023,07:00 (bis 15.12.2023) (bis 11.12.2023) (inaktiv)
 #: note: q3, weil nur Teilstrecke
 	q3::inwork; 8674,2627 9081,2594
 EOF

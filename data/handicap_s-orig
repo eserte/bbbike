@@ -65,7 +65,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-12-07
+#: last_checked: 2023-12-11
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -1100,7 +1100,7 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 #: by: https://berliner-abendblatt.de/berlin-news/reinigung-des-brandenburger-tors-erfolgreich-beendet-id239186 (Gerüst wird "demnächst" abgebaut)
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-12-10 (webcam, zwei-drei Torbögen offen)
+#: last_checked: 2023-12-11 (webcam, zwei-drei Torbögen offen)
 #: check_frequency: 2d
 #: valid: -20231231
 Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245
@@ -2259,8 +2259,9 @@ Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
 (Sportallee): Fußgänger	q1 22583,1004 22376,1084
 #: XXX_prog: Bordstein am Don-Ugoletti-Platz und an der Regattastr., falls man links abbiegt
 Don-Ugoletti-Platz - Regattastr.: Fußgänger, Bordsteine	q1 22449,1569 22478,1602 22549,1644
-#: note: Fußgänger haben Vorrang
-Ede-und-Unku-Weg: Fußgänger, Radfahren erlaubt	q2 15140,11811 15122,11834 15133,11902
+#: historical_note: früher (mindestens bis Januar 2023) Grünanlagenschild, Radfahren in Schrittgeschwindigkeit erlaubt, Fußgänger haben Vorrang; h=q2
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+Ede-und-Unku-Weg: Fußgänger	q3 15140,11811 15122,11834 15133,11902
 Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Königsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
 (Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5552

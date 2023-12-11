@@ -1308,7 +1308,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3127,9522
 	X 15303,8343
 	X 15557,8077
-# REMOVED (existiert mittlerweile nicht mehr) ---	X 14051,6731
+# REMOVED (existiert mittlerweile nicht mehr) ---	X 14044,6725
 # REMOVED (existiert nun nicht mehr) --- #: XXX_prog: für Radfahrer auf dem Rad/Gehweg nicht relevant ---	X 14106,6663
 #: XXX_prog: Anforderung für Radfahrer aus "Am Oberhafen"
 	X 13712,6656
@@ -2652,7 +2652,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-11
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3492,7 +3492,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel für linksabbiegende Radfahrer, aber evtl. ist die Anforderung immer aktiv
 	X 18878,9517
 # 
-#: next_check_id: GRENZALLEE-2014 vvv
+# REMOVED --- #: next_check_id: GRENZALLEE-2014 vvv
 # REMOVED --- #: valid: 20140224-20230630 vvv
 # REMOVED --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv
 # REMOVED --- #: note: Ampel befindet sich nordwestlich der Kreuzung --- #: osm_watch: node id="9904010844" version="1" ---	F::inwork 14567,6810
@@ -3502,21 +3502,19 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 # REMOVED --- #: note: Anforderungsampel
-#: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr.
-#: last_checked: 2023-10-11 (mapillary)
-#: check_frequency: 60d
+# REMOVED --- #: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr. --- #: last_checked: 2023-10-11 (mapillary) --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-07-06
-	X::inwork 14147,6791
-#: XXX wird später möglicherweise nur eine Fußgängerampel sein? eine weitere Ampel wird an der Einmündung Autobahnausfahrt/Bergiusstr. entstehen
-#: last_checked: 2023-10-11 (mapillary)
-#: check_frequency: 60d
-	X::inwork 14051,6731
+	X 14147,6791
+# REMOVED --- #: XXX wird später möglicherweise nur eine Fußgängerampel sein? eine weitere Ampel wird an der Einmündung Autobahnausfahrt/Bergiusstr. entstehen --- #: last_checked: 2023-10-11 (mapillary) --- #: check_frequency: 60d
+#: note: Anforderungsampel
+#: note: Radfahrer Richtung Osten haben nach den rechtsabbiegenden Autos grün
+	F 14044,6725
 # REMOVED --- #: note: Anforderungsampel --- #: last_checked: 2023-04-05 ---	F::inwork 13979,6700
 # REMOVED --- #: next_check ^^^ --- #: valid ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id ^^^
 # 
 # REMOVED (permanente Ampelanlage existiert, war aber im Juli 2023 noch nicht eingeschaltet) --- #: XXX bleibt diese Ampel? --- #: last_checked: 2023-07-21 --- #: check_frequency: 60d
-	X::inwork 14141,6623
+	X 14141,6623
 # 
 # REMOVED (die westliche Ampel wurde abgebaut, die östliche möglicherweise auch) --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- # REMOVED --- #: valid: 20140224-20211231 vvv --- #: osm_watch: node id="9383783929" version="1" --- #: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt --- #: priority: #C --- #: last_checked: 2023-11-03 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-09-30 vvv ---	X0::inwork 13265,6972 --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt) --- #: osm_watch: node id="4530512037" version="4" --- #: XXX Ampel ist ausgeschaltet und wird vermutlich bald komplett entfernt --- #: priority: #C --- #: last_checked: 2023-11-03 --- #: check_frequency: 30d ---	X0::inwork 13627,7047 --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103 --- #: next_check ^^^ --- #: valid ^^^
 # 
@@ -3525,7 +3523,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-11
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3533,7 +3531,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2023-12-04 (webcam)
+#: last_checked: 2023-12-11
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 

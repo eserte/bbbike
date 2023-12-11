@@ -4052,6 +4052,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/verkehrsfuehrung_bauphase_2_phase_3.pdf (Geh/Radweg auf der südlichen Seite, Gegenverkehrsregelung vermutlich nur für Kfz-Verkehr)
 #: by: https://berliner-abendblatt.de/2022/10/19/neue-fahlenbergbruecke-wird-gesperrt/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1393957.php (Inbetriebnahme voraussichtlich im 2. Quartal 2024)
+#: by: https://berliner-abendblatt.de/berlin-news/umfangreiche-baumassnahmen-an-neuer-fahlenbergbruecke-id239562
 #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv)
 #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
 #: source_id[inactive]: bvg2021:369#BVG310116_0
@@ -4441,7 +4442,7 @@ Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2023-11-20
+#: last_checked: 2023-12-11
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4450,7 +4451,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2023-12-06
+#: last_checked: 2023-12-11
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4460,7 +4461,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2023-12-06 vvv
+#: last_checked: 2023-12-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5084,7 +5085,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/grenzallee-wird-angebunden_a294931 --- #: by: https://twitter.com/VIZ_Berlin/status/1364948097718190084 (bis Ende März 2021 für den Kfz-Verkehr gesperrt) --- #: by: https://berliner-abendblatt.de/2022/05/09/dreieck-neukoelln-keine-zufahrt-zur-grenzallee/ (ab 2022-05-11 für rund drei Monate; ändert sich für Radfahrer etwas?) --- #: by: https://viz.berlin.de/2022/05/as-grenzallee/ (ab 18.05.2022 für drei Monate) --- #: by: https://viz.berlin.de/wp-content/uploads/22-0598-A-100-Grenzallee-16.-BA-gesamt-2022-04-28-1.pdf --- #: source_id: 2147346461 (bis 31.12.2021) (inaktiv) --- #: source_id: 2147346643 (bis 31.12.2021) (inaktiv) --- #: source_id: viz2021:13.4581,52.46415,29.12.2022,09:40 (bis 30.6.2023) (später am Tag wieder entfernt -> inaktiv) --- #: source_id: viz2021:13.456584,52.465328,25.11.2020,08:00 (bis 31.12.2022) (30.6.2023) (bis 19.4.2023) (inaktiv) --- #: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 26.06.2023)
 # REMOVED (wurde für was anderes recyclet) --- #: osm_watch: way id="194653032" version="26"
 # REMOVED --- #: osm_watch: way id="1131855532" version="2"
-# REMOVED --- #: osm_watch: way id="831444833" version="12" --- #: osm_watch: way id="831444834" version="12" --- #: also_indoor: traffic (G,B) --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-26 vvv --- Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663 --- Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: osm_watch: way id="831444833" version="12" --- #: osm_watch: way id="831444834" version="12" --- #: also_indoor: traffic (G,B) --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-26 vvv --- Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14057,6734 14106,6663 --- Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da) --- #: source_id: viz2021:13.46051,52.46816,01.09.2022,12:44 (bis 30.06.2023) (inaktiv) --- #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023) (bis 6.7.2023) (inaktiv) (bis 30.8.2023) (bis 30.9.2023) (inaktiv) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2023-08-23 --- #: check_frequency: 30d --- #: next_check: 2023-09-30 --- wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
 # REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: source_id: LMS-BR_r_LMS-BR_44 --- #: last_checked: 2021-08-12 vvv --- #: check_frequency: 14d vvv

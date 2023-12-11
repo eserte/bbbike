@@ -2365,47 +2365,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
-#: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
-#: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
-# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
-#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
-	2::xmas 13416,7712 13424,7680
-	2::xmas 13416,7712 13378,7695 13288,7653
-	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
-	2::xmas 12972,7602 13100,7626 13130,7633 13174,7644
-	2::xmas 13179,7613 13174,7644
-	2::xmas 13179,7613 13295,7627
-	2::xmas 13288,7653 13295,7627
-	2::xmas 13288,7653 13174,7644
-	2::xmas 13288,7653 13278,7673 13245,7742
-#: tempex ^^^
-',
-         'from' => 1701903600,
-         'id' => 1998,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (08.12.2023 - 10.12.2023)',
-         'type' => 'gesperrt',
-         'until' => 1702249199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3229,29 +3189,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(2nd_advent,sa) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1701990000,
-         'id' => 2515,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (09.12.2023 - 10.12.2023)',
-         'type' => 'gesperrt',
-         'until' => 1702249199
-       },
+       undef,
        {
          'data' => '#: tempex: before(3rd_advent,sa) - +1d
 	2::xmas 9986,13412 10321,13259
@@ -3277,29 +3215,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       {
-         'data' => '#: tempex: 2nd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1702119600,
-         'id' => 2519,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 10. Dezember 2023, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1702231200
-       },
+       undef,
        {
          'data' => '#: tempex: 3rd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -5411,21 +5327,21 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-11-04 vvv
+#: last_checked: 2023-12-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-12-31 vvv
+# REMOVED (keine baldige Fertigstellung absehbar) --- #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
 	2::inwork 13797,7267 13693,7228 13575,7200
 #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs
 	q4::inwork; 13484,7140 13575,7200 13627,7047
-#: next_check ^^^
+# REMOVED (keine baldige Fertigstellung absehbar) --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'dont_check_date' => 1,
          'from' => 1645336800,
          'id' => 3517,
-         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens Ende 2023',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis mindestens Ende 2023, vermutlich noch länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6542,7 +6458,9 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        {
          'data' => '#: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024)
+#: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
+#: add_fragezeichen: Besteht die Baustelle noch immer?
+#: next_check: 2023-12-11
 	q3::inwork 3869,10760 4267,10724 4393,10712
 ',
          'dont_check_date' => 1,
@@ -7377,9 +7295,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        {
          'data' => '#: next_check_id: BLUMBERGER-2023
-#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023)
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="7"
+#: osm_watch: way id="1126670512" version="8"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
 #: osm_watch: way id="9030384" version="38"
@@ -7388,9 +7306,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => 1697346000,
          'id' => 3938,
-         'text' => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 15.12.2023 17:00',
+         'text' => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 01.03.2024 17:00',
          'type' => 'handicap',
-         'until' => 1702656000
+         'until' => 1709308800
        },
        {
          'data' => '#: next_check_id: BEBELPLATZXMAS-2022
@@ -7471,19 +7389,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'type' => 'gesperrt',
          'until' => 1706137200
        },
-       {
-         'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
-#: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023)
-#: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
-# REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
-Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
-',
-         'from' => 1697022000,
-         'id' => 3948,
-         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 11.12.2023',
-         'type' => 'handicap',
-         'until' => 1702310400
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (none)
@@ -7573,16 +7479,7 @@ Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 15307,3683 15611,3448
-',
-         'from' => 1699768800,
-         'id' => 3964,
-         'source_id' => 'viz2021:13.47374,52.43817,13.11.2023,07:00',
-         'text' => 'Beifußweg: Baustelle, zwischen Johannisthaler Chaussee und Fenchelweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 07:00 bis 11.12.2023 04:00',
-         'type' => 'handicap',
-         'until' => 1702263600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7771,18 +7668,6 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
          'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 31.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1722438000
-       },
-       undef,
-       {
-         'data' => '#: source_id: viz2021:13.380478,52.429466,06.12.2023,07:00 (bis 15.12.2023) (bis 11.12.2023)
-#: note: q3, weil nur Teilstrecke
-	q3::inwork; 8674,2627 9081,2594
-',
-         'from' => 1701756000,
-         'id' => 3984,
-         'text' => 'Wilhelm-von-Siemens-Str.: Richtung Hirzerweg zwischen Baumarkt und Fritz-Werner-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 06.12.2023 07:00 bis 11.12.2023 16:00',
-         'type' => 'handicap',
-         'until' => 1702306800
        }
      
 );

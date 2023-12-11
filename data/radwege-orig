@@ -329,7 +329,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-12-09 vvv
+#: last_checked: 2023-12-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1689,13 +1689,13 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
 # REMOVED --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 30d vvv
-# REMOVED ---	RW1;RW2 14051,6731 14147,6791 14153,6795
+# REMOVED ---	RW1;RW2 14057,6734 14147,6791 14153,6795
 # REMOVED ---	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
-# REMOVED --- #: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten ---	RW2;RW8 14147,6791 14051,6731 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
+# REMOVED --- #: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten ---	RW2;RW8 14147,6791 14057,6734 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: note: Grenzallee Richtung Westen
 	RW1; 14344,7003 14257,6895 14239,6875
-	RW2; 14239,6875 14153,6795 14147,6791 14051,6731 13932,6680
+	RW2; 14239,6875 14153,6795 14147,6791 14057,6734 14044,6725 13932,6680
 	RW1; 13932,6680 13882,6674 13786,6670 13712,6656 13520,6583
 	RW2; 13520,6583 13455,6559
 #: note: Radwegschild wird hier nicht wiederholt
@@ -1704,8 +1704,8 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW1; 13236,6489 13455,6559 13520,6583
 Gehwegplatten, Wurzelschäden	RW1; 13520,6583 13712,6656
 	RW1; 13712,6656 13786,6670 13882,6674 13932,6680
-	RW2; 13932,6680 14051,6731
-	RW1; 14051,6731 14147,6791 14153,6795 14239,6875 14257,6895 14344,7003
+	RW2; 13932,6680 14044,6725 14057,6734
+	RW1; 14057,6734 14147,6791 14153,6795 14239,6875 14257,6895 14344,7003
 # 
 	RW1; 12547,4391 12564,4308
 Verbundsteinpflaster	RW1; 12564,4308 12547,4391
@@ -2891,7 +2891,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023)
 #: source_id: bvg2021:m43#BVG315176_0
-#: last_checked: 2023-12-06
+#: last_checked: 2023-12-11
 #: check_frequency: 90d
 #: next_check: 2023-12-15
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4644,8 +4644,9 @@ vorhandener Radweg ist abgesperrt, sehr eng	RW0; 13566,5792 13394,5754
 	RW6;RW6 5914,12845 5938,12848
 # REMOVED (ja) --- #: XXX wie wird die Radwegführung hier sein? Offizieller Zweirichtungsradweg? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02
 # REMOVED (Radspuren existieren nun) --- gemeinsamer Geh- und Radweg	RW2;RW8 14187,6555 14141,6623 --- #: next_check_id: GRENZALLEE-2014 --- #: last_checked: 2023-06-29 --- #: check_frequency: 60d --- # REMOVED --- #: next_check_id: 2023-06-30 --- provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
-# REMOVED --- gemeinsamer Geh- und Radweg	RW2;RW8 14141,6623 14106,6663 14051,6731
-	RW4;RW3 14187,6555 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
+# REMOVED --- gemeinsamer Geh- und Radweg	RW2;RW8 14141,6623 14106,6663 14057,6734
+	RW4;RW4 14187,6555 14141,6623
+	RW4;RW3 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
 #: by: osm:
 	RW6;RW6 5782,14067 5943,14049
 # 
@@ -5983,7 +5984,7 @@ Grünbeschichtung	RW3; 5370,6486 5424,6584 5533,6753 5604,6870
 #: XXX wird auch der Abschnitt nördlich der Varziner Str. ausgeschildert?
 #: osm_watch: way id="83030876" version="24"
 #: osm_watch: way id="133988476" version="21"
-#: osm_watch: way id="1122482150" version="7"
+#: osm_watch: way id="1122482150" version="8"
 #: last_checked: 2023-12-09
 #: check_frequency: 30d
 	RW0;RW0 5630,7875 5632,8024
@@ -8398,7 +8399,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
-#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024)
+#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2023-11-04 vvv

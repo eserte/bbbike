@@ -2731,7 +2731,7 @@ Sieversufer	NN 13883,6163 13949,6192
 Woermannkehre	N 13601,6259 13732,6314
 (Britzer Hafensteg)	NN 13949,6192 13993,6221
 Ballinstr.	N 13636,6185 13601,6259 13455,6559
-Grenzallee (Neukölln, Britz)	H 13236,6489 13455,6559 13520,6583 13712,6656 13786,6670 13882,6674 13932,6680 14051,6731 14147,6791 14153,6795 14239,6875 14257,6895 14344,7003 14617,7243
+Grenzallee (Neukölln, Britz)	H 13236,6489 13455,6559 13520,6583 13712,6656 13786,6670 13882,6674 13932,6680 14044,6725 14057,6734 14147,6791 14153,6795 14239,6875 14257,6895 14344,7003 14617,7243
 Am Oberhafen (Neukölln)	N 13712,6656 13688,6739
 Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 #: note: Eröffnung 2011-09-08
@@ -4688,7 +4688,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5195&date=20230401
 #: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
 #: XXX: Bebauungsplan 3-15b
-#: osm_watch: way id="31428032" version="15"
+#: osm_watch: way id="31428032" version="16"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 11
 #: last_checked: 2023-09-02 (mapillary)
@@ -14225,8 +14225,8 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED --- #: next_check_id: GRENZALLEE-2014
 # REMOVED (Verschwenkung realisiert) --- #: XXX Verschwenkung der Bergiusstr. --- #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle --- #: XXX wahrscheinlich ist auch die alte Ampel abgeschaltet? --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html --- #: prio: #A --- #: next_check: 2013-08-23
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
-# REMOVED --- #: last_checked: 2021-03-30 --- #: check_frequency: 90d --- #: next_check: 2021-12-31 --- #: next_check: 2021-04-02 --- (Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
-# REMOVED --- #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt --- Bergiusstr.	H 14051,6731 14106,6663
+# REMOVED --- #: last_checked: 2021-03-30 --- #: check_frequency: 90d --- #: next_check: 2021-12-31 --- #: next_check: 2021-04-02 --- (Zufahrt zur Bergiusstr.)	NN 14057,6734 14106,6663
+# REMOVED --- #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt --- Bergiusstr.	H 14057,6734 14106,6663
 # REMOVED --- #: valid: 20140224-20230630 --- Bergiusstr.	H 14106,6663 14141,6623
 # REMOVED --- #: valid: !20140224-20230630 --- Bergiusstr.	N 14106,6663 14141,6623
 # REMOVED --- #: source_id: viz2021:13.457432,52.464731,19.04.2023,14:00 (bis 06.07.2023) (inaktiv) --- #: last_checked: 2023-06-29 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-07-06 vvv --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
