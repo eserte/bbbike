@@ -12897,7 +12897,8 @@ Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,121
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1+; 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q0-; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676
-Schillingstr.: Asphalt mit Querrissen	Q1+ 11635,12745 11596,12668 11562,12597
+#: historical_note: früher (bis Dezember 2023): Asphalt mit Querrissen, Q1+
+Schillingstr.: Asphalt	Q0 11635,12745 11596,12668 11562,12597
 Schillingstr.: Asphalt mit Querrissen	Q0- 11562,12597 11497,12463
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, Wurzeln	Q2- -1040,7550 -1248,7704
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, teilweise mit unebenen Asphalt befestigt	Q2 -1248,7704 -1852,8155
@@ -16294,7 +16295,7 @@ Braillestr.: Asphalt	Q0 4516,5194 4477,5250 4430,5324
 #: next_check_id: WANDLITZ-2021
 #: XXX Asphaltierungsarbeiten, möglicherweise bessere Qualität?
 #: last_checked: 2023-11-11
-#: next_check: 2023-12-19
+#: next_check: 2023-12-21
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
 Wandlitzstr.: Asphalt mit einigen Schäden	Q1+ 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
