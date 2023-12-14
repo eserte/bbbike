@@ -36046,8 +36046,8 @@ EOF
 EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
-       until => undef, # 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Paul-Oestreich-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # früher: nur bis Amalienstr.
+       until => $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich noch bis 30.04.2024', # früher: nur bis Amalienstr.
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
@@ -36064,15 +36064,18 @@ EOF
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
 #: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
-#: last_checked: 2023-11-23 vvv
+#: last_checked: 2023-12-14 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-12-05 vvv
+#: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="3"
 #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924 13870,16837 13794,16773
-	q4::inwork 13794,16773 13630,16629
+Schönstr. vor Kreuzungsbereich Amalienstr.	q2::inwork 13794,16773 13630,16629
+Amalienstr.	q3::inwork 13722,16843 13794,16773 13848,16721
+Paul-Oestreich-Str.: Einbahnstraßenregelung	q4::inwork; 13630,16629 13710,16544
+Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 13848,16721
 # REMOVED (fertig) ---	q3::inwork 13996,16959 14136,17170
 #: next_check ^^^
 #: check_frequency ^^^
@@ -36929,15 +36932,16 @@ EOF
 	q4; 9021,3878 9073,3892 9117,3898
 EOF
      },
-     { from  => $isodate2epoch->("2023-03-26 00:00:00"),
+     { from  => $isodate2epoch->("2024-03-22 00:00:00"),
        until => undef, #
        text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: url: https://nowkoelln.de/#wann
-#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
-#: next_check: 2023-12-15
+#: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
+#: XXX: Die Flohmarktsaison 2024 startet am 24. März 2024. Check before!
+#: next_check: 2024-03-01
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -37575,7 +37579,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023)
+#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
 #: also_indoor: traffic (H,B)
 #: note: Fahrbahn wird neu gemacht
 	q4::inwork 2112,26066 2207,26090 2293,26111
@@ -39630,12 +39634,10 @@ EOF
 #: source_id: viz2021:13.44859,52.55298,19.06.2023,08:00 (hier: beide Richtungen (stimmt aber nicht!), bis 17.11.2023) (mittlerweile nur eine Richtung) (inaktiv)
 #: note: die VIZ-Meldung erwähnt nur den Kfz-Verkehr, aber es sieht so aus, als ob Radfahrer hier auch betroffen sind; außerdem wird die Gäblerstr. nicht erwähnt
 #: note: Einbahnstraßenregelung in der Pistoriusstraße ist etwa 120m lang
-#: last_checked: 2023-11-23 vvv
-#: next_check: 2023-11-27 vvv
+# REMOVED --- #: last_checked: 2023-11-23 vvv --- #: next_check: 2023-11-27 vvv
 Pistoriusstr.	q4::inwork; 13331,16424 13104,16522
 Gäblerstr.	q4::inwork; 13272,16672 13315,16548 13347,16447
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1688402822, # 2023-07-03 18:47
@@ -39863,8 +39865,8 @@ EOF
 #: last_checked: 2023-12-05 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-11-17
-	q4::inwork 11618,16183 11680,16151
-Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11680,16151 11750,16116
+Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
+	q4::inwork 11680,16151 11750,16116
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -40454,11 +40456,11 @@ EOF
 EOF
      },
      { from  => 1692511200, # 2023-08-20 08:00
-       until => 1702652400, # 2023-12-15 16:00
-       text  => 'Petershagen, Bahnhofstr.: Bauarbeiten zwischen Lindenstr. und Am Bahnhof, Sperrung, evtl. sind auch Radfahrer betroffen, 21.08.2023 08:00 Uhr bis 15.12.2023 16:00 Uhr',
+       until => $isodate2epoch->("2023-12-21 17:00:00"), # 1702652400, # 2023-12-15 16:00
+       text  => 'Petershagen, Bahnhofstr.: Bauarbeiten zwischen Lindenstr. und Am Bahnhof, Sperrung, evtl. sind auch Radfahrer betroffen, 21.08.2023 08:00 Uhr bis 21.12.2023 17:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/221-F/23/118',
        data  => <<EOF,
+#: source_id: LS/221-F/23/118 (bis 15.12.2023) (bis 21.12.2023)
 	2::inwork 34913,13893 35382,13974
 EOF
      },
@@ -40926,6 +40928,7 @@ EOF
 #: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="25"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: also_indoor: traffic (G,B,W)
 #: last_checked: 2023-12-12
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
@@ -41171,8 +41174,9 @@ EOF
 #: by: wosch & osm & mapillary
 #: XXX Wann sind die Bauarbeiten beendet?
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
+#: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
 #: osm_watch: way id="1151064395" version="4"
-#: last_checked: 2023-12-04
+#: last_checked: 2023-12-14
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
@@ -41339,7 +41343,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11877 (Anfrage)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
 #: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
-#: also_indoor: traffic (ex-H,B)
+#: also_indoor: traffic (ex-H,B,G)
 #: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d
 #: next_check: 2023-12-15
@@ -41488,6 +41492,7 @@ EOF
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10056 (Antrag: größerer Tuchollaplatz)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1387776.php (voraussichtlich ab Dezember 2023)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_50_4641_4716_online.pdf (Teileinziehung, Barriere unter der Bahnbrücke)
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/sperrung-der-stadthausstrasse-fuer-ende-dezember-angekuendigt_a402025
 #: osm_watch: way id="198595363" version="13"
 #: osm_watch: way id="1230681052" version="1"
 #: last_checked: 2023-12-13

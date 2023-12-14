@@ -5586,15 +5586,18 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
 #: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
-#: last_checked: 2023-11-23 vvv
+#: last_checked: 2023-12-14 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2023-12-05 vvv
+#: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="1043813287" version="3"
 #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924 13870,16837 13794,16773
-	q4::inwork 13794,16773 13630,16629
+Schönstr. vor Kreuzungsbereich Amalienstr.	q2::inwork 13794,16773 13630,16629
+Amalienstr.	q3::inwork 13722,16843 13794,16773 13848,16721
+Paul-Oestreich-Str.: Einbahnstraßenregelung	q4::inwork; 13630,16629 13710,16544
+Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 13848,16721
 # REMOVED (fertig) ---	q3::inwork 13996,16959 14136,17170
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5603,9 +5606,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1656799200,
          'id' => 3579,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Paul-Oestreich-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich noch bis 30.04.2024',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1714489200
        },
        undef,
        undef,
@@ -5818,11 +5821,12 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
        },
        {
          'data' => '#: url: https://nowkoelln.de/#wann
-#: XXX Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
-#: next_check: 2023-12-15
+#: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
+#: XXX: Die Flohmarktsaison 2024 startet am 24. März 2024. Check before!
+#: next_check: 2024-03-01
 	q4::temp:clock 12412,9610 12250,9691
 ',
-         'from' => 1679785200,
+         'from' => 1711062000,
          'id' => 3640,
          'recurring' => 1,
          'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
@@ -5986,26 +5990,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SCHOENFLIESSER-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
-#: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
-#: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
-#: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
-#: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023)
-#: also_indoor: traffic (H,B)
-#: note: Fahrbahn wird neu gemacht
-	q4::inwork 2112,26066 2207,26090 2293,26111
-#: note: Vorbereitungen für Neubau der Fahrbahn
-	q3::inwork 2293,26111 2402,26121
-',
-         'from' => 1668540097,
-         'id' => 3683,
-         'text' => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., voraussichtlich bis Mitte Dezember 2023',
-         'type' => 'handicap',
-         'until' => 1702569600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6832,8 +6817,8 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 #: last_checked: 2023-12-05 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-11-17
-	q4::inwork 11618,16183 11680,16151
-Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11680,16151 11750,16116
+Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
+	q4::inwork 11680,16151 11750,16116
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -7077,14 +7062,14 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
          'until' => 1725112800
        },
        {
-         'data' => '	2::inwork 34913,13893 35382,13974
+         'data' => '#: source_id: LS/221-F/23/118 (bis 15.12.2023) (bis 21.12.2023)
+	2::inwork 34913,13893 35382,13974
 ',
          'from' => 1692511200,
          'id' => 3903,
-         'source_id' => 'LS/221-F/23/118',
-         'text' => 'Petershagen, Bahnhofstr.: Bauarbeiten zwischen Lindenstr. und Am Bahnhof, Sperrung, evtl. sind auch Radfahrer betroffen, 21.08.2023 08:00 Uhr bis 15.12.2023 16:00 Uhr',
+         'text' => 'Petershagen, Bahnhofstr.: Bauarbeiten zwischen Lindenstr. und Am Bahnhof, Sperrung, evtl. sind auch Radfahrer betroffen, 21.08.2023 08:00 Uhr bis 21.12.2023 17:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1702652400
+         'until' => 1703174400
        },
        undef,
        {
@@ -7367,6 +7352,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'data' => '#: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="25"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: also_indoor: traffic (G,B,W)
 #: last_checked: 2023-12-12
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
@@ -7478,8 +7464,9 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'data' => '#: by: wosch & osm & mapillary
 #: XXX Wann sind die Bauarbeiten beendet?
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
+#: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
 #: osm_watch: way id="1151064395" version="4"
-#: last_checked: 2023-12-04
+#: last_checked: 2023-12-14
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
@@ -7582,7 +7569,7 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11877 (Anfrage)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
 #: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
-#: also_indoor: traffic (ex-H,B)
+#: also_indoor: traffic (ex-H,B,G)
 #: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d
 #: next_check: 2023-12-15
@@ -7670,6 +7657,7 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10056 (Antrag: größerer Tuchollaplatz)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1387776.php (voraussichtlich ab Dezember 2023)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_50_4641_4716_online.pdf (Teileinziehung, Barriere unter der Bahnbrücke)
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/sperrung-der-stadthausstrasse-fuer-ende-dezember-angekuendigt_a402025
 #: osm_watch: way id="198595363" version="13"
 #: osm_watch: way id="1230681052" version="1"
 #: last_checked: 2023-12-13
