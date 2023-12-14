@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.40';
+$VERSION = '2023.12';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -61,10 +61,10 @@ my $bbbike_root = bbbike_root;
 
 ######################################################################
 # configurable
-my $openvbb_download_size = '75MB';
-my $openvbb_year = 2022;
-my $openvbb_index = 3;
-my $openvbb_data_url = 'https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/gtfs-mastscharf/GTFS.zip';
+my $openvbb_download_size = '66MB';
+my $openvbb_year = 2023;
+my $openvbb_index = 1;
+my $openvbb_data_url = 'https://www.vbb.de/vbbgtfs';
 ######################################################################
 
 my $openvbb_archive_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}.zip";
