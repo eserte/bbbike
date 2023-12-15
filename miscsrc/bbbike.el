@@ -724,12 +724,15 @@
          (num-lines (length lines)))
     (cond
      ((= num-lines 0)
-      (message "No matching lines found for '%s'." search-term))
+      (progn
+	(if (get-buffer "*bbbike-grep-output*") (kill-buffer "*bbbike-grep-output*"))
+	(message "No matching lines found for '%s'." search-term)))
      ((= num-lines 1)
       (let* ((line (car lines))
              (parts (split-string line ":"))
              (filename (car parts))
              (line-number (string-to-number (cadr parts))))
+	(if (get-buffer "*bbbike-grep-output*") (kill-buffer "*bbbike-grep-output*"))
         (find-file (concat bbbike-datadir "/" filename))
         (goto-line line-number)))
      (t
