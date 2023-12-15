@@ -563,6 +563,16 @@
 		       (buffer-substring-no-properties begin-url-pos end-url-pos))))
     (substring current-line (match-beginning 1) (match-end 1))))
 
+;;; Basic idea: run in the shell
+;;;
+;;;     miscsrc/check-osm-watch-list.pl -diff
+;;;
+;;; and mark the lines prefixed with "CHANGED" into  the
+;;; x11/ui selection. Then run in emacs
+;;;
+;;;     M-x bbbike-update-osm-watch
+;;;
+;;; to find the matching osm watches in bbbike data.
 (defun bbbike-update-osm-watch ()
   (interactive)
   (let ((sel (bbbike--get-x-selection))
