@@ -3966,7 +3966,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2023-12-13
+#: last_checked: 2023-12-15
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4483,6 +4483,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_35_2301_2352_online.pdf (Straßenlandwidmung des schon eröffneten Abschnitts)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_53_4921_5172_online.pdf (Grundstücksnummerierung)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
@@ -4555,7 +4556,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="21"
 #: priority: #A
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-15 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4617,20 +4618,20 @@ Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-15 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-15 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-15 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5146,7 +5147,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="4"
-#: last_checked: 2023-10-11
+#: last_checked: 2023-12-14 (daf)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910

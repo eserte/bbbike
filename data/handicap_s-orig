@@ -56,7 +56,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 # 
 #: also_indoor: traffic (G,W)
 #: note: Wobei vermutlich nur das Radfahrer-frei-Schild fehlt oder verlorengegangen ist, denn das entsprechende Einbahnstraßen-Schild hat so etwas.
-#: last_checked: 2023-11-27
+#: last_checked: 2023-12-15
 Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?))
@@ -292,7 +292,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-11-23 vvv
+#: last_checked: 2023-12-15 (webcam) vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10930,12501 10908,12553 10973,12611
@@ -356,7 +356,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-15 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -873,7 +873,8 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="1089784266" version="2"
+#: osm_watch: way id="1089784266" version="3"
+#: osm_watch: way id="1231226671" version="1"
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
 #: last_checked: 2023-12-01 (architektur-urbanistik)
 # REMOVED --- #: check_frequency: 120d
@@ -1104,16 +1105,7 @@ Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz: Fußgänger	q2 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
 Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 # 
-#: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen)
-#: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446
-#: by: https://berliner-abendblatt.de/berlin-news/reinigung-des-brandenburger-tors-erfolgreich-beendet-id239186 (Gerüst wird "demnächst" abgebaut)
-#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da
-#: last_checked: 2023-12-14 (webcam, zwei-drei Torbögen offen)
-#: check_frequency: 2d
-#: valid: -20231231
-Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245
-#: valid: 20231231-
+# REMOVED (Gerüst ist abgebaut) --- #: by: https://berliner-abendblatt.de/berlin-news/geruestbau-am-brandenburger-tor-wegen-reinigung-id236690 ("Radfahrer-frei"-Zusatzschild durchgestrichen) --- #: by: https://berliner-abendblatt.de/berlin-news/brandenburger-tor-erneut-mit-farbe-beschmiert-id237446 --- #: by: https://berliner-abendblatt.de/berlin-news/reinigung-des-brandenburger-tors-erfolgreich-beendet-id239186 (Gerüst wird "demnächst" abgebaut)--- #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html --- #: XXX alle Torbögen können wegen Sanierungsarbeiten gesperrt sein, aber man kann außen herum fahren; kein Endedatum, morgens kommt man meistens gut durch, nachmittags/abends sind mehr Touristen da --- #: last_checked: 2023-12-14 (webcam, zwei-drei Torbögen offen) --- #: check_frequency: 2d --- #: valid: -20231231 --- Brandenburger Tor: Fußgänger, Engstelle wegen eines Gerüsts, ggfs. Bordsteine	q3+ 8637,12258 8592,12252 8538,12245 --- #: valid: 20231231-
 Brandenburger Tor: Fußgänger	q2 8637,12258 8592,12252 8538,12245
 # 
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555

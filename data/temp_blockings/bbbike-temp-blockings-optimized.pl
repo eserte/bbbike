@@ -5352,16 +5352,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 8187,15965 8236,16071 8334,16282 8420,16365
-',
-         'from' => 1646719260,
-         'id' => 3525,
-         'source_id' => 'viz2021:13.374637,52.551773,09.03.2022,07:01',
-         'text' => 'Uferstr.: Bauarbeiten zwischen Bornemannstr. und Exerzierstr., Fahrbahn abschnittsweise gesperrt, vom 09.03.2022 07:01 bis 15.12.2023 17:00 ',
-         'type' => 'handicap',
-         'until' => 1702656000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6000,7 +5991,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 #: by: https://nitter.net/txtnso/status/1609517082110201857
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
-#: osm_watch: node id="10202117536" version="7"
+#: osm_watch: node id="10202117536" version="8"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: last_checked: 2023-06-02 (mapillary)
 # REMOVED --- #: next_check: 2023-12-01
@@ -6253,7 +6244,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-11-13 vvv
+#: last_checked: 2023-12-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
 # REMOVED --- Küstriner Str.	q4::inwork 16357,15328 16314,15223
@@ -6518,16 +6509,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 6957,25450 7170,25566 7415,25928
-',
-         'from' => 1661058000,
-         'id' => 3782,
-         'source_id' => '226502373',
-         'text' => 'Glienicke: Sperrung der Kindelfließbrücke vom 22.08.2022, 07:00 Uhr bis 15.12.2023, 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1702652400
-       },
+       undef,
        undef,
        {
          'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
@@ -6607,7 +6589,7 @@ Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2023-12-05
+#: last_checked: 2023-12-15
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -6960,15 +6942,15 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        {
          'data' => '#: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024)
+#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024) (bis 09.02.2024)
 #: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
 	q4::inwork 21329,832 21497,1042
 ',
          'from' => 1691899200,
          'id' => 3887,
-         'text' => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 15.01.2024 17:00',
+         'text' => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 09.02.2024 17:00',
          'type' => 'handicap',
-         'until' => 1705334400
+         'until' => 1707494400
        },
        undef,
        undef,
@@ -7072,18 +7054,7 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
          'until' => 1703174400
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.372807,52.446117,04.09.2023,07:00 (bis 15.12.2023)
-#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/bauarbeiten-an-der-gersdorfstrasse_a393023
-	q4::inwork 8336,4378 8427,4435 8569,4459
-	q4::inwork 8511,4336 8427,4435 8318,4566
-',
-         'from' => 1693717200,
-         'id' => 3905,
-         'text' => 'Gersdorfstr./Königstr./Blumenweg: Bauarbeiten, Kreuzungsbereich gesperrt, vom 04.09.2023 07:00 bis 15.12.2023 17:00',
-         'type' => 'handicap',
-         'until' => 1702656000
-       },
+       undef,
        undef,
        undef,
        {
@@ -7098,16 +7069,7 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork 42756,101128 42825,101320 42981,101756
-',
-         'from' => 1694325600,
-         'id' => 3911,
-         'source_id' => '237310102',
-         'text' => 'Bündigershof: Fahrbahnsanierung, Sperrung, 11.09.2023 08:00 Uhr bis 15.12.2023 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1702656000
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="1"
@@ -7295,7 +7257,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="8"
 	q4::inwork 21889,16817 21925,16981
-#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023)
+#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
 #: osm_watch: way id="9030384" version="38"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -7568,18 +7530,18 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11877 (Anfrage)
 #: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
-#: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023)
+#: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023) (bis 19.12.2023)
 #: also_indoor: traffic (ex-H,B,G)
 #: last_checked: 2023-11-28 (Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 2d
-#: next_check: 2023-12-15
+#: next_check: 2023-12-19
 	2::inwork -430,23912 -406,23934
 ',
          'from' => undef,
          'id' => 3974,
-         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 15.12.2023',
+         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 19.12.2023',
          'type' => 'gesperrt',
-         'until' => 1702656000
+         'until' => 1703001600
        },
        undef,
        {
@@ -7624,14 +7586,14 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
          'until' => 1705075200
        },
        {
-         'data' => '#: source_id: viz2021:13.401194,52.590408,29.11.2023,07:00 (bis 15.12.2023)
+         'data' => '#: source_id: viz2021:13.401194,52.590408,29.11.2023,07:00 (bis 15.12.2023) (bis 21.12.2023)
 	q4::inwork; 10066,20494 9983,20581
 ',
          'from' => 1701151200,
          'id' => 3979,
-         'text' => 'Schönhauser Str.: Fahrbahnarbeiten zwischen Dietzgenstr. und Nordendstr., Sperrung, evtl. sich auch Radfahrer betroffen, vom 29.11.2023 07:00 bis 15.12.2023 17:00',
+         'text' => 'Schönhauser Str.: Fahrbahnarbeiten zwischen Dietzgenstr. und Nordendstr., Sperrung, evtl. sich auch Radfahrer betroffen, vom 29.11.2023 07:00 bis 21.12.2023 17:00',
          'type' => 'handicap',
-         'until' => 1702656000
+         'until' => 1703174400
        },
        undef,
        undef,
@@ -7658,16 +7620,31 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1387776.php (voraussichtlich ab Dezember 2023)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_50_4641_4716_online.pdf (Teileinziehung, Barriere unter der Bahnbrücke)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/sperrung-der-stadthausstrasse-fuer-ende-dezember-angekuendigt_a402025
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1396743.php (Einweihung am 19. Dezember 2023)
 #: osm_watch: way id="198595363" version="13"
 #: osm_watch: way id="1230681052" version="1"
+#: priority: #A
 #: last_checked: 2023-12-13
 #: check_frequency: 7d
-#: next_check: 2023-12-31
+#: next_check: 2023-12-19
 Stadthausstraße: Abschnitt unter der Unterführung wird für den Kfz-Verkehr eingezogen	q3::inwork 15649,10922 15674,10851
 ',
          'from' => undef,
          'id' => 3986,
-         'text' => 'Stadthausstr.: Barriere über gesamte Breite der Fahrbahn (gesehen Mitte Dezember 2023)',
+         'text' => 'Stadthausstr.: Barriere über gesamte Breite der Fahrbahn (möglicherweise bis 19.12.2023)',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: osm_watch: way id="1228800161" version="1"
+#: also_indoor: traffic (H,G,B[hier östlich Choriner],W)
+#: by: osm
+#: XXX Genaue Lage und Auswirkung überprüfen!
+	q4::inwork 10370,14158 10502,14070
+',
+         'from' => undef,
+         'id' => 3987,
+         'text' => 'Fehrbelliner Str.: Bauarbeiten, Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen',
          'type' => 'handicap',
          'until' => undef
        }
