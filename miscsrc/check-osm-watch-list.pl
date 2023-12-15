@@ -156,11 +156,11 @@ if ($with_notes) {
 	    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
 	    my $properties = $data->{properties};
 	    if ($properties->{status} ne 'open') {
-		warn "CHANGE: note $human_url: status is not 'open', but '$properties->{status}'\n";
+		warn "CHANGED: note $human_url: status is not 'open', but '$properties->{status}'\n";
 	    } else {
 		my $now_comments_count = @{ $properties->{comments} };
 		if ($now_comments_count != $note_data->{comments_count}) {
-		    warn "CHANGE: note $human_url: number of comments changed (now $now_comments_count, was " . scalar($note_data->{comments_count}) . ")\n";
+		    warn "CHANGED: note $human_url: number of comments changed (now $now_comments_count, was " . scalar($note_data->{comments_count}) . ")\n";
 		}
 	    }
 	}
