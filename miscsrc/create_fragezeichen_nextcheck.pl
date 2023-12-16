@@ -205,7 +205,7 @@ sub handle_file {
 
 	     if ($cat =~ /\?$/) { # no attrib yet
 		 # heuristics from fragezeichen text
-		 if (($add_name||'') =~ /(Umbenennung|umbenannt|neuer Name|neuer Straßenname|ausgeschildert|Ausschilderung|Straßenschilder)/i) {
+		 if (($add_name||'') =~ /(Umbenennung|umbenannt|neuer Name|neuer Straßenname|ausgeschildert|Ausschilderung|Straßenschilder|\bSchilder\b)/i) {
 		     $cat .= '::sign';
 		 }
 	     }
