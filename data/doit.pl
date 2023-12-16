@@ -26,6 +26,7 @@ use Getopt::Long;
 use Cwd qw(realpath cwd);
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
+use BBBikeUtil qw(s2ms);
 
 my $perl = $^X;
 my $valid_date = 'today';
@@ -327,8 +328,6 @@ sub _build_fragezeichen_nextcheck_variant {
 	require Safe;
 	my $config = Safe->new->rdo("$ENV{HOME}/.bbbike/config");
 	my $centerc = $config->{centerc};
-	require BBBikeBuildUtil;
-	my $pmake = BBBikeBuildUtil::get_pmake();
 	_make_writable $d, $dest;
 	$d->run([$perl, "$miscsrcdir/fragezeichen2org.pl",
 		 "--expired-statistics-logfile=$persistenttmpdir/expired-fragezeichen-${variant}.log",
@@ -338,7 +337,7 @@ sub _build_fragezeichen_nextcheck_variant {
 		 "--dist-dbfile=$persistenttmpdir/dist.db",
 		 ($variant eq 'home-home' ? ($centerc ? ("-centerc", $centerc, "-center2c", $centerc) : ()) : ()),
 		 ($variant eq 'without-osm-watch' ? ('--filter', 'without-osm-watch') : ()),
-		 "--compile-command", "cd @{[ cwd ]} && $pmake $dest",
+		 "--compile-command", "cd @{[ cwd ]} && $^X " . __FILE__ . " " . basename($dest),
 		 @srcs], ">", "$dest~");
 	_empty_file_error "$dest~";
 	_commit_dest $d, $dest;
@@ -630,7 +629,7 @@ sub action_forever_until_error {
 	    sleep $forever_interval;
 	}
 	my $t1 = time;
-	print STDERR "finished after " . ($t1-$t0) . " seconds\n";
+	print STDERR "finished after " . s2ms($t1-$t0) . " minutes (at " . strftime("%F %T", localtime) . ")\n";
     }
 }
 
