@@ -489,7 +489,7 @@ An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
 An der Nordbahn: mäßiger Asphalt	Q1 7504,19459 7415,19535 7236,19689 6680,20165 6395,20413
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
-Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
+Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4719,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster, teilweise Verbundsteine	Q2 4176,11235 4101,11233 3981,11232
 Goethestr.: Asphalt	Q0 4312,11354 4216,11351
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4216,11351 4101,11347 3986,11347
@@ -565,7 +565,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 Haasestr.: Verbundsteinpflaster	Q1 14328,11320 14286,11186
 Niemannstr.: Beton	Q0 14211,11229 14254,11377
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
-Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
+Calvinstr.: Kopfsteinpflaster	Q2 6775,12661 6802,12797 6860,13093
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3692,11681 -3657,11631 -3606,11532
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3606,11532 -3445,11505
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3445,11505 -3405,11498
@@ -700,6 +700,8 @@ Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11259,859
 Hasenheide, zur Lilienthalstr.: Verbundsteinpflaster, kleine Stück mit Kleinsteinpflaster	Q1 10709,9192 11111,9104 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10627,9912 10602,9957 10500,10081
 Carl-Herz-Ufer: Fahrbahn Kopfsteinpflaster, Uferweg mit relativ glatter Oberfläche	Q1 10168,10085 10313,10084 10430,10081 10500,10081
+Johanniterstr. - Carl-Herz-Ufer: Weg mit relativ glatter Oberfläche	Q0 10066,10071 10168,10085
+Brachvogelstr. - Carl-Herz-Ufer: Weg mit relativ glatter Oberfläche	Q0 10069,10151 10158,10117 10168,10085
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
 Am Graben: Kopfsteinpflaster und Verbundsteinpflaster	Q1 -4778,7791 -4819,7833
@@ -1206,7 +1208,7 @@ Miraustr.: guter Asphalt	Q0 3380,20270 3572,20020 3629,19938 3820,19688
 Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4190,19048
 Schaperstr.: Asphalt, einige Schäden	Q0 5700,10226 5597,10299 5450,10338
-Bleibtreustr.: Kopfsteinpflaster	Q2 4729,11206 4722,11030 4714,10950 4701,10837 4685,10689
+Bleibtreustr.: Kopfsteinpflaster	Q2 4719,11206 4709,11036 4704,10951 4692,10829 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5498,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
@@ -1706,7 +1708,7 @@ Lexisstr.: Asphalt	Q0 13063,9422 13124,9375
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12788,8101
 Geygerstr.: Asphalt	Q0 13070,8138 13194,8276
-Bellevue-Ufer: Mosaikpflaster	Q1 6694,12627 7031,12320
+Bellevue-Ufer: Mosaikpflaster	Q1 6689,12632 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
 Große Querallee: Asphalt mit einigen leichten Schäden	Q0 7875,12363 7822,12201 7816,12150
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
@@ -10151,7 +10153,7 @@ Feuerdornweg: unbefestigte Straße	Q2 11008,23572 10887,23796
 Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
 (Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9178,556
 Zachenberger Str.: Verbundsteinpflaster	Q1 19889,9400 19824,9405 19780,9409
-Am S-Bhf. Bellevue: Gehwegplatten	Q1 6694,12627 6516,12650
+Am S-Bhf. Bellevue: Gehwegplatten	Q1 6689,12632 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
 Gerichtstr.: Kleinsteinpflaster	Q1 7765,15417 7723,15417
 Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
@@ -10493,7 +10495,7 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Weg am Grimbartgraben): unbefestigter Weg	Q2 -1647,22153 -1482,22104 -1398,22050 -1148,21872 -1023,21788 -947,21737 -795,21685 -727,21676
 (Finsterwalder Str. - Wittenauer Str.): unbefestigter Pfad	Q2 6363,22419 6359,22452 6341,22496
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
-Oppelner Str.: stellenweise Kleinpflastersteine	Q1 12897,10439 12978,10581
+Oppelner Str.: stellenweise Kleinpflastersteine	Q1 12897,10439 12968,10564 12978,10581
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2 8103,13675 8151,13697
@@ -12143,8 +12145,8 @@ Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 590
 Buchstr.: Asphalt	Q0 6596,14740 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
 Holsteiner Ufer: Asphalt	Q0 6182,12900 6347,12901 6449,12865 6575,12778
-Holsteiner Ufer: mäßiges bis schlechtes Kopfsteinpflaster	Q3 6575,12778 6631,12707
-Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6631,12707 6694,12627
+Holsteiner Ufer: Asphalt	Q0 6575,12778 6639,12701
+Holsteiner Ufer: Asphalt	Q0 6639,12701 6689,12632
 Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
 Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6677,14219 6656,14311
 Albrecht-Thaer-Weg: Asphalt	Q0 3350,6467 3449,6863
@@ -12174,7 +12176,7 @@ Engelhardstr.: guter Asphalt	Q0 17774,4966 17792,4875 17820,4729 17865,4534
 Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17569,-139 17599,-187 17623,-221 17669,-290 17738,-397
 Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 Mellenseestr.: Asphalt	Q0 17527,9899 17633,9898 17738,9922 17838,9956 17958,10012
-Carnotstr.: Asphalt	Q0 4806,12902 4655,12953
+Carnotstr.: Asphalt	Q0 4796,12920 4655,12953
 Pintschstr.: Kopfsteinpflaster	Q2 13435,12973 13339,13196
 Guineastr.: Kopfsteinpflaster	Q2 6422,15708 6267,15844
 Guineastr.: Asphalt	Q0 6267,15844 6119,15965 5981,16091
@@ -17439,7 +17441,7 @@ nördliches Spreeufer: Verbundsteinpflaster	Q1 8257,13037 8277,13032 8317,13015 8
 Heisenbergstr.: Asphalt	Q0 4961,12940 5120,12963
 Schlesingerstr.: Asphalt	Q0 4932,12968 4990,13069
 Kucharskistr.: Asphalt	Q0 4865,12984 4829,13089
-Clara-von-Simson-Str.: Asphalt	Q0 4824,12952 4732,13030
+Clara-von-Simson-Str.: Asphalt	Q0 4820,12957 4732,13030
 Margarete-Kühn-Str.: Asphalt	Q0 5133,12240 5194,12398 5225,12450
 Otto-Dibelius-Str.: Asphalt	Q0 5181,12195 5243,12303 5299,12420
 Hannah-Karminski-Str.: Asphalt	Q0 5233,12109 5258,12128 5317,12242 5360,12331
@@ -17447,9 +17449,9 @@ Schleswiger Ufer: Asphalt	Q0 5714,12266 5800,12361
 Schleswiger Ufer: Kopfsteinpflaster	Q2 5800,12361 5858,12425
 Schleswiger Ufer: Kopfsteinpflaster	Q1 5858,12425 5886,12467 5944,12548
 Cuxhavener Str.: Asphalt	Q1 5886,12467 5904,12417 5931,12399
-(Zufahrt Parkplätze Bartningallee): Kopfsteinpflaster	Q2 6500,12605 6361,12617 6304,12603 6188,12553 6179,12513
-(Zufahrt Parkplätze Bartningallee): Gehwegplatten	Q1 6179,12513 6149,12454
-(Altonaer Str. - Flensburger Str.): Gehwegplatten	Q1 6173,12396 6149,12454 6137,12532 6162,12690
+(Zufahrt Parkplätze Bartningallee): Kopfsteinpflaster	Q2 6500,12605 6361,12617 6304,12603 6179,12546 6179,12513
+(Zufahrt Parkplätze Bartningallee): Gehwegplatten	Q1 6179,12513 6163,12509
+(Altonaer Str. - Flensburger Str.): Gehwegplatten	Q1 6173,12396 6156,12444 6147,12506 6163,12509 6139,12692
 Cuxhavener Str.: Kopfsteinpflaster	Q2 5931,12399 5951,12353 5982,12291
 (Zufahrt Parkplätze Kloppstockstr.): Kopfsteinpflaster	Q2 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.): unbefestigter Weg, stellenweise fester Schotter	Q2 5982,12291 6030,12363 6067,12381 6098,12446

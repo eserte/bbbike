@@ -146,8 +146,11 @@ Körnerpark	F:P 12878,7415 12910,7297 12722,7261 12703,7370 12734,7384 12818,740
 Rübelandpark	F:P 12787,7546 12750,7528 12765,7445 12696,7420 12703,7370 12734,7384 12818,7403
 Spreewaldplatz	F:P 12292,10374 12243,10274 12341,10218 12292,10374
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1396964.php (Bau eines Zauns mit abschließbaren Toren, Baubeginn voraussichtlich I. Quartal 2024)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/bvg-projekt-tram-m41-beginnt-von-schoeneweide-bis-zum-potsdamer-platz-li.2168811 (zur geplanten M10 durch den Park)
+#: by: https://berliner-abendblatt.de/berlin-news/zaun-um-goerlitzer-park-senat-erteilt-bauauftrag-id239972
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: priority: #A
+#: last_checked: 2023-12-16
 #: next_check: 2024-03-15
 Görlitzer Park	F:P 13216,9983 13086,9825 12932,9900 12983,10000 12881,10056 12829,9957 12814,9966 12341,10218 12397,10335 12317,10382 12309,10427 12348,10432
 Sportplatz Wiener Straße	F:Sport 12881,10056 12829,9957 12932,9900 12983,10000 12881,10056
@@ -1313,9 +1316,10 @@ Jacob-Teitel-Park	F:P 10318,13528 10324,13459 10341,13376 10358,13381 10390,1349
 #: XXX Werden hier Schilder aufgestellt?
 #: osm_watch: way id="28251523" version="14"
 #: priority: #C
-#: last_checked: 2023-11-30
+#: last_checked: 2023-12-16
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-06-04
-Agnes-Sorma-Park	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117
+Agnes-Sorma-Park	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117 8858,13104
 Karl-Holtz-Platz	F:P 21574,16547 21577,16625 21562,16626 21491,16631 21460,16572
 Friedhof der Laurentiusgemeinde	F:Cemetery 21452,4061 21481,4074 21520,3978 21649,4111 21633,4355 21585,4459 21546,4457 21414,4391 21353,4322 21452,4061
 #: alias: Friedhof Pankow VII

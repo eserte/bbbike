@@ -114,7 +114,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2023-11-29
+#: last_checked: 2023-12-16
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
@@ -289,7 +289,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2023-11-04 (mapillary)
+#: last_checked: 2023-12-09 (mapillary)
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -1159,8 +1159,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3283,11097
 	X 3975,11087
 	X 3546,10962
-	X 4532,11042
-	X 4722,11030
+	X 4532,11046
+	X 4709,11036
 	X 4496,10504
 	X 4838,10597
 	X 4485,10307
@@ -3526,7 +3526,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2023-12-11
+#: last_checked: 2023-12-16 (webcam)
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
@@ -3695,7 +3695,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2023-11-26 (mapillary)
+#: last_checked: 2023-12-11 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2024-02-15
 	X::inwork 8250,14672
@@ -3764,7 +3764,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
-#: last_checked: 2023-11-26 (mapillary) vvv
+#: last_checked: 2023-12-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
