@@ -35,6 +35,7 @@ my $bbbikedir        = realpath "$FindBin::RealBin/..";
 my $miscsrcdir       = "$bbbikedir/miscsrc";
 my $persistenttmpdir = "$bbbikedir/tmp";
 my $datadir          = "$bbbikedir/data";
+my $bbbikeauxdir     = do { my $dir = "$ENV{HOME}/src/bbbike-aux"; -d $dir && $dir };
 
 my $convert_orig_file  = "$miscsrcdir/convert_orig_to_bbd";
 my @convert_orig       = ($perl, $convert_orig_file);
@@ -600,6 +601,12 @@ sub action_forever_until_error {
 	or die "usage?";
     my @cmd = @ARGV;
 
+    my @srcs = (
+		File::Glob::bsd_glob(q{*-orig}),
+		q{temp_blockings/bbbike-temp-blockings.pl},
+		(defined $bbbikeauxdir ? do { my $file = "$bbbikeauxdir/bbd/fragezeichen_lowprio.bbd"; -f $file ? $file : () } : ()),
+	       );
+
     my $error_count = 0;
     while() {
 	next if $d->git_current_branch() ne 'master';
@@ -622,7 +629,7 @@ sub action_forever_until_error {
 	    # XXX use system() once statusref is implemented
 	    $d->qx({quiet => 1, statusref => \my %status},
 		   qw(inotifywait -q -e close_write -t), $forever_interval,
-		   File::Glob::bsd_glob(q{*-orig}), q{temp_blockings/bbbike-temp-blockings.pl},
+		   @srcs,
 		  );
 	    exit 2 if ($status{signalnum}||0) == 2;
 	} else {
