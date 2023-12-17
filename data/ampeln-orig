@@ -267,12 +267,13 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) vvv
-#: last_checked: 2023-08-17 (mapillary) vvv
+#: last_checked: 2023-12-16 (mapillary) vvv
 #: next_check: 2024-03-29 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
-Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
-Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
+# REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
+# REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
+Germanenstr.: Gegenverkehrsregelung	X::inwork 8333,19305
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2641,7 +2642,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-17
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3518,7 +3519,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-12-11
+#: last_checked: 2023-12-17
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4755,6 +4756,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 43131,19792
 	B 23108,-87201
 	B 90350,-16513
+#: by: osm
+	F -9380,17229
 # 
 #: note: ^^^
 ################################################################################

@@ -177,7 +177,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-17
 #: check_frequency: 90d
 #: next_check: 2023-12-22
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -1730,8 +1730,7 @@ Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
 Trappenfelder Str.: Privatgrundstück, mit Zäunen abgesperrt	2 26525,19271 26721,19700 27087,19796 27256,19887
 Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
 Heinestr. (Zepernick)	1 17659,27135 17759,27229
-Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
-Lindenberger Weg	1 17228,24640 17193,24683
+# REMOVED (-> Kreisverkehr) --- Lindenberger Weg	1 17193,24683 17226,24664 17228,24640 --- Lindenberger Weg	1 17228,24640 17193,24683
 # REMOVED --- zur Mülldeponie	2 14682,1782 14709,1732 14849,1672
 # REMOVED (laut osm offen) --- zur Mülldeponie	2 14849,1672 14588,1053 14768,510 14556,409 14710,-25
 Wiesenweg (Schulzendorf)	1 23717,-3975 23618,-3854 23538,-3808 23466,-3768 23456,-3746
@@ -4679,7 +4678,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361171,52.446982,10.11.2023,17:30 (angrenzende Attilastr., Brückenarbeiten, bis 12.11.2023) (inaktiv)
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024)
-#: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023)
+#: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023) (inaktiv)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: last_checked: 2023-09-19 (mapillary)
 #: check_frequency: 120d
@@ -5239,8 +5238,8 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
-#: osm_watch: way id="765539341" version="12" brb
-#: last_checked: 2023-11-16 (osm)
+#: osm_watch: way id="765539341" version="13" brb
+#: last_checked: 2023-12-15 (osm)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423

@@ -1256,7 +1256,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2023-12-13 vvv
+#: last_checked: 2023-12-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -5984,7 +5984,7 @@ Grünbeschichtung	RW3; 5370,6486 5424,6584 5533,6753 5604,6870
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/umgestaltung-zur-fahrradstrasse_a395575
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9004 (Anfrage --- wird der verkehrsberuhigte Bereich wegfallen?)
 #: XXX wird auch der Abschnitt nördlich der Varziner Str. ausgeschildert?
-#: osm_watch: way id="83030876" version="24"
+#: osm_watch: way id="83030876" version="25"
 #: osm_watch: way id="133988476" version="21"
 #: osm_watch: way id="1122482150" version="8"
 #: last_checked: 2023-12-09
@@ -6995,7 +6995,8 @@ asphaltiert	RW1;RW9 7437,12368 7215,12295 7031,12320
 # REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9097,7469 9145,7522 9120,7600 9115,7645 9132,7661 9130,7810 9130,8029 9128,8251
 # REMOVED (mittlerweile wieder Teil der Tempo-30-Zone) --- Tempo 10	RW6;RW6 9132,7661 9242,7658
 zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
-Radspur hinter den parkenden Autos	RW3; 8713,7423 8706,7585 8704,7603 8690,7704
+Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585
+Radspur hinter den parkenden Autos	RW3; 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
 #: XXX ist das nur provisorisch?
 #: last_checked: 2023-11-06

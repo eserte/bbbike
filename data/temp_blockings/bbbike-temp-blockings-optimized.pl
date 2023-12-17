@@ -3216,29 +3216,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 3rd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1702724400,
-         'id' => 2520,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 17. Dezember 2023, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1702836000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5853,7 +5831,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H,G) vvv
-#: last_checked: 2023-11-26 (mapillary) vvv
+#: last_checked: 2023-12-16 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 # REMOVED (hier nicht mehr) --- nur Gehweg frei	q4::inwork 7630,20698 7616,20633
@@ -5865,7 +5843,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 ',
          'from' => undef,
          'id' => 3647,
-         'text' => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Ende November 2023: abschnittsweise nur der Gehweg frei)',
+         'text' => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Mitte Dezember 2023: abschnittsweise nur der Gehweg frei)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6293,7 +6271,7 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
          'data' => '#: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
-#: also_indoor: traffic (ex-G[falsch]) vvv
+#: also_indoor: traffic (G,W) vvv
 #: osm_watch: way id="1171918026" version="4"
 #: osm_watch: way id="151353924" version="11"
 #: last_checked: 2023-10-21 vvv
@@ -6416,7 +6394,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 2
+#: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2023-12-16
@@ -6490,7 +6468,35 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KAULSDORFER-2023
+#: by: https://nitter.cz/VIZ_Berlin/status/1653626689128402944#m (Gesamtdauer bis voraussichtlich 12/2023)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
+#: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) (bis 4.12.2023) (inaktiv) vvv
+#: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
+#: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
+#: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
+#: add_fragezeichen: Ist die Fahrbahn der Birnbaumer Straße noch immer wegen Bauarbeiten gesperrt? vvv
+#: osm_watch: way id="54269295" version="15"
+#: last_checked: 2023-10-09 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2023-12-04 vvv
+# REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
+Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: XXX ^^^
+#: source_id[inactive] ^^^
+#: source_id ^^^
+',
+         'from' => 1683064800,
+         'id' => 3778,
+         'text' => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Dezember 2023, evtl. auch länger',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -6688,7 +6694,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        undef,
        {
          'data' => '#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-11-26
+#: last_checked: 2023-12-17
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -7044,12 +7050,13 @@ Gipsstr.	q3::inwork 10341,13376 10199,13446
        undef,
        undef,
        {
-         'data' => '	q3::inwork 8486,16425 8467,16718
+         'data' => '#: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m
+	q3::inwork 8486,16425 8467,16718
 ',
          'from' => 1669791600,
          'id' => 3908,
          'source_id' => 'viz2021:13.377083,52.55627,01.12.2022,08:00',
-         'text' => 'Koloniestr.: Bauarbeiten an der Osloer Str., evtl. gibt es Einschränkungen für Radfahrer, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
+         'text' => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
          'type' => 'handicap',
          'until' => 1711897200
        },
@@ -7151,6 +7158,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        {
          'data' => '#: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
+#: also_indoor: traffic (G,B,W)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
 #: last_checked: 2023-10-21
@@ -7655,7 +7663,7 @@ Stadthausstraße: Abschnitt unter der Unterführung wird für den Kfz-Verkehr einge
 #: osm_watch: way id="176621906" version="26"
 #: osm_watch: way id="4525429" version="21"
 #: osm_watch: way id="1212493766" version="3"
-#: osm_watch: note 3916787 1
+#: osm_watch: note 3916787 2
 #: last_checked: 2023-12-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv

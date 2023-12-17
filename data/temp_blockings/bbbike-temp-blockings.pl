@@ -37070,13 +37070,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Ende November 2023: abschnittsweise nur der Gehweg frei)', # was "... Lessingstr. und ..."
+       text  => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Mitte Dezember 2023: abschnittsweise nur der Gehweg frei)', # was "... Lessingstr. und ..."
        type  => 'handicap',
        data  => <<EOF,
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H,G) vvv
-#: last_checked: 2023-11-26 (mapillary) vvv
+#: last_checked: 2023-12-16 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 # REMOVED (hier nicht mehr) --- nur Gehweg frei	q4::inwork 7630,20698 7616,20633
@@ -38292,7 +38292,7 @@ EOF
 #: next_check_id: SCHOENBURG-2023
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
-#: also_indoor: traffic (ex-G[falsch]) vvv
+#: also_indoor: traffic (G,W) vvv
 #: osm_watch: way id="1171918026" version="4"
 #: osm_watch: way id="151353924" version="11"
 #: last_checked: 2023-10-21 vvv
@@ -38673,7 +38673,7 @@ EOF
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 2
+#: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2023-12-16
@@ -38839,8 +38839,8 @@ EOF
 EOF
      },
      { from  => 1683064800, # 2023-05-03 00:00
-       until => $isodate2epoch->("2023-12-04 23:59:59"), # 1689606000, # 2023-07-17 17:00
-       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Dezember 2023',
+       until => undef, # $isodate2epoch->("2023-12-04 23:59:59"), # 1689606000, # 2023-07-17 17:00
+       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Dezember 2023, evtl. auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KAULSDORFER-2023
@@ -38850,6 +38850,7 @@ EOF
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
 #: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
+#: add_fragezeichen: Ist die Fahrbahn der Birnbaumer Straße noch immer wegen Bauarbeiten gesperrt? vvv
 #: osm_watch: way id="54269295" version="15"
 #: last_checked: 2023-10-09 vvv
 #: check_frequency: 30d vvv
@@ -38859,6 +38860,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 #: XXX ^^^
 #: source_id[inactive] ^^^
 #: source_id ^^^
@@ -39534,7 +39536,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-11-26
+#: last_checked: 2023-12-17
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40509,10 +40511,11 @@ EOF
      },
      { from  => 1669791600, # 2022-11-30 08:00
        until => 1711897200, # 2024-03-31 17:00
-       text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., evtl. gibt es Einschränkungen für Radfahrer, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
+       text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.377083,52.55627,01.12.2022,08:00',
        data  => <<EOF,
+#: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m
 	q3::inwork 8486,16425 8467,16718
 EOF
      },
@@ -40684,6 +40687,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum)
+#: also_indoor: traffic (G,B,W)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
 #: last_checked: 2023-10-21
@@ -41556,7 +41560,7 @@ EOF
 #: osm_watch: way id="176621906" version="26"
 #: osm_watch: way id="4525429" version="21"
 #: osm_watch: way id="1212493766" version="3"
-#: osm_watch: note 3916787 1
+#: osm_watch: note 3916787 2
 #: last_checked: 2023-12-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv
