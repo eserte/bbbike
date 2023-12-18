@@ -28442,7 +28442,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-18
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -34677,6 +34677,7 @@ EOF
 #: by: https://viz.berlin.de/2021/12/feiertage/
 #: by: https://viz.berlin.de/2022/12/verkehr-an-den-feiertagen-und-zum-jahreswechsel/
 #: by: https://viz.berlin.de/2022/12/verkehrsvorschau_24-261222/ (Aufbauarbeiten ab dem 26.12.2022)
+#: by: http://viz.berlin.de/aktuelle-meldungen/verkehr-feiertage_jahreswechsel/ (ab 26.12.2023, 06:00 Uhr)
 #: source_id[inactive]: viz2021:13.369855,52.515768,26.12.2021,06:00
 #: source_id[inactive]: viz2021:13.37737,52.51457,26.12.2021,06:00
 #: source_id[inactive]: viz2021:13.351326,52.514425,26.12.2021,06:00
@@ -35365,7 +35366,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-18 (daf)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
