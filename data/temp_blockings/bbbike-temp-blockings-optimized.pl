@@ -5354,7 +5354,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
-#: also_indoor: traffic (H,G,B,W)
+#: also_indoor: traffic (H,ex-G,ex-B,W)
 #: last_checked: 2023-12-06 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2024-01-31
@@ -5542,13 +5542,14 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        {
          'data' => '#: source_id: viz2021:13.32149,52.49982,29.12.2022,09:28 (bis 25.2.2023) (später am Tag wieder entfernt -> inaktiv)
+#: source_id: viz2021:13.321852,52.501972,29.07.2022,03:00\' (bis 31.5.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: also_indoor: traffic (H,G,B,W)
 #: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
+#: note: auch bei rbb vorfristig entfernt
 	q3::inwork; 4838,10597 4819,10355
 ',
          'from' => 1658970000,
          'id' => 3615,
-         'source_id' => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
          'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, voraussichtlich bis Ende 2023',
          'type' => 'handicap',
          'until' => 1704038400
@@ -7070,6 +7071,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (G,B,W)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
+#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
 #: last_checked: 2023-10-21
 #: check_frequency: 60d
 # REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
@@ -7077,7 +7079,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => 1695550500,
          'id' => 3922,
-         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig, vom 25.09.2023 12:15',
+         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7259,7 +7261,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'data' => '#: next_check_id: GOERLITZERUFER-2023
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
-#: osm_watch: way id="148176599" version="14"
+#: osm_watch: way id="148176599" version="15"
 #: last_checked: 2023-11-24
 #: check_frequency: 30d
 #: next_check: 2023-12-31
@@ -7277,11 +7279,11 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
        undef,
        {
          'data' => '#: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023)
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2023-11-11 vvv
-#: next_check: 2023-12-21 vvv
+#: next_check: 2024-01-31 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -7415,24 +7417,7 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727203617906843664#m (hier: Wildschutzzaun-Reparatur)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1727355840028660051#m (nun auch hier: Brückenschäden)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11877 (Anfrage)
-#: source_id: viz2021:13.24577,52.62176,22.11.2023,07:05 (hier: in Höhe Am Eichenhain; bis 29.11.2023) (inaktiv)
-#: source_id: viz2021:13.256929,52.626684,21.11.2023,16:35 (hier: Brückenschäden; bis 01.12.2023) (hier: Vollsperrung nur für Kfz-Verkehr; bis 15.12.2023) (bis 19.12.2023)
-#: also_indoor: traffic (ex-H,B,G)
-#: last_checked: 2023-11-28 (Verkehrsmeldung)
-# REMOVED --- #: check_frequency: 2d
-#: next_check: 2023-12-19
-	2::inwork -430,23912 -406,23934
-',
-         'from' => undef,
-         'id' => 3974,
-         'text' => 'Rote Chaussee: Brückenschäden, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 19.12.2023',
-         'type' => 'gesperrt',
-         'until' => 1703001600
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024)
@@ -7476,7 +7461,7 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
          'until' => 1705075200
        },
        {
-         'data' => '#: source_id: viz2021:13.401194,52.590408,29.11.2023,07:00 (bis 15.12.2023) (bis 21.12.2023)
+         'data' => '#: source_id: viz2021:13.401194,52.590408,29.11.2023,07:00 (bis 15.12.2023) (bis 21.12.2023) (inaktiv)
 	q4::inwork; 10066,20494 9983,20581
 ',
          'from' => 1701151200,
@@ -7609,6 +7594,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=749605#post749605
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (G[falsch,beide Richtungen],W[falsch,beide Richtungen])
+#: osm_watch: way id="1232322874" version="1"
 #: last_checked: 2023-12-16
 	q4::inwork; 6681,10959 6607,10801
 ',
