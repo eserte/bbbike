@@ -5193,7 +5193,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-12-11 vvv
+#: last_checked: 2023-12-20 vvv
 #: check_frequency: 90d vvv
 # REMOVED (keine baldige Fertigstellung absehbar) --- #: next_check: 2023-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5250,7 +5250,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-12-18 (daf)
+#: last_checked: 2023-12-20
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5268,7 +5268,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-20
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
@@ -5589,10 +5589,10 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: last_checked: 2023-12-03 (mapillary) vvv
-#: next_check: 2023-12-31 vvv
+#: next_check: 2024-04-01 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
@@ -7262,16 +7262,17 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2023-11-24
-#: check_frequency: 30d
-#: next_check: 2023-12-31
+#: last_checked: 2023-12-20
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-12-31
 	q3::inwork 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
 ',
          'from' => 1699031494,
          'id' => 3952,
-         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten, voraussichtlich bis Ende 2023 (Stand Ende November 2023: alte Radwege sind noch passierbar)',
+         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten, mindestens bis Ende 2023 (Stand Mitte Dezember 2023: zumindest der alte Radweg Richtung Nordosten ist noch passierbar)',
          'type' => 'handicap',
-         'until' => 1704063599
+         'until' => undef
        },
        undef,
        undef,
@@ -7343,7 +7344,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
 #: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2023-11-20
+#: last_checked: 2023-12-20
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q2::inwork 13860,9861 13704,9691

@@ -80,7 +80,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2023-12-16
+#: last_checked: 2023-12-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -1208,6 +1208,7 @@ Mittelheide: Verbesserung der Befahrbarkeit geplant	?::projected 24089,6144 2411
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6658 (BVV-Beschluss 2020-12-10)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/fnLHXQriPYaXCg11dvvhibO6O8AmZFFbDGfEsncu/gNdQimrs/71-Anlagen/04/B1140ZB1.pdf (Zwischenbericht)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/YKuWFjr/71-Anlagen/05/B1140SB.pdf (Schlussbericht: Forstamt untersucht mögliche Verbesserungen)
+#: osm_watch: way id="37561702" version="11"
 #: XXX im Sommer einmalig prüfen, wie schlimm die sandigen Stellen sind
 #: last_checked: 2023-06-24 (mapillary)
 # REMOVED --- #: check_frequency: 60d
@@ -1672,10 +1673,11 @@ Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::pro
 #: source_id: 2147345106 (bis Ende 2019) (inaktiv)
 #: source_id: 2147345785 (bis 16.5.2020) (inaktiv)
 #: source_id: viz2021:13.515237,52.567077,08.09.2023,07:00 (Leitungsarbeiten bis 22.12.2023) (inaktiv)
-#: source_id: viz2021:13.515237,52.567077,06.10.2023,10:00 (Leitungsarbeiten bis 17.11.2023) (bis 22.12.2023)
+#: source_id: viz2021:13.515237,52.567077,06.10.2023,10:00 (Leitungsarbeiten bis 17.11.2023) (bis 22.12.2023) (bis 23.02.2024)
+#: source_id: viz2021:13.514671,52.566742,08.09.2023,07:00 (bis 23.02.2024)
 #: last_checked: 2023-08-12
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2020-05-16
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2024-02-23
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5485 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5617 (1. Quartal 2018) --- #: osm_watch: way id="40816680" version="9" --- #: osm_watch: way id="39965422" version="7" --- #: source_id: 2147342689 (wobei das für die andere Richtung gilt) --- #: source_id: 2147343084 (wobei das für die andere Richtung gilt) --- #: source_id: 2147343835 --- #: last_checked: 2018-10-13 --- #: next_check: 2019-03-29 --- # REMOVED --- #: check_frequency: 14d --- Ollenhauerstr.: Lückenschluss (Radweg oder Radspur)?	?::inwork; 5184,17855 5200,17938 5217,18030
@@ -1848,7 +1850,7 @@ Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sanierung-der-kanner-strasse-ist-jetzt-abgeschlossen_a380458 (Erwähnung der Asphaltierung und der Diagonalsperre)
 #: osm_watch: way id="423009430" version="23"
 #: note: Asphaltierung ist fertig, Diagonalsperre fehlt noch; evtl. wird es auch nur eine Quersperre werden; mittlerweile gibt es Poller an der Elsterstr.: bleibt es dabei?
-#: last_checked: 2023-12-17
+#: last_checked: 2023-12-20
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-09-29
 Braunschweiger Str.: Diagonalsperre oder Quersperre geplant	?::projected 13368,7300 13476,7330 13519,7345
@@ -2068,7 +2070,7 @@ Marienpark: Straße geplant	?::projected 8163,3660 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
-#: last_checked: 2023-11-18
+#: last_checked: 2023-12-20
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2228,9 +2230,9 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: next_check: 2024-06-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
 #: source_id[expired]: bvg2021:165#BVG334779_0
-#: source_id: viz2021:13.446003,52.498975,20.11.2023,08:00 (bis 22.12.2023)
-#: XXX Es kann Beeinträchtigungen in den kreuzenden Straßen geben, gesehen in der nördlichen Falckensteinstr im November 2023
-#: last_checked: 2023-12-16
+#: source_id: viz2021:13.446003,52.498975,20.11.2023,08:00 (bis 22.12.2023) (inaktiv)
+#: XXX Es kann Beeinträchtigungen in den kreuzenden Straßen geben, gesehen in der nördlichen Falckensteinstr im November 2023; mittlerweile (2023-12-20): keine Bautätigkeiten mehr zu erkennen
+#: last_checked: 2023-12-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-22
 Schlesische Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::inwork 13028,10629 13136,10535 13142,10530 13249,10445 13369,10337 13449,10262 13487,10227 13535,10184 13579,10146
@@ -2878,7 +2880,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="28"
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-20
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12049,9781 12053,9793
 # 
@@ -2929,6 +2931,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (evtl. Komplettsperrung in Höhe Weichselstr./Flughafenstr. ab 20.11.2023?)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1720012109302374413#m (noch keine Infos zur Umstellung am 20.11.2023)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-auf-der-karl-marx-strasse-in-berlin-neukolln-nordlicher-abschnitt-wird-vorubergehend-einbahnstrasse-10717204.html (Mitte/Ende November 2023 bis Januar 2024: Einbahnstraße Richtung Hermannplatz, auch Radfahrer sind betroffen, genauer Bereich unklar)
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/noch-zwei-jahre-grossbaustelle_a403149 (Komplettfertigstellung bis Ende 2025?)
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv)
@@ -3141,7 +3144,7 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bauarbeiten-auf-der-weserstrasse_a401051 (zwischen Innstr. und Wildenbruchstr. Restarbeiten bis Ende 2023, Markierungsarbeiten im Frühjahr 2024)
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
-#: last_checked: 2023-12-11
+#: last_checked: 2023-12-20
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -4621,7 +4624,7 @@ Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,1110
 #: by: https://berliner-abendblatt.de/kiez-news/neukolln/kiezblock-rixdorf-planungen-werden-vorgestellt-id205400
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/plan-fuer-verkehrsberuhigung-in-rixdorf-wird-vorgestellt_a372617
 #: source_id: LMS-BR_r_LMS-BR_237903_LMS-BR_72 (inaktiv)
-#: last_checked: 2023-11-03
+#: last_checked: 2023-12-20
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-30
 #: next_check: 2024-09-30
@@ -5380,7 +5383,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: last_checked: 2023-12-17
 #: next_check: 2024-01-31
 Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12658,12755 12690,12769 12687,12809
-#: last_checked: 2023-11-03
+#: last_checked: 2023-12-20
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 #: source_id: viz2021:13.441995,52.550324,05.12.2023,07:00 (Leitungsarbeiten (für den Zebrastreifen?), bis 26.01.2024)
 #: last_checked: 2023-10-19
@@ -5522,7 +5525,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://leute.tagesspiegel.de/pankow/intro/2020/02/13/111364/ (bis Ende 2021)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/noch-ignorieren-etliche-autofahrer-die-neuen-regelungen-auf-der-ossietzkystrasse_a280141 (noch 2020)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 ("neuer Radweg" -> vermutlich ist die Fahrradstraße gemeint, noch 2020)
-#: by: http://www.infravelo.de/projekt/bizetstrasse/ (ursprünglicher Eintrag) (Fahrradstraße geplant, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile ist Start im 3. Quartal 2021) (mittlerweile 1. Quartal 2022 - 3. Quartal 2022) (mittlerweile 2. Quartal 2022 - 3. Quartal 2022) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (4. Quartal 2022 - 2. Quartal 2023) (bis 4. Quartal 2023) (bis 3. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/bizetstrasse/ (ursprünglicher Eintrag) (Fahrradstraße geplant, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile ist Start im 3. Quartal 2021) (mittlerweile 1. Quartal 2022 - 3. Quartal 2022) (mittlerweile 2. Quartal 2022 - 3. Quartal 2022) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (4. Quartal 2022 - 2. Quartal 2023) (bis 4. Quartal 2023) (bis 3. Quartal 2023) (4. Quartal 2022 - 4. Quartal 2023, abgeschlossen)
 #: by: http://www.infravelo.de/projekt/bizetstrasse-2/ (existiert nicht mehr)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/informationen-fuer-anwohner_a322112 (temporärer Kiezblock ab Frühjahr 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Erwähnung)
@@ -5637,11 +5640,11 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by[nocache]: https://nitter.net/GBinfraVelo/status/1735222061880983639#m (Fertigstellung Richtung Norden noch 2023)
 #: source_id: viz2021:13.412154,52.541035,04.09.2023,07:00 (bis 29.09.2023, Gesamtbaumaßnahme bis Februar 2024) (bis 24.11.2023) (inaktiv)
 #: source_id: viz2021:13.412537,52.544431,04.09.2023,07:00 (bis 24.11.2023) (bis 13.11.2023) (inaktiv)
-#: source_id: viz2021:13.412979,52.546342,13.11.2023,08:00 (zwischen Gleimstr. und Milastr. Richtung Süden, bis 05.01.2024)
+#: source_id: viz2021:13.412979,52.546342,13.11.2023,08:00 (zwischen Gleimstr. und Milastr. Richtung Süden, bis 05.01.2024) (bis 29.03.2024)
 #: XXX Richtung Süden vermutlich nur bis Topsstr.
 #: last_checked: 2023-12-19 (daf)
 #: check_frequency: 30d
-#: next_check: 2024-02-29
+#: next_check: 2024-03-29
 Schönhauser Allee: Radwege werden zu einer protected bike lane umgewandelt	?::inwork 10881,15047 10883,15129 10884,15152 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697 10953,15787
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=736336#post736336 (Neubau Schönhauser Brücke 2025-2030)
@@ -7084,7 +7087,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Umsetzung der Fahrradstraße 2023)
 #: by[nocache]: https://archive.is/dz81E (Tagesspiegel; allerdings wurde die Finanzierung gestoppt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11084 (Einwohnerantrag)
-#: last_checked: 2023-12-15 vvv
+#: last_checked: 2023-12-20 vvv
 #: next_check: 2024-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
@@ -7242,7 +7245,7 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022)
 #: XXX mittlerweile wird im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park anscheinend eine Radwegauffahrt gebaut
-#: last_checked: 2023-11-20
+#: last_checked: 2023-12-20
 #: check_frequency: 120d
 # REMOVED (wurde 2022 nicht realisiert) --- #: next_check: 2022-12-31
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 13860,9861
@@ -7830,13 +7833,13 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1348146.php (Erwähnung von 2,64km, vermutlich hier (passt von der Streckenlänge))
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1372807.php (Bauarbeiten ab 9.10.2023 bis voraussichtlich 24. November 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959
-#: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv) (bis 15.12.2023) (bis 23.12.2023)
+#: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv) (bis 15.12.2023) (bis 23.12.2023) (bis 22.12.2023)
 #: osm_watch: way id="886496559" version="6"
 #: osm_watch: note 3998167 2
 #: osm_watch: note 3938423 1
 #: last_checked: 2023-11-01 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2023-12-23
+#: next_check: 2023-12-22
 # REMOVED (hier nicht, erst ab Altheider Str.) --- Adlergestell: Radspur auch stadteinwärts	?::inwork; 19904,3464 19857,3514 19812,3561
 Adlergestell: Radspur auch stadteinwärts	?::inwork; 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
 # 
@@ -8051,7 +8054,7 @@ Heesestr./Schwabenallee: Zebrastreifen soll errichtet werden	?::projected 21359,
 # 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
-#: last_checked: 2023-12-11 vvv
+#: last_checked: 2023-12-20 vvv
 #: osm_watch: way id="1199463691" version="1"
 #: osm_watch: way id="693633081" version="8"
 #: osm_watch: way id="1199463688" version="1"
@@ -10103,7 +10106,7 @@ unter der Salvador-Allende-Brücke: hier entsteht ein asphaltierter und beleuchte
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_38_3743_3802_online.pdf (Grundstücksnummerierungen)
 #: XXX vermutlich wird es am westlichen Rand im Zuge der Hofheimer Str. einen Weg geben; unklar, ob es eine Verlängerung der Heldburger Str. geben wird
 #: osm_watch: way id="89803856" version="19"
-#: last_checked: 2023-11-02
+#: last_checked: 2023-12-15 (architektur-urbanistik)
 #: check_frequency: 360d
 Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::inwork 17633,14857 17633,14707 17763,14588
 # 
@@ -10720,16 +10723,18 @@ Hansastr.: neue KGA entsteht	? 15561,16648 15455,16627 15473,16519 15571,16585
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/verkehrskonzept-reuterkiez-1375129.php ("in den nächsten Wochen") (mit Maßnahmenkarte)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-zur-verkehrsberuhigung-im-reuterkiez-beginnen-in-diesen-wochen_a399933
 #: XXX Maßnahmen:
-#: XXX - Hobrechtbrücke: Einbahnstraßenregelung für Kfz; Fahrradspuren
-#: XXX - Maybachufer: Quersperre zwischen Bürknerstraße und Friedelstraße
-#: XXX - Sanderstraße: Einbahnstraße für Kfz
-#: XXX - Pflügerstraße/Friedelstraße: Diagonalsperre
-#: XXX - Reuterstraße: Einbahnstraße für Kfz
-#: XXX - Weserstraße: zwischen Friedelstraße und Hobrechtstraße wird die Einbahnstraßenregelung für Kfz umgekehrt
+#: XXX - Reuterstraße: Einbahnstraße für Kfz (zwischen Lenaustraße und Pflügerstraße)
 #: XXX - Weserstraße: zwischen Pannierstraße und Reuterstraße wird die Einbahnstraßenregelung für Kfz umgekehrt
-#: XXX - Hobrechtstraße: Quersperre
-#: XXX - Nansenstraße: Quersperre
-#: last_checked: 2023-12-03
+#: XXX - Hobrechtstraße: Quersperre (zwischen Sanderstraße und Pflügerstraße)
+#: XXX - Nansenstraße: Quersperre (zwischen Reuterplatz und Framstraße)
+#: XXX teilweise realisierte Maßnahmen
+#: XXX - Hobrechtbrücke: Einbahnstraßenregelung für Kfz (done); Fahrradspuren (todo)
+#: note: bereits realisierte und eingetragene Maßnahmen
+#: note: - Maybachufer: Quersperre zwischen Bürknerstraße und Friedelstraße
+#: note: - Sanderstraße: Einbahnstraße für Kfz
+#: note: - Pflügerstraße/Friedelstraße: Diagonalsperre
+#: note: - Weserstraße: zwischen Friedelstraße und Hobrechtstraße wird die Einbahnstraßenregelung für Kfz umgekehrt
+#: last_checked: 2023-12-20
 #: check_frequency: 14d
 Reuterkiez: Kiezblock	?::projected 11635,10023 11938,9168 12194,9057 12508,9585 11635,10023
 # 

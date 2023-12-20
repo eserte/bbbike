@@ -331,7 +331,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-12-13 vvv
+#: last_checked: 2023-12-20 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -2479,7 +2479,7 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 #
 #: next_check_id: GOERLITZERUFER-2023
 #: XXX wie sieht es nach dem Umbau aus?
-#: last_checked: 2023-11-24 vvv
+#: last_checked: 2023-12-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2023-12-31 vvv
 	RW1; 13216,9983 13155,9907
@@ -2893,7 +2893,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2023-12-18 (daf)
+#: last_checked: 2023-12-20
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7205,7 +7205,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2023-12-03 vvv
+#: last_checked: 2023-12-20 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7245,11 +7245,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-20
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2023-12-03
+#: last_checked: 2023-12-20
 #: check_frequency: 60d
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.

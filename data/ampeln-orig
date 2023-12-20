@@ -2643,13 +2643,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2023-12-17
+#: last_checked: 2023-12-20
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2023-12-11
+#: last_checked: 2023-12-20
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3520,7 +3520,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2023-12-17
+#: last_checked: 2023-12-20
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3528,7 +3528,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2023-12-16 (webcam)
+#: last_checked: 2023-12-20
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
