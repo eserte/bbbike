@@ -30481,19 +30481,19 @@ EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Ende November 2023: Hauptverbindungsweg ist noch immer gesperrt)', # früher: voraussichtlich bis Oktober 2023
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte Dezember 2023: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2023-12-12 vvv
+#: last_checked: 2023-12-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
-	2::inwork 13239,11567 13261,11572 13274,11585
-	2::inwork 13261,11572 13308,11515 13323,11497
+# REMOVED (hier nicht mehr) ---	2::inwork 13239,11567 13261,11572 13274,11585
+# REMOVED (hier nicht mehr) ---	2::inwork 13261,11572 13308,11515 13323,11497
 	2::inwork 13324,11529 13308,11515
 # REMOVED (nicht mehr) ---	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400
 # REMOVED (nicht mehr) --- außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
@@ -38793,7 +38793,7 @@ EOF
 EOF
      },
      { from  => 1682892000, # 2023-05-01 00:00
-       until => $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
+       until => undef, # $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
        text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis Ende 2023', # was: Ende der Bauarbeiten unbekannt', # was: "voraussichtlich bis 08.07.2023"
        type  => 'handicap',
        data  => <<EOF,
@@ -38805,13 +38805,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
 #: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023)
-#: osm_watch: way id="1172668082" version="11"
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm
-#: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht?
-#: last_checked: 2023-11-24 (osm)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-12-31
+# REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
 EOF
      },
@@ -40467,7 +40461,7 @@ EOF
        text  => 'Petershagen, Bahnhofstr.: Bauarbeiten zwischen Lindenstr. und Am Bahnhof, Sperrung, evtl. sind auch Radfahrer betroffen, 21.08.2023 08:00 Uhr bis 21.12.2023 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/23/118 (bis 15.12.2023) (bis 21.12.2023)
+#: source_id: LS/221-F/23/118 (bis 15.12.2023) (bis 21.12.2023) (inaktiv)
 	2::inwork 34913,13893 35382,13974
 EOF
      },
@@ -40763,8 +40757,8 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1384104.php (voraussichtlich bis Mitte Dezember 2023)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731915050880024610#m (neue Verkehrsführung, gilt die Einbahnstraße tatsächlich nicht für Radfahrer?)
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr) (bis 5.12.2023) (inaktiv)
+#: source_id: viz2021:13.4529,52.52415,20.12.2023,10:50 (bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023) (bis 31.01.2024)
-#: source_id: viz2021:13.4529,52.52415,20.12.2023,10:50 (bis 31.01.2024)
 #: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023, weitere Arbeiten im Anschluss)
 #: osm_watch: note 3677859 4
 # REMOVED (zwei Einbahnstraßenregelungen, Radfahrer frei) --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: last_checked: 2023-11-16 --- #: next_check: 2023-12-05

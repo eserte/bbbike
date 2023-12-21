@@ -2194,7 +2194,7 @@ Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1315351.php (Umsetzung 2023)
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/zwoelf-kilometer-neue-radwege-in-2023_a379414 (und weitere Radwege in Reinickendorf werden erwähnt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11674 (Bauarbeiten laufen)
-#: source_id: viz2021:13.317355,52.57627,17.07.2023,07:00 (bis 29.09.2023) (bis 06.10.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.317355,52.57627,17.07.2023,07:00 (bis 29.09.2023) (bis 06.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: last_checked: 2023-10-03 (einige Bauarbeiten, insbesondere auf der Südseite)
 #: check_frequency: 90d
 #: next_check: 2023-12-31
@@ -4185,7 +4185,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: XXX im Neubaubereich neues Betonpflaster
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-21
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-10-31
 Wriezener Park: Umbauarbeiten, einige Wege sind zwischenzeitlich gesperrt	?::inwork 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
@@ -5720,7 +5720,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="18"
 #: also_indoor: traffic
-#: last_checked: 2023-11-22 (traffic)
+#: last_checked: 2023-12-21 (traffic)
 #: check_frequency: 30d
 # REMOVED (this was for outdoor checks) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -5803,7 +5803,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022) (inaktiv)
 #: source_id: viz2021:13.475846,52.501257,25.04.2023,13:00 (Bauarbeiten bis 31.05.2023) (inaktiv)
 #: source_id: viz2021:13.48067,52.49917,20.10.2023,09:55 (Bauarbeiten bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: last_checked: 2023-12-07
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
@@ -7834,12 +7834,14 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1372807.php (Bauarbeiten ab 9.10.2023 bis voraussichtlich 24. November 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959
 #: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv) (bis 15.12.2023) (bis 23.12.2023) (bis 22.12.2023)
+#: source_id: viz2021:13.518694,52.450631,22.12.2023,15:00 (ab S-Bhf. Johannisthal, bis 02.01.2024)
 #: osm_watch: way id="886496559" version="6"
 #: osm_watch: note 3998167 2
 #: osm_watch: note 3938423 1
 #: last_checked: 2023-11-01 (mapillary)
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
 #: next_check: 2023-12-22
+# REMOVED (für den 2. Abschnitt) --- #: next_check: 2024-01-02
 # REMOVED (hier nicht, erst ab Altheider Str.) --- Adlergestell: Radspur auch stadteinwärts	?::inwork; 19904,3464 19857,3514 19812,3561
 Adlergestell: Radspur auch stadteinwärts	?::inwork; 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
 # 
@@ -8034,6 +8036,8 @@ Audre-Lorde-Str.: nördlicher Abschnitt der Manteuffelstr. soll umbenannt werden	
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1697168032076828703#m (Spatenstich am 1.9.2023)
 #: source_id: LS/221-E/23/132 (bis 22.12.2023)
 #: XXX bereits fertiggestellte Abschnitte fehlen bei BBBike
+#: osm_watch: way id="10796766" version="15"
+#: osm_watch: way id="933944421" version="2"
 #: last_checked: 2023-09-01 (indoor)
 #: check_frequency: 180d
 #: next_check: 2023-12-22
@@ -8135,7 +8139,7 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 # REMOVED (bei osm bestätigt, eingetragen) --- #: source_id: LS/223-P/23/180 (bis 29.11.2023) (inaktiv) --- #: next_check: 2023-11-29 --- Spandauer Str. (Falkensee): Fußgängerampel wird errichtet	?::inwork -9330,17182 -9346,17214 -9315,17226
 # 
 #: next_check_id: REVALER-2023
-#: by: https://www.infravelo.de/projekt/revaler-strasse/ (2.-3. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) vvv
+#: by: https://www.infravelo.de/projekt/revaler-strasse/ (2.-3. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (abgeschlossen) vvv
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10192 (EwA)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11074 (unklare Situation, geplant war 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1369409.php (Bauarbeiten beginnen am 27.9.2023, bis Ende November 2023, Einbahnstraßenregelung während der Bauarbeiten (offen Richtung Westen), Zebrastreifen in Höhe Simon-Dach-Str.)
@@ -8143,9 +8147,8 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 #: by: https://berliner-abendblatt.de/berlin-news/radweg-auf-revaler-strasse-einschraenkungen-fuer-autos-id233272
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
-#: note: die provisorische Radspur mit durchgehender Gelbmarkierung; Richtung Osten: durchgängige niedrige Protektion; Richtung Westen vermutlich abschnittsweise nur markiert
 #: priority: #D
-#: last_checked: 2023-12-10 vvv
+#: last_checked: 2023-12-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -8851,7 +8854,7 @@ Planstraße G: genaue Lage, Qualität? geplanter Name: An der Waldsiedlung	?::proj
 #: by: https://www.be.de/project/ferdinand-schulze-strasse/
 #: by: https://www.ferdinands-garden.de/
 #: source_id: viz2021:13.511463,52.539021,30.10.2023,09:00 (Straßenbauarbeiten bis 27.11.2023) (inaktiv)
-#: source_id: viz2021:13.511442,52.539,30.10.2023,09:00 (Straßenbauarbeiten bis 21.12.2023)
+#: source_id: viz2021:13.511442,52.539,30.10.2023,09:00 (Straßenbauarbeiten bis 21.12.2023) (inaktiv)
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="7"
@@ -10723,11 +10726,16 @@ Hansastr.: neue KGA entsteht	? 15561,16648 15455,16627 15473,16519 15571,16585
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/verkehrskonzept-reuterkiez-1375129.php ("in den nächsten Wochen") (mit Maßnahmenkarte)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-zur-verkehrsberuhigung-im-reuterkiez-beginnen-in-diesen-wochen_a399933
 #: XXX Maßnahmen:
+#: osm_watch: way id="165292181" version="20"
 #: XXX - Reuterstraße: Einbahnstraße für Kfz (zwischen Lenaustraße und Pflügerstraße)
+#: osm_watch: way id="1136034160" version="1"
 #: XXX - Weserstraße: zwischen Pannierstraße und Reuterstraße wird die Einbahnstraßenregelung für Kfz umgekehrt
+#: osm_watch: way id="30806049" version="25"
 #: XXX - Hobrechtstraße: Quersperre (zwischen Sanderstraße und Pflügerstraße)
+#: osm_watch: way id="228498042" version="8"
 #: XXX - Nansenstraße: Quersperre (zwischen Reuterplatz und Framstraße)
 #: XXX teilweise realisierte Maßnahmen
+#: osm_watch: way id="16114536" version="19"
 #: XXX - Hobrechtbrücke: Einbahnstraßenregelung für Kfz (done); Fahrradspuren (todo)
 #: note: bereits realisierte und eingetragene Maßnahmen
 #: note: - Maybachufer: Quersperre zwischen Bürknerstraße und Friedelstraße
