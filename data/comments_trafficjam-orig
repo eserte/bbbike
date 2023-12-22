@@ -185,26 +185,25 @@ Wendenschloßstr.	Jam; 22832,4491 22791,4457 22759,4430 22740,4415 22700,4351
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9442&date=20221002 (wird nicht mehr "kritisch" eingeschätzt) --- #: also_indoor: traffic --- #: source_id: viz2021:13.525209,52.480103,21.02.2022,08:00 (bis 19.3.2022) (inaktiv) --- #: note: größere Staus typischerweise nur bei gleichzeitigen Problemen (Baustellen, sonstiges) in der Treskowallee --- #: tempex: rush_hour_evening --- #: valid: -20220319 --- Ehrlichstr.	Jam; 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1384032.php (Bauarbeiten ab 13.11.2023, Bauzeit mindestens 10 Wochen, ggfs. Änderung der Verkehrsführung)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1722965377288692153#m (nur Nordrichtung der Treskowallee betroffen, erst ab 15.11.2023)
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-treskowallee-wegen-dringender-reparaturarbeiten/ (aktualisierte Pressemitteilung)
-#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/treskowallee-in-eine-richtung-gesperrt_a399424
-#: by: https://berliner-abendblatt.de/berlin-news/strassensperrung-in-berlin-karlshorst-id237320
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-treskowallee-wegen-dringender-reparaturarbeiten/ (Sperrung bis Mitte Dezember 2023)
-#: source_id: viz2021:13.518146,52.471786,15.11.2023,12:00 (Treskowallee, bis 11.12.2023) (inaktiv)
-#: source_id: viz2021:13.51474,52.46874,15.11.2023,00:00 (Treskowallee, bis 11.12.2023) (inaktiv)
-#: source_id: viz2021:13.518146,52.471786,15.11.2023,11:25 (Treskowallee, bis 11.12.2023) (bis 15.12.2023) (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.519149,52.472988,20.12.2023,15:00 (wieder Zweirichtungsverkehr in der Treskowallee, Verengung bis 23.02.2024)
-#: note: direkt in der Treskowallee wird es angeblich keine Einschränkungen für den Radverkehr geben
-#: note: bei rbbtext auch erst ab 15.11.2023
-#: note: mittlerweile für beide Richtungen auf einer Fahrbahn offen --- reicht das, um den Stau aus der Ehrlichstr. rauszunehmen?
-#: XXX außerdem möglich: Einbahnstraßenregelungen im Prinzenviertel (aber bislang keine gesehen)
-#: last_checked: 2023-12-21 (indoor)
-#: check_frequency: 2d
-# REMOVED --- #: next_check: 2023-12-31
-#: next_check: 2024-02-23
-#: tempex: rush_hour_evening
-Ehrlichstr.	Jam; 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
+# REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1384032.php (Bauarbeiten ab 13.11.2023, Bauzeit mindestens 10 Wochen, ggfs. Änderung der Verkehrsführung)
+# REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1722965377288692153#m (nur Nordrichtung der Treskowallee betroffen, erst ab 15.11.2023)
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-treskowallee-wegen-dringender-reparaturarbeiten/ (aktualisierte Pressemitteilung)
+# REMOVED --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/treskowallee-in-eine-richtung-gesperrt_a399424
+# REMOVED --- #: by: https://berliner-abendblatt.de/berlin-news/strassensperrung-in-berlin-karlshorst-id237320
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-treskowallee-wegen-dringender-reparaturarbeiten/ (Sperrung bis Mitte Dezember 2023)
+# REMOVED --- #: source_id: viz2021:13.518146,52.471786,15.11.2023,12:00 (Treskowallee, bis 11.12.2023) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.51474,52.46874,15.11.2023,00:00 (Treskowallee, bis 11.12.2023) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.518146,52.471786,15.11.2023,11:25 (Treskowallee, bis 11.12.2023) (bis 15.12.2023) (bis 31.12.2023) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.519149,52.472988,20.12.2023,15:00 (wieder Zweirichtungsverkehr in der Treskowallee, Verengung bis 23.02.2024)
+# REMOVED --- #: note: direkt in der Treskowallee wird es angeblich keine Einschränkungen für den Radverkehr geben
+# REMOVED --- #: note: bei rbbtext auch erst ab 15.11.2023
+# REMOVED --- #: note: mittlerweile für beide Richtungen auf einer Fahrbahn offen --- reicht das, um den Stau aus der Ehrlichstr. rauszunehmen?
+# REMOVED --- #: XXX außerdem möglich: Einbahnstraßenregelungen im Prinzenviertel (aber bislang keine gesehen)
+# REMOVED --- #: last_checked: 2023-12-21 (indoor)
+# REMOVED --- #: check_frequency: 2d
+# REMOVED --- #: next_check: 2024-02-23
+# REMOVED --- #: tempex: rush_hour_evening
+# REMOVED --- Ehrlichstr.	Jam; 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 # 
 #: tempex: rush_hour_evening
 Rudolf-Rühl-Allee	Jam; 21239,6063 20722,6971 20640,7122 20603,7189 20653,7289

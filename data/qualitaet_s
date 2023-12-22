@@ -196,9 +196,9 @@ Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
 Weichselstr./Maybachufer: Asphalt	Q0 12755,9188 12845,9304 12837,9353
 Treptower Str.: Asphalt	Q0 13863,8597 14011,8787 14151,8967
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15461,11313
-Pfarrstr.: sehr guter Asphalt	Q0 15461,11313 15477,11338
-Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 15515,11416 15498,11380
-Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
+Pfarrstr.: sehr guter Asphalt	Q0 15461,11313 15476,11341
+Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 15515,11416 15497,11381
+Schulze-Boysen-Str: sehr guter Asphalt	Q0 15476,11341 15497,11381
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15639,11653 15489,11735 15413,11690
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
@@ -280,7 +280,7 @@ Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14651,11666 14622,1
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14710,11824 14783,11949 14836,12045
 Finowstr.: Kopfsteinpflaster	Q2 14836,12045 14854,12137
 Glatzer Str.: Kopfsteinpflaster	Q2 14570,11589 14651,11666
-Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15220,11440 15162,11458
+Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15476,11341 15403,11384 15303,11412 15220,11440 15162,11458
 Wiesenweg (Lichtenberg): Asphalt	Q0 15162,11458 15126,11474 15055,11505
 Wartenbergstr. (Lichtenberg): schlechtes Kopfsteinpflaster	Q3 15220,11440 15300,11584
 Wartenbergstr. (Lichtenberg): Asphalt	Q0 15300,11584 15328,11636
@@ -8998,13 +8998,14 @@ Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 (westlicher Wuhlewanderweg): teilweise Schotter	Q1 22110,13639 22140,13649 22263,13758 22347,13858
 (westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22416,14148
 westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22416,14148 22462,14172 22639,14384 22679,14450 22670,14520 22620,14673 22528,14769 22455,14815 22462,14846 22439,14873 22378,14904 22323,15119
-(Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18132,10183 18130,10201 18113,10208
-(Erieseering - am Tränkegraben): Parkweg	Q1 18113,10208 18085,10244 18081,10312 18042,10392
+(Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18132,10183 18114,10215
+(Erieseering - am Tränkegraben): Parkweg	Q1 18114,10215 18085,10244 18081,10312 18042,10392
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18042,10392 18039,10398
 (Erieseering - am Tränkegraben): Parkweg	Q1 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0 17848,11204 17893,11146
 (Zachertstr. - am Tränkegraben): unbefestigt mit Pflasterreihen	Q2 17893,11146 17905,11122
 (Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619
+(Erieseering - Upstallweg): unbefestigt	Q2 18114,10215 18112,10281 18121,10314 18128,10343 18125,10364 18128,10389 18116,10403
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17693,11035 17680,11058
 (am Tränkegraben - Moldaustr.): Gehwegplatten	Q1 17870,10619 17856,10560 17864,10537 17856,10508
@@ -11130,9 +11131,10 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0 10547,15586 10542,15609
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
-Georg-Klingenberg-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17656,8700 17792,8660 17846,8644
+Georg-Klingenberg-Str.: Asphalt	Q0 17656,8700 17668,8696 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
-Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483 17588,8413
+Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
+Irmtraud-Morgner-Str.: Asphalt, letzte Deckschicht fehlt	Q1 17521,8549 17619,8558
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
 Heiner-Müller-Str.: Asphalt	Q0 17648,8626 17773,8588
 Ruth-Baumgarte-Str.: Asphalt	Q0 17794,8429 17738,8450 17682,8464 17608,8483
@@ -15279,7 +15281,7 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q1 
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
 Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,8692
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
-Hönower Wiesenweg: Asphalt, letzte Deckschicht fehlt	Q1 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17588,8413
+Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17588,8413
 Hönower Wiesenweg: Asphalt	Q0 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 Hönower Wiesenweg: Asphalt	Q0 17753,8290 17793,8225 17856,8162
 Frank-Zappa-Str.: guter Beton	Q0 18591,14573 18896,14649 18868,14745 18938,14768

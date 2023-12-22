@@ -990,6 +990,8 @@ Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 (Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
 Mittelstreifen	3nocross::ignrte 14853,7451 14775,7385 14758,7373
 Straﬂe 3	1s 18816,19648 18730,19672 18644,19695 18544,19722
+Heiner-M¸ller-Str.: schwarz-weiﬂe Einfahrt-verboten-Schilder	1 17497,8623 17640,8627
+Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Gˆrlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2847,6 +2849,7 @@ tragen (Treppe, 14 Stufen)	0:25:24 -1667,16828
 tragen (Treppe, 31 Stufen)	0:30:-213 17983,8960
 Schranke	BNP:3:-213:trailer=10 13081,14090
 tragen (Treppe, 5 Stufen)	0:10:-30 10290,12742
+tragen (8 weite Stufen)	0:30:-164 18121,10314
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3448,14 +3451,12 @@ Storkower Straﬂe (Kˆnigs Wusterhausen): Neubau der Eisenbahnbr¸cke, Sperrung	2::
 Maxim-Gorki-Str. (Kˆnigs Wusterhausen): Einbahnstraﬂenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
-Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
-Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
-Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
+Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17627,8556
+Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17640,8627 17656,8700 17468,8692
 Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17755,8519 17627,8556
-Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17773,8588 17648,8626
-Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17648,8626 17627,8556 17608,8483 17682,8464 17738,8450
+Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17608,8483 17682,8464 17738,8450
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673

@@ -2279,11 +2279,11 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024)
 #: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2023-10-29
 #: check_frequency: 90d
-#: next_check: 2023-12-31
+#: next_check: 2024-06-30
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -8149,9 +8149,11 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
 #: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022) (inaktiv)
 #: source_id: viz2021:13.39961,52.49841,11.01.2023,11:39 (bis 26.05.2023) (inaktiv)
-#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023) (bis 01.09.2023) (bis 31.12.2023)
-#: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023) (bis 31.5.2023) (bis 01.09.2023) (bis 31.12.2023)
+#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023) (bis 01.09.2023) (bis 31.12.2023) (inaktiv)
+#: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023) (bis 31.5.2023) (bis 01.09.2023) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
+#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024)
+#: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
@@ -8265,7 +8267,8 @@ Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # REMOVED (Schilder existieren nicht mehr) --- Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536
 # REMOVED (mittlerweile Tempo-20-Zone) ---	RW6;RW6 17524,8536 17515,8567 17497,8623 17468,8692
 # REMOVED (mittlerweile Tempo-20-Zone) ---	RW6;RW6 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
-	RW6;RW6 17738,8450 17682,8464 17608,8483 17627,8556 17648,8626 17773,8588 17755,8519 17738,8450
+	RW6;RW6 17738,8450 17682,8464 17608,8483 17627,8556 17648,8626 17668,8696
+	RW6;RW6 17648,8626 17773,8588 17755,8519 17738,8450
 	RW6;RW6 17627,8556 17755,8519
 Tempo 10	RW6;RW6 17380,8858 17335,8971 17308,9090 17282,9135
 Tempo 10	RW6;RW6 17308,9090 17300,9135
