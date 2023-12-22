@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2023 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -269,7 +269,7 @@ sub get_html {
 EOF
     if ($use_v3) {
 	$html .= <<EOF;
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.53&language=de"></script>
 EOF
     } else {
 	$html .= <<EOF;
