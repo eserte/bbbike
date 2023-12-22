@@ -616,7 +616,10 @@ sub action_forever_until_error {
 	    flock $LOCK, &Fcntl::LOCK_EX|&Fcntl::LOCK_NB
 		or die "Can't lock: $!";
 	    # XXX use system() once statusref is implemented
+	    my $t0 = time;
 	    $d->qx({quiet => 0, statusref => \my %status}, @cmd);
+	    my $t1 = time;
+	    print STDERR "Run finished after " . s2ms($t1-$t0) . " minutes (at " . strftime("%F %T", localtime) . ")\n";
 	    exit 2 if ($status{signalnum}||0) == 2;
 	    $error_count++ if $status{exitcode};
 	    exit 1 if $error_count >= $allowed_errors;
