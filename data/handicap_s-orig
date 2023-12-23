@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: XXX Sieht nach Leitungsarbeiten aus.
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Gr¸nberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -47,7 +47,7 @@ Stralauer Allee: Radfahrer und Fuﬂg‰nger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -96,7 +96,7 @@ Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2023-12-12 vvv
+#: last_checked: 2023-12-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -333,7 +333,7 @@ Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2023-12-02 vvv
+#: last_checked: 2023-12-23 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -456,7 +456,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-12-14 vvv
+#: last_checked: 2023-12-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -4657,6 +4657,9 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
 Colbestr.: eng	q0- 14468,11992 14416,11815
+# 
+#: note: Ausschilderung: Gehweg, Radfahrer frei
+Lisa-Fittko-Str.: einige Fuﬂg‰nger	q1 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 # 
 ######################### User Contributions #################################
 # 

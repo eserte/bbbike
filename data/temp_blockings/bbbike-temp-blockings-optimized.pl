@@ -4013,7 +4013,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6858,13 +6858,14 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024)
 #: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
-#: XXX Sind Radfahrer noch immer betroffen?
+#: osm_watch: way id="36892597" version="39"
+#: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen)
 #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
-#: last_checked: 2023-12-16 vvv
+#: last_checked: 2023-12-23 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2024-01-09 vvv
 Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
-Gipsstr.	q3::inwork 10341,13376 10199,13446
+# REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7183,7 +7184,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: osm_watch: way id="35557161" version="25"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-23
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
 ',
@@ -7194,16 +7195,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: STEGEWEG-2023
-	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
-',
-         'from' => 1699225200,
-         'id' => 3944,
-         'text' => 'Stegeweg: Fahrbahninstandsetzung, evtl. gibt es Einschränkungen für Radfahrer, vom 06. November 2023 bis zum 22. Dezember 2023 ',
-         'type' => 'handicap',
-         'until' => 1703285999
-       },
+       undef,
        undef,
        undef,
        {
@@ -7558,6 +7550,25 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'from' => undef,
          'id' => 3991,
          'text' => 'Genthiner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11074 (Mittel sind gesperrt, geplanter Abschluss 2023)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1382027.php (Baustart 7.11.2023, Eröffnung für Dezember 2023 geplant)
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/die-naechste-fahrradstrasse_a398917
+#: osm_watch: way id="1057188586" version="9"
+#: osm_watch: way id="4612406" version="26"
+#: note: Bei der letzten Fahrt waren noch nicht alle Schilder da, insbesondere haben alle "Fahrrad frei"-Zusatzschilder gefehlt.
+#: add_fragezeichen: Sind die Radfahrer-frei-Schilder mittlerweile da?
+#: last_checked: 2023-12-23
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-12-04
+	q4; 10794,10927 10824,11010 10690,11167
+',
+         'from' => undef,
+         'id' => 3992,
+         'text' => 'Stallschreiberstr.: Fahrradstraße in Einrichtung, Einbahnstraße, Radfahrer-frei-Schilder fehlen noch',
          'type' => 'handicap',
          'until' => undef
        }

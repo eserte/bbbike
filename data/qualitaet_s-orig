@@ -12851,7 +12851,15 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18222,8103 18276,8136
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
-George-Stephenson-Str.: Asphalt	Q0 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
+Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
+#: next_check_id: EUROPACITY-2015
+#: last_checked: 2023-12-23 vvv
+#: check_frequency: 45d vvv
+(Heidestr./Hedwig-Porsch¸tz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
+George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136
+#: check_frequency ^^^
+#: last_checked ^^^
+George-Stephenson-Str.: Asphalt	Q0 7614,14136 7679,14030 7734,13944
 (Straﬂe A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21346,7321 21284,7289 21233,7246
 (Straﬂe B, Innovationspark Wuhlheide): Asphalt	Q0 21346,7321 21341,7487
 (Straﬂe E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111

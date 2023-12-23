@@ -2226,7 +2226,7 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1386088.php (geschützte Radfahrstreifen (Klebeborde, einige Leitboys) in der Schlesischen Str., 20.11.2023 - Ende 2023; in der Köpenicker Str. 2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/schlesische-strasse-bekommt-neue-geschutzte-radfahrstreifen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-radwegbis-jahresende_a400571
-#: last_checked: 2023-12-16
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -2308,7 +2308,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-vollendung-band-des-bundes-in-entwicklung/?postID=739447#post739447 (Erwähnung)
-#: last_checked: 2023-12-02
+#: last_checked: 2023-12-23
 #: check_frequency: 120d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::projected 8870,12647 8754,12622
 # 
@@ -3373,28 +3373,20 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134104/04-Anlagen/01/1_Version_vom_11_07_2016.doc
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Widmung)
 #: XXX vorgeschlagene Straßenbenennungen (fehlen in Berlin.coords.data):
-#: XXX Ziffer 0 - Otto-Weidt-Platz (Moabit|10557)
-#: XXX Ziffer 1 - George-Stephenson-Str.
-#: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
-#: XXX Ziffer 6 - Annemarie-Renger-Str. --- vermutlich nicht, weil die Forumsquerung bereits diesen Namen bekommt
+#: REMOVED (realisiert) --- XXX Ziffer 0 - Otto-Weidt-Platz (Moabit|10557)
+#: REMOVED (teilweise realisiert) --- XXX Ziffer 1 - George-Stephenson-Str.
+#: REMOVED (realisiert) --- XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
+#: XXX Ziffer 6 - Annemarie-Renger-Str. --- vermutlich nicht, weil die Forumsquerung bereits diesen Namen bekommt, was ist der Ersatz?
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
 # REMOVED (existiert) --- #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_54_8369_8464_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse) --- Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7705,14383 7612,14325
-#: next_check_id: GOLDAMEIRSTEG-2019
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Widmung zwischen Hedwig-Porschütz-Str. und zukünftigen Otto-Weidt-Platz)
-#: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_19_1149_1212_online.pdf (Widmung als Straßenland; Verkehrsfreigabe voraussichtlich Ende Juni 2022)
+# REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Widmung zwischen Hedwig-Porschütz-Str. und zukünftigen Otto-Weidt-Platz) --- #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_19_1149_1212_online.pdf (Widmung als Straßenland; Verkehrsfreigabe voraussichtlich Ende Juni 2022)
 # REMOVED (ist nun der realisierte Abschnitt) --- #: osm_watch: way id="237716440" version="13"
 # REMOVED --- #: osm_watch: way id="642581102" version="4" --- #: XXX wird zusammen mit dem Otto-Weidt-Platz gebaut --- #: last_checked: 2022-08-12 (architektur-urbanistik) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-06-30 --- Uferweg in Bau	?::inwork 7923,14142 7912,14160 7866,14215
 # REMOVED (hier offen) --- Uferweg in Bau	?::inwork 7866,14215 7830,14268 7797,14317
-#: by: https://www.berliner-woche.de/moabit/c-bauen/sanierung-und-umbau-des-kornversuchsspeichers-abgeschlossen_a383726
-#: XXX am Speicherhaus --- wie wird die Wegführung hier aussehen? Mittlerweile kann man als Fußgänger halbwegs durch.
-#: last_checked: 2023-10-06 (mapillary)
-#: check_frequency: 120d
-Uferweg in Bau	?::inwork 7797,14317 7769,14364
+# REMOVED (mittlerweile Geländer zu beiden Seiten; eine Realisierung eines Uferwegs scheint wohl nicht zu kommen) --- #: by: https://www.berliner-woche.de/moabit/c-bauen/sanierung-und-umbau-des-kornversuchsspeichers-abgeschlossen_a383726 --- #: XXX am Speicherhaus --- wie wird die Wegführung hier aussehen? Mittlerweile kann man als Fußgänger halbwegs durch. --- #: last_checked: 2023-10-06 (mapillary) --- #: check_frequency: 120d --- Uferweg in Bau	?::inwork 7797,14317 7769,14364
 # REMOVED (offen) --- #: last_checked: 2022-07-15 --- #: check_frequency: 30d --- (Lydia-Rabinowitsch-Str. - Uferweg): Weg mit Kleinsteinpflaster existiert, noch möglicherweise durch Bauzäune abgesperrt	? 7973,13991 8010,14014
 # REMOVED (offen) --- #: XXX fertig, aber noch abgesperrt --- Planstraße 1.3 - Uferweg: Fußgängerbereich geplant	?::projected 7802,14250 7830,14268
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
 # REMOVED --- #: last_checked: 2022-06-10 (mapillary) vvv --- #: check_frequency: 30d vvv
 # REMOVED (nein, vermutlich erst einmal nicht) --- #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 # REMOVED (nicht mehr) --- #: by: https://www.webcam-profi.de/bilder/ca-immo/berlin/rieck2/image.jpg (Webcam)
@@ -3402,7 +3394,6 @@ Uferweg in Bau	?::inwork 7797,14317 7769,14364
 # REMOVED (nicht mehr) --- #: by: https://myb-berlin.webcam-profi.de/startseite.html (Webcam)
 # REMOVED --- #: osm_watch: way id="237716430" version="7"
 # REMOVED --- #: XXX welchen Namen bekommt dieser Weg? Annemarie-Renger-Str. wird es wohl nicht... --- #: XXX Kleinsteinpflaster, Q1, noch keine Ausschilderung --- Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich entsteht hier	?::inwork 8057,13923 7997,13892 7910,13848 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
 # REMOVED (eingetragen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_23_2881_3012_online.pdf (Straßenbenennung) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neues-stadtquartier-an-der-heidestrasse-waechst_a286237 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_38_4713_4844_online.pdf (Grundstücksnummerierungen) --- #: XXX fehlt in Berlin.coords.data, PLZ=10557 --- George-Stephenson-Str.: Geplante Straße; Qualität? Genaue Lage?	?::projected 7487,14472 7452,14415 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_38_4713_4844_online.pdf (Grundstücksnummerierungen)
@@ -3414,9 +3405,9 @@ Uferweg in Bau	?::inwork 7797,14317 7769,14364
 #: XXX früherer Vorschlag Lisa-Fittko-Str. (Ziffer 2), aber diese Straße ist bereits an anderer Stelle entstanden
 # REMOVED --- #: XXX fehlt in Berlin.coords.data, PLZ=10557
 #: osm_watch: way id="237716424" version="12"
-#: last_checked: 2023-11-25 (mapillary)
+#: last_checked: 2023-12-23
 #: check_frequency: 60d
-(Heidestr. - George-Stephenson-Str.): geplante Straße; Qualität? Straßenname?	?::projected 7569,14209 7652,14257
+(Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Straßenname?	? 7569,14209 7652,14257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_57_5513_5592_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_09_0533_0596_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
@@ -3425,20 +3416,13 @@ Uferweg in Bau	?::inwork 7797,14317 7769,14364
 #: XXX mittlerweile ist am südlichen Strang bereits ein Weg/Fahrbahn sichtbar; evtl. wird es auch einen nördlichen Strang in Höhe Sellerstraße geben
 #: XXX bei osm ohne Namen; siehe auch oben wegen einer möglichen anderen Straße mit dem Namen Clara-Mleinek-Str.
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2023-11-07
+#: last_checked: 2023-12-23
 #: check_frequency: 60d
 Clara-Mleinek-Str. (Ziffer 3; platzähnlich): geplante Straße; Qualität?	?::projected 7529,14274 7612,14325
 #: osm_watch: note 3892438 2
-#: last_checked: 2023-11-07
+#: last_checked: 2023-12-23
 #: check_frequency: 60d
 (Weg in Verlängerung der Hedwig-Porschütz-Str. (südlicher Strang)): wird hier ein Weg oder eine Straße entstehen? Straßenname?	?::inwork 7697,14187 7614,14136
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
-#: XXX existiert anscheinend bereits teilweise (nördlicher Abschnitt) (siehe osm & Amtsblatt 56/2023)
-#: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch so ausgeschildert?
-#: osm_watch: way id="237704728" version="4"
-#: last_checked: 2023-11-25 (mapillary)
-#: check_frequency: 60d
-(George-Stephenson-Str. - Döberitzer Str.): hier wird ein Fußweg (Radfahrer frei) entstehen, Qualität und Ausschilderung (vielleicht Lisa-Fittko-Straße?)?	?::projected 7734,13944 7731,13927 7787,13838 7872,13685
 #: XXX ^^^
 # 
 # REMOVED (realisiert) --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX Berlin.coords.data-Eintrag fehlt --- #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Brücke: Bauzeit: III/2018 bis IV/2019) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/goldameirsteg/index.shtml (Baubeginn im IV. Quartal 2019 eingeplant) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (mögliche Fertigstellung I. Quartal 2021) --- #: by: https://api.fixmyberlin.de/api/plannings/186 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641860&postcount=217 (späterer Termine?) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9670 --- #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=664058#post664058 --- #: by: https://www.idowa.de/inhalt.im-hafen-gebaut-und-dann-auf-s-schiff-bruecke-fuer-berlin-made-in-deggendorf.657892fc-b305-460a-a6bb-e38e744e727d.html --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-2#post-13480 (Brückeneinhub: 22.10.2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1007358.php --- #: by: https://www.berliner-woche.de/moabit/c-bauen/europacity-bekommt-golda-meir-steg_a291674 --- #: by: https://abendblatt-berlin.de/2020/10/29/neue-fussgaengerbruecke-an-der-europacity/ --- #: by: https://twitter.com/weddingweiser/status/1343568926601580545 (Umleitung beendet) --- #: by: https://www.deutsches-architekturforum.de/thread/8424-europacity-allgemeines/?postID=706377#post706377 (Eröffnung am 8.12.2021, provisorische Asphaltwege auf der Westseite) --- #: by: https://berliner-abendblatt.de/2021/12/07/europacity-golda-meir-steg-wird-eroeffnet/ --- #: by: https://viz.berlin.de/2021/12/verkehrsvorschau-08122021/ (Einweihung am 8.12.2021 vormittags) --- #: XXX laut osm: opening_date=2021-04 --- #: osm_watch: way id="237716417" version="8" --- #: last_checked: 2021-11-18 --- #: next_check: 2021-12-08 --- Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7901,14154 7962,14198
@@ -3604,7 +3588,7 @@ Emser Str./Ilsestr.: wird hier ein Zebrastreifen gebaut?	? 12610,7104 12648,7080
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (Umsetzung noch 2022)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/16-neue-zebrastreifen_a340070
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf
-#: last_checked: 2023-11-29
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-31
 Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13567 8775,13606 8799,13641
@@ -4115,7 +4099,7 @@ Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/torstrasse/lageplan_05.pdf (Popup-Radweg im weiteren Verlauf der Torstr.)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/buergerbeteiligung-fuer-die-torstrasse-gestartet_a338873
 #: by: https://www.nd-aktuell.de/artikel/1176955.verkehr-linke-berlin-kostenlos-strampeln-fuer-alle.html (Baubeginn frühestens 2025)
-#: last_checked: 2023-12-14
+#: last_checked: 2023-12-23
 #: next_check: 2025-06-30
 Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 9670,13637 9579,13604 9508,13578 9391,13535 9353,13521 9212,13471
 # 
@@ -4605,7 +4589,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 # 
 #: by: https://www.luisenstadt-mitte.de/projekte/adalbertstrasse-0 (ab 2024) (mittlerweile ab 2025)
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
-#: last_checked: 2023-12-13 (mapillary)
+#: last_checked: 2023-12-23
 #: next_check: 2025-06-30
 Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,11106 11726,11265 11808,11482
 # 
@@ -6684,7 +6668,7 @@ Mauerweg: Untertunnelung der Dresdener Bahn	?::inwork 10460,-3199 10687,-3270
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -6893,7 +6877,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: source_id: viz2021:13.428993,52.518668,26.09.2023,16:00 (bis 24.11.2023) (inaktiv)
 #: source_id: viz2021:13.428004,52.517978,26.09.2023,16:00 (Neubau Ampelanlagen, bis 24.11.2023) (bis 01.12.2023) (bis 31.01.2024)
 #: source_id: viz2021:13.428921,52.518722,26.09.2023,16:00 (Neubau Ampelanlagen, bis 24.11.2023) (bis 01.12.2023) (bis 31.01.2024)
-#: last_checked: 2023-12-04
+#: last_checked: 2023-12-23
 #: next_check: 2024-01-31
 # REMOVED (hier fertig, es ist beim Hochbordradweg geblieben) --- Strausberger Platz: Bau eines Radfahrstreifens?	?::inwork; 11988,12546 12028,12519
 # REMOVED (hier fertig) --- Strausberger Platz: Arbeiten an der Radverkehrsanlage?	?::inwork; 12028,12519 12083,12518 12114,12546
@@ -6915,7 +6899,7 @@ Strausberger Platz: Arbeiten an der Radverkehrsanlage?	?::inwork; 12114,12546 12
 #: XXX laut rbb und viz wird zwischen Koppenstr. und Straße der Pariser Kommune ein Radfahrstreifen eingerichtet (stimmt aber nicht)
 # REMOVED --- #: XXX in der Realität wird zurzeit zwischen Andreasstr. und der Koppenstr.; mittlerweile bis Straße der Pariser Kommune gearbeitet (Fahrspur abgesperrt, alter Radweg wird abgebrochen, provisorischer Radweg auf dem Gehweg)
 #: XXX zwischenzeitlich Bauarbeiten zwischen Strausberger Platz und Andreasstr. (Führung auf der Fahrbahn)
-#: last_checked: 2023-12-04 vvv
+#: last_checked: 2023-12-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-11-30 vvv
 Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12114,12546 12134,12540 12352,12509
@@ -6931,7 +6915,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12114,125
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/radwege-am-stralauer-platz_a386408 (Erwähnung)
 #: XXX nach Fertigstellung Eintrag in handicap_directed apassen/entfernen
 #: XXX zurzeit keine Bauarbeiten
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-11-30
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::projected 12568,12512 12592,12472 12560,12444
@@ -7077,13 +7061,13 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
 #: note: zwischenzeitlich gab's einen kombinierten Eintrag https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024)
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-23
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7114,15 +7098,15 @@ Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,
 #: note: Fahrbahnmarkierung zwischen Französische Str. und Leipziger Str. schon fertig, noch keine Schilder
 #: note: Fahrbahnmarkierung zwischen Neue Roßstr. und Neue Grünstr. sowie Märkisches Museum und Jannowitzbrücke schon fertig, noch keine Schilder
 #: osm_watch: note 3910190 5
-#: last_checked: 2023-12-18 vvv
+#: last_checked: 2023-12-23 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-12-31 vvv
+# REMOVED --- #: next_check: 2023-12-31 vvv
 # REMOVED (laut infravelo nur bis Französische Str.) --- Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 # REMOVED (hier komplett realisiert) --- Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9898,12161 9913,12068
 Oberwallstr., Niederwallstr.: Schilder stehen bereits, evtl. fehlen noch einige Vorfahrtsregelungen	?::inwork 9913,12068 9925,11947 9991,11903 10079,11845 10132,11810 10189,11773 10205,11758 10238,11741
 Wallstr.: noch keine Schilder, Fahrbahnmarkierungen existieren teilweise	?::inwork 10374,11734 10528,11729 10722,11816
 Wallstr., Am Märkischen Museum: Schilder stehen größenteils, modaler Filter, teilweise Fahrbahnmarkierungen und evtl. Vorfahrtsregelung fehlen	?::inwork 10908,11908 11111,12027 11160,12071 11275,12055 11325,12021
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -7507,7 +7491,7 @@ Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. G
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_44_2977_3032_online.pdf (Straßenlandwidmung, vermutlich der schon bestehende Abschnitt der Promenade)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_54_3861_3956_online.pdf (Eingruppierung in das Straßenreinigungsverzeichnis (der bestehende Abschnitt))
 #: XXX ein paar Meter existieren bereits; wird die Uferpromenade bis an die Spree reichen?
-#: last_checked: 2023-11-07
+#: last_checked: 2023-12-23
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-30
 Humboldthafen: Verlängerung der Uferpromenade	?::inwork 8119,13396 8118,13222 8160,13171 8159,13032
@@ -7583,7 +7567,7 @@ Treuenbrietzen: L85 soll rechtwinklig auf die B102 stoßen	?::projected -25677,-3
 #: osm_watch: way id="317878311" version="19"
 #: source_id[inactive]: bvg2021:140#BVG318247_0
 #: source_id: viz2021:13.430179,52.510318,06.04.2023,07:00 (Richtung Mühlenstr.; bis 28.04.2023) (bis 12.05.2023) (inaktiv) (bis 31.05.2023) (inaktiv) (bis 16.06.2023) (inaktiv)
-#: last_checked: 2023-12-12
+#: last_checked: 2023-12-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-12-31
 Stralauer Platz: geschützte Radspuren	?::projected; 12497,11459 12180,11657
@@ -7839,10 +7823,11 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959
 #: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv) (bis 15.12.2023) (bis 23.12.2023) (bis 22.12.2023) (inaktiv)
 #: source_id: viz2021:13.518694,52.450631,22.12.2023,15:00 (ab S-Bhf. Johannisthal, bis 02.01.2024)
-#: osm_watch: way id="886496559" version="6"
-#: osm_watch: note 3998167 2
-#: osm_watch: note 3938423 1
+#: osm_watch: way id="886496559" version="7"
+#: osm_watch[closed]: note 3998167 2
+#: osm_watch[closed]: note 3938423 1
 #: note: laut rbb im südlichen Abschnitt verlängert bis 02.01.2024
+#: XXX laut osm bereits weitgehend realisiert und eingetragen
 #: last_checked: 2023-11-01 (mapillary)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2023-12-22
@@ -8153,8 +8138,8 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/revaler-strasse-bekommt-radweg_a394610
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
 #: priority: #D
-#: last_checked: 2023-12-21 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2023-12-23 vvv
+#: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
 Revaler Str./Simon-Dach-Str.: Zebrastreifen entsteht	? 13885,11424 13888,11405 13876,11391
@@ -8862,11 +8847,11 @@ Planstraße G: genaue Lage, Qualität? geplanter Name: An der Waldsiedlung	?::proj
 #: source_id: viz2021:13.511442,52.539,30.10.2023,09:00 (Straßenbauarbeiten bis 21.12.2023) (inaktiv)
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
-#: osm_watch: way id="914159830" version="7"
+#: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="4"
-#: last_checked: 2023-11-02
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2023-12-21
+#: last_checked: 2023-12-22 (osm)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
 # 
 #: XXX Bebauungsplan 5-110
@@ -9944,8 +9929,10 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.deutsches-architekturforum.de/thread/14562-b%C3%BCro-und-wohnquartier-elements-mediaspree-in-bau/?postID=750488#post750488
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12102 (Erwähnung)
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
+#: osm_watch: way id="458869330" version="4"
+#: osm_watch: note 3748856 1
 #: XXX am Wilhelmine-Gemberg-Weg gibt es bereits Fortschritte
-#: last_checked: 2023-12-14 (daf)
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 Uferweg geplant (erst einmal als Provisorium)	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 
@@ -10113,7 +10100,7 @@ unter der Salvador-Allende-Brücke: hier entsteht ein asphaltierter und beleuchte
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_21_2185_2248_online.pdf?ts=1683873271 (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_38_3743_3802_online.pdf (Grundstücksnummerierungen)
 #: XXX vermutlich wird es am westlichen Rand im Zuge der Hofheimer Str. einen Weg geben; unklar, ob es eine Verlängerung der Heldburger Str. geben wird
-#: osm_watch: way id="89803856" version="19"
+#: osm_watch: way id="89803856" version="20"
 #: last_checked: 2023-12-15 (architektur-urbanistik)
 #: check_frequency: 360d
 Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::inwork 17633,14857 17633,14707 17763,14588
@@ -10637,7 +10624,7 @@ Bebauungsplan 6-40 VE: wird hier der Park verkleinert?	? -2064,2244 -1997,2095 -
 #: XXX Tatsächlich gibt es bereits zwei der neuartigen Grünanlagenschilder, allerdings sieht die Fläche eher aus wie eine Lagerfläche für Baumaterial.
 #: osm_watch: way id="668307419" version="3"
 #: priority: #D
-#: last_checked: 2023-09-27
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 Grünanlage neben dem Berghain: wann wird es hier eine benutzbare Grünfläche geben?	? 13015,11806 12971,11763 12998,11730 13037,11769 13015,11806
 # 

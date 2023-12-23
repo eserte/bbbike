@@ -1587,7 +1587,7 @@ Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
-#: last_checked: 2023-11-09 (mapillary)
+#: last_checked: 2023-12-23
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Annenstr. (Mitte) [Wohngebiet]	N 11192,11429 11259,11391 11217,11288
@@ -1849,7 +1849,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="8"
 #: osm_watch: way id="642581102" version="9"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2023-11-07
+#: last_checked: 2023-12-23
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1863,17 +1863,18 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="26"
-#: last_checked: 2023-11-16
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg)	NN 7802,14250 7830,14268
-Lisa-Fittko-Str.	N 7734,13944 7820,13994
+Lisa-Fittko-Str.	N 7820,13994 7734,13944
+Lisa-Fittko-Str.	NN 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
 #: osm_watch: way id="977556359" version="15"
-#: last_checked: 2023-11-07
+#: last_checked: 2023-12-23
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -14835,6 +14836,7 @@ Boyenstr.	N 7938,14423 8250,14672
 (Kieler Brücke - Heidestr./Sellerstr.)	NN 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
 (Kieler Brücke - Heidestr.)	NN 7740,14409 7705,14383 7612,14325
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke)	NN 7757,14318 7763,14332 7754,14354 7769,14364
+(Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.)	N 7569,14209 7652,14257
 Hans-Schomburgk-Promenade	NN 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 Geißlerpfad	N 1887,14888 1873,14650 1871,14561
 Letterhausweg	N 2087,14078 2111,14235
