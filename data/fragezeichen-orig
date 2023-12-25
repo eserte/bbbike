@@ -663,7 +663,7 @@ Alt-Tempelhof: Radverkehrsanlage geplant	?::projected 8949,6644 9052,6664
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-rund-um-die-dorfkirche_a292298 (Bauarbeiten der Wasserbetriebe bis März 2021)
 #: by: http://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023)
-#: by: http://www.infravelo.de/projekt/schoenburgstrasse/ (1. - 2. Quartal 2022; Asphaltierung der Schönburgstr.) (mittlerweile 1. Quartal 2022 - 3. Quartal 2022) (1. Quartal 2023 - 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (Status: in Bau -> null)
+#: by: http://www.infravelo.de/projekt/schoenburgstrasse/ (1. - 2. Quartal 2022; Asphaltierung der Schönburgstr.) (mittlerweile 1. Quartal 2022 - 3. Quartal 2022) (1. Quartal 2023 - 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (Status: in Bau -> null) (gelöscht)
 # REMOVED (gelöscht) --- #: by: http://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse/ (1. Quartal 2022 - 2. Quartal 2023) (in API gelöscht, im Web weiterhin verfügbar) (wieder da) (1. Quartal 2023 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2023)
 #: osm_watch: way id="151353912" version="9"
 #: osm_watch: way id="151372371" version="14"
@@ -5302,7 +5302,7 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-21 (mapillary)
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -5366,9 +5366,10 @@ Sickingenstr./Rostocker Str.: Zebrastreifen geplant	?::projected 5131,14046 5089
 #: check_frequency: 120d vvv
 #: last_checked: 2023-10-24
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
+#: next_check_id: FRIEDENKOPPEN-2023
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (2023)
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 31.08.2023, Gesamtbaumaßnahme bis 11/2023) (bis 15.10.2023) (inaktiv) (bis 31.01.2024)
-#: last_checked: 2023-12-17
+#: last_checked: 2023-12-24
 #: next_check: 2024-01-31
 Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12658,12755 12690,12769 12687,12809
 #: last_checked: 2023-12-20
@@ -6658,7 +6659,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
 #: osm_watch: way id="1049317376" version="1"
 #: osm_watch: way id="1049317377" version="2"
-#: osm_watch: way id="1049317378" version="2"
+#: osm_watch: way id="1049317378" version="3"
 #: last_checked: 2023-05-21 (bahninfo-forum)
 #: next_check: 2024-06-01
 Mauerweg: Untertunnelung der Dresdener Bahn	?::inwork 10460,-3199 10687,-3270
@@ -6915,7 +6916,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12114,125
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/radwege-am-stralauer-platz_a386408 (Erwähnung)
 #: XXX nach Fertigstellung Eintrag in handicap_directed apassen/entfernen
 #: XXX zurzeit keine Bauarbeiten
-#: last_checked: 2023-12-23
+#: last_checked: 2023-12-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-11-30
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::projected 12568,12512 12592,12472 12560,12444
@@ -6952,7 +6953,7 @@ Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es d
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-bahnuebergangsarbeiten-bauzustandswechsel/ (nächster Wechsel am 8.12.2023)
 #: XXX laut Schild Fertigstellung 2024
 #: osm_watch: way id="22909864" version="22"
-#: osm_watch: node id="1650096479" version="6"
+#: osm_watch: node id="1650096479" version="7"
 #: osm_watch: way id="1168938182" version="2"
 #: last_checked: 2023-12-07 (indoor)
 #: check_frequency: 30d
@@ -7061,13 +7062,13 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
 #: note: zwischenzeitlich gab's einen kombinierten Eintrag https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2023-12-23
+#: last_checked: 2023-12-24
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024)
-#: last_checked: 2023-12-23
+#: last_checked: 2023-12-24
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7104,7 +7105,7 @@ Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,
 # REMOVED (laut infravelo nur bis Französische Str.) --- Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 # REMOVED (hier komplett realisiert) --- Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9898,12161 9913,12068
 Oberwallstr., Niederwallstr.: Schilder stehen bereits, evtl. fehlen noch einige Vorfahrtsregelungen	?::inwork 9913,12068 9925,11947 9991,11903 10079,11845 10132,11810 10189,11773 10205,11758 10238,11741
-Wallstr.: noch keine Schilder, Fahrbahnmarkierungen existieren teilweise	?::inwork 10374,11734 10528,11729 10722,11816
+Wallstr.: wird auch im Sackgassenabschnitt eine Fahrradstraße ausgeschildert?	? 10374,11734 10528,11729
 Wallstr., Am Märkischen Museum: Schilder stehen größenteils, modaler Filter, teilweise Fahrbahnmarkierungen und evtl. Vorfahrtsregelung fehlen	?::inwork 10908,11908 11111,12027 11160,12071 11275,12055 11325,12021
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -7513,7 +7514,7 @@ Hohenschönhauser Str./Süderbrokweg: Widmung als öffentliches Straßenland, ändert
 #: next_check_id: MAHLOWUNTERFUEHRUNG-2023
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe im Dezember 2023)
-#: osm_watch: way id="1060569804" version="7" brb
+#: osm_watch: way id="1060569804" version="9" brb
 # REMOVED --- #: osm_watch: way id="5086382" version="22" brb
 #: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 360d
@@ -10725,7 +10726,8 @@ Hansastr.: neue KGA entsteht	? 15561,16648 15455,16627 15473,16519 15571,16585
 #: osm_watch: way id="30806049" version="25"
 #: XXX - Hobrechtstraße: Quersperre (zwischen Sanderstraße und Pflügerstraße)
 #: osm_watch: way id="228498042" version="8"
-#: XXX - Nansenstraße: Quersperre (zwischen Reuterplatz und Framstraße)
+#: osm_watch: note 4037136 1
+#: XXX - Nansenstraße: Quersperre (zwischen Reuterplatz und Framstraße) (vermutlich schon realisiert, siehe note)
 #: XXX teilweise realisierte Maßnahmen
 #: osm_watch: way id="16114536" version="19"
 #: XXX - Hobrechtbrücke: Einbahnstraßenregelung für Kfz (done); Fahrradspuren (todo)
@@ -10736,6 +10738,7 @@ Hansastr.: neue KGA entsteht	? 15561,16648 15455,16627 15473,16519 15571,16585
 #: note: - Weserstraße: zwischen Friedelstraße und Hobrechtstraße wird die Einbahnstraßenregelung für Kfz umgekehrt
 #: last_checked: 2023-12-20
 #: check_frequency: 14d
+#: next_check: 2023-12-22
 Reuterkiez: Kiezblock	?::projected 11635,10023 11938,9168 12194,9057 12508,9585 11635,10023
 # 
 #: ignore ^^^
