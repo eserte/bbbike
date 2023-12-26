@@ -1774,7 +1774,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        {
          'data' => '#: tempex: we T08-T13, th T12-T17, sa T08-T14 vvv
-	q4::temp:clock 5897,7337 5810,7337
+	q4::temp:clock 5881,7314 5810,7337
 	q4::temp:clock 5810,7337 5817,7223
 #: tempex ^^^
 ',
@@ -1993,10 +1993,13 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024)
+#: source_id: viz2021:13.37737,52.51457,26.12.2023,19:35 (bis 02.01.2024)
+#: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024)
+#: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024)
 #: by: https://viz.berlin.de/2020/12/welcome21/
 #: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
 #: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
-Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -3193,6 +3196,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
 #: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
+Pariser Platz	2::temp 8722,12268 8637,12258
 	2::temp 7031,12320 7383,12095
 	2::temp 7875,12363 7822,12201 7816,12150
 	2::temp 8400,12417 8391,12389 8344,12221
@@ -4757,9 +4761,9 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
        undef,
        undef,
        {
-         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt)
+         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2023-08-18 vvv
+#: last_checked: 2023-12-26 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -4769,7 +4773,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 ',
          'from' => undef,
          'id' => 3513,
-         'text' => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein',
+         'text' => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein; wenn es offen ist, dann üblicherweise nur eine lichte Breite von 100cm',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6000,29 +6004,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
-#: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt
-#: osm_watch: way id="1197821336" version="1"
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: also_indoor: traffic (B[Grabertstr]) vvv
-#: last_checked: 2023-06-12 vvv
-#: check_frequency: 180d vvv
-#: next_check: 2025-10-31 vvv
-Grabertstr.	q4::inwork 6923,5057 7030,4937
-Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3784,
-         'text' => 'Grabertstr. und Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6153,23 +6135,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        },
        undef,
        undef,
-       {
-         'data' => '#: note: Endedatum laut Baustellenschild der Wasserbetriebe
-#: note: bei Google ist mittlerweile eine Sperrung in der abgehenden Denkstr. eingetragen
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: also_indoor: traffic (ex-B)
-#: osm_watch: note 3732762 2
-#: last_checked: 2023-06-12
-#: check_frequency: 180d
-#: next_check: 2025-10-31
-	q4::inwork 6826,4472 6826,4500 6841,4667
-',
-         'from' => 1686595951,
-         'id' => 3820,
-         'text' => 'Liebenowstr.: Bauarbeiten zwischen Stephanstr. und Denkstr., Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
-         'type' => 'handicap',
-         'until' => 1761951600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6444,14 +6410,14 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: osm_watch: way id="4543436" version="31"
 #: last_checked: 2023-11-07
 #: check_frequency: 60d
-#: next_check: 2023-12-29
+#: next_check: 2023-12-30
 	2::inwork 6213,14777 6210,14808
 ',
          'from' => undef,
          'id' => 3890,
          'text' => 'Virchow-Klinikum, Einfahrt Nordufer: komplett gesperrt, auch für Fußgänger, voraussichtlich bis Ende 2023',
          'type' => 'gesperrt',
-         'until' => 1703818800
+         'until' => 1703952000
        },
        undef,
        undef,

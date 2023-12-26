@@ -174,7 +174,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="23"
-#: last_checked: 2023-10-21
+#: last_checked: 2023-12-26
 #: check_frequency: 120d
 #: next_check: 2024-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
@@ -192,7 +192,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2023-12-16
+#: last_checked: 2023-12-26
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -646,7 +646,7 @@ Flemingstr.: Fahrbahn mit Kopfsteinpflaster, Radweg mit Gehwegplatten	Q1- 7317,1
 Werftstr.: Kopfsteinpflaster	Q2 7346,13022 7330,12871 7317,12751
 Melanchthonstr.: Kopfsteinpflaster	Q2 7111,12743 6907,12777 6802,12797
 Albrechtstr.: Kopfsteinpflaster	Q2 6360,4504 6416,4452 6491,4391
-Albrechtstr.: Asphaltstreifen	Q0 6491,4391 6540,4347 6624,4318 6633,4272
+Albrechtstr.: Asphaltstreifen	Q0 6491,4391 6540,4347 6617,4324 6635,4297 6633,4272
 Rembrandtstr.: Kopfsteinpflaster	Q2+ 6051,6758 6122,6854 6143,6863
 Körnerstr.: Kopfsteinpflaster	Q2 5781,6404 5787,6389 5697,6276 5598,6136 5460,5966 5464,5731 5466,5622 5466,5523
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060922.1210.47859.html
@@ -2202,7 +2202,7 @@ Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11998,8872 12012,9092
 Hobrechtstr.: Kleinsteinpflaster	Q1- 12012,9092 12005,9211
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 12005,9211 11954,9415 11934,9538
-Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11917,9663
+Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11925,9605 11917,9663
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11917,9663 11897,9754
 Hobrechtstr.: Asphalt	Q0 11880,9874 11897,9754
 Sanderstr.: Asphalt	Q0 11710,9628 11917,9663
@@ -8193,10 +8193,11 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
-#: osm_watch: way id="723757589" version="21"
 #: last_checked: 2023-06-10 vvv
 #: check_frequency: 180d vvv
+#: osm_watch: way id="852155554" version="11"
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
+#: osm_watch: way id="723757589" version="21"
 Werlseestr.: Kopfsteinpflaster	Q2; 26612,5051 26620,4936
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -11301,7 +11302,8 @@ Bäkepark: wassergebundene Decke, etwas Schotter	Q1- 5225,4095 5184,4161
 #: corrected_by: mapillary (wassergebundene Decke, etwas Schotter -> ...)
 #: confirmed_by: srt
 Bäkepark: Asphalt	Q0 5184,4161 5131,4207
-Bäkepark: provisorischer Asphalt, uneben	Q1+ 5131,4207 5097,4221 5063,4266
+#: historical_note: früher: provisorischer Asphalt, uneben, Q1+ 
+Bäkepark: Asphalt	Q0 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13596,10722 13585,10693
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2+ 13558,10704 13531,10673
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13919,10583 13902,10546
@@ -12279,13 +12281,7 @@ Händelplatz: Beton	Q0- 4568,4789 4543,4820
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238
 Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053
 Klingsorstr.: schadhafter Asphalt	Q1+ 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
-#: next_check_id: KLINGSOR-2023
-#: add_fragezeichen: Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert?
-#: XXX bei osm von intermediate auf good verbessert, trotzdem mal nachschauen!
-#: osm_watch: way id="149994023" version="20"
-#: osm_watch[closed]: note 3989114 2
-#: last_checked: 2023-09-14
-#: next_check: 2023-11-15
+# REMOVED (confirmed) --- #: next_check_id: KLINGSOR-2023 --- #: add_fragezeichen: Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert? --- #: XXX bei osm von intermediate auf good verbessert, trotzdem mal nachschauen! --- #: osm_watch: way id="149994023" version="20" --- #: osm_watch[closed]: note 3989114 2 --- #: last_checked: 2023-09-14 --- #: next_check: 2023-11-15
 #: historical_note: früher: schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
 #: historical_note: früher schadhafter Asphalt, Q1+
@@ -13020,7 +13016,12 @@ Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17738,9822 1777
 Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 # REMOVED (im westlichen Abschnitt passiert nichts) --- #: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet --- #: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv) --- #: last_checked: 2023-11-21 --- #: next_check: 2023-12-01
-Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10250,9233 10366,9233
+Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10250,9233
+#: next_check_id: BERGMANN-2023
+#: XXX Schäden vor allem am Fahrbahnrand, wo man nun fahren muss, in der Fahrbahnmitte wäre es Q0-
+#: last_checked: 2023-12-26
+#: check_frequency: 120d
+Bergmannstr.: Asphalt mit Schäden	Q1+ 10250,9233 10366,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige leichte Schäden, Q0-
 Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige Querrillen, Q0-
@@ -13402,6 +13403,8 @@ Falkenberger Chaussee [Wohngebiet]: Rasengittersteine	Q2+ 17050,17437 17139,1739
 Seefelder Str.: Beton	Q0- 17184,16149 17183,16181
 # 
 Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,17092 17902,17074
+# 
+(Brandenburgische Str. - Albrechtstr.): Gehwegplatten	Q0- 6629,4361 6617,4324
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14479,7 +14482,7 @@ Wulfila-Ufer: Asphalt	Q0 8255,4791 8499,5016
 Wulfila-Ufer: Asphalt, einige Wurzelhebungen	Q1+ 8499,5016 8623,5104 8750,5173
 #: confirmed_by: srt
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5748,22578 5791,22615
-Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5897,7337
+Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5881,7314
 #: corrected_by: srt (mäßiger Asphalt, Q1 -> ...) vvv
 Königswinterstr.: Asphalt	Q0 19148,8406 19131,8448 19075,8590 18988,8792 18959,8870
 Königswinterstr.: Asphalt mit einigen leichten Schäden	Q0- 18959,8870 18968,8959 18970,8970 18978,9014 18983,9044
@@ -14855,7 +14858,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="12"
 #: osm_watch: way id="1159154133" version="1"
-#: last_checked: 2023-06-12
+#: last_checked: 2023-12-26
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -15080,7 +15083,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="22"
-#: last_checked: 2023-05-29
+#: last_checked: 2023-12-26
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -23015,8 +23018,10 @@ Borkzeile - Spekteweg/Zeppelinstr.: Asphalt	Q0 -4582,14807 -4671,14818
 #: by: ^^^
 # 
 #: by: Ralf Nikisch: vvv
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Benzmannstr.: Asphalt	Q0 6826,4500 6795,4507
 #: confirmed_by: srt (zumindest an der Halskestr.)
-Benzmannstr.: mäßiges Kopfsteinpflaster	Q2 6826,4500 6795,4507 6635,4639 6540,4715
+Benzmannstr.: mäßiges Kopfsteinpflaster	Q2 6795,4507 6635,4639 6540,4715
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Benzmannstr.: Asphalt	Q0 6540,4715 6464,4779
 #: by: ^^^
@@ -28343,7 +28348,7 @@ Nettestr.: Asphalt	Q0 14278,22281 14425,22481
 #: by: Martina Bretschneider
 #: note: nachts beleuchtet
 #: confirmed_by: srt (Schäden nur im nördlichen Teil)
-(Brandenburgische Str. - Albrechtstr.): Schäden in der Fahrbahndecke, aber gut zu befahren	Q1- 6638,4394 6632,4361
+(Brandenburgische Str. - Albrechtstr.): Schäden in der Fahrbahndecke, aber gut zu befahren	Q1- 6638,4394 6629,4361
 # 
 #: by: Norbert Kruschel:
 Wansdorfer Platz: Kleinpflaster	Q1 -3148,16712 -3254,16726 -3255,16667 -3203,16660 -3151,16657 -3148,16712
@@ -32826,4 +32831,6 @@ Einmündungsbereich asphaltiert	Q0 4973,6645
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 4940,6586
 Einmündungsbereich mit Kopfsteinpflaster	Q2 4692,10829
 Einmündungsbereich asphaltiert	Q0 6877,12607
+Einmündungsbereich asphaltiert	Q0 6845,4761
+Einmündungsbereich asphaltiert	Q0 6826,4472
 #: ignore ^^^

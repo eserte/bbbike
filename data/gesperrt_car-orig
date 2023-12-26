@@ -86,7 +86,7 @@ Bendastr.	1 12715,6775 12702,6846
 Puschkin/Bulgarische	1 14196,9749 14271,9712 14318,9688 14389,9656 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15440,9098 15445,9090 15534,8943 15591,8848 15558,8820 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross 12494,8501 12545,8449 12562,8432 12582,8408
 Hoffmannstr./Elsenstr.	3 14077,10016 14289,9870 14323,9913 14405,10027
-Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8577,11896 8571,11846
+Behren/Ebert	3 8737,12098 8595,12066 8577,11896
 UdL/Universitätsstr.	3nocross 9475,12365 9613,12381 9664,12387
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
 Horn - Yorck	3nocross 8777,9601 9002,9731 9047,9750
@@ -884,7 +884,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="21"
-#: last_checked: 2023-10-29
+#: last_checked: 2023-12-26
 #: check_frequency: 60d
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
@@ -1764,6 +1764,7 @@ Allee der Kosmonauten - Poelchaustr.: Barriere	3 * 20309,14431 *
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fahrradbuegel-auf-strassen_a366953
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10873
 #: by: osm
+#: confirmed_by: srt
 Chamissoplatz: Poller	3 * 9566,9194 *
 Chamissoplatz: Poller	3 * 9589,9093 *
 # 
@@ -1953,7 +1954,7 @@ Boxhagener Str. -> Wühlischstr.: nur geradeaus erlaubt	3 14752,11369 14771,11345
 #: by: https://www.infravelo.de/projekt/goertlitzer-ufer/ (4. Quartal 2023)
 #: osm_watch: way id="148176599" version="15"
 #: XXX zurzeit schon wegen Bauarbeiten für den Fahrzeugverkehr gesperrt, siehe auch handicap- und radwege-Einträge; nach den Bauarbeiten vermutlich zu NN machen
-#: last_checked: 2023-12-20
+#: last_checked: 2023-12-26
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	2 13216,9983 13155,9907 13136,9883 13086,9825
@@ -1972,9 +1973,10 @@ Otto-Ostrowski-Str.: Durchfahrt durch Barrieren versperrt	3 * 13711,13615 *
 #: confirmed_by: srt
 Stallschreiberstr.	1 10794,10927 10824,11010 10690,11167
 # 
+#: next_check_id: BERGMANN-2023
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11295 (Anfrage -> mögliche Verstetigung)
 #: osm_watch: way id="1059672152" version="6"
-#: last_checked: 2023-12-09
+#: last_checked: 2023-12-26
 #: check_frequency: 120d
 Bergmannstr.: Sperrung vor der Ferdinand-Freiligrath-Schule	2 10250,9233 10366,9233
 # 
@@ -2014,6 +2016,12 @@ Sanderstr.	1 12074,9689 11917,9663
 Maybachufer: Poller zwischen Bürknerstr. und Zebrastreifen	2 12085,9778 12053,9793
 # 
 Hobrechtbrücke	1 12085,9778 12116,9825
+# 
+Hobrechtstr.: Poller	3 * 11925,9605 *
+# 
+Nansenstr.: Poller zwischen Framstr. und Reuterplatz	2 12270,9362 12248,9320
+# 
+Reuterstr.	1 12150,9545 12148,9426
 #: note ^^^
 ######################################################################
 # 

@@ -378,7 +378,7 @@ Flemingstr.: Fahrbahn mit Kopfsteinpflaster, Radweg mit Gehwegplatten	Q1 7317,12
 Werftstr.: Kopfsteinpflaster	Q2 7346,13022 7330,12871 7317,12751
 Melanchthonstr.: Kopfsteinpflaster	Q2 7111,12743 6907,12777 6802,12797
 Albrechtstr.: Kopfsteinpflaster	Q2 6360,4504 6416,4452 6491,4391
-Albrechtstr.: Asphaltstreifen	Q0 6491,4391 6540,4347 6624,4318 6633,4272
+Albrechtstr.: Asphaltstreifen	Q0 6491,4391 6540,4347 6617,4324 6635,4297 6633,4272
 Rembrandtstr.: Kopfsteinpflaster	Q2 6051,6758 6122,6854 6143,6863
 Körnerstr.: Kopfsteinpflaster	Q2 5781,6404 5787,6389 5697,6276 5598,6136 5460,5966 5464,5731 5466,5622 5466,5523
 Bergstr.: asphaltiert	Q0 5672,5751 5581,5741 5464,5731 5280,5714
@@ -1550,7 +1550,7 @@ Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11998,8872 12012,9092
 Hobrechtstr.: Kleinsteinpflaster	Q1 12012,9092 12005,9211
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 12005,9211 11954,9415 11934,9538
-Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11917,9663
+Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11925,9605 11917,9663
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11917,9663 11897,9754
 Hobrechtstr.: Asphalt	Q0 11880,9874 11897,9754
 Sanderstr.: Asphalt	Q0 11710,9628 11917,9663
@@ -9589,7 +9589,7 @@ Gärtnerstr.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Nebenweg existiert	Q0
 Bäkepark: wassergebundene Decke	Q1 5131,4207 5161,4206 5239,4175 5282,4145
 Bäkepark: wassergebundene Decke, etwas Schotter	Q1 5225,4095 5184,4161
 Bäkepark: Asphalt	Q0 5184,4161 5131,4207
-Bäkepark: provisorischer Asphalt, uneben	Q1 5131,4207 5097,4221 5063,4266
+Bäkepark: Asphalt	Q0 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13596,10722 13585,10693
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2 13558,10704 13531,10673
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13919,10583 13902,10546
@@ -11113,7 +11113,8 @@ Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1 17633,9898 17633,9793 1758
 Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1 17738,9922 17738,9822 17777,9649
 Mellenseestr. [Wohngebiet]: Beton	Q0 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1 19133,9087 19083,9062
-Bergmannstr.: Asphalt, einige leichte Schäden	Q0 10123,9233 10250,9233 10366,9233
+Bergmannstr.: Asphalt, einige leichte Schäden	Q0 10123,9233 10250,9233
+Bergmannstr.: Asphalt mit Schäden	Q1 10250,9233 10366,9233
 Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 Südstern: Asphalt	Q0 10547,9233 10705,9234
 Lückstr.: Asphalt	Q0; 16153,10818 16300,10753 16313,10747 16468,10695
@@ -11415,6 +11416,7 @@ Falkenberger Chaussee [Wohngebiet]: Beton	Q1 16930,17495 17050,17437
 Falkenberger Chaussee [Wohngebiet]: Rasengittersteine	Q2 17050,17437 17139,17390
 Seefelder Str.: Beton	Q0 17184,16149 17183,16181
 Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,17092 17902,17074
+(Brandenburgische Str. - Albrechtstr.): Gehwegplatten	Q0 6629,4361 6617,4324
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11986,7 +11988,7 @@ Ingwäonenweg: Asphalt	Q0 16683,23354 16699,23402 16730,23492 16745,23548 16770,2
 Wulfila-Ufer: Asphalt	Q0 8255,4791 8499,5016
 Wulfila-Ufer: Asphalt, einige Wurzelhebungen	Q1 8499,5016 8623,5104 8750,5173
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5748,22578 5791,22615
-Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5897,7337
+Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5881,7314
 Königswinterstr.: Asphalt	Q0 19148,8406 19131,8448 19075,8590 18988,8792 18959,8870
 Königswinterstr.: Asphalt mit einigen leichten Schäden	Q0 18959,8870 18968,8959 18970,8970 18978,9014 18983,9044
 Schliemannstr.: Kopfsteinpflaster	Q2 11154,14985 11334,15248
@@ -14991,7 +14993,8 @@ Borkzeile: Beton	Q0 -4220,14311 -4207,14473 -4203,14515 -4188,14566 -4156,14677
 Borkzeile - Spekteweg: gute wassergebundene Decke	Q1 -4156,14677 -4160,14690 -4167,14729 -4234,14792 -4257,14888 -4284,14937
 Borkzeile - Spekteweg/Zeppelinstr.: rauer Asphalt	Q1 -4160,14690 -4203,14688 -4255,14709 -4296,14707 -4333,14726 -4382,14733 -4439,14727 -4473,14734 -4496,14767 -4556,14805 -4582,14807
 Borkzeile - Spekteweg/Zeppelinstr.: Asphalt	Q0 -4582,14807 -4671,14818
-Benzmannstr.: mäßiges Kopfsteinpflaster	Q2 6826,4500 6795,4507 6635,4639 6540,4715
+Benzmannstr.: Asphalt	Q0 6826,4500 6795,4507
+Benzmannstr.: mäßiges Kopfsteinpflaster	Q2 6795,4507 6635,4639 6540,4715
 Benzmannstr.: Asphalt	Q0 6540,4715 6464,4779
 Kreutzerweg: schlechtes Kopfsteinpflaster	Q3 4629,3916 4836,4041 4848,4069 4834,4102
 Klinnerweg: guter Beton	Q0 3277,20122 3331,20056 3377,19998 3440,19924 3500,19853 3695,19595
@@ -16651,7 +16654,7 @@ Gustav-Krone-Str.: Asphalt	Q0 1514,208 1507,301
 Am Finkenherd: Asphalt	Q0 -7005,15442 -6977,15706 -6935,16053
 Straße 6 (Buch): asphaltiert	Q0 17493,26391 17714,26509
 Nettestr.: Asphalt	Q0 14278,22281 14425,22481
-(Brandenburgische Str. - Albrechtstr.): Schäden in der Fahrbahndecke, aber gut zu befahren	Q1 6638,4394 6632,4361
+(Brandenburgische Str. - Albrechtstr.): Schäden in der Fahrbahndecke, aber gut zu befahren	Q1 6638,4394 6629,4361
 Wansdorfer Platz: Kleinpflaster	Q1 -3148,16712 -3254,16726 -3255,16667 -3203,16660 -3151,16657 -3148,16712
 Abajstr.: guter Beton	Q0 9479,20535 9311,20489
 Am Klötzgraben: Verbundsteinpflaster	Q1 6651,23020 6741,23117 6779,23139 6817,23167 6882,23209

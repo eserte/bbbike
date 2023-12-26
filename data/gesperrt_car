@@ -78,7 +78,7 @@ Karl-Marx-Str./Schönstedt	3nocross::ignrte 12494,8501 12545,8449 12562,8432 1258
 Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12494,8501 12545,8449 12643,8533
 Schönstedtstr. -> Karl-Marx-Str.: Karl-Marx-Str./Schönstedt	3::igndisp 12643,8533 12545,8449 12562,8432
 Hoffmannstr./Elsenstr.	3 14077,10016 14289,9870 14323,9913 14405,10027
-Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8577,11896 8571,11846
+Behren/Ebert	3 8737,12098 8595,12066 8577,11896
 UdL/Universitätsstr.	3nocross::ignrte 9475,12365 9613,12381 9664,12387
 Unter den Linden -> Universitätsstr.: UdL/Universitätsstr.	3::igndisp 9475,12365 9613,12381 9581,12588
 Universitätsstr. -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9581,12588 9613,12381 9664,12387
@@ -2526,3 +2526,7 @@ Pflügerstr./Friedelstr.: Diagonalsperre	3 11934,9538 12066,9558 12150,9545
 Sanderstr.	1 12074,9689 11917,9663
 Maybachufer: Poller zwischen Bürknerstr. und Zebrastreifen	2 12085,9778 12053,9793
 Hobrechtbrücke	1 12085,9778 12116,9825
+Hobrechtstr.: Poller	3 11917,9663 11925,9605 11934,9538
+Hobrechtstr.: Poller	3 11934,9538 11925,9605 11917,9663
+Nansenstr.: Poller zwischen Framstr. und Reuterplatz	2 12270,9362 12248,9320
+Reuterstr.	1 12150,9545 12148,9426
