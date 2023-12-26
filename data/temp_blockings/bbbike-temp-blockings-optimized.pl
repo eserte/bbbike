@@ -7069,10 +7069,10 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,14:30 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024)
 #: osm_watch: way id="4446505" version="34"
 #: osm_watch: way id="176621906" version="26"
-#: osm_watch: way id="4525429" version="21"
-#: osm_watch: way id="1212493766" version="3"
+#: osm_watch: way id="4525429" version="22"
+#: osm_watch: way id="1212493766" version="4"
 #: osm_watch: note 3916787 2
-#: last_checked: 2023-12-16 vvv
+#: last_checked: 2023-12-26 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv
 Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583
