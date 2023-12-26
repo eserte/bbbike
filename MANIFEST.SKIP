@@ -31,7 +31,6 @@ patch\.gz$
 (^|/)\.prove$
 (^|/)MYMETA\.yml$
 (^|/)MYMETA\.json$
-\.travis\.yml$
 \.gitlab-ci\.yml$
 ^appveyor\.yml$
 ^\.github/
@@ -109,7 +108,7 @@ cgi/bbbike-hosteurope-jessie.cgi.config$
 cgi/bbbike-vmz.cgi.config$
 cgi/bbbike2-biokovo.cgi.config$
 cgi/bbbike2-hosteurope.cgi.config$
-cgi/bbbike2-travis.cgi.config$
+cgi/bbbike2-ci.cgi.config$
 cgi/bbbike2.cgi.config$
 cgi/bbbike-cs.cgi.config$
 cgi/bbbike2.cgi$

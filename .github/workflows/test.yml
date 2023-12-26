@@ -66,10 +66,10 @@ jobs:
         TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT: 1
       run: |
         set -e
-        export TRAVIS_BUILD_DIR=$GITHUB_WORKSPACE
+        export CI_BUILD_DIR=$GITHUB_WORKSPACE
         # before_install:
-        . port/travis-ci/travis-functions.sh
-        init_travis
+        . port/ci/ci-functions.sh
+        init_ci
         wrapper init_env_vars
         wrapper init_perl
         wrapper init_apt

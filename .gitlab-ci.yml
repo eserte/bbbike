@@ -9,9 +9,9 @@ runit:
     - export USE_MODPERL=1
     - printf "deb http://deb.debian.org/debian buster main contrib non-free\ndeb http://deb.debian.org/debian buster-updates main contrib non-free\n" > /etc/apt/sources.list.d/nonfree.list
     - apt-get update && apt-get install -y git sudo cpanminus
-    - export TRAVIS_BUILD_DIR=$(realpath .)
-    - . port/travis-ci/travis-functions.sh
-    - init_travis
+    - export CI_BUILD_DIR=$(realpath .)
+    - . port/ci/ci-functions.sh
+    - init_ci
     - wrapper init_env_vars
     - wrapper init_perl
     - wrapper init_apt

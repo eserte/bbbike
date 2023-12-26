@@ -1,6 +1,6 @@
 # Please source this file:
 #
-#    . .../bbbike/port/travis-ci/travis-functions.sh
+#    . .../bbbike/port/ci/ci-functions.sh
 #
 
 apt_quiet=-q
@@ -8,7 +8,7 @@ apt_quiet=-q
 
 ######################################################################
 # Utilities
-init_travis() {
+init_ci() {
     set -e
 }
 
@@ -156,10 +156,7 @@ install_non_perl_dependencies() {
 
     if [ "$CODENAME" = "precise" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
     then
-	# Since about 2018-06 not installable anymore on the
-	# travis instances
-	#
-	# Also not needed on Ubuntu 20.04, Alien::Proj4 is used for Geo::Proj4 (see below)
+	# Not needed on Ubuntu 20.04, Alien::Proj4 is used for Geo::Proj4 (see below)
 	libproj_packages=
     else
 	libproj_packages="libproj-dev proj-bin"
@@ -408,7 +405,7 @@ init_cgi_config() {
 	# -j not tested here
 	(cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && $(perl -I../.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake'))
     fi
-    (cd cgi && ln -snf bbbike2-travis.cgi.config bbbike2.cgi.config)
+    (cd cgi && ln -snf bbbike2-ci.cgi.config bbbike2.cgi.config)
 }
 
 fix_cgis() {
@@ -426,7 +423,7 @@ init_webserver_config() {
 	(cd cgi && make httpd.conf)
 	if [ ! -e /etc/apache2/sites-available/bbbike.conf -a ! -h /etc/apache2/sites-available/bbbike.conf ]
 	then
-	    sudo ln -s $TRAVIS_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-available/bbbike.conf
+	    sudo ln -s $CI_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-available/bbbike.conf
 	fi
 	sudo a2ensite bbbike.conf
 	if [ "$CODENAME" != "precise" ]

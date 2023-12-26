@@ -465,8 +465,8 @@ RUN chmod 755 /usr/bin/perlbrew
 EOF
     }
     $dockerfile .= <<EOF;
-COPY bbbike/port/travis-ci/travis-functions.sh /
-RUN cat /travis-functions.sh >> ~/.bash_profile
+COPY bbbike/port/ci/ci-functions.sh /
+RUN cat /ci-functions.sh >> ~/.bash_profile
 EOF
 
     # apply default environment, possibly changed by --env options
@@ -486,7 +486,7 @@ EOF
 
     # Emulate .travis.yml
     $dockerfile .= <<EOF;
-ENV TRAVIS_BUILD_DIR /bbbike
+ENV CI_BUILD_DIR /bbbike
 WORKDIR bbbike
 
 # "-e" -> init_travis must not be run anymore
@@ -584,19 +584,19 @@ EOF
 		      );
 	} $bbbike_rootdir;
     } else {
-	$doit->make_path("$docker_context_dir/bbbike/port/travis-ci");
-	$doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/bbbike/port/travis-ci/");
+	$doit->make_path("$docker_context_dir/bbbike/port/ci");
+	$doit->copy("$bbbike_rootdir/port/ci/ci-functions.sh", "$docker_context_dir/bbbike/port/ci/");
 	# mtime has to be preserved, otherwise older docker (<1.8?)
 	# will take mtime into account when calculating cache checksums
 	# see https://github.com/moby/moby/pull/12031
-	my $mtime = (stat("$bbbike_rootdir/port/travis-ci/travis-functions.sh"))[9];
-	$doit->utime($mtime, $mtime, "$docker_context_dir/bbbike/port/travis-ci/travis-functions.sh");
+	my $mtime = (stat("$bbbike_rootdir/port/ci/ci-functions.sh"))[9];
+	$doit->utime($mtime, $mtime, "$docker_context_dir/bbbike/port/ci/ci-functions.sh");
     }
 
     in_directory {
 	my $scope_cleanups = Doit::ScopeCleanups->new;
 	(my $tag_suffix = $image) =~ s{:}{-}g;
-	my $tag = 'bbbike-travis-ci-' . $tag_suffix;
+	my $tag = 'bbbike-ci-' . $tag_suffix;
 
 	eval { $doit->system(qw(docker rmi), "$tag-old") };
 	eval { $doit->system(qw(docker tag), $tag, "$tag-old") };
@@ -843,7 +843,7 @@ COPY . /bbbike
 WORKDIR /bbbike
 RUN perl Makefile.PL && make ext
 EOF
-    # next lines taken from init_cgi_config from travis-functions.sh
+    # next lines taken from init_cgi_config from ci-functions.sh
     if (!$opt{mapserver}) {
 	$dockerfile .= <<'EOF';
 RUN (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
@@ -969,7 +969,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	      )
 	or usage_gui;
     gui($doit, %opt);
-} elsif ($subcmd eq 'ci' || $subcmd eq 'test' || $subcmd eq 'travis-ci') {
+} elsif ($subcmd eq 'ci' || $subcmd eq 'test') {
     my %opt = (
 	       jobs    => 1,
 	       dist    => 'debian',
@@ -1106,15 +1106,14 @@ Supply bbbike options:
 
     ./miscsrc/docker-bbbike gui --bbbike-args="-lazy -advanced"
 
-=head2 TESTS (like in github actions or travis-ci)
+=head2 TESTS (like in github actions)
 
-Run test suite like in github actions or travis-ci, with settings C<USE_MODPERL=1> and
+Run test suite like in github actions, with settings C<USE_MODPERL=1> and
 C<USE_SYSTEM_PERL=1>:
 
     ./miscsrc/docker-bbbike ci --jobs 4
 
-Instead of C<ci>, the alias C<test> (or the obsolete C<travis-ci>) may
-be used.
+Instead of C<ci>, the alias C<test> may be used.
 
 The same, but specify additional environment variables:
 
