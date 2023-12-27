@@ -605,6 +605,7 @@ sub action_forever_until_error {
 		File::Glob::bsd_glob(q{*-orig}),
 		q{temp_blockings/bbbike-temp-blockings.pl},
 		(defined $bbbikeauxdir ? do { my $file = "$bbbikeauxdir/bbd/fragezeichen_lowprio.bbd"; -f $file ? $file : () } : ()),
+		(do { my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads"; -d $gps_uploads_dir ? $gps_uploads_dir : () }),
 	       );
 
     my $error_count = 0;
