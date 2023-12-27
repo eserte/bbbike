@@ -6653,6 +6653,7 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022, hier: von Wilhemstr. bis Gatower Str.)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
+#: osm_watch: note 3653798 1
 #: last_checked: 2023-04-21
 #: check_frequency: 360d
 #: next_check: 2023-12-31
@@ -8903,7 +8904,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="13"
-#: last_checked: 2023-12-05
+#: last_checked: 2023-12-26 (mapillary)
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9113,7 +9114,7 @@ Georgenstr. (Blankenburg): mäßiger Asphalt, einige Wurzelhebungen	Q1- 14236,2077
 #: by: http://www.infravelo.de/projekt/weg-am-fliessgraben/ (Ausbau zum 4m breiten Rad+Gehweg, vielleicht wird auch asphaltiert? in Planung, Bau 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2022 - 2. Quartal 2024) (1. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1285357.php (Asphaltierung, Baubeginn II. Quartal 2023)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1368603.php (Sperrung: 4. Oktober 2023 bis Ende Dezember 2023)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1362724.php
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1362724.php (verkehrliche Sperrmaßnahmen ... voraussichtlich bis Ende 2023)
 #: by: https://www.berliner-woche.de/blankenburg/c-bauen/weg-am-graben-wird-neu-gebaut_a395099
 #: osm_watch: way id="1167720966" version="1"
 #: XXX wird sich hier die Qualität verbessern? laut den Lageplänen wird asphaltiert
@@ -11626,8 +11627,10 @@ Pfarrhufenanger: Asphalt	Q0 25614,13057 25441,12838 25272,12629 25261,12615
 Gerhard-Sedlmayr-Str.: Asphalt	Q0 18779,3866 18702,3790 18584,3794 18228,4168 18374,4307
 Zur Alten Börse: Asphalt mit einigen Schäden	Q1+ 18736,13080 18712,12853
 Zur Alten Börse: Kopfsteinpflaster	Q3+ 18712,12853 18682,12599
-#: historical_note: früher Beton, Q1+
-Zur Alten Börse: Asphalt	Q0 18682,12599 18649,12371
+#: historical_note: früher Beton, Q1+ vvv
+Zur Alten Börse: Asphalt	Q0-; 18682,12599 18649,12371
+Zur Alten Börse: Asphalt, einige schadhafte Stellen	Q1+; 18649,12371 18682,12599
+#: historical_note ^^^
 Marzahner Chaussee [Zur Alten Börse]: Kopfsteinpflaster	Q2- 18649,12371 18647,12354 18639,12272 18654,12255
 (Zur Alten Börse - Kröver Str.): Beton	Q1 18712,12853 18800,12838
 Patersdorfer Str.: Asphalt	Q0 19626,9171 19764,9160 19874,9151
@@ -13045,14 +13048,14 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Dolgenseestr., Fußgängerzone): Betonpflaster	Q0- 17457,10083 17412,9911 17384,9807
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0- 10547,15586 10542,15609
-Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
+Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17659,8698
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-11-26 --- #: check_frequency: 45d
-Georg-Klingenberg-Str.: Asphalt	Q0 17656,8700 17668,8696 17792,8660 17846,8644
-Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
+Georg-Klingenberg-Str.: Asphalt	Q0 17659,8698 17668,8696 17792,8660 17846,8644
+Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17640,8627
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-12-22
+#: last_checked: 2023-12-26 (mapillary)
 #: check_frequency: 30d
 Irmtraud-Morgner-Str.: Asphalt, letzte Deckschicht fehlt	Q1- 17521,8549 17619,8558
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -16344,7 +16347,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: also_indoor: traffic (G)
 #: last_checked: 2023-12-22
 #: check_frequency: 90d
-#: next_check: 2023-12-31
+# REMOVED --- #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
 #: corrected_by: srt (mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen, Q2 -> ..., neu gemacht)
 Wandlitzstr.: Asphalt	Q0 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
