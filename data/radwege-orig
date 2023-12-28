@@ -331,7 +331,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-12-26 vvv
+#: last_checked: 2023-12-28 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -3161,7 +3161,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2023-12-15 vvv
+#: last_checked: 2023-12-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4915,9 +4915,9 @@ enger Radweg, Asphalt mit Unebenheiten	RW1; 12158,21166 12166,21208 12176,21266
 stellenweise Grünbeschichtung	RW4; 12176,21266 12188,21330 12209,21448 12172,21545 12062,21834
 	RW2; 12062,21834 12042,21886
 # REMOVED --- #: XXX_indoor: Radweg ist hier gedoppelt; die parallele NN-Strecke sollte ausreichen?! ---	RW0;RW2 12003,18896 11984,18771 11950,18529
-	RW1;RW1 14445,18010 14403,17986 14367,17965 14214,17754 14161,17681 14153,17670 14044,17519
-	RW1; 14044,17519 13904,17325
-Radweg fängt erst einige Meter hinter der Kreuzung an	RW1; 13904,17325 14044,17519
+	RW1; 14445,18010 14403,17986 14367,17965 14214,17754 14161,17681 14153,17670 14044,17519
+	RW1; 14044,17519 13931,17362 13904,17325
+Verbundsteinpflaster	RW1; 13931,17362 14044,17519 14153,17670 14161,17681 14214,17754 14367,17965 14403,17986 14445,18010
 	RW1;RW1 -1646,2434 -1604,2324 -1596,2307 -1537,2152 -1463,2080 -1377,2077 -1281,2074
 Gehwegplatten mit Bord	RW1; -1249,2590 -1248,2488 -1248,2451
 	RW1; -1248,2451 -1256,2216 -1281,2074 -1296,2025 -1283,1898 -1578,1740
@@ -5391,15 +5391,15 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/planungen-sollen-anfang-2023-endlich-beginnen-baustart-noch-in-weiter-ferne_a352907
 #: by: https://www.bvwp-projekte.de/strasse/B2-G20-BE/B2-G20-BE.html
 #: XXX wird der Radweg verbessert?
-#: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
+# REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="21"
-#: last_checked: 2023-08-04 (mapillary) (weiterhin kein "Radfahrer frei")
+#: last_checked: 2023-12-28
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
 	RW1;RW1 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
-#: note: Wurzelschäden wurden mittlerweile weitgehend ausgebessert (Stand Ende 2021)
-asphaltierter Rad- und Gehweg	RW2; 14832,17867 15152,18115 15181,18137 15569,18492
+#: historical_note: Wurzelschäden wurden bis Ende 2021 weitgehend ausgebessert, danach bessere Qualität, Ende 2023 wieder Unebenheiten
+asphaltierter Rad- und Gehweg, leichte Unebenheiten durch Wurzelhebungen	RW2; 14832,17867 15152,18115 15181,18137 15569,18492
 asphaltierter Rad- und Gehweg, leichte Wurzelhebungen	RW2; 15569,18492 15600,18551
 asphaltierter Rad- und Gehweg	RW2; 15600,18551 15610,18596
 asphaltierter Rad- und Gehweg, mittlerweile schon mit Wurzelschäden	RW2; 15610,18596 15600,18551 15569,18492 15181,18137 15152,18115 14832,17867
@@ -5623,7 +5623,7 @@ Grünbeschichtung, relativ breit	RW3; 3786,12014 3778,12104 3767,12217 3761,12298
 #: by: Heike Siewert:
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20041222.1025.23051.html
 #: confirmed_by: srt
-	RW1;RW1 14754,17673 14214,17754
+Verbundsteinpflaster	RW1;RW1 14754,17673 14214,17754
 #: by: Tino Knauth:
 	RW6;RW6 10349,2188 10313,2231 10334,2321 10392,2577
 #: by: Thomas Weiner
@@ -6784,7 +6784,7 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
 #: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022) (wurde ersetzt)
-#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau") (4. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (API-DEL) (als "abgeschlossen" markiert)
+#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau") (4. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (API-DEL) (als "abgeschlossen" markiert, aber die Längenangaben suggerieren, dass auch der restliche Abschnitt noch gemacht werden soll)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Bauarbeiten beginnen Mitte 2022)
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
@@ -6792,12 +6792,11 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2023-10-22 vvv
+#: last_checked: 2023-12-28 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-12-31 vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16945,17900 16981,17855
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

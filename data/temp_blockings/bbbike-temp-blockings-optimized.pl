@@ -5502,7 +5502,30 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => 1719784799
        },
-       undef,
+       {
+         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
+#: note: 2023 waren Bauzäune teilweise noch am 2023-12-28 da
+#: by: https://www.weihnachten-an-der-spree.de/
+#: osm_watch: node id="11346915244" version="1"
+	2::xmas 13558,10704 13531,10673 13326,10765
+	2::xmas 13527,10660 13531,10673
+',
+         'from' => 1700348400,
+         'id' => 3695,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 20.11. - 23.12.2023, sowie während der Aufbau- und Abbauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1703869200
+       },
        undef,
        undef,
        {
@@ -5546,9 +5569,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-11-23
-#: check_frequency: 90d
-#: next_check: 2023-12-31
+#: last_checked: 2023-12-28
+#: check_frequency: 30d
+# REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
 ',
          'from' => undef,
@@ -5660,7 +5683,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2023-12-15 vvv
+#: last_checked: 2023-12-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
 # REMOVED --- Küstriner Str.	q4::inwork 16357,15328 16314,15223
@@ -6819,8 +6842,8 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: XXX Wann sind die Bauarbeiten beendet?
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
-#: osm_watch: way id="1151064395" version="4"
-#: last_checked: 2023-12-14
+#: osm_watch: way id="1151064395" version="5"
+#: last_checked: 2023-12-27 (osm)
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
@@ -7099,6 +7122,18 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'from' => undef,
          'id' => 3992,
          'text' => 'Stallschreiberstr.: Fahrradstraße in Einrichtung, Einbahnstraße, Radfahrer-frei-Schilder fehlen noch',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (none)
+#: last_checked: 2023-12-28
+	q3::inwork 16884,15833 16905,15924
+',
+         'from' => undef,
+         'id' => 3993,
+         'text' => 'Große-Leege-Str.: zwischen Gärtnerstr. und Leuenberger Str. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        }

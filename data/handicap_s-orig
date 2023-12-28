@@ -40,7 +40,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2023-12-26
+#: last_checked: 2023-12-28
 #: next_check: 2024-01-12
 #: valid: -20240112
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -67,13 +67,13 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2023-12-11
+#: last_checked: 2023-12-28
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2023-12-22 vvv
+#: last_checked: 2023-12-28 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -880,7 +880,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867
 #: osm_watch: way id="1146544138" version="5"
-#: osm_watch: way id="1145470730" version="2"
+#: osm_watch: way id="1145470730" version="3"
 #: note: Länge der Engstelle etwa 40m
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2023-09-14
@@ -1007,15 +1007,14 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15832,16846 15866,16823 15875,16816
 # 
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
+# REMOVED (fertig) --- #: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum) --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="1040605739" version="2" --- #: add_fragezeichen: Bis wann dauern die Bauarbeiten an? --- #: XXX laut osm opening_date=2023-12 --- #: last_checked: 2023-12-28 --- #: check_frequency: 30d --- #: next_check: 2023-12-31 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
-#: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum)
-# REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="1040605739" version="2"
-#: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
-#: XXX laut osm opening_date=2023-12
-#: last_checked: 2023-11-23
-#: check_frequency: 30d
-#: next_check: 2023-12-31
-Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
+#: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
+#: also_indoor: traffic (G,B,W)
+#: note: auf etwa 50m Länge gesperrt
+#: last_checked: 2023-12-28
+#: next_check: 2024-03-31
+Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt	q3:inwork 12646,16563 12560,16602
 # 
 ### Pankow ###
 # 
