@@ -632,7 +632,7 @@ sub action_forever_until_error {
 	if ($^O eq q{linux}) {
 	    # XXX use system() once statusref is implemented
 	    $d->qx({quiet => 1, statusref => \my %status},
-		   qw(inotifywait -q -e close_write -t), $forever_interval,
+		   qw(inotifywait -q -e close_write -e delete -e create -t), $forever_interval,
 		   @srcs,
 		  );
 	    exit 2 if ($status{signalnum}||0) == 2;
