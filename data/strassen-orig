@@ -261,7 +261,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-12-14 vvv
+#: last_checked: 2023-12-29 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
@@ -896,20 +896,8 @@ Am Karlsbad	N 8011,11014 8027,11000 8143,10903 8287,10786
 Am Karlsbad	N 8027,11000 7959,10910
 Potsdamer Str. (Schöneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,9791 7526,9969 7579,10183 7633,10394 7689,10514 7820,10768 7912,10945 7968,11048 7980,11070 8000,11137 8031,11249 8065,11349 8083,11381 8096,11393 8145,11438 8217,11455 8261,11463 8301,11469 8358,11477 8374,11479 8479,11493
 (Potsdamer Platz - Linkstr.)	NN 8474,11350 8481,11447
-Alte Potsdamer Str.	NN 8479,11493 8481,11447 8389,11378
-#: next_check_id: ALTEPOTSDAMER-2022
-#: by: https://www.berliner-zeitung.de/news/shopping-berlin-potsdamer-platz-arkaden-heissen-jetzt-the-playce-li.250487
-#: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
-#: XXX die Straße wird vermutlich zur Fußgängerzone?
-# REMOVED --- #: XXX laut StefanHRT mittlerweile Verbundsteinpflaster, zumindest an der Einmündung Potsdamer Platz
-# REMOVED (war der andere Abschnitt) --- #: osm_watch: way id="4597334" version="30"
-#: last_checked: 2023-12-04
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-12-31
-Alte Potsdamer Str.	N 8389,11378 8375,11368 8318,11324 8280,11296
+#: historical_note: früher (bis etwa 2023) normale Straße (cat=N)
+Alte Potsdamer Str.	NN 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
 Kulmer Str.	N 7771,9479 7829,9723
 Kulmer Str.	HH 7829,9723 7848,9814 7866,9902
 Bülowstr. (Schöneberg)	NN 7938,9694 7941,9733
@@ -1419,7 +1407,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="15"
 #: priority: #C
-#: last_checked: 2023-11-12
+#: last_checked: 2023-12-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
@@ -1477,7 +1465,7 @@ Grunerstr.	HH 10849,12557 10783,12502
 #: source_id[expired]: bvg2021:248#BVG324714_0
 #: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023) (inaktiv)
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2023-12-18 vvv
+#: last_checked: 2023-12-29 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-25
 Grunerstr. [Gehweg]	NN 10973,12611 11057,12715
@@ -12495,9 +12483,9 @@ Rudolf-Grosse-Str.	NN 19141,9709 19142,9755
 Rudolf-Grosse-Str.	N 19142,9755 19144,9810
 Hilbertstr.	N 10096,-2137 10173,-2402 10253,-2643 10259,-2660
 Lortzingstr. (Lichtenrade)	N 10050,-2808 10077,-2789 10155,-2739 10259,-2660
-Mozartstr. (Lichtenrade)	N 10259,-2660 10392,-2980 10462,-3149 10470,-3169 10460,-3199
+Mozartstr. (Lichtenrade)	N 10259,-2660 10392,-2980 10462,-3149 10470,-3169 10474,-3186 10467,-3201
 Beethovenstr. (Lichtenrade)	N 10155,-2739 10219,-2895 10272,-3027 10323,-3150
-(Beethovenstr. - Mozartstr., Mauerweg)	NN 10309,-3191 10460,-3199
+(Beethovenstr. - Mozartstr., Mauerweg)	NN 10309,-3191 10467,-3201
 Schivelbeiner Str.	NH 10301,16186 10421,16175 10603,16158 10739,16146 10982,16121
 Arnimplatz	NN 10739,16146 10606,16319
 Seelower Str.	N 10778,16485 10754,16305 10739,16146 10729,16042
@@ -13126,7 +13114,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-29
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371

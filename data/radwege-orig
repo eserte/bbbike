@@ -331,7 +331,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2023-12-28 vvv
+#: last_checked: 2023-12-29 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -2069,7 +2069,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2023-12-18
+#: last_checked: 2023-12-29
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
 # REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2481,7 +2481,7 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 #: XXX wie sieht es nach dem Umbau aus?
 #: last_checked: 2023-12-20 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2023-12-31 vvv
+#: next_check: 2024-06-30 vvv
 	RW1; 13216,9983 13155,9907
 #: historical_note: früher Radweg auf dem Bürgersteig
 #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3;
@@ -2586,7 +2586,8 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7937,583 8075,499
 	RW4;RW4 7031,12320 7051,12426
 Verbundsteinpflaster	RW1; 7051,12426 7077,12575 7085,12610
 unebenes Verbundsteinpflaster, Bord gegen Gehweg	RW1; 7085,12610 7111,12743 7172,13051
-	RW1; 7172,13051 7111,12743 7085,12610 7077,12575 7051,12426
+unebenes Verbundsteinpflaster, Bord gegen Gehweg	RW1; 7172,13051 7111,12743 7085,12610
+	RW1; 7085,12610 7077,12575 7051,12426
 	RW1;RW1 8161,16752 8082,16483 8093,16438
 	RW1;RW1 4144,18896 4211,18882 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5364,18775
 	RW1; 5364,18775 5550,18775
@@ -2735,7 +2736,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-12-23 vvv
+#: last_checked: 2023-12-29 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2790,7 +2791,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2023-12-23
+#: last_checked: 2023-12-29
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW2; 12543,11521 12645,11673
@@ -6248,7 +6249,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2023-12-16 vvv
+#: last_checked: 2023-12-29 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -6482,7 +6483,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 #: next_check_id: MITTEL-2019
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
-#: last_checked: 2023-12-23 vvv
+#: last_checked: 2023-12-29 vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514

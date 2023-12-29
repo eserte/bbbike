@@ -2800,32 +2800,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/brandenburg/3404397-1329503-der-traditionelle-potsdamer-weihnachtsma.html
-#: by: https://www.berlin.de/tourismus/brandenburg/veranstaltungen/7769364-3479097-weihanchtsmarkt-blauer-lichterglanz.html
-#: tempex: before(first_advent,mo) - YYYY1230
-	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
-',
-         'from' => 1701039600,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 28.11.2023 - 29.12.2023',
-         'type' => 'gesperrt',
-         'until' => 1703804400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3052,9 +3027,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
 #: osm_watch: way id="462738551" version="20"
 #: osm_watch: way id="848019125" version="6"
+#: osm_watch: note 4030867 1
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2023-11-29
-# REMOVED --- #: next_check: 2023-09-30
+#: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023
+#: last_checked: 2023-12-29
+#: next_check: 2024-01-23
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 ',
@@ -3169,7 +3146,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
 #: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
+#: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
 Pariser Platz	2::temp 8722,12268 8637,12258
+Straße des 17. Jui	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 7031,12320 7383,12095
 	2::temp 7875,12363 7822,12201 7816,12150
 	2::temp 8400,12417 8391,12389 8344,12221
@@ -3177,15 +3156,16 @@ Pariser Platz	2::temp 8722,12268 8637,12258
 	2::temp 8775,12457 8804,12280 8722,12268
 # umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
 	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
-	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681
-	2::temp 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7816,11571
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597 7711,11558 7717,11540
 	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
 	2::temp 8210,11775 8244,11878 8327,12174
-	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809
-	2::temp 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764
-	2::temp 7059,11978 7007,11923 6984,11859
-	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
-	2::temp 8014,11753 8016,11770 8020,11937 8022,12016
+	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742
+	2::temp 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566
+	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
+	2::temp 8005,11627 8014,11753 8016,11770 8020,11937 8022,12016
 	2::temp 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
 	2::temp 8034,12093 8049,12140
 	2::temp 8167,11865 8132,11910
@@ -3193,7 +3173,8 @@ Pariser Platz	2::temp 8722,12268 8637,12258
 	2::temp 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
 	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-	2::temp 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
+	2::temp 7373,11594 7362,11561 7356,11517
 	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
 ',
          'from' => 1703772000,
@@ -3600,7 +3581,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2023-12-23
+#: last_checked: 2023-12-29
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4327,7 +4308,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3349,
-         'text' => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe im Herbst 2023',
+         'text' => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe Anfang 2024',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5138,9 +5119,8 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2023-11-26 (webcam)
-#: check_frequency: 30d
-# REMOVED (kürzere Frequenz bei webcam-Checks) --- #: check_frequency: 120d
+#: last_checked: 2023-12-29
+#: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
          'from' => undef,
@@ -5182,8 +5162,13 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
        undef,
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
-#: XXX Wie lange dauern die Bauarbeiten an? -> nordöstlicher Abschnitt ist fertig, prüfen! (evtl. ist jetzt der südwestliche gesperrt)
-#: last_checked: 2023-12-12
+#: by: https://www.berliner-zeitung.de/news/shopping-berlin-potsdamer-platz-arkaden-heissen-jetzt-the-playce-li.250487
+#: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
+#: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag!
+#: last_checked: 2023-12-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
@@ -5502,30 +5487,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => 1719784799
        },
-       {
-         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
-#: note: 2023 waren Bauzäune teilweise noch am 2023-12-28 da
-#: by: https://www.weihnachten-an-der-spree.de/
-#: osm_watch: node id="11346915244" version="1"
-	2::xmas 13558,10704 13531,10673 13326,10765
-	2::xmas 13527,10660 13531,10673
-',
-         'from' => 1700348400,
-         'id' => 3695,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 20.11. - 23.12.2023, sowie während der Aufbau- und Abbauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1703869200
-       },
+       undef,
        undef,
        undef,
        {
@@ -5999,7 +5961,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2023-12-16
+#: last_checked: 2023-12-29
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -6607,8 +6569,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: also_indoor: traffic (W)
-#: note: Halteverbotsschilder bis Ende März 2024; nur ein Abschnitt der Fahrbahn ist gesperrt, deshalb q3
-#: last_checked: 2023-09-26
+#: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
+#: last_checked: 2023-12-29
 #: next_check: 2024-03-31
 	q3::inwork 7103,11247 7171,11510
 ',
@@ -6735,9 +6697,10 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
        {
          'data' => '#: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="25"
+#: osm_watch: note 4045330 1
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-12-23
+#: last_checked: 2023-12-29
 #: check_frequency: 14d
 	q3::inwork; 9656,12031 9666,11935 9679,11834
 ',
@@ -6787,7 +6750,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: last_checked: 2023-12-20
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2024-06-30
 	q3::inwork 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
 ',
          'from' => 1699031494,
@@ -7134,6 +7097,17 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'from' => undef,
          'id' => 3993,
          'text' => 'Große-Leege-Str.: zwischen Gärtnerstr. und Leuenberger Str. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet?
+#: last_checked: 2023-12-29
+	q4::inwork 8122,12603 8120,12756
+',
+         'from' => undef,
+         'id' => 3994,
+         'text' => 'Weg am Bundeskanzleramt: Bauarbeiten, Weg für Radfahrer explizit gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        }
