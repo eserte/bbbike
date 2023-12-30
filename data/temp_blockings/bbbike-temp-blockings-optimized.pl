@@ -1774,7 +1774,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        {
          'data' => '#: tempex: we T08-T13, th T12-T17, sa T08-T14 vvv
-	q4::temp:clock 5881,7314 5810,7337
+# REMOVED (hier wohl nicht, jedenfalls samstags nicht) ---	q4::temp:clock 5881,7314 5810,7337
 	q4::temp:clock 5810,7337 5817,7223
 #: tempex ^^^
 ',
@@ -1999,6 +1999,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://viz.berlin.de/2020/12/welcome21/
 #: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
 #: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
+#: by: https://viz.berlin.de/aktuelle-meldungen/silvesterfeier-sperrungen/ (außerdem noch weitergehende Sperrungen: alle Straßen rund um den Großen Stern)
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -3025,7 +3026,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
-#: osm_watch: way id="462738551" version="20"
+#: osm_watch: way id="462738551" version="21"
 #: osm_watch: way id="848019125" version="6"
 #: osm_watch: note 4030867 1
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
@@ -3558,11 +3559,12 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by[nocache]: https://archive.ph/2023.06.22-094813/https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
 #: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
 #: osm_watch: way id="36936021" version="7" brb
 #: also_indoor: search Bahnhof Zeuthen
-#: last_checked: 2023-10-18 (maz)
+#: last_checked: 2023-12-27 (maz)
 #: check_frequency: 360d
-#: next_check: 2024-05-15
+#: next_check: 2024-11-30
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 ',
          'from' => 1533756141,
@@ -4466,16 +4468,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-09-08 (baustellen-doku)
+#: last_checked: 2023-12-30
 #: check_frequency: 120d
-#: next_check: 2023-12-31
+# REMOVED --- #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
 ',
          'from' => 1630965600,
          'id' => 3442,
-         'text' => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, voraussichtlich bis Ende 2023',
+         'text' => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, mindestens bis Ende 2023',
          'type' => 'gesperrt',
-         'until' => 1704042000
+         'until' => undef
        },
        undef,
        undef,
@@ -4820,7 +4822,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="1"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-12-20
+#: last_checked: 2023-12-30
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
@@ -4973,9 +4975,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1656194400,
          'id' => 3574,
          'source_id' => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
-         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich 30. Dezember 2024, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
+         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
          'type' => 'gesperrt',
-         'until' => 1735599599
+         'until' => 1748793600
        },
        undef,
        undef,
@@ -5173,7 +5175,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
-#: osm_watch: way id="1124627670" version="5"
+#: osm_watch: way id="1124627670" version="6"
 	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 ',
          'from' => 1663329224,
@@ -5387,7 +5389,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-12-27
+#: last_checked: 2023-12-30
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -5563,7 +5565,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: last_checked: 2023-11-01 (mapillary)
+#: last_checked: 2023-12-30
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -5717,8 +5719,8 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
 #: osm_watch: way id="1171918026" version="4"
-#: osm_watch: way id="151353924" version="11"
-#: last_checked: 2023-10-21 vvv
+#: osm_watch: way id="151353924" version="12"
+#: last_checked: 2023-12-30 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
@@ -6342,8 +6344,9 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=752911#post752911 (DHZC-Neubau: bleibt der Eingang längerfristig gesperrt?)
 #: by: https://dieneue-charite.de/vision/zukunftsbausteine/campus-virchow-klinikum
 #: source_id: viz2021:13.33994,52.53982,01.06.2023,08:00 (bis 29.12.2023) (inaktiv)
-#: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023)
+#: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023) (inaktiv)
 #: osm_watch: way id="4543436" version="31"
+#: also_indoor: traffic (H,ex-G,B,ex-W)
 #: last_checked: 2023-11-07
 #: check_frequency: 60d
 #: next_check: 2023-12-30
@@ -6351,9 +6354,9 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 ',
          'from' => undef,
          'id' => 3890,
-         'text' => 'Virchow-Klinikum, Einfahrt Nordufer: komplett gesperrt, auch für Fußgänger, voraussichtlich bis Ende 2023',
+         'text' => 'Virchow-Klinikum, Einfahrt Nordufer: komplett gesperrt, auch für Fußgänger, voraussichtlich bis Ende 2023, vielleicht auch länger',
          'type' => 'gesperrt',
-         'until' => 1703952000
+         'until' => undef
        },
        undef,
        undef,
