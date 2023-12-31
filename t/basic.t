@@ -158,13 +158,22 @@ for my $f (@files) {
 	    myskip "$f needs mod_perl2", $tests_per_file
 	        if $f =~ m{^( BBBikeApacheSessionCountedHandler\.pm
 		          )$}x && !eval { require Apache2::Const; 1 };
-	} elsif ($ENV{BBBIKE_TEST_SKIP_MODPERL} &&
+	} elsif (
 		 $f eq 'BBBikeApacheSessionCountedHandler.pm' &&
 		 !eval { require Apache2::Const; 1 }
 		) {
 	    # XXX There should be a BBBikeApacheSessionCountedHandler
 	    # replacement for Plack
-	    $TODO = "$f needs mod_perl2, which is not installed";
+	    if ($ENV{BBBIKE_TEST_SKIP_MODPERL}) {
+		$TODO = "$f needs mod_perl2, which is not installed";
+	    } else {
+		diag <<EOF;
+**********************************************************************
+* NOTE: test will probably fail because of missing modperl2, try
+*       BBBIKE_TEST_SKIP_MODPERL=1 to ignore this failure.
+**********************************************************************
+EOF
+	    }
 	}
 
 	my @add_opt;
