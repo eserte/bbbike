@@ -72,7 +72,7 @@ $SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Wi
 $SF_DISTFILE_DEBIAN_I386  = 0&&$use_bbbike_sourceforge_net_fallback ? "$BBBIKE_SF_WWW/downloads/bbbike_${DEBIAN_I386_VERSION}_i386.deb" : "$SF_DISTDIR/" . join('', $DEBIAN_I386_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_I386_VERSION}_i386.deb/download";
 $SF_DISTFILE_DEBIAN_AMD64 = 0&&$use_bbbike_sourceforge_net_fallback ? "$BBBIKE_SF_WWW/downloads/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb" : "$SF_DISTDIR/" . join('', $DEBIAN_AMD64_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb/download";
 *SF_DISTFILE_DEBIAN = \$SF_DISTFILE_DEBIAN_I386; # compatibility
-$DISTFILE_FREEBSD_I386 = "http://pkg.freebsd.org/freebsd:12:x86:32/latest/All/de-BBBike-3.18_4.pkg";
+$DISTFILE_FREEBSD_I386 = "http://pkg.freebsd.org/freebsd:14:x86:32/latest/All/de-BBBike-3.18_4.pkg";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
 $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike"; # don't use, broken since 2017
 
