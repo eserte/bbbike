@@ -30502,7 +30502,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2023-12-21 vvv
+#: last_checked: 2024-01-01 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -37728,7 +37728,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
-#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023)
+#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv)
 #: osm_watch: way id="1153732901" version="4"
 #: last_checked: 2023-10-08 (mapillary)
 #: check_frequency: 90d
@@ -38809,7 +38809,7 @@ EOF
 EOF
      },
      { from  => 1682892000, # 2023-05-01 00:00
-       until => undef, # $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
+       until => $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
        text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis Ende 2023', # was: Ende der Bauarbeiten unbekannt', # was: "voraussichtlich bis 08.07.2023"
        type  => 'handicap',
        data  => <<EOF,
@@ -38820,7 +38820,7 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
-#: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023)
+#: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023) (inaktiv)
 # REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31
 	q4::inwork 20159,3623 20073,3734
 EOF
@@ -39349,7 +39349,7 @@ EOF
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
 #: last_checked: 2023-07-02
-#: next_check: 2023-08-30
+#: next_check: 2024-06-01
 	q4::temp::play 14208,12235 14055,11964
 EOF
      },
