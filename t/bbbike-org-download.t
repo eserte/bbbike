@@ -156,8 +156,15 @@ SKIP: {
 		$no_check_certificate = 1;
 	    } elsif ($ldd_output =~ m{\Qlibgnutls.so.30\E}) {
 		# check for problematic versions
-		my $cmd = q{dpkg -s libgnutls30 | perl -nle 'm/^Version:\s+(\S+)/ and print $1'};
-		chomp(my $libgnutls_version = `$cmd`);
+		my $libgnutls_version;
+		open my $fh, '-|', qw(dpkg -s libgnutls30) or die $!;
+		while(<$fh>) {
+		    chomp;
+		    if (m/^Version:\s+(\S+)/) {
+			$libgnutls_version = $1;
+			last;
+		    }
+		}
 		if ($libgnutls_version =~ m{^3\.5\.8-5\+deb9u[0-5]$}) {
 		    $no_check_certificate = 1;
 		}
