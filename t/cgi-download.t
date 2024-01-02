@@ -42,8 +42,6 @@ my $snapshot_rootdir_qr = qr{BBBike-snapshot-\d+};
 
 my $is_local_server = $cgidir =~ m{^http://localhost};
 
-my($tmpfh,$tempfile) = tempfile(UNLINK => 1, SUFFIX => "_cgi-download.t.zip")
-    or die $!;
 for my $def (
 	     # base URL                      SKIP condition                SKIP network  member checks
 	     ['bbbike-data.cgi',             undef,                        0,            qr{^data/\.modified$}, qr{^data/strassen$}],
@@ -57,13 +55,15 @@ for my $def (
 	skip "no network tests", 2
 	    if $ENV{BBBIKE_TEST_NO_NETWORK} && $SKIP_network;
 	checkpoint_apache_errorlogs if $is_local_server;
+	my($tmpfh,$tempfile) = tempfile(UNLINK => 1, SUFFIX => "_cgi-download.t.zip")
+	    or die $!;
 	my $resp = $ua->get("$cgidir/$baseurl", ':content_file' => $tempfile);
 	ok $resp->is_success && !$resp->header('X-Died'), "Fetching $baseurl"
 	    or do {
 		output_apache_errorslogs if $is_local_server;
 		diag $resp->dump;
 	    };
-	    
+
 	zip_ok $tempfile, -memberchecks => \@member_checks;
     }
 }
