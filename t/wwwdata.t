@@ -211,7 +211,7 @@ EOF
 	note "The following Content-Types are uncompressed: " . join(", ", sort keys %uncompressed_ct);
     }
     if (%mixed_compression_ct) {
-	note "The following Content-Type are sometimes compressed, sometimes uncompressed: " . join(", ", sort keys %mixed_compression_ct);
+	note "The following Content-Types are sometimes compressed, sometimes uncompressed: " . join(", ", sort keys %mixed_compression_ct);
     }
 }
 
@@ -476,7 +476,7 @@ EOF
 		my $image_info = image_info(\$content);
 		ok !$image_info->{error}, "No error detected while looking at image content";
 		is $image_info->{file_media_type}, $resp->header("Content-Type"), "Expected mime type";
-		is $resp->header("content-encoding")||'', '', 'No compression for images'
+		like $resp->header("content-encoding")||'', qr{^(|identity)$}, 'No compression for images' # note: LWP::Protocol::Net::Curl may return "identity"
 		    or do {
 			if (!our $deflate_img_warning_seen++) {
 			    diag <<'EOF';
