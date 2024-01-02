@@ -148,7 +148,8 @@ for my $do_accept_gzip (0, 1) {
 }
 
 my $has_mismatches;
-while(my($url,$v) = each %contents) {
+for my $url (sort keys %contents) {
+    my $v = $contents{$url};
     my $calc_ua_sig = sub {
 	my($i) = @_;
 	join(", ", map { "$_=$v->[$i]->{$_}" } grep { !/^md5$/ } sort keys %{ $v->[$i] });
