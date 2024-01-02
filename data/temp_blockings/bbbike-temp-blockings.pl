@@ -17505,10 +17505,11 @@ EOF
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
-#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024)
+#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,26.12.2023,19:35 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024)
 #: by: https://viz.berlin.de/2020/12/welcome21/
 #: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
 #: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
@@ -21757,12 +21758,29 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Friedhofswege nachts gesperrt',
+       text  => 'Friedhofswege nachts gesperrt (Öffnungszeiten: ' .
+                do {
+		    my $mon = (localtime)[4]+1;
+		    my $until = { 1  => 'Januar 8.00 - 16.00 Uhr',
+				  2  => 'Februar 8.00 - 17.00 Uhr',
+				  3  => 'März 8.00 - 18.00 Uhr',
+				  4  => 'April 8.00 - 19.00 Uhr',
+				  5  => 'Mai 8.00 - 20.00 Uhr',
+				  6  => 'Juni 8.00 - 20.00 Uhr',
+				  7  => 'Juli 8.00 - 20.00 Uhr',
+				  8  => 'August 8.00 - 20.00 Uhr',
+				  9  => 'September 8.00 - 19.00 Uhr',
+				  10 => 'Oktober 8.00 - 18.00 Uhr',
+				  11 => 'November 8.00 - 17.00 Uhr',
+				  12 => 'Dezember 8.00 - 16.00 Uhr',
+				}->{$mon};
+		    $until || '';
+		} . ')',
        recurring => 1,
        data => <<EOF,
 #: tempex: night vvv
-	2::night 12851,12602 13108,12859 13046,12956 12878,13229
-	2::night 12773,12683 13046,12956
+	2::night 12859,12593 13104,12840 13110,12879 13055,12958 12878,13229
+	2::night 12773,12683 13055,12958
 #: tempex ^^^
 EOF
      },
@@ -31262,7 +31280,6 @@ EOF
 	q4::temp 7118,9870 7080,10098
 EOF
      },
-
      { from  => 1587621600, # 2020-04-23 08:00
        until => undef, # XXX
        text  => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
@@ -36839,17 +36856,23 @@ Winterfeldtstr., westlicher Abschnitt	q3::inwork 6630,9990 6741,10017
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
-       text  => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 24.07.2023, vielleicht auch länger',
-       type  => 'handicap',
+       until => undef, # $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
+       text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024',
+       type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id: bvg2021:396#BVG323890_0
+#: source_id: bvg2021:396#BVG339330_0
+#: also_indoor: traffic (none)
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
-	q4::inwork 15777,10897 15820,10916 15870,10938
+#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
+#: last_checked: 2024-01-02
+#: check_frequency: 30d
+#: next_check: 2024-06-30
+	2::inwork 15777,10897 15820,10916 15870,10938
 EOF
      },
      { from  => 1664056800, # 2022-09-25 00:00
@@ -37728,10 +37751,10 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
-#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv)
+#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv) (bis 30.06.2024)
 #: osm_watch: way id="1153732901" version="4"
 #: last_checked: 2023-10-08 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 120d
 #: next_check: 2024-06-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
@@ -39531,7 +39554,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-12-24
+#: last_checked: 2024-01-02
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40215,10 +40238,10 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 EOF
      },
      { from  => 1692511200, # 2023-08-20 08:00
-       until => 1703224800, # 2023-12-22 07:00
-       text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 22.12.2023, 07:00 Uhr',
+       until => $isodate2epoch->("2024-03-01 17:00:00"), # 1703224800, # 2023-12-22 07:00
+       text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 01.03.2024, 17:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'LS/223-K/23/078', # inaktiv
+       source_id => 'LS/223-K/23/078', # inaktiv # bis 1.3.2024
        data  => <<EOF,
 	2::inwork -19289,63424 -19675,64106
 EOF
@@ -40946,11 +40969,11 @@ EOF
 EOF
      },
      { from  => 1679814000, # 2023-03-26 09:00
-       until => 1701964800, # 2023-12-07 17:00
-       text  => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 07.12.2023 17:00',
+       until => $isodate2epoch->("2024-02-08 17:00:00"), # 1701964800, # 2023-12-07 17:00
+       text  => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 08.02.2024 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.341707,52.447309,27.03.2023,09:00',
        data  => <<EOF,
+#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024)
 	q3::inwork 6212,4622 6100,4495
 EOF
      },

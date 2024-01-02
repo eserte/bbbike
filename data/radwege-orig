@@ -2841,7 +2841,7 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
 Fahrradschleuse	RW4; 11221,12250 11300,12241 11347,12223
 # REMOVED ---	RW4; 10736,12285 10772,12288
-	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
+	RW3;RW3 12891,12549 12866,12582 12859,12593 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3; 12163,13295 12131,13333 12085,13377 12058,13403 11995,13463
 vereinzelte Poller	RW4; 11995,13463 11924,13529 11893,13547
 Radspur kombiniert mit Bushaltestelle	RW3; 11893,13547 11842,13576 11819,13593
@@ -4476,12 +4476,12 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.432298,52.535532,28.09.2022,09:24 (bis 6.10.2022) (bis 14.10.2022) (inaktiv)
 #: source_id: viz2021:13.42832,52.53198,29.12.2022,09:25 (bis 03.03.2023) (inaktiv)
 #: source_id: viz2021:13.43331,52.53623,26.10.2022,07:00 (zusätzlicher Eintrag, bis 28.05.2023) (inaktiv)
-#: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024)
+#: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
 #: last_checked: 2023-11-09 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2024-01-15 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
 #: next_check ^^^
@@ -7894,12 +7894,12 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://berliner-abendblatt.de/2022/10/26/bauarbeiten-in-der-greifswalder-strasse-wird-es-eng/
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022) (bis 30.10.2022) (inaktiv)
 #: source_id: viz2021:13.433311,52.536229,26.10.2022,07:00 (zusätzlicher Eintrag, bis 28.05.2023) (inaktiv)
-#: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024)
+#: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
 #: last_checked: 2023-11-09 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-01-15 vvv
+#: next_check: 2024-07-01 vvv
 #: osm_watch: way id="335479077" version="23"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"

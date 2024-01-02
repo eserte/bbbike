@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: XXX Sieht nach Leitungsarbeiten aus.
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-02
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -32,13 +32,15 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger	q4+ 12558,11920 12617,11888
 #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut
 #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-11-16 vvv
-#: next_check: 2023-12-29 vvv
-#: valid: -20231229 vvv
+#: last_checked: 2024-01-02 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2023-12-29 vvv
+# REMOVED --- #: valid: -20231229 vvv
 Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229
 Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070
-#: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
@@ -5094,8 +5096,8 @@ Ernst-Fürstenberg-Str.: Fußgänger, schmale Hausdurchfahrt, Bordstein	q3- 13049,1
 # REMOVED (hier gibt's eine Servicestraße) --- #: XXX q1 aber gleichzeitig N --- ist hier eine Service-Straße? Ist Fußgänger+q1 vielleicht falsch? --- An der Brauerei: Fußgänger	q1 13279,13323 13375,13367
 #: note: teilweise Servicestraßen-Charakter, nur die letzten Meter zur Landsberger Allee reiner Fußweg
 An der Brauerei: Fußgänger	q2 13279,13323 13241,13415
-(Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
-(Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
+(Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12859,12593 13104,12840 13110,12879 13055,12958 12878,13229
+(Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13055,12958
 # REMOVED (bleibt bei q2) --- #: next_check_id: RITTER-2014 --- #: XXX erstmal q2, vielleicht später wieder q1 --- #: last_checked: 2015-06-02 --- #: check_frequency: 14d
 #: note: früher "q2"
 Ritterstr.: Fußgänger, Spielplatz	q3 9763,11148 9935,11067

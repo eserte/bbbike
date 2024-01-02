@@ -1992,10 +1992,11 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
-#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024)
+#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,26.12.2023,19:35 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024)
 #: by: https://viz.berlin.de/2020/12/welcome21/
 #: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
 #: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
@@ -2588,14 +2589,14 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'data' => '#: tempex: night vvv
-	2::night 12851,12602 13108,12859 13046,12956 12878,13229
-	2::night 12773,12683 13046,12956
+	2::night 12859,12593 13104,12840 13110,12879 13055,12958 12878,13229
+	2::night 12773,12683 13055,12958
 #: tempex ^^^
 ',
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Januar 8.00 - 16.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -5330,7 +5331,27 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: source_id[inactive]: bvg2021:396#BVG307357_0
+#: source_id: bvg2021:396#BVG323890_0
+#: source_id: bvg2021:396#BVG339330_0
+#: also_indoor: traffic (none)
+# REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
+# REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
+# REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
+#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
+#: last_checked: 2024-01-02
+#: check_frequency: 30d
+#: next_check: 2024-06-30
+	2::inwork 15777,10897 15820,10916 15870,10938
+',
+         'from' => undef,
+         'id' => 3630,
+         'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -5601,10 +5622,10 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
-#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv)
+#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv) (bis 30.06.2024)
 #: osm_watch: way id="1153732901" version="4"
 #: last_checked: 2023-10-08 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 120d
 #: next_check: 2024-06-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 ',
@@ -6208,7 +6229,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2023-12-24
+#: last_checked: 2024-01-02
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -6432,7 +6453,16 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
          'type' => 'gesperrt',
          'until' => 1709247599
        },
-       undef,
+       {
+         'data' => '	2::inwork -19289,63424 -19675,64106
+',
+         'from' => 1692511200,
+         'id' => 3884,
+         'source_id' => 'LS/223-K/23/078',
+         'text' => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 01.03.2024, 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1709308800
+       },
        undef,
        undef,
        {
@@ -6824,7 +6854,16 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024)
+	q3::inwork 6212,4622 6100,4495
+',
+         'from' => 1679814000,
+         'id' => 3943,
+         'text' => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 08.02.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1707408000
+       },
        undef,
        undef,
        undef,
