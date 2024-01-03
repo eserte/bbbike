@@ -262,7 +262,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 # REMOVED (broken) --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: by: srt
 #: XXX: temporäre Radspur
-#: osm_watch: way id="305483806" version="10"
+#: osm_watch: way id="305483806" version="11"
 #: osm_watch: way id="25042039" version="36"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2023-11-08 (daf)
@@ -990,9 +990,7 @@ neu asphaltiert	RW2; 10884,14952 10881,15047
 neu asphaltiert	RW1; 10883,15129 10884,15152
 Radspur, niedrige Protektion	RW3; 10884,15152 10886,15251
 asphaltiert	RW1; 10886,15251 10887,15287
-Radspur, niedrige Protektion	RW3; 10887,15287 10902,15422
-prvisorische Radspur	RW3; 10902,15422 10917,15525
-größtenteils neu asphaltiert, allerdings wieder neue Unebenheiten	RW1; 10917,15525 10941,15697
+Radspur, niedrige Protektion	RW3; 10887,15287 10902,15422 10917,15525 10941,15697
 Gehwegplatten	RW2; 10941,15697 10953,15787
 größtenteils neu asphaltiert	RW1; 10953,15787 10964,15896 10969,15944 10975,16010
 größtenteils neu asphaltiert	RW2; 10975,16010 10982,16121
@@ -2743,7 +2741,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2023-12-29 vvv
+#: last_checked: 2024-01-03 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -7402,7 +7400,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2023-12-14 vvv
+#: last_checked: 2024-01-03 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

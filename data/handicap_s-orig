@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: XXX Sieht nach Leitungsarbeiten aus.
-#: last_checked: 2024-01-02
+#: last_checked: 2024-01-03
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -45,13 +45,14 @@ Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,
 # 
 #: next_check_id: STRALAUERALLEE-2023
 #: last_checked: 2023-12-28
-#: next_check: 2024-01-12
-#: valid: -20240112
+#: check_frequency: 30d
+#: next_check: 2024-04-09
+#: valid: -20240409
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-03
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -321,7 +322,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10930,12501 10908,12553 10973,12611
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2023-12-18
+#: last_checked: 2024-01-03
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -460,7 +461,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2023-12-29 vvv
+#: last_checked: 2024-01-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -540,6 +541,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id: TRESKOWALLEE-2023
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
 #: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024)
+#: source_id: bvg2021:396#BVG308894_0
 #: last_checked: 2023-11-26
 #: check_frequency: 90d
 #: next_check: 2024-02-29
