@@ -12,6 +12,15 @@
 #   cat /tmp/*.bbd > /tmp/all
 #   mv /tmp/all /tmp/all.bbd
 #
+# Create with offsetted lines which may indicate direction
+#   ~/src/bbbike/miscsrc/bbr2bbd -cat '#800000' -f -usebasename -cat 'X;' *.bbr -o /tmp/output.bbd
+#
+# Use a final arrow:
+#   ~/src/bbbike/miscsrc/bbr2bbd -cat '#800000' -f -usebasename -cat 'X;' -glob-dir line_arrow=last *.bbr -o /tmp/output.bbd
+#
+# Split polylines (notable slower rendering in bbbike):
+#   ~/src/bbbike/miscsrc/bbr2bbd -cat '#800000' -f -usebasename -cat 'X;' -glob-dir line_arrow=last -split-line *.bbr -o /tmp/output.bbd
+#
 
 use strict;
 use FindBin;
@@ -29,14 +38,14 @@ if (!GetOptions(\%opt,
 		"cat=s", "cats=s", "name=s", "dest=s", "f", "usebasename",
 		"route-data","data-route", "o=s",
 		"include-length-to-name", "include-moddate-to-name",
-		'glob-dir|global-directive=s@',
+		'glob-dir|global-directive=s@', 'split-line',
 	       )) {
     die "usage:
     $0 [-cat category | -cats category,category,...] [-name routename]
        [-usebasename] [-dest directory] [-o file] [-f]
        [-data-route] [-route-data]
        [-include-length-to-name] [-include-moddate-to-name]
-       [-globdir key=val ...]
+       [-globdir key=val ...] [-split-line]
        [from to | files ...]
 ";
 }
@@ -197,7 +206,14 @@ sub convert_one_file {
 		if ($moddate) {
 		    $ret->[Strassen::NAME()] .= " (" . $moddate . ")";
 		}
-		$new_str->push($ret);
+		if ($opt{'split-line'}) {
+		    for my $c_i (1 .. $#{ $ret->[Strassen::COORDS()] }) {
+			my($from, $to) = @{ $ret->[Strassen::COORDS()] }[$c_i-1,$c_i];
+			$new_str->push([$ret->[Strassen::NAME()], [$from, $to], $ret->[Strassen::CAT()]]);
+		    }
+		} else {
+		    $new_str->push($ret);
+		}
 	    }
 	    $str = $new_str;
 	}
