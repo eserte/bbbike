@@ -29,12 +29,14 @@ if (!GetOptions(\%opt,
 		"cat=s", "cats=s", "name=s", "dest=s", "f", "usebasename",
 		"route-data","data-route", "o=s",
 		"include-length-to-name", "include-moddate-to-name",
+		'glob-dir|global-directive=s@',
 	       )) {
     die "usage:
     $0 [-cat category | -cats category,category,...] [-name routename]
        [-usebasename] [-dest directory] [-o file] [-f]
        [-data-route] [-route-data]
        [-include-length-to-name] [-include-moddate-to-name]
+       [-globdir key=val ...]
        [from to | files ...]
 ";
 }
@@ -198,6 +200,15 @@ sub convert_one_file {
 		$new_str->push($ret);
 	    }
 	    $str = $new_str;
+	}
+	if (@{ $opt{'glob-dir'} || [] }) {
+	    my %key2vals;
+	    # gather first
+	    for my $glob_dir (@{ $opt{'glob-dir'} }) {
+		my($k,$v) = split /=/, $glob_dir, 2;
+		push @{ $key2vals{$k} }, $v;
+	    }
+	    $str->set_global_directives(\%key2vals);
 	}
 	$open_out_file->();
 	print $ofh $str->as_string;
