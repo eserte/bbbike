@@ -60,7 +60,7 @@ my $zebrastreifen3_tests = 2;
 my $encoding_tests = 10;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
-my $global_directive_tests = 7;
+my $global_directive_tests = 10;
 my $strict_and_syntax_tests = 12;
 my $get_conversion_tests = 9;
 
@@ -621,8 +621,10 @@ EOF
 
 { # $global_directive_tests
     my $s = Strassen->new;
+    ok !$s->exists_global_directive('not_existing'), 'check if global directive does not exist';
     $s->set_global_directive('some' => 'thing');
     is $s->get_global_directive('some'), 'thing', 'set/get global directive';
+    ok $s->exists_global_directive('some'), 'check if global directive exists';
     $s->set_global_directive('some' => 'thing', 'else');
     is $s->get_global_directive('some'), 'thing', 'after setting multiple values';
     is_deeply $s->get_global_directives, { some => [qw(thing else)] }, 'get_global_directives';
@@ -634,6 +636,14 @@ EOF
     is $s->global_directives_as_string, $expected_string, 'global_directives_as_string on object';
     my $glob_dir = $s->get_global_directives;
     is Strassen::global_directives_as_string($glob_dir), $expected_string, 'global_directives_as_string on hash';
+
+    $s->add_global_directive(some => qw(three four));
+    $s->add_global_directive(new => qw(one));
+    eq_or_diff $s->get_global_directives, {
+					   some => [qw(thing else three four)],
+					   new => [qw(one)],
+					  }, 'expected global directives after add_global_directive calls';
+
     ok !eval { Strassen::global_directives_as_string([]); 0 }, 'global_directives_as_string on non-hash is an error';
     like $@, qr/Unexpected argument to global_directives_as_string/, 'error message';
 }

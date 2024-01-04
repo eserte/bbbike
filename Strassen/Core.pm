@@ -1623,11 +1623,28 @@ sub get_global_directive {
 }
 
 sub set_global_directive {
-    my($self, $key, @val) = @_;
+    my($self, $key, @vals) = @_;
     if (!$self->{GlobalDirectives} && _has_tie_ixhash()) {
 	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
     }
-    $self->{GlobalDirectives}->{$key} = [@val];
+    $self->{GlobalDirectives}->{$key} = [@vals];
+}
+
+sub exists_global_directive {
+    my($self, $key) = @_;
+    return 0 if !exists $self->{GlobalDirectives};
+    return 0 if !exists $self->{GlobalDirectives}->{$key};
+    return 0 if !@{ $self->{GlobalDirectives}->{$key} };
+    return 1;
+}
+
+sub add_global_directive {
+    my($self, $key, @vals) = @_;
+    if ($self->exists_global_directive($key)) {
+	CORE::push(@{ $self->{GlobalDirectives}->{$key} }, @vals);
+    } else {
+	$self->set_global_directive($key, @vals);
+    }
 }
 
 # Note that this sets only the reference; if you want a copy, then
