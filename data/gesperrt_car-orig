@@ -1605,6 +1605,7 @@ Karl-Marx-Str./Neckarstr.	3nocross 12689,8289 12639,8344 12598,8390
 # 
 Birkbuschstr. - Hindenburgdamm	3 4822,5114 4796,5129 4792,5097
 # 
+Weserstr.	1 12148,9209 12180,9193 12328,9117
 Weserstr.	1 12524,9012 12480,9037 12406,9076 12328,9117
 Weserstr.	1 12740,8862 12590,8977
 # 
@@ -1887,6 +1888,9 @@ Föhrer Str.: Überfahrt für Kfz nicht erlaubt	3nocross 6528,15000 6504,14969 6445
 # 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1356563.php
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/nesselweg-mit-pollern-abgesperrt_a390452
+#: by: https://www.rbb24.de/politik/beitrag/2024/01/berlin-eilantrag-gegen-kiezblocks-poller-pankow-verkehr.html
+#: XXX Werden die Poller nun abgebaut?
+#: last_checked: 2024-01-04 (rbb)
 # REMOVED --- #: osm_watch: way id="145671825" version="12" --- #: osm_watch: way id="33870322" version="19" --- #: priority: #D --- #: last_checked: 2023-08-17 (mapillary) --- #: next_check: 2023-08-21
 Nesselweg: Poller, Durchfahrt für Kfz nicht möglich	2 8587,21218 8605,21248
 # 
@@ -1955,7 +1959,7 @@ Boxhagener Str. -> Wühlischstr.: nur geradeaus erlaubt	3 14752,11369 14771,11345
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/am-goerlitzer-ufer-wird-gebaut_a403467
 #: osm_watch: way id="148176599" version="15"
 #: XXX zurzeit schon wegen Bauarbeiten für den Fahrzeugverkehr gesperrt, siehe auch handicap- und radwege-Einträge; nach den Bauarbeiten vermutlich zu NN machen
-#: last_checked: 2023-12-26
+#: last_checked: 2024-01-04
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	2 13216,9983 13155,9907 13136,9883 13086,9825

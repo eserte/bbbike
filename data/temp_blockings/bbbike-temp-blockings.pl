@@ -21778,6 +21778,7 @@ EOF
 		} . ')',
        recurring => 1,
        data => <<EOF,
+#: by: https://evfbs.de/index.php?id=164 (Öffnungszeiten)
 #: tempex: night vvv
 	2::night 12859,12593 13104,12840 13110,12879 13055,12958 12878,13229
 	2::night 12773,12683 13055,12958
@@ -36864,6 +36865,8 @@ EOF
 #: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0
+#: osm_watch: note 4052359 1
+#: osm_watch: way id="1117348911" version="3"
 #: also_indoor: traffic (none)
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -37446,7 +37449,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
-#: last_checked: 2023-11-05 (architektur-urbanistik)
+#: last_checked: 2024-01-02 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6348,9541
@@ -41070,14 +41073,14 @@ EOF
      },
      { from  => 1699031494, # 2023-11-03 18:11
        until => undef, # 1704063599, # 2023-12-31 23:59
-       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten, mindestens bis Ende 2023 (Stand Mitte Dezember 2023: zumindest der alte Radweg Richtung Nordosten ist noch passierbar)',
+       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang Januar 2024: die alten Radwege scheinen noch passierbar zu sein)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOERLITZERUFER-2023
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2023-12-20
+#: last_checked: 2024-01-04
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 14d
 #: next_check: 2024-06-30
@@ -41671,6 +41674,15 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet?
 #: last_checked: 2023-12-29
 	q4::inwork 8122,12603 8120,12756
+EOF
+     },
+     { from  => 1704284580, # 2024-01-03 13:23
+       until => 1706900400, # 2024-02-02 20:00
+       text  => 'Salierstr.: Bauarbeiten, Sperrung zwischen Germanenstr. und Cimbernstr., vom 04.01.2024 13:23 bis 02.02.2024 20:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.54543,52.41699,04.01.2024,13:23 (bis 02.02.2024)
+	q4::inwork 20196,1325 20226,1416
 EOF
      },
     );
