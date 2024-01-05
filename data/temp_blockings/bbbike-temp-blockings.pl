@@ -28576,8 +28576,10 @@ EOF
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
+#: osm_watch: note 3658253 2
 #: last_checked: 2023-11-29 (mapillary)
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
+#: osm_watch: way id="4549817" version="29"
 #: last_checked: 2023-10-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
@@ -36719,9 +36721,8 @@ EOF
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024)
-#: last_checked: 2023-01-10
-#: next_check: 2023-01-13
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024)
+# REMOVED --- #: last_checked: 2023-01-10 --- #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16377,7200 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
@@ -37763,14 +37764,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-11-19 00:00:00"), # einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
-       until => $isodate2epoch->("2023-12-29 18:00:00"), # ein paar Tage für den Abbau einplanen
+       until => $isodate2epoch->("2024-01-08 18:00:00"), # ein paar Tage für den Abbau einplanen
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
        text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 20.11. - 23.12.2023, sowie während der Aufbau- und Abbauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
-#: note: 2023 waren Bauzäune teilweise noch am 2023-12-28 da
+#: note: 2023 waren Bauzäune noch am 2024-01-05 (!) da
 #: by: https://www.weihnachten-an-der-spree.de/
 #: osm_watch: node id="11346915244" version="1"
 	2::xmas 13558,10704 13531,10673 13326,10765
@@ -39230,8 +39231,8 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="23"
-#: last_checked: 2023-12-22
+#: osm_watch: way id="58182828" version="24"
+#: last_checked: 2024-01-04 (osm)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -41677,11 +41678,11 @@ EOF
 EOF
      },
      { from  => 1704284580, # 2024-01-03 13:23
-       until => 1706900400, # 2024-02-02 20:00
+       until => 1704480616, # 1706900400, # 2024-02-02 20:00
        text  => 'Salierstr.: Bauarbeiten, Sperrung zwischen Germanenstr. und Cimbernstr., vom 04.01.2024 13:23 bis 02.02.2024 20:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.54543,52.41699,04.01.2024,13:23 (bis 02.02.2024)
+#: source_id: viz2021:13.54543,52.41699,04.01.2024,13:23 (bis 02.02.2024) (bereits zwei Tage später inaktiv)
 	q4::inwork 20196,1325 20226,1416
 EOF
      },

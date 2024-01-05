@@ -168,7 +168,7 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: source_id: viz2021:13.280667,52.477293,14.09.2023,07:00 (Kanalarbeiten bis 29.09.2023) (inaktiv)
 # REMOVED (hier bereits alles fertig) --- #: osm_watch: way id="47266663" version="14"
 # REMOVED (hier bereits alles fertig) --- #: osm_watch: way id="47267054" version="10"
-#: osm_watch: way id="30501179" version="14"
+#: osm_watch: way id="30501179" version="15"
 #: last_checked: 2023-11-06
 #: check_frequency: 180d
 # REMOVED (fertig) --- Hubertusallee/Teplitzer Str.: hier werden Radspuren markiert	?::inwork 2322,8857 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2121,8351 2112,8088 2099,7904
@@ -6953,7 +6953,7 @@ Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es d
 #: osm_watch: way id="22909864" version="22"
 #: osm_watch: node id="1650096479" version="7"
 #: osm_watch: way id="1168938182" version="2"
-#: last_checked: 2023-12-07 (indoor)
+#: last_checked: 2024-01-05 (indoor)
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2024-12-31
@@ -7075,7 +7075,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Umsetzung der Fahrradstraße 2023)
 #: by[nocache]: https://archive.is/dz81E (Tagesspiegel; allerdings wurde die Finanzierung gestoppt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11084 (Einwohnerantrag)
-#: last_checked: 2024-01-02 vvv
+#: last_checked: 2024-01-05 vvv
 #: next_check: 2024-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
@@ -7318,6 +7318,7 @@ Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 110
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8363 (Vorlage zur Beschlussfassung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_01_0001_0140_online.pdf (Einziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_09_0853_0928_online.pdf (Widerspruch)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_01_0001_0064_online.pdf (Grundstücksnummerierungen)
 #: XXX Bleibt dieses Stück noch öffentlich befahrbar? (vermutlich ja)
 #: XXX Privatstraße
 #: osm_watch: way id="156418480" version="15"
@@ -8138,7 +8139,7 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
 #: priority: #D
 #: note: Masten ohne Schilder stehen schon, Markierung bislang nur im Radwegbereich
-#: last_checked: 2024-01-04 vvv
+#: last_checked: 2024-01-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -10391,6 +10392,7 @@ Am Sandhaus: werden hier neue Straßen entstehen?	? 14889,25937 15022,25846 15107
 #: by: https://www.stadtentwicklung.berlin.de/planen/fnp/pix/buergerbeteiligung/download/0422/0422.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_41_3969_4028_online.pdf (Reduktion des Geltungsbereichs)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1390034.php (FNP-Änderung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_01_0001_0064_online.pdf (FNP-Änderung 04/22)
 #: last_checked: 2023-05-13 (mapillary)
 #: next_check: 2025-06-30
 Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbindung geben?	? 16512,920 16672,556

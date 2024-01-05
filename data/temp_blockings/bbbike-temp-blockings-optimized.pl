@@ -3532,8 +3532,10 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
+#: osm_watch: note 3658253 2
 #: last_checked: 2023-11-29 (mapillary)
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
+#: osm_watch: way id="4549817" version="29"
 #: last_checked: 2023-10-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
@@ -5540,7 +5542,30 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'type' => 'gesperrt',
          'until' => 1719784799
        },
-       undef,
+       {
+         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
+#: note: 2023 waren Bauzäune noch am 2024-01-05 (!) da
+#: by: https://www.weihnachten-an-der-spree.de/
+#: osm_watch: node id="11346915244" version="1"
+	2::xmas 13558,10704 13531,10673 13326,10765
+	2::xmas 13527,10660 13531,10673
+',
+         'from' => 1700348400,
+         'id' => 3695,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 20.11. - 23.12.2023, sowie während der Aufbau- und Abbauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1704733200
+       },
        undef,
        undef,
        {
@@ -6006,8 +6031,8 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: osm_watch: way id="58182828" version="23"
-#: last_checked: 2023-12-22
+#: osm_watch: way id="58182828" version="24"
+#: last_checked: 2024-01-04 (osm)
 #: check_frequency: 30d
 # REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -7155,16 +7180,6 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'text' => 'Weg am Bundeskanzleramt: Bauarbeiten, Weg für Radfahrer explizit gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
-       },
-       {
-         'data' => '#: source_id: viz2021:13.54543,52.41699,04.01.2024,13:23 (bis 02.02.2024)
-	q4::inwork 20196,1325 20226,1416
-',
-         'from' => 1704284580,
-         'id' => 3995,
-         'text' => 'Salierstr.: Bauarbeiten, Sperrung zwischen Germanenstr. und Cimbernstr., vom 04.01.2024 13:23 bis 02.02.2024 20:00',
-         'type' => 'handicap',
-         'until' => 1706900400
        }
      
 );
