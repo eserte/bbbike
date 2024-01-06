@@ -5040,7 +5040,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21289,4563 21332,4655
+	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -38849,7 +38849,7 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
 #: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023) (inaktiv)
 # REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31
-	q4::inwork 20159,3623 20073,3734
+	q4::inwork 20159,3623 20066,3746
 EOF
      },
      { from  => 1682571600, # 2023-04-27 07:00
@@ -40460,7 +40460,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2024-01-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -41684,6 +41684,16 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.54543,52.41699,04.01.2024,13:23 (bis 02.02.2024) (bereits zwei Tage später inaktiv)
 	q4::inwork 20196,1325 20226,1416
+EOF
+     },
+     { from  => 1704539959, # 2024-01-06 12:19
+       until => 1735685999, # 2024-12-31 23:59
+       text  => 'Ottomar-Geschke-Str./Ahornallee: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Halteverbotsschilder bis 31.01.2024
+etwa 80m der Ottomar-Geschke-Str. gesperrt	q2::inwork 21376,4748 21454,4928
+	q4::inwork 21454,4928 21509,4900
 EOF
      },
     );

@@ -993,6 +993,7 @@ Straße 3	1s 18816,19648 18730,19672 18644,19695 18544,19722
 Heiner-Müller-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1 17497,8623 17640,8627
 Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
 Adolf-Wermuth-Allee	1 17640,8627 17659,8698
+Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2309,10 +2310,10 @@ Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18946,3077 19021,2
 Mittelstreifen	3nocross::ignrte 12216,16120 12254,16097 12347,16039
 Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12254,16097 12216,16120
 Ostseestr. -> Prenzlauer Allee: Mittelstreifen	3::igndisp 12347,16039 12254,16097 12198,15999
-Mittelstreifen	3nocross::ignrte 19735,3643 19812,3561 19857,3514 19904,3464
-Adlergestell -> Altheider Str.: Mittelstreifen	3::igndisp 19735,3643 19812,3561 19871,3600
-Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 19857,3514
-Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19812,3561 19857,3514 19966,3596
+Mittelstreifen	3nocross::ignrte 19735,3643 19806,3567 19857,3514 19904,3464
+Adlergestell -> Altheider Str.: Mittelstreifen	3::igndisp 19735,3643 19806,3567 19866,3608
+Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19866,3608 19806,3567 19857,3514
+Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19806,3567 19857,3514 19966,3596
 Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 19904,3464
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
 Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
@@ -2322,7 +2323,7 @@ Adlergestell -> Sonnenallee: Mittelstreifen	3::igndisp 19226,4183 19335,4067 193
 Sonnenallee -> Adlergestell: Mittelstreifen	3::igndisp 19345,4077 19335,4067 19472,3922
 Fußgängerbrücke Bhf. Johannisthal -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19226,4183
 Adlergestell -> Fußgängerbrücke Bhf. Johannisthal: Mittelstreifen	3::igndisp 18457,5000 18725,4715 18739,4728
-Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
+Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19806,3567
 Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18425,5032 18514,5028
 Hartriegelstr. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 18514,5028 18425,5032 18457,5000
@@ -3447,6 +3448,7 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 552
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
+Marktplatz Adlershof: Einbahnstraßenregelung wegen Umbauarbeiten	1s:inwork 20290,3756 20336,3783
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
@@ -3473,7 +3475,7 @@ Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::in
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
-Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
+Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
@@ -3483,7 +3485,8 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9441,12670 94
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
-Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
+Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 21514,5310
+Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451

@@ -1392,7 +1392,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2023-10-09 vvv
+#: last_checked: 2024-01-06 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -3579,7 +3579,7 @@ Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1325.89712.html vvv
 #: confirmed_by: srt vvv
 Silberberger Str.: Asphalt	Q0 19735,3643 19804,3697 19864,3742 19992,3839
-Thelenstr.: Asphalt	Q0 19804,3697 19871,3600
+Thelenstr.: Asphalt	Q0 19804,3697 19866,3608
 #: confirmed_by ^^^
 #: by: ^^^
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1320.89710.html
@@ -5425,7 +5425,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22087,5404 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2023-09-20 (mapillary)
+#: last_checked: 2024-01-06
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22056,5314 22054,5360
@@ -11670,8 +11670,9 @@ Hedwig-Porschütz-Str.: Asphalt	Q0 7781,14238 7697,14187
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
 Wilhelm-Hoff-Str.: wassergebundene Decke	Q1 19057,3422 19033,3397
-Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21176,4343
-(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21176,4343 21161,4334 21139,4293
+Ottomar-Geschke-Str. [Radweg]: Verbundsteinpflaster	Q1 21332,4655 21279,4567
+Ottomar-Geschke-Str. [Nebenfahrbahn]: Asphalt	Q0 21279,4567 21196,4392 21171,4339 21160,4334
+(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21160,4334 21139,4293
 (Am Reiterdenkmal): wassergebundene Decke	Q1- 18702,8160 18733,8144 18741,8125
 (Weg an der Trabrennbahn): Schotter	Q2 18626,8114 18650,8111 18676,8096
 #: note: Laternen existieren hier
@@ -15671,12 +15672,10 @@ Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3+ 19723,4175 19759,4160 19815,4148
 Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
 #: corrected_by: Hartmut Schröder (mäßiges Q2 -> schlechtes Q3+)
 #: corrected_by: srt (Q3+ -> Q3)
-#: next_check_id: FLORIANGEYER-2023
-#: XXX Bleibt das Kopfsteinpflaster im südlichen Bereich?
-#: last_checked: 2023-08-19
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2023-12-21
-Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19954,3887 19992,3839 20073,3734 20159,3623
+# REMOVED --- #: next_check_id: FLORIANGEYER-2023 --- #: XXX Bleibt das Kopfsteinpflaster im südlichen Bereich? --- #: last_checked: 2023-08-19 --- #: check_frequency: 90d --- #: next_check: 2023-12-21
+Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19954,3887 19992,3839 20066,3746
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., 2023 neu gemacht)
+Florian-Geyer-Str.: Betonsteinpflaster	Q0- 20066,3746 20159,3623
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Borkumstr.: Asphalt	Q0 11412,17823 11335,17807 11296,17799
 #: confirmed_by: srt
@@ -17780,9 +17779,12 @@ Volmerstr.: Asphalt	Q0 19426,3024 19534,2905 19631,2802 19704,2726 19794,2629 19
 #: by: Nicole (bornemann):
 Max-Dohrn-Str.: Asphalt	Q0 3005,13728 3320,13796 3695,13902
 # 
-#: by: Till (bufti):
-#: corrected_by: srt (schlecht Q3 -> mäßig Q2-, per Augenschein)
-Altheider Str.: Kopfsteinpflaster	Q2- 19812,3561 19871,3600 19933,3641 20073,3734
+#: by: Till (bufti): vvv
+#: corrected_by: srt (schlecht Q3 -> mäßig Q2-)
+Altheider Str.: mäßiges Kopfsteinpflaster	Q2- 19806,3567 19866,3608 19927,3649 20022,3715
+#: confirmed_by: srt
+Altheider Str.: schlechtes Kopfsteinpflaster	Q3 20022,3715 20066,3746
+#: by ^^^
 # 
 #: by: Ingo Klinkhammer:
 Rohrbachstr.: Kopfsteinpflaster	Q2 9658,-2640 9658,-2419 9650,-2135
@@ -20224,9 +20226,9 @@ Anna-Seghers-Str.: Asphalt	Q0 19884,4018 19821,4018 19795,3945
 Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19795,3945 19790,3893 19791,3849 19827,3798
 #: confirmed_by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1325.89712.html
 #: confirmed_by: srt
-Anna-Seghers-Str.: asphaltiert	Q0 19827,3798 19864,3742 19933,3641
+Anna-Seghers-Str.: asphaltiert	Q0 19827,3798 19864,3742 19927,3649
 #: corrected_by: srt (schlecht -> mäßig)
-Anna-Seghers-Str.: mäßiges Kopfsteinpflaster	Q2 19933,3641 19966,3596 20012,3532 20066,3466 20089,3438 20113,3408 20166,3344 20315,3181
+Anna-Seghers-Str.: mäßiges Kopfsteinpflaster	Q2 19927,3649 19966,3596 20012,3532 20066,3466 20089,3438 20113,3408 20166,3344 20315,3181
 #: by: ^^^
 # 
 #: by: Jana (stastny):
@@ -27703,7 +27705,7 @@ Hyazinthenstr.: mäßiges Kopfsteinpflaster	Q2 3527,4608 3587,4514 3597,4494
 # 
 #: by: Britta Fehse
 #: confirmed_by: srt (nur der nördliche Abschnitt)
-Militscher Weg: Asphalt, Straßenschäden	Q1+ 21170,4706 21152,4635 21139,4421 21206,4387
+Militscher Weg: Asphalt, Straßenschäden	Q1+ 21170,4706 21152,4635 21139,4421 21196,4392 21206,4387
 # 
 #: by: Kurt Kratz:
 Hochwaldsteig: mäßiger Beton	Q1 -4741,7003 -4995,7042 -5050,7058 -5127,7090 -5163,7090
@@ -32414,7 +32416,7 @@ Einmündungsbereich betoniert	Q0 22279,4220
 Kreuzungsbereich asphaltiert	Q0 18246,6525
 Kreuzungsbereich asphaltiert	Q0 18219,6447
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 19876,984
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 19933,3641
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 19927,3649
 Kreuzungsbereich asphaltiert	Q0 5065,2715
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 5115,2803
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 13151,10276
@@ -32837,4 +32839,6 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 4692,10829
 Einmündungsbereich asphaltiert	Q0 6877,12607
 Einmündungsbereich asphaltiert	Q0 6845,4761
 Einmündungsbereich asphaltiert	Q0 6826,4472
+Einmündungsbereich mit Betonsteinpflaster	Q0- 20066,3746
+Einmündungsbereich mit Kopfsteinpflaster	Q2- 19866,3608
 #: ignore ^^^

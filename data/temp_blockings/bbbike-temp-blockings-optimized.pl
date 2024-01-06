@@ -6472,7 +6472,7 @@ Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
-#: last_checked: 2023-11-11 vvv
+#: last_checked: 2024-01-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -6961,19 +6961,7 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'type' => 'handicap',
          'until' => 1709308800
        },
-       {
-         'data' => '#: source_id: viz2021:13.30422,52.47276,20.11.2023,00:00 (bis 05.01.2024)
-#: also_indoor: traffic (H[südliche Sodener],B[südliche Sodener])
-Wiesbadener Str.	q3::inwork; 3965,7297 3703,7324
-#: note: laut rbb ist nur die Sodener Str. zwischen Wiesbadener und Rudolf-Mosse-Str. gesperrt, gleiches Enddatum -> beide aufnehmen!
-Sodener Str.	q3::inwork 3718,7576 3703,7324
-',
-         'from' => 1700348400,
-         'id' => 3972,
-         'text' => 'Wiesbadener Str.: in Höhe Schlangenbader Tunnel Bauarbeiten, Fahrtrichtung gesperrt, evtl. ist auch die Sodener Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis 05.01.2024 20:00',
-         'type' => 'handicap',
-         'until' => 1704481200
-       },
+       undef,
        {
          'data' => '#: next_check_id: GROSSBEEREN-2023
 #: also_indoor: traffic (B)
@@ -7180,6 +7168,18 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'text' => 'Weg am Bundeskanzleramt: Bauarbeiten, Weg für Radfahrer explizit gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: note: Halteverbotsschilder bis 31.01.2024
+etwa 80m der Ottomar-Geschke-Str. gesperrt	q2::inwork 21376,4748 21454,4928
+	q4::inwork 21454,4928 21509,4900
+',
+         'from' => 1704539959,
+         'id' => 3996,
+         'text' => 'Ottomar-Geschke-Str./Ahornallee: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende 2024',
+         'type' => 'handicap',
+         'until' => 1735685999
        }
      
 );
