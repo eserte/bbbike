@@ -36807,7 +36807,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
 #: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag!
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
@@ -37608,8 +37608,8 @@ EOF
 EOF
      },
      { from  => 1668540097, # 2022-11-15 20:21
-       until => $isodate2epoch->("2023-12-14 17:00:00"), # 1691445599, # 2023-08-07 23:59
-       text  => 'Schönfließer Str.: Bauarbeiten zwischen Senheimer Str. und Gollanczstr., voraussichtlich bis Mitte Dezember 2023', # bis 07.05.2024',
+       until => $isodate2epoch->("2024-05-31 17:00:00"), # 1691445599, # 2023-08-07 23:59
+       text  => 'Schönfließer Str.: Bauarbeiten im Kreuzungsbereich Senheimer Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENFLIESSER-2023
@@ -37619,11 +37619,12 @@ EOF
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
-#: also_indoor: traffic (H,B)
-#: note: Fahrbahn wird neu gemacht
-	q4::inwork 2112,26066 2207,26090 2293,26111
-#: note: Vorbereitungen für Neubau der Fahrbahn
-	q3::inwork 2293,26111 2402,26121
+#: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024)
+#: also_indoor: traffic (ex-H,G,B,W)
+# REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
+# REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
+	q4::inwork 2402,26121 2490,26126 2560,26139
+	q4::inwork 2484,25984 2490,26126 2531,26251
 EOF
      },
      { from  => $isodate2epoch->("2022-11-17 09:00:00"),
@@ -38716,6 +38717,7 @@ EOF
 #: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
@@ -38789,7 +38791,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G)
 #: last_checked: 2023-12-09 (indoor)
 	q4::inwork -3269,12406 -3260,12540
 EOF
@@ -39558,7 +39560,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2024-01-02
+#: last_checked: 2024-01-07
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -41355,7 +41357,7 @@ EOF
        text  => 'Wiesbadener Str.: in Höhe Schlangenbader Tunnel Bauarbeiten, Fahrtrichtung gesperrt, evtl. ist auch die Sodener Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis 05.01.2024 20:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.30422,52.47276,20.11.2023,00:00 (bis 05.01.2024)
+#: source_id: viz2021:13.30422,52.47276,20.11.2023,00:00 (bis 05.01.2024) (inaktiv)
 #: also_indoor: traffic (H[südliche Sodener],B[südliche Sodener])
 Wiesbadener Str.	q3::inwork; 3965,7297 3703,7324
 #: note: laut rbb ist nur die Sodener Str. zwischen Wiesbadener und Rudolf-Mosse-Str. gesperrt, gleiches Enddatum -> beide aufnehmen!
@@ -41364,12 +41366,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt',
+       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GROSSBEEREN-2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-12-16
+#: last_checked: 2024-01-07
 	q3::inwork 9178,10451 9192,10528
 EOF
      },

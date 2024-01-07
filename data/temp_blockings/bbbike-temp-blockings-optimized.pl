@@ -5201,7 +5201,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
 #: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag!
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
@@ -5459,7 +5459,27 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SCHOENFLIESSER-2023
+#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
+#: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
+#: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
+#: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
+#: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
+#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
+#: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024)
+#: also_indoor: traffic (ex-H,G,B,W)
+# REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
+# REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
+	q4::inwork 2402,26121 2490,26126 2560,26139
+	q4::inwork 2484,25984 2490,26126 2531,26251
+',
+         'from' => 1668540097,
+         'id' => 3683,
+         'text' => 'Schönfließer Str.: Bauarbeiten im Kreuzungsbereich Senheimer Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2024',
+         'type' => 'handicap',
+         'until' => 1717167600
+       },
        undef,
        undef,
        undef,
@@ -5904,6 +5924,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
          'data' => '#: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
@@ -5940,7 +5961,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        {
          'data' => '#: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G)
 #: last_checked: 2023-12-09 (indoor)
 	q4::inwork -3269,12406 -3260,12540
 ',
@@ -6159,7 +6180,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2024-01-02
+#: last_checked: 2024-01-07
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -6965,12 +6986,12 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
        {
          'data' => '#: next_check_id: GROSSBEEREN-2023
 #: also_indoor: traffic (B)
-#: last_checked: 2023-12-16
+#: last_checked: 2024-01-07
 	q3::inwork 9178,10451 9192,10528
 ',
          'from' => undef,
          'id' => 3973,
-         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt',
+         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
          'type' => 'handicap',
          'until' => undef
        },

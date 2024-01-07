@@ -34,7 +34,7 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (bis 23.04.2025)
 #: note: gilt auch für Radfahrer (provisorische Radspur Richtung Norden, auch eine Fahrradampel an der Radspur Richtung Süden)
 #: note: etwa 40m nördlich des Punktes
-#: last_checked: 2023-12-27
+#: last_checked: 2024-01-07
 #: check_frequency: 90d
 #: next_check: 2025-04-23
 #: valid: -20250423
@@ -136,7 +136,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7361 (Antrag auf Errichtung einer Querungshilfe (Zebrastreifen? Ampel?) an dieser Stelle)
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: note: bei rbb nur bis 29.12.2023
-#: osm_watch: way id="383023440" version="15"
+#: osm_watch: way id="383023440" version="16"
 #: last_checked: 2024-01-06
 #: next_check: 2024-02-29
 #: valid: -20240229
@@ -1651,9 +1651,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5477,9621
 	X 9701,11656
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50) vvv
-#: off: night (seen 2015-06-25, 2023-08-26 00:15)
+#: off: night (seen 2015-06-25, 2023-08-26 00:15, 2024-01-06 23:40)
 	X 14011,10812
-#: off: night (seen 2015-06-25)
+#: off: night (seen 2015-06-25, 2024-01-06 23:40)
 	F 14024,10861
 #: note ^^^
 	X 6445,9538
@@ -1729,7 +1729,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
-#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30)
+#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30; 2024-01-06 23:45)
 	X 14134,11272
 	X 11785,13625
 	X 10904,17288
@@ -2180,14 +2180,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog ^^^
 	X 7138,15437
 	X 6996,15319
-#: by: https://www.deutsches-architekturforum.de/thread/9772-kleinere-projekte-wedding-gesundbrunnen/?postID=675214#post675214
-#: by: https://abendblatt-berlin.de/2021/02/01/berlin-wedding-spd-fordert-fahrradstrasse-fuer-den-sprengelkiez/ ("seit Monaten außer Betrieb")
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
-#: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
-#: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2023-11-07
-#: check_frequency: 90d
-	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
 	X 8622,13696
 	X 8572,13671
@@ -3730,7 +3722,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://api.fixmyberlin.de/api/plannings/75 (Baubeginn 2020, außerdem: Asphaltierung des Kirchhofwegs, Verkehrsberuhigung Thomasstr.)
 #: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019 (nicht vor Ende 2019)
 #: by: https://mein.berlin.de/projekte/radinfrastruktur-auf-der-hermannstrasse/ (Ampel wird permanent gemacht; vermutlich auch erst ab 2021)
-#: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-2/ (Erwähnung der Ampel)
+#: by[removed]: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-2/ (Erwähnung der Ampel)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1134851.php (temporäre Ampel wird durch eine finale Ampel abgelöst, Ampel am südlichen Ausgang Leinestr. wird dafür abgebaut)
 #: osm_watch: node id="661594841" version="5"
 #: note: provisorische Ampel
