@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023,2024 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.9902';
+$VERSION = '1.9903';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -416,7 +416,7 @@ sub read_from_fh {
 	die $msg, "\n";
     }
     if (%line_directive) {
-	die "Stray line directive `@{[ keys %line_directive ]}' at end of file\n";
+	die "ERROR: Stray line directive `@{[ keys %line_directive ]}' at end of file" . ($self->{File} ? " " . $self->{File} : "") . "\n";
     }
     if (@errors) {
 	warn_or_die("ERROR: found following errors:\n" . join("\n", @errors) . "\n");
