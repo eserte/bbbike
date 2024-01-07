@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -402,7 +402,7 @@ for my $file (@files) {
 	     # Further URLs which work as good as also_indoor directives
 	     # (however, using "#: also_indoor webcam ..." is preferred)
 	     my @urls;
-	     for my $dir_key (qw(by by[nocache])) {
+	     for my $dir_key (qw(by by[nocache])) { # ignore by[removed]
 		 push @urls, @{ $dir->{$dir_key} }
 		     if $dir->{$dir_key};
 	     }

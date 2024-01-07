@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016-2023 Slaven Rezic
+;; Copyright (C) 1997-2014,2016-2024 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -888,7 +888,7 @@
   ;; recognize "#: by" directives which look like a URL in normal bbd files, additionally "#: also_indoor url" directives
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(?:by\\|by\\[nocache\\]\\|url\\|also_indoor:?[ ]+\\(?:url\\|webcam\\)\\):?[ ]*\\(http[^ \n]+\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*\\(?:by\\(?:\\[\\(?:nocache\\|removed\\)\\]\\)?\\|url\\|also_indoor:?[ ]+\\(?:url\\|webcam\\)\\):?[ ]*\\(http[^ \n]+\\)" nil t)
       (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button)))
 
   (if (string-match "/bbbike-temp-blockings" buffer-file-name)

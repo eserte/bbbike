@@ -392,6 +392,12 @@ C<by:>.
 Like the L</by> directive, but the value must be an URL, and it is
 marked as non-cacheable (for whatever reasons), but still linkable.
 
+=item C<by[removed]>: I<URL>>
+
+Like the L</by> directive, but the value must be an URL, and it is
+marked as removed, probably generating a 404 response or the site does
+not exist at all.
+
 =item C<corrected_by: I<source> I<< previous -> current >> >
 
 Used after a C<by> directive for a correction. It is advisable to put
