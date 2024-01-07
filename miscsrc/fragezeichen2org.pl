@@ -153,9 +153,15 @@ if ($with_searches_weight) {
     require File::Glob;
     require Strassen::StrassenNetz;
     require Strassen::Core;
-    my $monthly_glob = "20??-??_weighted*.bbd";
-    # my $yearly_glob = "20??_weighted*.bbd";
-    ($latest_weighted_bbd) = reverse File::Glob::bsd_glob(bbbike_root . "/tmp/weighted/" . $monthly_glob);
+    my $base_glob;
+    if (0) {
+	# monthly
+	$base_glob = "20??-??_weighted*.bbd";
+    } else {
+	# last 12 months
+	$base_glob = "20??-12_last12months*.bbd";
+    }
+    ($latest_weighted_bbd) = reverse File::Glob::bsd_glob(bbbike_root . "/tmp/weighted/" . $base_glob);
     my $s = Strassen->new($latest_weighted_bbd);
     $searches_weight_net = StrassenNetz->new($s);
     $searches_weight_net->make_net;
