@@ -6,6 +6,8 @@
 #
 
 use strict;
+use warnings;
+use utf8;
 use FindBin;
 use lib (
 	 $FindBin::RealBin,
@@ -85,6 +87,48 @@ $net->make_net;
     my($pos,$rueckwaerts) = $net->nearest_street("9227,8890", "9227,8890");
     ok defined $pos, 'We have a result';
     is $s->get($pos)->[Strassen::NAME], 'Mehringdamm', 'does not crash if both points are the same';
+}
+
+{
+    # split street names tests
+    no warnings 'qw';
+    {
+	# Palisadenstr. -> Straße der Pariser Kommune
+	my @path = map { [split/,/] } qw(12632,12630 12843,12567 12866,12582 12891,12549 12878,12430);
+	my @route = $net->route_to_name(\@path);
+	is @route, 2;
+	is $route[0]->[StrassenNetz::ROUTE_NAME], 'Palisadenstr.';
+	is $route[1]->[StrassenNetz::ROUTE_NAME], 'Straße der Pariser Kommune', 'split street names (southwards case)';
+    }
+
+    {
+	# Weidenweg -> Friedenstr.
+	my @path = map { [split/,/] } qw(13025,12523 12891,12549 12866,12582 12859,12593 12773,12683 12690,12769);
+	my @route = $net->route_to_name(\@path);
+	is @route, 2;
+	is $route[0]->[StrassenNetz::ROUTE_NAME], 'Weidenweg';
+	is $route[1]->[StrassenNetz::ROUTE_NAME], 'Friedenstr.', 'split street names (northwards)';
+    }
+
+    {
+	# Friedenstr. -> Weidenweg
+	my @path = map { [split/,/] } qw(12690,12769 12773,12683 12859,12593 12866,12582 12891,12549 13025,12523);
+	my @route = $net->route_to_name(\@path);
+	is @route, 3;
+	is $route[0]->[StrassenNetz::ROUTE_NAME], 'Friedenstr.';
+	is $route[1]->[StrassenNetz::ROUTE_NAME], 'Straße der Pariser Kommune', 'split street names (south-eastwards case, both names)';
+	is $route[2]->[StrassenNetz::ROUTE_NAME], 'Weidenweg';
+    }
+
+    {
+	# Straße der Pariser Kommune -> Palisadenstr.
+	my @path = map { [split/,/] } qw(12878,12430 12891,12549 12866,12582 12843,12567 12632,12630);
+	my @route = $net->route_to_name(\@path);
+	is @route, 3;
+	is $route[0]->[StrassenNetz::ROUTE_NAME], 'Straße der Pariser Kommune';
+	is $route[1]->[StrassenNetz::ROUTE_NAME], 'Friedenstr.', 'split street names (north-westwards case, both names)';
+	is $route[2]->[StrassenNetz::ROUTE_NAME], 'Palisadenstr.';
+    }
 }
 
 __END__
