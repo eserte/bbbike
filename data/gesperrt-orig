@@ -1518,6 +1518,14 @@ Oberspreestr. [Nebenfahrbahn]	1s:q3 19965,5101 19957,5083 19940,5090
 # 
 Südring, Virchow-Klinikum	1 6305,14964 6319,14821 6252,14812
 Südring, Virchow-Klinikum	1 6252,14812 6231,14952
+Südring, Virchow-Klinikum	1 6158,14851 6078,14864 6073,14892
+Südring, Virchow-Klinikum	1 6073,14892 6106,14890
+#: next_check_id: VIRCHOW-2023
+#: XXX wegen Bauarbeiten komplett gesperrt
+#: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
+#: last_checked: 2024-01-08
+#: check_frequency: 60d
+Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851
 # 
 Am Feuchten Winkel	1 12020,19333 11937,19175
 # 
@@ -3696,7 +3704,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg gesperrt (möglicherweiseexistiert er auch
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: last_checked: 2023-11-08 (daf)
 #: check_frequency: 180d
-#: next_check: 2027-01-0
+#: next_check: 2027-01-01
 Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
 # 
 #: next_check_id: PLANSTRASSE9-2023
@@ -3888,7 +3896,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: osm_watch: way id="4596985" version="23"
-#: last_checked: 2023-12-28 (mapillary)
+#: last_checked: 2024-01-08
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4226,7 +4234,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 1768
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2023-11-07
+#: last_checked: 2024-01-08
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4500,11 +4508,11 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2023-12-23
+#: last_checked: 2024-01-08
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken
-#: last_checked: 2023-12-23 vvv
+#: last_checked: 2024-01-08 vvv
 #: check_frequency: 45d vvv
 George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257
@@ -4576,7 +4584,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="21"
 #: priority: #A
-#: last_checked: 2024-01-05 (webcam)
+#: last_checked: 2024-01-08
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4654,12 +4662,12 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-01-05 (webcam)
+#: last_checked: 2024-01-08
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-08
 #: check_frequency: 14d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 
@@ -4673,7 +4681,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2024-01-04
+#: last_checked: 2024-01-08
 #: check_frequency: 45d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
@@ -4787,6 +4795,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php
 #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271
 #: last_checked: 2024-01-06
 #: check_frequency: 360d
 #: next_check: 2024-05-01
@@ -5002,7 +5011,7 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2023-12-23 vvv
+#: last_checked: 2024-01-08 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

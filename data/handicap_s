@@ -24,7 +24,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
-Grunerstr.: Gehweg	q3 10900,12546 10973,12611
+Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -35,7 +35,6 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
-Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
@@ -2097,7 +2096,7 @@ Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,1496
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6231,14952 6159,14921 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6400,15080 6395,15109 6380,15210
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6470,14990 6504,14969
-(Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6158,14851 6078,14864 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6158,14851 6078,14864 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
 (Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6231,14952 6252,14812
 (Virchow-Klinikum, Einfahrt Nordufer/Südring): Krankenhausgelände, 20km/h-Zone	q2 6210,14808 6213,14777
 (Südring - Weststr., Virchow-Klinikum): einige Fußgänger	q2 6073,14892 6035,14913 6030,14924

@@ -261,7 +261,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2023-12-29 vvv
+#: last_checked: 2024-01-08 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
@@ -1468,11 +1468,11 @@ Grunerstr.	HH 10849,12557 10783,12502
 #: source_id[expired]: bvg2021:248#BVG324714_0
 #: source_id: viz2021:13.412286,52.519002,17.07.2023,07:00 (bis 25.08.2023) (inaktiv)
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2024-01-05 (webcam) vvv
+#: last_checked: 2024-01-08 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-25
 Grunerstr. [Gehweg]	NN 10973,12611 11057,12715
-Grunerstr. [Gehweg]	NN 10900,12546 10973,12611
+Grunerstr. [Gehweg]	NN 10900,12546 10929,12500 10913,12556 10973,12611
 #: check_frequency ^^^
 #: last_checked ^^^
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
@@ -1840,7 +1840,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="8"
 #: osm_watch: way id="642581102" version="9"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2023-12-23
+#: last_checked: 2024-01-08
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1865,7 +1865,7 @@ George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
 #: osm_watch: way id="977556359" version="15"
-#: last_checked: 2023-12-23
+#: last_checked: 2024-01-08
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -9604,7 +9604,7 @@ Mühlenstr. (Französisch Buchholz)	N 11790,22698 11936,22570 12004,22526 12040,22
 Gartenstr. (Französisch Buchholz)	N 12040,22519 11950,22162 11934,22108 11886,21924
 Stephanusring	N 11934,22108 11890,22123 11863,22146 11876,22212 11950,22162
 Bucher Str.	H 12185,23021 12280,23116 12374,23152 12409,23165 12535,23200 12666,23223 12805,23268 12882,23312 12915,23337 12937,23357 13012,23424 13033,23450 13045,23465 13080,23508 13199,23657 13589,24146 13684,24286 14023,24756 14112,24843 14182,24940 14217,24999
-Schillerstr. (Niederschönhausen, Rosenthal)	N 10066,20494 10178,20525 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
+Schillerstr. (Niederschönhausen, Rosenthal)	N 10066,20494 10178,20525 10226,20539 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
 Kreuzgraben	N 10309,20032 10282,20137 10267,20193 10264,20209
 Kreuzgraben	NN 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens)	NN 10379,20309 10314,20262 10260,20222 10172,20142 10157,20128 10095,20108
@@ -13118,7 +13118,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2024-01-05 (webcam)
+#: last_checked: 2024-01-08
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
@@ -20435,8 +20435,9 @@ Am Bülowbogen	NN 7906,10098 7928,10094 8011,10085
 (Südstr., Virchow-Klinikum)	N 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum)	N 6504,14969 6470,14990 6414,14981
 (Oststr., Virchow-Klinikum)	N 6414,14981 6400,15080 6395,15109 6380,15210 6320,15283 6309,15320 6293,15330
-(Südring, Virchow-Klinikum)	N 6158,14851 6078,14864 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum)	N 6158,14851 6078,14864 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
 (Südring, Virchow-Klinikum)	N 6231,14952 6252,14812
+(Südstr. - Südring, Virchow-Klinikum)	N 6104,14937 6106,14890
 (Virchow-Klinikum, Einfahrt Nordufer/Südring)	N 6210,14808 6213,14777
 (Nordstr., Virchow-Klinikum)	N 6056,15162 6254,15191 6380,15210
 (Nordring, Virchow-Klinikum)	N 6265,15349 6275,15335 6293,15330

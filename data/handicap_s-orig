@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: XXX Sieht nach Leitungsarbeiten aus.
-#: last_checked: 2024-01-07
+#: last_checked: 2024-01-08
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -53,7 +53,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-01-03
+#: last_checked: 2024-01-08
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -269,7 +269,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2023-08-17
+#: last_checked: 2024-01-08
 #: check_frequency: 150d
 #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -283,7 +283,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="29"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2023-12-11 (mapillary)
+#: last_checked: 2024-01-08
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -300,10 +300,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2024-01-05 (webcam) vvv
+#: last_checked: 2024-01-08 vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
-Grunerstr.: Gehweg	q3 10900,12546 10973,12611
+Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
 # REMOVED --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -339,7 +339,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2023-12-29 vvv
+#: last_checked: 2024-01-08 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -583,14 +583,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Kreuzberg ###
 # 
-#: XXX Alexandrinenstraße (Kreuzberg) in beiden Richtungen, Kreuzung Ritterstraße: Leitungsarbeiten, Die Alexandrinenstraße ist von beiden Seiten von der Ritterstraße abgehängt, vom 11.12.2023 06:00 bis 29.12.2023 17:00
-#: source_id: viz2021:13.403669,52.503381,11.12.2023,06:00 (bis 29.12.2023) (bis 29.02.2023)
-#: last_checked: 2023-12-12
-#: check_frequency: 30d
-#: next_check: 2024-02-29
-#: valid: -20240229
-Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
-# 
+# REMOVED (scheint vorfristig beendet worden zu sein) --- #: XXX Alexandrinenstraße (Kreuzberg) in beiden Richtungen, Kreuzung Ritterstraße: Leitungsarbeiten, Die Alexandrinenstraße ist von beiden Seiten von der Ritterstraße abgehängt, vom 11.12.2023 06:00 bis 29.12.2023 17:00 --- #: source_id: viz2021:13.403669,52.503381,11.12.2023,06:00 (bis 29.12.2023) (bis 29.02.2023) --- #: also_indoor: traffic (G,W)--- #: last_checked: 2024-01-08 --- #: check_frequency: 30d --- #: next_check: 2024-02-29 --- #: valid: -20240229 --- Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
 # REMOVED (beendet) --- #: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10) --- #: last_checked: 2021-11-20 --- #: check_frequency: 14d --- Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # REMOVED (offen) --- #: next_check_id: FRIESEN-2018 --- #: source_id: 2147342598 --- #: source_id: 2147344059 --- #: source_id: 2147344058 --- #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.832802.php (Ende der Bauarbeiten KW 31/2019) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ende-der-bauarbeiten_a225376 (ab Anfang August 2019 passierbar) --- #: also_indoor: traffic vvv --- #: last_checked: 2019-07-30 vvv --- #: next_check: 2019-07-31 vvv --- #: valid: -20190731 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr?) --- #: source_id: 2147344148 --- Friesenstr.: Einbahnstraße zwischen Fidicinstr. und Columbiadamm, offen Richtung Columbiadamm	q3::inwork; 9801,8683 9801,8889 9799,8962
@@ -3982,13 +3975,13 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6305,14964 6231,14952
 #: XXX hat möglicherweise was mit den Leitungsarbeiten am Nordufer zu tun
 #: osm_watch: way id="1168244288" version="1"
-#: last_checked: 2023-11-07
+#: last_checked: 2024-01-08
 #: check_frequency: 60d
 Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6231,14952 6159,14921 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6400,15080 6395,15109 6380,15210
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6470,14990 6504,14969
-(Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6158,14851 6078,14864 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6158,14851 6078,14864 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
 (Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6231,14952 6252,14812
 (Virchow-Klinikum, Einfahrt Nordufer/Südring): Krankenhausgelände, 20km/h-Zone	q2+ 6210,14808 6213,14777
 (Südring - Weststr., Virchow-Klinikum): einige Fußgänger	q2 6073,14892 6035,14913 6030,14924

@@ -502,7 +502,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2023-12-28 (mapillary) vvv
+#: last_checked: 2024-01-07 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
@@ -1001,7 +1001,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2023-12-05 (mapillary)
+#: last_checked: 2024-01-04 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1107,7 +1107,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="20"
 #: last_checked: 2023-11-07
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-12-31
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
@@ -6439,7 +6439,7 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="9"
-#: last_checked: 2023-12-16 (mapillary)
+#: last_checked: 2024-01-07 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
@@ -9120,9 +9120,8 @@ Georgenstr. (Blankenburg): mäßiger Asphalt, einige Wurzelhebungen	Q1- 14236,2077
 #: XXX wird sich hier die Qualität verbessern? laut den Lageplänen wird asphaltiert
 #: XXX laut Plan wird der kurze Abschnitt der Parkstr. asphaltiert, inkl. Kreuzungsbereich
 #: XXX Diskrepanz zwischen Ende bei der BA-Pressemitteilung (Ende 2023) und infravelo (Sommer 2024)
-#: last_checked: 2022-08-26 (mapillary)
-#: next_check: 2023-12-31
-# REMOVED --- #: next_check: 2024-06-30
+#: last_checked: 2024-01-04 (mapillary)
+#: next_check: 2024-06-30
 (Parkstr./Am Fließ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
 Frau-Elster-Weg: Gras	Q3 13953,18842 13948,18757 14011,18589
 Schneehornpfad: Asphalt	Q0 13497,18087 13619,18222
@@ -12657,7 +12656,7 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Oststr., Virchow-Klinikum): Asphalt	Q0; 6470,14990 6414,14981
 (Oststr., Virchow-Klinikum): Kleinsteinpflaster	Q1-; 6414,14981 6470,14990
 (Südring, Virchow-Klinikum): Asphalt	Q0 6158,14851 6078,14864 6073,14892
-(Südring, Virchow-Klinikum): Beton	Q0 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum): Beton	Q0 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
 (Südring, Virchow-Klinikum): Beton	Q0 6231,14952 6252,14812
 (Virchow-Klinikum, Einfahrt Nordufer/Südring): Asphalt mit Schäden	Q1 6210,14808 6213,14777
 (Südring - Weststr., Virchow-Klinikum): Gehwegplatten	Q0- 6073,14892 6035,14913 6030,14924
@@ -12665,6 +12664,7 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Nordring, Virchow-Klinikum): Beton	Q0 6265,15349 6275,15335 6293,15330
 (Nordring, Virchow-Klinikum): Beton	Q0 6275,15335 6262,15323 6272,15249 6249,15237
 (Nordring, Virchow-Klinikum): Asphalt/Beton	Q0 6249,15237 6254,15191
+(Südstr. - Südring, Virchow-Klinikum): Asphalt	Q0 6104,14937 6106,14890
 # 
 (Lutterbacher Str. - Dahlemer Weg): Gehwegplatten	Q0- 2151,3126 2166,3138 2193,3142
 (Fischtalpark): wassergebundene Decke	Q1- 719,4268 574,4150
@@ -12854,7 +12854,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2023-12-23 vvv
+#: last_checked: 2024-01-08 vvv
 #: check_frequency: 45d vvv
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
 George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136
@@ -14544,8 +14544,10 @@ Freizeitpark Lübars: befestigter Sandweg mittlerer Güte, teilweise mit störenden
 Freizeitpark Lübars: Asphalt	Q0 7841,23122 7839,23195
 #: note: die ADFC-Karte sagt hier "mäßig geeignet":
 #: corrected_by: srt (Betonplatten, Parkflächen schlecht gepflastert, Q2 -> ...) vvv
-Schillerstr.: Asphalt, Parkflächen schlecht gepflastert	Q2+; 10066,20494 10178,20525 10309,20562 10409,20592
-Schillerstr.: Asphalt, abschnittsweise ist der Rand gepflastert	Q1+; 10409,20592 10309,20562 10178,20525 10066,20494
+#: corrected_by: mapillary (Asphalt, Parkflächen schlecht gepflastert, Q2+; -> möglicherweise nach Bauarbeiten geändert)
+Schillerstr.: Asphalt	Q0; 10066,20494 10178,20525 10226,20539
+Schillerstr.: Asphalt, Parkflächen schlecht gepflastert	Q2+; 10226,20539 10309,20562 10409,20592
+Schillerstr.: Asphalt, abschnittsweise ist der Rand gepflastert	Q1+; 10409,20592 10309,20562 10226,20539 10178,20525 10066,20494
 #: corrected_by ^^^
 Schillerstr.: Asphalt, Rand/Parkflächen schlecht gepflastert	Q2+ 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
 #: corrected_by: srt (Kopfsteinpflaster -> ...)

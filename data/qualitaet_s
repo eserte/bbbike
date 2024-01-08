@@ -10783,7 +10783,7 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Oststr., Virchow-Klinikum): Asphalt	Q0; 6470,14990 6414,14981
 (Oststr., Virchow-Klinikum): Kleinsteinpflaster	Q1; 6414,14981 6470,14990
 (Südring, Virchow-Klinikum): Asphalt	Q0 6158,14851 6078,14864 6073,14892
-(Südring, Virchow-Klinikum): Beton	Q0 6073,14892 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
+(Südring, Virchow-Klinikum): Beton	Q0 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
 (Südring, Virchow-Klinikum): Beton	Q0 6231,14952 6252,14812
 (Virchow-Klinikum, Einfahrt Nordufer/Südring): Asphalt mit Schäden	Q1 6210,14808 6213,14777
 (Südring - Weststr., Virchow-Klinikum): Gehwegplatten	Q0 6073,14892 6035,14913 6030,14924
@@ -10791,6 +10791,7 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Nordring, Virchow-Klinikum): Beton	Q0 6265,15349 6275,15335 6293,15330
 (Nordring, Virchow-Klinikum): Beton	Q0 6275,15335 6262,15323 6272,15249 6249,15237
 (Nordring, Virchow-Klinikum): Asphalt/Beton	Q0 6249,15237 6254,15191
+(Südstr. - Südring, Virchow-Klinikum): Asphalt	Q0 6104,14937 6106,14890
 (Lutterbacher Str. - Dahlemer Weg): Gehwegplatten	Q0 2151,3126 2166,3138 2193,3142
 (Fischtalpark): wassergebundene Decke	Q1 719,4268 574,4150
 (Fischtalpark): Kleinsteinpflaster	Q2 574,4150 533,4102
@@ -12014,8 +12015,9 @@ Alte Fasanerie: Asphalt	Q0 7416,22349 7595,22421 7648,22489 7708,22510
 Alte Fasanerie: Sandweg, Spurrillen, mäßig bis gut	Q1 7708,22510 7932,22562
 Freizeitpark Lübars: befestigter Sandweg mittlerer Güte, teilweise mit störenden Regenrinnen	Q1 7932,22562 7999,22580 8054,22688 8060,22744 7922,23047 7866,23073 7841,23122
 Freizeitpark Lübars: Asphalt	Q0 7841,23122 7839,23195
-Schillerstr.: Asphalt, Parkflächen schlecht gepflastert	Q2; 10066,20494 10178,20525 10309,20562 10409,20592
-Schillerstr.: Asphalt, abschnittsweise ist der Rand gepflastert	Q1; 10409,20592 10309,20562 10178,20525 10066,20494
+Schillerstr.: Asphalt	Q0; 10066,20494 10178,20525 10226,20539
+Schillerstr.: Asphalt, Parkflächen schlecht gepflastert	Q2; 10226,20539 10309,20562 10409,20592
+Schillerstr.: Asphalt, abschnittsweise ist der Rand gepflastert	Q1; 10409,20592 10309,20562 10226,20539 10178,20525 10066,20494
 Schillerstr.: Asphalt, Rand/Parkflächen schlecht gepflastert	Q2 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
 Enkircher Str.: Asphalt	Q0 3166,25496 3185,25437
 Enkircher Str.: Mosaikpflaster	Q2 3185,25437 3225,25374 3285,25274 3314,25243

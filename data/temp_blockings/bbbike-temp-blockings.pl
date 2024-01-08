@@ -27405,7 +27405,7 @@ EOF
        data  => <<EOF,
 #: note: fritz meint 18.12.2017
 #: source_id: 2147341767
-	q4::inwork 10178,20525 10309,20562 10409,20592
+	q4::inwork 10178,20525 10226,20539 10309,20562 10409,20592
 EOF
      },
      { from  => 1508176419, # 2017-10-16 19:53
@@ -36868,7 +36868,7 @@ EOF
 #: source_id: bvg2021:396#BVG339330_0
 #: osm_watch: note 4052359 1
 #: osm_watch: way id="1117348911" version="3"
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G.B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geˆffnet, Durchfahrt zumindest f¸r Radfahrer mˆglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg mˆglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
@@ -37114,13 +37114,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Mitte Dezember 2023: abschnittsweise nur der Gehweg frei)', # was "... Lessingstr. und ..."
+       text  => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Anfang Januar 2024: abschnittsweise nur der Gehweg frei)', # was "... Lessingstr. und ..."
        type  => 'handicap',
        data  => <<EOF,
 #: note: evtl. auﬂerhalb der Arbeitszeiten problemlos f¸r Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H,G) vvv
-#: last_checked: 2023-12-16 (mapillary) vvv
+#: last_checked: 2024-01-07 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 # REMOVED (hier nicht mehr) --- nur Gehweg frei	q4::inwork 7630,20698 7616,20633
@@ -37620,6 +37620,7 @@ EOF
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
 #: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024)
+#: source_id: viz2021:13.29209,52.64198,08.01.2024,07:00 (bis 31.05.2024)
 #: also_indoor: traffic (ex-H,G,B,W)
 # REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
 # REMOVED --- #: note: Vorbereitungen f¸r Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
@@ -39234,7 +39235,7 @@ EOF
 #: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauz‰une undurchl‰ssiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="24"
-#: last_checked: 2024-01-04 (osm)
+#: last_checked: 2024-01-04 (mapillary)
 #: check_frequency: 30d
 # REMOVED (sp‰ter Frequenz erhˆhen?) --- #: check_frequency: 30d
 	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -40194,6 +40195,7 @@ EOF
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (f¸r den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
+#: osm_watch: way id="37861386" version="26"
 #: last_checked: 2023-10-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
@@ -40315,7 +40317,7 @@ s¸dlicher Weg	2::inwork 10168,10085 10066,10071
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2023-12-30 17:00:00"), # 1703952000, # 2023-12-30 17:00
+       until => 1704737949, # undef, # $isodate2epoch->("2023-12-30 17:00:00"), # 1703952000, # 2023-12-30 17:00
        text  => 'Virchow-Klinikum, Einfahrt Nordufer: komplett gesperrt, auch f¸r Fuﬂg‰nger, voraussichtlich bis Ende 2023, vielleicht auch l‰nger',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -40324,11 +40326,7 @@ EOF
 #: by: https://dieneue-charite.de/vision/zukunftsbausteine/campus-virchow-klinikum
 #: source_id: viz2021:13.33994,52.53982,01.06.2023,08:00 (bis 29.12.2023) (inaktiv)
 #: source_id: viz2021:13.342776,52.539414,01.06.2023,08:00 (bis 30.12.2023) (inaktiv)
-#: osm_watch: way id="4543436" version="31"
-#: also_indoor: traffic (H,ex-G,B,ex-W)
-#: last_checked: 2023-11-07
-#: check_frequency: 60d
-#: next_check: 2023-12-30
+# REMOVED (mittlerweile f¸r Radfahrer/Fuﬂg‰nger passierbar) --- #: osm_watch: way id="4543436" version="31" --- #: also_indoor: traffic (H,ex-G,B,ex-W) --- #: last_checked: 2023-11-07 --- #: check_frequency: 60d --- #: next_check: 2023-12-30
 	2::inwork 6213,14777 6210,14808
 EOF
      },
@@ -40421,7 +40419,7 @@ EOF
 #: osm_watch: way id="36892597" version="39"
 #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt auﬂer f¸r Straﬂenbahnen)
 #: note: offizielle Umleitungen f¸r Radfahrer: Richtung S¸den via Neue Schˆnhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
-#: last_checked: 2023-12-23 vvv
+#: last_checked: 2024-01-03 (mapillary) vvv
 #: check_frequency: 45d vvv
 #: next_check: 2024-01-09 vvv
 Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -40690,12 +40688,15 @@ EOF
      },
      { from  => 1696284000, # 2023-10-03 00:00
        until => undef, # 1704063599, # 2023-12-31 23:59
-       text  => 'Weg am Flieﬂgraben: wegen Bauarbeiten voraussichtliche Sperrung vom 4. Oktober 2023 bis Ende Dezember 2023, evtl. l‰nger',
+       text  => 'Weg am Flieﬂgraben: wegen Bauarbeiten voraussichtliche Sperrung vom 4. Oktober 2023 bis vermutlich Fr¸hjahr 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WEGAMFLIESSGRABEN-2023
 #: add_fragezeichen: Ist der Weg am Flieﬂgraben mittlerweile wieder offen?
-#: next_check: 2023-12-31
+#: last_checked: 2024-01-04 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2024-06-30
 	2::inwork 13584,20628 13602,20613 13743,20594 13827,20557 13888,20558
 EOF
      },
@@ -40829,6 +40830,9 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m ˆstlich der Fˆhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mˆgliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="39"
+#: last_checked: 2024-01-08
+#: check_frequency: 120d
+#: next_check: 2024-09-18
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
 EOF
      },
@@ -41417,9 +41421,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut Bauschild der Wasserbetriebe bis September 2024 (nicht sicher)
-#: also_indoor: traffic (G,W) vvv
+#: add_fragezeichen: Gibt es weiterhin eine Einbahnstraﬂenregelung bzw. Sperrung? vvv
+#: also_indoor: traffic (ex-G,ex-W) vvv
 #: last_checked: 2023-11-25 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 30d vvv
 #: next_check: 2024-09-30 vvv
 R¸digerstr.: Einbahnstraﬂe	q3::inwork; 16918,12325 17020,12309 17056,12304
 Hagenstr.: Sperrung im Einm¸ndungsbereich	q3::inwork 16918,12325 16933,12432
@@ -41427,6 +41432,7 @@ Hagenstr.: Sperrung im Einm¸ndungsbereich	q3::inwork 16918,12325 16933,12432
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1701064800, # 2023-11-27 07:00
@@ -41637,6 +41643,7 @@ EOF
 #: add_fragezeichen: Ist die Genthiner Straﬂe weiterhin gesperrt?
 #: also_indoor: traffic (B)
 #: last_checked: 2023-12-16
+#: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 EOF
      },
@@ -41652,7 +41659,7 @@ EOF
 #: osm_watch: way id="4612406" version="26"
 #: note: Bei der letzten Fahrt waren noch nicht alle Schilder da, insbesondere haben alle "Fahrrad frei"-Zusatzschilder gefehlt.
 #: add_fragezeichen: Sind die Radfahrer-frei-Schilder mittlerweile da?
-#: last_checked: 2023-12-23
+#: last_checked: 2024-01-08
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-04
 	q4; 10794,10927 10824,11010 10690,11167
