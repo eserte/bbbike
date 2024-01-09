@@ -2267,10 +2267,10 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch: note 3658253 2
-#: last_checked: 2023-11-29 (mapillary)
+#: last_checked: 2024-01-09
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
-#: last_checked: 2023-10-09
+#: last_checked: 2024-01-09
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3982,7 +3982,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-01-02
+#: last_checked: 2024-01-09
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5152,33 +5152,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
-# REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
-# REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
-#	q4::inwork 10313,13227 10264,13097
-# REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
-#: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
-#: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024)
-#: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
-#: osm_watch: way id="36892597" version="39"
-#: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen)
-#: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
-#: last_checked: 2024-01-03 (mapillary) vvv
-#: check_frequency: 45d vvv
-#: next_check: 2024-01-09 vvv
-Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
-# REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1700546400,
-         'id' => 3898,
-         'text' => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., keine Freigabe für Radfahrer, außerdem Sperrung des Einmündungsbereichs Gipsstr., vom 22.11.2023 07:00 bis 09.01.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1704816000
-       },
+       undef,
        undef,
        undef,
        {
@@ -5260,7 +5234,7 @@ Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: Endedatum per Halteverbotsschilder (dauert aber länger)
 # REMOVED (im Kreuzungsbereich mittlerweile keine Einschränkungen) --- #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2023-12-22
+#: last_checked: 2024-01-09
 # REMOVED --- #: next_check: 2023-12-01
 	q4::inwork 16273,11113 16227,10991
 ',
@@ -5505,7 +5479,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: also_indoor: traffic (G,B,W)
 #: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
 #: note: Halteverbotsschilder bis 30.01.2024
-#: last_checked: 2023-12-22
+#: last_checked: 2024-01-09
 #: check_frequency: 30d
 #: next_check: 2024-01-30
 	q2::inwork; 18037,9195 17549,9529
@@ -5669,15 +5643,15 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024)
+         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024)
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
 ',
          'from' => 1694494800,
          'id' => 3976,
-         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 10.01.2024 17:00',
+         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 01.03.2024 17:00',
          'type' => 'gesperrt',
-         'until' => 1704902400
+         'until' => 1709308800
        },
        {
          'data' => '#: note: laut Bauschild der Wasserbetriebe bis September 2024 (nicht sicher)
@@ -5813,7 +5787,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'data' => '#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
 #: also_indoor: traffic (B)
 #: last_checked: 2023-12-16
-#: next_check: 2024-01-08
+# REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 ',
          'from' => undef,
