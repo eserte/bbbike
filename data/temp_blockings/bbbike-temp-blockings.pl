@@ -39700,23 +39700,28 @@ EOF
 	q4::inwork 22388,4737 22377,4836
 EOF
      },
-     { from  => 1688497366, # 2023-07-04 21:02
-       until => $isodate2epoch->("2023-07-25 17:00:00"), # 1689951600, # 2023-07-21 17:00
-       text  => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze Einbahnstraßenabschnitte, bis 25.07.2023',
+     { from  => 1704999960, # 1688497366, # 2023-07-04 21:02
+       until => $isodate2epoch->("2024-02-16 17:00:00"), # $isodate2epoch->("2023-07-25 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       #text  => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze Einbahnstraßenabschnitte, bis 25.07.2023',
+       text  => 'Karl-Kunger-Str..: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Elsenstr., evtl. sind auch Radfahrer betroffen, bis 16.02.2024 17:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: bvg2021:m43#BVG323893_0
+#: source_id[expired]: bvg2021:m43#BVG323893_0
 #: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
-#: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-# REMOVED --- #: last_checked: 2023-07-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-07-25 vvv
+#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
+#: source_id: bvg2021:m43#BVG340191_0
+# REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
+# REMOVED --- #: last_checked: 2023-07-24 vvv --- #: check_frequency: 14d vvv --- 
+#: next_check: 2024-01-12 vvv
 Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
-Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
-#: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str.
-Elsenstr.	q3::inwork; 13849,9310 13766,9200
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+Karl-Kunger-Str.	q4::inwork; 13647,9304 13766,9200
+# REMOVED --- Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
+# REMOVED --- #: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str. --- Elsenstr.	q3::inwork; 13849,9310 13766,9200
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1688875200, # 2023-07-09 06:00
@@ -40446,14 +40451,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-05-27 23:59:59"),
-       text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Ende Mai 2024',
+       until => $isodate2epoch->("2024-07-08 23:59:59"),
+       text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Juli 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2024)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/
 #: by: https://www.youtube.com/watch?v=m7OQ0dpU-FI
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
+#: by: https://www.bahninfo-forum.de/read.php?9,727655,790304#msg-790304 (Verlängerung bis 08.07.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
 #: last_checked: 2024-01-06 vvv
