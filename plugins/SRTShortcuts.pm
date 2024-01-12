@@ -3967,7 +3967,9 @@ sub fetch_fis_broker_wms_map {
     ($py0,$py1)=($py1,$py0) if $py0 > $py1;
     my($w,$h) = ($main::c->width, $main::c->height);
     require LWP::UserAgent;
-    require MIME::Base64;
+    #require MIME::Base64;
+    require File::Temp;
+    my $origfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1);
     my $ua = LWP::UserAgent->new;
     my $layer = 'k_radverkehrsnetz';
     my $url = 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_radverkehrsnetz?service=WMS&request=GetMap&version=1.3.0&bbox='.$py0.','.$px0.','.$py1.','.$px1.'&width='.$w.'&height='.$h.'&format=image/png&layers='.$layer.'&styles=gdi_default&crs=EPSG:4326&transparent=true';
@@ -3979,7 +3981,18 @@ sub fetch_fis_broker_wms_map {
 	warn "Response:\n" . $resp->dump;
 	main::status_message('Fetching image from WMS failed, please see STDERR for details', 'die');
     }
-    my $img = $main::c->Photo(-data => MIME::Base64::encode_base64($resp->decoded_content(charset => undef)), -format => 'png');
+    open my $ofh, '>', $origfile or die $!;
+    binmode $ofh;
+    print $ofh $resp->content;
+    $ofh->close or die $!;
+
+    # XXX somehow coordinates to not fit, try to rotate a little bit
+    my $rotfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1);
+    my @cmd = ('convert', $origfile, '-distort', 'SRT', '-2.3', $rotfile);
+    system @cmd;
+    if ($? != 0) { die "Command @cmd failed" }
+
+    my $img = $main::c->Photo(-file => $rotfile, -format => 'png');
     my($x0,$y0) = $main::c->get_corners;
     $main::c->createImage($x0,$y0,-image=>$img,-anchor=>'nw',-tags=>['map-ovl']);
     # XXX original map position is low, but in this case it is an overlay, so it should be raised
