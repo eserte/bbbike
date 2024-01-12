@@ -587,7 +587,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6478 (Antrag zum Pankower Radverkehrsnetz, Erwähnung der Kreuzung)
 #: osm_watch: node id="29420748" version="7"
 #: source_id: 2147342788 (möglicherweise inaktiv)
-#: last_checked: 2023-12-14
+#: last_checked: 2024-01-12 (mapillary)
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -1986,6 +1986,7 @@ Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur i
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8226 (Busspuren geplant?)
 #: by: https://berliner-abendblatt.de/2022/09/07/gericht-die-busspur-in-der-clayallee-muss-weg/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/busspur-wurde-per-gerichtsentscheid-aufgehoben_a388681
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1347926.php (wird die Busspur auch zwischen Argentinische Allee und Garystr. aufgehoben?)
 #: last_checked: 2023-09-14
 #: check_frequency: 180d
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected 1139,3876 1159,3915 1191,3997 1221,4071 1240,4126 1254,4170 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1447,4757 1450,4766 1462,4802 1479,4853 1511,4955
@@ -4189,7 +4190,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: XXX im Neubaubereich neues Betonpflaster
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2024-01-01
+#: last_checked: 2024-01-12
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-10-31
 Wriezener Park: Umbauarbeiten, einige Wege sind zwischenzeitlich gesperrt	?::inwork 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
@@ -4798,7 +4799,7 @@ Spreeradweg: wird hier auch die Wegoberfläche verbessert?	? 3867,12616 3888,1261
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/aufpflasterung-im-bereich-grossgoerschenstrasse-geplant_a202243
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8177 (Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8272 (Antrag)
-#: last_checked: 2023-09-15 (mapillary)
+#: last_checked: 2023-09-20
 #: check_frequency: 120d
 Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9380 8165,9366
 # 
@@ -7158,9 +7159,9 @@ Gartenstr.: Fahrradstraße geplant	?::projected 9670,13637 9535,13801 9514,13826 
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/strassenarbeiten-starten-spaeter_a392402
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1373632.php (Bauarbeiten: 16. Oktober 2023 bis Mitte Dezember 2023)
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/ampelaustausch-an-kreuzung_a395998
-#: osm_watch: way id="441659160" version="24"
+#: osm_watch: way id="441659160" version="25"
 #: osm_watch: way id="441659161" version="17"
-#: last_checked: 2023-12-16 (mapillary)
+#: last_checked: 2024-01-11 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2024-03-01
 Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 21889,16817 21925,16981
@@ -8164,7 +8165,7 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
 #: priority: #D
 #: note: Masten ohne Schilder stehen schon, Markierung bislang nur im Radwegbereich
-#: last_checked: 2024-01-10 vvv
+#: last_checked: 2024-01-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -8184,6 +8185,7 @@ Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365
 # 
 #: by: https://www.infravelo.de/projekt/otto-braun-strasse/ (Richtung Norden) (2. Quartal 2024)
 #: by: https://www.infravelo.de/projekt/otto-braun-strasse-1/ (Richtung Süden) (2. Quartal 2024)
+#: last_checked: 2024-01-12 (mapillary)
 #: next_check: 2024-06-30
 Otto-Braun-Str.: Radspuren geplant	?::projected 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -9064,6 +9066,7 @@ Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,214
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2021/pressemitteilung.1069486.php (Auslegung des B-Plans)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/drei-besonders-markante-spandauer-gebaeude-mit-neu-gewonnener-perspektive_a325025 (Erwähnung)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11677
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_02_0065_0116_online.pdf (Grundstücksnummerierungen)
 #: XXX Benennung zu "Metropolitan Park" --- welche der neuen Straßen bekommt diesen Namen?
 #: last_checked: 2023-04-21 vvv
 #: check_frequency: 180d vvv
@@ -9135,6 +9138,7 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Paral
 #: XXX Vermutlich entsteht hier eine Abkürzung für den B-K-Radweg
 #: note: Gelände auch als "Napoleonkai" bekannt
 #: osm_watch: way id="113631587" version="5"
+#: osm_watch: note 4039470 2
 #: last_checked: 2023-12-31 (daf)
 #: check_frequency: 180d
 #: next_check: 2024-05-15

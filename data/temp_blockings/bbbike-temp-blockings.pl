@@ -30516,14 +30516,14 @@ EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte Dezember 2023: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte Januar 2024: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-01-01 vvv
+#: last_checked: 2024-01-12 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -40913,7 +40913,7 @@ EOF
 #: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="8"
+#: osm_watch: way id="1126670512" version="9"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
 #: osm_watch: way id="9030384" version="38"
@@ -41439,11 +41439,11 @@ Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 EOF
      },
      { from  => 1701064800, # 2023-11-27 07:00
-       until => 1705075200, # 2024-01-12 17:00
-       text  => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 07:00 bis 12.01.2024 17:00',
+       until => $isodate2epoch->("2024-02-09 17:00:00"), # 1705075200, # 2024-01-12 17:00
+       text  => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 bis 09.02.2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024)
+#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024)
 #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
 	q4::inwork 5189,9397 5189,8983
 EOF
