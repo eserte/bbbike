@@ -3558,7 +3558,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2023-12-20
+#: last_checked: 2024-01-13
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -3576,7 +3576,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="940399849" version="10"
 #: osm_watch: way id="1203072585" version="2"
 #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2023-12-30
+#: last_checked: 2024-01-13
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-07-31
 #: note: eigentlich q3-::inwork
@@ -3584,7 +3584,7 @@ zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., Fahrbahn könnte mittlerweile für Radfahrer offen sein',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., aber Fahrbahn ist bereits befahrbar (Stand Mitte Januar 2024)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4153,6 +4153,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.rockstonere.com/de/aktuelles/news-details/berlin-rockstone-real-estate-und-gbr-kotek-semel-planen-mit-barbarossadreieck-gemischt-genutztes-gebaeudeensemble-in-schoeneberg/
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ml48-sch%C3%B6neberg.652/#post-19614
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/11-000-quadratmeter-flaeche-fuer-bueros-wohnen-und-gewerbe_a380464 ("Schöneberger Eck", bis Frühjahr 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/erfolg-fur-berliner-burgerinitiative-gericht-bremst-hochhausprojekt-schoneberger-eck-11038744.html
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -4177,7 +4178,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2023-12-30
+#: last_checked: 2024-01-13
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -4953,18 +4954,21 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-# REMOVED --- #: last_checked: 2023-07-24 vvv --- #: check_frequency: 14d vvv --- 
-#: next_check: 2024-01-12 vvv
-Karl-Kunger-Str.	q3::inwork; 13614,9333 13647,9304
-Karl-Kunger-Str.	q4::inwork; 13647,9304 13766,9200
+#: last_checked: 2024-01-13 vvv
+#: check_frequency: 14d vvv 
+#: next_check: 2024-02-16 vvv
+Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
+Plesser Str.	q4::inwork 13647,9304 13667,9316
+Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
 # REMOVED --- Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
 # REMOVED --- #: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str. --- Elsenstr.	q3::inwork; 13849,9310 13766,9200
 #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1704999960,
          'id' => 3844,
-         'text' => 'Karl-Kunger-Str..: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Elsenstr., evtl. sind auch Radfahrer betroffen, bis 16.02.2024 17:00 Uhr',
+         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 16.02.2024 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1708099200
        },
@@ -5241,7 +5245,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: osm_watch: way id="1207706195" version="1"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m
-#: last_checked: 2023-12-03
+#: last_checked: 2024-01-13
 #: check_frequency: 120d
 #: next_checj: 2026-03-31
 	q4::inwork; 12407,8177 12545,8209
@@ -5336,8 +5340,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        {
          'data' => '#: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum) (inaktiv)
-#: source_id: viz2021:13.31556,52.48654,22.12.2023,13:46 (bis 12.01.2024)
-#: also_indoor: traffic (G,B,W)
+#: source_id: viz2021:13.31556,52.48654,22.12.2023,13:46 (bis 12.01.2024) (inaktiv)
+#: also_indoor: traffic (ex-G,B,ex-W)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
 #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
@@ -5350,7 +5354,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'dont_check_date' => 1,
          'from' => 1695550500,
          'id' => 3922,
-         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15 bis vermutlich 12.01.2024',
+         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15 bis vermutlich 12.01.2024, evtl. länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5875,6 +5879,34 @@ etwa 80m der Ottomar-Geschke-Str. gesperrt	q2::inwork 21376,4748 21454,4928
          'text' => 'Ottomar-Geschke-Str./Ahornallee: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende 2024',
          'type' => 'handicap',
          'until' => 1735685999
+       },
+       {
+         'data' => '#: note: Halteverbotsschilder von samstags 6 bis 19 Uhr
+#: tempex: (sa) T10-T16 vvv
+Blücherstr.	q4::temp:clock; 10564,9292 10580,9361
+Südstern, nördlicher Strang	q4::temp:clock 10656,9333 10647,9337 10617,9353 10580,9361
+Radwegverbindung	q4::temp:clock 10615,9300 10656,9333
+Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
+#: tempex ^^^
+',
+         'from' => undef,
+         'id' => 3997,
+         'recurring' => 1,
+         'text' => 'Neuer Markt am Südstern: samstags von 10-16 Uhr Wochenmarkt, Sperrung der Blücherstr. Richtung Norden sowie einiger Straßen am nördlichen Südstern',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
+#: add_fragezeichen: Ist der Weg entlang des Bahndamms gesperrt?
+#: last_checked: 2024-01-13 (daf)
+	2::inwork 9586,17665 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
+',
+         'from' => undef,
+         'id' => 3998,
+         'text' => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): mögliche Sperrung wegen Bauarbeiten',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
