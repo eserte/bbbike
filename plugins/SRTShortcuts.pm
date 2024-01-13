@@ -3992,7 +3992,7 @@ sub fetch_fis_broker_wms_map {
     system @cmd;
     if ($? != 0) { die "Command @cmd failed" }
 
-    my $img = $main::c->Photo(-file => $rotfile, -format => 'png');
+    my $img = $main::c->Photo(-file => "$rotfile", -format => 'png');
     my($x0,$y0) = $main::c->get_corners;
     $main::c->createImage($x0,$y0,-image=>$img,-anchor=>'nw',-tags=>['map-ovl']);
     # XXX original map position is low, but in this case it is an overlay, so it should be raised
