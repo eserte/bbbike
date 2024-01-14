@@ -37,16 +37,20 @@ binmode STDERR, ":encoding($codeset)";
 $_ = decode($codeset, $_) for @ARGV;
 
 # XXX should be configurable, by using both filesets and files
-my @search_files = (
-		    bsd_glob("$bbbike_datadir/*-orig"),
-		    bsd_glob("$bbbike_datadir/*.coords.data"),
-		    "$bbbike_datadir/temp_blockings/bbbike-temp-blockings.pl",
-		    "$bbbike_datadir/mudways",
-		    "$bbbike_datadir/zebrastreifen",
-		    (defined $bbbike_aux_datadir ? 
-		     ("$bbbike_aux_datadir/fragezeichen_lowprio.bbd") : ()
-		    ),
-		   );
+# element type:
+# - either filename
+# - or hashref with filename and encoding as fields
+my @search_file_defs = (
+			bsd_glob("$bbbike_datadir/*-orig"),
+			(map { +{ encoding => 'iso-8859-1', filename => $_ } }
+			 bsd_glob("$bbbike_datadir/*.coords.data"), "$bbbike_datadir/temp_blockings/bbbike-temp-blockings.pl",
+			),
+			"$bbbike_datadir/mudways",
+			"$bbbike_datadir/zebrastreifen",
+			(defined $bbbike_aux_datadir ? 
+			 ("$bbbike_aux_datadir/fragezeichen_lowprio.bbd") : ()
+			),
+		       );
 
 my $searchterm_type = 'fixed';
 my $case_insens     = 1;
@@ -62,7 +66,17 @@ GetOptions(
 	   'fixed'                 => sub { $searchterm_type = 'fixed' },
 	   'case|case-sensitive|I' => sub { $case_insens = 0 },
 	   'n|line-number'         => \$with_line_number,
-	   'add-file=s'            => sub { push @search_files, $_[1] },
+	   'add-file=s'            => sub { push @search_file_defs, $_[1] },
+	   'add-file-with-encoding=s' => sub {
+	       if (my($filename, $encoding) = $_[1] =~ m{^(.*):(.*)$}) {
+		   push @search_file_defs, {
+		       filename => $filename,
+		       encoding => $encoding,
+		   };
+	       } else {
+		   die "Unexpected format for --add-file-with-encoding value '$_[1]', should be 'filename:encoding'.\n";
+	       }
+	   },
 	   'reldir=s'              => \my $reldir,
 	   'debug'                 => \$debug,
 	  )
@@ -86,20 +100,27 @@ my $errors = 0;
 my $hits = 0;
 my $file_hits = 0;
 my @removed_lines;
-for my $file (@search_files) {
-    debug "  $file...";
-    # XXX getting the global directives should be skipped for non-bbd files (coords.data, temp blockings, maybe added files)
-    my $dir = Strassen->get_global_directives($file); # XXX can this throw an exception?
-    my $encoding = $dir->{encoding}->[0] || 'iso-8859-1';
+for my $search_file_def (@search_file_defs) {
+    my($filename, $encoding);
+    if (ref $search_file_def) {
+	($filename, $encoding) = @{$search_file_def}{qw(filename encoding)};
+    } else {
+	$filename = $search_file_def;
+    }
+    debug "  $filename...";
+    if (!defined $encoding) {
+	my $dir = Strassen->get_global_directives($filename); # XXX can this throw an exception?
+	$encoding = $dir->{encoding}->[0] || 'iso-8859-1';
+    }
     my $local_hits = 0;
-    open my $fh, $file
+    open my $fh, $filename
 	or do {
-	    warn "ERROR: Can't open $file ($!), skipping...\n";
+	    warn "ERROR: Can't open $filename ($!), skipping...\n";
 	    $errors++;
 	    next;
 	};
     binmode $fh, ":encoding($encoding)";
-    my $outfile = defined $reldir ? File::Spec->abs2rel($file, $reldir) : $file;
+    my $outfile = defined $reldir ? File::Spec->abs2rel($filename, $reldir) : $filename;
     while(<$fh>) {
 	if ($_ =~ $search_rx) {
 	    chomp;
@@ -150,7 +171,7 @@ bbbike-grep - specialized grep for bbbike data
 
 =head1 SYNOPSIS
 
-    bbbike-grep [--rx|--fixed] [--case-sensitive] [-n] [--add-file file] [--debug] searchterm
+    bbbike-grep [--rx|--fixed] [--case-sensitive] [-n] [--add-file file] [--add-file-with-encoding file:encoding] [--debug] searchterm
 
 =head1 DESCRIPTION
 
@@ -161,8 +182,7 @@ after traditional L<grep(1)>, but with some differences:
 
 =item * By default it searches in BBBike data files, in the same
 repository as C<bbbike-grep> itself. It's possible to add further
-files for search (see L</--add-file>), but (currently) it's not
-possible to search completely different files.
+files for search (see L</--add-file> and L</--add-file-with-encoding>).
 
 =item * It knows about the encoding of BBBike data files, and
 automatically switches between C<iso-8859-1>, C<utf-8>, or whatever is
@@ -206,8 +226,14 @@ editors and IDEs, e.g. for emacs' grep-mode.
 
 =item C<--add-file I<filename>>
 
-Specify another file to search, additional to the standard set of
-files.
+Specify another bbd file to search, additionally to the standard set
+of files.
+
+=item C<--add-file-with-encoding I<filename>:I<encoding>>
+
+Specify another possibly non-bbd file to search, together with an
+encoding like C<utf-8> or C<iso-8859-1>, additionally to the standard
+set of files.
 
 =item C<--debug>
 
