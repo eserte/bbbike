@@ -2967,10 +2967,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe Anfang 2024)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
+#: XXX Wird nach der Wiedereröffnung der Kfz-Verkehr möglich sein? Dann: NN -> N!
+#: also_indoor: traffic (none)
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2023-06-13 (mapillary)
+#: last_checked: 2023-06-15 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
@@ -5344,6 +5346,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (ex-G,B,ex-W)
 #: by[nocache]: https://nitter.net/Berliner_Fw/status/1706288693512687746#m (laut Bild nur der südliche Abschnitt an der Berliner Str. betroffen)
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
+#: note: bei rbb weiterhin gelistet, nun ohne Endedatum
 #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
 #: last_checked: 2023-10-21
 # REMOVED --- #: check_frequency: 60d
@@ -5354,7 +5357,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'dont_check_date' => 1,
          'from' => 1695550500,
          'id' => 3922,
-         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15 bis vermutlich 12.01.2024, evtl. länger',
+         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15 bis mindestens 12.01.2024, vermutlich länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5802,9 +5805,9 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landgrafenstra%C3%9Fe-3-6-umbau-hotel.1166/
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=749605#post749605
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
-#: also_indoor: traffic (G[falsch,beide Richtungen],W[falsch,beide Richtungen])
+#: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2023-12-16
+#: last_checked: 2024-01-14 (webcam)
 	q4::inwork; 6681,10959 6607,10801
 ',
          'from' => undef,

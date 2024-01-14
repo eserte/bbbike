@@ -484,6 +484,8 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2496
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/D8LGYPwT7PzJrg04UJjG2dHQQ4N7XJ2COiILWtKn/sRicgVZZ/39-Anlagen/07/B0328ZB5.pdf (Zwischenbericht, Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/enPt5WOkTqFvvjBfMhdQyWPeu4vrETrr7VxEJF4A/JENYbKEh/31-Anlagen/03/B0509SB.pdf (Schlussbericht)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4928 (zur Kreuzung)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/7RNJ1HW9vVAQbCATb1ZtirnGiitEIqAhF8zOymqc/YKQpiXML/54-Anlagen/05/B0827ZB2.pdf (Zwischenbericht, Realisierung der Planung wegen neuer Prüfung nicht möglich)
 #: XXX Maßnahme Pw.1
 #: osm_watch: way id="28961260" version="25"
 #: osm_watch: way id="899453841" version="5"
@@ -914,9 +916,12 @@ S Adlershof - Köpenicker Str.: wird hier eine neue Verbindung entstehen?	?::proj
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 20196,2392 20212,2354 20154,2283 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
 # 
 #: XXX Ag.2
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4539 (Antrag zur Fahrbahn Semmelweisstr.)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/2Cc4F4eF7So0MRwfXg6nT3h2vZoyZUjXEhnSHOX2/onfaPOEj/46-Anlagen/08/B0440ZB5.pdf (Zwischenbericht: Sanierung bis 2027, keine Erwähnung einer Radverkehrsanlage)
 #: osm_watch: way id="169076556" version="12"
 #: last_checked: 2023-09-24
-#: check_frequency: 90d
+#: check_frequency: 120d
+#: next_check: 2027-06-30
 Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2238 18965,2237 19019,2217
 # 
 #: XXX Ag.4
@@ -1103,6 +1108,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 1
 #: XXX evtl. nur Richtung Süden, Richtung Norden gibt es bereits eine Busspur
 # REMOVED (existiert nicht mehr) --- #: by: http://www.johthal.de/instar-video2.html (Webcam)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7332 (Antrag)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/2Cc4F4eF7So0MRwfXg6nT3h2vZoyZUjXEhnSHOX2/jpHXZjGj/78-Anlagen/04/B0339SB.pdf (Schlussbericht, "... unabhängig von Straßenbahnplanungen ...")
 #: osm_watch: way id="216169539" version="13"
 #: osm_watch: way id="319539204" version="20"
 #: last_checked: 2023-12-30
@@ -1807,7 +1813,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 #: osm_watch: way id="878343305" version="12"
 #: osm_watch: note 4041955 2
 #: XXX Ab AdK wird Richtung Süden ein neuer Verbundsteinpflasterradweg (oder teilweise sogar asphaltiert?) gebaut, vermutlich nur bis Merler Weg
-#: last_checked: 2023-12-26 (mapillary)
+#: last_checked: 2024-01-13 (mapillary)
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
@@ -2948,6 +2954,8 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1720012109302374413#m (noch keine Infos zur Umstellung am 20.11.2023)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-auf-der-karl-marx-strasse-in-berlin-neukolln-nordlicher-abschnitt-wird-vorubergehend-einbahnstrasse-10717204.html (Mitte/Ende November 2023 bis Januar 2024: Einbahnstraße Richtung Hermannplatz, auch Radfahrer sind betroffen, genauer Bereich unklar)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/noch-zwei-jahre-grossbaustelle_a403149 (Komplettfertigstellung bis Ende 2025?)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8892 (Anfrage)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tMs40ZsJgUSohCRtaKtA9nECAaVdKy1NRp9BrMMK/btlSTFXb/99-Anlagen/02/813MA_1122_Dauerbaustelle_und__k_ein_Ende_in_S.pdf (Antwort, bis Ende 2025)
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv)
@@ -2959,6 +2967,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: last_checked: 2024-01-13
 #: check_frequency: 180d
 #: next_check: 2024-03-01
+# REMOVED --- #: next_check: 2025-12-31
 # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636
 # 
@@ -4161,6 +4170,7 @@ Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 967
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11799 (Einwohneranfrage)
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/waldseeviertel-drei-buergerinitiativen-wollen-lkw-durchgangsverkehr-dauerhaft-verhindern_a398116
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11889 (Einwohneranfrage)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11954 (Einwohneranfrage)
 #: XXX wird es während der Bauarbeiten Einschränkungen geben?
 #: also_indoor: traffic (none)
 #: last_checked: 2023-09-12 (indoor)
@@ -4405,6 +4415,7 @@ Monumentenstr.: Fahrradstraße geplant	?::projected 7647,9196 7735,9121 7790,9126
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1387247.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9079 (Erwähnung in Vorhabenliste)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/4E7f3m8vjkYtJijQrqDbhWvW4FPJBmUNLV0xP7yr/QkXWolwC/22-Anlagen/01/0868_XXI_ANLAGE_RBTS-VOLI-231204-FINAL.pdf (aktuelle Vorhabenliste)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9112 (Antrag)
 #: XXX in welcher Form soll die Radwegverbindung entstehen? Wie sieht die Anbindung zum Tempelhofer Feld aus?
 #: last_checked: 2023-12-27
 #: check_frequency: 120d
@@ -5879,7 +5890,7 @@ Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8525 (Erwähnung einer Verbesserung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
-#: osm_watch: way id="4689026" version="44"
+#: osm_watch: way id="4689026" version="45"
 #: last_checked: 2023-11-25 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-12-31
@@ -7425,7 +7436,7 @@ Zur Alten Börse - Merler Weg: werden die Straßen hier verbunden?	? 18736,13080 1
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10081 ("Planung hinsichtlich der Radfahrenden", Baumaßnahme wird 2023 fertiggestellt)
 #: source_id: viz2021:13.32306,52.603568,22.11.2022,07:00 (Fahrbahnsanierung bis 8.12.2022) (inaktiv)
-#: osm_watch: way id="4766087" version="18"
+#: osm_watch: way id="4766087" version="19"
 #: last_checked: 2023-12-06 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-31
@@ -8197,6 +8208,11 @@ Otto-Braun-Str.: Radspuren geplant	?::projected 11451,13301 11486,13350 11539,13
 #: next_check: 2025-08-01
 Schichauweg - Freizeitpark Marienfelde: Planung einer Erschließungsstraße (verkehrsberuhigt)	?::projected 8297,-1161 8242,-811
 # 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6768 (Benennungsabsicht)
+#: osm_watch: way id="28492483" version="5"
+#: last_checked: 2024-01-14 (BVV-Drucksache)
+Straße 5 (Heinersdorf): soll in "Emblastr." umbenannt werden	?::sign 12674,19188 12631,19169
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -8807,6 +8823,8 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8787 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8875 (Antrag)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neulichterfelde-lichterfelde-s%C3%BCd.83/page-2#post-21980 (Baufeldfreimachung erst im Herbst 2024?)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8956 (Antrag)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8975 (Anfrage)
 # REMOVED --- #: osm_watch: way id="318397770" version="2"
 # REMOVED --- #: osm_watch: way id="318395919" version="6"
 #: osm_watch: way id="49998472" version="9"
@@ -9531,6 +9549,8 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/projektwebsite-ist-aktualisiert_a399211
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6737 (Antrag)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/panketrail-vertraeglich-planen_a400847 (Einwohnerantrag)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6769 (Vorlage zur Kenntnisnahme zum Bebauungsplan 3-60, Teilung in 3-60a, 3-60b und 3-60c)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/7cKxP1VS6fgxsn6TEHIHuA5fcf0xyDkkiu9RB683/iXgrgkmp/49-Anlagen/02/attach_29BF.pdf
 #: also_indoor: webcam https://portal1761.webcam-profi.de/ (vom Lokschuppen)
 #: last_checked: 2023-10-08
 #: check_frequency: 720d
@@ -9591,6 +9611,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://berliner-abendblatt.de/berlin-news/stadtschnellstrasse-tangentiale-ost-soll-kommen-id237296
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/21-aktenordner-an-die-zustaendige-senatsverwaltung-uebergeben_a400047
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-stadtschnellstrasse-tvo-soll-kommen_a399939
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10174 (Antrag)
 #: by: osm
 #: osm_watch: way id="154505652" version="16"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
@@ -10068,6 +10089,7 @@ An der Streuobstwiese: hier entsteht eine neue Straße; genaue Lage, Qualität?	?:
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9008 (Anfrage)
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/studie-zum-neuen-stadtbad-online_a402291
 #: by: https://www.deutsches-architekturforum.de/thread/13856-neue-mitte-tempelhof/?postID=753259#post753259 (Baubeginn vrsl. ab 2028)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9106 (Mitteilung zur Kenntnisnahme)
 #: last_checked: 2023-12-30
 #: next_check: 2028-01-01
 Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grünflächen?	?::projected 9321,6450 9274,6138 9635,6089 9667,6418 9321,6450
@@ -10399,6 +10421,7 @@ Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entst
 #: by: https://www.berliner-woche.de/wittenau/c-bauen/weiter-offene-fragen-zum-verkehrskonzept-im-kuenftigen-wohnviertel-in-der-cit-foch_a399891
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_50_4641_4716_online.pdf (Auslegung)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11873 (Ersuchen)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11955 (Anfrage)
 #: XXX Bebauungsplan XX-277a Cité Foch (Nord)
 #: XXX evtl. wird es weitere Änderungen geben, z.B. Zurückstufung eines Teils der Avenue Charles de Gaulle, Fußwege im Süden könnten anders strukturiert werden
 #: last_checked: 2023-06-03
