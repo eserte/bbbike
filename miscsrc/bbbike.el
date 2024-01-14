@@ -708,12 +708,12 @@
 	 (bbbike-rootdir (bbbike-rootdir))
 	 (bbbike-datadir (bbbike-datadir))
 	 (bbbike-grep-cmd (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
-				  " --add-file " bbbike-rootdir "/t/cgi-mechanize.t"
-				  " --add-file " bbbike-rootdir "/t/old_comments.t"
+				  " --add-file-with-encoding " bbbike-rootdir "/t/cgi-mechanize.t:iso-8859-1"
+				  " --add-file-with-encoding " bbbike-rootdir "/t/old_comments.t:iso-8859-1"
 				  ; XXX experimental: search also in org files (e.g. for Bebauungsplaene)
 				  (if (org-agenda-files)
 				      (concat " "
-					      (mapconcat (lambda (file) (concat "--add-file " file))
+					      (mapconcat (lambda (file) (concat "--add-file-with-encoding " file ":utf-8")) ; assume that org-mode files are encoded using utf-8
 							 (org-agenda-files)
 							 " ")))
 				  " --reldir " bbbike-datadir
