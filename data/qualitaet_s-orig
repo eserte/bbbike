@@ -2513,8 +2513,8 @@ Neue Promenade: unebenes Pflaster	Q2+ 10264,13097 10263,13047
 #: note: teilweise Schotter, teilweise alter Asphalt (?)
 Griebnitzseepromenade: Waldweg	Q1- -7252,-422 -7276,-482 -7337,-515 -7358,-605 -7495,-716 -7585,-736 -7677,-801 -7863,-984 -8053,-1110 -8100,-1170 -8143,-1191 -8231,-1212 -8282,-1129 -8426,-1036 -8566,-967 -8606,-925 -8620,-868 -8698,-735 -8759,-690 -8850,-679 -8901,-618 -8964,-569 -9109,-496 -9171,-478 -9171,-362 -9236,-255 -9375,-117
 (Frankfurter Allee, Nebenfahrbahn): Asphalt	Q0 16865,11931 16837,11920
-(Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1- 16837,11920 16764,11919 16702,11920
-(Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
+(Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1- 16837,11920 16764,11919 16702,11916
+(Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11916 16630,11915 16535,11920
 Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17065,8396
 Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
 Nalepastr.: Kleinsteinpflaster	Q1- 17057,8235 17056,8159
@@ -6652,11 +6652,14 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: by: https://www.berlin.de/b-intern.de/ba/spandau/_assets/politik-und-verwaltung/dokumente/plan_3_folkungerstrasse_gatower_strasse.pdf
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022, hier: von Wilhemstr. bis Gatower Str.)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
+#: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024)
+#: source_id: viz2021:13.17159,52.51104,15.01.2024,09:13 (bis 29.02.2024)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
 #: osm_watch: note 3653798 1
 #: last_checked: 2023-04-21
 #: check_frequency: 360d
-#: next_check: 2023-12-31
+# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2024-02-29
 Weinmeisterhornweg: Asphalt mit Schäden	Q1- -5061,11305 -5188,11342 -5202,11347 -5292,11378 -5399,11426
 # 
 Stritteweg: Asphalt	Q0 -5202,11347 -5202,11342 -5224,11248 -5229,11230
@@ -10092,7 +10095,10 @@ Lieberoser Str.: Beton	Q0 6356,20910 5929,20882
 Drebkauer Str.: Beton	Q0 6317,20751 6117,20738
 (Weg in der Schönholzer Heide): Asphalt	Q0 8304,19475 8237,19501 8193,19555 8117,19605 8042,19629 7988,19680 7968,19704 7871,19698
 (Schönholzer Heide - Wilhelmsruher See): Asphalt	Q0 7968,19704 7974,19739
-(Oskar-Ziethen-Krankenhaus): Asphalt	Q0 16541,12071 16556,12180
+(Sana Klinikum Lichtenberg): Asphalt	Q0 16541,12071 16543,12087 16556,12180
+(Sana Klinikum Lichtenberg): Asphalt	Q0 16628,11961 16629,11992 16682,11987 16702,12114 16611,12130 16604,12079 16543,12087
+(Frankfurter Allee - Sana Klinikum Lichtenberg): Asphalt	Q0 16630,11915 16628,11934
+(Frankfurter Allee - Sana Klinikum Lichtenberg): Kopfsteinpflaster	Q2 16628,11934 16628,11961
 John-Sieg-Str.: Beton	Q0- 15434,11846 15504,11809 15532,11753 15660,11695
 (entlang des REWEs): Verbundsteinpflaster	Q1+ 15714,11941 15710,11857
 Frankfurter Allee [Wohngebiet]: Asphalt	Q0 15714,11941 15717,12010 15717,12015
