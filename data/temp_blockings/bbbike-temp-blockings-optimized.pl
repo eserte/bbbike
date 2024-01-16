@@ -5590,7 +5590,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
 #: osm_watch: way id="1151064395" version="5"
-#: last_checked: 2024-01-03
+#: last_checked: 2024-01-15 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
@@ -5775,7 +5775,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q3::inwork 17056,12304 17088,12506
 #: osm_watch: way id="4525429" version="22"
 #: osm_watch: way id="1212493766" version="4"
 #: osm_watch: note 3916787 2
-#: last_checked: 2023-12-26 (osm) vvv
+#: last_checked: 2024-01-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv
 Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583
@@ -5914,6 +5914,19 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'id' => 3998,
          'text' => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): mögliche Sperrung wegen Bauarbeiten',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: also_indoor: traffic (G,B)
+#: last_checked: 2024-01-16 (mapillary)
+#: check_frequency: 14d
+	q4::inwork 10385,13348 10341,13376
+',
+         'from' => undef,
+         'id' => 3999,
+         'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      
