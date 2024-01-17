@@ -4104,7 +4104,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="16"
-#: last_checked: 2024-01-11 (osm) vvv
+#: last_checked: 2024-01-16 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -6877,7 +6877,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorl‰ufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
-#: last_checked: 2023-12-09 (mapillary) vvv
+#: last_checked: 2024-01-16 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -8095,7 +8095,7 @@ asphaltiertes Straﬂenbahnkap	RW1; 14161,11930 14097,11949
 asphaltiertes Straﬂenbahnkap	RW1; 14836,11842 14888,11934
 asphaltiertes Straﬂenbahnkap	RW1; 14888,11934 14836,11842
 	RW4; 15077,11910 15133,11902
-	RW3; 15077,11910 14965,11924 14888,11934
+	RW4; 15077,11910 14965,11924 14888,11934
 asphaltiertes Straﬂenbahnkap	RW1; 15133,11902 15174,11896 15217,11890
 	RW3; 15217,11890 15256,11884
 asphaltiertes Straﬂenbahnkap	RW1; 15174,11896 15133,11902 15077,11910
@@ -8647,7 +8647,7 @@ Tempo 10	RW6;RW6 14089,13247 14035,13104
 10er-Zone	RW6;RW6 2102,11307 2180,11318 2219,11324
 # 
 #: note: wegen Fahrbahnsch‰den (die eigentlich nur f¸r Busse u.‰. problematisch sind)
-Tempo 10	RW6;RW6 13198,12311 13524,12271
+Tempo 10	RW6;RW6 13198,12311 13421,12284 13524,12271
 # 
 #: by: mapillary vvv
 Gr¸nbeschichtung, Poller	RW4; 5212,10661 5215,10711 5217,10736

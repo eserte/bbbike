@@ -10,8 +10,21 @@
 # 
 ### Friedrichshain ###
 # 
+#: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024)
+#: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331
+#: last_checked: 2024-01-17 vvv
+#: next_check: 2024-02-09 vvv
+#: valid: -20240209 vvv
+Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860
+Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: XXX Sieht nach Leitungsarbeiten aus.
-#: last_checked: 2024-01-11
+#: add_fragezeichen: Besteht die Sperrung noch immer?
+#: also_indoor: traffic (B)
+#: last_checked: 2024-01-17
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -33,7 +46,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger	q4+ 12558,11920 12617,11888
 #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv)
 #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-01-02 vvv
+#: last_checked: 2024-01-17 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-01-26 vvv
 # REMOVED --- #: valid: -20231229 vvv
@@ -53,7 +66,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-01-11
+#: last_checked: 2024-01-17
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -79,7 +92,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2024-01-10 vvv
+#: last_checked: 2024-01-17 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -1668,6 +1681,7 @@ Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9629,1408 -961
 am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8595,2148 -8542,2216 -8468,2152
 #: note: früher "q1", was vielleicht etwas optimistisch ist, keine Ausschilderung, unklare Lage
 Karl-Marx-Allee - Kadiner Str.: Fußgänger	q3 13543,12326 13556,12302 13551,12266
+Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Fußgänger	q3 13448,12340 13430,12320 13421,12284
 #: note: früher ohne handicap-Eintrag, keine Ausschilderung, unklare Lage
 (Ludwig-Pick-Str. - Karl-Marx-Allee): einige Fußgänger	q1 13552,12435 13543,12326
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817

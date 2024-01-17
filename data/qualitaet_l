@@ -133,7 +133,7 @@ Dahlwitz - Neuenhagen: schlechtes Kopfsteinpflaster	Q3 27028,10890 27047,11144
 Dahlwitz - Neuenhagen: Asphalt	Q0 27047,11144 27132,11252
 Dahlwitz - Neuenhagen: Kopfsteinpflaster	Q2 27132,11252 27165,11294 27209,11346
 Dahlwitz - Neuenhagen: Asphalt	Q0 27209,11346 27490,11678
-Dahlwitz - Neuenhagen: Asphalt	Q0 28287,12471 28453,12484 28510,12507 28614,12747 28595,12846 28575,12975
+Dahlwitz - Neuenhagen: Asphalt	Q0 28287,12471 28453,12484 28510,12507 28520,12530 28614,12747 28595,12846 28575,12975
 Dahlwitz - Neuenhagen: Asphalt	Q0 29093,13456 29743,14143
 Börnicke: sehr guter Asphalt	Q0 26426,29402 26284,29218
 Börnicke: sehr guter Asphalt, allerdings einige Aufpflasterungen	Q0 26284,29218 26162,29036 25965,28886
@@ -5334,7 +5334,7 @@ Hoppegartener Str. (Neuenhagen b. Berlin): Kopfsteinpflaster	Q3 29492,12767 2947
 Niederheidenstr.: Asphalt	Q0 29749,10911 29749,11170 29698,11874 29578,12462 29549,12513 29466,12688 29492,12767 29648,12973
 Grünstr.: Asphalt	Q0 29999,12739 29549,12513 29405,12430
 Am Güterbahnhof: Asphalt	Q0 29212,12831 28772,12754
-Am Güterbahnhof: Kopfsteinpflaster	Q2 28772,12754 28715,12743
+Am Güterbahnhof: Asphalt	Q0 28772,12754 28715,12743
 (zum Bahnhof Elstal): Verbundsteinpflaster	Q1 -17233,15051 -17223,15157
 Bahnhofstr. (Elstal): Fahrbahn asphaltiert	Q0 -16803,14549 -16815,14689 -16806,14734 -16767,14874 -16814,14936 -17233,15051 -17845,15155 -17986,15188 -18347,15241 -18449,15063 -18526,14960
 Zum Hakenberg (Elstal): Asphalt	Q0 -16152,14690 -16421,14758 -16673,14743 -16806,14734
@@ -7218,6 +7218,9 @@ Adolf-Hoffmann-Str. (Vogelsdorf): Asphalt	Q0 34002,11577 34149,11511 34274,11551
 Walter-Sawall-Str.: schlechtes Kopfsteinpflaster	Q3 34024,1360 34181,1349
 Geraer Str. (Neuenhagen): mäßiges Kleinsteinpflaster	Q2 29959,11913 29967,11844 29956,11569 29949,11390
 Geraer Str. (Neuenhagen): unbefestigte Straße	Q2 29949,11390 29942,11284
+Goetheallee (Hoppegarten): Kleinsteinpflaster	Q2 28520,12530 28663,12528
+Goetheallee (Hoppegarten): schadhafter Asphalt	Q1 28663,12528 28731,12510 28809,12568 29185,12631 29231,12621
+Poststr. (Hoppegarten): Kleinsteinpflaster	Q2 28663,12528 28715,12743
 Sophie-Farber-Str. (Potsdam): Asphalt	Q0 -8873,-2887 -9155,-2804
 Zum Teufelssee (Potsdam): Asphalt	Q0 -10150,-5260 -10186,-5276 -10254,-5307 -10397,-5379
 Seestr. (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30560,5997 30648,5979 30790,5946
