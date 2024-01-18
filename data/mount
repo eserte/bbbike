@@ -272,7 +272,10 @@ Steigung 4.5% (Massolleweg)	St; -7194,4412 -7205,4411
 Steigung 4.5% (Königstr. (Wannsee))	St; -7622,881 -8045,788
 Steigung 4.5% (Gößweinsteiner Gang)	St; -7561,4191 -7636,4346
 Steigung 4.5% (Fuchsbergeweg (Kladow))	St; -8098,4899 -8021,5077
+Steigung 4.5% ((Sana Klinikum Lichtenberg))	St; 16628,11961 16629,11992
 Steigung 4.5% ((Hasenheide, Hauptweg im Park))	St; 11141,9107 11182,8983
+Steigung 4.5% ((Frankfurter Allee - Sana Klinikum Lichtenberg))	St; 16630,11915 16628,11934
+Steigung 4.5% ((Frankfurter Allee - Sana Klinikum Lichtenberg))	St; 16628,11934 16628,11961
 Steigung 4.5% ((Dr. Kleusberg-Promenade - Höhenweg))	St; -4452,10420 -4443,10460
 Steigung 4.5% ((Dr. Kleusberg-Promenade - Höhenweg))	St; -4445,10379 -4452,10420
 Steigung 4.5% ((Dr. Kleusberg-Promenade - Höhenweg))	St; -4443,10460 -4429,10484
@@ -597,6 +600,7 @@ Steigung 3.1% (Oberfeldstr.)	St; 20571,11698 20587,11824
 Steigung 3.1% (Mühlsteinweg)	St; 6836,22824 6778,22950
 Steigung 3.1% (Lindenstr. (Bohnsdorf))	St; 21914,-1278 21794,-1260
 Steigung 3.1% (Lichtburgring)	St; 10004,15636 9965,15731
+Steigung 3.1% (Hubertusstr. (Lichtenberg))	St; 16512,11894 16541,12071
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11879,8672 11882,8527
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11845,8824 11879,8672
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11831,8989 11830,8917
@@ -606,6 +610,8 @@ Steigung 3.1% (Gehrenseestr.)	St; 18316,16636 18478,16753
 Steigung 3.1% (Fichtenauer Str.)	St; 30179,3966 30210,4046
 Steigung 3.1% (Bornholmer Str.)	St; 9514,16603 9617,16590
 Steigung 3.1% (Bornholmer Str.)	St; 10197,16528 10134,16534
+Steigung 3.1% ((Sana Klinikum Lichtenberg))	St; 16543,12087 16556,12180
+Steigung 3.1% ((Sana Klinikum Lichtenberg))	St; 16541,12071 16543,12087
 Steigung 3.0% (Zur Gartenstadt)	St; 21800,-109 21769,-30
 Steigung 3.0% (Wilhelmstr. (Wilhelmstadt))	St; -5509,11256 -5564,11209
 Steigung 3.0% (Teltower Damm)	St; 749,2616 772,2538
@@ -1167,6 +1173,8 @@ Steigung 2.2% (Friedenstr. (Wannsee))	St; -7368,794 -7394,918
 Steigung 2.2% (Fregestr.)	St; 5657,6451 5622,6400
 Steigung 2.2% (Fregestr.)	St; 5622,6400 5582,6360
 Steigung 2.2% (Fredersdorfer Weg)	St; 30651,3855 30713,3845
+Steigung 2.2% (Frankfurter Allee [Nebenfahrbahn])	St; 16702,11916 16764,11919
+Steigung 2.2% (Frankfurter Allee [Nebenfahrbahn])	St; 16630,11915 16702,11916
 Steigung 2.2% (Frankfurter Allee)	St; 17251,11789 17151,11801
 Steigung 2.2% (Frankfurter Allee)	St; 17151,11801 17121,11806
 Steigung 2.2% (Frankfurter Allee)	St; 17121,11806 17028,11821
@@ -1835,6 +1843,7 @@ Steigung 1.6% (Hauptstr. (Schöneberg, Friedenau))	St; 7354,9135 7308,9041
 Steigung 1.6% (Grasehorstweg)	St; 30947,4528 31011,4750
 Steigung 1.6% (Gottfried-Arnold-Weg)	St; -8157,6259 -8251,6214
 Steigung 1.6% (Friedenstr. (Friedrichshain))	St; 12163,13295 12131,13333
+Steigung 1.6% (Frankfurter Allee [Nebenfahrbahn])	St; 16837,11920 16865,11931
 Steigung 1.6% (Flughafenstr.)	St; 12494,8501 12349,8464
 Steigung 1.6% (Fintelmannstr.)	St; -7630,409 -7712,407
 Steigung 1.6% (Fintelmannstr.)	St; -7554,431 -7630,409
@@ -1964,6 +1973,7 @@ Steigung 1.5% (Großbeerenstr. (Kreuzberg))	St; 9178,10451 9158,10342
 Steigung 1.5% (Gerichtstr.)	St; 8456,15235 8570,15107
 Steigung 1.5% (Georgenkirchstr.)	St; 11703,13426 11784,13513
 Steigung 1.5% (Gatower Str.)	St; -4698,11483 -4798,11231
+Steigung 1.5% (Frankfurter Allee [Nebenfahrbahn])	St; 16764,11919 16837,11920
 Steigung 1.5% (Fontanestr. (Grunewald))	St; 972,8626 1043,8550
 Steigung 1.5% (Feuerbachstr.)	St; 5390,6299 5560,6344
 Steigung 1.5% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10502,14070 10606,14005
@@ -2257,8 +2267,6 @@ Steigung 1.3% (Gotha-Allee)	St; 99,12849 83,12780
 Steigung 1.3% (Gotha-Allee)	St; 83,12780 339,12643
 Steigung 1.3% (Fählmannweg)	St; -8508,5023 -8211,5490
 Steigung 1.3% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9801,8683 9801,8889
-Steigung 1.3% (Frankfurter Allee [Nebenfahrbahn])	St; 16535,11920 16630,11915
-Steigung 1.3% (Frankfurter Allee [Nebenfahrbahn])	St; 16512,11894 16535,11920
 Steigung 1.3% (Feuerbachstr.)	St; 5582,6360 5701,6386
 Steigung 1.3% (Falkstr.)	St; 12220,7822 12216,7838
 Steigung 1.3% (Falkstr.)	St; 12216,7838 12195,7916

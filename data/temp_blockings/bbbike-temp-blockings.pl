@@ -30425,7 +30425,7 @@ EOF
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2023)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2023) (bis 30.04.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -30435,7 +30435,7 @@ EOF
 #: also_indoor: traffic (ex-G,H,B,W)
 #: last_checked: 2023-12-12 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2024-01-19
+#: next_check: 2024-04-30
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -36493,14 +36493,13 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1649298167484014594#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnVLMUM2VlhzQUVMcm1hLmpwZw==
-#: note: bei VIZ nicht verlängert, laut rbb bis 08.03.2024
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet? Gibt es noch Einschränkungen für Radfahrer?
 #: next_check: 2024-03-08
 	q4::inwork; 1333,5246 1385,5214 1443,5193 1486,5175 1514,5163 1573,5152
@@ -40977,17 +40976,22 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Markgrafenstr.: Einbahnstraßenregelung zwischen Mohrenstr. und Jägerstr., offen Richtung Norden',
+       text  => 'Markgrafenstr.: Einbahnstraßenregelung zwischen Mohrenstr. und Jägerstr., offen Richtung Norden, sowie in der Mohrenstr. zwischen Markgrafenstr. und Charlottenstr., offen Richtung Osten',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 1
-#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-01-03
-#: check_frequency: 14d
-	q3::inwork; 9656,12031 9666,11935 9679,11834
+#: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
+#: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll?
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? vvv
+#: last_checked: 2024-01-18 vvv
+#: check_frequency: 14d vvv
+Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
+Mohrenstr.	q3::inwork; 9679,11834 9547,11819
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1679814000, # 2023-03-26 09:00
@@ -41234,7 +41238,7 @@ EOF
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
 #: osm_watch: way id="1151064395" version="5"
-#: last_checked: 2024-01-15 (mapillary)
+#: last_checked: 2024-01-18
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911

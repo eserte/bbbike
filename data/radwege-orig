@@ -2071,7 +2071,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-01-15 (mapillary)
+#: last_checked: 2024-01-18
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
 # REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2739,7 +2739,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-01-11 vvv
+#: last_checked: 2024-01-18 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -8537,9 +8537,10 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaﬂnahme bis 2024) vvv
+#: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024)
 #: last_checked: 2023-12-12 (mapillary) vvv
 #: check_frequency: 90d
-#: next_check: 2024-01-19 vvv
+#: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
