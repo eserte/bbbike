@@ -265,7 +265,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="11"
 #: osm_watch: way id="25042039" version="36"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2023-11-08 (daf)
+#: last_checked: 2024-01-19 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -1258,7 +1258,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2024-01-16 vvv
+#: last_checked: 2024-01-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2481,7 +2481,7 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 #
 #: next_check_id: GOERLITZERUFER-2023
 #: XXX wie sieht es nach dem Umbau aus?
-#: last_checked: 2024-01-04 vvv
+#: last_checked: 2024-01-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-06-30 vvv
 	RW1; 13216,9983 13155,9907
@@ -2794,7 +2794,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2024-01-11
+#: last_checked: 2024-01-19
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW2; 12543,11521 12645,11673
@@ -2897,7 +2897,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2024-01-16
+#: last_checked: 2024-01-19
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264

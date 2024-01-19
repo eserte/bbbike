@@ -2748,7 +2748,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -2762,7 +2762,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2024-01-19 vvv
+#: next_check: 2024-02-05 vvv
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -2778,9 +2778,9 @@ zwischen Moltkestr. und Tietzenweg	q4::inwork; 3934,4441 3643,4232
 ',
          'from' => 1622356200,
          'id' => 3261,
-         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis 19. Januar 2024',
+         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis 5. Februar 2024, vermutlich noch länger',
          'type' => 'handicap',
-         'until' => 1705680000
+         'until' => undef
        },
        undef,
        undef,
@@ -4958,7 +4958,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2024-01-13 vvv
+#: last_checked: 2024-01-19 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-02-16 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -5535,7 +5535,7 @@ Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2024-01-04
+#: last_checked: 2024-01-19
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 14d
 #: next_check: 2024-06-30
@@ -5543,7 +5543,7 @@ Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 ',
          'from' => 1699031494,
          'id' => 3952,
-         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang Januar 2024: die alten Radwege scheinen noch passierbar zu sein)',
+         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Mitte Januar 2024: die alten Radwege sind noch passierbar)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5616,8 +5616,9 @@ Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
 #: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
+#: XXX Das Ende der Bauarbeiten zum 31.1.2024 ist unwahrscheinlich (noch tiefe Gruben + Winterwetter).
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2023-12-20
+#: last_checked: 2024-01-19
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q2::inwork 13860,9861 13704,9691
