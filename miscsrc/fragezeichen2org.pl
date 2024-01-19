@@ -1011,7 +1011,8 @@ sub _make_dist_tag {
 		    my $prio = (
 				$numbers->{expired_and_open_count} >= 10 ? '#A' :
 				$numbers->{expired_and_open_count} >= 5  ? '#B' :
-				'#C'
+				$numbers->{expired_and_open_count} >= 1  ? '#C' :
+				'#D'
 			       );
 		    my $prio_string = $prio ? " [$prio]" : "";
 		    $out .= "*** $state$prio_string $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
