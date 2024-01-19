@@ -127,6 +127,7 @@ if ($with_dist) {
 # $planned_points, so fragezeichen records touching these tours may be
 # set with "PLAN" instead of "TODO" keyword.
 my $planned_points;
+my %route_info;
 if ($plan_dir) {
     require File::Glob;
     require Route;
@@ -138,7 +139,10 @@ if ($plan_dir) {
     for my $route_file (File::Glob::bsd_glob("$plan_dir/*.bbr")) {
 	my $route = Route->load_as_object($route_file);
 	my $name = $route_file;
-	push @str, $route->as_strassen(name => $name);
+	my $s = $route->as_strassen(name => $name);
+	push @str, $s;
+	my $last_pos = $#{$s->data};
+	$route_info{$name}->{type} = $s->get(0)->[Strassen::COORDS][0] eq $s->get($last_pos)->[Strassen::COORDS][-1] ? 'round-trip' : 'one-way';
     }
     my $s = MultiStrassen->new(@str);
     $planned_points = $s->as_reverse_hash;
@@ -1007,7 +1011,10 @@ sub _make_dist_tag {
 		$out .= "** sorted by $sort_keys[0]\n";
 		for my $planned_route_file (sort { $custom_sort->($planned_route_to_numbers{$a}, $planned_route_to_numbers{$b}) } keys %planned_route_to_numbers) {
 		    my $numbers = $planned_route_to_numbers{$planned_route_file};
-		    my $state = $numbers->{expired_and_open_count} ? 'TODO' : 'DONE';
+		    # TODO routes are the ones which
+		    # * have open questions
+		    # * one-way trips, so likely to be done for non-survey purposes
+		    my $state = $numbers->{expired_and_open_count} || $route_info{$planned_route_file}->{type} eq 'one-way' ? 'TODO' : 'DONE';
 		    my $prio = (
 				$numbers->{expired_and_open_count} >= 10 ? '#A' :
 				$numbers->{expired_and_open_count} >= 5  ? '#B' :
