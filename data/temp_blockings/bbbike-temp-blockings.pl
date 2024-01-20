@@ -10680,7 +10680,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007154',
        data  => <<EOF,
-	2::inwork 16866,13532 16863,13138
+	2::inwork 16866,13532 16865,13423 16863,13138
 EOF
      },
      { from  => 1195081200, # 2007-11-15 00:00
@@ -37282,14 +37282,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg kann gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: mapillary
 #: confirmed_by: srt
 #: osm_watch: way id="978727717" version="6"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-10-22
+#: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren
+#: last_checked: 2024-01-20
 	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 EOF
      },
@@ -40634,7 +40635,7 @@ EOF
 #: note: Endedatum per Halteverbotsschilder (dauert aber länger)
 # REMOVED (im Kreuzungsbereich mittlerweile keine Einschränkungen) --- #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2024-01-09
+#: last_checked: 2024-01-20
 # REMOVED --- #: next_check: 2023-12-01
 	q4::inwork 16273,11113 16227,10991
 EOF
@@ -40651,30 +40652,32 @@ EOF
 EOF
      },
      { from  => 1694958118, # 2023-09-17 15:41
-       until => undef, # 1702681199, # 2023-12-15 23:59
+       until => 1705756290, # undef, # 1702681199, # 2023-12-15 23:59
        text  => 'Allee der Kosmonauten - Murtzaner Ring: Hochbauarbeiten, Straße gesperrt, mindestens bis Mitte Dezember 2023',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: Endedatum anhand Halteverbotsschild
-#: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
-#: last_checked: 2023-11-25 vvv
-#: next_check: 2023-12-15 vvv
+# REMOVED (Fahrbahn frei, provisorische Zuwegung zum Murtzaner Ring) --- #: note: Endedatum anhand Halteverbotsschild --- #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv --- #: last_checked: 2023-11-25 vvv --- #: next_check: 2023-12-15 vvv
 	2::inwork 20097,14039 20096,14127 20040,14179
-	2::inwork 20096,14127 20111,14140 20172,14141
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+	2::inwork 20096,14127 20111,14140 20184,14140
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; außerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="381691526" version="7"
+#: last_checked: 2024-01-20 vvv
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
-#: last_checked: 2023-10-22
+#: osm_watch: way id="381691526" version="8"
 	2::inwork 23305,14914 23318,14847 23297,14772
+#: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
+#: note: Halteverbotsschilder bis 2.2.2024 vvv
+	q3::inwork 23222,14809 23297,14772 23369,14756
+	q3::inwork 23288,14719 23297,14772
+#: note ^^^
+#: add_fragezeichen ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -40981,7 +40984,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="25"
-#: osm_watch: note 4045330 1
+#: osm_watch: note 4045330 3
 #: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll?
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? vvv
@@ -41617,7 +41620,7 @@ EOF
 #: osm_watch: way id="4525429" version="22"
 #: osm_watch: way id="1212493766" version="4"
 #: osm_watch: note 3916787 2
-#: last_checked: 2024-01-15 (mapillary) vvv
+#: last_checked: 2024-01-19 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv
 Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583

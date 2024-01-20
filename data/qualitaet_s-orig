@@ -395,7 +395,8 @@ Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 Hirschberger Str.: Asphalt	Q0 14988,11130 15021,11152 15056,11138
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 15056,11138 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
-Marzahner Chaussee: Kopfsteinpflaster	Q2- 18555,12101 18420,11864 18417,11854 18382,11740
+Marzahner Chaussee: Kopfsteinpflaster	Q2 18555,12101 18420,11864 18417,11854
+Marzahner Chaussee: Kopfsteinpflaster	Q2- 18417,11854 18382,11740
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4871 (Verbesserung für den Radverkehr?) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036852138672/852138672/00101938/38-Anlagen/04/B0771SB.pdf (wird nicht geändert)
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, Gehweg mit unebenem Mosaikpflaster für Radfahrer freigegeben	Q1-; 22467,6135 22603,6141 22777,6151 22857,6155
@@ -2257,11 +2258,11 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
 #: check_frequency: 120d vvv
-#: last_checked: 2023-09-17 vvv
+#: last_checked: 2024-01-20 vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2023-09-17
+#: last_checked: 2024-01-20
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -3851,8 +3852,10 @@ Bartelstr.: Asphalt	Q0 11031,13467 10998,13382
 Paul-Zobel-Str.: Asphalt	Q0 15724,13544 15724,13298 15846,13297 15851,13511
 Herzbergstr. [Wohngebiet]: Asphalt	Q0 15851,13511 15896,13512
 Annenstr. (Biesdorf): Asphalt	Q0 20262,14255 20376,14244
-(Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q0- 21163,15289 21263,15291 21350,15292
-(Blenheimstr. - Bärensteinstr.): Gehwegplatten (Gehweg) bzw. Asphalt (Fahrbahn)	Q0 21350,15292 21369,15252
+(Aldi/Getränke Hoffmann-Parkplatz): Verbundsteinpflaster	Q1+ 20184,14140 20187,14155 20219,14163 20217,14256 20262,14255
+(Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q0- 21163,15289 21263,15291 21350,15292 21361,15270
+(Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q0- 21163,15289 21195,15271 21262,15271 21361,15270
+(Blenheimstr. - Bärensteinstr.): Gehwegplatten (Gehweg) bzw. Asphalt (Fahrbahn)	Q0 21361,15270 21369,15252
 Bärensteinstr.: Beton	Q0 21369,15252 21368,15231
 Bärensteinstr.: Asphalt mit einigen Löchern	Q1 21368,15231 21411,15232 21497,15227 21599,15213
 Bärensteinstr.: Asphalt	Q0 21411,15232 21422,15383
@@ -10826,7 +10829,7 @@ Weg an der Havel: Asphalt	Q0 -3504,13775 -3493,13781 -3460,13828 -3459,13846 -33
 Sophienwerderweg: Asphalt mit Schäden	Q1- -795,13437 -684,13707 -951,13890 -1132,13972
 (Heinrich-Zille-Weg): welliges Verbundsteinpflaster	Q1- 795,12652 969,13290
 (Allee der Kosmonauten - Biesdorfer Promenade): schadhafter Asphalt	Q2+ 19837,13531 19826,13444
-Allee der Kosmonauten [Wohngebiet]: Asphalt	Q0 20249,14143 20172,14141 20111,14140 20096,14127 20097,14039 20081,13993 20080,13941 20082,13835 20111,13795 20112,13781 20114,13762 20120,13675 20036,13593 19898,13586 19848,13587 19827,13607 19827,13684 19856,13721 19859,13765 19856,13794
+Allee der Kosmonauten [Wohngebiet]: Asphalt	Q0 20249,14143 20184,14140 20111,14140 20096,14127 20097,14039 20081,13993 20080,13941 20082,13835 20111,13795 20112,13781 20114,13762 20120,13675 20036,13593 19898,13586 19848,13587 19827,13607 19827,13684 19856,13721 19859,13765 19856,13794
 Geißenweide: leicht schadhafter Beton mit Asphaltflicken	Q0- 21046,14469 21078,14570 21087,14602
 Bärensteinstr.: Asphalt	Q0 21368,15231 21371,15181 21432,15133 21499,15134 21497,15227
 Ahrensfelder Berge: wassergebundene Decke	Q1- 22672,16341 22666,16412 22670,16562 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22375,16836
@@ -10861,7 +10864,8 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Bruno-Baum-Grünzug - Martha-Arendsee-Str.): neue Betonplatten	Q0- 19528,14673 19543,14663
 (Geißenweide - Blenheimstr./Bärensteinstr.): Beton	Q0 21122,14713 21128,14799
 (Geißenweide - Blenheimstr./Bärensteinstr.): Asphalt	Q0 21128,14799 21143,14803 21211,15009 21261,15153 21260,15209
-(Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21263,15291
+(Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21262,15271
+(Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0- 21262,15271 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6234,7020 6276,6995
 # REMOVED (konnte ich nicht feststellen) --- Loewenhardtdamm: Asphalt mit einigen Schäden	Q1; 8632,8174 8730,8079
 Fischerstr.: Asphaltschäden	Q2+ 16404,10286 16423,10259

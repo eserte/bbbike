@@ -1359,7 +1359,7 @@ ausgeschildert als Michelangelostr. 93-127	CP2; 13760,15187 13801,15256
 # 
 Hausnummern 5-93	CP2; 11394,3814 11438,3637
 # 
-entlang des Rewe-Supermarkts	CS 21163,15289 21263,15291 21350,15292
+entlang des Rewe-Supermarkts	CS 21163,15289 21195,15271 21262,15271 21361,15270 21350,15292 21263,15291 21163,15289
 # 
 Malevkeweg: Privatstraße	CS 24877,10863 24875,10919 24819,10924
 Arturweg: Privatstraße	CS 24949,10956 24948,10815
@@ -1848,7 +1848,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2023-12-07 vvv
+#: last_checked: 2024-01-19 vvv
 #: check_frequency: 60d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638
@@ -1879,7 +1879,7 @@ ausgeschildert "Jelena-Šantić-Friedenspark"	CP2; 22854,14018 22903,14063
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_02_0141_0296_online.pdf
 #: add_fragezeichen: Hängen hier mittlerweile Straßenschilder?
-#: last_checked: 2023-12-22
+#: last_checked: 2024-01-20
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-02-13
 Zur Märkischen Aue: nicht ausgeschildert	CS 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619 17856,10560 17864,10537
@@ -1909,7 +1909,7 @@ Aaron-Bernstein-Platz: nicht ausgeschildert	CS 9353,13273 9382,13265 9385,13246 
 # REMOVED --- #: XXX im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data): --- #: XXX Johannisplatz (PLZ=10117 laut LOR und DPAG) --- #: XXX laut daf ist der Zugang zum Johannisplatz provisorisch geöffnet; Mosaikpflaster
 # REMOVED --- #: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR und DPAG)
 #: XXX noch Bauarbeiten, ein Strang noch gesperrt, wird es Schilder geben?
-#: last_checked: 2024-01-18 vvv
+#: last_checked: 2024-01-19 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-03-31 vvv
 #: osm_watch: way id="941599318" version="5"

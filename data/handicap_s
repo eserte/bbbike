@@ -48,6 +48,7 @@ Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2
 Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
 Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
+Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
@@ -658,8 +659,10 @@ Triniusstr.: zwei Schwellen, können umfahren werden	q1 18417,6775 18339,6660
 Kiautschoustr.: Fußgänger, Bordsteine	q4 6837,14848 6880,14861
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger	q4 13454,11119 13483,11143 13498,11136 13524,11204 13514,11208
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordstein	q4 13514,11208 13503,11179 13479,11147
-(Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2 21163,15289 21263,15291 21350,15292
-(Blenheimstr. - Bärensteinstr.): Fußgänger	q2 21350,15292 21369,15252
+(Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2 21163,15289 21263,15291 21350,15292 21361,15270
+(Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2 21163,15289 21195,15271 21262,15271 21361,15270
+(Blenheimstr. - Bärensteinstr.): Fußgänger	q2 21361,15270 21369,15252
+(Aldi/Getränke Hoffmann-Parkplatz): Parkplatzverkehr	q2 20184,14140 20187,14155 20219,14163 20217,14256 20262,14255
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11233,11510 11174,11554
@@ -1456,7 +1459,8 @@ Ahrensfelder Berge: Fußgänger	q1 22512,16542 22432,16467
 Springpfuhlpark: Fußgänger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19544,14234 19547,14042 19565,13893 19567,13858 19570,13833 19573,13742 19593,13702 19602,13575
 (Geißenweide - Blenheimstr./Bärensteinstr.): Bordstein	q3 21128,14799 21143,14803
 (Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger	q1 21143,14803 21211,15009 21261,15153 21260,15209
-(Geißenweide - Blenheimstr./Bärensteinstr.): Einkaufszentrum	q4 21260,15209 21263,15291
+(Geißenweide - Blenheimstr./Bärensteinstr.): Einkaufszentrum	q4 21260,15209 21262,15271
+(Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2 21262,15271 21263,15291
 (Am Rosengarten - Lütztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 Dürerplatz: einige Fußgänger, Bordstein	q2 6234,7020 6276,6995
 Straße 17: kurze Rampe	q3 7307,7435 7296,7443

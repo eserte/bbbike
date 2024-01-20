@@ -4122,12 +4122,13 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: confirmed_by: srt
 #: osm_watch: way id="978727717" version="6"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: last_checked: 2023-10-22
+#: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren
+#: last_checked: 2024-01-20
 	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 ',
          'from' => undef,
          'id' => 3658,
-         'text' => 'Bitterfelder Br¸cke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Bitterfelder Br¸cke - Max-Hermann-Str.: Bauarbeiten, Weg kann gesperrt sein, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5267,7 +5268,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
 #: note: Endedatum per Halteverbotsschilder (dauert aber l‰nger)
 # REMOVED (im Kreuzungsbereich mittlerweile keine Einschr‰nkungen) --- #: note: zur ˆstlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2024-01-09
+#: last_checked: 2024-01-20
 # REMOVED --- #: next_check: 2023-12-01
 	q4::inwork 16273,11113 16227,10991
 ',
@@ -5278,32 +5279,23 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
          'until' => undef
        },
        undef,
+       undef,
        {
-         'data' => '#: note: Endedatum anhand Halteverbotsschild
-#: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
-#: last_checked: 2023-11-25 vvv
-#: next_check: 2023-12-15 vvv
-	2::inwork 20097,14039 20096,14127 20040,14179
-	2::inwork 20096,14127 20111,14140 20172,14141
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1694958118,
-         'id' => 3917,
-         'text' => 'Allee der Kosmonauten - Murtzaner Ring: Hochbauarbeiten, Straﬂe gesperrt, mindestens bis Mitte Dezember 2023',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
-       {
-         'data' => '#: osm_watch: way id="381691526" version="7"
+         'data' => '#: last_checked: 2024-01-20 vvv
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfl‰che ge‰ndert?
-#: last_checked: 2023-10-22
+#: osm_watch: way id="381691526" version="8"
 	2::inwork 23305,14914 23318,14847 23297,14772
+#: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
+#: note: Halteverbotsschilder bis 2.2.2024 vvv
+	q3::inwork 23222,14809 23297,14772 23369,14756
+	q3::inwork 23288,14719 23297,14772
+#: note ^^^
+#: add_fragezeichen ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3918,
-         'text' => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; auﬂerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5471,7 +5463,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: next_check_id: GENDARMENMARKT-2023
 #: osm_watch: way id="35557161" version="25"
-#: osm_watch: note 4045330 1
+#: osm_watch: note 4045330 3
 #: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
 #: note: auﬂerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraﬂe wieder aufgehoben werden soll?
 #: add_fragezeichen: Besteht die Einbahnstraﬂenregelung noch immer? vvv
@@ -5780,7 +5772,7 @@ Dietlindestr.: Sperrung im Einm¸ndungsbereich	q3::inwork 17056,12304 17088,12506
 #: osm_watch: way id="4525429" version="22"
 #: osm_watch: way id="1212493766" version="4"
 #: osm_watch: note 3916787 2
-#: last_checked: 2024-01-15 (mapillary) vvv
+#: last_checked: 2024-01-19 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv
 Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583

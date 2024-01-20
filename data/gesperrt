@@ -809,7 +809,7 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 Schillerhof	1 7069,17204 6928,17154
 Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
-Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
+Allee der Kosmonauten	1 20184,14140 20111,14140 20096,14127
 Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 17268,16526
 Am Lehnshof	1s 4291,22986 4264,22992 4202,23034
@@ -997,6 +997,8 @@ Heiner-Müller-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1 17497,8623 17640,
 Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
 Adolf-Wermuth-Allee	1 17640,8627 17659,8698
 Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
+entlang des Rewe-Supermarkts	1 21163,15289 21263,15291 21350,15292 21361,15270
+entlang des Rewe-Supermarkts	1 21361,15270 21262,15271 21195,15271 21163,15289
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1527,8 +1529,8 @@ Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3
 Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21064,15174 21099,15158 21163,15289
 Mittelstreifen	3nocross::ignrte 7410,4373 7450,4397 7482,4416
 Straßenbahntrasse	3nocross::ignrte 20262,14255 20249,14143 20235,14017 20207,13778
-Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20235,14017 20249,14143 20172,14141
-Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20172,14141 20249,14143 20262,14255
+Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20235,14017 20249,14143 20184,14140
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20184,14140 20249,14143 20262,14255
 Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3::igndisp 20249,14143 20235,14017 20281,14012
 Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20281,14012 20235,14017 20207,13778
 Mittelstreifen	3nocross::ignrte 5201,20103 5299,20104 5399,20106 5517,20120

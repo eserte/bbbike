@@ -92,7 +92,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2024-01-17 vvv
+#: last_checked: 2024-01-20 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -396,7 +396,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="4"
-#: last_checked: 2023-12-12
+#: last_checked: 2024-01-19 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -796,7 +796,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-20
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -861,7 +861,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 #: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 2
-#: last_checked: 2023-09-17 vvv
+#: last_checked: 2024-01-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-31 vvv
 #: osm_watch: way id="175916583" version="10"
@@ -879,15 +879,20 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
+#: add_fragezeichen: Bis wann gibt es diese Einschränkung?
+#: last_checked: 2024-01-20 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2024-12-31 vvv
+#: valid: -20241231 vvv
 #: osm_watch: way id="1089784266" version="3"
 #: osm_watch: way id="1231226671" version="1"
-#: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2023-12-26 (mapillary)
-# REMOVED --- #: check_frequency: 120d
-#: check_frequency: 30d
-#: next_check: 2024-12-31
-#: valid: -20241231
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
+#: osm_watch: way id="36786796" version="22"
+Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 ### Schöneberg ###
 # 
@@ -1997,8 +2002,10 @@ Kiautschoustr.: Fußgänger, Bordsteine	q4 6837,14848 6880,14861
 # REMOVED (kein Zugang mehr zum Radweg) --- (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordsteine	q4 13493,11217 13514,11208
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger	q4 13454,11119 13483,11143 13498,11136 13524,11204 13514,11208
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordstein	q4 13514,11208 13503,11179 13479,11147
-(Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21163,15289 21263,15291 21350,15292
-(Blenheimstr. - Bärensteinstr.): Fußgänger	q2 21350,15292 21369,15252
+(Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21163,15289 21263,15291 21350,15292 21361,15270
+(Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21163,15289 21195,15271 21262,15271 21361,15270
+(Blenheimstr. - Bärensteinstr.): Fußgänger	q2 21361,15270 21369,15252
+(Aldi/Getränke Hoffmann-Parkplatz): Parkplatzverkehr	q2+ 20184,14140 20187,14155 20219,14163 20217,14256 20262,14255
 #: note: nach Schulschluss sogar q2
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
@@ -3103,7 +3110,8 @@ Springpfuhlpark: Fußgänger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19
 #: XXX_prog BS an der Parkplatzseite (ansonsten durch Fußgänger q1 (siehe unten) ersetzen)
 (Geißenweide - Blenheimstr./Bärensteinstr.): Bordstein	q3 21128,14799 21143,14803
 (Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger	q1 21143,14803 21211,15009 21261,15153 21260,15209
-(Geißenweide - Blenheimstr./Bärensteinstr.): Einkaufszentrum	q4 21260,15209 21263,15291
+(Geißenweide - Blenheimstr./Bärensteinstr.): Einkaufszentrum	q4 21260,15209 21262,15271
+(Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21262,15271 21263,15291
 (Am Rosengarten - Lütztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 #: XXX_prog BS an der Ostseite (oder gab es hier irgendwo eine Absenkung), ansonsten q1
 Dürerplatz: einige Fußgänger, Bordstein	q2 6234,7020 6276,6995
@@ -3302,11 +3310,13 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: osm_watch: way id="26995453" version="12"
 #: last_checked: 2023-09-12 vvv
 #: check_frequency: 120d vvv
+#: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
+#: osm_watch: way id="979814386" version="4"
 (Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
+#: osm_watch: way id="26995547" version="8"
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 #: check_frequency ^^^
 #: last_checked ^^^
