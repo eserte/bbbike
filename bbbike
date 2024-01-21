@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2023 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2024 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -7327,7 +7327,7 @@ EOF
 		        $c->createImage($x, $y, -image => $p,
 				        -anchor => $anchor,
 					# $abk-img or $abk-fg? set both!
-				        -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("$abk-fg", "L-fg") : ())],
+				        -tags => ["$abk-img", "$xx,$yy", $pointname, "p-" . $i, ($abk =~ /^L\d+$/ ? ("$abk-fg", "L-fg") : ())],
 				       );
 		        last; # we're done, only label drawing missing
 		    }

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2011,6 +2011,9 @@ sub click_info {
 	} elsif ($abk =~ /^(.*)-fg$/ && exists $o->p_file->{$1}) {
 	    $str_filename = $o->p_file->{$1};
 	    $pos = $tags[4];
+	} elsif ($abk =~ /^(.*)-img$/ && exists $o->p_file->{$1}) {
+	    $str_filename = $o->p_file->{$1};
+	    $pos = $tags[3]; # XXX inconsistency! why is position in ...-img at index 3 and in -fg at index 4?
 	}
 	if ($str_filename) {
 	    my $ret = LinePartInfo->new;
