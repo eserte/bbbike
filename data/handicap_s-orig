@@ -92,7 +92,7 @@ Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W)
-#: last_checked: 2024-01-20 vvv
+#: last_checked: 2024-01-22 vvv
 #: check_frequency: 14d vvv
 Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778
@@ -1011,6 +1011,15 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 # 
 ### Weißensee ###
 # 
+#: also_indoor: traffic (G,B,W)
+#: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m
+#: osm_watch: way id="1170355847" version="1"
+#: osm_watch: way id="1170355851" version="1"
+#: last_checked: 2024-01-22
+#: check_frequency: 120d
+#: next_check: 2024-12-20
+#: valid: -20241220
+Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von öffentlichen Straßenland)
 #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=752922#post752922 (angrenzendes Bauvorhaben)

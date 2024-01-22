@@ -1730,7 +1730,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2700,
-         'text' => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt',
+         'text' => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt, möglicherweise seit dem 23.1.2024 wieder offen',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4159,6 +4159,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ml48-sch%C3%B6neberg.652/#post-19614
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/11-000-quadratmeter-flaeche-fuer-bueros-wohnen-und-gewerbe_a380464 ("Schöneberger Eck", bis Frühjahr 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/erfolg-fur-berliner-burgerinitiative-gericht-bremst-hochhausprojekt-schoneberger-eck-11038744.html
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/hochhaus-am-barbarossadreieck-darf-derzeit-nicht-weitergebaut-werden_a405579
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -4331,7 +4332,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: also_indoor: traffic (W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-12-07
+#: last_checked: 2024-01-22
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 ',
@@ -4348,7 +4349,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-12-28
+#: last_checked: 2024-01-22
 #: check_frequency: 30d
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -5926,6 +5927,19 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
+#: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
+	q4::inwork 15055,11505 15016,11431
+# REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
+',
+         'from' => 1705899600,
+         'id' => 4000,
+         'text' => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1706115600
        }
      
 );

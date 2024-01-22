@@ -936,7 +936,7 @@ Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2
 Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 19412,1387 19460,1430 19498,1465 19579,1543
 # 
 #: XXX Ag.6
-#: osm_watch: way id="605637372" version="5"
+#: osm_watch: way id="605637372" version="6"
 #: last_checked: 2023-07-15
 #: check_frequency: 120d
 Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472 19470,453 19429,337 19398,254
@@ -956,7 +956,7 @@ Uferweg südlich des Teltowkanals: Herstellen einer Verbindung geplant, außerdem 
 #: XXX Ag.10
 #: XXX laut Finanzplan Berlin 2019-2023 Finanzierung bis 2022
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/stillstand-in-der-wegedornstrasse_a353291 ("unbestimmte Zeit")
-#: osm_watch: way id="71960642" version="13"
+#: osm_watch: way id="71960642" version="15"
 #: last_checked: 2023-09-24
 #: check_frequency: 360d
 Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,1154 19396,1100 19497,1035 19651,956
@@ -2136,7 +2136,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/neuer-weg-an-der-wiese-entsteht_a365723
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6359 (Einwohnerantrag zum Gehweg)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1406047.php (Erwähnung eines separaten Radwegs)
-#: last_checked: 2023-12-15
+#: last_checked: 2024-01-22
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -3592,9 +3592,8 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnozOW41cFdJQUk5V2RSLmpwZw==
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6716 (Antrag)
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
-#: XXX Bauarbeiten beendet, (noch) kein Zebrastreifen
 #: priority: #D
-#: last_checked: 2023-12-15
+#: last_checked: 2024-01-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -4084,11 +4083,11 @@ Benekendorffstr.: wird hier eine Fahrradstraße ausgewiesen?	? 4616,22478 4716,22
 #: priority: #D vvv
 #: next_check: 2024-09-30 vvv
 #: XXX hier schon Richtung Osten realisiert
-#: last_checked: 2024-01-16 (mapillary)
+#: last_checked: 2024-01-22
 #: check_frequency: 120d
 Grellstr.: Radspur wird mit Grünbeschichtung ausgeführt	?; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
 #: XXX hier noch keine Bauarbeiten zu sehen
-#: last_checked: 2024-01-16 (mapillary)
+#: last_checked: 2024-01-22
 #: check_frequency: 120d
 Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 #: next_check ^^^
@@ -4676,7 +4675,7 @@ Karl-Marx-Platz: Umgestaltung, Wegführung für Radfahrer wird sich ändern	?::proj
 #: by: https://www.bahninfo-forum.de/read.php?9,741529,741529#msg-741529 (bleibt der Fußgängertunnel? dann wohl keine Ampel)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6296 (Antrag)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/tramhaltestelle-wird-umgebaut_a385488 (Unterführung bleibt? Umbau ab 2025)
-#: last_checked: 2024-01-03
+#: last_checked: 2024-01-22
 #: next_check: 2025-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12704,15105 12681,15028
 # 
@@ -5419,8 +5418,8 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12658,12755 12690,12769 12687,12809
 #: last_checked: 2023-12-26
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
-#: source_id: viz2021:13.441995,52.550324,05.12.2023,07:00 (Leitungsarbeiten (für den Zebrastreifen?), bis 26.01.2024)
-#: last_checked: 2024-01-04 (mapillary)
+#: source_id: viz2021:13.441995,52.550324,05.12.2023,07:00 (Leitungsarbeiten (für den Zebrastreifen?), Gegenverkehrsregelung mit Ampel, bis 26.01.2024)
+#: last_checked: 2024-01-22
 #: next_check: 2024-01-26
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
 #: last_checked: 2024-01-16 (mapillary)
@@ -5591,7 +5590,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/im-komponistenviertel-hat-sich-einiges-geaendert_a383897
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1383388.php (Evaluation des Kiezblocks)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/was-bringt-der-kiezblock_a400841
-#: last_checked: 2023-12-28
+#: last_checked: 2024-01-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-08-11
 Bizetstr.: Ausschilderung und Vorfahrtsregelung noch nicht komplett	? 13409,15687 13456,15760 13524,15786 13540,15792
@@ -5678,7 +5677,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: source_id: viz2021:13.412979,52.546342,13.11.2023,08:00 (zwischen Gleimstr. und Milastr. Richtung Süden, bis 05.01.2024) (bis 29.03.2024)
 #: XXX Richtung Süden vermutlich nur bis Topsstr.
 #: XXX Richtung Norden fehlen noch ein paar Meter vor der Stargarder Str.
-#: last_checked: 2024-01-03
+#: last_checked: 2024-01-21 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-03-29
 Schönhauser Allee: Radwege werden zu einer protected bike lane umgewandelt	?::inwork 10881,15047 10883,15129 10884,15152 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697 10953,15787
@@ -5727,7 +5726,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2024-01-07
+#: last_checked: 2024-01-22
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -7104,7 +7103,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2024-01-17
+#: last_checked: 2024-01-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
@@ -7479,7 +7478,7 @@ Bebauungsplan 10-56-1: entsteht hier eine neue Straße?	? 19486,17170 19279,17220
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5625 (Inbetriebnahme 2022 angestrebt)
 #: priority: #D
-#: last_checked: 2024-01-16 (mapillary)
+#: last_checked: 2024-01-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-12-31
 Grellstr./Hosemannstr.: Zebrastreifen geplant	? 12417,15230 12417,15272 12456,15291
@@ -9131,7 +9130,7 @@ Lichtenrade: Sanierung von Pflasterstraßen	?::projected 10381,-2457 11914,-2137 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8651 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_21_2185_2248_online.pdf?ts=1683873271 (FNP-Berichtigung)
 #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/fischerhuettenstrasse.html?date=20240120 (Fertigstellung August 2024)
-#: osm_watch: way id="549549387" version="9"
+#: osm_watch: way id="549549387" version="10"
 #: last_checked: 2022-08-28
 #: check_frequency: 1440d
 #: next_check: 2024-08-01

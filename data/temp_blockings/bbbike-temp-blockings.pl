@@ -24859,7 +24859,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1444844659, # undef, # XXX
-       text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt',
+       text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt, möglicherweise seit dem 23.1.2024 wieder offen',
        type  => 'gesperrt',
 #       source_id => 'wosch',
        data  => <<EOF,
@@ -37452,6 +37452,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ml48-sch%C3%B6neberg.652/#post-19614
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/11-000-quadratmeter-flaeche-fuer-bueros-wohnen-und-gewerbe_a380464 ("Schöneberger Eck", bis Frühjahr 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/erfolg-fur-berliner-burgerinitiative-gericht-bremst-hochhausprojekt-schoneberger-eck-11038744.html
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/hochhaus-am-barbarossadreieck-darf-derzeit-nicht-weitergebaut-werden_a405579
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -37845,7 +37846,7 @@ EOF
 #: also_indoor: traffic (W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2023-12-07
+#: last_checked: 2024-01-22
 #: check_frequency: 60d
 	q4::inwork; 13086,15907 13214,15830
 EOF
@@ -37861,7 +37862,7 @@ EOF
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: also_indoor: traffic (G,W)
-#: last_checked: 2023-12-28
+#: last_checked: 2024-01-22
 #: check_frequency: 30d
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2023-12-31
 	q3::inwork 13263,15930 13140,16000
@@ -41766,6 +41767,18 @@ EOF
 #: last_checked: 2024-01-16 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 10385,13348 10341,13376
+EOF
+     },
+     { from  => 1705899600, # 2024-01-22 06:00
+       until => 1706115600, # 2024-01-24 18:00
+       text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
+#: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
+	q4::inwork 15055,11505 15016,11431
+# REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
 EOF
      },
     );
