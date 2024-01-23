@@ -6313,11 +6313,11 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-05-14 23:59:59"),
+     { from  => $isodate2epoch->("2024-05-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (13.5.2023 und 14.5.2023)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (11.05.2024 und 12.05.2024)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
@@ -8210,15 +8210,14 @@ EOF
 	2::temp 6228,13324 6105,13328 6022,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-05 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2023-05-07 23:59:59"),
+     { from  => $isodate2epoch->("2024-05-03 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2024-05-05 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 6, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
+       recurrences => [['yearly', days => 3, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
-       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (6. und 7. Mai 2022)',
+       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (4. und 5. Mai 2024)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html?date=20210410 (Termin noch nicht bekannt)
 #: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022)
 #: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
@@ -21838,18 +21837,19 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-20 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-04-23 23:59:59"),
+     { from  => $isodate2epoch->("2024-04-18 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-04-21 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.04.2023 bis 23.04.2023',
+       recurrences => [['yearly', days => 18, months => 4]],
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.04.2024 bis 21.04.2024',
        type  => 'gesperrt',
-       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
+#: by: http://www.winzerfest-köpenick.de/ (existiert mittlerweile nicht mehr; siehe unten)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
 #: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
 #: by: https://www.winzerfest-koepenick.de/?date=20230322
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
+#: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024)
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -21958,11 +21958,11 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-12 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2023-05-14 06:00:00"), # 1367704799, # 2013-05-04 23:59
+     { from  => $isodate2epoch->("2024-05-04 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
+       until => $isodate2epoch->("2024-05-05 06:00:00"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5, start => "2021-10-25T00:00:00"]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 13. Mai 2023',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 4. Mai 2023',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
        data  => <<EOF,
@@ -22023,9 +22023,9 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2023-04-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-05-01 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2023 bis 01.05.2023)', # früher: Lichtenrader Maientanz
+     { from  => $isodate2epoch->("2024-05-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-05-05 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2024 bis 05.05.2024)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
        type  => 'handicap',
@@ -22036,6 +22036,7 @@ EOF
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein (2024: 3. bis 5. Mai)
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11054,-1659 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -22129,11 +22130,11 @@ EOF
 	2::temp 3976,11869 3801,11858
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-05 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2023-05-08 05:00:00"), #
+     { from  => $isodate2epoch->("2024-05-03 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2024-05-06 05:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 06.05.2023 und 07.05.2023',
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 04.05.2024 und 05.05.2024',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
@@ -22141,7 +22142,7 @@ EOF
 #: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
 #: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
-#: note: kann im Juni oder Juli stattfinden
+#: note: kann auch im Juni oder Juli stattfinden
 #: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
@@ -24858,7 +24859,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1444844659, # undef, # XXX
+       until => 1706034582, # undef, # 1444844659, # undef, # XXX
        text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt, möglicherweise seit dem 23.1.2024 wieder offen',
        type  => 'gesperrt',
 #       source_id => 'wosch',
@@ -24872,13 +24873,11 @@ EOF
 #: by: https://www.berlin.de/special/sport-und-fitness/adressen/schwimmbad/stadtbad-tiergarten-4f143a00b4fc475f0b8d1000.html (Wiedereröffnung für 2023 geplant)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
+#: by: https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=754974#post754974 (offen)
 #: osm_watch: way id="462738551" version="21"
 #: osm_watch: way id="848019125" version="6"
 #: osm_watch: note 4030867 1
-#: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023
-#: last_checked: 2023-12-29
-#: next_check: 2024-01-23
+# REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 EOF
@@ -41685,7 +41684,7 @@ EOF
 #: osm_watch: way id="4612406" version="26"
 #: note: Bei der letzten Fahrt waren noch nicht alle Schilder da, insbesondere haben alle "Fahrrad frei"-Zusatzschilder gefehlt.
 #: add_fragezeichen: Sind die Radfahrer-frei-Schilder mittlerweile da?
-#: last_checked: 2024-01-08
+#: last_checked: 2024-01-23
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-04
 	q4; 10794,10927 10824,11010 10690,11167
@@ -41759,13 +41758,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, Ende der Sperrung unbekannt',
+       text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: also_indoor: traffic (G,B)
 #: last_checked: 2024-01-16 (mapillary)
 #: check_frequency: 14d
+#: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
 EOF
      },
@@ -41779,6 +41780,16 @@ EOF
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
+EOF
+     },
+     { from  => 1706223600, # 2024-01-26 00:00
+       until => 1706439600, # 2024-01-28 12:00
+       text  => 'Adlergestell: Sperrung wegen Einhubs einer Brücke, vom 27. Januar 2024, 03:00 Uhr bis 28. Januar 2024, 12:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1407667.php
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/?date=20240123
+	2::inwork 19472,3922 19335,4067 19226,4183
 EOF
      },
     );

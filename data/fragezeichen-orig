@@ -79,7 +79,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2024-01-13
+#: last_checked: 2024-01-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -2246,14 +2246,14 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1386088.php (geschützte Radfahrstreifen (Klebeborde, einige Leitboys) in der Schlesischen Str., 20.11.2023 - Ende 2023; in der Köpenicker Str. 2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/schlesische-strasse-bekommt-neue-geschutzte-radfahrstreifen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-radwegbis-jahresende_a400571
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-23
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
 #: source_id[expired]: bvg2021:165#BVG334779_0
 #: source_id: viz2021:13.446003,52.498975,20.11.2023,08:00 (bis 22.12.2023) (inaktiv)
 #: XXX Es kann Beeinträchtigungen in den kreuzenden Straßen geben, gesehen in der nördlichen Falckensteinstr im November 2023; mittlerweile (2023-12-20): keine Bautätigkeiten mehr zu erkennen
-#: last_checked: 2024-01-13
+#: last_checked: 2024-01-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-22
 Schlesische Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::inwork 13028,10629 13136,10535 13142,10530 13249,10445 13369,10337 13449,10262 13487,10227 13535,10184 13579,10146
@@ -5346,7 +5346,7 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2024-01-18
+#: last_checked: 2024-01-23
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -6147,7 +6147,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2024-01-13
+#: last_checked: 2024-01-23
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6898,7 +6898,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2024-01-11
+#: last_checked: 2024-01-23
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7110,7 +7110,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-23
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7118,7 +7118,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Umsetzung der Fahrradstraße 2023)
 #: by[nocache]: https://archive.is/dz81E (Tagesspiegel; allerdings wurde die Finanzierung gestoppt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11084 (Einwohnerantrag)
-#: last_checked: 2024-01-05 vvv
+#: last_checked: 2024-01-23 vvv
 #: next_check: 2024-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
@@ -7139,13 +7139,13 @@ Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,
 #: by: https://www.infravelo.de/projekt/wallstrasse/ (3. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 1. Quartal 2024)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_50_4641_4716_online.pdf (Teileinziehung am Märkischen Museum)
 #: osm_watch: note 3910190 5
-#: last_checked: 2024-01-18 vvv
+#: last_checked: 2024-01-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-03-30 vvv
 # REMOVED (laut infravelo nur bis Französische Str.) --- Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 # REMOVED (hier komplett realisiert) --- Oberwallstr., Niederwallstr.: Fahrradstraße entsteht	?::inwork 9898,12161 9913,12068
 Oberwallstr., Niederwallstr.: Schilder stehen bereits, es fehlen noch einige Vorfahrtsschilder	?::inwork 9913,12068 9925,11947 9991,11903 10079,11845 10132,11810 10189,11773 10205,11758 10238,11741
-Wallstr.: wird auch im Sackgassenabschnitt eine Fahrradstraße ausgeschildert?	? 10374,11734 10528,11729
+# REMOVED (ja, realisiert) --- Wallstr.: wird auch im Sackgassenabschnitt eine Fahrradstraße ausgeschildert?	? 10374,11734 10528,11729
 Wallstr., Am Märkischen Museum: Schilder stehen teilweise; modaler Filter, teilweise Fahrbahnmarkierungen und evtl. Vorfahrtsregelung fehlen	?::inwork 10908,11908 11111,12027 11160,12071 11275,12055 11325,12021
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7348,7 +7348,7 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10587 (Anfrage)
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-23
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -7657,7 +7657,7 @@ Wendenschloßstr./Dregerhoffstr.: Fußgängerampel geplant	?::projected 22870,2695 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2024-01-18
+#: last_checked: 2024-01-23
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8037,7 +8037,7 @@ Scharnweberstr.: Radspuren werden noch komplettiert	?::projected; 15256,11884 15
 #: osm_watch: way id="53357061" version="17"
 #: osm_watch: way id="183073681" version="15"
 #: XXX in DPAG 12/2023 gelistet
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-23
 #: check_frequency: 30d
 Audre-Lorde-Str.: nördlicher Abschnitt der Manteuffelstr. soll umbenannt werden	?::sign 12312,11153 12314,11152 12185,10900 12120,10772 12056,10642 12000,10531 11949,10414
 # 
@@ -8160,7 +8160,7 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
 #: priority: #D
 #: note: Masten stehen schon, aber weggedreht, Markierung bislang nur im Radwegbereich
-#: last_checked: 2024-01-17 vvv
+#: last_checked: 2024-01-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -8636,6 +8636,7 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/estw-s9-sued-bauvorhaben-tramtunnel-in-schoeneweide-neubau-fussgaengerbruecke-ueber-das-adlergestell/
 #: by: http://thomas.krickstadt.de/s-bahn/2023-10-03-johannisthal/index.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17430.pdf (Aufbau Fuß- und Radwegbrücke am 27./28.1.2024)
+#: by: https://www.wista-plan.de/projekte/adlershof/fuss-und-radwegbruecke
 #: source_id: viz2021:13.532612,52.441405,15.06.2023,07:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 28.06.2023) (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.532262,52.441543,26.10.2023,09:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 26.10.2023) (inaktiv)
 #: last_checked: 2024-01-21
@@ -8643,6 +8644,7 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 #: next_check: 2024-06-30
 Fuß- und Radwegbrücke: in Bau	?::inwork 19162,3935 19268,4037 19245,4046 19252,4069 19300,4018 19405,4125 19428,4071 19372,4084 19366,4065 19351,4050 19335,4067
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Jt.8)
+#: XXX außerdem entsteht eine Radwegverbindung auf der östlichen Seite zur Neltestr. (ggfs. "Stützpunkt" im 3nocross-Bereich des Adlergestells notwendig)
 #: last_checked: 2023-12-05 (krickstadt)
 #: check_frequency: 180d
 Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19219,4023 19667,3578
@@ -9260,6 +9262,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: https://www.deutsches-architekturforum.de/thread/14730-bauprojekte-rummelsburger-bucht-lichtenberg/?postID=746552#post746552
 #: by: https://www.ocean-berlin.com/ozean-berlin (Bauarbeiten 12/2024 beendet, Eröffnung 09/2025)
 #: by: https://taz.de/Aquarium-als-Geldquelle/!5983411/ (Eröffnung Anfang 2026)
+#: by: https://www.rbb24.de/panorama/beitrag/2024/01/berlin-coral-world-rummelsburger-bucht-hotel-aquarium.html (Frist bis Mai 2026)
 # REMOVED (alle eingetragen) --- #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 # REMOVED (eingetragen) --- #: XXX * bestehende Untere Kynaststr. -> An der Mole (PLZ=10317 laut LOR)
 # REMOVED --- #: XXX * Paul-und-Paula-Promenade --- #: XXX * Rummelsburger Seeblick (PLZ=10317 laut LOR) --- #: XXX * Ulrich-Plenzdorf-Str. (PLZ=10317 laut LOR) --- #: XXX * An den Eiswerken --- #: XXX * Heiner-Carow-Str. --- #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR) --- #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)

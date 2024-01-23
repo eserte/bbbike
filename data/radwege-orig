@@ -337,7 +337,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-01-16 vvv
+#: last_checked: 2024-01-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -514,7 +514,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2024-01-11 vvv
+#: last_checked: 2024-01-23 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2739,7 +2739,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-01-18 vvv
+#: last_checked: 2024-01-23 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -8780,7 +8780,7 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13588,11490 13711,11
 #: note: Fahrradstraße in der Relation Märkisches Ufer - Wallstr. - Niederwallstr. - Oberwallstr., Realisierung ab etwa November/Dezember 2023
 	RW7;RW7 10908,11908 11111,12027 11160,12071 11275,12055 11325,12021
 	RW7;RW7 9898,12161 9913,12068 9925,11947 9991,11903 10079,11845 10132,11810 10189,11773 10205,11758 10238,11741
-	RW7;RW7 10528,11729 10722,11816
+	RW7;RW7 10374,11734 10528,11729 10722,11816
 # 
 #: by: osm, mapillary vvv
 	RW6;RW6 11046,3895 11053,3828 11019,3786 10972,3779 10958,3710
