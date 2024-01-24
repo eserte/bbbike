@@ -24874,6 +24874,7 @@ EOF
 #: by: https://www.berliner-woche.de/moabit/c-bauen/anbieter-fuer-die-umkleiden-ausgefallen_a390371 (Fertigstellung im dritten Quartal 2023)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
 #: by: https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=754974#post754974 (offen)
+#: by: https://www.berliner-woche.de/moabit/c-bauen/stadtbad-tiergarten-hat-nach-vier-jahren-wieder-offen_a405684
 #: osm_watch: way id="462738551" version="21"
 #: osm_watch: way id="848019125" version="6"
 #: osm_watch: note 4030867 1
@@ -30515,14 +30516,14 @@ EOF
      },
      { from  => $isodate2epoch->("2023-03-05 00:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2023-10-31 20:00:00"), # 1576694560, # undef, # XXX
-       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte Januar 2024: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Ende Januar 2024: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-01-12 vvv
+#: last_checked: 2024-01-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -37286,7 +37287,7 @@ EOF
        data  => <<EOF,
 #: by: mapillary
 #: confirmed_by: srt
-#: osm_watch: way id="978727717" version="6"
+#: osm_watch: way id="978727717" version="7"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
 #: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren
 #: last_checked: 2024-01-20
@@ -39568,7 +39569,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-23 (mapillary)
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40927,7 +40928,8 @@ EOF
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="9"
 	q4::inwork 21889,16817 21925,16981
-#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
+#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
+#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024)
 #: osm_watch: way id="9030384" version="38"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -41653,6 +41655,7 @@ EOF
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Landgrafenstraße weiterhin?
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landgrafenstra%C3%9Fe-3-6-umbau-hotel.1166/
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=749605#post749605
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1750031927669608944#m (mögliche zusätzliche Einschränkung: Überqueren der Kurfürstenstr. an dieser Stelle möglicherweise nicht mehr möglich)
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
@@ -41775,7 +41778,7 @@ EOF
        text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024)
+#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 	q4::inwork 15055,11505 15016,11431
@@ -41789,6 +41792,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1407667.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/?date=20240123
+#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-vollsperrung-adlergestell-b96a-fur-das-einheben-der-brucke/
 	2::inwork 19472,3922 19335,4067 19226,4183
 EOF
      },

@@ -2146,7 +2146,7 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10727 (kein konkreter Zeitraum)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1348463.php (Erwähnung)
 #: note: der erste infravelo-Eintrag bezieht sich anscheinend auf die gesamte Friedenstraße
-#: last_checked: 2024-01-17
+#: last_checked: 2024-01-23 (mapillary)
 #: next_check: 2025-12-31
 Friedenstr.: was wird hier genau gemacht?	?::projected 12325,13148 12382,13097 12416,13045
 # 
@@ -2251,6 +2251,7 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: next_check: 2024-06-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
 #: source_id[expired]: bvg2021:165#BVG334779_0
+#: source_id: bvg2021:165#BVG341229_0
 #: source_id: viz2021:13.446003,52.498975,20.11.2023,08:00 (bis 22.12.2023) (inaktiv)
 #: XXX Es kann Beeinträchtigungen in den kreuzenden Straßen geben, gesehen in der nördlichen Falckensteinstr im November 2023; mittlerweile (2023-12-20): keine Bautätigkeiten mehr zu erkennen
 #: last_checked: 2024-01-23
@@ -3982,6 +3983,7 @@ Ringslebenstr. (von Heideläuferweg bis Buckower Damm): Busspur geplant, evtl. nu
 #: source_id: viz2021:13.311509,52.433321,08.08.2022,07:00 (Bauarbeiten bis 30.11.2022, vorher passiert wohl nichts...) (bis 31.01.2023) (bis 13.3.2023) (bis 28.2.2023) (inaktiv)
 #: source_id: viz2021:13.313262,52.435444,28.02.2023,07:00 (Kreuzungsbereich Bäkestr., bis 08.06.2023) (bis 28.07.2023) (bis 10.08.2023) (bis 24.08.2023) (inaktiv)
 #: source_id: viz2021:13.313262,52.435444,24.08.2023,08:00 (bis 30.11.2023) (bis 31.01.2024) (bis 05.04.2024)
+#: source_id: viz2021:13.309699,52.431276,25.01.2024,07:00 (bis 08.02.2024)
 #: last_checked: 2023-11-04
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-04-05
@@ -4207,7 +4209,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: XXX im Neubaubereich neues Betonpflaster
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2024-01-12
+#: last_checked: 2024-01-24
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-10-31
 Wriezener Park: Umbauarbeiten, einige Wege sind zwischenzeitlich gesperrt	?::inwork 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
@@ -5413,7 +5415,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: next_check_id: FRIEDENKOPPEN-2023
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (2023)
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 31.08.2023, Gesamtbaumaßnahme bis 11/2023) (bis 15.10.2023) (inaktiv) (bis 31.01.2024)
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-23 (mapillary)
 #: next_check: 2024-01-31
 Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12658,12755 12690,12769 12687,12809
 #: last_checked: 2023-12-26
@@ -5543,7 +5545,7 @@ Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::;
 #: XXX Instandsetzung 2017, danach vielleicht bessere Qualität --- mittlerweile (2021) enthält die Liste der Straßenbaumaßnahmen diesen Eintrag nicht mehr
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
 #: osm_watch: way id="33361741" version="22"
-#: last_checked: 2023-06-03
+#: last_checked: 2024-01-23 (mapillary)
 #: check_frequency: 360d
 Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,26445 3170,26502
 # 
@@ -5623,7 +5625,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10713,15753 10554,15725 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Umsetzung 2022/2023)
-#: last_checked: 2023-10-08
+#: last_checked: 2024-01-23 (mapillary)
 #: check_frequency: 360d
 Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
 # REMOVED --- #: next_check ^^^
@@ -6614,9 +6616,13 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://werkstattverfahren-gbk.berlin.de/beitraege/
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1403950.php
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/rahmenplanentwurf-fuer-das-quartier-am-ehemaligen-gueterbahnhof-wird-vorgestellt_a404901
+#: by: https://www.tagesspiegel.de/berlin/bezirke/vor-allem-grun-und-praktisch-autofrei-so-soll-das-neue-quartier-in-kopenick-aussehen-11101063.html
+#: by: https://www.karresenbrands.com/en/projects/transformation-koepenicker-rails
+#: by: https://www.karresenbrands.com/images/jcogs_img/cache/K_C3_B6penick_Rails_Masterplan_ADEPT-Karres_en_Brands-1180_-_39ada00_-_aa84e75fd287b6d66b57bd675767a3dcbc880560.webp
+#: XXX derzeitige Führung der projektierten Hauptstraße aus dem Karres en Brands-Masterplan entnommen; weitere Quariersstraßen entstehen (autoarm), außerdem ein Weg entlang der Bahnstrecke
 #: last_checked: 2023-09-17
-#: check_frequency: 360d
-Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22796,6118 22777,6151
+#: check_frequency: 720d
+Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23327,5854 23031,5849 23011,6181
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/radstreifen-fuer-die-muehlenstrasse_a234826 ("Maßnahme mit Priorität", kein Datum)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5152
@@ -6682,7 +6688,7 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 # 
 #: XXX bis zur Ende der Legislaturperiode 2021 --- beide Richtungen? Welcher Abschnitt genau?
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8699 (Antrag)
-#: osm_watch: way id="4575442" version="31"
+#: osm_watch: way id="4575442" version="32"
 #: osm_watch: way id="1132078426" version="6"
 #: last_checked: 2023-12-30
 #: check_frequency: 120d
@@ -7466,9 +7472,12 @@ Almazeile: Einziehung von Straßenland geplant	? -1616,18112 -1660,18114
 Thorwaldsenstr.: Sanierung und Verbreiterung der Radwege zwischen Canovastr. und Bergstr. beide Seiten	?::projected 6343,6297 6494,6128 6629,5946 6696,5854
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9084
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240124 (Ampel wird installiert)
+#: source_id: viz2021:13.485931,52.520804,25.01.2024,07:00 (Sperrung nur für Kfz-Verkehr, bis 02.05.2024)
 #: last_checked: 2024-01-04 (mapillary)
-#: check_frequency: 90d
-Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens?) geplant	? 15923,12853 15950,12886 15985,12920
+#: check_frequency: 60d
+#: next_check: 2024-05-02
+Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens) in Bau	?::inwork 15923,12853 15950,12886 15985,12920
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10198
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/AzdpStqlMQmP90NwybjkBOKD7iJp160HGor7mJQU/yPnnLsJc/37-Anlagen/02/vzb0106_VI-B-Plan_10-56-1_Aufstellung.pdf
@@ -8160,7 +8169,7 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 #: source_id: viz2021:13.453804,52.508061,27.09.2023,08:00 (bis 29.11.2023) (bis 01.12.2023) (inaktiv)
 #: priority: #D
 #: note: Masten stehen schon, aber weggedreht, Markierung bislang nur im Radwegbereich
-#: last_checked: 2024-01-23 vvv
+#: last_checked: 2024-01-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 # REMOVED (mittlerweile wird dieser Abschnitt bei infravelo nicht mehr erwähnt) --- Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -8695,6 +8704,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Straßenlandwidmung)
 #: by: https://www.berliner-woche.de/friedenau/c-bauen/richtfest-auf-der-friedenauer-hoehe_a375824
 #: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/friedenau-hier-entstehen-537-wohnungen-id215111
+#: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024)
 #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
@@ -10486,6 +10496,7 @@ Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, gen
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/12-62e/download/12-62e_Bebauungsplanentwurf.pdf (mit Fuß/Radweg)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (Verlängerung der öffentliche Auslegung des Bebauungsplanentwurfs)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_47_4313_4372_online.pdf (Teilung in 12-62aa (größerer Abschnitt im Osten) und 12-62ab (kleiner Abschnitt im Westen))
+#: by: https://www.berliner-woche.de/tegel/c-bauen/das-schumacher-quartier-kann-bisher-nicht-wie-geplant-realisiert-werden_a405450
 #: XXX neue Straßen; aus dem Autobahnzubringer wird vermutlich eine Stadtstraße werden
 #: XXX noch kein Zeitplan
 #: alias: Kurt-Schumacher-Quartier

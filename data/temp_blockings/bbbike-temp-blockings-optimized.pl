@@ -3625,7 +3625,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-01-12 vvv
+#: last_checked: 2024-01-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -3642,7 +3642,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => 1677970800,
          'id' => 3159,
-         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Mitte Januar 2024: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
+         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Ende Januar 2024: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5174,7 +5174,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: by: mapillary
 #: confirmed_by: srt
-#: osm_watch: way id="978727717" version="6"
+#: osm_watch: way id="978727717" version="7"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
 #: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren
 #: last_checked: 2024-01-20
@@ -5954,7 +5954,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-23 (mapillary)
 #: next_check: 2024-01-31
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -6492,7 +6492,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="9"
 	q4::inwork 21889,16817 21925,16981
-#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
+#: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
+#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024)
 #: osm_watch: way id="9030384" version="38"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -6862,6 +6863,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Landgrafenstraße weiterhin?
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landgrafenstra%C3%9Fe-3-6-umbau-hotel.1166/
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=749605#post749605
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1750031927669608944#m (mögliche zusätzliche Einschränkung: Überqueren der Kurfürstenstr. an dieser Stelle möglicherweise nicht mehr möglich)
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
@@ -6984,22 +6986,11 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
-#: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
-	q4::inwork 15055,11505 15016,11431
-# REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
-',
-         'from' => 1705899600,
-         'id' => 4000,
-         'text' => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
-         'type' => 'handicap',
-         'until' => 1706115600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1407667.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/?date=20240123
+#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-vollsperrung-adlergestell-b96a-fur-das-einheben-der-brucke/
 	2::inwork 19472,3922 19335,4067 19226,4183
 ',
          'from' => 1706223600,

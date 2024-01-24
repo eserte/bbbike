@@ -63,7 +63,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 # REMOVED --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2023-11-23
+#: last_checked: 2024-01-23 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 #: valid: -20250102
@@ -361,7 +361,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8333,19305
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-23 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -602,6 +602,7 @@ Mühlenstr.: Bau einer Fußgängerampel, Gegenverkehrsregelung	X::inwork 10670,1745
 Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängerampel	X 12878,12430
 #: note: das Linksabbiegen von Stralauer Platz in die Straße der Pariser Kommune kann länger dauern, zusätzliche Wartezeit auf dem Mittelstreifen nötig
 	X 12497,11459
+#: note: Grüner Pfeil (Gürtelstr. -> Frankfurter Allee, S->O)
 	X 15361,12071
 #: XXX_prog: zusammenhängende Ampelanlage vvv
 #: note: Anforderung für Radfahrer aus der Bornitzstr.
@@ -761,6 +762,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10264,13097
 	X 10341,13376
 	X 10177,13766
+#: note: Grüner Pfeil (Schönhauser Allee -> Torstr., N -> W)
 	X 10741,13685
 	X 10923,13156
 	X 10755,13152
