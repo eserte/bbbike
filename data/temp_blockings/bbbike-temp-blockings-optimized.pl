@@ -4442,7 +4442,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2023-12-16
+#: last_checked: 2024-01-25
 #: check_frequency: 90d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -4994,8 +4994,8 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
 #: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag!
-#: last_checked: 2024-01-06
-#: check_frequency: 30d
+#: last_checked: 2024-01-25
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
@@ -5572,6 +5572,7 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
+#: osm_watch: way id="37861386" version="26"
 #: last_checked: 2023-10-28
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-09
@@ -6159,7 +6160,6 @@ Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 1168
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: osm_watch: way id="37861386" version="26"
 #: last_checked: 2023-10-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
@@ -6168,6 +6168,7 @@ Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 1168
 # REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
 # REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
 # REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
+#: osm_watch: way id="25663270" version="21"
 Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -6418,7 +6419,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: also_indoor: traffic (W)
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-25
 #: next_check: 2024-03-31
 	q3::inwork 7103,11247 7171,11510
 ',
@@ -6518,22 +6519,29 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        {
          'data' => '#: next_check_id: GENDARMENMARKT-2023
+#: by: https://www.berliner-woche.de/mitte/c-bauen/charlottenstrasse-wird-zur-promenade_a403959 (bis Herbst 2024)
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 3
 #: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll?
+#: priority: #A vvv
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? vvv
-#: last_checked: 2024-01-18 vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 14d vvv
+#: next_check: 2024-11-01 vvv
 Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
+Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
+Charlottenstr.	q3::inwork 9523,12019 9509,12117
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
+#: priority ^^^
 ',
          'from' => undef,
          'id' => 3942,
-         'text' => 'Markgrafenstr.: Einbahnstraßenregelung zwischen Mohrenstr. und Jägerstr., offen Richtung Norden, sowie in der Mohrenstr. zwischen Markgrafenstr. und Charlottenstr., offen Richtung Osten',
+         'text' => 'Gendarmenmarkt: rund um den Gendarmenmarkt Einbahnstraßenregelungen (Markgrafenstr., Mohrenstr.) bzw. Sperrung der Fahrbahn (Charlottenstr.)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6550,16 +6558,7 @@ Mohrenstr.	q3::inwork; 9679,11834 9547,11819
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 23015,30519 23113,30450
-',
-         'from' => 1705186800,
-         'id' => 3947,
-         'source_id' => '236001823',
-         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung für alle Verkehrsteilnehmer vom 15.01.2024 bis 24.01.2024',
-         'type' => 'gesperrt',
-         'until' => 1706137200
-       },
+       undef,
        undef,
        undef,
        {
@@ -6643,7 +6642,7 @@ Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
 #: osm_watch: way id="1151064395" version="5"
-#: last_checked: 2024-01-18
+#: last_checked: 2024-01-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
@@ -6720,7 +6719,7 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
        {
          'data' => '#: next_check_id: GROSSBEEREN-2023
 #: also_indoor: traffic (B)
-#: last_checked: 2024-01-07
+#: last_checked: 2024-01-25
 	q3::inwork 9178,10451 9192,10528
 ',
          'from' => undef,
@@ -6829,7 +6828,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q3::inwork 17056,12304 17088,12506
 #: osm_watch: way id="4525429" version="22"
 #: osm_watch: way id="1212493766" version="4"
 #: osm_watch: note 3916787 2
-#: last_checked: 2024-01-19 (mapillary) vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-03-28 vvv
 Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583
@@ -6849,15 +6848,15 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        },
        {
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
-#: last_checked: 2023-12-16
+#: last_checked: 2024-01-25
 #: next_check: 2024-01-31
 	q4::inwork; 6549,11015 6681,10959
 ',
          'from' => 1702731104,
          'id' => 3989,
-         'text' => 'Wichmannstr.: Leitungsarbeiten, Einbahnstraßenregelung zwischen Landgrafenstr. und Keithstr. (auch für Radfahrer), voraussichtlich bis Ende Januar 2024',
+         'text' => 'Wichmannstr.: Leitungsarbeiten, Einbahnstraßenregelung zwischen Landgrafenstr. und Keithstr. (auch für Radfahrer), voraussichtlich bis Ende Januar 2024, vielleicht auch länger',
          'type' => 'handicap',
-         'until' => 1706741999
+         'until' => undef
        },
        {
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Landgrafenstraße weiterhin?
@@ -6867,7 +6866,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-01-14 (webcam)
+#: last_checked: 2024-01-25
 	q4::inwork; 6681,10959 6607,10801
 ',
          'from' => undef,
@@ -6879,7 +6878,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        {
          'data' => '#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
 #: also_indoor: traffic (B)
-#: last_checked: 2023-12-16
+#: last_checked: 2024-01-25
 # REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 ',
@@ -6922,7 +6921,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet?
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-25
 	q4::inwork 8122,12603 8120,12756
 ',
          'from' => undef,
@@ -6974,9 +6973,10 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
+#: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
 #: last_checked: 2024-01-16 (mapillary)
-#: check_frequency: 14d
+#: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
 ',
@@ -6984,13 +6984,15 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'id' => 3999,
          'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis März 2025',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1743436800
        },
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1407667.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/?date=20240123
 #: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-vollsperrung-adlergestell-b96a-fur-das-einheben-der-brucke/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1408754.php
+#: by: https://berliner-abendblatt.de/berlin-news/adlergestell-gesperrt-auch-s-bahn-betroffen-id243125
 	2::inwork 19472,3922 19335,4067 19226,4183
 ',
          'from' => 1706223600,

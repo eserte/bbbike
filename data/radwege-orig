@@ -242,7 +242,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2023-12-16 vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 45d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -305,7 +305,8 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
 	RW1; 12731,10547 12899,10595
-	RW2; 12985,10665 12930,10621 12899,10595 12731,10547
+#: historical_note: früher benutzungspflichtig
+	RW1; 12985,10665 12930,10621 12899,10595 12731,10547
 3m breit, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 13206,10651 13178,10623 13082,10634 13015,10659
 	RW4; 13015,10659 12985,10665
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080786.php (bis Mai 2021) --- #: XXX Verbreiterung der Radstreifen vvv --- #: last_checked: 2021-04-28 vvv --- #: next_check: 2021-05-31 vvv
@@ -337,7 +338,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-01-23 vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -3029,8 +3030,10 @@ unebener Asphalt und Gehwegplatten	RW1; 6367,7356 6389,7196
 	RW4; 6455,8613 6485,8639
 Gehwegplatten mit einigen Unebenheiten	RW1;RW1 7126,9825 7122,9517 7118,9315
 	RW6;RW6 7882,9490 7829,9485
-	RW1;RW1 6998,11003 7086,10979
-	RW3;RW2 7086,10979 7149,10961
+	RW1; 6998,11003 7086,10979
+	RW3; 7086,10979 7149,10961
+Radweg nur aufgemalt	RW1; 7149,10961 7086,10979
+Verbundsteinpflaster	RW1; 7086,10979 6998,11003
 	RW3;RW3 7149,10961 7236,10936 7415,10883 7534,10850 7820,10768
 Radweg nur aufgemalt	RW1; 7517,10775 7487,10643
 Radweg nur aufgemalt	RW1; 7487,10643 7517,10775 7534,10850
@@ -6262,7 +6265,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2023-12-29 vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -7800,7 +7803,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-01-07
+#: last_checked: 2024-01-25
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -8180,7 +8183,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-01-07 vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4; 10871,10322 10708,10312
@@ -8255,7 +8258,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://nitter.net/rbb24/status/1673757428339601408 
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,771277#msg-771277
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
-#: last_checked: 2023-12-16 vvv
+#: last_checked: 2024-01-25 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -8539,7 +8542,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
-#: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024)
+#: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: last_checked: 2023-12-12 (mapillary) vvv
 #: check_frequency: 90d
 #: next_check: 2024-04-30 vvv

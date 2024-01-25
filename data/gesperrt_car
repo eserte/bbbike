@@ -660,11 +660,11 @@ Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7232,16429 7292,16480 726
 Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7292,16480 7393,16566
 Mittelstreifen	3nocross::ignrte 3689,11637 3843,11659 3897,11666
 Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3689,11637 3843,11659 3837,11760
-Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3897,11666 3843,11659 3864,11484
+Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3897,11666 3843,11659 3861,11508
 Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3897,11666
-Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3864,11484
-Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3864,11484 3843,11659 3689,11637
-Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3864,11484 3843,11659 3837,11760
+Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3861,11508
+Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3861,11508 3843,11659 3689,11637
+Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3861,11508 3843,11659 3837,11760
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5883,6519 6071,6559
 Augustenburger Platz: nur für Radfahrer und Anlieger frei	2:Anlieger 6561,15041 6545,15116 6537,15156 6562,15177
 Mittelstreifen	3nocross::ignrte 6561,15041 6528,15000 6504,14969

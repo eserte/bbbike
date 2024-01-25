@@ -208,3 +208,7 @@ Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,69
 Alt-Friedrichsfelde: Umweg über einen asphaltierten Notweg, kurvig	DH:len=34:h=q1,341 19092,11776 19389,11761
 Hansastr.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:tl:len=30 16525,17253 16460,17214 16352,17150
 Hansastr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:tl:len=30 16296,17114 16139,17017 15986,16922
+Bornitzstr.: Umweg über Netto-Parkplatz	DH:len=100 15747,12880 15950,12886 16073,12883
+Bornitzstr.: Umweg über Gehweg/Parkplatz	DH:len=60:h=q3,60 16073,12883 15950,12886 15747,12880
+Ruschestr. -> Bornitzstr.: über Parkplatz/Gehweg	DH:h=q3,60 15912,13153 15950,12886 16073,12883
+Bornitzstr. -> Ruschestr.: über Gehweg/Parkplatz	DH:h=q3,60 16073,12883 15950,12886 15912,13153

@@ -514,4 +514,14 @@ Hansastr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:tl:len=30
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
+#: next_check_id: RUSCHEAMPEL-2024
+#: next_check: 2024-05-02 vvv
+#: valid: -20240502 vvv
+Bornitzstr.: Umweg über Netto-Parkplatz	DH:len=100 15747,12880 15950,12886 16073,12883
+Bornitzstr.: Umweg über Gehweg/Parkplatz	DH:len=60:h=q3,60 16073,12883 15950,12886 15747,12880
+Ruschestr. -> Bornitzstr.: über Parkplatz/Gehweg	DH:h=q3,60 15912,13153 15950,12886 16073,12883
+Bornitzstr. -> Ruschestr.: über Gehweg/Parkplatz	DH:h=q3,60 16073,12883 15950,12886 15912,13153
+#: valid ^^^
+#: next_check ^^^
+# 
 #: temporary ^^^
