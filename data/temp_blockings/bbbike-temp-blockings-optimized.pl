@@ -5516,7 +5516,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: next_check_id: KUESTRINER-2023
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (B) vvv
+#: also_indoor: traffic (B,G) vvv
 #: last_checked: 2023-12-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
@@ -6377,7 +6377,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: next_check_id: WEGAMFLIESSGRABEN-2023
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
-#: last_checked: 2024-01-04 (mapillary)
+#: last_checked: 2024-01-26 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 #: next_check: 2024-06-30
@@ -6445,8 +6445,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
-#: osm_watch: way id="4543441" version="39"
-#: last_checked: 2024-01-08
+#: osm_watch: way id="4543441" version="40"
+#: last_checked: 2024-01-25 (osm)
 #: check_frequency: 120d
 #: next_check: 2024-09-18
 	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
@@ -6909,7 +6909,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G)
 #: last_checked: 2023-12-28
 	q3::inwork 16884,15833 16905,15924
 ',
@@ -6993,6 +6993,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-vollsperrung-adlergestell-b96a-fur-das-einheben-der-brucke/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1408754.php
 #: by: https://berliner-abendblatt.de/berlin-news/adlergestell-gesperrt-auch-s-bahn-betroffen-id243125
+#: source_id: viz2021:13.533121,52.440953,27.01.2024,03:00 (bis 28.01.2024)
 	2::inwork 19472,3922 19335,4067 19226,4183
 ',
          'from' => 1706223600,

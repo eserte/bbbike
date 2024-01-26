@@ -487,8 +487,8 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4928 (zur Kreuzung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/7RNJ1HW9vVAQbCATb1ZtirnGiitEIqAhF8zOymqc/YKQpiXML/54-Anlagen/05/B0827ZB2.pdf (Zwischenbericht, Realisierung der Planung wegen neuer Prüfung nicht möglich)
 #: XXX Maßnahme Pw.1
-#: osm_watch: way id="28961260" version="25"
-#: osm_watch: way id="899453841" version="5"
+#: osm_watch: way id="28961260" version="26"
+#: osm_watch: way id="899453841" version="6"
 #: source_id: 2147339938 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_91391 (möglicherweise inaktiv)
 #: source_id: viz2021:13.47342,52.481225,12.06.2023,09:00 (Kanalsanierung, bis 23.06.2023) (inaktiv)
@@ -2995,10 +2995,11 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: https://www.bahninfo-forum.de/read.php?9,781016,786428#msg-786428 (Fahrbahn gesperrt + man sieht einen gemeinsamen Geh/Radweg)
 #: by: https://www.infravelo.de/projekt/august-froehlich-strasse/ (3. Quartal 2023 - 3. Quartal 2024)
 #: source_id: viz2021:13.5145,52.42382,21.08.2023,07:00 (bis 04.02.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.515018,52.42234,21.08.2023,13:35 (bis 28.04.2024)
 #: osm_watch: note 3852666 3
 #: osm_watch: way id="151742405" version="8"
 #: osm_watch: node id="35215931" version="8"
-#: note: bei rbb bis 28.04.2024 verlängert (go with rbb)
+#: note: bei rbb bis 28.04.2024 verlängert (go with rbb) (viz hat später nachgezogen)
 #: XXX gemeinsamer Rad- und Gehweg auf der westlichen Fahrbahnseite, nicht besonders breit, war an einem Wintersonntag aber auch nicht besonders frequentiert
 #: XXX zweiter Bauabschnitt (bis 16.07.2024): Bau einer Ampel am südlichen Ende
 #: last_checked: 2024-01-21
@@ -5314,6 +5315,8 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: osm_watch: note 3820152 3
+#: osm_watch: node id="6543227539" version="3"
+#: osm_watch: node id="6543227540" version="3"
 #: priority: #D
 #: last_checked: 2023-12-14 (Masten stehen schon, noch keine Fahrbahnmarkierungen)
 #: check_frequency: 45d
@@ -6707,7 +6710,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: osm_watch: way id="1049317376" version="1"
 #: osm_watch: way id="1049317377" version="2"
 #: osm_watch: way id="1049317378" version="3"
-#: osm_watch: note 3115482 2
+#: osm_watch: note 3115482 3
 #: last_checked: 2023-05-21 (bahninfo-forum)
 #: next_check: 2024-06-01
 Mauerweg: Untertunnelung der Dresdener Bahn	?::inwork 10474,-3186 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
@@ -7370,12 +7373,14 @@ Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 110
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_01_0001_0140_online.pdf (Einziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_09_0853_0928_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_01_0001_0064_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_04_0165_0236_online.pdf (Klage)
 #: XXX Bleibt dieses Stück noch öffentlich befahrbar? (vermutlich ja)
 #: XXX Privatstraße
 #: osm_watch: way id="156418480" version="15"
 #: priority: #C
 #: last_checked: 2023-09-23
-#: check_frequency: 60d
+#: check_frequency: 360d
+# REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-03-11
 Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173,-571 16187,-565
 # 
@@ -8125,14 +8130,17 @@ Kaulsdorfer Galgen: wird der Gehweg für Radfahrer freigegeben?	? 22842,12070 226
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1386450.php (Markierungsarbeiten ab KW 47/2023, kein Endedatum)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/arbeiten-am-karl-august-platz_a400200
+#: source_id: viz2021:13.303277,52.510619,26.01.2024,07:00 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 01.03.2024)
 #: osm_watch: way id="1102937734" version="8"
 #: osm_watch: way id="821100848" version="12"
 #: osm_watch: way id="4475785" version="29"
+#: osm_watch: note 4087656 1
 #: last_checked: 2024-01-25 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2023-12-16
+#: next_check: 2024-03-01 vvv
 Schillerstr.: verkehrsberuhigter Bereich wird erweitert	?::inwork 3988,11502 3864,11484 3717,11462 3571,11451 3522,11447
 Sesenheimer Str.: verkehrsberuhigter Bereich ragt hier noch rein	?::inwork 3864,11484 3861,11508
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -10097,6 +10105,7 @@ An der Streuobstwiese: hier entsteht eine neue Straße; genaue Lage, Qualität?	?:
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/studie-zum-neuen-stadtbad-online_a402291
 #: by: https://www.deutsches-architekturforum.de/thread/13856-neue-mitte-tempelhof/?postID=753259#post753259 (Baubeginn vrsl. ab 2028)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9106 (Mitteilung zur Kenntnisnahme)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_04_0165_0236_online.pdf (Bebauungsplanentwurf 7-82a)
 #: last_checked: 2023-12-30
 #: next_check: 2028-01-01
 Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grünflächen?	?::projected 9321,6450 9274,6138 9635,6089 9667,6418 9321,6450
@@ -10132,8 +10141,8 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: osm_watch: way id="1143169552" version="6"
 #: osm_watch: way id="1239977586" version="1"
 #: add_fragezeichen: Sind die Straßen fertiggestellt? vvv
-#: last_checked: 2023-12-27 (daf) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2024-01-26 (mapillary) vvv
+#: check_frequency: 90d vvv
 #: next_check: 2024-06-30 vvv
 Marianne-Foerster-Str.: zurzeit Baustraße, wie wird die Qualität nach der Fertigstellung sein?	?::inwork 12257,18649 12381,18897
 Beate-Hahn-Str.: zurzeit Baustraße, wie wird die Qualität nach der Fertigstellung sein?	?::inwork 12363,18596 12481,18838
