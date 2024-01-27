@@ -999,6 +999,13 @@ Adolf-Wermuth-Allee	1 17640,8627 17659,8698
 Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
 entlang des Rewe-Supermarkts	1 21163,15289 21263,15291 21350,15292 21361,15270
 entlang des Rewe-Supermarkts	1 21361,15270 21262,15271 21195,15271 21163,15289
+Mittelstreifen	3nocross::ignrte 23451,4877 23449,4894 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
+Salvador-Allende-Str. -> An der Müggelspree: Mittelstreifen	3::igndisp 23443,4942 23447,4906 23462,4906
+Salvador-Allende-Str. -> An der Müggelspree: Mittelstreifen	3::igndisp 23449,4894 23447,4906 23420,4930
+An der Müggelspree -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23462,4906 23447,4906 23449,4894
+An der Müggelspree -> An der Müggelspree: Mittelstreifen	3::igndisp 23462,4906 23447,4906 23420,4930
+An der Müggelspree -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23420,4930 23447,4906 23443,4942
+An der Müggelspree -> An der Müggelspree: Mittelstreifen	3::igndisp 23420,4930 23447,4906 23462,4906
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172

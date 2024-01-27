@@ -297,7 +297,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-27
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1002,7 +1002,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2024-01-04 (mapillary)
+#: last_checked: 2024-01-26 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1141,7 +1141,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-26 (mapillary)
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1379,13 +1379,15 @@ Hönower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
 Splanemannstr.: Asphalt	Q0 18411,10037 18397,9928 18305,9951
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8738 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
-Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937
+Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647
+Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252
+Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21569,7252 21590,7211 21896,6937
 #: next_check_id: KAULSDORFER-2023
 #: XXX evtl. wird der Asphalt nach der Sperrung besser sein?
-#: last_checked: 2023-08-28
+#: last_checked: 2024-01-27
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-02-29
-Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21896,6937 21976,6848 22050,6619
+Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1+ 21896,6937 21976,6848 22050,6619
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
 # REMOVED (nein, hier passiert vorerst nichts, siehe 2. URL) --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_30.pdf?start&ts=1397460445&file=mdv_vii_30.pdf (Sanierung 2015)
@@ -2314,7 +2316,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="16"
 #: osm_watch: way id="640883366" version="5"
-#: last_checked: 2023-12-07
+#: last_checked: 2024-01-27
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -13069,7 +13071,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17640,8627
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2023-12-26 (mapillary)
+#: last_checked: 2024-01-27
 #: check_frequency: 30d
 Irmtraud-Morgner-Str.: Asphalt, letzte Deckschicht fehlt	Q1- 17521,8549 17619,8558
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -13316,7 +13318,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 15151,10699 15220,10682
 Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 15200,10600
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-01-21 vvv
+#: last_checked: 2024-01-27 vvv
 #: check_frequency: 60d vvv
 Ulrich-Plenzdorf-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 14994,10732 15071,10716 15151,10699
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
@@ -13429,6 +13431,9 @@ Seefelder Str.: Beton	Q0- 17184,16149 17183,16181
 Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,17092 17902,17074
 # 
 (Brandenburgische Str. - Albrechtstr.): Gehwegplatten	Q0- 6629,4361 6617,4324
+# 
+(An der Müggelspree - Salvador-Allende-Str., Westseite): Asphalt	Q0 23409,5035 23420,4930 23447,4906
+(An der Müggelspree): Asphalt	Q0 23461,5054 23409,5035
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16338,7 +16343,7 @@ Braillestr.: Asphalt	Q0 4516,5194 4477,5250 4430,5324
 #: by: maja wegener: vvv
 #: next_check_id: WANDLITZ-2021
 #: XXX Asphaltierungsarbeiten, möglicherweise bessere Qualität?
-#: last_checked: 2023-12-22
+#: last_checked: 2024-01-27
 #: next_check: 2024-01-31
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
 Wandlitzstr.: Asphalt mit einigen Schäden	Q1+ 18704,8427 18627,8475

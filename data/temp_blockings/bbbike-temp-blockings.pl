@@ -34578,8 +34578,8 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2023-11-18
-#: check_frequency: 180d
+#: last_checked: 2024-01-23 (okas)
+#: check_frequency: 120d
 	2::inwork 9699,-600 9562,-619
 EOF
      },
@@ -38891,7 +38891,7 @@ EOF
      },
      { from  => 1683064800, # 2023-05-03 00:00
        until => undef, # $isodate2epoch->("2023-12-04 23:59:59"), # 1689606000, # 2023-07-17 17:00
-       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Dezember 2023, evtl. auch länger',
+       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Februar 2024, evtl. auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KAULSDORFER-2023
@@ -38903,13 +38903,13 @@ EOF
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: add_fragezeichen: Ist die Fahrbahn der Birnbaumer Straße noch immer wegen Bauarbeiten gesperrt? vvv
 #: osm_watch: way id="54269295" version="15"
-#: last_checked: 2023-10-09 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2023-12-04 vvv
+#: last_checked: 2024-01-27 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2024-02-29 vvv
 # REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: XXX ^^^
@@ -40212,7 +40212,7 @@ EOF
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: last_checked: 2023-10-28 vvv
+#: last_checked: 2024-01-27 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 # REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -40249,13 +40249,16 @@ EOF
 #: confirmed_by: srt
 #: note: mittlerweile auch in einer VIZ-Verkehrsmeldung erwähnt; laut Aushang Vollsperrung für 6 bis 9 Monate
 #: priority: #A vvv
-#: last_checked: 2023-10-09 vvv
+#: last_checked: 2024-01-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-02-29 vvv
 #: osm_watch: way id="217297577" version="8"
 Brücke	2::inwork 22027,6608 22050,6619
+#: osm_watch: way id="1108978301" version="3"
+Birnbaumer Str.	2::inwork 22050,6619 22093,6630
 #: osm_watch: way id="30823827" version="16"
-Wuhlewanderweg	2::inwork 22050,6619 21976,6848 21896,6937
+Wuhlewanderweg	2::inwork 22050,6619 21976,6848
+# REMOVED (Sperrung erst kurz vor der Brücke) --- Wuhlewanderweg	2::inwork 21976,6848 21896,6937
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -40473,7 +40476,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,790304#msg-790304 (Verlängerung bis 08.07.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
-#: last_checked: 2024-01-21 vvv
+#: last_checked: 2024-01-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -41086,11 +41089,11 @@ EOF
        text  => 'Wallensteinstr.: ab Ilsestr. etwa 70m der Fahrbahn Richtung Nordwesten gesperrt, voraussichtlich bis Ende Januar 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,B,W)
+#: also_indoor: traffic (G,ex-B,W)
 #: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
 #: note: Halteverbotsschilder bis 30.01.2024
 #: note: mittlerweile (21.1.2024) sieht es so aus, als ob der Termin gehalten werden kann
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-27
 #: check_frequency: 30d
 #: next_check: 2024-01-30
 	q2::inwork; 18037,9195 17549,9529
@@ -41178,7 +41181,7 @@ EOF
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2023-12-22 vvv
+#: last_checked: 2024-01-27 vvv
 #: next_check: 2024-01-31 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
@@ -41805,6 +41808,8 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1408754.php
 #: by: https://berliner-abendblatt.de/berlin-news/adlergestell-gesperrt-auch-s-bahn-betroffen-id243125
 #: source_id: viz2021:13.533121,52.440953,27.01.2024,03:00 (bis 28.01.2024)
+#: source_id: viz2021:13.535154,52.439667,27.01.2024,03:00 (bis 28.01.2024)
+#: source_id: viz2021:13.529303,52.443437,27.01.2024,03:00 (bis 28.01.2024)
 	2::inwork 19472,3922 19335,4067 19226,4183
 EOF
      },
