@@ -735,7 +735,7 @@ sub append {
 
 sub get {
     my($self, $pos) = @_;
-    return [undef, [], undef] if $pos < 0;
+    do { require Carp; Carp::cluck("negative index ($pos) in get"); return [undef, [], undef] } if $pos < 0;
     my $line = $self->{Data}->[$pos];
     parse($line);
 }

@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 51;
+my $basic_tests = 59;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -123,6 +123,23 @@ Mehringdamm	HH 9222,8787 9227,8890 9235,9051 9248,9350 9280,9476 9334,9670 9387,
 EOF
     my $s = Strassen->new_from_data_string($data);
     is(scalar @{$s->data}, 3, "Constructing from string data");
+    {
+	my $rec = $s->get(0);
+	is($rec->[Strassen::NAME], 'Dudenstr.', 'get on first record, check name');
+	is($rec->[Strassen::CAT], 'H', 'get on first record, check category');
+	like($rec->[Strassen::COORDS]->[0], qr{^-?\d+,-?\d+$}, 'get on first record, check first coordinate');
+    }
+    is($s->get(2)->[Strassen::NAME], 'Mehringdamm', 'get on another record');
+    {
+	my @w; local $SIG{__WARN__} = sub { push @w, @_ };
+	{
+	    local $TODO = "Currently negative indices are not implemented";
+	    is_deeply($s->get(-1), $s->get(2), 'negative index should count from end');
+	}
+	like "@w", qr{\Qnegative index (-1) in get};
+    }
+    is_deeply($s->get(4), [undef,[],undef], 'get past end');
+    is(scalar @{$s->data}, 3, 'data length unchanged after get past end');
 }
 
 {
