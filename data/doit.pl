@@ -37,6 +37,8 @@ my $persistenttmpdir = "$bbbikedir/tmp";
 my $datadir          = "$bbbikedir/data";
 my $bbbikeauxdir     = do { my $dir = "$ENV{HOME}/src/bbbike-aux"; -d $dir && $dir };
 
+chdir $datadir or die "Can't chdir to $datadir: $!";
+
 my $convert_orig_file  = "$miscsrcdir/convert_orig_to_bbd";
 my @convert_orig       = ($perl, $convert_orig_file);
 my @grepstrassen       = ($perl, "$miscsrcdir/grepstrassen");
@@ -46,7 +48,11 @@ my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
 my @check_double       = ($perl, "$miscsrcdir/check_double");
 my @check_connected    = ($perl, "$miscsrcdir/check_connected");
 
-my @orig_files = bsd_glob("$datadir/*-orig");
+my @orig_files = bsd_glob("*-orig");
+my @fragezeichen_lowprio_bbd = defined $bbbikeauxdir ? "$bbbikeauxdir/bbd/fragezeichen_lowprio.bbd" : ();
+#my @additional_sourceid_files = ('routing_helper-orig', @fragezeichen_lowprio_bbd); # XXX use once everything is migrated to doit.pl
+my @additional_sourceid_files;
+my @source_targets_sources;
 
 sub _need_rebuild ($@) {
     my($dest, @srcs) = @_;
@@ -133,6 +139,27 @@ sub _repeat_on_changing_sources {
 	    }
 	    last;
 	}
+    }
+}
+
+{
+    my %done;
+    sub _set_make_variable {
+	my($d, $varref, $makevar) = @_;
+	last if $done{$makevar};
+	require BBBikeBuildUtil;
+	my $pmake = BBBikeBuildUtil::get_pmake(canV => 1);
+	chomp(my $varline = $d->info_qx({quiet=>1}, $pmake, "-V$makevar"));
+	@$varref = split /\s+/, $varline;
+	$done{$makevar} = 1;
+    }
+    sub _set_variable_source_targets_sources {
+	my($d) = @_;
+	_set_make_variable($d, \@source_targets_sources, 'SOURCE_TARGETS_SOURCES');
+    }
+    sub _set_variable_additional_sourceid_files {
+	my($d) = @_;
+	_set_make_variable($d, \@additional_sourceid_files, 'ADDITIONAL_SOURCEID_FILES');
     }
 }
 
@@ -402,6 +429,28 @@ sub action_fragezeichen_nextcheck_without_osm_watch_org {
     _build_fragezeichen_nextcheck_variant($d, $dest);
 }
 
+sub action_sourceid {
+    my $d = shift;
+    _set_variable_source_targets_sources($d);
+    _set_variable_additional_sourceid_files($d);
+
+    for my $variant_def (
+        ["sourceid-all.yml",     "bbbike-temp-blockings.bbd"],
+        ["sourceid-current.yml", "bbbike-temp-blockings-optimized.bbd"],
+    ) {
+	my($dest_base, $temp_blockings_base) = @$variant_def;
+	my $dest = "$persistenttmpdir/$dest_base";
+	my @srcs = ("$persistenttmpdir/$temp_blockings_base", @source_targets_sources, @additional_sourceid_files);
+	if (_need_rebuild $dest, @srcs) {
+	    _repeat_on_changing_sources(sub {
+	        $d->run([$perl, "$miscsrcdir/bbd_to_sourceid_exists", @srcs], '>', "$dest~");
+		_empty_file_error "$dest~";
+		_commit_dest $d, $dest;
+	    }, \@srcs);
+	}
+    }
+}
+
 ######################################################################
 
 sub action_old_bbbike_data {
@@ -610,7 +659,7 @@ sub action_last_checked_vs_next_check {
     require Strassen::Core;
     binmode STDERR, ":utf8"; # XXX "localize" change?
     my $fails = 0;
-    for my $f (bsd_glob("$datadir/*-orig"), "$persistenttmpdir/bbbike-temp-blockings.bbd") {
+    for my $f (bsd_glob("*-orig"), "$persistenttmpdir/bbbike-temp-blockings.bbd") {
 	print STDERR "$f... ";
 	my $file_fails = 0;
 	Strassen->new_stream($f)->read_stream
@@ -721,6 +770,7 @@ sub action_all {
     action_fragezeichen_nextcheck_bbd($d);
     action_fragezeichen_nextcheck_home_home_org($d);
     action_fragezeichen_nextcheck_without_osm_watch_org($d);
+    action_sourceid($d);
 }
 
 return 1 if caller;
