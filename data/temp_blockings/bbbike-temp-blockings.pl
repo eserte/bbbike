@@ -27347,7 +27347,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::bomb 5472,8024 5363,8024
-	2::bomb 5501,8253 5573,8197 5631,8141 5632,8024 5630,7875
+	2::bomb 5501,8253 5560,8204 5631,8141 5632,8024 5630,7875
 	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5812,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
 	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
 	2::bomb 5570,7939 5570,8024 5522,8024
@@ -27355,7 +27355,7 @@ EOF
 	2::bomb 6333,7708 6352,7523
 	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
 	2::bomb 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
-	2::bomb 5573,8197 5520,8132 5522,8024 5472,8024 5471,7915
+	2::bomb 5560,8204 5519,8159 5521,8087 5522,8024 5472,8024 5471,7915
 	2::bomb 5660,8366 5652,8234 5651,8218 5631,8141 5808,8124 5801,8031 5697,8027 5632,8024 5570,8024
 	2::bomb 5808,8124 5909,8184 6003,8120
 	2::bomb 6409,8026 6373,8083 6341,8174 6313,8254
@@ -32629,7 +32629,7 @@ EOF
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-12-09
+#: last_checked: 2024-01-28
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -35408,20 +35408,20 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., aber Fahrbahn ist bereits befahrbar (Stand Mitte Januar 2024)',
+       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Fuldastr., Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Ende Januar 2024)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: osm_watch: way id="940399849" version="10"
-#: osm_watch: way id="1203072585" version="2"
-#: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2024-01-13
-#: check_frequency: 14d
+#: osm_watch: way id="36738527" version="44"
+#: osm_watch: note 4090527 1
+#: last_checked: 2024-01-28
+#: check_frequency: 60d
+zwischen Wildenbruchstr. und Fuldastr.	q3::inwork 13033,8628 12881,8750 12740,8862
 # REMOVED --- #: next_check: 2023-07-31
+# REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: note: eigentlich q3-::inwork
-zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
@@ -37539,7 +37539,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-28
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -39722,7 +39722,7 @@ EOF
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2024-01-19 vvv
+#: last_checked: 2024-01-28 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-02-16 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -40730,7 +40730,7 @@ EOF
      },
      { from  => 1695550500, # 2023-09-24 12:15
        dont_check_date => 1, until => undef, # XXX
-       text  => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15 bis mindestens 12.01.2024, vermutlich länger',
+       text  => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, Ende der Sperrung unbekannt', # vom 25.09.2023 12:15 bis mindestens 12.01.2024, vermutlich länger',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.315607,52.487267,25.09.2023,12:15 (geplatzte Wasserleitung, ohne Endedatum) (inaktiv)
@@ -40740,9 +40740,9 @@ EOF
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
 #: note: bei rbb weiterhin gelistet, nun ohne Endedatum
 #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
-#: last_checked: 2023-10-21
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2024-01-12
+#: last_checked: 2024-01-28
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-01-12
 # REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
 	q4::inwork 4449,8999 4451,8874
 EOF
@@ -41403,13 +41403,12 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1706449967, # undef, # XXX
        text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GROSSBEEREN-2023
-#: also_indoor: traffic (B)
-#: last_checked: 2024-01-25
+# REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25
 	q3::inwork 9178,10451 9192,10528
 EOF
      },
@@ -41681,7 +41680,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-28
 # REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 EOF
@@ -41807,9 +41806,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-vollsperrung-adlergestell-b96a-fur-das-einheben-der-brucke/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1408754.php
 #: by: https://berliner-abendblatt.de/berlin-news/adlergestell-gesperrt-auch-s-bahn-betroffen-id243125
-#: source_id: viz2021:13.533121,52.440953,27.01.2024,03:00 (bis 28.01.2024)
-#: source_id: viz2021:13.535154,52.439667,27.01.2024,03:00 (bis 28.01.2024)
-#: source_id: viz2021:13.529303,52.443437,27.01.2024,03:00 (bis 28.01.2024)
+#: source_id: viz2021:13.533121,52.440953,27.01.2024,03:00 (bis 28.01.2024) (inaktiv)
+#: source_id: viz2021:13.535154,52.439667,27.01.2024,03:00 (bis 28.01.2024) (inaktiv)
+#: source_id: viz2021:13.529303,52.443437,27.01.2024,03:00 (bis 28.01.2024) (inaktiv)
 	2::inwork 19472,3922 19335,4067 19226,4183
 EOF
      },

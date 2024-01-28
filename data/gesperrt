@@ -1006,6 +1006,9 @@ An der Müggelspree -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23462,490
 An der Müggelspree -> An der Müggelspree: Mittelstreifen	3::igndisp 23462,4906 23447,4906 23420,4930
 An der Müggelspree -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23420,4930 23447,4906 23443,4942
 An der Müggelspree -> An der Müggelspree: Mittelstreifen	3::igndisp 23420,4930 23447,4906 23462,4906
+Mittelstreifen	3nocross::ignrte 5472,8024 5522,8024 5570,8024
+Wexstr. -> Bruchsaler Str.: Mittelstreifen	3::igndisp 5472,8024 5522,8024 5521,8087
+Bruchsaler Str. -> Wexstr.: Mittelstreifen	3::igndisp 5521,8087 5522,8024 5570,8024
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3456,7 +3459,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
-Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8024 5520,8132 5573,8197
+Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8024 5521,8087
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19

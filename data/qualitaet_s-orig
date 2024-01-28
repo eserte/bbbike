@@ -193,7 +193,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-28
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -205,7 +205,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2024-01-25 vvv
+#: last_checked: 2024-01-28 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -361,7 +361,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.deutsches-architekturforum.de/thread/6974-gasometer-sch%C3%B6neberg-euref-campus/?postID=752087#post752087 (Umbauarbeiten)
 #: osm_watch: way id="306702294" version="20"
 # REMOVED (closed) --- #: osm_watch: note 4003302 1
-#: last_checked: 2023-12-30 vvv
+#: last_checked: 2024-01-28 vvv
 #: check_frequency: 30d vvv
 #: historical_note: früher (bis Herbst/Winter 2023): mäßiges, teils schlechtes Kopfsteinpflaster, bergab waren 17 km/h möglich, Q3 bzw Q3+
 Torgauer Str.: Asphalt, letzte Deckschicht fehlt	Q1+ 7225,8219 7158,8208 7014,8165 7001,8161
@@ -13039,7 +13039,7 @@ Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10250,9233
 #: next_check_id: BERGMANN-2023
 #: XXX Schäden vor allem am Fahrbahnrand, wo man nun fahren muss, in der Fahrbahnmitte wäre es Q0-
-#: last_checked: 2024-01-13
+#: last_checked: 2024-01-28
 #: check_frequency: 120d
 Bergmannstr.: Asphalt mit Schäden	Q1+ 10250,9233 10366,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige leichte Schäden, Q0-
@@ -15114,7 +15114,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="22"
-#: last_checked: 2023-12-26
+#: last_checked: 2024-01-28
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -30368,8 +30368,8 @@ Penzberger Str.: Asphalt	Q0 6231,9461 6351,9464
 Nordsternstr.: Kleinsteinpflaster	Q1- 6292,8899 6268,8884 6249,8846 6241,8798
 #: confirmed_by: srt
 Prinz-Georg-Str.: Kopfsteinpflaster	Q2 7012,8511 7104,8413
-#: confirmed_by: srt
-Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8024
+#: corrected_by: srt (Q2 -> Q2-)
+Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2- 5560,8204 5519,8159 5521,8087 5522,8024
 #: confirmed_by: srt
 Bernhardstr.: Asphalt	Q0 5570,8024 5570,7939
 #: confirmed_by: srt
@@ -32844,7 +32844,7 @@ Einmündungsbereich asphaltiert	Q0 6775,12661
 Einmündungsbereich asphaltiert	Q0 8872,5484
 Einmündungsbereich asphaltiert	Q0 4954,8454
 Einmündungsbereich asphaltiert	Q0 5501,8253
-Einmündungsbereich asphaltiert	Q0 5573,8197
+Einmündungsbereich asphaltiert	Q0 5560,8204
 Kreuzungsbereich asphaltiert	Q0 12478,7878
 Einmündungsbereich asphaltiert	Q0 12446,8032
 Einmündungsbereich asphaltiert	Q0 9535,13801

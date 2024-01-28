@@ -408,8 +408,10 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 12590,8977 12740,8862
 	RW1;RW1 12740,8862 12881,8750 13033,8628
 #: next_check_id: WESER-2021
-#: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!)
-#: last_checked: 2024-01-13
+#: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen
+#: osm_watch: way id="940399849" version="10"
+#: osm_watch: way id="1203072585" version="2"
+#: last_checked: 2024-01-28
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -552,12 +554,17 @@ Bushaltestelle	RW0; 5905,9795 5941,9787
 #: note: Nachodstr./Hohenstaufenstr. Richtung Westen
 	RW1; 6753,9814 6632,9792 6492,9782 6237,9772 6209,9773 6096,9772 5988,9776 5941,9787 5905,9795 5725,9846 5487,9864 5467,9866
 # 
-	RW1;RW1 5467,9866 5435,9859 5219,9808 5139,9777 5069,9735 4976,9670
+Gehwegplatten	RW1; 5467,9866 5435,9859 5219,9808
+Verbundsteinpflaster	RW1; 5219,9808 5139,9777
+Gehwegplatten	RW1; 5139,9777 5069,9735 4976,9670
+	RW1; 4976,9670 5069,9735 5139,9777
+	RW1; 5139,9777 5219,9808 5435,9859 5467,9866
 teilweise Radweg auf der Fahrbahn hinter den parkenden Autos, Asphalt mit einigen Schäden	RW1;RW1 4976,9670 4858,9594 4699,9505 4657,9481 4601,9449 4517,9401
-	RW1;RW1 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085
+Verbundsteinpflaster	RW1; 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085
+	RW1; 3919,9085 3981,9117 4096,9175 4224,9241 4342,9301 4415,9343 4507,9395 4517,9401
 #: note: Straßenbäume sind Platanen
 Verbundsteinpflaster, Wurzelhebungen	RW1; 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3521,9059
-	RW1; 3521,9059 3688,9051 3760,9052 3816,9052 3831,9052 3919,9085
+Verbundsteinpflaster	RW1; 3521,9059 3688,9051 3760,9052 3816,9052 3831,9052 3919,9085
 	RW1;RW1 3521,9059 3467,9045
 	RW1;RW2 3467,9045 3427,9010 3379,8969
 	RW1; 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754
@@ -1259,7 +1266,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2024-01-21 vvv
+#: last_checked: 2024-01-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1290,7 +1297,7 @@ Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
 	RW3; 7566,14404 7532,14446 7487,14472 7401,14526
 Fahrradschleuse	RW3; 7401,14526 7368,14573
 #: note: Radfahrer haben Richtung Süden zwei Möglichkeiten: auf dem Radweg bleiben und eine zusätzliche Ampel über die Rechtsabbiegespur in Kauf nehmen; oder auf der Fahrbahn bleiben, hier gibt es eine für Radfahrer freigegebene Busspur (und unsinnigerweise in Höhe des Mittelstreifens eine Benutzungspflicht für den Radweg)
-	RW1; 6532,10529 6494,10440
+Verbundsteinpflaster	RW1; 6532,10529 6494,10440
 	RW2; 6494,10440 6532,10529
 	RW3;RW4 3427,9771 3469,9807
 	RW3;RW3 3469,9807 3587,9905 3605,9929 3701,10047 3741,10097
@@ -1786,7 +1793,8 @@ Gehwegplatten	RW1; 4295,13234 4237,13231 4214,13230 4100,13224 3967,13218 3711,1
 Verbundsteinpflaster	RW1; 5166,13087 5328,13019
 #: historical_note: früher RW2
 Verbundsteinpflaster	RW1; 5328,13019 5166,13087
-	RW1;RW1 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351 5898,10318 5764,10322 5686,10350 5520,10453 5458,10443
+Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351 5898,10318 5764,10322 5686,10350 5520,10453 5458,10443
+	RW1; 5458,10443 5520,10453 5686,10350 5764,10322 5898,10318 6020,10351 6147,10383 6276,10401 6403,10424 6494,10440
 	RW2; 4555,6403 4423,6477
 # 
 #: note: Gallwitzallee
@@ -2274,17 +2282,17 @@ laut Schild sollen Radfahrer Richtung Urbanstr. auch diesen Weg nehmen	RW2; 1190
 Busspur ist immer gültig	RW5; 6494,10440 6487,10277 6499,10086 6504,9961 6504,9865 6492,9782 6447,9661 6445,9538 6445,9432 6446,9328 6440,9192 6442,9068 6445,8949 6445,8934 6449,8845 6449,8807 6460,8688
 #: note: früher (bis 2019?): Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr
 Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 6442,9068 6440,9192 6446,9328 6445,9432 6445,9538 6447,9661 6492,9782 6504,9865 6504,9961 6499,10086 6487,10277
-	RW1;RW1 5463,9961 5700,10226
+	RW1; 5463,9961 5700,10226
 	RW2; 5700,10226 5764,10322
 	RW3; 5866,10492 5808,10396
-Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226
+Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2023-10-29
+#: last_checked: 2024-01-28
 #: check_frequency: 90d
 #: next_check: 2024-05-31
 #	RW3; 5764,10322 5808,10396
@@ -2898,7 +2906,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2024-01-19
+#: last_checked: 2024-01-28
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4370,12 +4378,17 @@ Gehweg für Radfahrer frei	RW1; 18737,18380 18811,18404 18922,18436 18969,18448 1
 	RW2; 18657,18358 18601,18342
 gemeinsamer Geh- und Radweg	RW2; 18601,18342 18657,18358 18737,18380
 	RW2;RW2 18601,18342 18530,18327 18196,18254
+# 
+#: note: Hildegardstr., Richtung Westen
 #: note: abschnittsweise aufgemalter Radweg, kaum noch erkennbar
 	RW1; 5399,8344 5372,8357 5171,8356
 	RW1; 5171,8356 5053,8355 4958,8355 4874,8354 4778,8354
-	RW1; 4778,8354 4874,8354 4958,8355 5053,8355 5171,8356
-#: note: abschnittsweise aufgemalter Radweg, kaum noch erkennbar
-	RW1; 5171,8356 5372,8357 5399,8344
+#: note: Hildegardstr., Richtung Osten
+Verbundsteinpflaster, schmal	RW1; 4778,8354 4874,8354 4958,8355 5053,8355
+aufgemalter Radweg	RW1; 5053,8355 5171,8356
+ehemals aufgemalter Radweg, nur an wenigen Stellen noch erkennbar	RW0; 5171,8356 5372,8357
+Verbundsteinpflaster	RW1; 5372,8357 5399,8344
+# 
 Radspur mit Bushaltestelle	RW3; 4769,8563 4768,8608
 auf der Fahrbahn hinter den parkenden Autos	RW1; 4768,8608 4777,8742 4778,8784
 auf der Fahrbahn hinter den parkenden Autos	RW1; 4778,8784 4777,8742 4768,8608
@@ -5545,7 +5558,7 @@ neu asphaltiert	RW1; 5376,8104 5363,8170
 Verbundsteinpflaster	RW1; 5363,8170 5354,8236 5399,8344 5433,8407 5476,8521 5498,8598 5503,8709 5494,8843 5492,8982
 	RW1; 5492,8982 5483,9262 5479,9367 5477,9621 5467,9866
 	RW2; 5467,9866 5464,9934 5463,9961
-	RW2; 5463,9961 5461,9923 5467,9866
+Verbundsteinpflaster	RW2; 5463,9961 5461,9923 5467,9866
 Bushaltestelle	RW5; 5463,9961 5460,10055
 	RW1; 5460,10055 5458,10120 5450,10338 5458,10443
 	RW1; 5458,10443 5450,10338 5458,10120 5460,10055 5463,9961
@@ -6003,7 +6016,7 @@ Grünbeschichtung	RW3; 5370,6486 5424,6584 5533,6753 5604,6870
 #: osm_watch: way id="133988476" version="25"
 #: osm_watch: way id="1122482150" version="8"
 #: osm_watch: note 4082305 2
-#: last_checked: 2023-12-26
+#: last_checked: 2024-01-28
 #: check_frequency: 30d
 #: next_check: 2024-03-31
 	RW0;RW0 5630,7875 5632,8024
@@ -7803,7 +7816,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-28
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -8183,14 +8196,16 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-01-25 vvv
+#: last_checked: 2024-01-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4; 10871,10322 10708,10312
 #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle, Radfahrer überholen verboten
 	RW0; 10708,10312 10605,10312
 provisorischer Radstreifen	RW4; 10605,10312 10708,10312 10871,10322
-provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303 10122,10294
+provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303
+#: historical_note: früher provisorisch geschützter Radstreifen, mittlerweile Engstelle (etwa 120m), Radfahrer überholen verboten
+	RW0; 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 10363,10303 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294

@@ -3962,7 +3962,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2023-12-09
+#: last_checked: 2024-01-28
 #: check_frequency: 120d
 #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
@@ -4629,18 +4629,18 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
          'data' => '#: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: osm_watch: way id="940399849" version="10"
-#: osm_watch: way id="1203072585" version="2"
-#: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng
-#: last_checked: 2024-01-13
-#: check_frequency: 14d
+#: osm_watch: way id="36738527" version="44"
+#: osm_watch: note 4090527 1
+#: last_checked: 2024-01-28
+#: check_frequency: 60d
+zwischen Wildenbruchstr. und Fuldastr.	q3::inwork 13033,8628 12881,8750 12740,8862
 # REMOVED --- #: next_check: 2023-07-31
+# REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: note: eigentlich q3-::inwork
-zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Innstr., aber Fahrbahn ist bereits befahrbar (Stand Mitte Januar 2024)',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Fuldastr., Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Ende Januar 2024)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5238,7 +5238,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-28
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6015,7 +6015,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2024-01-19 vvv
+#: last_checked: 2024-01-28 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-02-16 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -6401,16 +6401,16 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: gesperrter Fahrbahnbereich ist etwa 45m lang (längere Strecke, wenn man bis zur nächsten Bordsteinabsenkung fährt)
 #: note: bei rbb weiterhin gelistet, nun ohne Endedatum
 #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
-#: last_checked: 2023-10-21
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2024-01-12
+#: last_checked: 2024-01-28
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-01-12
 # REMOVED (hier wohl nicht) ---	2::inwork 4467,9163 4446,9138 4447,9082 4449,8999
 	q4::inwork 4449,8999 4451,8874
 ',
          'dont_check_date' => 1,
          'from' => 1695550500,
          'id' => 3922,
-         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, vom 25.09.2023 12:15 bis mindestens 12.01.2024, vermutlich länger',
+         'text' => 'Mannheimer Str.: Wasserrohrbruch, Fahrbahn zwischen Berliner Str. und Maxdorfer Steig gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6719,18 +6719,7 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'until' => 1709308800
        },
        undef,
-       {
-         'data' => '#: next_check_id: GROSSBEEREN-2023
-#: also_indoor: traffic (B)
-#: last_checked: 2024-01-25
-	q3::inwork 9178,10451 9192,10528
-',
-         'from' => undef,
-         'id' => 3973,
-         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -6881,7 +6870,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        {
          'data' => '#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-28
 # REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 ',
@@ -6988,24 +6977,6 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis März 2025',
          'type' => 'handicap',
          'until' => 1743436800
-       },
-       undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1407667.php
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/?date=20240123
-#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-vollsperrung-adlergestell-b96a-fur-das-einheben-der-brucke/
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1408754.php
-#: by: https://berliner-abendblatt.de/berlin-news/adlergestell-gesperrt-auch-s-bahn-betroffen-id243125
-#: source_id: viz2021:13.533121,52.440953,27.01.2024,03:00 (bis 28.01.2024)
-#: source_id: viz2021:13.535154,52.439667,27.01.2024,03:00 (bis 28.01.2024)
-#: source_id: viz2021:13.529303,52.443437,27.01.2024,03:00 (bis 28.01.2024)
-	2::inwork 19472,3922 19335,4067 19226,4183
-',
-         'from' => 1706223600,
-         'id' => 4001,
-         'text' => 'Adlergestell: Sperrung wegen Einhubs einer Brücke, vom 27. Januar 2024, 03:00 Uhr bis 28. Januar 2024, 12:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1706439600
        }
      
 );
