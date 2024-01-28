@@ -29,13 +29,14 @@ use BBBikeUtil qw(is_in_path);
 sub get_pmake (;@) {
     my %opt = @_;
     my $fallback = exists $opt{fallback} ? delete $opt{fallback} : 1;
+    my $canV = exists $opt{canV} ? delete $opt{canV} : 0; # -V option can compute value
     die "Unhandled args: " . join(" ", %opt) if %opt;
 
     (
      $^O =~ m{bsd}i                             ? "make"         # standard BSD make
      : $^O eq 'darwin' && is_in_path('bsdmake') ? 'bsdmake'      # homebrew bsdmake package
-     : is_in_path("bmake")			? 'bmake'        # debian jessie and later (package bmake)
      : is_in_path("fmake")                      ? "fmake"        # debian jessie .. buster (package freebsd-buildutils)
+     : (!$canV && is_in_path("bmake"))		? 'bmake'        # debian jessie and later (package bmake)
      : is_in_path("freebsd-make")               ? "freebsd-make" # debian wheezy and earlier
      : -x '/usr/bin/pmake'			? '/usr/bin/pmake' # debian jessie and later (package bmake, just a symlink to bmake)
      : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, bmake, fmake, pmake, or something similar"

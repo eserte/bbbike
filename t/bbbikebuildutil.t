@@ -26,7 +26,7 @@ use File::Temp qw(tempdir);
 use BBBikeBuildUtil qw(get_pmake get_modern_perl module_path module_version monkeypatch_manifind);
 use BBBikeUtil qw(save_pwd2);
 
-plan tests => 16;
+plan tests => 17;
 
 my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
@@ -42,6 +42,11 @@ ok $pmake, "pmake call worked, result is $pmake";
 {
     eval { get_pmake invalid => "option" };
     like $@, qr{^Unhandled args: invalid option}, 'check for invalid options';
+}
+
+{
+    my $pmake_canV = get_pmake canV => 1;
+    isnt $pmake_canV, 'bmake', "bmake cannot cope with -V correctly, result is $pmake_canV";
 }
 
 {
