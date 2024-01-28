@@ -94,6 +94,48 @@ sub _commit_dest ($$) {
     _make_readonly($d, $f);
 }
 
+sub _repeat_on_changing_sources {
+    my($action, $srcs) = @_;
+
+    my $max_retries = 10; # XXX could be an option?
+
+    my $get_file_modification_times = sub {
+        my %mtimes;
+        for my $file (@$srcs) {
+            my @stat = stat($file);
+            $mtimes{$file} = $stat[9] if @stat;
+        }
+        return %mtimes;
+    };
+
+    for my $retry (1..$max_retries) {
+        my %initial_mtimes = $get_file_modification_times->();
+        eval { $action->() };
+	my $err = $@;
+        my %final_mtimes = $get_file_modification_times->();
+
+        my @changed_files;
+	for my $file (sort keys %final_mtimes) {
+	    if ($initial_mtimes{$file} != $final_mtimes{$file}) {
+                push @changed_files, $file;
+            }
+        }
+
+        if (@changed_files) {
+	    if ($retry < $max_retries) {
+		warning "Files changed during action: @changed_files. Will retry action ($retry/$max_retries).";
+	    } else {
+		error "Files changed during action: @changed_files. Too many retries ($retry), won't repeat anymore.";
+	    }
+        } else {
+	    if ($err) {
+		error $err;
+	    }
+	    last;
+	}
+    }
+}
+
 # REPO BEGIN
 # REPO NAME slurp /home/e/eserte/src/srezic-repository 
 # REPO MD5 241415f78355f7708eabfdb66ffcf6a1
@@ -325,12 +367,14 @@ sub _build_fragezeichen_nextcheck_variant {
     my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads";
     my @gps_uploads_files = bsd_glob("$gps_uploads_dir/*.bbr");
-    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs, @gps_uploads_files, $gps_uploads_dir) {
-	require Safe;
-	my $config = Safe->new->rdo("$ENV{HOME}/.bbbike/config");
-	my $centerc = $config->{centerc};
-	_make_writable $d, $dest;
-	$d->run([$perl, "$miscsrcdir/fragezeichen2org.pl",
+    my @all_srcs = (@srcs, @gps_uploads_files, $gps_uploads_dir);
+    if (_need_daily_rebuild $dest || _need_rebuild $dest, @all_srcs) {
+	_repeat_on_changing_sources(sub {
+	    require Safe;
+	    my $config = Safe->new->rdo("$ENV{HOME}/.bbbike/config");
+	    my $centerc = $config->{centerc};
+	    _make_writable $d, $dest;
+	    $d->run([$perl, "$miscsrcdir/fragezeichen2org.pl",
 		 "--expired-statistics-logfile=$persistenttmpdir/expired-fragezeichen-${variant}.log",
 		 (@gps_uploads_files ? "--plan-dir=$gps_uploads_dir" : ()),
 		 "--with-searches-weight",
@@ -340,8 +384,9 @@ sub _build_fragezeichen_nextcheck_variant {
 		 ($variant eq 'without-osm-watch' ? ('--filter', 'without-osm-watch') : ()),
 		 "--compile-command", "cd @{[ cwd ]} && $^X " . __FILE__ . " " . basename($dest),
 		 @srcs], ">", "$dest~");
-	_empty_file_error "$dest~";
-	_commit_dest $d, $dest;
+	    _empty_file_error "$dest~";
+	    _commit_dest $d, $dest;
+	}, \@all_srcs);
     }
 }
 
