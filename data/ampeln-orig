@@ -167,7 +167,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-01-21
+#: last_checked: 2024-01-29
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -601,8 +601,9 @@ Mühlenstr.: Bau einer Fußgängerampel, Gegenverkehrsregelung	X::inwork 10670,1745
 	F 13448,12340
 Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängerampel	X 12878,12430
 #: note: das Linksabbiegen von Stralauer Platz in die Straße der Pariser Kommune kann länger dauern, zusätzliche Wartezeit auf dem Mittelstreifen nötig
+#: historical_note: Grüner Pfeil für alle (Straße der Pariser Kommune -> Stralauer Platz, N->W) wurde irgendwann (vor Februar 2021) abmontiert
 	X 12497,11459
-#: note: Grüner Pfeil (Gürtelstr. -> Frankfurter Allee, S->O)
+#: note: Grüner Pfeil für Radfahrer (Gürtelstr. -> Frankfurter Allee, S->O)
 	X 15361,12071
 #: XXX_prog: zusammenhängende Ampelanlage vvv
 #: note: Anforderung für Radfahrer aus der Bornitzstr.
@@ -620,6 +621,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 8014,8771
 	X 7795,8765
 	X 7709,8777
+#: note: Grüner Pfeil für Radfahrer (Leberstr. -> Kolonnenstr., S->O)
 	X 7563,8871
 	X 7497,8916
 	F 7315,8941
@@ -762,7 +764,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10264,13097
 	X 10341,13376
 	X 10177,13766
-#: note: Grüner Pfeil (Schönhauser Allee -> Torstr., N -> W)
+#: note: Grüner Pfeil für Radfahrer (Schönhauser Allee -> Torstr., N->W)
+#: note: Grüner Pfeil für Radfahrer (Torstr. -> Rosa-Luxemburg-Str., W->S)
 	X 10741,13685
 	X 10923,13156
 	X 10755,13152
@@ -1221,7 +1224,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (an der Einmündung keine Ampel mehr) ---	X 17736,5441
 	X 21332,4655
 	X 21789,4520
-#: XXX_prog Grüner Pfeil (Alt-Köpenick -> Lange Brücke)
+#: note: Grüner Pfeil für Radfahrer (Alt-Köpenick -> Lange Brücke, N->W)
 	X 22093,4499
 #: note: Anforderung für linksabbiegende Radfahrer (Lindenstr. -> Bahnhofstr.)
 	X 21954,5229
@@ -1951,7 +1954,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15662,16649
 	X 15437,16491
 #: XXX_prog: zusammenhängende Ampelanlage vvv
-#: note: Grüner Pfeil (Berliner Allee -> Pistoriusstr.)
+#: historical_note: Grüner Pfeil für alle (Berliner Allee -> Pistoriusstr., O->NW) wurde zwischen Mai und Juli 2022 abmontiert
 	X 14056,16120
 	X 14015,16103
 #: XXX_prog ^^^
@@ -2341,7 +2344,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 22521,5743
 	X 22292,5774
 	X 22675,6498
-#: note: Grüner Pfeil (Triniusstr. -> An der Wuhlheide)
+#: note: Grüner Pfeil für alle (Triniusstr. -> An der Wuhlheide, S->O)
 	X 18492,6893
 	F 17919,6978
 	X 17516,4657
@@ -3409,7 +3412,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 11952,14002
 #: XXX_prog keine Haltelinie für Radfahrer Richtung Süden
-#: note: Grüner Pfeil (Hannah-Arendt-Str. -> Ebertstr.)
+#: note: Grüner Pfeil für Radfahrer (Hannah-Arendt-Str. -> Ebertstr., O->N)
 	X 8577,11896
 #: note: Anforderungsampel
 	F 6827,4810
@@ -4254,7 +4257,7 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	B 9342,-90771
 	X 18293,-1472
 	X 18419,-1418
-#: XXX_prog Grüner Pfeil (Gartenstr. -> B96a)
+#: XXX_prog Grüner Pfeil (für alle?) (Gartenstr. -> B96a)
 	X 18892,-1273
 	X 19529,-1061
 	B 24078,22265

@@ -38195,7 +38195,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-10-15 00:00:00"), # 1677452400, # 2023-02-27 00:00
        until => $isodate2epoch->("2024-12-31 18:00:00"), # 1735685999, # 2024-12-31 23:59
-       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Dezember 2024 gesperrt sein',
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg voraussichtlich bis Dezember 2024 gesperrt, kann aber zeitweise (an Wochenenden?) offen sein',
        # , Stand Mitte Juni 2023: Weg ist frei', # was: , von Februar 2023 bis voraussichtlich Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -38207,9 +38207,16 @@ EOF
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch: note 3631207 6
-#: note: siehe auch Eintrag in gesperrt-orig
-	2::inwork 4064,2293 4209,2641 4247,2652
+#: osm_watch: note 3631209 6
+#: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
+#: last_checked: 2024-01-28 (osm note) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-12-31 vvv
+	2::inwork 4064,2293 4209,2641 4247,2652 4272,2704 4274,2717
 	2::inwork 4209,2641 4220,2664
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -38222,7 +38229,7 @@ EOF
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B,G) vvv
-#: last_checked: 2023-12-28 vvv
+#: last_checked: 2024-01-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
 # REMOVED --- Küstriner Str.	q4::inwork 16357,15328 16314,15223
@@ -41710,7 +41717,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2023-12-28
+#: last_checked: 2024-01-29
 	q3::inwork 16884,15833 16905,15924
 EOF
      },
@@ -41810,6 +41817,18 @@ EOF
 #: source_id: viz2021:13.535154,52.439667,27.01.2024,03:00 (bis 28.01.2024) (inaktiv)
 #: source_id: viz2021:13.529303,52.443437,27.01.2024,03:00 (bis 28.01.2024) (inaktiv)
 	2::inwork 19472,3922 19335,4067 19226,4183
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Königsweg: Straße zwischen Hohentwielsteig und Anhaltinerstr. gesperrt, evtl. sind auch Radfahrer betroffen',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
+#: also_indoor: traffic (H,G,B,W)
+#: priority: #A
+#: next_check: 2024-01-30
+	2::inwork -298,2577 -197,2634 -155,2658
 EOF
      },
     );

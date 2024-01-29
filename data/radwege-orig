@@ -949,7 +949,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-01-15
+#: last_checked: 2024-01-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -7355,9 +7355,10 @@ asphaltiertes Straßenbahnkap	RW2; 15469,12831 15417,12823
 	RW3; 15367,12815 15357,12813 15233,12829
 	RW3; 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
+	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
-	RW0; 15098,12849 15010,12855
-	RW4; 15010,12855 14940,12843 14906,12837
+	RW0; 15010,12855 14940,12843
+	RW4; 14940,12843 14906,12837
 	RW3; 14906,12837 14836,12826 14731,12809
 asphaltiertes Straßenbahnkap	RW1; 14731,12809 14661,12798
 	RW3; 14661,12798 14556,12781 14435,12761

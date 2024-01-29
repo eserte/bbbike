@@ -5502,13 +5502,20 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch: note 3631207 6
-#: note: siehe auch Eintrag in gesperrt-orig
-	2::inwork 4064,2293 4209,2641 4247,2652
+#: osm_watch: note 3631209 6
+#: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
+#: last_checked: 2024-01-28 (osm note) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-12-31 vvv
+	2::inwork 4064,2293 4209,2641 4247,2652 4272,2704 4274,2717
 	2::inwork 4209,2641 4220,2664
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg wird voraussichtlich ab November 2023 bis Dezember 2024 gesperrt sein',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg voraussichtlich bis Dezember 2024 gesperrt, kann aber zeitweise (an Wochenenden?) offen sein',
          'type' => 'gesperrt',
          'until' => 1735664400
        },
@@ -5517,7 +5524,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B,G) vvv
-#: last_checked: 2023-12-28 vvv
+#: last_checked: 2024-01-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
 # REMOVED --- Küstriner Str.	q4::inwork 16357,15328 16314,15223
@@ -6902,7 +6909,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2023-12-28
+#: last_checked: 2024-01-29
 	q3::inwork 16884,15833 16905,15924
 ',
          'from' => undef,
@@ -6977,6 +6984,21 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis März 2025',
          'type' => 'handicap',
          'until' => 1743436800
+       },
+       undef,
+       undef,
+       {
+         'data' => '#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
+#: also_indoor: traffic (H,G,B,W)
+#: priority: #A
+#: next_check: 2024-01-30
+	2::inwork -298,2577 -197,2634 -155,2658
+',
+         'from' => undef,
+         'id' => 4002,
+         'text' => 'Königsweg: Straße zwischen Hohentwielsteig und Anhaltinerstr. gesperrt, evtl. sind auch Radfahrer betroffen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

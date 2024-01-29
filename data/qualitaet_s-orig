@@ -4661,13 +4661,14 @@ Lichtenauer Str.: Verbundsteinpflaster	Q1 17062,15184 17221,15181
 Lindenweg (Alt-Hohenschönhausen): Asphalt	Q0- 16251,15629 16297,15737 16360,15889
 #: historical_note: früher: brüchiger Asphalt, Q1, neu gemacht
 Waldowstr.: Asphalt	Q0 15856,15924 16080,15830
-Waldowstr.: Asphalt	Q0- 16080,15830 16297,15737 16469,15659 16497,15636
+#: historical_note: früher Q0-, vielleicht neu gemacht?
+Waldowstr.: Asphalt	Q0 16080,15830 16297,15737 16469,15659 16497,15636
 Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2+ 15894,16096 15869,16078
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wird hier saniert?
-#: last_checked: 2023-03-04 (mapillary)
+#: last_checked: 2024-01-29
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -16456,7 +16457,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2023-11-23
+#: last_checked: 2024-01-29
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
