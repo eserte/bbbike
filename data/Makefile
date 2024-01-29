@@ -1050,17 +1050,11 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd!
 	${PERL} doit.pl fragezeichen-nextcheck.bbd
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd .check_daily
-	-@$(WRITEABLE) $@
-	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
-	mv $@~ $@
-	-@$(READONLY) $@
+	${PERL} doit.pl fragezeichen-nextcheck.org
 
 # exact distances, but slower, especially if dist.db is missing or fresh
 fragezeichen-nextcheck.org-exact-dist:
-	-@$(WRITEABLE) ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
-	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --expired-statistics-logfile=${PERSISTENTTMPDIR}/expired-fragezeichen.log --plan-dir=${HOME}/.bbbike/gps_uploads --with-searches-weight --max-dist=50 --dist-dbfile=${PERSISTENTTMPDIR}/dist.db *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org~
-	mv ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
-	-@$(READONLY) ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
+	${PERL} doit.pl fragezeichen-nextcheck.org-exact-dist
 
 # Like fragezeichen-nextcheck.org-exact-dist, but using the home coordinate for both start/goal
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org!

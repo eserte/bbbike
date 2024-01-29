@@ -388,18 +388,39 @@ EOF
     }
 }
 
+sub action_fragezeichen_nextcheck_org {
+    my $d = shift;
+    my $dest = "$persistenttmpdir/fragezeichen-nextcheck.org";
+    my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
+    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs) {
+	_repeat_on_changing_sources(sub {
+	    _make_writable $d, $dest;
+	    $d->run([$perl, "$miscsrcdir/fragezeichen2org.pl", @srcs], '>', "$dest~");
+	    _empty_file_error "$dest~";
+	    _commit_dest $d, $dest;
+	}, \@srcs);
+    }
+}
+
 sub _build_fragezeichen_nextcheck_variant {
     my($d, $dest) = @_;
-    my $variant = ($dest =~ /(home-home|without-osm-watch)/ ? $1 : die "Cannot recognize variant from destination file '$dest'");
+    my $variant = ($dest =~ m{fragezeichen-nextcheck.org$} ? 'exact-dist' :
+		   $dest =~ m{(home-home|without-osm-watch)} ? $1 : die "Cannot recognize variant from destination file '$dest'");
+    my $self_target = ($variant eq 'exact-dist' ? 'fragezeichen-nextcheck.org-exact-dist' :
+		       basename($dest));
     my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads";
     my @gps_uploads_files = bsd_glob("$gps_uploads_dir/*.bbr");
     my @all_srcs = (@srcs, @gps_uploads_files, $gps_uploads_dir);
-    if (_need_daily_rebuild $dest || _need_rebuild $dest, @all_srcs) {
-	_repeat_on_changing_sources(sub {
+    # note: the exact-dist variant is always rebuilt, as there are two actions creating the same target (XXX should be fixed!)
+    if ($variant eq 'exact-dist' || _need_daily_rebuild $dest || _need_rebuild $dest, @all_srcs) {
+	my $centerc;
+	if ($variant eq 'home-home') {
 	    require Safe;
 	    my $config = Safe->new->rdo("$ENV{HOME}/.bbbike/config");
-	    my $centerc = $config->{centerc};
+	    $centerc = $config->{centerc};
+	}
+	_repeat_on_changing_sources(sub {
 	    _make_writable $d, $dest;
 	    $d->run([$perl, "$miscsrcdir/fragezeichen2org.pl",
 		 "--expired-statistics-logfile=$persistenttmpdir/expired-fragezeichen-${variant}.log",
@@ -409,12 +430,18 @@ sub _build_fragezeichen_nextcheck_variant {
 		 "--dist-dbfile=$persistenttmpdir/dist.db",
 		 ($variant eq 'home-home' ? ($centerc ? ("-centerc", $centerc, "-center2c", $centerc) : ()) : ()),
 		 ($variant eq 'without-osm-watch' ? ('--filter', 'without-osm-watch') : ()),
-		 "--compile-command", "cd @{[ cwd ]} && $^X " . __FILE__ . " " . basename($dest),
+		 "--compile-command", "cd @{[ cwd ]} && $^X " . __FILE__ . " " . $self_target,
 		 @srcs], ">", "$dest~");
 	    _empty_file_error "$dest~";
 	    _commit_dest $d, $dest;
 	}, \@all_srcs);
     }
+}
+
+sub action_fragezeichen_nextcheck_org_exact_dist {
+    my $d = shift;
+    my $dest = "$persistenttmpdir/fragezeichen-nextcheck.org";
+    _build_fragezeichen_nextcheck_variant($d, $dest);
 }
 
 sub action_fragezeichen_nextcheck_home_home_org {
@@ -768,6 +795,7 @@ sub action_all {
     action_check_connected($d);
     action_survey_today($d);
     action_fragezeichen_nextcheck_bbd($d);
+    #action_fragezeichen_nextcheck_org($d); # collides with action_fragezeichen_nextcheck_org_exact_dist
     action_fragezeichen_nextcheck_home_home_org($d);
     action_fragezeichen_nextcheck_without_osm_watch_org($d);
     action_sourceid($d);
