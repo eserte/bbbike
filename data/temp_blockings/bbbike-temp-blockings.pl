@@ -41409,13 +41409,15 @@ Wiesbadener Str.	q3::inwork; 3965,7297 3703,7324
 Sodener Str.	q3::inwork 3718,7576 3703,7324
 EOF
      },
-     { from  => undef, # 
-       until => 1706449967, # undef, # XXX
-       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
+     { from  => 1706641941, # undef, # 
+       until => $isodate2epoch->("2024-02-06 12:00:00"), # 1706449967, # undef, # XXX
+#       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
+       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.01.2024 06:00 bis 06.02.2024 12:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GROSSBEEREN-2023
 # REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25
+#: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024)
 	q3::inwork 9178,10451 9192,10528
 EOF
      },
@@ -41659,6 +41661,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
+#: note: Ein traffic-Watcher lohnt nicht, weil hier für Autos immer eine Einbahnstraßenregelung gilt
 #: last_checked: 2024-01-25
 #: next_check: 2024-01-31
 	q4::inwork; 6549,11015 6681,10959
@@ -41827,7 +41830,8 @@ EOF
 #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: next_check: 2024-01-30
+#: last_checked: 2024-01-30 (indoor)
+#: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 EOF
      },

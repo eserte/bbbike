@@ -6571,22 +6571,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (G,ex-B,W)
-#: note: auch der rechte Gehweg ist gesperrt, Ausweichen auf linken Gehweg nur inoffiziell möglich
-#: note: Halteverbotsschilder bis 30.01.2024
-#: note: mittlerweile (21.1.2024) sieht es so aus, als ob der Termin gehalten werden kann
-#: last_checked: 2024-01-27
-#: check_frequency: 30d
-#: next_check: 2024-01-30
-	q2::inwork; 18037,9195 17549,9529
-',
-         'from' => 1698503309,
-         'id' => 3950,
-         'text' => 'Wallensteinstr.: ab Ilsestr. etwa 70m der Fahrbahn Richtung Nordwesten gesperrt, voraussichtlich bis Ende Januar 2024',
-         'type' => 'handicap',
-         'until' => 1706634000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GOERLITZERUFER-2023
@@ -6726,7 +6711,18 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'until' => 1709308800
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: GROSSBEEREN-2023
+# REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25
+#: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024)
+	q3::inwork 9178,10451 9192,10528
+',
+         'from' => 1706641941,
+         'id' => 3973,
+         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.01.2024 06:00 bis 06.02.2024 12:00',
+         'type' => 'handicap',
+         'until' => 1707217200
+       },
        undef,
        undef,
        {
@@ -6847,6 +6843,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        },
        {
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
+#: note: Ein traffic-Watcher lohnt nicht, weil hier für Autos immer eine Einbahnstraßenregelung gilt
 #: last_checked: 2024-01-25
 #: next_check: 2024-01-31
 	q4::inwork; 6549,11015 6681,10959
@@ -6991,7 +6988,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: next_check: 2024-01-30
+#: last_checked: 2024-01-30 (indoor)
+#: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 ',
          'from' => undef,
