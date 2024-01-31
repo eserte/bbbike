@@ -1780,7 +1780,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2098,7 +2098,17 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
+	q4::inwork 19766,1796 19898,1704
+',
+         'from' => 1707001200,
+         'id' => 2328,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
+         'text' => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024',
+         'type' => 'handicap',
+         'until' => 1707498000
+       },
        undef,
        undef,
        undef,
@@ -2237,7 +2247,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Januar 8.00 - 16.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Februar 8.00 - 17.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -3625,7 +3635,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-01-24 vvv
+#: last_checked: 2024-01-31 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4697,40 +4707,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: WILTBERG-2022
-#: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
-#: by: https://nitter.net/pic/media%2FFSTWWSqXIAAPomO.jpg%3Fname%3Dorig
-#: by: https://www.berliner-woche.de/buch/c-verkehr/kinder-sollen-sicher-zur-schule-und-kita-kommen_a348113 (demnächst Abriss der Eisenbahnbrücke)
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf 
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf ("weiterhin für ca. 2 Jahre")
-#: by: https://nitter.cz/VIZ_Berlin/status/1664497318455046145#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhpb1BlWGFrQUFoQXhRLmpwZw==
-#: by: https://nitter.net/VIZ_Berlin/status/1682284279324360704#m
-#: by: https://nitter.net/pic/orig/media%2FF1fgjuGXsAAx82o.jpg
-#: source_id: bvg2021:150#BVG300484_0
-#: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
-#: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
-#: source_id: viz2021:13.493,52.63648,26.10.2022,11:11 (bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024) (bis 02.06.2023) (inaktiv)
-#: source_id: viz2021:13.492699,52.636637,02.06.2023,07:00 (bis 16.06.2023) (inaktiv)
-#: source_id: viz2021:13.493906,52.635955,02.06.2023,07:00 (bis 14.07.2023) (inaktiv)
-#: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
-#: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
-#: also_indoor: traffic (H,ex-G,ex-B,W)
-#: last_checked: 2023-12-06 (mapillary)
-#: check_frequency: 14d
-#: next_check: 2024-01-31
-	q4::inwork; 16166,25767 16121,25818
-#	2::inwork 16166,25767 16121,25818
-',
-         'from' => 1652122429,
-         'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024',
-         'type' => 'gesperrt',
-         'until' => 1706720400
-       },
+       undef,
        {
          'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
@@ -5815,7 +5792,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2023-12-29
+#: last_checked: 2024-01-31
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -5961,15 +5938,15 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        undef,
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024)
 #: last_checked: 2024-01-23 (mapillary)
-#: next_check: 2024-01-31
+#: next_check: 2024-02-29
 	q3::inwork 12632,12630 12690,12769
 ',
          'dont_check_date' => 1,
          'from' => 1687406400,
          'id' => 3832,
-         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Januar 2024, vermutlich noch länger',
+         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Februar 2024, vermutlich noch länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6596,11 +6573,11 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024)
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-01-27 vvv
-#: next_check: 2024-01-31 vvv
+#: next_check: 2024-02-29 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -6609,9 +6586,9 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => 1699164000,
          'id' => 3957,
-         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 31.01.2024 17:00',
+         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 29.02.2024 17:00',
          'type' => 'handicap',
-         'until' => 1706716800
+         'until' => 1709222400
        },
        undef,
        {
@@ -6633,13 +6610,13 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: by: wosch & osm & mapillary
-#: XXX Wann sind die Bauarbeiten beendet?
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
-#: note: allerdings können manchmal (nach der Arbeitszeiten? oder immer?) die Barrieren so offen sein, dass Radfahrer durchkommen
+#: note: allerdings können manchmal die Barrieren so offen sein, dass Radfahrer durchkommen (kann außerhalb der Arbeitszeiten passieren, aber nicht immer)
 #: osm_watch: way id="1151064395" version="5"
-#: last_checked: 2024-01-24 (mapillary)
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2024-01-31
 #: check_frequency: 30d
-#: next_check: 2024-01-31
+# REMOVED --- #: next_check: 2024-01-31
 	q4::inwork 9533,12925 9375,12911
 ',
          'from' => undef,
@@ -6656,22 +6633,22 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: source_id: viz2021:13.452251,52.492574,13.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.45427,52.4939,14.11.2023,13:59 (hier nur Kfz-Verkehr, bis 30.01.2024) (inaktiv)
 #: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024)
+#: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (bis 08.03.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
 #: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
 #: XXX Das Ende der Bauarbeiten zum 31.1.2024 ist unwahrscheinlich (noch tiefe Gruben + Winterwetter).
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2024-01-19
 #: check_frequency: 30d
-#: next_check: 2024-01-31
+#: next_check: 2024-03-08
 	q2::inwork 13860,9861 13704,9691
 # REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 ',
          'from' => 1700499546,
          'id' => 3968,
-         'text' => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn auf etwa 40-50m Länge, bis 31.01.2024',
+         'text' => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn auf etwa 40-50m Länge, bis 08.03.2024',
          'type' => 'handicap',
-         'until' => 1706716800
+         'until' => 1709913600
        },
        {
          'data' => '#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html (Erwähnung der Sperrung bis Mitte Oktober 2024)
@@ -6917,7 +6894,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet?
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-31
 	q4::inwork 8122,12603 8120,12756
 ',
          'from' => undef,

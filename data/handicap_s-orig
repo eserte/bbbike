@@ -24,7 +24,7 @@ Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-31
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -66,7 +66,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-01-25
+#: last_checked: 2024-01-31
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -324,7 +324,7 @@ Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-01-29 (daf)
+#: last_checked: 2024-01-31
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -463,7 +463,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-01-25 vvv
+#: last_checked: 2024-01-31 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -896,16 +896,7 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 # 
 ### Schöneberg ###
 # 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867
-#: osm_watch: way id="1146544138" version="5"
-#: osm_watch: way id="1145470730" version="3"
-#: note: Länge der Engstelle etwa 40m
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-01-13
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2023-12-31
-Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
-# 
+# REMOVED (laut osm note+osm wurde die Sperrung aufgehoben) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867 --- #: osm_watch: way id="1146544138" version="6" --- #: osm_watch: way id="1145470730" version="4" --- #: note: Länge der Engstelle etwa 40m --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-01-13 --- #: check_frequency: 120d --- #: next_check: 2023-12-31 --- Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 # REMOVED (offen) --- #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/ --- #: XXX laut Schild bis Dezember 2021 (dauer aber länger) --- #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv) --- #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv) --- #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv) --- #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv) --- #: osm_watch: way id="1096203482" version="8" --- #: also_indoor: traffic (ex-H,B,ex-G,W) --- #: last_checked: 2023-08-05 --- #: check_frequency: 30d --- #: next_check: 2023-06-28 --- Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
@@ -3288,7 +3279,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-01-23
+#: last_checked: 2024-01-31
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
