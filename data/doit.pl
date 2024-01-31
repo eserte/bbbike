@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -408,6 +408,7 @@ sub _build_fragezeichen_nextcheck_variant {
 		   $dest =~ m{(home-home|without-osm-watch)} ? $1 : die "Cannot recognize variant from destination file '$dest'");
     my $self_target = ($variant eq 'exact-dist' ? 'fragezeichen-nextcheck.org-exact-dist' :
 		       basename($dest));
+    my $expired_statistics_logfile_base = ($variant eq 'exact-dist' ? 'expired-fragezeichen.log' : "expired-fragezeichen-${variant}.log");
     my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads";
     my @gps_uploads_files = bsd_glob("$gps_uploads_dir/*.bbr");
@@ -423,7 +424,7 @@ sub _build_fragezeichen_nextcheck_variant {
 	_repeat_on_changing_sources(sub {
 	    _make_writable $d, $dest;
 	    $d->run([$perl, "$miscsrcdir/fragezeichen2org.pl",
-		 "--expired-statistics-logfile=$persistenttmpdir/expired-fragezeichen-${variant}.log",
+		 "--expired-statistics-logfile=$persistenttmpdir/$expired_statistics_logfile_base",
 		 (@gps_uploads_files ? "--plan-dir=$gps_uploads_dir" : ()),
 		 "--with-searches-weight",
 		 "--max-dist=50",
