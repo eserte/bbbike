@@ -35410,7 +35410,7 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Fuldastr., Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Ende Januar 2024)',
+       text  => 'Weserstr.: Bauarbeiten zwischen Wildenbruchstr. und Elbestr.., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Anfang Februar 2024)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
@@ -35418,9 +35418,10 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="36738527" version="44"
 #: osm_watch: note 4090527 1
-#: last_checked: 2024-01-28
+#: last_checked: 2024-02-01
 #: check_frequency: 60d
-zwischen Wildenbruchstr. und Fuldastr.	q3::inwork 13033,8628 12881,8750 12740,8862
+zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
+# REMOVED (hier noch nicht) --- zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: note: eigentlich q3-::inwork
@@ -36489,21 +36490,20 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
        text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 08.03.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
-#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024)
+#: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1649298167484014594#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnVLMUM2VlhzQUVMcm1hLmpwZw==
-#: add_fragezeichen: Sind die Bauarbeiten hier beendet? Gibt es noch Einschränkungen für Radfahrer?
-#: next_check: 2024-03-08
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten hier beendet? Gibt es noch Einschränkungen für Radfahrer? --- #: next_check: 2024-03-08
 	q4::inwork; 1333,5246 1385,5214 1443,5193 1486,5175 1514,5163 1573,5152
 # REMOVED (hier keine Einschränkung, siehe mapillary) ---	q2::inwork 1573,5152 1964,5070
 EOF
@@ -40702,7 +40702,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2023-11-23 vvv
+#: last_checked: 2024-01-31 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
@@ -41122,16 +41122,16 @@ EOF
      },
      { from  => 1699031494, # 2023-11-03 18:11
        until => undef, # 1704063599, # 2023-12-31 23:59
-       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Mitte Januar 2024: die alten Radwege sind noch passierbar)',
+       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang Februar 2024: die alten Radwege sind noch passierbar)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOERLITZERUFER-2023
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2024-01-19
+#: last_checked: 2024-02-01
 # REMOVED --- #: check_frequency: 30d
-#: check_frequency: 14d
+#: check_frequency: 21d
 #: next_check: 2024-06-30
 	q3::inwork 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
 EOF
@@ -41832,9 +41832,29 @@ EOF
 #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: last_checked: 2024-01-30 (indoor)
+#: last_checked: 2024-02-01 (indoor)
 #: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
+EOF
+     },
+     { from  => 1707001200, # 2024-02-04 00:00
+       until => 1707519600, # 2024-02-10 00:00
+       text  => 'Ortolfstr.: Bauarbeiten zwischen Dankmarsteig und Gerosteig, Sperrung der Fahrbahn, auch für Radfahrer, voraussichtlich vom 5.2.2024 bis 9.2.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1410970.php
+	q4::inwork 19579,753 19559,696 19507,556
+	q4::inwork; 19507,556 19477,472
+EOF
+     },
+     { from  => 1681974000, # 2023-04-20 09:00
+       until => 1709913600, # 2024-03-08 17:00
+       text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 08.03.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024)
+#: note: außerdem Gegenverkehrsregelung im Hüttenweg
+	q4::inwork 1139,5308 1212,5353
 EOF
      },
     );
