@@ -3535,11 +3535,13 @@ Sollstedter Str.: Asphalt	Q0 17244,14664 17377,14678 17507,14693 17600,14713
 Hofheimer Str.: Asphalt	Q0 17579,14777 17600,14713
 Plauener Str. [zur Küllstedter Str.]: Asphalt	Q0 17340,14898 17352,14827
 (Plauener Str. - Küllstedter Str.): Gehwegplatten, Kleinkopfsteinpflaster	Q1 17352,14827 17363,14760
+(Ferdinand-Schultze-Str. - Plauener Str. 94-96): Betonsteinpflaster	Q0 17684,14858 17558,14840
 Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591 17400,14511
 Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16917,14905 16943,14785 17063,14797
 Joachimsthaler Str. (Alt-Hohenschönhausen): Beton	Q1 17063,14797 17129,14804 17117,14885
 Schleizer Str.: Verbundsteinpflaster	Q1 16802,15007 17231,14979
-Schleizer Str.: Asphalt	Q0 17231,14979 17562,14992 17608,15010
+Schleizer Str.: Asphalt	Q0 17231,14979 17406,14986 17562,14992 17608,15010
+(Schleizer Str. - Plauener Str.): Gehwegplatten	Q0 17406,14986 17415,14906
 Lichtenauer Str.: Beton	Q1 16835,15188 17062,15184
 Lichtenauer Str.: Verbundsteinpflaster	Q1 17062,15184 17221,15181
 Lindenweg (Alt-Hohenschönhausen): Asphalt	Q0 16251,15629 16297,15737 16360,15889
@@ -8344,7 +8346,7 @@ Matenzeile: Beton	Q0 17365,17632 17474,17478 17582,17335 17714,17285
 (Parkplatz an der Altenhofer Str.): Beton	Q0 15675,14360 15516,14445 15367,14512
 (Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14512 15225,14545
 (Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15120,14481 15225,14545 15174,14638
-(Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15204,14087
+(Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): wassergebundene Decke	Q1 15204,14087 15189,14027 15118,13961
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Verbundsteinpflaster	Q1 15179,13872 15192,13834 15181,13791 15144,13772
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Gehwegplatten	Q0 15144,13772 15094,13750
@@ -10313,7 +10315,7 @@ Parkrosenweg: Asphalt	Q0 -6530,6699 -6381,6587
 (Neukladower Allee - Gutspark Neukladow): Asphalt	Q0 -6319,5606 -6246,5562 -6125,5447 -6112,5406
 (Spektegrünzug - Ramin-Park): wassergebundene Decke	Q1 -4160,14690 -4118,14736 -4108,14769 -4090,14780 -4026,14765
 (Spektegrünzug - Hohenzollernring): wassergebundene Decke	Q1 -4090,14780 -4056,14799 -3926,14879
-Malchower Weg: Asphalt, einige Schlaglöcher	Q0; 17014,16724 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16920,17204 16915,17231 16905,17281 16887,17349
+Malchower Weg: Asphalt, einige Schlaglöcher	Q0; 17014,16724 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16950,17061 16934,17132 16920,17204 16915,17231 16905,17281 16887,17349
 Teichmummelring: Betonpflaster	Q1 22246,2272 22418,2390 22454,2342 22271,2214
 Am Ruderverein: Betonpflaster	Q1 22153,2482 22221,2520 22270,2549
 Relingstr.: Betonpflaster	Q1 22195,2390 22287,2431 22358,2460
@@ -11432,6 +11434,7 @@ Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,1
 (Brandenburgische Str. - Albrechtstr.): Gehwegplatten	Q0 6629,4361 6617,4324
 (An der Müggelspree - Salvador-Allende-Str., Westseite): Asphalt	Q0 23409,5035 23420,4930 23447,4906
 (An der Müggelspree): Asphalt	Q0 23461,5054 23409,5035
+(Hansastr. - Falkenberger Str.): Asphalt	Q0 15929,16870 15888,16865
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -14624,7 +14627,7 @@ Adickesstr.: Beton	Q0 -1449,15688 -1494,15860 -1455,15885 -1380,15899
 Huberweg: Beton	Q0 -1449,15688 -1324,15719 -1343,15804 -1380,15899
 Scheveninger Str.: schlechtes Kopfsteinpflaster	Q3 13660,5602 13858,5679
 Jean-Paul-Weg: Verbundsteinpflaster	Q1 9652,196 9762,155
-Königswalder Str.: mäßiger Asphalt	Q1 16951,17055 16832,17039 16723,17004 16550,16914 16480,16873
+Königswalder Str.: mäßiger Asphalt	Q1 16950,17061 16832,17039 16723,17004 16550,16914 16480,16873
 Mertensstr.: guter Asphalt	Q0 -2959,17507 -2856,17489 -2511,17430 -2451,17421 -1928,17341
 Grützmacherweg: Asphalt	Q0 -1511,15127 -1631,15164 -1709,15188 -1783,15208 -1870,15233
 Romy-Schneider-Str.: Asphalt	Q0 -1870,15233 -1848,15317 -1829,15394 -1794,15517
@@ -14958,7 +14961,7 @@ Neumarkplan: Asphalt	Q0 12337,4160 12356,4133
 Neumarkplan: Beton mit einigen Schäden	Q1 12356,4133 12415,4053 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 Massiner Weg: Kopfsteinpflaster	Q2 12356,4133 12318,4099 12225,3982 12064,3813
 Deutsch-Kroner-Ring: mäßiges Kopfsteinpflaster	Q2 12064,3813 12155,3730 12205,3790 12250,3839 12266,3863 12271,3906 12254,3959 12225,3982
-Privatstr. 5: schlechter Asphalt, Schlaglöcher	Q2 16951,17055 17025,17069 17119,17071 17141,17070 17160,17068 17231,17055 17317,17027
+Privatstr. 5: schlechter Asphalt, Schlaglöcher	Q2 16950,17061 17025,17069 17119,17071 17141,17070 17160,17068 17231,17055 17317,17027
 Teupitzer Str. (Hellersdorf): Asphalt	Q0 23568,15603 23573,15627 23575,15639 23587,15699 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
 Neue Bergstr.: guter Asphalt	Q0 -3519,15751 -3302,15787 -3044,15837 -2886,15867
 Im Hufenschlag: Verbundsteinpflaster	Q1 4934,19075 4519,19040

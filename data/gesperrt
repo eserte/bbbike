@@ -2506,10 +2506,10 @@ Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 2113
 Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21073,11350
 Lauinger Str. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21171,11336 21133,11348 21134,11331
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
-Straßenbahntrasse	3nocross::ignrte 15662,16649 15735,16698 15776,16721 15875,16816 15917,16858
+Straßenbahntrasse	3nocross::ignrte 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870
 Hansastr. -> Stadion Buschallee: Straßenbahntrasse	3::igndisp 15776,16721 15735,16698 15759,16671
 Stadion Buschallee -> Hansastr.: Straßenbahntrasse	3::igndisp 15759,16671 15735,16698 15662,16649
-Falkenberger Str. -> Hansastr.: Straßenbahntrasse	3::igndisp 15866,16823 15875,16816 15917,16858
+Falkenberger Str. -> Hansastr.: Straßenbahntrasse	3::igndisp 15866,16823 15875,16816 15929,16870
 Hansastr. -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 15776,16721 15875,16816 15866,16823
 Mittelstreifen	3nocross::ignrte -3255,14685 -3209,14662 -3150,14631
 Mittelstreifen	3nocross::ignrte 22883,13013 22924,12833 22967,12647
@@ -4113,7 +4113,6 @@ Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	1::igndisp 9148,1394
 Martin-Luther-Str.: linker Gehweg	1::igndisp 6518,9867 6504,9961
 Martin-Luther-Str.: linker Gehweg	1::igndisp 6492,9782 6518,9867
 Blissestr.: linker Gehweg	1::igndisp 4754,8608 4769,8563
-Hansastr.: linker Gehweg	1::igndisp 15917,16858 15866,16823
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	1::igndisp 10774,9681 10802,9673 10807,9686
 Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	1::igndisp 6022,13330 6012,13338
 Streitstr.: linker Gehweg	1::igndisp -3019,17129 -3009,17090

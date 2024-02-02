@@ -52,7 +52,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
-Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur für Linienverkehr frei	q4::inwork 15832,16846 15866,16823 15875,16816
+Falkenberger Str. - Hansastr: Fahrbahn nur für Linienverkehr frei	q4 15832,16846 15866,16823 15875,16816
 Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt	q3:inwork 12646,16563 12560,16602
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
@@ -1137,7 +1137,7 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fußgänger	q1 15239,13580 15247,13662
 (Park am Fennpfuhl): Fußgänger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fußgänger	q1 15204,14087 15189,14027 15118,13961
-(Park am Fußgänger): Fußgänger, drei Stufen oder verwinkelte Rampe, auf der Parkseite noch weitere zwei Stufen	q3 15256,14237 15204,14087
+(Park am Fußgänger): Fußgänger, drei Stufen oder verwinkelte Rampe, auf der Parkseite noch weitere zwei Stufen	q3 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
 (Park am Fennpfuhl): Fußgänger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fußgänger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Bernhard-Bästlein-Str. - Park am Fennpfuhl): Fußgänger	q1 15354,13998 15267,13967 15254,13899
@@ -2509,6 +2509,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 Colbestr.: eng durch Zweite-Reihe-Parker	q0 14523,12183 14468,11992
 Colbestr.: eng	q0 14468,11992 14416,11815
 Lisa-Fittko-Str.: einige Fußgänger	q1 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
+(Schleizer Str. - Plauener Str.): Fußgänger, Wohngebiet	q3 17406,14986 17415,14906
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3524,7 +3525,6 @@ Invalidenstr.: linker Gehweg bis zur Ampel, ggfs. absteigen	q3::igndisp; 9193,13
 Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6504,9961 6518,9867
 Martin-Luther-Str.: linker Gehweg	q4::igndisp; 6518,9867 6492,9782
 Blissestr.: linker Gehweg	q3::igndisp; 4769,8563 4754,8608
-Hansastr.: linker Gehweg	q3::igndisp; 15866,16823 15917,16858
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	q4::igndisp; 10807,9686 10802,9673 10774,9681
 Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	q3::igndisp; 6012,13338 6022,13330
 Streitstr.: linker Gehweg	q4::igndisp; -3009,17090 -3019,17129

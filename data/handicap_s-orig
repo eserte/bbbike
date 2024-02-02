@@ -47,14 +47,14 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger	q4+ 12558,11920 12617,11888
 #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024)
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-01-17 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2024-02-09 vvv
 # REMOVED --- #: valid: -20231229 vvv
 Landsberger Allee: Engstelle in Hˆhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229
 Matthiasstr.: Sperrung im Einm¸ndungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070
 # REMOVED --- #: valid ^^^
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
@@ -1015,14 +1015,14 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von ˆffentlichen Straﬂenland)
 #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=752922#post752922 (angrenzendes Bauvorhaben)
 #: by: https://www.falkenberger134.de/
-#: XXX Bleibt es bei der ausschlieﬂlichen Busfreigabe oder entsteht hier eine neue Verbindungsstraﬂe? Nebenan gibt es ein Baufeld; evtl. gibt es in Zukunft noch weitere Gehwegbeziehungen?
+#: XXX Bleibt es bei der ausschlieﬂlichen Busfreigabe? Hier gibt es Schranken, sind diese manchmal geschlossen?
 # REMOVED --- #: osm_watch: way id="519370786" version="5"
 #: osm_watch: way id="1169861688" version="5"
 #: osm_watch: note 3678184 4
 #: osm_watch: way id="1219613564" version="4"
-#: last_checked: 2023-11-13
-#: check_frequency: 60d
-Falkenberger Str. - Hansastr: Bauarbeiten, Fahrbahn nur f¸r Linienverkehr frei	q4::inwork 15832,16846 15866,16823 15875,16816
+#: last_checked: 2024-02-02
+#: check_frequency: 30d
+Falkenberger Str. - Hansastr: Fahrbahn nur f¸r Linienverkehr frei	q4 15832,16846 15866,16823 15875,16816
 # 
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # REMOVED (fertig) --- #: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum) --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="1040605739" version="2" --- #: add_fragezeichen: Bis wann dauern die Bauarbeiten an? --- #: XXX laut osm opening_date=2023-12 --- #: last_checked: 2023-12-28 --- #: check_frequency: 30d --- #: next_check: 2023-12-31 --- Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
@@ -2653,7 +2653,7 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15204,14087 15189,14027 15118,13961
 #: note: Gr¸nanlagenschild
-(Park am Fuﬂg‰nger): Fuﬂg‰nger, drei Stufen oder verwinkelte Rampe, auf der Parkseite noch weitere zwei Stufen	q3 15256,14237 15204,14087
+(Park am Fuﬂg‰nger): Fuﬂg‰nger, drei Stufen oder verwinkelte Rampe, auf der Parkseite noch weitere zwei Stufen	q3 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Bernhard-B‰stlein-Str. - Park am Fennpfuhl): Fuﬂg‰nger	q1- 15354,13998 15267,13967 15254,13899
@@ -4685,6 +4685,8 @@ Colbestr.: eng	q0- 14468,11992 14416,11815
 # 
 #: note: Ausschilderung: Gehweg, Radfahrer frei
 Lisa-Fittko-Str.: einige Fuﬂg‰nger	q1 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
+# 
+(Schleizer Str. - Plauener Str.): Fuﬂg‰nger, Wohngebiet	q3 17406,14986 17415,14906
 # 
 ######################### User Contributions #################################
 # 

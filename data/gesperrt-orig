@@ -2456,7 +2456,7 @@ Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21133,11348 21130,11384 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
-Hansastr.: Straßenbahntrasse	3nocross 15662,16649 15735,16698 15776,16721 15875,16816 15917,16858
+Hansastr.: Straßenbahntrasse	3nocross 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
 Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
@@ -3152,6 +3152,7 @@ Drängelgitter	BNP:3::trailer=10 5394,23172
 Drängelgitter	BNP:3::trailer=10 3816,22602
 Drängelgitter	BNP:3::trailer=10 3869,22581
 enges Drängelgitter (60cm)	BNP:5::trailer=no 3101,20649
+#: note: Schranke ist manchmal offen (gesehen: 2024-02-02 17:00)
 Schranke	BNP:3::trailer=10 17201,13510
 Schranke	BNP:3::trailer=10 17200,13530
 Schranke	BNP:3::trailer=10 8470,23986
@@ -3818,6 +3819,7 @@ Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1372212.php
 #: by: https://datenbox.stadt-berlin.de/filr/public-link/file-download/ff8080828a6a2600018b3c77fccb05f5/28322/-3467737955065917509/Bebauungsplanentwurf_B-Plan_1-94.pdf ("Gehrecht")
 #: by: https://entwicklungsstadt.de/reichstagsgebaeude-bau-des-sicherheitsgrabens-startet-2025/
+#: by: https://entwicklungsstadt.de/neues-besucherzentrum-am-reichstag-baustart-erfolgt-2025/ (Fertigstellung des Besucherzentrums nicht vor 2029)
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
 #: osm_watch: note 3977175 3
@@ -3995,7 +3997,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-01-29
+#: last_checked: 2024-02-02
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4847,7 +4849,7 @@ Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
 #: by: https://viz.berlin.de/2023/09/bhf-schoeneweide/
 #: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023) (bis 02.02.2024) (inaktiv)
+#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023) (bis 02.02.2024) (seit November 2023 inaktiv)
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?

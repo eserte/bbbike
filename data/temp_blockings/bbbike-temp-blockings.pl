@@ -20837,7 +20837,10 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
        data  => <<EOF,
 #: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
-	q4::inwork 19766,1796 19898,1704
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-grunauer-strasse-ab-montag-05-februar-2024/ (Köpenicker Str. bis Grünauer Str. 70)
+#: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
+#: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4
+	q3::inwork 19766,1796 19898,1704
 EOF
      },
      { from  => 1336764755, # 2012-05-11 21:32
@@ -38063,7 +38066,7 @@ EOF
        data  => <<EOF,
 #: note: Einbahnstraßenabschnitt etwa 190m lang, im östlichen Bereich
 #: note: laut rbb "bis auf weiteres", go with VIZ
-	q4::inwork; 17608,15010 17562,14992 17231,14979
+	q4::inwork; 17608,15010 17562,14992 17406,14986 17231,14979
 EOF
      },
      { from  => undef, # 
@@ -38482,7 +38485,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
+#: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
+#: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
 #: last_checked: 2023-08-07 (daf)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
@@ -41181,17 +41186,17 @@ EOF
 EOF
      },
      { from  => 1699164000, # 2023-11-05 07:00
-       until => $isodate2epoch->("2024-02-29 17:00:00"), # 1702051200, # 2023-12-08 17:00
+       until => $isodate2epoch->("2024-03-15 17:00:00"), # 1702051200, # 2023-12-08 17:00
        #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, auch Kreuzungsbereich Wildensteiner Str. betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
-       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 29.02.2024 17:00',
+       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 15.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024)
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-01-27 vvv
-#: next_check: 2024-02-29 vvv
+#: next_check: 2024-03-15 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -41469,7 +41474,7 @@ EOF
 #: note: laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
 #: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-01-15 vvv
+#: last_checked: 2024-02-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-28 vvv
 # REMOVED --- #: next_check: 2024-09-30 vvv
@@ -41832,7 +41837,7 @@ EOF
 #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: last_checked: 2024-02-01 (indoor)
+#: last_checked: 2024-02-02 (indoor)
 #: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 EOF

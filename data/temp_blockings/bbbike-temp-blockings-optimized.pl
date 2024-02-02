@@ -2100,7 +2100,10 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
-	q4::inwork 19766,1796 19898,1704
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-grunauer-strasse-ab-montag-05-februar-2024/ (Köpenicker Str. bis Grünauer Str. 70)
+#: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
+#: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4
+	q3::inwork 19766,1796 19898,1704
 ',
          'from' => 1707001200,
          'id' => 2328,
@@ -5607,7 +5610,9 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
+#: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
+#: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
 #: last_checked: 2023-08-07 (daf)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
@@ -6554,11 +6559,11 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024)
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-01-27 vvv
-#: next_check: 2024-02-29 vvv
+#: next_check: 2024-03-15 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -6567,9 +6572,9 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => 1699164000,
          'id' => 3957,
-         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 29.02.2024 17:00',
+         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 15.03.2024 17:00',
          'type' => 'handicap',
-         'until' => 1709222400
+         'until' => 1710518400
        },
        undef,
        {
@@ -6699,7 +6704,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
          'data' => '#: note: laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
 #: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-01-15 vvv
+#: last_checked: 2024-02-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-02-28 vvv
 # REMOVED --- #: next_check: 2024-09-30 vvv
@@ -6946,7 +6951,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: last_checked: 2024-02-01 (indoor)
+#: last_checked: 2024-02-02 (indoor)
 #: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 ',
