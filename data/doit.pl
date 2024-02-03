@@ -345,46 +345,49 @@ sub action_fragezeichen_nextcheck_bbd {
 		 ),
 		"$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my @add_deps = ("$persistenttmpdir/XXX-indoor.bbd", "$persistenttmpdir/XXX-outdoor.bbd");
-    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs, @add_deps) {
-	my $processor = sub {
-	    my($ofh, $src, $with_next_last_check, $with_nonextcheck) = @_;
-	    my $relsrc = File::Spec->abs2rel($src);
-	    $ofh->print(<<"EOF");
+    my @all_srcs = (@srcs, @add_deps);
+    if (_need_daily_rebuild $dest || _need_rebuild $dest, @all_srcs) {
+	_repeat_on_changing_sources(sub {
+	    my $processor = sub {
+		my($ofh, $src, $with_next_last_check, $with_nonextcheck) = @_;
+		my $relsrc = File::Spec->abs2rel($src);
+		$ofh->print(<<"EOF");
 ############################################################
 # source: $relsrc
 EOF
-	    if (!$with_next_last_check) {
-		$ofh->print(<<'EOF');
+		if (!$with_next_last_check) {
+		    $ofh->print(<<'EOF');
 # (without next_check/last_checked)
 EOF
 	    }
-	    if ($with_next_last_check) {
-		$d->run([@grepstrassen, '-directive', 'last_checked~.', '-special', 'nextcheck', $src], '>', '/dev/null');
-		$ofh->print(slurp('/tmp/nextcheck.bbd'));
-		$d->run([@grepstrassen, '-directive', 'next_check~.', '-special', 'nextcheck', $src], '>', '/dev/null');
-		$ofh->print(slurp('/tmp/nextcheck.bbd'));
-	    }
-	    if ($with_nonextcheck) {
-		$ofh->print($d->info_qx(@grepstrassen, '-special', 'nonextcheck', $src));
-	    }
-	};
-	$d->file_atomic_write
-	    ($dest, sub {
-		 my $ofh = shift;
-		 $ofh->print(<<'EOF');
+		if ($with_next_last_check) {
+		    $d->run([@grepstrassen, '-directive', 'last_checked~.', '-special', 'nextcheck', $src], '>', '/dev/null');
+		    $ofh->print(slurp('/tmp/nextcheck.bbd'));
+		    $d->run([@grepstrassen, '-directive', 'next_check~.', '-special', 'nextcheck', $src], '>', '/dev/null');
+		    $ofh->print(slurp('/tmp/nextcheck.bbd'));
+		}
+		if ($with_nonextcheck) {
+		    $ofh->print($d->info_qx(@grepstrassen, '-special', 'nonextcheck', $src));
+		}
+	    };
+	    $d->file_atomic_write
+		($dest, sub {
+		     my $ofh = shift;
+		     $ofh->print(<<'EOF');
 #: line_dash: 8, 5
 #: line_width: 5
 #:
 EOF
-		 for my $src (@srcs) {
-		     $processor->($ofh, $src, 1, 0);
+		     for my $src (@srcs) {
+			 $processor->($ofh, $src, 1, 0);
+		     }
+		     $processor->($ofh, "fragezeichen-orig", 0, 1);
+		     for my $srcfrag (qw(indoor outdoor)) {
+			 $processor->($ofh, "$persistenttmpdir/XXX-$srcfrag.bbd", 1, 1);
+		     }
 		 }
-		 $processor->($ofh, "fragezeichen-orig", 0, 1);
-		 for my $srcfrag (qw(indoor outdoor)) {
-		     $processor->($ofh, "$persistenttmpdir/XXX-$srcfrag.bbd", 1, 1);
-		 }
-	     }
-	    );
+		);
+	}, \@all_srcs);
     }
 }
 
