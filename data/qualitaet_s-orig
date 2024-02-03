@@ -5808,7 +5808,7 @@ Rüdickenstr. [Wohngebiet]: Beton	Q0- 17264,17489 17172,17424 17101,17460 17064,1
 (Grünanlage): wassergebundene Decke	Q1 17004,17471 17185,17388 17377,17309 17392,17315
 Neuzeller Weg: Asphalt/Beton	Q1 16658,17142 16578,17285
 Drossener Str.: Asphalt/Beton	Q1+ 16915,17231 16709,17177 16658,17142 16471,17036 16402,16990 16381,16969
-Tamseler Str.: Asphalt	Q0- 16556,16673 16633,16687 16823,16730 17004,16778
+Tamseler Str.: Asphalt	Q0- 16556,16673 16633,16687 16807,16726 17004,16778
 Gerzlower Str.: Asphalt	Q0- 16806,16496 16718,16545 16622,16569
 Degnerstr.: Asphalt mit einigen Aufpflasterungen	Q0- 16806,16496 16692,16253 16653,16150
 Straße 150: Asphalt	Q1 17569,15561 17640,15583 17707,15443 17706,15420
@@ -6502,7 +6502,9 @@ Ilgenweg: Asphalt	Q0 12318,4099 12375,4023 12384,3975 12382,3932 12328,3831
 (Massiner Weg - Mohriner Allee): wassergebundene Decke	Q1 11978,3722 11838,3831 11768,3950
 Hüfnerweg: Kopfsteinpflaster	Q2 12684,3406 12652,3406 12550,3173 12524,3041 12500,2933
 Hüfnerweg: Wechsel zwischen Verbundsteinpflaster und Kopfsteinpflaster	Q1- 12500,2933 12480,2817 12430,2804
-Douglasienweg: unbefestigte Straße	Q2+ 11563,4099 11633,4117
+#: note: ein paar Meter am westlichen Ende unbefestigt
+Douglasienweg: wassergebundene Decke	Q1- 11563,4099 11594,4107
+Douglasienweg: unbefestigte Straße	Q2+ 11594,4107 11633,4117
 Wochenendweg: Asphalt	Q0 11401,4198 11408,4190 11444,4153 11547,4127
 Hochthronweg: Asphalt	Q1 11064,3461 11168,3488
 Hochtristenweg: Asphalt	Q0 11026,3302 11058,3301 11125,3343 11191,3382
@@ -27832,7 +27834,7 @@ Hinter den Gärten: Beton	Q0 -6700,15653 -6718,15447
 # 
 #: by: Lange Angela
 #: confirmed_by: srt
-Hohengraper Weg: guter Asphalt	Q0- 16684,16457 16718,16545 16823,16730
+Hohengraper Weg: guter Asphalt	Q0- 16684,16457 16718,16545 16807,16709 16807,16726
 # 
 #: by: karsten (...boelter)
 #: note: "enge Straße", aber ohne weitere Kategorisierung
@@ -31843,6 +31845,8 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
+(Hohengraper Weg - Königswalder Str.): unbefestigter Weg	Q2 16807,16726 16772,16852 16751,16931 16723,17004
+(Königswalder Str. - Neuzeller Weg): Verbundsteinpflaster	Q1+ 16723,17004 16692,17080 16658,17142
 (Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21901,5743 21884,5769 21873,5832 21856,5854
 (Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21873,5832 21938,5866
 Cardinalplatz: schlechtes Kopfsteinpflaster	Q3 21912,5724 21896,5724 21901,5743 21910,5748 21916,5740 21912,5724

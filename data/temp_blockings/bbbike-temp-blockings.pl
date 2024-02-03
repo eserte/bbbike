@@ -34792,12 +34792,12 @@ EOF
      { from  => $isodate2epoch->("2023-11-13 00:00:00"), # undef, # 
        until => $isodate2epoch->("2024-03-29 23:59:59"), # 1676574342, # undef, # XXX
        #text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2023)',
-       text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.11.2023 bis 29.03.2024',
+       text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis 29.03.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv)
 #: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024)
-# REMOVED --- #: also_indoor: traffic (ex-B,G,W)
+#: also_indoor: traffic (B,G[falsch])
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
@@ -34806,7 +34806,7 @@ EOF
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
-	q4::inwork 12833,6127 13027,6168
+Jahnstr.	q4::inwork; 12833,6127 13027,6168
 EOF
      },
      { from  => undef, # 
@@ -35129,7 +35129,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2023-12-27 vvv
+#: last_checked: 2024-02-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -37544,7 +37544,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-01-28
+#: last_checked: 2024-02-03
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -41267,7 +41267,7 @@ EOF
 #: by: wosch & osm & mapillary
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: note: allerdings können manchmal die Barrieren so offen sein, dass Radfahrer durchkommen (kann außerhalb der Arbeitszeiten passieren, aber nicht immer)
-#: osm_watch: way id="1151064395" version="5"
+#: osm_watch: way id="1151064395" version="6"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2024-01-31
 #: check_frequency: 30d
@@ -41714,7 +41714,7 @@ EOF
 #: osm_watch: way id="4612406" version="26"
 #: note: Bei der letzten Fahrt waren noch nicht alle Schilder da, insbesondere haben alle "Fahrrad frei"-Zusatzschilder gefehlt.
 #: add_fragezeichen: Sind die Radfahrer-frei-Schilder mittlerweile da?
-#: last_checked: 2024-01-23
+#: last_checked: 2024-02-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-04
 	q4; 10794,10927 10824,11010 10690,11167
@@ -41837,7 +41837,7 @@ EOF
 #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: last_checked: 2024-02-02 (indoor)
+#: last_checked: 2024-02-03 (indoor)
 #: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 EOF

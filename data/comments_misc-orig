@@ -1370,7 +1370,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 (Enckestr. - Friedrichstr.): entlang taz-Gebäude und Besselpark	CS; 9666,10848 9537,10837
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2024-01-21
+#: last_checked: 2024-02-03
 #: check_frequency: 90d
 Mergenthalerring: nicht ausgeschildert	CP2; 14261,8851 14252,8829
 # 
@@ -1674,15 +1674,7 @@ ausgeschildert "Schönegarten 2-10"	CP2; 7330,10590 7337,10587
 Am Karlsbad: Hausdurchfahrt	CP2; 7959,10910 8027,11000
 Am Karlsbad: Hausdurchfahrt	CP2; 8027,11000 7959,10910
 # 
-#: next_check_id: ANDERGAERTNEREI-2022
-#: XXX laut osm "Straßenname vorhanden", siehe https://www.openstreetmap.org/note/3038739
-#: last_checked: 2023-09-23 vvv
-#: check_frequency: 180d vvv
-#: historical_note: "am Bauzaun hängt nur ein provisorisches schwarzes Schild", aber mittlerweile (Sep 2023) nicht mehr
-An der alten Gärtnerei: nicht ausgeschildert	CP2; 10958,3710 10972,3779
-An der alten Gärtnerei: nicht ausgeschildert	CP2; 10879,3719 10888,3787
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (ausgeschildert) --- #: next_check_id: ANDERGAERTNEREI-2022 --- #: XXX laut osm "Straßenname vorhanden", siehe https://www.openstreetmap.org/note/3038739 --- #: last_checked: 2023-09-23 vvv --- #: check_frequency: 180d vvv --- #: historical_note: "am Bauzaun hängt nur ein provisorisches schwarzes Schild", aber mittlerweile (Sep 2023) nicht mehr --- An der alten Gärtnerei: nicht ausgeschildert	CP2; 10958,3710 10972,3779 --- An der alten Gärtnerei: nicht ausgeschildert	CP2; 10879,3719 10888,3787 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 ausgeschildert "Grüner Weg 94, 96, 98"	CP2; 13775,3500 13728,3332
 # 

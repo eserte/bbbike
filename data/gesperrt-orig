@@ -3701,6 +3701,25 @@ Drängelgitter	BNP:3::trailer=10 21494,10816
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: ANDERGAERTNEREI-2022
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.733605.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-77ve/180909_-2-_b-plan-7-77ve_britzer-strasse-a1_ohne-beschnittzeichen.pdf
+#: by: https://www.berliner-woche.de/mariendorf/c-bauen/areal-der-ehemaligen-gaertnerei-in-der-britzer-strasse-wird-bebaut_a193336 (Fertigstellung ... zweite Quartal 2021 anvisiert)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Benennung einer Privatstraße)
+#: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
+#: osm_watch: way id="287142081" version="14"
+#: osm_watch: way id="255588538" version="13"
+#: osm_watch: way id="1022315542" version="8"
+#: osm_watch: way id="1202387366" version="3"
+# REMOVED --- #: osm_watch: way id="271172796" version="6"
+# REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
+#: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
+#: last_checked: 2024-02-03
+#: check_frequency: 120d
+An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
+# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
@@ -3758,11 +3777,11 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/quartierspark-ritterstrasse-wird-auf-wunsch-der-anwohner-aufgehuebscht_a346061
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/schaeden-im-quartierpark-entdeckt_a355859
 #: note: laut Aushang Bauarbeiten bis 26.9.2023 (wurde aber nicht eingehalten)
-#: note: mittlerweile Halteverbot in der Umgebung bis 31.01.2024
+#: note: mittlerweile Halteverbot in der Umgebung bis 31.01.2024, verlängert bis 29.03.2024
 #: priority: #C
-#: last_checked: 2023-12-12
+#: last_checked: 2024-02-03
 #: check_frequency: 60d
-#: next_check: 2024-01-31
+#: next_check: 2024-03-29
 # REMOVED --- #: next_check: 2023-09-26
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
@@ -3997,7 +4016,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-02-02
+#: last_checked: 2024-02-03
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4477,7 +4496,7 @@ Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-01-19
+#: last_checked: 2024-02-03
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4486,7 +4505,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-01-21
+#: last_checked: 2024-02-03
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4496,7 +4515,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2024-01-21 vvv
+#: last_checked: 2024-02-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -4694,7 +4713,7 @@ Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,126
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2024-02-01
+#: last_checked: 2024-02-03
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
