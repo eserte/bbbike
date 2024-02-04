@@ -1906,9 +1906,9 @@ Nesselweg: Poller, Durchfahrt für Kfz nicht möglich	2 8587,21218 8605,21248
 #: osm_watch: note 3910207 1
 #: also_indoor: traffic (G,B)
 #: note: vermutlich seit Mai 2023 provisorisch gesperrt
-#: last_checked: 2023-12-09
+#: last_checked: 2024-02-04
 #: check_frequency: 60d
-#: next_check: 2024-01-31
+# REMOVED --- #: next_check: 2024-01-31
 Rankestr.: Mittelstreifen provisorisch gesperrt	3nocross 5725,10892 5782,10884 5907,10821
 # 
 Stavangerstr.: Einfahrt verboten	1 10886,16893 10883,16824
@@ -2001,6 +2001,7 @@ Majakowskiring: Poller	3 * 10373,18887 *
 Kurfürstenstr.: Mittelstreifen, Fußgängerfurt existiert	3nocross 6471,10851 6607,10801 6740,10755
 # 
 Oberwallstr.	1 9925,11947 9913,12068
+Niederwallstr.	1 9925,11947 9991,11903
 # 
 #: by: https://westnordost.de/p/189569.jpg
 Tucholskystraße/Auguststraße: Diagonalsperre	3 9609,13522 9651,13406 9611,13245

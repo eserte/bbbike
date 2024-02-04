@@ -24,7 +24,7 @@ Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-01-31
+#: last_checked: 2024-02-04
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -58,7 +58,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2024-01-28
+#: last_checked: 2024-02-04
 #: check_frequency: 30d
 #: next_check: 2024-04-09
 #: valid: -20240409
@@ -284,7 +284,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="30"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2024-01-25 (osm)
+#: last_checked: 2024-02-04
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -301,11 +301,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2024-01-23 (mapillary) vvv
+#: last_checked: 2024-02-04 vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
 # REMOVED --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
+Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 10900,12546 10873,12577
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -365,7 +366,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-01-28 (webcam)
+#: last_checked: 2024-02-04
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -655,7 +656,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-01-19 (daf)
+#: last_checked: 2024-02-04
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -677,7 +678,7 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: next_check_id: RANKE-2023
 #: note: Länge des gesperrten Bereichs etwa 20-30m
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2023-12-09
+#: last_checked: 2024-02-04
 #: check_frequency: 60d
 Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 # 
@@ -3511,7 +3512,7 @@ Stelzenweg, Straße 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q
 Rütli-Campus: einige Fußgänger, Schulgelände	q3 12526,9125 12554,9178 12592,9249
 (Ossastr. - Rütlistr.): einige Fußgänger, Schulgelände	q2 12623,9134 12554,9178
 (Kleiner Tiergarten): Fußgänger	q2 6390,13187 6377,13321
-(Einsteinufer - TU-Mathegebäude): Fußgänger	q2 5128,12149 5106,12129 5141,11816
+(Einsteinufer - TU-Mathegebäude): Fußgänger	q2 5132,12136 5105,12118 5141,11816
 (Mauerpark, über den Gleimtunnel): Fußgänger, einige enge Kurven	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630
 (Mauerpark - Lichtburgring): Fußgänger	q2 10071,15684 10057,15680
 # REMOVED --- (Mauerpark, über den Gleimtunnel): Fußgänger, einige enge Kurven	q2 10091,15630 10070,15624
@@ -3742,7 +3743,7 @@ Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822
 #: XXX_prog: BS zumindest an der Alten Potsdamer Str., ansonsten wegen der Fußgänger weiterhin q4
 #: note: früher q3
 (Potsdamer Platz - Linkstr.): Bordstein, Fußgänger	q4 8474,11350 8481,11447
-Alte Potsdamer Str.: Fußgängerzone, Radfahrer frei	q2 8389,11378 8481,11447 8479,11493
+Alte Potsdamer Str.: Fußgängerzone, Radfahrer frei	q2 8280,11296 8318,11324 8375,11368 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 #: XXX_prog relativ steil -> comments_mount?
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
