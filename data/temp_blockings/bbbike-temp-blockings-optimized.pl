@@ -2102,6 +2102,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-grunauer-strasse-ab-montag-05-februar-2024/ (Köpenicker Str. bis Grünauer Str. 70)
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024)
 #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4
 	q3::inwork 19766,1796 19898,1704
@@ -3817,7 +3818,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -3831,7 +3832,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2024-02-05 vvv
+#: next_check: 2024-05-31 vvv
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -3847,7 +3848,7 @@ zwischen Moltkestr. und Tietzenweg	q4::inwork; 3934,4441 3643,4232
 ',
          'from' => 1622356200,
          'id' => 3261,
-         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis 5. Februar 2024, vermutlich noch länger',
+         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Mai 2024, vermutlich noch länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4644,8 +4645,8 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
          'data' => '#: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: osm_watch: way id="36738527" version="44"
-#: osm_watch: note 4090527 1
+#: osm_watch: way id="1246171055" version="1"
+#: osm_watch: note 4090527 4
 #: last_checked: 2024-02-01
 #: check_frequency: 60d
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
@@ -4978,7 +4979,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0
 #: osm_watch: note 4052359 1
-#: osm_watch: way id="1117348911" version="3"
+#: osm_watch: way id="1117348911" version="4"
 #: also_indoor: traffic (G.B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -6567,13 +6568,13 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2023-12-26 (mapillary)
+#: last_checked: 2024-02-04 (wosch)
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 9462,18234 9460,18053
 ',
          'from' => 1699340417,
          'id' => 3959,
-         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023, vermutlich noch länger',
+         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6711,14 +6712,15 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q3::inwork 17056,12304 17088,12506
        },
        {
          'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024)
+#: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024)
 #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
 	q4::inwork 5189,9397 5189,8983
 ',
          'from' => 1701064800,
          'id' => 3978,
-         'text' => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 bis 09.02.2024',
+         'text' => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 bis 18.04.2024',
          'type' => 'handicap',
-         'until' => 1707494400
+         'until' => 1713452400
        },
        undef,
        undef,
@@ -6939,7 +6941,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A
-#: last_checked: 2024-02-04 (indoor)
+#: last_checked: 2024-02-05 (indoor)
 #: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 ',

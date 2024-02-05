@@ -34,7 +34,8 @@ Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inw
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11284 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1399078.php (Bauarbeiten an der Schule: Frühjahr/Sommer 2024 bis Schuljahresbeginn 2026/2027)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/erbbaurechtsvertrag-fuer-neue-heinrich-hertz-schule-unterschrieben_a403443
-#: osm_watch: way id="1054730129" version="6"
+#: osm_watch: way id="1054730129" version="7"
+#: osm_watch: way id="295548381" version="8"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: last_checked: 2023-12-12
 #: check_frequency: 90d
@@ -745,7 +746,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: also_indoor: traffic (B)
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
-#: osm_watch: note 4098252 1
+#: osm_watch: note 4098252 2
 #: last_checked: 2024-02-03
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
@@ -1028,7 +1029,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: XXX Bleibt es bei der ausschließlichen Busfreigabe? Hier gibt es Schranken, sind diese manchmal geschlossen?
 # REMOVED --- #: osm_watch: way id="519370786" version="5"
 #: osm_watch: way id="1169861688" version="5"
-#: osm_watch: note 3678184 4
+#: osm_watch: note 3678184 5
 #: osm_watch: way id="1219613564" version="4"
 #: last_checked: 2024-02-02
 #: check_frequency: 30d
@@ -4662,7 +4663,10 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 (Weg am Beerenpfuhlgraben): Grünanlage, einige Fußgänger	q1 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Grünanlage, einige Fußgänger	q1 23521,14973 23529,14973 23543,14966
 # 
-Singerstr.: Fußgängerzone für Radfahrer frei, höherer Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
+#: last_checked: 2024-02-04
+#: check_frequency: 90d
+Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031

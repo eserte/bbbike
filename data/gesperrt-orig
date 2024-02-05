@@ -4310,6 +4310,8 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate)
 # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9"
 #: osm_watch: way id="43205335" version="3"
+#: osm_watch: way id="298416172" version="12"
+#: osm_watch: note 4100166 1
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: XXX wird abgerissen und neu gebaut
 #: last_checked: 2024-02-04 (wosch)
@@ -4569,7 +4571,7 @@ George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inw
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX mittlerweile bis zur Georgenstr. ausgeweitet, check_frequency deswegen angepasst
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
-#: osm_watch: note 3954448 1
+#: osm_watch: note 3954448 2
 #: last_checked: 2024-01-31
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
@@ -4689,7 +4691,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-01-28 (webcam)
+#: last_checked: 2024-02-04 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -5179,7 +5181,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="35"
 #: also_indoor: traffic
-#: last_checked: 2023-12-28 (mapillary)
+#: last_checked: 2024-02-05 (daf)
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
