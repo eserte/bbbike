@@ -1901,7 +1901,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="16" vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2023-12-16 (mapillary) vvv
+#: last_checked: 2024-02-04 (mapillary) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-09-30 vvv
 #: by: mapillary
@@ -6447,7 +6447,7 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="9"
-#: last_checked: 2024-01-07 (mapillary)
+#: last_checked: 2024-02-04 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
@@ -13441,6 +13441,8 @@ Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,1
 (An der Müggelspree): Asphalt	Q0 23461,5054 23409,5035
 # 
 (Hansastr. - Falkenberger Str.): Asphalt	Q0 15929,16870 15888,16865
+# 
+(Schönhauser Str. - Zitherstr.): unbefestigter Weg	Q2 11599,20973 11657,20915
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -21366,8 +21368,12 @@ Drostestr.: Verbundsteinpflaster	Q1 2992,19578 3005,19466 2988,19445
 Borsigwalder Weg: Kopfsteinpflaster	Q2 2865,19562 2962,19687 3021,19780
 #: by: ^^^
 # 
-#: by: Katharina (sieland):
-Goethestr. (Wilhelmsruh): schlechtes Kopfsteinpflaster	Q3 7117,20181 7201,20161 7506,20170 7695,20175 7790,20132
+#: by: Katharina (sieland): vvv
+#: corrected_by: mapillary (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Goethestr. (Wilhelmsruh): unbefestigt	Q2 7117,20181 7201,20161
+#: corrected_by: mapillary (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht?)
+Goethestr. (Wilhelmsruh): Asphalt	Q0 7201,20161 7506,20170 7695,20175 7790,20132
+#: by ^^^
 # 
 #: by: Wilfried Flade: vvv
 #: confirmed_by: anonymous (Q1)

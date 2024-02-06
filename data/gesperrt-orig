@@ -1702,6 +1702,8 @@ Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
 ###################################################################### 
 # elsewhere in Brandenburg
 # 
+#: by: osm, mapilio
+Marwitzer Str. (Falkensee)	1 -10239,17791 -10344,17792 -10417,17770
 Osramplatz (Hohen Neuendorf)	1 1261,28406 1229,28298 1198,28265
 Osramplatz (Hohen Neuendorf)	1 1167,28295 1194,28320 1221,28418
 Ruhlsdorfer Platz	1 1492,-697 1495,-747
@@ -3805,7 +3807,7 @@ Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1069263934" version="9"
-#: last_checked: 2023-08-19
+#: last_checked: 2024-02-06 (daf)
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
@@ -3907,7 +3909,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 # 
 #: next_check_id: MAUERPARK-2022
 #: osm_watch: way id="30441457" version="31"
-#: last_checked: 2023-12-11 (mapillary)
+#: last_checked: 2024-02-04 (mapillary)
 #: check_frequency: 60d
 Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # 
@@ -4314,7 +4316,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: osm_watch: note 4100166 1
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2024-02-04 (wosch)
+#: last_checked: 2024-02-04 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
@@ -4685,7 +4687,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-01-28 (webcam)
+#: last_checked: 2024-02-06
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -4698,12 +4700,12 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-06
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-06
 #: check_frequency: 14d
 Littenstr.: Anbindung an die Grunerstr. gesperrt	2::inwork 10973,12611 10951,12637
 # 

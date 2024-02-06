@@ -5089,7 +5089,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B,H,G) vvv
-#: last_checked: 2024-01-20 (mapillary) vvv
+#: last_checked: 2024-02-04 (mapillary) vvv
 #: check_frequency: 30d vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 # REMOVED (hier nicht mehr) --- nur Gehweg frei	q4::inwork 7630,20698 7616,20633
@@ -5101,7 +5101,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 ',
          'from' => undef,
          'id' => 3647,
-         'text' => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Anfang Januar 2024: abschnittsweise nur der Gehweg frei)',
+         'text' => 'Uhlandstr.: Fahrbahn zwischen Buchhorster Str. und Friedhof kann wegen Bauarbeiten gesperrt sein (Stand: Anfang Februar 2024: abschnittsweise nur der Gehweg frei)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5909,7 +5909,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024)
-#: last_checked: 2024-01-23 (mapillary)
+#: last_checked: 2024-02-04 (mapillary)
 #: next_check: 2024-02-29
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -6028,7 +6028,7 @@ Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; wurden nicht verlängert; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
-#: last_checked: 2024-01-03 vvv
+#: last_checked: 2024-02-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-11-17
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -6164,14 +6164,14 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
          'until' => 1709247599
        },
        {
-         'data' => '#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024)
+         'data' => '#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024)
 	2::inwork -19289,63424 -19675,64106
 ',
          'from' => 1692511200,
          'id' => 3884,
-         'text' => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 01.03.2024, 17:00 Uhr',
+         'text' => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 13.02.2024, 17:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1709308800
+         'until' => 1707840000
        },
        undef,
        undef,
@@ -6661,18 +6661,7 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'until' => 1709308800
        },
        undef,
-       {
-         'data' => '#: next_check_id: GROSSBEEREN-2023
-# REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25
-#: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024)
-	q3::inwork 9178,10451 9192,10528
-',
-         'from' => 1706641941,
-         'id' => 3973,
-         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.01.2024 06:00 bis 06.02.2024 12:00',
-         'type' => 'handicap',
-         'until' => 1707217200
-       },
+       undef,
        undef,
        undef,
        {
@@ -6940,8 +6929,9 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        {
          'data' => '#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
 #: also_indoor: traffic (H,G,B,W)
+#: note: laut rbb "bis auf Weiteres"
 #: priority: #A
-#: last_checked: 2024-02-05 (indoor)
+#: last_checked: 2024-02-06 (indoor)
 #: check_frequency: 2d
 	2::inwork -298,2577 -197,2634 -155,2658
 ',
@@ -6972,6 +6962,16 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'text' => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 08.03.2024 17:00',
          'type' => 'handicap',
          'until' => 1709913600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
+	q4::inwork 3450,12722 3370,12725 3291,12721
+',
+         'from' => 1707087600,
+         'id' => 4005,
+         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., evtl. sind auch Radfahrer betroffen, vom 06.02.2024 00:00 bis 02.08.2024 23:59',
+         'type' => 'handicap',
+         'until' => 1722635940
        }
      
 );
