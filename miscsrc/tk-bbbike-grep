@@ -8,6 +8,9 @@ use warnings;
 use Tk;
 use Tk::ROText;
 
+# Configuration: Refresh interval in seconds
+my $refresh_interval = 1;
+
 # Create main window
 my $mw = MainWindow->new;
 $mw->title("Emacs Grep-mode Simulation");
@@ -22,6 +25,10 @@ my $grep_entry = $top_frame->Entry->pack(-side => 'left', -expand => 1, -fill =>
 $grep_entry->insert("end", "Dudenstr");
 my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
 
+my $update_var = 0;
+my $checkbox = $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$update_var, -command => \&toggle_update)->pack(-side => 'bottom');
+my $timer;
+
 # Create ROText widget to display grep output
 my $rotext = $bottom_frame->Scrolled('ROText', -wrap => 'none')->pack(-side => 'left', -fill => 'both', -expand => 1);
 $rotext->tagConfigure('clickable', -foreground => 'blue', -underline => 1);
@@ -32,10 +39,12 @@ MainLoop;
 # Function to run grep command
 sub run_grep {
     my $grep_word = $grep_entry->get;
-    my @output = `$ENV{HOME}/src/bbbike/miscsrc/bbbike-grep -n $grep_word`;
+    open my $fh, '-|', "$ENV{HOME}/src/bbbike/miscsrc/bbbike-grep", "-n", $grep_word or die $!;
+    binmode $fh, ':utf8';
+    my @output = <$fh>;
     $rotext->delete('1.0', 'end');
     foreach my $line (@output) {
-warn "<$line>";
+#warn "<$line>";
         if ($line =~ /^(.*?):(\d+):(.*)$/) {
             my $filename = $1;
             my $line_number = $2;
@@ -50,7 +59,7 @@ sub display_file {
     my $index = shift;
     #my $clicked_line = $rotext->get($index);
     my $clicked_line = $rotext->get('current linestart', 'current lineend');
-warn "<$clicked_line>";
+#warn "<$clicked_line>";
     if ($clicked_line =~ /^(.*?):(\d+):/) {
         my $filename = $1;
         my $line_number = $2;
@@ -58,5 +67,36 @@ warn "<$clicked_line>";
 	my $cmd = "emacsclient -n +$line_number $filename";
 	warn $cmd;
         system($cmd);
+    }
+}
+
+# Function to toggle regular updating
+sub toggle_update {
+    if ($update_var) {
+        update_selection_content();
+        $timer = $mw->repeat($refresh_interval * 1000, [\&update_selection_content]);
+    } else {
+        $mw->afterCancel($timer) if defined $timer;
+    }
+}
+
+# Function to update selection content
+sub update_selection_content {
+    my $selection_content;
+    eval {
+        $selection_content = $mw->SelectionGet(-selection => 'PRIMARY');
+    };
+    if ($@) {
+        $selection_content = "";
+	return;
+    }
+    $selection_content =~ s/\n.*$//;  # Crop after the first line
+    if (length($selection_content) > 50) {
+        $selection_content = substr($selection_content, 0, 47) . '...';
+    }
+    my $old_content = $grep_entry->get();
+    if ($old_content ne $selection_content) {
+	$grep_entry->configure(-text => $selection_content);
+	run_grep();
     }
 }
