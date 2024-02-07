@@ -1996,7 +1996,7 @@ ${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 frage
 		> $@~
 	mv $@~ $@
 
-check-nearest-ignore-remove-unconsumed:
+check-nearest-ignore-remove-outdated:
 	${PERL} ${MISCSRCDIR}/check_nearest -ignore check_nearest_ignore \
 		-asbbd \
 		-strfile strassen \
@@ -2005,7 +2005,7 @@ check-nearest-ignore-remove-unconsumed:
 		-strfile fragezeichen \
 		-strfile brunnels \
 		-strfile faehren \
-		-remove-unconsumed-ignore \
+		-remove-outdated-ignore \
 		> /dev/null
 
 do-check-nearest:	.check-do-check-nearest

@@ -28,8 +28,8 @@ my $map;
 my $use_orig_map;
 my $as_bbd;
 my $ignore_file;
-my $show_unconsumed_ignore;
-my $remove_unconsumed_ignore;
+my $show_outdated_ignore;
+my $remove_outdated_ignore;
 GetOptions("v!" => \$verbose,
 	   "datadir=s" => sub {
 	       my $dir = $_[1];
@@ -43,8 +43,8 @@ GetOptions("v!" => \$verbose,
 	   "useorigmap!" => \$use_orig_map,
 	   "asbbd" => \$as_bbd,
 	   "ignore=s" => \$ignore_file,
-	   "show-unconsumed-ignore" => \$show_unconsumed_ignore,
-	   "remove-unconsumed-ignore" => \$remove_unconsumed_ignore,
+	   "show-outdated-ignore" => \$show_outdated_ignore,
+	   "remove-outdated-ignore" => \$remove_outdated_ignore,
 	  ) or usage();
 
 usage() if (@ARGV);
@@ -97,7 +97,6 @@ my $kr = new Kreuzungen Hash => $crossings;
 $kr->make_grid;
 
 my $ignore = {};
-my %ignore_consumed;
 if (defined $ignore_file) {
     print STDERR "reading ignore file...\r" if $verbose;
     my $ignore_s = Strassen->new($ignore_file);
@@ -109,6 +108,7 @@ if (defined $ignore_file) {
 	$ignore->{$c1}{$c2} = 1;
 	$ignore->{$c2}{$c1} = 1;
     }
+    print STDERR "\n" if $verbose;
 }
 
 print STDERR "searching...\r" if $verbose;
@@ -153,7 +153,6 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
 	@outc = @{$c}[0, 1];
     }
     if ($ignore->{$outc[0]}{$outc[1]}) {
-	$ignore_consumed{$outc[0]}{$outc[1]} = 1;
 	next;
     }
     my $dist = $c->[2];
@@ -172,20 +171,20 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
 print STDERR "\n" if $verbose;
 
 {
-    my %ignore_unconsumed;
-    if ($show_unconsumed_ignore || $remove_unconsumed_ignore) {
+    my %outdated_ignore;
+    if ($show_outdated_ignore || $remove_outdated_ignore) {
 	while(my($k,$v) = each %$ignore) {
 	    while(my($k2,$v2) = each %$v) {
-		if (!$ignore_consumed{$k}{$k2} && !$ignore_consumed{$k2}{$k}) {
-		    print STDERR "UNCONSUMED: $k $k2\n";
-		    $ignore_unconsumed{$k}{$k2} = 1;
+		if (!$net->{Net}{$k} || !$net->{Net}{$k2} || exists $net->{Net}{$k}{$k2} || exists $net->{Net}{$k2}{$k}) {
+		    print STDERR "OUTDATED: $k $k2\n";
+		    $outdated_ignore{$k}{$k2} = 1;
 		}
 	    }
 	}
     }
-    if ($remove_unconsumed_ignore && keys %ignore_unconsumed) {
+    if ($remove_outdated_ignore && keys %outdated_ignore) {
 	if (!defined $ignore_file) {
-	    die "-remove-unconsumed-ignore must operate on an 'ignore' file";
+	    die "-remove-outdated-ignore must operate on an 'ignore' file";
 	}
 	open my $fh, "<", $ignore_file
 	    or die "Can't open $ignore_file: $!";
@@ -201,10 +200,9 @@ print STDERR "\n" if $verbose;
 		} else {
 		    my @c = @{ $r->[Strassen::COORDS] };
 		    if (
-			$ignore_unconsumed{$c[0]}{$c[1]} ||
-			$ignore_unconsumed{$c[1]}{$c[0]}
+			$outdated_ignore{$c[0]}{$c[1]}
 		       ) {
-			# ignore
+			# remove
 			next;
 		    } else {
 			# pass
@@ -231,7 +229,7 @@ check_nearest - return list of nearest non-connected neighbors
     perl check_nearest [-useorigmap] [-map mapname] [-maxdist distance]
                        [-datadir directory] [-strfile bbdfile [-strfile ...]]
 		       [-asbbd] [-ignore ignorefile] [-v]
-		       [-show-unconsumed-ignore] [-remove-unconsumed-ignore]
+		       [-show-outdated-ignore] [-remove-outdated-ignore]
 
 =head1 DESCRIPTION
 
@@ -283,14 +281,30 @@ Output as a bbd stream.
 
 Ignore the coordinate pairs listet in bbdfile.
 
-=item -show-unconsumed-ignore
+=item -show-outdated-ignore
 
-Show list of unconsumed coordinate pairs in the given C<-ignore> file.
+Show list of outdated coordinate pairs in the given C<-ignore> file.
 
-=item -remove-unconsumed-ignore
+A coordinate pair is considered outdated if
 
-Show and remove unconsumed coordinate pairs in the given C<-ignore>
+=over
+
+=item one or both coordinates are not in the net anymore
+
+=item there's a direct connection between both coordinates
+
+=back
+
+Formerly an option C<-show-unconsumed-ignore> existed, but it was
+removed because of unclear semantics.
+
+=item -remove-outdated-ignore
+
+Show and remove outdated coordinate pairs in the given C<-ignore>
 file.
+
+Formerly an option C<-remove-unconsumed-ignore> existed, but it was
+removed because of unclear semantics.
 
 =back
 
