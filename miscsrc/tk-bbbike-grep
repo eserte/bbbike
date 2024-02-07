@@ -1,0 +1,62 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Tk;
+use Tk::ROText;
+
+# Create main window
+my $mw = MainWindow->new;
+$mw->title("Emacs Grep-mode Simulation");
+
+# Create frames
+my $top_frame = $mw->Frame->pack(-side => 'top', -fill => 'x');
+my $bottom_frame = $mw->Frame->pack(-side => 'bottom', -fill => 'both', -expand => 1);
+
+# Create entry and button for grep-like command
+$top_frame->Label(-text => "Enter what to grep:")->pack(-side => 'left');
+my $grep_entry = $top_frame->Entry->pack(-side => 'left', -expand => 1, -fill => 'x');
+$grep_entry->insert("end", "Dudenstr");
+my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
+
+# Create ROText widget to display grep output
+my $rotext = $bottom_frame->Scrolled('ROText', -wrap => 'none')->pack(-side => 'left', -fill => 'both', -expand => 1);
+$rotext->tagConfigure('clickable', -foreground => 'blue', -underline => 1);
+$rotext->tagBind('clickable', '<Button-1>', sub { display_file($rotext->index('current')); });
+
+MainLoop;
+
+# Function to run grep command
+sub run_grep {
+    my $grep_word = $grep_entry->get;
+    my @output = `$ENV{HOME}/src/bbbike/miscsrc/bbbike-grep -n $grep_word`;
+    $rotext->delete('1.0', 'end');
+    foreach my $line (@output) {
+warn "<$line>";
+        if ($line =~ /^(.*?):(\d+):(.*)$/) {
+            my $filename = $1;
+            my $line_number = $2;
+            my $matching_text = $3;
+            $rotext->insert('end', "$filename:$line_number:$matching_text\n", 'clickable');
+        }
+    }
+}
+
+# Function to display file at clicked line
+sub display_file {
+    my $index = shift;
+    #my $clicked_line = $rotext->get($index);
+    my $clicked_line = $rotext->get('current linestart', 'current lineend');
+warn "<$clicked_line>";
+    if ($clicked_line =~ /^(.*?):(\d+):/) {
+        my $filename = $1;
+        my $line_number = $2;
+        # Call emacsclient with filename and line number
+	my $cmd = "emacsclient -n +$line_number $filename";
+	warn $cmd;
+        system($cmd);
+    }
+}
