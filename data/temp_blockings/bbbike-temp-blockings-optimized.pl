@@ -3931,7 +3931,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2023-11-18
+#: last_checked: 2024-02-07
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4481,57 +4481,7 @@ Jahnstr.	q4::inwork; 12833,6127 13027,6168
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Ringstraße und Baseler Straße beendet? vvv
-# 
-#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
-#: source_id: viz2021:13.287063,52.432721,01.03.2021,07:00 (mittlerweile nur bis 31.1.2022, aber siehe unten) (inaktiv)
-#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
-#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (inaktiv)
-#: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
-#: source_id: viz2021:13.29541,52.43779,21.12.2022,14:37 (bis 31.03.2023) (inaktiv)
-#: source_id[inactive]: bvg2021:188#BVG296003_0
-#: source_id: viz2021:13.293116,52.436827,31.01.2022,07:00 (bis 31.3.2023) (bis 31.05.2023) (bis 19.7.2023) (inaktiv)
-#: source_id: viz2021:13.29541,52.43779,30.03.2023,12:14 (Baseler Str., bis 31.05.2023) (inaktiv)
-#: source_id: viz2021:13.295715,52.43793,06.11.2023,07:00 (Verengung in der Ringstr., bis 24.11.2023) (inaktiv)
-#: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
-#: also_indoor: traffic (G,ex-H,B) vvv
-# REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
-# REMOVED --- #: last_checked: 2023-08-05 vvv --- #: check_frequency: 180d vvv --- #: next_check: 2023-07-19 vvv
-# REMOVED (hier nicht mehr) ---	q3::inwork 3011,3303 2778,3132
-# REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
-# REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
-# REMOVED (hier nicht mehr) ---	q4::inwork 2655,3025 2594,3009
-# REMOVED (hier nicht mehr) ---	q4::inwork 2632,2969 2594,3009
-# REMOVED ---	q4::inwork; 3507,3654 3375,3559 3228,3455 3184,3427
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: note: bei rbb bis 31.10.2022
-#: last_checked: 2023-09-14 vvv
-# REMOVED --- #: next_check: 2023-07-19 vvv
-# REMOVED (hier nicht mehr) --- Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
-# REMOVED (hier nicht mehr) --- Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
-# REMOVED (hier nicht mehr) --- Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
-Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
-# REMOVED --- #: next_check ^^^
-#: last_checked ^^^
-# 
-#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022) (bis 31.3.2023) (bis 31.05.2023) (bis 19.07.2023) (inaktiv)
-#: last_checked: 2023-09-14
-# REMOVED --- #: next_check: 2023-07-19
-östlich Drakestr.	q4::inwork 3558,3688 3507,3654
-#: also_indoor ^^^
-# REMOVED --- #: XXX ^^^
-#: source_id ^^^
-# 
-#: add_fragezeichen ^^^
-',
-         'from' => 1614492000,
-         'id' => 3502,
-         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei; außerdem Sperrung der Fahrbahn im Zuge der Baseler Str.',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4630,7 +4580,7 @@ Einfahrt Baseler Str.: Fahrbahn gesperrt	q3::inwork 3184,3427 3174,3052
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-01-13
+#: last_checked: 2024-02-07
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -4782,7 +4732,28 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php
+#: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/05/BVG-PLUS-06-23-barrierefrei-1.pdf
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1334239.php
+#: by: https://nitter.cz/VIZ_Berlin/status/1669039498230116352#m
+#: by: https://viz.berlin.de/2023/06/blumberger-damm-bruecke-2/
+#: by: https://nitter.cz/VIZ_Berlin/status/1669933639965237248#m (Rad/Fuß nur Sa 8:00 bis So 19:00 betroffen)
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl2Nl85LVhvQUFoVU13LnBuZw==
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1413585.php (Sperrung im Februar 2024)
+#: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr) (inaktiv)
+#: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
+#: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023) (inaktiv)
+	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
+',
+         'from' => 1707368400,
+         'id' => 3571,
+         'text' => 'Blumberger Damm: Sperrung der Blumberger-Damm-Brücke zwischen Altentreptower Str. und Frankenholzer Weg, 09. Februar 2024 06:00 Uhr bis 12. Februar 2024 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1707764400
+       },
        undef,
        undef,
        {
@@ -4980,7 +4951,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: source_id: bvg2021:396#BVG339330_0
 #: osm_watch: note 4052359 1
 #: osm_watch: way id="1117348911" version="4"
-#: also_indoor: traffic (G.B[zu viel])
+#: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
@@ -5182,7 +5153,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-02-03
+#: last_checked: 2024-02-07
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -5541,9 +5512,8 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
-#: osm_watch: way id="1171918026" version="4"
 #: osm_watch: way id="151353924" version="12"
-#: last_checked: 2023-12-30 vvv
+#: last_checked: 2024-02-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
@@ -5969,7 +5939,7 @@ Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2024-01-28 vvv
+#: last_checked: 2024-02-07 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-02-16 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -6263,7 +6233,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 #: osm_watch: way id="1207706195" version="1"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m
-#: last_checked: 2024-01-13
+#: last_checked: 2024-02-07
 #: check_frequency: 120d
 #: next_checj: 2026-03-31
 	q4::inwork; 12407,8177 12545,8209
@@ -6277,7 +6247,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (B,G)
+         'data' => '#: also_indoor: traffic (ex-B,ex-G)
 #: note: Endedatum per Halteverbotsschilder (dauert aber länger)
 # REMOVED (im Kreuzungsbereich mittlerweile keine Einschränkungen) --- #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
 #: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
@@ -6489,7 +6459,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: osm_watch: way id="23755961" version="23"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
-#: osm_watch: note 4053376 2
+#: osm_watch: note 4053376 3
 #: osm_watch: way id="1149365724" version="3"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
@@ -6815,7 +6785,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        {
          'data' => '#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-05 (mapillary)
 # REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 ',
@@ -6926,21 +6896,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        },
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer gesperrt?
-#: also_indoor: traffic (H,G,B,W)
-#: note: laut rbb "bis auf Weiteres"
-#: priority: #A
-#: last_checked: 2024-02-06 (indoor)
-#: check_frequency: 2d
-	2::inwork -298,2577 -197,2634 -155,2658
-',
-         'from' => undef,
-         'id' => 4002,
-         'text' => 'Königsweg: Straße zwischen Hohentwielsteig und Anhaltinerstr. gesperrt, evtl. sind auch Radfahrer betroffen',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1410970.php
 	q4::inwork 19579,753 19559,696 19507,556

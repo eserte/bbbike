@@ -59,7 +59,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-07
 #: check_frequency: 30d
 #: next_check: 2024-04-09
 #: valid: -20240409
@@ -83,7 +83,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-02-03
+#: last_checked: 2024-02-07
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -985,7 +985,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 # REMOVED --- #: osm_watch: way id="1056377427" version="3"
 #: osm_watch: way id="1032897295" version="9"
 #: osm_watch: way id="1056377426" version="5"
-#: also_indoor: traffic (G,ex-H,B)
+#: also_indoor: traffic (ex-G,ex-H,B)
 #: priority: #A
 #: last_checked: 2023-11-19 (architektur-urbanistik)
 #: check_frequency: 180d
@@ -3276,6 +3276,7 @@ Schalloppstr.: Bordsteine, einige Fußgänger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fußgänger, Steigung	q2; -141,10389 -172,10409 -230,10409 -276,10380 -295,10325 -287,10243 -297,10190 -393,9972 -574,9832 -615,9831 -641,9882
 (zum Teufelsberg): einige Fußgänger, Gefälle	q1; -641,9882 -615,9831 -574,9832 -393,9972 -297,10190 -287,10243 -295,10325 -276,10380 -230,10409 -172,10409 -141,10389
 (zum Teufelsberg): einige Fußgänger, eng	q1 -641,9882 -720,9861 -769,9856
+#: note: Radfahrer werden mit informellen Schildern zum Absteigen gebeten
 Alfred-Scholz-Platz: Fußgänger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
 Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964

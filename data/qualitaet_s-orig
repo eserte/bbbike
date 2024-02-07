@@ -133,7 +133,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2023-12-20
+#: last_checked: 2024-02-07
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -379,7 +379,7 @@ Reichenberger Str.: Kopfsteinpflaster	Q2 12229,10014 12398,9938 12556,9862 12714
 Reichenberger Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradwege	Q1- 12714,9792 12834,9738
 Reichenberger Str.: Kopfsteinpflaster	Q2 12834,9738 12935,9689
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
-Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4623,8457
+Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4629,8461
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
 Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
@@ -924,7 +924,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2024-01-13
+#: last_checked: 2024-02-07
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1680,7 +1680,7 @@ Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3766,4058 3787,4053 3936,4014
 Augustastr.: Kopfsteinpflaster, OK	Q1- 4234,4020 4385,4032 4551,4042
 #: by: Adrian Fiedler vvv
 #: confirmed_by: srt
-Augustastr.: Kopfsteinpflaster	Q2 3558,3688 3627,3740 3719,3806
+Augustastr.: Kopfsteinpflaster	Q2 3558,3688 3600,3720 3627,3740 3719,3806
 #: confirmed_by: srt
 Augustastr.: Asphalt	Q0 3719,3806 3870,3914 3946,3967
 #: confirmed_by: srt
@@ -7739,9 +7739,9 @@ Schefferweg: schlechtes Kopfsteinpflaster	Q3 7424,2400 7425,2461
 Lauenburger Platz: Verbundsteinpflaster	Q1 6014,6160 6019,6087 6008,6067
 Chlumer Str.: Kleinsteinpflaster	Q2 4008,4555 4039,4500
 Prausestr.: schlechtes Kopfsteinpflaster	Q3 3467,4247 3575,4306
-#: note: teilweise interpoliert
-Ringstr.: Kopfsteinpflaster	Q2 3558,3688 3691,3692 3809,3589 3959,3444 4048,3355 4102,3301 4154,3249 4276,3202
+Ringstr.: Kopfsteinpflaster	Q2 3558,3688 3612,3702 3691,3692 3809,3589 3959,3444 4048,3355 4102,3301 4154,3249 4276,3202
 Ringstr.: Asphalt	Q0 4276,3202 4330,3190 4350,3161
+(Ringstr. - Augustastr.): Kopfsteinpflaster	Q2 3612,3702 3600,3720
 Wüllenweberweg: schlechtes Kopfsteinpflaster, teilweise zugeparkte enge Asphaltstreifen	Q3 4276,3202 4303,3260 4342,3366
 Murtener Str.: glatt gepflastert	Q1- 2740,2588 2809,2615 2959,2608 3015,2606
 Murtener Str.: Asphalt	Q0 3015,2606 3163,2598
@@ -12303,8 +12303,8 @@ Händelplatz: Beton	Q0- 4568,4789 4543,4820
 # REMOVED --- (provisorische Zufahrt zum Benjamin Franklin): Feinschotter	Q1 4947,3672 4944,3695 4926,3749
 # REMOVED --- (provisorische Zufahrt zum Benjamin Franklin): Feinschotter	Q1 5110,4179 5130,4195 5131,4207
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238
-Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053
-Klingsorstr.: schadhafter Asphalt	Q1+ 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
+Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053 4551,4042
+Klingsorstr.: schadhafter Asphalt	Q1 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
 # REMOVED (confirmed) --- #: next_check_id: KLINGSOR-2023 --- #: add_fragezeichen: Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert? --- #: XXX bei osm von intermediate auf good verbessert, trotzdem mal nachschauen! --- #: osm_watch: way id="149994023" version="20" --- #: osm_watch[closed]: note 3989114 2 --- #: last_checked: 2023-09-14 --- #: next_check: 2023-11-15
 #: historical_note: früher: schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
@@ -13042,11 +13042,8 @@ Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 # REMOVED (im westlichen Abschnitt passiert nichts) --- #: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet --- #: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv) --- #: last_checked: 2023-11-21 --- #: next_check: 2023-12-01
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10250,9233
-#: next_check_id: BERGMANN-2023
-#: XXX Schäden vor allem am Fahrbahnrand, wo man nun fahren muss, in der Fahrbahnmitte wäre es Q0-
-#: last_checked: 2024-01-28
-#: check_frequency: 120d
-Bergmannstr.: Asphalt mit Schäden	Q1+ 10250,9233 10366,9233
+# REMOVED --- #: next_check_id: BERGMANN-2023 --- #: XXX Schäden vor allem am Fahrbahnrand, wo man nun fahren muss, in der Fahrbahnmitte wäre es Q0- --- #: last_checked: 2024-01-28 --- #: check_frequency: 120d --- Bergmannstr.: Asphalt mit Schäden	Q1+ 10250,9233 10366,9233
+Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10250,9233 10366,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige leichte Schäden, Q0-
 Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige Querrillen, Q0-
@@ -13443,6 +13440,9 @@ Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,1
 (Hansastr. - Falkenberger Str.): Asphalt	Q0 15929,16870 15888,16865
 # 
 (Schönhauser Str. - Zitherstr.): unbefestigter Weg	Q2 11599,20973 11657,20915
+# 
+Brabanter Platz: Asphalt	Q0 4531,8319 4530,8364 4521,8379
+(zum St.-Gertrauden-Krankenhaus): Kleinsteinpflaster	Q1- 4531,8319 4531,8270
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16080,11 +16080,11 @@ Max-Eyth-Str.: Kopfsteinpflaster	Q2+ 2266,6911 2435,6690 2513,6581 2544,6546
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Max-Eyth-Str.: schlechtes Kopfsteinpflaster	Q3 2544,6546 2611,6495
 #: confirmed_by: srt (hier liegt tatsächlich Kopfsteinpflaster, genauer: Kleinsteinpflaster)
-Am Hirschsprung: Kleinsteinpflaster	Q2+ 2204,6226 2224,6191 2285,6122 2307,6062 2325,5962 2321,5886
+Am Hirschsprung: Kleinsteinpflaster	Q2+ 2204,6226 2224,6191 2285,6122 2306,6073 2333,5971 2325,5897 2320,5881
 In der Halde: Kopfsteinpflaster	Q2 2285,6122 2347,6173 2487,6248 2547,6274 2607,6285
-Hohe Ähren: Kopfsteinpflaster	Q3 2307,6062 2358,6088 2457,6070
-Falkenried: Kopfsteinpflaster	Q2 2487,6248 2457,6070 2412,5901 2403,5871
-Wachtelstr. (Dahlem): Kopfsteinpflaster	Q2 1946,6042 1983,6005 2141,5948 2170,5939 2321,5886
+Hohe Ähren: Kopfsteinpflaster	Q3 2306,6073 2344,6083 2448,6061
+Falkenried: Kopfsteinpflaster	Q2 2487,6248 2448,6061 2408,5912 2388,5860
+Wachtelstr. (Dahlem): Kopfsteinpflaster	Q2 1946,6042 1983,6005 2141,5948 2170,5939 2325,5897
 Vogelsang: Kopfsteinpflaster	Q2 2106,5808 2141,5948 2195,6184 2191,6217
 Vogelsang: Kopfsteinpflaster	Q2 2137,5798 2170,5939 2224,6191
 Spechtstr. (Dahlem): Kopfsteinpflaster	Q1 1909,5872 1929,5951 1912,6024
@@ -16096,7 +16096,7 @@ Heinrich-Stahl-Weg: Verbundsteinpflaster	Q1- 2355,6343 2311,6404
 Heinrich-Stahl-Weg: Verbundsteinpflaster, wassergebundene Decke	Q1- 2311,6404 2281,6469
 #: corrected_by ^^^
 Hammersteinstr.: Parkweg	Q2 2360,7107 2304,7059
-Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2587,5908
+Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2408,5912 2587,5908
 #: corrected_by: srt (Q1 -> ...)
 Finkenstr. (Dahlem): Asphalt	Q0 2513,6581 2430,6564 2281,6469 2173,6424 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3594,7191 3596,7199 3612,7335
@@ -16859,8 +16859,9 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10624 (Anfrage)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/unmut-ueber-langsamen-fortschritt-beim-umbau-der-lemkestrasse_a365357
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11245 (Anfrage)
+#: by: https://stefan-ziller.eu/2024/zweiter-bauabschnitt-der-sanierung-lemkestrasse/
 #: also_indoor: search Lemkestraße vvv
-#: last_checked: 2023-09-17 vvv
+#: last_checked: 2024-02-01 (indoor) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-07-30
 #: osm_watch: way id="593503609" version="9"
@@ -17651,7 +17652,9 @@ Dalandweg: Asphalt	Q0 5385,4236 5356,4249
 #: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster)
 Dalandweg: Kleinsteinpflaster	Q2+ 5356,4249 5311,4270
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Dalandweg: Asphalt, mit einigen Schäden	Q0- 5311,4270 5250,4298 5226,4259 5120,4318
+Dalandweg: Asphalt, mit einigen Schäden	Q0- 5311,4270 5250,4298 5226,4259
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Dalandweg: Asphalt, mit einigen Schäden	Q1 5226,4259 5120,4318
 #: corrected_by: srt (Q1 -> Q2+)
 Klopstockstr.: Kopfsteinpflaster	Q2+ -1683,3723 -1629,3761 -1509,3740 -1488,3750 -1422,3785 -1394,3798 -1277,3854 -1174,4029 -1096,4267
 #: by: ^^^
@@ -20933,8 +20936,12 @@ Herthastr. (Pankow): schlechtes Kopfsteinpflaster	Q3 11908,16410 12077,16380
 Klixstr.: sehr schlechtes Kopfsteinpflaster	Q3- 3833,17929 3871,18144 3909,18342
 # 
 #: by: Sofian Salam:
-#: confirmed_by: srt (zumindest der südliche Abschnitt)
-Düppelstr.: mäßiges Kopfsteinpflaster	Q2 37,2562 45,2592 45,2644 39,2669 21,2728 12,2752 -49,3003
+#: confirmed_by: srt
+Düppelstr.: mäßiges Kopfsteinpflaster	Q2 37,2562 45,2592 45,2644
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Düppelstr.: schlechtes Kopfsteinpflaster	Q3 45,2644 39,2669 21,2728 12,2752
+#: confirmed_by: srt
+Düppelstr.: mäßiges Kopfsteinpflaster	Q2 12,2752 -49,3003
 # 
 #: by: Markus Brandt:
 #: confirmed_by: mapillary
@@ -21970,13 +21977,17 @@ Allmendeweg: Asphalt und Beton	Q0 2990,22018 3063,21821 3071,21801 3155,21572
 #: by: ^^^
 # 
 #: by: benjamin völker:
-Neue Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 161,3062 200,2855 226,2752 249,2653 272,2548
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Neue Str. (Zehlendorf): Kopfsteinpflaster	Q2 161,3062 200,2855 226,2752 249,2653 272,2548
+# 
 #: by: Stefan (2806):
 #: confirmed_by: srt
 Lindenstr. (Bohnsdorf): guter Asphalt	Q0 21586,-1167 21663,-1213 21729,-1241 21794,-1260 21914,-1278 22107,-1304 22307,-1329 22382,-1338 22470,-1349 22690,-1376
+# 
 #: by: Sorven (xbs9):
 #: confirmed_by: srt (guter Asphalt, Q0 -> ...)
 Am Schloßhof: schadhafter Asphalt	Q1- 21318,12510 21342,12753 21342,12775
+# 
 #: by: Uli (breitenbach...):
 #: confirmed_by: srt
 Ritterstr. (Lichterfelde): Asphalt	Q0 4821,2954 5115,2803
@@ -29153,6 +29164,7 @@ Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858
 #: confirmed_by: srt
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4713,8997
+#: confirmed_by: srt
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4954,8454 4958,8355
 #: confirmed_by: srt
 Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5654,10485 5568,10535
@@ -32081,6 +32093,7 @@ Kreuzungsbereich asphaltiert	Q0 10593,11120
 Kreuzungsbereich asphaltiert	Q0 22831,4070
 Kreuzungsbereich asphaltiert	Q0 3185,3958
 Kreuzungsbereich mit mäßigem Kopfsteinpflaster	Q2 12,2752
+Kreuzungsbereich mit mäßigem Kopfsteinpflaster	Q2 200,2855
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6258,1697
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 13223,17530
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 13406,17382
@@ -32884,4 +32897,11 @@ Einmündungsbereich asphaltiert	Q0 6845,4761
 Einmündungsbereich asphaltiert	Q0 6826,4472
 Einmündungsbereich mit Betonsteinpflaster	Q0- 20066,3746
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 19866,3608
+Einmündungsbereich asphaltiert	Q0 12911,8232
+Kreuzungsbereich asphaltiert	Q0 4687,8306
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 3809,3589
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 4004,3729
+Kreuzungsbereich asphaltiert	Q0 4134,3825
+Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 4307,3959
+Kreuzungsbereich mit Kopfsteinpflaster	Q1- 4385,4032
 #: ignore ^^^
