@@ -47,7 +47,7 @@
 provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2023-12-30
+#: last_checked: 2024-02-06 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-08-05
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -1264,10 +1264,11 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.462968,52.49578,28.10.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv) (wieder aktiv) (inaktiv)
 #: source_id: viz2021:13.46294,52.495795,06.08.2022,20:00 (bis 2028)
+#: source_id: viz2021:13.462964,52.495756,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2024-02-07 vvv
+#: last_checked: 2024-02-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2492,7 +2493,7 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 #
 #: next_check_id: GOERLITZERUFER-2023
 #: XXX wie sieht es nach dem Umbau aus?
-#: last_checked: 2024-02-01 vvv
+#: last_checked: 2024-02-06 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-06-30 vvv
 	RW1; 13216,9983 13155,9907
@@ -2908,7 +2909,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2024-02-07
+#: last_checked: 2024-02-08
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6203,7 +6204,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
-#: last_checked: 2024-01-21
+#: last_checked: 2024-02-03 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 provisorische Radspur, auf den letzten Metern getrennter Fuß- und Radweg	RW4; 17886,5587 17747,5452 17736,5441
@@ -6514,12 +6515,16 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 #: next_check_id: MITTEL-2019
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neust%C3%A4dtische-kirchstra%C3%9Fe-4-5-herrichtung-f%C3%BCr-bundesministerium.775/#post-22250
+#: by: https://www.n-tv.de/politik/Bundestags-BER-verschlingt-weitere-Millionen-article24709001.html (Hochbauarbeiten bis 2027?)
 #: last_checked: 2024-01-27 (mapillary) vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 90d vvv
+#: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
 	RW0; 9121,12514 9131,12438
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -8570,7 +8575,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) vvv
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
-#: last_checked: 2023-12-12 (mapillary) vvv
+#: last_checked: 2024-02-06 (mapillary) vvv
 #: check_frequency: 90d
 #: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-01-01
@@ -8738,7 +8743,7 @@ Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 6846,4808 
 #: XXX Radweg wegen Bauarbeiten aufgehoben, Radfahrüberholverbot
 #: source_id: viz2021:13.35316,52.44914,07.11.2023,18:41 (bis 10.01.2024) (inaktiv)
 #: source_id: viz2021:13.354446,52.449029,22.05.2023,07:00 (bis 8.11.2023) (bis 10.01.2024) (bis 21.02.2024)
-#: last_checked: 2023-12-30
+#: last_checked: 2024-02-06 (mapillary)
 #: next_check: 2024-02-21
 	RW0; 7092,4763 7205,4741 7285,4724 7364,4704
 Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 7364,4704 7387,4696 7485,4659 7532,4605

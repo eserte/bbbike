@@ -45,11 +45,11 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger	q4+ 12558,11920 12617,11888
 #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 
 #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut
 #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv)
-#: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024)
+#: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024)
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-02-04 (mapillary) vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2024-02-09 vvv
+#: next_check: 2024-02-16 vvv
 # REMOVED --- #: valid: -20231229 vvv
 Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229
 Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070
@@ -83,7 +83,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-02-07
+#: last_checked: 2024-02-08
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -239,7 +239,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2023-12-20
+#: last_checked: 2024-02-08
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -465,7 +465,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-01-31 vvv
+#: last_checked: 2024-02-06 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -3207,7 +3207,7 @@ Ackerstr.: einige Fußgänger, Bordstein	q2 -3937,15299 -3869,15333
 (Schulzenstr. - Spekteweg): Fußgänger	q1 -4961,14828 -4945,14883
 (Schulzenstr. - Spekteweg): nur für Fußgänger erlaubt	q4 -4945,14883 -4933,14953 -4932,14964
 Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12012
-(Sonnenallee - Aronsstr.): einige Fußgänger	q1 14530,7301 14558,7350 14571,7427
+(Sonnenallee - Aronsstr.): einige Fußgänger	q2 14530,7301 14558,7350 14571,7427
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fußgänger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8239,9754 8247,9699 8213,9662 8201,9647 8192,9619
 (Hellweg-Parkplatz): Parkplatzverkehr	q2 8243,9766 8181,9707 8213,9662

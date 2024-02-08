@@ -50,7 +50,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 #: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024)
 #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
 #: note: bei VIZ entfernt, existiert aber weiterhin
-#: last_checked: 2024-01-21
+#: last_checked: 2024-02-08
 #: next_check: 2024-02-13
 #: valid: -20240213
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
@@ -2654,13 +2654,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-02-03
+#: last_checked: 2024-02-08
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2024-02-07
+#: last_checked: 2024-02-08
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3344,7 +3344,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-01-31 vvv
+#: last_checked: 2024-02-06 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3532,7 +3532,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2024-02-03
+#: last_checked: 2024-02-08 (daf)
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3540,7 +3540,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2024-02-03
+#: last_checked: 2024-02-08
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
