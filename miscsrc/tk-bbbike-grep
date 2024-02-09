@@ -39,7 +39,7 @@ MainLoop;
 # Function to run grep command
 sub run_grep {
     my $grep_word = $grep_entry->get;
-    open my $fh, '-|', "$ENV{HOME}/src/bbbike/miscsrc/bbbike-grep", "-reldir", cwd(), "-n", "--", $grep_word or die $!;
+    open my $fh, '-|', "$ENV{HOME}/src/bbbike/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
