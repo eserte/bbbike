@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -54,6 +54,7 @@ my @search_file_defs = (
 
 my $searchterm_type = 'fixed';
 my $case_insens     = 1;
+my $limit;
 
 my $with_line_number;
 
@@ -66,6 +67,7 @@ GetOptions(
 	   'fixed'                 => sub { $searchterm_type = 'fixed' },
 	   'case|case-sensitive|I' => sub { $case_insens = 0 },
 	   'n|line-number'         => \$with_line_number,
+	   'limit=i'               => \$limit,
 	   'add-file=s'            => sub { push @search_file_defs, $_[1] },
 	   'add-file-with-encoding=s' => sub {
 	       if (my($filename, $encoding) = $_[1] =~ m{^(.*):(.*)$}) {
@@ -135,12 +137,14 @@ for my $search_file_def (@search_file_defs) {
 		print $out;
 	    }
 	    $local_hits++;
+	    last if defined $limit && $local_hits + $hits >= $limit; # limit this file
 	}
     }
 
     if ($local_hits) {
 	$file_hits++;
 	$hits += $local_hits;
+	last if defined $limit && $hits >= $limit; # limit all files
     }
 }
 
