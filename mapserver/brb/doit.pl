@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,6 +21,8 @@ use Cwd qw(cwd realpath);
 use Getopt::Long;
 use Template;
 use URI::Escape qw(uri_escape);
+
+use BBBikeMapserver::Info qw();
 
 my $dest_dir;
 my %c;
@@ -117,18 +119,17 @@ sub run_tt {
 
 sub get_mapserver_version {
     my($d) = @_;
-    my $out = _get_cached_shp2map_v_output($d);
-    if ($out =~ /mapserver version (\d+\.\d+)/i) {
+    my $mapserver_info = BBBikeMapserver::Info::get_info();
+    if (($mapserver_info->{mapserver_version}||'') =~ /^(\d+\.\d+)/) { # only major.minor needed
 	return $1;
-    } else {
-	error "Cannot get mapserver version using shp2img or shp2map";
     }
+    error "Cannot get mapserver version using BBBikeMapserver::Info";
 }
 
 sub get_mapserver_driver {
     my($d) = @_;
-    my $out = _get_cached_shp2map_v_output($d);
-    if ($out =~ /SUPPORTS=AGG/) {
+    my $mapserver_info = BBBikeMapserver::Info::get_info();
+    if ($mapserver_info->{SUPPORTS}->{AGG}) {
 	return 'AGG';
     } else {
 	return 'GD';
