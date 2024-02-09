@@ -86,8 +86,8 @@ WEB
   HEADER query_header.html
   TEMPLATE [% TEMPLATE %].html
   FOOTER query_footer.html
-  MINSCALE 1000
-  MAXSCALE 750000
+  MINSCALEDENOM 1000
+  MAXSCALEDENOM 750000
   IMAGEPATH "[% MAPSERVER_DIR %]/tmp/"
   IMAGEURL "[% MAPSERVER_RELURL %]/tmp/"
   EMPTY "[% MAPSERVER_RELURL %]/empty.html"
@@ -620,8 +620,8 @@ LAYER
     COLOR [% COLOR_WHITE %]
     SYMBOL "raute"
     SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% PROCESS CLASS_FAEHREN size=4 minscale=20000 maxscale=undef -%]
@@ -645,7 +645,7 @@ END
 LAYER
   NAME "Fähren (Annotations)"
   GROUP faehren
-#  MAXSCALE 75000
+#  MAXSCALEDENOM 75000
   STATUS [% ON_FAEHREN %]
   DATA faehren
   TYPE ANNOTATION
@@ -665,8 +665,8 @@ LAYER
       SIZE TINY
       COLOR 0 0 0
     END
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 legend=0 -%]
@@ -767,7 +767,7 @@ END
 #  STATUS DEFAULT
 #  DATA radwege
 #
-#  MINSCALE 10000
+#  MINSCALEDENOM 10000
 #  TOLERANCE 3
 #
 #  TEMPLATE "query.html"
@@ -803,8 +803,8 @@ END
 #  STATUS DEFAULT
 #  DATA radwege10
 #
-#  MINSCALE 5000
-#  MAXSCALE 10000
+#  MINSCALEDENOM 5000
+#  MAXSCALEDENOM 10000
 #  TOLERANCE 3
 #
 #  TEMPLATE "query.html"
@@ -840,7 +840,7 @@ END
 #  STATUS DEFAULT
 #  DATA radwege5
 #
-#  MAXSCALE 5000
+#  MAXSCALEDENOM 5000
 #  TOLERANCE 3
 #
 #  TEMPLATE "query.html"
@@ -1004,7 +1004,7 @@ END
 LAYER
   NAME "Straßen (Annotations)"
   GROUP strassen
-#  MAXSCALE 600000
+#  MAXSCALEDENOM 600000
   STATUS [% ON_STRASSEN %]
   DATA strassen
   TYPE ANNOTATION
@@ -1156,7 +1156,7 @@ LAYER
   STATUS [% ON_QUALITAET %]
   GROUP qualitaet
   DATA qualitaet
-  MAXSCALE 550000
+  MAXSCALEDENOM 550000
 
   DUMP TRUE # allow GML export
   
@@ -1211,7 +1211,7 @@ LAYER
   STATUS [% ON_HANDICAP %]
   GROUP handicap
   DATA handicap
-  MAXSCALE 550000
+  MAXSCALEDENOM 550000
 
   DUMP TRUE # allow GML export
   
@@ -1307,7 +1307,7 @@ LAYER
   TYPE POINT
   STATUS [% ON_U_BAHN %]
   DATA ubahnhof
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   TOLERANCE 5
 
   LABELITEM "NAME"
@@ -1318,24 +1318,24 @@ LAYER
     COLOR 0 0 128
     SYMBOL 'square'
     SIZE 4
-    MINSCALE 75000
+    MINSCALEDENOM 75000
   END
   CLASS
     EXPRESSION /^U[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/ubahn_mini.[% IMAGE_SUFFIX %]'
-    MINSCALE 16000
-    MAXSCALE 75000
+    MINSCALEDENOM 16000
+    MAXSCALEDENOM 75000
   END
   CLASS
     EXPRESSION /^U[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/ubahn_klein.[% IMAGE_SUFFIX %]'
-    MINSCALE 8000
-    MAXSCALE 16000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 16000
   END
   CLASS
     EXPRESSION /^U[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/ubahn.[% IMAGE_SUFFIX %]'
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     LABEL
       POSITION auto
       TYPE truetype
@@ -1365,7 +1365,7 @@ LAYER
   TYPE POINT
   STATUS [% ON_R_BAHN %]
   DATA rbahnhof
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   TOLERANCE 3
   
   LABELITEM "NAME"
@@ -1406,7 +1406,7 @@ LAYER
   TYPE POINT
   STATUS [% ON_S_BAHN %]
   DATA sbahnhof
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   TOLERANCE 5
  
   LABELITEM 'NAME'
@@ -1417,24 +1417,24 @@ LAYER
     COLOR 0 128 0
     SYMBOL 'circle'
     SIZE 6
-    MINSCALE 75000
+    MINSCALEDENOM 75000
   END
   CLASS
     EXPRESSION /^S[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/sbahn_mini.[% IMAGE_SUFFIX %]'
-    MINSCALE 16000
-    MAXSCALE 75000
+    MINSCALEDENOM 16000
+    MAXSCALEDENOM 75000
   END
   CLASS
     EXPRESSION /^S[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/sbahn_klein.[% IMAGE_SUFFIX %]'
-    MINSCALE 8000
-    MAXSCALE 16000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 16000
   END
   CLASS
     EXPRESSION /^S[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     LABEL
       POSITION auto
       TYPE truetype
@@ -1481,7 +1481,7 @@ LAYER
       COLOR 0 0 0
     END
     SIZE 2
-    MAXSCALE 300000
+    MAXSCALEDENOM 300000
   END
   CLASS
     EXPRESSION "1"
@@ -1497,7 +1497,7 @@ LAYER
       COLOR 0 0 0
     END
     SIZE 4
-    MAXSCALE 450000
+    MAXSCALEDENOM 450000
   END
   CLASS
     EXPRESSION "2"
@@ -1513,7 +1513,7 @@ LAYER
       COLOR 0 0 0
     END
     SIZE 6
-    MAXSCALE 600000
+    MAXSCALEDENOM 600000
   END
   CLASS
     EXPRESSION "3"
@@ -1609,7 +1609,7 @@ LAYER
   STATUS [% ON_OBST %]
   GROUP obst
   DATA obst
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   
   CLASSITEM 'NAME'
   CLASS
@@ -1651,52 +1651,52 @@ LAYER
   CLASSITEM "CAT" 
   CLASS
     EXPRESSION "X"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/ampel_klein.[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME Ampel
     EXPRESSION "X"
-    MINSCALE 8000
-    MAXSCALE 50000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 50000
     SYMBOL '[% IMAGE_DIR %]/ampel_klein2_rahmen.[% IMAGE_SUFFIX %]'
   END
 
   CLASS
     EXPRESSION "F"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/ampelf_klein[% NOALPHA %].[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME "Fußgängerampel"
     EXPRESSION "F"
-    MINSCALE 8000
-    MAXSCALE 50000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 50000
     SYMBOL '[% IMAGE_DIR %]/ampel_klein2_rahmen.[% IMAGE_SUFFIX %]'
   END
   CLASS
     EXPRESSION "B"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/andreaskr_klein.[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME "Bahnübergang"
     EXPRESSION "B"
-    MINSCALE 8000
-    MAXSCALE 50000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 50000
     SYMBOL '[% IMAGE_DIR %]/andreaskr_klein2.[% IMAGE_SUFFIX %]'
   END
 
   CLASS
     EXPRESSION "Zbr"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/zugbruecke_klein.[% IMAGE_SUFFIX %]'
   END
 #  CLASS
 #    NAME "Zugbrücke"
 #    EXPRESSION "Zbr"
-#    MINSCALE 8000
-#    MAXSCALE 16000
+#    MINSCALEDENOM 8000
+#    MAXSCALEDENOM 16000
 #    SYMBOL '[% IMAGE_DIR %]/zugbruecke_klein.[% IMAGE_SUFFIX %]'
 #  END
 
@@ -1709,7 +1709,7 @@ END
 #  STATUS ON
 #  GROUP sehenswuerdigkeit
 #  DATA sehenswuerdigkeit_point
-#  MAXSCALE 15000
+#  MAXSCALEDENOM 15000
 #  
 #  CLASSITEM 'CAT_IMG'
 #  CLASS

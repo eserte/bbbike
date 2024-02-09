@@ -87,8 +87,8 @@ WEB
   HEADER query_header.html
   TEMPLATE [% TEMPLATE %].html
   FOOTER query_footer.html
-  MINSCALE 1000
-  MAXSCALE 750000
+  MINSCALEDENOM 1000
+  MAXSCALEDENOM 750000
   IMAGEPATH "[% MAPSERVER_DIR %]/tmp/"
   IMAGEURL "[% MAPSERVER_RELURL %]/tmp/"
   EMPTY "[% MAPSERVER_RELURL %]/empty.html"
@@ -616,8 +616,8 @@ LAYER
     SYMBOL "circle"
     COLOR 180 180 255
     SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% PROCESS CLASS_W_ANY expr="W" size=1 minscale=20000 maxscale=400000 -%]
@@ -766,8 +766,8 @@ LAYER
       SYMBOL 'raute'
       SIZE [% size %]
     END
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% PROCESS CLASS_FAEHREN size=4 minscale=20000 maxscale=undef -%]
@@ -815,8 +815,8 @@ LAYER
       SIZE TINY
       COLOR 0 128 192
     END
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 legend=0 -%]
@@ -999,8 +999,8 @@ LAYER
       COLOR 255 205 114
       WIDTH [% (p.size + 4) div 2 %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% FOR i = SIZES_B; # reuse B for BAB
@@ -1040,8 +1040,8 @@ LAYER
       COLOR 210 210 210
       WIDTH [% p.size + 2 %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
   CLASS
     EXPRESSION 'N'
@@ -1049,8 +1049,8 @@ LAYER
       COLOR 210 210 210
       WIDTH [% p.size + 2 %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% END -%]
@@ -1067,8 +1067,8 @@ LAYER
       COLOR 210 210 210
       WIDTH [% p.size + 2 %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% END -%]
@@ -1086,8 +1086,8 @@ LAYER
       COLOR 180 180 180
       WIDTH [% p.size + 2 %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% END -%]
@@ -1104,8 +1104,8 @@ LAYER
       COLOR 180 180 180
       WIDTH [% p.size + 2 %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% END -%]
@@ -1129,8 +1129,8 @@ LAYER
   STATUS [% ON_RADWEGE %]
   DATA [% data %]
 
-  [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-  [% IF minscale %]MINSCALE [% minscale %][% END %]
+  [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+  [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   TOLERANCE 3
 
   TEMPLATE "query.html"
@@ -1216,8 +1216,8 @@ LAYER
       COLOR 200 255 200
       WIDTH [% p.size %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% ELSE -%]
 [%  xxx_is_first = 0 -%]
@@ -1243,8 +1243,8 @@ LAYER
       COLOR [% COLOR_WHITE %]
       WIDTH [% p.size %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% FOR i = SIZES_N;
@@ -1274,8 +1274,8 @@ LAYER
       COLOR [% COLOR_PALE_YELLOW %]
       WIDTH [% p.size %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% FOR i = SIZES_N;
@@ -1305,8 +1305,8 @@ LAYER
       COLOR [% COLOR_LIGHT_YELLOW %]
       WIDTH [% p.size %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% FOR i = SIZES_H;
@@ -1336,8 +1336,8 @@ LAYER
       COLOR 255 255 0
       WIDTH [% p.size %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% FOR i = SIZES_HH;
@@ -1367,8 +1367,8 @@ LAYER
       COLOR 255 130 130
       WIDTH [% p.size %]
     END
-    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
-    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+    [% IF p.maxscale %]MAXSCALEDENOM [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALEDENOM [% p.minscale %][% END %]
   END
 [% END -%]
 [% FOR i = SIZES_B;
@@ -1490,11 +1490,11 @@ LAYER
   CLASS
     EXPRESSION /^U[ABC]?$/
     COLOR 0 0 128
-    MINSCALE 20000
+    MINSCALEDENOM 20000
   END
   CLASS
     EXPRESSION /^U[ABC]?$/
-    MAXSCALE 20000
+    MAXSCALEDENOM 20000
     STYLE
       COLOR 0 0 128
 [% IF SMALL_SCREEN -%]
@@ -1529,11 +1529,11 @@ LAYER
   CLASS
     EXPRESSION /^R[ABC]?$/
     COLOR 0 128 0
-    MINSCALE 20000
+    MINSCALEDENOM 20000
   END
   CLASS
     EXPRESSION /^R[ABC]?$/
-    MAXSCALE 20000
+    MAXSCALEDENOM 20000
 [% IF MAPSERVER_DRIVER == "AGG" -%]
     STYLE
       COLOR 0 128 0
@@ -1594,11 +1594,11 @@ LAYER
   CLASS
     EXPRESSION /^R[ABC]?$/
     COLOR 0 128 0
-    MINSCALE 20000
+    MINSCALEDENOM 20000
   END
   CLASS
     EXPRESSION /^R[ABC]?$/
-    MAXSCALE 20000
+    MAXSCALEDENOM 20000
     STYLE
       COLOR 0 128 0
 [% IF SMALL_SCREEN -%]
@@ -1645,11 +1645,11 @@ LAYER
     STYLE
       COLOR 0 128 0
     END
-    MINSCALE 20000
+    MINSCALEDENOM 20000
   END
   CLASS
     EXPRESSION /^S[ABC]?$/
-    MAXSCALE 20000
+    MAXSCALEDENOM 20000
     STYLE
       COLOR 0 128 0
 [% IF SMALL_SCREEN -%]
@@ -1717,7 +1717,7 @@ LAYER
   STATUS [% ON_QUALITAET %]
   GROUP qualitaet
   DATA qualitaet
-  MAXSCALE 550000
+  MAXSCALEDENOM 550000
 
   DUMP TRUE # allow GML export
 
@@ -1777,7 +1777,7 @@ LAYER
   STATUS [% ON_HANDICAP %]
   GROUP handicap
   DATA handicap
-  MAXSCALE 550000
+  MAXSCALEDENOM 550000
 
   DUMP TRUE # allow GML export
   
@@ -1859,7 +1859,7 @@ LAYER
       GAP 40
 [% END -%]
     END
-    MAXSCALE 30000
+    MAXSCALEDENOM 30000
   END
   CLASS
     EXPRESSION '2'
@@ -1871,7 +1871,7 @@ LAYER
       GAP 32
 [% END -%]
     END
-    MINSCALE 30000
+    MINSCALEDENOM 30000
   END
 END
 
@@ -1899,7 +1899,7 @@ LAYER
       GAP -20
 [% END -%]
     END
-    MAXSCALE 30000
+    MAXSCALEDENOM 30000
   END
   CLASS
     EXPRESSION /^1(_(right|left))?$/
@@ -1915,8 +1915,8 @@ LAYER
       GAP -10
 [% END -%]
     END
-    MINSCALE 30000
-    MAXSCALE 60000
+    MINSCALEDENOM 30000
+    MAXSCALEDENOM 60000
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1940,7 +1940,7 @@ LAYER
   CLASS
     EXPRESSION 'BNP'
     NAME "Drängelgitter, Schranken (bis 1:8000)"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     STYLE
       SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
       ANGLE [ANGLE]
@@ -1949,7 +1949,7 @@ LAYER
   CLASS
     EXPRESSION '0'
     NAME "Tragen erforderlich (bis 1:8000)"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     STYLE
       SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
       ANGLE [ANGLE]
@@ -1979,7 +1979,7 @@ LAYER
   LABELITEM 'NAME'
   CLASSITEM 'NAME'
 
-  MAXSCALE 60000
+  MAXSCALEDENOM 60000
   
 [% IF ADVANCED_MOUNT_SYMBOLS -%]
   CLASS
@@ -2035,7 +2035,7 @@ END
 LAYER
   NAME "Steigungen (Annotations)"
   GROUP mount
-  MAXSCALE 75000
+  MAXSCALEDENOM 75000
   STATUS [% ON_MOUNT %]
   DATA mount
   TYPE ANNOTATION
@@ -2104,8 +2104,8 @@ END
     SYMBOL '[% IMAGE_DIR %]/[% imagename %][% imagesize %].[% IMAGE_SUFFIX %]'
 [% END -%]
 [% IF SMALL_SCREEN; SET SCALE_QUOTIENT = 3; ELSE; SET SCALE_QUOTIENT = 1; END -%]
-    [% IF maxscale %]MAXSCALE [% maxscale / SCALE_QUOTIENT %][% END %]
-    [% IF minscale %]MINSCALE [% minscale / SCALE_QUOTIENT %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale / SCALE_QUOTIENT %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale / SCALE_QUOTIENT %][% END %]
 [% IF do_label -%]
     LABEL
       POSITION auto
@@ -2125,7 +2125,7 @@ LAYER
   TYPE POINT
   STATUS [% ON_U_BAHN %]
   DATA ubahnhof
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   TOLERANCE 5
 
   LABELITEM 'NAME'
@@ -2157,7 +2157,7 @@ LAYER
   TYPE POINT
   STATUS [% ON_R_BAHN %]
   DATA rbahnhof
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   TOLERANCE 3
   
   LABELITEM 'NAME'
@@ -2188,7 +2188,7 @@ LAYER
   TYPE POINT
   STATUS [% ON_S_BAHN %]
   DATA sbahnhof
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   TOLERANCE 5
  
   LABELITEM 'NAME'
@@ -2239,8 +2239,8 @@ LAYER
       COLOR 0 0 0
     END
     SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% SET force="false" -%]
@@ -2308,7 +2308,7 @@ LAYER
   STATUS [% ON_OBST %]
   GROUP obst
   DATA obst
-  MAXSCALE 300000
+  MAXSCALEDENOM 300000
   
   CLASSITEM 'NAME'
   CLASS
@@ -2347,7 +2347,7 @@ END
 #  STATUS ON
 #  GROUP sehenswuerdigkeit
 #  DATA sehenswuerdigkeit_point
-#  MAXSCALE 15000
+#  MAXSCALEDENOM 15000
 #  
 #  CLASSITEM 'CAT_IMG'
 #  CLASS
@@ -2368,7 +2368,7 @@ LAYER
   STATUS [% ON_SEHENSWUERDIGKEIT %]
   GROUP sehenswuerdigkeit
   DATA sehenswuerdigkeit_point
-  MAXSCALE 30000
+  MAXSCALEDENOM 30000
   
 [% TRANSPARENCY_ALPHA %] 
   LABELITEM 'NAME'
@@ -2423,53 +2423,53 @@ LAYER
 
   CLASS
     EXPRESSION "X"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/ampel.[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME Ampel
     EXPRESSION "X"
-    MINSCALE 8000
-    MAXSCALE 16000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 16000
     SYMBOL '[% IMAGE_DIR %]/ampel_klein.[% IMAGE_SUFFIX %]'
   END
 
   CLASS
     EXPRESSION "F"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/ampelf[% NOALPHA %].[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME "Fußgängerampel"
     EXPRESSION "F"
-    MINSCALE 8000
-    MAXSCALE 16000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 16000
     SYMBOL '[% IMAGE_DIR %]/ampelf_klein[% NOALPHA %].[% IMAGE_SUFFIX %]'
   END
 
   CLASS
     EXPRESSION "B"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/andreaskr.[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME "Bahnübergang"
     EXPRESSION "B"
-    MINSCALE 8000
-    MAXSCALE 16000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 16000
     SYMBOL '[% IMAGE_DIR %]/andreaskr_klein.[% IMAGE_SUFFIX %]'
   END
 
   CLASS
     EXPRESSION "Zbr"
-    MAXSCALE 8000
+    MAXSCALEDENOM 8000
     SYMBOL '[% IMAGE_DIR %]/zugbruecke.[% IMAGE_SUFFIX %]'
   END
   CLASS
     NAME "Zugbrücke"
     EXPRESSION "Zbr"
-    MINSCALE 8000
-    MAXSCALE 16000
+    MINSCALEDENOM 8000
+    MAXSCALEDENOM 16000
     SYMBOL '[% IMAGE_DIR %]/zugbruecke_klein.[% IMAGE_SUFFIX %]'
   END
 
