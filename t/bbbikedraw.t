@@ -21,6 +21,7 @@ use lib ("$FindBin::RealBin/..",
 use Strassen::Core;
 use BBBikeDraw;
 use BBBikeUtil qw(is_in_path);
+use BBBikeMapserver::Info qw();
 use File::Temp qw(tempfile);
 use Getopt::Long;
 
@@ -247,14 +248,10 @@ if ($^O eq 'MSWin32') {
     }
 }
 
-my $mapserver_with_cairo;
-if (!is_in_path("shp2img") || do {
-    my $shp_img_v_output = `shp2img -v`;
-    if ($shp_img_v_output =~ m{\bSUPPORTS=CAIRO\b}) {
-	$mapserver_with_cairo = 1;
-    }
-    $shp_img_v_output !~ m{\bOUTPUT=PDF\b} && !$mapserver_with_cairo
-}) {
+my $mapserver_info = BBBikeMapserver::Info::get_info();
+if (!defined $mapserver_info->{mapserver_version} || (
+    !$mapserver_info->{OUTPUT}->{PDF} && !$mapserver_info->{SUPPORTS}->{CAIRO}
+)) {
     my $module_def = find_mod 'MapServer/pdf';
     $module_def->{skip} = 'Skipping MapServer/pdf tests, Mapserver was built without pdflib';
     # pdflib is considered non-free in Debian; and I deliberately
@@ -500,7 +497,7 @@ sub draw_map {
 
 	ok($pdf_content =~ m{^%PDF-1\.\d+}, "Looks like a PDF document");
 
-	my $TODO_cairo = ($module eq 'PDFCairo' || ($module eq 'MapServer' && $mapserver_with_cairo)
+	my $TODO_cairo = ($module eq 'PDFCairo' || ($module eq 'MapServer' && $mapserver_info->{SUPPORTS}->{CAIRO})
 			  ? 'Cairo has no support for Create, Author... in pdfs'
 			  : undef);
 
