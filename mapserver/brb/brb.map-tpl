@@ -498,75 +498,105 @@ LAYER
   CLASS
     EXPRESSION "F:Forest"
     NAME "Wald"
-    COLOR 102 180 123
+    STYLE
+      COLOR 102 180 123
+    END
   END
   CLASS
     EXPRESSION "F:Orchard"
     NAME "Kleingärten"
-    COLOR 232 248 200
+    STYLE
+      COLOR 232 248 200
+    END
   END
   CLASS
     EXPRESSION /^F:(P|Green)$/
     NAME "Park, Grünanlagen"
-    COLOR 118 196 139
+    STYLE
+      COLOR 118 196 139
+    END
   END
   CLASS
     EXPRESSION "F:Sport"
     NAME "Sportanlagen"
-    COLOR 200 216 152
+    STYLE
+      COLOR 200 216 152
+    END
   END
   CLASS
     EXPRESSION "F:Cemetery|religion:jewish"
     NAME "Jüdischer Friedhof"
-    COLOR [% COLOR_MIDDLE_GREEN %]
-    SYMBOL "cemetery_jewish"
+    STYLE
+      COLOR [% COLOR_MIDDLE_GREEN %]
+      SYMBOL "cemetery_jewish"
+    END
   END
   CLASS
     EXPRESSION "F:Cemetery|religion:muslim"
     NAME "Muslimischer Friedhof"
-    COLOR [% COLOR_MIDDLE_GREEN %]
-    SYMBOL "cemetery_muslim"
+    STYLE
+      COLOR [% COLOR_MIDDLE_GREEN %]
+      SYMBOL "cemetery_muslim"
+    END
   END
   CLASS
     EXPRESSION "F:Cemetery"
     NAME "Friedhof"
-    COLOR [% COLOR_MIDDLE_GREEN %]
-    SYMBOL "cemetery"
+    STYLE
+      COLOR [% COLOR_MIDDLE_GREEN %]
+      SYMBOL "cemetery"
+    END
   END
   CLASS
     EXPRESSION "F:Ae" 
     NAME "Flughafen"
-    COLOR [% COLOR_WHITE %]
+    STYLE
+      COLOR [% COLOR_WHITE %]
+    END
   END
   CLASS
     EXPRESSION "F:ex-Ae"
     NAME "ehemaliger Flughafen"
-    COLOR [% COLOR_WHITE %]
+    STYLE
+      COLOR [% COLOR_WHITE %]
+    END
   END
   CLASS
     EXPRESSION "F:Industrial"
     NAME "Industriegebiete"
-    COLOR [% COLOR_ROSE %]
+    STYLE
+      COLOR [% COLOR_ROSE %]
+    END
   END
   CLASS
     EXPRESSION "F:#ffffff"
-    COLOR [% COLOR_WHITE %]
+    STYLE
+      COLOR [% COLOR_WHITE %]
+    END
   END
   CLASS
     EXPRESSION "F:#000000"
-    COLOR [% COLOR_BLACK %]
+    STYLE
+      COLOR [% COLOR_BLACK %]
+    END
   END
   CLASS
     EXPRESSION "F:#ff0000"
-    COLOR [% COLOR_RED %]
+    STYLE
+      COLOR [% COLOR_RED %]
+    END
   END
   CLASS
     EXPRESSION "F:#00ff00"
-    COLOR [% COLOR_GREEN %]
+    STYLE
+      COLOR [% COLOR_GREEN %]
+    END
   END
   CLASS
     EXPRESSION "F:#0000ff"
-    COLOR [% COLOR_BLUE %]
+    STYLE
+      COLOR [% COLOR_BLUE %]
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -613,11 +643,13 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    SYMBOL "circle"
-    COLOR 180 180 255
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
-    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
+    STYLE
+      SYMBOL "circle"
+      COLOR 180 180 255
+      SIZE [% size %]
+      [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+      [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
+    END
   END
 [% END -%]
 [% PROCESS CLASS_W_ANY expr="W" size=1 minscale=20000 maxscale=400000 -%]
@@ -680,7 +712,9 @@ LAYER
       COLOR 0 0 255
       PARTIALS FALSE
     END
-    COLOR 180 180 255
+    STYLE
+      COLOR 180 180 255
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -707,7 +741,9 @@ LAYER
 
   CLASS
     EXPRESSION "I" 
-    COLOR 225 225 225
+    STYLE
+      COLOR 225 225 225
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -735,7 +771,9 @@ LAYER
 
   CLASS
     EXPRESSION /^F:.*above$/
-    COLOR 0 225 0
+    STYLE
+      COLOR 0 225 0
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -802,8 +840,10 @@ LAYER
 [% IF legend -%]
     NAME "Fähren"
 [% END -%]
-    COLOR 0 255 0
-    SYMBOL '[% IMAGE_DIR %]/ferry[% imgsuffix %].[% IMAGE_SUFFIX %]'
+    STYLE
+      COLOR 0 255 0
+      SYMBOL '[% IMAGE_DIR %]/ferry[% imgsuffix %].[% IMAGE_SUFFIX %]'
+    END
 # With Mapserver 5.6.5 and AGG driver the label is not empty, but one pixel is
 # drawn. This was not the case with 5.0.3 and GD driver. So don't use a black
 # label anymore, but a blue one which matches the ferry icon as closely as
@@ -893,7 +933,9 @@ LAYER
 
   CLASS
     EXPRESSION /./
-    COLOR 150 150 150
+    STYLE
+      COLOR 150 150 150
+    END
   END
 
   TEMPLATE "query.html"
@@ -1010,7 +1052,9 @@ LAYER
 
   CLASS # should not happen
     EXPRESSION /./ 
-    COLOR 200 200 200
+    STYLE
+      COLOR 200 200 200
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1378,7 +1422,9 @@ LAYER
 
   CLASS # should not happen
     EXPRESSION /./ 
-    COLOR 200 200 200
+    STYLE
+      COLOR 200 200 200
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1396,9 +1442,11 @@ END
 [% BLOCK CLASS_STRNR -%]
   CLASS
     EXPRESSION [% expression %]
-    COLOR [% color %]
-    SYMBOL 'strnrbox'
-    SIZE 10
+    STYLE
+      COLOR [% color %]
+      SYMBOL 'strnrbox'
+      SIZE 10
+    END
     LABEL
       MINFEATURESIZE 50
       MINDISTANCE 150
@@ -1489,7 +1537,9 @@ LAYER
   CLASSITEM 'CAT'
   CLASS
     EXPRESSION /^U[ABC]?$/
-    COLOR 0 0 128
+    STYLE
+      COLOR 0 0 128
+    END
     MINSCALEDENOM 20000
   END
   CLASS
@@ -1528,7 +1578,9 @@ LAYER
   CLASSITEM 'CAT'
   CLASS
     EXPRESSION /^R[ABC]?$/
-    COLOR 0 128 0
+    STYLE
+      COLOR 0 128 0
+    END
     MINSCALEDENOM 20000
   END
   CLASS
@@ -1593,7 +1645,9 @@ LAYER
   CLASSITEM 'CAT'
   CLASS
     EXPRESSION /^R[ABC]?$/
-    COLOR 0 128 0
+    STYLE
+      COLOR 0 128 0
+    END
     MINSCALEDENOM 20000
   END
   CLASS
@@ -1759,7 +1813,9 @@ LAYER
   END
   CLASS # should not happen
     EXPRESSION /./ 
-    COLOR 200 200 200
+    STYLE
+      COLOR 200 200 200
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1824,7 +1880,9 @@ LAYER
   END
   CLASS # should not happen
     EXPRESSION /./ 
-    COLOR 200 200 200
+    STYLE
+      COLOR 200 200 200
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -2014,9 +2072,11 @@ LAYER
   END
 [% ELSE -%]
   CLASS
-    COLOR 255 255 255
-    SYMBOL "raute"
-    SIZE 4
+    STYLE
+      COLOR 255 255 255
+      SYMBOL "raute"
+      SIZE 4
+    END
   END
 [% END -%]
 
@@ -2044,8 +2104,10 @@ LAYER
 
   CLASS
     NAME "mount"
-    COLOR 0 255 0
-    SYMBOL '[% IMAGE_DIR %]/steigung.[% IMAGE_SUFFIX %]'
+    STYLE
+      COLOR 0 255 0
+      SYMBOL '[% IMAGE_DIR %]/steigung.[% IMAGE_SUFFIX %]'
+    END
     LABEL
       MINFEATURESIZE 10
       MINDISTANCE 150
@@ -2069,9 +2131,11 @@ LAYER
 
   CLASS
     NAME "Fragezeichen"
-    SYMBOL 'raute'
-    SIZE 4
-    COLOR 159 0 0
+    STYLE
+      SYMBOL 'raute'
+      SIZE 4
+      COLOR 159 0 0
+    END
     LABEL
       MINFEATURESIZE 20
       MINDISTANCE 100
@@ -2096,13 +2160,15 @@ END
 [% BLOCK CLASS_BAHNHOF -%]
   CLASS
     EXPRESSION [% expr %]
+    STYLE
 [% IF symbol -%]
-    COLOR [% symbolcolor %]
-    SYMBOL '[% symbol %]'
-    SIZE [% symbolsize %]
+      COLOR [% symbolcolor %]
+      SYMBOL '[% symbol %]'
+      SIZE [% symbolsize %]
 [% ELSE -%]
-    SYMBOL '[% IMAGE_DIR %]/[% imagename %][% imagesize %].[% IMAGE_SUFFIX %]'
+      SYMBOL '[% IMAGE_DIR %]/[% imagename %][% imagesize %].[% IMAGE_SUFFIX %]'
 [% END -%]
+    END
 [% IF SMALL_SCREEN; SET SCALE_QUOTIENT = 3; ELSE; SET SCALE_QUOTIENT = 1; END -%]
     [% IF maxscale %]MAXSCALEDENOM [% maxscale / SCALE_QUOTIENT %][% END %]
     [% IF minscale %]MINSCALEDENOM [% minscale / SCALE_QUOTIENT %][% END %]
@@ -2226,8 +2292,11 @@ LAYER
 [% BLOCK CLASS_ORT -%]
   CLASS
     EXPRESSION "[% cat %]"
-    COLOR 0 0 0
-    SYMBOL 'circle'
+    STYLE
+      COLOR 0 0 0
+      SYMBOL 'circle'
+      SIZE [% size %]
+    END
     LABEL
       FORCE [% force %]
       MINFEATURESIZE 40
@@ -2238,7 +2307,6 @@ LAYER
       SIZE [% lblsize %]
       COLOR 0 0 0
     END
-    SIZE [% size %]
     [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
     [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
@@ -2279,8 +2347,11 @@ LAYER
 
   CLASS
     EXPRESSION /./
-    COLOR 0 0 0
-    SYMBOL 'circle'
+    STYLE
+      COLOR 0 0 0
+      SYMBOL 'circle'
+      SIZE 1
+    END
     LABEL
       MINFEATURESIZE 40
       MINDISTANCE 150
@@ -2290,7 +2361,6 @@ LAYER
       SIZE 6
       COLOR 0 0 0
     END
-    SIZE 1
   END
   METADATA
     WMS_TITLE "Ortschaften"
@@ -2313,19 +2383,27 @@ LAYER
   CLASSITEM 'NAME'
   CLASS
     EXPRESSION "Pflaume"
-    SYMBOL '[% IMAGE_DIR %]/pflaume.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/pflaume.[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     EXPRESSION "Apfel"
-    SYMBOL '[% IMAGE_DIR %]/apfel.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/apfel.[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     EXPRESSION "Kirsche"
-    SYMBOL '[% IMAGE_DIR %]/kirsche.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/kirsche.[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     EXPRESSION "Birne"
-    SYMBOL '[% IMAGE_DIR %]/birne.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/birne.[% IMAGE_SUFFIX %]'
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -2353,7 +2431,9 @@ END
 #  CLASS
 #    EXPRESSION /brandenburger_tor/
 #XXX do not hardcode
-#    SYMBOL '/home/e/eserte/src/bbbike/data/sehenswuerdigkeit_img/brandenburger_tor.[% IMAGE_SUFFIX %]'
+#    STYLE
+#      SYMBOL '/home/e/eserte/src/bbbike/data/sehenswuerdigkeit_img/brandenburger_tor.[% IMAGE_SUFFIX %]'
+#    END
 #  END
 #  METADATA
 #    WMS_TITLE "Sehenswürdigkeiten"
@@ -2384,19 +2464,25 @@ LAYER
   CLASS
     EXPRESSION 'SW|IMG:[% symbol.0 %]'
     NAME "[% symbol.1 %]"
-    SYMBOL '[% IMAGE_DIR %]/[% symbol.0 %].[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/[% symbol.0 %].[% IMAGE_SUFFIX %]'
+    END
   END
 [% END -%]
 ## XXX Erst aktivieren, wenn sehenswuerdigkeit_polygon auch ..._point für den Mittelpunkt erzeugt
 #  CLASS
 #    EXPRESSION 'SW|IMG:hospital'
 #    NAME "Krankenhaus"
-#    SYMBOL '[% IMAGE_DIR %]/hospital.[% IMAGE_SUFFIX %]'
+#    STYLE
+#      SYMBOL '[% IMAGE_DIR %]/hospital.[% IMAGE_SUFFIX %]'
+#    END
 #  END
   CLASS
     EXPRESSION /./
     NAME "sonstige Sehenswürdigkeit"
-    SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -2424,53 +2510,69 @@ LAYER
   CLASS
     EXPRESSION "X"
     MAXSCALEDENOM 8000
-    SYMBOL '[% IMAGE_DIR %]/ampel.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/ampel.[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     NAME Ampel
     EXPRESSION "X"
     MINSCALEDENOM 8000
     MAXSCALEDENOM 16000
-    SYMBOL '[% IMAGE_DIR %]/ampel_klein.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/ampel_klein.[% IMAGE_SUFFIX %]'
+    END
   END
 
   CLASS
     EXPRESSION "F"
     MAXSCALEDENOM 8000
-    SYMBOL '[% IMAGE_DIR %]/ampelf[% NOALPHA %].[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/ampelf[% NOALPHA %].[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     NAME "Fußgängerampel"
     EXPRESSION "F"
     MINSCALEDENOM 8000
     MAXSCALEDENOM 16000
-    SYMBOL '[% IMAGE_DIR %]/ampelf_klein[% NOALPHA %].[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/ampelf_klein[% NOALPHA %].[% IMAGE_SUFFIX %]'
+    END
   END
 
   CLASS
     EXPRESSION "B"
     MAXSCALEDENOM 8000
-    SYMBOL '[% IMAGE_DIR %]/andreaskr.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/andreaskr.[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     NAME "Bahnübergang"
     EXPRESSION "B"
     MINSCALEDENOM 8000
     MAXSCALEDENOM 16000
-    SYMBOL '[% IMAGE_DIR %]/andreaskr_klein.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/andreaskr_klein.[% IMAGE_SUFFIX %]'
+    END
   END
 
   CLASS
     EXPRESSION "Zbr"
     MAXSCALEDENOM 8000
-    SYMBOL '[% IMAGE_DIR %]/zugbruecke.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/zugbruecke.[% IMAGE_SUFFIX %]'
+    END
   END
   CLASS
     NAME "Zugbrücke"
     EXPRESSION "Zbr"
     MINSCALEDENOM 8000
     MAXSCALEDENOM 16000
-    SYMBOL '[% IMAGE_DIR %]/zugbruecke_klein.[% IMAGE_SUFFIX %]'
+    STYLE
+      SYMBOL '[% IMAGE_DIR %]/zugbruecke_klein.[% IMAGE_SUFFIX %]'
+    END
   END
 
   TEMPLATE "query.html"
@@ -2517,14 +2619,18 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
   CLASS
     NAME "Route"
 [% IF SMALL_SCREEN -%]
-    COLOR 255 0 255
-    SYMBOL 'width'
-    SIZE 4
+    STYLE
+      COLOR 255 0 255
+      SYMBOL 'width'
+      SIZE 4
+    END
 [% ELSE -%]
 [% IF MAPSERVER_VERSION < 6 && MAPSERVER_DRIVER == "AGG" -%]
-    COLOR 150 0 0
-    SIZE 11
-    SYMBOL 'dotted12'
+    STYLE
+      COLOR 150 0 0
+      SIZE 11
+      SYMBOL 'dotted12'
+    END
 [%# Currently there's no way to get the alternate blue/red dots plotted with the AGG driver... -%]
 [% ELSE -%]
     STYLE
@@ -2587,8 +2693,10 @@ LAYER
 
   CLASS
     NAME "Beginn der Route"
-    COLOR 255 0 255
-    SYMBOL 'startflag'
+    STYLE
+      COLOR 255 0 255
+      SYMBOL 'startflag'
+    END
   END
   METADATA
     WMS_TITLE "Startflagge"
@@ -2622,8 +2730,10 @@ LAYER
 
   CLASS
     NAME "Ende der Route"
-    COLOR 255 0 255
-    SYMBOL 'goalflag'
+    STYLE
+      COLOR 255 0 255
+      SYMBOL 'goalflag'
+    END
   END
   METADATA
     WMS_TITLE "Zielflagge"
