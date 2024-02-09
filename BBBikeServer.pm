@@ -148,6 +148,9 @@ sub create_server {
 sub create_socket_server {
     my $top = shift;
 
+    # Should work, as @INC within BBBike should be adjusted, but play safe...
+    eval { require BBBikeUtil }; warn $@ if $@;
+
     pipe(PARENT_RDR, CHILD_WTR);
     pipe(CHILD_RDR,  PARENT_WTR);
     CHILD_WTR->autoflush(1);
@@ -271,6 +274,16 @@ sub create_socket_server {
 		 }
 		 $top->deiconify;
 		 $top->raise;
+		 if (defined &BBBikeUtil::is_in_path && BBBikeUtil::is_in_path('wmctrl')) {
+		     my @cmd = (qw(wmctrl -i -a), ($top->wrapper)[0]);
+		     if ($VERBOSE) {
+			 warn "Bring desktop to front using: @cmd\n";
+		     }
+		     system(@cmd);
+		     if ($? != 0) {
+			 warn "WARNING: running '@cmd' failed";
+		     }
+		 }
 	     });
     }
 }
