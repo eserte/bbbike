@@ -2524,6 +2524,9 @@ Tucholskystraße/Auguststraße: Diagonalsperre	3 9415,13315 9651,13406 9611,13245
 (Ferdinand-Schultze-Str. - Plauener Str. 94-96): Poller	3 17558,14840 17684,14858 17693,14840
 (Ferdinand-Schultze-Str. - Plauener Str. 94-96): Poller	3 17638,14951 17684,14858 17558,14840
 (Ferdinand-Schultze-Str. - Plauener Str. 94-96): Poller	3 17693,14840 17684,14858 17558,14840
+Mittelstreifen, Fußgängerfurt existiert	3nocross::ignrte 5527,20044 5545,19909 5533,19811
+Oranienburger Str. -> Kirschblütenpl.: Mittelstreifen, Fußgängerfurt existiert	3::igndisp 5527,20044 5545,19909 5598,19912
+Kirschblütenpl. -> Oranienburger Str.: Mittelstreifen, Fußgängerfurt existiert	3::igndisp 5598,19912 5545,19909 5533,19811
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12054,9429 12066,9558 12074,9689
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12074,9689 12066,9558 12054,9429
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12054,9429 12066,9558 12150,9545

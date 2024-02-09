@@ -2098,22 +2098,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-grunauer-strasse-ab-montag-05-februar-2024/ (Köpenicker Str. bis Grünauer Str. 70)
-#: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
-#: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024)
-#: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4
-	q3::inwork 19766,1796 19898,1704
-',
-         'from' => 1707001200,
-         'id' => 2328,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
-         'text' => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1707476400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5512,7 +5497,7 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
-#: osm_watch: way id="151353924" version="12"
+#: osm_watch: way id="151353924" version="13"
 #: last_checked: 2024-02-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
@@ -6145,19 +6130,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.56401,52.4134,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
-#: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024) (bis 09.02.2024)
-#: note: vermutete Sperrung nur im Bereich "Am Falkenberg"
-	q4::inwork 21329,832 21497,1042
-',
-         'from' => 1691899200,
-         'id' => 3887,
-         'text' => 'Rosestr.: Bauarbeiten zwischen Am Falkenberg und Preußenstr., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 09.02.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1707494400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6661,7 +6634,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q3::inwork 17056,12304 17088,12506
          'until' => 1709139600
        },
        {
-         'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024)
+         'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024)
 #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
 	q4::inwork 5189,9397 5189,8983
@@ -6874,7 +6847,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-01-16 (mapillary)
+#: last_checked: 2024-02-08 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376

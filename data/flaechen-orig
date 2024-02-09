@@ -1502,6 +1502,9 @@ Brabanter Platz	F:P 4521,8379 4473,8351 4505,8321 4531,8319 4530,8364 4521,8379
 #: next_check: 2024-02-16
 	F:P 2320,5881 2312,5850 2300,5820 2372,5799 2378,5828 2388,5860 2320,5881
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf
+Grünanlage Wartenberger Straße	F:P 18024,17465 17658,17938 17622,17913 17650,17875 17715,17773 17760,17682 17795,17599 18024,17465
+# 
 #############################################################################
 # Plätze (experimentell)
 # XXX_prog: es sollte unterschieden werden zwischen Flächen, die einfach
@@ -1599,6 +1602,8 @@ Grünfeld-Ecke	F:Square 5475,10808 5398,10778 5472,10735 5475,10808
 Werner-Salomon-Platz	F:Square -3457,14189 -3552,14082 -3517,14218 -3511,14260 -3506,14306 -3481,14308 -3457,14189
 #: note: überwiegend frei befahrbar
 (Platz vor dem Kosmos)	F:Square 13448,12340 13464,12407 13549,12394 13543,12326 13448,12340
+#: note: nicht frei befahrbar, Stadtmöbel, Brunnen (allerdings auch unnötig, wegen der Dreiecksform des Platzes)
+Hausvogteiplatz	F:Square 9863,11938 9878,11857 9925,11947 9863,11938
 #: ignore ^^^
 #############################################################################
 # in Potsdam
@@ -2049,7 +2054,8 @@ Kolonie Zukunft	F:Orchard 3821,1725 3715,1806 3852,2018 3861,2078 3884,2146 3950
 BSR	F:Industrial 5332,3696 5167,3787 5272,3916 5390,3866 5447,3801
 Kraftwerk Steglitz	F:Industrial 5405,4014 5390,4125 5505,4200 5575,4223 5624,4112
 	F:Industrial 5447,3801 5390,3866 5400,3969 5405,4014 5624,4112 5575,4223 5783,4302 5942,4296 6173,4275 6162,4264 6120,4214 6074,4172 6051,4151 6006,4127 5869,4065 5862,4062 5766,4025 5737,4013 5671,3987 5619,3958
-Kraftwerk Lichterfelde	F:Industrial 4007,1993 4103,1933 4169,1847 4184,1886 4242,1867 4354,2097 4311,2207 4239,2207 4206,2137 4132,2149 4040,2117
+#: alias: Kraftwerk Lichterfelde
+Heizkraftwerk Lichterfelde	F:Industrial 4007,1993 4103,1933 4169,1847 4184,1886 4242,1867 4354,2097 4311,2207 4239,2207 4206,2137 4132,2149 4040,2117
 Hafen Lichterfelde	F:Industrial 4132,2149 4206,2137 4239,2207 4297,2376 4306,2486 4220,2523 4263,2428
 # REMOVED (existiert nicht mehr) --- Kolonie Neuer Exerzierplatz	F:Orchard 18,14945 182,14964 266,14955 272,15056 146,15150 16,15277 28,15184 -18,15175
 # REMOVED (größtenteils aufgehoben) --- #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/mit-gruenem-idyll-in-siemensstadt-ist-nun-endgueltig-schluss_a253381 --- #: XXX wird die Kolonie komplett aufgehoben? Oder ist vielleicht (auch) der Teil nordöstlich der S-Bahnlinie gemeint? --- #: XXX laut osm ist der größte Teil nun ein "brownfield", nur ein kleines Stück im Süden ist übriggeblieben --- #: osm_watch: way id="162095689" version="6" --- #: next_check: 2020-06-01

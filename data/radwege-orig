@@ -259,13 +259,14 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://berliner-abendblatt.de/berlin-news/roth-450-millionen-museum-als-vorbild-fuer-nachhaltigkeit-id218279
 #: by: https://www.tagesspiegel.de/berlin/grundsteinlegung-im-februar-halbe-milliarde-fur-museum-berlin-modern-einkalkuliert-10880509.html (neuer Name: "berlin modern", weiter bis 2027)
 #: by: https://berliner-abendblatt.de/berlin-news/grundstein-fuer-museum-berlin-modern-im-februar-id239006
-# REMOVED (broken) --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
+#: by: https://berliner-abendblatt.de/berlin-news/grundsteinlegung-fuer-museum-berlin-modern-wird-gelegt-id244318
+#: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="11"
 #: osm_watch: way id="25042039" version="36"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-09 (webcam)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -1264,7 +1265,9 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.462968,52.49578,28.10.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv) (wieder aktiv) (inaktiv)
 #: source_id: viz2021:13.46294,52.495795,06.08.2022,20:00 (bis 2028)
-#: source_id: viz2021:13.462964,52.495756,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024)
+#: source_id: viz2021:13.462964,52.495756,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024) (inaktiv)
+#: source_id: viz2021:13.46341,52.496172,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024)
+#: source_id: viz2021:13.46469,52.49743,09.02.2024,06:00 (bis 11.02.2024)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A

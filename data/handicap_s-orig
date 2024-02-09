@@ -10,16 +10,17 @@
 # 
 ### Friedrichshain ###
 # 
-#: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024)
-#: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331
-#: last_checked: 2024-02-04 (mapillary) vvv
-#: next_check: 2024-02-09 vvv
-#: valid: -20240209 vvv
-Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860
-Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv)
+# REMOVED --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331
+# REMOVED --- #: also_indoor: traffic (G)
+# REMOVED --- #: last_checked: 2024-02-04 (mapillary) vvv
+# REMOVED --- #: next_check: 2024-02-09 vvv
+# REMOVED --- #: valid: -20240209 vvv
+# REMOVED --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860
+# REMOVED --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
@@ -47,15 +48,15 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger	q4+ 12558,11920 12617,11888
 #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv)
 #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-02-04 (mapillary) vvv
-# REMOVED --- #: check_frequency: 14d vvv
+#: last_checked: 2024-02-08 (mapillary) vvv
+#: check_frequency: 14d vvv
 #: next_check: 2024-02-16 vvv
 # REMOVED --- #: valid: -20231229 vvv
 Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229
 Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070
 # REMOVED --- #: valid ^^^
 #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
@@ -657,7 +658,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-09 (webcam)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
