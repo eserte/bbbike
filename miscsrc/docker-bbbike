@@ -608,7 +608,7 @@ EOF
 
 	my @errors;
 	if (!$opt{'with-data-build'}) {
-	    my @docker_cmd = (qw(docker run --rm --name), $tag);
+	    my @docker_cmd = (qw(docker run), ($opt{'keep-container'} ? () : qw(--rm)), qw(--name), $tag);
 	    if (defined $opt{'cover-dir'}) {
 		push @docker_cmd, '-v', $opt{'cover-dir'}.':/bbbike/cover_db';
 	    }
@@ -982,6 +982,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'build-env' => {},
 	       'with-data-build' => 0,
 	       'no-cache' => 0,
+	       'keep-container' => 0,
 	       'invalidate-apt' => 0,
 	       'perl-ver' => undef,
 	       'image-variant' => undef,
@@ -997,6 +998,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'build-env=s%',
 	       "with-data-build!",
 	       'no-cache',
+	       'keep-container!',
 	       'invalidate-apt!',
 	       'perl-ver=s',
 	       'image-variant=s',
