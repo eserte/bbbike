@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2017,2018,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2017,2018,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,10 +15,10 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 use Exporter 'import';
-@EXPORT_OK = qw(get_pmake module_path module_version get_modern_perl monkeypatch_manifind);
+@EXPORT_OK = qw(get_pmake run_pmake module_path module_version get_modern_perl monkeypatch_manifind);
 
 use File::Glob qw(bsd_glob);
 use version ();
@@ -42,6 +42,17 @@ sub get_pmake (;@) {
      : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, bmake, fmake, pmake, or something similar"
      : "pmake"                                                   # self-compiled BSD make, maybe. Note that pmake may also be a script that comes with the CPAN module Make.pm, which is not a BSD make
     );
+}
+
+# Use like this:
+#    cd .../bbbike/data
+#    perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake'
+#    perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' slow-checks -j4
+sub run_pmake {
+    my $pmake = get_pmake(fallback => 0);
+    my @cmd = ($pmake, @ARGV);
+    exec @cmd;
+    die "Failed to run '@cmd': $!";
 }
 
 # REPO BEGIN
