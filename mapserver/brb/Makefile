@@ -68,7 +68,7 @@ WWW_HOST?=		localhost
 BBBIKE_CGI_RELURL?=	/bbbike/cgi
 BBBIKE_HTML_RELURL?=	/bbbike/html
 MAPSERVER_RELURL?=	/bbbike/mapserver/brb
-MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\d+\.\d+)/i and print $$1'
+MAPSERVER_VERSION!=	perl -e '`shp2img -v 2>/dev/null || map2img -v` =~ m/mapserver version (\d+\.\d+)/i and print $$1'
 BBBIKE_RELURL?=         $(BBBIKE_CGI_RELURL)/bbbike.cgi
 BBBIKE_URL?=		http://$(WWW_HOST)$(BBBIKE_RELURL)
 MAPSERVER_URL?=		http://$(WWW_HOST)$(MAPSERVER_RELURL)
@@ -76,7 +76,7 @@ BBBIKE_IMAGES_RELURL?=	/bbbike/images
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 IMAGE_SUFFIX=		png
-MAPSERVER_DRIVER!=	perl -e '`shp2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : print "GD"'
+MAPSERVER_DRIVER!=	perl -e '`shp2img -v 2>/dev/null || map2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : print "GD"'
 .if exists(/etc/debian_version)
 FONTS_LIST?=		fonts-debian.list
 .else
@@ -117,8 +117,8 @@ MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
 MAPSERVER_PROG_RELURL?=	/cgi/mapserv.cgi				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
-MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\d+\.\d+)/i and print $$1'
-MAPSERVER_DRIVER!=	perl -e '`shp2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : print "GD"'
+MAPSERVER_VERSION!=	perl -e '`shp2img -v 2>/dev/null || map2img -v` =~ m/mapserver version (\d+\.\d+)/i and print $$1'
+MAPSERVER_DRIVER!=	perl -e '`shp2img -v 2>/dev/null || map2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : print "GD"'
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
