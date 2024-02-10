@@ -401,9 +401,9 @@ init_cgi_config() {
 	# Makefile needed by mapserver/brb/Makefile
 	perl Makefile.PL
 	# -j does not work here
-	(cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') mapfiles)
+	(cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
 	# -j not tested here
-	(cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && $(perl -I../.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake'))
+	(cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake')
     fi
     (cd cgi && ln -snf bbbike2-ci.cgi.config bbbike2.cgi.config)
 }
@@ -458,7 +458,7 @@ start_xserver() {
 }
 
 init_data() {
-    (cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') -j4 live-deployment-targets)
+    (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' -- -j4 live-deployment-targets)
 }
 
 install_selenium() {

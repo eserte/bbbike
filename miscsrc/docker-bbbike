@@ -861,8 +861,8 @@ EOF
     } else {
 	$dockerfile .= <<'EOF';
 RUN (cd cgi && ln -snf bbbike-debian.cgi.config bbbike.cgi.config)
-RUN (cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') mapfiles)
-RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && $(perl -I../.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake'))
+RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
+RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake'))
 EOF
     }
     $dockerfile .= <<EOF;
