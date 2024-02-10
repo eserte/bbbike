@@ -562,6 +562,14 @@ RUN apt-get install -qqy \\
 EOF
     }
 
+    # XXX review and maybe remove again
+    if ($real_distver =~ /bookworm/) {
+	warning "Temporary hack: provide /etc/mapserver.conf until better solutions exist";
+	$dockerfile .= <<'EOF';
+RUN if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]; then cp /bbbike/mapserver/brb/mapserver.conf /etc; fi
+EOF
+    }
+
     # Start all services and finally run the test suite
     $dockerfile .= qq{CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper start_selenium && wrapper init_data && perl Makefile.PL && make distcheck && };
     if (defined $opt{'cover-dir'}) {
