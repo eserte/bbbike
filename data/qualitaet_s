@@ -917,7 +917,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 21569,7252 21590,7211 21896,693
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1 21896,6937 21976,6848 22050,6619
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 22027,6608 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21856,5854 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
+Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 Hämmerlingstr.: Kleinsteinpflaster	Q2 21683,6946 21705,6931
 Hämmerlingstr.: Asphalt	Q0 21705,6931 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
@@ -4476,11 +4476,11 @@ Mundolfstr.: Asphalt	Q0 19281,518 19389,804
 Braunellensteig: unbefestigte Straße	Q2 18830,1497 18876,1594 18916,1626
 Mehldornpfad: Betonpflaster	Q0 18941,1934 19016,1895 19051,1878
 Teichrohrweg: Betonpflaster	Q0 19016,1895 18925,1681 18888,1658
-Am Alten Friedhof: Asphalt	Q0 19181,1996 19122,1839 19037,1630 18974,1559
-Pfarrwöhrde: Asphalt	Q0 19164,2001 19198,2163
-Zum Alten Windmühlenberg: Asphalt	Q0 19653,1671 19279,1779
+Am Alten Friedhof: Asphalt	Q0 19178,1999 19117,1846 19037,1630 18974,1559
+Pfarrwöhrde: Asphalt	Q0 19162,2005 19198,2163
+Zum Alten Windmühlenberg: Asphalt	Q0 19648,1665 19279,1779
 Zum Alten Windmühlenberg: Verbundsteinpflaster	Q1 19279,1779 19204,1809
-Zum Alten Windmühlenberg: Asphalt	Q0 19204,1809 19122,1839
+Zum Alten Windmühlenberg: Asphalt	Q0 19204,1809 19117,1846
 Rapunzelstr.: Verbundsteinpflaster, mit einigen flachen Bordsteinen an Kreuzungen	Q1 19107,1403 19140,1439 19174,1522 19204,1598 19234,1676 19279,1779
 Rübezahlallee: Beton	Q1 19579,1543 19527,1586 19264,1667
 Rübezahlallee: Verbundsteinpflaster	Q1 19264,1667 19234,1676 19164,1708
@@ -4606,7 +4606,7 @@ Gubener Str.: Kopfsteinpflaster	Q2 13168,12219 13151,12266
 Gubener Str.: Asphalt	Q0 13151,12266 13198,12311
 Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
-Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
+Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19648,1665 19634,1609 19606,1573 19590,1554
 Bohnsdorfer Weg: Beton mit einigen Hebungen	Q1 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20252,901 20301,838 20383,733 20430,672
 Randolfstr. [17, 19A, 21]: Asphalt	Q0 19814,1167 19877,1132
 Hassoweg: Asphalt	Q0 19677,498 19726,628 19741,671
@@ -4835,7 +4835,7 @@ Ambacher Str.: unbefestigte Straße	Q2 21944,7122 21967,7048
 Görsdorfer Str.: Asphalt, etwas wellig	Q0 21846,7096 21879,7044 21918,6939
 Zum Wuhleblick: Beton	Q0 22075,6967 21958,6944
 Zum Wuhleblick: Asphalt	Q0 21958,6944 21918,6939 21911,6938 21896,6937
-Hoernlestr.: Beton	Q0 22301,6683 22351,6756
+Hoernlestr.: etwas rauer Beton	Q0 22301,6683 22351,6756
 Schönecker Weg: Beton	Q0 22330,6973 22358,7093
 Wolfsgartenstr.: Asphalt	Q0 23011,6181 22994,6296 23002,6428
 Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541
@@ -6411,7 +6411,8 @@ Regattastr. [Wohngebiet]: Beton	Q0 22388,1947 22291,1892
 Waldstr. (Grünau): Asphalt	Q0 21839,2419 21855,2392 21869,2367 21885,2343 21986,2176 22004,2149 22130,1961
 Elstersteg: Asphalt	Q0 21750,2593 21770,2535 21801,2480 21839,2419
 (Ammerseestr. - Waldstr.): Waldweg, teilweise etwas sandig	Q2 22166,1636 22222,1831
-Zur Uferbahn: Asphalt	Q0 23085,898 22952,821 22902,796 22766,778
+Zur Uferbahn: unbefestigte Straße	Q2 23079,901 23045,880
+Zur Uferbahn: Asphalt	Q0 23045,880 22952,821 22902,796 22766,778
 (Zur Uferbahn - Adlergestell): Waldweg	Q1 22766,778 22567,879 22490,877 22351,862
 Laubnitzer Pfad: Asphalt	Q0 22995,745 23067,786
 Steinbindeweg: welliger Asphalt	Q1 23237,508 23137,650 23067,786 23085,898
@@ -18529,7 +18530,7 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 (Hohengraper Weg - Königswalder Str.): unbefestigter Weg	Q2 16807,16726 16772,16852 16751,16931 16723,17004
 (Königswalder Str. - Neuzeller Weg): Verbundsteinpflaster	Q1 16723,17004 16692,17080 16658,17142
-(Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21901,5743 21884,5769 21873,5832 21856,5854
+(Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21901,5743 21884,5769 21873,5832 21862,5857
 (Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21873,5832 21938,5866
 Cardinalplatz: schlechtes Kopfsteinpflaster	Q3 21912,5724 21896,5724 21901,5743 21910,5748 21916,5740 21912,5724
 (Eisenhutweg - Akeleiweg): unbefestigter Weg	Q2 17454,3096 17513,3158

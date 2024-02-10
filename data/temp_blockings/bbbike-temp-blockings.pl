@@ -2557,7 +2557,7 @@ EOF
        text  => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 19766,1796 19743,1804 19564,1871 19266,1968 19181,1996 19164,2001 19055,2037 18985,2047 18938,2054 18881,2062
+	q4; 19766,1796 19743,1804 19564,1871 19266,1968 19178,1999 19162,2005 19054,2033 18985,2047 18938,2054 18881,2062
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -24065,7 +24065,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php',
        data  => <<EOF,
-	q4::temp; 23252,792 23085,898 22854,1023 22821,1086 22766,1226 22655,1450
+	q4::temp; 23252,792 23085,898 23079,901 22854,1023 22821,1086 22766,1226 22655,1450
 EOF
      },
      { from  => 1409436000, # 2014-08-31 00:00
@@ -26119,7 +26119,7 @@ EOF
        data  => <<EOF,
 #: XXX zweiter Bauabschnitt ab Ende August bis ca. 23.09.
 #: next_check: 2016-07-31
-	2::inwork 22084,5877 22070,5876 21938,5866 21856,5854 21744,5804 21651,5730 21618,5699 21605,5687
+	2::inwork 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687
 EOF
      },
      { from  => 1469052000, # 2016-07-21 00:00
@@ -29923,9 +29923,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet, laut mapillary) --- #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020? --- #: XXX hier fehlt noch die letzte Asphaltdeckschicht --- #: also_indoor: traffic --- #: osm_watch: way id="156066225" version="19" --- #: last_checked: 2020-11-15 vvv --- #: check_frequency: 45d vvv --- #: next_check: 2021-01-13 vvv
-	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
-	q2::inwork 19055,2037 19164,2001
-	q2::inwork 19164,2001 19198,2163
+	q3::inwork 19162,2005 19178,1999 19266,1968 19564,1871
+	q2::inwork 19054,2033 19162,2005
+	q2::inwork 19162,2005 19198,2163
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -34448,7 +34448,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140276.php',
        data  => <<EOF,
-	q4::inwork 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
+	q4::inwork 19743,1804 19669,1729 19648,1665 19634,1609 19606,1573 19590,1554
 EOF
      },
      { from  => 1635634800, # 2021-10-31 01:00
@@ -35583,10 +35583,10 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
 #: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags)
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus))
 # REMOVED --- #: also_indoor: traffic (H,G,B,W)
 # REMOVED --- #: priority: #A
-#: last_checked: 2023-12-18 (okas) vvv
+#: last_checked: 2024-02-10 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-08-27 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -36884,7 +36884,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-01-15
+#: last_checked: 2024-02-10
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -37991,7 +37991,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: last_checked: 2024-01-21
+#: last_checked: 2024-02-10
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -38196,7 +38196,7 @@ EOF
 #: source_id: viz2021:13.53054,52.42388,15.02.2023,09:00 (bis 14.08.2023) (inaktiv)
 #: source_id: viz2021:13.52916,52.424138,15.02.2023,09:00 (bis 15.06.2023) (bis 14.08.2023) (bis 15.09.2023) (inaktiv)
 #: source_id[inactive]: bvg2021:160#BVG316004_0 (war ohne Ende-Datum)
-Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19164,2001 19198,2163
+Pfarrwöhrde: Einbahnstraßenregelung	q4::inwork; 19162,2005 19198,2163
 Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 EOF
      },
@@ -38907,7 +38907,7 @@ EOF
      },
      { from  => 1683064800, # 2023-05-03 00:00
        until => undef, # $isodate2epoch->("2023-12-04 23:59:59"), # 1689606000, # 2023-07-17 17:00
-       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Februar 2024, evtl. auch länger',
+       text  => 'Birnbaumer Str.: Bauarbeiten im Bereich Kaulsdorfer Str., Sperrung der Fahrbahn, voraussichtlich bis Mai 2024, evtl. auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KAULSDORFER-2023
@@ -38915,17 +38915,17 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnZIUUhIOFdBQU05bDFKLmpwZw==
 #: source_id: viz2021:13.575869,52.463886,03.05.2023,07:00 (bis 17.7.2023) (bis 21.8.2023) (bis 4.12.2023) (inaktiv) vvv
 #: source_id[inactive]: bvg2021:x69#BVG319326_0 vvv
-#: note: laut Baustellenschild der Wasserbetriebe bis 12/2023
+#: note: laut Baustellenschild der Wasserbetriebe bis 12/2023, mittlerweile bis Mai 2024
 #: XXX wie sieht die Baustelle im weiteren Verlauf aus? vvv
 #: add_fragezeichen: Ist die Fahrbahn der Birnbaumer Straße noch immer wegen Bauarbeiten gesperrt? vvv
 #: osm_watch: way id="54269295" version="15"
-#: last_checked: 2024-01-27 vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2024-02-29 vvv
+#: last_checked: 2024-02-10 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2024-05-30 vvv
 # REMOVED (hier nicht (mehr?)) --- Hoernlestr.	q4::inwork 22192,6659 22265,6689
 Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: XXX ^^^
@@ -39253,17 +39253,18 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Am Alten Lokschuppen: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
+       #text  => 'Am Alten Lokschuppen: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
+       text  => 'Hauffstr.: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: note: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
+#: note: Am Alten Lokschuppen: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: osm_watch: way id="58182828" version="24"
-#: last_checked: 2024-01-15
+#: last_checked: 2024-02-10
 #: check_frequency: 30d
-# REMOVED (später Frequenz erhöhen?) --- #: check_frequency: 30d
-	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
+# REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
+Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 EOF
      },
      { from  => 1685641032, # 2023-06-01 19:37
@@ -39420,7 +39421,8 @@ EOF
      { from  => 1686407303, # 2023-06-10 16:28
        until => 1715378400, # 2024-05-11 00:00
        #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
-       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn vor der Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
@@ -39429,10 +39431,11 @@ EOF
 #: source_id: bvg2021:190#BVG320324_0
 #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
 #: also_indoor: traffic (G)
-#: last_checked: 2023-11-19 vvv
+#: last_checked: 2024-02-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-10 vvv
-Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
+# REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
+Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
 # REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
 #: next_check ^^^
 #: check_frequency ^^^

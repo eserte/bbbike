@@ -1019,12 +1019,13 @@ Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 #: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="57356015" version="18"
 #: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild
-#: last_checked: 2024-01-06
+#: last_checked: 2024-02-10
 Cardinalstr.	1s:q3 21896,5724 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
 (Marchlewskistr. - Gubener Str.)	1s:q4 13168,12219 13173,12202 13097,12166
-Alter Schönefelder Weg	1 19599,1557 19636,1609 19653,1671 19669,1729 19743,1804
+Alter Schönefelder Weg	1 19590,1554 19606,1573 19634,1609 19648,1665 19669,1729 19743,1804
+Alter Schönefelder Weg	1 19613,1561 19606,1573
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10615,9300 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
@@ -1272,7 +1273,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="14"
-#: last_checked: 2023-07-15
+#: last_checked: 2024-02-10
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1574,6 +1575,8 @@ Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
 # 
 (Vergissmeinnichtweg - Weidenkätzchenweg)	1s:q3 21503,114 21435,99
 (Weidenkätzchenweg - Buschwindröschenweg)	1s:q3 21435,99 21367,84
+Buschwindröschenweg	1s:q3 21367,84 21354,142
+Weidenkätzchenweg	1s:q3 21435,99 21421,158
 # 
 (Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
 # 
@@ -3781,7 +3784,7 @@ Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,119
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="25796640" version="24"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2023-12-20 (osm)
+#: last_checked: 2024-02-10
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -3877,7 +3880,7 @@ Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Str
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2024-01-27
+#: last_checked: 2024-02-10
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -3948,7 +3951,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-01-20
+#: last_checked: 2024-02-10
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -3988,7 +3991,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: way id="26190195" version="18"
 #: osm_watch: way id="1157662852" version="1"
 #: priority: #C
-#: last_checked: 2023-10-09
+#: last_checked: 2024-02-10
 #: check_frequency: 180d
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 # 
@@ -4010,8 +4013,8 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 # REMOVED --- #: last_checked ^^^
 # 
 #: osm_watch: way id="770592585" version="5"
-#: last_checked: 2024-01-06
-#: check_frequency: 60d
+#: last_checked: 2024-02-10
+#: check_frequency: 30d
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
 # 
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
@@ -4029,7 +4032,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-02-09
+#: last_checked: 2024-02-10
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4870,7 +4873,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
-#: last_checked: 2024-01-21 vvv
+#: last_checked: 2024-02-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-01 vvv
 #: osm_watch: way id="1085382250" version="3"

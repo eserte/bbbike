@@ -1395,12 +1395,12 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2024-01-06 vvv
+#: last_checked: 2024-02-10 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 #: osm_watch: way id="25216398" version="35"
-Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21856,5854 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
+Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
 Hämmerlingstr.: Kleinsteinpflaster	Q2+ 21683,6946 21705,6931
@@ -5433,7 +5433,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22087,5404 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2024-01-06
+#: last_checked: 2024-02-10
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22056,5314 22054,5360
@@ -5696,12 +5696,12 @@ Mundolfstr.: Asphalt	Q0 19281,518 19389,804
 Braunellensteig: unbefestigte Straße	Q2 18830,1497 18876,1594 18916,1626
 Mehldornpfad: Betonpflaster	Q0- 18941,1934 19016,1895 19051,1878
 Teichrohrweg: Betonpflaster	Q0- 19016,1895 18925,1681 18888,1658
-Am Alten Friedhof: Asphalt	Q0+ 19181,1996 19122,1839 19037,1630 18974,1559
-Pfarrwöhrde: Asphalt	Q0 19164,2001 19198,2163
+Am Alten Friedhof: Asphalt	Q0+ 19178,1999 19117,1846 19037,1630 18974,1559
+Pfarrwöhrde: Asphalt	Q0 19162,2005 19198,2163
 #: note: zumindest am Alten Schönefelder Weg
-Zum Alten Windmühlenberg: Asphalt	Q0 19653,1671 19279,1779
+Zum Alten Windmühlenberg: Asphalt	Q0 19648,1665 19279,1779
 Zum Alten Windmühlenberg: Verbundsteinpflaster	Q1 19279,1779 19204,1809
-Zum Alten Windmühlenberg: Asphalt	Q0 19204,1809 19122,1839
+Zum Alten Windmühlenberg: Asphalt	Q0 19204,1809 19117,1846
 Rapunzelstr.: Verbundsteinpflaster, mit einigen flachen Bordsteinen an Kreuzungen	Q1 19107,1403 19140,1439 19174,1522 19204,1598 19234,1676 19279,1779
 Rübezahlallee: Beton	Q1 19579,1543 19527,1586 19264,1667
 Rübezahlallee: Verbundsteinpflaster	Q1 19264,1667 19234,1676 19164,1708
@@ -5834,7 +5834,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
-Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
+Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19648,1665 19634,1609 19606,1573 19590,1554
 #: historical_note: Beton, Q0 (war es früher auch so schlecht?)
 Bohnsdorfer Weg: Beton mit einigen Hebungen	Q1+ 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20252,901 20301,838 20383,733 20430,672
 Randolfstr. [17, 19A, 21]: Asphalt	Q0 19814,1167 19877,1132
@@ -5949,7 +5949,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
 # REMOVED (dieser Stummel ist bereits asphaltiert) --- #: osm_watch: way id="226981995" version="4"
 #: osm_watch: way id="226982293" version="4"
-#: last_checked: 2023-09-24
+#: last_checked: 2024-02-10
 #: check_frequency: 360d
 Mohnblütenweg: unbefestigte Straße	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
@@ -6090,7 +6090,7 @@ Ambacher Str.: unbefestigte Straße	Q2 21944,7122 21967,7048
 Görsdorfer Str.: Asphalt, etwas wellig	Q0- 21846,7096 21879,7044 21918,6939
 Zum Wuhleblick: Beton	Q0- 22075,6967 21958,6944
 Zum Wuhleblick: Asphalt	Q0 21958,6944 21918,6939 21911,6938 21896,6937
-Hoernlestr.: Beton	Q0 22301,6683 22351,6756
+Hoernlestr.: etwas rauer Beton	Q0- 22301,6683 22351,6756
 Schönecker Weg: Beton	Q0 22330,6973 22358,7093
 Wolfsgartenstr.: Asphalt	Q0 23011,6181 22994,6296 23002,6428
 Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541
@@ -7822,7 +7822,8 @@ Regattastr. [Wohngebiet]: Beton	Q0- 22388,1947 22291,1892
 Waldstr. (Grünau): Asphalt	Q0 21839,2419 21855,2392 21869,2367 21885,2343 21986,2176 22004,2149 22130,1961
 Elstersteg: Asphalt	Q0 21750,2593 21770,2535 21801,2480 21839,2419
 (Ammerseestr. - Waldstr.): Waldweg, teilweise etwas sandig	Q2 22166,1636 22222,1831
-Zur Uferbahn: Asphalt	Q0 23085,898 22952,821 22902,796 22766,778
+Zur Uferbahn: unbefestigte Straße	Q2+ 23079,901 23045,880
+Zur Uferbahn: Asphalt	Q0 23045,880 22952,821 22902,796 22766,778
 (Zur Uferbahn - Adlergestell): Waldweg	Q1- 22766,778 22567,879 22490,877 22351,862
 Laubnitzer Pfad: Asphalt	Q0 22995,745 23067,786
 Steinbindeweg: welliger Asphalt	Q1 23237,508 23137,650 23067,786 23085,898
@@ -23666,7 +23667,7 @@ Müngersdorfer Str.: guter Asphalt	Q0 20386,145 20351,287 20326,374
 #: confirmed_by: srt
 #: XXX laut Finanzplan Berlin 2019-2023 Neubau der Straße, wird die Qualität danach besser sein?
 #: note: es existiert ein paralleler Verbundsteinpflasterweg, vermutlich nur für Fußgänger
-#: last_checked: 2023-06-04
+#: last_checked: 2024-02-10
 #: check_frequency: 180d
 #: osm_watch: way id="152708910" version="5"
 Müngersdorfer Str.: mäßiges Kopfsteinpflaster	Q2 20386,145 20430,-17
@@ -31871,7 +31872,7 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 #: by: mapillary: vvv
 (Hohengraper Weg - Königswalder Str.): unbefestigter Weg	Q2 16807,16726 16772,16852 16751,16931 16723,17004
 (Königswalder Str. - Neuzeller Weg): Verbundsteinpflaster	Q1+ 16723,17004 16692,17080 16658,17142
-(Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21901,5743 21884,5769 21873,5832 21856,5854
+(Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21901,5743 21884,5769 21873,5832 21862,5857
 (Cardinalplatz - Wuhlewanderweg): Verbundsteinpflaster	Q1 21873,5832 21938,5866
 Cardinalplatz: schlechtes Kopfsteinpflaster	Q3 21912,5724 21896,5724 21901,5743 21910,5748 21916,5740 21912,5724
 (Eisenhutweg - Akeleiweg): unbefestigter Weg	Q2 17454,3096 17513,3158
