@@ -467,11 +467,6 @@ sbahnhof:	sbahnhof-orig
 	mv sbahnhof~ sbahnhof
 	-@$(READONLY) $@
 
-## Execute from bbbike root directory (evtl. mehrmals):
-## XXX What for?
-# cp -f data/Berlin.coords.data /tmp
-# perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
-
 RBAHN_CATEGORIES!=	${PERL} -I${BBBIKEDIR} -MStrassen::Cat -e '@cats = Strassen::Cat::get_category_list(q{rbahn}); print "@cats"'
 
 rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
@@ -504,11 +499,6 @@ ubahnhof:	ubahnhof-orig
 	$(CONVERT_ORIG) -keep-directive map_tube_other_link ubahnhof-orig > ubahnhof~
 	mv ubahnhof~ ubahnhof
 	-@$(READONLY) $@
-
-## Execute from bbbike root directory (evtl. mehrmals):
-## XXX What for?
-# cp -f data/Berlin.coords.data /tmp
-# perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("ubahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die $!; for (@f) { if (/^U-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
 .for i in u s
 $(i)bahnhof_bg:	$(i)bahnhof-orig
