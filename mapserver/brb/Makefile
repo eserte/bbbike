@@ -232,7 +232,6 @@ ALL_TPL_DEFINES=\
 DISTFILES=\
 	Makefile \
 	Makefile.${TARGET}.inc \
-	brb-ipaq.map-tpl \
 	brb.css \
 	brb.html-tpl \
 	brb.js-tpl \
@@ -277,8 +276,6 @@ ADD_BBBIKECGICONFIG_VARS=\
 
 MAPFILES=	$(SCOPES:S/^/brb-/:S/$/.map/)
 MAPFILES_EXTRA=	brb.map
-IPAQ_MAPFILES=	$(SCOPES:S/^/brb-ipaq-/:S/$/.map/)
-IPAQ_MAPFILES_EXTRA=	brb-ipaq.map
 HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html \
 		radroute.html
 TEMPORARIES=	radroute_body.html
@@ -299,7 +296,7 @@ TEMPORARIES=	radroute_body.html
 all:	build-all
 
 clean:
-	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA} ${HTMLFILES} ${TEMPORARIES}
+	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${HTMLFILES} ${TEMPORARIES}
 
 build-all: Makefile.${TARGET}.inc .WAIT maps html misc .WAIT .built_for.${TARGET}
 
@@ -307,7 +304,7 @@ build-all: Makefile.${TARGET}.inc .WAIT maps html misc .WAIT .built_for.${TARGET
 	rm -f .built_for.*
 	touch .built_for.${TARGET}
 
-maps:	${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA}
+maps:	${MAPFILES} ${MAPFILES_EXTRA}
 
 html:	${HTMLFILES}
 
@@ -372,22 +369,6 @@ brb.map:	brb-brb.map
 .for scope in $(SCOPES)
 brb-$(scope).map:	.brb.map mkroutemap
 	${BRBDIR}/mkroutemap -force -scope $(scope) .brb.map $@
-	chmod ugo+r $@
-.endfor
-
-######################################################################
-# ipaq maps
-
-.brb-ipaq.map:	brb-ipaq.map-tpl brb.map-inc Makefile Makefile.${TARGET}.inc
-	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
-	chmod ugo+r $@
-
-brb-ipaq.map:	brb-ipaq-brb.map
-	[ -L $@ ] || ln -s brb-ipaq-brb.map $@
-
-.for scope in $(SCOPES)
-brb-ipaq-$(scope).map:	.brb-ipaq.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope $(scope) .brb-ipaq.map $@
 	chmod ugo+r $@
 .endfor
 

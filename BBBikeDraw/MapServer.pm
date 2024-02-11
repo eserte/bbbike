@@ -110,14 +110,6 @@ $VERSION = '1.46';
 	$self;
     }
 
-    sub bbbike_cgi_ipaq_conf {
-	my $self = __PACKAGE__->bbbike_cgi_conf;
-	my(%args) = @_[1..$#_];
-	$self->TemplateMap("brb-ipaq.map-tpl");
-	$self->ImageSuffix($args{ImageType} || "png");
-	$self;
-    }
-
     # Mapserver 8.x renamed shp2img to map2img
     sub shp2img_path {
 	my $self = shift;
@@ -350,7 +342,6 @@ sub allocate_colors {
 	$im->ColorGreyBg([$r,$g,$b]);
     } else {
 	#$im->ColorGreyBg([153,153,153]); # zu dunkel
-	#$im->ColorGreyBg([225,225,225]); # zu hell für den iPAQ
 	$im->ColorGreyBg([180,180,180]);
     }
     $im->Transparent($im->ColorGreyBg) if ($self->{'Bg'} =~ /transparent$/);
