@@ -773,7 +773,7 @@ sub cgi {
     }
     if ($opt{mapserver}) {
 	# XXX Actually it would be easier to copy everything in the repository, not just the files mentioned in MANIFEST
-	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
+	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", "data/doit.pl", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
 	    my($src, $dest) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
 	    next if -d $src; # ignore directories in miscsrc
 	    $doit->copy($src, $dest);
@@ -842,7 +842,7 @@ EOF
     if ($opt{mapserver}) {
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy --no-install-recommends \\
-      bmake mapserver-bin cgi-mapserver libobject-iterate-perl
+      bmake mapserver-bin cgi-mapserver
 EOF
     }
     $dockerfile .= <<EOF;
@@ -862,8 +862,15 @@ EOF
 	$dockerfile .= <<'EOF';
 RUN (cd cgi && ln -snf bbbike-debian.cgi.config bbbike.cgi.config)
 RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
-RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake'))
+RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake')
 EOF
+	# XXX review and maybe remove again
+	if ($opt{distver} =~ /bookworm/) {
+	    warning "Temporary hack: provide /etc/mapserver.conf until better solutions exist";
+	    $dockerfile .= <<'EOF';
+RUN cp /bbbike/mapserver/brb/mapserver.conf /etc
+EOF
+	}
     }
     $dockerfile .= <<EOF;
 WORKDIR /bbbike/cgi
