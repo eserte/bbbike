@@ -352,34 +352,7 @@ $(MAPFILES_DATA_DIR)/gesperrt_point.shp:	gesperrt
 
 # Shorten both ends of each "gesperrt" street by 30 meters
 $(MAPFILES_DATA_DIR)/gesperrt30.shp:	gesperrt
-	perl -w -I.. -I../lib -Mstrict -MStrassen -MStrassen::Util -MObject::Iterate=iterate -e \
-'my $$slen=30; \
- my $$s = Strassen->new("gesperrt"); \
- my $$news = Strassen->new; \
- iterate { \
-  my @c = @{ $$_->[Strassen::COORDS] }; \
-  if (@c >= 2) { \
-   splice @c, 0, 1, shorten(@c[0,1]); \
-  } \
-  if (@c >= 2) { \
-   splice @c, -1, 1, shorten(@c[-1,-2]); \
-  } \
-  if (@c >= 2) { \
-   $$_->[Strassen::COORDS] = [@c]; \
-   $$news->push($$_) \
-  } \
- } $$s; \
- $$news->write("-"); \
- sub shorten { \
-  my(@p) = (split(/,/, $$_[0]), split /,/, $$_[1]); \
-  my $$len = Strassen::Util::strecke([@p[0,1]],[@p[2,3]]); \
-  return () if $$len<=$$slen; \
-  my $$f = 1-($$len-$$slen)/$$len; \
-  return (join(",", map { int } ($$p[0]+($$p[2]-$$p[0])*$$f, \
-                                 $$p[1]+($$p[3]-$$p[1])*$$f)) \
-         ); \
- } \
-' > /tmp/gesperrt30
+	perl doit.pl mapfiles_tmp_gesperrt30
 	$(BBD2ESRI) -onewayhack \
 	     -o $(MAPFILES_DATA_DIR)/gesperrt30 /tmp/gesperrt30
 	@rm -f /tmp/gesperrt30
