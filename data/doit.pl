@@ -482,6 +482,50 @@ sub action_sourceid {
     }
 }
 
+sub _build_bahnhof_bg {
+    my($d, $dest) = @_;
+    (my $src = $dest) =~ s/_bg$/-orig/;
+    if (_need_rebuild $dest, $src) {
+	require Strassen::Core;
+	# get U/S out of u/sbahnhof
+	my $upperletter = uc((basename($src) =~ /^(.)/)[0]);
+	open my $ofh, '>', "$dest~" or error "Can't write to $dest~: $!";
+	print $ofh "#: title: Fahrradfreundliche Zugänge bei der ${upperletter}-Bahn\n";
+	if ($upperletter eq 'S') {
+	    print $ofh "#: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103\n";
+	}
+	print $ofh "#:\n";
+	my $s = Strassen->new_stream($src, UseLocalDirectives => 1);
+	my $new_s = Strassen->new;
+	$s->read_stream(sub {
+	    my($r, $dir) = @_;
+	    if (my $attrs = $dir->{attributes}) {
+		my $attr = $attrs->[0];
+		if ($attr =~ s/\s+\((.*)\)//) {
+	            $r->[Strassen::NAME()] .= ": $1";
+		}
+	        $r->[Strassen::CAT()] = $attr;
+	        $new_s->push($r);
+	    }
+	});
+	if (!$new_s->count) {
+	    error "Unexpected: no bg records found in $src";
+	}
+	print $ofh $new_s->as_string;
+	close $ofh or error $!;
+	_empty_file_error "$dest~";
+	_commit_dest $d, $dest;
+    }
+}
+sub action_ubahnhof_bg {
+    my($d) = @_;
+    _build_bahnhof_bg($d, "ubahnhof_bg");
+}
+sub action_sbahnhof_bg {
+    my($d) = @_;
+    _build_bahnhof_bg($d, "sbahnhof_bg");
+}
+
 ######################################################################
 
 sub action_old_bbbike_data {
