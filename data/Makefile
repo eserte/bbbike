@@ -1716,22 +1716,8 @@ check-disabled:
 	$(CHECK_DOUBLE) -linesegs brunnels
 	@touch $@
 
-.check_exits:	exits \
-		ubahnhof sbahnhof rbahnhof \
-		.strassen.tmp landstrassen landstrassen2
-	$(PERL) -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
-	$$s=Strassen->new(q{exits});\
-	$$new_s=Strassen->new;\
-	iterate {\
-	    $$_->[Strassen::COORDS] = [@{$$_->[Strassen::COORDS]}[0, -1]];\
-	    $$new_s->push($$_);\
-	} $$s;\
-	print $$new_s->as_string' > /tmp/exits-first-last
-	$(CHECK_POINTS) /tmp/exits-first-last \
-		ubahnhof sbahnhof rbahnhof \
-		.strassen.tmp landstrassen landstrassen2
-	@rm -f /tmp/exits-first-last
-	@touch $@
+.check_exits:	exits               ubahnhof sbahnhof rbahnhof .strassen.tmp landstrassen landstrassen2
+	$(PERL) doit.pl check_exits ubahnhof sbahnhof rbahnhof .strassen.tmp landstrassen landstrassen2
 
 .check_temp_blockings:	temp_blockings/*.bbd $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd \
 			strassen landstrassen landstrassen2 faehren

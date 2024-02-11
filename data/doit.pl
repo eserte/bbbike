@@ -47,6 +47,7 @@ my @replacestrassen    = ($perl, "$miscsrcdir/replacestrassen");
 my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
 my @check_double       = ($perl, "$miscsrcdir/check_double");
 my @check_connected    = ($perl, "$miscsrcdir/check_connected");
+my @check_points       = ($perl, "$miscsrcdir/check_points");
 
 my @orig_files = bsd_glob("*-orig");
 my @fragezeichen_lowprio_bbd = defined $bbbikeauxdir ? "$bbbikeauxdir/bbd/fragezeichen_lowprio.bbd" : ();
@@ -526,6 +527,26 @@ sub action_sbahnhof_bg {
     _build_bahnhof_bg($d, "sbahnhof_bg");
 }
 
+sub action_check_exits {
+    my($d, @argv) = @_;
+    my $check_file = '.check_exits';
+    my @srcs = @argv;
+    if (_need_rebuild $check_file, 'exits', @srcs) {
+	require Strassen::Core;
+	my $s = Strassen->new_stream(q{exits});
+	my $new_s = Strassen->new;
+	$s->read_stream(sub {
+	    my $r = shift;
+	    $r->[Strassen::COORDS()] = [@{$r->[Strassen::COORDS()]}[0, -1]];
+	    $new_s->push($r);
+	});
+	my(undef, $exits_first_last_file) = tempfile("exits-first-last_XXXXXXXX", TMPDIR => 1, UNLINK => 1);
+	$new_s->write($exits_first_last_file);
+	$d->run([@check_points, $exits_first_last_file, @srcs]);
+	$d->touch($check_file);
+    }
+}
+
 ######################################################################
 
 sub action_old_bbbike_data {
@@ -859,6 +880,7 @@ my %action_with_own_opt_handling = map{($_,1)}
 	  forever_until_error
 	  bbbgeojsonp_index_html
 	  geojson_index_html
+	  check_exits
      );
 if ($action_with_own_opt_handling{($ARGV[0]||'')}) {
     (my $action = $ARGV[0]) =~ s{[-.]}{_}g;
