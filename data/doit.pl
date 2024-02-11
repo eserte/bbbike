@@ -547,6 +547,21 @@ sub action_check_exits {
     }
 }
 
+# run unconditionally
+sub action_check_do_check_nearest {
+    my($d) = @_;
+    require Strassen::Core;
+    my $s = Strassen->new("$persistenttmpdir/check_nearest.bbd");
+    $s->init;
+    my $r = $s->next;
+    my($dist) = $r->[Strassen::NAME()] =~ /^\S+\s+(\d+)m/;
+    if (!defined $dist) { error "Cannot parse " . $r->[Strassen::NAME()] }
+    if ($dist < 20) {
+	warning Strassen::arr2line2($r);
+	error "Distance $dist m found. Please check and add to @{[ cwd() ]}/check_nearest_ignore, if necessary";
+    }
+}
+
 ######################################################################
 
 sub action_old_bbbike_data {

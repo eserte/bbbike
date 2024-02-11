@@ -1975,10 +1975,7 @@ check-nearest-ignore-remove-outdated:
 do-check-nearest:	.check-do-check-nearest
 
 .check-do-check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd
-	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
-	    -MStrassen -MObject::Iterate=iterate -e \
-	    '$$s = Strassen->new($$ARGV[0]);\
-	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; if ( $$dist < 20 ) { system "head", "${PERSISTENTTMPDIR}/check_nearest.bbd"; die "Distance $$dist m found. Please check and add to ${.CURDIR}/check_nearest_ignore, if necessary."; }; } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
+	$(PERL) doit.pl check_do_check_nearest
 
 .if 0
 GNUmakefile: Makefile $(MISCRSRCDIR)/b2gmake
