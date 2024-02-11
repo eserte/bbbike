@@ -649,9 +649,9 @@ LAYER
       SYMBOL "circle"
       COLOR 180 180 255
       SIZE [% size %]
-      [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
-      [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
     END
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
   END
 [% END -%]
 [% PROCESS CLASS_W_ANY expr="W" size=1 minscale=20000 maxscale=400000 -%]
