@@ -29616,7 +29616,7 @@ EOF
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2024-01-02 (osm)
+#: last_checked: 2024-02-11 (mapillary)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34857,7 +34857,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2024-02-03 (architektur-urbanistik)
+#: last_checked: 2024-02-12 (daf)
 #: check_frequency: 90d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -39254,14 +39254,16 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
        #text  => 'Am Alten Lokschuppen: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
-       text  => 'Hauffstr.: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
+       text  => 'Hauffstr.: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, vermutlich bis Ende Oktober 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: note: Am Alten Lokschuppen: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
+#: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-02-10
+#: last_checked: 2024-02-12
 #: check_frequency: 30d
+#: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
 # REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
 #: osm_watch: way id="1025826786" version="6"
@@ -40485,8 +40487,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-07-08 23:59:59"),
-       text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Juli 2024',
+       until => $isodate2epoch->("2024-08-10 23:59:59"),
+       text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis August 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1360467.php (Erwähnung des SEVs, bis 13.04.2024)
@@ -40494,6 +40496,7 @@ EOF
 #: by: https://www.youtube.com/watch?v=m7OQ0dpU-FI
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,790304#msg-790304 (Verlängerung bis 08.07.2024)
+#: by: https://www.bahninfo-forum.de/read.php?9,727655,792696#msg-792696 (Vollsperrung im gesamten Bereich Königsplatz vom 29.06.2024 bis 10.8.2024, danach weitere Arbeiten)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
 #: last_checked: 2024-01-27 vvv
@@ -41020,10 +41023,11 @@ EOF
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 3
 Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
-#: osm_watch: way id="23755961" version="23"
+#: osm_watch: way id="389101374" version="16"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch: note 4053376 3
-#: osm_watch: way id="1149365724" version="3"
+#: osm_watch: way id="1149365724" version="4"
+#: osm_watch: way id="1149365723" version="5"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: next_check ^^^
@@ -41427,14 +41431,14 @@ Sodener Str.	q3::inwork 3718,7576 3703,7324
 EOF
      },
      { from  => 1706641941, # undef, # 
-       until => $isodate2epoch->("2024-02-06 12:00:00"), # 1706449967, # undef, # XXX
+       until => $isodate2epoch->("2024-03-05 12:00:00"), # $isodate2epoch->("2024-02-06 12:00:00"), # 1706449967, # undef, # XXX
 #       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten nicht bekannt (Stand Anfang Januar 2024: Sperrung besteht weiterhin)',
-       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.01.2024 06:00 bis 06.02.2024 12:00',
+       text  => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.01.2024 06:00 bis 05.03.2024 12:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GROSSBEEREN-2023
 # REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25
-#: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024) (inaktiv)
+#: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024) (inaktiv) (bis 05.03.2024)
 	q3::inwork 9178,10451 9192,10528
 EOF
      },
@@ -41879,6 +41883,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
 	q4::inwork 3450,12722 3370,12725 3291,12721
+EOF
+     },
+     { from  => 1707631200, # 2024-02-11 07:00
+       until => 1710522000, # 2024-03-15 18:00
+       text  => 'Eisenzahnstr.: Bauarbeiten zwischen Ravensberger Str. und Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 12.02.2024 07:00 bis 15.03.2024 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024)
+	q4::inwork 3711,9855 3719,10004
 EOF
      },
     );
