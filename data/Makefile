@@ -817,11 +817,10 @@ housenumbers:	housenumbers-orig
 	mv housenumbers~ housenumbers
 	-@$(READONLY) $@
 
-mount:	strassen landstrassen landstrassen2 fragezeichen hoehe gesperrt
+mount:	strassen landstrassen landstrassen2 fragezeichen-cooked hoehe gesperrt
 	-@$(WRITEABLE) $@
-# Earlier -str files have lower precedence --- *strassen* streetnames need to be preferred over fragezeichen streetnames
 	$(STEIGUNG_STAT) -die-on-fatal -minmount 1.0 -commentscompatible -sperre gesperrt \
-		-str fragezeichen -str strassen -str landstrassen -str landstrassen2 -i hoehe -o $@~
+		-str fragezeichen-cooked -str strassen -str landstrassen -str landstrassen2 -i hoehe -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
