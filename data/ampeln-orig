@@ -47,12 +47,12 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: valid: -20250423
 Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 # 
-#: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024)
+#: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024) (bis 20.02.2024)
 #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
 #: note: bei VIZ entfernt, existiert aber weiterhin
 #: last_checked: 2024-02-08
-#: next_check: 2024-02-13
-#: valid: -20240213
+#: next_check: 2024-02-20
+#: valid: -20240220
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 # 
 # REMOVED --- #: next_check_id: RUNGE-2023
@@ -3831,6 +3831,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: osm, mapillary
 #: note: Anforderungsampel
 	F 9704,19428
+#: note: Ampel nur mit Rot-Gelb-Signalisierung, Busse aus der Endhaltestelle können auf die Storkower Str. gelassen werden
+	X 14559,13248
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554

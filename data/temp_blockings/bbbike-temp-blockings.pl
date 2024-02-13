@@ -36103,7 +36103,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
 #: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
-#: last_checked: 2023-12-14 vvv
+#: last_checked: 2024-02-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
@@ -39929,10 +39929,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
-#: note: Halteverbote bis 17. November 2023; wurden nicht verlängert; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
-#: last_checked: 2024-02-06 vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
+#: last_checked: 2024-02-11 (mapillary) vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2023-11-17
+#: next_check: 2024-02-29
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
 #: check_frequency ^^^
@@ -40716,7 +40716,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2024-01-31 (mapillary) vvv
+#: last_checked: 2024-02-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
@@ -41458,14 +41458,17 @@ EOF
 	2::inwork -430,23912 -406,23934
 EOF
      },
-     { from  => 1700546400, # 2023-11-21 07:00
-       until => 1702486800, # 2023-12-13 18:00
-       text  => 'Kamminer Str.: Bauarbeiten zwischen Fabriciusstr. und Osnabrücker Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22.11.2023 07:00 bis 13.12.2023 18:00',
+     { from  => $isodate2epoch->("2024-02-12 07:00:00"), # 1700546400, # 2023-11-21 07:00
+       until => $isodate2epoch->("2024-03-22 18:00:00"), # 1702486800, # 2023-12-13 18:00
+       #text  => 'Kamminer Str.: Bauarbeiten zwischen Fabriciusstr. und Osnabrücker Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22.11.2023 07:00 bis 13.12.2023 18:00',
+       text  => 'Kamminer Str.: Bauarbeiten zwischen Osnabrücker Straße und Brahestr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.02.2024 07:00 bis 22.03.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.300851,52.527492,22.11.2023,07:00 (bis 13.12.2023) (inaktiv)
-#: note: bei rbb "Sperrung in Richtung Tegeler Weg" (aber die Straße führt gar nicht in diese Richtung?)
-	q4::inwork 3310,13253 3351,13411 3371,13501
+# REMOVED (alter Eintrag) --- #: note: bei rbb "Sperrung in Richtung Tegeler Weg" (aber die Straße führt gar nicht in diese Richtung?)
+# REMOVED ---	q4::inwork 3310,13253 3351,13411 3371,13501
+#: source_id: viz2021:13.30024,52.5261,13.02.2024,07:00 (bis 22.03.2024)
+	q4::inwork 3351,13411 3310,13253
 EOF
      },
      { from  => $isodate2epoch->("2023-09-12 07:00:00"),
@@ -41813,7 +41816,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-02-08 (mapillary)
+#: last_checked: 2024-02-13
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -41892,6 +41895,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024)
 	q4::inwork 3711,9855 3719,10004
+EOF
+     },
+     { from  => 1707627600, # 2024-02-11 06:00
+       until => 1708102800, # 2024-02-16 18:00
+       text  => 'Breite Str.: Kraneinsatz, Fahrbahn zwischen Scharrenstr. und Neumannsgasse gesperrt, vom 12.02.2024 06:00 bis 16.02.2024 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.404018,52.515338,12.02.2024,06:00 (bis 16.02.2024)
+	q3::inwork 10480,12077 10383,12191
 EOF
      },
     );

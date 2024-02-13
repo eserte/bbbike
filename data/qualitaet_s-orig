@@ -617,7 +617,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2023-10-19 (daf)
+#: last_checked: 2024-02-13
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -631,7 +631,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2024-01-31 (mapillary)
+#: last_checked: 2024-02-11 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -11233,7 +11233,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2023-12-17 (mapillary) vvv
+#: last_checked: 2024-02-13 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -15152,7 +15152,8 @@ Ringenwalder Str.: Asphalt	Q0 22088,16341 21862,16381
 #: by: ^^^
 # 
 #: by: "sportwart":
-Schönholzer Str.: Asphalt	Q0 9838,14640 10043,14735
+#: confirmed_by: srt
+Schönholzer Str.: Asphalt	Q0 9832,14651 10038,14748
 # 
 #: by: martin: vvv
 #: confirmed_by: srt
@@ -16526,6 +16527,7 @@ Rotkopfweg: Asphalt	Q0 10985,3707 10968,3599 10937,3423 10930,3365
 #: by: Sven Dreißig: vvv
 #: corrected_by: srt (dieses kurze Teilstück ist asphaltiert)
 Hallandstr.: Asphalt	Q0 11590,16878 11549,16880
+#: confirmed_by: srt
 Hallandstr.: Kopfsteinpflaster	Q2 11549,16880 11499,16883 11364,16887 11270,16890 10992,16829
 #: by: ^^^
 # 
@@ -29717,7 +29719,7 @@ Ruppiner Str.: Asphalt	Q0 9847,15134 9904,15014
 #: corrected_by: srt (Q0 -> Q1)
 Ruppiner Str.: Gehwegplatten	Q1 9904,15014 9918,14986 9942,14936
 #: confirmed_by: srt
-Ruppiner Str.: Asphalt	Q0 9942,14936 10003,14823 10043,14735 10070,14678 10105,14608 10150,14525
+Ruppiner Str.: Asphalt	Q0 9942,14936 10003,14823 10038,14748 10070,14678 10105,14608 10150,14525
 Wattstr.: Kopfsteinpflaster	Q2 9517,14785 9432,14936 9355,15078
 Jasmunder Str.: Kopfsteinpflaster	Q2 9341,14701 9270,14856 9201,14997
 Theodor-Heuss-Weg: Kleinpflaster	Q2 9081,14363 9128,14461 9197,14562

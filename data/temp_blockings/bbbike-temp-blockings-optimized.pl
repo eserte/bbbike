@@ -4717,28 +4717,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php
-#: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2023/05/BVG-PLUS-06-23-barrierefrei-1.pdf
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1334239.php
-#: by: https://nitter.cz/VIZ_Berlin/status/1669039498230116352#m
-#: by: https://viz.berlin.de/2023/06/blumberger-damm-bruecke-2/
-#: by: https://nitter.cz/VIZ_Berlin/status/1669933639965237248#m (Rad/Fuß nur Sa 8:00 bis So 19:00 betroffen)
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnl2Nl85LVhvQUFoVU13LnBuZw==
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1413585.php (Sperrung im Februar 2024)
-#: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr) (inaktiv)
-#: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
-#: source_id: viz2021:13.562514,52.512737,15.06.2023,07:00 (bis 20.06.2023) (inaktiv)
-	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
-',
-         'from' => 1707368400,
-         'id' => 3571,
-         'text' => 'Blumberger Damm: Sperrung der Blumberger-Damm-Brücke zwischen Altentreptower Str. und Frankenholzer Weg, 09. Februar 2024 06:00 Uhr bis 12. Februar 2024 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1707764400
-       },
+       undef,
        undef,
        undef,
        {
@@ -4773,7 +4752,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
 #: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
-#: last_checked: 2023-12-14 vvv
+#: last_checked: 2024-02-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
@@ -5986,10 +5965,10 @@ Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
        undef,
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
-#: note: Halteverbote bis 17. November 2023; wurden nicht verlängert; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
-#: last_checked: 2024-02-06 vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
+#: last_checked: 2024-02-11 (mapillary) vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2023-11-17
+#: next_check: 2024-02-29
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
 #: check_frequency ^^^
@@ -6122,16 +6101,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
          'type' => 'gesperrt',
          'until' => 1709247599
        },
-       {
-         'data' => '#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024)
-	2::inwork -19289,63424 -19675,64106
-',
-         'from' => 1692511200,
-         'id' => 3884,
-         'text' => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 13.02.2024, 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1707840000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6263,7 +6233,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        {
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2024-01-31 (mapillary) vvv
+#: last_checked: 2024-02-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
@@ -6614,7 +6584,19 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'until' => 1709636400
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.300851,52.527492,22.11.2023,07:00 (bis 13.12.2023) (inaktiv)
+# REMOVED (alter Eintrag) --- #: note: bei rbb "Sperrung in Richtung Tegeler Weg" (aber die Straße führt gar nicht in diese Richtung?)
+# REMOVED ---	q4::inwork 3310,13253 3351,13411 3371,13501
+#: source_id: viz2021:13.30024,52.5261,13.02.2024,07:00 (bis 22.03.2024)
+	q4::inwork 3351,13411 3310,13253
+',
+         'from' => 1707717600,
+         'id' => 3975,
+         'text' => 'Kamminer Str.: Bauarbeiten zwischen Osnabrücker Straße und Brahestr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.02.2024 07:00 bis 22.03.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1711126800
+       },
        {
          'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024)
 #: note: bei rbb bereits bis 30.04.2024
@@ -6864,7 +6846,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-02-08 (mapillary)
+#: last_checked: 2024-02-13
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -6909,6 +6891,16 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'text' => 'Eisenzahnstr.: Bauarbeiten zwischen Ravensberger Str. und Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 12.02.2024 07:00 bis 15.03.2024 18:00',
          'type' => 'handicap',
          'until' => 1710522000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.404018,52.515338,12.02.2024,06:00 (bis 16.02.2024)
+	q3::inwork 10480,12077 10383,12191
+',
+         'from' => 1707627600,
+         'id' => 4007,
+         'text' => 'Breite Str.: Kraneinsatz, Fahrbahn zwischen Scharrenstr. und Neumannsgasse gesperrt, vom 12.02.2024 06:00 bis 16.02.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1708102800
        }
      
 );

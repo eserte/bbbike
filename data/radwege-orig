@@ -950,7 +950,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-02-05
+#: last_checked: 2024-02-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1519,7 +1519,7 @@ stellenweise Grünbeschichtung	RW4; 18946,13472 18875,13467
 Mitbenutzung des Gehwegs erlaubt	RW1; 19899,13534 20073,13535
 	RW2; 20073,13535 20150,13562 20193,13621
 Gehweg für Radfahrer frei	RW1; 20150,13562 20073,13535 19899,13534
-	RW1;RW1 10002,14092 9938,14356 9864,14578 9855,14598 9838,14640 9800,14722
+	RW1;RW1 10002,14092 9938,14356 9864,14578 9855,14598 9832,14651 9800,14722
 	RW1;RW0 11136,9183 11208,9345 11274,9492
 	RW2; 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,13246
 # 
@@ -2755,7 +2755,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-02-06 vvv
+#: last_checked: 2024-02-13 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3184,7 +3184,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-01-22 vvv
+#: last_checked: 2024-02-13 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4569,7 +4569,7 @@ Grünbeschichtung, Poller	RW4; 18626,11742 18696,11754
 	RW2;RW2 18098,11706 18215,11690
 #: by: Germar Molter vvv
 #: confirmed_by: srt vvv
-	RW3;RW4 15515,13134 15347,13124 15090,13116 15080,13117 14871,13135 14780,13160 14630,13230 14530,13256 14502,13264 14307,13318 14218,13358
+	RW3;RW4 15515,13134 15347,13124 15090,13116 15080,13117 14871,13135 14780,13160 14630,13230 14559,13248 14530,13256 14502,13264 14307,13318 14218,13358
 	RW4;RW4 14218,13358 14159,13384 14109,13449 14089,13509 14060,13622
 	RW4;RW3 14060,13622 14043,13667
 	RW2;RW3 14043,13667 14006,13761
@@ -7438,7 +7438,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-01-04 (mapillary) vvv
+#: last_checked: 2024-02-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
