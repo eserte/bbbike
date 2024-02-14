@@ -3625,7 +3625,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-01-31 vvv
+#: last_checked: 2024-02-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4920,7 +4920,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-02-10
+#: last_checked: 2024-02-14
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5716,7 +5716,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: note: Am Alten Lokschuppen: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-02-12
+#: last_checked: 2024-02-14
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
@@ -5904,12 +5904,12 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
 #: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
-#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024)
+#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: last_checked: 2024-02-07 vvv
 #: check_frequency: 14d vvv 
-#: next_check: 2024-02-16 vvv
+#: next_check: 2024-03-08 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
 Plesser Str.	q4::inwork 13647,9304 13667,9316
 Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
@@ -5921,9 +5921,9 @@ Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
 ',
          'from' => 1704999960,
          'id' => 3844,
-         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 16.02.2024 17:00 Uhr',
+         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 08.03.2024 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1708099200
+         'until' => 1709913600
        },
        undef,
        undef,
@@ -6125,9 +6125,13 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,782944#msg-782944 (sogar bis 27.05.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,790304#msg-790304 (Verlängerung bis 08.07.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,792696#msg-792696 (Vollsperrung im gesamten Bereich Königsplatz vom 29.06.2024 bis 10.8.2024, danach weitere Arbeiten)
+#: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Bauarbeiten bis 20. Oktober 2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024)
 #: note: next_check ist hier der erste Ende-Termin (VIZ)
-#: last_checked: 2024-01-27 vvv
+#: XXX zukünftige Einschränkungen:
+#: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
+#: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
+#: last_checked: 2024-02-12 (okas) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -6194,21 +6198,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        },
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (ex-B,ex-G)
-#: note: Endedatum per Halteverbotsschilder (dauert aber länger)
-# REMOVED (im Kreuzungsbereich mittlerweile keine Einschränkungen) --- #: note: zur östlichen Rupprechtstr. sind auch Bauarbeiten, aber zurzeit existiert eine schmale Gasse
-#: add_fragezeichen: Wurden die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: last_checked: 2024-01-20
-# REMOVED --- #: next_check: 2023-12-01
-	q4::inwork 16273,11113 16227,10991
-',
-         'from' => 1694624894,
-         'id' => 3915,
-         'text' => 'Giselastr.: Bauarbeiten, Fahrbahn nördlich der Rupprechtstr. gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -6407,7 +6397,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: osm_watch: way id="389101374" version="16"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
-#: osm_watch: note 4053376 3
+#: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="4"
 #: osm_watch: way id="1149365723" version="5"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
@@ -6901,6 +6891,26 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'text' => 'Breite Str.: Kraneinsatz, Fahrbahn zwischen Scharrenstr. und Neumannsgasse gesperrt, vom 12.02.2024 06:00 bis 16.02.2024 18:00',
          'type' => 'handicap',
          'until' => 1708102800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
+#: source_id: bvg2021:m27#BVG342288_0
+#: source_id: bvg2021:123#BVG342289_0
+#: source_id: viz2021:13.34718,52.53079,14.02.2024,07:00 (bis 29.09.2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/erneuerung-abwasserdruckleitung-unter-der-perleberger-strasse/
+#: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
+#: osm_watch: way id="375991056" version="16"
+#: osm_watch: way id="375958863" version="11"
+#: add_fragezeichen: Sind Radfahrer von den Bauarbeiten betroffen?
+#: priority: #A
+#: next_check: 2024-02-14
+Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+',
+         'from' => 1707890400,
+         'id' => 4008,
+         'text' => 'Perleberger Str.: Bauarbeiten Richtung Fennstr. zwischen Birkenstr. und Ellen-Epstein-Str., evtl. sind auch Radfahrer betroffen, vom 14.02.2024 07:00 bis 23.09.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1758639600
        }
      
 );

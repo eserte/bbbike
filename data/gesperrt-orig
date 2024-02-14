@@ -3901,7 +3901,7 @@ Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-01-19 vvv
+#: last_checked: 2024-02-14 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -3954,7 +3954,7 @@ Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-02-10
+#: last_checked: 2024-02-14
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4035,7 +4035,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-02-12
+#: last_checked: 2024-02-14
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4103,6 +4103,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/senatsverwaltung-will-ersatzbau-im-jahre-2025-in-betrieb-nehmen_a377225 (Inbetriebnahme 2025)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1312741.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10953 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11443 (Antrag)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="18"
@@ -4852,7 +4853,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Infoveranstaltung)
-#: last_checked: 2024-01-06
+#: last_checked: 2024-02-12 (okas)
 #: check_frequency: 360d
 #: next_check: 2024-05-01
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4876,9 +4877,11 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
-#: last_checked: 2024-02-10 vvv
+#: by: https://www.berliner-zeitung.de/mensch-metropole/bvg-baut-bis-herbst-in-berlin-schoeneweide-warum-muss-das-so-lange-dauern-li.2186715 (Verkehrslösung Schöneweide geht voraussichtlich im Sommer 2024 in Betrieb)
+#: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Inbetriebnahme im Sommer 2024, Verkerswegebau bis 3. Quartal 2024)
+#: last_checked: 2024-02-12 (okas) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2024-05-01 vvv
+#: next_check: 2024-07-15 vvv
 #: osm_watch: way id="1085382250" version="3"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # REMOVED --- #: osm_watch: way id="226163591" version="6"

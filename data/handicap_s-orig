@@ -84,7 +84,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-02-08
+#: last_checked: 2024-02-14
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -813,7 +813,7 @@ Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr.	q3::inwork 15747,12880 1595
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-01-27
+#: last_checked: 2024-02-14
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -1953,7 +1953,7 @@ Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-31
 #: note: Radfahrer sollen absteigen
 (Wohnanlage Friedastr.): Fußgänger	q3 16887,11545 16753,11559
 # ----------------- Bordstein-Check bis hier ----------------------------------
-(Eitelstr. - Bahnhof Lichtenberg): Fußgänger	q3 16727,11611 16766,11603
+(Eitelstr. - Bahnhof Lichtenberg): Fußgänger	q3 16717,11604 16759,11579
 Bennigsenstr.: enge Straße	q0- 5813,7774 5957,7773 6195,7775 6209,7765
 #: note: Grünanlage, für Rad+Mofa verboten
 Perelsplatz: Fußgänger, Radfahren verboten	q4 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718
@@ -4671,6 +4671,8 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Grünanlage, einige Fußgänger	q1 23521,14973 23529,14973 23543,14966
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: last_checked: 2024-02-13
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292

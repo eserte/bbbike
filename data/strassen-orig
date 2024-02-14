@@ -1395,6 +1395,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015
 #: by: https://www.deutsches-architekturforum.de/thread/12157-mediaspree-entertainment-district-an-der-mb-arena/?postID=754643#post754643 (ab 22.03.2024: Mercedes Platz -> Uber Platz)
 #: by: https://www.t-online.de/region/berlin/id_100324498/mercedes-benz-arena-in-berlin-wird-umbenannt-so-wird-sie-kuenftig-heissen.html
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11379 (Anfrage)
 #: note: es existieren keine Straßenschilder oder sonstige Hinweise auf den Platz vvv
 #: oldname: -20151115: O2-Platz vvv
 #: XXX neue Umbenennung zu Uber Platz (mit oder ohne Bindestrich?); andere Änderungen (sehenswuerdigkeit-orig etc.) auch prüfen vvv
@@ -1418,7 +1419,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="16"
 #: priority: #C
-#: last_checked: 2023-12-29
+#: last_checked: 2024-02-11 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
@@ -6321,7 +6322,7 @@ Im Lichtenhain	N 16433,10576 16461,10560 16503,10532
 #: note: offiziell nur Lieferverkehr
 (Zufahrt zum Kaufland)	N 16628,10442 16751,10403
 (Zufahrt zum Kaufland)	NN 16751,10403 16767,10398
-Weitlingstr.	H 16468,10695 16537,10895 16575,11013 16590,11059 16650,11243 16653,11251 16730,11480 16753,11559 16766,11603 16786,11668 16815,11729 16958,11778
+Weitlingstr.	H 16468,10695 16537,10895 16575,11013 16590,11059 16650,11243 16653,11251 16730,11480 16753,11559 16759,11579 16766,11603 16786,11668 16815,11729 16958,11778
 Delbrückstr. (Friedrichsfelde, Rummelsburg)	N 16792,10945 16861,10923 16961,10893 17085,10855 17123,10844
 Delbrückstr. (Friedrichsfelde, Rummelsburg)	NN 17123,10844 17141,10838
 Giselastr.	N 16153,10818 16192,10907 16227,10991 16273,11113 16311,11226 16338,11308 16367,11341
@@ -12917,8 +12918,8 @@ Sophienstr. (Friedrichsfelde, Rummelsburg)	N 16367,11341 16465,11313 16570,11278
 Heinrichstr. (Rummelsburg)	N 16792,10945 16874,11188 16948,11409
 Maximilianstr. (Rummelsburg)	N 16334,10958 16381,11080 16420,11189 16465,11313
 Eduardstr.	N 16531,11158 16420,11189 16311,11226
-Eitelstr. (Rummelsburg)	N 16727,11611 16669,11558 16649,11497 16570,11278 16531,11158 16492,11042 16452,10922 16425,10839
-(Eitelstr. - Bahnhof Lichtenberg)	NN 16727,11611 16766,11603
+Eitelstr. (Rummelsburg)	N 16717,11604 16669,11558 16649,11497 16570,11278 16531,11158 16492,11042 16452,10922 16425,10839
+(Eitelstr. - Bahnhof Lichtenberg)	NN 16717,11604 16759,11579
 Rankestr.	N 5520,10453 5568,10535 5627,10637 5669,10704 5782,10884
 Geisbergstr.	N 6427,10044 6403,10071 6217,10099 6065,10129 5936,10147 5881,10154 5832,10164 5800,10172 5754,10182 5700,10226
 Lipschitzallee	NH 15301,3038 15254,2926 15174,2773 15078,2647 14946,2519 14744,2308 14681,2231 14633,2145 14587,2032 14549,1922 14523,1847
@@ -14588,8 +14589,10 @@ Bernburger Str. (Kreuzberg)	N 8536,11063 8695,11015 8865,10974
 (Bernburger Treppe)	NN 8536,11063 8525,11063 8526,11080 8515,11065 8519,11084 8484,11097 8478,11080 8479,11099 8470,11082 8454,11086
 Lengeder Str.	N 7481,19400 7184,19663 7105,19677 7038,19689 6792,19733 6516,19775 6484,19769 6460,19734 6316,19492 6238,19450
 # 
-#: by: DPAG 06/2019: Umbenennung Siedlung Roedernau -> Roedernau
-Siedlung Roedernau	N 6460,19734 6453,19737 6198,19818
+#: by: DPAG 06/2019: Umbenennung Siedlung Roedernau -> Roedernau (auch in LOR erwähnt)
+#: alias: Siedlung Roedernau
+#: old_name: -2019: Siedlung Roedernau
+Roedernau	N 6460,19734 6453,19737 6198,19818
 # 
 Interessentenweg	N 6453,19737 6501,19956 6565,20026 6627,20045 6659,20135
 (Unterführung S-Bahn)	NN 6659,20135 6680,20165
@@ -17343,7 +17346,7 @@ Henriette-Lustig-Str.	N 21375,4974 21380,5003 21476,5048 21611,5119
 Henriette-Lustig-Str.	N 21611,5119 21631,5079
 (Henriette-Lustig-Str. - Uferweg)	NN 21611,5119 21645,5135
 #: note: Privatstraße (laut Amtsblatt)
-#: note: in LOR 1/2022 und 7/2023 fälschlicherweise "Wäschnerinnenweg", war auch im DPAG-Mitteilungsblatt so und wurde am 05.12.2019 korrigiert
+#: note: in LOR 1/2022, 7/2023, 1/2024 fälschlicherweise "Wäschnerinnenweg", war auch im DPAG-Mitteilungsblatt so und wurde am 05.12.2019 korrigiert
 Wäscherinnenweg	N 21444,5112 21358,5072 21335,5075
 #: note: Privatstraße (laut Amtsblatt)
 Blütenweißweg	N 21483,5374 21427,5347
