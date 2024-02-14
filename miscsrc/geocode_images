@@ -1003,6 +1003,7 @@ sub manipulate {
 		    . " for $file.\n";
 	    }
 
+	    my $orig_mtime = (stat($file))[9];
 	    my $o_file;
 	    if (!$inplace) {
 		$o_file = "$out_file/" . basename($file);
@@ -1030,6 +1031,7 @@ sub manipulate {
 		}
 	    }
 	    $exiftool->WriteInfo($o_file);
+	    utime $orig_mtime, $orig_mtime, $o_file;
 	    if ($debug) {
 		warn "Wrote GPS info to $o_file.\n";
 	    }
