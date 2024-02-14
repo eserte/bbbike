@@ -991,9 +991,13 @@ sub manipulate {
 	    my $gps_longitude = qq{$lon_dms[0] deg $lon_dms[1]' $lon_dms[2]"};
 
 	    my $gps_datetime;
+	    my $gps_datestamp;
+	    my $gps_timestamp;
 	    if ($local_date) {
 		my $epoch = _isodate_to_epoch($local_date);
-		$gps_datetime = strftime '%Y:%m:%d %H:%M:%S', gmtime $epoch;
+		$gps_datestamp = strftime '%Y:%m:%d %H:%M:%S', gmtime $epoch;
+		$gps_timestamp = strftime '%H:%M:%S', gmtime $epoch;
+		$gps_datetime = "$gps_datetime $gps_timestamp";
 	    }
 
 	    if ($debug) {
@@ -1020,6 +1024,8 @@ sub manipulate {
 	    $exiftool->SetNewValue('GPSLongitudeRef', $gps_longitude_ref);
 	    if ($gps_datetime) {
 		$exiftool->SetNewValue('GPSDateTime', $gps_datetime);
+		$exiftool->SetNewValue('GPSDateStamp', $gps_datestamp);
+		$exiftool->SetNewValue('GPSTimeStamp', $gps_timestamp);
 	    }
 	    if ($gps_altitude) {
 		if ($gps_altitude >= 0) {
