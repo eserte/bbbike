@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2005,2007,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2005,2007,2021,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,12 +25,13 @@ $VERBOSE = 1 if !defined $VERBOSE;
 
 if (BBBikeServer::running()) {
     # adjust filenames (from relative to absolute)
-    my($center, $centerc, $from, $to, $do_help, $do_strlist);
+    my($center, $centerc, $from, $to, $do_help, $do_strlist, $do_mark);
     if (!GetOptions("center=s"  => \$center,
 		    "centerc=s" => \$centerc,
 		    "from=s"    => \$from,
 		    "to=s"      => \$to,
 		    "strlist!"  => \$do_strlist,
+		    "mark!"     => \$do_mark,
 		    "v|verbose!" => \$VERBOSE,
 		    "h|?|help"  => \$do_help,
 		   )) {
@@ -56,6 +57,9 @@ if (BBBikeServer::running()) {
     }
     if ($do_strlist) {
 	push @argv, '-strlist', 1;
+    }
+    if ($do_mark) {
+	push @argv, '-mark', 1;
     }
     for(my $i=0; $i<=$#ARGV; $i++) {
 	my $arg = $ARGV[$i];
@@ -94,7 +98,7 @@ if ($startserver) {
 
 sub usage {
     die <<EOF;
-usage: $0 [-center street] [-centerc x,y] [-from street -to street] file ...
+usage: $0 [-center street] [-centerc x,y] [-from street -to street] [-mark] file ...
 EOF
 }
 

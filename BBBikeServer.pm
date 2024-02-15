@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2007,2019,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2007,2019,2021,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use strict;
 use vars qw($name $args $VERBOSE $VERSION);
 use Safe;
 
-$VERSION = '1.22';
+$VERSION = '1.23';
 
 #$VERBOSE = 1 if !defined $VERBOSE;
 
@@ -240,11 +240,12 @@ sub create_socket_server {
 		 }
 
 		 my %args = @$args;
+		 my $mark = $args{-mark};
 		 if (exists $args{-center}) {
 		     main::choose_from_plz(-str => $args{-center});
 		 }
 		 if (exists $args{-centerc}) {
-		     main::choose_from_plz(-coord => $args{-centerc});
+		     main::choose_from_plz(-coord => $args{-centerc}, -mark => $mark);
 		 }
 		 if (exists $args{-from}) {
 		     main::set_route_start_street($args{-from});
