@@ -16,6 +16,7 @@ use strict;
 use warnings;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use utf8;
 
 use Encode qw(decode);
 use File::Glob qw(bsd_glob);
@@ -25,7 +26,7 @@ use I18N::Langinfo qw(langinfo CODESET);
 use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen::Core;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $bbbike_datadir = bbbike_root . '/data';
 my $bbbike_aux_datadir = defined bbbike_aux_dir() ? bbbike_aux_dir() . '/bbd' : undef;
@@ -102,49 +103,61 @@ my $errors = 0;
 my $hits = 0;
 my $file_hits = 0;
 my @removed_lines;
-for my $search_file_def (@search_file_defs) {
-    my($filename, $encoding);
-    if (ref $search_file_def) {
-	($filename, $encoding) = @{$search_file_def}{qw(filename encoding)};
-    } else {
-	$filename = $search_file_def;
-    }
-    debug "  $filename...";
-    if (!defined $encoding) {
-	my $dir = Strassen->get_global_directives($filename); # XXX can this throw an exception?
-	$encoding = $dir->{encoding}->[0] || 'iso-8859-1';
-    }
-    my $local_hits = 0;
-    open my $fh, $filename
-	or do {
-	    warn "ERROR: Can't open $filename ($!), skipping...\n";
-	    $errors++;
-	    next;
-	};
-    binmode $fh, ":encoding($encoding)";
-    my $outfile = defined $reldir ? File::Spec->abs2rel($filename, $reldir) : $filename;
-    while(<$fh>) {
-	if ($_ =~ $search_rx) {
-	    chomp;
-	    my $out = "$outfile:";
-	    if ($with_line_number) {
-		$out .= "$.:";
+
+sub do_search {
+    for my $search_file_def (@search_file_defs) {
+	my($filename, $encoding);
+	if (ref $search_file_def) {
+	    ($filename, $encoding) = @{$search_file_def}{qw(filename encoding)};
+	} else {
+	    $filename = $search_file_def;
+	}
+	debug "  $filename...";
+	if (!defined $encoding) {
+	    my $dir = Strassen->get_global_directives($filename); # XXX can this throw an exception?
+	    $encoding = $dir->{encoding}->[0] || 'iso-8859-1';
+	}
+	my $local_hits = 0;
+	open my $fh, $filename
+	    or do {
+		warn "ERROR: Can't open $filename ($!), skipping...\n";
+		$errors++;
+		next;
+	    };
+	binmode $fh, ":encoding($encoding)";
+	my $outfile = defined $reldir ? File::Spec->abs2rel($filename, $reldir) : $filename;
+	while(<$fh>) {
+	    if ($_ =~ $search_rx) {
+		chomp;
+		my $out = "$outfile:";
+		if ($with_line_number) {
+		    $out .= "$.:";
+		}
+		$out .= "$_\n";
+		if (/^#\s*REMOVED/) {
+		    push @removed_lines, $out;
+		} else {
+		    print $out;
+		}
+		$local_hits++;
+		last if defined $limit && $local_hits + $hits >= $limit; # limit this file
 	    }
-	    $out .= "$_\n";
-	    if (/^#\s*REMOVED/) {
-		push @removed_lines, $out;
-	    } else {
-		print $out;
-	    }
-	    $local_hits++;
-	    last if defined $limit && $local_hits + $hits >= $limit; # limit this file
+	}
+
+	if ($local_hits) {
+	    $file_hits++;
+	    $hits += $local_hits;
+	    last if defined $limit && $hits >= $limit; # limit all files
 	}
     }
+}
 
-    if ($local_hits) {
-	$file_hits++;
-	$hits += $local_hits;
-	last if defined $limit && $hits >= $limit; # limit all files
+do_search();
+if (!$hits) {
+warn $search_rx;
+    if ($search_rx =~ s/([sS]tr)aße/$1/) {
+	warn "INFO: try search again after transforming straße -> str...\n" if $debug;
+	do_search();
     }
 }
 
