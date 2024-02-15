@@ -2495,9 +2495,9 @@ Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
-Mittelstreifen	3nocross::ignrte 7880,13315 8003,13374 8098,13419
-Invalidenstr. -> Ella-Trebe-Str.: Mittelstreifen	3::igndisp 8098,13419 8003,13374 7968,13335
-Ella-Trebe-Str. -> Invalidenstr.: Mittelstreifen	3::igndisp 7968,13335 8003,13374 7880,13315
+Straßenbahntrasse und -haltestelle	3nocross::ignrte 7880,13315 8003,13374 8098,13419
+Invalidenstr. -> Ella-Trebe-Str.: Straßenbahntrasse und -haltestelle	3::igndisp 8098,13419 8003,13374 7968,13335
+Ella-Trebe-Str. -> Invalidenstr.: Straßenbahntrasse und -haltestelle	3::igndisp 7968,13335 8003,13374 7880,13315
 Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7822,12937 7776,12945 7595,12980
 Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7822,12937 7776,12945 7623,12764
 Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7623,12764 7776,12945 7595,12980
@@ -3425,7 +3425,7 @@ Weg entlang der A100: offiziell noch gesperrt	2::inwork 14341,8763 14326,8747 14
 Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
 Weg entlang der A100: gesperrt, Durchfahrt zumindest an der Sonnenallee wegen Bauzaun nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
-Lisa-Fittko-Str.: Hochbauarbeiten, Weg gesperrt (möglicherweiseexistiert er auch noch nicht)	2::inwork 7787,13838 7872,13685
+Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nicht	2::inwork 7787,13838 7872,13685
 Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070 19621,9097
 Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,22604

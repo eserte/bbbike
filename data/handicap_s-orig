@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-02-13
+#: last_checked: 2024-02-15
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -48,7 +48,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger	q4+ 12558,11920 12617,11888
 #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv)
 #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-02-08 (mapillary) vvv
+#: last_checked: 2024-02-13 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-02-16 vvv
 # REMOVED --- #: valid: -20231229 vvv
@@ -68,7 +68,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-02-13
+#: last_checked: 2024-02-15
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -308,7 +308,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX nach Fertigstellung des Molkenmarkts entfernen
-#: last_checked: 2024-02-06 vvv
+#: last_checked: 2024-02-13 (mapillary) vvv
 #: check_frequency: 90d vvv
 Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
@@ -348,12 +348,12 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-01-23 vvv
+#: last_checked: 2024-02-15 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: osm_watch: way id="930343902" version="4"
-Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
+Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423 9028,12307
 #: osm_watch: note 3469300 2
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: osm_watch: way id="153698413" version="15"
@@ -471,7 +471,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-02-06 (mapillary) vvv
+#: last_checked: 2024-02-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="14"
@@ -794,7 +794,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 # 
 #: next_check_id: RUSCHEAMPEL-2024
 #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert?
-#: last_checked: 2024-01-29 vvv
+#: last_checked: 2024-02-13 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-05-02 vvv
 #: valid: -20240502 vvv

@@ -518,7 +518,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?)) (inaktiv)
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2024-01-23 vvv
+#: last_checked: 2024-02-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1290,7 +1290,7 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17
 	RW1;RW1 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11909,15477 11916,15500 11941,15586 11962,15681 11964,15689 11995,15827
 	RW1;RW1 11995,15827 12030,15968 12061,16091
 	RW2;RW1 12061,16091 12075,16144 12090,16199
-# REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8059,13551 8048,13578 8019,13650
+# REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8071,13521 8059,13551 8048,13578 8019,13650
 # REMOVED --- #: next_check_id: HEIDESTR-2016 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv --- #: source_id: IM_020408 vvv --- #: source_id: IM_021506 vvv --- #: source_id: 2147339530 vvv --- #: last_checked: 2016-07-11 vvv --- #: check_frequency: 7d vvv --- #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
 	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325
 Fahrradschleuse	RW3; 7612,14325 7566,14404
@@ -2087,7 +2087,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-02-06
+#: last_checked: 2024-02-13 (mapillary)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
 # REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2528,7 +2528,9 @@ teilweise noch Reste des früher aufgemalten Radwegs sichtbar	RW0; 6493,13822 636
 	RW0;RW1 6165,13962 6093,13990
 	RW1;RW1 6093,13990 6006,14024 5943,14049
 	RW1;RW1 5943,14049 5956,14168
-	RW1;RW1 7069,13381 6988,13539 6976,13563 6935,13645 6817,13862 6730,14021
+Bushaltestelle	RW5; 7069,13381 7033,13451
+	RW1; 7033,13451 6988,13539 6976,13563 6935,13645 6817,13862 6730,14021
+	RW1; 6730,14021 6817,13862 6935,13645 6976,13563 6988,13539 7033,13451 7069,13381
 #: note: alter Radweg soll nicht mehr verwendet werden
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 6730,14021 6818,14102 6992,14251 7123,14367
 Busspur ist immer gültig	RW5; 7123,14367 7180,14419
@@ -2756,7 +2758,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-02-13 vvv
+#: last_checked: 2024-02-15 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -6167,7 +6169,9 @@ Tempo 10	RW6;RW6 10199,13446 10341,13376
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10852,13377 10931,13419 10966,13436 11031,13467 11059,13480
 10er-Zone	RW6;RW6 11031,13467 10998,13382
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10767,13443 10703,13467 10644,13497
-# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10596,13398 10390,13493 10311,13537 10286,13548
+10er-Zone	RW6;RW6 10596,13398 10421,13479
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10421,13479 10390,13493
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10390,13493 10311,13537 10286,13548
 # REMOVED (nun 30er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 10308,13575 10406,13543 10535,13509 10633,13474
 Tempo 10er	RW6;RW6 10535,13509 10597,13647
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10341,13376 10353,13384 10390,13493 10406,13543 10445,13675 10459,13760
@@ -6522,7 +6526,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neust%C3%A4dtische-kirchstra%C3%9Fe-4-5-herrichtung-f%C3%BCr-bundesministerium.775/#post-22250
 #: by: https://www.n-tv.de/politik/Bundestags-BER-verschlingt-weitere-Millionen-article24709001.html (Hochbauarbeiten bis 2027?)
-#: last_checked: 2024-01-27 (mapillary) vvv
+#: last_checked: 2024-02-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
