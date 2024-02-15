@@ -13071,7 +13071,7 @@ sub find_visible_point {
 ### AutoLoad Sub
 sub choose_from_plz {
     my(%args) = @_;
-    my $coord = delete $args{'-coord'};
+    my $coord = delete $args{'-coord'}; # may be a single coord (would call mark_point()) or a space-separated string of coords (would call mark_street())
     my $mark  = delete $args{'-mark'};
     # XXX should handle all %args and die if there are unhandled arguments
 
@@ -13180,10 +13180,16 @@ sub choose_from_plz {
     } elsif (defined $coord) { # auf Koordinaten zentrieren
 	return if ($coord eq "");
 	eval {
-	    mark_point(-coords => [[[ transpose(split(/,/, $coord)) ]]],
-		       -dont_mark => !$mark);
+	    if ($coord =~ /\s+/) {
+		my @coords = transpose_all(map { [split /,/ ] } split /\s+/, $coord);
+		mark_street(-coords => [[ @coords ]],
+			    -dont_mark => !$mark);
+	    } else {
+		mark_point(-coords => [[[ transpose(split(/,/, $coord)) ]]],
+			   -dont_mark => !$mark);
+	    }
 	};
-	warn $@ if $@;
+	warn "WARNING: mark_street or mark_point failed: $@" if $@;
     } else { # interaktiv
 	my $t = $top->Toplevel(-title => M"Auswahl aus kompletter Straßenliste",
 			       -class => "Bbbike Extended Chooser");
