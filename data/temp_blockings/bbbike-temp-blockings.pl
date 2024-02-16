@@ -29616,11 +29616,11 @@ EOF
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="47"
+#: osm_watch: way id="8655276" version="48"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2024-02-11 (mapillary)
+#: last_checked: 2024-02-16 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -32624,7 +32624,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Passauer Str.: Fahrbahn gesperrt (Stand Oktober 2023), Ende der Bauarbeiten unbekannt',
+       text  => 'Passauer Str.: Fahrbahn gesperrt (Stand Februar 2024), Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
        data  => <<EOF,
@@ -32638,12 +32638,13 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2024-01-28
+#: last_checked: 2024-02-10 (architektur-urbanistik)
 #: check_frequency: 120d
-#: next_check: 2024-11-15
+# REMOVED --- #: next_check: 2024-11-15
 	q4::inwork 6033,10403 6133,10679
 EOF
      },
@@ -36857,10 +36858,11 @@ EOF
 #: by: https://bautagebuch.twentyseven-berlin.de/ (kein Inhalt, nur ein Login)
 #: by: https://fiducia-gruppe.de/investment/ (Fertigstellung: Sommer 2024)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
 #: last_checked: 2023-12-26 (daf)
-#: check_frequency: 180d
+#: check_frequency: 90d
 #: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
 EOF
@@ -39755,7 +39757,7 @@ EOF
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: last_checked: 2024-02-07 vvv
+#: last_checked: 2024-02-16 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-03-04 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -41393,7 +41395,7 @@ EOF
 #: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
 #: XXX Das Ende der Bauarbeiten zum 31.1.2024 ist unwahrscheinlich (noch tiefe Gruben + Winterwetter).
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-01-19
+#: last_checked: 2024-02-16
 #: check_frequency: 30d
 #: next_check: 2024-03-08
 	q2::inwork 13860,9861 13704,9691
@@ -41915,7 +41917,7 @@ EOF
        text  => 'Breite Str.: Kraneinsatz, Fahrbahn zwischen Scharrenstr. und Neumannsgasse gesperrt, vom 12.02.2024 06:00 bis 16.02.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.404018,52.515338,12.02.2024,06:00 (bis 16.02.2024)
+#: source_id: viz2021:13.404018,52.515338,12.02.2024,06:00 (bis 16.02.2024) (inaktiv)
 	q3::inwork 10480,12077 10383,12191
 EOF
      },
@@ -41935,7 +41937,7 @@ EOF
 #: last_checked: 2024-02-15 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
-#: osm_watch: way id="375991056" version="16"
+#: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 #: osm_watch: way id="1250738798" version="1"

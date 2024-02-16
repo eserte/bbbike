@@ -55,12 +55,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 #: valid: -20240220
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 # 
-# REMOVED --- #: next_check_id: RUNGE-2023
-# REMOVED --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
-# REMOVED --- #: last_checked: 2023-10-31 (mapillary)
-# REMOVED --- #: next_check: 2023-11-23
-# REMOVED --- #: valid: -20231123
-# REMOVED --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork 11291,11876
+# REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork 11291,11876
 # 
 #: next_check_id: METZER-2023
 #: last_checked: 2024-01-31 (mapillary)
@@ -69,31 +64,14 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 #: valid: -20250102
 Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
-# REMOVED --- #: source_id: viz2021:13.54877,52.416283,15.08.2023,09:00 (bis 06.09.2023) (bis 19.09.2023) (inaktiv)
-# REMOVED --- #: note: zwischen Wendenstr. und Germanenplatz
-# REMOVED --- #: next_check: 2023-09-19
-# REMOVED --- #: valid: -20230919
-# REMOVED --- Germanenstr.: Gegenverkehrsregelung	X::inwork 20381,1390
-# 
-# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1355528.php
-# REMOVED --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/
-# REMOVED --- #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/rohrdammbruecke-wird-saniert_a389916
-# REMOVED --- #: note: Gilt vermutlich nur für den Radverkehr Richtung Norden (gesonderte Radspur); Richtung Süden weiterhin der alte Hochbordradweg
-# REMOVED --- #: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) (bis 30.11.2023) (bis 31.10.2023) (inaktiv) vvv
-# REMOVED --- #: next_check: 2023-10-31 vvv
-# REMOVED --- #: valid: -20231031 vvv
-# REMOVED --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1170,13521
-# REMOVED --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1124,13599
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: source_id ^^^
-# 
+# REMOVED --- #: source_id: viz2021:13.54877,52.416283,15.08.2023,09:00 (bis 06.09.2023) (bis 19.09.2023) (inaktiv) --- #: note: zwischen Wendenstr. und Germanenplatz --- #: next_check: 2023-09-19 --- #: valid: -20230919 --- Germanenstr.: Gegenverkehrsregelung	X::inwork 20381,1390
+# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1355528.php --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/ --- #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/rohrdammbruecke-wird-saniert_a389916 --- #: note: Gilt vermutlich nur für den Radverkehr Richtung Norden (gesonderte Radspur); Richtung Süden weiterhin der alte Hochbordradweg --- #: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) (bis 30.11.2023) (bis 31.10.2023) (inaktiv) vvv --- #: next_check: 2023-10-31 vvv --- #: valid: -20231031 vvv --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1170,13521 --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork 1124,13599 --- #: valid ^^^ --- #: next_check ^^^ --- #: source_id ^^^
 # REMOVED --- #: by: https://nitter.net/VIZ_Berlin/status/1683357845155115010#m --- #: by: https://nitter.net/pic/orig/media%2FF1fwqZtXgA4eKSM.jpg --- #: source_id: viz2021:13.541546,52.423078,24.07.2023,09:00 (bis 21.08.2023) (bis 25.08.2023) (inaktiv) --- #: next_check: 2023-08-25 --- #: valid: -20230825 --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork 19933,2078
 # 
-#: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv) (bis 16.02.2024)
-#: next_check: 2024-02-16
-#: valid: -20240216
-Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
+# REMOVED --- #: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv) (bis 16.02.2024) (inaktiv)
+# REMOVED --- #: next_check: 2024-02-16
+# REMOVED --- #: valid: -20240216
+# REMOVED --- Alt-Heiligensee: Gegenverkehrsregelung	X::inwork -3020,21786
 # 
 # REMOVED --- #: next_check_id: PISTORIUS-2023 --- #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023) (inaktiv) --- #: last_checked: 2023-11-23 --- #: next_check: 2023-11-27 --- #: valid: -20231127 --- Roelckestr./Gäblerstr.	X::inwork 13272,16672
 # 
@@ -129,12 +107,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
 # 
-# REMOVED --- #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023) (inaktiv)
-# REMOVED --- #: last_checked: 2023-06-04
-# REMOVED --- #: next_check: 2023-09-30
-# REMOVED --- #: valid: -20230930
-# REMOVED --- F::inwork 8373,12416
-# 
+# REMOVED --- #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023) (inaktiv) --- #: last_checked: 2023-06-04 --- #: next_check: 2023-09-30 --- #: valid: -20230930 --- F::inwork 8373,12416
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork 22192,6659
 # 
 #: next_check_id: BAUMSCHULEN-2023
@@ -3698,7 +3671,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 # REMOVED (bei osm entfernt) --- #: next_check_id: CHAUSSEE-2020 --- #: osm_watch: node id="26748289" version="10" --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 ---	X::inwork 8336,14586
 # 
-#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
+#: by: https://www.tagesspiegel.de/berlin/bau-neuer-ampeln-steckt-im-stau-3917599.html (2019)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/schulneubau-bekommt-ampel_a189100 (2019, kein genauer Termin)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/433_2018_zu_ds_0680_v_ampelstandort_chaussee_boyenstr_bav.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
