@@ -154,6 +154,7 @@ sub update_selection_content {
 	$selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
 	$selection_content =~ s/\n.*$//;  # Crop after the first line
     }
+    return if $selection_content eq '';
     my $old_content = $grep_entry->get();
     if ($old_content ne $selection_content) {
 	$grep_entry->configure(-text => $selection_content);
