@@ -6,24 +6,35 @@
 use strict;
 use warnings;
 use Cwd qw(cwd);
+use Getopt::Long;
 use Tk;
 use Tk::PNG;
 use Tk::ROText;
 
+my $bbbike_root = "$ENV{HOME}/src/bbbike";
+
 my $refresh_interval = 1;
+my $auto_update_from_selection = 0;
+my $debug;
 
 # Create main window
 my $mw = MainWindow->new;
 $mw->title("BBBike Grep");
 
+GetOptions(
+    "refresh-interval=f" => \$refresh_interval,
+    "auto-update-from-selection!" => \$auto_update_from_selection,
+    "debug" => \$debug,
+)
+    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--debug]\n";
+
 # Create frames
 my $top_frame = $mw->Frame->pack(-side => 'top', -fill => 'x');
 my $bottom_frame = $mw->Frame->pack(-side => 'bottom', -fill => 'both', -expand => 1);
 
-# Create entry and button for grep-like command
-$top_frame->Label(-text => "Enter what to grep:")->pack(-side => 'left');
+$top_frame->Label(-text => "Grep BBBike data:")->pack(-side => 'left');
 my $grep_entry = $top_frame->Entry->pack(-side => 'left', -expand => 1, -fill => 'x');
-$grep_entry->insert("end", "Dudenstr");
+$grep_entry->insert("end", "Brandenburger Tor");
 my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
 
 my $emacs_p = do {
@@ -43,8 +54,7 @@ my $bbbike_p = do {
     }
 };
 
-my $update_var = 0;
-my $checkbox = $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$update_var, -command => \&toggle_update)->pack(-side => 'bottom');
+my $checkbox = $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$auto_update_from_selection, -command => \&toggle_update)->pack(-side => 'left');
 my $timer;
 
 # Create ROText widget to display grep output
@@ -52,12 +62,16 @@ my $rotext = $bottom_frame->Scrolled('ROText', -height => 10, -wrap => 'none', -
 #$rotext->tagConfigure('clickable', -foreground => 'blue', -underline => 1);
 #$rotext->tagBind('clickable', '<Button-1>', sub { display_file($rotext->index('current')); });
 
+if ($auto_update_from_selection) {
+    toggle_update();
+}
+
 MainLoop;
 
 # Function to run grep command
 sub run_grep {
     my $grep_word = $grep_entry->get;
-    open my $fh, '-|', "$ENV{HOME}/src/bbbike/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
+    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
@@ -117,20 +131,20 @@ sub call_emacsclient {
     my($filename, $line_number) = @_;
     # Call emacsclient with filename and line number
     my $cmd = "emacsclient -n +$line_number $filename";
-    #warn $cmd;
+    warn "Run: $cmd" if $debug;
     system($cmd);
 }
 
 sub call_bbbikeclient {
     my($coordinate_pairs) = @_;
-    my @cmd = ("$ENV{HOME}/src/bbbike/bbbikeclient", "-centerc", $coordinate_pairs, "-mark");
-    #warn "@cmd";
+    my @cmd = ("$bbbike_root/bbbikeclient", "-centerc", $coordinate_pairs, "-mark");
+    warn "Run: @cmd" if $debug;
     system(@cmd);
 }
 
 # Function to toggle regular updating
 sub toggle_update {
-    if ($update_var) {
+    if ($auto_update_from_selection) {
         update_selection_content();
         $timer = $mw->repeat($refresh_interval * 1000, [\&update_selection_content]);
     } else {
@@ -181,7 +195,7 @@ sub get_emacs_icon {
 }
 
 sub get_bbbike_icon {
-    my $f = "$ENV{HOME}/src/bbbike/images/srtbike16a.png";
+    my $f = "$bbbike_root/images/srtbike16a.png";
     return $f if -e $f;
 }
 
