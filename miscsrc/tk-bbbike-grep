@@ -7,6 +7,7 @@ use strict;
 use warnings;
 use Cwd qw(cwd);
 use Tk;
+use Tk::PNG;
 use Tk::ROText;
 
 my $refresh_interval = 1;
@@ -24,6 +25,23 @@ $top_frame->Label(-text => "Enter what to grep:")->pack(-side => 'left');
 my $grep_entry = $top_frame->Entry->pack(-side => 'left', -expand => 1, -fill => 'x');
 $grep_entry->insert("end", "Dudenstr");
 my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
+
+my $emacs_p = do {
+    my $emacs_icon_file = get_emacs_icon();
+    if (defined $emacs_icon_file) {
+	$mw->Photo(-file => $emacs_icon_file);
+    } else {
+	undef;
+    }
+};
+my $bbbike_p = do {
+    my $bbbike_icon_file = get_bbbike_icon();
+    if (defined $bbbike_icon_file) {
+	$mw->Photo(-file => $bbbike_icon_file);
+    } else {
+	undef;
+    }
+};
 
 my $update_var = 0;
 my $checkbox = $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$update_var, -command => \&toggle_update)->pack(-side => 'bottom');
@@ -52,6 +70,7 @@ sub run_grep {
             my $matching_text = $3;
 
 	    my $line_button = $rotext->Button(
+		-image => $emacs_p,
 	        -text => 'E',
                 -command => sub { call_emacsclient($filename, $line_number) },
 		-pady => 0,
@@ -60,6 +79,7 @@ sub run_grep {
 	    $rotext->insert('end', ' ');
 
 	    my $line_button2 = $rotext->Button(
+		-image => $bbbike_p,
 	        -text => 'B',
 		-pady => 0,
 	    );
@@ -135,3 +155,27 @@ sub update_selection_content {
 	run_grep();
     }
 }
+
+sub get_emacs_icon {
+    my @location_candidates = qw(
+        /usr/share/icons/hicolor/16x16/apps/emacs.png
+        /usr/share/emacs/*/etc/images/icons/hicolor/16x16/apps/emacs.png
+    );
+
+    for my $location_candidate (@location_candidates) {
+        my @files = reverse glob $location_candidate;
+        for my $file (@files) {
+            if (-e $file) {
+		return $file;
+	    }
+	}
+    }
+
+    undef;
+}
+
+sub get_bbbike_icon {
+    my $f = "$ENV{HOME}/src/bbbike/images/srtbike16a.png";
+    return $f if -e $f;
+}
+
