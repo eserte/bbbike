@@ -13,8 +13,12 @@ use Tk::ROText;
 
 my $bbbike_root = "$ENV{HOME}/src/bbbike";
 
+push @INC, $bbbike_root;
+require BBBikeUtil;
+
 my $refresh_interval = 1;
 my $auto_update_from_selection = 0;
+my $stay_on_top = 1;
 my $debug;
 
 # Create main window
@@ -24,9 +28,10 @@ $mw->title("BBBike Grep");
 GetOptions(
     "refresh-interval=f" => \$refresh_interval,
     "auto-update-from-selection!" => \$auto_update_from_selection,
+    "stay-on-top!" => \$stay_on_top,
     "debug" => \$debug,
 )
-    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--debug]\n";
+    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--stay-on-top] [--debug]\n";
 
 # Create frames
 my $top_frame = $mw->Frame->pack(-side => 'top', -fill => 'x');
@@ -64,6 +69,16 @@ my $rotext = $bottom_frame->Scrolled('ROText', -height => 10, -wrap => 'none', -
 
 if ($auto_update_from_selection) {
     toggle_update();
+}
+
+# XXX does not work --- maybe a fvwm2 problem?
+if ($stay_on_top && BBBikeUtil::is_in_path('wmctrl')) {
+    $mw->update;
+    my $hex_win_id = sprintf "0x%x", ($mw->wrapper)[0];
+    my @cmd = ('wmctrl', '-i', '-r', $hex_win_id, '-b', 'add,above');
+    warn "Run: @cmd\n" if $debug;
+    system @cmd;
+    warn "@cmd failed (for stay on top): $?" if $? != 0;
 }
 
 MainLoop;
