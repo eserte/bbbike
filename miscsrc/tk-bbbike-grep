@@ -69,28 +69,28 @@ sub run_grep {
             my $line_number = $2;
             my $matching_text = $3;
 
-	    my $line_button = $rotext->Button(
+	    my $emacs_button = $rotext->Button(
 		-image => $emacs_p,
 	        -text => 'E',
                 -command => sub { call_emacsclient($filename, $line_number) },
 		-pady => 0,
 	    );
-	    $rotext->windowCreate('end', -window => $line_button);
-	    $rotext->insert('end', ' ');
+	    $rotext->windowCreate('end', -window => $emacs_button);
+	    $rotext->insert('end', ' ') unless $emacs_p;
 
-	    my $line_button2 = $rotext->Button(
+	    my $bbbike_button = $rotext->Button(
 		-image => $bbbike_p,
 	        -text => 'B',
 		-pady => 0,
 	    );
 	    my ($coordinate_pairs) = $matching_text =~ /(-?\d+,-?\d+(?:\s+-?\d+,-?\d+)*)/;
 	    if ($coordinate_pairs) {
-		$line_button2->configure(-command => sub { call_bbbikeclient($coordinate_pairs) });
+		$bbbike_button->configure(-command => sub { call_bbbikeclient($coordinate_pairs) });
 	    } else {
-		$line_button2->configure(-state => 'disabled');
+		$bbbike_button->configure(-state => 'disabled');
 	    }
-	    $rotext->windowCreate('end', -window => $line_button2);
-	    $rotext->insert('end', ' ');
+	    $rotext->windowCreate('end', -window => $bbbike_button);
+	    $rotext->insert('end', ' ') unless $bbbike_p;
 
             $rotext->insert('end', "$filename\t$matching_text\n");
 	    $result_lines++;
