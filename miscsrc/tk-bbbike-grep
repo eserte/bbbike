@@ -43,6 +43,7 @@ sub run_grep {
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
+    my $result_lines = 0;
     foreach my $line (@output) {
 #warn "<$line>";
         if ($line =~ /^(.*?):(\d+):(.*)$/) {
@@ -72,7 +73,23 @@ sub run_grep {
 	    $rotext->insert('end', ' ');
 
             $rotext->insert('end', "$filename\t$matching_text\n");
+	    $result_lines++;
         }
+    }
+    flash_rotext($result_lines == 0 ? 'red' : 'green');
+}
+
+{
+    my $timer_id;
+    sub flash_rotext {
+	my($color) = @_;
+	return if $timer_id && $rotext->afterInfo($timer_id);
+	my $original_color = $rotext->cget('-background');
+	$rotext->configure(-background => $color);
+	$timer_id = $rotext->after(500, sub {
+				   $rotext->configure(-background => $original_color);
+				   undef $timer_id;
+			       });
     }
 }
 
