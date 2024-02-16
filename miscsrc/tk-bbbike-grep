@@ -148,7 +148,12 @@ sub update_selection_content {
         $selection_content = "";
 	return;
     }
-    $selection_content =~ s/\n.*$//;  # Crop after the first line
+    if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED)\t.*\t([^\t]+)\t/) {
+	$selection_content = $1; # VIZ source_id
+    } else {
+	$selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
+	$selection_content =~ s/\n.*$//;  # Crop after the first line
+    }
     my $old_content = $grep_entry->get();
     if ($old_content ne $selection_content) {
 	$grep_entry->configure(-text => $selection_content);
