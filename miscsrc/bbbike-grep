@@ -154,7 +154,6 @@ sub do_search {
 
 do_search();
 if (!$hits) {
-warn $search_rx;
     if ($search_rx =~ s/([sS]tr)aße/$1/) {
 	warn "INFO: try search again after transforming straße -> str...\n" if $debug;
 	do_search();
