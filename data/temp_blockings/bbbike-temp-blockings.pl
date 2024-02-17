@@ -16381,7 +16381,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2023-12-12
+#: last_checked: 2024-02-17
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -25593,6 +25593,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 128113 (inaktiv)
+#: source_id: viz2021:13.557157,52.46371,18.02.2024,21:00 (bis 22.02.2024)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.421075.php
 #: note: 2024er-Sperrung bei rbb gemeldet
 	2::inwork 20640,7122 20722,6971
@@ -25772,8 +25773,8 @@ EOF
 #: note: hier zurzeit (2016-10-08) gesperrt
 #: osm_watch: way id="445422415" version="1"
 	2::inwork -3544,13692 -3504,13775
-# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3390,13940 -3345,13994
-	2::inwork -3494,13980 -3390,13940
+# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3396,13934 -3345,13994
+	2::inwork -3484,13980 -3396,13934
 EOF
      },
      { from  => 1459980000, # 2016-04-07 00:00
@@ -35134,7 +35135,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2024-02-11 vvv
+#: last_checked: 2024-02-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -37558,7 +37559,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-02-07
+#: last_checked: 2024-02-17
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -37747,6 +37748,7 @@ EOF
        type  => 'handicap',
 # REMOVED (vermutlich andere Baumaßnahme) --- source_id => 'viz2021:13.326367,52.48649,26.09.2022,07:00',
        data  => <<EOF,
+#: also_indoor: traffic (none)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2024
 #: last_checked: 2023-10-21
 #: check_frequency: 120d
@@ -38502,7 +38504,7 @@ EOF
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
 #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
-#: last_checked: 2023-08-07 (daf)
+#: last_checked: 2024-02-17
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 	q4::inwork; 4032,12167 4101,12356
@@ -38825,13 +38827,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Götelstr.: Bauarbeiten, Fahrbahn zwischen Betckestr. und Weverstr. gesperrt (Stand Oktober 2023), Ende der Bauarbeiten unbekannt',
+       text  => 'Götelstr.: Bauarbeiten, Fahrbahn zwischen Betckestr. und Weverstr. gesperrt (Stand Februar 2024), Bauarbeiten möglicherweise bis Oktober 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOETEL-2023
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: Halteverbotsschilder in der Umgebung bis 04.10.2024
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2023-12-09 (indoor)
+#: last_checked: 2024-02-17
+#: check_frequency: 120d
+#: next_check: 2024-10-04
 	q4::inwork -3269,12406 -3260,12540
 EOF
      },

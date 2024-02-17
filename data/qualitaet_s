@@ -8114,7 +8114,7 @@ Däumlingsweg: unbefestigter Weg	Q2 23598,6718 23615,6884
 Stresowplatz: Asphalt	Q0 -3049,13959 -3136,13944 -3204,13913 -3247,13864
 (Stabholzgarten - Uferweg): Verbundsteinpflaster	Q1 -3445,14033 -3345,13994
 (Weg am Mühlengraben): Verbundsteinpflaster	Q1 -3306,14035 -3370,14115
-(Weg an der Havel): Asphalt	Q0 -3390,13940 -3345,13994
+(Weg an der Havel): Asphalt	Q0 -3396,13934 -3345,13994
 (Weg an der Havel): Verbundsteinpflaster	Q1 -3345,13994 -3306,14035
 (Weg an der Havel): Holzbohlen	Q1 -3306,14035 -3291,14043
 (Weg an der Havel): Verbundsteinpflaster	Q1 -3291,14043 -3187,14116 -3153,14141 -3090,14198
@@ -9159,10 +9159,11 @@ Nordenhamer Str.: Beton	Q0 -4170,13809 -4182,13691
 (Ziegelhof, Grünanlage): Verbundsteinpflaster	Q1 -3546,13503 -3689,13513
 (Ziegelhof, Grünanlage): Asphalt	Q0 -3689,13513 -3789,13519
 (Weg an der Havel - Sedanstr.): Verbundsteinpflaster	Q1 -3544,13692 -3563,13700
-Weg an der Havel: asphaltiert	Q0 -3529,13452 -3546,13503 -3556,13582 -3544,13692 -3504,13775
-Weg an der Havel: Asphalt	Q0 -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3390,13940
-(Weg an der Havel - Stabholzgarten): Verbundsteinpflaster	Q1 -3390,13940 -3494,13980
-(Weg an der Havel - Stabholzgarten): Asphalt	Q0 -3494,13980 -3462,14041
+Weg an der Havel: wassergebundene Decke	Q1 -3529,13452 -3546,13503
+Weg an der Havel: asphaltiert	Q0 -3546,13503 -3556,13582 -3544,13692 -3504,13775
+Weg an der Havel: Asphalt	Q0 -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3396,13934
+(Weg an der Havel - Stabholzgarten): Verbundsteinpflaster	Q1 -3396,13934 -3484,13980
+(Weg an der Havel - Stabholzgarten): Asphalt	Q0 -3484,13980 -3462,14041
 Sophienwerderweg: Asphalt mit Schäden	Q1 -795,13437 -684,13707 -951,13890 -1132,13972
 (Heinrich-Zille-Weg): welliges Verbundsteinpflaster	Q1 795,12652 969,13290
 (Allee der Kosmonauten - Biesdorfer Promenade): schadhafter Asphalt	Q2 19837,13531 19826,13444
@@ -10515,6 +10516,8 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Finsterwalder Str. - Wittenauer Str.): unbefestigter Pfad	Q2 6363,22419 6359,22452 6341,22496
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1 12897,10439 12968,10564 12978,10581
+Oppelner Str.: Asphaltschäden	Q1; 12767,10216 12897,10439
+Oppelner Str.: Asphalt	Q0; 12897,10439 12767,10216
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2 8103,13675 8151,13697
@@ -13605,7 +13608,7 @@ Stölpchenweg: Betonpflaster	Q0 -7460,-33 -7419,47 -7386,200 -7319,304
 Stölpchenweg: Kopfsteinpflaster	Q2 -7069,-392 -7180,-409 -7239,-423 -7252,-422
 Emil-Fischer-Str.: Asphalt	Q0 -5867,1449 -5997,1410
 Straße 246: Asphalt	Q0 13590,17368 13812,17206
-Zitadellenweg: guter Asphalt	Q0 -2343,14446 -2264,14584 -1993,14594 -2006,14811
+Zitadellenweg: guter Asphalt	Q0 -2343,14446 -2264,14584 -2016,14598 -1996,14603 -1986,14625 -2006,14811
 Graacher Str.: gute Betonstraße	Q0 14533,17084 14672,17085
 Wehlener Str.: Asphalt	Q0 14673,17003 14535,17003
 Trarbacher Str.: Beton	Q1 14671,17214 14672,17085 14673,17003 14673,16895
@@ -14422,8 +14425,8 @@ Schrockstr.: schlechtes Kopfsteinpflaster	Q3 565,1903 524,2031 495,2133 457,2251
 Zeißpfad: Verbundsteinpflaster	Q1 10962,103 10903,263 10895,284 10866,364 10827,467 10783,587 10777,605 10726,739 10718,760 10674,882
 Alsenstr. (Steglitz): Asphalt	Q0 5560,6344 5558,6319 5416,6119
 Bürgerheimstr.: Kopfsteinpflaster	Q2 16326,11966 16359,12207
-Zitadellenweg: schlechtes Kopfsteinpflaster	Q3 -2597,14532 -2594,14571 -2264,14584
-Zitadellenweg: Asphalt	Q0 -1993,14594 -1768,14605 -1564,14489
+Zitadellenweg: schlechtes Kopfsteinpflaster	Q3 -2597,14532 -2594,14571 -2334,14581
+Zitadellenweg: Asphalt	Q0 -2334,14581 -2264,14584
 Greveweg: guter Asphalt	Q0 8276,5601 8279,5794
 In den Kaveln: Beton	Q1 4041,20472 4026,20428 3999,20367
 (Uferweg am Nordgraben): Parkweg	Q1 3604,20603 3852,20415
@@ -16267,7 +16270,8 @@ Mühlweg: guter Asphalt	Q0 24629,5831 24666,5726 24700,5633
 Harzburger Str. (Pankow): Asphalt, Schlaglöcher	Q1 11442,18736 11419,18801
 Harzburger Str. (Pankow): Asphalt, Schlaglöcher	Q1 11463,18817 11419,18801 11380,18789
 Kremmener Str.: Asphalt	Q0 10209,14830 10377,14909
-Faucherweg: mäßiger Beton	Q1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Faucherweg: Beton	Q0 -1299,14797 -1251,14772 -1207,14781
+Faucherweg: mäßiger Beton	Q1 -1207,14781 -1141,14814 -896,14888
 Pestalozzistr. (Köpenick): mäßiges Kopfsteinpflaster	Q2 21363,3699 21503,3592
 Freester Weg: schlechtes Kopfsteinpflaster	Q3 -1165,23944 -1111,23987 -1059,24033 -998,24096
 Thorwaldsenstr. (Mahlsdorf): Asphalt	Q0 24389,7621 24644,7543 24648,7542
@@ -16891,7 +16895,7 @@ Schwerter Weg: mäßiger Beton	Q2 -692,15491 -676,15370
 Kanalstr. (Haselhorst): guter Beton	Q1 -736,15294 -593,15300
 Simonring: guter Beton	Q1 -945,14999 -896,14888 -836,14765
 Berthold-Schwarz-Str.: guter Asphalt	Q1 -834,15053 -784,14940 -756,14884
-Stöckelstr.: guter Asphalt	Q1 -896,14888 -784,14940 -663,14996
+Stöckelstr.: guter Asphalt	Q0 -896,14888 -784,14940 -663,14996
 Straße Z: Asphalt	Q0 -638,16459 -671,16488 -708,16516
 Straße 269: fester Sandweg, stark witterungsabhängig	Q2 -5382,8880 -5657,8897 -6406,8933 -7000,8967 -7252,8982
 Straße 269: mäßiges Kopfsteinpflaster	Q2 -7252,8982 -7417,8988
@@ -17829,7 +17833,7 @@ Ulmenstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3893,12628 -4053,12632 -4180,126
 Sprengelstr. (Wilhelmstadt): Asphalt	Q0 -3887,12673 -4026,12720
 Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1 -4026,12720 -4119,12763
 Betckestr.: Asphalt	Q0 -3635,12572 -3444,12573 -3259,12580
-Betckestr.: Asphalt, letzte Deckschicht fehlt	Q1 -3259,12580 -3192,12591 -3170,12603
+Betckestr.: Asphalt	Q0 -3259,12580 -3192,12591 -3170,12603
 Betckestr.: Kopfsteinpflaster	Q2 -3170,12603 -3138,12605 -3113,12549
 Franzstr. (Wilhelmstadt): Asphalt	Q0 -3637,12668 -3446,12728 -3275,12769
 Wörther Str. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3444,12573 -3446,12728 -3448,12834 -3451,12911

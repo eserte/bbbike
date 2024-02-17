@@ -361,7 +361,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.deutsches-architekturforum.de/thread/6974-gasometer-sch%C3%B6neberg-euref-campus/?postID=752087#post752087 (Umbauarbeiten)
 #: osm_watch: way id="306702294" version="21"
 # REMOVED (closed) --- #: osm_watch: note 4003302 1
-#: last_checked: 2024-01-28 vvv
+#: last_checked: 2024-02-17 vvv
 #: check_frequency: 30d vvv
 #: historical_note: früher (bis Herbst/Winter 2023): mäßiges, teils schlechtes Kopfsteinpflaster, bergab waren 17 km/h möglich, Q3 bzw Q3+
 Torgauer Str.: Asphalt, letzte Deckschicht fehlt	Q1+ 7225,8219 7158,8208 7014,8165 7001,8161
@@ -9707,7 +9707,7 @@ Däumlingsweg: unbefestigter Weg	Q2 23598,6718 23615,6884
 Stresowplatz: Asphalt	Q0 -3049,13959 -3136,13944 -3204,13913 -3247,13864
 (Stabholzgarten - Uferweg): Verbundsteinpflaster	Q1+ -3445,14033 -3345,13994
 (Weg am Mühlengraben): Verbundsteinpflaster	Q1+ -3306,14035 -3370,14115
-(Weg an der Havel): Asphalt	Q0 -3390,13940 -3345,13994
+(Weg an der Havel): Asphalt	Q0 -3396,13934 -3345,13994
 (Weg an der Havel): Verbundsteinpflaster	Q1+ -3345,13994 -3306,14035
 (Weg an der Havel): Holzbohlen	Q1+ -3306,14035 -3291,14043
 (Weg an der Havel): Verbundsteinpflaster	Q1+ -3291,14043 -3187,14116 -3153,14141 -3090,14198
@@ -10842,11 +10842,12 @@ Nordenhamer Str.: Beton	Q0 -4170,13809 -4182,13691
 (Ziegelhof, Grünanlage): Verbundsteinpflaster	Q1 -3546,13503 -3689,13513
 (Ziegelhof, Grünanlage): Asphalt	Q0 -3689,13513 -3789,13519
 (Weg an der Havel - Sedanstr.): Verbundsteinpflaster	Q1 -3544,13692 -3563,13700
+Weg an der Havel: wassergebundene Decke	Q1 -3529,13452 -3546,13503
 #: by: https://www.facebook.com/baustellen.berlin/posts/285147425267025
-Weg an der Havel: asphaltiert	Q0 -3529,13452 -3546,13503 -3556,13582 -3544,13692 -3504,13775
-Weg an der Havel: Asphalt	Q0 -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3390,13940
-(Weg an der Havel - Stabholzgarten): Verbundsteinpflaster	Q1 -3390,13940 -3494,13980
-(Weg an der Havel - Stabholzgarten): Asphalt	Q0 -3494,13980 -3462,14041
+Weg an der Havel: asphaltiert	Q0 -3546,13503 -3556,13582 -3544,13692 -3504,13775
+Weg an der Havel: Asphalt	Q0 -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3396,13934
+(Weg an der Havel - Stabholzgarten): Verbundsteinpflaster	Q1- -3396,13934 -3484,13980
+(Weg an der Havel - Stabholzgarten): Asphalt	Q0 -3484,13980 -3462,14041
 Sophienwerderweg: Asphalt mit Schäden	Q1- -795,13437 -684,13707 -951,13890 -1132,13972
 (Heinrich-Zille-Weg): welliges Verbundsteinpflaster	Q1- 795,12652 969,13290
 (Allee der Kosmonauten - Biesdorfer Promenade): schadhafter Asphalt	Q2+ 19837,13531 19826,13444
@@ -12347,6 +12348,8 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Finsterwalder Str. - Wittenauer Str.): unbefestigter Pfad	Q2- 6363,22419 6359,22452 6341,22496
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12968,10564 12978,10581
+Oppelner Str.: Asphaltschäden	Q1; 12767,10216 12897,10439
+Oppelner Str.: Asphalt	Q0; 12897,10439 12767,10216
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2- 13953,9372 13923,9405
 # REMOVED (nicht mehr) --- #: note: Asphalt oder asphaltähnlich; bunt bemalt
@@ -12779,7 +12782,7 @@ Münstersche Str.: Kopfsteinpflaster	Q2 3840,9683 3869,9699
 Münstersche Str.: Asphalt	Q0 3869,9699 3980,9761
 #: next_check_id: HEER-2020
 #: XXX nach der geplanten Sanierung hoffentlich asphaltiert
-#: last_checked: 2023-09-20
+#: last_checked: 2024-02-17
 #: check_frequency: 360d
 Heerstr.: holprige, enge Radwege	Q1- -2317,11254 -2413,11283 -2476,11301 -2871,11423 -3069,11487
 (Parkweg im Zuge der Furkastr.): wassergebundene Decke	Q1- 10322,2815 10318,2839 10329,2882
@@ -18971,7 +18974,7 @@ Emil-Fischer-Str.: Asphalt	Q0 -5867,1449 -5997,1410
 Straße 246: Asphalt	Q0 13590,17368 13812,17206
 # 
 #: by: Marcel Länger: vvv
-Zitadellenweg: guter Asphalt	Q0 -2343,14446 -2264,14584 -1993,14594 -2006,14811
+Zitadellenweg: guter Asphalt	Q0 -2343,14446 -2264,14584 -2016,14598 -1996,14603 -1986,14625 -2006,14811
 Graacher Str.: gute Betonstraße	Q0 14533,17084 14672,17085
 #: by: ^^^
 # 
@@ -21452,8 +21455,10 @@ Alsenstr. (Steglitz): Asphalt	Q0 5560,6344 5558,6319 5416,6119
 Bürgerheimstr.: Kopfsteinpflaster	Q2 16326,11966 16359,12207
 # 
 #: by: Petra Scheffler: vvv
-Zitadellenweg: schlechtes Kopfsteinpflaster	Q3 -2597,14532 -2594,14571 -2264,14584
-Zitadellenweg: Asphalt	Q0 -1993,14594 -1768,14605 -1564,14489
+#: corrected_by: srt (Q3 -> Q3+)
+Zitadellenweg: schlechtes Kopfsteinpflaster	Q3+ -2597,14532 -2594,14571 -2334,14581
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Zitadellenweg: Asphalt	Q0 -2334,14581 -2264,14584
 #: by: ^^^
 # 
 #: by: Holtermann, Olaf:
@@ -27117,9 +27122,13 @@ Harzburger Str. (Pankow): Asphalt, Schlaglöcher	Q1 11463,18817 11419,18801 11380
 #: confirmed_by: srt
 Kremmener Str.: Asphalt	Q0 10209,14830 10377,14909
 # 
-#: by: Andy (compstars):
-#: by: Tatjana Brühl: guter Asphalt, aber keine Angabe zu einer Einbahnstraßenregelung
-Faucherweg: mäßiger Beton	Q1- -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
+#: by: Andy (compstars): vvv
+#: by: Tatjana Brühl: guter Asphalt, aber keine Angabe zu einer Einbahnstraßenregelung vvv
+#: corrected_by: srt (mäßiger Beton, Q1- -> ...)
+Faucherweg: Beton	Q0- -1299,14797 -1251,14772 -1207,14781
+Faucherweg: mäßiger Beton	Q1- -1207,14781 -1141,14814 -896,14888
+#: by ^^^
+#: by ^^^
 # 
 #: by: Christian (...wendel):
 Pestalozzistr. (Köpenick): mäßiges Kopfsteinpflaster	Q2 21363,3699 21503,3592
@@ -28828,7 +28837,8 @@ Schwerter Weg: mäßiger Beton	Q2 -692,15491 -676,15370
 Kanalstr. (Haselhorst): guter Beton	Q1+ -736,15294 -593,15300
 Simonring: guter Beton	Q1 -945,14999 -896,14888 -836,14765
 Berthold-Schwarz-Str.: guter Asphalt	Q1 -834,15053 -784,14940 -756,14884
-Stöckelstr.: guter Asphalt	Q1 -896,14888 -784,14940 -663,14996
+#: corrected_by: srt: Q1 -> Q0
+Stöckelstr.: guter Asphalt	Q0 -896,14888 -784,14940 -663,14996
 #: confirmed_by: srt
 Straße Z: Asphalt	Q0 -638,16459 -671,16488 -708,16516
 Straße 269: fester Sandweg, stark witterungsabhängig	Q2 -5382,8880 -5657,8897 -6406,8933 -7000,8967 -7252,8982
@@ -30338,19 +30348,10 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: corrected_by: osm (... -> ..., fertig)
 # REMOVED --- #: osm_watch: way id="286471064" version="10" --- #: last_checked: 2022-10-08 --- #: check_frequency: 60d
 Betckestr.: Asphalt	Q0 -3635,12572 -3444,12573 -3259,12580
-#: next_check_id: GOETEL-2023
-#: XXX letzte Deckschicht beim Asphalt fehlt vvv
-#: also_indoor: traffic (ex-B) vvv
-#: confirmed_by: srt
-# REMOVED (steht nicht mehr) --- #: XXX Baustellenschild der Wasserbetriebe, bis 10.3.2023
-#: osm_watch: way id="475812733" version="5"
-#: last_checked: 2023-10-11
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2023-03-10
+# REMOVED --- #: next_check_id: GOETEL-2023 --- #: XXX letzte Deckschicht beim Asphalt fehlt vvv --- #: also_indoor: traffic (ex-B) vvv --- #: confirmed_by: srt --- #: XXX Baustellenschild der Wasserbetriebe, bis 10.3.2023 --- #: osm_watch: way id="475812733" version="5" --- #: last_checked: 2023-10-11 --- #: check_frequency: 60d --- #: next_check: 2023-03-10
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ..., 2023 neu gemacht)
-Betckestr.: Asphalt, letzte Deckschicht fehlt	Q1 -3259,12580 -3192,12591 -3170,12603
-#: also_indoor ^^^
-#: XXX ^^^
+Betckestr.: Asphalt	Q0 -3259,12580 -3192,12591 -3170,12603
+# REMOVED --- #: also_indoor ^^^ --- #: XXX ^^^
 Betckestr.: Kopfsteinpflaster	Q2 -3170,12603 -3138,12605 -3113,12549
 # 
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
@@ -32926,4 +32927,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 4004,3729
 Kreuzungsbereich asphaltiert	Q0 4134,3825
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 4307,3959
 Kreuzungsbereich mit Kopfsteinpflaster	Q1- 4385,4032
+Kreuzungsbereich asphaltiert	Q0 3287,11846
 #: ignore ^^^

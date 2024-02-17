@@ -4,7 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2::inwork 13406,11896 13352,12003
-Müncheberger Str.: schmaler Gehweg, Fußgänger	q4 12558,11920 12617,11888
+Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4 12558,11920 12617,11888
 Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229
 Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070
 Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
@@ -1446,7 +1446,7 @@ Am Spektesee: einige Fußgänger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,1539
 (Burgwallgraben - Krowelstr.): einige Fußgänger, Rampe	q2 -3457,13028 -3458,13006 -3457,12960
 Kerstenweg: Fußgänger, Bordsteine	q2 -3711,13378 -3813,13404
 (Ziegelhof, Grünanlage): Fußgänger	q1 -3546,13503 -3689,13513 -3789,13519
-entlang der Havel: Fußgänger	q1 -3306,14035 -3345,13994 -3390,13940 -3459,13846 -3460,13828 -3493,13781 -3504,13775 -3544,13692 -3556,13582 -3546,13503 -3529,13452 -3452,13319 -3441,13270
+entlang der Havel: Fußgänger	q1 -3306,14035 -3345,13994 -3396,13934 -3459,13846 -3460,13828 -3493,13781 -3504,13775 -3544,13692 -3556,13582 -3546,13503 -3529,13452 -3452,13319 -3441,13270
 Landschaftspark Herzberge: Bordstein, Schwingtor	q2 17671,13132 17684,13133 17698,13134
 (Allee der Kosmonauten - Langhoffstr.): Fußgänger	q3 19856,13794 19847,14019 19843,14064
 (Langhansstr. - Allee der Kosmonauten): Fußgänger	q3 19818,14064 19847,14019

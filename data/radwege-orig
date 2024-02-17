@@ -757,10 +757,14 @@ Gehwegplatten	RW2; 1822,12372 1917,12367
 Gehwegplatten	RW1; 1917,12367 1969,12375
 # 
 	RW2; -3352,14676 -3432,14607 -3481,14523 -3498,14413 -3501,14365
-	RW2;RW2 -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
+	RW2; -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
+#: historical_note: früher benutzungspflichtig
+Gehweg für Radfahrer frei	RW1; -3552,14082 -3517,14218 -3511,14260 -3506,14306
+	RW2; -3506,14306 -3501,14365
 	RW2; -3352,14676 -3301,14669 -3255,14685 -3247,14713 -3251,14741 -3295,14777 -3355,14764 -3368,14723 -3352,14676
-	RW1;RW2 -3255,14685 -3209,14662 -3150,14631
-	RW1;RW1 -3150,14631 -3014,14559 -2946,14533 -2831,14512 -2794,14511 -2647,14532 -2597,14532 -2460,14493 -2343,14446 -2233,14384 -2074,14366 -1947,14394 -1564,14489 -1484,14513
+asphaltiert	RW1; -3255,14685 -3209,14662 -3150,14631
+	RW2; -3150,14631 -3209,14662 -3255,14685
+Verbundsteinpflaster	RW1;RW1 -3150,14631 -3014,14559 -2946,14533 -2831,14512 -2794,14511 -2647,14532 -2597,14532 -2460,14493 -2343,14446 -2233,14384 -2074,14366 -1947,14394 -1564,14489 -1484,14513
 	RW2; -1484,14513 -1392,14527
 neu asphaltiert	RW2; -1392,14527 -1337,14538 -1005,14604 -914,14602 -457,14536
 	RW2; -278,14532 -941,14637 -1119,14659 -1350,14646
@@ -1272,7 +1276,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-02-16 vvv
+#: last_checked: 2024-02-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2052,7 +2056,7 @@ provisorische Radspur	RW4; 10697,12303 10703,12313 10714,12355 10710,12377 10685
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10710,12377 10714,12355 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
-#: last_checked: 2023-12-12
+#: last_checked: 2024-02-17
 provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2758,7 +2762,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-02-15 vvv
+#: last_checked: 2024-02-17 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2916,7 +2920,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2024-02-16
+#: last_checked: 2024-02-17
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5061,12 +5065,8 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW4; -168,16269 -193,16186 -198,16161
 	RW4; -198,16161 -208,16120 -214,16093
 asphaltiert	RW1; -216,16084 -224,16041 -233,15997
-#: next_check_id: TEGELERBRUECKE-2021
-#: XXX noch nicht fertiggestellt
-#: last_checked: 2023-10-03 vvv
-#	RW3; -233,15997 -252,15903
-	RW0; -233,15997 -252,15903
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: TEGELERBRUECKE-2021 --- #: XXX noch nicht fertiggestellt --- #: last_checked: 2023-10-03 --- #	RW3; -233,15997 -252,15903
+	RW3; -233,15997 -252,15903
 asphaltiert	RW1; -233,15997 -224,16041 -216,16084
 	RW1; -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903
 alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; -252,15903 -261,15858 -292,15715 -302,15602 -302,15546 -286,15354 -344,15200
@@ -6526,7 +6526,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neust%C3%A4dtische-kirchstra%C3%9Fe-4-5-herrichtung-f%C3%BCr-bundesministerium.775/#post-22250
 #: by: https://www.n-tv.de/politik/Bundestags-BER-verschlingt-weitere-Millionen-article24709001.html (Hochbauarbeiten bis 2027?)
-#: last_checked: 2024-02-15 vvv
+#: last_checked: 2024-02-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
