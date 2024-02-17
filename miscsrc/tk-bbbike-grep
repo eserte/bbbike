@@ -18,6 +18,7 @@ require BBBikeUtil;
 
 my $refresh_interval = 1;
 my $auto_update_from_selection = 0;
+my $auto_update_off_seconds = 3600;
 my $stay_on_top = 1;
 my $debug;
 
@@ -28,10 +29,11 @@ $mw->title("BBBike Grep");
 GetOptions(
     "refresh-interval=f" => \$refresh_interval,
     "auto-update-from-selection!" => \$auto_update_from_selection,
+    "auto-update-off=i" => \$auto_update_off_seconds,
     "stay-on-top!" => \$stay_on_top,
     "debug" => \$debug,
 )
-    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--stay-on-top] [--debug]\n";
+    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--auto-update-off-seconds seconds] [--stay-on-top] [--debug]\n";
 
 # Create frames
 my $top_frame = $mw->Frame->pack(-side => 'top', -fill => 'x');
@@ -157,9 +159,12 @@ sub call_bbbikeclient {
     system(@cmd);
 }
 
+my $last_update_change;
+
 # Function to toggle regular updating
 sub toggle_update {
     if ($auto_update_from_selection) {
+	$last_update_change = time; # init
         update_selection_content();
         $timer = $mw->repeat($refresh_interval * 1000, [\&update_selection_content]);
     } else {
@@ -171,10 +176,10 @@ sub toggle_update {
 sub update_selection_content {
     my $selection_content;
     eval {
-        $selection_content = $mw->SelectionGet(-selection => 'PRIMARY');
+	$selection_content = $mw->SelectionGet(-selection => 'PRIMARY');
     };
     if ($@) {
-        $selection_content = "";
+	$selection_content = "";
 	return;
     }
     if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED)\t.*\t([^\t]+)\t/) {
@@ -186,8 +191,16 @@ sub update_selection_content {
     return if $selection_content eq '';
     my $old_content = $grep_entry->get();
     if ($old_content ne $selection_content) {
+	$last_update_change = time;
 	$grep_entry->configure(-text => $selection_content);
 	run_grep();
+    } else {
+	if ($auto_update_from_selection) {
+	    if ($last_update_change + $auto_update_off_seconds < time) {
+		warn "INFO: inactive user, disable Auto Update from Selection.\n";
+		$auto_update_from_selection = 0; toggle_update();
+	    }
+	}
     }
 }
 
