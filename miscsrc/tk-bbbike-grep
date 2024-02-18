@@ -1,8 +1,6 @@
 #!/usr/bin/env perl
 # -*- perl -*-
 
-#!/usr/bin/perl
-
 use strict;
 use warnings;
 use Cwd qw(cwd);
@@ -22,7 +20,6 @@ my $auto_update_off_seconds = 3600;
 my $stay_on_top = 1;
 my $debug;
 
-# Create main window
 my $mw = MainWindow->new;
 $mw->title("BBBike Grep");
 
@@ -35,12 +32,13 @@ GetOptions(
 )
     or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--auto-update-off-seconds seconds] [--stay-on-top] [--debug]\n";
 
-# Create frames
-my $top_frame = $mw->Frame->pack(-side => 'top', -fill => 'x');
-my $bottom_frame = $mw->Frame->pack(-side => 'bottom', -fill => 'both', -expand => 1);
-
+my $top_frame;
+Tk::grid(
+    ($top_frame = $mw->Frame),
+    -sticky => 'ew',
+);
 $top_frame->Label(-text => "Grep BBBike data:")->pack(-side => 'left');
-my $grep_entry = $top_frame->Entry->pack(-side => 'left', -expand => 1, -fill => 'x');
+my $grep_entry = $top_frame->Entry->pack(-side => 'left', -fill => 'x', -expand => 1);
 $grep_entry->insert("end", "Brandenburger Tor");
 my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
 
@@ -61,19 +59,30 @@ my $bbbike_p = do {
     }
 };
 
-my $checkbox = $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$auto_update_from_selection, -command => \&toggle_update)->pack(-side => 'left');
+Tk::grid(
+    $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$auto_update_from_selection, -command => \&toggle_update),
+    -sticky => 'w',
+);
 my $timer;
 
-# Create ROText widget to display grep output
-my $rotext = $bottom_frame->Scrolled('ROText', -height => 10, -wrap => 'none', -scrollbars => 'soe')->pack(-side => 'left', -fill => 'both');
+my $rotext;
+Tk::grid(
+    ($rotext = $mw->Scrolled('ROText', -height => 10, -wrap => 'none', -scrollbars => 'soe')),
+    -sticky => 'nsew',
+);
 #$rotext->tagConfigure('clickable', -foreground => 'blue', -underline => 1);
 #$rotext->tagBind('clickable', '<Button-1>', sub { display_file($rotext->index('current')); });
+
+# make sure everything is horizontally expanded (only one column)
+$mw->gridColumnconfigure($_, -weight => 1) for (0);
+# make sure the rotext is expanding also vertically
+$mw->gridRowconfigure($_, -weight => 1) for (2);
 
 if ($auto_update_from_selection) {
     toggle_update();
 }
 
-# XXX does not work --- maybe a fvwm2 problem?
+# XXX does not work on fvwm2, but with other window managers
 if ($stay_on_top && BBBikeUtil::is_in_path('wmctrl')) {
     $mw->update;
     my $hex_win_id = sprintf "0x%x", ($mw->wrapper)[0];
