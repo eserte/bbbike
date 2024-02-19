@@ -41114,15 +41114,18 @@ EOF
        until => 1709913600, # $isodate2epoch->("2023-12-11 17:00:00"),
        #text  => 'Wilhelminenhofstr.: zwischen Mathildestr. und Klarastr. Gleisbauarbeiten, Radfahrer sollen den Gehweg benutzen, bis 20.11.2023',
        #text  => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 11.12.2023',
-       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., mögliche Einschränkungen für Radfahrer, vom 19.02.2024 07:00 bis 08.03.2024 17:00',
+       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., Radfahrer dürfen den Gehweg benutzen, vom 19.02.2024 07:00 bis 08.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
+#: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
 #: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024)
+#: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
+#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
 	q3::inwork; 18861,6000 18843,6013 18766,6067
 EOF
      },
