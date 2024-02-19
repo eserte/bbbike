@@ -3,16 +3,18 @@
 
 use strict;
 use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use Cwd qw(cwd);
 use Getopt::Long;
 use Tk;
 use Tk::PNG;
 use Tk::ROText;
 
-my $bbbike_root = "$ENV{HOME}/src/bbbike";
+use BBBikeUtil qw(bbbike_root is_in_path);
 
-push @INC, $bbbike_root;
-require BBBikeUtil;
+my $bbbike_root = bbbike_root;
 
 my $refresh_interval = 1;
 my $auto_update_from_selection = 0;
@@ -83,7 +85,7 @@ if ($auto_update_from_selection) {
 }
 
 # XXX does not work on fvwm2, but with other window managers
-if ($stay_on_top && BBBikeUtil::is_in_path('wmctrl')) {
+if ($stay_on_top && is_in_path 'wmctrl') {
     $mw->update;
     my $hex_win_id = sprintf "0x%x", ($mw->wrapper)[0];
     my @cmd = ('wmctrl', '-i', '-r', $hex_win_id, '-b', 'add,above');
