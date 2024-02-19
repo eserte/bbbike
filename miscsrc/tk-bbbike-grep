@@ -1,0 +1,238 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+use strict;
+use warnings;
+use Cwd qw(cwd);
+use Getopt::Long;
+use Tk;
+use Tk::PNG;
+use Tk::ROText;
+
+my $bbbike_root = "$ENV{HOME}/src/bbbike";
+
+push @INC, $bbbike_root;
+require BBBikeUtil;
+
+my $refresh_interval = 1;
+my $auto_update_from_selection = 0;
+my $auto_update_off_seconds = 3600;
+my $stay_on_top = 1;
+my $debug;
+
+my $mw = MainWindow->new;
+$mw->title("BBBike Grep");
+
+GetOptions(
+    "refresh-interval=f" => \$refresh_interval,
+    "auto-update-from-selection!" => \$auto_update_from_selection,
+    "auto-update-off=i" => \$auto_update_off_seconds,
+    "stay-on-top!" => \$stay_on_top,
+    "debug" => \$debug,
+)
+    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--auto-update-off-seconds seconds] [--stay-on-top] [--debug]\n";
+
+my $top_frame;
+Tk::grid(
+    ($top_frame = $mw->Frame),
+    -sticky => 'ew',
+);
+$top_frame->Label(-text => "Grep BBBike data:")->pack(-side => 'left');
+my $grep_entry = $top_frame->Entry->pack(-side => 'left', -fill => 'x', -expand => 1);
+$grep_entry->insert("end", "Brandenburger Tor");
+my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
+
+my $emacs_p = do {
+    my $emacs_icon_file = get_emacs_icon();
+    if (defined $emacs_icon_file) {
+	$mw->Photo(-file => $emacs_icon_file);
+    } else {
+	undef;
+    }
+};
+my $bbbike_p = do {
+    my $bbbike_icon_file = get_bbbike_icon();
+    if (defined $bbbike_icon_file) {
+	$mw->Photo(-file => $bbbike_icon_file);
+    } else {
+	undef;
+    }
+};
+
+Tk::grid(
+    $mw->Checkbutton(-text => "Auto Update from Selection", -variable => \$auto_update_from_selection, -command => \&toggle_update),
+    -sticky => 'w',
+);
+my $timer;
+
+my $rotext;
+Tk::grid(
+    ($rotext = $mw->Scrolled('ROText', -height => 10, -wrap => 'none', -scrollbars => 'soe')),
+    -sticky => 'nsew',
+);
+#$rotext->tagConfigure('clickable', -foreground => 'blue', -underline => 1);
+#$rotext->tagBind('clickable', '<Button-1>', sub { display_file($rotext->index('current')); });
+
+# make sure everything is horizontally expanded (only one column)
+$mw->gridColumnconfigure($_, -weight => 1) for (0);
+# make sure the rotext is expanding also vertically
+$mw->gridRowconfigure($_, -weight => 1) for (2);
+
+if ($auto_update_from_selection) {
+    toggle_update();
+}
+
+# XXX does not work on fvwm2, but with other window managers
+if ($stay_on_top && BBBikeUtil::is_in_path('wmctrl')) {
+    $mw->update;
+    my $hex_win_id = sprintf "0x%x", ($mw->wrapper)[0];
+    my @cmd = ('wmctrl', '-i', '-r', $hex_win_id, '-b', 'add,above');
+    warn "Run: @cmd\n" if $debug;
+    system @cmd;
+    warn "@cmd failed (for stay on top): $?" if $? != 0;
+}
+
+MainLoop;
+
+# Function to run grep command
+sub run_grep {
+    my $grep_word = $grep_entry->get;
+    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
+    binmode $fh, ':utf8';
+    my @output = <$fh>;
+    $rotext->delete('1.0', 'end');
+    my $result_lines = 0;
+    foreach my $line (@output) {
+#warn "<$line>";
+        if ($line =~ /^(.*?):(\d+):(.*)$/) {
+            my $filename = $1;
+            my $line_number = $2;
+            my $matching_text = $3;
+
+	    my $emacs_button = $rotext->Button(
+		-image => $emacs_p,
+	        -text => 'E',
+                -command => sub { call_emacsclient($filename, $line_number) },
+		-pady => 0,
+	    );
+	    $rotext->windowCreate('end', -window => $emacs_button);
+	    $rotext->insert('end', ' ') unless $emacs_p;
+
+	    my $bbbike_button = $rotext->Button(
+		-image => $bbbike_p,
+	        -text => 'B',
+		-pady => 0,
+	    );
+	    my ($coordinate_pairs) = $matching_text =~ /(-?\d+,-?\d+(?:\s+-?\d+,-?\d+)*)/;
+	    if ($coordinate_pairs) {
+		$bbbike_button->configure(-command => sub { call_bbbikeclient($coordinate_pairs) });
+	    } else {
+		$bbbike_button->configure(-state => 'disabled');
+	    }
+	    $rotext->windowCreate('end', -window => $bbbike_button);
+	    $rotext->insert('end', ' ') unless $bbbike_p;
+
+            $rotext->insert('end', "$filename\t$matching_text\n");
+	    $result_lines++;
+        }
+    }
+    flash_rotext($result_lines == 0 ? 'red' : 'green');
+}
+
+{
+    my $timer_id;
+    sub flash_rotext {
+	my($color) = @_;
+	return if $timer_id && $rotext->afterInfo($timer_id);
+	my $original_color = $rotext->cget('-background');
+	$rotext->configure(-background => $color);
+	$timer_id = $rotext->after(500, sub {
+				   $rotext->configure(-background => $original_color);
+				   undef $timer_id;
+			       });
+    }
+}
+
+sub call_emacsclient {
+    my($filename, $line_number) = @_;
+    # Call emacsclient with filename and line number
+    my $cmd = "emacsclient -n +$line_number $filename";
+    warn "Run: $cmd" if $debug;
+    system($cmd);
+}
+
+sub call_bbbikeclient {
+    my($coordinate_pairs) = @_;
+    my @cmd = ("$bbbike_root/bbbikeclient", "-centerc", $coordinate_pairs, "-mark");
+    warn "Run: @cmd" if $debug;
+    system(@cmd);
+}
+
+my $last_update_change;
+
+# Function to toggle regular updating
+sub toggle_update {
+    if ($auto_update_from_selection) {
+	$last_update_change = time; # init
+        update_selection_content();
+        $timer = $mw->repeat($refresh_interval * 1000, [\&update_selection_content]);
+    } else {
+        $mw->afterCancel($timer) if defined $timer;
+    }
+}
+
+# Function to update selection content
+sub update_selection_content {
+    my $selection_content;
+    eval {
+	$selection_content = $mw->SelectionGet(-selection => 'PRIMARY');
+    };
+    if ($@) {
+	$selection_content = "";
+	return;
+    }
+    if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED)\t.*\t([^\t]+)\t/) {
+	$selection_content = $1; # VIZ source_id
+    } else {
+	$selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
+	$selection_content =~ s/\n.*$//;  # Crop after the first line
+    }
+    return if $selection_content eq '';
+    my $old_content = $grep_entry->get();
+    if ($old_content ne $selection_content) {
+	$last_update_change = time;
+	$grep_entry->configure(-text => $selection_content);
+	run_grep();
+    } else {
+	if ($auto_update_from_selection) {
+	    if ($last_update_change + $auto_update_off_seconds < time) {
+		warn "INFO: inactive user, disable Auto Update from Selection.\n";
+		$auto_update_from_selection = 0; toggle_update();
+	    }
+	}
+    }
+}
+
+sub get_emacs_icon {
+    my @location_candidates = qw(
+        /usr/share/icons/hicolor/16x16/apps/emacs.png
+        /usr/share/emacs/*/etc/images/icons/hicolor/16x16/apps/emacs.png
+    );
+
+    for my $location_candidate (@location_candidates) {
+        my @files = reverse glob $location_candidate;
+        for my $file (@files) {
+            if (-e $file) {
+		return $file;
+	    }
+	}
+    }
+
+    undef;
+}
+
+sub get_bbbike_icon {
+    my $f = "$bbbike_root/images/srtbike16a.png";
+    return $f if -e $f;
+}
+
