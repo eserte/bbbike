@@ -195,8 +195,8 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
 #: osm_watch: way id="29435079" version="25"
-#: osm_watch: way id="30198295" version="27"
-#: osm_watch: way id="211549617" version="20"
+#: osm_watch: way id="30198295" version="28"
+#: osm_watch: way id="211549617" version="21"
 #: source_id: 2147341149 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_93467 (inaktiv)
 #: source_id: 2147341739 (inaktiv)
@@ -210,7 +210,7 @@ Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch R
 #: source_id: LMS-BR_r_LMS-BR_124892_LMS-BR_72 (möglicherweise inaktiv)
 #: source_id: 2147342295 (möglicherweise inaktiv)
 #: osm_watch: way id="152952074" version="20"
-#: osm_watch: way id="30084960" version="31"
+#: osm_watch: way id="30084960" version="32"
 #: last_checked: 2024-02-06 (mapillary)
 #: check_frequency: 180d
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10849,-1332 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
@@ -791,7 +791,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: source_id: viz2021:13.377293,52.482598,17.10.2023,10:00 (Richtung Süden; bis 27.10.2023) (inaktiv)
 #: source_id[expired]: bvg2021:248#BVG335746_0 (Umleitung ab 24.11.2023)
 #: source_id: viz2021:13.377018,52.476871,19.02.2024,07:00 (Anbindung Werner-Voß-Damm gesperrt, bis 05.03.2024)
-#: source_id: viz2021:13.37688,52.47693,19.02.2024,07:00 (bis 05.03.2024)
+#: source_id: viz2021:13.37688,52.47693,19.02.2024,07:00 (bis 05.03.2024) (inaktiv)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759459548484788347#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGra8PuXEAADWYe.jpg
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme), am 2017-04-25 ist aber noch nichts passiert
@@ -4211,11 +4211,12 @@ Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 967
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11954 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12010
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12019 (Einwohneranfrage zu Beginn der Bauarbeiten)
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/schildower-strasse-baustart-verzoegert-sich_a407984 (Baustart unklar)
 #: XXX wird es während der Bauarbeiten Einschränkungen geben?
 #: also_indoor: traffic (none)
-#: last_checked: 2023-09-12 (indoor)
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2024-03-01
+#: last_checked: 2024-02-20 (indoor research)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-03-01
 Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrradstraße geben?	?::projected 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321 4849,24335
 # 
 # REMOVED (ja, aber Radfahrer frei) --- Lehderstr.: gibt es wegen der Umleitungsstrecke hier eine Einbahnstraßenregelung?	? 13307,15758 13214,15830 13214,15830 13086,15907 12842,16032
@@ -7219,7 +7220,7 @@ Wallstr., Am Märkischen Museum: Schilder stehen teilweise; modaler Filter, teilw
 #: by: https://www.infravelo.de/projekt/gartenstrasse/ (4. Quartal 2023 - 1. Quartal 2024)
 #: XXX Markierungsarbeiten im Bereich Kleine Hamburger Straße weitgehend fertig
 #: osm_watch: note 3910311 2
-#: osm_watch: way id="172078325" version="25"
+#: osm_watch: way id="172078325" version="26"
 #: last_checked: 2024-02-06 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-03-31
@@ -8276,6 +8277,7 @@ Treiberpfad: Teilstück soll eingezogen werden	? 3792,22214 3766,22165
 Bruno-Taut-Straße 6: Erschließungsstraße entsteht	? 21685,916 21745,997 21882,1026
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1417686.php ("Cheops-Pflaster", bis September/Oktober 2024)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/fahrbahnarbeiten-gehen-weiter_a407945
 #: next_check: 2024-10-31
 Florian-Geyer-Str.: Bauarbeiten geplant, Verbesserung der Qualität	? 20066,3746 19992,3839
 # 

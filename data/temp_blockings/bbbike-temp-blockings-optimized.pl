@@ -3062,7 +3062,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/ (2017-2018)
+#: source_id: viz2021:13.45095,52.598151,19.02.2024,07:00 (bis 23.02.2024)
+	2::inwork 13415,21442 13371,21462
+',
+         'from' => 1708236000,
+         'id' => 2879,
+         'text' => 'Rhönstraße: Brücke gesperrt, auch für den Rad- und Fußverkehr, vom 19.02.2024 07:00 bis 23.02.2024 17:00 ',
+         'type' => 'gesperrt',
+         'until' => 1708704000
+       },
        undef,
        undef,
        undef,
@@ -3239,7 +3249,19 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php (2018-2019)
+#: source_id: viz2021:13.545136,52.421827,06.11.2023,07:00 (bis 24.11.2023) (inaktiv)
+#: source_id: viz2021:13.544283,52.420664,20.02.2024,07:00 (bis 25.02.2024)
+# REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
+	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
+',
+         'from' => 1708322400,
+         'id' => 2973,
+         'text' => 'Verlängerte Werderstr.: zwischen Werderstr. und Goldsternweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 20.02.2024 07:00 bis 25.02.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1708876800
+       },
        undef,
        undef,
        undef,
@@ -3341,7 +3363,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: osm_watch: note 3658253 2
+#: osm_watch: note 3658253 6
 #: last_checked: 2024-01-09
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
@@ -6467,13 +6489,14 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        {
          'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
-#: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024)
+#: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
 #: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
+#: also_indoor: traffic (H.G,B,W)
 	q3::inwork; 18861,6000 18843,6013 18766,6067
 ',
          'from' => 1708236000,
@@ -6958,6 +6981,36 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Perleberger Str.: Bauarbeiten Richtung Fennstr. zwischen Birkenstr. und Ellen-Epstein-Str., evtl. sind auch Radfahrer betroffen, vom 14.02.2024 07:00 bis 23.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1758639600
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/schmargendorf-bombenentscharfung-mittwoch-21.02.2024/
+#: by: https://viz.berlin.de/site/assets/files/1496/karte_sperrkreis_mecklenburgische_strasse_32.791x0-is.jpg
+Heidelberger Platz	2::bomb 4173,7993 4123,8021
+Heidelberger Platz [Bürgersteig]	2::bomb 4173,7993 4121,8016 4106,8031
+Johannisberger Str.	2::bomb 4161,7388 4162,7510 4162,7721 4173,7993
+Wiesbadener Str. (Friedenau, Wilmersdorf)	2::bomb 3965,7297 3703,7324 3612,7335
+Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3634,7601 3839,7787 3968,7906 4061,7992 4106,8031
+Binger Str.	2::bomb 4061,7992 4067,7726 4066,7514 4064,7396
+Forckenbeckstr.	2::bomb 3665,8131 3779,8105 4106,8031
+Friedrichshaller Str.	2::bomb 3468,7455 3320,7515
+Helene-Jacobs-Str.	2::bomb 3309,7782 3320,7982 3326,8100
+Schlangenbader Str.	2::bomb 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
+Nauheimer Str.	2::bomb 3969,7731 4067,7726 4162,7721
+Homburger Str.	2::bomb 3971,7533 4066,7514 4162,7510
+Eberbacher Str.	2::bomb 4161,7388 4064,7396 3969,7399
+Sodener Str.	2::bomb 3703,7324 3718,7576
+Rudolf-Mosse-Str.	2::bomb 3634,7601 3718,7576 3813,7560
+Franz-Cornelsen-Weg	2::bomb 3612,7335 3619,7587
+(Bad Kissingen)	2::bomb 3596,7566 3609,7842
+(Kolonieweg a. d. Forkenbeckstr.)	2::bomb 3584,8136 3756,8101 3779,8105
+Claire-Waldoff-Weg	2::bomb 3584,8136 3571,8085 3538,7515
+	2::bomb 3665,8131 3676,8394
+',
+         'from' => 1708457810,
+         'id' => 4009,
+         'text' => 'Bombenentschärfung an der Mecklenburgischen Str.: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 21. Februar 2024 ab 9 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1708534800
        }
      
 );

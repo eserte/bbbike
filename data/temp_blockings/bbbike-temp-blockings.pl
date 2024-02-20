@@ -26990,12 +26990,14 @@ EOF
 	2::inwork 7234,237 7256,219 7290,206 7302,186 7398,131 7444,118 7457,101 7501,83
 EOF
      },
-     { from  => 1499279870, # 2017-07-05 20:37
-       until => 1519858800, # 2018-03-01 00:00
-       text  => 'Brückendurchfahrt Rhönstraße: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Februar 2018',
+     { from  => 1708236000, # 1499279870, # 2017-07-05 20:37
+       until => 1708704000, # 1519858800, # 2018-03-01 00:00
+       #text  => 'Brückendurchfahrt Rhönstraße: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Februar 2018',
+       text  => 'Rhönstraße: Brücke gesperrt, auch für den Rad- und Fußverkehr, vom 19.02.2024 07:00 bis 23.02.2024 17:00 ',
        type  => 'gesperrt',
-       source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
        data  => <<EOF,
+#: by: http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/ (2017-2018)
+#: source_id: viz2021:13.45095,52.598151,19.02.2024,07:00 (bis 23.02.2024)
 	2::inwork 13415,21442 13371,21462
 EOF
      },
@@ -28145,13 +28147,15 @@ EOF
 	2::inwork 19414,15132 19424,15068 19400,15027 19347,14936
 EOF
      },
-     { from  => 1699306474, # 1530396000, # 2018-07-01 00:00
-       until => $isodate2epoch->("2023-11-24 17:00:00"), # 1560096748, # $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
-       text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis 24.11.2023',
+     { from  => 1708322400, # 1699306474, # 1530396000, # 2018-07-01 00:00
+       until => 1708876800, # $isodate2epoch->("2023-11-24 17:00:00"), # 1560096748, # $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
+       #text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis 24.11.2023',
+       text  => 'Verlängerte Werderstr.: zwischen Werderstr. und Goldsternweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 20.02.2024 07:00 bis 25.02.2024 17:00',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php (2018-2019)
 #: source_id: viz2021:13.545136,52.421827,06.11.2023,07:00 (bis 24.11.2023) (inaktiv)
+#: source_id: viz2021:13.544283,52.420664,20.02.2024,07:00 (bis 25.02.2024)
 # REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
 EOF
@@ -28588,7 +28592,7 @@ EOF
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
-#: osm_watch: note 3658253 2
+#: osm_watch: note 3658253 6
 #: last_checked: 2024-01-09
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
@@ -41119,13 +41123,14 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
-#: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024)
+#: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
 #: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
+#: also_indoor: traffic (H.G,B,W)
 	q3::inwork; 18861,6000 18843,6013 18766,6067
 EOF
      },
@@ -41963,6 +41968,37 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: last_checked ^^^
 #: priority ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1708457810,
+       until => $isodate2epoch->("2024-02-21 18:00:00"),
+       text  => 'Bombenentschärfung an der Mecklenburgischen Str.: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 21. Februar 2024 ab 9 Uhr',
+       type  => 'gesperrt',
+# data erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner =(printf "\tX 3793,8341 3354,8145 3292,8088 3271,7724 3283,7501 3480,7395 3510,7311 4026,7246 4112,7359 4227,7341 4190,8038 3922,8316\n") -onlyenclosed data/strassen | perl -pe 's/\t\S+/\t2::bomb/' >| /tmp/bomb.bbd
+       data  => <<EOF,
+#: by: https://viz.berlin.de/aktuelle-meldungen/schmargendorf-bombenentscharfung-mittwoch-21.02.2024/
+#: by: https://viz.berlin.de/site/assets/files/1496/karte_sperrkreis_mecklenburgische_strasse_32.791x0-is.jpg
+Heidelberger Platz	2::bomb 4173,7993 4123,8021
+Heidelberger Platz [Bürgersteig]	2::bomb 4173,7993 4121,8016 4106,8031
+Johannisberger Str.	2::bomb 4161,7388 4162,7510 4162,7721 4173,7993
+Wiesbadener Str. (Friedenau, Wilmersdorf)	2::bomb 3965,7297 3703,7324 3612,7335
+Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3634,7601 3839,7787 3968,7906 4061,7992 4106,8031
+Binger Str.	2::bomb 4061,7992 4067,7726 4066,7514 4064,7396
+Forckenbeckstr.	2::bomb 3665,8131 3779,8105 4106,8031
+Friedrichshaller Str.	2::bomb 3468,7455 3320,7515
+Helene-Jacobs-Str.	2::bomb 3309,7782 3320,7982 3326,8100
+Schlangenbader Str.	2::bomb 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
+Nauheimer Str.	2::bomb 3969,7731 4067,7726 4162,7721
+Homburger Str.	2::bomb 3971,7533 4066,7514 4162,7510
+Eberbacher Str.	2::bomb 4161,7388 4064,7396 3969,7399
+Sodener Str.	2::bomb 3703,7324 3718,7576
+Rudolf-Mosse-Str.	2::bomb 3634,7601 3718,7576 3813,7560
+Franz-Cornelsen-Weg	2::bomb 3612,7335 3619,7587
+(Bad Kissingen)	2::bomb 3596,7566 3609,7842
+(Kolonieweg a. d. Forkenbeckstr.)	2::bomb 3584,8136 3756,8101 3779,8105
+Claire-Waldoff-Weg	2::bomb 3584,8136 3571,8085 3538,7515
+	2::bomb 3665,8131 3676,8394
 EOF
      },
     );
