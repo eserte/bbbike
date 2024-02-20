@@ -15,6 +15,7 @@ use Tk::ROText;
 use BBBikeUtil qw(bbbike_root is_in_path);
 
 my $bbbike_root = bbbike_root;
+chdir "$bbbike_root/data" or warn "WARN: can't change to bbbike's data directory ($!), continue running nevertheless.\n";
 
 my $refresh_interval = 1;
 my $auto_update_from_selection = 0;
