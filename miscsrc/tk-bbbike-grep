@@ -100,6 +100,7 @@ MainLoop;
 # Function to run grep command
 sub run_grep {
     my $grep_word = $grep_entry->get;
+    # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
     open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
