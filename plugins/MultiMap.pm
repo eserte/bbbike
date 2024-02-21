@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.03;
+$VERSION = 2.04;
 
 use vars qw(%images);
 
@@ -137,6 +137,13 @@ sub register {
 	  callback => sub { showmap_bikemapnet(@_) },
 	  callback_3_std => sub { showmap_url_bikemapnet(@_) },
 	  ($images{BikeMapNet} ? (icon => $images{BikeMapNet}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_CriticalMaps"} =
+	{ name => "Critical Maps",
+	  callback => sub { showmap_criticalmaps(@_) },
+	  callback_3_std => sub { showmap_url_criticalmaps(@_) },
+	  ($images{CriticalMaps} ? (icon => $images{CriticalMaps}) : ()),
+	  order => 8700,
 	};
     $main::info_plugins{__PACKAGE__ . "_Geocaching"} =
 	{ name => "geocaching.com",
@@ -394,6 +401,33 @@ AAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouACiVDuMqIm0fAAAACXBI
 WXMAAAsTAAALEwEAmpwYAAAAcUlEQVQI12NQFmAAAsYgBgcGMGBmEGBgAwsBcTlbGjtYtGZ7+aoC
 IJ2WuaNrWhoDA1v1qraKzu0JDOkzVi7YMauzjCGrYMfJqgr2ZUBG9/GsAiAjYwJXW8YEzjYGts4Z
 CSDMwJDABsECELsYEZbCnAEA14gfbn28kNUAAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{CriticalMaps}) {
+	# Downloaded
+	# https://www.criticalmaps.net/assets/images/logo.svg and
+	# edited with gimp
+	$images{CriticalMaps} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH6AIVEzEPY0bAiAAAA0hJREFUOMttk29M1AUYxz/3uz/8
+OI4/YhwEd4ecHAHSBLITpDId4patLIOcrVrKVtambcwXukULtrb+sDXnmltlb/Bdq6zQF43TZeUq
+k3K5SGUuQOW4Ow64O7j7/bmnF8Ek1+fN8+b5bs/z7PlYuIMVMNUcpSydye4EHgY8gAn8AZwFvljq
+VYAsgIX/cgh4tW6t0/vk1gJpqFZtixnJ/nApqZ8KzTni88YFh8NxSNO0H1eGlKX6Hooqjc0PpUIn
+fCmJtogk20SmW0Rim8wDz90TfyC4RYAYsGMpY1ke5WC52/7ajkeKomUl9kxNpWpGRpPp/XtHY6Fv
+wvOkDGqqVCNXtcef2KzagONOVakFhJJi22rg+pfHqnW5HZSrQ2tj3360JrV9s2+mpr7tFjjTL+3y
+TMtkUCaGqxMyu0me6VilAYPLK+wL+HI0mQiKjAflk/57F7F6b6u5hbFKny9xcnDwBlgyR494ojK1
+UeT6Brl6Zl0GCANegBP9B8p1GQ+KXGsWfwU3JyanDBHRuru7Z4DUwMD7t4DI1Pn1C3Jtg8iNBxPN
+9U4BHlcAT2ujy4bLyvC5yTnPfU8XeCpKs319fYsjIyO2jo6O+bOhkK2lrV05PDCWwGmFMofL780B
+8NsAy++jCbwXWGyqX+34e+xiwjA0tbOz02htbTV6enpcs/FYdj6pZ06fqVqVnTX0P3+JarPzRt7y
+DT4ucXv0rVva/jIu368f3GOffbPvg5jcIdP31htxKLiZ+W29nD7uj69r3HbFmZsjwGMAeyxWVbY/
+6p8In2/QtctNmYqy3GhqQdNM0xQRkXA4nHC7S6PpkQbz86P+eEP9mjAwA5Qo+XnWITHTV/bvkhJ3
+rctmdzscAW9W/+nni4ai/Ptjz7/Qnex/RXfkFDuVp/aWFVW5Y/nAZ0BESaTMOeDYi0fGzbFfkwsU
+WplLKmqlz5cCMoBeW9+o2KyKjVI7H74zqX19LjHlsFveXSkRwOGifGsq9GkgvrGpXJ+OxCPt7e1T
+vb29ka+GvpvZt9OafPv1iiwwuiTa/7nEy8ClvDyXdHV1SSAQ0Ovq6szdu581AQM4BTSvDFjukipb
+XGgvnpnTtwFtK3VWVcf36bQ2fLfO/wAJ33sTrfsaPgAAAABJRU5ErkJggg==
 EOF
     }
 
@@ -1307,6 +1341,26 @@ sub showmap_url_bikemapnet {
 sub showmap_bikemapnet {
     my(%args) = @_;
     my $url = showmap_url_bikemapnet(%args);
+    start_browser($url);
+}
+
+######################################################################
+# CriticalMaps
+
+sub showmap_url_criticalmaps {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 17 if $scale > 17;
+    sprintf "https://www.criticalmaps.net/map#%d/%s/%s",
+	$scale, $py, $px;
+}
+
+sub showmap_criticalmaps {
+    my(%args) = @_;
+    my $url = showmap_url_criticalmaps(%args);
     start_browser($url);
 }
 
