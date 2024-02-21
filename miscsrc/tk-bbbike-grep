@@ -20,6 +20,8 @@ chdir "$bbbike_root/data" or warn "WARN: can't change to bbbike's data directory
 my $refresh_interval = 1;
 my $auto_update_from_selection = 0;
 my $auto_update_off_seconds = 3600;
+my $auto_update_from_file = 0; # XXX currently cannot be enabled by option
+my $current_url_filename;
 my $stay_on_top = 1;
 my $debug;
 
@@ -30,10 +32,16 @@ GetOptions(
     "refresh-interval=f" => \$refresh_interval,
     "auto-update-from-selection!" => \$auto_update_from_selection,
     "auto-update-off=i" => \$auto_update_off_seconds,
+    "current-url-hack=s" => \$current_url_filename,
     "stay-on-top!" => \$stay_on_top,
     "debug" => \$debug,
 )
-    or die "usage: $0 [tk options] [--refresh-interval seconds] [--auto-update-from-selection] [--auto-update-off-seconds seconds] [--stay-on-top] [--debug]\n";
+    or die <<EOF;
+usage: $0 [tk options] [--refresh-interval seconds]
+	[--auto-update-from-selection] [--auto-update-off-seconds seconds]
+	[--current-url-hack filename]
+	[--stay-on-top] [--debug]
+EOF
 
 my $top_frame;
 Tk::grid(
@@ -67,6 +75,14 @@ Tk::grid(
     -sticky => 'w',
 );
 my $timer;
+
+if ($current_url_filename) {
+    Tk::grid(
+	$mw->Checkbutton(-text => "Auto Update from special file", -variable => \$auto_update_from_file, -command => \&toggle_update_from_file),
+	-sticky => 'w',
+    );
+}
+my $timer_from_file;
 
 my $rotext;
 Tk::grid(
@@ -185,6 +201,17 @@ sub toggle_update {
     }
 }
 
+my $last_update_from_file_change;
+sub toggle_update_from_file {
+    if ($auto_update_from_file) {
+	$last_update_from_file_change = time; # init
+        update_file_content();
+        $timer_from_file = $mw->repeat($refresh_interval * 1000, [\&update_file_content]);
+    } else {
+        $mw->afterCancel($timer_from_file) if defined $timer_from_file;
+    }
+}
+
 # Function to update selection content
 sub update_selection_content {
     my $selection_content;
@@ -212,6 +239,50 @@ sub update_selection_content {
 	    if ($last_update_change + $auto_update_off_seconds < time) {
 		warn "INFO: inactive user, disable Auto Update from Selection.\n";
 		$auto_update_from_selection = 0; toggle_update();
+	    }
+	}
+    }
+}
+
+sub update_file_content {
+    my $mtime = (stat($current_url_filename))[9];
+    if (!defined $mtime) {
+	warn "$current_url_filename has no mtime (probably non-existing?)\n" if $debug;
+	return;
+    }
+    if ($mtime <= $last_update_from_file_change) {
+	# too noisy: warn "$current_url_filename did not change ($mtime <= $last_update_from_file_change)\n" if $debug;
+	return;
+    }
+
+    my $fh;
+    unless (open $fh, $current_url_filename) {
+	warn "ERROR: $current_url_filename is not readable, or maybe vanished in between (error: $!)\n";
+	return;
+    }
+    chomp(my $url = <$fh>);
+    if ($url eq '') {
+	warn "No URL found in $current_url_filename\n" if $debug;
+	return;
+    }
+    if ($url eq 'about:blank') {
+	# ignore: this is shortly visible when creating a new tab
+	return;
+    }
+    # normalizations
+    $url =~ s{(https://www.deutsches-architekturforum.de/thread/.*?/).*}{$1};
+    $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
+
+    my $old_content = $grep_entry->get();
+    if ($old_content ne $url) {
+	$last_update_from_file_change = $mtime;
+	$grep_entry->configure(-text => $url);
+	run_grep();
+    } else {
+	if ($auto_update_from_selection) {
+	    if ($last_update_from_file_change + $auto_update_off_seconds < time) {
+		warn "INFO: inactive user, disable Auto Update from special file.\n";
+		$auto_update_from_file = 0; toggle_update_from_file();
 	    }
 	}
     }
