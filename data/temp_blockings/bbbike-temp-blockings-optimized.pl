@@ -3353,7 +3353,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 100d vvv
 #: next_check: 2024-03-16 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
@@ -5502,6 +5502,7 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-in-koepenick-bvg-bus-tram-wann-die-staufalle-endlich-entschaerft-wird-li.359363
 #: by: https://nitter.cz/VIZ_Berlin/status/1671189918050304000#m
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-bvg-gelbe-folie-gegen-stau-in-koepenick-kommt-die-bvg-jetzt-besser-durch-li.361499
+#: by: https://www.nd-aktuell.de/artikel/1180183.strassenbahn-bvg-streicht-jeden-dritten-zug-der-m.html (neuer Stau in der Bahnhofstr.)
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: source_id[inactive]: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
@@ -5902,7 +5903,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024)
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-21
 #: next_check: 2024-02-29
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -5959,12 +5960,13 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
 #: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
-#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024)
+#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024)
 #: source_id: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
+#: note: laut rbb bis 08.03.2024
 #: last_checked: 2024-02-16 vvv
 #: check_frequency: 14d vvv 
-#: next_check: 2024-03-04 vvv
+#: next_check: 2024-03-05 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
 Plesser Str.	q4::inwork 13647,9304 13667,9316
 Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
@@ -5976,9 +5978,9 @@ Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
 ',
          'from' => 1704999960,
          'id' => 3844,
-         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 04.03.2024 17:00 Uhr',
+         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 05.03.2024 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1709568000
+         'until' => 1709654400
        },
        undef,
        undef,
@@ -6982,35 +6984,31 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'handicap',
          'until' => 1758639600
        },
+       undef,
        {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/schmargendorf-bombenentscharfung-mittwoch-21.02.2024/
-#: by: https://viz.berlin.de/site/assets/files/1496/karte_sperrkreis_mecklenburgische_strasse_32.791x0-is.jpg
-Heidelberger Platz	2::bomb 4173,7993 4123,8021
-Heidelberger Platz [Bürgersteig]	2::bomb 4173,7993 4121,8016 4106,8031
-Johannisberger Str.	2::bomb 4161,7388 4162,7510 4162,7721 4173,7993
-Wiesbadener Str. (Friedenau, Wilmersdorf)	2::bomb 3965,7297 3703,7324 3612,7335
-Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3634,7601 3839,7787 3968,7906 4061,7992 4106,8031
-Binger Str.	2::bomb 4061,7992 4067,7726 4066,7514 4064,7396
-Forckenbeckstr.	2::bomb 3665,8131 3779,8105 4106,8031
-Friedrichshaller Str.	2::bomb 3468,7455 3320,7515
-Helene-Jacobs-Str.	2::bomb 3309,7782 3320,7982 3326,8100
-Schlangenbader Str.	2::bomb 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
-Nauheimer Str.	2::bomb 3969,7731 4067,7726 4162,7721
-Homburger Str.	2::bomb 3971,7533 4066,7514 4162,7510
-Eberbacher Str.	2::bomb 4161,7388 4064,7396 3969,7399
-Sodener Str.	2::bomb 3703,7324 3718,7576
-Rudolf-Mosse-Str.	2::bomb 3634,7601 3718,7576 3813,7560
-Franz-Cornelsen-Weg	2::bomb 3612,7335 3619,7587
-(Bad Kissingen)	2::bomb 3596,7566 3609,7842
-(Kolonieweg a. d. Forkenbeckstr.)	2::bomb 3584,8136 3756,8101 3779,8105
-Claire-Waldoff-Weg	2::bomb 3584,8136 3571,8085 3538,7515
-	2::bomb 3665,8131 3676,8394
+         'data' => '#: next_check_id: KANZLERPARK-2024
+#: by[nocache]: https://nitter.esmailelbob.xyz/VIZ_Berlin/status/1760327024214675525#m (Arbeitsfläche für einen Brückenbau)
+#: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
+#: XXX Anschauen -> falls bestätigt, sollte man das nach gesperrt-orig verschieben
+#: priority: #A
+#: osm_watch: way id="623465365" version="3"
+	2::inwork 7772,12694 7521,12581
 ',
-         'from' => 1708457810,
-         'id' => 4009,
-         'text' => 'Bombenentschärfung an der Mecklenburgischen Str.: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 21. Februar 2024 ab 9 Uhr',
+         'from' => 1708236000,
+         'id' => 4010,
+         'text' => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
          'type' => 'gesperrt',
-         'until' => 1708534800
+         'until' => 1737734400
+       },
+       {
+         'data' => '#: source_id: 4748e35a-4fa8-43f7-946d-dd4c10baccb9- (bis 01.06.2024)
+	2::inwork -16704,58891 -16495,58858
+',
+         'from' => 1687730400,
+         'id' => 4011,
+         'text' => 'Seebeck: Bauarbeiten, Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, 26.06.2023 bis 31.05.2024',
+         'type' => 'gesperrt',
+         'until' => 1717192800
        }
      
 );
