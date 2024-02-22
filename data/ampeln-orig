@@ -29,10 +29,11 @@ Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
 #: last_checked: 2024-02-18
 Michaelbrücke	F::inwork 11676,11839
 # 
+#: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-02-12 (okas)
+#: last_checked: 2024-02-18 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -50,7 +51,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 #: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024) (bis 20.02.2024) (bis 28.02.2024)
 #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
 #: note: bei VIZ entfernt, existiert aber weiterhin
-#: last_checked: 2024-02-08
+#: last_checked: 2024-02-22
 #: next_check: 2024-02-28
 #: valid: -20240228
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
@@ -140,7 +141,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-02-21
+#: last_checked: 2024-02-22
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -2636,7 +2637,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2024-02-11
+#: last_checked: 2024-02-22
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3509,7 +3510,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-22
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3517,7 +3518,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-22
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 

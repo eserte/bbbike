@@ -35,6 +35,7 @@ Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inw
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11284 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1399078.php (Bauarbeiten an der Schule: Frühjahr/Sommer 2024 bis Schuljahresbeginn 2026/2027)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/erbbaurechtsvertrag-fuer-neue-heinrich-hertz-schule-unterschrieben_a403443
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-friedrichshain-kreuzberg.58/page-7#post-22363
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -569,6 +570,13 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Niederschöneweide ###
 # 
+#: next_check_id: SCHOENEWEIDE-2018
+#: next_check_id: STERNDAMM-2023
+#: last_checked: 2024-02-18 (krickstadt) vvv
+Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441
+Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17747,5452
+#: last_checked ^^^
+# 
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
 ### Oberschöneweide ###
@@ -803,7 +811,7 @@ Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr.	q3::inwork 15747,12880 1595
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-02-14
+#: last_checked: 2024-02-22
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828

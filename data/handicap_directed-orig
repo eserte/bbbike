@@ -402,7 +402,7 @@ Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,1035
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 30.6.2022) (inaktiv) (bis 31.12.2022) (bis 31.7.2023) (bis 22.12.2023) (bis 29.02.2024)
 #: osm_watch: way id="1005683568" version="15"
 #: osm_watch: way id="1022420059" version="15"
-#: last_checked: 2024-02-17 vvv
+#: last_checked: 2024-02-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-02-29 vvv
 #: note: allerdings spart man hier eine Ampel
@@ -451,25 +451,25 @@ Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=2
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1313406.php (26. April bis 9. Juni 2023, keine Einschränkungen für Radfahrer) --- #: by: https://www.berliner-woche.de/koepenick/c-bauen/berliner-wasserbetriebe-sind-bis-anfang-juni-in-der-oberspreestrasse-am-werk_a378103 --- #: source_id: viz2021:13.564989,52.445459,27.03.2023,07:00 (bis 09.06.2023) (inaktiv) --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Oberspreestr.: Umweg wegen Bauarbeiten	DH:len=30:h=q3,50 21332,4655 21390,4637 21494,4605
 # REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1657962005427257344#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3MGk0TlgwQVl4bVBCLmpwZw== --- #: source_id: viz2021:13.473477,52.536115,15.05.2023,07:00 (bis 02.06.2023) (bis 05.06.2023) (inaktiv) --- #: source_id: viz2021:13.473455,52.536108,15.05.2023,07:00 (bis 05.06.2023) (inaktiv) --- #: last_checked: 2023-06-02 vvv --- #: next_check: 2023-06-05 vvv --- #: valid: -20230605 vvv --- Hohenschönhauser Str./Weißenseer Weg: Umweg wegen Gleisbauarbeiten	DH:len=60 14990,14537 15066,14579 15174,14638 --- Hohenschönhauser Str./Weißenseer Weg: Umweg wegen Gleisbauarbeiten	DH:len=60 14990,14537 15066,14579 14959,14752 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: source_id: viz2021:13.320363,52.478755,02.06.2023,09:00 (bis 30.06.2023) (bis 01.09.2023) (bis 15.09.2023) (inaktiv) vvv
-#: source_id: viz2021:13.320334,52.478774,02.06.2023,09:00 (bis 31.10.2023) (bis 17.11.2023) (bis 22.12.2023) (bis 30.01.2024) (bis 29.02.2024) (bis 07.03.2024) vvv
-#: source_id: viz2021:13.32033,52.47883,20.02.2024,14:44 (nur Verengung, bis 07.03.2024)
-#: by: https://nitter.cz/VIZ_Berlin/status/1671133669078052865#m
-#: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-verkehr-wilmersdorfer-kreuzung-soll-bald-wieder-befahrbar-sein-10802854.html (bis Ende November 2023?)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1418759.php (Freigabe am 22.02.2024)
-#: note: laut rbb bis 29.02.2024; mittlerweile vorzeitig entfernt; mittlerweile ebenfalls bis 17.11.2023; zwischenzeitlich 30.01.2024; nun wieder 29.02.2024
-#: XXX laut Pressemitteilung wird die Kreuzung am 24.2.2024 wiedereröffnet, aber am gleichen Tag wurde die VIZ-Verkehrsmeldung um eine weitere Woche bis zum 7.3.2024 verlängert
-#: osm_watch: note 3806215 3
-#: last_checked: 2023-07-01 vvv
-#: next_check: 2024-02-24 vvv
-#: valid: -20240224 vvv
-#: note: alternativ auf der Südseite umfahren
-Detmolder Str.: Umweg über Blissestr.	DH:len=160 4873,8007 4786,8007 4711,8013
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: source_id ^^^
+# REMOVED --- #: source_id: viz2021:13.320363,52.478755,02.06.2023,09:00 (bis 30.06.2023) (bis 01.09.2023) (bis 15.09.2023) (inaktiv) vvv
+# REMOVED --- #: source_id: viz2021:13.320334,52.478774,02.06.2023,09:00 (bis 31.10.2023) (bis 17.11.2023) (bis 22.12.2023) (bis 30.01.2024) (bis 29.02.2024) (bis 07.03.2024) (inaktiv) vvv
+# REMOVED --- #: source_id: viz2021:13.32033,52.47883,20.02.2024,14:44 (nur Verengung, bis 07.03.2024) (inaktiv)
+# REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1671133669078052865#m
+# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-verkehr-wilmersdorfer-kreuzung-soll-bald-wieder-befahrbar-sein-10802854.html (bis Ende November 2023?)
+# REMOVED --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1418759.php (Freigabe am 22.02.2024)
+# REMOVED --- #: note: laut rbb bis 29.02.2024; mittlerweile vorzeitig entfernt; mittlerweile ebenfalls bis 17.11.2023; zwischenzeitlich 30.01.2024; nun wieder 29.02.2024
+# REMOVED --- #: XXX laut Pressemitteilung wird die Kreuzung am 24.2.2024 wiedereröffnet, aber am gleichen Tag wurde die VIZ-Verkehrsmeldung um eine weitere Woche bis zum 7.3.2024 verlängert
+# REMOVED --- #: osm_watch: note 3806215 3
+# REMOVED --- #: last_checked: 2023-07-01 vvv
+# REMOVED --- #: next_check: 2024-02-24 vvv
+# REMOVED --- #: valid: -20240224 vvv
+# REMOVED --- #: note: alternativ auf der Südseite umfahren
+# REMOVED --- Detmolder Str.: Umweg über Blissestr.	DH:len=160 4873,8007 4786,8007 4711,8013
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: source_id ^^^
+# REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2024-02-10 vvv

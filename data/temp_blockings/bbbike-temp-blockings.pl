@@ -25593,7 +25593,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 128113 (inaktiv)
-#: source_id: viz2021:13.557157,52.46371,18.02.2024,21:00 (bis 22.02.2024)
+#: source_id: viz2021:13.557157,52.46371,18.02.2024,21:00 (bis 22.02.2024) (inaktiv)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.421075.php
 #: note: 2024er-Sperrung bei rbb gemeldet
 	2::inwork 20640,7122 20722,6971
@@ -36116,6 +36116,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024)
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
@@ -39765,10 +39766,10 @@ EOF
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024)
-#: source_id: bvg2021:m43#BVG340191_0
+#: source_id[expired]: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: note: laut rbb bis 08.03.2024
-#: last_checked: 2024-02-16 vvv
+#: last_checked: 2024-02-22 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-03-05 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -40974,17 +40975,17 @@ EOF
 EOF
      },
      { from  => 1697346000, # 2023-10-15 07:00
-       until => $isodate2epoch->("2024-03-01 17:00:00"), # 1702656000, # 2023-12-15 17:00
-       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 01.03.2024 17:00',
+       until => $isodate2epoch->("2024-03-14 17:00:00"), # 1702656000, # 2023-12-15 17:00
+       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 14.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BLUMBERGER-2023
-#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024)
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="10"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024)
+#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024)
 #: osm_watch: way id="9030384" version="38"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -41066,11 +41067,11 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 EOF
      },
      { from  => 1679814000, # 2023-03-26 09:00
-       until => $isodate2epoch->("2024-02-08 17:00:00"), # 1701964800, # 2023-12-07 17:00
-       text  => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 08.02.2024 17:00',
+       until => $isodate2epoch->("2024-03-08 17:00:00"), # 1701964800, # 2023-12-07 17:00
+       text  => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 08.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024) (inaktiv)
+#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024) (inaktiv) (bis 08.03.2024)
 	q3::inwork 6212,4622 6100,4495
 EOF
      },
