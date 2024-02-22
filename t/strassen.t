@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 59;
+my $basic_tests = 60;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -61,10 +61,11 @@ my $encoding_tests = 10;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
 my $global_directive_tests = 10;
+my $tied_global_directive_tests = 1;
 my $strict_and_syntax_tests = 12;
 my $get_conversion_tests = 9;
 
-plan tests => $basic_tests + $have_nowarnings + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $zebrastreifen3_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_and_syntax_tests + $get_conversion_tests;
+plan tests => $basic_tests + $have_nowarnings + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $zebrastreifen3_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $tied_global_directive_tests + $strict_and_syntax_tests + $get_conversion_tests;
 
 goto XXX if $do_xxx;
 
@@ -214,6 +215,16 @@ EOF
     my $old_global_directives = $s->get_global_directives;
     is_deeply($new_global_directives, $old_global_directives, "Copied global directives");
     is($new_global_directives, $old_global_directives, "It's really the same referenced object");
+
+ SKIP: {
+	skip "Known to fail without Tie::IxHash (unexpected ordering)", 1 if tie_ixhash_hidden;
+
+	is $new_s->global_directives_as_string, <<'EOF', 'get_global_directives -> set_global_directives keeps tied-ness';
+#: title: Testing global directives
+#: complex.key: Testing complex global directives
+#:
+EOF
+    }
 
     is($s->get_global_directive("title"), "Testing global directives");
     is($s->get_global_directive("complex.key"), "Testing complex global directives");
@@ -663,6 +674,21 @@ EOF
 
     ok !eval { Strassen::global_directives_as_string([]); 0 }, 'global_directives_as_string on non-hash is an error';
     like $@, qr/Unexpected argument to global_directives_as_string/, 'error message';
+}
+
+SKIP: {
+    skip "Known to fail without Tie::IxHash (unexpected ordering)", $tied_global_directive_tests if tie_ixhash_hidden;
+
+    my $s = Strassen->new;
+    $s->set_global_directive('first'  => '1');
+    $s->add_global_directive('second' => '2'); # add_* or set_* shouldn't make a difference
+    $s->set_global_directive('third'  => '3');
+    is $s->global_directives_as_string, <<'EOF', 'global directives are ordered (if Tie::IxHash is available)';
+#: first: 1
+#: second: 2
+#: third: 3
+#:
+EOF
 }
 
 { # Strict

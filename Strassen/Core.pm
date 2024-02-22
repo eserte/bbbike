@@ -175,10 +175,14 @@ sub new_bbd {
     }
     my $self = { Data => [],
 		 Directives => [],
-		 GlobalDirectives => {},
 		 (exists $args{Strict} ? (Strict => delete $args{Strict}) : ()),
 	       };
     bless $self, $class;
+    if (_has_tie_ixhash()) {
+	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
+    } else {
+	$self->{GlobalDirectives} = {};
+    }
 
     if (@filenames) {
       TRY: {
@@ -1648,12 +1652,10 @@ sub add_global_directive {
 }
 
 # Note that this sets only the reference; if you want a copy, then
-# use Storable::dclone before!
+# use Storable::dclone before! This also means that the "tied-ness"
+# depends on the original reference.
 sub set_global_directives {
     my($self, $global_directives) = @_;
-    if (!$self->{GlobalDirectives} && _has_tie_ixhash()) {
-	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
-    }
     $self->{GlobalDirectives} = $global_directives;
 }
 

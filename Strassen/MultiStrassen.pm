@@ -46,9 +46,10 @@ sub new {
     $self->{Pos}  = -1;
     $self->{SourcePos} = {};
     $self->{SubObj} = [];
-    $self->{GlobalDirectives} = {};
     if (Strassen::_has_tie_ixhash()) {
 	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
+    } else {
+	$self->{GlobalDirectives} = {};
     }
 
     for (@obj) {
