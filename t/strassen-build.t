@@ -49,7 +49,7 @@ if ($^O eq 'MSWin32') {
 # StrassenNetz-CNetFile.
 $Strassen::Util::cacheprefix = "b_de_strassen_build_test";
 
-my $tmpdir = tempdir('strassen-build-XXXXXXXX', CLEANUP => 1);
+my $tmpdir = tempdir('strassen-build-XXXXXXXX', CLEANUP => 1, TMPDIR => 1);
 
 my $prefix = "$tmpdir/strassen";
 
