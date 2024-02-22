@@ -270,8 +270,10 @@ sub update_file_content {
 	return;
     }
     # normalizations
+    # Mostly for forum URLs, to remove the current page/article indication from the URL.
     $url =~ s{(https://www.deutsches-architekturforum.de/thread/.*?/).*}{$1};
     $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
+    $url =~ s{(https://www.bahninfo-forum.de/read.php\?\d+,\d+,).*}{$1};
 
     my $old_content = $grep_entry->get();
     if ($old_content ne $url) {
