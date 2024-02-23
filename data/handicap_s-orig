@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-02-21
+#: last_checked: 2024-02-23
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -55,7 +55,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-02-21
+#: last_checked: 2024-02-23
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -319,7 +319,7 @@ Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 1
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-02-13
+#: last_checked: 2024-02-23
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -572,7 +572,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
-#: last_checked: 2024-02-18 (krickstadt) vvv
+#: last_checked: 2024-02-23 (bahninfo-forum) vvv
 Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441
 Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17747,5452
 #: last_checked ^^^
@@ -1863,7 +1863,7 @@ Am Bahndamm: einige Fußgänger	q1 7769,4315 7795,4242 8016,3651 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
-#: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen)
+#: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="17"
 #: last_checked: 2023-11-04
@@ -3296,7 +3296,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-23
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4673,7 +4673,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
-#: last_checked: 2024-02-13
+#: last_checked: 2024-02-23
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
@@ -4718,6 +4718,10 @@ Douglasienweg: einige Fußgänger	q1 11563,4099 11594,4107
 # 
 #: XXX_prog: BS an der Schönhauser Str., ansonsten q2
 (Schönhauser Str. - Zitherstr.): schmal, Bordstein	q3 11599,20973 11657,20915
+# 
+#: note: zurzeit der Uferweg-Umleitung explizit ausgeschildert als Gehweg, Radfahrer frei
+(Alice-Berend-Str. - Joachim-Karnatz-Allee): einige Fußgänger	q1 7362,12731 7368,12601 7368,12583
+(Weg am Moabiter Werder - Elisabeth-Abegg-Str.): schmal, einige Fußgänger	q2 7751,12870 7822,12796
 # 
 ######################### User Contributions #################################
 # 

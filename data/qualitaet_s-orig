@@ -1145,7 +1145,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-02-21
+#: last_checked: 2024-02-23
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2615,7 +2615,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): Gehwegplatten	Q1 6123,12887 6182,12900
 #: historical_note ^^^
 #: historical_note: früher: Kopfsteinpflaster mit großen Fugen, Q3+
-Elisabeth-Abegg-Str.: Asphalt	Q0 7930,12912 7858,12830 7789,12764
+Elisabeth-Abegg-Str.: Asphalt	Q0 7930,12912 7858,12830 7822,12796 7789,12764
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7858,12830 7837,12860
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7051,12426 7122,12384 7183,12372 7217,12383 7314,12419 7447,12520 7521,12581 7772,12694 7856,12746 7908,12804 7945,12878
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2- 12743,6645 12860,6667 12981,6689 13099,6712
@@ -6650,6 +6650,7 @@ Schwalbenflug: Asphalt	Q0- 20093,14591 20068,14516 20057,14471 20051,14441
 Annenstr. (Biesdorf): Asphalt	Q0 20371,14204 20467,14196
 Eugen-Roth-Weg: Asphalt	Q0 20072,13070 20068,13036 20048,12830
 Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
+#: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/strassenbelag-in-ordnung-bringen_a407286
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
 Jaczostr.: Beton	Q0 -4078,11800 -4101,11708
@@ -9997,7 +9998,8 @@ Fritz-Schloß-Park: Asphalt mit Wurzelschäden	Q1- 6988,13539 7021,13560 7056,1358
 (Ingeborg-Drewitz-Allee - Alt-Moabit): Kopfsteinpflaster	Q2 7588,12734 7623,12764
 #: note: Charlottenburger Platten
 (Ingeborg-Drewitz-Allee - Alt-Moabit): Kopfsteinpflaster, schmaler Streifen mit Gehwegplatten	Q1- 7623,12764 7776,12945
-(Weg am Moabiter Werder): Asphalt	Q0 7649,12764 7707,12813 7787,12918 7813,12961 7799,13019
+(Weg am Moabiter Werder): Asphalt	Q0 7649,12764 7707,12813 7751,12870 7787,12918 7813,12961 7799,13019
+(Weg am Moabiter Werder - Elisabeth-Abegg-Str.): Asphalt	Q0- 7751,12870 7822,12796
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Parkweg	Q1 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Metallrampe	Q3 7801,12910 7788,12907 7787,12918
 Emma-Herwegh-Str.: Verbundsteinpflaster	Q0- 7795,13168 7595,12980
@@ -29789,7 +29791,7 @@ Katharina-Paulus-Str.: Asphalt	Q0 7867,13106 7872,13022 7873,12927
 Flemingstr.: Verbundsteine	Q1 7317,12751 7322,12735
 #: corrected_by: srt (Asphalt -> ...)
 Joachim-Karnatz-Allee: Kleinsteinpflaster	Q1 7077,12575 7139,12589
-Joachim-Karnatz-Allee: Asphalt	Q0 7139,12589 7144,12580 7419,12584 7418,12601 7184,12602 7139,12589
+Joachim-Karnatz-Allee: Asphalt	Q0 7139,12589 7144,12580 7368,12583 7419,12584 7418,12601 7368,12601 7184,12602 7139,12589
 Joachim-Karnatz-Allee: Asphalt	Q0 7419,12584 7435,12584
 Joachim-Karnatz-Allee: Asphalt	Q0 7139,12589 7131,12615
 Joachim-Karnatz-Allee: Asphalt	Q0 7175,12630 7184,12602
@@ -29807,6 +29809,8 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7542,12736 7541,12754
 #: confirmed_by: srt
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7418,12601 7377,12729
+#: by: srt
+(Alice-Berend-Str. - Joachim-Karnatz-Allee): Gehwegplatten	Q0- 7362,12731 7368,12601 7368,12583
 (Joachim-Karnatz-Allee - Spreeuferweg): Parkweg	Q1 7435,12584 7447,12520
 Spreeuferweg am Hauptbahnhof: Kopfsteinpflaster	Q2 7945,12878 7966,12913
 #: note: etwas grobe Pflasterung:

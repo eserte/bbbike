@@ -3050,17 +3050,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/ (2017-2018)
-#: source_id: viz2021:13.45095,52.598151,19.02.2024,07:00 (bis 23.02.2024)
-	2::inwork 13415,21442 13371,21462
-',
-         'from' => 1708236000,
-         'id' => 2879,
-         'text' => 'Rhönstraße: Brücke gesperrt, auch für den Rad- und Fußverkehr, vom 19.02.2024 07:00 bis 23.02.2024 17:00 ',
-         'type' => 'gesperrt',
-         'until' => 1708704000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6435,8 +6425,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll?
 #: priority: #A vvv
-#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? vvv
-#: last_checked: 2024-02-15 vvv
+#: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
+#: last_checked: 2024-02-23 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6767,7 +6757,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q3::inwork 17056,12304 17088,12506
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,15:00 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024) (inaktiv)
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,14:30 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024)
 #: osm_watch: way id="4446505" version="34"
-#: osm_watch: way id="176621906" version="26"
+#: osm_watch: way id="176621906" version="27"
 #: osm_watch: way id="4525429" version="22"
 #: osm_watch: way id="1212493766" version="4"
 #: osm_watch: note 3916787 2
@@ -6987,16 +6977,19 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://nitter.esmailelbob.xyz/VIZ_Berlin/status/1760327024214675525#m (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
-#: XXX Anschauen -> falls bestätigt, sollte man das nach gesperrt-orig verschieben
-#: priority: #A
 #: osm_watch: way id="623465365" version="3"
+#: note: ein Eintrag in gesperrt-orig existiert ebenfalls
+#: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
+#: priority: #A
+#: last_checked: 2024-02-23
+#: next_check: 2025-01-24
 	2::inwork 7772,12694 7521,12581
 ',
          'from' => 1708236000,
          'id' => 4010,
-         'text' => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
+         'text' => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Januar 2025, vielleicht auch länger',
          'type' => 'gesperrt',
-         'until' => 1737734400
+         'until' => undef
        },
        {
          'data' => '#: source_id: 4748e35a-4fa8-43f7-946d-dd4c10baccb9- (bis 01.06.2024)
@@ -7007,6 +7000,17 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Seebeck: Bauarbeiten, Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, 26.06.2023 bis 31.05.2024',
          'type' => 'gesperrt',
          'until' => 1717192800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.333083,52.492616,22.02.2024,07:00 (bis 03.05.2024)
+#: by[nocache]: https://twitter.com/Aintschie/status/1760940196479062140
+	q4::inwork 5618,9607 5627,9362
+',
+         'from' => 1708495200,
+         'id' => 4012,
+         'text' => 'Prinzregentenstr.: Bauarbeiten zwischen Prager Platz und Güntzelstr., Sperrung der Fahrbahn, angeblich sind auch Radfahrer betroffen, vom 22.02.2024 07:00 bis 03.05.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1714748400
        }
      
 );

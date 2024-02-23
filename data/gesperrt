@@ -834,8 +834,8 @@ Gravensteinstr.	1s 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
 Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
-Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
-Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
+Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7368,12601 7418,12601
+Joachim-Karnatz-Allee	1 7419,12584 7368,12583 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darßer Str.)	1 16785,17524 16825,17537 16848,17530 16938,17500
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
@@ -3421,6 +3421,8 @@ weites Drängelgitter	BNP:2:-114:trailer=7 -48996,85026
 Drängelgitter	BNP:3:-236:trailer=10 -53609,82816
 Drängelgitter	BNP:3:-15:trailer=10 3789,18863
 Drängelgitter	BNP:3:-108:trailer=10 21494,10816
+Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581
+(Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11865,13027 11874,13048 11896,13075
 Weg entlang der A100: offiziell noch gesperrt	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
 Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
 Weg entlang der A100: gesperrt, Durchfahrt zumindest an der Sonnenallee wegen Bauzaun nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
@@ -3522,7 +3524,6 @@ keine Überquerungsmöglichkeit	3nocross::ignrte::inwork 17695,5394 17736,5441 177
 Sterndamm -> Ecksteinweg: keine Überquerungsmöglichkeit	3::igndisp::inwork 17747,5452 17736,5441 17762,5408
 Ecksteinweg -> Sterndamm: keine Überquerungsmöglichkeit	3::igndisp::inwork 17762,5408 17736,5441 17695,5394
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
-Taubenstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9207,11880 9138,11872
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9138,11872 9171,11777
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409

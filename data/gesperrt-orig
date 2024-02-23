@@ -418,7 +418,7 @@ Im Amseltal	1 1960,25229 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 # 
-#: by: https://www.infravelo.de/projekt/y-trasse/ (Planfeststellung: 2. Quartal 2026) (Planfeststellung: 2. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/y-trasse/ (Planfeststellung: 2. Quartal 2026) (Planfeststellung: 2. Quartal 2027) (Baustart: 3. Quartal 2029)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf (Inbetriebnahme möglich?)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ergebnisbericht-zur-radschnellverbindung-zwischen-kreuzberg-neukoelln-und-adlershof-liegt-vor_a288769 (nur allgemein zur Y-Trasse)
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/neukoellner-verordnete-fordern-vorfahrt-fuer-radler-auf-der-krokusstrasse-und-linksabbiegespur-auf-der-massantebruecke_a300891
@@ -1344,8 +1344,8 @@ Gravensteinstr.	1s:q3 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s:q3 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
 Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
-Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
-Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
+Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7368,12601 7418,12601
+Joachim-Karnatz-Allee	1 7419,12584 7368,12583 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darßer Str.)	1 16785,17524 16825,17537 16848,17530 16938,17500
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
@@ -3708,6 +3708,18 @@ Drängelgitter	BNP:3::trailer=10 21494,10816
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: KANZLERPARK-2024
+#: note: ein längerer temp_blockings-Eintrag existiert ebenfalls
+#: last_checked: 2024-02-23
+#: check_frequency: 180d
+#: next_check: 2025-01-24
+#: valid: -20250124
+Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581
+# 
+#: priority: #C
+#: last_checked: 2024-02-21
+(Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11865,13027 11874,13048 11896,13075
+# 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: last_checked: 2024-02-22 vvv
@@ -3964,7 +3976,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
-#: last_checked: 2024-02-18 vvv
+#: last_checked: 2024-02-23 vvv
 #: check_frequency: 180d vvv
 #: XXX laut osm gesperrt vvv
 #: osm_watch: way id="256450718" version="7"
@@ -4381,9 +4393,10 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 --- #: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?) --- #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)--- #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden--- #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr --- #: osm_watch: way id="25008069" version="15" --- #: last_checked: 2022-03-31 --- #: check_frequency: 90d --- # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 --- Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545 --- #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung) --- #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht --- #: osm_watch: way id="308312347" version="6" --- #: last_checked: 2022-11-30 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-08-15 --- Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 # 
-#: XXX Wird es nach den Bauarbeiten weiterhin eine Verbindung geben? (Auf den Visualisierung ist es nicht ausgeschlossen...)
+#: XXX Wird es nach den Bauarbeiten weiterhin eine Verbindung geben? (Auf den Visualisierungen ist es nicht ausgeschlossen...)
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=746476#post746476
 #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/lueckstrasse.html (Fertigstellung Ende 2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Bebauungsplan XVII-19b)
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
@@ -4645,7 +4658,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="21"
 #: priority: #A
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-23
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.	1::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4716,7 +4729,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-23
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -4751,7 +4764,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-23
 #: check_frequency: 30d
 #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4884,7 +4897,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/bvg-baut-bis-herbst-in-berlin-schoeneweide-warum-muss-das-so-lange-dauern-li.2186715 (Verkehrslösung Schöneweide geht voraussichtlich im Sommer 2024 in Betrieb)
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Inbetriebnahme im Sommer 2024, Verkerswegebau bis 3. Quartal 2024)
-#: last_checked: 2024-02-18 (krickstadt) vvv
+#: last_checked: 2024-02-23 (bahninfo-forum) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-07-15 vvv
 #: osm_watch: way id="1085382250" version="3"
@@ -4934,20 +4947,10 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 # REMOVED --- #: valid ^^^
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^
 # REMOVED --- #: last_checked ^^^ --- #: priority ^^^
-# 
-#: next_check_id: TAUBEN-2019
-#: by: mapillary
-#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634292&postcount=247
-#: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
-#: confirmed_by: srt
-#: XXX wann sind die Bauarbeiten fertig?
-#: osm_watch: way id="753316506" version="4"
-#: last_checked: 2023-12-29
-#: check_frequency: 60d
-Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
+# REMOVED (offen) --- #: next_check_id: TAUBEN-2019 --- #: by: mapillary --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634292&postcount=247 --- #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum) --- #: confirmed_by: srt --- #: XXX wann sind die Bauarbeiten fertig?--- #: osm_watch: way id="753316506" version="4" --- #: last_checked: 2023-12-29 --- #: check_frequency: 60d --- Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollständig aktiv; am 2023-02-10 war das Einbahnstraßenschild verschwunden, das Einfahrt-verboten-Schild aber noch da, am 2023-06-15 wieder weggedreht, am 2023-09-28 wieder da, möglicherweise bis Ende 2023? Mittlerweile Halteverbotsschilder bis 2024-03-31
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-23
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2024-03-31
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
@@ -5209,7 +5212,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="35"
 #: also_indoor: traffic
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-23
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
@@ -5525,7 +5528,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesministerium-des-innern.562/#post-22257
 #: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2024-02-03 (architektur-urbanistik)
+#: last_checked: 2024-02-23
 #: check_frequency: 180d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

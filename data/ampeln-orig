@@ -128,7 +128,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2024-01-25
+#: last_checked: 2024-02-23
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 #: valid: -20240701
@@ -290,12 +290,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8333,19305
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019
 # REMOVED (keine Baustellenampel mehr) --- #: next_check_id: TRESKOWALLEE-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8851 (2. Halbjahr 2022) --- #: by: https://www.bahninfo-forum.de/read.php?9,721782,727530#msg-727530 (Gleisarbeiten 01.08-10.12.2022) --- #: by: https://www.bahninfo-forum.de/read.php?9,727655,737635#msg-737635 (Baubeginn 1.8.2022, Inbetriebnahme zum Jahresende 2022) --- #: XXX Ampel wird wohl permanent gemacht --- #: last_checked: 2023-01-10 ---	X::inwork 18406,7760
 # REMOVED --- #: next_check_id: FRANZOESISCHE-2018 --- #: next_check: 2023-02-28 vvv --- #: check_frequency: 90d vvv --- # REMOVED --- #: valid: -20230228 vvv --- # REMOVED (abgebaut) --- #: last_checked: 2022-09-30 --- #: osm_watch: node id="6380038401" version="1"---	X::inwork 9195,11972 --- #: note: Ampel befindet sich westlich der Kreuzung --- #: last_checked: 2022-12-27 ---	F::inwork 9076,12054 --- # REMOVED --- #: valid ^^^ --- #: check_frequency ^^^ --- #: next_check ^^^
-# 
-#: next_check_id: TAUBEN-2019
-#: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2024-02-04
-#: check_frequency: 60d
-	F::inwork 9207,11880
+# REMOVED (abgeschaltet, vermutlich dauerhaft) --- #: next_check_id: TAUBEN-2019 --- #: note: Ampel ist eigentlich 20m weiter südlich gelegen --- #: last_checked: 2024-02-04 --- #: check_frequency: 60d ---	F::inwork 9207,11880
 # 
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
