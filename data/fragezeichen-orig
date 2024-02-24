@@ -188,7 +188,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="4323788" version="25"
 #: osm_watch: way id="23109081" version="21"
 #: osm_watch: way id="41108858" version="18"
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-24
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-11
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
@@ -2350,7 +2350,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-vollendung-band-des-bundes-in-entwicklung/?postID=739447#post739447 (Erwähnung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/luisenblock-ost.34/page-2#post-22369 (Tiefbauarbeiten im Schiffbauerdamm 2025/2026)
-#: last_checked: 2024-01-18 (mapillary)
+#: last_checked: 2024-02-24
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::projected 8870,12647 8754,12622
@@ -5456,7 +5456,7 @@ Sickingenstr./Rostocker Str.: Zebrastreifen geplant	?::projected 5131,14046 5089
 #: XXX angeordnet, aber noch keine Mittelzusage, weitere Mittelzusagen evtl. im Sommer 2022 vvv
 #: priority: #D
 #: check_frequency: 120d vvv
-#: last_checked: 2024-01-31
+#: last_checked: 2024-02-24
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 #: next_check_id: FRIEDENKOPPEN-2023
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (2023)
@@ -7324,11 +7324,15 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: by: https://mein.berlin.de/projekte/stadteingang-west/
 #: by: https://www.berlin.de/sen/stadtentwicklung/staedtebau/stadteingang-west/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8742 (Antrag)
-#: next_check: 2024-03-01 vvv
+#: last_checked: 2024-02-24 vvv
+#: check_frequency: 360d vvv
+# REMOVED --- #: next_check: 2024-03-01 vvv
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348 1723,10289 1725,10242 1742,10220
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1723,10289 1847,10323 1882,10356 1870,10406 1833,10427 1793,10424 1692,10348
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1870,10406 1939,10446
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Umsetzung voraussichtlich 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (Überarbeitung der Planung)
@@ -8070,7 +8074,7 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 #: note: laut Mobilitätsrat Mitte wird die Maßnahme 2024 umgesetzt (siehe osm note)
 #: osm_watch: way id="4376904" version="23"
 #: osm_watch: note 3769887 7
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-03-01
 Helgoländer Ufer	? 6686,12768 6758,12681 6775,12661
@@ -8296,6 +8300,7 @@ Kuhfortdamm: Bauarbeiten für eine Verbreiterung der Fahrbahn, später gibt es hie
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1418140.php (bis Mai 2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1416161.php
+#: by: https://www.berliner-woche.de/mitte/c-bauen/mehr-gruen-statt-asphalt_a408239
 #: osm_watch: way id="4618777" version="20"
 #: osm_watch: way id="754567008" version="7"
 #: last_checked: 2024-01-28
@@ -8886,7 +8891,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 # REMOVED --- #: XXX: am Wartenberger Weg habe ich ein Straßenschild "An der Margaretenhöhe" gesehen --- kann das sein? --- Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
 # REMOVED (Schild steht) --- Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
 #: XXX beim ersten Vorschlag war der Name noch offen
-#: last_checked: 2023-08-28
+#: last_checked: 2024-02-11 (mapillary)
 #: check_frequency: 180d
 Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,20587 18061,20715 18083,20782 18026,20847 17946,20889 17475,20851 17287,20837 17080,21288 17073,21329
 # REMOVED --- Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17287,20837
@@ -9309,7 +9314,7 @@ ehemaliger Kiesumschlagplatz am Napoleonkai: Renaturierung des Geländes, geplant
 #: by: https://berliner-abendblatt.de/2022/02/11/westkreuzpark-linke/
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/plaene-fuer-westkreuzpark-gescheitert_a336131
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8358 (Anfrage)
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-24
 #: check_frequency: 720d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -10106,7 +10111,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 2
 #: XXX am Wilhelmine-Gemberg-Weg gibt es bereits Fortschritte
-#: last_checked: 2024-02-12 (osm note)
+#: last_checked: 2024-02-24
 #: check_frequency: 90d
 Uferweg geplant (erst einmal als Provisorium)	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 

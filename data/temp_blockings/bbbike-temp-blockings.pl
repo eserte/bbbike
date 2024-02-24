@@ -16381,7 +16381,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-24
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -37009,8 +37009,9 @@ EOF
        data  => <<EOF,
 #: url: https://nowkoelln.de/#wann
 #: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
-#: XXX: Die Flohmarktsaison 2024 startet am 24. März 2024. Check before!
-#: next_check: 2024-03-01
+#: note: Die Flohmarktsaison 2024 startet am 24. März 2024 (Anmeldung ab 12.03.2024)
+#: XXX Wann ist Saisonende?
+#: next_check: 2024-11-01
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -38369,7 +38370,7 @@ EOF
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2023-10-28
+#: last_checked: 2024-01-27
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
@@ -39847,7 +39848,7 @@ EOF
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-24
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -41429,7 +41430,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html (Erwähnung der Sperrung bis Mitte Oktober 2024)
-	2::inwork -11494,-1014 -11407,-1086 -11084,-1396 -11090,-1506
+# REMOVED (hier nicht) ---	2::inwork -11486,-1008 -11454,-1036
+	2::inwork -11454,-1036 -11407,-1086 -11084,-1396 -11090,-1506
 EOF
      },
      { from  => 1699776000, # 2023-11-12 09:00
@@ -42015,8 +42017,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
-#: by[nocache]: https://nitter.esmailelbob.xyz/VIZ_Berlin/status/1760327024214675525#m (Arbeitsfläche für einen Brückenbau)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
+#: osm_watch: note 4125418 3
 #: osm_watch: way id="623465365" version="3"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
@@ -42043,6 +42046,15 @@ EOF
 #: source_id: viz2021:13.333083,52.492616,22.02.2024,07:00 (bis 03.05.2024)
 #: by[nocache]: https://twitter.com/Aintschie/status/1760940196479062140
 	q4::inwork 5618,9607 5627,9362
+EOF
+     },
+     { from  => 1708815600, # 2024-02-25 00:00
+       until => 1711922399, # 2024-03-31 23:59
+       text  => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis Ende März 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/umleitung-wegen-neuer-fahrbahn_a408749
+	q4::inwork; -3153,14868 -3360,14974 -3258,15100 -3241,15118 -3216,15155
 EOF
      },
     );

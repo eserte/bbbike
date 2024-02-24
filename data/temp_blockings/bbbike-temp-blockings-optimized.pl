@@ -1480,7 +1480,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-24
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -4993,8 +4993,9 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
        {
          'data' => '#: url: https://nowkoelln.de/#wann
 #: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
-#: XXX: Die Flohmarktsaison 2024 startet am 24. März 2024. Check before!
-#: next_check: 2024-03-01
+#: note: Die Flohmarktsaison 2024 startet am 24. März 2024 (Anmeldung ab 12.03.2024)
+#: XXX Wann ist Saisonende?
+#: next_check: 2024-11-01
 	q4::temp:clock 12412,9610 12250,9691
 ',
          'from' => 1711062000,
@@ -5492,7 +5493,7 @@ Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2023-10-28
+#: last_checked: 2024-01-27
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
@@ -5983,7 +5984,7 @@ Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
-#: last_checked: 2024-02-18
+#: last_checked: 2024-02-24
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -6600,7 +6601,8 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        },
        {
          'data' => '#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html (Erwähnung der Sperrung bis Mitte Oktober 2024)
-	2::inwork -11494,-1014 -11407,-1086 -11084,-1396 -11090,-1506
+# REMOVED (hier nicht) ---	2::inwork -11486,-1008 -11454,-1036
+	2::inwork -11454,-1036 -11407,-1086 -11084,-1396 -11090,-1506
 ',
          'from' => 1700504750,
          'id' => 3969,
@@ -6975,8 +6977,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        undef,
        {
          'data' => '#: next_check_id: KANZLERPARK-2024
-#: by[nocache]: https://nitter.esmailelbob.xyz/VIZ_Berlin/status/1760327024214675525#m (Arbeitsfläche für einen Brückenbau)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
+#: osm_watch: note 4125418 3
 #: osm_watch: way id="623465365" version="3"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
@@ -7011,6 +7014,16 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Prinzregentenstr.: Bauarbeiten zwischen Prager Platz und Güntzelstr., Sperrung der Fahrbahn, angeblich sind auch Radfahrer betroffen, vom 22.02.2024 07:00 bis 03.05.2024 17:00',
          'type' => 'handicap',
          'until' => 1714748400
+       },
+       {
+         'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/umleitung-wegen-neuer-fahrbahn_a408749
+	q4::inwork; -3153,14868 -3360,14974 -3258,15100 -3241,15118 -3216,15155
+',
+         'from' => 1708815600,
+         'id' => 4013,
+         'text' => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis Ende März 2024',
+         'type' => 'handicap',
+         'until' => 1711922399
        }
      
 );
