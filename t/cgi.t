@@ -412,7 +412,7 @@ for my $cgiurl (@urls) {
 	skip "No hash, no further checks", 2 if !$route;
 	ok $route->{Len} > 30000 && $route->{Len} < 35000, "check route length"
 	    or diag "Route length: $route->{Len}";
-	ok((grep { $_->{Strname} =~ /Park Babelbsberg/ } @{ $route->{Route} }),
+	ok((grep { $_->{Strname} =~ /Park Babelsberg/ } @{ $route->{Route} }),
 	   "Route through Park Babelsberg")
 	    or diag "Route not through Park Babelsberg: " . Dumper($route->{Route});
     }
