@@ -621,7 +621,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2024-02-13
+#: last_checked: 2024-02-25
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -1111,7 +1111,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="21"
-#: last_checked: 2023-11-07
+#: last_checked: 2024-02-25
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-12-31
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -1145,7 +1145,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-02-23
+#: last_checked: 2024-02-25
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6489,7 +6489,8 @@ Kongostr.: Kopfsteinpflaster	Q2 6447,16321 6349,16213 6258,16111
 Kongostr.: Beton	Q0 6244,16096 6202,16041 6119,15965
 Sambesistr.: Beton	Q0- 5968,15914 5787,15741
 Ugandastr.: Beton	Q0- 6071,15768 5906,15623
-Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6716,15310 6736,15328 6749,15339
+Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6716,15310
+Limburger Str.: Asphalt	Q0 6716,15310 6736,15328 6749,15339
 Limburger Str.: Asphalt	Q0 6749,15339 6815,15398 6835,15412 6869,15441 6884,15456
 Limburger Str.: Kopfsteinpflaster	Q2 6884,15456 6950,15514 7012,15571
 Elise-und-Otto-Hampel-Weg: Gehwegplatten	Q0- 7012,15571 7129,15686 7115,15702 7129,15717
@@ -16964,6 +16965,7 @@ Friedrich-List-Str.: Asphalt	Q0 17391,5650 17337,5574
 #: by: ^^^
 # 
 #: by: Dirk (gesch):
+#: confirmed_by: srt
 Kolberger Str.: Kopfsteinpflaster	Q2 8315,15293 8518,15506
 # 
 #: by: Kai Lehmann:
@@ -30286,7 +30288,8 @@ Am Omnibushof: Asphalt	Q0 -4647,12269 -4627,12243 -4412,12179
 (Mauerweg Spandau): wassergebundene Decke	Q1 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 (Mauerweg Spandau): Asphalt	Q0- -6612,11796 -6930,12027 -6991,12080 -7182,12137 -7261,12299 -7342,12349 -7351,12547 -7294,12560 -7317,12618 -7344,12795 -7344,12854
 #: corrected_by ^^^
-Milastr.: Asphalt mit Löchern	Q1+ 10917,15525 10768,15534
+#: corrected_by: srt (Asphalt mit Löchern, Q1+ -> ..., vielleicht neu gemacht?)
+Milastr.: Asphalt	Q0 10917,15525 10768,15534
 #: corrected_by: srt (Asphalt mit Schäden, Q1 -> Asphalt, neu gemacht)
 Zolastr.: Asphalt	Q0 10898,13632 10872,13570
 Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10339,13052 10185,12982 10117,12973
@@ -32934,4 +32937,7 @@ Kreuzungsbereich asphaltiert	Q0 4134,3825
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 4307,3959
 Kreuzungsbereich mit Kopfsteinpflaster	Q1- 4385,4032
 Kreuzungsbereich asphaltiert	Q0 3287,11846
+Einmündungsbereich asphaltiert	Q0 6716,15310
+Einmündungsbereich mit Kopfsteinpflaster	Q2 6950,15514
+Einmündungsbereich asphaltiert	Q0 8518,15506
 #: ignore ^^^

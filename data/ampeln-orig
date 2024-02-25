@@ -3679,12 +3679,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1721436001623535938#m (Neubau einer Ampel)
 #: source_id: viz2021:13.37326,52.53807,06.11.2023,09:00 (bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024) (inaktiv)
-#: XXX erst einmal provisorisch
+#: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2024-02-04
-#: check_frequency: 90d
-#: next_check: 2024-02-15
+#: last_checked: 2024-02-25
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 

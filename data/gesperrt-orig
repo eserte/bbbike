@@ -3709,6 +3709,20 @@ Drängelgitter	BNP:3::trailer=10 21494,10816
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX Nordufer (Wedding) in beiden Richtungen zwischen Eckernförder Platz und Föhrer Straße: wegen Baustelle gesperrt, vom 24.02.2024 00:00 bis 29.12.2028 23:59
+#: XXX Nordufer/Sylter Straße (Wedding) in beiden Richtungen zwischen Föhrer Straße und Westring: Baustelleneinrichtung, Vollsperrung für Kfz- und Rad- und Fußverkehr, vom 23.02.2024 07:00 bis 31.12.2028 17:00
+#: source_id: viz2021:13.33994,52.53982,24.02.2024,00:00 (bis 29.12.2028)
+#: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
+#: also_indoor: traffic (G,W)
+#: osm_watch: way id="1106303945" version="5"
+#: osm_watch: way id="176338611" version="18"
+#: last_checked: 2024-02-25
+#: check_frequency: 120d
+#: next_check: 2028-12-31
+# REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5972,14820 5848,14977
+Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
+# 
 #: by: https://www.potsdam.de/de/stadtbad-park-babelsberg-baustart-im-september (bis Frühjahr 2025)
 #: last_checked: 2024-02-24
 #: next_check: 2025-05-15
@@ -3964,7 +3978,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: osm_watch: way id="4596985" version="23"
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-25
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Einbahnstraßenregelung im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4308,7 +4322,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 1768
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2024-02-04
+#: last_checked: 2024-02-25
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4508,7 +4522,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556
 # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6"
 # REMOVED (wurde für etwas anderes wiederverwendet) --- #: osm_watch: way id="1095306828" version="7"
 #: also_indoor: traffic (G)
-#: last_checked: 2024-01-03
+#: last_checked: 2024-02-25
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4770,7 +4784,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-02-23
+#: last_checked: 2024-02-25
 #: check_frequency: 30d
 #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171

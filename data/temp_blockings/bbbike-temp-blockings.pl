@@ -28155,7 +28155,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php (2018-2019)
 #: source_id: viz2021:13.545136,52.421827,06.11.2023,07:00 (bis 24.11.2023) (inaktiv)
-#: source_id: viz2021:13.544283,52.420664,20.02.2024,07:00 (bis 25.02.2024)
+#: source_id: viz2021:13.544283,52.420664,20.02.2024,07:00 (bis 25.02.2024) (inaktiv)
 # REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
 EOF
@@ -32476,15 +32476,23 @@ EOF
 	2::inwork 9707,12974 9557,12992
 EOF
      },
-     { from  => 1606024800, # 2020-11-22 07:00
-       until => $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
-       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
+     { from  => $isodate2epoch->("2024-02-23 00:00:00"), # 1606024800, # 2020-11-22 07:00
+       until => $isodate2epoch->("2024-03-01 17:00:00"), # $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
+       #text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
+       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn Richtung Norden gesperrt, Richtung Süden sind Einschränkungen möglich, vom 23.02.2024 10:30 bis 01.03.2024 17:00',
        type  => 'handicap',
-       source_id => '2147346633',
        data  => <<EOF,
-#: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266
-#: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900
-	q4::inwork 10313,13227 10264,13097
+#: source_id: 2147346633 (inaktiv)
+#: source_id: viz2021:13.402816,52.524238,23.02.2024,10:30 (bis 1.3.2024)
+#: source_id: bvg2021:n42#BVG343446_0
+#: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
+#: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
+#: last_checked: 2024-02-25 vvv
+#: next_check: 2024-03-031 vvv
+	q4::inwork; 10264,13097 10313,13227
+	q3::inwork; 10313,13227 10264,13097
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -38499,6 +38507,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: allerdings gibt es vor Ort keine Schilder mit den Öffnungszeiten wie an der Föhrer Str.
+#: note: geschlossen, gesehen: 2024-02-25 (Sun) 12:10
 	2::temp 6331,15408 6348,15423
 EOF
      },
@@ -39617,7 +39626,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024)
-#: last_checked: 2024-02-21
+#: last_checked: 2024-02-25
 #: next_check: 2024-02-29
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40531,7 +40540,7 @@ EOF
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
-#: last_checked: 2024-02-12 (okas) vvv
+#: last_checked: 2024-02-21 (bahninfo-forum) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -40902,10 +40911,16 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="40"
-#: last_checked: 2024-01-25 (osm)
-#: check_frequency: 120d
-#: next_check: 2024-09-18
-	q2::inwork 6334,14756 6513,14725 6596,14740 6709,14782
+#: last_checked: 2024-02-25 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2024-09-18 vvv
+	q2::inwork; 6334,14756 6513,14725 6596,14740 6709,14782
+#: note: Richtung Westen mit ~100m Umweg an der Buchstr., hier nur Gehweg
+	q3::inwork; 6709,14782 6596,14740 6513,14725
+	q2::inwork; 6513,14725 6334,14756
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1696744800, # 2023-10-08 08:00
@@ -41835,14 +41850,19 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): mögliche Sperrung wegen Bauarbeiten',
+       text  => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
+#: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
-#: add_fragezeichen: Ist der Weg entlang des Bahndamms gesperrt?
+#: osm_watch: way id="1149641619" version="3"
+#: osm_watch: way id="1149640630" version="3"
+#: osm_watch: way id="1244101968" version="3"
+#: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: last_checked: 2024-02-04 (bahninfo-forum)
-	2::inwork 9586,17665 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
+	2::inwork 9586,17665 9396,17863
+# REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
      },
      { from  => undef, # 
@@ -41854,7 +41874,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-02-15
+#: last_checked: 2024-02-25
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -42019,7 +42039,7 @@ EOF
 #: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
-#: osm_watch: note 4125418 3
+#: osm_watch: note 4125418 4
 #: osm_watch: way id="623465365" version="3"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
@@ -42049,11 +42069,13 @@ EOF
 EOF
      },
      { from  => 1708815600, # 2024-02-25 00:00
-       until => 1711922399, # 2024-03-31 23:59
-       text  => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis Ende März 2024',
+       until => $isodate2epoch->("2024-03-28 17:00:00"), # 1711922399, # 2024-03-31 23:59
+       text  => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis 28.3.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/umleitung-wegen-neuer-fahrbahn_a408749
+#: source_id: bvg2021:m45#BVG343134_0
+#: source_id: viz2021:13.205594,52.543427,26.02.2024,07:00 (bis 28.03.2024)
 	q4::inwork; -3153,14868 -3360,14974 -3258,15100 -3241,15118 -3216,15155
 EOF
      },
