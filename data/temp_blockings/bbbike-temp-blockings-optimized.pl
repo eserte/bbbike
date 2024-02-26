@@ -3330,7 +3330,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch: note 3658253 6
-#: last_checked: 2024-01-09
+#: last_checked: 2024-02-26
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-01-09
@@ -3950,6 +3950,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: bvg2021:n42#BVG343446_0
 #: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
+#: note: laut rbb bis 22.03.2024
 #: last_checked: 2024-02-25 vvv
 #: next_check: 2024-03-031 vvv
 	q4::inwork; 10264,13097 10313,13227
@@ -4956,7 +4957,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-02-14
+#: last_checked: 2024-02-26
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5759,7 +5760,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: note: Am Alten Lokschuppen: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-02-14
+#: last_checked: 2024-02-26
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
@@ -6572,13 +6573,14 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: by: wosch & osm & mapillary
+#: by: https://www.rbb24.de/panorama/beitrag/2024/02/berlin-gehwegschaeden-bezirke-sanierungen-rollstuhl.html (geplante Fertigstellung: 8.3.2024)
 #: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
 #: note: allerdings können manchmal die Barrieren so offen sein, dass Radfahrer durchkommen (kann außerhalb der Arbeitszeiten passieren, aber nicht immer)
 #: osm_watch: way id="1151064395" version="6"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2024-02-06 (mapillary)
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-01-31
+#: next_check: 2024-03-08
 	q4::inwork 9533,12925 9375,12911
 ',
          'from' => undef,
@@ -6591,27 +6593,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.452251,52.492574,13.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.45427,52.4939,14.11.2023,13:59 (hier nur Kfz-Verkehr, bis 30.01.2024) (inaktiv)
-#: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (bis 08.03.2024)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
-#: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben
-#: XXX Das Ende der Bauarbeiten zum 31.1.2024 ist unwahrscheinlich (noch tiefe Gruben + Winterwetter).
-#: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-02-16
-#: check_frequency: 30d
-#: next_check: 2024-03-08
-	q2::inwork 13860,9861 13704,9691
-# REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
-',
-         'from' => 1700499546,
-         'id' => 3968,
-         'text' => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn auf etwa 40-50m Länge, bis 08.03.2024',
-         'type' => 'handicap',
-         'until' => 1709913600
-       },
+       undef,
        {
          'data' => '#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html (Erwähnung der Sperrung bis Mitte Oktober 2024)
 # REMOVED (hier nicht) ---	2::inwork -11486,-1008 -11454,-1036
@@ -7035,6 +7017,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/umleitung-wegen-neuer-fahrbahn_a408749
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1420819.php
 #: source_id: bvg2021:m45#BVG343134_0
 #: source_id: viz2021:13.205594,52.543427,26.02.2024,07:00 (bis 28.03.2024)
 	q4::inwork; -3153,14868 -3360,14974 -3258,15100 -3241,15118 -3216,15155

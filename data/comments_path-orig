@@ -115,7 +115,7 @@ Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4769,8563 4772,8513 4954,8454
 # REMOVED (Richtungsfahrbahnen!) --- #: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;". --- #: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt, --- #: XXX_prog deshalb wieder zu "PI;" geändert. --- #: XXX_prog Die verlorene Zeit entspricht etwa 150m bei 15 km/h --- #: XXX_prog evtl. lohnt hier der Einsatz von routing_helper? Auf einer Straßenseite in beiden Richtungen würde reichen. Allerdings bräuchte man eine Routinganweisung "U-Turn", die es noch nicht gibt. --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5433,8407 5598,8267 --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5598,8267 5438,8402 5433,8407 5320,8456 --- Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5399,8344 5433,8407 5320,8456 --- #: XXX_prog: falls obiges implementiert mit routing_helper wird, braucht man hier vielleicht nichts zu machen --- oder doch, je nach Labelling? --- Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5598,8267 5433,8407 5399,8344
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5520,10453 5568,10535 5627,10637
-Nordufer: bereits an der Ampel Föhrer Str. auf den linken Zweirichtungsradweg wechseln	PI; 6334,14756 6213,14777 5972,14820 5873,14847
+Nordufer: bereits an der Ampel Föhrer Str. auf den linken Zweirichtungsradweg wechseln	PI; 6334,14756 6213,14777 5984,14819 5873,14847
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: note: vor den Bauarbeiten: unbequemes Überqueren, aber (mittlerweile?) möglich; 
@@ -622,7 +622,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2024-02-10 vvv
+#: last_checked: 2024-02-26 vvv
 #: note: früher: ausgeschildert "zur Salzmannstraße Huronseestraße"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: note: früher: ausgeschildert "zur Sewanstraße"
