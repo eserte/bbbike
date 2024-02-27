@@ -48,13 +48,13 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: valid: -20250423
 Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 # 
-#: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024) (bis 20.02.2024) (bis 28.02.2024)
-#: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
-#: note: bei VIZ entfernt, existiert aber weiterhin
-#: last_checked: 2024-02-22
-#: next_check: 2024-02-28
-#: valid: -20240228
-Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
+# REMOVED --- #: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024) (bis 20.02.2024) (bis 28.02.2024) (inaktiv)
+# REMOVED --- #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
+# REMOVED --- #: note: bei VIZ entfernt, existiert aber weiterhin
+# REMOVED --- #: last_checked: 2024-02-22
+# REMOVED --- #: next_check: 2024-02-28
+# REMOVED --- #: valid: -20240228
+# REMOVED --- Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 # 
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork 11291,11876
 # 
@@ -251,15 +251,16 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 #: next_check_id: SCHOENHOLZER-2022
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) vvv
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) vvv
 #: last_checked: 2024-02-04 (mapillary) vvv
-#: next_check: 2024-03-29 vvv
+#: next_check: 2024-02-28
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
+#: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024)
+#: next_check: 2024-03-28
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8333,19305
-#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^

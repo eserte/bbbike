@@ -2999,7 +2999,54 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: Sprengplatz Grunewald
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
+#: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
+#: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
+#: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240227
+#: source_id: 2147341022 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,23.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,29.11.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,06.12.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.12.2022,09:15 (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.03.2023,09:15 (bis 15.03.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,22.03.2023,09:15 (bis 22.03.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,05.04.2023,09:15 (bis 05.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,13.04.2023,09:15 (bis 13.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,20.04.2023,09:15 (bis 20.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,26.04.2023,09:15 (bis 26.04.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,15.05.2023,09:15 (bis 15.05.2023) (inaktiv)
+#: source_id: viz2021:13.196408,52.438127,18.07.2023,09:45 (bis 18.07.2023) (inaktiv)
+# REMOVED --- #: priority: #A --- #: next_check: 2023-04-20
+	2::bomb -2218,5133 -927,6888
+	2::bomb -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::bomb -1934,6804 -1854,6898
+',
+         'from' => 1708988400,
+         'id' => 2840,
+         'text' => 'Kronprinzessinnenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. Februar 2024 zwischen 09:15 und 12:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1709118900
+       },
        undef,
        {
          'data' => '#: note: Es gibt aber anscheinend einen Umweg um den Staudengarten herum.
@@ -3634,7 +3681,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-02-14 vvv
+#: last_checked: 2024-02-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5890,15 +5937,15 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
        undef,
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024)
 #: last_checked: 2024-02-25
-#: next_check: 2024-02-29
+#: next_check: 2024-04-02
 	q3::inwork 12632,12630 12690,12769
 ',
          'dont_check_date' => 1,
          'from' => 1687406400,
          'id' => 3832,
-         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Februar 2024, vermutlich noch länger',
+         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Anfang April 2024, vermutlich noch länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6518,7 +6565,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2024-02-06 (mapillary)
+#: last_checked: 2024-02-27
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 21d
 #: next_check: 2024-06-30
@@ -6526,7 +6573,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => 1699031494,
          'id' => 3952,
-         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang Februar 2024: die alten Radwege sind noch passierbar)',
+         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Ende Februar 2024: Baustelle ist für Radfahrer passierbar)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6536,11 +6583,11 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024)
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-01-27 vvv
-#: next_check: 2024-03-15 vvv
+#: next_check: 2024-03-01 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -7027,6 +7074,16 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis 28.3.2024',
          'type' => 'handicap',
          'until' => 1711641600
+       },
+       {
+         'data' => '#: source_id: LS/221-E/24/021 (bis 08.03.2024)
+	2::inwork 69675,72248 70464,71826
+',
+         'from' => 1709452800,
+         'id' => 4014,
+         'text' => 'B166: Bauarbeiten an der Brücke über die Meglitze, evtl. auch für Radfahrer gesperrt, vom 04.03.2024 09:00 Uhr bis 08.03.2024 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1709913600
        }
      
 );

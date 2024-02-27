@@ -26475,9 +26475,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2023-07-17 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-07-18 10:45:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Juli 2023 zwischen 09:15 und 10:45 Uhr',
+     { from  => $isodate2epoch->("2024-02-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-02-28 12:15:00"),
+       text  => 'Kronprinzessinnenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. Februar 2024 zwischen 09:15 und 12:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: Sprengplatz Grunewald
@@ -26493,6 +26493,7 @@ EOF
 #: by: https://viz.berlin.de/2023/03/notsprengungen/ (nächste Termine: 15/22.03., 05/13/20/27.04.) (-> hmmm: doch am 26.4.?) (Falschmeldung? doch am 27.4.?)
 #: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
 #: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240227
 #: source_id: 2147341022 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
@@ -30539,7 +30540,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-02-14 vvv
+#: last_checked: 2024-02-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -34287,7 +34288,7 @@ EOF
 #: source_id: viz2021:13.374359,52.586234,09.03.2021,07:00 (inaktiv)
 #: source_id: viz2021:13.37418,52.58681,02.08.2022,11:31 (bis 3.8.2022) (inaktiv)
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (evtl. Umstellung der Baustelle, zwischen Schillerstr. und Friesenstr. Gegenverkehrsregelung bis Ende März 2023, siehe auch Ampeln in der Germanenstr.) (inaktiv)
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito) (+ Sperrung diverser Einmündungen) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024)
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito) (+ Sperrung diverser Einmündungen) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024)
 # REMOVED --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (H,B)--- #: last_checked: 2022-05-14 --- #: check_frequency: 45d --- #: next_check: 2022-08-03
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
@@ -39622,13 +39623,13 @@ EOF
      },
      { from  => 1687406400, # 2023-06-22 06:00
        dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
-       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Februar 2024, vermutlich noch länger',
+       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Anfang April 2024, vermutlich noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024)
 #: last_checked: 2024-02-25
-#: next_check: 2024-02-29
+#: next_check: 2024-04-02
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -40875,7 +40876,7 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731915050880024610#m (neue Verkehrsführung, gilt die Einbahnstraße tatsächlich nicht für Radfahrer?)
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr) (bis 5.12.2023) (inaktiv)
 #: source_id: viz2021:13.4529,52.52415,20.12.2023,10:50 (bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024)
+#: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024)
 #: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023, weitere Arbeiten im Anschluss)
 #: osm_watch: note 3677859 4
 # REMOVED (zwei Einbahnstraßenregelungen, Radfahrer frei) --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: last_checked: 2023-11-16 --- #: next_check: 2023-12-05
@@ -41196,14 +41197,14 @@ EOF
      },
      { from  => 1699031494, # 2023-11-03 18:11
        until => undef, # 1704063599, # 2023-12-31 23:59
-       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang Februar 2024: die alten Radwege sind noch passierbar)',
+       text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Ende Februar 2024: Baustelle ist für Radfahrer passierbar)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOERLITZERUFER-2023
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2024-02-06 (mapillary)
+#: last_checked: 2024-02-27
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 21d
 #: next_check: 2024-06-30
@@ -41261,11 +41262,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024)
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-01-27 vvv
-#: next_check: 2024-03-15 vvv
+#: next_check: 2024-03-01 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -42076,6 +42077,15 @@ EOF
 #: source_id: bvg2021:m45#BVG343134_0
 #: source_id: viz2021:13.205594,52.543427,26.02.2024,07:00 (bis 28.03.2024)
 	q4::inwork; -3153,14868 -3360,14974 -3258,15100 -3241,15118 -3216,15155
+EOF
+     },
+     { from  => 1709452800, # 2024-03-03 09:00
+       until => 1709913600, # 2024-03-08 17:00
+       text  => 'B166: Bauarbeiten an der Brücke über die Meglitze, evtl. auch für Radfahrer gesperrt, vom 04.03.2024 09:00 Uhr bis 08.03.2024 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-E/24/021 (bis 08.03.2024)
+	2::inwork 69675,72248 70464,71826
 EOF
      },
     );
