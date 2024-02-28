@@ -271,7 +271,7 @@ sub update_file_content {
     }
     # normalizations
     # Mostly for forum URLs, to remove the current page/article indication from the URL.
-    $url =~ s{(https://www.deutsches-architekturforum.de/thread/.*?/).*}{$1};
+    $url =~ s{(https://www.deutsches-architekturforum.de/thread/\d+-).*}{$1};
     $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
     $url =~ s{(https://www.bahninfo-forum.de/read.php\?\d+,\d+,).*}{$1};
 
