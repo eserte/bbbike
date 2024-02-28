@@ -33,7 +33,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-02-18 (krickstadt)
+#: last_checked: 2024-02-28 (bahninfo-forum)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -251,17 +251,16 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 #: next_check_id: SCHOENHOLZER-2022
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) vvv
-#: last_checked: 2024-02-04 (mapillary) vvv
-#: next_check: 2024-02-28
-Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv) vvv
+# REMOVED (inaktiv) --- #: last_checked: 2024-02-04 (mapillary)
+# REMOVED (inaktiv) --- #: next_check: 2024-02-28
+# REMOVED (inaktiv) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024)
 #: next_check: 2024-03-28
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8333,19305
-#: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: source_id ^^^
@@ -349,10 +348,6 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: last_checked: 2023-09-24
 #: check_frequency: 180d
 Gegenverkehrsregelung	X::inwork 18767,-1343
-# 
-#: source_id: viz2021:13.409747,52.562662,22.01.2024,09:00 (bis 28.02.2024)
-#: next_check: 2024-02-28
-Mühlenstr.: Bau einer Fußgängerampel, Gegenverkehrsregelung	X::inwork 10670,17458
 # 
 #: temporary ^^^
 # 
@@ -2627,13 +2622,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-02-08
+#: last_checked: 2024-02-28
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2024-02-22
+#: last_checked: 2024-02-28
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

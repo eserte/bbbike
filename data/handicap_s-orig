@@ -71,7 +71,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-02-16
+#: last_checked: 2024-02-28
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -538,13 +538,13 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 #: next_check_id: TRESKOWALLEE-2023
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
-#: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024)
+#: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024)
 #: source_id: bvg2021:396#BVG308894_0
 #: osm_watch: way id="30043322" version="29"
 #: last_checked: 2024-02-26
 #: check_frequency: 100d
-#: next_check: 2024-02-29
-#: valid: -20240229
+#: next_check: 2024-04-05
+#: valid: -20240405
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: next_check_id: WANDLITZ-2021 --- #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können --- #: also_indoor: traffic --- #: note: Halteverbotsschilder vor und hinter der Baustelle bis 22.12.2023 --- #: XXX evtl. bessere Qualität nach den Bauarbeiten? --- #: last_checked: 2023-11-26 --- #: check_frequency: 30d --- #: next_check: 2023-12-22 --- #: valid: -20231222 --- Wandlitzstr.: in Höhe Lehndorffstr. Bauarbeiten, Sperrung der Fahrbahn	q4::inwork 18401,8636 18448,8602
@@ -573,10 +573,18 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
-#: last_checked: 2024-02-23 (bahninfo-forum) vvv
+#: last_checked: 2024-02-28 (bahninfo-forum) vvv
 Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441
 Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17747,5452
 #: last_checked ^^^
+# 
+#: next_check_id: SCHOENEWEIDE-2018
+#: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024)
+#: also_indoor: traffic (H,W)
+#: last_checked: 2024-02-28 (bahninfo-forum)
+#: next_check: 2024-06-30
+#: valid: -20240630
+Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 # 
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
@@ -587,6 +595,16 @@ Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17747,5452
 # REMOVED (BVG-Meldung ist weg) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle) --- #: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018 --- #: also_indoor: traffic --- #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72 --- #: source_id: 2147342044 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-12-06 --- # REMOVED --- #: valid: -20181201 --- #: priority: #A --- Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
 ### Kreuzberg ###
+# 
+#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
+#: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
+#: last_checked: 2024-02-27 vvv
+#: next_check: 2024-02-28 vvv
+Alexandrinenstr.: gemeinsamer Rad- und Gehweg	q2::inwork; 10178,10411 10122,10294
+Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (scheint vorfristig beendet worden zu sein) --- #: XXX Alexandrinenstraße (Kreuzberg) in beiden Richtungen, Kreuzung Ritterstraße: Leitungsarbeiten, Die Alexandrinenstraße ist von beiden Seiten von der Ritterstraße abgehängt, vom 11.12.2023 06:00 bis 29.12.2023 17:00 --- #: source_id: viz2021:13.403669,52.503381,11.12.2023,06:00 (bis 29.12.2023) (bis 29.02.2023) --- #: also_indoor: traffic (G,W)--- #: last_checked: 2024-01-08 --- #: check_frequency: 30d --- #: next_check: 2024-02-29 --- #: valid: -20240229 --- Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
 # REMOVED (beendet) --- #: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10) --- #: last_checked: 2021-11-20 --- #: check_frequency: 14d --- Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
@@ -919,8 +937,9 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 # 
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
+#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe-kleinere-p/?postID=757023#post757023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2023-12-17 (architektur-urbanistik) vvv
+#: last_checked: 2024-02-28 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815

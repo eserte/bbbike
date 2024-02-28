@@ -1276,7 +1276,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-02-22 vvv
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1586,7 +1586,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11059 (Anfrage)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-02-25
+#: last_checked: 2024-02-28
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1600,7 +1600,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-02-25
+#: last_checked: 2024-02-28
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2920,7 +2920,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2024-02-17
+#: last_checked: 2024-02-28
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3191,7 +3191,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-02-21 vvv
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -3358,7 +3358,9 @@ die letzten Meter über Gehweg geführt	RW4; -6704,16179 -6722,16112
 überwiegend Radspur, teilweise über Gehweg geführt	RW4; -6518,16795 -6550,16706
 #: note: anonymous meint: "teilweise ja (zur Frage, ob es Radwege gibt), den Rest kann man auf dem Fußweg fahren oder ein kleines Stück auf glatter Straße. Ist aber eine Hauptverkehrsstraße. " (leider ungenau)
 	RW1; -410,21496 -249,21420 -130,21396
-Gehweg für Radfahrer frei	RW9;RW1 1293,21123 886,21221 598,21257 469,21303 415,21334 -130,21396
+#: historical_note: früher (bis Ende 2023/Anfang 2024) Zweirichtungsradweg)
+Gehweg für Radfahrer frei	RW1; -130,21396 415,21334 469,21303 598,21257 886,21221 1293,21123
+	RW4?; 1293,21123 886,21221 598,21257 469,21303 415,21334 -130,21396 -249,21420 -410,21496
 	RW2;RW1 1293,21123 1445,21216
 Busspur ist immer gültig	RW5;RW5 2015,20336 1955,20435
 # REMOVED (keine Benutzungspflicht) --- #: XXX wird die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3657 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3657 (Abordnung wird erfolgen) --- #: last_checked: 2015-09-12 --- #: check_frequency: 180d
@@ -4507,7 +4509,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2024-02-25 vvv
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -7443,7 +7445,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-02-25 vvv
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7913,7 +7915,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-02-25
+#: last_checked: 2024-02-28
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7939,7 +7941,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2024-02-06 vvv
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-07-01 vvv
 #: osm_watch: way id="335479077" version="23"
@@ -8208,10 +8210,10 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023) (bis 01.09.2023) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023) (bis 31.5.2023) (bis 01.09.2023) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
+#: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024) (inaktiv)
+#: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024)
-#: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024)
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024)
-#: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"

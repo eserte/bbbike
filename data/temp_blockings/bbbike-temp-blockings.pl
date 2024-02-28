@@ -26494,6 +26494,7 @@ EOF
 #: by: https://viz.berlin.de/2023/04/verkehrsvorschau-270423/
 #: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240227
+#: by: https://berliner-abendblatt.de/berlin-news/avus-am-mittag-kurzzeitig-gesperrt-id246096
 #: source_id: 2147341022 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
@@ -37884,8 +37885,10 @@ EOF
 #: also_indoor: traffic (W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: note: Halteverbotsschilder bis Ende September 2024
 #: last_checked: 2024-01-22
-#: check_frequency: 60d
+#: check_frequency: 90d
+#: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
 EOF
      },
@@ -37899,10 +37902,11 @@ EOF
 #: osm_watch: way id="1170463985" version="3"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
+#: note: Halteverbote bis Ende Juni 2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-01-22
-#: check_frequency: 30d
-# REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2023-12-31
+#: last_checked: 2024-02-28
+#: check_frequency: 90d
+#: next_check: 2024-06-30
 	q3::inwork 13263,15930 13140,16000
 EOF
      },
@@ -38258,25 +38262,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1681323382, # undef, # XXX
+       until => 1709121378, # undef, # 1681323382, # undef, # XXX
        #text  => 'Küstriner Str./Wriezener Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        text  => 'Freienwalder Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KUESTRINER-2023
-#: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun?
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-#: also_indoor: traffic (B,G) vvv
-#: last_checked: 2024-01-29 vvv
-#: check_frequency: 30d vvv
+# REMOVED (Bauarbeiten beendet) --- #: XXX haben die Bauarbeiten etwas mit der Asphaltierung der Küstriner Str. zu tun? --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv --- #: also_indoor: traffic (B,G) vvv --- #: last_checked: 2024-01-29 vvv --- #: check_frequency: 30d vvv
 # REMOVED --- Wriezener Str.: nur der Kreuzungsbereich ist betroffen	q3::inwork 16522,15258 16357,15328 16218,15386
 # REMOVED --- Küstriner Str.	q4::inwork 16357,15328 16314,15223
 Freienwalder Str.	q4::inwork 16331,15486 16406,15452
 Freienwalder Str.: etwa 80m sind betroffen	q3::inwork 16406,15452 16618,15356
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1677135600, # 2023-02-23 08:00
@@ -39314,7 +39311,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2023-12-15
+#: last_checked: 2024-02-28
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -39781,7 +39778,7 @@ EOF
 #: source_id[expired]: bvg2021:m43#BVG340191_0
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: note: laut rbb bis 08.03.2024
-#: last_checked: 2024-02-22 vvv
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-03-05 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
@@ -39968,12 +39965,13 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebudelt
-#: last_checked: 2024-02-11 (mapillary) vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
+#: last_checked: 2024-02-28 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-02-29
+# REMOVED --- #: next_check: 2024-02-29 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -41136,10 +41134,10 @@ EOF
 EOF
      },
      { from  => 1708236000, # $isodate2epoch->("2023-10-11 13:00:00"),
-       until => 1709913600, # $isodate2epoch->("2023-12-11 17:00:00"),
+       until => $isodate2epoch->("2024-03-15 17:00:00"), # 1709913600, # $isodate2epoch->("2023-12-11 17:00:00"),
        #text  => 'Wilhelminenhofstr.: zwischen Mathildestr. und Klarastr. Gleisbauarbeiten, Radfahrer sollen den Gehweg benutzen, bis 20.11.2023',
        #text  => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 11.12.2023',
-       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., Radfahrer dürfen den Gehweg benutzen, vom 19.02.2024 07:00 bis 08.03.2024 17:00',
+       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., Radfahrer dürfen den Gehweg benutzen, vom 19.02.2024 07:00 bis 15.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
@@ -41148,7 +41146,7 @@ EOF
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
-#: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024)
+#: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
 #: also_indoor: traffic (H.G,B,W)
@@ -41527,11 +41525,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-12 07:00:00"),
-       until => $isodate2epoch->("2024-04-30 17:00:00"),
-       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis mindestens Anfang März 2024, wahrscheinlich noch länger',
+       until => $isodate2epoch->("2024-05-21 17:00:00"),
+       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 21.05.2024, evtl. noch länger',
        type  => 'gesperrt', # handicap
        data  => <<EOF,
-#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024)
+#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024)
 #: note: bei rbb bereits bis 30.04.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
@@ -41799,7 +41797,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2024-01-29
+#: last_checked: 2024-02-28
 	q3::inwork 16884,15833 16905,15924
 EOF
      },

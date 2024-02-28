@@ -392,7 +392,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2024-02-16
+#: last_checked: 2024-02-28
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -1145,7 +1145,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-02-25
+#: last_checked: 2024-02-28
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1386,11 +1386,7 @@ Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,769
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21569,7252 21590,7211 21896,6937
-#: next_check_id: KAULSDORFER-2023
-#: XXX evtl. wird der Asphalt nach der Sperrung besser sein?
-#: last_checked: 2024-01-27
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-02-29
+# REMOVED (nein, gesperrter Abschnitt nur kurz ) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX evtl. wird der Asphalt nach der Sperrung besser sein? --- #: last_checked: 2024-01-27 --- #: check_frequency: 90d --- #: next_check: 2024-02-29
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1+ 21896,6937 21976,6848 22050,6619
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
 # REMOVED (nein, hier passiert vorerst nichts, siehe 2. URL) --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
@@ -6331,7 +6327,8 @@ Köpitzer Str.: Beton	Q1+ 18272,11552 18326,11573
 Köpitzer Str.: Asphalt	Q0- 18326,11573 18390,11597 18381,11655
 Kirchsteig: Asphalt	Q0 22007,711 21925,612
 Bruno-Taut-Str.: Beton	Q0- 21870,803 21790,682
-Smetanastr.: unbefestigte Straße	Q2 14300,15424 14195,15604
+#: historical_note: früher: unbefestigte Straße, Q2
+Smetanastr.: Asphalt/Beton	Q0 14224,15522 14195,15604
 (Antonplatz - Bizetstr.): Gehwegplatten	Q0- 13484,15893 13524,15786
 (Antonplatz - Bizetstr.): Gehwegplatten/Kleinsteinpflaster	Q1+ 13508,15912 13539,15859 13519,15849 13540,15792
 Grünkardinalweg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,19947 12864,19991 12719,20065 12586,20131
@@ -16493,7 +16490,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2024-01-29
+#: last_checked: 2024-02-28
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -25301,7 +25298,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="8"
-#: last_checked: 2023-12-15
+#: last_checked: 2024-02-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -32942,4 +32939,6 @@ Kreuzungsbereich asphaltiert	Q0 3287,11846
 Einmündungsbereich asphaltiert	Q0 6716,15310
 Einmündungsbereich mit Kopfsteinpflaster	Q2 6950,15514
 Einmündungsbereich asphaltiert	Q0 8518,15506
+Kreuzungsbereich asphaltiert	Q0 10606,16319
+Einmündungsbereich asphaltiert	Q0 10613,16403
 #: ignore ^^^
