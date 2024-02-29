@@ -36763,7 +36763,7 @@ EOF
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022) (bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022) (inaktiv) (wieder aktiv, bis 12.12.2022) (bis 16.12.2022) (bis 23.12.2023) (bis 13.1.2023) (inaktiv)
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024)
+#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.05.2023) (bis 31.8.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024) (bis 23.03.2024)
 # REMOVED --- #: last_checked: 2023-01-10 --- #: next_check: 2023-01-13
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle links umfahren)	q3::inwork; 16563,7012 16428,7144
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr. (Baustelle rechts umfahren)	q2::inwork; 16353,7226 16377,7200 16428,7144
@@ -40657,7 +40657,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
-#: osm_watch: way id="1207706195" version="1"
+#: osm_watch: way id="1207706195" version="2"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m
 #: last_checked: 2024-02-07

@@ -6211,7 +6211,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        undef,
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
-#: osm_watch: way id="1207706195" version="1"
+#: osm_watch: way id="1207706195" version="2"
 #: note: Halteverbotsschilder sogar bis Ende M‰rz 2026
 #: note: L‰nge der Einbahnstraﬂenregelung: 100m
 #: last_checked: 2024-02-07
