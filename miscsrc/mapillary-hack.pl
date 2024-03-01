@@ -210,10 +210,11 @@ sub fetch_images {
     my $start_captured_at_iso = Time::Moment->from_epoch($start_captured_at)->strftime("%FT%TZ");
     my $end_captured_at_iso   = Time::Moment->from_epoch($end_captured_at)  ->strftime("%FT%TZ");
     warn "INFO: Fetching $start_captured_at_iso .. $end_captured_at_iso...\n" if $debug;
-    my $url = "$image_api_url?access_token=$client_token&fields=id,creator,make,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
+    #my $url = "$image_api_url?access_token=$client_token&fields=id,creator,make,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
+    my $url = "$image_api_url?fields=id,creator,make,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
     my $data;
     for my $try (1..$max_try) {
-	my $resp = $ua->get($url);
+	my $resp = $ua->get($url, "Authorization" => "OAuth $client_token");
 	if (!$resp->is_success) {
 	    my $error_data = eval { decode_json $resp->decoded_content };
 	    my $msg = "Try $try/$max_try: ";
@@ -276,8 +277,10 @@ sub scrambled_url {
     my $url = shift;
     if (eval { require URI; require URI::QueryParam; 1 }) {
 	my $u = URI->new($url);
-	$u->query_param('access_token', '...');
-	$url = $u->as_string;
+	if ($u->query_param('access_token')) {
+	    $u->query_param('access_token', '...');
+	    $url = $u->as_string;
+	}
     } else {
 	$url =~ s{\?.*}{?...};
     }
