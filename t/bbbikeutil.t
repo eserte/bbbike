@@ -191,10 +191,9 @@ for my $exec ('perl',
 
 for my $try_mod ('URI', 'CGI') {
  SKIP: {
+	local $BBBikeTest::SIMULATE_WITHOUT_URI;
 	if ($try_mod eq 'CGI') {
-	    skip "Cannot test CGI.pm operation, Test::Without::Module cannot be loaded", 1
-		if !eval { require Test::Without::Module; 1 };
-	    eval 'use Test::Without::Module qw(URI)'; die $@ if $@;
+	    $BBBikeTest::SIMULATE_WITHOUT_URI = 1;
 	}
 
 	{
@@ -245,11 +244,6 @@ for my $try_mod ('URI', 'CGI') {
 	{
 	    my $u = BBBikeUtil::uri_with_query("http://example.com", [foo=>"bar"], raw_query => [baz=>'blubber']);
 	    is $u, 'http://example.com?foo=bar&baz=blubber', "uri_with_query, with normal query and raw_query, impl $try_mod";
-	}
-
-
-	if ($try_mod eq 'CGI') {
-	    eval 'no Test::Without::Module qw(URI)'; die $@ if $@;
 	}
     }
 }

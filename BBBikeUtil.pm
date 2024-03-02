@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2016,2018,2020,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2016,2018,2020,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -490,7 +490,7 @@ sub uri_with_query {
     }
 
     my $query_string;
-    if (eval { require URI; 1 }) {
+    if (!$BBBikeTest::SIMULATE_WITHOUT_URI && eval { require URI; 1 }) {
 	my $u = URI->new("", "http");
 	$u->query_form(\@query_array);
 	$query_string = $u->query;
@@ -520,6 +520,8 @@ sub uri_with_query {
 	$uri;
     }
 }
+
+$BBBikeTest::SIMULATE_WITHOUT_URI = $BBBikeTest::SIMULATE_WITHOUT_URI if 0; # cease -w
 
 1;
 
