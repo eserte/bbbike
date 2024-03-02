@@ -1635,16 +1635,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 247300035 (bis 02.03.2024)
-	2::inwork 48237,70892 48162,70928 48093,70968
-',
-         'from' => 1708210800,
-         'id' => 1975,
-         'text' => 'Kerkow - Joachimsthal: Bahnübergang wegen Gleiserneuerung gesperrt, vom 19.02.2024 bis 02.03.2024',
-         'type' => 'gesperrt',
-         'until' => 1709395200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6485,7 +6476,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="26"
 #: osm_watch: way id="148176599" version="15"
-#: last_checked: 2024-02-27
+#: last_checked: 2024-03-02
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 21d
 #: next_check: 2024-06-30
@@ -6493,7 +6484,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => 1699031494,
          'id' => 3952,
-         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Ende Februar 2024: Baustelle ist für Radfahrer passierbar)',
+         'text' => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang März 2024: Baustelle ist für Radfahrer passierbar, außerhalb der Arbeitszeiten kann die neue Fahrbahn zusätzlich offen sein)',
          'type' => 'handicap',
          'until' => undef
        },
