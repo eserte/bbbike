@@ -3232,7 +3232,7 @@ EOF
 EOF
     if (!$osm_data || do {
 	my $geo = get_geography_object();
-	$geo && $geo->can('skip_feature') && !$geo->skip_feature('faehren')
+	$geo && !$geo->skip_feature('faehren')
     }) {
 	print <<EOF;
 <tr><td><label for="pref_ferry">@{[ M("Fähren benutzen") ]}:</label></td><td><input type=checkbox name="pref_ferry" id="pref_ferry" value="use" @{[ $default_ferry?"checked":"" ]}></td></tr>

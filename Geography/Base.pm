@@ -28,6 +28,8 @@ sub center_wgs84 {
     $Karte::Polar::obj->standard2map_s($class->center);
 }
 sub bbox                 { undef } # array ref
+sub skip_features        { {} }
+sub skip_feature         { undef }
 sub search_args          { () }
 sub scrollregion         { () }
 sub is_osm_source        { undef }

@@ -793,9 +793,8 @@ if (!$city_obj) {
     warn "Fallback to unspecified city object...\n";
 }
 
-if ($city_obj->can("skip_features")) {
-    %skip_features = map{($_,1)} $city_obj->skip_features;
-}
+%skip_features = map{($_,1)} $city_obj->skip_features;
+
 # XXX nicer solution?
 if ($city_obj->is_osm_source) {
     $sBAB_two_track_width = 9999; # effectively turning off
