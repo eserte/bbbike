@@ -1,10 +1,10 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2015,2016,2018,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2015,2016,2018,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
