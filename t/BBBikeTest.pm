@@ -992,7 +992,7 @@ sub image_ok ($;$) {
 		my $converter = { GIF  => "giftopnm",
 				  PNG  => "pngtopnm",
 				  JPEG => "jpegtopnm",
-				  ICO  => "winicontoppm",
+				  ICO  => (is_in_path("winicontopam") ? "winicontopam" : "winicontoppm"),
 				  XPM  => "xpmtoppm",
 				  XBM  => "xbmtopbm",
 				  WBMP => "wbmptopbm",
