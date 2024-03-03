@@ -40,6 +40,7 @@ my %special_data;
 my %type_s;
 my @inner;
 my @outer;
+my $innerbbox;
 my $onlyenclosed;
 GetOptions("v" => \$v,
 	   "i" => \$i,
@@ -68,6 +69,7 @@ GetOptions("v" => \$v,
 	   "minlength=f" => \$minlength,
 	   'inner=s@' => \@inner,
 	   'outer=s@' => \@outer,
+	   'innerbbox=s' => \$innerbbox,
 	   "onlyenclosed!" => \$onlyenclosed,
 	  ) or die <<EOF;
 usage: $0 [-v] [-i] [-cat category | -catrx regexp]
@@ -79,15 +81,11 @@ usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
        [-ignorelocaldirectives] [-removenoncoords]
-       [-inner file [-inner ...] [-onlyenclosed]] [-outer file [-outer ...]] bbd ...
+       [-inner file [-inner ...] [-innerbbox lon1,lat1,lon2,lat2] [-onlyenclosed]] [-outer file [-outer ...]] bbd ...
 
 section is a region marked with the "section" directive in a bbd file.
 
 EOF
-
-if ($onlyenclosed && !@inner) {
-    die "-onlyenclosed is only valid with -inner\n";
-}
 
 if ($catrx) {
     $catrx = $i ? qr{$catrx}i : qr{$catrx};
@@ -196,6 +194,8 @@ if (@datafiles == 1) {
     } @datafiles);
 }
 
+my $coordsys = $s->get_global_directive('map') || 'standard';
+
 my $new_s = Strassen->new;
 local $Strassen::STRICT = 1;
 
@@ -206,6 +206,15 @@ for my $inner (@inner) {
     $s->init;
     push @inner_s, [ map { [split /,/] } @{ $s->next->[Strassen::COORDS()] } ];
 }
+if ($innerbbox) {
+    require Karte;
+    Karte::preload(':all');
+    my($lon1,$lat1,$lon2,$lat2,$rest) = split /,/, $innerbbox;
+    if (defined $rest)  { die "-innerbox should consist of four comma-separated values, but got more.\n" }
+    if (!defined $lat2) { die "-innerbox should consist of four comma-separated values, but got less.\n" }
+    push @inner_s, [ map { [ $Karte::map{polar}->map2map($Karte::map{$coordsys}, @$_) ] } ([$lon1,$lat1], [$lon1,$lat2], [$lon2,$lat2], [$lon2,$lat1], [$lon1,$lat1]) ];
+}
+
 for my $outer (@outer) {
     my $s = Strassen->new($outer);
     die "Record count of $outer is not 1" if $s->count != 1;
@@ -214,6 +223,9 @@ for my $outer (@outer) {
 }
 if (@inner_s || @outer_s) {
     require VectorUtil;
+}
+if ($onlyenclosed && !@inner_s) {
+    die "-onlyenclosed is only valid with -inner or -innerbbox\n";
 }
 
 for my $type (keys %special_init) {

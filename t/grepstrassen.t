@@ -366,6 +366,32 @@ EOF
 }
 
 ######################################################################
+# -innerbbox
+{
+    my $in_bbd = <<'EOF';
+#: map: polar
+#:
+inner	X 13.5,52.5
+outer1	X 10.5,52.5
+outer2	X 13.5,50.5
+outer2	X 16.5,52.5
+EOF
+
+    my $err;
+    ok !run [$^X, $grepstrassen, '-innerbbox', '1,2,3'], '<', \$in_bbd, '2>', \$err;
+    like $err, qr/-innerbox should consist of four comma-separated values, but got less/;
+    ok !run [$^X, $grepstrassen, '-innerbbox', '1,2,3,4,5'], '<', \$in_bbd, '2>', \$err;
+    like $err, qr/-innerbox should consist of four comma-separated values, but got more/;
+
+    my $filtered_bbd = run_grepstrassen($in_bbd, ['-innerbbox', '13.0,52.0,14.0,53.0', '-preserveglobaldirectives']);
+    eq_or_diff $filtered_bbd, <<'EOF';
+#: map: polar
+#:
+inner	X 13.5,52.5
+EOF
+}
+
+######################################################################
 # -special
 {
     my($tmpdir) = tempdir(CLEANUP => 1, TMPDIR => 1);
