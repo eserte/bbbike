@@ -48,14 +48,7 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: valid: -20250423
 Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 # 
-# REMOVED --- #: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024) (bis 20.02.2024) (bis 28.02.2024) (inaktiv)
-# REMOVED --- #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich
-# REMOVED --- #: note: bei VIZ entfernt, existiert aber weiterhin
-# REMOVED --- #: last_checked: 2024-02-22
-# REMOVED --- #: next_check: 2024-02-28
-# REMOVED --- #: valid: -20240228
-# REMOVED --- Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
-# 
+# REMOVED --- #: source_id: viz2021:13.469544,52.478034,01.11.2023,10:30 (bis 13.11.2023) (bis 24.11.2023) (inaktiv) (bis 13.02.2024) (bis 20.02.2024) (bis 28.02.2024) (inaktiv) --- #: note: Länge knapp 50m und gilt auch für Radfahrer, Lage ist etwas weiter nordwestlich --- #: note: bei VIZ entfernt, existiert aber weiterhin --- #: last_checked: 2024-02-22 --- #: next_check: 2024-02-28 --- #: valid: -20240228 --- Kiefholzstr.: Gegenverkehrsregelung	X::inwork 14700,8368
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork 11291,11876
 # 
 #: next_check_id: METZER-2023
@@ -76,10 +69,10 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
 # REMOVED --- #: next_check_id: PISTORIUS-2023 --- #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023) (inaktiv) --- #: last_checked: 2023-11-23 --- #: next_check: 2023-11-27 --- #: valid: -20231127 --- Roelckestr./Gäblerstr.	X::inwork 13272,16672
 # 
-#: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024)
-#: next_check: 2024-09-30
-#: valid: -20240930
-Gegenverkehrsregelung	X::inwork 20302,1613
+# REMOVED --- #: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024) (inaktiv)
+# REMOVED --- #: next_check: 2024-09-30
+# REMOVED --- #: valid: -20240930
+# REMOVED --- Gegenverkehrsregelung	X::inwork 20302,1613
 # 
 # REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv)
 # REMOVED --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv)
@@ -119,7 +112,7 @@ Gegenverkehrsregelung	X::inwork 18527,16789
 #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet)
 #: note: bei rbb nur bis 29.12.2023
 #: osm_watch: way id="383023440" version="17"
-#: last_checked: 2024-02-18 (mapillary)
+#: last_checked: 2024-03-03
 #: next_check: 2024-03-23
 #: valid: -20240323
 	X::inwork 16328,7005
@@ -141,7 +134,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-03
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -169,7 +162,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-02-10
+#: last_checked: 2024-03-03
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
@@ -2622,13 +2615,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-02-28
+#: last_checked: 2024-03-03
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2024-02-28
+#: last_checked: 2024-03-03
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

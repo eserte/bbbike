@@ -32,12 +32,12 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2023-05-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-05-30 06:00:00"),
+     { from  => $isodate2epoch->("2024-05-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-05-21 06:00:00"),
        prewarn_days => 2,
        periodic => 1,
        recurrences => [['easter', 47, start => "2022-10-25T00:00:00"]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 26.05.2023 bis 29.05.2023, Sperrungen fangen schon einen Tag vorher an',
+       text  => 'Straßenfest rund um den Blücherplatz, 17.05.2024 bis 20.05.2024, Sperrungen fangen schon einen Tag vorher an',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -73,12 +73,12 @@ Johanniterstr.	2::temp 10066,10071 9837,10117
 Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-05-28 23:59:59"),
+     { from  => $isodate2epoch->("2024-05-18 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-05-19 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49, start => "2022-10-25T00:00:00"]], # Pfingstsonntag
        source_id => 'https://www.karneval.berlin/', # früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite
-       text  => 'Karneval der Kulturen, 28.05.2023',
+       text  => 'Karneval der Kulturen, 19.05.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
@@ -14674,11 +14674,11 @@ EOF
 	2::inwork 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
-     { from  => $isodate2epoch->("2023-06-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-06-18 20:00:00"),
+     { from  => $isodate2epoch->("2024-06-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-06-16 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag von der Alten Försterei bis in die Altstadt Köpenick (16.06.2023 - 18.06.2023)', # früher war der Umzug "in der Köpenicker Bahnhofstr."
+       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag von der Alten Försterei bis in die Altstadt Köpenick (14.06.2024 - 16.06.2024)', # früher war der Umzug "in der Köpenicker Bahnhofstr."
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
@@ -18483,11 +18483,11 @@ EOF
 	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2023-06-29 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-07-02 23:59:59"),
+     { from  => $isodate2epoch->("2024-06-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-06-30 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
-       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (30.06.2023 bis 02.07.2023)',
+       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28.06.2024 bis 30.06.2024)',
        type  => 'gesperrt',
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
@@ -38026,7 +38026,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: last_checked: 2024-02-10
+#: last_checked: 2024-03-03
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -38541,10 +38541,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEBAMMENSTEIGBRUECKE-2021
-#: note: laut osm "Baustelle bis Ende 2023"
-#: osm_watch: way id="1153745378" version="1"
+#: note: laut osm "Baustelle bis Ende 2023"; mittlerweile wurde bei osm access=no entfernt
+#: osm_watch: way id="1153745378" version="2"
 #: last_checked: 2024-02-04 (wosch)
-# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2024-03-03
 	2::inwork 13078,21754 13031,21538 12980,21411
 EOF
      },

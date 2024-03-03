@@ -71,7 +71,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-02-28
+#: last_checked: 2024-03-03
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -1306,14 +1306,16 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
 Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944
+Am Landwehrkanal: Fußgänger	q1 13333,9929 13271,9927 13225,9897
 # REMOVED --- #: next_check_id: SCHLESISCHERBUSCH-2023 --- #: XXX_prog: Konflikt mit gesperrt-orig-Eintrag --- #: valid: 20230915-
 Am Flutgraben: Fußgänger	q1 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 #: note: Grünanlage mit "Radfahren-verboten-Zeichen" (FH/KB-Style), früher "q1"
 Am Landwehrkanal: Parkweg, Fußgänger	q3 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825
-#: note: Grünanlagen-Schild (ohne Radfahrer-Zusatzschild) nur an der Görlitzer Str., früher "q1"
-Am Landwehrkanal: Parkweg, Fußgänger	q2 13086,9825 13145,9861 13230,9981
+#: note: Grünanlage mit "Radfahren-verboten-Zeichen" (FH/KB-Style)
+#: historical_note: früher: Grünanlagen-Schild (ohne Radfahrer-Zusatzschild) nur an der Görlitzer Str., "q1", dann "q2"
+Am Landwehrkanal: Parkweg, Fußgänger	q3 13086,9825 13145,9861 13230,9981
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14467,9887 14459,9897 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
 #: confirmed_by: srt
@@ -2009,7 +2011,10 @@ Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
 Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
-(Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q2 13230,9981 13270,10030
+#: note: Grünanlage mit "Radfahren-verboten-Zeichen" (FH/KB-Style)
+#: note: früher "q2"
+(Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q3 13230,9981 13270,10030
+#: note: Grünanlage mit "Radfahren-verboten-Zeichen" (FH/KB-Style)
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 # REMOVED --- #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv --- #: XXX später mit Fahrbahn, dann wahrscheinlich gar kein handicap mehr --- #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013 --- #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg --- #: osm_watch: way id="4610599" version="14"--- #: last_checked: 2014-06-06 vvv --- Friedrichsbrücke: Engstellen wegen Bauarbeiten, Stufen	q4::inwork 10054,12699 10086,12725 --- Friedrichsbrücke: Engstellen wegen Bauarbeiten	q3::inwork 10086,12725 10166,12777 --- #: last_checked ^^^ --- #: next_check_id ^^^
@@ -2693,7 +2698,7 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fußgänger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fußgänger	q1 15204,14087 15189,14027 15118,13961
 #: note: Grünanlagenschild
-(Park am Fußgänger): Fußgänger, drei Stufen oder verwinkelte Rampe, auf der Parkseite noch weitere zwei Stufen	q3 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
+(Park am Fennpfuhl): Fußgänger, drei Stufen oder verwinkelte Rampe, auf der Parkseite noch weitere zwei Stufen	q3 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
 (Park am Fennpfuhl): Fußgänger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fußgänger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Bernhard-Bästlein-Str. - Park am Fennpfuhl): Fußgänger	q1- 15354,13998 15267,13967 15254,13899
@@ -3502,8 +3507,8 @@ Allee der Kosmonauten [Wohngebietsweg]: einige Fußgänger	q1 19859,13765 20038,13
 Einbecker Str.: einige Fußgänger	q2 17734,11408 17764,11371
 #: note: Gehweg für Radfahrer frei
 Greifenhagener Str.: einige Fußgänger	q1 11150,15908 11176,15958
-#: note: früher "q1"
-Am Landwehrkanal: einige Fußgänger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897
+#: note: früher "q1", "einige Fußgänger"
+Am Landwehrkanal: Fußgänger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897
 # XXX (next_check_id: SCHLESISCHERBUSCH-2023) --- Am Landwehrkanal: einige Fußgänger	q2 13225,9897 13271,9927 13333,9929
 #: note: sieben Moabiter Kissen
 #: XXX_prog: für Anhänger größere Behinderung (q1? q2?)
