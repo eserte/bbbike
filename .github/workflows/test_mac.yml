@@ -11,7 +11,6 @@ jobs:
         with:
           show-progress: false
       - name: Install prerequisites (brew)
-        shell: bash
         run: |
           set -ex
           brew install --cask xquartz
@@ -22,8 +21,13 @@ jobs:
               gd \
               cairo \
               bmake
+      - name: Start Xvfb
+        run: |
+          /opt/X11/bin/Xvfb :123 &
+          (sleep 10; twm) &
+          echo "DISPLAY=:123" >> $GITHUB_ENV
+        
       - name: Install prerequisites (cpan)
-        shell: bash
         run: |
           set -ex
           brew install cpanminus
@@ -65,7 +69,7 @@ jobs:
           BBBIKE_TEST_NO_CGI_TESTS:   1
           BBBIKE_TEST_SKIP_MODPERL:   1
           BBBIKE_TEST_SKIP_MAPSERVER: 1
-          BBBIKE_TEST_GUI:            0
+          BBBIKE_TEST_GUI:            1
           BBBIKE_LONG_TESTS:          0
         run: |
           set -e
