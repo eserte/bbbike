@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_mac:
+    runs-on: macos-12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          show-progress: false
