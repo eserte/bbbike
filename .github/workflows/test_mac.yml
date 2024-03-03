@@ -1,4 +1,4 @@
-name: CI
+name: CI on mac
 
 on:
   workflow_dispatch:
@@ -10,3 +10,69 @@ jobs:
       - uses: actions/checkout@v4
         with:
           show-progress: false
+      - name: Install prerequisites (brew)
+        shell: bash
+        run: |
+          set -ex
+          brew install --cask xquartz
+          brew install \
+              perl \
+              libxml2 \
+              libpng jpeg-turbo \
+              gd \
+              cairo \
+              bmake
+      - name: Install prerequisites (cpan)
+        shell: bash
+        run: |
+          set -ex
+          brew install cpanminus
+          PATH="/usr/local/opt/libxml2/bin:$PATH" LDFLAGS="-L/usr/local/opt/libxml2/lib" CPPFLAGS="-I/usr/local/opt/libxml2/include" PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig" cpanm --quiet --notest XML::LibXML || ( cat ~/.cpanm/work/*/build.log; false )
+          cpanm --quiet --notest \
+              Archive::Zip \
+              CDB_File MLDBM \
+              Class::Accessor \
+              CGI \
+              Cairo \
+              DateTime DateTime::Format::ISO8601 Date::Calc \
+              DB_File::Lock \
+              DBI DBD::XBase \
+              GD \
+              Geo::METAR \
+              HTML::Form HTML::FormatText \
+              Image::ExifTool Image::Info \
+              Inline::MakeMaker Inline::C \
+              IPC::Run \
+              JSON::XS \
+              LWP::Protocol::https LWP::UserAgent \
+              PDF::Create \
+              Object::Iterate Object::Realize::Later \
+              String::Approx \
+              Template \
+              Text::Unidecode \
+              Tie::IxHash \
+              Tk \
+              YAML::XS \
+              XML::Twig \
+            || ( cat ~/.cpanm/work/*/build.log; false )
+      - name: Remove known failing tests
+        run: |
+          mkdir -p xt
+          mv t/plz.t xt/
+          mv t/plz-expected xt/
+      - name: Build and test
+        env:
+          BBBIKE_TEST_NO_CGI_TESTS:   1
+          BBBIKE_TEST_SKIP_MODPERL:   1
+          BBBIKE_TEST_SKIP_MAPSERVER: 1
+          BBBIKE_TEST_GUI:            0
+          BBBIKE_LONG_TESTS:          0
+        run: |
+          set -e
+          perl Makefile.PL
+          make
+          make test HARNESS_OPTIONS=j4 HARNESS_TIMER=1
+      - name: Run known failing tests
+        continue-on-error: true
+        run: |
+          prove -It -j4 -r xt
