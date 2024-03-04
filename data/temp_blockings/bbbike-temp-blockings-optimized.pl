@@ -3259,7 +3259,39 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
+#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
+#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
+#: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
+#: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
+#: tempex: YYYY0531-YYYY0603 vvv
+	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
+	2::temp 20199,6318 20262,6493 20225,6631
+	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
+#: tempex ^^^
+',
+         'from' => 1717106400,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2024',
+         'type' => 'gesperrt',
+         'until' => 1717279199
+       },
        undef,
        undef,
        {
@@ -4832,7 +4864,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147346633 (inaktiv)
+#: source_id: viz2021:13.402816,52.524238,23.02.2024,10:30 (bis 1.3.2024) (inaktiv) (bis 22.3.2024)
+#: source_id: bvg2021:n42#BVG343446_0
+#: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
+#: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
+#: note: laut rbb bis 22.03.2024
+#: last_checked: 2024-02-25 vvv
+#: next_check: 2024-03-22 vvv
+	q4::inwork; 10264,13097 10313,13227
+	q3::inwork; 10313,13227 10264,13097
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => 1708642800,
+         'id' => 3306,
+         'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn Richtung Norden gesperrt, Richtung Süden sind Einschränkungen möglich, vom 23.02.2024 10:30 bis 22.03.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1711123200
+       },
        undef,
        undef,
        undef,
@@ -5325,6 +5376,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
+#: last_checked: 2024-03-03 (mapillary)
+#: next_check: 2024-03-29
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 ',
          'from' => 1699830000,
@@ -5569,7 +5622,31 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'until' => 1727627400
        },
        undef,
-       undef,
+       {
+         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
+#: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html
+#: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
+	2::temp 17782,5698 17807,5730 17916,5675
+	2::temp 17810,5736 17877,5860
+	2::temp 18013,5627 17916,5675 17931,5695
+',
+         'from' => 1716501600,
+         'id' => 3553,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 25.5.2024 von 13:00 bis 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1716660000
+       },
        undef,
        undef,
        undef,
@@ -6210,7 +6287,8 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        undef,
        undef,
        {
-         'data' => '	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
+         'data' => '#: note: laut https://www.openstreetmap.org/note/3508579 ist das Tor "auch sonntags offen"
+	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
 ',
          'from' => undef,
          'id' => 3706,
@@ -6437,10 +6515,9 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        undef,
        {
          'data' => '#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
-#: note: laut osm "Baustelle bis Ende 2023"; mittlerweile wurde bei osm access=no entfernt
-#: osm_watch: way id="1153745378" version="2"
-#: last_checked: 2024-02-04 (wosch)
-#: next_check: 2024-03-03
+#: note: laut osm "Baustelle bis Ende 2023"
+#: osm_watch: way id="1153745378" version="3"
+#: last_checked: 2024-02-04 (mapillary)
 	2::inwork 13078,21754 13031,21538 12980,21411
 ',
          'from' => 1678819239,
@@ -6574,7 +6651,30 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
+#: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
+#: by: https://www.family-and-friends-ev.de/?date=20240303
+# REMOVED (hier nicht, fängt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
+	2::temp 577,11837 562,11710 560,11695 550,11607
+',
+         'from' => 1715914800,
+         'id' => 3788,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn zwischen Bayernallee und Badenallee gesperrt, vom 18.05.2024 bis 20.05.2024',
+         'type' => 'gesperrt',
+         'until' => 1716238800
+       },
        undef,
        undef,
        undef,
@@ -7193,7 +7293,18 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'type' => 'handicap',
          'until' => 1711922399
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.30431,52.51913,02.10.2023,11:00 (inaktiv)
+#: source_id: viz2021:13.305033,52.519175,04.03.2024,07:00 (bis 12.04.2024)
+# REMOVED ---	q4::inwork 3486,12473 3606,12484 3747,12495
+	q4::inwork 3606,12484 3747,12495
+',
+         'from' => 1709445600,
+         'id' => 3927,
+         'text' => 'Brauhofstr.: Bauarbeiten zwischen Wintersteinstr. und Eosanderstr., evtl. sind auch Radfahrer betroffen, vom 04.03.2024 07:00 bis 12.04.2024 20:00',
+         'type' => 'handicap',
+         'until' => 1712944800
+       },
        undef,
        undef,
        {
@@ -7883,6 +7994,46 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Flankenschanze: Bauarbeiten zwischen Falkenseer Damm und Bismarckstr., evtl. gibt es auch Einschränkungen für Radfahrer, bis 29.03.2024',
          'type' => 'handicap',
          'until' => 1711731600
+       },
+       {
+         'data' => '#: next_check_id: SPREERADWEGIBURGER-2024
+#: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
+#: last_checked: 2024-03-04 (daf)
+#: check_frequency: 90d
+#: next_check: 2025-05-01
+	2::inwork 3867,12616 3888,12618 4131,12641
+',
+         'from' => 1709576392,
+         'id' => 4016,
+         'text' => 'Spreeradweg: Bauarbeiten, Sperrung im Bereich Iburger Ufer, möglicherweise bis Mai 2025',
+         'type' => 'gesperrt',
+         'until' => 1748728800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024)
+#: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
+#: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
+	q4::inwork -6955,742 -6909,661
+',
+         'from' => 1709449200,
+         'id' => 4017,
+         'text' => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 31.05.2024 17:00 ',
+         'type' => 'handicap',
+         'until' => 1717167600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024)
+#: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
+#: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
+	2::inwork 16082,19754 15617,19775
+',
+         'from' => 1709445600,
+         'id' => 4018,
+         'text' => 'Malchower Teichweg: Anbindung an die B2 vermutlich gesperrt, vom 04.03.2024 07:00 bis 26.04.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1714143600
        }
      
 );

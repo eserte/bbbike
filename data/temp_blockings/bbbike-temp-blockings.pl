@@ -18203,6 +18203,7 @@ EOF
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/?date=20230325 (findet 2023 wie 2022 nur im Rathauspark statt, also vermutlich keine Sperrung der Straße)
+#: by: https://www.erkner.de/freizeit-tourismus/stadtgeschichte-kultur/traditionelle-feste-and-veranstaltungen/heimatfest.html (24.-26.5.2024, nur im Rathauspark oder mit Sperrung der Straße?)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -22069,7 +22070,7 @@ EOF
        until => $isodate2epoch->("2023-06-04 02:00:00"), 
        text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 03.06.2023',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 6, start => "2021-10-01T00:00:00"]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
+       recurrences => [['yearly', days => 31, months => 5, start => "2021-10-01T00:00:00"]], # kann Ende Mai, Anfang Juni, Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
@@ -22101,9 +22102,9 @@ EOF
 	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11309,19923 11423,19982 11555,20051
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-31 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2023',
+     { from  => $isodate2epoch->("2024-05-31 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-06-01 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2024',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5, start => "2021-10-25T00:00:00"]],
        type  => 'gesperrt',
@@ -22113,6 +22114,7 @@ EOF
 #: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
 #: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
 #: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
+#: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
 #: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
@@ -29944,10 +29946,11 @@ EOF
        until => $isodate2epoch->("2023-06-10 09:00:00"), # 1560549599, # 2019-06-14 23:59
        text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 06. Juni 2023 18 Uhr bis 10. Juni 2023 9 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 5, months => 6]],
+       recurrences => [['yearly', days => 14, months => 5]],
        type  => 'gesperrt',
-       source_id => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
        data  => <<EOF,
+#: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
+#: by: https://www.berliner-teamstaffel.de/event/strecke
 #: source_id: 2147344332 (inaktiv)
 #: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
@@ -32479,19 +32482,19 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-23 00:00:00"), # 1606024800, # 2020-11-22 07:00
-       until => $isodate2epoch->("2024-03-01 17:00:00"), # $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
+       until => $isodate2epoch->("2024-03-22 17:00:00"), # $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
        #text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
-       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn Richtung Norden gesperrt, Richtung Süden sind Einschränkungen möglich, vom 23.02.2024 10:30 bis 01.03.2024 17:00',
+       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn Richtung Norden gesperrt, Richtung Süden sind Einschränkungen möglich, vom 23.02.2024 10:30 bis 22.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147346633 (inaktiv)
-#: source_id: viz2021:13.402816,52.524238,23.02.2024,10:30 (bis 1.3.2024) (inaktiv)
+#: source_id: viz2021:13.402816,52.524238,23.02.2024,10:30 (bis 1.3.2024) (inaktiv) (bis 22.3.2024)
 #: source_id: bvg2021:n42#BVG343446_0
 #: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
 #: note: laut rbb bis 22.03.2024
 #: last_checked: 2024-02-25 vvv
-#: next_check: 2024-03-031 vvv
+#: next_check: 2024-03-22 vvv
 	q4::inwork; 10264,13097 10313,13227
 	q3::inwork; 10313,13227 10264,13097
 #: next_check ^^^
@@ -34830,6 +34833,8 @@ EOF
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
+#: last_checked: 2024-03-03 (mapillary)
+#: next_check: 2024-03-29
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 EOF
      },
@@ -35695,16 +35700,17 @@ EOF
 	q4::inwork 4516,5194 4477,5250 4430,5324
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-05 00:00:00"), # 1652421600, # 2022-05-13 08:00
-       until => $isodate2epoch->("2023-05-06 20:00:00"), # 1652562000, # 2022-05-14 23:00
+     { from  => $isodate2epoch->("2024-05-24 00:00:00"), # 1652421600, # 2022-05-13 08:00
+       until => $isodate2epoch->("2024-05-25 20:00:00"), # 1652562000, # 2022-05-14 23:00
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5]],
-       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 6.5.2023 von 13:00 bis 19:00 Uhr',
+       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 25.5.2024 von 13:00 bis 20:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'https://nitter.net/VIZ_Berlin/status/1525328801823133698#m',
        data  => <<EOF,
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
 #: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 	2::temp 17782,5698 17807,5730 17916,5675
 	2::temp 17810,5736 17877,5860
 	2::temp 18013,5627 17916,5675 17931,5695
@@ -36039,7 +36045,7 @@ EOF
      { from  => $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00
        until => $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 5]],
+       recurrences => [['yearly', days => 24, months => 4]],
        text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 15.05.2023 bis 17.05.2023 06:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -37973,6 +37979,7 @@ EOF
        recurring => 1,
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: laut https://www.openstreetmap.org/note/3508579 ist das Tor "auch sonntags offen"
 	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
 EOF
      },
@@ -38541,10 +38548,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEBAMMENSTEIGBRUECKE-2021
-#: note: laut osm "Baustelle bis Ende 2023"; mittlerweile wurde bei osm access=no entfernt
-#: osm_watch: way id="1153745378" version="2"
-#: last_checked: 2024-02-04 (wosch)
-#: next_check: 2024-03-03
+#: note: laut osm "Baustelle bis Ende 2023"
+#: osm_watch: way id="1153745378" version="3"
+#: last_checked: 2024-02-04 (mapillary)
 	2::inwork 13078,21754 13031,21538 12980,21411
 EOF
      },
@@ -39082,16 +39088,17 @@ EOF
 	q4::inwork; 17251,11789 17306,11866
 EOF
      },
-     { from  => $isodate2epoch->("2023-05-26 05:00:00"),
-       until => $isodate2epoch->("2023-05-29 23:00:00"),
-       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn zwischen Bayernallee und Badenallee gesperrt, vom 27.05.2023 bis 29.05.2023',
+     { from  => $isodate2epoch->("2024-05-17 05:00:00"), # $isodate2epoch->("2023-05-26 05:00:00"),
+       until => $isodate2epoch->("2024-05-20 23:00:00"), # $isodate2epoch->("2023-05-29 23:00:00"),
+       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn zwischen Bayernallee und Badenallee gesperrt, vom 18.05.2024 bis 20.05.2024',
        periodic => 1,
-       recurrences => [['yearly', days => 27, months => 5]],
+       recurrences => [['yearly', days => 18, months => 5]],
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
 #: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
+#: by: https://www.family-and-friends-ev.de/?date=20240303
 # REMOVED (hier nicht, fängt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
 	2::temp 577,11837 562,11710 560,11695 550,11607
 EOF
@@ -40857,13 +40864,16 @@ EOF
 	q3::inwork 7103,11247 7171,11510
 EOF
      },
-     { from  => 1696150800, # 2023-10-01 11:00
-       until => 1698681600, # 2023-10-30 17:00
-       text  => 'Brauhofstr.: Bauarbeiten in Höhe Eosanderstr., evtl. sind auch Radfahrer betroffen, vom 02.10.2023 11:00 bis 30.10.2023 17:00',
+     { from  => $isodate2epoch->("2024-03-03 07:00:00"), # 1696150800, # 2023-10-01 11:00
+       until => $isodate2epoch->("2024-04-12 20:00:00"), # 1698681600, # 2023-10-30 17:00
+       #text  => 'Brauhofstr.: Bauarbeiten in Höhe Eosanderstr., evtl. sind auch Radfahrer betroffen, vom 02.10.2023 11:00 bis 30.10.2023 17:00',
+       text  => 'Brauhofstr.: Bauarbeiten zwischen Wintersteinstr. und Eosanderstr., evtl. sind auch Radfahrer betroffen, vom 04.03.2024 07:00 bis 12.04.2024 20:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.30431,52.51913,02.10.2023,11:00', # inaktiv
        data  => <<EOF,
-	q4::inwork 3486,12473 3606,12484 3747,12495
+#: source_id: viz2021:13.30431,52.51913,02.10.2023,11:00 (inaktiv)
+#: source_id: viz2021:13.305033,52.519175,04.03.2024,07:00 (bis 12.04.2024)
+# REMOVED ---	q4::inwork 3486,12473 3606,12484 3747,12495
+	q4::inwork 3606,12484 3747,12495
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
@@ -42102,4 +42112,41 @@ EOF
 EOF
      },
 # 
+     { from  => 1709576392, # 2024-03-04 19:19
+       until => 1748728800, # 2025-06-01 00:00
+       text  => 'Spreeradweg: Bauarbeiten, Sperrung im Bereich Iburger Ufer, möglicherweise bis Mai 2025',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: SPREERADWEGIBURGER-2024
+#: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
+#: last_checked: 2024-03-04 (daf)
+#: check_frequency: 90d
+#: next_check: 2025-05-01
+	2::inwork 3867,12616 3888,12618 4131,12641
+EOF
+     },
+     { from  => 1709449200, # 2024-03-03 08:00
+       until => 1717167600, # 2024-05-31 17:00
+       text  => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 31.05.2024 17:00 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024)
+#: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
+#: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
+	q4::inwork -6955,742 -6909,661
+EOF
+     },
+     { from  => 1709445600, # 2024-03-03 07:00
+       until => 1714143600, # 2024-04-26 17:00
+       text  => 'Malchower Teichweg: Anbindung an die B2 vermutlich gesperrt, vom 04.03.2024 07:00 bis 26.04.2024 17:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024)
+#: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
+#: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
+	2::inwork 16082,19754 15617,19775
+EOF
+     },
     );
