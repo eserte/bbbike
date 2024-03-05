@@ -2091,7 +2091,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-02-24
+#: last_checked: 2024-03-05 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
 # REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -8424,6 +8424,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.bahninfo-forum.de/read.php?9,697176,697901#msg-697901 (Radspuren, Linienverkehr frei)
 #: by: https://www.bahninfo-forum.de/read.php?9,697176,698062#msg-698062 (Busspuren dort, wo Radwege existieren)
 #: by: https://viz.berlin.de/2021/04/u6-sev/ (hier: bis 07.10.2021)
+#: by[nocache]: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 # REMOVED (until August 2021?) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=79259
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1075251.php (über "umgesetzte Fahrzeuge")
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/45-umsetzungen-und-anzeigen_a307203
@@ -8451,7 +8452,9 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1347486.php (Fortsetzung der Baumaßnahme, "bis zum Ende des Jahres" (2023))
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/radstreifen-auf-dem-ma-damm_a388306
 #: by: https://www.morgenpost.de/berlin/article239922697/U-Bahnhof-Ullsteinstrasse-Sanierung-noch-bis-Ende-2024.html (provisorischer Radweg über dem U-Bhf. Ullsteinstr. möglicherweise bis Ende 2024)
-# REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764598112117559697
+#: by: https://pbs.twimg.com/media/GH0cRlXXMAAYlAB?format=jpg&name=large
+#: by: https://pbs.twimg.com/media/GH0cccXX0AA1cNv?format=jpg&name=large
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
@@ -8480,8 +8483,9 @@ Leitboys	RW4; 9254,6542 9249,6642
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 #: osm_watch: way id="111048866" version="18"
+provisorische Führung als getrennter Rad/Gehweg	RW2; 9206,5193 9239,4980 9248,4904
 #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
-provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
+provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9248,4904 9259,4815 9275,4672
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680188" version="24"
 # REMOVED --- #: osm_watch: way id="28680187" version="20"
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
@@ -8489,7 +8493,8 @@ Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680189" version="22"
 #: osm_watch: way id="1214584012" version="2"
 #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
-provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
+provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9275,4672 9259,4815 9248,4904 9239,4980
+provisorische Führung als getrennter Rad/Gehweg	RW2; 9239,4980 9206,5193
 #: osm_watch: way id="4526218" version="30"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535

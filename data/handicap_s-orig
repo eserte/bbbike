@@ -308,8 +308,9 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED (nicht mehr) --- #: next_check_id: MOLKENMARKT-2021 --- #: next_check_id: STRALAUER-2023 --- #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023) --- #: last_checked: 2023-08-11 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-09-30 vvv --- # REMOVED (hier nicht mehr) --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249 --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2024-02-24 vvv
-#: check_frequency: 90d vvv
+#: note: wobei die Absperrungen offen sein können (außerhalb der Arbeitszeiten?)
+#: last_checked: 2024-03-05 (webcam) vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: XXX nach Fertigstellung des Molkenmarkts entfernen
 # REMOVED --- Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 # REMOVED --- Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
@@ -375,7 +376,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-02-29 (webcam)
+#: last_checked: 2024-03-05 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515

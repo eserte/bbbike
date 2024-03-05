@@ -5850,7 +5850,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2024-02-17 (mapillary) vvv
+#: last_checked: 2024-03-03 (mapillary) vvv
 #: next_check: 2024-04-01 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -6899,10 +6899,12 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
 #: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
-#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024)
+#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024) (inaktiv)
 #: source_id[expired]: bvg2021:m43#BVG340191_0
+#: also_indoor: traffic (G,B)
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: note: laut rbb bis 08.03.2024
+#: note: laut bing ist die Plesser Str. noch gesperrt
 #: last_checked: 2024-02-28 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-03-05 vvv
@@ -6917,9 +6919,9 @@ Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
 ',
          'from' => 1704999960,
          'id' => 3844,
-         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 05.03.2024 17:00 Uhr',
+         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 05.03.2024 17:00 Uhr, evtl. auch länger',
          'type' => 'handicap',
-         'until' => 1709654400
+         'until' => undef
        },
        undef,
        undef,
@@ -7600,18 +7602,7 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'until' => 1710197999
        },
        undef,
-       {
-         'data' => '#: next_check_id: GROSSBEEREN-2023
-# REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25
-#: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024) (inaktiv) (bis 05.03.2024)
-	q3::inwork 9178,10451 9192,10528
-',
-         'from' => 1706641941,
-         'id' => 3973,
-         'text' => 'Großbeerenstr.: Abschnitt der Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.01.2024 06:00 bis 05.03.2024 12:00',
-         'type' => 'handicap',
-         'until' => 1709636400
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.300851,52.527492,22.11.2023,07:00 (bis 13.12.2023) (inaktiv)
@@ -7754,7 +7745,7 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
        },
        {
          'data' => '#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (B,G,W)
 #: last_checked: 2024-02-05 (mapillary)
 # REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
@@ -8034,6 +8025,26 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Malchower Teichweg: Anbindung an die B2 vermutlich gesperrt, vom 04.03.2024 07:00 bis 26.04.2024 17:00',
          'type' => 'gesperrt',
          'until' => 1714143600
+       },
+       {
+         'data' => '#: source_id: 246300586 (bis 03.04.2024)
+	2::inwork -62241,18760 -62229,18971 -62217,19221
+',
+         'from' => 1711274400,
+         'id' => 4019,
+         'text' => 'B102: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 25.03.2024 11:00 Uhr bis 03.04.2024 06:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1712116800
+       },
+       {
+         'data' => '#: source_id: 247200038 (bis 05.04.2024)
+	2::inwork 13095,-20435 12154,-20220
+',
+         'from' => 1711263600,
+         'id' => 4020,
+         'text' => 'B246, Nächst Neuendorf: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 25.03.2024 08:00 Uhr bis 05.04.2024 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1712329200
        }
      
 );
