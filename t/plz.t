@@ -305,13 +305,13 @@ for my $noextern (@extern_order) {
 
 	@res = $plz->look_loop(PLZ::split_street("  Str. des 17. Juni 153  "),
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Straße des 17. Juni' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Straße des 17. Juni' } @{$res[0]}),
 	   "Hits for Straße des 17. Juni (hard one)")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop(PLZ::split_street("gaertnerstrasse 22"),
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Gärtnerstr.' } @{$res[0]}), 1)
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Gärtnerstr.' } @{$res[0]}))
 	    or diag $dump->(\@res);
 
 	## This is too hard: the algorithm can't strip "strasse" because of the missing
@@ -323,13 +323,13 @@ for my $noextern (@extern_order) {
 
 	@res = $plz->look_loop(PLZ::split_street("Grossbeerenstr. 27a"),
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Großbeerenstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Großbeerenstr.' } @{$res[0]}),
 	   "Missing sz")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop(PLZ::split_street("Leibnizstrasse 3-4"),
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Leibnizstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Leibnizstr.' } @{$res[0]}),
 	   "`strasse' instead of `str.', complex house number")
 	    or diag $dump->(\@res);
 	like $res[0]->[0]->[PLZ::LOOK_COORD], COORD_RX, 'looks like coordinate'
@@ -337,7 +337,7 @@ for my $noextern (@extern_order) {
 
 	@res = $plz_multi->look_loop(PLZ::split_street("Mühlenstraße 24 - 26"),
 				     @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Mühlenstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Mühlenstr.' } @{$res[0]}),
 	   "`straße' instead of `str.', complex house number with whitespace")
 	    or diag $dump->(\@res);
 	like $res[0]->[0]->[PLZ::LOOK_COORD], COORD_RX, 'looks like coordinate'
@@ -345,56 +345,56 @@ for my $noextern (@extern_order) {
 
 	@res = $plz->look_loop(PLZ::split_street("Sanderstr. 29/30"),
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Sanderstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Sanderstr.' } @{$res[0]}),
 	   "Complex house number")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("Tierpark",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Am Tierpark' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Am Tierpark' } @{$res[0]}),
 	   "Tierpark => Am Tierpark")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("Schumacher",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Kurt-Schumacher-Damm' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Kurt-Schumacher-Damm' } @{$res[0]}),
 	   "Schumacher => Kurt-Schumacher")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("karower chausee",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Karower Chaussee' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Karower Chaussee' } @{$res[0]}),
 	   "Rechtschreibfehler")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("Augsburger Str. (Charlottenburg",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}),
 	   "Quoting regexp")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("Augsburger Str. (Charlottenburg",
 			       @standard_look_loop_args, GrepType => "grep-umlaut");
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}),
 	   "Quoting regexp for grep-umlaut search type")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("Augsburger Str. (Charlottenburg",
 			       @standard_look_loop_args,
 			       GrepType => "grep", Noextern => 1);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}),
 	   "Quoting regexp for grep search type")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("U-Bhf Platz der Luftbr",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Platz der Luftbrücke' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Platz der Luftbrücke' } @{$res[0]}),
 	   "U-Bahnhof")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("S-Bhf. Grünau",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grünau' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grünau' } @{$res[0]}),
 	   "S-Bhf with dot, should find Grünau")
 	    or diag $dump->(\@res);
 	is(scalar(@{$res[0]}), 1, "S-Bhf with dot, should be exact")
@@ -402,67 +402,67 @@ for my $noextern (@extern_order) {
 
 	@res = $plz->look_loop("u weberwiese",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}),
 	   "U-Bahnhof, abbreviated")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s+u wedding",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Wedding' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Wedding' } @{$res[0]}),
 	   "S+U-Bahnhof, abbreviated")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("u+s friedrichstr.",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}),
 	   "U+S-Bahnhof, abbreviated (unusual order)")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s+u-bhf alexanderpl",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Alexanderplatz' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Alexanderplatz' } @{$res[0]}),
 	   "U+S-Bahnhof, middle form")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("u+s-bhf zoo",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Zoologischer Garten' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Zoologischer Garten' } @{$res[0]}),
 	   "U+S-Bahnhof, middle form (unusual order)")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s+u-bahnhof friedrichstr.",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}),
 	   "U+S-Bahnhof, long form")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("u+s-bahnhof friedrichstr.",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}),
 	   "U+S-Bahnhof, long form (unusual order)")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("u+s bahnhof friedrichstr.",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}),
 	   "U+S Bahnhof, long form with space (unusual order)")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s-bahnhof heerstr",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Heerstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Heerstr.' } @{$res[0]}),
 	   "S-Bahnhof (Heerstr), long form")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s-bahnhof grunewald",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}),
 	   "S-Bahnhof (Grunewald), long form")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look_loop("s bahnhof grunewald",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}),
 	   "S Bahnhof (Grunewald), long form with space")
 	    or diag $dump->(\@res);
 
@@ -474,7 +474,7 @@ for my $noextern (@extern_order) {
 
 	@res = $plz->look_loop("hauptbahnhof",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Hauptbahnhof' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Hauptbahnhof' } @{$res[0]}),
 	   "S-Bahnhof")
 	    or diag $dump->(\@res);
 
@@ -513,20 +513,20 @@ for my $noextern (@extern_order) {
 	    or diag $dump->(\@res);
 
 	@res = $plz_multi->look_loop("kl. präsidentenstr.");
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Kleine Präsidentenstr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Kleine Präsidentenstr.' } @{$res[0]}),
 	   "Expanding kl.")
 	    or diag $dump->(\@res);
 	@res = $plz_multi->look_loop("gr. seestr.");
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Große Seestr.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Große Seestr.' } @{$res[0]}),
 	   "Expanding gr.")
 	    or diag $dump->(\@res);
 
 	@res = $plz_multi->look_loop(PLZ::split_street("potsdam, schopenhauerstr."),
 				     @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq "Schopenhauerstr." } @{$res[0]}), 1, 
+	ok((grep { $_->[PLZ::LOOK_NAME] eq "Schopenhauerstr." } @{$res[0]}),
 	   "split_street with city, street syntax, city part")
 	    or diag $dump->(\@res);
-	is(!!(grep { $_->[PLZ::LOOK_CITYPART] eq "Potsdam" } @{$res[0]}), 1, 
+	ok((grep { $_->[PLZ::LOOK_CITYPART] eq "Potsdam" } @{$res[0]}),
 	   "split_street with city, street syntax, street part")
 	    or diag $dump->(\@res);
 
@@ -559,7 +559,7 @@ for my $noextern (@extern_order) {
 	# Check also for an agrep trap: comma is a special boolean operator
 	@res = $plz->look_loop("Gustav-müller-str, 16",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Gustav-Müller-Str.' } @{$res[0]}), 1,
+	ok((grep { $_->[PLZ::LOOK_NAME] eq 'Gustav-Müller-Str.' } @{$res[0]}),
 	   "Hard stuff: strip house number and comma used instead of dot")
 	    or diag $dump->(\@res);
 
