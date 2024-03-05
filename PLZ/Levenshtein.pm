@@ -31,7 +31,17 @@ sub look_loop_levenshtein {
     my %street_to_distance;
     my %street_to_data;
     my $overall_best_distance = 999999;
-    for my $pass (0, 1, 2, 3) {
+    for my $pass (0, 1, 2, 3, 4) {
+	if ($pass == 4) { # this corresponds to step 5. in PLZ::look_loop
+	    if (length $str >= 4) {
+		my @matchref = $self->look($str, GrepType => 'grep-inword');
+		if (@matchref) {
+		    return (\@matchref, 0);
+		}
+	    }
+	    next;
+	}
+
 	my $transformed;
 	if ($pass == 0) {
 	    $transformed = $str;
