@@ -4231,7 +4231,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9988 (Antrag; Bauarbeiten noch bis 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/auf-der-treskowallee-wird-seit-acht-jahren-gebuddelt_a397984
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
-#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -4239,8 +4239,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
-#: check_frequency: 100d vvv
-#: next_check: 2024-03-16 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-08-30 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -4261,9 +4261,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => undef,
          'id' => 3007,
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Mitte März 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Ende August 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
          'type' => 'handicap',
-         'until' => 1710608400
+         'until' => 1725033600
        },
        undef,
        undef,
@@ -4870,7 +4870,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: bvg2021:n42#BVG343446_0
 #: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
-#: note: laut rbb bis 22.03.2024
+#: also_indoor: traffic (G,B,W)
+#: note: laut rbb bis 22.03.2024, mittlerweile entfernt, und wieder da
 #: last_checked: 2024-02-25 vvv
 #: next_check: 2024-03-22 vvv
 	q4::inwork; 10264,13097 10313,13227
@@ -6193,7 +6194,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
        },
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (W,G)
+#: also_indoor: traffic (ex-W,ex-G)
 #: last_checked: 2023-12-09
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
@@ -6893,36 +6894,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id[expired]: bvg2021:m43#BVG323893_0
-#: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
-#: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
-#: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
-#: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
-#: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024) (inaktiv)
-#: source_id[expired]: bvg2021:m43#BVG340191_0
-#: also_indoor: traffic (G,B)
-# REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
-#: note: laut rbb bis 08.03.2024
-#: note: laut bing ist die Plesser Str. noch gesperrt
-#: last_checked: 2024-02-28 vvv
-#: check_frequency: 14d vvv 
-#: next_check: 2024-03-05 vvv
-Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
-Plesser Str.	q4::inwork 13647,9304 13667,9316
-Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
-# REMOVED --- Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
-# REMOVED --- #: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str. --- Elsenstr.	q3::inwork; 13849,9310 13766,9200
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1704999960,
-         'id' => 3844,
-         'text' => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 05.03.2024 17:00 Uhr, evtl. auch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7131,14 +7103,14 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
-#: last_checked: 2024-02-21 (bahninfo-forum) vvv
+#: last_checked: 2024-03-06 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="2"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
-#: osm_watch: way id="176072020" version="33"
+#: osm_watch: way id="176072020" version="34"
 	q4::inwork 17991,6431 17948,6248
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7372,12 +7344,12 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        {
          'data' => '#: next_check_id: BLUMBERGER-2023
-#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024)
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="10"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024)
+#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 #: source_id: viz2021:13.57564,52.5581,16.10.2023,07:00 (bis 14.03.2024)
 #: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024)
 #: osm_watch: way id="9030384" version="38"
@@ -7386,9 +7358,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => 1697346000,
          'id' => 3938,
-         'text' => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 14.03.2024 17:00',
+         'text' => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 12.04.2024 17:00',
          'type' => 'handicap',
-         'until' => 1710432000
+         'until' => 1712934000
        },
        undef,
        undef,
@@ -7589,7 +7561,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        },
        {
          'data' => '#: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024)
+#: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832
 #: also_indoor: traffic (G,B,W)
 Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501
@@ -7847,15 +7819,15 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024)
+         'data' => '#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024)
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
 	q4::inwork 1139,5308 1212,5353
 ',
          'from' => 1681974000,
          'id' => 4004,
-         'text' => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 08.03.2024 17:00',
+         'text' => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.03.2024 17:00',
          'type' => 'handicap',
-         'until' => 1709913600
+         'until' => 1711555200
        },
        {
          'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
@@ -7915,8 +7887,8 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
-#: osm_watch: note 4125418 4
-#: osm_watch: way id="623465365" version="3"
+#: osm_watch[closed]: note 4125418 5
+#: osm_watch: way id="1258660768" version="1"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
@@ -7976,8 +7948,8 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1723937233072165285#m (nur Kfz-Verkehr, bis März 2024)
-#: source_id: viz2021:13.19858,52.54291,13.11.2023,07:00 (bis 29.03.2024)
-#: also_indoor: traffic (G,B,W)
+#: source_id: viz2021:13.19858,52.54291,13.11.2023,07:00 (bis 29.03.2024) (vorfristig inaktiv)
+#: also_indoor: traffic (G,B,ex-W)
 	q4::inwork -3572,15082 -3638,14995
 ',
          'from' => undef,
@@ -8045,6 +8017,18 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'B246, Nächst Neuendorf: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 25.03.2024 08:00 Uhr bis 05.04.2024 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1712329200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
+#: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
+#: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
+	q3::inwork 15720,4341 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
+',
+         'from' => 1711234800,
+         'id' => 4021,
+         'text' => 'Johannisthaler Chaussee: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 6. April 2024',
+         'type' => 'handicap',
+         'until' => 1712440799
        }
      
 );

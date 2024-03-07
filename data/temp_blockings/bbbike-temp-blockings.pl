@@ -28563,8 +28563,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-03-16 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Mitte März 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+       until => $isodate2epoch->("2024-08-30 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Ende August 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
        type  => 'handicap',
        # alt: source_id => '2147342174',
        data  => <<EOF,
@@ -28578,7 +28578,7 @@ EOF
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9988 (Antrag; Bauarbeiten noch bis 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/auf-der-treskowallee-wird-seit-acht-jahren-gebuddelt_a397984
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
-#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -28586,8 +28586,8 @@ EOF
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
-#: check_frequency: 100d vvv
-#: next_check: 2024-03-16 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2024-08-30 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -32492,7 +32492,8 @@ EOF
 #: source_id: bvg2021:n42#BVG343446_0
 #: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
-#: note: laut rbb bis 22.03.2024
+#: also_indoor: traffic (G,B,W)
+#: note: laut rbb bis 22.03.2024, mittlerweile entfernt, und wieder da
 #: last_checked: 2024-02-25 vvv
 #: next_check: 2024-03-22 vvv
 	q4::inwork; 10264,13097 10313,13227
@@ -37785,7 +37786,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (W,G)
+#: also_indoor: traffic (ex-W,ex-G)
 #: last_checked: 2023-12-09
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
@@ -39771,7 +39772,7 @@ EOF
 EOF
      },
      { from  => 1704999960, # 1688497366, # 2023-07-04 21:02
-       until => undef, # $isodate2epoch->("2024-03-05 17:00:00"), # $isodate2epoch->("2023-07-25 17:00:00"), # 1689951600, # 2023-07-21 17:00
+       until => 1709839231, # undef, # $isodate2epoch->("2024-03-05 17:00:00"), # $isodate2epoch->("2023-07-25 17:00:00"), # 1689951600, # 2023-07-21 17:00
        #text  => 'Karl-Kunger-Str., Elsenstr.: Bauarbeiten, kurze Einbahnstraßenabschnitte, bis 25.07.2023',
        text  => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 05.03.2024 17:00 Uhr, evtl. auch länger',
        type  => 'handicap',
@@ -39783,10 +39784,10 @@ EOF
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024) (inaktiv)
 #: source_id[expired]: bvg2021:m43#BVG340191_0
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (ex-G,ex-B)
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: note: laut rbb bis 08.03.2024
-#: note: laut bing ist die Plesser Str. noch gesperrt
+#: note: laut bing ist die Plesser Str. noch gesperrt, mittlerweile nicht mehr
 #: last_checked: 2024-02-28 vvv
 #: check_frequency: 14d vvv 
 #: next_check: 2024-03-05 vvv
@@ -40549,14 +40550,14 @@ EOF
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
-#: last_checked: 2024-02-21 (bahninfo-forum) vvv
+#: last_checked: 2024-03-06 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-11 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="2"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
-#: osm_watch: way id="176072020" version="33"
+#: osm_watch: way id="176072020" version="34"
 	q4::inwork 17991,6431 17948,6248
 #: next_check ^^^
 #: check_frequency ^^^
@@ -40887,7 +40888,7 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731915050880024610#m (neue Verkehrsführung, gilt die Einbahnstraße tatsächlich nicht für Radfahrer?)
 #: source_id: viz2021:13.452867,52.524141,04.10.2023,07:00 (bis 15.11.2023) (kein Endedatum mehr) (bis 5.12.2023) (inaktiv)
 #: source_id: viz2021:13.4529,52.52415,20.12.2023,10:50 (bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
+#: source_id: viz2021:13.452891,52.5241,05.12.2023,07:00 (bis 20.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv) (bis 12.03.2024)
 #: note: bei rbb bis 17.11.2023 terminiert (dieser Termin kann aber nicht gehalten werden) (mittlerweile bis 20.12.2023, weitere Arbeiten im Anschluss)
 #: osm_watch: note 3677859 4
 # REMOVED (zwei Einbahnstraßenregelungen, Radfahrer frei) --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: last_checked: 2023-11-16 --- #: next_check: 2023-12-05
@@ -41004,17 +41005,17 @@ EOF
 EOF
      },
      { from  => 1697346000, # 2023-10-15 07:00
-       until => $isodate2epoch->("2024-03-14 17:00:00"), # 1702656000, # 2023-12-15 17:00
-       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 14.03.2024 17:00',
+       until => $isodate2epoch->("2024-04-12 17:00:00"), # 1702656000, # 2023-12-15 17:00
+       text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 12.04.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BLUMBERGER-2023
-#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024)
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="10"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024)
+#: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 #: source_id: viz2021:13.57564,52.5581,16.10.2023,07:00 (bis 14.03.2024)
 #: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024)
 #: osm_watch: way id="9030384" version="38"
@@ -41480,7 +41481,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024)
+#: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832
 #: also_indoor: traffic (G,B,W)
 Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501
@@ -41941,11 +41942,11 @@ EOF
 EOF
      },
      { from  => 1681974000, # 2023-04-20 09:00
-       until => 1709913600, # 2024-03-08 17:00
-       text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 08.03.2024 17:00',
+       until => $isodate2epoch->("2024-03-27 17:00:00"), # 1709913600, # 2024-03-08 17:00
+       text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024)
+#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024)
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
 	q4::inwork 1139,5308 1212,5353
 EOF
@@ -42052,8 +42053,8 @@ EOF
 #: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
-#: osm_watch: note 4125418 4
-#: osm_watch: way id="623465365" version="3"
+#: osm_watch[closed]: note 4125418 5
+#: osm_watch: way id="1258660768" version="1"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
@@ -42108,8 +42109,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1723937233072165285#m (nur Kfz-Verkehr, bis März 2024)
-#: source_id: viz2021:13.19858,52.54291,13.11.2023,07:00 (bis 29.03.2024)
-#: also_indoor: traffic (G,B,W)
+#: source_id: viz2021:13.19858,52.54291,13.11.2023,07:00 (bis 29.03.2024) (vorfristig inaktiv)
+#: also_indoor: traffic (G,B,ex-W)
 	q4::inwork -3572,15082 -3638,14995
 EOF
      },
@@ -42167,6 +42168,17 @@ EOF
        data  => <<EOF,
 #: source_id: 247200038 (bis 05.04.2024)
 	2::inwork 13095,-20435 12154,-20220
+EOF
+     },
+     { from  => 1711234800, # 2024-03-24 00:00
+       until => 1712440799, # 2024-04-06 23:59
+       text  => 'Johannisthaler Chaussee: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 6. April 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
+#: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
+#: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
+	q3::inwork 15720,4341 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
 EOF
      },
     );

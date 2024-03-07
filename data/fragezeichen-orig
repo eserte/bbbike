@@ -626,10 +626,11 @@ Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projecte
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1129298.php (Erwähnung des Barbarossaplatzes und weiterer Projekte in Berlin)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/barbarossaplatz/ (Neugestaltung)
 #: by: https://berliner-abendblatt.de/berlin-news/fit-fuers-klima-diese-gruenanlagen-und-strassen-werden-umgebaut-id209520
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1424703.php (Beteiligung zur Umgestaltung)
 #: XXX entfällt auch die Einbahnstraßenregelung?
 #: osm_watch: way id="4597427" version="20"
 #: also_indoor: traffic
-#: last_checked: 2023-10-21
+#: last_checked: 2024-03-06 (Pressemitteilung)
 #: check_frequency: 120d
 Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 6731,9559 6733,9560
 # 
@@ -641,9 +642,9 @@ Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 673
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
 #: by: https://api.fixmyberlin.de/api/projects/386 (execution; construction_completed: 2020; hier sogar bis Neue Straße)
 #: source_id: viz2021:13.378538,52.466131,28.07.2022,07:00 (Leitungsarbeiten bis 19.8.2022) (mittlerweile bis 16.8.2022) (inaktiv)
-#: osm_watch: way id="1188813479" version="3"
-#: osm_watch: way id="35072914" version="23"
-#: osm_watch: way id="31003580" version="28"
+#: osm_watch: way id="1188813479" version="4"
+#: osm_watch: way id="35072914" version="24"
+#: osm_watch: way id="31003580" version="29"
 #: last_checked: 2024-02-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier bereits markiert) --- Alt-Tempelhof: Radverkehrsanlage geplant	?::projected 8739,6701 8787,6660
@@ -791,7 +792,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: source_id: viz2021:13.377293,52.482598,07.09.2023,07:00 (bis 29.09.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 17.10.2023) (inaktiv)
 #: source_id: viz2021:13.377293,52.482598,17.10.2023,10:00 (Richtung Süden; bis 27.10.2023) (inaktiv)
 #: source_id[expired]: bvg2021:248#BVG335746_0 (Umleitung ab 24.11.2023)
-#: source_id: viz2021:13.377018,52.476871,19.02.2024,07:00 (Anbindung Werner-Voß-Damm gesperrt, bis 05.03.2024) (bis 22.03.2024)
+#: source_id: viz2021:13.377018,52.476871,19.02.2024,07:00 (Anbindung Werner-Voß-Damm gesperrt, bis 05.03.2024) (bis 22.03.2024) (inaktiv)
 #: source_id: viz2021:13.37688,52.47693,19.02.2024,07:00 (bis 05.03.2024) (inaktiv)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759459548484788347#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGra8PuXEAADWYe.jpg
@@ -811,7 +812,7 @@ Boelckestr.: Bau neuer Radverkehrsanlagen (Radspuren)	?::inwork; 8660,8454 8670,
 #: osm_watch: way id="151571084" version="29"
 #: osm_watch: way id="169753564" version="28"
 #: source_id: viz2021:13.377161,52.476592,01.09.2023,09:00 (bis 29.09.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 17.10.2023) (inaktiv)
-#: source_id: bvg2021:140#BVG332026_0 (Haltestellenverlegung)
+#: source_id[expired]: bvg2021:140#BVG332026_0 (Haltestellenverlegung)
 #: XXX Richtung Norden realisiert, Ausschilderung fehlt noch
 #: last_checked: 2024-02-11
 #: check_frequency: 60d
@@ -1707,7 +1708,7 @@ Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::pro
 #: source_id: 2147345785 (bis 16.5.2020) (inaktiv)
 #: source_id: viz2021:13.515237,52.567077,08.09.2023,07:00 (Leitungsarbeiten bis 22.12.2023) (inaktiv)
 #: source_id: viz2021:13.514671,52.566742,08.09.2023,07:00 (bis 23.02.2024) (inaktiv)
-#: source_id: viz2021:13.515237,52.567077,06.10.2023,10:00 (Leitungsarbeiten bis 17.11.2023) (bis 22.12.2023) (bis 23.02.2024) (bis 07.03.2024)
+#: source_id: viz2021:13.515237,52.567077,06.10.2023,10:00 (Leitungsarbeiten bis 17.11.2023) (bis 22.12.2023) (bis 23.02.2024) (bis 07.03.2024) (inaktiv)
 #: last_checked: 2023-12-28
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2024-03-07
@@ -2060,11 +2061,13 @@ Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben	
 #: by: https://api.fixmyberlin.de/api/plannings/214 (Erneuerung des Fahrbahnbelags)
 #: by: https://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022) (mittlerweile gelöscht) (wieder da: 1. Quartal 2023 - 3. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2024) (1. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2024 - 2. Quartal 2025)
 #: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1424558.php (Bauarbeiten beginnen am 18.3.2024, Dauer 8 Monate)
 #: osm_watch: way id="47574921" version="16"
 #: osm_watch: way id="119024153" version="11"
 #: last_checked: 2024-02-07
-#: check_frequency: 180d
-#: next_check: 2025-06-30
+#: check_frequency: 120d
+#: next_check: 2024-11-18
+# REMOVED --- #: next_check: 2025-06-30
 Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 # 
 #: by: http://www.berliner-woche.de/mariendorf/bauen/es-stockt-beim-ausbau-des-mariendorfer-hafen-wegs-d134880.html
@@ -2992,6 +2995,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/noch-zwei-jahre-grossbaustelle_a403149 (Komplettfertigstellung bis Ende 2025?)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8892 (Anfrage)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tMs40ZsJgUSohCRtaKtA9nECAaVdKy1NRp9BrMMK/btlSTFXb/99-Anlagen/02/813MA_1122_Dauerbaustelle_und__k_ein_Ende_in_S.pdf (Antwort, bis Ende 2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (aktuelle Maßnahme bis voraussichtlich 2026)
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv)
@@ -3486,10 +3490,11 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: XXX mittlerweile ist am südlichen Strang bereits ein Weg/Fahrbahn sichtbar; evtl. wird es auch einen nördlichen Strang in Höhe Sellerstraße geben
 #: XXX bei osm ohne Namen; siehe auch oben wegen einer möglichen anderen Straße mit dem Namen Clara-Mleinek-Str.
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2024-02-15
+#: last_checked: 2024-03-07 (webcam)
 #: check_frequency: 60d
 Clara-Mleinek-Str. (Ziffer 3; platzähnlich): geplante Straße; Qualität?	?::projected 7529,14274 7612,14325
 #: osm_watch: note 3892438 2
+#: osm_watch: way id="1255643497" version="1"
 #: last_checked: 2024-01-08
 #: check_frequency: 60d
 (Weg in Verlängerung der Hedwig-Porschütz-Str. (südlicher Strang)): wird hier ein Weg oder eine Straße entstehen? Straßenname?	?::inwork 7697,14187 7614,14136
@@ -3798,6 +3803,7 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1386085.php (erster Bauabschnitt: Ritterfelddamm - Seekorso, zweiter Bauabschnitt Rest)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.667818.php
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1423424.php (Umbauarbeiten ab 4.3.2024, bis Anfang Juni 2024?)
+#: by: https://www.berliner-woche.de/kladow/c-umwelt/kladower-kurpromenade-und-umliegende-strassen-erhalten-eine-regenentwaesserung_a409394
 # REMOVED --- #: osm_watch: note 2383554 2
 #: osm_watch: way id="4898662" version="25"
 #: add_fragezeichen: Wurde die Fahrbahn in der Kurpromenade erneuert?
@@ -6820,6 +6826,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://nitter.it/pic/orig/media%2FFplKYsvWAAI1p5L.jpg (Radverkehrsführung Richtung Osten unklar)
 #: by: https://berliner-abendblatt.de/berlin-news/einschraenkungen-und-sperrung-wegen-brueckenbauarbeiten-fuer-u6-id208175
 #: by: https://berliner-abendblatt.de/berlin-news/sperrung-auf-der-a111-wegen-bauarbeiten-id231339
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf ("Maßnahme in Umsetzung bis 2025")
 #: also_indoor: url https://www.openstreetmap.org/note/3430631 (Abriss ab März 2023)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022) (inaktiv)
 #: source_id: viz2021:13.307035,52.568102,23.02.2023,07:00 (Verschwenkung, bis 13.10.2023) (bis 31.03.2024) (bis 28.03.2024) (bis 31.03.2025)
@@ -7213,7 +7220,7 @@ Wallstr., Am Märkischen Museum: Schilder stehen bereits; modaler Filter, teilwei
 #: XXX Markierungsarbeiten im Bereich Kleine Hamburger Straße weitgehend fertig
 #: osm_watch: note 3910311 2
 #: osm_watch: way id="172078325" version="26"
-#: last_checked: 2024-02-06 (mapillary)
+#: last_checked: 2024-02-11 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-03-31
 # REWMOVED (hier weitgehend realisiert (Schilder + Fahrbahnmarkierungen), Absperrungen stehen aber noch) --- Gartenstr.: Fahrradstraße geplant	?::projected 9744,13584 9670,13637
@@ -7327,8 +7334,8 @@ Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthof
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Umsetzung voraussichtlich 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (Überarbeitung der Planung)
-#: osm_watch: way id="190083616" version="16"
-#: osm_watch: way id="46150481" version="14"
+#: osm_watch: way id="190083616" version="18"
+#: osm_watch: way id="46150481" version="17"
 #: last_checked: 2024-02-10
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
@@ -7599,6 +7606,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.tagesspiegel.de/berlin/maroder-u-bahn-bau-ist-seit-jahren-gesperrt-immer-neue-schwierigkeiten-beim-berliner-waisentunnel-11186392.html (2030 noch immer nicht fertig?)
 #: by[nocache]: https://archive.is/FHiO5
 #: by: https://www.nd-aktuell.de/artikel/1180005.verkehr-maroder-waisentunnel-sorgenkind-der-berliner-u-bahn.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (keine Termine genannt)
 #: last_checked: 2024-02-23 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2024-06-01 vvv
@@ -7931,7 +7939,7 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959
 #: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv) (bis 15.12.2023) (bis 23.12.2023) (bis 22.12.2023) (inaktiv)
 #: source_id: viz2021:13.518694,52.450631,22.12.2023,15:00 (ab S-Bhf. Johannisthal, bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.518694,52.450631,02.01.2024,07:00 (ab S-Bhf. Johannisthal, bis 16.02.2024) (bis 07.03.2024)
+#: source_id: viz2021:13.518694,52.450631,02.01.2024,07:00 (ab S-Bhf. Johannisthal, bis 16.02.2024) (bis 07.03.2024) (bis 19.04.2024)
 #: osm_watch: way id="886496559" version="7"
 #: osm_watch[closed]: note 3998167 2
 #: osm_watch[closed]: note 3938423 1
@@ -7939,7 +7947,7 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: XXX laut osm bereits weitgehend realisiert und eingetragen
 #: last_checked: 2024-01-27
 # REMOVED --- #: check_frequency: 60d
-#: next_check: 2024-03-07
+#: next_check: 2024-04-19
 # REMOVED (für den 2. Abschnitt) --- #: next_check: 2024-01-02
 # REMOVED (hier nicht, erst ab Altheider Str.) --- Adlergestell: Radspur auch stadteinwärts	?::inwork; 19904,3464 19857,3514 19806,3567
 # REMOVED (hier realisiert) --- Adlergestell: Radspur auch stadteinwärts	?::inwork; 19806,3567 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183
@@ -7967,6 +7975,7 @@ Adlergestell: Markierungsarbeiten und Leitboys für neue Radspur	?::inwork; 19226
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8919 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8949 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1422200.php ("Umsetzung beginnt")
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/umgestaltung-der-schoeneberger-hauptstrasse-beginnt_a409648
 #: source_id: viz2021:13.3526,52.484353,05.03.2024,07:00 (zwischen Akazienstr. und Dominicusstr. Richtung Südwesten, bis 04.04.2024)
 #: XXX laut Verkehrszeichenplan überwiegend Aufteilung MIV-Fahrspur - Busspur - Radspur; teilweise sind Bus- und Radspur zusammengelegt (Haltestellen, vor einigen Kreuzungen)
 #: last_checked: 2024-02-07
@@ -9357,7 +9366,39 @@ Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,47
 #: by: https://www.krampnitz.de/
 #: by: https://krampnitz.de/360/
 #: by: https://www.welt.de/regionales/berlin/article243454601/Grossbaustelle-in-Potsdam-kommt-voran.html
+#: by: https://egov.potsdam.de/public/to020?TOLFDNR=155105&SILFDNR=12987 (Straßenbenennung)
+#: by: https://egov.potsdam.de/public/to020?0--anlagenHeaderPanel-attachmentsList-1-attachment-link&TOLFDNR=155105&SILFDNR=12987 (Karte mit neuen Straßen)
 #: XXX Bebauungsplan Nr. 141-1
+#: XXX laut DPAG-Mitteilungsblatt alle PLZ=14476
+#: XXX - Alva-Myrdal-Weg
+#: XXX - Anne-Marie-Baral-Weg
+#: XXX - Astrid-Lindgren-Weg
+#: XXX - Bertha-von-Moeller-Weg
+#: XXX - Dänische Allee
+#: XXX - Dag-Hammarskjöld-Weg
+#: XXX - Else-Alfelt-Weg
+#: XXX - Emily-Greene-Balch-Weg
+#: XXX - Finnische Allee
+#: XXX - Gisela-Opitz-Weg
+#: XXX - Helsinkiweg
+#: XXX - Hilla-Becher-Weg
+#: XXX - Inka-Unverzagt-Weg
+#: XXX - Isländische Allee
+#: XXX - Jane-Laura-Addams-Weg
+#: XXX - Kopenhagener Weg
+#: XXX - Maria-Caroline-Benda-Weg
+#: XXX - Norwegische Allee
+#: XXX - Nuukweg
+#: XXX - Osloer Weg
+#: XXX - Reykjavikweg
+#: XXX - Schwedische Allee
+#: XXX - Selma-Lagerlöf-Weg
+#: XXX - Sigrid-Undset-Weg
+#: XXX - Sofia-Kowalewskaja-Weg
+#: XXX - Stockholmer Weg
+#: XXX - Tove-Jansson-Weg
+#: XXX - Wangari-Maathai-Weg
+#: XXX - Willy-Brandt-Weg
 #: osm_watch: relation id="15676321" version="1"
 #: osm_watch: way id="34036043" version="27"
 #: osm_watch: way id="126600479" version="10"
@@ -10241,7 +10282,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/neue-namen-fuer-zwoelf-pankower-strassen_a408065 (Erwähnung)
 #: XXX Bebauungsplan 3-41
 #: XXX beide Straßen noch nicht in Berlin.coords.data (PLZ laut LOR 13089)
-#: XXX Benennung: Beate-Hahn-Str. (öffentliche Straße, westlicher Strang) (früherer Vorschlag: Herta-Hammerbacher-Str.)
+#: XXX Benennung: Beate-Hahn-Str. (öffentliche Straße, westlicher Strang) (früherer Vorschlag: Herta-Hammerbacher-Str.) (laut DPAG-Mitteilungsblatt PLZ=13089)
 #: XXX Benennung: Marianne-Foerster-Str. (private Erschließungsstraße, östlicher Strang) (laut DPAG-Mitteilungsblatt PLZ=13089)
 #: osm_watch: way id="556057045" version="6"
 #: osm_watch: way id="1143169552" version="7"
