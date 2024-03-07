@@ -229,6 +229,7 @@ sub update_selection_content {
 	$selection_content =~ s/\n.*$//;  # Crop after the first line
     }
     return if $selection_content eq '';
+    $selection_content = url_normalizations($selection_content);
     my $old_content = $grep_entry->get();
     if ($old_content ne $selection_content) {
 	$last_update_change = time;
@@ -269,11 +270,7 @@ sub update_file_content {
 	# ignore: this is shortly visible when creating a new tab
 	return;
     }
-    # normalizations
-    # Mostly for forum URLs, to remove the current page/article indication from the URL.
-    $url =~ s{(https://www.deutsches-architekturforum.de/thread/\d+-).*}{$1};
-    $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
-    $url =~ s{(https://www.bahninfo-forum.de/read.php\?\d+,\d+,).*}{$1};
+    $url = url_normalizations($url);
 
     my $old_content = $grep_entry->get();
     if ($old_content ne $url) {
@@ -313,3 +310,11 @@ sub get_bbbike_icon {
     return $f if -e $f;
 }
 
+sub url_normalizations {
+    my $url = shift;
+    # Mostly for forum URLs, to remove the current page/article indication from the URL.
+    $url =~ s{(https://www.deutsches-architekturforum.de/thread/\d+-).*}{$1};
+    $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
+    $url =~ s{(https://www.bahninfo-forum.de/read.php\?\d+,\d+,).*}{$1};
+    $url;
+}
