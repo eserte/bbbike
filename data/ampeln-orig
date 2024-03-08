@@ -144,7 +144,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-03-03
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -171,11 +171,18 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # REMOVED (wurde durch einen temporären Zebrastreifen ersetzt) --- #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten) --- #: by: https://officehome.de/ostkreuz-campus-a --- #: osm_watch: way id="936801541" version="3" --- #: XXX Ampel befindet sich östlich der Einmündung --- #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30, 2023-05-14 (So) um 13:30 --- #: note: Anforderungsampel --- #: last_checked: 2023-05-14 --- Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: next_check_id: IMBROMBEERWINKEL-2023
+#: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
 #: last_checked: 2024-03-03
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
+# 
+#: next_check_id: STERNDAMM-2023
+#: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
+#: last_checked: 2024-03-08
+#: next_check: 2024-06-30
+Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: osm_watch: node id="9882573114" version="2"
@@ -1674,7 +1681,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="3"
-#: last_checked: 2024-02-01 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
+#: last_checked: 2024-03-08 (manchmal ausgeschaltet, allerdings nur 1-2x gesehen, scheint sehr selten zu sein oder vielleicht eine temporäre Störung)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -2625,13 +2632,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-03-03
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2024-03-03
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -2936,6 +2943,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: note: Anforderungsampel
 	F 6746,4999
 # REMOVED (Bahnstrecke existiert nicht mehr) --- B0 14641,1771
+#: note: Anforderungsampel
 	F 18170,-449
 	X 17855,1629
 	X 21789,5427
@@ -3504,7 +3512,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2024-02-22
+#: last_checked: 2024-03-07 (mapillary)
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3512,7 +3520,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2024-02-22
+#: last_checked: 2024-03-07 (mapillary)
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
@@ -4739,7 +4747,6 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B 43192,19730
 	X 43131,19792
 	B 23108,-87201
-	B 90350,-16513
 #: by: osm
 	F -9380,17229
 # 

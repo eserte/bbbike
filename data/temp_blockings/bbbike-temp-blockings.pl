@@ -10318,7 +10318,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006820',
        data  => <<EOF,
-	1::inwork 16868,5938 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17482,5464 17601,5374
+	1::inwork 16868,5938 16911,5905 16993,5841 17024,5816 17128,5736 17337,5574 17366,5552 17473,5471 17482,5464 17601,5374
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -30454,7 +30454,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
-#: last_checked: 2024-02-06 (mapillary)
+#: last_checked: 2024-03-05 (okas)
 #: check_frequency: 90d
 #: next_check: 2024-04-30
 # REMOVED --- #: next_check: 2024-01-01
@@ -32991,9 +32991,9 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2023-06-15 (mapillary)
-# REMOVED --- #: check_frequency: 180d
-#: next_check: 2024-01-15
+#: last_checked: 2024-03-05 (okas)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
      },
@@ -34611,7 +34611,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-01-23 (okas)
+#: last_checked: 2024-03-05 (okas)
 #: check_frequency: 120d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -35156,7 +35156,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2024-02-17 vvv
+#: last_checked: 2024-03-07 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -35432,7 +35432,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-02-07
+#: last_checked: 2024-03-08
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -38034,7 +38034,7 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: last_checked: 2024-03-03
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -39788,17 +39788,13 @@ EOF
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: note: laut rbb bis 08.03.2024
 #: note: laut bing ist die Plesser Str. noch gesperrt, mittlerweile nicht mehr
-#: last_checked: 2024-02-28 vvv
-#: check_frequency: 14d vvv 
-#: next_check: 2024-03-05 vvv
+# REMOVED --- #: last_checked: 2024-03-08 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-03-05 vvv
 Karl-Kunger-Str.	q4::inwork; 13614,9333 13647,9304
 Plesser Str.	q4::inwork 13647,9304 13667,9316
 Karl-Kunger-Str.	q3::inwork; 13647,9304 13766,9200
 # REMOVED --- Karl-Kunger-Str.: Einfahrt nicht möglich	q2::inwork; 13766,9200 13647,9304
 # REMOVED --- #: note: Einbahnstraße über die gesamte Strecke, Engstelle nur an der Einmündung Karl-Kunger-Str. --- Elsenstr.	q3::inwork; 13849,9310 13766,9200
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1688875200, # 2023-07-09 06:00
@@ -40663,17 +40659,17 @@ EOF
      },
      { from  => 1693458000, # 2023-08-31 07:00
        until => 1734649140, # 2024-12-19 23:59
-       text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Einbahnstraße, offen Richtung Westen, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
+       text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="2"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
-#: note: Länge der Einbahnstraßenregelung: 100m
-#: last_checked: 2024-02-07
+#: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 #: next_checj: 2026-03-31
-	q4::inwork; 12407,8177 12545,8209
+	q4::inwork 12407,8177 12545,8209
 EOF
      },
      { from  => 1693720800, # 2023-09-03 08:00
@@ -41103,7 +41099,7 @@ EOF
        text  => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 08.03.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024) (inaktiv) (bis 08.03.2024)
+#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024) (inaktiv) (bis 08.03.2024) (inaktiv)
 	q3::inwork 6212,4622 6100,4495
 EOF
      },
@@ -41870,6 +41866,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
@@ -42099,7 +42096,7 @@ EOF
        text  => 'B166: Bauarbeiten an der Brücke über die Meglitze, evtl. auch für Radfahrer gesperrt, vom 04.03.2024 09:00 Uhr bis 08.03.2024 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/24/021 (bis 08.03.2024)
+#: source_id: LS/221-E/24/021 (bis 08.03.2024) (inaktiv)
 	2::inwork 69675,72248 70464,71826
 EOF
      },
@@ -42179,6 +42176,15 @@ EOF
 #: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
 #: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
 	q3::inwork 15720,4341 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
+EOF
+     },
+     { from  => 1696744800, # 2023-10-08 08:00
+       until => 1730300400, # 2024-10-30 16:00
+       text  => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 30.10.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 236700856 (bis 30.10.2024)
+	2::inwork 90239,-16522 90350,-16513 90592,-16499
 EOF
      },
     );

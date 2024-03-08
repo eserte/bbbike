@@ -4572,8 +4572,10 @@ Aldebaranstr. (Schönefeld): Asphalt	Q0 17337,-1848 17167,-1981
 #: by: osm + rj vvv
 #: confirmed_by: srt (nördliches Ende)
 Alt Schönefeld: Kopfsteinpflaster	Q2 17388,-1633 17402,-1649
-Alt Schönefeld: Kopfsteinpflaster	Q1- 17402,-1649 17549,-1722 17574,-1753 17602,-1803
-Alt Schönefeld: Kopfsteinpflaster	Q2 17402,-1649 17446,-1730 17537,-1863
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Alt Schönefeld: Kleinsteinpflaster	Q1- 17402,-1649 17549,-1722 17574,-1753 17599,-1797
+#: corrected_by: srt (Q2 -> Q2-)
+Alt Schönefeld: Kopfsteinpflaster	Q2- 17402,-1649 17446,-1730 17537,-1863
 #: by: ^^^
 #: by: osm + rj
 Umgehungsstraße: Asphalt, etwas löchrig	Q1+ 17549,-1722 17890,-1445 17911,-1427 18281,-1132 18444,-996

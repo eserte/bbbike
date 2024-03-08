@@ -133,7 +133,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-02-07
+#: last_checked: 2024-03-08
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -928,7 +928,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2024-02-07
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -2413,7 +2413,7 @@ Neckarstr.: Asphalt	Q0 12639,8344 12509,8318
 Neckarstr.: Betonpflaster	Q0- 12509,8318 12382,8292
 Isarstr.: Betonpflaster	Q0- 12382,8292 12368,8356
 Isarstr.: Kopfsteinpflaster	Q2 12368,8356 12349,8464
-Heidelberger Str.: asphaltiert	Q0 13664,9073 13491,9201
+Heidelberger Str.: asphaltiert	Q0 13664,9073 13656,9079 13491,9201
 Lexisstr.: Beton	Q1+ 12987,9481 13063,9422
 Lexisstr.: Asphalt	Q0- 13063,9422 13124,9375
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
@@ -3662,7 +3662,7 @@ Waßmannsdorfer Chaussee: asphaltiert	Q0 16536,26 16498,-92 16477,-160 16431,-311
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/da-planungen-voellig-neu-erarbeitet-werden-muessen-bleibt-wassmanndorfer-chaussee-weiter-holperstrecke_a335288 (Sanierung nicht vor 2030)
 Waßmannsdorfer Chaussee: asphaltiert mit Straßenschäden	Q1 16431,-311 16378,-489 16341,-614 16307,-718 16273,-824
 (Mauerweg): Asphalt	Q0 18121,-374 18218,-325 18280,-295
-(Landschaftspark Rudow): Gehwegplatten	Q0- 18385,-173 17973,428
+(Landschaftspark Rudow): Gehwegplatten	Q0- 18386,-174 17973,428
 Am Espenpfuhl: Kopfsteinpflaster	Q2 17920,391 17973,428
 Gerhard-Winkler-Weg: Verbundsteinpflaster	Q1 17338,1336 17293,1309
 Gerhard-Winkler-Weg: Asphalt	Q0 17293,1309 17202,1269
@@ -5676,11 +5676,11 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 (Künnekeweg - Dankmarsteig): Asphalt, Wurzeln	Q1 18432,1352 18556,1394 18627,1396 18649,1378 18688,1260
 (Künnekeweg - Dankmarsteig): Asphalt	Q0 18688,1260 18628,1078 18727,1040 18737,1033
 (Schönbergweg - Dankmarsteig): wassergebundene Decke	Q1 18566,866 18557,891 18574,954 18592,1018 18628,1078
-(Künnekeweg - Mauerweg): Kleinsteinpflaster	Q1- 18688,1260 18716,1249
+(Künnekeweg - Mauerweg): Kleinsteinpflaster	Q1- 18688,1260 18720,1247
 (Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18978,552 18750,592
 (Schönefelder Chaussee - Mauerweg): Asphalt	Q0 18750,592 18708,600
-(Kasperstr. - Mauerweg): Feinschotter	Q1 18796,1227 18770,1236 18716,1249
-(Rudower Höhe - Hornkleepfad): Feinschotter	Q1- 18716,1249 18739,1329 18786,1510
+(Kasperstr. - Mauerweg): Feinschotter	Q1 18796,1227 18770,1236 18720,1247
+(Rudower Höhe - Hornkleepfad): Feinschotter	Q1- 18720,1247 18739,1329 18786,1510
 (Dankmarsteig - Mauerweg): Feinschotter	Q1 18838,996 18790,1013 18737,1033
 Dankmarsteig: Beton	Q1 18838,996 18857,988 18973,941 19050,909
 Dankmarsteig: Verbundsteinpflaster	Q1 19050,909 19107,885
@@ -5833,7 +5833,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2024-03-03
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -6223,7 +6223,7 @@ Köpenicker Str.: Asphalt mit einigen Schäden	Q0- 17100,1650 17241,1750 17347,182
 Köpenicker Str.: Asphalt	Q0 17764,2032 17860,2061 17901,2075 18111,2135
 Köpenicker Str.: Asphalt mit Schäden	Q1 18111,2135 18209,2164 18320,2195
 Niederschlemaer Weg: grobes Verbundsteinpflaster	Q1- 18447,1727 18444,1782 18425,1831
-entlang der Teltowkanalautobahn: Asphalt	Q0 18484,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
+entlang der Teltowkanalautobahn: Asphalt	Q0 18484,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2126
 Hornkleepfad: unbefestigte Straße, Schotter	Q2 18750,1522 18786,1510 18830,1497
 Künnekeweg: Kopfsteinpflaster	Q2 18112,1235 18220,1278 18300,1306 18383,1334 18432,1352
 Ziehrerweg: Kopfsteinpflaster	Q2 18448,1159 18383,1334
@@ -6329,7 +6329,7 @@ Köpitzer Str.: Asphalt	Q0- 18326,11573 18390,11597 18381,11655
 Kirchsteig: Asphalt	Q0 22007,711 21925,612
 Bruno-Taut-Str.: Beton	Q0- 21870,803 21790,682
 #: historical_note: früher: unbefestigte Straße, Q2
-Smetanastr.: Asphalt/Beton	Q0 14224,15522 14195,15604
+Smetanastr.: Asphalt/Beton	Q0 14229,15510 14195,15604
 (Antonplatz - Bizetstr.): Gehwegplatten	Q0- 13484,15893 13524,15786
 (Antonplatz - Bizetstr.): Gehwegplatten/Kleinsteinpflaster	Q1+ 13508,15912 13539,15859 13519,15849 13540,15792
 Grünkardinalweg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,19947 12864,19991 12719,20065 12586,20131
@@ -12635,7 +12635,7 @@ Heidekampweg: Kleinsteinpflaster	Q2+ 15715,6394 15665,6388
 Eigerstr. [81-91]: Verbundsteinpflaster	Q1 13043,18126 12910,18003 12945,17958
 (Rudolf-Spitzley-Str. - Eigerstr.): Verbundsteinpflaster	Q1 13034,17895 12995,17873 12945,17958
 #: by ^^^
-(Mauerweg - Neudecker Weg): wassergebundene Decke	Q1 18612,1700 18470,1920 18396,1990
+(Mauerweg - Neudecker Weg): wassergebundene Decke	Q1 18606,1709 18470,1920 18396,1990
 #: by: mapillary vvv
 Senftenberger Ring [Wohngebiet]: Verbundsteinpflaster	Q1 6719,22085 6729,21950 6790,21950
 Senftenberger Ring [Wohngebiet]: Asphalt	Q0 6790,21950 6989,21975
@@ -13369,7 +13369,7 @@ Johannisplatz: glattes Kleinsteinpflaster	Q1 9385,13174 9385,13246
 # 
 Ida-Wolff-Platz: Verbundsteinpflaster	Q1 9161,10574 9192,10528
 # 
-(Mauerweg - Schönefelder Chaussee): kleine Betonplatten	Q0- 18702,1338 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
+(Mauerweg - Schönefelder Chaussee): kleine Betonplatten	Q0- 18704,1335 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
 # 
 #: note: eine sandige Stelle am westlichen Ende, ansonsten recht gut befahrbar
 (Adlergestell/Am Seegraben - Walchenseestr.): Waldweg	Q2+ 21879,1517 21899,1526 22010,1624 22222,1831
@@ -16491,7 +16491,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2024-02-28
+#: last_checked: 2024-03-07
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -25299,7 +25299,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="8"
-#: last_checked: 2024-02-28
+#: last_checked: 2024-03-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -25703,12 +25703,13 @@ Heiligenstadter Str.: guter Asphalt	Q0 16738,14695 16839,14676
 #: note: q1 ohne weitere Angaben ignoriert
 #: corrected_by: srt (guter Beton -> ) vvv
 Treiberpfad: Verbundsteinpflaster	Q1 3970,22215 3896,22307 3860,22358
-Treiberpfad: Verbundsteinpflaster	Q1 3896,22307 3792,22214 3766,22165
+Treiberpfad: Verbundsteinpflaster	Q1 3896,22307 3792,22214
+# REMOVED (unbekannte Qualität, eingezogen) --- Treiberpfad: Verbundsteinpflaster	Q1 3792,22214 3766,22165
 #: corrected_by ^^^
 #: by: ^^^
 # 
 #: by: Stefan Kohte:
-(Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0+ 18280,-295 18385,-173 18515,19 18544,86 18608,232 18708,600 18739,835 18737,1033 18716,1249 18702,1338 18673,1487 18659,1551 18649,1600 18612,1700 18596,1770 18580,2121
+(Mauerweg im Landschaftspark Rudower Höhe): Asphalt	Q0+ 18280,-295 18386,-174 18515,19 18544,86 18608,232 18708,600 18739,835 18737,1033 18720,1247 18704,1335 18673,1487 18659,1551 18644,1599 18606,1709 18591,1785 18580,2126
 # 
 #: by: alex-z vvv
 #: corrected_by: srt (Beton -> Asphalt)

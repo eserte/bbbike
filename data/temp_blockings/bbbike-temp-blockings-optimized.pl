@@ -4528,7 +4528,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
-#: last_checked: 2024-02-06 (mapillary)
+#: last_checked: 2024-03-05 (okas)
 #: check_frequency: 90d
 #: next_check: 2024-04-30
 # REMOVED --- #: next_check: 2024-01-01
@@ -4977,9 +4977,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2023-06-15 (mapillary)
-# REMOVED --- #: check_frequency: 180d
-#: next_check: 2024-01-15
+#: last_checked: 2024-03-05 (okas)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
          'from' => undef,
@@ -5315,7 +5315,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-01-23 (okas)
+#: last_checked: 2024-03-05 (okas)
 #: check_frequency: 120d
 	2::inwork 9699,-600 9562,-619
 ',
@@ -5460,7 +5460,7 @@ Jahnstr.	q4::inwork; 12833,6127 13027,6168
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2024-02-17 vvv
+#: last_checked: 2024-03-07 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5517,7 +5517,7 @@ Jahnstr.	q4::inwork; 12833,6127 13027,6168
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-02-07
+#: last_checked: 2024-03-08
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -6305,7 +6305,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: last_checked: 2024-03-03
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -7156,15 +7156,15 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="2"
 #: note: Halteverbotsschilder sogar bis Ende März 2026
-#: note: Länge der Einbahnstraßenregelung: 100m
-#: last_checked: 2024-02-07
+#: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
+#: last_checked: 2024-03-08
 #: check_frequency: 120d
 #: next_checj: 2026-03-31
-	q4::inwork; 12407,8177 12545,8209
+	q4::inwork 12407,8177 12545,8209
 ',
          'from' => 1693458000,
          'id' => 3912,
-         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Einbahnstraße, offen Richtung Westen, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
+         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis 19.12.2024 23:59',
          'type' => 'handicap',
          'until' => 1734649140
        },
@@ -7406,16 +7406,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.341707,52.447309,27.03.2023,09:00 (bis 2023-12-07) (bis 08.02.2024) (inaktiv) (bis 08.03.2024)
-	q3::inwork 6212,4622 6100,4495
-',
-         'from' => 1679814000,
-         'id' => 3943,
-         'text' => 'Stindestr.: Anbindung zur Albrechtstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.03.2023 09:00 bis 08.03.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1709913600
-       },
+       undef,
        {
          'data' => '#: next_check_id: STEGEWEG-2023
 #: last_checked: 2024-02-15 (Pressemitteilung)
@@ -7784,6 +7775,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
@@ -7936,16 +7928,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'handicap',
          'until' => 1711641600
        },
-       {
-         'data' => '#: source_id: LS/221-E/24/021 (bis 08.03.2024)
-	2::inwork 69675,72248 70464,71826
-',
-         'from' => 1709452800,
-         'id' => 4014,
-         'text' => 'B166: Bauarbeiten an der Brücke über die Meglitze, evtl. auch für Radfahrer gesperrt, vom 04.03.2024 09:00 Uhr bis 08.03.2024 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1709913600
-       },
+       undef,
        {
          'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1723937233072165285#m (nur Kfz-Verkehr, bis März 2024)
 #: source_id: viz2021:13.19858,52.54291,13.11.2023,07:00 (bis 29.03.2024) (vorfristig inaktiv)
@@ -8029,6 +8012,16 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Johannisthaler Chaussee: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 6. April 2024',
          'type' => 'handicap',
          'until' => 1712440799
+       },
+       {
+         'data' => '#: source_id: 236700856 (bis 30.10.2024)
+	2::inwork 90239,-16522 90350,-16513 90592,-16499
+',
+         'from' => 1696744800,
+         'id' => 4022,
+         'text' => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 30.10.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1730300400
        }
      
 );
