@@ -297,7 +297,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-09
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -12142,7 +12142,10 @@ Relingstr.: Betonpflaster	Q1+ 22195,2390 22287,2431 22358,2460
 An der Dahme: Betonpflaster	Q1+ 22197,2612 22270,2549 22358,2460 22418,2390
 Gaffelsteig: Betonpflaster	Q1+ 22287,2431 22221,2520 22159,2585
 Ankerweg: Betonpflaster	Q1+ 22118,2559 22159,2585 22197,2612
-(Fahlenbergstr. - Einkaufszentrum Lagunenweg): Asphalt, etwas rau	Q0- 31971,3170 31788,3192 31762,3202
+#: by: mapillary
+Clara-Müller-Jahnke-Str.: Betonpflaster	Q1+ 31971,3170 31799,3192 31800,3091
+# REMOVED --- (Fahlenbergstr. - Einkaufszentrum Lagunenweg): Asphalt, etwas rau	Q0- 31971,3170 31799,3192
+(Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): Asphalt, etwas rau	Q0- 31799,3192 31762,3202
 (Einkaufszentrum Lagunenweg): Verbundsteinpflaster, Gehwegplatten	Q0- 31762,3202 31650,3218
 (Einkaufszentrum Lagunenweg): Verbundsteinpflaster	Q0- 31650,3218 31609,3232
 (Einkaufszentrum Lagunenweg - Parkweg): Verbundsteinpflaster	Q1 31650,3218 31660,3193
@@ -13341,7 +13344,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 15151,10699 15220,10682
 Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 15200,10600
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-02-22 vvv
+#: last_checked: 2024-03-09 vvv
 #: check_frequency: 60d vvv
 Ulrich-Plenzdorf-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 14994,10732 15071,10716 15151,10699
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
@@ -16378,8 +16381,8 @@ Braillestr.: Asphalt	Q0 4516,5194 4477,5250 4430,5324
 #: by: maja wegener: vvv
 #: next_check_id: WANDLITZ-2021
 #: XXX Asphaltierungsarbeiten, möglicherweise bessere Qualität?
-#: last_checked: 2024-01-27
-#: next_check: 2024-03-01
+#: last_checked: 2024-03-09
+# REMOVED --- #: next_check: 2024-03-01
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
 Wandlitzstr.: Asphalt mit einigen Schäden	Q1+ 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)

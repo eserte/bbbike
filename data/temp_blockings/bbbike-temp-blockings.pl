@@ -28597,7 +28597,7 @@ EOF
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch: note 3658253 6
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-09
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-01-09
@@ -41008,7 +41008,7 @@ EOF
 #: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="10"
+#: osm_watch: way id="1126670512" version="11"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
@@ -41274,9 +41274,10 @@ EOF
 #: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
+#: also_indoor: traffic (G,W)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2024-01-27 vvv
-#: next_check: 2024-03-01 vvv
+#: last_checked: 2024-03-09 vvv
+#: next_check: 2024-03-15 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
 	q3::inwork; 18704,8427 18627,8475
@@ -41472,10 +41473,12 @@ EOF
 EOF
      },
      { from  => 1700478000, # 2023-11-20 12:00
-       until => $isodate2epoch->("2024-03-11 23:59:59"), # 1709308800, # 2024-03-01 17:00
-       text  => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, Einmündungsbereich Weichselstr. gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 11.03.2024',
+       until => undef, # $isodate2epoch->("2024-03-11 23:59:59"), # 1709308800, # 2024-03-01 17:00
+       dont_check_date => 1,
+       text  => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, Einmündungsbereich Weichselstr. gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 11.03.2024, evtl. länger',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: KARLMARXSTR-2018
 #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832
