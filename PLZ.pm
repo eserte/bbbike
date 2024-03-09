@@ -419,19 +419,8 @@ sub split_street {
 # look().
 sub look_loop {
     my($self, $str, %args) = @_;
-    my $max_agrep;
-    if (defined $args{Agrep} && $args{Agrep} eq 'default') {
-	$max_agrep = 3;
-	# Allow more errors for longer strings:
-	if    (length($str) > 15) { $max_agrep = 4 }
-	elsif (length($str) > 25) { $max_agrep = 5 }
-	# agrep: size of pattern must be greater than number of errors
-	elsif (length($str) < 1)           { $max_agrep = 0 }
-	elsif (length($str) <= $max_agrep) { $max_agrep = length($str)-1 }
-	delete $args{Agrep};
-    } else {
-	$max_agrep = delete $args{Agrep} || 0;
-    }
+
+    my $max_agrep = $self->_get_max_agrep($str, \%args);
 
     my $agrep = 0;
     my @matchref;
@@ -538,6 +527,24 @@ sub look_loop {
     } else {
 	(\@matchref, $agrep);
     }
+}
+
+sub _get_max_agrep {
+    my(undef, $str, $args_ref) = @_;
+    my $max_agrep;
+    if (defined $args_ref->{Agrep} && $args_ref->{Agrep} eq 'default') {
+	$max_agrep = 3;
+	# Allow more errors for longer strings:
+	if    (length($str) > 15) { $max_agrep = 4 }
+	elsif (length($str) > 25) { $max_agrep = 5 }
+	# agrep: size of pattern must be greater than number of errors
+	elsif (length($str) < 1)           { $max_agrep = 0 }
+	elsif (length($str) <= $max_agrep) { $max_agrep = length($str)-1 }
+	delete $args_ref->{Agrep};
+    } else {
+	$max_agrep = delete $args_ref->{Agrep} || 0;
+    }
+    $max_agrep;
 }
 
 sub _strip_strasse {
