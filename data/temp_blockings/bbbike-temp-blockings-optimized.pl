@@ -3746,7 +3746,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php ---	q4::inwork 22145,208 21933,152 21868,139
+#: source_id: viz2021:13.567911,52.405089,11.03.2024,07:00 (bis 05.04.2024)
+	q4::inwork 21933,152 21868,139 21742,115
+',
+         'from' => 1710050400,
+         'id' => 2708,
+         'text' => 'Grottewitzstr.: Baustelle Zur Gartenstadt und Binswangersteig, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.03.2024 07:00 bis 05.04.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1712329200
+       },
        undef,
        undef,
        undef,
@@ -4554,7 +4564,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-02-27 vvv
+#: last_checked: 2024-03-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -5566,7 +5576,8 @@ zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 #: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
 #: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
-#: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024)
+#: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -5591,18 +5602,16 @@ zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
-Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
+# REMOVED (laut VIZ nicht mehr gesperrt) --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: osm_watch: way id="1163982841" version="3"
 Schubertstr.	2::inwork 21984,6317 21856,6390
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
-         'dont_check_date' => 1,
          'from' => 1708028836,
          'id' => 3548,
-         'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
-         'text' => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 16.02.2024 bis 11.03.2024, vielleicht wird verlängert',
+         'text' => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6730,7 +6739,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-02-28
+#: last_checked: 2024-03-11
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7556,7 +7565,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832
-#: also_indoor: traffic (G,B,W)
+#: also_indoor: traffic (G,ex-B,W)
 #: next_check: 2024-03-11
 Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501
 Weichselstr.	q3::inwork 12330,8636 12392,8724
@@ -7656,6 +7665,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: source_id: viz2021:13.294291,52.510765,27.04.2023,15:24 (bis 31.12.2023) (bis 14.12.2023) inaktiv)
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,15:00 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024) (inaktiv)
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,14:30 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024)
+#: source_id: viz2021:13.29724,52.51059,11.03.2024,07:00 (Suarezstr., bis 22.03.2024)
 #: osm_watch: way id="4446505" version="34"
 #: osm_watch: way id="176621906" version="27"
 #: osm_watch: way id="4525429" version="22"
