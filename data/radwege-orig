@@ -2140,7 +2140,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
-#: by: https://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
@@ -2149,7 +2149,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
 #: last_checked: 2024-01-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-09-30 vvv
+#: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
 recht welliger Asphalt	RW1; 18010,7133 17847,7356 17769,7465
 #: next_check ^^^
@@ -2763,7 +2763,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-03-01 vvv
+#: last_checked: 2024-03-12 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2784,13 +2784,13 @@ Bushaltestelle	RW5; 12295,12197 12279,12113
 Bushaltestelle	RW5;RW5 12355,12541 12359,12592
 	RW3;RW3 12359,12592 12384,12718
 	RW3; 11764,12001 11916,11846
-Radspur zwischen Fahrspuren	RW4; 11916,11846 11764,12001
+Fahrradschleuse	RW4; 11916,11846 11764,12001
 	RW4;RW4 11916,11846 11963,11813 12180,11657
 #: note: die letzten 100m sind benutzungspflichtig
 Poller	RW3; 12180,11657 12497,11459
 	RW4; 12497,11459 12180,11657
 	RW3; 12497,11459 12539,11416
-Radspur zwischen Fahrspuren	RW3; 12539,11416 12497,11459
+Fahrradschleuse, gesonderte Rechtsabbiegespur für Radfahrer	RW3; 12539,11416 12497,11459
 	RW3;RW4 12539,11416 12576,11375 12641,11288
 	RW3;RW4 12641,11288 12736,11186 12793,11132 12848,11093 12908,11058 12990,11006 13080,10956 13144,10921
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13144,10921 13332,10832
@@ -3025,7 +3025,7 @@ Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
 Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
 Grünbeschichtung	RW4; 12427,8109 12415,8106 12311,8084 12162,8053
-Radspur zwischen Fahrspuren, Grünbeschichtung	RW4; 12162,8053 11979,8014
+Fahrradschleuse, Grünbeschichtung	RW4; 12162,8053 11979,8014
 	RW2; 12700,8170 12753,8187
 #: by: Uwe Sinha
 #: confirmed_by: srt
@@ -6701,8 +6701,8 @@ asphaltiert	RW1;RW1 21278,18786 21332,18819 21359,18834
 	RW4;RW3 9388,10393 9384,10536 9375,10616 9368,10641
 	RW3;RW3 9368,10641 9323,10791 9275,10932
 	RW3; 9234,11056 9275,10932
-Radspur zwischen Fahrspuren	RW4; 9234,11056 9196,11165
-Radspur zwischen Fahrspuren	RW3; 9196,11165 9234,11056
+Fahrradschleuse	RW4; 9234,11056 9196,11165
+Fahrradschleuse	RW3; 9196,11165 9234,11056
 Radstreifen hört etwa 50 Meter vor der Ampel auf	RW3; 9275,10932 9234,11056
 asphaltiert	RW1;RW1 8179,18756 8066,18754 7886,18742
 	RW3;RW3 7886,18742 7843,18705
@@ -7287,9 +7287,9 @@ Grünbeschichtung	RW3; 13200,6550 13141,6651
 Grünbeschichtung	RW4; 13141,6651 13121,6689 13117,6716
 Grünbeschichtung	RW3; 13117,6716 13085,6925
 Grünbeschichtung	RW4; 13085,6925 13072,7013
-Radspur zwischen Fahrspuren, Grünbeschichtung	RW4; 13072,7013 13068,7043
+Fahrradschleuse, Grünbeschichtung	RW4; 13072,7013 13068,7043
 Grünbeschichtung	RW4; 13068,7043 13058,7112
-Radspur zwischen Fahrspuren, Grünbeschichtung	RW4; 13058,7112 13051,7157
+Fahrradschleuse, Grünbeschichtung	RW4; 13058,7112 13051,7157
 Grünbeschichtung	RW4; 13051,7157 13043,7234
 Grünbeschichtung	RW3; 13043,7234 13034,7319
 Grünbeschichtung	RW4; 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471

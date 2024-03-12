@@ -4882,16 +4882,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
 #: also_indoor: traffic (G,B,W)
 #: note: laut rbb bis 22.03.2024, mittlerweile entfernt, und wieder da
-#: last_checked: 2024-02-25 vvv
+#: last_checked: 2024-03-12 vvv
 #: next_check: 2024-03-22 vvv
 	q4::inwork; 10264,13097 10313,13227
-	q3::inwork; 10313,13227 10264,13097
+	q4::inwork; 10313,13227 10264,13097
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1708642800,
          'id' => 3306,
-         'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn Richtung Norden gesperrt, Richtung Süden sind Einschränkungen möglich, vom 23.02.2024 10:30 bis 22.03.2024 17:00',
+         'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vom 23.02.2024 10:30 bis 22.03.2024 17:00',
          'type' => 'handicap',
          'until' => 1711123200
        },
@@ -5907,13 +5907,13 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="4"
+#: osm_watch: way id="1117348911" version="5"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-11 (osm)
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6926,7 +6926,8 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
-#: last_checked: 2024-02-24
+#: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren
+#: last_checked: 2024-03-08 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -7361,7 +7362,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 #: source_id: viz2021:13.57564,52.5581,16.10.2023,07:00 (bis 14.03.2024)
 #: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024)
-#: osm_watch: way id="9030384" version="38"
+#: osm_watch: way id="9030384" version="39"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
 ',
@@ -7387,15 +7388,16 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: next_check_id: GENDARMENMARKT-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/charlottenstrasse-wird-zur-promenade_a403959 (bis Herbst 2024)
 #: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
-#: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll?
+#: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-02-23 vvv
+#: last_checked: 2024-03-12 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 3
-Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
+# REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
+Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch: way id="389101374" version="16"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
@@ -7411,7 +7413,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => undef,
          'id' => 3942,
-         'text' => 'Gendarmenmarkt: rund um den Gendarmenmarkt Einbahnstraßenregelungen (Markgrafenstr., Mohrenstr.) bzw. Sperrung der Fahrbahn (Charlottenstr.)',
+         'text' => 'Gendarmenmarkt: rund um den Gendarmenmarkt Einbahnstraßenregelungen (Mohrenstr.) bzw. Sperrung der Fahrbahn (Charlottenstr., Markgrafenstr.)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7512,24 +7514,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: wosch & osm & mapillary
-#: by: https://www.rbb24.de/panorama/beitrag/2024/02/berlin-gehwegschaeden-bezirke-sanierungen-rollstuhl.html (geplante Fertigstellung: 8.3.2024)
-#: note: nördlicher Bürgersteig ebenfalls gesperrt; Länge der Sperrung etwa 50m, außerdem ist wegen des Absperrgeländers ein längerer Umweg über die Geschwister-Scholl-Str. notwendig; Halteverbotsschilder bis 31.01.2024
-#: note: allerdings können manchmal die Barrieren so offen sein, dass Radfahrer durchkommen (kann außerhalb der Arbeitszeiten passieren, aber nicht immer)
-#: osm_watch: way id="1151064395" version="6"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-02-06 (mapillary)
-#: check_frequency: 30d
-#: next_check: 2024-03-08
-	q4::inwork 9533,12925 9375,12911
-',
-         'from' => undef,
-         'id' => 3963,
-         'text' => 'Weidendamm: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7565,7 +7550,8 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832
-#: also_indoor: traffic (G,ex-B,W)
+#: also_indoor: traffic (ex-G,ex-B,ex-W)
+#: priority: #A
 #: next_check: 2024-03-11
 Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501
 Weichselstr.	q3::inwork 12330,8636 12392,8724
@@ -7573,7 +7559,7 @@ Weichselstr.	q3::inwork 12330,8636 12392,8724
          'dont_check_date' => 1,
          'from' => 1700478000,
          'id' => 3971,
-         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, Einmündungsbereich Weichselstr. gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 11.03.2024, evtl. länger',
+         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, Einmündungsbereich Weichselstr. gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 11.03.2024, vermutlich bereits beendet',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7660,6 +7646,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-geben-mitte-dezember-vier-spuren-frei_a401282 (komplett fertig im April 2024)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1396238.php
 #: by[nocache]: https://nitter.net/wasserbetriebe/status/1735295013901250926#m
+#: by[nocache]: https://twitter.com/wasserbetriebe/status/1766011951707038018 (ab ~19. April 2024 wieder offen?)
 #: source_id: viz2021:13.297353,52.510969,27.04.2023,15:24 (nur für Kfz-Verkehr gesperrt, kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.289238,52.510438,27.04.2023,15:24 (inaktiv)
 #: source_id: viz2021:13.294291,52.510765,27.04.2023,15:24 (bis 31.12.2023) (bis 14.12.2023) inaktiv)
@@ -7685,9 +7672,9 @@ Fritschestr.	q3::inwork 3339,11433 3320,11583
 ',
          'from' => undef,
          'id' => 3988,
-         'text' => 'Kaiserdamm: Fahrbahn und Radwege zwischen Witzlebenstr. und Fritschestr. Richtung Osten gesperrt, Anbindung Suarezstr. gesperrt, lange Umwege, voraussichtlich bis 28.03.2024',
+         'text' => 'Kaiserdamm: Fahrbahn und Radwege zwischen Witzlebenstr. und Fritschestr. Richtung Osten gesperrt, Anbindung Suarezstr. gesperrt, lange Umwege, voraussichtlich bis Ende März oder Mitte April 2024',
          'type' => 'handicap',
-         'until' => 1711641600
+         'until' => 1713538800
        },
        {
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
@@ -7809,7 +7796,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-02-25
+#: last_checked: 2024-03-12
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -7895,6 +7882,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
 #: osm_watch[closed]: note 4125418 5
 #: osm_watch: way id="1258660768" version="2"
+#: osm_watch: way id="1259755317" version="1"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
@@ -8036,6 +8024,18 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 30.10.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1730300400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
+#: note: beim rbb wird nur der Kfz-Verkehr erwähnt, Dauer "mehrere Wochen"
+	q4::inwork 5627,9362 5479,9367
+',
+         'from' => 1710170340,
+         'id' => 4023,
+         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), evtl. sind auch Radfahrer betroffen, vom 12.03.2024 16:19 bis 29.03.2024 23:59',
+         'type' => 'handicap',
+         'until' => 1711753140
        }
      
 );

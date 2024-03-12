@@ -1492,6 +1492,9 @@ Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndi
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11329,12497 11340,12443 11353,12436
 Alexanderstr. -> zwischen VoltAir und The Student Hotel: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11355,12331 11344,12410 11240,12368
 zwischen VoltAir und The Student Hotel -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11240,12368 11344,12410 11340,12443
+Mittelstreifen	3nocross::ignrte 11141,12806 11211,12711 11256,12647
+Jacobystr. -> Alexanderstr.: Mittelstreifen	3::igndisp 11221,12725 11211,12711 11256,12647
+Alexanderstr. -> Jacobystr.: Mittelstreifen	3::igndisp 11141,12806 11211,12711 11221,12725
 Mittelstreifen	3nocross::ignrte 8777,9601 8679,9544 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8679,9544 8774,9534
 Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
@@ -4123,3 +4126,5 @@ Blissestr.: linker Gehweg	1::igndisp 4754,8608 4769,8563
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	1::igndisp 10774,9681 10802,9673 10807,9686
 Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	1::igndisp 6022,13330 6012,13338
 Streitstr.: linker Gehweg	1::igndisp -3019,17129 -3009,17090
+Grunerstr./Alexanderstr. -> Jacobystr.: linker Gehweg	1::igndisp 11234,12742 11184,12774 11141,12806
+Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	1::igndisp 11256,12647 11221,12725

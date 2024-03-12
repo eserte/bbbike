@@ -1089,7 +1089,7 @@ Schillingstr. (Mitte)	N 11340,12443 11353,12436 11462,12384 11472,12406 11497,12
 Neue Blumenstr.	N 11613,12408 11712,12614 12006,12464 12118,12462
 Blumenstr. (Friedrichshain)	N 12118,12462 12305,12440 12339,12436
 Blumenstr. (Friedrichshain)	N 12305,12440 12306,12459 12125,12490 12118,12462
-Jacobystr.	N 11596,12668 11287,12814 11211,12711
+Jacobystr.	N 11596,12668 11287,12814 11234,12742 11221,12725 11211,12711
 Alexanderstr.	H 11325,12021 11343,12182 11347,12223
 Alexanderstr.	HH 11347,12223 11355,12331 11344,12410 11340,12443 11329,12497 11256,12647 11211,12711 11141,12806
 Alexanderstr.	HH 11141,12806 11226,12945
@@ -18533,3 +18533,5 @@ Blissestr.: linker Gehweg	NN::igndisp 4769,8563 4754,8608
 Urbanstr. -> Fontanepromenade: frühzeitig auf den linken Gehweg wechseln, Bordsteine	NN::igndisp 10807,9686 10802,9673 10774,9681
 Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	NN::igndisp 6012,13338 6022,13330
 Streitstr.: linker Gehweg	NN::igndisp -3009,17090 -3019,17129
+Grunerstr./Alexanderstr. -> Jacobystr.: linker Gehweg	NN::igndisp 11141,12806 11184,12774 11234,12742
+Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	NN::igndisp 11221,12725 11256,12647
