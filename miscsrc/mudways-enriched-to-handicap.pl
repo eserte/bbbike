@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -172,21 +172,24 @@ sub find_best_mud_candidate {
 				   };
 	    } elsif ($bf10 =~ /^\d+$/) { # i.e. not 'N/A'
 		my $delta = abs($bf10-$used_current_bf10);
+		my $candidate_info;
+		if (defined $h) {
+		    $candidate_info = {
+				       delta => $delta,
+				       date  => $date,
+				       bf10  => $bf10,
+				       desc  => $desc,
+				       h     => $h,
+				      };
+		}
 		if ($delta <= $max_delta) {
-		    if (defined $h) {
-			push @mud_candidates, { delta => $delta,
-						date  => $date,
-						bf10  => $bf10,
-						desc  => $desc,
-						h     => $h,
-					      };
+		    if ($candidate_info) {
+			push @mud_candidates, $candidate_info;
 		    }
-		} elsif (defined $h && $h ne 'q0') {
-		    push @other_candidates, { date => $date,
-					      bf10  => $bf10,
-					      desc => $desc,
-					      h    => $h,
-					    };
+		} else {
+		    if ($candidate_info) {
+			push @other_candidates, $candidate_info;
+		    }
 		}
 	    }
 	} else {
@@ -199,8 +202,22 @@ sub find_best_mud_candidate {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
 	return { type => 'best', text_de => "Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})", date => $used_mud_candidate->{date}, h => $used_mud_candidate->{h} };
     } elsif (@other_candidates) {
-	my($used_other_candidate) = sort { compare_q_strings($b->{h}, $a->{h}) } @other_candidates;
-	return { type => 'other', text_de => "keine Prognose, schlechtester bekannter Zustand: $used_other_candidate->{desc} ($used_other_candidate->{date}, BF10=$used_other_candidate->{bf10}, $used_other_candidate->{h})", date => $used_other_candidate->{date}, h => "?" };
+	my($lower_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } grep { $_->{bf10} <= $used_current_bf10 } @other_candidates;
+	my($upper_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } grep { $_->{bf10} >  $used_current_bf10 } @other_candidates;
+	my $text_de = "keine Prognose";
+	if ($lower_candidate || $upper_candidate) {
+	    $text_de .= ", Zustand vermutlich";
+	    if ($lower_candidate) {
+		$text_de .= " nasser als \"$lower_candidate->{desc}\" ($lower_candidate->{date}, BF10=$lower_candidate->{bf10}, $lower_candidate->{h})";
+	    }
+	    if ($lower_candidate && $upper_candidate) {
+		$text_de .= " und";
+	    }
+	    if ($upper_candidate) {
+		$text_de .= " trockener als \"$upper_candidate->{desc}\" ($upper_candidate->{date}, BF10=$upper_candidate->{bf10}, $upper_candidate->{h})";
+	    }
+	}
+	return { type => 'other', text_de => $text_de, date => undef, h => "?" };
     } else {
 	return { type => 'none', text_de => "keine Prognose", date => undef, h => "?" };
     }
