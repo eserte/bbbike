@@ -193,6 +193,9 @@ EOF
 	if ($opt{'feature-pdf'}) {
 	    push @packages, qw(libcairo-perl libpango-perl);
 	}
+	if ($opt{'feature-svg'}) {
+	    push @packages, qw(librsvg2-bin);
+	}
 	if ($opt{'feature-remote'}) {
 	    push @packages, qw(libwww-perl libxml-libxml-perl);
 	}
@@ -967,6 +970,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'install-recommends' => 1,
 	       'install-suggests' => 0,
 	       'feature-pdf' => 1,
+	       'feature-svg' => 1,
 	       'feature-remote' => 1,
 	       'invalidate-apt' => 0,
 	       'docker-image' => undef,
@@ -980,6 +984,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'install-recommends!',
 	       'install-suggests!',
 	       'feature-pdf!',
+	       'feature-svg!',
 	       'feature-remote!',
 	       'invalidate-apt!',
 	       'docker-image=s',
