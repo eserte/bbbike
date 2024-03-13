@@ -636,6 +636,7 @@ EOF
 					 );
 		    }
 		},
+		'-',
 		## edit helpers - others
 		[Button => $do_compound->("Abdeckung"),
 		 -command => sub {
