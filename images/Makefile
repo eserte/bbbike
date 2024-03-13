@@ -374,3 +374,8 @@ png-to-jpg:	\
 #   convert -background none -geometry 16x16 bomb.svg bomb.png 
 #   ... and manually manipulated with Gimp to change a transparent region into white
 # License: https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt
+
+# Creation of image.png
+#   wget https://upload.wikimedia.org/wikipedia/commons/5/5b/Music-eighthnote.svg
+#   edited (removed lines) and exported (to 9x16 png) in inkscape
+# License: public domain
