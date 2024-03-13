@@ -984,7 +984,7 @@ Winterfeldtstr.	N 6278,9925 6366,9926 6504,9961 6630,9990 6741,10017 6903,10056 
 #: carriageway_width: 57m (11m+medial strip=34m+12m, Höhe Wittenbergplatz) vvv
 Tauentzienstr.	HH 6216,10614 6171,10657
 Tauentzienstr.	HH 6228,10646 6171,10657
-Tauentzienstr.	HH 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884
+Tauentzienstr.	HH 6171,10657 6133,10679 6025,10746 5907,10821 5782,10884
 #: carriageway_width ^^^
 #: street_width: 53m (2×parklanes, 2×buslanes, 2×lanes, medial strip)
 Kurfürstendamm	HH 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435 4157,10418 3971,10381 3835,10352 3737,10322 3618,10283 3562,10264 3489,10240 3374,10201 3289,10174 3189,10141 3111,10116 2974,10081 2828,10040 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911 2473,9861 2445,9838 2415,9765
@@ -1396,12 +1396,13 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: by: https://www.deutsches-architekturforum.de/thread/12157-mediaspree-entertainment-district-an-der-mb-arena/?postID=754643#post754643 (ab 22.03.2024: Mercedes Platz -> Uber Platz)
 #: by: https://www.t-online.de/region/berlin/id_100324498/mercedes-benz-arena-in-berlin-wird-umbenannt-so-wird-sie-kuenftig-heissen.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11379 (Anfrage)
+#: by: https://www.mercedes-platz.de/news/detail/namenspartner-uber
 #: note: es existieren keine Straßenschilder oder sonstige Hinweise auf den Platz vvv
 #: oldname: -20151115: O2-Platz vvv
 #: XXX neue Umbenennung zu Uber Platz (mit oder ohne Bindestrich?); andere Änderungen (sehenswuerdigkeit-orig etc.) auch prüfen vvv
 #: next_check: 2024-03-22 vvv
-Mercedes-Platz	NN 13150,11101 13063,11147 12984,11194
-Mercedes-Platz	NN 12990,11006 13063,11147
+Mercedes-Platz	NN 13150,11101 13067,11145 12984,11194
+Mercedes-Platz	NN 12990,11006 13067,11145
 #: next_check ^^^
 #: XXX ^^^
 #: oldname ^^^
@@ -12904,7 +12905,7 @@ Eisenzahnstr.	N 3741,10097 3728,10125 3737,10322
 Paderborner Str.	N 3896,10042 3719,10004
 Ravensberger Str.	N 3711,9855 3927,9935
 Zähringerstr.	N 3927,9935 4126,9932 4277,9895 4422,9869 4587,9840
-Augsburger Str. (Charlottenburg, Wilmersdorf, Schöneberg)	N 5471,10719 5497,10719 5627,10637 5780,10542 5866,10492 5921,10461 6033,10403
+Augsburger Str. (Charlottenburg, Wilmersdorf, Schöneberg)	N 5471,10719 5497,10719 5627,10637 5758,10554 5866,10492 5921,10461 6033,10403
 Goethestr. (Wilhelmsruh)	N 7117,20181 7201,20161 7506,20170 7695,20175 7790,20132
 Kurze Str. (Wilhelmsruh)	N 7205,20047 7125,20053
 Uhlandstr. (Rosenthal, Wilhelmsruh)	N 8016,21499 7852,21262 7784,21186 7739,21130 7641,20745 7630,20698 7616,20633 7577,20450 7533,20275 7506,20170 7468,20009
@@ -13157,7 +13158,7 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2024-03-05 (webcam)
+#: last_checked: 2024-03-12 (webcam)
 #: check_frequency: 90d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
@@ -18465,8 +18466,8 @@ Kelheimer Str.	NN 5894,10287 5898,10318
 Würzburger Str. (Wilmersdorf)	N 5921,10461 5907,10347
 Würzburger Str. (Wilmersdorf)	NN 5907,10347 5898,10318
 Eislebener Str. (Wilmersdorf, Charlottenburg)	N 5808,10396 5654,10485 5568,10535
-Marburger Str.	N 5780,10542 5822,10609 5942,10803
-Los-Angeles-Platz	N 5669,10704 5822,10609
+Marburger Str.	N 5758,10554 5802,10621 5907,10821
+Los-Angeles-Platz	N 5669,10704 5802,10621
 Griebenowstr.	N 10365,14372 10399,14429 10441,14497 10506,14521
 Kremmener Str.	N 10377,14909 10209,14830
 Arkonaplatz	N 10105,14608 10189,14649 10277,14691

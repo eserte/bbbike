@@ -558,7 +558,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2023-11-18
+#: last_checked: 2024-03-13
 #: check_frequency: 180d
 #: next_check: 2025-06-30
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
@@ -928,7 +928,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2024-03-08
+#: last_checked: 2024-03-13
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1776,6 +1776,10 @@ Bleibtreustr.: Kopfsteinpflaster	Q2 4719,11206 4709,11036 4704,10951 4692,10829 
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5498,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8930 (Antrag - Antwort: nach der Fertigstellung der Parkstraße)
+#: XXX eventuell wird in Zukunft eine vollständige Asphaltierung passieren, möglicherweise auch im nördlich angrenzenden Abschnitt der Blumenthalstr.
+#: last_checked: 2023-12-30
+#: check_frequency: 180d
 Werderstr.: Kopfsteinpflaster	Q2; 8996,5823 8996,5956
 Werderstr.: Asphalt	Q0; 8996,5956 8996,5823
 #: historical_note: bis 2022/2023 etwas schlechter (Q2-)
@@ -2403,7 +2407,7 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
-#: last_checked: 2024-02-01
+#: last_checked: 2024-03-13
 #: check_frequency: 270d
 #: next_check: 2025-01-01
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
@@ -12593,7 +12597,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2023-11-11
+#: last_checked: 2024-03-13
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860
@@ -23693,11 +23697,11 @@ Nackthalsweg: Kopfsteinpflaster	Q2+ 16068,525 16135,473
 #: confirmed_by: srt
 Müngersdorfer Str.: guter Asphalt	Q0 20386,145 20351,287 20326,374
 #: confirmed_by: srt
-#: XXX laut Finanzplan Berlin 2019-2023 Neubau der Straße, wird die Qualität danach besser sein?
-#: note: es existiert ein paralleler Verbundsteinpflasterweg, vermutlich nur für Fußgänger
-#: last_checked: 2024-02-10
-#: check_frequency: 180d
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3461 (Antrag: Stopp der Planungen zum Ausbau)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136/O8mbesEWJsZl6DbeaZRmZnTjovk90CaxxWKr34UB/kGtsYAZo/24-Anlagen/04/B1293SBneu.pdf (wird gefolgt)
+# REMOVED --- #: XXX laut Finanzplan Berlin 2019-2023 Neubau der Straße, wird die Qualität danach besser sein? --- #: last_checked: 2024-02-10 --- #: check_frequency: 180d
 #: osm_watch: way id="152708910" version="5"
+#: note: es existiert ein paralleler Verbundsteinpflasterweg, vermutlich nur für Fußgänger
 Müngersdorfer Str.: mäßiges Kopfsteinpflaster	Q2 20386,145 20430,-17
 #: confirmed_by: srt
 #: osm_watch: way id="751726576" version="4"
@@ -29209,7 +29213,7 @@ Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4713,8997
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4954,8454 4958,8355
 #: confirmed_by: srt
 Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5654,10485 5568,10535
-Los-Angeles-Platz: Kopfsteinpflaster	Q1 5669,10704 5822,10609
+Los-Angeles-Platz: Kopfsteinpflaster	Q1 5669,10704 5802,10621
 #: corrected_by: srt ("neues Kopfsteinpflaster" -> )
 Elisabethkirchstr.: Kleinsteinpflaster	Q1- 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132
 #: corrected_by: srt (Kopfsteinpflaster -> ..., neu gemacht)
@@ -30651,6 +30655,7 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9161 (frühzeitige Öffentlichkeitsbeteiligung)
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=751719#post751719
 #: by: https://blrm.eu/werkliste
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Vorlage zur Kenntnisnahme)
 #: last_checked: 2023-11-13 vvv
 #: check_frequency: 360d vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)

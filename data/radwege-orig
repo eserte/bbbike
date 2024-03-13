@@ -1277,7 +1277,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-03-08 vvv
+#: last_checked: 2024-03-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1969,7 +1969,7 @@ Busspur ist immer gültig	RW5; 6353,10583 6468,10550
 # REMOVED (hier nicht) --- Busspur ist immer gültig	RW5; 6468,10550 6532,10529
 Busspur ist immer gültig	RW5; 6353,10583 6292,10627 6228,10646 6171,10657
 Busspur ist immer gültig	RW5; 6171,10657 6216,10614 6268,10588 6353,10583
-Busspur ist immer gültig	RW5;RW5 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435 4157,10418 3971,10381 3835,10352 3737,10322 3618,10283 3562,10264 3489,10240 3374,10201 3289,10174 3189,10141 3111,10116 2974,10081 2828,10040
+Busspur ist immer gültig	RW5;RW5 6171,10657 6133,10679 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435 4157,10418 3971,10381 3835,10352 3737,10322 3618,10283 3562,10264 3489,10240 3374,10201 3289,10174 3189,10141 3111,10116 2974,10081 2828,10040
 Busspur ist immer gültig	RW5; 2828,10040 2770,10024
 Busspur gilt Mo-Sa 7-20.30 Uhr	RW5; 7813,10112 7862,9918 7866,9902
 #: historical_note: für Radfahrer freigegebene Busspur gilt Mo-Sa 7-20.30 Uhr
@@ -2092,7 +2092,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-03-05 (webcam)
+#: last_checked: 2024-03-12 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
 # REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
@@ -2305,7 +2305,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2024-01-28
+#: last_checked: 2024-03-13
 #: check_frequency: 90d
 #: next_check: 2024-05-31
 #	RW3; 5764,10322 5808,10396
@@ -2695,7 +2695,8 @@ unebenes Verbundsteinpflaster, schmal, halbhoher Bord gegen Radweg	RW1; 4526,225
 	RW1; 4202,23034 4224,23074 4259,23149 4268,23292 4201,23397 4169,23451 4007,23709 3985,23814 3957,23981 3922,24161 3915,24200 3902,24266 3888,24338 3875,24405 3866,24451
 #: note: Oraniendamm Richtung Süden
 #: note: abschnittsweise Gehweg für Radfahrer frei, abschnittsweise Gehwegparker, die auf den Radweg hineinragen
-	RW1; 3866,24451 3875,24405 3888,24338 3902,24266 3915,24200 3922,24161 3957,23981 3985,23814 4007,23709 4169,23451 4201,23397 4268,23292 4259,23149 4224,23074 4202,23034 4150,22955 4158,22896 4188,22867 4222,22854 4337,22753 4437,22655 4526,22567 4616,22478 4724,22376 4837,22180
+	RW1; 3866,24451 3875,24405 3888,24338 3902,24266 3915,24200 3922,24161 3957,23981 3985,23814 4007,23709 4169,23451 4201,23397 4268,23292 4259,23149 4224,23074 4202,23034 4150,22955 4158,22896 4188,22867 4222,22854 4337,22753 4437,22655 4526,22567 4616,22478
+Gehweg für Radfahrer frei	RW1; 4724,22376 4837,22180
 	RW1; 4837,22180 4859,22142 4884,22097 4925,22022
 	RW1; 4925,22022 5067,21831 5136,21738
 # 
@@ -2763,7 +2764,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-03-12 vvv
+#: last_checked: 2024-03-13 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2921,7 +2922,8 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
-#: last_checked: 2024-03-08
+#: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
+#: last_checked: 2024-03-13
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6294,7 +6296,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2024-02-04 vvv
+#: last_checked: 2024-03-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -6530,7 +6532,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neust%C3%A4dtische-kirchstra%C3%9Fe-4-5-herrichtung-f%C3%BCr-bundesministerium.775/#post-22250
 #: by: https://www.n-tv.de/politik/Bundestags-BER-verschlingt-weitere-Millionen-article24709001.html (Hochbauarbeiten bis 2027?)
-#: last_checked: 2024-02-17 vvv
+#: last_checked: 2024-03-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -7265,7 +7267,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2024-03-08 vvv
+#: last_checked: 2024-03-13 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7305,11 +7307,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2024-03-08
+#: last_checked: 2024-03-13
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2024-02-07
+#: last_checked: 2024-03-13
 #: check_frequency: 60d
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
@@ -8079,13 +8081,10 @@ asphaltiert	RW1; 25522,4935 25519,4830
 # 
 	RW3; 16663,25349 16646,25386 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
-#: next_check_id: KARLMARXSTR-2018
-#: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen)
-#: last_checked: 2024-02-01
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2024-03-11
-provisorische Radspur	RW4; 12494,8501 12330,8636 12318,8645
-	RW4; 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
+# REMOVED --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews?date=20220830 (Fahrbahnaufteilung bleibt über Mitte September 2022 hinaus bestehen) --- #: last_checked: 2024-03-13 --- #: check_frequency: 60d --- #: next_check: 2024-03-11
+	RW3; 12494,8501 12330,8636
+	RW3; 12330,8636 12494,8501
+	RW4; 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
 	RW1; 11880,8955 11831,8989
 	RW4; 11831,8989 11880,8955
 geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
@@ -8300,6 +8299,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://nitter.net/rbb24/status/1673757428339601408 
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,771277#msg-771277
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8615 (Antrag - Antwort)
 #: last_checked: 2024-02-24 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
@@ -8366,7 +8366,8 @@ die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW7; 11089,97
 	RW7; 11164,9885 11136,9851 11089,9751
 #: note: hier keine Fahrradstraße
 	RW4; 11055,9539 11075,9576
-außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342
+außerdem Teil einer Fahrradstraße	RW4;RW4 10713,9260 10749,9342
+	RW4;RW4 10705,9234 10713,9260
 #: confirmed_by ^^^
 #: by ^^^
 #: by ^^^
