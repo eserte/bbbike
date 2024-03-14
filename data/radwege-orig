@@ -519,7 +519,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024)
-#: last_checked: 2024-03-01 vvv
+#: last_checked: 2024-03-14 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1820,7 +1820,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351
 #: source_id: viz2021:13.34634,52.43195,20.12.2022,12:03 (bis 30.06.2023) (inaktiv)
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
-#: osm_watch: way id="85468589" version="25"
+#: osm_watch: way id="85468589" version="26"
 #: osm_watch: way id="458915639" version="7"
 #: last_checked: 2023-12-26 vvv
 #: check_frequency: 90d vvv
@@ -2353,7 +2353,7 @@ asphaltiert	RW1; 13795,9941 13860,9861 14089,9610
 	RW6;RW6 4331,11554 4155,11527 3988,11502
 	RW6;RW6 4155,11527 4101,11347
 	RW6;RW6 13283,10069 13262,10147 13271,10193 13369,10337
-	RW6;RW6 13216,9983 13275,10055 13283,10069 13310,10081 13449,10262
+	RW6;RW6 13220,9980 13275,10055 13283,10069 13310,10081 13449,10262
 # REMOVED (-> Fußgängerzone) ---	RW6;RW6 12212,10440 12197,10494 12172,10585 12274,10612 12328,10442
 # REMOVED (-> Fußgängerzone) ---	RW6;RW6 12294,10663 12274,10612
 # REMOVED (-> Fußgängerzone) ---	RW6;RW6 12172,10585 12142,10600
@@ -2498,22 +2498,10 @@ Gehwegplatten	RW2; 14006,13761 13906,13722
 für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 	RW1; 16368,11912 16317,11920 16214,11935
 #: note: Benutzungspflicht unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
-	RW1; 13086,9825 13136,9883 13155,9907 13216,9983
+	RW1; 13086,9825 13139,9880 13162,9904 13220,9980
 	RW2; 9753,9252 9793,9241
 #
-#: next_check_id: GOERLITZERUFER-2023
-#: XXX wie sieht es nach dem Umbau aus?
-#: last_checked: 2024-03-02 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2024-06-30 vvv
-	RW1; 13216,9983 13155,9907
-#: historical_note: früher Radweg auf dem Bürgersteig
-#: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3;
-#: osm_watch: way id="984857536" version="5"
-	RW1; 13155,9907 13136,9883 13086,9825 13026,9854
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (weitgehend entfernt) --- #: next_check_id: GOERLITZERUFER-2023 --- #: XXX wie sieht es nach dem Umbau aus? --- #: last_checked: 2024-03-14 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-30 vvv ---	RW1; 13220,9980 13162,9904 --- #: historical_note: früher Radweg auf dem Bürgersteig --- #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3; --- #: osm_watch: way id="984857536" version="6" ---	RW1; 13162,9904 13139,9880 13086,9825 13026,9854 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 Radspur links von der Fahrspur	RW3; 9793,9241 9753,9252
 #: note: die ersten Meter asphaltierter Bürgersteigradweg
@@ -2764,7 +2752,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-03-13 vvv
+#: last_checked: 2024-03-14 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2845,7 +2833,7 @@ Zeichen 237 steht zwischen den Einmündungen Taborstr. und Heckmannufer	RW4; 1336
 	RW6;RW6 12905,10143 13032,10355 13136,10535
 	RW6;RW6 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
 #: note: in der Praxis wird der Radweg als Zweirichtungsradweg benutzt
-	RW0;RW1 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 13035,10076 13216,9983
+	RW0;RW1 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 13035,10076 13220,9980
 	RW3;RW3 12229,10014 12116,9825
 	RW6;RW6 12286,9739 12398,9938
 	RW1;RW1 12714,9792 12834,9738
@@ -7842,8 +7830,9 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-03-01
-#: check_frequency: 30d
+#: last_checked: 2024-03-14
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2024-08-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
 	RW6;RW6 11715,11522 11767,11662 11821,11733
@@ -8222,7 +8211,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-03-01 vvv
+#: last_checked: 2024-03-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4; 10871,10322 10708,10312

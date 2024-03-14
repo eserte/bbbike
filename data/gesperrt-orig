@@ -965,7 +965,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
-#: last_checked: 2024-01-06 vvv
+#: last_checked: 2024-03-13 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -1022,7 +1022,7 @@ Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 #: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="57356015" version="18"
 #: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild
-#: last_checked: 2024-02-10
+#: last_checked: 2024-03-13 (mapillary)
 Cardinalstr.	1s:q3 21896,5724 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
@@ -3869,7 +3869,7 @@ Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 # 
 #: next_check_id: HELGAHAHNEMANN-2023
-#: last_checked: 2024-01-27 vvv
+#: last_checked: 2024-03-14 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-03-15 vvv
 #: osm_watch: way id="1116003134" version="4"
@@ -4442,7 +4442,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-13 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4556,9 +4556,10 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8677 (Antrag zum Radweg in der Unterführung)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,779064#msg-779064
+#: by: https://www.deutsches-architekturforum.de/thread/15269-wiederaufbau-der-dresdener-bahn/?postID=757978#post757978
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2024-02-11 (osm) vvv
+#: last_checked: 2024-03-14 (daf) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
 #: osm_watch: way id="152434836" version="25"
@@ -4627,7 +4628,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken
-#: last_checked: 2024-02-15 vvv
+#: last_checked: 2024-03-14 (webcam) vvv
 #: check_frequency: 45d vvv
 George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257
@@ -4811,9 +4812,9 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-03-12
+#: last_checked: 2024-03-13 (mapillary)
 #: check_frequency: 30d
-#: next_check: 2024-03-31
+# REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 # 
 # REMOVED --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020) --- #: osm_watch: way id="36395401" version="24" --- #: priority: #A --- #: last_checked: 2019-10-16 --- #: next_check: 2020-02-20 --- Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
@@ -4969,7 +4970,7 @@ Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="19"
-#: last_checked: 2024-02-28 (bahninfo-forum)
+#: last_checked: 2024-03-14 (daf)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
@@ -5355,7 +5356,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20230703/
 #: also_indoor: traffic (G,B,W)
-#: osm_watch: way id="1223345278" version="3"
+#: osm_watch: way id="1223345278" version="5"
 #: last_checked: 2024-02-18 (youtube)
 #: check_frequency: 180d
 Bhf. Blankenfelde: Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599

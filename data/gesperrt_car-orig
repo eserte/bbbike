@@ -416,7 +416,7 @@ Stubenrauchstr.: Bahntrasse	3nocross 16135,2135 16182,2200 16242,2279
 #: note: Luftbild:
 Buschkrugallee: Mittelstreifen	3nocross 13294,6386 13307,6359 13316,6320
 Gieselerstr.	1 4609,9027 4619,9200
-Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
+Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13139,9880 13162,9904 13220,9980
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 #: by: Hans Lindner
@@ -1362,14 +1362,14 @@ Berkaer Platz	2:Anlieger 2587,7823 2627,7821
 #: by: https://mein.berlin.de/projekte/verkehrswende-wrangelkiez/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/workshops-im-wrangelkiez_a311268
 #: confirmed_by: mapillary, srt vvv
-Görlitzer Str.	2:Anlieger 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 13035,10076 13216,9983
+Görlitzer Str.	2:Anlieger 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 13035,10076 13220,9980
 Wrangelstr.	2:Anlieger 12731,10547 12822,10487 12897,10439 13032,10355 13151,10276 13271,10193
 Lübbener Str.	2:Anlieger 12608,10294 12729,10515
 Sorauer Str.	2:Anlieger 12682,10258 12822,10487
 Oppelner Str.	2:Anlieger 12767,10216 12897,10439 12968,10564 12978,10581
 Falckensteinstr.	2:Anlieger 12905,10143 13032,10355 13136,10535
 Cuvrystr.	2:Anlieger 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
-Görlitzer Ufer	2:Anlieger 13216,9983 13275,10055
+Görlitzer Ufer	2:Anlieger 13220,9980 13275,10055
 Taborstr.	2:Anlieger 13283,10069 13262,10147 13271,10193 13369,10337
 Heckmannufer	2:Anlieger 13283,10069 13310,10081 13449,10262
 #: confirmed_by ^^^
@@ -1954,12 +1954,12 @@ Boxhagener Str. -> Wühlischstr.: nur geradeaus erlaubt	3 14752,11369 14771,11345
 #: by[removed]: https://www.infravelo.de/projekt/goertlitzer-ufer/ (mittlerweile ein Redirect)
 #: by: https://www.infravelo.de/projekt/goerlitzer-ufer/ (4. Quartal 2023) (mittlerweile 4. Quartal 2023 - 2. Quartal 2024)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/am-goerlitzer-ufer-wird-gebaut_a403467
-#: osm_watch: way id="148176599" version="15"
-#: XXX zurzeit schon wegen Bauarbeiten für den Fahrzeugverkehr gesperrt, siehe auch handicap- und radwege-Einträge; nach den Bauarbeiten vermutlich zu NN machen
-#: last_checked: 2024-03-02
-#: check_frequency: 30d
+#: osm_watch: way id="148176599" version="16"
+#: XXX Eintrag kann vollständig entfernt werden, wenn alle Markierungen/Schilder/... fertig sind
+#: last_checked: 2024-03-14
+#: check_frequency: 14d
 #: next_check: 2024-06-30
-Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	2 13216,9983 13155,9907 13136,9883 13086,9825
+Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	2 13220,9980 13162,9904 13139,9880 13086,9825
 # 
 #: historical_note: früher Einbahnstraße für alle
 #: by: osm

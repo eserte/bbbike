@@ -32997,7 +32997,7 @@ EOF
 #: also_indoor: traffic (none)
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
-#: osm_watch: way id="1060570985" version="1"
+#: osm_watch: way id="1060570985" version="2"
 #: last_checked: 2024-03-05 (okas)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-01-15
@@ -38794,9 +38794,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
-#: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2023-12-16
-#: check_frequency: 90d
+#: also_indoor: traffic (ex-H,G,B,W)
+#: last_checked: 2024-03-14 (indoor)
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 30d
 #: next_check: 2024-04-01
 	q4::inwork 3869,10760 4267,10724 4393,10712
 EOF
@@ -41027,8 +41028,9 @@ EOF
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
-#: source_id: viz2021:13.57564,52.5581,16.10.2023,07:00 (bis 14.03.2024)
-#: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024)
+#: source_id: viz2021:13.57564,52.5581,16.10.2023,07:00 (bis 14.03.2024) (inaktiv)
+#: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024) (inaktiv)
+#: source_id: viz2021:13.574594,52.555119,14.03.2024,10:33 (bis 12.04.2024)
 #: osm_watch: way id="9030384" version="39"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -41093,7 +41095,7 @@ EOF
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
-#: osm_watch: note 4045330 3
+#: osm_watch: note 4045330 5
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch: way id="389101374" version="16"
@@ -41161,16 +41163,18 @@ EOF
 	2::inwork 23015,30519 23113,30450
 EOF
      },
-     { from  => 1708236000, # $isodate2epoch->("2023-10-11 13:00:00"),
-       until => $isodate2epoch->("2024-03-15 17:00:00"), # 1709913600, # $isodate2epoch->("2023-12-11 17:00:00"),
+     { from  => $isodate2epoch->("2024-03-14 00:00:00"), # 1708236000, # $isodate2epoch->("2023-10-11 13:00:00"),
+       until => $isodate2epoch->("2024-04-12 17:00:00"), # $isodate2epoch->("2024-03-15 17:00:00"), # 1709913600, # $isodate2epoch->("2023-12-11 17:00:00"),
        #text  => 'Wilhelminenhofstr.: zwischen Mathildestr. und Klarastr. Gleisbauarbeiten, Radfahrer sollen den Gehweg benutzen, bis 20.11.2023',
        #text  => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 11.12.2023',
-       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., Radfahrer dürfen den Gehweg benutzen, vom 19.02.2024 07:00 bis 15.03.2024 17:00',
+       #text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., Radfahrer dürfen den Gehweg benutzen, vom 19.02.2024 07:00 bis 15.03.2024 17:00',
+       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, mögliche Einschränkungen für Radfahrer, vom 15.03.2024 11:00 bis 12.04.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
@@ -41178,7 +41182,8 @@ EOF
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
 #: also_indoor: traffic (H.G,B,W)
-	q3::inwork; 18861,6000 18843,6013 18766,6067
+# REMOVED ---	q3::inwork; 18861,6000 18843,6013 18766,6067
+	q3::inwork; 18928,5920 18861,6000
 EOF
      },
      { from  => 1698503124, # 2023-10-28 16:25
@@ -41222,19 +41227,16 @@ Kochstr.	q4; 9492,11209 9341,11186 9196,11165
 EOF
      },
      { from  => 1699031494, # 2023-11-03 18:11
-       until => undef, # 1704063599, # 2023-12-31 23:59
+       until => 1710441203, # undef, # 1704063599, # 2023-12-31 23:59
        text  => 'Görlitzer Ufer: mögliche Einschränkungen durch Bauarbeiten (Stand Anfang März 2024: Baustelle ist für Radfahrer passierbar, außerhalb der Arbeitszeiten kann die neue Fahrbahn zusätzlich offen sein)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOERLITZERUFER-2023
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
-#: osm_watch: way id="4782403" version="26"
-#: osm_watch: way id="148176599" version="15"
-#: last_checked: 2024-03-02
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 21d
-#: next_check: 2024-06-30
-	q3::inwork 13026,9854 13086,9825 13136,9883 13155,9907 13216,9983
+#: osm_watch: way id="4782403" version="27"
+#: osm_watch: way id="148176599" version="16"
+# REMOVED (weitgehend fertig, bis auf letzte Markierungen und Schilder) --- #: last_checked: 2024-03-14 --- #: check_frequency: 30d --- #: check_frequency: 21d --- #: next_check: 2024-06-30
+	q3::inwork 13026,9854 13086,9825 13139,9880 13162,9904 13220,9980
 EOF
      },
      { from  => $isodate2epoch->("2023-10-29 08:00:00"),
@@ -41292,7 +41294,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 #: also_indoor: traffic (G,W)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2024-03-09 vvv
+#: last_checked: 2024-03-13 (mapillary) vvv
 #: next_check: 2024-03-15 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
@@ -41982,11 +41984,12 @@ EOF
 EOF
      },
      { from  => 1707631200, # 2024-02-11 07:00
-       until => 1710522000, # 2024-03-15 18:00
-       text  => 'Eisenzahnstr.: Bauarbeiten zwischen Ravensberger Str. und Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 12.02.2024 07:00 bis 15.03.2024 18:00',
+       until => $isodate2epoch->("2024-03-28 23:59:59"), # 1710522000, # 2024-03-15 18:00
+       text  => 'Eisenzahnstr.: Bauarbeiten zwischen Ravensberger Str. und Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 12.02.2024 07:00 bis 28.03.2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024)
+#: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024) (inaktiv)
+#: source_id: viz2021:13.305156,52.496443,13.03.2024,20:58 (bis 28.03.2024)
 	q4::inwork 3711,9855 3719,10004
 EOF
      },
@@ -42223,6 +42226,15 @@ EOF
 #: note: beim rbb wird nur der Kfz-Verkehr erwähnt, Dauer "mehrere Wochen"
 #: note: mittlerweile wird bei viz explizit "absteigen & schieben" gesagt
 	q4::inwork 5627,9362 5479,9367
+EOF
+     },
+     { from  => 1711263600, # 2024-03-24 08:00
+       until => 1712930400, # 2024-04-12 16:00
+       text  => 'Batzlow - Möglin: Bauarbeiten, Sperrung, vom 25.03.2024 bis 12.04.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-F/24/045 (bis 12.04.2024)
+	2::inwork 58086,29081 58143,28039 58283,27690 58784,26700
 EOF
      },
     );

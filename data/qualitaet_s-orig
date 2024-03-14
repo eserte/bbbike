@@ -193,7 +193,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2024-03-01
+#: last_checked: 2024-03-14
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -205,7 +205,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2024-03-01 vvv
+#: last_checked: 2024-03-14 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -1170,9 +1170,9 @@ An der Güterbahn: Asphalt	Q0 14898,1834 14682,1782
 (Matthäusweg - Friedrich-Kayßler-Weg): Kleinpflaster	Q1 14961,1663 14982,1714 14985,1801 14986,1820 14988,1860 14993,2029
 (Sollmannweg - Matthäusweg): Parkweg	Q1 14961,1663 14898,1834 14895,1842 14888,1869 14865,1952
 Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2+ 12905,10143 13032,10355 13136,10535
-Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg Verbundsteinpflaster	Q1; 13216,9983 13035,10076 12905,10143 12767,10216 12682,10258 12608,10294 12328,10442
+Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg Verbundsteinpflaster	Q1; 13220,9980 13035,10076 12905,10143 12767,10216 12682,10258 12608,10294 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143
-Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905,10143 13035,10076 13216,9983
+Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905,10143 13035,10076 13220,9980
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
@@ -1724,6 +1724,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-bald-zur-fahrradstrasse_a396418 (für 2025 geplant)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6711 (Einwohnerantrag)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-umgestaltet_a408782 (2025 Fahrradstraße; Umgestaltung des Dreiecksplatzes)
+#: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/anwohner-gegen-durchgangsverkehr_a409202
 #: osm_watch: way id="4615063" version="36"
 #: last_checked: 2024-01-30 (mapillary)
 #: check_frequency: 180d
@@ -10657,7 +10658,7 @@ Werlseestr. - Am Goldmannpark: Beton	Q0 26199,5643 26239,5659
 #: osm_watch: way id="1085678795" version="4"
 #: osm_watch: way id="384630167" version="6"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
-#: last_checked: 2023-09-17
+#: last_checked: 2024-03-13 (mapillary)
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
@@ -12902,7 +12903,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2024-02-15 vvv
+#: last_checked: 2024-03-14 (webcam) vvv
 #: check_frequency: 45d vvv
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
 George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136
@@ -16385,7 +16386,7 @@ Braillestr.: Asphalt	Q0 4516,5194 4477,5250 4430,5324
 #: by: maja wegener: vvv
 #: next_check_id: WANDLITZ-2021
 #: XXX Asphaltierungsarbeiten, möglicherweise bessere Qualität?
-#: last_checked: 2024-03-09
+#: last_checked: 2024-03-13 (mapillary)
 # REMOVED --- #: next_check: 2024-03-01
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
 Wandlitzstr.: Asphalt mit einigen Schäden	Q1+ 18704,8427 18627,8475
