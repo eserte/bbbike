@@ -133,7 +133,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-03-08
+#: last_checked: 2024-03-14 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -749,6 +749,7 @@ Granitzstr.: Asphalt	Q0 10849,17848 10894,17864 10922,17886 10934,17896 11253,18
 Stargardtstr.: Gehwegplatten	Q0- 7033,17692 7162,17737 7212,17756
 Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 # 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/ehemaliger-fahr-rat-7-sitzung-29112018.pdf ("fahrradfreundliche Fahrbahn")
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/219 (Asphaltierung)
 #: by[removed]: http://www.infravelo.de/projekt/windscheidstrasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile (2021-08) gelöscht)
@@ -14929,8 +14930,8 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8761 (Antrag zur "Fahrradlenkung" auf dem Hauptweg)
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
-#: osm_watch: way id="115724952" version="12"
-#: osm_watch: way id="1159154133" version="1"
+#: osm_watch: way id="115724952" version="13"
+#: osm_watch: way id="1159154133" version="2"
 #: last_checked: 2023-12-26
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674

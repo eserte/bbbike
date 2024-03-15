@@ -5539,7 +5539,7 @@ Jahnstr.	q4::inwork; 12833,6127 13027,6168
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-14 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -7425,20 +7425,22 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024) (inaktiv)
 #: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
-#: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1768561523943948408
+#: by: https://pbs.twimg.com/media/GIo5NT9XQAAkCyP?format=jpg&name=large
 #: also_indoor: traffic (H.G,B,W)
 # REMOVED ---	q3::inwork; 18861,6000 18843,6013 18766,6067
 	q3::inwork; 18928,5920 18861,6000
 ',
          'from' => 1710370800,
          'id' => 3948,
-         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, mögliche Einschränkungen für Radfahrer, vom 15.03.2024 11:00 bis 12.04.2024 17:00',
+         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, Radfahrer dürfen den Gehweg benutzen, vom 15.03.2024 11:00 bis 12.04.2024 17:00',
          'type' => 'handicap',
          'until' => 1712934000
        },
@@ -7450,26 +7452,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WANDLITZ-2021
-#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
-#: also_indoor: traffic (G,W)
-# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2024-03-13 (mapillary) vvv
-#: next_check: 2024-03-15 vvv
-# REMOVED ---	q4::inwork 18704,8427 18627,8475
-# REMOVED ---	q3::inwork 18627,8475 18557,8525
-	q3::inwork; 18704,8427 18627,8475
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1699164000,
-         'id' => 3957,
-         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 15.03.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1710518400
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
@@ -7771,15 +7754,15 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024)
+         'data' => '#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024)
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
 	q4::inwork 1139,5308 1212,5353
 ',
          'from' => 1681974000,
          'id' => 4004,
-         'text' => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.03.2024 17:00',
+         'text' => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.05.2024 17:00',
          'type' => 'handicap',
-         'until' => 1711555200
+         'until' => 1716822000
        },
        {
          'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)

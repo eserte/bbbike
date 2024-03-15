@@ -35440,7 +35440,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-14 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -41168,19 +41168,21 @@ EOF
        #text  => 'Wilhelminenhofstr.: zwischen Mathildestr. und Klarastr. Gleisbauarbeiten, Radfahrer sollen den Gehweg benutzen, bis 20.11.2023',
        #text  => 'Wilhelminenhofstr.: Gleisbauarbeiten, mögliche Einschränkungen auch für Radfahrer, bis 11.12.2023',
        #text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustr. und Mathildenstr., Radfahrer dürfen den Gehweg benutzen, vom 19.02.2024 07:00 bis 15.03.2024 17:00',
-       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, mögliche Einschränkungen für Radfahrer, vom 15.03.2024 11:00 bis 12.04.2024 17:00',
+       text => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, Radfahrer dürfen den Gehweg benutzen, vom 15.03.2024 11:00 bis 12.04.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.524598,52.4593,11.10.2023,13:43 (bis 20.11.2023) (inaktiv)
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024) (inaktiv)
 #: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
-#: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024)
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1759462820129759482#m
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGrc0MkWUAAwF3t.jpg
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1768561523943948408
+#: by: https://pbs.twimg.com/media/GIo5NT9XQAAkCyP?format=jpg&name=large
 #: also_indoor: traffic (H.G,B,W)
 # REMOVED ---	q3::inwork; 18861,6000 18843,6013 18766,6067
 	q3::inwork; 18928,5920 18861,6000
@@ -41965,11 +41967,11 @@ EOF
 EOF
      },
      { from  => 1681974000, # 2023-04-20 09:00
-       until => $isodate2epoch->("2024-03-27 17:00:00"), # 1709913600, # 2024-03-08 17:00
-       text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.03.2024 17:00',
+       until => $isodate2epoch->("2024-05-27 17:00:00"), # 1709913600, # 2024-03-08 17:00
+       text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.05.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024)
+#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024)
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
 	q4::inwork 1139,5308 1212,5353
 EOF

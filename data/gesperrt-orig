@@ -3838,7 +3838,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: note: laut Aushang Bauarbeiten bis 26.9.2023 (wurde aber nicht eingehalten)
 #: note: mittlerweile Halteverbot in der Umgebung bis 31.01.2024, verlängert bis 29.03.2024
 #: priority: #C
-#: last_checked: 2024-02-03
+#: last_checked: 2024-03-14 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 # REMOVED --- #: next_check: 2023-09-26
@@ -4116,7 +4116,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # 
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
-#: osm_watch: way id="1115686082" version="2"
+#: osm_watch: way id="1115686082" version="3"
 #: last_checked: 2024-01-31 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
@@ -4299,7 +4299,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
 #: by: https://berliner-abendblatt.de/2022/12/16/umbau-der-st-hedwigs-kathedrale-im-zeitplan-aber-teurer/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/katholisches-forum-am-bebelplatz-wird-komplettiert_a385644 (Umbauarbeiten: Kathedrale bis Ende 2024, Bernhard-Lichtenberg-Haus bis Mitte 2025)
-#: last_checked: 2023-11-07 (mapillary)
+#: last_checked: 2024-03-14 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4518,7 +4518,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
-#: osm_watch: way id="4713304" version="44"
+#: osm_watch: way id="4713304" version="45"
 #: priority: #A
 #: last_checked: 2024-02-28 (okas)
 #: check_frequency: 360d
@@ -4562,8 +4562,8 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: last_checked: 2024-03-14 (daf) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
-#: osm_watch: way id="152434836" version="25"
-#: osm_watch: way id="30084962" version="34"
+#: osm_watch: way id="152434836" version="26"
+#: osm_watch: way id="30084962" version="35"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
@@ -4812,7 +4812,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-03-13 (mapillary)
+#: last_checked: 2024-03-14 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5262,9 +5262,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="35"
+#: osm_watch: way id="186329816" version="36"
 #: also_indoor: traffic
-#: last_checked: 2024-02-23
+#: last_checked: 2024-03-14 (osm)
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 # REMOVED --- #: valid: -20221230
