@@ -76,11 +76,13 @@ Tk::grid(
 );
 my $timer;
 
+my $text_row = 2;
 if ($current_url_filename) {
     Tk::grid(
 	$mw->Checkbutton(-text => "Auto Update from special file", -variable => \$auto_update_from_file, -command => \&toggle_update_from_file),
 	-sticky => 'w',
     );
+    $text_row++;
 }
 my $timer_from_file;
 
@@ -95,7 +97,7 @@ Tk::grid(
 # make sure everything is horizontally expanded (only one column)
 $mw->gridColumnconfigure($_, -weight => 1) for (0);
 # make sure the rotext is expanding also vertically
-$mw->gridRowconfigure($_, -weight => 1) for (2);
+$mw->gridRowconfigure($_, -weight => 1) for ($text_row);
 
 if ($auto_update_from_selection) {
     toggle_update();
