@@ -156,6 +156,9 @@ sub create_socket_server {
     CHILD_WTR->autoflush(1);
     PARENT_WTR->autoflush(1);
 
+    my $check_parent_interval = 60; # seconds
+
+    my $parent_pid = $$;
     my $pid = fork;
     if (!$pid) { # child
 	# XXX with this the child process dumps core on exit (as of Tk 800.017)
@@ -188,15 +191,26 @@ sub create_socket_server {
 
 	create_pid();
 
-	my $client;
-	while($client = $h->accept()) {
-	    # XXX evtl. Zugangssperre (auf localhost überprüfen...)
-	    if ($use_inet) {
-		use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([gethostbyaddr($client->peeraddr)],[]); # XXX
+	alarm($check_parent_interval);
+	local $SIG{ALRM} = sub {
+	    if (!(kill 0 => $parent_pid)) {
+		warn "ERROR: the bbbike parent process (pid=$parent_pid) does not seem to run anymore, stop the bbbike server process (pid=$$) too...\n";
+		require POSIX;
+		POSIX::_exit(1);
 	    }
-	    my($str) = scalar <$client>;
-	    print PARENT_WTR $str;
-	    close $client;
+	    alarm($check_parent_interval);
+	};
+	while() { # SIGALRM would cause an EINTR, retry again...
+	    my $client;
+	    while($client = $h->accept()) {
+		# XXX evtl. Zugangssperre (auf localhost überprüfen...)
+		if ($use_inet) {
+		    use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([gethostbyaddr($client->peeraddr)],[]); # XXX
+		}
+		my($str) = scalar <$client>;
+		print PARENT_WTR $str;
+		close $client;
+	    }
 	}
 	require POSIX;
 	POSIX::_exit(0); # never reached
