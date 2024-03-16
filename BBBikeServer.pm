@@ -21,7 +21,7 @@ use strict;
 use vars qw($name $args $VERBOSE $VERSION);
 use Safe;
 
-$VERSION = '1.23';
+$VERSION = '1.24';
 
 #$VERBOSE = 1 if !defined $VERBOSE;
 
@@ -239,39 +239,44 @@ sub create_socket_server {
 		     return;
 		 }
 
-		 my %args = @$args;
-		 my $mark = $args{-mark};
-		 if (exists $args{-center}) {
-		     main::choose_from_plz(-str => $args{-center});
-		 }
-		 if (exists $args{-centerc}) {
-		     main::choose_from_plz(-coord => $args{-centerc}, -mark => $mark);
-		 }
-		 if (exists $args{-from}) {
-		     main::set_route_start_street($args{-from});
-		 }
-		 if (exists $args{-to}) {
-		     main::set_route_ziel_street($args{-to});
-		 }
-		 if (exists $args{-routefile} &&
-		     -r $args{-routefile}) {
-		     # This used to check for .bbd explicitely and everything
-		     # else is treated as a route, but it seems that
-		     # plot_additional_layer accepts more formats
-		     # automatically, including gpsman tracks
-		     if ($args{-routefile} =~ m{\.bbr$}) {
-			 warn "Read <$args{-routefile}> ...\n";
-			 $main::center_loaded_route = $main::center_loaded_route if 0; # cease -w
-			 local $main::center_loaded_route = 1;
-			 main::load_save_route(0, $args{-routefile});
-		     } else {
-			 warn "Read <$args{-routefile}> as bbd ...\n";
-			 my $type = 'str';
-			 my $abk = main::plot_additional_layer($type, $args{-routefile});
-			 if ($args{-strlist}) {
-			     main::choose_ort($type, $abk, -rebuild => 1);
+		 eval {
+		     my %args = @$args;
+		     my $mark = $args{-mark};
+		     if (exists $args{-center}) {
+			 main::choose_from_plz(-str => $args{-center});
+		     }
+		     if (exists $args{-centerc}) {
+			 main::choose_from_plz(-coord => $args{-centerc}, -mark => $mark);
+		     }
+		     if (exists $args{-from}) {
+			 main::set_route_start_street($args{-from});
+		     }
+		     if (exists $args{-to}) {
+			 main::set_route_ziel_street($args{-to});
+		     }
+		     if (exists $args{-routefile} &&
+			 -r $args{-routefile}) {
+			 # This used to check for .bbd explicitely and everything
+			 # else is treated as a route, but it seems that
+			 # plot_additional_layer accepts more formats
+			 # automatically, including gpsman tracks
+			 if ($args{-routefile} =~ m{\.bbr$}) {
+			     warn "Read <$args{-routefile}> ...\n";
+			     $main::center_loaded_route = $main::center_loaded_route if 0; # cease -w
+			     local $main::center_loaded_route = 1;
+			     main::load_save_route(0, $args{-routefile});
+			 } else {
+			     warn "Read <$args{-routefile}> as bbd ...\n";
+			     my $type = 'str';
+			     my $abk = main::plot_additional_layer($type, $args{-routefile});
+			     if ($args{-strlist}) {
+				 main::choose_ort($type, $abk, -rebuild => 1);
+			     }
 			 }
 		     }
+		 };
+		 if ($@) {
+		     main::status_message("A bbbikeclient command caused a failure:\n$@\nUsed bbbikeclient args: @$args", "err");
 		 }
 		 $top->deiconify;
 		 $top->raise;
