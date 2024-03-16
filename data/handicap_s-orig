@@ -47,7 +47,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,1
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2024-03-14
+#: last_checked: 2024-03-15
 #: check_frequency: 30d
 #: next_check: 2024-04-09
 #: valid: -20240409
@@ -218,7 +218,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: last_checked ^^^
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2024-03-04
+#: last_checked: 2024-03-15
 #: check_frequency: 90d
 #: next_check: 2027-12-31
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -304,7 +304,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: XXX Oranienburger Straße (Mitte) in beiden Richtungen zwischen Tucholskystraße und Krausnickstraße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00
 #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024)
-#: last_checked: 2024-03-12
+#: last_checked: 2024-03-15 (mapillary)
 #: next_check: 2024-03-30
 #: valid: -20240330
 Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
@@ -854,11 +854,11 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 # 
 #: next_check_id: RUSCHEAMPEL-2024
 #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert?
-#: last_checked: 2024-03-07 vvv
+#: last_checked: 2024-03-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-05-02 vvv
 #: valid: -20240502 vvv
-Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr.	q3::inwork 15747,12880 15950,12886
+Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886
 #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -931,6 +931,12 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 ### Marzahn ###
 # 
+#: next_check_id: KNOTENMARZAHN-2022
+#: last_checked: 2024-03-16
+#: check_frequency: 60d
+#: next_check: 2024-06-17
+Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2-::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
+# 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
 #: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
@@ -968,7 +974,7 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-02-26 (daf) vvv
+#: last_checked: 2024-03-16 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv

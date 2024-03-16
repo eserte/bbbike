@@ -28498,7 +28498,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-03-01
+#: last_checked: 2024-03-15 (mapillary)
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -32498,7 +32498,7 @@ EOF
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
 #: also_indoor: traffic (G,B,W)
 #: note: laut rbb bis 22.03.2024, mittlerweile entfernt, und wieder da
-#: last_checked: 2024-03-12 vvv
+#: last_checked: 2024-03-15 (mapillary) vvv
 #: next_check: 2024-03-29 vvv
 	q4::inwork; 10264,13097 10313,13227
 	q4::inwork; 10313,13227 10264,13097
@@ -39329,7 +39329,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-03-11
+#: last_checked: 2024-03-16
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -41570,21 +41570,21 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-02-28 18:00:00"), # undef, # XXX
+       until => $isodate2epoch->("2024-09-30 18:00:00"), # undef, # XXX
        #text  => 'Rüdigerstr. und Hagenstr.: Leitungsarbeiten, Einbahnstraßenregelung bzw. Sperrung',
-       text  => 'Dietlindestr.: Sperrung an der Rüdigerstr., voraussichtlich bis 28.02.2024',
+       text  => 'Dietlindestr.: Sperrung an der Rüdigerstr., möglicherweise bis September 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: note: laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024
+#: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
 #: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-02-02 vvv
+#: last_checked: 2024-03-16 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-02-28 vvv
+#: next_check: 2024-03-28 vvv
 # REMOVED --- #: next_check: 2024-09-30 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
-Dietlindestr.: Sperrung im Einmündungsbereich	q3::inwork 17056,12304 17088,12506
+Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

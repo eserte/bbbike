@@ -427,20 +427,23 @@ Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg 
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: Mindestwartezeit an den Ampeln etwa eine Minute
-#: last_checked: 2023-11-25 vvv
+#: XXX zurzeit sind die Ampeln wegen Sperrung für den Kfz-Verkehr abgeschaltet, siehe valid-Direktive
+#: last_checked: 2024-03-16 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
+#: valid: 20240617- vvv
 Landsberger Allee	DH:t=50 18553,14678 18831,14823 19013,14905
 Landsberger Allee	DH:t=50 19175,14968 19196,14976 19200,14963
+#: valid: ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: U6-2022
-#: note: Existenz eines Zweirichtungsradwegs am 18.3.2023 bestätigt; März 2024 wird als Ende der Bauarbeiten angegeben, aber wird es vorher noch zu einer Umstellung der Verkehrsführung kommen (Süd- statt Nordseite)?
+#: note: Existenz eines Zweirichtungsradwegs am 18.3.2023 bestätigt; es wird noch zu einer Umstellung der Verkehrsführung kommen (Süd- statt Nordseite)?
 #: last_checked: 2023-12-11 (mapillary) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2024-03-15 vvv
+#: next_check: 2025-04-15 vvv
 Seidelstr.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 3429,17987 3570,17938 3628,17935
 Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 3833,17929 3930,17923 4016,17918
 #: next_check ^^^
