@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -127,7 +127,14 @@ if ($logfh) {
 }
 
 sub find_active_sourceids {
-    find_active_sourceids_bvg2023();
+    # www.bvg.de is not reliable anymore (connection errors seen in March 2024), so do a retry once if Sub::Retry is available
+    if (eval { require Sub::Retry; 1 }) {
+	Sub::Retry::retry(2, 5, sub {
+			      find_active_sourceids_bvg2023();
+			  });
+    } else {
+	find_active_sourceids_bvg2023();
+    }
 }
 
 # Valid since Apr 2023
