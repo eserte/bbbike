@@ -2541,6 +2541,7 @@ tragen (3x13 Stufen)	0:45 18739,4728
 # REMOVED (nicht mehr in Benutzung) --- #: note: provisorische Treppe --- tragen (36 Stufen)	0:45 18687,4649
 #: by: https://www.bahninfo-forum.de/read.php?9,677830,795049#msg-795049 (Aufzug wird frühestens Mitte 2025 fertig)
 #: XXX hier wird es in Zukunft einen Aufzug geben
+#: last_checked: 2024-03-17 (krickstadt)
 #: next_check: 2025-07-01
 tragen	0:45 18661,4655
 # 
@@ -3854,7 +3855,7 @@ Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # REMOVED --- #: next_check: 2023-11-11 vvv
 #: osm_watch: way id="1198442169" version="8"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
-#: osm_watch: way id="1152661787" version="23"
+#: osm_watch: way id="1152661787" version="24"
 # REMOVED (hier offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
 #: osm_watch: way id="1198395777" version="12"
@@ -4104,13 +4105,13 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
-#: last_checked: 2024-03-12 vvv
+#: last_checked: 2024-03-17 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
 #: osm_watch: way id="766868087" version="12"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
-#: osm_watch: way id="766868090" version="13"
+#: osm_watch: way id="766868090" version="14"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: note ^^^
 #: next_check ^^^
@@ -4735,10 +4736,10 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10849,12557 10838,12496 10807,124
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="719023971" version="13"
+#: osm_watch: way id="719023971" version="14"
 #: last_checked: 2024-03-04 (daf)
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
-#: osm_watch: way id="719023970" version="12"
+#: osm_watch: way id="719023970" version="13"
 #: last_checked: 2024-03-04 (daf)
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 21514,5310
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
@@ -4806,7 +4807,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="22"
 #: priority: #C
-#: last_checked: 2024-03-02
+#: last_checked: 2024-03-17
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148

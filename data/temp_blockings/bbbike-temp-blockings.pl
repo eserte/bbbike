@@ -35694,7 +35694,7 @@ EOF
        data  => <<EOF,
 #: by: http://spielstraﬂen.de/uebersicht.php#kreu
 #: XXX laut Pressemitteilung "Wrangelstraﬂe, zwischen Sorauer Straﬂe und Oppelner Straﬂe, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, auﬂer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verl‰ngern -> 2023 nachschauen; erster Termin 2023 laut Spielstraﬂenseite am 26.05.
-#: last_checked: 2023-09-14
+#: last_checked: 2024-03-17
 #: next_check: 2024-05-01
 	q4::temp::play 12822,10487 12897,10439
 EOF
@@ -39644,7 +39644,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024)
-#: last_checked: 2024-03-10
+#: last_checked: 2024-03-17
 #: next_check: 2024-04-02
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -41091,14 +41091,14 @@ EOF
 #: note: auﬂerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraﬂe wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraﬂenregelungen noch immer? vvv
-#: last_checked: 2024-03-12 vvv
+#: last_checked: 2024-03-17 (osm) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 5
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031
-#: osm_watch: way id="389101374" version="16"
+#: osm_watch: way id="389101374" version="17"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="4"
