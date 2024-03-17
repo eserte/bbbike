@@ -14581,7 +14581,7 @@ sub show_info {
 	    my $show_leaflet_url = sub {
 		my($baseurl, $linkcount) = @_;
 
-		my($marker_url, $normal_url);
+		my($marker_url, $normal_url, $privfz_url);
 		{
 		    my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
 		    $scale = 18 if $scale > 18;
@@ -14602,18 +14602,27 @@ sub show_info {
 		    my @common_params = (
 					 ($Msg::lang eq 'en' ? (lang => "en") : ()),
 					 zoom => int($scale),
+					);
+		    my @layers_params = (@common_params,
 					 (@layers ? (l => join(",", @layers)) : ()),
 					);
 
 		    $normal_url = BBBikeUtil::uri_with_query($baseurl,
 							     [lat => $py,
 							      lon => $px,
-							      @common_params,
+							      @layers_params,
 							     ]);
 		    $marker_url = BBBikeUtil::uri_with_query($baseurl,
 							     [mlat => $py,
 							      mlon => $px,
+							      @layers_params,
+							     ]);
+		    $privfz_url = BBBikeUtil::uri_with_query($baseurl,
+							     [mlat => $py,
+							      mlon => $px,
 							      @common_params,
+							      bm => 'B04',
+							      l => 'X',
 							     ]);
 		}
 
@@ -14634,6 +14643,14 @@ sub show_info {
 		$leaflet_menu->command
 		    (-label => M"Marker-Link kopieren",
 		     -command => sub { $copy_link->($marker_url) },
+		    );
+		$leaflet_menu->command
+		    (-label => M"Private Fragezeichen",
+		     -command => sub {
+			 require WWWBrowser;
+			 main::status_message("URL: $privfz_url", "info");
+			 WWWBrowser::start_browser($privfz_url);
+		     },
 		    );
 
 		$show_url->($linkcount, $normal_url, $leaflet_menu);
