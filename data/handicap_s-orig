@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-03-17
+#: last_checked: 2024-03-18
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -267,11 +267,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958
 # REMOVED (hier nicht mehr) --- Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 8037,14958 8091,14895
 # 
-#: next_check_id: SWINEMUENDER-2023
-#: add_fragezeichen: Gibt es Ramlerstr./Swinemünder Str. weiterhin Bauarbeiten?
-#: also_indoor: traffic (G[zu viel])
-#: last_checked: 2024-02-13
-Ramlerstr.: Fahrbahn an der Swinemünder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
+# REMOVED (nicht mehr) --- #: next_check_id: SWINEMUENDER-2023 --- #: add_fragezeichen: Gibt es Ramlerstr./Swinemünder Str. weiterhin Bauarbeiten? --- #: also_indoor: traffic (G[zu viel]) --- #: last_checked: 2024-02-13 --- Ramlerstr.: Fahrbahn an der Swinemünder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="1"
@@ -303,10 +299,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: XXX Oranienburger Straße (Mitte) in beiden Richtungen zwischen Tucholskystraße und Krausnickstraße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00
-#: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024)
+#: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024)
 #: last_checked: 2024-03-15 (mapillary)
-#: next_check: 2024-03-30
-#: valid: -20240330
+#: next_check: 2024-03-19
+#: valid: -20240319
 Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
 # 
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11111,12027
@@ -344,7 +340,7 @@ Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 1
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-14
+#: last_checked: 2024-03-18
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -711,7 +707,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="30"
 #: osm_watch: way id="707100249" version="19"
-#: last_checked: 2024-02-09 (webcam)
+#: last_checked: 2024-03-18
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -765,12 +761,14 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 ### Neukölln ###
 # 
 #: XXX Wildenbruchstraße (Neukölln) in beiden Richtungen zwischen Harzer Straße und Karl-Kunger-Straße: geplatzte Wasserleitung, Straße gesperrt, vom 11.03.2024 10:11
-#: source_id: viz2021:13.44635,52.48639,11.03.2024,10:11
+#: source_id: viz2021:13.44635,52.48639,11.03.2024,10:11 (inaktiv)
 #: source_id: bvg2021:m43#BVG344367_0
 #: source_id[inactive]: bvg2021:m43#BVG344369_0
+#: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569
 #: last_checked: 2024-03-13
 #: check_frequency: 14d
+#: next_check: 2024-03-28
 Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
 # 
 # REMOVED (vermutlich frei befahrbar) --- #: next_check_id: WESER-2021 --- #: osm_watch: way id="1050315263" version="5" --- #: osm_watch: way id="996616281" version="10" --- #: osm_watch: way id="996616282" version="9" --- #: osm_watch: way id="1100696455" version="1" --- #: also_indoor: traffic (B) vvv --- #: last_checked: 2022-12-04 vvv --- #: check_frequency: 7d vvv
@@ -3388,7 +3386,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-03-14
+#: last_checked: 2024-03-18
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3841,7 +3839,7 @@ Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
 #: XXX_prog: BS zumindest an der Alten Potsdamer Str., ansonsten wegen der Fußgänger weiterhin q4
 #: note: früher q3
-(Potsdamer Platz - Linkstr.): Bordstein, Fußgänger	q4 8474,11350 8481,11447
+(Potsdamer Platz - Linkstr.): Bordstein, Fußgänger	q4 8479,11365 8481,11447
 Alte Potsdamer Str.: Fußgängerzone, Radfahrer frei	q2 8280,11296 8318,11324 8375,11368 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 #: XXX_prog relativ steil -> comments_mount?
@@ -4108,14 +4106,23 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Ost-West-Str., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6305,14964
 #: next_check_id: VIRCHOW-2023
-#: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6305,14964 6231,14952
+#: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX hat möglicherweise was mit den Leitungsarbeiten am Nordufer zu tun
 #: osm_watch: way id="1168244288" version="1"
 #: osm_watch: way id="1239079511" version="1"
-#: last_checked: 2024-01-08
-#: check_frequency: 60d
+#: last_checked: 2024-03-18
+#: check_frequency: 90d
 Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
-(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6231,14952 6159,14921 6104,14937 6030,14924
+#: next_check_id: VIRCHOW-2023
+#: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
+#: XXX laut osm Sperrung bis 2028
+#: osm_watch: way id="1238623806" version="1"
+#: osm_watch: way id="1168244288" version="1"
+#: last_checked: 2024-03-18
+#: check_frequency: 360d
+#: next_check: 2028-12-31
+(Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6159,14921 6104,14937
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6400,15080 6395,15109 6380,15210
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6470,14990 6504,14969
 (Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6158,14851 6078,14864 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
@@ -4766,7 +4773,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
-#: last_checked: 2024-03-14
+#: last_checked: 2024-03-18
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

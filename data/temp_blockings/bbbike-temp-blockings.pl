@@ -37298,13 +37298,16 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 13515,11969 13352,12003
 EOF
      },
-     { from  => 1665940464, # 2022-10-16 19:14
-       until => 1676660400, # 2023-02-17 20:00
-       text  => 'Jonny-K.-Aktivpark/Egelpfuhlwiesen: wegen Bauarbeiten ist der Hauptweg gesperrt, voraussichtlich bis Mitte Februar 2023',
+     { from  => 1710788274, # 1665940464, # 2022-10-16 19:14
+       until => $isodate2epoch->("2024-04-30 18:00:00"), # 1676660400, # 2023-02-17 20:00
+       #text  => 'Jonny-K.-Aktivpark/Egelpfuhlwiesen: wegen Bauarbeiten ist der Hauptweg gesperrt, voraussichtlich bis Mitte Februar 2023',
+       text  => 'Jonny-K.-Aktivpark/Egelpfuhlwiesen: wegen Bauarbeiten ist der Weg entlang des Egelpfuhlgrabens gesperrt, vom 18.03.2024 bis 30.04.2024',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1255376.php',
        data  => <<EOF,
-	2::inwork -5554,12929 -5493,12994 -5446,13137 -5472,13235
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1255376.php
+# REMOVED ---	2::inwork -5554,12929 -5493,12994 -5446,13137 -5472,13235
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428766.php
+	2::inwork -5753,13107 -5707,13014 -5554,12929 -5388,12841 -5273,12802 -5234,12812
 EOF
      },
      { from  => 1666476000, # 2022-10-23 00:00
@@ -37862,8 +37865,8 @@ EOF
 EOF
      },
      { from  => 1670972400, # 2022-12-14 00:00
-       until => $isodate2epoch->("2024-03-29 17:00:00"), # 1704063599, # 2023-12-31 23:59
-       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis Ende März 2024',
+       until => $isodate2epoch->("2024-04-09 17:00:00"), # 1704063599, # 2023-12-31 23:59
+       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 09.04.2024',
        type  => 'gesperrt',
        source_id => 'viz2021:13.315375,52.450057,04.12.2022,07:00', # hier ab 4.12.2022, mittlerweile inaktiv
        data  => <<EOF,
@@ -37872,7 +37875,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFi-jSc_XoAA7nGg.jpg
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024)
+#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2023)
 #: source_id[inactive]: bvg2021:m85#BVG312983_0
 #: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
@@ -39237,7 +39240,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-02-15
+#: last_checked: 2024-03-18
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -39644,7 +39647,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024)
-#: last_checked: 2024-03-17
+#: last_checked: 2024-03-18
 #: next_check: 2024-04-02
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40774,7 +40777,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2024-02-11 (mapillary) vvv
+#: last_checked: 2024-03-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
@@ -40937,7 +40940,7 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="40"
-#: last_checked: 2024-02-25 vvv
+#: last_checked: 2024-03-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-18 vvv
 	q2::inwork; 6334,14756 6513,14725 6596,14740 6709,14782
@@ -41158,8 +41161,8 @@ EOF
        until => 1706137200, # 2024-01-25 00:00
        text  => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung für alle Verkehrsteilnehmer vom 15.01.2024 bis 24.01.2024',
        type  => 'gesperrt',
-       source_id => '236001823',
        data  => <<EOF,
+#: source_id: 236001823 (bis 24.01.2024)
 	2::inwork 23015,30519 23113,30450
 EOF
      },
@@ -41848,7 +41851,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet?
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-18
 	q4::inwork 8122,12603 8120,12756
 EOF
      },
@@ -42081,7 +42084,7 @@ EOF
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025)
 #: osm_watch[closed]: note 4125418 5
 #: osm_watch: way id="1258660768" version="2"
-#: osm_watch: way id="1259755317" version="1"
+#: osm_watch: way id="1259755317" version="2"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
@@ -42237,6 +42240,40 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-F/24/045 (bis 12.04.2024)
 	2::inwork 58086,29081 58143,28039 58283,27690 58784,26700
+EOF
+     },
+     { from  => 1710655200, # 2024-03-17 07:00
+       until => 1719684000, # 2024-06-29 20:00
+       text  => 'Brahestr.: Bauarbeiten zwischen Tegeler Weg und Fabriciusstr., evtl. sind auch Radfahrer betroffen, vom 18.03.2024 07:00 bis 29.06.2024 20:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.296893,52.528484,18.03.2024,07:00 (bis 29.06.2024)
+	q4::inwork 3066,13514 3159,13492
+EOF
+     },
+     { from  => 1710741600, # 2024-03-18 07:00
+       until => 1711641600, # 2024-03-28 17:00
+       text  => 'Schillerstr.: zwischen Hauptstr. und Beethovenstr. Bauarbeiten, Richtung Schönhauser Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.03.2024 07:00 bis 28.03.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.369042,52.587855,19.03.2024,07:00 (bis 28.03.2024)
+	q4::inwork; 7832,20219 7933,20171
+EOF
+     },
+     { from  => 1710741600, # 2024-03-18 07:00
+       until => 1718377200, # 2024-06-14 17:00
+       text  => 'Seestr.: das Queren in Höhe Antwerpener Str./Togostr. ist für den Radverkehr nicht möglich, vom 19.03.2024 07:00 bis 14.06.2024 17:00',
+       type  => 'gesperrt',
+## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6422,15708 6555,15827 6661,15921\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
+       data  => <<EOF,
+#: source_id: viz2021:13.348181,52.548416,19.03.2024,07:00 (bis 14.06.2024)
+#       3nocross::ignrte 6422,15708 6555,15827 6661,15921
+Seestr. -> Antwerpener Str.	3::inwork 6661,15921 6555,15827 6690,15671
+Seestr. -> Togostr.	3::inwork 6422,15708 6555,15827 6530,15849
+Antwerpener Str. -> Seestr.	3::inwork 6690,15671 6555,15827 6422,15708
+Antwerpener Str. -> Togostr.	3::inwork 6690,15671 6555,15827 6530,15849
+Togostr. -> Seestr.	3::inwork 6530,15849 6555,15827 6661,15921
+Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
     );

@@ -507,7 +507,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2024-02-17 (mapillary) vvv
+#: last_checked: 2024-03-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
@@ -621,7 +621,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2024-02-25
+#: last_checked: 2024-03-18
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -635,7 +635,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2024-02-11 (mapillary)
+#: last_checked: 2024-03-18
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1060,7 +1060,8 @@ Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 70
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 Tiergarten: wassergebundene Decke	Q1 8167,11865 8132,11910
 Tiergarten: wassergebundene Decke	Q1 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
-Tiergarten: Parkweg	Q1 8005,11627 8014,11753 8016,11770 8020,11937 8022,12016
+Tiergarten: Parkweg, teilweise gröberer Schotter	Q1- 8005,11627 8014,11753 8016,11770
+Tiergarten: Parkweg	Q1 8016,11770 8020,11937 8022,12016
 Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8049,12140
 Tiergarten: Mosaikpflaster	Q1 8049,12140 8055,12186
 Tiergarten: Asphalt	Q0 8214,12205 8215,12156
@@ -12904,7 +12905,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2024-03-14 (webcam) vvv
+#: last_checked: 2024-03-18 vvv
 #: check_frequency: 45d vvv
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
 George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136

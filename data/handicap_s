@@ -16,7 +16,6 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958
-Ramlerstr.: Fahrbahn an der Swinemünder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -1921,7 +1920,7 @@ Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 
 (Schwedter Str. - Alt-Lichtenrade): schmal	q2 11023,-374 11010,-378 10938,-405
 Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
-(Potsdamer Platz - Linkstr.): Bordstein, Fußgänger	q4 8474,11350 8481,11447
+(Potsdamer Platz - Linkstr.): Bordstein, Fußgänger	q4 8479,11365 8481,11447
 Alte Potsdamer Str.: Fußgängerzone, Radfahrer frei	q2 8280,11296 8318,11324 8375,11368 8389,11378 8481,11447 8479,11493
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
@@ -2107,7 +2106,8 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Ost-West-Str., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6305,14964
 Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
-(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6231,14952 6159,14921 6104,14937 6030,14924
+(Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6159,14921 6104,14937
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6400,15080 6395,15109 6380,15210
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6470,14990 6504,14969
 (Südring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6158,14851 6078,14864 6073,14892 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812 6319,14821 6305,14964
