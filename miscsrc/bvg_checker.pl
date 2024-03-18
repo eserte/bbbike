@@ -129,8 +129,13 @@ if ($logfh) {
 sub find_active_sourceids {
     # www.bvg.de is not reliable anymore (connection errors seen in March 2024), so do a retry once if Sub::Retry is available
     if (eval { require Sub::Retry; 1 }) {
-	Sub::Retry::retry(2, 5, sub {
-			      find_active_sourceids_bvg2023();
+	Sub::Retry::retry(3, 10, sub {
+			      my %res = eval { find_active_sourceids_bvg2023() };
+			      if ($@) {
+				  warn $@;
+				  die $@;
+			      }
+			      %res;
 			  });
     } else {
 	find_active_sourceids_bvg2023();
