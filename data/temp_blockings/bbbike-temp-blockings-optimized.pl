@@ -5925,7 +5925,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-03-11 (osm)
+#: last_checked: 2024-03-19
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -7232,8 +7232,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: next_check_id: WEGAMFLIESSGRABEN-2023
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
-#: last_checked: 2024-01-26 (mapillary)
-#: check_frequency: 90d
+#: last_checked: 2024-03-17 (mapillary)
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-31
 #: next_check: 2024-06-30
 	2::inwork 13584,20628 13602,20613 13743,20594 13827,20557 13888,20558
@@ -7275,7 +7275,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
 #: also_indoor: traffic (W)
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
-#: last_checked: 2024-01-25
+#: last_checked: 2024-02-23 (architektur-urbanistik)
 #: next_check: 2024-03-31
 	q3::inwork 7103,11247 7171,11510
 ',
@@ -7469,13 +7469,13 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-02-17 (mapillary)
+#: last_checked: 2024-03-17 (mapillary)
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 9462,18234 9460,18053
 ',
          'from' => 1699340417,
          'id' => 3959,
-         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte Februar 2024: Sperrung besteht weiterhin)',
+         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte März 2024: Sperrung besteht weiterhin)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8037,6 +8037,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        {
          'data' => '#: source_id: viz2021:13.369042,52.587855,19.03.2024,07:00 (bis 28.03.2024)
+#: source_id: viz2021:13.36877,52.58797,19.03.2024,07:00 (bis 28.03.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960743611359716
+#: by: https://pbs.twimg.com/media/GJAn5NMXMAAWMIE?format=jpg&name=large
 	q4::inwork; 7832,20219 7933,20171
 ',
          'from' => 1710741600,
@@ -8044,22 +8047,6 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'text' => 'Schillerstr.: zwischen Hauptstr. und Beethovenstr. Bauarbeiten, Richtung Schönhauser Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.03.2024 07:00 bis 28.03.2024 17:00',
          'type' => 'handicap',
          'until' => 1711641600
-       },
-       {
-         'data' => '#: source_id: viz2021:13.348181,52.548416,19.03.2024,07:00 (bis 14.06.2024)
-#       3nocross::ignrte 6422,15708 6555,15827 6661,15921
-Seestr. -> Antwerpener Str.	3::inwork 6661,15921 6555,15827 6690,15671
-Seestr. -> Togostr.	3::inwork 6422,15708 6555,15827 6530,15849
-Antwerpener Str. -> Seestr.	3::inwork 6690,15671 6555,15827 6422,15708
-Antwerpener Str. -> Togostr.	3::inwork 6690,15671 6555,15827 6530,15849
-Togostr. -> Seestr.	3::inwork 6530,15849 6555,15827 6661,15921
-Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
-',
-         'from' => 1710741600,
-         'id' => 4027,
-         'text' => 'Seestr.: das Queren in Höhe Antwerpener Str./Togostr. ist für den Radverkehr nicht möglich, vom 19.03.2024 07:00 bis 14.06.2024 17:00',
-         'type' => 'gesperrt',
-         'until' => 1718377200
        }
      
 );
