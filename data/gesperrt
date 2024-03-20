@@ -756,8 +756,8 @@ Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
 Waldowallee	1 18916,9468 18867,9464
 Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
-Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
-Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
+Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6335,10589
+Wittenbergplatz	1 6335,10589 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
@@ -1011,6 +1011,7 @@ Mittelstreifen	3nocross::ignrte 5472,8024 5522,8024 5570,8024
 Wexstr. -> Bruchsaler Str.: Mittelstreifen	3::igndisp 5472,8024 5522,8024 5521,8087
 Bruchsaler Str. -> Wexstr.: Mittelstreifen	3::igndisp 5521,8087 5522,8024 5570,8024
 Hausvaterweg [Wohngebiet]	1s 19789,18423 19704,18459
+(zu den Depotgebäuden)	2 24734,5592 24733,5553
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1352,8 +1353,8 @@ Hindenburgdamm -> Parkweg Schloßpark Lichterfelde: Mittelstreifen	3::igndisp 459
 Parkweg Schloßpark Lichterfelde -> Hindenburgdamm: Mittelstreifen	3::igndisp 4611,3705 4603,3704 4603,3658
 breiter Mittelstreifen	3nocross::ignrte 6740,10755 6685,10690 6532,10529
 Courbièrestr. -> An der Urania: breiter Mittelstreifen	3::igndisp 6725,10641 6685,10690 6532,10529
-Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9254,13171 9262,13111
-Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13235 9254,13171 9385,13174
+Straßenbahnhaltestelle	3nocross::ignrte 9246,13240 9254,13171 9262,13111
+Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13240 9254,13171 9385,13174
 Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9254,13171 9262,13111
 Mittelstreifen mit Zaun	3nocross::ignrte 7966,15571 7975,15500 8049,15470
 Reinickendorfer Str. -> Nettelbeckpl. [Reinickendorfer Str.]: Mittelstreifen mit Zaun	3::igndisp 8049,15470 7975,15500 7975,15484
@@ -2784,8 +2785,8 @@ tragen (Elsensteg, 6 Stufen)	0:10:-141 13379,8703
 tragen (Elsensteg, 6 Stufen)	0:10:-143 13397,8727
 tragen (Gerickesteg, 12 Stufen)	0:30:-126 6744,12672
 tragen (Gerickesteg, 12+12 Stufen)	0:30:-123 6698,12638
-tragen (Spreetunnel, ca. 50 Stufen)	0:60:21 25658,4619
-tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
+tragen (Spreetunnel, ca. 50 Stufen, mit Schieberinne)	0:60:21 25658,4619
+tragen (Spreetunnel, 50 Stufen, mit Schieberinne)	0:60:52 25571,4553
 tragen (Brücke Tegeler Hafen, Fahrradschienen existieren)	0:30:-256 1227,20281
 tragen (Brücke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30:-231 1166,20330
 tragen (23 Stufen)	0:25:12 13138,9897
@@ -2857,7 +2858,7 @@ tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
 tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
-tragen (Treppe, 47 Stufen, mit Führungsrampe für Fahrräder)	0:60:8 8376,8813
+tragen (Treppe, 47 Stufen, mit Schieberinne für Fahrräder)	0:60:8 8376,8813
 tragen (Treppe, 16 Stufen)	0:25:36 22104,11925
 tragen (Treppe, 2x6 Stufen)	0:25:-225 15023,13800
 tragen (Treppe, 10 Stufen) oder steile Rampe benutzen	0:15:-181 2199,26440

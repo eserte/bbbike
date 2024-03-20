@@ -890,10 +890,10 @@ Jonasstr.: Asphalt	Q0 12585,7357 12703,7370
 Jonasstr.: Kopfsteinpflaster	Q2 12925,7425 13018,7441
 Mittelbuschweg: Kopfsteinpflaster	Q2 13500,7018 13484,7140 13575,7200 13693,7228
 Mittelbuschweg: Beton	Q0 13797,7267 13693,7228
-Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309
-Welserstr.: Asphalt	Q0 6256,10309 6265,10359
-Welserstr.: Verbundsteinpflaster	Q1 6265,10359 6276,10401
-Bayreuther Str.: Verbundsteinpflaster	Q1 6276,10401 6302,10462
+Welserstr.: Kopfsteinpflaster	Q2 6206,10102 6239,10310
+Welserstr.: Asphalt	Q0 6239,10310 6260,10361
+Welserstr.: Verbundsteinpflaster	Q1 6260,10361 6276,10401
+Bayreuther Str.: Verbundsteinpflaster	Q1 6276,10401 6294,10464
 Motzstr.: Verbundsteinpflaster	Q1 5995,9810 5941,9787
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 8033,14241 7973,14195
 (Uferweg Plötzensee): Parkweg	Q1 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
@@ -2786,7 +2786,7 @@ Theatergasse: Asphalt	Q0 18787,8540 18846,8616
 Wildensteiner Str.: guter Asphalt	Q0 18627,8475 18528,8331
 Wildensteiner Str.: schlechtes Kopfsteinpflaster	Q3 18528,8331 18416,8163
 Wildensteiner Str.: gutes Kopfsteinpflaster	Q1 18416,8163 18365,8094 18333,8059
-Am Carlsgarten: Asphalt	Q0 18704,8427 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
+Am Carlsgarten: Asphalt	Q0 18704,8427 18812,8408 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19131,8035
 Krähenwinkel: Verbundsteinpflaster	Q1 19195,8125 19105,8188 19077,8149 19060,8125 19044,8103
@@ -5819,13 +5819,15 @@ Grottewitzwanderweg - Straße zur Krampenburg: Waldweg	Q2 27573,-757 27551,-786
 Bohrauer Pfad: Beton	Q0 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straße, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
+(Verlängerung Alfred-Siggel-Weg): wassergebundene Decke	Q1 19550,7780 19567,7803
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19467,7938 19468,7918 19499,7866 19547,7830 19567,7803 19590,7770 19605,7746
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19590,7770 19537,7693
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3 19605,7746 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Schotterweg	Q2 19321,7360 19250,7266
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg	Q2 19250,7266 19223,7231 19223,7189
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): Verbundsteinpflaster	Q1 19500,7719 19530,7697
-(Georg-Stern-Str. - Wasserwerk Wuhlheide): wassergebundene Decke	Q1 19530,7697 19559,7679
+(Georg-Stern-Str. - Wasserwerk Wuhlheide): wassergebundene Decke	Q1 19530,7697 19537,7693 19559,7679
 Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19360,7819
 Georg-Stern-Str.: Asphalt	Q0 19500,7719 19360,7819 19308,7852 19235,7905 19258,7943
 Frieda-Rosenthal-Str.: Asphalt	Q0 19308,7852 19271,7794 19200,7682 19195,7674 19228,7610 19245,7577 19286,7511 19350,7590 19449,7669 19500,7719
@@ -7557,8 +7559,8 @@ Ruhwaldweg: Kleinsteinpflaster	Q2 1132,13504 1110,13462 1018,13446
 Herbert-Lewin-Platz: etwas unebenes Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684,11997 5712,12033
 Herbert-Lewin-Platz: etwas unebenes Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg, Schotter	Q1 25232,3757 25224,3789 25193,3844
-(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1 18704,8427 18748,8363 18751,8300 18741,8220 18702,8160 18676,8096
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
+(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1 18704,8427 18728,8371 18746,8357 18751,8291 18741,8220 18702,8160 18676,8096
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8291 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
@@ -10091,7 +10093,7 @@ Holteistr.: Asphalt mit Schäden	Q0 14639,11512 14575,11407
 Weichselstr.: Radspur mit unebenen Asphalt	Q1; 14836,11842 14802,11784 14798,11777
 Scharnweberstr. Radspur mit unebenen Beton	Q1; 15077,11910 14965,11924 14888,11934
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5132,12136 5105,12118 5141,11816
-Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6128,10319 6020,10351
+Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6118,10327 6073,10354 6020,10351
 Moldaustr.: Beton	Q1 17856,10508 17837,10425
 Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Uferweg - Sömmeringstr.): wassergebundene Decke	Q1 3572,12866 3574,12916 3716,12925
@@ -11451,6 +11453,8 @@ Brabanter Platz: Asphalt	Q0 4531,8319 4530,8364 4521,8379
 (zum St.-Gertrauden-Krankenhaus): Kleinsteinpflaster	Q1 4531,8319 4531,8270
 (Weg entlang der A100): Asphalt	Q0 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
 (Weg an der A100 - Mergenthalerring): Asphalt	Q0 14409,8102 14419,8112
+(zu den Depotgebäuden): Asphalt	Q0 24700,5633 24716,5613 24734,5592 24733,5553
+(Fürstenwalder Damm - Müggelseedamm): Waldweg, etwas Split	Q1 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12625,7 +12629,7 @@ Zeunepromenade: neues Kopfsteinpflaster	Q1 4154,5392 4127,5427 4103,5468
 Zeunepromenade: neues Kopfsteinpflaster	Q1 4077,5450 3978,5600 3919,5670 3931,5825
 Iltisstr.: Kopfsteinpflaster	Q2 2864,5526 2797,5624
 (Weg in d. Kolonie Norderney): Asphalt	Q0 3596,6828 3607,6952 3582,6964
-Wormser Str.: Kopfsteinpflaster	Q2 6302,10462 6377,10434
+Wormser Str.: Kopfsteinpflaster	Q2 6294,10464 6377,10434
 Schadowstr.: Asphalt	Q0 9028,12307 9011,12423 8999,12498
 Peter-Lenné-Str.: Kopfsteinpflaster	Q2 3574,5717 3407,5938 3209,6206 3123,6318
 Grillparzerstr.: Kopfsteinpflaster	Q2 3891,6295 4040,6289 4124,6288 4173,6284 4221,6283 4298,6239
@@ -17359,7 +17363,7 @@ Eichendorffstr.: Kopfsteinpflaster	Q2 9231,13843 9193,13942 9189,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9353,13521 9275,13720
 Philippstr.: Asphalt	Q0 8892,13498 8833,13440
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
-Claire-Waldoff-Str.: Asphalt	Q0 9246,13235 9132,13187
+Claire-Waldoff-Str.: Asphalt	Q0 9246,13240 9137,13196
 Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q0 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853

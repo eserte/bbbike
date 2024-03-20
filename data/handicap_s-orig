@@ -73,7 +73,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -208,7 +208,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-03-14 (daf) vvv
+#: last_checked: 2024-03-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -488,7 +488,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: last_checked: 2024-03-18 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
-#: osm_watch: way id="153698394" version="14"
+#: osm_watch: way id="153698394" version="16"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # REMOVED (offen) --- #: also_indoor: traffic (ex-H,ex-G) --- #: osm_watch: way id="114667396" version="13" --- Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 # REMOVED --- #: next_check ^^^
@@ -771,7 +771,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id[inactive]: bvg2021:m43#BVG344369_0
 #: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-19 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2024-03-28
 Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
@@ -876,7 +876,7 @@ Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inw
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-03-19
+#: last_checked: 2024-03-20
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -1603,7 +1603,7 @@ Rolandufer: Gehweg, viele Fußgänger	q3 10821,12153 10660,12176 10591,12203 10583
 Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe	q4 10583,12206 10492,12289 10417,12378 10416,12394
 #: XXX_prog BS an der Lynar/Herthastr., sowie an der Koenigsallee, wenn man nach links abbiegen möchte (ansonsten q2 oder q3)
 Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
-Fuggerstr.: einige Fußgänger	q1 6128,10319 6020,10351
+Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6020,10351
 Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
@@ -2256,7 +2256,7 @@ Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,156
 Hülsenplatz: Fußgänger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 Hülsenplatz: Fußgänger, Bordsteine	q3 18542,10762 18570,10768
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6566 (Forderung nach Aufhebung des Verbots)
-Viktoria-Luise-Platz: Fußgängerzone, Radfahren verboten	q4 6142,9934 6224,9980
+Viktoria-Luise-Platz: Fußgängerzone, Radfahren verboten	q4 6142,9934 6206,9972
 Viktoria-Luise-Platz: Fußgängerzone, Radfahrer frei	q1 6149,9897 6209,9885
 Viktoria-Luise-Platz: Fußgängerzone, Radfahrer frei	q1 6278,9925 6275,9962
 Luitpoldstr.: Schulhof	q3 6611,9879 6688,9897
@@ -3423,7 +3423,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-01-27 vvv
+#: last_checked: 2024-03-20 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -4830,6 +4830,8 @@ Douglasienweg: einige Fußgänger	q1 11563,4099 11594,4107
 # 
 #: note: kein Bürgersteig, oft Fußgänger (auf dem Weg zum Bahnhof?)
 Hönower Weg: einige Fußgänger	q0- 17383,9719 16984,9857 16925,9852 16900,9861
+# 
+(Fürstenwalder Damm - Müggelseedamm): einige Fußgänger	q0- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
 # 
 ######################### User Contributions #################################
 # 

@@ -153,7 +153,7 @@ Wuhletal-Wanderweg	NL 22124,13606 22082,13542 22060,13446 22058,13366 22067,1333
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4350&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4507 (Antrag auf Umwidmung als Straßenland, aber seit Mai 2013 keine Bewegung bei der Drucksache)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5749 (neue Drucksache)
-#: last_checked: 2024-02-10
+#: last_checked: 2024-03-20
 #: check_frequency: 150d
 (Wuhlewanderweg, östliches Ufer)	NL 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 (Wuhlewanderweg, östliches Ufer)	NL 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
@@ -313,7 +313,7 @@ Wanderweg Erkner - Hessenwinkel	NL 33526,2771 33419,2765 33406,2738 33255,2762 3
 #: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019
 #: by: https://api.fixmyberlin.de/api/projects/75 (Asphaltierung)
 #: osm_watch: way id="13853634" version="38"
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-19 (mapillary)
 #: check_frequency: 60d
 Kirchhofweg	NL 11608,7267 11687,7284 12185,7381
 # 
@@ -1002,9 +1002,11 @@ Straße 36 (Müggelheim)	NL 30047,2782 30090,2923 30124,3011
 (Zur Bürgerheide - Zum Kiesgrund)	NL 28525,2132 28509,2075
 Grottewitzwanderweg	NL 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
 (Grottewitzwanderweg - Straße zur Krampenburg)	NL 27573,-757 27551,-786
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide	NL 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360 19250,7266 19223,7231 19223,7189
+(Verlängerung Alfred-Siggel-Weg)	NL 19550,7780 19567,7803
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide	NL 19456,7956 19467,7938 19468,7918 19499,7866 19547,7830 19567,7803 19590,7770 19605,7746 19559,7679 19529,7617 19348,7393 19321,7360 19250,7266 19223,7231 19223,7189
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide	NL 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
-(Georg-Stern-Str. - Wasserwerk Wuhlheide)	NL 19500,7719 19530,7697 19559,7679
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide	NL 19590,7770 19537,7693
+(Georg-Stern-Str. - Wasserwerk Wuhlheide)	NL 19500,7719 19530,7697 19537,7693 19559,7679
 #: by: Stefanie (...roko...):
 (Wittenauer Str. - Zabel-Krüger-Damm)	NL 6301,22581 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Weg am Erlengraben)	NL -1821,23794 -1998,23819 -2019,23781 -2047,23708 -2082,23630 -2119,23545 -2143,23464 -2180,23384 -2241,23288 -2249,23230 -2269,23147 -2268,23122 -2293,23072 -2274,23035
@@ -1146,7 +1148,7 @@ Straße 148	NL 17188,-46 17141,-41 17122,-41
 	NL 2912,14040 2817,14003 2734,13970
 (Radweg am Müggelsee - Strandschloßweg)	NL 25232,3757 25224,3789 25193,3844
 (Weg an der Trabrennbahn)	NL 18741,8125 18776,8141 18809,8146 18839,8161 18881,8184
-(Weg an der Trabrennbahn)	NL 18751,8300 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
+(Weg an der Trabrennbahn)	NL 18751,8291 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (An der Karlshorster Heide - Treskowallee)	NL 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn)	NL 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.)	NL 19099,7761 19114,7781 19229,7963
@@ -2075,3 +2077,5 @@ Uferweg - Erna-Koschwitz-Weg	NL -2011,17986 -2074,17921
 #: by ^^^
 (Weg entlang der A100)	NL 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
 (Bärbel-Bohley-Ring - Ramlerstr.)	NL 9744,15793 9644,15780
+(zu den Depotgebäuden)	NL 24700,5633 24716,5613 24734,5592 24733,5553
+(Fürstenwalder Damm - Müggelseedamm)	NL 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943

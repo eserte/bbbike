@@ -442,12 +442,12 @@ Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::ignd
 Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14709,12156
 Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14926,12129 14888,11934
 Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14888,11934 14926,12129 14854,12137
-Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9244,13253 9246,13235 9254,13171 9262,13111
+Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9244,13253 9246,13240 9254,13171 9262,13111
 Friedrichstr. -> Passage am Tacheles: Friedrichstr. (Straßenbahn)	3::igndisp 9225,13389 9244,13253 9353,13273
-Passage am Tacheles -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9353,13273 9244,13253 9246,13235
-Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9254,13171 9246,13235 9132,13187
-Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9132,13187 9246,13235 9244,13253
-Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9246,13235 9254,13171 9385,13174
+Passage am Tacheles -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9353,13273 9244,13253 9246,13240
+Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9254,13171 9246,13240 9137,13196
+Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9137,13196 9246,13240 9244,13253
+Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9246,13240 9254,13171 9385,13174
 Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9262,13111 9269,13060 9279,12953
 Friedrichstr. -> Ziegelstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9262,13111 9269,13060 9401,13072
@@ -1014,8 +1014,8 @@ Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6142,9134
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
-Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6224,9980
-Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6278,9925
+Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6206,9972
+Viktoria-Luise-Platz: Poller	3 6206,9972 6275,9962 6278,9925
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7227,10489 7281,10510
 Else-Lasker-Schüler-Str.: Poller	3 7281,10510 7227,10489 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253

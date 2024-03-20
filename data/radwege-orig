@@ -210,12 +210,12 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW2; 6873,11011 6882,1106
 #: note: frühere Markierung ist größtenteils verschwunden
 	RW0; 6740,10755 6818,10725 6972,10665
 die Benutzungspflicht fängt erst einige Meter später an	RW4; 6818,10725 6740,10755
-Radweg nur aufgemalt	RW1; 6740,10755 6607,10801 6471,10851 6378,10887
-Gehwegplatten, für Radfahrer freigegebene Busspur gilt 6-22 Uhr	RW1; 6378,10887 6277,10924 6266,10927 6145,10975
+Radweg nur aufgemalt	RW1; 6740,10755 6607,10801 6471,10851 6359,10891
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt 6-22 Uhr	RW1; 6359,10891 6277,10924 6266,10927 6145,10975
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt 6-22 Uhr	RW1; 6145,10975 6058,10988 5986,10976
 # REMOVED (alter Zustand ist wieder hergestellt) --- #: XXX während der Bauarbeiten am Bikinihaus ist die Busspur aufgehoben, stattdessen gibt es einen schmalen Radfahrstreifen --- #: by: http://www.tagesspiegel.de/berlin/richtfest-in-der-city-west-bikini-party-im-spaetsommer/7099082.html (Eröffnung im Herbst 2013) --- #: last_checked: 2013-12-22 --- #: check_frequency: 14d ---	RW4; 5986,10976 5829,10964 5716,10978 5652,11004
 Busspur gilt 6-22 Uhr	RW5; 5986,10976 5829,10964 5716,10978 5652,11004
-Radweg nur aufgemalt	RW1; 6145,10975 6266,10927 6277,10924 6378,10887 6471,10851
+Radweg nur aufgemalt	RW1; 6145,10975 6266,10927 6277,10924 6359,10891 6471,10851
 	RW4; 5652,11004 5716,10978 5829,10964 5986,10976
 	RW4; 5986,10976 6058,10988
 	RW2; 6058,10988 6145,10975
@@ -260,6 +260,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://www.tagesspiegel.de/berlin/grundsteinlegung-im-februar-halbe-milliarde-fur-museum-berlin-modern-einkalkuliert-10880509.html (neuer Name: "berlin modern", weiter bis 2027)
 #: by: https://berliner-abendblatt.de/berlin-news/grundstein-fuer-museum-berlin-modern-im-februar-id239006
 #: by: https://berliner-abendblatt.de/berlin-news/grundsteinlegung-fuer-museum-berlin-modern-wird-gelegt-id244318
+#: by: https://www.preussischer-kulturbesitz.de/standorte/bauvorhaben/nationalgalerie-am-kulturforum/museum-des-20-jahrhunderts.html
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html
 #: by: srt
 #: XXX: temporäre Radspur
@@ -1277,7 +1278,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-03-19 vvv
+#: last_checked: 2024-03-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1964,11 +1965,11 @@ Bushaltestelle	RW5; 7033,10396 6937,10407
 #: note: außerdem ist die Busspur (immer gültig) für Radfahrer freigegeben
 Radspur hinter den parkenden Autos	RW4; 6937,10407 6851,10416 6753,10446 6636,10492
 Bushaltestelle	RW5; 6636,10492 6602,10504 6532,10529
-Busspur ist immer gültig	RW5; 6532,10529 6468,10550 6353,10583
-Busspur ist immer gültig	RW5; 6353,10583 6468,10550
+Busspur ist immer gültig	RW5; 6532,10529 6468,10550 6335,10589
+Busspur ist immer gültig	RW5; 6335,10589 6468,10550
 # REMOVED (hier nicht) --- Busspur ist immer gültig	RW5; 6468,10550 6532,10529
-Busspur ist immer gültig	RW5; 6353,10583 6292,10627 6228,10646 6171,10657
-Busspur ist immer gültig	RW5; 6171,10657 6216,10614 6268,10588 6353,10583
+Busspur ist immer gültig	RW5; 6335,10589 6292,10627 6228,10646 6171,10657
+Busspur ist immer gültig	RW5; 6171,10657 6216,10614 6268,10588 6335,10589
 Busspur ist immer gültig	RW5;RW5 6171,10657 6133,10679 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435 4157,10418 3971,10381 3835,10352 3737,10322 3618,10283 3562,10264 3489,10240 3374,10201 3289,10174 3189,10141 3111,10116 2974,10081 2828,10040
 Busspur ist immer gültig	RW5; 2828,10040 2770,10024
 Busspur gilt Mo-Sa 7-20.30 Uhr	RW5; 7813,10112 7862,9918 7866,9902
@@ -2312,7 +2313,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
 	RW3;RW3 6122,10925 6025,10746
-	RW1;RW1 6065,10129 6128,10319 6147,10383 6192,10542
+	RW1;RW1 6065,10129 6118,10327 6147,10383 6192,10542
 	RW1;RW2 5988,9776 5995,9810
 	RW6;RW6 11177,9935 11199,9993 11244,10111
 	RW6;RW6 11325,10317 11335,10375
@@ -2913,7 +2914,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4226,7 +4227,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2023-09-06 (mapillary) vvv
+#: last_checked: 2024-03-20 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -7568,7 +7569,7 @@ asphaltiert	RW1;RW1 18930,3703 19162,3935
 	RW6;RW6 14411,12951 14480,12932 14536,12916 14588,12901 14682,12874
 	RW6;RW6 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 #: note: Radweg etwas abseits der Straße im Wald
-#: note: nicht als Zweirichtungsradweg ausgeschildert, ist aber breit genug, um als einer benutzt zu werden
+#: note: Zweirichtungsradweg
 asphaltiert, sehr breit (3m)	RW1; 25010,4807 24936,4838 24798,4895 24681,4943 24070,5272 23951,5333 23942,5338
 	RW3;RW3 6118,14289 6052,14304 5685,14215 5474,14168 5321,14088 5306,14061
 	RW4;RW4 5306,14061 5279,14047 5220,14043
@@ -7980,7 +7981,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="35"
-#: last_checked: 2024-01-27 vvv
+#: last_checked: 2024-03-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
@@ -8546,7 +8547,7 @@ Leitboys	RW4; 9294,4536 9275,4672
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="4357826" version="22"
 #: osm_watch: way id="354645907" version="18"
-#: osm_watch: way id="354645904" version="10"
+#: osm_watch: way id="354645904" version="12"
 #: last_checked: 2024-02-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv

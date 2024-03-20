@@ -279,7 +279,7 @@ Mainzer Str./Frankfurter Allee	3nocross 14381,12207 14427,12199 14488,12188
 Colbestr./Frankfurter Allee	3nocross 14488,12188 14523,12183 14582,12174 14621,12168
 Kinzigstr./Frankfurter Allee	3nocross 14523,12183 14582,12174 14621,12168 14709,12156
 Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14709,12156 14854,12137 14926,12129 14994,12121
-Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9244,13253 9246,13235 9254,13171 9262,13111
+Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9244,13253 9246,13240 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross 9262,13111 9269,13060 9279,12953
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9225,13389 9293,13366 9371,13333 9415,13315
 Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5928,6768 5896,6785 5811,6833
@@ -559,8 +559,8 @@ Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -
 #: XXX_prog für Anhänger auch nicht geeignet, Mittelstreifen zu schmal
 Grunewaldstr.: Mittelstreifen	3nocross 6142,9134 6264,9156 6361,9175
 #: note: Breite zwischen Pollern ca. 150cm
-Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6224,9980
-Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6278,9925
+Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6206,9972
+Viktoria-Luise-Platz: Poller	3 6206,9972 6275,9962 6278,9925
 Else-Lasker-Schüler-Str.: Poller	3 * 7227,10489 *
 #: by: Thomas (neverbox):
 #: note: Schild existiert nur auf der westlichen Seite
@@ -1839,7 +1839,7 @@ Radieschenpfad	1 20582,18475 20635,18381
 #: osm_watch: way id="24202434" version="27"
 #: XXX Wird der Asphalt ersetzt werden?
 #: note: Durch die neue Schrankenanlage scheint es für Radfahrer keine Einschränkungen zu geben.
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20
 #: check_frequency: 30d
 Dammweg: per Schranke für den Autoverkehr gesperrt	2 15869,8355 16388,8821
 # 
