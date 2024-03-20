@@ -823,7 +823,7 @@
   ;; but unfortunately there's only an anchor available for
   ;; the "Stoerungsmeldungen" section, not for the specific
   ;; traffic notes.
-  (browse-url (concat "https://www.bvg.de/de/verbindungen/linienuebersicht/" (button-get button :bvgline) "#St%C3%B6rungsmeldungen")))
+  (browse-url (concat "https://www.bvg.de/de/verbindungen/linienuebersicht/" (button-get button :bvgline) "#stoerungsmeldungen")))
 
 (define-button-type 'bbbike-bvg-button
   'action 'bbbike-bvg-button
