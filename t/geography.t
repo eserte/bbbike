@@ -23,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 24;
+plan tests => 25;
 
 use Geography::Berlin_DE;
 use Geography::FromMeta;
@@ -39,6 +39,7 @@ use Geography::FromMeta;
     ok(grep { $_ eq 'Spandau' } $geo->supercityparts);
     ok(grep { $_ eq 'Kreuzberg' } $geo->cityparts);
     ok(grep { $_ eq 'Rosenthal' } $geo->subcityparts);
+    ok((grep { $_ eq 'Kreuzberg' } $geo->subcityparts), 'Kreuzberg ist ein Ortsteil und ein Altbezirk');
 
     is($geo->get_supercitypart_for_citypart("Kreuzberg"),
        "Friedrichshain-Kreuzberg");
@@ -47,7 +48,7 @@ use Geography::FromMeta;
     is($geo->get_supercitypart_for_any("Friedrichshain-Kreuzberg"), "Friedrichshain-Kreuzberg");
 
     my @sp = $geo->get_all_subparts("Pankow");
-    is(scalar(@sp), 14)
+    is(scalar(@sp), 13)
 	or diag "@sp";
 
     roundtrip_coords($geo, 0, 0);

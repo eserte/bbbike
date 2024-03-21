@@ -44,7 +44,7 @@ use base qw(Geography::Base);
      'Mitte'		 => [qw/Mitte/],
      'Neukölln'		 => [qw/Neukölln Britz Buckow Rudow Gropiusstadt/],
      'Pankow'		 => [qw/Pankow Blankenfelde Buch Niederschönhausen
-			        Rosenthal Buchholz Wilhelmsruh/,
+			        Rosenthal Wilhelmsruh/,
 			     'Französisch Buchholz',
 			     'Stadtrandsiedlung Malchow',
 			    ], # Buchholz heißt heute "Französisch Buchholz"
