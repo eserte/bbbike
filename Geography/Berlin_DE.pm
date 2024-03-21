@@ -25,51 +25,50 @@ use base qw(Geography::Base);
 # (alte) Bezirke => Bezirksteile (Ortsteile oder -lagen)
 %subcityparts =
     (
-     'Charlottenburg'	 => [qw/Charlottenburg-Nord Pichelsberg Westend
+     'Charlottenburg'	 => [qw/Charlottenburg Charlottenburg-Nord Pichelsberg Westend
 			        Witzleben/], # "Pichelsberg" und "Witzleben" sind nur Ortslagen
-     'Friedrichshain'	 => [],
-     'Hellersdorf'	 => [qw/Kaulsdorf Mahlsdorf/],
+     'Friedrichshain'	 => [qw/Friedrichshain/],
+     'Hellersdorf'	 => [qw/Hellersdorf Kaulsdorf Mahlsdorf/],
      'Hohenschönhausen'	 => [qw/Falkenberg Margaretenhöhe Wartenberg Malchow/,
 			     "Alt-Hohenschönhausen", "Neu-Hohenschönhausen"], # "Margaretenhöhe" ist nur eine Ortslage in Malchow
-     'Kreuzberg'	 => [],
+     'Kreuzberg'	 => [qw/Kreuzberg/],
      # Karolinenhof ist eine Ortslage in Schmöckwitz (siehe http://de.wikipedia.org/wiki/Berlin-Schm%C3%B6ckwitz)
      # Hessenwinkel und Wilhelmshagen sind ebenfalls nur Ortslagen
-     'Köpenick'		 => [qw/Friedrichshagen Grünau Hessenwinkel
+     'Köpenick'		 => [qw/Köpenick Friedrichshagen Grünau Hessenwinkel
 			        Karolinenhof
 			        Müggelheim Oberschöneweide Rahnsdorf
 			        Schmöckwitz Wilhelmshagen/],
-     'Lichtenberg'	 => [qw/Friedrichsfelde Karlshorst Rummelsburg
+     'Lichtenberg'	 => [qw/Lichtenberg Friedrichsfelde Karlshorst Rummelsburg
 				Fennpfuhl/], # auf http://www.berlin.de/ba-lichtenberg/derbezirk/zeitreise.html wird auch "Alt-Lichtenberg" statt "Lichtenberg" erwähnt
-     'Marzahn'		 => [qw/Biesdorf/],
-     'Mitte'		 => [],
-     'Neukölln'		 => [qw/Britz Buckow Rudow Gropiusstadt/],
-     'Pankow'		 => [qw/Blankenfelde Buch Niederschönhausen
+     'Marzahn'		 => [qw/Marzahn Biesdorf/],
+     'Mitte'		 => [qw/Mitte/],
+     'Neukölln'		 => [qw/Neukölln Britz Buckow Rudow Gropiusstadt/],
+     'Pankow'		 => [qw/Pankow Blankenfelde Buch Niederschönhausen
 			        Rosenthal Buchholz Wilhelmsruh/,
 			     'Französisch Buchholz',
 			     'Stadtrandsiedlung Malchow',
 			    ], # Buchholz heißt heute "Französisch Buchholz"
-     'Prenzlauer Berg'	 => [],
-     'Reinickendorf'	 => [qw/Borsigwalde Frohnau Heiligensee Hermsdorf
+     'Prenzlauer Berg'	 => ['Prenzlauer Berg'],
+     'Reinickendorf'	 => [qw/Reinickendorf Borsigwalde Frohnau Heiligensee Hermsdorf
 			        Konradshöhe Lübars Tegel Waidmannslust
 			        Wittenau/, 'Märkisches Viertel'], # Borsigwalde ist seit 2012-05 ein eigener Ortsteil, vorher nur eine Ortslage in Wittenau
-     'Schöneberg'	 => [qw/Friedenau Schöneberg-Nord/],
-     'Spandau'		 => [qw/Gatow Kladow Siemensstadt Haselhorst Staaken
+     'Schöneberg'	 => [qw/Schöneberg Friedenau Schöneberg-Nord/],
+     'Spandau'		 => [qw/Spandau Gatow Kladow Siemensstadt Haselhorst Staaken
 				Wilhelmstadt Hakenfelde/,
 			     'Falkenhagener Feld'],
-     'Steglitz'		 => [qw/Lankwitz Lichterfelde/],
-     'Tempelhof'	 => [qw/Lichtenrade Mariendorf Marienfelde/],
-     'Tiergarten'	 => [qw/Tiergarten-Süd Hansaviertel Moabit/],
+     'Steglitz'		 => [qw/Steglitz Lankwitz Lichterfelde/],
+     'Tempelhof'	 => [qw/Tempelhof Lichtenrade Mariendorf Marienfelde/],
+     'Tiergarten'	 => [qw/Tiergarten Tiergarten-Süd Hansaviertel Moabit/],
      'Treptow'		 => [qw/Adlershof Altglienicke Baumschulenweg
 			        Bohnsdorf Johannisthal
 			        Niederschöneweide Plänterwald/, 'Alt-Treptow'],
-     'Wedding'		 => [qw/Gesundbrunnen/],
-     'Weißensee'	 => [qw/Blankenburg Heinersdorf Karow/],
-     'Wilmersdorf'	 => [qw/Grunewald Schmargendorf Halensee/],
-     'Zehlendorf'	 => [qw/Dahlem Nikolassee Schlachtensee Wannsee/],
+     'Wedding'		 => [qw/Wedding Gesundbrunnen/],
+     'Weißensee'	 => [qw/Weißensee Blankenburg Heinersdorf Karow/],
+     'Wilmersdorf'	 => [qw/Wilmersdorf Grunewald Schmargendorf Halensee/],
+     'Zehlendorf'	 => [qw/Zehlendorf Dahlem Nikolassee Schlachtensee Wannsee/],
     );
 
 while(my($cp,$scp) = each %subcityparts) {
-    $subcitypart_to_citypart{$cp} = $cp; # self-reference
     foreach (@$scp) { $subcitypart_to_citypart{$_} = $cp }
 }
 
@@ -112,7 +111,7 @@ sub bbox_wgs84 { [13.051179, 52.337621, 13.764158, 52.689878] }
 
 sub supercityparts { sort keys %cityparts }
 sub cityparts      { sort keys %subcityparts }
-sub subcityparts   { map { (@$_) } values %subcityparts }
+sub subcityparts   { sort keys %subcitypart_to_citypart }
 
 sub citypart_to_subcitypart { \%subcityparts }
 sub subcitypart_to_citypart { \%subcitypart_to_citypart }
