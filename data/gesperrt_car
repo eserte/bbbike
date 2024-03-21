@@ -592,8 +592,8 @@ Roedernstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 17981,6793 17945,6788 17
 Mittelstreifen	3nocross::ignrte 4918,8872 5022,8879 5172,8880 5182,8880 5195,8880 5266,8903
 Fechnerstr. -> Berliner Str.: Mittelstreifen	3::igndisp 5004,8935 5022,8879 5172,8880
 Berliner Str. -> Fechnerstr.: Mittelstreifen	3::igndisp 4918,8872 5022,8879 5004,8935
-Mehlitzstr. -> Berliner Str.: Mittelstreifen	3::igndisp 5165,8784 5172,8880 5022,8879
-Berliner Str. -> Mehlitzstr.: Mittelstreifen	3::igndisp 5182,8880 5172,8880 5165,8784
+Mehlitzstr. -> Berliner Str.: Mittelstreifen	3::igndisp 5164,8771 5172,8880 5022,8879
+Berliner Str. -> Mehlitzstr.: Mittelstreifen	3::igndisp 5182,8880 5172,8880 5164,8771
 Berliner Str. -> Badensche Str.: Mittelstreifen	3::igndisp 5266,8903 5195,8880 5278,8866
 Berliner Str. -> Nassauische Str.: Mittelstreifen	3::igndisp 5182,8880 5195,8880 5189,8983
 Badensche Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5278,8866 5195,8880 5182,8880
@@ -635,11 +635,11 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Straßenbahntrasse	3nocross::ignrte 9442,16610 9331,16624 9210,16638 8952,16666
 Osloer Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9442,16610 9331,16624 9099,16398
-Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9210,16638 9331,16624 9435,16832
+Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9210,16638 9331,16624 9359,16649
 Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9099,16398 9331,16624 9210,16638
-Stettiner Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9099,16398 9331,16624 9435,16832
-Freienwalder Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9442,16610
-Freienwalder Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9099,16398
+Stettiner Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9099,16398 9331,16624 9359,16649
+Freienwalder Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9359,16649 9331,16624 9442,16610
+Freienwalder Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9359,16649 9331,16624 9099,16398
 Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8952,16666 9210,16638 9245,16758
 Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,16638 9331,16624
 Straßenbahntrasse	3nocross::ignrte 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
@@ -972,7 +972,7 @@ Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::ign
 Treptower Str.	1 13376,7970 13457,8069 13459,8072
 Alte Schönhauser Str.	1 10709,13629 10741,13685
 Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
-Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14184,2157 14218,2181 14259,2184 14393,2137 14444,2090 14587,2032
 Albulaweg	1 10541,1889 10486,1908
 Kätchenweg	2 -7020,-1275 -6975,-1250
 Mayschweg	1 22954,3584 22834,3571 22714,3558
@@ -2526,6 +2526,7 @@ Tucholskystraße/Auguststraße: Diagonalsperre	3 9415,13315 9651,13406 9611,13245
 Mittelstreifen, Fußgängerfurt existiert	3nocross::ignrte 5527,20044 5545,19909 5533,19811
 Oranienburger Str. -> Kirschblütenpl.: Mittelstreifen, Fußgängerfurt existiert	3::igndisp 5527,20044 5545,19909 5598,19912
 Kirschblütenpl. -> Oranienburger Str.: Mittelstreifen, Fußgängerfurt existiert	3::igndisp 5598,19912 5545,19909 5533,19811
+Kastanienallee: nur für Tram und Radfahrer	1 10916,15098 10900,15075 10881,15047
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12054,9429 12066,9558 12074,9689
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12074,9689 12066,9558 12054,9429
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12054,9429 12066,9558 12150,9545

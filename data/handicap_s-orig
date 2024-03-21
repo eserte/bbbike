@@ -55,7 +55,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-03-17
+#: last_checked: 2024-03-21
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -387,7 +387,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-03-12 (webcam)
+#: last_checked: 2024-03-20 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -1459,11 +1459,11 @@ Volkspark Friedrichshain: Fußgänger	q3 13100,13803 12987,13727 12965,13709 12829
 #: note: kein offizieller Radweg
 Volkspark Friedrichshain: Skater, Fußgänger	q3 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
 #: note: kein offizieller Radweg
-Volkspark Friedrichshain: Fußgänger	q3 12915,13785 12937,13803 12887,13877 12879,13889
+Volkspark Friedrichshain: Fußgänger	q3 12915,13785 12937,13803 12887,13877 12874,13893
 #: note: kein offizieller Radweg
 Volkspark Friedrichshain: Fußgänger	q3 12937,13803 12987,13727
 #: note: kein offizieller Radweg
-Volkspark Friedrichshain: Fußgänger	q3 12825,13783 12813,13799 12805,13809
+Volkspark Friedrichshain: Fußgänger	q3 12825,13783 12813,13799 12802,13813
 #: note: offizieller Radweg
 Volkspark Friedrichshain: Fußgänger	q2 12372,13755 12436,13719 12460,13716 12608,13760 12640,13814
 #: note: offizieller Radweg
@@ -1478,7 +1478,7 @@ Volkspark Friedrichshain: Fußgänger	q3 12369,13209 12369,13252 12341,13309 12307
 #: note: offizieller Radweg
 Volkspark Friedrichshain: Fußgänger	q2 12141,13609 12012,13599 12038,13685
 #: note: offizieller Radweg
-Volkspark Friedrichshain: Fußgänger	q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12975,13990
+Volkspark Friedrichshain: Fußgänger	q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12970,13996
 #: note: offizieller Radweg
 Volkspark Friedrichshain: Fußgänger, flache enge Rampe	q4 12058,13403 12040,13429 12060,13422
 # REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tatsächlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger, kurze Rampe	q3 12382,13097 12380,13120
@@ -1622,7 +1622,7 @@ Monbijoupark - Henriette-Herz-Platz: Fußgänger	q2 9977,12912 10132,12941
 Monbijoubrücke: Fußgänger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straßenbahn	q2 10308,12859 10255,12959
 #: note: Bordstein am Wendehammer, aber einige Meter weiter ist eine Bordsteinabsenkung
-Fürther Str.: Gehweg	q2 5764,10322 5808,10284
+Fürther Str.: Gehweg	q2 5764,10322 5817,10279
 #: note: früher "q1"
 (Zossener Brücke - Mehringplatz): Gehweg	q3 9873,10285 9668,10306
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
@@ -2029,7 +2029,7 @@ Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 181
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
 Rheingoldpark: Fußgänger haben Vorrang	q1 19073,8828 19145,8659
 Schloßinsel Köpenick: Fußgänger	q4 22093,4499 22076,4422
-Braunschweiger Ufer: Fußgänger	q1 12718,5845 13077,5893 13483,5973
+Braunschweiger Ufer: Fußgänger	q1 12722,5831 13077,5893 13483,5973
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
@@ -2756,7 +2756,7 @@ Gansbergsteig: Fußgänger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
 (Löwensteinring - Wildmeisterdamm): Fußgänger	q1- 14423,2463 14415,2445 14364,2391 14360,2360
 (Löwensteinring - Wildmeisterdamm): Fußgänger, schmal	q2- 14364,2391 14341,2375 14314,2353 14273,2335 14259,2317 14237,2292
 (Löwensteinring - U Johannisthaler Chaussee): Fußgänger	q1- 14364,2391 14325,2387
-Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,2518 13898,2582 13914,2601
+Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,2518 13898,2582 13924,2604
 (Parchimer Allee - Am Teltowkanal): eng	q2 14427,4783 14555,4976 14560,4983 14562,4985
 #: XXX_prog BS; evtl. kann man vorher schon auf den Gehweg rauffahren
 (Fritz-Lesch-Str. - Orankestr.): Bordstein	q3 15313,15848 15313,15858
@@ -2770,6 +2770,7 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Bernhard-Bästlein-Str. - Park am Fennpfuhl): Fußgänger	q1- 15354,13998 15267,13967 15254,13899
 (Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fußgänger	q1 15179,13872 15062,13827
 Anton-Saefkow-Platz: Fußgängerzone, Radfahrer frei	q2+ 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
+(Rudolf-Seiffert-Str. - Karl-Lade-Str.): Fußgänger	q4+ 14731,13576 14751,13693
 (Darßer Str. - Malchower See): Fußgänger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fußgänger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16036,18604 16161,18687
 (Wartenberger Str. - Margaretenhöhe): Gehweg, für Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
@@ -4938,7 +4939,7 @@ Bahnhofstr. (Friedenau): enge Straße	q1 6082,7066 6151,7078 6157,7117
 (Michelangelostr. - Straße 106): Kleingartenanlage	q2 13854,15129 13867,15111 14314,14841 14349,14821 14599,14679
 #: by: Andrea (techlin):
 #: corrected_by: srt/policy (q1 -> q0-)
-Hugo-Heimann-Str.: enge, leicht kurvige Straße	q0- 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
+Hugo-Heimann-Str.: enge, leicht kurvige Straße	q0- 14120,1991 14165,2106 14184,2157 14218,2181 14259,2184 14393,2137 14444,2090 14587,2032
 #: by: Marek Bänsch:
 #: confirmed_by: srt
 (Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, schieben	q4 8096,13951 8200,14016
@@ -5205,14 +5206,14 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 #: note: früher "q2", rechtliche Lage unklar
 (Berolinastr.): Fußgänger, Bordstein	q3 11921,12990 11987,12946
 #: note: früher "q1", rechtliche Lage unklar
-(Berolinastr.): Fußgänger	q2 11921,12990 11865,13027
+(Berolinastr.): Fußgänger	q2 11921,12990 11870,13024
 #: XXX_prog BS (am westlichen Ende)
 #: note: früher "q2", rechtliche Lage unklar
 (Berolinastr.): Fußgänger, Bordstein	q3 11815,13045 11719,13088
 #: note: explizites Radfahren-verboten-Schild
-(Berolinastr.): Spielplatz, Grünanlage, Radfahren nicht erlaubt	q4+ 11865,13027 11815,13045
+(Berolinastr.): Spielplatz, Grünanlage, Radfahren nicht erlaubt	q4+ 11870,13024 11815,13045
 #: XXX_prog BS (zur Mollstr. hin) (ansonsten -> q2)
-(Berolinastr. - Mollstr.): Fußgänger, Bordstein	q3 11865,13027 11874,13048 11896,13075
+(Berolinastr. - Mollstr.): Fußgänger, Bordstein	q3 11870,13024 11878,13046 11896,13075
 #: XXX_prog BS (zur Mollstr. hin)
 #: note: früher "q2", rechtliche Lage unklar
 (Berolinastr. - Mollstr.): Fußgänger, Bordstein	q3 11656,13100 11681,13161
@@ -5957,7 +5958,7 @@ Knappenpfad: enge Straße	q0- 2471,24709 2410,24837 2364,24886
 Auerhahnbalz: enge Straße	q2 636,4765 650,4712 668,4653 697,4605 723,4572
 #: by: Anna Lytik:
 #: confirmed_by: srt
-Welsestr.: enge Straße	q1 18601,18342 18620,18283 18660,18226 18709,18159 18746,18116 18744,18050 18476,17842 18357,17735 18300,17740 18253,17796 18269,17807
+Welsestr.: enge Straße	q1 18601,18342 18624,18259 18656,18222 18709,18159 18746,18116 18744,18050 18480,17836 18357,17735 18300,17740 18253,17796 18269,17807
 #: by: Peter Klein:
 Bleichertstr.: enge Straße	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 8661,1649
 #: by: Nadine (bliedtner):

@@ -525,7 +525,7 @@ Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3nocross 9807,10788 9829
 Treptower Str.	1 13376,7970 13457,8069 13459,8072
 Alte Schönhauser Str.	1 10709,13629 10741,13685
 Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
-Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14184,2157 14218,2181 14259,2184 14393,2137 14444,2090 14587,2032
 Albulaweg	1 10541,1889 10486,1908
 Kätchenweg	2 -7020,-1275 -6975,-1250
 Mayschweg	1 22954,3584 22834,3571 22714,3558
@@ -1738,7 +1738,7 @@ Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,643
 #: source_id: viz2021:13.410565,52.516096,15.01.2023,18:00 (bis 30.08.2024)
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
 #: note: mittlerweile ist die Fahrbahn und die Markierungen größtenteils schon fertig
-#: last_checked: 2024-03-13 vvv
+#: last_checked: 2024-03-20 (webcam) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-30 vvv
 Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303
@@ -2002,6 +2002,8 @@ Tucholskystraße/Auguststraße: Diagonalsperre	3 9415,13315 9651,13406 9611,13245
 (Ferdinand-Schultze-Str. - Plauener Str. 94-96): Poller	3 * 17684,14858 17558,14840
 # 
 Oranienburger Str.: Mittelstreifen, Fußgängerfurt existiert	3nocross 5527,20044 5545,19909 5533,19811
+# 
+Kastanienallee: nur für Tram und Radfahrer	1 10916,15098 10900,15075 10881,15047
 # 
 ######################################################################
 #: note: Kiezblock Reuterkiez vvv

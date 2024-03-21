@@ -296,7 +296,7 @@ Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (auﬂer Tram)	1 12045,16574 12189,16578 12399,16479
 Triftstr. (Buchholz)	1s:q3 12023,23039 12185,23021
 Joachimstr.	1s:q3 10082,13686 10142,13556 10199,13446
-Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
+Wilhelmsaue	1 4778,8769 4917,8772 5164,8771
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8742
 Schweidnitzer Str	1 3220,9598 3225,9844
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
@@ -917,7 +917,7 @@ Sachsendamm/Schˆneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7
 Bundesallee: Straﬂentunnelrampe	3nocross::ignrte 5494,8843 5503,8709 5498,8598
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5503,8709 5498,8598 5476,8521 5433,8407 5399,8344
 # it would be nice if it was possible to have this in the middle of the road, but check_points does not allow this yet --- Bundesallee: Straﬂentunnelrampe, Absperrung auf dem Mittelstreifen	3nocross::ignrte 5399,8344 5430,8409 5468,8509 5504,8598 5512,8709 5494,8843
-Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5469,8524 5493,8599 5498,8709 5494,8843
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5469,8524 5493,8599 5498,8726 5494,8843
 Bundesallee (Richtungsfahrbahn)	1::igndisp 5494,8843 5503,8709 5498,8598 5476,8521 5433,8407 5399,8344
 #: note: ^^^
 # 
@@ -1139,7 +1139,7 @@ Mark-Twain-Str.	1 24316,14412 24345,14501
 #: note: der Abschnitt ist auﬂerdem eine Einbahnstraﬂe, offen bergauf
 A.T.U-Einfahrt: Tor, auﬂerhalb der ÷ffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
-Rubensstr.	1 6429,7876 6307,7893
+Rubensstr.	1 6429,7876 6306,7864
 B‰umerplan	1 8527,7939 8553,7795
 B‰umerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13206 3534,13098
@@ -3751,8 +3751,12 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten f¸r das neue Strandbad gesperrt	2::i
 Magnus-von-Hirschfeld-Ufer: Sperrung in Hˆhe Kanzlergarten	2::inwork 7772,12694 7521,12581
 # 
 #: priority: #C
-#: last_checked: 2024-02-21
-(Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11865,13027 11874,13048 11896,13075
+#: note: laut Baustellenschild bis Mai 2024
+#: XXX auﬂerdem pr¸fen, ob die ehemaligen Schwingtore wieder angebracht werden
+#: last_checked: 2024-03-21
+#: next_check: 2024-05-30
+# REMOVED (hier nicht mehr) --- (Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
+Berolinastr. in Hˆhe Spielplatz	2::inwork 11870,13024 11815,13045
 # 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der ˆstlichen Seite f¸hrt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neukˆllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
@@ -3826,7 +3830,7 @@ Straﬂe 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,2
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11239
 #: note: Auﬂerdem baustellenbedingte Einbahnstraﬂenregelung in der Krautstr., offen Richtung S¸den sowie offen f¸r Radfahrer
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2024-03-31
 Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
@@ -4011,7 +4015,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erw‰hnung (tempor‰re Entfernung))
 #: XXX Scheint Baustellenfl‰che f¸r die Arbeiten an den Bahnbr¸cken zu sein.
 #: priority: #C
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-21 (mapillary)
 #: check_frequency: 60d
 Nˆldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4094,7 +4098,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-03-20
+#: last_checked: 2024-03-21
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4108,7 +4112,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraﬂenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
-#: last_checked: 2024-03-17 (osm) vvv
+#: last_checked: 2024-03-20 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. mˆglich vvv
@@ -4713,7 +4717,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="21"
 #: priority: #A
-#: last_checked: 2024-03-18 (mapillary)
+#: last_checked: 2024-03-20 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.: Straﬂenzug wird entfernt	2::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4778,20 +4782,20 @@ W‰scherinnenweg: durch Bauz‰une abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20 (webcam)
 #: check_frequency: 90d
 J¸denstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Bˆﬂ-Str./J¸denstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-20 (webcam)
 #: check_frequency: 90d
 J¸denstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -4803,17 +4807,7 @@ J¸denstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2023-10-12 (mapillary) --- Grunerstr.: Radweg	1::igndisp 11057,12715 10973,12611
 # REMOVED (Wegf¸hrung existiert nicht mehr) --- Grunerstr.: Radweg	1::igndisp 10973,12611 10954,12604 10931,12622
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
-# 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
-#: source_id: viz2021:13.44912,52.506133,17.07.2021,11:04 (bis 30.06.2023) (inaktiv)
-#: XXX wann sind die Bauarbeiten beendet?
-#: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realit‰t weiterhin Einbahnstraﬂe --- mittlerweile manchmal tats‰chlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
-#: osm_watch: way id="5096644" version="22"
-#: priority: #C
-#: last_checked: 2024-03-17
-#: check_frequency: 30d
-#: next_check: 2025-06-30
-Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
+# REMOVED (Engstelle ist noch da, aber keine Einbahnstraﬂe mehr) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549 --- #: source_id: viz2021:13.44912,52.506133,17.07.2021,11:04 (bis 30.06.2023) (inaktiv) --- #: XXX wann sind die Bauarbeiten beendet? --- #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realit‰t weiterhin Einbahnstraﬂe --- mittlerweile manchmal tats‰chlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13) --- #: osm_watch: way id="5096644" version="22" --- #: priority: #C --- #: last_checked: 2024-03-20 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2025-06-30 --- Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 # 
 #: next_check_id: TACHELES-2020
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
@@ -5285,7 +5279,8 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindes
 #: XXX mˆglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die J¸rgen-Schumann-Allee durchg‰ngig ist
 #: last_checked: 2023-09-24
 # REMOVED --- #: next_check: 2020-10-31
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
+#: check_frequency: 210d
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb
 # REMOVED (entfernt) --- #: osm_watch: way id="733975361" version="3" brb
 #: osm_watch: way id="161686079" version="8" brb
@@ -5475,8 +5470,8 @@ Bozener Str.	1 5971,8926 5974,9100
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6602,10504 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht mˆglich	3nocross 5354,8236 5363,8170 5376,8104 5363,8024
 (Los-Angeles-Platz)	1s:q3 5669,10704 5802,10621
-Schwingtor zum Spielplatz	BNP:10 11865,13027
-Schwingtor zum Spielplatz	BNP:10 11874,13048
+# REMOVED (existiert nicht mehr, oder wird vielleicht weiter hinten wieder aufgebaut?) --- Schwingtor zum Spielplatz	BNP:10 11870,13024
+# REMOVED (existiert nicht mehr) --- Schwingtor zum Spielplatz	BNP:10 11878,13046
 Schwingtor zum Spielplatz	BNP:10 11815,13045
 tragen (Treppe, 14 Stufen)	0:20 8190,10960
 # REMOVED (tempor‰r!) --- Matth‰ikirchplatz	1 7894,11288 7931,11391
@@ -5512,7 +5507,7 @@ tragen (16 Stufen)	0:45 5469,4543
 # REMOVED (hier ist eine Rampe) --- tragen (6 Stufen)	0:20 12387,13107
 # REMOVED --- Schranke	BNP:10 12586,13368
 tragen (ca. 5 x 9 Stufen)	0:120 13853,13712
-Danziger Str.: Straﬂenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
+Danziger Str.: Straﬂenbahnschienen	3nocross 12901,14093 12970,13996 13037,13897 13100,13803
 Danziger Str.: Straﬂenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Landsberger Allee	3nocross 12382,13097 12585,13118 12711,13150
 Landsberger Allee: Straﬂenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701

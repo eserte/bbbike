@@ -5040,7 +5040,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-	2 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
+	2 20679,3944 20772,3999 20788,4008 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -8230,7 +8230,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005412',
        data  => <<EOF,
-	1::inwork 10953,15787 10713,15753 10554,15725 10426,15705 10418,15704
+	1::inwork 10953,15787 10701,15750 10554,15725 10426,15705 10418,15704
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -9184,7 +9184,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
-	1::inwork 12667,16699 12602,16727 12472,16783 12257,16876 12230,16915
+	1::inwork 12667,16699 12602,16727 12462,16788 12257,16876 12230,16915
 EOF
      },
      { from  => 1183704492, # 2007-07-06 08:48
@@ -11044,7 +11044,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006024',
        data  => <<EOF,
-	1::inwork 12257,16876 12472,16783 12602,16727 12667,16699
+	1::inwork 12257,16876 12462,16788 12602,16727 12667,16699
 EOF
      },
      { from  => 1201647600, # 2008-01-30 00:00
@@ -15441,7 +15441,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
+	q4::inwork; 22292,5774 22464,5751 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15450,7 +15450,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
+	q4::inwork; 22292,5774 22464,5751 22521,5743 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -20983,7 +20983,7 @@ EOF
        text  => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-	q3::inwork; 10418,15704 10426,15705 10554,15725 10713,15753 10953,15787
+	q3::inwork; 10418,15704 10426,15705 10554,15725 10701,15750 10953,15787
 EOF
      },
      { from  => 1336057200, # 2012-05-03 17:00
@@ -22375,8 +22375,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex (we, sa) T08-T13 vvv
-	q4::temp:clock 5066,9645 5174,9708 5248,9750
-	q4::temp:clock 5139,9777 5174,9708
+	q4::temp:clock 5067,9679 5157,9724 5232,9776
+	q4::temp:clock 5139,9777 5157,9724
 #: tempex ^^^
 EOF
      },
@@ -23189,7 +23189,7 @@ EOF
 #: note: für 2022 noch keine Termine, vielleicht wieder erst im September? ... Auch kein Termin für September 2022 ... Auch nichts für das Frühjahr 2023... und nichts für September 2023. "Recurrence" entfernt.
 #: note: kein tempex-Ausdruck möglich
 # REMOVED ---	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
-	2::temp 5291,9675 5374,9619 5314,9588 5297,9579 5291,9675
+	2::temp 5291,9675 5374,9619 5312,9594 5297,9579 5291,9675
 EOF
      },
      { from  => 1390086000, # 2014-01-19 00:00
@@ -27370,7 +27370,7 @@ EOF
 	2::bomb 5472,8024 5363,8024
 	2::bomb 5501,8253 5560,8204 5631,8141 5632,8024 5630,7875
 	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5812,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
-	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
+	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6293,7875 6376,7944 6418,7958
 	2::bomb 5570,7939 5570,8024 5522,8024
 	2::bomb 5913,8415 5917,8351 5918,8221 5730,8207 5700,8241 5687,8280 5699,8308
 	2::bomb 6333,7708 6352,7523
@@ -27382,13 +27382,14 @@ EOF
 	2::bomb 6409,8026 6373,8083 6341,8174 6313,8254
 	2::bomb 6271,7733 6332,7721 6410,7722
 	2::bomb 6289,7472 6272,7645
-	2::bomb 6181,8181 6257,8078 6261,8058 6260,8011 6388,7999 6333,7927 6307,7893
+	2::bomb 6181,8181 6257,8078 6261,8058 6260,8011 6388,7999 6333,7927 6293,7875
 	2::bomb 5636,7685 5635,7718
 	2::bomb 5458,7866 5492,7868 5517,7869
 	2::bomb 5911,8042 5801,8031
 	2::bomb 5651,8218 5730,8207
 	2::bomb 5813,7807 5813,7774
-	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5911,8042 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
+	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5911,8042 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6306,7864 6293,7875
+	2::bomb 6306,7864 6317,7842 6332,7721
 	2::bomb 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366
 	2::bomb 6388,7999 6443,7971 6480,7992 6409,8026
 	2::bomb 6437,7968 6489,7908
@@ -28336,7 +28337,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-verzoegern-sich_a181430 (hier: bis "Ende September" 2018)
-	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22521,5743 22292,5774
+	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22521,5743 22464,5751 22292,5774
 EOF
      },
      { from  => $isodate2epoch->("2018-07-24 12:00:00"),
@@ -28569,7 +28570,6 @@ EOF
        until => $isodate2epoch->("2024-08-30 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
        text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Ende August 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
        type  => 'handicap',
-       # alt: source_id => '2147342174',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2023
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 für etwa ein Jahr)
@@ -28580,6 +28580,8 @@ EOF
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/suedlich-des-bahnhofs-werden-noch-rasengleise-eingebaut_a388018
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9988 (Antrag; Bauarbeiten noch bis 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/auf-der-treskowallee-wird-seit-acht-jahren-gebuddelt_a397984
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18372.pdf (Abschluss im Juli 2024? im Anschluss Sanierung der östlichen Fahrbahnseite, bis Herbst 2025)
+#: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
@@ -29253,7 +29255,7 @@ EOF
        text  => 'Grainauer Str.: zwischen Regensburger Str. und Geisbergstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende November 2018 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 5723,9949 5728,10127 5754,10182
+	q4::inwork 5723,9949 5715,10129 5741,10190
 EOF
      },
      { from  => 1542668400, # 2018-11-20 00:00
@@ -30515,7 +30517,7 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/Neddy40586844/status/1167016431600492545
 # REMOVED --- #: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen --- #: next_check: 2019-10-06
-	q4::inwork 22521,5743 22292,5774
+	q4::inwork 22521,5743 22464,5751 22292,5774
 EOF
      },
      { from  => 1567112731, # 2019-08-29 23:05
@@ -30564,9 +30566,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-03-21 00:00:00"), # $isodate2epoch->("2021-01-07 17:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
-       until => $isodate2epoch->("2024-04-01 18:00:00"), # $isodate2epoch->("2021-02-01 04:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
+       until => $isodate2epoch->("2024-04-02 04:00:00"), # $isodate2epoch->("2021-02-01 04:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
        #text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 1.2.2021',
-       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, von 22.03.2024 18:00 bis voraussichtlich 01.04.2024',
+       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, von 22.03.2024 22:00 bis 02.04.2024 morgens',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
@@ -30574,8 +30576,10 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_182020_LMS-BR_72 (inaktiv)
 #: source_id: 2147346766 (inaktiv)
 #: source_id: bvg2021:395#BVG344827_0
+#: source_id: viz2021:13.620478,52.513101,22.03.2024,22:00 (bis 02.04.2024)
 #: by: https://www.die-hellersdorfer.berlin/2024/03/16/bahn%C3%BCbergang-in-der-lemkestra%C3%9Fe-f%C3%BCr-zehn-tage-gesperrt/
 #: by: https://alles-mahlsdorf.de/bahnuebergang-lemkestrasse-zehn-tage-lang-gesperrt/
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240321 (auch für Fußgänger und Radfahrer gesperrt)
 # REMOVED (hier nicht) ---	2::inwork 25191,12343 25149,12266
 	2::inwork 25149,12266 25109,12196 25072,12107
 EOF
@@ -31047,7 +31051,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (Radweg ist nun offen; Kinzerallee ist zu minor (nicht mehr geprüft) --- #: next_check_id: BAHNHOFSTRKOEP-2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851 --- #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050 --- #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/ --- #: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/ --- #: by: https://www.bahninfo-forum.de/file.php?9,file=13443 --- #: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/ --- #: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654 --- #: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020) --- #: source_id: 2147345568 (schon ab 9.3.2020?) --- #: source_id: 2147345558 (bis 8.6.2020) --- #: add_fragezeichen: wann kann der Radweg in der Bahnhofstraße Richtung Süden benutzt werden? --- #: last_checked: 2020-06-17 --- #: check_frequency: 14d
-# REMOVED ---	q4::inwork; 22521,5743 22383,5611 22204,5447
+# REMOVED ---	q4::inwork; 22521,5743 22482,5706 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22236,5633
 # REMOVED ---	q4::inwork; 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
@@ -36933,7 +36937,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-03-19
+#: last_checked: 2024-03-21 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -37311,6 +37315,7 @@ EOF
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1255376.php
 # REMOVED ---	2::inwork -5554,12929 -5493,12994 -5446,13137 -5472,13235
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428766.php
+#: by: https://www.berliner-woche.de/wilhelmstadt/c-umwelt/parkweg-im-aktivpark-gesperrt_a410652
 	2::inwork -5753,13107 -5707,13014 -5554,12929 -5388,12841 -5273,12802 -5234,12812
 EOF
      },
@@ -37793,7 +37798,7 @@ EOF
 #: last_checked: 2023-10-21
 #: check_frequency: 120d
 #: next_check: 2024-04-30
-	q4::inwork; 5172,8880 5165,8784
+	q4::inwork; 5172,8880 5164,8771
 EOF
      },
      { from  => undef, # 
@@ -39397,8 +39402,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: TEMPELHOFERWEG-2023
 #: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024) (bis 25.8.2023) (inaktiv)
-	q4::inwork; 12214,5554 12256,5591 12495,5659
-	q4::inwork; 12495,5659 12525,5510 12582,5232
+	q4::inwork; 12214,5554 12256,5591 12482,5648
+	q4::inwork; 12482,5648 12518,5508 12582,5232
 EOF
      },
      { from  => undef, # 
@@ -39651,7 +39656,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024)
-#: last_checked: 2024-03-18
+#: osm_watch: note 4161500 1
+#: last_checked: 2024-03-21
 #: next_check: 2024-04-02
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -39991,7 +39997,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-02-28 vvv
+#: last_checked: 2024-03-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-02-29 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -40104,7 +40110,7 @@ EOF
      },
      { from  => 1687039200, # 2023-06-18 00:00
        until => 1692301064, # 1692655140, # 2023-08-21 23:59
-       text  => 'Gervinusstr.: Baustelle, zwischen Kracauerplatz und Droysenstr.gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.06.2023 00:00 bis 21.08.2023 23:59',
+       text  => 'Gervinusstr.: Baustelle, zwischen Kracauerplatz und Droysenstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.06.2023 00:00 bis 21.08.2023 23:59',
        type  => 'handicap',
        source_id => 'viz2021:13.29624,52.50221,19.06.2023,00:00', # inaktiv
        data  => <<EOF,
@@ -40781,11 +40787,13 @@ EOF
        data  => <<EOF,
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: last_checked: 2024-03-18 vvv
+#: osm_watch: way id="23121446" version="31"
+#: last_checked: 2024-03-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
-# REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn) ---	q4::inwork; 10908,13978 10933,14122
-Metzer Str.: Fahrbahn gesperrt, Umweg zur Fußgängerampel	q4::inwork; 11006,14087 10933,14122
+# REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
+#: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
+Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
 Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: last_checked ^^^
 #: check_frequency ^^^
@@ -41080,7 +41088,7 @@ EOF
      },
      { from  => 1698566400, # 2023-10-29 09:00
        until => 1748617200, # 2025-05-30 17:00
-       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr Str.n: L60',
+       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr',
        type  => 'gesperrt',
        source_id => 'LS/222-C/23/138',
        data  => <<EOF,
@@ -41098,7 +41106,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-03-17 (osm) vvv
+#: last_checked: 2024-03-20 (mapillary) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -41522,7 +41530,7 @@ EOF
 #: also_indoor: traffic (H[südliche Sodener],B[südliche Sodener])
 Wiesbadener Str.	q3::inwork; 3965,7297 3703,7324
 #: note: laut rbb ist nur die Sodener Str. zwischen Wiesbadener und Rudolf-Mosse-Str. gesperrt, gleiches Enddatum -> beide aufnehmen!
-Sodener Str.	q3::inwork 3718,7576 3703,7324
+Sodener Str.	q3::inwork 3718,7573 3703,7324
 EOF
      },
      { from  => 1706641941, # undef, # 
@@ -41608,7 +41616,7 @@ EOF
 #: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024)
 #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
-	q4::inwork 5189,9397 5189,8983
+	q4::inwork 5176,9398 5189,8983
 EOF
      },
      { from  => 1701151200, # 2023-11-28 07:00
@@ -42060,7 +42068,7 @@ Heidelberger Platz	2::bomb 4173,7993 4123,8021
 Heidelberger Platz [Bürgersteig]	2::bomb 4173,7993 4121,8016 4106,8031
 Johannisberger Str.	2::bomb 4161,7388 4162,7510 4162,7721 4173,7993
 Wiesbadener Str. (Friedenau, Wilmersdorf)	2::bomb 3965,7297 3703,7324 3612,7335
-Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3634,7601 3839,7787 3968,7906 4061,7992 4106,8031
+Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3631,7598 3839,7787 3968,7906 4061,7992 4106,8031
 Binger Str.	2::bomb 4061,7992 4067,7726 4066,7514 4064,7396
 Forckenbeckstr.	2::bomb 3665,8131 3779,8105 4106,8031
 Friedrichshaller Str.	2::bomb 3468,7455 3320,7515
@@ -42069,8 +42077,8 @@ Schlangenbader Str.	2::bomb 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
 Nauheimer Str.	2::bomb 3969,7731 4067,7726 4162,7721
 Homburger Str.	2::bomb 3971,7533 4066,7514 4162,7510
 Eberbacher Str.	2::bomb 4161,7388 4064,7396 3969,7399
-Sodener Str.	2::bomb 3703,7324 3718,7576
-Rudolf-Mosse-Str.	2::bomb 3634,7601 3718,7576 3813,7560
+Sodener Str.	2::bomb 3703,7324 3718,7573
+Rudolf-Mosse-Str.	2::bomb 3631,7598 3662,7580 3718,7573 3813,7560
 Franz-Cornelsen-Weg	2::bomb 3612,7335 3619,7587
 (Bad Kissingen)	2::bomb 3596,7566 3609,7842
 (Kolonieweg a. d. Forkenbeckstr.)	2::bomb 3584,8136 3756,8101 3779,8105
@@ -42211,8 +42219,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
+#: by: https://igeb.org/pressedienst/igebpresse_20240321.html
 #: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
 #: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
+#: next_check: 2024-03-24
 	q3::inwork 15720,4341 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
 EOF
      },
@@ -42262,7 +42272,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.369042,52.587855,19.03.2024,07:00 (bis 28.03.2024)
-#: source_id: viz2021:13.36877,52.58797,19.03.2024,07:00 (bis 28.03.2024)
+#: source_id: viz2021:13.36877,52.58797,19.03.2024,07:00 (bis 28.03.2024) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960743611359716
 #: by: https://pbs.twimg.com/media/GJAn5NMXMAAWMIE?format=jpg&name=large
 	q4::inwork; 7832,20219 7933,20171
@@ -42285,12 +42295,13 @@ EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
        until => 1712699940, # 2024-04-09 23:59
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist die Querung wegen Bauarbeiten nicht möglich, vom 19.03.2024 07:00 bis 09.04.2024 23:59',
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten unter Umständen die Querung nicht möglich, vom 19.03.2024 07:00 bis 09.04.2024 23:59',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
-#: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024)
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
+#: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
+#: XXX Verkehrsmeldung wurde wieder zurückgezogen --- wie ist der Stand hier? bei rbb noch gelistet
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42302,6 +42313,24 @@ Winterfeldtstr. -> Winterfeldtstr.	3::inwork 6630,9990 6504,9961 6366,9926
 Winterfeldtstr. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6630,9990 6504,9961 6518,9867
 Martin-Luther-Str.: linker Gehweg -> Martin-Luther-Str.	3::inwork 6518,9867 6504,9961 6504,9865
 Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,9961 6366,9926
+EOF
+     },
+     { from  => 1710914400, # 2024-03-20 07:00
+       until => 1715878800, # 2024-05-16 19:00
+       text  => 'Am Straßenbahnhof: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.03.2024 07:00 bis 16.05.2024 19:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.43407,52.4526,21.03.2024,07:00 (bis 16.05.2024)
+	2::inwork 12582,5232 12518,5508 12482,5648
+EOF
+     },
+     { from  => 1712088000, # 2024-04-02 22:00
+       until => 1712203200, # 2024-04-04 06:00
+       text  => 'Perleberg, B5: Sperrung des Bahnüberganges, 03.04.2024 22:00 Uhr bis 04.04.2024 06:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 247000128 (bis 04.04.2024)
+	2::inwork -94579,71995 -94274,71791 -93406,71227
 EOF
      },
     );
