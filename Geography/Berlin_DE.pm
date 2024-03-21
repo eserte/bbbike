@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2015,2016,2018,2020,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2015,2016,2018,2020,2022,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -261,7 +261,7 @@ sub parse_street_type_nr {
 
 # Feststellbar mit:
 #    GET 'http://localhost/bbbike/cgi/bbbike.cgi?all=1' | wc
-sub cgi_list_all_size { "(ca. 180 kB)" }
+sub cgi_list_all_size { "(ca. 280 kB)" }
 
 1;
 
