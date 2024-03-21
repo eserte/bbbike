@@ -52,13 +52,13 @@ use base qw(Geography::Base);
      'Reinickendorf'	 => [qw/Reinickendorf Borsigwalde Frohnau Heiligensee Hermsdorf
 			        Konradshöhe Lübars Tegel Waidmannslust
 			        Wittenau/, 'Märkisches Viertel'], # Borsigwalde ist seit 2012-05 ein eigener Ortsteil, vorher nur eine Ortslage in Wittenau
-     'Schöneberg'	 => [qw/Schöneberg Friedenau Schöneberg-Nord/],
+     'Schöneberg'	 => [qw/Schöneberg Friedenau Schöneberg-Nord/], # "Schöneberg-Nord" ist nur eine Ortslage
      'Spandau'		 => [qw/Spandau Gatow Kladow Siemensstadt Haselhorst Staaken
 				Wilhelmstadt Hakenfelde/,
 			     'Falkenhagener Feld'],
      'Steglitz'		 => [qw/Steglitz Lankwitz Lichterfelde/],
      'Tempelhof'	 => [qw/Tempelhof Lichtenrade Mariendorf Marienfelde/],
-     'Tiergarten'	 => [qw/Tiergarten Tiergarten-Süd Hansaviertel Moabit/],
+     'Tiergarten'	 => [qw/Tiergarten Tiergarten-Süd Hansaviertel Moabit/], # "Tiergarten-Süd" ist nur eine Ortslage
      'Treptow'		 => [qw/Adlershof Altglienicke Baumschulenweg
 			        Bohnsdorf Johannisthal
 			        Niederschöneweide Plänterwald/, 'Alt-Treptow'],
