@@ -47,7 +47,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,1
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2024-03-19
+#: last_checked: 2024-03-22
 #: check_frequency: 30d
 #: next_check: 2024-04-09
 #: valid: -20240409
@@ -310,7 +310,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 # REMOVED --- #: XXX Oranienburger Straße (Mitte) in beiden Richtungen zwischen Tucholskystraße und Krausnickstraße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00 --- #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024) (inaktiv) --- #: last_checked: 2024-03-15 (mapillary) --- #: next_check: 2024-03-19 --- #: valid: -20240319 --- Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
-# REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11111,12027
+# REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11043,11987 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # REMOVED --- #: next_check_id: ROTESRATHAUS-2023 --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2 10704,12595 10695,12616 10615,12642 10542,12587
 # REMOVED (hier keine Bauarbeiten mehr) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-11 --- #: valid: -20230811 --- Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
@@ -318,17 +318,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED (fertig) --- #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=737430#post737430 --- #: XXX evtl. wird die Straße nach den Bauarbeiten nicht mehr gepflastert sein -> ja, es ist schon asphaltiert (bereits eingetragen, bis auf die Stichstraße) --- #: last_checked: 2023-04-06 --- #: check_frequency: 30d --- Elisabeth-Abegg-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 7930,12912 7858,12830 7789,12764
 # REMOVED (nicht mehr) --- #: next_check_id: MOLKENMARKT-2021 --- #: next_check_id: STRALAUER-2023 --- #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023) --- #: last_checked: 2023-08-11 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-09-30 vvv --- # REMOVED (hier nicht mehr) --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249 --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: next_check_id: MOLKENMARKT-2021
-#: note: wobei die Absperrungen offen sein können (außerhalb der Arbeitszeiten?)
-#: last_checked: 2024-03-12 (webcam) vvv
-#: check_frequency: 14d vvv
+# REMOVED (mittlerweile auch tagsüber offen, gesehen 2024-03-22 (Fri) mittags --- #: next_check_id: MOLKENMARKT-2021 --- #: note: wobei die Absperrungen offen sein können (außerhalb der Arbeitszeiten?) --- #: last_checked: 2024-03-22 (webcam) vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: XXX nach Fertigstellung des Molkenmarkts entfernen
 # REMOVED --- Grunerstr.: Gehweg	q3 10973,12611 11057,12715
 # REMOVED --- Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
 # REMOVED --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
-Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 10900,12546 10873,12577
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 10900,12546 10873,12577 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 # REMOVED (keine Einbahnstraße, sondern nur noch eine Gegenverkehrsregelung (wobei das Schild auf der westlichen Seite fehlt) --- #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022 --- #: osm_watch: way id="184632250" version="3" --- #: last_checked: 2022-11-30 --- #: next_check: 2022-12-31 --- Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 # REMOVED --- #: next_check_id: ROSENTHALER-2022 --- #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m --- #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig --- #: by: https://berliner-abendblatt.de/2022/07/07/strassenbahn-bauarbeiten-einschraenkungen-ab-ende-juli/ (Gleisbauarbeiten im Anschluss? 11.7.2022-21.8.2022) --- #: by: https://viz.berlin.de/2022/07/verkehrsvorschau-11072022/ --- #: by: https://nitter.it/VIZ_Berlin/status/1546388826465001472#m --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvg-erneuert-tramgleise_a351479 (hier: "Der Autoverkehr bleibt bis zum 28. August eingeschränkt") --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559 --- #: by: https://viz.berlin.de/2022/12/verkehrsvorschau-061222/ --- #: add_fragezeichen: Sind die Bauarbeiten in der Rosenthaler Straße und Gipsstraße beendet? vvv --- #: also_indoor: traffic (B) vvv --- #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv --- #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023) --- #: priority: #A --- #: last_checked: 2023-01-24 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-03-15 vvv --- Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
@@ -630,7 +625,7 @@ Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::i
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
-#: last_checked: 2024-03-01 vvv
+#: last_checked: 2024-03-22 vvv
 #: next_check: 2024-04-15 vvv
 #: valid: -20240415 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -3443,6 +3438,7 @@ Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
 #: XXX_prog Bordstein am Wendehammer, könnte mit Umweg auf der östlichen Seite über einen abgesenkten Bordstein umfahren werden, ansonsten q2
 Münchener Str.: Fußgänger, Bordstein	q3 6264,9156 6255,9194
+Stübbenstr.: Fußgänger, Bordstein beim Überqueren	q3 5965,9131 5974,9100
 (Promenade - Borstellstr.): einige Fußgänger	q2 6392,4312 6391,4328
 #: XXX_prog Bordstein am Wendehammer; sowie Bordsteine (3x) beim Überqueren der Hohenstaufenstr., hier ist auch der Mittelstreifen relativ schmal; ansonsten q2
 Heilbronner Str.: Bordsteine, einige Fußgänger	q4 6101,9720 6096,9772
@@ -4276,8 +4272,8 @@ Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 1
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
 #: XXX_prog BS, ansonsten q1
 (Hoher Wallgraben - Lehndorffstr.): einige Fußgänger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2+ 18101,8044 18186,8081 18222,8103 18276,8136
-Mercedes-Platz: Fußgängerzone	q4 13150,11101 13067,11145 12984,11194
-Mercedes-Platz: Fußgängerzone	q4 12990,11006 13067,11145
+Uber-Platz: Fußgängerzone	q4 13150,11101 13067,11145 12984,11194
+Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
 (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
 #: note: früher (bis ca. 2020) für Radfahrer explizit frei, mittlerweile hängt hier ein explizites Radfahren-verboten-Schild
@@ -5300,7 +5296,7 @@ Umgehungschaussee: Fußgänger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,774
 (Auerbachstr. - Koenigsallee): Fußgänger, schmal	q2 505,8702 445,8429 614,8006 761,7922
 (Verlängerte Harbigstr.): Jogger etc.	q1 556,10122 461,9997 328,9820
 (Zur Hagenstr.): Fußgänger, Bordsteine	q1 1111,8225 1181,8301
-Bernhard-Wieck-Promenade: Fußgänger	q1 1363,7997 1372,8011 1381,8023 1446,8114
+Bernhard-Wieck-Promenade: Fußgänger	q1 1363,7997 1372,8011 1381,8023 1442,8109
 Bernhard-Wieck-Promenade: Fußgänger	q1 1381,8023 1366,8032 1348,8010
 Käuzchensteig: Fußgänger, Bordsteine	q1 1918,6456 1895,6470
 (Parkweg Robert-Stolz-Anlage): Fußgänger	q2 1728,7525 1869,7525 1878,7499

@@ -477,7 +477,7 @@ Schulze-Delitzsch-Platz	N 11024,11789 11060,11753 11155,11750
 Schulze-Delitzsch-Platz	N 11155,11750 11073,11774 11024,11789
 Inselstr. (Mitte)	N 11024,11789 10955,11849 10908,11908 10869,11949
 Inselstr. (Mitte)	NN 10869,11949 10824,11992
-Wallstr. (Mitte)	N 11160,12071 11111,12027 10908,11908 10722,11816 10528,11729 10374,11734
+Wallstr. (Mitte)	N 11160,12071 11111,12027 11043,11987 10908,11908 10722,11816 10528,11729 10374,11734
 #: note: zum Spittelmarkt
 Wallstr. (Mitte)	NN 10374,11734 10274,11737 10240,11740
 Neue Grünstr.	NN 10515,11785 10528,11729
@@ -1398,14 +1398,16 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: by: https://www.t-online.de/region/berlin/id_100324498/mercedes-benz-arena-in-berlin-wird-umbenannt-so-wird-sie-kuenftig-heissen.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11379 (Anfrage)
 #: by: https://www.mercedes-platz.de/news/detail/namenspartner-uber
+#: by[nocache]: https://www.bz-berlin.de/berlin/friedrichshain-kreuzberg/neue-uber-arena-in-berlin-tschuess-mercedes-benz
+#: by: https://www.berlin-live.de/freizeit/ausgehen/berlin-uber-platz-mercedes-friedrichshain-arena-bushido-a-id152002.html
 #: note: es existieren keine Straßenschilder oder sonstige Hinweise auf den Platz vvv
 #: oldname: -20151115: O2-Platz vvv
-#: XXX neue Umbenennung zu Uber Platz (mit oder ohne Bindestrich?); andere Änderungen (sehenswuerdigkeit-orig etc.) auch prüfen vvv
-#: next_check: 2024-03-22 vvv
-Mercedes-Platz	NN 13150,11101 13067,11145 12984,11194
-Mercedes-Platz	NN 12990,11006 13067,11145
-#: next_check ^^^
-#: XXX ^^^
+#: oldname: -20240322: Mercedes-Platz vvv
+# REMOVED --- #: XXX neue Umbenennung zu Uber Platz (mit oder ohne Bindestrich?); andere Änderungen (sehenswuerdigkeit-orig etc.) auch prüfen vvv --- #: next_check: 2024-03-22 vvv
+Uber-Platz	NN 13150,11101 13067,11145 12984,11194
+Uber-Platz	NN 12990,11006 13067,11145
+# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
+#: oldname ^^^
 #: oldname ^^^
 #: note ^^^
 # 
@@ -4175,8 +4177,8 @@ Hubertusallee	H 2126,8426 2190,8528 2273,8640 2295,8678 2320,8722 2322,8857 2337
 Hubertusallee	H 2361,9664 2360,9754
 Hubertusallee	H 2394,9714 2361,9664
 Lassenstr.	N 1530,8871 1582,8817 1663,8747 1879,8560 2089,8389 2064,8360 2063,8342
-Hubertusbader Str.	N 2121,8351 2063,8342 2027,8306 1968,8227 1905,8145 1878,8107 1843,8059 1775,7971 1740,7917
-Reuterpfad	N 1839,7887 1843,8059
+Hubertusbader Str.	N 2121,8351 2063,8342 2027,8306 1968,8227 1905,8145 1878,8107 1843,8059 1775,7971 1741,7920
+Reuterpfad	N 1839,7890 1843,8059
 Bismarckallee	N 1276,8659 1407,8652 1533,8635 1554,8638 1577,8655 1632,8716 1663,8747 1767,8853 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2177,9251 2316,9400
 (Bismarckallee)	N 1533,8635 1524,8524
 Kunz-Buntschuh-Str.	N 2389,9463 2477,9551 2585,9653
@@ -5363,7 +5365,7 @@ Parallelstr. (Lichterfelde, Lankwitz)	N 5028,1783 5087,1807 5198,1853 5335,1913 
 Frobenstr. (Lankwitz)	N 5849,2139 5934,2198 6108,2326 6349,2510 6529,2642 6618,2703 6677,2726
 Rudolstädter Str.	H 4280,8188 4220,8237 4135,8320 3992,8487 3964,8559 3928,8598 3848,8689 3822,8718 3751,8796 3701,8849 3689,8866 3521,9059
 Blissestr.	H 4789,7859 4786,8007 4779,8317 4778,8354 4772,8513 4769,8563 4768,8608 4777,8742 4778,8769 4777,8870
-Barstr.	N 4344,8246 4320,8277 4315,8478 4320,8596 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
+Barstr.	N 4344,8246 4320,8277 4315,8478 4320,8596 4324,8899 4327,8991 4325,9082 4325,9159 4339,9224 4377,9258
 Sven-Hedin-Str.	N -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657 -141,3715 -92,3724 16,3744 199,3774 263,3779 394,3694 458,3697
 Jaehnstr.	N -478,3509 -575,3684
 Plüschowstr.	N 251,3325 252,3367 242,3459
@@ -5499,7 +5501,7 @@ Tunnel unter Bhf. Grunewald	NN 693,9129 731,9103 884,8954
 Fontanestr. (Grunewald)	NH 1074,8470 1043,8550 972,8626 945,8659 926,8752 918,8795 920,8895
 Fontanestr. (Grunewald)	N 920,8895 936,8933
 Hagenplatz	N 1094,8398 1167,8556
-Hagenstr. (Grunewald)	H 1074,8470 1094,8398 1116,8349 1181,8301 1214,8279 1296,8218 1383,8152 1446,8114 1478,8092 1675,7938 1740,7917 1839,7887 1971,7844 2092,7810
+Hagenstr. (Grunewald)	H 1074,8470 1094,8398 1116,8349 1181,8301 1214,8279 1296,8218 1383,8152 1442,8109 1472,8087 1652,7954 1741,7920 1839,7890 1971,7844 2092,7810
 Theodor-Heuss-Platz	HH 1532,11280 1574,11379 1403,11428 1381,11335 1450,11309 1532,11280
 Lindenallee (Westend)	N 1403,11428 1429,11528 1454,11633 1464,11669 1494,11778 1516,11854 1539,11955 1563,12049 1595,12156
 Lindenallee (Westend)	N 1607,12154 1638,12250
@@ -13167,8 +13169,8 @@ Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
 #: next_check_id: MOLKENMARKT-2021
 #: XXX provisorische Anbindung
-#: last_checked: 2024-03-12 (webcam)
-#: check_frequency: 90d
+#: last_checked: 2024-03-22 (webcam)
+#: check_frequency: 30d
 Klosterstr. (Mitte)	NN 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
 Parochialstr.	N 10831,12371 10957,12401 11040,12420
@@ -13842,7 +13844,7 @@ Straße am Schoelerpark	N 5331,8581 5212,8602 5066,8630 4892,8624
 (zur Mannheimer Str.)	N 4768,8608 4754,8608 4677,8605
 (zur Mannheimer Str.)	NN 4677,8605 4456,8598
 (Uhlandstr./Blissestr. - Mannheimer Str.)	NN 4769,8563 4677,8605
-Mannheimer Str. (Wilmersdorf)	N 4467,9163 4446,9138 4447,9082 4449,8999 4451,8874 4456,8716 4456,8598 4320,8596
+Mannheimer Str. (Wilmersdorf)	N 4467,9163 4446,9138 4447,9082 4447,8990 4451,8874 4456,8716 4456,8598 4320,8596
 Mannheimer Str. (Wilmersdorf) [15-16]	N 4393,8715 4456,8716
 (Volkspark Wilmersdorf)	NN 4320,8596 3970,8582
 Marie-Curie-Allee	N 16751,10674 16751,10696 16861,10923 16967,11162 17070,11375 17208,11658
@@ -18825,7 +18827,7 @@ Kaubstr.	N 3981,9117 4198,9015
 Falkensteiner Str.	N 4180,8098 4087,8204
 (Wallenbergstr. - Rudolstätter Str.)	NN 4139,8485 3992,8487
 # REMOVED (entfernt ohne Bestätigung des Rückbaus) --- #: XXX sobald der Rückbau erfolgt ist -> Tunnel komplett aus den BBBike-Daten entfernen --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 --- #: next_check: 2013-08-01 --- (Fußgängertunnel Sybelstr.)	NN 3764,10580 3759,10567 3731,10563 3712,10566
-Maxdorfer Steig	NN 4325,8998 4449,8999
+Maxdorfer Steig	NN 4327,8991 4447,8990
 Am Schweizer Garten	N 11868,13646 12001,13863
 #: note: laut LOR 2019 PLZ=10405, aber in der Umgebung ist alles 10407... go with the latter
 #: note: ein nicht-amtliches Straßenschild hängt hier
@@ -18908,7 +18910,7 @@ Höhmannstr.	N 1023,8292 906,8137
 Regerstr.	N 906,8137 937,8113 1011,8060 1092,8009 1176,8000 1277,8064
 (Zur Hagenstr.)	NN 1111,8225 1181,8301
 Spohrstr.	N 1363,7997 1274,7866
-Wildpfad	N 1740,7917 1709,7848 1664,7773 1621,7741 1509,7700 1274,7866
+Wildpfad	N 1741,7920 1709,7848 1664,7773 1621,7741 1509,7700 1274,7866
 Königsmarckstr.	N 2088,7723 1971,7738 1749,7800
 Kronberger Str.	N 1987,7593 1971,7738 1971,7797 1971,7844 1968,8096 1968,8227
 Waldmeisterstr.	N 1621,7741 1735,7581 1736,7557 1880,7558 1930,7594
@@ -18933,7 +18935,7 @@ Eichhörnchensteig	NN 1728,7525 1449,7519 1405,7471
 (Treppe zur Umgehungschaussee)	NN 1405,7471 1319,7444 1251,7429
 (Zufahrt Pücklerstr.)	N 1553,6741 1495,6602 1464,6526
 (Käuzchensteig - Pücklerstr.)	NN 1644,6569 1581,6573 1575,6557 1495,6602 1338,6708
-Bernhard-Wieck-Promenade	NN 1363,7997 1372,8011 1381,8023 1446,8114
+Bernhard-Wieck-Promenade	NN 1363,7997 1372,8011 1381,8023 1442,8109
 Bernhard-Wieck-Promenade	NN 1381,8023 1366,8032 1348,8010
 (Treppe zur Regerstr.)	NN 906,8137 876,8131 850,8128
 (Spohrstr. - Umgehungschaussee)	NN 1274,7866 1256,7841 1215,7797
@@ -19319,7 +19321,7 @@ Stülpnagelstr.	N 2191,11451 2190,11569 2188,11679
 (Stülpnagelstr. - Knobelsdorffstr.)	NN 2188,11679 2197,11757
 Epiphanienweg	N 2236,11753 2235,11829 2246,11844 2242,11892
 Fürstenplatz	N 906,11517 987,11605
-Richard-Strauss-Str.	N 1478,8092 1536,8157 1606,8239 1670,8310 1748,8398 1804,8465 1879,8560 1980,8695
+Richard-Strauss-Str.	N 1472,8087 1536,8157 1606,8239 1670,8310 1748,8398 1804,8465 1879,8560 1980,8695
 Brahmsstr. (Grunewald)	N 1536,8157 1775,7971
 Knausstr. (Grunewald)	N 1606,8239 1843,8059
 Dachsberg	N 1670,8310 1905,8145
@@ -19393,7 +19395,7 @@ Ruheplatzstr.	N 7436,15746 7518,15605 7540,15566 7627,15412
 (Müllerstr. - Gerichtstr.)	NN 7607,15282 7723,15417
 Ostender Str.	N 6474,15278 6628,15411 6649,15427 6794,15553 6862,15615 6919,15666 7024,15810
 Mehlbeerenweg	N 11993,11978 11940,11982 11909,11985
-# REMOVED (dieses Straßenstück existiert nicht mehr, hier ist ein Sportplatz) --- Mehlbeerenweg	NN 11923,11881 11916,11846
+# REMOVED (dieses Straßenstück existiert nicht mehr, hier ist ein Sportplatz) (wurde im Amtsblatt 12/2024 eingezogen) --- Mehlbeerenweg	NN 11923,11881 11916,11846
 # REMOVED (dieses Straßenstück existiert auch nicht mehr) --- Mehlbeerenweg	NN 11940,11982 11923,11881
 Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 (Kleine Markusstr. - Krautstr.)	N 11937,12127 11958,12112 12021,12066
