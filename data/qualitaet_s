@@ -2947,7 +2947,7 @@ Am Kornfeld: Asphalt	Q0 23648,11265 23654,11285 23679,11372 23714,11477 23799,11
 Hornsteiner Weg: Asphalt	Q0 23679,11372 23559,11393 23468,11395 23389,11390
 Leopoldstr.: schlechtes Kopfsteinpflaster	Q3 23032,11729 23072,11758 23269,11767
 Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
-Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 23225,11649
+Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
 Münsterberger Weg: Asphalt	Q0 24172,11320 24029,11363
 Münsterberger Weg: Beton und Asphalt	Q0 23883,11416 24029,11363
 Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776 22701,11843
@@ -3537,11 +3537,13 @@ Hofheimer Str.: Asphalt	Q0 17579,14777 17600,14713
 Plauener Str. [zur Küllstedter Str.]: Asphalt	Q0 17340,14898 17352,14827
 (Plauener Str. - Küllstedter Str.): Gehwegplatten, Kleinkopfsteinpflaster	Q1 17352,14827 17363,14760
 (Ferdinand-Schultze-Str. - Plauener Str. 94-96): Betonsteinpflaster	Q0 17684,14858 17558,14840
+Ferdinand-Schultze-Str.: Asphalt/Kopfsteinpflaster	Q1 17493,15752 17486,15736 17467,15697
+Ferdinand-Schultze-Str.: Verbundsteinpflaster	Q1 17467,15697 17433,15606 17377,15588
 Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591 17400,14511
 Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16917,14905 16943,14785 17063,14797
 Joachimsthaler Str. (Alt-Hohenschönhausen): Beton	Q1 17063,14797 17129,14804 17117,14885
 Schleizer Str.: Verbundsteinpflaster	Q1 16802,15007 17231,14979
-Schleizer Str.: Asphalt	Q0 17231,14979 17406,14986 17562,14992 17608,15010
+Schleizer Str.: Asphalt	Q0 17231,14979 17406,14986 17562,14992 17609,15006
 (Schleizer Str. - Plauener Str.): Gehwegplatten	Q0 17406,14986 17415,14906
 Lichtenauer Str.: Beton	Q1 16835,15188 17062,15184
 Lichtenauer Str.: Verbundsteinpflaster	Q1 17062,15184 17221,15181
@@ -7240,7 +7242,8 @@ Straße 5 (Wartenberg): Asphalt	Q0 18730,19672 18821,19936 18999,20442 19095,2072
 (zur Julius-Meyen-Str.): Verbundsteinpflaster	Q1 20484,18788 20494,18755
 Grenzgrabenstr.: Asphalt	Q0 18422,15583 18429,15165
 Bürknersfelder Str.: Asphalt	Q0 18176,15160 18429,15165 18553,15169 18702,15248
-Plauener Str.: Asphalt	Q0 17940,15771 17953,15221 17959,15084 17902,15039 17829,15015 17762,14993 17718,14979 17638,14951
+Plauener Str.: Asphalt	Q0 17940,15771 17953,15221 17959,15084 17902,15039 17829,15015 17762,14993 17718,14979 17638,14945
+Plauener Str.: Asphalt	Q0 17638,14945 17610,14935 17531,14923
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster	Q1 15513,13539 15374,13542
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15374,13542 15239,13580 15097,13621 14995,13645
 (Möllendorffstr. - Karl-Lade-Str.): etwas unebener Asphalt	Q0 14995,13645 14821,13674

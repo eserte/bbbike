@@ -2352,8 +2352,10 @@ Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5
 Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17808,5669 17782,5698 17730,5698
 Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17728,5756
 Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17807,5730
-Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
-Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17532,15645 17570,15658
+Straßenbahngleise	3nocross::ignrte 17488,15766 17493,15752 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
+Rhinstr. -> Ferdinand-Schultze-Str. [am Friedhof Hohenschönhausen]: Straßenbahngleise	3::igndisp 17532,15645 17493,15752 17486,15736
+Ferdinand-Schultze-Str. [am Friedhof Hohenschönhausen] -> Rhinstr.: Straßenbahngleise	3::igndisp 17486,15736 17493,15752 17488,15766
+Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17493,15752 17532,15645 17570,15658
 Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17532,15645 17569,15561
 Rhinstr. -> Str. 150: Straßenbahngleise	3::igndisp 17532,15645 17569,15561 17640,15583
 Str. 150 -> Rhinstr.: Straßenbahngleise	3::igndisp 17640,15583 17569,15561 17626,15433
@@ -3424,6 +3426,7 @@ Drängelgitter	BNP:3:-236:trailer=10 -53609,82816
 Drängelgitter	BNP:3:-15:trailer=10 3789,18863
 Drängelgitter	BNP:3:-108:trailer=10 21494,10816
 Drängelgitter	BNP:3:-233:trailer=10 13656,9079
+Schranken	BNP:3:-55:trailer=10 15866,16823
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::inwork -11486,-1008 -11452,-974
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581
@@ -4126,3 +4129,4 @@ Bredowstr. -> Turmstr.: linker Gehweg bis zur Ampel	1::igndisp 6022,13330 6012,1
 Streitstr.: linker Gehweg	1::igndisp -3019,17129 -3009,17090
 Grunerstr./Alexanderstr. -> Jacobystr.: linker Gehweg	1::igndisp 11234,12742 11184,12774 11141,12806
 Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	1::igndisp 11256,12647 11221,12725
+Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	1::igndisp 17488,15766 17486,15736

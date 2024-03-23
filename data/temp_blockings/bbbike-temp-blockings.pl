@@ -30579,6 +30579,7 @@ EOF
 #: source_id: 2147346766 (inaktiv)
 #: source_id: bvg2021:395#BVG344827_0
 #: source_id: viz2021:13.620478,52.513101,22.03.2024,22:00 (bis 02.04.2024)
+#: source_id: viz2021:13.62105,52.51373,22.03.2024,22:00 (bis 02.04.2024)
 #: by: https://www.die-hellersdorfer.berlin/2024/03/16/bahn%C3%BCbergang-in-der-lemkestra%C3%9Fe-f%C3%BCr-zehn-tage-gesperrt/
 #: by: https://alles-mahlsdorf.de/bahnuebergang-lemkestrasse-zehn-tage-lang-gesperrt/
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240321 (auch für Fußgänger und Radfahrer gesperrt)
@@ -36941,7 +36942,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
-#: last_checked: 2024-03-21 (mapillary)
+#: last_checked: 2024-03-23
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -38134,7 +38135,7 @@ EOF
        data  => <<EOF,
 #: note: Einbahnstraßenabschnitt etwa 190m lang, im östlichen Bereich
 #: note: laut rbb "bis auf weiteres", go with VIZ
-	q4::inwork; 17608,15010 17562,14992 17406,14986 17231,14979
+	q4::inwork; 17609,15006 17562,14992 17406,14986 17231,14979
 EOF
      },
      { from  => undef, # 
@@ -39326,12 +39327,12 @@ EOF
 #: note: Am Alten Lokschuppen: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-02-26
+#: last_checked: 2024-03-23
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
 # REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="6"
+#: osm_watch: way id="1025826786" version="7"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 EOF
      },
@@ -39343,7 +39344,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-03-16
+#: last_checked: 2024-03-23
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -39803,13 +39804,13 @@ EOF
        text  => 'Karl-Kunger-Str.: Bauarbeiten, Sperrung zwischen Wildenbruchstr. und Plesser Str., sowie der Einfahrt Plesser Str., bis 05.03.2024 17:00 Uhr, evtl. auch länger',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id[expired]: bvg2021:m43#BVG323893_0
+#: source_id[inactive]: bvg2021:m43#BVG323893_0
 #: source_id: viz2021:13.45336,52.488521,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45068,52.489048,04.07.2023,09:00 (nur Kfz-Verkehr, bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.45273,52.48801,04.07.2023,09:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.45398,52.48894,04.07.2023,00:00 (bis 21.07.2023) (inaktiv)
 #: source_id: viz2021:13.450954,52.489036,12.01.2024,06:00 (bis 16.02.2024) (bis 08.03.2024) (bis 04.03.2024) (bis 05.03.2024) (inaktiv)
-#: source_id[expired]: bvg2021:m43#BVG340191_0
+#: source_id[inactive]: bvg2021:m43#BVG340191_0
 #: also_indoor: traffic (ex-G,ex-B)
 # REMOVED --- #: note: Die Umleitungsstrecke geht via Wildenbruchstr. - Kiefholzstr. Halteverbote, geänderte Vorfahrtsregelung.
 #: note: laut rbb bis 08.03.2024
@@ -40043,7 +40044,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-07-23-barrierefrei.pdf (Einschränkung beim Straßenbahnverkehr, bis 20.8.2023)
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-240723/ (auch Radverkehr, bis Ende August 2023)
-#: source_id[expired]: bvg2021:61#BVG324735_0 (hier bis 28.8.2023)
+#: source_id[inactive]: bvg2021:61#BVG324735_0 (hier bis 28.8.2023)
 #: source_id: viz2021:13.576366,52.445991,24.07.2023,04:00 (bis 27.08.2023) (bis 04.09.2023) (inaktiv)
 # REMOVED --- #: last_checked: 2023-07-15 --- #: next_check: 2023-07-24
 # REMOVED --- #: next_check: 2023-09-04
@@ -41235,7 +41236,7 @@ EOF
        text  => 'Kochstr.: Bauarbeiten zwischen Friedrichstr. und Wilhelmstr., evtl. sind auch Radfahrer betroffen, 30.10.2023 07 Uhr bis 03.11.2023 17 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id[expired]: bvg2021:m29#BVG331120_0 (ab 30.10.2023)
+#: source_id[inactive]: bvg2021:m29#BVG331120_0 (ab 30.10.2023)
 #: source_id: viz2021:13.390149,52.506745,30.10.2023,07:00 (nur Kfz-Verkehr bis 03.11.2023) (inaktiv)
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau/ (bis 3.11.2023, nur Kfz-Verkehr)
 # REMOVED (nicht geprüft) --- #: next_check: 2023-10-30
@@ -41593,7 +41594,7 @@ EOF
 #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
 #: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-03-16 vvv
+#: last_checked: 2024-03-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-03-28 vvv
 # REMOVED --- #: next_check: 2024-09-30 vvv
@@ -41847,13 +41848,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1711206034, # undef, # XXX
        text  => 'Große-Leege-Str.: zwischen Gärtnerstr. und Leuenberger Str. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G)
-#: last_checked: 2024-02-28
+# REMOVED (ja) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-28
 	q3::inwork 16884,15833 16905,15924
 EOF
      },
@@ -42220,9 +42219,11 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
 #: by: https://igeb.org/pressedienst/igebpresse_20240321.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1430491.php (2. Bauabschnitt 8. bis 12. April 2024 zwischen Johannisthaler Chaussee und Baumschulenstraße /Späthstraße)
+#: source_id: bvg2021:265#BVG344869_0
+#: source_id: bvg2021:x11#BVG344866_0
 #: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
 #: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
-#: next_check: 2024-03-24
+#: next_check: 2024-03-25
 	q3::inwork 15720,4341 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
 EOF
      },
