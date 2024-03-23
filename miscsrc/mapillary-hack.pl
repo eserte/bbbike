@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,6 +43,9 @@ my $geometry_field = 'geometry';
 my($start_date, $end_date);
 my $bbox;
 
+my $do_cache;
+my $cache_time = 8 * 3600; # seconds
+
 GetOptions(
 	   "to-file" => \my $to_file,
 	   "region=s" => \my $region,
@@ -57,6 +60,7 @@ GetOptions(
 	   "end-date=s"   => \$end_date,
 	   "bbox=s"       => \$bbox,
 	   "debug!"       => \$debug,
+	   "cache!"       => \$do_cache,
 	  )
     or die "usage?";
 
@@ -130,7 +134,34 @@ my $end_captured_at = do {
     timelocal(59,59,23,$d1,$m1-1,$y1) + 1;
 };
 
-my $ua = LWP::UserAgent->new(keep_alive => 1);
+my $ua;
+if ($do_cache) {
+    if (!eval { require LWP::UserAgent::WithCache; require HTTP::Date; 1 }) {
+	die "Module missing, please install. Error: $@";
+    }
+    # need to patch set_cache method
+    my $orig_set_cache = \&LWP::UserAgent::WithCache::set_cache;
+    {
+	no warnings 'redefine';
+	*LWP::UserAgent::WithCache::set_cache = sub {
+	    my($self, $uri, $res) = @_;
+
+	    my $expires = time + $cache_time;
+	    my $expires_formatted = HTTP::Date::time2str($expires);
+	    $res->header('Expires', $expires_formatted);
+
+	    $orig_set_cache->($self, $uri, $res);
+	};
+    }
+    my %cache_opt = (
+        'namespace'          => 'lwp-cache',
+	'cache_root'         => "$ENV{HOME}/.cache",
+        'default_expires_in' => $cache_time,
+    );
+    $ua = LWP::UserAgent::WithCache->new(\%cache_opt);
+} else {
+    $ua = LWP::UserAgent->new(keep_alive => 1);
+}
 
 my @overflows;
 my $data = fetch_images($start_captured_at, $end_captured_at);
@@ -217,12 +248,13 @@ sub fetch_images {
 	my $resp = $ua->get($url, "Authorization" => "OAuth $client_token");
 	if (!$resp->is_success) {
 	    my $error_data = eval { decode_json $resp->decoded_content };
-	    my $msg = "Try $try/$max_try: ";
+	    my $msg = "Try $try/$max_try:\n";
+	    $msg .= "Request: " . $resp->request->dump;
 	    if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout)$}) {
 		my $e = $error_data->{error};
 		$msg .= "$e->{error_user_title}: $e->{error_user_msg}";
 	    } else {
-		$msg .= $resp->dump;
+		$msg .= "Response: " . $resp->dump;
 	    }
 	    warn $msg, "\n";
 	} else {
