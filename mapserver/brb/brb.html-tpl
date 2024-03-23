@@ -59,7 +59,7 @@
      <td>
       <table summary="" class="pwrdb">
        <tr>
-        <td class="pwrd">&nbsp;Powered by <a href="http://mapserver.gis.umn.edu/">MapServer</a> &amp; <a href="[% BBBIKE_SF_WWW %]">BBBike</a></td>
+        <td class="pwrd">&nbsp;Powered by <a href="https://mapserver.gis.umn.edu/">MapServer</a> &amp; <a href="[% BBBIKE_SF_WWW %]">BBBike</a></td>
         <td align="right"><img title="" alt="scalebar" src="[% t('scalebar') %]"></td>
        </tr>
       </table>
