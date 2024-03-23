@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2008,2009,2013,2018,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008,2009,2013,2018,2021,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,7 @@ use Exporter ();
 @EXPORT = qw(M Mfmt);
 @EXPORT_OK = qw(frommain noautosetup);
 
-$VERSION = '1.13';
+$VERSION = '1.14';
 
 BEGIN {
     if ($ENV{PERL_MSG_DEBUG}) {
@@ -37,7 +37,7 @@ CALLER_FILE: {
 	my $caller_file_i = 0;
 	do {
 	    $caller_file = (caller($caller_file_i))[1];
-	    last CALLER_FILE if ($caller_file !~ m,(^\(eval \d+\)|/Msg\.pm)$,);
+	    last CALLER_FILE if ($caller_file !~ m,(^\(eval \d+\).*|/Msg\.pm)$,);
 	    if (!defined $caller_file_i) {
 		$caller_file_i = 0;
 	    } else {
@@ -100,7 +100,17 @@ sub setup_file (;$$) {
 		warn "Try candidate message file $f...\n";
 	    }
 	    if (-r $f && -f $f) {
-		$safe->rdo($f);
+		if ($Devel::Cover::VERSION) {
+		    if ($DEBUG) {
+			warn "Detected Devel::Cover, slurp contents of $f and call reval() instead of rdo()...\n";
+		    }
+		    open my $fh, '<', $f or die "Can't open $f: $!";
+		    local $/;
+		    my $buf = <$fh>;
+		    $safe->reval($buf);
+		} else {
+		    $safe->rdo($f);
+		}
 		if (ref $lang_messages) {
 		    $messages = $lang_messages;
 		    if ($DEBUG) {
