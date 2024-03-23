@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.18 2007/05/31 21:44:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -36,7 +35,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.19';
 
 my(%brush, %outline_brush);
 
@@ -83,7 +82,9 @@ sub init {
 #   	}
 #     }
 
-    $im->SetAttribute(interlace => 'Plane');
+    if ($self->{Interlaced}) {
+	$im->SetAttribute(interlace => 'Plane');
+    }
 
     $self->set_draw_elements;
 

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2008,2012,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2008,2012,2016,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx $tunnel_qr);
 
-$VERSION = 3.65;
+$VERSION = 3.66;
 
 $bahn_bau_rx = qr{^[SRU](?:0|Bau|G|P)(?:::|$)}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -48,6 +48,7 @@ sub new {
     $self->{Wind}      = delete $args{Wind};
     $self->{NoScale}   = delete $args{NoScale};
     $self->{Bg}        = delete $args{Bg}; # "white"/"#rrggbb" . "transparent"
+    $self->{Interlaced} = exists $args{Interlaced} ? delete $args{Interlaced} : 1;
     $self->{UseFlags}  = delete $args{UseFlags};
 #XXX del???    $self->{Width}     = delete $args{Width}; # boolean # XXX hmmm, this is not in use? because of Width/Height members???
     $self->{RouteWidth}= delete $args{RouteWidth}; # width of route

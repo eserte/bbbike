@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.24 2008/02/09 22:51:39 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -45,7 +44,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.25';
 
 my(%brush, %outline_brush);
 
@@ -144,10 +143,6 @@ sub allocate_colors {
     if (!$self->{OldImage}) {
 	# fill the background with the first color
 	$im->flood_fill(x => 1, y => 1, color => $ {$c_order->[0]});
-    }
-
-    if ($self->imagetype eq 'gif') {
-	$im->tags(gif_interlace => 1);
     }
 }
 
@@ -1013,12 +1008,15 @@ sub flush {
     }
 
     my $im = $self->{Image};
+    my @common_write_options = (
+	type => $self->imagetype,
+	($self->imagetype eq 'gif' && $self->{Interlaced} ? (gif_interlace => 1) : ()),
+    );
     if ($ENV{MOD_PERL}) {
 	# Workaround --- is this an Imager bug or limitation?
 	require File::Temp;
 	my($ofh, $ofilename) = File::Temp::tempfile(UNLINK => 1);
-	$im->write(file => $ofilename,
-		   type => $self->imagetype)
+	$im->write(file => $ofilename, @common_write_options)
 	    or die "Cannot write to temporary file $ofilename: ", $im->errstr;
 	open(INFH, $ofilename) or die "Can't read from $ofilename: $!";
 	local $/ = \4096;
@@ -1028,8 +1026,7 @@ sub flush {
 	close INFH;
 	unlink $ofilename;
     } else {
-	$im->write(fh => $fh,
-		   type => $self->imagetype)
+	$im->write(fh => $fh, @common_write_options)
 	    or die "Cannot write to filehandle with format ", $self->imagetype, ": ", $im->errstr;
     }
 }

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2014,2016,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -39,7 +39,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = '1.68';
+$VERSION = '1.69';
 
 my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd).
 
@@ -232,7 +232,9 @@ sub init {
     $self->set_category_outline_colors;
     $self->set_category_widths;
 
-    $im->interlaced('true');
+    if ($self->{Interlaced}) {
+	$im->interlaced('true');
+    }
 
     $self->set_draw_elements;
 
