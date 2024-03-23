@@ -334,12 +334,13 @@ if ($do_display_all) {
     $do_display = 1;
 }
 
-my $image_info_tests = 3;
-my $additional_pdf_tests = 2;
-my $tests_per_module = 1 + $image_info_tests;
+my $basic_tests_per_module = 1;
+my $image_info_tests = 4;
+my $pdf_info_tests = 5;
 
-my $total_additional_pdf_tests = $additional_pdf_tests * grep { $_->{mod} =~ /pdf/i } @module_defs;
-plan tests => $total_additional_pdf_tests + scalar @module_defs * $tests_per_module;
+my $pdf_module_count = scalar grep { $_->{mod} =~ /pdf/i } @module_defs;
+my $non_pdf_module_count = @module_defs - $pdf_module_count;
+plan tests => $non_pdf_module_count*$image_info_tests + $pdf_module_count*$pdf_info_tests + scalar @module_defs * $basic_tests_per_module;
 
 for my $module_def (@module_defs) {
  SKIP: {
@@ -347,7 +348,7 @@ for my $module_def (@module_defs) {
 	    my $skip = $module_def->{skip};
 	    my $todo = $module_def->{todo};
 	    my $module = $module_def->{mod};
-	    my $number_of_tests = $tests_per_module + ($module =~ /pdf/i ? $additional_pdf_tests : 0);
+	    my $number_of_tests = $basic_tests_per_module + ($module =~ /pdf/i ? $pdf_info_tests : $image_info_tests);
 	    skip $skip, $number_of_tests if $skip;
 	    todo_skip $todo, $number_of_tests if $todo;
 	    eval {
@@ -486,8 +487,8 @@ sub draw_map {
 	warn "Saved to $dest_filename\n";
     }
 
-    # This block should generate $image_info_tests tests:
     if ($imagetype =~ /^pdf$/) {
+	# This block should generate $pdf_info_tests tests:
 	my $fh;
 	ok(open($fh, $filename), "File $filename opened");
 	my $pdf_content = do {
@@ -508,7 +509,7 @@ sub draw_map {
 
 	my $info = pdfinfo $filename;
     SKIP: {
-	    skip "pdfinfo not available", $additional_pdf_tests
+	    skip "pdfinfo not available", $pdf_info_tests-3
 		if !$info;
 	    if ($module eq 'PDF') {
 		like $info->{Creator}, qr{^BBBikeDraw::PDF version \d+\.\d+}, 'expected creator';
@@ -529,12 +530,13 @@ sub draw_map {
 	    }
 	}
     } else {
+	# This block should generate $image_info_tests tests:
     SKIP: {
 	    my $image_info = image_info($filename);
 	    if ($imagetype =~ /^(png|gif|jpeg)$/) {
 		is($image_info->{file_media_type}, "image/$imagetype", "Correct mime type for $imagetype");
 	    } elsif ($imagetype eq 'svg') {
-		skip "Image::Info too old (try 1.31_50 or better)", 3
+		skip "Image::Info too old (try 1.31_50 or better)", $image_info_tests
 		    if !defined $image_info->{file_media_type} && $Image::Info::VERSION < 1.3150;
 		like($image_info->{file_media_type}, qr{^image/svg[+-]xml$}, "Correct mime type for $imagetype");
 		if ($image_info->{file_media_type} eq 'image/svg-xml') {
@@ -545,10 +547,17 @@ http://support.adobe.com/devsup/devsup.nsf/docs/50809.htm.
 EOF
 		}
 	    } else {
-		skip "image_info does not work for $imagetype", 3;
+		skip "image_info does not work for $imagetype", $image_info_tests;
 	    }
 	    is($image_info->{width}, $width);
 	    is($image_info->{height}, $height);
+	    if      ($imagetype eq 'png' && $module =~ m{^(GD|ImageMagick)$}) {
+		is($image_info->{Interlace}, 'Adam7', "$module: $imagetype created with interlacing");
+	    } elsif ($imagetype eq 'gif') {
+		is($image_info->{Interlace}, 'GIF', "$module: $imagetype created with interlacing");
+	    } else {
+		ok(!exists $image_info->{Interlace}, "$module: $imagetype created without interlacing");
+	    }
 	}
     }
 }
