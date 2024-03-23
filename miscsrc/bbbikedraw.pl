@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2011,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2011,2017,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -55,6 +55,7 @@ my $q;
 my $debug;
 my $do_routelist;
 my $compress;
+my $interlaced;
 
 if (!GetOptions("w=i" => \$w,
 		"h=i" => \$h,
@@ -84,6 +85,7 @@ if (!GetOptions("w=i" => \$w,
 		"routefile=s" => \$route_file,
 		"markerpoint=s" => \$marker_point,
 		"routelist!" => \$do_routelist,
+		"interlaced!" => \$interlaced,
 		"compress!" => \$compress,
 		"q|quiet!" => \$q,
 		"debug" => \$debug,
@@ -175,6 +177,9 @@ if ($fontsizescale) {
 }
 if (defined $background) {
     push @extra_args, Bg => $background;
+}
+if (defined $interlaced) {
+    push @extra_args, Interlaced => $interlaced;
 }
 if (defined $route_file) {
     # XXX no magic defined for gpsman files, extra handling needed.
@@ -335,6 +340,9 @@ usage: $0 [options]
 -fontsizescale float       Scale default font sizes for place labels.
 -bg|-background color      Specify background color (as GD colors).
                            Use "transparent" for a transparent background.
+-[no]interlaced		   Specify if interlaced images should be generated, if
+			   supported by the used module. Usually this defaults
+			   to a true value.
 -compress		   Turn compression on. May help in reducing size for pdf
 			   output.
 -q			   Be quiet.
