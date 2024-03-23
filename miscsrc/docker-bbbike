@@ -265,9 +265,7 @@ EOF
 			  [$opt{src}, $docker_context_dir],
 			  ["$FindBin::RealBin/../port/debian/helper/install-deb", $docker_context_dir],
 			 ) {
-	    my($src,$dest) = @$copy_def;
-	    $doit->copy($src, $dest);
-	    copy_stat($src, "$dest/" . basename($src));
+	    _copy_p($doit, @$copy_def);
 	}
     }
 
@@ -776,7 +774,8 @@ sub cgi {
     ExtUtils::Manifest::manicopy(ExtUtils::Manifest::maniread(), $docker_context_dir, "cp");
     # Additional files needed not listed in MANIFEST
     for my $f ("cgi/GNUmakefile", "cgi/Makefile", "miscsrc/b2gmake") {
-	$doit->copy("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
+	my($from, $todir) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
+	_copy_p($doit, $from, $todir);
     }
     if ($opt{mapserver}) {
 	# XXX Actually it would be easier to copy everything in the repository, not just the files mentioned in MANIFEST
@@ -944,6 +943,12 @@ EOF
 	info "Please CTRL-C or execute 'docker kill $tag' to stop container";
 	waitpid($docker_ppid, 0);
     } $docker_context_dir;
+}
+
+sub _copy_p {
+    my($doit, $src, $destdir) = @_;
+    $doit->copy($src, $destdir);
+    copy_stat($src, "$destdir/" . basename($src));
 }
 
 return 1 if caller;
