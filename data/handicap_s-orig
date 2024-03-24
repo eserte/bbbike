@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-03-18
+#: last_checked: 2024-03-24
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -56,7 +56,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024)
-#: last_checked: 2024-03-21
+#: last_checked: 2024-03-24
 #: check_frequency: 60d
 #: next_check: 2024-03-29
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -596,7 +596,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-#: last_checked: 2024-03-08 vvv
+#: last_checked: 2024-03-17 (krickstadt) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-06-30 vvv
 Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441
@@ -608,7 +608,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 1
 #: next_check_id: SCHOENEWEIDE-2018
 #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024)
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-03-14 (daf)
+#: last_checked: 2024-03-17 (krickstadt)
 #: next_check: 2024-06-30
 #: valid: -20240630
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
@@ -767,7 +767,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id[inactive]: bvg2021:m43#BVG344369_0
 #: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569
-#: last_checked: 2024-03-19 (mapillary)
+#: last_checked: 2024-03-24
 #: check_frequency: 14d
 #: next_check: 2024-03-28
 Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
@@ -2831,17 +2831,28 @@ Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 Märkischer Platz: Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 11034,12038 11084,12070 11111,12027
 #: XXX_prog BS zur Grünstraßenbrücke
 (Fischerinsel - Grünstraßenbrücke): Fußgänger, niedriger Bordstein	q2+ 10474,11843 10515,11785
+# 
+#: note: Wriezener Park
 # REMOVED (mittlerweile abgeflacht) --- #: XXX_prog BS zur Helsingforser Str. --- (Rampe Wriezener Park): Fußgänger, Bordstein	q3 13427,11431 13416,11425
-(Rampe Wriezener Park): Fußgänger, enge Rampe	q3 13416,11425 13442,11400
-(Wriezener Park): Fußgänger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
-(Wriezener Park): Fußgänger	q2 13324,11529 13308,11515
+(Rampe Wriezener Park): Fußgänger, enge Rampe	q3- 13416,11425 13442,11400
+#: note: normale Grünanlagenschilder ohne Zusatzschilder; früher q2
+(Wriezener Park): Fußgänger	q3 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer; früher q2
+(Wriezener Park): Fußgänger	q3 13324,11529 13308,11515
 #: XXX_prog BS zur Helsingforser Str.
-Wriezener Park: Fußgänger, Bordstein	q3 13261,11572 13274,11585
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer; früher q3
+Wriezener Park: Fußgänger, Bordstein	q3- 13261,11572 13274,11585
+#: note: normale Grünanlagenschilder ohne Zusatzschilder; früher q1
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): Fußgänger	q3 13095,11703 13123,11675 13172,11651 13202,11666
+#: note: normale Grünanlagenschilder ohne Zusatzschilder; früher q1
+(Rüdersdorfer Str. - Am Wriezener Bahnhof): Fußgänger	q3 13161,11795 13120,11725 13095,11703
+#: note: normale Grünanlagenschilder ohne Zusatzschilder; früher q1
+(Rüdersdorfer Str. - Helsingforser Str./Wriezener Park): Fußgänger	q3 13120,11725 13123,11675
+# 
+#: note: hier keine offizielle Grünanlage, trotzdem q2 -> q1
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q2 13042,11749 13095,11703
 #: note: Absperrungen am Zugang zum Berghain, recht schmaler Weg ist übrig geblieben
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger, Engstelle	q3 12986,11699 13002,11705 13042,11749
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
-(Rüdersdorfer Str. - Am Wriezener Bahnhof): einige Fußgänger	q1 13161,11795 13120,11725 13095,11703
-(Rüdersdorfer Str. - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 13120,11725 13123,11675
 #: note: ausgeschildert Fußweg, Radfahrer frei
 Oranienplatz: einige Fußgänger	q1 11264,10804 11227,10821
 #: note: keine Freigabe
@@ -4842,6 +4853,9 @@ Douglasienweg: einige Fußgänger	q1 11563,4099 11594,4107
 Hönower Weg: einige Fußgänger	q0- 17383,9719 16984,9857 16925,9852 16900,9861
 # 
 (Fürstenwalder Damm - Müggelseedamm): einige Fußgänger	q0- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
+# 
+(KGA Grüne Weiden): einige Fußgänger	q2 15456,7516 15268,7344 15214,7307
+(KGA Grüne Weiden - Heidekampgraben): enger Trampelpfad, Steigungen/Gefälle	q4 15214,7307 15175,7301
 # 
 ######################### User Contributions #################################
 # 

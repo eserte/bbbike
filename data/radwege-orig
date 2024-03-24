@@ -816,7 +816,7 @@ Gehwegplatten	RW2; 5198,17433 5109,17507
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4326,17801 4200,17848 4096,17890 4016,17918
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2023-10-11 (daf) vvv
+#: last_checked: 2024-03-18 (okas) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Verbundsteinpflaster, Bord gegen Gehweg	RW2; 4016,17918 3930,17923 3833,17929 3706,17931 3628,17935
@@ -1278,7 +1278,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-03-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1588,7 +1588,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11059 (Anfrage)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-03-07
+#: last_checked: 2024-03-21 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1602,7 +1602,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-03-07
+#: last_checked: 2024-03-21 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2808,7 +2808,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2024-03-11
+#: last_checked: 2024-03-22 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW2; 12543,11521 12645,11673
@@ -2916,7 +2916,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-03-20
+#: last_checked: 2024-03-24
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4205,7 +4205,7 @@ mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5
 alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15011,7593 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
 #: historical_note: einige deutliche Wurzelhebungen, mittlerweile neu gemacht?
-asphaltierter Gehweg für Radfahrer frei	RW1; 15221,7778 15553,7408 15560,7400
+asphaltierter Gehweg für Radfahrer frei	RW1; 15221,7778 15456,7516 15553,7408 15560,7400
 asphaltierter Gehweg für Radfahrer frei, einige Wurzelhebungen	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
 asphaltiert	RW1; 23402,5483 23492,5488 23519,5490 23590,5487 23657,5467 23724,5437 23818,5394 23849,5380 23942,5338
 asphaltiert	RW1; 23942,5338 23849,5380 23818,5394 23724,5437 23657,5467 23590,5487
@@ -7868,7 +7868,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-03-07
+#: last_checked: 2024-03-21 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
