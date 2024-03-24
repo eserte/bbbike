@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2020,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2020,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -5768,6 +5768,10 @@ sub draw_route {
 		$BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = _bbbikegooglemap_url();
 		$BBBikeDraw::BBBikeGoogleMaps::maptype = "BBBike";
 	    }
+	} elsif ($q->param('imagetype') eq 'leaflet') {
+	    $bbbikedraw_args{Module} = 'BBBikeLeaflet';
+	    $bbbikedraw_args{BBBikeRoute} = $route;
+	    $bbbikedraw_args{Conf} = { BBBikeLeafletUrl => _bbbikeleaflet_url() };
 	} elsif ($q->param('imagetype') eq 'googlemapsstatic') {
 	    $bbbikedraw_args{Module} = "GoogleMapsStatic";
 	    $q->param('imagetype', 'png'); # XXX hacky...
@@ -7391,16 +7395,19 @@ sub upload_button_html {
 				     ($cannot_svg ? () : ('svg')),
 				     ($cannot_jpeg ? () : ('jpeg')),
 				     ($can_mapserver ? ('mapserver') : ()),
+				     'leaflet',
 				    ],
 			 -default => 'png',
 			 -labels => {'png' => 'PNG',
 				     'pdf-auto' => 'PDF',
 				     'svg' => 'SVG',
 				     'jpeg' => 'JPEG',
-				     'mapserver' => 'Mapserver'},
+				     'mapserver' => 'Mapserver',
+				     'leaflet' => 'Leaflet map',
+				    },
 			),
 	  "<p>\n",
-	  "Bildgröße: <small>(nicht für PDF, SVG und Mapserver)</small><br>\n",
+	  "Bildgröße: <small>(nicht für PDF, SVG, Mapserver und Leaflet)</small><br>\n",
 	  $q->radio_group(-name => "geometry",
 			  -values => ["400x300", "640x480", "800x600",
 				      "1024x768", "1200x1024", "1600x1200",
