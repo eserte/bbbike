@@ -7383,7 +7383,7 @@ sub upload_button_html {
     print $q->start_multipart_form(-method => 'post',
 				   -action => "$bbbike_url?dummy=@{[ time ]}"),
           "Anzuzeigende Route-Datei (.gpx-, .ovl- oder .bbr-Dateien oder GPSman-Tracks):<br>\n",
-	  $q->filefield(-name => 'routefile'),
+	  q{<input type="file" name="routefile" accept=".gpx, .ovl, .bbr, .trk, .rte, .wpt"/>},
 	  "<p>\n",
 	  # hier könnte noch ein maxdist-Feld stehen, um die maximale
 	  # Entfernung anzugeben, bei der eine Route noch als
