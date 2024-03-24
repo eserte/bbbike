@@ -7382,7 +7382,7 @@ sub upload_button_html {
     # XXX warum ist dummy notwendig???
     print $q->start_multipart_form(-method => 'post',
 				   -action => "$bbbike_url?dummy=@{[ time ]}"),
-          "Anzuzeigende Route-Datei (GPSman-Tracks, .ovl- oder .bbr-Dateien):<br>\n",
+          "Anzuzeigende Route-Datei (.gpx-, .ovl- oder .bbr-Dateien oder GPSman-Tracks):<br>\n",
 	  $q->filefield(-name => 'routefile'),
 	  "<p>\n",
 	  # hier könnte noch ein maxdist-Feld stehen, um die maximale
