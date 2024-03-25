@@ -4597,15 +4597,6 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
     $indicator_frame = $status_frame->Frame
 	->grid(-row => 0, -column => $gridx++, -sticky => "ew");
     if ($advanced) {
-	$edit_mode_type = $indicator_frame->Label
-	    (-text => '', -relief => 'sunken')
-		->pack(-side => "left");
-	$edit_mode_indicator = $indicator_frame->$Checkbutton
-	    (-text => 'EDIT',
-	     -variable => \$edit_mode_flag,
-	     -command => sub {
-		 set_edit_mode();
-	     })->pack(-side => "left");
 	gui_set_edit_mode($edit_mode);
     }
     $balloon->configure(-statusbar => $status_label);
@@ -13796,9 +13787,23 @@ sub set_coord_system {
     undef %hoehe;
 }
 
+sub maybe_create_edit_mode_widgets {
+    return if $edit_mode_type || $edit_mode_indicator;
+    $edit_mode_type = $indicator_frame->Label
+	(-text => '', -relief => 'sunken')
+	->pack(-side => "left");
+    $edit_mode_indicator = $indicator_frame->$Checkbutton
+	(-text => 'EDIT',
+	 -variable => \$edit_mode_flag,
+	 -command => sub {
+	     set_edit_mode();
+	 })->pack(-side => "left");
+}
+
 # Setzt die GUI für den Edit-Mode
 sub gui_set_edit_mode {
     my($onoff) = @_;
+    maybe_create_edit_mode_widgets();
     if ($onoff) {
 	$edit_mode_indicator->configure(-fg => 'black'); # XXX don't hardcode
 	$edit_mode_type->configure(-text => uc($onoff));
