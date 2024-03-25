@@ -133,7 +133,7 @@ my %versioned_file_to_cat;
     $versioned_file_to_cat{'handicap_l'} = $versioned_file_to_cat{'handicap_s'};
 
     %file_to_cat =
-    ("ampeln"			=> [sub { /^(?:\?|B|B0|F|F0|X|X0|Zbr)(?:::inwork)?$/ }],
+    ("ampeln"			=> [sub { /^(?:\?|B|B0|F|F0|X|X0|Zbr)(?:::inwork)?(?:::alternating)?$/ }],
      "berlin"			=> $filetype_to_cat{"borders"},
      "berlin_ortsteile"		=> $filetype_to_cat{"borders"},
      "brunnels"			=> [qw(Br Tu TuBr)],

@@ -2,37 +2,38 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
 #: note: XXX_* categorization done 2008-01-26
 #:
-Schnellerstr.: Gegenverkehrsregelung	X::inwork 18955,5320
-Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	X::inwork 11740,6338
+Schnellerstr./Rudower Str.: Gegenverkehrsregelung	X::inwork::alternating 18680,5413
+Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	X::inwork::alternating 11740,6338
 Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
 Michaelbrücke	F::inwork 11676,11839
 Michael-Brückner-Str.	F::inwork 17808,5669
-Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
+Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternating 8784,9972
 Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
-Gegenverkehrsregelung	X::inwork 18527,16789
+Fürstenbrunner Weg: Gegenverkehrsregelung	X::inwork::alternating 1610,13380
+Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 	X::inwork 7873,12927
 	X::inwork 16328,7005
-Bellevuestr.: Gegenverkehrsregelung	X::inwork 8328,11617
+Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 B179/Fichtestr.	X::inwork 26138,-12596
-Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork 21984,6317
-Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork 22000,6245
+Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork::alternating 21984,6317
+Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 22000,6245
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
-Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
-Germanenstr.: Gegenverkehrsregelung	X::inwork 8333,19305
+Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9622
+Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
 	X::inwork 9868,19023
 	X::inwork 20891,17572
 	X::inwork 20895,17594
 	X::inwork 20769,17650
 	X::inwork 10096,-2137
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
-Gegenverkehrsregelung	X::inwork 18767,-1343
+Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 	F 11913,13077
 	F 18406,7760
 	F 15445,9090
@@ -3147,8 +3148,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B -59520,59145
 	B -67724,-66871
 	X 40361,104822
-	X 52616,51837
-	X 52771,51844
+	X::alternating 52616,51837
+	X::alternating 52771,51844
 	F 53573,48942
 	X 43669,19252
 	F 43421,19504

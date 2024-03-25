@@ -1414,6 +1414,12 @@ Mark a street with mandatory mask-wearing.
 Mainly used for roads that will either receive a new street name or
 have other remarks regarding signage.
 
+=item alternating
+
+Used for traffic lights which control alternating traffic flow. Very
+often used together with an "inwork" attribute. Currently rendered as
+an up/down arrow.
+
 =back
 
 =head1 CONVENTIONS

@@ -7349,7 +7349,7 @@ EOF
 			        "$abk-" . $rawcategory . "-fg",
 			        $abk."-".$i);
 		    # keine Verwendung von _coord_as_string
-		    $c->createImage
+		    my $image_item = $c->createImage
 		      ($x, $y,
 		       -image => ($rawcategory eq 'B'
 			          ? $andreaskr_photo
@@ -7377,6 +7377,15 @@ EOF
 					    	-image => $use_inwork_photo,
 					    	-tags => [@tags,'attrib-inwork']);
 				}
+			    } elsif ($attrib eq 'alternating') {
+				my($x_left) = $c->bbox($image_item);
+				$c->createText($x_left, $y,
+					       -anchor => 'e',
+					       -text => "\x{21C5}", # up/down arrow
+					       -font => $font{'fix13'},
+					       -tags => [@tags,'attrib-alternating'],
+					       -state => ($scale >= 1.5 ? 'normal' : 'hidden'),
+					      );
 			    }
 			}
 		    }
@@ -16490,6 +16499,13 @@ sub scalecanvas_from_canvas_event {
 sub scale_width {
     my($c, $scale, $old_scale) = @_;
 
+    my $is_changing_scale_boundary = sub {
+	my($scale_boundary) = @_;
+	return 1 if $old_scale < $scale_boundary && $scale >= $scale_boundary;
+	return 1 if $old_scale > $scale_boundary && $scale <= $scale_boundary;
+	return 0;
+    };
+
 # XXX scale obst (mehrere Icon-Größen)
     foreach my $type
 	(qw(s-BAB sBAB-BAB s-HH s-B s-H s-NH s-N s-NN
@@ -16567,13 +16583,16 @@ sub scale_width {
     }
 
     foreach (qw(lsa-X lsa-X0 lsa-B lsa-B0 lsa-F lsa-F0 lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
-	$c->itemconfigure($_ . '-fg && !attrib-inwork', -image => get_symbol_scale($_, $scale));
+	$c->itemconfigure($_ . '-fg && !attrib-inwork && !attrib-alternating', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(u-U0 u-UBau b-S0 b-SBau r-R0 r-RBau r-RP r-RP0 r-Ropeway)) { # overwrite the previous settings of u,b,r
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(attrib-inwork)) {
 	$c->itemconfigure('attrib-inwork', -image => get_symbol_scale($_, $scale));
+    }
+    if ($is_changing_scale_boundary->(1.5)) {
+	$c->itemconfigure('attrib-alternating', -state => ($scale >= 1.5 ? 'normal' : 'hidden'));
     }
     foreach (qw(e comm-tram nl)) {
 	$c->itemconfigure($_ . '-img', -image => get_symbol_scale($_, $scale));
