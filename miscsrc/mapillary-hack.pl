@@ -277,7 +277,7 @@ sub fetch_images {
 	    warn $msg, "\n";
 	} else {
 	    my $client_date = $resp->client_date;
-	    if ($do_cache && defined $client_date && $client_date >= 300) { # more than 5 minutes -> likely to be a cached response
+	    if ($do_cache && defined $client_date && abs($client_date-time) >= 300) { # more than 5 minutes -> likely to be a cached response
 		$reqs_cached++;
 	    } else {
 		$reqs_success++;
