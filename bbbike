@@ -10476,7 +10476,8 @@ sub plotstr {
 
     eval {
 	# XXX Experiment
-	if ($orientation eq 'landscape' &&
+	if ($slowcpu &&
+	    $orientation eq 'landscape' &&
 	    !$edit_mode &&
 #XXX?	    !$edit_normal_mode &&
 	    !$str_name_draw{$abk} &&
@@ -12033,7 +12034,8 @@ sub plot_point {
 	my $bench = Tk::Time_So_Far();
 
 	# XXX Experiment!!!
-	if ($orientation eq 'landscape' &&
+	if ($slowcpu &&
+	    $orientation eq 'landscape' &&
 	    !$edit_mode &&
 #XXX?       !$edit_normal_mode &&
 	    $abk eq 'lsa' &&
