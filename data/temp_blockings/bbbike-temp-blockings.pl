@@ -30380,6 +30380,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1430940.php (Saisonstart am 3. April 2024)
 	q4::temp::play 11175,9882 11197,9894 11411,9810
 EOF
      },
@@ -30579,7 +30580,7 @@ EOF
 #: source_id: 2147346766 (inaktiv)
 #: source_id: bvg2021:395#BVG344827_0
 #: source_id: viz2021:13.620478,52.513101,22.03.2024,22:00 (bis 02.04.2024)
-#: source_id: viz2021:13.62105,52.51373,22.03.2024,22:00 (bis 02.04.2024)
+#: source_id: viz2021:13.62105,52.51373,22.03.2024,22:00 (bis 02.04.2024) (inaktiv)
 #: by: https://www.die-hellersdorfer.berlin/2024/03/16/bahn%C3%BCbergang-in-der-lemkestra%C3%9Fe-f%C3%BCr-zehn-tage-gesperrt/
 #: by: https://alles-mahlsdorf.de/bahnuebergang-lemkestrasse-zehn-tage-lang-gesperrt/
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240321 (auch für Fußgänger und Radfahrer gesperrt)
@@ -38058,7 +38059,8 @@ EOF
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: last_checked: 2024-03-08
+#: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
+#: last_checked: 2024-03-25
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -40935,12 +40937,12 @@ EOF
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
-       until => $isodate2epoch->("2024-03-25 17:00:00"), # 1700064000, # 2023-11-15 17:00
-       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 25.03.2024 17:00',
+       until => $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
+       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 04.05.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GEORGWILHELM-2024
-#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024)
+#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024)
 	q4::inwork 2702,10006 2687,10053
 EOF
      },
@@ -41045,7 +41047,7 @@ EOF
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 #: source_id: viz2021:13.57564,52.5581,16.10.2023,07:00 (bis 14.03.2024) (inaktiv)
 #: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024) (inaktiv)
-#: source_id: viz2021:13.574594,52.555119,14.03.2024,10:33 (bis 12.04.2024)
+#: source_id: viz2021:13.574594,52.555119,14.03.2024,10:33 (bis 12.04.2024) (inaktiv)
 #: osm_watch: way id="9030384" version="39"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -42220,7 +42222,7 @@ EOF
      },
      { from  => 1711234800, # 2024-03-24 00:00
        until => 1712440799, # 2024-04-06 23:59
-       text  => 'Johannisthaler Chaussee: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 6. April 2024',
+       text  => 'Johannisthaler Chaussee und Königsheideweg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 12. April 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
@@ -42234,8 +42236,15 @@ EOF
 #: source_id: viz2021:13.487099,52.451725,25.03.2024,07:00 (bis 12.04.2024)
 #: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
 #: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
-#: next_check: 2024-03-25
-	q3::inwork 15720,4341 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
+#: last_checked: 2024-03-25 vvv
+#: next_check: 2024-04-12 vvv
+# REMOVED (hier keine Sperrung) --- Johannisthaler Chaussee: Gehweg frei, wenig Fußgänger	q3::inwork 15720,4341 15800,4464
+Johannisthaler Chaussee: Gehweg frei, wenig Fußgänger	q3::inwork 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
+Königsheideweg: Fahrbahn noch frei, aber Absperrungen sind schon da, Gehweg recht eng hier	q3::inwork 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
+#: note: eigentlich q2+::inwork
+Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei	q2::inwork 16279,5170 16305,5152 16362,5112 16549,5015 16781,4910 16959,4831 17037,4794 17115,4757
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1696744800, # 2023-10-08 08:00
@@ -42279,12 +42288,12 @@ EOF
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => 1711641600, # 2024-03-28 17:00
-       text  => 'Schillerstr.: zwischen Hauptstr. und Beethovenstr. Bauarbeiten, Richtung Schönhauser Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.03.2024 07:00 bis 28.03.2024 17:00',
+       until => $isodate2epoch->("2024-04-05 17:00:00"), # 1711641600, # 2024-03-28 17:00
+       text  => 'Schillerstr.: zwischen Hauptstr. und Beethovenstr. Bauarbeiten, Richtung Schönhauser Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.03.2024 07:00 bis 05.04.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.369042,52.587855,19.03.2024,07:00 (bis 28.03.2024)
 #: source_id: viz2021:13.36877,52.58797,19.03.2024,07:00 (bis 28.03.2024) (inaktiv)
+#: source_id: viz2021:13.369042,52.587855,19.03.2024,07:00 (bis 28.03.2024) (bis 05.04.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960743611359716
 #: by: https://pbs.twimg.com/media/GJAn5NMXMAAWMIE?format=jpg&name=large
 	q4::inwork; 7832,20219 7933,20171
@@ -42333,11 +42342,11 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
 EOF
      },
      { from  => 1710914400, # 2024-03-20 07:00
-       until => 1715878800, # 2024-05-16 19:00
+       until => 1711402643, # 1715878800, # 2024-05-16 19:00
        text  => 'Am Straßenbahnhof: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.03.2024 07:00 bis 16.05.2024 19:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.43407,52.4526,21.03.2024,07:00 (bis 16.05.2024)
+#: source_id: viz2021:13.43407,52.4526,21.03.2024,07:00 (bis 16.05.2024) (vorzeitig inaktiv)
 	2::inwork 12582,5232 12518,5508 12482,5648
 EOF
      },

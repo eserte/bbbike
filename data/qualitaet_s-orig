@@ -1160,7 +1160,7 @@ Kinzigstr.: Asphalt	Q0 14589,11975 14475,11778
 Waldeyerstr.: Kopfsteinpflaster	Q2 15058,12329 15003,12241
 #: by: Carsten (kcdr): vvv
 #: corrected_by: srt (neue Wurzelhebungen)
-Am Heidekampgraben: asphaltiert, einige Wurzelhebungen	Q0- 15053,7966 15030,7928 15025,7860 14975,7665 14989,7574 15042,7513 15054,7474 15132,7402 15176,7330 15175,7301 15168,7269 15187,7240
+Am Heidekampgraben: asphaltiert, einige Wurzelhebungen	Q0- 15053,7966 15030,7928 15025,7860 14975,7665 14989,7574 15042,7513 15054,7474 15132,7402 15171,7338 15176,7330 15175,7301 15168,7269 15187,7240
 #: confirmed_by: srt
 Am Heidekampgraben: asphaltiert	Q0 15187,7240 15204,7236 15262,7172 15270,7138 15322,7063 15367,7031 15408,6949 15470,6886 15489,6839 15532,6794 15615,6610 15595,6569 15587,6497 15578,6471 15557,6458 15516,6357 15505,6342 15496,6314 15437,6227 15403,6145 15397,6129 15393,6112 15358,6022
 #: by: ^^^
@@ -3746,7 +3746,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2023-11-18 (mapillary)
+#: last_checked: 2024-03-25
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -5842,7 +5842,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2024-03-08
+#: last_checked: 2024-03-25
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -7332,6 +7332,7 @@ Osterwicker Steig: Verbundsteinpflaster	Q1 -1637,22949 -1557,23193
 Mattenbuder Pfad: neues Verbundsteinpflaster	Q1+ -1506,22923 -1637,22949 -1755,22975 -1870,22999 -1980,23033
 #: XXX wird die Fahrbahn neu gemacht? siehe Finanzplan Berlin 2019-2023, S. 273 im pdf
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1429586.php (Neubau Februar 2024 bis Januar 2025; Radverkehr ist während der Bauarbeiten gewährleistet)
+#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/teil-des-mattenbuders-pfad-wird-bis-anfang-2025-neu-gebaut_a410945
 #: osm_watch: way id="231263429" version="9"
 #: last_checked: 2022-06-12
 # REMOVED --- #: check_frequency: 180d
@@ -13494,6 +13495,7 @@ Mandrellaplatz: Kopfsteinpflaster	Q2 22464,5751 22482,5706
 # 
 (KGA Grüne Weiden): glattes Pflaster und Rasengittersteine	Q1 15456,7516 15268,7344 15214,7307
 (KGA Grüne Weiden - Heidekampgraben): unbefestigt	Q2- 15214,7307 15175,7301
+(KGA Grüne Weiden - Heidekampgraben): unbefestigt	Q2- 15214,7307 15190,7344 15171,7338
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
