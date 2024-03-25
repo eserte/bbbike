@@ -10481,6 +10481,8 @@ sub plotstr {
     }
     my $conv = $str->get_conversion(%conv_args);
 
+    my $bench = Tk::Time_So_Far();
+
     eval {
 	# XXX Experiment
 	if ($orientation eq 'landscape' &&
@@ -10543,7 +10545,6 @@ sub plotstr {
 	my $draw_sub = eval $plotstr_draw_sub;
 	string_eval_die($@, $plotstr_draw_sub) if $@;
 
-	my $bench = Tk::Time_So_Far();
 	while (1) {
 	    my $ret = $str->next;
 	    last if !@{$ret->[Strassen::COORDS]};
@@ -10572,10 +10573,11 @@ sub plotstr {
 # XXX Yes: If a bbd file contains a half-valid line (with name and cat, but without coords)
 if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->pos . " != " . scalar(@{$str->{Data}}) . "!", "dialog", "err") }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+      PLOTSTR_CONT:
 	warn sprintf "Plotting streets '$abk' took %.3fs\n", Tk::Time_So_Far()-$bench
 	    if $verbose;
 
-      PLOTSTR_CONT:
 	$c->itemconfigure('pp',
 			  -capstyle => $capstyle_round,
 			  -width => 5,
@@ -12037,6 +12039,8 @@ sub plot_point {
 	}
 	my $conv = $bhf->get_conversion(%conv_args);
 
+	my $bench = Tk::Time_So_Far();
+
 	# XXX Experiment!!!
 	if ($orientation eq 'landscape' &&
 	    !$edit_mode &&
@@ -12099,6 +12103,8 @@ sub plot_point {
 	}
 	config_symbol($c, $abk);
       PLOTPOINT_CONT:
+	warn sprintf "Plotting points '$abk' took %.3fs\n", Tk::Time_So_Far()-$bench
+	    if $verbose;
 
 	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate})) { # XXX? and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
