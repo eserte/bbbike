@@ -188,7 +188,7 @@ void get_restrict_ignore_array(SV* ref, char*** array, char** array_strings) {
   /* get length for malloc'ed memory */
   for (i=0; i<=av_len(ref_a); i++) {
     SV** tmp = av_fetch(ref_a, i, 1);
-    int thislen;
+    STRLEN thislen;
     SvPV(*tmp, thislen);
     len += thislen + 1;
   }
@@ -200,7 +200,7 @@ void get_restrict_ignore_array(SV* ref, char*** array, char** array_strings) {
   for (i=0; i<=av_len(ref_a); i++) {
     SV** tmp = av_fetch(ref_a, i, 1);
     char *s;
-    int thislen;
+    STRLEN thislen;
     s = SvPV(*tmp, thislen);
     strncpy(p, s, thislen);
     *(p+thislen) = 0;
@@ -641,7 +641,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	PerlIO *fp = NULL;
 	SV *linebuf;
 	char *buf;
-	char abkcat[24];
+	SV *abkcat;
 	AV *coords;
 	AV *tags, *outline_tags;
 	int count;
@@ -733,9 +733,9 @@ fast_plot_str(canvas, abk, fileref, ...)
 	tags = newAV();
 	av_push(tags, newSVpv(abk, 0));
 	outline_tags = newAV();
-	strcpy(abkcat, abk);
-	strcat(abkcat, "-out");
-	av_push(outline_tags, newSVpv(abkcat, 0));
+	abkcat = newSVpv(abk, 0);
+	sv_catpv(abkcat, "-out");
+	av_push(outline_tags, abkcat);
 
 	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
 	  fileref_array = (AV*)SvRV(fileref);
@@ -954,11 +954,11 @@ fast_plot_str(canvas, abk, fileref, ...)
 		    }
 
 		    if (outline) {
-		      strcpy(abkcat, abk);
-		      strcat(abkcat, "-");
-		      strcat(abkcat, cat);
-		      strcat(abkcat, "-out");
-		      av_store(outline_tags, 1, newSVpv(abkcat, 0));
+		      abkcat = newSVpv(abk, 0);
+		      sv_catpv(abkcat, "-");
+		      sv_catpv(abkcat, cat);
+		      sv_catpv(abkcat, "-out");
+		      av_store(outline_tags, 1, abkcat);
 
 		      PUSHMARK(sp);
 		      XPUSHs(canvas);
@@ -985,13 +985,19 @@ fast_plot_str(canvas, abk, fileref, ...)
 			warn("'%s' does not look like an utf-8 string", SvPV(name, PL_na));
 		      }
 		    }
+
+		    /* tag 1 (name) */
 		    av_store(tags, 1, name);
-		    strcpy(abkcat, abk);
-		    strcat(abkcat, "-");
-		    strcat(abkcat, cat);
-		    av_store(tags, 2, newSVpv(abkcat, 0));
-		    sprintf(abkcat, "%s-%d", abk, count);
-		    av_store(tags, 3, newSVpv(abkcat, 0));
+
+		    /* tag 2 (abk-cat) */
+		    abkcat = newSVpv(abk, 0);
+		    sv_catpv(abkcat, "-");
+		    sv_catpv(abkcat, cat);
+		    av_store(tags, 2, abkcat);
+
+		    /* tag 3 (abk-count) */
+		    abkcat = newSVpvf("%s-%d", abk, count);
+		    av_store(tags, 3, abkcat);
 
 		    PUSHMARK(sp);
 		    XPUSHs(canvas);
@@ -1126,7 +1132,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 	PerlIO *fp = NULL;
 	SV *linebuf;
 	char *buf;
-	char abkcat[24];
+	SV *abkcat;
 	struct {
 	  int x, y;
 	} point;
@@ -1147,9 +1153,9 @@ fast_plot_point(canvas, abk, fileref, progress)
 
 	linebuf = sv_newmortal();
 	tags = newAV();
-	strcpy(abkcat, abk);
-	strcat(abkcat, "-fg");
-	av_push(tags, newSVpv(abkcat, 0));
+	abkcat = newSVpv(abk, 0);
+	sv_catpv(abkcat, "-fg");
+	av_push(tags, abkcat);
 #ifdef LOAD_AMPEL_IMAGE
 	LOAD_AMPEL_IMAGE("lsa-B", andreaskreuz);
 	LOAD_AMPEL_IMAGE("lsa-X", ampel);
@@ -1235,8 +1241,11 @@ fast_plot_point(canvas, abk, fileref, progress)
 #endif
 		  }
 
-		  sprintf(abkcat, "%d,%d", point.x, point.y);
-		  av_store(tags, 1, newSVpv(abkcat, 0));
+		  /* tag 1 (coordinates) */
+		  abkcat = newSVpvf("%d,%d", point.x, point.y);
+		  av_store(tags, 1, abkcat);
+
+		  /* tag 2 (pointname) */
 		  pointnameSV = newSVpv(pointname, 0);
 		  if (do_utf8_decoding) {
 		    if (is_utf8_string(buf, 0)) {
@@ -1246,13 +1255,17 @@ fast_plot_point(canvas, abk, fileref, progress)
 		    }
 		  }
 		  av_store(tags, 2, pointnameSV);
-		  strcpy(abkcat, abk);
-		  strcat(abkcat, "-");
-		  strcat(abkcat, cat);
-		  strcat(abkcat, "-fg");
-		  av_store(tags, 3, newSVpv(abkcat, 0));
-		  sprintf(abkcat, "%s-%d", abk, count);
-		  av_store(tags, 4, newSVpv(abkcat, 0));
+
+		  /* tag 3 (abk-cat) */
+		  abkcat = newSVpv(abk, 0);
+		  sv_catpv(abkcat, "-");
+		  sv_catpv(abkcat, cat);
+		  sv_catpv(abkcat, "-fg");
+		  av_store(tags, 3, abkcat);
+
+		  /* tag 4 (abk-count) */
+		  abkcat = newSVpvf("%s-%d", abk, count);
+		  av_store(tags, 4, abkcat);
 
 		  PUSHMARK(sp);
 		  XPUSHs(canvas);
