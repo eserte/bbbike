@@ -1217,25 +1217,35 @@ fast_plot_point(canvas, abk, fileref, progress)
 	    if (buf[0] == '#') {
 	      check_utf8_encoding(buf, &do_utf8_decoding);
 	    } else {
-	      char* p = strchr(buf, '\t');
-	      if (p) {
+	      char* p_tab = strchr(buf, '\t');
+	      char* p_space;
+	      char* p_colon;
+	      if (p_tab) {
 		SV* pointnameSV;
 		char* pointname = buf;
 		char* cat;
-		*p = 0;
-		cat = p+1;
+		*p_tab = 0;
+		cat = p_tab+1;
 		if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */ && *cat != 'F'
 		) *cat = 'X';
-		p = strchr(p+1, ' ');
-		if (p) {
+		p_colon = strchr(p_tab+1, ':');
+		p_space = strchr(p_tab+1, ' ');
+		if (p_space) {
+		  char *p_coord;
 		  char *new_p;
-		  *p = 0;
-		  if (!*(++p)) break;
-		  new_p = strchr(p, ',');
+		  if (p_colon && p_colon < p_space) {
+		    /* category with attribute detected --- we are only interested in the non-attribute part */
+		    *p_colon = 0;
+		  } else {
+		    *p_space = 0;
+		  }
+		  p_coord = p_space + 1;
+		  if (!*p_coord) break;
+		  new_p = strchr(p_coord, ',');
 		  if (new_p) {
-		    point.x = atoi(p);
-		    p = new_p + 1;
-		    point.y = atoi(p);
+		    point.x = atoi(p_coord);
+		    p_coord = new_p + 1;
+		    point.y = atoi(p_coord);
 #ifdef MYDEBUG
 		    fprintf(stderr, "%d: %d/%d\n", count, point.x, point.y);
 #endif
