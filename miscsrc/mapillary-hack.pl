@@ -27,6 +27,7 @@ use Time::Local;
 use YAML::XS qw(LoadFile);
 
 my $debug = 1;
+my $statistics = 0;
 
 my $conf_file = "$ENV{HOME}/.mapillary";
 my $conf = LoadFile $conf_file;
@@ -60,6 +61,7 @@ GetOptions(
 	   "end-date=s"   => \$end_date,
 	   "bbox=s"       => \$bbox,
 	   "debug!"       => \$debug,
+	   "stat|statistics!" => \$statistics,
 	   "cache!"       => \$do_cache,
 	  )
     or die "usage?";
@@ -163,6 +165,10 @@ if ($do_cache) {
     $ua = LWP::UserAgent->new(keep_alive => 1);
 }
 
+my $reqs_success = 0;
+my $reqs_cached = 0;
+my $reqs_error   = 0;
+
 my @overflows;
 my $data = fetch_images($start_captured_at, $end_captured_at);
 @$data = sort {
@@ -236,6 +242,17 @@ if ($do_open) {
     system 'bbbikeclient', '-strlist', $output_filename;
 }
 
+END {
+    if ($statistics) {
+	print STDERR <<EOF;
+Requests:
+  successful: $reqs_success
+  from cache: $reqs_cached
+  with error: $reqs_error
+EOF
+    }
+}
+
 sub fetch_images {
     my($start_captured_at, $end_captured_at) = @_;
     my $start_captured_at_iso = Time::Moment->from_epoch($start_captured_at)->strftime("%FT%TZ");
@@ -247,6 +264,7 @@ sub fetch_images {
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url, "Authorization" => "OAuth $client_token");
 	if (!$resp->is_success) {
+	    $reqs_error++;
 	    my $error_data = eval { decode_json $resp->decoded_content };
 	    my $msg = "Try $try/$max_try:\n";
 	    $msg .= "Request: " . $resp->request->dump;
@@ -258,6 +276,12 @@ sub fetch_images {
 	    }
 	    warn $msg, "\n";
 	} else {
+	    my $client_date = $resp->client_date;
+	    if ($do_cache && defined $client_date && $client_date >= 300) { # more than 5 minutes -> likely to be a cached response
+		$reqs_cached++;
+	    } else {
+		$reqs_success++;
+	    }
 	    my $content = $resp->decoded_content;
 	    $data = eval { decode_json $content };
 	    if (!$data) {
