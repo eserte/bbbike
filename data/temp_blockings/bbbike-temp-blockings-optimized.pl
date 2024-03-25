@@ -4271,7 +4271,7 @@ Fuﬂg‰ngerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hˆnower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch: note 3658253 6
-#: last_checked: 2024-03-09
+#: last_checked: 2024-03-20 (kartaview)
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-01-09
@@ -5770,7 +5770,44 @@ Maxim-Gorki-Str. (Kˆnigs Wusterhausen): Einbahnstraﬂenregelung wegen des SEVs	1s
          'until' => 1748793600
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
+#: by: https://viz.berlin.de/2023/05/firmenlauf/
+#: by: https://berliner-firmenlauf.de/
+	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
+	3 7822,12201 7816,12150 7823,12120
+	3 7429,12070 7383,12095 7031,12320
+	3 8049,12140 8055,12186 8119,12414
+	3 8327,12174 8344,12221 8391,12389
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12187 8538,12245 8522,12239
+	3 8119,12414 8055,12186 8049,12140
+	3 8391,12389 8344,12221 8327,12174
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1713758400,
+         'id' => 3576,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Straﬂe des 17. Juni und Ebertstr.: Vorbereitungen f¸r den Berliner Firmenlauf, Straﬂen gesperrt, voraussichtlich vom 22.04.2024 bis 25.04.2024 06:00 ',
+         'type' => 'gesperrt',
+         'until' => 1714017600
+       },
        undef,
        undef,
        {
@@ -6555,7 +6592,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
 #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraﬂenregelung?
-#: last_checked: 2024-02-17
+#: last_checked: 2024-03-20 (kartaview)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 	q4::inwork; 4032,12167 4101,12356
