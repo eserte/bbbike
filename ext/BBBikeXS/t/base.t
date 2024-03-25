@@ -9,8 +9,9 @@
 use strict;
 use vars qw($x_delta $y_delta);
 
+use File::Temp qw(tempdir);
 use Test::More;
-my $tk_tests = 30;
+my $tk_tests = 31;
 plan tests => 10 + $tk_tests;
 
 BEGIN {
@@ -48,6 +49,8 @@ use Benchmark;
 
 use BBBikeUtil qw(bbbike_root);
 use BBBikeCanvasUtil qw(draw_bridge draw_tunnel_entrance);
+
+my $tmpdatadir = tempdir("bbbikexs-base-t-XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
 
 my $datadir = bbbike_root . "/data";
 my $imgdir = bbbike_root . "/images";
@@ -203,6 +206,22 @@ SKIP: {
 	my $progress = MyProgress->new;
 	BBBike::fast_plot_str($c, "b", $s, $progress, undef, $category_width);
 	# no: less than 150 items in sbahn, Update(Float) is never called: $progress->update_float_expected;
+    }
+
+    # check one-point street records
+    {
+	my $file = "$tmpdatadir/one-point-records.bbd";
+	open my $ofh, '>>', $file or die $!;
+	print $ofh <<'EOF';
+test place	Pl 8000,8000
+EOF
+	close $ofh or die $!;
+	my $s = Strassen->new($file);
+	my $progress = MyProgress->new;
+	eval {
+	    BBBike::fast_plot_str($c, "s", $s, $progress, undef, {});
+	};
+	is $@, '', 'fast_plot_str should not fail with one point records';
     }
 
     $top->after(5000, sub { $top->destroy;});

@@ -893,14 +893,25 @@ fast_plot_str(canvas, abk, fileref, ...)
 		  while(*p) {
 		    char *new_p = strchr(p, ',');
 		    if (new_p) {
-		      av_push(coords, TRANSPOSE_X_SCALAR(atoi(p)));
+		      SV *tx, *ty;
+		      tx = TRANSPOSE_X_SCALAR(atoi(p));
+		      av_push(coords, tx);
 		      p = new_p + 1;
 		      new_p = strchr(p, ' ');
-		      av_push(coords, TRANSPOSE_Y_SCALAR(atoi(p)));
+		      ty = TRANSPOSE_Y_SCALAR(atoi(p));
+		      av_push(coords, ty);
 		      if (new_p)
 			p = new_p + 1;
-		      else
+		      else {
+			if (av_len(coords) == 1) {
+			  /* duplicate the coordinate, so createLine does not fail with
+			     "wrong # coordinates: expected at least 4, got 2"
+			   */
+			  av_push(coords, newSVsv(tx));
+			  av_push(coords, newSVsv(ty));
+			}
 			break;
+		      }
 		    }
 		  }
 
