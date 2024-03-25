@@ -912,6 +912,8 @@ fast_plot_str(canvas, abk, fileref, ...)
 			}
 			break;
 		      }
+		    } else {
+		      break;
 		    }
 		  }
 

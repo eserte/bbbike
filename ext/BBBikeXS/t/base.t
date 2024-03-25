@@ -208,12 +208,15 @@ SKIP: {
 	# no: less than 150 items in sbahn, Update(Float) is never called: $progress->update_float_expected;
     }
 
-    # check one-point street records
+    # check possibly problematic data:
+    # * one-point street records
+    # * trailing spaces
     {
 	my $file = "$tmpdatadir/one-point-records.bbd";
 	open my $ofh, '>>', $file or die $!;
 	print $ofh <<'EOF';
 test place	Pl 8000,8000
+trailing space	H 8050,8050 8150,8050 
 EOF
 	close $ofh or die $!;
 	my $s = Strassen->new($file);
@@ -221,7 +224,7 @@ EOF
 	eval {
 	    BBBike::fast_plot_str($c, "s", $s, $progress, undef, {});
 	};
-	is $@, '', 'fast_plot_str should not fail with one point records';
+	is $@, '', 'fast_plot_str should not fail with one point records or hang with trailing spaces';
     }
 
     $top->after(5000, sub { $top->destroy;});
