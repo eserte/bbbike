@@ -164,7 +164,7 @@ sub gui {
 	$add_apt_args .= " --install-suggests";
     }
 
-    my @apikeyfiles = ('.bingapikey', '.openweathermap_appid', '.opencageapikey');
+    my @apikeyfiles = ('.bingapikey', '.opencageapikey');
 
     $doit->make_path("$ENV{HOME}/.docker-bbbike");
 

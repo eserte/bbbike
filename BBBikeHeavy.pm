@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2016,2020,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2016,2020,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = '1.43';
+$VERSION = '1.44';
 
 package main;
 use strict;
@@ -214,7 +214,10 @@ sub BBBikeHeavy::load_plugin {
 sub BBBikeHeavy::is_obsolete_plugin {
     my $plugin_spec = shift;
     my($file) = $plugin_spec =~ /^(.*)(?:=.*|)$/;
-    if ($file =~ m{\bAltBerlin\.pm$}) {
+    if ($file =~ m{\b(
+		       AltBerlin\.pm
+		   |   OpenWeatherMap\.pm
+		   )$}x) {
 	1;
     } else {
 	0;
