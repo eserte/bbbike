@@ -295,8 +295,8 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8234,19936
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8311,19458
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558
-#: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024)
-#: next_check: 2024-03-28
+#: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024)
+#: next_check: 2024-05-24
 Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
 #: source_id ^^^
 #: source_id ^^^
@@ -1482,7 +1482,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12938,1348
 	X 12911,1815
 	X 12738,2162
-	B 9164,552
+# REMOVED (wird durch eine Überführung ersetzt) --- #: next_check_id: BUCKOWERCHAUSSEE-2022 ---	B 9164,552
 	X 5328,13019
 	X 5166,13087
 	X 5248,13434
@@ -2652,13 +2652,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-03-08
+#: last_checked: 2024-03-26
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2024-03-25
+#: last_checked: 2024-03-26
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

@@ -2582,7 +2582,7 @@ Lothar-Bucher-Str.: enge Straße	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,
 Gustav-Zahnke-Str.: enge Straße	q1 14439,13600 14417,13517 14337,13541
 Propst-Süßmilch-Weg: Fußgängerzone	q2 856,3188 813,3202 797,3216 727,3231 649,3221
 Zangengasse: parkende Fahrzeuge	q0 5959,20524 5714,20784 5641,20857 5609,20968
-Lintruper Str.: teilweise wegen parkender Autos eng	q1 10324,925 10380,757 10423,636 10506,405 10550,282 10613,108 10665,-200 10729,-386
+Lintruper Str.: teilweise wegen parkender Autos eng	q0 10324,925 10380,757 10423,636 10506,405 10550,282 10613,108 10665,-200 10729,-386
 Spandauer Str.: enge Straße	q1 -6442,14186 -6261,14213
 (Parkplatz Kaufland - Am Steinberg): Fußgänger	q1 12981,17557 12998,17480
 Achenbachstr.: nicht so breite Straße	q1 -3360,14974 -3322,14814
@@ -2870,7 +2870,8 @@ Seefelder Str. (Fußweg): Fußgänger	q1 17325,16189 17362,16189
 Seefelder Str. (Fußweg): Fußgänger, Bordstein	q3 17362,16189 17383,16197
 (Malteserstr. - Hanielweg): Fußgänger	q1 7451,1818 7534,1818 7562,1796
 (An der Kol. Königsgraben, nördl. Parkweg): Fußgänger	q1 7189,1942 7390,2021
-(An der Kol. Königsgraben, südl. Parkweg): Fußgänger	q1 7415,1846 7275,1843 7226,1842 7119,1829
+(An der Kol. Königsgraben, südl. Parkweg): Fußgänger	q3 7415,1846 7275,1843 7226,1842
+(An der Kol. Königsgraben, südl. Parkweg): Fußgänger	q1 7226,1842 7119,1829
 (Kol. Königsgraben, Privatstr.): Fußgänger	q1 7409,1953 7210,1888 7189,1942
 (Kol. Königsgraben, Nord-Süd-Verbindung): Fußgänger	q1 7226,1842 7210,1888
 (Verbindung zum Orlamünder Weg): Fußgänger	q1 7274,1810 7275,1843
@@ -3415,6 +3416,7 @@ Wadzeckstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11315
 Cantianstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 10855,15283 10887,15287
 (Suermondtstr. - Konrad-Wolf-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16842,15932 16799,15974 16719,16005 16753,16111
 Ferdinandstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 5398,2422 5417,2383
+Kranoldplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 5417,2383 5317,2345
 An den Grachten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 Am Groen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
 Am Groen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22146,10995 22137,11033 22131,11084

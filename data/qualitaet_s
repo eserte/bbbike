@@ -6311,9 +6311,9 @@ Seydlitzstr.: Kleinsteinpflaster	Q1 6511,2284 6567,2194 6597,2157
 Seydlitzstr.: Betonpflaster	Q0 6511,2284 6454,2366
 Lorenzstr.: Asphalt	Q0 5539,2497 5660,2219 5720,2081 5781,1936 5802,1851
 Oberhofer Weg: Verbundsteinpflaster	Q1 5706,1393 5661,1375
-Pößnecker Str.: Verbundsteinpflaster	Q1 5934,1310 5863,1453
-Pößnecker Str.: Asphalt	Q0 5863,1453 5777,1433 5706,1393
-Wallendorfer Weg: welliger Asphalt	Q1 5777,1433 5825,1322 5848,1286 5887,1270
+Pößnecker Str.: Verbundsteinpflaster	Q1 5934,1310 5860,1463
+Pößnecker Str.: Asphalt	Q0 5860,1463 5778,1429 5706,1393
+Wallendorfer Weg: welliger Asphalt	Q1 5778,1429 5825,1322 5848,1286 5887,1270
 Verlängerte Georgenstr.: Asphalt	Q0 5934,1310 5905,1294 5887,1270 5867,1199
 (Mariannenstr. - Verlängerte Georgenstr.): Verbundsteinpflaster	Q1 6029,1357 5934,1310
 Fügener Weg: Beton	Q0 6294,1078 6265,906 6259,835
@@ -6388,6 +6388,7 @@ Großbeerenstr. (Lichterfelde): Beton	Q0 4939,1148 5050,1133
 Großbeerenstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1 5050,1133 5162,1110
 Heiterwanger Weg: Asphalt	Q0 5889,618 5985,630 6089,643 6186,652 6280,662 6383,667
 (Zufahrt Bauhaus): Asphalt	Q0 8382,347 8372,175
+(Zufahrt): Asphalt	Q0 8075,499 8055,343
 Glaserweg: glattes Pflaster	Q1 10187,872 10237,749
 Ostheimer Str.: glattes Pflaster	Q1 10673,1072 10743,908
 Wingerter Str.: Asphalt	Q0 10829,1135 10845,1026 10851,929
@@ -8908,7 +8909,7 @@ Gäßnerweg: Asphalt	Q0 8551,6552 8553,6665
 (Upstallweg - Richterstr.): Asphalt	Q0 9264,3874 9244,3872 9226,3870 9217,3906
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
-Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2 6534,1702 6673,1748 6844,1813
+Waltershauser Str.: Mosaikpflaster, teilweise Wurzelhebungen	Q2 6534,1702 6673,1748 6844,1813
 (Gallwitzallee - Geraerstr./Trippsteinstr.): Asphalt	Q0 6759,2137 6733,2111 6698,2033 6534,1702 6526,1688
 (Seydlitzstr., Verlängerung): wassergebundene Decke	Q1 6597,2157 6698,2033
 (Hospitalgrabenpark): Parkweg, teilweise grober Schotter	Q2 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
@@ -13679,7 +13680,8 @@ Spandauer Str.: Asphalt	Q0 -6915,14090 -6945,14085 -7280,14029 -7457,13957
 Swakopmunder Str.: guter Asphalt	Q1 5479,17108 5444,17093 5423,17076 5376,17017 5315,16936 5235,16835 5223,16818 5223,16783 5228,16738
 Soorstr.: Kopfsteinpflaster	Q2 1917,12367 1792,11889
 Soorstr.: Asphalt	Q0 1792,11889 1779,11835 1747,11719
-Lintruper Str.: Asphalt mit einigen leichten Schäden	Q0 10324,925 10380,757 10423,636 10506,405 10550,282 10613,108
+Lintruper Str.: Asphalt	Q0 10324,925 10380,757 10423,636 10506,405
+Lintruper Str.: Asphalt mit einigen leichten Schäden	Q0 10506,405 10550,282 10613,108
 Lintruper Str.: mäßiges Blaubasaltpflaster	Q2 10613,108 10665,-200
 Lintruper Str.: Kopfsteinpflaster	Q2 10665,-200 10729,-386
 Eisenhammerweg: Kopfsteinpflaster	Q2 1640,19645 1606,19775
@@ -13971,7 +13973,7 @@ Okarinastr.: Beton	Q0 11569,20845 11657,20915
 Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8767,5571 8786,5720
 Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8786,5720 8801,5844
 Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8801,5844 8816,5980 8830,6145
-Friedrich-Franz-Str.: Kopfsteinpflaster	Q2 8830,6145 8846,6303
+Friedrich-Franz-Str.: schlechtes Kopfsteinpflaster	Q3 8830,6145 8846,6303
 Lowise-Reuter-Ring: guter Asphalt	Q0 13675,4855 13639,4850 13574,4862 13540,4861 13503,4846 13476,4812 13468,4766 13482,4718 13511,4695 13560,4681 13589,4681 13680,4715
 Idastr.: Kopfsteinpflaster, Fahrbahn in der Mitte asphaltiert	Q1 10697,19952 10829,19676
 Pfahlerstr.: guter Asphalt	Q0 5541,18435 5423,18438 5301,18447

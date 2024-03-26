@@ -3780,7 +3780,10 @@ Marienfelder Allee	H 7668,471 7602,305 7501,83 7427,-69 7404,-110 7397,-123 7199
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/weg-wurde-gepflastert-barrierefrei-und-beleuchtet_a383131 (Name)
 #: alias: Marienparkweg
 (Marienfelder Allee - Hildburghauser Str., Grünzug)	NN 7234,237 7216,250 7135,350 7107,397 7083,415 7063,444 7055,498 7021,557 7016,655 7019,694 7023,772 7056,835 7058,844
+#: osm.highway: service
 (Zufahrt Bauhaus)	N 8382,347 8372,175
+#: osm.highway: service
+(Zufahrt)	N 8075,499 8055,343
 Klausenburger Pfad	N 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 Bistritzer Pfad	N 7087,-396 7110,-363 7146,-307
 Hermannstadter Weg	N 7005,-354 7030,-313 7090,-225 7143,-136 7201,-39
@@ -13667,7 +13670,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
 #: XXX bauzeitliche Umleitung, vermutlich bis 2025 vvv
-#: last_checked: 2023-07-03 (baustellen-doku) vvv
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-12-31 vvv
 #: note: hier auch parallel eine Servicestraße, die zumindest Richtung Süden legal befahren werden kann
@@ -20125,8 +20128,8 @@ Gräfentaler Str.	N 6318,1484 6231,1442 6189,1423
 Georgenstr. (Lichterfelde)	N 6130,1399 6029,1357
 Verlängerte Georgenstr.	N 5934,1310 5905,1294 5887,1270 5867,1199
 (Mariannenstr. - Verlängerte Georgenstr.)	NN 6029,1357 5934,1310
-Wallendorfer Weg	N 5777,1433 5825,1322 5848,1286 5887,1270
-Pößnecker Str.	N 5934,1310 5863,1453 5777,1433 5706,1393
+Wallendorfer Weg	N 5778,1429 5825,1322 5848,1286 5887,1270
+Pößnecker Str.	N 5934,1310 5860,1463 5778,1429 5706,1393
 Arnstädter Str.	N 6553,1409 6530,1210 6512,1086 6526,1083 6515,1010
 Wernshauser Str.	N 6621,1407 6597,1201 6584,1074
 Altenburger Str.	N 6715,1318 6681,1300 6668,1192 6651,1063

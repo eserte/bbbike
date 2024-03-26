@@ -32499,21 +32499,21 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-23 00:00:00"), # 1606024800, # 2020-11-22 07:00
-       until => $isodate2epoch->("2024-03-29 17:00:00"), # $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
+       until => $isodate2epoch->("2024-04-19 17:00:00"), # $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
        #text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
        #text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn Richtung Norden gesperrt, Richtung Süden sind Einschränkungen möglich, vom 23.02.2024 10:30 bis 22.03.2024 17:00',
-       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vom 23.02.2024 10:30 bis 29.03.2024 17:00',
+       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vom 23.02.2024 10:30 bis 19.04.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147346633 (inaktiv)
-#: source_id: viz2021:13.402816,52.524238,23.02.2024,10:30 (bis 1.3.2024) (inaktiv) (bis 22.3.2024) (bis 29.3.2024)
+#: source_id: viz2021:13.402816,52.524238,23.02.2024,10:30 (bis 1.3.2024) (inaktiv) (bis 22.3.2024) (bis 29.3.2024) (bis 19.4.2024)
 #: source_id: bvg2021:n42#BVG343446_0
 #: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266 (2020)
 #: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900 (2020)
 #: also_indoor: traffic (G,B,W)
 #: note: laut rbb bis 22.03.2024, mittlerweile entfernt, und wieder da, mittlerweile auch bis 29.03.2024
 #: last_checked: 2024-03-22 (mapillary) vvv
-#: next_check: 2024-03-29 vvv
+#: next_check: 2024-04-19 vvv
 	q4::inwork; 10264,13097 10313,13227
 	q4::inwork; 10313,13227 10264,13097
 #: next_check ^^^
@@ -34839,14 +34839,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-11-13 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2024-03-29 23:59:59"), # 1676574342, # undef, # XXX
+       dont_check_date => 1, until => undef, # $isodate2epoch->("2024-03-29 23:59:59"), # 1676574342, # undef, # XXX
        #text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2023)',
-       text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis 29.03.2024',
+       text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 29.03.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv)
 #: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024)
-#: also_indoor: traffic (B,G[falsch])
+#: also_indoor: traffic (B,G,W)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
@@ -34855,9 +34855,12 @@ EOF
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
-#: last_checked: 2024-03-03 (mapillary)
-#: next_check: 2024-03-29
+#: last_checked: 2024-03-26 vvv
+#: next_check: 2024-03-29 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
+Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -35178,7 +35181,8 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: last_checked: 2024-03-19 (mapillary) vvv
+#: osm_watch: note 3065138 9
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 Niemetzstr.	q4::inwork 13797,7267 13762,7321
@@ -37610,7 +37614,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-02-17
+#: last_checked: 2024-03-26
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 EOF
@@ -38426,8 +38430,8 @@ EOF
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
-#: osm_watch: way id="151353924" version="13"
-#: last_checked: 2024-02-07 vvv
+#: osm_watch: way id="151353924" version="14"
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
@@ -38807,6 +38811,7 @@ EOF
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024)
+#: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
@@ -38815,7 +38820,7 @@ EOF
 #: last_checked: 2024-03-14 (indoor)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 30d
-#: next_check: 2024-04-01
+#: next_check: 2024-05-24
 	q4::inwork 3869,10760 4267,10724 4393,10712
 EOF
      },
@@ -39655,15 +39660,15 @@ EOF
 EOF
      },
      { from  => 1687406400, # 2023-06-22 06:00
-       dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
-       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Anfang April 2024, vermutlich noch länger',
+       until => $isodate2epoch->("2024-06-30 17:00:00"), # dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
+       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Juni 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
 #: osm_watch: note 4161500 1
 #: last_checked: 2024-03-24
-#: next_check: 2024-04-02
+#: next_check: 2024-06-30
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -40791,8 +40796,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: osm_watch: way id="23121446" version="31"
-#: last_checked: 2024-03-21 vvv
+#: osm_watch: way id="23121446" version="32"
+#: last_checked: 2024-03-25 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
@@ -41990,12 +41995,15 @@ EOF
      },
      { from  => 1681974000, # 2023-04-20 09:00
        until => $isodate2epoch->("2024-05-27 17:00:00"), # 1709913600, # 2024-03-08 17:00
-       text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.05.2024 17:00',
+       #text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.03.2024 17:00',
+       text  => 'Marshallstr.: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, bis 27.05.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024)
+#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024) (bis 27.03.2024)
+#: source_id: viz2021:13.270887,52.453816,27.03.2024,10:00 (bis 27.05.2024)
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
-	q4::inwork 1139,5308 1212,5353
+# REMOVED (in der neuen Verkehrsmeldung entfernt) --- Am Waldfriedhof: Anbindung am Hüttenweg gesperrt	q4::inwork 1139,5308 1212,5353
+Marshallstr.: Anbindung am Hüttenweg gesperrt	q4::inwork 1385,5214 1319,5100
 EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
@@ -42232,8 +42240,10 @@ EOF
 #: by: https://pbs.twimg.com/media/GJSJkLgWUAEe13Y?format=jpg&name=large
 #: source_id: bvg2021:265#BVG344869_0
 #: source_id: bvg2021:x11#BVG344866_0
-#: source_id: viz2021:13.485035,52.448445,25.03.2024,07:00 (bis 12.04.2024)
-#: source_id: viz2021:13.487099,52.451725,25.03.2024,07:00 (bis 12.04.2024)
+#: source_id: viz2021:13.485035,52.448445,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
+#: source_id: viz2021:13.487099,52.451725,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
+#: source_id: viz2021:13.483847,52.447373,25.03.2024,07:00 (bis 12.04.2024)
+#: source_id: viz2021:13.48815,52.451415,25.03.2024,07:00 (bis 12.04.2024)
 #: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
 #: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
 #: last_checked: 2024-03-25 vvv
@@ -42357,6 +42367,16 @@ EOF
        data  => <<EOF,
 #: source_id: 247000128 (bis 04.04.2024)
 	2::inwork -94579,71995 -94274,71791 -93406,71227
+EOF
+     },
+     { from  => 1711461118, # 2024-03-26 14:51
+       until => $isodate2epoch->("2024-05-03 16:00:00"),
+       text  => 'Zerbster Str./Georgenstr.: Arbeiten im Kreuzungsbereich, Fahrbahn gesperrt, Umwege, voraussichtlich bis zum 03.05.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Ende laut Halteverbotsschilder
+	q4::inwork 6010,1657 6130,1399 6278,1109
+	q4::inwork 6029,1357 6130,1399 6189,1423
 EOF
      },
     );

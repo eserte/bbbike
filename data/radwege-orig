@@ -47,7 +47,7 @@
 provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2024-03-05 (okas)
+#: last_checked: 2024-03-26
 #: check_frequency: 120d
 #: next_check: 2024-08-05
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -140,7 +140,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2024-02-07 vvv
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -166,7 +166,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: https://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021) (mittlerweile gelöscht) (wieder da, "abgeschlossen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2024-02-03 vvv
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -178,8 +178,9 @@ Bord gegen Gehweg	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
 alte Gehwegplatten, Bord gegen Gehweg, relativ breit	RW1; 8014,4832 8130,4932
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8130,4932 8219,5010 8348,5184 8356,5195
-	RW3; 8014,4832 7986,4808 7896,4732 7825,4672 7743,4605
-	RW4; 7690,4563 7743,4605 7825,4672 7896,4732 7986,4808
+	RW3; 8014,4832 7986,4808 7896,4732 7825,4672
+teilweise Leitboys	RW4; 7825,4672 7743,4605
+teilweise Leitboys	RW4; 7690,4563 7743,4605 7825,4672 7896,4732 7986,4808
 alte Gehwegplatten	RW1; 7986,4808 8014,4832
 	RW2; 9242,7286 9242,7218 9242,7145
 	RW2; 9242,7145 9242,7218 9242,7286
@@ -353,8 +354,8 @@ asphaltiert	RW1; 14218,10430 14405,10340 14558,10264
 #: XXX ^^^
 # 
 #: note: Stralauer Allee stadteinwärts
-#: historical_note: früher war hier ein provisorisches Radwegschild
-	RW1; 14558,10264 14405,10340
+#: historical_note: früher war hier ein provisorisches Radwegschild, dann zwischenzeitlich nichts, ab Frühjahr 2024 wieder ein provisorisches Radwegschild
+	RW2; 14558,10264 14405,10340
 	RW1; 14405,10340 14218,10430
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2022-11-07 --- #: check_frequency: 90d
 #: historical_note: früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.
@@ -1278,7 +1279,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-03-25 vvv
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1823,7 +1824,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="26"
 #: osm_watch: way id="458915639" version="7"
-#: last_checked: 2023-12-26 vvv
+#: last_checked: 2024-03-26 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -2594,9 +2595,10 @@ Radweg nur aufgemalt	RW1; 9250,576 9858,744
 	RW1; 9069,506 9002,471 8906,392 8736,337
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8736,337 8906,392 9002,471 9069,506
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583 7847,638
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7937,583 8075,499
-	RW1; 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
 	RW2; 7847,638 7937,583
+#: historical_note: früher: für Radfahrer freigegebene Busspur ist immer gültig, heute gibt's nur ein Busspur-Schild
+	RW2; 7937,583 8075,499
+	RW1; 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
 	RW2;RW2 7847,638 7790,672
 	RW4;RW4 7031,12320 7051,12426
 Verbundsteinpflaster	RW1; 7051,12426 7077,12575 7085,12610
@@ -2916,7 +2918,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-03-25
+#: last_checked: 2024-03-26
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5429,7 +5431,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="21"
-#: last_checked: 2023-12-28
+#: last_checked: 2024-01-30
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -8163,7 +8165,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
 #: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024) (inaktiv)
 #: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
-#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024)
+#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024)
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
