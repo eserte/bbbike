@@ -383,7 +383,7 @@ EOF
 
     my($real_dist, $real_distver) = ($opt{dist}, $opt{distver});
     if ($real_dist eq 'perl') { # perl docker images are usually based on debian
-	if ($real_distver =~ /-(bullseye|bookworm)$/) {
+	if ($real_distver =~ /-(stretch|buster|bullseye|bookworm)$/) {
 	    $real_distver = $1;
 	    $real_dist = 'debian';
 	    warn "WARN: currently docker-bbbike has no support for non-system perl systems. Expect failures.\n";
