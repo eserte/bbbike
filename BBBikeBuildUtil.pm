@@ -15,13 +15,12 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 use Exporter 'import';
 @EXPORT_OK = qw(get_pmake run_pmake module_path module_version get_modern_perl monkeypatch_manifind);
 
 use File::Glob qw(bsd_glob);
-use version ();
 
 use BBBikeUtil qw(is_in_path);
 
@@ -102,8 +101,8 @@ sub get_modern_perl (;@) {
 	map { $_->[1] } 
 	sort { $b->[0] cmp $a->[0] }
 	map { [ do {
-	    if (m{/perl-(5\.\d+\.\d+)$}) {
-		version->new($1);
+	    if (m{/perl-(5)\.(\d+)\.(\d+)$}) {
+		$1 + $2/1000 + $3/1_000_000;
 	    } else {
 		0;
 	    }
