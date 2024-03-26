@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 # -*- perl -*-
 
-use 5.005;
+use 5.008;
 
 BEGIN {
     $^W = 0;
