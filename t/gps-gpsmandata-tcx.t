@@ -31,6 +31,7 @@ plan tests => 9;
 
 use Encode qw(encode_utf8);
 use File::Temp qw(tempfile);
+use IO::File qw();
 
 use GPS::GpsmanData::Any;
 use GPS::GpsmanData::TCX;

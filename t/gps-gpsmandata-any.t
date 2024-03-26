@@ -25,6 +25,7 @@ use lib (
 	);
 
 use File::Temp qw(tempfile);
+use IO::File qw();
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
