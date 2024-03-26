@@ -14,6 +14,7 @@
 
 use FindBin;
 use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
+use 5.010; # //
 
 use Doit;
 use Doit::Log;

@@ -43,6 +43,7 @@ To check how good the prognosis algorithm works try
 
 use strict;
 use warnings;
+use 5.010; # //
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 

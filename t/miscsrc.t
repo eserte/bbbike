@@ -106,8 +106,13 @@ for my $f (@files) {
 	myskip "$f works only with installed DB_File::Lock", 1
 	    if $f =~ m{/correct_data.pl$} && !eval { require DB_File::Lock; 1 };
 	myskip "$f works only with perl >= 5.10.0", 1
-	    if $f =~ m{/( cvsdiffbbd
+	    if $f =~ m{/( bvg_disruptions_format.pl
+		       |  cvsdiffbbd
+		       |  docker-bbbike
 		       |  fragezeichen2org\.pl
+		       |  mudways-enrich.pl
+		       |  mudways-enriched-to-handicap\.pl
+		       |  temp_blockings_tasks
 		       |  VMZTool\.pm
 		       )$}x && $] < 5.010;
 	myskip "$f works only with installed Algorithm::Diff", 1

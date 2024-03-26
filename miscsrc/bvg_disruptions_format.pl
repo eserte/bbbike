@@ -14,6 +14,7 @@
 
 use strict;
 use warnings;
+use 5.010; # //
 use FindBin;
 use lib "$FindBin::RealBin/..";
 

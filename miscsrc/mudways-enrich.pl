@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,6 +14,7 @@
 
 use strict;
 use warnings;
+use 5.010; # //, s///r
 use FindBin;
 
 use File::Glob qw(bsd_glob);
