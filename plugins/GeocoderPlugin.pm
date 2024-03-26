@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.13;
+$VERSION = 3.14;
 
 BEGIN {
     if (!eval '
@@ -252,28 +252,6 @@ sub geocoder_dialog {
 		     my $location = shift;
 		     my $g = $location->{results}->[0]->{geometry};
 		     ($g->{lng}, $g->{lat});
-		 },
-		},
-
-		'GeocodeFarm' =>
-		{
-		 'include_multi' => 1,
-		 'devel_only' => 1,
-
-		 'require' => sub {
-		     require Geo::Coder::GeocodeFarm;
-		 },
-		 'new' => sub {
-		     Geo::Coder::GeocodeFarm->new;
-		 },
-		 'extract_addr' => sub {
-		     my $location = shift;
-		     $location->{RESULTS}->[0]->{formatted_address};
-		 },
-		 'extract_loc' => sub {
-		     my $location = shift;
-		     my $g = $location->{RESULTS}->[0]->{COORDINATES};
-		     ($g->{longitude}, $g->{latitude});
 		 },
 		},
 
