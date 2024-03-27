@@ -1013,6 +1013,7 @@ Wexstr. -> Bruchsaler Str.: Mittelstreifen	3::igndisp 5472,8024 5522,8024 5521,8
 Bruchsaler Str. -> Wexstr.: Mittelstreifen	3::igndisp 5521,8087 5522,8024 5570,8024
 Hausvaterweg [Wohngebiet]	1s 19789,18423 19704,18459
 (zu den Depotgebäuden)	2 24734,5592 24733,5553
+(Zufahrt U-Bahn-Abstellanlage Hönow): üblicherweise durch ein Tor versperrt	2 25919,14963 25809,14991
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1935,10 +1936,6 @@ Fußgängerbrücke -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::ign
 Fußgängerbrücke -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17746,11767 17746,11748 17744,11703
 nicht passierbarer Mittelstreifen	3nocross::ignrte 18626,11742 18696,11754 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 18934,11796 18853,11780 19004,11780
-Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19092,11776 19004,11780 19005,11767
-Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19005,11767 19004,11780 18853,11780
-Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19389,11761 19092,11776 19110,11705
-Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19110,11705 19092,11776 19004,11780
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19092,11776 19389,11761 19138,11815
 Alt-Friedrichsfelde -> Waldbacher Weg: nicht passierbarer Mittelstreifen	3::igndisp 19389,11761 19661,11746 19631,11899
 Waldbacher Weg -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19631,11899 19661,11746 19726,11743
@@ -3428,6 +3425,7 @@ Drängelgitter	BNP:3:-15:trailer=10 3789,18863
 Drängelgitter	BNP:3:-108:trailer=10 21494,10816
 Drängelgitter	BNP:3:-233:trailer=10 13656,9079
 Schranken	BNP:3:-55:trailer=10 15866,16823
+Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 19004,11780 18853,11780
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::inwork -11486,-1008 -11452,-974
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581

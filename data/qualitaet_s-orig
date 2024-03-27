@@ -522,6 +522,7 @@ Am Kupfergraben: Asphalt	Q0 9654,12882 9754,12775 9815,12705 9870,12657
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9553,12768
 Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
 Marchlewskistr.: Kopfsteinpflaster	Q2 12972,12361 12997,12361 13019,12316
+Marchlewskistr.: Asphalt mit Schäden	Q1+ 13019,12316 13086,12186 13097,12166
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
 Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 #: by: Roland Maier vvv
@@ -3993,7 +3994,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/crfs-protokoll-fahrrat-mahe-_2022-04-19.pdf (Projekt pausiert)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="11"
-#: last_checked: 2023-11-25
+#: last_checked: 2024-03-27
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -4011,7 +4012,7 @@ Brodauer Str.: Asphalt	Q0 22554,11681 22469,11627
 Ringstr. (Kaulsdorf): Beton	Q1 22402,11751 22461,11790 22473,11804
 Ringstr. (Kaulsdorf): Asphalt	Q0 22473,11804 22503,11841 22531,11899 22544,12001
 Dillinger Weg: Kopfsteinpflaster	Q2 21648,12000 21626,12032 21550,12038
-Dillinger Weg: Asphalt mit einigen Schäden	Q1+ 21550,12038 21281,12042
+Dillinger Weg: rauer Asphalt mit einigen Schäden	Q1 21550,12038 21281,12042
 Brebacher Weg: Asphalt	Q0 21573,12140 21564,12097 21562,12088 21558,12073 21550,12038 21550,11939
 Püttlinger Str.: Asphalt, etwas rau	Q0- 21283,12066 21281,12042 21275,11942
 Püttlinger Str.: Beton	Q1 21275,11942 21273,11882
@@ -5558,7 +5559,7 @@ Müllerstr. (Mahlsdorf): Asphalt	Q0 24501,10222 24792,10162 24810,10160
 Müllerstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3+ 24810,10160 24923,10097 25200,9939 25321,9875
 Müllerstr. (Mahlsdorf): Asphalt	Q0 25321,9875 25385,9842 25543,9755
 Hochwieser Str.: Asphalt	Q0 25196,10214 25257,10326 25267,10351 25314,10463
-Karlstr. (Mahlsdorf): Beton	Q0 24820,10605 24916,10539 25029,10462 25112,10415
+Karlstr. (Mahlsdorf): Beton	Q0- 24820,10605 24916,10539 25029,10462 25112,10415
 Karlstr. (Mahlsdorf): Asphalt	Q0 25112,10415 25257,10326
 Banater Str.: Asphalt	Q0 25267,10351 25361,10321
 Iglauer Str.: Asphalt	Q0 25147,10487 25314,10463 25388,10447
@@ -6678,7 +6679,7 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022, hier: von Wilhemstr. bis Gatower Str.)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
 #: source_id: viz2021:13.17159,52.51104,15.01.2024,09:13 (bis 29.02.2024) (inaktiv)
-#: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024)
+#: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024) (inaktiv)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
 #: osm_watch: note 3653798 1
 #: last_checked: 2023-04-21
@@ -7514,7 +7515,7 @@ Hirschgartenstr.: Asphalt, einige Schäden	Q1 23617,5902 23600,5932
 Alt-Mahlsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1 24175,11265 24154,11284 24019,11286 23853,11284 23654,11285
 Alt-Kaulsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1 23654,11285 23449,11281 23382,11279 23362,11263
 Karlstr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 23148,11419 22945,11402 22751,11381
-Myslowitzer Str.: leicht unebener Asphalt	Q0- 23153,11947 23215,11852 23269,11767 23225,11649 23182,11534
+Myslowitzer Str.: leicht unebener Asphalt	Q0- 23153,11947 23215,11852 23269,11767 23225,11649 23182,11534 23148,11419 23113,11262
 Hamsterstr.: unbefestigter Weg	Q2+ 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
 Finkenwalder Weg: Asphalt	Q0 23447,11264 23449,11281 23452,11320 23468,11395 23526,11541 23588,11720 23596,11740
 Frettchenweg: Asphalt	Q0 23848,11264 23853,11284 23883,11416
@@ -7667,12 +7668,11 @@ Melanchthonstr.: schlechtes Kopfsteinpflaster	Q3 24862,12579 24918,12687
 Melanchthonstr.: Beton	Q0 24918,12687 24978,12793 25054,12926
 Melanchthonstr.: Asphalt	Q0 25054,12926 25118,13041 25181,13157 25208,13206 25166,13228
 Melanchthonstr.: Beton	Q0- 25287,13464 25166,13228 25138,13183
-Briesener Weg: Asphalt	Q0 24775,13218 24696,13120 24603,13003
-Briesener Weg: Asphalt	Q1 24603,13003 24553,12885
-Briesener Weg: Asphalt	Q0 24553,12885 24459,12664
-Briesener Weg: Asphalt, etwas wellig	Q0- 24459,12664 24354,12510 24292,12415 24229,12329
+Briesener Weg: Asphalt	Q0 25289,13705 25229,13730 25185,13720 25050,13539 24967,13438 24879,13338 24775,13218 24696,13120 24603,13003
+Briesener Weg: Asphalt, etwas wellig	Q1+ 24603,13003 24553,12885 24459,12664
+Briesener Weg: Asphalt, Unebenheiten	Q1 24459,12664 24354,12510
+Briesener Weg: Asphalt, etwas wellig	Q0- 24354,12510 24292,12415 24229,12329
 Briesener Weg: Asphalt, etwas wellig, einige Schäden	Q1+ 24229,12329 24179,12260
-Briesener Weg: Asphalt	Q0 25050,13539 25185,13720 25229,13730 25289,13705
 Burggrafenstr. (Mahlsdorf, Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 25055,12609 24918,12687 24774,12766 24606,12856 24553,12885
 Burggrafenstr. (Mahlsdorf, Kaulsdorf): Asphalt	Q0 24553,12885 24438,12929
 Markgrafenstr.: schlechtes Kopfsteinpflaster	Q3 24907,12425 24804,12481 24659,12555
@@ -7975,7 +7975,7 @@ Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1+ 23580,14970 23594,14886 2351
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1+ 23580,14970 23543,14966
 (Weg am Beerenpfuhlgraben): Asphalt	Q0+ 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1- 23521,14973 23529,14973 23543,14966
-Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23305,14914
+Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
 (Alt-Hellersdorf - Cottbusser Str.): Betonplatten	Q1 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23211,14451 23290,14493 23366,14537
@@ -11804,7 +11804,7 @@ Arturweg: Verbundsteinpflaster	Q1+ 24948,10815 24949,10956
 #: by: https://www.theodorpark-spielinseln.de/index.php?rex_media_type=img-50-hd&rex_media_file=planung.jpg
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1169102.php (Herbst 2022)
 #: XXX in Planung: Tor und/oder Drängelgitter
-#: last_checked: 2023-09-17
+#: last_checked: 2024-03-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-09-30
 (Weg im Theodorpark): Verbundsteinpflaster	Q1- 24922,10785 24954,10770 25017,10767 25062,10762 25148,10769
@@ -13362,7 +13362,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 15151,10699 15220,10682
 Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 15200,10600
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-03-15 vvv
+#: last_checked: 2024-03-27 vvv
 #: check_frequency: 60d vvv
 Ulrich-Plenzdorf-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 14994,10732 15071,10716 15151,10699
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
@@ -13497,6 +13497,8 @@ Mandrellaplatz: Kopfsteinpflaster	Q2 22464,5751 22482,5706
 (KGA Grüne Weiden): glattes Pflaster und Rasengittersteine	Q1 15456,7516 15268,7344 15214,7307
 (KGA Grüne Weiden - Heidekampgraben): unbefestigt	Q2- 15214,7307 15175,7301
 (KGA Grüne Weiden - Heidekampgraben): unbefestigt	Q2- 15214,7307 15190,7344 15171,7338
+# 
+(Zufahrt U-Bahn-Abstellanlage Hönow): Beton	Q1 25919,14963 25809,14991
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14419,7 +14421,8 @@ Boschweg: Beton	Q0; 14564,6496 14760,6319 14788,6261 14784,6169
 #: confirmed_by: srt
 Sellinstr.: mäßiger Asphalt	Q1 11195,17911 11217,17783
 Erlenweg: mäßiger Asphalt	Q1 -3327,18007 -3226,18109
-Zachertstr.: Beton	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17587,11238 17725,11228 17807,11219 17848,11204
+#: corrected_by: srt (Beton -> ...)
+Zachertstr.: Asphalt	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17587,11238 17725,11228 17807,11219 17848,11204
 Belziger Ring: Asphalt	Q0 22207,17772 22166,17803 22047,17862 22013,17880 21926,17851 21880,17762 21968,17714 21995,17754 22111,17696 22166,17803
 #: corrected_by: srt (Asphalt -> )
 Blesener Zeile: Beton	Q0 3214,20629 3395,20660
@@ -32990,4 +32993,7 @@ Einmündungsbereich asphaltiert	Q0 10380,757
 Kreuzungsbereich asphaltiert	Q0 10506,405
 Einmündungsbereich asphaltiert	Q0 10550,282
 Kreuzungsbereich asphaltiert	Q0 10613,108
+Kreuzungsbereich asphaltiert	Q1 24553,12885
+Kreuzungsbereich asphaltiert	Q0 24696,13120
+Einmündungsbereich asphaltiert	Q0 24775,13218
 #: ignore ^^^

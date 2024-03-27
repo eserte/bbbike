@@ -313,6 +313,7 @@ Am Kupfergraben: Asphalt	Q0 9654,12882 9754,12775 9815,12705 9870,12657
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9553,12768
 Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
 Marchlewskistr.: Kopfsteinpflaster	Q2 12972,12361 12997,12361 13019,12316
+Marchlewskistr.: Asphalt mit Schäden	Q1 13019,12316 13086,12186 13097,12166
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
 Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322 12097,16263 12090,16199
@@ -2961,7 +2962,7 @@ Brodauer Str.: Asphalt	Q0 22554,11681 22469,11627
 Ringstr. (Kaulsdorf): Beton	Q1 22402,11751 22461,11790 22473,11804
 Ringstr. (Kaulsdorf): Asphalt	Q0 22473,11804 22503,11841 22531,11899 22544,12001
 Dillinger Weg: Kopfsteinpflaster	Q2 21648,12000 21626,12032 21550,12038
-Dillinger Weg: Asphalt mit einigen Schäden	Q1 21550,12038 21281,12042
+Dillinger Weg: rauer Asphalt mit einigen Schäden	Q1 21550,12038 21281,12042
 Brebacher Weg: Asphalt	Q0 21573,12140 21564,12097 21562,12088 21558,12073 21550,12038 21550,11939
 Püttlinger Str.: Asphalt, etwas rau	Q0 21283,12066 21281,12042 21275,11942
 Püttlinger Str.: Beton	Q1 21275,11942 21273,11882
@@ -6110,7 +6111,7 @@ Hirschgartenstr.: Asphalt, einige Schäden	Q1 23617,5902 23600,5932
 Alt-Mahlsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1 24175,11265 24154,11284 24019,11286 23853,11284 23654,11285
 Alt-Kaulsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1 23654,11285 23449,11281 23382,11279 23362,11263
 Karlstr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 23148,11419 22945,11402 22751,11381
-Myslowitzer Str.: leicht unebener Asphalt	Q0 23153,11947 23215,11852 23269,11767 23225,11649 23182,11534
+Myslowitzer Str.: leicht unebener Asphalt	Q0 23153,11947 23215,11852 23269,11767 23225,11649 23182,11534 23148,11419 23113,11262
 Hamsterstr.: unbefestigter Weg	Q2 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
 Finkenwalder Weg: Asphalt	Q0 23447,11264 23449,11281 23452,11320 23468,11395 23526,11541 23588,11720 23596,11740
 Frettchenweg: Asphalt	Q0 23848,11264 23853,11284 23883,11416
@@ -6254,12 +6255,11 @@ Melanchthonstr.: schlechtes Kopfsteinpflaster	Q3 24862,12579 24918,12687
 Melanchthonstr.: Beton	Q0 24918,12687 24978,12793 25054,12926
 Melanchthonstr.: Asphalt	Q0 25054,12926 25118,13041 25181,13157 25208,13206 25166,13228
 Melanchthonstr.: Beton	Q0 25287,13464 25166,13228 25138,13183
-Briesener Weg: Asphalt	Q0 24775,13218 24696,13120 24603,13003
-Briesener Weg: Asphalt	Q1 24603,13003 24553,12885
-Briesener Weg: Asphalt	Q0 24553,12885 24459,12664
-Briesener Weg: Asphalt, etwas wellig	Q0 24459,12664 24354,12510 24292,12415 24229,12329
+Briesener Weg: Asphalt	Q0 25289,13705 25229,13730 25185,13720 25050,13539 24967,13438 24879,13338 24775,13218 24696,13120 24603,13003
+Briesener Weg: Asphalt, etwas wellig	Q1 24603,13003 24553,12885 24459,12664
+Briesener Weg: Asphalt, Unebenheiten	Q1 24459,12664 24354,12510
+Briesener Weg: Asphalt, etwas wellig	Q0 24354,12510 24292,12415 24229,12329
 Briesener Weg: Asphalt, etwas wellig, einige Schäden	Q1 24229,12329 24179,12260
-Briesener Weg: Asphalt	Q0 25050,13539 25185,13720 25229,13730 25289,13705
 Burggrafenstr. (Mahlsdorf, Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 25055,12609 24918,12687 24774,12766 24606,12856 24553,12885
 Burggrafenstr. (Mahlsdorf, Kaulsdorf): Asphalt	Q0 24553,12885 24438,12929
 Markgrafenstr.: schlechtes Kopfsteinpflaster	Q3 24907,12425 24804,12481 24659,12555
@@ -6539,7 +6539,7 @@ Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1 23580,14970 23594,14886 23517
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1 23580,14970 23543,14966
 (Weg am Beerenpfuhlgraben): Asphalt	Q0 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1 23521,14973 23529,14973 23543,14966
-Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23305,14914
+Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
 (Alt-Hellersdorf - Cottbusser Str.): Betonplatten	Q1 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23211,14451 23290,14493 23366,14537
@@ -11465,6 +11465,7 @@ Mandrellaplatz: Kopfsteinpflaster	Q2 22464,5751 22482,5706
 (KGA Grüne Weiden): glattes Pflaster und Rasengittersteine	Q1 15456,7516 15268,7344 15214,7307
 (KGA Grüne Weiden - Heidekampgraben): unbefestigt	Q2 15214,7307 15175,7301
 (KGA Grüne Weiden - Heidekampgraben): unbefestigt	Q2 15214,7307 15190,7344 15171,7338
+(Zufahrt U-Bahn-Abstellanlage Hönow): Beton	Q1 25919,14963 25809,14991
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11949,7 +11950,7 @@ Boschweg: Beton mit einigen Schäden	Q0; 14784,6169 14788,6261 14760,6319 14564,6
 Boschweg: Beton	Q0; 14564,6496 14760,6319 14788,6261 14784,6169
 Sellinstr.: mäßiger Asphalt	Q1 11195,17911 11217,17783
 Erlenweg: mäßiger Asphalt	Q1 -3327,18007 -3226,18109
-Zachertstr.: Beton	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17587,11238 17725,11228 17807,11219 17848,11204
+Zachertstr.: Asphalt	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17587,11238 17725,11228 17807,11219 17848,11204
 Belziger Ring: Asphalt	Q0 22207,17772 22166,17803 22047,17862 22013,17880 21926,17851 21880,17762 21968,17714 21995,17754 22111,17696 22166,17803
 Blesener Zeile: Beton	Q0 3214,20629 3395,20660
 Moorweg: Asphalt	Q0 3137,22088 3081,22048 2990,22018 2868,21945 2824,21896 2783,21773 2727,21692 2696,21648 2635,21559 2621,21538 2522,21494 2404,21445

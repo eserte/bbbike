@@ -5431,12 +5431,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
+#: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv
 #: last_checked: 2024-03-26 vvv
 #: next_check: 2024-03-29 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
 #: next_check ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'dont_check_date' => 1,
          'from' => 1699830000,
@@ -5454,7 +5456,7 @@ Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-27 (daf)
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -6654,7 +6656,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
          'data' => '#: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
-#: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024)
+#: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
@@ -6667,12 +6669,11 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: next_check: 2024-05-24
 	q4::inwork 3869,10760 4267,10724 4393,10712
 ',
-         'dont_check_date' => 1,
          'from' => 1681189200,
          'id' => 3763,
-         'text' => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis Frühjahr 2024',
+         'text' => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis 24.05.2024',
          'type' => 'handicap',
-         'until' => 1712008799
+         'until' => 1716587999
        },
        undef,
        undef,
@@ -7256,16 +7257,18 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2024-01-20 vvv
+         'data' => '#: last_checked: 2024-03-27 vvv
+#: check_frequency: 60d vvv
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
 #: osm_watch: way id="381691526" version="8"
 	2::inwork 23305,14914 23318,14847 23297,14772
 #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
-#: note: Halteverbotsschilder bis 2.2.2024 vvv
+#: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
 	q3::inwork 23222,14809 23297,14772 23369,14756
 	q3::inwork 23288,14719 23297,14772
 #: note ^^^
 #: add_fragezeichen ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -7483,7 +7486,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024) (inaktiv)
-#: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024)
+#: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024) (bis 11.04.2024)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
@@ -7497,9 +7500,9 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => 1710370800,
          'id' => 3948,
-         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, Radfahrer dürfen den Gehweg benutzen, vom 15.03.2024 11:00 bis 12.04.2024 17:00',
+         'text' => 'Wilhelminenhofstr.: Gleisbauarbeiten zwischen Rathenaustraße und Johannes-Kraaz-Straße, Radfahrer dürfen den Gehweg benutzen, vom 15.03.2024 11:00 bis 11.04.2024 17:00',
          'type' => 'handicap',
-         'until' => 1712934000
+         'until' => 1712847600
        },
        undef,
        undef,
@@ -7700,6 +7703,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,15:00 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024) (inaktiv)
 #: source_id: viz2021:13.296558,52.51092,14.12.2023,14:30 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024) (bis 19.04.2024)
 #: source_id: viz2021:13.29724,52.51059,11.03.2024,07:00 (Suarezstr., bis 22.03.2024) (inaktiv)
+#: source_id: viz2021:13.2892,52.5104,27.03.2024,18:13 (bis 19.04.2024)
 #: also_indoor: traffic (H,G,B,W)
 #: osm_watch: way id="4446505" version="34"
 #: osm_watch: way id="176621906" version="27"
@@ -7824,7 +7828,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-03-12
+#: last_checked: 2024-03-27
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -7840,15 +7844,17 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024) (bis 27.03.2024)
+         'data' => '#: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.270887,52.453816,27.03.2024,10:00 (bis 27.05.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772908920014614884
+#: by: https://pbs.twimg.com/media/GJnVMrXWsAAKIn1?format=jpg&name=large
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
 # REMOVED (in der neuen Verkehrsmeldung entfernt) --- Am Waldfriedhof: Anbindung am Hüttenweg gesperrt	q4::inwork 1139,5308 1212,5353
-Marshallstr.: Anbindung am Hüttenweg gesperrt	q4::inwork 1385,5214 1319,5100
+Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 ',
          'from' => 1681974000,
          'id' => 4004,
-         'text' => 'Marshallstr.: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, bis 27.05.2024 17:00',
+         'text' => 'Marshallstr.: Anbindung am Hüttenweg gesperrt, auch Radfahrer sind betroffen, bis 27.05.2024 17:00',
          'type' => 'handicap',
          'until' => 1716822000
        },
@@ -7962,18 +7968,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'until' => 1712934000
        },
        undef,
-       {
-         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1723937233072165285#m (nur Kfz-Verkehr, bis März 2024)
-#: source_id: viz2021:13.19858,52.54291,13.11.2023,07:00 (bis 29.03.2024) (vorfristig inaktiv)
-#: also_indoor: traffic (G,B,ex-W)
-	q4::inwork -3572,15082 -3638,14995
-',
-         'from' => undef,
-         'id' => 4015,
-         'text' => 'Flankenschanze: Bauarbeiten zwischen Falkenseer Damm und Bismarckstr., evtl. gibt es auch Einschränkungen für Radfahrer, bis 29.03.2024',
-         'type' => 'handicap',
-         'until' => 1711731600
-       },
+       undef,
        {
          'data' => '#: next_check_id: SPREERADWEGIBURGER-2024
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
@@ -8040,6 +8035,8 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1430491.php (2. Bauabschnitt 8. bis 12. April 2024 zwischen Johannisthaler Chaussee und Baumschulenstraße /Späthstraße)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1771972248079048997
 #: by: https://pbs.twimg.com/media/GJSJkLgWUAEe13Y?format=jpg&name=large
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772943473840140322
+#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/weitere-schaeden-festgestellt-bauarbeiten-dauern-laenger_a411539
 #: source_id: bvg2021:265#BVG344869_0
 #: source_id: bvg2021:x11#BVG344866_0
 #: source_id: viz2021:13.485035,52.448445,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
@@ -8078,6 +8075,7 @@ Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei
          'data' => '#: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024) (inaktiv)
 #: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
+#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
 #: note: beim rbb wird nur der Kfz-Verkehr erwähnt, Dauer "mehrere Wochen"
 #: note: mittlerweile wird bei viz explizit "absteigen & schieben" gesagt
 	q4::inwork 5627,9362 5479,9367

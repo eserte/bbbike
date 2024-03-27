@@ -9176,7 +9176,12 @@ Neuruppiner Str. (Hellersdorf)	N 23082,15329 23265,15351 23280,15244
 (KGA Alt-Hellersdorf - Neuruppiner Str.)	NN 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf)	NN 23271,15164 23285,15104 23283,15061 23265,15054
 Alte Hellersdorfer Str.	H 23181,14371 23084,14472 23088,14579 23104,14827
-Alte Hellersdorfer Str.	N 23104,14827 23117,15081 23113,15110 23109,15140 23101,15198 23082,15329
+#: next_check_id: EISENACHERGOTHAER-2023
+#: XXX nach den Bauarbeiten wieder zu "N" machen
+#: last_checked: 2024-03-27
+#: check_frequency: 90d
+#: next_check: 2025-03-31
+Alte Hellersdorfer Str.	H 23104,14827 23111,14956 23117,15081 23113,15110 23109,15140 23101,15198 23082,15329
 Alte Hellersdorfer Str.	H 23082,15329 23067,15429 23060,15588 23080,15700 23137,15978 23162,16095
 #: osm.highway: service
 Alte Hellersdorfer Str. [Wohngebietsstraﬂe]	N 23101,15198 23222,15219 23221,15226 23213,15297
@@ -14536,7 +14541,13 @@ Fercher Str. (Hellersdorf)	N 22748,15329 22743,15414
 Kyritzer Str.	N 22599,15105 22603,15188 22570,15233 22571,15397 22579,15407 22743,15414 23067,15429
 Kyritzer Str.	NN 23067,15429 23245,15442 23270,15423
 Kyritzer Str.	NN 22573,15552 22579,15416 22579,15407
-Gothaer Str. (Hellersdorf)	H 23082,15329 22968,15315 22897,15287 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
+#: next_check_id: EISENACHERGOTHAER-2023
+#: XXX nach den Bauarbeiten wieder zu "H" machen
+#: last_checked: 2024-03-27
+#: check_frequency: 90d
+#: next_check: 2025-03-31
+Gothaer Str. (Hellersdorf)	N 23082,15329 22968,15315 22897,15287 22899,15073
+Gothaer Str. (Hellersdorf)	H 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
 Glauchauer Str.	N 24041,13795 24050,13855 24031,13903 24041,13979 24055,13984 24187,14052
 Klingenthaler Str.	N 24041,13979 23887,14028 23802,14060 23773,14109 23713,14247
 Kastanienallee (Hellersdorf)	N 23617,15594 23629,15498 23633,15464 23643,15392 23661,15282 23686,15128 23693,15080 23698,15049 23708,14989 23735,14814 23756,14696
@@ -15579,7 +15590,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-03-20
+#: last_checked: 2024-03-27
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15969,7 +15980,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (auﬂerdem: Umgestaltung der Gr¸nanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-03-20
+#: last_checked: 2024-03-27
 (entlang des Tr‰nkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16137,7 +16148,7 @@ Senftenberger Str. (Hellersdorf)	N 23708,14989 23580,14970 23543,14966
 Senftenberger Str. (Hellersdorf)	N 23580,14970 23594,14886 23517,14873 23531,14781
 (Weg am Beerenpfuhlgraben)	NN 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.)	NN 23521,14973 23529,14973 23543,14966
-Alt-Hellersdorf	N 23117,15081 23265,15054 23305,14914
+Alt-Hellersdorf	N 23117,15081 23265,15054 23300,14933 23305,14914
 (Alt-Hellersdorf - Cottbusser Str.)	NN 23305,14914 23318,14847 23297,14772
 Antwerpener Str.	N 6555,15827 6690,15671 6794,15553
 (Antwerpener Str. - Beuth-Hochschule/Luxemburger Str.)	NN 6794,15553 6884,15456 6996,15319
@@ -17717,8 +17728,8 @@ Ellaweg	N 24949,10956 24952,11046
 #: XXX bekommt diese Straﬂe noch einen Namen? vvv
 #: XXX laut osm hier auch "Laraweg"
 #: osm_watch: way id="377388194" version="11"
-#: last_checked: 2023-09-17 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2024-03-27 vvv
+#: check_frequency: 120d vvv
 (namenslose Straﬂe im Theodorpark)	NN 24899,11044 24904,11044
 (namenslose Straﬂe im Theodorpark)	N 24904,11044 24952,11046
 #: check_frequency ^^^
@@ -20586,4 +20597,7 @@ Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
 (Passage am Tacheles)	NN 9371,13333 9353,13273 9244,13253
 Aaron-Bernstein-Platz	NN 9353,13273 9382,13265 9385,13246 9463,13256 9476,13293
 Johannisplatz	NN 9385,13174 9385,13246
+# 
+#: osm.highway: service
+(Zufahrt U-Bahn-Abstellanlage Hˆnow)	N 25919,14963 25809,14991
 # 
