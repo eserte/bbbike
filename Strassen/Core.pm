@@ -1009,7 +1009,9 @@ sub next {
     $self->get(++($self->{Pos}));
 }
 
-# Return the next record without incrementing the iterator
+# Return the next record without incrementing the iterator.
+# Note that this works only when iterating in forward direction,
+# not with init_for_prev + prev.
 sub peek {
     my $self = shift;
     $self->get($self->{Pos}+1);

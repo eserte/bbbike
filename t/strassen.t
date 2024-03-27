@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 68;
+my $basic_tests = 69;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -160,6 +160,8 @@ EOF
 	# init and next: iterate forwards
 	$s->init;
 	my $r;
+	$r = $s->peek;
+	is $r->[Strassen::NAME], 'Dudenstr.', 'call peek (would not change the pointer)';
 	$r = $s->next;
 	is $r->[Strassen::NAME], 'Dudenstr.', '1st next call';
 	$s->next;
