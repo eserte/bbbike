@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 69;
+my $basic_tests = 75;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -76,6 +76,18 @@ goto XXX if $do_xxx;
     my $ms = MultiStrassen->new($s, $s);
     ok($ms->isa("Strassen"));
     ok($ms->isa("MultiStrassen"), "MultiStrassen isa MultiStrassen");
+}
+
+{
+    my $s;
+
+    $s = eval { Strassen->new("$FindBin::RealBin/../data/this-file-does-not-exist") };
+    like $@, qr{Can't open .*this-file-does-not-exist}, 'error on non-existing strassen file (constructor new)';
+    is $s, undef;
+
+    $s = eval { Strassen->new_stream("$FindBin::RealBin/../data/this-file-does-not-exist") };
+    like $@, qr{Can't open .*this-file-does-not-exist}, 'error on non-existing strassen file (constructor new_stream)';
+    is $s, undef;
 }
 
 {
@@ -189,6 +201,27 @@ EOF
     my $dir = $s->get_directives;
     is_deeply $dir->{local_directive}, ['yes!'], 'Got local directive';
     is scalar(keys %$dir), 1, 'Only one local directive';
+}
+
+{
+    my $data =<<EOF;
+#:
+#: unclosed_local_directive: yes vvv
+Straße A	? 6353,22515
+EOF
+    my $s = Strassen->new_data_string_stream($data); # , UseLocalDirectives => 1);
+    eval { $s->read_stream(sub{}) };
+    like $@, qr{\QThe following block directives were not closed: 'unclosed_local_directive yes' (start at line 2)\E}, 'unclosed local directive error';
+}
+
+{
+    my $data =<<EOF;
+Straße A	? 6353,22515
+#: stray_local_directive: yes
+EOF
+    my $s = Strassen->new_data_string_stream($data); # , UseLocalDirectives => 1);
+    eval { $s->read_stream(sub{}) };
+    like $@, qr{\QERROR: Stray line directive `stray_local_directive' at end of file\E}, 'stray line directive at end of file error';
 }
 
 {
