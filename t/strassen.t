@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 60;
+my $basic_tests = 68;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -141,6 +141,34 @@ EOF
     }
     is_deeply($s->get(4), [undef,[],undef], 'get past end');
     is(scalar @{$s->data}, 3, 'data length unchanged after get past end');
+
+    {
+	# init_for_prev and prev: iterate backwards
+	$s->init_for_prev;
+	my $r;
+	$r = $s->prev;
+	is $r->[Strassen::NAME], 'Mehringdamm', '1st prev call';
+	$s->prev;
+	$r = $s->prev;
+	is $r->[Strassen::NAME], 'Dudenstr.', 'prev call on first element';
+	$r = $s->prev;
+	is_deeply $r->[Strassen::COORDS], [], 'prev beyond first element';
+	is_deeply $r, Strassen::UNDEF_RECORD, 'alternative check for undef record';
+    }
+
+    {
+	# init and next: iterate forwards
+	$s->init;
+	my $r;
+	$r = $s->next;
+	is $r->[Strassen::NAME], 'Dudenstr.', '1st next call';
+	$s->next;
+	$r = $s->next;
+	is $r->[Strassen::NAME], 'Mehringdamm', 'next call on last element';
+	$r = $s->next;
+	is_deeply $r->[Strassen::COORDS], [], 'next beyond last element';
+	is_deeply $r, Strassen::UNDEF_RECORD, 'alternative check for undef record';
+    }
 }
 
 {

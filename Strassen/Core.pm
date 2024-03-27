@@ -26,6 +26,8 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
+use constant UNDEF_RECORD => [undef, [], undef];
+
 $VERSION = '1.9903';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
@@ -739,7 +741,7 @@ sub append {
 
 sub get {
     my($self, $pos) = @_;
-    do { require Carp; Carp::cluck("negative index ($pos) in get"); return [undef, [], undef] } if $pos < 0;
+    do { require Carp; Carp::cluck("negative index ($pos) in get"); return UNDEF_RECORD } if $pos < 0;
     my $line = $self->{Data}->[$pos];
     parse($line);
 }
@@ -944,7 +946,7 @@ sub arr2line2 {
 sub parse {
     # $_[0] is $line
     # my $_[0] = shift;
-    return [undef, [], undef] if !$_[0];
+    return UNDEF_RECORD if !$_[0];
     my $tab_inx = index($_[0], "\t");
     if ($tab_inx < 0) {
 	if ($_[0] !~ m{^#}) { # do not warn on comments
@@ -977,6 +979,10 @@ sub init {
 sub init_for_iterator {
     my($self, $iterator) = @_;
     $self->{"Pos_Iterator_$iterator"} = -1;
+}
+
+sub init_for_prev {
+    $_[0]->{Pos} = scalar @{$_[0]->{Data}};
 }
 
 # Setzt den Index auf den angegeben Wert (jedenfalls so, dass ein
@@ -1017,7 +1023,11 @@ sub next_for_iterator {
 
 sub prev {
     my $self = shift;
-    $self->get(--($self->{Pos}));
+    if ($self->{Pos} == 0) {
+	return UNDEF_RECORD;
+    } else {
+	$self->get(--($self->{Pos}));
+    }
 }
 
 sub next_obj {
