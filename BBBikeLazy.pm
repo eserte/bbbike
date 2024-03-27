@@ -815,7 +815,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	} else {
 	    # in diesem Fall sollten die größeren Orte _später_ d.h. über
 	    # den kleineren gezeichnet werden
-	    $orte->set_last;
+	    $orte->init_for_prev;
 	    $next_meth = 'prev';
 	}
 	$anzahl_eindeutig = $orte->count;
