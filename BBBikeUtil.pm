@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.41;
+$VERSION = 1.42;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -29,7 +29,7 @@ require Exporter;
 	     STAT_MODTIME);
 @EXPORT_OK = qw(min max first sum ceil ms2kmh clone bbbike_root bbbike_aux_dir
 		s2hms s2hm_or_s save_pwd save_pwd2 uri_with_query
-		module_path);
+		module_path module_exists);
 
 use constant STAT_MODTIME => 9;
 
@@ -542,6 +542,8 @@ sub module_path {
     return undef;
 }
 # REPO END
+
+sub module_exists { module_path($_[0]) ? 1 : 0 }
 
 1;
 

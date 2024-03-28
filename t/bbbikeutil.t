@@ -254,6 +254,12 @@ for my $try_mod ('URI', 'CGI') {
     is BBBikeUtil::module_path("ThisModuleDoesNotExist$$"), undef, "module_path of non-existing module";
 }
 
+{
+    is BBBikeUtil::module_exists("BBBikeUtil"), 1, "module_exists on BBBikeUtil";
+    is BBBikeUtil::module_exists('Time::Piece'), 1, "module_exists on core module Time::Piece";
+    is BBBikeUtil::module_exists("ThisModuleDoesNotExist$$"), 0, "module_exists on non-existing module";
+}
+
 is_deeply \@warnings, [], 'no warnings';
 
 __END__
