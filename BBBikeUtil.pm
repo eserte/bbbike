@@ -28,7 +28,8 @@ require Exporter;
 	     kmh2ms
 	     STAT_MODTIME);
 @EXPORT_OK = qw(min max first sum ceil ms2kmh clone bbbike_root bbbike_aux_dir
-		s2hms s2hm_or_s save_pwd save_pwd2 uri_with_query);
+		s2hms s2hm_or_s save_pwd save_pwd2 uri_with_query
+		module_path);
 
 use constant STAT_MODTIME => 9;
 
@@ -522,6 +523,25 @@ sub uri_with_query {
 }
 
 $BBBikeTest::SIMULATE_WITHOUT_URI = $BBBikeTest::SIMULATE_WITHOUT_URI if 0; # cease -w
+
+# REPO BEGIN
+# REPO NAME module_path /home/eserte/src/srezic-repository 
+# REPO MD5 ac5f3ce48a524d09d92085d12ae26e8c
+# modification: %INC check
+sub module_path {
+    my($filename) = @_;
+    $filename =~ s{::}{/}g;
+    $filename .= ".pm";
+    return $INC{$filename} if exists $INC{$filename};
+    foreach my $prefix (@INC) {
+	my $realfilename = "$prefix/$filename";
+	if (-r $realfilename) {
+	    return $realfilename;
+	}
+    }
+    return undef;
+}
+# REPO END
 
 1;
 

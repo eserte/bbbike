@@ -26,7 +26,7 @@ use File::Temp qw(tempdir);
 use BBBikeBuildUtil qw(get_pmake get_modern_perl module_path module_version monkeypatch_manifind);
 use BBBikeUtil qw(save_pwd2);
 
-plan tests => 19;
+plan tests => 17;
 
 my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
@@ -118,9 +118,7 @@ SKIP: {
 }
 
 {
-    is module_path("BBBikeBuildUtil"), $INC{"BBBikeBuildUtil.pm"}, "module_path of BBBikeBuildUtil";
-    like module_path('Time::Piece'), qr{\Q/Time/Piece.pm\E$}, "module_path of a module unlikely to be loaded"; # note that StrawberryPerl is also using forward slashes
-    is module_path("ThisModuleDoesNotExist$$"), undef, "module_path of non-existing module";
+    is \&module_path, \&BBBikeUtil::module_path, 'module_path comes from BBBikeUtil'; # comprehensive tests are now in bbbikeutil.t
 }
 
 {

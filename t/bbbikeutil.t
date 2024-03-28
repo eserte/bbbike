@@ -248,6 +248,12 @@ for my $try_mod ('URI', 'CGI') {
     }
 }
 
+{
+    is BBBikeUtil::module_path("BBBikeUtil"), $INC{"BBBikeUtil.pm"}, "module_path of BBBikeUtil";
+    like BBBikeUtil::module_path('Time::Piece'), qr{\Q/Time/Piece.pm\E$}, "module_path of a module unlikely to be loaded"; # note that StrawberryPerl is also using forward slashes
+    is BBBikeUtil::module_path("ThisModuleDoesNotExist$$"), undef, "module_path of non-existing module";
+}
+
 is_deeply \@warnings, [], 'no warnings';
 
 __END__
