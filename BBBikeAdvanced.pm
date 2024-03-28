@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeAdvanced;
@@ -18,6 +17,7 @@ package main;
 use Config;
 use strict;
 use BBBikeGlobalVars;
+use BBBikeUtil qw(module_exists);
 use BBBikeProcUtil qw(double_fork);
 use Strassen::Cat ();
 
@@ -4655,32 +4655,6 @@ sub special_lower_taggroup {
     for my $tag (reverse @$tags) { special_lower($tag, 1) }
     restack() unless $delay;
 }
-
-
-# REPO BEGIN
-# REPO NAME module_exists /home/e/eserte/work/srezic-repository 
-# REPO MD5 c80b6d60e318450d245a0f78d516153b
-
-=head2 module_exists($module)
-
-Return true if the module exists in @INC
-
-=cut
-
-sub module_exists {
-    my($filename) = @_;
-    $filename =~ s{::}{/}g;
-    $filename .= ".pm";
-    return 1 if $INC{$filename};
-    foreach my $prefix (@INC) {
-	my $realfilename = "$prefix/$filename";
-	if (-r $realfilename) {
-	    return 1;
-	}
-    }
-    return 0;
-}
-# REPO END
 
 1;
 
