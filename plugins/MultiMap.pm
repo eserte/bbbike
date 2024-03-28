@@ -22,6 +22,8 @@ use strict;
 use vars qw($VERSION);
 $VERSION = 2.04;
 
+use BBBikeUtil qw(bbbike_aux_dir module_exists);
+
 use vars qw(%images);
 
 my $map_compare_use_bbbike_org = 1;
@@ -1967,7 +1969,7 @@ sub show_bbviewer_menu {
 
 sub show_all_traffic_maps {
     my(%args) = @_;
-    my $bbbike_aux_dir = BBBikeUtil::bbbike_aux_dir();
+    my $bbbike_aux_dir = bbbike_aux_dir();
     if (!$bbbike_aux_dir) {
 	main::status_message("bbbike-aux directory is not available", "die");
     }
@@ -2033,28 +2035,6 @@ sub start_browser {
 }
 
 ######################################################################
-# Helper
-
-# REPO BEGIN
-# REPO NAME module_exists /home/eserte/src/srezic-repository 
-# REPO MD5 1ea9ee163b35d379d89136c18389b022
-
-# Return true if the module exists in @INC or if it is already loaded.
-
-sub module_exists {
-    my($filename) = @_;
-    $filename =~ s{::}{/}g;
-    $filename .= ".pm";
-    return 1 if $INC{$filename};
-    foreach my $prefix (@INC) {
-	my $realfilename = "$prefix/$filename";
-	if (-r $realfilename) {
-	    return 1;
-	}
-    }
-    return 0;
-}
-# REPO END
 
 1;
 
