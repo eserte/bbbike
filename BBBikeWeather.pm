@@ -1,20 +1,18 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.9 2006/11/11 14:32:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.10';
 
 package main;
 use strict;
@@ -182,6 +180,9 @@ sub BBBikeWeather::show_weather_db {
     if (!-e $filename) {
 	# append current year
 	$filename .= "-" . (((localtime)[5])+1900);
+	if (!-e $filename) {
+	    $filename .= ".emergency"; # XXX hack for data from 2023 and newer
+	}
     }
 
     my $t = redisplay_top($top, "weather_db-$filename",
