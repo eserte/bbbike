@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,6 +17,7 @@ use FindBin;
 my $bbbikesrc_dir; BEGIN { $bbbikesrc_dir = "$FindBin::RealBin/../.." }
 use lib (
 	 "$bbbikesrc_dir/lib",
+	 $bbbikesrc_dir,
 	);
 
 use Doit;
@@ -27,6 +28,8 @@ use Getopt::Long;
 use PPM ();
 use YAML::Tiny ();
 use version ();
+
+use BBBikeUtil qw(module_path);
 
 my $doit = Doit->init;
 
@@ -63,30 +66,6 @@ for my $package (@packages) {
     info "Install $package via PPM" . ($doit->is_dry_run ? " (dry-run)" : "");
     PPM::InstallPackage(package => $package);
 }
-
-# REPO BEGIN
-# REPO NAME module_path /home/eserte/src/srezic-repository 
-# REPO MD5 ac5f3ce48a524d09d92085d12ae26e8c
-
-#=head2 module_path($module)
-#
-#Return path of module or undef.
-#
-#=cut
-
-sub module_path {
-    my($filename) = @_;
-    $filename =~ s{::}{/}g;
-    $filename .= ".pm";
-    foreach my $prefix (@INC) {
-	my $realfilename = "$prefix/$filename";
-	if (-r $realfilename) {
-	    return $realfilename;
-	}
-    }
-    return undef;
-}
-# REPO END
 
 __END__
 
