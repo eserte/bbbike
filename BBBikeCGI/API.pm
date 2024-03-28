@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2013,2014,2015,2016,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package BBBikeCGI::API;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use JSON::XS qw();
 
@@ -115,7 +115,8 @@ sub _module_info_via_module_metadata {
 
 sub _module_info_via_eumm {
     my $module_name = shift;
-    my $file = _module_path($module_name);
+    require BBBikeUtil;
+    my $file = BBBikeUtil::module_path($module_name);
     if (defined $file) {
 	my $ret = { installed => JSON::XS::true };
 	require ExtUtils::MakeMaker;
@@ -131,23 +132,6 @@ sub _module_info_via_eumm {
 	+{ installed => JSON::XS::false }
     }
 }
-
-# Derived from module_exists from srezic-repository
-sub _module_path {
-    my($filename) = @_;
-    $filename =~ s{::}{/}g;
-    $filename .= ".pm";
-    return $INC{$filename} if $INC{$filename};
-    foreach my $prefix (@INC) {
-	my $realfilename = "$prefix/$filename";
-	if (-r $realfilename) {
-	    return $realfilename;
-	}
-    }
-    undef;
-}
-# REPO END
-
 
 1;
 
