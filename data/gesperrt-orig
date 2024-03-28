@@ -21,8 +21,8 @@ Skalitzer Str.	1 12899,10595 12930,10621 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
-am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 10000,13079 9938,13114
-am Hackeschen Markt (Nord)	1 9938,13114 10014,13108 10074,13103 10220,13098 10264,13097
+am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 10016,13067 10000,13079 9938,13114
+am Hackeschen Markt (Nord)	1 9938,13114 10014,13108 10074,13103 10219,13102 10248,13110 10270,13101
 Monbijouplatz	1 10000,13079 10014,13108
 Dennewitzplatz	1 7866,9902 7862,9918 7813,10112
 # REMOVED --- Dennewitzplatz	1 7814,10117 7906,10098
@@ -178,7 +178,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2024-03-24
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-02-29
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -351,7 +351,7 @@ Ohmstr.	1 11324,11689 11380,11863
 Anton-Saefkow-Str.	1s:q4 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
-Große Präsidentenstr.	1 10105,13004 10220,13098
+Große Präsidentenstr.	1 10105,13004 10219,13102
 # 
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
@@ -1214,7 +1214,7 @@ Wittenbergplatz	1 6335,10589 6268,10588 6216,10614 6171,10657
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6273 (Zwischenbericht)
 #: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
-#: last_checked: 2024-02-13
+#: last_checked: 2024-03-25 (mapillary)
 #: check_frequency: 90d
 Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
@@ -1238,7 +1238,7 @@ Köttgenstr.	1 473,15169 556,15175 613,15195
 #: by: ^^^
 #: note: Ausweichen auf Gehweg
 Rosenfelder Ring	1s:q3 18140,11932 18139,11833
-Neue Promenade	1::igndisp 10263,13047 10264,13097
+Neue Promenade	1::igndisp 10263,13047 10270,13101
 Hahns Mühle	1 24667,4900 24778,4821
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
@@ -3841,9 +3841,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,2
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11239
 #: note: Außerdem baustellenbedingte Einbahnstraßenregelung in der Krautstr., offen Richtung Süden sowie offen für Radfahrer
-#: last_checked: 2024-03-20 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2024-03-31
+#: last_checked: 2024-03-28
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-03-31
 Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 # 
 #: next_check_id: ONTARIOSEE-2023
@@ -3858,11 +3858,11 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/quartierspark-ritterstrasse-wird-auf-wunsch-der-anwohner-aufgehuebscht_a346061
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/schaeden-im-quartierpark-entdeckt_a355859
 #: note: laut Aushang Bauarbeiten bis 26.9.2023 (wurde aber nicht eingehalten)
-#: note: mittlerweile Halteverbot in der Umgebung bis 31.01.2024, verlängert bis 29.03.2024
+#: note: mittlerweile Halteverbot in der Umgebung bis 31.01.2024, verlängert bis 29.03.2024, verlängert bis 30.04.2024
 #: priority: #C
-#: last_checked: 2024-03-14 (mapillary)
+#: last_checked: 2024-03-28
 #: check_frequency: 60d
-#: next_check: 2024-03-29
+#: next_check: 2024-04-30
 # REMOVED --- #: next_check: 2023-09-26
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
@@ -4604,7 +4604,7 @@ Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-03-26
+#: last_checked: 2024-03-28
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4730,7 +4730,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="31"
 #: osm_watch: way id="289966097" version="21"
 #: priority: #A
-#: last_checked: 2024-03-22 (webcam)
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 Grunerstr.: Straßenzug wird entfernt	2::inwork 10849,12557 10838,12496 10807,12451 10746,12364 10697,12303
@@ -4795,7 +4795,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-03-22 (webcam)
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -4808,7 +4808,7 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-03-22 (webcam)
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5015,7 +5015,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 # REMOVED (offen) --- #: next_check_id: TAUBEN-2019 --- #: by: mapillary --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634292&postcount=247 --- #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum) --- #: confirmed_by: srt --- #: XXX wann sind die Bauarbeiten fertig?--- #: osm_watch: way id="753316506" version="4" --- #: last_checked: 2023-12-29 --- #: check_frequency: 60d --- Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht; am 2022-03-02 wieder vollständig aktiv; am 2023-02-10 war das Einbahnstraßenschild verschwunden, das Einfahrt-verboten-Schild aber noch da, am 2023-06-15 wieder weggedreht, am 2023-09-28 wieder da, möglicherweise bis Ende 2023? Mittlerweile Halteverbotsschilder bis 2024-03-31
-#: last_checked: 2024-02-23
+#: last_checked: 2024-03-28
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2024-03-31
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777

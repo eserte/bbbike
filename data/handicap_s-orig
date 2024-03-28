@@ -40,7 +40,7 @@ Gubener Str.: Sperrung im Kreuzungsbereich Gr¸nberger Str./Wedekindstr.	q2+::inw
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lˆsung geben?
-#: last_checked: 2024-02-21 (daf)
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 #: next_check: 2026-08-01
 M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+ 12558,11920 12617,11888
@@ -341,7 +341,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-18
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11185,11883 11160,12071
@@ -402,7 +402,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="4"
-#: last_checked: 2024-02-13
+#: last_checked: 2024-03-26 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -481,7 +481,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-03-18 (mapillary) vvv
+#: last_checked: 2024-03-28 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -761,17 +761,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukˆlln ###
 # 
-#: XXX Wildenbruchstraﬂe (Neukˆlln) in beiden Richtungen zwischen Harzer Straﬂe und Karl-Kunger-Straﬂe: geplatzte Wasserleitung, Straﬂe gesperrt, vom 11.03.2024 10:11
-#: source_id: viz2021:13.44635,52.48639,11.03.2024,10:11 (inaktiv)
-#: source_id: bvg2021:m43#BVG344367_0
-#: source_id[inactive]: bvg2021:m43#BVG344369_0
-#: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569
-#: last_checked: 2024-03-24
-#: check_frequency: 14d
-#: next_check: 2024-03-28
-Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
-# 
+# REMOVED (beendet) --- #: XXX Wildenbruchstraﬂe (Neukˆlln) in beiden Richtungen zwischen Harzer Straﬂe und Karl-Kunger-Straﬂe: geplatzte Wasserleitung, Straﬂe gesperrt, vom 11.03.2024 10:11 --- #: source_id: viz2021:13.44635,52.48639,11.03.2024,10:11 (inaktiv) --- #: source_id: bvg2021:m43#BVG344367_0 --- #: source_id[inactive]: bvg2021:m43#BVG344369_0 --- #: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569 --- #: last_checked: 2024-03-24 --- #: check_frequency: 14d --- #: next_check: 2024-03-28 --- Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
 # REMOVED (vermutlich frei befahrbar) --- #: next_check_id: WESER-2021 --- #: osm_watch: way id="1050315263" version="5" --- #: osm_watch: way id="996616281" version="10" --- #: osm_watch: way id="996616282" version="9" --- #: osm_watch: way id="1100696455" version="1" --- #: also_indoor: traffic (B) vvv --- #: last_checked: 2022-12-04 vvv --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -1127,7 +1117,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: note: Endedatum laut Halteverbotsschilder; L‰nge ca. 50-60m
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-01-22
+#: last_checked: 2024-03-25 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-12-20
 #: valid: -20241220
@@ -1218,8 +1208,8 @@ Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9459,11371 9474,11360
 Georgenstr.: Fuﬂg‰ngerzone, Bordstein	q4+ 9441,12670 9313,12662
 #: note: besonders in der Touristenhochsaison sehr eng vvv
 #: XXX_prog: Vormittags an Werktagen allerdings besser befahrbar, dann vielleicht q3? vvv
-Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10286,13084 10263,13047 10185,12982
-Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10264,13097 10263,13047
+Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10289,13088 10263,13047 10185,12982
+Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10270,13101 10263,13047
 Am Zwirngraben: Tische auf der Straﬂe, Fuﬂg‰nger	q4 10339,13052 10185,12982
 #: XXX_prog ^^^
 #: note ^^^
@@ -1623,13 +1613,14 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fuﬂg‰nger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 #: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
-Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q3 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
+Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q3 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 #: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
 Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
 Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 #: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
 #: note: fr¸her "q1", heute ist die Fuﬂg‰ngerfrequenz hˆher
-Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q2 9977,12912 10132,12941
+Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q2 9955,12915 10084,12921 10132,12941
+(Monbijoupark, ˆstlicher Weg): einige Fuﬂg‰nger	q1 10016,13067 9975,12959
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straﬂenbahn	q2 10308,12859 10255,12959
 #: note: Bordstein am Wendehammer, aber einige Meter weiter ist eine Bordsteinabsenkung
@@ -3115,7 +3106,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
-(entlang der Stadtbahn): Fuﬂg‰nger, schmal	q3 10117,12973 10004,12966 9930,12947
+(entlang der Stadtbahn): Fuﬂg‰nger, schmal	q3 10117,12973 10004,12966 9975,12959 9930,12947
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
@@ -3417,7 +3408,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-03-18
+#: last_checked: 2024-03-28
 #: check_frequency: 180d
 #: note: fr¸her: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3501,7 +3492,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Wollankstr. - Pankeweg): Fuﬂg‰nger, Bordstein	q2 9228,17274 9073,17361
 (entlang des REWEs): Fuﬂg‰nger	q2 15714,11941 15710,11857
 #: note: q3, falls alle vier Gleise mit Straﬂenbahnen belegt sind, aber manchmal sind es nur zwei oder so, und man kommt viel besser durch
-Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q3 10220,13098 10105,13004
+Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q3 10219,13102 10105,13004
 #: note: Verbot f¸r Fahrzeuge aller Art, Radfahrer+Anlieger frei
 Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8335,10518 8350,10499 8384,10507

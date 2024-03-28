@@ -37,7 +37,6 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Rankestr.: Einm¸ndungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
-Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
 B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg ¸ber Gehwege	q3::inwork 15747,12880 15950,12886
@@ -68,8 +67,8 @@ Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
 Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4857,10909 4930,10903
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9459,11371 9474,11360
 Georgenstr.: Fuﬂg‰ngerzone, Bordstein	q4 9441,12670 9313,12662
-Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10286,13084 10263,13047 10185,12982
-Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10264,13097 10263,13047
+Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10289,13088 10263,13047 10185,12982
+Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10270,13101 10263,13047
 Am Zwirngraben: Tische auf der Straﬂe, Fuﬂg‰nger	q4 10339,13052 10185,12982
 Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz: Fuﬂg‰nger	q2 8637,12258 8641,12227 8643,12208 8705,12217 8728,12220 8722,12268 8717,12302 8714,12319 8673,12315 8630,12310 8637,12258
@@ -344,10 +343,11 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fuﬂg‰nger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
-Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q3 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
+Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q3 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
 Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
-Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q2 9977,12912 10132,12941
+Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q2 9955,12915 10084,12921 10132,12941
+(Monbijoupark, ˆstlicher Weg): einige Fuﬂg‰nger	q1 10016,13067 9975,12959
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straﬂenbahn	q2 10308,12859 10255,12959
 F¸rther Str.: Gehweg	q2 5764,10322 5817,10279
@@ -1374,7 +1374,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
-(entlang der Stadtbahn): Fuﬂg‰nger, schmal	q3 10117,12973 10004,12966 9930,12947
+(entlang der Stadtbahn): Fuﬂg‰nger, schmal	q3 10117,12973 10004,12966 9975,12959 9930,12947
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
@@ -1638,7 +1638,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Unterf¸hrung S-Bhf. Waidmannslust): Fuﬂg‰nger	q3 4620,22079 4655,22100 4689,22058 4712,22068 4740,22075
 (Wollankstr. - Pankeweg): Fuﬂg‰nger, Bordstein	q2 9228,17274 9073,17361
 (entlang des REWEs): Fuﬂg‰nger	q2 15714,11941 15710,11857
-Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q3 10220,13098 10105,13004
+Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q3 10219,13102 10105,13004
 Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7713,16557 7447,16613

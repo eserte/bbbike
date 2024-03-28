@@ -193,7 +193,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2024-03-22
+#: last_checked: 2024-03-28
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -205,7 +205,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2024-03-22 vvv
+#: last_checked: 2024-03-28 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -359,6 +359,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
 #: by: https://www.deutsches-architekturforum.de/thread/6974-gasometer-sch%C3%B6neberg-euref-campus/?postID=752087#post752087 (Umbauarbeiten)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (Erwähnung einer Ampel)
 #: osm_watch: way id="306702294" version="21"
 # REMOVED (closed) --- #: osm_watch: note 4003302 1
 #: last_checked: 2024-03-22 vvv
@@ -382,7 +383,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2024-02-01
+#: last_checked: 2024-03-28
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -392,7 +393,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2024-03-24
+#: last_checked: 2024-03-28
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -2011,9 +2012,10 @@ Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1- 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1+ 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 (Galvanistr./Iburger Ufer - Uferweg): Parkweg	Q2 4441,12559 4441,12578
-Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9977,12912 10132,12941
+Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9955,12915 10084,12921 10132,12941
+(Monbijoupark, östlicher Weg): Parkweg	Q1- 10016,13067 9975,12959
 #: note: überwiegend, kurzer Abschnitt mit wassergebundener Decke
-Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
+Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Park am Fennpfuhl): Parkweg	Q1 15239,13580 15247,13662
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888
@@ -2520,8 +2522,8 @@ Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12207 14451,12396
 Hübnerstr.: Kopfsteinpflaster	Q2 13975,12862 13911,12692
 Heidenfeldstr.: Gehwegpflasterung	Q0- 13433,13371 13383,13349
 Heidenfeldstr.: Kopfsteinpflaster	Q2 13595,13442 13445,13376 13433,13371
-Neue Promenade: unebenes Pflaster	Q2+ 10286,13084 10263,13047 10185,12982 10132,12941
-Neue Promenade: unebenes Pflaster	Q2+ 10264,13097 10263,13047
+Neue Promenade: unebenes Pflaster	Q2+ 10289,13088 10263,13047 10185,12982 10132,12941
+Neue Promenade: unebenes Pflaster	Q2+ 10270,13101 10263,13047
 #: note: teilweise Schotter, teilweise alter Asphalt (?)
 Griebnitzseepromenade: Waldweg	Q1- -7252,-422 -7276,-482 -7337,-515 -7358,-605 -7495,-716 -7585,-736 -7677,-801 -7863,-984 -8053,-1110 -8100,-1170 -8143,-1191 -8231,-1212 -8282,-1129 -8426,-1036 -8566,-967 -8606,-925 -8620,-868 -8698,-735 -8759,-690 -8850,-679 -8901,-618 -8964,-569 -9109,-496 -9171,-478 -9171,-362 -9236,-255 -9375,-117
 (Frankfurter Allee, Nebenfahrbahn): Asphalt	Q0 16865,11931 16837,11920
@@ -10594,7 +10596,7 @@ Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
 #: historical_note: früher: note: die ersten Meter im Norden haben noch eine "vernünftige" wassergebundene Decke; Eintrag: unbefestigter Pfad, Q2
 (Zingster Str. - Wartenberger Weg): Asphalt	Q0 16358,18687 16325,18796
 Zingster Str.: Beton	Q0 16358,18687 16371,18669 16445,18571 16534,18457 16583,18386
-(entlang der Stadtbahn): Verbundsteinpflaster	Q1- 10117,12973 10004,12966 9930,12947
+(entlang der Stadtbahn): Verbundsteinpflaster	Q1- 10117,12973 10004,12966 9975,12959 9930,12947
 Lentzeallee [Stichstraße]: Verbundsteinpflaster	Q1 3165,6939 3190,7047
 # REMOVED (vermutlich nicht) --- #: XXX wird bei den Bauarbeiten vielleicht das Kopfsteinpflaster durch Asphalt ersetzt? --- #: osm_watch: way id="493264400" version="1" --- #: last_checked: 2018-06-30 --- #: check_frequency: 100d
 Ebereschenallee: schlechtes Kopfsteinpflaster	Q3+ 867,12140 963,12116
