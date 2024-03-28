@@ -57,10 +57,12 @@ sub run_pmake {
 # REPO BEGIN
 # REPO NAME module_path /home/eserte/src/srezic-repository 
 # REPO MD5 ac5f3ce48a524d09d92085d12ae26e8c
+# modification: %INC check
 sub module_path {
     my($filename) = @_;
     $filename =~ s{::}{/}g;
     $filename .= ".pm";
+    return $INC{$filename} if exists $INC{$filename};
     foreach my $prefix (@INC) {
 	my $realfilename = "$prefix/$filename";
 	if (-r $realfilename) {
