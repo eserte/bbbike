@@ -1347,7 +1347,7 @@ Jacob-Teitel-Park	F:P 10318,13528 10324,13459 10341,13376 10358,13381 10390,1349
 #: XXX Werden hier Schilder aufgestellt?
 #: osm_watch: way id="28251523" version="14"
 #: priority: #C
-#: last_checked: 2024-03-13 (mapillary)
+#: last_checked: 2024-03-27 (mapillary)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-06-04
 Agnes-Sorma-Park	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117 8858,13104
@@ -1569,12 +1569,15 @@ Fehrbelliner Platz	F:Square 4415,9343 4427,9305 4428,9283 4414,9255 4396,9237 43
 #: note: hauptsächlich Grünfläche mit Kirche, nicht frei befahrbar
 #: XXX_indoor evtl. eher mit F:P kennzeichnen
 Dennewitzplatz	F:Square 7813,10112 7862,9918 7866,9902 7906,10098 7906,10098 7814,10117 7813,10112
-#: note: glatt gepflastert, Café, Imbiss und Kirchgebäude, Markttage, im nördlichen Teil weitgehend frei befahrbar
+#: note: glatt gepflastert, Café, Imbiss und Kirchengebäude, Markttage, im nördlichen Teil weitgehend frei befahrbar
 Winterfeldtplatz	F:Square 7038,10088 7049,9833 7126,9825 7118,9870 7080,10098
 #: note: hauptsächlich U-Bahn-Gebäude, nicht frei befahrbar
 Nollendorfplatz	F:Square 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6937,10407 7033,10396 7131,10331
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/platz-des-4-juli-wird-entsiegelt_a411413 (Abschluss im zweiten Quartal 2025, 12000m² werden entsiegelt)
+#: XXX Parkfläche entsteht
+#: next_check: 2025-06-30
 #: note: Parkplatz, Fahrschulübungsfläche, teilweise frei befahrbar
-Platz des 4. Juli	F:Square 2624,1704 2659,1720 2860,1289 2824,1273
+Platz des 4. Juli	F:Square 2624,1704 2659,1720 2860,1289 2824,1273 2624,1704
 #: note: Parkplatz, Fahrschulübungsfläche, teilweise frei befahrbar
 Olympischer Platz	F:Square -514,11991 -505,11882 -157,11943 -110,12019 -193,12051 -272,12039 -514,11991
 #: note: gepflastert, frei befahrbar
