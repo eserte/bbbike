@@ -34,6 +34,7 @@ my $miscdir = "$FindBin::RealBin/../misc";
 my $gpsmandir = "$miscdir/gps_data";
 my $datadir = "$FindBin::RealBin/../data";
 my $mapserverdir = "$FindBin::RealBin/../mapserver/brb/data";
+my $otherdir = "$gpsmandir/other";
 
 GetOptions("v!" => \$v,
 	   "store!" => \$store,
@@ -41,11 +42,11 @@ GetOptions("v!" => \$v,
     or die "usage: $0 [-v] [-store]";
 
 my @gps_formats       = (
-			 ["$miscdir/mps_examples/BERNAU~1.MPS", "MPS"],
+			 ["$otherdir/mps_examples/BERNAU~1.MPS", "MPS"],
 			 ["$miscdir/gps_examples/G7toWin_ASCII.txt", "G7toWin_ASCII"],
 			 
-			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl", "ASCII"],
-			 ["$miscdir/ovl_resources/d2_obdg.ovl", "Ovl", "Binary 2.0"],
+			 ["$otherdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl", "ASCII"],
+			 ["$otherdir/ovl_resources/d2_obdg.ovl", "Ovl", "Binary 2.0"],
 			 ## Other ovl files tested seperately in ovl.t
 			 #["$miscdir/ovl_resources/various_from_net/bb02.ovl", "Ovl", "Binary 3.0"],
 			 # TODO: ["$miscdir/ovl_resources/various_from_net/10_um_die_hohe_reuth.ovl", "Ovl", "Binary 4.0"],
@@ -59,7 +60,7 @@ my @strassen_formats  = (
 			 ["$mapserverdir/strassen.shp", "ESRI"],
 			 ["$datadir/strassen", "bbd"],
 			 ["$miscdir/e00/germany/hsline.e00", "e00"],
-			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl"], # may be used as route or strassen
+			 ["$otherdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl"], # may be used as route or strassen
 			);
 
 plan tests => 2*@gps_formats + @strassen_formats;
