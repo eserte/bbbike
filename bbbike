@@ -1444,6 +1444,7 @@ if (!defined $ch) {
 # However, if this passes a "test phase" it should be available for
 # all.
 if ($devel_host) {
+    no warnings 'redefine';
     require Tk::BrowseEntry;
     *Tk::MyBrowseEntry::oldPopulate = \&Tk::BrowseEntry::Populate;
     *Tk::BrowseEntry::Populate = sub {
