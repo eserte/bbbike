@@ -56,7 +56,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      libxml_parse_html libxml_parse_html_or_skip
-	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
+	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string xml_eq
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float is_number isnt_number using_bbbike_test_cgi using_bbbike_test_data
@@ -562,6 +562,21 @@ sub kmllint_string {
 	}
     }
     xmllint_string($content, $test_name, %args, ($kml_schema ? (-schema => $kml_schema) : ()));
+}
+
+# generates one test
+sub xml_eq {
+    my($left, $right, $test_name) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+ SKIP: {
+	my $no_of_tests = 1;
+	Test::More::skip("Needs XML::LibXML for normalization", $no_of_tests)
+		if !eval { require XML::LibXML; 1 };
+	for ($left, $right) {
+	    $_ = XML::LibXML->new->parse_string($_)->toStringC14N;
+	}
+	eq_or_diff($left, $right, $test_name);
+    }
 }
 
 {

@@ -31,8 +31,9 @@ if (!eval { require Encode; 1 }) {
     diag "Encode is not available, some failures are expected";
 }
 
-use BBBikeTest qw(gpxlint_string eq_or_diff);
+use BBBikeTest qw(gpxlint_string eq_or_diff xml_eq);
 
+use GPS::GpsmanData::Any;
 use Route;
 
 sub keep_file ($$);
@@ -42,7 +43,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 172 + $new_strassen_gpx_tests;
+my $tests_per_variant = 174 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -641,6 +642,23 @@ EOF
 		    is $trks[0]->findvalue('./name'), 'Track 1', 'expected 1st fallback track name';
 		    is $trks[1]->findvalue('./name'), 'Track 2', 'expected 2nd fallback track name';
 		};
+	}
+
+	{
+	    # bbd2gpx as route with single coordinates per bbd line
+	    my $bbd = <<'EOF';
+#: map: polar
+#:
+Street1	X 13.4,52.5
+Street2	X 13.5,52.6
+Street3	X 13.6,52.7
+EOF
+	    my $s0 = Strassen->new_from_data_string($bbd);
+	    my $s = Strassen::GPX->new($s0);
+	    my $xml_res = $s->bbd2gpx(-as => 'route');
+	    gpxlint_string($xml_res);
+	    $xml_res =~ s{(\s*\Qcreator="Strassen::GPX $Strassen::GPX::VERSION\E) \(.*?\)}{$1 __normalized_creator_module__};
+	    xml_eq($xml_res, q{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX 1.26 __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.5" lon="13.4"><name>Street1</name></rtept><rtept lat="52.6" lon="13.5"><name>Street2</name></rtept><rtept lat="52.7" lon="13.6"><name>Street3</name></rtept></rte></gpx>});
 	}
     }
 }
