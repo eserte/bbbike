@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -961,7 +961,21 @@ sub image_ok ($;$) {
 
     my $fails = 0;
 
-    if (0) { # anytopnm does not return with non-zero on problems
+    if (0) { # some png images cannot be read (see t/images.t), wbmp support missing
+    SKIP: {
+	    Test::More::skip("Imager does not handle .wbmp files yet", 2)
+		    if $in =~ /\.wbmp$/;
+	    my $mod = $in =~ /\.xpm$/ ? 'Imager::Image::Xpm' : $in =~ /\.xbm/ ? 'Imager::Image::Xbm' : 'Imager';
+	    Test::More::skip("$mod needed for better image testing", 2)
+		    if !eval qq{ require $mod; 1 };
+	    my $full_testlabel = (ref $in ? "content" : "file '$in'") . "$testlabel";
+	    my $img = $mod->new((ref $in ? (data => $$in) : (file => $in)));
+	    Test::More::ok($img, "load ok - $full_testlabel")
+		    or Test::More::diag(Imager->errstr());
+	    Test::More::skip("image needed for next test", 1) if !$img;
+	    Test::More::cmp_ok($img->getwidth, ">", 0, "image has a width - $full_testlabel");
+	}
+    } elsif (0) { # anytopnm does not return with non-zero on problems
     SKIP: {
 	    Test::More::skip("IPC::Run needed for better image testing", 2)
 		    if !eval { require IPC::Run; 1 };
