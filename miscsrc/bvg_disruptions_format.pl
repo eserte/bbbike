@@ -170,6 +170,7 @@ sub highlight_words {
 	       |   wegen[ ]eines[ ]Wasserrohrbruches
 	       |   betrieblichen[ ]Gründen
 	       |   Bauarbeiten
+	       |   Zusatzhalt
 	       )\b}{wrap_friendly_coloring(['bold'], $1)}eigx;
     $text;
 }
