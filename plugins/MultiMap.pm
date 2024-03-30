@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.04;
+$VERSION = 2.05;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -244,6 +244,7 @@ sub register {
 	{ name => 'berliner-linien.de (VBB)',
 	  callback => sub { showmap_berlinerlinien(@_) },
 	  callback_3_std => sub { showmap_url_berlinerlinien(@_) },
+	  ($images{BerlinerLinien} ? (icon => $images{BerlinerLinien}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . 'F4map'} =
 	{ name => 'F4map',
@@ -371,7 +372,30 @@ PhcGDThNViEMKgYuBTMfFyAMNzpImCMGFxBADiUaHxscNidAyyMEFQ1AHRcOMBgeKgEuVlYi
 DDQELSkBDPjgQMFIhBL5SAyYoGCHDgASlMQwQMFADCtPgJwwgUPKEhg0rCyRIUKFEitTSuVL
 SerUsieNAgEAOw==
 EOF
-	}
+    }
+
+    if (!defined $images{BerlinerLinien}) {
+	# Fetched from https://www.berliner-linien.de/pic/li.060c.png
+	# and manually edited
+	$images{BerlinerLinien} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAALvAAAC7wFAipWXAAAAB3RJTUUH6AMeDCwE9uM/4AAAAoRJREFUOMt1k09IVFEYxX/3vflT
+NpY+NSKoXTsLhow2SQshJVsEgVCUG6m2biowjIKkwChoFS2sXStRK8pwUQYuahVU60RQp0ad14wz
+OfPeu6fF2FihZ3Mv3HO/73z3noO2wMLCmk6cWFJ395Ky2fJWNFHbWUnh+irp2jVfEAhCDQ0V1ilW
+oQ3/KeAAICic9wm8EvmOHNZa0mkLxACHdDokshHHR4/TPNJM31QfNUjVzkFjSaIiJSoKfgSSpCtX
+ZjU8PCdJWlxdVPxxXDxCLSMtimz0lwIHikfWIAF5p0BlvgxAIlGPMfUALOQXcAOXuBPnqHcUx1Sv
+xgAwUD+5i2hZJDLbiR9yCaaKgEEGJudecur1ab70fKGpronm7c0bI5QzGeUHB+VPTNQe5tfbivIt
+OXXdvaoLw0NqfNqoqfm3tXN/fFz5W7dUzmZlVjo71fjmDQDfbt4kZQyOYGjnBx6kXoHg3vI5Ljqt
+IMNqGLJ3cBCA3JkzxIxUU5O0ljrHwSCa8tsgVR2voBXszwIConK5xjdRBGuLiyreuCF/fLwm8cXc
+pLwnLTp5/bbOPhxQ0VtV8f2GmXLPnqkwMKByJiMjVSVYWbKlLPP5eQ5PHGbm9DvG7h9k/z6XSwdc
+Yt0JKl8j4l4MZ3cMB7PxC0J0jHUwszyDW3b53POZ1t2tjGkFEMmuFMWPRUiHxKIYfleOhufeRgEr
+yyf/E4ENMEnDntSedR/8ZMcOF2gguTeJGyUggNTHOrBV//DH472TvfJGPHWOdcpaq9HRFYEEoaan
+fYVBqMKxnAKvJP/y8iZhkhTaUHY9Tf39uVqY7txZ/Tdwm6bxP8zO/lJbW1bt7Vl9/762ZZx/A84s
+RMCafb9MAAAAAElFTkSuQmCC
+EOF
+    }
 
     if (!defined $images{Pharus}) {
 	# This is the favicon of www.berliner-stadtplan.com, run through "base64"
@@ -1733,7 +1757,8 @@ sub showmap_url_berlinerlinien {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 25 - log(($args{mapscale_scale})/2100)/log(1.21); # XXX rough formula
-    sprintf "https://www.berliner-linien.de/BL/pages/netz.html?netz=VBB&zoom=%d&prio=400&X=%s&Y=%s", $scale, $px, $py;
+    #sprintf "https://www.berliner-linien.de/BL/pages/netz.html?netz=VBB&zoom=%d&prio=400&X=%s&Y=%s", $scale, $px, $py;
+    sprintf "https://www.berliner-linien.de/?netz=VBB&zoom=%d&prio=400&X=%s&Y=%s", $scale, $px, $py;
 }
 
 sub showmap_berlinerlinien {
