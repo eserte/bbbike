@@ -499,9 +499,9 @@ sub _bbd2gpx_twig {
     my $gpx = XML::Twig::Elt->new(gpx => { version => "1.1",
 					   creator => "Strassen::GPX $VERSION (XML::Twig $XML::Twig::VERSION) - http://www.bbbike.de",
 					   xmlns => "http://www.topografix.com/GPX/1/1",
-					   #$gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
-					   #"xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
-					   'xmlns:trp' => TRIP_EXT_NS,
+					   "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
+					   "xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
+					   ($with_trip_extensions ? ('xmlns:trp' => TRIP_EXT_NS) : ()),
 					 },
 				 );
     $twig->set_root($gpx);
