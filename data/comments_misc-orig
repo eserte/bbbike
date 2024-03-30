@@ -617,7 +617,7 @@ Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22192,6659 22186,
 Bus X69	busroute_N 22325,6385 22534,6249
 Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24103,4260 24135,4264 24181,4270
 Bus 190	busroute_N 21019,7340 21050,7341 21153,7393 21341,7487 21475,7500
-Bus 190	busroute_N 21175,9989 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21017,10423 21281,10428
+Bus 190	busroute_N 21174,9986 21146,9988 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21009,10425 21250,10420 21277,10435
 Bus 190	busroute_N 21019,7340 21050,7341 21153,7393 21341,7487 21475,7500
 Bus 398	busroute_N 21135,10995 21249,11042 21308,11075 21354,11101 21385,11119 21420,11150 21457,11188 21535,11267 21628,11384
 Bus 108	busroute_N 21124,11462 21074,11465 20959,11472 20828,11480 20818,11480 20729,11483 20720,11484 20650,11488 20641,11488 20616,11490 20569,11492 20521,11494 20540,11660 20571,11698
@@ -843,7 +843,7 @@ Bordsteine beim Überqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,17
 #: osm_watch: way id="523802314" version="4"
 #: last_checked: 2024-03-13
 #: check_frequency: 120d
-Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6917,9274 7001,9291
+Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6921,9275 6994,9288
 Quastenhornweg: Privatstraße	CS -7595,4374 -7557,4340 -7473,4306 -7413,4304
 Gößweinsteiner Gang: Privatstraße	CS -7636,4346 -7561,4191
 Grüner Wall: Privatstraße	CS -7932,6101 -7834,6109
@@ -1831,7 +1831,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2024-03-27 vvv
+#: last_checked: 2024-03-30 vvv
 #: check_frequency: 60d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638

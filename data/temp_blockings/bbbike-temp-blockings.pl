@@ -1178,7 +1178,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (13.9.2014 10:00 - 14.9.2014 20:00)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7268,8960
+	q4; 6687,8385 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7268,8960
 EOF
      },
      { from  => 1097618400, # 2004-10-13 00:00
@@ -2581,10 +2581,10 @@ EOF
        text  => 'Eisenacher Str. (Schöneberg) in beiden Richtungen, zwischen Grunwaldstr. und Hauptstr. Veranstaltung, Straße vollständig gesperrt (bis 24.07.2005 23:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 6735,9103 6769,8996
+	2 6735,9103 6762,8999
 	2 6735,9103 6709,9234
-	2 7009,8705 6860,8878
-	2 6769,8996 6860,8878
+	2 7005,8701 6852,8880
+	2 6762,8999 6852,8880
 EOF
      },
      { from  => 1122156000, # 2005-07-24 00:00
@@ -2722,7 +2722,7 @@ EOF
 	2 5725,10892 5782,10884
 	2 6025,10746
 	2 5907,10821 5782,10884
-	2 6025,10746 6133,10679
+	2 6025,10746 6116,10688
 	2 5475,10808 5341,10756
 	3 5829,10964 5782,10884 5669,10704
 	3 5236,10994 5232,10947 5230,10919 5217,10736 5215,10711 5212,10661 5196,10398
@@ -5657,7 +5657,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003267',
        data  => <<EOF,
-	2::temp 6133,10679 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
+	2::temp 6116,10688 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
 EOF
      },
      { from  => 1156888800, # 2006-08-30 00:00
@@ -6328,10 +6328,10 @@ EOF
 #: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00
 #: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
 #: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
-	2::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291
-	2::temp 7308,9163 7101,9027 6975,8944
-	2::temp 6945,9142 7035,9161
-	2::temp 7012,9222 7124,9226
+	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288
+	2::temp 7308,9163 7101,9027 6958,8941
+	2::temp 6936,9138 7029,9156
+	2::temp 7007,9220 7124,9226
 EOF
      },
      { from  => 1160214244, # 2006-10-07 11:44
@@ -6363,10 +6363,10 @@ EOF
 #: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
 #: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
 #: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
-	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
-	2::temp 6945,9142 7035,9161
-	2::temp 6975,8944 7101,9027 7308,9163
-	2::temp 7012,9222 7124,9226
+	2::temp 6994,9288 7007,9220 7029,9156 7101,9027 7201,8870
+	2::temp 6936,9138 7029,9156
+	2::temp 6958,8941 7101,9027 7308,9163
+	2::temp 7007,9220 7124,9226
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00
@@ -7713,7 +7713,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005040',
        data  => <<EOF,
-	2::temp 6133,10679 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
+	2::temp 6116,10688 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
 EOF
      },
      { from  => undef, # 
@@ -15351,7 +15351,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013806',
        data  => <<EOF,
-	q4::inwork 21164,9960 21115,9842
+	q4::inwork 21163,9956 21115,9842
 EOF
      },
      { from  => 1248904800, # 2009-07-30 00:00
@@ -16849,7 +16849,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-	q4::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291 7118,9315 7202,9329 7299,9346 7418,9366 7471,9360
+	q4::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288 7118,9315 7202,9329 7299,9346 7418,9366 7471,9360
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -24755,7 +24755,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7268,8960
+	q4; 6687,8385 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7268,8960
 EOF
      },
      { from  => 1426719600, # 2015-03-19 00:00
@@ -26754,8 +26754,8 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: osm_watch: way id="548612558" version="1" --- #: last_checked: 2018-04-30 -- #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
-# RE;OVED ---	q3::inwork; 7101,9027 7035,9161
-	q4::inwork; 7035,9161 7012,9222 7001,9291
+# RE;OVED ---	q3::inwork; 7101,9027 7029,9156
+	q4::inwork; 7029,9156 7007,9220 6994,9288
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -29017,7 +29017,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2018/pressemitteilung.747946.php',
        data  => <<EOF,
-	q4::inwork; 6769,8996 6735,9103 6709,9234
+	q4::inwork; 6762,8999 6735,9103 6709,9234
 EOF
      },
      { from  => undef,
@@ -32431,7 +32431,7 @@ Karl-Marx-Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::m
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2415,9765 2445,9838 2473,9861 2532,9911 2590,9949 2694,10002 2702,10006 2770,10024 2828,10040 2974,10081 3111,10116 3189,10141 3289,10174 3374,10201 3489,10240 3562,10264 3618,10283 3737,10322 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4496,10504 4672,10552 4838,10597 5069,10662 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2445,9838 2369,9779
 Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5370,6486 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754 4946,5725 4900,5648 4861,5581 4832,5522 4767,5389 4745,5344 4741,5309 4677,5274 4593,5235 4516,5194 4436,5150 4347,5103
-Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5782,10884 5907,10821 6025,10746 6133,10679 6171,10657
+Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5782,10884 5907,10821 6025,10746 6116,10688 6171,10657
 Wilmersdorfer Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 3813,10435 3870,10510 3883,10585 3881,10699 3869,10760 3847,10865 3835,10915 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462 3706,11534 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
 # REMOVED --- #: next_check ^^^ --- #: next_check_id ^^^
 EOF
@@ -32682,7 +32682,7 @@ EOF
 #: last_checked: 2024-02-10 (architektur-urbanistik)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-11-15
-	q4::inwork 6033,10403 6133,10679
+	q4::inwork 6021,10405 6116,10688
 EOF
      },
      { from  => 1610838000, # 2021-01-17 00:00
@@ -34845,7 +34845,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv)
 #: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024) (inaktiv)
-#: also_indoor: traffic (ex-B,G,W)
+#: also_indoor: traffic (ex-B,ex-G,ex-W)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
@@ -35646,7 +35646,7 @@ EOF
 #: XXX Wie sieht die Verkehrsführung nach dem 11.3.2024 aus? Wird die Schubertstraße weiterhin gesperrt sein?
 #: also_indoor: traffic (G,B,W)
 # REMOVED --- #: priority: #A
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-03-26 (okas) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-03-11 vvv
 # REMOVED --- #: next_check: 2023-08-27 vvv
@@ -37533,7 +37533,7 @@ EOF
 #: last_checked: 2024-03-13
 #: check_frequency: 150d
 #: next_check: 2025-01-05
-	q3::inwork 6447,9661 6348,9541
+	q3::inwork 6447,9661 6341,9546
 EOF
      },
      { from  => $isodate2epoch->("2023-04-10 00:00:00"), # 1667170800, # 2022-10-31 00:00
@@ -37770,7 +37770,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.34791,52.48535,17.11.2022,12:41',
        data  => <<EOF,
-	q4::inwork 6860,8878 6664,8787 6644,8780
+	q4::inwork 6852,8880 6664,8787 6644,8780
 EOF
      },
      { from  => undef, # 
@@ -38182,9 +38182,9 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1622905331079692289#m
 #: by: https://nitter.it/pic/orig/media%2FFoW3syLXsAAK_Ur.jpg
 #: note: laut VIZ nur der Kfz-Verkehr betroffen
-Barbarossastr. (laut Baustellenplan hier nur vor der Kreuzung gesperrt)	q3::inwork 6123,9544 6030,9542
-Barbarossastr.	q4::inwork 6030,9542 5950,9537
-Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6030,9542 6049,9401
+Barbarossastr. (laut Baustellenplan hier nur vor der Kreuzung gesperrt)	q3::inwork 6122,9546 6026,9543
+Barbarossastr.	q4::inwork 6026,9543 5950,9537
+Landshuter Str. (im Kreuzungsbereich "abgehängt")	q3::inwork 5990,9730 6026,9543 6049,9401
 EOF
      },
      { from  => 1675749600, # 2023-02-07 07:00
@@ -38412,7 +38412,7 @@ EOF
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-01-27
+#: last_checked: 2024-03-26 (okas)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
@@ -39506,11 +39506,11 @@ EOF
 #: source_id: bvg2021:190#BVG320324_0
 #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
 #: also_indoor: traffic (G)
-#: last_checked: 2024-02-10 vvv
+#: last_checked: 2024-03-30 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-10 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
-Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
+Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
 # REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
 #: next_check ^^^
 #: check_frequency ^^^
@@ -40784,6 +40784,7 @@ EOF
 	2::inwork 23305,14914 23318,14847 23297,14772
 #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
 #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
+#: also_indoor: traffic (B)
 	q3::inwork 23222,14809 23297,14772 23369,14756
 	q3::inwork 23288,14719 23297,14772
 #: note ^^^
@@ -40897,7 +40898,8 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
-#: also_indoor: traffic (W)
+#: also_indoor: traffic (G,W)
+#: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
 #: last_checked: 2024-02-23 (architektur-urbanistik)
 #: next_check: 2024-03-31
@@ -41611,12 +41613,12 @@ EOF
        text  => 'Dietlindestr.: Sperrung an der Rüdigerstr., möglicherweise bis September 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert
+#: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
 #: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-03-23 vvv
+#: last_checked: 2024-03-30 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-03-28 vvv
+#: next_check: 2024-04-19 vvv
 # REMOVED --- #: next_check: 2024-09-30 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
@@ -42395,6 +42397,23 @@ EOF
 #: note: Ende laut Halteverbotsschilder
 	q4::inwork 6010,1657 6130,1399 6278,1109
 	q4::inwork 6029,1357 6130,1399 6189,1423
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wiesenstr./Uferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2024-02-17 (mapillary) vvv
+#: check_frequency: 60d vvv
+	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
+	q4::inwork 8164,15840 8140,15859
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 EOF
      },
     );

@@ -522,7 +522,7 @@ Wollankstr.	1 10027,18165 10054,18210
 #: confirmed_by: srt
 Kreuzstr.	1 9818,17921 9893,18179 9895,18297 9905,18329
 #: note: war mal "1s", aber ich wurde dafür zu oft getadelt...
-Vorbergstr.	1 7012,9222 7124,9226 7308,9163
+Vorbergstr.	1 7007,9220 7124,9226 7308,9163
 Wederstr.	1 12981,6366 12813,6334 12597,6293
 DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12850,17084 12795,17151 12707,17085 12789,16977 12783,16925 12813,16884 12837,16853 12858,16825
 Herbert-Bayer-Str.	1 12911,17021 12846,16971 12898,16898 12923,16873
@@ -1448,8 +1448,8 @@ Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 1273
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
-# REMOVED (Einfahrt verboten-Schild wurde abgedeckt, dauerhaft?) --- Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
-# REMOVED (Einfahrt verboten-Schild wurde abgedeckt, dauerhaft?) --- Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
+Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
+Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 # REMOVED (eigentlich weitgehend beendet) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-05-06 --- #: check_frequency: 14d --- #: valid: 20220510-
 Mühsamstr.	1 13818,12897 13830,12907
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
@@ -2377,7 +2377,7 @@ Wolfensteindamm: Mittelstreifen	3nocross 4796,5129 4794,5161 4766,5208 4745,5283
 Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3nocross 4796,5129 4822,5114 4846,5069 4879,5017
 Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross 4772,5069 4692,4997 4675,4983 4517,4853
 #: by ^^^
-Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6989,8687
+Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6986,8683
 #: by: Jirka Klaue:
 Am Tierpark: Straßenbahntrasse	3nocross 18585,10278 18554,10354 18446,10620
 Am Tierpark: Straßenbahntrasse	3nocross 18280,11266 18263,11393 18216,11656
@@ -3727,7 +3727,7 @@ Schranken	BNP:3::trailer=10 15866,16823
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: ALTFRIEDRICHSFELDE-2024
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 #: check_frequency: 90d
 #: next_check: 2024-05-24
 #: valid: -20240524
@@ -3849,7 +3849,7 @@ Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,119
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="25796640" version="25"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -3938,7 +3938,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2024-02-18 (architektur-urbanistik)
+#: last_checked: 2024-03-26 (okas)
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -4026,7 +4026,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4109,7 +4109,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4466,7 +4466,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2024-03-13 (mapillary)
+#: last_checked: 2024-03-30
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -5374,7 +5374,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: also_indoor: traffic (G,B,W)
 #: osm_watch: way id="1223345278" version="5"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
-#: last_checked: 2024-02-29 (baustellen-doku)
+#: last_checked: 2024-03-26 (okas)
 #: check_frequency: 180d
 Bhf. Blankenfelde: Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
 # 
@@ -5494,7 +5494,7 @@ tragen (Treppe, 14 Stufen)	0:20 8190,10960
 #: XXX_prog: Should be Treppe with more than one point: 6920,11064 6882,11061
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064
 Potsdamer Str.: schwierig zu überqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
-Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6861,9263 6917,9274
+Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6847,9261 6921,9275
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704

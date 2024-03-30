@@ -841,10 +841,10 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
 #: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00
 #: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
 #: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
-	2::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291
-	2::temp 7308,9163 7101,9027 6975,8944
-	2::temp 6945,9142 7035,9161
-	2::temp 7012,9222 7124,9226
+	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288
+	2::temp 7308,9163 7101,9027 6958,8941
+	2::temp 6936,9138 7029,9156
+	2::temp 7007,9220 7124,9226
 ',
          'from' => 1715292000,
          'id' => 728,
@@ -4939,7 +4939,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: last_checked: 2024-02-10 (architektur-urbanistik)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-11-15
-	q4::inwork 6033,10403 6133,10679
+	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
          'id' => 3320,
@@ -5402,7 +5402,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv)
 #: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024) (inaktiv)
-#: also_indoor: traffic (ex-B,G,W)
+#: also_indoor: traffic (ex-B,ex-G,ex-W)
 # REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-14
@@ -5627,7 +5627,7 @@ zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 #: XXX Wie sieht die Verkehrsführung nach dem 11.3.2024 aus? Wird die Schubertstraße weiterhin gesperrt sein?
 #: also_indoor: traffic (G,B,W)
 # REMOVED --- #: priority: #A
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-03-26 (okas) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-03-11 vvv
 # REMOVED --- #: next_check: 2023-08-27 vvv
@@ -6160,7 +6160,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: last_checked: 2024-03-13
 #: check_frequency: 150d
 #: next_check: 2025-01-05
-	q3::inwork 6447,9661 6348,9541
+	q3::inwork 6447,9661 6341,9546
 ',
          'from' => undef,
          'id' => 3669,
@@ -6492,7 +6492,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-01-27
+#: last_checked: 2024-03-26 (okas)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-09
 	q4::inwork; 22431,6068 22467,6135
@@ -6847,11 +6847,11 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: bvg2021:190#BVG320324_0
 #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
 #: also_indoor: traffic (G)
-#: last_checked: 2024-02-10 vvv
+#: last_checked: 2024-03-30 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-05-10 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
-Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21175,9989
+Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
 # REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7230,6 +7230,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 	2::inwork 23305,14914 23318,14847 23297,14772
 #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
 #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
+#: also_indoor: traffic (B)
 	q3::inwork 23222,14809 23297,14772 23369,14756
 	q3::inwork 23288,14719 23297,14772
 #: note ^^^
@@ -7289,7 +7290,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
-#: also_indoor: traffic (W)
+#: also_indoor: traffic (G,W)
+#: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
 #: last_checked: 2024-02-23 (architektur-urbanistik)
 #: next_check: 2024-03-31
@@ -7589,12 +7591,12 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
          'until' => 1716303600
        },
        {
-         'data' => '#: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert
+         'data' => '#: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
 #: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-03-23 vvv
+#: last_checked: 2024-03-30 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-03-28 vvv
+#: next_check: 2024-04-19 vvv
 # REMOVED --- #: next_check: 2024-09-30 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
@@ -8117,6 +8119,24 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
          'text' => 'Zerbster Str./Georgenstr.: Arbeiten im Kreuzungsbereich, Fahrbahn gesperrt, Umwege, voraussichtlich bis zum 03.05.2024',
          'type' => 'handicap',
          'until' => 1714744800
+       },
+       {
+         'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2024-02-17 (mapillary) vvv
+#: check_frequency: 60d vvv
+	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
+	q4::inwork 8164,15840 8140,15859
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 4032,
+         'text' => 'Wiesenstr./Uferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

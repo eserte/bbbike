@@ -587,6 +587,15 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
+#: last_checked: 2024-03-30 vvv
+#: also_indoor: traffic (G,B)
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
+#: osm_watch: note 4145491 2
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
+#: osm_watch: note 4145495 1
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
+#: last_checked ^^^
+# 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # REMOVED (beendet, keine Besserung der Qualität) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: XXX wird sich die Qualität des Asphalts nach den Bauarbeiten verbessern, zumindest in Richtung Nordwesten? --- #: last_checked: 2021-02-18 --- Wallensteinstr.: Bauarbeiten zwischen Sangeallee und Ilsestr., Einbahnstraßenregelung, Ausweichen auf engen Gehweg	q3::inwork; 18134,9080 18092,9141 18037,9195
 # REMOVED (beendet) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2021-02-18 --- #: check_frequency: 7d --- Dolgenseestr.: Bauarbeiten nördlich des Hönower Weges, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 17404,9794 17391,9746 17383,9719
@@ -857,13 +866,13 @@ Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inw
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="36"
 #: osm_watch: way id="1193560283" version="5"
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1604,7 +1613,7 @@ Rolandufer: Gehweg, viele Fußgänger	q3 10821,12153 10660,12176 10591,12203 10583
 Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe	q4 10583,12206 10492,12289 10417,12378 10416,12394
 #: XXX_prog BS an der Lynar/Herthastr., sowie an der Koenigsallee, wenn man nach links abbiegen möchte (ansonsten q2 oder q3)
 Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
-Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6020,10351
+Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6029,10356
 Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
@@ -2026,6 +2035,7 @@ Heinrich-Dathe-Platz: Fußgänger	q2 18478,10406 18418,10365 18394,10348
 Heinrich-Dathe-Platz: Fußgänger	q2 18418,10365 18387,10406
 (Heinrich-Dathe-Platz - Erich-Kurz-Str.): Fußgänger	q2 18387,10406 18350,10393
 Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
+Dathepromenade: Fußgänger	q1 18101,10169 18091,10112 17995,10070
 #: XXX_prog BS (an beiden Seiten, ansonsten -> einige Fußgänger, q1)
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17970,10132 17905,10122
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
@@ -2357,6 +2367,7 @@ Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
 Nordhafen: Fußgänger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2980,16401 -2972,16420
 (Grünheider Weg - Fredersdorfer Weg): starker Anstieg, nicht für Fahrräder geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
+#: note: allerdings fehlt das Zusatzschild an der südlichen Dolgenseestr. Richtung Süden; an den anderen Kreuzungen ist es da
 (entlang des Tränkegrabens): Fußgänger, Radfahren erlaubt	q2+ 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164 17157,10173 17143,10186 17144,10297 17163,10374 17239,10632 17249,10651 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 Hortensienplatz: einige Fußgänger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 #: note: früher q2
@@ -4856,6 +4867,8 @@ Hönower Weg: einige Fußgänger	q0- 17383,9719 16984,9857 16925,9852 16900,9861
 (KGA Grüne Weiden - Heidekampgraben): enger Trampelpfad	q3- 15214,7307 15190,7344 15171,7338
 # 
 Mittelweg: mehrere Bodenschwellen	q1 16061,4285 16180,4461 16203,4495 16258,4578 16293,4630 16327,4680 16354,4720 16407,4800 16436,4844 16549,5015
+# 
+Gleiwitzer Str.: Bordstein, mögliche Glasscherben	q3 21146,9988 21163,9956
 # 
 ######################### User Contributions #################################
 # 

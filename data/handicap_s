@@ -30,6 +30,9 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
 Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
@@ -336,7 +339,7 @@ Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 Rolandufer: Gehweg, viele Fußgänger	q3 10821,12153 10660,12176 10591,12203 10583,12206
 Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe	q4 10583,12206 10492,12289 10417,12378 10416,12394
 Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
-Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6020,10351
+Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6029,10356
 Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
@@ -599,6 +602,7 @@ Heinrich-Dathe-Platz: Fußgänger	q2 18478,10406 18418,10365 18394,10348
 Heinrich-Dathe-Platz: Fußgänger	q2 18418,10365 18387,10406
 (Heinrich-Dathe-Platz - Erich-Kurz-Str.): Fußgänger	q2 18387,10406 18350,10393
 Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
+Dathepromenade: Fußgänger	q1 18101,10169 18091,10112 17995,10070
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17970,10132 17905,10122
 Rheingoldpark: Fußgänger haben Vorrang	q1 19073,8828 19145,8659
 Schloßinsel Köpenick: Fußgänger	q4 22093,4499 22076,4422
@@ -2530,6 +2534,7 @@ Hönower Weg: einige Fußgänger	q0 17383,9719 16984,9857 16925,9852 16900,9861
 (KGA Grüne Weiden - Heidekampgraben): enger Trampelpfad, Steigungen/Gefälle	q4 15214,7307 15175,7301
 (KGA Grüne Weiden - Heidekampgraben): enger Trampelpfad	q3 15214,7307 15190,7344 15171,7338
 Mittelweg: mehrere Bodenschwellen	q1 16061,4285 16180,4461 16203,4495 16258,4578 16293,4630 16327,4680 16354,4720 16407,4800 16436,4844 16549,5015
+Gleiwitzer Str.: Bordstein, mögliche Glasscherben	q3 21146,9988 21163,9956
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

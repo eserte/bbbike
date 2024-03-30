@@ -317,7 +317,7 @@ Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
 Kreuzstr.	1 9818,17921 9893,18179 9895,18297 9905,18329
-Vorbergstr.	1 7012,9222 7124,9226 7308,9163
+Vorbergstr.	1 7007,9220 7124,9226 7308,9163
 Wederstr.	1 12981,6366 12813,6334 12597,6293
 DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12850,17084 12795,17151 12707,17085 12789,16977 12783,16925 12813,16884 12837,16853 12858,16825
 Herbert-Bayer-Str.	1 12911,17021 12846,16971 12898,16898 12923,16873
@@ -910,6 +910,8 @@ Mittelstreifen, Bordsteine	3nocross::ignrte 12930,10621 12899,10595 12731,10547
 Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10621 12899,10595 12978,10581
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
+Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
+Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 Mühsamstr.	1 13818,12897 13830,12907
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
@@ -1819,11 +1821,11 @@ Karl-Liebknecht-Str. -> Rosa-Luxemburg-Str.: Straßenbahntrasse	3::igndisp 10525,
 Rosa-Luxemburg-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10685,12966 10695,12933 10733,12967
 Mittelstreifen	3nocross::ignrte 6492,9782 6447,9661 6445,9538
 Martin-Luther-Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6492,9782 6447,9661 6542,9606
-Martin-Luther-Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6445,9538 6447,9661 6348,9541
-Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6348,9541 6447,9661 6492,9782
-Speyerer Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6348,9541 6447,9661 6542,9606
+Martin-Luther-Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6445,9538 6447,9661 6341,9546
+Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6341,9546 6447,9661 6492,9782
+Speyerer Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6341,9546 6447,9661 6542,9606
 Traunsteiner Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6542,9606 6447,9661 6445,9538
-Traunsteiner Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6542,9606 6447,9661 6348,9541
+Traunsteiner Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6542,9606 6447,9661 6341,9546
 Mittelstreifen	3nocross::ignrte 6504,9961 6504,9865 6492,9782
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6504,9961 6504,9865 6518,9867
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6492,9782 6504,9865 6463,9862
@@ -2257,9 +2259,9 @@ Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gefährlich/
 Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4732,4939 4692,4997 4675,4983
 Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4692,4997 4675,4983 4725,4876
 Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4725,4876 4675,4983 4517,4853
-Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6989,8687
+Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6986,8683
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3::igndisp 6765,8480 6912,8617 6818,8697
-Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6818,8697 6912,8617 6989,8687
+Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6818,8697 6912,8617 6986,8683
 Straßenbahntrasse	3nocross::ignrte 18585,10278 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
@@ -3595,9 +3597,9 @@ Schwingtor zum Spielplatz	BNP:10:-249 11815,13045
 tragen (Treppe, 14 Stufen)	0:20:-140 8190,10960
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30:69 6920,11064
 schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968,11048 7980,11070
-queren schlecht möglich	3nocross::ignrte 6709,9234 6861,9263 6917,9274
-Grunewaldstr. -> Klixstr.: queren schlecht möglich	3::igndisp 6917,9274 6861,9263 6885,9132
-Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6861,9263 6709,9234
+queren schlecht möglich	3nocross::ignrte 6709,9234 6847,9261 6921,9275
+Grunewaldstr. -> Klixstr.: queren schlecht möglich	3::igndisp 6921,9275 6847,9261 6870,9129
+Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6870,9129 6847,9261 6709,9234
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704

@@ -65,8 +65,8 @@ Nassauische Str./Berliner Str.: Fußgängerampel	DH:len=25:tl 5189,8983 5195,8880 
 Mehlitzstr./Berliner Str.: Fußgängerampel	DH:len=20:tl 5164,8771 5172,8880 5022,8879
 # 
 #: XXX_prog BS vvv
-Schwäbische Str./Grunewaldstr.: Bordsteine beim Überqueren der Grunewaldstr.	DH:t=5 6851,9365 6917,9274 7001,9291
-Schwäbische Str./Grunewaldstr.: Bordsteine beim Überqueren der Grunewaldstr.	DH:t=5 6861,9263 6917,9274 6851,9365
+Schwäbische Str./Grunewaldstr.: Bordsteine beim Überqueren der Grunewaldstr.	DH:t=5 6851,9365 6921,9275 6994,9288
+Schwäbische Str./Grunewaldstr.: Bordsteine beim Überqueren der Grunewaldstr.	DH:t=5 6847,9261 6921,9275 6851,9365
 #: XXX_prog ^^^
 # 
 Kulmer Str./Goebenstr.: Ampel auf der linken Seite benutzen	DH:t=15 7771,9479 7829,9723 7848,9814
@@ -503,7 +503,7 @@ Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,69
 #: note: laut Bauschild der Wasserbetriebe bis Frühjahr 2024, mittlerweile bis Juni 2024
 #: osm_watch: way id="460741797" version="8"
 #: osm_watch: way id="1225572236" version="1"
-#: last_checked: 2024-03-27
+#: last_checked: 2024-03-30
 #: check_frequency: 90d
 #: next_check: 2024-05-24
 # REMOVED --- #: valid: -20231006
