@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2014,2015,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2014,2015,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '1.26';
+$VERSION = '1.27';
 
 use Strassen::Core;
 
@@ -368,11 +368,12 @@ sub _bbd2gpx_libxml {
 		 coords => [ $xy2longlat->($r->[Strassen::COORDS][0]) ],
 		};
 	} elsif ($as eq 'route') {
-	    my $i = 0;
+	    my $i = 1;
+	    my $i_len = 1+int(log(@{ $r->[Strassen::COORDS] })/log(10));
 	    push @wpt,
 		map {
 		    +{
-		      name => $name.$i++,
+		      name => $name.sprintf("%0${i_len}d", $i++),
 		      coords => [ $xy2longlat->($_) ]
 		     }
 		} @{ $r->[Strassen::COORDS] };
