@@ -23,8 +23,9 @@ use Term::ANSIColor qw(colored);
 my($host, $m_host);
 my($compare_host, $compare_m_host);
 my $skip_lines = 0;
-my $do_file_cache_normalization = 1;
-my $do_content_length_normalization = 1;
+my $do_file_cache_normalization = 1; # about the x-bbbike-file-cache header
+my $do_content_length_normalization = 1; # usually for servers working with chunked transfer-encoding vs servers emitting content-length
+my $do_connection_normalization = 0; # usually for Connection:keep-alive vs close
 my $do_compression = 0;
 my $url_layout = 'cgi-bin';
 GetOptions(
@@ -35,13 +36,14 @@ GetOptions(
 	   "skip-lines=i" => \$skip_lines,
 	   'file-cache-normalization!' => \$do_file_cache_normalization,
 	   'content-length-normalization!' => \$do_content_length_normalization,
+	   'connection-normalization!' => \$do_connection_normalization,
 	   'compression!' => \$do_compression,
 	   'url-layout=s' => \$url_layout,
 	  )
     or die <<EOF;
 usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...]
 	[-skip-lines number] [-url-layout cgi-bin|cgi]
-	[-no-file-cache-normalization] [-no-content-length-normalization] [-compression]
+	[-no-file-cache-normalization] [-no-content-length-normalization] [-connection-normalization] [-compression]
 	logfile
 EOF
 
@@ -183,6 +185,7 @@ sub compare_responses {
 		    'last-modified',
 		    ($do_file_cache_normalization ? 'x-bbbike-file-cache' : ()),
 		    ($do_content_length_normalization ? 'content-length' : ()),
+		    ($do_connection_normalization ? 'connection' : ()),
 		   ) {
 	    $h->remove_header($rh);
 	}
