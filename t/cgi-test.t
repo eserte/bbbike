@@ -28,6 +28,7 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use CGI qw();
 use Data::Dumper ();
+use Encode qw(from_to);
 use Getopt::Long;
 use Safe ();
 use Time::HiRes qw(time);
@@ -55,7 +56,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 180 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 181 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -457,6 +458,12 @@ SKIP: {
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
 	my $content = $resp->decoded_content(charset => "none");
+	my $expected = '<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX 1.27 (XML::LibXML 2.0128) - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><name>Wilhelmshöhe von Wilhelmshöhe</name><rtept lat="52.487916" lon="13.38594"><name>Wilhelmshöhe</name></rtept><rtept lat="52.487887" lon="13.385366"><name></name></rtept><rtept lat="52.48658" lon="13.384777"><name></name></rtept></rte></gpx>';
+	from_to($expected, 'latin1', 'utf-8');
+	xml_eq($content, $expected,
+	       'output_as gpx-route with simplification as expected',
+	       ignore => ['//*[local-name()="gpx"]/@creator'], # contains implementor module like XML::Twig or XML::LibXML
+	      );
 	my $doc = $p->parse_string($content);
 	$doc->documentElement->setNamespaceDeclURI(undef, undef);
 	my $routename = $doc->findvalue('/gpx/rte/name');

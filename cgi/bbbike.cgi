@@ -4026,7 +4026,11 @@ sub display_route {
 	    }
 	}
 
-	@strnames = $net->route_to_name($r->path);
+	if (defined $output_as && $output_as eq 'gpx-route') {
+	    @strnames = $net->route_to_name($r->path, -combinestreet => 0);
+	} else {
+	    @strnames = $net->route_to_name($r->path);
+	}
 
 	foreach my $speed (@speeds) {
 	    if ($speed == 0) {
@@ -4561,15 +4565,59 @@ sub display_route {
 		 -Content_Disposition => "attachment; filename=$filename",
 		);
 	    http_header(@headers);
-	    my @data;
 	    my $gps_routenamelength = 36; # good for modern devices XXX should this be configurable?
 	    my $gps_routename = $zielname . ' ' . ($lang eq 'en' ? 'from' : 'von') . ' ' . $startname; # XXX Msg
 	    $gps_routename = substr($gps_routename, 0, $gps_routenamelength-3).'...' if length $gps_routename > $gps_routenamelength;
-	    my $s = Strassen->new_from_data_string(
-						   "#: title: $gps_routename\n\n" .
-						   join('', map { $_->{Strname} . "\tX " . $_->{Coord} . "\n" } @out_route)
-						  );
-	    my $s_gpx = Strassen::GPX->new($s);
+
+	    # setup bbd data structure suitable for Douglas-Peucker simplification
+	    my $s0;
+	    {
+		my @data0;
+		my $last_strname;
+		for my $hop_i (0 .. $#out_route) {
+		    my $hop = $out_route[$hop_i];
+		    my $this_strname = $hop->{Strname};
+		    my $this_coord = $hop->{Coord};
+		    if (@data0) {
+			$data0[-1] .= " $this_coord";
+		    }
+		    if (!defined $last_strname || $this_strname ne $last_strname) {
+			push @data0, "$this_strname\tX $this_coord";
+			$last_strname = $this_strname;
+		    }
+		}
+		for (@data0) { $_ .= "\n" }
+		$s0 = Strassen->new_from_data_ref(\@data0);
+		$s0->simplify(20); # XXX check value: 10 is probably too low, 100 too high, 20 and 30 seems to be OK
+	    }
+
+	    # create new bbd data structure suitable for gpx-rte creation (one point per line)
+	    my $s1;
+	    {
+		my $s0_lastindex = $s0->count-1;
+		my @data1;
+		my $r_next = $s0->get(0);
+		for my $i (0 .. $s0_lastindex) {
+		    my $r = $r_next;
+		    my @c = @{ $r->[Strassen::COORDS] };
+		    if ($i < $s0_lastindex) {
+			$r_next = $s0->get($i+1);
+			if ($c[-1] eq $r_next->[Strassen::COORDS][0]) {
+			    pop @c;
+			}
+		    }
+		    my $first_c = shift @c;
+		    push @data1, "$r->[Strassen::NAME]\tX $first_c";
+		    for my $c (@c) { # "continuation" coordinates in same street, not street name here
+			push @data1, "\tX $c";
+		    }
+		}
+		for (@data1) { $_ .= "\n" }
+		$s1 = Strassen->new_from_data_ref(\@data1);
+		$s1->set_global_directive(title => $gps_routename);
+	    }
+
+	    my $s_gpx = Strassen::GPX->new($s1);
 	    $s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	    my $gpx_output = $s_gpx->bbd2gpx(-as => "route");
 	    print $gpx_output;
