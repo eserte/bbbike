@@ -24,6 +24,7 @@ my($host, $m_host);
 my($compare_host, $compare_m_host);
 my $skip_lines = 0;
 my $do_file_cache_normalization = 1;
+my $do_content_length_normalization = 1;
 my $url_layout = 'cgi-bin';
 GetOptions(
 	   "host=s" => \$host,
@@ -32,9 +33,15 @@ GetOptions(
 	   "comparemhost=s" => \$compare_m_host,
 	   "skip-lines=i" => \$skip_lines,
 	   'file-cache-normalization!' => \$do_file_cache_normalization,
+	   'content-length-normalization!' => \$do_content_length_normalization,
 	   'url-layout=s' => \$url_layout,
 	  )
-    or die "usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...] [-skip-lines number] [-no-file-cache-normalization] [-url-layout cgi-bin|cgi] logfile";
+    or die <<EOF;
+usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...]
+	[-skip-lines number] [-url-layout cgi-bin|cgi]
+	[-no-file-cache-normalization] [-no-content-length-normalization]
+	logfile
+EOF
 
 die "-url-layout can only be 'cgi-bin' or 'cgi'" if $url_layout !~ /^(cgi-bin|cgi)$/;
 
@@ -171,6 +178,7 @@ sub compare_responses {
 		    'expires',
 		    'last-modified',
 		    ($do_file_cache_normalization ? 'x-bbbike-file-cache' : ()),
+		    ($do_content_length_normalization ? 'content-length' : ()),
 		   ) {
 	    $h->remove_header($rh);
 	}
