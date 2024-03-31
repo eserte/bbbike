@@ -162,12 +162,14 @@ $tmp_dir = $ENV{TMPDIR} || $ENV{TEMP} || "/tmp";
 
 =item $use_cgi_bin_layout
 
-Set to true, if you are using a cgi-bin styled layout, that is, cgi-bin
-and htdocs are in seperate directories. Default: false.
+Set to true, if you are using a cgi-bin styled layout, that is,
+cgi-bin and htdocs are in separate directories. Default: if the
+environment variable C<BBBIKE_URL_LAYOUT> is set to C<cgi-bin>, then
+true, otherwise false.
 
 =cut
 
-$use_cgi_bin_layout = 0;
+$use_cgi_bin_layout = ($ENV{BBBIKE_URL_LAYOUT}||'') eq 'cgi-bin' ? 1 : 0;
 
 =item $local_route_dir
 
