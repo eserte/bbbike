@@ -34,7 +34,7 @@ use Time::HiRes qw(time);
 
 use BBBikeUtil qw(is_in_path);
 use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
-		  xmllint_string gpxlint_string kmllint_string
+		  xml_eq xmllint_string gpxlint_string kmllint_string
 		  using_bbbike_test_cgi check_cgi_testing
 		  validate_bbbikecgires_xml_string
 		  validate_bbbikecgires_data
@@ -55,7 +55,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 181 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 180 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -423,15 +423,12 @@ SKIP: {
     }
 
     {
-	my $p = XML::LibXML->new;
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
 	my $content = $resp->decoded_content(charset => "none");
-	my $doc = $p->parse_string($content);
-	$doc->documentElement->setNamespaceDeclURI(undef, undef);
-	my $routename = $doc->findvalue('/gpx/rte/name');
-	is($routename, 'Methfesselstr. von Dudenstr.', 'expected route name');
-	my $startname = $doc->findvalue('/gpx/rte/rtept[1]/name');
-	is($startname, 'Dudenstr.', 'Expected startname in right encoding');
+	xml_eq($content, '<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX ... (XML::LibXML ...) - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><name>Methfesselstr. von Dudenstr.</name><rtept lat="52.484986" lon="13.385901"><name>Dudenstr.</name></rtept><rtept lat="52.484989" lon="13.382267"><name>Methfesselstr.</name></rtept></rte></gpx>',
+	       'output_as gpx-route as expected',
+	       ignore => ['//*[local-name()="gpx"]/@creator'], # contains implementor module like XML::Twig or XML::LibXML
+	      );
 	gpxlint_string($content);
     }
 }
