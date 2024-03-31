@@ -18,6 +18,7 @@ use LWP::UserAgent;
 use Time::HiRes qw(time);
 use Getopt::Long;
 use File::Basename qw(basename);
+use Term::ANSIColor qw(colored);
 
 my($host, $m_host);
 my($compare_host, $compare_m_host);
@@ -117,9 +118,12 @@ while(<BW>) {
 	$resp = $ua->get($url);
 	my $elapsed = time - $t0;
 	if ($resp->is_success) {
-	    printf STDERR "  %.1fs OK\n", $elapsed;
+	    my $diff_log_duration = sprintf "%.1f", $elapsed - $logentry->{duration};
+	    if ($diff_log_duration > 0) { $diff_log_duration = '+'.$diff_log_duration }
+	    my $colored_diff_log_duration = colored([$diff_log_duration =~ /^\+/ ? 'yellow on_black' : 'green on_black'], 'delta ' . $diff_log_duration . 's');
+	    printf STDERR "  %.1fs (%s) " . colored(['green on_black'], 'OK') . "\n", $elapsed, $colored_diff_log_duration;
 	} else {
-	    print STDERR "  " . $resp->status_line . "\n";
+	    print STDERR "  " . colored(['red on_black'], $resp->status_line) . "\n";
 	}
     }
 
