@@ -24,6 +24,7 @@ my($host, $m_host);
 my($compare_host, $compare_m_host);
 my $skip_lines = 0;
 my $do_file_cache_normalization = 1;
+my $url_layout = 'cgi-bin';
 GetOptions(
 	   "host=s" => \$host,
 	   "mhost=s" => \$m_host,
@@ -31,8 +32,11 @@ GetOptions(
 	   "comparemhost=s" => \$compare_m_host,
 	   "skip-lines=i" => \$skip_lines,
 	   'file-cache-normalization!' => \$do_file_cache_normalization,
+	   'url-layout=s' => \$url_layout,
 	  )
-    or die "usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...] [-skip-lines number] [-no-file-cache-normalization] logfile";
+    or die "usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...] [-skip-lines number] [-no-file-cache-normalization] [-url-layout cgi-bin|cgi] logfile";
+
+die "-url-layout can only be 'cgi-bin' or 'cgi'" if $url_layout !~ /^(cgi-bin|cgi)$/;
 
 if (!$host) {
     $host = "bbbike-pps";
@@ -72,7 +76,8 @@ if ($accesslog eq '-') {
 }
 while(<BW>) {
     my $logentry = parse_accesslog($_);
-    next if $logentry->{file} !~ m{^/cgi-bin/bbbike2?(\.en)?\.cgi};
+    next if $url_layout eq 'cgi-bin' && $logentry->{file} !~ m{^/cgi-bin/bbbike2?(\.en)?\.cgi};
+    next if $url_layout eq 'cgi'     && $logentry->{file} !~ m{^/bbbike/cgi/bbbike2?(\.en)?\.cgi};
     next if $logentry->{file} =~ m{coordssession=\d};
     #next if $logentry->{code} !~ m{^2};
     next if $logentry->{rtype} ne 'GET';
