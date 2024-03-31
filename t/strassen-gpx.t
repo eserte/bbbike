@@ -663,7 +663,6 @@ EOF
 
 	{
 	    # bbd2gpx as route with multiple coordinates per bbd line
-	    local $TODO; $TODO = "Currently implemented differently with XML::Twig" if $use_xml_module eq 'XML::Twig';
 	    my $bbd = <<'EOF';
 #: map: polar
 #:
