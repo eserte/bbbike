@@ -634,8 +634,10 @@ EOF
 	    my $s = Strassen::GPX->new($s0);
 	    my $xml_res = $s->bbd2gpx(-as => 'route');
 	    gpxlint_string($xml_res);
-	    $xml_res =~ s{(\s*\Qcreator="Strassen::GPX $Strassen::GPX::VERSION\E) \(.*?\)}{$1 __normalized_creator_module__};
-	    xml_eq($xml_res, qq{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX $Strassen::GPX::VERSION __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.5" lon="13.4"><name>Street1</name></rtept><rtept lat="52.6" lon="13.5"><name>Street2</name></rtept><rtept lat="52.7" lon="13.6"><name>Street3</name></rtept></rte></gpx>});
+	    xml_eq($xml_res, qq{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX $Strassen::GPX::VERSION __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.5" lon="13.4"><name>Street1</name></rtept><rtept lat="52.6" lon="13.5"><name>Street2</name></rtept><rtept lat="52.7" lon="13.6"><name>Street3</name></rtept></rte></gpx>},
+		   'bbd2gps as route with single coords',
+		   ignore => ['//*[local-name()="gpx"]/@creator'], # contains implementor module like XML::Twig or XML::LibXML
+		  );
 	}
 
 	{
@@ -650,8 +652,10 @@ EOF
 	    my $s = Strassen::GPX->new($s0);
 	    my $xml_res = $s->bbd2gpx(-as => 'route');
 	    gpxlint_string($xml_res);
-	    $xml_res =~ s{(\s*\Qcreator="Strassen::GPX $Strassen::GPX::VERSION\E) \(.*?\)}{$1 __normalized_creator_module__};
-	    xml_eq($xml_res, qq{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX $Strassen::GPX::VERSION __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.50" lon="13.40"><name>StreetA01</name></rtept><rtept lat="52.51" lon="13.41"><name>StreetA02</name></rtept><rtept lat="52.52" lon="13.42"><name>StreetA03</name></rtept><rtept lat="52.53" lon="13.43"><name>StreetA04</name></rtept><rtept lat="52.54" lon="13.44"><name>StreetA05</name></rtept><rtept lat="52.55" lon="13.45"><name>StreetA06</name></rtept><rtept lat="52.56" lon="13.46"><name>StreetA07</name></rtept><rtept lat="52.57" lon="13.47"><name>StreetA08</name></rtept><rtept lat="52.58" lon="13.48"><name>StreetA09</name></rtept><rtept lat="52.59" lon="13.49"><name>StreetA10</name></rtept><rtept lat="52.7" lon="13.6"><name>StreetB</name></rtept></rte></gpx>});
+	    xml_eq($xml_res, qq{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX $Strassen::GPX::VERSION __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.50" lon="13.40"><name>StreetA01</name></rtept><rtept lat="52.51" lon="13.41"><name>StreetA02</name></rtept><rtept lat="52.52" lon="13.42"><name>StreetA03</name></rtept><rtept lat="52.53" lon="13.43"><name>StreetA04</name></rtept><rtept lat="52.54" lon="13.44"><name>StreetA05</name></rtept><rtept lat="52.55" lon="13.45"><name>StreetA06</name></rtept><rtept lat="52.56" lon="13.46"><name>StreetA07</name></rtept><rtept lat="52.57" lon="13.47"><name>StreetA08</name></rtept><rtept lat="52.58" lon="13.48"><name>StreetA09</name></rtept><rtept lat="52.59" lon="13.49"><name>StreetA10</name></rtept><rtept lat="52.7" lon="13.6"><name>StreetB</name></rtept></rte></gpx>},
+		  'bbd2gps as route with multiple coords',
+		   ignore => ['//*[local-name()="gpx"]/@creator'], # contains implementor module like XML::Twig or XML::LibXML
+		  );
 	}
     }
 }

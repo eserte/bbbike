@@ -573,14 +573,23 @@ sub kmllint_string {
 
 # generates one test
 sub xml_eq {
-    my($left, $right, $test_name) = @_;
+    my($left, $right, $test_name, %args) = @_;
+    my $ignore = delete $args{ignore};
+    die 'Unhandled arguments: ' . join(' ', %args) if %args;
+
     local $Test::Builder::Level = $Test::Builder::Level+1;
  SKIP: {
 	my $no_of_tests = 1;
 	Test::More::skip("Needs XML::LibXML for normalization", $no_of_tests)
 		if !eval { require XML::LibXML; 1 };
 	for ($left, $right) {
-	    $_ = XML::LibXML->new->parse_string($_)->toStringC14N;
+	    my $dom = XML::LibXML->new->parse_string($_);
+	    if ($ignore) {
+		for my $ignore_xpath (@$ignore) {
+		    $_->unbindNode for $dom->findnodes($ignore_xpath);
+		}
+	    }
+	    $_ = $dom->toStringC14N;
 	}
 	eq_or_diff($left, $right, $test_name);
     }
