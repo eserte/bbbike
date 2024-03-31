@@ -26,6 +26,7 @@ use BBBikeDataDownloadCompatPlack ();
 
 use constant USE_FORK_NOEXEC => $ENV{USE_FORK_NOEXEC};
 use constant USE_NEW_DATA_DOWNLOAD => $ENV{BBBIKE_USE_NEW_DATA_DOWNLOAD};
+use constant USE_CGI_BIN_LAYOUT => ($ENV{BBBIKE_URL_LAYOUT}||'') eq 'cgi-bin';
 BEGIN {
     if (USE_FORK_NOEXEC) {
 	warn "Preloading...\n";
@@ -95,6 +96,9 @@ my $cgidir = catpath $root, 'cgi';
 # so the CGI is executed with the same perl.
 $ENV{PATH} = "$Config{bin}:$ENV{PATH}";
 
+my $cgiurl    = USE_CGI_BIN_LAYOUT ? '/cgi-bin' : '/bbbike/cgi';
+my $staticurl = USE_CGI_BIN_LAYOUT ? '/BBBike'  : '/bbbike';
+
 builder {
 
     enable 'Head';
@@ -103,16 +107,16 @@ builder {
     enable 'Rewrite', rules => sub {
 	if (m{^/(?:\?.*)?$}) {
 	    no warnings 'uninitialized'; # $1 may be undef
-	    $_ = "/bbbike/cgi/bbbike.cgi$1";
+	    $_ = "$cgiurl/bbbike.cgi$1";
 	    return 301;
 	}
     };
 
     enable "Plack::Middleware::Static",
-	path => sub { s!^/bbbike/(html/opensearch/)!$1! }, root => $root, encoding => 'utf-8';
+	path => sub { s!^$staticurl/(html/opensearch/)!$1! }, root => $root, encoding => 'utf-8';
 
     enable "Plack::Middleware::Static",
-	path => sub { s!^/bbbike/(html|images/)!$1! }, root => $root, encoding => 'iso-8859-1';
+	path => sub { s!^$staticurl/(html|images/)!$1! }, root => $root, encoding => 'iso-8859-1';
 
     if (eval { require Plack::Middleware::Deflater; 1}) {
 	enable "Deflater",
@@ -149,7 +153,7 @@ builder {
 		   ) {
 	for my $cgi (@$cgidef) {
 	    my $fs_file = catfile($root, 'cgi', $cgi);
-	    $app = mount "/bbbike/cgi/$cgi" => Plack::App::WrapCGI->new(
+	    $app = mount "$cgiurl/$cgi" => Plack::App::WrapCGI->new(
                 script  => $fs_file,
 	        execute => USE_FORK_NOEXEC ? 'noexec' : 1,
 	    )->to_app;
@@ -158,12 +162,12 @@ builder {
 
     if (USE_NEW_DATA_DOWNLOAD) {
 	my $new_data_download_app = do "$root/cgi/bbbike-data-download.psgi";
-	$app = mount "/bbbike/data" => $new_data_download_app;
+	$app = mount "$staticurl/data" => $new_data_download_app;
     } else {
-	$app = mount "/bbbike/data" => BBBikeDataDownloadCompatPlack::get_app("$root/data");
+	$app = mount "$staticurl/data" => BBBikeDataDownloadCompatPlack::get_app("$root/data");
     }
 
-    $app = mount "/bbbike" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1')->to_app;
+    $app = mount "$staticurl" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1')->to_app;
 
     {
 	my $mapserv_cgibin;
