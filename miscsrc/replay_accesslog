@@ -13,6 +13,9 @@
 #
 
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib", "$FindBin::RealBin/../t";
+
 use IO::Pipe;
 use LWP::UserAgent;
 use Time::HiRes qw(time);
@@ -28,6 +31,7 @@ my $do_content_length_normalization = 1; # usually for servers working with chun
 my $do_connection_normalization = 0; # usually for Connection:keep-alive vs close
 my $do_compression = 0;
 my $do_dump;
+my $do_validation;
 my $url_layout = 'cgi-bin';
 GetOptions(
 	   "host=s" => \$host,
@@ -40,13 +44,14 @@ GetOptions(
 	   'connection-normalization!' => \$do_connection_normalization,
 	   'compression!' => \$do_compression,
 	   'dump!' => \$do_dump,
+	   'validation!' => \$do_validation,
 	   'url-layout=s' => \$url_layout,
 	  )
     or die <<EOF;
 usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...]
 	[-skip-lines number] [-url-layout cgi-bin|cgi]
 	[-no-file-cache-normalization] [-no-content-length-normalization] [-connection-normalization] [-compression]
-	[-dump]
+	[-dump] [-validation]
 	logfile
 EOF
 
@@ -67,14 +72,19 @@ if (!$m_host) {
     $m_host = "m.$host";
 }
 my $in_test_mode;
-if ($compare_host) {
-    require Test::Differences;
+if ($compare_host || $do_validation) {
     require Test::More;
     Test::More::plan('no_plan');
     $in_test_mode = 1;
+}
+if ($compare_host) {
+    require Test::Differences;
     if (!$compare_m_host) {
 	$compare_m_host = "m.$compare_host";
     }
+}
+if ($do_validation) {
+    require BBBikeTest;
 }
 
 my $ua = LWP::UserAgent->new;
@@ -156,6 +166,12 @@ while(<BW>) {
 	}
     }
 
+    if ($do_validation) {
+	if ($resp->content_type eq 'application/gpx+xml') {
+	    BBBikeTest::gpxlint_string($resp->decoded_content(charset => 'none'), "GPX validation");
+	}
+    }
+
     if ($pipe) {
 	my $compare_resp_string = do {
 	    local $/;
@@ -163,6 +179,7 @@ while(<BW>) {
 	};
 	my $compare_resp = HTTP::Response->parse($compare_resp_string);
 
+	# note: compare_responses mangles the response objects
 	compare_responses($resp, $compare_resp, $url, ignore_hosts => [$use_host, $use_compare_host]);
     }
 }
