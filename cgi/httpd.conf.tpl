@@ -152,7 +152,7 @@ ServerAlias [% SERVER_ALIAS %]
 [% ELSIF LOCATION_STYLE == "vhost" -%]
         <Location />
 [% END -%]
-	    AddOutputFilterByType DEFLATE application/vnd.google-earth.kml+xml image/svg+xml application/xml
+	    AddOutputFilterByType DEFLATE application/vnd.google-earth.kml+xml application/gpx+xml image/svg+xml application/xml
 	    AddOutputFilterByType DEFLATE application/json application/geo+json
 	    # no need to compress .wml ...
 	    #
