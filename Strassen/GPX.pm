@@ -345,9 +345,12 @@ sub _bbd2gpx_libxml {
     $meta->{number} = delete $args{-number} if exists $args{-number};
     my $with_trip_extensions = delete $args{-withtripext};
 
-    my $has_encode = eval { require Encode; 1 };
-    if (!$has_encode) {
-	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
+    my $do_utf8_encode;
+    if ($XML::LibXML::VERSION < 1.63) {
+	$do_utf8_encode = eval { require Encode; 1 };
+	if (!$do_utf8_encode) {
+	    warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
+	}
     }
 
     my($wpts, $trksegs) = $self->_create_wpt_trkseg(-needutf8hack => HAS_UTF8_UPGRADE, -xy2longlat => $xy2longlat, -as => $as);
@@ -421,7 +424,7 @@ sub _bbd2gpx_libxml {
 	    }
 	}
     }
-    if ($XML::LibXML::VERSION < 1.63 && $has_encode) {
+    if ($do_utf8_encode) {
 	Encode::encode("utf-8", $dom->toString);
     } else {
 	$dom->toString;
@@ -437,6 +440,11 @@ sub _bbd2gpx_twig {
     $meta->{name} = delete $args{-name} if exists $args{-name};
     $meta->{number} = delete $args{-number} if exists $args{-number};
     my $with_trip_extensions = delete $args{-withtripext};
+
+    my $do_utf8_encode = eval { require Encode; 1 };
+    if (!$do_utf8_encode) {
+	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
+    }
 
     my($wpts, $trksegs) = $self->_create_wpt_trkseg(-needutf8hack => 0, -xy2longlat => $xy2longlat, -as => $as);
 
@@ -523,8 +531,12 @@ sub _bbd2gpx_twig {
 	    }
 	}
     }
-    my $xml = $twig->sprint;
-    $xml;
+
+    if ($do_utf8_encode) {
+	Encode::encode("utf-8", $twig->sprint);
+    } else {
+	$twig->sprint;
+    }
 }
 
 ######################################################################
