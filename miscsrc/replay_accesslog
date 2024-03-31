@@ -25,6 +25,7 @@ my($compare_host, $compare_m_host);
 my $skip_lines = 0;
 my $do_file_cache_normalization = 1;
 my $do_content_length_normalization = 1;
+my $do_compression = 0;
 my $url_layout = 'cgi-bin';
 GetOptions(
 	   "host=s" => \$host,
@@ -34,12 +35,13 @@ GetOptions(
 	   "skip-lines=i" => \$skip_lines,
 	   'file-cache-normalization!' => \$do_file_cache_normalization,
 	   'content-length-normalization!' => \$do_content_length_normalization,
+	   'compression!' => \$do_compression,
 	   'url-layout=s' => \$url_layout,
 	  )
     or die <<EOF;
 usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...]
 	[-skip-lines number] [-url-layout cgi-bin|cgi]
-	[-no-file-cache-normalization] [-no-content-length-normalization]
+	[-no-file-cache-normalization] [-no-content-length-normalization] [-compression]
 	logfile
 EOF
 
@@ -63,7 +65,9 @@ if ($compare_host) {
 }
 
 my $ua = LWP::UserAgent->new;
-$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
+if ($do_compression) {
+    $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
+}
 if ($compare_host) {
     # So things are easier to compare, especially there's no need to
     # handle artificial http headers like "Link"
