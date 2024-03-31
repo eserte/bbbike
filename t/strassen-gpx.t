@@ -658,7 +658,7 @@ EOF
 	    my $xml_res = $s->bbd2gpx(-as => 'route');
 	    gpxlint_string($xml_res);
 	    $xml_res =~ s{(\s*\Qcreator="Strassen::GPX $Strassen::GPX::VERSION\E) \(.*?\)}{$1 __normalized_creator_module__};
-	    xml_eq($xml_res, q{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX 1.26 __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.5" lon="13.4"><name>Street1</name></rtept><rtept lat="52.6" lon="13.5"><name>Street2</name></rtept><rtept lat="52.7" lon="13.6"><name>Street3</name></rtept></rte></gpx>});
+	    xml_eq($xml_res, qq{<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX $Strassen::GPX::VERSION __normalized_creator_module__ - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><rtept lat="52.5" lon="13.4"><name>Street1</name></rtept><rtept lat="52.6" lon="13.5"><name>Street2</name></rtept><rtept lat="52.7" lon="13.6"><name>Street3</name></rtept></rte></gpx>});
 	}
     }
 }
