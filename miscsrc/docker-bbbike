@@ -863,11 +863,11 @@ EOF
     # next lines taken from init_cgi_config from ci-functions.sh
     if (!$opt{mapserver}) {
 	$dockerfile .= <<'EOF';
-RUN (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+RUN (cd cgi && cp -f bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
 EOF
     } else {
 	$dockerfile .= <<'EOF';
-RUN (cd cgi && ln -snf bbbike-debian.cgi.config bbbike.cgi.config)
+RUN (cd cgi && cp -f bbbike-debian.cgi.config bbbike.cgi.config)
 RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
 RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake')
 EOF
@@ -879,7 +879,15 @@ RUN cp /bbbike/mapserver/brb/mapserver.conf /etc
 EOF
 	}
     }
-    $dockerfile .= <<EOF;
+    $dockerfile .= <<'EOF';
+## switch to cgi-bin layout
+ENV BBBIKE_URL_LAYOUT cgi-bin
+## additionally the following needs to be done for bbbikeleaflet.cgi
+RUN sed -i  '$i\$use_cgi_bin_layout=1;' /bbbike/cgi/bbbike.cgi.config
+
+EOF
+    $dockerfile .= <<"EOF";
+
 WORKDIR /bbbike/cgi
 RUN make symlinks fix-permissions
 EXPOSE $docker_port
