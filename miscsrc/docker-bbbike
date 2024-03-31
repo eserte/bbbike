@@ -840,7 +840,7 @@ EOF
     }
     $dockerfile .= <<EOF;
 RUN apt-get update && apt-get install -qqy --no-install-recommends \\
-      libplack-middleware-rewrite-perl libcgi-emulate-psgi-perl libcgi-compile-perl \\
+      libplack-middleware-rewrite-perl libplack-middleware-deflater-perl libcgi-emulate-psgi-perl libcgi-compile-perl \\
       libapache-session-counted-perl \\
       libarray-heap-perl \\
       make gcc libc6-dev libinline-perl libinline-c-perl \\

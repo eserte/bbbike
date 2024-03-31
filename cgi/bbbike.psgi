@@ -114,6 +114,21 @@ builder {
     enable "Plack::Middleware::Static",
 	path => sub { s!^/bbbike/(html|images/)!$1! }, root => $root, encoding => 'iso-8859-1';
 
+    if (eval { require Plack::Middleware::Deflater; 1}) {
+	enable "Deflater",
+	    content_type => [qw(
+				   application/vnd.google-earth.kml+xml application/gpx+xml image/svg+xml application/xml
+				   application/json application/geo+json
+				   text/html text/plain text/xml
+				   text/css
+				   application/x-javascript application/javascript application/ecmascript
+				   DEFLATE application/rss+xml
+			      )]
+	    ;
+    } else {
+	warn "Plack::Middleware::Deflater could not be loader: compression not enabled\n";
+    }
+
     my $app;
     for my $cgidef (
 		    # first is the main file, rest is aliases via symlinks
