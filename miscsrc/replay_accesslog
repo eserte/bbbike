@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2013,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2013,2018,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,14 +21,16 @@ use File::Basename qw(basename);
 my($host, $m_host);
 my($compare_host, $compare_m_host);
 my $skip_lines = 0;
+my $do_file_cache_normalization = 1;
 GetOptions(
 	   "host=s" => \$host,
 	   "mhost=s" => \$m_host,
 	   "comparehost=s" => \$compare_host,
 	   "comparemhost=s" => \$compare_m_host,
 	   "skip-lines=i" => \$skip_lines,
+	   'file-cache-normalization!' => \$do_file_cache_normalization,
 	  )
-    or die "usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...] [-skip-lines number] logfile";
+    or die "usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...] [-skip-lines number] [-no-file-cache-normalization] logfile";
 
 if (!$host) {
     $host = "bbbike-pps";
@@ -139,6 +141,7 @@ sub compare_responses {
 		    'date',
 		    'expires',
 		    'last-modified',
+		    ($do_file_cache_normalization ? 'x-bbbike-file-cache' : ()),
 		   ) {
 	    $h->remove_header($rh);
 	}
