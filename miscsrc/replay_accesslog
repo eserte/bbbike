@@ -27,6 +27,7 @@ my $do_file_cache_normalization = 1; # about the x-bbbike-file-cache header
 my $do_content_length_normalization = 1; # usually for servers working with chunked transfer-encoding vs servers emitting content-length
 my $do_connection_normalization = 0; # usually for Connection:keep-alive vs close
 my $do_compression = 0;
+my $do_dump;
 my $url_layout = 'cgi-bin';
 GetOptions(
 	   "host=s" => \$host,
@@ -38,16 +39,26 @@ GetOptions(
 	   'content-length-normalization!' => \$do_content_length_normalization,
 	   'connection-normalization!' => \$do_connection_normalization,
 	   'compression!' => \$do_compression,
+	   'dump!' => \$do_dump,
 	   'url-layout=s' => \$url_layout,
 	  )
     or die <<EOF;
 usage: $0 [-host ...] [-mhost ...] [-comparehost ...] [-comparemhost ...]
 	[-skip-lines number] [-url-layout cgi-bin|cgi]
 	[-no-file-cache-normalization] [-no-content-length-normalization] [-connection-normalization] [-compression]
+	[-dump]
 	logfile
 EOF
 
 die "-url-layout can only be 'cgi-bin' or 'cgi'" if $url_layout !~ /^(cgi-bin|cgi)$/;
+
+my $dump_dir;
+my $dump_index;
+if ($do_dump) {
+    $dump_dir = "/tmp/replay_accesslog_dump";
+    $dump_index = 1;
+    mkdir $dump_dir if !-d $dump_dir;
+}
 
 if (!$host) {
     $host = "bbbike-pps";
@@ -233,7 +244,39 @@ sub compare_responses {
 	# XXX missing normalizations
 	# - different (hash-based?) ordering, maybe should be normalized in bbbike.cgi by importance?
 	#   # *  91|8 km</td><td>Fu\xdfg\xe4nger; Parkweg (Teilstrecke); Asphalt mit Sch\xe4den (Teilstrecke)  |8 km</td><td>Parkweg (Teilstrecke); Fu\xdfg\xe4nger; Asphalt mit Sch\xe4den (Teilstrecke)  *
+	$r->content($content);
+    }
 
+    if ($do_dump) {
+	my $new_content = $resp->decoded_content(charset => 'none');
+	my $old_content = $compare_resp->decoded_content(charset => 'none');
+	if ($new_content ne $old_content) {
+	    my $obase = sprintf "$dump_dir/%06d_", $dump_index;
+	    my($suffix) = $resp->header('content-disposition') =~ /filename=.*\.(.+?)(?:\b|$)/;
+	    if (!$suffix) { $suffix = 'bin' }
+
+	    {
+		my $ofile = "${obase}old.$suffix";
+		warn "INFO: dump $ofile...\n";
+		open my $ofh, ">", $ofile or die "Can't write to $ofile: $!";
+		print $ofh $old_content;
+		close $ofh or die $!;
+	    }
+
+	    {
+		my $ofile = "${obase}new.$suffix";
+		warn "INFO: dump $ofile...\n";
+		open my $ofh, ">", $ofile or die "Can't write to $ofile: $!";
+		print $ofh $new_content;
+		close $ofh or die $!;
+	    }
+
+	    $dump_index++;
+	}
+    }
+
+    for my $r ($resp, $compare_resp) {
+	my $content = $r->content;
 	$content =~ s{(.{80})}{$1\n}g; # wrap lines for easier diff'ing
 	$r->content($content);
     }
