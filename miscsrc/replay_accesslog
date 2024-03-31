@@ -13,6 +13,7 @@
 #
 
 use strict;
+use IO::Pipe;
 use LWP::UserAgent;
 use Time::HiRes qw(time);
 use Getopt::Long;
@@ -90,6 +91,24 @@ while(<BW>) {
     my $resp;
     my $url;
     my $use_host = $is_m ? $m_host : $host;
+    my $use_compare_host = $is_m ? $compare_m_host : $compare_host;
+
+    my $pipe;
+    if ($compare_host) {
+	$pipe = IO::Pipe->new;
+	if (fork == 0) {
+	    $pipe->writer;
+	    my $compare_url = "http://$use_compare_host$logentry->{file}";
+
+	    my $compare_resp = $ua->get($compare_url);
+
+	    $pipe->print($compare_resp->as_string);
+	    $pipe->close;
+	    exit;
+	}
+	$pipe->reader;
+    }
+
 
     {
 	$url = "http://$use_host$logentry->{file}";
@@ -104,11 +123,12 @@ while(<BW>) {
 	}
     }
 
-    if ($compare_host) {
-	my $use_compare_host = $is_m ? $compare_m_host : $compare_host;
-	my $compare_url = "http://$use_compare_host$logentry->{file}";
-
-	my $compare_resp = $ua->get($compare_url);
+    if ($pipe) {
+	my $compare_resp_string = do {
+	    local $/;
+	    <$pipe>;
+	};
+	my $compare_resp = HTTP::Response->parse($compare_resp_string);
 
 	compare_responses($resp, $compare_resp, $url, ignore_hosts => [$use_host, $use_compare_host]);
     }
