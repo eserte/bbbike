@@ -483,6 +483,7 @@ sub xmllint_file {
     xmllint_string($string, $test_name, %args);
 }
 
+my $warned_no_XML_LibXML;
 # only usable with Test::More, generates one test
 sub gpxlint_string {
     my($content, $test_name, %args) = @_;
@@ -492,15 +493,21 @@ sub gpxlint_string {
 	$schema_version = delete $args{schema_version};
     } else {
 	# Try to autodetect the GPX schema version.
-	if (eval { require XML::LibXML; 1 }) {
-	    eval {
-		my $root_ns = XML::LibXML->new->parse_string($content)->documentElement->namespaceURI;
-		if ($root_ns =~ m{^\Qhttp://www.topografix.com/GPX/\E(\d+)/(\d+)$}) {
-		    $schema_version = "$1.$2";
-		}
-	    };
-	    if ($@) {
-		warn "WARN: failure while auto-detecting GPX schema version: $@";
+	my $root_ns;
+	if (!eval {
+	    require XML::LibXML;
+	    $root_ns = XML::LibXML->new->parse_string($content)->documentElement->namespaceURI;
+	}) {
+	    my($err) = $@ =~ m{^(.*)}; # only first line;
+	    if (!$warned_no_XML_LibXML) {
+		warn "INFO: cannot detect GPX version using XML::LibXML, using fallback ($err...)\n";
+		$warned_no_XML_LibXML = 1;
+	    }
+	    ($root_ns) = $content =~ m{xmlns="(.*?)"};
+	}
+	if ($root_ns) {
+	    if ($root_ns =~ m{^\Qhttp://www.topografix.com/GPX/\E(\d+)/(\d+)$}) {
+		$schema_version = "$1.$2";
 	    }
 	}
 	if (!defined $schema_version) {
