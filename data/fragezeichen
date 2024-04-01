@@ -833,7 +833,6 @@ Choriner Dorfstr. (Qualität?)	? 41250,55694 41337,55907 41467,56125 41578,56248
 Rauen - Markgrafpieske (Qualität?)	? 52566,-7994 52315,-8018 51964,-7898 49889,-7783 49609,-8108 49249,-8271 48486,-8368
 Glasmeisterstr. (ist der westliche Abschnitt der Glasmeisterstr. für Autos gesperrt? Wegbeschaffenheit?)	? -11055,-1937 -11104,-1913
 (Heinrich-Mann-Allee - Am Nuthetal) (heißt diese Straße "Drewitzer Str."?)	? -11068,-3574 -11027,-3591 -10889,-3671
-Zur Königlichen Hofbrauerei (Fahrbahnbeschaffenheit?)	? -12814,-2270 -12783,-2269 -12713,-2279
 Peter-Kühne-Siedlung (Ist der Weg ausgeschildert? Nachts beleuchtet?)	? -15962,-2003 -15961,-2168
 (zwischen Sandweg und Havelhausener Str.) (Welcher Teil ist NN und welche sind N?)	? -4100,34709 -4039,34618 -4007,34553 -3996,34499
 Bruno-Schönlank-Str. (wie ist die Qualität der Bruno-Schönlank-Str.?)	? 1386,30391 708,30406 517,30342 476,30325 456,30295 446,30260
@@ -907,6 +906,8 @@ Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Quali
 Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35740,80983 35815,81168 35815,81518 35894,81782
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495
 Leistenhaus - Neugrimnitz: Schotterweg (Ist hier durchgängig ein Schotterweg?)	? 37515,64395 37608,64317 38095,64055 38327,63933
+# added from handicap_s
+Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt (Ist die Fahrbahn weiterhin gesperrt?)	? 12646,16563 12560,16602
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
@@ -934,8 +935,7 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 L25 (Schmölln - Güstow): hier entsteht ein Radweg (Gibt es einen neuen Radweg im Bereich Schmölln - Autobahnauffahrt?)	? 55977,100103 56030,100076 56188,99924 56268,99856 56856,99683 57042,99574 57512,99290 57634,99199
 Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?) (Sind die Bauarbeiten in der Schönfließer Straße beendet?)	? 2206,25649 2139,25830 2112,26066 2207,26090 2293,26111 2402,26121 2490,26126 2499,26128 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666
 # added from bbbike-temp-blockings-optimized
-Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 29.03.2024 [Jahnstr.] (Existiert die Einbahnstraßenregelung noch immer?)	? 12833,6127 13027,6168
-Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 29.03.2024 [Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg] (Existiert die Einbahnstraßenregelung noch immer?)	? 12644,6087 12833,6127
 Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg kann gesperrt sein, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?)	? 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt (Wann ist der Steg wieder offen?)	? 11162,22939 11150,22898
+Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2024 (Existiert die Sperrung noch immer?)	? 7103,11247 7171,11510
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten, Ende der Sperrung unbekannt (Ist der Weg entlang des Bahndamms noch gesperrt?)	? 9586,17665 9396,17863

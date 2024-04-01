@@ -402,6 +402,7 @@ EOF
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5, start => "2023-05-02T00:00:00"]],
+       recurrence_prewarn_days => 21,
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8320,6 +8321,7 @@ EOF
        until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2023-05-13T00:00:00"]],
+       recurrence_prewarn_days => 21,
        text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
        source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
@@ -14164,6 +14166,7 @@ EOF
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2021-10-25T00:00:00"]],
+       recurrence_prewarn_days => 21,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -15707,14 +15710,14 @@ EOF
 EOF
      },
      { from  => undef, #
-       until => $isodate2epoch->("2023-06-28 19:00:00"),
-       text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich; außerdem Mi 15.00-19.00 Uhr temporäre Spielstraße, vom 31. Mai bis zum 28. Juni 2023',
+       until => undef, # $isodate2epoch->("2023-06-28 19:00:00"),
+       text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
+       #text  => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich; außerdem Mi 15.00-19.00 Uhr temporäre Spielstraße, vom 31. Mai bis zum 28. Juni 2023',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+# REMOVED --- #: XXX temporäre Spielstraße wieder austragen bzw. auf http://spielstraßen.de/uebersicht.php überprüfen, ob es nach den Sommerferien 2023 eine Fortsetzung geben wird --- #: next_check: 2023-08-19
 #: tempex: (tu,fr) T08-T13
-#: XXX temporäre Spielstraße wieder austragen bzw. auf http://spielstraßen.de/uebersicht.php überprüfen, ob es nach den Sommerferien 2023 eine Fortsetzung geben wird
-#: next_check: 2023-08-19
 	q4::temp:clock 3374,10201 3359,9968 3348,9806
 EOF
      },
@@ -23502,6 +23505,7 @@ EOF
        until => $isodate2epoch->("2023-05-01 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
+       recurrence_prewarn_days => 21,
        text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2023', # wenn größer: "Straße des 17. Juni und Ebertstraße"
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
@@ -28437,7 +28441,7 @@ EOF
 #: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
-#: osm_watch: way id="36936021" version="7" brb
+#: osm_watch: way id="36936021" version="9" brb
 #: also_indoor: search Bahnhof Zeuthen
 #: last_checked: 2023-12-27 (maz)
 #: check_frequency: 360d
@@ -34840,7 +34844,7 @@ EOF
      { from  => $isodate2epoch->("2023-11-13 00:00:00"), # undef, # 
        dont_check_date => 1, until => undef, # $isodate2epoch->("2024-03-29 23:59:59"), # 1676574342, # undef, # XXX
        #text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2023)',
-       text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 29.03.2024',
+       text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 07.06.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv)
@@ -34854,9 +34858,10 @@ EOF
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
+#: note: Halteverbotsschilder mittlerweile bis 07.06.2024
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv
-#: last_checked: 2024-03-26 vvv
-#: next_check: 2024-03-29 vvv
+#: last_checked: 2024-04-01 vvv
+#: next_check: 2024-06-07 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
 #: next_check ^^^
@@ -35459,7 +35464,7 @@ EOF
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-19 (mapillary)
+#: last_checked: 2024-04-01
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35705,16 +35710,14 @@ EOF
 #	2::inwork 16166,25767 16121,25818
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-25 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-29 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2024?
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-23 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-27 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2024?
        text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September (außer Sommerferien)',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 #: by: http://spielstraßen.de/uebersicht.php#kreu
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2024-03-17
-#: next_check: 2024-05-01
+# REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
 	q4::temp::play 12822,10487 12897,10439
 EOF
      },
@@ -36401,14 +36404,17 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 # REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
 EOF
      },
-     { from  => 1660168800, # 2022-08-11 00:00
-       until => 1660514399, # 2022-08-14 23:59
-       text  => 'Lindenufer und Havelpromenade: Veranstaltung (Havelfest), Straßen und Wege können gesperrt sein, 12. bis 14. August 2022',
+     { from  => $isodate2epoch->("2024-06-06 00:00:00"), # 1660168800, # 2022-08-11 00:00
+       until => $isodate2epoch->("2024-06-09 21:00:00"), # 1660514399, # 2022-08-14 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 7, months => 6]], # kann im Juni oder August stattfinden
+       text  => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 7. bis 9. Juni 2024',
        type  => 'gesperrt',
-       source_id => 'https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/',
        data  => <<EOF,
+#: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
 #: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11798 (Anfrage (findet 2023 nicht statt?))
+#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024)
 	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
 	2::temp -3054,14305 -3019,14286
 	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
@@ -39627,9 +39633,9 @@ EOF
 	2::inwork 2829,18126 2797,18126 2790,18139
 EOF
      },
-     { from  => 1687281760, # 2023-06-20 19:22
-       until => 1698443999, # 2023-10-27 23:59
-       text  => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, bis zum 27. Oktober 2023',
+     { from  => $isodate2epoch->("2024-04-13 00:00:00"), # 1687281760, # 2023-06-20 19:22
+       until => $isodate2epoch->("2024-10-25 23:59:59"), # 1698443999, # 2023-10-27 23:59
+       text  => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 14. April 2024 bis zum 27. Oktober 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
@@ -39638,13 +39644,14 @@ EOF
 	q4::temp::play 7657,9942 7698,10147
 EOF
      },
-     { from  => 1688594400, # 2023-07-06 00:00
-       until => 1699052399, # 2023-11-03 23:59
-       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, 7. Juli 2023 bis 3. November 2023',
+     { from  => $isodate2epoch->("2024-07-04 00:00:00"), # 1688594400, # 2023-07-06 00:00
+       until => $isodate2epoch->("2024-11-02 00:00:00"), # 1699052399, # 2023-11-03 23:59
+       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, Juli 2024 bis November 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
+#: by: http://spielstraßen.de/uebersicht.php?date=20240401
 	q4::temp::play 5956,7686 5812,7685
 EOF
      },
@@ -39666,7 +39673,7 @@ EOF
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-03-29
+#: last_checked: 2024-03-30
 #: next_check: 2024-06-30
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -40659,9 +40666,12 @@ EOF
        text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, voraussichtlich bis Ende November 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024)
+#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv)
+#: also_indoor: traffic (B)
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m
-#: note: bei rbb bis 30.11.2024
+#: note: bei rbb bis 30.11.2024, bei Bing bis 8.4.2024
+#: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
+#: next_check: 2024-04-08
 	q3::inwork 8486,16425 8467,16718
 EOF
      },
@@ -40821,7 +40831,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WEGAMFLIESSGRABEN-2023
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
-#: last_checked: 2024-03-17 (mapillary)
+#: last_checked: 2024-03-30 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-31
 #: next_check: 2024-06-30
@@ -41054,7 +41064,7 @@ EOF
 #: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="11"
+#: osm_watch: way id="1126670512" version="12"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
@@ -42406,7 +42416,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2024-02-17 (mapillary) vvv
+#: last_checked: 2024-03-29 (mapillary) vvv
 #: check_frequency: 60d vvv
 	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
 	q4::inwork 8164,15840 8140,15859

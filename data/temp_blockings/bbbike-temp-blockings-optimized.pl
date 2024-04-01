@@ -2127,7 +2127,18 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- #: XXX temporäre Spielstraße wieder austragen bzw. auf http://spielstraßen.de/uebersicht.php überprüfen, ob es nach den Sommerferien 2023 eine Fortsetzung geben wird --- #: next_check: 2023-08-19
+#: tempex: (tu,fr) T08-T13
+	q4::temp:clock 3374,10201 3359,9968 3348,9806
+',
+         'from' => undef,
+         'id' => 1814,
+         'recurring' => 1,
+         'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: note: der Auf/Abbau dürfte mindestens eine weitere Stunde dauern, in tempex eingerechnet
 #: tempex: (tu,fr) T10:00-T19:30, sa T10:00-T18:00
@@ -2652,7 +2663,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3143,7 +3154,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: März 8.00 - 18.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: April 8.00 - 19.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4200,7 +4211,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
-#: osm_watch: way id="36936021" version="7" brb
+#: osm_watch: way id="36936021" version="9" brb
 #: also_indoor: search Bahnhof Zeuthen
 #: last_checked: 2023-12-27 (maz)
 #: check_frequency: 360d
@@ -5411,9 +5422,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
+#: note: Halteverbotsschilder mittlerweile bis 07.06.2024
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv
-#: last_checked: 2024-03-26 vvv
-#: next_check: 2024-03-29 vvv
+#: last_checked: 2024-04-01 vvv
+#: next_check: 2024-06-07 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
 #: next_check ^^^
@@ -5423,7 +5435,7 @@ Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
          'dont_check_date' => 1,
          'from' => 1699830000,
          'id' => 3496,
-         'text' => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 29.03.2024',
+         'text' => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 07.06.2024',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5559,7 +5571,7 @@ Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-19 (mapillary)
+#: last_checked: 2024-04-01
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5650,18 +5662,16 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        {
-         'data' => '#: by: http://spielstraßen.de/uebersicht.php#kreu
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05.
-#: last_checked: 2024-03-17
-#: next_check: 2024-05-01
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: http://spielstraßen.de/uebersicht.php#kreu
+# REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
 	q4::temp::play 12822,10487 12897,10439
 ',
-         'from' => 1716588000,
+         'from' => 1716415200,
          'id' => 3551,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
          'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September (außer Sommerferien)',
          'type' => 'handicap',
-         'until' => 1727627400
+         'until' => 1727454600
        },
        undef,
        {
@@ -5865,7 +5875,32 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
+#: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11798 (Anfrage (findet 2023 nicht statt?))
+#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024)
+	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
+	2::temp -3054,14305 -3019,14286
+	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
+	2::temp -3042,14255 -3091,14220
+',
+         'from' => 1717624800,
+         'id' => 3598,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 7. bis 9. Juni 2024',
+         'type' => 'gesperrt',
+         'until' => 1717959600
+       },
        undef,
        undef,
        undef,
@@ -6883,14 +6918,36 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
+#: by: http://spielstraßen.de/uebersicht.php?date=20230620
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/fuer-eine-ruhigere-steinmetzstrasse_a410936
+	q4::temp::play 7657,9942 7698,10147
+',
+         'from' => 1712959200,
+         'id' => 3829,
+         'text' => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 14. April 2024 bis zum 27. Oktober 2024',
+         'type' => 'handicap',
+         'until' => 1729893599
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
+#: by: http://spielstraßen.de/uebersicht.php?date=20230620
+#: by: http://spielstraßen.de/uebersicht.php?date=20240401
+	q4::temp::play 5956,7686 5812,7685
+',
+         'from' => 1720044000,
+         'id' => 3830,
+         'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, Juli 2024 bis November 2024',
+         'type' => 'handicap',
+         'until' => 1730502000
+       },
        undef,
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-03-29
+#: last_checked: 2024-03-30
 #: next_check: 2024-06-30
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -7186,9 +7243,12 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024)
+         'data' => '#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv)
+#: also_indoor: traffic (B)
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m
-#: note: bei rbb bis 30.11.2024
+#: note: bei rbb bis 30.11.2024, bei Bing bis 8.4.2024
+#: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
+#: next_check: 2024-04-08
 	q3::inwork 8486,16425 8467,16718
 ',
          'from' => 1669791600,
@@ -7268,7 +7328,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: next_check_id: WEGAMFLIESSGRABEN-2023
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
-#: last_checked: 2024-03-17 (mapillary)
+#: last_checked: 2024-03-30 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-31
 #: next_check: 2024-06-30
@@ -7373,7 +7433,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: next_check_id: BLUMBERGER-2023
 #: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
-#: osm_watch: way id="1126670512" version="11"
+#: osm_watch: way id="1126670512" version="12"
 	q4::inwork 21889,16817 21925,16981
 #: source_id: viz2021:13.574645,52.555124,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (inaktiv)
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024)
@@ -8123,7 +8183,7 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2024-02-17 (mapillary) vvv
+#: last_checked: 2024-03-29 (mapillary) vvv
 #: check_frequency: 60d vvv
 	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
 	q4::inwork 8164,15840 8140,15859

@@ -341,7 +341,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-03-22 vvv
+#: last_checked: 2024-04-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -414,7 +414,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-03-08
+#: last_checked: 2024-04-01
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -1279,7 +1279,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-03-28 vvv
+#: last_checked: 2024-04-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2918,7 +2918,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-03-28
+#: last_checked: 2024-04-01
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4446,10 +4446,11 @@ Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW1;RW4 6288,14661 6281,14630
 #: by: https://berliner-abendblatt.de/2022/02/09/putlitzbruecke-soll-sicherer-werden/ (Erneuerung der Radwege 2022 geplant)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17890.pdf (Antwort vom 26. Januar 2024: konkreter Zeitpunkt für die Ausführung kann nicht benannt werden)
+#: source_id: viz2021:13.343546,52.535428,02.04.2024,07:00 ("Einrichtung eines Fahrradwegs", bis 26.04.2024)
 #: XXX Was ändert sich bei der Sanierung der Radwege?
 #: last_checked: 2024-01-26 (Anfrage)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2022-12-31
+#: next_check: 2024-04-26
 	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14184 6228,14077
 	RW2; 6228,14077 6226,13951 6227,13938
 	RW3; 6227,13938 6226,13951
@@ -6250,7 +6251,7 @@ Gehwegplatten	RW1; 620,12144 610,12100
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
 #: osm_watch: way id="153370345" version="20"
-#: osm_watch: way id="153373877" version="27"
+#: osm_watch: way id="153373877" version="28"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: die Rechtsabbieger werden an der Ampel vorbei geführt
 Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
@@ -6263,7 +6264,7 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
 #: osm_watch: way id="153370344" version="36"
-#: osm_watch: way id="153373879" version="25"
+#: osm_watch: way id="153373879" version="26"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -7216,7 +7217,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2024-03-13 vvv
+#: last_checked: 2024-04-01 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7256,7 +7257,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2024-03-13
+#: last_checked: 2024-04-01
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
