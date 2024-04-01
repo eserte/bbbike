@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.15;
+$VERSION = 2.16;
 
 use File::Glob qw(bsd_glob);
 
@@ -839,6 +839,7 @@ EOF
 		 # don't use draw=>'all' here --- strnames are not displayed very well (sometimes with ... or ???), probably due to coord inaccuracies XXX
 		 -command => sub { current_route_in_bbbike_cgi(imagetype => 'pdf-auto', (map { (draw => $_) } qw(str sbahn ubahn wasser flaechen ampel))) },
 		],
+		'-',
 		[Button => $do_compound->("local bbbikeleaflet.cgi"),
 		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 0) },
 		],
@@ -848,12 +849,26 @@ EOF
 		[Button => $do_compound->("as selection for live bbbikeleaflet.cgi"),
 		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 1, selection => 1) },
 		],
+		[Button => $do_compound->("as QRCode for local bbbikeleaflet.cgi"),
+		 -command => sub { current_route_as_qrcode(in => "bbbikeleaflet-local") },
+		],
 		[Button => $do_compound->("as QRCode for live bbbikeleaflet.cgi"),
 		 -command => sub { current_route_as_qrcode(in => "bbbikeleaflet-live") },
+		],
+		'-',
+		[Button => $do_compound->("as QRCode for GPX track with local bbbike.cgi"),
+		 -command => sub { current_route_as_qrcode(in => "bbbike-gpx-track-local") },
 		],
 		[Button => $do_compound->("as QRCode for GPX track with live bbbike.cgi"),
 		 -command => sub { current_route_as_qrcode(in => "bbbike-gpx-track-live") },
 		],
+		[Button => $do_compound->("as QRCode for GPX route with local bbbike.cgi"),
+		 -command => sub { current_route_as_qrcode(in => "bbbike-gpx-route-local") },
+		],
+		[Button => $do_compound->("as QRCode for GPX route with live bbbike.cgi"),
+		 -command => sub { current_route_as_qrcode(in => "bbbike-gpx-route-live") },
+		],
+		'-',
 		[Button => $do_compound->("Windy"),
 		 -command => sub { current_route_in_windy() },
 		],
@@ -2130,18 +2145,19 @@ sub current_route_as_qrcode {
     my $cgiurl;
     my %params;
 
-    if      ($in eq 'bbbikeleaflet-live') {
-	$cgiurl = 'http://bbbike.de/cgi-bin/bbbikeleaflet.cgi';
-    } elsif ($in eq 'bbbike-gpx-track-live') {
-	$cgiurl = 'http://bbbike.de/cgi-bin/bbbike.cgi';
-#	$cgiurl = 'http://cabulja.herceg.de/bbbike/cgi/bbbike.cgi';
-	%params =
-	    (
-	     output_as => 'gpx-track',
-	     showroutelist => 1,
-	    );
+    my $local_base_url = "http://home/bbbike/cgi";
+    my $live_base_url  = "http://bbbike.de/cgi-bin";
+
+    if      ($in =~ /^bbbikeleaflet-(live|local)$/) {
+	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbikeleaflet.cgi';
+    } elsif ($in =~ /^bbbike-gpx-track-(live|local)$/) {
+	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
+	%params = (output_as => 'gpx-track', showroutelist => 1);
+    } elsif ($in =~ /^bbbike-gpx-route-(live|local)$/) {
+	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
+	%params = (output_as => 'gpx-route', showroutelist => 1);
     } else {
-	die "Currently only 'bbbikeleaflet-live' and 'bbbike-gpx-track-live' are allowed for 'in' parameter";
+	die "Currently only 'bbbikeleaflet-live/local', 'bbbike-gpx-track-live/local' and 'bbbike-gpx-route-live/local' are allowed for 'in' parameter";
     }
 
     require BBBikeUtil;
