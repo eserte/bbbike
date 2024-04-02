@@ -4566,7 +4566,14 @@ sub display_route {
 		);
 	    http_header(@headers);
 	    my $gps_routenamelength = 36; # good for modern devices XXX should this be configurable?
-	    my $gps_routename = $zielname . ' ' . ($lang eq 'en' ? 'from' : 'von') . ' ' . $startname; # XXX Msg
+	    my $gps_routename;
+	    if ($vianame && $startname eq $zielname) {
+		# offensichtlicher Rundkurs, Via voranstellen
+		$gps_routename = M('über')." $vianame ".M('von')." $startname ".M('bis')." $zielname";
+	    } else {
+		$gps_routename = "$zielname ".M('von'). " $startname";
+		if ($vianame) { $gps_routename .= " ".M('über')." $vianame" }
+	    }
 	    $gps_routename = substr($gps_routename, 0, $gps_routenamelength-3).'...' if length $gps_routename > $gps_routenamelength;
 
 	    # setup bbd data structure suitable for Douglas-Peucker simplification
