@@ -10775,6 +10775,7 @@ EOF
        text  => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 236501383 (neue Sperrung vom 29.03.2024 bis 12.04.2024, provisorische Überquerungsmöglichkeit für Fußgänger)
 	2::inwork -6424,54584 -5771,54572 -5722,54573 -5233,54564 -5115,54564 -5032,54562 -4424,54552 -4290,54555 -4170,54557
 EOF
      },
@@ -29579,9 +29580,9 @@ EOF
 	q4::inwork; 9936,14085 10002,14092
 EOF
      },
-     { from  => $isodate2epoch->("2023-03-30 06:00:00"), # 1 Tag Vorlauf # 1648843431, # 1554400800, # 2019-04-04 20:00
-       until => $isodate2epoch->("2023-04-03 06:00:00"),
-       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.3.2023 bis 3.4.2023 6 Uhr',
+     { from  => $isodate2epoch->("2024-04-04 00:00:00"), # $isodate2epoch->("2023-03-30 06:00:00"), # 1 Tag Vorlauf # 1648843431, # 1554400800, # 2019-04-04 20:00
+       until => $isodate2epoch->("2024-04-08 06_00:00"), # $isodate2epoch->("2023-04-03 06:00:00"),
+       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.04.2024 bis 08.04.2024 6 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2022/04/halbmarathon/
@@ -30556,7 +30557,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-03-24 vvv
+#: last_checked: 2024-04-02 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -30583,7 +30584,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_182020_LMS-BR_72 (inaktiv)
 #: source_id: 2147346766 (inaktiv)
 #: source_id: bvg2021:395#BVG344827_0
-#: source_id: viz2021:13.620478,52.513101,22.03.2024,22:00 (bis 02.04.2024)
+#: source_id: viz2021:13.620478,52.513101,22.03.2024,22:00 (bis 02.04.2024) (inaktiv)
 #: source_id: viz2021:13.62105,52.51373,22.03.2024,22:00 (bis 02.04.2024) (inaktiv)
 #: by: https://www.die-hellersdorfer.berlin/2024/03/16/bahn%C3%BCbergang-in-der-lemkestra%C3%9Fe-f%C3%BCr-zehn-tage-gesperrt/
 #: by: https://alles-mahlsdorf.de/bahnuebergang-lemkestrasse-zehn-tage-lang-gesperrt/
@@ -42424,6 +42425,31 @@ EOF
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1711947600, # 2024-04-01 07:00
+       until => 1740585600, # 2025-02-26 17:00
+       text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
+#: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
+#: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen."
+#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
+	2::inwork 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
+EOF
+     },
+     { from  => 1711947600, # 2024-04-01 07:00
+       until => 1730476800, # 2024-11-01 17:00
+       text  => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 01.11.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775015299345232197
+#: by: https://pbs.twimg.com/media/GJxJdVZXgAAnXQw?format=jpg&name=large
+#: note: außerdem muss man den Fußgängerüberweg beim Überqueren der Johannisthaler Chaussee an den Kreuzungen Stieglitzweg und Buchfinkweg benutzen
+	q3::inwork 14541,3060 14493,3143
 EOF
      },
     );

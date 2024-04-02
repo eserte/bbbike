@@ -4406,7 +4406,53 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2022/04/halbmarathon/
+#: by: https://twitter.com/ellirhc11/status/1509924822444298250
+#: by: https://viz.berlin.de/2023/03/halbmarathon/
+#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
+#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
+#: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
+	2::temp 8540,12420 8775,12457
+	2::temp 8309,12758 8306,12609 8207,12606
+	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+	2::temp 8306,12609
+	3 8554,12593 8540,12420 8775,12457
+	3 8399,12610 8400,12417 8391,12389
+# REMOVED ---	3 8369,12609 8373,12416 8391,12389
+	3 8775,12457 8540,12420 8554,12593
+	3 8327,12174 8344,12221 8391,12389
+	3 7429,12070 7383,12095 7031,12320
+# REMOVED ---	3 8391,12389 8373,12416 8369,12609
+	3 8391,12389 8344,12221 8327,12174
+	3 8391,12389 8400,12417 8399,12610
+	3 7654,12464 7627,12380 7603,12353
+	3 7603,12353 7627,12380 7654,12464
+	3 8592,12252 8538,12245 8522,12187
+	3 8592,12252 8538,12245 8522,12239
+	3 7822,12201 7816,12150 7823,12120
+	3 7822,12201 7875,12363 7945,12592
+	3 8522,12187 8538,12245 8522,12239
+	3 8522,12187 8538,12245 8592,12252
+	3 7945,12592 7875,12363 7822,12201
+	3 7945,12592 8122,12603 8120,12756
+	3 7031,12320 7383,12095 7429,12070
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12239 8538,12245 8592,12252
+	3 8120,12756 8122,12603 7945,12592
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1712181600,
+         'id' => 3085,
+         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.04.2024 bis 08.04.2024 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1712548800
+       },
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
@@ -4587,7 +4633,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-03-24 vvv
+#: last_checked: 2024-04-02 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -4608,28 +4654,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
-# REMOVED --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
-#: source_id: LMS-BR_r_LMS-BR_182020_LMS-BR_72 (inaktiv)
-#: source_id: 2147346766 (inaktiv)
-#: source_id: bvg2021:395#BVG344827_0
-#: source_id: viz2021:13.620478,52.513101,22.03.2024,22:00 (bis 02.04.2024)
-#: source_id: viz2021:13.62105,52.51373,22.03.2024,22:00 (bis 02.04.2024) (inaktiv)
-#: by: https://www.die-hellersdorfer.berlin/2024/03/16/bahn%C3%BCbergang-in-der-lemkestra%C3%9Fe-f%C3%BCr-zehn-tage-gesperrt/
-#: by: https://alles-mahlsdorf.de/bahnuebergang-lemkestrasse-zehn-tage-lang-gesperrt/
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240321 (auch für Fußgänger und Radfahrer gesperrt)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1771248982099960242
-#: by: https://pbs.twimg.com/media/GJQmib3X0AEYIJR?format=png
-# REMOVED (hier nicht) ---	2::inwork 25191,12343 25149,12266
-	2::inwork 25149,12266 25109,12196 25072,12107
-',
-         'from' => 1710975600,
-         'id' => 3160,
-         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, von 22.03.2024 22:00 bis 02.04.2024 morgens',
-         'type' => 'gesperrt',
-         'until' => 1712023200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8197,6 +8222,33 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
          'text' => 'Wiesenstr./Uferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
+#: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
+#: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen."
+#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
+	2::inwork 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
+',
+         'from' => 1711947600,
+         'id' => 4033,
+         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
+         'type' => 'gesperrt',
+         'until' => 1740585600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775015299345232197
+#: by: https://pbs.twimg.com/media/GJxJdVZXgAAnXQw?format=jpg&name=large
+#: note: außerdem muss man den Fußgängerüberweg beim Überqueren der Johannisthaler Chaussee an den Kreuzungen Stieglitzweg und Buchfinkweg benutzen
+	q3::inwork 14541,3060 14493,3143
+',
+         'from' => 1711947600,
+         'id' => 4034,
+         'text' => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 01.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1730476800
        }
      
 );
