@@ -4049,6 +4049,74 @@ sub _lwp_get_with_curl {
 
 ######################################################################
 
+sub generate_gps_route_name {
+    return if !@main::realcoords;
+
+    my $prefix = 'X'; # unspecified
+    my $farthest_coord;
+    if (defined $main::center_on_coord) { # assume home coordinate
+	require Strassen::Util;
+	my $start_dist = Strassen::Util::strecke_s($main::center_on_coord, join(',',@{$main::realcoords[0]}));
+	my $goal_dist  = Strassen::Util::strecke_s($main::center_on_coord, join(',',@{$main::realcoords[-1]}));
+	if ($start_dist < 50 && $goal_dist > 50) {
+	    $prefix = 'V'; # "Vor" (der Arbeit z.B.)
+	    $farthest_coord = $main::realcoords[-1];
+	} elsif ($start_dist > 50 && $goal_dist < 50) {
+	    $prefix = 'N'; # "Nach"
+	    $farthest_coord = $main::realcoords[0];
+	} else {
+	    $prefix = 'X'; # Rundkurs
+
+	    my($max_coord, $max_dist);
+	    for my $coords (@main::realcoords) {
+		my $dist = Strassen::Util::strecke_s($main::center_on_coord, join(',',@$coords));
+		if (!defined $max_dist || $dist > $max_dist) {
+		    $max_coord = $coords;
+		    $max_dist = $dist;
+		}
+	    }
+	    $farthest_coord = $max_coord;
+	}
+    }
+    if (!defined $farthest_coord) {
+	$farthest_coord = $main::realcoords[-1];
+    }
+
+    my $len;
+    if ($main::act_value{Km} && $main::unit_s =~ /^(km|m)$/) { # XXX no support for miles
+	$len = sprintf "%.1f", $main::act_value{Km} / ($main::unit_s eq 'm' ? 1000 : 1);
+    }
+
+    my $time = $main::act_value{Time}->[0];
+    $time =~ s/\s+h$//; # theoretically can also have just seconds, but this may be ignored
+
+    my $place;
+    if (!$main::city_obj->is_osm_source) {
+	# XXX partially taken from miscsrc/trkstats.pl
+	require GPS::GpsmanData;
+	require GPS::GpsmanData::Stats;
+	require Karte::Polar;
+	require Karte::Standard;
+	require Strassen::MultiStrassen;
+	my $areas = MultiStrassen->new("$main::datadir/berlin_ortsteile", "$main::datadir/potsdam");
+	my $places = MultiStrassen->new("$main::datadir/orte", "$main::datadir/orte2");
+	my $g_dummy = GPS::GpsmanMultiData->new;
+	my $stats = GPS::GpsmanData::Stats->new($g_dummy, areas => $areas, places => $places);
+	$stats->_init_areas;
+	$place = $stats->_find_area($Karte::Polar::obj->standard2map(@$farthest_coord));
+    }
+
+    my $route_name;
+    $route_name .= $prefix;
+    $route_name .= "$len " if defined $len;
+    $route_name .= "$time " if defined $time;
+    $route_name .= $place if defined $place;
+
+    $route_name;
+}
+
+######################################################################
+
 1;
 
 __END__

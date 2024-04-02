@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -72,6 +72,13 @@ sub BBBikeGPS::gps_interface {
     }
     my $file;
     my $gps_route_info = {};
+
+    # XXX just an experiment, needs more thoughts!
+    # XXX prepopulate route name with my own schema
+    if (defined &SRTShortcuts::generate_gps_route_name) {
+	$gps_route_info->{Name} = SRTShortcuts::generate_gps_route_name();
+    }
+
     if ($modobj->transfer_to_file()) {
 	my $default_extension = $modobj->default_extension;
 	$file = $top->getSaveFile(-defaultextension => $default_extension);
