@@ -879,6 +879,14 @@ RUN cp /bbbike/mapserver/brb/mapserver.conf /etc
 EOF
 	}
     }
+
+    # create some geojson files needed for bbbikeleaflet
+    if ($opt{mapserver}) { # XXX mapserver option is only needed because required prereqs (bmake, Makefile, maybe more?) are made available with this option XXX should be made differently!
+	$dockerfile .= <<'EOF';
+RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' ../tmp/geojson/bbbike-temp-blockings-optimized.geojson ../tmp/geojson/comments_ferry.geojson)
+EOF
+    }
+
     $dockerfile .= <<'EOF';
 ## switch to cgi-bin layout
 ENV BBBIKE_URL_LAYOUT cgi-bin
