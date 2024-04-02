@@ -267,8 +267,16 @@ sub fetch_images {
 	    $reqs_error++;
 	    my $error_data = eval { decode_json $resp->decoded_content };
 	    my $msg = "Try $try/$max_try:\n";
-	    $msg .= "Request: " . $resp->request->dump;
-	    if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout)$}) {
+	    if (0) { # enable only if there are bigger problems with API
+		my $dump_req = $resp = $resp->request->clone;
+		for my $header (qw(Authorization)) {
+		    if ($dump_req->header($header)) {
+			$dump_req->header($header => '...');
+		    }
+		}
+		$msg .= "Request: " . $dump_req->dump;
+	    }
+	    if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout|Zeit.*berschreitung bei Anfrage)$}) {
 		my $e = $error_data->{error};
 		$msg .= "$e->{error_user_title}: $e->{error_user_msg}";
 	    } else {
