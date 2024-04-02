@@ -2141,9 +2141,17 @@ sub current_route_as_qrcode {
 
     my @search_route = @{ main::get_act_search_route() };
     my($start, $goal) = ($search_route[0]->[0], $search_route[-1]->[0]);
+    my $via;
+    if ($start eq $goal || "@{$main::realcoords[0]}" eq "@{$main::realcoords[-1]}" && @search_route > 2) { # XXX maybe do this also if start and goal are nearby
+	$via = $search_route[$#search_route/2]->[0]; # XXX better would be the farthest point
+    }
 
     my $cgiurl;
     my %params;
+    my %streetlabel_params;
+    $streetlabel_params{startname} = $start if $start;
+    $streetlabel_params{vianame}   = $via   if $via;
+    $streetlabel_params{zielname}  = $goal  if $goal;
 
     my $local_base_url = "http://home/bbbike/cgi";
     my $live_base_url  = "http://bbbike.de/cgi-bin";
@@ -2152,10 +2160,10 @@ sub current_route_as_qrcode {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbikeleaflet.cgi';
     } elsif ($in =~ /^bbbike-gpx-track-(live|local)$/) {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
-	%params = (output_as => 'gpx-track', showroutelist => 1);
+	%params = (output_as => 'gpx-track', showroutelist => 1, %streetlabel_params);
     } elsif ($in =~ /^bbbike-gpx-route-(live|local)$/) {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
-	%params = (output_as => 'gpx-route', showroutelist => 1);
+	%params = (output_as => 'gpx-route', showroutelist => 1, %streetlabel_params);
     } else {
 	die "Currently only 'bbbikeleaflet-live/local', 'bbbike-gpx-track-live/local' and 'bbbike-gpx-route-live/local' are allowed for 'in' parameter";
     }
@@ -2164,12 +2172,13 @@ sub current_route_as_qrcode {
     # Using raw_query here may save some 20% on URL length
     my $url = BBBikeUtil::uri_with_query($cgiurl, [%params], raw_query => [ gple => $gple ]);
 
-    _show_qrcode_for_url($url, start => $start, goal => $goal);
+    _show_qrcode_for_url($url, start => $start, via => $via, goal => $goal);
 }
 
 sub _show_qrcode_for_url {
     my($url, %opts) = @_;
     my $start = delete $opts{start};
+    my $via   = delete $opts{via};
     my $goal  = delete $opts{goal};
 
     require Imager::QRCode;
@@ -2190,6 +2199,7 @@ sub _show_qrcode_for_url {
 	my $info_photo = main::load_photo($t, 'info');
 	my $info_msg = "URL: $url\nLength of URL: " . length($url);
 	if ($start) { $info_msg .= "\nStart: $start" }
+	if ($via)   { $info_msg .= "\nVia:   $via" }
 	if ($goal)  { $info_msg .= "\nGoal:  $goal" }
 	$f->Button(main::image_or_text($info_photo, 'Info'),
 		   -command => sub { main::status_message($info_msg, "infodlg") })->pack(-side => 'right');
