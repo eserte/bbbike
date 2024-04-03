@@ -122,6 +122,8 @@ eval q{local $SIG{'__DIE__'};
        use BBBikeXS;
    };
 
+sub filename_from_route ($$$$);
+
 =head1 Configuration section
 
 Please change the configuration variables in the file bbbike.cgi.config
@@ -3875,7 +3877,7 @@ sub display_route {
 
     if (defined $output_as && $output_as eq 'palmdoc') {
 	require BBBikePalm;
-	my $filename = filename_from_route($startname, $zielname) . ".pdb";
+	my $filename = filename_from_route($startname, $vianame, $zielname, undef) . ".pdb";
 	http_header
 	    (-type => "application/x-palm-database",
 	     -Content_Disposition => "attachment; filename=$filename",
@@ -3900,7 +3902,7 @@ sub display_route {
 
     if (defined $output_as && $output_as eq 'gpx-track') {
 	require Strassen::GPX;
-	my $filename = filename_from_route($startname, $zielname, "track") . ".gpx";
+	my $filename = filename_from_route($startname, $vianame, $zielname, "track") . ".gpx";
 	my @headers =
 	    (-type => "application/gpx+xml",
 	     -Content_Disposition => "attachment; filename=$filename",
@@ -3925,7 +3927,7 @@ sub display_route {
 
     if (defined $output_as && $output_as eq 'kml-track') {
 	require Strassen::KML;
-	my $filename = filename_from_route($startname, $zielname, "track") . ".kml";
+	my $filename = filename_from_route($startname, $vianame, $zielname, "track") . ".kml";
 	my @headers =
 	    (-type => "application/vnd.google-earth.kml+xml",
 	     -Content_Disposition => "attachment; filename=$filename",
@@ -4506,7 +4508,7 @@ sub display_route {
 	}
 	if ($output_as eq 'perldump') {
 	    require Data::Dumper;
-	    my $filename = filename_from_route($startname, $zielname) . ".txt";
+	    my $filename = filename_from_route($startname, $vianame, $zielname, undef) . ".txt";
 	    http_header
 		(-type => "text/plain",
 		 @weak_cache,
@@ -4517,7 +4519,7 @@ sub display_route {
 	    require BBBikeYAML;
 	    my $is_short = $1 eq "-short";
 	    my $yaml_dump = sub { BBBikeYAML::Dump(@_) };
-	    my $filename = filename_from_route($startname, $zielname) . ".yml";
+	    my $filename = filename_from_route($startname, $vianame, $zielname, undef) . ".yml";
 	    http_header
 		(-type => "application/x-yaml",
 		 @weak_cache,
@@ -4565,7 +4567,7 @@ sub display_route {
 	    print BBBikeGeoJSON::bbbikecgires_to_geojson_json($res, short => $is_short);
 	} elsif ($output_as eq 'gpx-route') {
 	    require Strassen::GPX;
-	    my $filename = filename_from_route($startname, $zielname) . ".gpx";
+	    my $filename = filename_from_route($startname, $vianame, $zielname, undef) . ".gpx";
 	    my @headers =
 		(-type => "application/gpx+xml",
 		 -Content_Disposition => "attachment; filename=$filename",
@@ -4639,7 +4641,7 @@ sub display_route {
 	    }
 	} else { # xml
 	    require XML::Simple;
-	    my $filename = filename_from_route($startname, $zielname) . ".xml";
+	    my $filename = filename_from_route($startname, $vianame, $zielname, undef) . ".xml";
 	    http_header
 		(-type => 'application/xml',
 		 @weak_cache,
@@ -5860,7 +5862,7 @@ sub draw_route {
 	    $startname = Strasse::strip_bezirk($route->[0]->{Strname});
 	    $zielname  = Strasse::strip_bezirk($route->[-1]->{Strname});
 	}
-	my $filename = ($startname && $zielname ? filename_from_route($startname, $zielname, "bbbike") : "bbbike");
+	my $filename = ($startname && $zielname ? filename_from_route($startname, undef, $zielname, "bbbike") : "bbbike");
 	if ($q->param('imagetype') =~ /^pdf-(.*)/) {
 	    $q->param('geometry', $1);
 	    $q->param('imagetype', 'pdf');
@@ -7552,17 +7554,23 @@ sub load_teaser {
        }; warn $@ if $@;
 }
 
-sub filename_from_route {
-    my($startname, $zielname, $type) = @_;
-    for ($startname, $zielname) {
-	$_ = lc BBBikeUtil::umlauts_to_german($_);
-	s{[^a-z0-9_]}{}g;
+sub filename_from_route ($$$$) {
+    my($startname, $vianame, $zielname, $type) = @_;
+    for ($startname, $vianame, $zielname) {
+	if (defined $_) {
+	    $_ = lc BBBikeUtil::umlauts_to_german($_);
+	    s{[^a-z0-9_]}{}g;
+	}
     }
     $type = "route" if !$type;
     if (!$startname || !$zielname) {
 	$type; # fallback
     } else {
-	$type . "_" . $startname . "_" . $zielname;
+	if (defined $vianame && $startname eq $zielname) {
+	    $type . "_" . $vianame . "_" . $zielname;
+	} else {
+	    $type . "_" . $startname . "_" . $zielname;
+	}
     }
 }
 
