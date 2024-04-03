@@ -54,9 +54,9 @@ my $ipc_run_tests = 3;
 my $json_xs_0_tests = 2;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
-my $yaml_syck_tests = 6;
+my $yaml_tests = 6;
 #plan 'no_plan';
-plan tests => 209 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 209 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -351,7 +351,7 @@ SKIP: {
 }
 
 SKIP: {
-    skip "need working BBBikeYAML", $yaml_syck_tests
+    skip "need working BBBikeYAML", $yaml_tests
 	if !eval { require BBBikeYAML; 1 };
 
     my %route_endpoints = (startc => '14311,11884', # Gärtnerstr.
