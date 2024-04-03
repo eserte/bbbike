@@ -54,9 +54,9 @@ my $ipc_run_tests = 3;
 my $json_xs_0_tests = 2;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
-my $yaml_syck_tests = 5;
+my $yaml_syck_tests = 6;
 #plan 'no_plan';
-plan tests => 181 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 209 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -132,6 +132,7 @@ SKIP: {
 				    pref_fragezeichen => 'yes',
 				    output_as => 'perldump',
 				  }, 'tricky search with fragezeichen in region scope';
+    is $resp->header('content-disposition'), 'attachment; filename=route_landstrasse1fragezeichen1_landstrasse1fragezeichen2.txt';
     my $res = $safe->reval($resp->decoded_content);
     cmp_ok $res->{Len}, ">", 1300, 'expected length';
     is $res->{Route}->[0]->{Strname}, 'Fragezeichen1', 'expected route, 1st hop';
@@ -357,6 +358,7 @@ SKIP: {
 			   zielc  => '14674,11370', # Wühlischstr.
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'yaml'}, 'yaml output';
+    is $resp->header('content-disposition'), 'attachment; filename=route_wuehlischstrgaertnerstrfriedrichshain_ostkreuzumfahrungostkreuz.yml';
     my $data = BBBikeYAML::Load($resp->decoded_content(charset => 'none'));
     validate_bbbikecgires_data $data, 'YAML output';
     is $data->{Route}->[0]->{Strname}, 'Gärtnerstr.', 'found 1st non-ascii name';
@@ -418,6 +420,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
+	is $resp->header('content-disposition'), 'attachment; filename=route_dudenstr_methfesselstr.xml';
 	my $content = $resp->decoded_content(charset => "none");
 	xmllint_string($content, 'Well-formedness of XML output');
 	validate_bbbikecgires_xml_string($content, 'Validation of XML output');
@@ -425,6 +428,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
+	is $resp->header('content-disposition'), 'attachment; filename=route_dudenstr_methfesselstr.gpx';
 	my $content = $resp->decoded_content(charset => "none");
 	xml_eq($content, '<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX ... (XML::LibXML ...) - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><name>Methfesselstr. von Dudenstr.</name><rtept lat="52.484986" lon="13.385901"><name>Dudenstr.</name></rtept><rtept lat="52.484989" lon="13.382267"><name>Methfesselstr.</name></rtept></rte></gpx>',
 	       'output_as gpx-route as expected',
@@ -448,6 +452,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
+	is $resp->header('content-disposition'), 'attachment; filename=route_wilhelmshoehe_wilhelmshoehe.xml';
 	my $content = $resp->decoded_content(charset => "none");
 	validate_bbbikecgires_xml_string($content, 'Validation of XML output');
 	my $doc = $p->parse_string($content);
@@ -457,6 +462,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
+	is $resp->header('content-disposition'), 'attachment; filename=route_wilhelmshoehe_wilhelmshoehe.gpx';
 	my $content = $resp->decoded_content(charset => "none");
 	my $expected = '<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX 1.27 (XML::LibXML 2.0128) - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><name>Wilhelmshöhe von Wilhelmshöhe</name><rtept lat="52.487916" lon="13.38594"><name>Wilhelmshöhe</name></rtept><rtept lat="52.487887" lon="13.385366"><name></name></rtept><rtept lat="52.48658" lon="13.384777"><name></name></rtept></rte></gpx>';
 	from_to($expected, 'latin1', 'utf-8');
@@ -475,6 +481,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'kml-track'}, 'KML output';
+	is $resp->header('content-disposition'), 'attachment; filename=track_wilhelmshoehe_wilhelmshoehe.kml';
 	my $content = $resp->decoded_content(charset => "none");
 	my $doc = $p->parse_string($content);
 	$doc->documentElement->setNamespaceDeclURI(undef, undef);
@@ -628,6 +635,7 @@ SKIP: {
     my $safe = Safe->new;
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'perldump' }, 'No road prefs';
+	is $resp->header('content-disposition'), 'attachment; filename=route_rudidutschkestraxelspringerstr_kochstrkreuzbergwilhelmstrmittekreuzberg.txt';
 	my $res = $safe->reval($resp->decoded_content);
 	ok((grep { $_ eq '9615,11225' } @{$res->{Path}}), 'via Kochstr.')
 	    or diag_route($res);
@@ -748,6 +756,21 @@ SKIP: {
 	{
 	    my %params = (%params, output_as => 'gpx-track');
 	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    is $resp->header('content-disposition'), 'attachment; filename=track.gpx';
+	    gpxlint_string($resp->decoded_content(charset => 'none'));
+	}
+
+	{
+	    my %params = (%params, output_as => 'gpx-track', startname => 'Dudenstr.', zielname => 'Mehringdamm');
+	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    is $resp->header('content-disposition'), 'attachment; filename=track_dudenstr_mehringdamm.gpx';
+	    gpxlint_string($resp->decoded_content(charset => 'none'));
+	}
+
+	{
+	    my %params = (%params, output_as => 'gpx-track', startname => 'Dudenstr.', vianame => 'Methfesselstr.', zielname => 'Dudenstr.');
+	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    is $resp->header('content-disposition'), 'attachment; filename=track_methfesselstr_dudenstr.gpx';
 	    gpxlint_string($resp->decoded_content(charset => 'none'));
 	}
     }
