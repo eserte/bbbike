@@ -105,13 +105,13 @@ Fußgängerampel links benutzen	CP; 14723,16686 14622,16674 14624,16659
 # REMOVED (gelöst durch split der Hohenstaufenstr) --- #: XXX_prog: RL:ja, GPS:ja (da es doch immerhin 30 Meter bis zur Ampel sind und Radfahrer evtl. nach links fahren würden) --- Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6224,9544 6210,9753 6209,9772 6108,9772
 Fußgängerampel östlich der Münchener Str. zum Überqueren benutzen	CP; 6209,9772 6237,9772 6209,9773
 an der Fußgängerampel vor der Münchener Str. auf den linken Gehweg wechseln	CP; 6492,9782 6237,9772 6209,9771
-Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6657,11467 6716,11439 6825,11486
+Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6657,11467 6716,11439 6826,11479
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3835,10915 3623,10800 3644,10759
 #: XXX_prog: RL:ja, GPS:nein
 Tiergarten: rechts des Neuen Sees halten	CP2; 5900,11913 5858,11863
 #: XXX_prog: RL:ja, GPS:nein
 Tiergarten: links des Neuen Sees halten	PI; 5900,11913 5907,11874 5933,11775
-Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7103,11247
+Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6826,11479 6851,11346 7103,11247
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4769,8563 4772,8513 4954,8454
 # REMOVED (Richtungsfahrbahnen!) --- #: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;". --- #: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt, --- #: XXX_prog deshalb wieder zu "PI;" geändert. --- #: XXX_prog Die verlorene Zeit entspricht etwa 150m bei 15 km/h --- #: XXX_prog evtl. lohnt hier der Einsatz von routing_helper? Auf einer Straßenseite in beiden Richtungen würde reichen. Allerdings bräuchte man eine Routinganweisung "U-Turn", die es noch nicht gibt. --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5433,8407 5598,8267 --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5598,8267 5438,8402 5433,8407 5320,8456 --- Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5399,8344 5433,8407 5320,8456 --- #: XXX_prog: falls obiges implementiert mit routing_helper wird, braucht man hier vielleicht nichts zu machen --- oder doch, je nach Labelling? --- Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5598,8267 5433,8407 5399,8344
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5520,10453 5568,10535 5627,10637

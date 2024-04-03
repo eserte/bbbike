@@ -48,7 +48,7 @@ Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/michaelkirchstra%C3%9Fe-22-23.408/post-22461
 #: XXX eigentlich zwei Ampeln
 #: osm_watch: way id="124182482" version="9"
-#: last_checked: 2024-03-28
+#: last_checked: 2024-04-03
 Michaelbrücke	F::inwork 11676,11839
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -64,7 +64,7 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (bis 23.04.2025)
 #: note: gilt auch für Radfahrer (provisorische Radspur Richtung Norden, auch eine Fahrradampel an der Radspur Richtung Süden)
 #: note: etwa 40m nördlich des Punktes
-#: last_checked: 2024-03-22
+#: last_checked: 2024-04-03
 #: check_frequency: 90d
 #: next_check: 2025-04-23
 #: valid: -20250423
@@ -153,7 +153,7 @@ Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2024-02-23
+#: last_checked: 2024-04-03
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 #: valid: -20240701
@@ -727,7 +727,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6656,12075
 #: note ^^^
 #: XXX_prog ^^^
-	X 6825,11486
+	X 6826,11479
 #: note: Anforderung für Radfahrer, die von Süden aus die Straße des 17. Juni überqueren wollen
 	X 8055,12186
 	X 7031,12320
@@ -1105,6 +1105,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3689,11637
 	X 3159,11562
 	X 3279,12533
+#: note: Anforderung für in die Schloßstr. links abbiegende Radfahrer
 	X 3033,12509
 	X 3761,12298
 	X 3337,12855

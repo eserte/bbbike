@@ -378,6 +378,12 @@ Tauernallee - Wildspitzweg (Buga-Eingang): fester Sandweg	X 10716,2597 10775,276
 #: mud: 2021-01-09: matschig, einige Pfützen
 #: mud: 2024-03-18: keine Beeinträchtigungen	h=q0
 Tiergarten, Bellevueallee - Floraplatz: Parkweg	X 8016,11770 8020,11937 8022,12016
+#
+#: mud: 2024-04-03: feuchte Oberfläche, viele Pfützen	h=q2,wet 
+(Parkweg entlang der Tiergartenstr.): Parkweg	X 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553
+# 
+#: mud: 2024-04-03: feuchte Oberfläche, einige Pfützen	h=q1-,wet
+(Parkweg entlang der Tiergartenstr.): Parkweg	X 7713,11553 7621,11541 7463,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 # 
 #: mud: 2021-02-20: sehr matschig
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	X 6233,412 6256,363
@@ -680,4 +686,7 @@ Mohnblütenweg: unbefestigte Straße	X 21712,215 21688,312
 # 
 #: mud: 2024-02-17: zahlreiche Pfützen	h=q3,wet
 Weg an der Havel: wassergebundene Decke	X -3529,13452 -3546,13503
+# 
+#: mud: 2024-04-03: einige Pfützen, leicht matschige Oberfläche	h=q2-,wet
+(südliches Spreeufer): unbefestigter Weg	X 5643,12253 5714,12290 5770,12346
 # 

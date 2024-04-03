@@ -671,19 +671,19 @@ Rosa-Luxemburg-Steg - Gartenufer: Verbundsteinpflaster	Q1 6247,11390 6200,11417
 Fasanerieallee: Kleinsteinpflaster	Q1 6428,11610 6450,11641
 Fasanerieallee: Parkweg	Q1 6450,11641 6540,11754 6685,11954
 Großer Weg: Parkweg	Q1 5900,11913 5907,11874 5933,11775 6022,11757 6154,11798 6296,11756 6353,11730 6411,11678 6450,11641 6512,11608 6679,11602 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629
-(Großer Weg - Klingelhöferstr./Tiergartenstr.): Parkweg	Q1 6679,11602 6750,11550 6825,11486
-Großer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7717,11540
+(Großer Weg - Klingelhöferstr./Tiergartenstr.): Parkweg	Q1 6679,11602 6750,11550 6826,11479
+Großer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7713,11553 7717,11540
 Große Sternallee: Parkweg, Feinschotter	Q1 6809,11979 6984,11859 7058,11809 7163,11738
-Große Sternallee: Parkweg, etwas gröberer Schotter	Q1 7163,11738 7373,11594 7418,11566 7504,11512
-(Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7362,11561 7373,11594
+Große Sternallee: Parkweg, etwas gröberer Schotter	Q1 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
+(Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7359,11538 7362,11561 7373,11594
 Bellevueallee: Mosaikpflaster	Q1 7031,12320 7383,12095
 Bellevueallee: Mosaikpflaster	Q1 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753
-(Luiseninsel - Tiergartenstr.): Parkweg	Q1 7664,11597 7600,11513
+(Luiseninsel - Tiergartenstr.): Parkweg	Q1 7664,11597 7621,11541 7600,11513
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 Tiergarten: wassergebundene Decke	Q1 8167,11865 8132,11910
 Tiergarten: wassergebundene Decke	Q1 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
-Tiergarten: Parkweg, teilweise gröberer Schotter	Q1 8005,11627 8014,11753 8016,11770
+Tiergarten: Parkweg, teilweise gröberer Schotter	Q1 8005,11627 8006,11648 8014,11753 8016,11770
 Tiergarten: Parkweg	Q1 8016,11770 8020,11937 8022,12016
 Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8049,12140
 Tiergarten: Mosaikpflaster	Q1 8049,12140 8055,12186
@@ -1720,7 +1720,8 @@ Große Querallee: Asphalt mit einigen leichten Schäden	Q0 7875,12363 7822,12201 7
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
 Paul-Löbe-Allee: Asphalt	Q0 7851,12590 7945,12592 8122,12603
 (Große Querallee - Tiergartenstr.): Asphalt	Q0 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
-(Große Querallee - Tiergartenstr.): Parkweg	Q1 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7816,11571
+(Große Querallee - Tiergartenstr.): Parkweg	Q1 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7813,11589 7816,11571
+(Parkweg entlang der Tiergartenstr.): Parkweg	Q1 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 (Tiergarten, entlang des Sees): Parkweg, etwas Schotter	Q1 7765,11737 7733,11713 7682,11703 7648,11708
 (Tiergarten, entlang des Sees): Parkweg	Q1 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
 Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13650,8320 13575,8378 13469,8462
@@ -3289,7 +3290,7 @@ Treptower Park: wassergebundene Decke	Q1 15213,9166 15275,9140 15359,9131 15407,
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Schotterweg	Q2 15558,8820 15439,8839 15297,8921 15245,8916
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Asphalt	Q0 15245,8916 15223,8893
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
-Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3554,11617
+Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3569,11473 3554,11617
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
 Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 3040,9420
 (entlang der Stadtautobahn): Gehwegplatten	Q1 3379,8969 3489,8839 3510,8814
@@ -11459,6 +11460,8 @@ Röttkenring - Arnimstr.: Verbundsteinpflaster	Q1 17866,17116 17884,17103 17892,1
 (Schönhauser Str. - Zitherstr.): unbefestigter Weg	Q2 11599,20973 11657,20915
 Brabanter Platz: Asphalt	Q0 4531,8319 4530,8364 4521,8379
 (zum St.-Gertrauden-Krankenhaus): Kleinsteinpflaster	Q1 4531,8319 4531,8270
+Wallenbergstr.: leicht welliger Asphalt	Q0 4319,8493 4453,8490
+Wallenbergstr.: Kopfsteinpflaster	Q2 4453,8490 4457,8383 4473,8351
 (Weg entlang der A100): Asphalt	Q0 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
 (Weg an der A100 - Mergenthalerring): Asphalt	Q0 14409,8102 14419,8112
 (zu den Depotgebäuden): Asphalt	Q0 24700,5633 24716,5613 24734,5592 24733,5553
@@ -17249,10 +17252,10 @@ Ludwig-Pick-Str.: Asphalt	Q0 13548,12535 13552,12435
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602
 Kühler Weg: Asphalt	Q0 616,9602 743,9772 841,9914
 Falkensteiner Str.: Kopfsteinpflaster	Q3 4180,8098 4087,8204
-Ermslebener Weg: Asphalt	Q0 4139,8485 4135,8320
-Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8237
-Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4220,8482
-(Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 3992,8487
+Ermslebener Weg: Asphalt	Q0 4143,8501 4135,8320
+Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4229,8499 4220,8237
+Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4229,8499
+(Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4143,8501 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3751,8796 3858,8786
 Apeldorner Weg: wassergebundene Decke	Q1 3822,8718 3858,8786 3952,8980
 Bechstedter Weg: Asphalt	Q0 3467,9045 3661,8815

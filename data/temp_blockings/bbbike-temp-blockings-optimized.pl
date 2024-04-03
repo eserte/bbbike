@@ -3207,13 +3207,13 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
 	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
 	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7648,11708 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
 	2::temp 8026,11764 8016,11770 7793,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
 	2::temp 8522,12239 8466,12197
 	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
-	2::temp 7600,11513 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
+	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
 	2::temp 8221,11885 8215,12156 8214,12205
 	2::temp 8244,11878 8327,12174 8344,12221
 	3 7429,12070 7383,12095 7031,12320
@@ -4234,7 +4234,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-03-15 (mapillary)
+#: last_checked: 2024-04-03
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4566,6 +4566,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1430940.php (Saisonstart am 3. April 2024)
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-umwelt/saison-beginnt-in-boeckhstrasse_a411440
 	q4::temp::play 11175,9882 11197,9894 11411,9810
 ',
          'from' => 1711839600,
@@ -5427,7 +5428,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024)
 #: note: vermutlich nur im Bereich Sybelstr. 14
 #: also_indoor: traffic (B)
-	2::inwork 3726,10757 3731,10640 3764,10580 3883,10585
+	2::inwork 3726,10757 3731,10640 3764,10580
+# REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
 ',
          'from' => 1640905200,
          'id' => 3495,
@@ -6211,13 +6213,14 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/11-000-quadratmeter-flaeche-fuer-bueros-wohnen-und-gewerbe_a380464 ("Schöneberger Eck", bis Frühjahr 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/erfolg-fur-berliner-burgerinitiative-gericht-bremst-hochhausprojekt-schoneberger-eck-11038744.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/hochhaus-am-barbarossadreieck-darf-derzeit-nicht-weitergebaut-werden_a405579
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/sch%C3%B6neberger-eck.652/page-3#post-22745
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-03-13
+#: last_checked: 2024-03-29 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2025-01-05
 	q3::inwork 6447,9661 6341,9546
@@ -6468,13 +6471,15 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1388333.php (abgeschlossen + neue Bauarbeiten)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/neue-wege-im-volkspark_a400700
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet? --- #: last_checked: 2023-11-06 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-10-31 vvv
+#: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
+# REMOVED --- #: last_checked: 2023-11-06 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
 # REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
 # REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
 # REMOVED (hier fertig) ---	2::inwork 5433,8407 5454,8403 5617,8258
-#: next_check: 2024-03-25
+#: last_checked: 2024-04-03
+# REMOVED --- #: next_check: 2024-03-25
 	2::inwork 5166,8467 5212,8602
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
@@ -6686,7 +6691,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
 #: also_indoor: traffic (ex-H,G,B,W)
-#: last_checked: 2024-03-14 (indoor)
+#: last_checked: 2024-04-03
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 30d
 #: next_check: 2024-05-24
@@ -7378,8 +7383,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
-#: last_checked: 2024-02-23 (architektur-urbanistik)
-#: next_check: 2024-03-31
+#: last_checked: 2024-04-03
+# REMOVED --- #: next_check: 2024-03-31
 	q3::inwork 7103,11247 7171,11510
 ',
          'dont_check_date' => 1,
@@ -7494,7 +7499,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-03-28 vvv
+#: last_checked: 2024-04-03 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -7765,22 +7770,22 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
 #: osm_watch: way id="176621906" version="27"
 #: osm_watch: way id="4525429" version="22"
 #: osm_watch: way id="1212493766" version="4"
-#: osm_watch: note 3916787 2
-#: last_checked: 2024-01-25 vvv
+#: osm_watch: note 3916787 3
+#: last_checked: 2024-04-03 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-03-22 vvv
-Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583
-Suarezstr.	2::inwork 3152,11529 3159,11562
+#: next_check: 2024-04-19 vvv
+# REMOVED (Radweg existiert mittlerweile) --- Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583
+Suarezstr.: Umweg über 50m westlich gelegene Fußgängerampel	q4::inwork 3152,11529 3159,11562
 Suarezstr.	q3::inwork 3054,11240 3152,11529
 Windscheidstr.	q4::inwork 3185,11506 3152,11529
-Fritschestr.	q3::inwork 3339,11433 3320,11583
+# REMOVED (hier nicht mehr) --- Fritschestr.	q3::inwork 3339,11433 3320,11583
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3988,
-         'text' => 'Kaiserdamm: Fahrbahn und Radwege zwischen Witzlebenstr. und Fritschestr. Richtung Osten gesperrt, Anbindung Suarezstr. gesperrt, lange Umwege, voraussichtlich bis Mitte April 2024',
+         'text' => 'Suarezstr. und Windscheidstr.: Anbindung an Kaiserdamm gesperrt, lange Umwege, voraussichtlich bis 19. April 2024',
          'type' => 'handicap',
          'until' => 1713538800
        },
@@ -7916,11 +7921,12 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
        },
        {
          'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
+#: note: explizite Umleitung für Radfahrer vor Ort
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
          'from' => 1707087600,
          'id' => 4005,
-         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., evtl. sind auch Radfahrer betroffen, vom 06.02.2024 00:00 bis 02.08.2024 23:59',
+         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024 23:59',
          'type' => 'handicap',
          'until' => 1722635940
        },
@@ -7958,7 +7964,65 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'handicap',
          'until' => 1758639600
        },
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/schmargendorf-bombenentscharfung-mittwoch-21.02.2024/
+#: by: https://viz.berlin.de/site/assets/files/1496/karte_sperrkreis_mecklenburgische_strasse_32.791x0-is.jpg
+#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-gefunden-evakuierungen-in-schmargendorf-id245319
+#: by: https://berliner-abendblatt.de/berlin-news/bombenentschaerfung-in-schmargendorf-7500-menschen-betroffen-id245345
+#: by: https://berliner-abendblatt.de/berlin-news/bombenentschaerfung-polizei-mit-330-kraeften-vor-ort-id245354
+#: note: Entschärfung am 21.2.2024 war anscheinend gegen 18h
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1433495.php (neue Entschärfung am 4.4.2024)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1433561.php (Straßenverzeichnis)
+#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-in-berlin-schmargendorf-gefunden-id248861
+#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-soll-donnerstag-entschaerft-werden-id248891
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775562267431502076
+#: by: https://pbs.twimg.com/media/GKQQd1fWUAAr6IE?format=jpg&name=medium
+#: by: https://viz.berlin.de/aktuelle-meldungen/weltkriegsbombe-in-schmargendorf-gefunden-entscharfung-in-der-planung/
+Heidelberger Platz	2::bomb 4173,7993 4123,8021
+Heidelberger Platz [Bürgersteig]	2::bomb 4173,7993 4121,8016 4106,8031
+Johannisberger Str.	2::bomb 4161,7388 4162,7510 4162,7721 4173,7993
+# REMOVED --- Wiesbadener Str. (Friedenau, Wilmersdorf)	2::bomb 3965,7297 3703,7324 3612,7335
+# REMOVED --- Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3631,7598
+Mecklenburgische Str.	2::bomb 3631,7598 3839,7787 3968,7906 4061,7992 4106,8031
+Binger Str.	2::bomb 4061,7992 4067,7726 4066,7514 4064,7396
+Forckenbeckstr.	2::bomb 3665,8131 3779,8105 4106,8031
+# REMOVED --- Friedrichshaller Str.	2::bomb 3468,7455 3320,7515
+# REMOVED --- Helene-Jacobs-Str.	2::bomb 3309,7782 3320,7982 3326,8100
+# REMOVED --- Schlangenbader Str.	2::bomb 3965,7297 3969,7399
+Schlangenbader Str.	2::bomb 3969,7399 3971,7533 3969,7731 3968,7906
+Nauheimer Str.	2::bomb 3969,7731 4067,7726 4162,7721
+Homburger Str.	2::bomb 3971,7533 4066,7514 4162,7510
+# REMOVED --- Eberbacher Str.	2::bomb 4161,7388 4064,7396 3969,7399
+# REMOVED --- Sodener Str.	2::bomb 3703,7324 3718,7573
+# REMOVED --- Rudolf-Mosse-Str.	2::bomb 3631,7598 3662,7580 3718,7573
+Rudolf-Mosse-Str.	2::bomb 3718,7573 3813,7560
+# REMOVED --- Franz-Cornelsen-Weg	2::bomb 3612,7335 3619,7587
+(Bad Kissingen)	2::bomb 3596,7566 3609,7842
+(Kolonieweg a. d. Forkenbeckstr.)	2::bomb 3584,8136 3756,8101 3779,8105
+Claire-Waldoff-Weg	2::bomb 3584,8136 3571,8085 3538,7515
+	2::bomb 3665,8131 3676,8394
+#: note: 2024-04-04
+	2::bomb 3992,8487 4135,8320 4220,8237 4280,8188 4323,8119 4353,8035 4572,7936 4711,8013
+	2::bomb 4672,8031 4581,8048 4461,8105 4349,8118 4280,8188
+	2::bomb 4461,8105 4457,8270 4423,8315
+	2::bomb 4106,8031 4180,8098 4229,8142 4280,8188 4344,8246 4423,8315 4473,8351
+	2::bomb 4344,8246 4320,8277 4319,8493
+	2::bomb 4220,8237 4229,8499
+	2::bomb 4135,8320 4143,8501
+	2::bomb 4143,8501 3992,8487
+	2::bomb 4659,7824 4534,7864 4430,7896 4283,8016 4246,8000 4180,8098 4087,8204
+	2::bomb 4400,7508 4372,7628 4343,7732 4319,7824 4246,8000
+	2::bomb 4659,7824 4506,7734 4372,7628
+	2::bomb 4534,7864 4343,7732 4162,7721
+	2::bomb 4430,7896 4319,7824
+	2::bomb 4246,8000 4173,7993
+',
+         'from' => 1712166104,
+         'id' => 4009,
+         'text' => 'Bombenentschärfung an der Mecklenburgischen Str.: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 04. April 2024 ab 9:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1712246400
+       },
        {
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
@@ -8055,16 +8119,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'gesperrt',
          'until' => 1714143600
        },
-       {
-         'data' => '#: source_id: 246300586 (bis 03.04.2024)
-	2::inwork -62241,18760 -62229,18971 -62217,19221
-',
-         'from' => 1711274400,
-         'id' => 4019,
-         'text' => 'B102: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 25.03.2024 11:00 Uhr bis 03.04.2024 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1712116800
-       },
+       undef,
        {
          'data' => '#: source_id: 247200038 (bis 05.04.2024)
 	2::inwork 13095,-20435 12154,-20220
