@@ -279,10 +279,16 @@ for my $kr ($kr1, $kr2) {
 	is($situation{action}, 'XXX', q{Komplizierte Wegfuehrung (zuerst links, dann rechts), benoetigt eine gesonderte Beschreibung});
     }
 
+## streets do not exist anymore, see below for a different "half-right" test
+#    {
+#	# Molkenmarkt
+#	my %situation = situation_at_point_inorder($kr, qw(10697,12303 10746,12364 10831,12371));
+#	is($situation{action}, 'half-right', q{Need some indication that it's not Stralauer Str. to the right, but the Platz});
+#    }
     {
-	# Molkenmarkt
-	my %situation = situation_at_point_inorder($kr, qw(10697,12303 10746,12364 10831,12371));
-	is($situation{action}, 'half-right', q{Need some indication that it's not Stralauer Str. to the right, but the Platz});
+	# Wuhlheide/Treskowallee/Eichgestell
+	my %situation = situation_at_point_inorder($kr, qw(17934,7029 18010,7133 18079,7144));
+	is($situation{action}, 'half-right', q{using half-right});
     }
 
     {
