@@ -160,7 +160,7 @@ if ($with_notes) {
 	    } else {
 		my $now_comments_count = @{ $properties->{comments} };
 		if ($now_comments_count != $note_data->{comments_count}) {
-		    warn "CHANGED: note $human_url: number of comments changed (now $now_comments_count, was " . scalar($note_data->{comments_count}) . ")\n";
+		    warn "CHANGED: note $human_url: number of comments changed (" . scalar($note_data->{comments_count}) . " -> $now_comments_count)\n";
 		}
 	    }
 	}
