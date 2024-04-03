@@ -3907,6 +3907,12 @@ sub display_route {
 	    );
 	http_header(@headers);
 	my $s = $route_to_strassen_object->();
+	if ($q->param('simplify_tolerance')) {
+	    my $simplify_tolerance = int($q->param('simplify_tolerance'));
+	    if ($simplify_tolerance > 0) {
+		$s->simplify($simplify_tolerance);
+	    }
+	}
 	my $s_gpx = Strassen::GPX->new($s);
 	$s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	my $gpx_output = $s_gpx->bbd2gpx(-as => "track");

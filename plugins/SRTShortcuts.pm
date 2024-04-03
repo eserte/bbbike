@@ -2160,7 +2160,8 @@ sub current_route_as_qrcode {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbikeleaflet.cgi';
     } elsif ($in =~ /^bbbike-gpx-track-(live|local)$/) {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
-	%params = (output_as => 'gpx-track', showroutelist => 1, %streetlabel_params);
+	# tolerance => 1(m) triggers minimal simplification, but may cut the number of track points by the half
+	%params = (output_as => 'gpx-track', showroutelist => 1, %streetlabel_params, simplify_tolerance => 1);
     } elsif ($in =~ /^bbbike-gpx-route-(live|local)$/) {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
 	%params = (output_as => 'gpx-route', showroutelist => 1, %streetlabel_params);
