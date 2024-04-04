@@ -9646,11 +9646,13 @@ EOF
 	2::inwork 11403,-88614 10459,-88231 9578,-87785
 EOF
      },
-     { from  => 1188165600, # 2007-08-27 00:00
-       until => 1188597600, # 2007-09-01 00:00
-       text  => 'L 052 Ogrosen-Calau Bahnübergang in der OD Calau Gleisbauarbeiten Vollsperrung 28.08.2007-31.08.2007 ',
+     { from  => $isodate2epoch->("2024-05-12 00:00:00"), # 1188165600, # 2007-08-27 00:00
+       until => $isodate2epoch->("2024-06-03 04:00:00"), # 1188597600, # 2007-09-01 00:00
+       #text  => 'L 052 Ogrosen-Calau Bahnübergang in der OD Calau Gleisbauarbeiten Vollsperrung 28.08.2007-31.08.2007 ',
+       text  => 'Calau, L52: Sperrung des Bahnübergangs, vom 13.05.2024 bis 03.06.2024',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 246600218 (bis 03.06.2024)
 	2::inwork 51046,-73683 51081,-73709 51147,-73755
 EOF
      },
@@ -29598,6 +29600,9 @@ EOF
 #: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024)
+#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024)
+#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -37770,7 +37775,7 @@ EOF
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 #: by: https://nitter.net/txtnso/status/1609517082110201857
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
-#: osm_watch: node id="10202117536" version="8"
+#: osm_watch: node id="10202117536" version="9"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: last_checked: 2023-06-02 (mapillary)
 # REMOVED --- #: next_check: 2023-12-01
@@ -42433,7 +42438,7 @@ EOF
        text  => 'Perleberg, B5: Sperrung des Bahnüberganges, 03.04.2024 22:00 Uhr bis 04.04.2024 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 247000128 (bis 04.04.2024)
+#: source_id: 247000128 (bis 04.04.2024) (inaktiv)
 	2::inwork -94579,71995 -94274,71791 -93406,71227
 EOF
      },
@@ -42487,6 +42492,15 @@ EOF
 #: by: https://pbs.twimg.com/media/GJxJdVZXgAAnXQw?format=jpg&name=large
 #: note: außerdem muss man den Fußgängerüberweg beim Überqueren der Johannisthaler Chaussee an den Kreuzungen Stieglitzweg und Buchfinkweg benutzen
 	q3::inwork 14541,3060 14493,3143
+EOF
+     },
+     { from  => 1711267200, # 2024-03-24 09:00
+       until => 1718200800, # 2024-06-12 16:00
+       text  => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 12.06.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/223-P/23/189 (bis 12.06.2024)
+	2::inwork -23452,18658 -22367,19503 -22236,19745 -22145,19713 -21989,19969 -21864,20015 -21364,20346 -20944,20402 -20850,20447 -20387,21160 -19973,21481 -19431,22888
 EOF
      },
     );

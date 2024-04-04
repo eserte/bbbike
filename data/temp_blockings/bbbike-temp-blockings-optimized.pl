@@ -1276,7 +1276,16 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 246600218 (bis 03.06.2024)
+	2::inwork 51046,-73683 51081,-73709 51147,-73755
+',
+         'from' => 1715464800,
+         'id' => 1116,
+         'text' => 'Calau, L52: Sperrung des Bahnübergangs, vom 13.05.2024 bis 03.06.2024',
+         'type' => 'gesperrt',
+         'until' => 1717380000
+       },
        undef,
        undef,
        undef,
@@ -4420,6 +4429,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024)
+#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024)
+#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -6291,7 +6303,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 #: by: https://nitter.net/txtnso/status/1609517082110201857
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
-#: osm_watch: node id="10202117536" version="8"
+#: osm_watch: node id="10202117536" version="9"
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: last_checked: 2023-06-02 (mapillary)
 # REMOVED --- #: next_check: 2023-12-01
@@ -7968,65 +7980,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'handicap',
          'until' => 1758639600
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/schmargendorf-bombenentscharfung-mittwoch-21.02.2024/
-#: by: https://viz.berlin.de/site/assets/files/1496/karte_sperrkreis_mecklenburgische_strasse_32.791x0-is.jpg
-#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-gefunden-evakuierungen-in-schmargendorf-id245319
-#: by: https://berliner-abendblatt.de/berlin-news/bombenentschaerfung-in-schmargendorf-7500-menschen-betroffen-id245345
-#: by: https://berliner-abendblatt.de/berlin-news/bombenentschaerfung-polizei-mit-330-kraeften-vor-ort-id245354
-#: note: Entschärfung am 21.2.2024 war anscheinend gegen 18h
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1433495.php (neue Entschärfung am 4.4.2024)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1433561.php (Straßenverzeichnis)
-#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-in-berlin-schmargendorf-gefunden-id248861
-#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-soll-donnerstag-entschaerft-werden-id248891
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775562267431502076
-#: by: https://pbs.twimg.com/media/GKQQd1fWUAAr6IE?format=jpg&name=medium
-#: by: https://viz.berlin.de/aktuelle-meldungen/weltkriegsbombe-in-schmargendorf-gefunden-entscharfung-in-der-planung/
-Heidelberger Platz	2::bomb 4173,7993 4123,8021
-Heidelberger Platz [Bürgersteig]	2::bomb 4173,7993 4121,8016 4106,8031
-Johannisberger Str.	2::bomb 4161,7388 4162,7510 4162,7721 4173,7993
-# REMOVED --- Wiesbadener Str. (Friedenau, Wilmersdorf)	2::bomb 3965,7297 3703,7324 3612,7335
-# REMOVED --- Mecklenburgische Str.	2::bomb 3468,7455 3538,7515 3596,7566 3619,7587 3631,7598
-Mecklenburgische Str.	2::bomb 3631,7598 3839,7787 3968,7906 4061,7992 4106,8031
-Binger Str.	2::bomb 4061,7992 4067,7726 4066,7514 4064,7396
-Forckenbeckstr.	2::bomb 3665,8131 3779,8105 4106,8031
-# REMOVED --- Friedrichshaller Str.	2::bomb 3468,7455 3320,7515
-# REMOVED --- Helene-Jacobs-Str.	2::bomb 3309,7782 3320,7982 3326,8100
-# REMOVED --- Schlangenbader Str.	2::bomb 3965,7297 3969,7399
-Schlangenbader Str.	2::bomb 3969,7399 3971,7533 3969,7731 3968,7906
-Nauheimer Str.	2::bomb 3969,7731 4067,7726 4162,7721
-Homburger Str.	2::bomb 3971,7533 4066,7514 4162,7510
-# REMOVED --- Eberbacher Str.	2::bomb 4161,7388 4064,7396 3969,7399
-# REMOVED --- Sodener Str.	2::bomb 3703,7324 3718,7573
-# REMOVED --- Rudolf-Mosse-Str.	2::bomb 3631,7598 3662,7580 3718,7573
-Rudolf-Mosse-Str.	2::bomb 3718,7573 3813,7560
-# REMOVED --- Franz-Cornelsen-Weg	2::bomb 3612,7335 3619,7587
-(Bad Kissingen)	2::bomb 3596,7566 3609,7842
-(Kolonieweg a. d. Forkenbeckstr.)	2::bomb 3584,8136 3756,8101 3779,8105
-Claire-Waldoff-Weg	2::bomb 3584,8136 3571,8085 3538,7515
-	2::bomb 3665,8131 3676,8394
-#: note: 2024-04-04
-	2::bomb 3992,8487 4135,8320 4220,8237 4280,8188 4323,8119 4353,8035 4572,7936 4711,8013
-	2::bomb 4672,8031 4581,8048 4461,8105 4349,8118 4280,8188
-	2::bomb 4461,8105 4457,8270 4423,8315
-	2::bomb 4106,8031 4180,8098 4229,8142 4280,8188 4344,8246 4423,8315 4473,8351
-	2::bomb 4344,8246 4320,8277 4319,8493
-	2::bomb 4220,8237 4229,8499
-	2::bomb 4135,8320 4143,8501
-	2::bomb 4143,8501 3992,8487
-	2::bomb 4659,7824 4534,7864 4430,7896 4283,8016 4246,8000 4180,8098 4087,8204
-	2::bomb 4400,7508 4372,7628 4343,7732 4319,7824 4246,8000
-	2::bomb 4659,7824 4506,7734 4372,7628
-	2::bomb 4534,7864 4343,7732 4162,7721
-	2::bomb 4430,7896 4319,7824
-	2::bomb 4246,8000 4173,7993
-',
-         'from' => 1712166104,
-         'id' => 4009,
-         'text' => 'Bombenentschärfung an der Mecklenburgischen Str.: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 04. April 2024 ab 9:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1712246400
-       },
+       undef,
        {
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
@@ -8243,16 +8197,7 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
          'until' => 1712699940
        },
        undef,
-       {
-         'data' => '#: source_id: 247000128 (bis 04.04.2024)
-	2::inwork -94579,71995 -94274,71791 -93406,71227
-',
-         'from' => 1712088000,
-         'id' => 4030,
-         'text' => 'Perleberg, B5: Sperrung des Bahnüberganges, 03.04.2024 22:00 Uhr bis 04.04.2024 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1712203200
-       },
+       undef,
        {
          'data' => '#: note: Ende laut Halteverbotsschilder
 	q4::inwork 6010,1657 6130,1399 6278,1109
@@ -8308,6 +8253,16 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
          'text' => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 01.11.2024 17:00',
          'type' => 'handicap',
          'until' => 1730476800
+       },
+       {
+         'data' => '#: source_id: LS/223-P/23/189 (bis 12.06.2024)
+	2::inwork -23452,18658 -22367,19503 -22236,19745 -22145,19713 -21989,19969 -21864,20015 -21364,20346 -20944,20402 -20850,20447 -20387,21160 -19973,21481 -19431,22888
+',
+         'from' => 1711267200,
+         'id' => 4035,
+         'text' => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 12.06.2024',
+         'type' => 'gesperrt',
+         'until' => 1718200800
        }
      
 );
