@@ -7085,7 +7085,7 @@ sub complete_link_to_einstellungen {
 }
 
 sub link_to_met {
-    qq{<a href="http://www.met.fu-berlin.de/de/wetter/">};
+    qq{<a href="https://aviationweather.gov/data/metar/?id=EDDB&hours=0&decoded=yes">};
 }
 
 sub window_open {
