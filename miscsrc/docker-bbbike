@@ -887,13 +887,15 @@ RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' ../tmp/geoj
 EOF
     }
 
-    $dockerfile .= <<'EOF';
+    if (!$opt{mapserver}) { # XXX currently the "local" TARGET in mapserver/brb/Makefile is hardcoded to not use the cgi-bin url layout
+	$dockerfile .= <<'EOF';
 ## switch to cgi-bin layout
 ENV BBBIKE_URL_LAYOUT cgi-bin
 ## additionally the following needs to be done for bbbikeleaflet.cgi
 RUN sed -i  '$i\$use_cgi_bin_layout=1;' /bbbike/cgi/bbbike.cgi.config
-
 EOF
+    }
+
     $dockerfile .= <<"EOF";
 
 WORKDIR /bbbike/cgi
