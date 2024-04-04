@@ -190,7 +190,7 @@ use File::Basename;
 #BEGIN{mymstat("before BBBikeUtil");}
 ## DEBUG_END
 use BBBikeUtil;
-use BBBikeUtil qw(min max first clone s2hm_or_s ceil);
+use BBBikeUtil qw(min max first clone s2hm_or_s ceil module_exists);
 use BBBikeTkUtil qw(pack_buttonframe);
 use BBBikeCanvasUtil qw(draw_bridge draw_tunnel_entrance);
 use BBBikeVar;
@@ -1768,7 +1768,7 @@ $wbm->command(-label => M("Wetterstation").":",
 	@weather_src = (['uptodate' => M"aktuellste"],
 			['dahlem2'],
 			['dahlem1'],
-			($devel_host && $advanced
+			(-x "$FindBin::RealBin/miscsrc/icao_metar.pl" && module_exists('Geo::METAR')
 			 ? (
 			    ['metar-EDDB' => 'METAR BER'],
 			   )
