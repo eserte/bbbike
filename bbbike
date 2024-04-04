@@ -1762,6 +1762,7 @@ $wbm->command(-label => M("Wetterstation").":",
 	      -font => $font{'bold'},
 	     );
 
+my $metar_weather_src;
 {
     my @weather_src;
     if (!$city_obj->is_osm_source) {
@@ -1799,6 +1800,9 @@ $wbm->command(-label => M("Wetterstation").":",
     }
 
     foreach (@weather_src) {
+	if (!defined $metar_weather_src && $_->[0] =~ /^metar-(.+)/) {
+	    $metar_weather_src = $1;
+	}
 	my $name = $_->[1];
 	if (!defined $name) {
 	    $name = $wetter_name{$_->[0]}
@@ -1870,22 +1874,27 @@ menuarrow($wfemb, $wbm, undef, '-pack' => [-side => 'bottom']);
 
 if ($wind_frame->can('UnderlineAll')) { $wind_frame->UnderlineAll }
 
-$temp_frame = $top_frame->Frame
-  (-relief => 'raised', -bd => 1);
-$ch->attach($temp_frame, -pod => "^\\s*Temp\$");
-$temp_frame->Button
-    (-text => 'Temp',
-     -width => 7,
-     -class => 'FlatBut',
-     -command => sub {
-	 require WWWBrowser;
-	 require BBBikeWeather;
-	 BBBikeWeather::require_wettermeldung();
-	 WWWBrowser::start_browser("http://$wettermeldung2::www_site{dahlem1}$wettermeldung2::loc{dahlem1}");
-     }
-    )->pack;
-$temp_frame->Label(-textvariable => \$act_value{Temp},
-		  )->pack;
+{
+    my $LabelOrButton = $metar_weather_src ? 'Button' : 'Label';
+    $temp_frame = $top_frame->Frame
+	(-relief => 'raised', -bd => 1);
+    $ch->attach($temp_frame, -pod => "^\\s*Temp\$");
+    $temp_frame->$LabelOrButton
+	(-text => 'Temp',
+	 -width => 7,
+	 -class => 'FlatBut',
+	 ($LabelOrButton eq 'Button' ?
+	  (
+	   -command => sub {
+	       require WWWBrowser;
+	       WWWBrowser::start_browser("https://aviationweather.gov/data/metar/?id=${metar_weather_src}&hours=0&decoded=yes");
+	   }
+	  ) : ()
+	 ),
+	)->pack;
+    $temp_frame->Label(-textvariable => \$act_value{Temp},
+		      )->pack;
+}
 
 arrange_topframe();
 
