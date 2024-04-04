@@ -20,13 +20,14 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.05;
+$VERSION = 2.06;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
 use vars qw(%images);
 
 my $map_compare_use_bbbike_org = 1;
+my $newest_berlin_aerial = 'berlin-historical-2023';
 
 $main::devel_host = $main::devel_host if 0; # cease -w
 
@@ -1141,7 +1142,7 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	my @maps = qw(bvg-stadtplan bbbike-bbbike mapnik esri berlin-historical-2022 google-map nokia-map lgb-webatlas pharus waze-world);
+	my @maps = (qw(bvg-stadtplan bbbike-bbbike mapnik esri), $newest_berlin_aerial, qw(google-map nokia-map lgb-webatlas pharus waze-world));
 	my $maps_qs = do { my $i = 0; join('&', map { "mt".($i++)."=".$_ } @maps) };
 	$common_qs = 'num=10&' . $maps_qs;
     } elsif ($maps) {
@@ -1188,9 +1189,7 @@ sub show_mapcompare_menu {
 	(-label => 'Newest one only',
 	 -command => sub {
 	     showmap_mapcompare
-		 (maps => [qw(
-				 berlin-historical-2023
-			    )],
+		 (maps => [$newest_berlin_aerial],
 		  %args,
 		 )
 	     },
