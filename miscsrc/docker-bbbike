@@ -198,7 +198,7 @@ EOF
 	    push @packages, qw(librsvg2-bin);
 	}
 	if ($opt{'feature-remote'}) {
-	    push @packages, qw(libwww-perl libxml-libxml-perl);
+	    push @packages, qw(libwww-perl libxml-libxml-perl libgeo-metar-perl);
 	}
 	if ($opt{src} eq 'github') {
 	    push @packages, 'git';
