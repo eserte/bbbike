@@ -1768,7 +1768,7 @@ $wbm->command(-label => M("Wetterstation").":",
 	@weather_src = (['uptodate' => M"aktuellste"],
 			['dahlem2'],
 			['dahlem1'],
-			(-x "$FindBin::RealBin/miscsrc/icao_metar.pl" && module_exists('Geo::METAR')
+			(module_exists('Geo::METAR')
 			 ? (
 			    ['metar-EDDB' => 'METAR BER'],
 			   )
