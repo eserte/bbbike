@@ -3779,17 +3779,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php ---	q4::inwork 22145,208 21933,152 21868,139
-#: source_id: viz2021:13.567911,52.405089,11.03.2024,07:00 (bis 05.04.2024)
-	q4::inwork 21933,152 21868,139 21742,115
-',
-         'from' => 1710050400,
-         'id' => 2708,
-         'text' => 'Grottewitzstr.: Baustelle Zur Gartenstadt und Binswangersteig, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.03.2024 07:00 bis 05.04.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1712329200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4430,8 +4420,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024)
-#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024)
+#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024)
+#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -6701,15 +6692,15 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: source_id: viz2021:13.3076,52.50361,28.07.2023,07:00 (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024) (inaktiv)
-#: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024)
+#: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
-#: also_indoor: traffic (ex-H,G,B,W)
+#: also_indoor: traffic (ex-H,G,B,ex-W)
 #: last_checked: 2024-04-03
-# REMOVED --- #: check_frequency: 90d
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 14d
 #: next_check: 2024-05-24
 	q4::inwork 3869,10760 4267,10724 4393,10712
 ',
@@ -7772,6 +7763,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
 #: by: https://viz.berlin.de/aktuelle-meldungen/kaiserdamm-havariebaustelle-vsl-ab-14.12.2023-offen/
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-geben-mitte-dezember-vier-spuren-frei_a401282 (komplett fertig im April 2024)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1396238.php
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1434212.php
 #: by[nocache]: https://nitter.net/wasserbetriebe/status/1735295013901250926#m
 #: by[nocache]: https://twitter.com/wasserbetriebe/status/1766011951707038018 (ab ~19. April 2024 wieder offen?)
 #: source_id: viz2021:13.297353,52.510969,27.04.2023,15:24 (nur für Kfz-Verkehr gesperrt, kein Endedatum) (inaktiv)
@@ -8014,6 +8006,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        {
          'data' => '#: source_id: viz2021:13.333083,52.492616,22.02.2024,07:00 (bis 03.05.2024)
 #: by[nocache]: https://twitter.com/Aintschie/status/1760940196479062140
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
 	q4::inwork 5618,9607 5627,9362
 ',
          'from' => 1708495200,
@@ -8078,16 +8071,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'until' => 1714143600
        },
        undef,
-       {
-         'data' => '#: source_id: 247200038 (bis 05.04.2024)
-	2::inwork 13095,-20435 12154,-20220
-',
-         'from' => 1711263600,
-         'id' => 4020,
-         'text' => 'B246, Nächst Neuendorf: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 25.03.2024 08:00 Uhr bis 05.04.2024 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1712329200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
 #: by: https://igeb.org/pressedienst/igebpresse_20240321.html
@@ -8137,6 +8121,7 @@ Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei
 #: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
 #: note: beim rbb wird nur der Kfz-Verkehr erwähnt, Dauer "mehrere Wochen"
 #: note: mittlerweile wird bei viz explizit "absteigen & schieben" gesagt
 	q4::inwork 5627,9362 5479,9367
