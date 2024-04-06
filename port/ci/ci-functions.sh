@@ -127,7 +127,7 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 install_non_perl_dependencies() {
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
     then
 	javascript_package=rhino
     else
@@ -135,7 +135,7 @@ install_non_perl_dependencies() {
     fi
     # debian/stretch and ubuntu/xenial have both rhino and libmozjs-24-bin
 
-    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
     then
 	libgd_dev_package=libgd-dev
     else
@@ -147,14 +147,14 @@ install_non_perl_dependencies() {
 	# Not available anymore, see
 	# https://askubuntu.com/q/1028522
 	pdftk_package=
-    elif [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+    elif [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
     then
 	pdftk_package=pdftk-java
     else
 	pdftk_package=pdftk
     fi
 
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
     then
 	# Not needed on Ubuntu 20.04, Alien::Proj4 is used for Geo::Proj4 (see below)
 	libproj_packages=
@@ -213,7 +213,7 @@ install_perl_testonly_dependencies() {
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl
     else
-	if [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+	if [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
 	then
 	    barcode_zbar_module="Barcode::ZBar"
 	else
@@ -260,7 +260,7 @@ install_webserver_dependencies() {
     then
 	# install mod_perl
 	# probably valid also for all newer debians and ubuntus after jessie
-	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
 	then
 	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2
 	else
@@ -313,7 +313,7 @@ install_perl_dependencies() {
 	else
 	    additional_non_live_packages=libgd-svg-perl
 	fi
-	if [ "$CODENAME" = "bookworm" ]
+	if [ "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
 	then
 	    libgeo_distance_perl_package=libgeo-distance-perl
 	else
@@ -355,7 +355,7 @@ install_perl_dependencies() {
 
 	# Geo::Proj4 does not compile anymore with newer proj4 versions
 	# https://rt.cpan.org/Ticket/Display.html?id=129389
-	if [ "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" ]
+	if [ "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
 	then
 	    cpanm --quiet --notest Alien::Base::Wrapper Alien::Proj4
 	    cpanm --quiet https://github.com/eserte/perl5-Geo-Proj4.git@use-alien
