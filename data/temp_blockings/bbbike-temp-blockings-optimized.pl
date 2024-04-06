@@ -6182,8 +6182,8 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: confirmed_by: srt
 #: osm_watch: way id="978727717" version="7"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren
-#: last_checked: 2024-01-20
+#: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren; Anfang April 2024: Wegearbeiten
+#: last_checked: 2024-04-06
 	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 ',
          'from' => undef,
@@ -6866,7 +6866,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-03-23
+#: last_checked: 2024-04-06
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -8216,13 +8216,14 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
          'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
-#: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen."
-#: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
-	2::inwork 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
+#: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
+#: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
+# REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
+	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
          'id' => 4033,
-         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
+         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1740585600
        },
@@ -8248,6 +8249,23 @@ Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 65
          'text' => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 12.06.2024',
          'type' => 'gesperrt',
          'until' => 1718200800
+       },
+       {
+         'data' => '#: next_check_id: ELSA-2024
+#: also_indoor: traffic (B) vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2024-04-06 vvv
+	q4::inwork 16211,16131 16217,16208 16234,16203 16263,16288
+	q4::inwork 16234,16203 16316,16173
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: also_indoor ^^^
+',
+         'from' => undef,
+         'id' => 4036,
+         'text' => 'Elsastr./Klarastr.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

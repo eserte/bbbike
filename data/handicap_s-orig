@@ -852,13 +852,21 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 # 
 ### Lichtenberg ###
 # 
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: osm_watch: way id="1135879798" version="2"
+#: also_indoor: traffic (G)
+#: last_checked: 2024-04-06
+#: check_frequency: 90d
+Heldburger Str.: Hochbauarbeiten, Fahrbahn gesperrt	q4::inwork 17249,14575 17392,14591
+# 
 #: next_check_id: RUSCHEAMPEL-2024
 #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert?
-#: last_checked: 2024-03-23 vvv
+#: last_checked: 2024-04-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-05-02 vvv
 #: valid: -20240502 vvv
-Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886
+# REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886
+Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883
 #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -936,7 +944,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="6"
-#: last_checked: 2024-03-23
+#: last_checked: 2024-04-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3-::inwork 17531,14923 17610,14935 17638,14945
@@ -945,7 +953,7 @@ Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3-::inwork 17531,1
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
 #: priority: #C
-#: last_checked: 2024-03-11
+#: last_checked: 2024-04-06
 #: check_frequency: 120d
 #: next_check: 2026-04-30
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
@@ -956,7 +964,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-03-16
+#: last_checked: 2024-04-06
 #: check_frequency: 60d
 #: next_check: 2024-06-17
 Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2-::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
@@ -1592,6 +1600,7 @@ Volkspark Wilmersdorf: einige Fußgänger	q1- 5761,8339 5699,8308 5687,8280 5700,8
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17117,18761
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17206,18332
 (Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
@@ -4883,6 +4892,8 @@ Gleiwitzer Str.: Bordstein, mögliche Glasscherben	q3 21146,9988 21163,9956
 Landhausstr.: einige Fußgänger	q3; 5343,8858 5341,8931
 #: note: von Nord nach Süd kann man die Parkhauszufahrt (Einbahnstraßenregelung) benutzen
 Landhausstr.: Parkhauszufahrt	q2; 5341,8931 5343,8858
+# 
+Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: einige Fußgänger	q1 16656,18742 16718,18758
 # 
 ######################### User Contributions #################################
 # 

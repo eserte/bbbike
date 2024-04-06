@@ -172,7 +172,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-03-16 vvv
+#: last_checked: 2024-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-06-17 vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
@@ -4728,6 +4728,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B 29414,24387
 	B 32471,26060
 #: by: mapillary vvv
+	X -22215,9500
+	X -20301,7082
 	X 40580,9711
 	X -7413,16362
 	X -8507,-9605

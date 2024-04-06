@@ -42,7 +42,8 @@ Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Auswe
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
-Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886
+Heldburger Str.: Hochbauarbeiten, Fahrbahn gesperrt	q4::inwork 17249,14575 17392,14591
+Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -321,6 +322,7 @@ Volkspark Wilmersdorf: einige Fußgänger	q1 5761,8339 5699,8308 5687,8280 5700,82
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17117,18761
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17206,18332
 (Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
@@ -2539,6 +2541,7 @@ Mittelweg: mehrere Bodenschwellen	q1 16061,4285 16180,4461 16203,4495 16258,4578
 Gleiwitzer Str.: Bordstein, mögliche Glasscherben	q3 21146,9988 21163,9956
 Landhausstr.: einige Fußgänger	q3; 5343,8858 5341,8931
 Landhausstr.: Parkhauszufahrt	q2; 5341,8931 5343,8858
+Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: einige Fußgänger	q1 16656,18742 16718,18758
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

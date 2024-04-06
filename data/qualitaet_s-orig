@@ -4687,10 +4687,11 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wird hier saniert?
-#: last_checked: 2024-01-29
+#: last_checked: 2024-04-06
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
+#: next_check_id: ELSA-2024
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
@@ -4698,9 +4699,8 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wann wird hier saniert?
 #: XXX möglicherweise gibt es aktuelle Bauarbeiten im Mittelteil, prüfen!
-#: last_checked: 2024-02-02
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 360d
+#: last_checked: 2024-04-06
+#: check_frequency: 360d
 #: next_check: 2025-12-31
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
@@ -6622,7 +6622,7 @@ Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 # 
 #: next_check_id: FALKENBERG-2021
 #: XXX: letzte Deckschicht fehlt noch
-#: last_checked: 2023-10-22
+#: last_checked: 2024-04-06
 #: check_frequency: 150d
 Am Dörferweg: provisorischer Asphalt	Q1+ 20889,18935 20998,18980 21021,18989
 # 
@@ -10594,12 +10594,16 @@ Genslerstr: Beton	Q0 16738,14695 16750,14747 16768,14849
 Genslerstr.: Asphalt	Q0 16544,14593 16715,14609
 Egon-Erwin-Kisch-Str. [Wohngebiet]: Beton	Q0- 17044,18859 17053,18879 17067,19004 17068,19016
 Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
-(Am Berl - Weg zum Hechtgraben): Beton	Q0 16793,18809 16743,18892 16757,18910
+(Am Berl - Weg zum Hechtgraben): Beton	Q0- 16793,18809 16743,18892 16757,18910
 (Weg zum Hechtgraben): Asphalt	Q0 16757,18910 16780,18930 16784,18955 16734,19033 16694,19042 16665,19021
 (Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2+ 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
 #: historical_note: früher: note: die ersten Meter im Norden haben noch eine "vernünftige" wassergebundene Decke; Eintrag: unbefestigter Pfad, Q2
 (Zingster Str. - Wartenberger Weg): Asphalt	Q0 16358,18687 16325,18796
 Zingster Str.: Beton	Q0 16358,18687 16371,18669 16445,18571 16534,18457 16583,18386
+Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: Beton	Q0- 16938,17971 16739,18249 16618,18412
+Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: Beton, einige Schäden	Q1 16618,18412 16489,18609
+Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: Beton	Q0- 16489,18609 16504,18692 16507,18715 16460,18792 16562,18862 16656,18742
+Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: Verbundsteinpflaster	Q1 16656,18742 16718,18758
 (entlang der Stadtbahn): Verbundsteinpflaster	Q1- 10117,12973 10004,12966 9975,12959 9930,12947
 Lentzeallee [Stichstraße]: Verbundsteinpflaster	Q1 3165,6939 3190,7047
 # REMOVED (vermutlich nicht) --- #: XXX wird bei den Bauarbeiten vielleicht das Kopfsteinpflaster durch Asphalt ersetzt? --- #: osm_watch: way id="493264400" version="1" --- #: last_checked: 2018-06-30 --- #: check_frequency: 100d
@@ -16602,7 +16606,7 @@ Kornburger Weg: Asphalt	Q0 -3309,17153 -3327,16832 -3343,16573
 # 
 #: by: Martin Dittmar:
 #: corrected_by: srt (Asphalt -> Beton)
-Am Berl: Beton	Q0 16919,18635 16793,18809 16718,18758 16782,18658 16746,18632 16801,18544
+Am Berl: Beton	Q0- 16919,18635 16793,18809 16718,18758 16782,18658 16746,18632 16801,18544
 # 
 #: by: markus kringel: vvv
 #: corrected_by: rjoop: vvv
