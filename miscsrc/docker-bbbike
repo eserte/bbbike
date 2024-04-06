@@ -37,7 +37,7 @@ my %codename_to_packagerepos;
 for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye bookworm)) {
     $codename_to_packagerepos{$codename}->{'mydebs.bbbike.de'} = 1;
 }
-for my $codename (qw(bionic focal jammy)) {
+for my $codename (qw(bionic focal jammy noble)) {
     $codename_to_packagerepos{$codename}->{'bbbike-ppa'} = 1;
 }
 
