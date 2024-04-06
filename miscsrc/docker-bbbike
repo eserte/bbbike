@@ -184,9 +184,16 @@ EOF
     if ($^O ne 'MSWin32') {
 	my $uid = $<;
 	$username = (getpwuid($uid))[0];
-	$dockerfile .= <<"EOF";
+	if ($opt{distver} eq 'noble') { # no adduser installed in default ubuntu:24.04 image
+	    $dockerfile .= <<"EOF";
+RUN useradd --non-unique --shell /bin/bash --uid $uid --comment '' --create-home $username
+RUN passwd -d $username
+EOF
+	} else {
+	    $dockerfile .= <<"EOF";
 RUN adduser --disabled-password --force-badname -u $uid --gecos '' $username
 EOF
+	}
     }
 
     if ($opt{src} =~ m{^(github|local)$}) {
