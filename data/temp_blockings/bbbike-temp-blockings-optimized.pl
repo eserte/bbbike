@@ -4422,7 +4422,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024)
 #: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024)
-#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024)
+#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -6053,7 +6054,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-03-23
+#: last_checked: 2024-04-07 (osm)
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6437,7 +6438,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-03-25
+#: last_checked: 2024-04-07
 #: check_frequency: 120d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
@@ -6652,7 +6653,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
          'data' => '#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
 #: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="3"
-#: last_checked: 2024-02-04 (mapillary)
+#: last_checked: 2024-04-06 (mapillary)
 	2::inwork 13078,21754 13031,21538 12980,21411
 ',
          'from' => 1678819239,
@@ -6984,7 +6985,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-03-30
+#: last_checked: 2024-04-07
 #: next_check: 2024-06-30
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -7283,9 +7284,9 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
          'data' => '#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv)
 #: also_indoor: traffic (B)
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m
-#: note: bei rbb bis 30.11.2024, bei Bing bis 8.4.2024
+#: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
-#: next_check: 2024-04-08
+#: next_check: 2024-11-30
 	q3::inwork 8486,16425 8467,16718
 ',
          'from' => 1669791600,
@@ -7300,6 +7301,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="2"
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: last_checked: 2024-03-13
@@ -7882,7 +7884,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-02-04 (bahninfo-forum)
+#: last_checked: 2024-04-06 (mapillary)
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 ',
@@ -8072,40 +8074,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
-#: by: https://igeb.org/pressedienst/igebpresse_20240321.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1430491.php (2. Bauabschnitt 8. bis 12. April 2024 zwischen Johannisthaler Chaussee und Baumschulenstraße /Späthstraße)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1771972248079048997
-#: by: https://pbs.twimg.com/media/GJSJkLgWUAEe13Y?format=jpg&name=large
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772943473840140322
-#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/weitere-schaeden-festgestellt-bauarbeiten-dauern-laenger_a411539
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1432490.php
-#: source_id: bvg2021:265#BVG344869_0
-#: source_id: bvg2021:x11#BVG344866_0
-#: source_id: viz2021:13.485035,52.448445,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
-#: source_id: viz2021:13.487099,52.451725,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
-#: source_id: viz2021:13.483847,52.447373,25.03.2024,07:00 (bis 12.04.2024)
-#: source_id: viz2021:13.48815,52.451415,25.03.2024,07:00 (bis 12.04.2024)
-#: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
-#: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
-#: last_checked: 2024-03-25 vvv
-#: next_check: 2024-04-12 vvv
-#: note: hier wurde laut Pressemitteilung nachträglich angepasst
-Johannisthaler Chaussee: Gehweg frei, wenig Fußgänger	q3::inwork 15720,4341 15800,4464
-Johannisthaler Chaussee: Gehweg frei, wenig Fußgänger	q3::inwork 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
-Königsheideweg: Fahrbahn noch frei, aber Absperrungen sind schon da, Gehweg recht eng hier	q3::inwork 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
-#: note: eigentlich q2+::inwork
-Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei	q2::inwork 16279,5170 16305,5152 16362,5112 16549,5015 16781,4910 16959,4831 17037,4794 17115,4757
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1711234800,
-         'id' => 4021,
-         'text' => 'Johannisthaler Chaussee und Königsheideweg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 12. April 2024',
-         'type' => 'handicap',
-         'until' => 1712440799
-       },
+       undef,
        {
          'data' => '#: source_id: 236700856 (bis 30.10.2024)
 	2::inwork 90239,-16522 90350,-16513 90592,-16499

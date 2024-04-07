@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-07
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -56,7 +56,7 @@ Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen W
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
-#: last_checked: 2024-04-05
+#: last_checked: 2024-04-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-03-27
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -209,7 +209,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-04-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-04-30 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -605,7 +605,7 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-#: last_checked: 2024-04-04 (webcam) vvv
+#: last_checked: 2024-04-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-06-30 vvv
 Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441 17695,5394
@@ -617,7 +617,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 1
 #: next_check_id: SCHOENEWEIDE-2018
 #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024)
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-03-17 (krickstadt)
+#: last_checked: 2024-04-07
 #: next_check: 2024-06-30
 #: valid: -20240630
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
@@ -718,7 +718,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="30"
 #: osm_watch: way id="707100249" version="19"
-#: last_checked: 2024-03-18
+#: last_checked: 2024-04-05 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -943,7 +943,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
-#: osm_watch: way id="435611568" version="6"
+#: osm_watch: way id="435611568" version="7"
 #: last_checked: 2024-04-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-21
@@ -1382,12 +1382,17 @@ Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 1445
 Parkweg: enge Brücke, Fußweg	q2 14558,10082 14453,9929
 Parkweg: enge Brücke, Fußweg	q2 14558,10082 14597,10129 14626,10162 14652,10201
 # REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
-Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11141,9107 11136,9183
-Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
+Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11145,9087 11141,9107 11136,9183
+Hasenheide: Fußgänger	q1 11145,9087 11106,9070
+#: note: am nördlichen Ende ist ein Fußgänger-Piktogramm auf dem Weg, wird nicht wiederholt
+#: note: früher q1, wegen der Piktogramme -> q3
+Hasenheide: Fußgänger	q3 11111,9104 11106,9070
+Hasenheide: Fußgänger	q1 11106,9070 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
-#: note: auf der östlichen Seite ist ein Fußgänger-Piktogramm auf dem Weg
-Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
+#: note: auf beiden Seiten sind Fußgänger-Piktogramme auf dem Weg
+#: note: früher q1, wegen der Piktogramme -> q3
+Hasenheide, zur Lilienthalstr.: Fußgänger	q3 10709,9192 11111,9104 11141,9107
 (Hasenheide, Eingang Lucy-Lameck-Str.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
@@ -4894,6 +4899,23 @@ Landhausstr.: einige Fußgänger	q3; 5343,8858 5341,8931
 Landhausstr.: Parkhauszufahrt	q2; 5341,8931 5343,8858
 # 
 Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: einige Fußgänger	q1 16656,18742 16718,18758
+# 
+#: XXX_prog: Bordstein am südlichen Ende, 15m weiter westlich ist eine Bordsteinabsenkung, ansonsten q2
+(Fuhrmannstr. - Götzstr.): einige Fußgänger, Bordstein	q3 9504,6653 9497,6515
+# 
+#: note: an der Wegedornstr. keine Absenkung, Bordsteine sind relevant für Radfahrer, die von Osten kommen oder Richtung Westen weiterfahren wollen, oder die Richtung Osten auf der Fahrbahn unterwegs sind
+(Alfonsstr. - Wegedornstr.): einige Fußgänger	q3 18989,1292 19022,1316 19073,1369 19107,1403
+# 
+Lugierring: einige Fußgänger	q2 20162,929 20116,836 20100,801
+Lugierring: einige Fußgänger	q2 20116,836 20142,824
+#: XXX bleibt es beim Provisorium?
+#: osm_watch: way id="862863229" version="2"
+#: last_checked: 2024-04-07
+#: check_frequency: 180d
+(Lugierring - Bohnsdorfer Weg): provisorisch, schmal	q3- 20162,929 20192,975
+# 
+(Kirschenbaumstr. - Anne-Frank-Str.): einige Fußgänger	q2 19790,609 19741,476
+(zur Meinolfstr.): einige Fußgänger	q2 19847,678 19833,643
 # 
 ######################### User Contributions #################################
 # 

@@ -55,7 +55,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-03-25
+#: last_checked: 2024-04-07
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -134,20 +134,7 @@ Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 # 
 # REMOVED --- #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023) (inaktiv) --- #: last_checked: 2023-06-04 --- #: next_check: 2023-09-30 --- #: valid: -20230930 --- F::inwork 8373,12416
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork::alternating 22192,6659
-# 
-#: next_check_id: BAUMSCHULEN-2023
-#: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024) (bis 23.03.2024) (bis 22.03.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:265#BVG314924_0 (bis 23.03.2024)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023)
-#: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrbahn-der-baumschulenstrasse-wird-neu-gemacht_a400218
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7361 (Antrag auf Errichtung einer Querungshilfe (Zebrastreifen? Ampel?) an dieser Stelle)
-#: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet) --- allerdings steht die Ampel nach Ende der Sperrung noch
-#: osm_watch: way id="383023440" version="19"
-#: last_checked: 2024-03-24
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-03-22
-# REMOVED --- #: valid: -20240322
-	X::inwork 16328,7005
+# REMOVED (Ampel steht noch, ist aber ausgeschaltet, vermutlich dauerhaft) --- #: next_check_id: BAUMSCHULEN-2023 --- #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024) (bis 23.03.2024) (bis 22.03.2024) (inaktiv) --- #: source_id[inactive]: bvg2021:265#BVG314924_0 (bis 23.03.2024) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrbahn-der-baumschulenstrasse-wird-neu-gemacht_a400218 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7361 (Antrag auf Errichtung einer Querungshilfe (Zebrastreifen? Ampel?) an dieser Stelle) --- #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet) --- allerdings steht die Ampel nach Ende der Sperrung noch --- #: osm_watch: way id="383023440" version="19" --- #: last_checked: 2024-04-07 --- #: check_frequency: 14d --- #: next_check: 2024-03-22 --- #: valid: -20240322 --- X::inwork 16328,7005
 # 
 #: next_check_id: SONYCENTER-2023
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
@@ -198,14 +185,14 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-03-25
+#: last_checked: 2024-04-07
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2024-03-25
+#: last_checked: 2024-04-07
 #: next_check: 2024-06-30
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
@@ -1092,6 +1079,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13809,5257
 	X 14392,2979
 	X 14994,3245
+#: note: aus der Fritz-Erler-Allee getrennte Signalisierung für Links- und Rechtsabbieger, auch für Radfahrer
 	X 15980,2318
 	X 16135,2135
 	X 16908,1217
@@ -1247,7 +1235,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2024-03-18
+#: last_checked: 2024-04-05 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -2274,6 +2262,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10465,-2129
 	X 10756,-2128
 	X 17879,-3
+#: note: Anforderung für Radfahrer aus der Neuhofer Str. (beide Seiten)
 	X 17384,775
 	X 17518,564
 #: note: am Wochenende manchmal ausgeschaltet
@@ -2692,6 +2681,7 @@ Industriebahn	B0 -2410,13746
 	X -1564,14489
 	F -6459,14160
 	X 18484,2471
+#: note: Anforderung für linksabbiegende Radfahrer (Rudower Chaussee -> Groß-Berliner Damm)
 	X 19501,3101
 	X 19574,3186
 	X -6482,5711
@@ -3711,7 +3701,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2024-03-22 (mapillary)
+#: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672
@@ -3780,7 +3770,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
-#: last_checked: 2024-02-04 (mapillary) vvv
+#: last_checked: 2024-04-05 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4728,6 +4718,9 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B 29414,24387
 	B 32471,26060
 #: by: mapillary vvv
+	X -10150,-5260
+	X -10186,-5276
+	X -10283,-5063
 	X -22215,9500
 	X -20301,7082
 	X 40580,9711

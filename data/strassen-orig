@@ -886,8 +886,8 @@ Geneststr.	N 7894,7296 7921,7288 7950,7279 7973,7295
 (S-Bhf. Südkreuz - IKEA)	NN 7921,7288 7920,7224 7924,7185
 (IKEA/Bauhaus-Parkplatz)	N 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185
 (IKEA-Parkplatzzufahrt)	N 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7985,6905 7987,6775
-Alt-Tempelhof	H 8739,6701 8787,6660 8852,6642 8949,6644 9054,6631 9154,6638 9249,6642 9512,6652
-Alt-Tempelhof	H 9512,6652 9338,6694 9247,6687 9052,6664 8949,6644
+Alt-Tempelhof	H 8739,6701 8787,6660 8852,6642 8949,6644 9054,6631 9154,6638 9249,6642 9504,6653
+Alt-Tempelhof	H 9504,6653 9338,6694 9247,6687 9052,6664 8949,6644
 Alt-Tempelhof	N 8722,6656 8787,6660
 Suadicanistr.	N 7858,7462 7858,7506
 Suadicanistr.	NN 7858,7506 7854,7572
@@ -1286,7 +1286,9 @@ Kaiserkorso	N 9128,8251 9128,8414 9135,8633 9093,8665
 Leonhardyweg	N 9040,7648 9035,7810 9033,8029 9032,8254
 Ringbahnstr. (Tempelhof)	N 8460,6959 8723,6958 9050,6960 9242,6962 9457,6959 9706,6802 9861,6693 9863,6617
 Borussiastr.	N 8653,6781 8750,6779 8846,6781 9046,6784 9245,6791 9511,6797 9706,6802
-Fuhrmannstr.	N 9512,6652 9511,6797
+Fuhrmannstr.	N 9504,6653 9511,6797
+#: note: einige Kartenwerke bezeichnen den Weg als "Straße 20a", vor Ort keine Straßenschilder vorhanden
+(Fuhrmannstr. - Götzstr.)	NN 9504,6653 9497,6515
 Neue Str. (Tempelhof)	N 9054,6631 9052,6664 9046,6784 9048,6877 9050,6960
 Sennockstr.	N 9048,6877 8975,6875 8945,6873
 Bosestr.	N 8191,6339 8292,6331 8388,6322 8552,6319
@@ -1864,7 +1866,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="8"
 #: osm_watch: way id="642581102" version="10"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2024-03-18
+#: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1878,7 +1880,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="26"
-#: last_checked: 2024-03-18
+#: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1889,7 +1891,7 @@ George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
 #: osm_watch: way id="977556359" version="15"
-#: last_checked: 2024-03-18
+#: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -2018,13 +2020,13 @@ Eresburgstr.	NN 8206,6774 8224,6775
 Eresburgstr.	N 8224,6775 8454,6778 8653,6781
 Arenholzsteig	N 8454,6778 8455,6849 8481,6900
 Arenholzsteig	NN 8481,6900 8496,6919
-Felixstr.	N 9863,6617 9861,6471 9860,6348 9859,6249 9850,6135 9840,6003
+Felixstr.	N 9863,6617 9861,6471 9860,6348 9858,6240 9850,6135 9840,6003
 Koseler Weg	NN 9679,6160 9850,6135
 #: note: Abschnitt als "Grünanlage" gekennzeichnet, aber trotzdem parken hier Autos
 Koseler Weg	NN 9850,6135 9971,6114
 Werbergstr.	N 9719,6492 9735,6636
-Zastrowstr.	N 9979,6349 9860,6348
-Götzstr.	N 9254,6542 9460,6519 9719,6492 9861,6471 9970,6408 9979,6349 9954,6255 9859,6249
+Zastrowstr.	N 9975,6349 9860,6348
+Götzstr.	N 9254,6542 9460,6519 9497,6515 9719,6492 9861,6471 9972,6418 9975,6349 9967,6265 9935,6238 9858,6240
 (Götzstr. - Albrechtstr.)	NN 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9374,6189 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 Albrechtstr. (Tempelhof)	N 8546,6190 8666,6169 8830,6145 8944,6127
 Albrechtstr. (Tempelhof)	N 9003,6121 9212,6096 9321,6079 9339,6076 9417,6063 9665,6029 9698,6024 9840,6003 9955,5993
@@ -2548,7 +2550,7 @@ Hausotterstr.	N 8583,18127 8348,18071 8135,18028 7860,17940 7772,17915 7477,1783
 Kühnemannstr.	N 8536,17786 8746,17827 8944,17971 9147,17941 9171,17937
 Pankower Allee	H 8514,17634 8423,17626 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7820,17549 7675,17538 7579,17532
 Papierstr.	N 8514,17634 8651,17616
-Germaniastr.	H 9512,6652 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527 10294,6440
+Germaniastr.	H 9504,6653 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527 10294,6440
 #: XXX_prog: dieser Abschnitt ist Richtung Osten als "Germaniastr." und Richtung Westen als "Oberlandstr." ausgeschildert
 Germaniastr.	H 10294,6440 10377,6417
 Germaniastr.	N 10377,6417 10384,6358 10454,6281 10543,6250
@@ -4833,7 +4835,7 @@ Friesenstr. (Niederschönhausen)	NN 8765,19288 8834,19253 8944,19197 9458,18859
 #: XXX Wird der Pankeweg nach den Bauarbeiten hier wieder begradigt?
 #: osm_watch: way id="1046951300" version="2"
 #: osm_watch: way id="1046951302" version="1"
-#: last_checked: 2024-02-04 (mapillary)
+#: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 120d
 (Pankeweg)	NN 12867,21098 12847,21116 12844,21143 12914,21229
 (Pankeweg)	NN 12914,21229 12980,21411 13031,21538 13078,21754 13141,22018 13206,22290 13110,22313
@@ -6168,7 +6170,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="6"
-#: last_checked: 2024-01-21
+#: last_checked: 2024-04-07
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -10872,6 +10874,11 @@ Widosteig	N 19876,984 19934,1102
 (Widosteig - Bohnsdorfer Weg)	NN 19934,1102 19955,1158 19940,1265
 Peenestr.	N 19333,1154 19434,1265 19575,1239 19737,1204
 Kirschenbaumstr.	N 19559,696 19648,656 19726,628
+#: osm.highway: service
+Kirschenbaumstr.	N 19726,628 19790,609
+#: osm.highway: service
+(Kirschenbaumstr. - Nelkenweg)	N 19790,609 19808,651 19833,643 19844,628 19933,597
+(Kirschenbaumstr. - Anne-Frank-Str.)	NN 19790,609 19741,476
 Cimbernstr. (Altglienicke)	N 19843,1375 19907,1404 19981,1397 20196,1325 20318,1281 20428,1241 20513,1210
 Frankenstr. (Altglienicke)	N 20263,1075 20295,1200 20318,1281 20365,1394
 Frankenstr. (Altglienicke)	N 20252,901 20309,1059
@@ -10890,6 +10897,7 @@ Wolfmarsteig	N 20409,478 20447,452
 Malvenweg	N 20453,393 20447,452 20442,489 20462,540
 (Wegedornbrücke - Müngersdorfer Str.)	NN 20462,540 20409,478 20345,398 20338,386
 Meinolfstr.	N 19861,728 19847,678
+(zur Meinolfstr.)	NN 19847,678 19833,643
 Ontarioweg	N 19659,-168 19699,-41
 Bahnweg (Altglienicke)	N 19659,-168 19509,-283
 Quittenweg	N 19509,-283 19488,-186 19546,12 19593,141
@@ -10910,7 +10918,7 @@ Renettenweg	N 19691,107 19593,141 19512,169 19471,184
 Pfirsichweg (Altglienicke)	N 19663,222 19544,259
 Apfelweg (Altglienicke)	N 19512,169 19544,259 19591,394
 Mohnweg (Altglienicke)	N 19470,453 19591,394 19624,377 19652,366 19728,362 19785,360 19821,358 19843,357 19895,355 19921,355 20035,348 20098,359 20214,375 20267,375
-Nelkenweg (Altglienicke)	N 19821,358 19852,437 19899,507 19966,683
+Nelkenweg (Altglienicke)	N 19821,358 19852,437 19899,507 19933,597 19966,683
 Tulpenweg	N 19921,355 19971,434 20051,646
 Narzissenweg (Altglienicke)	N 20246,553 20206,464 20214,375
 Schwarzkoppenstr.	N 19843,357 19897,292 19938,244
@@ -10918,7 +10926,7 @@ Agnes-Hacker-Str.	N 19971,272 19928,319 19895,355
 Ruben-Wolf-Str.	N 19906,217 19865,263 19785,360
 Sieboldstr.	N 19707,46 19844,162 19906,217 19938,244 19971,272 20035,348
 Venusstr. (Altglienicke)	N 18860,248 19138,141 19297,80 19331,73 19437,50
-Bohnsdorfer Weg	N 19676,1577 19686,1562 19725,1515 19817,1404 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20252,901 20301,838 20383,733 20430,672
+Bohnsdorfer Weg	N 19676,1577 19686,1562 19725,1515 19817,1404 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20192,975 20252,901 20301,838 20383,733 20430,672
 Bohnsdorfer Weg	N 20515,568 20538,516 20534,501
 Bohnsdorfer Weg	N 20534,501 20550,474 20589,403 20604,354 20625,275 20656,164 20668,121 20684,105
 Kleiner Mohnweg	N 20326,374 20338,386 20453,393 20589,403
@@ -12291,8 +12299,8 @@ Schloßplatz	HH 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546
 Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20783,-528 20781,-580 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
-#: osm_watch: way id="27564863" version="20"
-#: last_checked: 2023-09-24
+#: osm_watch: way id="27564863" version="21"
+#: last_checked: 2024-04-07
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20813,-941 20779,-1195 20775,-1224 20799,-1272 20807,-1305
 Kleine Lindenstr.	N 20814,-935 21306,-975 21387,-1033 21459,-1086 21528,-1134
@@ -12614,10 +12622,11 @@ Außenweg	N -7460,7826 -7425,8153 -7431,8255 -7457,8282 -7783,8524
 Hafeldweg	N -7330,7878 -7357,8112 -7359,8293
 Künstlerweg	N -7418,7842 -7334,7703 -7258,7735 -7340,7873
 Malmöer Str.	N 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186 10343,16015
-(Hasenheide, Hauptweg im Park)	NN 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11141,9107 11136,9183
+(Hasenheide, Hauptweg im Park)	NN 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11145,9087 11141,9107 11136,9183
 #: note: möglicher Name "Lilienthalweg"
 (Hasenheide, Parkweg zur Lilienthalstr.)	NN 10709,9192 11111,9104 11141,9107
-(Hasenheide, westlicher Weg)	NN 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
+(Hasenheide, Hauptweg - westlicher Weg)	NN 11145,9087 11106,9070
+(Hasenheide, westlicher Weg)	NN 11111,9104 11106,9070 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 (Hasenheide, Weg am westlichen Rand)	NN 11182,8983 11137,8979 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 #: note: Beleuchtung existiert hier
 (Hasenheide, zwischen Jahnstr. und Columbiadamm)	NN 11449,9125 11439,9049 11406,8941 11357,8738 11333,8582 11279,8489
@@ -12854,11 +12863,13 @@ Dankmarsteig	N 18838,996 18857,988 18973,941 19050,909 19107,885 19200,858 19272
 Kasperstr.	N 19198,1122 19140,1137 19053,1159 18931,1192 18796,1227
 (Kasperstr. - Mauerweg)	NN 18796,1227 18770,1236 18720,1247
 Gustelstr.	N 18973,941 19053,1159
-Alfonsstr.	N 19053,1159 19081,1236 19083,1243 18998,1349 19027,1427 19034,1441 19061,1457
+Alfonsstr.	N 19053,1159 19081,1236 19083,1243 19022,1316 18998,1349 19027,1427 19034,1441 19061,1457
 #: note: Privatstraße
-Traudelstr.	N 19027,1427 19169,1249 19160,1215 19140,1137
+Traudelstr.	N 19027,1427 19073,1369 19169,1249 19160,1215 19140,1137
 Lieselstr.	N 18857,988 18931,1192
 (Lieselstr. - Alfonsstr.)	NN 18931,1192 18964,1270 18998,1349
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_30_3225_3284_online.pdf (Straßenlandwidmung)
+(Alfonsstr. - Wegedornstr.)	NN 18989,1292 19022,1316 19073,1369 19107,1403
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_30_3225_3284_online.pdf (Straßenlandwidmung)
 (Mauerweg - Schönefelder Chaussee)	NN 18704,1335 18739,1329 18964,1270 19032,1250 19081,1236 19160,1215 19221,1198
 Nibelungenweg	N 18892,330 18785,374 18714,403
@@ -16059,7 +16070,7 @@ Georgenkirchstr.	N 11842,13576 11784,13513 11703,13426 11652,13372
 #: by: http://www.berlin.de/imperia/md/images/bafriedrichshain-kreuzberg/aktuelles/pressemitteilungen/dsc_0625_200x132.nef.jpg
 Pauline-Staegemann-Str.	N 11652,13372 11589,13305
 Pauline-Staegemann-Str.	NN 11578,13310 11526,13252
-Anne-Frank-Str.	N 19507,556 19595,526 19677,498 19852,437
+Anne-Frank-Str.	N 19507,556 19595,526 19677,498 19741,476 19852,437
 Kunibertstr.	N 19595,526 19648,656 19660,696 19694,811
 Hassoweg	N 19677,498 19726,628 19741,671 19781,767
 Strelitzer Str.	N 9856,14204 9800,14306 9679,14511 9621,14624 9517,14785
@@ -16355,7 +16366,7 @@ Juchaczweg	N 14126,3225 14180,3334
 #: osm_watch: way id="721901188" version="1"
 #: osm_watch: way id="138144497" version="9"
 #: priority: #C
-#: last_checked: 2020-04-18
+#: last_checked: 2024-04-07
 #: next_check: 2024-07-01
 (Klinikum Neukölln)	N 14180,3334 14227,3438
 #: note: Abschnitt nur für Rettungsfahrzeuge und Radfahrer
@@ -16991,7 +17002,7 @@ Hüttendorfer Weg	N 21466,-281 21402,-116
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="5"
-#: last_checked: 2024-02-10
+#: last_checked: 2024-04-07
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -19951,6 +19962,7 @@ Chaukenstr. [21-37]	N 20255,722 20270,760 20278,780
 Lugierring	N 20207,789 20142,824
 Lugierring	NN 20142,824 20116,836
 Lugierring	NN 20100,801 20116,836 20162,929
+(Lugierring - Bohnsdorfer Weg)	NN 20162,929 20192,975
 Mittelweg (Altglienicke)	N 20171,698 20136,608 20077,449 20035,348
 #: XXX_osm: bei osm als Lehmusstr. gekennzeichnet, wahrscheinlich falsch
 Mittelweg (Altglienicke)	N 20098,359 20077,449
@@ -20582,7 +20594,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2024-02-24
+#: last_checked: 2024-04-05 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

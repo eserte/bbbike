@@ -1079,7 +1079,7 @@ Parkweg: Kleinsteinpflaster	Q1 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 #: note: mittlerweile etwas wellig, Höhenunterschiede zwischen einzelnen Gehwegplatten und dem Sandweg
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1- 14373,10046 14202,10152 14126,10176 13918,10240
-Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11141,9107 11136,9183
+Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11145,9087 11141,9107 11136,9183
 # REMOVED --- #: next_check_id: LILIENTHALWEG-2020 --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php --- #: by: https://abendblatt-berlin.de/2020/04/26/neukoelln-sanierung-des-lilienthalwegs/ --- #: XXX Weg wird gepflastert (Betonpflaster, kleines Stück Kleinsteinpflaster) --- #: last_checked: 2020-08-12 --- # REMOVED --- #: next_check: 2020-07-31 --- #: check_frequency: 7d
 Hasenheide, zur Lilienthalstr.: Verbundsteinpflaster, kleine Stück mit Kleinsteinpflaster	Q1+ 10709,9192 11111,9104 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10627,9912 10602,9957 10500,10081
@@ -2445,7 +2445,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2024-02-14 (mapillary)
+#: last_checked: 2024-04-05 (mapillary)
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -3951,7 +3951,7 @@ Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,
 #: note ^^^
 Burchardstr.: Beton	Q0- 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
-Zastrowstr.: Beton	Q0 9979,6349 9860,6348
+Zastrowstr.: Beton	Q0 9975,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 Nernstweg: Verbundsteinpflaster	Q1 14650,7500 14659,7505 14789,7630 14784,7716 14792,7793 14766,7903 14777,7921
 Bergaustr.: Beton mit einigen Hebungen	Q1+ 15355,7893 15468,7761 15693,7512
@@ -5855,13 +5855,13 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
 Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19648,1665 19634,1609 19606,1573 19590,1554
 #: historical_note: Beton, Q0 (war es früher auch so schlecht?)
-Bohnsdorfer Weg: Beton mit einigen Hebungen	Q1+ 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20252,901 20301,838 20383,733 20430,672
+Bohnsdorfer Weg: Beton mit einigen Hebungen	Q1+ 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20192,975 20252,901 20301,838 20383,733 20430,672
 Randolfstr. [17, 19A, 21]: Asphalt	Q0 19814,1167 19877,1132
 Hassoweg: Asphalt	Q0 19677,498 19726,628 19741,671
 Hassoweg: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 19741,671 19781,767
 Apfelweg (Altglienicke): Asphalt mit einigen Schäden	Q1+ 19512,169 19544,259 19591,394
 Pfirsichweg (Altglienicke): Asphalt	Q0 19663,222 19544,259
-Nelkenweg (Altglienicke): Asphalt	Q0 19821,358 19852,437 19899,507 19966,683
+Nelkenweg (Altglienicke): Asphalt	Q0 19821,358 19852,437 19899,507 19933,597 19966,683
 Tulpenweg: sehr guter Asphalt	Q0 19921,355 19971,434 20051,646
 Renettenweg: Asphalt	Q0 19691,107 19593,141 19512,169 19471,184
 Schattenweg: Gehwegplatten	Q1+ 19928,319 19897,292 19865,263 19806,206
@@ -8751,7 +8751,8 @@ Plauener Str.: Asphalt	Q0 17638,14945 17610,14935 17531,14923
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15374,13542 15239,13580 15097,13621 14995,13645
 (Möllendorffstr. - Karl-Lade-Str.): etwas unebener Asphalt	Q0- 14995,13645 14821,13674
 (Rudolf-Seiffert-Str. - Karl-Lade-Str.): Gehwegbetonplatten	Q1+ 14731,13576 14751,13693
-Hasenheide: Verbundsteinpflaster	Q0- 11141,9107 11115,9100 11098,9046 11100,8974
+Hasenheide: Verbundsteinpflaster	Q0- 11145,9087 11106,9070
+Hasenheide: Verbundsteinpflaster	Q0- 11111,9104 11106,9070 11098,9046 11100,8974
 Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 (Hasenheide, Weg am westlichen Rand): Asphalt	Q0 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Parkweg	Q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
@@ -11971,8 +11972,8 @@ Theodorstr. [31-37c] (Mahlsdorf): Asphalt	Q0 24925,10762 24747,10806
 Kaiserkorso: Asphalt mit Schäden	Q1; 9128,8251 9128,8414
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14712,11039 14727,11005 14808,10978
 (provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14798,11058 14809,11037 14808,10978
-Alfonsstr.: Asphalt	Q0 19083,1243 18998,1349 19027,1427 19034,1441 19061,1457
-Traudelstr.: Verbundsteinpflaster	Q1+ 19027,1427 19169,1249 19160,1215 19140,1137
+Alfonsstr.: Asphalt	Q0 19083,1243 19022,1316 18998,1349 19027,1427 19034,1441 19061,1457
+Traudelstr.: Verbundsteinpflaster	Q1+ 19027,1427 19073,1369 19169,1249 19160,1215 19140,1137
 Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
 #: corrected_by: Detlef Westphal (früher: schlechtes Kopfsteinpflaster)
 #: confirmed_by: srt
@@ -12926,7 +12927,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2024-03-18 vvv
+#: last_checked: 2024-04-06 (mapillary) vvv
 #: check_frequency: 45d vvv
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
 George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136
@@ -13516,6 +13517,17 @@ Mandrellaplatz: Kopfsteinpflaster	Q2 22464,5751 22482,5706
 Sewanstr. [Wohngebiet]: Asphalt mit Unebenheiten und Schäden	Q2 18220,10051 18039,9970
 Sewanstr. [Wohngebiet]: Beton	Q1 18039,9970 18007,10040 17995,10070 17970,10132 17962,10147
 Sewanstr. [Wohngebiet]: Asphalt	Q0 18007,10040 17958,10012
+# 
+(Fuhrmannstr. - Götzstr.): Gehwegplatten	Q0- 9504,6653 9497,6515
+# 
+(Alfonsstr. - Wegedornstr.): Gehwegplatten	Q0- 18989,1292 19022,1316 19073,1369 19107,1403
+# 
+(Lugierring - Bohnsdorfer Weg): Rasengitter	Q2+ 20162,929 20192,975
+# 
+Kirschenbaumstr.: Verbundsteinpflaster	Q1+ 19726,628 19790,609
+(Kirschenbaumstr. - Nelkenweg): Verbundsteinpflaster	Q1+ 19790,609 19808,651 19833,643 19844,628 19933,597
+(Kirschenbaumstr. - Anne-Frank-Str.): Verbundsteinpflaster	Q1+ 19790,609 19741,476
+(zur Meinolfstr.): Verbundsteinpflaster	Q1+ 19847,678 19833,643
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15429,7 +15441,7 @@ Gneiststr.: Kopfsteinpflaster	Q2 11112,15387 11040,15398 10902,15422
 #: confirmed_by: srt
 Anne-Frank-Str.: Asphalt	Q0 19507,556 19595,526 19677,498
 #: corrected_by: srt (Asphalt -> Beton)
-Anne-Frank-Str.: Beton	Q0- 19677,498 19852,437
+Anne-Frank-Str.: Beton	Q0- 19677,498 19741,476 19852,437
 #: by: ^^^
 # 
 #: by: Peer:
@@ -20816,7 +20828,7 @@ Greulichstr.: guter Asphalt	Q0 8203,1194 8283,1354 8381,1550 8471,1741
 # 
 #: by: Kowaliczek Larissa:
 #: corrected_by: srt (sehr gutes Kopfsteinpflaster/Q1 -> Beton/Q1)
-Fuhrmannstr.: Beton mit Löchern	Q1 9512,6652 9511,6797
+Fuhrmannstr.: Beton mit Löchern	Q1 9504,6653 9511,6797
 # 
 #: by: Marit Holzäpfel vvv
 #: corrected_by: srt (gutes Kopfsteinpflaster -> etwas besseres)
@@ -32403,7 +32415,8 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 11946,9913
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 12048,10097
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 12229,10014
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12398,9938
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 12556,9862
+#: historical_note: bis April 2024: Kreuzungsbereich mit Kopfsteinpflaster, Q2
+Kreuzungsbereich asphaltiert	Q0 12556,9862
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12834,9738
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13645,15609
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13739,15643
@@ -33014,4 +33027,5 @@ Kreuzungsbereich asphaltiert	Q1 24553,12885
 Kreuzungsbereich asphaltiert	Q0 24696,13120
 Einmündungsbereich asphaltiert	Q0 24775,13218
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 5347,8732
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 20689,1613
 #: ignore ^^^
