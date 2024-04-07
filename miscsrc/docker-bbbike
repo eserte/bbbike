@@ -74,7 +74,7 @@ EOF
 sub usage_cgi (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] cgi [--dist debian|ubuntu|...] [--distver stretch|...] [--test]
-	 [--invalidate-apt] [--[no]mapserver] [--use-bbbike-ppa]
+	 [--invalidate-apt] [--[no]mapserver] [--use-bbbike-ppa] [--force-ipv4]
 EOF
 }
 
@@ -780,6 +780,7 @@ sub cgi {
     my $pwd = save_pwd2;
     chdir bbbike_root or die "Can't chdir: $!";
 
+    my $docker_host = $opt{'force-ipv4'} ? '0.0.0.0' : '';
     my $docker_port = 5000;
 
     my $use_bbbike_ppa;
@@ -922,7 +923,7 @@ EOF
 WORKDIR /bbbike/cgi
 RUN make symlinks fix-permissions
 EXPOSE $docker_port
-CMD starman --listen :$docker_port bbbike.psgi
+CMD starman --listen $docker_host:$docker_port bbbike.psgi
 EOF
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
     in_directory {
@@ -1105,6 +1106,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'invalidate-apt' => 0,
 	       mapserver => 0,
 	       'use-bbbike-ppa' => undef,
+	       'force-ipv4' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -1113,6 +1115,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'invalidate-apt!',
 	       'mapserver!',
 	       'use-bbbike-ppa!',
+	       'force-ipv4!',
 	      )
 	or usage_cgi;
     cgi($doit, %opt);
