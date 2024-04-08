@@ -341,7 +341,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-04-05
+#: last_checked: 2024-04-08
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
@@ -357,7 +357,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-03-18 (mapillary) vvv
+#: last_checked: 2024-04-08 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -1143,7 +1143,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-03-25 (mapillary)
+#: last_checked: 2024-04-08
 #: check_frequency: 120d
 #: next_check: 2024-12-20
 #: valid: -20241220
@@ -1152,13 +1152,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # REMOVED (Schranken eingetragen, mittlerweile keine Verbotsschilder mehr) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von öffentlichen Straßenland) --- #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=752922#post752922 (angrenzendes Bauvorhaben) --- #: by: https://www.falkenberger134.de/ --- #: XXX Bleibt es bei der ausschließlichen Busfreigabe? Hier gibt es Schranken, sind diese manchmal geschlossen? --- # REMOVED --- #: osm_watch: way id="519370786" version="5" --- #: osm_watch: way id="1169861688" version="6" --- #: osm_watch: note 3678184 5 --- #: osm_watch: way id="1219613564" version="4" --- #: last_checked: 2024-02-02 --- #: check_frequency: 30d --- Falkenberger Str. - Hansastr: Fahrbahn nur für Linienverkehr frei	q4 15832,16846 15866,16823 15875,16816
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # REMOVED (fertig) --- #: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum) --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="1040605739" version="2" --- #: add_fragezeichen: Bis wann dauern die Bauarbeiten an? --- #: XXX laut osm opening_date=2023-12 --- #: last_checked: 2023-12-28 --- #: check_frequency: 30d --- #: next_check: 2023-12-31 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
-# 
-#: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: also_indoor: traffic (ex-G,B,ex-W)
-#: note: auf etwa 50m Länge gesperrt
-#: last_checked: 2023-12-28
-#: next_check: 2024-03-31
-Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt	q3:inwork 12646,16563 12560,16602
+# REMOVED (beendet) --- #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt? --- #: also_indoor: traffic (ex-G,B,ex-W) --- #: note: auf etwa 50m Länge gesperrt --- #: last_checked: 2024-04-08 --- #: next_check: 2024-03-31 --- Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt	q3:inwork 12646,16563 12560,16602
 # 
 ### Pankow ###
 # 
@@ -3443,7 +3437,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-04-05
+#: last_checked: 2024-04-08
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4058,7 +4052,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
 (entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10095,20108
 #: note ^^^
-Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
+Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
@@ -4231,6 +4225,8 @@ Einstein-Park: einige Fußgänger	q2+ 13163,14924 13207,14998 13204,15062
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10297,14961
 (Weg im erweiterten Mauerpark): Fußgänger	q1 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10209,14996 10215,14977
+#: note: am nördlichen Ende ein explizites Schild am Drängelgitter, am südlichen Ende ein Grünanlagen-Schild mit "Radfahren veboten"
+(Mauerpark, zum Gleimtunnel): Radfahren verboten	q4 10091,15630 10092,15627 10155,15473
 (Karstadt-Parkplatz): einige Fußgänger	q1 11775,9234 11767,9026
 Neuchateller Str.: einige Fußgänger	q2 3898,4490 3951,4521
 #: XXX_prog: BS an beiden Enden, ansonsten q1
@@ -4831,7 +4827,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
-#: last_checked: 2024-04-05
+#: last_checked: 2024-04-08
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

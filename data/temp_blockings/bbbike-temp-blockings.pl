@@ -29600,11 +29600,11 @@ EOF
 #: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
-#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024)
+#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024)
+#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024)
+#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -39279,7 +39279,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-03-18
+#: last_checked: 2024-04-08
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -40030,7 +40030,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-03-21 vvv
+#: last_checked: 2024-04-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-02-29 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -41910,12 +41910,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1712598186, # undef, # XXX
        text  => 'Weg am Bundeskanzleramt: Bauarbeiten, Weg für Radfahrer explizit gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet?
-#: last_checked: 2024-03-27 (mapillary)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten am Bundeskanzleramt beendet? --- #: last_checked: 2024-04-08
 	q4::inwork 8122,12603 8120,12756
 EOF
      },
@@ -42524,6 +42523,15 @@ EOF
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: also_indoor ^^^
+EOF
+     },
+     { from  => 1712466000, # 2024-04-07 07:00
+       until => 1718978400, # 2024-06-21 16:00
+       text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024)
+	q4::inwork 3493,12228 3495,12185 3507,12076
 EOF
      },
     );

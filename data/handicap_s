@@ -61,7 +61,6 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
-Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt	q3:inwork 12646,16563 12560,16602
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9123,533 9160,460 9200,450
@@ -2033,7 +2032,7 @@ Alice-Salomon-Platz: Fußgänger, Lieferverkehr	q1 23993,14797 24061,14801
 Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
 (entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10095,20108
-Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
+Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
@@ -2156,6 +2155,7 @@ Einstein-Park: einige Fußgänger	q2 13163,14924 13207,14998 13204,15062
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10297,14961
 (Weg im erweiterten Mauerpark): Fußgänger	q1 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10209,14996 10215,14977
+(Mauerpark, zum Gleimtunnel): Radfahren verboten	q4 10091,15630 10092,15627 10155,15473
 (Karstadt-Parkplatz): einige Fußgänger	q1 11775,9234 11767,9026
 Neuchateller Str.: einige Fußgänger	q2 3898,4490 3951,4521
 Auguste-Viktoria-Str.: nicht ganz abgeflachte Bordsteine	q3 2640,8014 2642,8040
@@ -3498,7 +3498,6 @@ Marktplatz Adlershof: Einbahnstraßenregelung wegen Umbauarbeiten: gegen die Einb
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
-Mauerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9138,11872 9171,11777
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5802,10621
 Adele-Schreiber-Krieger-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 8735,12780 8589,12772
 Weinmeisterhornweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174
