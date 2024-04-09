@@ -56,7 +56,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_tests = 6;
 #plan 'no_plan';
-plan tests => 209 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
+plan tests => 212 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -774,6 +774,20 @@ SKIP: {
 	    gpxlint_string($resp->decoded_content(charset => 'none'));
 	}
     }
+}
+
+{
+    my %params = (simplify_tolerance => 1,
+		  startname => 'Seumestr.',
+		  vianame   => 'Wühlischstr.',
+		  zielname  => 'Simplonstr.',
+		  showroutelist => 1,
+		  output_as => 'gpx-track',
+		  gple => 'gjn_Im_dqAcGcDgApG|EbBlBqE', # already encoded track
+		 );
+    my $resp = bbbike_cgi_search +{ %params }, "another gpx-track";
+    is $resp->header('content-disposition'), 'attachment; filename=track_wuehlischstr_simplonstr.gpx', 'different start/goal name, but still detected as circular route';
+    gpxlint_string($resp->decoded_content(charset => 'none'));
 }
 
 sub bbbike_cgi_search ($$;$) {
