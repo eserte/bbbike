@@ -360,7 +360,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
 #: by: https://www.deutsches-architekturforum.de/thread/6974-gasometer-sch%C3%B6neberg-euref-campus/?postID=752087#post752087 (Umbauarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (Erwähnung einer Ampel)
-#: osm_watch: way id="306702294" version="25"
+#: osm_watch: way id="306702294" version="26"
 # REMOVED (closed) --- #: osm_watch: note 4003302 1
 #: last_checked: 2024-03-22 vvv
 #: check_frequency: 30d vvv
@@ -3229,7 +3229,7 @@ Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,1597
 #: corrected_by: srt (asphaltiert -> Verbundsteinpflaster)
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
 #: corrected_by: srt (mittlerweile Wurzelschäden)
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -214,16093
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064
 #: by: ^^^
 # 
 #: corrected_by: Sven Baltuttis (Kopfsteinpflaster Q2 -> Asphalt Q0)
@@ -4870,7 +4870,7 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
 (Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
-(Am Hohenzollernkanal): Asphalt	Q0 -214,16093 -265,16111 -822,16535 -910,16608
+(Am Hohenzollernkanal): Asphalt	Q0 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
 Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7397
@@ -13529,6 +13529,8 @@ Kirschenbaumstr.: Verbundsteinpflaster	Q1+ 19726,628 19790,609
 (Kirschenbaumstr. - Nelkenweg): Verbundsteinpflaster	Q1+ 19790,609 19808,651 19833,643 19844,628 19933,597
 (Kirschenbaumstr. - Anne-Frank-Str.): Verbundsteinpflaster	Q1+ 19790,609 19741,476
 (zur Meinolfstr.): Verbundsteinpflaster	Q1+ 19847,678 19833,643
+# 
+Nollendorfplatz [Parkplatz]: Verbundsteinpflaster	Q1 7036,10313 6978,10319 6941,10329
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

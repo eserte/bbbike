@@ -394,8 +394,7 @@ Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690
 Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
 Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
 Biesenthaler Str. (Hohenschönhausen)	1 17242,14719 17074,14704 17063,14797
-Nollendorfplatz	1 6851,10416 6937,10407 7033,10396 7131,10331 7033,10328
-Nollendorfplatz	1 6971,10346 6937,10363 6851,10416
+Nollendorfplatz	1 6851,10416 6937,10407 7033,10396 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416
 Begonienplatz	1 4193,4897 4141,4975
 Begonienplatz	1 4181,5000 4231,4922
 Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4657
@@ -2135,10 +2134,10 @@ Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 19958,12177 19954,12140 
 Straßenbahntrasse	3nocross::ignrte 18196,18254 18530,18327 18601,18342
 Falkenberger Chaussee -> Falkenberger Fußst.: Straßenbahntrasse	3::igndisp 18196,18254 18530,18327 18521,18347
 Falkenberger Fußst. -> Falkenberger Chaussee: Straßenbahntrasse	3::igndisp 18521,18347 18530,18327 18601,18342
-unbequemes Abbiegen	3nocross::ignrte 13332,10832 13394,10805 13496,10763 13596,10722
+unbequemes Abbiegen	3nocross::ignrte 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13408,10837 13394,10805 13496,10763
 Stralauer Allee -> Naglerstr.: unbequemes Abbiegen	3::igndisp 13394,10805 13496,10763 13575,10963
-Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13575,10963 13496,10763 13596,10722
+Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13575,10963 13496,10763 13549,10741
 unbequemes Abbiegen	3nocross::ignrte 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642
 Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13633,10705 13678,10685 13690,10715
 Lehmbruckstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13690,10715 13678,10685 13700,10676
@@ -3428,6 +3427,7 @@ Drängelgitter	BNP:3:-108:trailer=10 21494,10816
 Drängelgitter	BNP:3:-233:trailer=10 13656,9079
 Schranken	BNP:3:-55:trailer=10 15866,16823
 Drängelgitter	BNP:3:-18:trailer=10 10092,15627
+Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:inwork 7998,15068 8015,15047 8037,14958 8091,14895
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung	1s:inwork 12959,11631 12728,11850
@@ -3496,7 +3496,6 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
-Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -214,16093 -265,16111
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -3517,7 +3516,6 @@ George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inw
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,12496 10849,12557
-Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 21514,5310
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -3529,14 +3527,12 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
-keine Überquerungsmöglichkeit	3nocross::ignrte::inwork 17695,5394 17736,5441 17747,5452
-Sterndamm -> Ecksteinweg: keine Überquerungsmöglichkeit	3::igndisp::inwork 17747,5452 17736,5441 17762,5408
-Ecksteinweg -> Sterndamm: keine Überquerungsmöglichkeit	3::igndisp::inwork 17762,5408 17736,5441 17695,5394
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
-Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindestens bis Ende 2022, vermutlich länger	2:inwork 8106,13130 8102,13304 8099,13391
+Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
+Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 8015,13303
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784

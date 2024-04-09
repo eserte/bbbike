@@ -624,7 +624,7 @@ EOF
 #: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
 #: by: https://www.stadtfest.berlin/de/index.html?date=20220515
 	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-	2::temp 6729,10212 6971,10346
+	2::temp 6729,10212 6941,10329 6971,10346
 	2::temp 6628,10318 6626,10155
 	2::temp 6487,10277 6628,10318 6719,10347
 	2::temp 6719,10347 6729,10212 6739,10120
@@ -8853,7 +8853,7 @@ EOF
        data  => <<EOF,
 	2::temp 6628,10318 6626,10155 6729,10212 6739,10120
 	2::temp 6609,10147 6499,10086
-	2::temp 6971,10346 6729,10212 6719,10347
+	2::temp 6971,10346 6941,10329 6729,10212 6719,10347
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
@@ -23512,7 +23512,7 @@ EOF
        until => $isodate2epoch->("2023-05-01 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 14,
        text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2023', # wenn größer: "Straße des 17. Juni und Ebertstraße"
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
@@ -24965,7 +24965,7 @@ EOF
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
 #: last_checked: 2015-09-09
-	q4::inwork; 7033,10328 7055,10220 7080,10098
+	q4::inwork; 7033,10328 7036,10313 7055,10220 7080,10098
 # REMOVED ---	q4::inwork 7080,10098 7038,10088
 	q3::inwork 7080,10098 7167,10074
 EOF
@@ -26493,9 +26493,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2024-02-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-02-28 12:15:00"),
-       text  => 'Kronprinzessinnenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. Februar 2024 zwischen 09:15 und 12:15 Uhr',
+     { from  => $isodate2epoch->("2024-04-09 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-04-10 12:15:00"),
+       text  => 'Kronprinzessinnenweg: wegen Sprengarbeiten zeitweise Sperrungen am 10. April 2024 voraussichtlich zwischen 09:15 und 12:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: Sprengplatz Grunewald
@@ -26513,6 +26513,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/sprengung-in-grunewald-sperrung-auf-der-avus-am-dienstag-id227295
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240227
 #: by: https://berliner-abendblatt.de/berlin-news/avus-am-mittag-kurzzeitig-gesperrt-id246096
+#: by: https://berliner-abendblatt.de/berlin-news/weltkriegsbombe-wird-mittwoch-gesprengt-id249285
 #: source_id: 2147341022 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15 (inaktiv)
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15 (inaktiv)
@@ -34929,7 +34930,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024)
-#: last_checked: 2024-03-27 (daf)
+#: last_checked: 2024-04-09
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -36962,7 +36963,7 @@ EOF
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="5"
+#: osm_watch: way id="1117348911" version="6"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -36970,7 +36971,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-04-07 (osm)
+#: last_checked: 2024-04-09
 #: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -37900,8 +37901,8 @@ EOF
 EOF
      },
      { from  => 1670972400, # 2022-12-14 00:00
-       until => $isodate2epoch->("2024-04-09 17:00:00"), # 1704063599, # 2023-12-31 23:59
-       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 09.04.2024',
+       until => $isodate2epoch->("2024-05-17 17:00:00"), # 1704063599, # 2023-12-31 23:59
+       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 17.05.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HINDENBURGDAMM-2022
@@ -37910,7 +37911,7 @@ EOF
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.315375,52.450057,04.12.2022,07:00 (hier ab 4.12.2022, mittlerweile inaktiv)
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2023)
+#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2024) (bis 17.05.2024)
 #: source_id[inactive]: bvg2021:m85#BVG312983_0
 #: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
@@ -39355,7 +39356,7 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-03-23
+#: last_checked: 2024-04-09
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
@@ -40743,7 +40744,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv)
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024)
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
@@ -41149,7 +41150,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-04-03 vvv
+#: last_checked: 2024-04-09 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-11-01 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -41815,6 +41816,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1434212.php
 #: by[nocache]: https://nitter.net/wasserbetriebe/status/1735295013901250926#m
 #: by[nocache]: https://twitter.com/wasserbetriebe/status/1766011951707038018 (ab ~19. April 2024 wieder offen?)
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-geben-kaiserdamm-auch-stadteinwaerts-frei_a411893
 #: source_id: viz2021:13.297353,52.510969,27.04.2023,15:24 (nur für Kfz-Verkehr gesperrt, kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.289238,52.510438,27.04.2023,15:24 (inaktiv)
 #: source_id: viz2021:13.294291,52.510765,27.04.2023,15:24 (bis 31.12.2023) (bis 14.12.2023) inaktiv)
@@ -41851,7 +41853,7 @@ EOF
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
 #: note: Halteverbotsschilder bis 31.01.2024, wurden trotz Baustelle nicht verlängert, mittlerweile bis 17.05.2024
 #: note: Ein traffic-Watcher lohnt nicht, weil hier für Autos immer eine Einbahnstraßenregelung gilt
-#: last_checked: 2024-03-13
+#: last_checked: 2024-04-09
 #: next_check: 2024-05-17
 	q4::inwork; 6549,11015 6681,10959
 EOF
@@ -41868,7 +41870,7 @@ EOF
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-03-13
+#: last_checked: 2024-04-09
 #: check_frequency: 60d
 	q4::inwork; 6681,10959 6607,10801
 EOF
@@ -41880,7 +41882,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
 #: also_indoor: traffic (B,G,W)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-04-09
 # REMOVED --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 EOF
@@ -41979,7 +41981,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-03-27
+#: last_checked: 2024-04-09
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -42210,14 +42212,14 @@ EOF
 EOF
      },
      { from  => 1708815600, # 2024-02-25 00:00
-       until => $isodate2epoch->("2024-04-12 17:00:00"), # 1711922399, # 2024-03-31 23:59
-       text  => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis 12.4.2024',
+       until => $isodate2epoch->("2024-04-26 17:00:00"), # 1711922399, # 2024-03-31 23:59
+       text  => 'Groenerstr./Bismarckstr.: Einbahnstraßenregelung, vermutlich sind auch Radfahrer betroffen, vom 26.2.2024 bis 26.4.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/umleitung-wegen-neuer-fahrbahn_a408749
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1420819.php
 #: source_id: bvg2021:m45#BVG343134_0
-#: source_id: viz2021:13.205594,52.543427,26.02.2024,07:00 (bis 28.03.2024) (bis 12.04.2024)
+#: source_id: viz2021:13.205594,52.543427,26.02.2024,07:00 (bis 28.03.2024) (bis 12.04.2024) (bis 26.04.2024)
 	q4::inwork; -3153,14868 -3360,14974 -3258,15100 -3241,15118 -3216,15155
 EOF
      },
@@ -42403,16 +42405,20 @@ Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => 1712699940, # 2024-04-09 23:59
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 09.04.2024 23:59',
+       until => $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 11.04.2024 23:59',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: XXX Verkehrsmeldung wurde wieder zurückgezogen --- wie ist der Stand hier? bei rbb noch gelistet -> Einschränkungen existieren!
-#: last_checked: 2024-03-22 vvv
-#: next_check: 2024-04-09 vvv
+#: note: Halteverbotsschilder bis 24.05.2024, aber am 09.04.2024 sah es schon ziemlich fertig aus
+#: note: laut rbb bis 11.04.2024
+#: last_checked: 2024-04-09 vvv
+#: check_frequency: 7d vvv
+#: next_check: 2024-04-11 vvv
+# REMOVED --- #: next_check: 2024-05-24 vvv
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42426,6 +42432,7 @@ Martin-Luther-Str.: linker Gehweg -> Martin-Luther-Str.	3::inwork 6518,9867 6504
 Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,9961 6366,9926
 Winterfeldtstr.: Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6630,9990
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -42526,11 +42533,11 @@ EOF
 EOF
      },
      { from  => 1712466000, # 2024-04-07 07:00
-       until => 1718978400, # 2024-06-21 16:00
+       until => 1712687109, # 1718978400, # 2024-06-21 16:00
        text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024)
+#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
 	q4::inwork 3493,12228 3495,12185 3507,12076
 EOF
      },

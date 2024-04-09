@@ -5,7 +5,7 @@
 #:
 Gubener Str.: Sperrung im Kreuzungsbereich Gr¸nberger Str./Wedekindstr.	q2::inwork 13406,11896 13352,12003
 M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4 12558,11920 12617,11888
-Stralauer Allee: Radfahrer und Fuﬂg‰nger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13496,10763
+Stralauer Allee: Radfahrer und Fuﬂg‰nger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -16,10 +16,10 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Antwerpener Str.: Baustelle vor der Seestr., einige Meter muss geschoben werden	q2::inwork 6555,15827 6690,15671
-Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fuﬂg‰nger auf dem Radweg	q2::inwork 10219,13102 10074,13103
 Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11185,11883 11160,12071
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423 9028,12307
@@ -654,7 +654,7 @@ Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
 Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
 (Hornbach-Parkplatz): Parkplatzverkehr	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 (Lidl-Parkplatz): Parkplatzverkehr	q1 11962,15681 12058,15621
-Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
+Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 (Bl¸cherplatz - Waterloo-Ufer): Fuﬂg‰nger, Bordsteine	q4 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 Mergenthalerring: Asphaltschwellen, kˆnnen teilweise umfahren werden	q1 14425,8116 14563,8243 14422,8407
@@ -833,7 +833,7 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -214,16093 -265,16111 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
@@ -3489,6 +3489,7 @@ Ludolfinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 7998,15068 8015,15047 8037,14958 8091,14895
 Am Wriezener Bahnhof: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850
