@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2019,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019,2022,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,11 +21,12 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use POSIX qw(strftime);
 
 use BBBikeUtil qw(bbbike_root s2hm);
+use Encode qw(decode_utf8);
 use Strassen::Util ();
 use Hooks;
 
@@ -158,10 +159,20 @@ sub remove_hooks {
 
 sub load_history {
     if (open my $fh, '<', $hist_file) {
+	my $latin1_message;
 	my @new_history;
 	while(<$fh>) {
 	    chomp;
-	    my($lon, $lat, $desc, $time) = split /\t/, $_;
+	    my $rawline = $_;
+	    my $line = eval { decode_utf8($rawline, 1) };
+	    if ($@) {
+		# assume iso-8859-1 line dumped from a previous BBBikeHistory version
+		if (!$latin1_message++) {
+		    warn "INFO: read latin1 line from $hist_file, probably dumped by an older BBBikeHistory version.\n";
+		}
+		$line = $rawline;
+	    }
+	    my($lon, $lat, $desc, $time) = split /\t/, $line;
 	    $time = undef if defined $time && $time eq '';
 	    push @new_history, {lon => $lon, lat => $lat, desc => $desc, time => $time};
 	}
@@ -177,6 +188,7 @@ sub dump_history {
     }
     open my $ofh, '>', "$hist_file~"
 	or main::status_message("Cannot write to $hist_file~: $!", 'die');
+    binmode $ofh, ':encoding(utf-8)';
     for (@history) {
 	no warnings 'uninitialized'; # desc and time may be missing
 	print $ofh join("\t", @{$_}{qw(lon lat desc time)}), "\n";
