@@ -60,7 +60,7 @@ use BBBikeTest qw(eq_or_diff);
 	 use_fragezeichen_routelist => JSON::XS::true,
 	 use_heap                   => undef,
 	 use_select		    => JSON::XS::true,
-	 use_utf8		    => JSON::XS::false,
+	 use_utf8		    => JSON::XS::true,
 	 with_cat_display	    => JSON::XS::false,
 	 with_comments		    => JSON::XS::true,
 	}, 'config in bbbike-test.cgi.config, for json';
