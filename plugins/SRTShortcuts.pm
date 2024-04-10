@@ -3837,6 +3837,7 @@ sub todays_gps_tracks {
     push @files, glob("$gpsdatadir/$yyyy$mm$dd.{trk,wpt}");
     push @files, glob("$gpsdatadir/*/$yyyy$mm$dd.{trk,wpt}");
     push @files, glob("$gpsdatadir/*/$yyyy-$mm-$dd*.{trk,wpt}");
+    push @files, glob("$gpsdatadir/osmand/${yyyy}-${mm}-${dd}_*.gpx"); # by convention, these are not (yet) converted to gpsman trk files
     @files = grep { -f $_ && -r $_ && -s $_ } @files;
     if (!@files) {
 	main::status_message("No GPS files found for date $yyyy-$mm-$dd", "infodlg");
