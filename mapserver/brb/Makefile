@@ -152,7 +152,7 @@ MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
 .if ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de" || ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
-BBBIKECGI_CONFIG_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-hosteurope.cgi.config
+BBBIKECGI_CONFIG_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-hosteurope-jessie.cgi.config
 .else
 BBBIKECGI_CONFIG_LOCAL=	$(RADZEIT_APACHE_DIR_LOCAL)/cgi-bin/bbbike.cgi.config
 .endif
