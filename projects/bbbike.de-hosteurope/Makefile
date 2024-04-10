@@ -641,8 +641,9 @@ prepare-mapserver-dist-pre:
 prepare-mapserver-dist-main:
 # XXX   Copying and removing the localinc file here is an ugly hack
 	cp -pf etc/${MAPSERVER_BRB_LOCALINC} ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
+# XXX	need SERVER_NAME hack as cgi/bbbike-hosteurope-jessie.cgi.config otherwise does a fallback to the current hostname
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
+	    env SERVER_NAME=bbbike.de ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
 	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
