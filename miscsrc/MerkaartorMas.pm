@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package MerkaartorMas;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use Cwd qw(realpath);
 use QtQrc;
@@ -78,6 +78,9 @@ MerkaartorMas - parse Merkaartor .mas files
 
 =head1 SYNOPSIS
 
-    perl -MData::Dumper -MMerkaartorMas -e 'warn Dumper(MerkaartorMas::parse_icons_from_mas(shift, shift))' /usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Styles/MapnikPlus.mas /usr/ports/astro/merkaartor/work/merkaartor-0.13.2/Icons/AllIcons.qrc
+Assuming ~/work2/merkaartor is a git-clone of
+L<https://github.com/openstreetmap/merkaartor.git>:
+
+    perl -MData::Dumper -Imiscsrc -MMerkaartorMas -e 'warn Dumper(MerkaartorMas::parse_icons_from_mas(shift, shift))' ~/work2/merkaartor/Styles/MapnikPlus.mas ~/work2/merkaartor/Icons/AllIcons.qrc
 
 =cut
