@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2014,2019,2020,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2014,2019,2020,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -50,7 +50,26 @@ use strict;
     sub _get_area_grid {
 	my $self = shift;
 	if (!$self->{area}) {
-	    $self->{area} = MultiStrassen->new('orte', 'orte2', 'berlin_ortsteile');
+	    my @multistrassen_sources;
+	    for my $def (
+			 ['orte', 0],
+			 ['orte2', 0],
+			 ['berlin_ortsteile', 1],
+			) {
+		my($filename, $optional) = @$def;
+		my $s = eval { Strassen->new($filename) };
+		if (!$s) {
+		    if ($optional) {
+			# XXX if is_osm_source is true (not available yet in this module), then this could be even quiet
+			warn "INFO: file '$filename' is optional and not available, skipping...\n";
+		    } else {
+			die "ERROR: file '$filename' cannot be loaded: $@";
+		    }
+		} else {
+		    push @multistrassen_sources, $s;
+		}
+	    }
+	    $self->{area} = MultiStrassen->new(@multistrassen_sources);
 	}
 	$self->{area};
     }

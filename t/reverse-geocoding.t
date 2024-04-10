@@ -12,6 +12,7 @@ use lib (
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../miscsrc",
 	);
+use File::Temp 'tempdir';
 use Getopt::Long;
 use Test::More 'no_plan';
 
@@ -60,6 +61,32 @@ SKIP: {
     } else {
 	die "SHOULD NOT HAPPEN: geocoer '$geocoder' not expected here";
     }
+}
+
+{
+    no warnings 'once';
+    my $datadir = tempdir('reverse-geocoding-t-XXXXXXXX', CLEANUP => 1, TMPDIR => 1);
+    local @Strassen::datadirs = ($datadir);
+
+    { open my $fh, '>', "$datadir/orte" or die $! };
+    eval { ReverseGeocoding->new->find_closest('13.5,52.5', 'area') };
+    like $@, qr{ERROR: file 'orte2' cannot be loaded}, 'error if mandatory orte2 file is missing';
+
+    { open my $fh, '>', "$datadir/orte2" or die $! };
+    {
+	my @warnings;
+	local $SIG{__WARN__} = sub { push @warnings, @_ };
+	ReverseGeocoding->new->find_closest('13.5,52.5', 'area');
+	like "@warnings", qr{INFO: file 'berlin_ortsteile' is optional and not available, skipping}, 'warning if optional file is missing';
+    }
+
+    { open my $fh, '>', "$datadir/berlin_ortsteile" or die $! };
+    {
+	my @warnings;
+	local $SIG{__WARN__} = sub { push @warnings, @_ };
+	ReverseGeocoding->new->find_closest('13.5,52.5', 'area');
+	is_deeply \@warnings, [], 'no warnings if all orte-style files are there';
+    }    
 }
 
 __END__
