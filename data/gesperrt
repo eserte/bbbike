@@ -601,7 +601,6 @@ Schwimmerweg: Privatweg, Tor der Einfahrt	2 -3584,11177 -3642,11216 -3673,11216
 Rudererweg: Privatweg, Tor der Einfahrt	2 -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Privatweg	2 -3689,11291 -3679,11248 -3673,11216
 Joachimstr.	1s 22009,5593 21907,5517 21789,5427
-Cardinalstr.	1s 21896,5724 21828,5623 21706,5541
 Fuchsbergeweg	1s 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
 (Marchlewskistr. - Gubener Str.)	1s 13168,12219 13173,12202 13097,12166
@@ -999,6 +998,7 @@ Straße 3	1s 18816,19648 18730,19672 18644,19695 18544,19722
 Heiner-Müller-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1 17497,8623 17640,8627
 Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
 Adolf-Wermuth-Allee	1 17640,8627 17659,8698
+Irmtraud-Morgner-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1s 17521,8549 17619,8558
 Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
 entlang des Rewe-Supermarkts	1 21163,15289 21263,15291 21350,15292 21361,15270
 entlang des Rewe-Supermarkts	1 21361,15270 21262,15271 21195,15271 21163,15289
@@ -2382,15 +2382,15 @@ Mittelstreifen	3nocross::ignrte -2280,2177 -2074,2258 -2023,2279
 Wiesenschlag -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -2036,2150 -2074,2258 -2280,2177
 Mittelstreifen	3nocross::ignrte -2023,2279 -1959,2305 -1646,2434
 Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1959,2305 -1849,2043
-Straßenbahntrasse	3nocross::ignrte 22116,5442 22087,5404 22054,5360 21974,5255 21954,5229
-Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22006,5460 22087,5404 22116,5442
-Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22056,5314 22054,5360 21974,5255
-Bhf.str. -> Lindenstr.: Straßenbahntrasse	3::igndisp 22087,5404 22054,5360 22056,5314
-Uferweg -> Bhf.str.: Straßenbahntrasse	3::igndisp 22035,5217 21974,5255 21954,5229
-Bhf.str. -> Uferweg: Straßenbahntrasse	3::igndisp 22054,5360 21974,5255 22035,5217
-Straßenbahnhaltestelle	3nocross::ignrte 21974,5208 22023,5160 22033,5148 22078,5093
+Straßenbahntrasse	3nocross::ignrte 22116,5442 22090,5402 22067,5367 22056,5350 21979,5251 21961,5228
+Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22006,5460 22090,5402 22116,5442
+Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22057,5305 22056,5350 21979,5251
+Bhf.str. -> Lindenstr.: Straßenbahntrasse	3::igndisp 22067,5367 22056,5350 22057,5305
+Uferweg -> Bhf.str.: Straßenbahntrasse	3::igndisp 22035,5217 21979,5251 21961,5228
+Bhf.str. -> Uferweg: Straßenbahntrasse	3::igndisp 22056,5350 21979,5251 22035,5217
+Straßenbahnhaltestelle	3nocross::ignrte 21979,5208 22023,5160 22033,5148 22078,5093
 Bhf.str. -> Lindenstr.: Straßenbahnhaltestelle	3::igndisp 22035,5217 22023,5160 22033,5148
-Lindenstr. -> Bhf.str.: Straßenbahnhaltestelle	3::igndisp 21974,5208 22023,5160 22035,5217
+Lindenstr. -> Bhf.str.: Straßenbahnhaltestelle	3::igndisp 21979,5208 22023,5160 22035,5217
 Lärmschutzwand	3nocross::ignrte 18484,2471 18656,2465 18929,2454
 North-Willys-Str. -> Ernst-Ruska-Ufer: Lärmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
 Ernst-Ruska-Ufer -> North-Willys-Str.: Lärmschutzwand	3::igndisp 18484,2471 18656,2465 18644,2582
@@ -3427,6 +3427,7 @@ Drängelgitter	BNP:3:-108:trailer=10 21494,10816
 Drängelgitter	BNP:3:-233:trailer=10 13656,9079
 Schranken	BNP:3:-55:trailer=10 15866,16823
 Drängelgitter	BNP:3:-18:trailer=10 10092,15627
+Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:inwork 7998,15068 8015,15047 8037,14958 8091,14895
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
@@ -3471,7 +3472,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
-Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
+Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22100,5348
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,11275
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
@@ -3490,8 +3491,11 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
-Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17627,8556
+Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17640,8627 17619,8558
+Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:inwork 17619,8558 17581,8422
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 17682,8464 17738,8450
+Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt	2s:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578
+Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -3501,7 +3505,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9178,556
-Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556 9200,562
+Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159

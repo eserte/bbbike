@@ -297,7 +297,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-03-20
+#: last_checked: 2024-04-10
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1009,7 +1009,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2024-03-17 (mapillary)
+#: last_checked: 2024-04-09 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1149,7 +1149,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-03-29
+#: last_checked: 2024-04-10
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1399,7 +1399,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-04-10 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -4084,7 +4084,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2023-11-05
+#: last_checked: 2024-04-10
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -5447,21 +5447,22 @@ Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q1+ 27273,-106 26700,-344
 # 
 # REMOVED (laut osm) --- #: XXX zurzeit Bauarbeiten, vielleicht wird die Fahrbahnoberfläche neu gemacht? --- #: last_checked: 2022-10-16 --- #: check_frequency: 90d
 #: historical_note: früher Kopfsteinpflaster, Q2
-Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22087,5404 22006,5460
+Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 # 
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2024-02-10
+#: last_checked: 2024-04-10
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
-(Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22056,5314 22054,5360
+(Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
 # 
 (Am Generalshof - Uferweg): unebener Asphalt	Q1 22140,5392 22197,5328 22209,5305
 (Uferweg): unebener Asphalt	Q1 22230,5309 22209,5305 22133,5283 22095,5239 22059,5172
 (Uferweg): Mosaikpflaster	Q1 22059,5172 22085,5111 22078,5093
-(Lindenstr. - Uferweg): Mosaikpflaster	Q1 21974,5255 22035,5217 22059,5172
-Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22140,5392 22056,5314
+(Lindenstr. - Uferweg): alter, unebener Asphalt	Q1 21979,5251 22035,5217
+(Lindenstr. - Uferweg): Mosaikpflaster	Q1 22035,5217 22059,5172
+Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22140,5392 22100,5348 22057,5305
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19255,5164 19294,5033 19306,4969 19312,4940
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19294,5033 19236,5025
@@ -12584,7 +12585,7 @@ Wladimir-Gall-Weg: wassergebundene Decke	Q1 -2668,14635 -2618,14654 -2570,14661 
 #: next_check_id: METROPOLITANPARK-2019
 #: XXX welche Fahrbahnbeschaffenheit wird die Straße nach den Bauarbeiten haben? "Privater verkehrsberuhigter Bereich" --- werden hier Kfz fahren dürfen?
 #: osm_watch: way id="1147342797" version="2"
-#: last_checked: 2023-04-21
+#: last_checked: 2024-04-10 (daf)
 #: check_frequency: 180d
 Metropolitan Park: unbefestigte Baustraße, Schotter	Q2- -8064,13534 -8088,13594
 Metropolitan Park: Asphalt	Q0 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
@@ -13126,10 +13127,8 @@ Georg-Klingenberg-Str.: Asphalt	Q0 17659,8698 17668,8696 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17640,8627
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2024-03-09 (architektur-urbanistik)
-#: check_frequency: 30d
-Irmtraud-Morgner-Str.: Asphalt, letzte Deckschicht fehlt	Q1- 17521,8549 17619,8558
+# REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2024-03-09 (architektur-urbanistik) --- #: check_frequency: 30d
+Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17627,8556
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
 Heiner-Müller-Str.: Asphalt	Q0 17648,8626 17773,8588
 Ruth-Baumgarte-Str.: Asphalt	Q0 17794,8429 17738,8450 17682,8464 17608,8483
@@ -19760,7 +19759,7 @@ Bahnhofstr. (Friedenau): Asphalt	Q0 6082,7066 6151,7078 6157,7117
 # 
 #: by: Vera Kästner:
 #: corrected_by: srt (gutes Kopfsteinpflaster, Q1 - ..., neu gemacht?)
-Spreestr. (Köpenick): Asphalt	Q0 21974,5208 21901,5117
+Spreestr. (Köpenick): Asphalt	Q0 21979,5208 21901,5117
 # 
 #: by: Petra Lohs: vvv
 #: corrected_by: srt ("Asphalt" -> "Beton"):
@@ -24135,7 +24134,7 @@ Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,
 #: corrected_by: srt (... -> ..., neu gemacht)
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
 #: corrected_by: srt (... -> ..., neu gemacht)
-Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17588,8413
+Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413
 #: corrected_by: srt: (Q3 -> Q2-, Kopfsteinpflaster und Sandweg mit Schlaglöchern -> ...)
 Hönower Wiesenweg: Asphalt	Q0 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 #: corrected_by: srt (früher (bis Juni 2023) Kopfsteinpflaster und Sandweg mit Schlaglöchern, Q2 -> ..., neu gemacht)

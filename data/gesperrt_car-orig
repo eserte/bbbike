@@ -445,7 +445,7 @@ B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 #: note: Luftbild
 Neuköllner Str.: Mittelstreifen	3nocross 16643,1460 16698,1392 16815,1278
 Storkower Str.: Mittelstreifen	3nocross 13148,14850 13107,14873 12807,15045
-Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
+Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 #: note: Luftbild
 Mariendorfer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9206,5193
 #: note: Luftbild
@@ -1989,6 +1989,9 @@ Oranienburger Str.: Mittelstreifen, Fußgängerfurt existiert	3nocross 5527,20044 
 Kastanienallee: nur für Tram und Radfahrer	1 10916,15098 10900,15075 10881,15047
 # 
 Wallenbergstr.	1 4319,8493 4229,8499 4143,8501
+# 
+# REMOVED --- #: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet? --- #: osm_watch: way id="57356015" version="18" --- #: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild --- #: last_checked: 2024-03-13 (mapillary)
+Cardinalstr.	1 21896,5724 21828,5623 21706,5541
 # 
 ######################################################################
 #: note: Kiezblock Reuterkiez vvv

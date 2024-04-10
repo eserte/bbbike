@@ -964,7 +964,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
-#: last_checked: 2024-03-13 (mapillary) vvv
+#: last_checked: 2024-04-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -1018,11 +1018,6 @@ Schwimmerweg: Privatweg, Tor der Einfahrt	2 -3584,11177 -3642,11216 -3673,11216
 Rudererweg: Privatweg, Tor der Einfahrt	2 -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Privatweg	2 -3689,11291 -3679,11248 -3673,11216
 Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
-#: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet?
-#: osm_watch: way id="57356015" version="18"
-#: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild
-#: last_checked: 2024-03-13 (mapillary)
-Cardinalstr.	1s:q3 21896,5724 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
 (Marchlewskistr. - Gubener Str.)	1s:q4 13168,12219 13173,12202 13097,12166
@@ -1595,6 +1590,7 @@ Straße 3	1s:q4 18816,19648 18730,19672 18644,19695 18544,19722
 Heiner-Müller-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1 17497,8623 17640,8627
 Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
 Adolf-Wermuth-Allee	1 17640,8627 17659,8698
+Irmtraud-Morgner-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1s:q4 17521,8549 17619,8558
 # 
 Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
 # 
@@ -2425,9 +2421,9 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
-Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21974,5255 21954,5229
+Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22090,5402 22067,5367 22056,5350 21979,5251 21961,5228
 #: note: ein "Stützpunkt" für die Abbiegebeschränkung enthalten
-Lindenstr.: Straßenbahnhaltestelle	3nocross 21974,5208 22023,5160 22033,5148 22078,5093
+Lindenstr.: Straßenbahnhaltestelle	3nocross 21979,5208 22023,5160 22033,5148 22078,5093
 # REMOVED (separate Straße nun) --- Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21129,4217 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18484,2471 18656,2465 18929,2454
@@ -3730,6 +3726,15 @@ Drängelgitter	BNP:3::trailer=10 10092,15627
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
+#: osm_watch: way id="618834389" version="13"
+#: osm_watch: way id="43619494" version="8"
+#: also_indoor: traffic (G)
+#: priority: #C
+#: last_checked: 2024-04-10
+#: check_frequency: 90d
+Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
+# 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1306507.php (Bauarbeiten: 29. März 2023 - voraussichtlich Ende September 2024)
 #: by: https://www.berliner-woche.de/wedding/c-bauen/schoenheitskur-fuer-weddingplatz_a375989
 #: by: https://www.berliner-woche.de/wedding/c-bauen/auf-dem-weddingplatz-laeuft-die-erste-bauphase-noch-bis-jahresende_a384210
@@ -3851,7 +3856,7 @@ Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
 # 
 #: next_check_id: PLANSTRASSE9-2023
 #: osm_watch: way id="20420585" version="32"
-#: last_checked: 2024-03-09
+#: last_checked: 2024-04-10
 #: check_frequency: 60d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4019,7 +4024,7 @@ Clara-Müller-Jahnke-Str.: Straße noch nicht fertig	2::inwork 31800,3091 31810,30
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-04-09 vvv
+#: last_checked: 2024-04-10 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4123,9 +4128,11 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500
 # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5"
-#: last_checked: 2024-03-04 (architektur-urbanistik)
+#: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht
+#: last_checked: 2024-04-10
 #: check_frequency: 30d
-Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22056,5314 22140,5392
+Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22100,5348
+# REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22100,5348 22140,5392
 # 
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
 #: osm_watch: node id="1511805342" version="4"
@@ -4142,7 +4149,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-04-06
+#: last_checked: 2024-04-10
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4181,7 +4188,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: by: https://www.deutsches-architekturforum.de/thread/14770-wilmersdorf-halensee-grunewald-schmargendorf-kleinere-projekte/?postID=757826#post757826
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m
-#: last_checked: 2024-03-22
+#: last_checked: 2024-04-06 (architektur-urbanistik)
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 5522,8024 5521,8087
 # REMOVED (hier nicht) --- Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5521,8087 5519,8159 5560,8204
@@ -4299,7 +4306,7 @@ Marktplatz Adlershof: Einbahnstraßenregelung wegen Umbauarbeiten	1s:q3:inwork 20
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10160 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2024-03-30 (osm)
+#: last_checked: 2024-04-10
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4340,12 +4347,13 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/neue-bruecke-ueber-dem-teltowkanal-in-richtiger-position-id231682
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/brueckeneinbau-fuer-die-dresdner-bahn-ueber-den-teltowkanal-vollzogen_a392915
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240410 (Restarbeiten mit Sperrung bis 2025)
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
 #: osm_watch: way id="229990468" version="7"
 #: last_checked: 2024-03-05 (okas)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2023-12-31
+#: next_check: 2025-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 # 
 # REMOVED (Absperrgitter mittlerweile üblicherweise verschoben) --- #: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23, 2022-09-30, 2022-10-29) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-09-30 --- Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
@@ -4366,18 +4374,21 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2024-03-09 (architektur-urbanistik) vvv
+#: last_checked: 2024-04-10 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
 #: osm_watch: way id="1084269868" version="14"
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
+#: osm_watch: way id="1090655354" version="14"
+Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17640,8627 17619,8558
+Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17581,8422
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17627,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
 #: osm_watch: way id="1084269869" version="14"
 # REMOVED (hier sind zumindest die Gehwege passierbar, Fahrbahn noch provisorisch) --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17521,8549 17619,8558
-Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17627,8556
+# REMOVED (verbunden) --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
@@ -4388,6 +4399,13 @@ Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17627,8556
 #: osm_watch: way id="1061057024" version="10"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 17682,8464 17738,8450
 #: last_checked ^^^
+# 
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: XXX vermutlich wird die Fahrbahn danach asphaltiert sein -> qualitaet_s anpassen!
+#: last_checked: 2024-04-10
+Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578
+#: last_checked: 2024-04-10
+Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644
 # 
 # REMOVED (hat wohl nichts mit der Chausseestr. (mehr) zu tun) --- #: next_check_id: CHAUSSEE-2020
 #: by: https://www.berliner-woche.de/mitte/c-bauen/abschluss-des-stauraumprogramms-wasserbetriebe-bauen-an-der-chausseestrasse_a357698 (Abschluss des Projekts bis 2026)
@@ -4407,7 +4425,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-03-25
+#: last_checked: 2024-04-10
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4485,10 +4503,11 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10235 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10244 (Antrag - Durchwegung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10254 (Antrag - Durchwegung)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-l%C3%BCckstra%C3%9Fe-33-37.1405/#post-22786
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2024-03-30
+#: last_checked: 2024-04-05 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4569,7 +4588,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: last_checked: 2024-03-26
 #: check_frequency: 360d
 #: next_check: 2025-12-31
-Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9164,552 9178,556 9200,562
+Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
 # 
@@ -4781,13 +4800,13 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: check_frequency: 90d vvv
 # REMOVED (laut osm offen) --- #: osm_watch: way id="719023971" version="15" --- #: last_checked: 2024-03-04 (daf) --- Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: osm_watch: way id="719023970" version="13"
-#: last_checked: 2024-03-04 (daf)
+#: last_checked: 2024-04-10
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 21514,5310
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023969" version="14"
-#: last_checked: 2024-03-04 (daf)
+#: last_checked: 2024-04-10
 #: check_frequency: 90d
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
