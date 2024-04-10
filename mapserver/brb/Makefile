@@ -91,14 +91,14 @@ RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/bbbike.de-hosteurope
 RADZEIT_APACHE_DIR=	$(RADZEIT_APACHE_DIR_LOCAL)
 BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 
-.elif ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
+.elif ${TARGET} == "bbbike-pps-jessie"
 
 RADZEIT_HOST=		${TARGET}
 RADZEIT_APACHE_DIR_LOCAL=	$(BBBIKE_PROJECTS_DIR)/bbbike.de-hosteurope
 BBBIKE_MAPSERVER_URL=	http://$(RADZEIT_HOST)/cgi-bin/mapserv
 BBBIKE_RADZEIT_APACHE_DIR=${BBBIKE_HOSTEUROPE_APACHE_DIR}
 
-.elif ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de"
+.elif ${TARGET} == "hosteurope"
 
 # compatibility with usage of old ...RADZEIT... vars
 BBBIKE_RADZEIT_USER=	${BBBIKE_HOSTEUROPE_USER}
@@ -141,7 +141,7 @@ FONTS_LIST?=		fonts-freebsd.list				# ***
 # The unix user of the webserver process:
 WWW_USER=		eserte						# ***
 
-.elif ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de" || ${TARGET} == "bbbike.hosteurope.herceg.de" || ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
+.elif ${TARGET} == "hosteurope" || ${TARGET} == "bbbike.hosteurope.herceg.de" || ${TARGET} == "bbbike-pps-jessie"
 
 HOST=			$(RADZEIT_HOST)
 HTDOCS=			public
@@ -151,18 +151,14 @@ MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
-.if ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de" || ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
+.if ${TARGET} == "hosteurope" || ${TARGET} == "bbbike-pps-jessie"
 BBBIKECGI_CONFIG_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-hosteurope-jessie.cgi.config
 .else
 BBBIKECGI_CONFIG_LOCAL=	$(RADZEIT_APACHE_DIR_LOCAL)/cgi-bin/bbbike.cgi.config
 .endif
 MAPSERVER_PROG_RELURL=	$(BBBIKE_MAPSERVER_URL:C/^http:\/\/[^\/]+//)
 MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
-.if ${TARGET} == "bbbike-pps-jessie" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de"
 MAPSERVER_VERSION=	6
-.else
-MAPSERVER_VERSION=	6
-.endif
 IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
 BBBIKE_HTML_RELURL=	/BBBike/html
 BBBIKE_CGI_RELURL=	/cgi-bin
@@ -171,13 +167,13 @@ BBBIKE_RELURL=		$(BBBIKE_CGI_RELURL)/bbbike.cgi
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_RELURL)
 IMAGE_SUFFIX=		png
 
-.if ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de" || ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
+.if ${TARGET} == "hosteurope" || ${TARGET} == "bbbike-pps-jessie"
 WWW_USER=		www-data
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de"
 WWW_USER=		eserte
 .endif
 
-.if ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de" || ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
+.if ${TARGET} == "hosteurope" || ${TARGET} == "bbbike-pps-jessie"
 FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de" && exists(/etc/debian_version)
 FONTS_LIST=		fonts-debian.list
@@ -310,7 +306,7 @@ html:	${HTMLFILES}
 
 misc:	tmp-directory permissions crontab check-crontab httpd.conf
 
-.if ${TARGET} != "bbbike-pps" && ${TARGET} != "bbbike-pps-jessie" && ${TARGET} != "lvps83-169-5-248.dedicated.hosteurope.de"
+.if ${TARGET} != "bbbike-pps-jessie"
 Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeMapserver.pm \
