@@ -46,15 +46,7 @@ Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inw
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,11888
 # 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: STRALAUERALLEE-2023
-#: last_checked: 2024-04-09
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 3d
-# REMOVED --- #: next_check: 2024-04-09
-# REMOVED --- #: valid: -20240409
-#: valid: -20240412
-Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
+# REMOVED (beendet) --- #: next_check_id: STRALAUERALLEE-2023 --- #: last_checked: 2024-04-09 --- # REMOVED --- #: check_frequency: 30d --- #: check_frequency: 3d --- # REMOVED --- #: next_check: 2024-04-09 --- # REMOVED --- #: valid: -20240409 --- #: valid: -20240412 --- Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
@@ -586,9 +578,9 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 #: last_checked: 2024-03-30 vvv
 #: also_indoor: traffic (G,B)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
-#: osm_watch: note 4145491 2
+#: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
-#: osm_watch: note 4145495 1
+#: osm_watch[closed]: note 4145495 1
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
 #: last_checked ^^^
 # 
@@ -714,7 +706,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="30"
 #: osm_watch: way id="707100249" version="19"
-#: last_checked: 2024-04-05 (mapillary)
+#: last_checked: 2024-04-11 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249

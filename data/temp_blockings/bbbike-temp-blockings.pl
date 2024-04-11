@@ -401,8 +401,8 @@ EOF
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5, start => "2023-05-02T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrences => [['yearly', days => 1, months => 5, start => "2024-05-02T00:00:00"]],
+       #recurrence_prewarn_days => 14,
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -412,6 +412,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/01/26/myfest-findet-nicht-statt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Anfrage)
 #: by: https://berliner-abendblatt.de/berlin-news/revolutionaere-demo-am-1-mai-von-neukoelln-nach-kreuzberg-id214482 (findet 2023 auch nicht statt)
+#: by: https://www.morgenpost.de/1-mai-berlin/article237792799/1-mai-2024-berlin-kreuzberg-myfest-absage.html
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -8324,8 +8325,8 @@ EOF
        recurrence_prewarn_days => 21,
        text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
-       source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
        data  => <<EOF,
+#: by: https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/ (Aktualisierungen nur bis 2020)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html (geplant für 8. und 9. Mai 2021)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
@@ -18206,7 +18207,7 @@ EOF
      { from  => $isodate2epoch->("2022-05-19 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-22 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 5, start => "2023-06-08T00:00:00"]], # kann auch erst im September stattfinden
+       recurrences => [['yearly', days => 15, months => 5, start => "2024-06-08T00:00:00"]], # kann auch erst im September stattfinden
        source_id => 'http://www.erkner.de/271.html?date=20190415',
        text  => 'Erkner: Heimatfest, 20.5.2022 bis 22.5.2022',
        type  => 'gesperrt',
@@ -18215,7 +18216,7 @@ EOF
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/?date=20230325 (findet 2023 wie 2022 nur im Rathauspark statt, also vermutlich keine Sperrung der Straße)
-#: by: https://www.erkner.de/freizeit-tourismus/stadtgeschichte-kultur/traditionelle-feste-and-veranstaltungen/heimatfest.html (24.-26.5.2024, nur im Rathauspark oder mit Sperrung der Straße?)
+#: by: https://www.erkner.de/freizeit-tourismus/stadtgeschichte-kultur/traditionelle-feste-and-veranstaltungen/heimatfest.html (24.-26.5.2024, nur im Rathauspark oder mit Sperrung der Straße?) (wohl nur im Rathauspark)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -19606,7 +19607,7 @@ EOF
      { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-23 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 4, start => "2023-06-02T00:00:00"]],
+       recurrences => [['yearly', days => 25, months => 4, start => "2024-06-02T00:00:00"]],
        recurrence_prewarn_days => 14, # weder Ort noch Termin bekannt
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
        type  => 'handicap',
@@ -19634,6 +19635,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8480 (Anfrage)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/maientage-fallen-aus-volksfest-in-berlin-neukolln-zu-spaterem-zeitpunkt-im-gesprach-9621785.html (vielleicht im Herbst 2023?)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8873 (Anfrage)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-maientage-wieder-kein-volksfest-auf-der-hasenheide-li.2202306 (2024 auch nicht)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -23989,11 +23991,11 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2023-08-17 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
-       until => $isodate2epoch->("2023-08-20 23:59:59"),
+     { from  => $isodate2epoch->("2024-08-15 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
+       until => $isodate2epoch->("2024-08-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 8, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 18.8.2923 bis 20.8.2023 möglich',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 16.8.2024 bis 18.8.2024 möglich',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -26952,9 +26954,10 @@ EOF
        until => $isodate2epoch->("2023-07-20 20:00:00"), # $isodate2epoch->("2021-12-02 21:00:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
        text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2023 von 13:00 bis 20:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
        data  => <<EOF,
 #: source_id: 2147341611 (inaktiv)
+#: source_id: viz2021:13.36257,52.50591,11.04.2024,14:00 (bis 11.04.2024, zu spät gesehen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
@@ -29967,15 +29970,16 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2023-06-05 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
-       until => $isodate2epoch->("2023-06-10 09:00:00"), # 1560549599, # 2019-06-14 23:59
-       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 06. Juni 2023 18 Uhr bis 10. Juni 2023 9 Uhr',
+     { from  => $isodate2epoch->("2024-05-12 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
+       until => $isodate2epoch->("2024-05-17 09:00:00"), # 1560549599, # 2019-06-14 23:59
+       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 14. Mai 2024 bis 16. Mai 2024',
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 5]],
+       recurrences => [['yearly', days => 12, months => 5]],
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
 #: by: https://www.berliner-teamstaffel.de/event/strecke
+#: by: https://www.berliner-teamstaffel.de/
 #: source_id: 2147344332 (inaktiv)
 #: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
@@ -30571,7 +30575,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-04-02 vvv
+#: last_checked: 2024-04-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2023-08-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
@@ -38304,7 +38308,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
-#: osm_watch: way id="46907541" version="14"
+#: osm_watch: way id="46907541" version="15"
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch: note 3631207 6
@@ -40930,7 +40934,7 @@ EOF
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-11 (daf)
 # REMOVED --- #: next_check: 2024-03-31
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -41234,7 +41238,7 @@ EOF
 #: source_id: viz2021:13.525847,52.45876,11.10.2023,09:00 (hier: zwischen Rathenaustr. und Mathildestr., bis 04.12.2023) (bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.52664,52.45841,19.02.2024,07:00 (bis 08.03.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.525938,52.458706,19.02.2024,07:00 (nur Kfz-Verkehr, bis 08.03.2024) (bis 15.03.2024) (inaktiv)
-#: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024) (bis 11.04.2024)
+#: source_id: viz2021:13.525938,52.458706,15.03.2024,11:00 (bis 12.04.2024) (bis 11.04.2024) (inaktiv)
 #: note: die "Radfahrer frei"-Schilder fehlen teilweise (an der Mathildestr. fehlt es, an der Marienstr. ist es da); recht enger Gehweg
 # REMOVED (hier nicht) --- Wilhelminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	?; 18861,6000 18843,6013 18766,6067
 # REMOVED (alt) --- Wilheminenhofstr.: Gleisbauarbeiten, sind Radfahrer betroffen?	q3; 18766,6067 18670,6132 18574,6197
@@ -42302,7 +42306,7 @@ EOF
 EOF
      },
      { from  => 1711234800, # 2024-03-24 00:00
-       until => 1712440799, # 2024-04-06 23:59
+       until => $isodate2epoch->("2024-04-12 12:00:00"), # 1712440799, # 2024-04-06 23:59
        text  => 'Johannisthaler Chaussee und Königsheideweg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 12. April 2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -42405,22 +42409,22 @@ Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => $isodate2epoch->("2024-05-24 18:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
+       until => $isodate2epoch->("2024-05-03 18:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
        #text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 11.04.2024 23:59',
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 24.05.2024',
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 03.05.2024',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
+#: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
-#: XXX Verkehrsmeldung wurde wieder zurückgezogen --- wie ist der Stand hier? bei rbb noch gelistet -> Einschränkungen existieren!
-#: note: Halteverbotsschilder bis 24.05.2024, aber am 09.04.2024 sah es schon ziemlich fertig aus
-#: note: laut rbb bis 11.04.2024
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
+#: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
 #: last_checked: 2024-04-09 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-05-24 vvv
+#: next_check: 2024-05-03 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42555,13 +42559,23 @@ EOF
 #: by: https://www.rbb24.de/panorama/beitrag/2024/04/berlin-schoeneberg-risse-hauswand-feuerwehr-polizei.html
 #: by: https://www.tagesspiegel.de/berlin/mietshaus-in-berlin-schoneberg-evakuiert-absenkungen-risse-in-den-wanden-einsturzgefahr-11494301.html
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36
+#: source_id: bvg2021:n7#BVG346248_0
 #: also_indoor: traffic (B)
 #: XXX Wann wird die Sperrung wieder aufgehoben? vvv
-#: next_check: 2024-04-11 vvv
+#: next_check: 2024-04-12 vvv
 	2::inwork 7007,9220 6994,9288 7118,9315
 	2::inwork 7002,9526 6994,9288 6921,9275
 #: next_check ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1713074400, # 2024-04-14 08:00
+       until => 1715954400, # 2024-05-17 16:00
+       text  => 'Langenlipsdorf - Hohenalsdorf: Bauarbeiten, Sperrung, 15.04.2024 08:00 Uhr bis 17.05.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/222-W/24/026 (bis 17.05.2024)
+	2::inwork -9031,-54801 -7465,-53204
 EOF
      },
     );

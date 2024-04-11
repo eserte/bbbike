@@ -3727,7 +3727,7 @@ Drängelgitter	BNP:3::trailer=10 10092,15627
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
-#: osm_watch: way id="618834389" version="13"
+#: osm_watch: way id="618834389" version="14"
 #: osm_watch: way id="43619494" version="8"
 #: also_indoor: traffic (G)
 #: priority: #C
@@ -3849,7 +3849,8 @@ An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 1092
 Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nicht	2::inwork 7787,13838 7872,13685
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
-#: last_checked: 2024-01-25
+#: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=759366#post759366
+#: last_checked: 2024-04-11 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
@@ -5352,8 +5353,9 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="4"
-#: last_checked: 2024-02-04
-#: check_frequency: 90d
+#: last_checked: 2024-04-11 (daf)
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
