@@ -127,7 +127,7 @@ Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2024-04-08
+#: last_checked: 2024-04-12
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
@@ -140,7 +140,7 @@ Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-12
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 #: valid: -20240701
@@ -1181,7 +1181,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4478,10218
 	X 9581,12588
 	X 10951,12249
-#: off: night (seen 2018-02-01 00:20, 2022-06-30 23:15, 2023-11-30 00:25, 2024-01-31 23:15)
+#: off: night (seen 2018-02-01 00:20, 2022-06-30 23:15, 2023-11-30 00:25, 2024-01-31 23:15, 2024-04-12 22:35)
 	X 12295,12197
 #: off: night (seen 2015-01-29 00:45, 2018-02-01 00:20, 2022-04-29 23:55, 2022-06-30 23:15, 2023-11-30 00:25)
 	X 12822,12067
@@ -3337,7 +3337,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-04-09 vvv
+#: last_checked: 2024-04-12 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

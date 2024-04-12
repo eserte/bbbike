@@ -6847,7 +6847,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-04-08
+#: last_checked: 2024-04-12
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -7016,7 +7016,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        },
        {
          'data' => '#: next_check_id: U6-2022
-#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00
+#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2024-03-18 (okas)
 #: check_frequency: 360d
@@ -7032,7 +7032,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        {
          'data' => '#: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
-#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00
+#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
 #: last_checked: 2023-10-11 (daf)
 #: check_frequency: 360d
@@ -7939,7 +7939,7 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-03-22 (mapillary) vvv
+#: last_checked: 2024-04-12 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
@@ -8062,40 +8062,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1425414.php
-#: by: https://igeb.org/pressedienst/igebpresse_20240321.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1430491.php (2. Bauabschnitt 8. bis 12. April 2024 zwischen Johannisthaler Chaussee und Baumschulenstraße /Späthstraße)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1771972248079048997
-#: by: https://pbs.twimg.com/media/GJSJkLgWUAEe13Y?format=jpg&name=large
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772943473840140322
-#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/weitere-schaeden-festgestellt-bauarbeiten-dauern-laenger_a411539
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1432490.php
-#: source_id: bvg2021:265#BVG344869_0
-#: source_id: bvg2021:x11#BVG344866_0
-#: source_id: viz2021:13.485035,52.448445,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
-#: source_id: viz2021:13.487099,52.451725,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
-#: source_id: viz2021:13.483847,52.447373,25.03.2024,07:00 (bis 12.04.2024)
-#: source_id: viz2021:13.48815,52.451415,25.03.2024,07:00 (bis 12.04.2024)
-#: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
-#: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
-#: last_checked: 2024-03-25 vvv
-#: next_check: 2024-04-12 vvv
-#: note: hier wurde laut Pressemitteilung nachträglich angepasst
-Johannisthaler Chaussee: Gehweg frei, wenig Fußgänger	q3::inwork 15720,4341 15800,4464
-Johannisthaler Chaussee: Gehweg frei, wenig Fußgänger	q3::inwork 15800,4464 15843,4524 15863,4554 15918,4636 16004,4764 16146,4974 16209,5067 16279,5170
-Königsheideweg: Fahrbahn noch frei, aber Absperrungen sind schon da, Gehweg recht eng hier	q3::inwork 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
-#: note: eigentlich q2+::inwork
-Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei	q2::inwork 16279,5170 16305,5152 16362,5112 16549,5015 16781,4910 16959,4831 17037,4794 17115,4757
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1711234800,
-         'id' => 4021,
-         'text' => 'Johannisthaler Chaussee und Königsheideweg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 25. März 2024 bis 12. April 2024',
-         'type' => 'handicap',
-         'until' => 1712916000
-       },
+       undef,
        {
          'data' => '#: source_id: 236700856 (bis 30.10.2024)
 	2::inwork 90239,-16522 90350,-16513 90592,-16499
@@ -8122,16 +8089,7 @@ Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei
          'type' => 'handicap',
          'until' => 1715353200
        },
-       {
-         'data' => '#: source_id: LS/221-F/24/045 (bis 12.04.2024)
-	2::inwork 58086,29081 58143,28039 58283,27690 58784,26700
-',
-         'from' => 1711263600,
-         'id' => 4024,
-         'text' => 'Batzlow - Möglin: Bauarbeiten, Sperrung, vom 25.03.2024 bis 12.04.2024',
-         'type' => 'gesperrt',
-         'until' => 1712930400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.296893,52.528484,18.03.2024,07:00 (bis 29.06.2024)
 	q4::inwork 3066,13514 3159,13492
