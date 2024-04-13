@@ -2190,12 +2190,12 @@ Riemannstr.	2:Anlieger 9767,9386 9650,9404
 Riemannstr.	2:Anlieger 9524,9426 9578,9417
 Lilienthalstr.	2:Anlieger 10713,9260 10705,9234 10709,9192 10748,9054 10675,8940 10481,8814 10291,8810 10269,8770 10209,8661
 Golßener Str.	2:Anlieger 10269,8770 10268,8810 10266,8946
-Jüterboger Str.	2:Anlieger 10266,8946 9951,8965 9799,8962
-Schwiebusser Str.	2:Anlieger 9801,8889 9417,8890 9227,8890
-Fidicinstr.	2:Anlieger 9799,8962 9654,8991 9459,9019 9295,9047 9224,9053
+Jüterboger Str.	2:Anlieger 10266,8946 9951,8965 9804,8963
+Schwiebusser Str.	2:Anlieger 9803,8890 9417,8890 9227,8890
+Fidicinstr.	2:Anlieger 9804,8963 9654,8991 9459,9019 9295,9047 9224,9053
 Fidicinstr.	1 9224,9053 9295,9047 9459,9019 9654,8991
-Willibald-Alexis-Str.	2:Anlieger 9958,9050 9797,9063 9669,9080 9600,9091 9589,9093 9540,9102 9477,9113
-Arndtstr.	2:Anlieger 9966,9151 9795,9162 9674,9179 9614,9186 9566,9194 9553,9196 9487,9209
+Willibald-Alexis-Str.	2:Anlieger 9958,9050 9803,9062 9669,9080 9600,9091 9589,9093 9540,9102 9477,9113
+Arndtstr.	2:Anlieger 9966,9151 9802,9163 9674,9179 9614,9186 9566,9194 9553,9196 9487,9209
 Heimstr.	2:Anlieger 9951,8965 9958,9050 9966,9151 9973,9232
 Heimstr.	1 9973,9232 9966,9151 9958,9050 9951,8965
 Kopischstr.	2:Anlieger 9459,9019 9477,9113
@@ -2380,9 +2380,9 @@ Jüdenstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12
 Jüdenstr. -> Gustav-Böß-Str.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12451 10783,12502 10685,12422
 Gustav-Böß-Str. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10685,12422 10783,12502 10704,12595
 Grunerstr./Klosterstr.	3nocross::ignrte 10849,12557 10873,12577 10950,12640
-Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10931,12622 10873,12577 10849,12557
-Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10931,12622 10873,12577 10900,12546
-Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10950,12640 10873,12577 10931,12622
+Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,12577 10849,12557
+Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,12577 10900,12546
+Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10950,12640 10873,12577 10951,12637
 Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10950,12640 10873,12577 10900,12546
 Klosterstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10900,12546 10873,12577 10849,12557
 Chamissoplatz: Poller	3 9553,9196 9566,9194 9614,9186

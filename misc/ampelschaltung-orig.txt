@@ -72,7 +72,7 @@ Sa, 24.10.1998
 10564,9292    Gneisenaustr./Bergmannstr.         W->O   60  19:02:54  19:02:22
 10713,9260    Gneisenaustr./Lilienthalstr.       W->O   60  19:03:56  19:03:26
 10209,8661    Columbiadamm/Golßener Str.         W->O   70  19:09:22  19:08:58
-9801,8683     Columbiadamm/Friesenstr.           O->W   70  19:09:50  19:10:25
+9807,8682     Columbiadamm/Friesenstr.           O->W   70  19:09:50  19:10:25
 9395,8726     Columbiadamm/Pl. der Luftbr.       O->W   70  19:13:04  19:13:35
 9229,8785     Columbiadamm/Mehringdamm           O->W   70  19:14:11  19:14:33
 9233,8597     Pl. der Luftbr./Te-Damm            O->W   70  19:17:44  19:17:56
@@ -83,7 +83,7 @@ Sa, 24.10.1998
 9225,9038     Mehringdamm/Fidicinstr.            S->N       19:23:17  19:23:42
 9248,9350     Mehringdamm/Kreuzbergs. (Auto)     S->N   70  19:24:38  19:25:10
 9248,9350     Mehringdamm/Kreuzbergs. (Rad)      S->N                 +5s
-9793,9241     Bergmannstr./Friesenstr.           W->S   70  19:31:20  19:28:21
+9801,9241     Bergmannstr./Friesenstr.           W->S   70  19:31:20  19:28:21
 9753,9252     Bergmannstr./Zossener Str.         W->O   70  19:28:20  19:27:46
 9489,9309     Bergmannstr./Nostitzstr.           W->O       19:29:10  19:28:42
 9248,9350     Kreuzbergstr./Mehringdamm          O->W   70  19:32:20  19:32:38
@@ -157,7 +157,7 @@ Mo, 26.10.1998
 Mo, 26.10.1998
 9229,8785     Dudenstr./Tempelhofer Damm         W->O       21:07:48
 9395,8726     Columbiadamm/Platz der Luftbr.     W->O       21:08:15
-9801,8683     Columbiadamm/Friesenstr.           W->O       21:09:09
+9807,8682     Columbiadamm/Friesenstr.           W->O       21:09:09
 11632,8302    Columbiadamm/Fontanestr.           W->O       21:14:18  21:14:00
 11898,8362    Flughafenstr./Hermannstr (Auto)    W->O       21:15:25? 21:14:50
 11898,8362    Flughafenstr./Hermannstr (Rad)     W->O       21:15:25? 21:14:40
@@ -191,7 +191,7 @@ Di, 27.10.1998
 11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:03:35  09:03:45
 11632,8302    Columbiadamm/Fontanestr.           O->W       09:05:44
 10209,8661    Columbiadamm/Golßener Str.         O->W       09:09:50  09:09:15
-9801,8683     Columbiadamm/Friesenstr.           O->W       09:11:27  09:10:53
+9807,8682     Columbiadamm/Friesenstr.           O->W       09:11:27  09:10:53
 9395,8726     Columbiadamm/Platz der Luftbr      O->W   70  09:12:22  09:12:52
 9229,8785     Columbiadamm/Mehringdamm           O->W   80  09:13:20  09:13:44
 
@@ -290,7 +290,7 @@ Fr, 30.10.1998
 11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:06:36  09:06:46
 11632,8302    Flughafenstr./Fontanestr.          O->W       09:10:44  09:10:13
 10209,8661    Columbiadamm/Golßener Str.         O->W   65  09:14:42  09:14:11
-9801,8683     Columbiadamm/Friesenstr.           O->W   70  09:16:19  09:15:47
+9807,8682     Columbiadamm/Friesenstr.           O->W   70  09:16:19  09:15:47
 9395,8726     Columbiadamm/Platz der Luftbrücke  O->W   70  09:18:23  09:18:53
 9229,8785     Dudenstr./Mehringdamm              O->W   80  09:20:00  09:20:23
 8982,8781     Dudenstr./Methfesselstr.           O->W       09:22:05
@@ -365,7 +365,7 @@ Mo,  2.11.1998
 9248,9350     Kreuzbergstr/Mehringdamm (Auto)    W->O       11:47:18
 9248,9350     Kreuzbergstr/Mehringdamm (Rad)     W->O       11:47:16
 9753,9252     Bergmannstr/Zossener Str.          W->O       11:47:58  11:48:34
-9793,9241     Bergmannstr/Friesenstr. (Rad)      W->O       11:49:18
+9801,9241     Bergmannstr/Friesenstr. (Rad)      W->O       11:49:18
 10198,9405    Baerwaldstr/Gneisenaustr.          S->N                 11:50:16
 10713,9260    Südstern/Lilienthalstr.            W->O                 11:51:28
 10713,9260    Südstern/Lilienthalstr.            S->N       11:51:37  11:51:45
@@ -377,7 +377,7 @@ Mo,  2.11.1998
 Mo,  2.11.1998
 11023,9597    Grimmstr/Urbanstr.                 N->S       14:29:58
 10713,9260    Körtestr/Südstern                  N->S       14:31:33
-9793,9241     Bergmannstr/Friesenstr. (Rad)      O->W                 11:34:14
+9801,9241     Bergmannstr/Friesenstr. (Rad)      O->W                 11:34:14
 9753,9252     Bergmannstr/Zossener Str.          O->W       14:34:48
 9489,9309     Bergmannstr/Nostitzstr.            O->W       14:35:46  14:35:18
 9248,9350     Bergmannstr/Mehringdamm            O->W       14:36:25
@@ -392,7 +392,7 @@ Fr,  6.11.1998
 9248,9350     Kreuzbergstr/Mehringdamm  (Auto)   W->O       12:05:49
 9489,9309     Bergmannstr/Nostitzstr             W->O       12:06:07
 9753,9252     Bergmannstr/Zossener Str.          W->O       12:06:30
-9793,9241     Bergmannstr/Friesenstr (Rad)       W->O       12:07:50  12:07:06
+9801,9241     Bergmannstr/Friesenstr (Rad)       W->O       12:07:50  12:07:06
 10713,9260    Südstern/Lilienthalstr             W->O       12:09:56
 10713,9260    Südstern/Lilienthalstr (Rad)       S->N       12:10:35
 10713,9260    Südstern/Lilienthalstr (Auto)      S->N       12:10:37
@@ -424,7 +424,7 @@ Di, 10.11.1998
 10713,9260    Südstern/Körtestr.                 N->S       16:32:09
 10198,9405    Baerwaldstr/Gneisenaustr.          S->N       16:33:53
 9753,9252     Bergmannstr/Zossener Str.          O->W       16:35:14  16:34:28
-9793,9241     Bergmannstr/Friesenstr. (?)        O->W       16:35:24  16:34:39
+9801,9241     Bergmannstr/Friesenstr. (?)        O->W       16:35:24  16:34:39
 9489,9309     Bergmannstr/Nostitzstr.            O->W       16:35:57
 9248,9350     Bergmannstr/Mehringdamm            O->W   80  16:36:25  16:36:42
 
@@ -470,7 +470,7 @@ Di, 10.11.1998
 Mi, 11.11.1998
 9229,8785     Mehringdamm/Dudenstr               N->S       11:57:02
 9229,8785     Mehringdamm/Dudenstr               O->W       11:57:42
-9801,8683     Columbiadamm/Friesenstr            O->W       11:59:12
+9807,8682     Columbiadamm/Friesenstr            O->W       11:59:12
 10209,8661    Columbiadamm/Golßener Str          O->W       11:59:51
 10209,8661    Columbiadamm/Golßener Str (Rad)    S->N       12:00:43
 10713,9260    Lilienthalstr/Südstern (Rad)       S->N       12:03:37
@@ -568,7 +568,7 @@ Sa, 14.11.1998
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 So, 15.11.1998
-9793,9241     Friesenstr/Bergmannstr             S->N                 19:04:13
+9801,9241     Friesenstr/Bergmannstr             S->N                 19:04:13
 9753,9252     Bergmannstr/Zossener Str           O->W       19:04:57
 9790,9528     Zossener Str/Gneisenaustr.         S->N   50  19:05:13  19:05:23
 9827,10051    Zossener Str/Blücherstr.           S->N   50  19:07:33  19:07:40
@@ -619,7 +619,7 @@ Mi, 01.04.1999
 9248,9350     Mehringdamm/Kreuzbergstr. (Auto)   W->O       10:56:55  10:56:02
 9489,9309     Bergmann/Nostitz                   W->O   55  10:57:35  10:57:53
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  W->O       10:58:46  10:58:12
-9793,9241     Bergmannstr./Friesenstr. (Auto)    W->S       10:58:16
+9801,9241     Bergmannstr./Friesenstr. (Auto)    W->S       10:58:16
 10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O   60  11:01:12  11:01:43
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -649,7 +649,7 @@ Mi, 07.04.1999
 11023,9597    Körtestr./Urbanstr.                N->S   50  21:07:30  21:07:41
 10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S   50  21:09:28  21:09:38
 10564,9292    Gneisenaustr./Südstern/Blücherstr  S->N       21:11:08
-9793,9241     Bergmannstr./Friesen (Rad)         O->W   50  21:13:25  21:12:51
+9801,9241     Bergmannstr./Friesen (Rad)         O->W   50  21:13:25  21:12:51
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  O->W       21:13:35
 9248,9350     Mehringdamm/Kreuzbergstr./Bergman  O->W   70  21:15:36  21:15:52
 
@@ -685,7 +685,7 @@ Do, 08.04.1999
 11023,9597    Körtestr./Urbanstr.                N->S       20:04:37
 10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S   60  20:05:50  20:06:03
 10564,9292    Gneisenaustr./Südstern/Blücherstr  S->N       20:07:49
-9793,9241     Bergmannstr./Friesen (Rad)         O->W       20:09:38          
+9801,9241     Bergmannstr./Friesen (Rad)         O->W       20:09:38          
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  O->W   70  20:09:38
 9248,9350     Mehringdamm/Kreuzbergstr./Bergman  O->W   80  20:11:42  20:11:57
 
@@ -713,7 +713,7 @@ Fr, 09.04.1999
 11023,9597    Körtestr./Urbanstr. (Kreuzberg)    N->S   70  18:07:38  18:07:55
 10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S       18:09:56
 10209,8661    Columbiadamm/Golßener Str.         N->S       18:12:45  18:12:56
-9801,8683     Columbiadamm/Friesenstr. (Kreuzbe  O->W   70  18:13:33  18:14:10
+9807,8682     Columbiadamm/Friesenstr. (Kreuzbe  O->W   70  18:13:33  18:14:10
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W       18:15:31  18:16:01
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  18:17:36  18:16:36
 
@@ -760,7 +760,7 @@ Sa, 10.04.1999
 11898,8362    Hermannstr./Flughafenstr.          O->W   60  09:24:55
 11632,8302    Columbiadamm/Flughafenstr.         O->W   60  09:28:03  09:27:31
 10209,8661    Columbiadamm/Golßener Str.         O->W   70  09:31:31  09:32:06
-9801,8683     Columbiadamm/Friesenstr.           O->W   70  09:33:08  09:32:34
+9807,8682     Columbiadamm/Friesenstr.           O->W   70  09:33:08  09:32:34
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  09:35:12  09:34:34
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  09:36:39  09:37:02
 8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W       09:38:54  09:38:18
@@ -769,7 +769,7 @@ Sa, 10.04.1999
 # ----------------------------------------------------------------------------
 Sa, 10.04.1999
 9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   70  20:28:30  20:27:40
-9793,9241     Bergmannstr./Friesenstr.           S->W       20:31:38
+9801,9241     Bergmannstr./Friesenstr.           S->W       20:31:38
 10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O   60? 20:34:14  20:34:44
 11023,9597    Körtestr./Urbanstr./Grimmstr./Fic  S->N       20:36:38
 11673,9720    Kottbusser Damm/Bürknerstr./Böckh  W->O   70  20:38:39  20:38:49
@@ -795,7 +795,7 @@ So, 11.04.1999
 11898,8362    Hermannstr./Flughafenstr.          O->W   60  15:08:55  15:09:04
 11632,8302    Columbiadamm/Flughafenstr.         O->W   60  15:10:31  15:11:04
 10209,8661    Columbiadamm/Golßener Str.         O->W   70  15:14:11  15:14:45
-9801,8683     Columbiadamm/Friesenstr.           O->W   70  15:15:48  15:16:24
+9807,8682     Columbiadamm/Friesenstr.           O->W   70  15:15:48  15:16:24
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  15:17:52  15:18:23
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   70  15:18:59  15:19:21
 
@@ -858,7 +858,7 @@ Do, 22.04.1999
 Do, 22.04.1999
 9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   70  23:41:40  23:42:02
 9395,8726     Platz der Luftbrücke/Columbiadamm  W->O       23:43:25  23:42:57
-9801,8683     Columbiadamm/Friesenstr.           W->O                 23:44:20
+9807,8682     Columbiadamm/Friesenstr.           W->O                 23:44:20
 10209,8661    Columbiadamm/Golßener Str.                AUS
 11898,8362    Hermannstr./Flughafenstr.          W->O   50  23:49:43  23:50:02
 12195,8436    Flughafenstr./Reuterstr.           W->O   40  23:51:03  23:51:21
@@ -1132,7 +1132,7 @@ Fr, 30.04.1999
 Fr, 30.04.1999
 9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       17:10:54  17:09:54
 9395,8726     Platz der Luftbrücke/Columbiadamm  W->O       17:11:17
-9801,8683     Columbiadamm/Friesenstr.           W->O                 17:12:26
+9807,8682     Columbiadamm/Friesenstr.           W->O                 17:12:26
 10209,8661    Columbiadamm/Golßener Str.         W->O                 17:13:06
 11632,8302    Columbiadamm/Flughafenstr.         W->O       17:17:15  17:16:38
 11898,8362    Hermannstr./Flughafenstr.          W->O       17:18:37  17:17:51
@@ -1150,7 +1150,7 @@ Fr, 30.04.1999
 11898,8362    Hermannstr./Flughafenstr.          S->N   80? 17:41:09  17:42:01
 11632,8302    Columbiadamm/Flughafenstr.         O->W       17:43:55  17:43:18
 10209,8661    Columbiadamm/Golßener Str.         O->W   70  17:47:20  17:47:54
-9801,8683     Columbiadamm/Friesenstr.           O->W   70  17:48:58  17:48:25
+9807,8682     Columbiadamm/Friesenstr.           O->W   70  17:48:58  17:48:25
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  17:50:56  17:50:19
 9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  17:52:14  17:52:34
 8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W   70  17:53:32  17:54:04
@@ -1360,9 +1360,9 @@ Fr, 18.07.2003 (00:00:00 = 19:16:24)
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 29.01.2008 (00:00:00 = ca. 14:00)
-9793,9241     Bergmannstr./Friesenstr.           O->W   70  +00:00
+9801,9241     Bergmannstr./Friesenstr.           O->W   70  +00:00
 9753,9252     Bergmannstr./Zossener Str.         O->W   70            +00:10
-9793,9241     Bergmannstr./Friesenstr.           O->W   70            +00:20
+9801,9241     Bergmannstr./Friesenstr.           O->W   70            +00:20
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1900,7 +1900,7 @@ Di, 23.02.2010
 #WPT: 219	23-FEB-10 18:47:19	52.4891944444444	13.3932222222222	buoy_white_green
 9753,9252     Bergmannstr./Zossener Str.         W->O       18:47:19
 #WPT: 220 R	23-FEB-10 18:47:31	52.4890833333333	13.3939166666667	buoy_white_green
-9793,9241     Bergmannstr./Friesenstr. (Rad)     W->O       18:47:31
+9801,9241     Bergmannstr./Friesenstr. (Rad)     W->O       18:47:31
 #WPT: 221	23-FEB-10 18:51:15	52.4887777777778	13.4077222222222	buoy_white_green
 10713,9260    Lilienthalstr./Südstern/Körtestr.  S->N       18:51:15
 #WPT: 222	23-FEB-10 18:53:35	52.4916944444444	13.4131944444444	buoy_white_green

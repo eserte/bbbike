@@ -403,7 +403,7 @@ Herbert-Tschäpe-Str.	1 14361,14145 14481,14095 14510,14104 14717,14188
 Herbert-Tschäpe-Str.	1 14465,14210 14510,14104
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
-Ceciliengärten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
+Ceciliengärten	1 6256,7428 6241,7428 6239,7600 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
 Ingelheimer Str.	1 18891,8586 18951,8574 19022,8571 19075,8590
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
@@ -530,12 +530,9 @@ Turmstr. (Richtungsfahrbahn)	1::igndisp 6022,13330 5956,13330 5857,13342
 Turmstr. (Straßenbahntrasse)	3nocross::ignrte 5857,13342 5956,13338 6012,13332 6022,13330
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5325,8023 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5363,8024 5350,7915 5346,7860
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11057,12715 10951,12637 10931,12622
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 10931,12622 10873,12577
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10951,12637 10873,12577
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10873,12577 10950,12640 11013,12684 11055,12717 11105,12764
 Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 11013,12684 10950,12640 10873,12577
-Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
 Badstr. (Richtungsfahrbahn)	1::igndisp 8659,16327 8543,16364 8516,16393 8486,16425
 Badstr. (Richtungsfahrbahn)	1::igndisp 8486,16425 8518,16394 8544,16365 8659,16327
 Badstr. (Gitter auf Mittelstreifen)	3nocross::ignrte 8659,16327 8543,16364 8516,16393 8486,16425
@@ -697,7 +694,7 @@ Mark-Twain-Str.	1 24345,14501 24363,14453 24345,14403
 Mark-Twain-Str.	1 24316,14412 24345,14501
 A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
-Rubensstr.	1 6429,7876 6306,7864
+Rubensstr.	1 6431,7883 6306,7864
 Bäumerplan	1 8527,7939 8553,7795
 Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13206 3534,13098
@@ -1015,6 +1012,7 @@ Bruchsaler Str. -> Wexstr.: Mittelstreifen	3::igndisp 5521,8087 5522,8024 5570,8
 Hausvaterweg [Wohngebiet]	1s 19789,18423 19704,18459
 (zu den Depotgebäuden)	2 24734,5592 24733,5553
 (Zufahrt U-Bahn-Abstellanlage Hönow): üblicherweise durch ein Tor versperrt	2 25919,14963 25809,14991
+Bahnhofsplatz S-Bhf. Hermsdorf	1 3624,23540 3610,23527 3590,23541 3581,23557 3596,23581
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2258,7 +2256,7 @@ Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gefährlich/
 Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4732,4939 4692,4997 4675,4983
 Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4692,4997 4675,4983 4725,4876
 Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4725,4876 4675,4983 4517,4853
-Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6986,8683
+Mittelstreifen	3nocross::ignrte 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3::igndisp 6765,8480 6912,8617 6818,8697
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6818,8697 6912,8617 6986,8683
 Straßenbahntrasse	3nocross::ignrte 18585,10278 18554,10354 18446,10620

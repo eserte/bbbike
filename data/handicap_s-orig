@@ -37,6 +37,7 @@ Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inw
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/erbbaurechtsvertrag-fuer-neue-heinrich-hertz-schule-unterschrieben_a403443
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-friedrichshain-kreuzberg.58/page-7#post-22363
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schulneubau-genehmigt_a411137
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11464 (Anfrage)
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -280,10 +281,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="30"
+#: osm_watch: way id="549316654" version="31"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2024-02-04
+#: last_checked: 2024-04-12 (osm)
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -293,7 +294,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: XXX Oranienburger Straße (Mitte) Richtung Monbijouplatz zwischen Große Präsidentenstraße und Große Hamburger Straße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Die Große Hamburger Straße ist von der Oranienburger Straße abgehängt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
 #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024)
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-04-09
+#: last_checked: 2024-04-11 (mapillary)
 #: next_check: 2024-04-19
 #: valid: -20240419
 Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fußgänger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
@@ -329,8 +330,8 @@ Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fuß
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-04-08
-#: check_frequency: 90d
+#: last_checked: 2024-04-11 (mapillary)
+#: check_frequency: 45d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
 # 
@@ -624,7 +625,7 @@ Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::i
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-04-03 vvv
+#: last_checked: 2024-04-13 vvv
 #: next_check: 2024-04-15 vvv
 #: valid: -20240415 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -938,6 +939,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3-::inwork 17531,14923 17610,14935 17638,14945
 # 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
 #: priority: #C
@@ -1026,7 +1028,7 @@ Eisenacher Str.: Bauarbeiten Höhe Hohenstaufenstr., Engstellen	q2::inwork 6747,9
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe-kleinere-p/?postID=757023#post757023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: last_checked: 2024-04-03 vvv
+#: last_checked: 2024-04-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
@@ -1953,14 +1955,17 @@ Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 # 
 #: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8901 (Antrag - Antwort: Neubewertung nach Bau der RVA in der Hauptstraße)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Antrag: Radverkehrsführung abordnen)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Antrag: Radverkehrsführung abordnen) (durch Verwaltungshandeln erledigt)
 #: XXX falls die Abordnung durchgeführt wird -> auf q4 degradieren
 #: last_checked: 2024-02-07
 #: check_frequency: 120d
+#: next_check: 2024-04-11
 Richard-von-Weizsäcker-Platz: einige Fußgänger	q2 7201,8870 7307,8945
 # 
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15380,10946 15355,10875
 Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
+#: XXX_prog BS keine Absenkung an der Sponholzstr., dort möglicherweise zugeparkt (ansonsten q3)
+Ceciliengärten [zur Sponholzstr.]: einige Fußgänger, schmale Rampe, Bodstein	q3- 6239,7600 6166,7599
 # REMOVED (mittlerweile sind die Absperrungen großzügiger versetzt) --- #: XXX_prog: für Anhänger q2 --- Sebastianstr.: Absperrung für Autos, mit Anhänger unbequem passierbar	q1 10911,11080 10934,11038
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
@@ -2704,6 +2709,8 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: by: https://www.euroboden.de/ (Insolvenzverfahren wurde eröffnet)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lion-feuchtwanger-61-euroboden.1201/page-2#post-22689
 #: by: https://www.die-hellersdorfer.berlin/2024/03/22/eigentumswohnungen-in-kaulsdorf-nord-vor-der-fertigstellung/ (Fertigstellung am 30.06.2024)
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/vielfaeltige-probleme-beim-bauprojekt-lion_a411971
+#: by: https://portfolio.bestplace-immobilien.de/lion/
 #: note: gemeinsamer Geh- und Radweg
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
@@ -2976,7 +2983,7 @@ Am Krummen Weg: offiziell nur für Fußgänger	q2 -6891,14891 -7026,14890
 Am Krug: offiziell nur für Fußgänger	q2 -7149,14768 -7021,14772 -7015,14772
 (Am Langen Weg - Ungewitterweg): eng	q3 -7033,14984 -7075,15021 -7088,15046 -7116,15053
 (Am Zeppelinpark - Sommerbad West-Staaken): einige Fußgänger	q1 -8426,13818 -8232,13846
-(entlang der Autobahn): einige Fußgänger	q1 6489,7908 6437,7968
+(entlang der Autobahn): einige Fußgänger	q1 6487,7916 6437,7968
 # REMOVED (offizieller Radweg jetzt) --- Zur Revaler Str.: einige Fußgänger	q1 14634,11048 14513,11075
 Holzweidepfad: eng, Fußgänger	q3 5791,18778 5792,18727
 Marthashof: Fußgänger, spielende Kinder	q3 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
@@ -3904,7 +3911,7 @@ Admiralstr.: Fußgänger, Bodenschwellen	q2- 11244,10111 11274,10184
 Innsbrucker Platz - Eisackstr.: einige Fußgänger	q2 6388,7999 6418,7958
 #: XXX_prog: BS an der Eisackstr., ansonsten q2
 #: note: Grünanlage, keine Zusatzschilder
-Innsbrucker Platz - Eisackstr.: Bordstein, einige Fußgänger	q3 6418,7958 6429,7876
+Innsbrucker Platz - Eisackstr.: Bordstein, einige Fußgänger	q3 6418,7958 6431,7883
 (Buckower Damm - Neumarkplan): enger Radweg	q2 12673,3619 12624,3659 12603,3712 12578,3728
 (Johannisthaler Chaussee - Wildmeisterdamm): enge Straße	q1 13045,2107 13064,2090 13157,2116
 (Schragenfeldstr. - Allee der Kosmonmauten): Fußgänger	q2 21095,15003 21025,15005
@@ -5112,14 +5119,6 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:
 #: corrected_by: srt (q2 -> q1)
-#: by: https://www.infravelo.de/projekt/nordgraben/ (1. Quartal 2022 - 4. Quartal 2022; Asphaltierung & Verbreiterung auf 4m) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile von "in Planung" auf "Vorgesehen" zurückgestuft) (4. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 4. Quartal 2023) (wieder "in Planung") (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (in der API gelöscht, im Web weiterhin verfügbar) (wieder da) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 4. Quartal 2023) ("abgeschlossen")
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1315351.php (Umsetzung 2023)
-#: osm_watch: way id="1144328912" version="1"
-#: osm_watch: way id="25702317" version="21"
-#: XXX Weg wird asphaltiert
-#: last_checked: 2023-02-12 (mapillary)
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2023-12-31
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3233,20834 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 # 
 #: by: Hans-Reiner Padberg: vvv

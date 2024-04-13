@@ -4271,7 +4271,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-11 (mapillary)
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5409,6 +5409,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: S-SCHICHAUWEG-2021
+#: next_check_id: DRESDNERBAHN-2021
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
@@ -6331,6 +6332,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: next_check_id: DRESDNERBAHN-2021
 #: note: existiert auch in gesperrt-orig
 # REMOVED --- #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 	2::inwork 9123,533 9178,556
@@ -6386,7 +6388,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.315375,52.450057,04.12.2022,07:00 (hier ab 4.12.2022, mittlerweile inaktiv)
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2024) (bis 17.05.2024)
+#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2024) (bis 17.05.2024) (bis 27.05.2024)
 #: source_id[inactive]: bvg2021:m85#BVG312983_0
 #: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
@@ -6394,9 +6396,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1670972400,
          'id' => 3698,
-         'text' => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 17.05.2024',
+         'text' => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 27.05.2024',
          'type' => 'gesperrt',
-         'until' => 1715958000
+         'until' => 1716822000
        },
        undef,
        {
@@ -6961,16 +6963,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/221-E/23/077 (bis 10.05.2024) (bis 25.08.2023) (inaktiv) (bis 10.05.2024)
-	2::inwork -7332,66101 -7636,65571
-',
-         'from' => 1687068000,
-         'id' => 3824,
-         'text' => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
-         'type' => 'gesperrt',
-         'until' => 1715349600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7556,6 +7549,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: next_check_id: STEGEWEG-2023
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
 #: last_checked: 2024-02-15 (Pressemitteilung)
 #: check_frequency: 90d
 	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
@@ -7582,7 +7576,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
-#: also_indoor: traffic (ex-G,ex-W)
+#: also_indoor: traffic (G,W)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-03-20 vvv
 # REMOVED --- #: next_check: 2024-03-15 vvv
@@ -8238,21 +8232,27 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'data' => '#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778015024818094305
 #: by: https://www.rbb24.de/panorama/beitrag/2024/04/berlin-schoeneberg-risse-hauswand-feuerwehr-polizei.html
 #: by: https://www.tagesspiegel.de/berlin/mietshaus-in-berlin-schoneberg-evakuiert-absenkungen-risse-in-den-wanden-einsturzgefahr-11494301.html
-#: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778682517517631737 (voraussichtlich bis Ende April 2024)
+#: by: https://berliner-abendblatt.de/berlin-news/risse-an-fassade-von-schoeneberger-wohnhaus-einsturzgefahr-id249463
+#: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
 #: source_id: bvg2021:n7#BVG346248_0
-#: also_indoor: traffic (B)
-#: XXX Wann wird die Sperrung wieder aufgehoben? vvv
-#: next_check: 2024-04-12 vvv
-	2::inwork 7007,9220 6994,9288 7118,9315
-	2::inwork 7002,9526 6994,9288 6921,9275
+#: also_indoor: traffic (B,H,G,W)
+#: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
+#: last_checked: 2024-04-13 vvv
+#: next_check: 2024-04-30 vvv
+	q4::inwork 7007,9220 6994,9288
+	q3::inwork 6994,9288 7118,9315
+	q3::inwork 7002,9526 6994,9288
+# REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
 #: next_check ^^^
-#: XXX ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1712683045,
          'id' => 4038,
-         'text' => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs',
-         'type' => 'gesperrt',
-         'until' => undef
+         'text' => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis Ende April 2024',
+         'type' => 'handicap',
+         'until' => 1714492800
        },
        {
          'data' => '#: source_id: LS/222-W/24/026 (bis 17.05.2024)

@@ -70,11 +70,11 @@ Verbundsteinpflaster	RW1; 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 #: historical_note: früher (bis Sommer 2022?) für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr
 Gehwegplatten	RW1; 9229,8785 9272,8781 9395,8726
 Gehwegplatten, ordentlich verlegt	RW1; 9395,8726 9570,8715
-Gehwegplatten	RW1; 9570,8715 9801,8683
-Gehwegplatten, für Radfahrer freigegebene Busspur gilt 5-19 Uhr	RW1; 9801,8683 9570,8715 9395,8726 9272,8781 9229,8785
+Gehwegplatten	RW1; 9570,8715 9807,8682
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt 5-19 Uhr	RW1; 9807,8682 9570,8715 9395,8726 9272,8781 9229,8785
 #: note: außerdem kann man den parallel verlaufenden asphaltierten Weg auf dem Ex-Flughafen-Gelände nutzen
-	RW3; 9801,8683 10209,8661
-Verbundsteinpflaster	RW2; 10209,8661 9801,8683
+	RW3; 9807,8682 10209,8661
+Verbundsteinpflaster	RW2; 10209,8661 9807,8682
 	RW4;RW4 8389,9087 8471,9244 8499,9253 8598,9269 8769,9295 8970,9323
 wobei das Radwegschild parallel zur Fahrtrichung steht	RW4; 8970,9323 9154,9347 9211,9354
 	RW3; 9211,9354 9154,9347 8970,9323
@@ -341,7 +341,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-04-12 vvv
+#: last_checked: 2024-04-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1949,10 +1949,18 @@ geschützter Radstreifen	RW4; 5363,8024 5472,8024 5522,8024 5570,8024
 	RW3; 5570,8024 5632,8024
 # 
 # REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
-Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
+#: note: Hauptstr. Richtung Steglitz
+Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
+Busspur ist immer gültig	RW5; 7268,8960 7201,8870
+Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7201,8870 7105,8788 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385
+#: note: Hauptstr. Richtung Mitte
+Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6687,8385 6733,8441
+#: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr
+	RW3; 6733,8441 6765,8480 6912,8617 6986,8683
+Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6986,8683 7005,8701 7105,8788 7201,8870
+Busspur ist immer gültig	RW5; 7201,8870 7268,8960
+Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7268,8960 7308,9041 7354,9135 7363,9152 7382,9187 7388,9199 7471,9360
 # 
-Busspur ist immer gültig	RW5;RW5 7268,8960 7201,8870
-Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7201,8870 7105,8788 7005,8701 6986,8683 6912,8617 6765,8480 6687,8385
 #: note: Haltestellenbereich
 Busspur ist immer gültig	RW5; 6532,10529 6602,10504
 	RW4; 6602,10504 6636,10492
@@ -2085,7 +2093,7 @@ asphaltiert	RW2; 10685,12422 10710,12377 10714,12355 10703,12313 10697,12303
 # 
 Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
-# REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10931,12622 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
+# REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
 	RW4; 10951,12637 11057,12715
 # REMOVED --- temporär	RW4; 10849,12557 10838,12496 10807,12451
 # REMOVED --- temporär	RW4; 10807,12451 10746,12364 10697,12303
@@ -2102,10 +2110,11 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-04-03 (webcam)
+#: last_checked: 2024-04-11 (mapillary)
 # REMOVED --- #: next_check: 2023-08-25
-provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577 10931,12622 10951,12637
-# REMOVED --- asphaltierter Radweg	RW2; 10873,12577 10931,12622
+provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577
+asphaltiert	RW2; 10873,12577 10951,12637
+# REMOVED --- asphaltierter Radweg	RW2; 10873,12577
 # 
 # REMOVED (ist wieder weg) --- #: XXX wie lange bleibt die provisorische Radspur? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.787705.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres) --- #: by: https://twitter.com/VIZ_Berlin/status/1311892425351331847 --- #: source_id: 2147343815 (bis auf Weiteres) (nicht mehr aktiv) --- #: source_id: 2147346386 (bis 30.10.2020) --- #: last_checked: 2020-10-06 --- #: check_frequency: 30d --- #: next_check: 2020-10-30 --- provisorische Radspur	RW4; 11141,12806 11226,12945
 asphaltierter Radweg	RW1; 11141,12806 11226,12945
@@ -2509,11 +2518,11 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 	RW1; 16368,11912 16317,11920 16214,11935
 #: note: Benutzungspflicht unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
 	RW1; 13086,9825 13139,9880 13162,9904 13220,9980
-	RW2; 9753,9252 9793,9241
+	RW2; 9753,9252 9801,9241
 #
 # REMOVED (weitgehend entfernt) --- #: next_check_id: GOERLITZERUFER-2023 --- #: XXX wie sieht es nach dem Umbau aus? --- #: last_checked: 2024-03-14 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-30 vvv ---	RW1; 13220,9980 13162,9904 --- #: historical_note: früher Radweg auf dem Bürgersteig --- #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3; --- #: osm_watch: way id="984857536" version="6" ---	RW1; 13162,9904 13139,9880 13086,9825 13026,9854 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-Radspur links von der Fahrspur	RW3; 9793,9241 9753,9252
+Radspur links von der Fahrspur	RW3; 9801,9241 9753,9252
 #: note: die ersten Meter asphaltierter Bürgersteigradweg
 	RW3; 5975,13256 6214,13225
 	RW1; 6214,13225 5975,13256
@@ -3052,7 +3061,7 @@ unebener Asphalt und Gehwegplatten	RW1; 6367,7356 6389,7196
 	RW6;RW6 6271,7733 6257,7646
 	RW6; 6256,7428 6291,7429 6289,7472 6272,7645 6257,7646
 	RW6;RW6 6256,7428 6252,7239
-	RW6; 6257,7646 6238,7645 6241,7428 6256,7428
+	RW6; 6257,7646 6238,7645 6239,7600 6241,7428 6256,7428
 	RW3; 6454,8653 6455,8613
 	RW3;RW3 6455,8613 6458,8472 6459,8281 6459,8272 6460,8186 6460,8093
 	RW4; 6455,8613 6485,8639
@@ -4815,6 +4824,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11674 (Anfrage - Antwort)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1378435.php (Markierungsarbeiten bis Ende November 2023)
 #: by: https://www.berliner-woche.de/konradshoehe/c-verkehr/radfahrstreifen-wird-markiert_a397591
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12205 (Fertigstellung 2024)
 #: source_id: viz2021:13.235806,52.586491,21.08.2023,07:00 (Sperrung des Radwegs, bis 23.09.2023) (inaktiv)
 #: source_id: viz2021:13.235806,52.586491,14.08.2023,07:00 (bis 10.10.2023) (inaktiv)
 #: source_id: viz2021:13.244365,52.590839,06.11.2023,09:30 (bis 30.11.2023) (inaktiv)
@@ -6111,7 +6121,7 @@ asphaltiert	RW1; 18215,12123 18215,11690
 gemeinsamer Geh- und Radweg, asphaltiert und breit	RW2; 18280,11266 18327,11105 18343,11041 18417,10738
 	RW4; 18417,10738 18343,11041 18327,11105 18280,11266
 	RW4; 18280,11266 18263,11393 18216,11656
-	RW6;RW6 11057,12715 11055,12717 11030,12741 11007,12773
+	RW6;RW6 11055,12717 11030,12741 11007,12773
 	RW6;RW6 10074,13103 10016,13306
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10321,13259 9986,13412
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10016,13306 9986,13412 9961,13502
@@ -7005,17 +7015,22 @@ asphaltiert	RW1;RW9 7437,12368 7215,12295 7031,12320
 # 
 #: note: Boelckestr. Richtung Süden
 zusammen mit Bushaltestelle	RW3; 8594,8777 8601,8724
-	RW4; 8601,8724 8616,8605 8660,8454
-	RW3; 8660,8454 8670,8370
-	RW4; 8670,8370 8666,8305
-	RW3; 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8713,7423 8715,7384
+	RW4; 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305
+Radspur teilweise hinter den parkenden Autos, teilweise mit Leitboys	RW4; 8666,8305 8632,8174
+	RW4; 8632,8174 8620,8095 8623,8018 8627,7941
+mit Leitboys	RW4; 8627,7941 8642,7876
+Radspur teilweise mit Leitboys, teilweise hinter den parkenden Autos	RW4; 8642,7876 8686,7726
+Poller	RW4; 8686,7726 8690,7704
+Radspur hinter den parkenden Autos	RW4; 8690,7704 8704,7603
+	RW4; 8704,7603 8706,7585 8713,7423 8715,7384
+mit Leitboys	RW4; 8715,7384 8716,7323
 #: note: Boelckestr. Richtung Norden
 zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
 Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
 #: XXX ist das nur provisorisch?
-#: last_checked: 2024-03-08
-#: check_frequency: 60d
+#: last_checked: 2024-04-13
+#: check_frequency: 90d
 #: next_check: 2024-06-30
 semi-provisorischer asphaltierter Haltestellenkap	RW1; 8690,7704 8686,7726
 	RW4; 8686,7726 8642,7876 8627,7941
@@ -7799,7 +7814,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-12 (mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-08-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -8181,7 +8196,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-04-03 vvv
+#: last_checked: 2024-04-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 provisorischer Radstreifen	RW4; 10871,10322 10708,10312
@@ -8514,7 +8529,7 @@ Leitboys	RW4; 9294,4536 9275,4672
 #: osm_watch: way id="4357826" version="22"
 #: osm_watch: way id="354645907" version="18"
 #: osm_watch: way id="354645904" version="12"
-#: last_checked: 2024-02-03 vvv
+#: last_checked: 2024-04-13 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 	RW3; 8739,6701 8653,6781

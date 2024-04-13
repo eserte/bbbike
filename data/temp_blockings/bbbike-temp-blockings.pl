@@ -1180,7 +1180,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (13.9.2014 10:00 - 14.9.2014 20:00)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 6687,8385 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7268,8960
+	q4; 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7268,8960
 EOF
      },
      { from  => 1097618400, # 2004-10-13 00:00
@@ -4305,7 +4305,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002632',
        data  => <<EOF,
-	q4; 9799,8962 9951,8965
+	q4; 9804,8963 9951,8965
 EOF
      },
      { from  => 1145649600, # 2006-04-21 22:00
@@ -4691,7 +4691,7 @@ EOF
        text  => 'Mögliche Behinderungen wegen eines Flugspektakels am Flughafen Tempelhof, 27.5. von 8 bis 24 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 10209,8661 9801,8683 9570,8715 9395,8726 9364,8640 9321,8607 9233,8597
+	q4 10209,8661 9807,8682 9570,8715 9395,8726 9364,8640 9321,8607 9233,8597
 	q4 9395,8726 9272,8781 9229,8785 9229,8718 9233,8597 9238,8410 9238,8253 9239,8099 9240,8028 9240,7991 9240,7811 9242,7658 9242,7325 9242,7286 9242,7218 9242,7145
 	3 9227,8890 9229,8785 9076,8783
 	3 9076,8783 9229,8785 9227,8890
@@ -10778,7 +10778,7 @@ EOF
        text  => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 236501383 (neue Sperrung vom 29.03.2024 bis 12.04.2024, provisorische Überquerungsmöglichkeit für Fußgänger)
+#: source_id: 236501383 (neue Sperrung vom 29.03.2024 bis 12.04.2024, provisorische Überquerungsmöglichkeit für Fußgänger) (inaktiv)
 	2::inwork -6424,54584 -5771,54572 -5722,54573 -5233,54564 -5115,54564 -5032,54562 -4424,54552 -4290,54555 -4170,54557
 EOF
      },
@@ -19636,6 +19636,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/maientage-fallen-aus-volksfest-in-berlin-neukolln-zu-spaterem-zeitpunkt-im-gesprach-9621785.html (vielleicht im Herbst 2023?)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8873 (Anfrage)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-maientage-wieder-kein-volksfest-auf-der-hasenheide-li.2202306 (2024 auch nicht)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9029 (Anfrage)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -24768,7 +24769,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 6687,8385 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7268,8960
+	q4; 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7268,8960
 EOF
      },
      { from  => 1426719600, # 2015-03-19 00:00
@@ -26956,7 +26957,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147341611 (inaktiv)
-#: source_id: viz2021:13.36257,52.50591,11.04.2024,14:00 (bis 11.04.2024, zu spät gesehen)
+#: source_id: viz2021:13.36257,52.50591,11.04.2024,14:00 (bis 11.04.2024, zu spät gesehen) (inaktiv)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
@@ -27387,12 +27388,12 @@ EOF
 	2::bomb 5472,8024 5363,8024
 	2::bomb 5501,8253 5560,8204 5631,8141 5632,8024 5630,7875
 	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5812,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
-	2::bomb 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6293,7875 6376,7944 6418,7958
+	2::bomb 6241,7428 6239,7600 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6293,7875 6376,7944 6418,7958
 	2::bomb 5570,7939 5570,8024 5522,8024
 	2::bomb 5913,8415 5917,8351 5918,8221 5730,8207 5700,8241 5687,8280 5699,8308
 	2::bomb 6333,7708 6352,7523
 	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
-	2::bomb 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
+	2::bomb 6163,7237 6166,7599 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
 	2::bomb 5560,8204 5519,8159 5521,8087 5522,8024 5472,8024 5471,7915
 	2::bomb 5660,8366 5652,8234 5651,8218 5631,8141 5808,8124 5801,8031 5697,8027 5632,8024 5570,8024
 	2::bomb 5808,8124 5909,8184 6003,8120
@@ -27405,11 +27406,11 @@ EOF
 	2::bomb 5911,8042 5801,8031
 	2::bomb 5651,8218 5730,8207
 	2::bomb 5813,7807 5813,7774
-	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5911,8042 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6306,7864 6293,7875
+	2::bomb 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5918,8221 5909,8184 5911,8042 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6431,7883 6306,7864 6293,7875
 	2::bomb 6306,7864 6317,7842 6332,7721
 	2::bomb 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366
 	2::bomb 6388,7999 6443,7971 6480,7992 6409,8026
-	2::bomb 6437,7968 6489,7908
+	2::bomb 6437,7968 6487,7916
 EOF
      },
      { from  => undef, # 
@@ -28192,9 +28193,9 @@ EOF
        source_id => '2147342598',
        data  => <<EOF,
 # REMOVED (Fahrbahn mittlerweile für alle gesperrt) --- #: next_check_id: FRIESEN-2018 --- #: XXX bleibt dieser Zustand tatsächlich so? --- #: last_checked: 2019-04-15
-	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962
-# REMOVED (hier nur Gehweg frei, allerdings siehe handicap-Eintrag)	q4::inwork::igndisp; 9799,8962 9801,8889
-# REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
+	q4::inwork::igndisp; 9801,9241 9802,9163 9803,9062 9804,8963
+# REMOVED (hier nur Gehweg frei, allerdings siehe handicap-Eintrag)	q4::inwork::igndisp; 9804,8963 9803,8890
+# REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9803,8890 9807,8682
 EOF
      },
      { from  => 1529612425, # 2018-06-21 22:20
@@ -28516,7 +28517,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-11 (mapillary)
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -32447,7 +32448,7 @@ Altstadt Spandau: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp:
 Altstadt Spandau: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask -3316,14169 -3409,14241
 Altstadt Spandau: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask -3150,14631 -3122,14557 -3107,14535 -3054,14498
 #: note ^^^
-Bergmannstr. (Kreuzberg): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252 9793,9241 9880,9233 9973,9232 10001,9234 10123,9233 10250,9233 10366,9233 10547,9233
+Bergmannstr. (Kreuzberg): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252 9801,9241 9880,9233 9973,9232 10001,9234 10123,9233 10250,9233 10366,9233 10547,9233
 Bölschestr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
 Friedrichstr. (Mitte): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9212,13471 9225,13389 9244,13253 9246,13240 9254,13171 9262,13111 9269,13060 9279,12953 9286,12886 9298,12765 9303,12718 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351 9369,12253 9373,12197 9384,12103 9393,12000 9405,11903 9418,11804 9432,11702 9444,11616 9456,11513 9468,11412 9474,11360 9478,11317
 Karl-Marx-Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 13236,6489 13200,6550 13141,6651 13121,6689 13117,6716 13085,6925 13072,7013 13068,7043 13058,7112 13051,7157 13043,7234 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471 12987,7560 12972,7602 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823,8028 12788,8101 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955 11831,8989
@@ -34649,6 +34650,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: S-SCHICHAUWEG-2021
+#: next_check_id: DRESDNERBAHN-2021
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
@@ -36551,7 +36553,7 @@ EOF
 # REMOVED --- #: also_indoor: traffic vvv --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: last_checked: 2022-11-13 vvv --- #: check_frequency: 60d vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
-Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
+Fidicinstr.	q3::inwork 9459,9019 9654,8991 9804,8963
 Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #Kopischstr.	q3::inwork 9477,9113 9459,9019
 #Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
@@ -37805,6 +37807,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BUCKOWERCHAUSSEE-2022
+#: next_check_id: DRESDNERBAHN-2021
 #: note: existiert auch in gesperrt-orig
 # REMOVED --- #: add_fragezeichen: Ist der Bahnübergang Buckower Chaussee noch für Radfahrer passierbar?
 	2::inwork 9123,533 9178,556
@@ -37905,8 +37908,8 @@ EOF
 EOF
      },
      { from  => 1670972400, # 2022-12-14 00:00
-       until => $isodate2epoch->("2024-05-17 17:00:00"), # 1704063599, # 2023-12-31 23:59
-       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 17.05.2024',
+       until => $isodate2epoch->("2024-05-27 17:00:00"), # 1704063599, # 2023-12-31 23:59
+       text  => 'Hindenburgdamm: zwischen Gélieustr. und Wolfensteindamm ist die Radspur wegen Bauarbeiten gesperrt, voraussichtlich bis 27.05.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HINDENBURGDAMM-2022
@@ -37915,7 +37918,7 @@ EOF
 #: by: https://nitter.it/VIZ_Berlin/status/1609823851797413888#m
 #: source_id: viz2021:13.315375,52.450057,04.12.2022,07:00 (hier ab 4.12.2022, mittlerweile inaktiv)
 #: source_id: viz2021:13.31955,52.45274,15.12.2022,10:03 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2024) (bis 17.05.2024)
+#: source_id: viz2021:13.315375,52.450057,15.12.2022,07:00 (bis 31.12.2023) (bis 29.03.2024) (bis 09.04.2024) (bis 17.05.2024) (bis 27.05.2024)
 #: source_id[inactive]: bvg2021:m85#BVG312983_0
 #: source_id[inactive]: bvg2021:m85#BVG312988_0
 #: note: Gesamtbaumaßnahme bis 2025 (laut rbb)
@@ -38010,6 +38013,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/nach-platzen-von-aquadom-kein-neues-aquarium-geplant-id220494
 #: by: https://berliner-abendblatt.de/berlin-news/nach-geplatztem-aquadom-sealife-aquarium-oeffnet-wieder-id221332
 #: by: https://www.berliner-woche.de/mitte/c-bauen/sea-life-wieder-geoeffnet_a381604
+#: by: https://berliner-abendblatt.de/berlin-news/vertikaler-garten-ersetzt-geplatztes-aquarium-in-hotel-id249572
 # REMOVED --- #: priority: #C --- #: last_checked: 2023-04-06 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-03-15
 	2::inwork 10359,12634 10351,12646 10305,12717
@@ -39605,11 +39609,11 @@ EOF
 EOF
      },
      { from  => 1687068000, # 2023-06-18 08:00
-       until => $isodate2epoch->("2024-05-10 16:00:00"),
+       until => 1712991060, # $isodate2epoch->("2024-05-10 16:00:00"),
        text  => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/23/077 (bis 10.05.2024) (bis 25.08.2023) (inaktiv) (bis 10.05.2024)
+#: source_id: LS/221-E/23/077 (bis 10.05.2024) (bis 25.08.2023) (inaktiv) (bis 10.05.2024) (inaktiv)
 	2::inwork -7332,66101 -7636,65571
 EOF
      },
@@ -41191,6 +41195,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STEGEWEG-2023
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
 #: last_checked: 2024-02-15 (Pressemitteilung)
 #: check_frequency: 90d
 	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
@@ -41358,7 +41363,7 @@ EOF
 #: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
-#: also_indoor: traffic (ex-G,ex-W)
+#: also_indoor: traffic (G,W)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: last_checked: 2024-03-20 vvv
 # REMOVED --- #: next_check: 2024-03-15 vvv
@@ -42322,8 +42327,8 @@ EOF
 #: source_id: bvg2021:x11#BVG344866_0
 #: source_id: viz2021:13.485035,52.448445,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
 #: source_id: viz2021:13.487099,52.451725,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
-#: source_id: viz2021:13.483847,52.447373,25.03.2024,07:00 (bis 12.04.2024)
-#: source_id: viz2021:13.48815,52.451415,25.03.2024,07:00 (bis 12.04.2024)
+#: source_id: viz2021:13.483847,52.447373,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
+#: source_id: viz2021:13.48815,52.451415,25.03.2024,07:00 (bis 12.04.2024) (inaktiv)
 #: note: laut Pressemitteilung ist der Rad- und Fußverkehr nicht beeinträchtigt, evtl. gibt es temporäre Radfahrer-frei-Schilder in der Johannisthaler Chaussee? deshalb: q4 -> q3
 #: note: außerdem Bauarbeiten im Königsheideweg zwischen Johannisthaler Chaussee und Haushoferstr., aber hier existiert ein Gehweg, der zumindest in einer Richtung für Radfahrer frei ist (und in der Praxis auch für die Gegenrichtung verwendet wird)
 #: last_checked: 2024-03-25 vvv
@@ -42367,7 +42372,7 @@ EOF
        text  => 'Batzlow - Möglin: Bauarbeiten, Sperrung, vom 25.03.2024 bis 12.04.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/045 (bis 12.04.2024)
+#: source_id: LS/221-F/24/045 (bis 12.04.2024) (inaktiv)
 	2::inwork 58086,29081 58143,28039 58283,27690 58784,26700
 EOF
      },
@@ -42551,22 +42556,28 @@ EOF
 EOF
      },
      { from  => 1712683045, # 2024-04-09 19:17
-       until => undef,
-       text  => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs',
-       type  => 'gesperrt',
+       until => $isodate2epoch->("2024-04-30 18:00:00"),
+       text  => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis Ende April 2024',
+       type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778015024818094305
 #: by: https://www.rbb24.de/panorama/beitrag/2024/04/berlin-schoeneberg-risse-hauswand-feuerwehr-polizei.html
 #: by: https://www.tagesspiegel.de/berlin/mietshaus-in-berlin-schoneberg-evakuiert-absenkungen-risse-in-den-wanden-einsturzgefahr-11494301.html
-#: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778682517517631737 (voraussichtlich bis Ende April 2024)
+#: by: https://berliner-abendblatt.de/berlin-news/risse-an-fassade-von-schoeneberger-wohnhaus-einsturzgefahr-id249463
+#: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
 #: source_id: bvg2021:n7#BVG346248_0
-#: also_indoor: traffic (B)
-#: XXX Wann wird die Sperrung wieder aufgehoben? vvv
-#: next_check: 2024-04-12 vvv
-	2::inwork 7007,9220 6994,9288 7118,9315
-	2::inwork 7002,9526 6994,9288 6921,9275
+#: also_indoor: traffic (B,H,G,W)
+#: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
+#: last_checked: 2024-04-13 vvv
+#: next_check: 2024-04-30 vvv
+	q4::inwork 7007,9220 6994,9288
+	q3::inwork 6994,9288 7118,9315
+	q3::inwork 7002,9526 6994,9288
+# REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
 #: next_check ^^^
-#: XXX ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1713074400, # 2024-04-14 08:00
