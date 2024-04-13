@@ -88,9 +88,17 @@ GetOptions(
 # XXX allow multiple search terms? do or/and searches?
 my $searchterm = shift
     or die "usage? searchterm missing";
+my $original_searchterm = $searchterm;
 
 if ($searchterm_type eq 'fixed') {
     $searchterm = quotemeta($searchterm);
+}
+# maybe do this conditional/with option?
+# str. <-> straße
+$searchterm =~ s{(?<=[sS]tr)\\\.}{(\\.|aße)}g;
+$searchterm =~ s{(?<=[sS]tr)aße}{(\\.|aße)}g;
+if ($searchterm ne $original_searchterm) {
+    debug "searchterm was changed from '$original_searchterm' to '$searchterm'";
 }
 my $search_rx = $case_insens ? qr{$searchterm}i : qr{$searchterm};
 
@@ -153,12 +161,6 @@ sub do_search {
 }
 
 do_search();
-if (!$hits) {
-    if ($search_rx =~ s/([sS]tr)aße/$1/) {
-	warn "INFO: try search again after transforming straße -> str...\n" if $debug;
-	do_search();
-    }
-}
 
 if (@removed_lines) {
     print @removed_lines;
