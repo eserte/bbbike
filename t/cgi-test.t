@@ -12,7 +12,6 @@ BEGIN {
 		    ['HTML::Form'],
 		    ['LWP::UserAgent'],
 		    ['Test::More'],
-		    ['URI::Escape', qw(uri_escape)],
 		   ) {
 	my($mod, @imports) = @$moddef;
 	my $use_code = "use $mod" . (@imports ? ' qw(' . join(' ', @imports) . ')' : '') . '; 1';
@@ -322,7 +321,7 @@ TODO: {
 
 {
     # multiple cityparts
-    my $resp = bbbike_cgi_geocode +{start => uri_escape('gürtelstr')}, 'multi cityparts';
+    my $resp = bbbike_cgi_geocode +{start => 'gürtelstr'}, 'multi cityparts';
     my $content = $resp->decoded_content;
     like_html $content, qr{value="Gürtelstr.!Friedrichshain, Lichtenberg!}, 'first alternative';
     like_html $content, qr{value="Gürtelstr.!Prenzlauer Berg, Weißensee!}, 'second alternative';
