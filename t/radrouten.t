@@ -34,7 +34,7 @@ if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
 
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing like_html $mapserverstaticurl);
+use BBBikeTest qw(check_cgi_testing like_html $mapserverstaticurl my_note);
 
 check_cgi_testing;
 
@@ -104,9 +104,7 @@ if ($test_matching) {
     @test_defs = grep { $_->{name} =~ $test_matching } @test_defs;
 } elsif (!$test_all) {
     @test_defs = $test_defs[rand($#test_defs)];
-    if (defined &note) {
-	note("Without -test-all or BBBIKE_LONG_TESTS picking only one random test case...");
-    }
+    my_note "Without -test-all or BBBIKE_LONG_TESTS picking only one random test case...";
 }
 
 for my $test_def (@test_defs) {

@@ -66,6 +66,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      get_cgi_config selenium_diag noskip_diag
 	      pdfinfo
 	      checkpoint_apache_errorlogs output_apache_errorslogs
+	      my_note
 	    ),
 	   @opt_vars);
 
@@ -1304,6 +1305,15 @@ sub pdfinfo ($) {
 		}
 	    }
 	}
+    }
+}
+
+sub my_note (@) {
+    my(@notes) = @_;
+    if (defined &Test::More::note) {
+	Test::More::note(@notes);
+    } else {
+	Test::More::diag(@notes);
     }
 }
 

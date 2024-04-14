@@ -47,13 +47,11 @@ use Image::Info qw(image_info);
 use BBBikeUtil qw(bbbike_root);
 use Strassen::Core;
 
-use BBBikeTest qw(check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs eq_or_diff);
+use BBBikeTest qw(check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs eq_or_diff my_note);
 
 check_cgi_testing;
 
 plan 'no_plan'; # possible variable number of files in data, especially in -long mode
-
-if (!defined &note) { *note = \&diag } # old Test::More compat
 
 my $htmldir   = $ENV{BBBIKE_TEST_HTMLDIR} || 'http://localhost/bbbike';
 my $long_test = $ENV{BBBIKE_LONG_TESTS};
@@ -205,13 +203,13 @@ EOF
 	}
     }
     if (%compressed_ct) {
-	note "The following Content-Types are compressed: " . join(", ", sort keys %compressed_ct);
+	my_note "The following Content-Types are compressed: " . join(", ", sort keys %compressed_ct);
     }
     if (%uncompressed_ct) {
-	note "The following Content-Types are uncompressed: " . join(", ", sort keys %uncompressed_ct);
+	my_note "The following Content-Types are uncompressed: " . join(", ", sort keys %uncompressed_ct);
     }
     if (%mixed_compression_ct) {
-	note "The following Content-Types are sometimes compressed, sometimes uncompressed: " . join(", ", sort keys %mixed_compression_ct);
+	my_note "The following Content-Types are sometimes compressed, sometimes uncompressed: " . join(", ", sort keys %mixed_compression_ct);
     }
 }
 
