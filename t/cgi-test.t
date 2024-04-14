@@ -39,6 +39,7 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  validate_bbbikecgires_xml_string
 		  validate_bbbikecgires_data
 		  libxml_parse_html_or_skip eq_or_diff
+		  $debug
 		);
 
 sub bbbike_cgi_search ($$;$);
@@ -57,7 +58,7 @@ my $yaml_tests = 6;
 #plan 'no_plan';
 plan tests => 213 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
 
-if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
+if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
     die "usage!";
 }
@@ -837,6 +838,7 @@ sub _bbbike_cgi_geocode ($$) {
     my $testcgi = _bbbike_lang_cgi $cgiopts;
     $params->{pref_seen} = 0;
     my $url = $testcgi . '?' . CGI->new($params)->query_string;
+    diag "url for _bbbike_cgi_geocode: $url" if $debug;
     my $resp = $ua->get($url);
     ok($resp->is_success, $testname);
     $resp;
