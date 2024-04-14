@@ -287,7 +287,7 @@ TODO: {
 				   }, 'Inofficial street';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
-    like $content, qr{\Q(Rosengarten}, 'Found Rosengarten with parenthesis';
+    like_html $content, qr{\Q(Rosengarten}, 'Found Rosengarten with parenthesis';
 }
 
 {
@@ -297,7 +297,7 @@ TODO: {
 				   }, 'oldname';
     not_on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
-    like $content, qr{Rudi-Dutschke-Str.*alter Name.*Kochstr}, 'Found old name note';
+    like_html $content, qr{Rudi-Dutschke-Str.*alter Name.*Kochstr}, 'Found old name note';
 }
 
 {
@@ -307,7 +307,7 @@ TODO: {
 				   }, 'oldname (English)';
     not_on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
-    like $content, qr{Rudi-Dutschke-Str.*old name.*Kochstr}, 'Found old name note (English)';
+    like_html $content, qr{Rudi-Dutschke-Str.*old name.*Kochstr}, 'Found old name note (English)';
 }
 
 {
@@ -317,15 +317,15 @@ TODO: {
 				   }, 'oldname (unique)';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
-    like $content, qr{Mehringdamm.*alter Name.*Belle-Alliance-Str.}, 'Found old name note';
+    like_html $content, qr{Mehringdamm.*alter Name.*Belle-Alliance-Str.}, 'Found old name note';
 }
 
 {
     # multiple cityparts
     my $resp = bbbike_cgi_geocode +{start => uri_escape('gürtelstr')}, 'multi cityparts';
     my $content = $resp->decoded_content;
-    like $content, qr{value="Gürtelstr.!Friedrichshain, Lichtenberg!}, 'first alternative';
-    like $content, qr{value="Gürtelstr.!Prenzlauer Berg, Weißensee!}, 'second alternative';
+    like_html $content, qr{value="Gürtelstr.!Friedrichshain, Lichtenberg!}, 'first alternative';
+    like_html $content, qr{value="Gürtelstr.!Prenzlauer Berg, Weißensee!}, 'second alternative';
  SKIP: {
 	my $doc = libxml_parse_html_or_skip 3, $content;
 	my @radio_nodes = $doc->findnodes('//input[@type="radio" and @name="start2"]');
