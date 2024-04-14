@@ -56,7 +56,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_tests = 6;
 #plan 'no_plan';
-plan tests => 212 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
+plan tests => 213 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -182,10 +182,10 @@ SKIP: {
 }
 
 {
-    my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachstr.',
-				    ziel => 'Maybachstr./Schinkestr.',
+    my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachufer',
+				    ziel => 'Maybachufer/Schinkestr.',
 				   }, 'Find streets with crossing notation';
-    on_crossing_pref_page($resp);
+    on_pref_page_without_crossing($resp);
 }
 
 {
@@ -856,6 +856,14 @@ sub on_crossing_pref_page {
     my($resp) = @_;
     local $Test::Builder::Level = $Test::Builder::Level + 1;
     like_html($resp->decoded_content, qr{(?:Genaue Kreuzung angeben|Choose crossing):}, 'On crossing/pref page');
+}
+
+sub on_pref_page_without_crossing {
+    my($resp) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    my $content = $resp->decoded_content;
+    unlike_html($content, qr{(?:Genaue Kreuzung angeben|Choose crossing):}, 'Crossing is already set');
+    like_html($content, qr{(?:Einstellungen|Preferences)}, 'On pref page');
 }
 
 sub not_on_crossing_pref_page {
