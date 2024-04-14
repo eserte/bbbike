@@ -4717,7 +4717,18 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147345063 (inaktiv)
+# REMOVED (mittlerweile auch bei fritz "nicht betroffen") --- #: add_fragezeichen: Ist die Unterführung tatsächlich für Radfahrer und Fußgänger gesperrt? --- #: XXX Widersprüchliche Angaben bei fritz (auch betroffen) und vmz (nicht betroffen) --- #: XXX auch widersprücliche Angaben zum Ende: fritz Ende August 2020, vmz Ende Januar 2020
+#: source_id: viz2021:13.472953,52.616993,15.04.2024,06:00 (bis 19.04.2024)
+	2::inwork 14756,23622 14776,23612
+',
+         'from' => 1713119808,
+         'id' => 3194,
+         'text' => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1713538800
+       },
        undef,
        undef,
        undef,
@@ -5875,10 +5886,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024)
-# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
-#: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
-#: last_checked: 2024-02-13 vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
+#: last_checked: 2024-04-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
@@ -5898,9 +5908,9 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
          'from' => 1656799200,
          'id' => 3579,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich noch bis 30.04.2024',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis 30.04.2024',
          'type' => 'handicap',
-         'until' => 1714489200
+         'until' => undef
        },
        undef,
        undef,
@@ -6242,6 +6252,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.tagesspiegel.de/berlin/bezirke/erfolg-fur-berliner-burgerinitiative-gericht-bremst-hochhausprojekt-schoneberger-eck-11038744.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/hochhaus-am-barbarossadreieck-darf-derzeit-nicht-weitergebaut-werden_a405579
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sch%C3%B6neberger-eck.652/page-3#post-22745
+#: by: http://www.deal-magazin.com/news/3/133880/Berlin-Bauarbeiten-fuer-Buerohochhaus-Schoeneberger-Eck-gehen-weiter (Fertigstellung nun Mitte 2025)
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -6250,7 +6261,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="1182385049" version="1"
 #: last_checked: 2024-04-06 (architektur-urbanistik)
 #: check_frequency: 150d
-#: next_check: 2025-01-05
+#: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
 ',
          'from' => undef,
@@ -6997,7 +7008,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-04-07
+#: last_checked: 2024-04-14
 #: next_check: 2024-06-30
 	q3::inwork 12632,12630 12690,12769
 ',
@@ -7597,13 +7608,13 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-03-17 (mapillary)
+#: last_checked: 2024-04-14
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 9462,18234 9460,18053
 ',
          'from' => 1699340417,
          'id' => 3959,
-         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte März 2024: Sperrung besteht weiterhin)',
+         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte April 2024: Sperrung besteht weiterhin)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8146,7 +8157,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2024-03-29 (mapillary) vvv
+#: last_checked: 2024-04-13 (mapillary) vvv
 #: check_frequency: 60d vvv
 	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
 	q4::inwork 8164,15840 8140,15859

@@ -23451,7 +23451,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022477',
        data  => <<EOF,
-	q4::inwork; 10758,17288 10706,17391 10690,17420 10670,17458 10647,17501 10573,17566 10495,17658 10448,17751
+	q4::inwork; 10758,17288 10706,17391 10690,17420 10679,17441 10670,17458 10647,17501 10573,17566 10495,17658 10448,17751
 EOF
      },
      { from  => 1391682540, # 2014-02-06 11:29
@@ -31024,13 +31024,15 @@ EOF
 	2::inwork 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718
 EOF
      },
-     { from  => 1576623600, # 2019-12-18 00:00
-       until => 1576787365, # 1598911199, # 2020-08-31 23:59
-       text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, evtl. auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
+     { from  => 1713119808, # 1576623600, # 2019-12-18 00:00
+       until => $isodate2epoch->("2024-04-19 17:00:00"), # 1576787365, # 1598911199, # 2020-08-31 23:59
+       #text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, evtl. auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
+       text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 2147345063
+#: source_id: 2147345063 (inaktiv)
 # REMOVED (mittlerweile auch bei fritz "nicht betroffen") --- #: add_fragezeichen: Ist die Unterführung tatsächlich für Radfahrer und Fußgänger gesperrt? --- #: XXX Widersprüchliche Angaben bei fritz (auch betroffen) und vmz (nicht betroffen) --- #: XXX auch widersprücliche Angaben zum Ende: fritz Ende August 2020, vmz Ende Januar 2020
+#: source_id: viz2021:13.472953,52.616993,15.04.2024,06:00 (bis 19.04.2024)
 	2::inwork 14756,23622 14776,23612
 EOF
      },
@@ -33407,7 +33409,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet? --- #: last_checked: 2021-06-25 (daf) --- #: check_frequency: 30d
-	2::inwork 7236,19689 7273,19682 7308,19653 7435,19547 7446,19522 7504,19459
+	2::inwork 7236,19689 7266,19686 7308,19653 7431,19545 7446,19522 7489,19481 7504,19459
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 00:00:00"),
@@ -36171,8 +36173,8 @@ EOF
 EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
-       until => $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich noch bis 30.04.2024', # früher: nur bis Amalienstr.
+       until => undef, # $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis 30.04.2024', # früher: nur bis Amalienstr.
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
@@ -36187,10 +36189,9 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024)
-# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: add_fragezeichen: Wurde die Baustelle bis zur Paul-Oestreich-Str. erweitert?
-#: XXX laut VIZ-Verkehrsmeldung Bauarbeiten ab Paul-Oestreich-Str., stimmt das, wurde die Baustelle erweitert?
-#: last_checked: 2024-02-13 vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
+#: last_checked: 2024-04-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-04-30 vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
@@ -37552,6 +37553,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/erfolg-fur-berliner-burgerinitiative-gericht-bremst-hochhausprojekt-schoneberger-eck-11038744.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/hochhaus-am-barbarossadreieck-darf-derzeit-nicht-weitergebaut-werden_a405579
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sch%C3%B6neberger-eck.652/page-3#post-22745
+#: by: http://www.deal-magazin.com/news/3/133880/Berlin-Bauarbeiten-fuer-Buerohochhaus-Schoeneberger-Eck-gehen-weiter (Fertigstellung nun Mitte 2025)
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -37560,7 +37562,7 @@ EOF
 #: osm_watch: way id="1182385049" version="1"
 #: last_checked: 2024-04-06 (architektur-urbanistik)
 #: check_frequency: 150d
-#: next_check: 2025-01-05
+#: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
 EOF
      },
@@ -39699,7 +39701,7 @@ EOF
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-04-07
+#: last_checked: 2024-04-14
 #: next_check: 2024-06-30
 	q3::inwork 12632,12630 12690,12769
 EOF
@@ -41389,13 +41391,13 @@ EOF
      { from  => 1699340417, # 2023-11-07 08:00
        until => undef, # 1704063600, # 2024-01-01 00:00
        #text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023, vermutlich noch länger',
-       text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte März 2024: Sperrung besteht weiterhin)',
+       text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte April 2024: Sperrung besteht weiterhin)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-03-17 (mapillary)
+#: last_checked: 2024-04-14
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 9462,18234 9460,18053
 EOF
@@ -42483,7 +42485,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2024-03-29 (mapillary) vvv
+#: last_checked: 2024-04-13 (mapillary) vvv
 #: check_frequency: 60d vvv
 	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
 	q4::inwork 8164,15840 8140,15859

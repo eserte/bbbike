@@ -747,7 +747,7 @@ Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8716 4456,8598
 Thulestr.: Asphalt	Q0 11630,16623 11534,16622 11440,16622
 Thulestr.: Kopfsteinpflaster	Q2 11440,16622 11356,16619 11279,16617 11021,16605
 #: note: ADFC-Karte sagt hier: mäßig geeignet
-Granitzstr.: Asphalt	Q0 10849,17848 10894,17864 10922,17886 10934,17896 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482 11950,18529
+Granitzstr.: Asphalt	Q0 10849,17848 10894,17864 10922,17886 10934,17896 11253,18168 11277,18186 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482 11950,18529
 Stargardtstr.: Gehwegplatten	Q0- 7033,17692 7162,17737 7212,17756
 Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 # 
@@ -812,7 +812,7 @@ An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 
 # REMOVED (nein) --- #: osm_watch: way id="54892571" version="9"
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
 # REMOVED (nein) --- #: osm_watch: way id="281068350" version="5"
-An der Nordbahn: mäßiger Asphalt	Q1- 7504,19459 7415,19535 7236,19689 6680,20165 6395,20413
+An der Nordbahn: mäßiger Asphalt	Q1- 7504,19459 7466,19492 7236,19689 6680,20165 6395,20413
 # 
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4719,11206 4775,11203
@@ -1009,7 +1009,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2024-04-09 (mapillary)
+#: last_checked: 2024-04-14
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -6437,8 +6437,10 @@ Etzelstr.: Beton	Q1 8555,19648 8603,19569
 Woglindestr.: Beton	Q1 8476,19603 8516,19535
 Straße 90: unbefestigte Straße	Q2 8573,19766 8642,19808
 Frickastr.: unbefestigte Straße	Q2 8642,19808 8560,19942
+#: add_fragezeichen: Ist hier auch asphaltiert?
 Neuer Steg: unbefestigter Weg	Q2 8277,19210 8209,19107
-Neuer Steg: unbefestigter Weg	Q2 8211,19082 8194,19055
+#: historical_note: früher (bis 2023/2024): unbefestigter Weg, Q2
+Neuer Steg: Asphalt	Q0 8211,19082 8194,19055
 # REMOVED (ja) --- #: XXX wurde hier auch asphaltiert?
 #: historical_note: früher: mäßiger Asphalt und Schotter, Q2 
 Straße 79: Asphalt	Q0 7877,19507 7801,19361 7793,19346
@@ -6446,26 +6448,25 @@ Straße 79: Asphalt	Q0 7877,19507 7801,19361 7793,19346
 Mittelsteg: Asphalt	Q0 8340,18984 8247,19054
 #: corrected_by: mapillary (Schotterstraße, Q2 -> ...)
 Mittelsteg: Asphalt	Q0 8056,19216 7981,19269 7930,19282 7801,19361
-#: by: https://www.berliner-woche.de/niederschoenhausen/c-bauen/irgendwann-sollen-alle-stege-ausgebaut-sein_a298643
-#: XXX wann wird der Rest asphaltiert? werden auch die umliegenden Straßen asphaltiert? vvv
-#: osm_watch: way id="56096800" version="8"
-#: check_frequency: 180d vvv
-#: last_checked: 2023-03-18
-Mittelsteg: Schotterstraße	Q2+ 8247,19054 8211,19082 8209,19107 8136,19159
-#: last_checked: 2023-08-18 (mapillary)
-Mittelsteg: Schotterstraße	Q2 8136,19159 8056,19216
-#: check_frequency ^^^
-#: XXX ^^^
+# REMOVED --- #: by: https://www.berliner-woche.de/niederschoenhausen/c-bauen/irgendwann-sollen-alle-stege-ausgebaut-sein_a298643 --- #: XXX wann wird der Rest asphaltiert? werden auch die umliegenden Straßen asphaltiert? vvv --- #: osm_watch: way id="56096800" version="8" --- #: check_frequency: 180d vvv --- #: last_checked: 2023-03-18
+#: historical_note: früher (bis 2023/2024): Schotterstraße, Q2+
+Mittelsteg: Asphalt	Q0 8247,19054 8211,19082 8209,19107 8136,19159
+# REMOVED --- #: last_checked: 2023-08-18 (mapillary)
+#: historical_note: früher (bis 2023/2024): Schotterstraße, Q2
+Mittelsteg: Asphalt	Q0 8136,19159 8056,19216
+# REMOVED --- #: check_frequency ^^^ --- #: XXX ^^^
 #: historical_note: früher: unbefestigter Weg, Q2
 Kreuzsteg: Asphalt	Q0 8099,19276 8056,19216
 # REMOVED (ja) --- #: XXX wurde hier auch schon asphaltiert?
 #: historical_note: früher: unbefestigter Weg, Q2
 Friedensteg: Asphalt	Q0 8029,19353 7981,19269 7959,19231
 Kreuzsteg: Asphalt	Q0 8056,19216 8025,19157
-Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
+#: historical_note: früher (bis 2023/2024): unbefestigter Weg, Q2
+Feldsteg: Asphalt	Q0 8136,19159 8106,19110
 #: corrected_by: mapillary (unbefestigte Straße, Q2 -> ...)
 Vereinssteg: Asphalt	Q0  8412,19074 8340,18984
-Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
+#: historical_note: früher (bis 2023/2024): unbefestigte Straße, Q2
+Vereinssteg: Asphalt	Q0 8340,18984 8321,18954
 # 
 #: next_check_id: STRASSEVORSCHOENHOLZ-2019
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.826050.php
@@ -6483,8 +6484,8 @@ Straße 201: Asphalt	Q1 9529,18815 9511,18785 9366,18669
 Kleine Homeyerstr.: mäßiger Beton	Q1- 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
 Elisabethweg: schlechtes Kopfsteinpflaster	Q3 10359,18646 10336,18701 10474,18785
 Wollankstr.: Asphalt	Q0 9618,17693 9660,17736 9721,17806 9787,17880 9818,17921 9858,17967 9978,18104 10027,18165 10089,18180
-Killisch-von-Horn-Weg: Asphalt	Q0 9590,18082 9707,17941 9730,17927
-Pichelswerderstr. (Pankow): schlechtes Kopfsteinpflaster	Q3 9787,17880 9730,17927
+Killisch-von-Horn-Weg: Asphalt	Q0 9590,18082 9694,17960 9695,17945 9719,17926
+Pichelswerderstr. (Pankow): schlechtes Kopfsteinpflaster	Q3 9787,17880 9719,17926
 Brennerstr.: Asphalt	Q1- 10228,17025 10495,17022
 Dolomitenstr.: Asphalt	Q0- 10228,17231 10198,17196
 Dolomitenstr.: Asphalt	Q0;Q0- 10198,17196 10114,17098 10013,16972
@@ -11285,7 +11286,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2024-02-21 vvv
+#: last_checked: 2024-04-14 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -13013,7 +13014,7 @@ Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -941,14637
 #: next_check_id: TEGELERBRUECKE-2021
 (provisorische Umleitung): Asphalt	Q0 -192,16054 -174,16084
-(An der Nordbahn): Asphalt	Q0 7236,19689 7273,19682 7308,19653 7435,19547 7446,19522 7504,19459
+(An der Nordbahn): Asphalt	Q0 7236,19689 7266,19686 7308,19653 7431,19545 7446,19522 7489,19481 7504,19459
 (Wohngebiet an der Kopenhagener Str.): Asphalt	Q0 7578,19648 7546,19665 7578,19753
 Heubudenbrücke: Holzbohlen	Q1- 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
@@ -15432,7 +15433,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10373,18887 10358,18882
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: osm_watch: way id="4764684" version="32"
 #: osm_watch: way id="26790073" version="20"
-#: last_checked: 2024-03-15 (twitter)
+#: last_checked: 2024-04-14
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^
@@ -16561,7 +16562,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2024-03-23
+#: last_checked: 2024-04-14
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -18364,7 +18365,10 @@ Bacharacher Str.: Asphalt	Q0 11304,6147 11339,6341 11339,6351 11344,6572
 #: note: ADFC-Karte meint hier "mäßig geeignet"
 #: corrected_by: srt (neu gemacht)
 Friesenstr. (Niederschönhausen): Asphalt	Q0 8765,19288 8834,19253
-Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q2- 8834,19253 8944,19197 9458,18859
+#: confirmed_by: srt
+Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q2- 8834,19253 9052,19144 9142,19064
+#: corrected_by: srt (schlechter Sandweg mit vielen Schlaglöchern, Q2- -> ...)
+Friesenstr. (Niederschönhausen): unbefestigter Weg, etwas Schotter	Q2 9142,19064 9458,18859
 #: corrected_by: srt (neu gemacht)
 (Schönholzer Heide, parallel zur Friesenstr.): Asphalt	Q0 8834,19253 8830,19239
 (Schönholzer Heide, parallel zur Friesenstr.): fester Sandweg	Q1- 8791,19249 8830,19239
@@ -33045,4 +33049,5 @@ Kreuzungsbereich asphaltiert	Q0 24696,13120
 Einmündungsbereich asphaltiert	Q0 24775,13218
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 5347,8732
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 20689,1613
+Einmündungsbereich asphaltiert	Q0 9410,18021
 #: ignore ^^^

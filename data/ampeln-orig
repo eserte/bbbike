@@ -7,6 +7,11 @@
 # 
 #: temporary vvv
 # 
+#: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024)
+#: next_check: 2024-07-12
+#: valid: -20240712
+Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16425,6445
+# 
 #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192
 #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt)
@@ -276,16 +281,17 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
 #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv) vvv
-# REMOVED (inaktiv) --- #: last_checked: 2024-02-04 (mapillary)
-# REMOVED (inaktiv) --- #: next_check: 2024-02-28
-# REMOVED (inaktiv) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8234,19936
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8311,19458
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558
 #: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
-#: next_check: 2024-05-24
+#: last_checked: 2024-04-14 vvv
+#: next_check: 2024-05-24 vvv
+Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
+#: next_check ^^^
+#: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: source_id ^^^
@@ -300,7 +306,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2023-12-09 (mapillary)
+#: last_checked: 2024-04-14
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -995,6 +1001,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10971,16907
 	X 9442,16610
 	X 10228,18196
+#: note: Anforderungsampel für Radfahrer Richtung Süden (2x)
 	X 10680,18380
 #: note: Anforderungsampel für Radfahrer und Fußgänger aus Richtung Neue Schönholzer Str.
 	X 10089,18180
@@ -2103,6 +2110,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8759,16684
 	X 9082,16982
 	X 8677,17154
+#: note: Anforderungsampel für Radfahrer aus der Florastr.
 	X 9721,17806
 	X 11630,16623
 # REMOVED (wurde verlegt) ---	F 11548,16079

@@ -961,7 +961,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-04-09
+#: last_checked: 2024-04-14
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3206,7 +3206,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-02-28 vvv
+#: last_checked: 2024-04-14 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4941,8 +4941,6 @@ betoniert, außerdem existiert eine asphaltierte Nebenfahrbahn	RW1; 22388,12190 2
 # REMOVED (gibt es nicht mehr) --- Busspur gilt 6-18 Uhr	RW5; 18555,12101 18411,12100
 	RW3;RW3 18215,12123 18296,12115
 	RW4;RW4 18296,12115 18411,12100 18555,12101
-Verbundsteinpflaster	RW1;RW2 10849,17848 10894,17864 10922,17886 10934,17896
-	RW1; 10934,17896 11253,18168
 	RW1;RW1 12901,14093 12972,14173 12992,14196 13026,14234
 	RW1;RW3 13026,14234 13057,14267
 	RW4;RW4 16122,6084 16169,6064 16510,5917 16868,5938
@@ -5844,7 +5842,9 @@ asphaltiert	RW1;RW1 18934,2703 18941,2609 18929,2454
 #: confirmed_by: srt (und Benutzungspflicht hinzugefügt) (mittlerweile fehlt das Schild, also nur noch RW3)
 die ersten 50 Meter sind Busspur, danach folgt die Radspur	RW3; 13078,15586 12903,15695
 die letzten 50 Meter sind benutzungspflichtig	RW3; 12903,15695 13078,15586
-	RW3;RW3 12903,15695 12721,15807
+	RW3; 12903,15695 12764,15780
+Fahrradschleuse	RW3; 12764,15780 12721,15807
+	RW3; 12721,15807 12764,15780 12903,15695
 	RW4; 8917,15851 8886,15799 8596,15427
 	RW3; 8557,15373 8456,15235
 nur 50cm breit	RW3; 8456,15235 8557,15373
@@ -7424,7 +7424,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-04-08 vvv
+#: last_checked: 2024-04-14 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7518,7 +7518,9 @@ Grünbeschichtung	RW3;RW3 3119,10386 3111,10116 3108,10069
 Grünbeschichtung	RW3;RW3 3108,10069 3092,9886
 # 
 asphaltiert	RW1;RW9 -1872,24336 -1953,24435 -1982,24514
-	RW3; 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
+Verbundsteinpflaster	RW1;RW2 10849,17848 10894,17864 10922,17886 10934,17896
+Verbundsteinpflaster	RW1; 10934,17896 11253,18168 11277,18186
+	RW3; 11277,18186 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 	RW4; 10195,19703 10182,19746
 asphaltiertes Straßenbahnkap	RW2; 10182,19746 10167,19797
 	RW4; 10167,19797 10156,19860 10134,19981 10120,20064 10104,20092 10095,20108 10078,20140 10072,20188
@@ -7591,6 +7593,7 @@ asphaltiertes Straßenbahnkap	RW2; 16331,15486 16356,15508 16386,15536
 asphaltiertes Straßenbahnkap	RW1; 16666,15781 16692,15803 16724,15830
 	RW3; 16724,15830 16741,15845 16819,15912 16842,15932 16941,16021
 	RW0; 16941,16021 16961,16042
+auf den letzten Metern ein asphaltierter Radweg	RW0; 9835,17797 9721,17806
 #######################################################
 	RW6;RW6 12873,8218 12805,8194 12779,8188 12797,8168
 	RW3; 1368,-1 1345,184
