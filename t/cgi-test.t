@@ -834,6 +834,7 @@ sub bbbike_en_cgi_geocode ($$) {
 
 sub _bbbike_cgi_geocode ($$) {
     my($cgiopts, $params, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     my $testcgi = _bbbike_lang_cgi $cgiopts;
     $params->{pref_seen} = 0;
     my $url = $testcgi . '?' . CGI->new($params)->query_string;
@@ -853,16 +854,19 @@ sub _bbbike_lang_cgi ($) {
 
 sub on_crossing_pref_page {
     my($resp) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     like_html($resp->decoded_content, qr{(?:Genaue Kreuzung angeben|Choose crossing):}, 'On crossing/pref page');
 }
 
 sub not_on_crossing_pref_page {
     my($resp) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     unlike_html($resp->decoded_content, qr{(?:Genaue Kreuzung angeben|Choose crossing):}, 'Not on crossing/pref page');
 }
 
 sub on_routelist_page {
     my($resp) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     like_html($resp->decoded_content, qr{Route von .* bis}, 'On routelist page (title)');
     like_html($resp->decoded_content, qr{Fahrzeit}, 'On routelist page (Fahrzeit)');
 }
