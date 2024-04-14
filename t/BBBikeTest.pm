@@ -69,7 +69,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	    ),
 	   @opt_vars);
 
-$logfile = ($ENV{HOME}||'').'/www/log/bbbike.hosteurope2012/bbbike.de_access.log';
+$logfile = ($ENV{HOME}||'').'/www/log/bbbike.hosteurope2017/bbbike.de_access.log';
 
 my $testdir = dirname(File::Spec->rel2abs(__FILE__));
 
