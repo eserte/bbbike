@@ -1169,12 +1169,16 @@ sub get_cgi_config (;@) {
     my $respref = delete $opts{resp};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
-    require JSON::XS;
+    my $decode_json = eval { require JSON::XS; \&JSON::XS::decode_json };
+    $decode_json    = eval { require JSON::PP; \&JSON::PP::decode_json } if !$decode_json;
+    if (!$decode_json) {
+	die "Neither JSON::XS nor JSON::PP available, cannot decode bbbike.cgi config";
+    }
 
     my $url = $_cgiurl . "?api=config";
     my $resp = $ua->get($url);
     if ($respref) { $$respref = $resp }
-    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
+    my $data = $decode_json->($resp->decoded_content(charset => 'none'));
     $data;
 }
 
