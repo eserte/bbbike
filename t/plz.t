@@ -94,7 +94,7 @@ if (!GetOptions("create!" => \$create,
 if ($create) {
     plan 'no_plan';
 } else {
-    plan tests => 179 + scalar(@approx_tests)*4;
+    plan tests => 187 + scalar(@approx_tests)*4;
 }
 
 # XXX auch Test mit ! -small
@@ -251,6 +251,38 @@ for my $noextern (@extern_order) {
 	is($friedenau_schoeneberg->[PLZ::LOOK_NAME], "Hauptstr.");
 	is($friedenau_schoeneberg->[PLZ::LOOK_CITYPART], "Friedenau, Sch\366neberg");
 	is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159", "Check PLZ");
+
+	{
+	    local $TODO;
+	    if (!$noextern && $^O eq 'MSWin32') {
+		$TODO = 'For some reason fails on MSWin32';
+	    }
+
+	    @res = $plz->look('Öschelbronner Weg', Noextern => $noextern);
+	    is(scalar @res, 1, "just one hit for Oeschelbronner Weg (noextern=$noextern)")
+		or diag $dump->(\@res);
+	    is $res[0]->[0], 'Öschelbronner Weg'
+		or diag $dump->(\@res);
+	}
+
+	{
+	    local $TODO;
+	    if (!$noextern) {
+		$TODO = 'locale wrong for grep -i';
+	    } else {
+		use locale;
+		if ("\xdc" !~ /\xfc/i) {
+		    no warnings 'uninitialized';
+		    $TODO = "Current locale (LC_ALL=$ENV{LC_ALL}, LANG=$ENV{LANG}, LC_CTYPE=$ENV{LC_CTYPE}) does not support -i correctly";
+		}
+	    }
+
+	    @res = $plz->look('öschelbronner Weg', Noextern => $noextern);
+	    is(scalar @res, 1, "just one hit for oeschelbronner Weg (lowercase) (noextern=$noextern)")
+		or diag $dump->(\@res);
+	    is $res[0]->[0], 'Öschelbronner Weg'
+		or diag $dump->(\@res);
+	}
 
 	@res = grep { defined $_->[PLZ::LOOK_COORD] } $plz->look("Am Nordgraben", MultiCitypart => 1, MultiZIP => 1);
 	is(scalar @res, 5, "Hits for Am Nordgraben. with MultiCitypart")
