@@ -42,7 +42,12 @@ my $extern = 1;
 my $forward = 0;
 my $v;
 
-my $codeset = langinfo(CODESET());
+my $codeset;
+if ($ENV{LC_ALL} eq 'C') { # C is often just set to force non-unicode semantics, not really denoting the terminal characteristics
+    $codeset = 'UTF-8';
+} else {
+    $codeset = langinfo(CODESET());
+}
 $codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
 binmode STDOUT, ":encoding($codeset)";
 binmode STDERR, ":encoding($codeset)";
