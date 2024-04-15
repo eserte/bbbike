@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 #
@@ -270,10 +269,8 @@ for my $noextern (@extern_order) {
 	    if (!$noextern) {
 		$TODO = 'locale wrong for grep -i';
 	    } else {
-		use locale;
-		if ("\xdc" !~ /\xfc/i) {
-		    no warnings 'uninitialized';
-		    $TODO = "Current locale (LC_ALL=$ENV{LC_ALL}, LANG=$ENV{LANG}, LC_CTYPE=$ENV{LC_CTYPE}) does not support -i correctly";
+		if ($] < 5.012) {
+		    $TODO = "case-insensitive comparison wrong with this perl ($])";
 		}
 	    }
 
