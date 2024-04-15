@@ -413,6 +413,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Anfrage)
 #: by: https://berliner-abendblatt.de/berlin-news/revolutionaere-demo-am-1-mai-von-neukoelln-nach-kreuzberg-id214482 (findet 2023 auch nicht statt)
 #: by: https://www.morgenpost.de/1-mai-berlin/article237792799/1-mai-2024-berlin-kreuzberg-myfest-absage.html
+#: by: https://berliner-abendblatt.de/berlin-news/nahost-konflikt-auch-problem-bei-demonstrationen-am-1-mai-id249800
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -8322,7 +8323,7 @@ EOF
        until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2023-05-13T00:00:00"]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 7,
        text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -14170,7 +14171,7 @@ EOF
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 7,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -23515,11 +23516,11 @@ EOF
        until => $isodate2epoch->("2023-05-01 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2023', # wenn größer: "Straße des 17. Juni und Ebertstraße"
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
 #: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
@@ -39366,12 +39367,12 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-04-09
+#: last_checked: 2024-04-14 (osm)
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
 # REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="7"
+#: osm_watch: way id="1025826786" version="8"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 EOF
      },
@@ -40841,7 +40842,7 @@ EOF
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: last_checked: 2024-03-25 (osm) vvv
+#: last_checked: 2024-04-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
@@ -42424,7 +42425,8 @@ EOF
        data  => <<EOF,
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
-#: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024)
+#: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -42559,7 +42561,7 @@ EOF
      },
      { from  => 1712683045, # 2024-04-09 19:17
        until => $isodate2epoch->("2024-04-30 18:00:00"),
-       text  => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis Ende April 2024',
+       text  => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis 30.04.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778015024818094305
@@ -42568,6 +42570,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778682517517631737 (voraussichtlich bis Ende April 2024)
 #: by: https://berliner-abendblatt.de/berlin-news/risse-an-fassade-von-schoeneberger-wohnhaus-einsturzgefahr-id249463
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
+#: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024)
 #: source_id: bvg2021:n7#BVG346248_0
 #: also_indoor: traffic (B,H,G,W)
 #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
@@ -42589,6 +42592,26 @@ EOF
        data  => <<EOF,
 #: source_id: LS/222-W/24/026 (bis 17.05.2024)
 	2::inwork -9031,-54801 -7465,-53204
+EOF
+     },
+     { from  => 1700564400, # 2023-11-21 12:00
+       until => 1719846000, # 2024-07-01 17:00
+       text  => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, bis 01.07.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
+#: also_indoor: traffic (none)
+#: next_check: 2024-04-16
+	q4::inwork 12765,8435 12598,8390
+EOF
+     },
+     { from  => 1713204639, # 2024-04-15 20:10
+       until => 1715378400, # 2024-05-11 00:00
+       text  => 'Otto-Franke-Str.: zwischen Anna-Seghers-Str. und Nipkowstr. Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.05.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: rbb
+	q4::inwork 20388,3100 20478,3156 20717,3310
 EOF
      },
     );

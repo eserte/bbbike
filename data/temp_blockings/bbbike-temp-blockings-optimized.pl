@@ -6881,12 +6881,12 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-04-09
+#: last_checked: 2024-04-14 (osm)
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
 # REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="7"
+#: osm_watch: way id="1025826786" version="8"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 ',
          'from' => undef,
@@ -7370,7 +7370,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: last_checked: 2024-03-25 (osm) vvv
+#: last_checked: 2024-04-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
@@ -8110,7 +8110,8 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        {
          'data' => '#       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
-#: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024)
+#: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -8246,6 +8247,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778682517517631737 (voraussichtlich bis Ende April 2024)
 #: by: https://berliner-abendblatt.de/berlin-news/risse-an-fassade-von-schoeneberger-wohnhaus-einsturzgefahr-id249463
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
+#: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024)
 #: source_id: bvg2021:n7#BVG346248_0
 #: also_indoor: traffic (B,H,G,W)
 #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
@@ -8261,7 +8263,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 ',
          'from' => 1712683045,
          'id' => 4038,
-         'text' => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis Ende April 2024',
+         'text' => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis 30.04.2024',
          'type' => 'handicap',
          'until' => 1714492800
        },
@@ -8274,6 +8276,28 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Langenlipsdorf - Hohenalsdorf: Bauarbeiten, Sperrung, 15.04.2024 08:00 Uhr bis 17.05.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1715954400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
+#: also_indoor: traffic (none)
+#: next_check: 2024-04-16
+	q4::inwork 12765,8435 12598,8390
+',
+         'from' => 1700564400,
+         'id' => 4040,
+         'text' => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, bis 01.07.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1719846000
+       },
+       {
+         'data' => '#: by: rbb
+	q4::inwork 20388,3100 20478,3156 20717,3310
+',
+         'from' => 1713204639,
+         'id' => 4041,
+         'text' => 'Otto-Franke-Str.: zwischen Anna-Seghers-Str. und Nipkowstr. Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.05.2024',
+         'type' => 'handicap',
+         'until' => 1715378400
        }
      
 );
