@@ -126,6 +126,7 @@ my $lastdate;
 	next if m{"BBBike-Test/\d};
 	chomp;
 	my $q = CGI->new($1);
+	BBBikeCGI::Util::decode_possible_utf8_params($q);
 	my($thisdate, $thistime) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):([0-9:]+)};
 	if (!defined $lastdate || $lastdate ne $thisdate) {
 	    print "# $thisdate " . ("#"x60) . "\n";
