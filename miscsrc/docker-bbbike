@@ -1142,9 +1142,21 @@ usually need to be done:
 
 =over
 
-=item * install docker and further dependencies
+=item * install docker
 
-    sudo apt-get install docker.io libipc-perl-run
+Depending on your Debian/Ubuntu distribution run
+
+    sudo apt-get install docker-ce
+
+or
+
+    sudo apt-get install docker.io
+
+or follow the instructions in L<https://docs.docker.com/engine/install/>
+
+=item * install further dependencies
+
+    sudo apt-get install libipc-perl-run
 
 Fur running the C<docker-bbbike ci> with the default setting
 C<--src=local> subcommand the following are also needed:
@@ -1167,6 +1179,9 @@ logout and login again, or start a new shell.
     git clone --depth=1 https://github.com/eserte/bbbike && cd bbbike
 
 Otherwise just C<cd> into the bbbike source directory.
+
+Some subcommands (C<ci>, C<gui>) can operate from GitHub sources using
+the C<--src=github> option and thus may not need a local git clone.
 
 =back
 
