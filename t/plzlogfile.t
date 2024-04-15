@@ -13,8 +13,12 @@ use PLZ;
 use PLZ::Multi;
 use Getopt::Long;
 use CGI;
+use BBBikeCGI::Util;
 use BBBikeTest;
 use Strassen::Strasse;
+
+use Encode qw(decode);
+use I18N::Langinfo qw(langinfo CODESET);
 
 BEGIN {
     if (!eval q{
@@ -37,6 +41,12 @@ my $potsdam = 1;
 my $extern = 1;
 my $forward = 0;
 my $v;
+
+my $codeset = langinfo(CODESET());
+$codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
+binmode STDOUT, ":encoding($codeset)";
+binmode STDERR, ":encoding($codeset)";
+$_ = decode($codeset, $_) for @ARGV;
 
 GetOptions("doit!" => \$doit,
 	   "hnr!"  => \$hnr,
