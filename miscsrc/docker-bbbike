@@ -1050,7 +1050,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       jobs    => 1,
 	       dist    => 'debian',
 	       distver => 'jessie',
-	       src     => 'github',
+	       src     => 'local',
 	       branch  => undef,
 	       env     => {},
 	       'build-env' => {},
@@ -1146,9 +1146,12 @@ usually need to be done:
 
     sudo apt-get install docker.io libipc-perl-run
 
-Fur running the C<docker-bbbike ci --src=local> subcommand the following are also needed:
+Fur running the C<docker-bbbike ci> with the default setting
+C<--src=local> subcommand the following are also needed:
 
     sudo apt-get install rsync git
+
+This is not needed for C<docker-bbbike ci --src=github>.
 
 =item * make sure you can run docker without C<sudo>
 
