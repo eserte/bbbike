@@ -184,7 +184,7 @@ EOF
     if ($^O ne 'MSWin32') {
 	my $uid = $<;
 	$username = (getpwuid($uid))[0];
-	if ($opt{distver} eq 'noble') { # no adduser installed in default ubuntu:24.04 image
+	if ($opt{distver} =~  m{^(noble|24\.04)$}) { # no adduser installed in default ubuntu:24.04 image
 	    $dockerfile .= <<"EOF";
 RUN useradd --non-unique --shell /bin/bash --uid $uid --comment '' --create-home $username
 RUN passwd -d $username
@@ -468,6 +468,7 @@ EOF
 	(my $short_perl_ver = $opt{'perl-ver'}) =~ s{\.\d+$}{};
 	# Probably travis has only perls for ubuntu trusty and precise
 	my $distnumver = { ubuntu => {
+				       noble   => '24.04',
 				       jammy   => '22.04',
 				       focal   => '20.04',
 				       bionic  => '18.04',
