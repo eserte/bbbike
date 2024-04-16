@@ -6599,7 +6599,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="37861386" version="26"
 #: last_checked: 2024-03-26 (okas)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2023-10-09
+#: next_check: 2024-10-25
 	q4::inwork; 22431,6068 22467,6135
 ',
          'from' => 1696780800,
@@ -6730,8 +6730,8 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
-#: also_indoor: traffic (ex-H,G,B,ex-W)
-#: last_checked: 2024-04-03
+#: also_indoor: traffic (ex-H,G,B,W)
+#: last_checked: 2024-04-16 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 14d
 #: next_check: 2024-05-24
@@ -7006,15 +7006,16 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        undef,
        {
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024)
 #: osm_watch: note 4161500 2
 #: last_checked: 2024-04-14
-#: next_check: 2024-06-30
+# REMOVED --- #: next_check: 2024-06-30
+#: next_check: 2024-04-18
 	q3::inwork 12632,12630 12690,12769
 ',
          'from' => 1687406400,
          'id' => 3832,
-         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Juni 2024',
+         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, voraussichtlich bis Ende Juni 2024',
          'type' => 'handicap',
          'until' => 1719759600
        },
@@ -8279,13 +8280,16 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
        },
        {
          'data' => '#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
+#: add_fragezeichen: Gibt es hier überhaupt eine Sperrung?
+#: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende 2024 bis April 2025)
+#: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: also_indoor: traffic (none)
 #: next_check: 2024-04-16
 	q4::inwork 12765,8435 12598,8390
 ',
-         'from' => 1700564400,
+         'from' => 1713246879,
          'id' => 4040,
-         'text' => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, bis 01.07.2024 17:00',
+         'text' => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, voraussichtlich ab Ende April 2024 bis 01.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1719846000
        },
@@ -8298,6 +8302,16 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Otto-Franke-Str.: zwischen Anna-Seghers-Str. und Nipkowstr. Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.05.2024',
          'type' => 'handicap',
          'until' => 1715378400
+       },
+       {
+         'data' => '#: source_id: LS/221-E/23/175 (bis 10.01.2024)
+	2::inwork 11448,28068 12126,27740
+',
+         'from' => undef,
+         'id' => 4042,
+         'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.01.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1738339200
        }
      
 );

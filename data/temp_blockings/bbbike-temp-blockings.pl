@@ -38449,7 +38449,7 @@ EOF
 #: osm_watch: way id="37861386" version="26"
 #: last_checked: 2024-03-26 (okas)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2023-10-09
+#: next_check: 2024-10-25
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -38848,8 +38848,8 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
-#: also_indoor: traffic (ex-H,G,B,ex-W)
-#: last_checked: 2024-04-03
+#: also_indoor: traffic (ex-H,G,B,W)
+#: last_checked: 2024-04-16 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 14d
 #: next_check: 2024-05-24
@@ -39696,14 +39696,15 @@ EOF
      },
      { from  => 1687406400, # 2023-06-22 06:00
        until => $isodate2epoch->("2024-06-30 17:00:00"), # dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
-       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, mindestens bis Ende Juni 2024',
+       text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, voraussichtlich bis Ende Juni 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024)
 #: osm_watch: note 4161500 2
 #: last_checked: 2024-04-14
-#: next_check: 2024-06-30
+# REMOVED --- #: next_check: 2024-06-30
+#: next_check: 2024-04-18
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -42594,12 +42595,15 @@ EOF
 	2::inwork -9031,-54801 -7465,-53204
 EOF
      },
-     { from  => 1700564400, # 2023-11-21 12:00
+     { from  => 1713246879,
        until => 1719846000, # 2024-07-01 17:00
-       text  => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, bis 01.07.2024 17:00',
+       text  => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, voraussichtlich ab Ende April 2024 bis 01.07.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
+#: add_fragezeichen: Gibt es hier überhaupt eine Sperrung?
+#: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende 2024 bis April 2025)
+#: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: also_indoor: traffic (none)
 #: next_check: 2024-04-16
 	q4::inwork 12765,8435 12598,8390
@@ -42612,6 +42616,15 @@ EOF
        data  => <<EOF,
 #: by: rbb
 	q4::inwork 20388,3100 20478,3156 20717,3310
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2025-01-31 17:00:00"),
+       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.01.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-E/23/175 (bis 10.01.2024)
+	2::inwork 11448,28068 12126,27740
 EOF
      },
     );
