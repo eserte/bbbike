@@ -122,6 +122,10 @@ sub _dockerfile_fix_sources_list ($) {
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                   >  /etc/apt/sources.list
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian-security/ $optref->{distver}/updates main' >> /etc/apt/sources.list
 EOF
+    } elsif ($optref->{distver} =~ m{^(precise)$}) {
+	$dockerfile .= <<'EOF';
+RUN perl -i -pe 's{http://archive.ubuntu.com/}{http://old-releases.ubuntu.com/}g' /etc/apt/sources.list $(perl -e 'print </etc/apt/sources.list.d/*.list>')
+EOF
     }
     $dockerfile;
 }
@@ -401,8 +405,6 @@ RUN echo "DEBIAN_FRONTEND=noninteractive" >> /etc/environment
 
 EOF
 
-    $dockerfile .= _dockerfile_fix_sources_list(\%opt);
-
     my($real_dist, $real_distver) = ($opt{dist}, $opt{distver});
     if ($real_dist eq 'perl') { # perl docker images are usually based on debian
 	if ($real_distver =~ /-(stretch|buster|bullseye|bookworm)$/) {
@@ -431,6 +433,8 @@ EOF
     } else {
 	die "Unsupported dist $real_dist";
     }
+
+    $dockerfile .= _dockerfile_fix_sources_list(\%opt);
 
     if ($real_distver eq 'precise') {
 	# http/1.1 pipelining used, but mydebs.bbbike.org cannot
@@ -823,7 +827,7 @@ EOF
 
     my $fonts_dejavu_package = (
 				(
-				 ($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(trusty|precise|xenial)$}) ||
+				 ($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(precise|trusty|xenial)$}) ||
 				 ($opt{dist} eq 'debian' && $opt{distver} =~ 'wheezy')
 				) ? 'ttf-dejavu' : 'fonts-dejavu'
 			       );
