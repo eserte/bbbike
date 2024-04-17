@@ -60,7 +60,7 @@ EOF
 sub usage_ci (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] ci [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--perl-ver X.Y.Z] [--env KEY=VAL ...] [--branch ...]
-	 [--with-data-build] [--no-cache] [--invalidate-apt] [--image-variant ...]
+	 [--with-data-build] [--no-cache] [--invalidate-apt] [--image-variant ...] [--docker-build-max-retry ...]
 EOF
 }
 
@@ -146,15 +146,17 @@ RUN echo @{[ POSIX::strftime("%F", localtime) ]}
 EOF
 }
 
-sub _docker_build_with_retry ($$$) {
-    my($doit, $docker_image_tag, $cmdline) = @_;
+sub _docker_build_with_retry ($$$;@) {
+    my($doit, $docker_image_tag, $cmdline, %opts) = @_;
+    my $max_retry = delete $opts{'max-retry'} || 2;
+    die "Unhandled options: " . join(' ', %opts) if %opts;
     my @docker_build_cmd = (qw(docker build), @$cmdline);
-    for my $try (1..2) {
+    for my $try (1..$max_retry) {
 	if (!eval {
 	    $doit->system(@docker_build_cmd);
 	    1;
 	}) {
-	    if ($try == 1) {
+	    if ($try < $max_retry) {
 		$doit->system(qw(docker pull), $docker_image_tag);
 	    } else {
 		error "Error running '@docker_build_cmd': $@";
@@ -662,11 +664,14 @@ EOF
 	my $scope_cleanups = Doit::ScopeCleanups->new;
 	(my $tag_suffix = $image) =~ s{:}{-}g;
 	my $tag = 'bbbike-ci-' . $tag_suffix;
+	my @build_options;
+	if ($opt{'docker-build-max-retry'}) {
+	    push @build_options, 'max-retry' => $opt{'docker-build-max-retry'};
+	}
 
 	eval { $doit->system(qw(docker rmi), "$tag-old") };
 	eval { $doit->system(qw(docker tag), $tag, "$tag-old") };
-	_docker_build_with_retry($doit, $image, ['--tag', $tag, ($opt{'no-cache'} ? '--no-cache' : ()), '.']);
-
+	_docker_build_with_retry($doit, $image, ['--tag', $tag, ($opt{'no-cache'} ? '--no-cache' : ()), '.'], @build_options);
 	eval { $doit->system(qw(docker rm), $tag) };
 
 	my @errors;
@@ -1089,6 +1094,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'perl-ver' => undef,
 	       'image-variant' => undef,
 	       'cover-dir' => undef,
+	       'docker-build-max-retry' => undef,
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
@@ -1105,6 +1111,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'perl-ver=s',
 	       'image-variant=s',
 	       'cover-dir=s',
+	       'docker-build-max-retry=i',
 	      )
 	or usage_ci;
     _check_distver $opt{distver};
