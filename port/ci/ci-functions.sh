@@ -220,30 +220,11 @@ install_perl_testonly_dependencies() {
 	    # Does not compile on older Linux distributions,
 	    barcode_zbar_module="Barcode::ZBar~<0.10"
 	fi
-	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath $barcode_zbar_module
+	cpanm --quiet --notest --skip-satisfied Email::MIME HTML::TreeBuilder::XPath $barcode_zbar_module
     fi
 }
 
 install_old_perl_dependencies() {
-    if [ "$PERLBREW_PERL" = "5.8" -a ! "$USE_SYSTEM_PERL" = "1" ]
-    then
-	# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
-	#
-	# Until cpanminus 1.7032 (approx.) it was possible to specify
-	# DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05"
-	# but now one has to use exact version matches to load something from BackPAN
-	#
-	# Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
-	#
-	# Wrong version specification in DB_File's Makefile.PL, see https://rt.cpan.org/Ticket/Display.html?id=100844
-	#
-        # Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
-	#
-	# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
-	#
-        # Geo::Proj4 1.11 increased perl minimum version to 5.10.0 (and is now deprecated anyway).
-	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Geo::Proj4~"==1.09"
-    fi
     if [ ! "$USE_SYSTEM_PERL" = "1" ]
     then
         case "$PERLBREW_PERL" in
@@ -255,6 +236,37 @@ install_old_perl_dependencies() {
 	case "$PERLBREW_PERL" in
 	    5.8|5.10|5.12)
 		cpanm --quiet --notest IO::Socket::IP~"<0.42"
+		;;
+	esac
+	case "$PERLBREW_PERL" in
+	    5.8|5.10)
+		# Data::OptList and Sub::Exporter are dependencies of GIS::Distance
+		# Pod::Man is a dependency of Plack
+		cpanm --quiet --notest Email::MessageID~"<1.407" Email::Date::Format~"<1.006" Email::Simple~"<2.218" Email::MIME::Encodings~"<1.316" Email::MIME::ContentType~"<1.027" Email::MIME~"<1.953" Data::OptList~'<0.114' Sub::Exporter~'<0.990' Test::Deep~"<1.202" Pod::Man~"<5" Plack~"<1.0051"
+		;;
+	esac
+	case "$PERLBREW_PERL" in
+	    5.8)
+		# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
+		#
+		# Until cpanminus 1.7032 (approx.) it was possible to specify
+		# DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05"
+		# but now one has to use exact version matches to load something from BackPAN
+		#
+		# Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
+		#
+		# Wrong version specification in DB_File's Makefile.PL, see https://rt.cpan.org/Ticket/Display.html?id=100844
+		#
+		# Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
+		#
+		# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
+		#
+		# Geo::Proj4 1.11 increased perl minimum version to 5.10.0 (and is now deprecated anyway).
+		#
+		# non-commented modules increased the perl minimum version at some point in time
+		#
+		# autodie is used in some bbbike code
+		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Geo::Proj4~"==1.09" HTML::Tagset~"<3.22" autodie
 		;;
 	esac
     fi
