@@ -46,4 +46,5 @@ jobs:
             --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }} \
             --env BBBIKE_TEST_SKIP_BBBIKE_DE=${BBBIKE_TEST_SKIP_BBBIKE_DE:-0} \
             --env BBBIKE_TEST_SKIP_BBBIKE_ORG=${BBBIKE_TEST_SKIP_BBBIKE_ORG:-0} \
-            --build-env TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=${{ env.TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT }}
+            --build-env TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=${{ env.TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT }} \
+            --docker-build-max-retry 1
