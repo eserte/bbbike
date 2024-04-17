@@ -510,9 +510,19 @@ EOF
     } else {
 	# install dummy perlbrew, so at least "perlbrew off" works
 	$dockerfile .= <<EOF;
-RUN echo "#!/bin/sh" > /usr/bin/perlbrew
-RUN chmod 755 /usr/bin/perlbrew
+RUN [ -x /usr/bin/perlbrew ] || (echo "#!/bin/sh" > /usr/bin/perlbrew && chmod 755 /usr/bin/perlbrew)
 EOF
+	if ($opt{dist} eq 'perl') {
+	    my($short_perl_ver) = $opt{distver} =~ /^(\d+\.\d+)/;
+	    if (!$short_perl_ver) {
+		error "Cannot parse perl version from '$opt{distver}'";
+	    }
+	    $dockerfile .= <<EOF;
+ENV PERLBREW_PERL=$short_perl_ver
+# Some perl images (e.g. 5.39.9-bookworm) start in /usr/src/app instead of /
+WORKDIR /
+EOF
+	}
     }
     $dockerfile .= <<EOF;
 COPY bbbike/port/ci/ci-functions.sh /
