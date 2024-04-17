@@ -8,10 +8,24 @@ jobs:
     name: Docker tests with ${{ matrix.perl_version }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include:
+          - perl_version:               5.8.9-buster
+            bbbike_test_skip_mapserver: 1
+          - perl_version:               5.10.1-buster
+            bbbike_test_skip_mapserver: 1
+          - perl_version:               5.12.5-buster
+            bbbike_test_skip_mapserver: 1
           - perl_version:               5.14.4-buster
             bbbike_test_skip_mapserver: 1
+          - perl_version:               5.16.3-buster
+            bbbike_test_skip_mapserver: 1
+          - perl_version:               5.38.2-bookworm
+            bbbike_test_skip_mapserver: 1
+          - perl_version:               5.39.9-bookworm
+            bbbike_test_skip_mapserver: 1
+          # XXX need to fix things for bbbike_test_skip_mapserver: 0
     env:
       TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT: 1
     steps:
