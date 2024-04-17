@@ -263,24 +263,28 @@ sub fetch_images {
     my $data;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url, "Authorization" => "OAuth $client_token");
-	if (!$resp->is_success) {
+	if (!$resp->is_success || $resp->header('X-Died')) {
 	    $reqs_error++;
-	    my $error_data = eval { decode_json $resp->decoded_content };
 	    my $msg = "Try $try/$max_try:\n";
-	    if (0) { # enable only if there are bigger problems with API
-		my $dump_req = $resp = $resp->request->clone;
-		for my $header (qw(Authorization)) {
-		    if ($dump_req->header($header)) {
-			$dump_req->header($header => '...');
-		    }
-		}
-		$msg .= "Request: " . $dump_req->dump;
-	    }
-	    if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout|Zeit.*berschreitung bei Anfrage)$}) {
-		my $e = $error_data->{error};
-		$msg .= "$e->{error_user_title}: $e->{error_user_msg}";
+	    if ($resp->is_success && $resp->header('X-Died')) {
+		$msg .= "Response: X-Died=" . $resp->header('X-Died');
 	    } else {
-		$msg .= "Response: " . $resp->dump;
+		my $error_data = eval { decode_json $resp->decoded_content };
+		if (0) { # enable only if there are bigger problems with API
+		    my $dump_req = $resp = $resp->request->clone;
+		    for my $header (qw(Authorization)) {
+			if ($dump_req->header($header)) {
+			    $dump_req->header($header => '...');
+			}
+		    }
+		    $msg .= "Request: " . $dump_req->dump;
+		}
+		if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout|Zeit.*berschreitung bei Anfrage)$}) {
+		    my $e = $error_data->{error};
+		    $msg .= "$e->{error_user_title}: $e->{error_user_msg}";
+		} else {
+		    $msg .= "Response: " . $resp->dump;
+		}
 	    }
 	    warn $msg, "\n";
 	} else {
