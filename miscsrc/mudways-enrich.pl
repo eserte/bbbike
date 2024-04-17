@@ -14,7 +14,7 @@
 
 use strict;
 use warnings;
-use 5.010; # //, s///r
+use 5.014; # //, s///r
 use FindBin;
 
 use File::Glob qw(bsd_glob);

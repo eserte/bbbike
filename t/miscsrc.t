@@ -110,11 +110,13 @@ for my $f (@files) {
 		       |  cvsdiffbbd
 		       |  docker-bbbike
 		       |  fragezeichen2org\.pl
-		       |  mudways-enrich.pl
 		       |  mudways-enriched-to-handicap\.pl
 		       |  temp_blockings_tasks
 		       |  VMZTool\.pm
 		       )$}x && $] < 5.010;
+	myskip "$f works only with perl >= 5.14.0", 1
+	    if $f =~ m{/( mudways-enrich.pl
+		       )$}x && $] < 5.014;
 	myskip "$f works only with installed Algorithm::Diff", 1
 	    if $f =~ m{/diffbbd$} && !eval { require Algorithm::Diff; 1 };
 	myskip "$f works only with installed DateTime::Format::ISO8601", 1
