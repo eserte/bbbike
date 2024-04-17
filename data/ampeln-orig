@@ -79,7 +79,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternati
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2024-04-11 (mapillary)
+#: last_checked: 2024-04-17
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 #: valid: -20250102
@@ -1488,7 +1488,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5907,16000
 	F 5651,16507
 	X 3644,10759
-	X 1229,18750
+	X 1218,18751
 	X 2268,19919
 #: note: etwas nach Nordwesten versetzt
 #: XXX_prog: zusätzlicher Zeitverlust durch Fußgängerverkehr zwischen S- und U-Bahnhof möglich
@@ -1502,7 +1502,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5295,17344
 	X 5034,17322
 	X 4683,17669
-	X 4326,17801
+	X 4320,17805
 	X 3570,17938
 	X 3319,18043
 	X 2568,19345
@@ -1727,7 +1727,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11369,13174
 #: note: Kontaktschleife für Radfahrer aus der Heinz-Galinski-Str.
 	X 8093,16438
-	X 5364,18775
+	X 5367,18787
 #: XXX_prog nicht relevant für Radfahrer Richtung Westen
 #: note: Anforderungsampel
 	F 14203,2859
@@ -2106,7 +2106,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6422,15708
 	X 7436,15746
 	X 7622,15946
-	X 8211,17585
+	X 8206,17594
 	X 8759,16684
 	X 9082,16982
 	X 8677,17154
@@ -2969,6 +2969,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	X 17855,1629
 	X 21789,5427
 	X 21088,9178
+#: note: Anforderungsampel
 	F 4650,18817
 #: note: Anforderungsampel, zumindest beim indirekten Linksabbiegen für Radfahrer Hauptstr. -> Hildegard-Marcusson-Str.; Kontaktschleifen in der Linksabbigerspur, die offenbar keine Radfahrer erfassen können
 	X 16004,10204
@@ -3710,7 +3711,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2024-04-06 (mapillary)
+#: last_checked: 2024-04-17
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672

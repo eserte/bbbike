@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-04-14
+#: last_checked: 2024-04-17
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -51,7 +51,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,1
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
-#: last_checked: 2024-04-14
+#: last_checked: 2024-04-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-03-27
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -284,7 +284,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="31"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2024-04-12 (osm)
+#: last_checked: 2024-04-17
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -294,7 +294,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: XXX Oranienburger Straße (Mitte) Richtung Monbijouplatz zwischen Große Präsidentenstraße und Große Hamburger Straße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Die Große Hamburger Straße ist von der Oranienburger Straße abgehängt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
 #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024)
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-04-11 (mapillary)
+#: last_checked: 2024-04-17
 #: next_check: 2024-04-19
 #: valid: -20240419
 Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fußgänger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
@@ -3066,7 +3066,9 @@ Park am Nordbahnhof: Fußgänger	q1 9119,14255 9081,14232 8992,14176
 #: note ^^^
 # 
 (an der Panke - Mauerweg): einige Fußgänger	q1+ 7872,14510 7889,14519 7940,14447
-(an der Panke - Mauerweg): einige Fußgänger	q1+ 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573 8234,14686
+(an der Panke - Mauerweg): einige Fußgänger	q1+ 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573
+#: note: hier Schulbereich
+(an der Panke - Mauerweg): einige Fußgänger	q1- 8097,14573 8234,14686
 # REMOVED (existiert nicht mehr) --- #: XXX_prog: BS --- Bordstein	q3 -2452,17408 -2451,17421
 #: note: 6 oder 7 Bodenschwellen liegen hier, fast über die ganze Fahrbahnbreite
 Neuenahrer Weg: Bodenschwellen, kaum umfahrbar	q2 -2540,18105 -2724,18149
@@ -4352,7 +4354,7 @@ Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980
 #: XXX_prog BS an der General-Woyna-Str., etwa 20m südlich ist eine Bordsteinabsenkung
 Humannstr. - General-Woyna-Str.: Fußgänger, Bordstein	q3 4324,18523 4340,18497
 #: note: offiziell nur ein Gehweg
-Humannstr.: Fußgänger	q2 4332,18581 4324,18523 4311,18454
+Humannstr.: Fußgänger	q2 4332,18581 4324,18523
 (Honsfelder Str. - Wuhlewanderweg): schmale Brücke	q2 21654,10390 21608,10403
 #: XXX_prog mit Anhänger aber ggfs. q1
 Rudower Str.: drei Bodenschwellen, mit Normalrad gut umfahrbar	q0- 21329,4383 21452,4061 21402,4036 21454,3883 21489,3841
@@ -4740,7 +4742,7 @@ Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 1988
 Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 7621,7813
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder am östlichen Ende, am westlichen Ende fehlt es
-Zobeltitzstr.: einige Fußgänger	q1 4377,18037 4492,18013
+Zobeltitzstr.: einige Fußgänger	q1 4370,18039 4492,18013
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder
 Am Aalemannkanal: selten Fußgänger	q0- -2741,18333 -2229,18312 -2197,18307 -2171,18265
@@ -4908,6 +4910,8 @@ Lugierring: einige Fußgänger	q2 20116,836 20142,824
 # 
 (Kirschenbaumstr. - Anne-Frank-Str.): einige Fußgänger	q2 19790,609 19741,476
 (zur Meinolfstr.): einige Fußgänger	q2 19847,678 19833,643
+# 
+(Ziekowstr. - Wilhelm-Blume-Allee): schmaler Weg, mäßiger Fußgängerverkehr	q1 2570,20837 2469,20812
 # 
 ######################### User Contributions #################################
 # 
@@ -5117,9 +5121,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9022,19135 9159,19010 9446,18855 9458,18859
 #: by ^^^
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
-#: by: Jörn Busch:
-#: corrected_by: srt (q2 -> q1)
-(Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3233,20834 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
+# REMOVED (früher (bis ca. 2023): schmaler Weg, mäßiger Fußgängerverkehr, q1) --- #: by: Jörn Busch: --- #: corrected_by: srt (q2 -> q1) --- (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3153,20853 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 # 
 #: by: Hans-Reiner Padberg: vvv
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1022,5525 820,5455 541,5306
@@ -6478,7 +6480,7 @@ Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962
 Ruben-Wolf-Str.: einige Fußgänger	q1+ 19906,217 19865,263 19785,360
 # 
 #: by: Jörg Henke:
-Semmelweg: einige Fußgänger	q1 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
+Semmelweg: einige Fußgänger	q1 1218,18751 1101,18611 915,18352 766,18083 492,17831 396,17648 240,17524
 # 
 #: by: Katrin Ahrens:
 #: corrected_by: srt/policy (q1 -> q0-)

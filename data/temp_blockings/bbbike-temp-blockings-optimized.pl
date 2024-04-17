@@ -7008,7 +7008,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
          'data' => '#: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-04-14
+#: last_checked: 2024-04-17
 # REMOVED --- #: next_check: 2024-06-30
 #: next_check: 2024-04-18
 	q3::inwork 12632,12630 12690,12769
@@ -7310,12 +7310,13 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
+#: last_checked: 2024-04-17
 #: next_check: 2024-11-30
 	q3::inwork 8486,16425 8467,16718
 ',
          'from' => 1669791600,
          'id' => 3908,
-         'text' => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, voraussichtlich bis Ende November 2024',
+         'text' => 'Koloniestr.: Bauarbeiten an der Osloer Str., Radwegführung auf dem Gehweg, voraussichtlich bis Ende November 2024',
          'type' => 'handicap',
          'until' => 1732986000
        },
@@ -7371,7 +7372,7 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: last_checked: 2024-04-11 (mapillary) vvv
+#: last_checked: 2024-04-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
@@ -7481,7 +7482,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2024-03-18 (okas)
+#: last_checked: 2024-04-17
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 	q3::inwork 4335,17642 4392,17777
@@ -7562,13 +7563,14 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        {
          'data' => '#: next_check_id: STEGEWEG-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
-#: last_checked: 2024-02-15 (Pressemitteilung)
+#: last_checked: 2024-04-17
 #: check_frequency: 90d
-	q4::inwork 6869,18721 6879,18737 6910,18861 6960,19047
+	q4::inwork 6869,18721 6879,18737 6910,18861
+# REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
 ',
          'from' => 1699225200,
          'id' => 3944,
-         'text' => 'Stegeweg: Fahrbahninstandsetzung, evtl. gibt es Einschränkungen für Radfahrer, Ende der Bauarbeiten unbekannt',
+         'text' => 'Stegeweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
