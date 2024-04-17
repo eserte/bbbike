@@ -269,7 +269,7 @@ for my $noextern (@extern_order) {
 	    if (!$noextern) {
 		$TODO = 'locale wrong for grep -i';
 	    } else {
-		if ($] < 5.014) {
+		if ($] < 5.016) {
 		    $TODO = "case-insensitive comparison may be wrong with this perl ($])";
 		}
 	    }
