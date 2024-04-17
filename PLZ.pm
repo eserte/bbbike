@@ -19,8 +19,8 @@ use strict;
 # Setting $OLD_AGREP to a true value really means: use String::Approx
 # instead or no agrep at all.
 use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $AGREP_VARIANT $VERSION $VERBOSE $DEBUG $sep);
-use if $] <  5.012, 'locale';
-use if $] >= 5.012, 'feature', 'unicode_strings';
+use if $] <  5.014, 'locale';
+use if $] >= 5.014, 'feature', 'unicode_strings';
 use BBBikeUtil;
 use Strassen::Strasse;
 
