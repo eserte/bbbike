@@ -149,6 +149,10 @@ my @req_table =
   [qw/Imager::QRCode	0	all	2	cgi/,
    'Für das Erzeugen von QRCodes'],
 
+  # core modules not available in older perls
+  [qw/autodie	0	all	0	devel/],
+  [qw/IO::Zlib	0	all	0	base/],
+
   [qw/BSD::Resource	0	unix	0	base/], # really only BSD, and not used anyway in BBBike
 
   [qw/Win32::API	0	win	0|4	base/,

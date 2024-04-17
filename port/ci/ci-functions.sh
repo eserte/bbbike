@@ -264,9 +264,7 @@ install_old_perl_dependencies() {
 		# Geo::Proj4 1.11 increased perl minimum version to 5.10.0 (and is now deprecated anyway).
 		#
 		# non-commented modules increased the perl minimum version at some point in time
-		#
-		# autodie is used in some bbbike code
-		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Geo::Proj4~"==1.09" HTML::Tagset~"<3.22" autodie
+		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Geo::Proj4~"==1.09" HTML::Tagset~"<3.22"
 		;;
 	esac
     fi

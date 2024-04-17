@@ -101,6 +101,10 @@ Font::Metrics::Helvetica	- Für die Reparatur der Zeichenbreitentabellen in PDF::
 
 Imager::QRCode	- Für das Erzeugen von QRCodes
 
+autodie
+
+IO::Zlib
+
 BSD::Resource
 
 Devel::Peek
