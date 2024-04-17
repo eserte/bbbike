@@ -1,0 +1,11 @@
+name: CI for different perl versions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_perl_versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dummy
+        run: true
