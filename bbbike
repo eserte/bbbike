@@ -13134,6 +13134,10 @@ sub choose_from_plz {
 		my(@pos) = $s->choose_street($street, $bezirk);
 		if (!@pos || !defined $pos[0]) {
 
+		    if (!defined $plz_nr || $plz_nr eq '') { # no postal code -> no fallback possible
+			die Mfmt('"%s" nicht gefunden', $street);
+		    }
+
 		    # PLZ-Gebiet markieren
 		    $z->init;
 		    while(1) {
