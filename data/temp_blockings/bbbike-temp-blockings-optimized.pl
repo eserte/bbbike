@@ -4725,9 +4725,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => 1713119808,
          'id' => 3194,
-         'text' => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 17:00 Uhr',
+         'text' => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 12:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1713538800
+         'until' => 1713520800
        },
        undef,
        undef,
@@ -5656,8 +5656,8 @@ Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
 #: osm_watch: note 4090527 4
-#: last_checked: 2024-03-13
-#: check_frequency: 60d
+#: last_checked: 2024-04-18
+#: check_frequency: 30d
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 # REMOVED (hier noch nicht) --- zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 # REMOVED --- #: next_check: 2023-07-31
@@ -5772,7 +5772,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr)
+         'data' => '#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024)
 #: osm_watch: way id="364468604" version="14"
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 	q4::inwork; 9011,14019 8870,13926
@@ -5780,9 +5780,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'from' => 1656651600,
          'id' => 3559,
          'source_id' => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
-         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 30.04.2024 17:00',
+         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 31.07.2024 17:00',
          'type' => 'handicap',
-         'until' => 1714489200
+         'until' => 1722438000
        },
        undef,
        undef,
@@ -7006,21 +7006,7 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
          'until' => 1730502000
        },
        undef,
-       {
-         'data' => '#: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024)
-#: osm_watch: note 4161500 2
-#: last_checked: 2024-04-17
-# REMOVED --- #: next_check: 2024-06-30
-#: next_check: 2024-04-18
-	q3::inwork 12632,12630 12690,12769
-',
-         'from' => 1687406400,
-         'id' => 3832,
-         'text' => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, voraussichtlich bis Ende Juni 2024',
-         'type' => 'handicap',
-         'until' => 1719759600
-       },
+       undef,
        {
          'data' => '#: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
@@ -7642,10 +7628,10 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 # REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 #: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024
 #: also_indoor: traffic (B,W)
-#: last_checked: 2024-03-28
-# REMOVED --- #: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-05-31
-#: next_check: 2024-04-26
+#: last_checked: 2024-04-18
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-04-26
+#: next_check: 2024-05-31
 	q2::inwork 13489,9456 13602,9581
 ',
          'from' => undef,
@@ -7719,18 +7705,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
          'type' => 'handicap',
          'until' => 1727712000
        },
-       {
-         'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024)
-#: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
-	q4::inwork 5176,9398 5189,8983
-',
-         'from' => 1701064800,
-         'id' => 3978,
-         'text' => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 bis 18.04.2024',
-         'type' => 'handicap',
-         'until' => 1713452400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8291,10 +8266,12 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende 2024 bis April 2025)
 #: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: also_indoor: traffic (none)
-#: next_check: 2024-04-16
+#: last_checked: 2024-04-18 (noch keine Sperrung)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2024-04-16
 	q4::inwork 12765,8435 12598,8390
 ',
-         'from' => 1713246879,
+         'from' => 1713996000,
          'id' => 4040,
          'text' => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, voraussichtlich ab Ende April 2024 bis 01.07.2024 17:00',
          'type' => 'handicap',
@@ -8319,6 +8296,16 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.01.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1738339200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php
+	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
+',
+         'from' => 1713650400,
+         'id' => 4043,
+         'text' => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22. April 2024 bis 30. April 2024',
+         'type' => 'handicap',
+         'until' => 1714514399
        }
      
 );

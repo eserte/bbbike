@@ -51,9 +51,10 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,1
 # 
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
-#: last_checked: 2024-04-17
+#: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024)
+#: last_checked: 2024-04-18
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-03-27
+#: next_check: 2024-05-07
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
 # 
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
@@ -292,11 +293,11 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: XXX Oranienburger Straße (Mitte) Richtung Monbijouplatz zwischen Große Präsidentenstraße und Große Hamburger Straße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Die Große Hamburger Straße ist von der Oranienburger Straße abgehängt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
-#: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024)
+#: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024)
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2024-04-17
-#: next_check: 2024-04-19
-#: valid: -20240419
+#: next_check: 2024-04-26
+#: valid: -20240426
 Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fußgänger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
 # 
 # REMOVED --- #: XXX Oranienburger Straße (Mitte) in beiden Richtungen zwischen Tucholskystraße und Krausnickstraße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00 --- #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024) (inaktiv) --- #: last_checked: 2024-03-15 (mapillary) --- #: next_check: 2024-03-19 --- #: valid: -20240319 --- Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
@@ -326,14 +327,6 @@ Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fuß
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
-# 
-#: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
-#: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
-#: also_indoor: traffic (none)
-#: last_checked: 2024-04-11 (mapillary)
-#: check_frequency: 45d
-#: next_check: 2025-06-30
-Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11185,11883 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: last_checked: 2022-10-29 --- Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
@@ -3435,7 +3428,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-04-12
+#: last_checked: 2024-04-18
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4825,7 +4818,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
-#: last_checked: 2024-04-12
+#: last_checked: 2024-04-18
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

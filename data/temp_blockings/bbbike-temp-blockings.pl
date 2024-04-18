@@ -414,6 +414,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/revolutionaere-demo-am-1-mai-von-neukoelln-nach-kreuzberg-id214482 (findet 2023 auch nicht statt)
 #: by: https://www.morgenpost.de/1-mai-berlin/article237792799/1-mai-2024-berlin-kreuzberg-myfest-absage.html
 #: by: https://berliner-abendblatt.de/berlin-news/nahost-konflikt-auch-problem-bei-demonstrationen-am-1-mai-id249800
+#: by: https://berliner-abendblatt.de/berlin-news/spranger-fuer-das-myfest-ist-der-bezirk-zustaendig-id250115
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -31026,9 +31027,9 @@ EOF
 EOF
      },
      { from  => 1713119808, # 1576623600, # 2019-12-18 00:00
-       until => $isodate2epoch->("2024-04-19 17:00:00"), # 1576787365, # 1598911199, # 2020-08-31 23:59
+       until => $isodate2epoch->("2024-04-19 12:00:00"), # 1576787365, # 1598911199, # 2020-08-31 23:59
        #text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, evtl. auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
-       text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 17:00 Uhr',
+       text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 12:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147345063 (inaktiv)
@@ -35506,8 +35507,8 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
 #: osm_watch: note 4090527 4
-#: last_checked: 2024-03-13
-#: check_frequency: 60d
+#: last_checked: 2024-04-18
+#: check_frequency: 30d
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 # REMOVED (hier noch nicht) --- zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 # REMOVED --- #: next_check: 2023-07-31
@@ -35838,12 +35839,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-07-01 07:00:00"), # 1655010000, # 2022-06-12 07:00
-       until => $isodate2epoch->("2024-04-30 17:00:00"), # 1656514800, # 2022-06-29 17:00
-       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 30.04.2024 17:00',
+       until => $isodate2epoch->("2024-07-31 17:00:00"), # 1656514800, # 2022-06-29 17:00
+       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 31.07.2024 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
        data  => <<EOF,
-#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr)
+#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024)
 #: osm_watch: way id="364468604" version="14"
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 	q4::inwork; 9011,14019 8870,13926
@@ -39697,16 +39698,16 @@ EOF
 EOF
      },
      { from  => 1687406400, # 2023-06-22 06:00
-       until => $isodate2epoch->("2024-06-30 17:00:00"), # dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
+       until => 1713464206, # $isodate2epoch->("2024-06-30 17:00:00"), # dont_check_date => 1, until => undef, # 1693494000, # 2023-08-31 17:00
        text  => 'Koppenstr.: Anbindung Friedenstr. wegen Bauarbeiten gesperrt, Radfahrer sollen schieben, voraussichtlich bis Ende Juni 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
-#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024)
+#: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024) (inaktiv)
 #: osm_watch: note 4161500 2
-#: last_checked: 2024-04-17
+# REMOVED --- #: last_checked: 2024-04-17
 # REMOVED --- #: next_check: 2024-06-30
-#: next_check: 2024-04-18
+# REMOVED --- #: next_check: 2024-04-18
 	q3::inwork 12632,12630 12690,12769
 EOF
      },
@@ -41543,10 +41544,10 @@ EOF
 # REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 #: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024
 #: also_indoor: traffic (B,W)
-#: last_checked: 2024-03-28
-# REMOVED --- #: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-05-31
-#: next_check: 2024-04-26
+#: last_checked: 2024-04-18
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-04-26
+#: next_check: 2024-05-31
 	q2::inwork 13489,9456 13602,9581
 EOF
      },
@@ -42602,7 +42603,7 @@ EOF
 	2::inwork -9031,-54801 -7465,-53204
 EOF
      },
-     { from  => 1713246879,
+     { from  => $isodate2epoch->("2024-04-25 00:00:00"), # 1713246879,
        until => 1719846000, # 2024-07-01 17:00
        text  => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen, voraussichtlich ab Ende April 2024 bis 01.07.2024 17:00',
        type  => 'handicap',
@@ -42612,7 +42613,9 @@ EOF
 #: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende 2024 bis April 2025)
 #: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: also_indoor: traffic (none)
-#: next_check: 2024-04-16
+#: last_checked: 2024-04-18 (noch keine Sperrung)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2024-04-16
 	q4::inwork 12765,8435 12598,8390
 EOF
      },
@@ -42632,6 +42635,15 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-E/23/175 (bis 10.01.2024)
 	2::inwork 11448,28068 12126,27740
+EOF
+     },
+     { from  => 1713650400, # 2024-04-21 00:00
+       until => 1714514399, # 2024-04-30 23:59
+       text  => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22. April 2024 bis 30. April 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php
+	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
 EOF
      },
     );

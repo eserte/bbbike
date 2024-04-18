@@ -179,7 +179,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2024-04-01
+#: last_checked: 2024-04-18
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-02-29
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -3730,6 +3730,16 @@ Betonbarriere	BNP:3::trailer=no 7466,19492
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
+#: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
+#: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
+#: XXX anscheinend sind auch die Gehwege gesperrt
+#: also_indoor: traffic (none)
+#: last_checked: 2024-04-18
+#: check_frequency: 14d
+#: next_check: 2025-06-30
+Am Köllnischen Park: Bauarbeiten, Straße gesperrt	2::inwork 11185,11883 11160,12071
+# 
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="14"
 #: osm_watch: way id="43619494" version="8"
@@ -3908,10 +3918,10 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: note: laut Aushang Bauarbeiten bis 26.9.2023 (wurde aber nicht eingehalten)
 #: note: mittlerweile Halteverbot in der Umgebung bis 31.01.2024, verlängert bis 29.03.2024, verlängert bis 30.04.2024
 #: priority: #C
-#: last_checked: 2024-03-28
-#: check_frequency: 60d
-#: next_check: 2024-04-30
-# REMOVED --- #: next_check: 2023-09-26
+#: last_checked: 2024-04-18
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-04-30
 Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
 #: next_check_id: SAATWINKLER-2023
@@ -3946,7 +3956,10 @@ An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
 #: osm_watch: way id="955370454" version="7"
 Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1438721.php (Einweihung am 18.4.2024)
 #: osm_watch: way id="955370453" version="9"
+#: add_fragezeichen: Ist die Straße nach der Einweihung nun offen?
+#: next_check: 2024-04-18
 Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4654,7 +4667,7 @@ Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-04-01
+#: last_checked: 2024-04-18
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4663,7 +4676,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-04-01
+#: last_checked: 2024-04-18
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4673,7 +4686,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023: 401) vvv
-#: last_checked: 2024-03-25 vvv
+#: last_checked: 2024-04-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5454,10 +5467,20 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
 #: osm_watch: way id="765539341" version="15" brb
-#: last_checked: 2024-03-07 (osm)
+#: last_checked: 2024-04-12 (mapillary)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
+# 
+#: next_check_id: AMALTENMARKT-2018
+#: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
+#: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
+#: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."
+#: osm_watch: way id="760022943" version="10" brb
+#: last_checked: 2024-04-12 (mapillary)
+#: check_frequency: 180d
+Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: last_checked: 2024-04-09
