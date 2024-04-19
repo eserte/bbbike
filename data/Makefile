@@ -1866,7 +1866,9 @@ ${PERSISTENTTMPDIR}/naked-fragezeichen:	fragezeichen-orig
 .for plz in ${BERLIN_PLZ_RANGES}
 ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data:	Berlin.coords.data
 	${PERL} -F'\|' -nale '$$F[2] =~ m{^$(plz)} and print' Berlin.coords.data |\
-	    grep -v '[US]-Bhf ' | egrep -v ' \(Kolonie|Siedlung|Gaststätte|Insel|geplant\)' | egrep -v '^(Kolonie |KGA |Siedlung |Güterbahnhof )' \
+	    ${NO_LOCALE} grep -v '[US]-Bhf ' |\
+	    ${NO_LOCALE} egrep -v ' \(Kolonie|Siedlung|Gaststätte|Insel|geplant\)' |\
+	    ${NO_LOCALE} egrep -v '^(Kolonie |KGA |Siedlung |Güterbahnhof )' \
 		> ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data~
 	mv ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data~ ${PERSISTENTTMPDIR}/Berlin$(plz)XXX.coords.data
 
