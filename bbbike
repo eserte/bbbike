@@ -2093,9 +2093,11 @@ unless($skip_features{"strassen"}) {
 				require BBBikeAdvanced;
 				search_anything();
 			    });
-	     $plzmcmd = $ausm->command
-		 (-label => M"Komplette Straßenliste",
-		  -command => sub { choose_from_plz(-interactive => 1) });
+	     if (!$city_obj->is_osm_source) {
+		 $plzmcmd = $ausm->command
+		     (-label => M"Komplette Straßenliste",
+		      -command => sub { choose_from_plz(-interactive => 1) });
+	     }
 	 },
 	);
     $strcm->separator;
