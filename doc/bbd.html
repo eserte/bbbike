@@ -648,6 +648,21 @@ use the <code>by:</code> directive.
 <dd>
 Some postprocessing code may add the following line with the
 descriptive text <i>string</i> to the <code>fragezeichen</code> file.
+<dt class="POD_ITEM"><a name="osm_watch_relation_w"><code>osm_watch: relation|way|node id=&quot;<i>element_id</i>&quot; version=&quot;<i>version</i>&quot;</code></a>
+<dt><a name="osm_watch_note_note_"><code>osm_watch: note <i>note_id</i> <i>comment_num</i></code></a>
+<dt><a name="osm_watch_closed_not"><code>osm_watch[closed]: note <i>note_id</i> <i>comment_num</i></code></a>
+<dd>
+Link the following bbd item to an OpenStreetMap (OSM) element
+(<code>relation</code>, <code>way</code>, <code>node</code>) or note. <i>version</i> or <i>comment_num</i>
+specify the latest checked version. The <code>[closed]</code> variant is used
+for notes which are already closed.
+<p class="POD_TEXT">
+<code>osm_watch</code> directives cause links when editing <code>.bbd</code> files using
+emacs with <code>bbbike-mode</code>. <code>miscsrc/fragezeichen2org.pl</code> also
+generates links. <code>miscsrc/check-osm-watch-list.pl</code> may be used to
+find changed OSM elements and notes (the watch list for this script is
+created by <code>miscsrc/bbd_to_osm_watch_list</code>).
+</p>
 <dt class="POD_ITEM"><a name="complete_yes_no"><code>complete: yes<i>|</i>no</code></a>
 <dd>
 May be used to mark a feature as complete or incomplete (e.g. cycle
