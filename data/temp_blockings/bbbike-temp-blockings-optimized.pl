@@ -820,16 +820,7 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 246200126 (bis 19.04.2024)
-	2::inwork 9220,-90110 9342,-90771 9366,-90900
-',
-         'from' => 1711263600,
-         'id' => 722,
-         'text' => 'Uebigau-Wahrenbrück, B101: Bahnübergang gesperrt, 25.03.2024 08:00 Uhr bis 19.04.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1713535200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4717,18 +4708,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147345063 (inaktiv)
-# REMOVED (mittlerweile auch bei fritz "nicht betroffen") --- #: add_fragezeichen: Ist die Unterführung tatsächlich für Radfahrer und Fußgänger gesperrt? --- #: XXX Widersprüchliche Angaben bei fritz (auch betroffen) und vmz (nicht betroffen) --- #: XXX auch widersprücliche Angaben zum Ende: fritz Ende August 2020, vmz Ende Januar 2020
-#: source_id: viz2021:13.472953,52.616993,15.04.2024,06:00 (bis 19.04.2024)
-	2::inwork 14756,23622 14776,23612
-',
-         'from' => 1713119808,
-         'id' => 3194,
-         'text' => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 15.04.2024 06:00 Uhr bis 19.04.2024 12:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1713520800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7724,64 +7704,7 @@ Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/04/wasserrohrbruch-kaiserdamm/
-#: by: https://nitter.cz/VIZ_Berlin/status/1651571162990641153#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1651799339277189122#m
-#: by: https://nitter.cz/wasserbetriebe/status/1651880988694257665#m (Reparatur: vier Wochen)
-#: by: https://www.rbb-online.de/abendschau/videos/20230502_1930/Kaiserdamm-bleibt-fuer-mindestens-ein-halbes-Jahr-gesperrt.html (also bis Herbst 2023)
-#: by: https://www.rbb24.de/panorama/beitrag/2023/05/berlin-charlottenburg-kaiserdamm-mindestens-halbes-jahr-gesperrt.html
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/reparaturarbeiten-am-rohrsystem-dauern-bis-november_a380380
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1321481.php
-#: by: https://www.nd-aktuell.de/artikel/1173091.u-u-kein-alexanderplatz-szenario-am-kaiserdamm.html
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8558 (Anfrage)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8561 (Antrag)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8584 (Antrag)
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/bezirkselternausschuss-sich-sorgt-wegen-kaiserdamm-sperrung-um-kinder_a381772
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/gruene-und-cdu-regen-24-stunden-baustelle-an_a383005
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8629 (Antrag)
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-peilen-september-an_a390638
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1361337.php (Sanierungsarbeiten bis KW 38/2023)
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/kaiserdamm-wird-saniert_a392066
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-geben-kaiserdamm-temporaer-frei_a394844
-#: by: https://viz.berlin.de/aktuelle-meldungen/kaiserdamm-havariebaustelle-vsl-ab-14.12.2023-offen/
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-geben-mitte-dezember-vier-spuren-frei_a401282 (komplett fertig im April 2024)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1396238.php
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1434212.php
-#: by[nocache]: https://nitter.net/wasserbetriebe/status/1735295013901250926#m
-#: by[nocache]: https://twitter.com/wasserbetriebe/status/1766011951707038018 (ab ~19. April 2024 wieder offen?)
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wasserbetriebe-geben-kaiserdamm-auch-stadteinwaerts-frei_a411893
-#: source_id: viz2021:13.297353,52.510969,27.04.2023,15:24 (nur für Kfz-Verkehr gesperrt, kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.289238,52.510438,27.04.2023,15:24 (inaktiv)
-#: source_id: viz2021:13.294291,52.510765,27.04.2023,15:24 (bis 31.12.2023) (bis 14.12.2023) inaktiv)
-#: source_id: viz2021:13.296558,52.51092,14.12.2023,15:00 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024) (inaktiv)
-#: source_id: viz2021:13.29724,52.51059,11.03.2024,07:00 (Suarezstr., bis 22.03.2024) (inaktiv)
-#: source_id: viz2021:13.2892,52.5104,27.03.2024,18:13 (bis 19.04.2024) (inaktiv)
-#: source_id: viz2021:13.296558,52.51092,14.12.2023,14:30 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 28.03.2024) (bis 19.04.2024)
-#: also_indoor: traffic (H,G,B,W)
-#: osm_watch: way id="4446505" version="34"
-#: osm_watch: way id="176621906" version="27"
-#: osm_watch: way id="4525429" version="22"
-#: osm_watch: way id="1212493766" version="4"
-#: osm_watch: note 3916787 3
-#: last_checked: 2024-04-03 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2024-04-19 vvv
-# REMOVED (Radweg existiert mittlerweile) --- Kaiserdamm	q4::inwork; 3069,11551 3159,11562 3320,11583
-Suarezstr.: Umweg über 50m westlich gelegene Fußgängerampel	q4::inwork 3152,11529 3159,11562
-Suarezstr.	q3::inwork 3054,11240 3152,11529
-Windscheidstr.	q4::inwork 3185,11506 3152,11529
-# REMOVED (hier nicht mehr) --- Fritschestr.	q3::inwork 3339,11433 3320,11583
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3988,
-         'text' => 'Suarezstr. und Windscheidstr.: Anbindung an Kaiserdamm gesperrt, lange Umwege, voraussichtlich bis 19. April 2024',
-         'type' => 'handicap',
-         'until' => 1713538800
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
 #: note: Halteverbotsschilder bis 31.01.2024, wurden trotz Baustelle nicht verlängert, mittlerweile bis 17.05.2024
@@ -8229,6 +8152,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778682517517631737 (voraussichtlich bis Ende April 2024)
 #: by: https://berliner-abendblatt.de/berlin-news/risse-an-fassade-von-schoeneberger-wohnhaus-einsturzgefahr-id249463
 #: by: https://berliner-abendblatt.de/berlin-news/stahlkonstruktion-soll-schoeneberger-wohnhaus-abstuetzen-id249921
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grunewaldstrasse-gesperrt_a413459
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
 #: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024)
 #: source_id: bvg2021:n7#BVG346248_0
@@ -8306,6 +8230,16 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22. April 2024 bis 30. April 2024',
          'type' => 'handicap',
          'until' => 1714514399
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1439363.php
+	q4::inwork -7529,4853 -7582,4850 -7643,4846 -7797,4850 -8098,4899
+',
+         'from' => 1713650400,
+         'id' => 4044,
+         'text' => 'Krampnitzer Weg: Bauarbeiten, Erneuerung der Fahrbahn, vom 22.04.2024 bis 05.07.2024',
+         'type' => 'handicap',
+         'until' => 1720216800
        }
      
 );
