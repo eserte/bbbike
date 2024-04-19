@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2013,2014,2015,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2014,2015,2017,2018,2019,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -420,6 +420,24 @@ sub start_bbbike_with_datadir {
 	# no forking here
 	system 1, Win32Util::win32_quote_list(@cmd);
 	exit 0;
+    } elsif ($ENV{DOCKER_BBBIKE}) {
+	# If bbbike_chooser.pl was started as the CMD within a docker
+	# container, then it must not exit prematurely as this would
+	# finish the container, too. So just withdraw it, but keep it
+	# running until bbbike exits.
+	my $pid = fork;
+	die "fork failed: $!" if !defined $pid;
+	if ($pid == 0) {
+	    system @cmd;
+	    if ($? != 0) {
+		die "Problems with @cmd?";
+	    }
+	    CORE::exit(0);
+	}
+	$mw->withdraw;
+	$mw->update;
+	waitpid $pid, 0;
+	$mw->destroy;
     } else {
 	if (fork == 0) {
 	    exec @cmd;

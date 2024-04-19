@@ -49,9 +49,9 @@ EOF
 
 sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github] [--bbbike-args "..."] [--branch ...]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github] [--bbbike-prog ...] [--bbbike-args "..."] [--branch ...]
 	 [--no-feature-pdf] [--no-feature-svg] [-no-feature-remote]
-	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag]
+	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag] [--share-data-osm]
 
 Note that --install-suggests would install quite a lot...
 EOF
@@ -254,9 +254,9 @@ EOF
 	    if ($opt{branch}) {
 		$branch_args = " --branch $opt{branch}";
 	    }
-	    $docker_cmd = "git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args && bbbike/bbbike $opt{'bbbike-args'}";
+	    $docker_cmd = "git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args && bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
 	} elsif ($opt{src} eq 'local') {
-	    $docker_cmd = "/bbbike/bbbike $opt{'bbbike-args'}";
+	    $docker_cmd = "/bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
 	}
     } elsif ($opt{src} =~ m{\.deb$}) {
 	my $base_src = basename $opt{src};
@@ -267,10 +267,14 @@ WORKDIR /tmp
 RUN apt-get update
 RUN sh install-deb $add_apt_args ./$base_src
 EOF
-	$docker_cmd = "bbbike $opt{'bbbike-args'}";
+	$docker_cmd = "$opt{'bbbike-prog'} $opt{'bbbike-args'}";
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
     }
+
+    $dockerfile .= <<'EOF';
+ENV DOCKER_BBBIKE 1
+EOF
 
     if (defined $username) {
 	$dockerfile .= <<"EOF";
@@ -318,6 +322,14 @@ EOF
 	    if (-r "$ENV{HOME}/$apikeyfile") {
 		push @volume_options, '-v', "$ENV{HOME}/$apikeyfile:/home/$username/$apikeyfile:ro";
 	    }
+	}
+    }
+    if ($opt{'share-data-osm'}) {
+	my $data_osm_directory = "$ENV{HOME}/.bbbike/data-osm";
+	if (!-d $data_osm_directory) {
+	    warning "No directory '$data_osm_directory' available, skipping --share-data-osm option";
+	} else {
+	    push @volume_options, '-v', "$data_osm_directory:/home/$username/.bbbike/data-osm"; # not read-only, host system may profit from downloads in container
 	}
     }
 
@@ -1060,6 +1072,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       src     => 'local',
 	       branch  => undef,
 	       debug   => 0,
+	       'bbbike-prog' => 'bbbike',
 	       'bbbike-args' => '',
 	       'install-recommends' => 1,
 	       'install-suggests' => 0,
@@ -1069,6 +1082,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'feature-extras' => 1,
 	       'invalidate-apt' => 0,
 	       'docker-image' => undef,
+	       'share-data-osm' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -1076,6 +1090,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "src=s",
 	       "branch=s",
 	       'debug!',
+	       'bbbike-prog=s',
 	       'bbbike-args=s',
 	       'install-recommends!',
 	       'install-suggests!',
@@ -1085,6 +1100,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'feature-extras!',
 	       'invalidate-apt!',
 	       'docker-image=s',
+	       'share-data-osm!',
 	      )
 	or usage_gui;
     gui($doit, %opt);
@@ -1248,6 +1264,10 @@ To start bbbike from an existing .deb package, use
 Supply bbbike options:
 
     ./miscsrc/docker-bbbike gui --bbbike-args="-lazy -advanced"
+
+Run bbbike_choose for other cities using OSM data:
+
+    ./miscsrc/docker-bbbike gui --bbbike-prog miscsrc/bbbike_chooser.pl --share-data-osm
 
 =head2 TESTS (like in github actions)
 
