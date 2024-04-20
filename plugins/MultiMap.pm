@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.06;
+$VERSION = 2.07;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -178,16 +178,16 @@ sub register {
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LGB"} =
-	    { name => "LGB Brandenburg Topo DTK10",
+	    { name => "LGB Brandenburg Topo DTK10 (via mc)",
 	      callback => sub { showmap_mapcompare(@_, maps => 'lgb-topo-10') },
-	      callback_3 => sub { show_bbviewer_menu(@_) },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, maps => 'lgb-topo-10') },
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LSB"} =
-	    { name => "LS Brandenburg Verkehrsmengen",
+	    { name => "LS Brandenburg Verkehrsstärke 2021",
 	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_bbviewer(@_, layers => 'verkehrsstaerke') },
-		  callback_3_std => sub { showmap_url_bbviewer(@_) },
+	       ? (callback => sub { showmap_bbviewer(@_, layers => 'verkehrsstaerke-2021') },
+		  callback_3 => sub { show_bbviewer_menu(@_) },
 		 )
 	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
 	      ),
@@ -1935,11 +1935,13 @@ sub showmap_url_bbviewer {
     my(%args) = @_;
     my $layers = delete $args{layers} || 'verkehrsstaerke';
     my $layerids = {
-		    verkehrsstaerke => '10021,2062,22,10,11,7,8,5,6',
+		    'verkehrsstaerke-2015' => '10021,2062,22,10,11,7,8,5,6',
+		    'verkehrsstaerke-2021' => '10021,2062,10,7,5,11,8,6,33',
 		    flurstuecke     => '291-bg,9001,9000,159,149',
 		   }->{$layers};
     my $baseurl = {
-		   verkehrsstaerke => 'https://viewer.brandenburg.de/strassennetz/',
+		   'verkehrsstaerke-2015' => 'https://viewer.brandenburg.de/strassennetz/',
+		   'verkehrsstaerke-2021' => 'https://viewer.brandenburg.de/strassennetz/',
 		   flurstuecke     => 'https://bb-viewer.geobasis-bb.de/',
 		  }->{$layers};
     die "Unhandled layers value '$layers'" if !$layerids || !$baseurl;
@@ -1974,13 +1976,17 @@ sub show_bbviewer_menu {
     my $link_menu = $w->Menu(-title => 'bb-viewer',
 			     -tearoff => 0);
     $link_menu->command
+	(-label => 'Verkehrsstärke 2015',
+	 -command => sub { showmap_bbviewer(layers => 'verkehrsstaerke-2015', %args) },
+	);
+    $link_menu->command
 	(-label => 'Flurstücke',
 	 -command => sub { showmap_bbviewer(layers => 'flurstuecke', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
 	(-label => ($lang eq 'de' ? "Link kopieren" : 'Copy link'),
-	 -command => sub { _copy_link(showmap_url_mapcompare(%args, maps => 'lgb-topo-10')) },
+	 -command => sub { _copy_link(showmap_url_bbviewer(%args, layers => 'verkehrsstaerke-2021')) },
 	);
 
     $w->{$menu_name} = $link_menu;
