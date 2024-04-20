@@ -348,9 +348,8 @@ png-to-jpg:	\
 # loading.gif is from jquery
 
 # Creation of ropeway*.png:
-#   convert -geometry 16x16 ropeway.svg ropeway.png
-#   convert -geometry 10x10 ropeway.svg ropeway_klein.png
-#   convert -geometry 5x5 ropeway.svg ropeway_mini.png
+#   Manually converted from ropeway.svg using Gimp (select by color, scale image to 12x16, 8x10 and 4x5 respectively.
+#   An earlier version used ImageMagick's convert for the conversion.
 
 # wget -O QR_icon_16x16.png https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QR_icon.svg/16px-QR_icon.svg.png
 
