@@ -4083,7 +4083,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-03-30
+#: last_checked: 2024-04-20
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4169,7 +4169,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-04-19
+#: last_checked: 2024-04-20
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4327,7 +4327,7 @@ Marktplatz Adlershof: Einbahnstraßenregelung wegen Umbauarbeiten	1s:q3:inwork 20
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10330 (Antrag zu Elterntaxis)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2024-04-10
+#: last_checked: 2024-04-20
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4395,16 +4395,17 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2024-04-10 vvv
+#: last_checked: 2024-04-20 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
 #: osm_watch: way id="1084269868" version="14"
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
+Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 #: osm_watch: way id="1090655354" version="14"
 Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17640,8627 17619,8558
-Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17581,8422
+Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17627,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
 #: osm_watch: way id="1084269869" version="14"
@@ -4422,11 +4423,18 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 1768
 #: last_checked ^^^
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
+#: note: Halteverbotsschilder bis 31.12.2024
+#: check_frequency: 90d vvv
+#: next_check: 2024-12-31 vvv
+#: last_checked: 2024-04-20
 #: XXX vermutlich wird die Fahrbahn danach asphaltiert sein -> qualitaet_s anpassen!
-#: last_checked: 2024-04-10
-Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578
+Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 #: last_checked: 2024-04-10
 Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644
+#: last_checked: 2024-04-10
+Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,8450 17794,8429
+#: next_check ^^^
+#: check_frequency ^^^
 # 
 # REMOVED (hat wohl nichts mit der Chausseestr. (mehr) zu tun) --- #: next_check_id: CHAUSSEE-2020
 #: by: https://www.berliner-woche.de/mitte/c-bauen/abschluss-des-stauraumprogramms-wasserbetriebe-bauen-an-der-chausseestrasse_a357698 (Abschluss des Projekts bis 2026)
@@ -4446,7 +4454,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-04-10
+#: last_checked: 2024-04-20
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4528,7 +4536,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2024-04-05 (architektur-urbanistik)
+#: last_checked: 2024-04-20
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4995,9 +5003,10 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Infoveranstaltung)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7260/docs/GR_berlin_schoeneweide_wegeleitung_20240419.pdf (13.05.2024)
 #: last_checked: 2024-03-17 (krickstadt)
 #: check_frequency: 360d
-#: next_check: 2024-05-01
+#: next_check: 2024-05-13
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 # 
 #: next_check_id: SCHOENEWEIDE-2018

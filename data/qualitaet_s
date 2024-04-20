@@ -2470,8 +2470,10 @@ Heinrich-Dathe-Platz: Asphalt	Q1 18456,10454 18442,10471
 Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18478,10406 18418,10365 18394,10348
 Heinrich-Dathe-Platz: Gehwegplatten, Kleinsteinpflaster	Q1 18418,10365 18387,10406
 (Heinrich-Dathe-Platz - Erich-Kurz-Str.): Betonplatten	Q1 18387,10406 18350,10393
-Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
-Dathepromenade: große Gehwegplatten	Q1 18101,10169 18091,10112 17995,10070
+Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183
+Dathepromenade: Betonpflaster	Q1 18132,10183 18094,10167 18058,10166
+Dathepromenade: Betonpflaster	Q1 18094,10167 18091,10112
+Dathepromenade: große Gehwegplatten	Q1 18091,10112 17995,10070
 (Sewanstr. - Dathepromenade): Verbundsteinpflaster	Q1 18025,10152 18058,10166
 (Erieseering - Dathepromenade): große Gehwegplatten	Q1 18319,10249 18314,10260
 Rhododendronweg: Verbundsteinpflaster	Q1 16146,12881 16148,12772 16200,12771 16197,12880
@@ -3121,7 +3123,7 @@ Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
 Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
 Balatonstr.: mäßiger Beton	Q2 17479,10452 17741,10386
-Balatonstr.: mäßiger Beton	Q1 17741,10386 17791,10375 17915,10350 17946,10344 17956,10372
+Balatonstr.: mäßiger Beton	Q1 17741,10386 17791,10375 17915,10350 17946,10344 17960,10378
 Balatonstr.: mäßiger Beton	Q1 17791,10375 17793,10382 17822,10490 17823,10495
 (Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17729,10331 17705,10232 17624,10249 17605,10199
 Sewanstr. [Wohngebiet]: Beton	Q1 17883,10185 17705,10232
@@ -3218,7 +3220,7 @@ Wörther Str.: aufgepflasterte Abschnitte	Q1 11247,14578 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1 8143,10903 8190,10960
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
-Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17956,10372 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
+Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17960,10378 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Hönower Str.: Asphalt	Q0 18660,9410 18735,9421
 Hönower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18875,9570
 Hönower Str.: Asphalt	Q0 18660,9410 18626,9406
@@ -9038,12 +9040,12 @@ Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 (westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22416,14148
 westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22416,14148 22462,14172 22639,14384 22679,14450 22670,14520 22620,14673 22528,14769 22455,14815 22462,14846 22439,14873 22378,14904 22323,15119
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18132,10183 18114,10215
-(Erieseering - am Tränkegraben): Parkweg	Q1 18114,10215 18085,10244 18081,10312 18042,10392
+(Erieseering - am Tränkegraben): Parkweg	Q1 18114,10215 18085,10244 18076,10324 18042,10392
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18042,10392 18039,10398
 (Erieseering - am Tränkegraben): Parkweg	Q1 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0 17848,11204 17893,11146
 (Zachertstr. - am Tränkegraben): unbefestigt mit Pflasterreihen	Q2 17893,11146 17905,11122
-(Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619
+(Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619
 (Erieseering - Upstallweg): unbefestigt	Q2 18114,10215 18112,10281 18121,10314 18128,10343 18125,10364 18128,10389 18116,10403
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17693,11035 17680,11058

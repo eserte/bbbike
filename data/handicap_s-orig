@@ -70,7 +70,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-04-10
+#: last_checked: 2024-04-20
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -569,7 +569,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
-#: last_checked: 2024-03-30 vvv
+#: last_checked: 2024-04-20 vvv
 #: also_indoor: traffic (G,B)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
@@ -864,7 +864,7 @@ Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg ¸ber Gehwege	q3::inw
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-04-10
+#: last_checked: 2024-04-20
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2040,8 +2040,8 @@ Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18478,10406 18456,10454 18442,104
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18478,10406 18418,10365 18394,10348
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18418,10365 18387,10406
 (Heinrich-Dathe-Platz - Erich-Kurz-Str.): Fuﬂg‰nger	q2 18387,10406 18350,10393
-Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
-Dathepromenade: Fuﬂg‰nger	q1 18101,10169 18091,10112 17995,10070
+Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18094,10167 18058,10166
+Dathepromenade: Fuﬂg‰nger	q1 18094,10167 18091,10112 17995,10070
 #: XXX_prog BS (an beiden Seiten, ansonsten -> einige Fuﬂg‰nger, q1)
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17970,10132 17905,10122
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
@@ -2241,8 +2241,8 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 (Blockpark): Fuﬂg‰nger, Bordstein	q2 16300,10753 16265,10681
 (Blockpark): Fuﬂg‰nger	q1 16265,10681 16246,10641 16193,10593
 #: XXX_prog BS am Upstallweg, ansonsten entfernen
-Balatonstr.: Bordstein	q2 17956,10372 17946,10344
-Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17915,10350 17956,10372 18039,10398
+Balatonstr.: Bordstein	q2 17960,10378 17946,10344
+Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17915,10350 17960,10378 18039,10398
 #: note: an Wochenmarkt-Tagen (Heinrich-Dathe-Platz) besonders im ˆstlichen Abschnitt mehr Fuﬂg‰nger
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
@@ -3195,9 +3195,9 @@ Preuﬂensiedlung: einige Fuﬂg‰nger	q1 20971,1046 20957,1043 20850,963
 (Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21688,589 21673,590
 #: XXX_prog: BS s¸dliches Ende, kann aber einige Meter weiter s¸dlich umfahren werden, ansonsten: einige Fuﬂg‰nger, q1
 Erieseering: Bordstein	q3 18141,10173 18132,10183
-(Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18114,10215 18085,10244 18081,10312 18042,10392 18039,10398 18026,10490 18034,10567
+(Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18114,10215 18085,10244 18076,10324 18042,10392 18039,10398 18026,10490 18034,10567
 #: note: am nˆrdlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am s¸dlichen Ende fehlt so ein Schild
-(Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17892,10713 17870,10619
+(Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619
 (am Tr‰nkegraben - Moldaustr.): einige Fuﬂg‰nger	q1 17870,10619 17856,10560 17864,10537 17856,10508
 #: XXX_prog: BS s¸dliches Ende
 entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
@@ -4907,6 +4907,8 @@ Lugierring: einige Fuﬂg‰nger	q2 20116,836 20142,824
 (zur Meinolfstr.): einige Fuﬂg‰nger	q2 19847,678 19833,643
 # 
 (Ziekowstr. - Wilhelm-Blume-Allee): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 2570,20837 2469,20812
+# 
+Ruth-Baumgarte-Str. (Mittelstreifen): einige Fuﬂg‰nger	q2 17608,8483 17599,8485
 # 
 ######################### User Contributions #################################
 # 

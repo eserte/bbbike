@@ -4627,7 +4627,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
-#: last_checked: 2024-03-05 (okas)
+#: last_checked: 2024-04-15 (okas)
 #: check_frequency: 90d
 #: next_check: 2024-04-30
 # REMOVED --- #: next_check: 2024-01-01
@@ -5067,7 +5067,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: last_checked: 2024-03-05 (okas)
+#: last_checked: 2024-04-16 (youtube)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
@@ -5174,18 +5174,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1727713800
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-14
-	q4::temp::play 11258,10682 11334,10527
-',
-         'from' => 1714428000,
-         'id' => 3370,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
-         'text' => 'Dresdener Str.: zwischen Erkelenzdamm und NKZ freitags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
@@ -5716,7 +5705,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1716415200,
          'id' => 3551,
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, voraussichtlich von Ende Mai bis Ende September (außer Sommerferien)',
+         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
          'type' => 'handicap',
          'until' => 1727454600
        },
@@ -6922,7 +6911,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 ',
          'from' => 1718402400,
          'id' => 3815,
-         'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 16. Juni 2023 bis 28. Juli 2023',
+         'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, genaue Termine 2024 stehen noch nicht fest',
          'type' => 'handicap',
          'until' => 1722184200
        },
@@ -6961,27 +6950,16 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
-#: by: http://spielstraßen.de/uebersicht.php?date=20230620
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/fuer-eine-ruhigere-steinmetzstrasse_a410936
-	q4::temp::play 7657,9942 7698,10147
-',
-         'from' => 1712959200,
-         'id' => 3829,
-         'text' => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 14. April 2024 bis zum 27. Oktober 2024',
-         'type' => 'handicap',
-         'until' => 1729893599
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
 #: by: http://spielstraßen.de/uebersicht.php?date=20240401
 	q4::temp::play 5956,7686 5812,7685
 ',
-         'from' => 1720044000,
+         'from' => 1712181600,
          'id' => 3830,
-         'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, Juli 2024 bis November 2024',
+         'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2024',
          'type' => 'handicap',
          'until' => 1730502000
        },
@@ -7232,13 +7210,15 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,790304#msg-790304 (Verlängerung bis 08.07.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,792696#msg-792696 (Vollsperrung im gesamten Bereich Königsplatz vom 29.06.2024 bis 10.8.2024, danach weitere Arbeiten)
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Bauarbeiten bis 20. Oktober 2024)
+#: by: https://www.bahninfo-forum.de/read.php?9,413132,797608#msg-797608 (Ende der Bauarbeiten am 20.10.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024)
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
+#: priority: #A vvv
 #: last_checked: 2024-04-08 (okas) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-12-12 vvv
+#: next_check: 2024-06-28 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="2"
 	q4::inwork 17826,6495 17991,6431
@@ -7248,10 +7228,11 @@ Wuhlewanderweg	2::inwork 22050,6619 21976,6848
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 ',
          'from' => undef,
          'id' => 3901,
-         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Dezember 2024',
+         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Ende Oktober 2024',
          'type' => 'handicap',
          'until' => 1734019200
        },
@@ -7433,11 +7414,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        undef,
        {
-         'data' => '	2::inwork -20042,29724 -21490,30216
+         'data' => '#: source_id: LS/223-P/23/167
+	2::inwork -20042,29724 -21490,30216
 ',
          'from' => 1696316400,
          'id' => 3933,
-         'source_id' => 'LS/223-P/23/167',
          'text' => 'Grünefeld - Börnicke: Fahrbahnsanierung, Sperrung vom 04.10.2023 bis 30.04.2024',
          'type' => 'gesperrt',
          'until' => 1714485600
@@ -7485,11 +7466,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        {
-         'data' => '	2::inwork 24027,-86688 23957,-86937 23869,-87065
+         'data' => '#: source_id: LS/222-C/23/138
+	2::inwork 24027,-86688 23957,-86937 23869,-87065
 ',
          'from' => 1698566400,
          'id' => 3941,
-         'source_id' => 'LS/222-C/23/138',
          'text' => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1748617200
@@ -7560,7 +7541,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 #: also_indoor: traffic (G,W)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-04-20 vvv
 # REMOVED --- #: next_check: 2024-03-15 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
@@ -8233,6 +8214,10 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1439363.php
+#: source_id: bvg2021:234#BVG345341_0
+#: by: https://www.berliner-woche.de/kladow/c-verkehr/sperrung-wegen-neuer-fahrbahn_a413546
+#: XXX: die BVG-Verkehrsmeldung geht bis Ende August
+#: next_check: 2024-08-31
 	q4::inwork -7529,4853 -7582,4850 -7643,4846 -7797,4850 -8098,4899
 ',
          'from' => 1713650400,
@@ -8240,6 +8225,24 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Krampnitzer Weg: Bauarbeiten, Erneuerung der Fahrbahn, vom 22.04.2024 bis 05.07.2024',
          'type' => 'handicap',
          'until' => 1720216800
+       },
+       {
+         'data' => '	q4::temp::play 9570,10566 9556,10666
+',
+         'from' => 1713132000,
+         'id' => 4045,
+         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 16. April bis zum 15. Oktober (außer Sommerferien) ',
+         'type' => 'gesperrt',
+         'until' => 1729009800
+       },
+       {
+         'data' => '	2::inwork 14641,10552 14608,10409
+',
+         'from' => 1713736800,
+         'id' => 4046,
+         'text' => 'Markgrafendamm: voraussichtlich Sperrung der Fahrbahn vom 23.04.2024 bis 25.04.2024',
+         'type' => 'gesperrt',
+         'until' => 1714082400
        }
      
 );
