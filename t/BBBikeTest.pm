@@ -52,7 +52,7 @@ BEGIN {
 
 use BBBikeBuildUtil qw(get_pmake);
 use BBBikeProcUtil qw(double_forked_exec);
-use BBBikeUtil qw(bbbike_root is_in_path);
+use BBBikeUtil qw(bbbike_root is_in_path module_exists);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      libxml_parse_html libxml_parse_html_or_skip
@@ -993,42 +993,35 @@ sub image_ok ($;$) {
 
     my $fails = 0;
 
-    if (0) { # some png images cannot be read (see t/images.t), wbmp support missing
-    SKIP: {
-	    Test::More::skip("Imager does not handle .wbmp files yet", 2)
-		    if $in =~ /\.wbmp$/;
+ RUN_TESTS: {
+    RUN_WITH_IMAGER: { # prefer Imager.pm
+	    last RUN_WITH_IMAGER if $in =~ /\.wbmp$/; # Imager does not handle .wbmp files yet
 	    my $mod = $in =~ /\.xpm$/ ? 'Imager::Image::Xpm' : $in =~ /\.xbm/ ? 'Imager::Image::Xbm' : 'Imager';
-	    Test::More::skip("$mod needed for better image testing", 2)
-		    if !eval qq{ require $mod; 1 };
-	    my $full_testlabel = (ref $in ? "content" : "file '$in'") . "$testlabel";
+	    last RUN_WITH_IMAGER if !eval qq{ require $mod; 1 };
+	    last RUN_WITH_IMAGER if $in =~ /\.gif$/ && !module_exists('Imager::File::GIF');
+	    my $full_testlabel = "$mod runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
 	    my $img = $mod->new((ref $in ? (data => $$in) : (file => $in)));
 	    Test::More::ok($img, "load ok - $full_testlabel")
-		    or Test::More::diag(Imager->errstr());
-	    Test::More::skip("image needed for next test", 1) if !$img;
-	    Test::More::cmp_ok($img->getwidth, ">", 0, "image has a width - $full_testlabel");
+		    or do {
+			Test::More::diag(Imager->errstr());
+			$fails++;
+		    };
+	    if (!$img) {
+		Test::More::fail("image needed for width test");
+	    } else {
+		Test::More::cmp_ok($img->getwidth, ">", 0, "image has a width - $full_testlabel")
+			or $fails++;
+	    }
+	    last RUN_TESTS;
 	}
-    } elsif (0) { # anytopnm does not return with non-zero on problems
-    SKIP: {
-	    Test::More::skip("IPC::Run needed for better image testing", 2)
-		    if !eval { require IPC::Run; 1 };
-	    Test::More::skip("anytopnm needed for better image testing", 2)
-		    if !is_in_path('anytopnm');
-	    
-	    my $out;
-	    my $full_testlabel = "anytopnm runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
-	    Test::More::ok(IPC::Run::run(['anytopnm'], '<', $in, '>', \$out), $full_testlabel)
-		    or $fails++;
-	    Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel")
-		    or $fails++;
-	}
-    } else {
-    SKIP: {
+    SKIP: { # actually RUN_WITH_NETPBM, which is the last resort
 	    Test::More::skip("IPC::Run needed for better image testing", 2)
 		    if !eval { require IPC::Run; 1 };
 	    Test::More::skip("Image::Info 1.31 or better needed for better image testing", 2)
 		    if !eval { require Image::Info; Image::Info->VERSION(1.31) }; # support for .ico files and better .xbm detection
+
 	    my $ret = Image::Info::image_type($in);
-	    if ($ret->{error} && !ref $in && $in =~ m{\.wbmp$}) { # wbmp cannot be detected by Image::Info
+	    if ($ret->{error} && !ref $in && $in =~ m{\.wbmp$}) { # wbmp cannot be detected by Image::Info (wbmp has no file magic!)
 		$ret = {file_type => "WBMP" };
 	    }
 	    if ($ret->{error}) {
@@ -1054,7 +1047,7 @@ sub image_ok ($;$) {
 		Test::More::ok(IPC::Run::run([$converter], '<', $in, '2>', '/dev/null', '>', \$out), $full_testlabel)
 		    or $fails++;
 		Test::More::like(substr($out,0,2), qr{^P\d+}, "Output looks like a netpbm file$testlabel")
-		    or $fails++;
+			or $fails++;
 	    }
 	}
     }
