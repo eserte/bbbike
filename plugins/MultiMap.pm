@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.07;
+$VERSION = 2.08;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -37,16 +37,16 @@ sub register {
     my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
     # this order will be reflected in show_info
     if ($is_berlin) {
-	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Leaflet"} =
-	    { name => "Pharus (dein-plan, Leaflet)",
-	      callback => sub { showmap_deinplan_leaflet(@_) },
-	      callback_3_std => sub { showmap_url_deinplan_leaflet(@_) },
-	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
-	    };
 	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Web"} =
 	    { name => "Pharus (dein-plan, Web)",
 	      callback => sub { showmap_deinplan_web(@_) },
 	      callback_3_std => sub { showmap_url_deinplan_web(@_) },
+	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Leaflet"} =
+	    { name => "Pharus (dein-plan, Leaflet, 2016)",
+	      callback => sub { showmap_deinplan_leaflet(@_) },
+	      callback_3_std => sub { showmap_url_deinplan_leaflet(@_) },
 	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	    };
     }
