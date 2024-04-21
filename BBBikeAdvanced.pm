@@ -3985,9 +3985,10 @@ sub search_anything {
 			  ($probably_can_string_approx ? ["Ungenaue Suche (String::Approx)", "approx"] : ()),
 			 ) :
 			 (
-			  # XXX check which one will be used
-			  $probably_can_string_similarity ? ["Ungenaue Suche", "similarity"] : ()
-			  #($probably_can_string_approx ? ["Ungenaue Suche", "approx"] : ()),
+			  # XXX check which one will be tried first
+			  ($probably_can_string_approx ? ["Ungenaue Suche", "approx"] :
+			   ($probably_can_string_similarity ? ["Ungenaue Suche", "similarity"] : ())
+			  )
 			 )
 			)
 		       ) {
