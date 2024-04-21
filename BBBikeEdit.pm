@@ -3812,7 +3812,7 @@ sub temp_blockings_editor {
     my $get_formatted;
     Tk::grid($t->Button(-text => M("Preview"),
 			-command => sub {
-			    my($pl_entry, undef) = $get_formatted->();
+			    my($pl_entry, undef) = $get_formatted->('show');
 
 			    my $t = $main::top->Toplevel(-title => M("Temporäre Sperrungen") . " - " . M"Preview");
 			    my $txt = $t->Scrolled('ROText')->pack(qw(-fill both -expand 1));
@@ -3912,6 +3912,7 @@ sub temp_blockings_editor {
 	 });
 
     $get_formatted = sub {
+	my $active_action = shift || $action;
 	my $blocking_text = $get_text->();
 	$blocking_text =~ s/\'/\\\'/g; # mask for perl sq string
 	if ($blocking_text eq '') {
@@ -3980,12 +3981,12 @@ EOF
 	    }
 	}
 
-	if ($action eq 'replace_preserve_data') {
+	if ($active_action eq 'replace_preserve_data') {
 	    $pl_entry .= "###PRESERVE DATA\n";
 	} else {
 	    my $s = Strassen->new($file);
 	    if ($s->count == 0) {
-		if ($action eq 'show') {
+		if ($active_action eq 'show') {
 		    # don't warn if it's only written to STDERR or Tk widget
 		} else {
 		    $t->messageBox(-message => "Keine Blockierungen ausgewählt");
