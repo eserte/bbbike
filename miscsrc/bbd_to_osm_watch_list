@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -59,7 +59,8 @@ for my $infile (@infiles) {
 				 push @errors, "Consistent check failed for note $note_id: $note_id_seen{$note_id} != $comments in file $infile line $.";
 			     }
 			 } else {
-			     print join("\t", "note", $note_id, $comments), "\n";
+			     my $name = get_name($r, $infile);
+			     print join("\t", "note", $note_id, $comments, $name), "\n";
 			     $note_id_seen{$note_id} = $comments;
 			 }
 		     }
