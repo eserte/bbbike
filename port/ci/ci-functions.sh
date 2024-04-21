@@ -126,6 +126,7 @@ init_apt() {
 # - pdftk:                  compression in BBBikeDraw::PDFUtil (for non-cairo)
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
+# - libgif-dev:             required for GIF support when building Imager
 install_non_perl_dependencies() {
     if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
     then
@@ -183,7 +184,14 @@ install_non_perl_dependencies() {
         dejavu_package=fonts-dejavu
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package
+    if [ "$USE_SYSTEM_PERL" = "0" ]
+    then
+	imager_ext_packages=libgif-dev
+    else
+	imager_ext_packages=
+    fi
+
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $imager_ext_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
@@ -211,7 +219,13 @@ install_non_perl_dependencies() {
 install_perl_testonly_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	sudo apt-get install -y $apt_quiet --no-install-recommends libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl
+	test_packages="libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl"
+	if [ "$USE_BBBIKE_PPA" = "1" ]
+	then
+	    # Currently only available in bbbike ppa (XXX create also in mydebs)
+	    test_packages+=" libimager-image-base-perl"
+	fi
+	sudo apt-get install -y $apt_quiet --no-install-recommends $test_packages
     else
 	if [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
 	then
@@ -220,7 +234,7 @@ install_perl_testonly_dependencies() {
 	    # Does not compile on older Linux distributions,
 	    barcode_zbar_module="Barcode::ZBar~<0.10"
 	fi
-	cpanm --quiet --notest --skip-satisfied Email::MIME HTML::TreeBuilder::XPath $barcode_zbar_module
+	cpanm --quiet --notest --skip-satisfied Email::MIME HTML::TreeBuilder::XPath Imager::Image::Base $barcode_zbar_module
     fi
 }
 
