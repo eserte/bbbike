@@ -2360,11 +2360,14 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://www.berlin.de/special/shopping/flohmaerkte/1998249-1724959-grosser-antikmarkt-am-ostbahnhof.html
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
+#: by: https://www.visitberlin.de/de/event/antikmarkt-am-ostbahnhof
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2024-03-28
+#: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche?
+#: last_checked: 2024-04-21
 #: check_frequency: 120d
+#: next_check: 2024-05-12
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
 ',
@@ -3564,7 +3567,45 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
+#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
+#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20240421 (vor dem Roten Rathaus)
+#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
+#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
+#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
+#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+# REMOVED (Pariser Platz) ---	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+# REMOVED (Pariser Platz) ---	2::temp 8573,12325 8540,12420
+# REMOVED (Pariser Platz) ---	2::temp 8303,12216 8344,12221 8538,12245 8592,12252
+# REMOVED (Pariser Platz) ---	2::temp 8089,12190 8214,12205
+# REMOVED (Pariser Platz) ---	3::temp 8391,12389 8344,12221 8327,12174
+# REMOVED (Pariser Platz) ---	3::temp 8327,12174 8344,12221 8391,12389
+Rathausstr.	2::temp 10601,12521 10704,12595
+Jüdenstr.	2::temp 10704,12595 10783,12502
+#: tempex ^^^
+',
+         'from' => 1714428000,
+         'id' => 2565,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4,
+                              'start',
+                              '2021-05-03T00:00:00'
+                            ]
+                          ],
+         'text' => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2024',
+         'type' => 'gesperrt',
+         'until' => 1714586400
+       },
        undef,
        undef,
        undef,
@@ -4262,7 +4303,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-04-11 (mapillary)
+#: last_checked: 2024-04-21
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4371,7 +4412,21 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
+#: source_id: 2147343394 (hier bis Ende Dezember 2019; laut fritz bis 2019-12-20) (mittlerweile inaktiv)
+#: source_id: 2147346762 (bis Ende 2021) (inaktiv)
+#: source_id: viz2021:13.464867,52.610983,06.01.2021,15:00 (bis 21.12.2021) (inaktiv)
+#: source_id: viz2021:13.464833,52.610992,22.04.2024,06:00 (bis 26.04.2024)
+# REMOVED (offen) --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: note: manchmal (Wochenende?) kann man an den Absperrungen vorbeifahren (gesehen 2021-07-11) --- #: by: https://twitter.com/VIZ_Berlin/status/1417826573483483142 (Ende der Sperrung) --- #: priority: #B --- #: last_checked: 2021-07-11 (mapillary) --- #: check_frequency: 180d --- #: next_check: 2021-12-21
+	2::inwork 14338,22885 14276,22914
+',
+         'from' => 1713664800,
+         'id' => 3043,
+         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 22.04.2024 06:00 bis 26.04.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1714143600
+       },
        undef,
        undef,
        undef,
@@ -4648,32 +4703,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
-#: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
-#: last_checked: 2024-04-11 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2023-08-31 vvv
-# REMOVED (hier nicht) ---	2::inwork 13172,11651 13239,11567
-# REMOVED (hier nicht mehr) ---	2::inwork 13239,11567 13261,11572 13274,11585
-# REMOVED (hier nicht mehr) ---	2::inwork 13261,11572 13308,11515 13323,11497
-	2::inwork 13324,11529 13308,11515
-# REMOVED (nicht mehr) ---	2::inwork 13323,11497 13407,11416 13417,11416 13442,11400
-# REMOVED (nicht mehr) --- außerhalb der Arbeitszeiten Zugang möglich, Rampe ist aber noch enger als sonst	2::inwork 13513,11351 13442,11400 13416,11425 13427,11431
-# REMOVED ---	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
-# REMOVED ---	2::inwork 13172,11651 13202,11666
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1677970800,
-         'id' => 3159,
-         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt (Stand Ende Januar 2024: nur eine Anbindung zur Helsingforser Str. ist noch immer gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5308,7 +5338,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2023-12-30
+#: last_checked: 2024-03-05 (okas)
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -7482,12 +7512,14 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-04-09 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2024-11-01 vvv
+#: last_checked: 2024-04-21 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2024-11-01 vvv
+#: next_check: 2024-09-30 vvv
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 5
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
+#: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch: way id="389101374" version="17"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
@@ -8203,7 +8235,9 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'until' => 1738339200
        },
        {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
+#: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024)
+#: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024)
 	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
 ',
          'from' => 1713650400,
@@ -8243,6 +8277,19 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Markgrafendamm: voraussichtlich Sperrung der Fahrbahn vom 23.04.2024 bis 25.04.2024',
          'type' => 'gesperrt',
          'until' => 1714082400
+       },
+       {
+         'data' => '#: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
+#: last_checked: 2024-04-21
+#: check_frequency: 21d
+#: next_check: 2024-05-31
+	q4::inwork 11966,11832 11993,11978
+',
+         'from' => 1713696856,
+         'id' => 4047,
+         'text' => 'Krautstr.: Fahrbahn kann zwischen Lange Str. und Holzmarktstr. gesperrt sein, voraussichtlich bis 31.05.2024',
+         'type' => 'handicap',
+         'until' => 1717192800
        }
      
 );

@@ -53,7 +53,7 @@ Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/michaelkirchstra%C3%9Fe-22-23.408/post-22461
 #: XXX eigentlich zwei Ampeln
 #: osm_watch: way id="124182482" version="9"
-#: last_checked: 2024-04-03
+#: last_checked: 2024-04-21
 Michaelbrücke	F::inwork 11676,11839
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -158,10 +158,17 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-04-20
+#: last_checked: 2024-04-21
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
+# 
+#: note: Halteverbotsschilder bis 31.12.2025
+#: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
+#: last_checked: 2024-04-21
+#: check_frequency: 120d
+#: next_check: 2025-12-31
+Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: last_checked: 2024-04-06 vvv
@@ -3346,7 +3353,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-04-12 vvv
+#: last_checked: 2024-04-21 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
