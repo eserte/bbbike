@@ -223,10 +223,20 @@ EOF
 	    push @packages, qw(libwww-perl libxml-libxml-perl libgeo-metar-perl);
 	}
 	if ($opt{'feature-extras'}) {
-	    # Very experimental. Packages might be unavailable for the
-	    # current distro. dillo is a very lightweight browser
+	    # Very experimental. Packages might be unavailable for the current distro.
+	    # for MultiMap plugin
+	    push @optional_packages, qw(libgeo-proj4-perl);
+	    # for Geocoder plugin
+	    push @optional_packages, qw(libgeo-coder-osm-perl libgeo-coder-bing-perl);
+	    # for Salesman plugin
+	    push @optional_packages, qw(liblist-permutor-perl);
+	    # sunrise/set in info window
+	    push @optional_packages, qw(libastro-sunrise-perl);
+	    # for fulltext search (search_anything)
+	    push @optional_packages, qw(libstring-approx-perl);
+	    # dillo is a very lightweight browser
 	    # only capable displaying simple websites.
-	    push @optional_packages, qw(libgeo-proj4-perl libastro-sunrise-perl libgeo-coder-osm-perl libgeo-coder-bing-perl liblist-permutor-perl dillo);
+	    push @optional_packages, qw(dillo);
 	}
 	if ($opt{src} eq 'github') {
 	    push @packages, 'git';
