@@ -21913,7 +21913,8 @@ sub load_photo {
 		if (file_name_is_absolute($file)) {
 		    $path = $file;
 		} else {
-		    for my $try_file ((-d "$datadir/images" ? "$datadir/images/$file" : ()),
+		    for my $try_file ((defined $experimental_images_dir && -d $experimental_images_dir ? "$experimental_images_dir/$file" : ()),
+				      (-d "$datadir/images" ? "$datadir/images/$file" : ()),
 				      "$FindBin::RealBin/images/$file",
 				     ) {
 			my $try_path = try_image_suffix($try_file);

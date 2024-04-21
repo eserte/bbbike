@@ -37,7 +37,7 @@ use vars
      $do_activate_temp_blockings $show_active_temp_blockings
      $current_temp_blockings_ms $current_temp_blockings_net
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
-     %can_handle_image @image_type_order $register_window_adjust
+     %can_handle_image @image_type_order $experimental_images_dir $register_window_adjust
      $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button
     );
 
