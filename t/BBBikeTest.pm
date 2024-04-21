@@ -1014,6 +1014,32 @@ sub image_ok ($;$) {
 	    }
 	    last RUN_TESTS;
 	}
+    RUN_WITH_GD: { # GD.pm is just used for wbmp
+	    last RUN_WITH_GD if $in !~ /\.wbmp$/; # only GD support
+	    last RUN_WITH_GD if !eval q{ require GD; 1 };
+	    last RUN_WITH_GD if !GD::Image->can('newFromWBMP');
+	    my $full_testlabel = "GD runs fine with image " . (ref $in ? "content" : "file '$in'") . "$testlabel";
+	    my $img;
+	    {
+		if (open my $fh, '<', $in) {
+		    $img = GD::Image->newFromWBMP($fh);
+		} else {
+		    Test::More::diag("cannot open file $in: $!");
+		}
+	    }
+	    Test::More::ok($img, "load ok - $full_testlabel")
+		    or do {
+			Test::More::diag(Imager->errstr());
+			$fails++;
+		    };
+	    if (!$img) {
+		Test::More::fail("image needed for width test");
+	    } else {
+		Test::More::cmp_ok($img->width, ">", 0, "image has a width - $full_testlabel")
+			or $fails++;
+	    }
+	    last RUN_TESTS;
+	}
     SKIP: { # actually RUN_WITH_NETPBM, which is the last resort
 	    Test::More::skip("IPC::Run needed for better image testing", 2)
 		    if !eval { require IPC::Run; 1 };
