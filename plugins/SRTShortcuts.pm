@@ -2158,6 +2158,9 @@ sub current_route_as_qrcode {
 
     if      ($in =~ /^bbbikeleaflet-(live|local)$/) {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbikeleaflet.cgi';
+	if ($cgiurl =~ m{^https://}) {
+	    $params{loc} = 1;
+	}
     } elsif ($in =~ /^bbbike-gpx-track-(live|local)$/) {
 	$cgiurl = ($1 eq 'local' ? $local_base_url : $live_base_url) . '/bbbike.cgi';
 	# tolerance => 1(m) triggers minimal simplification, but may cut the number of track points by the half
