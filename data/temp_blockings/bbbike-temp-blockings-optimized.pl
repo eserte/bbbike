@@ -4991,12 +4991,13 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
+#: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straﬂe wieder frei (stimmt das?))
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2024-02-10 (architektur-urbanistik)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2024-11-15
+#: next_check: 2024-04-22
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
@@ -5811,6 +5812,7 @@ Maxim-Gorki-Str. (Kˆnigs Wusterhausen): Einbahnstraﬂenregelung wegen des SEVs	1s
 #: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/
@@ -5840,9 +5842,9 @@ Maxim-Gorki-Str. (Kˆnigs Wusterhausen): Einbahnstraﬂenregelung wegen des SEVs	1s
                               4
                             ]
                           ],
-         'text' => 'Straﬂe des 17. Juni und Ebertstr.: Vorbereitungen f¸r den Berliner Firmenlauf, Straﬂen gesperrt, voraussichtlich vom 22.04.2024 bis 25.04.2024 06:00 ',
+         'text' => 'Straﬂe des 17. Juni und Ebertstr.: Vorbereitungen f¸r den Berliner Firmenlauf, Straﬂen gesperrt, vom 22.04.2024 bis 25.04.2024 08:00 ',
          'type' => 'gesperrt',
-         'until' => 1714017600
+         'until' => 1714024800
        },
        undef,
        undef,
@@ -7345,6 +7347,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782274632940163549
 #: by: https://pbs.twimg.com/media/GLiNnPOXEAEHvhP?format=jpg
 #: source_id: viz2021:13.453433,52.591018,22.04.2024,07:00 (bis 26.04.2024)
+#: source_id: viz2021:13.45316,52.58998,22.04.2024,07:00 (bis 26.04.2024)
 #: add_fragezeichen: Ist der Weg am Flieﬂgraben mittlerweile wieder offen?
 #: last_checked: 2024-03-30 (mapillary)
 #: check_frequency: 30d
@@ -8215,6 +8218,7 @@ Winterfeldtstr.: ˆstliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024)
+#: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024)
 	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
 Bergedorfer Str./An der Wuhle: Einbahnstraﬂe	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
 Tieflanfstr./Eschelberger Weg: Einbahnstraﬂe	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
@@ -8250,17 +8254,20 @@ Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,96
          'until' => 1729009800
        },
        {
-         'data' => '	2::inwork 14641,10552 14608,10409
+         'data' => '#: source_id: viz2021:13.465597,52.498805,23.04.2024,05:00 (nur Kfz-Verkehr, bis 25.04.2024)
+#: note: Umleitungsstrecke f¸r Radfahrer via Corinthstr., Bˆdikerstr., Persiusstr. existiert
+	q4::inwork 14641,10552 14608,10409
 ',
          'from' => 1713736800,
          'id' => 4046,
-         'text' => 'Markgrafendamm: voraussichtlich Sperrung der Fahrbahn vom 23.04.2024 bis 25.04.2024',
+         'text' => 'Markgrafendamm: Sperrung der Fahrbahn vom 23.04.2024 05:00 Uhr bis 25.04.2024 20:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1714082400
+         'until' => 1714068000
        },
        {
          'data' => '#: note: Auﬂerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
-#: last_checked: 2024-04-21
+#: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
+#: last_checked: 2024-04-22 (daf)
 #: check_frequency: 21d
 #: next_check: 2024-05-31
 	q4::inwork 11966,11832 11993,11978

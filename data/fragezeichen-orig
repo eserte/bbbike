@@ -3763,7 +3763,7 @@ Seegefelder Weg: Verbreiterung der Straße + Anlage von Radspuren geplant	?::proj
 #: by: http://www.stadtentwicklung.berlin.de/planen/strassenbauverfahren/de/verfahren/strassenbau/bekanntmachung1.shtml vvv
 #: by: http://www.berliner-woche.de/karow/verkehr/vor-2019-ist-nicht-mit-baubeginn-fuer-die-verbindungsstrasse-zu-rechnen-d159662.html
 #: by: https://www.berliner-woche.de/karow/c-verkehr/planfeststellungsverfahren-zur-b2-verbindung-laeuft-noch_a345959 (Baubeginn 2024)
-#: last_checked: 2024-02-11 (mapillary) vvv
+#: last_checked: 2024-04-21 (mapillary) vvv
 #: check_frequency: 360d vvv
 # REMOVED (keine Infos zum Planfeststellungsverfahren) --- #: next_check: 2024-12-31 vvv
 Verlängerung Am Luchgraben: neue Straße wird gebaut, mit Radspuren	?::projected 16594,22188 16519,22216 16400,22359 16009,22602 15723,22611 15508,22608 15434,22663 15428,22736
@@ -5680,7 +5680,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: source_id: viz2021:13.412537,52.544431,04.09.2023,07:00 (bis 24.11.2023) (bis 13.11.2023) (inaktiv)
 #: source_id: viz2021:13.412979,52.546342,13.11.2023,08:00 (zwischen Gleimstr. und Milastr. Richtung Süden, bis 05.01.2024) (bis 29.03.2024) (bis 31.05.2024)
 #: source_id: viz2021:13.412438,52.543689,18.03.2024,07:00 (Richtung Norden (wieder?), bis 05.04.2024) (inaktiv) (bis 19.04.2024) (inaktiv)
-#: source_id: viz2021:13.41325,52.54767,13.11.2023,08:00 (bis 31.05.2024)
+#: source_id: viz2021:13.41325,52.54767,13.11.2023,08:00 (bis 31.05.2024) (inaktiv)
 #: XXX Richtung Süden vermutlich nur bis Topsstr.
 #: XXX Richtung Norden fehlen noch ein paar Meter vor der Stargarder Str.
 #: last_checked: 2024-04-11 (mapillary)
@@ -5695,6 +5695,7 @@ Schönhauser Allee: Radwege werden zu einer protected bike lane umgewandelt	?::in
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neubau-dauert-langer-berliner-senat-andert-plan-fur-schonhauser-allee-brucke-10455511.html
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-neue-bruecke-schoenhauser-allee-wird-sechs-jahre-zur-grossbaustelle-li.2191491 (Dauer: 6 Jahre)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6826 (Antrag zur Wechselstelle Masurenstraße)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/ab-2025-wird-marode-schoenhauser-allee-bruecke-erneuert_a412727 (Bauzeit 6-8 Jahre)
 #: XXX wird es Einschränkungen geben?
 #: last_checked: 2024-02-28
 #: check_frequency: 360d
@@ -7234,7 +7235,7 @@ Gartenstr.: Fahrradstraße geplant	?::projected 9670,13637 9535,13801 9514,13826 
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/ampelaustausch-an-kreuzung_a395998
 #: osm_watch: way id="441659160" version="28"
 #: osm_watch: way id="441659161" version="17"
-#: last_checked: 2024-04-13 (mapillary)
+#: last_checked: 2024-04-21 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2024-05-03
 Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 21889,16817 21925,16981
@@ -8217,19 +8218,20 @@ Kaulsdorfer Galgen: wird der Gehweg für Radfahrer freigegeben?	? 22842,12070 226
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1386450.php (Markierungsarbeiten ab KW 47/2023, kein Endedatum)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/arbeiten-am-karl-august-platz_a400200
 #: source_id: viz2021:13.303277,52.510619,26.01.2024,07:00 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 01.03.2024) (bis 15.03.2024) (inaktiv)
-#: source_id: viz2021:13.30344,52.50987,18.03.2024,07:00 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 26.04.2024)
+#: source_id: viz2021:13.30344,52.50987,18.03.2024,07:00 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 26.04.2024) (inaktiv)
+#: source_id: viz2021:13.30344,52.50987,22.04.2024,19:12 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 17.05.2024)
 #: osm_watch: way id="1102937734" version="8"
 #: osm_watch: way id="821100848" version="12"
 #: osm_watch: way id="4475785" version="29"
 #: osm_watch: note 4087656 2
 #: last_checked: 2024-04-03 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2024-03-15 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2024-05-17 vvv
 Schillerstr.: verkehrsberuhigter Bereich wird erweitert	?::inwork 3988,11502 3864,11484 3717,11462 3571,11451 3522,11447
 Sesenheimer Str.: verkehrsberuhigter Bereich ragt hier noch rein	?::inwork 3864,11484 3861,11508
 Rückertstr.: verkehrsberuhigter Bereich ragt hier noch rein	?::inwork 3571,11451 3569,11473
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: WESTUMFAHRUNGBAHNHOF-2023
@@ -8391,6 +8393,10 @@ Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?	? 7537,78
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php
 #: next_check: 2024-05-01
 Heerstr. (Kaulsdorf): wird nach den Bauarbeiten die Fahrbahn asphaltiert sein?	? 22129,9702 21988,9766 21859,9822 21842,9829
+# 
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1439633.php (Sanierung von Wegen)
+#: next_check: 2024-04-30
+Klemkepark: wird bei der Sanierung dieser Weg (oder andere) eine besser Qualität bekommen?	? 7576,18837 7480,18828 7332,18818
 # 
 #: ignore ^^^
 # 
@@ -8901,7 +8907,8 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: by: https://www.berliner-woche.de/friedenau/c-bauen/richtfest-auf-der-friedenauer-hoehe_a375824
 #: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/friedenau-hier-entstehen-537-wohnungen-id215111
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=757821#post757821
-#: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024)
+#: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten)
+#: source_id: viz2021:13.34261,52.477362,23.04.2024,07:00 (bis 28.06.2024)
 #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
@@ -10964,6 +10971,7 @@ Grünanlage neben dem Berghain: wann wird es hier eine benutzbare Grünfläche gebe
 #: by: https://www.degewo.de/wachstum/partizipation-bei-degewo/beteiligungsverfahren-bohnsdorfer-weg (Bauzeit 2024 - 2027) ("Quartier der Vielfalt")
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/quartier-der-vielfalt-am-bohnsdorfer-weg-schreitet-voran_a402489
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-der-vielfalt-bohnsdorfer-weg-99-119.1415/#post-22848
+#: by: https://www.berliner-woche.de/altglienicke/c-bauen/die-degewo-errichtet-am-bohnsdorfer-weg-462-mietwohnungen_a413504
 #: XXX Privatstraße Nord und Süd, beide in O-W-Richtung, zentrale Grünanlage in N-S-Richtung
 #: last_checked: 2024-04-16 (architektur-urbanistik)
 #: check_frequency: 360d
@@ -11101,6 +11109,13 @@ BVG-Betriebshof an der Säntisstraße: geplant	?::projected 9105,968 9106,932 9128
 #: last_checked: 2024-02-27 (BA)
 #: next_check: 2024-09-15
 Rubinweg: neue Privatstraße wird entstehen	?::projected 11502,20350 11544,20265
+# 
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1435971.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/7-92/240305_bp-7-92_ernbb-oeb_bebauungsplan-entwurf.pdf
+#: XXX Bebauungsplan 7-92 (Lichterfelder Ring 113/121)
+#: last_checked: 2022-03-07
+#: check_frequency: 1500d
+Bebauungsplan 7-92: entsteht hier eine neue Straße?	? 6566,587 6589,535 6576,463 6526,448 6510,388 6526,330
 # 
 #: ignore ^^^
 #: section ^^^

@@ -32710,12 +32710,13 @@ EOF
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
+#: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das?))
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2024-02-10 (architektur-urbanistik)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2024-11-15
+#: next_check: 2024-04-22
 	q4::inwork 6021,10405 6116,10688
 EOF
      },
@@ -36106,16 +36107,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
-       until => $isodate2epoch->("2024-04-25 06:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
+       until => $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, voraussichtlich vom 22.04.2024 bis 25.04.2024 06:00 ',
+       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 22.04.2024 bis 25.04.2024 08:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/
@@ -40878,6 +40880,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782274632940163549
 #: by: https://pbs.twimg.com/media/GLiNnPOXEAEHvhP?format=jpg
 #: source_id: viz2021:13.453433,52.591018,22.04.2024,07:00 (bis 26.04.2024)
+#: source_id: viz2021:13.45316,52.58998,22.04.2024,07:00 (bis 26.04.2024)
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
 #: last_checked: 2024-03-30 (mapillary)
 #: check_frequency: 30d
@@ -42660,6 +42663,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024)
+#: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024)
 	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
 Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
 Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
@@ -42688,11 +42692,13 @@ EOF
 EOF
      },
      { from  => 1713736800, # 2024-04-22 00:00
-       until => 1714082400, # 2024-04-26 00:00
-       text  => 'Markgrafendamm: voraussichtlich Sperrung der Fahrbahn vom 23.04.2024 bis 25.04.2024',
+       until => $isodate2epoch->("2024-04-25 20:00:00"), # 1714082400, # 2024-04-26 00:00
+       text  => 'Markgrafendamm: Sperrung der Fahrbahn vom 23.04.2024 05:00 Uhr bis 25.04.2024 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 14641,10552 14608,10409
+#: source_id: viz2021:13.465597,52.498805,23.04.2024,05:00 (nur Kfz-Verkehr, bis 25.04.2024)
+#: note: Umleitungsstrecke für Radfahrer via Corinthstr., Bödikerstr., Persiusstr. existiert
+	q4::inwork 14641,10552 14608,10409
 EOF
      },
      { from  => 1713696856, # 2024-04-21 12:54
@@ -42701,7 +42707,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
-#: last_checked: 2024-04-21
+#: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
+#: last_checked: 2024-04-22 (daf)
 #: check_frequency: 21d
 #: next_check: 2024-05-31
 	q4::inwork 11966,11832 11993,11978
