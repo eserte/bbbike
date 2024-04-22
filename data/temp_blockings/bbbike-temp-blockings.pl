@@ -40875,6 +40875,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WEGAMFLIESSGRABEN-2023
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782274632940163549
+#: by: https://pbs.twimg.com/media/GLiNnPOXEAEHvhP?format=jpg
+#: source_id: viz2021:13.453433,52.591018,22.04.2024,07:00 (bis 26.04.2024)
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
 #: last_checked: 2024-03-30 (mapillary)
 #: check_frequency: 30d
@@ -42649,13 +42652,18 @@ EOF
      },
      { from  => 1713650400, # 2024-04-21 00:00
        until => 1714514399, # 2024-04-30 23:59
-       text  => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22. April 2024 bis 30. April 2024',
+       text  => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelungen in den umliegenden Straßen, vom 22. April 2024 bis 30. April 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782276897810076078
+#: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024)
 	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
+Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
+Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
+Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,9640 21988,9766 22013,9919
 EOF
      },
      { from  => 1713650400, # 2024-04-21 00:00

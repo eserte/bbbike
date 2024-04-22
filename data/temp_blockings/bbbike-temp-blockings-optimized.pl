@@ -3169,35 +3169,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.winzerfest-köpenick.de/ (existiert mittlerweile nicht mehr; siehe unten)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
-#: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
-#: by: https://www.winzerfest-koepenick.de/?date=20230322
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
-#: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024)
-# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-	2::temp 22111,4562 22162,4546 22214,4548
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1713441600,
-         'id' => 2419,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.04.2024 bis 21.04.2024',
-         'type' => 'gesperrt',
-         'until' => 1713736799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7370,6 +7342,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        },
        {
          'data' => '#: next_check_id: WEGAMFLIESSGRABEN-2023
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782274632940163549
+#: by: https://pbs.twimg.com/media/GLiNnPOXEAEHvhP?format=jpg
+#: source_id: viz2021:13.453433,52.591018,22.04.2024,07:00 (bis 26.04.2024)
 #: add_fragezeichen: Ist der Weg am Fließgraben mittlerweile wieder offen?
 #: last_checked: 2024-03-30 (mapillary)
 #: check_frequency: 30d
@@ -8236,13 +8211,18 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782276897810076078
+#: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024)
 	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
+Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
+Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
+Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,9640 21988,9766 22013,9919
 ',
          'from' => 1713650400,
          'id' => 4043,
-         'text' => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 22. April 2024 bis 30. April 2024',
+         'text' => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelungen in den umliegenden Straßen, vom 22. April 2024 bis 30. April 2024',
          'type' => 'handicap',
          'until' => 1714514399
        },
