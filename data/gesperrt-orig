@@ -3734,12 +3734,11 @@ Betonbarriere	BNP:3::trailer=no 7466,19492
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
-#: XXX anscheinend sind auch die Gehwege gesperrt
 #: also_indoor: traffic (none)
-#: last_checked: 2024-04-18
+#: last_checked: 2024-04-23
 #: check_frequency: 14d
 #: next_check: 2025-06-30
-Am Köllnischen Park: Bauarbeiten, Straße gesperrt	2::inwork 11185,11883 11160,12071
+Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="14"
@@ -3944,23 +3943,6 @@ Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
 #: next_check: 2026-12-31
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 # 
-#: next_check_id: HELGAHAHNEMANN-2023
-#: last_checked: 2024-03-25 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2025-03-15 vvv
-#: osm_watch: way id="1116003134" version="4"
-Am Werkstor: Bauzäune, Straße gesperrt	2::inwork 18019,5786 18062,5856 18075,5880
-#: osm_watch: way id="955370454" version="7"
-Kupferkamp: Bauzäune, Straße gesperrt	2::inwork 17935,5961 18075,5880
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1438721.php (Einweihung am 18.4.2024)
-#: osm_watch: way id="955370453" version="10"
-#: add_fragezeichen: Ist die Straße nach der Einweihung nun offen?
-#: next_check: 2024-04-18
-Helga-Hahnemann-Str.: Bauzäune, Straße gesperrt	2::inwork 18260,5746 18062,5856
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
 #: next_check_id: BEHRENSUFER-2023
 #: osm_watch: way id="41340056" version="26"
 #: last_checked: 2023-08-21
@@ -3995,7 +3977,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
 #: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
 #: priority: #A
-#: last_checked: 2024-03-26 (okas)
+#: last_checked: 2024-04-20 (okas)
 #: check_frequency: 120d
 #: next_check: 2027-07-31
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -4763,7 +4745,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (Neubau der Brücke: vsl. 2027 bis 2029)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="8"
-#: last_checked: 2024-03-22
+#: last_checked: 2024-04-23
 #: check_frequency: 120d
 #: next_check: 2029-12-31
 #: priority: #A

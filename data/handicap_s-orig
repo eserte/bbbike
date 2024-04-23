@@ -25,7 +25,7 @@
 #: XXX Sieht nach Leitungsarbeiten aus.
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (B)
-#: last_checked: 2024-04-21
+#: last_checked: 2024-04-23
 #: check_frequency: 14d
 Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -293,11 +293,11 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: XXX Oranienburger Straße (Mitte) Richtung Monbijouplatz zwischen Große Präsidentenstraße und Große Hamburger Straße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Die Große Hamburger Straße ist von der Oranienburger Straße abgehängt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
-#: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024)
+#: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024)
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2024-04-17
-#: next_check: 2024-04-26
-#: valid: -20240426
+#: next_check: 2024-04-24
+#: valid: -20240424
 Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fußgänger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
 # 
 # REMOVED --- #: XXX Oranienburger Straße (Mitte) in beiden Richtungen zwischen Tucholskystraße und Krausnickstraße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00 --- #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024) (inaktiv) --- #: last_checked: 2024-03-15 (mapillary) --- #: next_check: 2024-03-19 --- #: valid: -20240319 --- Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
@@ -835,6 +835,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 # 
 ### Lichtenberg ###
 # 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1135879798" version="2"
 #: also_indoor: traffic (G)
@@ -1947,14 +1948,15 @@ Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Fußgänger	q3 12274,8607 12276,8590 12165,8566
 #: note ^^^
 # 
+#: next_check_id: HAUPT-2024
 #: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8901 (Antrag - Antwort: Neubewertung nach Bau der RVA in der Hauptstraße)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Antrag: Radverkehrsführung abordnen) (durch Verwaltungshandeln erledigt)
-#: XXX falls die Abordnung durchgeführt wird -> auf q4 degradieren
+#: XXX falls die Abordnung durchgeführt wird -> auf q4 degradieren; vielleicht passiert das im Zuge der neuen Radspuren in der Hauptstraße?
 #: osm_watch: way id="268579841" version="14"
-#: last_checked: 2024-02-07
+#: last_checked: 2024-04-23
 #: check_frequency: 120d
-#: next_check: 2024-04-11
+#: next_check: 2024-09-01
 Richard-von-Weizsäcker-Platz: einige Fußgänger	q2 7201,8870 7307,8945
 # 
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15380,10946 15355,10875
@@ -2281,7 +2283,9 @@ Viktoria-Luise-Platz: Fußgängerzone, Radfahrer frei	q1 6278,9925 6275,9962
 Luitpoldstr.: Schulhof	q3 6611,9879 6688,9897
 #: XXX_prog: BS (Bordstein am Wendehammer und zur Martin-Luther-Str., sonst q2 bis q3)
 Luitpoldstr.: Fußgänger, Bordsteine	q3 6463,9862 6504,9865
-Weg am Tempodrom: Fußgänger, eng, kurvig	q2 8853,10708 8798,10678 8738,10704 8698,10756
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+#: historical_note: früher: Fußgänger, eng, kurvig, q2
+Weg am Tempodrom: Fußgänger, Grünanlage, eng, kurvig	q3 8853,10708 8798,10678 8738,10704 8698,10756
 Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
@@ -3430,7 +3434,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-04-21
+#: last_checked: 2024-04-23
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4820,7 +4824,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
-#: last_checked: 2024-04-18
+#: last_checked: 2024-04-23
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
@@ -5300,7 +5304,11 @@ Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): Fußgänger	q2+ 8668,10219 8668,10236 8715,10314
 (zum Anhalter Steg): Fußgänger, im Kurvenbereich unübersichtlich	q3 8715,10314 8711,10322
 (Anhalter Steg): Fußgänger	q1 8711,10322 8726,10351 8760,10408 8773,10429
-(Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
+#: XXX Existieren hier auch neue FH-KB-Grünanlagenschilder mit einem Radfahrverbot?
+(Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708
+#: historical_note: früher Fußgänger, q1
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+(Anhalter Steg - Anhalter Bahnhof): Fußgänger, Grünanlage	q3 8853,10708 8912,10846 8938,10872
 (Weg im Elise-Tilse-Park): Fußgänger	q1 8776,10548 8778,10578 8812,10662
 #: XXX_prog BS (an der Linkstr.), ansonsten trotzdem q4 
 Fontaneplatz: Fußgänger, Bordsteinkante	q4 8474,11350 8427,11365

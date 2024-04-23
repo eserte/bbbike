@@ -114,6 +114,10 @@ Aalemannufer: 1,10 Euro pro Person mit Fahrrad; 0,50 Euro pro Kind (5 bis 11 Jah
 #: as_of: 2024-03
 Ueckermünde - Kamminke: Telefon 039771-22426; 2x bis 3x täglich, Mai bis September; Fahrzeit ca. 80 min; 25,50 Euro pro Person, 5,50 Euro pro Fahrrad	CS 51552,148796 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
 # 
+#: url: https://www.schifffahrt-apollo.de/faehre/
+#: as_of: 2024-04
+Freest - Peenemünde: April bis Oktober stündlich etwa 10 bis 16 Uhr, im Juli und August bis etwa 18 Uhr; 5,50 Euro pro Person, 3,50 Euro pro Fahrrad; Telefon: 038371-28429	CS 28848,193032 28919,192965 29929,193452 30297,193310 30746,192592 31301,192513 31355,192739 31372,192758
+# 
 #: note: diese Fähre habe ich nicht in die temporäre temp_blockings-Lösung überführt, weil der Lindwerder wahrscheinlich sowieso nicht als Endziel aufgeführt werden kann --- und wenn doch, dann möchte der User das so
 #: by: http://www.berlin.de/tourismus/dampferfahrten/faehren/1830382-1824660-faehre-zur-havelinsel-lindwerder.html
 #: url: http://www.lindwerder.de/anfahrt.php
@@ -164,4 +168,10 @@ Personenfähre Straussee (F39): Anfang April bis Ende Oktober alle 30 Minuten von
 # REMOVED --- #: url: https://www.werben-elbe.de/tourismus/fahre-raebel
 # REMOVED --- #: as_of: 2023-03
 # REMOVED --- Fähre "Werben" in Räbel (Elbe): Fährzeiten Mo-Fr 6.00-21.30, Sa+So+Feiertage 8.00-21.30, bei Motorbetrieb reduzierte Fährzeiten bis 18.00; Person mit Fahrrad 2,50 EUR, bei Motorbetrieb 3,50 EUR	CS -82947,46305 -83198,46368
+# 
+#: historical_note: ab 2007-06-30 in Betrieb
+#: url: https://www.barnim-oderbruch.de/tourismus/faehrzeiten
+#: url: https://www.reiseland-brandenburg.de/poi/seenland-oder-spree/ausflugsschifffahrt/faehre-guestebieser-loose/
+#: as_of: 2024-04
+Fähre Güstebieser Loose: Mitte April bis Oktober etwa stündlich zwischen ca. 8:00 und 17:00, im Juni/Juli bis 20:00; Person mit Fahrrad 0,75 EUR	CS 71966,40734 72051,40928
 # 
