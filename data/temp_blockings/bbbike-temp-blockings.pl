@@ -33331,7 +33331,7 @@ EOF
      { from  => 1713896860, # $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
        until => $isodate2epoch->("2025-01-26 17:00:00"), # $isodate2epoch->("2021-10-25 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
        #text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
-       text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, vom 24. April 2024 bis 26. Januar 2025',
+       text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., vom 24. April 2024 bis 26. Januar 2025',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
@@ -33343,11 +33343,14 @@ EOF
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
 # REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
 # REMOVED (früherer Bereich) ---	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782975251074502750
+#: by: https://pbs.twimg.com/media/GL2ysSnWoAE1G5t?format=jpg&name=medium (Einbahnstraßenregelung in der Parkstr.)
 #: source_id: viz2021:13.467591,52.555287,24.04.2024,08:00 (bis 26.01.2025)
 #: also_indoor: traffic
 #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer?
 #: next_check: 2024-04-24
 	q4::inwork; 14558,16907 14608,16772 14622,16674 14624,16659 14619,16551
+Parkstr.: Einbahnstraßenregelung	q4::inwork; 13737,15994 13712,16089 13783,16237
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -35727,6 +35730,8 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnhpb1BlWGFrQUFoQXhRLmpwZw==
 #: by: https://nitter.net/VIZ_Berlin/status/1682284279324360704#m
 #: by: https://nitter.net/pic/orig/media%2FF1fgjuGXsAAx82o.jpg
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782997647063699803
+#: by: https://pbs.twimg.com/media/GL21lA-XwAASF5a?format=jpg&name=medium (Umleitungsstrecke für Radfahrer)
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
@@ -35739,9 +35744,8 @@ EOF
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
-#: last_checked: 2023-12-06 (mapillary)
-#: check_frequency: 14d
-#: next_check: 2024-04-23
+# REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
+#: note: keine Sperrung für Fußgänger
 	q4::inwork; 16166,25767 16121,25818
 #	2::inwork 16166,25767 16121,25818
 EOF
