@@ -651,8 +651,9 @@ RUN apt-get install -qqy \\
 EOF
     }
 
+    # XXX global config file for mapserver 8.x
     # XXX review and maybe remove again
-    if ($real_distver =~ /bookworm/) {
+    if ($real_distver =~ /(bookworm|noble)/) {
 	warning "Temporary hack: provide /etc/mapserver.conf until better solutions exist";
 	$dockerfile .= <<'EOF';
 RUN if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]; then cp /bbbike/mapserver/brb/mapserver.conf /etc; fi
@@ -958,8 +959,9 @@ RUN (cd cgi && cp -f bbbike-debian.cgi.config bbbike.cgi.config)
 RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
 RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake')
 EOF
+	# XXX global config file for mapserver 8.x
 	# XXX review and maybe remove again
-	if ($opt{distver} =~ /bookworm/) {
+	if ($opt{distver} =~ /(bookworm|noble)/) {
 	    warning "Temporary hack: provide /etc/mapserver.conf until better solutions exist";
 	    $dockerfile .= <<'EOF';
 RUN cp /bbbike/mapserver/brb/mapserver.conf /etc
