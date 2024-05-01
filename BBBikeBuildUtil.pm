@@ -37,8 +37,9 @@ sub get_pmake (;@) {
      : is_in_path("fmake")                      ? "fmake"        # debian jessie .. buster (package freebsd-buildutils)
      : (!$canV && is_in_path("bmake"))		? 'bmake'        # debian jessie and later (package bmake)
      : is_in_path("freebsd-make")               ? "freebsd-make" # debian wheezy and earlier
-     : -x '/usr/bin/pmake'			? '/usr/bin/pmake' # debian jessie and later (package bmake, just a symlink to bmake)
-     : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, bmake, fmake, pmake, or something similar"
+     : (!$canV && -x '/usr/bin/pmake')		? '/usr/bin/pmake' # debian jessie and later (package bmake, just a symlink to bmake)
+     : (!$canV && !$fallback)			? die "No fully capable BSD make found on this system --- try to install fmake or freebsd-make"
+     : !$fallback                               ? die "No  BSD make found on this system --- try to install bsdmake, bmake, fmake, pmake, or something similar"
      : "pmake"                                                   # self-compiled BSD make, maybe. Note that pmake may also be a script that comes with the CPAN module Make.pm, which is not a BSD make
     );
 }

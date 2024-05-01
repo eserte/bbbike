@@ -152,7 +152,7 @@ sub _repeat_on_changing_sources {
 	my($d, $varref, $makevar) = @_;
 	last if $done{$makevar};
 	require BBBikeBuildUtil;
-	my $pmake = BBBikeBuildUtil::get_pmake(canV => 1);
+	my $pmake = BBBikeBuildUtil::get_pmake(canV => 1, fallback => 0);
 	chomp(my $varline = $d->info_qx({quiet=>1}, $pmake, "-V$makevar"));
 	@$varref = split /\s+/, $varline;
 	$done{$makevar} = 1;
