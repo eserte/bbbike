@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016,2017,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Time::Zone::By4D;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use VectorUtil qw(point_in_polygon);
 
@@ -31,6 +31,8 @@ sub get_timezone {
 	return 'Europe/London'; # XXX inaccurate, but should work
     } elsif (_is_in_EET($point)) {
 	return 'Europe/Riga', # XXX inaccurate, but should work
+    } elsif (_is_in_Portugal($point)) {
+	return 'Europe/Lisbon';
     }
     die "No support for location lon=$longitude lat=$latitude";
 }
@@ -85,6 +87,33 @@ sub get_timezone {
 	if (!@area) {
 	    no warnings 'qw';
 	    @area = map { [split /,/, $_] } qw(-6.020508,48.893615 0.703125,50.597186 3.229980,51.903613 2.724609,61.637726 -13.447266,59.220934 -13.754883,48.908059);
+	}
+	point_in_polygon($point, \@area);
+    }
+}
+
+{
+    my @area;
+    sub _is_in_Portugal {
+	my $point = shift;
+	if (!@area) {
+	    no warnings 'qw';
+	    @area = map { [split /,/, $_] } qw(
+		-7.337160805822943,36.75946382360216
+		-7.523604976643627,37.551959311065616
+		-6.9331984357115,38.20193564164755
+		-7.337160805822943,38.48221317456075
+		-7.010883506886772,39.0636402887878
+		-7.503662109375001,39.6733703917656
+		-6.976318359375001,39.6733703917656
+		-6.863281871653735,41.02009606112425
+		-6.207275390625001,41.63186741069748
+		-6.575317382812501,41.95540515378059
+		-8.146362304687502,41.82045509614034
+		-8.179321289062504,42.13896840458089
+		-9.9591064453125,41.72623044860004
+		-9.788818359375002,36.721273880045004
+	    );
 	}
 	point_in_polygon($point, \@area);
     }
