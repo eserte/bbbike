@@ -1386,9 +1386,9 @@ do-checks:	.check_empty_lines \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam \
 	.check_ortsschilder .check_ortsschilder2 \
-	${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET} \
 	.check_data_islands_temp_blockings \
-	.check_mudways .check_mudways2
+	.check_mudways .check_mudways2 \
+	${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
