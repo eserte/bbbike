@@ -70,7 +70,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-04-20
+#: last_checked: 2024-05-01 (daf)
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -207,7 +207,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2024-04-07 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-04-30 vvv
+#: next_check: 2024-05-22 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 #: next_check ^^^
@@ -229,7 +229,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2024-04-01
+#: last_checked: 2024-05-01
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -292,13 +292,13 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: XXX Oranienburger Straße (Mitte) Richtung Monbijouplatz zwischen Große Präsidentenstraße und Große Hamburger Straße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Die Große Hamburger Straße ist von der Oranienburger Straße abgehängt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
-#: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024)
-#: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-04-17
-#: next_check: 2024-04-24
-#: valid: -20240424
-Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fußgänger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
+# REMOVED --- #: XXX Oranienburger Straße (Mitte) Richtung Monbijouplatz zwischen Große Präsidentenstraße und Große Hamburger Straße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Die Große Hamburger Straße ist von der Oranienburger Straße abgehängt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
+# REMOVED --- #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (H,G,B,W)
+# REMOVED --- #: last_checked: 2024-04-17
+# REMOVED --- #: next_check: 2024-04-24
+# REMOVED --- #: valid: -20240424
+# REMOVED --- Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fußgänger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
 # 
 # REMOVED --- #: XXX Oranienburger Straße (Mitte) in beiden Richtungen zwischen Tucholskystraße und Krausnickstraße: Gleisarbeiten, Vollsperrung für den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00 --- #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024) (inaktiv) --- #: last_checked: 2024-03-15 (mapillary) --- #: next_check: 2024-03-19 --- #: valid: -20240319 --- Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
@@ -383,7 +383,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
-#: osm_watch: way id="194079586" version="4"
+#: osm_watch: way id="194079586" version="5"
 #: last_checked: 2024-04-03
 #: check_frequency: 90d
 #: next_check: 2028-03-31
@@ -698,9 +698,9 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="16096289" version="30"
-#: osm_watch: way id="707100249" version="19"
-#: last_checked: 2024-04-11 (daf)
+#: osm_watch: way id="16096289" version="31"
+#: osm_watch: way id="707100249" version="20"
+#: last_checked: 2024-04-29 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -791,11 +791,12 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: by: https://www.wvm-immobilien.de/projekte/d1/quartier/buergerstrasse-53
 #: by: https://wvm.de/de/projekte/buergerstrasse-53
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_16_0951_1002_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/b%C3%BCrgerstra%C3%9Fe-53-wvm-immobilien.834/#post-22914
 #: also_indoor: traffic (B)
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2024-04-01
+#: last_checked: 2024-04-24 (architektur-urbanistik)
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 

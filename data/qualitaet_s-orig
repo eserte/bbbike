@@ -14,7 +14,7 @@
 #: XXX und auﬂerdem auch schauen, ob es wieder zum Mergenthalerring wieder ein Tor gibt und dieses ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="7"
-#: last_checked: 2024-04-01 vvv
+#: last_checked: 2024-05-01 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="8"
@@ -1115,7 +1115,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 #: next_check_id: LYNAR-2022
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer l‰ngs geparkt, wann wird das Senkrechtparken angeordnet?
-#: osm_watch: way id="717490209" version="21"
+#: osm_watch: way id="717490209" version="22"
 #: last_checked: 2024-04-17
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-12-31
@@ -9172,20 +9172,9 @@ Ahornallee (Blankenburg): Kopfsteinpflaster	Q2 14157,21442 14227,21657
 Georgenstr. (Blankenburg): Asphalt	Q0 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682
 Georgenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14304,20682 14236,20773
 Georgenstr. (Blankenburg): m‰ﬂiger Asphalt, einige Wurzelhebungen	Q1- 14236,20773 14196,20825 14091,20962
-#: next_check_id: WEGAMFLIESSGRABEN-2023
-#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
-#: by: https://www.infravelo.de/projekt/weg-am-fliessgraben/ (Ausbau zum 4m breiten Rad+Gehweg, vielleicht wird auch asphaltiert? in Planung, Bau 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2022 - 2. Quartal 2024) (1. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1285357.php (Asphaltierung, Baubeginn II. Quartal 2023)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1368603.php (Sperrung: 4. Oktober 2023 bis Ende Dezember 2023)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1362724.php (verkehrliche Sperrmaﬂnahmen ... voraussichtlich bis Ende 2023)
-#: by: https://www.berliner-woche.de/blankenburg/c-bauen/weg-am-graben-wird-neu-gebaut_a395099
-#: osm_watch: way id="1167720966" version="1"
-#: XXX wird sich hier die Qualit‰t verbessern? laut den Lagepl‰nen wird asphaltiert
-#: XXX laut Plan wird der kurze Abschnitt der Parkstr. asphaltiert, inkl. Kreuzungsbereich
-#: XXX Diskrepanz zwischen Ende bei der BA-Pressemitteilung (Ende 2023) und infravelo (Sommer 2024)
-#: last_checked: 2024-03-30 (mapillary)
-#: next_check: 2024-06-30
-(Parkstr./Am Flieﬂ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
+# REMOVED --- #: next_check_id: WEGAMFLIESSGRABEN-2023 --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 --- #: by: https://www.infravelo.de/projekt/weg-am-fliessgraben/ (Ausbau zum 4m breiten Rad+Gehweg, vielleicht wird auch asphaltiert? in Planung, Bau 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2022 - 2. Quartal 2024) (1. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1285357.php (Asphaltierung, Baubeginn II. Quartal 2023) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1368603.php (Sperrung: 4. Oktober 2023 bis Ende Dezember 2023) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1362724.php (verkehrliche Sperrmaﬂnahmen ... voraussichtlich bis Ende 2023) --- #: by: https://www.berliner-woche.de/blankenburg/c-bauen/weg-am-graben-wird-neu-gebaut_a395099 --- #: osm_watch: way id="1167720966" version="1" --- #: XXX wird sich hier die Qualit‰t verbessern? laut den Lagepl‰nen wird asphaltiert --- #: XXX laut Plan wird der kurze Abschnitt der Parkstr. asphaltiert, inkl. Kreuzungsbereich --- #: XXX Diskrepanz zwischen Ende bei der BA-Pressemitteilung (Ende 2023) und infravelo (Sommer 2024) --- #: last_checked: 2024-03-30 (mapillary) --- #: next_check: 2024-06-30
+#: historical_note: bis April 2024 wassergebundene Decke, Q1
+(Parkstr./Am Flieﬂ - Heinersdorfer Str.): Asphalt	Q0 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
 Frau-Elster-Weg: Gras	Q3 13953,18842 13948,18757 14011,18589
 Schneehornpfad: Asphalt	Q0 13497,18087 13619,18222
 Gustav-Adolf-Str.: Kopfsteinpflaster	Q2; 13708,17453 13633,17399
@@ -13387,7 +13376,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 15151,10699 15220,10682
 Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 15200,10600
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endg¸ltige Belag aussehen? vvv
-#: last_checked: 2024-03-27 vvv
+#: last_checked: 2024-05-01 vvv
 #: check_frequency: 60d vvv
 Ulrich-Plenzdorf-Str.: asphaltiert, letzte Deckschicht fehlt	Q1 14994,10732 15071,10716 15151,10699
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
@@ -16974,8 +16963,8 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11464 (Anfrage)
 #: by: https://alles-mahlsdorf.de/sanierung-der-lemkestrasse-soll-im-fruehjahr-weitergehen/
 #: also_indoor: search Lemkestraﬂe vvv
-#: last_checked: 2024-02-01 (indoor) vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2024-05-01 (indoor) vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-07-30
 #: osm_watch: way id="593503609" version="9"
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553

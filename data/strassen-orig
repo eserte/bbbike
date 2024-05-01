@@ -1851,10 +1851,12 @@ Heidestr. (Moabit)	N 8092,13467 8071,13521 8059,13551 8048,13578 8019,13650
 Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
 #: XXX am Sackgassenende wird es noch Anschluss an eine neue Straße zwischen Invalidenstr. und Minna-Cauer-Str. geben (nördlicher Europaplatz?)
 #: XXX bekommt diese Straße noch einen Namen?
+#: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
-#: osm_watch: note 3913793 2
+#: osm_watch: note 3913793 4
 #: last_checked: 2024-04-08
 #: check_frequency: 30d
+#: next_check: 2024-05-01
 (Heidestr. - nördlicher Vorplatz des Hauptbahnhofs)	N 8071,13521 8016,13455
 # REMOVED (nicht mehr) --- #: note: blaues Straßenschild vvv
 Otto-Weidt-Platz	NN 7923,14142 7850,14100
@@ -1884,7 +1886,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: osm_watch: way id="74868383" version="26"
+#: osm_watch: way id="74868383" version="27"
 #: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
@@ -2081,7 +2083,7 @@ Prühßstr.	N 8780,4054 8962,4096 9115,4117 9346,4144 9465,4173 9580,4201 9869,427
 (Prühßstr. - Rixdorfer Str.)	NN 9869,4271 9965,4299 10051,4295 10143,4283 10220,4236
 (Westphalweg/Dirschelweg - Schwimmbad)	NN 10059,4396 10051,4295
 #: XXX die benachbarte KGA Wild-West soll aufgegeben werden --- evtl. wirkt sich das auch auf diesen Weg aus
-#: osm_watch: way id="46269104" version="9"
+#: osm_watch: way id="46269104" version="10"
 #: last_checked: 2023-11-04
 #: check_frequency: 180d
 (Richterstr. - Rathausstr./Alt-Mariendorf)	NN 9122,3978 9117,3898
@@ -12209,7 +12211,8 @@ Allée du Stade	N 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,158
 (Uferweg am Hohenzollernkanal)	N 1737,15789 1349,15797
 (Uferweg am Hohenzollernkanal)	NN 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 #: next_check_id: TEGELERBRUECKE-2021
-#: osm_watch: way id="930770437" version="8"
+#: XXX laut osm mittlerweile zurückgebaut
+#: osm_watch: way id="930770437" version="9"
 #: last_checked: 2024-02-17
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-01
@@ -16248,7 +16251,7 @@ Apostel-Paulus-Str.	N 6442,9068 6366,9056 6276,9042 6214,9003
 #: XXX mögliche Umbenennung der Straße (z.B. nach Cécile Vogt)
 #: also_indoor: search Robert-Rössle-Straße
 #: osm_watch: way id="10951433" version="27"
-#: last_checked: 2024-04-01 (indoor research)
+#: last_checked: 2024-05-01 (indoor research)
 #: check_frequency: 30d
 Robert-Rössle-Str.	N 16521,24864 16681,24764 16719,24734
 Ernst-Ludwig-Heim-Str.	N 16681,24764 16613,24643 16487,24721
