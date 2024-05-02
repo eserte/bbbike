@@ -3323,12 +3323,14 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
 #: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
 #: note: kann auch im Juni oder Juli stattfinden
-#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00
+#: source_id: IM_025248 (inaktiv)
+#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
+#: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
 ',
-         'from' => 1714701600,
+         'from' => 1714615200,
          'id' => 2439,
          'periodic' => 1,
          'recurrences' => [
@@ -3342,8 +3344,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               '2021-06-01T00:00:00'
                             ]
                           ],
-         'source_id' => 'IM_025248',
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 04.05.2024 und 05.05.2024',
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 03.05.2024 04:00 Uhr bis 06.05.2024 05:00 Uhr',
          'type' => 'handicap',
          'until' => 1714964400
        },
@@ -5182,11 +5183,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer?
 #: next_check: 2024-04-24
 	q4::inwork; 14558,16907 14608,16772 14622,16674 14624,16659 14619,16551
+#: note: vorbereitete Einbahnstraßenschilder bei Mapillary am 2024-04-24 zu sehen; außerdem eine Baustellenampel an der Einmündung Parkstr./Berliner Allee (nur nördliche Fahrbahn)
 Parkstr.: Einbahnstraßenregelung	q4::inwork; 13737,15994 13712,16089 13783,16237
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
-Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
+# REMOVED --- Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 ',
          'from' => 1713896860,
          'id' => 3374,
@@ -6841,7 +6843,7 @@ Birnbaumer Str.	q4::inwork 22186,6672 22093,6630
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-04-14 (osm)
+#: last_checked: 2024-05-02
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="26"
@@ -6859,7 +6861,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-04-06
+#: last_checked: 2024-05-02
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7555,10 +7557,10 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 # REMOVED --- #: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben --- #: XXX Das Ende der Bauarbeiten zum 31.1.2024 ist unwahrscheinlich (noch tiefe Gruben + Winterwetter). --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-16 --- #: check_frequency: 30d --- #: next_check: 2024-03-08
 # REMOVED (beendet) ---	q2::inwork 13860,9861 13704,9691
 # REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
-#: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024
+#: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024 (mittlerweile abgelaufen und nicht erneuert)
 #: also_indoor: traffic (B,W)
-#: last_checked: 2024-04-18
-#: check_frequency: 14d
+#: last_checked: 2024-05-02
+# REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-04-26
 #: next_check: 2024-05-31
 	q2::inwork 13489,9456 13602,9581
@@ -7611,29 +7613,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
          'type' => 'gesperrt',
          'until' => 1716303600
        },
-       {
-         'data' => '#: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
-#: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung bzw. Sperrung? vvv
-#: also_indoor: traffic (ex-G,ex-W) vvv
-#: last_checked: 2024-03-30 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2024-04-19 vvv
-# REMOVED --- #: next_check: 2024-09-30 vvv
-# REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
-# REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
-Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3977,
-         'text' => 'Dietlindestr.: Sperrung an der Rüdigerstr., möglicherweise bis September 2024',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8217,6 +8197,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784808579930718521
 #: by: https://pbs.twimg.com/media/GMG9wCGWEAA53aH?format=jpg
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-wiesendamm-in-spandau/
+#: by: https://berliner-abendblatt.de/berlin-news/strassensperrung-auf-wiesendamm-in-berlin-spandau-id250968
 	q4::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -278,13094 -264,13009
 ',
          'from' => 1714280400,
@@ -8224,6 +8205,16 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Wiesendamm: zwischen Spandauer Damm und Sophienwerderweg Bauarbeiten, Einbahnstraßenregelung, offen Richtung Spandauer Damm, evtl. sind auch Radfahrer betroffen, vom 29.04.2024 07:00 bis 31.07.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1753974000
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1443204.php
+	2::inwork 7562,1796 7565,1806 7592,1892 7612,1918 7646,2019 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961
+',
+         'from' => 1714514400,
+         'id' => 4050,
+         'text' => 'Grünzug Pappritz-Wichura-Straße: Bauarbeiten, Wege können gesperrt sein, vom 2.5.2024 bis voraussichtlich Anfang Juli 2024',
+         'type' => 'gesperrt',
+         'until' => 1719957599
        }
      
 );

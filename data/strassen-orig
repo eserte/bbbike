@@ -3893,6 +3893,8 @@ Malteserstr.	NN 7867,831 7829,882
 Malteserstr.	N 7829,882 7771,993 7753,994
 Malteserstr.	H 7753,994 7740,1041 7630,1297 7539,1529 7451,1818 7437,1859 7423,1905 7409,1953 7390,2021 7285,2377 7235,2542 7115,3003
 Malteserstr.	N 7115,3003 7105,3040 7098,3067 7042,3281
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1443204.php (Name)
+#: alias: Grünzug Pappritz-Wichura-Straße
 (Malteserstr. - Kamenzer Damm)	NN 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957 7852,3183
 (Halbauer Weg - Parkweg)	NN 7758,2973 7795,2963 7807,2961
 (Hanielweg - Parkweg)	NN 7562,1796 7565,1806 7592,1892
@@ -13218,11 +13220,9 @@ Rolandufer	NN 10945,12150 10821,12153
 Rolandufer	NN 10821,12153 10660,12176 10591,12203 10583,12206
 Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10951,12249 10957,12401 10947,12457 10900,12546
-#: next_check_id: MOLKENMARKT-2021
-#: XXX provisorische Anbindung
-#: last_checked: 2024-04-03 (webcam)
-#: check_frequency: 30d
-Klosterstr. (Mitte)	NN 10900,12546 10873,12577
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/ --- #: XXX provisorische Anbindung --- #: last_checked: 2024-05-02 (webcam) --- #: check_frequency: 30d
+#: historical_note: zwischenzeitlich während der Bauarbeiten 2023-2024 NN
+Klosterstr. (Mitte)	N 10900,12546 10873,12577
 (Molkenmarkt - Parochialstr.)	NN 10746,12364 10831,12371
 Parochialstr.	N 10831,12371 10957,12401 11040,12420
 Waisenstr.	N 11017,12487 11033,12439 11040,12420 11053,12387 11094,12243

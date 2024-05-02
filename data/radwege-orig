@@ -961,7 +961,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-04-21
+#: last_checked: 2024-05-02
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1287,7 +1287,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-05-01 vvv
+#: last_checked: 2024-05-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2112,7 +2112,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-04-21
+#: last_checked: 2024-05-02 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577
 asphaltiert	RW2; 10873,12577 10951,12637
@@ -2947,7 +2947,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-04-20
+#: last_checked: 2024-05-02
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5465,7 +5465,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="21"
-#: last_checked: 2024-01-30
+#: last_checked: 2024-04-24 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -6201,7 +6201,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
-#: last_checked: 2024-02-03 (architektur-urbanistik)
+#: last_checked: 2024-04-28 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 provisorische Radspur, auf den letzten Metern getrennter Fuß- und Radweg	RW4; 17886,5587 17747,5452 17736,5441
@@ -8140,7 +8140,7 @@ asphaltiertes Straßenbahnkap	RW1; 14888,11934 14836,11842
 	RW4; 14888,11934 14965,11924
 asphaltiertes Straßenbahnkap	RW1; 15133,11902 15174,11896 15217,11890
 	RW3; 15217,11890 15256,11884
-	RW3; 15256,11884 15217,11890 15174,11896
+	RW4; 15256,11884 15217,11890 15174,11896
 asphaltiertes Straßenbahnkap	RW1; 15174,11896 15133,11902 15077,11910
 	RW4; 14097,11949 14055,11964
 #: by: mapillary
