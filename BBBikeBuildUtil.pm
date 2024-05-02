@@ -31,17 +31,20 @@ sub get_pmake (;@) {
     my $canV = exists $opt{canV} ? delete $opt{canV} : 0; # -V option can compute value
     die "Unhandled args: " . join(" ", %opt) if %opt;
 
-    (
-     $^O =~ m{bsd}i                             ? "make"         # standard BSD make
-     : $^O eq 'darwin' && is_in_path('bsdmake') ? 'bsdmake'      # homebrew bsdmake package
-     : is_in_path("fmake")                      ? "fmake"        # debian jessie .. buster (package freebsd-buildutils)
-     : (!$canV && is_in_path("bmake"))		? 'bmake'        # debian jessie and later (package bmake)
-     : is_in_path("freebsd-make")               ? "freebsd-make" # debian wheezy and earlier
-     : (!$canV && -x '/usr/bin/pmake')		? '/usr/bin/pmake' # debian jessie and later (package bmake, just a symlink to bmake)
-     : (!$canV && !$fallback)			? die "No fully capable BSD make found on this system --- try to install fmake or freebsd-make"
-     : !$fallback                               ? die "No  BSD make found on this system --- try to install bsdmake, bmake, fmake, pmake, or something similar"
-     : "pmake"                                                   # self-compiled BSD make, maybe. Note that pmake may also be a script that comes with the CPAN module Make.pm, which is not a BSD make
-    );
+    return 'make'           if $^O =~ m{bsd}i;                           # standard BSD make
+    return 'bsdmake'        if $^O eq 'darwin' && is_in_path('bsdmake'); # homebrew bsdmake package
+    return 'fmake'          if is_in_path('fmake');                      # debian jessie .. buster (package freebsd-buildutils)
+    return 'freebsd-make'   if is_in_path('freebsd-make');               # debian wheezy and earlier
+    my $not_fully_capable;
+    if ($canV && (is_in_path('bmake') || -x '/usr/bin/pmake') && !$fallback) {
+	die "No fully capable BSD make found on this system --- try to install fmake or freebsd-make"
+    }
+    return 'bmake'          if is_in_path('bmake');                      # debian jessie and later (package bmake; -V cannot expand)
+    return '/usr/bin/pmake' if -x '/usr/bin/pmake';                      # debian jessie and later (package bmake, just a symlink to bmake; -V cannot expand)
+    if (!$fallback) {
+	die "No BSD make found on this system --- try to install bsdmake, fmake, freebsd-make, bmake, pmake, or something similar"
+    }
+    return 'pmake'; # self-compiled BSD make, maybe. Note that pmake may also be a script that comes with the CPAN module Make.pm, which is not a BSD make
 }
 
 # Use like this:

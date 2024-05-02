@@ -45,8 +45,8 @@ ok $pmake, "pmake call worked, result is $pmake";
 }
 
 {
-    my $pmake_canV = get_pmake canV => 1;
-    isnt $pmake_canV, 'bmake', "bmake cannot cope with -V correctly, result is $pmake_canV";
+    my $pmake_canV = eval { get_pmake canV => 1, fallback => 0 };
+    isnt $pmake_canV, 'bmake', "bmake cannot cope with -V correctly, result is " . ($pmake_canV // "<undef>");
 }
 
 {
