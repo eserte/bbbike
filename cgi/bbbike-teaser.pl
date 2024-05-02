@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -94,11 +94,11 @@ sub teaser {
 }
 
 sub teaser_sternfahrt_adfc {
-    my $out_of_date = $today gt "20230604";
+    my $out_of_date = $today gt "20240602";
     if (!$out_of_date) {
-	my $url = "https://berlin.adfc.de/artikel/adfc-sternfahrt-2023";
+	my $url = "https://berlin.adfc.de/artikel/adfc-sternfahrt-2024";
 	<<EOF
-<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 4. Juni $year</div>
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 2. Juni $year</div>
 EOF
     } else {
 	();
@@ -159,12 +159,12 @@ EOF
 }
 
 sub teaser_velocity {
-    my $velocity_activation_day = "20230624";
-    my $velocity_end_day = "20230702";
+    my $velocity_activation_day = "20240725";
+    my $velocity_end_day = "20240804";
     my $out_of_date = ($today gt $velocity_end_day) || ($today lt $velocity_activation_day);
     if (!$out_of_date) {
-	my $velocity_map_url = "https://velocity.berlin/event-info/strecke";
-	my $date_spec = $today eq $velocity_end_day ? 'Heute' : "Am 01. & 02. Juli $year";
+	my $velocity_map_url = "https://velocity.berlin/event/strecken";
+	my $date_spec = $today eq $velocity_end_day ? 'Heute' : "Am 03. & 04. August $year";
 	<<EOF
 <div class="teaser"><div style="font-weight:bold">$date_spec findet die VeloCity statt.<br/>
 <a href="$velocity_map_url">Karte mit den Sperrungen</a></div> (Achtung, Sperrungen sind nicht in BBBike berücksichtigt!)</div>
