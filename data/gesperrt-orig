@@ -278,7 +278,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
-Degnerstr. (außer Tram)	1 16448,15593 16469,15659
+Degnerstr. (außer Tram)	1 16445,15590 16449,15604
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4911,11018 4910,10940 4858,10943 4812,10948 4821,11026 4828,11094 4880,11088 4916,11083 4911,11018
 Dresdener Str./Oranienplatz	1 11258,10682 11220,10744
@@ -3925,16 +3925,15 @@ Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 # 
 #: next_check_id: SAATWINKLER-2023
 #: XXX Laut osm zumindest teilweise offen
-#: last_checked: 2024-02-17 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2024-04-28 (mapillary) vvv
+#: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-11-11 vvv
 #: osm_watch: way id="1198442169" version="9"
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
 #: osm_watch: way id="1152661787" version="26"
 # REMOVED (hier offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
-#: osm_watch: way id="1198395777" version="13"
-Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
+# REMOVED (hier fast bis zum Ende offen) --- #: osm_watch: way id="1198395777" version="13" --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
 # REMOVED (hier nicht mehr) --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -213,15529 -218,15558
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -4055,7 +4054,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: next_check_id: MAUERPARK-2022
 # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
 #: osm_watch: way id="1218990564" version="5"
-#: last_checked: 2024-04-13 (mapillary)
+#: last_checked: 2024-05-03 (daf)
 #: check_frequency: 30d
 Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
 # 

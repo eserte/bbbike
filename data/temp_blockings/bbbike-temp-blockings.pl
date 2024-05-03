@@ -21989,7 +21989,7 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-04 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
+     { from  => $isodate2epoch->("2024-05-03 10:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
        until => $isodate2epoch->("2024-05-05 06:00:00"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5, start => "2021-10-25T00:00:00"]],
@@ -22001,6 +22001,8 @@ EOF
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
 #: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023)
+#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024)
+#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -22177,6 +22179,7 @@ EOF
 #: source_id: IM_025248 (inaktiv)
 #: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
 #: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024)
+#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -23862,17 +23865,17 @@ EOF
 	q4::inwork 15272,14691 15345,14736 15383,14759 15461,14807 15502,14832 15562,14869 15580,14880 15697,14948 15774,14992
 #	q4::inwork 15774,14992 15798,15013 15848,15056 15867,15073 15937,15134 16028,15218 16071,15257 16119,15302
 #	q4::inwork; 16119,15302 16160,15337 16218,15386 16263,15427 16331,15486 16356,15508 16386,15536 16412,15559
-#	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
+#	q4::inwork; 16412,15559 16445,15590 16497,15636 16615,15737 16633,15753
 	q4::inwork; 16633,15753 16666,15781 16692,15803 16724,15830 16741,15845 16819,15912 16842,15932 16941,16021
 #	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16469,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16469,15659
-#	3 16469,15659 16497,15636 16448,15593
-#	3 16448,15593 16497,15636 16469,15659
-#	3 16469,15659 16448,15593 16497,15636
-#	3 16497,15636 16448,15593 16469,15659
-#	3 16469,15659 16448,15593 16412,15559
-#	3 16412,15559 16448,15593 16469,15659
+#	3 16469,15659 16497,15636 16445,15590
+#	3 16445,15590 16497,15636 16469,15659
+#	3 16469,15659 16449,15604 16445,15590 16497,15636
+#	3 16497,15636 16445,15590 16449,15604 16469,15659
+#	3 16469,15659 16449,15604 16445,15590 16412,15559
+#	3 16412,15559 16445,15590 16449,15604 16469,15659
 #	3 16251,15629 16412,15559 16550,15503
 #	3 16550,15503 16412,15559 16251,15629
 #	3 15996,15620 16331,15486 16406,15452
@@ -33330,7 +33333,7 @@ EOF
 EOF
      },
      { from  => 1713896860, # $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
-       until => $isodate2epoch->("2024-11-29 17:00:00"), # $isodate2epoch->("2021-10-25 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
+       until => 1714756838, # $isodate2epoch->("2024-11-29 17:00:00"), # $isodate2epoch->("2021-10-25 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
        #text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
        #text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., vom 24. April 2024 bis 26. Januar 2025',
        text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., bis Ende November 2024',
@@ -33350,10 +33353,11 @@ EOF
 #: source_id: viz2021:13.467591,52.555287,24.04.2024,08:00 (bis 26.01.2025) (inaktiv)
 #: source_id: viz2021:13.467591,52.555287,25.04.2024,03:00 (bis 29.11.2024)
 #: also_indoor: traffic
-#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer?
-#: next_check: 2024-04-24
+# REMOVED (nein) --- #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? --- #: next_check: 2024-04-24
+#: note: Radspur existiert
 	q4::inwork; 14558,16907 14608,16772 14622,16674 14624,16659 14619,16551
 #: note: vorbereitete Einbahnstraßenschilder bei Mapillary am 2024-04-24 zu sehen; außerdem eine Baustellenampel an der Einmündung Parkstr./Berliner Allee (nur nördliche Fahrbahn)
+#: note: Einbahnstraßenschilder mit "Radfahrer frei"
 Parkstr.: Einbahnstraßenregelung	q4::inwork; 13737,15994 13712,16089 13783,16237
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 # REMOVED --- #: next_check ^^^
@@ -36890,7 +36894,7 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2024-03-03 (mapillary) vvv
+#: last_checked: 2024-04-28 (mapillary) vvv
 #: next_check: 2024-05-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -37973,7 +37977,7 @@ EOF
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-01-22
+#: last_checked: 2024-05-03
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
@@ -37991,7 +37995,7 @@ EOF
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-02-28
+#: last_checked: 2024-05-03
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 	q3::inwork 13263,15930 13140,16000
@@ -40065,14 +40069,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-04-08 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2024-02-29 vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
+#: last_checked: 2024-05-03 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2024-06-15 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -40429,7 +40433,7 @@ EOF
        text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 13.02.2024, 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024)
+#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv)
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
@@ -41230,7 +41234,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STEGEWEG-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
-#: last_checked: 2024-04-17
+#: last_checked: 2024-04-30 (mapillary)
 #: check_frequency: 90d
 	q4::inwork 6869,18721 6879,18737 6910,18861
 # REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
@@ -42238,7 +42242,7 @@ EOF
        text  => 'Prinzregentenstr.: Bauarbeiten zwischen Prager Platz und Güntzelstr., Sperrung der Fahrbahn, angeblich sind auch Radfahrer betroffen, vom 22.02.2024 07:00 bis 03.05.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.333083,52.492616,22.02.2024,07:00 (bis 03.05.2024)
+#: source_id: viz2021:13.333083,52.492616,22.02.2024,07:00 (bis 03.05.2024) (inaktiv)
 #: by[nocache]: https://twitter.com/Aintschie/status/1760940196479062140
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
 	q4::inwork 5618,9607 5627,9362
@@ -42439,16 +42443,16 @@ Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => $isodate2epoch->("2024-05-03 18:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
+       until => $isodate2epoch->("2024-05-22 18:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
        #text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 11.04.2024 23:59',
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 03.05.2024',
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 22.05.2024',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -42456,7 +42460,7 @@ EOF
 #: last_checked: 2024-04-09 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-05-03 vvv
+#: next_check: 2024-05-22 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42556,19 +42560,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1714756978, # undef, # XXX
        text  => 'Elsastr./Klarastr.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: ELSA-2024
-#: also_indoor: traffic (B) vvv
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-04-06 vvv
+# REMOVED --- #: next_check_id: ELSA-2024 --- #: also_indoor: traffic (B) vvv --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2024-04-06 vvv
 	q4::inwork 16211,16131 16217,16208 16234,16203 16263,16288
 	q4::inwork 16234,16203 16316,16173
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
+# REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: also_indoor ^^^
 EOF
      },
      { from  => 1712466000, # 2024-04-07 07:00

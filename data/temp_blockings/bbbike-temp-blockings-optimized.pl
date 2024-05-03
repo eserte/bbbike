@@ -3182,6 +3182,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
 #: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023)
+#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024)
+#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -3203,7 +3205,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	3 8327,12174 8344,12221 8391,12389
 # REMOVED --- #: tempex ^^^
 ',
-         'from' => 1714773600,
+         'from' => 1714723200,
          'id' => 2427,
          'periodic' => 1,
          'recurrences' => [
@@ -3326,6 +3328,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: IM_025248 (inaktiv)
 #: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
 #: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024)
+#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -5166,37 +5169,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '# REMOVED #: next_check_id: BERLINERALLEE-2021
-#: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00 (inaktiv)
-# REMOVED --- #: note: laut rbb kann der Radverkehr den Sperrbereich passieren (stimmt aber nicht)
-# REMOVED --- #: last_checked: 2021-10-01 (mapillary) vvv --- #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2021-08-23 vvv
-# REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
-# REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
-# REMOVED (früherer Bereich) ---	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782975251074502750
-#: by: https://pbs.twimg.com/media/GL2ysSnWoAE1G5t?format=jpg&name=medium (Einbahnstraßenregelung in der Parkstr.)
-#: source_id: viz2021:13.467591,52.555287,24.04.2024,08:00 (bis 26.01.2025) (inaktiv)
-#: source_id: viz2021:13.467591,52.555287,25.04.2024,03:00 (bis 29.11.2024)
-#: also_indoor: traffic
-#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer?
-#: next_check: 2024-04-24
-	q4::inwork; 14558,16907 14608,16772 14622,16674 14624,16659 14619,16551
-#: note: vorbereitete Einbahnstraßenschilder bei Mapillary am 2024-04-24 zu sehen; außerdem eine Baustellenampel an der Einmündung Parkstr./Berliner Allee (nur nördliche Fahrbahn)
-Parkstr.: Einbahnstraßenregelung	q4::inwork; 13737,15994 13712,16089 13783,16237
-# REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED --- Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
-',
-         'from' => 1713896860,
-         'id' => 3374,
-         'source_id' => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
-         'text' => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., bis Ende November 2024',
-         'type' => 'handicap',
-         'until' => 1732896000
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
@@ -6002,7 +5975,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2024-03-03 (mapillary) vvv
+#: last_checked: 2024-04-28 (mapillary) vvv
 #: next_check: 2024-05-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -6379,7 +6352,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-01-22
+#: last_checked: 2024-05-03
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
@@ -6398,7 +6371,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-02-28
+#: last_checked: 2024-05-03
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 	q3::inwork 13263,15930 13140,16000
@@ -7039,14 +7012,14 @@ Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
        undef,
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-04-08 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2024-02-29 vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
+#: last_checked: 2024-05-03 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2024-06-15 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1689356385,
@@ -7482,7 +7455,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        {
          'data' => '#: next_check_id: STEGEWEG-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
-#: last_checked: 2024-04-17
+#: last_checked: 2024-04-30 (mapillary)
 #: check_frequency: 90d
 	q4::inwork 6869,18721 6879,18737 6910,18861
 # REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
@@ -7830,18 +7803,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'gesperrt',
          'until' => 1717192800
        },
-       {
-         'data' => '#: source_id: viz2021:13.333083,52.492616,22.02.2024,07:00 (bis 03.05.2024)
-#: by[nocache]: https://twitter.com/Aintschie/status/1760940196479062140
-#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
-	q4::inwork 5618,9607 5627,9362
-',
-         'from' => 1708495200,
-         'id' => 4012,
-         'text' => 'Prinzregentenstr.: Bauarbeiten zwischen Prager Platz und Güntzelstr., Sperrung der Fahrbahn, angeblich sind auch Radfahrer betroffen, vom 22.02.2024 07:00 bis 03.05.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1714748400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7932,7 +7894,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'data' => '#       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -7940,7 +7902,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: last_checked: 2024-04-09 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-05-03 vvv
+#: next_check: 2024-05-22 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -7960,23 +7922,13 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 ',
          'from' => 1710741600,
          'id' => 4028,
-         'text' => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 03.05.2024',
+         'text' => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 22.05.2024',
          'type' => 'gesperrt',
-         'until' => 1714752000
+         'until' => 1716393600
        },
        undef,
        undef,
-       {
-         'data' => '#: note: Ende laut Halteverbotsschilder
-	q4::inwork 6010,1657 6130,1399 6278,1109
-	q4::inwork 6029,1357 6130,1399 6189,1423
-',
-         'from' => 1711461118,
-         'id' => 4031,
-         'text' => 'Zerbster Str./Georgenstr.: Arbeiten im Kreuzungsbereich, Fahrbahn gesperrt, Umwege, voraussichtlich bis zum 03.05.2024',
-         'type' => 'handicap',
-         'until' => 1714744800
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: also_indoor: traffic (B) vvv
@@ -8033,23 +7985,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'type' => 'gesperrt',
          'until' => 1718200800
        },
-       {
-         'data' => '#: next_check_id: ELSA-2024
-#: also_indoor: traffic (B) vvv
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-04-06 vvv
-	q4::inwork 16211,16131 16217,16208 16234,16203 16263,16288
-	q4::inwork 16234,16203 16316,16173
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 4036,
-         'text' => 'Elsastr./Klarastr.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege und Bordsteine, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
 #: also_indoor: traffic (H,G,B,W)

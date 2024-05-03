@@ -10,24 +10,8 @@
 # 
 ### Friedrichshain ###
 # 
-# REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv)
-# REMOVED --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331
-# REMOVED --- #: also_indoor: traffic (G)
-# REMOVED --- #: last_checked: 2024-02-04 (mapillary) vvv
-# REMOVED --- #: next_check: 2024-02-09 vvv
-# REMOVED --- #: valid: -20240209 vvv
-# REMOVED --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860
-# REMOVED --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: last_checked ^^^
-# 
-#: XXX Sieht nach Leitungsarbeiten aus.
-#: add_fragezeichen: Besteht die Sperrung noch immer?
-#: also_indoor: traffic (B)
-#: last_checked: 2024-04-23
-#: check_frequency: 14d
-Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
+# REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv) --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-04 (mapillary) vvv --- #: next_check: 2024-02-09 vvv --- #: valid: -20240209 vvv --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860 --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
+# REMOVED --- #: XXX Sieht nach Leitungsarbeiten aus. --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: also_indoor: traffic (B) --- #: last_checked: 2024-04-23 --- #: check_frequency: 14d --- Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11088 (zum Neubau des Heinrich-Hertz-Gymnasiums)
@@ -71,7 +55,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-05-01 (daf)
+#: last_checked: 2024-05-03
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -849,8 +833,8 @@ Heldburger Str.: Hochbauarbeiten, Fahrbahn gesperrt	q4::inwork 17249,14575 17392
 #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert?
 #: last_checked: 2024-05-02 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-05-02 vvv
-#: valid: -20240502 vvv
+#: next_check: 2024-05-24 vvv
+#: valid: -20240524 vvv
 # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886
 Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883
 #: valid ^^^
@@ -940,7 +924,7 @@ Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3-::inwork 17531,1
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
 #: priority: #C
-#: last_checked: 2024-04-06
+#: last_checked: 2024-05-03
 #: check_frequency: 120d
 #: next_check: 2026-04-30
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
@@ -974,7 +958,7 @@ Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2-::inwork 18831,1482
 #: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 2
-#: last_checked: 2024-03-27 vvv
+#: last_checked: 2024-04-30 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-03-31 vvv
 #: osm_watch: way id="175916583" version="10"
@@ -1110,8 +1094,10 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 ### Prenzlauer Berg ###
 # 
 #: osm_watch: way id="1047231711" version="3"
-#: last_checked: 2024-03-07
+#: note: Halteverbotsschilder bis Juli 2024
+#: last_checked: 2024-05-03
 #: check_frequency: 60d
+#: next_check: 2024-07-01
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
 # REMOVED (mittlerweile wurde die Sperrung entfernt und die provisorische Asphaltdecke zur Hälfte zurückgebaut) --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220 --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung) --- #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/ --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dstrctberlin-ist-bald-bezugsfertig_a338513 --- #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4 --- # REMOVED (keine construction mehr) --- #: osm_watch: way id="164816805" version="12" --- #: osm_watch: node id="1425174760" version="5" --- #: priority: #C --- #: last_checked: 2023-10-16 --- #: check_frequency: 30d --- Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
@@ -1126,11 +1112,16 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 # 
 ### Weißensee ###
 # 
+#: note: Endedatum laut Halteverbotsschilder
+#: last_checked: 2024-05-03
+#: next_check: 2024-07-15
+Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
+# 
 #: also_indoor: traffic (G,B,W)
 #: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-04-08
+#: last_checked: 2024-05-03
 #: check_frequency: 120d
 #: next_check: 2024-12-20
 #: valid: -20241220
@@ -4916,6 +4907,9 @@ Lugierring: einige Fußgänger	q2 20116,836 20142,824
 # 
 Ruth-Baumgarte-Str. (Mittelstreifen): einige Fußgänger	q2 17608,8483 17599,8485
 Heiner-Müller-Str. (Mittelstreifen): einige Fußgänger	q2 17640,8627 17648,8626
+# 
+#: note: die Gegenrichtung wird in gesperrt-orig behandelt
+Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 # 
 ######################### User Contributions #################################
 # 
